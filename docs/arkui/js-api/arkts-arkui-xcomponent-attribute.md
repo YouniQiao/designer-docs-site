@@ -10,6 +10,7 @@ Defines XComponentAttribute.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="enableanalyzer"></a>
 ## enableAnalyzer
 
 ```TypeScript
@@ -34,6 +35,7 @@ Sets whether to enable the AI image analyzer, which supports subject recognition
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to enable the AI image analyzer. |
 
+<a id="enablesecure"></a>
 ## enableSecure
 
 ```TypeScript
@@ -58,6 +60,7 @@ Sets whether to enable the secure surface to protect the content rendered within
 | --- | --- | --- | --- |
 | isSecure | boolean | Yes | Whether to enable the secure surface. |
 
+<a id="hdrbrightness"></a>
 ## hdrBrightness
 
 ```TypeScript
@@ -82,6 +85,7 @@ Set hdrBrightness for XComponent.
 | --- | --- | --- | --- |
 | brightness | number | Yes | control the brightness of HDR video |
 
+<a id="hdrbrightness-1"></a>
 ## hdrBrightness
 
 ```TypeScript
@@ -105,8 +109,9 @@ Set hdrBrightness for XComponent.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | brightness | number | Yes | control the brightness of HDR video |
-| type | [HdrType](arkts-arkui-xcomponent-hdrtype-e.md) | No | the HDR type of the XComponent |
+| type | [HdrType](arkts-arkui-hdrtype-e.md) | No | the HDR type of the XComponent |
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -129,6 +134,7 @@ Triggered when the plug-in is destroyed.Anonymous Object Rectification.
 | --- | --- | --- | --- |
 | event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | Callback after the XComponent is destroyed. |
 
+<a id="onload"></a>
 ## onLoad
 
 ```TypeScript

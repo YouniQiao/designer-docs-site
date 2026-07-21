@@ -6,6 +6,7 @@
 import { systemLoad } from '@kit.BasicServicesKit';
 ```
 
+<a id="on"></a>
 ## on('systemLoadChange')
 
 ```TypeScript
@@ -25,7 +26,7 @@ Enables listening for system load level changes. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'systemLoadChange' | Yes | Change type. This parameter has a fixed value of **systemLoadChange**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SystemLoadLevel> | Yes | Callback used to return the system load level. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SystemLoadLevel&gt; | Yes | Callback used to return the system load level. |
 
 **Error codes:**
 

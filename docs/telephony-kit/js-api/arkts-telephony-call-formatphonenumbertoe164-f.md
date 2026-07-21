@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="formatphonenumbertoe164"></a>
 ## formatPhoneNumberToE164
 
 ```TypeScript
@@ -26,7 +27,7 @@ Formats a phone number into an E.164 representation.
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the phone number to format. |
 | countryCode | string | Yes | Indicates a two-digit country code defined in ISO 3166-1. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Returns an E.164 number.Returns an empty string if the input phone number is invalid. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Returns an E.164 number.Returns an empty string if the input phone number is invalid. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ call.formatPhoneNumberToE164("138xxxxxxxx", "CN", (err: BusinessError, data: str
 ```
 
 
+<a id="formatphonenumbertoe164-1"></a>
 ## formatPhoneNumberToE164
 
 ```TypeScript
@@ -79,7 +81,7 @@ Formats a phone number into an E.164 representation.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns an E.164 number.Returns an empty string if the input phone number is invalid. |
+| Promise&lt;string&gt; | Returns an E.164 number.Returns an empty string if the input phone number is invalid. |
 
 **Error codes:**
 

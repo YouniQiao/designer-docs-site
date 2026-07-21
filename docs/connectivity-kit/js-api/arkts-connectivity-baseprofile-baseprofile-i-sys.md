@@ -14,6 +14,7 @@ Base interface of profile.
 import { baseProfile } from '@kit.ConnectivityKit';
 ```
 
+<a id="getconnectionstrategy"></a>
 ## getConnectionStrategy
 
 ```TypeScript
@@ -39,7 +40,7 @@ Get connection strategy of this profile.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ConnectionStrategy> | Yes | the callback of getConnectionStrategy. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ConnectionStrategy&gt; | Yes | the callback of getConnectionStrategy. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ Get connection strategy of this profile.
 | 2900004 | Profile not supported. |
 | 2900099 | Operation failed. |
 
+<a id="getconnectionstrategy-1"></a>
 ## getConnectionStrategy
 
 ```TypeScript
@@ -84,7 +86,7 @@ Get connection strategy of this profile.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ConnectionStrategy> | Returns the promise object. |
+| Promise&lt;ConnectionStrategy&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -99,6 +101,7 @@ Get connection strategy of this profile.
 | 2900004 | Profile not supported. |
 | 2900099 | Operation failed. |
 
+<a id="setconnectionstrategy"></a>
 ## setConnectionStrategy
 
 ```TypeScript
@@ -130,7 +133,7 @@ Set connection strategy of this profile.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -145,6 +148,7 @@ Set connection strategy of this profile.
 | 2900004 | Profile not supported. |
 | 2900099 | Operation failed. |
 
+<a id="setconnectionstrategy-1"></a>
 ## setConnectionStrategy
 
 ```TypeScript
@@ -171,7 +175,7 @@ Set connection strategy of this profile.
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
 | strategy | [ConnectionStrategy](arkts-connectivity-baseprofile-connectionstrategy-e-sys.md) | Yes | the connection strategy of this profile. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setConnectionStrategy. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setConnectionStrategy. |
 
 **Error codes:**
 

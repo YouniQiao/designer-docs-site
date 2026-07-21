@@ -14,6 +14,7 @@ Declare navigator properties.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="active"></a>
 ## active
 
 ```TypeScript
@@ -40,6 +41,7 @@ Sets whether the **Navigator** component is activated. If the component is activ
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether the **Navigator** component is activated. The value **true** means that the component is activated, and **false** means the opposite. |
 
+<a id="params"></a>
 ## params
 
 ```TypeScript
@@ -52,7 +54,7 @@ Sets the data that needs to be passed to the target page during redirection.
 
 **Deprecated since:** 13
 
-**Substitutes:** [param](arkts-arkui-navigation-navpathinfo-c.md#param)
+**Substitutes:** [param](arkts-arkui-navpathinfo-c.md#param)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -66,6 +68,7 @@ Sets the data that needs to be passed to the target page during redirection.
 | --- | --- | --- | --- |
 | value | object | Yes | Data that needs to be passed to the target page during redirection. You can use [router.getParams()](../arkts-apis/arkts-arkui-router-getparams-f.md#getparams-1) to obtain the data on the target page. |
 
+<a id="target"></a>
 ## target
 
 ```TypeScript
@@ -92,6 +95,7 @@ Sets the path of the target page to be redirected to. The target page must be ad
 | --- | --- | --- | --- |
 | value | string | Yes | Path of the target page to be redirected to. |
 
+<a id="type"></a>
 ## type
 
 ```TypeScript
@@ -116,5 +120,5 @@ Sets the navigation type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [NavigationType](arkts-arkui-navigator-navigationtype-e.md) | Yes | Navigation type.<br>Default value: **NavigationType.Push** |
+| value | [NavigationType](arkts-arkui-navigationtype-e.md) | Yes | Navigation type.<br>Default value: **NavigationType.Push** |
 

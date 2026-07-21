@@ -6,6 +6,7 @@
 import { bluetoothManager } from '@kit.MDMKit';
 ```
 
+<a id="getdisallowedbluetoothprotocols"></a>
 ## getDisallowedBluetoothProtocols
 
 ```TypeScript
@@ -29,13 +30,13 @@ Obtains the disallowed Bluetooth protocols of a specified user.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| accountId | number | Yes | Account ID, which must be greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2) of @ohos.account.osAccount to obtain the account ID. |
+| accountId | number | Yes | Account ID, which must be greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1) of @ohos.account.osAccount to obtain the account ID. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Protocol> | Array of disallowed Bluetooth protocols. |
+| Array&lt;Protocol&gt; | Array of disallowed Bluetooth protocols. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ try{
 ```
 
 
+<a id="getdisallowedbluetoothprotocols-1"></a>
 ## getDisallowedBluetoothProtocols
 
 ```TypeScript
@@ -90,7 +92,7 @@ Gets protocols from the list of bluetooth server that are disallowed to use.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | admin indicates the enterprise admin extension ability information. |
+| admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) \| null | Yes | admin indicates the enterprise admin extension ability information. |
 | accountId | number | Yes | accountId indicates the local ID of the OS account<br>The value must be an integer greater than or equal to 0. |
 | policy | [TransferPolicy](arkts-mdm-bluetoothmanager-transferpolicy-e.md) | Yes | policy indicates the policy of transfer. |
 
@@ -98,7 +100,7 @@ Gets protocols from the list of bluetooth server that are disallowed to use.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Protocol> | protocol of the bluetooth list. |
+| Array&lt;Protocol&gt; | protocol of the bluetooth list. |
 
 **Error codes:**
 

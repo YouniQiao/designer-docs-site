@@ -14,6 +14,7 @@ Provides APIs for randomly reading and writing a stream. Before invoking any API
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -48,6 +49,7 @@ randomAccessFile.close();
 
 ```
 
+<a id="getreadstream"></a>
 ## getReadStream
 
 ```TypeScript
@@ -90,6 +92,7 @@ randomAccessFile.close();
 
 ```
 
+<a id="getwritestream"></a>
 ## getWriteStream
 
 ```TypeScript
@@ -132,6 +135,7 @@ randomAccessFile.close();
 
 ```
 
+<a id="read"></a>
 ## read
 
 ```TypeScript
@@ -159,14 +163,14 @@ Reads data from a file. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
 | options | [ReadOptions](arkts-corefile-file-fs-readoptions-i.md) | No | The options are as follows:<br>- **length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length.<br>- **offset** (number): start position to read the data, in bytes (it is determined by **filePointer** plus **offset**). This parameter is optional. By default, data is read from the **filePointer**.<br>**Since:** 11 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the data read, in bytes. |
+| Promise&lt;number&gt; | Promise used to return the data read, in bytes. |
 
 **Error codes:**
 
@@ -209,6 +213,7 @@ randomAccessFile.read(arrayBuffer, readOption).then((readLength: number) => {
 
 ```
 
+<a id="read-1"></a>
 ## read
 
 ```TypeScript
@@ -227,8 +232,8 @@ Reads data from a file. This API uses an asynchronous callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. return the length of the data read,in bytes. |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. return the length of the data read,in bytes. |
 
 **Error codes:**
 
@@ -269,6 +274,7 @@ randomAccessFile.read(arrayBuffer, (err: BusinessError, readLength: number) => {
 
 ```
 
+<a id="read-2"></a>
 ## read
 
 ```TypeScript
@@ -299,9 +305,9 @@ Reads data from a file. This API uses an asynchronous callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
 | options | [ReadOptions](arkts-corefile-file-fs-readoptions-i.md) | Yes | The options are as follows:<br>- **length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length.<br>- **offset** (number): start position to read the data, in bytes (it is determined by **filePointer** plus **offset**). This parameter is optional. By default, data is read from the **filePointer**.<br>**Since:** 11 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. return the length of the data read,in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. return the length of the data read,in bytes. |
 
 **Error codes:**
 
@@ -346,6 +352,7 @@ randomAccessFile.read(arrayBuffer, readOption, (err: BusinessError, readLength: 
 
 ```
 
+<a id="readsync"></a>
 ## readSync
 
 ```TypeScript
@@ -373,7 +380,7 @@ Reads data from a file. This API returns the result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
 | options | [ReadOptions](arkts-corefile-file-fs-readoptions-i.md) | No | The options are as follows:<br>- **length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length.<br>- **offset** (number): start position to read the data, in bytes (it is determined by **filePointer** plus **offset**). This parameter is optional. By default, data is read from the **filePointer**.<br><br>**Since:** 11 |
 
 **Return value:**
@@ -411,6 +418,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="setfilepointer"></a>
 ## setFilePointer
 
 ```TypeScript
@@ -451,6 +459,7 @@ randomAccessFile.close();
 
 ```
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -485,7 +494,7 @@ Writes data into a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the length of the data written, in bytes. |
+| Promise&lt;number&gt; | Promise used to return the length of the data written, in bytes. |
 
 **Error codes:**
 
@@ -532,6 +541,7 @@ randomAccessFile.write(arrayBuffer, writeOption).then((bytesWritten: number) => 
 
 ```
 
+<a id="write-1"></a>
 ## write
 
 ```TypeScript
@@ -551,7 +561,7 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. The call back returns the length of the data written, in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. The call back returns the length of the data written, in bytes. |
 
 **Error codes:**
 
@@ -594,6 +604,7 @@ randomAccessFile.write(arrayBuffer, (err: BusinessError, bytesWritten: number) =
 
 ```
 
+<a id="write-2"></a>
 ## write
 
 ```TypeScript
@@ -626,7 +637,7 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 | --- | --- | --- | --- |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
 | options | [WriteOptions](arkts-corefile-file-fs-writeoptions-i.md) | Yes | The options are as follows:<br>- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value is the buffer length.<br>- **offset** (number):start position to write the data, in bytes (it is determined by **filePointer** plus **offset**). This parameter is optional. By default, data is written from the **filePointer**.<br>- **encoding** (string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported.<br>**Since:** 11 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. The call back returns the length of the data written, in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. The call back returns the length of the data written, in bytes. |
 
 **Error codes:**
 
@@ -675,6 +686,7 @@ randomAccessFile.write(arrayBuffer, writeOption, (err: BusinessError, bytesWritt
 
 ```
 
+<a id="writesync"></a>
 ## writeSync
 
 ```TypeScript

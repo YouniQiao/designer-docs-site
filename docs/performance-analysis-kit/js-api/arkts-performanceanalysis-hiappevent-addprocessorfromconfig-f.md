@@ -6,6 +6,7 @@
 import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="addprocessorfromconfig"></a>
 ## addProcessorFromConfig
 
 ```TypeScript
@@ -33,7 +34,7 @@ Adds the configuration information of the data processor. The configuration file
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise that returns the unique ID of the added event data processor, which can be used to remove the data processor. If the adding fails, error code **11105001** is returned. |
+| Promise&lt;number&gt; | Promise that returns the unique ID of the added event data processor, which can be used to remove the data processor. If the adding fails, error code **11105001** is returned. |
 
 **Error codes:**
 

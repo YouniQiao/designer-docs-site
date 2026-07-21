@@ -6,6 +6,7 @@
 import { ble } from '@kit.ConnectivityKit';
 ```
 
+<a id="stopadvertising"></a>
 ## stopAdvertising
 
 ```TypeScript
@@ -48,6 +49,7 @@ try {
 ```
 
 
+<a id="stopadvertising-1"></a>
 ## stopAdvertising
 
 ```TypeScript
@@ -71,7 +73,7 @@ Stops BLE advertising.Completely stop the advertising corresponding to the ID.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | advertisingId | number | Yes | Indicates the ID for this BLE advertising. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback result. |
 
 **Error codes:**
 
@@ -153,6 +155,7 @@ try {
 ```
 
 
+<a id="stopadvertising-2"></a>
 ## stopAdvertising
 
 ```TypeScript
@@ -181,7 +184,7 @@ Stops BLE advertising.Completely stop the advertising corresponding to the ID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

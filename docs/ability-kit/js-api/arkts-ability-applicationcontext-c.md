@@ -14,6 +14,7 @@ ApplicationContext inherits from [Context](arkts-ability-context-context-depr-i.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="clearupapplicationdata"></a>
 ## clearUpApplicationData
 
 ```TypeScript
@@ -25,7 +26,7 @@ Clears up all data in the application file path and revokes the permissions that
 > **NOTE**  
 >  
 > For details about the application file path, see  
-> [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)  
+> [Application File Directory and Application File Path](docroot://file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)  
 > . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths  
 > in other directories, refer to EL1.  
 >  
@@ -44,7 +45,7 @@ Clears up all data in the application file path and revokes the permissions that
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ Clears up all data in the application file path and revokes the permissions that
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="clearupapplicationdata-1"></a>
 ## clearUpApplicationData
 
 ```TypeScript
@@ -64,7 +66,7 @@ Clears up all data in the application file path and revokes the permissions that
 > **NOTE**  
 >  
 > For details about the application file path, see  
-> [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)  
+> [Application File Directory and Application File Path](docroot://file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path)  
 > . The figure shows only the application file paths in the EL1 and EL2 directories. For the application file paths  
 > in other directories, refer to EL1.  
 >  
@@ -83,7 +85,7 @@ Clears up all data in the application file path and revokes the permissions that
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the application data is cleared up, <code>error</code> is <code>undefined</code>; otherwise, <code>error</code> is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the application data is cleared up, <code>error</code> is <code>undefined</code>; otherwise, <code>error</code> is an error object. |
 
 **Error codes:**
 
@@ -93,6 +95,7 @@ Clears up all data in the application file path and revokes the permissions that
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="disabledelayedprocessexit"></a>
 ## disableDelayedProcessExit
 
 ```TypeScript
@@ -115,7 +118,7 @@ Disables delayed process exit for the current process.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -125,6 +128,7 @@ Disables delayed process exit for the current process.
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. Possible causes: Fail to connect system service. |
 | 16000150 | The current process has no UIAbility, and this API cannot be called. |
 
+<a id="enabledelayedprocessexit"></a>
 ## enableDelayedProcessExit
 
 ```TypeScript
@@ -145,7 +149,7 @@ Enable delayed exit for the current process.<p>**NOTE**:<br>It can be called onl
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -155,6 +159,7 @@ Enable delayed exit for the current process.<p>**NOTE**:<br>It can be called onl
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. Possible causes: Fail to connect system service. |
 | 16000150 | The current process has no UIAbility, and this API cannot be called. |
 
+<a id="getallrunninginstancekeys"></a>
 ## getAllRunningInstanceKeys
 
 ```TypeScript
@@ -175,7 +180,7 @@ Obtains the unique instance IDs of all multi-instances of this application. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the unique instance IDs of all multi-instances of the application. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the unique instance IDs of all multi-instances of the application. |
 
 **Error codes:**
 
@@ -185,6 +190,7 @@ Obtains the unique instance IDs of all multi-instances of this application. This
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000078](../errorcode-ability.md#16000078-multiinstance-mode-is-not-supported) | The multi-instance is not supported. |
 
+<a id="getallwindowstages"></a>
 ## getAllWindowStages
 
 ```TypeScript
@@ -209,8 +215,9 @@ This API is used to manage multiple windows in an application that contains seve
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<window.WindowStage>> | Promise used to return all WindowStage objects in the current application process. |
+| Promise&lt;Array&lt;window.WindowStage&gt;&gt; | Promise used to return all WindowStage objects in the current application process. |
 
+<a id="getcurrentappcloneindex"></a>
 ## getCurrentAppCloneIndex
 
 ```TypeScript
@@ -242,6 +249,7 @@ Obtains the index of the current application clone.
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000071](../errorcode-ability.md#16000071-application-clone-is-not-supported) | The MultiAppMode is not {@link App_CLONE}. |
 
+<a id="getcurrentinstancekey"></a>
 ## getCurrentInstanceKey
 
 ```TypeScript
@@ -273,6 +281,7 @@ This API can be properly called only on 2-in-1 devices. If it is called on other
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000078](../errorcode-ability.md#16000078-multiinstance-mode-is-not-supported) | The multi-instance is not supported. |
 
+<a id="getrunningprocessinformation"></a>
 ## getRunningProcessInformation
 
 ```TypeScript
@@ -295,7 +304,7 @@ Obtains the information about running processes. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProcessInformation>> | Promise used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
+| Promise&lt;Array&lt;ProcessInformation&gt;&gt; | Promise used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 
@@ -305,6 +314,7 @@ Obtains the information about running processes. This API uses a promise to retu
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="getrunningprocessinformation-1"></a>
 ## getRunningProcessInformation
 
 ```TypeScript
@@ -327,7 +337,7 @@ Obtains the information about running processes. This API uses an asynchronous c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ProcessInformation>> | Yes | Callback used to return the information about the running processes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ProcessInformation&gt;&gt; | Yes | Callback used to return the information about the running processes. |
 
 **Error codes:**
 
@@ -337,6 +347,7 @@ Obtains the information about running processes. This API uses an asynchronous c
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="getuiabilitybyinstanceid"></a>
 ## getUIAbilityByInstanceId
 
 ```TypeScript
@@ -375,6 +386,7 @@ Get the UIAbility instance by the instance Id.
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error.System service failed to communicate with dependency module. |
 
+<a id="killallprocesses"></a>
 ## killAllProcesses
 
 ```TypeScript
@@ -386,7 +398,7 @@ Kills all processes of this application. The application will not execute the no
 > **NOTE**  
 >  
 > This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call  
-> [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
+> [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-1).
 
 **Since:** 9
 
@@ -402,7 +414,7 @@ Kills all processes of this application. The application will not execute the no
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -411,6 +423,7 @@ Kills all processes of this application. The application will not execute the no
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 
+<a id="killallprocesses-1"></a>
 ## killAllProcesses
 
 ```TypeScript
@@ -422,7 +435,7 @@ Kills all processes of this application. The application will not execute the no
 > **NOTE**  
 >  
 > This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call  
-> [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
+> [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-1).
 
 **Since:** 14
 
@@ -444,7 +457,7 @@ Kills all processes of this application. The application will not execute the no
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -453,6 +466,7 @@ Kills all processes of this application. The application will not execute the no
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter is not valid parameter. |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 
+<a id="killallprocesses-2"></a>
 ## killAllProcesses
 
 ```TypeScript
@@ -464,7 +478,7 @@ Kills all processes of this application. The application will not execute the no
 > **NOTE**  
 >  
 > This API is used to forcibly exit an application in abnormal scenarios. To exit an application properly, call  
-> [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-2).
+> [terminateSelf()](arkts-ability-uiabilitycontext-c.md#terminateself-1).
 
 **Since:** 9
 
@@ -480,7 +494,7 @@ Kills all processes of this application. The application will not execute the no
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If all the processes are killed,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If all the processes are killed,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -489,6 +503,7 @@ Kills all processes of this application. The application will not execute the no
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 
+<a id="off"></a>
 ## off('abilityLifecycle')
 
 ```TypeScript
@@ -512,8 +527,8 @@ Unregisters a listener for the lifecycle of a UIAbility within the application. 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'abilityLifecycle' | Yes | Lifecycle of the UIAbility within the application. The value is fixed at **'abilityLifecycle'**. |
-| callbackId | number | Yes | ID returned when the [ApplicationContext.on('abilityLifecycle')](arkts-ability-applicationcontext-c.md#on-1)API is called to register a listener for the lifecycle of a UIAbility within the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the deregistration is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callbackId | number | Yes | ID returned when the [ApplicationContext.on('abilityLifecycle')](ApplicationContext#on(type: 'abilityLifecycle', callback: AbilityLifecycleCallback))API is called to register a listener for the lifecycle of a UIAbility within the application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the deregistration is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -521,6 +536,7 @@ Unregisters a listener for the lifecycle of a UIAbility within the application. 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="off-1"></a>
 ## off('abilityLifecycle')
 
 ```TypeScript
@@ -544,13 +560,13 @@ Unregisters a listener for the lifecycle of a UIAbility within the application. 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'abilityLifecycle' | Yes | Lifecycle of the UIAbility within the application. The value is fixed at **'abilityLifecycle'**. |
-| callbackId | number | Yes | ID returned when the [ApplicationContext.on('abilityLifecycle')](arkts-ability-applicationcontext-c.md#on-1)API is called to register a listener for the lifecycle of a UIAbility within the application. |
+| callbackId | number | Yes | ID returned when the [ApplicationContext.on('abilityLifecycle')](ApplicationContext#on(type: 'abilityLifecycle', callback: AbilityLifecycleCallback))API is called to register a listener for the lifecycle of a UIAbility within the application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -558,6 +574,7 @@ Unregisters a listener for the lifecycle of a UIAbility within the application. 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="off-2"></a>
 ## off('environment')
 
 ```TypeScript
@@ -581,8 +598,8 @@ Unregisters the listener for system environment changes. This API uses an asynch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'environment' | Yes | System environment change, for example, system dark/light color mode change. The value is fixed at **'environment'**. |
-| callbackId | number | Yes | ID returned when the [ApplicationContext.on('environment')](arkts-ability-applicationcontext-c.md#on-2)API is called to register a listener for system environment changes. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the deregistration is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callbackId | number | Yes | ID returned when the [ApplicationContext.on('environment')](ApplicationContext#on(type: 'environment', callback: EnvironmentCallback))API is called to register a listener for system environment changes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the deregistration is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -590,6 +607,7 @@ Unregisters the listener for system environment changes. This API uses an asynch
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
 
+<a id="off-3"></a>
 ## off('environment')
 
 ```TypeScript
@@ -613,13 +631,13 @@ Unregisters the listener for system environment changes. This API uses a promise
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'environment' | Yes | System environment change, for example, system dark/light color mode change. The value is fixed at **'environment'**. |
-| callbackId | number | Yes | ID returned when the [ApplicationContext.on('environment')](arkts-ability-applicationcontext-c.md#on-2)API is called to register a listener for system environment changes. |
+| callbackId | number | Yes | ID returned when the [ApplicationContext.on('environment')](ApplicationContext#on(type: 'environment', callback: EnvironmentCallback))API is called to register a listener for system environment changes. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -627,6 +645,7 @@ Unregisters the listener for system environment changes. This API uses a promise
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
 
+<a id="off-4"></a>
 ## off('applicationStateChange')
 
 ```TypeScript
@@ -650,7 +669,7 @@ Unregisters the listener for application process state changes. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'applicationStateChange' | Yes | Application process state change. The value is fixed at **'applicationStateChange'**. |
-| callback | [ApplicationStateChangeCallback](arkts-ability-app-ability-applicationstatechangecallback-applicationstatechangecallback-c.md) | No | Callback used to return the result. The value can be a callback defined by [ApplicationContext.on('applicationStateChange')](arkts-ability-applicationcontext-c.md#on-3)or empty.<br>- If a defined callback is passed in, the listener for that callback is unregistered.<br>- If no value is passed in, all the listeners for the corresponding event are unregistered. |
+| callback | [ApplicationStateChangeCallback](arkts-ability-app-ability-applicationstatechangecallback-applicationstatechangecallback-c.md) | No | Callback used to return the result. The value can be a callback defined by [ApplicationContext.on('applicationStateChange')](ApplicationContext#on(type: 'applicationStateChange', callback: ApplicationStateChangeCallback))or empty.<br>- If a defined callback is passed in, the listener for that callback is unregistered.<br>- If no value is passed in, all the listeners for the corresponding event are unregistered. |
 
 **Error codes:**
 
@@ -658,6 +677,7 @@ Unregisters the listener for application process state changes. This API uses an
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="offsystemconfigurationupdated"></a>
 ## offSystemConfigurationUpdated
 
 ```TypeScript
@@ -684,6 +704,7 @@ unregisters a listener for system configuration updated.
 | --- | --- | --- | --- |
 | callback | systemConfiguration.UpdatedCallback | No | The system configuration updated callback.If a defined callback is passed in, the listener for that callback is unregistered.If no value is passed in, all the listeners for the corresponding event are unregistered. |
 
+<a id="on"></a>
 ## on('abilityLifecycle')
 
 ```TypeScript
@@ -713,7 +734,7 @@ Registers a listener for the lifecycle of a UIAbility within the application. Th
 
 | Type | Description |
 | --- | --- |
-| number | ID of the callback registered. This ID is used to unregister the corresponding callback in [ApplicationContext.off('abilityLifecycle')](arkts-ability-applicationcontext-c.md#off-1). |
+| number | ID of the callback registered. This ID is used to unregister the corresponding callback in [ApplicationContext.off('abilityLifecycle')](ApplicationContext#off(type: 'abilityLifecycle', callbackId: number, callback: AsyncCallback<void>)). |
 
 **Error codes:**
 
@@ -721,6 +742,7 @@ Registers a listener for the lifecycle of a UIAbility within the application. Th
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="on-1"></a>
 ## on('environment')
 
 ```TypeScript
@@ -744,7 +766,7 @@ Registers a listener for system environment changes. This API uses an asynchrono
 > - There are certain restrictions when this API is triggered. For example, if you set the application language by  
 > calling [setLanguage](arkts-ability-applicationcontext-c.md#setlanguage-1), the system does not trigger the  
 > callback for the current API even if the system language changes. For details, see  
-> [When to Use](../../../../application-models/subscribe-system-environment-variable-changes.md#when-to-use).
+> [When to Use](docroot://application-models/subscribe-system-environment-variable-changes.md#when-to-use).
 
 **Since:** 9
 
@@ -767,7 +789,7 @@ Registers a listener for system environment changes. This API uses an asynchrono
 
 | Type | Description |
 | --- | --- |
-| number | ID of the callback registered. This ID is used to unregister the corresponding callback in [ApplicationContext.off('environment')](arkts-ability-applicationcontext-c.md#off-3). |
+| number | ID of the callback registered. This ID is used to unregister the corresponding callback in [ApplicationContext.off('environment')](ApplicationContext#off(type: 'environment', callbackId: number, callback: AsyncCallback<void>)). |
 
 **Error codes:**
 
@@ -775,6 +797,7 @@ Registers a listener for system environment changes. This API uses an asynchrono
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
 
+<a id="on-2"></a>
 ## on('applicationStateChange')
 
 ```TypeScript
@@ -806,6 +829,7 @@ Registers a listener for application process state changes. This API uses an asy
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="onsystemconfigurationupdated"></a>
 ## onSystemConfigurationUpdated
 
 ```TypeScript
@@ -832,6 +856,7 @@ Registers a listener for system configuration updated.
 | --- | --- | --- | --- |
 | callback | systemConfiguration.UpdatedCallback | Yes | The system configuration updated callback. |
 
+<a id="restartapp"></a>
 ## restartApp
 
 ```TypeScript
@@ -880,6 +905,7 @@ Restarts the application and starts the specified UIAbility. This API can be cal
 | [16000063](../errorcode-ability.md#16000063-invalid-ability-during-application-restart) | The target to restart does not belong to the current application or is not a UIAbility. |
 | [16000064](../errorcode-ability.md#16000064-frequent-application-restart) | Restart too frequently. Try again at least 3s later. |
 
+<a id="setcolormode"></a>
 ## setColorMode
 
 ```TypeScript
@@ -892,7 +918,7 @@ Sets the dark/light color mode for the application. This API can be called only 
 >  
 > Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has  
 > been loaded (using the  
-> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the  
+> [loadContent](docroot://reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the  
 > [onWindowStageCreate()](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1) lifecycle).
 
 **Since:** 11
@@ -918,6 +944,7 @@ Sets the dark/light color mode for the application. This API can be called only 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 
+<a id="setfont"></a>
 ## setFont
 
 ```TypeScript
@@ -930,7 +957,7 @@ Sets the font for this application. This API can be called only on the main thre
 >  
 > Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has  
 > been loaded (using the  
-> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the  
+> [loadContent](docroot://reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the  
 > [onWindowStageCreate()](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1) lifecycle).
 
 **Since:** 12
@@ -945,7 +972,7 @@ Sets the font for this application. This API can be called only on the main thre
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| font | string | Yes | Font, which can be registered by calling [UIContext.registerFont](../../../../reference/apis-arkui/arkts-apis-uicontext-font.md#registerfont). |
+| font | string | Yes | Font, which can be registered by calling [UIContext.registerFont](docroot://reference/apis-arkui/arkts-apis-uicontext-font.md#registerfont). |
 
 **Error codes:**
 
@@ -954,6 +981,7 @@ Sets the font for this application. This API can be called only on the main thre
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="setfontsizescale"></a>
 ## setFontSizeScale
 
 ```TypeScript
@@ -976,8 +1004,9 @@ Sets the scale ratio for the font size of this application. This API can be call
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fontSizeScale | number | Yes | Font scale ratio. The value is a non-negative number. When the application's [fontSizeScale](../../../../quick-start/app-configuration-file.md#configuration) is set to **followSystem** and the value set here exceeds the value of [fontSizeMaxScale](../../../../quick-start/app-configuration-file.md#configuration), the value of [fontSizeMaxScale](../../../../quick-start/app-configuration-file.md#configuration) takes effect. |
+| fontSizeScale | number | Yes | Font scale ratio. The value is a non-negative number. When the application's [fontSizeScale](docroot://quick-start/app-configuration-file.md#configuration) is set to **followSystem** and the value set here exceeds the value of [fontSizeMaxScale](docroot://quick-start/app-configuration-file.md#configuration), the value of [fontSizeMaxScale](docroot://quick-start/app-configuration-file.md#configuration) takes effect. |
 
+<a id="setlanguage"></a>
 ## setLanguage
 
 ```TypeScript
@@ -990,7 +1019,7 @@ Sets the language for the application. This API can be called only on the main t
 >  
 > Before calling this API, ensure that the window has been created and the page corresponding to the UIAbility has  
 > been loaded (using the  
-> [loadContent](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the  
+> [loadContent](docroot://reference/apis-arkui/arkts-apis-window-WindowStage.md#loadcontent9) API in the  
 > [onWindowStageCreate()](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1) lifecycle).
 
 **Since:** 11
@@ -1015,6 +1044,7 @@ Sets the language for the application. This API can be called only on the main t
 | --- | --- |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 
+<a id="setsupportedprocesscache"></a>
 ## setSupportedProcessCache
 
 ```TypeScript
@@ -1063,6 +1093,7 @@ This API can be properly called only on phones and 2-in-1 devices. If it is call
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="startselfuiability"></a>
 ## startSelfUIAbility
 
 ```TypeScript
@@ -1089,7 +1120,7 @@ Starts a UIAbility of the current application during the delayed-exit window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

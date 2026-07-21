@@ -38,7 +38,7 @@ data: Array<RequestData>
 
 Form data in the request body.
 
-**Type:** Array<RequestData>
+**Type:** Array&lt;RequestData&gt;
 
 **Since:** 6
 
@@ -70,7 +70,7 @@ files: Array<File>
 
 List of files to upload. The files are submitted in multipart/form-data format.
 
-**Type:** Array<File>
+**Type:** Array&lt;File&gt;
 
 **Since:** 6
 
@@ -132,7 +132,7 @@ HTTP request method. The value can be **POST** or **PUT**. The default value is 
 url: string
 ```
 
-Resource URL. From API version 6 to 14, the value contains a maximum of 2048 characters; since API version 15,the value contains a maximum of 8192 characters.[Intercepting HTTP](../../../../basic-services/request/app-file-upload-download.md#intercepting-http) is supported.
+Resource URL. From API version 6 to 14, the value contains a maximum of 2048 characters; since API version 15,the value contains a maximum of 8192 characters.[Intercepting HTTP](docroot://basic-services/request/app-file-upload-download.md#intercepting-http) is supported.
 
 **Type:** string
 

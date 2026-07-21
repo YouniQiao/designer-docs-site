@@ -6,6 +6,7 @@
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="createauxiliarypictureusingallocator"></a>
 ## createAuxiliaryPictureUsingAllocator
 
 ```TypeScript
@@ -31,7 +32,7 @@ Create an <b>AuxiliaryPicture</b> object, the memory type used by the AuxiliaryP
 | --- | --- | --- | --- |
 | auxiliaryPictureInfo | [AuxiliaryPictureInfo](arkts-image-image-auxiliarypictureinfo-i.md) | Yes | The basic information of the auxiliary picture. |
 | allocatorType | [AllocatorType](arkts-image-image-allocatortype-e.md) | No | Memory type. |
-| pixels | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | No | Pixel data used to initialize the auxiliary picture. |
+| pixels | ArrayBuffer | No | Pixel data used to initialize the auxiliary picture. |
 
 **Return value:**
 

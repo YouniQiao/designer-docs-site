@@ -14,6 +14,7 @@ Provides methods related to anonymous shared memory objects, including creating,
 import { rpc } from '@kit.IPCKit';
 ```
 
+<a id="closeashmem"></a>
 ## closeAshmem
 
 ```TypeScript
@@ -47,6 +48,7 @@ try {
 
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -100,6 +102,7 @@ try {
 
 ```
 
+<a id="create-1"></a>
 ## create
 
 ```TypeScript
@@ -152,6 +155,7 @@ try {
 
 ```
 
+<a id="createashmem"></a>
 ## createAshmem
 
 ```TypeScript
@@ -164,7 +168,7 @@ Creates an **Ashmem** object with the specified name and size. This API is a sta
 
 **Deprecated since:** 9
 
-**Substitutes:** create()
+**Substitutes:** [create()](arkts-ipc-rpc-ashmem-c.md#create-1)
 
 <!--Device-Ashmem-static createAshmem(name: string, size: number): Ashmem--><!--Device-Ashmem-static createAshmem(name: string, size: number): Ashmem-End-->
 
@@ -200,6 +204,7 @@ try {
 
 ```
 
+<a id="createashmemfromexisting"></a>
 ## createAshmemFromExisting
 
 ```TypeScript
@@ -212,7 +217,7 @@ Creates an **Ashmem** object by copying the file descriptor of an existing **Ash
 
 **Deprecated since:** 9
 
-**Substitutes:** create()
+**Substitutes:** [create()](arkts-ipc-rpc-ashmem-c.md#create-1)
 
 <!--Device-Ashmem-static createAshmemFromExisting(ashmem: Ashmem): Ashmem--><!--Device-Ashmem-static createAshmemFromExisting(ashmem: Ashmem): Ashmem-End-->
 
@@ -247,6 +252,7 @@ try {
 
 ```
 
+<a id="getashmemsize"></a>
 ## getAshmemSize
 
 ```TypeScript
@@ -283,6 +289,7 @@ try {
 
 ```
 
+<a id="mapashmem"></a>
 ## mapAshmem
 
 ```TypeScript
@@ -295,7 +302,7 @@ Creates the shared file mapping on the virtual address space of this process. Th
 
 **Deprecated since:** 9
 
-**Substitutes:** mapTypedAshmem(mapType:
+**Substitutes:** [mapTypedAshmem(mapType:](arkts-ipc-rpc-ashmem-c.md#maptypedashmem-1)
 
 <!--Device-Ashmem-mapAshmem(mapType: number): boolean--><!--Device-Ashmem-mapAshmem(mapType: number): boolean-End-->
 
@@ -329,6 +336,7 @@ try {
 
 ```
 
+<a id="mapreadandwriteashmem"></a>
 ## mapReadAndWriteAshmem
 
 ```TypeScript
@@ -369,6 +377,7 @@ try {
 
 ```
 
+<a id="mapreadonlyashmem"></a>
 ## mapReadOnlyAshmem
 
 ```TypeScript
@@ -409,6 +418,7 @@ try {
 
 ```
 
+<a id="mapreadwriteashmem"></a>
 ## mapReadWriteAshmem
 
 ```TypeScript
@@ -447,6 +457,7 @@ try {
 
 ```
 
+<a id="mapreadonlyashmem"></a>
 ## mapReadonlyAshmem
 
 ```TypeScript
@@ -485,6 +496,7 @@ try {
 
 ```
 
+<a id="maptypedashmem"></a>
 ## mapTypedAshmem
 
 ```TypeScript
@@ -530,6 +542,7 @@ try {
 
 ```
 
+<a id="readashmem"></a>
 ## readAshmem
 
 ```TypeScript
@@ -547,7 +560,7 @@ Reads data from the shared file associated with this **Ashmem** object.
 
 **Deprecated since:** 11
 
-**Substitutes:** readDataFromAshmem(size:
+**Substitutes:** [readDataFromAshmem(size:](arkts-ipc-rpc-ashmem-c.md#readdatafromashmem-1)
 
 <!--Device-Ashmem-readAshmem(size: number, offset: number): number[]--><!--Device-Ashmem-readAshmem(size: number, offset: number): number[]-End-->
 
@@ -595,6 +608,7 @@ try {
 
 ```
 
+<a id="readdatafromashmem"></a>
 ## readDataFromAshmem
 
 ```TypeScript
@@ -625,7 +639,7 @@ Reads data from the shared file associated with this **Ashmem** object.
 
 | Type | Description |
 | --- | --- |
-| [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Data read. |
+| ArrayBuffer | Data read. |
 
 **Error codes:**
 
@@ -662,6 +676,7 @@ try {
 
 ```
 
+<a id="readfromashmem"></a>
 ## readFromAshmem
 
 ```TypeScript
@@ -679,7 +694,7 @@ Reads data from the shared file associated with this **Ashmem** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** readDataFromAshmem(size:
+**Substitutes:** [readDataFromAshmem(size:](arkts-ipc-rpc-ashmem-c.md#readdatafromashmem-1)
 
 <!--Device-Ashmem-readFromAshmem(size: number, offset: number): number[]--><!--Device-Ashmem-readFromAshmem(size: number, offset: number): number[]-End-->
 
@@ -719,6 +734,7 @@ try {
 
 ```
 
+<a id="setprotection"></a>
 ## setProtection
 
 ```TypeScript
@@ -731,7 +747,7 @@ Sets the protection level of the memory region to which the shared file is mappe
 
 **Deprecated since:** 9
 
-**Substitutes:** setProtectionType(protectionType:
+**Substitutes:** [setProtectionType(protectionType:](arkts-ipc-rpc-ashmem-c.md#setprotectiontype-1)
 
 <!--Device-Ashmem-setProtection(protectionType: number): boolean--><!--Device-Ashmem-setProtection(protectionType: number): boolean-End-->
 
@@ -766,6 +782,7 @@ try {
 
 ```
 
+<a id="setprotectiontype"></a>
 ## setProtectionType
 
 ```TypeScript
@@ -811,6 +828,7 @@ try {
 
 ```
 
+<a id="unmapashmem"></a>
 ## unmapAshmem
 
 ```TypeScript
@@ -840,6 +858,7 @@ try {
 
 ```
 
+<a id="writeashmem"></a>
 ## writeAshmem
 
 ```TypeScript
@@ -857,7 +876,7 @@ Writes data to the shared file associated with this **Ashmem** object.
 
 **Deprecated since:** 11
 
-**Substitutes:** writeDataToAshmem(buf:
+**Substitutes:** [writeDataToAshmem(buf:](arkts-ipc-rpc-ashmem-c.md#writedatatoashmem-1)
 
 <!--Device-Ashmem-writeAshmem(buf: number[], size: number, offset: number): void--><!--Device-Ashmem-writeAshmem(buf: number[], size: number, offset: number): void-End-->
 
@@ -898,6 +917,7 @@ try {
 
 ```
 
+<a id="writedatatoashmem"></a>
 ## writeDataToAshmem
 
 ```TypeScript
@@ -921,7 +941,7 @@ Writes data to the shared file associated with this **Ashmem** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Data to write. |
+| buf | ArrayBuffer | Yes | Data to write. |
 | size | number | Yes | Size of the data to write. |
 | offset | number | Yes | Start position of the data to write in the memory region associated with this **Ashmem** object. |
 
@@ -957,6 +977,7 @@ try {
 
 ```
 
+<a id="writetoashmem"></a>
 ## writeToAshmem
 
 ```TypeScript
@@ -974,7 +995,7 @@ Writes data to the shared file associated with this **Ashmem** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeDataToAshmem(buf:
+**Substitutes:** [writeDataToAshmem(buf:](arkts-ipc-rpc-ashmem-c.md#writedatatoashmem-1)
 
 <!--Device-Ashmem-writeToAshmem(buf: number[], size: number, offset: number): boolean--><!--Device-Ashmem-writeToAshmem(buf: number[], size: number, offset: number): boolean-End-->
 

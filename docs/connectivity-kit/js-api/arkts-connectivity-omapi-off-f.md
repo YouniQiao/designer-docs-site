@@ -6,6 +6,7 @@
 import { omapi } from '@kit.ConnectivityKit';
 ```
 
+<a id="off"></a>
 ## off('stateChanged')
 
 ```TypeScript
@@ -25,7 +26,7 @@ Unsubscribe the service state changed event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stateChanged' | Yes | The type to unregister. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ServiceState> | No | The callback used to listen for the state change event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ServiceState&gt; | No | The callback used to listen for the state change event. |
 
 **Error codes:**
 

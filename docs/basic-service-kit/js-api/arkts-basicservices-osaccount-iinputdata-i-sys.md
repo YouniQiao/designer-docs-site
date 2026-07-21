@@ -16,6 +16,7 @@ Provides callbacks for PIN operations.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="onsetdata"></a>
 ## onSetData
 
 ```TypeScript
@@ -37,7 +38,7 @@ Called to notify the caller the data is set.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | authSubType | [AuthSubType](arkts-basicservices-osaccount-authsubtype-e-sys.md) | Yes | Credential subtype. |
-| data | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Data (credential) to set. The data is used for authentication and operations for adding and modifying credentials. |
+| data | Uint8Array | Yes | Data (credential) to set. The data is used for authentication and operations for adding and modifying credentials. |
 
 **Error codes:**
 

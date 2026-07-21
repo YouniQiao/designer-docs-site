@@ -5,7 +5,7 @@ This module provides the capability of obtaining and resetting the Open Anonymou
 > **NOTE**
 
 > To use the API for obtaining the OAID, you need to  
-> [request user authorization](../../../../security/AccessToken/request-user-authorization.md) (the permission is  
+> [request user authorization](docroot://security/AccessToken/request-user-authorization.md) (the permission is  
 > enabled by default): ohos.permission.APP_TRACKING_CONSENT.
 
 **Since:** 10
@@ -26,14 +26,14 @@ import { identifier } from '@kit.AdsKit';
 
 | Name | Description |
 | --- | --- |
-| [getOAID](arkts-ads-identifier-getoaid-f.md#getoaid-1) | Obtains the OAID. This API uses an asynchronous callback to return the result. |
-| [getOAID](arkts-ads-identifier-getoaid-f.md#getoaid-2) | Obtains the OAID. This API uses a promise to return the result. |
+| [getOAID](arkts-ads-identifier-getoaid-f.md#getoaid) | Obtains the OAID. This API uses an asynchronous callback to return the result. |
+| [getOAID](arkts-ads-identifier-getoaid-f.md#getoaid-1) | Obtains the OAID. This API uses a promise to return the result. |
 
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [resetOAID](arkts-ads-identifier-resetoaid-f-sys.md#resetoaid-1) | Resets the OAID. |
+| [resetOAID](arkts-ads-identifier-resetoaid-f-sys.md#resetoaid) | Resets the OAID. |
 <!--DelEnd-->
 

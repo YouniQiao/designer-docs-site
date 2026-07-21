@@ -6,6 +6,7 @@
 import { configPolicy } from '@kit.BasicServicesKit';
 ```
 
+<a id="getonecfgfile"></a>
 ## getOneCfgFile
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the path of the configuration file with the highest priority. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | relPath | string | Yes | Name of the configuration file. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the configuration file path is successfully obtained, **err** is **undefined**, and **data** is the path of the configuration file with the highest priority. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the configuration file path is successfully obtained, **err** is **undefined**, and **data** is the path of the configuration file with the highest priority. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -36,6 +37,7 @@ Obtains the path of the configuration file with the highest priority. This API u
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 
 
+<a id="getonecfgfile-1"></a>
 ## getOneCfgFile
 
 ```TypeScript
@@ -62,7 +64,7 @@ Obtains the path of the configuration file with the highest priority. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the path of the configuration file with the highest priority. |
+| Promise&lt;string&gt; | Promise used to return the path of the configuration file with the highest priority. |
 
 **Error codes:**
 
@@ -71,6 +73,7 @@ Obtains the path of the configuration file with the highest priority. This API u
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 
 
+<a id="getonecfgfile-2"></a>
 ## getOneCfgFile
 
 ```TypeScript
@@ -93,7 +96,7 @@ Obtains the path of the configuration file with the highest priority based on th
 | --- | --- | --- | --- |
 | relPath | string | Yes | Name of the configuration file. |
 | followMode | [FollowXMode](arkts-basicservices-configpolicy-followxmode-e-sys.md) | Yes | Follow mode. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the configuration file path is successfully obtained, **err** is **undefined**, and **data** is the path of the configuration file with the highest priority. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the configuration file path is successfully obtained, **err** is **undefined**, and **data** is the path of the configuration file with the highest priority. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -102,6 +105,7 @@ Obtains the path of the configuration file with the highest priority based on th
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 
 
+<a id="getonecfgfile-3"></a>
 ## getOneCfgFile
 
 ```TypeScript
@@ -125,7 +129,7 @@ Obtains the path of the configuration file with the highest priority based on th
 | relPath | string | Yes | Name of the configuration file. |
 | followMode | [FollowXMode](arkts-basicservices-configpolicy-followxmode-e-sys.md) | Yes | Follow mode. |
 | extra | string | Yes | Custom follow rule. This parameter is valid only when **followMode** is set to [USER_DEFINED](arkts-basicservices-configpolicy-followxmode-e-sys.md#user_defined). |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the configuration file path is successfully obtained, **err** is **undefined**, and **data** is the path of the configuration file with the highest priority. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the configuration file path is successfully obtained, **err** is **undefined**, and **data** is the path of the configuration file with the highest priority. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -134,6 +138,7 @@ Obtains the path of the configuration file with the highest priority based on th
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 
 
+<a id="getonecfgfile-4"></a>
 ## getOneCfgFile
 
 ```TypeScript
@@ -162,7 +167,7 @@ Obtains the path of the configuration file with the highest priority based on th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the path of the configuration file with the highest priority. |
+| Promise&lt;string&gt; | Promise used to return the path of the configuration file with the highest priority. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { formProvider } from '@kit.FormKit';
 ```
 
+<a id="isrequestpublishformsupported"></a>
 ## isRequestPublishFormSupported
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether a widget can be added to the widget host. This API uses an asynch
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback function that returns the query result.<br>**true**: The widget can be added to the widget host.<br>**false**: The widget cannot be added to the widget host. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback function that returns the query result.<br>**true**: The widget can be added to the widget host.<br>**false**: The widget cannot be added to the widget host. |
 
 **Error codes:**
 
@@ -38,6 +39,7 @@ Checks whether a widget can be added to the widget host. This API uses an asynch
 | [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
 
 
+<a id="isrequestpublishformsupported-1"></a>
 ## isRequestPublishFormSupported
 
 ```TypeScript
@@ -58,7 +60,7 @@ Checks whether a widget can be added to the widget host. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise that returns whether a widget can be added to the widget host.* **true**: The widget can be added to the widget host.* **false**: The widget cannot be added to the widget host. |
+| Promise&lt;boolean&gt; | Promise that returns whether a widget can be added to the widget host.* **true**: The widget can be added to the widget host.* **false**: The widget cannot be added to the widget host. |
 
 **Error codes:**
 

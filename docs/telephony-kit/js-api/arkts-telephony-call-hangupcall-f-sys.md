@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="hangupcall"></a>
 ## hangUpCall
 
 ```TypeScript
@@ -29,7 +30,7 @@ Hang up the foreground call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call to hangup. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of hangUpCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of hangUpCall. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ call.hangUpCall(1, (err: BusinessError) => {
 ```
 
 
+<a id="hangupcall-1"></a>
 ## hangUpCall
 
 ```TypeScript
@@ -87,7 +89,7 @@ Hang up the foreground call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the hangUpCall. |
+| Promise&lt;void&gt; | The promise returned by the hangUpCall. |
 
 **Error codes:**
 
@@ -115,6 +117,7 @@ call.hangUpCall(1).then(() => {
 ```
 
 
+<a id="hangupcall-2"></a>
 ## hangUpCall
 
 ```TypeScript
@@ -137,7 +140,7 @@ Hang up the foreground call without callId.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of hangUpCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of hangUpCall. |
 
 **Error codes:**
 

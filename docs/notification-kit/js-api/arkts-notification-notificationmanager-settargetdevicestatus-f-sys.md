@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="settargetdevicestatus"></a>
 ## setTargetDeviceStatus
 
 ```TypeScript
@@ -35,7 +36,7 @@ Sets the status of a device after it is successfully connected. Device status de
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

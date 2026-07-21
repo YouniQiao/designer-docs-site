@@ -47,7 +47,7 @@ lines: Array<string>
 
 List of multi-line text displayed after the notification is expanded. Each line is displayed as an independent entry and supports up to three lines. Each line size does not exceed 1024 bytes, excess part will be truncated.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 7
 

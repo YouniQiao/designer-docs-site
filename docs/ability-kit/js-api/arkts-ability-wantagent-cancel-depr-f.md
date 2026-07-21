@@ -1,5 +1,6 @@
 # cancel
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -25,7 +26,7 @@ Cancel a WantAgent. Only the application that creates the WantAgent can cancel i
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | to cancel. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Cancel the callback method for Want in WantAgent. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Cancel the callback method for Want in WantAgent. |
 
 **Example**
 
@@ -83,6 +84,7 @@ wantAgent.getWantAgent({
 ```
 
 
+<a id="cancel-1"></a>
 ## cancel
 
 ```TypeScript
@@ -113,7 +115,7 @@ Cancel a WantAgent. Only the application that creates the WantAgent can cancel i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Example**
 

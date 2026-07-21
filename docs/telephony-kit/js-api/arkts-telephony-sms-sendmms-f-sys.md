@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="sendmms"></a>
 ## sendMms
 
 ```TypeScript
@@ -30,7 +31,7 @@ Sends an MMS message.
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | mmsParams | [MmsParams](arkts-telephony-sms-mmsparams-i-sys.md) | Yes | Indicates the parameters of the MMS message. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of sendMms. For error code, see MmsFailCode. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of sendMms. For error code, see MmsFailCode. |
 
 **Error codes:**
 
@@ -123,6 +124,7 @@ class EntryAbility extends UIAbility {
 ```
 
 
+<a id="sendmms-1"></a>
 ## sendMms
 
 ```TypeScript
@@ -152,7 +154,7 @@ Sends an MMS message.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the sendMms. |
+| Promise&lt;void&gt; | The promise returned by the sendMms. |
 
 **Error codes:**
 

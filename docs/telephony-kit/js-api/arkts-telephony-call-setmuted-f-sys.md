@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="setmuted"></a>
 ## setMuted
 
 ```TypeScript
@@ -26,7 +27,7 @@ Set mute during a call.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setMuted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setMuted. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ call.setMuted((err: BusinessError) => {
 ```
 
 
+<a id="setmuted-1"></a>
 ## setMuted
 
 ```TypeScript
@@ -75,7 +77,7 @@ Set mute during a call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setMuted. |
+| Promise&lt;void&gt; | The promise returned by the setMuted. |
 
 **Error codes:**
 

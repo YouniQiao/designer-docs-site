@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="removecustomdnsrule"></a>
 ## removeCustomDnsRule
 
 ```TypeScript
@@ -29,7 +30,7 @@ Remove the custom DNS rule of the {@link host} for current application.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | host | string | Yes | Indicates the host name or the domain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Returns the callback of removeCustomDnsRule. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Returns the callback of removeCustomDnsRule. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ connection.removeCustomDnsRule("xxxx", (error: BusinessError, data: void) => {
 ```
 
 
+<a id="removecustomdnsrule-1"></a>
 ## removeCustomDnsRule
 
 ```TypeScript
@@ -86,7 +88,7 @@ Remove the custom DNS rule of the {@link host} for current application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

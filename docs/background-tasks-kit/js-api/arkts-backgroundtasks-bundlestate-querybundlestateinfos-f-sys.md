@@ -6,6 +6,7 @@
 import { bundleState } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="querybundlestateinfos"></a>
 ## queryBundleStateInfos
 
 ```TypeScript
@@ -34,7 +35,7 @@ This method queries usage information at the {@link #BY_OPTIMIZED} interval by d
 | --- | --- | --- | --- |
 | begin | number | Yes | Indicates the start time of the query period, in milliseconds. |
 | end | number | Yes | Indicates the end time of the query period, in milliseconds. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<BundleActiveInfoResponse> | Yes | the callback of queryBundleStateInfos.the {@link BundleActiveInfoResponse} objects containing the usage information about each bundle. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;BundleActiveInfoResponse&gt; | Yes | the callback of queryBundleStateInfos.the {@link BundleActiveInfoResponse} objects containing the usage information about each bundle. |
 
 **Example**
 
@@ -55,6 +56,7 @@ bundleState.queryBundleStateInfos(0, 20000000000000, (err: BusinessError ,
 ```
 
 
+<a id="querybundlestateinfos-1"></a>
 ## queryBundleStateInfos
 
 ```TypeScript
@@ -88,7 +90,7 @@ This method queries usage information at the {@link #BY_OPTIMIZED} interval by d
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BundleActiveInfoResponse> | the promise returned by queryBundleStatsInfos.the {@link BundleActiveInfoResponse} objects containing the usage information about each bundle. |
+| Promise&lt;BundleActiveInfoResponse&gt; | the promise returned by queryBundleStatsInfos.the {@link BundleActiveInfoResponse} objects containing the usage information about each bundle. |
 
 **Example**
 

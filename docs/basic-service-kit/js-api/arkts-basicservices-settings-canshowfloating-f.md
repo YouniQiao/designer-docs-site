@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="canshowfloating"></a>
 ## canShowFloating
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether a specified application can show as a floating window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback of canShowFloating result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback of canShowFloating result. |
 
 **Example**
 
@@ -42,6 +43,7 @@ settings.canShowFloating((err:Error, status: boolean) => {
 ```
 
 
+<a id="canshowfloating-1"></a>
 ## canShowFloating
 
 ```TypeScript
@@ -62,7 +64,7 @@ Checks whether a specified application can show as a floating window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the application can draw over other applications; returns{@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the application can draw over other applications; returns{@code false} otherwise. |
 
 **Example**
 

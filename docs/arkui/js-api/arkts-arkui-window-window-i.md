@@ -16,6 +16,7 @@ In the following API examples, you must use [getLastWindow()](arkts-arkui-window
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="clearwindowmask"></a>
 ## clearWindowMask
 
 ```TypeScript
@@ -36,7 +37,7 @@ Clear the window mask of window
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -47,6 +48,7 @@ Clear the window mask of window
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only subwindows and float windows are supported. |
 
+<a id="clienttoglobaldisplay"></a>
 ## clientToGlobalDisplay
 
 ```TypeScript
@@ -85,6 +87,7 @@ This API is not supported in windows that are subject to display scaling, such a
 | [1300010](../errorcode-window.md#1300010-unsupported-operation-in-the-current-window-mode) | The operation in the current window status is invalid. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: 1. Invalid parameter range. |
 
+<a id="convertorientationandrotation"></a>
 ## convertOrientationAndRotation
 
 ```TypeScript
@@ -120,7 +123,7 @@ Window orientation refers to the direction of the screen where the window reside
 | --- | --- | --- | --- |
 | from | [RotationInfoType](arkts-arkui-window-rotationinfotype-e.md) | Yes | Type of the value to convert. |
 | to | [RotationInfoType](arkts-arkui-window-rotationinfotype-e.md) | Yes | Type of the target value. |
-| value | number | Yes | Value to convert. The value is an integer. If a floating-point number is entered, the value is rounded down. The value range is [0, 3]. If the value is out of the range, it is an invalid parameter (error code [401](../../../../reference/errorcode-universal.md#401-parameter-check-failed) is thrown). |
+| value | number | Yes | Value to convert. The value is an integer. If a floating-point number is entered, the value is rounded down. The value range is [0, 3]. If the value is out of the range, it is an invalid parameter (error code [401](docroot://reference/errorcode-universal.md#401-parameter-check-failed) is thrown). |
 
 **Return value:**
 
@@ -136,6 +139,7 @@ Window orientation refers to the direction of the screen where the window reside
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause: 1. The window is not created or destroyed; 2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="createsubwindowwithoptions"></a>
 ## createSubWindowWithOptions
 
 ```TypeScript
@@ -159,13 +163,13 @@ Creates a child window under the main window, another child window, or floating 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the child window. |
-| options | [SubWindowOptions](arkts-arkui-window-subwindowoptions-i.md) | Yes | Parameters used for creating the child window. If **decorEnabled** is set to true, the child window does not use an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout). If **decorEnabled** is set to **false**, the child window uses an immersive layout. |
+| options | [SubWindowOptions](arkts-arkui-window-subwindowoptions-i.md) | Yes | Parameters used for creating the child window. If **decorEnabled** is set to true, the child window does not use an [immersive layout](docroot://windowmanager/window-terminology.md#immersive-layout). If **decorEnabled** is set to **false**, the child window uses an immersive layout. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | Promise used to used to return the child window created. |
+| Promise&lt;Window&gt; | Promise used to used to return the child window created. |
 
 **Error codes:**
 
@@ -177,6 +181,7 @@ Creates a child window under the main window, another child window, or floating 
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:1. Invalid window type. Only main windows, subwindows, and floating windows are supported;2. When SubWindowOptions.zLevelAboveParentLoosened is true, only main windows are supported. |
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -189,7 +194,7 @@ Destroys this window. This API uses an asynchronous callback to return the resul
 
 **Deprecated since:** 9
 
-**Substitutes:** destroyWindow(callback:
+**Substitutes:** [destroyWindow(callback:](arkts-arkui-window-window-i.md#destroywindow-1)
 
 <!--Device-Window-destroy(callback: AsyncCallback<void>): void--><!--Device-Window-destroy(callback: AsyncCallback<void>): void-End-->
 
@@ -199,8 +204,9 @@ Destroys this window. This API uses an asynchronous callback to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="destroy-1"></a>
 ## destroy
 
 ```TypeScript
@@ -213,7 +219,7 @@ Destroys this window. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [destroyWindow()](arkts-arkui-window-window-i.md#destroywindow-2)
+**Substitutes:** [destroyWindow()](arkts-arkui-window-window-i.md#destroywindow-1)
 
 <!--Device-Window-destroy(): Promise<void>--><!--Device-Window-destroy(): Promise<void>-End-->
 
@@ -223,8 +229,9 @@ Destroys this window. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="destroywindow"></a>
 ## destroyWindow
 
 ```TypeScript
@@ -245,7 +252,7 @@ Destroys this window. This API uses an asynchronous callback to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -254,6 +261,7 @@ Destroys this window. This API uses an asynchronous callback to return the resul
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.<br>**Applicable version:** 9 and later |
 
+<a id="destroywindow-1"></a>
 ## destroyWindow
 
 ```TypeScript
@@ -274,7 +282,7 @@ Destroys this window. This API uses a promise to return the result. It takes eff
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -283,6 +291,7 @@ Destroys this window. This API uses a promise to return the result. It takes eff
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.<br>**Applicable version:** 9 and later |
 
+<a id="disablelandscapemultiwindow"></a>
 ## disableLandscapeMultiWindow
 
 ```TypeScript
@@ -291,7 +300,7 @@ disableLandscapeMultiWindow(): Promise<void>
 
 Disables the landscape multi-window mode for the UI page that supports the horizontal layout.
 
-This API takes effect only for the main window of the application. In addition, **preferMultiWindowOrientation** must be set to **landscape_auto** in the [abilities](../../../../quick-start/module-configuration-file.md#abilities) tag in the **module.json5** file.
+This API takes effect only for the main window of the application. In addition, **preferMultiWindowOrientation** must be set to **landscape_auto** in the [abilities](docroot://quick-start/module-configuration-file.md#abilities) tag in the **module.json5** file.
 
 **Since:** 12
 
@@ -305,7 +314,7 @@ This API takes effect only for the main window of the application. In addition, 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -314,6 +323,7 @@ This API takes effect only for the main window of the application. In addition, 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. Possible cause:Internal task error. |
 
+<a id="enablelandscapemultiwindow"></a>
 ## enableLandscapeMultiWindow
 
 ```TypeScript
@@ -322,7 +332,7 @@ enableLandscapeMultiWindow(): Promise<void>
 
 Enables the landscape multi-window mode for the UI page that supports the horizontal layout. You are not advised to call this API for the UI page that adopts the vertical layout.
 
-This API takes effect only for the main window of the application. In addition, **preferMultiWindowOrientation** must be set to **landscape_auto** in the [abilities](../../../../quick-start/module-configuration-file.md#abilities) tag in the **module.json5** file.
+This API takes effect only for the main window of the application. In addition, **preferMultiWindowOrientation** must be set to **landscape_auto** in the [abilities](docroot://quick-start/module-configuration-file.md#abilities) tag in the **module.json5** file.
 
 **Since:** 12
 
@@ -336,7 +346,7 @@ This API takes effect only for the main window of the application. In addition, 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -345,6 +355,7 @@ This API takes effect only for the main window of the application. In addition, 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. Possible cause:Internal task error. |
 
+<a id="getavoidarea"></a>
 ## getAvoidArea
 
 ```TypeScript
@@ -355,7 +366,7 @@ Obtains the area where this window cannot be displayed, for example, the system 
 
 Main window/Child window:
 
-- In the free-floating window mode under the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state (the window mode is **window.WindowStatusType.FLOATING**), only the avoidance area of the fixed soft keyboard type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_KEYBOARD**) is available.  
+- In the free-floating window mode under the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state (the window mode is **window.WindowStatusType.FLOATING**), only the avoidance area of the fixed soft keyboard type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_KEYBOARD**) is available.  
 - In the free-floating window mode of the main window in the non-freeform window state, only the avoidance area of the system bar type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_SYSTEM**) is available.  
 - In other scenarios, this API can be called to obtain the calculated avoidance area only when the main window is not in the free-floating window mode or the device type is phone or tablet. Otherwise, the obtained avoidance area is empty.  
 - For the child window in the non-freeform window state or non-free-floating window mode, this API can be called to obtain the calculated avoidance area only when the position and size of the child window are the same as those of the main window. Otherwise, the obtained avoidance area is empty.
@@ -379,8 +390,9 @@ Global floating window, modal window, or system window:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) | Yes | Type of the area. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AvoidArea> | Yes | Callback used to return the area. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AvoidArea&gt; | Yes | Callback used to return the area. |
 
+<a id="getavoidarea-1"></a>
 ## getAvoidArea
 
 ```TypeScript
@@ -391,7 +403,7 @@ Obtains the area where this window cannot be displayed, for example, the system 
 
 Main window/Child window:
 
-- In the free-floating window mode under the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state (the window mode is **window.WindowStatusType.FLOATING**), only the avoidance area of the fixed soft keyboard type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_KEYBOARD**) is available.  
+- In the free-floating window mode under the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state (the window mode is **window.WindowStatusType.FLOATING**), only the avoidance area of the fixed soft keyboard type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_KEYBOARD**) is available.  
 - In the free-floating window mode of the main window in the non-freeform window state, only the avoidance area of the system bar type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_SYSTEM**) is available.  
 - In other scenarios, this API can be called to obtain the calculated avoidance area only when the main window is not in the free-floating window mode or the device type is phone or tablet. Otherwise, the obtained avoidance area is empty.  
 - For the child window in the non-freeform window state or non-free-floating window mode, this API can be called to obtain the calculated avoidance area only when the position and size of the child window are the same as those of the main window. Otherwise, the obtained avoidance area is empty.
@@ -420,8 +432,9 @@ Global floating window, modal window, or system window:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AvoidArea> | Promise used to return the area. |
+| Promise&lt;AvoidArea&gt; | Promise used to return the area. |
 
+<a id="getcolorspace"></a>
 ## getColorSpace
 
 ```TypeScript
@@ -444,8 +457,9 @@ Obtains the color space of this window. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ColorSpace> | Promise used to return the current color space. |
+| Promise&lt;ColorSpace&gt; | Promise used to return the current color space. |
 
+<a id="getcolorspace-1"></a>
 ## getColorSpace
 
 ```TypeScript
@@ -468,8 +482,9 @@ Obtains the color space of this window. This API uses an asynchronous callback t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ColorSpace> | Yes | Callback used to return the result. When the color space is obtained successfully, **err** is **undefined**, and **data** is the current color space. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ColorSpace&gt; | Yes | Callback used to return the result. When the color space is obtained successfully, **err** is **undefined**, and **data** is the current color space. |
 
+<a id="getdecorbuttonstyle"></a>
 ## getDecorButtonStyle
 
 ```TypeScript
@@ -501,6 +516,7 @@ Obtains the button style of the decoration bar. The setting takes effect only fo
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows and subwindows are supported. |
 
+<a id="getglobalrect"></a>
 ## getGlobalRect
 
 ```TypeScript
@@ -533,6 +549,7 @@ This API can determine the actual on-screen location and size of a window that h
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed.2. Failed to convert result into JS value object. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="getimmersivemodeenabledstate"></a>
 ## getImmersiveModeEnabledState
 
 ```TypeScript
@@ -543,7 +560,7 @@ Checks whether the immersive layout is enabled for this window.
 
 This API can be called only by the main window and child windows.
 
-The return value is consistent with the settings applied via [setImmersiveModeEnabledState()](arkts-arkui-window-window-i.md#setimmersivemodeenabledstate-1) and [setWindowLayoutFullScreen()](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-2). If neither of these APIs has been called, the default return value is **false**.
+The return value is consistent with the settings applied via [setImmersiveModeEnabledState()](arkts-arkui-window-window-i.md#setimmersivemodeenabledstate-1) and [setWindowLayoutFullScreen()](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-1). If neither of these APIs has been called, the default return value is **false**.
 
 **Since:** 12
 
@@ -566,6 +583,7 @@ The return value is consistent with the settings applied via [setImmersiveModeEn
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows and subwindows are supported. |
 
+<a id="getparentwindow"></a>
 ## getParentWindow
 
 ```TypeScript
@@ -597,6 +615,7 @@ Obtains the parent window of this child window.
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type, not called from subwindow. |
 | [1300009](../errorcode-window.md#1300009-invalid-parent-window) | The parent window is invalid. |
 
+<a id="getpreferredorientation"></a>
 ## getPreferredOrientation
 
 ```TypeScript
@@ -625,6 +644,7 @@ Obtains the orientation of the window. If no orientation is specified, **window.
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="getproperties"></a>
 ## getProperties
 
 ```TypeScript
@@ -647,8 +667,9 @@ Obtains the properties of this window. This API uses an asynchronous callback to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WindowProperties> | Yes | Callback used to return the window properties. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WindowProperties&gt; | Yes | Callback used to return the window properties. |
 
+<a id="getproperties-1"></a>
 ## getProperties
 
 ```TypeScript
@@ -671,8 +692,9 @@ Obtains the properties of this window. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WindowProperties> | Promise used to return the window properties. |
+| Promise&lt;WindowProperties&gt; | Promise used to return the window properties. |
 
+<a id="getstatusbarproperty"></a>
 ## getStatusBarProperty
 
 ```TypeScript
@@ -704,6 +726,7 @@ Calling this API is not supported for child window and will cause error code 130
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed.2. Internal task error. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 
+<a id="getsubwindowzlevel"></a>
 ## getSubWindowZLevel
 
 ```TypeScript
@@ -734,6 +757,7 @@ Obtains the z-level of the current child window. This API cannot be called by th
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="gettitlebuttonrect"></a>
 ## getTitleButtonRect
 
 ```TypeScript
@@ -763,6 +787,7 @@ Obtains the rectangle that holds the minimize, maximize, and close buttons on th
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="getuicontext"></a>
 ## getUIContext
 
 ```TypeScript
@@ -793,6 +818,7 @@ Obtains a UIContext instance.
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="getwindowavoidarea"></a>
 ## getWindowAvoidArea
 
 ```TypeScript
@@ -803,7 +829,7 @@ Obtains the avoid area of this window.
 
 Main window/Child window:
 
-- In the free-floating window mode under the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state (the window mode is **window.WindowStatusType.FLOATING**), only the avoidance area of the fixed soft keyboard type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_KEYBOARD**) is available.  
+- In the free-floating window mode under the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state (the window mode is **window.WindowStatusType.FLOATING**), only the avoidance area of the fixed soft keyboard type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_KEYBOARD**) is available.  
 - In the free-floating window mode of the main window in the non-freeform window state, only the avoidance area of the system bar type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_SYSTEM**) is available.  
 - In other scenarios, this API can be called to obtain the calculated avoidance area only when the main window is not in the free-floating window mode or the device type is phone or tablet. Otherwise, the obtained avoidance area is empty.  
 - For the child window in the non-freeform window state or non-free-floating window mode, this API can be called to obtain the calculated avoidance area only when the position and size of the child window are the same as those of the main window. Otherwise, the obtained avoidance area is empty.
@@ -844,6 +870,7 @@ This API is generally applicable to the following scenarios:
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Convert avoid area failed. |
 
+<a id="getwindowavoidareaignoringvisibility"></a>
 ## getWindowAvoidAreaIgnoringVisibility
 
 ```TypeScript
@@ -854,7 +881,7 @@ Obtains the avoid area of this application window, even if the avoid area is inv
 
 Main window/Child window:
 
-- When the main window is in the free-floating window mode under a non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state (the window mode is **window.WindowStatusType.FLOATING**), only the avoidance area of the system bar type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_SYSTEM**) is available.  
+- When the main window is in the free-floating window mode under a non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state (the window mode is **window.WindowStatusType.FLOATING**), only the avoidance area of the system bar type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_SYSTEM**) is available.  
 - In other scenarios, this API can be called to obtain the calculated avoidance area only when the main window is not in the free-floating window mode or the device type is phone or tablet. Otherwise, the obtained avoidance area is empty.  
 - For the child window in the non-freeform window state or non-free-floating window mode, this API can be called to obtain the calculated avoidance area only when the position and size of the child window are the same as those of the main window. Otherwise, the obtained avoidance area is empty.
 
@@ -889,6 +916,7 @@ Global floating window, modal window, or system window:
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: Invalid parameter range. |
 
+<a id="getwindowcolorspace"></a>
 ## getWindowColorSpace
 
 ```TypeScript
@@ -917,6 +945,7 @@ Obtains the color space of this window.
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="getwindowcornerradius"></a>
 ## getWindowCornerRadius
 
 ```TypeScript
@@ -947,6 +976,7 @@ Obtains the radius of rounded corners of a child window or floating window. If [
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed;2. Internal task error. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:Invalid window type. Only subwindows and float windows are supported. |
 
+<a id="getwindowdecorheight"></a>
 ## getWindowDecorHeight
 
 ```TypeScript
@@ -976,6 +1006,7 @@ Obtains the height of the title bar of this window. This API takes effect for th
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="getwindowdecorvisible"></a>
 ## getWindowDecorVisible
 
 ```TypeScript
@@ -1005,6 +1036,7 @@ Checks whether the title bar of this window is visible. In the stage model, this
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="getwindowdensityinfo"></a>
 ## getWindowDensityInfo
 
 ```TypeScript
@@ -1034,6 +1066,7 @@ Obtains the display density information of this window.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="getwindowlimits"></a>
 ## getWindowLimits
 
 ```TypeScript
@@ -1063,6 +1096,7 @@ Obtains the size limits of this application window, in px.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="getwindowlimitsvp"></a>
 ## getWindowLimitsVP
 
 ```TypeScript
@@ -1092,6 +1126,7 @@ For system windows and global floating windows, the default minimum width and he
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="getwindowproperties"></a>
 ## getWindowProperties
 
 ```TypeScript
@@ -1120,6 +1155,7 @@ Obtains the properties of this window.
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="getwindowstatesnapshot"></a>
 ## getWindowStateSnapshot
 
 ```TypeScript
@@ -1142,7 +1178,7 @@ Get window state snapshot, including isPcMode information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the window state snapshot. |
+| Promise&lt;string&gt; | Promise used to return the window state snapshot. |
 
 **Error codes:**
 
@@ -1152,6 +1188,7 @@ Get window state snapshot, including isPcMode information.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed; |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.Possible cause: The internal services of the window are not started normally. |
 
+<a id="getwindowstatus"></a>
 ## getWindowStatus
 
 ```TypeScript
@@ -1162,10 +1199,10 @@ Obtains the mode of this window.
 
 > **NOTE**  
 >  
-> In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode, when the window is  
+> In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode, when the window is  
 > maximized (covering the entire screen, with a dock bar and status bar on 2-in-1 devices, and a status bar on  
 > tablets), the return value differs based on the  
-> [targetAPIVersion](../../../../quick-start/app-configuration-file.md#tags-in-the-configuration-file) setting. For  
+> [targetAPIVersion](docroot://quick-start/app-configuration-file.md#tags-in-the-configuration-file) setting. For  
 > versions below 14, the return value is **WindowStatusType::FULL_SCREEN**. For versions 14 and above, the return  
 > value is **WindowStatusType::MAXIMIZE**.
 
@@ -1190,6 +1227,7 @@ Obtains the mode of this window.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="getwindowsystembarproperties"></a>
 ## getWindowSystemBarProperties
 
 ```TypeScript
@@ -1210,7 +1248,7 @@ Obtains the properties of the <!--Del-->three-button navigation bar and <!--DelE
 
 | Type | Description |
 | --- | --- |
-| [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Properties of the &lt;!--Del--&gt;three-button navigation bar and &lt;!--DelEnd--&gt;status bar. |
+| [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Properties of the <!--Del-->three-button navigation bar and <!--DelEnd-->status bar. |
 
 **Error codes:**
 
@@ -1220,6 +1258,7 @@ Obtains the properties of the <!--Del-->three-button navigation bar and <!--DelE
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.Possible cause: Create js object failed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 
+<a id="getwindowtransitionanimation"></a>
 ## getWindowTransitionAnimation
 
 ```TypeScript
@@ -1262,6 +1301,7 @@ Currently, this API can be used only on the main window of an application.
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: 1. Invalid parameter range. |
 
+<a id="globaldisplaytoclient"></a>
 ## globalDisplayToClient
 
 ```TypeScript
@@ -1300,6 +1340,7 @@ This API is not supported in windows that are subject to display scaling, such a
 | [1300010](../errorcode-window.md#1300010-unsupported-operation-in-the-current-window-mode) | The operation in the current window status is invalid. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: 1. Invalid parameter range. |
 
+<a id="isfloatnavigationavoidareaenabled"></a>
 ## isFloatNavigationAvoidAreaEnabled
 
 ```TypeScript
@@ -1330,6 +1371,7 @@ Get whether the float navigation avoid area can be obtained.
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Create js value failed. |
 
+<a id="isfocused"></a>
 ## isFocused
 
 ```TypeScript
@@ -1358,6 +1400,7 @@ Checks whether this window is focused.
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:The window is not created or destroyed. |
 
+<a id="isgesturebackenabled"></a>
 ## isGestureBackEnabled
 
 ```TypeScript
@@ -1388,6 +1431,7 @@ Obtains whether the back gesture is enabled for the current window. This API can
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 
+<a id="isimmersivelayout"></a>
 ## isImmersiveLayout
 
 ```TypeScript
@@ -1415,13 +1459,14 @@ Checks whether this window is in immersive mode.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="isinfreewindowmode"></a>
 ## isInFreeWindowMode
 
 ```TypeScript
 isInFreeWindowMode(): boolean
 ```
 
-Checks whether this window is in [freeform window](../../../../windowmanager/window-terminology.md#freeform-window)mode.
+Checks whether this window is in [freeform window](docroot://windowmanager/window-terminology.md#freeform-window)mode.
 
 **Since:** 22
 
@@ -1444,6 +1489,7 @@ Checks whether this window is in [freeform window](../../../../windowmanager/win
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="isinwindowposturemode"></a>
 ## isInWindowPostureMode
 
 ```TypeScript
@@ -1480,13 +1526,14 @@ Checks whether this window is in the specified window posture mode.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. Possible cause: The internal services of the window are not started normally. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: Invalid parameter range. |
 
+<a id="isreceivedrageventenabled"></a>
 ## isReceiveDragEventEnabled
 
 ```TypeScript
 isReceiveDragEventEnabled(): boolean
 ```
 
-Obtains whether the current window can receive [drag events](../arkts-components/arkts-arkui-common-dragevent-i.md).
+Obtains whether the current window can receive [drag events](../arkts-components/arkts-arkui-dragevent-i.md).
 
 **Since:** 23
 
@@ -1510,6 +1557,7 @@ Obtains whether the current window can receive [drag events](../arkts-components
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="isseparationtouchenabled"></a>
 ## isSeparationTouchEnabled
 
 ```TypeScript
@@ -1540,6 +1588,7 @@ Obtains whether the current window supports the event separation state.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="isshowing"></a>
 ## isShowing
 
 ```TypeScript
@@ -1562,8 +1611,9 @@ Checks whether this window is displayed. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. **true** if the window is displayed, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. **true** if the window is displayed, **false** otherwise. |
 
+<a id="isshowing-1"></a>
 ## isShowing
 
 ```TypeScript
@@ -1586,8 +1636,9 @@ Checks whether this window is displayed. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if the window is displayed, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if the window is displayed, **false** otherwise. |
 
+<a id="issupportwidegamut"></a>
 ## isSupportWideGamut
 
 ```TypeScript
@@ -1610,8 +1661,9 @@ Checks whether this window supports the wide-gamut color space. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if the wide-gamut color space is supported, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if the wide-gamut color space is supported, **false** otherwise. |
 
+<a id="issupportwidegamut-1"></a>
 ## isSupportWideGamut
 
 ```TypeScript
@@ -1624,7 +1676,7 @@ Checks whether this window supports the wide-gamut color space. This API uses an
 
 **Deprecated since:** 9
 
-**Substitutes:** isWindowSupportWideGamut(callback:
+**Substitutes:** [isWindowSupportWideGamut(callback:](arkts-arkui-window-window-i.md#iswindowsupportwidegamut-1)
 
 <!--Device-Window-isSupportWideGamut(callback: AsyncCallback<boolean>): void--><!--Device-Window-isSupportWideGamut(callback: AsyncCallback<boolean>): void-End-->
 
@@ -1634,8 +1686,9 @@ Checks whether this window supports the wide-gamut color space. This API uses an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. **true** if the wide-gamut color space is supported, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. **true** if the wide-gamut color space is supported, **false** otherwise. |
 
+<a id="issystemavoidareaenabled"></a>
 ## isSystemAvoidAreaEnabled
 
 ```TypeScript
@@ -1667,6 +1720,7 @@ Checks whether a floating window, modal window, or system window (**WindowType**
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. |
 
+<a id="iswindowhighlighted"></a>
 ## isWindowHighlighted
 
 ```TypeScript
@@ -1675,7 +1729,7 @@ isWindowHighlighted(): boolean
 
 Checks whether the window is active. To obtain the active state, call this API when the [WindowEventType](arkts-arkui-window-windoweventtype-e.md) lifecycle is **WINDOW_ACTIVE**.
 
-You can use [on('windowHighlightChange')](arkts-arkui-window-window-i.md#on-27)to listen for status changes and then execute the corresponding service.
+You can use [on('windowHighlightChange')](window.Window.on(type: 'windowHighlightChange', callback: Callback<boolean>))to listen for status changes and then execute the corresponding service.
 
 **Since:** 18
 
@@ -1698,6 +1752,7 @@ You can use [on('windowHighlightChange')](arkts-arkui-window-window-i.md#on-27)t
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:The window is not created or destroyed. |
 
+<a id="iswindowshowing"></a>
 ## isWindowShowing
 
 ```TypeScript
@@ -1726,6 +1781,7 @@ Checks whether this window is displayed.
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="iswindowsupportwidegamut"></a>
 ## isWindowSupportWideGamut
 
 ```TypeScript
@@ -1746,7 +1802,7 @@ Checks whether this window supports the wide-gamut color space. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if the wide-gamut color space is supported, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if the wide-gamut color space is supported, **false** otherwise. |
 
 **Error codes:**
 
@@ -1754,6 +1810,7 @@ Checks whether this window supports the wide-gamut color space. This API uses a 
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="iswindowsupportwidegamut-1"></a>
 ## isWindowSupportWideGamut
 
 ```TypeScript
@@ -1774,7 +1831,7 @@ Checks whether this window supports the wide-gamut color space. This API uses an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1782,6 +1839,7 @@ Checks whether this window supports the wide-gamut color space. This API uses an
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="keepkeyboardonfocus"></a>
 ## keepKeyboardOnFocus
 
 ```TypeScript
@@ -1813,6 +1871,7 @@ Determines whether to retain the soft keyboard created by another window when th
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause: Only float windows, subwindows, dialog windows, or window type as system windows are supported. |
 
+<a id="loadcontent"></a>
 ## loadContent
 
 ```TypeScript
@@ -1836,8 +1895,8 @@ Loads the content of a page, with its path in the current project specified, to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the page from which the content will be loaded. The path is configured in the **main_pages.json** file of the project. |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | Yes | Page-level UI state storage unit, which is used to transfer the state attribute for the page. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | Yes | Page-level UI state storage unit, which is used to transfer the state attribute for the page. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1847,6 +1906,7 @@ Loads the content of a page, with its path in the current project specified, to 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.<br>**Applicable version:** 9 and later |
 
+<a id="loadcontent-1"></a>
 ## loadContent
 
 ```TypeScript
@@ -1870,13 +1930,13 @@ Loads the content of a page, with its path in the current project specified, to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the page from which the content will be loaded. The path is configured in the **main_pages.json** file of the project. |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | Yes | Page-level UI state storage unit, which is used to transfer the state attribute for the page. |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | Yes | Page-level UI state storage unit, which is used to transfer the state attribute for the page. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1886,6 +1946,7 @@ Loads the content of a page, with its path in the current project specified, to 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.<br>**Applicable version:** 9 and later |
 
+<a id="loadcontent-2"></a>
 ## loadContent
 
 ```TypeScript
@@ -1898,7 +1959,7 @@ Loads content from a page to this window. This API uses an asynchronous callback
 
 **Deprecated since:** 9
 
-**Substitutes:** setUIContent(path:
+**Substitutes:** [setUIContent(path:](arkts-arkui-window-window-i.md#setuicontent-1)
 
 <!--Device-Window-loadContent(path: string, callback: AsyncCallback<void>): void--><!--Device-Window-loadContent(path: string, callback: AsyncCallback<void>): void-End-->
 
@@ -1909,8 +1970,9 @@ Loads content from a page to this window. This API uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the page from which the content will be loaded. In the stage model, the path is configured in the **main_pages.json** file of the project. In the FA model, the path is configured in the **config.json** file of the project. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="loadcontent-3"></a>
 ## loadContent
 
 ```TypeScript
@@ -1923,7 +1985,7 @@ Loads content from a page to this window. This API uses a promise to return the 
 
 **Deprecated since:** 9
 
-**Substitutes:** setUIContent(path:
+**Substitutes:** [setUIContent(path:](arkts-arkui-window-window-i.md#setuicontent-1)
 
 <!--Device-Window-loadContent(path: string): Promise<void>--><!--Device-Window-loadContent(path: string): Promise<void>-End-->
 
@@ -1939,15 +2001,16 @@ Loads content from a page to this window. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="loadcontentbyname"></a>
 ## loadContentByName
 
 ```TypeScript
 loadContentByName(name: string, storage: LocalStorage, callback: AsyncCallback<void>): void
 ```
 
-Loads the content of a [named route](../../../../ui/arkts-routing.md#named-route) page to this window, and transfers the state attribute to the page through a local storage. This API uses an asynchronous callback to return the result. You are advised to call this API during UIAbility startup. If called repeatedly, this API will destroy the existing page content (UIContent) before loading the new content. Exercise caution when using it. The execution context of the current UI may be unclear. Therefore, you are advised not to perform UI-related operations within the callback.
+Loads the content of a [named route](docroot://ui/arkts-routing.md#named-route) page to this window, and transfers the state attribute to the page through a local storage. This API uses an asynchronous callback to return the result. You are advised to call this API during UIAbility startup. If called repeatedly, this API will destroy the existing page content (UIContent) before loading the new content. Exercise caution when using it. The execution context of the current UI may be unclear. Therefore, you are advised not to perform UI-related operations within the callback.
 
 **Since:** 11
 
@@ -1964,8 +2027,8 @@ Loads the content of a [named route](../../../../ui/arkts-routing.md#named-route
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the named route page. |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | Yes | Page-level UI state storage unit, which is used to transfer the state attribute for the page. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | Yes | Page-level UI state storage unit, which is used to transfer the state attribute for the page. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1975,13 +2038,14 @@ Loads the content of a [named route](../../../../ui/arkts-routing.md#named-route
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="loadcontentbyname-1"></a>
 ## loadContentByName
 
 ```TypeScript
 loadContentByName(name: string, callback: AsyncCallback<void>): void
 ```
 
-Loads the content of a [named route](../../../../ui/arkts-routing.md#named-route) page to this window. This API uses an asynchronous callback to return the result. You are advised to call this API during UIAbility startup. If called repeatedly, this API will destroy the existing page content (UIContent) before loading the new content.Exercise caution when using it. The execution context of the current UI may be unclear. Therefore, you are advised not to perform UI-related operations within the callback.
+Loads the content of a [named route](docroot://ui/arkts-routing.md#named-route) page to this window. This API uses an asynchronous callback to return the result. You are advised to call this API during UIAbility startup. If called repeatedly, this API will destroy the existing page content (UIContent) before loading the new content.Exercise caution when using it. The execution context of the current UI may be unclear. Therefore, you are advised not to perform UI-related operations within the callback.
 
 **Since:** 11
 
@@ -1998,7 +2062,7 @@ Loads the content of a [named route](../../../../ui/arkts-routing.md#named-route
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the named route page. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -2008,13 +2072,14 @@ Loads the content of a [named route](../../../../ui/arkts-routing.md#named-route
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="loadcontentbyname-2"></a>
 ## loadContentByName
 
 ```TypeScript
 loadContentByName(name: string, storage?: LocalStorage): Promise<void>
 ```
 
-Loads the content of a [named route](../../../../ui/arkts-routing.md#named-route) page to this window, and transfers the state attribute to the page through a local storage. This API uses a promise to return the result.You are advised to call this API during UIAbility startup. If called repeatedly, this API will destroy the existing page content (UIContent) before loading the new content. Exercise caution when using it. The execution context of the current UI may be unclear. Therefore, you are advised not to perform UI-related operations within the callback.
+Loads the content of a [named route](docroot://ui/arkts-routing.md#named-route) page to this window, and transfers the state attribute to the page through a local storage. This API uses a promise to return the result.You are advised to call this API during UIAbility startup. If called repeatedly, this API will destroy the existing page content (UIContent) before loading the new content. Exercise caution when using it. The execution context of the current UI may be unclear. Therefore, you are advised not to perform UI-related operations within the callback.
 
 **Since:** 11
 
@@ -2031,13 +2096,13 @@ Loads the content of a [named route](../../../../ui/arkts-routing.md#named-route
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the named route page. |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | No | Page-level UI state storage unit, which is used to transfer the state attribute for the page. |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | No | Page-level UI state storage unit, which is used to transfer the state attribute for the page. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2047,6 +2112,7 @@ Loads the content of a [named route](../../../../ui/arkts-routing.md#named-route
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="maximize"></a>
 ## maximize
 
 ```TypeScript
@@ -2073,7 +2139,7 @@ Maximizes the window. The main window can use this API to maximize. For child wi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2085,6 +2151,7 @@ Maximizes the window. The main window can use this API to maximize. For child wi
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows and maximizable subwindows are supported. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.<br>**Applicable version:** 12 - 19 |
 
+<a id="maximize-1"></a>
 ## maximize
 
 ```TypeScript
@@ -2110,7 +2177,7 @@ Maximizes the window. The main window can use this API to maximize. For child wi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2121,6 +2188,7 @@ Maximizes the window. The main window can use this API to maximize. For child wi
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows and maximizable subwindows are supported. |
 
+<a id="maximizewithoptions"></a>
 ## maximizeWithOptions
 
 ```TypeScript
@@ -2147,7 +2215,7 @@ Maximize the app window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2159,6 +2227,7 @@ Maximize the app window.
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:1. Invalid window type. Only main windows and maximizable subwindows are supported;2. The acrossDisplay parameter only supports main windows.3. The snapshotAnimationConfig parameter only supports main windows. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: Invalid parameter range. |
 
+<a id="minimize"></a>
 ## minimize
 
 ```TypeScript
@@ -2184,7 +2253,7 @@ This API can be called only by the main window, child window, or global floating
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -2194,6 +2263,7 @@ This API can be called only by the main window, child window, or global floating
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error;3. Invalid window type. Only main windows, subwindows, and float windows are supported. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="minimize-1"></a>
 ## minimize
 
 ```TypeScript
@@ -2219,7 +2289,7 @@ This API can be called only by the main window, child window, or global floating
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2229,6 +2299,7 @@ This API can be called only by the main window, child window, or global floating
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error;3. Invalid window type. Only main windows, subwindows, and float windows are supported. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -2243,7 +2314,7 @@ This operation is not supported in a window in full-screen mode.
 
 **Deprecated since:** 9
 
-**Substitutes:** moveWindowTo(x:
+**Substitutes:** [moveWindowTo(x:](arkts-arkui-window-window-i.md#movewindowto-1)
 
 <!--Device-Window-moveTo(x: number, y: number): Promise<void>--><!--Device-Window-moveTo(x: number, y: number): Promise<void>-End-->
 
@@ -2260,8 +2331,9 @@ This operation is not supported in a window in full-screen mode.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="moveto-1"></a>
 ## moveTo
 
 ```TypeScript
@@ -2276,7 +2348,7 @@ This operation is not supported in a window in full-screen mode.
 
 **Deprecated since:** 9
 
-**Substitutes:** moveWindowTo(x:
+**Substitutes:** [moveWindowTo(x:](arkts-arkui-window-window-i.md#movewindowto-1)
 
 <!--Device-Window-moveTo(x: number, y: number, callback: AsyncCallback<void>): void--><!--Device-Window-moveTo(x: number, y: number, callback: AsyncCallback<void>): void-End-->
 
@@ -2288,8 +2360,9 @@ This operation is not supported in a window in full-screen mode.
 | --- | --- | --- | --- |
 | x | number | Yes | Coordinate position along the x-axis to which the window is moved, measured in px. A positive value means the position is to the right of the x-axis origin; a negative value means it is to the left; the value **0** means it is at the x-axis origin. The value must be an integer. Non-integer values are rounded down. |
 | y | number | Yes | Coordinate position along the y-axis to which the window is moved, measured in px. A positive value means the position is below the y-axis origin; a negative value means it is above; the value **0** means it is at the x-axis origin. The value must be an integer. Non-integer values are rounded down. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="movewindowto"></a>
 ## moveWindowTo
 
 ```TypeScript
@@ -2304,17 +2377,17 @@ Moves this window. This API uses a promise to return the result. A value is retu
 > **window.WindowStatusType.FLOATING**, which you can check using  
 > [getWindowStatus()](arkts-arkui-window-window-i.md#getwindowstatus-1)). You are not advised to use it in other window modes.  
 >  
-> - In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode, the window moves  
+> - In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode, the window moves  
 > relative to the upper-left corner of the screen. In non-freeform window mode, the window moves relative to  
 > the upper-left corner of its parent window.  
 >  
 > - To move the window relative to the top-left corner of the screen while in non-freeform window mode, call  
-> [moveWindowToGlobal()](arkts-arkui-window-window-i.md#movewindowtoglobal-2)  
+> [moveWindowToGlobal()](arkts-arkui-window-window-i.md#movewindowtoglobal-1)  
 > .  
 >  
 > - This API does not work for the main window in non-freeform window mode.  
 >  
-> - In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode,  
+> - In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode,  
 > if the title bar of the main window or a child window is moved out of the screen's visible area,  
 > the system will automatically snap the window back to ensure the title bar is visible.
 
@@ -2337,7 +2410,7 @@ Moves this window. This API uses a promise to return the result. A value is retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2347,6 +2420,7 @@ Moves this window. This API uses a promise to return the result. A value is retu
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="movewindowto-1"></a>
 ## moveWindowTo
 
 ```TypeScript
@@ -2361,17 +2435,17 @@ Moves this window. This API uses an asynchronous callback to return the result. 
 > **window.WindowStatusType.FLOATING**, which can obtained using  
 > [getWindowStatus()](arkts-arkui-window-window-i.md#getwindowstatus-1)). You are advised not to use it in other window modes.  
 >  
-> - In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode, the window moves  
+> - In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode, the window moves  
 > relative to the upper-left corner of the screen. In non-freeform window mode, the window moves relative to  
 > the upper-left corner of its parent window.  
 >  
 > - To move the window relative to the top-left corner of the screen while in non-freeform window mode, call  
-> [moveWindowToGlobal()](arkts-arkui-window-window-i.md#movewindowtoglobal-2)  
+> [moveWindowToGlobal()](arkts-arkui-window-window-i.md#movewindowtoglobal-1)  
 > .  
 >  
 > - This API does not work for the main window in non-freeform window mode.  
 >  
-> - In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode,  
+> - In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode,  
 > if the title bar of the main window or a child window is moved out of the screen's visible area,  
 > the system will automatically snap the window back to ensure the title bar is visible.
 
@@ -2389,7 +2463,7 @@ Moves this window. This API uses an asynchronous callback to return the result. 
 | --- | --- | --- | --- |
 | x | number | Yes | X-coordinate to which the window moves, in px. A positive value indicates a position to the right of the origin, and a negative value indicates a position to the left of the origin.The value must be an integer. Non-integer values are rounded down. |
 | y | number | Yes | Y-coordinate to which the window moves, in pixels. A positive value indicates a position above the origin, and a negative value indicates a position below the origin.The value must be an integer. Non-integer values are rounded down. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -2399,6 +2473,7 @@ Moves this window. This API uses an asynchronous callback to return the result. 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="movewindowtoasync"></a>
 ## moveWindowToAsync
 
 ```TypeScript
@@ -2411,7 +2486,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 > **NOTE**  
 >  
-> - In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode,  
+> - In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode,  
 > if the title bar of the main window or a child window is moved out of the screen's visible area,  
 > the system will automatically snap the window back to ensure the title bar is visible.
 
@@ -2434,7 +2509,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2445,6 +2520,7 @@ This API takes effect only when the window is in floating window mode (**window.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300010](../errorcode-window.md#1300010-unsupported-operation-in-the-current-window-mode) | The operation in the current window status is invalid.Possible cause: The window status is not FLOATING. |
 
+<a id="movewindowtoasync-1"></a>
 ## moveWindowToAsync
 
 ```TypeScript
@@ -2463,7 +2539,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 > **NOTE**  
 >  
-> - In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode,  
+> - In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode,  
 > if the title bar of the main window or a child window is moved out of the screen's visible area,  
 > the system will automatically snap the window back to ensure the title bar is visible.
 
@@ -2487,7 +2563,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2498,6 +2574,7 @@ This API takes effect only when the window is in floating window mode (**window.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300010](../errorcode-window.md#1300010-unsupported-operation-in-the-current-window-mode) | The operation in the current window status is invalid.Possible cause: The window status is not FLOATING. |
 
+<a id="movewindowtoglobal"></a>
 ## moveWindowToGlobal
 
 ```TypeScript
@@ -2511,9 +2588,9 @@ This API takes effect only when the window is in floating window mode (**window.
 > **NOTE**  
 >  
 > - When the main window is in floating window mode, this API does not take effect or return an error if called  
-> in non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.  
+> in non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.  
 >  
-> - In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode,  
+> - In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode,  
 > if the title bar of the main window or a child window is moved out of the screen's visible area,  
 > the system will automatically snap the window back to ensure the title bar is visible.
 
@@ -2536,7 +2613,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2547,6 +2624,7 @@ This API takes effect only when the window is in floating window mode (**window.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300010](../errorcode-window.md#1300010-unsupported-operation-in-the-current-window-mode) | The operation in the current window status is invalid.Possible cause: The window status is not FLOATING. |
 
+<a id="movewindowtoglobal-1"></a>
 ## moveWindowToGlobal
 
 ```TypeScript
@@ -2560,9 +2638,9 @@ This API takes effect only when the window is in floating window mode (**window.
 > **NOTE**  
 >  
 > - When the main window is in floating window mode, this API does not take effect or return an error if called  
-> in non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.  
+> in non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.  
 >  
-> - In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode,  
+> - In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode,  
 > if the title bar of the main window or a child window is moved out of the screen's visible area,  
 > the system will automatically snap the window back to ensure the title bar is visible.
 
@@ -2586,7 +2664,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2597,25 +2675,26 @@ This API takes effect only when the window is in floating window mode (**window.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300010](../errorcode-window.md#1300010-unsupported-operation-in-the-current-window-mode) | The operation in the current window status is invalid.Possible cause: The window status is not FLOATING. |
 
+<a id="movewindowtoglobaldisplay"></a>
 ## moveWindowToGlobalDisplay
 
 ```TypeScript
 moveWindowToGlobalDisplay(x: number, y: number): Promise<void>
 ```
 
-Moves the window based on the [global coordinate system](../../../../windowmanager/window-terminology.md#global-coordinate-system). This API uses a promise to return the result asynchronously.
+Moves the window based on the [global coordinate system](docroot://windowmanager/window-terminology.md#global-coordinate-system). This API uses a promise to return the result asynchronously.
 
 This API takes effect only when the window is in floating window mode (**window.WindowStatusType.FLOATING**).In other window modes, this API returns error code 1300010.(The window mode can be obtained through [getWindowStatus()](arkts-arkui-window-window-i.md#getwindowstatus-1)).
 
 > **NOTE**  
 >  
 > - When the main window is in floating window mode, this API does not take effect or return an error if called  
-> in non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.  
+> in non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.  
 >  
 > - After a window is moved, if it spans multiple screens, the window will belong to the screen with which it  
 > has the largest overlapping area.  
 >  
-> - In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode,  
+> - In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode,  
 > if the title bar of the main window or a child window is moved out of the screen's visible area,  
 > the system will automatically snap the window back to ensure the title bar is visible.
 
@@ -2636,7 +2715,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2648,6 +2727,7 @@ This API takes effect only when the window is in floating window mode (**window.
 | [1300010](../errorcode-window.md#1300010-unsupported-operation-in-the-current-window-mode) | The operation in the current window status is invalid.Possible cause: The window status is not FLOATING. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: 1. Invalid parameter range. |
 
+<a id="off"></a>
 ## off('rotationChange')
 
 ```TypeScript
@@ -2672,7 +2752,7 @@ Unsubscribes from the window rotation change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rotationChange' | Yes | Event type. The value is fixed at **'rotationChange'**, indicating the window rotation change event. |
-| callback | [RotationChangeCallback](arkts-arkui-window-rotationchangecallback-t.md)<RotationChangeInfo, RotationChangeResult \| void> | No | Callback used to return the result. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [RotationChangeCallback](arkts-arkui-window-rotationchangecallback-t.md)&lt;RotationChangeInfo, RotationChangeResult \| void&gt; | No | Callback used to return the result. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -2682,6 +2762,7 @@ Unsubscribes from the window rotation change event.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -2703,7 +2784,7 @@ Unsubscribes from the event indicating changes in the security restrictions of t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'uiExtensionSecureLimitChange' | Yes | Event type. The value is fixed at **'uiExtensionSecureLimitChange'**, indicating that the UIExtensionAbility security restrictions in the window changes. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | No | Callback used to return the result. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | No | Callback used to return the result. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -2713,6 +2794,7 @@ Unsubscribes from the event indicating changes in the security restrictions of t
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="off-2"></a>
 ## off('frameMetricsMeasured')
 
 ```TypeScript
@@ -2732,7 +2814,7 @@ Unsubscribes from events indicating changes in window frame metrics. This API mu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'frameMetricsMeasured' | Yes | Event type. The value is fixed at **'frameMetricsMeasured'**, indicating the window frame metrics change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<FrameMetrics> | No | If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;FrameMetrics&gt; | No | If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -2741,6 +2823,7 @@ Unsubscribes from events indicating changes in window frame metrics. This API mu
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="off-3"></a>
 ## off('occlusionStateChanged')
 
 ```TypeScript
@@ -2760,7 +2843,7 @@ Unsubscribes from the visibility status change event of the window.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'occlusionStateChanged' | Yes | Event type. The value is fixed at **'occlusionStateChanged'**,indicating the window visibility status change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OcclusionState> | No | If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OcclusionState&gt; | No | If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -2770,6 +2853,7 @@ Unsubscribes from the visibility status change event of the window.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="off-4"></a>
 ## off('windowSizeChange')
 
 ```TypeScript
@@ -2791,7 +2875,7 @@ Unsubscribes from the window size change event. This API can be called only by t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowSizeChange' | Yes | Event type. The value is fixed at **'windowSizeChange'**, indicating the window size change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<Size> | No | Callback used to return the window size. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;Size&gt; | No | Callback used to return the window size. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -2799,6 +2883,7 @@ Unsubscribes from the window size change event. This API can be called only by t
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Incorrect parameter types;2. Parameter verification failed. |
 
+<a id="off-5"></a>
 ## off('systemAvoidAreaChange')
 
 ```TypeScript
@@ -2822,8 +2907,9 @@ Unsubscribes from the event indicating changes to the area where this window can
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'systemAvoidAreaChange' | Yes | Event type. The value is fixed at **'systemAvoidAreaChange'**,indicating the event of changes to the area where the window cannot be displayed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<AvoidArea> | No | Callback used to return the area. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;AvoidArea&gt; | No | Callback used to return the area. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
+<a id="off-6"></a>
 ## off('avoidAreaChange')
 
 ```TypeScript
@@ -2845,7 +2931,7 @@ Unsubscribes from the event indicating changes to the area where this window can
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'avoidAreaChange' | Yes | Event type. The value is fixed at **'avoidAreaChange'**, indicating the event of changes to the area where the window cannot be displayed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<AvoidAreaOptions> | No | Callback used to return the area and area type. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled.<br>**Since:** 20 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;AvoidAreaOptions&gt; | No | Callback used to return the area and area type. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled.<br>**Since:** 20 |
 
 **Error codes:**
 
@@ -2853,6 +2939,7 @@ Unsubscribes from the event indicating changes to the area where this window can
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types;2. Parameter verification failed. |
 
+<a id="off-7"></a>
 ## off('keyboardHeightChange')
 
 ```TypeScript
@@ -2874,7 +2961,7 @@ Unsubscribes from the event indicating soft keyboard height changes in the fixed
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardHeightChange' | Yes | Event type. The value is fixed at **'keyboardHeightChange'**, indicating the keyboard height change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | No | Callback used to return the current keyboard height, which is an integer,in px. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | No | Callback used to return the current keyboard height, which is an integer,in px. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -2882,6 +2969,7 @@ Unsubscribes from the event indicating soft keyboard height changes in the fixed
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Incorrect parameter types;2. Parameter verification failed. |
 
+<a id="off-8"></a>
 ## off('keyboardWillShow')
 
 ```TypeScript
@@ -2903,7 +2991,7 @@ Unsubscribes from the event indicating that the soft keyboard in the fixed state
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardWillShow' | Yes | Event type. The value is fixed at **'keyboardWillShow'**, indicating the soft keyboard in the fixed state is about to show. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<KeyboardInfo> | No | Callback used to return the information about the soft keyboard.If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;KeyboardInfo&gt; | No | Callback used to return the information about the soft keyboard.If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -2912,6 +3000,7 @@ Unsubscribes from the event indicating that the soft keyboard in the fixed state
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Function keyboardWillShow can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="off-9"></a>
 ## off('keyboardDidShow')
 
 ```TypeScript
@@ -2933,7 +3022,7 @@ Unsubscribes from the event indicating that the show animation of the soft keybo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardDidShow' | Yes | Event type. The value is fixed at **'keyboardDidShow'**, indicating the show animation of the soft keyboard in the fixed state is completed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<KeyboardInfo> | No | Callback used to return the information about the soft keyboard.If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;KeyboardInfo&gt; | No | Callback used to return the information about the soft keyboard.If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -2942,6 +3031,7 @@ Unsubscribes from the event indicating that the show animation of the soft keybo
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Function keyboardDidShow can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="off-10"></a>
 ## off('keyboardWillHide')
 
 ```TypeScript
@@ -2963,7 +3053,7 @@ Unsubscribes from the event indicating that the soft keyboard in the fixed state
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardWillHide' | Yes | Event type. The value is fixed at **'keyboardWillHide'**, indicating the soft keyboard in the fixed state is about to hide. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<KeyboardInfo> | No | Callback used to return the information about the soft keyboard.If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;KeyboardInfo&gt; | No | Callback used to return the information about the soft keyboard.If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -2972,6 +3062,7 @@ Unsubscribes from the event indicating that the soft keyboard in the fixed state
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Function keyboardWillHide can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="off-11"></a>
 ## off('keyboardDidHide')
 
 ```TypeScript
@@ -2993,7 +3084,7 @@ Unsubscribes from the event indicating that the hide animation of the soft keybo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardDidHide' | Yes | Event type. The value is fixed at **'keyboardDidHide'**, indicating the hide animation of the soft keyboard in the fixed state is completed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<KeyboardInfo> | No | Callback used to return the information about the soft keyboard.If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;KeyboardInfo&gt; | No | Callback used to return the information about the soft keyboard.If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3002,6 +3093,7 @@ Unsubscribes from the event indicating that the hide animation of the soft keybo
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Function keyboardDidHide can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="off-12"></a>
 ## off('touchOutside')
 
 ```TypeScript
@@ -3023,7 +3115,7 @@ Unsubscribes from the touch event outside this window.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'touchOutside' | Yes | Event type. The value is fixed at **'touchOutside'**, indicating the touch event outside this window. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | No | Callback used to return the touch event outside this window. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | No | Callback used to return the touch event outside this window. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3031,6 +3123,7 @@ Unsubscribes from the touch event outside this window.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Incorrect parameter types;2. Parameter verification failed. |
 
+<a id="off-13"></a>
 ## off('displayIdChange')
 
 ```TypeScript
@@ -3052,7 +3145,7 @@ Unsubscribes from the display change event of this window.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'displayIdChange' | Yes | Event type. The value is fixed at **'displayIdChange'**, indicating the display change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | No | Callback invoked when the display where the window is located changes. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | No | Callback invoked when the display where the window is located changes. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3062,6 +3155,7 @@ Unsubscribes from the display change event of this window.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="off-14"></a>
 ## off('windowVisibilityChange')
 
 ```TypeScript
@@ -3083,7 +3177,7 @@ Unsubscribes from the visibility status change event of this window.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowVisibilityChange' | Yes | Event type. The value is fixed at **'windowVisibilityChange'**,indicating the visibility status change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | No | Callback used to return the visibility status of the window. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled.<br>**Since:** 12 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | No | Callback used to return the visibility status of the window. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled.<br>**Since:** 12 |
 
 **Error codes:**
 
@@ -3094,6 +3188,7 @@ Unsubscribes from the visibility status change event of this window.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="off-15"></a>
 ## off('systemDensityChange')
 
 ```TypeScript
@@ -3117,7 +3212,7 @@ In the callback function, you are advised to directly use the return value to co
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'systemDensityChange' | Yes | Event type. The value is fixed at **'systemDensityChange'**, indicating the system density change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | No | Callback invoked when the system's display size scale factor changes. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | No | Callback invoked when the system's display size scale factor changes. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3127,6 +3222,7 @@ In the callback function, you are advised to directly use the return value to co
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="off-16"></a>
 ## off('noInteractionDetected')
 
 ```TypeScript
@@ -3148,7 +3244,7 @@ Unsubscribes from non-interaction events in a window within the specified period
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'noInteractionDetected' | Yes | Event type. The value is fixed at **'noInteractionDetected'**,indicating that there is no interaction event in the window within the specified period. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | No | Callback invoked when there is no interaction event in the current window within the specified period. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | No | Callback invoked when there is no interaction event in the current window within the specified period. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3159,6 +3255,7 @@ Unsubscribes from non-interaction events in a window within the specified period
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed; |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="off-17"></a>
 ## off('screenshot')
 
 ```TypeScript
@@ -3180,7 +3277,7 @@ Unsubscribes from the screenshot event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'screenshot' | Yes | Event type. The value is fixed at **'screenshot'**, indicating the screenshot event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | No | Callback invoked when a screenshot event occurs. If a value is passed in,the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | No | Callback invoked when a screenshot event occurs. If a value is passed in,the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3188,6 +3285,7 @@ Unsubscribes from the screenshot event.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause:1. Incorrect parameter types;2. Parameter verification failed. |
 
+<a id="off-18"></a>
 ## off('screenshotAppEvent')
 
 ```TypeScript
@@ -3207,7 +3305,7 @@ Unsubscribes from the screenshot event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'screenshotAppEvent' | Yes | Event type. The value is fixed at **'screenshotAppEvent'**, indicating the screenshot event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<ScreenshotEventType> | No | Callback invoked when a screenshot event occurs. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;ScreenshotEventType&gt; | No | Callback invoked when a screenshot event occurs. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3216,6 +3314,7 @@ Unsubscribes from the screenshot event.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="off-19"></a>
 ## off('dialogTargetTouch')
 
 ```TypeScript
@@ -3237,7 +3336,7 @@ Unsubscribes from the touch event of the target window in the modal window mode.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dialogTargetTouch' | Yes | Event type. The value is fixed at **'dialogTargetTouch'**, indicating the touch event of the target window in the modal window mode. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | No | Callback invoked when the touch event occurs in the target window of the modal window mode. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | No | Callback invoked when the touch event occurs in the target window of the modal window mode. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3245,6 +3344,7 @@ Unsubscribes from the touch event of the target window in the modal window mode.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Incorrect parameter types;2. Parameter verification failed. |
 
+<a id="off-20"></a>
 ## off('windowEvent')
 
 ```TypeScript
@@ -3266,7 +3366,7 @@ Unsubscribes from the window lifecycle change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowEvent' | Yes | Event type. The value is fixed at **'windowEvent'**, indicating the window lifecycle change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowEventType> | No | Callback used to return the window lifecycle state. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowEventType&gt; | No | Callback used to return the window lifecycle state. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3274,6 +3374,7 @@ Unsubscribes from the window lifecycle change event.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Incorrect parameter types;2. Parameter verification failed. |
 
+<a id="off-21"></a>
 ## off('windowStatusChange')
 
 ```TypeScript
@@ -3295,7 +3396,7 @@ Disables the listening for window status changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowStatusChange' | Yes | Event type. The value is fixed at **'windowStatusChange'**, indicating the window status change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowStatusType> | No | Callback used to return the window status. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowStatusType&gt; | No | Callback used to return the window status. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3304,6 +3405,7 @@ Disables the listening for window status changes.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Incorrect parameter types;2. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 
+<a id="off-22"></a>
 ## off('windowStatusDidChange')
 
 ```TypeScript
@@ -3323,7 +3425,7 @@ Unsubscribes from the event indicating that the window status has changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowStatusDidChange' | Yes | Event type. The value is fixed at **'windowStatusDidChange'**,indicating that the window status has changed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowStatusType> | No | Callback used to return the window status. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowStatusType&gt; | No | Callback used to return the window status. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3332,6 +3434,7 @@ Unsubscribes from the event indicating that the window status has changed.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="off-23"></a>
 ## off('subWindowClose')
 
 ```TypeScript
@@ -3353,7 +3456,7 @@ Unsubscribes from the event indicating that the child window is closed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'subWindowClose' | Yes | Event type. The value is fixed at **'subWindowClose'**, indicating the child window close event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | No | Callback invoked when the close button in the top-right corner of the child window is clicked. It does not return any parameter. The return value of the internal logic of the callback function determines whether to continue to close the child window. If **true** of the Boolean type is returned, the child window is not closed. If **false** or other non-Boolean types are returned, the child window is closed. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | No | Callback invoked when the close button in the top-right corner of the child window is clicked. It does not return any parameter. The return value of the internal logic of the callback function determines whether to continue to close the child window. If **true** of the Boolean type is returned, the child window is not closed. If **false** or other non-Boolean types are returned, the child window is closed. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3364,6 +3467,7 @@ Unsubscribes from the event indicating that the child window is closed.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only subwindows are supported. |
 
+<a id="off-24"></a>
 ## off('windowWillClose')
 
 ```TypeScript
@@ -3385,7 +3489,7 @@ Unsubscribes from the event indicating that the main window or child window will
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowWillClose' | Yes | Event type. The value is fixed at **'windowWillClose'**, indicating the window close event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void, Promise<boolean>> | No | Callback invoked when the close button in the top-right corner of the window is clicked. It does not return any parameter. The internal logic of the callback function requires a return value of the Promise&lt;boolean&gt; type. In the returned Promise function,**resolve(true)** means not to close the window, and **resolve(false)** or **reject** means to continue to close the window. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void, Promise&lt;boolean&gt;&gt; | No | Callback invoked when the close button in the top-right corner of the window is clicked. It does not return any parameter. The internal logic of the callback function requires a return value of the Promise<boolean> type. In the returned Promise function,**resolve(true)** means not to close the window, and **resolve(false)** or **reject** means to continue to close the window. |
 
 **Error codes:**
 
@@ -3396,6 +3500,7 @@ Unsubscribes from the event indicating that the main window or child window will
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type, not called from mainWindow or subWindow. |
 
+<a id="off-25"></a>
 ## off('windowHighlightChange')
 
 ```TypeScript
@@ -3417,7 +3522,7 @@ Unsubscribes from the highlighted state change event of the window.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowHighlightChange' | Yes | Event type. The value is fixed at **'windowHighlightChange'**,indicating the window highlighted state change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | No | Callback used to return the highlighted state of the window. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | No | Callback used to return the highlighted state of the window. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3428,6 +3533,7 @@ Unsubscribes from the highlighted state change event of the window.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="off-26"></a>
 ## off('windowTitleButtonRectChange')
 
 ```TypeScript
@@ -3449,7 +3555,7 @@ Unsubscribes from the change event of the rectangle that holds the minimize, max
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowTitleButtonRectChange' | Yes | Event type. The value is fixed at **'windowTitleButtonRectChange'**, indicating that the change event of the rectangle that holds the minimize,maximize, and close buttons. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<TitleButtonRect> | No | Callback used to return the new rectangle. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;TitleButtonRect&gt; | No | Callback used to return the new rectangle. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3459,6 +3565,7 @@ Unsubscribes from the change event of the rectangle that holds the minimize, max
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="off-27"></a>
 ## off('windowRectChange')
 
 ```TypeScript
@@ -3480,7 +3587,7 @@ Unsubscribes from window rectangle (position and size) change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowRectChange' | Yes | Event type. The value is fixed at **'windowRectChange'**, indicating the window rectangle change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<RectChangeOptions> | No | Callback used to return the value and reason of the window rectangle change. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RectChangeOptions&gt; | No | Callback used to return the value and reason of the window rectangle change. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3491,13 +3598,14 @@ Unsubscribes from window rectangle (position and size) change events.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="off-28"></a>
 ## off('rectChangeInGlobalDisplay')
 
 ```TypeScript
 off(type: 'rectChangeInGlobalDisplay', callback?: Callback<RectChangeOptions>): void
 ```
 
-Disables the listening event for changes in the window rectangle (window position and size) in the [global coordinate system](../../../../windowmanager/window-terminology.md#global-coordinate-system).
+Disables the listening event for changes in the window rectangle (window position and size) in the [global coordinate system](docroot://windowmanager/window-terminology.md#global-coordinate-system).
 
 **Since:** 20
 
@@ -3510,7 +3618,7 @@ Disables the listening event for changes in the window rectangle (window positio
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rectChangeInGlobalDisplay' | Yes | Event type. The value is fixed at **'rectChangeInGlobalDisplay'**,indicating the window rectangle change event in the global coordinate system. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<RectChangeOptions> | No | Callback used to return the value and reason of the window rectangle change. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RectChangeOptions&gt; | No | Callback used to return the value and reason of the window rectangle change. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3520,6 +3628,7 @@ Disables the listening event for changes in the window rectangle (window positio
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="off-29"></a>
 ## off('freeWindowModeChange')
 
 ```TypeScript
@@ -3541,7 +3650,7 @@ Unsubscribes from the freeform window mode change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'freeWindowModeChange' | Yes | Event type. The value is fixed at **'freeWindowModeChange'**, indicating the freeform window mode change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | No | Callback used to return the result, indicating whether the window is in freeform window mode. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | No | Callback used to return the result, indicating whether the window is in freeform window mode. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -3550,6 +3659,7 @@ Unsubscribes from the freeform window mode change event.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="offwindowposturemodechange"></a>
 ## offWindowPostureModeChange
 
 ```TypeScript
@@ -3571,7 +3681,7 @@ Unregisters a callback that is invoked when he window changes to the specified w
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | [WindowPostureMode](arkts-arkui-window-windowposturemode-e.md) | Yes | The window posture mode to monitor. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | No | Callback function. Callback when the window changes to the specified window pose mode. If a parameter is transferred, the listener is disabled. If no parameter is specified, all callbacks for changing the current window to the specified window posture mode are closed. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | No | Callback function. Callback when the window changes to the specified window pose mode. If a parameter is transferred, the listener is disabled. If no parameter is specified, all callbacks for changing the current window to the specified window posture mode are closed. |
 
 **Error codes:**
 
@@ -3581,6 +3691,7 @@ Unregisters a callback that is invoked when he window changes to the specified w
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. Possible cause: The internal services of the window are not started normally. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: Invalid parameter range. |
 
+<a id="on"></a>
 ## on('rotationChange')
 
 ```TypeScript
@@ -3604,7 +3715,7 @@ This API can be registered only on the main thread. If a window registers multip
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rotationChange' | Yes | Event type. The value is fixed at **'rotationChange'**, indicating the window rotation change event. |
-| callback | [RotationChangeCallback](arkts-arkui-window-rotationchangecallback-t.md)<RotationChangeInfo, RotationChangeResult \| void> | Yes | Callback used to return [RotationChangeInfo](arkts-arkui-window-rotationchangeinfo-i.md) and [RotationChangeResult](arkts-arkui-window-rotationchangeresult-i.md). |
+| callback | [RotationChangeCallback](arkts-arkui-window-rotationchangecallback-t.md)&lt;RotationChangeInfo, RotationChangeResult \| void&gt; | Yes | Callback used to return [RotationChangeInfo](arkts-arkui-window-rotationchangeinfo-i.md) and [RotationChangeResult](arkts-arkui-window-rotationchangeresult-i.md). |
 
 **Error codes:**
 
@@ -3614,6 +3725,7 @@ This API can be registered only on the main thread. If a window registers multip
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -3635,7 +3747,7 @@ Subscribes to the event indicating changes in the security restrictions of the U
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'uiExtensionSecureLimitChange' | Yes | Event type. The value is fixed at **'uiExtensionSecureLimitChange'**, indicating that the UIExtensionAbility security restrictions in the window changes. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that at least one UIExtensionAbility within the window has enabled the hiding of unsafe windows, and **false** means that all UIExtensionAbility components within the window have disabled the hiding of unsafe windows. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that at least one UIExtensionAbility within the window has enabled the hiding of unsafe windows, and **false** means that all UIExtensionAbility components within the window have disabled the hiding of unsafe windows. |
 
 **Error codes:**
 
@@ -3645,6 +3757,7 @@ Subscribes to the event indicating changes in the security restrictions of the U
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="on-2"></a>
 ## on('frameMetricsMeasured')
 
 ```TypeScript
@@ -3666,7 +3779,7 @@ The callback is triggered only when the client UI content is redrawn (for exampl
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'frameMetricsMeasured' | Yes | Event type. The value is fixed at **'frameMetricsMeasured'**, indicating the window frame metrics change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<FrameMetrics> | Yes | Callback invoked when the window frame metrics change. For details,see [Frame Rate Metrics](arkts-arkui-window-framemetrics-i.md). |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;FrameMetrics&gt; | Yes | Callback invoked when the window frame metrics change. For details,see [Frame Rate Metrics](arkts-arkui-window-framemetrics-i.md). |
 
 **Error codes:**
 
@@ -3675,6 +3788,7 @@ The callback is triggered only when the client UI content is redrawn (for exampl
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="on-3"></a>
 ## on('occlusionStateChanged')
 
 ```TypeScript
@@ -3698,7 +3812,7 @@ Subscribes to the visibility status change event of the window. The visibility r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'occlusionStateChanged' | Yes | Event type. The value is fixed at **'occlusionStateChanged'**,indicating the window visibility status change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OcclusionState> | Yes | Callback invoked when the window visibility status changes. For details, see [Window Visibility Status](arkts-arkui-window-occlusionstate-e.md). |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OcclusionState&gt; | Yes | Callback invoked when the window visibility status changes. For details, see [Window Visibility Status](arkts-arkui-window-occlusionstate-e.md). |
 
 **Error codes:**
 
@@ -3708,6 +3822,7 @@ Subscribes to the visibility status change event of the window. The visibility r
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="on-4"></a>
 ## on('windowSizeChange')
 
 ```TypeScript
@@ -3729,7 +3844,7 @@ Subscribes to the window size change event. This API can be called only by the m
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowSizeChange' | Yes | Event type. The value is fixed at **'windowSizeChange'**, indicating the window size change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<Size> | Yes | Callback used to return the window size. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;Size&gt; | Yes | Callback used to return the window size. |
 
 **Error codes:**
 
@@ -3737,6 +3852,7 @@ Subscribes to the window size change event. This API can be called only by the m
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="on-5"></a>
 ## on('systemAvoidAreaChange')
 
 ```TypeScript
@@ -3760,8 +3876,9 @@ Subscribes to the event indicating changes to the area where this window cannot 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'systemAvoidAreaChange' | Yes | Event type. The value is fixed at **'systemAvoidAreaChange'**,indicating the event of changes to the area where the window cannot be displayed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<AvoidArea> | Yes | Callback used to return the area. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;AvoidArea&gt; | Yes | Callback used to return the area. |
 
+<a id="on-6"></a>
 ## on('avoidAreaChange')
 
 ```TypeScript
@@ -3772,7 +3889,7 @@ Subscribes to the event indicating changes to the area where this window cannot 
 
 Main window/Child window:
 
-- When the callback is triggered in the free-floating window mode (the window mode is **window.WindowStatusType.FLOATING**) under the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state, only the avoidance area of the fixed soft keyboard type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_KEYBOARD**)is available.  
+- When the callback is triggered in the free-floating window mode (the window mode is **window.WindowStatusType.FLOATING**) under the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state, only the avoidance area of the fixed soft keyboard type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md) is **TYPE_KEYBOARD**)is available.  
 - When the callback is triggered in the free-floating window mode of the main window in the non-freeform window state, only the avoidance area of the system bar type ([AvoidAreaType](arkts-arkui-window-avoidareatype-e.md)is **TYPE_SYSTEM**) is available.  
 - When the callback is triggered in the other scenarios of the main window, the calculated avoidance area can be returned only when the window is not in the free-floating window mode or the device type is phone or tablet.Otherwise, an empty avoidance area is returned.  
 - When the callback is triggered for the child window in the non-freeform window state or non-free-floating window mode, the calculated avoidance area of the child window is returned only when the position and size of the child window are the same as those of the main window. Otherwise, an empty avoidance area is returned.
@@ -3796,7 +3913,7 @@ Global floating window, modal window, or system window:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'avoidAreaChange' | Yes | Event type. The value is fixed at **'avoidAreaChange'**, indicating the event of changes to the area where the window cannot be displayed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<AvoidAreaOptions> | Yes | Callback used to return the area and area type.<br>**Since:** 12 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;AvoidAreaOptions&gt; | Yes | Callback used to return the area and area type.<br>**Since:** 12 |
 
 **Error codes:**
 
@@ -3804,6 +3921,7 @@ Global floating window, modal window, or system window:
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="on-7"></a>
 ## on('keyboardHeightChange')
 
 ```TypeScript
@@ -3825,7 +3943,7 @@ Subscribes to the event indicating soft keyboard height changes in the fixed sta
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardHeightChange' | Yes | Event type. The value is fixed at **'keyboardHeightChange'**, indicating the keyboard height change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | Yes | Callback used to return the current keyboard height, which is an integer, in px. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Callback used to return the current keyboard height, which is an integer, in px. |
 
 **Error codes:**
 
@@ -3833,6 +3951,7 @@ Subscribes to the event indicating soft keyboard height changes in the fixed sta
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="on-8"></a>
 ## on('keyboardWillShow')
 
 ```TypeScript
@@ -3856,7 +3975,7 @@ For details about the APIs used to set the soft keyboard to the fixed or floatin
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardWillShow' | Yes | Event type. The value is fixed at **'keyboardWillShow'**, indicating the soft keyboard in the fixed state is about to show. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<KeyboardInfo> | Yes | Callback used to return the information about the soft keyboard. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;KeyboardInfo&gt; | Yes | Callback used to return the information about the soft keyboard. |
 
 **Error codes:**
 
@@ -3865,6 +3984,7 @@ For details about the APIs used to set the soft keyboard to the fixed or floatin
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Function keyboardWillShow can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="on-9"></a>
 ## on('keyboardDidShow')
 
 ```TypeScript
@@ -3888,7 +4008,7 @@ For details about the APIs used to set the soft keyboard to the fixed or floatin
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardDidShow' | Yes | Event type. The value is fixed at **'keyboardDidShow'**, indicating the show animation of the soft keyboard in the fixed state is completed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<KeyboardInfo> | Yes | Callback used to return the information about the soft keyboard. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;KeyboardInfo&gt; | Yes | Callback used to return the information about the soft keyboard. |
 
 **Error codes:**
 
@@ -3897,6 +4017,7 @@ For details about the APIs used to set the soft keyboard to the fixed or floatin
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Function keyboardDidShow can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="on-10"></a>
 ## on('keyboardWillHide')
 
 ```TypeScript
@@ -3920,7 +4041,7 @@ For details about the APIs used to set the soft keyboard to the fixed or floatin
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardWillHide' | Yes | Event type. The value is fixed at **'keyboardWillHide'**, indicating the soft keyboard in the fixed state is about to hide. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<KeyboardInfo> | Yes | Callback used to return the information about the soft keyboard. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;KeyboardInfo&gt; | Yes | Callback used to return the information about the soft keyboard. |
 
 **Error codes:**
 
@@ -3929,6 +4050,7 @@ For details about the APIs used to set the soft keyboard to the fixed or floatin
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Function keyboardWillHide can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="on-11"></a>
 ## on('keyboardDidHide')
 
 ```TypeScript
@@ -3952,7 +4074,7 @@ For details about the APIs used to set the soft keyboard to the fixed or floatin
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardDidHide' | Yes | Event type. The value is fixed at **'keyboardDidHide'**, indicating the hide animation of the soft keyboard in the fixed state is completed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<KeyboardInfo> | Yes | Callback used to return the information about the soft keyboard. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;KeyboardInfo&gt; | Yes | Callback used to return the information about the soft keyboard. |
 
 **Error codes:**
 
@@ -3961,6 +4083,7 @@ For details about the APIs used to set the soft keyboard to the fixed or floatin
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Function keyboardDidHide can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="on-12"></a>
 ## on('touchOutside')
 
 ```TypeScript
@@ -3982,7 +4105,7 @@ Subscribes to the touch event outside this window.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'touchOutside' | Yes | Event type. The value is fixed at **'touchOutside'**, indicating the touch event outside this window. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback used to return the touch event outside this window. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback used to return the touch event outside this window. |
 
 **Error codes:**
 
@@ -3990,6 +4113,7 @@ Subscribes to the touch event outside this window.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="on-13"></a>
 ## on('displayIdChange')
 
 ```TypeScript
@@ -4011,7 +4135,7 @@ Subscribes to the display change event of this window. For example, this event i
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'displayIdChange' | Yes | Event type. The value is fixed at **'displayIdChange'**, indicating the display change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | Yes | Callback invoked when the display where the window is located changes. The callback contains a parameter of the number type, indicating the new display ID. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Callback invoked when the display where the window is located changes. The callback contains a parameter of the number type, indicating the new display ID. |
 
 **Error codes:**
 
@@ -4021,6 +4145,7 @@ Subscribes to the display change event of this window. For example, this event i
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="on-14"></a>
 ## on('windowVisibilityChange')
 
 ```TypeScript
@@ -4046,7 +4171,7 @@ Subscribes to the visibility status change event of this window. The visibility 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowVisibilityChange' | Yes | Event type. The value is fixed at **'windowVisibilityChange'**,indicating the visibility status change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback used to return the visibility status of the window, which is a Boolean value. **true** if visible, **false** otherwise. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the visibility status of the window, which is a Boolean value. **true** if visible, **false** otherwise. |
 
 **Error codes:**
 
@@ -4057,6 +4182,7 @@ Subscribes to the visibility status change event of this window. The visibility 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="on-15"></a>
 ## on('systemDensityChange')
 
 ```TypeScript
@@ -4080,7 +4206,7 @@ In the callback function, you are advised to directly use the return value to co
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'systemDensityChange' | Yes | Event type. The value is fixed at **'systemDensityChange'**, indicating the system density change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | Yes | Callback invoked when the system's display size scale factor changes. The callback contains a parameter of the number type, indicating the new scale factor. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Callback invoked when the system's display size scale factor changes. The callback contains a parameter of the number type, indicating the new scale factor. |
 
 **Error codes:**
 
@@ -4090,6 +4216,7 @@ In the callback function, you are advised to directly use the return value to co
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="on-16"></a>
 ## on('noInteractionDetected')
 
 ```TypeScript
@@ -4112,7 +4239,7 @@ Register the callback function that has no interaction for a long time.Interacti
 | --- | --- | --- | --- |
 | type | 'noInteractionDetected' | Yes | The value is fixed at 'noInteractionDetected',indicating the window has no interaction for a long time. |
 | timeout | number | Yes | The timeout(in seconds) of no interaction detection. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback used to notify the window has no interaction for a long time. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback used to notify the window has no interaction for a long time. |
 
 **Error codes:**
 
@@ -4123,6 +4250,7 @@ Register the callback function that has no interaction for a long time.Interacti
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed; |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="on-17"></a>
 ## on('screenshot')
 
 ```TypeScript
@@ -4144,7 +4272,7 @@ Subscribes to the screenshot event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'screenshot' | Yes | Event type. The value is fixed at **'screenshot'**, covering screenshot events initiated from the Control Panel, by running hdc commands, or by calling the screenshot interfaces. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback invoked when a screenshot event occurs. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback invoked when a screenshot event occurs. |
 
 **Error codes:**
 
@@ -4152,6 +4280,7 @@ Subscribes to the screenshot event.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="on-18"></a>
 ## on('screenshotAppEvent')
 
 ```TypeScript
@@ -4171,7 +4300,7 @@ Subscribes to the screenshot event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'screenshotAppEvent' | Yes | Event type. The value is fixed at **'screenshotAppEvent'**, covering screenshot events from the Control Panel, shortcut keys, and scroll capture. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<ScreenshotEventType> | Yes | Callback invoked when a screenshot event occurs. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;ScreenshotEventType&gt; | Yes | Callback invoked when a screenshot event occurs. |
 
 **Error codes:**
 
@@ -4180,6 +4309,7 @@ Subscribes to the screenshot event.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="on-19"></a>
 ## on('dialogTargetTouch')
 
 ```TypeScript
@@ -4201,7 +4331,7 @@ Subscribes to click or touch events in a window covered by a modal window. This 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dialogTargetTouch' | Yes | Event type. The value is fixed at **'dialogTargetTouch'**, indicating the click or touch event in a window covered by a modal window. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback invoked when a click or touch event occurs in the window covered by the modal window. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback invoked when a click or touch event occurs in the window covered by the modal window. |
 
 **Error codes:**
 
@@ -4209,6 +4339,7 @@ Subscribes to click or touch events in a window covered by a modal window. This 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="on-20"></a>
 ## on('windowEvent')
 
 ```TypeScript
@@ -4230,7 +4361,7 @@ Subscribes to the window lifecycle change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowEvent' | Yes | Event type. The value is fixed at **'windowEvent'**, indicating the window lifecycle change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowEventType> | Yes | Callback used to return the window lifecycle state. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowEventType&gt; | Yes | Callback used to return the window lifecycle state. |
 
 **Error codes:**
 
@@ -4238,22 +4369,23 @@ Subscribes to the window lifecycle change event.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="on-21"></a>
 ## on('windowStatusChange')
 
 ```TypeScript
 on(type: 'windowStatusChange', callback: Callback<WindowStatusType>): void
 ```
 
-Enables the listening for window status changes. When the window status changes, a notification is sent. (In this case, the window attributes may not be updated yet. If you need to obtain the changed window size and position immediately after receiving the window status change notification, you are advised to use [on('windowStatusDidChange')](arkts-arkui-window-window-i.md#on-24).)
+Enables the listening for window status changes. When the window status changes, a notification is sent. (In this case, the window attributes may not be updated yet. If you need to obtain the changed window size and position immediately after receiving the window status change notification, you are advised to use [on('windowStatusDidChange')](@ohos.window:window.Window.on(type: 'windowStatusDidChange', callback: Callback<WindowStatusType>)).)
 
-After the listening is enabled using this API, multiple callbacks will be received when the **maximize** or **recover** method is called. To obtain the deduplicated callback, you can use [on('windowStatusDidChange')](arkts-arkui-window-window-i.md#on-24).
+After the listening is enabled using this API, multiple callbacks will be received when the **maximize** or **recover** method is called. To obtain the deduplicated callback, you can use [on('windowStatusDidChange')](window.Window.on(type: 'windowStatusDidChange', callback: Callback<WindowStatusType>)).
 
 > **NOTE**  
 >  
-> In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode, when the window is  
+> In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode, when the window is  
 > maximized (covering the entire screen, with a dock bar and status bar on 2-in-1 devices, and a status bar on  
 > tablets), the return value differs based on the  
-> [targetAPIVersion](../../../../quick-start/app-configuration-file.md#tags-in-the-configuration-file) setting. For  
+> [targetAPIVersion](docroot://quick-start/app-configuration-file.md#tags-in-the-configuration-file) setting. For  
 > versions below 14, the return value is **WindowStatusType::FULL_SCREEN**. For versions 14 and above, the return  
 > value is **WindowStatusType::MAXIMIZE**.
 
@@ -4270,7 +4402,7 @@ After the listening is enabled using this API, multiple callbacks will be receiv
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowStatusChange' | Yes | Event type. The value is fixed at **'windowStatusChange'**, indicating the window status change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowStatusType> | Yes | Callback used to return the window status. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowStatusType&gt; | Yes | Callback used to return the window status. |
 
 **Error codes:**
 
@@ -4279,6 +4411,7 @@ After the listening is enabled using this API, multiple callbacks will be receiv
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 
+<a id="on-22"></a>
 ## on('windowStatusDidChange')
 
 ```TypeScript
@@ -4298,7 +4431,7 @@ Subscribes to the event indicating that the window status has changed (the [Rect
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowStatusDidChange' | Yes | Event type. The value is fixed at **'windowStatusDidChange'**,indicating that the window status has changed. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowStatusType> | Yes | Callback used to return the window status. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowStatusType&gt; | Yes | Callback used to return the window status. |
 
 **Error codes:**
 
@@ -4307,6 +4440,7 @@ Subscribes to the event indicating that the window status has changed (the [Rect
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
+<a id="on-23"></a>
 ## on('subWindowClose')
 
 ```TypeScript
@@ -4317,9 +4451,9 @@ Subscribes to the event indicating that the child window is closed. This event i
 
 If the event is subscribed to multiple times, only the most recently subscribed-to event takes effect.
 
-The callback function in this API is executed synchronously. For asynchronous close events of child windows,refer to [on('windowWillClose')](arkts-arkui-window-window-i.md#on-26).
+The callback function in this API is executed synchronously. For asynchronous close events of child windows,refer to [on('windowWillClose')](window.Window.on(type: 'windowWillClose', callback: Callback<void, Promise<boolean>>)).
 
-If there is an existing event subscribed to by calling [on('windowWillClose')](arkts-arkui-window-window-i.md#on-26), only the [on('windowWillClose')](arkts-arkui-window-window-i.md#on-26)API will be responded to.
+If there is an existing event subscribed to by calling [on('windowWillClose')](window.Window.on(type: 'windowWillClose', callback: Callback<void, Promise<boolean>>)), only the [on('windowWillClose')](window.Window.on(type: 'windowWillClose', callback: Callback<void, Promise<boolean>>))API will be responded to.
 
 **Since:** 12
 
@@ -4334,7 +4468,7 @@ If there is an existing event subscribed to by calling [on('windowWillClose')](a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'subWindowClose' | Yes | Event type. The value is fixed at **'subWindowClose'**, indicating the child window close event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback invoked when the close button in the top-right corner of the child window is clicked. It does not return any parameter. The return value of the internal logic of the callback function determines whether to continue to close the child window. If **true** of the Boolean type is returned, the child window is not closed. If **false** or other non-Boolean types are returned, the child window is closed. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback invoked when the close button in the top-right corner of the child window is clicked. It does not return any parameter. The return value of the internal logic of the callback function determines whether to continue to close the child window. If **true** of the Boolean type is returned, the child window is not closed. If **false** or other non-Boolean types are returned, the child window is closed. |
 
 **Error codes:**
 
@@ -4345,6 +4479,7 @@ If there is an existing event subscribed to by calling [on('windowWillClose')](a
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only subwindows are supported. |
 
+<a id="on-24"></a>
 ## on('windowWillClose')
 
 ```TypeScript
@@ -4353,7 +4488,7 @@ on(type: 'windowWillClose', callback: Callback<void, Promise<boolean>>): void
 
 Subscribes to the event indicating that the main window or child window will be closed. This event is triggered only when the user clicks the close button in the system-provided title bar to close the window. It is not triggered when the window is closed in other ways.
 
-The callback function in this API is executed asynchronously. For synchronous close events of child windows,refer to [on('subWindowClose')](arkts-arkui-window-window-i.md#on-25). For synchronous close events of the main window, refer to [on('windowStageClose')](window.Window.on(type: 'windowStageClose', callback: Callback<void>)).
+The callback function in this API is executed asynchronously. For synchronous close events of child windows,refer to [on('subWindowClose')](window.Window.on(type: 'subWindowClose', callback: Callback<void>)). For synchronous close events of the main window, refer to [on('windowStageClose')](window.Window.on(type: 'windowStageClose', callback: Callback<void>)).
 
 **Since:** 15
 
@@ -4368,7 +4503,7 @@ The callback function in this API is executed asynchronously. For synchronous cl
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowWillClose' | Yes | Event type. The value is fixed at **'windowWillClose'**, indicating the window close event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void, Promise<boolean>> | Yes | Callback invoked when the close button in the top-right corner of the window is clicked. It does not return any parameter. The internal logic of the callback function requires a return value of the Promise&lt;boolean&gt; type. In the returned Promise function,**resolve(true)** means not to close the window, and **resolve(false)** or **reject** means to continue to close the window. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void, Promise&lt;boolean&gt;&gt; | Yes | Callback invoked when the close button in the top-right corner of the window is clicked. It does not return any parameter. The internal logic of the callback function requires a return value of the Promise<boolean> type. In the returned Promise function,**resolve(true)** means not to close the window, and **resolve(false)** or **reject** means to continue to close the window. |
 
 **Error codes:**
 
@@ -4379,6 +4514,7 @@ The callback function in this API is executed asynchronously. For synchronous cl
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type, not called from mainWindow or subWindow. |
 
+<a id="on-25"></a>
 ## on('windowHighlightChange')
 
 ```TypeScript
@@ -4400,7 +4536,7 @@ Subscribes to the highlighted state change event of the window.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowHighlightChange' | Yes | Event type. The value is fixed at **'windowHighlightChange'**,indicating the window highlighted state change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback used to return the highlighted state of the window, which is a Boolean value. **true** if highlighted, **false** otherwise. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the highlighted state of the window, which is a Boolean value. **true** if highlighted, **false** otherwise. |
 
 **Error codes:**
 
@@ -4411,6 +4547,7 @@ Subscribes to the highlighted state change event of the window.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="on-26"></a>
 ## on('windowTitleButtonRectChange')
 
 ```TypeScript
@@ -4432,7 +4569,7 @@ Subscribes to the change event of the rectangle that holds the minimize, maximiz
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowTitleButtonRectChange' | Yes | Event type. The value is fixed at **'windowTitleButtonRectChange'**, indicating that the change event of the rectangle that holds the minimize,maximize, and close buttons. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<TitleButtonRect> | Yes | Callback used to return the new rectangle. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;TitleButtonRect&gt; | Yes | Callback used to return the new rectangle. |
 
 **Error codes:**
 
@@ -4442,6 +4579,7 @@ Subscribes to the change event of the rectangle that holds the minimize, maximiz
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="on-27"></a>
 ## on('windowRectChange')
 
 ```TypeScript
@@ -4463,7 +4601,7 @@ Subscribes to window rectangle (position and size) change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowRectChange' | Yes | Event type. The value is fixed at **'windowRectChange'**, indicating the window rectangle change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<RectChangeOptions> | Yes | Callback used to return the value and reason of the window rectangle change. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RectChangeOptions&gt; | Yes | Callback used to return the value and reason of the window rectangle change. |
 
 **Error codes:**
 
@@ -4474,13 +4612,14 @@ Subscribes to window rectangle (position and size) change events.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="on-28"></a>
 ## on('rectChangeInGlobalDisplay')
 
 ```TypeScript
 on(type: 'rectChangeInGlobalDisplay', callback: Callback<RectChangeOptions>): void
 ```
 
-Enables the listening event for changes in the window rectangle (window position and size) in the [global coordinate system](../../../../windowmanager/window-terminology.md#global-coordinate-system).
+Enables the listening event for changes in the window rectangle (window position and size) in the [global coordinate system](docroot://windowmanager/window-terminology.md#global-coordinate-system).
 
 **Since:** 20
 
@@ -4493,7 +4632,7 @@ Enables the listening event for changes in the window rectangle (window position
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rectChangeInGlobalDisplay' | Yes | Event type. The value is fixed at **'rectChangeInGlobalDisplay'**,indicating the window rectangle change event in the global coordinate system. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<RectChangeOptions> | Yes | Callback used to return the value and reason of the window rectangle change. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RectChangeOptions&gt; | Yes | Callback used to return the value and reason of the window rectangle change. |
 
 **Error codes:**
 
@@ -4503,6 +4642,7 @@ Enables the listening event for changes in the window rectangle (window position
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="on-29"></a>
 ## on('freeWindowModeChange')
 
 ```TypeScript
@@ -4524,7 +4664,7 @@ Subscribes to the freeform window mode change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'freeWindowModeChange' | Yes | Event type. The value is fixed at **'freeWindowModeChange'**, indicating the freeform window mode change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback used to return the result, indicating whether the window is in freeform window mode. **true** if the window is in freeform window mode, **false** otherwise. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result, indicating whether the window is in freeform window mode. **true** if the window is in freeform window mode, **false** otherwise. |
 
 **Error codes:**
 
@@ -4533,6 +4673,7 @@ Subscribes to the freeform window mode change event.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="onwindowposturemodechange"></a>
 ## onWindowPostureModeChange
 
 ```TypeScript
@@ -4554,7 +4695,7 @@ Registers a callback that is invoked when the window changes to the specified wi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | [WindowPostureMode](arkts-arkui-window-windowposturemode-e.md) | Yes | The window posture mode to monitor. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback invoked when the window change into the specified window posture mode. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback invoked when the window change into the specified window posture mode. |
 
 **Error codes:**
 
@@ -4564,6 +4705,7 @@ Registers a callback that is invoked when the window changes to the specified wi
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. Possible cause: The internal services of the window are not started normally. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: Invalid parameter range. |
 
+<a id="raisetoapptop"></a>
 ## raiseToAppTop
 
 ```TypeScript
@@ -4584,7 +4726,7 @@ Before calling this API, ensure that the child window has been created and [show
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4595,6 +4737,7 @@ Before calling this API, ensure that the child window has been created and [show
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 | [1300009](../errorcode-window.md#1300009-invalid-parent-window) | The parent window is invalid. |
 
+<a id="recover"></a>
 ## recover
 
 ```TypeScript
@@ -4615,7 +4758,7 @@ Restores the main window from the full-screen, maximized, or split-screen mode t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4625,6 +4768,7 @@ Restores the main window from the full-screen, maximized, or split-screen mode t
 | [1300001](../errorcode-window.md#1300001-repeated-operation) | Repeated operation. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed;2. Internal task error.3. The window does not support floating mode. |
 
+<a id="recover-1"></a>
 ## recover
 
 ```TypeScript
@@ -4651,7 +4795,7 @@ Restores the main window from full-screen, maximized, or split-screen mode to a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -4664,6 +4808,7 @@ Restores the main window from full-screen, maximized, or split-screen mode to a 
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:1. The snapshotAnimationConfig parameter only supports main windows. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: Invalid parameter range. |
 
+<a id="resetaspectratio"></a>
 ## resetAspectRatio
 
 ```TypeScript
@@ -4686,7 +4831,7 @@ This API is valid only for the main window. After it is called, the persistently
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -4695,6 +4840,7 @@ This API is valid only for the main window. After it is called, the persistently
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="resetaspectratio-1"></a>
 ## resetAspectRatio
 
 ```TypeScript
@@ -4717,7 +4863,7 @@ This API is valid only for the main window. After it is called, the persistently
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4726,6 +4872,7 @@ This API is valid only for the main window. After it is called, the persistently
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="resetsize"></a>
 ## resetSize
 
 ```TypeScript
@@ -4752,7 +4899,7 @@ This operation is not supported in a window in full-screen mode.
 
 **Deprecated since:** 9
 
-**Substitutes:** resize(width:
+**Substitutes:** [resize(width:](arkts-arkui-window-window-i.md#resize-1)
 
 <!--Device-Window-resetSize(width: number, height: number): Promise<void>--><!--Device-Window-resetSize(width: number, height: number): Promise<void>-End-->
 
@@ -4762,15 +4909,16 @@ This operation is not supported in a window in full-screen mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| width | number | Yes | New width of the window, in px. The value must be an integer. If a floating-point number is passed in, the value is rounded down. A negative value is invalid, and error code [401](../../../../reference/errorcode-universal.md#401-parameter-check-failed) is thrown. |
-| height | number | Yes | New height of the window, in px. The value must be an integer. If a floating-point number is passed in, the value is rounded down. A negative value is invalid, and error code [401](../../../../reference/errorcode-universal.md#401-parameter-check-failed) is thrown. |
+| width | number | Yes | New width of the window, in px. The value must be an integer. If a floating-point number is passed in, the value is rounded down. A negative value is invalid, and error code [401](docroot://reference/errorcode-universal.md#401-parameter-check-failed) is thrown. |
+| height | number | Yes | New height of the window, in px. The value must be an integer. If a floating-point number is passed in, the value is rounded down. A negative value is invalid, and error code [401](docroot://reference/errorcode-universal.md#401-parameter-check-failed) is thrown. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="resetsize-1"></a>
 ## resetSize
 
 ```TypeScript
@@ -4797,7 +4945,7 @@ This operation is not supported in a window in full-screen mode.
 
 **Deprecated since:** 9
 
-**Substitutes:** resize(width:
+**Substitutes:** [resize(width:](arkts-arkui-window-window-i.md#resize-1)
 
 <!--Device-Window-resetSize(width: number, height: number, callback: AsyncCallback<void>): void--><!--Device-Window-resetSize(width: number, height: number, callback: AsyncCallback<void>): void-End-->
 
@@ -4807,10 +4955,11 @@ This operation is not supported in a window in full-screen mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| width | number | Yes | New width of the window, in px. The value must be an integer. If a floating-point number is passed in, the value is rounded down. A negative value is invalid, and error code [401](../../../../reference/errorcode-universal.md#401-parameter-check-failed) is thrown. |
-| height | number | Yes | New height of the window, in px. The value must be an integer. If a floating-point number is passed in, the value is rounded down. A negative value is invalid, and error code [401](../../../../reference/errorcode-universal.md#401-parameter-check-failed) is thrown. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| width | number | Yes | New width of the window, in px. The value must be an integer. If a floating-point number is passed in, the value is rounded down. A negative value is invalid, and error code [401](docroot://reference/errorcode-universal.md#401-parameter-check-failed) is thrown. |
+| height | number | Yes | New height of the window, in px. The value must be an integer. If a floating-point number is passed in, the value is rounded down. A negative value is invalid, and error code [401](docroot://reference/errorcode-universal.md#401-parameter-check-failed) is thrown. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="resize"></a>
 ## resize
 
 ```TypeScript
@@ -4834,7 +4983,7 @@ This API takes effect only when the window is in floating window mode (**window.
 > **NOTE**  
 >  
 > - When the main window is in floating window mode, this API does not take effect or return an error if called  
-> in non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+> in non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Since:** 9
 
@@ -4855,7 +5004,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4865,6 +5014,7 @@ This API takes effect only when the window is in floating window mode (**window.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed;2. Internal task error;3. Invalid window status type. Only supports windows in floating window mode. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="resize-1"></a>
 ## resize
 
 ```TypeScript
@@ -4886,7 +5036,7 @@ If the window width or height is greater than the maximum width or height limit,
 > **NOTE**  
 >  
 > - When the main window is in floating window mode, this API does not take effect or return an error if called  
-> in non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+> in non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Since:** 9
 
@@ -4902,7 +5052,7 @@ If the window width or height is greater than the maximum width or height limit,
 | --- | --- | --- | --- |
 | width | number | Yes | New width of the window, in px. The value must be an integer.If a floating-point number is passed in, the value is rounded down.A negative value is invalid, and error code 401 is thrown. |
 | height | number | Yes | New height of the window, in px. The value must be an integer.If a floating-point number is passed in, the value is rounded down.A negative value is invalid, and error code 401 is thrown. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -4912,6 +5062,7 @@ If the window width or height is greater than the maximum width or height limit,
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed;2. Internal task error;3. Invalid window status type. Only supports windows in floating window mode. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="resizeasync"></a>
 ## resizeAsync
 
 ```TypeScript
@@ -4934,7 +5085,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 > **NOTE**  
 >  
-> - In non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode,  
+> - In non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode,  
 > this API does not work for the main window.
 
 **Since:** 12
@@ -4956,7 +5107,7 @@ This API takes effect only when the window is in floating window mode (**window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4968,6 +5119,7 @@ This API takes effect only when the window is in floating window mode (**window.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300010](../errorcode-window.md#1300010-unsupported-operation-in-the-current-window-mode) | The operation in the current window status is invalid.Possible cause: The window status is not FLOATING. |
 
+<a id="restore"></a>
 ## restore
 
 ```TypeScript
@@ -4988,7 +5140,7 @@ Restores the main window from minimization to the foreground, returning it to it
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4999,6 +5151,7 @@ Restores the main window from minimization to the foreground, returning it to it
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 
+<a id="restoremainwindow"></a>
 ## restoreMainWindow
 
 ```TypeScript
@@ -5019,13 +5172,13 @@ Restores the main window of the current window to the foreground. If the main wi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wantParameters | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | No | Want parameters.Custom want parameter delivered when restoring the main window.Want parameters are used for UIAbility onNewWant. |
+| wantParameters | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | No | Want parameters.Custom want parameter delivered when restoring the main window.Want parameters are used for UIAbility onNewWant. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5037,6 +5190,7 @@ Restores the main window of the current window to the foreground. If the main wi
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:1. The window is not float window.2. The window is not at foreground or has never been clicked.3. The window cannot find main window. |
 | [1300007](../errorcode-window.md#1300007-application-startup-failure-by-windowextensionability) | Restore parent main window failed. Possible cause:1. The main window is in PAUSED lifecycle state.2. The main window is in background during recent. |
 
+<a id="setaspectratio"></a>
 ## setAspectRatio
 
 ```TypeScript
@@ -5048,7 +5202,7 @@ Sets the aspect ratio of the window content layout (excluding decorations like b
 > **NOTE**  
 >  
 > - When the window size is set by using other APIs such as  
-> [resize](arkts-arkui-window-window-i.md#resize-2) and  
+> [resize](arkts-arkui-window-window-i.md#resize-1) and  
 > [resizeAsync](arkts-arkui-window-window-i.md#resizeasync-1), the window size is not restricted by **ratio**.  
 >  
 > - This setting is available only for the main window and takes effect only in floating window mode (  
@@ -5072,7 +5226,7 @@ Sets the aspect ratio of the window content layout (excluding decorations like b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ratio | number | Yes | Aspect ratio of the window content layout (excluding decorations like borders and title bars). The value is a floating-point number and is restricted by the maximum and minimum sizes of the window.The minimum ratio is the value of minimum width divided by the maximum height, and the maximum ratio is the maximum width divided by the minimum height. The maximum and minimum sizes of the window are determined by the intersection of the setting of [WindowLimits](arkts-arkui-window-windowlimits-i.md) and the system limit. The system limit takes precedence over [WindowLimits](arkts-arkui-window-windowlimits-i.md). The valid range of **ratio** varies with [WindowLimits](arkts-arkui-window-windowlimits-i.md). If [WindowLimits](arkts-arkui-window-windowlimits-i.md) is set prior to **ratio**, any conflict will result in an error code when setting **ratio**. Conversely, if **ratio** is set before and then conflicts arise with the subsequently configured [WindowLimits](arkts-arkui-window-windowlimits-i.md), the window's aspect ratio may not adhere to the initially configured value of **ratio**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -5082,6 +5236,7 @@ Sets the aspect ratio of the window content layout (excluding decorations like b
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 
+<a id="setaspectratio-1"></a>
 ## setAspectRatio
 
 ```TypeScript
@@ -5093,7 +5248,7 @@ Sets the aspect ratio of the window content layout (excluding decorations like b
 > **NOTE**  
 >  
 > - When the window size is set by using other APIs such as  
-> [resize](arkts-arkui-window-window-i.md#resize-2) and  
+> [resize](arkts-arkui-window-window-i.md#resize-1) and  
 > [resizeAsync](arkts-arkui-window-window-i.md#resizeasync-1), the window size is not restricted by **ratio**.  
 >  
 > - This setting is available only for the main window and takes effect only in floating window mode (  
@@ -5122,7 +5277,7 @@ Sets the aspect ratio of the window content layout (excluding decorations like b
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5132,6 +5287,7 @@ Sets the aspect ratio of the window content layout (excluding decorations like b
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 
+<a id="setbackgroundcolor"></a>
 ## setBackgroundColor
 
 ```TypeScript
@@ -5160,8 +5316,9 @@ Sets the background color for this window. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setbackgroundcolor-1"></a>
 ## setBackgroundColor
 
 ```TypeScript
@@ -5185,8 +5342,9 @@ Sets the background color for this window. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | color | string | Yes | Background color to set. The value is a hexadecimal RGB or ARGB color code and is case insensitive, for example, **'#00FF00'** or **'#FF00FF00'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setbrightness"></a>
 ## setBrightness
 
 ```TypeScript
@@ -5201,7 +5359,7 @@ When the screen brightness setting for the window takes effect, Control Panel ca
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowBrightness(brightness:
+**Substitutes:** [setWindowBrightness(brightness:](arkts-arkui-window-window-i.md#setwindowbrightness-1)
 
 <!--Device-Window-setBrightness(brightness: number): Promise<void>--><!--Device-Window-setBrightness(brightness: number): Promise<void>-End-->
 
@@ -5217,8 +5375,9 @@ When the screen brightness setting for the window takes effect, Control Panel ca
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setbrightness-1"></a>
 ## setBrightness
 
 ```TypeScript
@@ -5233,7 +5392,7 @@ When the screen brightness setting for the window takes effect, Control Panel ca
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowBrightness(brightness:
+**Substitutes:** [setWindowBrightness(brightness:](arkts-arkui-window-window-i.md#setwindowbrightness-1)
 
 <!--Device-Window-setBrightness(brightness: number, callback: AsyncCallback<void>): void--><!--Device-Window-setBrightness(brightness: number, callback: AsyncCallback<void>): void-End-->
 
@@ -5244,8 +5403,9 @@ When the screen brightness setting for the window takes effect, Control Panel ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | brightness | number | Yes | Brightness to set. The value is a floating-point number in the range [0.0, 1.0] or is set to **-1.0**. The value **1.0** means the brightest, and **-1.0** means that the window brightness resets to the original brightness set through Control Panel. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setcolorspace"></a>
 ## setColorSpace
 
 ```TypeScript
@@ -5274,8 +5434,9 @@ Sets a color space for this window. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setcolorspace-1"></a>
 ## setColorSpace
 
 ```TypeScript
@@ -5288,7 +5449,7 @@ Sets a color space for this window. This API uses an asynchronous callback to re
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowColorSpace(colorSpace:ColorSpace,
+**Substitutes:** [setWindowColorSpace(colorSpace:ColorSpace,](arkts-arkui-window-window-i.md#setwindowcolorspace-1)
 
 <!--Device-Window-setColorSpace(colorSpace: ColorSpace, callback: AsyncCallback<void>): void--><!--Device-Window-setColorSpace(colorSpace: ColorSpace, callback: AsyncCallback<void>): void-End-->
 
@@ -5299,8 +5460,9 @@ Sets a color space for this window. This API uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | colorSpace | [ColorSpace](arkts-arkui-window-colorspace-e.md) | Yes | Color space to set. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setcontentaspectratio"></a>
 ## setContentAspectRatio
 
 ```TypeScript
@@ -5319,7 +5481,7 @@ Sets the aspect ratio of the window content layout (excluding decorations like b
 > space that was previously used by the title bar.  
 >  
 > - When the window size is set by using other APIs such as  
-> [resize](arkts-arkui-window-window-i.md#resize-2) and  
+> [resize](arkts-arkui-window-window-i.md#resize-1) and  
 > [resizeAsync](arkts-arkui-window-window-i.md#resizeasync-1), the window size is not restricted by **ratio**.  
 >  
 > - This setting is available only for the main window and takes effect only in floating window mode (  
@@ -5336,14 +5498,14 @@ Sets the aspect ratio of the window content layout (excluding decorations like b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ratio | number | Yes | Aspect ratio of the window content layout (excluding decorations like borders and title bars). The value is a floating-point number and is restricted by the maximum and minimum sizes of the window.The minimum ratio is the value of minimum width divided by the maximum height, and the maximum ratio is the maximum width divided by the minimum height. The maximum and minimum sizes of the window are determined by the intersection of the setting of [WindowLimits](arkts-arkui-window-windowlimits-i.md) and the system limit. The system limit takes precedence over [WindowLimits](arkts-arkui-window-windowlimits-i.md). The valid range of **ratio** varies with [WindowLimits](arkts-arkui-window-windowlimits-i.md). If [WindowLimits](arkts-arkui-window-windowlimits-i.md) is set prior to **ratio**, any conflict will result in an error code when setting **ratio**. Conversely, if **ratio** is set before and then conflicts arise with the subsequently configured [WindowLimits](arkts-arkui-window-windowlimits-i.md), the window's aspect ratio may not adhere to the initially configured value of **ratio**. |
-| isPersistent | boolean | No | Whether the aspect ratio should be saved persistently.<br>If this parameter is set to **true**, the aspect ratio is saved persistently. This means that the setting is valid in floating window mode even after the window is destroyed, the application is closed, or the device is restarted. You can call [resetAspectRatio](arkts-arkui-window-window-i.md#resetaspectratio-2) to clear the persistently saved aspect ratio.<br>If this parameter is set to **false**, the aspect ratio applies only to the current window and is cleared once the window is destroyed.<br>The default value is **true**. |
-| needUpdateRect | boolean | No | Whether the window size should be immediately updated based on the current aspect ratio.<br>If this parameter is set to **true**, the window size is updated immediately based on the current aspect ratio.<br>If this parameter is set to **false**, the window size is updated based on the current aspect ratio when the window is dragged and resized. You can manually trigger an update by calling [resize](arkts-arkui-window-window-i.md#resize-2) or [resizeAsync](arkts-arkui-window-window-i.md#resizeasync-1).<br>The default value is **true**. |
+| isPersistent | boolean | No | Whether the aspect ratio should be saved persistently.<br>If this parameter is set to **true**, the aspect ratio is saved persistently. This means that the setting is valid in floating window mode even after the window is destroyed, the application is closed, or the device is restarted. You can call [resetAspectRatio](arkts-arkui-window-window-i.md#resetaspectratio-1) to clear the persistently saved aspect ratio.<br>If this parameter is set to **false**, the aspect ratio applies only to the current window and is cleared once the window is destroyed.<br>The default value is **true**. |
+| needUpdateRect | boolean | No | Whether the window size should be immediately updated based on the current aspect ratio.<br>If this parameter is set to **true**, the window size is updated immediately based on the current aspect ratio.<br>If this parameter is set to **false**, the window size is updated based on the current aspect ratio when the window is dragged and resized. You can manually trigger an update by calling [resize](arkts-arkui-window-window-i.md#resize-1) or [resizeAsync](arkts-arkui-window-window-i.md#resizeasync-1).<br>The default value is **true**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5355,6 +5517,7 @@ Sets the aspect ratio of the window content layout (excluding decorations like b
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause:1. Invalid parameter range.2. Invalid parameter length. |
 
+<a id="setdecorbuttonstyle"></a>
 ## setDecorButtonStyle
 
 ```TypeScript
@@ -5386,6 +5549,7 @@ Sets the button style of the decoration bar. The setting takes effect only for t
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows and subwindows are supported. |
 
+<a id="setdialogbackgestureenabled"></a>
 ## setDialogBackGestureEnabled
 
 ```TypeScript
@@ -5412,7 +5576,7 @@ Sets whether the modal window responds to the back gesture event. An error code 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5424,6 +5588,7 @@ Sets whether the modal window responds to the back gesture event. An error code 
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only dialog windows are supported. |
 
+<a id="setdimbehind"></a>
 ## setDimBehind
 
 ```TypeScript
@@ -5445,8 +5610,9 @@ Sets the dimness of the window that is not on top. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | dimBehindValue | number | Yes | Dimness of the window to set. The value range is [0.0, 1.0], and the value **1.0** means the dimmest. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setdimbehind-1"></a>
 ## setDimBehind
 
 ```TypeScript
@@ -5473,8 +5639,9 @@ Sets the dimness of the window that is not on top. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setdragkeyframepolicy"></a>
 ## setDragKeyFramePolicy
 
 ```TypeScript
@@ -5501,7 +5668,7 @@ If this API is called by a non-main window, error code 1300004 is returned.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyFramePolicy> | Promise used to return the keyframe policy that takes effect. |
+| Promise&lt;KeyFramePolicy&gt; | Promise used to return the keyframe policy that takes effect. |
 
 **Error codes:**
 
@@ -5513,6 +5680,7 @@ If this API is called by a non-main window, error code 1300004 is returned.
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause:1. Invalid parameter range; 2. The parameter format is incorrect. |
 
+<a id="setexclusivelyhighlighted"></a>
 ## setExclusivelyHighlighted
 
 ```TypeScript
@@ -5541,7 +5709,7 @@ This API does not take effect for the main window or modal window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5553,6 +5721,7 @@ This API does not take effect for the main window or modal window.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="setfloatnavigationavoidareaenabled"></a>
 ## setFloatNavigationAvoidAreaEnabled
 
 ```TypeScript
@@ -5581,7 +5750,7 @@ Specifies whether to enable the avoid area for the float navigation type. When e
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5591,6 +5760,7 @@ Specifies whether to enable the avoid area for the float navigation type. When e
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Create js value failed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setfocusable"></a>
 ## setFocusable
 
 ```TypeScript
@@ -5603,7 +5773,7 @@ Sets whether this window is focusable, that is, whether the window can gain focu
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowFocusable(isFocusable:
+**Substitutes:** [setWindowFocusable(isFocusable:](arkts-arkui-window-window-i.md#setwindowfocusable-1)
 
 <!--Device-Window-setFocusable(isFocusable: boolean): Promise<void>--><!--Device-Window-setFocusable(isFocusable: boolean): Promise<void>-End-->
 
@@ -5613,14 +5783,15 @@ Sets whether this window is focusable, that is, whether the window can gain focu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isFocusable | boolean | Yes | Whether the window is focusable. **true** if focusable, **false** otherwise. If this parameter is set to **false**, the window does not support binding to an input method or receiving keyboard events. If input logic needs to be processed, follow the instructions provided in [Input Box and Input Method Interaction in Non-Focus Windows](../../../../inputmethod/use-inputmethod-in-not-focusable-window.md). |
+| isFocusable | boolean | Yes | Whether the window is focusable. **true** if focusable, **false** otherwise. If this parameter is set to **false**, the window does not support binding to an input method or receiving keyboard events. If input logic needs to be processed, follow the instructions provided in [Input Box and Input Method Interaction in Non-Focus Windows](docroot://inputmethod/use-inputmethod-in-not-focusable-window.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setfocusable-1"></a>
 ## setFocusable
 
 ```TypeScript
@@ -5633,7 +5804,7 @@ Sets whether this window is focusable, that is, whether the window can gain focu
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowFocusable(isFocusable:
+**Substitutes:** [setWindowFocusable(isFocusable:](arkts-arkui-window-window-i.md#setwindowfocusable-1)
 
 <!--Device-Window-setFocusable(isFocusable: boolean, callback: AsyncCallback<void>): void--><!--Device-Window-setFocusable(isFocusable: boolean, callback: AsyncCallback<void>): void-End-->
 
@@ -5643,9 +5814,10 @@ Sets whether this window is focusable, that is, whether the window can gain focu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isFocusable | boolean | Yes | Whether the window is focusable. **true** if focusable, **false** otherwise. If this parameter is set to **false**, the window does not support binding to an input method or receiving keyboard events. If input logic needs to be processed, follow the instructions provided in [Input Box and Input Method Interaction in Non-Focus Windows](../../../../inputmethod/use-inputmethod-in-not-focusable-window.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| isFocusable | boolean | Yes | Whether the window is focusable. **true** if focusable, **false** otherwise. If this parameter is set to **false**, the window does not support binding to an input method or receiving keyboard events. If input logic needs to be processed, follow the instructions provided in [Input Box and Input Method Interaction in Non-Focus Windows](docroot://inputmethod/use-inputmethod-in-not-focusable-window.md). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setfollowparentmultiscreenpolicy"></a>
 ## setFollowParentMultiScreenPolicy
 
 ```TypeScript
@@ -5654,7 +5826,7 @@ setFollowParentMultiScreenPolicy(enabled: boolean): Promise<void>
 
 Sets whether a child window can span multiple screens and be simultaneously displayed while its parent window is being dragged or resized. This API uses a promise to return the result.
 
-By default, when a child window follows its parent window's layout changes (by using [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-2)), it does not support spanning multiple screens and being simultaneously displayed.
+By default, when a child window follows its parent window's layout changes (by using [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-1)), it does not support spanning multiple screens and being simultaneously displayed.
 
 However, calling this API on the child window enables it to span multiple screens and be simultaneously displayed during the layout adjustment process.
 
@@ -5676,7 +5848,7 @@ However, calling this API on the child window enables it to span multiple screen
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5688,6 +5860,7 @@ However, calling this API on the child window enables it to span multiple screen
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="setfollowparentwindowlayoutenabled"></a>
 ## setFollowParentWindowLayoutEnabled
 
 ```TypeScript
@@ -5720,7 +5893,7 @@ Once this API is successfully called, the [setRelativePositionToParentWindowEnab
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5732,6 +5905,7 @@ Once this API is successfully called, the [setRelativePositionToParentWindowEnab
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only subwindows and dialog windows are supported. |
 
+<a id="setfullscreen"></a>
 ## setFullScreen
 
 ```TypeScript
@@ -5748,15 +5922,15 @@ Non-full-screen mode means that the layout avoids the status bar and <!--RP15-->
 > **NOTE**  
 >  
 > This API is supported since API version 6 and deprecated since API version 9. You are advised to use  
-> [setWindowSystemBarEnable()](arkts-arkui-window-window-i.md#setwindowsystembarenable-2)  
-> and [setWindowLayoutFullScreen()](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-2)  
+> [setWindowSystemBarEnable()](arkts-arkui-window-window-i.md#setwindowsystembarenable-1)  
+> and [setWindowLayoutFullScreen()](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-1)  
 > to implement the full-screen mode.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowLayoutFullScreen(isLayoutFullScreen:
+**Substitutes:** [setWindowLayoutFullScreen(isLayoutFullScreen:](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-1)
 
 <!--Device-Window-setFullScreen(isFullScreen: boolean, callback: AsyncCallback<void>): void--><!--Device-Window-setFullScreen(isFullScreen: boolean, callback: AsyncCallback<void>): void-End-->
 
@@ -5766,9 +5940,10 @@ Non-full-screen mode means that the layout avoids the status bar and <!--RP15-->
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isFullScreen | boolean | Yes | Whether to set full-screen mode (full-screen mode affects the display of the status bar and &lt;!--RP15--&gt;three-button navigation bar&lt;!--RP15End--&gt;). **true** to set full-screen mode,**false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| isFullScreen | boolean | Yes | Whether to set full-screen mode (full-screen mode affects the display of the status bar and <!--RP15-->three-button navigation bar<!--RP15End-->). **true** to set full-screen mode,**false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setfullscreen-1"></a>
 ## setFullScreen
 
 ```TypeScript
@@ -5785,15 +5960,15 @@ Non-full-screen mode means that the layout avoids the status bar and <!--RP15-->
 > **NOTE**  
 >  
 > This API is supported since API version 6 and deprecated since API version 9. You are advised to use  
-> [setWindowSystemBarEnable()](arkts-arkui-window-window-i.md#setwindowsystembarenable-2)  
-> and [setWindowLayoutFullScreen()](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-2)  
+> [setWindowSystemBarEnable()](arkts-arkui-window-window-i.md#setwindowsystembarenable-1)  
+> and [setWindowLayoutFullScreen()](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-1)  
 > to implement the full-screen mode.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowLayoutFullScreen(isLayoutFullScreen:
+**Substitutes:** [setWindowLayoutFullScreen(isLayoutFullScreen:](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-1)
 
 <!--Device-Window-setFullScreen(isFullScreen: boolean): Promise<void>--><!--Device-Window-setFullScreen(isFullScreen: boolean): Promise<void>-End-->
 
@@ -5803,14 +5978,15 @@ Non-full-screen mode means that the layout avoids the status bar and <!--RP15-->
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isFullScreen | boolean | Yes | Whether to set full-screen mode (full-screen mode affects the display of the status bar and &lt;!--RP15--&gt;three-button navigation bar&lt;!--RP15End--&gt;). **true** to set full-screen mode,**false** otherwise. |
+| isFullScreen | boolean | Yes | Whether to set full-screen mode (full-screen mode affects the display of the status bar and <!--RP15-->three-button navigation bar<!--RP15End-->). **true** to set full-screen mode,**false** otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setgesturebackenabled"></a>
 ## setGestureBackEnabled
 
 ```TypeScript
@@ -5841,7 +6017,7 @@ After this function is disabled, the gesture hot zone of the current application
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5853,6 +6029,7 @@ After this function is disabled, the gesture hot zone of the current application
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 
+<a id="setimmersivemodeenabledstate"></a>
 ## setImmersiveModeEnabledState
 
 ```TypeScript
@@ -5884,6 +6061,7 @@ Sets whether to enable the immersive layout for the main window. This API does n
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.Possible cause: Internal IPC error. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows and subwindows are supported. |
 
+<a id="setkeepscreenon"></a>
 ## setKeepScreenOn
 
 ```TypeScript
@@ -5896,7 +6074,7 @@ Sets whether to keep the screen always on. This API uses a promise to return the
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowKeepScreenOn(isKeepScreenOn:
+**Substitutes:** [setWindowKeepScreenOn(isKeepScreenOn:](arkts-arkui-window-window-i.md#setwindowkeepscreenon-1)
 
 <!--Device-Window-setKeepScreenOn(isKeepScreenOn: boolean): Promise<void>--><!--Device-Window-setKeepScreenOn(isKeepScreenOn: boolean): Promise<void>-End-->
 
@@ -5912,8 +6090,9 @@ Sets whether to keep the screen always on. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setkeepscreenon-1"></a>
 ## setKeepScreenOn
 
 ```TypeScript
@@ -5926,7 +6105,7 @@ Sets whether to keep the screen always on. This API uses an asynchronous callbac
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowKeepScreenOn(isKeepScreenOn:
+**Substitutes:** [setWindowKeepScreenOn(isKeepScreenOn:](arkts-arkui-window-window-i.md#setwindowkeepscreenon-1)
 
 <!--Device-Window-setKeepScreenOn(isKeepScreenOn: boolean, callback: AsyncCallback<void>): void--><!--Device-Window-setKeepScreenOn(isKeepScreenOn: boolean, callback: AsyncCallback<void>): void-End-->
 
@@ -5937,8 +6116,9 @@ Sets whether to keep the screen always on. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isKeepScreenOn | boolean | Yes | Whether to keep the screen always on. **true** to keep the screen always on,**false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setlayoutfullscreen"></a>
 ## setLayoutFullScreen
 
 ```TypeScript
@@ -5955,7 +6135,7 @@ A non-immersive layout means that the layout avoids the status bar and <!--RP15-
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowLayoutFullScreen(isLayoutFullScreen:
+**Substitutes:** [setWindowLayoutFullScreen(isLayoutFullScreen:](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-1)
 
 <!--Device-Window-setLayoutFullScreen(isLayoutFullScreen: boolean, callback: AsyncCallback<void>): void--><!--Device-Window-setLayoutFullScreen(isLayoutFullScreen: boolean, callback: AsyncCallback<void>): void-End-->
 
@@ -5965,9 +6145,10 @@ A non-immersive layout means that the layout avoids the status bar and <!--RP15-
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isLayoutFullScreen | boolean | Yes | Whether the layout of the window is immersive. (Immersive layout mode does not affect the display of the status bar and &lt;!--RP15--&gt;three-button navigation bar&lt;!--RP15End--&gt;.)**true** if immersive, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| isLayoutFullScreen | boolean | Yes | Whether the layout of the window is immersive. (Immersive layout mode does not affect the display of the status bar and <!--RP15-->three-button navigation bar<!--RP15End-->.)**true** if immersive, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setlayoutfullscreen-1"></a>
 ## setLayoutFullScreen
 
 ```TypeScript
@@ -5984,7 +6165,7 @@ A non-immersive layout means that the layout avoids the status bar and <!--RP15-
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowLayoutFullScreen(isLayoutFullScreen:
+**Substitutes:** [setWindowLayoutFullScreen(isLayoutFullScreen:](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-1)
 
 <!--Device-Window-setLayoutFullScreen(isLayoutFullScreen: boolean): Promise<void>--><!--Device-Window-setLayoutFullScreen(isLayoutFullScreen: boolean): Promise<void>-End-->
 
@@ -5994,14 +6175,15 @@ A non-immersive layout means that the layout avoids the status bar and <!--RP15-
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isLayoutFullScreen | boolean | Yes | Whether the layout of the window is immersive. (Immersive layout mode does not affect the display of the status bar and &lt;!--RP15--&gt;three-button navigation bar&lt;!--RP15End--&gt;.)**true** if immersive, **false** otherwise. |
+| isLayoutFullScreen | boolean | Yes | Whether the layout of the window is immersive. (Immersive layout mode does not affect the display of the status bar and <!--RP15-->three-button navigation bar<!--RP15End-->.)**true** if immersive, **false** otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setoutsidetouchable"></a>
 ## setOutsideTouchable
 
 ```TypeScript
@@ -6031,8 +6213,9 @@ Sets whether the area outside the child window is touchable. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setoutsidetouchable-1"></a>
 ## setOutsideTouchable
 
 ```TypeScript
@@ -6057,8 +6240,9 @@ Sets whether the area outside the child window is touchable. This API uses an as
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | touchable | boolean | Yes | Whether the area outside the child window is touchable. **true** if touchable,**false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setparentwindow"></a>
 ## setParentWindow
 
 ```TypeScript
@@ -6089,7 +6273,7 @@ If the child window is focused and the new parent window has a modal child windo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6101,6 +6285,7 @@ If the child window is focused and the new parent window has a modal child windo
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:Invalid window type. Only subwindows are supported. |
 | [1300009](../errorcode-window.md#1300009-invalid-parent-window) | The parent window is invalid. Possible cause:The parent window does not exist or has been destroyed. |
 
+<a id="setpreferredorientation"></a>
 ## setPreferredOrientation
 
 ```TypeScript
@@ -6131,7 +6316,7 @@ Starting from <!--RP1-->OpenHarmony 6.1<!--RP1End-->, this API can be called by 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6140,6 +6325,7 @@ Starting from <!--RP1-->OpenHarmony 6.1<!--RP1End-->, this API can be called by 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: Invalid parameter value range. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="setpreferredorientation-1"></a>
 ## setPreferredOrientation
 
 ```TypeScript
@@ -6165,7 +6351,7 @@ Starting from <!--RP1-->OpenHarmony 6.1<!--RP1End-->, this API can be called by 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | orientation | [Orientation](arkts-arkui-window-orientation-e.md) | Yes | Display orientation. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. The callback indicates the API call result. It does not mean that the application rotation animation ends. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. The callback indicates the API call result. It does not mean that the application rotation animation ends. |
 
 **Error codes:**
 
@@ -6174,6 +6360,7 @@ Starting from <!--RP1-->OpenHarmony 6.1<!--RP1End-->, this API can be called by 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: Invalid parameter value range. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="setpreferredorientationwithresult"></a>
 ## setPreferredOrientationWithResult
 
 ```TypeScript
@@ -6202,7 +6389,7 @@ Sets the preferred orientation for the main window.This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OrientationResult> | Promise used to return the OrientationResult. |
+| Promise&lt;OrientationResult&gt; | Promise used to return the OrientationResult. |
 
 **Error codes:**
 
@@ -6212,6 +6399,7 @@ Sets the preferred orientation for the main window.This API uses a promise to re
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setprivacymode"></a>
 ## setPrivacyMode
 
 ```TypeScript
@@ -6224,7 +6412,7 @@ Sets whether this window is in privacy mode. This API uses a promise to return t
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowPrivacyMode(isPrivacyMode:
+**Substitutes:** [setWindowPrivacyMode(isPrivacyMode:](arkts-arkui-window-window-i.md#setwindowprivacymode-1)
 
 <!--Device-Window-setPrivacyMode(isPrivacyMode: boolean): Promise<void>--><!--Device-Window-setPrivacyMode(isPrivacyMode: boolean): Promise<void>-End-->
 
@@ -6240,8 +6428,9 @@ Sets whether this window is in privacy mode. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setprivacymode-1"></a>
 ## setPrivacyMode
 
 ```TypeScript
@@ -6254,7 +6443,7 @@ Sets whether this window is in privacy mode. This API uses an asynchronous callb
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowPrivacyMode(isPrivacyMode:
+**Substitutes:** [setWindowPrivacyMode(isPrivacyMode:](arkts-arkui-window-window-i.md#setwindowprivacymode-1)
 
 <!--Device-Window-setPrivacyMode(isPrivacyMode: boolean, callback: AsyncCallback<void>): void--><!--Device-Window-setPrivacyMode(isPrivacyMode: boolean, callback: AsyncCallback<void>): void-End-->
 
@@ -6265,8 +6454,9 @@ Sets whether this window is in privacy mode. This API uses an asynchronous callb
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isPrivacyMode | boolean | Yes | Whether the window is in privacy mode. **true** if in privacy mode, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setraisebyclickenabled"></a>
 ## setRaiseByClickEnabled
 
 ```TypeScript
@@ -6295,7 +6485,7 @@ Before calling this API, ensure that the child window has been created and [show
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6308,13 +6498,14 @@ Before calling this API, ensure that the child window has been created and [show
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 | [1300009](../errorcode-window.md#1300009-invalid-parent-window) | The parent window is invalid. |
 
+<a id="setreceivedrageventenabled"></a>
 ## setReceiveDragEventEnabled
 
 ```TypeScript
 setReceiveDragEventEnabled(enabled: boolean): Promise<void>
 ```
 
-Sets whether the current window can receive [drag events](../arkts-components/arkts-arkui-common-dragevent-i.md). This API uses a promise to return the result.
+Sets whether the current window can receive [drag events](../arkts-components/arkts-arkui-dragevent-i.md). This API uses a promise to return the result.
 
 By default, the value of **enabled** is **true**, indicating that the window can receive drag events.
 
@@ -6338,7 +6529,7 @@ If the value of **enabled** is **false**, the current window cannot receive drag
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6348,6 +6539,7 @@ If the value of **enabled** is **false**, the current window cannot receive drag
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.Possible cause: Internal IPC error |
 
+<a id="setrelativepositiontoparentwindowenabled"></a>
 ## setRelativePositionToParentWindowEnabled
 
 ```TypeScript
@@ -6355,11 +6547,11 @@ setRelativePositionToParentWindowEnabled(enabled: boolean, anchor?: WindowAnchor
         offsetX?: number, offsetY?: number): Promise<void>
 ```
 
-Sets whether a first-level child window can maintain a fixed relative position to the main window. This API works only in [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode. This API uses a promise to return the result.
+Sets whether a first-level child window can maintain a fixed relative position to the main window. This API works only in [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode. This API uses a promise to return the result.
 
 The relative position is defined by the offset between the anchor points of the child window and the main window.Both the child window and the main window use the same type of anchor point.
 
-1. This API applies only to level-1 child windows that are not maximized.2. Once this API is called on a child window, its display position will immediately follow the main window and maintain a fixed relative position. This effect will persist until this API is called again with **false**.3. If this API is called on a child window, subsequent calls to [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-2) or [maximize()](arkts-arkui-window-window-i.md#maximize-1) to modify the window's position or size will not take effect.
+1. This API applies only to level-1 child windows that are not maximized.2. Once this API is called on a child window, its display position will immediately follow the main window and maintain a fixed relative position. This effect will persist until this API is called again with **false**.3. If this API is called on a child window, subsequent calls to [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-1) or [maximize()](arkts-arkui-window-window-i.md#maximize-1) to modify the window's position or size will not take effect.
 
 Once this API is successfully called, the [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-window-i.md#setfollowparentwindowlayoutenabled-1) API will no longer take effect.
 
@@ -6384,7 +6576,7 @@ Once this API is successfully called, the [setFollowParentWindowLayoutEnabled()]
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6395,6 +6587,7 @@ Once this API is successfully called, the [setFollowParentWindowLayoutEnabled()]
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only subwindows are supported. |
 
+<a id="setresizebydragenabled"></a>
 ## setResizeByDragEnabled
 
 ```TypeScript
@@ -6416,7 +6609,7 @@ Sets whether to enable the main window or child window with decorations to resiz
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Disable window to resize by drag if false. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setResizeByDragEnabled. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setResizeByDragEnabled. |
 
 **Error codes:**
 
@@ -6427,6 +6620,7 @@ Sets whether to enable the main window or child window with decorations to resiz
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setresizebydragenabled-1"></a>
 ## setResizeByDragEnabled
 
 ```TypeScript
@@ -6453,7 +6647,7 @@ Sets whether to enable the main window or child window with decorations to resiz
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6464,6 +6658,7 @@ Sets whether to enable the main window or child window with decorations to resiz
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setseparationtouchenabled"></a>
 ## setSeparationTouchEnabled
 
 ```TypeScript
@@ -6499,7 +6694,7 @@ When the event separation state is not supported (the value of **enabled** is **
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6509,6 +6704,7 @@ When the event separation state is not supported (the value of **enabled** is **
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.Possible cause: Internal IPC error |
 
+<a id="setspecificsystembarenabled"></a>
 ## setSpecificSystemBarEnabled
 
 ```TypeScript
@@ -6539,7 +6735,7 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6549,6 +6745,7 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setstatusbarcolor"></a>
 ## setStatusBarColor
 
 ```TypeScript
@@ -6577,7 +6774,7 @@ Setting the status bar text color is not supported for child windows. Calling th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6587,6 +6784,7 @@ Setting the status bar text color is not supported for child windows. Calling th
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.Possible cause: Internal task error. |
 
+<a id="setsubwindowmodal"></a>
 ## setSubWindowModal
 
 ```TypeScript
@@ -6617,7 +6815,7 @@ If this API is called by a main window, an error is reported.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6629,6 +6827,7 @@ If this API is called by a main window, an error is reported.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.<br>**Applicable version:** 20 and later |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="setsubwindowmodal-1"></a>
 ## setSubWindowModal
 
 ```TypeScript
@@ -6664,7 +6863,7 @@ If this API is called by a window other than the child window, an error is repor
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6676,6 +6875,7 @@ If this API is called by a window other than the child window, an error is repor
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.<br>**Applicable version:** 20 and later |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause: Invalid window type. Only subwindows are supported. |
 
+<a id="setsubwindowzlevel"></a>
 ## setSubWindowZLevel
 
 ```TypeScript
@@ -6704,7 +6904,7 @@ Changing the z-level of a child window using this API will not cause a focus swi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6717,6 +6917,7 @@ Changing the z-level of a child window using this API will not cause a focus swi
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:Invalid window type. Only non-modal subwindows are supported. |
 | [1300009](../errorcode-window.md#1300009-invalid-parent-window) | The parent window is invalid. |
 
+<a id="setsupportedwindowmodes"></a>
 ## setSupportedWindowModes
 
 ```TypeScript
@@ -6737,13 +6938,13 @@ Sets the supported window modes of the app window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| supportedWindowModes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<bundleManager.SupportWindowMode> | Yes | The supported modes of the window. |
+| supportedWindowModes | Array&lt;bundleManager.SupportWindowMode&gt; | Yes | The supported modes of the window. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6755,13 +6956,14 @@ Sets the supported window modes of the app window.
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:1. Only main windows and subwindows are supported.2. Not supported when subwindows are set to follow the main window. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause:1. When called on a main window, the parameter should not only contain SPLIT.2. When called on a sub window, the parameter should not contain SPLIT. |
 
+<a id="setsystemavoidareaenabled"></a>
 ## setSystemAvoidAreaEnabled
 
 ```TypeScript
 setSystemAvoidAreaEnabled(enabled: boolean): Promise<void>
 ```
 
-Enables the capability to obtain the window avoidance area information using [getWindowAvoidArea()](arkts-arkui-window-window-i.md#getwindowavoidarea-1) or listen for window avoidance area changes using [on('avoidAreaChange')](arkts-arkui-window-window-i.md#on-7)after a global floating window, modal window, or system window is created.
+Enables the capability to obtain the window avoidance area information using [getWindowAvoidArea()](arkts-arkui-window-window-i.md#getwindowavoidarea-1) or listen for window avoidance area changes using [on('avoidAreaChange')](window.Window.on(type: 'avoidAreaChange', callback: Callback<AvoidAreaOptions>))after a global floating window, modal window, or system window is created.
 
 **Since:** 18
 
@@ -6781,7 +6983,7 @@ Enables the capability to obtain the window avoidance area information using [ge
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6792,6 +6994,7 @@ Enables the capability to obtain the window avoidance area information using [ge
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only global floating windows, dialog windows,or Window Type as system windows are supported. |
 
+<a id="setsystembarenable"></a>
 ## setSystemBarEnable
 
 ```TypeScript
@@ -6808,7 +7011,7 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowSystemBarEnable(names:
+**Substitutes:** [setWindowSystemBarEnable(names:](arkts-arkui-window-window-i.md#setwindowsystembarenable-1)
 
 <!--Device-Window-setSystemBarEnable(names: Array<'status' | 'navigation'>, callback: AsyncCallback<void>): void--><!--Device-Window-setSystemBarEnable(names: Array<'status' | 'navigation'>, callback: AsyncCallback<void>): void-End-->
 
@@ -6818,9 +7021,10 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| names | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<'status' \| 'navigation'> | Yes | Whether to show the status bar and &lt;!--RP15--&gt;three-button navigation bar&lt;!--RP15End--&gt; in full-screen mode.<br>For example, to show all of them, set this parameter to **['status','navigation']**. If this parameter is set to [], they are hidden. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| names | Array&lt;'status' \| 'navigation'&gt; | Yes | Whether to show the status bar and <!--RP15-->three-button navigation bar<!--RP15End--> in full-screen mode.<br>For example, to show all of them, set this parameter to **['status','navigation']**. If this parameter is set to [], they are hidden. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setsystembarenable-1"></a>
 ## setSystemBarEnable
 
 ```TypeScript
@@ -6837,7 +7041,7 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowSystemBarEnable(names:
+**Substitutes:** [setWindowSystemBarEnable(names:](arkts-arkui-window-window-i.md#setwindowsystembarenable-1)
 
 <!--Device-Window-setSystemBarEnable(names: Array<'status' | 'navigation'>): Promise<void>--><!--Device-Window-setSystemBarEnable(names: Array<'status' | 'navigation'>): Promise<void>-End-->
 
@@ -6847,14 +7051,15 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| names | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<'status' \| 'navigation'> | Yes | Whether to show the status bar and &lt;!--RP15--&gt;three-button navigation bar&lt;!--RP15End--&gt; in full-screen mode.<br>For example, to show all of them, set this parameter to **['status','navigation']**. If this parameter is set to [], they are hidden. |
+| names | Array&lt;'status' \| 'navigation'&gt; | Yes | Whether to show the status bar and <!--RP15-->three-button navigation bar<!--RP15End--> in full-screen mode.<br>For example, to show all of them, set this parameter to **['status','navigation']**. If this parameter is set to [], they are hidden. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setsystembarproperties"></a>
 ## setSystemBarProperties
 
 ```TypeScript
@@ -6869,7 +7074,7 @@ This API does not take effect when it is called by a child window. The configura
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowSystemBarProperties(systemBarProperties:
+**Substitutes:** [setWindowSystemBarProperties(systemBarProperties:](arkts-arkui-window-window-i.md#setwindowsystembarproperties-1)
 
 <!--Device-Window-setSystemBarProperties(systemBarProperties: SystemBarProperties, callback: AsyncCallback<void>): void--><!--Device-Window-setSystemBarProperties(systemBarProperties: SystemBarProperties, callback: AsyncCallback<void>): void-End-->
 
@@ -6879,9 +7084,10 @@ This API does not take effect when it is called by a child window. The configura
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| systemBarProperties | [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Yes | &lt;!--Del--&gt;Properties of the &lt;!--Del--&gt;three-button navigation bar and &lt;!--DelEnd--&gt;status bar. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| systemBarProperties | [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Yes | <!--Del-->Properties of the <!--Del-->three-button navigation bar and <!--DelEnd-->status bar. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setsystembarproperties-1"></a>
 ## setSystemBarProperties
 
 ```TypeScript
@@ -6896,7 +7102,7 @@ This API does not take effect when it is called by a child window.
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowSystemBarProperties(systemBarProperties:
+**Substitutes:** [setWindowSystemBarProperties(systemBarProperties:](arkts-arkui-window-window-i.md#setwindowsystembarproperties-1)
 
 <!--Device-Window-setSystemBarProperties(systemBarProperties: SystemBarProperties): Promise<void>--><!--Device-Window-setSystemBarProperties(systemBarProperties: SystemBarProperties): Promise<void>-End-->
 
@@ -6906,14 +7112,15 @@ This API does not take effect when it is called by a child window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| systemBarProperties | [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Yes | &lt;!--Del--&gt;Properties of the &lt;!--Del--&gt;three-button navigation bar and &lt;!--DelEnd--&gt;status bar. |
+| systemBarProperties | [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Yes | <!--Del-->Properties of the <!--Del-->three-button navigation bar and <!--DelEnd-->status bar. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="settitleanddockhovershown"></a>
 ## setTitleAndDockHoverShown
 
 ```TypeScript
@@ -6941,7 +7148,7 @@ Sets whether to show the window title bar and dock bar when the cursor hovers ov
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -6951,6 +7158,7 @@ Sets whether to show the window title bar and dock bar when the cursor hovers ov
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 
+<a id="settouchable"></a>
 ## setTouchable
 
 ```TypeScript
@@ -6963,7 +7171,7 @@ Sets whether this window is touchable. This API uses a promise to return the res
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowTouchable(isTouchable:
+**Substitutes:** [setWindowTouchable(isTouchable:](arkts-arkui-window-window-i.md#setwindowtouchable-1)
 
 <!--Device-Window-setTouchable(isTouchable: boolean): Promise<void>--><!--Device-Window-setTouchable(isTouchable: boolean): Promise<void>-End-->
 
@@ -6979,8 +7187,9 @@ Sets whether this window is touchable. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="settouchable-1"></a>
 ## setTouchable
 
 ```TypeScript
@@ -6993,7 +7202,7 @@ Sets whether this window is touchable. This API uses an asynchronous callback to
 
 **Deprecated since:** 9
 
-**Substitutes:** setWindowTouchable(isTouchable:
+**Substitutes:** [setWindowTouchable(isTouchable:](arkts-arkui-window-window-i.md#setwindowtouchable-1)
 
 <!--Device-Window-setTouchable(isTouchable: boolean, callback: AsyncCallback<void>): void--><!--Device-Window-setTouchable(isTouchable: boolean, callback: AsyncCallback<void>): void-End-->
 
@@ -7004,8 +7213,9 @@ Sets whether this window is touchable. This API uses an asynchronous callback to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isTouchable | boolean | Yes | Whether the window is touchable. **true** if touchable, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setuicontent"></a>
 ## setUIContent
 
 ```TypeScript
@@ -7027,7 +7237,7 @@ Loads the content of a page, with its path in the current project specified, to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the page to which the content will be loaded |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -7037,6 +7247,7 @@ Loads the content of a page, with its path in the current project specified, to 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.<br>**Applicable version:** 9 and later |
 
+<a id="setuicontent-1"></a>
 ## setUIContent
 
 ```TypeScript
@@ -7063,7 +7274,7 @@ Loads the content of a page, with its path in the current project specified, to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7073,6 +7284,7 @@ Loads the content of a page, with its path in the current project specified, to 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.<br>**Applicable version:** 9 and later |
 
+<a id="setwindowbackgroundcolor"></a>
 ## setWindowBackgroundColor
 
 ```TypeScript
@@ -7105,6 +7317,7 @@ In the stage model, this API must be used after the call of [loadContent](arkts-
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed; |
 
+<a id="setwindowbrightness"></a>
 ## setWindowBrightness
 
 ```TypeScript
@@ -7137,7 +7350,7 @@ When the window moves to the background, the setting becomes invalid, and bright
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7147,6 +7360,7 @@ When the window moves to the background, the setting becomes invalid, and bright
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowbrightness-1"></a>
 ## setWindowBrightness
 
 ```TypeScript
@@ -7174,7 +7388,7 @@ When the window moves to the background, the setting becomes invalid, and bright
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | brightness | number | Yes | the specified brightness value. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -7184,6 +7398,7 @@ When the window moves to the background, the setting becomes invalid, and bright
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowcolorspace"></a>
 ## setWindowColorSpace
 
 ```TypeScript
@@ -7210,7 +7425,7 @@ Sets a color space for this window. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7219,6 +7434,7 @@ Sets a color space for this window. This API uses a promise to return the result
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="setwindowcolorspace-1"></a>
 ## setWindowColorSpace
 
 ```TypeScript
@@ -7240,7 +7456,7 @@ Sets a color space for this window. This API uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | colorSpace | [ColorSpace](arkts-arkui-window-colorspace-e.md) | Yes | the specified color space. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -7249,6 +7465,7 @@ Sets a color space for this window. This API uses an asynchronous callback to re
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="setwindowcontainercolor"></a>
 ## setWindowContainerColor
 
 ```TypeScript
@@ -7283,6 +7500,7 @@ The background color you set here covers the entire window, including both the t
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="setwindowcornerradius"></a>
 ## setWindowCornerRadius
 
 ```TypeScript
@@ -7313,7 +7531,7 @@ Before calling this API, you can call [getWindowCornerRadius()](arkts-arkui-wind
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7325,6 +7543,7 @@ Before calling this API, you can call [getWindowCornerRadius()](arkts-arkui-wind
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="setwindowdecorheight"></a>
 ## setWindowDecorHeight
 
 ```TypeScript
@@ -7333,7 +7552,7 @@ setWindowDecorHeight(height: number): void
 
 Sets the height of the title bar of this window. This API takes effect for the window that has a title bar and a three-button area. In the stage model, this API must be used after the call of [loadContent](arkts-arkui-window-window-i.md#loadcontent-1)or [setUIContent()](arkts-arkui-window-window-i.md#setuicontent-1) takes effect.
 
-For tablets, if this API is called outside of [free windows](../../../../windowmanager/window-terminology.md#free-windows) mode, the change applies once the device switches to free windows mode. If this API is called in free windows mode, the change takes effect immediately.
+For tablets, if this API is called outside of [free windows](docroot://windowmanager/window-terminology.md#free-windows) mode, the change applies once the device switches to free windows mode. If this API is called in free windows mode, the change takes effect immediately.
 
 When the main window transitions into full-screen mode, hovering the mouse over the hot zone of the window's title bar region will cause a floating title bar to appear, with a fixed height of 37 vp.
 
@@ -7359,6 +7578,7 @@ When the main window transitions into full-screen mode, hovering the mouse over 
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="setwindowdecorvisible"></a>
 ## setWindowDecorVisible
 
 ```TypeScript
@@ -7392,6 +7612,7 @@ When the window title bar is hidden and the main window transitions into full-sc
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.<br>**Applicable version:** 11 - 19 |
 
+<a id="setwindowdelayraiseondrag"></a>
 ## setWindowDelayRaiseOnDrag
 
 ```TypeScript
@@ -7425,6 +7646,7 @@ When this API is called to enable delayed raising, in cross-window drag-and-drop
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function setWindowDelayRaiseOnDrag can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:The window is not created or destroyed. |
 
+<a id="setwindowfocusable"></a>
 ## setWindowFocusable
 
 ```TypeScript
@@ -7453,7 +7675,7 @@ Starting from API version 22, if a virtual screen is created by calling [createV
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7463,6 +7685,7 @@ Starting from API version 22, if a virtual screen is created by calling [createV
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowfocusable-1"></a>
 ## setWindowFocusable
 
 ```TypeScript
@@ -7486,7 +7709,7 @@ Starting from API version 22, if a virtual screen is created by calling [createV
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isFocusable | boolean | Yes | can be focus if true, or can not be focus if false. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -7496,6 +7719,7 @@ Starting from API version 22, if a virtual screen is created by calling [createV
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowgrayscale"></a>
 ## setWindowGrayScale
 
 ```TypeScript
@@ -7522,7 +7746,7 @@ Sets the grayscale effect for this window. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7533,6 +7757,7 @@ Sets the grayscale effect for this window. This API uses a promise to return the
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowkeepscreenon"></a>
 ## setWindowKeepScreenOn
 
 ```TypeScript
@@ -7561,7 +7786,7 @@ Set **isKeepScreenOn** to **true** only in necessary scenarios (such as navigati
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7571,6 +7796,7 @@ Set **isKeepScreenOn** to **true** only in necessary scenarios (such as navigati
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowkeepscreenon-1"></a>
 ## setWindowKeepScreenOn
 
 ```TypeScript
@@ -7594,7 +7820,7 @@ Set **isKeepScreenOn** to **true** only in necessary scenarios (such as navigati
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isKeepScreenOn | boolean | Yes | keep screen on if true, or not if false. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -7604,6 +7830,7 @@ Set **isKeepScreenOn** to **true** only in necessary scenarios (such as navigati
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowlayoutfullscreen"></a>
 ## setWindowLayoutFullScreen
 
 ```TypeScript
@@ -7620,7 +7847,7 @@ A non-immersive layout means that the layout avoids the status bar and <!--RP15-
 
 **Deprecated since:** 12
 
-**Substitutes:** setWindowLayoutFullScreen(isLayoutFullScreen:
+**Substitutes:** [setWindowLayoutFullScreen(isLayoutFullScreen:](arkts-arkui-window-window-i.md#setwindowlayoutfullscreen-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -7632,8 +7859,8 @@ A non-immersive layout means that the layout avoids the status bar and <!--RP15-
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isLayoutFullScreen | boolean | Yes | Whether the layout of the window is immersive. (In immersive layout mode,the status bar and &lt;!--RP15--&gt;three-button navigation bar&lt;!--RP15End--&gt; remain visible.) **true** if immersive, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| isLayoutFullScreen | boolean | Yes | Whether the layout of the window is immersive. (In immersive layout mode,the status bar and <!--RP15-->three-button navigation bar<!--RP15End--> remain visible.) **true** if immersive, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -7643,6 +7870,7 @@ A non-immersive layout means that the layout avoids the status bar and <!--RP15-
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowlayoutfullscreen-1"></a>
 ## setWindowLayoutFullScreen
 
 ```TypeScript
@@ -7673,7 +7901,7 @@ A non-immersive layout means that the layout avoids the status bar and <!--RP15-
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7683,6 +7911,7 @@ A non-immersive layout means that the layout avoids the status bar and <!--RP15-
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowlimits"></a>
 ## setWindowLimits
 
 ```TypeScript
@@ -7713,7 +7942,7 @@ If **setWindowLimits** has not been called, you can call [getWindowLimits](arkts
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WindowLimits> | Promise used to return the final size limits, which are the intersection between the passed-in size limits and the system size limits. |
+| Promise&lt;WindowLimits&gt; | Promise used to return the final size limits, which are the intersection between the passed-in size limits and the system size limits. |
 
 **Error codes:**
 
@@ -7725,6 +7954,7 @@ If **setWindowLimits** has not been called, you can call [getWindowLimits](arkts
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="setwindowlimits-1"></a>
 ## setWindowLimits
 
 ```TypeScript
@@ -7756,7 +7986,7 @@ If **setWindowLimits** has not been called, you can call [getWindowLimits](arkts
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WindowLimits> | Promise used to return the new window size limits.<br>If the unit of the input parameter [windowLimits](arkts-arkui-window-windowlimits-i.md) is vp, the intersection of the input parameter and the default window size limit of the system is returned.<br>If the unit of the input parameter [windowLimits](arkts-arkui-window-windowlimits-i.md) is px: The intersection of the input parameter and the default window size limit of the system is returned when **isForcible** is set to **false**. The intersection of the input parameter and [the smaller value between the system limit and 40 vp, the maximum value of the system limit] is returned when **isForcible** is set to **true**. |
+| Promise&lt;WindowLimits&gt; | Promise used to return the new window size limits.<br>If the unit of the input parameter [windowLimits](arkts-arkui-window-windowlimits-i.md) is vp, the intersection of the input parameter and the default window size limit of the system is returned.<br>If the unit of the input parameter [windowLimits](arkts-arkui-window-windowlimits-i.md) is px: The intersection of the input parameter and the default window size limit of the system is returned when **isForcible** is set to **false**. The intersection of the input parameter and [the smaller value between the system limit and 40 vp, the maximum value of the system limit] is returned when **isForcible** is set to **true**. |
 
 **Error codes:**
 
@@ -7768,6 +7998,7 @@ If **setWindowLimits** has not been called, you can call [getWindowLimits](arkts
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="setwindowmask"></a>
 ## setWindowMask
 
 ```TypeScript
@@ -7792,13 +8023,13 @@ Error code 1300002 may be returned only when multiple threads operate the same w
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowMask | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Array<number>> | Yes | Mask. The value can only be a two-dimensional array containing the window size in pixels, with each element in the array set to either **0** or **1**. The value **0** indicates that the pixel is transparent, and **1** indicates that the pixel is opaque. If the passed-in pixel array does not match the window size or the value of any element in the array is not **0** or **1**, the value is invalid. |
+| windowMask | Array&lt;Array&lt;number&gt;&gt; | Yes | Mask. The value can only be a two-dimensional array containing the window size in pixels, with each element in the array set to either **0** or **1**. The value **0** indicates that the pixel is transparent, and **1** indicates that the pixel is opaque. If the passed-in pixel array does not match the window size or the value of any element in the array is not **0** or **1**, the value is invalid. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7810,6 +8041,7 @@ Error code 1300002 may be returned only when multiple threads operate the same w
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only subwindows and float windows are supported. |
 
+<a id="setwindowmaskwithalpha"></a>
 ## setWindowMaskWithAlpha
 
 ```TypeScript
@@ -7830,7 +8062,7 @@ Set the window mask using a per-pixel alpha array
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowMask | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The windowMask contains only per-pixel alpha transparency values.Valid range: 0(full transparent) to 255(full opaque), size must equal (maskWidth * maskHeight). |
+| windowMask | Uint8Array | Yes | The windowMask contains only per-pixel alpha transparency values.Valid range: 0(full transparent) to 255(full opaque), size must equal (maskWidth * maskHeight). |
 | maskWidth | number | Yes | Mask width in pixels. Must equal the target window width. |
 | maskHeight | number | Yes | Mask height in pixels. Must equal the target window height. |
 
@@ -7838,7 +8070,7 @@ Set the window mask using a per-pixel alpha array
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7850,6 +8082,7 @@ Set the window mask using a per-pixel alpha array
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only subwindows and float windows are supported. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause:1. The maskWidth is not equal to the window width or the maskHeight is not equal to the window height.2. The length of windowMask is not equal to maskWidth multiplied by maskHeight. |
 
+<a id="setwindowprivacymode"></a>
 ## setWindowPrivacyMode
 
 ```TypeScript
@@ -7884,7 +8117,7 @@ If this API is not called, the privacy mode is disabled by default, and the wind
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7893,6 +8126,7 @@ If this API is not called, the privacy mode is disabled by default, and the wind
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API.Possible cause: Need ohos.permission.PRIVACY_WINDOW permission. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="setwindowprivacymode-1"></a>
 ## setWindowPrivacyMode
 
 ```TypeScript
@@ -7922,7 +8156,7 @@ If this API is not called, the privacy mode is disabled by default, and the wind
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isPrivacyMode | boolean | Yes | in private mode if true, or not if false. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -7931,6 +8165,7 @@ If this API is not called, the privacy mode is disabled by default, and the wind
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API.Possible cause: Need ohos.permission.PRIVACY_WINDOW permission. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="setwindowshadowenabled"></a>
 ## setWindowShadowEnabled
 
 ```TypeScript
@@ -7957,7 +8192,7 @@ Sets whether the main window displays a shadow. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -7969,6 +8204,7 @@ Sets whether the main window displays a shadow. This API uses a promise to retur
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="setwindowshadowradius"></a>
 ## setWindowShadowRadius
 
 ```TypeScript
@@ -8000,6 +8236,7 @@ Sets the blur radius of the shadow on the edges of a child window or floating wi
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed;2. Internal task error. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:Invalid window type. Only subwindows and float windows are supported. |
 
+<a id="setwindowsystembarenable"></a>
 ## setWindowSystemBarEnable
 
 ```TypeScript
@@ -8016,7 +8253,7 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 
 **Deprecated since:** 12
 
-**Substitutes:** setWindowSystemBarEnable(names:
+**Substitutes:** [setWindowSystemBarEnable(names:](arkts-arkui-window-window-i.md#setwindowsystembarenable-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -8028,8 +8265,8 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| names | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<'status' \| 'navigation'> | Yes | Whether to show the status bar and &lt;!--RP15--&gt;three-button navigation bar&lt;!--RP15End--&gt; in full-screen mode.<br>For example, to show all of them, set this parameter to **['status','navigation']**. If this parameter is set to [], they are hidden. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| names | Array&lt;'status' \| 'navigation'&gt; | Yes | Whether to show the status bar and <!--RP15-->three-button navigation bar<!--RP15End--> in full-screen mode.<br>For example, to show all of them, set this parameter to **['status','navigation']**. If this parameter is set to [], they are hidden. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -8039,6 +8276,7 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowsystembarenable-1"></a>
 ## setWindowSystemBarEnable
 
 ```TypeScript
@@ -8061,13 +8299,13 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| names | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<'status'\|'navigation'> | Yes | The set of system bar |
+| names | Array&lt;'status'\|'navigation'&gt; | Yes | The set of system bar |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8077,6 +8315,7 @@ The return value does not indicate that the status bar and <!--RP15-->three-butt
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowsystembarproperties"></a>
 ## setWindowSystemBarProperties
 
 ```TypeScript
@@ -8091,7 +8330,7 @@ This API does not take effect when it is called by a child window.
 
 **Deprecated since:** 12
 
-**Substitutes:** setWindowSystemBarProperties(systemBarProperties:
+**Substitutes:** [setWindowSystemBarProperties(systemBarProperties:](arkts-arkui-window-window-i.md#setwindowsystembarproperties-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -8103,8 +8342,8 @@ This API does not take effect when it is called by a child window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| systemBarProperties | [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Yes | &lt;!--Del--&gt;Properties of the &lt;!--Del--&gt;three-button navigation bar and &lt;!--DelEnd--&gt;status bar. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| systemBarProperties | [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Yes | <!--Del-->Properties of the <!--Del-->three-button navigation bar and <!--DelEnd-->status bar. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -8115,6 +8354,7 @@ This API does not take effect when it is called by a child window.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowsystembarproperties-1"></a>
 ## setWindowSystemBarProperties
 
 ```TypeScript
@@ -8137,13 +8377,13 @@ This API does not take effect when it is called by a child window. The setting d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| systemBarProperties | [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Yes | &lt;!--Del--&gt;Properties of the &lt;!--Del--&gt;three-button navigation bar and &lt;!--DelEnd--&gt;status bar. |
+| systemBarProperties | [SystemBarProperties](arkts-arkui-window-systembarproperties-i.md) | Yes | <!--Del-->Properties of the <!--Del-->three-button navigation bar and <!--DelEnd-->status bar. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8153,6 +8393,7 @@ This API does not take effect when it is called by a child window. The setting d
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowtitle"></a>
 ## setWindowTitle
 
 ```TypeScript
@@ -8179,7 +8420,7 @@ Sets the window title. This API uses a promise to return the result. In the stag
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8189,6 +8430,7 @@ Sets the window title. This API uses a promise to return the result. In the stag
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 
+<a id="setwindowtitlebuttonvisible"></a>
 ## setWindowTitleButtonVisible
 
 ```TypeScript
@@ -8222,6 +8464,7 @@ Shows or hides the maximize, minimize, and close buttons on the title bar of the
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Only main windows and subwindows with subwindowoptions.zlevelaboveparentloosened set to true are supported. |
 
+<a id="setwindowtitlemoveenabled"></a>
 ## setWindowTitleMoveEnabled
 
 ```TypeScript
@@ -8253,6 +8496,7 @@ Enables or disables the capability to move the window (either main window or chi
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows and subwindows are supported. |
 
+<a id="setwindowtopmost"></a>
 ## setWindowTopmost
 
 ```TypeScript
@@ -8283,7 +8527,7 @@ Applications use custom shortcut keys to pin or unpin the main window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8295,6 +8539,7 @@ Applications use custom shortcut keys to pin or unpin the main window.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:The window is not created or destroyed. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:Invalid window type. Only main windows are supported. |
 
+<a id="setwindowtouchable"></a>
 ## setWindowTouchable
 
 ```TypeScript
@@ -8321,7 +8566,7 @@ Sets whether this window is touchable. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8331,6 +8576,7 @@ Sets whether this window is touchable. This API uses a promise to return the res
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowtouchable-1"></a>
 ## setWindowTouchable
 
 ```TypeScript
@@ -8352,7 +8598,7 @@ Sets whether this window is touchable. This API uses an asynchronous callback to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isTouchable | boolean | Yes | is touchable if true, or not if false. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -8362,6 +8608,7 @@ Sets whether this window is touchable. This API uses an asynchronous callback to
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowtransitionanimation"></a>
 ## setWindowTransitionAnimation
 
 ```TypeScript
@@ -8393,7 +8640,7 @@ Currently, this API can be used only on the main window of an application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8405,6 +8652,7 @@ Currently, this API can be used only on the main window of an application.
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause:1. Invalid parameter range;2. Invalid parameter length. |
 
+<a id="show"></a>
 ## show
 
 ```TypeScript
@@ -8417,7 +8665,7 @@ Shows this window. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** showWindow(callback:
+**Substitutes:** [showWindow(callback:](arkts-arkui-window-window-i.md#showwindow-1)
 
 <!--Device-Window-show(callback: AsyncCallback<void>): void--><!--Device-Window-show(callback: AsyncCallback<void>): void-End-->
 
@@ -8427,8 +8675,9 @@ Shows this window. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="show-1"></a>
 ## show
 
 ```TypeScript
@@ -8441,7 +8690,7 @@ Shows this window. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [showWindow()](arkts-arkui-window-window-i.md#showwindow-2)
+**Substitutes:** [showWindow()](arkts-arkui-window-window-i.md#showwindow-1)
 
 <!--Device-Window-show(): Promise<void>--><!--Device-Window-show(): Promise<void>-End-->
 
@@ -8451,8 +8700,9 @@ Shows this window. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="showwindow"></a>
 ## showWindow
 
 ```TypeScript
@@ -8465,7 +8715,7 @@ Shows this window. This API uses an asynchronous callback to return the result. 
 >  
 > Before calling this API, you are advised to load the page by using  
 > [loadContent](arkts-arkui-window-window-i.md#loadcontent-1) or  
-> [setUIContent](arkts-arkui-window-window-i.md#setuicontent-2). If the main window has not  
+> [setUIContent](arkts-arkui-window-window-i.md#setuicontent-1). If the main window has not  
 > finished loading and you call this API directly, the starting window keeps showing. Similarly, if the system  
 > window, application child window, modal window, or global floating window has finished loading and you call  
 > this API directly, the window is in the foreground but is not visible.
@@ -8482,7 +8732,7 @@ Shows this window. This API uses an asynchronous callback to return the result. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -8490,6 +8740,7 @@ Shows this window. This API uses an asynchronous callback to return the result. 
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="showwindow-1"></a>
 ## showWindow
 
 ```TypeScript
@@ -8502,7 +8753,7 @@ Shows this window. This API uses a promise to return the result. This API takes 
 >  
 > Before calling this API, you are advised to load the page by using  
 > [loadContent](arkts-arkui-window-window-i.md#loadcontent-1) or  
-> [setUIContent](arkts-arkui-window-window-i.md#setuicontent-2). If the main window has not  
+> [setUIContent](arkts-arkui-window-window-i.md#setuicontent-1). If the main window has not  
 > finished loading and you call this API directly, the starting window keeps showing. Similarly, if the system  
 > window, application child window, modal window, or global floating window has finished loading and you call  
 > this API directly, the window is in the foreground but is not visible.
@@ -8519,7 +8770,7 @@ Shows this window. This API uses a promise to return the result. This API takes 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8527,6 +8778,7 @@ Shows this window. This API uses a promise to return the result. This API takes 
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="showwindow-2"></a>
 ## showWindow
 
 ```TypeScript
@@ -8541,7 +8793,7 @@ This API can be used only for application child windows, application main window
 >  
 > Before calling this API, you are advised to load the page by using  
 > [loadContent](arkts-arkui-window-window-i.md#loadcontent-1) or  
-> [setUIContent](arkts-arkui-window-window-i.md#setuicontent-2). If the main window has not  
+> [setUIContent](arkts-arkui-window-window-i.md#setuicontent-1). If the main window has not  
 > finished loading and you call this API directly, the starting window keeps showing. Similarly, if the system  
 > window, application child window, or global floating window has finished loading and you call this API directly  
 > , the window is in the foreground but is not visible.
@@ -8564,7 +8816,7 @@ This API can be used only for application child windows, application main window
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8575,13 +8827,14 @@ This API can be used only for application child windows, application main window
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Modal subwindow and dialog window can not set focusOnShow. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter validation error. Possible cause: 1. The value of the parameter is out of the allowed range;2. The length of the parameter exceeds the allowed length;3. The parameter format is incorrect. |
 
+<a id="snapshot"></a>
 ## snapshot
 
 ```TypeScript
 snapshot(callback: AsyncCallback<image.PixelMap>): void
 ```
 
-Captures this window. This API uses an asynchronous callback to return the result. If privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-2)), taking a screenshot will result in a blank screen.
+Captures this window. This API uses an asynchronous callback to return the result. If privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-1)), taking a screenshot will result in a blank screen.
 
 **Since:** 9
 
@@ -8595,7 +8848,7 @@ Captures this window. This API uses an asynchronous callback to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -8603,13 +8856,14 @@ Captures this window. This API uses an asynchronous callback to return the resul
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Get pixelMap failed;3. Internal task error. |
 
+<a id="snapshot-1"></a>
 ## snapshot
 
 ```TypeScript
 snapshot(): Promise<image.PixelMap>
 ```
 
-Captures this window. If privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-2)), taking a screenshot will result in a blank screen.
+Captures this window. If privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-1)), taking a screenshot will result in a blank screen.
 
 **Since:** 9
 
@@ -8623,7 +8877,7 @@ Captures this window. If privacy mode is enabled for the current window (using [
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the window screenshot. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the window screenshot. |
 
 **Error codes:**
 
@@ -8631,13 +8885,14 @@ Captures this window. If privacy mode is enabled for the current window (using [
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Get pixelMap failed;3. Internal task error. |
 
+<a id="snapshotignoreprivacy"></a>
 ## snapshotIgnorePrivacy
 
 ```TypeScript
 snapshotIgnorePrivacy(): Promise<image.PixelMap>
 ```
 
-Captures this window. This API can be called to obtain the screenshot of the current window even if privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-2)).
+Captures this window. This API can be called to obtain the screenshot of the current window even if privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-1)).
 
 **Since:** 18
 
@@ -8651,7 +8906,7 @@ Captures this window. This API can be called to obtain the screenshot of the cur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the window screenshot. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the window screenshot. |
 
 **Error codes:**
 
@@ -8660,13 +8915,14 @@ Captures this window. This API can be called to obtain the screenshot of the cur
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Function snapshotIgnorePrivacy can not work correctly due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Create pixelMap failed;3. Internal task error. |
 
+<a id="snapshotsync"></a>
 ## snapshotSync
 
 ```TypeScript
 snapshotSync(): image.PixelMap
 ```
 
-Captures this window. This API returns the result synchronously. If privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-2)), taking a screenshot will result in a blank screen.
+Captures this window. This API returns the result synchronously. If privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-1)), taking a screenshot will result in a blank screen.
 
 In the stage model, this API must be used after the call of [loadContent](arkts-arkui-window-window-i.md#loadcontent-1)or [setUIContent()](arkts-arkui-window-window-i.md#setuicontent-1) takes effect.
 
@@ -8690,17 +8946,18 @@ In the stage model, this API must be used after the call of [loadContent](arkts-
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Create pixelMap failed. |
 | [1300018](../errorcode-window.md#1300018-api-call-timeout) | Timeout. |
 
+<a id="startmoving"></a>
 ## startMoving
 
 ```TypeScript
 startMoving(): Promise<void>
 ```
 
-In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode, this API takes effect for system windows, application main windows, application child windows, global floating windows, and modal windows. In non-freeform window mode, this API takes effect only for system windows, application child windows,global floating windows, and modal windows. Starts moving this window. This API uses a promise to return the result.
+In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode, this API takes effect for system windows, application main windows, application child windows, global floating windows, and modal windows. In non-freeform window mode, this API takes effect only for system windows, application child windows,global floating windows, and modal windows. Starts moving this window. This API uses a promise to return the result.
 
 The window moves along with the cursor or touch point only when this API is called in the callback function of [onTouch](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-touchevent-touchevent-i.md), where the event type is **TouchType.Down**.
 
-In click-and-drag scenarios, if you do not want the drag to start as soon as you press down, you can call this API when the event type is [TouchType.Move](arkts-arkui-enums-touchtype-e.md) (as long as **TouchType.Down** has already been triggered) to start the moving effect.
+In click-and-drag scenarios, if you do not want the drag to start as soon as you press down, you can call this API when the event type is [TouchType.Move](arkts-arkui-touchtype-e.md) (as long as **TouchType.Down** has already been triggered) to start the moving effect.
 
 **Since:** 14
 
@@ -8714,7 +8971,7 @@ In click-and-drag scenarios, if you do not want the drag to start as soon as you
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8726,6 +8983,7 @@ In click-and-drag scenarios, if you do not want the drag to start as soon as you
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. Possible cause:Invalid window type, main windows are not supported in non-free window mode. |
 
+<a id="startmoving-1"></a>
 ## startMoving
 
 ```TypeScript
@@ -8738,7 +8996,7 @@ When windows within the same application are split or merged, and the mouse is p
 
 The window moves along with the cursor only when this API is called in the callback function of [onTouch](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-touchevent-touchevent-i.md), where the event type is **TouchType.Down**.
 
-In click-and-drag scenarios, if you do not want the drag to start as soon as you press down, you can call this API when the event type is [TouchType.Move](arkts-arkui-enums-touchtype-e.md) (as long as **TouchType.Down** has already been triggered) to start the moving effect.
+In click-and-drag scenarios, if you do not want the drag to start as soon as you press down, you can call this API when the event type is [TouchType.Move](arkts-arkui-touchtype-e.md) (as long as **TouchType.Down** has already been triggered) to start the moving effect.
 
 **Since:** 15
 
@@ -8759,7 +9017,7 @@ In click-and-drag scenarios, if you do not want the drag to start as soon as you
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -8772,6 +9030,7 @@ In click-and-drag scenarios, if you do not want the drag to start as soon as you
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="stopmoving"></a>
 ## stopMoving
 
 ```TypeScript
@@ -8792,7 +9051,7 @@ Stops window movement when a window is being dragged. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

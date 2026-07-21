@@ -1,5 +1,6 @@
 # setAppBgColor (System API)
 
+<a id="setappbgcolor"></a>
 ## setAppBgColor
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="off"></a>
 ## off('interfaceStateChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Unregister a callback from the ethernet interface active state change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'interfaceStateChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<InterfaceStateInfo> | No | Including iface Indicates the ethernet interface,and active Indicates whether the interface is active. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;InterfaceStateInfo&gt; | No | Including iface Indicates the ethernet interface,and active Indicates whether the interface is active. |
 
 **Error codes:**
 

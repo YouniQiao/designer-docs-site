@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface WeakSetConstructor--><!--Device-unnamed-interface WeakSetConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -20,7 +21,7 @@ new <T extends object = object>(values?: readonly T[] | null): WeakSet<T>
 
 | Type | Description |
 | --- | --- |
-| [WeakSet](arkts-na-lib-es2015-collection-weakset-i.md)<T> |  |
+| WeakSet&lt;T&gt; |  |
 
 ## prototype
 
@@ -28,7 +29,7 @@ new <T extends object = object>(values?: readonly T[] | null): WeakSet<T>
 readonly prototype: WeakSet<object>
 ```
 
-**Type:** WeakSet<object>
+**Type:** WeakSet&lt;object&gt;
 
 <!--Device-WeakSetConstructor-readonly prototype: WeakSet<object>--><!--Device-WeakSetConstructor-readonly prototype: WeakSet<object>-End-->
 

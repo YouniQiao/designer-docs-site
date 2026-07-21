@@ -25,6 +25,7 @@ This module provides tools for processing rectangles.Use scenarios:
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="centerx"></a>
 ## centerX
 
 ```TypeScript
@@ -51,6 +52,7 @@ Obtains the X coordinate of the rectangle center.
 | --- | --- |
 | number | X coordinate of the rectangle center. |
 
+<a id="centery"></a>
 ## centerY
 
 ```TypeScript
@@ -77,6 +79,7 @@ Obtains the Y coordinate of the rectangle center.
 | --- | --- |
 | number | Y coordinate of the rectangle center. |
 
+<a id="contains"></a>
 ## contains
 
 ```TypeScript
@@ -104,6 +107,7 @@ Checks whether a rectangle completely contains another rectangle.
 | --- | --- |
 | boolean | Whether a rectangle completely contains another rectangle. **true** means yes; **false** otherwise. An empty rectangle does not contain any other rectangle. |
 
+<a id="contains-1"></a>
 ## contains
 
 ```TypeScript
@@ -134,6 +138,7 @@ Checks whether a rectangle completely contains another rectangle (which is marke
 | --- | --- |
 | boolean | Whether a rectangle completely contains another rectangle defined by the coordinates of its upper left and lower right corners. **true** means yes; **false** otherwise. An empty rectangle does not contain any other rectangle. |
 
+<a id="contains-2"></a>
 ## contains
 
 ```TypeScript
@@ -162,6 +167,7 @@ Checks whether a rectangle completely contains a specified point.
 | --- | --- |
 | boolean | Whether the rectangle completely contains the point **(x, y)**. **true** means yes;**false** otherwise. An empty rectangle does not contain any point. |
 
+<a id="getheight"></a>
 ## getHeight
 
 ```TypeScript
@@ -188,6 +194,7 @@ Obtains the height of a rectangle.
 | --- | --- |
 | number | Height of the rectangle. If the top boundary is greater than the bottom, the height is negative. If the top boundary is less than the bottom, the height is positive. |
 
+<a id="getwidth"></a>
 ## getWidth
 
 ```TypeScript
@@ -214,6 +221,7 @@ Obtains the width of a rectangle.
 | --- | --- |
 | number | Width of a rectangle. If the left boundary is greater than the right, the width is negative.If the left boundary is less than the right, the width is positive. |
 
+<a id="inset"></a>
 ## inset
 
 ```TypeScript
@@ -238,6 +246,7 @@ Adds the input left, top, right, and bottom values to the left, top, right, and 
 | right | number | Yes | Value to be added to the right boundary of the rectangle (X coordinate of the lower right corner of the rectangle). The value is a floating point number. **0** indicates that no operation is performed. A positive number indicates addition, and a negative number indicates subtraction. |
 | bottom | number | Yes | Value to be added to the bottom boundary of the rectangle (Y coordinate of the lower right corner of the rectangle). The value is a floating point number. **0** indicates that no operation is performed. A positive number indicates addition, and a negative number indicates subtraction. |
 
+<a id="intersect"></a>
 ## intersect
 
 ```TypeScript
@@ -265,6 +274,7 @@ Calculates the intersection of two rectangles and updates the intersection resul
 | --- | --- |
 | boolean | Whether two rectangles have an intersection. **true** means yes; **false** otherwise. |
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -291,6 +301,7 @@ Checks whether a rectangle is empty (the left boundary is greater than or equal 
 | --- | --- |
 | boolean | Whether the rectangle is empty. **true** means yes; **false** otherwise. |
 
+<a id="isequal"></a>
 ## isEqual
 
 ```TypeScript
@@ -318,6 +329,7 @@ Checks whether two rectangles are equal.
 | --- | --- |
 | boolean | Whether two rectangles are equal. **true** means yes; **false** otherwise. |
 
+<a id="isintersect"></a>
 ## isIntersect
 
 ```TypeScript
@@ -345,6 +357,7 @@ Checks whether two rectangles intersect.
 | --- | --- |
 | boolean | Whether two rectangles have an intersection. **true** means yes; **false** otherwise. If the two rectangles only overlap on the edge or intersect at a point, **false** is returned. |
 
+<a id="makecopy"></a>
 ## makeCopy
 
 ```TypeScript
@@ -371,6 +384,7 @@ Copies a rectangle.
 | --- | --- |
 | common2D.Rect | Created rectangle. |
 
+<a id="makeempty"></a>
 ## makeEmpty
 
 ```TypeScript
@@ -391,6 +405,7 @@ Creates a rectangle with the top, bottom, left, and right boundary coordinates a
 | --- | --- |
 | common2D.Rect | Created rectangle object. |
 
+<a id="makeltrb"></a>
 ## makeLtrb
 
 ```TypeScript
@@ -420,6 +435,7 @@ Creates a rectangle with specified top, bottom, left, and right boundaries.
 | --- | --- |
 | common2D.Rect | Created rectangle. |
 
+<a id="offset"></a>
 ## offset
 
 ```TypeScript
@@ -442,6 +458,7 @@ Translates a rectangle.
 | dx | number | Yes | Horizontal translation distance. The value is a floating point number. **0** indicates no translation. A negative value indicates translation to the left, and a positive value indicates translation to the right. |
 | dy | number | Yes | Vertical translation distance. The value is a floating point number. **0** indicates no translation. A negative value indicates translation upwards, and a positive value indicates translation downwards. |
 
+<a id="offsetto"></a>
 ## offsetTo
 
 ```TypeScript
@@ -464,6 +481,7 @@ Translates a rectangle to a specified position.
 | newLeft | number | Yes | X coordinate of the position to which the rectangle is translated. The value is a floating point number. **0** indicates the coordinate origin. A positive value places the point to the right of the coordinate origin, while a negative value places the point to the left. |
 | newTop | number | Yes | Y coordinate of the position to which the rectangle is translated. The value is a floating point number. **0** indicates the coordinate origin. A positive value places the point below the coordinate origin, while a negative value places the point above the coordinate origin. |
 
+<a id="setempty"></a>
 ## setEmpty
 
 ```TypeScript
@@ -484,6 +502,7 @@ Sets the left, right, top, and bottom boundaries of the rectangle to **0**.
 | --- | --- | --- | --- |
 | rect | common2D.Rect | Yes | Empty rectangle object. |
 
+<a id="setltrb"></a>
 ## setLtrb
 
 ```TypeScript
@@ -508,6 +527,7 @@ Updates the top, bottom, left, and right boundary values of the existing rectang
 | right | number | Yes | X coordinate of the lower right corner of the rectangle. The value is a floating point number. **0** indicates the coordinate origin. A positive value places the point to the right of the coordinate origin, while a negative value places the point to the left. |
 | bottom | number | Yes | Y coordinate of the lower right corner of the rectangle. The value is a floating point number. **0** indicates the coordinate origin. A positive value places the point below the coordinate origin,while a negative value places the point above the coordinate origin. |
 
+<a id="setrect"></a>
 ## setRect
 
 ```TypeScript
@@ -529,6 +549,7 @@ Assigns the existing rectangle with another rectangle.
 | rect | common2D.Rect | Yes | Original rectangle. |
 | other | common2D.Rect | Yes | Another rectangle. |
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -549,6 +570,7 @@ If the rectangle is reversed (that is, the left boundary is greater than the rig
 | --- | --- | --- | --- |
 | rect | common2D.Rect | Yes | Rectangle object. |
 
+<a id="union"></a>
 ## union
 
 ```TypeScript

@@ -14,6 +14,7 @@ AVSession object.
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="activate"></a>
 ## activate
 
 ```TypeScript
@@ -32,7 +33,7 @@ Activate the session, indicating that the session can accept control commands
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the session is activated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the session is activated. |
 
 **Error codes:**
 
@@ -41,6 +42,7 @@ Activate the session, indicating that the session can accept control commands
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="activate-1"></a>
 ## activate
 
 ```TypeScript
@@ -61,7 +63,7 @@ Activate the session, indicating that the session can accept control commands
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void result promise when executed successfully |
+| Promise&lt;void&gt; | void result promise when executed successfully |
 
 **Error codes:**
 
@@ -70,6 +72,7 @@ Activate the session, indicating that the session can accept control commands
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="deactivate"></a>
 ## deactivate
 
 ```TypeScript
@@ -88,7 +91,7 @@ Deactivate the session, indicating that the session not ready to accept control 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the session is deactivated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the session is deactivated. |
 
 **Error codes:**
 
@@ -97,6 +100,7 @@ Deactivate the session, indicating that the session not ready to accept control 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="deactivate-1"></a>
 ## deactivate
 
 ```TypeScript
@@ -117,7 +121,7 @@ Deactivate the session, indicating that the session not ready to accept control 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -126,6 +130,7 @@ Deactivate the session, indicating that the session not ready to accept control 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -144,7 +149,7 @@ Destroy this session, the server will clean up the session resources
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -153,6 +158,7 @@ Destroy this session, the server will clean up the session resources
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="destroy-1"></a>
 ## destroy
 
 ```TypeScript
@@ -173,7 +179,7 @@ Destroy this session, the server will clean up the session resources
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -182,6 +188,7 @@ Destroy this session, the server will clean up the session resources
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="dispatchsessionevent"></a>
 ## dispatchSessionEvent
 
 ```TypeScript
@@ -202,7 +209,7 @@ Dispatch the session event of this session.
 | --- | --- | --- | --- |
 | event | string | Yes | Session event name to dispatch |
 | args | {[key: string]: Object} | Yes | The parameters of session event |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -212,6 +219,7 @@ Dispatch the session event of this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="dispatchsessionevent-1"></a>
 ## dispatchSessionEvent
 
 ```TypeScript
@@ -239,7 +247,7 @@ Dispatch the session event of this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -249,6 +257,7 @@ Dispatch the session event of this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="enabledesktoplyric"></a>
 ## enableDesktopLyric
 
 ```TypeScript
@@ -275,7 +284,7 @@ Enable desktop lyric for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -285,6 +294,7 @@ Enable desktop lyric for this session.
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="getavcastcontroller"></a>
 ## getAVCastController
 
 ```TypeScript
@@ -303,7 +313,7 @@ Get the cast controller when the session is casted to remote device.If the avses
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVCastController> | Yes | async callback for the AVCastController. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVCastController&gt; | Yes | async callback for the AVCastController. |
 
 **Error codes:**
 
@@ -312,6 +322,7 @@ Get the cast controller when the session is casted to remote device.If the avses
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist |
 | [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
 
+<a id="getavcastcontroller-1"></a>
 ## getAVCastController
 
 ```TypeScript
@@ -332,7 +343,7 @@ Get the cast controller when the session is casted to remote device.If the avses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVCastController> | Promise for the AVCastController |
+| Promise&lt;AVCastController&gt; | Promise for the AVCastController |
 
 **Error codes:**
 
@@ -341,6 +352,7 @@ Get the cast controller when the session is casted to remote device.If the avses
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist |
 | [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
 
+<a id="getallcastdisplays"></a>
 ## getAllCastDisplays
 
 ```TypeScript
@@ -361,7 +373,7 @@ Get all the current virtual display information for extended display.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<CastDisplayInfo>> | Promise for the CastDisplayInfo |
+| Promise&lt;Array&lt;CastDisplayInfo&gt;&gt; | Promise for the CastDisplayInfo |
 
 **Error codes:**
 
@@ -370,6 +382,7 @@ Get all the current virtual display information for extended display.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="getcontroller"></a>
 ## getController
 
 ```TypeScript
@@ -388,7 +401,7 @@ Get the current session's own controller
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVSessionController> | Yes | async callback for the AVSessionController. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVSessionController&gt; | Yes | async callback for the AVSessionController. |
 
 **Error codes:**
 
@@ -397,6 +410,7 @@ Get the current session's own controller
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="getcontroller-1"></a>
 ## getController
 
 ```TypeScript
@@ -417,7 +431,7 @@ Get the current session's own controller
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVSessionController> | Promise for the AVSessionController |
+| Promise&lt;AVSessionController&gt; | Promise for the AVSessionController |
 
 **Error codes:**
 
@@ -426,6 +440,7 @@ Get the current session's own controller
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="getdesktoplyricstate"></a>
 ## getDesktopLyricState
 
 ```TypeScript
@@ -446,7 +461,7 @@ Get desktop lyric state such as lock state for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DesktopLyricState> | void promise when executed successfully |
+| Promise&lt;DesktopLyricState&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -457,6 +472,7 @@ Get desktop lyric state such as lock state for this session.
 | [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="getoutputdevice"></a>
 ## getOutputDevice
 
 ```TypeScript
@@ -475,7 +491,7 @@ Get output device information
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<OutputDeviceInfo> | Yes | async callback for the OutputDeviceInfo. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;OutputDeviceInfo&gt; | Yes | async callback for the OutputDeviceInfo. |
 
 **Error codes:**
 
@@ -484,6 +500,7 @@ Get output device information
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="getoutputdevice-1"></a>
 ## getOutputDevice
 
 ```TypeScript
@@ -504,7 +521,7 @@ Get output device information
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OutputDeviceInfo> | Promise for the OutputDeviceInfo |
+| Promise&lt;OutputDeviceInfo&gt; | Promise for the OutputDeviceInfo |
 
 **Error codes:**
 
@@ -513,6 +530,7 @@ Get output device information
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="getoutputdevicesync"></a>
 ## getOutputDeviceSync
 
 ```TypeScript
@@ -542,6 +560,7 @@ Get output device information
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="isdesktoplyricvisible"></a>
 ## isDesktopLyricVisible
 
 ```TypeScript
@@ -562,7 +581,7 @@ Query desktop lyric visible state for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | return desktop lyric visible state |
+| Promise&lt;boolean&gt; | return desktop lyric visible state |
 
 **Error codes:**
 
@@ -573,6 +592,7 @@ Query desktop lyric visible state for this session.
 | [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="off"></a>
 ## off('play')
 
 ```TypeScript
@@ -594,7 +614,7 @@ Unregister play command callback.When canceling the callback, need to update the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'play' | Yes | Command to register 'play'. |
-| callback | () => void | No | Used to handle ('play') command |
+| callback | () =&gt; void | No | Used to handle ('play') command |
 
 **Error codes:**
 
@@ -604,6 +624,7 @@ Unregister play command callback.When canceling the callback, need to update the
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-1"></a>
 ## off('pause')
 
 ```TypeScript
@@ -625,7 +646,7 @@ Unregister pause command callback.When canceling the callback, need to update th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'pause' | Yes | Command to register 'pause'. |
-| callback | () => void | No | Used to handle ('pause') command |
+| callback | () =&gt; void | No | Used to handle ('pause') command |
 
 **Error codes:**
 
@@ -635,6 +656,7 @@ Unregister pause command callback.When canceling the callback, need to update th
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-2"></a>
 ## off('stop')
 
 ```TypeScript
@@ -656,7 +678,7 @@ Unregister stop command callback.When canceling the callback, need to update the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stop' | Yes | Command to register 'stop'. |
-| callback | () => void | No | Used to handle ('stop') command |
+| callback | () =&gt; void | No | Used to handle ('stop') command |
 
 **Error codes:**
 
@@ -666,6 +688,7 @@ Unregister stop command callback.When canceling the callback, need to update the
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-3"></a>
 ## off('playNext')
 
 ```TypeScript
@@ -687,7 +710,7 @@ Unregister playNext command callback.When canceling the callback, need to update
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playNext' | Yes | Command to register 'playNext'. |
-| callback | () => void | No | Used to handle ('playNext') command |
+| callback | () =&gt; void | No | Used to handle ('playNext') command |
 
 **Error codes:**
 
@@ -697,6 +720,7 @@ Unregister playNext command callback.When canceling the callback, need to update
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-4"></a>
 ## off('playPrevious')
 
 ```TypeScript
@@ -718,7 +742,7 @@ Unregister playPrevious command callback.When canceling the callback, need to up
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playPrevious' | Yes | Command to register 'playPrevious'. |
-| callback | () => void | No | Used to handle ('playPrevious') command |
+| callback | () =&gt; void | No | Used to handle ('playPrevious') command |
 
 **Error codes:**
 
@@ -728,6 +752,7 @@ Unregister playPrevious command callback.When canceling the callback, need to up
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-5"></a>
 ## off('fastForward')
 
 ```TypeScript
@@ -749,7 +774,7 @@ Unregister fastForward command callback.When canceling the callback, need to upd
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'fastForward' | Yes | Command to register 'fastForward'. |
-| callback | () => void | No | Used to handle ('fastForward') command |
+| callback | () =&gt; void | No | Used to handle ('fastForward') command |
 
 **Error codes:**
 
@@ -759,6 +784,7 @@ Unregister fastForward command callback.When canceling the callback, need to upd
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-6"></a>
 ## off('rewind')
 
 ```TypeScript
@@ -780,7 +806,7 @@ Unregister rewind command callback.When canceling the callback, need to update t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rewind' | Yes | Command to register 'rewind'. |
-| callback | () => void | No | Used to handle ('rewind') command |
+| callback | () =&gt; void | No | Used to handle ('rewind') command |
 
 **Error codes:**
 
@@ -790,6 +816,7 @@ Unregister rewind command callback.When canceling the callback, need to update t
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-7"></a>
 ## off('playFromAssetId')
 
 ```TypeScript
@@ -815,7 +842,7 @@ Unregister playFromAssetId command callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playFromAssetId' | Yes | Command to register 'playFromAssetId'. |
-| callback | (assetId: number) => void | No | Used to handle ('playFromAssetId') command |
+| callback | (assetId: number) =&gt; void | No | Used to handle ('playFromAssetId') command |
 
 **Error codes:**
 
@@ -825,6 +852,7 @@ Unregister playFromAssetId command callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-8"></a>
 ## off('playWithAssetId')
 
 ```TypeScript
@@ -846,7 +874,7 @@ Unsubscribes from playWithAssetId events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playWithAssetId' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Callback used to handle the 'playWithAssetId' command. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Callback used to handle the 'playWithAssetId' command. |
 
 **Error codes:**
 
@@ -855,6 +883,7 @@ Unsubscribes from playWithAssetId events.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-9"></a>
 ## off('seek')
 
 ```TypeScript
@@ -876,7 +905,7 @@ Unregister seek command callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'seek' | Yes | Registration Type 'seek' |
-| callback | (time: number) => void | No | Used to handle seek command.The callback provides the seek time(ms) |
+| callback | (time: number) =&gt; void | No | Used to handle seek command.The callback provides the seek time(ms) |
 
 **Error codes:**
 
@@ -886,6 +915,7 @@ Unregister seek command callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-10"></a>
 ## off('setSpeed')
 
 ```TypeScript
@@ -907,7 +937,7 @@ Unregister setSpeed command callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setSpeed' | Yes | Registration Type 'setSpeed' |
-| callback | (speed: number) => void | No | Used to handle setSpeed command.The callback provides the speed value |
+| callback | (speed: number) =&gt; void | No | Used to handle setSpeed command.The callback provides the speed value |
 
 **Error codes:**
 
@@ -917,6 +947,7 @@ Unregister setSpeed command callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-11"></a>
 ## off('setLoopMode')
 
 ```TypeScript
@@ -938,7 +969,7 @@ Unregister setLoopMode command callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setLoopMode' | Yes | Registration Type 'setLoopMode' |
-| callback | (mode: LoopMode) => void | No | Used to handle setLoopMode command.The callback provides the {@link LoopMode} |
+| callback | (mode: LoopMode) =&gt; void | No | Used to handle setLoopMode command.The callback provides the {@link LoopMode} |
 
 **Error codes:**
 
@@ -948,6 +979,7 @@ Unregister setLoopMode command callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-12"></a>
 ## off('setTargetLoopMode')
 
 ```TypeScript
@@ -969,7 +1001,7 @@ Unregister setTargetLoopMode command callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setTargetLoopMode' | Yes | Registration Type 'setTargetLoopMode' |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LoopMode> | No | Used to handle setTargetLoopMode command.The callback provides the {@link LoopMode} |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LoopMode&gt; | No | Used to handle setTargetLoopMode command.The callback provides the {@link LoopMode} |
 
 **Error codes:**
 
@@ -978,6 +1010,7 @@ Unregister setTargetLoopMode command callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-13"></a>
 ## off('toggleFavorite')
 
 ```TypeScript
@@ -999,7 +1032,7 @@ Unregister toggle favorite command callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'toggleFavorite' | Yes | Registration Type 'toggleFavorite' |
-| callback | (assetId: string) => void | No | Used to handle toggleFavorite command.The callback provides the assetId for which the favorite status needs to be switched. |
+| callback | (assetId: string) =&gt; void | No | Used to handle toggleFavorite command.The callback provides the assetId for which the favorite status needs to be switched. |
 
 **Error codes:**
 
@@ -1009,6 +1042,7 @@ Unregister toggle favorite command callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-14"></a>
 ## off('handleKeyEvent')
 
 ```TypeScript
@@ -1030,7 +1064,7 @@ Unregister media key handling callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'handleKeyEvent' | Yes | Registration Type 'handleKeyEvent' |
-| callback | (event: KeyEvent) => void | No | Used to handle key events.The callback provides the KeyEvent |
+| callback | (event: KeyEvent) =&gt; void | No | Used to handle key events.The callback provides the KeyEvent |
 
 **Error codes:**
 
@@ -1040,6 +1074,7 @@ Unregister media key handling callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-15"></a>
 ## off('outputDeviceChange')
 
 ```TypeScript
@@ -1061,7 +1096,7 @@ Unregister session output device change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'outputDeviceChange' | Yes | Registration Type 'outputDeviceChange' |
-| callback | (state: ConnectionState, device: OutputDeviceInfo) => void | No | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link ConnectionState}. |
+| callback | (state: ConnectionState, device: OutputDeviceInfo) =&gt; void | No | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link ConnectionState}. |
 
 **Error codes:**
 
@@ -1071,6 +1106,7 @@ Unregister session output device change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist |
 
+<a id="off-16"></a>
 ## off('commonCommand')
 
 ```TypeScript
@@ -1092,7 +1128,7 @@ Unregister session custom command change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'commonCommand' | Yes | Registration Type 'commonCommand' |
-| callback | (command: string, args: {[key: string]: Object}) => void | No | Used to cancel a specific listener The callback provide the command name and command args |
+| callback | (command: string, args: {[key: string]: Object}) =&gt; void | No | Used to cancel a specific listener The callback provide the command name and command args |
 
 **Error codes:**
 
@@ -1102,6 +1138,7 @@ Unregister session custom command change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-17"></a>
 ## off('skipToQueueItem')
 
 ```TypeScript
@@ -1123,7 +1160,7 @@ Unregister the item to play from the playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'skipToQueueItem' | Yes | Registration Type 'skipToQueueItem' |
-| callback | (itemId: number) => void | No | Used to handle the item to be played.The callback provide the new device info {@link OutputDeviceInfo} |
+| callback | (itemId: number) =&gt; void | No | Used to handle the item to be played.The callback provide the new device info {@link OutputDeviceInfo} |
 
 **Error codes:**
 
@@ -1133,6 +1170,7 @@ Unregister the item to play from the playlist change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-18"></a>
 ## off('answer')
 
 ```TypeScript
@@ -1154,7 +1192,7 @@ Unregister answer command callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'answer' | Yes | Command to register 'answer'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Used to handle ('answer') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Used to handle ('answer') command |
 
 **Error codes:**
 
@@ -1164,6 +1202,7 @@ Unregister answer command callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-19"></a>
 ## off('hangUp')
 
 ```TypeScript
@@ -1185,7 +1224,7 @@ Unregister hangUp command callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hangUp' | Yes | Command to register 'hangUp'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Used to handle ('hangUp') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Used to handle ('hangUp') command |
 
 **Error codes:**
 
@@ -1195,6 +1234,7 @@ Unregister hangUp command callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-20"></a>
 ## off('toggleCallMute')
 
 ```TypeScript
@@ -1216,7 +1256,7 @@ Unregister toggleCallMute command callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'toggleCallMute' | Yes | Command to register 'toggleCallMute'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Used to handle ('toggleCallMute') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Used to handle ('toggleCallMute') command |
 
 **Error codes:**
 
@@ -1226,6 +1266,7 @@ Unregister toggleCallMute command callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="off-21"></a>
 ## off('castDisplayChange')
 
 ```TypeScript
@@ -1247,7 +1288,7 @@ Unregister listener for cast display information changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'castDisplayChange' | Yes | Type of the 'castDisplayChange' to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CastDisplayInfo> | No | Callback used to return cast display information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CastDisplayInfo&gt; | No | Callback used to return cast display information. |
 
 **Error codes:**
 
@@ -1257,6 +1298,7 @@ Unregister listener for cast display information changed.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist |
 
+<a id="off-22"></a>
 ## off('customDataChange')
 
 ```TypeScript
@@ -1278,7 +1320,7 @@ Unsubscribes from custom data changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'customDataChange' | Yes | Custom data type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Record<string, Object>> | No | Callback used to return the custom data. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Record&lt;string, Object&gt;&gt; | No | Callback used to return the custom data. |
 
 **Error codes:**
 
@@ -1287,6 +1329,7 @@ Unsubscribes from custom data changes.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="offdesktoplyricstatechanged"></a>
 ## offDesktopLyricStateChanged
 
 ```TypeScript
@@ -1307,7 +1350,7 @@ Unregister desktop lyric state changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DesktopLyricState> | No | a callback to receive desktop lyric state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DesktopLyricState&gt; | No | a callback to receive desktop lyric state. |
 
 **Error codes:**
 
@@ -1316,6 +1359,7 @@ Unregister desktop lyric state changed callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="offdesktoplyricvisibilitychanged"></a>
 ## offDesktopLyricVisibilityChanged
 
 ```TypeScript
@@ -1336,7 +1380,7 @@ Unregister desktop lyric visible state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | a callback to receive desktop lyric window visible state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | a callback to receive desktop lyric window visible state. |
 
 **Error codes:**
 
@@ -1345,6 +1389,7 @@ Unregister desktop lyric visible state change callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="offfastforward"></a>
 ## offFastForward
 
 ```TypeScript
@@ -1363,7 +1408,7 @@ Unregister fastForward command callback.When canceling the callback, need to upd
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [TwoParamCallback](arkts-avsession-avsession-twoparamcallback-t.md)<number, CommandInfo> | No | Used to handle ('fastForward') command |
+| callback | [TwoParamCallback](arkts-avsession-avsession-twoparamcallback-t.md)&lt;number, CommandInfo&gt; | No | Used to handle ('fastForward') command |
 
 **Error codes:**
 
@@ -1372,6 +1417,7 @@ Unregister fastForward command callback.When canceling the callback, need to upd
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="offplay"></a>
 ## offPlay
 
 ```TypeScript
@@ -1390,7 +1436,7 @@ Unregister play command callback.When canceling the callback, need to update the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CommandInfo> | No | Used to handle ('play') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CommandInfo&gt; | No | Used to handle ('play') command |
 
 **Error codes:**
 
@@ -1399,6 +1445,7 @@ Unregister play command callback.When canceling the callback, need to update the
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="offplaynext"></a>
 ## offPlayNext
 
 ```TypeScript
@@ -1417,7 +1464,7 @@ Unregister playNext command callback.When canceling the callback, need to update
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CommandInfo> | No | Used to handle ('playNext') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CommandInfo&gt; | No | Used to handle ('playNext') command |
 
 **Error codes:**
 
@@ -1426,6 +1473,7 @@ Unregister playNext command callback.When canceling the callback, need to update
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="offplayprevious"></a>
 ## offPlayPrevious
 
 ```TypeScript
@@ -1444,7 +1492,7 @@ Unregister playPrevious command callback.When canceling the callback, need to up
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CommandInfo> | No | Used to handle ('playPrevious') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CommandInfo&gt; | No | Used to handle ('playPrevious') command |
 
 **Error codes:**
 
@@ -1453,6 +1501,7 @@ Unregister playPrevious command callback.When canceling the callback, need to up
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="offrewind"></a>
 ## offRewind
 
 ```TypeScript
@@ -1471,7 +1520,7 @@ Unregister rewind command callback.When canceling the callback, need to update t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [TwoParamCallback](arkts-avsession-avsession-twoparamcallback-t.md)<number, CommandInfo> | No | Used to handle ('rewind') command |
+| callback | [TwoParamCallback](arkts-avsession-avsession-twoparamcallback-t.md)&lt;number, CommandInfo&gt; | No | Used to handle ('rewind') command |
 
 **Error codes:**
 
@@ -1480,6 +1529,7 @@ Unregister rewind command callback.When canceling the callback, need to update t
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on"></a>
 ## on('play')
 
 ```TypeScript
@@ -1501,7 +1551,7 @@ Register play command callback.As long as it is registered, it means that the ab
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'play' | Yes | Command to register 'play'. |
-| callback | () => void | Yes | Used to handle ('play') command |
+| callback | () =&gt; void | Yes | Used to handle ('play') command |
 
 **Error codes:**
 
@@ -1511,6 +1561,7 @@ Register play command callback.As long as it is registered, it means that the ab
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-1"></a>
 ## on('pause')
 
 ```TypeScript
@@ -1532,7 +1583,7 @@ Register pause command callback.As long as it is registered, it means that the a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'pause' | Yes | Command to register 'pause'. |
-| callback | () => void | Yes | Used to handle ('pause') command |
+| callback | () =&gt; void | Yes | Used to handle ('pause') command |
 
 **Error codes:**
 
@@ -1542,6 +1593,7 @@ Register pause command callback.As long as it is registered, it means that the a
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-2"></a>
 ## on('stop')
 
 ```TypeScript
@@ -1563,7 +1615,7 @@ Register stop command callback.As long as it is registered, it means that the ab
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stop' | Yes | Command to register 'stop'. |
-| callback | () => void | Yes | Used to handle ('stop') command |
+| callback | () =&gt; void | Yes | Used to handle ('stop') command |
 
 **Error codes:**
 
@@ -1573,6 +1625,7 @@ Register stop command callback.As long as it is registered, it means that the ab
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-3"></a>
 ## on('playNext')
 
 ```TypeScript
@@ -1594,7 +1647,7 @@ Register playNext command callback.As long as it is registered, it means that th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playNext' | Yes | Command to register 'playNext'. |
-| callback | () => void | Yes | Used to handle ('playNext') command |
+| callback | () =&gt; void | Yes | Used to handle ('playNext') command |
 
 **Error codes:**
 
@@ -1604,6 +1657,7 @@ Register playNext command callback.As long as it is registered, it means that th
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-4"></a>
 ## on('playPrevious')
 
 ```TypeScript
@@ -1625,7 +1679,7 @@ Register playPrevious command callback.As long as it is registered, it means tha
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playPrevious' | Yes | Command to register 'playPrevious'. |
-| callback | () => void | Yes | Used to handle ('playPrevious') command |
+| callback | () =&gt; void | Yes | Used to handle ('playPrevious') command |
 
 **Error codes:**
 
@@ -1635,6 +1689,7 @@ Register playPrevious command callback.As long as it is registered, it means tha
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-5"></a>
 ## on('fastForward')
 
 ```TypeScript
@@ -1656,7 +1711,7 @@ Register fastForward command callback.As long as it is registered, it means that
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'fastForward' | Yes | Command to register 'fastForward'. |
-| callback | (time ?: number) => void | Yes | Used to handle ('fastForward') command, described by milliseconds. |
+| callback | (time ?: number) =&gt; void | Yes | Used to handle ('fastForward') command, described by milliseconds. |
 
 **Error codes:**
 
@@ -1666,6 +1721,7 @@ Register fastForward command callback.As long as it is registered, it means that
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-6"></a>
 ## on('rewind')
 
 ```TypeScript
@@ -1687,7 +1743,7 @@ Register rewind command callback.As long as it is registered, it means that the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rewind' | Yes | Command to register 'rewind'. |
-| callback | (time ?: number) => void | Yes | Used to handle ('rewind') command, described by milliseconds. |
+| callback | (time ?: number) =&gt; void | Yes | Used to handle ('rewind') command, described by milliseconds. |
 
 **Error codes:**
 
@@ -1697,6 +1753,7 @@ Register rewind command callback.As long as it is registered, it means that the 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-7"></a>
 ## on('playFromAssetId')
 
 ```TypeScript
@@ -1722,7 +1779,7 @@ Register playFromAssetId command callback.As long as it is registered, it means 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playFromAssetId' | Yes | Command to register 'playFromAssetId'. |
-| callback | (assetId: number) => void | Yes | Used to handle ('playFromAssetId') command |
+| callback | (assetId: number) =&gt; void | Yes | Used to handle ('playFromAssetId') command |
 
 **Error codes:**
 
@@ -1732,6 +1789,7 @@ Register playFromAssetId command callback.As long as it is registered, it means 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-8"></a>
 ## on('playWithAssetId')
 
 ```TypeScript
@@ -1753,7 +1811,7 @@ Subscribes to playWithAssetId events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playWithAssetId' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | Callback used to handle the 'playWithAssetId' command. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Callback used to handle the 'playWithAssetId' command. |
 
 **Error codes:**
 
@@ -1762,6 +1820,7 @@ Subscribes to playWithAssetId events.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-9"></a>
 ## on('seek')
 
 ```TypeScript
@@ -1783,7 +1842,7 @@ Register seek command callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'seek' | Yes | Registration Type 'seek' |
-| callback | (time: number) => void | Yes | Used to handle seek command.The callback provides the seek time(ms) |
+| callback | (time: number) =&gt; void | Yes | Used to handle seek command.The callback provides the seek time(ms) |
 
 **Error codes:**
 
@@ -1793,6 +1852,7 @@ Register seek command callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-10"></a>
 ## on('setSpeed')
 
 ```TypeScript
@@ -1814,7 +1874,7 @@ Register setSpeed command callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setSpeed' | Yes | Registration Type 'setSpeed' |
-| callback | (speed: number) => void | Yes | Used to handle setSpeed command.The callback provides the speed value |
+| callback | (speed: number) =&gt; void | Yes | Used to handle setSpeed command.The callback provides the speed value |
 
 **Error codes:**
 
@@ -1824,6 +1884,7 @@ Register setSpeed command callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-11"></a>
 ## on('setLoopMode')
 
 ```TypeScript
@@ -1845,7 +1906,7 @@ Register setLoopMode command callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setLoopMode' | Yes | Registration Type 'setLoopMode' |
-| callback | (mode: LoopMode) => void | Yes | Used to handle setLoopMode command.The callback provides the {@link LoopMode} |
+| callback | (mode: LoopMode) =&gt; void | Yes | Used to handle setLoopMode command.The callback provides the {@link LoopMode} |
 
 **Error codes:**
 
@@ -1855,6 +1916,7 @@ Register setLoopMode command callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-12"></a>
 ## on('setTargetLoopMode')
 
 ```TypeScript
@@ -1876,7 +1938,7 @@ Register setTargetLoopMode command callback Application should change playmode t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setTargetLoopMode' | Yes | Registration Type 'setTargetLoopMode' |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LoopMode> | Yes | Used to handle setTargetLoopMode command.The callback provides the {@link LoopMode} |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LoopMode&gt; | Yes | Used to handle setTargetLoopMode command.The callback provides the {@link LoopMode} |
 
 **Error codes:**
 
@@ -1885,6 +1947,7 @@ Register setTargetLoopMode command callback Application should change playmode t
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-13"></a>
 ## on('toggleFavorite')
 
 ```TypeScript
@@ -1906,7 +1969,7 @@ Register toggle favorite command callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'toggleFavorite' | Yes | Registration Type 'toggleFavorite' |
-| callback | (assetId: string) => void | Yes | Used to handle toggleFavorite command.The callback provides the assetId for which the favorite status needs to be switched. |
+| callback | (assetId: string) =&gt; void | Yes | Used to handle toggleFavorite command.The callback provides the assetId for which the favorite status needs to be switched. |
 
 **Error codes:**
 
@@ -1916,6 +1979,7 @@ Register toggle favorite command callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-14"></a>
 ## on('handleKeyEvent')
 
 ```TypeScript
@@ -1937,7 +2001,7 @@ Register media key handling callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'handleKeyEvent' | Yes | Registration Type 'handleKeyEvent' |
-| callback | (event: KeyEvent) => void | Yes | Used to handle key events.The callback provides the KeyEvent |
+| callback | (event: KeyEvent) =&gt; void | Yes | Used to handle key events.The callback provides the KeyEvent |
 
 **Error codes:**
 
@@ -1947,6 +2011,7 @@ Register media key handling callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-15"></a>
 ## on('outputDeviceChange')
 
 ```TypeScript
@@ -1968,7 +2033,7 @@ Register session output device change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'outputDeviceChange' | Yes | Registration Type 'outputDeviceChange' |
-| callback | (state: ConnectionState, device: OutputDeviceInfo) => void | Yes | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link ConnectionState}. |
+| callback | (state: ConnectionState, device: OutputDeviceInfo) =&gt; void | Yes | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link ConnectionState}. |
 
 **Error codes:**
 
@@ -1978,6 +2043,7 @@ Register session output device change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist |
 
+<a id="on-16"></a>
 ## on('commonCommand')
 
 ```TypeScript
@@ -1999,7 +2065,7 @@ Register session custom command change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'commonCommand' | Yes | Registration Type 'commonCommand' |
-| callback | (command: string, args: {[key: string]: Object}) => void | Yes | Used to handle event when the common command is received The callback provide the command name and command args |
+| callback | (command: string, args: {[key: string]: Object}) =&gt; void | Yes | Used to handle event when the common command is received The callback provide the command name and command args |
 
 **Error codes:**
 
@@ -2009,6 +2075,7 @@ Register session custom command change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-17"></a>
 ## on('skipToQueueItem')
 
 ```TypeScript
@@ -2030,7 +2097,7 @@ Register the item to play from the playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'skipToQueueItem' | Yes | Registration Type 'skipToQueueItem' |
-| callback | (itemId: number) => void | Yes | Used to handle the item to be played.The callback provide the new device info {@link OutputDeviceInfo} |
+| callback | (itemId: number) =&gt; void | Yes | Used to handle the item to be played.The callback provide the new device info {@link OutputDeviceInfo} |
 
 **Error codes:**
 
@@ -2040,6 +2107,7 @@ Register the item to play from the playlist change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-18"></a>
 ## on('answer')
 
 ```TypeScript
@@ -2061,7 +2129,7 @@ Register answer command callback.As long as it is registered, it means that the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'answer' | Yes | Command to register 'answer'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Used to handle ('answer') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Used to handle ('answer') command |
 
 **Error codes:**
 
@@ -2071,6 +2139,7 @@ Register answer command callback.As long as it is registered, it means that the 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-19"></a>
 ## on('hangUp')
 
 ```TypeScript
@@ -2092,7 +2161,7 @@ Register hangUp command callback.As long as it is registered, it means that the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hangUp' | Yes | Command to register 'hangUp'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Used to handle ('hangUp') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Used to handle ('hangUp') command |
 
 **Error codes:**
 
@@ -2102,6 +2171,7 @@ Register hangUp command callback.As long as it is registered, it means that the 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-20"></a>
 ## on('toggleCallMute')
 
 ```TypeScript
@@ -2123,7 +2193,7 @@ Register toggleCallMute command callback.As long as it is registered, it means t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'toggleCallMute' | Yes | Command to register 'toggleCallMute'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Used to handle ('toggleCallMute') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Used to handle ('toggleCallMute') command |
 
 **Error codes:**
 
@@ -2133,6 +2203,7 @@ Register toggleCallMute command callback.As long as it is registered, it means t
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="on-21"></a>
 ## on('castDisplayChange')
 
 ```TypeScript
@@ -2154,7 +2225,7 @@ Register listener for cast display information changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'castDisplayChange' | Yes | Type of the 'castDisplayChange' to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CastDisplayInfo> | Yes | Callback used to return cast display information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CastDisplayInfo&gt; | Yes | Callback used to return cast display information. |
 
 **Error codes:**
 
@@ -2164,6 +2235,7 @@ Register listener for cast display information changed.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist |
 
+<a id="on-22"></a>
 ## on('customDataChange')
 
 ```TypeScript
@@ -2185,7 +2257,7 @@ Register listener for custom data sent from remote device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'customDataChange' | Yes | Type of the 'customDataChange' to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Record<string, Object>> | Yes | Callback used to retrieve custom data. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Record&lt;string, Object&gt;&gt; | Yes | Callback used to retrieve custom data. |
 
 **Error codes:**
 
@@ -2194,6 +2266,7 @@ Register listener for custom data sent from remote device.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="ondesktoplyricstatechanged"></a>
 ## onDesktopLyricStateChanged
 
 ```TypeScript
@@ -2214,7 +2287,7 @@ Register desktop lyric state changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DesktopLyricState> | Yes | a callback to receive desktop lyric state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DesktopLyricState&gt; | Yes | a callback to receive desktop lyric state. |
 
 **Error codes:**
 
@@ -2223,6 +2296,7 @@ Register desktop lyric state changed callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="ondesktoplyricvisibilitychanged"></a>
 ## onDesktopLyricVisibilityChanged
 
 ```TypeScript
@@ -2243,7 +2317,7 @@ Register desktop lyric visible state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | a callback to receive desktop lyric window visible state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | a callback to receive desktop lyric window visible state. |
 
 **Error codes:**
 
@@ -2252,6 +2326,7 @@ Register desktop lyric visible state change callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="onfastforward"></a>
 ## onFastForward
 
 ```TypeScript
@@ -2270,7 +2345,7 @@ Register fastForward command callback.The application will receive forward time 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [TwoParamCallback](arkts-avsession-avsession-twoparamcallback-t.md)<number, CommandInfo> | Yes | Used to handle ('fastForward') command, described by milliseconds. |
+| callback | [TwoParamCallback](arkts-avsession-avsession-twoparamcallback-t.md)&lt;number, CommandInfo&gt; | Yes | Used to handle ('fastForward') command, described by milliseconds. |
 
 **Error codes:**
 
@@ -2279,6 +2354,7 @@ Register fastForward command callback.The application will receive forward time 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="onplay"></a>
 ## onPlay
 
 ```TypeScript
@@ -2297,7 +2373,7 @@ Register play command callback.The application will receive {@link CommandInfo} 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CommandInfo> | Yes | Used to handle ('play') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CommandInfo&gt; | Yes | Used to handle ('play') command |
 
 **Error codes:**
 
@@ -2306,6 +2382,7 @@ Register play command callback.The application will receive {@link CommandInfo} 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="onplaynext"></a>
 ## onPlayNext
 
 ```TypeScript
@@ -2324,7 +2401,7 @@ Register playNext command callback.The application will receive {@link CommandIn
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CommandInfo> | Yes | Used to handle ('playNext') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CommandInfo&gt; | Yes | Used to handle ('playNext') command |
 
 **Error codes:**
 
@@ -2333,6 +2410,7 @@ Register playNext command callback.The application will receive {@link CommandIn
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="onplayprevious"></a>
 ## onPlayPrevious
 
 ```TypeScript
@@ -2353,7 +2431,7 @@ Register playPrevious command callback.The application will receive {@link Comma
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CommandInfo> | Yes | Used to handle ('playPrevious') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CommandInfo&gt; | Yes | Used to handle ('playPrevious') command |
 
 **Error codes:**
 
@@ -2362,6 +2440,7 @@ Register playPrevious command callback.The application will receive {@link Comma
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="onrewind"></a>
 ## onRewind
 
 ```TypeScript
@@ -2380,7 +2459,7 @@ Register rewind command callback.The application will receive rewind time and {@
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [TwoParamCallback](arkts-avsession-avsession-twoparamcallback-t.md)<number, CommandInfo> | Yes | Used to handle ('rewind') command, described by milliseconds. |
+| callback | [TwoParamCallback](arkts-avsession-avsession-twoparamcallback-t.md)&lt;number, CommandInfo&gt; | Yes | Used to handle ('rewind') command, described by milliseconds. |
 
 **Error codes:**
 
@@ -2389,6 +2468,7 @@ Register rewind command callback.The application will receive rewind time and {@
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="sendcustomdata"></a>
 ## sendCustomData
 
 ```TypeScript
@@ -2409,13 +2489,13 @@ Sends custom data to a remote device.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Custom data populated by the application. |
+| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Custom data populated by the application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2424,6 +2504,7 @@ Sends custom data to a remote device.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception.You are advised to:1.Scheduled retry.2.Destroy the current session or session controller and re-create it. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavcallstate"></a>
 ## setAVCallState
 
 ```TypeScript
@@ -2443,7 +2524,7 @@ Set the call state of this session.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | state | [AVCallState](arkts-avsession-avsession-avcallstate-i.md) | Yes | {@link AVCallState} |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -2453,6 +2534,7 @@ Set the call state of this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavcallstate-1"></a>
 ## setAVCallState
 
 ```TypeScript
@@ -2477,7 +2559,7 @@ Set the call state of this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2487,6 +2569,7 @@ Set the call state of this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavmetadata"></a>
 ## setAVMetadata
 
 ```TypeScript
@@ -2506,7 +2589,7 @@ Set the metadata of this session.In addition to the required properties, users c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | [AVMetadata](arkts-avsession-avsession-avmetadata-i.md) | Yes | { |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -2516,6 +2599,7 @@ Set the metadata of this session.In addition to the required properties, users c
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavmetadata-1"></a>
 ## setAVMetadata
 
 ```TypeScript
@@ -2542,7 +2626,7 @@ Set the metadata of this session.In addition to the required properties, users c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2552,6 +2636,7 @@ Set the metadata of this session.In addition to the required properties, users c
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavplaybackstate"></a>
 ## setAVPlaybackState
 
 ```TypeScript
@@ -2571,7 +2656,7 @@ Set the playback state of this session.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | state | [AVPlaybackState](arkts-avsession-avsession-avplaybackstate-i.md) | Yes | { |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -2581,6 +2666,7 @@ Set the playback state of this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavplaybackstate-1"></a>
 ## setAVPlaybackState
 
 ```TypeScript
@@ -2607,7 +2693,7 @@ Set the playback state of this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2617,6 +2703,7 @@ Set the playback state of this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavqueueitems"></a>
 ## setAVQueueItems
 
 ```TypeScript
@@ -2635,8 +2722,8 @@ Set the playlist of queueItem. Identifies the content of the playlist presented 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| items | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AVQueueItem> | Yes | An array of the AVQueueItem |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully. |
+| items | Array&lt;AVQueueItem&gt; | Yes | An array of the AVQueueItem |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
@@ -2646,6 +2733,7 @@ Set the playlist of queueItem. Identifies the content of the playlist presented 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavqueueitems-1"></a>
 ## setAVQueueItems
 
 ```TypeScript
@@ -2666,13 +2754,13 @@ Set the playlist of queueItem. Identifies the content of the playlist presented 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| items | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AVQueueItem> | Yes | An array of the AVQueueItem |
+| items | Array&lt;AVQueueItem&gt; | Yes | An array of the AVQueueItem |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2682,6 +2770,7 @@ Set the playlist of queueItem. Identifies the content of the playlist presented 
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavqueuetitle"></a>
 ## setAVQueueTitle
 
 ```TypeScript
@@ -2701,7 +2790,7 @@ Set the name of the playlist presented by this session.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | title | string | Yes | The name of the playlist |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
@@ -2711,6 +2800,7 @@ Set the name of the playlist presented by this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setavqueuetitle-1"></a>
 ## setAVQueueTitle
 
 ```TypeScript
@@ -2737,7 +2827,7 @@ Set the name of the playlist presented by this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2747,6 +2837,7 @@ Set the name of the playlist presented by this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setbackgroundplaymode"></a>
 ## setBackgroundPlayMode
 
 ```TypeScript
@@ -2773,7 +2864,7 @@ Set the background playback mode.It is recommended that you associate it with th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully. |
+| Promise&lt;void&gt; | void promise when executed successfully. |
 
 **Error codes:**
 
@@ -2782,6 +2873,7 @@ Set the background playback mode.It is recommended that you associate it with th
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setcallmetadata"></a>
 ## setCallMetadata
 
 ```TypeScript
@@ -2801,7 +2893,7 @@ Set the metadata related with current call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | [CallMetadata](arkts-avsession-avsession-callmetadata-i.md) | Yes | {@link CallMetadata} |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -2811,6 +2903,7 @@ Set the metadata related with current call.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setcallmetadata-1"></a>
 ## setCallMetadata
 
 ```TypeScript
@@ -2835,7 +2928,7 @@ Set the metadata related with current call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2845,6 +2938,7 @@ Set the metadata related with current call.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setdesktoplyricstate"></a>
 ## setDesktopLyricState
 
 ```TypeScript
@@ -2871,7 +2965,7 @@ Set desktop lyric state such as lock state for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2882,6 +2976,7 @@ Set desktop lyric state such as lock state for this session.
 | [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="setdesktoplyricvisible"></a>
 ## setDesktopLyricVisible
 
 ```TypeScript
@@ -2908,7 +3003,7 @@ Set desktop lyric visible state for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2919,6 +3014,7 @@ Set desktop lyric visible state for this session.
 | [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="setextras"></a>
 ## setExtras
 
 ```TypeScript
@@ -2938,7 +3034,7 @@ Set the custom media packets for this session.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | extras | {[key: string]: Object} | Yes | The custom media packets |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
@@ -2948,6 +3044,7 @@ Set the custom media packets for this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setextras-1"></a>
 ## setExtras
 
 ```TypeScript
@@ -2974,7 +3071,7 @@ Set the custom media packets for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2984,6 +3081,7 @@ Set the custom media packets for this session.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setlaunchability"></a>
 ## setLaunchAbility
 
 ```TypeScript
@@ -3003,7 +3101,7 @@ Set the ability to start the session corresponding to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ability | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | The WantAgent for launch the ability |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -3013,6 +3111,7 @@ Set the ability to start the session corresponding to
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setlaunchability-1"></a>
 ## setLaunchAbility
 
 ```TypeScript
@@ -3039,7 +3138,7 @@ Set the ability to start the session corresponding to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -3049,6 +3148,7 @@ Set the ability to start the session corresponding to
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setmediacentercontroltype"></a>
 ## setMediaCenterControlType
 
 ```TypeScript
@@ -3069,13 +3169,13 @@ Set media control types that can be displayed on the media center.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AVMediaCenterControlType> | Yes | The control types that can be displayed on the media center.If the priority of control type is not set, the media center will display based on {@link AVSessionType}.The control type set must be registered by {@link on}, the media center prioritizes displaying the set control type. |
+| type | Array&lt;AVMediaCenterControlType&gt; | Yes | The control types that can be displayed on the media center.If the priority of control type is not set, the media center will display based on {@link AVSessionType}.The control type set must be registered by {@link on}, the media center prioritizes displaying the set control type. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully. |
+| Promise&lt;void&gt; | void promise when executed successfully. |
 
 **Error codes:**
 
@@ -3084,6 +3184,7 @@ Set media control types that can be displayed on the media center.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setsupportedloopmodes"></a>
 ## setSupportedLoopModes
 
 ```TypeScript
@@ -3106,13 +3207,13 @@ Set supported loop modes supplied by application.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| loopModes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LoopMode> | Yes | supported loop modes |
+| loopModes | Array&lt;LoopMode&gt; | Yes | supported loop modes |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -3121,6 +3222,7 @@ Set supported loop modes supplied by application.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="setsupportedplayspeeds"></a>
 ## setSupportedPlaySpeeds
 
 ```TypeScript
@@ -3143,13 +3245,13 @@ Set supported speeds supplied by application.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| speeds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | supported speeds |
+| speeds | Array&lt;number&gt; | Yes | supported speeds |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -3158,6 +3260,7 @@ Set supported speeds supplied by application.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 
+<a id="stopcasting"></a>
 ## stopCasting
 
 ```TypeScript
@@ -3176,7 +3279,7 @@ Stop current cast and disconnect device connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when cast stopped completed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when cast stopped completed. |
 
 **Error codes:**
 
@@ -3184,6 +3287,7 @@ Stop current cast and disconnect device connection.
 | --- | --- |
 | [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
 
+<a id="stopcasting-1"></a>
 ## stopCasting
 
 ```TypeScript
@@ -3204,7 +3308,7 @@ Stop current cast and disconnect device connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void result promise when executed successfully |
+| Promise&lt;void&gt; | void result promise when executed successfully |
 
 **Error codes:**
 

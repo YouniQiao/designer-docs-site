@@ -6,6 +6,7 @@
 import { taskpool } from '@kit.ArkTS';
 ```
 
+<a id="execute"></a>
 ## execute
 
 ```TypeScript
@@ -26,15 +27,15 @@ Places a function to be executed in the internal queue of the task pool. The fun
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| func | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Function to be executed. The function must be decorated using [@Concurrent](../../../../arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types of the function, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
-| args | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md)[] | Yes | Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
+| func | Function | Yes | Function to be executed. The function must be decorated using [@Concurrent](docroot://arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types of the function, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
+| args | Object[] | Yes | Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<unknown> | <br>**Applicable version:** 9 - 11 |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Object> | Promise used to return an object that carries the function execution result.<br>**Applicable version:** 11 and later |
+| Promise&lt;unknown&gt; | <br>**Applicable version:** 9 - 11 |
+| Promise&lt;Object&gt; | Promise used to return an object that carries the function execution result.<br>**Applicable version:** 11 and later |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ taskpool.execute(printArgs, 100).then((value: Object) => { // 100: test number
 ```
 
 
+<a id="execute-1"></a>
 ## execute
 
 ```TypeScript
@@ -80,14 +82,14 @@ Verifies the passed-in parameter types and return value type of a concurrent fun
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| func | (...args: A) => R \| Promise<R> | Yes | Function to be executed. The function must be decorated using [@Concurrent](../../../../arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types of the function, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
-| args | A | Yes | Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
+| func | (...args: A) =&gt; R \| Promise&lt;R&gt; | Yes | Function to be executed. The function must be decorated using [@Concurrent](docroot://arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types of the function, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
+| args | A | Yes | Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<R> | Promise used to return an object that carries the function execution result. |
+| Promise&lt;R&gt; | Promise used to return an object that carries the function execution result. |
 
 **Error codes:**
 
@@ -130,6 +132,7 @@ taskpool.execute<[[number, string]], string>(testWithArray, [100, "test"]).then(
 ```
 
 
+<a id="execute-2"></a>
 ## execute
 
 ```TypeScript
@@ -157,8 +160,8 @@ Places a task in the internal queue of the task pool. The task will not be execu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<unknown> | <br>**Applicable version:** 9 - 17 |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Object> | Promise used to return an object that carries the function execution result.<br>**Applicable version:** 11 and later |
+| Promise&lt;unknown&gt; | <br>**Applicable version:** 9 - 17 |
+| Promise&lt;Object&gt; | Promise used to return an object that carries the function execution result.<br>**Applicable version:** 11 and later |
 
 **Error codes:**
 
@@ -195,6 +198,7 @@ taskpool.execute(task3, taskpool.Priority.HIGH).then((value: Object) => {
 ```
 
 
+<a id="execute-3"></a>
 ## execute
 
 ```TypeScript
@@ -215,14 +219,14 @@ Places the generic task in the internal queue of the task pool. The parameter ty
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| task | [GenericsTask](arkts-arkts-taskpool-genericstask-c.md)<A, R> | Yes | Generic task to be executed. |
+| task | [GenericsTask](arkts-arkts-taskpool-genericstask-c.md)&lt;A, R&gt; | Yes | Generic task to be executed. |
 | priority | [Priority](arkts-arkts-taskpool-priority-e.md) | No | Priority of the task to be executed. The default value is **taskpool.Priority.MEDIUM**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<R> | Promise used to return an object that carries the function execution result. |
+| Promise&lt;R&gt; | Promise used to return an object that carries the function execution result. |
 
 **Error codes:**
 
@@ -258,6 +262,7 @@ taskpool.execute<[number], number>(task3, taskpool.Priority.HIGH).then((value: n
 ```
 
 
+<a id="execute-4"></a>
 ## execute
 
 ```TypeScript
@@ -285,7 +290,7 @@ Places a task group in the internal queue of the task pool. The tasks in the tas
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Object[]> | Promise used to return an object array that carries the function execution result. |
+| Promise&lt;Object[]&gt; | Promise used to return an object array that carries the function execution result. |
 
 **Error codes:**
 
@@ -325,6 +330,7 @@ taskpool.execute(taskGroup2).then((res: Array<Object>) => {
 ```
 
 
+<a id="execute-5"></a>
 ## execute
 
 ```TypeScript
@@ -352,7 +358,7 @@ Execute a concurrent task with Configs.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Object> | @throws { BusinessError } 10200006 - An exception occurred during serialization. |
+| Promise&lt;Object&gt; | @throws { BusinessError } 10200006 - An exception occurred during serialization. |
 
 **Error codes:**
 
@@ -365,6 +371,7 @@ Execute a concurrent task with Configs.
 | 10200058 | Task timed out. |
 
 
+<a id="execute-6"></a>
 ## execute
 
 ```TypeScript
@@ -385,14 +392,14 @@ Execute a concurrent generics task with Configs.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| task | [GenericsTask](arkts-arkts-taskpool-genericstask-c.md)<A, R> | Yes | Generic task to be executed. |
+| task | [GenericsTask](arkts-arkts-taskpool-genericstask-c.md)&lt;A, R&gt; | Yes | Generic task to be executed. |
 | configs | [Configs](arkts-arkts-taskpool-configs-i.md) | Yes | Configs of the task. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<R> | @throws { BusinessError } 10200006 - An exception occurred during serialization. |
+| Promise&lt;R&gt; | @throws { BusinessError } 10200006 - An exception occurred during serialization. |
 
 **Error codes:**
 
@@ -405,6 +412,7 @@ Execute a concurrent generics task with Configs.
 | 10200058 | Task timed out. |
 
 
+<a id="execute-7"></a>
 ## execute
 
 ```TypeScript
@@ -432,7 +440,7 @@ Execute a concurrent task group with Configs.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Object[]> | @throws { BusinessError } 10200006 - An exception occurred during serialization. |
+| Promise&lt;Object[]&gt; | @throws { BusinessError } 10200006 - An exception occurred during serialization. |
 
 **Error codes:**
 

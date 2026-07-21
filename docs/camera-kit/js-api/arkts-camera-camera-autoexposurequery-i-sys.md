@@ -18,6 +18,7 @@ AutoExposureQuery provides APIs to query the automatic exposure feature of a cam
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="isexposuremeteringmodesupported"></a>
 ## isExposureMeteringModeSupported
 
 ```TypeScript

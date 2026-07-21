@@ -14,6 +14,7 @@ Defines an HTTP Interceptor. User can implement this interface to define the han
 import { http } from '@kit.NetworkKit';
 ```
 
+<a id="interceptorhandle"></a>
 ## interceptorHandle
 
 ```TypeScript
@@ -41,7 +42,7 @@ Intercept an HTTP process and do changes as disired.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ChainContinue> | Continue the HTTP process or terminate then return the HTTP response. |
+| Promise&lt;ChainContinue&gt; | Continue the HTTP process or terminate then return the HTTP response. |
 
 **Example**
 

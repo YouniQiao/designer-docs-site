@@ -6,6 +6,7 @@
 import { bundleState } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="isidlestate"></a>
 ## isIdleState
 
 ```TypeScript
@@ -27,7 +28,7 @@ Checks whether the application specified by **bundleName** is in the idle state.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name of an application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the specified **bundleName** is valid, the idle state of the application is returned; otherwise, **null** is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the specified **bundleName** is valid, the idle state of the application is returned; otherwise, **null** is returned. |
 
 **Example**
 
@@ -46,6 +47,7 @@ bundleState.isIdleState("com.ohos.camera", (err: BusinessError, res: boolean) =>
 ```
 
 
+<a id="isidlestate-1"></a>
 ## isIdleState
 
 ```TypeScript
@@ -72,7 +74,7 @@ Checks whether the application specified by **bundleName** is in the idle state.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. If the specified **bundleName** is valid, the idle state of the application is returned; otherwise, **null** is returned. |
+| Promise&lt;boolean&gt; | Promise used to return the result. If the specified **bundleName** is valid, the idle state of the application is returned; otherwise, **null** is returned. |
 
 **Example**
 

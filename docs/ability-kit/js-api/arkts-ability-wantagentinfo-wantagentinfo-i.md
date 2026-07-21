@@ -1,6 +1,6 @@
 # WantAgentInfo
 
-Defines the information required for triggering a WantAgent object. The information can be used as an input parameter in [getWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent) to obtain a specified WantAgent object.
+Defines the information required for triggering a WantAgent object. The information can be used as an input parameter in [getWantAgent](docroot://reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent) to obtain a specified WantAgent object.
 
 **Since:** 7
 
@@ -16,7 +16,7 @@ actionFlags?: Array<abilityWantAgent.WantAgentFlags>
 
 Array of flags for using the WantAgent object.
 
-**Type:** Array<abilityWantAgent.WantAgentFlags>
+**Type:** Array&lt;abilityWantAgent.WantAgentFlags&gt;
 
 **Since:** 11
 
@@ -70,7 +70,7 @@ extraInfos?: Record<string, Object>
 
 Extra information. You are advised to use this property to replace **extraInfo**. When this property is set,**extraInfo** does not take effect.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 11
 
@@ -132,7 +132,7 @@ Array of flags for using the WantAgent object.
 
 This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use actionFlags<sup>11+</sup> instead.
 
-**Type:** Array<wantAgent.WantAgentFlags>
+**Type:** Array&lt;wantAgent.WantAgentFlags&gt;
 
 **Since:** 7
 
@@ -154,7 +154,7 @@ wants: Array<Want>
 
 Array of all Want objects. Currently, only one Want is supported. The array is reserved for future capability expansion. If multiple values are passed in, only the first member in the array is used.
 
-**Type:** Array<Want>
+**Type:** Array&lt;Want&gt;
 
 **Since:** 7
 

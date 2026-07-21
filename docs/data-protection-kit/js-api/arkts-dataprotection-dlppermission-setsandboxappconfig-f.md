@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="setsandboxappconfig"></a>
 ## setSandboxAppConfig
 
 ```TypeScript
@@ -32,7 +33,7 @@ This API sets the sandbox application configuration so that the application can 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getallnets"></a>
 ## getAllNets
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the list of data networks that are activated.To invoke this method, you 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<NetHandle>> | Yes | the callback of getAllNets. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;NetHandle&gt;&gt; | Yes | the callback of getAllNets. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ connection.getAllNets((error: BusinessError, data: connection.NetHandle[]) => {
 ```
 
 
+<a id="getallnets-1"></a>
 ## getAllNets
 
 ```TypeScript
@@ -74,7 +76,7 @@ Obtains the list of data networks that are activated.To invoke this method, you 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NetHandle>> | The promise returned by the function. |
+| Promise&lt;Array&lt;NetHandle&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

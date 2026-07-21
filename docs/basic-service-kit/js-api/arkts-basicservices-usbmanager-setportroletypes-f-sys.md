@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="setportroletypes"></a>
 ## setPortRoleTypes
 
 ```TypeScript
@@ -36,7 +37,7 @@ Sets the role types supported by a specified port, which can be **powerRole** (f
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

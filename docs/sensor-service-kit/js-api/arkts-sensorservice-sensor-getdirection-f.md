@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getdirection"></a>
 ## getDirection
 
 ```TypeScript
@@ -18,7 +19,7 @@ Obtains the device direction based on the rotation matrix. This API uses an asyn
 
 **Deprecated since:** 9
 
-**Substitutes:** getOrientation(rotationMatrix:
+**Substitutes:** [getOrientation(rotationMatrix:](arkts-sensorservice-sensor-getorientation-f.md#getorientation-1)
 
 <!--Device-sensor-function getDirection(rotationMatrix: Array<number>, callback: AsyncCallback<Array<number>>): void--><!--Device-sensor-function getDirection(rotationMatrix: Array<number>, callback: AsyncCallback<Array<number>>): void-End-->
 
@@ -28,8 +29,8 @@ Obtains the device direction based on the rotation matrix. This API uses an asyn
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationMatrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation matrix. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the rotation angle around the z, x, and y axes, in degrees. |
+| rotationMatrix | Array&lt;number&gt; | Yes | Rotation matrix. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the rotation angle around the z, x, and y axes, in degrees. |
 
 **Example**
 
@@ -51,6 +52,7 @@ sensor.getDirection([1, 0, 0, 0, 1, 0, 0, 0, 1], (err: BusinessError, data: Arra
 ```
 
 
+<a id="getdirection-1"></a>
 ## getDirection
 
 ```TypeScript
@@ -63,7 +65,7 @@ Obtains the device direction based on the rotation matrix. This API uses a promi
 
 **Deprecated since:** 9
 
-**Substitutes:** getOrientation(rotationMatrix:
+**Substitutes:** [getOrientation(rotationMatrix:](arkts-sensorservice-sensor-getorientation-f.md#getorientation-1)
 
 <!--Device-sensor-function getDirection(rotationMatrix: Array<number>): Promise<Array<number>>--><!--Device-sensor-function getDirection(rotationMatrix: Array<number>): Promise<Array<number>>-End-->
 
@@ -73,13 +75,13 @@ Obtains the device direction based on the rotation matrix. This API uses a promi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationMatrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation matrix. |
+| rotationMatrix | Array&lt;number&gt; | Yes | Rotation matrix. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the rotation angle around the z, x, and y axes, in degrees. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the rotation angle around the z, x, and y axes, in degrees. |
 
 **Example**
 

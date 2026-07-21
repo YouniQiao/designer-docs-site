@@ -6,6 +6,7 @@
 import { distributedBundle } from '@kit.AbilityKit';
 ```
 
+<a id="getremoteabilityinfo"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -33,9 +34,10 @@ Obtains the information about the remote ability that matches the given element 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | elementName | [ElementName](arkts-ability-bundlemanager-elementname-t.md) | Yes | **ElementName**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RemoteAbilityInfo> | Yes | Callback used to return the remote ability information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RemoteAbilityInfo&gt; | Yes | Callback used to return the remote ability information. |
 
 
+<a id="getremoteabilityinfo-1"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -68,5 +70,5 @@ Obtains the information about the remote ability that matches the given element 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RemoteAbilityInfo> | Promise used to return the remote ability information. |
+| Promise&lt;RemoteAbilityInfo&gt; | Promise used to return the remote ability information. |
 

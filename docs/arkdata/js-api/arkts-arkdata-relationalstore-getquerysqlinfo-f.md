@@ -6,6 +6,7 @@
 import { relationalStore } from '@kit.ArkData';
 ```
 
+<a id="getquerysqlinfo"></a>
 ## getQuerySqlInfo
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the SQL statement used to query data. This API returns the result synchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | **RdbPredicates** object that matches the specified field. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Columns to be queried. If this parameter is not specified, all columns are queried. |
+| columns | Array&lt;string&gt; | No | Columns to be queried. If this parameter is not specified, all columns are queried. |
 
 **Return value:**
 

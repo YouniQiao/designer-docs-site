@@ -6,6 +6,7 @@
 import { bundle } from '@kit.AbilityKit';
 ```
 
+<a id="getapplicationinfos"></a>
 ## getApplicationInfos
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains information about all installed apps for a specified user. This API uses
 | --- | --- | --- | --- |
 | bundleFlags | number | Yes | Flag used to specify the information contained in the returned application information object. Value range: see the application information related flags in BundleFlag. |
 | userId | number | Yes | User ID. Value range: greater than or equal to 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ApplicationInfo>> | Yes | Callback used to return the result. If getApplicationInfos is successful, **err** is **undefined**, and the list of app information as the input parameter at program startup. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ApplicationInfo&gt;&gt; | Yes | Callback used to return the result. If getApplicationInfos is successful, **err** is **undefined**, and the list of app information as the input parameter at program startup. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -55,6 +56,7 @@ bundle.getApplicationInfos(bundleFlags, userId, (err, data) => {
 ```
 
 
+<a id="getapplicationinfos-1"></a>
 ## getApplicationInfos
 
 ```TypeScript
@@ -82,7 +84,7 @@ Obtains information about installed apps for the user to which the caller belong
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleFlags | number | Yes | Flag used to specify the information contained in the returned application information object. Value range: see the application information related flags in BundleFlag. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ApplicationInfo>> | Yes | Callback used to return the result. If getApplicationInfos is successful, **err** is **undefined**, and the list of app information as the input parameter at program startup. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ApplicationInfo&gt;&gt; | Yes | Callback used to return the result. If getApplicationInfos is successful, **err** is **undefined**, and the list of app information as the input parameter at program startup. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -102,6 +104,7 @@ bundle.getApplicationInfos(bundleFlags, (err, data) => {
 ```
 
 
+<a id="getapplicationinfos-2"></a>
 ## getApplicationInfos
 
 ```TypeScript
@@ -135,7 +138,7 @@ Obtains information about all installed apps for a specified user. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ApplicationInfo>> | Promise used to return the list of app information when obtained successfully. |
+| Promise&lt;Array&lt;ApplicationInfo&gt;&gt; | Promise used to return the list of app information when obtained successfully. |
 
 **Example**
 

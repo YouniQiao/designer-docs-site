@@ -16,6 +16,7 @@ Manager a2dp source profile.
 import { a2dp } from '@kit.ConnectivityKit';
 ```
 
+<a id="getplayingstate"></a>
 ## getPlayingState
 
 ```TypeScript

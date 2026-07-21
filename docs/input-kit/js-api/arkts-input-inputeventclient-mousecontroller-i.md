@@ -16,6 +16,7 @@ Provides the capability of simulating mouse operations. The simulated mouse oper
 import { inputEventClient } from '@kit.InputKit';
 ```
 
+<a id="beginaxis"></a>
 ## beginAxis
 
 ```TypeScript
@@ -38,14 +39,14 @@ Starts an axis event. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| axis | [Axis](../../apis-arkui/arkts-apis/arkts-arkui-enums-axis-e.md) | Yes | Axis type. |
+| axis | [Axis](../../apis-arkui/arkts-apis/arkts-arkui-axis-e.md) | Yes | Axis type. |
 | value | number | Yes | Axis value. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -93,6 +94,7 @@ struct Index {
 
 ```
 
+<a id="endaxis"></a>
 ## endAxis
 
 ```TypeScript
@@ -115,13 +117,13 @@ Ends an axis event. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| axis | [Axis](../../apis-arkui/arkts-apis/arkts-arkui-enums-axis-e.md) | Yes | Axis type. |
+| axis | [Axis](../../apis-arkui/arkts-apis/arkts-arkui-axis-e.md) | Yes | Axis type. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -135,6 +137,7 @@ Ends an axis event. This API uses a promise to return the result.
 
 For details, see [beginAxis](#beginaxis).
 
+<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -165,7 +168,7 @@ Moves the mouse cursor to the specified display coordinates. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -205,6 +208,7 @@ struct Index {
 
 ```
 
+<a id="pressbutton"></a>
 ## pressButton
 
 ```TypeScript
@@ -233,7 +237,7 @@ Presses a mouse button. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -277,6 +281,7 @@ struct Index {
 
 ```
 
+<a id="releasebutton"></a>
 ## releaseButton
 
 ```TypeScript
@@ -305,7 +310,7 @@ Release a mouse button. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -319,6 +324,7 @@ Release a mouse button. This API uses a promise to return the result.
 
 For details, see [pressButton](#pressbutton).
 
+<a id="updateaxis"></a>
 ## updateAxis
 
 ```TypeScript
@@ -341,14 +347,14 @@ Updates an axis event. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| axis | [Axis](../../apis-arkui/arkts-apis/arkts-arkui-enums-axis-e.md) | Yes | Axis type. |
+| axis | [Axis](../../apis-arkui/arkts-apis/arkts-arkui-axis-e.md) | Yes | Axis type. |
 | value | number | Yes | Axis value. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

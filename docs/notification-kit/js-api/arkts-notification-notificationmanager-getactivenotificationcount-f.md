@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getactivenotificationcount"></a>
 ## getActiveNotificationCount
 
 ```TypeScript
@@ -26,7 +27,7 @@ This API is used to query the number of notifications of the current application
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and data is the obtained number of active notifications; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and data is the obtained number of active notifications; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ notificationManager.getActiveNotificationCount(getActiveNotificationCountCallbac
 ```
 
 
+<a id="getactivenotificationcount-1"></a>
 ## getActiveNotificationCount
 
 ```TypeScript
@@ -75,7 +77,7 @@ This API is used to query the number of notifications of the current application
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 

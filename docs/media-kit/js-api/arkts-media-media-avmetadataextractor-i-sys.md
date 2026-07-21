@@ -1,8 +1,8 @@
 # AVMetadataExtractor
 
-AVMetadataExtractor is a class for metadata retrieval. It provides APIs to obtain metadata and thumbnails from media assets. Before calling any API of AVMetadataExtractor, you must use [media.createAVMetadataExtractor](arkts-media-media-createavmetadataextractor-f.md#createavmetadataextractor-3)to create an AVMetadataExtractor instance.
+AVMetadataExtractor is a class for metadata retrieval. It provides APIs to obtain metadata and thumbnails from media assets. Before calling any API of AVMetadataExtractor, you must use [media.createAVMetadataExtractor](arkts-media-media-createavmetadataextractor-f.md#createavmetadataextractor-1)to create an AVMetadataExtractor instance.
 
-For details about the demo of obtaining audio or video metadata and video thumbnails, see [Using AVMetadataExtractor to Extract Audio and Video Metadata (ArkTS)](../../../../media/media/avmetadataextractor.md).
+For details about the demo of obtaining audio or video metadata and video thumbnails, see [Using AVMetadataExtractor to Extract Audio and Video Metadata (ArkTS)](docroot://media/media/avmetadataextractor.md).
 
 **Since:** 11
 
@@ -16,6 +16,7 @@ For details about the demo of obtaining audio or video metadata and video thumbn
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="getframeindexbytime"></a>
 ## getFrameIndexByTime
 
 ```TypeScript
@@ -42,7 +43,7 @@ Obtains the video frame number corresponding to a video timestamp. Only MP4 vide
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the video frame number. |
+| Promise&lt;number&gt; | Promise used to return the video frame number. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ avMetadataExtractor.getFrameIndexByTime(0).then((index: number) => {
 
 ```
 
+<a id="gettimebyframeindex"></a>
 ## getTimeByFrameIndex
 
 ```TypeScript
@@ -92,7 +94,7 @@ Obtains the video timestamp corresponding to a video frame number. Only MP4 vide
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the timestamp, in microseconds. |
+| Promise&lt;number&gt; | Promise used to return the timestamp, in microseconds. |
 
 **Error codes:**
 

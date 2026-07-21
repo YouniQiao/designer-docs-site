@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="on"></a>
 ## on('applicationState')
 
 ```TypeScript
@@ -33,7 +34,7 @@ Registers an observer to listen for lifecycle changes of all applications.
 
 | Type | Description |
 | --- | --- |
-| number | ID of the observer registered. You can pass this ID to [off('applicationState')](arkts-ability-appmanager-off-f.md#off-2) to unregister the observer. |
+| number | ID of the observer registered. You can pass this ID to [off('applicationState')](appManager.off(type: 'applicationState', observerId: int)) to unregister the observer. |
 
 **Error codes:**
 
@@ -85,6 +86,7 @@ try {
 ```
 
 
+<a id="on-1"></a>
 ## on('applicationState')
 
 ```TypeScript
@@ -107,13 +109,13 @@ Registers an observer to listen for lifecycle changes of the specified applicati
 | --- | --- | --- | --- |
 | type | 'applicationState' | Yes | Type of the API to call. It is fixed at **'applicationState'**. |
 | observer | [ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md) | Yes | Application state observer, which is used to listen for application lifecycle changes. |
-| bundleNameList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | **bundleName** array of the application. A maximum of 128 bundle names can be passed. |
+| bundleNameList | Array&lt;string&gt; | Yes | **bundleName** array of the application. A maximum of 128 bundle names can be passed. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | ID of the observer registered. You can pass this ID to [off('applicationState')](arkts-ability-appmanager-off-f.md#off-2) to unregister the observer. |
+| number | ID of the observer registered. You can pass this ID to [off('applicationState')](appManager.off(type: 'applicationState', observerId: int)) to unregister the observer. |
 
 **Error codes:**
 

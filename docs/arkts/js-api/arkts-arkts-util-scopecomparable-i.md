@@ -14,6 +14,7 @@ The values of the **ScopeComparable** type are used to implement the **compareTo
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="compareto"></a>
 ## compareTo
 
 ```TypeScript

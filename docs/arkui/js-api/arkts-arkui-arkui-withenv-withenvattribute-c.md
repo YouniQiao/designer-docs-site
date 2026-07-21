@@ -14,6 +14,7 @@ Define the WithEnv attribute functions.
 import { WithEnvAttribute, WithEnv } from '@kit.ArkUI';
 ```
 
+<a id="customenv"></a>
 ## customEnv
 
 ```TypeScript
@@ -36,7 +37,7 @@ Defining Custom Environment Variables
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | [CustomEnvKey](../arkts-components/arkts-arkui-common-customenvkey-c.md)<T> | Yes | Key for custom environment variables. |
+| key | [CustomEnvKey](../arkts-components/arkts-arkui-customenvkey-c.md)&lt;T&gt; | Yes | Key for custom environment variables. |
 | value | T | Yes | Value of custom environment variables. |
 
 **Return value:**
@@ -45,6 +46,7 @@ Defining Custom Environment Variables
 | --- | --- |
 | [WithEnvAttribute](arkts-arkui-arkui-withenv-withenvattribute-c.md) | WithEnvAttribute object. |
 
+<a id="env"></a>
 ## env
 
 ```TypeScript
@@ -67,7 +69,7 @@ Defining System Environment Variables
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | [WritableSystemEnvKey](../arkts-components/arkts-arkui-common-writablesystemenvkey-c.md)<T> | Yes | Key for system environment variables. |
+| key | [WritableSystemEnvKey](../arkts-components/arkts-arkui-writablesystemenvkey-c.md)&lt;T&gt; | Yes | Key for system environment variables. |
 | value | T | Yes | Value of system environment variables. |
 
 **Return value:**

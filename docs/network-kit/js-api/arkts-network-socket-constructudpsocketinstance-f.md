@@ -6,6 +6,7 @@
 import { socket } from '@kit.NetworkKit';
 ```
 
+<a id="constructudpsocketinstance"></a>
 ## constructUDPSocketInstance
 
 ```TypeScript

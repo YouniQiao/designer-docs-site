@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="setvirtualscreensurface"></a>
 ## setVirtualScreenSurface
 
 ```TypeScript
@@ -33,7 +34,7 @@ Sets a surface for a virtual screen. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

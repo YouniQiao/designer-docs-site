@@ -23,6 +23,7 @@ This module defines a struct for setting typeface arguments.
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="addvariation"></a>
 ## addVariation
 
 ```TypeScript
@@ -52,6 +53,7 @@ Defines the typeface weight.
 | --- | --- |
 | [25900001](../errorcode-drawing.md#25900001-abnormal-parameter-value) | Parameter error. Possible causes: Incorrect parameter range. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

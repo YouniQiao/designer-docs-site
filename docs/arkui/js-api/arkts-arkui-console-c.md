@@ -8,6 +8,7 @@ Provide console
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
+<a id="debug"></a>
 ## debug
 
 ```TypeScript
@@ -30,6 +31,7 @@ Prints "debug" logs.
 | --- | --- | --- | --- |
 | message | string | Yes | Text to print@static |
 
+<a id="error"></a>
 ## error
 
 ```TypeScript
@@ -52,6 +54,7 @@ Prints "error" logs.
 | --- | --- | --- | --- |
 | message | string | Yes | Text to print@static |
 
+<a id="info"></a>
 ## info
 
 ```TypeScript
@@ -74,6 +77,7 @@ Prints "info" logs.
 | --- | --- | --- | --- |
 | message | string | Yes | Text to print@static |
 
+<a id="log"></a>
 ## log
 
 ```TypeScript
@@ -96,6 +100,7 @@ Prints "log" logs.
 | --- | --- | --- | --- |
 | message | string | Yes | Text to print@static |
 
+<a id="warn"></a>
 ## warn
 
 ```TypeScript

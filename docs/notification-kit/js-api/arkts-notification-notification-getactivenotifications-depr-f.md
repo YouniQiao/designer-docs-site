@@ -1,5 +1,6 @@
 # getActiveNotifications
 
+<a id="getactivenotifications"></a>
 ## getActiveNotifications
 
 ```TypeScript
@@ -22,9 +23,10 @@ Obtains active notifications of this application. This API uses an asynchronous 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<NotificationRequest>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;NotificationRequest&gt;&gt; | Yes | Callback used to return the result. |
 
 
+<a id="getactivenotifications-1"></a>
 ## getActiveNotifications
 
 ```TypeScript
@@ -47,5 +49,5 @@ Obtains active notifications of this application. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NotificationRequest>> | Promise used to return the result. |
+| Promise&lt;Array&lt;NotificationRequest&gt;&gt; | Promise used to return the result. |
 

@@ -6,6 +6,7 @@
 import { continuationManager } from '@kit.AbilityKit';
 ```
 
+<a id="startcontinuationdevicemanager"></a>
 ## startContinuationDeviceManager
 
 ```TypeScript
@@ -33,7 +34,7 @@ Starts the device selection module to show the list of available devices on the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | token | number | Yes | Token obtained after the registration of the continuation management service. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the module is started, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the module is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ try {
 ```
 
 
+<a id="startcontinuationdevicemanager-1"></a>
 ## startContinuationDeviceManager
 
 ```TypeScript
@@ -105,7 +107,7 @@ Starts the device selection module to show the list of available devices on the 
 | --- | --- | --- | --- |
 | token | number | Yes | Token obtained after the registration of the continuation management service. |
 | options | [ContinuationExtraParams](arkts-ability-continuationextraparams-continuationextraparams-i.md) | Yes | Extra parameters used to filter the list of available devices. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the module is started, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the module is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -142,6 +144,7 @@ try {
 ```
 
 
+<a id="startcontinuationdevicemanager-2"></a>
 ## startContinuationDeviceManager
 
 ```TypeScript
@@ -175,7 +178,7 @@ Starts the device selection module to show the list of available devices on the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

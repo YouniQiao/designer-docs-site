@@ -16,6 +16,7 @@ Provides APIs for setting different **DataSharePredicates** objects. This type i
 import { dataSharePredicates } from '@kit.ArkData';
 ```
 
+<a id="and"></a>
 ## and
 
 ```TypeScript
@@ -52,6 +53,7 @@ predicates.equalTo("NAME", "lisi")
 
 ```
 
+<a id="equalto"></a>
 ## equalTo
 
 ```TypeScript
@@ -93,6 +95,7 @@ predicates.equalTo("NAME", "Rose");
 
 ```
 
+<a id="in"></a>
 ## in
 
 ```TypeScript
@@ -118,7 +121,7 @@ Currently, both the RDB store and KV store support this predicate.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | field | string | Yes | Column name in the database table.If this parameter is set to **undefined** or **null**, the predicate used is invalid. |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | Yes | Array of the values to match. |
+| value | Array&lt;ValueType&gt; | Yes | Array of the values to match. |
 
 **Return value:**
 
@@ -134,6 +137,7 @@ predicates.in("AGE", [18, 20]);
 
 ```
 
+<a id="limit"></a>
 ## limit
 
 ```TypeScript
@@ -175,6 +179,7 @@ predicates.equalTo("NAME", "Rose").limit(10, 3);
 
 ```
 
+<a id="orderbyasc"></a>
 ## orderByAsc
 
 ```TypeScript
@@ -215,6 +220,7 @@ predicates.orderByAsc("AGE");
 
 ```
 
+<a id="orderbydesc"></a>
 ## orderByDesc
 
 ```TypeScript

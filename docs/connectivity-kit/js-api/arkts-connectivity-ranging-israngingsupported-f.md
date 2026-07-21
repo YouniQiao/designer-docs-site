@@ -6,6 +6,7 @@
 import { ranging } from '@kit.ConnectivityKit';
 ```
 
+<a id="israngingsupported"></a>
 ## isRangingSupported
 
 ```TypeScript

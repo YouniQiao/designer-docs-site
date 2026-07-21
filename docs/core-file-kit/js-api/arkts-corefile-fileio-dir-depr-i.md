@@ -12,6 +12,7 @@ Manages directories. Before calling a method of the **Dir** class, use the **ope
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -34,7 +35,7 @@ Closes a directory. This API uses a promise to return the result. After a direct
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | return Promise |
+| Promise&lt;void&gt; | return Promise |
 
 **Example**
 
@@ -46,6 +47,7 @@ dir.close().then(() => {
 
 ```
 
+<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -68,7 +70,7 @@ Closes a directory. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | callback. |
 
 **Example**
 
@@ -80,6 +82,7 @@ dir.close((err: BusinessError) => {
 
 ```
 
+<a id="closesync"></a>
 ## closeSync
 
 ```TypeScript
@@ -105,6 +108,7 @@ dir.closeSync();
 
 ```
 
+<a id="read"></a>
 ## read
 
 ```TypeScript
@@ -127,7 +131,7 @@ Reads the next directory entry. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Dirent> | Promise that returns the next directory entry. |
+| Promise&lt;Dirent&gt; | Promise that returns the next directory entry. |
 
 **Example**
 
@@ -141,6 +145,7 @@ dir.read().then((dirent: fileio.Dirent) => {
 
 ```
 
+<a id="read-1"></a>
 ## read
 
 ```TypeScript
@@ -163,7 +168,7 @@ Reads the next directory entry. This API uses an asynchronous callback to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Dirent> | Yes | Callback invoked when the next directory entry is asynchronously read. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Dirent&gt; | Yes | Callback invoked when the next directory entry is asynchronously read. |
 
 **Example**
 
@@ -178,6 +183,7 @@ dir.read((err: BusinessError, dirent: fileio.Dirent) => {
 
 ```
 
+<a id="readsync"></a>
 ## readSync
 
 ```TypeScript

@@ -10,6 +10,7 @@ The scene resource factory.
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="createcamera"></a>
 ## createCamera
 
 ```TypeScript
@@ -34,8 +35,9 @@ Create a camera.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Camera> | promise a camera |
+| Promise&lt;Camera&gt; | promise a camera |
 
+<a id="createcamera-1"></a>
 ## createCamera
 
 ```TypeScript
@@ -61,8 +63,9 @@ Create a camera.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Camera> | promise a camera |
+| Promise&lt;Camera&gt; | promise a camera |
 
+<a id="createeffect"></a>
 ## createEffect
 
 ```TypeScript
@@ -87,8 +90,9 @@ Create an effect.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Effect> | promise an effect. |
+| Promise&lt;Effect&gt; | promise an effect. |
 
+<a id="createenvironment"></a>
 ## createEnvironment
 
 ```TypeScript
@@ -113,8 +117,9 @@ Create an environment.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Environment> | promise an environment |
+| Promise&lt;Environment&gt; | promise an environment |
 
+<a id="creategeometry"></a>
 ## createGeometry
 
 ```TypeScript
@@ -140,8 +145,9 @@ Create a geometry node.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Geometry> | promise a geometry |
+| Promise&lt;Geometry&gt; | promise a geometry |
 
+<a id="createlight"></a>
 ## createLight
 
 ```TypeScript
@@ -167,8 +173,9 @@ Create a light.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Light> | promise a light |
+| Promise&lt;Light&gt; | promise a light |
 
+<a id="creatematerial"></a>
 ## createMaterial
 
 ```TypeScript
@@ -194,8 +201,9 @@ Create a material.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Material> | promise a material |
+| Promise&lt;Material&gt; | promise a material |
 
+<a id="createnode"></a>
 ## createNode
 
 ```TypeScript
@@ -220,5 +228,5 @@ Create a node.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Node> | promise a node |
+| Promise&lt;Node&gt; | promise a node |
 

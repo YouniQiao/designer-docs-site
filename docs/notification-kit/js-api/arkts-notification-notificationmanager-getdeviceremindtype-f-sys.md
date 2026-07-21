@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getdeviceremindtype"></a>
 ## getDeviceRemindType
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the notification reminder type. This API uses an asynchronous callback t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DeviceRemindType> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DeviceRemindType&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ notificationManager.getDeviceRemindType(getDeviceRemindTypeCallback);
 ```
 
 
+<a id="getdeviceremindtype-1"></a>
 ## getDeviceRemindType
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains the notification reminder type. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DeviceRemindType> | Promise used to return the result. |
+| Promise&lt;DeviceRemindType&gt; | Promise used to return the result. |
 
 **Error codes:**
 

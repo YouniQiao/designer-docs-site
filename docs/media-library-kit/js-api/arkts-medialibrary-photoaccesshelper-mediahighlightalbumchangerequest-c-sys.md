@@ -18,6 +18,7 @@ Provides APIs for managing the media album change request. It inherits from [Med
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -73,6 +74,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="sethighlightattribute"></a>
 ## setHighlightAttribute
 
 ```TypeScript

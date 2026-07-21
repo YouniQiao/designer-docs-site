@@ -23,7 +23,7 @@ data: CdmaCellInformation | GsmCellInformation | LteCellInformation | NrCellInfo
 
 Obtains signal strength under different network formats.
 
-**Type:** CdmaCellInformation | GsmCellInformation | LteCellInformation | NrCellInformation | TdscdmaCellInformation | WcdmaCellInformation
+**Type:** CdmaCellInformation \| GsmCellInformation \| LteCellInformation \| NrCellInformation \| TdscdmaCellInformation \| WcdmaCellInformation
 
 **Since:** 8
 

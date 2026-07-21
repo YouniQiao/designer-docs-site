@@ -6,6 +6,7 @@
 import { text } from '@kit.ArkGraphics2D';
 ```
 
+<a id="matchfontdescriptors"></a>
 ## matchFontDescriptors
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains all system font descriptors that match the provided font descriptor. Thi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<FontDescriptor>> | Promise used to return all matched system font descriptors. |
+| Promise&lt;Array&lt;FontDescriptor&gt;&gt; | Promise used to return all matched system font descriptors. |
 
 **Error codes:**
 

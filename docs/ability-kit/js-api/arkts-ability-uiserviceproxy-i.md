@@ -12,6 +12,7 @@ UIServiceProxy functions as a proxy to send data from the UIServiceExtensionAbil
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript
@@ -23,7 +24,7 @@ Sends data to the UIServiceExtensionAbility server.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -39,7 +40,7 @@ Sends data to the UIServiceExtensionAbility server.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Data to be sent to the UIServiceExtensionAbility server. |
+| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Data to be sent to the UIServiceExtensionAbility server. |
 
 **Error codes:**
 

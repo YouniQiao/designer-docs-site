@@ -6,6 +6,7 @@
 import { asset } from '@kit.AssetStoreKit';
 ```
 
+<a id="batchupdate"></a>
 ## batchUpdate
 
 ```TypeScript
@@ -26,14 +27,14 @@ Only assets with the same {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRY
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sourceAttributes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AssetMap> | Yes | an array of map objects containing asset attributes to query.<br>The {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} attributes of all assets must be the same. |
-| destAttributes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AssetMap> | Yes | an array of map objects containing asset attributes to be updated.<br>The {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} attributes of all assets must be the same. |
+| sourceAttributes | Array&lt;AssetMap&gt; | Yes | an array of map objects containing asset attributes to query.<br>The {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} attributes of all assets must be the same. |
+| destAttributes | Array&lt;AssetMap&gt; | Yes | an array of map objects containing asset attributes to be updated.<br>The {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} attributes of all assets must be the same. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BatchResult> | the promise object returned by the function. |
+| Promise&lt;BatchResult&gt; | the promise object returned by the function. |
 
 **Error codes:**
 

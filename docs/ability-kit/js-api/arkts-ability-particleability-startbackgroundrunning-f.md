@@ -6,6 +6,7 @@
 import { particleAbility } from '@kit.AbilityKit';
 ```
 
+<a id="startbackgroundrunning"></a>
 ## startBackgroundRunning
 
 ```TypeScript
@@ -34,7 +35,7 @@ Requests a continuous task from the system. This API uses an asynchronous callba
 | --- | --- | --- | --- |
 | id | number | Yes | Notification ID of the continuous task. |
 | request | [NotificationRequest](../../apis-notification-kit/arkts-apis/arkts-notification-notificationmanager-notificationrequest-t.md) | Yes | Notification parameter, which is used to display information in the notification bar. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the continuous task is requested,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the continuous task is requested,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -82,6 +83,7 @@ wantAgent.getWantAgent(wantAgentInfo).then((wantAgentObj) => {
 ```
 
 
+<a id="startbackgroundrunning-1"></a>
 ## startBackgroundRunning
 
 ```TypeScript
@@ -115,7 +117,7 @@ Requests a continuous task from the system. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. Promise that returns no value. |
+| Promise&lt;void&gt; | Promise used to return the result. Promise that returns no value. |
 
 **Example**
 

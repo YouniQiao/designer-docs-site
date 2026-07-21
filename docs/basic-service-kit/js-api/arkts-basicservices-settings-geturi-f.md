@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="geturi"></a>
 ## getURI
 
 ```TypeScript
@@ -27,7 +28,7 @@ Constructs a URI for a specific name-value pair for monitoring data of the abili
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Indicates the name of the setting to set. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<object> | Yes | The callback of getURI result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;object&gt; | Yes | The callback of getURI result. |
 
 **Example**
 
@@ -39,6 +40,7 @@ settings.getURI(settings.display.SCREEN_BRIGHTNESS_STATUS, (uri:string) => {
 ```
 
 
+<a id="geturi-1"></a>
 ## getURI
 
 ```TypeScript
@@ -65,7 +67,7 @@ Constructs a URI for a specific name-value pair for monitoring data of the abili
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<object> | Returns the corresponding URI; returns {@code null} if the URI does not exist. |
+| Promise&lt;object&gt; | Returns the corresponding URI; returns {@code null} if the URI does not exist. |
 
 **Example**
 

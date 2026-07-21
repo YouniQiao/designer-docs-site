@@ -6,6 +6,7 @@
 import { restrictions } from '@kit.MDMKit';
 ```
 
+<a id="setprinterdisabled"></a>
 ## setPrinterDisabled
 
 ```TypeScript
@@ -18,7 +19,7 @@ Enables or disables the printing capability of the device. This API uses an asyn
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setDisallowedPolicy(admin:
+**Substitutes:** [setDisallowedPolicy(admin:](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_RESTRICT_POLICY
 
@@ -36,7 +37,7 @@ Enables or disables the printing capability of the device. This API uses an asyn
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-want-want-c.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | disabled | boolean | Yes | Operation to perform. The value **true** means to disable the printer; the value **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. <br>If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. <br>If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ restrictions.setPrinterDisabled(wantTemp, true, (err) => {
 ```
 
 
+<a id="setprinterdisabled-1"></a>
 ## setPrinterDisabled
 
 ```TypeScript
@@ -83,7 +85,7 @@ Enables or disables the printing capability of the device. This API uses a promi
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setDisallowedPolicy(admin:
+**Substitutes:** [setDisallowedPolicy(admin:](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_RESTRICT_POLICY
 
@@ -106,7 +108,7 @@ Enables or disables the printing capability of the device. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. An error object is thrown when the print capability fails to be disabled or enabled. |
+| Promise&lt;void&gt; | Promise that returns no value. An error object is thrown when the print capability fails to be disabled or enabled. |
 
 **Error codes:**
 

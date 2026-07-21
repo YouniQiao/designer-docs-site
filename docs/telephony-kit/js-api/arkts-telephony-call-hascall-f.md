@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="hascall"></a>
 ## hasCall
 
 ```TypeScript
@@ -24,7 +25,7 @@ Checks whether a call is ongoing.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback of hasCall. Returns {@code true} if at least one call is not in the {@link CallState#CALL_STATE_IDLE} state; returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback of hasCall. Returns {@code true} if at least one call is not in the {@link CallState#CALL_STATE_IDLE} state; returns {@code false} otherwise. |
 
 **Example**
 
@@ -42,6 +43,7 @@ call.hasCall((err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="hascall-1"></a>
 ## hasCall
 
 ```TypeScript
@@ -60,7 +62,7 @@ Checks whether a call is ongoing.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if at least one call is not in the {@link CallState#CALL_STATE_IDLE} state; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if at least one call is not in the {@link CallState#CALL_STATE_IDLE} state; returns {@code false} otherwise. |
 
 **Example**
 

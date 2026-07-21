@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="restartprintjob"></a>
 ## restartPrintJob
 
 ```TypeScript
@@ -34,7 +35,7 @@ Restarts a print job that has been finished before. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="iskeyitemexist"></a>
 ## isKeyItemExist
 
 ```TypeScript
@@ -28,7 +29,7 @@ If the key does not exist, the error code 12000011 is returned.
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key to check. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Attribute tag of the key to be checked. If [HuksAuthStorageLevel](arkts-universalkeystore-huks-huksauthstoragelevel-e.md) is used to specify the security level of the key to be checked,<br>this parameter can be left empty. If the API version is 12 or later, the default value **CE** is passed in. If the API version is earlier than 12, the default value **DE** is passed in. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the key exists, the value of **data** is **true**. If the key does not exist, **data** is **undefined**, and the error code in **err** is **12000011** with the error description attached. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the key exists, the value of **data** is **true**. If the key does not exist, **data** is **undefined**, and the error code in **err** is **12000011** with the error description attached. |
 
 **Error codes:**
 
@@ -153,6 +154,7 @@ export default {
 ```
 
 
+<a id="iskeyitemexist-1"></a>
 ## isKeyItemExist
 
 ```TypeScript
@@ -180,7 +182,7 @@ If the key does not exist, the error code 12000011 is returned.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. If the key exists, the value of **data** is **true**. If the key does not exist, the error code in **err** is **12000011** with the error description attached. |
+| Promise&lt;boolean&gt; | Promise used to return the result. If the key exists, the value of **data** is **true**. If the key does not exist, the error code in **err** is **12000011** with the error description attached. |
 
 **Error codes:**
 

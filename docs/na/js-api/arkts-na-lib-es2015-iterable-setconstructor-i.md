@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface SetConstructor--><!--Device-unnamed-interface SetConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -14,11 +15,11 @@ new <T>(iterable?: Iterable<T> | null): Set<T>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| iterable | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<T> \| null | No |  |
+| iterable | Iterable&lt;T&gt; \| null | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Set](arkts-na-lib-es2015-collection-set-i.md)<T> |  |
+| Set&lt;T&gt; |  |
 

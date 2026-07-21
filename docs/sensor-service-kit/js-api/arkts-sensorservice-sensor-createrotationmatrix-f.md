@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="createrotationmatrix"></a>
 ## createRotationMatrix
 
 ```TypeScript
@@ -18,7 +19,7 @@ Converts a rotation vector into a rotation matrix. This API uses an asynchronous
 
 **Deprecated since:** 9
 
-**Substitutes:** getRotationMatrix(rotationVector:
+**Substitutes:** [getRotationMatrix(rotationVector:](arkts-sensorservice-sensor-getrotationmatrix-f.md#getrotationmatrix-1)
 
 <!--Device-sensor-function createRotationMatrix(rotationVector: Array<number>, callback: AsyncCallback<Array<number>>): void--><!--Device-sensor-function createRotationMatrix(rotationVector: Array<number>, callback: AsyncCallback<Array<number>>): void-End-->
 
@@ -28,8 +29,8 @@ Converts a rotation vector into a rotation matrix. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector to convert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the rotation matrix. |
+| rotationVector | Array&lt;number&gt; | Yes | Rotation vector to convert. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the rotation matrix. |
 
 **Example**
 
@@ -51,6 +52,7 @@ sensor.createRotationMatrix([0.20046076, 0.21907, 0.73978853, 0.60376877],
 ```
 
 
+<a id="createrotationmatrix-1"></a>
 ## createRotationMatrix
 
 ```TypeScript
@@ -63,7 +65,7 @@ Converts a rotation vector into a rotation matrix. This API uses a promise to re
 
 **Deprecated since:** 9
 
-**Substitutes:** getRotationMatrix(rotationVector:
+**Substitutes:** [getRotationMatrix(rotationVector:](arkts-sensorservice-sensor-getrotationmatrix-f.md#getrotationmatrix-1)
 
 <!--Device-sensor-function createRotationMatrix(rotationVector: Array<number>): Promise<Array<number>>--><!--Device-sensor-function createRotationMatrix(rotationVector: Array<number>): Promise<Array<number>>-End-->
 
@@ -73,13 +75,13 @@ Converts a rotation vector into a rotation matrix. This API uses a promise to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector to convert. |
+| rotationVector | Array&lt;number&gt; | Yes | Rotation vector to convert. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the rotation matrix. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the rotation matrix. |
 
 **Example**
 
@@ -100,6 +102,7 @@ promise.then((data: Array<number>) => {
 ```
 
 
+<a id="createrotationmatrix-2"></a>
 ## createRotationMatrix
 
 ```TypeScript
@@ -112,7 +115,7 @@ Obtains the rotation matrix based on a gravity vector and geomagnetic vector. Th
 
 **Deprecated since:** 9
 
-**Substitutes:** getRotationMatrix(gravity:
+**Substitutes:** [getRotationMatrix(gravity:](arkts-sensorservice-sensor-getrotationmatrix-f.md#getrotationmatrix-1)
 
 <!--Device-sensor-function createRotationMatrix(gravity: Array<number>, geomagnetic: Array<number>, callback: AsyncCallback<RotationMatrixResponse>): void--><!--Device-sensor-function createRotationMatrix(gravity: Array<number>, geomagnetic: Array<number>, callback: AsyncCallback<RotationMatrixResponse>): void-End-->
 
@@ -122,9 +125,9 @@ Obtains the rotation matrix based on a gravity vector and geomagnetic vector. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| gravity | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Gravity vector. |
-| geomagnetic | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Geomagnetic vector. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RotationMatrixResponse> | Yes | Callback used to return the rotation matrix. |
+| gravity | Array&lt;number&gt; | Yes | Gravity vector. |
+| geomagnetic | Array&lt;number&gt; | Yes | Geomagnetic vector. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RotationMatrixResponse&gt; | Yes | Callback used to return the rotation matrix. |
 
 **Example**
 
@@ -144,6 +147,7 @@ sensor.createRotationMatrix([-0.27775216, 0.5351276, 9.788099], [210.87253, -78.
 ```
 
 
+<a id="createrotationmatrix-3"></a>
 ## createRotationMatrix
 
 ```TypeScript
@@ -156,7 +160,7 @@ Obtains the rotation matrix based on a gravity vector and geomagnetic vector. Th
 
 **Deprecated since:** 9
 
-**Substitutes:** getRotationMatrix(gravity:
+**Substitutes:** [getRotationMatrix(gravity:](arkts-sensorservice-sensor-getrotationmatrix-f.md#getrotationmatrix-1)
 
 <!--Device-sensor-function createRotationMatrix(gravity: Array<number>, geomagnetic: Array<number>,): Promise<RotationMatrixResponse>--><!--Device-sensor-function createRotationMatrix(gravity: Array<number>, geomagnetic: Array<number>,): Promise<RotationMatrixResponse>-End-->
 
@@ -166,12 +170,12 @@ Obtains the rotation matrix based on a gravity vector and geomagnetic vector. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| gravity | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Gravity vector. |
-| geomagnetic | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Geomagnetic vector. |
+| gravity | Array&lt;number&gt; | Yes | Gravity vector. |
+| geomagnetic | Array&lt;number&gt; | Yes | Geomagnetic vector. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RotationMatrixResponse> | Promise used to return the rotation matrix. |
+| Promise&lt;RotationMatrixResponse&gt; | Promise used to return the rotation matrix. |
 

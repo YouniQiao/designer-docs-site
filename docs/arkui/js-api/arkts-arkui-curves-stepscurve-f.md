@@ -6,6 +6,7 @@
 import { curves } from '@kit.ArkUI';
 ```
 
+<a id="stepscurve"></a>
 ## stepsCurve
 
 ```TypeScript
@@ -33,7 +34,7 @@ Creates a step curve.
 
 | Type | Description |
 | --- | --- |
-| [ICurve](../arkts-components/arkts-arkui-common-icurve-i.md) | Interpolation curve. |
+| [ICurve](../arkts-components/arkts-arkui-icurve-i.md) | Interpolation curve. |
 
 **Example**
 

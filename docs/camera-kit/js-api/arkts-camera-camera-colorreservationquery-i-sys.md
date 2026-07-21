@@ -16,6 +16,7 @@ Provides APIs for querying the color retention type supported by the device.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getsupportedcolorreservationtypes"></a>
 ## getSupportedColorReservationTypes
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the supported color reservation types.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ColorReservationType> | Array of color reservation types supported. |
+| Array&lt;ColorReservationType&gt; | Array of color reservation types supported. |
 
 **Error codes:**
 

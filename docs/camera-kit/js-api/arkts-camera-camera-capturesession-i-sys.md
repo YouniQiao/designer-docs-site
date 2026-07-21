@@ -18,6 +18,7 @@ Implements a capture session, which saves all [CameraInput](arkts-camera-camera-
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getbeauty"></a>
 ## getBeauty
 
 ```TypeScript
@@ -76,6 +77,7 @@ function getBeauty(captureSession: camera.CaptureSession): number {
 
 ```
 
+<a id="getsupportedbeautyrange"></a>
 ## getSupportedBeautyRange
 
 ```TypeScript
@@ -112,7 +114,7 @@ Obtains the levels that can be set a beauty type. The beauty levels vary accordi
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array of levels supported. |
+| Array&lt;number&gt; | Array of levels supported. |
 
 **Error codes:**
 
@@ -134,6 +136,7 @@ function getSupportedBeautyRange(captureSession: camera.CaptureSession): Array<n
 
 ```
 
+<a id="getsupportedbeautytypes"></a>
 ## getSupportedBeautyTypes
 
 ```TypeScript
@@ -158,7 +161,7 @@ Obtains the supported beauty types.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<BeautyType> | Array of beauty types supported. |
+| Array&lt;BeautyType&gt; | Array of beauty types supported. |
 
 **Error codes:**
 
@@ -176,6 +179,7 @@ function getSupportedBeautyTypes(captureSession: camera.CaptureSession): Array<c
 
 ```
 
+<a id="setbeauty"></a>
 ## setBeauty
 
 ```TypeScript

@@ -16,6 +16,7 @@ Before calling any of the following APIs, you must use [floatingBall.create()](a
 import { floatingBall } from '@kit.ArkUI';
 ```
 
+<a id="getfloatingballwindowinfo"></a>
 ## getFloatingBallWindowInfo
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the floating ball window information. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FloatingBallWindowInfo> | Promise used to return the floating ball window information. |
+| Promise&lt;FloatingBallWindowInfo&gt; | Promise used to return the floating ball window information. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ floatingBallController.getFloatingBallWindowInfo().then((data: floatingBall.Floa
 
 ```
 
+<a id="off"></a>
 ## off('stateChange')
 
 ```TypeScript
@@ -80,7 +82,7 @@ Unregisters the listener for lifecycle state changes of the floating ball.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stateChange' | Yes | Event type. The event **'stateChange'** is triggered when the floating ball lifecycle state changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FloatingBallState> | No | Callback used to return the floating ball lifecycle state. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FloatingBallState&gt; | No | Callback used to return the floating ball lifecycle state. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -106,6 +108,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('click')
 
 ```TypeScript
@@ -125,7 +128,7 @@ Unregisters the listener for click events of the floating ball.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'click' | Yes | Event type. The event **'click'** is triggered when the floating ball is tapped. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback invoked when the floating ball is tapped. It does not return any parameter. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback invoked when the floating ball is tapped. It does not return any parameter. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -151,6 +154,7 @@ try {
 
 ```
 
+<a id="offdestroy"></a>
 ## offDestroy
 
 ```TypeScript
@@ -171,7 +175,7 @@ Unregister floating ball destroy event listener.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Indicates the callback function. If not provided,all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Indicates the callback function. If not provided,all callbacks for the given event type will be removed. |
 
 **Error codes:**
 
@@ -203,6 +207,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('stateChange')
 
 ```TypeScript
@@ -222,7 +227,7 @@ Registers a listener for lifecycle state changes of the floating ball. To preven
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stateChange' | Yes | Event type. The event **'stateChange'** is triggered when the floating ball lifecycle state changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FloatingBallState> | Yes | Callback used to return the floating ball lifecycle state. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FloatingBallState&gt; | Yes | Callback used to return the floating ball lifecycle state. |
 
 **Error codes:**
 
@@ -249,6 +254,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on('click')
 
 ```TypeScript
@@ -268,7 +274,7 @@ Registers a listener for click events of the floating ball. To prevent memory le
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'click' | Yes | Event type. The event **'click'** is triggered when the floating ball is tapped. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback invoked when the floating ball is tapped. It does not return any parameter. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback invoked when the floating ball is tapped. It does not return any parameter. |
 
 **Error codes:**
 
@@ -295,6 +301,7 @@ try {
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -315,7 +322,7 @@ Register floating ball destroy event listener.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | Used to handle {'destroy'} command. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Used to handle {'destroy'} command. |
 
 **Error codes:**
 
@@ -342,6 +349,7 @@ try {
 
 ```
 
+<a id="restoremainwindow"></a>
 ## restoreMainWindow
 
 ```TypeScript
@@ -368,7 +376,7 @@ Restores the main window of the application and loads the specified page. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -408,6 +416,7 @@ try {
 
 ```
 
+<a id="setfloatingballvisibilityinapp"></a>
 ## setFloatingBallVisibilityInApp
 
 ```TypeScript
@@ -416,9 +425,9 @@ setFloatingBallVisibilityInApp(isVisible: boolean): Promise<void>
 
 Sets whether the floating ball is visible in the application. This API uses a promise to return the result.
 
-- When the application is on the recent tasks screen (the [lifecycle state](../../../../windowmanager/window-overview.md#lifecycle-states) is **PAUSED**), the floating ball is invisible.  
+- When the application is on the recent tasks screen (the [lifecycle state](docroot://windowmanager/window-overview.md#lifecycle-states) is **PAUSED**), the floating ball is invisible.  
 - By default (when this API is not called) or when this API is called with the value **true** passed in, the floating ball is visible except on the recent tasks screen.  
-- When this API is called with the value **false** passed in, the floating ball is invisible when the application is in the foreground (the [lifecycle state](../../../../windowmanager/window-overview.md#lifecycle-states) is **SHOWN** or **RESUMED**) and is visible when the application is in the background (the [lifecycle state](../../../../windowmanager/window-overview.md#lifecycle-states) is **HIDDEN**).
+- When this API is called with the value **false** passed in, the floating ball is invisible when the application is in the foreground (the [lifecycle state](docroot://windowmanager/window-overview.md#lifecycle-states) is **SHOWN** or **RESUMED**) and is visible when the application is in the background (the [lifecycle state](docroot://windowmanager/window-overview.md#lifecycle-states) is **HIDDEN**).
 
 **Since:** 24
 
@@ -438,7 +447,7 @@ Sets whether the floating ball is visible in the application. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -462,6 +471,7 @@ floatingBallController?.setFloatingBallVisibilityInApp(false).then(() => {
 
 ```
 
+<a id="startfloatingball"></a>
 ## startFloatingBall
 
 ```TypeScript
@@ -488,7 +498,7 @@ Starts the floating ball. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -528,6 +538,7 @@ try {
 
 ```
 
+<a id="stopfloatingball"></a>
 ## stopFloatingBall
 
 ```TypeScript
@@ -546,7 +557,7 @@ Stops the floating ball. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -570,6 +581,7 @@ floatingBallController.stopFloatingBall().then(() => {
 
 ```
 
+<a id="updatefloatingball"></a>
 ## updateFloatingBall
 
 ```TypeScript
@@ -594,7 +606,7 @@ Updates the floating ball. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

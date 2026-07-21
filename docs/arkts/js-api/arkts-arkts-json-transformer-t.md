@@ -8,7 +8,7 @@ Defines the type of the conversion result function.
 
 When used as a parameter of [JSON.parse](arkts-arkts-json-parse-f.md#parse-1), the function is called by each member of the object,allowing for custom data processing or conversion during parsing.
 
-When used as a parameter of [JSON.stringify](arkts-arkts-json-stringify-f.md#stringify-2), the function is used to transfer and handle each property during serialization.
+When used as a parameter of [JSON.stringify](arkts-arkts-json-stringify-f.md#stringify-1), the function is used to transfer and handle each property during serialization.
 
 **Since:** 12
 
@@ -22,13 +22,13 @@ When used as a parameter of [JSON.stringify](arkts-arkts-json-stringify-f.md#str
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| this | Object | Yes | Object to which the key-value pair to parse belongs. |
-| key | string | Yes | Key to parse. |
-| value | Object | Yes | Value of the key. |
+| this | Object | Yes | Object to which the key-value pair to parse belongs.  |
+| key | string | Yes | Key to parse.  |
+| value | Object | Yes | Value of the key.  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Object \| undefined \| null | Return an Object, undefined or null value |
+| Object \| undefined \| null | Return an Object, undefined or null value  |
 

@@ -6,13 +6,14 @@
 import { browser } from '@kit.MDMKit';
 ```
 
+<a id="setmanagedbrowserpolicy"></a>
 ## setManagedBrowserPolicy
 
 ```TypeScript
 function setManagedBrowserPolicy(admin: Want, bundleName: string, policyName: string, policyValue: string): void
 ```
 
-Sets the browser policy. After the setting is successful, the system common event [COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed)is released.
+Sets the browser policy. After the setting is successful, the system common event [COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed)is released.
 
 **Since:** 15
 

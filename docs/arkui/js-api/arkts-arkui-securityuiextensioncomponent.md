@@ -31,8 +31,8 @@ Construct the UIExtensionComponent.<br/>Called when the UIExtensionComponent is 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | import('../api/@ohos.app.ability.Want').default | Yes | indicates the want of UIExtensionAbility |
-| options | SecurityUIExtensionOptions | No | Construction configuration of UIExtensionComponentAttribute |
+| want | import('../api/@ohos.app.ability.Want').default | Yes | indicates the want of UIExtensionAbility  |
+| options | [SecurityUIExtensionOptions](arkts-arkui-securityuiextensionoptions-i-sys.md) | No | Construction configuration of UIExtensionComponentAttribute  |
 
 ## Summary
 

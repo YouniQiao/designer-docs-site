@@ -9,10 +9,10 @@ This module provides API for creating and displaying toasts, dialog boxes, and a
 > in the lifecycle of the UIAbility.  
 >  
 > - The functionality of this module depends on UI context. This means that the APIs of this module cannot be used  
-> where [the UI context is ambiguous](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). For details, see  
+> where [the UI context is ambiguous](docroot://ui/arkts-global-interface.md#ambiguous-ui-context). For details, see  
 > [UIContext](arkts-arkui-uicontext.md). It is recommended that you use the dialog box APIs provided by  
 > **UIContext**<!--Del-->, except for UI-less scenarios such as  
-> [ServiceExtensionAbility](../../../../application-models/serviceextensionability-sys.md)<!--DelEnd-->.
+> [ServiceExtensionAbility](docroot://application-models/serviceextensionability-sys.md)<!--DelEnd-->.
 
 **Since:** 9
 
@@ -32,22 +32,22 @@ import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [showToast](arkts-arkui-promptaction-showtoast-f.md#showtoast-1) | Creates and displays a toast. |
-| [openToast](arkts-arkui-promptaction-opentoast-f.md#opentoast-1) | Shows a toast. This API uses a promise to return the toast ID. |
-| [closeToast](arkts-arkui-promptaction-closetoast-f.md#closetoast-1) | Closes the specified toast. |
-| [showDialog](arkts-arkui-promptaction-showdialog-f.md#showdialog-1) | Creates and displays a dialog box. This API uses an asynchronous callback to return the result. |
-| [showDialog](arkts-arkui-promptaction-showdialog-f.md#showdialog-2) | Creates and displays a dialog box in the given settings. This API uses a promise to return the result. |
-| [openCustomDialog](arkts-arkui-promptaction-opencustomdialog-f.md#opencustomdialog-1) | Opens a custom dialog box. This API uses a promise to return the result.&lt;!--Del--&gt;This API cannot be used in **ServiceExtension**.&lt;!--DelEnd--&gt;By default, the width of the dialog box in portrait mode is the width of the window where it is located minus the left and right margins (40 vp for 2-in-1 devices and 16 vp for other devices), and the maximum width is 400 vp. |
-| [closeCustomDialog](arkts-arkui-promptaction-closecustomdialog-f.md#closecustomdialog-1) | Closes the specified custom dialog box. |
-| [showActionMenu](arkts-arkui-promptaction-showactionmenu-f.md#showactionmenu-1) | Creates and displays an action menu. This API uses an asynchronous callback to return the result. |
-| [showActionMenu](arkts-arkui-promptaction-showactionmenu-f.md#showactionmenu-2) | Creates and displays an action menu in the given settings. This API uses a promise to return the result. |
+| [showToast](arkts-arkui-promptaction-showtoast-f.md#showtoast) | Creates and displays a toast. |
+| [openToast](arkts-arkui-promptaction-opentoast-f.md#opentoast) | Shows a toast. This API uses a promise to return the toast ID. |
+| [closeToast](arkts-arkui-promptaction-closetoast-f.md#closetoast) | Closes the specified toast. |
+| [showDialog](arkts-arkui-promptaction-showdialog-f.md#showdialog) | Creates and displays a dialog box. This API uses an asynchronous callback to return the result. |
+| [showDialog](arkts-arkui-promptaction-showdialog-f.md#showdialog-1) | Creates and displays a dialog box in the given settings. This API uses a promise to return the result. |
+| [openCustomDialog](arkts-arkui-promptaction-opencustomdialog-f.md#opencustomdialog) | Opens a custom dialog box. This API uses a promise to return the result.  <!--Del-->This API cannot be used in **ServiceExtension**.<!--DelEnd-->  By default, the width of the dialog box in portrait mode is the width of the window where it is located minus the left and right margins (40 vp for 2-in-1 devices and 16 vp for other devices), and the maximum width is 400 vp. |
+| [closeCustomDialog](arkts-arkui-promptaction-closecustomdialog-f.md#closecustomdialog) | Closes the specified custom dialog box. |
+| [showActionMenu](arkts-arkui-promptaction-showactionmenu-f.md#showactionmenu) | Creates and displays an action menu. This API uses an asynchronous callback to return the result. |
+| [showActionMenu](arkts-arkui-promptaction-showactionmenu-f.md#showactionmenu-1) | Creates and displays an action menu in the given settings. This API uses a promise to return the result. |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
 | [CommonController](arkts-arkui-promptaction-commoncontroller-c.md) | Implements a common controller for managing components related to **promptAction**. |
-| [DialogController](arkts-arkui-promptaction-dialogcontroller-c.md) | Implements a custom dialog controller that inherits from [CommonController](#commoncontroller18).It can be used as a member variable of **UIContext** to display custom dialog boxes. For specific usage,see the examples for [openCustomDialogWithController](arkts-apis-uicontext-promptaction.md#opencustomdialogwithcontroller18)and [presentCustomDialog](arkts-apis-uicontext-promptaction.md#presentcustomdialog18). |
+| [DialogController](arkts-arkui-promptaction-dialogcontroller-c.md) | Implements a custom dialog controller that inherits from [CommonController](#commoncontroller18).  It can be used as a member variable of **UIContext** to display custom dialog boxes. For specific usage,see the examples for [openCustomDialogWithController](arkts-apis-uicontext-promptaction.md#opencustomdialogwithcontroller18)and [presentCustomDialog](arkts-apis-uicontext-promptaction.md#presentcustomdialog18). |
 
 ### Interfaces
 

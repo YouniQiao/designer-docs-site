@@ -1,5 +1,6 @@
 # getProcessRunningInfos
 
+<a id="getprocessrunninginfos"></a>
 ## getProcessRunningInfos
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains information about the running processes. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProcessRunningInfo>> | Promise used to return the information about the running processes. |
+| Promise&lt;Array&lt;ProcessRunningInfo&gt;&gt; | Promise used to return the information about the running processes. |
 
 **Example**
 
@@ -45,6 +46,7 @@ appManager.getProcessRunningInfos().then((data) => {
 ```
 
 
+<a id="getprocessrunninginfos-1"></a>
 ## getProcessRunningInfos
 
 ```TypeScript
@@ -73,7 +75,7 @@ Obtains information about the running processes. This API uses an asynchronous c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ProcessRunningInfo>> | Yes | Callback used to return the information about the running processes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ProcessRunningInfo&gt;&gt; | Yes | Callback used to return the information about the running processes. |
 
 **Example**
 

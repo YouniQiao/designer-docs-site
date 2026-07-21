@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="joinconference"></a>
 ## joinConference
 
 ```TypeScript
@@ -27,8 +28,8 @@ Join the conference call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mainCallId | number | Yes | Indicates the identifier of the main call. |
-| callNumberList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Indicates a call list. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of joinConference. |
+| callNumberList | Array&lt;string&gt; | Yes | Indicates a call list. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of joinConference. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ call.joinConference(1, callNumberList, (err: BusinessError) => {
 ```
 
 
+<a id="joinconference-1"></a>
 ## joinConference
 
 ```TypeScript
@@ -81,13 +83,13 @@ Join the conference call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mainCallId | number | Yes | Indicates the identifier of the main call. |
-| callNumberList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Indicates a call list. |
+| callNumberList | Array&lt;string&gt; | Yes | Indicates a call list. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the joinConference. |
+| Promise&lt;void&gt; | The promise returned by the joinConference. |
 
 **Error codes:**
 

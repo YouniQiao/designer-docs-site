@@ -6,6 +6,7 @@
 import { remoteDevice } from '@kit.ConnectivityKit';
 ```
 
+<a id="onpairingstatechange"></a>
 ## onPairingStateChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ This event is accessible only to applications that granted the ohos.permission.N
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PairingStateParam> | Yes | Callback function used to listen for the pairing state event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;PairingStateParam&gt; | Yes | Callback function used to listen for the pairing state event. |
 
 **Error codes:**
 

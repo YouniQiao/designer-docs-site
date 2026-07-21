@@ -14,6 +14,7 @@ Defines StepperItem Component instance.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="nextlabel"></a>
 ## nextLabel
 
 ```TypeScript
@@ -42,6 +43,7 @@ Sets the text label of the button on the right. The default value is **Start** f
 | --- | --- | --- | --- |
 | value | string | Yes | Text label of the button on the right. When the string is too long, it is scaled down,wrapped in two lines, and then clipped. |
 
+<a id="prevlabel"></a>
 ## prevLabel
 
 ```TypeScript
@@ -70,6 +72,7 @@ Sets the text label of the button on the left, which is not displayed on the fir
 | --- | --- | --- | --- |
 | value | string | Yes | Text label of the button on the left. When the string is too long, it is scaled down,wrapped in two lines, and then clipped. |
 
+<a id="status"></a>
 ## status
 
 ```TypeScript

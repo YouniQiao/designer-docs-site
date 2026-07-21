@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="getremotedevicetype"></a>
 ## getRemoteDeviceType
 
 ```TypeScript
@@ -37,7 +38,7 @@ Get remote device custom type.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DeviceType> | Returns the device type. |
+| Promise&lt;DeviceType&gt; | Returns the device type. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ HashSet is implemented based on HashMap. In HashSet, only the value object is pr
 import { HashSet } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -80,6 +81,7 @@ for(let i = 0;i < 10;i++) {
 
 ```
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -123,6 +125,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -157,6 +160,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -186,6 +190,7 @@ let hashSet = new HashSet<number>();
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -206,7 +211,7 @@ Returns an iterator that contains all the elements in this HashSet.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[T, T]> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[T, T]&gt; | Iterator obtained. |
 
 **Error codes:**
 
@@ -246,6 +251,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -266,8 +272,8 @@ Uses a callback to traverse each element.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value?: T, key?: T, set?: HashSet<T>) => void | Yes | Callback invoked to traverse the elements in the HashSet. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value?: T, key?: T, set?: HashSet&lt;T&gt;) =&gt; void | Yes | Callback invoked to traverse the elements in the HashSet. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -301,6 +307,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -345,6 +352,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -382,6 +390,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -427,6 +436,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -447,7 +457,7 @@ Returns an iterator that contains all the values in this HashSet.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | Iterator obtained. |
 
 **Error codes:**
 

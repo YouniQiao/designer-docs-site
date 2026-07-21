@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getscaninfolist"></a>
 ## getScanInfoList
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtain the scanned station list. If does't have the permission of ohos.permissio
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WifiScanInfo> | Returns information about scanned Wi-Fi hotspot if any. |
+| Array&lt;WifiScanInfo&gt; | Returns information about scanned Wi-Fi hotspot if any. |
 
 **Error codes:**
 

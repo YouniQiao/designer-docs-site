@@ -6,6 +6,7 @@
 import { bluetooth } from '@kit.ConnectivityKit';
 ```
 
+<a id="getremotedevicename"></a>
 ## getRemoteDeviceName
 
 ```TypeScript

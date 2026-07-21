@@ -14,6 +14,7 @@ A class used to obtain the color from an image. Before calling any method of Col
 import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
+<a id="getaveragecolor"></a>
 ## getAverageColor
 
 ```TypeScript
@@ -67,6 +68,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="gethighestsaturationcolor"></a>
 ## getHighestSaturationColor
 
 ```TypeScript
@@ -120,6 +122,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getlargestproportioncolor"></a>
 ## getLargestProportionColor
 
 ```TypeScript
@@ -173,6 +176,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getmaincolor"></a>
 ## getMainColor
 
 ```TypeScript
@@ -195,7 +199,7 @@ Obtains the main color from the image and writes the result to a Color instance.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Color> | Promise used to return the color value of the main color. If the operation fails, an error message is returned. |
+| Promise&lt;Color&gt; | Promise used to return the color value of the main color. If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -228,6 +232,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getmaincolorsync"></a>
 ## getMainColorSync
 
 ```TypeScript
@@ -281,6 +286,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="gettopproportioncolors"></a>
 ## getTopProportionColors
 
 ```TypeScript
@@ -309,7 +315,7 @@ Obtains a given number of colors with the top proportions in the image. This API
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Color \| null> | Array of colors, sorted by proportion.  - If the number of colors obtained is less than the value of colorCount, the array size is the actual number obtained.  - If the colors fail to be obtained or the number of colors obtained is less than 1, [null] is returned.  - If the value of colorCount is greater than 10, an array holding the first 10 colors with the top proportions is returned. |
+| Array&lt;Color \| null&gt; | Array of colors, sorted by proportion.   - If the number of colors obtained is less than the value of colorCount, the array size is the actual number obtained.   - If the colors fail to be obtained or the number of colors obtained is less than 1, [null] is returned.   - If the value of colorCount is greater than 10, an array holding the first 10 colors with the top proportions is returned. |
 
 **Example**
 
@@ -344,6 +350,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="isblackorwhiteorgraycolor"></a>
 ## isBlackOrWhiteOrGrayColor
 
 ```TypeScript

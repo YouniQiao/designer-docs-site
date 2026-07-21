@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="getsubscribeinfo"></a>
 ## getSubscribeInfo
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the subscription information about the notification extension of this ap
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NotificationExtensionSubscriptionInfo[]> | Promise used to return the [NotificationExtensionSubscriptionInfo[]]{@link ./notification/NotificationExtensionSubscriptionInfo:NotificationExtensionSubscriptionInfo}array. |
+| Promise&lt;NotificationExtensionSubscriptionInfo[]&gt; | Promise used to return the [NotificationExtensionSubscriptionInfo[]]{@link ./notification/NotificationExtensionSubscriptionInfo:NotificationExtensionSubscriptionInfo}array. |
 
 **Error codes:**
 

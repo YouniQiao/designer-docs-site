@@ -22,6 +22,7 @@ Provides the capability of displaying and hiding of the magnifier. The magnifier
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="bind"></a>
 ## bind
 
 ```TypeScript
@@ -44,8 +45,9 @@ Binds the magnifier to the component with the specified ID.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | string | Yes | Component ID, which can be set through the universal attribute [id](../arkts-components/arkts-arkui-common-commonmethod-c.md#id-1)or [key](../arkts-components/arkts-arkui-common-commonmethod-c.md#key-1). If the component ID is an empty string or no component is found based on the specified ID, the magnifier is not displayed. |
+| id | string | Yes | Component ID, which can be set through the universal attribute [id](../arkts-components/arkts-arkui-commonmethod-c.md#id-1)or [key](../arkts-components/arkts-arkui-commonmethod-c.md#key-1). If the component ID is an empty string or no component is found based on the specified ID, the magnifier is not displayed. |
 
+<a id="show"></a>
 ## show
 
 ```TypeScript
@@ -76,6 +78,7 @@ Sets the position of the component content displayed by the magnifier relative t
 | x | number | Yes | Horizontal coordinate of the component content displayed by the magnifier, relative to the component itself, in vp. If the coordinate value is greater than the component width or less than 0, the magnifier is not displayed. If the value is **undefined**, the current display status of the magnifier is retained. |
 | y | number | Yes | Vertical coordinate of the component content displayed by the magnifier, relative to the component itself, in vp. If the coordinate value is greater than the component height or less than 0, the magnifier is not displayed. If the value is **undefined**, the current display status of the magnifier is retained. |
 
+<a id="unbind"></a>
 ## unbind
 
 ```TypeScript

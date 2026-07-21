@@ -6,6 +6,7 @@
 import { backgroundProcessManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="getpowersavemode"></a>
 ## getPowerSaveMode
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the power saving mode of a process. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PowerSaveMode> | Promise that returns the power saving mode of a process. |
+| Promise&lt;PowerSaveMode&gt; | Promise that returns the power saving mode of a process. |
 
 **Error codes:**
 

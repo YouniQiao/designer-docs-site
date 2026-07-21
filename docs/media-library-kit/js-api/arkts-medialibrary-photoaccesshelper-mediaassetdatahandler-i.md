@@ -14,6 +14,7 @@ MediaAssetDataHandler is a media asset handler used to customize the media asset
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="ondataprepared"></a>
 ## onDataPrepared
 
 ```TypeScript
@@ -41,5 +42,5 @@ Information returned by **map**:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | T | Yes | Data of the image asset that is ready. It is of the generic type and supports the following data types: ArrayBuffer, [ImageSource](../../apis-image-kit/arkts-apis/arkts-image-image-imagesource-i.md),[MovingPhoto](arkts-file-photoaccesshelper.md), and boolean. |
-| map | [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<string, string> | No | Additional information about the image asset, such as the image quality.Currently, only **quality** is supported.<br>**Since:** 12 |
+| map | Map&lt;string, string&gt; | No | Additional information about the image asset, such as the image quality.Currently, only **quality** is supported.<br>**Since:** 12 |
 

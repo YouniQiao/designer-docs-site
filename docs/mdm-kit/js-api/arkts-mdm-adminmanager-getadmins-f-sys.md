@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="getadmins"></a>
 ## getAdmins
 
 ```TypeScript
@@ -28,7 +29,7 @@ Queries all device administrator applications of the current user. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Want>> | Promise that contains all activated device administrator applications. |
+| Promise&lt;Array&lt;Want&gt;&gt; | Promise that contains all activated device administrator applications. |
 
 **Error codes:**
 

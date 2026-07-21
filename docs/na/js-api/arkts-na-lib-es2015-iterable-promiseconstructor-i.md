@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface PromiseConstructor--><!--Device-unnamed-interface PromiseConstructor-End-->
 
+<a id="all"></a>
 ## all
 
 ```TypeScript
@@ -16,14 +17,15 @@ Creates a Promise that is resolved with an array of results when all of the prov
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| values | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<T \| PromiseLike<T>> | Yes |  |
+| values | Iterable&lt;T \| PromiseLike&lt;T&gt;&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](arkts-na-lib-es5-promise-i.md)<Awaited<T>[]> |  |
+| Promise&lt;Awaited&lt;T&gt;[]&gt; |  |
 
+<a id="race"></a>
 ## race
 
 ```TypeScript
@@ -38,11 +40,11 @@ Creates a Promise that is resolved or rejected when any of the provided Promises
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| values | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<T \| PromiseLike<T>> | Yes |  |
+| values | Iterable&lt;T \| PromiseLike&lt;T&gt;&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](arkts-na-lib-es5-promise-i.md)<Awaited<T>> |  |
+| Promise&lt;Awaited&lt;T&gt;&gt; |  |
 

@@ -10,6 +10,7 @@ Defines the RichText attribute functions.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="oncomplete"></a>
 ## onComplete
 
 ```TypeScript
@@ -30,8 +31,9 @@ Triggered when the RichText loading ends.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () => void | Yes |  |
+| callback | () =&gt; void | Yes |  |
 
+<a id="onstart"></a>
 ## onStart
 
 ```TypeScript
@@ -52,5 +54,5 @@ Triggered when the RichText loading starts.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () => void | Yes |  |
+| callback | () =&gt; void | Yes |  |
 

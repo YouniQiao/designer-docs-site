@@ -1,6 +1,6 @@
 # Priority
 
-Enumerates the priorities available for created tasks. The task priority applies during task execution. The worker thread priority is updated with the task priority. For details about the mappings, see [QoS Level](../../../../napi/qos-guidelines.md#qos-level).
+Enumerates the priorities available for created tasks. The task priority applies during task execution. The worker thread priority is updated with the task priority. For details about the mappings, see [QoS Level](docroot://napi/qos-guidelines.md#qos-level).
 
 **Since:** 9
 

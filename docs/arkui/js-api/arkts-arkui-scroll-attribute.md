@@ -10,6 +10,7 @@ Defines the scroll attribute functions.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="edgeeffect"></a>
 ## edgeEffect
 
 ```TypeScript
@@ -30,9 +31,10 @@ Sets the effect used when the scroll boundary is reached.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| edgeEffect | [EdgeEffect](../arkts-apis/arkts-arkui-enums-edgeeffect-e.md) | Yes | Effect used when the scroll boundary is reached. The spring and shadow effects are supported.<br>Default value: <em>EdgeEffect.None</em> |
-| options | [EdgeEffectOptions](arkts-arkui-common-edgeeffectoptions-i.md) | No | Whether to enable the scroll effect when the component content is smaller than the component itself.The value <em>{ alwaysEnabled: true }</em> means to enable the scroll effect, and <em>{ alwaysEnabled: false }</em> means the opposite.<br>Default value: <em>{ alwaysEnabled: true }</em><br>**Since:** 11 |
+| edgeEffect | [EdgeEffect](../arkts-apis/arkts-arkui-edgeeffect-e.md) | Yes | Effect used when the scroll boundary is reached. The spring and shadow effects are supported.<br>Default value: <em>EdgeEffect.None</em> |
+| options | [EdgeEffectOptions](arkts-arkui-edgeeffectoptions-i.md) | No | Whether to enable the scroll effect when the component content is smaller than the component itself.The value <em>{ alwaysEnabled: true }</em> means to enable the scroll effect, and <em>{ alwaysEnabled: false }</em> means the opposite.<br>Default value: <em>{ alwaysEnabled: true }</em><br>**Since:** 11 |
 
+<a id="enablebounceszoom"></a>
 ## enableBouncesZoom
 
 ```TypeScript
@@ -57,6 +59,7 @@ Enable bounces zoom scale.
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Enable bounces zoom scale.<br>Default value: true. |
 
+<a id="enablepaging"></a>
 ## enablePaging
 
 ```TypeScript
@@ -81,6 +84,7 @@ Sets whether to enable the swipe-to-turn-pages feature.If both <em>enablePaging<
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to enable the swipe-to-turn-pages feature. Default value: false.The value <em>true</em> means to enable the swipe-to-turn-pages feature, and <em>false</em> means the opposite. |
 
+<a id="enablescrollinteraction"></a>
 ## enableScrollInteraction
 
 ```TypeScript
@@ -105,6 +109,7 @@ Sets whether to support scroll gestures. When this attribute is set to <em>false
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to support scroll gestures.<br>Default value: <em>true</em> |
 
+<a id="friction"></a>
 ## friction
 
 ```TypeScript
@@ -129,6 +134,7 @@ Sets the friction coefficient. It applies only to gestures in the scrolling area
 | --- | --- | --- | --- |
 | value | number \| Resource | Yes | Friction coefficient.<br>Default value: <em>0.9</em> for wearable devices and <em>0.6</em> for non-wearable devices<br>Since API version 11, the default value for non-wearable devices is <em>0.7</em>.<br>Since API version 12, the default value for non-wearable devices is <em>0.75</em>. |
 
+<a id="initialoffset"></a>
 ## initialOffset
 
 ```TypeScript
@@ -151,8 +157,9 @@ Sets the initial scrolling offset. This attribute takes effect only during the i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [OffsetOptions](arkts-arkui-scroll-offsetoptions-i.md) | Yes | Initial scrolling offset. When the value specified is a percentage,the initial scrolling offset is calculated as the product of the <em>Scroll</em> component's size in the main axis direction and the percentage value. |
+| value | [OffsetOptions](arkts-arkui-offsetoptions-i.md) | Yes | Initial scrolling offset. When the value specified is a percentage,the initial scrolling offset is calculated as the product of the <em>Scroll</em> component's size in the main axis direction and the percentage value. |
 
+<a id="maxzoomscale"></a>
 ## maxZoomScale
 
 ```TypeScript
@@ -177,6 +184,7 @@ Set maximum zoom scale.
 | --- | --- | --- | --- |
 | scale | number | Yes | Set maximum zoom scale.<br>Default value: 1.<br>Value range: (0, +∞). If this parameter is set to a value less than or equal to 0, the default value is used. |
 
+<a id="minzoomscale"></a>
 ## minZoomScale
 
 ```TypeScript
@@ -201,6 +209,7 @@ Set minimum zoom scale.Setting either <em>maxZoomScale</em> and <em>minZoomScale
 | --- | --- | --- | --- |
 | scale | number | Yes | Set minimum zoom scale.<br>Default value: 1.<br>Value range: (0, maxZoomScale]. If the value is greater than <em>maxZoomScale</em>,<em>maxZoomScale</em> is used. |
 
+<a id="nestedscroll"></a>
 ## nestedScroll
 
 ```TypeScript
@@ -223,8 +232,9 @@ Sets the nested scrolling options. You can set the nested scrolling mode in the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [NestedScrollOptions](arkts-arkui-common-nestedscrolloptions-i.md) | Yes | Nested scrolling options.<br>Default value: <em>{ scrollForward: NestedScrollMode.SELF_ONLY, scrollBackward: NestedScrollMode.SELF_ONLY}</em> |
+| value | [NestedScrollOptions](arkts-arkui-nestedscrolloptions-i.md) | Yes | Nested scrolling options.<br>Default value: <em>{ scrollForward: NestedScrollMode.SELF_ONLY, scrollBackward: NestedScrollMode.SELF_ONLY}</em> |
 
+<a id="ondidscroll"></a>
 ## onDidScroll
 
 ```TypeScript
@@ -251,6 +261,7 @@ Triggered when the Scroll component scrolls.
 | --- | --- | --- | --- |
 | handler | [ScrollOnScrollCallback](arkts-arkui-scrollonscrollcallback-t.md) | Yes | Callback triggered when the <em>Scroll</em> component scrolls. |
 
+<a id="ondidzoom"></a>
 ## onDidZoom
 
 ```TypeScript
@@ -275,6 +286,7 @@ Called when the Scroll did zoom.
 | --- | --- | --- | --- |
 | event | [ScrollOnDidZoomCallback](arkts-arkui-scrollondidzoomcallback-t.md) | Yes | callback of zoom. |
 
+<a id="onscroll"></a>
 ## onScroll
 
 ```TypeScript
@@ -301,8 +313,9 @@ Triggered to return the horizontal and vertical offsets, in vp, during scrolling
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (xOffset: number, yOffset: number) => void | Yes | callback when scroll,xOffset: Actual scroll offset relative to the previous frame.<br>Unit: vp yOffset: Vertical offset relative to the previous frame.A positive offset indicates scrolling upward, and a negative offset indicates scrolling downward.<br>Unit: vp |
+| event | (xOffset: number, yOffset: number) =&gt; void | Yes | callback when scroll,xOffset: Actual scroll offset relative to the previous frame.<br>Unit: vp yOffset: Vertical offset relative to the previous frame.A positive offset indicates scrolling upward, and a negative offset indicates scrolling downward.<br>Unit: vp |
 
+<a id="onscrolledge"></a>
 ## onScrollEdge
 
 ```TypeScript
@@ -327,6 +340,7 @@ Triggered when scrolling reaches the edge.Anonymous Object Rectification.
 | --- | --- | --- | --- |
 | event | [OnScrollEdgeCallback](arkts-arkui-onscrolledgecallback-t.md) | Yes | Edge position to scroll to.<br>**Since:** 18 |
 
+<a id="onscrollend"></a>
 ## onScrollEnd
 
 ```TypeScript
@@ -351,8 +365,9 @@ Triggered when scrolling stops.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () => void | Yes |  |
+| event | () =&gt; void | Yes |  |
 
+<a id="onscrollframebegin"></a>
 ## onScrollFrameBegin
 
 ```TypeScript
@@ -377,6 +392,7 @@ Triggered when each frame scrolling starts.Anonymous Object Rectification.
 | --- | --- | --- | --- |
 | event | [OnScrollFrameBeginCallback](arkts-arkui-onscrollframebegincallback-t.md) | Yes | Callback triggered when each frame scrolling starts.<br>**Since:** 18 |
 
+<a id="onscrollstart"></a>
 ## onScrollStart
 
 ```TypeScript
@@ -401,6 +417,7 @@ Called when scrolling start.Anonymous Object Rectification.
 | --- | --- | --- | --- |
 | event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | Callback triggered when scrolling starts.<br>**Since:** 18 |
 
+<a id="onscrollstop"></a>
 ## onScrollStop
 
 ```TypeScript
@@ -425,6 +442,7 @@ Called when scrolling has stopped.Anonymous Object Rectification.
 | --- | --- | --- | --- |
 | event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | Callback triggered when scrolling stops.<br>**Since:** 18 |
 
+<a id="onwillscroll"></a>
 ## onWillScroll
 
 ```TypeScript
@@ -451,6 +469,7 @@ Triggered before scrolling.
 | --- | --- | --- | --- |
 | handler | [ScrollOnWillScrollCallback](arkts-arkui-scrollonwillscrollcallback-t.md) | Yes | Callback triggered before scrolling. |
 
+<a id="onzoomstart"></a>
 ## onZoomStart
 
 ```TypeScript
@@ -475,6 +494,7 @@ Called when zooming has stated.
 | --- | --- | --- | --- |
 | event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | Zoom start callback. |
 
+<a id="onzoomstop"></a>
 ## onZoomStop
 
 ```TypeScript
@@ -499,6 +519,7 @@ Called when zooming has stopped.
 | --- | --- | --- | --- |
 | event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | Zoom stop callback. |
 
+<a id="scrollbar"></a>
 ## scrollBar
 
 ```TypeScript
@@ -519,8 +540,9 @@ Sets the scrollbar state. If the container component cannot be scrolled, the scr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| barState | [BarState](../arkts-apis/arkts-arkui-enums-barstate-e.md) | Yes | Scrollbar state.<br>Default value: <em>BarState.Auto</em> |
+| barState | [BarState](../arkts-apis/arkts-arkui-barstate-e.md) | Yes | Scrollbar state.<br>Default value: <em>BarState.Auto</em> |
 
+<a id="scrollbarcolor"></a>
 ## scrollBarColor
 
 ```TypeScript
@@ -541,8 +563,9 @@ Sets the scrollbar color.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | Color \| number \| string | Yes | Scrollbar color.<br>Default value: <em>'\#182431'</em> (40% opacity) |
+| color | [Color](../../apis-arkgraphics3d/arkts-apis/arkts-arkgraphics3d-scenetypes-color-i.md) \| number \| string | Yes | Scrollbar color.<br>Default value: <em>'\#182431'</em> (40% opacity) |
 
+<a id="scrollbarcolor-1"></a>
 ## scrollBarColor
 
 ```TypeScript
@@ -565,8 +588,9 @@ Sets the scrollbar color.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | Color \| number \| string \| Resource | Yes | Scrollbar color.<br>Default value: <em>'\#182431'</em> (40% opacity)<br>A number value indicates a HEX color in RGB or ARGB format, for example, <em>0xffffff</em>.A string value indicates a color in RGB or ARGB format, for example, <em>'#ffffff'</em>. |
+| color | [Color](../../apis-arkgraphics3d/arkts-apis/arkts-arkgraphics3d-scenetypes-color-i.md) \| number \| string \| Resource | Yes | Scrollbar color.<br>Default value: <em>'\#182431'</em> (40% opacity)<br>A number value indicates a HEX color in RGB or ARGB format, for example, <em>0xffffff</em>.A string value indicates a color in RGB or ARGB format, for example, <em>'#ffffff'</em>. |
 
+<a id="scrollbarwidth"></a>
 ## scrollBarWidth
 
 ```TypeScript
@@ -589,6 +613,7 @@ Sets the scrollbar width.
 | --- | --- | --- | --- |
 | value | number \| string | Yes | Scrollbar width.<br>Default value: <em>4</em> <br>Unit: vp<br>Values less than 0 are treated as the default value. The value <em>0</em> means not to show the scrollbar. |
 
+<a id="scrollbarwidth-1"></a>
 ## scrollBarWidth
 
 ```TypeScript
@@ -613,6 +638,7 @@ Sets the scrollbar width.
 | --- | --- | --- | --- |
 | value | number \| string \| Resource | Yes | Scrollbar width.<br>Unit: vp<br>Default value: <em>4</em><br>If this parameter is set to a value less than or equal to 0, the default value is used.The value <em>0</em> means not to show the scrollbar. |
 
+<a id="scrollsnap"></a>
 ## scrollSnap
 
 ```TypeScript
@@ -635,8 +661,9 @@ Sets the scroll snapping mode.During the snap animation, the scroll operation so
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [ScrollSnapOptions](arkts-arkui-scroll-scrollsnapoptions-i.md) | Yes | Scroll snapping mode. |
+| value | [ScrollSnapOptions](arkts-arkui-scrollsnapoptions-i.md) | Yes | Scroll snapping mode. |
 
+<a id="scrollable"></a>
 ## scrollable
 
 ```TypeScript
@@ -657,8 +684,9 @@ Sets the scrolling direction. The scroll offset is reset when this value is chan
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [ScrollDirection](arkts-arkui-scroll-scrolldirection-e.md) | Yes | Scrolling direction.<br>Default value: <em>ScrollDirection.Vertical</em> |
+| value | [ScrollDirection](arkts-arkui-scrolldirection-e.md) | Yes | Scrolling direction.<br>Default value: <em>ScrollDirection.Vertical</em> |
 
+<a id="zoomscale"></a>
 ## zoomScale
 
 ```TypeScript

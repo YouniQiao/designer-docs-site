@@ -1,8 +1,8 @@
 # Cipher
 
-Provides APIs for cipher operations. The [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-4),[update()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#update-1), and [doFinal()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#dofinal-2) APIs in this class are called in sequence to implement symmetric encryption or decryption and asymmetric encryption or decryption.
+Provides APIs for cipher operations. The [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-1),[update()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#update-1), and [doFinal()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#dofinal-1) APIs in this class are called in sequence to implement symmetric encryption or decryption and asymmetric encryption or decryption.
 
-For details about the complete encryption and decryption process, see [Encryption and Decryption Overview](../../../../security/CryptoArchitectureKit/crypto-encryption-decryption-overview.md).
+For details about the complete encryption and decryption process, see [Encryption and Decryption Overview](docroot://security/CryptoArchitectureKit/crypto-encryption-decryption-overview.md).
 
 A complete symmetric encryption/decryption process is slightly different from the asymmetric encryption/decryption process.
 
@@ -23,6 +23,7 @@ A complete symmetric encryption/decryption process is slightly different from th
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="dofinal"></a>
 ## doFinal
 
 ```TypeScript
@@ -46,7 +47,7 @@ Finishes the crypto operation, encrypts or decrypts the input data, and then fee
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Indicates the data to be finally encrypted or decrypted. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataBlob> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the encrypted or decrypted data obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataBlob&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the encrypted or decrypted data obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ Finishes the crypto operation, encrypts or decrypts the input data, and then fee
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. The data is too long.<br>**Applicable version:** 22 and later |
 
+<a id="dofinal-1"></a>
 ## doFinal
 
 ```TypeScript
@@ -89,7 +91,7 @@ doFinal(data: DataBlob | null, callback: AsyncCallback<DataBlob>): void
 > integer multiple of the encryption block size, and **doFinal()** is called to pass in **null**, the returned  
 > result is **null**.  
 > 4. For details about the sample code for calling **doFinal** multiple times in asymmetric encryption and  
-> decryption, see [Encryption and Decryption by Segment with an RSA Asymmetric Key Pair](../../../../security/CryptoArchitectureKit/crypto-rsa-asym-encrypt-decrypt-by-segment.md).  
+> decryption, see [Encryption and Decryption by Segment with an RSA Asymmetric Key Pair](docroot://security/CryptoArchitectureKit/crypto-rsa-asym-encrypt-decrypt-by-segment.md).  
 > The operations are similar for SM2 and RSA.
 
 **Since:** 10
@@ -106,8 +108,8 @@ doFinal(data: DataBlob | null, callback: AsyncCallback<DataBlob>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | DataBlob \| null | Yes | Data to encrypt or decrypt. In symmetric encryption and decryption, this parameter can be **null**, but **{data: Uint8Array (empty)}** cannot be passed in. Before API version 10,only **DataBlob** is supported. Since API version 10, **null** is also supported. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataBlob> | Yes | Callback used to return the result. If the encryption or decryption is successful, **err** is **undefined**, and **data** is the encryption or decryption result obtained.Otherwise, **err** is an error object. |
+| data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Data to encrypt or decrypt. In symmetric encryption and decryption, this parameter can be **null**, but **{data: Uint8Array (empty)}** cannot be passed in. Before API version 10,only **DataBlob** is supported. Since API version 10, **null** is also supported. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataBlob&gt; | Yes | Callback used to return the result. If the encryption or decryption is successful, **err** is **undefined**, and **data** is the encryption or decryption result obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -172,6 +174,7 @@ function cipherByCallback() {
 
 ```
 
+<a id="dofinal-2"></a>
 ## doFinal
 
 ```TypeScript
@@ -200,7 +203,7 @@ Finishes the crypto operation, encrypts or decrypts the input data, and then fee
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob> | Promise used to return the encrypted or decrypted data. |
+| Promise&lt;DataBlob&gt; | Promise used to return the encrypted or decrypted data. |
 
 **Error codes:**
 
@@ -212,6 +215,7 @@ Finishes the crypto operation, encrypts or decrypts the input data, and then fee
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. The data is too long.<br>**Applicable version:** 22 and later |
 
+<a id="dofinal-3"></a>
 ## doFinal
 
 ```TypeScript
@@ -250,7 +254,7 @@ During decryption, **authTag** must be set in [GcmParamsSpec](arkts-cryptoarchit
 > integer multiple of the encryption block size, and **doFinal()** is called to pass in **null**, the returned  
 > result is **null**.  
 > 4. For details about the sample code for calling **doFinal** multiple times in asymmetric encryption and  
-> decryption, see [Encryption and Decryption by Segment with an RSA Asymmetric Key Pair](../../../../security/CryptoArchitectureKit/crypto-rsa-asym-encrypt-decrypt-by-segment.md).  
+> decryption, see [Encryption and Decryption by Segment with an RSA Asymmetric Key Pair](docroot://security/CryptoArchitectureKit/crypto-rsa-asym-encrypt-decrypt-by-segment.md).  
 > The operations are similar for SM2 and RSA.
 
 **Since:** 10
@@ -267,13 +271,13 @@ During decryption, **authTag** must be set in [GcmParamsSpec](arkts-cryptoarchit
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | DataBlob \| null | Yes | Data to encrypt or decrypt. It can be **null**, but cannot be {data:Uint8Array(empty)}. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10,**null** is also supported. |
+| data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Data to encrypt or decrypt. It can be **null**, but cannot be {data:Uint8Array(empty)}. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10,**null** is also supported. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob> | Promise used to return the **DataBlob**, which is the encryption or decryption result of the remaining data. |
+| Promise&lt;DataBlob&gt; | Promise used to return the **DataBlob**, which is the encryption or decryption result of the remaining data. |
 
 **Error codes:**
 
@@ -333,6 +337,7 @@ async function cipherByPromise() {
 
 ```
 
+<a id="dofinalsync"></a>
 ## doFinalSync
 
 ```TypeScript
@@ -351,7 +356,7 @@ The output of **doFinalSync()** varies with the symmetric block cipher mode in u
 
 (2) Encrypts or decrypts the input data for RSA or SM2 asymmetric encryption/decryption. This API returns the encrypted or decrypted data synchronously. If a large amount of data is to be processed, call **doFinalSync()** multiple times and concatenate the results to obtain the complete plaintext or ciphertext.
 
-See **NOTE** in [doFinal()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#dofinal-2) for other precautions.
+See **NOTE** in [doFinal()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#dofinal-1) for other precautions.
 
 <br><br>**NOTE**<br>It is recommended to prioritize the use of asynchronous API, {@link doFinal}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
@@ -367,7 +372,7 @@ See **NOTE** in [doFinal()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | DataBlob \| null | Yes | Data to encrypt or decrypt. It can be **null** in symmetric encryption or decryption, but cannot be {data:Uint8Array(empty)}. |
+| data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Data to encrypt or decrypt. It can be **null** in symmetric encryption or decryption, but cannot be {data:Uint8Array(empty)}. |
 
 **Return value:**
 
@@ -433,6 +438,7 @@ async function cipherBySync() {
 
 ```
 
+<a id="getcipherspec"></a>
 ## getCipherSpec
 
 ```TypeScript
@@ -486,6 +492,7 @@ function testGetCipherSpec() {
 
 ```
 
+<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -513,7 +520,7 @@ Initializes the crypto operation with the given crypto mode, key and parameters.
 | opMode | [CryptoMode](arkts-cryptoarchitecture-cryptoframework-cryptomode-e.md) | Yes | Operation (encryption or decryption) to perform. |
 | key | [Key](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keyevent-key-i.md) | Yes | Key for encryption or decryption. |
 | params | [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md) | Yes | Indicates the algorithm parameters such as IV. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -525,6 +532,7 @@ Initializes the crypto operation with the given crypto mode, key and parameters.
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid opMode value;<br>2. Invalid iv length;<br>3. Invalid key length.<br>**Applicable version:** 22 and later |
 
+<a id="init-1"></a>
 ## init
 
 ```TypeScript
@@ -553,8 +561,8 @@ This API can be used only after a [Cipher](arkts-cryptoarchitecture-cryptoframew
 | --- | --- | --- | --- |
 | opMode | [CryptoMode](arkts-cryptoarchitecture-cryptoframework-cryptomode-e.md) | Yes | Operation (encryption or decryption) to perform. |
 | key | [Key](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keyevent-key-i.md) | Yes | Key for encryption or decryption. |
-| params | ParamsSpec \| null | Yes | Parameters for encryption or decryption. For algorithm modes without parameters (such as ECB), set this parameter to **null**. In versions earlier than API version 10, only **ParamsSpec** is supported. Since API version 10, **null** is also supported. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| params | [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md) \| null | Yes | Parameters for encryption or decryption. For algorithm modes without parameters (such as ECB), set this parameter to **null**. In versions earlier than API version 10, only **ParamsSpec** is supported. Since API version 10, **null** is also supported. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -566,6 +574,7 @@ This API can be used only after a [Cipher](arkts-cryptoarchitecture-cryptoframew
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid opMode value;<br>2. Invalid iv length;<br>3. Invalid key length.<br>**Applicable version:** 22 and later |
 
+<a id="init-2"></a>
 ## init
 
 ```TypeScript
@@ -598,7 +607,7 @@ Initializes the crypto operation with the given crypto mode, key and parameters.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -610,6 +619,7 @@ Initializes the crypto operation with the given crypto mode, key and parameters.
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid opMode value;<br>2. Invalid iv length;<br>3. Invalid key length.<br>**Applicable version:** 22 and later |
 
+<a id="init-3"></a>
 ## init
 
 ```TypeScript
@@ -638,13 +648,13 @@ This API can be used only after a [Cipher](arkts-cryptoarchitecture-cryptoframew
 | --- | --- | --- | --- |
 | opMode | [CryptoMode](arkts-cryptoarchitecture-cryptoframework-cryptomode-e.md) | Yes | Operation (encryption or decryption) to perform. |
 | key | [Key](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keyevent-key-i.md) | Yes | Key for encryption or decryption. |
-| params | ParamsSpec \| null | Yes | Parameters for encryption or decryption. For algorithm modes without parameters (such as ECB), set this parameter to **null**. Before API version 10, only **ParamsSpec** is supported. Since API version 10, **null** is also supported. |
+| params | [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md) \| null | Yes | Parameters for encryption or decryption. For algorithm modes without parameters (such as ECB), set this parameter to **null**. Before API version 10, only **ParamsSpec** is supported. Since API version 10, **null** is also supported. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -656,6 +666,7 @@ This API can be used only after a [Cipher](arkts-cryptoarchitecture-cryptoframew
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid opMode value;<br>2. Invalid iv length;<br>3. Invalid key length.<br>**Applicable version:** 22 and later |
 
+<a id="initsync"></a>
 ## initSync
 
 ```TypeScript
@@ -684,7 +695,7 @@ This API can be used only after a [Cipher](arkts-cryptoarchitecture-cryptoframew
 | --- | --- | --- | --- |
 | opMode | [CryptoMode](arkts-cryptoarchitecture-cryptoframework-cryptomode-e.md) | Yes | Operation (encryption or decryption) to perform. |
 | key | [Key](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keyevent-key-i.md) | Yes | Key for encryption or decryption. |
-| params | ParamsSpec \| null | Yes | Parameters for encryption or decryption. For algorithm modes without parameters (such as ECB), set this parameter to **null**. |
+| params | [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md) \| null | Yes | Parameters for encryption or decryption. For algorithm modes without parameters (such as ECB), set this parameter to **null**. |
 
 **Error codes:**
 
@@ -696,6 +707,7 @@ This API can be used only after a [Cipher](arkts-cryptoarchitecture-cryptoframew
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid opMode value;<br>2. Invalid iv length;<br>3. Invalid key length.<br>**Applicable version:** 22 and later |
 
+<a id="setcipherspec"></a>
 ## setCipherSpec
 
 ```TypeScript
@@ -719,7 +731,7 @@ Sets cipher specifications. You can use this API to set cipher specifications th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | itemType | [CipherSpecItem](arkts-cryptoarchitecture-cryptoframework-cipherspecitem-e.md) | Yes | Cipher parameter to set. |
-| itemValue | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Value of the parameter to set. |
+| itemValue | Uint8Array | Yes | Value of the parameter to set. |
 
 **Error codes:**
 
@@ -744,6 +756,7 @@ function testsetCipherSpec() {
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -752,7 +765,7 @@ update(data: DataBlob, callback: AsyncCallback<DataBlob>): void
 
 Updates the data to encrypt or decrypt by segment. This API uses an asynchronous callback to return the result.
 
-This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptoframework-cipher-i.md) instance is initialized by using [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-4).
+This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptoframework-cipher-i.md) instance is initialized by using [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-1).
 
 > **NOTE**  
 >  
@@ -777,7 +790,7 @@ This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptofr
 > large amount of data, you are advised to pass data in multiple **update()** calls rather than processing it all  
 > at once.  
 > For details about the sample code for passing data in multiple **update()** calls, see  
-> [Encryption and Decryption by Segment with an AES Symmetric Key (GCM Mode)](../../../../security/CryptoArchitectureKit/crypto-aes-sym-encrypt-decrypt-gcm-by-segment.md).  
+> [Encryption and Decryption by Segment with an AES Symmetric Key (GCM Mode)](docroot://security/CryptoArchitectureKit/crypto-aes-sym-encrypt-decrypt-gcm-by-segment.md).  
 > 3. RSA or SM2 asymmetric encryption and decryption do not support **update()**.  
 > 4. If CCM is used in symmetric encryption or decryption, **update()** can be called only once. In the  
 > encryption process, you can either use **update()** to encrypt data and use **doFinal()** to obtain **authTag**  
@@ -799,7 +812,7 @@ This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptofr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Data to be encrypted or decrypted. It cannot be null. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataBlob> | Yes | Callback used to return the result. If the data is updated successfully, **err** is **undefined**, and **data** is the encryption or decryption result obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataBlob&gt; | Yes | Callback used to return the result. If the data is updated successfully, **err** is **undefined**, and **data** is the encryption or decryption result obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -811,6 +824,7 @@ This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptofr
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. The data is too long.<br>**Applicable version:** 22 and later |
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -819,7 +833,7 @@ update(data: DataBlob): Promise<DataBlob>
 
 Updates the data to encrypt or decrypt by segment. This API uses a promise to return the result.
 
-This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptoframework-cipher-i.md) instance is initialized by using [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-4).
+This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptoframework-cipher-i.md) instance is initialized by using [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-1).
 
 > **NOTE**  
 >  
@@ -844,7 +858,7 @@ This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptofr
 > large amount of data, you are advised to pass data in multiple **update()** calls rather than processing it all  
 > at once.  
 > For details about the sample code for passing data in multiple **update()** calls, see  
-> [Encryption and Decryption by Segment with an AES Symmetric Key (GCM Mode)](../../../../security/CryptoArchitectureKit/crypto-aes-sym-encrypt-decrypt-gcm-by-segment.md).  
+> [Encryption and Decryption by Segment with an AES Symmetric Key (GCM Mode)](docroot://security/CryptoArchitectureKit/crypto-aes-sym-encrypt-decrypt-gcm-by-segment.md).  
 > 3. RSA or SM2 asymmetric encryption and decryption do not support **update()**.  
 > 4. If CCM is used in symmetric encryption or decryption, **update()** can be called only once. In the  
 > encryption process, you can either use **update()** to encrypt data and use **doFinal()** to obtain **authTag**  
@@ -871,7 +885,7 @@ This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptofr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob> | Promise used to return the **DataBlob** (containing the encrypted or decrypted data). |
+| Promise&lt;DataBlob&gt; | Promise used to return the **DataBlob** (containing the encrypted or decrypted data). |
 
 **Error codes:**
 
@@ -883,6 +897,7 @@ This API can be called only after the [Cipher](arkts-cryptoarchitecture-cryptofr
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. The data is too long.<br>**Applicable version:** 22 and later |
 
+<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="on"></a>
 ## on('wifiStateChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Subscribe Wi-Fi status change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wifiStateChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | the callback of on, 0: inactive, 1: active, 2: activating, 3: de-activating |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | the callback of on, 0: inactive, 1: active, 2: activating, 3: de-activating |
 
 **Error codes:**
 
@@ -41,6 +42,7 @@ Subscribe Wi-Fi status change events.
 | [2501000](../errorcode-wifi.md#2501000-sta-internal-error) | Operation failed. |
 
 
+<a id="on-1"></a>
 ## on('wifiConnectionChange')
 
 ```TypeScript
@@ -64,7 +66,7 @@ Subscribe Wi-Fi connection change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wifiConnectionChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | the callback of on, 0: disconnected, 1: connected |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | the callback of on, 0: disconnected, 1: connected |
 
 **Error codes:**
 
@@ -76,6 +78,7 @@ Subscribe Wi-Fi connection change events.
 | [2501000](../errorcode-wifi.md#2501000-sta-internal-error) | Operation failed. |
 
 
+<a id="on-2"></a>
 ## on('wifiScanStateChange')
 
 ```TypeScript
@@ -99,7 +102,7 @@ Subscribe Wi-Fi scan status change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wifiScanStateChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | the callback of on, 0: scan fail, 1: scan success |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | the callback of on, 0: scan fail, 1: scan success |
 
 **Error codes:**
 
@@ -111,6 +114,7 @@ Subscribe Wi-Fi scan status change events.
 | [2501000](../errorcode-wifi.md#2501000-sta-internal-error) | Operation failed. |
 
 
+<a id="on-3"></a>
 ## on('wifiRssiChange')
 
 ```TypeScript
@@ -132,7 +136,7 @@ Subscribe Wi-Fi rssi change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wifiRssiChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | the callback of on |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | the callback of on |
 
 **Error codes:**
 
@@ -144,6 +148,7 @@ Subscribe Wi-Fi rssi change events.
 | [2501000](../errorcode-wifi.md#2501000-sta-internal-error) | Operation failed. |
 
 
+<a id="on-4"></a>
 ## on('hotspotStateChange')
 
 ```TypeScript
@@ -165,7 +170,7 @@ Subscribe Wi-Fi hotspot state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hotspotStateChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | the callback of on,0: inactive, 1: active, 2: activating, 3: de-activating |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | the callback of on,0: inactive, 1: active, 2: activating, 3: de-activating |
 
 **Error codes:**
 
@@ -177,6 +182,7 @@ Subscribe Wi-Fi hotspot state change events.
 | [2601000](../errorcode-wifi.md#2601000-hotspot-module-error) | Operation failed. |
 
 
+<a id="on-5"></a>
 ## on('p2pStateChange')
 
 ```TypeScript
@@ -198,7 +204,7 @@ Subscribe P2P status change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pStateChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | the callback of on, 1: idle, 2: starting, 3:started, 4: closing, 5: closed |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | the callback of on, 1: idle, 2: starting, 3:started, 4: closing, 5: closed |
 
 **Error codes:**
 
@@ -210,6 +216,7 @@ Subscribe P2P status change events.
 | [2801000](../errorcode-wifi.md#2801000-p2p-module-error) | Operation failed. |
 
 
+<a id="on-6"></a>
 ## on('p2pConnectionChange')
 
 ```TypeScript
@@ -231,7 +238,7 @@ Subscribe P2P connection change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pConnectionChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WifiP2pLinkedInfo> | Yes | the callback of on |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WifiP2pLinkedInfo&gt; | Yes | the callback of on |
 
 **Error codes:**
 
@@ -243,6 +250,7 @@ Subscribe P2P connection change events.
 | [2801000](../errorcode-wifi.md#2801000-p2p-module-error) | Operation failed. |
 
 
+<a id="on-7"></a>
 ## on('p2pDeviceChange')
 
 ```TypeScript
@@ -264,7 +272,7 @@ Subscribe P2P local device change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pDeviceChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WifiP2pDevice> | Yes | the callback of on |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WifiP2pDevice&gt; | Yes | the callback of on |
 
 **Error codes:**
 
@@ -276,6 +284,7 @@ Subscribe P2P local device change events.
 | [2801000](../errorcode-wifi.md#2801000-p2p-module-error) | Operation failed. |
 
 
+<a id="on-8"></a>
 ## on('p2pPeerDeviceChange')
 
 ```TypeScript
@@ -297,7 +306,7 @@ Subscribe P2P peer device change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pPeerDeviceChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WifiP2pDevice[]> | Yes | the callback of on |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WifiP2pDevice[]&gt; | Yes | the callback of on |
 
 **Error codes:**
 
@@ -309,6 +318,7 @@ Subscribe P2P peer device change events.
 | [2801000](../errorcode-wifi.md#2801000-p2p-module-error) | Operation failed. |
 
 
+<a id="on-9"></a>
 ## on('p2pPersistentGroupChange')
 
 ```TypeScript
@@ -330,7 +340,7 @@ Subscribe P2P persistent group change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pPersistentGroupChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback of on |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback of on |
 
 **Error codes:**
 
@@ -342,6 +352,7 @@ Subscribe P2P persistent group change events.
 | [2801000](../errorcode-wifi.md#2801000-p2p-module-error) | Operation failed. |
 
 
+<a id="on-10"></a>
 ## on('p2pDiscoveryChange')
 
 ```TypeScript
@@ -363,7 +374,7 @@ Subscribe P2P discovery events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pDiscoveryChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | the callback of on |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | the callback of on |
 
 **Error codes:**
 

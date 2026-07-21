@@ -6,6 +6,7 @@
 import { curves } from '@kit.ArkUI';
 ```
 
+<a id="initcurve"></a>
 ## initCurve
 
 ```TypeScript
@@ -26,11 +27,11 @@ Implements initialization for the interpolation curve, which is used to create a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| curve | [Curve](arkts-arkui-enums-curve-e.md) | No | Curve type.<br>Default value: **Curve.Linear** |
+| curve | [Curve](arkts-arkui-curve-e.md) | No | Curve type.<br>Default value: **Curve.Linear** |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [ICurve](../arkts-components/arkts-arkui-common-icurve-i.md) | Interpolation curve. |
+| [ICurve](../arkts-components/arkts-arkui-icurve-i.md) | Interpolation curve. |
 

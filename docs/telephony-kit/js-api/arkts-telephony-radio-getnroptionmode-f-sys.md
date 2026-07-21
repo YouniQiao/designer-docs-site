@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getnroptionmode"></a>
 ## getNROptionMode
 
 ```TypeScript
@@ -27,7 +28,7 @@ Get the option mode of NR.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NROptionMode> | Yes | Indicates the callback for getting the selection mode of NR. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NROptionMode&gt; | Yes | Indicates the callback for getting the selection mode of NR. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ radio.getNROptionMode(slotId, (err: BusinessError, data: radio.NROptionMode) => 
 ```
 
 
+<a id="getnroptionmode-1"></a>
 ## getNROptionMode
 
 ```TypeScript
@@ -83,7 +85,7 @@ Get the option mode of NR.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NROptionMode> | Returns the selection mode of NR. |
+| Promise&lt;NROptionMode&gt; | Returns the selection mode of NR. |
 
 **Error codes:**
 

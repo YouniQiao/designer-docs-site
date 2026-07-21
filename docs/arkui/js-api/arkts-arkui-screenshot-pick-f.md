@@ -6,6 +6,7 @@
 import { screenshot } from '@kit.ArkUI';
 ```
 
+<a id="pick"></a>
 ## pick
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains this screenshot. Currently, only the screenshot of the display whose ID 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PickInfo> | Promise used to return the PickInfo object. |
+| Promise&lt;PickInfo&gt; | Promise used to return the PickInfo object. |
 
 **Error codes:**
 

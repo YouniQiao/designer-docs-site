@@ -6,6 +6,7 @@
 import { screenLock } from '@kit.BasicServicesKit';
 ```
 
+<a id="issecuremode"></a>
 ## isSecureMode
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether the screen lock of the current device is secure.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of isSecureMode. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of isSecureMode. |
 
 **Example**
 
@@ -44,6 +45,7 @@ screenLock.isSecureMode((err: BusinessError, data: Boolean)=>{
 ```
 
 
+<a id="issecuremode-1"></a>
 ## isSecureMode
 
 ```TypeScript
@@ -64,7 +66,7 @@ Checks whether the screen lock of the current device is secure.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Example**
 

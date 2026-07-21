@@ -20,6 +20,7 @@ Before calling any API in AudioRoutingManager, you must use [getRoutingManager](
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="declaredevicetypescompatibility"></a>
 ## declareDeviceTypesCompatibility
 
 ```TypeScript
@@ -48,6 +49,7 @@ Declares the original device types that the application has adapted to.By defaul
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed, the param deviceTypes contains value that is invalid enum or is not device type introduced in API 20 onwards. |
 
+<a id="getavailabledevices"></a>
 ## getAvailableDevices
 
 ```TypeScript
@@ -81,6 +83,7 @@ Obtains the available audio devices. This API returns the result synchronously.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="getdevices"></a>
 ## getDevices
 
 ```TypeScript
@@ -100,8 +103,9 @@ Obtains the audio devices with a specific flag. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceFlag | [DeviceFlag](arkts-audio-audio-deviceflag-e.md) | Yes | Audio device flag. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AudioDeviceDescriptors> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the audio devices obtained; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AudioDeviceDescriptors&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the audio devices obtained; otherwise, **err** is an error object. |
 
+<a id="getdevices-1"></a>
 ## getDevices
 
 ```TypeScript
@@ -126,8 +130,9 @@ Obtains the audio devices with a specific flag. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioDeviceDescriptors> | Promise used to return the device list. |
+| Promise&lt;AudioDeviceDescriptors&gt; | Promise used to return the device list. |
 
+<a id="getdevicessync"></a>
 ## getDevicesSync
 
 ```TypeScript
@@ -161,6 +166,7 @@ Obtains the audio devices with a specific flag. This API returns the result sync
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="getpreferoutputdeviceforrendererinfo"></a>
 ## getPreferOutputDeviceForRendererInfo
 
 ```TypeScript
@@ -180,7 +186,7 @@ Obtains the output device with the highest priority based on the audio renderer 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | rendererInfo | [AudioRendererInfo](arkts-audio-audio-audiorendererinfo-i.md) | Yes | Audio renderer information. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AudioDeviceDescriptors> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the output device with the highest priority obtained;otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AudioDeviceDescriptors&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the output device with the highest priority obtained;otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -190,6 +196,7 @@ Obtains the output device with the highest priority based on the audio renderer 
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by callback. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | System error. Return by callback. |
 
+<a id="getpreferoutputdeviceforrendererinfo-1"></a>
 ## getPreferOutputDeviceForRendererInfo
 
 ```TypeScript
@@ -214,7 +221,7 @@ Obtains the output device with the highest priority based on the audio renderer 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioDeviceDescriptors> | Promise used to return the information about the output device with the highest priority. |
+| Promise&lt;AudioDeviceDescriptors&gt; | Promise used to return the information about the output device with the highest priority. |
 
 **Error codes:**
 
@@ -224,6 +231,7 @@ Obtains the output device with the highest priority based on the audio renderer 
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by promise. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | System error. Return by promise. |
 
+<a id="getpreferredinputdeviceforcapturerinfo"></a>
 ## getPreferredInputDeviceForCapturerInfo
 
 ```TypeScript
@@ -243,7 +251,7 @@ Obtains the input device with the highest priority based on the audio capturer i
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | capturerInfo | [AudioCapturerInfo](arkts-audio-audio-audiocapturerinfo-i.md) | Yes | Audio capturer information. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AudioDeviceDescriptors> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the input device with the highest priority obtained;otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AudioDeviceDescriptors&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the input device with the highest priority obtained;otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -253,6 +261,7 @@ Obtains the input device with the highest priority based on the audio capturer i
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by callback. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | System error. Return by callback. |
 
+<a id="getpreferredinputdeviceforcapturerinfo-1"></a>
 ## getPreferredInputDeviceForCapturerInfo
 
 ```TypeScript
@@ -277,7 +286,7 @@ Obtains the input device with the highest priority based on the audio capturer i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioDeviceDescriptors> | Promise used to return the information about the input device with the highest priority. |
+| Promise&lt;AudioDeviceDescriptors&gt; | Promise used to return the information about the input device with the highest priority. |
 
 **Error codes:**
 
@@ -287,6 +296,7 @@ Obtains the input device with the highest priority based on the audio capturer i
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by promise. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | System error. Return by promise. |
 
+<a id="getpreferredinputdeviceforcapturerinfosync"></a>
 ## getPreferredInputDeviceForCapturerInfoSync
 
 ```TypeScript
@@ -320,6 +330,7 @@ Gets preferred input device for target audio capturer info.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="getpreferredoutputdeviceforrendererinfosync"></a>
 ## getPreferredOutputDeviceForRendererInfoSync
 
 ```TypeScript
@@ -353,6 +364,7 @@ Obtains the output device with the highest priority based on the audio renderer 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="iscommunicationdeviceactive"></a>
 ## isCommunicationDeviceActive
 
 ```TypeScript
@@ -372,8 +384,9 @@ Checks whether a communication device is active. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceType | [CommunicationDeviceType](arkts-audio-audio-communicationdevicetype-e.md) | Yes | Active audio device type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true** if the device is active or **false** if not active;otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true** if the device is active or **false** if not active;otherwise, **err** is an error object. |
 
+<a id="iscommunicationdeviceactive-1"></a>
 ## isCommunicationDeviceActive
 
 ```TypeScript
@@ -398,8 +411,9 @@ Checks whether a communication device is active. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result, indicating whether the device is active.**true** if active, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result, indicating whether the device is active.**true** if active, **false** otherwise. |
 
+<a id="iscommunicationdeviceactivesync"></a>
 ## isCommunicationDeviceActiveSync
 
 ```TypeScript
@@ -433,6 +447,7 @@ Checks whether a communication device is active. This API returns the result syn
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="ismicblockdetectionsupported"></a>
 ## isMicBlockDetectionSupported
 
 ```TypeScript
@@ -451,8 +466,9 @@ Checks whether the current device supports microphone blocking detection. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result, indicating the support for microphone blocking detection. **true** if supported, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result, indicating the support for microphone blocking detection. **true** if supported, **false** otherwise. |
 
+<a id="off"></a>
 ## off('deviceChange')
 
 ```TypeScript
@@ -472,7 +488,7 @@ Unsubscribes from the event indicating that the connection status of an audio de
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceChange' | Yes | Event type. The event **'deviceChange'** is triggered when the connection status of an audio device is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceChangeAction> | No | Callback used to return the device change details. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceChangeAction&gt; | No | Callback used to return the device change details. |
 
 **Error codes:**
 
@@ -481,6 +497,7 @@ Unsubscribes from the event indicating that the connection status of an audio de
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="off-1"></a>
 ## off('availableDeviceChange')
 
 ```TypeScript
@@ -500,7 +517,7 @@ Unsubscribes from the event indicating that the connection status of an availabl
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'availableDeviceChange' | Yes | Event type. The event **'availableDeviceChange'** is triggered when the connection status of available audio devices is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceChangeAction> | No | Callback used to return the available device change details. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceChangeAction&gt; | No | Callback used to return the available device change details. |
 
 **Error codes:**
 
@@ -509,6 +526,7 @@ Unsubscribes from the event indicating that the connection status of an availabl
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="off-2"></a>
 ## off('preferOutputDeviceChangeForRendererInfo')
 
 ```TypeScript
@@ -528,7 +546,7 @@ Unsubscribes from the change event of the output device with the highest priorit
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'preferOutputDeviceChangeForRendererInfo' | Yes | Event type. The event **'preferOutputDeviceChangeForRendererInfo'** is triggered when the output device with the highest priority is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceDescriptors> | No | Callback used to return the information about the output device with the highest priority. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceDescriptors&gt; | No | Callback used to return the information about the output device with the highest priority. |
 
 **Error codes:**
 
@@ -537,6 +555,7 @@ Unsubscribes from the change event of the output device with the highest priorit
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="off-3"></a>
 ## off('preferredInputDeviceChangeForCapturerInfo')
 
 ```TypeScript
@@ -556,7 +575,7 @@ Unsubscribes from the change event of the input device with the highest priority
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'preferredInputDeviceChangeForCapturerInfo' | Yes | Event type. The event **'preferredInputDeviceChangeForCapturerInfo'** is triggered when the input device with the highest priority is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceDescriptors> | No | Callback used to return the information about the input device with the highest priority. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceDescriptors&gt; | No | Callback used to return the information about the input device with the highest priority. |
 
 **Error codes:**
 
@@ -565,6 +584,7 @@ Unsubscribes from the change event of the input device with the highest priority
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="off-4"></a>
 ## off('micBlockStatusChanged')
 
 ```TypeScript
@@ -584,7 +604,7 @@ Unsubscribes from the microphone blocked status change event. This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'micBlockStatusChanged' | Yes | Event type. The event **'micBlockStatusChanged'** is triggered when the microphone blocked status is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceBlockStatusInfo> | No | Callback used to return the microphone blocked status and device information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceBlockStatusInfo&gt; | No | Callback used to return the microphone blocked status and device information. |
 
 **Error codes:**
 
@@ -593,6 +613,7 @@ Unsubscribes from the microphone blocked status change event. This API uses an a
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on"></a>
 ## on('deviceChange')
 
 ```TypeScript
@@ -613,7 +634,7 @@ Subscribes to the event indicating that the connection status of an audio device
 | --- | --- | --- | --- |
 | type | 'deviceChange' | Yes | Event type. The event **'deviceChange'** is triggered when the connection status of an audio device is changed. |
 | deviceFlag | [DeviceFlag](arkts-audio-audio-deviceflag-e.md) | Yes | Audio device flag. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceChangeAction> | Yes | Callback used to return the device change details. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceChangeAction&gt; | Yes | Callback used to return the device change details. |
 
 **Error codes:**
 
@@ -622,6 +643,7 @@ Subscribes to the event indicating that the connection status of an audio device
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on-1"></a>
 ## on('availableDeviceChange')
 
 ```TypeScript
@@ -642,7 +664,7 @@ Subscribes to the event indicating that the connection status of an available au
 | --- | --- | --- | --- |
 | type | 'availableDeviceChange' | Yes | Event type. The event **'availableDeviceChange'** is triggered when the connection status of available audio devices is changed. |
 | deviceUsage | [DeviceUsage](arkts-audio-audio-deviceusage-e.md) | Yes | Audio device type (classified by usage). |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceChangeAction> | Yes | Callback used to return the device change details. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceChangeAction&gt; | Yes | Callback used to return the device change details. |
 
 **Error codes:**
 
@@ -651,6 +673,7 @@ Subscribes to the event indicating that the connection status of an available au
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on-2"></a>
 ## on('preferOutputDeviceChangeForRendererInfo')
 
 ```TypeScript
@@ -671,7 +694,7 @@ Subscribes to the change event of the output device with the highest priority, w
 | --- | --- | --- | --- |
 | type | 'preferOutputDeviceChangeForRendererInfo' | Yes | Event type. The event **'preferOutputDeviceChangeForRendererInfo'** is triggered when the output device with the highest priority is changed. |
 | rendererInfo | [AudioRendererInfo](arkts-audio-audio-audiorendererinfo-i.md) | Yes | Audio renderer information. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceDescriptors> | Yes | Callback used to return the information about the output device with the highest priority. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceDescriptors&gt; | Yes | Callback used to return the information about the output device with the highest priority. |
 
 **Error codes:**
 
@@ -680,6 +703,7 @@ Subscribes to the change event of the output device with the highest priority, w
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on-3"></a>
 ## on('preferredInputDeviceChangeForCapturerInfo')
 
 ```TypeScript
@@ -700,7 +724,7 @@ Subscribes to the change event of the input device with the highest priority, wh
 | --- | --- | --- | --- |
 | type | 'preferredInputDeviceChangeForCapturerInfo' | Yes | Event type. The event **'preferredInputDeviceChangeForCapturerInfo'** is triggered when the input device with the highest priority is changed. |
 | capturerInfo | [AudioCapturerInfo](arkts-audio-audio-audiocapturerinfo-i.md) | Yes | Audio capturer information. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceDescriptors> | Yes | Callback used to return the information about the input device with the highest priority. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceDescriptors&gt; | Yes | Callback used to return the information about the input device with the highest priority. |
 
 **Error codes:**
 
@@ -709,6 +733,7 @@ Subscribes to the change event of the input device with the highest priority, wh
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on-4"></a>
 ## on('micBlockStatusChanged')
 
 ```TypeScript
@@ -730,7 +755,7 @@ Before using this API, check whether the current device supports microphone bloc
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'micBlockStatusChanged' | Yes | Event type. The event **'micBlockStatusChanged'** is triggered when the microphone blocked status is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceBlockStatusInfo> | Yes | Callback used to return the microphone blocked status and device information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceBlockStatusInfo&gt; | Yes | Callback used to return the microphone blocked status and device information. |
 
 **Error codes:**
 
@@ -739,6 +764,7 @@ Before using this API, check whether the current device supports microphone bloc
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="setcommunicationdevice"></a>
 ## setCommunicationDevice
 
 ```TypeScript
@@ -749,7 +775,7 @@ Sets a communication device to the active state. This API uses an asynchronous c
 
 This API will be deprecated in a later version due to function design is changed. You are not advised to use it.
 
-You are advised to use the [AVCastPicker component](../../../../media/avsession/using-switch-call-devices.md)provided by AVSession to switch between call devices.
+You are advised to use the [AVCastPicker component](docroot://media/avsession/using-switch-call-devices.md)provided by AVSession to switch between call devices.
 
 **Since:** 9
 
@@ -763,8 +789,9 @@ You are advised to use the [AVCastPicker component](../../../../media/avsession/
 | --- | --- | --- | --- |
 | deviceType | [CommunicationDeviceType](arkts-audio-audio-communicationdevicetype-e.md) | Yes | Audio device flag. |
 | active | boolean | Yes | Active state to set. **true** to set the device to the active state, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
+<a id="setcommunicationdevice-1"></a>
 ## setCommunicationDevice
 
 ```TypeScript
@@ -775,7 +802,7 @@ Sets a communication device to the active state. This API uses a promise to retu
 
 This API will be deprecated in a later version due to function design is changed. You are not advised to use it.
 
-You are advised to use the [AVCastPicker component](../../../../media/avsession/using-switch-call-devices.md)provided by AVSession to switch between call devices.
+You are advised to use the [AVCastPicker component](docroot://media/avsession/using-switch-call-devices.md)provided by AVSession to switch between call devices.
 
 **Since:** 9
 
@@ -794,5 +821,5 @@ You are advised to use the [AVCastPicker component](../../../../media/avsession/
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 

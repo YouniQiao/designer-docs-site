@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setadditionalconfig"></a>
 ## setAdditionalConfig
 
 ```TypeScript
@@ -35,7 +36,7 @@ Sets the additional system configuration information of the notification. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. **0** indicates successful; other values indicate failed. |
+| Promise&lt;number&gt; | Promise used to return the result. **0** indicates successful; other values indicate failed. |
 
 **Error codes:**
 

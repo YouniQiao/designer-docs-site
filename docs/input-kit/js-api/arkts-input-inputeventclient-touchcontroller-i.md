@@ -16,6 +16,7 @@ Provides the capability of simulating touch operations. The simulated touch oper
 import { inputEventClient } from '@kit.InputKit';
 ```
 
+<a id="touchdown"></a>
 ## touchDown
 
 ```TypeScript
@@ -38,13 +39,13 @@ Presses down a touch point. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| touch | [TouchPoint](../../apis-arkui/arkts-apis/arkts-arkui-units-touchpoint-i.md) | Yes | Information about the touch point that is in contact with the display. |
+| touch | [TouchPoint](../../apis-arkui/arkts-apis/arkts-arkui-touchpoint-i.md) | Yes | Information about the touch point that is in contact with the display. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -109,6 +110,7 @@ struct Index {
 
 ```
 
+<a id="touchmove"></a>
 ## touchMove
 
 ```TypeScript
@@ -131,13 +133,13 @@ Moves a touch point. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| touch | [TouchPoint](../../apis-arkui/arkts-apis/arkts-arkui-units-touchpoint-i.md) | Yes | Information about the touch point to be moved. |
+| touch | [TouchPoint](../../apis-arkui/arkts-apis/arkts-arkui-touchpoint-i.md) | Yes | Information about the touch point to be moved. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -151,6 +153,7 @@ Moves a touch point. This API uses a promise to return the result.
 
 For details, see [touchDown](#touchdown).
 
+<a id="touchup"></a>
 ## touchUp
 
 ```TypeScript
@@ -173,13 +176,13 @@ Releases a touch point. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| touch | [TouchPoint](../../apis-arkui/arkts-apis/arkts-arkui-units-touchpoint-i.md) | Yes | Information about the touch point to be released. |
+| touch | [TouchPoint](../../apis-arkui/arkts-apis/arkts-arkui-touchpoint-i.md) | Yes | Information about the touch point to be released. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

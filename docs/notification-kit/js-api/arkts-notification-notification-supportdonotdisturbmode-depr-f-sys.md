@@ -1,5 +1,6 @@
 # supportDoNotDisturbMode (System API)
 
+<a id="supportdonotdisturbmode"></a>
 ## supportDoNotDisturbMode
 
 ```TypeScript
@@ -26,9 +27,10 @@ Checks whether DND mode is supported. This API uses an asynchronous callback to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. |
 
 
+<a id="supportdonotdisturbmode-1"></a>
 ## supportDoNotDisturbMode
 
 ```TypeScript
@@ -55,5 +57,5 @@ Checks whether DND mode is supported. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. |
+| Promise&lt;boolean&gt; | Promise used to return the result. |
 

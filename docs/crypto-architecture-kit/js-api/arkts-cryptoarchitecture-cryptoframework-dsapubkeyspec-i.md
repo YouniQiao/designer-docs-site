@@ -1,0 +1,62 @@
+# DSAPubKeySpec
+
+Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-cryptoframework-asykeyspec-i.md) used to specify the parameters of the public key in the DSA algorithm.
+
+To generate a key based on key parameters, pass it to [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-cryptoframework-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.
+
+**Inheritance/Implementation:** DSAPubKeySpec extends [AsyKeySpec](arkts-cryptoarchitecture-cryptoframework-asykeyspec-i.md)
+
+**Since:** 10
+
+<!--Device-cryptoFramework-interface DSAPubKeySpec extends AsyKeySpec--><!--Device-cryptoFramework-interface DSAPubKeySpec extends AsyKeySpec-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+
+## Modules to Import
+
+```TypeScript
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+```
+
+## params
+
+```TypeScript
+params: DSACommonParamsSpec
+```
+
+Common parameters of the public and private keys in the DSA algorithm.
+
+**Type:** DSACommonParamsSpec
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-DSAPubKeySpec-params: DSACommonParamsSpec--><!--Device-DSAPubKeySpec-params: DSACommonParamsSpec-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+
+## pk
+
+```TypeScript
+pk: bigint
+```
+
+Public key **pk** in the DSA algorithm.
+
+**Type:** bigint
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-DSAPubKeySpec-pk: bigint--><!--Device-DSAPubKeySpec-pk: bigint-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+

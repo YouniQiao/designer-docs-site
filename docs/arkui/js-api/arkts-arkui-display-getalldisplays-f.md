@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="getalldisplays"></a>
 ## getAllDisplays
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains all Display objects. This API uses an asynchronous callback to return th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Display>> | Yes | Callback used to return all the Display objects. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Display&gt;&gt; | Yes | Callback used to return all the Display objects. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ display.getAllDisplays((err: BusinessError, data: Array<display.Display>) => {
 ```
 
 
+<a id="getalldisplays-1"></a>
 ## getAllDisplays
 
 ```TypeScript
@@ -73,7 +75,7 @@ Obtains all Display objects. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Display>> | Promise used to return all the Display objects. |
+| Promise&lt;Array&lt;Display&gt;&gt; | Promise used to return all the Display objects. |
 
 **Error codes:**
 

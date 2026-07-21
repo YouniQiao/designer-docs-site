@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="queryapnids"></a>
 ## queryApnIds
 
 ```TypeScript
@@ -32,7 +33,7 @@ Query APN IDs.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Returns IDs of all APNs that meet the query conditions. |
+| Promise&lt;Array&lt;number&gt;&gt; | Returns IDs of all APNs that meet the query conditions. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="setproperty"></a>
 ## setProperty
 
 ```TypeScript
@@ -34,7 +35,7 @@ The set-type operations of the external crypto extension support calling custom 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

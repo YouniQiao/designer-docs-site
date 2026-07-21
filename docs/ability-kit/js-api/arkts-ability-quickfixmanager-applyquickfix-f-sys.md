@@ -6,6 +6,7 @@
 import { quickFixManager } from '@kit.AbilityKit';
 ```
 
+<a id="applyquickfix"></a>
 ## applyQuickFix
 
 ```TypeScript
@@ -28,8 +29,8 @@ Applies a quick fix patch. This API uses an asynchronous callback to return the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hapModuleQuickFixFiles | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Quick fix patch files, each of which must contain a valid file path. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the quick fix patch is installed,**err** is **undefined**. Otherwise, **err** is an error object. |
+| hapModuleQuickFixFiles | Array&lt;string&gt; | Yes | Quick fix patch files, each of which must contain a valid file path. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the quick fix patch is installed,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ try {
 ```
 
 
+<a id="applyquickfix-1"></a>
 ## applyQuickFix
 
 ```TypeScript
@@ -84,13 +86,13 @@ Applies a quick fix patch. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hapModuleQuickFixFiles | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Quick fix patch files, each of which must contain a valid file path. |
+| hapModuleQuickFixFiles | Array&lt;string&gt; | Yes | Quick fix patch files, each of which must contain a valid file path. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

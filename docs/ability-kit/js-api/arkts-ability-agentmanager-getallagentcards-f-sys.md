@@ -6,6 +6,7 @@
 import { agentManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallagentcards"></a>
 ## getAllAgentCards
 
 ```TypeScript
@@ -30,7 +31,7 @@ Gets all AgentCards on the device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AgentCard>> | Returns the array of AgentCard. |
+| Promise&lt;Array&lt;AgentCard&gt;&gt; | Returns the array of AgentCard. |
 
 **Error codes:**
 

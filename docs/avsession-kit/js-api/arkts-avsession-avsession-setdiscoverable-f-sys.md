@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="setdiscoverable"></a>
 ## setDiscoverable
 
 ```TypeScript
@@ -27,7 +28,7 @@ Enable or disable device to be discoverable, used at sink side.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | true: can be discoverable, false: cannot be discoverable. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | a callback function |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | a callback function |
 
 **Error codes:**
 
@@ -47,6 +48,7 @@ avSession.setDiscoverable(true, () => {
 ```
 
 
+<a id="setdiscoverable-1"></a>
 ## setDiscoverable
 
 ```TypeScript
@@ -73,7 +75,7 @@ Enable or disable device to be discoverable, used at sink side.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise for the result |
+| Promise&lt;void&gt; | Promise for the result |
 
 **Error codes:**
 

@@ -10,6 +10,7 @@ Implements callbacks for an auto-fill request, which is used to automatically fi
 
 **System API:** This is a system API.
 
+<a id="oncancel"></a>
 ## onCancel
 
 ```TypeScript
@@ -42,6 +43,7 @@ Called when an auto-fill request is canceled.
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.The input parameter is not valid parameter;<br>2. Mandatory parameters are left unspecified.<br>**Applicable version:** 12 and later |
 
+<a id="onfailure"></a>
 ## onFailure
 
 ```TypeScript
@@ -67,6 +69,7 @@ Called when an auto-fill request fails to be processed.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied, non-system app called system api. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="onsuccess"></a>
 ## onSuccess
 
 ```TypeScript
@@ -99,6 +102,7 @@ Called when an auto-fill request is successfully processed.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Mandatory parameters are left unspecified. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="setautofillpopupconfig"></a>
 ## setAutoFillPopupConfig
 
 ```TypeScript

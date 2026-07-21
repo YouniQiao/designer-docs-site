@@ -6,6 +6,7 @@
 import { networkManager } from '@kit.MDMKit';
 ```
 
+<a id="getfirewallrules"></a>
 ## getFirewallRules
 
 ```TypeScript
@@ -38,7 +39,7 @@ In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 ar
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FirewallRule> | A list of firewall rules configured for the device is returned. If the operation fails, an exception will be thrown. |
+| Array&lt;FirewallRule&gt; | A list of firewall rules configured for the device is returned. If the operation fails, an exception will be thrown. |
 
 **Error codes:**
 

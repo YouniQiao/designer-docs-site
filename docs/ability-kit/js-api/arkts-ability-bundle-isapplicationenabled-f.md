@@ -6,6 +6,7 @@
 import { bundle } from '@kit.AbilityKit';
 ```
 
+<a id="isapplicationenabled"></a>
 ## isApplicationEnabled
 
 ```TypeScript
@@ -27,9 +28,10 @@ Checks whether an application is enabled based on a given bundle name. This API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. **true** if enabled, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. **true** if enabled, **false** otherwise. |
 
 
+<a id="isapplicationenabled-1"></a>
 ## isApplicationEnabled
 
 ```TypeScript
@@ -56,5 +58,5 @@ Checks whether an application is enabled based on a given bundle name. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if enabled, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if enabled, **false** otherwise. |
 

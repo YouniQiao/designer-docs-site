@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="addalloweddistributeabilityconnbundles"></a>
 ## addAllowedDistributeAbilityConnBundles
 
 ```TypeScript
@@ -29,7 +30,7 @@ Adds the applications that are allowed to distribute ability connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | admin indicates the enterprise admin extension ability information. |
-| appIdentifiers | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | appIdentifiers indicates the list of application appIdentifiers. |
+| appIdentifiers | Array&lt;string&gt; | Yes | appIdentifiers indicates the list of application appIdentifiers. |
 | serviceType | [ServiceType](../../apis-connectivity-kit/arkts-apis/arkts-connectivity-hid-servicetype-e.md) | Yes | serviceType indicates the type of distribute ability. |
 | accountId | number | Yes | accountId indicates the ID of OS account.<br>The value must be an integer greater than or equal to 0. |
 

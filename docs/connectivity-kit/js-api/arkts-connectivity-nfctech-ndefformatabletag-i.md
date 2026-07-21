@@ -10,6 +10,7 @@ Provides methods for accessing NdefFormatable tag.
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -38,7 +39,7 @@ Formats a tag as NDEF tag, writes NDEF message into the NDEF Tag.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void |
+| Promise&lt;void&gt; | The void |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ Formats a tag as NDEF tag, writes NDEF message into the NDEF Tag.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="format-1"></a>
 ## format
 
 ```TypeScript
@@ -72,7 +74,7 @@ Formats a tag as NDEF tag, writes NDEF message into the NDEF Tag.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | message | [NdefMessage](arkts-connectivity-nfctech-ndefmessage-i.md) | Yes | NDEF message to write while format. It can be null, then only format the tag. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback. |
 
 **Error codes:**
 
@@ -83,6 +85,7 @@ Formats a tag as NDEF tag, writes NDEF message into the NDEF Tag.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The Tag I/O operation failed. |
 
+<a id="formatreadonly"></a>
 ## formatReadOnly
 
 ```TypeScript
@@ -111,7 +114,7 @@ Formats a tag as NDEF tag, writes NDEF message into the NDEF Tag, then sets the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void |
+| Promise&lt;void&gt; | The void |
 
 **Error codes:**
 
@@ -122,6 +125,7 @@ Formats a tag as NDEF tag, writes NDEF message into the NDEF Tag, then sets the 
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="formatreadonly-1"></a>
 ## formatReadOnly
 
 ```TypeScript
@@ -145,7 +149,7 @@ Formats a tag as NDEF tag, writes NDEF message into the NDEF Tag, then sets the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | message | [NdefMessage](arkts-connectivity-nfctech-ndefmessage-i.md) | Yes | NDEF message to write while format. It can be null, then only format the tag. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback. |
 
 **Error codes:**
 

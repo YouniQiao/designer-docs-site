@@ -6,6 +6,7 @@
 import { inputMethod } from '@kit.IMEKit';
 ```
 
+<a id="switchcurrentinputmethodandsubtype"></a>
 ## switchCurrentInputMethodAndSubtype
 
 ```TypeScript
@@ -41,7 +42,7 @@ Switch input method and subtype. The caller must be the current inputmethod.
 | --- | --- | --- | --- |
 | inputMethodProperty | [InputMethodProperty](arkts-ime-inputmethod-inputmethodproperty-i.md) | Yes | indicates the target input method. |
 | inputMethodSubtype | [InputMethodSubtype](arkts-ime-inputmethodsubtype-i.md) | Yes | indicates the target input method subtype. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of switchCurrentInputMethodAndSubtype. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of switchCurrentInputMethodAndSubtype. |
 
 **Error codes:**
 
@@ -75,6 +76,7 @@ inputMethod.switchCurrentInputMethodAndSubtype(currentIme, imSubType, (err: Busi
 ```
 
 
+<a id="switchcurrentinputmethodandsubtype-1"></a>
 ## switchCurrentInputMethodAndSubtype
 
 ```TypeScript
@@ -112,7 +114,7 @@ Switch input method and subtype. The caller must be the current inputmethod.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 

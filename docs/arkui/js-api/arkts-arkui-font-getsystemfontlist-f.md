@@ -6,6 +6,7 @@
 import { font } from '@kit.ArkUI';
 ```
 
+<a id="getsystemfontlist"></a>
 ## getSystemFontList
 
 ```TypeScript
@@ -21,7 +22,7 @@ You are advised to use the [getSystemFontFullNamesByType](../../apis-arkgraphics
 > **NOTE**  
 >  
 > - Since API version 10, you can use the  
-> [getFont](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getfont) API in  
+> [getFont](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getfont) API in  
 > [UIContext](arkts-arkui-uicontext.md) to obtain the [Font](arkts-arkui-uicontext.md) object associated with  
 > the current UI context.
 
@@ -43,7 +44,7 @@ You are advised to use the [getSystemFontFullNamesByType](../../apis-arkgraphics
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of supported fonts. |
+| Array&lt;string&gt; | List of supported fonts. |
 
 **Example**
 

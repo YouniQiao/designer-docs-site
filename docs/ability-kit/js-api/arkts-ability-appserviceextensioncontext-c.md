@@ -1,6 +1,6 @@
 # AppServiceExtensionContext
 
-The AppServiceExtensionContext module provides the context environment for the [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md).It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md).
+The AppServiceExtensionContext module provides the context environment for the [AppServiceExtensionAbility](docroot://reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md).It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md).
 
 AppServiceExtensionContext provides APIs to connect to and disconnect from a ServiceExtensionAbility (an ExtensionAbility for system application background services), as well as to terminate an AppServiceExtensionAbility.Note that a ServiceExtensionAbility can only be developed by system applications and supports connections from third-party applications.
 
@@ -16,6 +16,7 @@ AppServiceExtensionContext provides APIs to connect to and disconnect from a Ser
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="connectserviceextensionability"></a>
 ## connectServiceExtensionAbility
 
 ```TypeScript
@@ -58,6 +59,7 @@ Connects this AppServiceExtensionAbility to a ServiceExtensionAbility. It enable
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="disconnectserviceextensionability"></a>
 ## disconnectServiceExtensionAbility
 
 ```TypeScript
@@ -84,7 +86,7 @@ Disconnects this AppServiceExtensionAbility from a ServiceExtensionAbility. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -93,6 +95,7 @@ Disconnects this AppServiceExtensionAbility from a ServiceExtensionAbility. This
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -120,7 +123,7 @@ Starts the UIAbility. This API can be called only by the main thread. It uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -149,6 +152,7 @@ Starts the UIAbility. This API can be called only by the main thread. It uses a 
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified. |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported. |
 
+<a id="terminateself"></a>
 ## terminateSelf
 
 ```TypeScript
@@ -169,7 +173,7 @@ Terminates this AppServiceExtensionAbility. This API can be called only by the m
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

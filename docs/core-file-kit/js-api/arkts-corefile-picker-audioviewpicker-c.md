@@ -14,6 +14,7 @@ Provides APIs for selecting and saving audio clips. Before using the APIs of **A
 import { picker } from '@kit.CoreFileKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -37,13 +38,14 @@ let audioPicker = new picker.AudioViewPicker(); // Construction without paramete
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
 constructor(context: Context)
 ```
 
-A constructor used to create an **AudioViewPicker** instance. This constructor is recommended. For details about how to obtain the context, see [getHostContext](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#gethostcontext12).
+A constructor used to create an **AudioViewPicker** instance. This constructor is recommended. For details about how to obtain the context, see [getHostContext](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#gethostcontext12).
 
 **Since:** 12
 
@@ -88,6 +90,7 @@ struct Index {
 
 ```
 
+<a id="save"></a>
 ## save
 
 ```TypeScript
@@ -114,7 +117,7 @@ Starts an **audioPicker** page (currently, a **documentPicker** page is displaye
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the URIs of the audio clips saved.<br>**Note**: For details about how to use the returned URIs, see [Using a Document URI](../../../../file-management/user-file-uri-intro.md#using-a-document-uri). |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the URIs of the audio clips saved.<br>**Note**: For details about how to use the returned URIs, see [Using a Document URI](docroot://file-management/user-file-uri-intro.md#using-a-document-uri). |
 
 **Example**
 
@@ -140,6 +143,7 @@ async function example16(context: common.UIAbilityContext) { // Ensure that cont
 
 ```
 
+<a id="save-1"></a>
 ## save
 
 ```TypeScript
@@ -159,7 +163,7 @@ Starts an **audioPicker** page (currently, a **documentPicker** page is displaye
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | option | [AudioSaveOptions](arkts-corefile-picker-audiosaveoptions-c.md) | Yes | Options for saving audio clips. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback invoked to return the URIs of the audio clips saved.<br>**Note**: For details about how to use the returned URIs, see [Using a Document URI](../../../../file-management/user-file-uri-intro.md#using-a-document-uri). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback invoked to return the URIs of the audio clips saved.<br>**Note**: For details about how to use the returned URIs, see [Using a Document URI](docroot://file-management/user-file-uri-intro.md#using-a-document-uri). |
 
 **Example**
 
@@ -187,6 +191,7 @@ async function example17(context: common.UIAbilityContext) { // Ensure that cont
 
 ```
 
+<a id="save-2"></a>
 ## save
 
 ```TypeScript
@@ -205,7 +210,7 @@ Starts an **audioPicker** page (currently, a **documentPicker** page is displaye
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback invoked to return the URIs of the audio clips saved.<br>**Note**: For details about how to use the returned URIs, see [Using a Document URI](../../../../file-management/user-file-uri-intro.md#using-a-document-uri). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback invoked to return the URIs of the audio clips saved.<br>**Note**: For details about how to use the returned URIs, see [Using a Document URI](docroot://file-management/user-file-uri-intro.md#using-a-document-uri). |
 
 **Example**
 
@@ -231,6 +236,7 @@ async function example18(context: common.UIAbilityContext) { // Ensure that cont
 
 ```
 
+<a id="select"></a>
 ## select
 
 ```TypeScript
@@ -257,7 +263,7 @@ Starts an **audioPicker** page for the user to select one or more audio clips. T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the URIs of the audio clips selected.<br>**Note**: For details about how to use the returned URIs, see [Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri). |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the URIs of the audio clips selected.<br>**Note**: For details about how to use the returned URIs, see [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri). |
 
 **Example**
 
@@ -282,6 +288,7 @@ async function example13(context: common.UIAbilityContext) { // Ensure that cont
 
 ```
 
+<a id="select-1"></a>
 ## select
 
 ```TypeScript
@@ -301,7 +308,7 @@ Starts an **audioPicker** page for the user to select one or more audio clips. T
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | option | [AudioSelectOptions](arkts-corefile-picker-audioselectoptions-c.md) | Yes | Options for selecting audio clips. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback invoked to return the URIs of the audio clips selected.<br>**Note**: For details about how to use the returned URIs, see [Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback invoked to return the URIs of the audio clips selected.<br>**Note**: For details about how to use the returned URIs, see [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri). |
 
 **Example**
 
@@ -328,6 +335,7 @@ async function example14(context: common.UIAbilityContext) { // Ensure that cont
 
 ```
 
+<a id="select-2"></a>
 ## select
 
 ```TypeScript
@@ -346,7 +354,7 @@ Starts an **audioPicker** page for the user to select one or more audio clips. T
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback invoked to return the URIs of the audio clips selected.<br>**Note**: For details about how to use the returned URIs, see [Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback invoked to return the URIs of the audio clips selected.<br>**Note**: For details about how to use the returned URIs, see [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri). |
 
 **Example**
 

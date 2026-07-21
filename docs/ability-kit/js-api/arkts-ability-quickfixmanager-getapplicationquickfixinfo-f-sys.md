@@ -6,6 +6,7 @@
 import { quickFixManager } from '@kit.AbilityKit';
 ```
 
+<a id="getapplicationquickfixinfo"></a>
 ## getApplicationQuickFixInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the quick fix information of the application. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ApplicationQuickFixInfo> | Yes | Callback used to return the quick fix information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ApplicationQuickFixInfo&gt; | Yes | Callback used to return the quick fix information. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ try {
 ```
 
 
+<a id="getapplicationquickfixinfo-1"></a>
 ## getApplicationQuickFixInfo
 
 ```TypeScript
@@ -91,7 +93,7 @@ Obtains the quick fix information of the application. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ApplicationQuickFixInfo> | Promise used to return the quick fix information. |
+| Promise&lt;ApplicationQuickFixInfo&gt; | Promise used to return the quick fix information. |
 
 **Error codes:**
 

@@ -16,6 +16,7 @@ Provides APIs for encapsulating file asset attributes.
 import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="getanalysisdata"></a>
 ## getAnalysisData
 
 ```TypeScript
@@ -44,7 +45,7 @@ Obtains analysis data. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the analysis result obtained. |
+| Promise&lt;string&gt; | Promise used to return the analysis result obtained. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ Obtains analysis data. This API uses a promise to return the result.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
+<a id="requestsource"></a>
 ## requestSource
 
 ```TypeScript
@@ -77,7 +79,7 @@ Opens the source file and returns the FD. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the FD obtained. |
+| Promise&lt;number&gt; | Promise used to return the FD obtained. |
 
 **Error codes:**
 

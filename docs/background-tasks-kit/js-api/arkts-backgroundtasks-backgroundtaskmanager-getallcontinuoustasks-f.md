@@ -6,6 +6,7 @@
 import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="getallcontinuoustasks"></a>
 ## getAllContinuousTasks
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains all continuous task information, including the task ID and type. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ContinuousTaskInfo[]> | Promise that returns all continuous task information. |
+| Promise&lt;ContinuousTaskInfo[]&gt; | Promise that returns all continuous task information. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="getallcontinuoustasks-1"></a>
 ## getAllContinuousTasks
 
 ```TypeScript
@@ -95,7 +97,7 @@ Obtains all continuous task information, including the task ID and type. It supp
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ContinuousTaskInfo[]> | Promise that returns all continuous task information. |
+| Promise&lt;ContinuousTaskInfo[]&gt; | Promise that returns all continuous task information. |
 
 **Error codes:**
 

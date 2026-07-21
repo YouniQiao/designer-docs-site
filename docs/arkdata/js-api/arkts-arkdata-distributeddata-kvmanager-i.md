@@ -12,6 +12,7 @@ Creates a **KVManager** object to obtain KV store information. Before calling an
 
 **System capability:** SystemCapability.DistributedDataManager.KVStore.Core
 
+<a id="closekvstore"></a>
 ## closeKVStore
 
 ```TypeScript
@@ -37,7 +38,7 @@ Closes a KV store. This API uses an asynchronous callback to return the result.
 | appId | string | Yes | Bundle name of the app that invokes the KV store. |
 | storeId | string | Yes | Unique identifier of the KV store to close. The length cannot exceed [MAX_STORE_ID_LENGTH](arkts-arkdata-distributeddata-constants-n.md#constants). |
 | kvStore | [KVStore](arkts-arkdata-distributeddata-kvstore-i.md) | Yes | KV store to close. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -67,6 +68,7 @@ try {
 
 ```
 
+<a id="closekvstore-1"></a>
 ## closeKVStore
 
 ```TypeScript
@@ -97,7 +99,7 @@ Closes a KV store. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -131,6 +133,7 @@ try {
 
 ```
 
+<a id="deletekvstore"></a>
 ## deleteKVStore
 
 ```TypeScript
@@ -155,7 +158,7 @@ Deletes a KV store. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | appId | string | Yes | Bundle name of the app that invokes the KV store. |
 | storeId | string | Yes | Unique identifier of the KV store to delete. The length cannot exceed [MAX_STORE_ID_LENGTH](arkts-arkdata-distributeddata-constants-n.md#constants). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -185,6 +188,7 @@ try {
 
 ```
 
+<a id="deletekvstore-1"></a>
 ## deleteKVStore
 
 ```TypeScript
@@ -214,7 +218,7 @@ Deletes a KV store. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -248,13 +252,14 @@ try {
 
 ```
 
+<a id="getallkvstoreid"></a>
 ## getAllKVStoreId
 
 ```TypeScript
 getAllKVStoreId(appId: string, callback: AsyncCallback<string[]>): void
 ```
 
-Obtains the IDs of all KV stores that are created by [getKVStore()](arkts-arkdata-distributeddata-kvmanager-i.md#getkvstore-2)and have not been deleted by [deleteKVStore()](arkts-arkdata-distributeddata-kvmanager-i.md#deletekvstore-1). This API uses an asynchronous callback to return the result.
+Obtains the IDs of all KV stores that are created by [getKVStore()](distributedData.KVManager.getKVStore<T extends KVStore>(storeId: string, options: Options, callback: AsyncCallback<T>))and have not been deleted by [deleteKVStore()](arkts-arkdata-distributeddata-kvmanager-i.md#deletekvstore-1). This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -271,7 +276,7 @@ Obtains the IDs of all KV stores that are created by [getKVStore()](arkts-arkdat
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | appId | string | Yes | Bundle name of the app that invokes the KV store. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string[]> | Yes | Callback used to return the IDs of all created KV stores. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string[]&gt; | Yes | Callback used to return the IDs of all created KV stores. |
 
 **Example**
 
@@ -288,13 +293,14 @@ try {
 
 ```
 
+<a id="getallkvstoreid-1"></a>
 ## getAllKVStoreId
 
 ```TypeScript
 getAllKVStoreId(appId: string): Promise<string[]>
 ```
 
-Obtains the IDs of all KV stores that are created by [getKVStore()](arkts-arkdata-distributeddata-kvmanager-i.md#getkvstore-2)and have not been deleted by [deleteKVStore()](arkts-arkdata-distributeddata-kvmanager-i.md#deletekvstore-1). This API uses a promise to return the result.
+Obtains the IDs of all KV stores that are created by [getKVStore()](distributedData.KVManager.getKVStore<T extends KVStore>(storeId: string, options: Options, callback: AsyncCallback<T>))and have not been deleted by [deleteKVStore()](arkts-arkdata-distributeddata-kvmanager-i.md#deletekvstore-1). This API uses a promise to return the result.
 
 **Since:** 8
 
@@ -316,7 +322,7 @@ Obtains the IDs of all KV stores that are created by [getKVStore()](arkts-arkdat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Promise used to return the IDs of all created KV stores. |
+| Promise&lt;string[]&gt; | Promise used to return the IDs of all created KV stores. |
 
 **Example**
 
@@ -336,6 +342,7 @@ try {
 
 ```
 
+<a id="getkvstore"></a>
 ## getKVStore
 
 ```TypeScript
@@ -365,7 +372,7 @@ Creates and obtains a KV store. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the KV store instance created. |
+| Promise&lt;T&gt; | Promise used to return the KV store instance created. |
 
 **Example**
 
@@ -393,6 +400,7 @@ try {
 
 ```
 
+<a id="getkvstore-1"></a>
 ## getKVStore
 
 ```TypeScript
@@ -417,7 +425,7 @@ Creates and obtains a KV store. This API uses an asynchronous callback to return
 | --- | --- | --- | --- |
 | storeId | string | Yes | Unique identifier of the KV store. The length cannot exceed [MAX_STORE_ID_LENGTH](arkts-arkdata-distributeddata-constants-n.md#constants). |
 | options | [Options](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-zlib-options-i.md) | Yes | Configuration of the KV store. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback used to return the KV store instance created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback used to return the KV store instance created. |
 
 **Example**
 
@@ -447,6 +455,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -470,7 +479,7 @@ Unsubscribes from service status changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'distributedDataServiceDie' | Yes | Event type. The value is **distributedDataServiceDie**, which indicates service status changes. |
-| deathCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback to unregister. If this parameter is not specified, all callbacks for service status changes will be unregistered. |
+| deathCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback to unregister. If this parameter is not specified, all callbacks for service status changes will be unregistered. |
 
 **Example**
 
@@ -489,6 +498,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -512,7 +522,7 @@ Subscribes to service status changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'distributedDataServiceDie' | Yes | Event type. The value is **distributedDataServiceDie**, which indicates service status changes. |
-| deathCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback used to return the result. |
+| deathCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 

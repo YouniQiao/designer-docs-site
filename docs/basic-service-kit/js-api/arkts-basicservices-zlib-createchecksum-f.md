@@ -6,6 +6,7 @@
 import { zlib } from '@kit.BasicServicesKit';
 ```
 
+<a id="createchecksum"></a>
 ## createChecksum
 
 ```TypeScript
@@ -26,7 +27,7 @@ Creates this checksum object. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Checksum> | Promise used to return the created checksum object. |
+| Promise&lt;Checksum&gt; | Promise used to return the created checksum object. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="gethistoricalsessiondescriptors"></a>
 ## getHistoricalSessionDescriptors
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get history avsession records. These sessions have been destroyed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | maxSize | number | Yes | Specifies the maximum size of the returned value array. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Readonly<AVSessionDescriptor>>> | Yes | async callback for an array of AVSessionDescriptors.If provided '0' or not provided, the maximum value is determined by the system. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Readonly&lt;AVSessionDescriptor&gt;&gt;&gt; | Yes | async callback for an array of AVSessionDescriptors.If provided '0' or not provided, the maximum value is determined by the system. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ avSession.getHistoricalSessionDescriptors(1, (descriptors: avSession.AVSessionDe
 ```
 
 
+<a id="gethistoricalsessiondescriptors-1"></a>
 ## getHistoricalSessionDescriptors
 
 ```TypeScript
@@ -85,7 +87,7 @@ Get history avsession records. These sessions have been destroyed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Readonly<AVSessionDescriptor>>> | Promise for an array of AVSessionDescriptors |
+| Promise&lt;Array&lt;Readonly&lt;AVSessionDescriptor&gt;&gt;&gt; | Promise for an array of AVSessionDescriptors |
 
 **Error codes:**
 

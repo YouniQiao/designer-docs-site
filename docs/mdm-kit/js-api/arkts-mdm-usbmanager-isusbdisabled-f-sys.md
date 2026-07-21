@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.MDMKit';
 ```
 
+<a id="isusbdisabled"></a>
 ## isUsbDisabled
 
 ```TypeScript
@@ -18,7 +19,7 @@ Queries whether the USB is disabled.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** getDisallowedPolicy(admin:
+**Substitutes:** [getDisallowedPolicy(admin:](arkts-mdm-restrictions-getdisallowedpolicy-f.md#getdisallowedpolicy-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_MANAGE_USB
 

@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="addcandidateconfig"></a>
 ## addCandidateConfig
 
 ```TypeScript
@@ -34,7 +35,7 @@ Add a specified candidate hotspot configuration and returns the networkId.This m
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns {@code networkId} if the configuration is added; returns {@code -1} otherwise. |
+| Promise&lt;number&gt; | Returns {@code networkId} if the configuration is added; returns {@code -1} otherwise. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ Add a specified candidate hotspot configuration and returns the networkId.This m
 ```
 
 
+<a id="addcandidateconfig-1"></a>
 ## addCandidateConfig
 
 ```TypeScript
@@ -91,7 +93,7 @@ Add a specified candidate hotspot configuration and returns the networkId.This m
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [WifiDeviceConfig](arkts-connectivity-wifi-wifideviceconfig-i.md) | Yes | candidate config. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Indicates call back of addCandidateConfig. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Indicates call back of addCandidateConfig. |
 
 **Error codes:**
 

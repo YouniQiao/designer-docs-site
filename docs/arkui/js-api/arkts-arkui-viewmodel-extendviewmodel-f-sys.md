@@ -1,5 +1,6 @@
 # extendViewModel (System API)
 
+<a id="extendviewmodel"></a>
 ## extendViewModel
 
 ```TypeScript
@@ -26,7 +27,7 @@ export declare function extendViewModel<T extends ViewModel, Data>(
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [CombinedOptions](arkts-arkui-combinedoptions-t-sys.md)<T, Data> | Yes |  |
+| options | [CombinedOptions](arkts-arkui-combinedoptions-t-sys.md)&lt;T, Data&gt; | Yes |  |
 
 **Return value:**
 

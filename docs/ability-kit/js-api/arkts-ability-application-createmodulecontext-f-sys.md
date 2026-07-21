@@ -6,6 +6,7 @@
 import { application } from '@kit.AbilityKit';
 ```
 
+<a id="createmodulecontext"></a>
 ## createModuleContext
 
 ```TypeScript
@@ -17,7 +18,7 @@ Creates the context for a module. This API uses a promise to return the result.
 > **NOTE**  
 >  
 > - Starting from API version 18, the context can obtain the  
-> [process name](../../../../reference/apis-ability-kit/js-apis-inner-application-context.md#context) of the current  
+> [process name](docroot://reference/apis-ability-kit/js-apis-inner-application-context.md#context) of the current  
 > application. The **processName** property in the context created by **createModuleContext** is the same as the  
 > **processName** property in the input parameter **Context**. The values of other properties are obtained based on  
 > the input parameters **Context**, **bundleName**, and **moduleName**.  
@@ -50,7 +51,7 @@ Creates the context for a module. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Context> | Promise used to return the context created. |
+| Promise&lt;Context&gt; | Promise used to return the context created. |
 
 **Error codes:**
 

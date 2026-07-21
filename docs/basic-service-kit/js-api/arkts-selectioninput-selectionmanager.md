@@ -27,11 +27,11 @@ import { selectionManager } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [createPanel](arkts-basicservices-selectionmanager-createpanel-f-sys.md#createpanel-1) | Creates a word selection panel. This API uses a promise to return the result.Only one [MENU_PANEL](arkts-selectioninput-selectionpanel.md) and one [MAIN_PANEL](arkts-selectioninput-selectionpanel.md) can be created for one word selection application. |
-| [destroyPanel](arkts-basicservices-selectionmanager-destroypanel-f-sys.md#destroypanel-1) | Destroys the word selection panel. This API uses a promise to return the result. |
-| [getSelectionContent](arkts-basicservices-selectionmanager-getselectioncontent-f-sys.md#getselectioncontent-1) | Obtains this selected text content. This API uses a promise to return the result. |
-| [off](arkts-basicservices-selectionmanager-off-f-sys.md#off-1) | Unregisters the callback used to listen for the word selection completion event. This API uses an asynchronous callback to return the result. |
-| [on](arkts-basicservices-selectionmanager-on-f-sys.md#on-1) | Registers a callback to listen for the word selection completion event. This API uses an asynchronous callback to return the result. |
+| [createPanel](arkts-basicservices-selectionmanager-createpanel-f-sys.md#createpanel) | Creates a word selection panel. This API uses a promise to return the result.Only one [MENU_PANEL](arkts-selectioninput-selectionpanel.md) and one [MAIN_PANEL](arkts-selectioninput-selectionpanel.md) can be created for one word selection application. |
+| [destroyPanel](arkts-basicservices-selectionmanager-destroypanel-f-sys.md#destroypanel) | Destroys the word selection panel. This API uses a promise to return the result. |
+| [getSelectionContent](arkts-basicservices-selectionmanager-getselectioncontent-f-sys.md#getselectioncontent) | Obtains this selected text content. This API uses a promise to return the result. |
+| [off](arkts-basicservices-selectionmanager-off-f-sys.md#off) | Unregisters the callback used to listen for the word selection completion event. This API uses an asynchronous callback to return the result. |
+| [on](arkts-basicservices-selectionmanager-on-f-sys.md#on) | Registers a callback to listen for the word selection completion event. This API uses an asynchronous callback to return the result. |
 <!--DelEnd-->
 
 ### Interfaces

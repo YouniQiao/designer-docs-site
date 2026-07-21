@@ -114,7 +114,7 @@ Creates a list container.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | ListOptions | No | Options of the **List** component. |
+| options | [ListOptions](arkts-arkui-listoptions-i.md) | No | Options of the **List** component. |
 
 ## Summary
 

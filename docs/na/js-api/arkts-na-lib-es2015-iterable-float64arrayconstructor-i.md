@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Float64ArrayConstructor--><!--Device-unnamed-interface Float64ArrayConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -14,14 +15,15 @@ new (elements: Iterable<number>): Float64Array
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elements | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes |  |
+| elements | Iterable&lt;number&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Float64Array](arkts-na-lib-es2015-iterable-float64array-i.md) |  |
+| Float64Array |  |
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -36,13 +38,13 @@ Creates an array from an array-like or iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes |  |
-| mapfn | (v: number, k: number) => number | No |  |
+| arrayLike | Iterable&lt;number&gt; | Yes |  |
+| mapfn | (v: number, k: number) =&gt; number | No |  |
 | thisArg | any | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Float64Array](arkts-na-lib-es2015-iterable-float64array-i.md) |  |
+| Float64Array |  |
 

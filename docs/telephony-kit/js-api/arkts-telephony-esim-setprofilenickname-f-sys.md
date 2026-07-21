@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="setprofilenickname"></a>
 ## setProfileNickname
 
 ```TypeScript
@@ -36,7 +37,7 @@ Adds or updates the given profile nickname.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultCode> | Returns the result of the set nickname operation. |
+| Promise&lt;ResultCode&gt; | Returns the result of the set nickname operation. |
 
 **Error codes:**
 

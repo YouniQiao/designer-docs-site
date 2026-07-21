@@ -6,6 +6,7 @@
 import { pluginBundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="installlocalplugin"></a>
 ## installLocalPlugin
 
 ```TypeScript
@@ -28,13 +29,13 @@ Install the plugin for self application.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pluginFilePaths | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Indicates the file paths of plugin. |
+| pluginFilePaths | Array&lt;string&gt; | Yes | Indicates the file paths of plugin. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

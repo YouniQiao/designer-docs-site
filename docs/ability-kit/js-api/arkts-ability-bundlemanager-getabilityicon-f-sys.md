@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getabilityicon"></a>
 ## getAbilityIcon
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the PixelMap of an icon based on the bundle name, module name, and abili
 | bundleName | string | Yes | Bundle name of the application to be queried. |
 | moduleName | string | Yes | Module name of the application to be queried. |
 | abilityName | string | Yes | Ability component name to be queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return the result. If getApplicationInfos is successful, **err** is **undefined**, and PixelMap as the input parameter for starting the application. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return the result. If getApplicationInfos is successful, **err** is **undefined**, and PixelMap as the input parameter for starting the application. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ Obtains the PixelMap of an icon based on the bundle name, module name, and abili
 | [17700029](../errorcode-bundle.md#17700029-disabled-ability) | The specified ability is disabled. |
 
 
+<a id="getabilityicon-1"></a>
 ## getAbilityIcon
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains the PixelMap of an icon based on the bundle name, module name, and abili
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the PixelMap. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the PixelMap. |
 
 **Error codes:**
 

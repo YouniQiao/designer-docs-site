@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="onlocationchange"></a>
 ## onLocationChange
 
 ```TypeScript
@@ -31,8 +32,8 @@ Subscribe location changed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| request | LocationRequest \| ContinuousLocationRequest | Yes | Indicates the location request parameters.<br>**Since:** 23 |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Location> | Yes | Indicates the callback for reporting the location result.<br>**Since:** 23 |
+| request | [LocationRequest](arkts-location-geolocation-locationrequest-i.md) \| ContinuousLocationRequest | Yes | Indicates the location request parameters.<br>**Since:** 23 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Location&gt; | Yes | Indicates the callback for reporting the location result.<br>**Since:** 23 |
 
 **Error codes:**
 

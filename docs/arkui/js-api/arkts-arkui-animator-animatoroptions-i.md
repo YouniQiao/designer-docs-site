@@ -22,7 +22,7 @@ begin: number
 
 Start point of the animation interpolation.
 
-Note: This setting affects the input parameter value of the [onFrame](../../../../reference/apis-arkui/js-apis-animator.md#properties) callback.
+Note: This setting affects the input parameter value of the [onFrame](docroot://reference/apis-arkui/js-apis-animator.md#properties) callback.
 
 Default value: **0**
 
@@ -74,7 +74,7 @@ Animation playback mode.
 
 Default value: **'normal'**
 
-**Type:** "normal" | "reverse" | "alternate" | "alternate-reverse"
+**Type:** "normal" \| "reverse" \| "alternate" \| "alternate-reverse"
 
 **Since:** 6
 
@@ -134,7 +134,7 @@ end: number
 
 End point of animation interpolation.
 
-Note: This setting affects the input parameter value of the [onFrame](../../../../reference/apis-arkui/js-apis-animator.md#properties) callback.
+Note: This setting affects the input parameter value of the [onFrame](docroot://reference/apis-arkui/js-apis-animator.md#properties) callback.
 
 Default value: **1**
 
@@ -164,7 +164,7 @@ State of the animated target after the animation is executed.
 
 **'both'**: The animation follows the **'forwards'** and **'backwards'** rules.
 
-**Type:** "none" | "forwards" | "backwards" | "both"
+**Type:** "none" \| "forwards" \| "backwards" \| "both"
 
 **Since:** 6
 

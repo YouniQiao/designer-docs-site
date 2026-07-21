@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="analyzeprintevents"></a>
 ## analyzePrintEvents
 
 ```TypeScript
@@ -37,7 +38,7 @@ Analyze print events.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | the promise returned by the function. |
+| Promise&lt;string&gt; | the promise returned by the function. |
 
 **Error codes:**
 

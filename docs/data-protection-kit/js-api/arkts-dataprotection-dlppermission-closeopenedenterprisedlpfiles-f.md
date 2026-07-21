@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="closeopenedenterprisedlpfiles"></a>
 ## closeOpenedEnterpriseDlpFiles
 
 ```TypeScript
@@ -41,7 +42,7 @@ This API can be called to close enterprise DLP files in batches, clear file reso
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

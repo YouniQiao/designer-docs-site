@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="addbeaconfence"></a>
 ## addBeaconFence
 
 ```TypeScript
@@ -34,7 +35,7 @@ Add a beacon fence.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returned by the function, for reporting the ID of beacon fence. |
+| Promise&lt;number&gt; | The promise returned by the function, for reporting the ID of beacon fence. |
 
 **Error codes:**
 

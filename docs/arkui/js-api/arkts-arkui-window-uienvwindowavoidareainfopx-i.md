@@ -1,6 +1,6 @@
 # UIEnvWindowAvoidAreaInfoPX
 
-Describes [environment variable](../../../../ui/arkts-env-system-property.md) data types for window avoidance areas of different types. All types of window avoidance areas are measured in px.
+Describes [environment variable](docroot://ui/arkts-env-system-property.md) data types for window avoidance areas of different types. All types of window avoidance areas are measured in px.
 
 **Since:** 23
 

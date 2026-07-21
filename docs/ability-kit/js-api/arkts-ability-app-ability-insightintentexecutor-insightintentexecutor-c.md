@@ -1,6 +1,6 @@
 # InsightIntentExecutor
 
-The module provides the base class for intent execution. You can use this module to interface with the [InsightIntent framework](../../../../application-models/insight-intent-overview.md) on the device side and implement intent service logic through [configuration files](../../../../application-models/insight-intent-config-development.md).In addition to developing intents via configuration files, intents can also be developed using decorators. For API version 20 and later, you are advised to [develop intents using decorators](../../../../application-models/insight-intent-decorator-development.md).
+The module provides the base class for intent execution. You can use this module to interface with the [InsightIntent framework](docroot://application-models/insight-intent-overview.md) on the device side and implement intent service logic through [configuration files](docroot://application-models/insight-intent-config-development.md).In addition to developing intents via configuration files, intents can also be developed using decorators. For API version 20 and later, you are advised to [develop intents using decorators](docroot://application-models/insight-intent-decorator-development.md).
 
 **Since:** 11
 
@@ -14,6 +14,7 @@ The module provides the base class for intent execution. You can use this module
 import { InsightIntentExecutor } from '@kit.AbilityKit';
 ```
 
+<a id="onexecuteinserviceextensionability"></a>
 ## onExecuteInServiceExtensionAbility
 
 ```TypeScript
@@ -40,7 +41,7 @@ Called during the ServiceExtensionAbility lifecycle when the ServiceExtensionAbi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Intent name. |
-| param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
+| param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
 
 **Return value:**
 
@@ -125,6 +126,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 
 ```
 
+<a id="onexecuteinuiabilitybackgroundmode"></a>
 ## onExecuteInUIAbilityBackgroundMode
 
 ```TypeScript
@@ -154,7 +156,7 @@ Called during the UIAbility lifecycle when the [UIAbility](arkts-app-ability-uia
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Intent name. |
-| param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
+| param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
 
 **Return value:**
 
@@ -211,6 +213,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 
 ```
 
+<a id="onexecuteinuiabilityforegroundmode"></a>
 ## onExecuteInUIAbilityForegroundMode
 
 ```TypeScript
@@ -241,7 +244,7 @@ Called during the UIAbility lifecycle when the [UIAbility](arkts-app-ability-uia
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Intent name. |
-| param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
+| param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
 | pageLoader | window.WindowStage | Yes | WindowStage instance, which is the same as the WindowStage instance in the [onWindowStageCreate](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1) API and can be used to load the page for intent execution. |
 
 **Return value:**
@@ -339,6 +342,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 
 ```
 
+<a id="onexecuteinuiextensionability"></a>
 ## onExecuteInUIExtensionAbility
 
 ```TypeScript
@@ -365,7 +369,7 @@ Called during the UIExtensionAbility lifecycle when the [UIExtensionAbility](ark
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Intent name. |
-| param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
+| param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
 | pageLoader | [UIExtensionContentSession](arkts-ability-app-ability-uiextensioncontentsession-uiextensioncontentsession-c.md) | Yes | UIExtensionContentSession instance, which is the same as the UIExtensionContentSession instance in the [onSessionCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1) API and can be used to load the page for intent execution. |
 
 **Return value:**

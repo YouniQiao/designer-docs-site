@@ -6,6 +6,7 @@
 import { application } from '@kit.AbilityKit';
 ```
 
+<a id="createpluginmodulecontext"></a>
 ## createPluginModuleContext
 
 ```TypeScript
@@ -34,7 +35,7 @@ Creates the context of a plugin under the current application based on the conte
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Context> | Promise used to return the context created. |
+| Promise&lt;Context&gt; | Promise used to return the context created. |
 
 **Example**
 

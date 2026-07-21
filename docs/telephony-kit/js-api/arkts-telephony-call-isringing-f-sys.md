@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="isringing"></a>
 ## isRinging
 
 ```TypeScript
@@ -28,7 +29,7 @@ Judge whether there is a ringing call.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback of isRinging.Returns {@code true} if the device is ringing; returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback of isRinging.Returns {@code true} if the device is ringing; returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ call.isRinging((err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isringing-1"></a>
 ## isRinging
 
 ```TypeScript
@@ -80,7 +82,7 @@ Judge whether there is a ringing call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the device is ringing; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the device is ringing; returns {@code false} otherwise. |
 
 **Error codes:**
 

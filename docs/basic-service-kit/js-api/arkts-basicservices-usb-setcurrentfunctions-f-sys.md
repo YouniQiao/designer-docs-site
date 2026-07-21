@@ -6,6 +6,7 @@
 import { usb } from '@kit.BasicServicesKit';
 ```
 
+<a id="setcurrentfunctions"></a>
 ## setCurrentFunctions
 
 ```TypeScript
@@ -36,7 +37,7 @@ Sets the current USB function list in Device mode.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the operation is successful, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the operation is successful, and **false** indicates the opposite. |
 
 **Example**
 

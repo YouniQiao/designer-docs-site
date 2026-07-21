@@ -1,5 +1,6 @@
 # lchown
 
+<a id="lchown"></a>
 ## lchown
 
 ```TypeScript
@@ -28,9 +29,10 @@ Changes the file owner (owner of the symbolic link, not the file referred to by 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 
+<a id="lchown-1"></a>
 ## lchown
 
 ```TypeScript
@@ -54,5 +56,5 @@ Changes the file owner (owner of the symbolic link, not the file referred to by 
 | path | string | Yes | Application sandbox path of the file. |
 | uid | number | Yes | New UID. |
 | gid | number | Yes | New GID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file owner is changed asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when the file owner is changed asynchronously. |
 

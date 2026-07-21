@@ -1,8 +1,8 @@
 # GridCol properties/events
 
-In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
-The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
+The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** GridColAttribute extends [CommonMethod<GridColAttribute>](CommonMethod<GridColAttribute>)
 
@@ -12,6 +12,7 @@ The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="gridcoloffset"></a>
 ## gridColOffset
 
 ```TypeScript
@@ -36,6 +37,7 @@ Sets the number of offset columns relative to the original position of the compo
 | --- | --- | --- | --- |
 | value | number \| GridColColumnOption | Yes | Number of offset columns relative to the previous child component of the grid<br>The value must be a non-negative integer. Default value: **0**.<br>Invalid values are treated as the default value. |
 
+<a id="order"></a>
 ## order
 
 ```TypeScript
@@ -60,6 +62,7 @@ Sets the display order of the grid child component. Grid child components are so
 | --- | --- | --- | --- |
 | value | number \| GridColColumnOption | Yes | Sequence number of the component. Child components of the grid are sorted in ascending order based on their sequence numbers.<br>The value must be a non-negative integer. Default value: **0**.<br>Invalid values are treated as the default value. |
 
+<a id="span"></a>
 ## span
 
 ```TypeScript

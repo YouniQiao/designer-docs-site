@@ -6,6 +6,7 @@
 import { connectedTag } from '@kit.ConnectivityKit';
 ```
 
+<a id="read"></a>
 ## read
 
 ```TypeScript
@@ -26,7 +27,7 @@ Reads the NDEF data from the connected NFC tag.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number[]> | The reponse NDEF data. |
+| Promise&lt;number[]&gt; | The reponse NDEF data. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ connectedTag.read().then((data) => {
 ```
 
 
+<a id="read-1"></a>
 ## read
 
 ```TypeScript
@@ -71,7 +73,7 @@ Reads the NDEF data from the connected NFC tag.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number[]> | Yes | The callback to receive the data. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number[]&gt; | Yes | The callback to receive the data. |
 
 **Error codes:**
 

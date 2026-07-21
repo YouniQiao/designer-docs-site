@@ -8,6 +8,7 @@ The render resource factory. RenderResourceFactory is used to create resources t
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="createimage"></a>
 ## createImage
 
 ```TypeScript
@@ -32,8 +33,9 @@ Create an image.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Image> | promise an image |
+| Promise&lt;Image&gt; | promise an image |
 
+<a id="createimagestream"></a>
 ## createImageStream
 
 ```TypeScript
@@ -60,8 +62,9 @@ Create an image stream.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ImageStream> | promise an image stream |
+| Promise&lt;ImageStream&gt; | promise an image stream |
 
+<a id="createmesh"></a>
 ## createMesh
 
 ```TypeScript
@@ -87,8 +90,9 @@ Create a Mesh from an array of vertices.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MeshResource> | promise a Mesh |
+| Promise&lt;MeshResource&gt; | promise a Mesh |
 
+<a id="createsampler"></a>
 ## createSampler
 
 ```TypeScript
@@ -113,8 +117,9 @@ Create a Sampler.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Sampler> | - promise a sampler |
+| Promise&lt;Sampler&gt; | - promise a sampler |
 
+<a id="createscene"></a>
 ## createScene
 
 ```TypeScript
@@ -139,8 +144,9 @@ Create a new scene from a Resource.If uri is not provided, will return an empty 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Scene> | promise a scene |
+| Promise&lt;Scene&gt; | promise a scene |
 
+<a id="createshader"></a>
 ## createShader
 
 ```TypeScript
@@ -165,5 +171,5 @@ Create a shader.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Shader> | promise a shader |
+| Promise&lt;Shader&gt; | promise a shader |
 

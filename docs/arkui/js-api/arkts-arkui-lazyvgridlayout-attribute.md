@@ -12,6 +12,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="columnstemplate"></a>
 ## columnsTemplate
 
 ```TypeScript

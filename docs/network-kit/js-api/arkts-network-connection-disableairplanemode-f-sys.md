@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="disableairplanemode"></a>
 ## disableAirplaneMode
 
 ```TypeScript
@@ -28,7 +29,7 @@ Disables the airplane mode for a device.To invoke this method, you must have the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of disableAirplaneMode. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of disableAirplaneMode. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ connection.disableAirplaneMode((error: BusinessError) => {
 ```
 
 
+<a id="disableairplanemode-1"></a>
 ## disableAirplaneMode
 
 ```TypeScript
@@ -75,7 +77,7 @@ Disables the airplane mode for a device.To invoke this method, you must have the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getconnectedbledevices"></a>
 ## getConnectedBLEDevices
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the list of devices in the connected status.On API 10 and above, the per
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Returns the list of device address. |
+| Array&lt;string&gt; | Returns the list of device address. |
 
 **Error codes:**
 

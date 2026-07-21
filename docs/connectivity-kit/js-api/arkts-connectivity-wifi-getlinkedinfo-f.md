@@ -6,6 +6,7 @@
 import { wifi } from '@kit.ConnectivityKit';
 ```
 
+<a id="getlinkedinfo"></a>
 ## getLinkedInfo
 
 ```TypeScript
@@ -30,9 +31,10 @@ Obtains information about a Wi-Fi connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WifiLinkedInfo> | Returns Wi-Fi linked information. |
+| Promise&lt;WifiLinkedInfo&gt; | Returns Wi-Fi linked information. |
 
 
+<a id="getlinkedinfo-1"></a>
 ## getLinkedInfo
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtains information about a Wi-Fi connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WifiLinkedInfo> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WifiLinkedInfo&gt; | Yes |  |
 
 **Example**
 

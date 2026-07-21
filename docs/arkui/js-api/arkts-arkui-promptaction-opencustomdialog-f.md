@@ -6,6 +6,7 @@
 import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 
+<a id="opencustomdialog"></a>
 ## openCustomDialog
 
 ```TypeScript
@@ -48,7 +49,7 @@ By default, the width of the dialog box in portrait mode is the width of the win
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | ID of the custom dialog box, which can be used in **closeCustomDialog**. |
+| Promise&lt;number&gt; | ID of the custom dialog box, which can be used in **closeCustomDialog**. |
 
 **Error codes:**
 

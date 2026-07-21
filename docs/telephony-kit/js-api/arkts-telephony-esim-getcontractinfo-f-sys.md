@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="getcontractinfo"></a>
 ## getContractInfo
 
 ```TypeScript
@@ -35,7 +36,7 @@ Get contract info
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the contract info. |
+| Promise&lt;string&gt; | Returns the contract info. |
 
 **Error codes:**
 

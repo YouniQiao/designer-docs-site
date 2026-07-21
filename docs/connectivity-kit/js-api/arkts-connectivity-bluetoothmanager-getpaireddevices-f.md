@@ -6,6 +6,7 @@
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getpaireddevices"></a>
 ## getPairedDevices
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the list of Bluetooth devices that have been paired with the current dev
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Returns a list of paired Bluetooth devices's address. |
+| Array&lt;string&gt; | Returns a list of paired Bluetooth devices's address. |
 
 **Error codes:**
 

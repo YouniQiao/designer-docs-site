@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="off"></a>
 ## off("formUninstall")
 
 ```TypeScript
@@ -32,7 +33,7 @@ Unsubscribes from widget uninstall events. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "formUninstall" | Yes | Event type. The value **"formUninstall"** indicates a widget uninstall event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Callback used to return the widget ID. If it is left unspecified, it indicates the callback for all the events that have been subscribed.<br> To cancel the subscription with a given callback, this parameter must be set to the same value as **callback** in **on("formUninstall")**. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Callback used to return the widget ID. If it is left unspecified, it indicates the callback for all the events that have been subscribed.<br> To cancel the subscription with a given callback, this parameter must be set to the same value as **callback** in **on("formUninstall")**. |
 
 **Error codes:**
 
@@ -42,6 +43,7 @@ Unsubscribes from widget uninstall events. This API uses an asynchronous callbac
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="off-1"></a>
 ## off('formOverflow')
 
 ```TypeScript
@@ -63,7 +65,7 @@ Unsubscribes from the interactive widget animation request event. This API uses 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'formOverflow' | Yes | Event callback. The supported event is **'formOverflow'**, indicating the interactive widget animation request. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.OverflowRequest> | No | Callback function, which corresponds to the subscribed interactive widget animation request. By default, all registered interactive widget animation request events are deregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.OverflowRequest&gt; | No | Callback function, which corresponds to the subscribed interactive widget animation request. By default, all registered interactive widget animation request events are deregistered. |
 
 **Error codes:**
 
@@ -88,6 +90,7 @@ try {
 ```
 
 
+<a id="off-2"></a>
 ## off('changeSceneAnimationState')
 
 ```TypeScript
@@ -112,7 +115,7 @@ Unsubscribes from the event of switching the interactive widget state. An intera
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'changeSceneAnimationState' | Yes | Event type. The event **'changeSceneAnimationState'** is triggered when the interactive widget state is switched. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.ChangeSceneAnimationStateRequest> | No | Callback function, which corresponds to the request for switching the state of a subscribed interactive widget. By default, all registered interactive widget state switching events are deregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.ChangeSceneAnimationStateRequest&gt; | No | Callback function, which corresponds to the request for switching the state of a subscribed interactive widget. By default, all registered interactive widget state switching events are deregistered. |
 
 **Error codes:**
 
@@ -137,6 +140,7 @@ try {
 ```
 
 
+<a id="off-3"></a>
 ## off('getFormRect')
 
 ```TypeScript
@@ -181,6 +185,7 @@ try {
 ```
 
 
+<a id="off-4"></a>
 ## off('getLiveFormStatus')
 
 ```TypeScript

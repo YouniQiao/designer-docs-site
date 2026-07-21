@@ -6,6 +6,7 @@
 import { dataTransfer } from '@kit.ConnectivityKit';
 ```
 
+<a id="offreaddata"></a>
 ## offReadData
 
 ```TypeScript
@@ -26,7 +27,7 @@ function offReadData(callback?: Callback<DataParams>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<DataParams> | 否 | 监听端口读事件的回调。 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;DataParams&gt; | 否 | 监听端口读事件的回调。 |
 
 **错误码：**
 

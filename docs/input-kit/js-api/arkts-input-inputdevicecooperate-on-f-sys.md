@@ -6,6 +6,7 @@
 import { inputDeviceCooperate } from '@kit.InputKit';
 ```
 
+<a id="on"></a>
 ## on('cooperation')
 
 ```TypeScript
@@ -31,7 +32,7 @@ Registers a listener for screen hopping state changes. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cooperation' | Yes | Event type. The value is **cooperation**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<{ deviceDescriptor: string, eventMsg: EventMsg }> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;{ deviceDescriptor: string, eventMsg: EventMsg }&gt; | Yes |  |
 
 **Error codes:**
 

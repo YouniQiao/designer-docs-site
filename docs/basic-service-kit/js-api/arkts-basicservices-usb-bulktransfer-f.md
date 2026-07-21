@@ -6,6 +6,7 @@
 import { usb } from '@kit.BasicServicesKit';
 ```
 
+<a id="bulktransfer"></a>
 ## bulkTransfer
 
 ```TypeScript
@@ -47,14 +48,14 @@ Before you do this, call [usb.getDevices](arkts-basicservices-usb-getdevices-f.m
 | --- | --- | --- | --- |
 | pipe | [USBDevicePipe](arkts-basicservices-usbmanager-usbdevicepipe-i.md) | Yes | USB device pipe, which is used to determine the USB device. |
 | endpoint | [USBEndpoint](arkts-basicservices-usbmanager-usbendpoint-i.md) | Yes | USB endpoint, which is used to determine the USB port for data transfer. |
-| buffer | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Buffer for writing or reading data. |
+| buffer | Uint8Array | Yes | Buffer for writing or reading data. |
 | timeout | number | No | Timeout duration in ms. This parameter is optional. The default value is **0**,indicating no timeout. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result, which is the size of the transmitted or received data block if the transfer is successful, or **-1** if an exception has occurred. |
+| Promise&lt;number&gt; | Promise used to return the result, which is the size of the transmitted or received data block if the transfer is successful, or **-1** if an exception has occurred. |
 
 **Example**
 

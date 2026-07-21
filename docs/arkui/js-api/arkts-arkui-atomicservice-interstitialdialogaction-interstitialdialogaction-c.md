@@ -14,6 +14,7 @@ Declare dialog action.
 import { IconStyle, TitlePosition, BottomOffset, InterstitialDialogAction } from '@kit.ArkUI';
 ```
 
+<a id="closedialog"></a>
 ## closeDialog
 
 ```TypeScript
@@ -30,6 +31,7 @@ Execute a dialog close event.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -52,6 +54,7 @@ The constructor transfers parameter settings.
 | --- | --- | --- | --- |
 | dialogOptions | [DialogOptions](arkts-arkui-atomicservice-interstitialdialogaction-dialogoptions-i.md) | Yes | Creates a new dialog action object. |
 
+<a id="opendialog"></a>
 ## openDialog
 
 ```TypeScript

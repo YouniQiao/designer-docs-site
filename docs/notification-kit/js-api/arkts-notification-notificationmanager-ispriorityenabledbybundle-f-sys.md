@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="ispriorityenabledbybundle"></a>
 ## isPriorityEnabledByBundle
 
 ```TypeScript
@@ -34,7 +35,7 @@ Checks whether the priority notification for a specified application is enabled.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PriorityEnableStatus> | Promise used to return the result. |
+| Promise&lt;PriorityEnableStatus&gt; | Promise used to return the result. |
 
 **Error codes:**
 

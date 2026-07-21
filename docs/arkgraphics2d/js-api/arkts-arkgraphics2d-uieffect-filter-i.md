@@ -14,6 +14,7 @@ The Filter for Component.
 import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
+<a id="blur"></a>
 ## blur
 
 ```TypeScript

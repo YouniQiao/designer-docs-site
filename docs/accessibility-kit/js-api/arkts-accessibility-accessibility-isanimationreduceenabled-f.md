@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="isanimationreduceenabled"></a>
 ## isAnimationReduceEnabled
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether animation reduction mode is enabled. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. Returns **true** if animation reduction mode is enabled; returns **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if animation reduction mode is enabled; returns **false** otherwise. |
 
 **Example**
 

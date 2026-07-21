@@ -16,6 +16,7 @@ Defines the callback of the authentication widget. The authentication widget use
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="sendcommand"></a>
 ## sendCommand
 
 ```TypeScript

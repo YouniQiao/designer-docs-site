@@ -6,6 +6,7 @@
 import { statfs } from '@kit.CoreFileKit';
 ```
 
+<a id="getfreesize"></a>
 ## getFreeSize
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the free size of the specified file system, in bytes. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the free size obtained, in bytes. |
+| Promise&lt;number&gt; | Promise used to return the free size obtained, in bytes. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ statfs.getFreeSize(path).then((number: number) => {
 ```
 
 
+<a id="getfreesize-1"></a>
 ## getFreeSize
 
 ```TypeScript
@@ -87,7 +89,7 @@ Obtains the free size of the specified file system, in bytes. This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | File path of the file system. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the free size obtained, in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the free size obtained, in bytes. |
 
 **Error codes:**
 

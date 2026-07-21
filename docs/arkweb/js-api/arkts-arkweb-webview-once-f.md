@@ -6,6 +6,7 @@
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="once"></a>
 ## once
 
 ```TypeScript
@@ -27,7 +28,7 @@ Registers a one-time callback for web events of the specified type. Currently, o
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | string | Yes | Web event type. The value can be **"webInited"**, indicating completion of web |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Indicate callback used to receive the web event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Indicate callback used to receive the web event. |
 
 **Error codes:**
 

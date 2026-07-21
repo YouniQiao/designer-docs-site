@@ -8,6 +8,7 @@ The module describes the callback invoked to return the UIExtensionAbility start
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="onerror"></a>
 ## onError
 
 ```TypeScript
@@ -34,6 +35,7 @@ Called when the UIExtensionAbility fails to start.
 | name | string | Yes | Name returned when the UIExtensionAbility fails to start. |
 | message | string | Yes | Error information returned when the UIExtensionAbility fails to start. |
 
+<a id="onresult"></a>
 ## onResult
 
 ```TypeScript

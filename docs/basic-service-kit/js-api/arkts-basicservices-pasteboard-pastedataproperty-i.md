@@ -22,7 +22,7 @@ additions: Record<string, object>
 
 Additional property data. It does not allow for dynamic adding of properties. Properties can be added only by re-assigning values. This parameter is left empty by default. For details, see the example of **setProperty**.
 
-**Type:** Record<string, object>
+**Type:** Record&lt;string, object&gt;
 
 **Since:** 7
 
@@ -58,7 +58,7 @@ readonly mimeTypes: Array<string>
 
 Data types of all records in PasteData.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 7
 

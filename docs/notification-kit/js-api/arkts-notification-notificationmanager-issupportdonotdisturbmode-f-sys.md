@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="issupportdonotdisturbmode"></a>
 ## isSupportDoNotDisturbMode
 
 ```TypeScript
@@ -30,7 +31,7 @@ This API can be properly called on devices other than wearables and TVs. If it i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that DND mode is supported, and **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that DND mode is supported, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ notificationManager.isSupportDoNotDisturbMode(isSupportDoNotDisturbModeCallback)
 ```
 
 
+<a id="issupportdonotdisturbmode-1"></a>
 ## isSupportDoNotDisturbMode
 
 ```TypeScript
@@ -86,7 +88,7 @@ This API can be properly called on devices other than wearables and TVs. If it i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that DND mode is supported, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that DND mode is supported, and **false** means the opposite. |
 
 **Error codes:**
 

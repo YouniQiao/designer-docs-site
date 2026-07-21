@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="opennetworkmanagersettings"></a>
 ## openNetworkManagerSettings
 
 ```TypeScript
@@ -30,7 +31,7 @@ Open the network manager settings page.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Error codes:**
 

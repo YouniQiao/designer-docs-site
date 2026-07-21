@@ -16,6 +16,7 @@ Defines the moving photo view attribute functions.
 import { PixelMapFormat, MovingPhotoViewAttribute, MovingPhotoView, MovingPhotoViewController, DynamicRangeMode } from '@kit.MediaLibraryKit';
 ```
 
+<a id="setplaybackstrategy"></a>
 ## setPlaybackStrategy
 
 ```TypeScript

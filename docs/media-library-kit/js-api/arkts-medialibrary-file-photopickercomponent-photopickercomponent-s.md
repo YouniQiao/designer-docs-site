@@ -4,6 +4,8 @@ Declare struct PhotoPickerComponent
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct PhotoPickerComponent--><!--Device-unnamed-export declare struct PhotoPickerComponent-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
@@ -14,6 +16,7 @@ Declare struct PhotoPickerComponent
 import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, SelectMode, PhotoBrowserUIElement, ItemType, PinchGridSwitchedCallback, SingleLineConfig, ClickResult, ClickType, UpdatablePickerConfigs, DataType, VideoPlayerState, ItemDisplayRatio, ScrollStopAtStartCallback, ScrollStopAtEndCallback, PickerOrientation, videoPlayStateChangedCallback, PhotoBrowserChangeStartCallback, MovingPhotoBadgeStateChangedCallback, ErrorCallback, PickerOptions, ItemsDeletedCallback, PhotoBrowserRange, SaveMode, MaxSelected, PickerController, PickerError, PhotoPickerComponent, ExceedMaxSelectedCallback, ReminderMode, ItemClickedNotifyCallback, PickerColorMode, BadgeConfig, BadgeType, PhotoBrowserInfo, CurrentAlbumDeletedCallback } from '@kit.MediaLibraryKit';
 ```
 
+<a id="build"></a>
 ## build
 
 ```TypeScript
@@ -58,7 +61,7 @@ onDeselect?: (uri: string) => void
 
 Callback when Deselect photos or videos
 
-**Type:** (uri: string) => void
+**Type:** (uri: string) =&gt; void
 
 **Since:** 12
 
@@ -76,7 +79,7 @@ onEnterPhotoBrowser?: (photoBrowserInfo: PhotoBrowserInfo) => boolean
 
 Callback when enter photo browser, will return photoBrowserInfo
 
-**Type:** (photoBrowserInfo: PhotoBrowserInfo) => boolean
+**Type:** (photoBrowserInfo: PhotoBrowserInfo) =&gt; boolean
 
 **Since:** 12
 
@@ -132,7 +135,7 @@ onExitPhotoBrowser?: (photoBrowserInfo: PhotoBrowserInfo) => boolean
 
 Callback when exit photo browser, will return photoBrowserInfo
 
-**Type:** (photoBrowserInfo: PhotoBrowserInfo) => boolean
+**Type:** (photoBrowserInfo: PhotoBrowserInfo) =&gt; boolean
 
 **Since:** 12
 
@@ -150,7 +153,7 @@ onItemClicked?: (itemInfo: ItemInfo, clickType: ClickType) => boolean
 
 Callback when click item. include click camera item and thumbnail item, will return itemInfo
 
-**Type:** (itemInfo: ItemInfo, clickType: ClickType) => boolean
+**Type:** (itemInfo: ItemInfo, clickType: ClickType) =&gt; boolean
 
 **Since:** 12
 
@@ -226,7 +229,7 @@ onPhotoBrowserChanged?: (browserItemInfo: BaseItemInfo) => boolean
 
 Callback when photo browser change, will return browserItemInfo
 
-**Type:** (browserItemInfo: BaseItemInfo) => boolean
+**Type:** (browserItemInfo: BaseItemInfo) =&gt; boolean
 
 **Since:** 12
 
@@ -264,7 +267,7 @@ onPickerControllerReady?: () => void
 
 Callback when pickerController is ready.Set data to picker component by pickerController is supported after pickerController is ready
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 
@@ -342,7 +345,7 @@ onSelect?: (uri: string) => void
 
 Callback when select photos or videos
 
-**Type:** (uri: string) => void
+**Type:** (uri: string) =&gt; void
 
 **Since:** 12
 

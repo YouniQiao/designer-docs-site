@@ -6,6 +6,7 @@
 import { agentManager } from '@kit.AbilityKit';
 ```
 
+<a id="notifylowcodeagentcomplete"></a>
 ## notifyLowCodeAgentComplete
 
 ```TypeScript
@@ -36,7 +37,7 @@ Notifies that the specified LOW_CODE agent has completed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getnetworkstate"></a>
 ## getNetworkState
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the network state of the registered network.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetworkState> | Yes | Indicates the callback for getting network registration state. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetworkState&gt; | Yes | Indicates the callback for getting network registration state. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ radio.getNetworkState(slotId, (err: BusinessError, data: radio.NetworkState) => 
 ```
 
 
+<a id="getnetworkstate-1"></a>
 ## getNetworkState
 
 ```TypeScript
@@ -83,7 +85,7 @@ Obtains the network state of the registered network.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetworkState> | Returns the NetworkState object. |
+| Promise&lt;NetworkState&gt; | Returns the NetworkState object. |
 
 **Error codes:**
 
@@ -111,6 +113,7 @@ radio.getNetworkState(slotId).then((data: radio.NetworkState) => {
 ```
 
 
+<a id="getnetworkstate-2"></a>
 ## getNetworkState
 
 ```TypeScript
@@ -131,7 +134,7 @@ Obtains the network state of the registered network.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetworkState> | Yes | Indicates the callback for getting network registration state. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetworkState&gt; | Yes | Indicates the callback for getting network registration state. |
 
 **Error codes:**
 

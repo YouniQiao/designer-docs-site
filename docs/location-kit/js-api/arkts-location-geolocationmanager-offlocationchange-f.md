@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="offlocationchange"></a>
 ## offLocationChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe location changed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Location> | No | Indicates the callback for reporting the location result.<br>**Since:** 23 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Location&gt; | No | Indicates the callback for reporting the location result.<br>**Since:** 23 |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="on"></a>
 ## on('continuousTaskCancel')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Subscribes to continuous task cancellation events. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'continuousTaskCancel' | Yes | Event type. The value is fixed at **'continuousTaskCancel'**, indicating that a continuous task is canceled. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ContinuousTaskCancelInfo> | Yes | Callback used to return information such as the reason for canceling a continuous task. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ContinuousTaskCancelInfo&gt; | Yes | Callback used to return information such as the reason for canceling a continuous task. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="on-1"></a>
 ## on('continuousTaskSuspend')
 
 ```TypeScript
@@ -84,7 +86,7 @@ When a continuous task is suspended, the application will be suspended when swit
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'continuousTaskSuspend' | Yes | Event type. The value is fixed at **'continuousTaskSuspend'**, indicating that the continuous task is suspended. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ContinuousTaskSuspendInfo> | Yes | Callback used to return information such as the reason for suspending a continuous task. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ContinuousTaskSuspendInfo&gt; | Yes | Callback used to return information such as the reason for suspending a continuous task. |
 
 **Error codes:**
 
@@ -119,6 +121,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="on-2"></a>
 ## on('continuousTaskActive')
 
 ```TypeScript
@@ -140,7 +143,7 @@ Registers a listener for continuous task activation. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'continuousTaskActive' | Yes | Event type. The value is fixed at **'continuousTaskActive'**, indicating that the continuous task is activated. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ContinuousTaskActiveInfo> | Yes | Callback used to return the activation information about a continuous task. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ContinuousTaskActiveInfo&gt; | Yes | Callback used to return the activation information about a continuous task. |
 
 **Error codes:**
 

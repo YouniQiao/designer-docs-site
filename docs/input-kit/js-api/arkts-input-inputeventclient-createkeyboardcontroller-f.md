@@ -6,6 +6,7 @@
 import { inputEventClient } from '@kit.InputKit';
 ```
 
+<a id="createkeyboardcontroller"></a>
 ## createKeyboardController
 
 ```TypeScript
@@ -28,7 +29,7 @@ Creates a keyboard controller for simulating key operations. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyboardController> | Promise used to return the keyboard controller instance. |
+| Promise&lt;KeyboardController&gt; | Promise used to return the keyboard controller instance. |
 
 **Error codes:**
 

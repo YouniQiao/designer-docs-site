@@ -1,5 +1,6 @@
 # construct
 
+<a id="construct"></a>
 ## construct
 
 ```TypeScript
@@ -26,9 +27,9 @@ Constructs the target with the elements of specified array as the arguments and 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| target | new (...args: A) => R | Yes |  |
-| argumentsList | [Readonly](arkts-na-readonly-t.md)<A> | Yes |  |
-| newTarget | new (...args: any) => any | No |  |
+| target | new (...args: A) =&gt; R | Yes |  |
+| argumentsList | [Readonly](arkts-na-readonly-t.md)&lt;A&gt; | Yes |  |
+| newTarget | new (...args: any) =&gt; any | No |  |
 
 **Return value:**
 
@@ -37,6 +38,7 @@ Constructs the target with the elements of specified array as the arguments and 
 | R |  |
 
 
+<a id="construct-1"></a>
 ## construct
 
 ```TypeScript
@@ -49,9 +51,9 @@ function construct(target: Function, argumentsList: ArrayLike<any>, newTarget?: 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| target | [Function](arkts-na-lib-es2015-core-function-i.md) | Yes |  |
-| argumentsList | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<any> | Yes |  |
-| newTarget | [Function](arkts-na-lib-es2015-core-function-i.md) | No |  |
+| target | Function | Yes |  |
+| argumentsList | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;any&gt; | Yes |  |
+| newTarget | Function | No |  |
 
 **Return value:**
 

@@ -31,7 +31,7 @@ Cancels this authentication.
 > Use the [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) instance obtained to call this API. The  
 > [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) instance must be the instance being authenticated.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 9
 
@@ -60,7 +60,7 @@ Unsubscribes from the user authentication events of the specified type.
 > The [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) instance used to invoke this API must be the one used to  
 > subscribe to the event.
 
-**Type:** (name: AuthEventKey) => void
+**Type:** (name: AuthEventKey) =&gt; void
 
 **Since:** 9
 
@@ -87,7 +87,7 @@ Subscribes to the user authentication events of the specified type.
 >  
 > Use the [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) instance obtained to call this API.
 
-**Type:** (name: AuthEventKey, callback: AuthEvent) => void
+**Type:** (name: AuthEventKey, callback: AuthEvent) =&gt; void
 
 **Since:** 9
 
@@ -111,7 +111,7 @@ Starts authentication.
 >  
 > Use the [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) instance obtained to call this API.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 9
 

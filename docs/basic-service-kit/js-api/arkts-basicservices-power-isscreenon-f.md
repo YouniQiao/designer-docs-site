@@ -6,6 +6,7 @@
 import { power } from '@kit.BasicServicesKit';
 ```
 
+<a id="isscreenon"></a>
 ## isScreenOn
 
 ```TypeScript
@@ -28,7 +29,7 @@ Checks the screen status of the current device. This API uses an asynchronous ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the screen status obtained, where the value **true** indicates on and the value **false** indicates off. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the screen status obtained, where the value **true** indicates on and the value **false** indicates off. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -44,6 +45,7 @@ power.isScreenOn((err: Error, data: boolean) => {
 ```
 
 
+<a id="isscreenon-1"></a>
 ## isScreenOn
 
 ```TypeScript
@@ -66,7 +68,7 @@ Checks the screen status of the current device. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns true if the screen is on; returns false otherwise. |
+| Promise&lt;boolean&gt; | Returns true if the screen is on; returns false otherwise. |
 
 **Example**
 

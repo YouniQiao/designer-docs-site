@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setslotbybundle"></a>
 ## setSlotByBundle
 
 ```TypeScript
@@ -14,7 +15,7 @@ function setSlotByBundle(bundle: BundleOption, slot: NotificationSlot, callback:
 
 Sets the notification slot for a specified application. This API uses an asynchronous callback to return the result.
 
-Before setting a notification slot, create a slot through [addSlot](arkts-notification-notificationmanager-addslot-f-sys.md#addslot-1).
+Before setting a notification slot, create a slot through [addSlot](arkts-notification-notificationmanager-addslot-f.md#addslot-3).
 
 **Since:** 9
 
@@ -32,7 +33,7 @@ Before setting a notification slot, create a slot through [addSlot](arkts-notifi
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
 | slot | [NotificationSlot](arkts-notification-notificationslot-notificationslot-i-sys.md) | Yes | Notification slot. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ notificationManager.setSlotByBundle(bundle, notificationSlot, setSlotByBundleCal
 ```
 
 
+<a id="setslotbybundle-1"></a>
 ## setSlotByBundle
 
 ```TypeScript
@@ -78,7 +80,7 @@ function setSlotByBundle(bundle: BundleOption, slot: NotificationSlot): Promise<
 
 Sets the notification slot for a specified application. This API uses a promise to return the result.
 
-Before setting a notification slot, create a slot through [addSlot](arkts-notification-notificationmanager-addslot-f-sys.md#addslot-1).
+Before setting a notification slot, create a slot through [addSlot](arkts-notification-notificationmanager-addslot-f.md#addslot-3).
 
 **Since:** 9
 
@@ -101,7 +103,7 @@ Before setting a notification slot, create a slot through [addSlot](arkts-notifi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

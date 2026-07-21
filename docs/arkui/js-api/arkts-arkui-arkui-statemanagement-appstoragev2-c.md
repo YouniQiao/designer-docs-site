@@ -1,6 +1,6 @@
 # AppStorageV2
 
-For details about how to use AppStorageV2, see [AppStorageV2: Storing Application-wide UI State](../../../../ui/state-management/arkts-new-appstoragev2.md).
+For details about how to use AppStorageV2, see [AppStorageV2: Storing Application-wide UI State](docroot://ui/state-management/arkts-new-appstoragev2.md).
 
 **Since:** 12
 
@@ -14,6 +14,7 @@ For details about how to use AppStorageV2, see [AppStorageV2: Storing Applicatio
 import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInactive, PersistenceV2, ComponentDisappear, MutableBinding, CustomComponentLifecycleObserver, AppStorageV2, Type, ConnectOptionsCollections, CollectionType, CustomComponentContext, IReusePool, ConnectOptions, UIUtils, ComponentActive, CustomComponentLifecycle, ComponentInit, ComponentAppear, ComponentBuilt, ComponentRecycle, IReusableInfo } from '@kit.ArkUI';
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -24,7 +25,7 @@ static connect<T extends object>(
   ): T | undefined
 ```
 
-Stores key-value pair data in the application memory. If the given key already exists in [AppStorageV2](../../../../ui/state-management/arkts-new-appstoragev2.md), the corresponding value is returned.Otherwise, a default value is constructed using the default value constructor and returned.
+Stores key-value pair data in the application memory. If the given key already exists in [AppStorageV2](docroot://ui/state-management/arkts-new-appstoragev2.md), the corresponding value is returned.Otherwise, a default value is constructed using the default value constructor and returned.
 
 **Since:** 12
 
@@ -48,9 +49,9 @@ Stores key-value pair data in the application memory. If the given key already e
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | [TypeConstructorWithArgs](arkts-arkui-arkui-statemanagement-typeconstructorwithargs-i.md)<T> | Yes | Type. If no key is specified, the name of the type is used as the key. |
-| keyOrDefaultCreator | string \| StorageDefaultCreator<T> | No | Key, or constructor for obtaining the default value. The default value is **undefined**. |
-| defaultCreator | [StorageDefaultCreator](arkts-arkui-storagedefaultcreator-t.md)<T> | No | Constructor for obtaining the default value. The default value is **undefined**. |
+| type | [TypeConstructorWithArgs](arkts-arkui-arkui-statemanagement-typeconstructorwithargs-i.md)&lt;T&gt; | Yes | Type. If no key is specified, the name of the type is used as the key. |
+| keyOrDefaultCreator | string \| StorageDefaultCreator&lt;T&gt; | No | Key, or constructor for obtaining the default value. The default value is **undefined**. |
+| defaultCreator | [StorageDefaultCreator](arkts-arkui-storagedefaultcreator-t.md)&lt;T&gt; | No | Constructor for obtaining the default value. The default value is **undefined**. |
 
 **Return value:**
 
@@ -58,13 +59,14 @@ Stores key-value pair data in the application memory. If the given key already e
 | --- | --- |
 | T | Returns data if the creation or data acquisition from AppStorageV2 is successful;returns **undefined** otherwise. |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
 static keys(): Array<string>
 ```
 
-Obtains all keys in [AppStorageV2](../../../../ui/state-management/arkts-new-appstoragev2.md).
+Obtains all keys in [AppStorageV2](docroot://ui/state-management/arkts-new-appstoragev2.md).
 
 **Since:** 12
 
@@ -80,15 +82,16 @@ Obtains all keys in [AppStorageV2](../../../../ui/state-management/arkts-new-app
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | All keys stored in AppStorageV2. |
+| Array&lt;string&gt; | All keys stored in AppStorageV2. |
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
 static remove<T>(keyOrType: string | TypeConstructorWithArgs<T>): void
 ```
 
-Removes the specified key-value pair from [AppStorageV2](../../../../ui/state-management/arkts-new-appstoragev2.md).If the specified key does not exist in AppStorageV2, the removal will fail.
+Removes the specified key-value pair from [AppStorageV2](docroot://ui/state-management/arkts-new-appstoragev2.md).If the specified key does not exist in AppStorageV2, the removal will fail.
 
 **Since:** 12
 
@@ -104,5 +107,5 @@ Removes the specified key-value pair from [AppStorageV2](../../../../ui/state-ma
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| keyOrType | string \| TypeConstructorWithArgs<T> | Yes | Key to be removed. If a type is specified, the key to be removed is the name of that type. |
+| keyOrType | string \| TypeConstructorWithArgs&lt;T&gt; | Yes | Key to be removed. If a type is specified, the key to be removed is the name of that type. |
 

@@ -8,6 +8,7 @@ Defines a callback function to listen for the enabling state changes of the appl
 
 **System capability:** SystemCapability.Notification.Notification
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

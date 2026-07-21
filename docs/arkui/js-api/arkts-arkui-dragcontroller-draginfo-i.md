@@ -30,7 +30,7 @@ The unique ID of a component can be obtained by using [UIContext.getFrameNodeByI
 
 You need to restore the component display status as required in the drag end callback.
 
-**Type:** number | number[]
+**Type:** number \| number[]
 
 **Since:** 26.0.0
 

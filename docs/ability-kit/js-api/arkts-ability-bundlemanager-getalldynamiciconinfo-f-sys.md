@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getalldynamiciconinfo"></a>
 ## getAllDynamicIconInfo
 
 ```TypeScript
@@ -38,7 +39,7 @@ To obtain the dynamic icon information of all applications and all application c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<DynamicIconInfo>> | Promise used to return the dynamic icon information. |
+| Promise&lt;Array&lt;DynamicIconInfo&gt;&gt; | Promise used to return the dynamic icon information. |
 
 **Error codes:**
 

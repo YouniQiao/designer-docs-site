@@ -24,6 +24,7 @@ This API will be deprecated. Use [Album](arkts-corefile-userfilemanager-album-i-
 import { userFileManager } from '@kit.CoreFileKit';
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -53,7 +54,7 @@ This API will be deprecated. Use [Album.deletePhotoAssets](arkts-corefile-userfi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | File URI. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -85,6 +86,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -119,7 +121,7 @@ This API will be deprecated. Use [Album.deletePhotoAssets](arkts-corefile-userfi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -150,6 +152,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="recover"></a>
 ## recover
 
 ```TypeScript
@@ -179,7 +182,7 @@ This API will be deprecated. Use [Album.recoverPhotoAssets](arkts-corefile-userf
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | File URI. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -219,6 +222,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="recover-1"></a>
 ## recover
 
 ```TypeScript
@@ -253,7 +257,7 @@ This API will be deprecated. Use [Album.recoverPhotoAssets](arkts-corefile-userf
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { scan } from '@kit.BasicServicesKit';
 ```
 
+<a id="off"></a>
 ## off('scanDeviceFound')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Unregisters a callback used to listen for the scanner discovery event. This API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'scanDeviceFound' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScannerDevice> | No | Callback to unregister. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScannerDevice&gt; | No | Callback to unregister. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ scan.off('scanDeviceFound', callback);
 ```
 
 
+<a id="off-1"></a>
 ## off('scanDeviceSync')
 
 ```TypeScript
@@ -71,7 +73,7 @@ Unregisters a callback used to listen for the scanner sync event. This API uses 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'scanDeviceSync' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScannerSyncDevice> | No | Callback to unregister. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScannerSyncDevice&gt; | No | Callback to unregister. |
 
 **Error codes:**
 

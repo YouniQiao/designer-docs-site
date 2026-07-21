@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="setdefaultsmsslotid"></a>
 ## setDefaultSmsSlotId
 
 ```TypeScript
@@ -29,7 +30,7 @@ Sets the default SIM card for sending SMS messages. You can obtain the default S
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the default SIM card for sending SMS messages. The value {@code 0} indicates card slot 1, and the value {@code 1} indicates card slot 2. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setDefaultSmsSlotId. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setDefaultSmsSlotId. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sms.setDefaultSmsSlotId(0, (err: BusinessError) => {
 ```
 
 
+<a id="setdefaultsmsslotid-1"></a>
 ## setDefaultSmsSlotId
 
 ```TypeScript
@@ -85,7 +87,7 @@ Sets the default SIM card for sending SMS messages. You can obtain the default S
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setDefaultSmsSlotId. |
+| Promise&lt;void&gt; | The promise returned by the setDefaultSmsSlotId. |
 
 **Error codes:**
 

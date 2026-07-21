@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="transformrotationmatrix"></a>
 ## transformRotationMatrix
 
 ```TypeScript
@@ -27,9 +28,9 @@ Transforms a rotation vector based on the coordinate system. This API uses an as
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inRotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
+| inRotationVector | Array&lt;number&gt; | Yes | Rotation vector. |
 | coordinates | [CoordinatesOptions](arkts-sensorservice-sensor-coordinatesoptions-i.md) | Yes | Rotation vector to transform. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the rotation vector after being transformed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the rotation vector after being transformed. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ try {
 ```
 
 
+<a id="transformrotationmatrix-1"></a>
 ## transformRotationMatrix
 
 ```TypeScript
@@ -86,14 +88,14 @@ Transforms a rotation vector based on the coordinate system. This API uses a pro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inRotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
+| inRotationVector | Array&lt;number&gt; | Yes | Rotation vector. |
 | coordinates | [CoordinatesOptions](arkts-sensorservice-sensor-coordinatesoptions-i.md) | Yes | Rotation vector to transform. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the rotation vector after being transformed. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the rotation vector after being transformed. |
 
 **Error codes:**
 

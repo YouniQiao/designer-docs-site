@@ -6,6 +6,7 @@
 import { bundle } from '@kit.AbilityKit';
 ```
 
+<a id="getabilitylabel"></a>
 ## getAbilityLabel
 
 ```TypeScript
@@ -32,9 +33,10 @@ No permission is required for obtaining the caller's own information.
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | abilityName | string | Yes | Ability name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the application name. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the application name. |
 
 
+<a id="getabilitylabel-1"></a>
 ## getAbilityLabel
 
 ```TypeScript
@@ -66,5 +68,5 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the application name. |
+| Promise&lt;string&gt; | Promise used to return the application name. |
 

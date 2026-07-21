@@ -6,6 +6,7 @@
 import { socket } from '@kit.ConnectivityKit';
 ```
 
+<a id="isconnected"></a>
 ## isConnected
 
 ```TypeScript

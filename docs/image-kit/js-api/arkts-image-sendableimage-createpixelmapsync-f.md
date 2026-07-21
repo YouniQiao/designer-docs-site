@@ -6,6 +6,7 @@
 import { sendableImage } from '@kit.ImageKit';
 ```
 
+<a id="createpixelmapsync"></a>
 ## createPixelMapSync
 
 ```TypeScript
@@ -24,7 +25,7 @@ Create PixelMap by data buffer.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colors | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | The image color buffer. |
+| colors | ArrayBuffer | Yes | The image color buffer. |
 | options | image.InitializationOptions | Yes | Initialization options for PixelMap. |
 
 **Return value:**

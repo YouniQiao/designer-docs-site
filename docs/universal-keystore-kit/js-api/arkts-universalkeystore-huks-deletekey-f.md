@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="deletekey"></a>
 ## deleteKey
 
 ```TypeScript
@@ -18,7 +19,7 @@ Deletes a key. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** deleteKeyItem(keyAlias:
+**Substitutes:** [deleteKeyItem(keyAlias:](arkts-universalkeystore-huks-deletekeyitem-f.md#deletekeyitem-1)
 
 <!--Device-huks-function deleteKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void--><!--Device-huks-function deleteKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void-End-->
 
@@ -30,7 +31,7 @@ Deletes a key. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key to delete. It must be the key alias passed in when the key was generated. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Options for deleting the key. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HuksResult> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the obtained **HuksResult**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HuksResult&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the obtained **HuksResult**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -48,6 +49,7 @@ huks.deleteKey(keyAlias, emptyOptions, (err, data) => {
 ```
 
 
+<a id="deletekey-1"></a>
 ## deleteKey
 
 ```TypeScript
@@ -60,7 +62,7 @@ Deletes a key. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** deleteKeyItem(keyAlias:
+**Substitutes:** [deleteKeyItem(keyAlias:](arkts-universalkeystore-huks-deletekeyitem-f.md#deletekeyitem-1)
 
 <!--Device-huks-function deleteKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>--><!--Device-huks-function deleteKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>-End-->
 
@@ -77,7 +79,7 @@ Deletes a key. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksResult> | Promise that returns **HuksResult**. |
+| Promise&lt;HuksResult&gt; | Promise that returns **HuksResult**. |
 
 **Example**
 

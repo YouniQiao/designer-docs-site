@@ -6,6 +6,7 @@
 import { distributedMissionManager } from '@kit.AbilityKit';
 ```
 
+<a id="startsyncremotemissions"></a>
 ## startSyncRemoteMissions
 
 ```TypeScript
@@ -31,7 +32,7 @@ Starts to synchronize the remote mission list. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | parameter | [MissionParameter](arkts-ability-missionparameter-i-sys.md) | Yes | Parameters required for synchronization. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the synchronization is started, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the synchronization is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ try {
 ```
 
 
+<a id="startsyncremotemissions-1"></a>
 ## startSyncRemoteMissions
 
 ```TypeScript
@@ -97,7 +99,7 @@ Starts to synchronize the remote mission list. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

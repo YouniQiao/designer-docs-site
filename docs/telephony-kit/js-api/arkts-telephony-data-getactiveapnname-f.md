@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="getactiveapnname"></a>
 ## getActiveApnName
 
 ```TypeScript
@@ -26,7 +27,7 @@ Get Active APN's Name.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the name of the active APN or null if cellular network is not active. |
+| Promise&lt;string&gt; | Returns the name of the active APN or null if cellular network is not active. |
 
 **Error codes:**
 

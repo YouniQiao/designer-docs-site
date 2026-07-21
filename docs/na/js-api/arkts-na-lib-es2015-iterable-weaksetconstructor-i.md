@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface WeakSetConstructor--><!--Device-unnamed-interface WeakSetConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -14,11 +15,11 @@ new <T extends object = object>(iterable: Iterable<T>): WeakSet<T>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| iterable | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<T> | Yes |  |
+| iterable | Iterable&lt;T&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [WeakSet](arkts-na-lib-es2015-collection-weakset-i.md)<T> |  |
+| WeakSet&lt;T&gt; |  |
 

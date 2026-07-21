@@ -14,6 +14,7 @@ Defines the Web resource response used for scheme handler.
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -30,6 +31,7 @@ Constructor.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="getencoding"></a>
 ## getEncoding
 
 ```TypeScript
@@ -52,6 +54,7 @@ Get the response encoding.
 | --- | --- |
 | string | Return encoding of response. |
 
+<a id="getheaderbyname"></a>
 ## getHeaderByName
 
 ```TypeScript
@@ -80,6 +83,7 @@ Get the header value by name from the response.
 | --- | --- |
 | string | Return header value by name. |
 
+<a id="getmimetype"></a>
 ## getMimeType
 
 ```TypeScript
@@ -102,6 +106,7 @@ Get mime type.
 | --- | --- |
 | string | Return mime type of response. |
 
+<a id="getneterrorcode"></a>
 ## getNetErrorCode
 
 ```TypeScript
@@ -124,6 +129,7 @@ Get net error code.
 | --- | --- |
 | [WebNetErrorList](arkts-arkweb-web-neterrorlist-webneterrorlist-e.md) | Return response error code. |
 
+<a id="getstatus"></a>
 ## getStatus
 
 ```TypeScript
@@ -146,6 +152,7 @@ Get http status code.
 | --- | --- |
 | number | Return http status code. |
 
+<a id="getstatustext"></a>
 ## getStatusText
 
 ```TypeScript
@@ -168,6 +175,7 @@ Get status text.
 | --- | --- |
 | string | Return http status text. |
 
+<a id="geturl"></a>
 ## getUrl
 
 ```TypeScript
@@ -190,6 +198,7 @@ Get the resolved URL after redirects or changed as a result of HSTS.
 | --- | --- |
 | string | Return response url for redirects. |
 
+<a id="setencoding"></a>
 ## setEncoding
 
 ```TypeScript
@@ -218,6 +227,7 @@ Set the response encoding.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 
+<a id="setheaderbyname"></a>
 ## setHeaderByName
 
 ```TypeScript
@@ -248,6 +258,7 @@ Set response hander value by name.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 
+<a id="setmimetype"></a>
 ## setMimeType
 
 ```TypeScript
@@ -276,6 +287,7 @@ Set mime type.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 
+<a id="setneterrorcode"></a>
 ## setNetErrorCode
 
 ```TypeScript
@@ -304,6 +316,7 @@ Set net error code.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 
+<a id="setstatus"></a>
 ## setStatus
 
 ```TypeScript
@@ -332,6 +345,7 @@ Set http status code.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 
+<a id="setstatustext"></a>
 ## setStatusText
 
 ```TypeScript
@@ -360,6 +374,7 @@ Set status text.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 
+<a id="seturl"></a>
 ## setUrl
 
 ```TypeScript

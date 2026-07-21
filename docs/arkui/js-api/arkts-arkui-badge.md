@@ -43,7 +43,7 @@ Creates a badge with the given numerical value.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | BadgeParamWithNumber | Yes | Options of the numeric badge. |
+| value | [BadgeParamWithNumber](arkts-arkui-badgeparamwithnumber-i.md) | Yes | Options of the numeric badge.  |
 
 ## Badge
 
@@ -67,7 +67,7 @@ Creates a badge with the given string.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | BadgeParamWithString | Yes | Options of the string-type badge. |
+| value | [BadgeParamWithString](arkts-arkui-badgeparamwithstring-i.md) | Yes | Options of the string-type badge.  |
 
 ## Summary
 

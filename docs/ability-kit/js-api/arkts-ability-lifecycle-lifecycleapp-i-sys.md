@@ -8,6 +8,7 @@ interface of app lifecycle.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="onwindowdisplaymodechanged"></a>
 ## onWindowDisplayModeChanged
 
 ```TypeScript

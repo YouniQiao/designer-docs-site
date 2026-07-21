@@ -10,6 +10,7 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="allowscale"></a>
 ## allowScale
 
 ```TypeScript
@@ -34,6 +35,7 @@ Sets whether to allow text to scale.
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to allow text to scale.<br>**true**: yes; **false**: no<br>Default value:**false**<br>**NOTE**<br>This parameter is effective only when [fontSize](MarqueeAttribute#fontSize) is in fp units. |
 
+<a id="fontcolor"></a>
 ## fontColor
 
 ```TypeScript
@@ -58,6 +60,7 @@ Sets the font color.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color.<br>Default value: **'#c5ffffff'** (light blue) on wearables;**'e6182431'** (black) on other devices |
 
+<a id="fontfamily"></a>
 ## fontFamily
 
 ```TypeScript
@@ -82,6 +85,7 @@ Sets the font family.
 | --- | --- | --- | --- |
 | value | string \| Resource | Yes | Font family. Default font: **'HarmonyOS Sans'**<br>Supported fonts include **'HarmonyOS Sans'** and custom fonts registered using [loadFontSync](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-fontcollection-c.md#loadfontsync-1).<br>Only the 'HarmonyOS Sans' font is supported for widgets. |
 
+<a id="fontsize"></a>
 ## fontSize
 
 ```TypeScript
@@ -106,6 +110,7 @@ Sets the text size.
 | --- | --- | --- | --- |
 | value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Font size. If **fontSize** is of the number type, the unit fp is used. The default font size is 16 fp. This parameter cannot be set in percentage. |
 
+<a id="fontweight"></a>
 ## fontWeight
 
 ```TypeScript
@@ -130,6 +135,7 @@ Sets the font weight. If the value is too large, the text may be clipped dependi
 | --- | --- | --- | --- |
 | value | number \| FontWeight \| string | Yes | Font weight. For the number type, the value range is [100, 900], at an interval of 100. The default value is **400**. A larger value indicates a heavier font weight. For the string type, only strings that represent a number, for example, **400**, and the following enumerated values of **FontWeight** are supported: **bold**, **bolder**, **lighter**, **regular**, and **medium**.<br>Default value:**FontWeight.Normal** |
 
+<a id="marqueeupdatestrategy"></a>
 ## marqueeUpdateStrategy
 
 ```TypeScript
@@ -152,8 +158,9 @@ Sets the scrolling strategy for the marquee after its attributes are updated. (T
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [MarqueeUpdateStrategy](../arkts-apis/arkts-arkui-enums-marqueeupdatestrategy-e.md) | Yes | Scrolling strategy for the marquee after its attributes are updated.<br>Default value: **MarqueeUpdateStrategy.DEFAULT** |
+| value | [MarqueeUpdateStrategy](../arkts-apis/arkts-arkui-marqueeupdatestrategy-e.md) | Yes | Scrolling strategy for the marquee after its attributes are updated.<br>Default value: **MarqueeUpdateStrategy.DEFAULT** |
 
+<a id="onbounce"></a>
 ## onBounce
 
 ```TypeScript
@@ -176,8 +183,9 @@ Triggered when the marquee has reached the end. This event will be triggered for
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () => void | Yes | Callback invoked when the marquee has finished scrolling once. |
+| event | () =&gt; void | Yes | Callback invoked when the marquee has finished scrolling once. |
 
+<a id="onfinish"></a>
 ## onFinish
 
 ```TypeScript
@@ -200,8 +208,9 @@ Triggered when the marquee has finished the number of scrolling times set by the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () => void | Yes | Callback invoked when the marquee has finished the number of scrolling times set by the **loop** attribute. |
+| event | () =&gt; void | Yes | Callback invoked when the marquee has finished the number of scrolling times set by the **loop** attribute. |
 
+<a id="onstart"></a>
 ## onStart
 
 ```TypeScript
@@ -224,8 +233,9 @@ Triggered when the marquee text changes or starts scrolling.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () => void | Yes | Callback invoked when the marquee text changes or starts scrolling. |
+| event | () =&gt; void | Yes | Callback invoked when the marquee text changes or starts scrolling. |
 
+<a id="onstop"></a>
 ## onStop
 
 ```TypeScript
@@ -252,5 +262,5 @@ Called when scrolling is stoped.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> \| undefined | Yes |  |
+| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; \| undefined | Yes |  |
 

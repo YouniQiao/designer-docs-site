@@ -6,6 +6,7 @@
 import { connectedTag } from '@kit.ConnectivityKit';
 ```
 
+<a id="uninitialize"></a>
 ## uninitialize
 
 ```TypeScript

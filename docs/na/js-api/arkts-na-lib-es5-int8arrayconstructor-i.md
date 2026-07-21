@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Int8ArrayConstructor--><!--Device-unnamed-interface Int8ArrayConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -20,8 +21,9 @@ new(length: number): Int8Array
 
 | Type | Description |
 | --- | --- |
-| [Int8Array](arkts-na-lib-es5-int8array-i.md) |  |
+| Int8Array |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -34,14 +36,15 @@ new(array: ArrayLike<number> | ArrayBufferLike): Int8Array
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| array | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<number> \| ArrayBufferLike | Yes |  |
+| array | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; \| ArrayBufferLike | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Int8Array](arkts-na-lib-es5-int8array-i.md) |  |
+| Int8Array |  |
 
+<a id="constructor-2"></a>
 ## constructor
 
 ```TypeScript
@@ -62,8 +65,9 @@ new(buffer: ArrayBufferLike, byteOffset?: number, length?: number): Int8Array
 
 | Type | Description |
 | --- | --- |
-| [Int8Array](arkts-na-lib-es5-int8array-i.md) |  |
+| Int8Array |  |
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -78,14 +82,15 @@ Creates an array from an array-like or iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<number> | Yes |  |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Int8Array](arkts-na-lib-es5-int8array-i.md) |  |
+| Int8Array |  |
 
+<a id="from-1"></a>
 ## from
 
 ```TypeScript
@@ -100,16 +105,17 @@ Creates an array from an array-like or iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<T> | Yes |  |
-| mapfn | (v: T, k: number) => number | Yes |  |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;T&gt; | Yes |  |
+| mapfn | (v: T, k: number) =&gt; number | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Int8Array](arkts-na-lib-es5-int8array-i.md) |  |
+| Int8Array |  |
 
+<a id="of"></a>
 ## of
 
 ```TypeScript
@@ -130,7 +136,7 @@ Returns a new array from a set of elements.
 
 | Type | Description |
 | --- | --- |
-| [Int8Array](arkts-na-lib-es5-int8array-i.md) |  |
+| Int8Array |  |
 
 ## BYTES_PER_ELEMENT
 

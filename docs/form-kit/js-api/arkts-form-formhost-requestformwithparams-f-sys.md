@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="requestformwithparams"></a>
 ## requestFormWithParams
 
 ```TypeScript
@@ -29,13 +30,13 @@ Carries parameters to request a widget update. This API uses a promise to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | formId | string | Yes | Widget ID. |
-| wantParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | No | Parameters used for the update. |
+| wantParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | No | Parameters used for the update. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { bluetooth } from '@kit.ConnectivityKit';
 ```
 
+<a id="sppconnect"></a>
 ## sppConnect
 
 ```TypeScript
@@ -32,7 +33,7 @@ Connects to a remote device over the socket.
 | --- | --- | --- | --- |
 | device | string | Yes | The address of the remote device to connect. |
 | option | [SppOption](arkts-connectivity-bluetoothmanager-sppoption-i.md) | Yes | Indicates the connect parameters {@link SppOption}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return a client socket ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return a client socket ID. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="createauxiliarypicture"></a>
 ## createAuxiliaryPicture
 
 ```TypeScript
@@ -26,7 +27,7 @@ Images occupy a large amount of memory. When you finish using an AuxiliaryPictur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Image data stored in the buffer. |
+| buffer | ArrayBuffer | Yes | Image data stored in the buffer. |
 | size | [Size](../../apis-arkui/arkts-apis/arkts-arkui-window-size-i.md) | Yes | Size of the auxiliary picture, in px. |
 | type | [AuxiliaryPictureType](arkts-image-image-auxiliarypicturetype-e.md) | Yes | Type of the auxiliary picture. |
 

@@ -6,6 +6,7 @@
 import { privacyManager } from '@kit.AbilityKit';
 ```
 
+<a id="stopusingpermission"></a>
 ## stopUsingPermission
 
 ```TypeScript
@@ -37,7 +38,7 @@ function stopUsingPermission(tokenID: number, permissionName: Permissions): Prom
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -69,6 +70,7 @@ privacyManager.stopUsingPermission(tokenID, 'ohos.permission.READ_AUDIO').then((
 ```
 
 
+<a id="stopusingpermission-1"></a>
 ## stopUsingPermission
 
 ```TypeScript
@@ -95,7 +97,7 @@ function stopUsingPermission(tokenID: number, permissionName: Permissions, callb
 | --- | --- | --- | --- |
 | tokenID | number | 是 | 目标应用的身份标识。可通过应用BundleInfo中的ApplicationInfo中的[accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid)字段获取。传入无效值时返回错误码12100001。<br>取值限定为整数。取值约束：该参数必须为大于0的整数。<br>BundleInfo获取可参考：[bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync-1)。 |
 | permissionName | Permissions | 是 | 需要停止使用的权限名称。传入无效值时返回错误码12100001。<br>取值约束：权限名长度不能超过256个字符。 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数。当停止使用权限成功时，err为undefined；否则为错误对象。 |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数。当停止使用权限成功时，err为undefined；否则为错误对象。 |
 
 **错误码：**
 
@@ -129,6 +131,7 @@ privacyManager.stopUsingPermission(tokenID, 'ohos.permission.READ_AUDIO', (err: 
 ```
 
 
+<a id="stopusingpermission-2"></a>
 ## stopUsingPermission
 
 ```TypeScript
@@ -179,7 +182,7 @@ pid需要与[startUsingPermission](arkts-ability-privacymanager-startusingpermis
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -227,6 +230,7 @@ privacyManager.stopUsingPermission(tokenID, 'ohos.permission.READ_AUDIO', pid, {
 ```
 
 
+<a id="stopusingpermission-3"></a>
 ## stopUsingPermission
 
 ```TypeScript
@@ -239,7 +243,7 @@ function stopUsingPermission(
 
 系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。
 
-pid需要与[startUsingPermission](arkts-ability-privacymanager-startusingpermission-f-sys.md#startusingpermission-2)传入的pid相同。
+pid需要与[startUsingPermission](arkts-ability-privacymanager-startusingpermission-f-sys.md#startusingpermission-1)传入的pid相同。
 
 **起始版本：** 18
 
@@ -271,7 +275,7 @@ pid需要与[startUsingPermission](arkts-ability-privacymanager-startusingpermis
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 

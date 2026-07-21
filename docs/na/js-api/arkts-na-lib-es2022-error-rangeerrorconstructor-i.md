@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface RangeErrorConstructor--><!--Device-unnamed-interface RangeErrorConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -21,8 +22,9 @@ new (message?: string, options?: ErrorOptions): RangeError
 
 | Type | Description |
 | --- | --- |
-| [RangeError](arkts-na-lib-es5-rangeerror-i.md) |  |
+| RangeError |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -42,5 +44,5 @@ new (message?: string, options?: ErrorOptions): RangeError
 
 | Type | Description |
 | --- | --- |
-| [RangeError](arkts-na-lib-es5-rangeerror-i.md) |  |
+| RangeError |  |
 

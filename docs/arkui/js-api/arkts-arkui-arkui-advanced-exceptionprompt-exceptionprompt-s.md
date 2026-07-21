@@ -4,6 +4,8 @@ Declare struct ExceptionPrompt higher-order component.
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct ExceptionPrompt--><!--Device-unnamed-export declare struct ExceptionPrompt-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -14,6 +16,7 @@ Declare struct ExceptionPrompt higher-order component.
 import { ExceptionPrompt, MarginType, PromptOptions } from '@kit.ArkUI';
 ```
 
+<a id="build"></a>
 ## build
 
 ```TypeScript
@@ -40,7 +43,7 @@ onActionTextClick?: () => void
 
 Callback when click the icon button.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 
@@ -60,7 +63,7 @@ onTipClick?: () => void
 
 Callback when clicking the text on the left.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 

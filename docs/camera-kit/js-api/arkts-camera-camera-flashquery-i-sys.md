@@ -14,6 +14,7 @@ Provides APIs to obtain the flash information of a camera device, including whet
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="islcdflashsupported"></a>
 ## isLcdFlashSupported
 
 ```TypeScript

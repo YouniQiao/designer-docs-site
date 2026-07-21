@@ -6,6 +6,7 @@
 import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="on"></a>
 ## on('connect')
 
 ```TypeScript
@@ -31,7 +32,7 @@ Enables listening for **connect** events. This API uses an asynchronous callback
 | --- | --- | --- | --- |
 | type | 'connect' | Yes | Event type. This field has a fixed value of **connect**. This event is triggered when [abilityConnectionManager.connect()](arkts-distributedservice-abilityconnectionmanager-connect-f.md#connect-1) is called. |
 | sessionId | number | Yes | ID of the collaboration session. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventCallbackInfo> | Yes | Registered callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventCallbackInfo&gt; | Yes | Registered callback function. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ abilityConnectionManager.on("connect", sessionId,(callbackInfo) => {
 ```
 
 
+<a id="on-1"></a>
 ## on('disconnect')
 
 ```TypeScript
@@ -79,7 +81,7 @@ Enables listening for **disconnect** events.
 | --- | --- | --- | --- |
 | type | 'disconnect' | Yes | Event type. This field has a fixed value of **disconnect**. This event is triggered when [abilityConnectionManager.disconnect()](arkts-distributedservice-abilityconnectionmanager-disconnect-f.md#disconnect-1) is called. |
 | sessionId | number | Yes | ID of the collaboration session. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventCallbackInfo> | Yes | Registered callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventCallbackInfo&gt; | Yes | Registered callback function. |
 
 **Error codes:**
 
@@ -102,6 +104,7 @@ abilityConnectionManager.on("disconnect", sessionId,(callbackInfo) => {
 ```
 
 
+<a id="on-2"></a>
 ## on('receiveMessage')
 
 ```TypeScript
@@ -127,7 +130,7 @@ Enables listening for **receiveMessage** events.
 | --- | --- | --- | --- |
 | type | 'receiveMessage' | Yes | Event type. This field has a fixed value of **receiveMessage**. This event is triggered when [abilityConnectionManager.sendMessage()](arkts-distributedservice-abilityconnectionmanager-sendmessage-f.md#sendmessage-1) is called. |
 | sessionId | number | Yes | ID of the collaboration session. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventCallbackInfo> | Yes | Registered callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventCallbackInfo&gt; | Yes | Registered callback function. |
 
 **Error codes:**
 
@@ -150,6 +153,7 @@ abilityConnectionManager.on("receiveMessage", sessionId,(callbackInfo) => {
 ```
 
 
+<a id="on-3"></a>
 ## on('receiveData')
 
 ```TypeScript
@@ -175,7 +179,7 @@ Enables listening for **receiveData** events.
 | --- | --- | --- | --- |
 | type | 'receiveData' | Yes | Event type. This field has a fixed value of **receiveData**. This event is triggered when [abilityConnectionManager.sendData()](arkts-distributedservice-abilityconnectionmanager-senddata-f.md#senddata-1) is called. |
 | sessionId | number | Yes | ID of the collaboration session. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventCallbackInfo> | Yes | Registered callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventCallbackInfo&gt; | Yes | Registered callback function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="cancelcallupgrade"></a>
 ## cancelCallUpgrade
 
 ```TypeScript
@@ -34,7 +35,7 @@ Cancel call upgrade when voice call upgrade to video call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the cancelCallUpgrade. |
+| Promise&lt;void&gt; | The promise returned by the cancelCallUpgrade. |
 
 **Error codes:**
 

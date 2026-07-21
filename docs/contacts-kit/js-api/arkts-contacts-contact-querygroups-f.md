@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="querygroups"></a>
 ## queryGroups
 
 ```TypeScript
@@ -18,7 +19,7 @@ Queries all groups of a contact. This API uses an asynchronous callback to retur
 
 **Deprecated since:** 10
 
-**Substitutes:** queryGroups(context:
+**Substitutes:** [queryGroups(context:](arkts-contacts-contact-querygroups-f.md#querygroups-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -30,7 +31,7 @@ Queries all groups of a contact. This API uses an asynchronous callback to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Group>> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of queried groups is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Group&gt;&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of queried groups is returned. If the operation fails, an error code is returned. |
 
 **Example**
 
@@ -49,6 +50,7 @@ contact.queryGroups((err: BusinessError, data) => {
 ```
 
 
+<a id="querygroups-1"></a>
 ## queryGroups
 
 ```TypeScript
@@ -70,7 +72,7 @@ Queries all groups of a contact. This API uses an asynchronous callback to retur
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Group>> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of queried groups is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Group&gt;&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of queried groups is returned. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -101,6 +103,7 @@ contact.queryGroups(context, (err: BusinessError, data) => {
 ```
 
 
+<a id="querygroups-2"></a>
 ## queryGroups
 
 ```TypeScript
@@ -113,7 +116,7 @@ Queries all groups of a contact based on the specified holder. This API uses an 
 
 **Deprecated since:** 10
 
-**Substitutes:** queryGroups(context:
+**Substitutes:** [queryGroups(context:](arkts-contacts-contact-querygroups-f.md#querygroups-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -126,7 +129,7 @@ Queries all groups of a contact based on the specified holder. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | holder | [Holder](arkts-contacts-contact-holder-c.md) | Yes | Application that creates the contacts.If the passed parameter is empty, the system contact application is used by default. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Group>> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of queried groups is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Group&gt;&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of queried groups is returned. If the operation fails, an error code is returned. |
 
 **Example**
 
@@ -149,6 +152,7 @@ contact.queryGroups({
 ```
 
 
+<a id="querygroups-3"></a>
 ## queryGroups
 
 ```TypeScript
@@ -171,7 +175,7 @@ Queries all groups of a contact based on the specified holder. This API uses an 
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | holder | [Holder](arkts-contacts-contact-holder-c.md) | Yes | Application that creates the contacts.If the passed parameter is empty, the system contact application is used by default. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Group>> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of queried groups is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Group&gt;&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of queried groups is returned. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -206,6 +210,7 @@ contact.queryGroups(context, {
 ```
 
 
+<a id="querygroups-4"></a>
 ## queryGroups
 
 ```TypeScript
@@ -218,7 +223,7 @@ Queries all groups of a contact based on the specified holder. This API uses a p
 
 **Deprecated since:** 10
 
-**Substitutes:** queryGroups(context:
+**Substitutes:** [queryGroups(context:](arkts-contacts-contact-querygroups-f.md#querygroups-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -236,7 +241,7 @@ Queries all groups of a contact based on the specified holder. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Group>> | Promise used to return the result, which is an array of groups. |
+| Promise&lt;Array&lt;Group&gt;&gt; | Promise used to return the result, which is an array of groups. |
 
 **Example**
 
@@ -255,6 +260,7 @@ promise.then((data) => {
 ```
 
 
+<a id="querygroups-5"></a>
 ## queryGroups
 
 ```TypeScript
@@ -282,7 +288,7 @@ Queries all groups of a contact based on the specified holder. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Group>> | Promise used to return the result, which is an array of groups. |
+| Promise&lt;Array&lt;Group&gt;&gt; | Promise used to return the result, which is an array of groups. |
 
 **Error codes:**
 

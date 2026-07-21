@@ -12,13 +12,14 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="animationcurve"></a>
 ## animationCurve
 
 ```TypeScript
 animationCurve(curve: Curve | ICurve)
 ```
 
-Sets the tab switching animation curve for the **Tabs** component. For details about commonly used curves, refer to the [Curve](../arkts-apis/arkts-arkui-enums-curve-e.md) enum. Custom interpolation curve objects can also be created using the APIs provided in the [interpolation calculation](../arkts-apis/arkts-curves.md) module.
+Sets the tab switching animation curve for the **Tabs** component. For details about commonly used curves, refer to the [Curve](../arkts-apis/arkts-arkui-curve-e.md) enum. Custom interpolation curve objects can also be created using the APIs provided in the [interpolation calculation](../arkts-apis/arkts-curves.md) module.
 
 **Since:** 20
 
@@ -34,8 +35,9 @@ Sets the tab switching animation curve for the **Tabs** component. For details a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| curve | Curve \| ICurve | Yes | Tab switching animation curve.<br>Default value:<br>When pages are turned by swiping in **TabContent**, the default value is **interpolatingSpring(-1, 1, 228, 30)**.<br>When pages are turned by tapping tabs or calling the **changeIndex** API of **TabsController**, the default value is **cubicBezierCurve(0.2, 0.0, 0.1, 1.0)**.<br>When a custom animation curve is set, it applies to all tab switching animations��whether triggered by swiping, tapping a tab, or calling the **changeIndex** API. |
+| curve | [Curve](../arkts-apis/arkts-arkui-curve-e.md) \| ICurve | Yes | Tab switching animation curve.<br>Default value:<br>When pages are turned by swiping in **TabContent**, the default value is **interpolatingSpring(-1, 1, 228, 30)**.<br>When pages are turned by tapping tabs or calling the **changeIndex** API of **TabsController**, the default value is **cubicBezierCurve(0.2, 0.0, 0.1, 1.0)**.<br>When a custom animation curve is set, it applies to all tab switching animations��whether triggered by swiping, tapping a tab, or calling the **changeIndex** API. |
 
+<a id="animationduration"></a>
 ## animationDuration
 
 ```TypeScript
@@ -62,6 +64,7 @@ For details about curves unaffected by **animationDuration**, see [Interpolation
 | --- | --- | --- | --- |
 | value | number | Yes | Duration of the tab switching animation.<br>Default value:<br>API version 10 and earlier versions: If this parameter is set to **null** or is not set, the default value **0**, which means no animation for tab switching. If this parameter is set to **undefined** or a value less than 0, the default value is **300**.<br>API version 11 and later versions: If this parameter is set to an invalid value or is not set, the default value is **0** when the tab bar is set to **BottomTabBarStyle** and **300** when the tab bar is set to any other style.<br>Unit: ms<br>Value range: [0, +∞). |
 
+<a id="animationmode"></a>
 ## animationMode
 
 ```TypeScript
@@ -72,7 +75,7 @@ Sets the animation mode for tab switching initiated by clicking a specific tab o
 
 > **NOTE**  
 >  
-> This attribute cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+> This attribute cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 12
 
@@ -88,8 +91,9 @@ Sets the animation mode for tab switching initiated by clicking a specific tab o
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [Optional](arkts-arkui-optional-t.md)<AnimationMode> | Yes | Animation mode for tab switching initiated by clicking a specific tab or by calling the **changeIndex** API of **TabsController**.<br>Default value: **AnimationMode.CONTENT_FIRST**,which means the target page content is loaded first, followed by the animation. |
+| mode | [Optional](arkts-arkui-optional-t.md)&lt;AnimationMode&gt; | Yes | Animation mode for tab switching initiated by clicking a specific tab or by calling the **changeIndex** API of **TabsController**.<br>Default value: **AnimationMode.CONTENT_FIRST**,which means the target page content is loaded first, followed by the animation. |
 
+<a id="barbackgroundblurstyle"></a>
 ## barBackgroundBlurStyle
 
 ```TypeScript
@@ -100,7 +104,7 @@ Sets the background blur style of the tab bar.
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -116,8 +120,9 @@ Sets the background blur style of the tab bar.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [BlurStyle](arkts-arkui-common-blurstyle-e.md) | Yes | Background blur style of the tab bar.<br>Default value: **BlurStyle.NONE** |
+| value | [BlurStyle](arkts-arkui-blurstyle-e.md) | Yes | Background blur style of the tab bar.<br>Default value: **BlurStyle.NONE** |
 
+<a id="barbackgroundblurstyle-1"></a>
 ## barBackgroundBlurStyle
 
 ```TypeScript
@@ -140,9 +145,10 @@ Defines the blur style to apply between the background and content of a tab bar.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | [BlurStyle](arkts-arkui-common-blurstyle-e.md) | Yes | Settings of the background blur style, including the blur radius, mask color, mask opacity, saturation, and brightness. |
-| options | [BackgroundBlurStyleOptions](arkts-arkui-common-backgroundblurstyleoptions-i.md) | Yes | Background blur options. |
+| style | [BlurStyle](arkts-arkui-blurstyle-e.md) | Yes | Settings of the background blur style, including the blur radius, mask color, mask opacity, saturation, and brightness. |
+| options | [BackgroundBlurStyleOptions](arkts-arkui-backgroundblurstyleoptions-i.md) | Yes | Background blur options. |
 
+<a id="barbackgroundcolor"></a>
 ## barBackgroundColor
 
 ```TypeScript
@@ -167,6 +173,7 @@ Sets the background color of the tab bar.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the tab bar.<br>Default value: **Color.Transparent** |
 
+<a id="barbackgroundeffect"></a>
 ## barBackgroundEffect
 
 ```TypeScript
@@ -189,8 +196,9 @@ Sets the background effect of the tab bar, including the blur radius, brightness
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [BackgroundEffectOptions](arkts-arkui-common-backgroundeffectoptions-i.md) | Yes | Background effect options, including the blur radius, brightness,saturation, and color. |
+| options | [BackgroundEffectOptions](arkts-arkui-backgroundeffectoptions-i.md) | Yes | Background effect options, including the blur radius, brightness,saturation, and color. |
 
+<a id="barfloatingstyle"></a>
 ## barFloatingStyle
 
 ```TypeScript
@@ -213,15 +221,16 @@ Enable floating style for bar.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | [Optional](arkts-arkui-optional-t.md)<FloatingTabBarStyle> | Yes | floating style for bar. |
+| style | [Optional](arkts-arkui-optional-t.md)&lt;FloatingTabBarStyle&gt; | Yes | floating style for bar. |
 
+<a id="bargridalign"></a>
 ## barGridAlign
 
 ```TypeScript
 barGridAlign(value: BarGridColumnOptions)
 ```
 
-Sets the visible area of the tab bar in grid mode. For details, see **BarGridColumnOptions**. This attribute is effective only in horizontal mode. It is not applicable to [XS, XL, and XXL devices](../../../../ui/arkts-layout-development-grid-layout.md#breakpoints).
+Sets the visible area of the tab bar in grid mode. For details, see **BarGridColumnOptions**. This attribute is effective only in horizontal mode. It is not applicable to [XS, XL, and XXL devices](docroot://ui/arkts-layout-development-grid-layout.md#breakpoints).
 
 **Since:** 10
 
@@ -237,8 +246,9 @@ Sets the visible area of the tab bar in grid mode. For details, see **BarGridCol
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [BarGridColumnOptions](arkts-arkui-tabs-bargridcolumnoptions-i.md) | Yes | Visible area of the tab bar in grid mode. |
+| value | [BarGridColumnOptions](arkts-arkui-bargridcolumnoptions-i.md) | Yes | Visible area of the tab bar in grid mode. |
 
+<a id="barheight"></a>
 ## barHeight
 
 ```TypeScript
@@ -247,7 +257,7 @@ barHeight(value: Length)
 
 Sets the height of the tab bar. For horizontal **Tabs** components, you can set the height to **'auto'** to allow the tab bar to automatically adapt to the height of its child components. If the height is set to a value less than0 or greater than the height of the **Tabs** component, the default value is used.
 
-In versions earlier than API version 14, setting **barHeight** to a fixed value prevents the tab bar from extending beyond the bottom safe area. Since API version 14, the [safeAreaPadding](arkts-arkui-common-commonmethod-c.md#safeareapadding-1)attribute is supported. When **safeAreaPadding** is set to 0 or is not explicitly set, the tab bar is allowed to extend beyond the bottom safe area.
+In versions earlier than API version 14, setting **barHeight** to a fixed value prevents the tab bar from extending beyond the bottom safe area. Since API version 14, the [safeAreaPadding](arkts-arkui-commonmethod-c.md#safeareapadding-1)attribute is supported. When **safeAreaPadding** is set to 0 or is not explicitly set, the tab bar is allowed to extend beyond the bottom safe area.
 
 **Since:** 7
 
@@ -261,8 +271,9 @@ In versions earlier than API version 14, setting **barHeight** to a fixed value 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Height of the tab bar.<br>Default value:<br>If no style is set or **CustomBuilder** is used to set a custom style for the **TabBar**, and **vertical** is set to **false**, the default value is 56vp.<br>If no style is set or **CustomBuilder** is used to set a custom style for the **TabBar**, and **vertical** is set to **true**, the default value is the height of the **Tabs** component.<br>If [SubTabBarStyle](arkts-arkui-tab-content-subtabbarstyle-c.md) is set, and the **vertical** attribute is **false**, the default value is 56 vp.<br>If **SubTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is the height of the **Tabs** component.<br>If [BottomTabBarStyle](arkts-arkui-tab-content-bottomtabbarstyle-c.md) is set, and the **vertical** attribute is **true**, the default value is the height of the **Tabs** component.<br>If **BottomTabBarStyle** is set, and the **vertical** attribute is **false**, the default value is 56 vp in versions earlier than API version 12 and 48 vp since API version 12.<br>**Since:** 8 |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Height of the tab bar.<br>Default value:<br>If no style is set or **CustomBuilder** is used to set a custom style for the **TabBar**, and **vertical** is set to **false**, the default value is 56vp.<br>If no style is set or **CustomBuilder** is used to set a custom style for the **TabBar**, and **vertical** is set to **true**, the default value is the height of the **Tabs** component.<br>If [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) is set, and the **vertical** attribute is **false**, the default value is 56 vp.<br>If **SubTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is the height of the **Tabs** component.<br>If [BottomTabBarStyle](arkts-arkui-bottomtabbarstyle-c.md) is set, and the **vertical** attribute is **true**, the default value is the height of the **Tabs** component.<br>If **BottomTabBarStyle** is set, and the **vertical** attribute is **false**, the default value is 56 vp in versions earlier than API version 12 and 48 vp since API version 12.<br>**Since:** 8 |
 
+<a id="barheight-1"></a>
 ## barHeight
 
 ```TypeScript
@@ -285,9 +296,10 @@ Sets the height of the tab bar. For horizontal **Tabs** components, you can set 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| height | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Height of the tab bar.<br>Default value:<br>If no style is set or **CustomBuilder** is used to set a custom style for the **TabBar**, and **vertical** is set to **false**, the default value is 56vp.<br>If no style is set or **CustomBuilder** is used to set a custom style for the **TabBar**, and **vertical** is set to **true**, the default value is the height of the **Tabs** component.<br>If [SubTabBarStyle](arkts-arkui-tab-content-subtabbarstyle-c.md) is set, and the **vertical** attribute is **false**, the default value is 56 vp.<br>If **SubTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is the height of the **Tabs** component.<br>If [BottomTabBarStyle](arkts-arkui-tab-content-bottomtabbarstyle-c.md) is set, and the **vertical** attribute is **true**, the default value is the height of the **Tabs** component.<br>If **BottomTabBarStyle** is set, and the **vertical** attribute is **false**, the default value is 48 vp. |
+| height | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Height of the tab bar.<br>Default value:<br>If no style is set or **CustomBuilder** is used to set a custom style for the **TabBar**, and **vertical** is set to **false**, the default value is 56vp.<br>If no style is set or **CustomBuilder** is used to set a custom style for the **TabBar**, and **vertical** is set to **true**, the default value is the height of the **Tabs** component.<br>If [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) is set, and the **vertical** attribute is **false**, the default value is 56 vp.<br>If **SubTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is the height of the **Tabs** component.<br>If [BottomTabBarStyle](arkts-arkui-bottomtabbarstyle-c.md) is set, and the **vertical** attribute is **true**, the default value is the height of the **Tabs** component.<br>If **BottomTabBarStyle** is set, and the **vertical** attribute is **false**, the default value is 48 vp. |
 | noMinHeightLimit | boolean | Yes | Whether to remove the minimum height limit of the tab bar when **height** is set to **'auto'**. The default value is **false**.<br>**NOTE**<br>**true**: removes the minimum height limit,allowing the height to be less than the default value.<br>**false**: enforces the minimum height limit, meaning the height cannot be less than the default value. |
 
+<a id="barmode"></a>
 ## barMode
 
 ```TypeScript
@@ -312,6 +324,7 @@ Sets the tab bar layout mode to **BarMode.Fixed**.
 | --- | --- | --- | --- |
 | value | BarMode.Fixed | Yes | The width of each tab is determined by equally dividing the number of tabs by the bar width (or bar height in the vertical layout). |
 
+<a id="barmode-1"></a>
 ## barMode
 
 ```TypeScript
@@ -335,8 +348,9 @@ Sets the tab bar layout mode to **BarMode.Scrollable**.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | BarMode.Scrollable | Yes | The width of each tab is determined by the actual layout. The tabs are scrollable in the following case: In horizontal layout, the total width exceeds the tab bar width; in vertical layout, the total height exceeds the tab bar height. |
-| options | [ScrollableBarModeOptions](arkts-arkui-tabs-scrollablebarmodeoptions-i.md) | Yes | Layout style of the tab bar in scrollable mode.<br>**NOTE**<br>This parameter is effective only when the tab bar is in scrollable mode. |
+| options | [ScrollableBarModeOptions](arkts-arkui-scrollablebarmodeoptions-i.md) | Yes | Layout style of the tab bar in scrollable mode.<br>**NOTE**<br>This parameter is effective only when the tab bar is in scrollable mode. |
 
+<a id="barmode-2"></a>
 ## barMode
 
 ```TypeScript
@@ -357,9 +371,10 @@ Sets the tab bar layout mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [BarMode](arkts-arkui-tabs-barmode-e.md) | Yes | Layout mode.<br>Default value: **BarMode.Fixed** |
-| options | [ScrollableBarModeOptions](arkts-arkui-tabs-scrollablebarmodeoptions-i.md) | No | Layout style of the tab bar in scrollable mode.<br>**NOTE**<br>This parameter is effective only when the tab bar is in horizontal scrollable mode.<br>**Since:** 10 |
+| value | [BarMode](arkts-arkui-barmode-e.md) | Yes | Layout mode.<br>Default value: **BarMode.Fixed** |
+| options | [ScrollableBarModeOptions](arkts-arkui-scrollablebarmodeoptions-i.md) | No | Layout style of the tab bar in scrollable mode.<br>**NOTE**<br>This parameter is effective only when the tab bar is in horizontal scrollable mode.<br>**Since:** 10 |
 
+<a id="baroverlap"></a>
 ## barOverlap
 
 ```TypeScript
@@ -384,6 +399,7 @@ Sets whether the tab bar overlaps the **TabContent** component with a blurred ba
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether the tab bar overlaps the **TabContent** component with a blurred background effect. **true**: The tab bar overlaps the **TabContent** component with a blurred background effect, and the default blur style of the tab bar is set to **'BlurStyle.COMPONENT_THICK'**.<br> **false**: There is no blur or overlap effect.<br>Default value: **false**. |
 
+<a id="barposition"></a>
 ## barPosition
 
 ```TypeScript
@@ -404,8 +420,9 @@ Sets the position of the **Tabs** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [BarPosition](arkts-arkui-tabs-barposition-e.md) | Yes | Position of the **Tabs** component.<br>Default value: **BarPosition.Start** |
+| value | [BarPosition](arkts-arkui-barposition-e.md) | Yes | Position of the **Tabs** component.<br>Default value: **BarPosition.Start** |
 
+<a id="barwidth"></a>
 ## barWidth
 
 ```TypeScript
@@ -426,8 +443,9 @@ Sets the width of the tab bar. If the set value is less than 0 or greater than t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Width of the tab bar.<br>Default value:<br>If the tab bar has the **vertical** attribute set to **false** and does not have [SubTabBarStyle](arkts-arkui-tab-content-subtabbarstyle-c.md) or [BottomTabBarStyle](arkts-arkui-tab-content-bottomtabbarstyle-c.md) specified, the default value is the width of the **Tabs** component.<br>If neither **SubTabBarStyle** nor **BottomTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is 56 vp.<br>If **SubTabBarStyle** is set, and the **vertical** attribute is **false**, the default value is the width of the **Tabs** component.<br>If **SubTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is 56 vp.<br>If **BottomTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is 96 vp.<br>If **BottomTabBarStyle** is set, and the **vertical** attribute is **false**, the default value is the width of the **Tabs** component.<br>**Since:** 8 |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Width of the tab bar.<br>Default value:<br>If the tab bar has the **vertical** attribute set to **false** and does not have [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) or [BottomTabBarStyle](arkts-arkui-bottomtabbarstyle-c.md) specified, the default value is the width of the **Tabs** component.<br>If neither **SubTabBarStyle** nor **BottomTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is 56 vp.<br>If **SubTabBarStyle** is set, and the **vertical** attribute is **false**, the default value is the width of the **Tabs** component.<br>If **SubTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is 56 vp.<br>If **BottomTabBarStyle** is set, and the **vertical** attribute is **true**, the default value is 96 vp.<br>If **BottomTabBarStyle** is set, and the **vertical** attribute is **false**, the default value is the width of the **Tabs** component.<br>**Since:** 8 |
 
+<a id="cachedmaxcount"></a>
 ## cachedMaxCount
 
 ```TypeScript
@@ -451,8 +469,9 @@ Sets the maximum number of child components to cache and the caching mode. If th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | count | number | Yes | Maximum number of child components to cache. If the value is out of the range, the unnecessary child components are automatically released.<br>Value range: [0, +∞) |
-| mode | [TabsCacheMode](arkts-arkui-tabs-tabscachemode-e.md) | Yes | Caching mode for child components.<br>Default value:**TabsCacheMode.CACHE_BOTH_SIDE** |
+| mode | [TabsCacheMode](arkts-arkui-tabscachemode-e.md) | Yes | Caching mode for child components.<br>Default value:**TabsCacheMode.CACHE_BOTH_SIDE** |
 
+<a id="customcontenttransition"></a>
 ## customContentTransition
 
 ```TypeScript
@@ -463,11 +482,11 @@ Defines a custom tab page transition animation.
 
 Instructions:
 
-1. When a custom animation is used, the default transition animation of the **Tabs** component is disabled,and the tab pages cannot be switched by swipe gestures.2. Setting this attribute to **undefined** disables the custom transition animation and reverts to the component's default transition animation.3. Currently, the custom animation cannot be interrupted.4. Currently, the custom animation can be triggered only in two scenarios: clicking a tab and calling the TabsController.changeIndex() API.5. When a custom animation is used, all events except **onGestureSwipe** of the **Tabs** component are supported.6. The triggering time of the **onChange** and **onAnimationEnd** events needs to be specified.If the second custom animation is triggered during the execution of the first custom animation,the **onChange** and **onAnimationEnd** events of the first custom animation are triggered when the second custom animation starts.7. When a custom animation is used, the layout mode of the page involved in the animation is changed to **Stack**.If the **zIndex** attribute is not set for related pages, the **zIndex** values of all pages are the same.In this case, the pages are rendered in the order in which they are added to the component tree (that is,the sequence of page indexes). In light of this, to control the rendering levels of pages, set the **zIndex** attribute of the pages.8. This attribute cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+1. When a custom animation is used, the default transition animation of the **Tabs** component is disabled,and the tab pages cannot be switched by swipe gestures.2. Setting this attribute to **undefined** disables the custom transition animation and reverts to the component's default transition animation.3. Currently, the custom animation cannot be interrupted.4. Currently, the custom animation can be triggered only in two scenarios: clicking a tab and calling the TabsController.changeIndex() API.5. When a custom animation is used, all events except **onGestureSwipe** of the **Tabs** component are supported.6. The triggering time of the **onChange** and **onAnimationEnd** events needs to be specified.If the second custom animation is triggered during the execution of the first custom animation,the **onChange** and **onAnimationEnd** events of the first custom animation are triggered when the second custom animation starts.7. When a custom animation is used, the layout mode of the page involved in the animation is changed to **Stack**.If the **zIndex** attribute is not set for related pages, the **zIndex** values of all pages are the same.In this case, the pages are rendered in the order in which they are added to the component tree (that is,the sequence of page indexes). In light of this, to control the rendering levels of pages, set the **zIndex** attribute of the pages.8. This attribute cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 > **NOTE**  
 >  
-> This API can be called in [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
+> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 11
 
@@ -485,6 +504,7 @@ Instructions:
 | --- | --- | --- | --- |
 | delegate | [TabsCustomContentTransitionCallback](arkts-arkui-tabscustomcontenttransitioncallback-t.md) | Yes | Callback invoked when the custom tab transition animation starts.<br>**Since:** 18 |
 
+<a id="divider"></a>
 ## divider
 
 ```TypeScript
@@ -507,8 +527,9 @@ Sets the divider between the **TabBar** and **TabContent** components.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | DividerStyle \| null | Yes | Divider style. By default, the divider is not displayed.<br>**DividerStyle**: divider style.<br>**null**: No divider is displayed. |
+| value | [DividerStyle](arkts-arkui-dividerstyle-i.md) \| null | Yes | Divider style. By default, the divider is not displayed.<br>**DividerStyle**: divider style.<br>**null**: No divider is displayed. |
 
+<a id="edgeeffect"></a>
 ## edgeEffect
 
 ```TypeScript
@@ -519,7 +540,7 @@ Sets the edge effect used when the boundary of the scrolling area is reached.
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 17.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 17.
 
 **Since:** 12
 
@@ -535,8 +556,9 @@ Sets the edge effect used when the boundary of the scrolling area is reached.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| edgeEffect | [Optional](arkts-arkui-optional-t.md)<EdgeEffect> | Yes | Effect used when the boundary of the scrolling area is reached.<br>Default value: **EdgeEffect.Spring** |
+| edgeEffect | [Optional](arkts-arkui-optional-t.md)&lt;EdgeEffect&gt; | Yes | Effect used when the boundary of the scrolling area is reached.<br>Default value: **EdgeEffect.Spring** |
 
+<a id="fadingedge"></a>
 ## fadingEdge
 
 ```TypeScript
@@ -561,13 +583,14 @@ Sets whether the tabs fade out when they exceed the container width. It is recom
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether the tabs fade out when they exceed the container width.<br>**true** (default):The tab fades out when they exceed the container width.<br> **false**: The tabs are clipped without any fade effect when they exceed the container width. |
 
+<a id="nestedscroll"></a>
 ## nestedScroll
 
 ```TypeScript
 nestedScroll(value: TabsNestedScrollMode | undefined)
 ```
 
-Sets the nested scrolling mode of the **Tabs** component and its parent component. If this API is not called, the default nested scrolling mode is [SELF_ONLY](arkts-arkui-tabs-tabsnestedscrollmode-e.md).
+Sets the nested scrolling mode of the **Tabs** component and its parent component. If this API is not called, the default nested scrolling mode is [SELF_ONLY](arkts-arkui-tabsnestedscrollmode-e.md).
 
 **Model constraint**: This API can be used only in the stage model.
 
@@ -585,8 +608,9 @@ Sets the nested scrolling mode of the **Tabs** component and its parent componen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | TabsNestedScrollMode \| undefined | Yes | Nested scrolling mode of the **Tabs** component and its parent container.<br>When this parameter is set to **undefined**, the scrolling is contained within the **Tabs** component, and no scroll chaining occurs, that is, the parent component does not scroll when the component scrolling reaches the boundary. |
+| value | [TabsNestedScrollMode](arkts-arkui-tabsnestedscrollmode-e.md) \| undefined | Yes | Nested scrolling mode of the **Tabs** component and its parent container.<br>When this parameter is set to **undefined**, the scrolling is contained within the **Tabs** component, and no scroll chaining occurs, that is, the parent component does not scroll when the component scrolling reaches the boundary. |
 
+<a id="onanimationend"></a>
 ## onAnimationEnd
 
 ```TypeScript
@@ -611,6 +635,7 @@ Triggered when the tab switching animation is completed, including cases where t
 | --- | --- | --- | --- |
 | handler | [OnTabsAnimationEndCallback](arkts-arkui-ontabsanimationendcallback-t.md) | Yes | Callback triggered upon animation completion or interruption.<br>**Since:** 18 |
 
+<a id="onanimationstart"></a>
 ## onAnimationStart
 
 ```TypeScript
@@ -635,6 +660,7 @@ Triggered when the transition animation starts. If [animationDuration](TabsAttri
 | --- | --- | --- | --- |
 | handler | [OnTabsAnimationStartCallback](arkts-arkui-ontabsanimationstartcallback-t.md) | Yes | Callback triggered when the transition animation starts.<br>**Since:** 18 |
 
+<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -647,9 +673,9 @@ This event is triggered when any of the following occurs:
 
 1. After completing a swipe-triggered tab switching animation.
 
-2. After the active tab changes by calling the [changeIndex](arkts-arkui-tabs-tabscontroller-c.md#changeindex-1) API of [Controller](arkts-arkui-tabs-tabscontroller-c.md).
+2. After the active tab changes by calling the [changeIndex](arkts-arkui-tabscontroller-c.md#changeindex-1) API of [Controller](arkts-arkui-tabscontroller-c.md).
 
-3. After the active tab changes by updating the index through the bound [state variable](../../../../ui/state-management/arkts-state.md).
+3. After the active tab changes by updating the index through the bound [state variable](docroot://ui/state-management/arkts-state.md).
 
 4. After the active tab changes by tapping a tab in the tab bar.
 
@@ -660,7 +686,7 @@ This event is triggered when any of the following occurs:
 > animation is completed. For smooth animations, listen for the active tab index in  
 > [onAnimationStart](TabsAttribute#onAnimationStart) and update the tab index accordingly. For details about  
 > the implementation, see  
-> [Example 3](../../../../reference/apis-arkui/arkui-ts/ts-container-tabs.md#example-3-implementing-custom-tab-switching-synchronization).
+> [Example 3](docroot://reference/apis-arkui/arkui-ts/ts-container-tabs.md#example-3-implementing-custom-tab-switching-synchronization).
 
 **Since:** 7
 
@@ -674,8 +700,9 @@ This event is triggered when any of the following occurs:
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | Yes | Index of the active tab. The index starts from 0.<br>**Since:** 18 |
+| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Index of the active tab. The index starts from 0.<br>**Since:** 18 |
 
+<a id="oncontentdidscroll"></a>
 ## onContentDidScroll
 
 ```TypeScript
@@ -700,8 +727,9 @@ During page scrolling, the [OnTabsContentDidScrollCallback](arkts-arkui-ontabsco
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | OnTabsContentDidScrollCallback \| undefined | Yes | Callback triggered when a tab page is swiped.Passing **undefined** will unbind the previously registered callback. |
+| handler | [OnTabsContentDidScrollCallback](arkts-arkui-ontabscontentdidscrollcallback-t.md) \| undefined | Yes | Callback triggered when a tab page is swiped.Passing **undefined** will unbind the previously registered callback. |
 
+<a id="oncontentwillchange"></a>
 ## onContentWillChange
 
 ```TypeScript
@@ -724,7 +752,7 @@ This event is triggered when any of the following occurs:
 
 > **NOTE**  
 >  
-> This API can be called in [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
+> This API can be called in [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 12
 
@@ -742,6 +770,7 @@ This event is triggered when any of the following occurs:
 | --- | --- | --- | --- |
 | handler | [OnTabsContentWillChangeCallback](arkts-arkui-ontabscontentwillchangecallback-t.md) | Yes | Callback triggered when a new page is about to be displayed.<br>**Since:** 18 |
 
+<a id="ongestureswipe"></a>
 ## onGestureSwipe
 
 ```TypeScript
@@ -766,6 +795,7 @@ Triggered on a frame-by-frame basis during swipe gestures for tab switching.
 | --- | --- | --- | --- |
 | handler | [OnTabsGestureSwipeCallback](arkts-arkui-ontabsgestureswipecallback-t.md) | Yes | Triggered on a frame-by-frame basis during swipe gestures for tab switching.<br>**Since:** 18 |
 
+<a id="onselected"></a>
 ## onSelected
 
 ```TypeScript
@@ -778,16 +808,16 @@ This event is triggered when any of the following occurs:
 
 1. When the swipe gesture is released and the tab switching threshold is met, triggering the switching animation.
 
-2. When the [changeIndex](arkts-arkui-tabs-tabscontroller-c.md#changeindex-1) API of [TabsController](arkts-arkui-tabs-tabscontroller-c.md)is called, triggering the switching animation.
+2. When the [changeIndex](arkts-arkui-tabscontroller-c.md#changeindex-1) API of [TabsController](arkts-arkui-tabscontroller-c.md)is called, triggering the switching animation.
 
-3. When the index of the active tab is changed through the bound [state variable](../../../../ui/state-management/arkts-state.md).
+3. When the index of the active tab is changed through the bound [state variable](docroot://ui/state-management/arkts-state.md).
 
 4. When a tab is tapped.
 
 > **NOTE**  
 >  
 > In the **onSelected** callback, the index of the current displayed page cannot be set using **index** of  
-> [TabsOptions](arkts-arkui-tabs-tabsoptions-i.md), and **TabsController.changeIndex()** cannot be called.
+> [TabsOptions](arkts-arkui-tabsoptions-i.md), and **TabsController.changeIndex()** cannot be called.
 
 **Since:** 18
 
@@ -803,8 +833,9 @@ This event is triggered when any of the following occurs:
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | Yes | Index of the currently selected element. |
+| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Index of the currently selected element. |
 
+<a id="ontabbarclick"></a>
 ## onTabBarClick
 
 ```TypeScript
@@ -827,8 +858,9 @@ Triggered when a tab is clicked.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | Yes | Index of the clicked tab. The index starts from 0.<br>**Since:** 18 |
+| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Index of the clicked tab. The index starts from 0.<br>**Since:** 18 |
 
+<a id="onunselected"></a>
 ## onUnselected
 
 ```TypeScript
@@ -841,9 +873,9 @@ This event is triggered when any of the following occurs:
 
 1. When the swipe gesture is released and the tab switching threshold is met, triggering the switching animation.
 
-2. When the [changeIndex](arkts-arkui-tabs-tabscontroller-c.md#changeindex-1) API of [TabsController](arkts-arkui-tabs-tabscontroller-c.md) is called, triggering the switching animation.
+2. When the [changeIndex](arkts-arkui-tabscontroller-c.md#changeindex-1) API of [TabsController](arkts-arkui-tabscontroller-c.md) is called, triggering the switching animation.
 
-3. When the index of the active tab is changed through the bound [state variable](../../../../ui/state-management/arkts-state.md).
+3. When the index of the active tab is changed through the bound [state variable](docroot://ui/state-management/arkts-state.md).
 
 4. When a tab is tapped.
 
@@ -861,8 +893,9 @@ This event is triggered when any of the following occurs:
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | Yes | Index of the element that is about to be hidden. |
+| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Index of the element that is about to be hidden. |
 
+<a id="pageflipmode"></a>
 ## pageFlipMode
 
 ```TypeScript
@@ -885,8 +918,9 @@ Sets the mode for flipping pages using the mouse wheel.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [Optional](arkts-arkui-optional-t.md)<PageFlipMode> | Yes | Mode for flipping pages using the mouse wheel.<br>Default value:**PageFlipMode.CONTINUOUS** |
+| mode | [Optional](arkts-arkui-optional-t.md)&lt;PageFlipMode&gt; | Yes | Mode for flipping pages using the mouse wheel.<br>Default value:**PageFlipMode.CONTINUOUS** |
 
+<a id="scrollable"></a>
 ## scrollable
 
 ```TypeScript
@@ -909,6 +943,7 @@ Sets whether the tabs are scrollable.
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether the tabs are scrollable.<br>**true** (default): The tabs are scrollable.<br>**false**: The tabs are not scrollable. |
 
+<a id="vertical"></a>
 ## vertical
 
 ```TypeScript

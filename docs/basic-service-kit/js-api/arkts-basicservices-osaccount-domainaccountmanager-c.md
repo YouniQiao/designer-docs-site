@@ -14,6 +14,7 @@ Provides APIs for domain account management.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="updateaccountinfo"></a>
 ## updateAccountInfo
 
 ```TypeScript
@@ -41,7 +42,7 @@ Updates information of a domain account. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

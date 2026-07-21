@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getsignalinformation"></a>
 ## getSignalInformation
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the list of signal strength information of the registered network corres
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<SignalInformation>> | Yes | Indicates the callback for getting the instance list of the child classes derived from {@link SignalInformation}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;SignalInformation&gt;&gt; | Yes | Indicates the callback for getting the instance list of the child classes derived from {@link SignalInformation}. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ radio.getSignalInformation(slotId, (err: BusinessError, data: Array<radio.Signal
 ```
 
 
+<a id="getsignalinformation-1"></a>
 ## getSignalInformation
 
 ```TypeScript
@@ -78,7 +80,7 @@ Obtains the list of signal strength information of the registered network corres
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<SignalInformation>> | Returns the callback for getting the instance list of the child classes derived from {@link SignalInformation}. |
+| Promise&lt;Array&lt;SignalInformation&gt;&gt; | Returns the callback for getting the instance list of the child classes derived from {@link SignalInformation}. |
 
 **Error codes:**
 

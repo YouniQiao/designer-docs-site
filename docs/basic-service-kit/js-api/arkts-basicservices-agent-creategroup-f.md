@@ -6,6 +6,7 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="creategroup"></a>
 ## createGroup
 
 ```TypeScript
@@ -30,7 +31,7 @@ Creates a group based on [GroupConfig](arkts-basicservices-agent-groupconfig-i.m
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the ID of the created group. |
+| Promise&lt;string&gt; | Promise used to return the ID of the created group. |
 
 **Error codes:**
 

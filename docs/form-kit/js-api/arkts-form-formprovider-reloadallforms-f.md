@@ -6,6 +6,7 @@
 import { formProvider } from '@kit.FormKit';
 ```
 
+<a id="reloadallforms"></a>
 ## reloadAllForms
 
 ```TypeScript
@@ -34,7 +35,7 @@ Reloads all widgets. Invoked in the main process of the application, this API no
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of widgets requested for update. |
+| Promise&lt;number&gt; | Promise used to return the number of widgets requested for update. |
 
 **Error codes:**
 

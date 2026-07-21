@@ -6,6 +6,7 @@
 import { sharing } from '@kit.NetworkKit';
 ```
 
+<a id="off"></a>
 ## off('sharingStateChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Unregister a callback for the global network sharing state change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sharingStateChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | the callback function that returns the status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | the callback function that returns the status. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ sharing.off('sharingStateChange', (data: boolean) => {
 ```
 
 
+<a id="off-1"></a>
 ## off('interfaceSharingStateChange')
 
 ```TypeScript
@@ -74,7 +76,7 @@ Unregister a callback for the interface network sharing state change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'interfaceSharingStateChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<InterfaceSharingStateInfo> | No | the callback function that returns the message. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;InterfaceSharingStateInfo&gt; | No | the callback function that returns the message. |
 
 **Error codes:**
 
@@ -96,6 +98,7 @@ sharing.off('interfaceSharingStateChange', (data: object) => {
 ```
 
 
+<a id="off-2"></a>
 ## off('sharingUpstreamChange')
 
 ```TypeScript
@@ -119,7 +122,7 @@ Unregister a callback for the sharing upstream network change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sharingUpstreamChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetHandle> | No | the callback function that returns the network handle. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetHandle&gt; | No | the callback function that returns the network handle. |
 
 **Error codes:**
 

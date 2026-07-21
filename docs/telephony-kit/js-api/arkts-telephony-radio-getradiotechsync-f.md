@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getradiotechsync"></a>
 ## getRadioTechSync
 
 ```TypeScript

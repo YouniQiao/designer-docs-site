@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="setinputdeviceenabled"></a>
 ## setInputDeviceEnabled
 
 ```TypeScript
@@ -35,7 +36,7 @@ Sets the input switch status of an input device. Take the touchscreen as an exam
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

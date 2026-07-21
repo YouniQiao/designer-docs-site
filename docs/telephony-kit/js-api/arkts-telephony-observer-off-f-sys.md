@@ -6,6 +6,7 @@
 import { observer } from '@kit.TelephonyKit';
 ```
 
+<a id="off"></a>
 ## off('cellInfoChange')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Cancel callback when the cell information is updated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cellInfoChange' | Yes | Event type. Indicates the cellInfoChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<CellInformation>> | No | Indicates the callback to unsubscribe from the cellInfoChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;CellInformation&gt;&gt; | No | Indicates the callback to unsubscribe from the cellInfoChange event. |
 
 **Error codes:**
 

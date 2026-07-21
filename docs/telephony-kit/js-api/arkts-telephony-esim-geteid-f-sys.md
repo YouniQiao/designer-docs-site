@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="geteid"></a>
 ## getEid
 
 ```TypeScript
@@ -34,7 +35,7 @@ Returns the EID identifying for the eUICC hardware.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the EID. When eUICC is not ready, the return value may be null. |
+| Promise&lt;string&gt; | Returns the EID. When eUICC is not ready, the return value may be null. |
 
 **Error codes:**
 

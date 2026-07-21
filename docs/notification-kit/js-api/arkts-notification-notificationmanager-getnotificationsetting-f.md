@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getnotificationsetting"></a>
 ## getNotificationSetting
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the notification settings of the application, including the switch statu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NotificationSetting> | Promise used to return the result. |
+| Promise&lt;NotificationSetting&gt; | Promise used to return the result. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { access } from '@kit.ConnectivityKit';
 ```
 
+<a id="getpersistentdeviceids"></a>
 ## getPersistentDeviceIds
 
 ```TypeScript

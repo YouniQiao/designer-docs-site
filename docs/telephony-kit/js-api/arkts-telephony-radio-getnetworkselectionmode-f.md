@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getnetworkselectionmode"></a>
 ## getNetworkSelectionMode
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the network search mode of the SIM card in a specified slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetworkSelectionMode> | Yes | Indicates the callback for getting the network search mode of the SIM card. Available values are as follows:&lt;ul&gt;&lt;li&gt;{@link NetworkSelectionMode#NETWORK_SELECTION_UNKNOWN}&lt;li&gt;{@link NetworkSelectionMode#NETWORK_SELECTION_AUTOMATIC}&lt;li&gt;{@link NetworkSelectionMode#NETWORK_SELECTION_MANUAL}&lt;ul&gt; |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetworkSelectionMode&gt; | Yes | Indicates the callback for getting the network search mode of the SIM card. Available values are as follows:<ul><li>{@link NetworkSelectionMode#NETWORK_SELECTION_UNKNOWN}<li>{@link NetworkSelectionMode#NETWORK_SELECTION_AUTOMATIC}<li>{@link NetworkSelectionMode#NETWORK_SELECTION_MANUAL}<ul> |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ radio.getNetworkSelectionMode(slotId, (err: BusinessError, data: radio.NetworkSe
 ```
 
 
+<a id="getnetworkselectionmode-1"></a>
 ## getNetworkSelectionMode
 
 ```TypeScript
@@ -78,7 +80,7 @@ Obtains the network search mode of the SIM card in a specified slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetworkSelectionMode> | Returns the network search mode of the SIM card.Available values are as follows:&lt;ul&gt;&lt;li&gt;{@link NetworkSelectionMode#NETWORK_SELECTION_UNKNOWN}&lt;li&gt;{@link NetworkSelectionMode#NETWORK_SELECTION_AUTOMATIC}&lt;li&gt;{@link NetworkSelectionMode#NETWORK_SELECTION_MANUAL}&lt;ul&gt; |
+| Promise&lt;NetworkSelectionMode&gt; | Returns the network search mode of the SIM card.Available values are as follows:<ul><li>{@link NetworkSelectionMode#NETWORK_SELECTION_UNKNOWN}<li>{@link NetworkSelectionMode#NETWORK_SELECTION_AUTOMATIC}<li>{@link NetworkSelectionMode#NETWORK_SELECTION_MANUAL}<ul> |
 
 **Error codes:**
 

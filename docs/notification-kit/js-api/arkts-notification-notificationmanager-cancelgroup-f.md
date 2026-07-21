@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="cancelgroup"></a>
 ## cancelGroup
 
 ```TypeScript
@@ -27,7 +28,7 @@ The notification group **groupName** is the group identifier specified through t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | groupName | string | Yes | Name of the notification group, which is specified through [NotificationRequest](arkts-notification-notificationrequest-notificationrequest-i.md) when the notification is published. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ notificationManager.cancelGroup(groupName, cancelGroupCallback);
 ```
 
 
+<a id="cancelgroup-1"></a>
 ## cancelGroup
 
 ```TypeScript
@@ -82,7 +84,7 @@ The notification group **groupName** is the group identifier specified through t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

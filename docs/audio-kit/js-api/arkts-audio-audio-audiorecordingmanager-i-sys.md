@@ -14,6 +14,7 @@ Provides recording strategy management, including collaborative recording and re
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="offsystemrecordcontrollerenabledchange"></a>
 ## offSystemRecordControllerEnabledChange
 
 ```TypeScript
@@ -36,7 +37,7 @@ Unsubscribes from the system recording controller panel enabled state change eve
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SystemRecordControllerChangeInfo> | No | The Callback used in subscription function for unsubscribing. If not using this parameter, all callbacks subscribed in current process before will be unsubscribed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SystemRecordControllerChangeInfo&gt; | No | The Callback used in subscription function for unsubscribing. If not using this parameter, all callbacks subscribed in current process before will be unsubscribed. |
 
 **Error codes:**
 
@@ -46,6 +47,7 @@ Unsubscribes from the system recording controller panel enabled state change eve
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | Audio service error occurs like service died. |
 
+<a id="onsystemrecordcontrollerenabledchange"></a>
 ## onSystemRecordControllerEnabledChange
 
 ```TypeScript
@@ -68,7 +70,7 @@ Subscribes to the system recording controller panel enabled state change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SystemRecordControllerChangeInfo> | Yes | Callback used to listen whether the system recording controller panel enabled state change event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SystemRecordControllerChangeInfo&gt; | Yes | Callback used to listen whether the system recording controller panel enabled state change event. |
 
 **Error codes:**
 

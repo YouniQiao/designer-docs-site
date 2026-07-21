@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getnotificationswitch"></a>
 ## getNotificationSwitch
 
 ```TypeScript
@@ -37,7 +38,7 @@ Obtains the notification switch state. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SwitchState> | Promise used to return the notification switch state. |
+| Promise&lt;SwitchState&gt; | Promise used to return the notification switch state. |
 
 **Error codes:**
 

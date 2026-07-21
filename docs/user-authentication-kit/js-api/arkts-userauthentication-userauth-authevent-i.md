@@ -18,6 +18,7 @@ Provides an asynchronous callback to return the authentication event information
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="callback"></a>
 ## callback
 
 ```TypeScript
@@ -30,7 +31,7 @@ Called to return the authentication result or authentication tip information.
 
 **Deprecated since:** 11
 
-**Substitutes:** onResult(result:
+**Substitutes:** [onResult(result:](arkts-userauthentication-userauth-iauthcallback-i.md#onresult-1)
 
 <!--Device-AuthEvent-callback(result: EventInfo): void--><!--Device-AuthEvent-callback(result: EventInfo): void-End-->
 

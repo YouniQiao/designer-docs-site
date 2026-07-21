@@ -6,6 +6,7 @@
 import { uiMaterial } from '@kit.ArkUI';
 ```
 
+<a id="getglobalmateriallevel"></a>
 ## getGlobalMaterialLevel
 
 ```TypeScript

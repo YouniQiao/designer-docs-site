@@ -6,6 +6,7 @@
 import { dataTransfer } from '@kit.ConnectivityKit';
 ```
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -34,7 +35,7 @@ function disconnect(params: ConnectionParams): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | 返回promise对象。 |
+| Promise&lt;void&gt; | 返回promise对象。 |
 
 **错误码：**
 

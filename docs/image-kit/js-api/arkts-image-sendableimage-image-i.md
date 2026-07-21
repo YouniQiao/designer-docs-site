@@ -2,7 +2,7 @@
 
 Provides APIs for basic image operations, including obtaining image information and reading and writing image data.
 
-An Image instance is returned when [readNextImage](arkts-image-sendableimage-imagereceiver-i.md#readnextimage-1) and [readLatestImage](arkts-image-sendableimage-imagereceiver-i.md#readlatestimage-1) are called. This class inherits from [ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).
+An Image instance is returned when [readNextImage](arkts-image-sendableimage-imagereceiver-i.md#readnextimage-1) and [readLatestImage](arkts-image-sendableimage-imagereceiver-i.md#readlatestimage-1) are called. This class inherits from [ISendable](docroot://arkts-utils/arkts-sendable.md#isendable).
 
 Images occupy a large amount of memory. When you finish using an Image instance, call [release](arkts-image-sendableimage-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
@@ -20,6 +20,7 @@ Images occupy a large amount of memory. When you finish using an Image instance,
 import { sendableImage } from '@kit.ImageKit';
 ```
 
+<a id="getcomponent"></a>
 ## getComponent
 
 ```TypeScript
@@ -44,7 +45,7 @@ Obtains the component buffer from the Image instance based on the color componen
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.Component> | Promise used to return the component buffer. |
+| Promise&lt;image.Component&gt; | Promise used to return the component buffer. |
 
 **Example**
 
@@ -69,6 +70,7 @@ async function Demo() {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -93,7 +95,7 @@ Before releasing the instance, ensure that all asynchronous operations associate
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -140,7 +142,7 @@ Image area to be cropped.
 readonly format: number
 ```
 
-Image format. For details, see [OH_NativeBuffer_Format](../../../../reference/apis-arkgraphics2d/c-apis/capi-buffer-common-h.md#oh_nativebuffer_format).
+Image format. For details, see [OH_NativeBuffer_Format](docroot://reference/apis-arkgraphics2d/c-apis/capi-buffer-common-h.md#oh_nativebuffer_format).
 
 **Type:** number
 
@@ -164,7 +166,7 @@ If the Image object stores camera capture stream data (JPEG image data), given t
 
 The type of data stored in the Image object depends on whether the application passes the surface ID in the receiver to a previewOutput or captureOutput object of the camera.
 
-For details about the best practices of camera preview and photo capture, see [Dual-Channel Preview (ArkTS)](../../../../media/camera/camera-dual-channel-preview.md) and [Photo Capture Sample (ArkTS)](../../../../media/camera/camera-shooting-case.md).
+For details about the best practices of camera preview and photo capture, see [Dual-Channel Preview (ArkTS)](docroot://media/camera/camera-dual-channel-preview.md) and [Photo Capture Sample (ArkTS)](docroot://media/camera/camera-shooting-case.md).
 
 **Type:** Size
 

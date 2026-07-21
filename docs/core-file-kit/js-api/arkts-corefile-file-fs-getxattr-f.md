@@ -6,6 +6,7 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="getxattr"></a>
 ## getxattr
 
 ```TypeScript
@@ -31,7 +32,7 @@ Obtains an extended attribute of a file or directory. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the value of the extended attribute obtained. |
+| Promise&lt;string&gt; | Promise used to return the value of the extended attribute obtained. |
 
 **Error codes:**
 

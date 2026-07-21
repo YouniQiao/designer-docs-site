@@ -6,6 +6,7 @@
 import { connectedTag } from '@kit.ConnectivityKit';
 ```
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -32,7 +33,7 @@ Writes the NDEF data to the connected NFC tag.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void. |
+| Promise&lt;void&gt; | The void. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ connectedTag.write(rawData).then(() => {
 ```
 
 
+<a id="write-1"></a>
 ## write
 
 ```TypeScript
@@ -80,7 +82,7 @@ Writes the NDEF data to the connected NFC tag.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | number[] | Yes | Indicates the NDEF data to send, which is a byte array. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes |  |
 
 **Error codes:**
 

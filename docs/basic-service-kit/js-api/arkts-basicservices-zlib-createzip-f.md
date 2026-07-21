@@ -6,6 +6,7 @@
 import { zlib } from '@kit.BasicServicesKit';
 ```
 
+<a id="createzip"></a>
 ## createZip
 
 ```TypeScript
@@ -26,7 +27,7 @@ Creates this **Zip** instance. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Zip> | Promise used to return the **Zip** instance created. |
+| Promise&lt;Zip&gt; | Promise used to return the **Zip** instance created. |
 
 **Example**
 

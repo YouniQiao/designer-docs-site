@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="shiftappwindowfocus"></a>
 ## shiftAppWindowFocus
 
 ```TypeScript
@@ -14,7 +15,7 @@ function shiftAppWindowFocus(sourceWindowId: number, targetWindowId: number): Pr
 
 Shifts the window focus from the source window to the target window in the same application. The window focus can be shifted within the main window and child windows. This API uses a promise to return the result.
 
-Ensure that the target window can gain focus (configurable by calling [setWindowFocusable()](arkts-arkui-window-window-i.md#setwindowfocusable-2)) and that [showWindow()](arkts-arkui-window-window-i.md#showwindow-1) has been successfully executed.
+Ensure that the target window can gain focus (configurable by calling [setWindowFocusable()](arkts-arkui-window-window-i.md#setwindowfocusable-1)) and that [showWindow()](arkts-arkui-window-window-i.md#showwindow-1) has been successfully executed.
 
 > **NOTE**  
 >  
@@ -43,7 +44,7 @@ Ensure that the target window can gain focus (configurable by calling [setWindow
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

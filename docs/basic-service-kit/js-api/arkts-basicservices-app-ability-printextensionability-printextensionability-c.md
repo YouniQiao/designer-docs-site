@@ -14,6 +14,7 @@ class of print extensionAbility.
 import { PrintExtensionAbility } from '@kit.BasicServicesKit';
 ```
 
+<a id="oncancelprintjob"></a>
 ## onCancelPrintJob
 
 ```TypeScript
@@ -36,6 +37,7 @@ Called once to remove the print job has been started.
 | --- | --- | --- | --- |
 | jobInfo | print.PrintJob | Yes | Indicates the information of print job. |
 
+<a id="onconnectprinter"></a>
 ## onConnectPrinter
 
 ```TypeScript
@@ -72,6 +74,7 @@ export default class HWPrintExtension extends PrintExtensionAbility {
 
 ```
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -109,6 +112,7 @@ export default class HWPrintExtension extends PrintExtensionAbility {
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -138,6 +142,7 @@ export default class HWPrintExtension extends PrintExtensionAbility {
 
 ```
 
+<a id="ondisconnectprinter"></a>
 ## onDisconnectPrinter
 
 ```TypeScript
@@ -174,6 +179,7 @@ export default class HWPrintExtension extends PrintExtensionAbility {
 
 ```
 
+<a id="onrequestprintercapability"></a>
 ## onRequestPrinterCapability
 
 ```TypeScript
@@ -202,6 +208,7 @@ Called once to request the printer's capabilities.
 | --- | --- |
 | print.PrinterCapability | printer capability. |
 
+<a id="onstartdiscoverprinter"></a>
 ## onStartDiscoverPrinter
 
 ```TypeScript
@@ -232,6 +239,7 @@ export default class HWPrintExtension extends PrintExtensionAbility {
 
 ```
 
+<a id="onstartprintjob"></a>
 ## onStartPrintJob
 
 ```TypeScript
@@ -254,6 +262,7 @@ Called once to start print job.
 | --- | --- | --- | --- |
 | jobInfo | print.PrintJob | Yes | Indicates the information of print job. |
 
+<a id="onstopdiscoverprinter"></a>
 ## onStopDiscoverPrinter
 
 ```TypeScript

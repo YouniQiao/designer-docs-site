@@ -16,7 +16,7 @@ Enumerates the types of process states to filter. It can be used with [AppStateF
 CREATE = 1 << 0
 ```
 
-The process has just been created. It corresponds to the state whose value is **0** in [ProcessData](../../../../reference/apis-ability-kit/js-apis-inner-application-processData.md#properties).
+The process has just been created. It corresponds to the state whose value is **0** in [ProcessData](docroot://reference/apis-ability-kit/js-apis-inner-application-processData.md#properties).
 
 **Since:** 21
 
@@ -32,7 +32,7 @@ The process has just been created. It corresponds to the state whose value is **
 FOREGROUND = 1 << 1
 ```
 
-The process is running in the foreground. It corresponds to the state whose value is **2** in [ProcessData](../../../../reference/apis-ability-kit/js-apis-inner-application-processData.md#properties).
+The process is running in the foreground. It corresponds to the state whose value is **2** in [ProcessData](docroot://reference/apis-ability-kit/js-apis-inner-application-processData.md#properties).
 
 **Since:** 21
 
@@ -48,7 +48,7 @@ The process is running in the foreground. It corresponds to the state whose valu
 BACKGROUND = 1 << 2
 ```
 
-The process is running in the background. It corresponds to the state whose value is **4** in [ProcessData](../../../../reference/apis-ability-kit/js-apis-inner-application-processData.md#properties).
+The process is running in the background. It corresponds to the state whose value is **4** in [ProcessData](docroot://reference/apis-ability-kit/js-apis-inner-application-processData.md#properties).
 
 **Since:** 21
 
@@ -64,7 +64,7 @@ The process is running in the background. It corresponds to the state whose valu
 DESTROY = 1 << 3
 ```
 
-The process has terminated. It corresponds to the state whose value is **5** in [ProcessData](../../../../reference/apis-ability-kit/js-apis-inner-application-processData.md#properties).
+The process has terminated. It corresponds to the state whose value is **5** in [ProcessData](docroot://reference/apis-ability-kit/js-apis-inner-application-processData.md#properties).
 
 **Since:** 21
 

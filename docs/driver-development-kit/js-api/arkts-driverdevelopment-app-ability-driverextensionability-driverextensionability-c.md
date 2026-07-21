@@ -14,6 +14,7 @@ The **DriverExtensionAbility** module provides the ExtensionAbility related to d
 import { DriverExtensionContext } from '@kit.DriverDevelopmentKit';
 ```
 
+<a id="onconnect"></a>
 ## onConnect
 
 ```TypeScript
@@ -97,6 +98,7 @@ class DriverExt extends DriverExtensionAbility {
 
 ```
 
+<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript
@@ -148,6 +150,7 @@ class DriverExt extends DriverExtensionAbility {
 
 ```
 
+<a id="ondump"></a>
 ## onDump
 
 ```TypeScript
@@ -168,13 +171,13 @@ Dumps client information. It is recommended that developers don't DUMP sensitive
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Parameters in the form of a command. |
+| params | Array&lt;string&gt; | Yes | Parameters in the form of a command. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | String array used to dump client information. |
+| Array&lt;string&gt; | String array used to dump client information. |
 
 **Example**
 
@@ -188,6 +191,7 @@ class DriverExt extends DriverExtensionAbility {
 
 ```
 
+<a id="oninit"></a>
 ## onInit
 
 ```TypeScript
@@ -224,6 +228,7 @@ class DriverExt extends DriverExtensionAbility {
 
 ```
 
+<a id="onrelease"></a>
 ## onRelease
 
 ```TypeScript

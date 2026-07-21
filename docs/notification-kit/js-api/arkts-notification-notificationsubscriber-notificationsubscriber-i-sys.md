@@ -18,7 +18,7 @@ onBadgeChanged?:(data: BadgeNumberCallbackData) => void
 
 Callback used to return the listened application information.
 
-**Type:** (data: BadgeNumberCallbackData) => void
+**Type:** (data: BadgeNumberCallbackData) =&gt; void
 
 **Since:** 10
 
@@ -54,7 +54,7 @@ onBatchCancel?: (data: Array<SubscribeCallbackData>) => void
 
 Notification information of batch deletion.
 
-**Type:** (data: Array<SubscribeCallbackData>) => void
+**Type:** (data: Array&lt;SubscribeCallbackData&gt;) =&gt; void
 
 **Since:** 11
 
@@ -72,7 +72,7 @@ onCancel?:(data: SubscribeCallbackData) => void
 
 Information about the notification to cancel.
 
-**Type:** (data: SubscribeCallbackData) => void
+**Type:** (data: SubscribeCallbackData) =&gt; void
 
 **Since:** 7
 
@@ -90,7 +90,7 @@ onConnect?:() => void
 
 Callback invoked when subscription is complete.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 7
 
@@ -108,7 +108,7 @@ onConsume?:(data: SubscribeCallbackData) => void
 
 Information about the notification received.
 
-**Type:** (data: SubscribeCallbackData) => void
+**Type:** (data: SubscribeCallbackData) =&gt; void
 
 **Since:** 7
 
@@ -126,7 +126,7 @@ onDestroy?:() => void
 
 Callback to be invoked when the service is disconnected.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 7
 
@@ -144,7 +144,7 @@ onDisconnect?:() => void
 
 Callback invoked when unsubscription is complete.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 7
 
@@ -162,7 +162,7 @@ onDoNotDisturbChanged?: (mode: notificationManager.DoNotDisturbDate) => void
 
 Callback used to return DND time setting updates.
 
-**Type:** (mode: notificationManager.DoNotDisturbDate) => void
+**Type:** (mode: notificationManager.DoNotDisturbDate) =&gt; void
 
 **Since:** 11
 
@@ -180,7 +180,7 @@ onDoNotDisturbDateChange?: (mode: notification.DoNotDisturbDate) => void
 
 Callback used to return DND time setting updates.
 
-**Type:** (mode: notification.DoNotDisturbDate) => void
+**Type:** (mode: notification.DoNotDisturbDate) =&gt; void
 
 **Since:** 8
 
@@ -202,7 +202,7 @@ onEnabledNotificationChanged?:(callbackData: EnabledNotificationCallbackData) =>
 
 Callback used to return the listened application information.
 
-**Type:** (callbackData: EnabledNotificationCallbackData) => void
+**Type:** (callbackData: EnabledNotificationCallbackData) =&gt; void
 
 **Since:** 8
 
@@ -220,7 +220,7 @@ onEnabledPriorityByBundleChanged?: (callbackData: EnabledPriorityNotificationByB
 
 Callback used to return the result.
 
-**Type:** (callbackData: EnabledPriorityNotificationByBundleCallbackData) => void
+**Type:** (callbackData: EnabledPriorityNotificationByBundleCallbackData) =&gt; void
 
 **Since:** 23
 
@@ -238,7 +238,7 @@ onEnabledPriorityChanged?: (callbackData: EnabledPriorityNotificationCallbackDat
 
 Callback used to return the result.
 
-**Type:** (callbackData: EnabledPriorityNotificationCallbackData) => void
+**Type:** (callbackData: EnabledPriorityNotificationCallbackData) =&gt; void
 
 **Since:** 23
 
@@ -316,7 +316,7 @@ onUpdate?:(data: NotificationSortingMap) => void
 
 Latest notification sorting list.
 
-**Type:** (data: NotificationSortingMap) => void
+**Type:** (data: NotificationSortingMap) =&gt; void
 
 **Since:** 7
 

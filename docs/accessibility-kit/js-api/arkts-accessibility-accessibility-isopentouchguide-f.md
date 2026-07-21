@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="isopentouchguide"></a>
 ## isOpenTouchGuide
 
 ```TypeScript
@@ -28,7 +29,7 @@ Checks whether touch guide mode is enabled. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. Returns **true** if touch guide mode is enabled; returns **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. Returns **true** if touch guide mode is enabled; returns **false** otherwise. |
 
 **Example**
 
@@ -47,6 +48,7 @@ accessibility.isOpenTouchGuide((err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isopentouchguide-1"></a>
 ## isOpenTouchGuide
 
 ```TypeScript
@@ -69,7 +71,7 @@ Checks whether touch guide mode is enabled. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. Returns **true** if touch guide mode is enabled;returns **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if touch guide mode is enabled;returns **false** otherwise. |
 
 **Example**
 

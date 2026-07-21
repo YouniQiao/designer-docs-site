@@ -6,6 +6,7 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
+<a id="checkpathpermission"></a>
 ## checkPathPermission
 
 ```TypeScript
@@ -29,14 +30,14 @@ Check permissions for the path.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | tokenID | number | Yes | Token ID of the application. |
-| policies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PathPolicyInfo> | Yes | Policy information to check on paths. |
-| policyType | [PolicyType](arkts-corefile-fileshare-policytype-e.md) | Yes | Persistent or temporary type. |
+| policies | Array&lt;PathPolicyInfo&gt; | Yes | Policy information to check on paths. |
+| policyType | [PolicyType](../../apis-mdm-kit/arkts-apis/arkts-mdm-systemmanager-policytype-e.md) | Yes | Persistent or temporary type. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<boolean>> | Returns the permission state of paths. |
+| Promise&lt;Array&lt;boolean&gt;&gt; | Returns the permission state of paths. |
 
 **Error codes:**
 

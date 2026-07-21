@@ -16,6 +16,7 @@ Before using the following APIs, you must create a ThreadWorker instance. The Th
 import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
+<a id="addeventlistener"></a>
 ## addEventListener
 
 ```TypeScript
@@ -63,6 +64,7 @@ workerInstance.dispatchEvent({type: "alert", timeStamp: 0}); // timeStamp is not
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -106,6 +108,7 @@ const workerInstance = new worker.ThreadWorker('entry/ets/workers/worker.ets', {
 
 ```
 
+<a id="dispatchevent"></a>
 ## dispatchEvent
 
 ```TypeScript
@@ -158,6 +161,7 @@ console.info("dispatchEvent result is: ", result);
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -217,6 +221,7 @@ workerInstance.off("alert");
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -265,6 +270,7 @@ workerInstance.dispatchEvent({type: "alert", timeStamp: 0}); // timeStamp is not
 
 ```
 
+<a id="once"></a>
 ## once
 
 ```TypeScript
@@ -314,6 +320,7 @@ workerInstance.dispatchEvent({type: "alert", timeStamp: 0}); // timeStamp is not
 
 ```
 
+<a id="postmessage"></a>
 ## postMessage
 
 ```TypeScript
@@ -334,8 +341,8 @@ Sends a message from the host thread to the Worker thread by transferring object
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| message | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Data to be sent to the Worker thread. The data object must be sequenceable.For details about the supported parameter types, see Sequenceable Data Types. |
-| transfer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md)[] | Yes | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the Worker thread. After the transfer, the objects are available only in the Worker thread.The array cannot be null. |
+| message | Object | Yes | Data to be sent to the Worker thread. The data object must be sequenceable.For details about the supported parameter types, see Sequenceable Data Types. |
+| transfer | ArrayBuffer[] | Yes | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the Worker thread. After the transfer, the objects are available only in the Worker thread.The array cannot be null. |
 
 **Error codes:**
 
@@ -421,6 +428,7 @@ struct Index {
 
 ```
 
+<a id="postmessage-1"></a>
 ## postMessage
 
 ```TypeScript
@@ -441,7 +449,7 @@ Sends a message from the host thread to the Worker thread by transferring object
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| message | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Data to be sent to the Worker thread. The data object must be sequenceable.For details about the supported parameter types, see Sequenceable Data Types. |
+| message | Object | Yes | Data to be sent to the Worker thread. The data object must be sequenceable.For details about the supported parameter types, see Sequenceable Data Types. |
 | options | [PostMessageOptions](arkts-arkts-worker-postmessageoptions-i.md) | No | If this parameter is specified, it functions the same as ArrayBuffer[].Specifically, the ownership of the objects in the array is transferred to the Worker thread and becomes unavailable in the host thread.The objects are available only in the Worker thread. If this parameter is not specified, the default value undefined is used,and information is transferred to the Worker thread by copying data. |
 
 **Error codes:**
@@ -470,6 +478,7 @@ workerInstance.postMessage(buffer);
 
 ```
 
+<a id="postmessagewithsharedsendable"></a>
 ## postMessageWithSharedSendable
 
 ```TypeScript
@@ -490,8 +499,8 @@ Sends a message from the host thread to the Worker thread. In the message, a sen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| message | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Data to be sent to the Worker thread. The data object must be sequenceable or sendable.For details about the supported sequenceable types, see Sequenceable Data Types.For details about the supported sendable types, see Sendable Data Types. |
-| transfer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md)[] | No | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the Worker thread. After the transfer, the objects are available only in the Worker thread.The array cannot be null. The default value is an empty array. |
+| message | Object | Yes | Data to be sent to the Worker thread. The data object must be sequenceable or sendable.For details about the supported sequenceable types, see Sequenceable Data Types.For details about the supported sendable types, see Sendable Data Types. |
+| transfer | ArrayBuffer[] | No | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the Worker thread. After the transfer, the objects are available only in the Worker thread.The array cannot be null. The default value is an empty array. |
 
 **Error codes:**
 
@@ -546,6 +555,7 @@ workerPort.onmessage = (e: MessageEvents) => {
 
 ```
 
+<a id="registerglobalcallobject"></a>
 ## registerGlobalCallObject
 
 ```TypeScript
@@ -567,7 +577,7 @@ Registers an object with the ThreadWorker instance of the host thread.In this wa
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | instanceName | string | Yes | Key used for registration, based on which the registered object is identified during method calling. |
-| globalCallObject | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to register. The ThreadWorker instance holds a strong reference to the object. |
+| globalCallObject | Object | Yes | Object to register. The ThreadWorker instance holds a strong reference to the object. |
 
 **Error codes:**
 
@@ -624,6 +634,7 @@ workerPort.onmessage = (e: MessageEvents): void => {
 
 ```
 
+<a id="removealllistener"></a>
 ## removeAllListener
 
 ```TypeScript
@@ -660,6 +671,7 @@ workerInstance.removeAllListener();
 
 ```
 
+<a id="removeeventlistener"></a>
 ## removeEventListener
 
 ```TypeScript
@@ -707,6 +719,7 @@ workerInstance.removeEventListener("alert");
 
 ```
 
+<a id="terminate"></a>
 ## terminate
 
 ```TypeScript
@@ -740,6 +753,7 @@ workerInstance.terminate();
 
 ```
 
+<a id="unregisterglobalcallobject"></a>
 ## unregisterGlobalCallObject
 
 ```TypeScript
@@ -824,7 +838,7 @@ onerror?: (err: ErrorEvent) => void
 
 Called when an exception occurs during worker execution. The event handler is executed in the host thread.In the callback function, the err type is ErrorEvent, indicating the received abnormal data.
 
-**Type:** (err: ErrorEvent) => void
+**Type:** (err: ErrorEvent) =&gt; void
 
 **Since:** 9
 
@@ -842,7 +856,7 @@ onexit?: (code: number) => void
 
 Called when the Worker thread exits. The event handler is executed in the host thread. In the callback function,the code value is of the number type, where the value 1 indicates abnormal exit and 0 indicates normal exit.The default value is undefined.
 
-**Type:** (code: number) => void
+**Type:** (code: number) =&gt; void
 
 **Since:** 9
 
@@ -860,7 +874,7 @@ onmessage?: (event: MessageEvents) => void
 
 Called when the host thread receives a message sent by the Worker thread through workerPort.postMessage.The event handler is executed in the host thread. In the callback function, the event type is MessageEvents,indicating the received message data.
 
-**Type:** (event: MessageEvents) => void
+**Type:** (event: MessageEvents) =&gt; void
 
 **Since:** 9
 
@@ -878,7 +892,7 @@ onmessageerror?: (event: MessageEvents) => void
 
 Called when the Worker thread receives a message that cannot be serialized. The event handler is executed in the host thread.In the callback function, the event type is MessageEvents, indicating the received message data.
 
-**Type:** (event: MessageEvents) => void
+**Type:** (event: MessageEvents) =&gt; void
 
 **Since:** 9
 

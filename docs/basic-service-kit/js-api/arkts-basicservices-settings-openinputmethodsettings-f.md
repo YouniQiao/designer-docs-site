@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="openinputmethodsettings"></a>
 ## openInputMethodSettings
 
 ```TypeScript

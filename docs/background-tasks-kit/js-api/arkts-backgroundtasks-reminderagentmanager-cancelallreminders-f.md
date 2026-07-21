@@ -6,6 +6,7 @@
 import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="cancelallreminders"></a>
 ## cancelAllReminders
 
 ```TypeScript
@@ -24,7 +25,7 @@ Cancels all reminders set by the current application. This API uses an asynchron
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result.If all the reminders are canceled,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result.If all the reminders are canceled,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ reminderAgentManager.cancelAllReminders((err: BusinessError) =>{
 ```
 
 
+<a id="cancelallreminders-1"></a>
 ## cancelAllReminders
 
 ```TypeScript
@@ -68,7 +70,7 @@ Cancels all reminders set by the current application. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

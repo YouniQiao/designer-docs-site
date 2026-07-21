@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="getkeepaliveappserviceextensions"></a>
 ## getKeepAliveAppServiceExtensions
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains information about all AppServiceExtensionAbility components that are kep
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<KeepAliveBundleInfo>> | Promise used to return the array of keep-alive application information. |
+| Promise&lt;Array&lt;KeepAliveBundleInfo&gt;&gt; | Promise used to return the array of keep-alive application information. |
 
 **Error codes:**
 

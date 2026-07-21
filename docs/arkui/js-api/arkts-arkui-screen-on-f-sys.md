@@ -6,6 +6,7 @@
 import { screen } from '@kit.ArkUI';
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -27,7 +28,7 @@ Subscribes to events related to the screen state.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'connect' \| 'disconnect' \| 'change' | Yes | Event type.<br>- **connect**: an event indicating that the screen is connected.<br>- **disconnect**: an event indicating that the screen is disconnected.<br>-**change**: an event indicating that the screen state changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the screen ID, which is an integer. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the screen ID, which is an integer. |
 
 **Error codes:**
 
@@ -48,6 +49,7 @@ screen.on('connect', callback);
 ```
 
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -69,7 +71,7 @@ Subscribes to events related to the screen state.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'connect' \| 'disconnect' \| 'change' | Yes | Event type.<br>- **connect**: an event indicating that the screen is connected.<br>- **disconnect**: an event indicating that the screen is disconnected.<br>-**change**: an event indicating that the screen state changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the screen ID, which is an integer. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the screen ID, which is an integer. |
 
 **Error codes:**
 
@@ -90,6 +92,7 @@ screen.on('connect', callback);
 ```
 
 
+<a id="on-2"></a>
 ## on
 
 ```TypeScript
@@ -111,7 +114,7 @@ Subscribes to events related to the screen state.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'connect' \| 'disconnect' \| 'change' | Yes | Event type.<br>- **connect**: an event indicating that the screen is connected.<br>- **disconnect**: an event indicating that the screen is disconnected.<br>-**change**: an event indicating that the screen state changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the screen ID, which is an integer. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the screen ID, which is an integer. |
 
 **Error codes:**
 

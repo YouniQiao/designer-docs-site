@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createmediasourcewithstreamdata"></a>
 ## createMediaSourceWithStreamData
 
 ```TypeScript
@@ -26,7 +27,7 @@ Creates a multi-bitrate media source for streaming media. Currently, only the HT
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| streams | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<MediaStream> | Yes | Array of MediaStream objects. The supported streaming media format is HTTP-FLV. |
+| streams | Array&lt;MediaStream&gt; | Yes | Array of MediaStream objects. The supported streaming media format is HTTP-FLV. |
 
 **Return value:**
 

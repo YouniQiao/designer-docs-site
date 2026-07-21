@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface RegExpConstructor--><!--Device-unnamed-interface RegExpConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -21,8 +22,9 @@ new (pattern: RegExp | string, flags?: string): RegExp
 
 | Type | Description |
 | --- | --- |
-| [RegExp](arkts-na-lib-es2015-core-regexp-i.md) |  |
+| RegExp |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -42,5 +44,5 @@ new (pattern: RegExp | string, flags?: string): RegExp
 
 | Type | Description |
 | --- | --- |
-| [RegExp](arkts-na-lib-es2015-core-regexp-i.md) |  |
+| RegExp |  |
 

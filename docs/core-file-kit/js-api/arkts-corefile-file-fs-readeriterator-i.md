@@ -14,6 +14,7 @@ Provides a **ReaderIterator** object. Before calling APIs of **ReaderIterator**,
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="next"></a>
 ## next
 
 ```TypeScript

@@ -18,6 +18,7 @@ Before using the APIs of this class, use [createSymKeyGenerator](arkts-cryptoarc
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="convertkey"></a>
 ## convertKey
 
 ```TypeScript
@@ -51,7 +52,7 @@ If no hash algorithm is specified when the symmetric key generator is created (f
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | key | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Data to convert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SymKey> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the symmetric key obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SymKey&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the symmetric key obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -85,6 +86,7 @@ function testConvertKey() {
 
 ```
 
+<a id="convertkey-1"></a>
 ## convertKey
 
 ```TypeScript
@@ -115,7 +117,7 @@ Before using this API, create a symmetric key generator by using [createSymKeyGe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SymKey> | Promise used to return the symmetric key generated. |
+| Promise&lt;SymKey&gt; | Promise used to return the symmetric key generated. |
 
 **Error codes:**
 
@@ -153,6 +155,7 @@ function testConvertKey() {
 
 ```
 
+<a id="convertkeysync"></a>
 ## convertKeySync
 
 ```TypeScript
@@ -221,6 +224,7 @@ function testConvertKeySync() {
 
 ```
 
+<a id="generatesymkey"></a>
 ## generateSymKey
 
 ```TypeScript
@@ -255,7 +259,7 @@ RAND_priv_bytes() of OpenSSL can be used to generate random keys.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SymKey> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the symmetric key obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SymKey&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the symmetric key obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -276,6 +280,7 @@ let symKeyGenerator = cryptoFramework.createSymKeyGenerator('3DES192');
 
 ```
 
+<a id="generatesymkey-1"></a>
 ## generateSymKey
 
 ```TypeScript
@@ -302,7 +307,7 @@ RAND_priv_bytes() of OpenSSL can be used to generate random keys.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SymKey> | Promise used to return the symmetric key generated. |
+| Promise&lt;SymKey&gt; | Promise used to return the symmetric key generated. |
 
 **Error codes:**
 
@@ -327,6 +332,7 @@ let symKeyGenerator = cryptoFramework.createSymKeyGenerator('AES128');
 
 ```
 
+<a id="generatesymkeysync"></a>
 ## generateSymKeySync
 
 ```TypeScript

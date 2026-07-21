@@ -6,6 +6,7 @@
 import { bundleResourceManager } from '@kit.AbilityKit';
 ```
 
+<a id="getalllauncherabilityresourceinfo"></a>
 ## getAllLauncherAbilityResourceInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the resource information of the entry abilities of the current applicati
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resourceFlags | number | Yes | Type of the resource information to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<LauncherAbilityResourceInfo>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)used to return the result. If the information is successfully obtained, **err** is **null** and **data** is a LauncherAbilityResourceInfo array. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;LauncherAbilityResourceInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)used to return the result. If the information is successfully obtained, **err** is **null** and **data** is a LauncherAbilityResourceInfo array. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -40,6 +41,7 @@ Obtains the resource information of the entry abilities of the current applicati
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 
 
+<a id="getalllauncherabilityresourceinfo-1"></a>
 ## getAllLauncherAbilityResourceInfo
 
 ```TypeScript
@@ -68,7 +70,7 @@ Obtains the resource information of the entry abilities of the current applicati
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<LauncherAbilityResourceInfo>> | Promise used to return the LauncherAbilityResourceInfo array. |
+| Promise&lt;Array&lt;LauncherAbilityResourceInfo&gt;&gt; | Promise used to return the LauncherAbilityResourceInfo array. |
 
 **Error codes:**
 

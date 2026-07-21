@@ -16,6 +16,7 @@ Provides APIs to implement device-cloud sync of media assets in **Gallery**. Bef
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -39,6 +40,7 @@ let gallerySync = new cloudSync.GallerySync()
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -62,7 +64,7 @@ Removes the specified callback from the device-cloud sync progress.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | evt | 'progress' | Yes | Event type. The value is **progress**, which indicates the sync progress event. |
-| callback | (pg: SyncProgress) => void | Yes | Callback used to return the sync progress. The input parameter is [SyncProgress](arkts-corefile-cloudsync-syncprogress-i.md), and the return value is **void**. |
+| callback | (pg: SyncProgress) =&gt; void | Yes | Callback used to return the sync progress. The input parameter is [SyncProgress](arkts-corefile-cloudsync-syncprogress-i.md), and the return value is **void**. |
 
 **Error codes:**
 
@@ -88,6 +90,7 @@ gallerySync.off('progress', callback);
 
 ```
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -134,6 +137,7 @@ gallerySync.off('progress');
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -157,7 +161,7 @@ Registers a listener for the device-cloud sync progress.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | evt | 'progress' | Yes | Event type. The value is **progress**, which indicates the sync progress event. |
-| callback | (pg: SyncProgress) => void | Yes | Callback used to return the sync progress. The input parameter is [SyncProgress](arkts-corefile-cloudsync-syncprogress-i.md), and the return value is **void**. |
+| callback | (pg: SyncProgress) =&gt; void | Yes | Callback used to return the sync progress. The input parameter is [SyncProgress](arkts-corefile-cloudsync-syncprogress-i.md), and the return value is **void**. |
 
 **Error codes:**
 
@@ -179,6 +183,7 @@ gallerySync.on('progress', (pg: cloudSync.SyncProgress) => {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -201,7 +206,7 @@ Starts device-cloud sync. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -233,6 +238,7 @@ gallerySync.start().then(() => {
 
 ```
 
+<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -255,7 +261,7 @@ Starts device-cloud sync. This API uses an asynchronous callback to return the r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to start device-cloud sync. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to start device-cloud sync. |
 
 **Error codes:**
 
@@ -285,6 +291,7 @@ gallerySync.start((err: BusinessError) => {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -312,7 +319,7 @@ Stops device-cloud sync. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -337,6 +344,7 @@ gallerySync.stop().then(() => {
 
 ```
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -364,7 +372,7 @@ Stops device-cloud sync. This API uses an asynchronous callback to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to stop device-cloud sync. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to stop device-cloud sync. |
 
 **Error codes:**
 

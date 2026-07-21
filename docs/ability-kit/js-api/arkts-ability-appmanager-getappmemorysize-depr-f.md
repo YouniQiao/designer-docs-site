@@ -1,5 +1,6 @@
 # getAppMemorySize
 
+<a id="getappmemorysize"></a>
 ## getAppMemorySize
 
 ```TypeScript
@@ -22,7 +23,7 @@ Obtains the maximum memory (RAM allocation) available to the current application
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the maximum memory (RAM allocation) size, in MB. You can perform error processing or other custom processing based on the size. |
+| Promise&lt;number&gt; | Promise used to return the maximum memory (RAM allocation) size, in MB. You can perform error processing or other custom processing based on the size. |
 
 **Example**
 
@@ -39,6 +40,7 @@ appManager.getAppMemorySize().then((data) => {
 ```
 
 
+<a id="getappmemorysize-1"></a>
 ## getAppMemorySize
 
 ```TypeScript
@@ -61,7 +63,7 @@ Obtains the maximum memory (RAM allocation) available to the current application
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the maximum memory (RAM allocation) size, in MB. You can perform error processing or other custom processing based on the size. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the maximum memory (RAM allocation) size, in MB. You can perform error processing or other custom processing based on the size. |
 
 **Example**
 

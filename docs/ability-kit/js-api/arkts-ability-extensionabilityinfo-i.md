@@ -30,9 +30,9 @@ Index of an application clone. It takes effect only for cloned applications.
 readonly applicationInfo: ApplicationInfo
 ```
 
-Application configuration information <!--Del-->. The information can be obtained by passing in **GET_EXTENSION_ABILITY_INFO_WITH_APPLICATION** to the **extensionAbilityFlags** parameter of [queryExtensionAbilityInfo](arkts-ability-bundlemanager-queryextensionabilityinfo-f-sys.md#queryextensionabilityinfo-2)<!--DelEnd-->.
+Application configuration information <!--Del-->. The information can be obtained by passing in **GET_EXTENSION_ABILITY_INFO_WITH_APPLICATION** to the **extensionAbilityFlags** parameter of [queryExtensionAbilityInfo](arkts-ability-bundlemanager-queryextensionabilityinfo-f-sys.md#queryextensionabilityinfo-1)<!--DelEnd-->.
 
-This field is not returned when the [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)or [getBundleInfo](arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-2)is used to obtain ExtensionAbilityInfo information. You can obtain the related information by obtaining the [bundleInfo](arkts-ability-bundleinfo-i.md).appInfo object.
+This field is not returned when the [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)or [getBundleInfo](arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-1)is used to obtain ExtensionAbilityInfo information. You can obtain the related information by obtaining the [bundleInfo](arkts-ability-bundleinfo-i.md).appInfo object.
 
 **Type:** ApplicationInfo
 
@@ -140,7 +140,7 @@ Type of the ExtensionAbility.
 readonly extensionAbilityTypeName: string
 ```
 
-Type of the ExtensionAbility. For details about available values, see [the type field under the extensionabilities tag](../../../../quick-start/module-configuration-file.md#extensionabilities).
+Type of the ExtensionAbility. For details about available values, see [the type field under the extensionabilities tag](docroot://quick-start/module-configuration-file.md#extensionabilities).
 
 **Type:** string
 
@@ -196,7 +196,7 @@ readonly metadata: Array<Metadata>
 
 Metadata of the ExtensionAbility. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE**, **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY**, and **GET_BUNDLE_INFO_WITH_METADATA** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
-**Type:** Array<Metadata>
+**Type:** Array&lt;Metadata&gt;
 
 **Since:** 9
 
@@ -250,7 +250,7 @@ readonly permissions: Array<string>
 
 Permissions required for other bundles to call the ExtensionAbility.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 
@@ -286,7 +286,7 @@ readonly skills: Array<Skill>
 
 Skills of the ExtensionAbility.
 
-**Type:** Array<Skill>
+**Type:** Array&lt;Skill&gt;
 
 **Since:** 12
 

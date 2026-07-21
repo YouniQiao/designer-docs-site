@@ -1,8 +1,8 @@
 # Counter properties/events
 
-In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
+In addition to the [universal attributes](docroot://reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
 
-In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
+In addition to the [universal events](docroot://reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
 
 **Inheritance/Implementation:** CounterAttribute extends [CommonMethod<CounterAttribute>](CommonMethod<CounterAttribute>)
 
@@ -12,6 +12,7 @@ In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="enabledec"></a>
 ## enableDec
 
 ```TypeScript
@@ -36,6 +37,7 @@ Sets whether to enable the decrement button.
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to enable the decrement button.<br>Default value: **true**. The value **true** means to enable the decrement button, and the value **false** means the opposite. |
 
+<a id="enableinc"></a>
 ## enableInc
 
 ```TypeScript
@@ -60,6 +62,7 @@ Sets whether to enable the increment button.
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to enable the increment button.<br>Default value: **true**. The value **true** means to enable the increment button, and the value **false** means the opposite. |
 
+<a id="ondec"></a>
 ## onDec
 
 ```TypeScript
@@ -84,6 +87,7 @@ Invoked when the value decreases.
 | --- | --- | --- | --- |
 | event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | Callback invoked when the value decreases.<br>**Since:** 18 |
 
+<a id="oninc"></a>
 ## onInc
 
 ```TypeScript

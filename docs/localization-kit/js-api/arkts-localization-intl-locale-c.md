@@ -18,6 +18,7 @@ Provides APIs for obtaining locale information.
 import { intl } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -52,6 +53,7 @@ let localeID = locale.toString();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -92,6 +94,7 @@ let localeID = locale.toString(); // localeID = 'zh-CN'
 
 ```
 
+<a id="maximize"></a>
 ## maximize
 
 ```TypeScript
@@ -139,6 +142,7 @@ localeID = maximizedLocale.toString(); // localeID = 'en-Latn-US'
 
 ```
 
+<a id="minimize"></a>
 ## minimize
 
 ```TypeScript
@@ -186,6 +190,7 @@ localeID = minimizedLocale.toString(); // localeID = 'en'
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -255,7 +260,7 @@ Locale information, which consists of the language, script, and country/region, 
 calendar: string
 ```
 
-Calendar for the locale. The value can be:The value can be any of the following: **buddhist**, **chinese**,**coptic**, **dangi**, **ethioaa**, **ethiopic**, **gregory**, **hebrew**, **indian**, **islamic**,**islamic-umalqura**, **islamic-tbla**, **islamic-civil**, **islamic-rgsa**, **iso8601**, **japanese**,**persian**, **roc**, or **islamicc**.For details about their meanings, see Table 1 in [Calendar Setting](../../../../internationalization/i18n-calendar.md).
+Calendar for the locale. The value can be:The value can be any of the following: **buddhist**, **chinese**,**coptic**, **dangi**, **ethioaa**, **ethiopic**, **gregory**, **hebrew**, **indian**, **islamic**,**islamic-umalqura**, **islamic-tbla**, **islamic-civil**, **islamic-rgsa**, **iso8601**, **japanese**,**persian**, **roc**, or **islamicc**.For details about their meanings, see Table 1 in [Calendar Setting](docroot://internationalization/i18n-calendar.md).
 
 **Type:** string
 
@@ -327,7 +332,7 @@ Collation rules for the locale. The value can be:**big5han**: Pinyin sorting for
 hourCycle: string
 ```
 
-Time system for the locale. The value can be:"h11", "h12", "h23", or "h24".For details about their display effects, see [Table 5](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+Time system for the locale. The value can be:"h11", "h12", "h23", or "h24".For details about their display effects, see [Table 5](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 

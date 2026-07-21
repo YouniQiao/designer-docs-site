@@ -9,7 +9,7 @@ When an **EnterpriseAdminExtensionAbility** component is instantiated, the syste
 > - The APIs of this module can be used only in the stage model.  
 >  
 > - The APIs of this module can be called only by a device administrator application that is enabled. For details,  
-> see [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
+> see [MDM Kit Development](docroot://mdm/mdm-kit-guide.md).
 
 **Inheritance/Implementation:** EnterpriseAdminExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
@@ -19,6 +19,7 @@ When an **EnterpriseAdminExtensionAbility** component is instantiated, the syste
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
 
+<a id="startabilitybyadmin"></a>
 ## startAbilityByAdmin
 
 ```TypeScript
@@ -34,7 +35,7 @@ Directly starts another component within the [EnterpriseAdminExtensionAbility](a
 > - The component to start must be visible to external parties, that is, the **exported** field in the  
 > **module.json5** file must be set to **true**.  
 >  
-> - [Implicit Want launch](../../../../application-models/ability-terminology.md) is not supported.  
+> - [Implicit Want launch](docroot://application-models/ability-terminology.md) is not supported.  
 >  
 > - If the **UIAbility** to start has permission protection, you need to apply for the corresponding permission.
 
@@ -59,7 +60,7 @@ Directly starts another component within the [EnterpriseAdminExtensionAbility](a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. If the component fails to be started, an error object is thrown. |
+| Promise&lt;void&gt; | Promise that returns no value. If the component fails to be started, an error object is thrown. |
 
 **Error codes:**
 

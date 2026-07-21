@@ -14,6 +14,7 @@ Provides manages model function. Including get inputs, predict ,resize.
 import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
 
+<a id="exportmodel"></a>
 ## exportModel
 
 ```TypeScript
@@ -79,6 +80,7 @@ mindSporeLite.loadTrainModelFromFile(modelFile).then((mindSporeLiteModel: mindSp
 
 ```
 
+<a id="exportweightscollaboratewithmicro"></a>
 ## exportWeightsCollaborateWithMicro
 
 ```TypeScript
@@ -140,6 +142,7 @@ mindSporeLite.loadTrainModelFromFile(modelFile).then((mindSporeLiteModel: mindSp
 
 ```
 
+<a id="getinputs"></a>
 ## getInputs
 
 ```TypeScript
@@ -181,6 +184,7 @@ mindSporeLite.loadModelFromFile(modelFile).then((mindSporeLiteModel: mindSporeLi
 
 ```
 
+<a id="getweights"></a>
 ## getWeights
 
 ```TypeScript
@@ -241,6 +245,7 @@ globalContext.getApplicationContext()
 
 ```
 
+<a id="predict"></a>
 ## predict
 
 ```TypeScript
@@ -262,7 +267,7 @@ Infer model
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inputs | [MSTensor](arkts-mindsporelite-mindsporelite-mstensor-i.md)[] | Yes | indicates the MSTensor array of the inputs. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MSTensor[]> | Yes | the callback of MSTensor array. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MSTensor[]&gt; | Yes | the callback of MSTensor array. |
 
 **Example**
 
@@ -312,6 +317,7 @@ globalContext.getApplicationContext()
 
 ```
 
+<a id="predict-1"></a>
 ## predict
 
 ```TypeScript
@@ -338,7 +344,7 @@ Infer model
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MSTensor[]> | the promise returned by the function. |
+| Promise&lt;MSTensor[]&gt; | the promise returned by the function. |
 
 **Example**
 
@@ -390,6 +396,7 @@ globalContext.getApplicationContext()
 
 ```
 
+<a id="resize"></a>
 ## resize
 
 ```TypeScript
@@ -411,7 +418,7 @@ resize model input
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inputs | [MSTensor](arkts-mindsporelite-mindsporelite-mstensor-i.md)[] | Yes | indicates the MSTensor array of the inputs. |
-| dims | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Array<number>> | Yes | indicates the target new shape array |
+| dims | Array&lt;Array&lt;number&gt;&gt; | Yes | indicates the target new shape array |
 
 **Return value:**
 
@@ -442,6 +449,7 @@ mindSporeLite.loadModelFromFile(modelFile).then((mindSporeLiteModel: mindSporeLi
 
 ```
 
+<a id="runstep"></a>
 ## runStep
 
 ```TypeScript
@@ -496,6 +504,7 @@ mindSporeLite.loadTrainModelFromFile(modelFile).then((mindSporeLiteModel: mindSp
 
 ```
 
+<a id="setupvirtualbatch"></a>
 ## setupVirtualBatch
 
 ```TypeScript
@@ -516,7 +525,7 @@ Setup training with virtual batches
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| virtualBatchMultiplier | number | Yes | virtual batch multiplier, use any number &lt; 1 to disable |
+| virtualBatchMultiplier | number | Yes | virtual batch multiplier, use any number < 1 to disable |
 | lr | number | Yes | learning rate to use for virtual batch, -1 for internal configuration |
 | momentum | number | Yes | batch norm momentum to use for virtual batch, -1 for internal configuration |
 
@@ -565,6 +574,7 @@ globalContext.getApplicationContext()
 
 ```
 
+<a id="updateweights"></a>
 ## updateWeights
 
 ```TypeScript

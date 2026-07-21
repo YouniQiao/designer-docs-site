@@ -6,6 +6,7 @@
 import { inputConsumer } from '@kit.InputKit';
 ```
 
+<a id="getallsystemhotkeys"></a>
 ## getAllSystemHotkeys
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains all system shortcut keys. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<HotkeyOptions>> | Promise used to return the list of all system shortcut keys. |
+| Promise&lt;Array&lt;HotkeyOptions&gt;&gt; | Promise used to return the list of all system shortcut keys. |
 
 **Error codes:**
 

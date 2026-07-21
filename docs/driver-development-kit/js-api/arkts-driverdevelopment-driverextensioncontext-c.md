@@ -13,6 +13,7 @@ The **DriverExtensionContext** module provides the context of **DriverExtensionA
 
 **System capability:** SystemCapability.Driver.ExternalDevice
 
+<a id="updatedriverstate"></a>
 ## updateDriverState
 
 ```TypeScript

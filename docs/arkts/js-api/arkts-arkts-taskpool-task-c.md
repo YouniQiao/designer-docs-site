@@ -14,6 +14,7 @@ Enumerates tasks, which can be executed for multiple times, placed in a task gro
 import { taskpool } from '@kit.ArkTS';
 ```
 
+<a id="adddependency"></a>
 ## addDependency
 
 ```TypeScript
@@ -78,6 +79,7 @@ taskpool.execute(task3).then(() => {
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -98,8 +100,8 @@ A constructor used to create a **Task** instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| func | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Function to be executed. The function must be decorated using [@Concurrent](../../../../arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types of the function, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
-| args | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md)[] | Yes | Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
+| func | Function | Yes | Function to be executed. The function must be decorated using [@Concurrent](docroot://arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types of the function, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
+| args | Object[] | Yes | Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
 
 **Error codes:**
 
@@ -120,6 +122,7 @@ let task: taskpool.Task = new taskpool.Task(printArgs, "this is my first Task");
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -141,8 +144,8 @@ A constructor used to create a **Task** instance, with the task name specified.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Task name. |
-| func | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Function to be executed. The function must be decorated using [@Concurrent](../../../../arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types of the function, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
-| args | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md)[] | Yes | Arguments of the function. For details about the supported types, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
+| func | Function | Yes | Function to be executed. The function must be decorated using [@Concurrent](docroot://arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types of the function, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
+| args | Object[] | Yes | Arguments of the function. For details about the supported types, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
 
 **Error codes:**
 
@@ -165,6 +168,7 @@ let name: string = task.name;
 
 ```
 
+<a id="iscanceled"></a>
 ## isCanceled
 
 ```TypeScript
@@ -235,6 +239,7 @@ taskpool.execute(task).then((res: Object) => {
 
 ```
 
+<a id="isdone"></a>
 ## isDone
 
 ```TypeScript
@@ -289,6 +294,7 @@ taskpoolCancel();
 
 ```
 
+<a id="onenqueued"></a>
 ## onEnqueued
 
 ```TypeScript
@@ -341,6 +347,7 @@ taskpool.execute(task).then(() => {
 
 ```
 
+<a id="onexecutionfailed"></a>
 ## onExecutionFailed
 
 ```TypeScript
@@ -399,6 +406,7 @@ taskpool.execute(task2).then(() => {
 
 ```
 
+<a id="onexecutionsucceeded"></a>
 ## onExecutionSucceeded
 
 ```TypeScript
@@ -451,6 +459,7 @@ taskpool.execute(task).then(() => {
 
 ```
 
+<a id="onreceivedata"></a>
 ## onReceiveData
 
 ```TypeScript
@@ -471,7 +480,7 @@ Registers a callback for a task to receive and process data from the worker thre
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | No | Callback function for processing the data received. The data sent to the host thread is transferred to the callback as an input parameter. If no value is passed in, all the registered callbacks are canceled. |
+| callback | Function | No | Callback function for processing the data received. The data sent to the host thread is transferred to the callback as an input parameter. If no value is passed in, all the registered callbacks are canceled. |
 
 **Example**
 
@@ -501,6 +510,7 @@ testFunc();
 
 ```
 
+<a id="onstartexecution"></a>
 ## onStartExecution
 
 ```TypeScript
@@ -553,6 +563,7 @@ taskpool.execute(task).then(() => {
 
 ```
 
+<a id="removedependency"></a>
 ## removeDependency
 
 ```TypeScript
@@ -621,6 +632,7 @@ taskpool.execute(task3).then(() => {
 
 ```
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript
@@ -654,7 +666,7 @@ Sends data to the host thread and triggers the registered callback. Before calli
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| args | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md)[] | Yes | Data to be used as the argument of the registered callback. For details about the supported parameter types, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
+| args | Object[] | Yes | Data to be used as the argument of the registered callback. For details about the supported parameter types, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
 
 **Error codes:**
 
@@ -724,6 +736,7 @@ taskpoolTest();
 
 ```
 
+<a id="setclonelist"></a>
 ## setCloneList
 
 ```TypeScript
@@ -735,7 +748,7 @@ Sets the task clone list. Before using this method, you need to construct a **Ta
 > **NOTE**  
 >  
 > This API must be used together with the  
-> [@Sendable decorator](../../../../arkts-utils/arkts-sendable.md#sendable-decorator). Otherwise, an exception is  
+> [@Sendable decorator](docroot://arkts-utils/arkts-sendable.md#sendable-decorator). Otherwise, an exception is  
 > thrown. You are advised to use this decorator to avoid exceptions.
 
 **Since:** 11
@@ -750,7 +763,7 @@ Sets the task clone list. Before using this method, you need to construct a **Ta
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| cloneList | Object[] \| ArrayBuffer[] | Yes | - The type of the passed-in array must be [sendable data types](../../../../arkts-utils/arkts-sendable.md#sendable-data-types) or ArrayBuffer.<br>- All [Sendable class](../../../../arkts-utils/arkts-sendable.md#sendable-class) instances or ArrayBuffer objects passed in to **cloneList** are transferred in copy mode between threads. This means that any modification to the destination objects does not affect the original objects. |
+| cloneList | Object[] \| ArrayBuffer[] | Yes | - The type of the passed-in array must be [sendable data types](docroot://arkts-utils/arkts-sendable.md#sendable-data-types) or ArrayBuffer.<br>- All [Sendable class](docroot://arkts-utils/arkts-sendable.md#sendable-class) instances or ArrayBuffer objects passed in to **cloneList** are transferred in copy mode between threads. This means that any modification to the destination objects does not affect the original objects. |
 
 **Error codes:**
 
@@ -889,6 +902,7 @@ struct Index {
 
 ```
 
+<a id="settransferlist"></a>
 ## setTransferList
 
 ```TypeScript
@@ -916,7 +930,7 @@ Sets the task transfer list. Before using this API, you must create a **Task** i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| transfer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md)[] | No | **ArrayBuffer** instance holding the objects to transfer. The default value is an empty array. |
+| transfer | ArrayBuffer[] | No | **ArrayBuffer** instance holding the objects to transfer. The default value is an empty array. |
 
 **Error codes:**
 
@@ -966,7 +980,7 @@ console.info("testTransfer view3 byteLength: " + view1.byteLength);
 arguments?: Object[]
 ```
 
-Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types).<br>This API can be used in atomic services since API version 11.
+Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types).<br>This API can be used in atomic services since API version 11.
 
 **Type:** Object[]
 
@@ -1004,7 +1018,7 @@ CPU time of the task. in ms. You are advised not to change the value.<br>This AP
 function: Function
 ```
 
-Function to be passed in during task creation. For details about the supported return value types of the function, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types).<br>This API can be used in atomic services since API version 11.
+Function to be passed in during task creation. For details about the supported return value types of the function, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types).<br>This API can be used in atomic services since API version 11.
 
 **Type:** Function
 

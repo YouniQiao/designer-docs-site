@@ -6,6 +6,7 @@
 import { deviceInfo } from '@kit.MDMKit';
 ```
 
+<a id="getdeviceinfo"></a>
 ## getDeviceInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains device information.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| label | string | Yes | Device information label that can be obtained.<br>- **deviceName**: device name.<br>-**deviceSerial**: device serial number.<br>- **simInfo**: SIM card information.&lt;!--RP1--&gt;&lt;!--RP1End--&gt; |
+| label | string | Yes | Device information label that can be obtained.<br>- **deviceName**: device name.<br>-**deviceSerial**: device serial number.<br>- **simInfo**: SIM card information.<!--RP1--><!--RP1End--> |
 
 **Return value:**
 

@@ -18,6 +18,7 @@ Implements a capture session, which saves all [CameraInput](arkts-camera-camera-
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="addinput"></a>
 ## addInput
 
 ```TypeScript
@@ -49,6 +50,7 @@ Adds a [CameraInput](arkts-camera-camera-camerainput-i.md) instance to this sess
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
+<a id="addoutput"></a>
 ## addOutput
 
 ```TypeScript
@@ -80,6 +82,7 @@ Adds a [CameraOutput](arkts-camera-camera-cameraoutput-i.md) instance to this se
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
+<a id="beginconfig"></a>
 ## beginConfig
 
 ```TypeScript
@@ -104,6 +107,7 @@ Starts configuration for the session.
 | --- | --- |
 | [7400105](../errorcode-camera.md#7400105-session-configuration-locked) | Session config locked. |
 
+<a id="commitconfig"></a>
 ## commitConfig
 
 ```TypeScript
@@ -116,7 +120,7 @@ Commits the configuration for this session. This API uses an asynchronous callba
 
 **Deprecated since:** 11
 
-**Substitutes:** commitConfig(callback:
+**Substitutes:** [commitConfig(callback:](arkts-camera-camera-session-i.md#commitconfig-1)
 
 <!--Device-CaptureSession-commitConfig(callback: AsyncCallback<void>): void--><!--Device-CaptureSession-commitConfig(callback: AsyncCallback<void>): void-End-->
 
@@ -126,7 +130,7 @@ Commits the configuration for this session. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the configuration is successfully committed, **err** is **undefined**; otherwise, **err** is an error object with an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the configuration is successfully committed, **err** is **undefined**; otherwise, **err** is an error object with an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
 
@@ -135,6 +139,7 @@ Commits the configuration for this session. This API uses an asynchronous callba
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="commitconfig-1"></a>
 ## commitConfig
 
 ```TypeScript
@@ -147,7 +152,7 @@ Commits the configuration for this session. This API uses a promise to return th
 
 **Deprecated since:** 11
 
-**Substitutes:** [commitConfig()](arkts-camera-camera-session-i.md#commitconfig-2)
+**Substitutes:** [commitConfig()](arkts-camera-camera-session-i.md#commitconfig-1)
 
 <!--Device-CaptureSession-commitConfig(): Promise<void>--><!--Device-CaptureSession-commitConfig(): Promise<void>-End-->
 
@@ -157,7 +162,7 @@ Commits the configuration for this session. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -166,6 +171,7 @@ Commits the configuration for this session. This API uses a promise to return th
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="getactivevideostabilizationmode"></a>
 ## getActiveVideoStabilizationMode
 
 ```TypeScript
@@ -196,6 +202,7 @@ Obtains the video stabilization mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getexposurebiasrange"></a>
 ## getExposureBiasRange
 
 ```TypeScript
@@ -218,7 +225,7 @@ Obtains the exposure compensation values of the camera device.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array of compensation values. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
+| Array&lt;number&gt; | Array of compensation values. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
@@ -226,6 +233,7 @@ Obtains the exposure compensation values of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getexposuremode"></a>
 ## getExposureMode
 
 ```TypeScript
@@ -256,6 +264,7 @@ Obtains the exposure mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getexposurevalue"></a>
 ## getExposureValue
 
 ```TypeScript
@@ -286,6 +295,7 @@ Obtains the exposure value in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getflashmode"></a>
 ## getFlashMode
 
 ```TypeScript
@@ -316,6 +326,7 @@ Obtains the flash mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getfocallength"></a>
 ## getFocalLength
 
 ```TypeScript
@@ -346,6 +357,7 @@ Obtains the focal length of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getfocusmode"></a>
 ## getFocusMode
 
 ```TypeScript
@@ -376,6 +388,7 @@ Obtains the focus mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getfocuspoint"></a>
 ## getFocusPoint
 
 ```TypeScript
@@ -406,6 +419,7 @@ Obtains the focal point of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getmeteringpoint"></a>
 ## getMeteringPoint
 
 ```TypeScript
@@ -436,6 +450,7 @@ Obtains the metering point of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getzoomratio"></a>
 ## getZoomRatio
 
 ```TypeScript
@@ -466,6 +481,7 @@ Obtains the zoom ratio in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getzoomratiorange"></a>
 ## getZoomRatioRange
 
 ```TypeScript
@@ -488,7 +504,7 @@ Obtains the supported zoom ratio range.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array containing the minimum and maximum zoom ratios. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
+| Array&lt;number&gt; | Array containing the minimum and maximum zoom ratios. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
@@ -496,6 +512,7 @@ Obtains the supported zoom ratio range.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="hasflash"></a>
 ## hasFlash
 
 ```TypeScript
@@ -526,6 +543,7 @@ Checks whether the camera device has flash.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="isexposuremodesupported"></a>
 ## isExposureModeSupported
 
 ```TypeScript
@@ -562,6 +580,7 @@ Checks whether an exposure mode is supported.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="isflashmodesupported"></a>
 ## isFlashModeSupported
 
 ```TypeScript
@@ -598,6 +617,7 @@ Checks whether the flash mode is supported.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="isfocusmodesupported"></a>
 ## isFocusModeSupported
 
 ```TypeScript
@@ -634,6 +654,7 @@ Checks whether a focus mode is supported.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="isvideostabilizationmodesupported"></a>
 ## isVideoStabilizationModeSupported
 
 ```TypeScript
@@ -670,6 +691,7 @@ Checks whether a video stabilization mode is supported.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="off"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -693,8 +715,9 @@ Unsubscribes from focus state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
+<a id="off-1"></a>
 ## off('error')
 
 ```TypeScript
@@ -720,6 +743,7 @@ Unsubscribes from CaptureSession error events. This API uses a callback to retur
 | type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
+<a id="on"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -747,8 +771,9 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. This event is triggered only when the camera focus state changes in auto focus mode. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | Yes | Callback used to return the focus state change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | Yes | Callback used to return the focus state change. |
 
+<a id="on-1"></a>
 ## on('error')
 
 ```TypeScript
@@ -775,9 +800,10 @@ Subscribes to CaptureSession error events. This API uses an asynchronous callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-capturesession-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-capturesession-i.md#commitconfig-2), and [addInput](arkts-camera-camera-capturesession-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-capturesession-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-capturesession-i.md#commitconfig-1), and [addInput](arkts-camera-camera-capturesession-i.md#addinput-1). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -790,7 +816,7 @@ Releases this session. This API uses an asynchronous callback to return the resu
 
 **Deprecated since:** 11
 
-**Substitutes:** release(callback:
+**Substitutes:** [release(callback:](arkts-camera-camera-session-i.md#release-1)
 
 <!--Device-CaptureSession-release(callback: AsyncCallback<void>): void--><!--Device-CaptureSession-release(callback: AsyncCallback<void>): void-End-->
 
@@ -800,7 +826,7 @@ Releases this session. This API uses an asynchronous callback to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the session is released successfully, **err** is **undefined**; otherwise, **err** is an error object with an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the session is released successfully, **err** is **undefined**; otherwise, **err** is an error object with an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
 
@@ -808,6 +834,7 @@ Releases this session. This API uses an asynchronous callback to return the resu
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -820,7 +847,7 @@ Releases this session. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [release()](arkts-camera-camera-session-i.md#release-2)
+**Substitutes:** [release()](arkts-camera-camera-session-i.md#release-1)
 
 <!--Device-CaptureSession-release(): Promise<void>--><!--Device-CaptureSession-release(): Promise<void>-End-->
 
@@ -830,7 +857,7 @@ Releases this session. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -838,6 +865,7 @@ Releases this session. This API uses a promise to return the result.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="removeinput"></a>
 ## removeInput
 
 ```TypeScript
@@ -869,6 +897,7 @@ Removes a [CameraInput](arkts-camera-camera-camerainput-i.md) instance from this
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
+<a id="removeoutput"></a>
 ## removeOutput
 
 ```TypeScript
@@ -900,6 +929,7 @@ Removes a [CameraOutput](arkts-camera-camera-cameraoutput-i.md) instance from th
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
+<a id="setexposurebias"></a>
 ## setExposureBias
 
 ```TypeScript
@@ -930,6 +960,7 @@ Sets an exposure compensation value (EV).Before the setting, you are advised to 
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setexposuremode"></a>
 ## setExposureMode
 
 ```TypeScript
@@ -960,6 +991,7 @@ Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setflashmode"></a>
 ## setFlashMode
 
 ```TypeScript
@@ -992,6 +1024,7 @@ Sets a flash mode.Before the setting, do the following checks:
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setfocusmode"></a>
 ## setFocusMode
 
 ```TypeScript
@@ -1022,6 +1055,7 @@ Sets a focus mode.Before the setting, call [isFocusModeSupported](arkts-camera-c
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setfocuspoint"></a>
 ## setFocusPoint
 
 ```TypeScript
@@ -1054,6 +1088,7 @@ The coordinate system is based on the horizontal device direction with the devic
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setmeteringpoint"></a>
 ## setMeteringPoint
 
 ```TypeScript
@@ -1086,6 +1121,7 @@ The coordinate system is based on the horizontal device direction with the devic
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setvideostabilizationmode"></a>
 ## setVideoStabilizationMode
 
 ```TypeScript
@@ -1116,6 +1152,7 @@ Sets a video stabilization mode. Before the setting, call [isVideoStabilizationM
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setzoomratio"></a>
 ## setZoomRatio
 
 ```TypeScript
@@ -1146,6 +1183,7 @@ Sets a zoom ratio, with a maximum precision of two decimal places.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -1158,7 +1196,7 @@ Starts this session. This API uses an asynchronous callback to return the result
 
 **Deprecated since:** 11
 
-**Substitutes:** start(callback:
+**Substitutes:** [start(callback:](arkts-camera-camera-session-i.md#start-1)
 
 <!--Device-CaptureSession-start(callback: AsyncCallback<void>): void--><!--Device-CaptureSession-start(callback: AsyncCallback<void>): void-End-->
 
@@ -1168,7 +1206,7 @@ Starts this session. This API uses an asynchronous callback to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the session starts successfully,**err** is **undefined**; otherwise, **err** is an error object with an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the session starts successfully,**err** is **undefined**; otherwise, **err** is an error object with an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
 
@@ -1177,6 +1215,7 @@ Starts this session. This API uses an asynchronous callback to return the result
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -1189,7 +1228,7 @@ Starts this session. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [start()](arkts-camera-camera-session-i.md#start-2)
+**Substitutes:** [start()](arkts-camera-camera-session-i.md#start-1)
 
 <!--Device-CaptureSession-start(): Promise<void>--><!--Device-CaptureSession-start(): Promise<void>-End-->
 
@@ -1199,7 +1238,7 @@ Starts this session. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1208,6 +1247,7 @@ Starts this session. This API uses a promise to return the result.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -1220,7 +1260,7 @@ Stops this session. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** stop(callback:
+**Substitutes:** [stop(callback:](arkts-camera-camera-session-i.md#stop-1)
 
 <!--Device-CaptureSession-stop(callback: AsyncCallback<void>): void--><!--Device-CaptureSession-stop(callback: AsyncCallback<void>): void-End-->
 
@@ -1230,7 +1270,7 @@ Stops this session. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the session stops successfully,**err** is **undefined**; otherwise, **err** is an error object with an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the session stops successfully,**err** is **undefined**; otherwise, **err** is an error object with an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
 
@@ -1238,6 +1278,7 @@ Stops this session. This API uses an asynchronous callback to return the result.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -1250,7 +1291,7 @@ Stops this session. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [stop()](arkts-camera-camera-session-i.md#stop-2)
+**Substitutes:** [stop()](arkts-camera-camera-session-i.md#stop-1)
 
 <!--Device-CaptureSession-stop(): Promise<void>--><!--Device-CaptureSession-stop(): Promise<void>-End-->
 
@@ -1260,7 +1301,7 @@ Stops this session. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

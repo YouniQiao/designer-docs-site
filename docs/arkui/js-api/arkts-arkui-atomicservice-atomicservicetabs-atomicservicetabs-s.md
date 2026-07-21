@@ -4,6 +4,8 @@ Defines AtomicServiceTabs.
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct AtomicServiceTabs--><!--Device-unnamed-export declare struct AtomicServiceTabs-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -120,7 +122,7 @@ onChange?: Callback<number>
 
 onChange callback of tabs when tabs changed.
 
-**Type:** Callback<number>
+**Type:** Callback&lt;number&gt;
 
 **Since:** 12
 
@@ -156,7 +158,7 @@ onTabBarClick?: Callback<number>
 
 onTabBarClick callback of tabs when tabbar is clicked.
 
-**Type:** Callback<number>
+**Type:** Callback&lt;number&gt;
 
 **Since:** 12
 
@@ -180,13 +182,7 @@ tabBarOptionsArray: [
 
 The tabBar array of tabs.
 
-**Type:** [
-    TabBarOptions,
-    TabBarOptions,
-    TabBarOptions?,
-    TabBarOptions?,
-    TabBarOptions?
-  ]
+**Type:** [     TabBarOptions,     TabBarOptions,     TabBarOptions?,     TabBarOptions?,     TabBarOptions?   ]
 
 **Since:** 12
 
@@ -244,13 +240,7 @@ tabContents?: [
 
 The TabContent array of tabs.
 
-**Type:** [ 
-    TabContentBuilder?,
-    TabContentBuilder?,
-    TabContentBuilder?,
-    TabContentBuilder?,
-    TabContentBuilder?
-  ]
+**Type:** [      TabContentBuilder?,     TabContentBuilder?,     TabContentBuilder?,     TabContentBuilder?,     TabContentBuilder?   ]
 
 **Since:** 12
 

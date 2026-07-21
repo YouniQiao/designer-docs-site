@@ -6,6 +6,7 @@
 import { ranging } from '@kit.ConnectivityKit';
 ```
 
+<a id="onrangingstatechange"></a>
 ## onRangingStateChange
 
 ```TypeScript
@@ -30,7 +31,7 @@ Notifies state changes for both active ranging and passive ranging operations.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RangingStateChangeInfo> | Yes | Callback used to listen for the ranging state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RangingStateChangeInfo&gt; | Yes | Callback used to listen for the ranging state. |
 
 **Error codes:**
 

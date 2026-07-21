@@ -14,6 +14,7 @@ The FastBuffer object is a method of handling buffers dedicated to binary data.
 import { fastbuffer } from '@kit.ArkTS';
 ```
 
+<a id="compare"></a>
 ## compare
 
 ```TypeScript
@@ -34,7 +35,7 @@ Compares buf with target and returns a number indicating whether buf comes befor
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| target | FastBuffer \| Uint8Array | Yes | The buffer to compare with this buffer |
+| target | [FastBuffer](arkts-arkts-fastbuffer-fastbuffer-c.md) \| Uint8Array | Yes | The buffer to compare with this buffer |
 | targetStart | number | No | targetStart [targetStart = 0] The offset within target at which to begin comparison |
 | targetEnd | number | No | targetEnd [targetEnd = target.length] The offset within target at which to end comparison (not inclusive) |
 | sourceStart | number | No | sourceStart [sourceStart = 0] The offset within buf at which to begin comparison |
@@ -44,7 +45,7 @@ Compares buf with target and returns a number indicating whether buf comes befor
 
 | Type | Description |
 | --- | --- |
-| -1 | 0 is returned if target is the same as buf1 is returned if target should come before buf when sorted.  -1 is returned if target should come after buf when sorted. |
+| -1 | 0 is returned if target is the same as buf1 is returned if target should come before buf when sorted.   -1 is returned if target should come after buf when sorted. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ console.info(buf1.compare(buf2, 5, 6, 5).toString());
 
 ```
 
+<a id="copy"></a>
 ## copy
 
 ```TypeScript
@@ -90,7 +92,7 @@ Copies data from a region of buf to a region in target, even if the target memor
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| target | FastBuffer \| Uint8Array | Yes | The buffer to copy data into |
+| target | [FastBuffer](arkts-arkts-fastbuffer-fastbuffer-c.md) \| Uint8Array | Yes | The buffer to copy data into |
 | targetStart | number | No | targetStart [targetStart = 0] The offset within target at which to begin writing |
 | sourceStart | number | No | sourceStart [sourceStart = 0] The offset within buf from which to begin copying |
 | sourceEnd | number | No | sourceEnd [sourceEnd = buf.length] The offset within buf at which to stop copying (not inclusive) |
@@ -126,6 +128,7 @@ console.info(buf2.toString('ascii', 0, 25));
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -155,7 +158,7 @@ Creates and returns an iterator of [index, byte] pairs from the contents of buf.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[             number,             number         ]> | @syscap SystemCapability.Utils.Lang@crossplatform@atomicservice |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[             number,             number         ]&gt; | @syscap SystemCapability.Utils.Lang@crossplatform@atomicservice |
 
 **Example**
 
@@ -180,6 +183,7 @@ while (!next.done) {
 
 ```
 
+<a id="equals"></a>
 ## equals
 
 ```TypeScript
@@ -230,6 +234,7 @@ console.info(buf1.equals(buf3).toString());
 
 ```
 
+<a id="fill"></a>
 ## fill
 
 ```TypeScript
@@ -279,6 +284,7 @@ console.info(b.toString());
 
 ```
 
+<a id="includes"></a>
 ## includes
 
 ```TypeScript
@@ -322,6 +328,7 @@ console.info(buf.includes('be').toString());
 
 ```
 
+<a id="indexof"></a>
 ## indexOf
 
 ```TypeScript
@@ -365,6 +372,7 @@ console.info(buf.indexOf('is').toString());
 
 ```
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -385,7 +393,7 @@ Creates and returns an iterator of buf keys (indices).
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> | @syscap SystemCapability.Utils.Lang@crossplatform@atomicservice |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;number&gt; | @syscap SystemCapability.Utils.Lang@crossplatform@atomicservice |
 
 **Example**
 
@@ -408,6 +416,7 @@ Output: 0
 
 ```
 
+<a id="lastindexof"></a>
 ## lastIndexOf
 
 ```TypeScript
@@ -451,6 +460,7 @@ console.info(buf.lastIndexOf('buffer').toString());
 
 ```
 
+<a id="readbigint64be"></a>
 ## readBigInt64BE
 
 ```TypeScript
@@ -471,7 +481,7 @@ Reads a signed, big-endian 64-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -483,7 +493,7 @@ Reads a signed, big-endian 64-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 8. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 8. Received value is: [offset] |
 
 **Example**
 
@@ -497,6 +507,7 @@ console.info(buf.readBigInt64BE(0).toString());
 
 ```
 
+<a id="readbigint64le"></a>
 ## readBigInt64LE
 
 ```TypeScript
@@ -517,7 +528,7 @@ Reads a signed, little-endian 64-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -529,7 +540,7 @@ Reads a signed, little-endian 64-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 8. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 8. Received value is: [offset] |
 
 **Example**
 
@@ -543,6 +554,7 @@ console.info(buf.readBigInt64LE(0).toString());
 
 ```
 
+<a id="readbiguint64be"></a>
 ## readBigUInt64BE
 
 ```TypeScript
@@ -563,7 +575,7 @@ Reads a unsigned, big-endian 64-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -575,7 +587,7 @@ Reads a unsigned, big-endian 64-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 8. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 8. Received value is: [offset] |
 
 **Example**
 
@@ -589,6 +601,7 @@ console.info(buf.readBigUInt64BE(0).toString());
 
 ```
 
+<a id="readbiguint64le"></a>
 ## readBigUInt64LE
 
 ```TypeScript
@@ -609,7 +622,7 @@ Reads a unsigned, little-endian 64-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -621,7 +634,7 @@ Reads a unsigned, little-endian 64-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 8. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 8. Received value is: [offset] |
 
 **Example**
 
@@ -635,6 +648,7 @@ console.info(buf.readBigUInt64LE(0).toString());
 
 ```
 
+<a id="readdoublebe"></a>
 ## readDoubleBE
 
 ```TypeScript
@@ -655,7 +669,7 @@ Reads a 64-bit, big-endian double from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -667,7 +681,7 @@ Reads a 64-bit, big-endian double from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 8. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 8. Received value is: [offset] |
 
 **Example**
 
@@ -680,6 +694,7 @@ console.info(buf.readDoubleBE(0).toString());
 
 ```
 
+<a id="readdoublele"></a>
 ## readDoubleLE
 
 ```TypeScript
@@ -700,7 +715,7 @@ Reads a 64-bit, little-endian double from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -712,7 +727,7 @@ Reads a 64-bit, little-endian double from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 8. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 8. Received value is: [offset] |
 
 **Example**
 
@@ -725,6 +740,7 @@ console.info(buf.readDoubleLE(0).toString());
 
 ```
 
+<a id="readfloatbe"></a>
 ## readFloatBE
 
 ```TypeScript
@@ -745,7 +761,7 @@ Reads a 32-bit, big-endian float from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -757,7 +773,7 @@ Reads a 32-bit, big-endian float from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 4. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 4. Received value is: [offset] |
 
 **Example**
 
@@ -770,6 +786,7 @@ console.info(buf.readFloatBE(0).toString());
 
 ```
 
+<a id="readfloatle"></a>
 ## readFloatLE
 
 ```TypeScript
@@ -790,7 +807,7 @@ Reads a 32-bit, little-endian float from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -802,7 +819,7 @@ Reads a 32-bit, little-endian float from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 4. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 4. Received value is: [offset] |
 
 **Example**
 
@@ -815,6 +832,7 @@ console.info(buf.readFloatLE(0).toString());
 
 ```
 
+<a id="readint16be"></a>
 ## readInt16BE
 
 ```TypeScript
@@ -835,7 +853,7 @@ Reads a signed, big-endian 16-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 2 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 2 |
 
 **Return value:**
 
@@ -847,7 +865,7 @@ Reads a signed, big-endian 16-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 2. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 2. Received value is: [offset] |
 
 **Example**
 
@@ -860,6 +878,7 @@ console.info(buf.readInt16BE(0).toString());
 
 ```
 
+<a id="readint16le"></a>
 ## readInt16LE
 
 ```TypeScript
@@ -880,7 +899,7 @@ Reads a signed, little-endian 16-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 2 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 2 |
 
 **Return value:**
 
@@ -892,7 +911,7 @@ Reads a signed, little-endian 16-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 2. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 2. Received value is: [offset] |
 
 **Example**
 
@@ -905,6 +924,7 @@ console.info(buf.readInt16LE(0).toString());
 
 ```
 
+<a id="readint32be"></a>
 ## readInt32BE
 
 ```TypeScript
@@ -925,7 +945,7 @@ Reads a signed, big-endian 32-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -937,7 +957,7 @@ Reads a signed, big-endian 32-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 4. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 4. Received value is: [offset] |
 
 **Example**
 
@@ -950,6 +970,7 @@ console.info(buf.readInt32BE(0).toString());
 
 ```
 
+<a id="readint32le"></a>
 ## readInt32LE
 
 ```TypeScript
@@ -970,7 +991,7 @@ Reads a signed, little-endian 32-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -982,7 +1003,7 @@ Reads a signed, little-endian 32-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 4. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 4. Received value is: [offset] |
 
 **Example**
 
@@ -995,6 +1016,7 @@ console.info(buf.readInt32LE(0).toString());
 
 ```
 
+<a id="readint8"></a>
 ## readInt8
 
 ```TypeScript
@@ -1015,7 +1037,7 @@ Reads a signed 8-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - 1 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - 1 |
 
 **Return value:**
 
@@ -1027,7 +1049,7 @@ Reads a signed 8-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 1. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 1. Received value is: [offset] |
 
 **Example**
 
@@ -1042,6 +1064,7 @@ console.info(buf.readInt8(1).toString());
 
 ```
 
+<a id="readintbe"></a>
 ## readIntBE
 
 ```TypeScript
@@ -1062,20 +1085,20 @@ Reads byteLength number of bytes from buf at the specified offset and interprets
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | Yes | Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - byteLength |
-| byteLength | number | Yes | Number of bytes to read. Must satisfy 0 &lt; byteLength &lt;= 6 |
+| offset | number | Yes | Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - byteLength |
+| byteLength | number | Yes | Number of bytes to read. Must satisfy 0 < byteLength <= 6 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | @throws { BusinessError } 10200001 - The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| number | @throws { BusinessError } 10200001 - The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -1089,6 +1112,7 @@ console.info(num.toString());
 
 ```
 
+<a id="readintle"></a>
 ## readIntLE
 
 ```TypeScript
@@ -1109,20 +1133,20 @@ Reads byteLength number of bytes from buf at the specified offset and interprets
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | Yes | Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - byteLength |
-| byteLength | number | Yes | Number of bytes to read. Must satisfy 0 &lt; byteLength &lt;= 6 |
+| offset | number | Yes | Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - byteLength |
+| byteLength | number | Yes | Number of bytes to read. Must satisfy 0 < byteLength <= 6 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | @throws { BusinessError } 10200001 - The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| number | @throws { BusinessError } 10200001 - The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -1135,6 +1159,7 @@ console.info(buf.readIntLE(0, 6).toString(16));
 
 ```
 
+<a id="readuint16be"></a>
 ## readUInt16BE
 
 ```TypeScript
@@ -1155,7 +1180,7 @@ Reads an unsigned, big-endian 16-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 &lt;= offset &lt;= buf.length - 2 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 <= offset <= buf.length - 2 |
 
 **Return value:**
 
@@ -1167,7 +1192,7 @@ Reads an unsigned, big-endian 16-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 2. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 2. Received value is: [offset] |
 
 **Example**
 
@@ -1182,6 +1207,7 @@ console.info(buf.readUInt16BE(1).toString(16));
 
 ```
 
+<a id="readuint16le"></a>
 ## readUInt16LE
 
 ```TypeScript
@@ -1202,7 +1228,7 @@ Reads an unsigned, little-endian 16-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 &lt;= offset &lt;= buf.length - 2 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 <= offset <= buf.length - 2 |
 
 **Return value:**
 
@@ -1214,7 +1240,7 @@ Reads an unsigned, little-endian 16-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 2. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 2. Received value is: [offset] |
 
 **Example**
 
@@ -1229,6 +1255,7 @@ console.info(buf.readUInt16LE(1).toString(16));
 
 ```
 
+<a id="readuint32be"></a>
 ## readUInt32BE
 
 ```TypeScript
@@ -1249,7 +1276,7 @@ Reads an unsigned, big-endian 32-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -1261,7 +1288,7 @@ Reads an unsigned, big-endian 32-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 4. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 4. Received value is: [offset] |
 
 **Example**
 
@@ -1274,6 +1301,7 @@ console.info(buf.readUInt32BE(0).toString(16));
 
 ```
 
+<a id="readuint32le"></a>
 ## readUInt32LE
 
 ```TypeScript
@@ -1294,7 +1322,7 @@ Reads an unsigned, little-endian 32-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -1306,7 +1334,7 @@ Reads an unsigned, little-endian 32-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 4. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 4. Received value is: [offset] |
 
 **Example**
 
@@ -1319,6 +1347,7 @@ console.info(buf.readUInt32LE(0).toString(16));
 
 ```
 
+<a id="readuint8"></a>
 ## readUInt8
 
 ```TypeScript
@@ -1339,7 +1368,7 @@ Reads an unsigned 8-bit integer from buf at the specified offset
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 &lt;= offset &lt;= buf.length - 1 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to read. Must satisfy 0 <= offset <= buf.length - 1 |
 
 **Return value:**
 
@@ -1351,7 +1380,7 @@ Reads an unsigned 8-bit integer from buf at the specified offset
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 1. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 1. Received value is: [offset] |
 
 **Example**
 
@@ -1366,6 +1395,7 @@ console.info(buf.readUInt8(1).toString());
 
 ```
 
+<a id="readuintbe"></a>
 ## readUIntBE
 
 ```TypeScript
@@ -1386,20 +1416,20 @@ Reads byteLength number of bytes from buf at the specified offset and interprets
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | Yes | Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - byteLength |
-| byteLength | number | Yes | Number of bytes to read. Must satisfy 0 &lt; byteLength &lt;= 6 |
+| offset | number | Yes | Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - byteLength |
+| byteLength | number | Yes | Number of bytes to read. Must satisfy 0 < byteLength <= 6 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | @throws { BusinessError } 10200001 - The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| number | @throws { BusinessError } 10200001 - The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -1412,6 +1442,7 @@ console.info(buf.readUIntBE(0, 6).toString(16));
 
 ```
 
+<a id="readuintle"></a>
 ## readUIntLE
 
 ```TypeScript
@@ -1432,20 +1463,20 @@ Reads byteLength number of bytes from buf at the specified offset and interprets
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| offset | number | Yes | Number of bytes to skip before starting to read. Must satisfy: 0 &lt;= offset &lt;= buf.length - byteLength |
-| byteLength | number | Yes | Number of bytes to read. Must satisfy 0 &lt; byteLength &lt;= 6 |
+| offset | number | Yes | Number of bytes to skip before starting to read. Must satisfy: 0 <= offset <= buf.length - byteLength |
+| byteLength | number | Yes | Number of bytes to read. Must satisfy 0 < byteLength <= 6 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | @throws { BusinessError } 10200001 - The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| number | @throws { BusinessError } 10200001 - The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -1458,6 +1489,7 @@ console.info(buf.readUIntLE(0, 6).toString(16));
 
 ```
 
+<a id="subarray"></a>
 ## subarray
 
 ```TypeScript
@@ -1503,6 +1535,7 @@ console.info(buf2.toString('ascii', 0, buf2.length));
 
 ```
 
+<a id="swap16"></a>
 ## swap16
 
 ```TypeScript
@@ -1545,6 +1578,7 @@ console.info(buf1.toString('hex'));
 
 ```
 
+<a id="swap32"></a>
 ## swap32
 
 ```TypeScript
@@ -1587,6 +1621,7 @@ console.info(buf1.toString('hex'));
 
 ```
 
+<a id="swap64"></a>
 ## swap64
 
 ```TypeScript
@@ -1629,6 +1664,7 @@ console.info(buf1.toString('hex'));
 
 ```
 
+<a id="tojson"></a>
 ## toJSON
 
 ```TypeScript
@@ -1649,7 +1685,7 @@ Returns a JSON representation of buf
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Returns a JSON |
+| Object | Returns a JSON |
 
 **Example**
 
@@ -1663,6 +1699,7 @@ console.info(JSON.stringify(obj));
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -1713,6 +1750,7 @@ console.info(buf1.toString('utf-8'));
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -1733,7 +1771,7 @@ Creates and returns an iterator for buf values (bytes).
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> | @syscap SystemCapability.Utils.Lang@crossplatform@atomicservice |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;number&gt; | @syscap SystemCapability.Utils.Lang@crossplatform@atomicservice |
 
 **Example**
 
@@ -1758,6 +1796,7 @@ while (!next.done) {
 
 ```
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -1813,6 +1852,7 @@ console.info("length = " + length);
 
 ```
 
+<a id="writebigint64be"></a>
 ## writeBigInt64BE
 
 ```TypeScript
@@ -1834,7 +1874,7 @@ Writes value to buf at the specified offset as big-endian.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | bigint | Yes | The 64-bit big-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -1846,7 +1886,7 @@ Writes value to buf at the specified offset as big-endian.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -1860,6 +1900,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writebigint64le"></a>
 ## writeBigInt64LE
 
 ```TypeScript
@@ -1881,7 +1922,7 @@ Writes value to buf at the specified offset as little-endian.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | bigint | Yes | The 64-bit little-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -1893,7 +1934,7 @@ Writes value to buf at the specified offset as little-endian.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -1907,6 +1948,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writebiguint64be"></a>
 ## writeBigUInt64BE
 
 ```TypeScript
@@ -1928,7 +1970,7 @@ Writes value to buf at the specified offset as big-endian.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | bigint | Yes | The unsigned 64-bit big-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -1940,7 +1982,7 @@ Writes value to buf at the specified offset as big-endian.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -1954,6 +1996,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writebiguint64le"></a>
 ## writeBigUInt64LE
 
 ```TypeScript
@@ -1975,7 +2018,7 @@ Writes value to buf at the specified offset as little-endian.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | bigint | Yes | The unsigned 64-bit little-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -1987,7 +2030,7 @@ Writes value to buf at the specified offset as little-endian.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2001,6 +2044,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writedoublebe"></a>
 ## writeDoubleBE
 
 ```TypeScript
@@ -2022,7 +2066,7 @@ Writes value to buf at the specified offset as big-endian.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The 64-bit big-endian double value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -2034,7 +2078,7 @@ Writes value to buf at the specified offset as big-endian.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 8. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 8. Received value is: [offset] |
 
 **Example**
 
@@ -2048,6 +2092,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writedoublele"></a>
 ## writeDoubleLE
 
 ```TypeScript
@@ -2069,7 +2114,7 @@ Writes value to buf at the specified offset as little-endian.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The 64-bit little-endian double value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 8 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 8 |
 
 **Return value:**
 
@@ -2081,7 +2126,7 @@ Writes value to buf at the specified offset as little-endian.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 8. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 8. Received value is: [offset] |
 
 **Example**
 
@@ -2095,6 +2140,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writefloatbe"></a>
 ## writeFloatBE
 
 ```TypeScript
@@ -2116,7 +2162,7 @@ Writes value to buf at the specified offset as big-endian.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The 32-bit big-endian float value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -2128,7 +2174,7 @@ Writes value to buf at the specified offset as big-endian.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 4. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 4. Received value is: [offset] |
 
 **Example**
 
@@ -2142,6 +2188,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writefloatle"></a>
 ## writeFloatLE
 
 ```TypeScript
@@ -2163,7 +2210,7 @@ Writes value to buf at the specified offset as little-endian.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The 32-bit little-endian float value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -2175,7 +2222,7 @@ Writes value to buf at the specified offset as little-endian.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be &gt;= 0 and &lt;= buf.length - 4. Received value is: [offset] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "offset" is out of range. It must be >= 0 and <= buf.length - 4. Received value is: [offset] |
 
 **Example**
 
@@ -2189,6 +2236,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeint16be"></a>
 ## writeInt16BE
 
 ```TypeScript
@@ -2210,7 +2258,7 @@ Writes value to buf at the specified offset as big-endian. The value must be a v
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The signed 16-bit big-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 2 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 2 |
 
 **Return value:**
 
@@ -2222,7 +2270,7 @@ Writes value to buf at the specified offset as big-endian. The value must be a v
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2236,6 +2284,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeint16le"></a>
 ## writeInt16LE
 
 ```TypeScript
@@ -2257,7 +2306,7 @@ Writes value to buf at the specified offset as little-endian. The value must be 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The signed 16-bit little-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 2 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 2 |
 
 **Return value:**
 
@@ -2269,7 +2318,7 @@ Writes value to buf at the specified offset as little-endian. The value must be 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2283,6 +2332,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeint32be"></a>
 ## writeInt32BE
 
 ```TypeScript
@@ -2304,7 +2354,7 @@ Writes value to buf at the specified offset as big-endian. The value must be a v
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The signed 32-bit big-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -2316,7 +2366,7 @@ Writes value to buf at the specified offset as big-endian. The value must be a v
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2330,6 +2380,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeint32le"></a>
 ## writeInt32LE
 
 ```TypeScript
@@ -2351,7 +2402,7 @@ Writes value to buf at the specified offset as little-endian. The value must be 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The signed 32-bit little-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -2363,7 +2414,7 @@ Writes value to buf at the specified offset as little-endian. The value must be 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2377,6 +2428,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeint8"></a>
 ## writeInt8
 
 ```TypeScript
@@ -2398,7 +2450,7 @@ Writes value to buf at the specified offset. value must be a valid signed 8-bit 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The signed 8-bit integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - 1 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - 1 |
 
 **Return value:**
 
@@ -2410,7 +2462,7 @@ Writes value to buf at the specified offset. value must be a valid signed 8-bit 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2427,6 +2479,7 @@ console.info("result1 = " + result1);
 
 ```
 
+<a id="writeintbe"></a>
 ## writeIntBE
 
 ```TypeScript
@@ -2448,8 +2501,8 @@ Writes byteLength bytes of value to buf at the specified offset as big-endian
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The big-endian integer value to write |
-| offset | number | Yes | Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - byteLength |
-| byteLength | number | Yes | Number of bytes to write. Must satisfy 0 &lt; byteLength &lt;= 6 |
+| offset | number | Yes | Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - byteLength |
+| byteLength | number | Yes | Number of bytes to write. Must satisfy 0 < byteLength <= 6 |
 
 **Return value:**
 
@@ -2461,7 +2514,7 @@ Writes byteLength bytes of value to buf at the specified offset as big-endian
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2475,6 +2528,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeintle"></a>
 ## writeIntLE
 
 ```TypeScript
@@ -2496,8 +2550,8 @@ Writes byteLength bytes of value to buf at the specified offset as little-endian
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The little-endian integer value to write |
-| offset | number | Yes | Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - byteLength |
-| byteLength | number | Yes | Number of bytes to write. Must satisfy 0 &lt; byteLength &lt;= 6 |
+| offset | number | Yes | Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - byteLength |
+| byteLength | number | Yes | Number of bytes to write. Must satisfy 0 < byteLength <= 6 |
 
 **Return value:**
 
@@ -2509,7 +2563,7 @@ Writes byteLength bytes of value to buf at the specified offset as little-endian
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2523,6 +2577,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeuint16be"></a>
 ## writeUInt16BE
 
 ```TypeScript
@@ -2544,7 +2599,7 @@ Writes value to buf at the specified offset as big-endian. The value must be a v
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The unsigned 16-bit big-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 &lt;= offset &lt;= buf.length - 2 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 <= offset <= buf.length - 2 |
 
 **Return value:**
 
@@ -2556,7 +2611,7 @@ Writes value to buf at the specified offset as big-endian. The value must be a v
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2573,6 +2628,7 @@ console.info("result1 = " + result1);
 
 ```
 
+<a id="writeuint16le"></a>
 ## writeUInt16LE
 
 ```TypeScript
@@ -2594,7 +2650,7 @@ Writes value to buf at the specified offset as little-endian. The value must be 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The unsigned 16-bit little-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 &lt;= offset &lt;= buf.length - 2 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 <= offset <= buf.length - 2 |
 
 **Return value:**
 
@@ -2606,7 +2662,7 @@ Writes value to buf at the specified offset as little-endian. The value must be 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2623,6 +2679,7 @@ console.info("result1 = " + result1);
 
 ```
 
+<a id="writeuint32be"></a>
 ## writeUInt32BE
 
 ```TypeScript
@@ -2644,7 +2701,7 @@ Writes value to buf at the specified offset as big-endian. The value must be a v
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The unsigned 32-bit big-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -2656,7 +2713,7 @@ Writes value to buf at the specified offset as big-endian. The value must be a v
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2670,6 +2727,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeuint32le"></a>
 ## writeUInt32LE
 
 ```TypeScript
@@ -2691,7 +2749,7 @@ Writes value to buf at the specified offset as little-endian. The value must be 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The unsigned 32-bit little-endian integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 &lt;= offset &lt;= buf.length - 4 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 <= offset <= buf.length - 4 |
 
 **Return value:**
 
@@ -2703,7 +2761,7 @@ Writes value to buf at the specified offset as little-endian. The value must be 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2717,6 +2775,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeuint8"></a>
 ## writeUInt8
 
 ```TypeScript
@@ -2738,7 +2797,7 @@ Writes value to buf at the specified offset. value must be a valid unsigned 8-bi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The unsigned 8-bit integer value to write |
-| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 &lt;= offset &lt;= buf.length - 1 |
+| offset | number | No | offset [offset = 0] Number of bytes to skip before starting to write. Must satisfy 0 <= offset <= buf.length - 1 |
 
 **Return value:**
 
@@ -2750,7 +2809,7 @@ Writes value to buf at the specified offset. value must be a valid unsigned 8-bi
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2773,6 +2832,7 @@ console.info("result3 = " + result3);
 
 ```
 
+<a id="writeuintbe"></a>
 ## writeUIntBE
 
 ```TypeScript
@@ -2794,8 +2854,8 @@ Writes byteLength bytes of value to buf at the specified offset as big-endian
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The unsigned big-endian integer value to write |
-| offset | number | Yes | Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - byteLength |
-| byteLength | number | Yes | Number of bytes to write. Must satisfy 0 &lt; byteLength &lt;= 6 |
+| offset | number | Yes | Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - byteLength |
+| byteLength | number | Yes | Number of bytes to write. Must satisfy 0 < byteLength <= 6 |
 
 **Return value:**
 
@@ -2807,7 +2867,7 @@ Writes byteLength bytes of value to buf at the specified offset as big-endian
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 
@@ -2821,6 +2881,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="writeuintle"></a>
 ## writeUIntLE
 
 ```TypeScript
@@ -2842,8 +2903,8 @@ Writes byteLength bytes of value to buf at the specified offset as little-endian
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number | Yes | The unsigned little-endian integer value to write |
-| offset | number | Yes | Number of bytes to skip before starting to write. Must satisfy: 0 &lt;= offset &lt;= buf.length - byteLength |
-| byteLength | number | Yes | Number of bytes to write. Must satisfy 0 &lt; byteLength &lt;= 6 |
+| offset | number | Yes | Number of bytes to skip before starting to write. Must satisfy: 0 <= offset <= buf.length - byteLength |
+| byteLength | number | Yes | Number of bytes to write. Must satisfy 0 < byteLength <= 6 |
 
 **Return value:**
 
@@ -2855,7 +2916,7 @@ Writes byteLength bytes of value to buf at the specified offset as little-endian
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be &gt;= [left range] and &lt;= [right range]. Received value is: [param] |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of "[param]" is out of range. It must be >= [left range] and <= [right range]. Received value is: [param] |
 
 **Example**
 

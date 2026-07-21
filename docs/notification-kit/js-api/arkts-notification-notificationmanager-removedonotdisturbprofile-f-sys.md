@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="removedonotdisturbprofile"></a>
 ## removeDoNotDisturbProfile
 
 ```TypeScript
@@ -28,13 +29,13 @@ Deletes the Do Not Disturb profile. This API uses a promise to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| templates | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DoNotDisturbProfile> | Yes | Do Not Disturb profile. |
+| templates | Array&lt;DoNotDisturbProfile&gt; | Yes | Do Not Disturb profile. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ notificationManager.removeDoNotDisturbProfile(templates).then(() => {
 ```
 
 
+<a id="removedonotdisturbprofile-1"></a>
 ## removeDoNotDisturbProfile
 
 ```TypeScript
@@ -93,14 +95,14 @@ Deletes the Do Not Disturb profile of a specified user. This API uses a promise 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| templates | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DoNotDisturbProfile> | Yes | Do Not Disturb profile. |
+| templates | Array&lt;DoNotDisturbProfile&gt; | Yes | Do Not Disturb profile. |
 | userId | number | Yes | ID of the target user. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no result. |
+| Promise&lt;void&gt; | Promise that returns no result. |
 
 **Error codes:**
 

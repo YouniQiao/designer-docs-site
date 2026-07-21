@@ -14,7 +14,7 @@ The module defines the ability information.
 readonly appIndex: number
 ```
 
-Index of an application clone. It takes effect only for [application clones](../../../../quick-start/app-clone.md).
+Index of an application clone. It takes effect only for [application clones](docroot://quick-start/app-clone.md).
 
 **Type:** number
 
@@ -30,9 +30,9 @@ Index of an application clone. It takes effect only for [application clones](../
 readonly applicationInfo: ApplicationInfo
 ```
 
-Application configuration information <!--Del-->. The information can be obtained by passing in **GET_ABILITY_INFO_WITH_APPLICATION** to the **abilityFlags** parameter of [queryAbilityInfo](arkts-ability-bundlemanager-queryabilityinfo-f-sys.md#queryabilityinfo-2)<!--DelEnd-->.
+Application configuration information <!--Del-->. The information can be obtained by passing in **GET_ABILITY_INFO_WITH_APPLICATION** to the **abilityFlags** parameter of [queryAbilityInfo](arkts-ability-bundlemanager-queryabilityinfo-f-sys.md#queryabilityinfo-1)<!--DelEnd-->.
 
-This field is not returned when the [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)or [getBundleInfo](arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-2)is used to obtain ability information. You can obtain the related information by obtaining the [bundleInfo](arkts-ability-bundleinfo-i.md).appInfo object.
+This field is not returned when the [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)or [getBundleInfo](arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-1)is used to obtain ability information. You can obtain the related information by obtaining the [bundleInfo](arkts-ability-bundleinfo-i.md).appInfo object.
 
 **Type:** ApplicationInfo
 
@@ -68,7 +68,7 @@ Bundle name.
 readonly description: string
 ```
 
-Ability description, which describes the content and functions of the current ability. It corresponds to the **description** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md)file.
+Ability description, which describes the content and functions of the current ability. It corresponds to the **description** field under **abilities** in the [module.json5](docroot://quick-start/module-configuration-file.md)file.
 
 **Type:** string
 
@@ -104,9 +104,9 @@ Resource ID of the ability description. It is automatically generated during com
 readonly deviceTypes: Array<string>
 ```
 
-Device types supported by the ability. The value is derived from that of [deviceTypes](../../../../quick-start/module-configuration-file.md#devicetypes) in the **module.json5** file.
+Device types supported by the ability. The value is derived from that of [deviceTypes](docroot://quick-start/module-configuration-file.md#devicetypes) in the **module.json5** file.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 
@@ -178,7 +178,7 @@ Whether the ability can be launched by other applications. **true** if the abili
 readonly icon: string
 ```
 
-Resource descriptor of the ability icon. It corresponds to the **icon** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md) file.
+Resource descriptor of the ability icon. It corresponds to the **icon** field under **abilities** in the [module.json5](docroot://quick-start/module-configuration-file.md) file.
 
 **Type:** string
 
@@ -214,7 +214,7 @@ Resource ID of the ability icon. It is automatically generated during compilatio
 readonly label: string
 ```
 
-Resource descriptor of the ability name visible to users. It corresponds to the **label** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md) file.
+Resource descriptor of the ability name visible to users. It corresponds to the **label** field under **abilities** in the [module.json5](docroot://quick-start/module-configuration-file.md) file.
 
 Note: Starting from API version 20, if [bundleManager.getAbilityInfo](arkts-ability-bundlemanager-getabilityinfo-f.md#getabilityinfo-1) is used to obtain ability information, this field is the ability name visible to users.
 
@@ -270,9 +270,9 @@ Ability launch mode, that is, whether it can be started in multiton mode. For de
 readonly metadata: Array<Metadata>
 ```
 
-Metadata of the ability. You can configure the system-defined parameters to use the capabilities provided by the system, for example, [shortcuts](../../../../quick-start/module-configuration-file.md#shortcuts) and [window metadata configuration](../../../../windowmanager/window-config-m.md). You can also customize the parameters and call [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)to obtain the parameters by passing **GET_BUNDLE_INFO_WITH_HAP_MODULE**, **GET_BUNDLE_INFO_WITH_ABILITY**, and **GET_BUNDLE_INFO_WITH_METADATA** to **bundleFlags**.
+Metadata of the ability. You can configure the system-defined parameters to use the capabilities provided by the system, for example, [shortcuts](docroot://quick-start/module-configuration-file.md#shortcuts) and [window metadata configuration](docroot://windowmanager/window-config-m.md). You can also customize the parameters and call [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)to obtain the parameters by passing **GET_BUNDLE_INFO_WITH_HAP_MODULE**, **GET_BUNDLE_INFO_WITH_ABILITY**, and **GET_BUNDLE_INFO_WITH_METADATA** to **bundleFlags**.
 
-**Type:** Array<Metadata>
+**Type:** Array&lt;Metadata&gt;
 
 **Since:** 9
 
@@ -324,7 +324,7 @@ Ability name.
 readonly orientation: bundleManager.DisplayOrientation
 ```
 
-Ability display orientation. It is derived from the **orientation** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md) file. If **orientation** in the file is set to an enumerated value, this property is a non-zero value. For details about the available values, see [displayOrientation](arkts-ability-bundlemanager-displayorientation-e.md). If **orientation** in the file is set to a resource index, the value of this property is **0**.
+Ability display orientation. It is derived from the **orientation** field under **abilities** in the [module.json5](docroot://quick-start/module-configuration-file.md) file. If **orientation** in the file is set to an enumerated value, this property is a non-zero value. For details about the available values, see [displayOrientation](arkts-ability-bundlemanager-displayorientation-e.md). If **orientation** in the file is set to a resource index, the value of this property is **0**.
 
 **Type:** bundleManager.DisplayOrientation
 
@@ -342,7 +342,7 @@ Ability display orientation. It is derived from the **orientation** field under 
 readonly orientationId: number
 ```
 
-Resource ID of the ability display mode. It is derived from the **orientation** field under **abilities** in the [module.json5](../../../../quick-start/module-configuration-file.md) file. If the **orientation** field in the file is set to an enumerated value, **orientationId** is **0**. If the **orientation** field is set to a resource index,**orientationId** is a non-zero value, which is the resource ID generated during building. If **orientationId** is set to a value other than **0**, the current display mode is customized, and this ID must be used to obtain the corresponding resource from the resource manager module. If **orientationId** is set to **0**, no resource is configured.
+Resource ID of the ability display mode. It is derived from the **orientation** field under **abilities** in the [module.json5](docroot://quick-start/module-configuration-file.md) file. If the **orientation** field in the file is set to an enumerated value, **orientationId** is **0**. If the **orientation** field is set to a resource index,**orientationId** is a non-zero value, which is the resource ID generated during building. If **orientationId** is set to a value other than **0**, the current display mode is customized, and this ID must be used to obtain the corresponding resource from the resource manager module. If **orientationId** is set to **0**, no resource is configured.
 
 **Type:** number
 
@@ -362,7 +362,7 @@ readonly permissions: Array<string>
 
 Array of permissions that other applications must request to start or access this ability. The system checks whether the caller has these permissions only if the **exported** property in **AbilityInfo** is **true** (meaning that the ability allows itself to be started by other applications).
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 
@@ -416,9 +416,9 @@ Permission required for reading the ability data.
 readonly skills: Array<Skill>
 ```
 
-Skills information of the ability. It represents the feature set of [wants](../../../../application-models/want-overview.md) that can be received by the UIAbility or ExtensionAbility.
+Skills information of the ability. It represents the feature set of [wants](docroot://application-models/want-overview.md) that can be received by the UIAbility or ExtensionAbility.
 
-**Type:** Array<Skill>
+**Type:** Array&lt;Skill&gt;
 
 **Since:** 12
 
@@ -436,7 +436,7 @@ readonly supportWindowModes: Array<bundleManager.SupportWindowMode>
 
 Window modes supported by the ability.
 
-**Type:** Array<bundleManager.SupportWindowMode>
+**Type:** Array&lt;bundleManager.SupportWindowMode&gt;
 
 **Since:** 9
 

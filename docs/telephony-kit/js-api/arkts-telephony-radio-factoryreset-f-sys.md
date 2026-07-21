@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="factoryreset"></a>
 ## factoryReset
 
 ```TypeScript
@@ -34,7 +35,7 @@ Reset all network settings of telephony.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the factoryReset. |
+| Promise&lt;void&gt; | The promise returned by the factoryReset. |
 
 **Error codes:**
 

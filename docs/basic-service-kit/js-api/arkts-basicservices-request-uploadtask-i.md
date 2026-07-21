@@ -1,6 +1,6 @@
 # UploadTask
 
-Implements file uploads. Before using any APIs of this class, you must obtain an **UploadTask** object, from a promise through [request.uploadFile](arkts-basicservices-request-uploadfile-f.md#uploadfile-2) or from a callback through [request.uploadFile](arkts-basicservices-request-uploadfile-f.md#uploadfile-1).
+Implements file uploads. Before using any APIs of this class, you must obtain an **UploadTask** object, from a promise through [request.uploadFile](arkts-basicservices-request-uploadfile-f.md#uploadfile-1) or from a callback through [request.uploadFile](arkts-basicservices-request-uploadfile-f.md#uploadfile-1).
 
 **Since:** 6
 
@@ -14,6 +14,7 @@ Implements file uploads. Before using any APIs of this class, you must obtain an
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -39,7 +40,7 @@ Deletes the upload task. This API uses an asynchronous callback to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ uploadTask.delete((err: BusinessError, result: boolean) => {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -85,7 +87,7 @@ Deletes the upload task. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -104,6 +106,7 @@ uploadTask.delete().then((result: boolean) => {
 
 ```
 
+<a id="off"></a>
 ## off('progress')
 
 ```TypeScript
@@ -123,7 +126,7 @@ Unsubscribes from upload progress events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'progress' | Yes | Event type.<br>- **'progress'**: upload progress. |
-| callback | (uploadedSize: number, totalSize: number) => void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
+| callback | (uploadedSize: number, totalSize: number) =&gt; void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -149,6 +152,7 @@ uploadTask.off('progress');
 
 ```
 
+<a id="off-1"></a>
 ## off('headerReceive')
 
 ```TypeScript
@@ -168,7 +172,7 @@ Unsubscribes from HTTP response events for the upload task.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'headerReceive' | Yes | Event type.<br>- **'headerReceive'**: The HTTP request receives a response. |
-| callback | (header: object) => void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
+| callback | (header: object) =&gt; void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -194,6 +198,7 @@ uploadTask.off('headerReceive');
 
 ```
 
+<a id="off-2"></a>
 ## off('complete' | 'fail')
 
 ```TypeScript
@@ -213,7 +218,7 @@ Unsubscribes from upload completion or failure events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'fail' | Yes | Event type.<br>- **'complete'**: upload task completion.<br>- **'fail'**:upload task failure. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<TaskState>> | No | Callback to unregister. If this parameter is not specified,all callbacks of the current type will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;TaskState&gt;&gt; | No | Callback to unregister. If this parameter is not specified,all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -264,6 +269,7 @@ uploadTask.off('fail');
 
 ```
 
+<a id="off-3"></a>
 ## off('complete' | 'fail')
 
 ```TypeScript
@@ -283,7 +289,7 @@ Unsubscribes from upload completion or failure events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'fail' | Yes | Event type.<br>- **'complete'**: upload task completion.<br>- **'fail'**:upload task failure. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<TaskState>> | No | Callback to unregister. If this parameter is not specified,all callbacks of the current type will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;TaskState&gt;&gt; | No | Callback to unregister. If this parameter is not specified,all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -334,6 +340,7 @@ uploadTask.off('fail');
 
 ```
 
+<a id="on"></a>
 ## on('progress')
 
 ```TypeScript
@@ -358,7 +365,7 @@ Subscribes to upload progress events. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'progress' | Yes | Event type. The value is fixed at **'progress'**, indicating upload progress. |
-| callback | (uploadedSize: number, totalSize: number) => void | Yes | Callback used to return the size of the uploaded file and the total size of the file to upload, in bytes. |
+| callback | (uploadedSize: number, totalSize: number) =&gt; void | Yes | Callback used to return the size of the uploaded file and the total size of the file to upload, in bytes. |
 
 **Error codes:**
 
@@ -376,6 +383,7 @@ uploadTask.on('progress', upProgressCallback);
 
 ```
 
+<a id="on-1"></a>
 ## on('headerReceive')
 
 ```TypeScript
@@ -395,7 +403,7 @@ Subscribes to HTTP response events for the upload task.This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'headerReceive' | Yes | Event type.<br>- **'headerReceive'**: The HTTP request receives a response. |
-| callback | (header: object) => void | Yes | Callback used to return the response content. |
+| callback | (header: object) =&gt; void | Yes | Callback used to return the response content. |
 
 **Error codes:**
 
@@ -413,6 +421,7 @@ uploadTask.on('headerReceive', headerCallback);
 
 ```
 
+<a id="on-2"></a>
 ## on('complete' | 'fail')
 
 ```TypeScript
@@ -432,7 +441,7 @@ Subscribes to upload completion or failure events. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'fail' | Yes | Type of the event to subscribe to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<TaskState>> | Yes | Callback used to return the state of the upload task. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;TaskState&gt;&gt; | Yes | Callback used to return the state of the upload task. |
 
 **Error codes:**
 
@@ -459,6 +468,7 @@ uploadTask.on('fail', upFailCallback);
 
 ```
 
+<a id="on-3"></a>
 ## on('complete' | 'fail')
 
 ```TypeScript
@@ -478,7 +488,7 @@ Subscribes to upload completion or failure events. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'fail' | Yes | Type of the event to subscribe to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<TaskState>> | Yes | Callback used to return the state of the upload task. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;TaskState&gt;&gt; | Yes | Callback used to return the state of the upload task. |
 
 **Error codes:**
 
@@ -505,6 +515,7 @@ uploadTask.on('fail', upFailCallback);
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -517,7 +528,7 @@ Deletes the upload task. This API uses an asynchronous callback to return the re
 
 **Deprecated since:** 9
 
-**Substitutes:** delete(callback:
+**Substitutes:** [delete(callback:](arkts-basicservices-request-uploadtask-i.md#delete-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -529,7 +540,7 @@ Deletes the upload task. This API uses an asynchronous callback to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -552,6 +563,7 @@ uploadTask.remove((err: BusinessError, result: boolean) => {
 
 ```
 
+<a id="remove-1"></a>
 ## remove
 
 ```TypeScript
@@ -564,7 +576,7 @@ Deletes the upload task. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [delete()](arkts-basicservices-request-uploadtask-i.md#delete-2)
+**Substitutes:** [delete()](arkts-basicservices-request-uploadtask-i.md#delete-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -576,7 +588,7 @@ Deletes the upload task. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 

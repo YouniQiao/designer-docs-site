@@ -20,6 +20,7 @@ Manager a2dp source profile.
 import { bluetooth } from '@kit.ConnectivityKit';
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -52,6 +53,7 @@ Connect to device with a2dp.
 | --- | --- |
 | boolean | Returns {@code true} if the connect is in process; returns {@code false} otherwise. |
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -84,6 +86,7 @@ Disconnect to device with a2dp.
 | --- | --- |
 | boolean | Returns {@code true} if the disconnect is in process; returns {@code false} otherwise. |
 
+<a id="getplayingstate"></a>
 ## getPlayingState
 
 ```TypeScript
@@ -114,6 +117,7 @@ Obtains the playing state of device.
 | --- | --- |
 | [PlayingState](arkts-connectivity-a2dp-playingstate-e.md) | Returns {@link PlayingState} of the remote device. |
 
+<a id="off"></a>
 ## off('connectionStateChange')
 
 ```TypeScript
@@ -137,8 +141,9 @@ Unsubscribe the event reported when the profile connection state changes .
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectionStateChange' | Yes | Type of the profile connection state changes event to listen for . |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StateChangeParam> | No | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StateChangeParam&gt; | No | Callback used to listen for event. |
 
+<a id="on"></a>
 ## on('connectionStateChange')
 
 ```TypeScript
@@ -162,5 +167,5 @@ Subscribe the event reported when the profile connection state changes .
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectionStateChange' | Yes | Type of the profile connection state changes event to listen for . |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StateChangeParam> | Yes | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StateChangeParam&gt; | Yes | Callback used to listen for event. |
 

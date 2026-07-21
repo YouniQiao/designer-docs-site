@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getbadgedisplaystatusbybundles"></a>
 ## getBadgeDisplayStatusByBundles
 
 ```TypeScript
@@ -28,13 +29,13 @@ Batch obtains the display statuses of application badges. This API uses a promis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundles | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<BundleOption> | Yes | Bundles whose badge display statuses are to be obtained. |
+| bundles | Array&lt;BundleOption&gt; | Yes | Bundles whose badge display statuses are to be obtained. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Map<BundleOption, boolean>> | Promise used to return the bundles and the badge display statuses obtained. |
+| Promise&lt;Map&lt;BundleOption, boolean&gt;&gt; | Promise used to return the bundles and the badge display statuses obtained. |
 
 **Error codes:**
 

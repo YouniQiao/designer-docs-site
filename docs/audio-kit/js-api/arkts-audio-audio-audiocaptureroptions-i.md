@@ -38,7 +38,7 @@ playbackCaptureConfig?: AudioPlaybackCaptureConfig
 
 Defines configuration for capturing played audio.
 
-This API is supported since API version 10 and deprecated since API version 12. You are advised to use [AVScreenCapture](../../../../reference/apis-media-kit/capi-avscreencapture.md) instead.
+This API is supported since API version 10 and deprecated since API version 12. You are advised to use [AVScreenCapture](docroot://reference/apis-media-kit/capi-avscreencapture.md) instead.
 
 **Type:** AudioPlaybackCaptureConfig
 

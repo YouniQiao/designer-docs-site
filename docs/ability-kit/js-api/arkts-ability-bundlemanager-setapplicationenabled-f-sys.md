@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="setapplicationenabled"></a>
 ## setApplicationEnabled
 
 ```TypeScript
@@ -36,7 +37,7 @@ Enables or disables an application or an application clone. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ try {
 ```
 
 
+<a id="setapplicationenabled-1"></a>
 ## setApplicationEnabled
 
 ```TypeScript
@@ -104,7 +106,7 @@ Sets the enabled or disabled state of a specified application or application clo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -144,6 +146,7 @@ try {
 ```
 
 
+<a id="setapplicationenabled-2"></a>
 ## setApplicationEnabled
 
 ```TypeScript
@@ -168,7 +171,7 @@ Enables or disables an application. This API uses an asynchronous callback to re
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | isEnabled | boolean | Yes | Whether to enable the application. **true** to enable, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -204,6 +207,7 @@ try {
 ```
 
 
+<a id="setapplicationenabled-3"></a>
 ## setApplicationEnabled
 
 ```TypeScript
@@ -233,7 +237,7 @@ Enables or disables an application. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

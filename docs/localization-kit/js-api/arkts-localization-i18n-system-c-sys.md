@@ -14,6 +14,7 @@ Provides system attribute configuration functions, including translating languag
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="addpreferredlanguage"></a>
 ## addPreferredLanguage
 
 ```TypeScript
@@ -66,6 +67,7 @@ try {
 
 ```
 
+<a id="getsystemcollations"></a>
 ## getSystemCollations
 
 ```TypeScript
@@ -86,7 +88,7 @@ Gets collations supported by system locale.
 
 | Type | Description |
 | --- | --- |
-| [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<string, string> | The map will containing the collation's identifier and name.If the map is empty of the collation for given locale does not need to be set. |
+| Map&lt;string, string&gt; | The map will containing the collation's identifier and name.If the map is empty of the collation for given locale does not need to be set. |
 
 **Error codes:**
 
@@ -109,6 +111,7 @@ try {
 
 ```
 
+<a id="getsystemmeasurements"></a>
 ## getSystemMeasurements
 
 ```TypeScript
@@ -129,7 +132,7 @@ Gets measurements supported by system locale.
 
 | Type | Description |
 | --- | --- |
-| [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<string, string> | a map will containing identifier and name of measurements supported by system locale. |
+| Map&lt;string, string&gt; | a map will containing identifier and name of measurements supported by system locale. |
 
 **Error codes:**
 
@@ -152,6 +155,7 @@ try {
 
 ```
 
+<a id="getsystemnumberpatterns"></a>
 ## getSystemNumberPatterns
 
 ```TypeScript
@@ -172,7 +176,7 @@ Gets commonly used number patterns for system locale.
 
 | Type | Description |
 | --- | --- |
-| [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<string, string> | a map containing the used number patterns and example of system locale. |
+| Map&lt;string, string&gt; | a map containing the used number patterns and example of system locale. |
 
 **Error codes:**
 
@@ -195,6 +199,7 @@ try {
 
 ```
 
+<a id="getsystemnumberingsystems"></a>
 ## getSystemNumberingSystems
 
 ```TypeScript
@@ -215,7 +220,7 @@ Gets numbering systems supported by system locale.
 
 | Type | Description |
 | --- | --- |
-| [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<string, string> | a map will containing the numbering system 's identifier and sample.If the map is empty, there is no local digit for given locale. |
+| Map&lt;string, string&gt; | a map will containing the numbering system 's identifier and sample.If the map is empty, there is no local digit for given locale. |
 
 **Error codes:**
 
@@ -238,6 +243,7 @@ try {
 
 ```
 
+<a id="getsystemnumericaldatepatterns"></a>
 ## getSystemNumericalDatePatterns
 
 ```TypeScript
@@ -258,7 +264,7 @@ Gets numerical date patterns and examples supported by system locale.
 
 | Type | Description |
 | --- | --- |
-| [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<string, string> | a map containing the date patterns and examples |
+| Map&lt;string, string&gt; | a map containing the date patterns and examples |
 
 **Error codes:**
 
@@ -281,6 +287,7 @@ try {
 
 ```
 
+<a id="getusingcollation"></a>
 ## getUsingCollation
 
 ```TypeScript
@@ -324,6 +331,7 @@ try {
 
 ```
 
+<a id="getusingmeasurement"></a>
 ## getUsingMeasurement
 
 ```TypeScript
@@ -367,6 +375,7 @@ try {
 
 ```
 
+<a id="getusingnumberpattern"></a>
 ## getUsingNumberPattern
 
 ```TypeScript
@@ -410,6 +419,7 @@ try {
 
 ```
 
+<a id="getusingnumberingsystem"></a>
 ## getUsingNumberingSystem
 
 ```TypeScript
@@ -438,6 +448,7 @@ Gets numbering system currently used by system locale.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="getusingnumericaldatepattern"></a>
 ## getUsingNumericalDatePattern
 
 ```TypeScript
@@ -481,6 +492,7 @@ try {
 
 ```
 
+<a id="removepreferredlanguage"></a>
 ## removePreferredLanguage
 
 ```TypeScript
@@ -531,6 +543,7 @@ try {
 
 ```
 
+<a id="set24hourclock"></a>
 ## set24HourClock
 
 ```TypeScript
@@ -580,6 +593,7 @@ try {
 
 ```
 
+<a id="setfirstdayofweek"></a>
 ## setFirstDayOfWeek
 
 ```TypeScript
@@ -627,6 +641,7 @@ try {
 
 ```
 
+<a id="setsystemcollation"></a>
 ## setSystemCollation
 
 ```TypeScript
@@ -674,6 +689,7 @@ try {
 
 ```
 
+<a id="setsystemlanguage"></a>
 ## setSystemLanguage
 
 ```TypeScript
@@ -723,6 +739,7 @@ try {
 
 ```
 
+<a id="setsystemlocale"></a>
 ## setSystemLocale
 
 ```TypeScript
@@ -772,6 +789,7 @@ try {
 
 ```
 
+<a id="setsystemmeasurement"></a>
 ## setSystemMeasurement
 
 ```TypeScript
@@ -819,6 +837,7 @@ try {
 
 ```
 
+<a id="setsystemnumberpattern"></a>
 ## setSystemNumberPattern
 
 ```TypeScript
@@ -866,6 +885,7 @@ try {
 
 ```
 
+<a id="setsystemnumberingsystem"></a>
 ## setSystemNumberingSystem
 
 ```TypeScript
@@ -913,6 +933,7 @@ try {
 
 ```
 
+<a id="setsystemnumericaldatepattern"></a>
 ## setSystemNumericalDatePattern
 
 ```TypeScript
@@ -960,6 +981,7 @@ try {
 
 ```
 
+<a id="setsystemregion"></a>
 ## setSystemRegion
 
 ```TypeScript
@@ -1008,6 +1030,7 @@ try {
 
 ```
 
+<a id="settemperaturetype"></a>
 ## setTemperatureType
 
 ```TypeScript
@@ -1055,6 +1078,7 @@ try {
 
 ```
 
+<a id="setusinglocaldigit"></a>
 ## setUsingLocalDigit
 
 ```TypeScript

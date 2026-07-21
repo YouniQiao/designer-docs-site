@@ -6,6 +6,7 @@
 import { deviceInfo } from '@kit.MDMKit';
 ```
 
+<a id="getdeviceserial"></a>
 ## getDeviceSerial
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the device serial number. This API uses an asynchronous callback to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is the device serial number obtained. If the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is the device serial number obtained. If the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ deviceInfo.getDeviceSerial(wantTemp, (err, result) => {
 ```
 
 
+<a id="getdeviceserial-1"></a>
 ## getDeviceSerial
 
 ```TypeScript
@@ -104,7 +106,7 @@ Obtains the device serial number. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the device serial number. |
+| Promise&lt;string&gt; | Promise used to return the device serial number. |
 
 **Error codes:**
 

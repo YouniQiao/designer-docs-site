@@ -6,6 +6,7 @@
 import { serial } from '@kit.BasicServicesKit';
 ```
 
+<a id="addportauthorization"></a>
 ## addPortAuthorization
 
 ```TypeScript
@@ -35,7 +36,7 @@ Adds the permission for applications to access the serial port.This API is open 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 

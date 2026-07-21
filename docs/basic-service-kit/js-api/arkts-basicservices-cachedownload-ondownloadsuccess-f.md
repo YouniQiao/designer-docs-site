@@ -6,6 +6,7 @@
 import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
+<a id="ondownloadsuccess"></a>
 ## onDownloadSuccess
 
 ```TypeScript
@@ -25,7 +26,7 @@ Subscribes to the pre-download completion events. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | Callback URL to be registered, with a maximum of 8,192 bytes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 

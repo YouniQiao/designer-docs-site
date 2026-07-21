@@ -14,6 +14,7 @@ AVScreenCaptureRecorder is a class for screen capture management. It provides AP
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="addwatermark"></a>
 ## addWatermark
 
 ```TypeScript
@@ -41,7 +42,7 @@ add a watermark for the AVScreenCaptureRecorder. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise that returns the watermark id. |
+| Promise&lt;number&gt; | Promise that returns the watermark id. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ add a watermark for the AVScreenCaptureRecorder. This API uses a promise to retu
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The parameter check failed, parameter value out of range. |
 
+<a id="excludepickerwindows"></a>
 ## excludePickerWindows
 
 ```TypeScript
@@ -70,13 +72,13 @@ Sets the list of windows to be hidden in the picker. The setting takes effect th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| excludedWindows | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | List of windows to be hidden in the picker. For details about how to obtain window properties, see [getWindowProperties](../../../../reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
+| excludedWindows | Array&lt;number&gt; | Yes | List of windows to be hidden in the picker. For details about how to obtain window properties, see [getWindowProperties](docroot://reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -86,6 +88,7 @@ Sets the list of windows to be hidden in the picker. The setting takes effect th
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -110,7 +113,7 @@ Initializes screen capture and sets screen capture parameters. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -120,6 +123,7 @@ Initializes screen capture and sets screen capture parameters. This API uses a p
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="off"></a>
 ## off('stateChange')
 
 ```TypeScript
@@ -139,8 +143,9 @@ Unsubscribes from screen capture state changes. You can specify a callback to ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stateChange' | Yes | Event type, which is **'stateChange'** in this case. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVScreenCaptureStateCode> | No | Callback used for unsubscription.[AVScreenCaptureStateCode](arkts-media-media-avscreencapturestatecode-e.md) indicates the new state. If this parameter is not specified, the last subscription is canceled. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVScreenCaptureStateCode&gt; | No | Callback used for unsubscription.[AVScreenCaptureStateCode](arkts-media-media-avscreencapturestatecode-e.md) indicates the new state. If this parameter is not specified, the last subscription is canceled. |
 
+<a id="off-1"></a>
 ## off('error')
 
 ```TypeScript
@@ -162,6 +167,7 @@ Unsubscribes from AVScreenCaptureRecorder errors. You can specify a callback to 
 | type | 'error' | Yes | Event type, which is **'error'** in this case. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used for unsubscription. If this parameter is not specified, the last subscription is canceled. |
 
+<a id="on"></a>
 ## on('stateChange')
 
 ```TypeScript
@@ -181,8 +187,9 @@ Subscribes to screen capture state changes. An application can subscribe to only
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stateChange' | Yes | Event type, which is **'stateChange'** in this case. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVScreenCaptureStateCode> | Yes | Callback invoked when the event is triggered.[AVScreenCaptureStateCode](arkts-media-media-avscreencapturestatecode-e.md) indicates the new state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVScreenCaptureStateCode&gt; | Yes | Callback invoked when the event is triggered.[AVScreenCaptureStateCode](arkts-media-media-avscreencapturestatecode-e.md) indicates the new state. |
 
+<a id="on-1"></a>
 ## on('error')
 
 ```TypeScript
@@ -212,6 +219,7 @@ Subscribes to AVScreenCaptureRecorder errors. You can handle the errors based on
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by ErrorCallback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by ErrorCallback. |
 
+<a id="pauserecording"></a>
 ## pauseRecording
 
 ```TypeScript
@@ -232,7 +240,7 @@ Pause screen capture. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -242,6 +250,7 @@ Pause screen capture. This API uses a promise to return the result.
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="presentpicker"></a>
 ## presentPicker
 
 ```TypeScript
@@ -267,7 +276,7 @@ Displays the Picker once more after the screen capture starts, allowing for dyna
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -277,6 +286,7 @@ Displays the Picker once more after the screen capture starts, allowing for dyna
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -295,7 +305,7 @@ Releases this AVScreenCaptureRecorder instance. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -304,6 +314,7 @@ Releases this AVScreenCaptureRecorder instance. This API uses a promise to retur
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="resumerecording"></a>
 ## resumeRecording
 
 ```TypeScript
@@ -324,7 +335,7 @@ Resume screen capture. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -334,6 +345,7 @@ Resume screen capture. This API uses a promise to return the result.
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="setcontentautorotation"></a>
 ## setContentAutoRotation
 
 ```TypeScript
@@ -360,7 +372,7 @@ Sets whether the captured screen content automatically rotates to keep the image
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -370,6 +382,7 @@ Sets whether the captured screen content automatically rotates to keep the image
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="setmicenabled"></a>
 ## setMicEnabled
 
 ```TypeScript
@@ -394,7 +407,7 @@ Enables or disables the microphone. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -403,6 +416,7 @@ Enables or disables the microphone. This API uses a promise to return the result
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="setpickermode"></a>
 ## setPickerMode
 
 ```TypeScript
@@ -427,7 +441,7 @@ Sets the display mode of the picker. The setting takes effect the next time the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -437,6 +451,7 @@ Sets the display mode of the picker. The setting takes effect the next time the 
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="skipprivacymode"></a>
 ## skipPrivacyMode
 
 ```TypeScript
@@ -457,13 +472,13 @@ For example, if a user enters a password in this application during screen captu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowIDs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | IDs of windows that require privacy exemption, including the main window IDs and subwindow IDs. For details about how to obtain window properties, see [getWindowProperties](../../../../reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
+| windowIDs | Array&lt;number&gt; | Yes | IDs of windows that require privacy exemption, including the main window IDs and subwindow IDs. For details about how to obtain window properties, see [getWindowProperties](docroot://reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -472,6 +487,7 @@ For example, if a user enters a password in this application during screen captu
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="startrecording"></a>
 ## startRecording
 
 ```TypeScript
@@ -490,7 +506,7 @@ Starts screen recording. Before using this API, you must call [init](arkts-media
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -499,6 +515,7 @@ Starts screen recording. Before using this API, you must call [init](arkts-media
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="stoprecording"></a>
 ## stopRecording
 
 ```TypeScript
@@ -517,7 +534,7 @@ Stops screen recording. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -20,7 +20,7 @@ import { distributedKVStore } from '@kit.ArkData';
 autoSync?: boolean
 ```
 
-Whether to enable auto sync across devices. The default value is **false**, indicating that only manual sync is supported. If this parameter is set to **true**, <!--RP1-->it takes effect only in [device collaboration using cross-device calls](../../../../application-models/hop-multi-device-collaboration.md#using-cross-device-call).<!--RP1End-->
+Whether to enable auto sync across devices. The default value is **false**, indicating that only manual sync is supported. If this parameter is set to **true**, <!--RP1-->it takes effect only in [device collaboration using cross-device calls](docroot://application-models/hop-multi-device-collaboration.md#using-cross-device-call).<!--RP1End-->
 
 SystemCapability.DistributedDataManager.KVStore.Core
 

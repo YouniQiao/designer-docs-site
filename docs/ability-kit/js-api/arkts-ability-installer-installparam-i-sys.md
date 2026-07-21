@@ -60,7 +60,7 @@ hashParams?: Array<HashParam>
 
 Hash parameters. By default, no value is passed.
 
-**Type:** Array<HashParam>
+**Type:** Array&lt;HashParam&gt;
 
 **Since:** 9
 
@@ -121,7 +121,7 @@ Extended parameters, represented as an array of the Parameters type. The default
 - **ohos.bms.param.installBundleName**: The value is the bundle name of the application. It is used in application installation scenarios and supported since API version 23. If this field is passed during installation, the [getBundleInstallStatus](arkts-ability-bundlemanager-getbundleinstallstatus-f-sys.md#getbundleinstallstatus-1)API can be called to obtain the installation status of the application.  
 - **ohos.bms.param.installAllowDowngrade**: If the value is **true**, the application can be installed in downgrade mode (supported since API version 23). That is, if a higher version of the application is already installed on the device, a lower version can be installed over it. Only third-party applications with the signing certificate distribution type set to **app_gallery** or the signing certificate type set to **debug** support downgrade installation. To use downgrade installation, you must request the ohos.permission.INSTALL_BUNDLE and ohos.permission.INSTALL_ALLOW_DOWNGRADE permissions.
 
-**Type:** Array<Parameters>
+**Type:** Array&lt;Parameters&gt;
 
 **Since:** 15
 
@@ -139,7 +139,7 @@ pgoParams?: Array<PGOParam>
 
 Parameters of the Profile-guided Optimization (PGO) configuration file. The default value is null.
 
-**Type:** Array<PGOParam>
+**Type:** Array&lt;PGOParam&gt;
 
 **Since:** 11
 
@@ -157,7 +157,7 @@ sharedBundleDirPaths?: Array<string>
 
 Paths of the shared bundle files. By default, no value is passed.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 10
 
@@ -173,7 +173,7 @@ Paths of the shared bundle files. By default, no value is passed.
 specifiedDistributionType?: string
 ```
 
-[Distribution type](../../../../security/app-provision-structure.md) specified during application installation. By default, no value is passed. The maximum length is 128 bytes. This field is usually specified by the application market of the operating system operator.
+[Distribution type](docroot://security/app-provision-structure.md) specified during application installation. By default, no value is passed. The maximum length is 128 bytes. This field is usually specified by the application market of the operating system operator.
 
 **Type:** string
 
@@ -215,7 +215,7 @@ Information about the code signature file. The default value is null.
 
 Starting from API version 10, the code signature file of an application is integrated into the installation package, rather than being specified by using this field. This field is deprecated since API version 11.
 
-**Type:** Array<VerifyCodeParam>
+**Type:** Array&lt;VerifyCodeParam&gt;
 
 **Since:** 10
 

@@ -14,6 +14,7 @@ Manual Focus Query object.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="isfocusdistancesupported"></a>
 ## isFocusDistanceSupported
 
 ```TypeScript

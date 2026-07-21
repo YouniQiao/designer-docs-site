@@ -1,6 +1,6 @@
 # StateType
 
-Enumerates the scenarios for saving application data. You can use it in [onSaveState()](arkts-ability-app-ability-uiability-uiability-c.md#onsavestate-1)of the UIAbility to complete [UIAbility backup and restore](../../../../application-models/ability-recover-guideline.md).
+Enumerates the scenarios for saving application data. You can use it in [onSaveState()](arkts-ability-app-ability-uiability-uiability-c.md#onsavestate-1)of the UIAbility to complete [UIAbility backup and restore](docroot://application-models/ability-recover-guideline.md).
 
 **Since:** 9
 

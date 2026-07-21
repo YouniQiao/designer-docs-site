@@ -16,6 +16,7 @@ Implements audio collaborative management.
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="iscollaborativeplaybackenabledfordevice"></a>
 ## isCollaborativePlaybackEnabledForDevice
 
 ```TypeScript
@@ -82,6 +83,7 @@ try {
 
 ```
 
+<a id="iscollaborativeplaybacksupported"></a>
 ## isCollaborativePlaybackSupported
 
 ```TypeScript
@@ -126,6 +128,7 @@ try {
 
 ```
 
+<a id="iscollaborativeplaybacksupportedfordevice"></a>
 ## isCollaborativePlaybackSupportedForDevice
 
 ```TypeScript
@@ -162,6 +165,7 @@ Checks whether the collaborative playback is supported for the specified device.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
 
+<a id="setcollaborativeplaybackenabledfordevice"></a>
 ## setCollaborativePlaybackEnabledForDevice
 
 ```TypeScript
@@ -189,7 +193,7 @@ Enables or disables collaborative playback for the specified device.Currently, o
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

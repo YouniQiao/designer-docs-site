@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setringtoneinfobybundle"></a>
 ## setRingtoneInfoByBundle
 
 ```TypeScript
@@ -35,7 +36,7 @@ Sets the custom ringtone information for an application. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

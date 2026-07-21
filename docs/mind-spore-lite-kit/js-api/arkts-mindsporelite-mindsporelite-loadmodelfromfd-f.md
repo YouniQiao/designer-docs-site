@@ -6,6 +6,7 @@
 import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
 
+<a id="loadmodelfromfd"></a>
 ## loadModelFromFd
 
 ```TypeScript
@@ -39,14 +40,14 @@ Creates a Model instance file description
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Model> | the promise returned by the function. |
+| Promise&lt;Model&gt; | the promise returned by the function. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. The file descriptor (fd) is incorrect; 2. The model file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. The file descriptor (fd) is incorrect; 2. The model file is damaged.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -71,6 +72,7 @@ mindSporeLite.loadModelFromFd(file.fd).then((mindSporeLiteModel: mindSporeLite.M
 ```
 
 
+<a id="loadmodelfromfd-1"></a>
 ## loadModelFromFd
 
 ```TypeScript
@@ -95,14 +97,14 @@ Create a Model instance from file description
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | model | number | Yes | model indicates model file description to be loaded |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Model> | Yes | the callback of model |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Model&gt; | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. The file descriptor (fd) is incorrect; 2. The model file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. The file descriptor (fd) is incorrect; 2. The model file is damaged.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -125,6 +127,7 @@ mindSporeLite.loadModelFromFd(file.fd, (mindSporeLiteModel: mindSporeLite.Model)
 ```
 
 
+<a id="loadmodelfromfd-2"></a>
 ## loadModelFromFd
 
 ```TypeScript
@@ -153,14 +156,14 @@ Create a Model instance from file description
 | --- | --- | --- | --- |
 | model | number | Yes | model indicates model file description to be loaded |
 | context | [Context](arkts-mindsporelite-mindsporelite-context-i.md) | Yes | context indicates model context information |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Model> | Yes | the callback of model |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Model&gt; | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. The file descriptor (fd) is incorrect; 2. The model file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. The file descriptor (fd) is incorrect; 2. The model file is damaged.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

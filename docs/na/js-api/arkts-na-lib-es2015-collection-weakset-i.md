@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface WeakSet<T extends object>--><!--Device-unnamed-interface WeakSet<T extends object>-End-->
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -24,6 +25,7 @@ Appends a new object to the end of the WeakSet.
 | --- | --- |
 | this |  |
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -46,6 +48,7 @@ Removes the specified element from the WeakSet.
 | --- | --- |
 | boolean |  |
 
+<a id="has"></a>
 ## has
 
 ```TypeScript

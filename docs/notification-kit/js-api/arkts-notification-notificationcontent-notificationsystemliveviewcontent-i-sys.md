@@ -22,7 +22,7 @@ cardButtons?: Array<NotificationIconButton>
 
 Live view buttons (a maximum of three buttons are supported). This parameter is left empty by default.
 
-**Type:** Array<NotificationIconButton>
+**Type:** Array&lt;NotificationIconButton&gt;
 
 **Since:** 18
 

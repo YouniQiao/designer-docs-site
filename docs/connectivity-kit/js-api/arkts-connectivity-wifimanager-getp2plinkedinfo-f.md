@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getp2plinkedinfo"></a>
 ## getP2pLinkedInfo
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtain information about the P2P connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WifiP2pLinkedInfo> | Returns p2p linked information. |
+| Promise&lt;WifiP2pLinkedInfo&gt; | Returns p2p linked information. |
 
 **Error codes:**
 
@@ -37,6 +38,7 @@ Obtain information about the P2P connection.
 | [2801000](../errorcode-wifi.md#2801000-p2p-module-error) | Operation failed. |
 
 
+<a id="getp2plinkedinfo-1"></a>
 ## getP2pLinkedInfo
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtain information about the P2P connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WifiP2pLinkedInfo> | Yes | Indicates callback of function. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WifiP2pLinkedInfo&gt; | Yes | Indicates callback of function. |
 
 **Error codes:**
 

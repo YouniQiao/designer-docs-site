@@ -12,7 +12,7 @@ Implements a **GeolocationPermissions** object.
 > **ohos.permission.LOCATION**, **ohos.permission.APPROXIMATELY_LOCATION**, and  
 > **ohos.permission.LOCATION_IN_BACKGROUND**, which are required for accessing the location information. For details  
 > about the permissions, see  
-> [@ohos.geolocation (Geolocation)](../../../../reference/apis-location-kit/js-apis-geolocation.md).
+> [@ohos.geolocation (Geolocation)](docroot://reference/apis-location-kit/js-apis-geolocation.md).
 
 **Since:** 9
 
@@ -26,6 +26,7 @@ Implements a **GeolocationPermissions** object.
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="allowgeolocation"></a>
 ## allowGeolocation
 
 ```TypeScript
@@ -56,6 +57,7 @@ Allows the specified origin to use the geolocation information.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100011](../errorcode-webview.md#17100011-invalid-origin) | Invalid origin. The origin format must follow defined in RFC 6454. |
 
+<a id="deleteallgeolocation"></a>
 ## deleteAllGeolocation
 
 ```TypeScript
@@ -78,6 +80,7 @@ Clears the geolocation permission status of all sources.
 | --- | --- | --- | --- |
 | incognito | boolean | No | Whether to clear the geolocation permission status of all sources in incognito mode. The value **true** means to clear the geolocation permission status of all sources in incognito mode,and **false** means the opposite.<br>Default value: **false**.<br>If **null** or **undefined** is passed in,the value is **false**.<br>**Since:** 11 |
 
+<a id="deletegeolocation"></a>
 ## deleteGeolocation
 
 ```TypeScript
@@ -108,6 +111,7 @@ Clears the geolocation permission status of a specified origin.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100011](../errorcode-webview.md#17100011-invalid-origin) | Invalid origin. The origin format must follow defined in RFC 6454. |
 
+<a id="getaccessiblegeolocation"></a>
 ## getAccessibleGeolocation
 
 ```TypeScript
@@ -135,7 +139,7 @@ Obtains the geolocation permission status of the specified origin. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the geolocation permission status of the specified origin.<br>If the operation is successful, the value **true** means that the geolocation permission is granted, and **false** means the opposite.<br>If the operation fails, the geolocation permission status of the specified origin is not found. |
+| Promise&lt;boolean&gt; | Promise used to return the geolocation permission status of the specified origin.<br>If the operation is successful, the value **true** means that the geolocation permission is granted, and **false** means the opposite.<br>If the operation fails, the geolocation permission status of the specified origin is not found. |
 
 **Error codes:**
 
@@ -144,6 +148,7 @@ Obtains the geolocation permission status of the specified origin. This API uses
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100011](../errorcode-webview.md#17100011-invalid-origin) | Invalid origin. The origin format must follow defined in RFC 6454. |
 
+<a id="getaccessiblegeolocation-1"></a>
 ## getAccessibleGeolocation
 
 ```TypeScript
@@ -165,7 +170,7 @@ Obtains the geolocation permission status of the specified origin. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | origin | string | Yes | Index of the origin. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the geolocation permission status of the specified origin.<br>If the operation is successful, the value **true** means that the geolocation permission is granted, and **false** means the opposite.<br>If the operation fails, the geolocation permission status of the specified origin is not found. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the geolocation permission status of the specified origin.<br>If the operation is successful, the value **true** means that the geolocation permission is granted, and **false** means the opposite.<br>If the operation fails, the geolocation permission status of the specified origin is not found. |
 | incognito | boolean | No | Whether to obtain the geolocation permission status of the specified origin in incognito mode. The value **true** means to obtain the geolocation permission status of the specified origin in incognito mode, and **false** means the opposite.<br>Default value: **false**.<br>If **null** or **undefined** is passed, error code **401** is thrown.<br>**Since:** 11 |
 
 **Error codes:**
@@ -175,6 +180,7 @@ Obtains the geolocation permission status of the specified origin. This API uses
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100011](../errorcode-webview.md#17100011-invalid-origin) | Invalid origin. The origin format must follow defined in RFC 6454. |
 
+<a id="getstoredgeolocation"></a>
 ## getStoredGeolocation
 
 ```TypeScript
@@ -201,7 +207,7 @@ Obtains the geolocation permission status of all origins. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the geolocation permission status of all origins. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the geolocation permission status of all origins. |
 
 **Error codes:**
 
@@ -209,6 +215,7 @@ Obtains the geolocation permission status of all origins. This API uses a promis
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="getstoredgeolocation-1"></a>
 ## getStoredGeolocation
 
 ```TypeScript
@@ -229,7 +236,7 @@ Obtains the geolocation permission status of all origins. This API uses an async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the geolocation permission status of all origins. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the geolocation permission status of all origins. |
 | incognito | boolean | No | Whether to obtain the geolocation permission status of all origins in incognito mode. The value **true** means to obtain the geolocation permission status of all origins in incognito mode,and **false** means the opposite.<br>Default value: **false**.<br>If **null** or **undefined** is passed,error code **401** is thrown.<br>**Since:** 11 |
 
 **Error codes:**

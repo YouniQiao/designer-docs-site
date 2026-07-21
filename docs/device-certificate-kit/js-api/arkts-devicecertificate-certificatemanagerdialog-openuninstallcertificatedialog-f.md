@@ -6,6 +6,7 @@
 import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="openuninstallcertificatedialog"></a>
 ## openUninstallCertificateDialog
 
 ```TypeScript
@@ -36,7 +37,7 @@ Open the Certificate Management Uninstall Certificate dialog. The corresponding 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

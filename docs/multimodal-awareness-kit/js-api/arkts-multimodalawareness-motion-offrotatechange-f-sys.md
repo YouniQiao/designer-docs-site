@@ -6,6 +6,7 @@
 import { motion } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="offrotatechange"></a>
 ## offRotateChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe to rotate sensor event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RotateEvent> | No | Callback used for rotate event unsubscription.<br> If this parameter is not specified, all callbacks of the rotate event are unsubscribed from. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RotateEvent&gt; | No | Callback used for rotate event unsubscription.<br> If this parameter is not specified, all callbacks of the rotate event are unsubscribed from. |
 
 **Error codes:**
 

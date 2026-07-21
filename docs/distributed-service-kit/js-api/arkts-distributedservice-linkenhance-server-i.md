@@ -14,6 +14,7 @@ Represents a **Server** object, which provides methods for starting, stopping, a
 import { linkEnhance } from '@kit.DistributedServiceKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -60,6 +61,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('connectionAccepted')
 
 ```TypeScript
@@ -83,7 +85,7 @@ Unregisters the callback listener for **connectionAccepted** events. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectionAccepted' | Yes | Event type, which is **connectionAccepted**. This event is triggered when a connection from the peer end is received. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Connection> | No | Registered callback, which is used to return the [Connection](arkts-distributedservice-linkenhance-connection-i.md) object. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Connection&gt; | No | Registered callback, which is used to return the [Connection](arkts-distributedservice-linkenhance-connection-i.md) object. |
 
 **Error codes:**
 
@@ -120,6 +122,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('serverStopped')
 
 ```TypeScript
@@ -143,7 +146,7 @@ Unregisters the callback listener for **serverStopped** events. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serverStopped' | Yes | Event type, which is **serverStopped**. This event is triggered when the server is stopped abnormally. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | Registered callback, where **number** indicates the returned error code. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Registered callback, where **number** indicates the returned error code. |
 
 **Error codes:**
 
@@ -180,6 +183,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('connectionAccepted')
 
 ```TypeScript
@@ -203,7 +207,7 @@ Registers a callback listener for **connectionAccepted** events. This API uses a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectionAccepted' | Yes | Event type, which is **connectionAccepted**. This event is triggered when a connection from the peer end is received. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Connection> | Yes | Registered callback, which is used to return the [Connection](arkts-distributedservice-linkenhance-connection-i.md) object. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Connection&gt; | Yes | Registered callback, which is used to return the [Connection](arkts-distributedservice-linkenhance-connection-i.md) object. |
 
 **Error codes:**
 
@@ -240,6 +244,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on('serverStopped')
 
 ```TypeScript
@@ -263,7 +268,7 @@ Registers a callback listener for **serverStopped** events. This API uses an asy
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serverStopped' | Yes | Event type, which is **serverStopped**. This event is triggered when the server is stopped abnormally. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Registered callback, where **number** indicates the returned error code. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Registered callback, where **number** indicates the returned error code. |
 
 **Error codes:**
 
@@ -300,6 +305,7 @@ try {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -347,6 +353,7 @@ try {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript

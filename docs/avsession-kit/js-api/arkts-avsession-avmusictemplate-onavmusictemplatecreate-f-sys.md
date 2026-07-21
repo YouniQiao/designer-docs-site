@@ -6,6 +6,7 @@
 import { avMusicTemplate } from '@kit.AVSessionKit';
 ```
 
+<a id="onavmusictemplatecreate"></a>
 ## onAVMusicTemplateCreate
 
 ```TypeScript
@@ -30,7 +31,7 @@ Register session create event
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVMusicTemplateDescriptor> | Yes | Used to handle 'sessionCreate' command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVMusicTemplateDescriptor&gt; | Yes | Used to handle 'sessionCreate' command |
 
 **Error codes:**
 

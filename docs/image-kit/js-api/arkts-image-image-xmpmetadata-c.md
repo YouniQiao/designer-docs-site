@@ -14,6 +14,7 @@ XMPMetadata instance.
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="enumeratetags"></a>
 ## enumerateTags
 
 ```TypeScript
@@ -46,7 +47,7 @@ Enumerate the XMP tags from specified path and uses a callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (path: string, tag: XMPTag) => boolean | Yes | Callback used to return the XMP node and the corresponding XMPTag.The callback receives a path argument that follows the XMP namespace:path format. |
+| callback | (path: string, tag: XMPTag) =&gt; boolean | Yes | Callback used to return the XMP node and the corresponding XMPTag.The callback receives a path argument that follows the XMP namespace:path format. |
 | rootPath | string | No | Enumerate root path. If this parameter is not specified, the default value is root path. |
 | options | [XMPEnumerateOptions](arkts-image-image-xmpenumerateoptions-i.md) | No | XMP enumerate option. |
 
@@ -56,6 +57,7 @@ Enumerate the XMP tags from specified path and uses a callback to return the res
 | --- | --- |
 | [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Namespace is not registered.2. The rootPath syntax is invalid. |
 
+<a id="getblob"></a>
 ## getBlob
 
 ```TypeScript
@@ -76,7 +78,7 @@ Obtains the XMP metadata as a blob.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | A Promise instance used to return the ArrayBuffer of blob. |
+| Promise&lt;ArrayBuffer&gt; | A Promise instance used to return the ArrayBuffer of blob. |
 
 **Error codes:**
 
@@ -85,6 +87,7 @@ Obtains the XMP metadata as a blob.
 | [7600301](../errorcode-image.md#7600301-memory-allocation-failure) | Memory alloc failed. |
 | [7600302](../errorcode-image.md#7600302-memory-copy-failure) | Memory copy failed. |
 
+<a id="gettag"></a>
 ## getTag
 
 ```TypeScript
@@ -111,7 +114,7 @@ Get a single XMP tag from specified path.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<XMPTag \| null> | Promise used to return the XMP tag. |
+| Promise&lt;XMPTag \| null&gt; | Promise used to return the XMP tag. |
 
 **Error codes:**
 
@@ -119,6 +122,7 @@ Get a single XMP tag from specified path.
 | --- | --- |
 | [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Namespace is not registered.2. The path syntax is invalid. |
 
+<a id="gettags"></a>
 ## getTags
 
 ```TypeScript
@@ -146,7 +150,7 @@ Get all XMP tags from specified path.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, XMPTag>> | A Promise instance used to return all XMP tags. |
+| Promise&lt;Record&lt;string, XMPTag&gt;&gt; | A Promise instance used to return all XMP tags. |
 
 **Error codes:**
 
@@ -154,6 +158,7 @@ Get all XMP tags from specified path.
 | --- | --- |
 | [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Namespace is not registered.2. The rootPath syntax is invalid. |
 
+<a id="registerxmpnamespace"></a>
 ## registerXMPNamespace
 
 ```TypeScript
@@ -180,7 +185,7 @@ Register a new namespace according to the xml namespace and prefix.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
 
 **Error codes:**
 
@@ -188,6 +193,7 @@ Register a new namespace according to the xml namespace and prefix.
 | --- | --- |
 | [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Invalid namespace format.2. The uri is already registered. 3. The prefix is already registered. |
 
+<a id="removetag"></a>
 ## removeTag
 
 ```TypeScript
@@ -214,7 +220,7 @@ Remove the XMP tag from specified path.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
 
 **Error codes:**
 
@@ -222,6 +228,7 @@ Remove the XMP tag from specified path.
 | --- | --- |
 | [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Namespace is not registered.2. The path syntax is invalid. |
 
+<a id="setblob"></a>
 ## setBlob
 
 ```TypeScript
@@ -242,13 +249,13 @@ Set a blob into the XMP metadata.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | blob data. |
+| buffer | ArrayBuffer | Yes | blob data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
 
 **Error codes:**
 
@@ -256,6 +263,7 @@ Set a blob into the XMP metadata.
 | --- | --- |
 | [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. The buffer is empty or invalid. |
 
+<a id="setvalue"></a>
 ## setValue
 
 ```TypeScript
@@ -284,7 +292,7 @@ Set the XMP type and value of the XMP tag in the specified path.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
 
 **Error codes:**
 

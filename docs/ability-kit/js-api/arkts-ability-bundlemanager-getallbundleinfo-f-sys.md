@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallbundleinfo"></a>
 ## getAllBundleInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains all the bundle information in the system based on the given bundle flags
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleFlags | number | Yes | Type of the bundle information to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<BundleInfo>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the array of bundle information obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;BundleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the array of bundle information obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ try {
 ```
 
 
+<a id="getallbundleinfo-1"></a>
 ## getAllBundleInfo
 
 ```TypeScript
@@ -88,7 +90,7 @@ Obtains all the bundle information in the system based on the given bundle flags
 | --- | --- | --- | --- |
 | bundleFlags | number | Yes | Type of the bundle information to obtain. |
 | userId | number | Yes | User ID, which can be obtained by calling [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<BundleInfo>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the array of bundle information obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;BundleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the array of bundle information obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -125,6 +127,7 @@ try {
 ```
 
 
+<a id="getallbundleinfo-2"></a>
 ## getAllBundleInfo
 
 ```TypeScript
@@ -154,7 +157,7 @@ Obtains all the bundle information in the system based on the given bundle flags
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleInfo>> | Promise used to return an array of bundle information. |
+| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Promise used to return an array of bundle information. |
 
 **Error codes:**
 

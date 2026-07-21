@@ -6,6 +6,7 @@
 import { metadataBinding } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="notifymetadatabindingevent"></a>
 ## notifyMetadataBindingEvent
 
 ```TypeScript
@@ -32,7 +33,7 @@ Transfers metadata to the application or service that calls the encoding API. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the application link information of the current page. |
+| Promise&lt;string&gt; | Promise used to return the application link information of the current page. |
 
 **Error codes:**
 

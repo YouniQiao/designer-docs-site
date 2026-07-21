@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="onsessioncreate"></a>
 ## onSessionCreate
 
 ```TypeScript
@@ -26,7 +27,7 @@ Register session create callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVSessionDescriptor> | Yes | Used to handle ('sessionCreate' command) |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVSessionDescriptor&gt; | Yes | Used to handle ('sessionCreate' command) |
 
 **Error codes:**
 

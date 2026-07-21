@@ -6,6 +6,7 @@
 import { socket } from '@kit.ConnectivityKit';
 ```
 
+<a id="getmaxreceivedatasize"></a>
 ## getMaxReceiveDataSize
 
 ```TypeScript

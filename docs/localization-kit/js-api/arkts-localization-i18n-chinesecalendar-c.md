@@ -16,6 +16,7 @@ Provide a ChineseCalendar interface which could handle unique characteristics of
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="checkleapmonth"></a>
 ## checkLeapMonth
 
 ```TypeScript
@@ -54,6 +55,7 @@ Checks whether a given month exist leap month in gregorianYear and cyclicalYear.
 | --- | --- |
 | [8900001](../errorcode-i18n.md#8900001-parameter-verification-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
+<a id="setchinesecalendartime"></a>
 ## setChineseCalendarTime
 
 ```TypeScript

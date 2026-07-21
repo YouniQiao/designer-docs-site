@@ -6,6 +6,7 @@
 import { formProvider } from '@kit.FormKit';
 ```
 
+<a id="updatetemplateformdetailinfo"></a>
 ## updateTemplateFormDetailInfo
 
 ```TypeScript
@@ -28,13 +29,13 @@ Updates the static configuration information of a specified template widget on t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| templateFormInfo | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<formInfo.TemplateFormDetailInfo> | Yes | Static configuration information of a specified template widget. |
+| templateFormInfo | Array&lt;formInfo.TemplateFormDetailInfo&gt; | Yes | Static configuration information of a specified template widget. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

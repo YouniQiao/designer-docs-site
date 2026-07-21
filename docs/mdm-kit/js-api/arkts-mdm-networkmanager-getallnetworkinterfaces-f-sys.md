@@ -6,6 +6,7 @@
 import { networkManager } from '@kit.MDMKit';
 ```
 
+<a id="getallnetworkinterfaces"></a>
 ## getAllNetworkInterfaces
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains all activated wired network interfaces. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null** and **data** is an array of network ports obtained. If the operation fails,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null** and **data** is an array of network ports obtained. If the operation fails,**err** is an error object. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ networkManager.getAllNetworkInterfaces(wantTemp, (err, result) => {
 ```
 
 
+<a id="getallnetworkinterfaces-1"></a>
 ## getAllNetworkInterfaces
 
 ```TypeScript
@@ -104,7 +106,7 @@ Obtains all activated wired network interfaces. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the names of all activated wired network interfaces. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the names of all activated wired network interfaces. |
 
 **Error codes:**
 

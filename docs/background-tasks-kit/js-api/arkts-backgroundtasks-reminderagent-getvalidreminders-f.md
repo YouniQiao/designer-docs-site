@@ -6,6 +6,7 @@
 import { reminderAgent } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="getvalidreminders"></a>
 ## getValidReminders
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains all valid (not yet expired) reminders set by the current application. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ReminderRequest>> | Yes | Callback used to return an array of all valid reminders set by the current application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ReminderRequest&gt;&gt; | Yes | Callback used to return an array of all valid reminders set by the current application. |
 
 **Example**
 
@@ -63,6 +64,7 @@ reminderAgent.getValidReminders((err: BusinessError, reminders: Array<reminderAg
 ```
 
 
+<a id="getvalidreminders-1"></a>
 ## getValidReminders
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains all valid (not yet expired) reminders set by the current application. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ReminderRequest>> | Promise used to return an array of all valid reminders set by the current application. |
+| Promise&lt;Array&lt;ReminderRequest&gt;&gt; | Promise used to return an array of all valid reminders set by the current application. |
 
 **Example**
 

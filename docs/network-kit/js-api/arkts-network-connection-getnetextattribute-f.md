@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getnetextattribute"></a>
 ## getNetExtAttribute
 
 ```TypeScript
@@ -32,7 +33,7 @@ Get the network extended attribute for a {@link NetHandle} object.To invoke this
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | The promise returned by the function. |
+| Promise&lt;string&gt; | The promise returned by the function. |
 
 **Error codes:**
 

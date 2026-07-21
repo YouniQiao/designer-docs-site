@@ -6,6 +6,7 @@
 import { missionManager } from '@kit.AbilityKit';
 ```
 
+<a id="getmissioninfo"></a>
 ## getMissionInfo
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the mission information. This API uses an asynchronous callback to retur
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Device ID. It is a null string by default for the local device. |
 | missionId | number | Yes | Mission ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<MissionInfo> | Yes | Callback used to return the mission information obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;MissionInfo&gt; | Yes | Callback used to return the mission information obtained. |
 
 **Error codes:**
 
@@ -80,6 +81,7 @@ missionManager.getMissionInfos('', 10)
 ```
 
 
+<a id="getmissioninfo-1"></a>
 ## getMissionInfo
 
 ```TypeScript
@@ -109,7 +111,7 @@ Obtains the mission information. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MissionInfo> | Promise used to return the mission information obtained. |
+| Promise&lt;MissionInfo&gt; | Promise used to return the mission information obtained. |
 
 **Error codes:**
 

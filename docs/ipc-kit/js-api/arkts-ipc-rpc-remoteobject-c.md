@@ -16,6 +16,7 @@ Provides methods to implement **RemoteObject**. The service provider must inheri
 import { rpc } from '@kit.IPCKit';
 ```
 
+<a id="attachlocalinterface"></a>
 ## attachLocalInterface
 
 ```TypeScript
@@ -28,7 +29,7 @@ Binds an interface descriptor to an **IRemoteBroker** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** modifyLocalInterface(localInterface:
+**Substitutes:** [modifyLocalInterface(localInterface:](arkts-ipc-rpc-remoteobject-c.md#modifylocalinterface-1)
 
 <!--Device-RemoteObject-attachLocalInterface(localInterface: IRemoteBroker, descriptor: string): void--><!--Device-RemoteObject-attachLocalInterface(localInterface: IRemoteBroker, descriptor: string): void-End-->
 
@@ -70,6 +71,7 @@ let testRemoteObject = new TestRemoteObject("testObject");
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -103,6 +105,7 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 ```
 
+<a id="getcallingpid"></a>
 ## getCallingPid
 
 ```TypeScript
@@ -148,6 +151,7 @@ try {
 
 ```
 
+<a id="getcallinguid"></a>
 ## getCallingUid
 
 ```TypeScript
@@ -193,6 +197,7 @@ try {
 
 ```
 
+<a id="getdescriptor"></a>
 ## getDescriptor
 
 ```TypeScript
@@ -248,6 +253,7 @@ try {
 
 ```
 
+<a id="getinterfacedescriptor"></a>
 ## getInterfaceDescriptor
 
 ```TypeScript
@@ -299,6 +305,7 @@ try {
 
 ```
 
+<a id="getlocalinterface"></a>
 ## getLocalInterface
 
 ```TypeScript
@@ -359,6 +366,7 @@ try {
 
 ```
 
+<a id="modifylocalinterface"></a>
 ## modifyLocalInterface
 
 ```TypeScript
@@ -420,6 +428,7 @@ let testRemoteObject = new TestRemoteObject("testObject");
 
 ```
 
+<a id="onremotemessagerequest"></a>
 ## onRemoteMessageRequest
 
 ```TypeScript
@@ -561,6 +570,7 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 ```
 
+<a id="onremotemessagerequest-1"></a>
 ## onRemoteMessageRequest
 
 ```TypeScript
@@ -706,6 +716,7 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 ```
 
+<a id="onremoterequest"></a>
 ## onRemoteRequest
 
 ```TypeScript
@@ -718,7 +729,7 @@ Called to return a response to **sendRequest()**. The server processes the reque
 
 **Deprecated since:** 9
 
-**Substitutes:** onRemoteMessageRequest(code:
+**Substitutes:** [onRemoteMessageRequest(code:](arkts-ipc-rpc-remoteobject-c.md#onremotemessagerequest-1)
 
 <!--Device-RemoteObject-onRemoteRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean--><!--Device-RemoteObject-onRemoteRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean-End-->
 
@@ -762,6 +773,7 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 ```
 
+<a id="querylocalinterface"></a>
 ## queryLocalInterface
 
 ```TypeScript
@@ -774,7 +786,7 @@ Checks whether the remote object corresponding to the specified interface token 
 
 **Deprecated since:** 9
 
-**Substitutes:** getLocalInterface(descriptor:
+**Substitutes:** [getLocalInterface(descriptor:](arkts-ipc-rpc-iremoteobject-c.md#getlocalinterface-1)
 
 <!--Device-RemoteObject-queryLocalInterface(descriptor: string): IRemoteBroker--><!--Device-RemoteObject-queryLocalInterface(descriptor: string): IRemoteBroker-End-->
 
@@ -817,6 +829,7 @@ try {
 
 ```
 
+<a id="sendmessagerequest"></a>
 ## sendMessageRequest
 
 ```TypeScript
@@ -859,7 +872,7 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RequestResult> | Promise used to return a **requestResult** instance. |
+| Promise&lt;RequestResult&gt; | Promise used to return a **requestResult** instance. |
 
 **Error codes:**
 
@@ -914,6 +927,7 @@ try {
 
 ```
 
+<a id="sendmessagerequest-1"></a>
 ## sendMessageRequest
 
 ```TypeScript
@@ -954,7 +968,7 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 | data | [MessageSequence](arkts-ipc-rpc-messagesequence-c.md) | Yes | **MessageSequence** object holding the data to send. |
 | reply | [MessageSequence](arkts-ipc-rpc-messagesequence-c.md) | Yes | **MessageSequence** object that receives the response. |
 | options | [MessageOption](arkts-ipc-rpc-messageoption-c.md) | Yes | Request sending mode, which can be synchronous (default) or asynchronous. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RequestResult> | Yes | Callback for receiving the sending result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RequestResult&gt; | Yes | Callback for receiving the sending result. |
 
 **Error codes:**
 
@@ -962,6 +976,7 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.Failed to obtain the passed object instance. |
 
+<a id="sendrequest"></a>
 ## sendRequest
 
 ```TypeScript
@@ -974,7 +989,7 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 **Deprecated since:** 8
 
-**Substitutes:** sendMessageRequest(code:
+**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest-1)
 
 <!--Device-RemoteObject-sendRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean--><!--Device-RemoteObject-sendRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean-End-->
 
@@ -1032,6 +1047,7 @@ try {
 
 ```
 
+<a id="sendrequest-1"></a>
 ## sendRequest
 
 ```TypeScript
@@ -1049,7 +1065,7 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 **Deprecated since:** 9
 
-**Substitutes:** sendMessageRequest(code:
+**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest-1)
 
 <!--Device-RemoteObject-sendRequest(
       code: number,
@@ -1078,7 +1094,7 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SendRequestResult> | Promise used to return a **sendRequestResult** instance. |
+| Promise&lt;SendRequestResult&gt; | Promise used to return a **sendRequestResult** instance. |
 
 **Example**
 
@@ -1127,6 +1143,7 @@ try {
 
 ```
 
+<a id="sendrequest-2"></a>
 ## sendRequest
 
 ```TypeScript
@@ -1145,7 +1162,7 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 **Deprecated since:** 9
 
-**Substitutes:** sendMessageRequest(code:
+**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest-1)
 
 <!--Device-RemoteObject-sendRequest(
       code: number,
@@ -1171,5 +1188,5 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 | data | [MessageParcel](arkts-ipc-rpc-messageparcel-c.md) | Yes | **MessageParcel** object holding the data to send. |
 | reply | [MessageParcel](arkts-ipc-rpc-messageparcel-c.md) | Yes | **MessageParcel** object that receives the response. |
 | options | [MessageOption](arkts-ipc-rpc-messageoption-c.md) | Yes | Request sending mode, which can be synchronous (default) or asynchronous. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SendRequestResult> | Yes | Callback for receiving the sending result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SendRequestResult&gt; | Yes | Callback for receiving the sending result. |
 

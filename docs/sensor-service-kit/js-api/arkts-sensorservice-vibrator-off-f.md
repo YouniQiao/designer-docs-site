@@ -6,6 +6,7 @@
 import { vibrator } from '@kit.SensorServiceKit';
 ```
 
+<a id="off"></a>
 ## off('vibratorStateChange')
 
 ```TypeScript
@@ -25,7 +26,7 @@ Disables listening for vibrator status changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'vibratorStateChange' | Yes | Event type. The value **vibratorStateChange** indicates a vibrator online/offline event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<VibratorStatusEvent> | No | Callback used to return the vibrator status change event. If this parameter is not specified, all callbacks of vibrator status change events will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;VibratorStatusEvent&gt; | No | Callback used to return the vibrator status change event. If this parameter is not specified, all callbacks of vibrator status change events will be unregistered. |
 
 **Error codes:**
 

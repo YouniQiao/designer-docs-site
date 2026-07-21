@@ -38,7 +38,7 @@ Original [XComponent](XComponent) controller.
 contentHeight?: number
 ```
 
-Height of the original content, in px. It is used to determine the aspect ratio of the PiP window. When the PiP controller is created in [typeNode mode](arkts-arkui-pipwindow-create-f.md#create-2), the default value is 1080. When the PiP controller is created [not in typeNode mode](arkts-arkui-pipwindow-create-f.md#create-1), the default value is the height of the [XComponent](XComponent).
+Height of the original content, in px. It is used to determine the aspect ratio of the PiP window. When the PiP controller is created in [typeNode mode](arkts-arkui-pipwindow-create-f.md#create-1), the default value is 1080. When the PiP controller is created [not in typeNode mode](arkts-arkui-pipwindow-create-f.md#create-1), the default value is the height of the [XComponent](XComponent).
 
 **Type:** number
 
@@ -56,7 +56,7 @@ Height of the original content, in px. It is used to determine the aspect ratio 
 contentWidth?: number
 ```
 
-Width of the original content, in px. It is used to determine the aspect ratio of the PiP window. When the PiP controller is created in [typeNode mode](arkts-arkui-pipwindow-create-f.md#create-2), the default value is 1920. When the PiP controller is created [not in typeNode mode](arkts-arkui-pipwindow-create-f.md#create-1), the default value is the width of the [XComponent](XComponent).
+Width of the original content, in px. It is used to determine the aspect ratio of the PiP window. When the PiP controller is created in [typeNode mode](arkts-arkui-pipwindow-create-f.md#create-1), the default value is 1920. When the PiP controller is created [not in typeNode mode](arkts-arkui-pipwindow-create-f.md#create-1), the default value is the width of the [XComponent](XComponent).
 
 **Type:** number
 
@@ -94,7 +94,7 @@ controlGroups?: Array<PiPControlGroup>
 
 A list of optional component groups of the PiP controller. An application can configure whether to display these optional components. If this parameter is not set for the application, the panel displays basic components (such as the play/pause component of the video playback component group). If this parameter is set for the application,a maximum of three components can be selected. If more than three controls are selected, error code 401 is reported by the API.
 
-**Type:** Array<PiPControlGroup>
+**Type:** Array&lt;PiPControlGroup&gt;
 
 **Since:** 12
 
@@ -182,7 +182,7 @@ If no value is passed, **0** is used.
 handleId?: number
 ```
 
-ID of the subpage under the **Navigation** component. After the Full-screen Window button is touched,the specified page is restored. This parameter applies only in scenarios where the UIAbility uses [Navigation](Navigation) to manage pages. It can be set to any subpage ID within the Navigation hierarchy. The default value is **-1**, indicating that the topmost page in the Navigation stack is restored. You are advised to use [getUniqueId()](../arkts-components/arkts-arkui-common-basecustomcomponent-c.md#getuniqueid-1) to obtain the page ID. When you use page routing provided by [Navigation](Navigation), you are advised to use the [system routing table](../../../../ui/arkts-navigation-cross-package.md#system-routing-table).Otherwise, the page ID obtained by calling [getUniqueId()](../arkts-components/arkts-arkui-common-basecustomcomponent-c.md#getuniqueid-1)may be incorrect.
+ID of the subpage under the **Navigation** component. After the Full-screen Window button is touched,the specified page is restored. This parameter applies only in scenarios where the UIAbility uses [Navigation](Navigation) to manage pages. It can be set to any subpage ID within the Navigation hierarchy. The default value is **-1**, indicating that the topmost page in the Navigation stack is restored. You are advised to use [getUniqueId()](../arkts-components/arkts-arkui-basecustomcomponent-c.md#getuniqueid-1) to obtain the page ID. When you use page routing provided by [Navigation](Navigation), you are advised to use the [system routing table](docroot://ui/arkts-navigation-cross-package.md#system-routing-table).Otherwise, the page ID obtained by calling [getUniqueId()](../arkts-components/arkts-arkui-basecustomcomponent-c.md#getuniqueid-1)may be incorrect.
 
 **Type:** number
 

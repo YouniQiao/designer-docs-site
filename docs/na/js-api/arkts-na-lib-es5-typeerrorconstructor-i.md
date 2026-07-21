@@ -4,6 +4,7 @@
 
 <!--Device-unnamed-interface TypeErrorConstructor extends ErrorConstructor--><!--Device-unnamed-interface TypeErrorConstructor extends ErrorConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -22,8 +23,9 @@ new(message?: string): TypeError
 
 | Type | Description |
 | --- | --- |
-| [TypeError](arkts-na-lib-es5-typeerror-i.md) |  |
+| TypeError |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -42,7 +44,7 @@ new(message?: string): TypeError
 
 | Type | Description |
 | --- | --- |
-| [TypeError](arkts-na-lib-es5-typeerror-i.md) |  |
+| TypeError |  |
 
 ## prototype
 

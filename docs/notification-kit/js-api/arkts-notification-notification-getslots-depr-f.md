@@ -1,5 +1,6 @@
 # getSlots
 
+<a id="getslots"></a>
 ## getSlots
 
 ```TypeScript
@@ -22,9 +23,10 @@ Obtains all notification slots. This API uses an asynchronous callback to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<NotificationSlot>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;NotificationSlot&gt;&gt; | Yes | Callback used to return the result. |
 
 
+<a id="getslots-1"></a>
 ## getSlots
 
 ```TypeScript
@@ -47,5 +49,5 @@ Obtains all notification slots of this application. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NotificationSlot>> | Promise used to return the result. |
+| Promise&lt;Array&lt;NotificationSlot&gt;&gt; | Promise used to return the result. |
 

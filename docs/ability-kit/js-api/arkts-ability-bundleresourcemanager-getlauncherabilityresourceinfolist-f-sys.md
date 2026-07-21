@@ -6,6 +6,7 @@
 import { bundleResourceManager } from '@kit.AbilityKit';
 ```
 
+<a id="getlauncherabilityresourceinfolist"></a>
 ## getLauncherAbilityResourceInfoList
 
 ```TypeScript
@@ -30,14 +31,14 @@ Obtains the launcher ability resource information of each application correspond
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| optionsList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<BundleOptions> | Yes | Parameters of the applications to query.<br>**bundleName**,**moduleName**, and **abilityName** are mandatory parameters.<br>Value range of **appIndex**: [0, 5]. The default value is **0** if not specified.<br>**userId** is an invalid parameter. It does not need to be passed,and will not take effect if passed. |
+| optionsList | Array&lt;BundleOptions&gt; | Yes | Parameters of the applications to query.<br>**bundleName**,**moduleName**, and **abilityName** are mandatory parameters.<br>Value range of **appIndex**: [0, 5]. The default value is **0** if not specified.<br>**userId** is an invalid parameter. It does not need to be passed,and will not take effect if passed. |
 | resourceFlags | number | Yes | Resource information flags, which indicate the type of resource information to obtain. The value is an enumerated value of [ResourceFlag](arkts-ability-bundleresourcemanager-resourceflag-e-sys.md), excluding [ResourceFlag](arkts-ability-bundleresourcemanager-resourceflag-e-sys.md).GET_RESOURCE_INFO_WITH_SORTED_BY_LABEL and [ResourceFlag](arkts-ability-bundleresourcemanager-resourceflag-e-sys.md).GET_RESOURCE_INFO_ONLY_WITH_MAIN_ABILITY. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<LauncherAbilityResourceInfo>> | Promise used to return the launcher ability resource information of the specified application list. |
+| Promise&lt;Array&lt;LauncherAbilityResourceInfo&gt;&gt; | Promise used to return the launcher ability resource information of the specified application list. |
 
 **Error codes:**
 

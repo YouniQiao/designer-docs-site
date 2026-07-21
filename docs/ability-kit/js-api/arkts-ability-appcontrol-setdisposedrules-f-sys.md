@@ -6,6 +6,7 @@
 import { appControl } from '@kit.AbilityKit';
 ```
 
+<a id="setdisposedrules"></a>
 ## setDisposedRules
 
 ```TypeScript
@@ -28,7 +29,7 @@ Sets disposed rules in batches for an application or an application clone.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| disposedRuleConfigurations | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DisposedRuleConfiguration> | Yes | Configuration for the disposed rules in batches, including the appId of the target application, the index of the application clone, and the rules themselves. The maximum number of disposed rules in an array is 1000.<br>**NOTE**<br>1. If multiple **DisposedRuleConfiguration** entries in the array have the same appId and appIndex, the later entry will overwrite the earlier one.<br>2. If an application has already set disposed rules, re-setting the rules will replace the existing ones. Identical appId and appIndex values indicate the same application instance. |
+| disposedRuleConfigurations | Array&lt;DisposedRuleConfiguration&gt; | Yes | Configuration for the disposed rules in batches, including the appId of the target application, the index of the application clone, and the rules themselves. The maximum number of disposed rules in an array is 1000.<br>**NOTE**<br>1. If multiple **DisposedRuleConfiguration** entries in the array have the same appId and appIndex, the later entry will overwrite the earlier one.<br>2. If an application has already set disposed rules, re-setting the rules will replace the existing ones. Identical appId and appIndex values indicate the same application instance. |
 
 **Error codes:**
 

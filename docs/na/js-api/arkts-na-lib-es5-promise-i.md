@@ -4,6 +4,7 @@ Represents the completion of an asynchronous operation
 
 <!--Device-unnamed-interface Promise<T>--><!--Device-unnamed-interface Promise<T>-End-->
 
+<a id="catch"></a>
 ## catch
 
 ```TypeScript
@@ -18,14 +19,15 @@ Attaches a callback for only the rejection of the Promise.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| onrejected | ((reason: any) => TResult \| PromiseLike<TResult>) \| undefined \| null | No |  |
+| onrejected | ((reason: any) =&gt; TResult \| PromiseLike&lt;TResult&gt;) \| undefined \| null | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](arkts-na-lib-es5-promise-i.md)<T \| TResult> |  |
+| Promise&lt;T \| TResult&gt; |  |
 
+<a id="then"></a>
 ## then
 
 ```TypeScript
@@ -40,12 +42,12 @@ Attaches callbacks for the resolution and/or rejection of the Promise.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| onfulfilled | ((value: T) => TResult1 \| PromiseLike<TResult1>) \| undefined \| null | No |  |
-| onrejected | ((reason: any) => TResult2 \| PromiseLike<TResult2>) \| undefined \| null | No |  |
+| onfulfilled | ((value: T) =&gt; TResult1 \| PromiseLike&lt;TResult1&gt;) \| undefined \| null | No |  |
+| onrejected | ((reason: any) =&gt; TResult2 \| PromiseLike&lt;TResult2&gt;) \| undefined \| null | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](arkts-na-lib-es5-promise-i.md)<TResult1 \| TResult2> |  |
+| Promise&lt;TResult1 \| TResult2&gt; |  |
 

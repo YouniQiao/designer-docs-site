@@ -64,7 +64,7 @@ ocspRequestExtension?: Array<Uint8Array>
 
 OCSP request extensions.
 
-**Type:** Array<Uint8Array>
+**Type:** Array&lt;Uint8Array&gt;
 
 **Since:** 12
 
@@ -140,7 +140,7 @@ options?: Array<RevocationCheckOptions>
 
 A set of rules for obtaining the certificate revocation status.
 
-**Type:** Array<RevocationCheckOptions>
+**Type:** Array&lt;RevocationCheckOptions&gt;
 
 **Since:** 12
 

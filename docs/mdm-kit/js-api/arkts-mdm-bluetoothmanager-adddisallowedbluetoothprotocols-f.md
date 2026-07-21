@@ -6,6 +6,7 @@
 import { bluetoothManager } from '@kit.MDMKit';
 ```
 
+<a id="adddisallowedbluetoothprotocols"></a>
 ## addDisallowedBluetoothProtocols
 
 ```TypeScript
@@ -29,8 +30,8 @@ Adds disallowed Bluetooth protocols. Specified users cannot use the disallowed B
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| accountId | number | Yes | Account ID, which must be greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2) of @ohos.account.osAccount to obtain the account ID. |
-| protocols | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Protocol> | Yes | Bluetooth protocol array, which has a maximum length of 10,000. |
+| accountId | number | Yes | Account ID, which must be greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1) of @ohos.account.osAccount to obtain the account ID. |
+| protocols | Array&lt;Protocol&gt; | Yes | Bluetooth protocol array, which has a maximum length of 10,000. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ try{
 ```
 
 
+<a id="adddisallowedbluetoothprotocols-1"></a>
 ## addDisallowedBluetoothProtocols
 
 ```TypeScript
@@ -88,7 +90,7 @@ Adds protocols to the list of bluetooth server that are disallowed to use.
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | admin indicates the enterprise admin extension ability information. |
 | accountId | number | Yes | accountId indicates the local ID of the OS account<br>The value must be an integer greater than or equal to 0. |
-| protocols | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Protocol> | Yes | protocols of the bluetooth to be added to the list<br>The maximum length is 10000 and cannot be empty. |
+| protocols | Array&lt;Protocol&gt; | Yes | protocols of the bluetooth to be added to the list<br>The maximum length is 10000 and cannot be empty. |
 | policy | [TransferPolicy](arkts-mdm-bluetoothmanager-transferpolicy-e.md) | Yes | policy indicates the policy of transfer. |
 
 **Error codes:**

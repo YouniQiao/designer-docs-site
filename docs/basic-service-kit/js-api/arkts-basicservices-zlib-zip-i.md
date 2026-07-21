@@ -14,6 +14,7 @@ Defines the **Zip** instance. It provides APIs to zip or unzip data in Zlib, Def
 import { zlib } from '@kit.BasicServicesKit';
 ```
 
+<a id="compress"></a>
 ## compress
 
 ```TypeScript
@@ -34,15 +35,15 @@ Compresses the source buffer into the destination buffer. This API uses a promis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dest | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Destination buffer. |
-| source | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Source buffer. |
+| dest | ArrayBuffer | Yes | Destination buffer. |
+| source | ArrayBuffer | Yes | Source buffer. |
 | sourceLen | number | No | Length of the source data. The default value is **0**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ZipOutputInfo> | Promise used to return the result status and the total size of the destination buffer. |
+| Promise&lt;ZipOutputInfo&gt; | Promise used to return the result status and the total size of the destination buffer. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ zip.compress(arrayBufferOut, arrayBufferIn, 20).then((data) => {
 
 ```
 
+<a id="compress2"></a>
 ## compress2
 
 ```TypeScript
@@ -93,8 +95,8 @@ Compresses the source buffer into the destination buffer. This API uses a promis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dest | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Destination buffer. |
-| source | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Source buffer. |
+| dest | ArrayBuffer | Yes | Destination buffer. |
+| source | ArrayBuffer | Yes | Source buffer. |
 | level | [CompressLevel](arkts-basicservices-zlib-compresslevel-e.md) | Yes | For details, see [CompressLevel](arkts-basicservices-zlib-compresslevel-e.md). |
 | sourceLen | number | No | Length of the source data. The default value is **0**. |
 
@@ -102,7 +104,7 @@ Compresses the source buffer into the destination buffer. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ZipOutputInfo> | Promise used to return the result status and the total size of the destination buffer. |
+| Promise&lt;ZipOutputInfo&gt; | Promise used to return the result status and the total size of the destination buffer. |
 
 **Error codes:**
 
@@ -112,6 +114,7 @@ Compresses the source buffer into the destination buffer. This API uses a promis
 | [17800004](../../apis-basic-services-kit/errorcode-zlib.md#17800004-compressed-or-decompressed-flow-error) | Compression or decompression stream error, which may be caused by an initialization error in the zlib stream structure or a modified structure. |
 | [17800007](../../apis-basic-services-kit/errorcode-zlib.md#17800007-incorrect-input-buffer) | The input buffer is incorrect, and the output buffer is too small to accommodate the compressed or decompressed data. |
 
+<a id="compressbound"></a>
 ## compressBound
 
 ```TypeScript
@@ -138,7 +141,7 @@ Calculates the maximum size of the compressed data to be returned. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the maximum size of the compressed data. |
+| Promise&lt;number&gt; | Promise used to return the maximum size of the compressed data. |
 
 **Error codes:**
 
@@ -169,6 +172,7 @@ zip.compressBound(str.length).then((data) => {
 
 ```
 
+<a id="deflate"></a>
 ## deflate
 
 ```TypeScript
@@ -189,14 +193,14 @@ Deflates data. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | flush | [CompressFlushMode](arkts-basicservices-zlib-compressflushmode-e.md) | Yes | For details, see [CompressFlushMode](arkts-basicservices-zlib-compressflushmode-e.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -240,6 +244,7 @@ async function demo() {
 
 ```
 
+<a id="deflatebound"></a>
 ## deflateBound
 
 ```TypeScript
@@ -260,14 +265,14 @@ Calculates the maximum size of the compressed data. This API uses a promise to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | sourceLength | number | Yes | Length of the source data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the maximum size of the compressed data. |
+| Promise&lt;number&gt; | Promise used to return the maximum size of the compressed data. |
 
 **Error codes:**
 
@@ -309,6 +314,7 @@ async function demo() {
 
 ```
 
+<a id="deflatecopy"></a>
 ## deflateCopy
 
 ```TypeScript
@@ -329,13 +335,13 @@ Copies a compression stream. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | [Zip](arkts-basicservices-zlib-zip-i.md) | Yes | For details, see [Zip&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zip-i.md). |
+| source | [Zip](arkts-basicservices-zlib-zip-i.md) | Yes | For details, see [Zip<sup>12+</sup>](arkts-basicservices-zlib-zip-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -378,6 +384,7 @@ async function demo() {
 
 ```
 
+<a id="deflateend"></a>
 ## deflateEnd
 
 ```TypeScript
@@ -398,13 +405,13 @@ Releases all dynamically allocated data structs of a decompression stream. This 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -452,6 +459,7 @@ async function demo() {
 
 ```
 
+<a id="deflategetdictionary"></a>
 ## deflateGetDictionary
 
 ```TypeScript
@@ -472,14 +480,14 @@ Obtains the content and length of the decompression dictionary used in a compres
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
-| dictionary | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer that receives the actual contents of the decompression dictionary. |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
+| dictionary | ArrayBuffer | Yes | Buffer that receives the actual contents of the decompression dictionary. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DictionaryOutputInfo> | Promise used to return the result status and length of the dictionary. |
+| Promise&lt;DictionaryOutputInfo&gt; | Promise used to return the result status and length of the dictionary. |
 
 **Error codes:**
 
@@ -527,6 +535,7 @@ async function demo() {
 
 ```
 
+<a id="deflateinit"></a>
 ## deflateInit
 
 ```TypeScript
@@ -547,14 +556,14 @@ Initializes a compression stream with a specified compression level. This API us
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | level | [CompressLevel](arkts-basicservices-zlib-compresslevel-e.md) | Yes | For details, see [CompressLevel](arkts-basicservices-zlib-compresslevel-e.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -592,6 +601,7 @@ async function demo() {
 
 ```
 
+<a id="deflateinit2"></a>
 ## deflateInit2
 
 ```TypeScript
@@ -615,7 +625,7 @@ Initializes a compression stream with the specified compression level, compressi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | level | [CompressLevel](arkts-basicservices-zlib-compresslevel-e.md) | Yes | For details, see [CompressLevel](arkts-basicservices-zlib-compresslevel-e.md). |
 | method | [CompressMethod](arkts-basicservices-zlib-compressmethod-e.md) | Yes | For details, see [CompressMethod](arkts-basicservices-zlib-compressmethod-e.md). |
 | windowBits | number | Yes | Memory window size. The value is restricted in certain range based on the data formats. The options are as follows:<br>Zlib: [1, 15]<br>Gzip: (15, +∞)<br>Raw Deflate: [-15, -1] |
@@ -626,7 +636,7 @@ Initializes a compression stream with the specified compression level, compressi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -665,6 +675,7 @@ async function demo() {
 
 ```
 
+<a id="deflateparams"></a>
 ## deflateParams
 
 ```TypeScript
@@ -685,7 +696,7 @@ Dynamically updates the compression level and compression strategy. This API use
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | level | [CompressLevel](arkts-basicservices-zlib-compresslevel-e.md) | Yes | For details, see [CompressLevel](arkts-basicservices-zlib-compresslevel-e.md). |
 | strategy | [CompressStrategy](arkts-basicservices-zlib-compressstrategy-e.md) | Yes | For details, see [CompressStrategy](arkts-basicservices-zlib-compressstrategy-e.md). |
 
@@ -693,7 +704,7 @@ Dynamically updates the compression level and compression strategy. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -736,6 +747,7 @@ async function demo() {
 
 ```
 
+<a id="deflatepending"></a>
 ## deflatePending
 
 ```TypeScript
@@ -756,13 +768,13 @@ Returns the number of bytes and bits of output that has been generated but not y
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DeflatePendingOutputInfo> | Promise used to return the result status, and number of bits and bytes for output. |
+| Promise&lt;DeflatePendingOutputInfo&gt; | Promise used to return the result status, and number of bits and bytes for output. |
 
 **Error codes:**
 
@@ -805,6 +817,7 @@ async function demo() {
 
 ```
 
+<a id="deflateprime"></a>
 ## deflatePrime
 
 ```TypeScript
@@ -825,7 +838,7 @@ Inserts bits and values into the compression stream. This API uses a promise to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | bits | number | Yes | Number of bits to be inserted. The value ranges from 0 to 16. |
 | value | number | Yes | Bit value corresponding to the number of bits. |
 
@@ -833,7 +846,7 @@ Inserts bits and values into the compression stream. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -876,6 +889,7 @@ async function demo() {
 
 ```
 
+<a id="deflatereset"></a>
 ## deflateReset
 
 ```TypeScript
@@ -896,13 +910,13 @@ Equivalent to call the **deflateEnd** API and then the **deflateInit** API. Howe
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -945,6 +959,7 @@ async function demo() {
 
 ```
 
+<a id="deflateresetkeep"></a>
 ## deflateResetKeep
 
 ```TypeScript
@@ -965,13 +980,13 @@ Resets the initialized compression stream, but retains the compression parameter
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1014,6 +1029,7 @@ async function demo() {
 
 ```
 
+<a id="deflatesetdictionary"></a>
 ## deflateSetDictionary
 
 ```TypeScript
@@ -1034,14 +1050,14 @@ Initializes the compression dictionary from a given sequence of bytes. This API 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
-| dictionary | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Dictionary data. |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
+| dictionary | ArrayBuffer | Yes | Dictionary data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1084,6 +1100,7 @@ async function demo() {
 
 ```
 
+<a id="deflatesetheader"></a>
 ## deflateSetHeader
 
 ```TypeScript
@@ -1104,14 +1121,14 @@ Provides the header information of a gzip file when **deflateInit2()** requests 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | head | [GzHeader](arkts-basicservices-zlib-gzheader-i.md) | Yes | Header information of a gzip file extracted from the compressed data stream. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1155,6 +1172,7 @@ async function demo() {
 
 ```
 
+<a id="deflatetune"></a>
 ## deflateTune
 
 ```TypeScript
@@ -1175,7 +1193,7 @@ Fine-tunes the internal compression parameters of **deflate**. This API uses a p
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | goodLength | number | Yes | Matched length threshold. |
 | maxLazy | number | Yes | Delay matching strategy used when the compression algorithm builds a Huffman tree. The value is an integer ranging from 0 to 4. **1**–**4**: A larger value indicates a lazier algorithm, which performs a slower matching process but generates a better compression result. **0**: Lazy matching is disabled. The algorithm builds a Huffman tree as soon as possible. The compression speed is fast, but the compression ratio is low. |
 | niceLength | number | Yes | Appropriate delay length threshold. |
@@ -1185,7 +1203,7 @@ Fine-tunes the internal compression parameters of **deflate**. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1228,6 +1246,7 @@ async function demo() {
 
 ```
 
+<a id="getzstream"></a>
 ## getZStream
 
 ```TypeScript
@@ -1248,7 +1267,7 @@ Obtains this stream. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ZStream> | Promise used to return the **ZStream** object. |
+| Promise&lt;ZStream&gt; | Promise used to return the **ZStream** object. |
 
 **Example**
 
@@ -1263,6 +1282,7 @@ zip.getZStream().then(data => {
 
 ```
 
+<a id="inflate"></a>
 ## inflate
 
 ```TypeScript
@@ -1283,14 +1303,14 @@ Inflates data. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | flush | [CompressFlushMode](arkts-basicservices-zlib-compressflushmode-e.md) | Yes | For details, see [CompressFlushMode](arkts-basicservices-zlib-compressflushmode-e.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1355,6 +1375,7 @@ async function demo() {
 
 ```
 
+<a id="inflateback"></a>
 ## inflateBack
 
 ```TypeScript
@@ -1375,7 +1396,7 @@ Implements decompression and uses callbacks to process input and output data. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | backIn | [InflateBackInputCallback](arkts-basicservices-zlib-inflatebackinputcallback-t.md) | Yes | A function used to decompress data from the end of the array to read the original compressed data from the input source. |
 | inDesc | object | Yes | Common object. |
 | backOut | [InflateBackOutputCallback](arkts-basicservices-zlib-inflatebackoutputcallback-t.md) | Yes | Writes the decompressed data to the destination buffer. |
@@ -1385,7 +1406,7 @@ Implements decompression and uses callbacks to process input and output data. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1532,6 +1553,7 @@ async function demo() {
 
 ```
 
+<a id="inflatebackend"></a>
 ## inflateBackEnd
 
 ```TypeScript
@@ -1552,13 +1574,13 @@ Releases all memory allocated by the **inflateBackInit()** function. This API us
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1571,6 +1593,7 @@ Releases all memory allocated by the **inflateBackInit()** function. This API us
 
 For details about the sample code, see [inflateBack](#inflateback12).
 
+<a id="inflatebackinit"></a>
 ## inflateBackInit
 
 ```TypeScript
@@ -1591,15 +1614,15 @@ Initializes the internal stream state for decompression before using the **infla
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | windowBits | number | Yes | Memory window size. The value is restricted in certain range based on the data formats. The options are as follows:<br>Zlib: [1, 15]<br>Gzip: (15, +∞)<br>Raw Deflate: [-15, -1] |
-| window | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Preset window buffer. |
+| window | ArrayBuffer | Yes | Preset window buffer. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1612,6 +1635,7 @@ Initializes the internal stream state for decompression before using the **infla
 
 For details about the sample code, see [inflateBack](#inflateback12).
 
+<a id="inflatecodesused"></a>
 ## inflateCodesUsed
 
 ```TypeScript
@@ -1632,13 +1656,13 @@ Describes the number of Huffman trees used in a decompression stream. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of Huffman trees that have been used. |
+| Promise&lt;number&gt; | Promise used to return the number of Huffman trees that have been used. |
 
 **Error codes:**
 
@@ -1675,6 +1699,7 @@ async function demo() {
 
 ```
 
+<a id="inflatecopy"></a>
 ## inflateCopy
 
 ```TypeScript
@@ -1695,13 +1720,13 @@ Copies a decompression stream. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | [Zip](arkts-basicservices-zlib-zip-i.md) | Yes | For details, see [Zip&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zip-i.md). |
+| source | [Zip](arkts-basicservices-zlib-zip-i.md) | Yes | For details, see [Zip<sup>12+</sup>](arkts-basicservices-zlib-zip-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1740,6 +1765,7 @@ async function demo() {
 
 ```
 
+<a id="inflateend"></a>
 ## inflateEnd
 
 ```TypeScript
@@ -1760,13 +1786,13 @@ Releases all dynamically allocated data structs of a decompression stream. This 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1809,6 +1835,7 @@ async function demo() {
 
 ```
 
+<a id="inflategetdictionary"></a>
 ## inflateGetDictionary
 
 ```TypeScript
@@ -1829,14 +1856,14 @@ Obtains the content and length of the decompression dictionary used in a decompr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
-| dictionary | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Receives the actual contents of the decompression dictionary. |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
+| dictionary | ArrayBuffer | Yes | Receives the actual contents of the decompression dictionary. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DictionaryOutputInfo> | Promise used to return the result status and length of the dictionary. |
+| Promise&lt;DictionaryOutputInfo&gt; | Promise used to return the result status and length of the dictionary. |
 
 **Error codes:**
 
@@ -1874,6 +1901,7 @@ async function demo() {
 
 ```
 
+<a id="inflategetheader"></a>
 ## inflateGetHeader
 
 ```TypeScript
@@ -1894,14 +1922,14 @@ Obtains the header information of a gzip file before decompressing data. This AP
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | header | [GzHeader](arkts-basicservices-zlib-gzheader-i.md) | Yes | Header information of a gzip file extracted from the compressed data stream. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1939,6 +1967,7 @@ async function demo() {
 
 ```
 
+<a id="inflateinit"></a>
 ## inflateInit
 
 ```TypeScript
@@ -1959,13 +1988,13 @@ Initializes a decompression stream. This API uses a promise to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -1998,6 +2027,7 @@ zip.inflateInit({ nextIn: arrayBufferIn, availableIn: 1, nextOut: arrayBufferOut
 
 ```
 
+<a id="inflateinit2"></a>
 ## inflateInit2
 
 ```TypeScript
@@ -2018,14 +2048,14 @@ Initializes a decompression stream with the specified **windowBits**. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | windowBits | number | Yes | Memory window size. The value is restricted in certain range based on the data formats. The options are as follows:<br>Zlib: [1, 15]<br>Gzip: (15, +∞)<br>Raw Deflate: [-15, -1] |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -2059,6 +2089,7 @@ zip.inflateInit2({ nextIn: arrayBufferIn, availableIn: 1, nextOut: arrayBufferOu
 
 ```
 
+<a id="inflatemark"></a>
 ## inflateMark
 
 ```TypeScript
@@ -2079,13 +2110,13 @@ Marks the location of the input data for random access. This API uses a promise 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the current location. |
+| Promise&lt;number&gt; | Promise used to return the current location. |
 
 **Error codes:**
 
@@ -2122,6 +2153,7 @@ async function demo() {
 
 ```
 
+<a id="inflateprime"></a>
 ## inflatePrime
 
 ```TypeScript
@@ -2142,7 +2174,7 @@ Sets the initial number of bits and bit value in the specified decompression str
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | bits | number | Yes | Number of bits to be written to the bit buffer. |
 | value | number | Yes | Bit value used to fill the bit buffer. |
 
@@ -2150,7 +2182,7 @@ Sets the initial number of bits and bit value in the specified decompression str
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -2188,6 +2220,7 @@ async function demo() {
 
 ```
 
+<a id="inflatereset"></a>
 ## inflateReset
 
 ```TypeScript
@@ -2208,13 +2241,13 @@ Resets the status of the specified decompression stream to the initial state to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -2252,6 +2285,7 @@ async function demo() {
 
 ```
 
+<a id="inflatereset2"></a>
 ## inflateReset2
 
 ```TypeScript
@@ -2272,14 +2306,14 @@ Resets the status of the specified decompression stream and updates the window s
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | windowBits | number | Yes | Memory window size. The value is restricted in certain range based on the data formats. The options are as follows:<br>Zlib: [1, 15]<br>Gzip: (15, +∞)<br>Raw Deflate: [-15, -1] |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -2317,6 +2351,7 @@ async function demo() {
 
 ```
 
+<a id="inflateresetkeep"></a>
 ## inflateResetKeep
 
 ```TypeScript
@@ -2337,13 +2372,13 @@ Resets the state of the decompression stream to retain the allocated Huffman tre
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -2381,6 +2416,7 @@ async function demo() {
 
 ```
 
+<a id="inflatesetdictionary"></a>
 ## inflateSetDictionary
 
 ```TypeScript
@@ -2401,14 +2437,14 @@ Initializes the dictionary content of a decompression stream based on the given 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
-| dictionary | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Dictionary data. |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
+| dictionary | ArrayBuffer | Yes | Dictionary data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -2484,6 +2520,7 @@ async function demo() {
 
 ```
 
+<a id="inflatesync"></a>
 ## inflateSync
 
 ```TypeScript
@@ -2504,13 +2541,13 @@ Skips invalid compressed data until a possible complete refresh point is found. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -2581,6 +2618,7 @@ async function demo() {
 
 ```
 
+<a id="inflatesyncpoint"></a>
 ## inflateSyncPoint
 
 ```TypeScript
@@ -2601,13 +2639,13 @@ Finds the synchronization point of a decompression stream. This API uses a promi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -2645,6 +2683,7 @@ async function demo() {
 
 ```
 
+<a id="inflatevalidate"></a>
 ## inflateValidate
 
 ```TypeScript
@@ -2665,14 +2704,14 @@ Validates the checksum inside the compression stream. This API uses a promise to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream&lt;sup&gt;12+&lt;/sup&gt;](arkts-basicservices-zlib-zstream-i.md). |
+| strm | [ZStream](arkts-basicservices-zlib-zstream-i.md) | Yes | For details, see [ZStream<sup>12+</sup>](arkts-basicservices-zlib-zstream-i.md). |
 | check | number | Yes | Expected checksum. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result status. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result status. |
 
 **Error codes:**
 
@@ -2710,6 +2749,7 @@ async function demo() {
 
 ```
 
+<a id="uncompress"></a>
 ## uncompress
 
 ```TypeScript
@@ -2730,15 +2770,15 @@ Decompresses the compressed data into the raw data. This API uses a promise to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dest | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Destination buffer. |
-| source | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Source buffer. |
+| dest | ArrayBuffer | Yes | Destination buffer. |
+| source | ArrayBuffer | Yes | Source buffer. |
 | sourceLen | number | No | Length of the source data. The default value is **0**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ZipOutputInfo> | Promise used to return the result status and the total size of the destination buffer. |
+| Promise&lt;ZipOutputInfo&gt; | Promise used to return the result status and the total size of the destination buffer. |
 
 **Error codes:**
 
@@ -2776,6 +2816,7 @@ async function demo() {
 
 ```
 
+<a id="uncompress2"></a>
 ## uncompress2
 
 ```TypeScript
@@ -2796,15 +2837,15 @@ Decompresses the compressed data into the raw data. This API uses a promise to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dest | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Destination buffer. |
-| source | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Source buffer. |
+| dest | ArrayBuffer | Yes | Destination buffer. |
+| source | ArrayBuffer | Yes | Source buffer. |
 | sourceLen | number | No | Length of the source data. The default value is **0**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DecompressionOutputInfo> | Promise used to return the result status, total size of the destination buffer, and the length of the source data. |
+| Promise&lt;DecompressionOutputInfo&gt; | Promise used to return the result status, total size of the destination buffer, and the length of the source data. |
 
 **Error codes:**
 
@@ -2842,6 +2883,7 @@ async function demo() {
 
 ```
 
+<a id="zlibcompileflags"></a>
 ## zlibCompileFlags
 
 ```TypeScript
@@ -2862,7 +2904,7 @@ Returns the flags indicating compile-time options. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the flags indicating compile-time options. |
+| Promise&lt;number&gt; | Promise used to return the flags indicating compile-time options. |
 
 **Example**
 
@@ -2877,6 +2919,7 @@ zip.zlibCompileFlags().then((data) => {
 
 ```
 
+<a id="zlibversion"></a>
 ## zlibVersion
 
 ```TypeScript
@@ -2897,7 +2940,7 @@ Obtains the version information of this zlib library connected. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the version of the current zlib library. |
+| Promise&lt;string&gt; | Promise used to return the version of the current zlib library. |
 
 **Example**
 

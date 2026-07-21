@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="p2pconnect"></a>
 ## p2pConnect
 
 ```TypeScript

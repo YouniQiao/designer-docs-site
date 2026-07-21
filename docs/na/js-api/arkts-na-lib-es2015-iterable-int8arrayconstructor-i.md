@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Int8ArrayConstructor--><!--Device-unnamed-interface Int8ArrayConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -14,14 +15,15 @@ new (elements: Iterable<number>): Int8Array
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elements | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes |  |
+| elements | Iterable&lt;number&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Int8Array](arkts-na-lib-es5-int8array-i.md) |  |
+| Int8Array |  |
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -36,13 +38,13 @@ Creates an array from an array-like or iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes |  |
-| mapfn | (v: number, k: number) => number | No |  |
+| arrayLike | Iterable&lt;number&gt; | Yes |  |
+| mapfn | (v: number, k: number) =&gt; number | No |  |
 | thisArg | any | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Int8Array](arkts-na-lib-es5-int8array-i.md) |  |
+| Int8Array |  |
 

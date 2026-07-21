@@ -6,6 +6,7 @@
 import { bundle } from '@kit.AbilityKit';
 ```
 
+<a id="getapplicationinfo"></a>
 ## getApplicationInfo
 
 ```TypeScript
@@ -36,9 +37,10 @@ No permission is required for obtaining the caller's own information.
 | bundleName | string | Yes | Bundle name. |
 | bundleFlags | number | Yes | Type of information that will be returned. For details about the available enumerated values, see the application information flags in [BundleFlag](arkts-ability-bundle-bundleflag-e.md). |
 | userId | number | Yes | User ID. The value must be greater than or equal to 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ApplicationInfo> | Yes | Callback used to return the application information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ApplicationInfo&gt; | Yes | Callback used to return the application information. |
 
 
+<a id="getapplicationinfo-1"></a>
 ## getApplicationInfo
 
 ```TypeScript
@@ -65,9 +67,10 @@ No permission is required for obtaining the caller's own information.
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | bundleFlags | number | Yes | Type of information that will be returned. For details about the available enumerated values, see the application information flags in [BundleFlag](arkts-ability-bundle-bundleflag-e.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ApplicationInfo> | Yes | Callback used to return the application information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ApplicationInfo&gt; | Yes | Callback used to return the application information. |
 
 
+<a id="getapplicationinfo-2"></a>
 ## getApplicationInfo
 
 ```TypeScript
@@ -100,5 +103,5 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ApplicationInfo> | Promise used to return the application information. |
+| Promise&lt;ApplicationInfo&gt; | Promise used to return the application information. |
 

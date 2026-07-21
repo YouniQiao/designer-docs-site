@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setpriorityintelligentenabled"></a>
 ## setPriorityIntelligentEnabled
 
 ```TypeScript
@@ -36,7 +37,7 @@ Sets the enabling status of the intelligent priority notification service. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

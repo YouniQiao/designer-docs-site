@@ -14,6 +14,7 @@ PlainArray stores key-value (KV) pairs. Each key must be unique, be of the numbe
 import { PlainArray } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[number, T]> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[number, T]&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -108,6 +110,7 @@ console.info("result:", plainArray.get(1));  // result: squirrel
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -142,6 +145,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="clone"></a>
 ## clone
 
 ```TypeScript
@@ -162,7 +166,7 @@ Clones this PlainArray and returns a copy. The modification to the copy does not
 
 | Type | Description |
 | --- | --- |
-| [PlainArray](arkts-arkts-util-plainarray-plainarray-c.md)<T> | New **PlainArray** instance obtained. |
+| [PlainArray](arkts-arkts-util-plainarray-plainarray-c.md)&lt;T&gt; | New **PlainArray** instance obtained. |
 
 **Error codes:**
 
@@ -181,6 +185,7 @@ console.info("result:", newPlainArray.get(1));  // result: squirrel
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -210,6 +215,7 @@ let plainArray = new PlainArray<string>();
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -230,8 +236,8 @@ Uses a callback to traverse each element in the **PlainArray** instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, PlainArray?: PlainArray<T>) => void | Yes | Callback invoked to traverse the elements in the PlainArray. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, PlainArray?: PlainArray&lt;T&gt;) =&gt; void | Yes | Callback invoked to traverse the elements in the PlainArray. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -266,6 +272,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -311,6 +318,7 @@ console.info("result:", result);  // result: squirrel
 
 ```
 
+<a id="getindexofkey"></a>
 ## getIndexOfKey
 
 ```TypeScript
@@ -356,6 +364,7 @@ console.info("result = ", result); // result = 1
 
 ```
 
+<a id="getindexofvalue"></a>
 ## getIndexOfValue
 
 ```TypeScript
@@ -401,6 +410,7 @@ console.info("result:", result);  // result: 0
 
 ```
 
+<a id="getkeyat"></a>
 ## getKeyAt
 
 ```TypeScript
@@ -446,6 +456,7 @@ console.info("result = ", result); // result = 2
 
 ```
 
+<a id="getvalueat"></a>
 ## getValueAt
 
 ```TypeScript
@@ -492,6 +503,7 @@ console.info("result:", result);  // result: sparrow
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -536,6 +548,7 @@ console.info("result = ", result); // result = true
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -573,6 +586,7 @@ console.info("result = ", result); // result =  true
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -618,6 +632,7 @@ console.info("result:", result);  // result: sparrow
 
 ```
 
+<a id="removeat"></a>
 ## removeAt
 
 ```TypeScript
@@ -663,6 +678,7 @@ console.info("result:", result);  // result: sparrow
 
 ```
 
+<a id="removerangefrom"></a>
 ## removeRangeFrom
 
 ```TypeScript
@@ -710,6 +726,7 @@ console.info("result:", result);  // result: 1
 
 ```
 
+<a id="setvalueat"></a>
 ## setValueAt
 
 ```TypeScript
@@ -752,6 +769,7 @@ console.info("result:", result);  // result: 3546
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -772,7 +790,7 @@ Obtains a string that contains all elements in this PlainArray.
 
 | Type | Description |
 | --- | --- |
-| [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | String obtained. |
+| String | String obtained. |
 
 **Error codes:**
 

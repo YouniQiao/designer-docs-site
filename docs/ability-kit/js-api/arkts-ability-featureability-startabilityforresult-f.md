@@ -6,6 +6,7 @@
 import { featureAbility } from '@kit.AbilityKit';
 ```
 
+<a id="startabilityforresult"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -21,7 +22,7 @@ Starts an ability. This API uses an asynchronous callback to return the result. 
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the FA model, see  
-> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
+> [Component Startup Rules (FA Model)](docroot://application-models/component-startup-rules-fa.md).
 
 **Since:** 7
 
@@ -36,7 +37,7 @@ Starts an ability. This API uses an asynchronous callback to return the result. 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | parameter | [StartAbilityParameter](arkts-ability-ability-startabilityparameter-t.md) | Yes | Ability to start. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityResult> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is an AbilityResult object; otherwise, err is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AbilityResult&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is an AbilityResult object; otherwise, err is an error object. |
 
 **Example**
 
@@ -70,6 +71,7 @@ featureAbility.startAbilityForResult(
 ```
 
 
+<a id="startabilityforresult-1"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -85,7 +87,7 @@ Starts an ability. This API uses a promise to return the result. The following s
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the FA model, see  
-> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
+> [Component Startup Rules (FA Model)](docroot://application-models/component-startup-rules-fa.md).
 
 **Since:** 7
 
@@ -105,7 +107,7 @@ Starts an ability. This API uses a promise to return the result. The following s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Promise used to return the result. |
+| Promise&lt;AbilityResult&gt; | Promise used to return the result. |
 
 **Example**
 

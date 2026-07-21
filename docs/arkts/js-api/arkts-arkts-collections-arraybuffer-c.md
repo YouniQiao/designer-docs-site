@@ -21,6 +21,7 @@ Underlying data structure of the ArkTS TypedArray ([Int8Array](arkts-collections
 import { collections } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -49,6 +50,7 @@ A constructor used to create an ArkTS ArrayBuffer of a given length.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The ArrayBuffer's constructor cannot be directly invoked. |
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript
@@ -76,7 +78,7 @@ Selects a range of elements in this ArkTS ArrayBuffer to create an ArkTS ArrayBu
 
 | Type | Description |
 | --- | --- |
-| [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md) | New ArrayBuffer generated. |
+| ArrayBuffer | New ArrayBuffer generated. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { appMemoryOptimizer } from '@kit.AbilityKit';
 ```
 
+<a id="evictmodulefilepages"></a>
 ## evictModuleFilePages
 
 ```TypeScript
@@ -28,13 +29,13 @@ Configuration file path: {Module directory}/src/main/resources/rawfile/memory_op
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| moduleNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of module names for which file page cache needs to be released. |
+| moduleNames | Array&lt;string&gt; | Yes | Array of module names for which file page cache needs to be released. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

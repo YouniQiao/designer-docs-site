@@ -20,6 +20,7 @@ You can use the APIs of this module to start StaticSubscriberExtensionAbilities.
 import { StaticSubscriberExtensionContext } from '@kit.BasicServicesKit';
 ```
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -50,7 +51,7 @@ Observe the following when using this API:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -109,6 +110,7 @@ class MyStaticSubscriberExtensionAbility extends StaticSubscriberExtensionAbilit
 
 ```
 
+<a id="startability-1"></a>
 ## startAbility
 
 ```TypeScript
@@ -144,7 +146,7 @@ Observe the following when using this API:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

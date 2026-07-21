@@ -6,6 +6,7 @@
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="createtoneplayer"></a>
 ## createTonePlayer
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains a {@link TonePlayer} instance. This method uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [AudioRendererInfo](arkts-audio-audio-audiorendererinfo-i.md) | Yes | Tone playing attribute. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<TonePlayer> | Yes | Callback used to return the tonePlayer instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;TonePlayer&gt; | Yes | Callback used to return the tonePlayer instance. |
 
 **Example**
 
@@ -53,6 +54,7 @@ audio.createTonePlayer(audioRendererInfo, (err, data) => {
 ```
 
 
+<a id="createtoneplayer-1"></a>
 ## createTonePlayer
 
 ```TypeScript
@@ -79,7 +81,7 @@ Obtains a {@link TonePlayer} instance. This method uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<TonePlayer> | Promise used to return the tonePlayer instance. |
+| Promise&lt;TonePlayer&gt; | Promise used to return the tonePlayer instance. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { deviceStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="getdevicerotationradian"></a>
 ## getDeviceRotationRadian
 
 ```TypeScript
@@ -28,7 +29,7 @@ The posture data contains the rotation angles of the x, y, and z axes, that is, 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DeviceRotationRadian> | The result of device rotation radian. |
+| Promise&lt;DeviceRotationRadian&gt; | The result of device rotation radian. |
 
 **Error codes:**
 

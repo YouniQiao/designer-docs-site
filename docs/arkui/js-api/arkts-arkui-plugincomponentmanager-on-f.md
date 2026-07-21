@@ -6,6 +6,7 @@
 import { PluginComponentTemplate } from '@kit.ArkUI';
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -27,7 +28,7 @@ Plugin component event listener.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | string | Yes |  |
-| callback | OnPushEventCallback \| OnRequestEventCallback | Yes |  |
+| callback | [OnPushEventCallback](arkts-arkui-plugincomponentmanager-onpusheventcallback-t.md) \| OnRequestEventCallback | Yes |  |
 
 **Example**
 

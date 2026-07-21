@@ -1,6 +1,6 @@
 # AppStateData
 
-The module defines the application state information. Once an application state change listener is registered using [on](arkts-ability-appmanager-on-f.md#on-1),the system triggers the [onForegroundApplicationChanged](../../../../reference/apis-ability-kit/js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronforegroundapplicationchanged)callback of [ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md) to deliver notifications whenever the state of an application, process, or ability changes.
+The module defines the application state information. Once an application state change listener is registered using [on](@ohos.app.ability.appManager:appManager.on(type: 'applicationState', observer: ApplicationStateObserver)),the system triggers the [onForegroundApplicationChanged](docroot://reference/apis-ability-kit/js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronforegroundapplicationchanged)callback of [ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md) to deliver notifications whenever the state of an application, process, or ability changes.
 
 **Since:** 14
 

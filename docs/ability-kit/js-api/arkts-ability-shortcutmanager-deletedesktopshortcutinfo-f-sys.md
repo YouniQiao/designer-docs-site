@@ -6,6 +6,7 @@
 import { shortcutManager } from '@kit.AbilityKit';
 ```
 
+<a id="deletedesktopshortcutinfo"></a>
 ## deleteDesktopShortcutInfo
 
 ```TypeScript
@@ -35,7 +36,7 @@ Deletes a shortcut for the given user. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

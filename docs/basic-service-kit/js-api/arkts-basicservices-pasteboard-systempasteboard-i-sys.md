@@ -14,6 +14,7 @@ Provides **SystemPasteboard** APIs.Before calling any **SystemPasteboard** API, 
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
+<a id="removeappshareoptions"></a>
 ## removeAppShareOptions
 
 ```TypeScript
@@ -53,6 +54,7 @@ try {
 
 ```
 
+<a id="setappshareoptions"></a>
 ## setAppShareOptions
 
 ```TypeScript

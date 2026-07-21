@@ -74,7 +74,7 @@ Default value: **true**.
 
 **NOTE**
 
-If an application is switched to the background and is later closed by the system due to resource constraints or other reasons, a page marked as recoverable can be restored by the system when the application is brought back to the foreground. For more details, see [UIAbility Backup and Restore](../../../../application-models/ability-recover-guideline.md).
+If an application is switched to the background and is later closed by the system due to resource constraints or other reasons, a page marked as recoverable can be restored by the system when the application is brought back to the foreground. For more details, see [UIAbility Backup and Restore](docroot://application-models/ability-recover-guideline.md).
 
 **Type:** boolean
 

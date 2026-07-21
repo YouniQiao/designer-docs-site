@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="createpkcs12"></a>
 ## createPkcs12
 
 ```TypeScript
@@ -33,7 +34,7 @@ Creates P12. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the P12 created, in DER format. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the P12 created, in DER format. |
 
 **Error codes:**
 

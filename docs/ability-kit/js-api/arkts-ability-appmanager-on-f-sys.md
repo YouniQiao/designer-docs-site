@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="on"></a>
 ## on('applicationState')
 
 ```TypeScript
@@ -36,7 +37,7 @@ Registers an application state observer, which allows you to filter for specific
 
 | Type | Description |
 | --- | --- |
-| number | ID of the observer registered. You can pass this ID to [off](arkts-ability-appmanager-off-f.md#off-2) to unregister the observer. |
+| number | ID of the observer registered. You can pass this ID to [off](@ohos.app.ability.appManager:appManager.off(type: 'applicationState', observerId: int)) to unregister the observer. |
 
 **Error codes:**
 
@@ -100,6 +101,7 @@ try {
 ```
 
 
+<a id="on-1"></a>
 ## on('appForegroundState')
 
 ```TypeScript
@@ -157,6 +159,7 @@ try {
 ```
 
 
+<a id="on-2"></a>
 ## on('abilityFirstFrameState')
 
 ```TypeScript

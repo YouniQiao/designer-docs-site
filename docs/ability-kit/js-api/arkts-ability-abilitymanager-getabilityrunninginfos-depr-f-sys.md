@@ -1,5 +1,6 @@
 # getAbilityRunningInfos (System API)
 
+<a id="getabilityrunninginfos"></a>
 ## getAbilityRunningInfos
 
 ```TypeScript
@@ -26,9 +27,10 @@ Obtains the ability running information. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AbilityRunningInfo>> | Promise used to return the ability running information. |
+| Promise&lt;Array&lt;AbilityRunningInfo&gt;&gt; | Promise used to return the ability running information. |
 
 
+<a id="getabilityrunninginfos-1"></a>
 ## getAbilityRunningInfos
 
 ```TypeScript
@@ -55,5 +57,5 @@ Obtains the ability running information. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AbilityRunningInfo>> | Yes | Callback used to return the ability running information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AbilityRunningInfo&gt;&gt; | Yes | Callback used to return the ability running information. |
 

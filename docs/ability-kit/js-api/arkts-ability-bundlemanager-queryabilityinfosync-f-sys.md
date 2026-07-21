@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="queryabilityinfosync"></a>
 ## queryAbilityInfoSync
 
 ```TypeScript
@@ -38,7 +39,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AbilityInfo> | An array of ability information. |
+| Array&lt;AbilityInfo&gt; | An array of ability information. |
 
 **Error codes:**
 

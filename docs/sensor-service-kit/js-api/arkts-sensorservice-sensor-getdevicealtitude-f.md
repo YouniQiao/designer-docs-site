@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getdevicealtitude"></a>
 ## getDeviceAltitude
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the altitude based on the atmospheric pressure. This API uses an asynchr
 | --- | --- | --- | --- |
 | seaPressure | number | Yes | Sea-level atmospheric pressure, in hPa. |
 | currentPressure | number | Yes | Specified atmospheric pressure, in hPa. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the altitude, in meters. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the altitude, in meters. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ try {
 ```
 
 
+<a id="getdevicealtitude-1"></a>
 ## getDeviceAltitude
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains the altitude based on the atmospheric pressure. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the altitude, in meters. |
+| Promise&lt;number&gt; | Promise used to return the altitude, in meters. |
 
 **Error codes:**
 

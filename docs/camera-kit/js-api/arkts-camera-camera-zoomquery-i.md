@@ -14,6 +14,7 @@ Provides the API to obtain the equivalent focal length information list in the c
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getrawcapturezoomratiorange"></a>
 ## getRAWCaptureZoomRatioRange
 
 ```TypeScript
@@ -36,7 +37,7 @@ Gets supported zoom ratio range during raw-capture.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | The zoom ratio range. |
+| Array&lt;number&gt; | The zoom ratio range. |
 
 **Error codes:**
 
@@ -45,6 +46,7 @@ Gets supported zoom ratio range during raw-capture.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getzoomratiorange"></a>
 ## getZoomRatioRange
 
 ```TypeScript
@@ -65,7 +67,7 @@ Obtains the supported zoom ratio range.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array containing the minimum and maximum zoom ratios. If the operation fails,undefined is returned and an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is thrown. |
+| Array&lt;number&gt; | Array containing the minimum and maximum zoom ratios. If the operation fails,undefined is returned and an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is thrown. |
 
 **Error codes:**
 

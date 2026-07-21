@@ -6,6 +6,7 @@
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="createpixelmapusingallocatorsync"></a>
 ## createPixelMapUsingAllocatorSync
 
 ```TypeScript
@@ -27,7 +28,7 @@ Create pixelmap by data buffer based on opts, the memory type used by the PixelM
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colors | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | The image color buffer. |
+| colors | ArrayBuffer | Yes | The image color buffer. |
 | param | [InitializationOptions](arkts-image-image-initializationoptions-i.md) | Yes | Initialization options for pixelmap. |
 | allocatorType | [AllocatorType](arkts-image-image-allocatortype-e.md) | No | Indicate which memory type will be used by the returned PixelMap. |
 
@@ -63,6 +64,7 @@ function CreatePixelMapSync() {
 ```
 
 
+<a id="createpixelmapusingallocatorsync-1"></a>
 ## createPixelMapUsingAllocatorSync
 
 ```TypeScript

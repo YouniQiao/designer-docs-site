@@ -14,6 +14,7 @@ Creates an **Animator** object.
 import { AnimatorOptions, SimpleAnimatorOptions, AnimatorResult } from '@kit.ArkUI';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -25,7 +26,7 @@ Creates an **AnimatorResult** object for animations.
 > **NOTE**  
 >  
 > - Since API version 10, you can use the  
-> [createAnimator](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#createanimator) API in  
+> [createAnimator](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#createanimator) API in  
 > [UIContext](arkts-arkui-uicontext.md), which ensures that the object is created in the intended UI instance.
 
 **Since:** 9
@@ -79,13 +80,14 @@ animator.create(options); // You are advised to use UIContext.createAnimator().
 
 ```
 
+<a id="create-1"></a>
 ## create
 
 ```TypeScript
 static create(options: AnimatorOptions | SimpleAnimatorOptions): AnimatorResult
 ```
 
-Creates an **AnimatorResult** object for animations. Compared with [create](Animator.create(options: AnimatorOptions)), this API accepts parameters of the [SimpleAnimatorOptions](arkts-arkui-animator-simpleanimatoroptions-c.md) type.
+Creates an **AnimatorResult** object for animations. Compared with [create](arkts-arkui-animator-animator-c.md#create-1), this API accepts parameters of the [SimpleAnimatorOptions](arkts-arkui-animator-simpleanimatoroptions-c.md) type.
 
 **Since:** 18
 
@@ -101,7 +103,7 @@ Creates an **AnimatorResult** object for animations. Compared with [create](Anim
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | AnimatorOptions \| SimpleAnimatorOptions | Yes | Parameters of the animation. |
+| options | [AnimatorOptions](arkts-arkui-animator-animatoroptions-i.md) \| SimpleAnimatorOptions | Yes | Parameters of the animation. |
 
 **Return value:**
 
@@ -126,6 +128,7 @@ animator.create(options);// You are advised to use UIContext.createAnimator().
 
 ```
 
+<a id="createanimator"></a>
 ## createAnimator
 
 ```TypeScript

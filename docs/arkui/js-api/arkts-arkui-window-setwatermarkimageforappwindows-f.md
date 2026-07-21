@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="setwatermarkimageforappwindows"></a>
 ## setWatermarkImageForAppWindows
 
 ```TypeScript
@@ -30,7 +31,7 @@ Sets a watermark image for windows in the current application process. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

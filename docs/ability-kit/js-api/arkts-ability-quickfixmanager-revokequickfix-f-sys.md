@@ -6,6 +6,7 @@
 import { quickFixManager } from '@kit.AbilityKit';
 ```
 
+<a id="revokequickfix"></a>
 ## revokeQuickFix
 
 ```TypeScript
@@ -29,7 +30,7 @@ Revokes quick fix. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Name of the bundle for which the patch needs to be revoked. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If quick fix is revoked, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If quick fix is revoked, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ quickFixManager.revokeQuickFix(bundleName, (err) => {
 ```
 
 
+<a id="revokequickfix-1"></a>
 ## revokeQuickFix
 
 ```TypeScript
@@ -85,7 +87,7 @@ Revokes quick fix. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

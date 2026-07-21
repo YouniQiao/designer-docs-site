@@ -6,6 +6,7 @@
 import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="requesttrace"></a>
 ## requestTrace
 
 ```TypeScript
@@ -34,7 +35,7 @@ Requests trace collection with the specified configuration.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the path of the trace file. |
+| Promise&lt;string&gt; | Returns the path of the trace file. |
 
 **Error codes:**
 

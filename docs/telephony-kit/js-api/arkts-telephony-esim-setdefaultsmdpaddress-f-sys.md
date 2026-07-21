@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="setdefaultsmdpaddress"></a>
 ## setDefaultSmdpAddress
 
 ```TypeScript
@@ -35,7 +36,7 @@ Set or update the default SM-DP+ address stored in an eUICC.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultCode> | Returns the result code. |
+| Promise&lt;ResultCode&gt; | Returns the result code. |
 
 **Error codes:**
 

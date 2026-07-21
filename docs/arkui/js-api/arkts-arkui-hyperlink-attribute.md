@@ -10,6 +10,7 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="color"></a>
 ## color
 
 ```TypeScript
@@ -30,5 +31,5 @@ Sets the color of the hyperlink text.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Color \| number \| string \| Resource | Yes | Color of the hyperlink text<br>&lt;!--RP1--&gt;Default value: '#ff007dff', indicating blue.&lt;!--RP1End--&gt; |
+| value | [Color](../../apis-arkgraphics3d/arkts-apis/arkts-arkgraphics3d-scenetypes-color-i.md) \| number \| string \| Resource | Yes | Color of the hyperlink text<br><!--RP1-->Default value: '#ff007dff', indicating blue.<!--RP1End--> |
 

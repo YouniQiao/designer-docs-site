@@ -6,6 +6,7 @@
 import { featureAbility } from '@kit.AbilityKit';
 ```
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -17,7 +18,7 @@ Starts an ability. This API uses an asynchronous callback to return the result.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the FA model, see  
-> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
+> [Component Startup Rules (FA Model)](docroot://application-models/component-startup-rules-fa.md).
 
 **Since:** 6
 
@@ -32,7 +33,7 @@ Starts an ability. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | parameter | [StartAbilityParameter](arkts-ability-ability-startabilityparameter-t.md) | Yes | Ability to start. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **0**; otherwise, **err** is a non-zero value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **0**; otherwise, **err** is a non-zero value. |
 
 **Example**
 
@@ -66,6 +67,7 @@ featureAbility.startAbility(
 ```
 
 
+<a id="startability-1"></a>
 ## startAbility
 
 ```TypeScript
@@ -77,7 +79,7 @@ Starts an ability. This API uses a promise to return the result.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the FA model, see  
-> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
+> [Component Startup Rules (FA Model)](docroot://application-models/component-startup-rules-fa.md).
 
 **Since:** 6
 
@@ -97,7 +99,7 @@ Starts an ability. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the operation is successful, **0** is returned;otherwise, a non-zero value is returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the operation is successful, **0** is returned;otherwise, a non-zero value is returned. |
 
 **Example**
 

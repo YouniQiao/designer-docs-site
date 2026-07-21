@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="subscribemanagedevent"></a>
 ## subscribeManagedEvent
 
 ```TypeScript
@@ -35,8 +36,8 @@ Subscribes to system management events. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| managedEvents | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ManagedEvent> | Yes | Array of events to subscribe to. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| managedEvents | Array&lt;ManagedEvent&gt; | Yes | Array of events to subscribe to. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -72,6 +73,7 @@ adminManager.subscribeManagedEvent(wantTemp, events, (err) => {
 ```
 
 
+<a id="subscribemanagedevent-1"></a>
 ## subscribeManagedEvent
 
 ```TypeScript
@@ -101,13 +103,13 @@ Subscribes to system management events. This API uses a promise to return the re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| managedEvents | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ManagedEvent> | Yes | Array of events to subscribe to. |
+| managedEvents | Array&lt;ManagedEvent&gt; | Yes | Array of events to subscribe to. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. When a system event fails to be subscribed to, an error object is thrown. |
+| Promise&lt;void&gt; | Promise that returns no value. When a system event fails to be subscribed to, an error object is thrown. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="getallactiveifaces"></a>
 ## getAllActiveIfaces
 
 ```TypeScript
@@ -28,7 +29,7 @@ Gets the names of all active network interfaces.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | the callback of getAllActiveIfaces. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | the callback of getAllActiveIfaces. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ ethernet.getAllActiveIfaces((error: BusinessError, value: string[]) => {
 ```
 
 
+<a id="getallactiveifaces-1"></a>
 ## getAllActiveIfaces
 
 ```TypeScript
@@ -81,7 +83,7 @@ Gets the names of all active network interfaces.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | the promise returned by the function. |
+| Promise&lt;Array&lt;string&gt;&gt; | the promise returned by the function. |
 
 **Error codes:**
 

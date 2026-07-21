@@ -21,6 +21,7 @@ A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collect
 import { collections } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -41,7 +42,7 @@ Returns an iterator that iterates over numbers.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> | Iterator object that yields numbers. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;number&gt; | Iterator object that yields numbers. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ Returns an iterator that iterates over numbers.
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The Symbol.iterator method cannot be bound. |
 
+<a id="at"></a>
 ## at
 
 ```TypeScript
@@ -84,6 +86,7 @@ Returns the element at the given index. If no element is found, **undefined** is
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The at method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -106,6 +109,7 @@ A constructor used to create an empty ArkTS Uint32Array.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Uint32Array's constructor cannot be directly invoked. |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -134,6 +138,7 @@ A constructor used to create an ArkTS Uint32Array of a given length.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Uint32Array's constructor cannot be directly invoked. |
 
+<a id="constructor-2"></a>
 ## constructor
 
 ```TypeScript
@@ -154,7 +159,7 @@ A constructor that creates an ArkTS Uint32Array from an iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elements | [Iterable](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes | An iterable collection of numbers used to construct an ArkTS Uint32Array object. |
+| elements | Iterable&lt;number&gt; | Yes | An iterable collection of numbers used to construct an ArkTS Uint32Array object. |
 
 **Error codes:**
 
@@ -162,6 +167,7 @@ A constructor that creates an ArkTS Uint32Array from an iterable object.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Uint32Array's constructor cannot be directly invoked. |
 
+<a id="constructor-3"></a>
 ## constructor
 
 ```TypeScript
@@ -182,7 +188,7 @@ A constructor that creates an ArkTS Uint32Array from an array-like object or Ark
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| array | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<number> \| ArrayBuffer | Yes | Object used to construct the ArkTS Uint32Array. When the parameter type is ArrayBuffer, the number of bytes occupied by the buffer must be an integer multiple of 4. |
+| array | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; \| ArrayBuffer | Yes | Object used to construct the ArkTS Uint32Array. When the parameter type is ArrayBuffer, the number of bytes occupied by the buffer must be an integer multiple of 4. |
 
 **Error codes:**
 
@@ -190,6 +196,7 @@ A constructor that creates an ArkTS Uint32Array from an array-like object or Ark
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Uint32Array's constructor cannot be directly invoked. |
 
+<a id="constructor-4"></a>
 ## constructor
 
 ```TypeScript
@@ -210,7 +217,7 @@ A constructor that creates an ArkTS Uint32Array from an ArrayBuffer.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md) | Yes | ArrayBuffer object used to construct the ArkTS Uint32Array. The number of bytes occupied by the buffer must be an integer multiple of 4. |
+| buffer | ArrayBuffer | Yes | ArrayBuffer object used to construct the ArkTS Uint32Array. The number of bytes occupied by the buffer must be an integer multiple of 4. |
 | byteOffset | number | No | Byte offset of the buffer, beginning at 0. The default value is **0**. |
 | length | number | No | Length of the ArkTS Uint32Array. The default value is **0**. |
 
@@ -220,6 +227,7 @@ A constructor that creates an ArkTS Uint32Array from an ArrayBuffer.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Uint32Array's constructor cannot be directly invoked. |
 
+<a id="copywithin"></a>
 ## copyWithin
 
 ```TypeScript
@@ -248,7 +256,7 @@ Copies elements within a given range from this ArkTS Uint32Array to another posi
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | ArkTS Uint32Array after being modified. |
+| Uint32Array | ArkTS Uint32Array after being modified. |
 
 **Error codes:**
 
@@ -257,6 +265,7 @@ Copies elements within a given range from this ArkTS Uint32Array to another posi
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The copyWithin method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -277,7 +286,7 @@ Returns an iterator object that contains the key-value pair of each element in t
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[number, number]> | Iterator object. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[number, number]&gt; | Iterator object. |
 
 **Error codes:**
 
@@ -286,6 +295,7 @@ Returns an iterator object that contains the key-value pair of each element in t
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The entries method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="every"></a>
 ## every
 
 ```TypeScript
@@ -306,7 +316,7 @@ Checks whether all elements in this ArkTS Uint32Array meet a given condition.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Uint32Array> | Yes | Assertion function used for the test. |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)&lt;number, Uint32Array&gt; | Yes | Assertion function used for the test. |
 
 **Return value:**
 
@@ -321,6 +331,7 @@ Checks whether all elements in this ArkTS Uint32Array meet a given condition.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The every method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="fill"></a>
 ## fill
 
 ```TypeScript
@@ -349,7 +360,7 @@ Fills all elements in a given range in this ArkTS Uint32Array with a value.
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | Filled ArkTS Uint32Array. |
+| Uint32Array | Filled ArkTS Uint32Array. |
 
 **Error codes:**
 
@@ -358,6 +369,7 @@ Fills all elements in a given range in this ArkTS Uint32Array with a value.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The fill method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="filter"></a>
 ## filter
 
 ```TypeScript
@@ -378,13 +390,13 @@ Returns a new ArkTS Uint32Array that contains all elements that meet the given c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Uint32Array> | Yes | Assertion function used for the test. |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)&lt;number, Uint32Array&gt; | Yes | Assertion function used for the test. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | Filtered ArkTS Uint32Array. |
+| Uint32Array | Filtered ArkTS Uint32Array. |
 
 **Error codes:**
 
@@ -393,6 +405,7 @@ Returns a new ArkTS Uint32Array that contains all elements that meet the given c
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The filter method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="find"></a>
 ## find
 
 ```TypeScript
@@ -413,7 +426,7 @@ Returns the value of the first element that passes a test provided by a callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Uint32Array> | Yes | Assertion function used for the test. |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)&lt;number, Uint32Array&gt; | Yes | Assertion function used for the test. |
 
 **Return value:**
 
@@ -428,6 +441,7 @@ Returns the value of the first element that passes a test provided by a callback
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The find method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="findindex"></a>
 ## findIndex
 
 ```TypeScript
@@ -448,7 +462,7 @@ Returns the index of the first element that passes a test provided by a callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Uint32Array> | Yes | Assertion function used for the test. |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)&lt;number, Uint32Array&gt; | Yes | Assertion function used for the test. |
 
 **Return value:**
 
@@ -463,6 +477,7 @@ Returns the index of the first element that passes a test provided by a callback
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The findIndex method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -483,7 +498,7 @@ Calls a callback function for each element in this ArkTS Uint32Array.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | [TypedArrayForEachCallback](arkts-arkts-collections-typedarrayforeachcallback-t.md)<number, Uint32Array> | Yes | Callback function to run for each element. |
+| callbackFn | [TypedArrayForEachCallback](arkts-arkts-collections-typedarrayforeachcallback-t.md)&lt;number, Uint32Array&gt; | Yes | Callback function to run for each element. |
 
 **Error codes:**
 
@@ -492,6 +507,7 @@ Calls a callback function for each element in this ArkTS Uint32Array.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The forEach method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -512,14 +528,15 @@ Creates an ArkTS Uint32Array from an array-like or iterator object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<number> | Yes | Array-like object used to construct the ArkTS Uint32Array. |
+| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; | Yes | Array-like object used to construct the ArkTS Uint32Array. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | New ArkTS Uint32Array generated. |
+| Uint32Array | New ArkTS Uint32Array generated. |
 
+<a id="from-1"></a>
 ## from
 
 ```TypeScript
@@ -540,15 +557,16 @@ Creates an ArkTS Uint32Array from an array-like object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<T> | Yes | An array-like object to convert to an Uint32Array. |
-| mapFn | [TypedArrayFromMapFn](arkts-arkts-collections-typedarrayfrommapfn-t.md)<T, number> | Yes | A mapping function to call on every element of the array. |
+| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)&lt;T&gt; | Yes | An array-like object to convert to an Uint32Array. |
+| mapFn | [TypedArrayFromMapFn](arkts-arkts-collections-typedarrayfrommapfn-t.md)&lt;T, number&gt; | Yes | A mapping function to call on every element of the array. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | New ArkTS Uint32Array generated. |
+| Uint32Array | New ArkTS Uint32Array generated. |
 
+<a id="from-2"></a>
 ## from
 
 ```TypeScript
@@ -569,15 +587,16 @@ Creates an ArkTS Uint32Array from an iterator object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [Iterable](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes | An iterable object to convert to an Uint32Array. |
-| mapFn | [TypedArrayFromMapFn](arkts-arkts-collections-typedarrayfrommapfn-t.md)<number, number> | No | A mapping function to call on every element of the array. |
+| arrayLike | Iterable&lt;number&gt; | Yes | An iterable object to convert to an Uint32Array. |
+| mapFn | [TypedArrayFromMapFn](arkts-arkts-collections-typedarrayfrommapfn-t.md)&lt;number, number&gt; | No | A mapping function to call on every element of the array. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | New ArkTS Uint32Array generated. |
+| Uint32Array | New ArkTS Uint32Array generated. |
 
+<a id="includes"></a>
 ## includes
 
 ```TypeScript
@@ -614,6 +633,7 @@ Checks whether elements are contained in this ArkTS Float32Array.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The includes method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="indexof"></a>
 ## indexOf
 
 ```TypeScript
@@ -650,6 +670,7 @@ Returns the index of the first occurrence of a value in this ArkTS Float32Array.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The indexOf method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="join"></a>
 ## join
 
 ```TypeScript
@@ -685,6 +706,7 @@ Concatenates all elements in this ArkTS Float32Array into a string, with a given
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The join method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -705,7 +727,7 @@ Returns an iterator object that contains the key (index) of each element in this
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> | Iterator object. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;number&gt; | Iterator object. |
 
 **Error codes:**
 
@@ -714,6 +736,7 @@ Returns an iterator object that contains the key (index) of each element in this
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The keys method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="lastindexof"></a>
 ## lastIndexOf
 
 ```TypeScript
@@ -750,6 +773,7 @@ Obtains the index of the last occurrence of the specified value in this ArkTS Ui
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The lastIndexOf method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="map"></a>
 ## map
 
 ```TypeScript
@@ -770,13 +794,13 @@ Applies a callback function to each element in this ArkTS Uint32Array and uses t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | [TypedArrayMapCallback](arkts-arkts-collections-typedarraymapcallback-t.md)<number, Uint32Array> | Yes | A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array. |
+| callbackFn | [TypedArrayMapCallback](arkts-arkts-collections-typedarraymapcallback-t.md)&lt;number, Uint32Array&gt; | Yes | A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | New ArkTS Uint32Array. |
+| Uint32Array | New ArkTS Uint32Array. |
 
 **Error codes:**
 
@@ -785,6 +809,7 @@ Applies a callback function to each element in this ArkTS Uint32Array and uses t
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The map method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="of"></a>
 ## of
 
 ```TypeScript
@@ -811,8 +836,9 @@ Creates an ArkTS Uint32Array with a variable number of parameters.
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | New ArkTS Uint32Array instance. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| Uint32Array | New ArkTS Uint32Array instance. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="reduce"></a>
 ## reduce
 
 ```TypeScript
@@ -833,7 +859,7 @@ Applies a reduce function on each element in this ArkTS Uint32Array and returns 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)<number, number, Uint32Array> | Yes | A function that accepts up to four arguments.The reduce method calls the callbackfn function one time for each element in the array. |
+| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)&lt;number, number, Uint32Array&gt; | Yes | A function that accepts up to four arguments.The reduce method calls the callbackfn function one time for each element in the array. |
 
 **Return value:**
 
@@ -848,6 +874,7 @@ Applies a reduce function on each element in this ArkTS Uint32Array and returns 
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduce method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reduce-1"></a>
 ## reduce
 
 ```TypeScript
@@ -868,7 +895,7 @@ Applies a reduce function for each element in this ArkTS Uint32Array, receives a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)<number, number, Uint32Array> | Yes | A function that accepts up to four arguments.The reduce method calls the callbackfn function one time for each element in the array. |
+| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)&lt;number, number, Uint32Array&gt; | Yes | A function that accepts up to four arguments.The reduce method calls the callbackfn function one time for each element in the array. |
 | initialValue | number | Yes | If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value. |
 
 **Return value:**
@@ -884,6 +911,7 @@ Applies a reduce function for each element in this ArkTS Uint32Array, receives a
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduce method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reduce-2"></a>
 ## reduce
 
 ```TypeScript
@@ -904,7 +932,7 @@ Applies a reduce function for each element in this ArkTS Uint32Array, receives a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)<U, number, Uint32Array> | Yes | Reduce function. |
+| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)&lt;U, number, Uint32Array&gt; | Yes | Reduce function. |
 | initialValue | U | Yes | Initial value. |
 
 **Return value:**
@@ -920,6 +948,7 @@ Applies a reduce function for each element in this ArkTS Uint32Array, receives a
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduce method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reduceright"></a>
 ## reduceRight
 
 ```TypeScript
@@ -940,7 +969,7 @@ Reversely traverses this ArkTS Uint32Array, applies a reduce function for each e
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)<U, number, Uint32Array> | Yes | A function that is called for each element in the Uint32Array. |
+| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)&lt;U, number, Uint32Array&gt; | Yes | A function that is called for each element in the Uint32Array. |
 | initialValue | U | Yes | A value to use as the first argument to the first call of the callback.<br>If no initial value is provided, the last element of the Uint32Array will be used,<br>and the callback will start with the second-to-last element. |
 
 **Return value:**
@@ -956,6 +985,7 @@ Reversely traverses this ArkTS Uint32Array, applies a reduce function for each e
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduceRight method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reduceright-1"></a>
 ## reduceRight
 
 ```TypeScript
@@ -976,7 +1006,7 @@ Reversely traverses this ArkTS Uint32Array, applies a reduce function on each el
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)<number, number, Uint32Array> | Yes | A function that is called for each element in the Uint32Array. |
+| callbackFn | [TypedArrayReduceCallback](arkts-arkts-collections-typedarrayreducecallback-t.md)&lt;number, number, Uint32Array&gt; | Yes | A function that is called for each element in the Uint32Array. |
 
 **Return value:**
 
@@ -991,6 +1021,7 @@ Reversely traverses this ArkTS Uint32Array, applies a reduce function on each el
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduceRight method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reverse"></a>
 ## reverse
 
 ```TypeScript
@@ -1011,7 +1042,7 @@ Reverses this ArkTS Uint32Array.
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | Reversed ArkTS Uint32Array. |
+| Uint32Array | Reversed ArkTS Uint32Array. |
 
 **Error codes:**
 
@@ -1020,6 +1051,7 @@ Reverses this ArkTS Uint32Array.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reverse method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -1040,7 +1072,7 @@ Writes the elements in an array-like object to the given start position in seque
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| array | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<number> | Yes | A typed or untyped array of values to set. |
+| array | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; | Yes | A typed or untyped array of values to set. |
 | offset | number | No | The index in the current array at which the values are to be written. |
 
 **Error codes:**
@@ -1050,6 +1082,7 @@ Writes the elements in an array-like object to the given start position in seque
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The set method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript
@@ -1077,7 +1110,7 @@ Selects a range of elements in this ArkTS Uint32Array to create an ArkTS Uint32A
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | New ArkTS Uint32Array. |
+| Uint32Array | New ArkTS Uint32Array. |
 
 **Error codes:**
 
@@ -1086,6 +1119,7 @@ Selects a range of elements in this ArkTS Uint32Array to create an ArkTS Uint32A
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The slice method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="some"></a>
 ## some
 
 ```TypeScript
@@ -1106,7 +1140,7 @@ Checks whether any element in this ArkTS Uint32Array meets a given condition.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)<number, Uint32Array> | Yes | Assertion function used for the test. |
+| predicate | [TypedArrayPredicateFn](arkts-arkts-collections-typedarraypredicatefn-t.md)&lt;number, Uint32Array&gt; | Yes | Assertion function used for the test. |
 
 **Return value:**
 
@@ -1121,6 +1155,7 @@ Checks whether any element in this ArkTS Uint32Array meets a given condition.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The some method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -1141,13 +1176,13 @@ Sorts elements in this ArkTS Uint32Array and returns the sorted ArkTS Uint32Arra
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| compareFn | [TypedArrayCompareFn](arkts-arkts-collections-typedarraycomparefn-t.md)<number> | No | Function that determines the sort order. By default,elements are sorted in ascending order. |
+| compareFn | [TypedArrayCompareFn](arkts-arkts-collections-typedarraycomparefn-t.md)&lt;number&gt; | No | Function that determines the sort order. By default,elements are sorted in ascending order. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | Sorted ArkTS Uint32Array. |
+| Uint32Array | Sorted ArkTS Uint32Array. |
 
 **Error codes:**
 
@@ -1156,6 +1191,7 @@ Sorts elements in this ArkTS Uint32Array and returns the sorted ArkTS Uint32Arra
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The sort method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="subarray"></a>
 ## subarray
 
 ```TypeScript
@@ -1183,7 +1219,7 @@ Truncates an array from a specified position and returns a new ArkTS Uint32Array
 
 | Type | Description |
 | --- | --- |
-| [Uint32Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint32array-i.md) | New ArkTS Uint32Array. |
+| Uint32Array | New ArkTS Uint32Array. |
 
 **Error codes:**
 
@@ -1192,6 +1228,7 @@ Truncates an array from a specified position and returns a new ArkTS Uint32Array
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The subarray method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="tolocalestring"></a>
 ## toLocaleString
 
 ```TypeScript
@@ -1221,6 +1258,7 @@ Generates a string of digits that matches the cultural conventions of the curren
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The toLocaleString method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -1250,6 +1288,7 @@ Converts an ArkTS Uint32Array into a string.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The toString method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -1270,7 +1309,7 @@ Returns an iterator object that contains the value of each element in this ArkTS
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> | Iterator object. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;number&gt; | Iterator object. |
 
 **Error codes:**
 

@@ -6,13 +6,14 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="enableadmin"></a>
 ## enableAdmin
 
 ```TypeScript
 function enableAdmin(admin: Want, enterpriseInfo: EnterpriseInfo, type: AdminType, callback: AsyncCallback<void>): void
 ```
 
-Enables a device administrator application. The super device administrator application can be activated only by the administrator. After the application is enabled, it cannot be uninstalled. The [EnterpriseAdminExtensionAbility](../../../../mdm/mdm-kit-term.md#enterpriseadminextensionability) component of the application will automatically start upon device startup and user switching. This API uses an asynchronous callback to return the result.
+Enables a device administrator application. The super device administrator application can be activated only by the administrator. After the application is enabled, it cannot be uninstalled. The [EnterpriseAdminExtensionAbility](docroot://mdm/mdm-kit-term.md#enterpriseadminextensionability) component of the application will automatically start upon device startup and user switching. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -33,7 +34,7 @@ Enables a device administrator application. The super device administrator appli
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | enterpriseInfo | [EnterpriseInfo](arkts-mdm-adminmanager-enterpriseinfo-i-sys.md) | Yes | Enterprise information of the device administrator application. |
 | type | [AdminType](arkts-mdm-adminmanager-admintype-e-sys.md) | Yes | Type of the device administrator application to enable. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ adminManager.enableAdmin(wantTemp, enterpriseInfo, adminManager.AdminType.ADMIN_
 ```
 
 
+<a id="enableadmin-1"></a>
 ## enableAdmin
 
 ```TypeScript
@@ -102,7 +104,7 @@ Enables a device administrator application for the specified user. The super dev
 | enterpriseInfo | [EnterpriseInfo](arkts-mdm-adminmanager-enterpriseinfo-i-sys.md) | Yes | Enterprise information of the device administrator application. |
 | type | [AdminType](arkts-mdm-adminmanager-admintype-e-sys.md) | Yes | Type of the device administrator application to enable. |
 | userId | number | Yes | User ID, which must be greater than or equal to 0.<br>The default value is the user ID of the caller. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -143,6 +145,7 @@ adminManager.enableAdmin(wantTemp, enterpriseInfo, adminManager.AdminType.ADMIN_
 ```
 
 
+<a id="enableadmin-2"></a>
 ## enableAdmin
 
 ```TypeScript
@@ -176,7 +179,7 @@ Enables a device administrator application for the current or specified user. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. If the operation fails, an error object will be thrown. |
+| Promise&lt;void&gt; | Promise that returns no value. If the operation fails, an error object will be thrown. |
 
 **Error codes:**
 

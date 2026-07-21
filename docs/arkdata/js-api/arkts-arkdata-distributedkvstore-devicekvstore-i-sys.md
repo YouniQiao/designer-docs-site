@@ -1,6 +1,6 @@
 # DeviceKVStore
 
-Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used.Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of other devices is read-only and cannot be modified.For example, a device KV store can be used to implement image sharing between devices. The images of other devices can be viewed, but not be modified or deleted.Before calling any method in **DeviceKVStore**, you must use [getKVStore](arkts-arkdata-distributedkvstore-kvmanager-i.md#getkvstore-1)to obtain a **DeviceKVStore** object.
+Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used.Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of other devices is read-only and cannot be modified.For example, a device KV store can be used to implement image sharing between devices. The images of other devices can be viewed, but not be modified or deleted.Before calling any method in **DeviceKVStore**, you must use [getKVStore](distributedKVStore.KVManager.getKVStore<T>(storeId: string, options: Options, callback: AsyncCallback<T>))to obtain a **DeviceKVStore** object.
 
 **Inheritance/Implementation:** DeviceKVStore extends [SingleKVStore](arkts-arkdata-distributedkvstore-singlekvstore-i.md)
 
@@ -16,6 +16,7 @@ Provides APIs for querying data in a device KV store and performing cross-device
 import { distributedKVStore } from '@kit.ArkData';
 ```
 
+<a id="getresultset"></a>
 ## getResultSet
 
 ```TypeScript
@@ -39,7 +40,7 @@ Obtains the KVStoreResultSet object matching the local device ID and specified p
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Indicates the datasharePredicates. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KVStoreResultSet> | Yes | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the local device ID and specified {@code dataSharePredicates.DataSharePredicates} object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KVStoreResultSet&gt; | Yes | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the local device ID and specified {@code dataSharePredicates.DataSharePredicates} object. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ Obtains the KVStoreResultSet object matching the local device ID and specified p
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 | [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
+<a id="getresultset-1"></a>
 ## getResultSet
 
 ```TypeScript
@@ -79,7 +81,7 @@ Obtains the KVStoreResultSet object matching the local device ID and specified p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KVStoreResultSet> | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the local device ID and specified {@code dataSharePredicates.DataSharePredicates} object. |
+| Promise&lt;KVStoreResultSet&gt; | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the local device ID and specified {@code dataSharePredicates.DataSharePredicates} object. |
 
 **Error codes:**
 
@@ -91,6 +93,7 @@ Obtains the KVStoreResultSet object matching the local device ID and specified p
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 | [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
+<a id="getresultset-2"></a>
 ## getResultSet
 
 ```TypeScript
@@ -115,7 +118,7 @@ Obtains the KVStoreResultSet object matching a specified Device ID and Predicate
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates the ID of the device to which the results belong. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Indicates the dataSharePredicates. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KVStoreResultSet> | Yes | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the specified deviceId and {@code dataSharePredicates.DataSharePredicates} object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KVStoreResultSet&gt; | Yes | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the specified deviceId and {@code dataSharePredicates.DataSharePredicates} object. |
 
 **Error codes:**
 
@@ -127,6 +130,7 @@ Obtains the KVStoreResultSet object matching a specified Device ID and Predicate
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 | [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
+<a id="getresultset-3"></a>
 ## getResultSet
 
 ```TypeScript
@@ -156,7 +160,7 @@ Obtains the KVStoreResultSet object matching a specified Device ID and Predicate
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KVStoreResultSet> | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the specified deviceId and {@code dataSharePredicates.DataSharePredicates} object. |
+| Promise&lt;KVStoreResultSet&gt; | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the specified deviceId and {@code dataSharePredicates.DataSharePredicates} object. |
 
 **Error codes:**
 

@@ -4,6 +4,7 @@ Creates a new function.
 
 <!--Device-unnamed-interface Function--><!--Device-unnamed-interface Function-End-->
 
+<a id="apply"></a>
 ## apply
 
 ```TypeScript
@@ -18,7 +19,7 @@ Calls the function, substituting the specified object for the this value of the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| this | [Function](arkts-na-lib-es2015-core-function-i.md) | Yes |  |
+| this | Function | Yes |  |
 | thisArg | any | Yes |  |
 | argArray | any | No |  |
 
@@ -28,6 +29,7 @@ Calls the function, substituting the specified object for the this value of the 
 | --- | --- |
 | any |  |
 
+<a id="bind"></a>
 ## bind
 
 ```TypeScript
@@ -42,7 +44,7 @@ For a given function, creates a bound function that has the same body as the ori
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| this | [Function](arkts-na-lib-es2015-core-function-i.md) | Yes |  |
+| this | Function | Yes |  |
 | thisArg | any | Yes |  |
 | argArray | any[] | Yes |  |
 
@@ -52,6 +54,7 @@ For a given function, creates a bound function that has the same body as the ori
 | --- | --- |
 | any |  |
 
+<a id="call"></a>
 ## call
 
 ```TypeScript
@@ -66,7 +69,7 @@ Calls a method of an object, substituting another object for the current object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| this | [Function](arkts-na-lib-es2015-core-function-i.md) | Yes |  |
+| this | Function | Yes |  |
 | thisArg | any | Yes |  |
 | argArray | any[] | Yes |  |
 
@@ -76,6 +79,7 @@ Calls a method of an object, substituting another object for the current object.
 | --- | --- |
 | any |  |
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript

@@ -14,6 +14,7 @@ CompletionHandlerForAtomicService provides two callback functions,[onAtomicServi
 import { FailureCode } from '@kit.AbilityKit';
 ```
 
+<a id="onatomicservicerequestfailure"></a>
 ## onAtomicServiceRequestFailure
 
 ```TypeScript
@@ -44,6 +45,7 @@ Called when the atomic service fails to be launched.
 
 For details, see [CompletionHandlerForAtomicService Usage Example](#completionhandlerforatomicservice-usage-example).
 
+<a id="onatomicservicerequestsuccess"></a>
 ## onAtomicServiceRequestSuccess
 
 ```TypeScript

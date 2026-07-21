@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="separateconference"></a>
 ## separateConference
 
 ```TypeScript
@@ -29,7 +30,7 @@ Split conference call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of separateConference. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of separateConference. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ call.separateConference(1, (err: BusinessError) => {
 ```
 
 
+<a id="separateconference-1"></a>
 ## separateConference
 
 ```TypeScript
@@ -88,7 +90,7 @@ Split conference call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the separateConference. |
+| Promise&lt;void&gt; | The promise returned by the separateConference. |
 
 **Error codes:**
 

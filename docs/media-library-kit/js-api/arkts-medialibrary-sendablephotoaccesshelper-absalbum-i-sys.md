@@ -16,6 +16,7 @@ Defines the abstract interface of albums.
 import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="getsharedphotoassets"></a>
 ## getSharedPhotoAssets
 
 ```TypeScript
@@ -44,7 +45,7 @@ Fetch shared photo assets in an album.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<SharedPhotoAsset> | Returns the shared photo assets |
+| Array&lt;SharedPhotoAsset&gt; | Returns the shared photo assets |
 
 **Error codes:**
 

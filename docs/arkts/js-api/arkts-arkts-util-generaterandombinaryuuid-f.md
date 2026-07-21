@@ -6,6 +6,7 @@
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="generaterandombinaryuuid"></a>
 ## generateRandomBinaryUUID
 
 ```TypeScript
@@ -32,7 +33,7 @@ Uses a secure random number generator to generate a random universally unique id
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | A Uint8Array value representing the UUID generated. |
+| Uint8Array | A Uint8Array value representing the UUID generated. |
 
 **Example**
 

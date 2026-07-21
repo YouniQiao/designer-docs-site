@@ -6,6 +6,7 @@
 import { scan } from '@kit.ConnectivityKit';
 ```
 
+<a id="stopscan"></a>
 ## stopScan
 
 ```TypeScript
@@ -28,7 +29,7 @@ function stopScan(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | @throws { BusinessError } 201 - 权限被拒绝。 |
+| Promise&lt;void&gt; | @throws { BusinessError } 201 - 权限被拒绝。 |
 
 **错误码：**
 

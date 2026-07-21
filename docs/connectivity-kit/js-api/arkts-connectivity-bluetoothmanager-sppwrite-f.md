@@ -6,6 +6,7 @@
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="sppwrite"></a>
 ## sppWrite
 
 ```TypeScript
@@ -29,7 +30,7 @@ Write data through the socket.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | clientSocket | number | Yes | Indicates the client socket ID, returned by {@link sppAccept} or{@link sppConnect}. |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Indicates the data to write. |
+| data | ArrayBuffer | Yes | Indicates the data to write. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="createx509crl"></a>
 ## createX509CRL
 
 ```TypeScript
@@ -27,7 +28,7 @@ Creates an **X509CRL** instance. This API uses an asynchronous callback to retur
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inStream | [EncodingBlob](arkts-devicecertificate-cert-encodingblob-i.md) | Yes | Serialized CRL data. The data length cannot exceed 8192 bytes. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<X509CRL> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the **X509CRL** instance created. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;X509CRL&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the **X509CRL** instance created. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -78,6 +79,7 @@ cert.createX509CRL(encodingBlob, (error, X509CRL) => {
 ```
 
 
+<a id="createx509crl-1"></a>
 ## createX509CRL
 
 ```TypeScript
@@ -104,7 +106,7 @@ Creates an **X509CRL** instance. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<X509CRL> | Promise used to return the **X509CRL** instance created. |
+| Promise&lt;X509CRL&gt; | Promise used to return the **X509CRL** instance created. |
 
 **Error codes:**
 

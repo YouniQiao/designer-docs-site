@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="isauthorizedapp"></a>
 ## isAuthorizedApp
 
 ```TypeScript
@@ -32,7 +33,7 @@ Checks whether this application is authorized by the specified user credential. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return whether the application is authorized. The value **true** means authorized; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return whether the application is authorized. The value **true** means authorized; the value **false** means the opposite. |
 
 **Error codes:**
 

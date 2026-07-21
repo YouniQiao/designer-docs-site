@@ -18,6 +18,7 @@ Represents a request for changing multiple assets.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -38,7 +39,7 @@ Constructor.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Assets to change. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Assets to change. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setfavorite"></a>
 ## setFavorite
 
 ```TypeScript
@@ -123,6 +125,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="sethidden"></a>
 ## setHidden
 
 ```TypeScript
@@ -181,6 +184,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setisrecentshow"></a>
 ## setIsRecentShow
 
 ```TypeScript
@@ -239,6 +243,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setusercomment"></a>
 ## setUserComment
 
 ```TypeScript

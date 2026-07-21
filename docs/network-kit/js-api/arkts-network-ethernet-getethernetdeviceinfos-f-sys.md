@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="getethernetdeviceinfos"></a>
 ## getEthernetDeviceInfos
 
 ```TypeScript
@@ -28,7 +29,7 @@ Get the ethernet mac address list.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<EthernetDeviceInfos>> | the promise returned by the function. |
+| Promise&lt;Array&lt;EthernetDeviceInfos&gt;&gt; | the promise returned by the function. |
 
 **Error codes:**
 

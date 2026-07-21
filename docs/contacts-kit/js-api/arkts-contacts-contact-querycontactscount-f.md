@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="querycontactscount"></a>
 ## queryContactsCount
 
 ```TypeScript
@@ -34,7 +35,7 @@ Queries the number of all contacts. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result, which is the number of queried contacts. |
+| Promise&lt;number&gt; | Promise used to return the result, which is the number of queried contacts. |
 
 **Error codes:**
 

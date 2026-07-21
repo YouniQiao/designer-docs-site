@@ -6,6 +6,7 @@
 import { config } from '@kit.AccessibilityKit';
 ```
 
+<a id="enableabilitywithcallback"></a>
 ## enableAbilityWithCallback
 
 ```TypeScript
@@ -43,14 +44,14 @@ Enables the auxiliary extension ability and specifies [ConnectCallback](arkts-ac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the accessibility extension ability, in the format of 'bundleName/abilityName'. |
-| capability | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<accessibility.Capability> | Yes | Capabilities of the auxiliary extension ability. |
+| capability | Array&lt;accessibility.Capability&gt; | Yes | Capabilities of the auxiliary extension ability. |
 | connectCallback | [ConnectCallback](arkts-accessibility-config-connectcallback-i-sys.md) | Yes | Callback to be invoked when the state of an auxiliary extension ability changes. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -18,6 +18,7 @@ Manages GATT client. Before calling an Gatt client method, you must use {@link c
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -65,6 +66,7 @@ try {
 
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -112,6 +114,7 @@ try {
 
 ```
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -157,6 +160,7 @@ try {
 
 ```
 
+<a id="getdevicename"></a>
 ## getDeviceName
 
 ```TypeScript
@@ -183,7 +187,7 @@ Obtains the name of BLE peripheral device.On API 10 and above, the permission re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to obtain the device name. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to obtain the device name. |
 
 **Error codes:**
 
@@ -213,6 +217,7 @@ try {
 
 ```
 
+<a id="getdevicename-1"></a>
 ## getDeviceName
 
 ```TypeScript
@@ -239,7 +244,7 @@ Obtains the name of BLE peripheral device.On API 10 and above, the permission re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns a string representation of the name if obtained;returns {@code null} if the name fails to be obtained or the name does not exist. |
+| Promise&lt;string&gt; | Returns a string representation of the name if obtained;returns {@code null} if the name fails to be obtained or the name does not exist. |
 
 **Error codes:**
 
@@ -268,6 +273,7 @@ try {
 
 ```
 
+<a id="getrssivalue"></a>
 ## getRssiValue
 
 ```TypeScript
@@ -294,7 +300,7 @@ Get the RSSI value of this BLE peripheral device.On API 10 and above, the permis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback invoked to return the RSSI, in dBm. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback invoked to return the RSSI, in dBm. |
 
 **Error codes:**
 
@@ -323,6 +329,7 @@ try {
 
 ```
 
+<a id="getrssivalue-1"></a>
 ## getRssiValue
 
 ```TypeScript
@@ -349,7 +356,7 @@ Get the RSSI value of this BLE peripheral device.On API 10 and above, the permis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the RSSI value. |
+| Promise&lt;number&gt; | Returns the RSSI value. |
 
 **Error codes:**
 
@@ -376,6 +383,7 @@ try {
 
 ```
 
+<a id="getservices"></a>
 ## getServices
 
 ```TypeScript
@@ -402,7 +410,7 @@ Starts discovering services.On API 10 and above, the permission required by this
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<GattService>> | Yes | Callback used to catch the services. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;GattService&gt;&gt; | Yes | Callback used to catch the services. |
 
 **Error codes:**
 
@@ -441,6 +449,7 @@ try {
 
 ```
 
+<a id="getservices-1"></a>
 ## getServices
 
 ```TypeScript
@@ -467,7 +476,7 @@ Starts discovering services.On API 10 and above, the permission required by this
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<GattService>> | Returns the list of services {@link GattService} of the BLE peripheral device. |
+| Promise&lt;Array&lt;GattService&gt;&gt; | Returns the list of services {@link GattService} of the BLE peripheral device. |
 
 **Error codes:**
 
@@ -496,6 +505,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('BLECharacteristicChange')
 
 ```TypeScript
@@ -523,7 +533,7 @@ Unsubscribe characteristic value changed event.On API 10 and above, the permissi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'BLECharacteristicChange' | Yes | Type of the characteristic value changed event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BLECharacteristic> | No | Callback used to listen for the characteristic value changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BLECharacteristic&gt; | No | Callback used to listen for the characteristic value changed event. |
 
 **Error codes:**
 
@@ -545,6 +555,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('BLEConnectionStateChange')
 
 ```TypeScript
@@ -572,7 +583,7 @@ Unsubscribe client connection state changed event.On API 10 and above, the permi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'BLEConnectionStateChange' | Yes | Type of the connection state changed event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BLEConnectChangedState> | No | Callback used to listen for the connection state changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BLEConnectChangedState&gt; | No | Callback used to listen for the connection state changed event. |
 
 **Error codes:**
 
@@ -594,6 +605,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('BLECharacteristicChange')
 
 ```TypeScript
@@ -621,7 +633,7 @@ Subscribe characteristic value changed event.On API 10 and above, the permission
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'BLECharacteristicChange' | Yes | Type of the characteristic value changed event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BLECharacteristic> | Yes | Callback used to listen for the characteristic value changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BLECharacteristic&gt; | Yes | Callback used to listen for the characteristic value changed event. |
 
 **Error codes:**
 
@@ -648,6 +660,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on('BLEConnectionStateChange')
 
 ```TypeScript
@@ -675,7 +688,7 @@ Subscribe client connection state changed event.On API 10 and above, the permiss
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'BLEConnectionStateChange' | Yes | Type of the connection state changed event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BLEConnectChangedState> | Yes | Callback used to listen for the connection state changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BLEConnectChangedState&gt; | Yes | Callback used to listen for the connection state changed event. |
 
 **Error codes:**
 
@@ -701,6 +714,7 @@ try {
 
 ```
 
+<a id="readcharacteristicvalue"></a>
 ## readCharacteristicValue
 
 ```TypeScript
@@ -728,7 +742,7 @@ Reads the characteristic of a BLE peripheral device.On API 10 and above, the per
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | characteristic | [BLECharacteristic](arkts-connectivity-bluetooth-blecharacteristic-i.md) | Yes | Indicates the characteristic to read. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<BLECharacteristic> | Yes | Callback invoked to return the characteristic value read. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;BLECharacteristic&gt; | Yes | Callback invoked to return the characteristic value read. |
 
 **Error codes:**
 
@@ -779,6 +793,7 @@ try {
 
 ```
 
+<a id="readcharacteristicvalue-1"></a>
 ## readCharacteristicValue
 
 ```TypeScript
@@ -811,7 +826,7 @@ Reads the characteristic of a BLE peripheral device.On API 10 and above, the per
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BLECharacteristic> | - Promise used to return the characteristic value read. |
+| Promise&lt;BLECharacteristic&gt; | - Promise used to return the characteristic value read. |
 
 **Error codes:**
 
@@ -853,6 +868,7 @@ try {
 
 ```
 
+<a id="readdescriptorvalue"></a>
 ## readDescriptorValue
 
 ```TypeScript
@@ -880,7 +896,7 @@ Reads the descriptor of a BLE peripheral device.On API 10 and above, the permiss
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | descriptor | [BLEDescriptor](arkts-connectivity-bluetooth-bledescriptor-i.md) | Yes | Indicates the descriptor to read. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<BLEDescriptor> | Yes | Callback invoked to return the descriptor read. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;BLEDescriptor&gt; | Yes | Callback invoked to return the descriptor read. |
 
 **Error codes:**
 
@@ -923,6 +939,7 @@ try {
 
 ```
 
+<a id="readdescriptorvalue-1"></a>
 ## readDescriptorValue
 
 ```TypeScript
@@ -955,7 +972,7 @@ Reads the descriptor of a BLE peripheral device.On API 10 and above, the permiss
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BLEDescriptor> | - Promise used to return the descriptor read. |
+| Promise&lt;BLEDescriptor&gt; | - Promise used to return the descriptor read. |
 
 **Error codes:**
 
@@ -990,6 +1007,7 @@ try {
 
 ```
 
+<a id="setblemtusize"></a>
 ## setBLEMtuSize
 
 ```TypeScript
@@ -1041,6 +1059,7 @@ try {
 
 ```
 
+<a id="setnotifycharacteristicchanged"></a>
 ## setNotifyCharacteristicChanged
 
 ```TypeScript
@@ -1110,6 +1129,7 @@ try {
 
 ```
 
+<a id="writecharacteristicvalue"></a>
 ## writeCharacteristicValue
 
 ```TypeScript
@@ -1177,6 +1197,7 @@ try {
 
 ```
 
+<a id="writedescriptorvalue"></a>
 ## writeDescriptorValue
 
 ```TypeScript

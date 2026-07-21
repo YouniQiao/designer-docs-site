@@ -1,6 +1,6 @@
 # DownloadInfo
 
-Defines the download task information, which is the callback parameter of the [getTaskInfo](arkts-basicservices-request-downloadtask-i.md#gettaskinfo-2) API.
+Defines the download task information, which is the callback parameter of the [getTaskInfo](arkts-basicservices-request-downloadtask-i.md#gettaskinfo-1) API.
 
 **Since:** 7
 
@@ -100,7 +100,7 @@ Real-time download size, in bytes.
 failedReason: number
 ```
 
-Cause of the download failure. The value can be any constant in [Download Error Codes](../../../../reference/apis-basic-services-kit/js-apis-request.md#constants).
+Cause of the download failure. The value can be any constant in [Download Error Codes](docroot://reference/apis-basic-services-kit/js-apis-request.md#constants).
 
 **Type:** number
 
@@ -148,7 +148,7 @@ URI of the saved file.
 pausedReason: number
 ```
 
-Cause of download pause. The value can be any constant in [Causes of Download Pause](../../../../reference/apis-basic-services-kit/js-apis-request.md#constants).
+Cause of download pause. The value can be any constant in [Causes of Download Pause](docroot://reference/apis-basic-services-kit/js-apis-request.md#constants).
 
 **Type:** number
 
@@ -164,7 +164,7 @@ Cause of download pause. The value can be any constant in [Causes of Download Pa
 status: number
 ```
 
-Download task status code. The value can be any constant in [Download Task Status Codes](../../../../reference/apis-basic-services-kit/js-apis-request.md#constants).
+Download task status code. The value can be any constant in [Download Task Status Codes](docroot://reference/apis-basic-services-kit/js-apis-request.md#constants).
 
 **Type:** number
 

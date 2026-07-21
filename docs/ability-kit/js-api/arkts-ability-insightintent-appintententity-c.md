@@ -16,6 +16,7 @@ Define AppIntentEntity.
 import { insightIntent } from '@kit.AbilityKit';
 ```
 
+<a id="onqueryentity"></a>
 ## onQueryEntity
 
 ```TypeScript
@@ -44,7 +45,7 @@ Called when query entity execute.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<T>> | - Returns an array of subclasses of the AppIntentEntity class, support promise. |
+| Promise&lt;Array&lt;T&gt;&gt; | - Returns an array of subclasses of the AppIntentEntity class, support promise. |
 
 ## displayName
 

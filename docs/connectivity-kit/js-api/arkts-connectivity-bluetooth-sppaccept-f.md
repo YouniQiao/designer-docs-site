@@ -6,6 +6,7 @@
 import { bluetooth } from '@kit.ConnectivityKit';
 ```
 
+<a id="sppaccept"></a>
 ## sppAccept
 
 ```TypeScript
@@ -29,7 +30,7 @@ Waits for a remote device to connect.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | serverSocket | number | Yes | Indicates the server socket ID, returned by {@link sppListen}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return a client socket ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return a client socket ID. |
 
 **Example**
 

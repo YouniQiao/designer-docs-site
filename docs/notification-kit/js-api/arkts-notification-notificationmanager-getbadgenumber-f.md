@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getbadgenumber"></a>
 ## getBadgeNumber
 
 ```TypeScript
@@ -26,7 +27,7 @@ This API is used to query the badge number displayed on the current application'
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the badge number. (The value is irrelevant to whether notifications and home-screen badges of this application are enabled.) |
+| Promise&lt;number&gt; | Promise used to return the badge number. (The value is irrelevant to whether notifications and home-screen badges of this application are enabled.) |
 
 **Error codes:**
 

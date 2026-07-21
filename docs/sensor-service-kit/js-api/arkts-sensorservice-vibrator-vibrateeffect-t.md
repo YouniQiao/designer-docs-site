@@ -4,7 +4,7 @@
 type VibrateEffect = VibrateTime | VibratePreset | VibrateFromFile | VibrateFromPattern
 ```
 
-Enumerates vibration effects of the vibrator. You can specify the vibration effect when calling [vibrator.startVibration9+](arkts-sensorservice-vibrator-startvibration-f.md#startvibration-1)or [vibrator.startVibration9+](arkts-sensorservice-vibrator-startvibration-f.md#startvibration-2).
+Enumerates vibration effects of the vibrator. You can specify the vibration effect when calling [vibrator.startVibration9+](arkts-sensorservice-vibrator-startvibration-f.md#startvibration-1)or [vibrator.startVibration9+](arkts-sensorservice-vibrator-startvibration-f.md#startvibration-1).
 
 **Since:** 9
 
@@ -16,7 +16,7 @@ Enumerates vibration effects of the vibrator. You can specify the vibration effe
 
 | Type | Description |
 | --- | --- |
-| VibrateTime | Triggers vibration based on a specified duration.<br>This API can be used in atomic services since API version 11. |
+| VibrateTime | Triggers vibration based on a specified duration. <br> This API can be used in atomic services since API version 11. |
 | VibratePreset | Triggers vibration based on a preset effect. |
 | VibrateFromFile | Triggers vibration based on a custom vibration configuration file. [since 10] |
 | VibrateFromPattern | Triggers vibration based on a custom effect. [since 18] |

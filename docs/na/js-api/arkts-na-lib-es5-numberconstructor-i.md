@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface NumberConstructor--><!--Device-unnamed-interface NumberConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -20,8 +21,9 @@ new(value?: any): Number
 
 | Type | Description |
 | --- | --- |
-| [Number](arkts-na-lib-es5-number-i.md) |  |
+| Number |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript

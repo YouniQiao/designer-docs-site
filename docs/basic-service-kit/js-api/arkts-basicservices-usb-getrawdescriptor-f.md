@@ -6,6 +6,7 @@
 import { usb } from '@kit.BasicServicesKit';
 ```
 
+<a id="getrawdescriptor"></a>
 ## getRawDescriptor
 
 ```TypeScript
@@ -36,7 +37,7 @@ Before you do this, call [usb.getDevices](arkts-basicservices-usb-getdevices-f.m
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Returns the raw USB descriptor if the operation is successful; returns **undefined** otherwise. |
+| Uint8Array | Returns the raw USB descriptor if the operation is successful; returns **undefined** otherwise. |
 
 **Example**
 

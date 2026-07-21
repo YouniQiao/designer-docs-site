@@ -6,6 +6,7 @@
 import { notificationSubscribe } from '@kit.NotificationKit';
 ```
 
+<a id="subscribeself"></a>
 ## subscribeSelf
 
 ```TypeScript
@@ -32,7 +33,7 @@ Subscribes to notifications of the application and specifies subscription inform
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

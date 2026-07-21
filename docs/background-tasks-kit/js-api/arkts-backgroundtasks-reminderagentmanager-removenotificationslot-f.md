@@ -6,6 +6,7 @@
 import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="removenotificationslot"></a>
 ## removeNotificationSlot
 
 ```TypeScript
@@ -25,7 +26,7 @@ Removes a specified notification slot. This API uses an asynchronous callback to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotType | notification.SlotType | Yes | Type of the notification slot. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result.If the notification slot is removed,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result.If the notification slot is removed,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ reminderAgentManager.removeNotificationSlot(notificationManager.SlotType.CONTENT
 ```
 
 
+<a id="removenotificationslot-1"></a>
 ## removeNotificationSlot
 
 ```TypeScript
@@ -76,7 +78,7 @@ Removes a specified notification slot. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

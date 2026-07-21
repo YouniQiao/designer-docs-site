@@ -6,6 +6,7 @@
 import { serialManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -25,14 +26,14 @@ Writes data to the serial port device asynchronously. The length of data written
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | portId | number | Yes | Port number of the target device, which is obtained from the serial port parameter SerialPort returned by [getPortList](arkts-basicservices-serialmanager-getportlist-f.md#getportlist-1). |
-| buffer | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Buffer for writing data, with a maximum length of 4 KB. |
+| buffer | Uint8Array | Yes | Buffer for writing data, with a maximum length of 4 KB. |
 | timeout | number | No | Timeout interval.Unit: milliseconds. Whether the buffer of the target port is writable within the specified time. If yes, the API is processed properly; otherwise, a timeout message is returned after the specified time. The default value **0** indicates that the API returns the result immediately when the target port is not writable. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the length of the data written. |
+| Promise&lt;number&gt; | Promise used to return the length of the data written. |
 
 **Error codes:**
 

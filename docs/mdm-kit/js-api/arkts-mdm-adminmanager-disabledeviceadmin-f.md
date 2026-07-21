@@ -6,13 +6,14 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="disabledeviceadmin"></a>
 ## disableDeviceAdmin
 
 ```TypeScript
 function disableDeviceAdmin(admin: Want): Promise<void>
 ```
 
-Allows a [super device administrator application](../../../../mdm/mdm-kit-term.md#sda) to disable other [device administrator applications](../../../../mdm/mdm-kit-term.md#da). This API uses a promise to return the result. This API can be called only by super device administrator applications.
+Allows a [super device administrator application](docroot://mdm/mdm-kit-term.md#sda) to disable other [device administrator applications](docroot://mdm/mdm-kit-term.md#da). This API uses a promise to return the result. This API can be called only by super device administrator applications.
 
 **Since:** 23
 
@@ -34,7 +35,7 @@ Allows a [super device administrator application](../../../../mdm/mdm-kit-term.m
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. If the operation fails, an error object will be thrown. |
+| Promise&lt;void&gt; | Promise that returns no value. If the operation fails, an error object will be thrown. |
 
 **Error codes:**
 

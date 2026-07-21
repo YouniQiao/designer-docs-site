@@ -1,6 +1,6 @@
 # PageIntentInfo (System API)
 
-Describes the parameters supported by the [@InsightIntentPage](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage)decorator, such as the [NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) name of the target page.
+Describes the parameters supported by the [@InsightIntentPage](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage)decorator, such as the [NavDestination](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) name of the target page.
 
 **Since:** 20
 
@@ -22,7 +22,7 @@ import { insightIntentDriver } from '@kit.AbilityKit';
 readonly navDestinationName: string
 ```
 
-Name of the [NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10)component bound to the intent.
+Name of the [NavDestination](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10)component bound to the intent.
 
 **Type:** string
 
@@ -42,7 +42,7 @@ Name of the [NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-
 readonly navigationId: string
 ```
 
-ID of the [Navigation](@internal/component/ets/navigation) component bound to the intent.
+ID of the [Navigation](../../apis-arkui/arkts-components/arkts-arkui-navigation-i) component bound to the intent.
 
 **Type:** string
 

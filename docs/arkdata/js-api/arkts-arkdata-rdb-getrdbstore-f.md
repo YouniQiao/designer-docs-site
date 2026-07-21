@@ -1,5 +1,6 @@
 # getRdbStore
 
+<a id="getrdbstore"></a>
 ## getRdbStore
 
 ```TypeScript
@@ -25,9 +26,10 @@ Obtains an RDB store. This API uses an asynchronous callback to return the resul
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context.<br>For details about the application context of the FA model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-context-depr-i.md).<br>For details about the application context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-context-depr-i.md). |
 | config | [StoreConfig](arkts-arkdata-relationalstore-storeconfig-i.md) | Yes | Configuration of the RDB store. |
 | version | number | Yes | RDB store version.<br>Currently, automatic RDB upgrades and downgrades performed based on **version** is not supported. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RdbStore> | Yes | Callback used to return the RDB store obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RdbStore&gt; | Yes | Callback used to return the RDB store obtained. |
 
 
+<a id="getrdbstore-1"></a>
 ## getRdbStore
 
 ```TypeScript
@@ -56,5 +58,5 @@ Obtains an RDB store. This API uses a promise to return the result. You can set 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RdbStore> | Promise used to return the **RdbStore** object. |
+| Promise&lt;RdbStore&gt; | Promise used to return the **RdbStore** object. |
 

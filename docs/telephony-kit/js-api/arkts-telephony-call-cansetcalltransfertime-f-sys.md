@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="cansetcalltransfertime"></a>
 ## canSetCallTransferTime
 
 ```TypeScript
@@ -31,7 +32,7 @@ The system checks whether IP multimedia subsystem domain (IMS) can set call tran
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Returns {@code true} if the device can set call transfer time;returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Returns {@code true} if the device can set call transfer time;returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ call.canSetCallTransferTime(slotId, (err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="cansetcalltransfertime-1"></a>
 ## canSetCallTransferTime
 
 ```TypeScript
@@ -92,7 +94,7 @@ The system checks whether IP multimedia subsystem domain (IMS) can set call tran
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the device can set call transfer time;returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the device can set call transfer time;returns {@code false} otherwise. |
 
 **Error codes:**
 

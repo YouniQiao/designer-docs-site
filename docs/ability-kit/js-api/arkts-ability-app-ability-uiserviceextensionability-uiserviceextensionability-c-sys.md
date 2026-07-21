@@ -22,6 +22,7 @@ UIServiceExtensionAbility provides extended capabilities related to the floating
 import { UIServiceExtensionAbility } from '@kit.AbilityKit';
 ```
 
+<a id="onconnect"></a>
 ## onConnect
 
 ```TypeScript
@@ -60,6 +61,7 @@ class UIServiceExt extends UIServiceExtensionAbility {
 
 ```
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -98,6 +100,7 @@ class UIServiceExt extends UIServiceExtensionAbility {
 
 ```
 
+<a id="ondata"></a>
 ## onData
 
 ```TypeScript
@@ -121,7 +124,7 @@ Callback invoked when data is received.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | proxy | [UIServiceHostProxy](arkts-ability-common-uiservicehostproxy-t-sys.md) | Yes | Proxy that sends data to the client. |
-| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Data received. |
+| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Data received. |
 
 **Example**
 
@@ -136,6 +139,7 @@ class ServiceExt extends UIServiceExtensionAbility {
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -167,6 +171,7 @@ class ServiceExt extends UIServiceExtensionAbility {
 
 ```
 
+<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript
@@ -205,6 +210,7 @@ class UIServiceExt extends UIServiceExtensionAbility {
 
 ```
 
+<a id="onrequest"></a>
 ## onRequest
 
 ```TypeScript
@@ -243,6 +249,7 @@ class UIServiceExt extends UIServiceExtensionAbility {
 
 ```
 
+<a id="onwindowdidcreate"></a>
 ## onWindowDidCreate
 
 ```TypeScript
@@ -281,6 +288,7 @@ class ServiceExt extends UIServiceExtensionAbility {
 
 ```
 
+<a id="onwindowwillcreate"></a>
 ## onWindowWillCreate
 
 ```TypeScript

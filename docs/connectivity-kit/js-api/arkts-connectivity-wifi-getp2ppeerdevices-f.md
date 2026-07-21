@@ -6,6 +6,7 @@
 import { wifi } from '@kit.ConnectivityKit';
 ```
 
+<a id="getp2ppeerdevices"></a>
 ## getP2pPeerDevices
 
 ```TypeScript
@@ -30,9 +31,10 @@ Obtains the information about the found devices.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WifiP2pDevice[]> | Returns the found devices list. |
+| Promise&lt;WifiP2pDevice[]&gt; | Returns the found devices list. |
 
 
+<a id="getp2ppeerdevices-1"></a>
 ## getP2pPeerDevices
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtains the information about the found devices.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WifiP2pDevice[]> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WifiP2pDevice[]&gt; | Yes |  |
 
 **Example**
 

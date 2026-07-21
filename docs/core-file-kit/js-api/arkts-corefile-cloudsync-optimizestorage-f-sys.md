@@ -6,6 +6,7 @@
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="optimizestorage"></a>
 ## optimizeStorage
 
 ```TypeScript
@@ -28,7 +29,7 @@ Optimizes the resources that have been synced to the cloud from the local Galler
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

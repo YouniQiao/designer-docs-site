@@ -6,6 +6,7 @@
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="createglobalaudioloopback"></a>
 ## createGlobalAudioLoopback
 
 ```TypeScript
@@ -35,7 +36,7 @@ Creates a global audio loopback instance, which provides low-latency in-ear moni
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioLoopback \| null> | Promise used to return the audio loopback instance,or null when an error happens. |
+| Promise&lt;AudioLoopback \| null&gt; | Promise used to return the audio loopback instance,or null when an error happens. |
 
 **Error codes:**
 

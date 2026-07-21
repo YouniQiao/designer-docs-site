@@ -6,6 +6,7 @@
 import { reminderAgent } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="removenotificationslot"></a>
 ## removeNotificationSlot
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes a notification slot of a specified type. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotType | notification.SlotType | Yes | Type of the reminder notification slot to remove. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -45,6 +46,7 @@ reminderAgent.removeNotificationSlot(notification.SlotType.CONTENT_INFORMATION, 
 ```
 
 
+<a id="removenotificationslot-1"></a>
 ## removeNotificationSlot
 
 ```TypeScript
@@ -73,7 +75,7 @@ Removes a notification slot of a specified type. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 

@@ -1,5 +1,6 @@
 # requestSuspendDelay
 
+<a id="requestsuspenddelay"></a>
 ## requestSuspendDelay
 
 ```TypeScript
@@ -25,7 +26,7 @@ The default duration of delayed suspension is 3 minutes when the battery level i
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | reason | string | Yes | Reason for delayed transition to the suspended state. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Invoked when a delay is about to time out. Generally, this callback is used to notify the application 6 seconds before the delay times out. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Invoked when a delay is about to time out. Generally, this callback is used to notify the application 6 seconds before the delay times out. |
 
 **Return value:**
 

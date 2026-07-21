@@ -6,6 +6,7 @@
 import { missionManager } from '@kit.AbilityKit';
 ```
 
+<a id="off"></a>
 ## off('mission')
 
 ```TypeScript
@@ -30,7 +31,7 @@ Deregisters a mission status listener. This API uses an asynchronous callback to
 | --- | --- | --- | --- |
 | type | 'mission' | Yes | Name of the target mission. The value is fixed at **'mission'**, indicating the system mission status listener. |
 | listenerId | number | Yes | Index of the mission status listener to deregister. It is returned by **on()**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -127,6 +128,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="off-1"></a>
 ## off('mission')
 
 ```TypeScript
@@ -156,7 +158,7 @@ Unregisters a mission status listener. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -249,6 +251,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="off-2"></a>
 ## off('missionEvent')
 
 ```TypeScript
@@ -277,7 +280,7 @@ Deregisters a mission status listener. This API uses an asynchronous callback to
 | --- | --- | --- | --- |
 | type | 'missionEvent' | Yes | Name of the target mission. The value is fixed at **'mission'**, indicating the system mission status listener. |
 | listenerId | number | Yes | Index of the mission status listener to deregister. It is returned by **on()**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the API call is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the API call is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -289,6 +292,7 @@ Deregisters a mission status listener. This API uses an asynchronous callback to
 | [16300002](../errorcode-ability.md#16300002-nonexistent-mission-listener) | The specified mission listener does not exist. |
 
 
+<a id="off-3"></a>
 ## off('missionEvent')
 
 ```TypeScript
@@ -322,7 +326,7 @@ Unregisters a mission status listener. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

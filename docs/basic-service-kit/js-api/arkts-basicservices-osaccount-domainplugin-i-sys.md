@@ -16,6 +16,7 @@ Provides APIs for domain account authentication.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="auth"></a>
 ## auth
 
 ```TypeScript
@@ -37,7 +38,7 @@ Authenticates a domain account.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| credential | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Credentials of the domain account. |
+| credential | Uint8Array | Yes | Credentials of the domain account. |
 | callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
 
 **Example**
@@ -91,6 +92,7 @@ try {
 
 ```
 
+<a id="authwithpopup"></a>
 ## authWithPopup
 
 ```TypeScript
@@ -150,6 +152,7 @@ osAccount.DomainAccountManager.registerPlugin(plugin)
 
 ```
 
+<a id="authwithtoken"></a>
 ## authWithToken
 
 ```TypeScript
@@ -171,7 +174,7 @@ Authenticates a domain account by the authorization token.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Authorization token generated when the PIN or biometric authentication is successful. |
+| token | Uint8Array | Yes | Authorization token generated when the PIN or biometric authentication is successful. |
 | callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
 
 **Example**
@@ -210,6 +213,7 @@ osAccount.DomainAccountManager.registerPlugin(plugin)
 
 ```
 
+<a id="bindaccount"></a>
 ## bindAccount
 
 ```TypeScript
@@ -232,7 +236,7 @@ Binds a domain account.
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -270,6 +274,7 @@ osAccount.DomainAccountManager.registerPlugin(plugin)
 
 ```
 
+<a id="getaccesstoken"></a>
 ## getAccessToken
 
 ```TypeScript
@@ -291,7 +296,7 @@ Obtains the domain access token based on the specified conditions. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [GetDomainAccessTokenOptions](arkts-basicservices-osaccount-getdomainaccesstokenoptions-i-sys.md) | Yes | Options specified for obtaining the domain access token. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Uint8Array> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Uint8Array&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -330,6 +335,7 @@ osAccount.DomainAccountManager.registerPlugin(plugin)
 
 ```
 
+<a id="getaccountinfo"></a>
 ## getAccountInfo
 
 ```TypeScript
@@ -351,7 +357,7 @@ Obtains information about a domain account. This API uses an asynchronous callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [GetDomainAccountInfoPluginOptions](arkts-basicservices-osaccount-getdomainaccountinfopluginoptions-i-sys.md) | Yes | Domain account information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DomainAccountInfo> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;DomainAccountInfo&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -394,6 +400,7 @@ osAccount.DomainAccountManager.registerPlugin(plugin)
 
 ```
 
+<a id="getauthstatusinfo"></a>
 ## getAuthStatusInfo
 
 ```TypeScript
@@ -415,7 +422,7 @@ Obtains the authentication status of a domain account.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<AuthStatusInfo> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;AuthStatusInfo&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -455,6 +462,7 @@ osAccount.DomainAccountManager.registerPlugin(plugin)
 
 ```
 
+<a id="isaccounttokenvalid"></a>
 ## isAccountTokenValid
 
 ```TypeScript
@@ -488,8 +496,8 @@ Checks whether the specified domain account token is valid.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Domain account token to check. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result.The value **true** means that the specified domain account token is valid;the value **false** means the opposite. |
+| token | Uint8Array | Yes | Domain account token to check. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result.The value **true** means that the specified domain account token is valid;the value **false** means the opposite. |
 
 **Example**
 
@@ -527,6 +535,7 @@ osAccount.DomainAccountManager.registerPlugin(plugin)
 
 ```
 
+<a id="unbindaccount"></a>
 ## unbindAccount
 
 ```TypeScript
@@ -548,7 +557,7 @@ Unbinds a domain account.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 

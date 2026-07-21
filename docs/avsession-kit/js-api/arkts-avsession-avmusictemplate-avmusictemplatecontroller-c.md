@@ -14,6 +14,7 @@ The definition of the AVMusicTemplateController.
 import { avMusicTemplate } from '@kit.AVSessionKit';
 ```
 
+<a id="clearsearchhistory"></a>
 ## clearSearchHistory
 
 ```TypeScript
@@ -34,7 +35,7 @@ Clear search history.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperResult> | Promise for the result |
+| Promise&lt;OperResult&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -45,6 +46,7 @@ Clear search history.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -65,7 +67,7 @@ Destroy the controller.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -73,6 +75,7 @@ Destroy the controller.
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | capability not supported. |
 
+<a id="downloadmediaentity"></a>
 ## downloadMediaEntity
 
 ```TypeScript
@@ -100,7 +103,7 @@ Download media entity.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperResult> | Promise for the result |
+| Promise&lt;OperResult&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -111,6 +114,7 @@ Download media entity.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="executeaction"></a>
 ## executeAction
 
 ```TypeScript
@@ -138,7 +142,7 @@ Execute action.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise for the result |
+| Promise&lt;string&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -149,6 +153,7 @@ Execute action.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="favoritemediaentity"></a>
 ## favoriteMediaEntity
 
 ```TypeScript
@@ -176,7 +181,7 @@ Favorite media entity.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperResult> | Promise for the result |
+| Promise&lt;OperResult&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -187,6 +192,7 @@ Favorite media entity.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="handlememberpurchase"></a>
 ## handleMemberPurchase
 
 ```TypeScript
@@ -213,7 +219,7 @@ Handle member purchase.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DialogInfo> | Promise for the result |
+| Promise&lt;DialogInfo&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -224,6 +230,7 @@ Handle member purchase.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="login"></a>
 ## login
 
 ```TypeScript
@@ -251,7 +258,7 @@ Login.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<QrCodeInfo[]> | Promise for the result |
+| Promise&lt;QrCodeInfo[]&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -262,6 +269,7 @@ Login.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="offcurrentsinglechange"></a>
 ## offCurrentSingleChange
 
 ```TypeScript
@@ -282,7 +290,7 @@ Unregister report current single callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Single> | No | The callback used to handle ('reportCurrentSingle') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Single&gt; | No | The callback used to handle ('reportCurrentSingle') event. |
 
 **Error codes:**
 
@@ -292,6 +300,7 @@ Unregister report current single callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offcustomelementschange"></a>
 ## offCustomElementsChange
 
 ```TypeScript
@@ -322,6 +331,7 @@ Unregister report custom elements change callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offdialogcommandchange"></a>
 ## offDialogCommandChange
 
 ```TypeScript
@@ -352,6 +362,7 @@ Unregister report dialog command callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offdownloadmediaentitystatuschange"></a>
 ## offDownloadMediaEntityStatusChange
 
 ```TypeScript
@@ -372,7 +383,7 @@ Unregister report download media entity status callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MediaEntity> | No | The callback used to handle ('reportDownloadMediaEntityStatus') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MediaEntity&gt; | No | The callback used to handle ('reportDownloadMediaEntityStatus') event. |
 
 **Error codes:**
 
@@ -382,6 +393,7 @@ Unregister report download media entity status callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offextensionabilitychange"></a>
 ## offExtensionAbilityChange
 
 ```TypeScript
@@ -412,6 +424,7 @@ Unregister report extension ability callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offmediaentitieschange"></a>
 ## offMediaEntitiesChange
 
 ```TypeScript
@@ -432,7 +445,7 @@ Unregister report media entities change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MediaEntity[]> | No | The callback used to handle ('reportMediaEntitiesChange') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MediaEntity[]&gt; | No | The callback used to handle ('reportMediaEntitiesChange') event. |
 
 **Error codes:**
 
@@ -442,6 +455,7 @@ Unregister report media entities change callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offplaylistchange"></a>
 ## offPlaylistChange
 
 ```TypeScript
@@ -462,7 +476,7 @@ Unregister report playlist callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PageMediaEntity> | No | The callback used to handle ('reportPlaylist') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PageMediaEntity&gt; | No | The callback used to handle ('reportPlaylist') event. |
 
 **Error codes:**
 
@@ -472,6 +486,7 @@ Unregister report playlist callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offreportexecuteaction"></a>
 ## offReportExecuteAction
 
 ```TypeScript
@@ -502,6 +517,7 @@ Unregister report execute action callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offsettingschange"></a>
 ## offSettingsChange
 
 ```TypeScript
@@ -522,7 +538,7 @@ Unregister report settings callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SettingItem[]> | No | The callback used to handle ('reportSettings') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SettingItem[]&gt; | No | The callback used to handle ('reportSettings') event. |
 
 **Error codes:**
 
@@ -532,6 +548,7 @@ Unregister report settings callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offtabcontentchange"></a>
 ## offTabContentChange
 
 ```TypeScript
@@ -562,6 +579,7 @@ Unregister report tab content callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="offuserinfochange"></a>
 ## offUserInfoChange
 
 ```TypeScript
@@ -582,7 +600,7 @@ Unregister report user info callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<UserInfo> | No | The callback used to handle ('reportUserInfo') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;UserInfo&gt; | No | The callback used to handle ('reportUserInfo') event. |
 
 **Error codes:**
 
@@ -592,6 +610,7 @@ Unregister report user info callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="oncurrentsinglechange"></a>
 ## onCurrentSingleChange
 
 ```TypeScript
@@ -612,7 +631,7 @@ Register report current single callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Single> | Yes | The callback used to handle ('reportCurrentSingle') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Single&gt; | Yes | The callback used to handle ('reportCurrentSingle') event. |
 
 **Error codes:**
 
@@ -622,6 +641,7 @@ Register report current single callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="oncustomelementschange"></a>
 ## onCustomElementsChange
 
 ```TypeScript
@@ -652,6 +672,7 @@ Register report custom elements change callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="ondialogcommandchange"></a>
 ## onDialogCommandChange
 
 ```TypeScript
@@ -682,6 +703,7 @@ Register report dialog command callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="ondownloadmediaentitystatuschange"></a>
 ## onDownloadMediaEntityStatusChange
 
 ```TypeScript
@@ -702,7 +724,7 @@ Register report download media entity status callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MediaEntity> | Yes | The callback used to handle ('reportDownloadMediaEntityStatus') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MediaEntity&gt; | Yes | The callback used to handle ('reportDownloadMediaEntityStatus') event. |
 
 **Error codes:**
 
@@ -712,6 +734,7 @@ Register report download media entity status callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="onextensionabilitychange"></a>
 ## onExtensionAbilityChange
 
 ```TypeScript
@@ -742,6 +765,7 @@ Register report extension ability callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="onmediaentitieschange"></a>
 ## onMediaEntitiesChange
 
 ```TypeScript
@@ -762,7 +786,7 @@ Register report media entities change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MediaEntity[]> | Yes | The callback used to handle ('reportMediaEntitiesChange') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MediaEntity[]&gt; | Yes | The callback used to handle ('reportMediaEntitiesChange') event. |
 
 **Error codes:**
 
@@ -772,6 +796,7 @@ Register report media entities change callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="onplaylistchange"></a>
 ## onPlaylistChange
 
 ```TypeScript
@@ -792,7 +817,7 @@ Register report playlist callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PageMediaEntity> | Yes | The callback used to handle ('reportPlaylist') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PageMediaEntity&gt; | Yes | The callback used to handle ('reportPlaylist') event. |
 
 **Error codes:**
 
@@ -802,6 +827,7 @@ Register report playlist callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="onreportexecuteaction"></a>
 ## onReportExecuteAction
 
 ```TypeScript
@@ -832,6 +858,7 @@ Register report execute action callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="onsettingschange"></a>
 ## onSettingsChange
 
 ```TypeScript
@@ -852,7 +879,7 @@ Register report settings callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SettingItem[]> | Yes | The callback used to handle ('reportSettings') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SettingItem[]&gt; | Yes | The callback used to handle ('reportSettings') event. |
 
 **Error codes:**
 
@@ -862,6 +889,7 @@ Register report settings callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="ontabcontentchange"></a>
 ## onTabContentChange
 
 ```TypeScript
@@ -892,6 +920,7 @@ Register report tab content callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="onuserinfochange"></a>
 ## onUserInfoChange
 
 ```TypeScript
@@ -912,7 +941,7 @@ Register report user info callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<UserInfo> | Yes | The callback used to handle ('reportUserInfo') event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;UserInfo&gt; | Yes | The callback used to handle ('reportUserInfo') event. |
 
 **Error codes:**
 
@@ -922,6 +951,7 @@ Register report user info callback.
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+<a id="playforsearch"></a>
 ## playForSearch
 
 ```TypeScript
@@ -949,7 +979,7 @@ Play for search.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperResult> | Promise for the result |
+| Promise&lt;OperResult&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -960,6 +990,7 @@ Play for search.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="playmediaentity"></a>
 ## playMediaEntity
 
 ```TypeScript
@@ -986,7 +1017,7 @@ Play media entity.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise for the result |
+| Promise&lt;void&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -997,6 +1028,7 @@ Play media entity.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querycompilation"></a>
 ## queryCompilation
 
 ```TypeScript
@@ -1024,7 +1056,7 @@ Query compilation.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PageMediaEntity> | Promise for the result |
+| Promise&lt;PageMediaEntity&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1035,6 +1067,7 @@ Query compilation.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querycompilationbykeyword"></a>
 ## queryCompilationByKeyword
 
 ```TypeScript
@@ -1061,7 +1094,7 @@ Query compilation by keyword.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Compilation[]> | Promise for the result |
+| Promise&lt;Compilation[]&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1072,6 +1105,7 @@ Query compilation by keyword.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querycurrentsingle"></a>
 ## queryCurrentSingle
 
 ```TypeScript
@@ -1092,7 +1126,7 @@ Query current single.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Single> | Promise for the result |
+| Promise&lt;Single&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1103,6 +1137,7 @@ Query current single.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querycustomcontent"></a>
 ## queryCustomContent
 
 ```TypeScript
@@ -1129,7 +1164,7 @@ Query custom content.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CustomElement> | Promise for the result |
+| Promise&lt;CustomElement&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1140,6 +1175,7 @@ Query custom content.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="queryhotwords"></a>
 ## queryHotWords
 
 ```TypeScript
@@ -1160,7 +1196,7 @@ Query hot words.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Promise for the result |
+| Promise&lt;string[]&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1171,6 +1207,7 @@ Query hot words.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querymaintabs"></a>
 ## queryMainTabs
 
 ```TypeScript
@@ -1191,7 +1228,7 @@ Query main tabs.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MediaTab[]> | Promise for the result |
+| Promise&lt;MediaTab[]&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1202,6 +1239,7 @@ Query main tabs.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querymediaentity"></a>
 ## queryMediaEntity
 
 ```TypeScript
@@ -1228,7 +1266,7 @@ Query media entity.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PageMediaEntity> | Promise for the result |
+| Promise&lt;PageMediaEntity&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1239,6 +1277,7 @@ Query media entity.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querymediaentitybykeyword"></a>
 ## queryMediaEntityByKeyword
 
 ```TypeScript
@@ -1267,7 +1306,7 @@ Query media entity by keyword.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PageMediaEntity> | Promise for the result |
+| Promise&lt;PageMediaEntity&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1278,6 +1317,7 @@ Query media entity by keyword.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querymediatabcontent"></a>
 ## queryMediaTabContent
 
 ```TypeScript
@@ -1304,7 +1344,7 @@ Query media tab content.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MediaTabContent> | Promise for the result |
+| Promise&lt;MediaTabContent&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1315,6 +1355,7 @@ Query media tab content.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querymemberpurchase"></a>
 ## queryMemberPurchase
 
 ```TypeScript
@@ -1341,7 +1382,7 @@ Query member purchase.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MemberPurchaseInfo[]> | Promise for the result |
+| Promise&lt;MemberPurchaseInfo[]&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1352,6 +1393,7 @@ Query member purchase.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="queryplaylist"></a>
 ## queryPlaylist
 
 ```TypeScript
@@ -1379,7 +1421,7 @@ Query playlist.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PageMediaEntity> | Promise for the result |
+| Promise&lt;PageMediaEntity&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1390,6 +1432,7 @@ Query playlist.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="queryrecommendmediaentitylist"></a>
 ## queryRecommendMediaEntityList
 
 ```TypeScript
@@ -1410,7 +1453,7 @@ Query recommend media entity list.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MediaEntity[]> | Promise for the result |
+| Promise&lt;MediaEntity[]&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1421,6 +1464,7 @@ Query recommend media entity list.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="querysearchhistory"></a>
 ## querySearchHistory
 
 ```TypeScript
@@ -1441,7 +1485,7 @@ Query search history.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Promise for the result |
+| Promise&lt;string[]&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1452,6 +1496,7 @@ Query search history.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="reportproblemandadvice"></a>
 ## reportProblemAndAdvice
 
 ```TypeScript
@@ -1478,7 +1523,7 @@ Report problem and advice.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperResult> | Promise for the result |
+| Promise&lt;OperResult&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1489,6 +1534,7 @@ Report problem and advice.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="requestdialoginfo"></a>
 ## requestDialogInfo
 
 ```TypeScript
@@ -1516,7 +1562,7 @@ Request dialog info.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DialogInfo> | Promise for the result |
+| Promise&lt;DialogInfo&gt; | Promise for the result |
 
 **Error codes:**
 
@@ -1527,6 +1573,7 @@ Request dialog info.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | [35000006](../errorcode-avmusictemplate.md#35000006-template-controller-does-not-exist) | AVMusicTemplateController does not exist. |
 
+<a id="updatesettings"></a>
 ## updateSettings
 
 ```TypeScript
@@ -1553,7 +1600,7 @@ Report settings change.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SettingItem> | Promise for the result |
+| Promise&lt;SettingItem&gt; | Promise for the result |
 
 **Error codes:**
 

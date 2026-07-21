@@ -14,6 +14,7 @@ Provides APIs for managing OS accounts.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="activateosaccount"></a>
 ## activateOsAccount
 
 ```TypeScript
@@ -37,7 +38,7 @@ Activates an OS account. This API uses an asynchronous callback to return the re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -77,6 +78,7 @@ try {
 
 ```
 
+<a id="activateosaccount-1"></a>
 ## activateOsAccount
 
 ```TypeScript
@@ -105,7 +107,7 @@ Activates an OS account. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -143,6 +145,7 @@ try {
 
 ```
 
+<a id="activateosaccount-2"></a>
 ## activateOsAccount
 
 ```TypeScript
@@ -172,7 +175,7 @@ Activates (Starts on the foreground or switches to) the target OS account on the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -212,6 +215,7 @@ try {
 
 ```
 
+<a id="binddomainaccount"></a>
 ## bindDomainAccount
 
 ```TypeScript
@@ -241,7 +245,7 @@ Binds a domain account to an OS account. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -280,6 +284,7 @@ try {
 
 ```
 
+<a id="createosaccount"></a>
 ## createOsAccount
 
 ```TypeScript
@@ -304,7 +309,7 @@ Creates an OS account. This API uses an asynchronous callback to return the resu
 | --- | --- | --- | --- |
 | localName | string | Yes | Name of the OS account to create. |
 | type | [OsAccountType](arkts-basicservices-osaccount-osaccounttype-e-sys.md) | Yes | Type of the OS account to create. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<OsAccountInfo> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the created OS account.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;OsAccountInfo&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the created OS account.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -343,6 +348,7 @@ try {
 
 ```
 
+<a id="createosaccount-1"></a>
 ## createOsAccount
 
 ```TypeScript
@@ -373,7 +379,7 @@ Creates an OS account. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountInfo> | Promise used to return the information about the created OS account. |
+| Promise&lt;OsAccountInfo&gt; | Promise used to return the information about the created OS account. |
 
 **Error codes:**
 
@@ -416,6 +422,7 @@ try {
 
 ```
 
+<a id="createosaccountfordomain"></a>
 ## createOsAccountForDomain
 
 ```TypeScript
@@ -452,7 +459,7 @@ Creates an OS account and associates it with the specified domain account. This 
 | --- | --- | --- | --- |
 | type | [OsAccountType](arkts-basicservices-osaccount-osaccounttype-e-sys.md) | Yes | Type of the OS account to create. |
 | domainInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<OsAccountInfo> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the created OS account.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;OsAccountInfo&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the created OS account.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -494,6 +501,7 @@ try {
 
 ```
 
+<a id="createosaccountfordomain-1"></a>
 ## createOsAccountForDomain
 
 ```TypeScript
@@ -524,7 +532,7 @@ Creates an OS account and associates it with the specified domain account. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountInfo> | Promise used to return the information about the created OS account. |
+| Promise&lt;OsAccountInfo&gt; | Promise used to return the information about the created OS account. |
 
 **Error codes:**
 
@@ -568,6 +576,7 @@ try {
 
 ```
 
+<a id="deactivateosaccount"></a>
 ## deactivateOsAccount
 
 ```TypeScript
@@ -596,7 +605,7 @@ Deactivates (logs out of) an OS account. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -632,6 +641,7 @@ try {
 
 ```
 
+<a id="getbundleidforuid"></a>
 ## getBundleIdForUid
 
 ```TypeScript
@@ -653,7 +663,7 @@ Obtains the bundle ID based on the specified UID. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uid | number | Yes | Process UID. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is the bundle ID obtained. Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is the bundle ID obtained. Otherwise, **data** is an error object. |
 
 **Error codes:**
 
@@ -687,6 +697,7 @@ try {
 
 ```
 
+<a id="getbundleidforuid-1"></a>
 ## getBundleIdForUid
 
 ```TypeScript
@@ -713,7 +724,7 @@ Obtains the bundle ID based on the specified UID. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the bundle ID obtained. |
+| Promise&lt;number&gt; | Promise used to return the bundle ID obtained. |
 
 **Error codes:**
 
@@ -744,6 +755,7 @@ try {
 
 ```
 
+<a id="getbundleidforuidsync"></a>
 ## getBundleIdForUidSync
 
 ```TypeScript
@@ -797,6 +809,7 @@ try {
 
 ```
 
+<a id="getenabledosaccountconstraints"></a>
 ## getEnabledOsAccountConstraints
 
 ```TypeScript
@@ -825,7 +838,7 @@ Obtains all the enabled constraints of an OS account. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return all the enabled [constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints)of the OS account. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return all the enabled [constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints)of the OS account. |
 
 **Error codes:**
 
@@ -859,6 +872,7 @@ try {
 
 ```
 
+<a id="getforegroundosaccountdisplayid"></a>
 ## getForegroundOsAccountDisplayId
 
 ```TypeScript
@@ -887,7 +901,7 @@ Obtains the logical display ID of the specified foreground OS account. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the logical display ID. |
+| Promise&lt;number&gt; | Promise used to return the logical display ID. |
 
 **Error codes:**
 
@@ -918,6 +932,7 @@ try {
 
 ```
 
+<a id="getforegroundosaccountlocalid"></a>
 ## getForegroundOsAccountLocalId
 
 ```TypeScript
@@ -946,7 +961,7 @@ Obtains the ID of the foreground OS account running on a specified logical displ
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the OS account ID. |
+| Promise&lt;number&gt; | Promise used to return the OS account ID. |
 
 **Error codes:**
 
@@ -977,6 +992,7 @@ try {
 
 ```
 
+<a id="getosaccountconstraintsourcetypes"></a>
 ## getOsAccountConstraintSourceTypes
 
 ```TypeScript
@@ -1000,8 +1016,8 @@ Obtains the constraint source information of an OS account. This API uses an asy
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) whose source information is to be obtained. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<ConstraintSourceTypeInfo>> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the [constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) source information obtained. Otherwise, **err** is an error object. |
+| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) whose source information is to be obtained. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ConstraintSourceTypeInfo&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the [constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) source information obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1036,6 +1052,7 @@ try {
 
 ```
 
+<a id="getosaccountconstraintsourcetypes-1"></a>
 ## getOsAccountConstraintSourceTypes
 
 ```TypeScript
@@ -1059,13 +1076,13 @@ Obtains the constraint source information of an OS account. This API uses a prom
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) whose source information is to be obtained. |
+| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) whose source information is to be obtained. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ConstraintSourceTypeInfo>> | Promise used to return the source information of the specified [constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints). |
+| Promise&lt;Array&lt;ConstraintSourceTypeInfo&gt;&gt; | Promise used to return the source information of the specified [constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints). |
 
 **Error codes:**
 
@@ -1098,6 +1115,7 @@ try {
 
 ```
 
+<a id="getosaccountprofilephoto"></a>
 ## getOsAccountProfilePhoto
 
 ```TypeScript
@@ -1121,7 +1139,7 @@ Obtains the profile photo of an OS account. This API uses an asynchronous callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the profile photo information obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the profile photo information obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1158,6 +1176,7 @@ try {
 
 ```
 
+<a id="getosaccountprofilephoto-1"></a>
 ## getOsAccountProfilePhoto
 
 ```TypeScript
@@ -1186,7 +1205,7 @@ Obtains the profile photo of an OS account. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the profile photo information obtained. |
+| Promise&lt;string&gt; | Promise used to return the profile photo information obtained. |
 
 **Error codes:**
 
@@ -1221,6 +1240,7 @@ try {
 
 ```
 
+<a id="getosaccounttype"></a>
 ## getOsAccountType
 
 ```TypeScript
@@ -1249,7 +1269,7 @@ Obtains the type of a specified OS account. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountType> | Promise used to return the type of the OS account obtained. |
+| Promise&lt;OsAccountType&gt; | Promise used to return the type of the OS account obtained. |
 
 **Error codes:**
 
@@ -1281,6 +1301,7 @@ try {
 
 ```
 
+<a id="ismainosaccount"></a>
 ## isMainOsAccount
 
 ```TypeScript
@@ -1303,7 +1324,7 @@ Checks whether the current process belongs to the main OS account. This API uses
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If **true** is returned,the current process belongs to the main OS account. If **false** is returned, the current process does not belong to the main OS account. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If **true** is returned,the current process belongs to the main OS account. If **false** is returned, the current process does not belong to the main OS account. |
 
 **Error codes:**
 
@@ -1335,6 +1356,7 @@ try {
 
 ```
 
+<a id="ismainosaccount-1"></a>
 ## isMainOsAccount
 
 ```TypeScript
@@ -1357,7 +1379,7 @@ Checks whether the current process belongs to the main OS account. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. If **true** is returned, the current process belongs to the main OS account. If **false** is returned, the current process does not belong to the main OS account. |
+| Promise&lt;boolean&gt; | Promise used to return the result. If **true** is returned, the current process belongs to the main OS account. If **false** is returned, the current process does not belong to the main OS account. |
 
 **Error codes:**
 
@@ -1386,6 +1408,7 @@ try {
 
 ```
 
+<a id="isosaccountactivated"></a>
 ## isOsAccountActivated
 
 ```TypeScript
@@ -1414,7 +1437,7 @@ Checks whether an OS account is activated. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -1448,6 +1471,7 @@ try {
 
 ```
 
+<a id="isosaccountconstraintenabled"></a>
 ## isOsAccountConstraintEnabled
 
 ```TypeScript
@@ -1471,13 +1495,13 @@ Checks whether a constraint is enabled for an OS account. This API uses a promis
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
+| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -1512,6 +1536,7 @@ try {
 
 ```
 
+<a id="isosaccountunlocked"></a>
 ## isOsAccountUnlocked
 
 ```TypeScript
@@ -1540,7 +1565,7 @@ Checks whether an OS account has been verified. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -1572,6 +1597,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('activate' | 'activating')
 
 ```TypeScript
@@ -1596,7 +1622,7 @@ Unsubscribes from the OS account activation states, including the states of the 
 | --- | --- | --- | --- |
 | type | 'activate' \| 'activating' | Yes | Type of the event to unsubscribe from. The value **activate** indicates that an OS account is activated, and **activating** indicates that an OS account is being activated. |
 | name | string | Yes | Subscription name, which can be customized. The value cannot be empty or exceed 1024 bytes, and must be the same as the value passed by **on()**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | Callback to unregister. By default, this parameter is left empty,which unregisters all callbacks for the OS account activation states. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback to unregister. By default, this parameter is left empty,which unregisters all callbacks for the OS account activation states. |
 
 **Error codes:**
 
@@ -1628,6 +1654,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('activate' | 'activating')
 
 ```TypeScript
@@ -1652,7 +1679,7 @@ Unsubscribes from the OS account activation states, including the states of the 
 | --- | --- | --- | --- |
 | type | 'activate' \| 'activating' | Yes | Type of the event to unsubscribe from. The value **activate** indicates that an OS account is activated, and **activating** indicates that an OS account is being activated. |
 | name | string | Yes | Subscription name, which can be customized. The value cannot be empty or exceed 1024 bytes, and must be the same as the value passed by **on()**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | Callback to unregister. By default, this parameter is left empty,which unregisters all callbacks for the OS account activation states. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback to unregister. By default, this parameter is left empty,which unregisters all callbacks for the OS account activation states. |
 
 **Error codes:**
 
@@ -1684,6 +1711,7 @@ try {
 
 ```
 
+<a id="off-2"></a>
 ## off('switching')
 
 ```TypeScript
@@ -1709,7 +1737,7 @@ Unsubscribes from the switchover between a foreground OS account and a backgroun
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'switching' | Yes | Event type. The value **switching** indicates that the switchover between a foreground OS account and a background account is being performed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OsAccountSwitchEventData> | No | Callback to unregister.By default, this parameter is left empty, which unregisters all callbacks for the **switching** event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OsAccountSwitchEventData&gt; | No | Callback to unregister.By default, this parameter is left empty, which unregisters all callbacks for the **switching** event. |
 
 **Error codes:**
 
@@ -1735,6 +1763,7 @@ try {
 
 ```
 
+<a id="off-3"></a>
 ## off('switched')
 
 ```TypeScript
@@ -1760,7 +1789,7 @@ Unsubscribes from the end of a switchover between a foreground OS account and a 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'switched' | Yes | Event type. The value **switched** indicates that the switchover between a foreground OS account and a background OS account is complete. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OsAccountSwitchEventData> | No | Callback to unregister. By default, this parameter is left empty, which unregisters all callbacks for the **switched** event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OsAccountSwitchEventData&gt; | No | Callback to unregister. By default, this parameter is left empty, which unregisters all callbacks for the **switched** event. |
 
 **Error codes:**
 
@@ -1786,6 +1815,7 @@ try {
 
 ```
 
+<a id="offconstraintchanged"></a>
 ## offConstraintChanged
 
 ```TypeScript
@@ -1806,7 +1836,7 @@ Unsubscribes from constraint change events associated with the specified callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ConstraintChangeInfo> | No | Callback for receiving constraint change information.  - Callback used to listen for the constraint change events.<br>The default value is **undefined**, indicating that all subscription records are unsubscribed.<br>If this parameter is not **undefined**, the subscription records associated with the callback are unsubscribed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ConstraintChangeInfo&gt; | No | Callback for receiving constraint change information.   - Callback used to listen for the constraint change events.<br>The default value is **undefined**, indicating that all subscription records are unsubscribed.<br>If this parameter is not **undefined**, the subscription records associated with the callback are unsubscribed. |
 
 **Error codes:**
 
@@ -1842,6 +1872,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('activate' | 'activating')
 
 ```TypeScript
@@ -1866,7 +1897,7 @@ Subscribes to the OS account activation states, including the states of the acco
 | --- | --- | --- | --- |
 | type | 'activate' \| 'activating' | Yes | Type of the event to subscribe to.The value **activate** indicates that an OS account is activated, and **activating** indicates that an OS account is being activated. |
 | name | string | Yes | Subscription name, which can be customized.The value cannot be empty or exceed 1024 bytes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the ID of the OS account being activated or activated. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the ID of the OS account being activated or activated. |
 
 **Error codes:**
 
@@ -1898,6 +1929,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on('activate' | 'activating')
 
 ```TypeScript
@@ -1922,7 +1954,7 @@ Subscribes to the OS account activation states, including the states of the acco
 | --- | --- | --- | --- |
 | type | 'activate' \| 'activating' | Yes | Type of the event to subscribe to.The value **activate** indicates that an OS account is activated, and **activating** indicates that an OS account is being activated. |
 | name | string | Yes | Subscription name, which can be customized.The value cannot be empty or exceed 1024 bytes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the ID of the OS account being activated or activated. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the ID of the OS account being activated or activated. |
 
 **Error codes:**
 
@@ -1954,6 +1986,7 @@ try {
 
 ```
 
+<a id="on-2"></a>
 ## on('switching')
 
 ```TypeScript
@@ -1979,7 +2012,7 @@ Subscribes to the switchover between a foreground OS account and a background OS
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'switching' | Yes | Event type. The value **switching** indicates that the switchover between a foreground OS account and a background account is being performed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OsAccountSwitchEventData> | Yes | Callback to be invoked when an OS account is switching between the foreground and background. The source and target OS account IDs are subscribed to.<br>Note: Since API version 23, the optional field **displayId** is available,indicating the ID of the logical display where the switch event occurs. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OsAccountSwitchEventData&gt; | Yes | Callback to be invoked when an OS account is switching between the foreground and background. The source and target OS account IDs are subscribed to.<br>Note: Since API version 23, the optional field **displayId** is available,indicating the ID of the logical display where the switch event occurs. |
 
 **Error codes:**
 
@@ -2010,6 +2043,7 @@ try {
 
 ```
 
+<a id="on-3"></a>
 ## on('switched')
 
 ```TypeScript
@@ -2035,7 +2069,7 @@ Subscribes to the end of a switchover between a foreground OS account and a back
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'switched' | Yes | Event type. The value **switched** indicates that the switchover between a foreground OS account and a background OS account is complete. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OsAccountSwitchEventData> | Yes | Callback to be invoked when an OS account is switched between the foreground and background. The source and target OS account IDs are subscribed to.<br>Note: Since API version 23, the optional field **displayId** is available, indicating the ID of the logical display where the switch event occurs. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OsAccountSwitchEventData&gt; | Yes | Callback to be invoked when an OS account is switched between the foreground and background. The source and target OS account IDs are subscribed to.<br>Note: Since API version 23, the optional field **displayId** is available, indicating the ID of the logical display where the switch event occurs. |
 
 **Error codes:**
 
@@ -2066,6 +2100,7 @@ try {
 
 ```
 
+<a id="onconstraintchanged"></a>
 ## onConstraintChanged
 
 ```TypeScript
@@ -2086,8 +2121,8 @@ Subscribes to one or more constraint change events of the OS account to which th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| constraints | string[] | Yes | List of [constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints)to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ConstraintChangeInfo> | Yes | Callback used to listen for the constraint change events. |
+| constraints | string[] | Yes | List of [constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints)to be subscribed to. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ConstraintChangeInfo&gt; | Yes | Callback used to listen for the constraint change events. |
 
 **Error codes:**
 
@@ -2117,6 +2152,7 @@ try {
 
 ```
 
+<a id="queryallcreatedosaccounts"></a>
 ## queryAllCreatedOsAccounts
 
 ```TypeScript
@@ -2139,7 +2175,7 @@ Queries information about all the OS accounts created. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<OsAccountInfo>> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is a list of all created OS accounts.Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;OsAccountInfo&gt;&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is a list of all created OS accounts.Otherwise, **data** is an error object. |
 
 **Error codes:**
 
@@ -2171,6 +2207,7 @@ try {
 
 ```
 
+<a id="queryallcreatedosaccounts-1"></a>
 ## queryAllCreatedOsAccounts
 
 ```TypeScript
@@ -2193,7 +2230,7 @@ Queries information about all the OS accounts created. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<OsAccountInfo>> | Promise used to return the information about all the OS accounts created. |
+| Promise&lt;Array&lt;OsAccountInfo&gt;&gt; | Promise used to return the information about all the OS accounts created. |
 
 **Error codes:**
 
@@ -2222,6 +2259,7 @@ try {
 
 ```
 
+<a id="querymaxloggedinosaccountnumber"></a>
 ## queryMaxLoggedInOsAccountNumber
 
 ```TypeScript
@@ -2242,7 +2280,7 @@ Queries the maximum number of OS accounts allowed to log in to the system. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -2270,6 +2308,7 @@ try {
 
 ```
 
+<a id="querymaxosaccountnumber"></a>
 ## queryMaxOsAccountNumber
 
 ```TypeScript
@@ -2290,7 +2329,7 @@ Queries the maximum number of OS accounts that can be created. This API uses an 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the maximum number of OS accounts that can be created. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the maximum number of OS accounts that can be created. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -2321,6 +2360,7 @@ try {
 
 ```
 
+<a id="querymaxosaccountnumber-1"></a>
 ## queryMaxOsAccountNumber
 
 ```TypeScript
@@ -2341,7 +2381,7 @@ Queries the maximum number of OS accounts that can be created. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -2369,6 +2409,7 @@ try {
 
 ```
 
+<a id="queryosaccount"></a>
 ## queryOsAccount
 
 ```TypeScript
@@ -2391,7 +2432,7 @@ Obtains information about the OS account to which the current process belongs. T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountInfo> | Promise used to return the OS account information obtained. |
+| Promise&lt;OsAccountInfo&gt; | Promise used to return the OS account information obtained. |
 
 **Error codes:**
 
@@ -2420,6 +2461,7 @@ try {
 
 ```
 
+<a id="queryosaccountbyid"></a>
 ## queryOsAccountById
 
 ```TypeScript
@@ -2443,7 +2485,7 @@ Queries information about the OS account of the given ID. This API uses an async
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<OsAccountInfo> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account information obtained.Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;OsAccountInfo&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account information obtained.Otherwise, **data** is an error object. |
 
 **Error codes:**
 
@@ -2480,6 +2522,7 @@ try {
 
 ```
 
+<a id="queryosaccountbyid-1"></a>
 ## queryOsAccountById
 
 ```TypeScript
@@ -2508,7 +2551,7 @@ Queries information about the OS account of the given ID. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountInfo> | Promise used to return the OS account information obtained. |
+| Promise&lt;OsAccountInfo&gt; | Promise used to return the OS account information obtained. |
 
 **Error codes:**
 
@@ -2543,6 +2586,7 @@ try {
 
 ```
 
+<a id="removeosaccount"></a>
 ## removeOsAccount
 
 ```TypeScript
@@ -2566,7 +2610,7 @@ Removes an OS account. This API uses an asynchronous callback to return the resu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -2606,6 +2650,7 @@ try {
 
 ```
 
+<a id="removeosaccount-1"></a>
 ## removeOsAccount
 
 ```TypeScript
@@ -2634,7 +2679,7 @@ Removes an OS account. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2672,6 +2717,7 @@ try {
 
 ```
 
+<a id="removeosaccount-2"></a>
 ## removeOsAccount
 
 ```TypeScript
@@ -2701,7 +2747,7 @@ Removes a specified OS account based on the options. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2743,6 +2789,7 @@ try {
 
 ```
 
+<a id="setosaccountconstraints"></a>
 ## setOsAccountConstraints
 
 ```TypeScript
@@ -2766,9 +2813,9 @@ Sets or removes constraints for an OS account. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraints | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | [Constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to set or remove. |
+| constraints | Array&lt;string&gt; | Yes | [Constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to set or remove. |
 | enable | boolean | Yes | Whether to set or remove constraints. The value **true** means to set constraints, and **false** means to remove constraints. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -2807,6 +2854,7 @@ try {
 
 ```
 
+<a id="setosaccountconstraints-1"></a>
 ## setOsAccountConstraints
 
 ```TypeScript
@@ -2830,14 +2878,14 @@ Sets or removes constraints for an OS account. This API uses a promise to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraints | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | [Constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to set or remove. |
+| constraints | Array&lt;string&gt; | Yes | [Constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to set or remove. |
 | enable | boolean | Yes | Set or remove constraints. The value **true** means to set constraints,and **false** means to remove constraints. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2873,6 +2921,7 @@ try {
 
 ```
 
+<a id="setosaccountname"></a>
 ## setOsAccountName
 
 ```TypeScript
@@ -2897,7 +2946,7 @@ Sets the name of an OS account. This API uses an asynchronous callback to return
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
 | localName | string | Yes | Account name to set. The value cannot exceed 1024 characters. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -2936,6 +2985,7 @@ try {
 
 ```
 
+<a id="setosaccountname-1"></a>
 ## setOsAccountName
 
 ```TypeScript
@@ -2965,7 +3015,7 @@ Sets the name of an OS account. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -3002,6 +3052,7 @@ try {
 
 ```
 
+<a id="setosaccountprofilephoto"></a>
 ## setOsAccountProfilePhoto
 
 ```TypeScript
@@ -3026,7 +3077,7 @@ Sets a profile photo for an OS account. This API uses an asynchronous callback t
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
 | photo | string | Yes | Profile photo information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -3068,6 +3119,7 @@ try {
 
 ```
 
+<a id="setosaccountprofilephoto-1"></a>
 ## setOsAccountProfilePhoto
 
 ```TypeScript
@@ -3097,7 +3149,7 @@ Sets a profile photo for an OS account. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -3137,6 +3189,7 @@ try {
 
 ```
 
+<a id="setosaccounttype"></a>
 ## setOsAccountType
 
 ```TypeScript
@@ -3167,7 +3220,7 @@ Sets the type of a specified OS account. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

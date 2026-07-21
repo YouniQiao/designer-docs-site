@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="activatesim"></a>
 ## activateSim
 
 ```TypeScript
@@ -29,7 +30,7 @@ Activate the SIM card in the specified slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of activateSim. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of activateSim. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sim.activateSim(0, (err: BusinessError) => {
 ```
 
 
+<a id="activatesim-1"></a>
 ## activateSim
 
 ```TypeScript
@@ -85,7 +87,7 @@ Activate the SIM card in the specified slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the activateSim. |
+| Promise&lt;void&gt; | The promise returned by the activateSim. |
 
 **Error codes:**
 

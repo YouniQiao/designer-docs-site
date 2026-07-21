@@ -6,6 +6,7 @@
 import { socket } from '@kit.NetworkKit';
 ```
 
+<a id="constructtlssocketinstance"></a>
 ## constructTLSSocketInstance
 
 ```TypeScript
@@ -36,6 +37,7 @@ let tls: socket.TLSSocket = socket.constructTLSSocketInstance();
 ```
 
 
+<a id="constructtlssocketinstance-1"></a>
 ## constructTLSSocketInstance
 
 ```TypeScript

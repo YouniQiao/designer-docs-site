@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="getportlist"></a>
 ## getPortList
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the list of all physical USB ports. When the developer mode is disabled,
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<USBPort> | List of physical USB ports. |
+| Array&lt;USBPort&gt; | List of physical USB ports. |
 
 **Error codes:**
 

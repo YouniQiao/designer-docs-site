@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="getpolicybyuid"></a>
 ## getPolicyByUid
 
 ```TypeScript
@@ -29,7 +30,7 @@ Query the policy of the specified UID.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uid | number | Yes | the specified UID of application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetUidPolicy> | Yes | the callback of getPolicyByUid. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetUidPolicy&gt; | Yes | the callback of getPolicyByUid. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ policy.getPolicyByUid(11111, (error: BusinessError, data: policy.NetUidPolicy) =
 ```
 
 
+<a id="getpolicybyuid-1"></a>
 ## getPolicyByUid
 
 ```TypeScript
@@ -83,7 +85,7 @@ Query the policy of the specified UID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetUidPolicy> | The promise returned by the function. |
+| Promise&lt;NetUidPolicy&gt; | The promise returned by the function. |
 
 **Error codes:**
 

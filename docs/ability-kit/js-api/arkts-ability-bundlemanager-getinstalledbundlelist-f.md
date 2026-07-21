@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getinstalledbundlelist"></a>
 ## getInstalledBundleList
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains all the bundle information in the system based on the given bundle flags
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleInfo>> | Promise used to return the list of installed applications. |
+| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Promise used to return the list of installed applications. |
 
 **Error codes:**
 

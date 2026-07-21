@@ -14,6 +14,7 @@ QuickImageDataHandler is a media asset handler used to customize the media asset
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="ondataprepared"></a>
 ## onDataPrepared
 
 ```TypeScript
@@ -40,5 +41,5 @@ Information returned by **map**:
 | --- | --- | --- | --- |
 | data | T | Yes | Data of the image asset that is ready. It is of the generic type and supports the [Picture](../../apis-image-kit/arkts-apis/arkts-image-image-picture-i.md) type. |
 | imageSource | image.ImageSource | Yes | Data of the image asset that is ready. |
-| map | [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<string, string> | Yes | Additional information about the image asset, such as the image quality.Currently, only **quality** is supported. |
+| map | Map&lt;string, string&gt; | Yes | Additional information about the image asset, such as the image quality.Currently, only **quality** is supported. |
 

@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="getavscreencaptureconfigurableparameters"></a>
 ## getAVScreenCaptureConfigurableParameters
 
 ```TypeScript
@@ -32,7 +33,7 @@ get Configurations which user can changes from AVScreenCapture server
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns a configurable configuration item string. |
+| Promise&lt;string&gt; | Returns a configurable configuration item string. |
 
 **Error codes:**
 

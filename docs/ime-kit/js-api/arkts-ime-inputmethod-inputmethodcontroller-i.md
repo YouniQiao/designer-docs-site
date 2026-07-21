@@ -14,6 +14,7 @@ A control class that encapsulates APIs for input method management, which can on
 import { inputMethod } from '@kit.IMEKit';
 ```
 
+<a id="attach"></a>
 ## attach
 
 ```TypeScript
@@ -34,7 +35,7 @@ Attach application to the input method service.
 | --- | --- | --- | --- |
 | showKeyboard | boolean | Yes | show the keyboard or not when attach the input method. |
 | textConfig | [TextConfig](arkts-ime-inputmethod-textconfig-i.md) | Yes | indicates the config of the textInput. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of attach. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of attach. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ inputMethod.getController().attach(true, textConfig, (err: BusinessError) => {
 
 ```
 
+<a id="attach-1"></a>
 ## attach
 
 ```TypeScript
@@ -89,7 +91,7 @@ Attach application to the input method service.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -117,6 +119,7 @@ inputMethod.getController().attach(true, textConfig).then(() => {
 
 ```
 
+<a id="attach-2"></a>
 ## attach
 
 ```TypeScript
@@ -143,7 +146,7 @@ Attach application to the input method service.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -173,6 +176,7 @@ inputMethod.getController().attach(true, textConfig, requestKeyboardReason).then
 
 ```
 
+<a id="attachwithuicontext"></a>
 ## attachWithUIContext
 
 ```TypeScript
@@ -201,7 +205,7 @@ Attach application to the input method service with UI context.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -231,6 +235,7 @@ inputMethod.getController().attachWithUIContext(uiContext, textConfig, attachOpt
 
 ```
 
+<a id="changeselection"></a>
 ## changeSelection
 
 ```TypeScript
@@ -252,7 +257,7 @@ Notify the input method the selected text and the selection range of the current
 | text | string | Yes | the whole input text. |
 | start | number | Yes | start position of selected text. |
 | end | number | Yes | end position of selected text. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of changeSelection. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of changeSelection. |
 
 **Error codes:**
 
@@ -278,6 +283,7 @@ inputMethod.getController().changeSelection('text', 0, 5, (err: BusinessError) =
 
 ```
 
+<a id="changeselection-1"></a>
 ## changeSelection
 
 ```TypeScript
@@ -304,7 +310,7 @@ Notify the input method the selected text and the selection range of the current
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -328,6 +334,7 @@ inputMethod.getController().changeSelection('test', 0, 5).then(() => {
 
 ```
 
+<a id="detach"></a>
 ## detach
 
 ```TypeScript
@@ -346,7 +353,7 @@ Detach the applications from the input method manager service.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of detach. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of detach. |
 
 **Error codes:**
 
@@ -370,6 +377,7 @@ inputMethod.getController().detach((err: BusinessError) => {
 
 ```
 
+<a id="detach-1"></a>
 ## detach
 
 ```TypeScript
@@ -388,7 +396,7 @@ Detach the applications from the input method manager service.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -410,6 +418,7 @@ inputMethod.getController().detach().then(() => {
 
 ```
 
+<a id="discardtypingtext"></a>
 ## discardTypingText
 
 ```TypeScript
@@ -428,7 +437,7 @@ Discard the typing text
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -451,6 +460,7 @@ inputMethod.getController().discardTypingText().then(() => {
 
 ```
 
+<a id="hidesoftkeyboard"></a>
 ## hideSoftKeyboard
 
 ```TypeScript
@@ -471,7 +481,7 @@ Hide soft keyboard.This API can be called only by system applications.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of hideSoftKeyboard. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of hideSoftKeyboard. |
 
 **Error codes:**
 
@@ -496,6 +506,7 @@ inputMethod.getController().hideSoftKeyboard((err: BusinessError) => {
 
 ```
 
+<a id="hidesoftkeyboard-1"></a>
 ## hideSoftKeyboard
 
 ```TypeScript
@@ -516,7 +527,7 @@ Hide soft keyboard.This API can be called only by system applications.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -539,6 +550,7 @@ inputMethod.getController().hideSoftKeyboard().then(() => {
 
 ```
 
+<a id="hidetextinput"></a>
 ## hideTextInput
 
 ```TypeScript
@@ -557,7 +569,7 @@ Hide the text input and stop typing.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of hideTextInput. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of hideTextInput. |
 
 **Error codes:**
 
@@ -582,6 +594,7 @@ inputMethod.getController().hideTextInput((err: BusinessError) => {
 
 ```
 
+<a id="hidetextinput-1"></a>
 ## hideTextInput
 
 ```TypeScript
@@ -600,7 +613,7 @@ Hide the text input and stop typing.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -623,6 +636,7 @@ inputMethod.getController().hideTextInput().then(() => {
 
 ```
 
+<a id="off"></a>
 ## off('selectByRange')
 
 ```TypeScript
@@ -642,7 +656,7 @@ Unregister the callback of selectedByRange.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selectByRange' | Yes | event type, fixed as 'selectByRange'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Range> | No | the callback of 'selectByRange',when subscriber unsubscribes all callback functions of event 'selectByRange', this parameter can be left blank. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Range&gt; | No | the callback of 'selectByRange',when subscriber unsubscribes all callback functions of event 'selectByRange', this parameter can be left blank. |
 
 **Example**
 
@@ -659,6 +673,7 @@ inputMethodController.off('selectByRange');
 
 ```
 
+<a id="off-1"></a>
 ## off('selectByMovement')
 
 ```TypeScript
@@ -678,7 +693,7 @@ Unregister the callback of selectedByMovement.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selectByMovement' | Yes | event type, fixed as 'selectByMovement'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Movement> | No | the callback of 'selectByMovement',when subscriber unsubscribes all callback functions of event 'selectByMovement', this parameter can be left blank. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Movement&gt; | No | the callback of 'selectByMovement',when subscriber unsubscribes all callback functions of event 'selectByMovement', this parameter can be left blank. |
 
 **Example**
 
@@ -695,6 +710,7 @@ inputMethodController.off('selectByMovement');
 
 ```
 
+<a id="off-2"></a>
 ## off('insertText')
 
 ```TypeScript
@@ -714,7 +730,7 @@ Unregister the callback of insertText.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'insertText' | Yes | event type, fixed as 'insertText'. |
-| callback | (text: string) => void | No | the callback of 'insertText',when subscriber unsubscribes all callback functions of event 'insertText', this parameter can be left blank. |
+| callback | (text: string) =&gt; void | No | the callback of 'insertText',when subscriber unsubscribes all callback functions of event 'insertText', this parameter can be left blank. |
 
 **Example**
 
@@ -731,6 +747,7 @@ inputMethodController.off('insertText');
 
 ```
 
+<a id="off-3"></a>
 ## off('deleteLeft')
 
 ```TypeScript
@@ -750,7 +767,7 @@ Unregister the callback of deleteLeft.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deleteLeft' | Yes | event type, fixed as 'deleteLeft'. |
-| callback | (length: number) => void | No | the callback of 'deleteLeft',when subscriber unsubscribes all callback functions of event 'deleteLeft', this parameter can be left blank. |
+| callback | (length: number) =&gt; void | No | the callback of 'deleteLeft',when subscriber unsubscribes all callback functions of event 'deleteLeft', this parameter can be left blank. |
 
 **Example**
 
@@ -767,6 +784,7 @@ inputMethodController.off('deleteLeft');
 
 ```
 
+<a id="off-4"></a>
 ## off('deleteRight')
 
 ```TypeScript
@@ -786,7 +804,7 @@ Unregister the callback of deleteRight.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deleteRight' | Yes | event type, fixed as 'deleteRight'. |
-| callback | (length: number) => void | No | the callback of 'deleteRight',when subscriber unsubscribes all callback functions of event 'deleteRight', this parameter can be left blank. |
+| callback | (length: number) =&gt; void | No | the callback of 'deleteRight',when subscriber unsubscribes all callback functions of event 'deleteRight', this parameter can be left blank. |
 
 **Example**
 
@@ -802,6 +820,7 @@ inputMethodController.off('deleteRight');
 
 ```
 
+<a id="off-5"></a>
 ## off('sendKeyboardStatus')
 
 ```TypeScript
@@ -821,7 +840,7 @@ Unregister the callback of sendKeyboardStatus.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sendKeyboardStatus' | Yes | event type, fixed as 'sendKeyboardStatus'. |
-| callback | (keyboardStatus: KeyboardStatus) => void | No | the callback of 'sendKeyboardStatus',when subscriber unsubscribes all callback functions of event 'sendKeyboardStatus', this parameter can be left blank. |
+| callback | (keyboardStatus: KeyboardStatus) =&gt; void | No | the callback of 'sendKeyboardStatus',when subscriber unsubscribes all callback functions of event 'sendKeyboardStatus', this parameter can be left blank. |
 
 **Example**
 
@@ -838,6 +857,7 @@ inputMethodController.off('sendKeyboardStatus');
 
 ```
 
+<a id="off-6"></a>
 ## off('sendFunctionKey')
 
 ```TypeScript
@@ -857,7 +877,7 @@ Unregister the callback of sendFunctionKey.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sendFunctionKey' | Yes | event type, fixed as 'sendFunctionKey'. |
-| callback | (functionKey: FunctionKey) => void | No | the callback of 'sendFunctionKey',when subscriber unsubscribes all callback functions of event 'sendFunctionKey', this parameter can be left blank. |
+| callback | (functionKey: FunctionKey) =&gt; void | No | the callback of 'sendFunctionKey',when subscriber unsubscribes all callback functions of event 'sendFunctionKey', this parameter can be left blank. |
 
 **Example**
 
@@ -874,6 +894,7 @@ inputMethodController.off('sendFunctionKey');
 
 ```
 
+<a id="off-7"></a>
 ## off('moveCursor')
 
 ```TypeScript
@@ -893,7 +914,7 @@ Unregister the callback of moveCursor.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'moveCursor' | Yes | event type, fixed as 'moveCursor'. |
-| callback | (direction: Direction) => void | No | the callback of 'moveCursor',when subscriber unsubscribes all callback functions of event 'moveCursor', this parameter can be left blank. |
+| callback | (direction: Direction) =&gt; void | No | the callback of 'moveCursor',when subscriber unsubscribes all callback functions of event 'moveCursor', this parameter can be left blank. |
 
 **Example**
 
@@ -910,6 +931,7 @@ inputMethodController.off('moveCursor');
 
 ```
 
+<a id="off-8"></a>
 ## off('handleExtendAction')
 
 ```TypeScript
@@ -929,7 +951,7 @@ Unregister the callback of handleExtendAction.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'handleExtendAction' | Yes | event type, fixed as 'handleExtendAction'. |
-| callback | (action: ExtendAction) => void | No | the callback of 'handleExtendAction',when subscriber unsubscribes all callback functions of event 'handleExtendAction', this parameter can be left blank. |
+| callback | (action: ExtendAction) =&gt; void | No | the callback of 'handleExtendAction',when subscriber unsubscribes all callback functions of event 'handleExtendAction', this parameter can be left blank. |
 
 **Example**
 
@@ -946,6 +968,7 @@ inputMethodController.off('handleExtendAction');
 
 ```
 
+<a id="off-9"></a>
 ## off('getLeftTextOfCursor')
 
 ```TypeScript
@@ -965,7 +988,7 @@ Unregister the callback of getLeftTextOfCursor event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'getLeftTextOfCursor' | Yes | event type, fixed as 'getLeftTextOfCursor'. |
-| callback | (length: number) => string | No | the callback of 'getLeftTextOfCursor',when subscriber unsubscribes all callback functions of event 'getLeftTextOfCursor', this parameter can be left blank. |
+| callback | (length: number) =&gt; string | No | the callback of 'getLeftTextOfCursor',when subscriber unsubscribes all callback functions of event 'getLeftTextOfCursor', this parameter can be left blank. |
 
 **Example**
 
@@ -982,6 +1005,7 @@ inputMethodController.off('getLeftTextOfCursor');
 
 ```
 
+<a id="off-10"></a>
 ## off('getRightTextOfCursor')
 
 ```TypeScript
@@ -1001,7 +1025,7 @@ Unregister the callback of getRightTextOfCursor event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'getRightTextOfCursor' | Yes | event type, fixed as 'getRightTextOfCursor'. |
-| callback | (length: number) => string | No | the callback of 'getRightTextOfCursor',when subscriber unsubscribes all callback functions of event 'getRightTextOfCursor', this parameter can be left blank. |
+| callback | (length: number) =&gt; string | No | the callback of 'getRightTextOfCursor',when subscriber unsubscribes all callback functions of event 'getRightTextOfCursor', this parameter can be left blank. |
 
 **Example**
 
@@ -1018,6 +1042,7 @@ inputMethodController.off('getRightTextOfCursor');
 
 ```
 
+<a id="off-11"></a>
 ## off('getTextIndexAtCursor')
 
 ```TypeScript
@@ -1037,7 +1062,7 @@ Unregister the callback of getTextIndexAtCursor.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'getTextIndexAtCursor' | Yes | event type, fixed as 'getTextIndexAtCursor'. |
-| callback | () => number | No | the callback of 'getTextIndexAtCursor',when subscriber unsubscribes all callback functions of event 'getTextIndexAtCursor', this parameter can be left blank. |
+| callback | () =&gt; number | No | the callback of 'getTextIndexAtCursor',when subscriber unsubscribes all callback functions of event 'getTextIndexAtCursor', this parameter can be left blank. |
 
 **Example**
 
@@ -1054,6 +1079,7 @@ inputMethodController.off('getTextIndexAtCursor');
 
 ```
 
+<a id="off-12"></a>
 ## off('setPreviewText')
 
 ```TypeScript
@@ -1100,6 +1126,7 @@ console.info(`All callbacks unsubscribed from setPreviewText`);
 
 ```
 
+<a id="off-13"></a>
 ## off('finishTextPreview')
 
 ```TypeScript
@@ -1119,7 +1146,7 @@ Unsubscribe 'finishTextPreview' event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'finishTextPreview' | Yes | the type of unsubscribe event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | optional, the callback of off('finishTextPreview'). |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | optional, the callback of off('finishTextPreview'). |
 
 **Example**
 
@@ -1147,6 +1174,7 @@ console.info(`All callbacks unsubscribed from finishTextPreview`);
 
 ```
 
+<a id="on"></a>
 ## on('selectByRange')
 
 ```TypeScript
@@ -1166,7 +1194,7 @@ Register a callback and when IME sends select event with range of selection,the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selectByRange' | Yes | event type, fixed as 'selectByRange'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Range> | Yes | processes selectByRange command. The range of selection is provided for this callback, and subscribers are expected to select corresponding text in callback according to the range. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Range&gt; | Yes | processes selectByRange command. The range of selection is provided for this callback, and subscribers are expected to select corresponding text in callback according to the range. |
 
 **Error codes:**
 
@@ -1183,6 +1211,7 @@ inputMethod.getController().on('selectByRange', (range: inputMethod.Range) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('selectByMovement')
 
 ```TypeScript
@@ -1202,7 +1231,7 @@ Register a callback and when IME sends select event witch movement of cursor,the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selectByMovement' | Yes | event type, fixed as 'selectByMovement'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Movement> | Yes | processes selectByMovement command. The movement of cursor is provided for this callback, and subscribers are expected to select corresponding text in callback according to the movement. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Movement&gt; | Yes | processes selectByMovement command. The movement of cursor is provided for this callback, and subscribers are expected to select corresponding text in callback according to the movement. |
 
 **Error codes:**
 
@@ -1219,6 +1248,7 @@ inputMethod.getController().on('selectByMovement', (movement: inputMethod.Moveme
 
 ```
 
+<a id="on-2"></a>
 ## on('insertText')
 
 ```TypeScript
@@ -1238,7 +1268,7 @@ Register a callback and when IME sends insert text event, the callback will be i
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'insertText' | Yes | event type, fixed as 'insertText'. |
-| callback | (text: string) => void | Yes | processes insertText command. The text of insert is provided for this callback.Subscribers are expected to process the inserted text and update changes in editor by changeSelection and updateCursor as needed. |
+| callback | (text: string) =&gt; void | Yes | processes insertText command. The text of insert is provided for this callback.Subscribers are expected to process the inserted text and update changes in editor by changeSelection and updateCursor as needed. |
 
 **Error codes:**
 
@@ -1269,6 +1299,7 @@ inputMethodController.off('insertText');
 
 ```
 
+<a id="on-3"></a>
 ## on('deleteLeft')
 
 ```TypeScript
@@ -1288,7 +1319,7 @@ Register a callback and when IME sends delete left event with length,the callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deleteLeft' | Yes | event type, fixed as 'deleteLeft'. |
-| callback | (length: number) => void | Yes | processes deleteLeft command. The length of delete is provided for this callback. Subscribers are expected to delete specified length of text to the left of the cursor and update changes in editor by changeSelection and updateCursor as needed. |
+| callback | (length: number) =&gt; void | Yes | processes deleteLeft command. The length of delete is provided for this callback. Subscribers are expected to delete specified length of text to the left of the cursor and update changes in editor by changeSelection and updateCursor as needed. |
 
 **Error codes:**
 
@@ -1306,6 +1337,7 @@ inputMethod.getController().on('deleteLeft', (length: number) => {
 
 ```
 
+<a id="on-4"></a>
 ## on('deleteRight')
 
 ```TypeScript
@@ -1325,7 +1357,7 @@ Register a callback and when IME sends delete right event with length,the callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deleteRight' | Yes | event type, fixed as 'deleteRight'. |
-| callback | (length: number) => void | Yes | processes deleteRight command. The length of delete is provided for this callback. Subscribers are expected to delete specified length of text to the right of the cursor and update changes in editor by changeSelection and updateCursor as needed. |
+| callback | (length: number) =&gt; void | Yes | processes deleteRight command. The length of delete is provided for this callback. Subscribers are expected to delete specified length of text to the right of the cursor and update changes in editor by changeSelection and updateCursor as needed. |
 
 **Error codes:**
 
@@ -1343,6 +1375,7 @@ inputMethod.getController().on('deleteRight', (length: number) => {
 
 ```
 
+<a id="on-5"></a>
 ## on('sendKeyboardStatus')
 
 ```TypeScript
@@ -1362,7 +1395,7 @@ Register a callback and when IME sends keyboard status, the callback will be inv
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sendKeyboardStatus' | Yes | event type, fixed as 'sendKeyboardStatus'. |
-| callback | (keyboardStatus: KeyboardStatus) => void | Yes | processes sendKeyboardStatus command.The keyboardStatus is provided for this callback. |
+| callback | (keyboardStatus: KeyboardStatus) =&gt; void | Yes | processes sendKeyboardStatus command.The keyboardStatus is provided for this callback. |
 
 **Error codes:**
 
@@ -1380,6 +1413,7 @@ inputMethod.getController().on('sendKeyboardStatus', (keyboardStatus: inputMetho
 
 ```
 
+<a id="on-6"></a>
 ## on('sendFunctionKey')
 
 ```TypeScript
@@ -1399,7 +1433,7 @@ Register a callback and when IME sends functionKey, the callback will be invoked
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sendFunctionKey' | Yes | event type, fixed as 'sendFunctionKey'. |
-| callback | (functionKey: FunctionKey) => void | Yes | processes sendFunctionKey command.The functionKey is provided for this callback.Subscribers are expected to complete the corresponding task based on the value of functionKey. |
+| callback | (functionKey: FunctionKey) =&gt; void | Yes | processes sendFunctionKey command.The functionKey is provided for this callback.Subscribers are expected to complete the corresponding task based on the value of functionKey. |
 
 **Error codes:**
 
@@ -1417,6 +1451,7 @@ inputMethod.getController().on('sendFunctionKey', (functionKey: inputMethod.Func
 
 ```
 
+<a id="on-7"></a>
 ## on('moveCursor')
 
 ```TypeScript
@@ -1436,7 +1471,7 @@ Register a callback and when IME sends move cursor, the callback will be invoked
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'moveCursor' | Yes | event type, fixed as 'moveCursor'. |
-| callback | (direction: Direction) => void | Yes | processes moveCursor command. The direction of cursor is provided for this callback. Subscribers are expected to move the cursor and update changes in editor by changeSelection and updateCursor. |
+| callback | (direction: Direction) =&gt; void | Yes | processes moveCursor command. The direction of cursor is provided for this callback. Subscribers are expected to move the cursor and update changes in editor by changeSelection and updateCursor. |
 
 **Error codes:**
 
@@ -1454,6 +1489,7 @@ inputMethod.getController().on('moveCursor', (direction: inputMethod.Direction) 
 
 ```
 
+<a id="on-8"></a>
 ## on('handleExtendAction')
 
 ```TypeScript
@@ -1473,7 +1509,7 @@ Register a callback and when IME sends extend action code, the callback will be 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'handleExtendAction' | Yes | event type, fixed as 'handleExtendAction'. |
-| callback | (action: ExtendAction) => void | Yes | processes handleExtendAction command. The action code is provided for this callback. |
+| callback | (action: ExtendAction) =&gt; void | Yes | processes handleExtendAction command. The action code is provided for this callback. |
 
 **Error codes:**
 
@@ -1491,6 +1527,7 @@ inputMethod.getController().on('handleExtendAction', (action: inputMethod.Extend
 
 ```
 
+<a id="on-9"></a>
 ## on('getLeftTextOfCursor')
 
 ```TypeScript
@@ -1510,7 +1547,7 @@ Register a callback and when input method ability gets left text of cursor, the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'getLeftTextOfCursor' | Yes | event type, fixed as 'getLeftTextOfCursor'. |
-| callback | (length: number) => string | Yes | processes getLeftTextOfCursor command. The callback must be a synchronization method and will block the input method application. |
+| callback | (length: number) =&gt; string | Yes | processes getLeftTextOfCursor command. The callback must be a synchronization method and will block the input method application. |
 
 **Error codes:**
 
@@ -1530,6 +1567,7 @@ inputMethod.getController().on('getLeftTextOfCursor', (length: number) => {
 
 ```
 
+<a id="on-10"></a>
 ## on('getRightTextOfCursor')
 
 ```TypeScript
@@ -1549,7 +1587,7 @@ Register a callback and when input method ability gets right text of cursor, the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'getRightTextOfCursor' | Yes | event type, fixed as 'getRightTextOfCursor'. |
-| callback | (length: number) => string | Yes | processes getRightTextOfCursor command. The callback must be a synchronization method and will block the input method application. |
+| callback | (length: number) =&gt; string | Yes | processes getRightTextOfCursor command. The callback must be a synchronization method and will block the input method application. |
 
 **Error codes:**
 
@@ -1569,6 +1607,7 @@ inputMethod.getController().on('getRightTextOfCursor', (length: number) => {
 
 ```
 
+<a id="on-11"></a>
 ## on('getTextIndexAtCursor')
 
 ```TypeScript
@@ -1588,7 +1627,7 @@ Register a callback and when input method ability gets the text index at cursor,
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'getTextIndexAtCursor' | Yes | event type, fixed as 'getTextIndexAtCursor'. |
-| callback | () => number | Yes | processes getTextIndexAtCursor command. The callback must be a synchronization method, and should return the text index at the cursor. |
+| callback | () =&gt; number | Yes | processes getTextIndexAtCursor command. The callback must be a synchronization method, and should return the text index at the cursor. |
 
 **Error codes:**
 
@@ -1608,6 +1647,7 @@ inputMethod.getController().on('getTextIndexAtCursor', () => {
 
 ```
 
+<a id="on-12"></a>
 ## on('setPreviewText')
 
 ```TypeScript
@@ -1660,6 +1700,7 @@ console.info(`All callbacks unsubscribed from setPreviewText`);
 
 ```
 
+<a id="on-13"></a>
 ## on('finishTextPreview')
 
 ```TypeScript
@@ -1679,7 +1720,7 @@ on(type: 'finishTextPreview', callback: Callback<void>): void
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'finishTextPreview' | Yes | the type of subscribe event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback of on('finishTextPreview'). |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback of on('finishTextPreview'). |
 
 **Error codes:**
 
@@ -1713,6 +1754,7 @@ console.info(`All callbacks unsubscribed from finishTextPreview`);
 
 ```
 
+<a id="recvmessage"></a>
 ## recvMessage
 
 ```TypeScript
@@ -1759,6 +1801,7 @@ inputMethodController.recvMessage();
 
 ```
 
+<a id="sendmessage"></a>
 ## sendMessage
 
 ```TypeScript
@@ -1778,13 +1821,13 @@ Send message to input method.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | msgId | string | Yes | the identifier of the message. Max size is 256B. |
-| msgParam | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | No | the param of the custom message. Max size is 128KB. |
+| msgParam | ArrayBuffer | No | the param of the custom message. Max size is 128KB. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -1812,6 +1855,7 @@ inputMethod.getController().sendMessage(msgId, msgParam).then(() => {
 
 ```
 
+<a id="setcallingwindow"></a>
 ## setCallingWindow
 
 ```TypeScript
@@ -1831,7 +1875,7 @@ Inform the system of the window ID of the application currently bound to the inp
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | windowId | number | Yes | the window ID of the application currently bound to the input method. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setCallingWindow. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setCallingWindow. |
 
 **Error codes:**
 
@@ -1858,6 +1902,7 @@ inputMethod.getController().setCallingWindow(windowId, (err: BusinessError) => {
 
 ```
 
+<a id="setcallingwindow-1"></a>
 ## setCallingWindow
 
 ```TypeScript
@@ -1882,7 +1927,7 @@ Inform the system of the window ID of the application currently bound to the inp
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -1907,6 +1952,7 @@ inputMethod.getController().setCallingWindow(windowId).then(() => {
 
 ```
 
+<a id="showsoftkeyboard"></a>
 ## showSoftKeyboard
 
 ```TypeScript
@@ -1927,7 +1973,7 @@ Show soft keyboard.This API can be called only by system applications.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of showSoftKeyboard. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of showSoftKeyboard. |
 
 **Error codes:**
 
@@ -1952,6 +1998,7 @@ inputMethod.getController().showSoftKeyboard((err: BusinessError) => {
 
 ```
 
+<a id="showsoftkeyboard-1"></a>
 ## showSoftKeyboard
 
 ```TypeScript
@@ -1972,7 +2019,7 @@ Show soft keyboard.This API can be called only by system applications.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -1995,6 +2042,7 @@ inputMethod.getController().showSoftKeyboard().then(() => {
 
 ```
 
+<a id="showtextinput"></a>
 ## showTextInput
 
 ```TypeScript
@@ -2013,7 +2061,7 @@ Show the text input and start typing.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of showTextInput. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of showTextInput. |
 
 **Error codes:**
 
@@ -2038,6 +2086,7 @@ inputMethod.getController().showTextInput((err: BusinessError) => {
 
 ```
 
+<a id="showtextinput-1"></a>
 ## showTextInput
 
 ```TypeScript
@@ -2056,7 +2105,7 @@ Show the text input and start typing.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -2079,6 +2128,7 @@ inputMethod.getController().showTextInput().then(() => {
 
 ```
 
+<a id="showtextinput-2"></a>
 ## showTextInput
 
 ```TypeScript
@@ -2103,7 +2153,7 @@ Show the text input and start typing.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -2128,6 +2178,7 @@ inputMethod.getController().showTextInput(requestKeyboardReason).then(() => {
 
 ```
 
+<a id="stopinput"></a>
 ## stopInput
 
 ```TypeScript
@@ -2150,7 +2201,7 @@ Stop input
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of stopInput. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of stopInput. |
 
 **Example**
 
@@ -2171,6 +2222,7 @@ inputMethod.getController().stopInput((err: BusinessError, result: boolean) => {
 
 ```
 
+<a id="stopinput-1"></a>
 ## stopInput
 
 ```TypeScript
@@ -2193,7 +2245,7 @@ Stop input
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Example**
 
@@ -2212,6 +2264,7 @@ inputMethod.getController().stopInput().then((result: boolean) => {
 
 ```
 
+<a id="stopinputsession"></a>
 ## stopInputSession
 
 ```TypeScript
@@ -2230,7 +2283,7 @@ Stop input session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of stopInputSession. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of stopInputSession. |
 
 **Error codes:**
 
@@ -2258,6 +2311,7 @@ inputMethod.getController().stopInputSession((err: BusinessError, result: boolea
 
 ```
 
+<a id="stopinputsession-1"></a>
 ## stopInputSession
 
 ```TypeScript
@@ -2276,7 +2330,7 @@ Stop input session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -2302,6 +2356,7 @@ inputMethod.getController().stopInputSession().then((result: boolean) => {
 
 ```
 
+<a id="updateattribute"></a>
 ## updateAttribute
 
 ```TypeScript
@@ -2321,7 +2376,7 @@ Update InputAttribute information of input text.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | attribute | [InputAttribute](arkts-ime-inputmethod-inputattribute-i.md) | Yes | the InputAttribute object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of updateAttribute. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of updateAttribute. |
 
 **Error codes:**
 
@@ -2348,6 +2403,7 @@ inputMethod.getController().updateAttribute(inputAttribute, (err: BusinessError)
 
 ```
 
+<a id="updateattribute-1"></a>
 ## updateAttribute
 
 ```TypeScript
@@ -2372,7 +2428,7 @@ Update InputAttribute information of input text.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -2397,6 +2453,7 @@ inputMethod.getController().updateAttribute(inputAttribute).then(() => {
 
 ```
 
+<a id="updatecursor"></a>
 ## updateCursor
 
 ```TypeScript
@@ -2416,7 +2473,7 @@ Update Cursor and notify the input method that the current application cursor ha
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | cursorInfo | [CursorInfo](arkts-ime-inputmethod-cursorinfo-i.md) | Yes | the CursorInfo object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of updateCursor. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of updateCursor. |
 
 **Error codes:**
 
@@ -2449,6 +2506,7 @@ inputMethod.getController().updateCursor(cursorInfo, (err: BusinessError) => {
 
 ```
 
+<a id="updatecursor-1"></a>
 ## updateCursor
 
 ```TypeScript
@@ -2473,7 +2531,7 @@ Update Cursor and notify the input method that the current application cursor ha
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

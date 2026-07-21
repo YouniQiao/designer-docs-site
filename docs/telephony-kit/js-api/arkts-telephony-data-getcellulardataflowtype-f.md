@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="getcellulardataflowtype"></a>
 ## getCellularDataFlowType
 
 ```TypeScript
@@ -28,7 +29,7 @@ Indicates that there is no uplink or downlink data.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataFlowType> | Yes | Indicates the data flow type. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataFlowType&gt; | Yes | Indicates the data flow type. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ data.getCellularDataFlowType((err: BusinessError, contextData: data.DataFlowType
 ```
 
 
+<a id="getcellulardataflowtype-1"></a>
 ## getCellularDataFlowType
 
 ```TypeScript
@@ -75,7 +77,7 @@ Indicates that there is no uplink or downlink data.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataFlowType> | Returns the data flow type. |
+| Promise&lt;DataFlowType&gt; | Returns the data flow type. |
 
 **Error codes:**
 

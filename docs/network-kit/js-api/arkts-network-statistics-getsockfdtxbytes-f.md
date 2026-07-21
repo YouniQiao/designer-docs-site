@@ -6,6 +6,7 @@
 import { statistics } from '@kit.NetworkKit';
 ```
 
+<a id="getsockfdtxbytes"></a>
 ## getSockfdTxBytes
 
 ```TypeScript
@@ -25,7 +26,7 @@ Queries the data traffic (including all TCP and UDP data packets) sent through a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sockfd | number | Yes | Indicates the file descriptor of the given socket. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Returns the data traffic bytes sent by the specified sockfd. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Returns the data traffic bytes sent by the specified sockfd. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ statistics.getSockfdTxBytes(sockfd, (error: BusinessError, stats: number) => {
 ```
 
 
+<a id="getsockfdtxbytes-1"></a>
 ## getSockfdTxBytes
 
 ```TypeScript
@@ -78,7 +80,7 @@ Queries the data traffic (including all TCP and UDP data packets) sent through a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the data traffic bytes sent by the specified sockfd. |
+| Promise&lt;number&gt; | Returns the data traffic bytes sent by the specified sockfd. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { bundle } from '@kit.AbilityKit';
 ```
 
+<a id="getnameforuid"></a>
 ## getNameForUid
 
 ```TypeScript
@@ -29,9 +30,10 @@ Obtains bundle name by the given uid.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uid | number | Yes | Indicates the UID of an application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes |  |
 
 
+<a id="getnameforuid-1"></a>
 ## getNameForUid
 
 ```TypeScript
@@ -60,5 +62,5 @@ Obtains the bundle name based on a UID. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the bundle name. |
+| Promise&lt;string&gt; | Returns the bundle name. |
 

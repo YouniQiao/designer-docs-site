@@ -1,5 +1,6 @@
 # requestForm (System API)
 
+<a id="requestform"></a>
 ## requestForm
 
 ```TypeScript
@@ -27,9 +28,10 @@ Requests a widget update. This API uses an asynchronous callback to return the r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | formId | string | Yes | Widget ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the widget is updated,**error** is undefined; otherwise, **error** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the widget is updated,**error** is undefined; otherwise, **error** is an error object. |
 
 
+<a id="requestform-1"></a>
 ## requestForm
 
 ```TypeScript
@@ -62,5 +64,5 @@ Requests a widget update. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 

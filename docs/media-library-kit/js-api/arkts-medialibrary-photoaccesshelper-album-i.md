@@ -16,6 +16,7 @@ Provides APIs to manage albums.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="addassets"></a>
 ## addAssets
 
 ```TypeScript
@@ -40,8 +41,8 @@ Adds image and video assets to a user album. Before the operation, ensure that t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of the image and video assets to add. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback function. If an image or video is added successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of the image and video assets to add. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback function. If an image or video is added successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ Adds image and video assets to a user album. Before the operation, ensure that t
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="addassets-1"></a>
 ## addAssets
 
 ```TypeScript
@@ -76,13 +78,13 @@ Adds image and video assets to a user album. Before the operation, ensure that t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of the image and video assets to add. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of the image and video assets to add. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -93,6 +95,7 @@ Adds image and video assets to a user album. Before the operation, ensure that t
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="commitmodify"></a>
 ## commitModify
 
 ```TypeScript
@@ -113,7 +116,7 @@ Commits the modification on the album attributes to the database. This API uses 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback function. If the album properties are modified successfully,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback function. If the album properties are modified successfully,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -124,6 +127,7 @@ Commits the modification on the album attributes to the database. This API uses 
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="commitmodify-1"></a>
 ## commitModify
 
 ```TypeScript
@@ -144,7 +148,7 @@ Commits the modification on the album attributes to the database. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -155,6 +159,7 @@ Commits the modification on the album attributes to the database. This API uses 
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="removeassets"></a>
 ## removeAssets
 
 ```TypeScript
@@ -179,8 +184,8 @@ Removes image and video assets from a user album. The album and file resources m
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of the image and video assets to remove. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback function. If an image or video is removed successfully,**err** is **undefined**. Otherwise, **err** is an error object. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of the image and video assets to remove. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback function. If an image or video is removed successfully,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -191,6 +196,7 @@ Removes image and video assets from a user album. The album and file resources m
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="removeassets-1"></a>
 ## removeAssets
 
 ```TypeScript
@@ -215,13 +221,13 @@ Removes image and video assets from a user album. The album and file resources m
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of the image and video assets to remove. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of the image and video assets to remove. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

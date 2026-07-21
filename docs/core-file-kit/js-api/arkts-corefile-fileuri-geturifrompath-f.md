@@ -6,6 +6,7 @@
 import { fileUri } from '@kit.CoreFileKit';
 ```
 
+<a id="geturifrompath"></a>
 ## getUriFromPath
 
 ```TypeScript

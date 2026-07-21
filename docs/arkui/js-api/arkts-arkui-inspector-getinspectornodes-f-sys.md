@@ -1,5 +1,6 @@
 # getInspectorNodes (System API)
 
+<a id="getinspectornodes"></a>
 ## getInspectorNodes
 
 ```TypeScript

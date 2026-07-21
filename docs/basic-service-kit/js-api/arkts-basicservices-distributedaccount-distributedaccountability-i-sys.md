@@ -14,6 +14,7 @@ Provides APIs for querying and updating the login state of a distributed account
 import { distributedAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="getosaccountdistributedinfobylocalid"></a>
 ## getOsAccountDistributedInfoByLocalId
 
 ```TypeScript
@@ -39,7 +40,7 @@ Obtains distributed information about an OS account. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DistributedInfo> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the distributed account information obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;DistributedInfo&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the distributed account information obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ try {
 
 ```
 
+<a id="getosaccountdistributedinfobylocalid-1"></a>
 ## getOsAccountDistributedInfoByLocalId
 
 ```TypeScript
@@ -103,7 +105,7 @@ Obtains distributed information about an OS account. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DistributedInfo> | Promise used to return the distributed account information obtained. |
+| Promise&lt;DistributedInfo&gt; | Promise used to return the distributed account information obtained. |
 
 **Error codes:**
 
@@ -135,6 +137,7 @@ try {
 
 ```
 
+<a id="setosaccountdistributedinfobylocalid"></a>
 ## setOsAccountDistributedInfoByLocalId
 
 ```TypeScript
@@ -159,7 +162,7 @@ Sets the distributed information for an OS account. This API uses an asynchronou
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
 | distributedInfo | [DistributedInfo](arkts-basicservices-distributedaccount-distributedinfo-i.md) | Yes | Distributed account information to set. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the distributed information is set successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the distributed information is set successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -197,6 +200,7 @@ try {
 
 ```
 
+<a id="setosaccountdistributedinfobylocalid-1"></a>
 ## setOsAccountDistributedInfoByLocalId
 
 ```TypeScript
@@ -226,7 +230,7 @@ Sets the distributed information for an OS account. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

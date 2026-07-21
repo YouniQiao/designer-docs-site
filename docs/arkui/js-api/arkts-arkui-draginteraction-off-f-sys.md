@@ -6,6 +6,7 @@
 import { dragInteraction } from '@kit.ArkUI';
 ```
 
+<a id="off"></a>
 ## off('drag')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Disables listening for dragging status changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'drag' | Yes | Event type. This field has a fixed value of **drag**. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<DragState> | No |  |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;DragState&gt; | No |  |
 
 **Error codes:**
 

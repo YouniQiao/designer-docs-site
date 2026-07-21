@@ -6,6 +6,7 @@
 import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
+<a id="gettotalsize"></a>
 ## getTotalSize
 
 ```TypeScript
@@ -24,7 +25,7 @@ Get the total size.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | return Promise (Unit: Byte) |
+| Promise&lt;number&gt; | return Promise (Unit: Byte) |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { statistics } from '@kit.NetworkKit';
 ```
 
+<a id="getmonthtrafficstats"></a>
 ## getMonthTrafficStats
 
 ```TypeScript
@@ -36,7 +37,7 @@ Get this month traffic data of the cellular network.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The statistics of the simId in this month. |
+| Promise&lt;number&gt; | The statistics of the simId in this month. |
 
 **Error codes:**
 

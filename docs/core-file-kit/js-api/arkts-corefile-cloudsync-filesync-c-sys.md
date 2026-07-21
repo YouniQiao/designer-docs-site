@@ -14,6 +14,7 @@ Provides APIs for the file manager application to perform device-cloud sync of t
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -50,6 +51,7 @@ let fileSync = new cloudSync.FileSync("com.ohos.demo")
 
 ```
 
+<a id="getuploadlist"></a>
 ## getUploadList
 
 ```TypeScript
@@ -74,13 +76,13 @@ Query the upload state of the cloud file list.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | uris of queryed files. |
+| uris | Array&lt;string&gt; | Yes | uris of queryed files. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<UploadProgress>> | - Return Promise. |
+| Promise&lt;Array&lt;UploadProgress&gt;&gt; | - Return Promise. |
 
 **Error codes:**
 
@@ -91,6 +93,7 @@ Query the upload state of the cloud file list.
 | 13900010 | Try again. |
 | 13900020 | Invalid argument. Possible causes:<br>1.Mandatory parameters are left unspecified. 2.The length of the input parameter exceeds the upper limit.<br>3.The input parameter contains an invalid uri. |
 
+<a id="pauseupload"></a>
 ## pauseUpload
 
 ```TypeScript
@@ -127,6 +130,7 @@ Pause the upload of the cloud file.
 | 13900010 | Try again. |
 | 14000002 | Invalid uri. |
 
+<a id="registeruploadprogress"></a>
 ## registerUploadProgress
 
 ```TypeScript
@@ -151,7 +155,7 @@ Registers to cloud file upload progress change. This method uses a callback to g
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<UploadProgress> | Yes | Callback function. The callback will be triggered when the upload progress changes, including state updates, processed size changes, and error occurrences. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;UploadProgress&gt; | Yes | Callback function. The callback will be triggered when the upload progress changes, including state updates, processed size changes, and error occurrences. |
 
 **Error codes:**
 
@@ -162,6 +166,7 @@ Registers to cloud file upload progress change. This method uses a callback to g
 | 13900010 | Try again. |
 | 13900020 | Invalid argument. Possible causes:<br>1.Mandatory parameter are left unspecified.<br>2.The number of instances registered at the same time exceeds the upper limit. |
 
+<a id="resumeupload"></a>
 ## resumeUpload
 
 ```TypeScript
@@ -198,6 +203,7 @@ Resume the upload of the cloud file.
 | 13900010 | Try again. |
 | 14000002 | Invalid uri. |
 
+<a id="unregisteruploadprogress"></a>
 ## unregisterUploadProgress
 
 ```TypeScript

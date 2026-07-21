@@ -6,6 +6,7 @@
 import { metadataBinding } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="on"></a>
 ## on('operationSubmitMetadata')
 
 ```TypeScript
@@ -28,7 +29,7 @@ Subscribes to a system event to obtain the encoded metadata. The application nee
 | --- | --- | --- | --- |
 | type | 'operationSubmitMetadata' | Yes | Event type. This parameter has a fixed value of **operationSubmitMetadata**, indicating the system application's attempt to obtain the encoded metadata. |
 | bundleName | string | Yes | Application bundle name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the encoded metadata. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the encoded metadata. |
 
 **Error codes:**
 

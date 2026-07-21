@@ -1,5 +1,6 @@
 # ftruncate
 
+<a id="ftruncate"></a>
 ## ftruncate
 
 ```TypeScript
@@ -29,9 +30,10 @@ Truncates a file based on the file descriptor. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 
+<a id="ftruncate-1"></a>
 ## ftruncate
 
 ```TypeScript
@@ -55,9 +57,10 @@ Truncates a file based on the file descriptor. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fd | number | Yes | File descriptor of the file to truncate. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 
+<a id="ftruncate-2"></a>
 ## ftruncate
 
 ```TypeScript
@@ -82,5 +85,5 @@ Truncates a file based on the file descriptor. This API uses an asynchronous cal
 | --- | --- | --- | --- |
 | fd | number | Yes | File descriptor of the file to truncate. |
 | len | number | Yes | File length after truncation, in bytes. The default value is **0**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 

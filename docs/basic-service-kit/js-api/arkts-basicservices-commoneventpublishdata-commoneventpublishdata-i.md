@@ -104,7 +104,7 @@ Whether the common event is a sticky one. The default value is **false**.
 
 Only system applications and system services are allowed to send sticky events.
 
-**Required Permissions**:[ohos.permission.COMMONEVENT_STICKY](../../../../security/AccessToken/permissions-for-all.md#ohospermissioncommonevent_sticky)
+**Required Permissions**:[ohos.permission.COMMONEVENT_STICKY](docroot://security/AccessToken/permissions-for-all.md#ohospermissioncommonevent_sticky)
 
 **Type:** boolean
 
@@ -144,7 +144,7 @@ subscriberPermissions?: Array<string>
 
 Permissions required for subscribers to receive the common event.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 7
 

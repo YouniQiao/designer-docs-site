@@ -6,6 +6,7 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
+<a id="getallowedpermissionbundles"></a>
 ## getAllowedPermissionBundles
 
 ```TypeScript
@@ -28,7 +29,7 @@ Gets the applications that are allowed to be granted the permission.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | admin indicates the administrator ability information. |
+| admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) \| null | Yes | admin indicates the administrator ability information. |
 | permission | string | Yes | permission indicates the name of the permission. |
 | accountId | number | Yes | accountId indicates the ID of OS account<br>The value must be an integer greater than or equal to 0. |
 
@@ -36,7 +37,7 @@ Gets the applications that are allowed to be granted the permission.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common.ApplicationInstance> | the list of applications that are allowed to be granted the permission. |
+| Array&lt;common.ApplicationInstance&gt; | the list of applications that are allowed to be granted the permission. |
 
 **Error codes:**
 

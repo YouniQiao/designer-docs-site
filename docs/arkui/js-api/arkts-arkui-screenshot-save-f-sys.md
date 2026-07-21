@@ -6,6 +6,7 @@
 import { screenshot } from '@kit.ArkUI';
 ```
 
+<a id="save"></a>
 ## save
 
 ```TypeScript
@@ -31,7 +32,7 @@ Obtains a screenshot. This API uses an asynchronous callback to return the resul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [ScreenshotOptions](arkts-arkui-screenshot-screenshotoptions-i-sys.md) | Yes | Information about the snapshot. If the screen to capture is a virtual screen, the snapshot is a white screen. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return a PixelMap object. The size of the PixelMap object is **imageSize**. If **imageSize** is not specified, the size of the logical screen associated with the specified display ID is used. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return a PixelMap object. The size of the PixelMap object is **imageSize**. If **imageSize** is not specified, the size of the logical screen associated with the specified display ID is used. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ screenshot.save(screenshotOptions, (err: BusinessError, pixelMap: image.PixelMap
 ```
 
 
+<a id="save-1"></a>
 ## save
 
 ```TypeScript
@@ -98,7 +100,7 @@ Obtains a screenshot. This API uses an asynchronous callback to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return a PixelMap object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return a PixelMap object. |
 
 **Error codes:**
 
@@ -126,6 +128,7 @@ screenshot.save((err: BusinessError, pixelMap: image.PixelMap) => {
 ```
 
 
+<a id="save-2"></a>
 ## save
 
 ```TypeScript
@@ -156,7 +159,7 @@ Obtains a screenshot. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return a PixelMap object. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return a PixelMap object. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { statistics } from '@kit.NetworkKit';
 ```
 
+<a id="getifacerxbytes"></a>
 ## getIfaceRxBytes
 
 ```TypeScript
@@ -25,7 +26,7 @@ Queries the data traffic (including all TCP and UDP data packets) received throu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | nic | string | Yes | Network interface card. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Returns the data traffic received through the specified NIC. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Returns the data traffic received through the specified NIC. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ statistics.getIfaceRxBytes("wlan0", (error: BusinessError, stats: number) => {
 ```
 
 
+<a id="getifacerxbytes-1"></a>
 ## getIfaceRxBytes
 
 ```TypeScript
@@ -79,7 +81,7 @@ Queries the data traffic (including all TCP and UDP data packets) received throu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returned by the function. |
+| Promise&lt;number&gt; | The promise returned by the function. |
 
 **Error codes:**
 

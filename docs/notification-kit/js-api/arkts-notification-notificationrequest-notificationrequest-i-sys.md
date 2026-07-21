@@ -110,7 +110,7 @@ extendInfo?: Record<string, Object>
 
 Extended parameters customized for the system applications to publish notifications.This parameter is left empty by default.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 20
 

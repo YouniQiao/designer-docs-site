@@ -14,6 +14,7 @@ A control class that encapsulates APIs for input method management, which can on
 import { inputMethod } from '@kit.IMEKit';
 ```
 
+<a id="hidesoftkeyboard"></a>
 ## hideSoftKeyboard
 
 ```TypeScript
@@ -49,7 +50,7 @@ Hides the soft keyboard on a specified screen. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ inputMethod.getController().hideSoftKeyboard(displayId).then(() => {
 
 ```
 
+<a id="showsoftkeyboard"></a>
 ## showSoftKeyboard
 
 ```TypeScript
@@ -109,7 +111,7 @@ Shows the soft keyboard on a specified screen. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

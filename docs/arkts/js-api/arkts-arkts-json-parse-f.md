@@ -6,6 +6,7 @@
 import { JSON } from '@kit.ArkTS';
 ```
 
+<a id="parse"></a>
 ## parse
 
 ```TypeScript
@@ -34,5 +35,5 @@ Parses a JSON string into an ArkTS object or null.
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Return an Object, array, string, number, boolean, or null value corresponding to JSON text. |
+| Object | Return an Object, array, string, number, boolean, or null value corresponding to JSON text. |
 

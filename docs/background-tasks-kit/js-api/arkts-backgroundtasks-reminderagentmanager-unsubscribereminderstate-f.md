@@ -6,6 +6,7 @@
 import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="unsubscribereminderstate"></a>
 ## unsubscribeReminderState
 
 ```TypeScript
@@ -26,13 +27,13 @@ Unsubscribes from agent-powered reminder state changes. This API uses a promise 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<ReminderState>> | No | Callback used to return the result. If the **callback** parameter is not passed, all subscriptions are canceled. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;ReminderState&gt;&gt; | No | Callback used to return the result. If the **callback** parameter is not passed, all subscriptions are canceled. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

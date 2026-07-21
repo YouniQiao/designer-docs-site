@@ -14,6 +14,7 @@ In the following API examples, you must first use [getInputMethodAbility](arkts-
 import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
+<a id="createpanel"></a>
 ## createPanel
 
 ```TypeScript
@@ -31,7 +32,7 @@ Creates an input method panel. This API can be called only by the input method a
 > as  
 > [window.createWindow](../../apis-arkui/arkts-apis/arkts-arkui-window-createwindow-f.md#createwindow-1)  
 > , [bindContextMenu](CommonMethod<T>.bindContextMenu),  
-> and [CustomDialog](./@internal/component/ets/custom_dialog_controller). You are advised to adopt  
+> and [CustomDialog](../../apis-arkui/arkts-components/arkts-arkui-custom_dialog_controller-i). You are advised to adopt  
 > alternative solutions to sub-windows, such as using a [dialog box](../../apis-arkui/arkts-apis/arkts-arkui-advanced-dialog.md) or  
 > [bindMenu](CommonMethod<T>.bindMenu), or set  
 > **showInSubwindow** to **false**.
@@ -48,7 +49,7 @@ Creates an input method panel. This API can be called only by the input method a
 | --- | --- | --- | --- |
 | ctx | [BaseContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-basecontext-t.md) | Yes | Current context of the input method. |
 | info | [PanelInfo](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-selectioninput-selectionpanel-panelinfo-i-sys.md) | Yes | Information about the input method panel. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Panel> | Yes | Callback used to return the result. If the operation is successful,the created input method panel is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Panel&gt; | Yes | Callback used to return the result. If the operation is successful,the created input method panel is returned. |
 
 **Error codes:**
 
@@ -87,6 +88,7 @@ class InputMethodExt extends InputMethodExtensionAbility {
 
 ```
 
+<a id="createpanel-1"></a>
 ## createPanel
 
 ```TypeScript
@@ -102,9 +104,9 @@ Creates an input method panel. This API can be called only by the input method a
 
 > The input method panel does not support subwindows. For example, subwindows cannot be created using APIs such  
 > as  
-> [window.createWindow](../../../../windowmanager/application-window-fa.md#setting-the-child-window-of-an-application)  
+> [window.createWindow](docroot://windowmanager/application-window-fa.md#setting-the-child-window-of-an-application)  
 > , [bindContextMenu](CommonMethod<T>.bindContextMenu),  
-> and [CustomDialog](./@internal/component/ets/custom_dialog_controller). You are advised to adopt  
+> and [CustomDialog](../../apis-arkui/arkts-components/arkts-arkui-custom_dialog_controller-i). You are advised to adopt  
 > alternative solutions to sub-windows, such as using a [dialog box](../../apis-arkui/arkts-apis/arkts-arkui-advanced-dialog.md) or  
 > [bindMenu](CommonMethod<T>.bindMenu), or set  
 > **showInSubwindow** to **false**.
@@ -126,7 +128,7 @@ Creates an input method panel. This API can be called only by the input method a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Panel> | the promise returned by the function. |
+| Promise&lt;Panel&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -163,6 +165,7 @@ class InputMethodExt extends InputMethodExtensionAbility {
 
 ```
 
+<a id="destroypanel"></a>
 ## destroyPanel
 
 ```TypeScript
@@ -182,7 +185,7 @@ Destroys the specified input method panel. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | panel | [Panel](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-selectionmanager-panel-i.md) | Yes | Input method panel to destroy. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -225,6 +228,7 @@ if (inputPanel) {
 
 ```
 
+<a id="destroypanel-1"></a>
 ## destroyPanel
 
 ```TypeScript
@@ -249,7 +253,7 @@ Destroys the specified input method panel. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -290,6 +294,7 @@ if (inputPanel) {
 
 ```
 
+<a id="getsecuritymode"></a>
 ## getSecurityMode
 
 ```TypeScript
@@ -324,6 +329,7 @@ console.error(`getSecurityMode, securityMode is : ${security}`);
 
 ```
 
+<a id="off"></a>
 ## off('inputStart')
 
 ```TypeScript
@@ -343,7 +349,7 @@ Disables listening for the input method binding event. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'inputStart' | Yes | Event type, which is **'inputStart'**. |
-| callback | (kbController: KeyboardController, inputClient: InputClient) => void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | (kbController: KeyboardController, inputClient: InputClient) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -352,6 +358,7 @@ inputMethodEngine.getInputMethodAbility().off('inputStart');
 
 ```
 
+<a id="off-1"></a>
 ## off('inputStop')
 
 ```TypeScript
@@ -371,7 +378,7 @@ Disables listening for the input method stop event. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'inputStop' | Yes | Event type, which is **'inputStop'**. |
-| callback | () => void | Yes | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | () =&gt; void | Yes | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -382,6 +389,7 @@ inputMethodEngine.getInputMethodAbility().off('inputStop', () => {
 
 ```
 
+<a id="off-2"></a>
 ## off('setCallingWindow')
 
 ```TypeScript
@@ -401,7 +409,7 @@ Disables listening for the window invocation setting event. This API uses an asy
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setCallingWindow' | Yes | Event type, which is **'setCallingWindow'**. |
-| callback | (wid: number) => void | Yes | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | (wid: number) =&gt; void | Yes | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -412,6 +420,7 @@ inputMethodEngine.getInputMethodAbility().off('setCallingWindow', (wid: number) 
 
 ```
 
+<a id="off-3"></a>
 ## off('keyboardShow' | 'keyboardHide')
 
 ```TypeScript
@@ -431,7 +440,7 @@ Disables listening for a keyboard visibility event. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardShow' \| 'keyboardHide' | Yes | Event type.<br>- The value **'keyboardShow'** indicates the keyboard display event.<br>- The value **'keyboardHide'** indicates the keyboard hiding event. |
-| callback | () => void | No | Callback used to return the result. |
+| callback | () =&gt; void | No | Callback used to return the result. |
 
 **Example**
 
@@ -445,6 +454,7 @@ inputMethodEngine.getInputMethodAbility().off('keyboardHide', () => {
 
 ```
 
+<a id="off-4"></a>
 ## off('keyboardShow' | 'keyboardHide')
 
 ```TypeScript
@@ -464,7 +474,7 @@ Disables listening for a keyboard visibility event. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardShow' \| 'keyboardHide' | Yes | Event type.<br>- The value **'keyboardShow'** indicates the keyboard display event.<br>- The value **'keyboardHide'** indicates the keyboard hiding event. |
-| callback | () => void | No | Callback used to return the result. |
+| callback | () =&gt; void | No | Callback used to return the result. |
 
 **Example**
 
@@ -478,6 +488,7 @@ inputMethodEngine.getInputMethodAbility().off('keyboardHide', () => {
 
 ```
 
+<a id="off-5"></a>
 ## off('setSubtype')
 
 ```TypeScript
@@ -497,7 +508,7 @@ Disables listening for the input method subtype setting event. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setSubtype' | Yes | Event type, which is **'setSubtype'**. |
-| callback | (inputMethodSubtype: InputMethodSubtype) => void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | (inputMethodSubtype: InputMethodSubtype) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -508,6 +519,7 @@ inputMethodEngine.getInputMethodAbility().off('setSubtype', () => {
 
 ```
 
+<a id="off-6"></a>
 ## off('securityModeChange')
 
 ```TypeScript
@@ -527,7 +539,7 @@ Disables listening for the security mode changes of the input method. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'securityModeChange' | Yes | Event type, which is **'securityModeChange'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SecurityMode> | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SecurityMode&gt; | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -542,6 +554,7 @@ inputMethodAbility.off('securityModeChange', securityChangeCallback);
 
 ```
 
+<a id="off-7"></a>
 ## off('privateCommand')
 
 ```TypeScript
@@ -561,7 +574,7 @@ Disables listening for the private data event of the input method. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'privateCommand' | Yes | Event type, which is **'privateCommand'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Record<string, CommandDataType>> | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Record&lt;string, CommandDataType&gt;&gt; | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Error codes:**
 
@@ -583,6 +596,7 @@ inputMethodEngine.getInputMethodAbility().off('privateCommand', privateCommandCa
 
 ```
 
+<a id="off-8"></a>
 ## off('callingDisplayDidChange')
 
 ```TypeScript
@@ -602,7 +616,7 @@ Disables listening for changes of the screen ID of the window associated with th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callingDisplayDidChange' | Yes | Event type, which is **'callingDisplayDidChange'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -613,6 +627,7 @@ inputMethodEngine.getInputMethodAbility().off('callingDisplayDidChange', (num: n
 
 ```
 
+<a id="off-9"></a>
 ## off('discardTypingText')
 
 ```TypeScript
@@ -632,7 +647,7 @@ Unsubscribes from the event of discarding candidate words and sends the event to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discardTypingText' | Yes | Event type, which is **'discardTypingText'**.<br> - **'discardTypingText'**: indicates unsubscribing from the event of discarding candidate words and sending the event to the input method. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -643,6 +658,7 @@ inputMethodEngine.getInputMethodAbility().off('discardTypingText', () => {
 
 ```
 
+<a id="on"></a>
 ## on('inputStart')
 
 ```TypeScript
@@ -662,7 +678,7 @@ Enables listening for the input method binding event. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'inputStart' | Yes | Event type, which is **'inputStart'**. |
-| callback | (kbController: KeyboardController, inputClient: InputClient) => void | Yes | Callback used to return instances related to input method operations. |
+| callback | (kbController: KeyboardController, inputClient: InputClient) =&gt; void | Yes | Callback used to return instances related to input method operations. |
 
 **Example**
 
@@ -676,6 +692,7 @@ inputMethodEngine.getInputMethodAbility()
 
 ```
 
+<a id="on-1"></a>
 ## on('inputStop')
 
 ```TypeScript
@@ -695,7 +712,7 @@ Enables listening for the input method unbinding event. This API uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'inputStop' | Yes | Event type, which is **'inputStop'**. |
-| callback | () => void | Yes | Callback used to return the result. |
+| callback | () =&gt; void | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -706,6 +723,7 @@ inputMethodEngine.getInputMethodAbility().on('inputStop', () => {
 
 ```
 
+<a id="on-2"></a>
 ## on('setCallingWindow')
 
 ```TypeScript
@@ -725,7 +743,7 @@ Enables listening for the window invocation setting event. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setCallingWindow' | Yes | Event type, which is **'setCallingWindow'**. |
-| callback | (wid: number) => void | Yes | Callback used to return the window ID of the caller. |
+| callback | (wid: number) =&gt; void | Yes | Callback used to return the window ID of the caller. |
 
 **Example**
 
@@ -736,6 +754,7 @@ inputMethodEngine.getInputMethodAbility().on('setCallingWindow', (wid: number) =
 
 ```
 
+<a id="on-3"></a>
 ## on('keyboardShow' | 'keyboardHide')
 
 ```TypeScript
@@ -755,7 +774,7 @@ Enables listening for a keyboard visibility event. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardShow' \| 'keyboardHide' | Yes | Event type.<br>- The value **'keyboardShow'** indicates the keyboard display event.<br>- The value **'keyboardHide'** indicates the keyboard hiding event. |
-| callback | () => void | Yes | Callback used to return the result. |
+| callback | () =&gt; void | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -769,6 +788,7 @@ inputMethodEngine.getInputMethodAbility().on('keyboardHide', () => {
 
 ```
 
+<a id="on-4"></a>
 ## on('keyboardShow' | 'keyboardHide')
 
 ```TypeScript
@@ -788,7 +808,7 @@ Enables listening for a keyboard visibility event. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyboardShow' \| 'keyboardHide' | Yes | Event type.<br>- The value **'keyboardShow'** indicates the keyboard display event.<br>- The value **'keyboardHide'** indicates the keyboard hiding event. |
-| callback | () => void | Yes | Callback used to return the result. |
+| callback | () =&gt; void | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -802,6 +822,7 @@ inputMethodEngine.getInputMethodAbility().on('keyboardHide', () => {
 
 ```
 
+<a id="on-5"></a>
 ## on('setSubtype')
 
 ```TypeScript
@@ -821,7 +842,7 @@ Enables listening for the input method subtype setting event. This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'setSubtype' | Yes | Event type, which is **'setSubtype'**. |
-| callback | (inputMethodSubtype: InputMethodSubtype) => void | Yes | Callback used to return the input method subtype. |
+| callback | (inputMethodSubtype: InputMethodSubtype) =&gt; void | Yes | Callback used to return the input method subtype. |
 
 **Example**
 
@@ -834,6 +855,7 @@ inputMethodEngine.getInputMethodAbility().on('setSubtype', (inputMethodSubtype: 
 
 ```
 
+<a id="on-6"></a>
 ## on('securityModeChange')
 
 ```TypeScript
@@ -853,7 +875,7 @@ Enables listening for the security mode changes of the input method. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'securityModeChange' | Yes | Event type, which is **'securityModeChange'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SecurityMode> | Yes | Callback used to return the current security mode. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SecurityMode&gt; | Yes | Callback used to return the current security mode. |
 
 **Example**
 
@@ -865,6 +887,7 @@ inputMethodEngine.getInputMethodAbility()
 
 ```
 
+<a id="on-7"></a>
 ## on('privateCommand')
 
 ```TypeScript
@@ -884,7 +907,7 @@ Enables listening for the private data event of the input method. This API uses 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'privateCommand' | Yes | Event type, which is **'privateCommand'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Record<string, CommandDataType>> | Yes | Callback used to return the private data sent to the input method application. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Record&lt;string, CommandDataType&gt;&gt; | Yes | Callback used to return the private data sent to the input method application. |
 
 **Error codes:**
 
@@ -905,6 +928,7 @@ inputMethodEngine.getInputMethodAbility().on('privateCommand', privateCommandCal
 
 ```
 
+<a id="on-8"></a>
 ## on('callingDisplayDidChange')
 
 ```TypeScript
@@ -924,7 +948,7 @@ Enables listening for changes of the screen ID of the window associated with the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callingDisplayDidChange' | Yes | Event type, which is **'callingDisplayDidChange'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the screen ID of the window corresponding to the edit box. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the screen ID of the window corresponding to the edit box. |
 
 **Error codes:**
 
@@ -942,6 +966,7 @@ inputMethodEngine.getInputMethodAbility().on('callingDisplayDidChange', callingD
 
 ```
 
+<a id="on-9"></a>
 ## on('discardTypingText')
 
 ```TypeScript
@@ -961,7 +986,7 @@ Subscribes to the event of discarding candidate words and sends the event to the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discardTypingText' | Yes | Event type, which is **'discardTypingText'**.<br> - **'discardTypingText'**: indicates subscribing to the event of discarding candidate words and sending the event to the input method. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 

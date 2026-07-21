@@ -6,6 +6,7 @@
 import { remoteDevice } from '@kit.ConnectivityKit';
 ```
 
+<a id="onpairingrequest"></a>
 ## onPairingRequest
 
 ```TypeScript
@@ -30,7 +31,7 @@ This event is accessible only to system applications that granted the ohos.permi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PairingRequestParam> | Yes | Callback used to listen for the pairing request event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;PairingRequestParam&gt; | Yes | Callback used to listen for the pairing request event. |
 
 **Error codes:**
 

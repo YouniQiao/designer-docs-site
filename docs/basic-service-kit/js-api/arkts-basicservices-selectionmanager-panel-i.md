@@ -16,6 +16,7 @@ Represents the word selection panel.
 import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="movetoglobaldisplay"></a>
 ## moveToGlobalDisplay
 
 ```TypeScript
@@ -43,7 +44,7 @@ Moves the word selection panel to the specified coordinates on the screen. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

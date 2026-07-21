@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="getcontrolledapplists"></a>
 ## getControlledAppLists
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtain the list of applications that are subject to enterprise DLP control for t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise that returns the appIdentifiers of controlled application for the current user. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise that returns the appIdentifiers of controlled application for the current user. |
 
 **Error codes:**
 

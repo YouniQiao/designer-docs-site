@@ -6,6 +6,7 @@
 import { volumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getvolumebyid"></a>
 ## getVolumeById
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains information about a volume based on the volume ID. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | volumeId | string | Yes | Volume ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Volume> | Yes | Callback used to return the volume information obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Volume&gt; | Yes | Callback used to return the volume information obtained. |
 
 **Error codes:**
 
@@ -43,6 +44,7 @@ Obtains information about a volume based on the volume ID. This API uses an asyn
 | 13900042 | Unknown error. |
 
 
+<a id="getvolumebyid-1"></a>
 ## getVolumeById
 
 ```TypeScript
@@ -71,7 +73,7 @@ Obtains information about a volume based on the volume ID. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Volume> | Promise used to return the volume information of the current ID. |
+| Promise&lt;Volume&gt; | Promise used to return the volume information of the current ID. |
 
 **Error codes:**
 

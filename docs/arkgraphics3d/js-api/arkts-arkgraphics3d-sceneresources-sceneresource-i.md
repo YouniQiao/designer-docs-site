@@ -8,6 +8,7 @@ Define scene resource extended by other 3d resource.
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript

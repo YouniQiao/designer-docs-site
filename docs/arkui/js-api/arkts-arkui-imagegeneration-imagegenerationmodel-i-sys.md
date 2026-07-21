@@ -16,6 +16,7 @@ AI Image Model Abstract Interface.
 import { imageGeneration } from '@kit.ArkUI';
 ```
 
+<a id="cancelimagegeneration"></a>
 ## cancelImageGeneration
 
 ```TypeScript
@@ -40,6 +41,7 @@ Cancel AI image generation task.
 | --- | --- | --- | --- |
 | sessionId | number | Yes | The session id for cancel an AI image generation task.<br>Value: range: [0, +∞] |
 
+<a id="getmodelsupportstyles"></a>
 ## getModelSupportStyles
 
 ```TypeScript
@@ -62,8 +64,9 @@ Get the types of image styles supported by the AI model.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ImageStyle> | image style information. |
+| Array&lt;ImageStyle&gt; | image style information. |
 
+<a id="oncomplain"></a>
 ## onComplain
 
 ```TypeScript
@@ -90,6 +93,7 @@ User use complaint menu to complain the result of an AI-generated image task.
 | request | [GenerateImageTaskParams](arkts-arkui-imagegeneration-generateimagetaskparams-i-sys.md) | Yes | The origin request for AI-generated image task. |
 | result | [GenerateImageTaskResult](arkts-arkui-imagegeneration-generateimagetaskresult-i-sys.md) | Yes | The result for AI-generated image task. |
 
+<a id="requestimagegeneration"></a>
 ## requestImageGeneration
 
 ```TypeScript
@@ -117,5 +121,5 @@ Request AI image generation task to get the generated image.
 | --- | --- | --- | --- |
 | sessionId | number | Yes | The session id for requesting an AI image generation task.<br>Value: range:[0, +∞] |
 | params | [GenerateImageTaskParams](arkts-arkui-imagegeneration-generateimagetaskparams-i-sys.md) | Yes | Parameters for requesting an AI image generation task. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<GenerateImageTaskPartialResult> | Yes | the callback used to return the GenerateImageTaskPartialResult. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;GenerateImageTaskPartialResult&gt; | Yes | the callback used to return the GenerateImageTaskPartialResult. |
 

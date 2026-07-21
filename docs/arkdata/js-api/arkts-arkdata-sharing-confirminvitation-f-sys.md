@@ -6,6 +6,7 @@
 import { cloudData } from '@kit.ArkData';
 ```
 
+<a id="confirminvitation"></a>
 ## confirmInvitation
 
 ```TypeScript
@@ -28,7 +29,7 @@ Confirms the invitation based on the sharing invitation code and obtains the sha
 | --- | --- | --- | --- |
 | invitationCode | string | Yes | Invitation code of the share. |
 | state | [State](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-agent-state-e.md) | Yes | Confirmation state. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Result<string>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Result&lt;string&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ cloudData.sharing.confirmInvitation('sharing_invitation_code_test', cloudData.sh
 ```
 
 
+<a id="confirminvitation-1"></a>
 ## confirmInvitation
 
 ```TypeScript
@@ -83,7 +85,7 @@ Confirms the invitation based on the sharing invitation code and obtains the sha
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<string>> | Promise used to return the result. |
+| Promise&lt;Result&lt;string&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { uniformTypeDescriptor } from '@kit.ArkData';
 ```
 
+<a id="getuniformdatatypesbyfilenameextension"></a>
 ## getUniformDataTypesByFilenameExtension
 
 ```TypeScript
@@ -33,7 +34,7 @@ Obtains the uniform data type IDs based on the given file name extension and dat
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Uniform data type IDs that match the specified file name extension and **belongsTo** (if specified). If no match is found, the data types dynamically generated based on the rules specified by the input parameters are returned. |
+| Array&lt;string&gt; | Uniform data type IDs that match the specified file name extension and **belongsTo** (if specified). If no match is found, the data types dynamically generated based on the rules specified by the input parameters are returned. |
 
 **Error codes:**
 

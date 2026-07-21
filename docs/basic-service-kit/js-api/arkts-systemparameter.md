@@ -2,7 +2,7 @@
 
 The **SystemParameter** module provides system services with easy access to key-value pairs. You can use the APIs provided by this module to describe the service status and change the service behavior. The basic operation primitives are **get** and **set**. You can obtain the values of system parameters through getters and modify the values through setters.
 
-For details about the system parameter design principles and definitions, see [Parameter Management](../../../../../device-dev/subsystems/subsys-boot-init-sysparam.md).
+For details about the system parameter design principles and definitions, see [Parameter Management](docroot://../device-dev/subsystems/subsys-boot-init-sysparam.md).
 
 > **NOTE**  
 >  
@@ -39,12 +39,12 @@ import { systemParameter } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
+| [get](arkts-basicservices-systemparameter-get-f-sys.md#get) | Obtains a value of the specified key. This API uses an asynchronous callback to return the result. |
 | [get](arkts-basicservices-systemparameter-get-f-sys.md#get-1) | Obtains a value of the specified key. This API uses an asynchronous callback to return the result. |
-| [get](arkts-basicservices-systemparameter-get-f-sys.md#get-2) | Obtains a value of the specified key. This API uses an asynchronous callback to return the result. |
-| [get](arkts-basicservices-systemparameter-get-f-sys.md#get-3) | Obtains a value of the specified key. This API uses a promise to return the result. |
-| [getSync](arkts-basicservices-systemparameter-getsync-f-sys.md#getsync-1) | Obtains a value of the specified key. |
-| [set](arkts-basicservices-systemparameter-set-f-sys.md#set-1) | Sets a value for the specified key. This API uses an asynchronous callback to return the result. |
-| [set](arkts-basicservices-systemparameter-set-f-sys.md#set-2) | Sets a value for the specified key. This API uses a promise to return the result. |
-| [setSync](arkts-basicservices-systemparameter-setsync-f-sys.md#setsync-1) | Sets a value for the specified key. |
+| [get](arkts-basicservices-systemparameter-get-f-sys.md#get-2) | Obtains a value of the specified key. This API uses a promise to return the result. |
+| [getSync](arkts-basicservices-systemparameter-getsync-f-sys.md#getsync) | Obtains a value of the specified key. |
+| [set](arkts-basicservices-systemparameter-set-f-sys.md#set) | Sets a value for the specified key. This API uses an asynchronous callback to return the result. |
+| [set](arkts-basicservices-systemparameter-set-f-sys.md#set-1) | Sets a value for the specified key. This API uses a promise to return the result. |
+| [setSync](arkts-basicservices-systemparameter-setsync-f-sys.md#setsync) | Sets a value for the specified key. |
 <!--DelEnd-->
 

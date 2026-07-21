@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setreminderinfobybundles"></a>
 ## setReminderInfoByBundles
 
 ```TypeScript
@@ -28,13 +29,13 @@ Batch sets reminders for specified applications. This API uses a promise to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| reminderInfos | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<NotificationReminderInfo> | Yes | Reminders to be set. |
+| reminderInfos | Array&lt;NotificationReminderInfo&gt; | Yes | Reminders to be set. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

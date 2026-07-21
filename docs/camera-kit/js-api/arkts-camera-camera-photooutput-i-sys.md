@@ -16,6 +16,7 @@ Implements output information used in a photo session. It inherits from [CameraO
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="burstcapture"></a>
 ## burstCapture
 
 ```TypeScript
@@ -42,7 +43,7 @@ Starts the burst mode, in which users can capture a series of photos in quick su
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -79,6 +80,7 @@ function burstCapture(photoOutput: camera.PhotoOutput): void {
 
 ```
 
+<a id="confirmcapture"></a>
 ## confirmCapture
 
 ```TypeScript
@@ -119,6 +121,7 @@ function confirmCapture(photoOutput: camera.PhotoOutput): void {
 
 ```
 
+<a id="deferimagedelivery"></a>
 ## deferImageDelivery
 
 ```TypeScript
@@ -159,6 +162,7 @@ function deferImageDelivery(photoOutput: camera.PhotoOutput, type: camera.Deferr
 
 ```
 
+<a id="enableautocloudimageenhancement"></a>
 ## enableAutoCloudImageEnhancement
 
 ```TypeScript
@@ -189,6 +193,7 @@ Enable auto cloud image enhancement
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="enableautohighqualityphoto"></a>
 ## enableAutoHighQualityPhoto
 
 ```TypeScript
@@ -231,6 +236,7 @@ function enableAutoHighQualityPhoto(photoOutput: camera.PhotoOutput): void {
 
 ```
 
+<a id="enabledepthdatadelivery"></a>
 ## enableDepthDataDelivery
 
 ```TypeScript
@@ -262,6 +268,7 @@ Enable depth data delivery.
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="enableoffline"></a>
 ## enableOffline
 
 ```TypeScript
@@ -286,6 +293,7 @@ Enable offline processing.
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | session is not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="enableoriginalimagegeneration"></a>
 ## enableOriginalImageGeneration
 
 ```TypeScript
@@ -317,13 +325,14 @@ Enable original image generation.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="enablequickthumbnail"></a>
 ## enableQuickThumbnail
 
 ```TypeScript
 enableQuickThumbnail(enabled: boolean): void
 ```
 
-Enables or disables the quick thumbnail feature.This API takes effect after [addOutput](arkts-camera-camera-session-i.md#addoutput-1) and [addInput](arkts-camera-camera-session-i.md#addinput-1) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig-2).
+Enables or disables the quick thumbnail feature.This API takes effect after [addOutput](arkts-camera-camera-session-i.md#addoutput-1) and [addInput](arkts-camera-camera-session-i.md#addinput-1) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1).
 
 **Since:** 10
 
@@ -384,6 +393,7 @@ async function enableQuickThumbnail(context: common.BaseContext, mode: camera.Sc
 
 ```
 
+<a id="enablerawdelivery"></a>
 ## enableRawDelivery
 
 ```TypeScript
@@ -415,6 +425,7 @@ Enable raw image image delivery.
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="isautocloudimageenhancementsupported"></a>
 ## isAutoCloudImageEnhancementSupported
 
 ```TypeScript
@@ -444,6 +455,7 @@ Confirm if the auto cloud image enhancement is supported.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="isautohighqualityphotosupported"></a>
 ## isAutoHighQualityPhotoSupported
 
 ```TypeScript
@@ -485,6 +497,7 @@ function isAutoHighQualityPhotoSupported(photoOutput: camera.PhotoOutput): boole
 
 ```
 
+<a id="isdeferredimagedeliveryenabled"></a>
 ## isDeferredImageDeliveryEnabled
 
 ```TypeScript
@@ -533,6 +546,7 @@ function isDeferredImageDeliveryEnabled(photoOutput: camera.PhotoOutput, type: c
 
 ```
 
+<a id="isdeferredimagedeliverysupported"></a>
 ## isDeferredImageDeliverySupported
 
 ```TypeScript
@@ -581,6 +595,7 @@ function isDeferredImageDeliverySupported(photoOutput: camera.PhotoOutput, type:
 
 ```
 
+<a id="isdepthdatadeliverysupported"></a>
 ## isDepthDataDeliverySupported
 
 ```TypeScript
@@ -611,6 +626,7 @@ Check if the depth data delivery is supported.
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="isofflinesupported"></a>
 ## isOfflineSupported
 
 ```TypeScript
@@ -640,6 +656,7 @@ Confirm if offline processing is supported.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="isoriginalimagegenerationsupported"></a>
 ## isOriginalImageGenerationSupported
 
 ```TypeScript
@@ -671,13 +688,14 @@ Confirm if original image generation supported.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="isquickthumbnailsupported"></a>
 ## isQuickThumbnailSupported
 
 ```TypeScript
 isQuickThumbnailSupported(): boolean
 ```
 
-Checks whether the quick thumbnail feature is supported.This API takes effect after [addOutput](arkts-camera-camera-session-i.md#addoutput-1) and [addInput](arkts-camera-camera-session-i.md#addinput-1) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig-2).
+Checks whether the quick thumbnail feature is supported.This API takes effect after [addOutput](arkts-camera-camera-session-i.md#addoutput-1) and [addInput](arkts-camera-camera-session-i.md#addinput-1) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1).
 
 **Since:** 10
 
@@ -736,6 +754,7 @@ async function isQuickThumbnailSupported(context: common.BaseContext, mode: came
 
 ```
 
+<a id="israwdeliverysupported"></a>
 ## isRawDeliverySupported
 
 ```TypeScript
@@ -766,6 +785,7 @@ Confirm if the raw image delivery is supported
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="off"></a>
 ## off('deferredPhotoProxyAvailable')
 
 ```TypeScript
@@ -787,7 +807,7 @@ Unsubscribes from events indicating available thumbnail proxies.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deferredPhotoProxyAvailable' | Yes | Event type. The value is fixed at **'deferredPhotoProxyAvailable'**. The event can be listened for when a photoOutput instance is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DeferredPhotoProxy> | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('deferredPhotoProxyAvailable')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DeferredPhotoProxy&gt; | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('deferredPhotoProxyAvailable')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
@@ -817,6 +837,7 @@ function unRegisterPhotoOutputDeferredPhotoProxyAvailable(photoOutput: camera.Ph
 
 ```
 
+<a id="off-1"></a>
 ## off('quickThumbnail')
 
 ```TypeScript
@@ -838,7 +859,7 @@ Unsubscribes from quick thumbnail output events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'quickThumbnail' | Yes | Event type. The value is fixed at **'quickThumbnail'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('quickThumbnail')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('quickThumbnail')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Example**
 
@@ -849,6 +870,7 @@ function unregisterQuickThumbnail(photoOutput: camera.PhotoOutput): void {
 
 ```
 
+<a id="off-2"></a>
 ## off('offlineDeliveryFinished')
 
 ```TypeScript
@@ -870,7 +892,7 @@ Unsubscribes offline Delivery finished events.This method is valid only after en
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'offlineDeliveryFinished' | Yes | Event type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | No | Callback used to get offline Delivery finished events. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback used to get offline Delivery finished events. |
 
 **Error codes:**
 
@@ -878,6 +900,7 @@ Unsubscribes offline Delivery finished events.This method is valid only after en
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="on"></a>
 ## on('deferredPhotoProxyAvailable')
 
 ```TypeScript
@@ -899,7 +922,7 @@ Subscribes to events indicating available thumbnail proxies. This API uses an as
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deferredPhotoProxyAvailable' | Yes | Event type. The value is fixed at **'deferredPhotoProxyAvailable'**. The event can be listened for when a photoOutput instance is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DeferredPhotoProxy> | Yes | Callback used to return the thumbnail proxy. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DeferredPhotoProxy&gt; | Yes | Callback used to return the thumbnail proxy. |
 
 **Error codes:**
 
@@ -929,6 +952,7 @@ function registerPhotoOutputDeferredPhotoProxyAvailable(photoOutput: camera.Phot
 
 ```
 
+<a id="on-1"></a>
 ## on('quickThumbnail')
 
 ```TypeScript
@@ -950,7 +974,7 @@ Subscribes to quick thumbnail output events. This API uses an asynchronous callb
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'quickThumbnail' | Yes | Event type. The value is fixed at **'quickThumbnail'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback that returns a PixelMap instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback that returns a PixelMap instance. |
 
 **Example**
 
@@ -1000,6 +1024,7 @@ async function registerQuickThumbnail(context: common.BaseContext, mode: camera.
 
 ```
 
+<a id="on-2"></a>
 ## on('offlineDeliveryFinished')
 
 ```TypeScript
@@ -1021,7 +1046,7 @@ Subscribes offline Delivery finished events.This method is valid only after enab
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'offlineDeliveryFinished' | Yes | Event type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to get offline Delivery finished events. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to get offline Delivery finished events. |
 
 **Error codes:**
 
@@ -1029,6 +1054,7 @@ Subscribes offline Delivery finished events.This method is valid only after enab
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="seteditdata"></a>
 ## setEditData
 
 ```TypeScript

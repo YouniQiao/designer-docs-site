@@ -8,6 +8,7 @@
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="contentmodifier"></a>
 ## contentModifier
 
 ```TypeScript
@@ -30,8 +31,9 @@ Creates a content modifier.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<RatingConfiguration> | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-contentmodifier-i.md)&lt;RatingConfiguration&gt; | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
+<a id="contentmodifier-1"></a>
 ## contentModifier
 
 ```TypeScript
@@ -54,8 +56,9 @@ Creates a content modifier. Compared with [contentModifier](RatingAttribute#cont
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [Optional](arkts-arkui-optional-t.md)<ContentModifier<RatingConfiguration>> | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API.<br>If **modifier** is set to **undefined**, no content modifier is used. |
+| modifier | [Optional](arkts-arkui-optional-t.md)&lt;ContentModifier&lt;RatingConfiguration&gt;&gt; | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API.<br>If **modifier** is set to **undefined**, no content modifier is used. |
 
+<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -78,8 +81,9 @@ Triggered when the rating value changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (value: number) => void | Yes |  |
+| callback | (value: number) =&gt; void | Yes |  |
 
+<a id="onchange-1"></a>
 ## onChange
 
 ```TypeScript
@@ -104,8 +108,9 @@ Triggered when the rating value changes. Compared with [onChange](RatingAttribut
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Optional](arkts-arkui-optional-t.md)<OnRatingChangeCallback> | Yes | Defines the callback triggered when the rating value changes.<br>If **callback** is set to **undefined**, the callback function is not used. |
+| callback | [Optional](arkts-arkui-optional-t.md)&lt;OnRatingChangeCallback&gt; | Yes | Defines the callback triggered when the rating value changes.<br>If **callback** is set to **undefined**, the callback function is not used. |
 
+<a id="starstyle"></a>
 ## starStyle
 
 ```TypeScript
@@ -132,8 +137,9 @@ By default, the image is loaded in asynchronous mode. Synchronous loading is not
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [StarStyleOptions](arkts-arkui-rating-starstyleoptions-i.md) | Yes | Star style.<br>**NOTE**<br>If an incorrect image path is provided for **backgroundUri**, **foregroundUri**, or **secondaryUri**, the previously displayed image will be retained. If the first provided path is incorrect, no image will be displayed.<br>When **backgroundUri** or **foregroundUri** is set to **undefined** or an empty string, the **Rating** component falls back to the default star image.<br>If **secondaryUri** is not set, or is set to **undefined** or an empty string,**backgroundUri** will be used as a fallback. The behavior in this case is the same as when only **foregroundUri** and **backgroundUri** are configured.<br>**Since:** 18 |
+| options | [StarStyleOptions](arkts-arkui-starstyleoptions-i.md) | Yes | Star style.<br>**NOTE**<br>If an incorrect image path is provided for **backgroundUri**, **foregroundUri**, or **secondaryUri**, the previously displayed image will be retained. If the first provided path is incorrect, no image will be displayed.<br>When **backgroundUri** or **foregroundUri** is set to **undefined** or an empty string, the **Rating** component falls back to the default star image.<br>If **secondaryUri** is not set, or is set to **undefined** or an empty string,**backgroundUri** will be used as a fallback. The behavior in this case is the same as when only **foregroundUri** and **backgroundUri** are configured.<br>**Since:** 18 |
 
+<a id="starstyle-1"></a>
 ## starStyle
 
 ```TypeScript
@@ -164,8 +170,9 @@ Compared with [starStyle](RatingAttribute#starStyle(options: StarStyleOptions)),
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [Optional](arkts-arkui-optional-t.md)<StarStyleOptions> | Yes | Star style.<br>**NOTE**<br>If an incorrect image path is provided for **backgroundUri**, **foregroundUri**, or **secondaryUri**, the previously displayed image will be retained.If the first provided path is incorrect, no image will be displayed.<br>When **backgroundUri** or **foregroundUri** is set to **undefined** or an empty string, the **Rating** component falls back to the default star image.<br>If **secondaryUri** is not set, or is set to **undefined** or an empty string,**backgroundUri** will be used as a fallback. The behavior in this case is the same as when only **foregroundUri** and **backgroundUri** are configured. |
+| options | [Optional](arkts-arkui-optional-t.md)&lt;StarStyleOptions&gt; | Yes | Star style.<br>**NOTE**<br>If an incorrect image path is provided for **backgroundUri**, **foregroundUri**, or **secondaryUri**, the previously displayed image will be retained.If the first provided path is incorrect, no image will be displayed.<br>When **backgroundUri** or **foregroundUri** is set to **undefined** or an empty string, the **Rating** component falls back to the default star image.<br>If **secondaryUri** is not set, or is set to **undefined** or an empty string,**backgroundUri** will be used as a fallback. The behavior in this case is the same as when only **foregroundUri** and **backgroundUri** are configured. |
 
+<a id="stars"></a>
 ## stars
 
 ```TypeScript
@@ -190,6 +197,7 @@ Sets the total number of stars. Values less than 0 are treated as the default va
 | --- | --- | --- | --- |
 | value | number | Yes | Total number of stars.<br>Default value: **5** |
 
+<a id="stars-1"></a>
 ## stars
 
 ```TypeScript
@@ -214,8 +222,9 @@ Sets the total number of stars. Values less than 0 are treated as the default va
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| starCount | [Optional](arkts-arkui-optional-t.md)<number> | Yes | Total number of stars.<br>If **starCount** is set to **undefined**, the default value **5** is used. |
+| starCount | [Optional](arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Total number of stars.<br>If **starCount** is set to **undefined**, the default value **5** is used. |
 
+<a id="stepsize"></a>
 ## stepSize
 
 ```TypeScript
@@ -240,6 +249,7 @@ Sets the step for rating. Values less than 0.1 are treated as the default value.
 | --- | --- | --- | --- |
 | value | number | Yes | Step for rating.<br>Default value: **0.5**<br>Value range: [0.1, stars] |
 
+<a id="stepsize-1"></a>
 ## stepSize
 
 ```TypeScript
@@ -264,5 +274,5 @@ Sets the step for rating. Values less than 0.1 are treated as the default value.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| size | [Optional](arkts-arkui-optional-t.md)<number> | Yes | Step for rating.<br>If **size** is set to **undefined**, the default value **0.5** is used.<br>Value range: [0.1, stars] |
+| size | [Optional](arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Step for rating.<br>If **size** is set to **undefined**, the default value **0.5** is used.<br>Value range: [0.1, stars] |
 

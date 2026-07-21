@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="stopmanualnetworkscan"></a>
 ## stopManualNetworkScan
 
 ```TypeScript
@@ -34,7 +35,7 @@ Stop ManualNetworkScan.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise return stopManualNetworkScan. |
+| Promise&lt;void&gt; | the promise return stopManualNetworkScan. |
 
 **Error codes:**
 

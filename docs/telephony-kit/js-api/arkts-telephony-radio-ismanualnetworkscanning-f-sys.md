@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="ismanualnetworkscanning"></a>
 ## isManualNetworkScanning
 
 ```TypeScript
@@ -34,7 +35,7 @@ Determine whether the current manual network scan is in progress.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise return ManualNetworkScanState. |
+| Promise&lt;boolean&gt; | the promise return ManualNetworkScanState. |
 
 **Error codes:**
 

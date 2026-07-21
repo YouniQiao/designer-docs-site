@@ -18,6 +18,7 @@ Implements a **NativeMediaPlayerHandler** object used as a parameter of the [Cre
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="handlebufferedendtimechanged"></a>
 ## handleBufferedEndTimeChanged
 
 ```TypeScript
@@ -40,6 +41,7 @@ Called to notify the ArkWeb engine of the buffer time when the buffer time chang
 | --- | --- | --- | --- |
 | bufferedEndTime | number | Yes | Duration of media data in the buffer.<br>Unit: second. Value range:[0, duration] |
 
+<a id="handledurationchanged"></a>
 ## handleDurationChanged
 
 ```TypeScript
@@ -62,6 +64,7 @@ Called to notify the ArkWeb engine of the total duration of the media.
 | --- | --- | --- | --- |
 | duration | number | Yes | Total duration of the media.<br>Unit: second. Value range: [0,+��) |
 
+<a id="handleended"></a>
 ## handleEnded
 
 ```TypeScript
@@ -78,6 +81,7 @@ Called to notify the ArkWeb engine that the media playback ends.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="handleerror"></a>
 ## handleError
 
 ```TypeScript
@@ -101,6 +105,7 @@ Called to notify the ArkWeb engine that an error occurs with the player.
 | error | [MediaError](arkts-arkweb-webview-mediaerror-e.md) | Yes | Error object type. |
 | errorMessage | string | Yes | Error message. |
 
+<a id="handlefullscreenchanged"></a>
 ## handleFullscreenChanged
 
 ```TypeScript
@@ -123,6 +128,7 @@ Called to notify the ArkWeb engine of the full screen status of the player when 
 | --- | --- | --- | --- |
 | fullscreen | boolean | Yes | Whether the player is in full screen.<br>The value **true** means that the player is in full screen, and **false** means the opposite. |
 
+<a id="handlemutedchanged"></a>
 ## handleMutedChanged
 
 ```TypeScript
@@ -145,6 +151,7 @@ Called to notify the ArkWeb engine of the muted status of the player when the mu
 | --- | --- | --- | --- |
 | muted | boolean | Yes | Whether the player is muted.<br>The value **true** indicates that the player is muted,and **false** indicates the opposite. |
 
+<a id="handlenetworkstatechanged"></a>
 ## handleNetworkStateChanged
 
 ```TypeScript
@@ -167,6 +174,7 @@ Called to notify the ArkWeb engine of the network status of the player when the 
 | --- | --- | --- | --- |
 | state | [NetworkState](../../apis-telephony-kit/arkts-apis/arkts-telephony-radio-networkstate-i.md) | Yes | Network status of the player. |
 
+<a id="handleplaybackratechanged"></a>
 ## handlePlaybackRateChanged
 
 ```TypeScript
@@ -189,6 +197,7 @@ Called to notify the ArkWeb engine of the playback rate of the player when the p
 | --- | --- | --- | --- |
 | playbackRate | number | Yes | Playback rate. The value range is [0, +��). |
 
+<a id="handlereadystatechanged"></a>
 ## handleReadyStateChanged
 
 ```TypeScript
@@ -211,6 +220,7 @@ Called to notify the ArkWeb engine of the cache status of the player when the ca
 | --- | --- | --- | --- |
 | state | [ReadyState](arkts-arkweb-webview-readystate-e.md) | Yes | Cache status of the player. |
 
+<a id="handleseekfinished"></a>
 ## handleSeekFinished
 
 ```TypeScript
@@ -227,6 +237,7 @@ Called to notify the ArkWeb engine that the seek operation is complete.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="handleseeking"></a>
 ## handleSeeking
 
 ```TypeScript
@@ -243,6 +254,7 @@ Called to notify the ArkWeb engine that the player enters the seek state.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="handlestatuschanged"></a>
 ## handleStatusChanged
 
 ```TypeScript
@@ -265,6 +277,7 @@ Called to notify the ArkWeb engine of the playback status of the player when the
 | --- | --- | --- | --- |
 | status | [PlaybackStatus](arkts-arkweb-webview-playbackstatus-e.md) | Yes | Player status. |
 
+<a id="handletimeupdate"></a>
 ## handleTimeUpdate
 
 ```TypeScript
@@ -287,6 +300,7 @@ Called to notify the ArkWeb engine of the playback progress when the playback pr
 | --- | --- | --- | --- |
 | currentPlayTime | number | Yes | Current progress.<br>Unit: second. Value range: [0, duration] |
 
+<a id="handlevideosizechanged"></a>
 ## handleVideoSizeChanged
 
 ```TypeScript
@@ -310,6 +324,7 @@ Called to notify the ArkWeb engine of the video size of the player.
 | width | number | Yes | Video width, in pixels. Value range: [0,+��) |
 | height | number | Yes | Video height, in pixels. Value range: [0,+��) |
 
+<a id="handlevolumechanged"></a>
 ## handleVolumeChanged
 
 ```TypeScript

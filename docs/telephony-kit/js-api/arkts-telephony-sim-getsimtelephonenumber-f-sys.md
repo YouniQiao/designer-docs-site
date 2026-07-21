@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="getsimtelephonenumber"></a>
 ## getSimTelephoneNumber
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the MSISDN of the SIM card in a specified slot.The MSISDN is recorded in
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the MSISDN;Returns an empty string if no SIM card is inserted or no MSISDN is recorded in the EFMSISDN file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the MSISDN;Returns an empty string if no SIM card is inserted or no MSISDN is recorded in the EFMSISDN file. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sim.getSimTelephoneNumber(0, (err: BusinessError, data: string) => {
 ```
 
 
+<a id="getsimtelephonenumber-1"></a>
 ## getSimTelephoneNumber
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains the MSISDN of the SIM card in a specified slot.The MSISDN is recorded in
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the MSISDN; returns an empty string if no SIM card is inserted or no MSISDN is recorded in the EFMSISDN file. |
+| Promise&lt;string&gt; | Returns the MSISDN; returns an empty string if no SIM card is inserted or no MSISDN is recorded in the EFMSISDN file. |
 
 **Error codes:**
 

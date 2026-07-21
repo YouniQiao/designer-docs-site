@@ -16,6 +16,7 @@ The ServiceExtensionAbility module provides extended capabilities for background
 import { ServiceExtensionAbility } from '@kit.AbilityKit';
 ```
 
+<a id="onconfigurationupdate"></a>
 ## onConfigurationUpdate
 
 ```TypeScript
@@ -38,7 +39,7 @@ Called when the configuration of this ServiceExtensionAbility is updated.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| newConfig | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-common-configuration-i.md) | Yes | New configuration. |
+| newConfig | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-configuration-i.md) | Yes | New configuration. |
 
 **Example**
 
@@ -53,6 +54,7 @@ class ServiceExt extends ServiceExtensionAbility {
 
 ```
 
+<a id="onconnect"></a>
 ## onConnect
 
 ```TypeScript
@@ -132,6 +134,7 @@ class ServiceExt extends ServiceExtensionAbility {
 
 ```
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -169,6 +172,7 @@ class ServiceExt extends ServiceExtensionAbility {
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -200,6 +204,7 @@ class ServiceExt extends ServiceExtensionAbility {
 
 ```
 
+<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript
@@ -253,6 +258,7 @@ class ServiceExt extends ServiceExtensionAbility {
 
 ```
 
+<a id="ondump"></a>
 ## onDump
 
 ```TypeScript
@@ -275,13 +281,13 @@ Dumps the client information.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Parameters in the form of a command. |
+| params | Array&lt;string&gt; | Yes | Parameters in the form of a command. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Array of client information. |
+| Array&lt;string&gt; | Array of client information. |
 
 **Example**
 
@@ -297,6 +303,7 @@ class ServiceExt extends ServiceExtensionAbility {
 
 ```
 
+<a id="onreconnect"></a>
 ## onReconnect
 
 ```TypeScript
@@ -334,6 +341,7 @@ class ServiceExt extends ServiceExtensionAbility {
 
 ```
 
+<a id="onrequest"></a>
 ## onRequest
 
 ```TypeScript

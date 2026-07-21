@@ -6,6 +6,7 @@
 import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="startshortcut"></a>
 ## startShortcut
 
 ```TypeScript
@@ -35,7 +36,7 @@ Starts an ability based on the specified [shortcut information](arkts-ability-sh
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

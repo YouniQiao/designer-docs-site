@@ -6,6 +6,7 @@
 import { motion } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="offhoverhandchange"></a>
 ## offHoverHandChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe to hover hand event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<HoverHandAction> | No | Callback used to return hover hand action. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;HoverHandAction&gt; | No | Callback used to return hover hand action. |
 
 **Error codes:**
 

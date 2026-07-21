@@ -20,6 +20,7 @@ Verifies or decrypts a CMS message.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="decryptenvelopeddata"></a>
 ## decryptEnvelopedData
 
 ```TypeScript
@@ -46,7 +47,7 @@ Decrypts the CMS message of the **ENVELOPED_DATA** content type. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the decapsulation result. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the decapsulation result. |
 
 **Error codes:**
 
@@ -142,6 +143,7 @@ async function testCmsDecryptTest() {
 
 ```
 
+<a id="getcerts"></a>
 ## getCerts
 
 ```TypeScript
@@ -168,7 +170,7 @@ Obtains the certificate from CMS message of the **SIGNED_DATA** type by passing 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<X509Cert>> | Promise used to return a certificate set. |
+| Promise&lt;Array&lt;X509Cert&gt;&gt; | Promise used to return a certificate set. |
 
 **Error codes:**
 
@@ -179,6 +181,7 @@ Obtains the certificate from CMS message of the **SIGNED_DATA** type by passing 
 | [19020003](../errorcode-cert.md#19020003-parameter-check-failure) | parameter check failed. Possible causes:<br>1. The value of type is invalid or not supported. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getcontentdata"></a>
 ## getContentData
 
 ```TypeScript
@@ -199,7 +202,7 @@ Obtains the content data from CMS message of the **SIGNED_DATA** type. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the content data. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the content data. |
 
 **Error codes:**
 
@@ -325,6 +328,7 @@ async function testCmsVerifyTest() {
 
 ```
 
+<a id="getcontenttype"></a>
 ## getContentType
 
 ```TypeScript
@@ -472,6 +476,7 @@ async function testCmsVerifyTest() {
 
 ```
 
+<a id="setrawdata"></a>
 ## setRawData
 
 ```TypeScript
@@ -504,7 +509,7 @@ Converts data in CMS format into CMS objects. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -630,6 +635,7 @@ async function testCmsVerifyTest() {
 
 ```
 
+<a id="verifysigneddata"></a>
 ## verifySignedData
 
 ```TypeScript
@@ -656,7 +662,7 @@ Verifies the CMS message of the **SIGNED_DATA** content type. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

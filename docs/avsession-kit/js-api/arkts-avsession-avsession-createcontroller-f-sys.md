@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="createcontroller"></a>
 ## createController
 
 ```TypeScript
@@ -29,7 +30,7 @@ Create an avsession controller
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sessionId | string | Yes | Specifies the sessionId to create the controller. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVSessionController> | Yes | async callback for AVSessionController.If provided 'default', the system will create a default controller, Used to control the system default session |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVSessionController&gt; | Yes | async callback for AVSessionController.If provided 'default', the system will create a default controller, Used to control the system default session |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ avSession.createController(descriptors[0]?.sessionId, (avcontroller: avSession.A
 ```
 
 
+<a id="createcontroller-1"></a>
 ## createController
 
 ```TypeScript
@@ -103,7 +105,7 @@ Create an avsession controller
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVSessionController> | Promise for AVSessionController |
+| Promise&lt;AVSessionController&gt; | Promise for AVSessionController |
 
 **Error codes:**
 

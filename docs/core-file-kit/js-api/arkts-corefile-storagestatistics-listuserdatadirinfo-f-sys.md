@@ -6,6 +6,7 @@
 import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
+<a id="listuserdatadirinfo"></a>
 ## listUserdataDirInfo
 
 ```TypeScript
@@ -30,7 +31,7 @@ Queries the space usage of the **\/data** directory on the user device.This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<UserdataDirInfo>> | Promise used to return the space usage of the **\/data** directory on the user device. |
+| Promise&lt;Array&lt;UserdataDirInfo&gt;&gt; | Promise used to return the space usage of the **\/data** directory on the user device. |
 
 **Error codes:**
 

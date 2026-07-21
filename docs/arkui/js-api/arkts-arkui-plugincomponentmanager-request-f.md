@@ -6,6 +6,7 @@
 import { PluginComponentTemplate } from '@kit.ArkUI';
 ```
 
+<a id="request"></a>
 ## request
 
 ```TypeScript
@@ -27,7 +28,7 @@ Plugin component request method.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | param | [RequestParameters](arkts-arkui-plugincomponentmanager-requestparameters-i.md) | Yes |  |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RequestCallbackParameters> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RequestCallbackParameters&gt; | Yes |  |
 
 **Example**
 

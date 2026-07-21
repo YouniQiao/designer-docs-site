@@ -1,6 +1,6 @@
 # DataAbilityOperation
 
-The module defines the operation on DataAbilities. It can be used as an input parameter of [executeBatch](../../../../reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch)to specify the database operation information.
+The module defines the operation on DataAbilities. It can be used as an input parameter of [executeBatch](docroot://reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch)to specify the database operation information.
 
 **Since:** 7
 
@@ -70,7 +70,7 @@ predicatesBackReferences?: Map<number, number>
 
 Indicates the back reference to be used as a filter criterion in predicates.
 
-**Type:** Map<number, number>
+**Type:** Map&lt;number, number&gt;
 
 **Since:** 7
 

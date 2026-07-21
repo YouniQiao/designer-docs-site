@@ -36,7 +36,7 @@ pids: Array<number>
 
 Process ID set of the application.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 14
 

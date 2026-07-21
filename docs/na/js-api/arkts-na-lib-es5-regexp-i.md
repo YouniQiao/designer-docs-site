@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface RegExp--><!--Device-unnamed-interface RegExp-End-->
 
+<a id="compile"></a>
 ## compile
 
 ```TypeScript
@@ -25,6 +26,7 @@ compile(pattern: string, flags?: string): this
 | --- | --- |
 | this |  |
 
+<a id="exec"></a>
 ## exec
 
 ```TypeScript
@@ -47,6 +49,7 @@ Executes a search on a string using a regular expression pattern, and returns an
 | --- | --- |
 | [RegExpExecArray](arkts-na-lib-es5-regexpexecarray-i.md) |  |
 
+<a id="test"></a>
 ## test
 
 ```TypeScript

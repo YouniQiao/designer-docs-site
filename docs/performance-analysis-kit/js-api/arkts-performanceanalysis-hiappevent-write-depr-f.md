@@ -1,5 +1,6 @@
 # write
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -30,7 +31,7 @@ Writes event information to the event file of the current day. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to asynchronously process the callback in the **then()** and **catch()** methods when event writing succeeded or failed. |
+| Promise&lt;void&gt; | Promise used to asynchronously process the callback in the **then()** and **catch()** methods when event writing succeeded or failed. |
 
 **Example**
 
@@ -53,6 +54,7 @@ hiAppEvent.write("test_event", hiAppEvent.EventType.FAULT, eventParams).then(() 
 ```
 
 
+<a id="write-1"></a>
 ## write
 
 ```TypeScript
@@ -78,7 +80,7 @@ Writes event information to the event file of the current day. This API uses an 
 | eventName | string | Yes | Application event name. |
 | eventType | [EventType](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-screenlock-eventtype-t-sys.md) | Yes | Application event type. |
 | keyValues | object | Yes | Application event key-value pair params. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback function. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback function. |
 
 **Example**
 

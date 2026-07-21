@@ -6,6 +6,7 @@
 import { volumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getopprocess"></a>
 ## getOpProcess
 
 ```TypeScript
@@ -36,7 +37,7 @@ Gets the operation progress of a volume. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the operation progress. |
+| Promise&lt;number&gt; | Promise used to return the operation progress. |
 
 **Error codes:**
 

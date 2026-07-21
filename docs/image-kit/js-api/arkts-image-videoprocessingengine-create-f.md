@@ -6,6 +6,7 @@
 import { videoProcessingEngine } from '@kit.ImageKit';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript

@@ -21,6 +21,7 @@ Sets the background luminance color picking parameters, registers the luminance 
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="offbackgroundluminancechange"></a>
 ## offBackgroundLuminanceChange
 
 ```TypeScript
@@ -43,8 +44,9 @@ Unregisters the callback for listening to color picking. If no callback is speci
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| samplingCallback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number> | No | Callback to unregister. |
+| samplingCallback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback to unregister. |
 
+<a id="onbackgroundluminancechange"></a>
 ## onBackgroundLuminanceChange
 
 ```TypeScript
@@ -69,8 +71,9 @@ The background luminance is divided into three ranges based on the luminance thr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| samplingCallback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the current background luminance.<br>Note:[offBackgroundLuminanceChange](LuminanceSampler#off) cannot be called in the listening callback. |
+| samplingCallback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the current background luminance.<br>Note:[offBackgroundLuminanceChange](LuminanceSampler#off) cannot be called in the listening callback. |
 
+<a id="setbackgroundluminancesamplingconfigs"></a>
 ## setBackgroundLuminanceSamplingConfigs
 
 ```TypeScript

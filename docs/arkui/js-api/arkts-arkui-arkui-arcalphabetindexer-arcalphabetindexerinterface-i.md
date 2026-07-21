@@ -20,6 +20,7 @@ The **ArcAlphabetIndexer** component is an arc-shaped component designed for qui
 import { ArcAlphabetIndexerAttribute, ArcAlphabetIndexer } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

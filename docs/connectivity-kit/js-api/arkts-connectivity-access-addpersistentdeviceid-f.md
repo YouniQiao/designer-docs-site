@@ -6,6 +6,7 @@
 import { access } from '@kit.ConnectivityKit';
 ```
 
+<a id="addpersistentdeviceid"></a>
 ## addPersistentDeviceId
 
 ```TypeScript
@@ -34,7 +35,7 @@ Add a persistent random device address. Once the randomized address is successfu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { formObserver } from '@kit.FormKit';
 ```
 
+<a id="getrunningforminfobyid"></a>
 ## getRunningFormInfoById
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the RunningFormInfo object by formId.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<formInfo.RunningFormInfo> | The promise returned by the function. |
+| Promise&lt;formInfo.RunningFormInfo&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ Obtains the RunningFormInfo object by formId.
 | [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
 
 
+<a id="getrunningforminfobyid-1"></a>
 ## getRunningFormInfoById
 
 ```TypeScript
@@ -81,7 +83,7 @@ Obtains the RunningFormInfo object by formId.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<formInfo.RunningFormInfo> | The promise returned by the function. |
+| Promise&lt;formInfo.RunningFormInfo&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -95,6 +97,7 @@ Obtains the RunningFormInfo object by formId.
 | [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
 
 
+<a id="getrunningforminfobyid-2"></a>
 ## getRunningFormInfoById
 
 ```TypeScript
@@ -120,7 +123,7 @@ Obtains the RunningFormInfo object by formId.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | formId | string | Yes | Indicates the form provider formId. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<formInfo.RunningFormInfo> | Yes | The callback of getFormInstancesById. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback of getFormInstancesById. |
 
 **Error codes:**
 
@@ -134,6 +137,7 @@ Obtains the RunningFormInfo object by formId.
 | [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
 
 
+<a id="getrunningforminfobyid-3"></a>
 ## getRunningFormInfoById
 
 ```TypeScript
@@ -172,7 +176,7 @@ Obtains the RunningFormInfo object by formId.
 | --- | --- | --- | --- |
 | formId | string | Yes | Indicates the form provider formId. |
 | isUnusedIncluded | boolean | Yes | Indicates whether to include unused form. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<formInfo.RunningFormInfo> | Yes | The callback of getFormInstancesById. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback of getFormInstancesById. |
 
 **Error codes:**
 

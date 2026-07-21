@@ -6,6 +6,7 @@
 import { inputConsumer } from '@kit.InputKit';
 ```
 
+<a id="off"></a>
 ## off('hotkeyChange')
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unsubscribes from application shortcut key change events. This API uses an async
 | --- | --- | --- | --- |
 | type | 'hotkeyChange' | Yes | Event type. This parameter has a fixed value of **hotkeyChange**. |
 | hotkeyOptions | [HotkeyOptions](arkts-input-inputconsumer-hotkeyoptions-i.md) | Yes | Shortcut key options. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<HotkeyOptions> | No | Callback to unregister. If this parameter is left unspecified,listening will be disabled for all callbacks registered for the specified shortcut key options. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;HotkeyOptions&gt; | No | Callback to unregister. If this parameter is left unspecified,listening will be disabled for all callbacks registered for the specified shortcut key options. |
 
 **Error codes:**
 
@@ -104,6 +105,7 @@ struct Index {
 ```
 
 
+<a id="off-1"></a>
 ## off('keyPressed')
 
 ```TypeScript
@@ -123,7 +125,7 @@ Unsubscribes from key press events. This API uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyPressed' | Yes | Event type. This parameter has a fixed value of **keyPressed**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<KeyEvent> | No | Callback to unregister. If this parameter is not specified, listening will be disabled for all registered callbacks. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;KeyEvent&gt; | No | Callback to unregister. If this parameter is not specified, listening will be disabled for all registered callbacks. |
 
 **Error codes:**
 

@@ -16,6 +16,7 @@ You can use [filterById()](arkts-calendar-calendarmanager-eventfilter-c.md#filte
 import { calendarManager } from '@kit.CalendarKit';
 ```
 
+<a id="filterbyid"></a>
 ## filterById
 
 ```TypeScript
@@ -97,6 +98,7 @@ calendarMgr?.getCalendar(async (err: BusinessError, data:calendarManager.Calenda
 
 ```
 
+<a id="filterbytime"></a>
 ## filterByTime
 
 ```TypeScript
@@ -174,6 +176,7 @@ calendarMgr?.getCalendar(async (err: BusinessError, data:calendarManager.Calenda
 
 ```
 
+<a id="filterbytitle"></a>
 ## filterByTitle
 
 ```TypeScript

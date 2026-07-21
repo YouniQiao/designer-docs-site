@@ -16,6 +16,7 @@ Provides APIs for interacting with the sharedCenter service.You need to inherit 
 import { cloudExtension } from '@kit.ArkData';
 ```
 
+<a id="changeconfirmation"></a>
 ## changeConfirmation
 
 ```TypeScript
@@ -60,7 +61,7 @@ Changes the confirmation state of a share invitation. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<void>> | Promise used to return the result. |
+| Promise&lt;Result&lt;void&gt;&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -85,6 +86,7 @@ class MyShareCenter implements cloudExtension.ShareCenter {
 
 ```
 
+<a id="changeprivilege"></a>
 ## changePrivilege
 
 ```TypeScript
@@ -123,13 +125,13 @@ Changes the privilege (operation permissions) on the shared data.This API uses a
 | userId | number | Yes | User ID. |
 | bundleName | string | Yes | Bundle name of the application. |
 | sharingResource | string | Yes | Shared resource ID. |
-| participants | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<cloudData.sharing.Participant> | Yes | Participants of the share. |
+| participants | Array&lt;cloudData.sharing.Participant&gt; | Yes | Participants of the share. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<Array<Result<cloudData.sharing.Participant>>>> | Promise used to return the result. |
+| Promise&lt;Result&lt;Array&lt;Result&lt;cloudData.sharing.Participant&gt;&gt;&gt;&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -164,6 +166,7 @@ class MyShareCenter implements cloudExtension.ShareCenter {
 
 ```
 
+<a id="confirminvitation"></a>
 ## confirmInvitation
 
 ```TypeScript
@@ -208,7 +211,7 @@ Confirms the invitation for a share. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<string>> | Promise used to return the shared resource ID. |
+| Promise&lt;Result&lt;string&gt;&gt; | Promise used to return the shared resource ID. |
 
 **Example**
 
@@ -234,6 +237,7 @@ class MyShareCenter implements cloudExtension.ShareCenter {
 
 ```
 
+<a id="exit"></a>
 ## exit
 
 ```TypeScript
@@ -262,7 +266,7 @@ Exits a device-cloud share. This API uses a promise to return the result.The app
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<void>> | Promise used to return the result. |
+| Promise&lt;Result&lt;void&gt;&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -287,6 +291,7 @@ class MyShareCenter implements cloudExtension.ShareCenter {
 
 ```
 
+<a id="queryparticipants"></a>
 ## queryParticipants
 
 ```TypeScript
@@ -327,7 +332,7 @@ Queries the participants of a share. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<Array<cloudData.sharing.Participant>>> | Promise used to return the participants obtained. |
+| Promise&lt;Result&lt;Array&lt;cloudData.sharing.Participant&gt;&gt;&gt; | Promise used to return the participants obtained. |
 
 **Example**
 
@@ -382,6 +387,7 @@ class MyShareCenter implements cloudExtension.ShareCenter {
 
 ```
 
+<a id="queryparticipantsbyinvitation"></a>
 ## queryParticipantsByInvitation
 
 ```TypeScript
@@ -422,7 +428,7 @@ Queries the participants of a share based on the invitation code.This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<Array<cloudData.sharing.Participant>>> | Promise used to return the participants obtained. |
+| Promise&lt;Result&lt;Array&lt;cloudData.sharing.Participant&gt;&gt;&gt; | Promise used to return the participants obtained. |
 
 **Example**
 
@@ -477,6 +483,7 @@ class MyShareCenter implements cloudExtension.ShareCenter {
 
 ```
 
+<a id="share"></a>
 ## share
 
 ```TypeScript
@@ -515,13 +522,13 @@ Shares data. This API uses a promise to return the result.The application that i
 | userId | number | Yes | User ID. |
 | bundleName | string | Yes | Bundle name of the application. |
 | sharingResource | string | Yes | Shared resource ID. |
-| participants | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<cloudData.sharing.Participant> | Yes | Participants of the share. |
+| participants | Array&lt;cloudData.sharing.Participant&gt; | Yes | Participants of the share. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<Array<Result<cloudData.sharing.Participant>>>> | Promise used to return the result. |
+| Promise&lt;Result&lt;Array&lt;Result&lt;cloudData.sharing.Participant&gt;&gt;&gt;&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -556,6 +563,7 @@ class MyShareCenter implements cloudExtension.ShareCenter {
 
 ```
 
+<a id="unshare"></a>
 ## unshare
 
 ```TypeScript
@@ -594,13 +602,13 @@ Unshares data. This API uses a promise to return the result.The application, sha
 | userId | number | Yes | User ID. |
 | bundleName | string | Yes | Bundle name of the application. |
 | sharingResource | string | Yes | Shared resource ID. |
-| participants | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<cloudData.sharing.Participant> | Yes | Participants of the share. |
+| participants | Array&lt;cloudData.sharing.Participant&gt; | Yes | Participants of the share. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<Array<Result<cloudData.sharing.Participant>>>> | Promise used to return the result. |
+| Promise&lt;Result&lt;Array&lt;Result&lt;cloudData.sharing.Participant&gt;&gt;&gt;&gt; | Promise used to return the result. |
 
 **Example**
 

@@ -16,6 +16,7 @@ Implements intelligent voice management.
 import { intelligentVoice } from '@kit.BasicServicesKit';
 ```
 
+<a id="getcapabilityinfo"></a>
 ## getCapabilityInfo
 
 ```TypeScript
@@ -38,7 +39,7 @@ Obtains capability information.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<IntelligentVoiceEngineType> | array of supported IntelligentVoiceEngineType. |
+| Array&lt;IntelligentVoiceEngineType&gt; | array of supported IntelligentVoiceEngineType. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ if (intelligentVoiceManager != null) {
 
 ```
 
+<a id="off"></a>
 ## off('serviceChange')
 
 ```TypeScript
@@ -79,7 +81,7 @@ Unsubscribes service change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serviceChange' | Yes | Type of the event to listen for. Only the serviceChange event is supported. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ServiceChangeType> | No | Callback is invoked when the event is triggered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ServiceChangeType&gt; | No | Callback is invoked when the event is triggered. |
 
 **Error codes:**
 
@@ -97,6 +99,7 @@ if (intelligentVoiceManager != null) {
 
 ```
 
+<a id="on"></a>
 ## on('serviceChange')
 
 ```TypeScript
@@ -120,7 +123,7 @@ Subscribes service change events. When the state of intelligent voice service ch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serviceChange' | Yes | Type of the event to listen for. Only the serviceChange event is supported. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ServiceChangeType> | Yes | Callback is invoked when the event is triggered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ServiceChangeType&gt; | Yes | Callback is invoked when the event is triggered. |
 
 **Error codes:**
 

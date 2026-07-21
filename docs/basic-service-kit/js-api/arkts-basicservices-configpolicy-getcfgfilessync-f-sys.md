@@ -6,6 +6,7 @@
 import { configPolicy } from '@kit.BasicServicesKit';
 ```
 
+<a id="getcfgfilessync"></a>
 ## getCfgFilesSync
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains a list of all files of a specified file name based on the provided follo
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of configuration files obtained. |
+| Array&lt;string&gt; | List of configuration files obtained. |
 
 **Error codes:**
 

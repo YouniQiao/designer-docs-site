@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="getpubliccertificate"></a>
 ## getPublicCertificate
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains detailed information about a public credential. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMResult> | Promise used to return the detailed information about the user's public credential obtained, that is, **credential** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
+| Promise&lt;CMResult&gt; | Promise used to return the detailed information about the user's public credential obtained, that is, **credential** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
 
 **Error codes:**
 

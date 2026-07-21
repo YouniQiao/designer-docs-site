@@ -14,6 +14,7 @@ Enumerates the callbacks used for the request for loading multiple ads.
 import { advertising } from '@kit.AdsKit';
 ```
 
+<a id="onadloadfailure"></a>
 ## onAdLoadFailure
 
 ```TypeScript
@@ -54,6 +55,7 @@ const multiSlotsAdLoadListener: advertising.MultiSlotsAdLoadListener = {
 
 ```
 
+<a id="onadloadsuccess"></a>
 ## onAdLoadSuccess
 
 ```TypeScript
@@ -74,7 +76,7 @@ Called when a request for loading multiple ads is successful.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| adsMap | [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<string, Array<Advertisement>> | Yes | Ad data, which is a mapping set that uses ad slot IDs as keys to store the requested ad content. |
+| adsMap | Map&lt;string, Array&lt;Advertisement&gt;&gt; | Yes | Ad data, which is a mapping set that uses ad slot IDs as keys to store the requested ad content. |
 
 **Example**
 

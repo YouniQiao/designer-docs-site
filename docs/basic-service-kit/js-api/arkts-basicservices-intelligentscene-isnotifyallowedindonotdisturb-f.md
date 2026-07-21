@@ -6,6 +6,7 @@
 import { intelligentScene } from '@kit.BasicServicesKit';
 ```
 
+<a id="isnotifyallowedindonotdisturb"></a>
 ## isNotifyAllowedInDoNotDisturb
 
 ```TypeScript
@@ -28,7 +29,7 @@ Checks whether calling bundle is allow notify(e.g. sound & vibration) when syste
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns whether notify in Do Not Disturb mode is Allowed. |
+| Promise&lt;boolean&gt; | Returns whether notify in Do Not Disturb mode is Allowed. |
 
 **Error codes:**
 

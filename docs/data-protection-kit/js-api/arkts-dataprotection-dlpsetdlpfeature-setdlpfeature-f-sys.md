@@ -6,6 +6,7 @@
 import { dlpSetDlpFeature } from '@kit.DataProtectionKit';
 ```
 
+<a id="setdlpfeature"></a>
 ## setDlpFeature
 
 ```TypeScript
@@ -38,7 +39,7 @@ This API is used to enable or disable the DLP function in enterprise policies.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<StatusInfoResult> | Promise used to return the DLP status that is set. |
+| Promise&lt;StatusInfoResult&gt; | Promise used to return the DLP status that is set. |
 
 **Error codes:**
 

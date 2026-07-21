@@ -20,7 +20,7 @@ import { window } from '@kit.ArkUI';
 brightness: number
 ```
 
-Screen brightness of the window. The brightness can be set by calling [setWindowBrightness()](arkts-arkui-window-window-i.md#setwindowbrightness-2). The value is a floating-point number. Valid values are in the range [0.0, 1.0](where **1.0** means thebrightest) or the special value **-1.0** (which means that the brightness follows the system). If no value is passed, the brightness follows the system. In this case, the obtained brightness value is **-1.0**.
+Screen brightness of the window. The brightness can be set by calling [setWindowBrightness()](arkts-arkui-window-window-i.md#setwindowbrightness-1). The value is a floating-point number. Valid values are in the range [0.0, 1.0](where **1.0** means thebrightest) or the special value **-1.0** (which means that the brightness follows the system). If no value is passed, the brightness follows the system. In this case, the obtained brightness value is **-1.0**.
 
 **Type:** number
 
@@ -182,9 +182,9 @@ Whether the screen is always on. **true** if always on, **false** otherwise.
 isLayoutFullScreen: boolean
 ```
 
-Whether an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) is set for a child window. If an immersive-layout is set for the child window, the return value is **true**.
+Whether an [immersive layout](docroot://windowmanager/window-terminology.md#immersive-layout) is set for a child window. If an immersive-layout is set for the child window, the return value is **true**.
 
-Whether an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) is set for the main window and the main window is in full-screen mode. If an immersive-layout is set for the main window and the main window is in full-screen mode, the return value is **true**.
+Whether an [immersive layout](docroot://windowmanager/window-terminology.md#immersive-layout) is set for the main window and the main window is in full-screen mode. If an immersive-layout is set for the main window and the main window is in full-screen mode, the return value is **true**.
 
 In other cases, the return value is **false**.
 
@@ -204,7 +204,7 @@ In other cases, the return value is **false**.
 isPrivacyMode: boolean
 ```
 
-Whether the window is in privacy mode. **true** if the window is in privacy mode, **false** otherwise. You can call [setWindowPrivacyMode()](arkts-arkui-window-window-i.md#setwindowprivacymode-2)to set the privacy mode of the window.
+Whether the window is in privacy mode. **true** if the window is in privacy mode, **false** otherwise. You can call [setWindowPrivacyMode()](arkts-arkui-window-window-i.md#setwindowprivacymode-1)to set the privacy mode of the window.
 
 **Type:** boolean
 

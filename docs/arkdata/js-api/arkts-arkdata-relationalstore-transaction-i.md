@@ -26,6 +26,7 @@ For details about the definition of **this.context** in the sample code, see the
 import { relationalStore } from '@kit.ArkData';
 ```
 
+<a id="batchinsert"></a>
 ## batchInsert
 
 ```TypeScript
@@ -49,13 +50,13 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | An array of data to insert. |
+| values | Array&lt;ValuesBucket&gt; | Yes | An array of data to insert. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the operation is successful, the number of inserted data records is returned. Otherwise, **-1** is returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the operation is successful, the number of inserted data records is returned. Otherwise, **-1** is returned. |
 
 **Error codes:**
 
@@ -77,6 +78,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="batchinsertsync"></a>
 ## batchInsertSync
 
 ```TypeScript
@@ -100,7 +102,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | An array of data to insert. |
+| values | Array&lt;ValuesBucket&gt; | Yes | An array of data to insert. |
 
 **Return value:**
 
@@ -128,6 +130,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="batchinsertwithconflictresolution"></a>
 ## batchInsertWithConflictResolution
 
 ```TypeScript
@@ -165,14 +168,14 @@ Ensure that your application complies with this constraint when calling this API
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | An array of data to insert. |
+| values | Array&lt;ValuesBucket&gt; | Yes | An array of data to insert. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | Yes | Resolution used to resolve the conflict. If **ON_CONFLICT_ROLLBACK** is used, the transaction will be rolled back when a conflict occurs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the operation is successful, the number of inserted data records is returned. Otherwise, **-1** is returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the operation is successful, the number of inserted data records is returned. Otherwise, **-1** is returned. |
 
 **Error codes:**
 
@@ -197,6 +200,7 @@ Ensure that your application complies with this constraint when calling this API
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="batchinsertwithconflictresolutionsync"></a>
 ## batchInsertWithConflictResolutionSync
 
 ```TypeScript
@@ -227,7 +231,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | An array of data to insert. |
+| values | Array&lt;ValuesBucket&gt; | Yes | An array of data to insert. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | Yes | Resolution used to resolve the conflict. If **ON_CONFLICT_ROLLBACK** is used, the transaction will be rolled back when a conflict occurs. |
 
 **Return value:**
@@ -259,6 +263,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="batchinsertwithreturning"></a>
 ## batchInsertWithReturning
 
 ```TypeScript
@@ -293,7 +298,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table for data insertion. Note: A valid table name must not contain spaces ( ), commas (,), or asterisks (*), and must not start or end with a dot (.). Otherwise, a parameter error will be thrown. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | An array of data to insert. Note: An empty array or data containing duplicate asset records will trigger a parameter error. |
+| values | Array&lt;ValuesBucket&gt; | Yes | An array of data to insert. Note: An empty array or data containing duplicate asset records will trigger a parameter error. |
 | config | [ReturningConfig](arkts-arkdata-relationalstore-returningconfig-i.md) | Yes | Configuration information of the return value. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | No | Resolution used to resolve the conflict. Default value:**ON_CONFLICT_NONE**. |
 
@@ -301,7 +306,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result> | Promise used to return the result. If the operation is successful, the affected dataset is returned. |
+| Promise&lt;Result&gt; | Promise used to return the result. If the operation is successful, the affected dataset is returned. |
 
 **Error codes:**
 
@@ -319,6 +324,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="batchinsertwithreturningsync"></a>
 ## batchInsertWithReturningSync
 
 ```TypeScript
@@ -353,7 +359,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table for data insertion. Note: A valid table name must not contain spaces ( ), commas (,), or asterisks (*), and must not start or end with a dot (.). Otherwise, a parameter error will be thrown. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | An array of data to insert. Note: An empty array or data containing duplicate asset records will trigger a parameter error. |
+| values | Array&lt;ValuesBucket&gt; | Yes | An array of data to insert. Note: An empty array or data containing duplicate asset records will trigger a parameter error. |
 | config | [ReturningConfig](arkts-arkdata-relationalstore-returningconfig-i.md) | Yes | Configuration information of the return value. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | No | Resolution used to resolve the conflict. Default value:**ON_CONFLICT_NONE**. |
 
@@ -379,6 +385,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="commit"></a>
 ## commit
 
 ```TypeScript
@@ -397,7 +404,7 @@ Commits this executed SQL statement. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -413,6 +420,7 @@ Commits this executed SQL statement. This API uses a promise to return the resul
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800029](../errorcode-data-rdb.md#14800029-sqlite-database-is-full) | SQLite: The database is full. |
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -437,7 +445,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of rows deleted. |
+| Promise&lt;number&gt; | Promise used to return the number of rows deleted. |
 
 **Error codes:**
 
@@ -459,6 +467,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="deletesync"></a>
 ## deleteSync
 
 ```TypeScript
@@ -505,6 +514,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="deletewithreturning"></a>
 ## deleteWithReturning
 
 ```TypeScript
@@ -532,7 +542,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result> | Promise used to return the result. If the operation is successful, the affected dataset is returned. |
+| Promise&lt;Result&gt; | Promise used to return the result. If the operation is successful, the affected dataset is returned. |
 
 **Error codes:**
 
@@ -550,6 +560,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object 
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="deletewithreturningsync"></a>
 ## deleteWithReturningSync
 
 ```TypeScript
@@ -595,6 +606,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object 
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="execute"></a>
 ## execute
 
 ```TypeScript
@@ -603,7 +615,7 @@ execute(sql: string, args?: Array<ValueType>): Promise<ValueType>
 
 Executes an SQL statement that contains parameters but does not return data. This API returns the result synchronously. The SQL statement can be used to create, delete, query, and modify a table. The type of the return value varies, depending on the execution result.
 
-This API does not support query, database attachment, and transaction operations. You can use [querySql](arkts-arkdata-relationalstore-transaction-i.md#querysql-1) or [query](arkts-arkdata-relationalstore-transaction-i.md#query-1) to query data, and use [attach](@ohos.data.relationalStore:relationalStore.RdbStore.attach(fullPath: string, attachName: string)) to attach a database.
+This API does not support query, database attachment, and transaction operations. You can use [querySql](arkts-arkdata-relationalstore-transaction-i.md#querysql-1) or [query](arkts-arkdata-relationalstore-transaction-i.md#query-1) to query data, and use [attach](arkts-arkdata-relationalstore-rdbstore-i.md#attach-1) to attach a database.
 
 Statements separated by semicolons (\;) are not supported.
 
@@ -620,13 +632,13 @@ Statements starting with comments are not supported.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank.<br>**Since:** 20 |
+| args | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank.<br>**Since:** 20 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ValueType> | Promise used to return the SQL execution result. |
+| Promise&lt;ValueType&gt; | Promise used to return the SQL execution result. |
 
 **Error codes:**
 
@@ -649,6 +661,7 @@ Statements starting with comments are not supported.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="executesync"></a>
 ## executeSync
 
 ```TypeScript
@@ -659,7 +672,7 @@ Executes an SQL statement that contains specified arguments. The number of relat
 
 This API can be used to add, delete, and modify data, run SQL statements of the PRAGMA syntax, and create,delete, and modify a table. The type of the return value varies, depending on the execution result.
 
-This API does not support query, database attachment, and transaction operations. You can use [querySql](arkts-arkdata-relationalstore-transaction-i.md#querysql-1) or [query](arkts-arkdata-relationalstore-transaction-i.md#query-1) to query data, and use [attach](@ohos.data.relationalStore:relationalStore.RdbStore.attach(fullPath: string, attachName: string)) to attach a database.
+This API does not support query, database attachment, and transaction operations. You can use [querySql](arkts-arkdata-relationalstore-transaction-i.md#querysql-1) or [query](arkts-arkdata-relationalstore-transaction-i.md#query-1) to query data, and use [attach](arkts-arkdata-relationalstore-rdbstore-i.md#attach-1) to attach a database.
 
 Statements separated by semicolons (\;) are not supported.
 
@@ -676,7 +689,7 @@ Statements starting with comments are not supported.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If this parameter is left blank or set to **null** or **undefined**, the SQL statement is complete. The default value is null. |
+| args | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If this parameter is left blank or set to **null** or **undefined**, the SQL statement is complete. The default value is null. |
 
 **Return value:**
 
@@ -705,13 +718,14 @@ Statements starting with comments are not supported.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
 insert(table: string, values: ValuesBucket, conflict?: ConflictResolution): Promise<number>
 ```
 
-Inserts a row of data into a table. This API uses a promise to return the result. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-relationalstore-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-relationalstore-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates))or [querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
+Inserts a row of data into a table. This API uses a promise to return the result. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-relationalstore-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-relationalstore-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](arkts-arkdata-relationalstore-rdbstore-i.md#query-1)or [querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
 
 A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
 
@@ -733,7 +747,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the operation is successful, the row ID will be returned. Otherwise, **-1** will be returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the operation is successful, the row ID will be returned. Otherwise, **-1** will be returned. |
 
 **Error codes:**
 
@@ -755,6 +769,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="insertsync"></a>
 ## insertSync
 
 ```TypeScript
@@ -762,7 +777,7 @@ insertSync(table: string, values: ValuesBucket | sendableRelationalStore.ValuesB
       conflict?: ConflictResolution): number
 ```
 
-Inserts a row of data into a table. This API returns the result synchronously. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-relationalstore-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-relationalstore-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates))or [querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
+Inserts a row of data into a table. This API returns the result synchronously. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-relationalstore-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-relationalstore-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](arkts-arkdata-relationalstore-rdbstore-i.md#query-1)or [querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
 
 A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB, only the first 8 MB data is retained. For data storage requirements exceeding 8 MB, the Blob type is recommended.
 
@@ -779,7 +794,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table. |
-| values | ValuesBucket \| sendableRelationalStore.ValuesBucket | Yes | Row of data to insert. |
+| values | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) \| sendableRelationalStore.ValuesBucket | Yes | Row of data to insert. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | No | Resolution used to resolve the conflict. <br>Default value:**relationalStore.ConflictResolution.ON_CONFLICT_NONE**. |
 
 **Return value:**
@@ -808,6 +823,7 @@ A single string field supports a maximum of 8 MB data. If the data exceeds 8 MB,
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -827,13 +843,13 @@ Queries data from the RDB store based on specified conditions. This API uses a p
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Query conditions specified by the **RdbPredicates** object. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Columns to query. If null is passed in, all columns are queried. |
+| columns | Array&lt;string&gt; | No | Columns to query. If null is passed in, all columns are queried. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | Promise used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
+| Promise&lt;ResultSet&gt; | Promise used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
 
 **Error codes:**
 
@@ -850,6 +866,7 @@ Queries data from the RDB store based on specified conditions. This API uses a p
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="querysql"></a>
 ## querySql
 
 ```TypeScript
@@ -869,13 +886,13 @@ Queries data in the RDB store using the specified SQL statement. The number of r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
+| args | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | Promise used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
+| Promise&lt;ResultSet&gt; | Promise used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
 
 **Error codes:**
 
@@ -893,6 +910,7 @@ Queries data in the RDB store using the specified SQL statement. The number of r
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="querysqlsync"></a>
 ## querySqlSync
 
 ```TypeScript
@@ -912,7 +930,7 @@ Queries data in the RDB store using the specified SQL statement. The number of r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. The default value is null. |
+| args | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. The default value is null. |
 
 **Return value:**
 
@@ -936,6 +954,7 @@ Queries data in the RDB store using the specified SQL statement. The number of r
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="querysqlwithoutrowcount"></a>
 ## querySqlWithoutRowCount
 
 ```TypeScript
@@ -957,13 +976,13 @@ Queries data from the RDB store based on specified conditions without calculatin
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
+| bindArgs | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<LiteResultSet> | Promise used to return the result. If the operation is successful, a **LiteResultSet** object will be returned. |
+| Promise&lt;LiteResultSet&gt; | Promise used to return the result. If the operation is successful, a **LiteResultSet** object will be returned. |
 
 **Error codes:**
 
@@ -972,6 +991,7 @@ Queries data from the RDB store based on specified conditions without calculatin
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. Parameter is out of valid range. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="querysqlwithoutrowcountsync"></a>
 ## querySqlWithoutRowCountSync
 
 ```TypeScript
@@ -993,7 +1013,7 @@ Queries data from the RDB store based on specified SQL statements without calcul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. The default value is null. |
+| bindArgs | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. The default value is null. |
 
 **Return value:**
 
@@ -1008,6 +1028,7 @@ Queries data from the RDB store based on specified SQL statements without calcul
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. Parameter is out of valid range. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="querysync"></a>
 ## querySync
 
 ```TypeScript
@@ -1027,7 +1048,7 @@ Queries data in a database based on specified conditions. This API returns the r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Query conditions specified by the **RdbPredicates** object. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Columns to query. If null is passed in, all columns are queried. The default value is null. |
+| columns | Array&lt;string&gt; | No | Columns to query. If null is passed in, all columns are queried. The default value is null. |
 
 **Return value:**
 
@@ -1051,6 +1072,7 @@ Queries data in a database based on specified conditions. This API returns the r
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="querywithoutrowcount"></a>
 ## queryWithoutRowCount
 
 ```TypeScript
@@ -1072,13 +1094,13 @@ Queries data from the RDB store based on specified conditions without calculatin
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Query conditions specified by the **RdbPredicates** object. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Columns to query. If null is passed in, all columns are queried. The default value is null. |
+| columns | Array&lt;string&gt; | No | Columns to query. If null is passed in, all columns are queried. The default value is null. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<LiteResultSet> | If the operation is successful, a **LiteResultSet** object will be returned. |
+| Promise&lt;LiteResultSet&gt; | If the operation is successful, a **LiteResultSet** object will be returned. |
 
 **Error codes:**
 
@@ -1086,6 +1108,7 @@ Queries data from the RDB store based on specified conditions without calculatin
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="querywithoutrowcountsync"></a>
 ## queryWithoutRowCountSync
 
 ```TypeScript
@@ -1107,7 +1130,7 @@ Queries data from the RDB store based on specified conditions without calculatin
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Query conditions specified by the **RdbPredicates** object. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Columns to query. If null is passed in, all columns are queried. The default value is null. |
+| columns | Array&lt;string&gt; | No | Columns to query. If null is passed in, all columns are queried. The default value is null. |
 
 **Return value:**
 
@@ -1121,6 +1144,7 @@ Queries data from the RDB store based on specified conditions without calculatin
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="rollback"></a>
 ## rollback
 
 ```TypeScript
@@ -1139,7 +1163,7 @@ Rolls back this executed SQL statement. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1155,13 +1179,14 @@ Rolls back this executed SQL statement. This API uses a promise to return the re
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800029](../errorcode-data-rdb.md#14800029-sqlite-database-is-full) | SQLite: The database is full. |
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
 update(values: ValuesBucket, predicates: RdbPredicates, conflict?: ConflictResolution): Promise<number>
 ```
 
-Updates data based on the specified **RdbPredicates** object. This API uses a promise to return the result. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-relationalstore-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-relationalstore-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates))or [querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
+Updates data based on the specified **RdbPredicates** object. This API uses a promise to return the result. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB. Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-relationalstore-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-relationalstore-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](arkts-arkdata-relationalstore-rdbstore-i.md#query-1)or [querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
 
 **Since:** 14
 
@@ -1181,7 +1206,7 @@ Updates data based on the specified **RdbPredicates** object. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of rows updated. |
+| Promise&lt;number&gt; | Promise used to return the number of rows updated. |
 
 **Error codes:**
 
@@ -1203,13 +1228,14 @@ Updates data based on the specified **RdbPredicates** object. This API uses a pr
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
 updateSync(values: ValuesBucket, predicates: RdbPredicates, conflict?: ConflictResolution): number
 ```
 
-Updates data in the RDB store based on the specified **RdbPredicates** object. This API returns the result synchronously. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB.Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-relationalstore-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-relationalstore-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates))or [querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
+Updates data in the RDB store based on the specified **RdbPredicates** object. This API returns the result synchronously. Due to the limit of the shared memory, the size of a single data record cannot exceed 2 MB.Otherwise, data cannot be obtained using the **get** methods such as [getValue](arkts-arkdata-relationalstore-resultset-i.md#getvalue-1) and [getString](arkts-arkdata-relationalstore-resultset-i.md#getstring-1) after **ResultSet** is obtained through the [query](arkts-arkdata-relationalstore-rdbstore-i.md#query-1)or [querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1) API of **RdbStore**. As a result, the operation may fail or an exception may be thrown.
 
 **Since:** 14
 
@@ -1251,6 +1277,7 @@ Updates data in the RDB store based on the specified **RdbPredicates** object. T
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="updatewithreturning"></a>
 ## updateWithReturning
 
 ```TypeScript
@@ -1285,7 +1312,7 @@ It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict*
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result> | Promise used to return the result. If the operation is successful, the affected dataset is returned. |
+| Promise&lt;Result&gt; | Promise used to return the result. If the operation is successful, the affected dataset is returned. |
 
 **Error codes:**
 
@@ -1303,6 +1330,7 @@ It is not recommended to use the **ON_CONFLICT_FAIL** policy for the **conflict*
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="updatewithreturningsync"></a>
 ## updateWithReturningSync
 
 ```TypeScript

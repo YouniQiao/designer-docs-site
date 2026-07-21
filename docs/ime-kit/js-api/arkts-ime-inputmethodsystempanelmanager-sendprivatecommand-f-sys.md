@@ -6,6 +6,7 @@
 import { inputMethodSystemPanelManager } from '@kit.IMEKit';
 ```
 
+<a id="sendprivatecommand"></a>
 ## sendPrivateCommand
 
 ```TypeScript
@@ -28,13 +29,13 @@ Send private command.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| commandData | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, CommandDataType> | Yes | command data which will be sent. Max size 32KB. |
+| commandData | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, CommandDataType&gt; | Yes | command data which will be sent. Max size 32KB. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

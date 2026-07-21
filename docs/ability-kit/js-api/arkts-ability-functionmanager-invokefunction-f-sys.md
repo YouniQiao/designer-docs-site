@@ -6,6 +6,7 @@
 import { functionManager } from '@kit.AbilityKit';
 ```
 
+<a id="invokefunction"></a>
 ## invokeFunction
 
 ```TypeScript
@@ -35,14 +36,14 @@ Invoke a function by functionNamespace and functionName.
 | --- | --- | --- | --- |
 | functionNamespace | string | Yes | The namespace of the target function. |
 | functionName | string | Yes | The name of the target function. |
-| args | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | The input arguments for the function. |
+| args | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | The input arguments for the function. |
 | options | [InvokeOptions](arkts-ability-functionmanager-invokeoptions-i-sys.md) | No | The options for this invocation. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<InvokeResult> | The promise used to return the result of function invocation. |
+| Promise&lt;InvokeResult&gt; | The promise used to return the result of function invocation. |
 
 **Error codes:**
 

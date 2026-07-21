@@ -6,6 +6,7 @@
 import { AddFormMenuItem, AddFormOptions, FormMenuItemStyle } from '@kit.ArkUI';
 ```
 
+<a id="addformmenuitem"></a>
 ## AddFormMenuItem
 
 ```TypeScript

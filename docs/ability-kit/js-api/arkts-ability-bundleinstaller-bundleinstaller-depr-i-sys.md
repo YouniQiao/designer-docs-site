@@ -14,6 +14,7 @@ The module provides APIs for you to install, uninstall, and recover bundles on d
 
 **System API:** This is a system API.
 
+<a id="install"></a>
 ## install
 
 ```TypeScript
@@ -40,10 +41,11 @@ Install an application in a HAP.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFilePaths | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Sandbox path where the HAP files of the bundle are stored. |
+| bundleFilePaths | Array&lt;string&gt; | Yes | Sandbox path where the HAP files of the bundle are stored. |
 | param | [InstallParam](../../apis-mdm-kit/arkts-apis/arkts-mdm-bundlemanager-installparam-i.md) | Yes | Parameters required for bundle installation. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<InstallStatus> | Yes | Callback used to return the result. If install is successful, **err** is **undefined**, and return the installation status.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;InstallStatus&gt; | Yes | Callback used to return the result. If install is successful, **err** is **undefined**, and return the installation status.Otherwise, **err** is an error object. |
 
+<a id="recover"></a>
 ## recover
 
 ```TypeScript
@@ -72,8 +74,9 @@ recover an application.
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | param | [InstallParam](../../apis-mdm-kit/arkts-apis/arkts-mdm-bundlemanager-installparam-i.md) | Yes | Parameters required for bundle recovery. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<InstallStatus> | Yes | Callback used to return the result. If recover is successful, **err** is **undefined**, and return the installation status.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;InstallStatus&gt; | Yes | Callback used to return the result. If recover is successful, **err** is **undefined**, and return the installation status.Otherwise, **err** is an error object. |
 
+<a id="uninstall"></a>
 ## uninstall
 
 ```TypeScript
@@ -102,5 +105,5 @@ Uninstall an application.
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | param | [InstallParam](../../apis-mdm-kit/arkts-apis/arkts-mdm-bundlemanager-installparam-i.md) | Yes | Parameters required for bundle uninstall. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<InstallStatus> | Yes | Callback used to return the result. If uninstall is successful, **err** is **undefined**, and return the installation status.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;InstallStatus&gt; | Yes | Callback used to return the result. If uninstall is successful, **err** is **undefined**, and return the installation status.Otherwise, **err** is an error object. |
 

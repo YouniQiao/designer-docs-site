@@ -48,7 +48,7 @@ URI of the conflicting file. If the error is not caused by a file conflict, **de
 errCode: number
 ```
 
-Error code. For details about the error codes, see [File Management Error Codes](../../../../reference/apis-core-file-kit/errorcode-filemanagement.md).
+Error code. For details about the error codes, see [File Management Error Codes](docroot://reference/apis-core-file-kit/errorcode-filemanagement.md).
 
 **Type:** number
 

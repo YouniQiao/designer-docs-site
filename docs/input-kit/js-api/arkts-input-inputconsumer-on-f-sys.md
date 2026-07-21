@@ -6,6 +6,7 @@
 import { inputConsumer } from '@kit.InputKit';
 ```
 
+<a id="on"></a>
 ## on('key')
 
 ```TypeScript
@@ -35,7 +36,7 @@ Enables listening for system hotkey change events. This API uses an asynchronous
 | --- | --- | --- | --- |
 | type | 'key' | Yes | Event type. Currently, only **key** is supported. |
 | keyOptions | [KeyOptions](../../apis-test-kit/arkts-apis/arkts-test-uitest-keyoptions-i.md) | Yes | Combination key options. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<KeyOptions> | Yes | Callback used to return the combination key data when a combination key event that meets the specified condition occurs. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;KeyOptions&gt; | Yes | Callback used to return the combination key data when a combination key event that meets the specified condition occurs. |
 
 **Error codes:**
 

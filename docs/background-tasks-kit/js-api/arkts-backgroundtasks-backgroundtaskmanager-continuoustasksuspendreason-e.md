@@ -28,7 +28,7 @@ A continuous task of the **DATA_TRANSFER** type is requested, but the data trans
 SYSTEM_SUSPEND_AUDIO_PLAYBACK_NOT_USE_AVSESSION = 5
 ```
 
-A continuous task of the **AUDIO_PLAYBACK** type is requested, but [AVSession](../../../../media/avsession/avsession-overview.md) is not accessed.
+A continuous task of the **AUDIO_PLAYBACK** type is requested, but [AVSession](docroot://media/avsession/avsession-overview.md) is not accessed.
 
 **Since:** 20
 

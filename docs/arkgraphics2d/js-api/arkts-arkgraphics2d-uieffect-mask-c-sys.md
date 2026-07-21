@@ -16,6 +16,7 @@ Defines the mask for Filter or VisualEffect.
 import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
+<a id="createpixelmapmask"></a>
 ## createPixelMapMask
 
 ```TypeScript
@@ -98,6 +99,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="createpixelmapmask-1"></a>
 ## createPixelMapMask
 
 ```TypeScript
@@ -212,6 +214,7 @@ struct Index {
 
 ```
 
+<a id="createradialgradientmask"></a>
 ## createRadialGradientMask
 
 ```TypeScript
@@ -238,7 +241,7 @@ Create a Mask of radial gradient.
 | center | common2D.Point | Yes |  |
 | radiusX | number | Yes |  |
 | radiusY | number | Yes |  |
-| gradients | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<[number, number]> | Yes |  |
+| gradients | Array&lt;[number, number]&gt; | Yes |  |
 
 **Return value:**
 
@@ -252,6 +255,7 @@ Create a Mask of radial gradient.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="createripplemask"></a>
 ## createRippleMask
 
 ```TypeScript
@@ -296,6 +300,7 @@ Create a Mask of ripple.
 
 ```
 
+<a id="createuseeffectmask"></a>
 ## createUseEffectMask
 
 ```TypeScript
@@ -389,6 +394,7 @@ struct Index {
 
 ```
 
+<a id="createwavegradientmask"></a>
 ## createWaveGradientMask
 
 ```TypeScript

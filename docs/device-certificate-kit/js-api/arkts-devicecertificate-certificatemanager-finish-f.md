@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="finish"></a>
 ## finish
 
 ```TypeScript
@@ -26,8 +27,8 @@ Finishes the signing operation. This is the last step in the signature process. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handle | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Handle of initialization. You need to invoke the init method to obtain the handle. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CMResult> | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is the signature, that is, **outData** of the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. Otherwise, **err** is an error object. |
+| handle | Uint8Array | Yes | Handle of initialization. You need to invoke the init method to obtain the handle. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CMResult&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is the signature, that is, **outData** of the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ try {
 ```
 
 
+<a id="finish-1"></a>
 ## finish
 
 ```TypeScript
@@ -86,9 +88,9 @@ Finishes the signature verification operation. This is the last step in the sign
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handle | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Handle of initialization. You need to invoke the init method to obtain the handle. |
-| signature | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Data to sign or verify. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CMResult> | Yes | Callback used to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| handle | Uint8Array | Yes | Handle of initialization. You need to invoke the init method to obtain the handle. |
+| signature | Uint8Array | Yes | Data to sign or verify. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CMResult&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -125,6 +127,7 @@ try {
 ```
 
 
+<a id="finish-2"></a>
 ## finish
 
 ```TypeScript
@@ -145,14 +148,14 @@ Finishes the signing or signature verification operation. This API uses a promis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handle | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Handle of initialization. You need to invoke the init method to obtain the handle. |
-| signature | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | No | Signature data used for signature verification. This parameter does not need to be specified for signature operation. |
+| handle | Uint8Array | Yes | Handle of initialization. You need to invoke the init method to obtain the handle. |
+| signature | Uint8Array | No | Signature data used for signature verification. This parameter does not need to be specified for signature operation. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMResult> | Promise used to return the signature of a signing operation, that is, **outData** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. For a signature verification operation, the promise returns no value. |
+| Promise&lt;CMResult&gt; | Promise used to return the signature of a signing operation, that is, **outData** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. For a signature verification operation, the promise returns no value. |
 
 **Error codes:**
 

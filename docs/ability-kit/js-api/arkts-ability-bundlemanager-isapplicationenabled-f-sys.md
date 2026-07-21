@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="isapplicationenabled"></a>
 ## isApplicationEnabled
 
 ```TypeScript
@@ -33,7 +34,7 @@ Checks whether an application or an application clone is enabled. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if enabled, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if enabled, **false** otherwise. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ try {
 ```
 
 
+<a id="isapplicationenabled-1"></a>
 ## isApplicationEnabled
 
 ```TypeScript
@@ -88,7 +90,7 @@ Checks whether an application is enabled. This API uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result.**true** if enabled, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result.**true** if enabled, **false** otherwise. |
 
 **Error codes:**
 
@@ -123,6 +125,7 @@ try {
 ```
 
 
+<a id="isapplicationenabled-2"></a>
 ## isApplicationEnabled
 
 ```TypeScript
@@ -149,7 +152,7 @@ Checks whether an application is enabled. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if enabled, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if enabled, **false** otherwise. |
 
 **Error codes:**
 

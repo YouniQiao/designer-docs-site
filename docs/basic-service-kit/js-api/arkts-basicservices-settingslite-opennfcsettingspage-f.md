@@ -6,6 +6,7 @@
 import { settingsLite } from '@kit.BasicServicesKit';
 ```
 
+<a id="opennfcsettingspage"></a>
 ## openNfcSettingsPage
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="stopdiscoverprinter"></a>
 ## stopDiscoverPrinter
 
 ```TypeScript
@@ -30,7 +31,7 @@ Stops discovering printers. This API uses an asynchronous callback to return the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback to be invoked when printer discovery is stopped. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback to be invoked when printer discovery is stopped. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ print.stopDiscoverPrinter((err: BusinessError) => {
 ```
 
 
+<a id="stopdiscoverprinter-1"></a>
 ## stopDiscoverPrinter
 
 ```TypeScript
@@ -80,7 +82,7 @@ Stops discovering printers. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -1,8 +1,8 @@
 # RowSplit properties/events
 
-In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
-The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
+The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** RowSplitAttribute extends [CommonMethod<RowSplitAttribute>](CommonMethod<RowSplitAttribute>)
 
@@ -12,6 +12,7 @@ The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="resizeable"></a>
 ## resizeable
 
 ```TypeScript

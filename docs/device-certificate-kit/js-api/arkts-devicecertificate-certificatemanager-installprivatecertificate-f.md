@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="installprivatecertificate"></a>
 ## installPrivateCertificate
 
 ```TypeScript
@@ -41,10 +42,10 @@ Installs a private credential. This API uses an asynchronous callback to return 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| keystore | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Keystore file with a key pair and certificate. The value contains up to 20480bytes. |
+| keystore | Uint8Array | Yes | Keystore file with a key pair and certificate. The value contains up to 20480bytes. |
 | keystorePwd | string | Yes | Password of the keystore file. The password cannot exceed 32 bytes. |
 | certAlias | string | Yes | Credential alias. Currently, the alias can contain only digits, letters, and underscores (_) and should not exceed 32 bytes. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CMResult> | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is **uri** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CMResult&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is **uri** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -82,6 +83,7 @@ try {
 ```
 
 
+<a id="installprivatecertificate-1"></a>
 ## installPrivateCertificate
 
 ```TypeScript
@@ -102,7 +104,7 @@ Installs a private credential. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| keystore | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Keystore file with a key pair and certificate. The value contains up to 20480bytes. |
+| keystore | Uint8Array | Yes | Keystore file with a key pair and certificate. The value contains up to 20480bytes. |
 | keystorePwd | string | Yes | Password of the keystore file. The password cannot exceed 32 bytes. |
 | certAlias | string | Yes | Credential alias. Currently, the alias can contain only digits, letters, and underscores (_) and should not exceed 32 bytes. |
 
@@ -110,7 +112,7 @@ Installs a private credential. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMResult> | Promise used to return the operation result, that is, **uri** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
+| Promise&lt;CMResult&gt; | Promise used to return the operation result, that is, **uri** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
 
 **Error codes:**
 
@@ -148,6 +150,7 @@ try {
 ```
 
 
+<a id="installprivatecertificate-2"></a>
 ## installPrivateCertificate
 
 ```TypeScript
@@ -168,7 +171,7 @@ Installs a private credential and specifies its storage level. This API uses a p
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| keystore | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Keystore file with a key pair and certificate. The value contains up to 20480bytes. |
+| keystore | Uint8Array | Yes | Keystore file with a key pair and certificate. The value contains up to 20480bytes. |
 | keystorePwd | string | Yes | Password of the keystore file.<br>The value contains up to 32 bytes. |
 | certAlias | string | Yes | Alias of the credential entered by the user. Only digits, letters, and underscores (_) are supported.<br>The value should contain up to 32 bytes. |
 | level | [AuthStorageLevel](arkts-devicecertificate-certificatemanager-authstoragelevel-e.md) | Yes | Credential storage level. |
@@ -177,7 +180,7 @@ Installs a private credential and specifies its storage level. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMResult> | Promise used to return the operation result, that is, **uri** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
+| Promise&lt;CMResult&gt; | Promise used to return the operation result, that is, **uri** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
 
 **Error codes:**
 

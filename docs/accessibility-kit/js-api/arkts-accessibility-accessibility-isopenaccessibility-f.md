@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="isopenaccessibility"></a>
 ## isOpenAccessibility
 
 ```TypeScript
@@ -28,7 +29,7 @@ Checks whether an accessibility application is enabled. This API uses an asynchr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. Returns **true** if the accessibility application is enabled; returns **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. Returns **true** if the accessibility application is enabled; returns **false** otherwise. |
 
 **Example**
 
@@ -47,6 +48,7 @@ accessibility.isOpenAccessibility((err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isopenaccessibility-1"></a>
 ## isOpenAccessibility
 
 ```TypeScript
@@ -69,7 +71,7 @@ Checks whether an accessibility application is enabled. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. Returns **true** if the accessibility application is enabled; returns **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if the accessibility application is enabled; returns **false** otherwise. |
 
 **Example**
 

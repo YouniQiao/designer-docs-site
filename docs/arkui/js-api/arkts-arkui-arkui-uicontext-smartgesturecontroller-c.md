@@ -19,6 +19,7 @@ Provides the capability to enable smart gestures, monitor them, control the sele
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="clearmonitors"></a>
 ## clearMonitors
 
 ```TypeScript
@@ -37,6 +38,7 @@ Clears all monitoring callbacks registered for the current **UIContext**.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="clearselected"></a>
 ## clearSelected
 
 ```TypeScript
@@ -55,6 +57,7 @@ Clears the currently selected node of smart gestures.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="enablesmarttapandslidegestures"></a>
 ## enableSmartTapAndSlideGestures
 
 ```TypeScript
@@ -67,7 +70,7 @@ Sets whether to enable the tap and slide operations of smart gestures.
 >  
 > - This API affects only the tap and slide smart gestures, not the wrist-turn gesture.  
 >  
-> - When disabled, the [smartGestureShortcut](../arkts-components/arkts-arkui-common-commonmethod-c.md#smartgestureshortcut-1)  
+> - When disabled, the [smartGestureShortcut](../arkts-components/arkts-arkui-commonmethod-c.md#smartgestureshortcut-1)  
 > attribute on the component side is retained, but the tap and slide smart gestures will not be responded to.
 
 **Since:** 26.0.0
@@ -86,6 +89,7 @@ Sets whether to enable the tap and slide operations of smart gestures.
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Whether to enable the tap and slide smart gesture handling. The value **true** means to enable it, and **false** means to disable it. |
 
+<a id="registermonitor"></a>
 ## registerMonitor
 
 ```TypeScript
@@ -126,8 +130,9 @@ Registers a smart gesture monitoring callback. Before the system processes the c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitorCallback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<BaseGestureHandlingProposal, GestureHandlingResolution> | Yes | Smart gesture monitoring callback. The callback parameter is the default action handling provided by the system, and the return value is used to declare whether to consume the current smart gesture and whether to replace the default action handling. |
+| monitorCallback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;BaseGestureHandlingProposal, GestureHandlingResolution&gt; | Yes | Smart gesture monitoring callback. The callback parameter is the default action handling provided by the system, and the return value is used to declare whether to consume the current smart gesture and whether to replace the default action handling. |
 
+<a id="requestselected"></a>
 ## requestSelected
 
 ```TypeScript
@@ -140,11 +145,11 @@ Requests to set the specified component as the current smart gesture selected no
 >  
 > - The request takes effect only when all the following conditions are met: the target component can respond to  
 > smart gestures, the component is visible on the screen, and the component has an  
-> [onClick](../arkts-components/arkts-arkui-common-commonmethod-c.md#onclick-2) event bound or a  
+> [onClick](../arkts-components/arkts-arkui-commonmethod-c.md#onclick-1) event bound or a  
 > [TapGesture](arkts-arkui-gesture-con.md#tapgesture) gesture bound.  
 >  
 > - Whether a component can respond to smart gestures is determined by **enabled** in  
-> [smartGestureShortcut](../arkts-components/arkts-arkui-common-commonmethod-c.md#smartgestureshortcut-1).
+> [smartGestureShortcut](../arkts-components/arkts-arkui-commonmethod-c.md#smartgestureshortcut-1).
 
 **Since:** 26.0.0
 
@@ -160,8 +165,9 @@ Requests to set the specified component as the current smart gesture selected no
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | string | Yes | Component [id](../arkts-components/arkts-arkui-common-commonmethod-c.md#id-1). |
+| id | string | Yes | Component [id](../arkts-components/arkts-arkui-commonmethod-c.md#id-1). |
 
+<a id="unregistermonitor"></a>
 ## unregisterMonitor
 
 ```TypeScript
@@ -184,5 +190,5 @@ Unregisters a smart gesture monitoring callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitorCallback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<BaseGestureHandlingProposal, GestureHandlingResolution> | Yes | The smart gesture monitoring callback to unregister. |
+| monitorCallback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;BaseGestureHandlingProposal, GestureHandlingResolution&gt; | Yes | The smart gesture monitoring callback to unregister. |
 

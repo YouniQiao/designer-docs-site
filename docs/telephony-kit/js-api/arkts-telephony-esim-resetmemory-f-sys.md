@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="resetmemory"></a>
 ## resetMemory
 
 ```TypeScript
@@ -35,7 +36,7 @@ Erase all specific profiles and reset the eUICC.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultCode> | Returns the result of the reset operation. |
+| Promise&lt;ResultCode&gt; | Returns the result of the reset operation. |
 
 **Error codes:**
 

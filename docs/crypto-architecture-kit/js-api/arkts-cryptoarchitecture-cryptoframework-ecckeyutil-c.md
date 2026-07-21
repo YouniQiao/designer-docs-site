@@ -16,6 +16,7 @@ Provides utilities for ECC key parameter generation and point conversion based o
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="convertpoint"></a>
 ## convertPoint
 
 ```TypeScript
@@ -45,7 +46,7 @@ Converts the specified point data into a **Point** object based on the curve nam
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | curveName | string | Yes | Elliptic curve name, that is, the NID. |
-| encodedPoint | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Data of the point on the ECC elliptic curve to convert. |
+| encodedPoint | Uint8Array | Yes | Data of the point on the ECC elliptic curve to convert. |
 
 **Return value:**
 
@@ -76,13 +77,14 @@ console.info('returnPoint: ' + returnPoint.x.toString(16));
 
 ```
 
+<a id="genecccommonparamsspec"></a>
 ## genECCCommonParamsSpec
 
 ```TypeScript
 static genECCCommonParamsSpec(curveName: string): ECCCommonParamsSpec
 ```
 
-Generates common parameters for an asymmetric key pair based on the specified name identifier (NID) of an elliptic curve. For details, see [ECC](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#ecc) and [SM2](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#sm2).
+Generates common parameters for an asymmetric key pair based on the specified name identifier (NID) of an elliptic curve. For details, see [ECC](docroot://security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#ecc) and [SM2](docroot://security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#sm2).
 
 **Since:** 11
 
@@ -129,6 +131,7 @@ try {
 
 ```
 
+<a id="getencodedpoint"></a>
 ## getEncodedPoint
 
 ```TypeScript
@@ -157,7 +160,7 @@ Obtains the point data in the specified format from a **Point** object. Currentl
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Point data in the specified format. |
+| Uint8Array | Point data in the specified format. |
 
 **Error codes:**
 

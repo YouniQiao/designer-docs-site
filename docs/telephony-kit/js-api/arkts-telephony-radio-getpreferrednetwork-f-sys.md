@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getpreferrednetwork"></a>
 ## getPreferredNetwork
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the preferred network for the specified SIM card slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PreferredNetworkMode> | Yes | Indicates the callback for getting the preferred network mode to obtain. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PreferredNetworkMode&gt; | Yes | Indicates the callback for getting the preferred network mode to obtain. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ radio.getPreferredNetwork(slotId, (err: BusinessError, data: radio.PreferredNetw
 ```
 
 
+<a id="getpreferrednetwork-1"></a>
 ## getPreferredNetwork
 
 ```TypeScript
@@ -88,7 +90,7 @@ Get the preferred network for the specified SIM card slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PreferredNetworkMode> | Returns the callback for getting the preferred network mode to obtain. |
+| Promise&lt;PreferredNetworkMode&gt; | Returns the callback for getting the preferred network mode to obtain. |
 
 **Error codes:**
 

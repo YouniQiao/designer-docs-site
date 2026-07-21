@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="setcbconfiglist"></a>
 ## setCBConfigList
 
 ```TypeScript
@@ -34,7 +35,7 @@ Turn on Cell BroadCast by list.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setCBConfigList. |
+| Promise&lt;void&gt; | The promise returned by the setCBConfigList. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { formProvider } from '@kit.FormKit';
 ```
 
+<a id="getpublishedrunningforminfos"></a>
 ## getPublishedRunningFormInfos
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains information about all widgets that have been added to the home screen. T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<formInfo.RunningFormInfo>> | Promise used to return the information about widgets that meet the requirements. |
+| Promise&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Promise used to return the information about widgets that meet the requirements. |
 
 **Error codes:**
 

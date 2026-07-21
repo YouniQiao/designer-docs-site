@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getdynamicicon"></a>
 ## getDynamicIcon
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the module name corresponding to the dynamic icon based on the specified
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the API call result and module name corresponding to the dynamic icon. |
+| Promise&lt;string&gt; | Promise used to return the API call result and module name corresponding to the dynamic icon. |
 
 **Error codes:**
 

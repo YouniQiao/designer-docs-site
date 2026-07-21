@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Array<T>--><!--Device-unnamed-interface Array<T>-End-->
 
+<a id="copywithin"></a>
 ## copyWithin
 
 ```TypeScript
@@ -26,6 +27,7 @@ Returns the this object after copying a section of the array identified by start
 | --- | --- |
 | this |  |
 
+<a id="fill"></a>
 ## fill
 
 ```TypeScript
@@ -50,6 +52,7 @@ Changes all array elements from `start` to `end` index to a static `value` and r
 | --- | --- |
 | this |  |
 
+<a id="find"></a>
 ## find
 
 ```TypeScript
@@ -64,7 +67,7 @@ Returns the value of the first element in the array where predicate is true, and
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (this: void, value: T, index: number, obj: T[]) => value is S | Yes |  |
+| predicate | (this: void, value: T, index: number, obj: T[]) =&gt; value is S | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -73,6 +76,7 @@ Returns the value of the first element in the array where predicate is true, and
 | --- | --- |
 | S |  |
 
+<a id="find-1"></a>
 ## find
 
 ```TypeScript
@@ -85,7 +89,7 @@ find(predicate: (value: T, index: number, obj: T[]) => unknown, thisArg?: any): 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, obj: T[]) => unknown | Yes |  |
+| predicate | (value: T, index: number, obj: T[]) =&gt; unknown | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -94,6 +98,7 @@ find(predicate: (value: T, index: number, obj: T[]) => unknown, thisArg?: any): 
 | --- | --- |
 | T |  |
 
+<a id="findindex"></a>
 ## findIndex
 
 ```TypeScript
@@ -108,7 +113,7 @@ Returns the index of the first element in the array where predicate is true, and
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, obj: T[]) => unknown | Yes |  |
+| predicate | (value: T, index: number, obj: T[]) =&gt; unknown | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**

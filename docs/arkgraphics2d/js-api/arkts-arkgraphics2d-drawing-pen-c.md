@@ -21,6 +21,7 @@ Defines a pen, which is used to describe the style and color to outline a shape.
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -35,6 +36,7 @@ A constructor used to create a **Pen** object.
 
 **System capability:** SystemCapability.Graphics.Drawing
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -61,6 +63,7 @@ Copies a **Pen** object to create a new one.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="getalpha"></a>
 ## getAlpha
 
 ```TypeScript
@@ -81,6 +84,7 @@ Obtains the alpha value of this pen.
 | --- | --- |
 | number | Alpha value of the pen. The return value is an integer ranging from 0 to 255. |
 
+<a id="getcapstyle"></a>
 ## getCapStyle
 
 ```TypeScript
@@ -101,6 +105,7 @@ Obtains the cap style of this pen.
 | --- | --- |
 | [CapStyle](arkts-arkgraphics2d-drawing-capstyle-e.md) | Cap style. |
 
+<a id="getcolor"></a>
 ## getColor
 
 ```TypeScript
@@ -121,6 +126,7 @@ Obtains the color of this pen.
 | --- | --- |
 | common2D.Color | Color of the pen. |
 
+<a id="getcolor4f"></a>
 ## getColor4f
 
 ```TypeScript
@@ -141,6 +147,7 @@ Obtains the pen color. The difference between this method and [getColor](arkts-a
 | --- | --- |
 | common2D.Color4f | Color of the pen. |
 
+<a id="getcolorfilter"></a>
 ## getColorFilter
 
 ```TypeScript
@@ -159,8 +166,9 @@ Obtains the color filter of this pen.
 
 | Type | Description |
 | --- | --- |
-| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Color filter. |
+| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Color filter. |
 
+<a id="getfillpath"></a>
 ## getFillPath
 
 ```TypeScript
@@ -194,6 +202,7 @@ Obtains the source path outline drawn using this pen and represents it using a d
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="gethexcolor"></a>
 ## getHexColor
 
 ```TypeScript
@@ -214,6 +223,7 @@ Obtains the color of this pen.
 | --- | --- |
 | number | Color, represented as a 32-bit unsigned integer in hexadecimal ARGB format. |
 
+<a id="getjoinstyle"></a>
 ## getJoinStyle
 
 ```TypeScript
@@ -234,6 +244,7 @@ Obtains the join style of this pen.
 | --- | --- |
 | [JoinStyle](arkts-arkgraphics2d-drawing-joinstyle-e.md) | Join style. |
 
+<a id="getmiterlimit"></a>
 ## getMiterLimit
 
 ```TypeScript
@@ -254,6 +265,7 @@ Obtains the maximum ratio allowed between the sharp corner length of a polyline 
 | --- | --- |
 | number | Maximum ratio obtained. |
 
+<a id="getwidth"></a>
 ## getWidth
 
 ```TypeScript
@@ -274,6 +286,7 @@ Obtains the stroke width of this pen. The width describes the thickness of the o
 | --- | --- |
 | number | Stroke width for the pen, in px. |
 
+<a id="isantialias"></a>
 ## isAntiAlias
 
 ```TypeScript
@@ -294,6 +307,7 @@ Checks whether anti-aliasing is enabled for this pen.
 | --- | --- |
 | boolean | Check result. The value **true** means that anti-aliasing is enabled, and **false** means the opposite. |
 
+<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -308,6 +322,7 @@ Resets this pen to the initial state.
 
 **System capability:** SystemCapability.Graphics.Drawing
 
+<a id="setalpha"></a>
 ## setAlpha
 
 ```TypeScript
@@ -334,6 +349,7 @@ Sets an alpha value for this pen.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setantialias"></a>
 ## setAntiAlias
 
 ```TypeScript
@@ -360,6 +376,7 @@ Enables anti-aliasing for this pen. Anti-aliasing makes the edges of the content
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setblendmode"></a>
 ## setBlendMode
 
 ```TypeScript
@@ -378,7 +395,7 @@ Sets a blend mode for this pen.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [BlendMode](../../apis-arkui/arkts-components/arkts-arkui-common-blendmode-e.md) | Yes | Blend mode. |
+| mode | [BlendMode](../../apis-arkui/arkts-components/arkts-arkui-blendmode-e.md) | Yes | Blend mode. |
 
 **Error codes:**
 
@@ -386,6 +403,7 @@ Sets a blend mode for this pen.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setcapstyle"></a>
 ## setCapStyle
 
 ```TypeScript
@@ -412,6 +430,7 @@ Sets the cap style for this pen. If this API is not called, the default cap styl
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setcolor"></a>
 ## setColor
 
 ```TypeScript
@@ -438,6 +457,7 @@ Sets a color for this pen.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setcolor-1"></a>
 ## setColor
 
 ```TypeScript
@@ -467,6 +487,7 @@ Sets a color for this pen. This API provides better performance than [setColor](
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setcolor-2"></a>
 ## setColor
 
 ```TypeScript
@@ -487,6 +508,7 @@ Sets a color for this pen.
 | --- | --- | --- | --- |
 | color | number | Yes | Color in hexadecimal ARGB format. |
 
+<a id="setcolor4f"></a>
 ## setColor4f
 
 ```TypeScript
@@ -508,6 +530,7 @@ Sets the color and standard color gamut for this pen. The difference between thi
 | color4f | common2D.Color4f | Yes | Color in the ARGB format. The value of each color channel is a floating point number ranging from 0.0 to 1.0. Values above 1.0 default to **1.0**, and values below 0.0 default to **0.0**. |
 | colorSpace | colorSpaceManager.ColorSpaceManager \| null | Yes | Standard color gamut object. **null** indicates SRGB. |
 
+<a id="setcolorfilter"></a>
 ## setColorFilter
 
 ```TypeScript
@@ -526,7 +549,7 @@ Sets a color filter for this pen.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| filter | ColorFilter \| null | Yes | Defines a color filter. If **null** is passed in, the color filter is cleared.<br>**Since:** 20 |
+| filter | [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) \| null | Yes | Defines a color filter. If **null** is passed in, the color filter is cleared.<br>**Since:** 20 |
 
 **Error codes:**
 
@@ -534,6 +557,7 @@ Sets a color filter for this pen.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setdither"></a>
 ## setDither
 
 ```TypeScript
@@ -560,6 +584,7 @@ Enables dithering for this pen. Dithering make the drawn color more realistic.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setimagefilter"></a>
 ## setImageFilter
 
 ```TypeScript
@@ -578,7 +603,7 @@ Sets an image filter for this pen.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| filter | ImageFilter \| null | Yes | Image filter. If **null** is passed in, the image filter effect of the pen will be cleared. |
+| filter | [ImageFilter](arkts-arkgraphics2d-drawing-imagefilter-c.md) \| null | Yes | Image filter. If **null** is passed in, the image filter effect of the pen will be cleared. |
 
 **Error codes:**
 
@@ -586,6 +611,7 @@ Sets an image filter for this pen.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setjoinstyle"></a>
 ## setJoinStyle
 
 ```TypeScript
@@ -612,6 +638,7 @@ Sets the join style for this pen. If this API is not called, the default join st
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setmaskfilter"></a>
 ## setMaskFilter
 
 ```TypeScript
@@ -630,7 +657,7 @@ Adds a mask filter for this pen.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| filter | MaskFilter \| null | Yes | Mask filter. If **null** is passed in, the mask filter is cleared.<br>**Since:** 20 |
+| filter | [MaskFilter](arkts-arkgraphics2d-drawing-maskfilter-c.md) \| null | Yes | Mask filter. If **null** is passed in, the mask filter is cleared.<br>**Since:** 20 |
 
 **Error codes:**
 
@@ -638,6 +665,7 @@ Adds a mask filter for this pen.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setmiterlimit"></a>
 ## setMiterLimit
 
 ```TypeScript
@@ -664,6 +692,7 @@ Sets the maximum ratio allowed between the sharp corner length of a polyline and
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setpatheffect"></a>
 ## setPathEffect
 
 ```TypeScript
@@ -682,7 +711,7 @@ Sets the path effect for this pen.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| effect | PathEffect \| null | Yes | Implements a path effect. If **null** is passed in, the path filter is cleared.<br>**Since:** 20 |
+| effect | [PathEffect](arkts-arkgraphics2d-drawing-patheffect-c.md) \| null | Yes | Implements a path effect. If **null** is passed in, the path filter is cleared.<br>**Since:** 20 |
 
 **Error codes:**
 
@@ -690,6 +719,7 @@ Sets the path effect for this pen.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setshadereffect"></a>
 ## setShaderEffect
 
 ```TypeScript
@@ -708,7 +738,7 @@ Sets the shader effect for this pen.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| shaderEffect | ShaderEffect \| null | Yes | **ShaderEffect** object. If **null** is passed in, the shader effect will be cleared.<br>**Since:** 20 |
+| shaderEffect | [ShaderEffect](arkts-arkgraphics2d-drawing-shadereffect-c.md) \| null | Yes | **ShaderEffect** object. If **null** is passed in, the shader effect will be cleared.<br>**Since:** 20 |
 
 **Error codes:**
 
@@ -716,6 +746,7 @@ Sets the shader effect for this pen.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setshadowlayer"></a>
 ## setShadowLayer
 
 ```TypeScript
@@ -734,7 +765,7 @@ Sets a shadow layer for this pen. The shadow layer effect takes effect only when
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| shadowLayer | ShadowLayer \| null | Yes | Implements a shadow layer. If **null** is passed in, the shadow layer is cleared.<br>**Since:** 20 |
+| shadowLayer | [ShadowLayer](arkts-arkgraphics2d-drawing-shadowlayer-c.md) \| null | Yes | Implements a shadow layer. If **null** is passed in, the shadow layer is cleared.<br>**Since:** 20 |
 
 **Error codes:**
 
@@ -742,6 +773,7 @@ Sets a shadow layer for this pen. The shadow layer effect takes effect only when
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setstrokewidth"></a>
 ## setStrokeWidth
 
 ```TypeScript

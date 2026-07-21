@@ -6,6 +6,7 @@
 import { tag } from '@kit.ConnectivityKit';
 ```
 
+<a id="makemimerecord"></a>
 ## makeMimeRecord
 
 ```TypeScript

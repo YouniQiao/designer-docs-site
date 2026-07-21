@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface MapConstructor--><!--Device-unnamed-interface MapConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -14,8 +15,9 @@ new(): Map<any, any>
 
 | Type | Description |
 | --- | --- |
-| [Map](arkts-na-lib-es2015-collection-map-i.md)<any, any> |  |
+| Map&lt;any, any&gt; |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -34,7 +36,7 @@ new <K, V>(entries?: readonly (readonly [K, V])[] | null): Map<K, V>
 
 | Type | Description |
 | --- | --- |
-| [Map](arkts-na-lib-es2015-collection-map-i.md)<K, V> |  |
+| Map&lt;K, V&gt; |  |
 
 ## prototype
 
@@ -42,7 +44,7 @@ new <K, V>(entries?: readonly (readonly [K, V])[] | null): Map<K, V>
 readonly prototype: Map<any, any>
 ```
 
-**Type:** Map<any, any>
+**Type:** Map&lt;any, any&gt;
 
 <!--Device-MapConstructor-readonly prototype: Map<any, any>--><!--Device-MapConstructor-readonly prototype: Map<any, any>-End-->
 

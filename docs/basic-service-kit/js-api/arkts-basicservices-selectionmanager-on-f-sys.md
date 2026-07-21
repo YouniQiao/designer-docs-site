@@ -6,6 +6,7 @@
 import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="on"></a>
 ## on('selectionCompleted')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Registers a callback to listen for the word selection completion event. This API
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selectionCompleted' | Yes | Event type, which is **'selectionCompleted'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SelectionInfo> | Yes | Callback used to return the word selection information.This callback is triggered only when the user selects text using the mouse or touchpad(by double-clicking,triple-clicking, or pressing and sliding the left mouse button) and then presses **Ctrl**. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SelectionInfo&gt; | Yes | Callback used to return the word selection information.This callback is triggered only when the user selects text using the mouse or touchpad(by double-clicking,triple-clicking, or pressing and sliding the left mouse button) and then presses **Ctrl**. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { wifiext } from '@kit.ConnectivityKit';
 ```
 
+<a id="disablehotspot"></a>
 ## disableHotspot
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="updateprinterindiscovery"></a>
 ## updatePrinterInDiscovery
 
 ```TypeScript
@@ -32,7 +33,7 @@ Updates the printer capabilities to the printer discovery list. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

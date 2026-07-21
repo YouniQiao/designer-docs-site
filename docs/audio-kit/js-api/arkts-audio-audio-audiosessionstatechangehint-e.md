@@ -6,7 +6,7 @@ The hint is obtained when an [AudioSessionStateChangedEvent](arkts-audio-audio-a
 
 The hint specifies the action (such as audio pause or volume adjustment) to take on the audio session based on the focus strategy.
 
-For details, see [Audio Session Management](../../../../media/audio/audio-session-management.md).
+For details, see [Audio Session Management](docroot://media/audio/audio-session-management.md).
 
 **Since:** 20
 

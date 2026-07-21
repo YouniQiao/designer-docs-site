@@ -6,6 +6,7 @@
 import { continuationManager } from '@kit.AbilityKit';
 ```
 
+<a id="registercontinuation"></a>
 ## registerContinuation
 
 ```TypeScript
@@ -32,7 +33,7 @@ Registers the continuation management service and obtains a token. This API does
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the token generated after the continuation management service is connected. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the token generated after the continuation management service is connected. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ try {
 ```
 
 
+<a id="registercontinuation-1"></a>
 ## registerContinuation
 
 ```TypeScript
@@ -92,7 +94,7 @@ Registers the continuation management service and obtains a token. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [ContinuationExtraParams](arkts-ability-continuationextraparams-continuationextraparams-i.md) | Yes | Extra parameters used to filter the list of available devices. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the token generated after the continuation management service is connected. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the token generated after the continuation management service is connected. |
 
 **Error codes:**
 
@@ -129,6 +131,7 @@ try {
 ```
 
 
+<a id="registercontinuation-2"></a>
 ## registerContinuation
 
 ```TypeScript
@@ -161,7 +164,7 @@ Registers the continuation management service and obtains a token. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the token generated after the continuation management service is connected. |
+| Promise&lt;number&gt; | Promise used to return the token generated after the continuation management service is connected. |
 
 **Error codes:**
 

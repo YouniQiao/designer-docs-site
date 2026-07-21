@@ -6,6 +6,7 @@
 import { componentUtils } from '@kit.ArkUI';
 ```
 
+<a id="getitemsinshapepath"></a>
 ## getItemsInShapePath
 
 ```TypeScript
@@ -34,5 +35,5 @@ Get the image objects located within the selected area.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ImageItem> | Returns the image objects located within the selected area. |
+| Array&lt;ImageItem&gt; | Returns the image objects located within the selected area. |
 

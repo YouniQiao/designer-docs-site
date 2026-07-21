@@ -6,6 +6,7 @@
 import { backup } from '@kit.CoreFileKit';
 ```
 
+<a id="filesystemservicerequest"></a>
 ## fileSystemServiceRequest
 
 ```TypeScript
@@ -36,7 +37,7 @@ Requests filesystem garbage collection with specified configuration.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The errcode of garbage collection. |
+| Promise&lt;number&gt; | The errcode of garbage collection. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { privacyManager } from '@kit.AbilityKit';
 ```
 
+<a id="on"></a>
 ## on('activeStateChange')
 
 ```TypeScript
@@ -40,8 +41,8 @@ function on(type: 'activeStateChange',
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | 'activeStateChange' | 是 | 订阅事件类型，固定为'activeStateChange'，权限使用状态变更事件。 |
-| permissionList | [Array](../../apis-arkts/arkts-apis/arkts-arkts-collections-array-c.md)<Permissions> | 是 | 订阅的权限名列表。为空时表示订阅所有的权限使用状态变化。传入无效值时返回错误码12100001。<br>取值约束：数组长度不能超过1024。 |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ActiveChangeResponse> | 是 | 回调函数，返回订阅指定权限使用状态变更事件的对象。 |
+| permissionList | Array&lt;Permissions&gt; | 是 | 订阅的权限名列表。为空时表示订阅所有的权限使用状态变化。传入无效值时返回错误码12100001。<br>取值约束：数组长度不能超过1024。 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ActiveChangeResponse&gt; | 是 | 回调函数，返回订阅指定权限使用状态变更事件的对象。 |
 
 **错误码：**
 

@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="pairdevice"></a>
 ## pairDevice
 
 ```TypeScript
@@ -31,7 +32,7 @@ Starts pairing with a remote Bluetooth device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of pairDevice. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of pairDevice. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ try {
 ```
 
 
+<a id="pairdevice-1"></a>
 ## pairDevice
 
 ```TypeScript
@@ -91,7 +93,7 @@ Starts pairing with a remote Bluetooth device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -123,6 +125,7 @@ try {
 ```
 
 
+<a id="pairdevice-2"></a>
 ## pairDevice
 
 ```TypeScript
@@ -151,7 +154,7 @@ Starts pairing with a remote Bluetooth device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

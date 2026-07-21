@@ -14,6 +14,7 @@ Class to be override for external crypto extension ability.
 import { HuksCryptoExtensionCertInfo, HuksCryptoExtensionResultCode, HuksCryptoExtensionParams, HuksCryptoExtensionParam, HuksCryptoExtensionResult } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="onauthukeypin"></a>
 ## onAuthUkeyPin
 
 ```TypeScript
@@ -36,14 +37,15 @@ Callback to be called to verify PIN of the provider handle.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | handle | string | Yes | handle indicates the handle opened by onOpenResource. |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<huksExternalCrypto.HuksExternalCryptoParam> \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
+| params | Array&lt;huksExternalCrypto.HuksExternalCryptoParam&gt; \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800006 - The UKey PIN is not correct. Please check the PIN you entered.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800006 - The UKey PIN is not correct. Please check the PIN you entered.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
 
+<a id="onclearukeypinauthstate"></a>
 ## onClearUkeyPinAuthState
 
 ```TypeScript
@@ -66,14 +68,15 @@ Callback to clear the PIN auth state of the provider handle.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | handle | string | Yes | handle indicates the handle opened by onOpenResource. |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<huksExternalCrypto.HuksExternalCryptoParam> \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
+| params | Array&lt;huksExternalCrypto.HuksExternalCryptoParam&gt; \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
 
+<a id="oncloseresource"></a>
 ## onCloseResource
 
 ```TypeScript
@@ -96,14 +99,15 @@ Callback to be called to close the resource handle.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | handle | string | Yes | handle indicates the handle opened by onOpenResource. |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<huksExternalCrypto.HuksExternalCryptoParam> \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
+| params | Array&lt;huksExternalCrypto.HuksExternalCryptoParam&gt; \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
 
+<a id="onenumcertificates"></a>
 ## onEnumCertificates
 
 ```TypeScript
@@ -125,14 +129,15 @@ Callback to list all certificates of the provider.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<huksExternalCrypto.HuksExternalCryptoParam> \| HuksCryptoExtensionParam[] | No | params indicates the properties of the operation<br>**Since:** 26.0.0 |
+| params | Array&lt;huksExternalCrypto.HuksExternalCryptoParam&gt; \| HuksCryptoExtensionParam[] | No | params indicates the properties of the operation<br>**Since:** 26.0.0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800001 - The UKey does not exist. Possible causes:1. The UKey has been removed.2. The crypto extension maintained an error UKey state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800001 - The UKey does not exist. Possible causes:1. The UKey has been removed.2. The crypto extension maintained an error UKey state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status. |
 
+<a id="onexportcertificate"></a>
 ## onExportCertificate
 
 ```TypeScript
@@ -155,14 +160,15 @@ Callback to export certificates specified by the resource id.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resourceId | string | Yes | resourceId indicates the resource id of the extension. |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<huksExternalCrypto.HuksExternalCryptoParam> \| HuksCryptoExtensionParam[] | No | params indicates the properties of the operation<br>**Since:** 26.0.0 |
+| params | Array&lt;huksExternalCrypto.HuksExternalCryptoParam&gt; \| HuksCryptoExtensionParam[] | No | params indicates the properties of the operation<br>**Since:** 26.0.0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800001 - The UKey does not exist. Possible causes:1. The UKey has been removed.2. The crypto extension maintained an error UKey state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The resourceId does not exist. This indicates that the resourceId has an incorrect device name, application name, or container name. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800001 - The UKey does not exist. Possible causes:1. The UKey has been removed.2. The crypto extension maintained an error UKey state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The resourceId does not exist. This indicates that the resourceId has an incorrect device name, application name, or container name. |
 
+<a id="onexportkeyitem"></a>
 ## onExportKeyItem
 
 ```TypeScript
@@ -190,8 +196,9 @@ Callback to export the public key specified by the resource handle.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.If the function execution fails, the extension needs to set the detailed error information in HuksCryptoExtensionResult.errInfo.HuksCryptoExtensionResult.resultCode may have the following values.0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.If the function execution fails, the extension needs to set the detailed error information in HuksCryptoExtensionResult.errInfo.HuksCryptoExtensionResult.resultCode may have the following values.0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
 
+<a id="onfinishsession"></a>
 ## onFinishSession
 
 ```TypeScript
@@ -220,8 +227,9 @@ Callback to do the finish operation.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
 
+<a id="ongeneratekeyitem"></a>
 ## onGenerateKeyItem
 
 ```TypeScript
@@ -249,8 +257,9 @@ Callback to generate a key pair specified by the resource handle.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
 
+<a id="ongetproperty"></a>
 ## onGetProperty
 
 ```TypeScript
@@ -274,14 +283,15 @@ Callback to be called to do general get operations of the provider.
 | --- | --- | --- | --- |
 | handle | string | Yes | handle indicates the handle opened by onOpenResource. |
 | propertyId | string | Yes | propertyId indicates the name of the property function to be operated as defined in GMT 0016-2023. |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<huksExternalCrypto.HuksExternalCryptoParam> \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
+| params | Array&lt;huksExternalCrypto.HuksExternalCryptoParam&gt; \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
 
+<a id="ongetresourceid"></a>
 ## onGetResourceId
 
 ```TypeScript
@@ -308,8 +318,9 @@ Callback to get the resource ID of the crypto extension.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.If the function execution fails, the extension needs to set the detailed error information in HuksCryptoExtensionResult.errInfo.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.If the function execution fails, the extension needs to set the detailed error information in HuksCryptoExtensionResult.errInfo.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state. |
 
+<a id="ongetukeypinauthstate"></a>
 ## onGetUkeyPinAuthState
 
 ```TypeScript
@@ -332,14 +343,15 @@ Callback to get the PIN auth state of the provider handle.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | handle | string | Yes | handle indicates the handle opened by onOpenResource. |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<huksExternalCrypto.HuksExternalCryptoParam> \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
+| params | Array&lt;huksExternalCrypto.HuksExternalCryptoParam&gt; \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
 
+<a id="onimportcertificate"></a>
 ## onImportCertificate
 
 ```TypeScript
@@ -371,8 +383,9 @@ Callback to import a certificate specified by the resource handle.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.If the function execution fails, the extension needs to set the detailed error information in HuksCryptoExtensionResult.errInfo.HuksCryptoExtensionResult.resultCode may have the following values.0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.If the function execution fails, the extension needs to set the detailed error information in HuksCryptoExtensionResult.errInfo.HuksCryptoExtensionResult.resultCode may have the following values.0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
 
+<a id="onimportwrappedkeyitem"></a>
 ## onImportWrappedKeyItem
 
 ```TypeScript
@@ -399,14 +412,15 @@ Callback to import the wrapped key pair specified by the resource handle.
 | handle | string | Yes | Indicates the resource handle of the wrapped key to be imported. |
 | wrappingHandle | string | Yes | Indicates the resource handle of the key used to unwrap the imported key. |
 | params | [HuksCryptoExtensionParam](arkts-universalkeystore-security-cryptoextensionability-hukscryptoextensionparam-i.md)[] | Yes | Indicates the needed properties for the import wrapped key operation. |
-| wrappedKey | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Indicates the wrapped key data, which format is defined by the crypto extension. |
+| wrappedKey | Uint8Array | Yes | Indicates the wrapped key data, which format is defined by the crypto extension. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.If the function execution fails, the extension needs to set the detailed error information in HuksCryptoExtensionResult.errInfo.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of HUKS service and crypto extension are inconsistent. Due to an exception,the handle held by HUKS service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.If the function execution fails, the extension needs to set the detailed error information in HuksCryptoExtensionResult.errInfo.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey's connection and driver status.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of HUKS service and crypto extension are inconsistent. Due to an exception,the handle held by HUKS service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey. |
 
+<a id="oninitsession"></a>
 ## onInitSession
 
 ```TypeScript
@@ -435,8 +449,9 @@ Callback to do the initialize operation.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
 
+<a id="onopenresource"></a>
 ## onOpenResource
 
 ```TypeScript
@@ -459,14 +474,15 @@ Callback to be called to open the resource handle before crypto operations.NOTE:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resourceId | string | Yes | resourceId indicates the resource id of the provider. |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<huksExternalCrypto.HuksExternalCryptoParam> \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
+| params | Array&lt;huksExternalCrypto.HuksExternalCryptoParam&gt; \| HuksCryptoExtensionParam[] | Yes | params indicates the properties of the operation<br>**Since:** 26.0.0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800001 - The UKey does not exist. Possible causes:1. The UKey has been removed.2. The crypto extension maintained an error UKey state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The resourceId does not exist. This indicates that the resourceId has an incorrect device name, application name, or container name. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800001 - The UKey does not exist. Possible causes:1. The UKey has been removed.2. The crypto extension maintained an error UKey state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800004 - The resourceId does not exist. This indicates that the resourceId has an incorrect device name, application name, or container name. |
 
+<a id="onsetproperty"></a>
 ## onSetProperty
 
 ```TypeScript
@@ -498,8 +514,9 @@ Callback to perform set operations of the provider.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey connection and driver status.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of HUKS service and crypto extension are inconsistent. Due to an exception,the handle held by HUKS service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful.34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - Failed to call the UKey driver interface. Please check the UKey connection and driver status.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of HUKS service and crypto extension are inconsistent. Due to an exception,the handle held by HUKS service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
 
+<a id="onupdatesession"></a>
 ## onUpdateSession
 
 ```TypeScript
@@ -528,5 +545,5 @@ Callback to do update operation.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksCryptoExtensionResult> | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
+| Promise&lt;HuksCryptoExtensionResult&gt; | Promise used to return HuksCryptoExtensionResult.HuksCryptoExtensionResult.resultCode may have the following values:0 - The operation is successful34800000 - An error occurred in the crypto extension. Possible causes:1. The input parameter is invalid.2. The crypto extension encountered an unresolvable error state.34800002 - The UKey driver error. This means an unknown error has occurred in the UKey driver.34800003 - The UKey PIN is not authenticated. Please verify the UKey PIN first.34800004 - The handle does not exist. Possible causes:1. The handle you entered is invalid.2. The states of huks service and crypto extension are inconsistent. Due to an exception,the handle held by huks service was not released.34800005 - The handle is unavailable, possibly due to an inconsistent state between the crypto extension and the UKey.34800007 - The UKey PIN is locked because the maximum allowed number of attempts has been exceeded. |
 

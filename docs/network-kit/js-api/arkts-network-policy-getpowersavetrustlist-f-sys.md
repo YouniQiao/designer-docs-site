@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="getpowersavetrustlist"></a>
 ## getPowerSaveTrustlist
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtain the list of uids that are allowed to access the Internet in power saving 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | the callback of UIDs list. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | the callback of UIDs list. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ policy.getPowerSaveTrustlist((error: BusinessError, data: number[]) => {
 ```
 
 
+<a id="getpowersavetrustlist-1"></a>
 ## getPowerSaveTrustlist
 
 ```TypeScript
@@ -76,7 +78,7 @@ Obtain the list of uids that are allowed to access the Internet in power saving 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | The promise returned by the function. |
+| Promise&lt;Array&lt;number&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.MDMKit';
 ```
 
+<a id="removedisallowedwifilist"></a>
 ## removeDisallowedWifiList
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes disallowed Wi-Fi networks. If some Wi-Fi networks are removed from the d
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| list | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WifiAccessInfo> | Yes | Array of Wi-Fi networks to be removed. The maximum length of the array is 200. |
+| list | Array&lt;WifiAccessInfo&gt; | Yes | Array of Wi-Fi networks to be removed. The maximum length of the array is 200. |
 
 **Error codes:**
 

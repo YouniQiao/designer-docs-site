@@ -14,6 +14,7 @@ Provides APIs to encode strings into byte arrays. Multiple encoding formats are 
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -37,6 +38,7 @@ let textEncoder = new util.TextEncoder();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -66,6 +68,7 @@ let textEncoder = new util.TextEncoder("utf-8");
 
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -101,6 +104,7 @@ let textEncoder = util.TextEncoder.create("utf-8");
 
 ```
 
+<a id="encode"></a>
 ## encode
 
 ```TypeScript
@@ -129,7 +133,7 @@ Encodes the input content in to a Uint8Array object.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Uint8Array object obtained. |
+| Uint8Array | Uint8Array object obtained. |
 
 **Example**
 
@@ -141,6 +145,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="encodeinto"></a>
 ## encodeInto
 
 ```TypeScript
@@ -167,7 +172,7 @@ Encodes the input content into a Uint8Array object.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Uint8Array object obtained. |
+| Uint8Array | Uint8Array object obtained. |
 
 **Example**
 
@@ -179,6 +184,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="encodeinto-1"></a>
 ## encodeInto
 
 ```TypeScript
@@ -202,7 +208,7 @@ Writes the generated UTF-8 encoded text to an array.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | input | string | Yes | String to encode. |
-| dest | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Uint8Array object used to store the UTF-8 encoded text. |
+| dest | Uint8Array | Yes | Uint8Array object used to store the UTF-8 encoded text. |
 
 **Return value:**
 
@@ -222,6 +228,7 @@ console.info("uint8 = " + uint8);
 
 ```
 
+<a id="encodeintouint8array"></a>
 ## encodeIntoUint8Array
 
 ```TypeScript
@@ -243,7 +250,7 @@ Encodes the input content and stores the result into a Uint8Array object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | input | string | Yes | String to encode. |
-| dest | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Uint8Array object used to store the UTF-8 encoded text. |
+| dest | Uint8Array | Yes | Uint8Array object used to store the UTF-8 encoded text. |
 
 **Return value:**
 

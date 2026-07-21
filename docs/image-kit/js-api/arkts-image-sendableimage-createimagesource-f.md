@@ -6,6 +6,7 @@
 import { sendableImage } from '@kit.ImageKit';
 ```
 
+<a id="createimagesource"></a>
 ## createImageSource
 
 ```TypeScript
@@ -28,7 +29,7 @@ Images occupy a large amount of memory. When you finish using an ImageSource ins
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | Image path. Currently, only the application sandbox path is supported.<br>The following formats are supported: .jpg, .png, .gif, .bmp, .webp, .dng [SVG](../../../../reference/apis-image-kit/arkts-apis-image-f.md#svg-tags), and ico. |
+| uri | string | Yes | Image path. Currently, only the application sandbox path is supported.<br>The following formats are supported: .jpg, .png, .gif, .bmp, .webp, .dng [SVG](docroot://reference/apis-image-kit/arkts-apis-image-f.md#svg-tags), and ico. |
 
 **Return value:**
 
@@ -49,6 +50,7 @@ async function Demo(context : Context) {
 ```
 
 
+<a id="createimagesource-1"></a>
 ## createImageSource
 
 ```TypeScript
@@ -94,6 +96,7 @@ async function Demo(context : Context) {
 ```
 
 
+<a id="createimagesource-2"></a>
 ## createImageSource
 
 ```TypeScript
@@ -118,7 +121,7 @@ Images occupy a large amount of memory. When you finish using an ImageSource ins
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Array of image buffers. |
+| buf | ArrayBuffer | Yes | Array of image buffers. |
 
 **Return value:**
 

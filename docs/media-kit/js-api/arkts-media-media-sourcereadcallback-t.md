@@ -22,7 +22,7 @@ This callback function is implemented by applications to handle resource read re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uuid | long | Yes | ID for the resource handle. |
-| requestedOffset | long | Yes | Offset of the current media data relative to the start of the resource. |
-| requestedLength | long | Yes | Length of the current request. The value **-1** indicates reaching the end of theresource. After pushing the data, call[finishLoading](arkts-media-media-mediasourceloadingrequest-i.md#finishloading-1) to notify theplayer that the push is complete. |
+| uuid | number | Yes | ID for the resource handle.  |
+| requestedOffset | number | Yes | Offset of the current media data relative to the start of the resource.  |
+| requestedLength | number | Yes | Length of the current request. The value **-1** indicates reaching the end of the resource. After pushing the data, call [finishLoading](arkts-media-media-mediasourceloadingrequest-i.md#finishloading-1) to notify the player that the push is complete.  |
 

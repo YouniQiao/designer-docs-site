@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getapplicationlabel"></a>
 ## getApplicationLabel
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the name of an application with the specified package name and clone ind
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. If the operation is successful, the application name is returned. Otherwise, an error object is returned. |
+| Promise&lt;string&gt; | Promise used to return the result. If the operation is successful, the application name is returned. Otherwise, an error object is returned. |
 
 **Error codes:**
 

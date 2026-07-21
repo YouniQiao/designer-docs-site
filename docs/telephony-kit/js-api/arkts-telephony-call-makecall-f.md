@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="makecall"></a>
 ## makeCall
 
 ```TypeScript
@@ -27,7 +28,7 @@ Go to the dial screen and the called number is displayed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the called number. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of makeCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of makeCall. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ call.makeCall("138xxxxxxxx", (err: BusinessError) => {
 ```
 
 
+<a id="makecall-1"></a>
 ## makeCall
 
 ```TypeScript
@@ -81,7 +83,7 @@ Go to the dial screen and the called number is displayed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the makeCall. |
+| Promise&lt;void&gt; | The promise returned by the makeCall. |
 
 **Error codes:**
 
@@ -107,6 +109,7 @@ call.makeCall("138xxxxxxxx").then(() => {
 ```
 
 
+<a id="makecall-2"></a>
 ## makeCall
 
 ```TypeScript
@@ -134,7 +137,7 @@ Go to the dial screen and the called number is displayed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - The promise returned by the makeCall. |
+| Promise&lt;void&gt; | - The promise returned by the makeCall. |
 
 **Error codes:**
 
@@ -164,6 +167,7 @@ call.makeCall("138xxxxxxxx", makeOptions).then(() => {
 ```
 
 
+<a id="makecall-3"></a>
 ## makeCall
 
 ```TypeScript
@@ -191,7 +195,7 @@ Go to the dial screen and the called number is displayed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the makeCall. |
+| Promise&lt;void&gt; | The promise returned by the makeCall. |
 
 **Error codes:**
 

@@ -32,6 +32,7 @@ Provides APIs for measuring text metrics, such as text height and width.
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="getparagraphs"></a>
 ## getParagraphs
 
 ```TypeScript
@@ -52,15 +53,16 @@ Converts a styled string into an array of corresponding [Paragraph](../../apis-a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| styledString | [StyledString](arkts-arkui-styled-string-styledstring-c.md) | Yes | Styled string to be converted. |
-| options | [TextLayoutOptions](arkts-arkui-text-common-textlayoutoptions-i.md) | No | Text layout options. |
+| styledString | [StyledString](arkts-arkui-styledstring-c.md) | Yes | Styled string to be converted. |
+| options | [TextLayoutOptions](arkts-arkui-textlayoutoptions-i.md) | No | Text layout options. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Paragraph> | Array of [Paragraph](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-paragraph-c.md) objects. |
+| Array&lt;Paragraph&gt; | Array of [Paragraph](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-paragraph-c.md) objects. |
 
+<a id="measuretext"></a>
 ## measureText
 
 ```TypeScript
@@ -97,6 +99,7 @@ Measures the single-line display width of the specified text. For multi-line tex
 | --- | --- |
 | number | Text width.<br>**NOTE**<br>Floating-point results are rounded up.<br>Unit: px. |
 
+<a id="measuretextsize"></a>
 ## measureTextSize
 
 ```TypeScript
@@ -125,5 +128,5 @@ Measures the width and height of the given single-line text.
 
 | Type | Description |
 | --- | --- |
-| [SizeOptions](arkts-arkui-units-sizeoptions-i.md) | Width and height of the text.<br>**NOTE**<br>If **constraintWidth** is not specified, the floating-point value of the text width will be rounded up.<br>The return values for text width and height are both in px. |
+| [SizeOptions](arkts-arkui-sizeoptions-i.md) | Width and height of the text.<br>**NOTE**<br>If **constraintWidth** is not specified, the floating-point value of the text width will be rounded up.<br>The return values for text width and height are both in px. |
 

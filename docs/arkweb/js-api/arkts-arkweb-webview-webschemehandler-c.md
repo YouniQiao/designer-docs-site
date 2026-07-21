@@ -14,6 +14,7 @@ This class is used to intercept requests for a specified scheme.
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="onrequeststart"></a>
 ## onRequestStart
 
 ```TypeScript
@@ -37,7 +38,7 @@ Callback for handling the request.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (request: WebSchemeHandlerRequest, handler: WebResourceHandler) => boolean | Yes | Callback of handling the request. If callback return false,it means no interception. |
+| callback | (request: WebSchemeHandlerRequest, handler: WebResourceHandler) =&gt; boolean | Yes | Callback of handling the request. If callback return false,it means no interception. |
 
 **Error codes:**
 
@@ -45,6 +46,7 @@ Callback for handling the request.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 
+<a id="onrequeststop"></a>
 ## onRequestStop
 
 ```TypeScript
@@ -65,7 +67,7 @@ Callback when the request is completed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WebSchemeHandlerRequest> | Yes | Callback of request is completed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WebSchemeHandlerRequest&gt; | Yes | Callback of request is completed. |
 
 **Error codes:**
 

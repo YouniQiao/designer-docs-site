@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="getallsimmessages"></a>
 ## getAllSimMessages
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get all SMS records in SIM.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<SimShortMessage>> | Yes | Indicates the callback for getting a{@code SimShortMessage} object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;SimShortMessage&gt;&gt; | Yes | Indicates the callback for getting a{@code SimShortMessage} object. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sms.getAllSimMessages(slotId, (err: BusinessError, data: sms.SimShortMessage[]) 
 ```
 
 
+<a id="getallsimmessages-1"></a>
 ## getAllSimMessages
 
 ```TypeScript
@@ -85,7 +87,7 @@ Get all SMS records in SIM.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<SimShortMessage>> | Returns a {@code SimShortMessage} object. |
+| Promise&lt;Array&lt;SimShortMessage&gt;&gt; | Returns a {@code SimShortMessage} object. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { formAgent } from '@kit.FormKit';
 ```
 
+<a id="requestpublishform"></a>
 ## requestPublishForm
 
 ```TypeScript
@@ -29,7 +30,7 @@ Requests to publish a widget to the widget host. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Publish request, which must contain the following fields:<br>**bundleName**: bundle name of the target widget.<br>**abilityName**: ability of the target widget.<br>parameters:<br>- **ohos.extra.param.key.form_dimension**: dimension of the target widget.<br>- **ohos.extra.param.key.form_name**: name of the target widget.<br>- **ohos.extra.param.key.module_name**: module name of the target widget. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the widget ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the widget ID. |
 
 **Error codes:**
 
@@ -43,6 +44,7 @@ Requests to publish a widget to the widget host. This API uses an asynchronous c
 | [16501008](../errorcode-form.md#16501008-adding-a-widget-to-the-home-screen-times-out) | Waiting for the form addition to the desktop timed out.<br>**Applicable version:** 12 and later |
 
 
+<a id="requestpublishform-1"></a>
 ## requestPublishForm
 
 ```TypeScript
@@ -71,7 +73,7 @@ Requests to publish a widget to the widget host. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the widget ID. |
+| Promise&lt;string&gt; | Promise used to return the widget ID. |
 
 **Error codes:**
 

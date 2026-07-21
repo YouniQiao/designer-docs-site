@@ -6,6 +6,7 @@
 import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
+<a id="getsystemsize"></a>
 ## getSystemSize
 
 ```TypeScript
@@ -28,7 +29,7 @@ Get the system size.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | callback<br>Unit: Byte. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | callback<br>Unit: Byte. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ storageStatistics.getSystemSize((error: BusinessError, number: number) => {
 ```
 
 
+<a id="getsystemsize-1"></a>
 ## getSystemSize
 
 ```TypeScript
@@ -78,7 +80,7 @@ Get the system size.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | return Promise (Unit: Byte) |
+| Promise&lt;number&gt; | return Promise (Unit: Byte) |
 
 **Error codes:**
 

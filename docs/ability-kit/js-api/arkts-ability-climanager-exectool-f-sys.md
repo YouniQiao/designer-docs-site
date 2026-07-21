@@ -6,6 +6,7 @@
 import { cliManager } from '@kit.AbilityKit';
 ```
 
+<a id="exectool"></a>
 ## execTool
 
 ```TypeScript
@@ -35,7 +36,7 @@ Execute a CLI command
 | --- | --- | --- | --- |
 | toolName | string | Yes | The name of target tool. |
 | subCommand | string | Yes | The subCommand of this execute action. |
-| args | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | The input args of tool. |
+| args | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | The input args of tool. |
 | challenge | string | Yes | The unique identifier get from access token manager. |
 | execOptions | [ExecOptions](arkts-ability-climanager-execoptions-i-sys.md) | No | The options of this action. |
 
@@ -43,15 +44,15 @@ Execute a CLI command
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CliSessionInfo> | execute result. |
+| Promise&lt;CliSessionInfo&gt; | execute result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied, interface caller does not have permission"ohos.permission.EXEC_CLI_TOOL". |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. Interface caller is not a system app. |
 | 35600030 | No tool with the specified name exists. |
 | 35600031 | Maximum number of processes has been reached. |
-| 35600050 | System Error. 1. Failed to connect to the system service;2. The system service failed to communicate with the dependent module. |
+| 35600050 | System Error. 1. Connect to system service failed;2. The system service failed to communicate with the dependent module. |
 

@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="deleteform"></a>
 ## deleteForm
 
 ```TypeScript
@@ -29,7 +30,7 @@ Deletes a widget. After this API is called, the application can no longer use th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | formId | string | Yes | Widget ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the widget is deleted, **error** is undefined; otherwise, **error** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the widget is deleted, **error** is undefined; otherwise, **error** is an error object. |
 
 **Error codes:**
 
@@ -45,6 +46,7 @@ Deletes a widget. After this API is called, the application can no longer use th
 | [16501003](../errorcode-form.md#16501003-widget-not-operatable) | The form cannot be operated by the current application. |
 
 
+<a id="deleteform-1"></a>
 ## deleteForm
 
 ```TypeScript
@@ -73,7 +75,7 @@ Deletes a widget. After this API is called, the application can no longer use th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

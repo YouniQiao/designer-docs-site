@@ -16,6 +16,7 @@ Provides APIs to manage the file retrieval result.
 import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -62,6 +63,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getallobjects"></a>
 ## getAllObjects
 
 ```TypeScript
@@ -80,7 +82,7 @@ Obtains all the file assets in the result set. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<T>> | Promise used to return all the assets in the result set. |
+| Promise&lt;Array&lt;T&gt;&gt; | Promise used to return all the assets in the result set. |
 
 **Error codes:**
 
@@ -110,6 +112,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getcount"></a>
 ## getCount
 
 ```TypeScript
@@ -158,6 +161,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getfirstobject"></a>
 ## getFirstObject
 
 ```TypeScript
@@ -176,7 +180,7 @@ Obtains the first asset in the result set. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the first object in the result set. |
+| Promise&lt;T&gt; | Promise used to return the first object in the result set. |
 
 **Error codes:**
 
@@ -206,6 +210,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getlastobject"></a>
 ## getLastObject
 
 ```TypeScript
@@ -224,7 +229,7 @@ Obtains the last asset in the result set. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the last object in the result set. |
+| Promise&lt;T&gt; | Promise used to return the last object in the result set. |
 
 **Error codes:**
 
@@ -254,6 +259,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getnextobject"></a>
 ## getNextObject
 
 ```TypeScript
@@ -274,7 +280,7 @@ Before using this API, you must use [isAfterLast()](arkts-medialibrary-sendablep
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the next object in the result set. |
+| Promise&lt;T&gt; | Promise used to return the next object in the result set. |
 
 **Error codes:**
 
@@ -305,6 +311,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getobjectbyposition"></a>
 ## getObjectByPosition
 
 ```TypeScript
@@ -329,7 +336,7 @@ Obtains the asset with the given index in the result set. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the asset obtained. |
+| Promise&lt;T&gt; | Promise used to return the asset obtained. |
 
 **Error codes:**
 
@@ -360,6 +367,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="isafterlast"></a>
 ## isAfterLast
 
 ```TypeScript

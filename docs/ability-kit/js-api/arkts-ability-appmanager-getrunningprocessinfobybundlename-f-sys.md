@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="getrunningprocessinfobybundlename"></a>
 ## getRunningProcessInfoByBundleName
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains information about the running processes by bundle name. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ProcessInformation>> | Yes | Callback used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ProcessInformation&gt;&gt; | Yes | Callback used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ try {
 ```
 
 
+<a id="getrunningprocessinfobybundlename-1"></a>
 ## getRunningProcessInfoByBundleName
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains information about the running processes by bundle name and user ID. This
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ProcessInformation>> | Yes | Callback used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ProcessInformation&gt;&gt; | Yes | Callback used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 
@@ -122,6 +124,7 @@ try {
 ```
 
 
+<a id="getrunningprocessinfobybundlename-2"></a>
 ## getRunningProcessInfoByBundleName
 
 ```TypeScript
@@ -148,7 +151,7 @@ Obtains information about the running processes by bundle name. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProcessInformation>> | Promise used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
+| Promise&lt;Array&lt;ProcessInformation&gt;&gt; | Promise used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 
@@ -181,6 +184,7 @@ try {
 ```
 
 
+<a id="getrunningprocessinfobybundlename-3"></a>
 ## getRunningProcessInfoByBundleName
 
 ```TypeScript
@@ -208,7 +212,7 @@ Obtains information about the running processes by bundle name and user ID. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProcessInformation>> | Promise used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
+| Promise&lt;Array&lt;ProcessInformation&gt;&gt; | Promise used to return the API call result and the process running information. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 

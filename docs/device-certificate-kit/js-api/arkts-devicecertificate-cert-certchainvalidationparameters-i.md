@@ -20,7 +20,7 @@ import { cert } from '@kit.DeviceCertificateKit';
 allowDownloadIntermediateCa?: boolean
 ```
 
-Whether to allow the application to download the missing intermediate CA certificate from the network.**true** means yes; **false** otherwise. The default value is **false**.The download address is obtained from the certificate AIA extension. Only HTTP is supported. To use the network for download, you need to request the **ohos.permission.INTERNET** permission. For details about the permission configuration, see [Declaring Permissions](../../../../security/AccessToken/declare-permissions.md).
+Whether to allow the application to download the missing intermediate CA certificate from the network.**true** means yes; **false** otherwise. The default value is **false**.The download address is obtained from the certificate AIA extension. Only HTTP is supported. To use the network for download, you need to request the **ohos.permission.INTERNET** permission. For details about the permission configuration, see [Declaring Permissions](docroot://security/AccessToken/declare-permissions.md).
 
 **Type:** boolean
 
@@ -42,7 +42,7 @@ certCRLs?: Array<CertCRLCollection>
 
 CRL collections used to check whether the certificate is revoked.
 
-**Type:** Array<CertCRLCollection>
+**Type:** Array&lt;CertCRLCollection&gt;
 
 **Since:** 11
 
@@ -78,7 +78,7 @@ keyUsage?: Array<KeyUsageType>
 
 Usage of the key in the certificate to be validated.
 
-**Type:** Array<KeyUsageType>
+**Type:** Array&lt;KeyUsageType&gt;
 
 **Since:** 12
 
@@ -150,7 +150,7 @@ trustAnchors: Array<X509TrustAnchor>
 
 List of trusted anchors.
 
-**Type:** Array<X509TrustAnchor>
+**Type:** Array&lt;X509TrustAnchor&gt;
 
 **Since:** 11
 

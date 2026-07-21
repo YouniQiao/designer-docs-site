@@ -30,7 +30,7 @@ Options for fetching files based on the attributes in columns. If this parameter
 
 fetchColumns: ['uri', 'title']
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 

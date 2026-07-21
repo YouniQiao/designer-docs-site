@@ -4,7 +4,7 @@
 export type ShortcutWant = _ShortcutWant
 ```
 
-Defines the target [wants](../../../../quick-start/module-configuration-file.md#wants) defined in the shortcut configuration.
+Defines the target [wants](docroot://quick-start/module-configuration-file.md#wants) defined in the shortcut configuration.
 
 **Since:** 20
 

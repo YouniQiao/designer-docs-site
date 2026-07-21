@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="notifyformsvisible"></a>
 ## notifyFormsVisible
 
 ```TypeScript
@@ -28,9 +29,9 @@ Instructs the widgets to make themselves visible. This API uses an asynchronous 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of widget IDs. |
+| formIds | Array&lt;string&gt; | Yes | List of widget IDs. |
 | isVisible | boolean | Yes | Whether the widget is visible.<br>**true**: The widget is visible.<br>**false**: The widget is invisible. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the notification is sent,**error** is undefined; otherwise, **error** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the notification is sent,**error** is undefined; otherwise, **error** is an error object. |
 
 **Error codes:**
 
@@ -45,6 +46,7 @@ Instructs the widgets to make themselves visible. This API uses an asynchronous 
 | [16501003](../errorcode-form.md#16501003-widget-not-operatable) | The form cannot be operated by the current application. |
 
 
+<a id="notifyformsvisible-1"></a>
 ## notifyFormsVisible
 
 ```TypeScript
@@ -67,14 +69,14 @@ Instructs the widgets to make themselves visible. This API uses a promise to ret
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of widget IDs. |
+| formIds | Array&lt;string&gt; | Yes | List of widget IDs. |
 | isVisible | boolean | Yes | Whether the widget is visible.<br>**true**: The widget is visible.<br>**false**: The widget is invisible. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Defines an object that stores the response to an HTTP request.
 import { http } from '@kit.NetworkKit';
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -34,7 +35,7 @@ Disables a cache and deletes the data in it.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of delete. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of delete. |
 
 **Example**
 
@@ -88,6 +89,7 @@ httpRequest.request("EXAMPLE_URL").then(data => {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -108,7 +110,7 @@ Disables a cache and deletes the data in it.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the delete. |
+| Promise&lt;void&gt; | The promise returned by the delete. |
 
 **Example**
 
@@ -150,6 +152,7 @@ httpRequest.request("EXAMPLE_URL").then(data => {
 
 ```
 
+<a id="flush"></a>
 ## flush
 
 ```TypeScript
@@ -170,7 +173,7 @@ Writes data in the cache to the file system so that all the cached data can be a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of flush. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of flush. |
 
 **Example**
 
@@ -222,6 +225,7 @@ httpRequest.request("EXAMPLE_URL", (err: BusinessError, data: http.HttpResponse)
 
 ```
 
+<a id="flush-1"></a>
 ## flush
 
 ```TypeScript
@@ -242,7 +246,7 @@ Writes data in the cache to the file system so that all the cached data can be a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the flush. |
+| Promise&lt;void&gt; | The promise returned by the flush. |
 
 **Example**
 

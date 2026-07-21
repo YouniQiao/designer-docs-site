@@ -16,6 +16,7 @@ System sound manager object.
 import { systemSoundManager } from '@kit.AudioKit';
 ```
 
+<a id="addcustomizedtone"></a>
 ## addCustomizedTone
 
 ```TypeScript
@@ -46,7 +47,7 @@ Add customized tone into ringtone library.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Tone uri after adding into ringtone library. |
+| Promise&lt;string&gt; | Tone uri after adding into ringtone library. |
 
 **Error codes:**
 
@@ -89,6 +90,7 @@ systemSoundManagerInstance.addCustomizedTone(context, toneAttrs, path).then((val
 
 ```
 
+<a id="addcustomizedtone-1"></a>
 ## addCustomizedTone
 
 ```TypeScript
@@ -124,7 +126,7 @@ Add customized tone into ringtone library.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Tone uri after adding into ringtone library. |
+| Promise&lt;string&gt; | Tone uri after adding into ringtone library. |
 
 **Error codes:**
 
@@ -169,6 +171,7 @@ systemSoundManagerInstance.addCustomizedTone(context, toneAttrs, fd, offset, len
 
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -195,7 +198,7 @@ Close fd.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result of close fd. |
+| Promise&lt;void&gt; | Promise used to return the result of close fd. |
 
 **Error codes:**
 
@@ -224,6 +227,7 @@ systemSoundManagerInstance.close(fd).then(() => {
 
 ```
 
+<a id="getalarmtoneattrlist"></a>
 ## getAlarmToneAttrList
 
 ```TypeScript
@@ -250,7 +254,7 @@ Gets attribute list of alarm tones.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneAttrsArray> | Promise used to return attribute list of system tone. |
+| Promise&lt;ToneAttrsArray&gt; | Promise used to return attribute list of system tone. |
 
 **Error codes:**
 
@@ -278,6 +282,7 @@ systemSoundManagerInstance.getAlarmToneAttrList(context).then((value: systemSoun
 
 ```
 
+<a id="getalarmtoneuri"></a>
 ## getAlarmToneUri
 
 ```TypeScript
@@ -304,7 +309,7 @@ Gets uri of the current alarm tone.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return uri of current alarm tone. |
+| Promise&lt;string&gt; | Promise used to return uri of current alarm tone. |
 
 **Error codes:**
 
@@ -332,6 +337,7 @@ systemSoundManagerInstance.getAlarmToneUri(context).then((value: string) => {
 
 ```
 
+<a id="getcurrentringtoneattribute"></a>
 ## getCurrentRingtoneAttribute
 
 ```TypeScript
@@ -358,7 +364,7 @@ Gets the ringtone attribute which is in use.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneAttrs> | Promise used to return the ringtone attribute in system. |
+| Promise&lt;ToneAttrs&gt; | Promise used to return the ringtone attribute in system. |
 
 **Error codes:**
 
@@ -383,6 +389,7 @@ systemSoundManagerInstance.getCurrentRingtoneAttribute(type).then((value: system
 
 ```
 
+<a id="getdefaultalarmtoneattrs"></a>
 ## getDefaultAlarmToneAttrs
 
 ```TypeScript
@@ -409,7 +416,7 @@ Gets attributes of the default alarm tone.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneAttrs> | Promise used to return attributes of the default alarm tone. |
+| Promise&lt;ToneAttrs&gt; | Promise used to return attributes of the default alarm tone. |
 
 **Error codes:**
 
@@ -437,6 +444,7 @@ systemSoundManagerInstance.getDefaultAlarmToneAttrs(context).then((value: system
 
 ```
 
+<a id="getdefaultringtoneattrs"></a>
 ## getDefaultRingtoneAttrs
 
 ```TypeScript
@@ -464,7 +472,7 @@ Gets attributes of the default ringtone.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneAttrs> | Promise used to return attributes of the default ringtone. |
+| Promise&lt;ToneAttrs&gt; | Promise used to return attributes of the default ringtone. |
 
 **Error codes:**
 
@@ -493,6 +501,7 @@ systemSoundManagerInstance.getDefaultRingtoneAttrs(context, type).then((value: s
 
 ```
 
+<a id="getdefaultsystemtoneattrs"></a>
 ## getDefaultSystemToneAttrs
 
 ```TypeScript
@@ -520,7 +529,7 @@ Gets attributes of the default system tone.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneAttrs> | Promise used to return attributes of the default system tone. |
+| Promise&lt;ToneAttrs&gt; | Promise used to return attributes of the default system tone. |
 
 **Error codes:**
 
@@ -549,6 +558,7 @@ systemSoundManagerInstance.getDefaultSystemToneAttrs(context, type).then((value:
 
 ```
 
+<a id="gethapticsattrssyncedwithtone"></a>
 ## getHapticsAttrsSyncedWithTone
 
 ```TypeScript
@@ -576,7 +586,7 @@ Get attributes of haptics which is synchronized with one tone. If no haptics is 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneHapticsAttrs> | Promise used to return ToneHapticsAttrs. |
+| Promise&lt;ToneHapticsAttrs&gt; | Promise used to return ToneHapticsAttrs. |
 
 **Error codes:**
 
@@ -607,6 +617,7 @@ systemSoundManagerInstance.getHapticsAttrsSyncedWithTone(context, toneUri).then(
 
 ```
 
+<a id="getmockhapticringtoneplayer"></a>
 ## getMockHapticRingtonePlayer
 
 ```TypeScript
@@ -636,7 +647,7 @@ Obtains a mock haptic ringtone player for playing vibration files and their corr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RingtonePlayer \| null> | Promise used to return a ringtone player instance,or null when an error happens. |
+| Promise&lt;RingtonePlayer \| null&gt; | Promise used to return a ringtone player instance,or null when an error happens. |
 
 **Error codes:**
 
@@ -646,6 +657,7 @@ Obtains a mock haptic ringtone player for playing vibration files and their corr
 | [20700002](../errorcode-audio-ringtone-sys.md#20700002-parameter-check-failed) | Parameter verification failed. The hapticUri does not exist or is incorrectly formatted. Ensure it is a JSON file and that it exists in the system's file system. |
 | [5400103](../../apis-media-kit/errorcode-media.md#5400103-io-error) | I/O error. The ringtone database access timed out or encountered an error.It is recommended to restart your phone. |
 
+<a id="getmockhapticringtoneplayer-1"></a>
 ## getMockHapticRingtonePlayer
 
 ```TypeScript
@@ -676,7 +688,7 @@ Obtains a mock haptic ringtone player for playing vibration files and their corr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RingtonePlayer \| null> | Promise used to return a ringtone player instance,or null when an error happens. |
+| Promise&lt;RingtonePlayer \| null&gt; | Promise used to return a ringtone player instance,or null when an error happens. |
 
 **Error codes:**
 
@@ -686,6 +698,7 @@ Obtains a mock haptic ringtone player for playing vibration files and their corr
 | [20700002](../errorcode-audio-ringtone-sys.md#20700002-parameter-check-failed) | Parameter verification failed. Possible causes:1.The type exceeds the valid range, please use the RingtoneType enum for input.2.The ringtoneUri does not exist or is incorrectly formatted, please use the ringtoneUri returned by the {@link SystemSoundManager#addCustomizedTone}. |
 | [5400103](../../apis-media-kit/errorcode-media.md#5400103-io-error) | I/O error. The ringtone database access timed out or encountered an error.It is recommended to restart your phone. |
 
+<a id="getringtoneattrlist"></a>
 ## getRingtoneAttrList
 
 ```TypeScript
@@ -713,7 +726,7 @@ Gets attribute list of ringtones.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneAttrsArray> | Promise used to return attribute list of ringtone. |
+| Promise&lt;ToneAttrsArray&gt; | Promise used to return attribute list of ringtone. |
 
 **Error codes:**
 
@@ -742,6 +755,7 @@ systemSoundManagerInstance.getRingtoneAttrList(context, type).then((value: syste
 
 ```
 
+<a id="getringtoneplayer"></a>
 ## getRingtonePlayer
 
 ```TypeScript
@@ -769,7 +783,7 @@ Gets the ringtone player.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RingtonePlayer> | Promise used to return a ringtone player instance. |
+| Promise&lt;RingtonePlayer&gt; | Promise used to return a ringtone player instance. |
 
 **Error codes:**
 
@@ -799,6 +813,7 @@ systemSoundManagerInstance.getRingtonePlayer(context, type).then((value: systemS
 
 ```
 
+<a id="getringtoneuri"></a>
 ## getRingtoneUri
 
 ```TypeScript
@@ -826,7 +841,7 @@ Gets the ringtone uri.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the ringtone uri maintained in system. |
+| Promise&lt;string&gt; | Promise used to return the ringtone uri maintained in system. |
 
 **Error codes:**
 
@@ -855,6 +870,7 @@ systemSoundManagerInstance.getRingtoneUri(context, type).then((value: string) =>
 
 ```
 
+<a id="getsystemringtoneplayer"></a>
 ## getSystemRingtonePlayer
 
 ```TypeScript
@@ -881,7 +897,7 @@ Gets the ringtone player.
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Current application context. |
 | type | [RingtoneType](arkts-audio-systemsoundmanager-ringtonetype-e-sys.md) | Yes | Ringtone type to get. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RingtonePlayer> | Yes | Callback used to return a ringtone player instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RingtonePlayer&gt; | Yes | Callback used to return a ringtone player instance. |
 
 **Example**
 
@@ -906,6 +922,7 @@ systemSoundManagerInstance.getSystemRingtonePlayer(context, type, (err: Business
 
 ```
 
+<a id="getsystemringtoneplayer-1"></a>
 ## getSystemRingtonePlayer
 
 ```TypeScript
@@ -937,7 +954,7 @@ Gets the ringtone player.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RingtonePlayer> | Promise used to return a ringtone player instance. |
+| Promise&lt;RingtonePlayer&gt; | Promise used to return a ringtone player instance. |
 
 **Example**
 
@@ -960,6 +977,7 @@ systemSoundManagerInstance.getSystemRingtonePlayer(context, type).then((value: s
 
 ```
 
+<a id="getsystemringtoneuri"></a>
 ## getSystemRingtoneUri
 
 ```TypeScript
@@ -986,7 +1004,7 @@ Gets the ringtone uri.
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Current application context. |
 | type | [RingtoneType](arkts-audio-systemsoundmanager-ringtonetype-e-sys.md) | Yes | Ringtone type to get. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the ringtone uri maintained in system. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the ringtone uri maintained in system. |
 
 **Example**
 
@@ -1009,6 +1027,7 @@ systemSoundManagerInstance.getSystemRingtoneUri(context, type, (err: BusinessErr
 
 ```
 
+<a id="getsystemringtoneuri-1"></a>
 ## getSystemRingtoneUri
 
 ```TypeScript
@@ -1040,7 +1059,7 @@ Gets the ringtone uri.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the ringtone uri maintained in system. |
+| Promise&lt;string&gt; | Promise used to return the ringtone uri maintained in system. |
 
 **Example**
 
@@ -1061,6 +1080,7 @@ systemSoundManagerInstance.getSystemRingtoneUri(context, type).then((value: stri
 
 ```
 
+<a id="getsystemtoneattrlist"></a>
 ## getSystemToneAttrList
 
 ```TypeScript
@@ -1088,7 +1108,7 @@ Gets attribute list of alarm tones.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneAttrsArray> | Promise used to return attribute list of system tone. |
+| Promise&lt;ToneAttrsArray&gt; | Promise used to return attribute list of system tone. |
 
 **Error codes:**
 
@@ -1117,6 +1137,7 @@ systemSoundManagerInstance.getSystemToneAttrList(context, type).then((value: sys
 
 ```
 
+<a id="getsystemtoneplayer"></a>
 ## getSystemTonePlayer
 
 ```TypeScript
@@ -1144,7 +1165,7 @@ Gets the system tone player.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SystemTonePlayer> | Promise used to return the SystemTonePlayer. |
+| Promise&lt;SystemTonePlayer&gt; | Promise used to return the SystemTonePlayer. |
 
 **Error codes:**
 
@@ -1174,6 +1195,7 @@ systemSoundManagerInstance.getSystemTonePlayer(context, type).then((value: syste
 
 ```
 
+<a id="getsystemtoneuri"></a>
 ## getSystemToneUri
 
 ```TypeScript
@@ -1201,7 +1223,7 @@ Gets the system tone uri.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the system tone maintained in system. |
+| Promise&lt;string&gt; | Promise used to return the system tone maintained in system. |
 
 **Error codes:**
 
@@ -1230,6 +1252,7 @@ systemSoundManagerInstance.getSystemToneUri(context, type).then((value: string) 
 
 ```
 
+<a id="gettonehapticslist"></a>
 ## getToneHapticsList
 
 ```TypeScript
@@ -1257,7 +1280,7 @@ Get haptics list.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneHapticsAttrsArray> | Promise used to return ToneHapticsAttrsArray. |
+| Promise&lt;ToneHapticsAttrsArray&gt; | Promise used to return ToneHapticsAttrsArray. |
 
 **Error codes:**
 
@@ -1286,6 +1309,7 @@ systemSoundManagerInstance.getToneHapticsList(context, false).then((value: syste
 
 ```
 
+<a id="gettonehapticssettings"></a>
 ## getToneHapticsSettings
 
 ```TypeScript
@@ -1313,7 +1337,7 @@ Get haptics settings.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ToneHapticsSettings> | Promise used to return results of this call. |
+| Promise&lt;ToneHapticsSettings&gt; | Promise used to return results of this call. |
 
 **Error codes:**
 
@@ -1343,6 +1367,7 @@ systemSoundManagerInstance.getToneHapticsSettings(context, type).then((value: sy
 
 ```
 
+<a id="openalarmtone"></a>
 ## openAlarmTone
 
 ```TypeScript
@@ -1370,7 +1395,7 @@ Open alarm tone file.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return fd. |
+| Promise&lt;number&gt; | Promise used to return fd. |
 
 **Error codes:**
 
@@ -1400,6 +1425,7 @@ systemSoundManagerInstance.openAlarmTone(context, uri).then((value: number) => {
 
 ```
 
+<a id="opentonehaptics"></a>
 ## openToneHaptics
 
 ```TypeScript
@@ -1427,7 +1453,7 @@ Open haptics.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return fd. |
+| Promise&lt;number&gt; | Promise used to return fd. |
 
 **Error codes:**
 
@@ -1458,6 +1484,7 @@ systemSoundManagerInstance.openToneHaptics(context, hapticsUri).then((value: num
 
 ```
 
+<a id="opentonelist"></a>
 ## openToneList
 
 ```TypeScript
@@ -1478,13 +1505,13 @@ Open tone list in batch.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uriList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of uri to open. The length must be no more than 1024. |
+| uriList | Array&lt;string&gt; | Yes | List of uri to open. The length must be no more than 1024. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<[string, number, SystemSoundError]>> | Promise used to return results of this operation. In each returned array number, the first item is uri of tone, the second item is fd, and the third item is error code. If the uri open failed, the fd will be -1, and the reason is indicated by the error code. |
+| Promise&lt;Array&lt;[string, number, SystemSoundError]&gt;&gt; | Promise used to return results of this operation. In each returned array number, the first item is uri of tone, the second item is fd, and the third item is error code. If the uri open failed, the fd will be -1, and the reason is indicated by the error code. |
 
 **Error codes:**
 
@@ -1514,6 +1541,7 @@ systemSoundManagerInstance.getCurrentRingtoneAttribute(type).then((toneAttrs) =>
 
 ```
 
+<a id="removecustomizedtone"></a>
 ## removeCustomizedTone
 
 ```TypeScript
@@ -1543,7 +1571,7 @@ Remove customized tone in ringtone library.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return removing result. |
+| Promise&lt;void&gt; | Promise used to return removing result. |
 
 **Error codes:**
 
@@ -1574,6 +1602,7 @@ systemSoundManagerInstance.removeCustomizedTone(context, uri).then(() => {
 
 ```
 
+<a id="removecustomizedtonelist"></a>
 ## removeCustomizedToneList
 
 ```TypeScript
@@ -1596,13 +1625,13 @@ Remove customized tone list in batch.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uriList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Uri list to remove. The length must be no more than 1024. |
+| uriList | Array&lt;string&gt; | Yes | Uri list to remove. The length must be no more than 1024. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<[string, SystemSoundError]>> | Promise used to return removing result array.In each array memeber, the first item is the tone uri, and the second item is the error code. |
+| Promise&lt;Array&lt;[string, SystemSoundError]&gt;&gt; | Promise used to return removing result array.In each array memeber, the first item is the tone uri, and the second item is the error code. |
 
 **Error codes:**
 
@@ -1633,6 +1662,7 @@ systemSoundManagerInstance.getCurrentRingtoneAttribute(type).then((toneAttrs) =>
 
 ```
 
+<a id="setalarmtoneuri"></a>
 ## setAlarmToneUri
 
 ```TypeScript
@@ -1660,7 +1690,7 @@ Sets uri of the current alarm tone.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return result of set alarm tone. |
+| Promise&lt;void&gt; | Promise used to return result of set alarm tone. |
 
 **Error codes:**
 
@@ -1690,6 +1720,7 @@ systemSoundManagerInstance.setAlarmToneUri(context, uri).then(() => {
 
 ```
 
+<a id="setringtoneuri"></a>
 ## setRingtoneUri
 
 ```TypeScript
@@ -1718,7 +1749,7 @@ Sets the ringtone uri to system.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the set uri result. |
+| Promise&lt;void&gt; | Promise used to return the set uri result. |
 
 **Error codes:**
 
@@ -1748,6 +1779,7 @@ systemSoundManagerInstance.setRingtoneUri(context, uri, type).then(() => {
 
 ```
 
+<a id="setsystemringtoneuri"></a>
 ## setSystemRingtoneUri
 
 ```TypeScript
@@ -1775,7 +1807,7 @@ Sets the ringtone uri to system.
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Current application context. |
 | uri | string | Yes | Ringtone uri to set. |
 | type | [RingtoneType](arkts-audio-systemsoundmanager-ringtonetype-e-sys.md) | Yes | Ringtone type to set. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the set uri result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the set uri result. |
 
 **Example**
 
@@ -1799,6 +1831,7 @@ systemSoundManagerInstance.setSystemRingtoneUri(context, uri, type, (err: Busine
 
 ```
 
+<a id="setsystemringtoneuri-1"></a>
 ## setSystemRingtoneUri
 
 ```TypeScript
@@ -1831,7 +1864,7 @@ Sets the ringtone uri to system.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the set uri result. |
+| Promise&lt;void&gt; | Promise used to return the set uri result. |
 
 **Example**
 
@@ -1853,6 +1886,7 @@ systemSoundManagerInstance.setSystemRingtoneUri(context, uri, type).then(() => {
 
 ```
 
+<a id="setsystemtoneuri"></a>
 ## setSystemToneUri
 
 ```TypeScript
@@ -1881,7 +1915,7 @@ Sets the system tone uri to system.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result of set system tone uri. |
+| Promise&lt;void&gt; | Promise used to return the result of set system tone uri. |
 
 **Error codes:**
 
@@ -1911,6 +1945,7 @@ systemSoundManagerInstance.setSystemToneUri(context, uri, type).then(() => {
 
 ```
 
+<a id="settonehapticssettings"></a>
 ## setToneHapticsSettings
 
 ```TypeScript
@@ -1939,7 +1974,7 @@ Set haptics settings.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return results of this call. |
+| Promise&lt;void&gt; | Promise used to return results of this call. |
 
 **Error codes:**
 

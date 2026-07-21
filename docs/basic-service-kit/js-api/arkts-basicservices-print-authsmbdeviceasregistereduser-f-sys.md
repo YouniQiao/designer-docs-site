@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="authsmbdeviceasregistereduser"></a>
 ## authSmbDeviceAsRegisteredUser
 
 ```TypeScript
@@ -38,7 +39,7 @@ Authenticate SMB device as registered user and get available printers.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PrinterInformation[]> | Promise that resolves with the list of available printers. |
+| Promise&lt;PrinterInformation[]&gt; | Promise that resolves with the list of available printers. |
 
 **Error codes:**
 

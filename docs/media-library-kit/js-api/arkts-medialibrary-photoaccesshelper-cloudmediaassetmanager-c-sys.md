@@ -16,6 +16,7 @@ A class used for cloud media asset management. It is used to manage download tas
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="canceldownloadcloudmedia"></a>
 ## cancelDownloadCloudMedia
 
 ```TypeScript
@@ -38,7 +39,7 @@ Cancels a task that downloads cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="canceldownloadspecificcloudmedia"></a>
 ## cancelDownloadSpecificCloudMedia
 
 ```TypeScript
@@ -92,7 +94,7 @@ Cancels a batch download for the specified cloud media assets. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -121,6 +123,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="getcloudmediaassetmanagerinstance"></a>
 ## getCloudMediaAssetManagerInstance
 
 ```TypeScript
@@ -173,6 +176,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="getcloudmediaassetstatus"></a>
 ## getCloudMediaAssetStatus
 
 ```TypeScript
@@ -195,7 +199,7 @@ Obtains the status of a task that downloads cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CloudMediaAssetStatus> | Promise used to return the task status. |
+| Promise&lt;CloudMediaAssetStatus&gt; | Promise used to return the task status. |
 
 **Error codes:**
 
@@ -226,6 +230,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="offdownloadprogresschange"></a>
 ## offDownloadProgressChange
 
 ```TypeScript
@@ -248,7 +253,7 @@ Unregisters a callback to monitor changes in the progress of a batch download fo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CloudAssetDownloadProgressInfo> | No | Callback to unregister, which is registered by [onDownloadProgressChange](photoAccessHelper.CloudMediaAssetManager.on). If this parameter is left empty, all progress-related callbacks are unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CloudAssetDownloadProgressInfo&gt; | No | Callback to unregister, which is registered by [onDownloadProgressChange](photoAccessHelper.CloudMediaAssetManager.on). If this parameter is left empty, all progress-related callbacks are unregistered. |
 
 **Error codes:**
 
@@ -274,6 +279,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="ondownloadprogresschange"></a>
 ## onDownloadProgressChange
 
 ```TypeScript
@@ -296,7 +302,7 @@ Registers a callback to monitor changes in the progress of a batch download for 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CloudAssetDownloadProgressInfo> | Yes | Callback to register. The callback returns progress information of the batch download. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CloudAssetDownloadProgressInfo&gt; | Yes | Callback to register. The callback returns progress information of the batch download. |
 
 **Error codes:**
 
@@ -326,6 +332,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="pausedownloadcloudmedia"></a>
 ## pauseDownloadCloudMedia
 
 ```TypeScript
@@ -348,7 +355,7 @@ Suspends a task that downloads cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -374,6 +381,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="pausedownloadspecificcloudmedia"></a>
 ## pauseDownloadSpecificCloudMedia
 
 ```TypeScript
@@ -402,7 +410,7 @@ Pauses a batch download for the specified cloud media assets. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -431,6 +439,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="querydownloadspecificcloudmediadetails"></a>
 ## queryDownloadSpecificCloudMediaDetails
 
 ```TypeScript
@@ -459,7 +468,7 @@ Obtains the details of a batch download for cloud media assets. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CloudAssetDownloadStatus> | Promise used to return the details obtained. |
+| Promise&lt;CloudAssetDownloadStatus&gt; | Promise used to return the details obtained. |
 
 **Error codes:**
 
@@ -490,6 +499,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="querydownloadspecificcloudmediataskcount"></a>
 ## queryDownloadSpecificCloudMediaTaskCount
 
 ```TypeScript
@@ -518,7 +528,7 @@ Obtains the number of batch download tasks for cloud media assets. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of batch download tasks. |
+| Promise&lt;number&gt; | Promise used to return the number of batch download tasks. |
 
 **Error codes:**
 
@@ -549,6 +559,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="resumedownloadspecificcloudmedia"></a>
 ## resumeDownloadSpecificCloudMedia
 
 ```TypeScript
@@ -577,7 +588,7 @@ Resumes a batch download for the specified cloud media assets. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -606,6 +617,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="retaincloudmediaasset"></a>
 ## retainCloudMediaAsset
 
 ```TypeScript
@@ -634,7 +646,7 @@ Deletes local metadata and files of cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -661,6 +673,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="startdownloadcloudmedia"></a>
 ## startDownloadCloudMedia
 
 ```TypeScript
@@ -689,7 +702,7 @@ Starts or resumes a task to download cloud media assets.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -716,6 +729,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="startdownloadspecificcloudmedia"></a>
 ## startDownloadSpecificCloudMedia
 
 ```TypeScript
@@ -744,7 +758,7 @@ Starts a batch download for the specified cloud media assets. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Map<string, CloudAssetDownloadCode>> | Promise used to return a map, where each key is a URI and its value indicates the status of that individual download item. |
+| Promise&lt;Map&lt;string, CloudAssetDownloadCode&gt;&gt; | Promise used to return a map, where each key is a URI and its value indicates the status of that individual download item. |
 
 **Error codes:**
 

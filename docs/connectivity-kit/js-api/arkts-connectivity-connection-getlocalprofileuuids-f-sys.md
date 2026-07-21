@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="getlocalprofileuuids"></a>
 ## getLocalProfileUuids
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the profile UUIDs supported by the local device.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ProfileUuids>> | Yes | the callback of getLocalProfileUuids. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ProfileUuids&gt;&gt; | Yes | the callback of getLocalProfileUuids. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ try {
 ```
 
 
+<a id="getlocalprofileuuids-1"></a>
 ## getLocalProfileUuids
 
 ```TypeScript
@@ -83,7 +85,7 @@ Obtains the profile UUIDs supported by the local device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProfileUuids>> | Returns the promise object. |
+| Promise&lt;Array&lt;ProfileUuids&gt;&gt; | Returns the promise object. |
 
 **Error codes:**
 

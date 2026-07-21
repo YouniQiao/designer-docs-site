@@ -18,6 +18,7 @@ It supports the full download of cloud application files.
 import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -66,6 +67,7 @@ try {
 
 ```
 
+<a id="getcloudfileinfo"></a>
 ## getCloudFileInfo
 
 ```TypeScript
@@ -88,7 +90,7 @@ Obtains the size and count of files for applications requiring full download, in
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CloudFileInfo> | Promise used to return the local and cloud file information. |
+| Promise&lt;CloudFileInfo&gt; | Promise used to return the local and cloud file information. |
 
 **Error codes:**
 
@@ -115,6 +117,7 @@ downgradeMgr.getCloudFileInfo().then((fileInfo: cloudSyncManager.CloudFileInfo) 
 
 ```
 
+<a id="startdownload"></a>
 ## startDownload
 
 ```TypeScript
@@ -139,13 +142,13 @@ Repeated triggering of a full download task will throw an error (22400006).
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DownloadProgress> | Yes | Callback used to return the download progress. The parameter is **DownloadProgress**, and the return value is **void**. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DownloadProgress&gt; | Yes | Callback used to return the download progress. The parameter is **DownloadProgress**, and the return value is **void**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -182,6 +185,7 @@ downgradeMgr.startDownload(callback).then(() => {
 
 ```
 
+<a id="starttransfer"></a>
 ## startTransfer
 
 ```TypeScript
@@ -207,7 +211,7 @@ Start to migrate the downloaded full data to the specified public directory of f
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | targetUri | string | Yes | Transfer target Uri. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TransferProgress> | Yes | Callback function. The callback will be triggered when the transfer progress changes or the transfer task completes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TransferProgress&gt; | Yes | Callback function. The callback will be triggered when the transfer progress changes or the transfer task completes. |
 
 **Error codes:**
 
@@ -221,6 +225,7 @@ Start to migrate the downloaded full data to the specified public directory of f
 | 13900020 | Invalid argument. Possible causes:<br>1.Mandatory parameters are left unspecified.<br>2.The length of the input uri does not meet the value range requirement.<br>3.The input uri does not belong to a File Manager public directory. |
 | 22400006 | The same task is already in progress. |
 
+<a id="stopdownload"></a>
 ## stopDownload
 
 ```TypeScript
@@ -243,7 +248,7 @@ Stops the full download task triggered by [startDownload](arkts-corefile-cloudsy
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,13 +6,14 @@
 import { application } from '@kit.AbilityKit';
 ```
 
+<a id="createmodulecontextsync"></a>
 ## createModuleContextSync
 
 ```TypeScript
 export function createModuleContextSync(context: Context, moduleName: string): Context
 ```
 
-Creates the context for a module. The [resourceManager.Configuration](../../apis-localization-kit/arkts-apis/arkts-localization-resourcemanager-configuration-c.md) in the created module context inherits from the input context, making it convenient for you to access [application resources across HAP/HSP packages](../../../../quick-start/resource-categories-and-access.md#cross-haphsp-resources)
+Creates the context for a module. The [resourceManager.Configuration](../../apis-localization-kit/arkts-apis/arkts-localization-resourcemanager-configuration-c.md) in the created module context inherits from the input context, making it convenient for you to access [application resources across HAP/HSP packages](docroot://quick-start/resource-categories-and-access.md#cross-haphsp-resources)
 
 > **NOTE**  
 >  

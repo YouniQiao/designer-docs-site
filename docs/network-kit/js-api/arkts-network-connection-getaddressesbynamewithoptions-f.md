@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getaddressesbynamewithoptions"></a>
 ## getAddressesByNameWithOptions
 
 ```TypeScript
@@ -35,7 +36,7 @@ Resolves a host name to obtain all IP addresses with specified query option.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NetAddress>> | - The promise returned by the function. |
+| Promise&lt;Array&lt;NetAddress&gt;&gt; | - The promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { proxyChannelManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="off"></a>
 ## off('receiveData')
 
 ```TypeScript
@@ -30,7 +31,7 @@ Unsubscribes from data receiving events.
 | --- | --- | --- | --- |
 | type | 'receiveData' | Yes | Event type. The value **receiveData** indicates the data receiving event. |
 | channelId | number | Yes | Channel ID obtained when the proxy channel is opened. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataInfo> | No | Registered callback, If the value is empty, **undefined**, or **null**,all callbacks of data receiving events are unregistered. If the value is not empty, the last registered callback is used. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataInfo&gt; | No | Registered callback, If the value is empty, **undefined**, or **null**,all callbacks of data receiving events are unregistered. If the value is not empty, the last registered callback is used. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ struct Index {
 ```
 
 
+<a id="off-1"></a>
 ## off('channelStateChange')
 
 ```TypeScript
@@ -95,7 +97,7 @@ Unsubscribes from channel state change events.
 | --- | --- | --- | --- |
 | type | 'channelStateChange' | Yes | Event type. The value **channelStateChange** indicates the channel state change event. |
 | channelId | number | Yes | Channel ID obtained when the proxy channel is opened. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ChannelStateInfo> | No | Registered callback, If the value is empty, **undefined**, or **null**, all callbacks of data receiving events are unregistered. If the value is not empty, the last registered callback is used. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ChannelStateInfo&gt; | No | Registered callback, If the value is empty, **undefined**, or **null**, all callbacks of data receiving events are unregistered. If the value is not empty, the last registered callback is used. |
 
 **Error codes:**
 

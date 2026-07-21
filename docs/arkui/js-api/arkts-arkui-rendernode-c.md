@@ -8,6 +8,7 @@ The **RenderNode** module provides APIs for creating a RenderNode in custom draw
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="appendchild"></a>
 ## appendChild
 
 ```TypeScript
@@ -38,6 +39,7 @@ Appends a child node to this RenderNode.
 | --- | --- |
 | [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reason are included in the error message. For example: "The parameter 'node' is invalid: its corresponding FrameNode cannot be adopted."<br>**Applicable version:** 22 and later |
 
+<a id="clearchildren"></a>
 ## clearChildren
 
 ```TypeScript
@@ -56,6 +58,7 @@ Clears all child nodes of this RenderNode.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -74,6 +77,7 @@ Constructor used to create a RenderNode.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="dispose"></a>
 ## dispose
 
 ```TypeScript
@@ -92,6 +96,7 @@ Releases this RenderNode immediately.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="draw"></a>
 ## draw
 
 ```TypeScript
@@ -100,7 +105,7 @@ draw(context: DrawContext): void
 
 Performs drawing. You need to implement this API. It is called when the RenderNode performs drawing.
 
-Note: The Canvas provided in the [DrawContext](arkts-arkui-graphics-drawcontext-c.md) parameter is a temporary command-recording canvas, not the actual rendering canvas of the node. For usage instructions, see [Adjusting the Transformation Matrix of the Custom Drawing Canvas](../../../../ui/arkts-user-defined-arktsNode-renderNode.md#adjusting-the-transformation-matrix-of-the-custom-drawing-canvas).
+Note: The Canvas provided in the [DrawContext](arkts-arkui-graphics-drawcontext-c.md) parameter is a temporary command-recording canvas, not the actual rendering canvas of the node. For usage instructions, see [Adjusting the Transformation Matrix of the Custom Drawing Canvas](docroot://ui/arkts-user-defined-arktsNode-renderNode.md#adjusting-the-transformation-matrix-of-the-custom-drawing-canvas).
 
 > **NOTE**  
 >  
@@ -124,6 +129,7 @@ Note: The Canvas provided in the [DrawContext](arkts-arkui-graphics-drawcontext-
 | --- | --- | --- | --- |
 | context | [DrawContext](../arkts-components/arkts-arkui-drawcontext-t.md) | Yes | Graphics drawing context. |
 
+<a id="getchild"></a>
 ## getChild
 
 ```TypeScript
@@ -154,6 +160,7 @@ Obtains the child node in the specified position of this RenderNode.
 | --- | --- |
 | [RenderNode](arkts-arkui-rendernode-c.md) | Child node obtained. If the RenderNode does not contain the specified child node,null is returned. |
 
+<a id="getfirstchild"></a>
 ## getFirstChild
 
 ```TypeScript
@@ -178,6 +185,7 @@ Obtains the first child node of this RenderNode.
 | --- | --- |
 | [RenderNode](arkts-arkui-rendernode-c.md) | First child node. If the RenderNode does not contain any child node, null is returned. |
 
+<a id="getnextsibling"></a>
 ## getNextSibling
 
 ```TypeScript
@@ -202,6 +210,7 @@ Obtains the next sibling node of this RenderNode.
 | --- | --- |
 | [RenderNode](arkts-arkui-rendernode-c.md) | Next sibling node of the current RenderNode. If the RenderNode does not have the next sibling node, null is returned. |
 
+<a id="getprevioussibling"></a>
 ## getPreviousSibling
 
 ```TypeScript
@@ -226,6 +235,7 @@ Obtains the previous sibling node of this RenderNode.
 | --- | --- |
 | [RenderNode](arkts-arkui-rendernode-c.md) | Previous sibling node of the current RenderNode. If the RenderNode does not have the previous sibling node, null is returned. |
 
+<a id="insertchildafter"></a>
 ## insertChildAfter
 
 ```TypeScript
@@ -249,7 +259,7 @@ Inserts a child node after the specified child node of this RenderNode.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | child | [RenderNode](arkts-arkui-rendernode-c.md) | Yes | Child node to add. |
-| sibling | RenderNode \| null | Yes | Node after which the new child node will be inserted. If this parameter is left empty, the new node is inserted before the first subnode. |
+| sibling | [RenderNode](arkts-arkui-rendernode-c.md) \| null | Yes | Node after which the new child node will be inserted. If this parameter is left empty, the new node is inserted before the first subnode. |
 
 **Error codes:**
 
@@ -257,6 +267,7 @@ Inserts a child node after the specified child node of this RenderNode.
 | --- | --- |
 | [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reason are included in the error message. For example: "The parameter 'child' is invalid: its corresponding FrameNode cannot be adopted."<br>**Applicable version:** 22 and later |
 
+<a id="invalidate"></a>
 ## invalidate
 
 ```TypeScript
@@ -275,6 +286,7 @@ Triggers the re-rendering of this RenderNode.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="isdisposed"></a>
 ## isDisposed
 
 ```TypeScript
@@ -299,6 +311,7 @@ Checks whether this RenderNode object has released its reference to its backend 
 | --- | --- |
 | boolean | Whether the reference to the backend node is released. The value **true** means that the reference to backend node is released, and **false** means the opposite. |
 
+<a id="removechild"></a>
 ## removeChild
 
 ```TypeScript
@@ -373,7 +386,7 @@ get borderColor(): Edges<number>
 
 Get border color of the RenderNode.
 
-**Type:** Edges<number>
+**Type:** Edges&lt;number&gt;
 
 **Default:** 0XFF000000
 
@@ -417,7 +430,7 @@ get borderStyle(): Edges<BorderStyle>
 
 Get border style of the RenderNode.
 
-**Type:** Edges<BorderStyle>
+**Type:** Edges&lt;BorderStyle&gt;
 
 **Since:** 12
 
@@ -437,7 +450,7 @@ get borderWidth(): Edges<number>
 
 Get border width of the RenderNode.
 
-**Type:** Edges<number>
+**Type:** Edges&lt;number&gt;
 
 **Default:** 0
 

@@ -6,6 +6,7 @@
 import { dataTransfer } from '@kit.ConnectivityKit';
 ```
 
+<a id="writedata"></a>
 ## writeData
 
 ```TypeScript
@@ -34,7 +35,7 @@ function writeData(params: DataParams): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | 返回promise对象。 |
+| Promise&lt;void&gt; | 返回promise对象。 |
 
 **错误码：**
 

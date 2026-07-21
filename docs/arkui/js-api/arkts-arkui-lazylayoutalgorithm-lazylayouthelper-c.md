@@ -8,6 +8,7 @@ Helper class for lazy layout algorithm.Provides layout direction and view positi
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="getlazylayoutdirection"></a>
 ## getLazyLayoutDirection
 
 ```TypeScript
@@ -32,6 +33,7 @@ Get the lazy layout direction.
 | --- | --- |
 | [LazyLayoutDirection](arkts-arkui-lazylayoutalgorithm-lazylayoutdirection-e.md) | The lazy layout direction. |
 
+<a id="getviewend"></a>
 ## getViewEnd
 
 ```TypeScript
@@ -56,6 +58,7 @@ Get the end position of the visible view.
 | --- | --- |
 | number | The end position of the visible view.<br>Unit: px. |
 
+<a id="getviewstart"></a>
 ## getViewStart
 
 ```TypeScript
@@ -80,6 +83,7 @@ Get the start position of the visible view.
 | --- | --- |
 | number | The start position of the visible view.<br>Unit: px. |
 
+<a id="setadjustedoffset"></a>
 ## setAdjustedOffset
 
 ```TypeScript
@@ -104,6 +108,7 @@ Set the adjusted offset for the lazy layout.
 | --- | --- | --- | --- |
 | offset | number | Yes | The adjusted offset value to set.<br>Unit: px. |
 
+<a id="setchildreninactive"></a>
 ## setChildrenInactive
 
 ```TypeScript

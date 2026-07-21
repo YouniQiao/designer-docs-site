@@ -6,6 +6,7 @@
 import { config } from '@kit.AccessibilityKit';
 ```
 
+<a id="enableability"></a>
 ## enableAbility
 
 ```TypeScript
@@ -29,13 +30,13 @@ Enables an accessibility extension ability. This API uses a promise to return th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the accessibility extension ability, in the format of 'bundleName/abilityName'. |
-| capability | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<accessibility.Capability> | Yes | Capability of the accessibility extension ability. |
+| capability | Array&lt;accessibility.Capability&gt; | Yes | Capability of the accessibility extension ability. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -48,6 +49,7 @@ Enables an accessibility extension ability. This API uses a promise to return th
 | [9300002](../errorcode-accessibility.md#9300002-target-ability-already-enabled) | Target ability already enabled. |
 
 
+<a id="enableability-1"></a>
 ## enableAbility
 
 ```TypeScript
@@ -83,8 +85,8 @@ Enables an accessibility extension ability. This API uses an asynchronous callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the accessibility extension ability, in the format of 'bundleName/abilityName'. |
-| capability | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<accessibility.Capability> | Yes | Capability of the accessibility extension ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| capability | Array&lt;accessibility.Capability&gt; | Yes | Capability of the accessibility extension ability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { userAccessCtrl } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="verifyauthtoken"></a>
 ## verifyAuthToken
 
 ```TypeScript
@@ -28,14 +29,14 @@ Verifies an authentication token. This API is used to verify the validity of an 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| authToken | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Authentication token to be verified. The value contains a maximum of 1024 bytes and is returned after the user is authenticated. The token contains the credentials information for user authentication, which is used for subsequent security operation verification. |
+| authToken | Uint8Array | Yes | Authentication token to be verified. The value contains a maximum of 1024 bytes and is returned after the user is authenticated. The token contains the credentials information for user authentication, which is used for subsequent security operation verification. |
 | allowableDuration | number | Yes | Authentication validity period. It indicates the maximum time interval for using the token from the time when the token is issued. The unit is millisecond. The value must be greater than 0 and less than or equal to 86400000 (24 hours). It is used to verify the validity of a token to prevent expired tokens from being used. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AuthToken> | Promise used to return the result. |
+| Promise&lt;AuthToken&gt; | Promise used to return the result. |
 
 **Error codes:**
 

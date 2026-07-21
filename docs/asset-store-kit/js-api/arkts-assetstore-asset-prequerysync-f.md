@@ -6,6 +6,7 @@
 import { asset } from '@kit.AssetStoreKit';
 ```
 
+<a id="prequerysync"></a>
 ## preQuerySync
 
 ```TypeScript
@@ -32,7 +33,7 @@ Performs preprocessing for the asset query. This API is used when user authentic
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Challenge value.<br>**Note**: The challenge value is used for subsequent user authentication. |
+| Uint8Array | Challenge value.<br>**Note**: The challenge value is used for subsequent user authentication. |
 
 **Error codes:**
 

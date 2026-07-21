@@ -16,6 +16,7 @@ Sendable PixelMap instance.
 import { sendableImage } from '@kit.ImageKit';
 ```
 
+<a id="applycolorspace"></a>
 ## applyColorSpace
 
 ```TypeScript
@@ -42,7 +43,7 @@ This method is used to change color space of PixelMap.Pixel data will be changed
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Error codes:**
 
@@ -72,6 +73,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="createalphapixelmap"></a>
 ## createAlphaPixelmap
 
 ```TypeScript
@@ -92,7 +94,7 @@ Obtains new pixelmap with alpha information. This method uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PixelMap> | A Promise instance used to return the new image pixelmap.If the operation fails, an error message is returned. |
+| Promise&lt;PixelMap&gt; | A Promise instance used to return the new image pixelmap.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -112,6 +114,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="createalphapixelmapsync"></a>
 ## createAlphaPixelmapSync
 
 ```TypeScript
@@ -153,6 +156,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="crop"></a>
 ## crop
 
 ```TypeScript
@@ -179,7 +183,7 @@ Crop the image. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -202,6 +206,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="cropsync"></a>
 ## cropSync
 
 ```TypeScript
@@ -246,6 +251,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="flip"></a>
 ## flip
 
 ```TypeScript
@@ -273,7 +279,7 @@ Image flipping. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -296,6 +302,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="flipsync"></a>
 ## flipSync
 
 ```TypeScript
@@ -341,6 +348,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="getbytesnumberperrow"></a>
 ## getBytesNumberPerRow
 
 ```TypeScript
@@ -374,6 +382,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="getcolorspace"></a>
 ## getColorSpace
 
 ```TypeScript
@@ -415,6 +424,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="getdensity"></a>
 ## getDensity
 
 ```TypeScript
@@ -448,6 +458,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="getimageinfo"></a>
 ## getImageInfo
 
 ```TypeScript
@@ -468,7 +479,7 @@ Obtains pixelmap information about this image. This method uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.ImageInfo> | A Promise instance used to return the image pixelmap information.If the operation fails, an error message is returned. |
+| Promise&lt;image.ImageInfo&gt; | A Promise instance used to return the image pixelmap information.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -491,6 +502,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="getimageinfosync"></a>
 ## getImageInfoSync
 
 ```TypeScript
@@ -533,6 +545,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="getpixelbytesnumber"></a>
 ## getPixelBytesNumber
 
 ```TypeScript
@@ -566,6 +579,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="marshalling"></a>
 ## marshalling
 
 ```TypeScript
@@ -653,6 +667,7 @@ async function Demo() {
 
 ```
 
+<a id="opacity"></a>
 ## opacity
 
 ```TypeScript
@@ -679,7 +694,7 @@ Set the transparent rate of pixelmap. This method uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -700,6 +715,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="opacitysync"></a>
 ## opacitySync
 
 ```TypeScript
@@ -743,6 +759,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="readpixels"></a>
 ## readPixels
 
 ```TypeScript
@@ -769,7 +786,7 @@ Reads image pixelmap data in an area. This method uses a promise to return the d
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -796,6 +813,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="readpixelssync"></a>
 ## readPixelsSync
 
 ```TypeScript
@@ -845,6 +863,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="readpixelstobuffer"></a>
 ## readPixelsToBuffer
 
 ```TypeScript
@@ -865,13 +884,13 @@ Reads image pixelmap data and writes the data to an ArrayBuffer. This method use
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dst | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | A buffer to which the image pixelmap data will be written. |
+| dst | ArrayBuffer | Yes | A buffer to which the image pixelmap data will be written. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -892,6 +911,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="readpixelstobuffersync"></a>
 ## readPixelsToBufferSync
 
 ```TypeScript
@@ -912,7 +932,7 @@ Reads image pixelmap data and writes the data to an ArrayBuffer.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dst | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | A buffer to which the image pixelmap data will be written. |
+| dst | ArrayBuffer | Yes | A buffer to which the image pixelmap data will be written. |
 
 **Error codes:**
 
@@ -936,6 +956,7 @@ async function Demo(pixelMap: sendableImage.PixelMap) {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -956,7 +977,7 @@ Releases this PixelMap object. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the instance release result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the instance release result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -976,6 +997,7 @@ async function Demo(pixelMap: sendableImage.PixelMap) {
 
 ```
 
+<a id="rotate"></a>
 ## rotate
 
 ```TypeScript
@@ -1002,7 +1024,7 @@ Image rotation. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -1023,6 +1045,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="rotatesync"></a>
 ## rotateSync
 
 ```TypeScript
@@ -1066,6 +1089,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="scale"></a>
 ## scale
 
 ```TypeScript
@@ -1093,7 +1117,7 @@ Image zoom in width and height. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -1116,6 +1140,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="scalesync"></a>
 ## scaleSync
 
 ```TypeScript
@@ -1161,6 +1186,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="setcolorspace"></a>
 ## setColorSpace
 
 ```TypeScript
@@ -1206,6 +1232,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="translate"></a>
 ## translate
 
 ```TypeScript
@@ -1233,7 +1260,7 @@ Image position transformation. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -1255,6 +1282,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="translatesync"></a>
 ## translateSync
 
 ```TypeScript
@@ -1300,6 +1328,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="unmarshalling"></a>
 ## unmarshalling
 
 ```TypeScript
@@ -1324,7 +1353,7 @@ Creates a PixelMap object based on MessageSequence parameter.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PixelMap> | A Promise instance used to return the PixelMap object. |
+| Promise&lt;PixelMap&gt; | A Promise instance used to return the PixelMap object. |
 
 **Error codes:**
 
@@ -1394,6 +1423,7 @@ async function Demo() {
 
 ```
 
+<a id="writebuffertopixels"></a>
 ## writeBufferToPixels
 
 ```TypeScript
@@ -1414,13 +1444,13 @@ Reads image data in an ArrayBuffer and writes the data to a PixelMap object. Thi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| src | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | A buffer from which the image data will be read. |
+| src | ArrayBuffer | Yes | A buffer from which the image data will be read. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -1445,6 +1475,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="writebuffertopixelssync"></a>
 ## writeBufferToPixelsSync
 
 ```TypeScript
@@ -1465,7 +1496,7 @@ Reads image data in an ArrayBuffer and writes the data to a PixelMap object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| src | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | A buffer from which the image data will be read. |
+| src | ArrayBuffer | Yes | A buffer from which the image data will be read. |
 
 **Error codes:**
 
@@ -1493,6 +1524,7 @@ async function Demo(pixelMap: sendableImage.PixelMap) {
 
 ```
 
+<a id="writepixels"></a>
 ## writePixels
 
 ```TypeScript
@@ -1519,7 +1551,7 @@ Writes image pixelmap data to the specified area. This method uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Example**
 
@@ -1550,6 +1582,7 @@ async function Demo(pixelMap : sendableImage.PixelMap) {
 
 ```
 
+<a id="writepixelssync"></a>
 ## writePixelsSync
 
 ```TypeScript

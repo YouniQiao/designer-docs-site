@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="controltransfer"></a>
 ## controlTransfer
 
 ```TypeScript
@@ -18,7 +19,7 @@ Performs control transfer. This API uses a promise to return the result.
 
 **Deprecated since:** 12
 
-**Substitutes:** usbControlTransfer(pipe:
+**Substitutes:** [usbControlTransfer(pipe:](arkts-basicservices-usbmanager-usbcontroltransfer-f.md#usbcontroltransfer-1)
 
 <!--Device-usbManager-function controlTransfer(pipe: USBDevicePipe, controlparam: USBControlParams, timeout?: number): Promise<number>--><!--Device-usbManager-function controlTransfer(pipe: USBDevicePipe, controlparam: USBControlParams, timeout?: number): Promise<number>-End-->
 
@@ -36,7 +37,7 @@ Performs control transfer. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result, which is the size of the transferred or received data block if the transfer is successful. If the API call fails, the following error codes are returned:* - -1: The driver is abnormal. |
+| Promise&lt;number&gt; | Promise used to return the result, which is the size of the transferred or received data block if the transfer is successful. If the API call fails, the following error codes are returned:* - -1: The driver is abnormal. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="wrapkeyitem"></a>
 ## wrapKeyItem
 
 ```TypeScript
@@ -40,7 +41,7 @@ Wraps a key. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | Promise that returns the operation result. If the operation is successful,**outData** in **HuksReturnResult** is the exported key ciphertext. |
+| Promise&lt;HuksReturnResult&gt; | Promise that returns the operation result. If the operation is successful,**outData** in **HuksReturnResult** is the exported key ciphertext. |
 
 **Error codes:**
 

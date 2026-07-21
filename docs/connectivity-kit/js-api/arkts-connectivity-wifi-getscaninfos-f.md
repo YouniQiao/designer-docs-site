@@ -6,6 +6,7 @@
 import { wifi } from '@kit.ConnectivityKit';
 ```
 
+<a id="getscaninfos"></a>
 ## getScanInfos
 
 ```TypeScript
@@ -30,9 +31,10 @@ Obtains the hotspot information that scanned.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<WifiScanInfo>> | Returns information about scanned Wi-Fi hotspot if any. |
+| Promise&lt;Array&lt;WifiScanInfo&gt;&gt; | Returns information about scanned Wi-Fi hotspot if any. |
 
 
+<a id="getscaninfos-1"></a>
 ## getScanInfos
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtains the hotspot information that scanned.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<WifiScanInfo>> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;WifiScanInfo&gt;&gt; | Yes |  |
 
 **Example**
 

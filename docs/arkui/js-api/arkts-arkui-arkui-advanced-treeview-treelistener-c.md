@@ -14,6 +14,7 @@ Declare class TreeListener
 import { TreeListener, NodeParam, CallbackParam, TreeListenType, TreeView, TreeController, TreeListenerManager } from '@kit.ArkUI';
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -37,8 +38,9 @@ Destroy event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [TreeListenType](arkts-arkui-arkui-advanced-treeview-treelistentype-e.md) | Yes |  |
-| callback | (callbackParam: CallbackParam) => void | No |  |
+| callback | (callbackParam: CallbackParam) =&gt; void | No |  |
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -62,8 +64,9 @@ Event registration and processing.The event will not be destroyed after being pr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [TreeListenType](arkts-arkui-arkui-advanced-treeview-treelistentype-e.md) | Yes |  |
-| callback | (callbackParam: CallbackParam) => void | Yes |  |
+| callback | (callbackParam: CallbackParam) =&gt; void | Yes |  |
 
+<a id="once"></a>
 ## once
 
 ```TypeScript
@@ -87,5 +90,5 @@ Event registration and processing.After the event is processed once, it will be 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [TreeListenType](arkts-arkui-arkui-advanced-treeview-treelistentype-e.md) | Yes |  |
-| callback | (callbackParam: CallbackParam) => void | Yes |  |
+| callback | (callbackParam: CallbackParam) =&gt; void | Yes |  |
 

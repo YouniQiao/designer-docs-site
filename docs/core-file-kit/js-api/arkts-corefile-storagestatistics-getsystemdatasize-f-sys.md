@@ -6,6 +6,7 @@
 import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
+<a id="getsystemdatasize"></a>
 ## getSystemDataSize
 
 ```TypeScript
@@ -30,7 +31,7 @@ Get the system data size.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | return Promise (Unit: Byte) |
+| Promise&lt;number&gt; | return Promise (Unit: Byte) |
 
 **Error codes:**
 

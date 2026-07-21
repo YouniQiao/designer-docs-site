@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="setcalltransfer"></a>
 ## setCallTransfer
 
 ```TypeScript
@@ -30,7 +31,7 @@ Set call forwarding information.
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | info | [CallTransferInfo](arkts-telephony-call-calltransferinfo-i-sys.md) | Yes | Indicates the set call forwarding information. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setCallTransfer. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setCallTransfer. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ call.setCallTransfer(0, callTransferInfo, (err: BusinessError) => {
 ```
 
 
+<a id="setcalltransfer-1"></a>
 ## setCallTransfer
 
 ```TypeScript
@@ -94,7 +96,7 @@ Set call forwarding information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setCallTransfer. |
+| Promise&lt;void&gt; | The promise returned by the setCallTransfer. |
 
 **Error codes:**
 

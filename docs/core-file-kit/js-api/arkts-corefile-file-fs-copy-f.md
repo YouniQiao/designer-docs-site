@@ -6,6 +6,7 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="copy"></a>
 ## copy
 
 ```TypeScript
@@ -30,13 +31,13 @@ A maximum of 10 cross-device copy tasks are allowed at the same time, and the nu
 | --- | --- | --- | --- |
 | srcUri | string | Yes | URI of the file or directory to copy. |
 | destUri | string | Yes | URI of the destination file or directory. |
-| options | [CopyOptions](../../apis-arkui/arkts-apis/arkts-arkui-enums-copyoptions-e.md) | No | Callback invoked to provide the copy progress. If this parameter is not set, the callback will not be invoked. |
+| options | [CopyOptions](../../apis-arkui/arkts-apis/arkts-arkui-copyoptions-e.md) | No | Callback invoked to provide the copy progress. If this parameter is not set, the callback will not be invoked. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ A maximum of 10 cross-device copy tasks are allowed at the same time, and the nu
 | 13900044 | Network is unreachable<br>**Applicable version:** 12 and later |
 
 
+<a id="copy-1"></a>
 ## copy
 
 ```TypeScript
@@ -92,7 +94,7 @@ File copy across devices is supported. This API forcibly overwrites the file or 
 | --- | --- | --- | --- |
 | srcUri | string | Yes | URI of the file or directory to copy. |
 | destUri | string | Yes | URI of the destination file or directory. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -125,6 +127,7 @@ File copy across devices is supported. This API forcibly overwrites the file or 
 | 13900042 | Unknown error |
 
 
+<a id="copy-2"></a>
 ## copy
 
 ```TypeScript
@@ -147,8 +150,8 @@ File copy across devices is supported. This API forcibly overwrites the file or 
 | --- | --- | --- | --- |
 | srcUri | string | Yes | URI of the file or directory to copy. |
 | destUri | string | Yes | URI of the destination file or directory. |
-| options | [CopyOptions](../../apis-arkui/arkts-apis/arkts-arkui-enums-copyoptions-e.md) | Yes | Callback used to return the copy progress. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| options | [CopyOptions](../../apis-arkui/arkts-apis/arkts-arkui-copyoptions-e.md) | Yes | Callback used to return the copy progress. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 

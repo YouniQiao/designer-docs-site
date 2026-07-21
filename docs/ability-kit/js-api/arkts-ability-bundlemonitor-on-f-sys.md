@@ -6,6 +6,7 @@
 import { bundleMonitor } from '@kit.AbilityKit';
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -29,7 +30,7 @@ Register to monitor the installation status
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [BundleChangedEvent](arkts-ability-bundlemonitor-bundlechangedevent-t-sys.md) | Yes | Indicates the command should be implement. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BundleChangedInfo> | Yes | Indicates the callback to be register. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BundleChangedInfo&gt; | Yes | Indicates the callback to be register. |
 
 **Error codes:**
 

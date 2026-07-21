@@ -1,6 +1,6 @@
 # LaunchType
 
-Enumerates the [launch types](../../../../application-models/uiability-launch-type.md) of the UIAbility.
+Enumerates the [launch types](docroot://application-models/uiability-launch-type.md) of the UIAbility.
 
 **Since:** 9
 

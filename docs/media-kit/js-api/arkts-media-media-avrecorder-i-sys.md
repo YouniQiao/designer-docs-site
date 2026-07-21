@@ -2,7 +2,7 @@
 
 AVRecorder is a class for audio and video recording management. It provides APIs to record media assets. Before calling any API in AVRecorder, you must use [createAVRecorder()](arkts-media-media-createavrecorder-f.md#createavrecorder-1) to create an AVRecorder instance.
 
-For details about the audio and video recording demo, see [Audio Recording](../../../../media/media/using-avrecorder-for-recording.md) and [Video Recording](../../../../media/media/video-recording.md).
+For details about the audio and video recording demo, see [Audio Recording](docroot://media/media/using-avrecorder-for-recording.md) and [Video Recording](docroot://media/media/video-recording.md).
 
 > **NOTE**  
 >  
@@ -21,6 +21,7 @@ For details about the audio and video recording demo, see [Audio Recording](../.
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="getinputmetasurface"></a>
 ## getInputMetaSurface
 
 ```TypeScript
@@ -47,7 +48,7 @@ Get input meta surface for specified meta source type. it must be called between
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | A Promise instance used to return the input surface id in string. |
+| Promise&lt;string&gt; | A Promise instance used to return the input surface id in string. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ Get input meta surface for specified meta source type. it must be called between
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
+<a id="iswatermarksupported"></a>
 ## isWatermarkSupported
 
 ```TypeScript
@@ -81,7 +83,7 @@ This API can be called after the prepare(), start(), or paused() event is trigge
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the check result. The value **true** means that the device supports the hardware digital watermark, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the check result. The value **true** means that the device supports the hardware digital watermark, and **false** means the opposite. |
 
 **Example**
 
@@ -96,6 +98,7 @@ avRecorder.isWatermarkSupported().then((isWatermarkSupported: boolean) => {
 
 ```
 
+<a id="setmetadata"></a>
 ## setMetadata
 
 ```TypeScript
@@ -118,7 +121,7 @@ This API can be called only after the prepare() event is successfully triggered 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| metadata | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string> | Yes | Tag and value of the metadata in key-value pairs.<br>- The first string is the key.<br>- The second string is the value.<br> The key string should start with "com.openharmony.", the length of value can't be more than 256 bytes. |
+| metadata | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, string&gt; | Yes | Tag and value of the metadata in key-value pairs.<br>- The first string is the key.<br>- The second string is the value.<br> The key string should start with "com.openharmony.", the length of value can't be more than 256 bytes. |
 
 **Error codes:**
 
@@ -129,6 +132,7 @@ This API can be called only after the prepare() event is successfully triggered 
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed.<br>**Applicable version:** 26.0.0 and later |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="setwatermark"></a>
 ## setWatermark
 
 ```TypeScript
@@ -158,7 +162,7 @@ This API can be called only after the prepare() event is triggered and before th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

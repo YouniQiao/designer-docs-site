@@ -14,7 +14,7 @@ Represents the Bluetooth protocol type.
 GATT = 0
 ```
 
-[Generic Attribute Profile (GATT)](../../../../connectivity/terminology.md#gatt)
+[Generic Attribute Profile (GATT)](docroot://connectivity/terminology.md#gatt)
 
 **Since:** 20
 
@@ -30,7 +30,7 @@ GATT = 0
 SPP = 1
 ```
 
-[Serial Port Profile (SPP)](../../../../connectivity/terminology.md#spp)
+[Serial Port Profile (SPP)](docroot://connectivity/terminology.md#spp)
 
 **Since:** 20
 
@@ -46,7 +46,7 @@ SPP = 1
 OPP = 2
 ```
 
-[Object Push Profile (OPP)](../../../../connectivity/terminology.md#opp)
+[Object Push Profile (OPP)](docroot://connectivity/terminology.md#opp)
 
 **Since:** 20
 

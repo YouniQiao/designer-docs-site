@@ -16,6 +16,7 @@ Provide some functions for settings and startup guide to select language or regi
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -47,6 +48,7 @@ let systemLocaleManager: i18n.SystemLocaleManager = new i18n.SystemLocaleManager
 
 ```
 
+<a id="getlanguageinfoarray"></a>
 ## getLanguageInfoArray
 
 ```TypeScript
@@ -67,14 +69,14 @@ Obtains the list of languages after sorting.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| languages | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Valid IDs of the languages to be sorted. |
+| languages | Array&lt;string&gt; | Yes | Valid IDs of the languages to be sorted. |
 | options | [SortOptions](arkts-localization-i18n-sortoptions-i-sys.md) | No | Language sorting option. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LocaleItem> | Language list after sorting. |
+| Array&lt;LocaleItem&gt; | Language list after sorting. |
 
 **Error codes:**
 
@@ -104,6 +106,7 @@ try {
 
 ```
 
+<a id="getregioninfoarray"></a>
 ## getRegionInfoArray
 
 ```TypeScript
@@ -124,14 +127,14 @@ Obtains the IDs of the countries or regions after sorting.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| regions | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Valid IDs of the countries or regions to be sorted. |
+| regions | Array&lt;string&gt; | Yes | Valid IDs of the countries or regions to be sorted. |
 | options | [SortOptions](arkts-localization-i18n-sortoptions-i-sys.md) | No | Country/region sorting option. By default, locale is the current system locale, isUseLocalName is false, and isSuggestedFirst is true. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LocaleItem> | IDs of the countries or regions after sorting. |
+| Array&lt;LocaleItem&gt; | IDs of the countries or regions after sorting. |
 
 **Error codes:**
 
@@ -161,6 +164,7 @@ try {
 
 ```
 
+<a id="gettimezonecityitemarray"></a>
 ## getTimeZoneCityItemArray
 
 ```TypeScript
@@ -181,7 +185,7 @@ Obtains list of time zone city items after sorting.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<TimeZoneCityItem> | List of time zone city items after sorting. |
+| Array&lt;TimeZoneCityItem&gt; | List of time zone city items after sorting. |
 
 **Error codes:**
 

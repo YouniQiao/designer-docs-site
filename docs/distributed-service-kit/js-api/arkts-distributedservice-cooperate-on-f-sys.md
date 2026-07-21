@@ -6,6 +6,7 @@
 import { cooperate } from '@kit.DistributedServiceKit';
 ```
 
+<a id="on"></a>
 ## on('cooperate')
 
 ```TypeScript
@@ -18,7 +19,7 @@ Enables listening for screen hopping status change events.
 
 **Deprecated since:** 11
 
-**Substitutes:** on(type:
+**Substitutes:** [on(type:](../../apis-test-kit/arkts-apis/arkts-test-uitest-on-c.md)
 
 <!--Device-cooperate-function on(type: 'cooperate', callback: Callback<{ networkId: string, msg: CooperateMsg }>): void--><!--Device-cooperate-function on(type: 'cooperate', callback: Callback<{ networkId: string, msg: CooperateMsg }>): void-End-->
 
@@ -31,7 +32,7 @@ Enables listening for screen hopping status change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cooperate' | Yes | Event type. The value is **cooperate**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ networkId: string, msg: CooperateMsg }> | Yes |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ networkId: string, msg: CooperateMsg }&gt; | Yes |  |
 
 **Error codes:**
 
@@ -41,6 +42,7 @@ Enables listening for screen hopping status change events.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
 
 
+<a id="on-1"></a>
 ## on('cooperateMessage')
 
 ```TypeScript
@@ -64,7 +66,7 @@ Enables listening for screen hopping status change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cooperateMessage' | Yes | Event type. The value is **cooperateMessage**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CooperateMessage> | Yes | Callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CooperateMessage&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -75,6 +77,7 @@ Enables listening for screen hopping status change events.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
 
 
+<a id="on-2"></a>
 ## on('cooperateMouse')
 
 ```TypeScript
@@ -99,7 +102,7 @@ Registers a listener for the mouse cursor position of a device.
 | --- | --- | --- | --- |
 | type | 'cooperateMouse' | Yes | Event type, which is **'cooperateMouse'**. |
 | networkId | string | Yes | Descriptor of the target device. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MouseLocation> | Yes | Callback used to return the mouse cursor position of the device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MouseLocation&gt; | Yes | Callback used to return the mouse cursor position of the device. |
 
 **Error codes:**
 

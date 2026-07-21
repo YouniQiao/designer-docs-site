@@ -16,6 +16,7 @@ Provides APIs to check whether a camera device supports manual ISO setting and o
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getisorange"></a>
 ## getIsoRange
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the supported ISO range.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | ISO range. The value range is [50, 100, ..., 6400]. The actual value depends on the bottom-layer capability. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
+| Array&lt;number&gt; | ISO range. The value range is [50, 100, ..., 6400]. The actual value depends on the bottom-layer capability. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ function getIsoRange(professionalPhotoSession: camera.ProfessionalPhotoSession):
 
 ```
 
+<a id="ismanualisosupported"></a>
 ## isManualIsoSupported
 
 ```TypeScript

@@ -20,6 +20,7 @@ Provides APIs for generating the messages in CMS format.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="addcert"></a>
 ## addCert
 
 ```TypeScript
@@ -111,6 +112,7 @@ function testAddCert() {
 
 ```
 
+<a id="addrecipientinfo"></a>
 ## addRecipientInfo
 
 ```TypeScript
@@ -139,7 +141,7 @@ At least one recipient needs to be set.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -234,6 +236,7 @@ async function testAddRecipientInfo() {
 
 ```
 
+<a id="addsigner"></a>
 ## addSigner
 
 ```TypeScript
@@ -355,6 +358,7 @@ function testAddSigner() {
 
 ```
 
+<a id="dofinal"></a>
 ## doFinal
 
 ```TypeScript
@@ -375,14 +379,14 @@ Obtains the CMS message, for example, the CMS signed data or CMS enveloped data.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Data to be operated. |
+| data | Uint8Array | Yes | Data to be operated. |
 | options | [CmsGeneratorOptions](arkts-devicecertificate-cert-cmsgeneratoroptions-i.md) | No | Configuration of the CMS operation. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array \| string> | Promise used to return the CMS message. |
+| Promise&lt;Uint8Array \| string&gt; | Promise used to return the CMS message. |
 
 **Error codes:**
 
@@ -493,6 +497,7 @@ async function testDoFinalByPromise() {
 
 ```
 
+<a id="dofinalsync"></a>
 ## doFinalSync
 
 ```TypeScript
@@ -513,14 +518,14 @@ Obtains the CMS message, for example, the CMS signed data or CMS enveloped data.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Data to be operated. |
+| data | Uint8Array | Yes | Data to be operated. |
 | options | [CmsGeneratorOptions](arkts-devicecertificate-cert-cmsgeneratoroptions-i.md) | No | Configuration of the CMS operation. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | CMS message generated. |
+| Uint8Array | CMS message generated. |
 
 **Error codes:**
 
@@ -628,6 +633,7 @@ function testDoFinalSync() {
 
 ```
 
+<a id="getencryptedcontentdata"></a>
 ## getEncryptedContentData
 
 ```TypeScript
@@ -650,7 +656,7 @@ Obtains the encrypted content data if the **CmsGenerator** of the **ENVELOPED_DA
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the encrypted data. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the encrypted data. |
 
 **Error codes:**
 
@@ -758,6 +764,7 @@ async function testGetEncryptedContentData() {
 
 ```
 
+<a id="setrecipientencryptionalgorithm"></a>
 ## setRecipientEncryptionAlgorithm
 
 ```TypeScript

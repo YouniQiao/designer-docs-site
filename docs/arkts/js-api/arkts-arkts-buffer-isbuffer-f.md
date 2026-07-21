@@ -6,6 +6,7 @@
 import { buffer } from '@kit.ArkTS';
 ```
 
+<a id="isbuffer"></a>
 ## isBuffer
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether the specified object is a **Buffer** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| obj | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| obj | Object | Yes | Object to check. |
 
 **Return value:**
 

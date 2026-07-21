@@ -1,5 +1,6 @@
 # registerVsyncCallback (System API)
 
+<a id="registervsynccallback"></a>
 ## registerVsyncCallback
 
 ```TypeScript
@@ -20,5 +21,5 @@ Registers vsync callback for profiler.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (info: string) => void | Yes | the callback info is json string with ui update info. |
+| callback | (info: string) =&gt; void | Yes | the callback info is json string with ui update info. |
 

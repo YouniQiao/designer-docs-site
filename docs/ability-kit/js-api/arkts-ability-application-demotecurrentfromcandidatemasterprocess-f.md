@@ -6,6 +6,7 @@
 import { application } from '@kit.AbilityKit';
 ```
 
+<a id="demotecurrentfromcandidatemasterprocess"></a>
 ## demoteCurrentFromCandidateMasterProcess
 
 ```TypeScript
@@ -26,7 +27,7 @@ Removes the current process from the candidate master process list. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no result. |
+| Promise&lt;void&gt; | Promise that returns no result. |
 
 **Error codes:**
 

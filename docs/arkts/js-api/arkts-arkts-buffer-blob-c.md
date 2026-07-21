@@ -14,6 +14,7 @@ Process data as blob type
 import { buffer } from '@kit.ArkTS';
 ```
 
+<a id="arraybuffer"></a>
 ## arrayBuffer
 
 ```TypeScript
@@ -34,7 +35,7 @@ Puts the **Blob** data into an **ArrayBuffer** object. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | @syscap SystemCapability.Utils.Lang@crossplatform |
+| Promise&lt;ArrayBuffer&gt; | @syscap SystemCapability.Utils.Lang@crossplatform |
 
 **Example**
 
@@ -51,6 +52,7 @@ pro.then((val: ArrayBuffer) => {
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -72,7 +74,7 @@ A constructor used to create a **Blob** object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sources | string[] \| ArrayBuffer[] \| TypedArray[] \| DataView[] \| Blob[] | Yes | Data sources of the **Blob** object. |
-| options | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | options:<br>- **endings**: specifies how the terminator **'\n'** is output. The value can be **'native'** or **'transparent'**. **'native'** means that the terminator follows the system.**'transparent'** means that the terminator stored in the **Blob** object remains unchanged. The default value is **'transparent'**.<br>- **type**: type of the data in the **Blob** object. This type represents the MIME type of the data. However, it is not used for type format validation. The default value is **''**. |
+| options | Object | No | options:<br>- **endings**: specifies how the terminator **'\n'** is output. The value can be **'native'** or **'transparent'**. **'native'** means that the terminator follows the system.**'transparent'** means that the terminator stored in the **Blob** object remains unchanged. The default value is **'transparent'**.<br>- **type**: type of the data in the **Blob** object. This type represents the MIME type of the data. However, it is not used for type format validation. The default value is **''**. |
 
 **Example**
 
@@ -90,6 +92,7 @@ let blob1: buffer.Blob = new buffer.Blob(['a', 'b', 'c'], o1);
 
 ```
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript
@@ -132,6 +135,7 @@ console.info("type:", blob3.type); // type: MIME
 
 ```
 
+<a id="text"></a>
 ## text
 
 ```TypeScript
@@ -152,7 +156,7 @@ Decodes data using UTF-8 and returns a string. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | @syscap SystemCapability.Utils.Lang@crossplatform |
+| Promise&lt;string&gt; | @syscap SystemCapability.Utils.Lang@crossplatform |
 
 **Example**
 

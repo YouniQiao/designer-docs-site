@@ -4,6 +4,8 @@ Declaration of the title bar style configuration.
 
 **Since:** 26.0.0
 
+**Decorator:** @ObservedV2
+
 <!--Device-unnamed-export declare class EditableTitleBarStyleV2--><!--Device-unnamed-export declare class EditableTitleBarStyleV2-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -14,6 +16,7 @@ Declaration of the title bar style configuration.
 import { EditableSaveButtonV2, EditableTitleBarStyleV2Options, EditableTitleBarStyleV2, EditableTitleBarItemV2, EditableLeftIconV2Options, EditableTitleBarMenuItemV2, EditableTitleBarV2, EditableTitleBarMenuItemV2Options, EditableSaveButtonV2Options, EditableTitleBarItemV2Options, EditableTitleV2Options, EditableTitleV2, EditableLeftIconV2, EditableLeftIconTypeV2 } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -106,7 +109,7 @@ public safeAreaEdges?: Array<SafeAreaEdge>
 
 Indicates the edges of the safe area.
 
-**Type:** Array<SafeAreaEdge>
+**Type:** Array&lt;SafeAreaEdge&gt;
 
 **Since:** 26.0.0
 
@@ -126,7 +129,7 @@ public safeAreaTypes?: Array<SafeAreaType>
 
 Indicates the types of the safe area.
 
-**Type:** Array<SafeAreaType>
+**Type:** Array&lt;SafeAreaType&gt;
 
 **Since:** 26.0.0
 

@@ -14,13 +14,14 @@ The EnvironmentCallback module provides capabilities to listen for system enviro
 import { EnvironmentCallback } from '@kit.AbilityKit';
 ```
 
+<a id="onconfigurationupdated"></a>
 ## onConfigurationUpdated
 
 ```TypeScript
 onConfigurationUpdated(config: Configuration): void
 ```
 
-Called when the system configuration changes, after [a listener has been registered for such events](arkts-ability-applicationcontext-c.md#on-2).
+Called when the system configuration changes, after [a listener has been registered for such events](./application/ApplicationContext:ApplicationContext#on(type: 'environment', callback: EnvironmentCallback)).
 
 **Since:** 9
 
@@ -36,19 +37,20 @@ Called when the system configuration changes, after [a listener has been registe
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| config | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-common-configuration-i.md) | Yes | Configuration object after the change. |
+| config | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-configuration-i.md) | Yes | Configuration object after the change. |
 
 **Example**
 
 See [Usage of EnvironmentCallback](#usage-of-environmentcallback).
 
+<a id="onmemorylevel"></a>
 ## onMemoryLevel
 
 ```TypeScript
 onMemoryLevel(level: AbilityConstant.MemoryLevel): void
 ```
 
-Called when the system memory level changes, after [a listener has been registered for such events](arkts-ability-applicationcontext-c.md#on-2).
+Called when the system memory level changes, after [a listener has been registered for such events](./application/ApplicationContext:ApplicationContext#on(type: 'environment', callback: EnvironmentCallback)).
 
 **Since:** 9
 

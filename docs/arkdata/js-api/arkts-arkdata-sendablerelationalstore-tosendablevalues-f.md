@@ -6,6 +6,7 @@
 import { sendableRelationalStore } from '@kit.ArkData';
 ```
 
+<a id="tosendablevalues"></a>
 ## toSendableValues
 
 ```TypeScript
@@ -30,7 +31,7 @@ Converts the array data that cannot be passed across threads into the data that 
 
 | Type | Description |
 | --- | --- |
-| collections.Array<ValueType> | Array data that can be passed across threads. |
+| collections.Array&lt;ValueType&gt; | Array data that can be passed across threads. |
 
 **Error codes:**
 

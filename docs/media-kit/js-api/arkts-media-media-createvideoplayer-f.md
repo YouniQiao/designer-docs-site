@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createvideoplayer"></a>
 ## createVideoPlayer
 
 ```TypeScript
@@ -18,7 +19,7 @@ Creates a **VideoPlayer** instance. This API uses an asynchronous callback to re
 
 **Deprecated since:** 9
 
-**Substitutes:** createAVPlayer(callback:
+**Substitutes:** [createAVPlayer(callback:](arkts-media-media-createavplayer-f.md#createavplayer-1)
 
 <!--Device-media-function createVideoPlayer(callback: AsyncCallback<VideoPlayer>): void--><!--Device-media-function createVideoPlayer(callback: AsyncCallback<VideoPlayer>): void-End-->
 
@@ -28,7 +29,7 @@ Creates a **VideoPlayer** instance. This API uses an asynchronous callback to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<VideoPlayer> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the VideoPlayer instance created; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;VideoPlayer&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the VideoPlayer instance created; otherwise, **err** is an error object. |
 
 **Example**
 
@@ -48,6 +49,7 @@ media.createVideoPlayer((error: BusinessError, video: media.VideoPlayer) => {
 ```
 
 
+<a id="createvideoplayer-1"></a>
 ## createVideoPlayer
 
 ```TypeScript
@@ -60,7 +62,7 @@ Creates a VideoPlayer instance. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [createAVPlayer()](arkts-media-media-createavplayer-f.md#createavplayer-3)
+**Substitutes:** [createAVPlayer()](arkts-media-media-createavplayer-f.md#createavplayer-1)
 
 <!--Device-media-function createVideoPlayer(): Promise<VideoPlayer>--><!--Device-media-function createVideoPlayer(): Promise<VideoPlayer>-End-->
 
@@ -70,7 +72,7 @@ Creates a VideoPlayer instance. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<VideoPlayer> | Promise used to return the result. If the operation is successful, a VideoPlayer instance is returned; otherwise, **null** is returned. The instance can be used to manage and play video. |
+| Promise&lt;VideoPlayer&gt; | Promise used to return the result. If the operation is successful, a VideoPlayer instance is returned; otherwise, **null** is returned. The instance can be used to manage and play video. |
 
 **Example**
 

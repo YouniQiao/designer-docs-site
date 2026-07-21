@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="getdefaultsmsslotid"></a>
 ## getDefaultSmsSlotId
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the default SIM card for sending SMS messages.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Indicates the callback for getting the default SIM card for sending SMS messages.Returns {@code 0} if the default SIM card for sending SMS messages is in card slot 1;Returns {@code 1} if the default SIM card for sending SMS messages is in card slot 2. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Indicates the callback for getting the default SIM card for sending SMS messages.Returns {@code 0} if the default SIM card for sending SMS messages is in card slot 1;Returns {@code 1} if the default SIM card for sending SMS messages is in card slot 2. |
 
 **Example**
 
@@ -39,6 +40,7 @@ sms.getDefaultSmsSlotId((err: BusinessError, data: number) => {
 ```
 
 
+<a id="getdefaultsmsslotid-1"></a>
 ## getDefaultSmsSlotId
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtains the default SIM card for sending SMS messages.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns {@code 0} if the default SIM card for sending SMS messages is in card slot 1;Returns {@code 1} if the default SIM card for sending SMS messages is in card slot 2. |
+| Promise&lt;number&gt; | Returns {@code 0} if the default SIM card for sending SMS messages is in card slot 1;Returns {@code 1} if the default SIM card for sending SMS messages is in card slot 2. |
 
 **Example**
 

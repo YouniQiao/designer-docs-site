@@ -6,6 +6,7 @@
 import { networkSecurity } from '@kit.NetworkKit';
 ```
 
+<a id="verifycertchain"></a>
 ## verifyCertChain
 
 ```TypeScript
@@ -34,7 +35,7 @@ Verifies the server certificate chain and returns a sorted chain.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CertBlob[]> | Returns a promise that resolves to the sorted certificate chain(ordered from leaf to root) if verification succeeds. |
+| Promise&lt;CertBlob[]&gt; | Returns a promise that resolves to the sorted certificate chain(ordered from leaf to root) if verification succeeds. |
 
 **Error codes:**
 

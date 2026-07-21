@@ -21,6 +21,7 @@ Defines a color filter.
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="createblendmodecolorfilter"></a>
 ## createBlendModeColorFilter
 
 ```TypeScript
@@ -40,13 +41,13 @@ Creates a **ColorFilter** object with a given color and blend mode.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | color | common2D.Color | Yes | Color in ARGB format. The value of each color channel is an integer ranging from 0 to 255. |
-| mode | [BlendMode](../../apis-arkui/arkts-components/arkts-arkui-common-blendmode-e.md) | Yes | Blend mode. |
+| mode | [BlendMode](../../apis-arkui/arkts-components/arkts-arkui-blendmode-e.md) | Yes | Blend mode. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Color filter. |
+| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Color filter. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ Creates a **ColorFilter** object with a given color and blend mode.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="createblendmodecolorfilter-1"></a>
 ## createBlendModeColorFilter
 
 ```TypeScript
@@ -73,13 +75,13 @@ Creates a **ColorFilter** object with a given color and blend mode.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | color | common2D.Color \| number | Yes | Color, represented by an unsigned integer in hexadecimal ARGB format. |
-| mode | [BlendMode](../../apis-arkui/arkts-components/arkts-arkui-common-blendmode-e.md) | Yes | Blend mode. |
+| mode | [BlendMode](../../apis-arkui/arkts-components/arkts-arkui-blendmode-e.md) | Yes | Blend mode. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Color filter. |
+| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Color filter. |
 
 **Error codes:**
 
@@ -87,6 +89,7 @@ Creates a **ColorFilter** object with a given color and blend mode.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="createcomposecolorfilter"></a>
 ## createComposeColorFilter
 
 ```TypeScript
@@ -105,14 +108,14 @@ Creates a **ColorFilter** object by combining another two color filters.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| outer | [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Yes | Color filter that takes effect later in the new filter. |
-| inner | [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Yes | Color filter that takes effect first in the new filter. |
+| outer | [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Yes | Color filter that takes effect later in the new filter. |
+| inner | [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Yes | Color filter that takes effect first in the new filter. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Color filter. |
+| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Color filter. |
 
 **Error codes:**
 
@@ -120,6 +123,7 @@ Creates a **ColorFilter** object by combining another two color filters.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="createlightingcolorfilter"></a>
 ## createLightingColorFilter
 
 ```TypeScript
@@ -145,8 +149,9 @@ Creates a lighting color filter. It multiplies the RGB channel values by one col
 
 | Type | Description |
 | --- | --- |
-| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | **ColorFilter** object created. |
+| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | **ColorFilter** object created. |
 
+<a id="createlineartosrgbgamma"></a>
 ## createLinearToSRGBGamma
 
 ```TypeScript
@@ -165,8 +170,9 @@ Creates a **ColorFilter** object that applies the sRGB gamma curve to the RGB ch
 
 | Type | Description |
 | --- | --- |
-| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Color filter. |
+| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Color filter. |
 
+<a id="createlumacolorfilter"></a>
 ## createLumaColorFilter
 
 ```TypeScript
@@ -185,8 +191,9 @@ Creates a **ColorFilter** object that multiplies the luma into the alpha channel
 
 | Type | Description |
 | --- | --- |
-| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Color filter. |
+| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Color filter. |
 
+<a id="creatematrixcolorfilter"></a>
 ## createMatrixColorFilter
 
 ```TypeScript
@@ -205,13 +212,13 @@ Creates a color filter object with a 4*5 color matrix.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| matrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | An array of 20 numbers, indicating the 4*5 matrix. |
+| matrix | Array&lt;number&gt; | Yes | An array of 20 numbers, indicating the 4*5 matrix. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Color filter. |
+| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Color filter. |
 
 **Error codes:**
 
@@ -219,6 +226,7 @@ Creates a color filter object with a 4*5 color matrix.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="createsrgbgammatolinear"></a>
 ## createSRGBGammaToLinear
 
 ```TypeScript
@@ -237,5 +245,5 @@ Creates a **ColorFilter** object that applies the RGB channels to the sRGB gamma
 
 | Type | Description |
 | --- | --- |
-| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Color filter. |
+| [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Color filter. |
 

@@ -8,6 +8,7 @@ Defines the layer mask of the node.
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="getenabled"></a>
 ## getEnabled
 
 ```TypeScript
@@ -34,6 +35,7 @@ Get whether layer mask is enabled.
 | --- | --- |
 | boolean | whether layer mask is enabled |
 
+<a id="setenabled"></a>
 ## setEnabled
 
 ```TypeScript

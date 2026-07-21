@@ -6,17 +6,20 @@ Vertical linear layout algorithm class.
 >  
 > The object of the **ColumnLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as  
 > the input parameter of the  
-> [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the  
+> [DynamicLayout](docroot://reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the  
 > layout algorithm.
 
 **Inheritance/Implementation:** ColumnLayoutAlgorithm implements [LayoutAlgorithm](arkts-arkui-layoutalgorithm-i.md)
 
 **Since:** 24
 
+**Decorator:** @ObservedV2
+
 <!--Device-unnamed-export class ColumnLayoutAlgorithm implements LayoutAlgorithm--><!--Device-unnamed-export class ColumnLayoutAlgorithm implements LayoutAlgorithm-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

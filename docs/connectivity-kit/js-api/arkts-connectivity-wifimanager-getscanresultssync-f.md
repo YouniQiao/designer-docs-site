@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getscanresultssync"></a>
 ## getScanResultsSync
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtain the scanned sta list.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WifiScanInfo> | Returns information about scanned Wi-Fi hotspot if any. |
+| Array&lt;WifiScanInfo&gt; | Returns information about scanned Wi-Fi hotspot if any. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="on"></a>
 ## on('openDLPFile')
 
 ```TypeScript
@@ -27,7 +28,7 @@ You can subscribe to this event when your application needs to perform specific 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'openDLPFile' | Yes | Event type. It has a fixed value of **openDLPFile**, which indicates the DLP file open event. |
-| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AccessedDLPFileInfo> | Yes | Callback invoked when a DLP file is opened. The application will be notified when the DLP file is opened. |
+| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AccessedDLPFileInfo&gt; | Yes | Callback invoked when a DLP file is opened. The application will be notified when the DLP file is opened. |
 
 **Error codes:**
 

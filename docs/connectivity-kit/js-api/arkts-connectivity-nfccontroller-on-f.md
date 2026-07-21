@@ -6,6 +6,7 @@
 import { nfcController } from '@kit.ConnectivityKit';
 ```
 
+<a id="on"></a>
 ## on('nfcStateChange')
 
 ```TypeScript
@@ -27,5 +28,5 @@ register nfc state changed event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'nfcStateChange' | Yes | The type to register. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NfcState> | Yes | Callback used to listen to the nfc state changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NfcState&gt; | Yes | Callback used to listen to the nfc state changed event. |
 

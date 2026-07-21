@@ -14,6 +14,7 @@ Provides APIs to obtain information about trusted devices and local devices. Bef
 import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="bindtarget"></a>
 ## bindTarget
 
 ```TypeScript
@@ -36,7 +37,7 @@ Binds a device. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Device ID. The value is a string of 1 to 255 characters. |
 | bindParam | { [key: string]: Object; } | Yes | Authentication parameters.You can determine the key-value pair to be passed in. By default, the following keys are carried:<br>**bindType**: binding type, which is mandatory.<br>The value **1** means PIN authentication.<br>**targetPkgName**: bundle name of the target to bind.<br>**appName**: application that attempts to bind the target.<br>**appOperation**: reason for the application to bind the target.<br>**customDescription**: detailed description of the operation. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<{deviceId: string;}> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;{deviceId: string;}&gt; | Yes |  |
 
 **Error codes:**
 
@@ -83,6 +84,7 @@ try {
 
 ```
 
+<a id="getavailabledevicelist"></a>
 ## getAvailableDeviceList
 
 ```TypeScript
@@ -103,7 +105,7 @@ Obtains all trusted devices. This API uses an asynchronous callback to return th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<DeviceBasicInfo>> | Yes | Callback used to return the list of trusted devices. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;DeviceBasicInfo&gt;&gt; | Yes | Callback used to return the list of trusted devices. |
 
 **Error codes:**
 
@@ -134,6 +136,7 @@ try {
 
 ```
 
+<a id="getavailabledevicelist-1"></a>
 ## getAvailableDeviceList
 
 ```TypeScript
@@ -154,7 +157,7 @@ Obtains all trusted devices. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<DeviceBasicInfo>> | Promise used to return the result. |
+| Promise&lt;Array&lt;DeviceBasicInfo&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -178,6 +181,7 @@ dmInstance.getAvailableDeviceList().then((data: Array<distributedDeviceManager.D
 
 ```
 
+<a id="getavailabledevicelistsync"></a>
 ## getAvailableDeviceListSync
 
 ```TypeScript
@@ -198,7 +202,7 @@ Obtains all trusted devices synchronously.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DeviceBasicInfo> | List of trusted devices obtained. |
+| Array&lt;DeviceBasicInfo&gt; | List of trusted devices obtained. |
 
 **Error codes:**
 
@@ -223,6 +227,7 @@ try {
 
 ```
 
+<a id="getdevicename"></a>
 ## getDeviceName
 
 ```TypeScript
@@ -278,6 +283,7 @@ try {
 
 ```
 
+<a id="getdevicetype"></a>
 ## getDeviceType
 
 ```TypeScript
@@ -304,7 +310,7 @@ Obtains the device type based on the network ID of the specified device.
 
 | Type | Description |
 | --- | --- |
-| number | &lt;!--RP2--&gt;Device type obtained.&lt;!--RP2End--&gt; |
+| number | <!--RP2-->Device type obtained.<!--RP2End--> |
 
 **Error codes:**
 
@@ -333,6 +339,7 @@ try {
 
 ```
 
+<a id="getlocaldeviceid"></a>
 ## getLocalDeviceId
 
 ```TypeScript
@@ -379,6 +386,7 @@ try {
 
 ```
 
+<a id="getlocaldevicename"></a>
 ## getLocalDeviceName
 
 ```TypeScript
@@ -425,6 +433,7 @@ try {
 
 ```
 
+<a id="getlocaldevicenetworkid"></a>
 ## getLocalDeviceNetworkId
 
 ```TypeScript
@@ -471,6 +480,7 @@ try {
 
 ```
 
+<a id="getlocaldevicetype"></a>
 ## getLocalDeviceType
 
 ```TypeScript
@@ -491,7 +501,7 @@ Obtains the local device type.
 
 | Type | Description |
 | --- | --- |
-| number | &lt;!--RP1--&gt;Local device type obtained.&lt;!--RP1End--&gt; |
+| number | <!--RP1-->Local device type obtained.<!--RP1End--> |
 
 **Error codes:**
 
@@ -517,6 +527,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('deviceStateChange')
 
 ```TypeScript
@@ -538,7 +549,7 @@ Unsubscribes from the device state changes. This API uses an asynchronous callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceStateChange' | Yes | Event type. The value **'deviceStateChange'** indicates device state changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ action: DeviceStateChange; device: DeviceBasicInfo; }> | No |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ action: DeviceStateChange; device: DeviceBasicInfo; }&gt; | No |  |
 
 **Error codes:**
 
@@ -575,6 +586,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('discoverSuccess')
 
 ```TypeScript
@@ -596,7 +608,7 @@ Unsubscribes from the **'discoverSuccess'** event. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discoverSuccess' | Yes | Event type, which has a fixed value of **'discoverSuccess'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ device: DeviceBasicInfo; }> | No |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ device: DeviceBasicInfo; }&gt; | No |  |
 
 **Error codes:**
 
@@ -632,6 +644,7 @@ try {
 
 ```
 
+<a id="off-2"></a>
 ## off('deviceNameChange')
 
 ```TypeScript
@@ -653,7 +666,7 @@ Unsubscribes from the device name changes. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceNameChange' | Yes | Event type, which has a fixed value of **deviceNameChange**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ deviceName: string; }> | No |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ deviceName: string; }&gt; | No |  |
 
 **Error codes:**
 
@@ -684,6 +697,7 @@ try {
 
 ```
 
+<a id="off-3"></a>
 ## off('discoverFailure')
 
 ```TypeScript
@@ -705,7 +719,7 @@ Unsubscribes from the **'discoverFailure'** event. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discoverFailure' | Yes | Event type, which has a fixed value of **'discoverFailure'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ reason: number; }> | No |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ reason: number; }&gt; | No |  |
 
 **Error codes:**
 
@@ -736,6 +750,7 @@ try {
 
 ```
 
+<a id="off-4"></a>
 ## off('serviceDie')
 
 ```TypeScript
@@ -757,7 +772,7 @@ Unsubscribes from the dead events of the **DeviceManager** service. This API use
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serviceDie' | Yes | Event type, which has a fixed value of **'serviceDie'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{}> | No |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{}&gt; | No |  |
 
 **Error codes:**
 
@@ -784,6 +799,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('deviceStateChange')
 
 ```TypeScript
@@ -805,7 +821,7 @@ Subscribes to the device state changes. The application (identified by the bundl
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceStateChange' | Yes | Event type. The value **'deviceStateChange'** indicates device state changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ action: DeviceStateChange; device: DeviceBasicInfo; }> | Yes |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ action: DeviceStateChange; device: DeviceBasicInfo; }&gt; | Yes |  |
 
 **Error codes:**
 
@@ -842,6 +858,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on('discoverSuccess')
 
 ```TypeScript
@@ -863,7 +880,7 @@ Subscribes to the **'discoverSuccess'** event. The application will be notified 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discoverSuccess' | Yes | Event type, which has a fixed value of **'discoverSuccess'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ device: DeviceBasicInfo; }> | Yes |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ device: DeviceBasicInfo; }&gt; | Yes |  |
 
 **Error codes:**
 
@@ -899,6 +916,7 @@ try {
 
 ```
 
+<a id="on-2"></a>
 ## on('deviceNameChange')
 
 ```TypeScript
@@ -920,7 +938,7 @@ Subscribes to device name changes. The application will be notified when the nam
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceNameChange' | Yes | Event type, which has a fixed value of **deviceNameChange**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ deviceName: string; }> | Yes |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ deviceName: string; }&gt; | Yes |  |
 
 **Error codes:**
 
@@ -951,6 +969,7 @@ try {
 
 ```
 
+<a id="on-3"></a>
 ## on('discoverFailure')
 
 ```TypeScript
@@ -972,7 +991,7 @@ Subscribes to the **'discoverFailure'** event. The application will be notified 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discoverFailure' | Yes | Event type, which has a fixed value of **'discoverFailure'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ reason: number; }> | Yes |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ reason: number; }&gt; | Yes |  |
 
 **Error codes:**
 
@@ -1003,6 +1022,7 @@ try {
 
 ```
 
+<a id="on-4"></a>
 ## on('serviceDie')
 
 ```TypeScript
@@ -1024,7 +1044,7 @@ Subscribes to the dead events of the **DeviceManager** service. The application 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serviceDie' | Yes | Event type, which has a fixed value of **'serviceDie'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{}> | No |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{}&gt; | No |  |
 
 **Error codes:**
 
@@ -1051,6 +1071,7 @@ try {
 
 ```
 
+<a id="startdiscovering"></a>
 ## startDiscovering
 
 ```TypeScript
@@ -1117,6 +1138,7 @@ try {
 
 ```
 
+<a id="stopdiscovering"></a>
 ## stopDiscovering
 
 ```TypeScript
@@ -1156,6 +1178,7 @@ try {
 
 ```
 
+<a id="unbindtarget"></a>
 ## unbindTarget
 
 ```TypeScript

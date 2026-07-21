@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getp2ppeerdevices"></a>
 ## getP2pPeerDevices
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtain the information about the found devices.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WifiP2pDevice[]> | Returns p2p device information. |
+| Promise&lt;WifiP2pDevice[]&gt; | Returns p2p device information. |
 
 **Error codes:**
 
@@ -37,6 +38,7 @@ Obtain the information about the found devices.
 | [2801000](../errorcode-wifi.md#2801000-p2p-module-error) | Operation failed. |
 
 
+<a id="getp2ppeerdevices-1"></a>
 ## getP2pPeerDevices
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtain the information about the found devices.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WifiP2pDevice[]> | Yes | Indicates callback of function. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WifiP2pDevice[]&gt; | Yes | Indicates callback of function. |
 
 **Error codes:**
 

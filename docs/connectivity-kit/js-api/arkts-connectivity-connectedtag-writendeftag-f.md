@@ -6,6 +6,7 @@
 import { connectedTag } from '@kit.ConnectivityKit';
 ```
 
+<a id="writendeftag"></a>
 ## writeNdefTag
 
 ```TypeScript
@@ -36,7 +37,7 @@ Writes the NDEF Data.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void. |
+| Promise&lt;void&gt; | The void. |
 
 **Example**
 
@@ -54,6 +55,7 @@ connectedTag.writeNdefTag(rawData).then(() => {
 ```
 
 
+<a id="writendeftag-1"></a>
 ## writeNdefTag
 
 ```TypeScript
@@ -79,7 +81,7 @@ Writes the NDEF Data.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | string | Yes | The Data to write. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes |  |
 
 **Example**
 

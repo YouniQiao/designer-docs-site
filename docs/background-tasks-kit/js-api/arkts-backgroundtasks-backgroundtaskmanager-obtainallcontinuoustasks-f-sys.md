@@ -6,6 +6,7 @@
 import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="obtainallcontinuoustasks"></a>
 ## obtainAllContinuousTasks
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains all continuous task information, including the task ID and type. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ContinuousTaskInfo[]> | Promise that returns all continuous task information. |
+| Promise&lt;ContinuousTaskInfo[]&gt; | Promise that returns all continuous task information. |
 
 **Error codes:**
 

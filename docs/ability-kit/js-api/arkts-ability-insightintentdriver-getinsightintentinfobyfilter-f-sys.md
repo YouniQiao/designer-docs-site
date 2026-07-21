@@ -6,6 +6,7 @@
 import { insightIntentDriver } from '@kit.AbilityKit';
 ```
 
+<a id="getinsightintentinfobyfilter"></a>
 ## getInsightIntentInfoByFilter
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the intent information on the current device based on the given intent f
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<InsightIntentInfo>> | Promise used to return an array holding InsightIntentInfo objects. |
+| Promise&lt;Array&lt;InsightIntentInfo&gt;&gt; | Promise used to return an array holding InsightIntentInfo objects. |
 
 **Error codes:**
 

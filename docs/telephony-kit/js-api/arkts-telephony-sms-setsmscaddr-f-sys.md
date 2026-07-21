@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="setsmscaddr"></a>
 ## setSmscAddr
 
 ```TypeScript
@@ -30,7 +31,7 @@ Sets the address for the Short Message Service Center (SMSC) based on a specifie
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the ID of the slot holding the SIM card for sending SMS messages. |
 | smscAddr | string | Yes | Indicates the SMSC address. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setSmscAddr. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setSmscAddr. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ sms.setSmscAddr(slotId, smscAddr, (err: BusinessError) => {
 ```
 
 
+<a id="setsmscaddr-1"></a>
 ## setSmscAddr
 
 ```TypeScript
@@ -88,7 +90,7 @@ Sets the address for the Short Message Service Center (SMSC) based on a specifie
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setSmscAddr. |
+| Promise&lt;void&gt; | The promise returned by the setSmscAddr. |
 
 **Error codes:**
 

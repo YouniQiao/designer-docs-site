@@ -24,19 +24,19 @@ import { collections } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [Array](arkts-arkts-collections-array-c.md) | A linear data structure that is implemented on arrays and can be passed between ArkTS concurrent instances.Pass-by-reference is recommended for better transfer performance.@Sendable |
-| [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md) | Underlying data structure of the ArkTS TypedArray ([Int8Array](arkts-collections.md),[Uint8Array](arkts-collections.md),[Int16Array](arkts-collections.md),[Uint16Array](arkts-collections.md),[Int32Array](arkts-collections.md),[Uint32Array](arkts-collections.md),[Uint8ClampedArray](arkts-collections.md), and [Float32Array](arkts-collections.md)).@Sendable |
-| [BitVector](arkts-arkts-collections-bitvector-c.md) | A linear data structure that is implemented on arrays. A bit vector stores bit values and provides bit-level storage and processing.@Sendable |
-| [Float32Array](arkts-arkts-collections-float32array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).@Sendable |
-| [Int16Array](arkts-arkts-collections-int16array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).@Sendable |
-| [Int32Array](arkts-arkts-collections-int32array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).@Sendable |
-| [Int8Array](arkts-arkts-collections-int8array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).@Sendable |
-| [Map](arkts-arkts-collections-map-c.md) | A non-linear data structure.@Sendable |
-| [Set](arkts-arkts-collections-set-c.md) | A non-linear data structure.@Sendable |
-| [Uint16Array](arkts-arkts-collections-uint16array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).@Sendable |
-| [Uint32Array](arkts-arkts-collections-uint32array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).@Sendable |
-| [Uint8Array](arkts-arkts-collections-uint8array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).@Sendable |
-| [Uint8ClampedArray](arkts-arkts-collections-uint8clampedarray-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).@Sendable |
+| [Array](arkts-arkts-collections-array-c.md) | A linear data structure that is implemented on arrays and can be passed between ArkTS concurrent instances.Pass-by-reference is recommended for better transfer performance.  @Sendable |
+| [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md) | Underlying data structure of the ArkTS TypedArray ([Int8Array](arkts-collections.md),[Uint8Array](arkts-collections.md),[Int16Array](arkts-collections.md),[Uint16Array](arkts-collections.md),[Int32Array](arkts-collections.md),[Uint32Array](arkts-collections.md),[Uint8ClampedArray](arkts-collections.md), and [Float32Array](arkts-collections.md)).  @Sendable |
+| [BitVector](arkts-arkts-collections-bitvector-c.md) | A linear data structure that is implemented on arrays. A bit vector stores bit values and provides bit-level storage and processing.  @Sendable |
+| [Float32Array](arkts-arkts-collections-float32array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).  @Sendable |
+| [Int16Array](arkts-arkts-collections-int16array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).  @Sendable |
+| [Int32Array](arkts-arkts-collections-int32array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).  @Sendable |
+| [Int8Array](arkts-arkts-collections-int8array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).  @Sendable |
+| [Map](arkts-arkts-collections-map-c.md) | A non-linear data structure.  @Sendable |
+| [Set](arkts-arkts-collections-set-c.md) | A non-linear data structure.  @Sendable |
+| [Uint16Array](arkts-arkts-collections-uint16array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).  @Sendable |
+| [Uint32Array](arkts-arkts-collections-uint32array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).  @Sendable |
+| [Uint8Array](arkts-arkts-collections-uint8array-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).  @Sendable |
+| [Uint8ClampedArray](arkts-arkts-collections-uint8clampedarray-c.md) | A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).  @Sendable |
 
 ### Interfaces
 

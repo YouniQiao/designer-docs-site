@@ -14,6 +14,7 @@ Defines the default or custom style parameters for the **ArcButton** component.
 import { ArcButtonPosition, ArcButton, ArcButtonStatus, ArcButtonStyleMode, ArcButtonOptions, ArcButtonProgressConfig } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -108,7 +109,7 @@ fontFamily: string | Resource
 
 Font family of the arc button.
 
-**Type:** string | Resource
+**Type:** string \| Resource
 
 **Since:** 18
 
@@ -204,7 +205,7 @@ onClick?: Callback<ClickEvent>
 
 Callback triggered by click actions on the arc button.
 
-**Type:** Callback<ClickEvent>
+**Type:** Callback&lt;ClickEvent&gt;
 
 **Since:** 18
 
@@ -222,7 +223,7 @@ onTouch?: Callback<TouchEvent>
 
 Callback triggered by touch actions on the arc button.
 
-**Type:** Callback<TouchEvent>
+**Type:** Callback&lt;TouchEvent&gt;
 
 **Since:** 18
 
@@ -280,7 +281,7 @@ Default value: **Color.White**
 progressConfig?: ArcButtonProgressConfig
 ```
 
-Parameters for the progress indicator of the **ArcButton** component. If this property is not set, the **ArcButton** component is displayed as a button (see [Example 1](../../../../reference/apis-arkui/arkui-ts/ohos-arkui-advanced-ArcButton.md#example-1-setting-an-arc-button)). If this property is set, the component is displayed as a progress indicator (see [Example 2](../../../../reference/apis-arkui/arkui-ts/ohos-arkui-advanced-ArcButton.md#example-2-setting-a-device-progress-indicator-button)). The progress indicator style is not affected by the settings of the [ArcButtonStyleMode](arkts-arkui-arkui-advanced-arcbutton-arcbuttonstylemode-e.md) attribute.
+Parameters for the progress indicator of the **ArcButton** component. If this property is not set, the **ArcButton** component is displayed as a button (see [Example 1](docroot://reference/apis-arkui/arkui-ts/ohos-arkui-advanced-ArcButton.md#example-1-setting-an-arc-button)). If this property is set, the component is displayed as a progress indicator (see [Example 2](docroot://reference/apis-arkui/arkui-ts/ohos-arkui-advanced-ArcButton.md#example-2-setting-a-device-progress-indicator-button)). The progress indicator style is not affected by the settings of the [ArcButtonStyleMode](arkts-arkui-arkui-advanced-arcbutton-arcbuttonstylemode-e.md) attribute.
 
 Default value: default values of all properties of [ArcButtonProgressConfig](arkts-arkui-arkui-advanced-arcbutton-arcbuttonprogressconfig-c.md)
 

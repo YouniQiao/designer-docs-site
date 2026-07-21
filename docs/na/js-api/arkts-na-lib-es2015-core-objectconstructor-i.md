@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface ObjectConstructor--><!--Device-unnamed-interface ObjectConstructor-End-->
 
+<a id="assign"></a>
 ## assign
 
 ```TypeScript
@@ -25,6 +26,7 @@ Copy the values of all of the enumerable own properties from one or more source 
 | --- | --- |
 | T & U |  |
 
+<a id="assign-1"></a>
 ## assign
 
 ```TypeScript
@@ -49,6 +51,7 @@ Copy the values of all of the enumerable own properties from one or more source 
 | --- | --- |
 | T & U & V |  |
 
+<a id="assign-2"></a>
 ## assign
 
 ```TypeScript
@@ -74,6 +77,7 @@ Copy the values of all of the enumerable own properties from one or more source 
 | --- | --- |
 | T & U & V & W |  |
 
+<a id="assign-3"></a>
 ## assign
 
 ```TypeScript
@@ -97,6 +101,7 @@ Copy the values of all of the enumerable own properties from one or more source 
 | --- | --- |
 | any |  |
 
+<a id="getownpropertysymbols"></a>
 ## getOwnPropertySymbols
 
 ```TypeScript
@@ -119,6 +124,7 @@ Returns an array of all symbol properties found directly on object o.
 | --- | --- |
 | symbol[] |  |
 
+<a id="is"></a>
 ## is
 
 ```TypeScript
@@ -142,6 +148,7 @@ Returns true if the values are the same value, false otherwise.
 | --- | --- |
 | boolean |  |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -164,6 +171,7 @@ Returns the names of the enumerable string properties and methods of an object.
 | --- | --- |
 | string[] |  |
 
+<a id="setprototypeof"></a>
 ## setPrototypeOf
 
 ```TypeScript

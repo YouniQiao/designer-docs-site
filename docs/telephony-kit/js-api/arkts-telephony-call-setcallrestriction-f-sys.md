@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="setcallrestriction"></a>
 ## setCallRestriction
 
 ```TypeScript
@@ -30,7 +31,7 @@ Set call barring status.
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | info | [CallRestrictionInfo](arkts-telephony-call-callrestrictioninfo-i-sys.md) | Yes | Indicates the set call restriction information. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setCallRestriction. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setCallRestriction. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ call.setCallRestriction(0, callRestrictionInfo, (err: BusinessError) => {
 ```
 
 
+<a id="setcallrestriction-1"></a>
 ## setCallRestriction
 
 ```TypeScript
@@ -94,7 +96,7 @@ Set call barring status.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setCallRestriction. |
+| Promise&lt;void&gt; | The promise returned by the setCallRestriction. |
 
 **Error codes:**
 

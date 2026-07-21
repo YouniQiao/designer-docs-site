@@ -1,5 +1,6 @@
 # chown
 
+<a id="chown"></a>
 ## chown
 
 ```TypeScript
@@ -28,9 +29,10 @@ Changes the file owner based on the file path. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 
+<a id="chown-1"></a>
 ## chown
 
 ```TypeScript
@@ -54,5 +56,5 @@ Changes the file owner based on the file path. This API uses an asynchronous cal
 | path | string | Yes | Application sandbox path of the file. |
 | uid | number | Yes | New UID. |
 | gid | number | Yes | New GID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file owner is changed asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when the file owner is changed asynchronously. |
 

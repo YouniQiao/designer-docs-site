@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="disableadmin"></a>
 ## disableAdmin
 
 ```TypeScript
@@ -38,7 +39,7 @@ Disables a device administrator application for the specified user. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. If the operation fails, an error object will be thrown. |
+| Promise&lt;void&gt; | Promise that returns no value. If the operation fails, an error object will be thrown. |
 
 **Error codes:**
 

@@ -36,7 +36,7 @@ Default value: **{ width: 0, height: 0 }**.
 surfaceId?: string
 ```
 
-Surface ID of the texture receiver. Typically, the texture receiver is [OH_NativeImage](../../../../reference/apis-arkgraphics2d/capi-oh-nativeimage-oh-nativeimage.md).
+Surface ID of the texture receiver. Typically, the texture receiver is [OH_NativeImage](docroot://reference/apis-arkgraphics2d/capi-oh-nativeimage-oh-nativeimage.md).
 
 This parameter is effective only when **type** is set to **NodeRenderType.RENDER_TYPE_TEXTURE**.
 

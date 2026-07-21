@@ -6,6 +6,7 @@
 import { advertising } from '@kit.ConnectivityKit';
 ```
 
+<a id="startadvertising"></a>
 ## startAdvertising
 
 ```TypeScript
@@ -34,7 +35,7 @@ Starts advertising.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the promise object advertise handle. |
+| Promise&lt;number&gt; | Returns the promise object advertise handle. |
 
 **Error codes:**
 

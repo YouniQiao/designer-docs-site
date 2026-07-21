@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="addsimmessage"></a>
 ## addSimMessage
 
 ```TypeScript
@@ -29,7 +30,7 @@ Add an SMS Message to SIM card.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [SimMessageOptions](arkts-telephony-sms-simmessageoptions-i-sys.md) | Yes | Indicates SIM message options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of addSimMessage. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of addSimMessage. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ sms.addSimMessage(simMessageOptions, (err: BusinessError) => {
 ```
 
 
+<a id="addsimmessage-1"></a>
 ## addSimMessage
 
 ```TypeScript
@@ -90,7 +92,7 @@ Add an SMS Message to SIM card.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the addSimMessage. |
+| Promise&lt;void&gt; | The promise returned by the addSimMessage. |
 
 **Error codes:**
 

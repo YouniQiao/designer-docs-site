@@ -16,6 +16,7 @@ Defines the OS account sub-profile manager class.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="createosaccountsubprofile"></a>
 ## createOsAccountSubProfile
 
 ```TypeScript
@@ -46,7 +47,7 @@ Creates an OS account sub-profile.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountSubProfile> | Promise used to return the created sub-profile. |
+| Promise&lt;OsAccountSubProfile&gt; | Promise used to return the created sub-profile. |
 
 **Error codes:**
 
@@ -82,6 +83,7 @@ try {
 
 ```
 
+<a id="deleteosaccountsubprofile"></a>
 ## deleteOsAccountSubProfile
 
 ```TypeScript
@@ -113,7 +115,7 @@ Deletes an OS account sub-profile.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -150,6 +152,7 @@ try {
 
 ```
 
+<a id="getosaccountforegroundsubprofileid"></a>
 ## getOsAccountForegroundSubProfileId
 
 ```TypeScript
@@ -172,7 +175,7 @@ Gets the foreground sub-profile ID of the OS account to which the caller belongs
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the id of the OS account foreground sub-profile. |
+| Promise&lt;number&gt; | Promise used to return the id of the OS account foreground sub-profile. |
 
 **Error codes:**
 
@@ -201,6 +204,7 @@ try {
 
 ```
 
+<a id="getosaccountforegroundsubprofileid-1"></a>
 ## getOsAccountForegroundSubProfileId
 
 ```TypeScript
@@ -229,7 +233,7 @@ Gets the foreground sub-profile ID of a specified OS account.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the id of the OS account foreground sub-profile. |
+| Promise&lt;number&gt; | Promise used to return the id of the OS account foreground sub-profile. |
 
 **Error codes:**
 
@@ -262,6 +266,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalidforsubprofile"></a>
 ## getOsAccountLocalIdForSubProfile
 
 ```TypeScript
@@ -290,7 +295,7 @@ Obtains the local ID of the OS account to which a sub-profile belongs.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the local ID of the OS account to which a sub-profile belongs. |
+| Promise&lt;number&gt; | Promise used to return the local ID of the OS account to which a sub-profile belongs. |
 
 **Error codes:**
 
@@ -322,6 +327,7 @@ try {
 
 ```
 
+<a id="getosaccountsubprofile"></a>
 ## getOsAccountSubProfile
 
 ```TypeScript
@@ -352,7 +358,7 @@ Gets the sub-profile object information of the OS account to which the caller be
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountSubProfile> | Promise used to return the sub-profile object information. |
+| Promise&lt;OsAccountSubProfile&gt; | Promise used to return the sub-profile object information. |
 
 **Error codes:**
 
@@ -385,6 +391,7 @@ try {
 
 ```
 
+<a id="getosaccountsubprofile-1"></a>
 ## getOsAccountSubProfile
 
 ```TypeScript
@@ -416,7 +423,7 @@ Gets the sub-profile object information of the specified OS account.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountSubProfile> | Promise used to return the sub-profile object information. |
+| Promise&lt;OsAccountSubProfile&gt; | Promise used to return the sub-profile object information. |
 
 **Error codes:**
 
@@ -450,6 +457,7 @@ try {
 
 ```
 
+<a id="getosaccountsubprofileids"></a>
 ## getOsAccountSubProfileIds
 
 ```TypeScript
@@ -474,7 +482,7 @@ Gets the ID list of sub-profile of the OS account to which the caller belongs.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number[]> | Promise used to return the ID list of sub-profile. |
+| Promise&lt;number[]&gt; | Promise used to return the ID list of sub-profile. |
 
 **Error codes:**
 
@@ -503,6 +511,7 @@ try {
 
 ```
 
+<a id="getosaccountsubprofileids-1"></a>
 ## getOsAccountSubProfileIds
 
 ```TypeScript
@@ -533,7 +542,7 @@ Gets the ID list of sub-profile of a specified OS account.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number[]> | Promise used to return the ID list of sub-profile. |
+| Promise&lt;number[]&gt; | Promise used to return the ID list of sub-profile. |
 
 **Error codes:**
 
@@ -566,6 +575,7 @@ try {
 
 ```
 
+<a id="offosaccountsubprofileevent"></a>
 ## offOsAccountSubProfileEvent
 
 ```TypeScript
@@ -588,7 +598,7 @@ Unsubscribes from OS account sub-profile events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OsAccountSubProfileEventData> | No | Callback to be unsubscribed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OsAccountSubProfileEventData&gt; | No | Callback to be unsubscribed. |
 
 **Error codes:**
 
@@ -612,6 +622,7 @@ try {
 
 ```
 
+<a id="onosaccountsubprofileevent"></a>
 ## onOsAccountSubProfileEvent
 
 ```TypeScript
@@ -641,7 +652,7 @@ Subscribes to OS account sub-profile events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | events | [OsAccountSubProfileEvent](arkts-basicservices-osaccount-osaccountsubprofileevent-e-sys.md)[] | Yes | Array of events to be subscribed |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OsAccountSubProfileEventData> | Yes | Callback invoked when an event occurs. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OsAccountSubProfileEventData&gt; | Yes | Callback invoked when an event occurs. |
 
 **Error codes:**
 
@@ -671,6 +682,7 @@ try {
 
 ```
 
+<a id="switchosaccountsubprofile"></a>
 ## switchOsAccountSubProfile
 
 ```TypeScript
@@ -702,7 +714,7 @@ Switches to an OS account sub-profile.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

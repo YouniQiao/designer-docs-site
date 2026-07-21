@@ -4,7 +4,7 @@ Provides APIs to access the result set obtained by querying the RDB store. This 
 
 The **ResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data.
 
-For the following APIs, you should use either [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates)),[querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1),[remoteQuery](@ohos.data.relationalStore:relationalStore.RdbStore.remoteQuery(device: string, table: string)), or [queryLockedRow](arkts-arkdata-relationalstore-rdbstore-i.md#querylockedrow-1) to obtain the **ResultSet** instance first, and then use this instance to call the corresponding method.
+For the following APIs, you should use either [query](arkts-arkdata-relationalstore-rdbstore-i.md#query-1),[querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1),[remoteQuery](arkts-arkdata-relationalstore-rdbstore-i.md#remotequery-1), or [queryLockedRow](arkts-arkdata-relationalstore-rdbstore-i.md#querylockedrow-1) to obtain the **ResultSet** instance first, and then use this instance to call the corresponding method.
 
 **Since:** 9
 
@@ -18,6 +18,7 @@ For the following APIs, you should use either [query](@ohos.data.relationalStore
 import { relationalStore } from '@kit.ArkData';
 ```
 
+<a id="getfloat32array"></a>
 ## getFloat32Array
 
 ```TypeScript
@@ -44,7 +45,7 @@ Obtains the value of the specified column in the current row as a float array.Th
 
 | Type | Description |
 | --- | --- |
-| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | The value of the specified column as a float array. |
+| Float32Array | The value of the specified column as a float array. |
 
 **Error codes:**
 

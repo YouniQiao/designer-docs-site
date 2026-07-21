@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="savetoexistingcontactviaui"></a>
 ## saveToExistingContactViaUI
 
 ```TypeScript
@@ -33,7 +34,7 @@ Saves the information to an existing contact through UI interaction.. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result, which is the contact ID. |
+| Promise&lt;number&gt; | Promise used to return the result, which is the contact ID. |
 
 **Error codes:**
 

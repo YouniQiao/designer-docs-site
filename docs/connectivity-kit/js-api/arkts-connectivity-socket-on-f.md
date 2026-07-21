@@ -6,6 +6,7 @@
 import { socket } from '@kit.ConnectivityKit';
 ```
 
+<a id="on"></a>
 ## on('sppRead')
 
 ```TypeScript
@@ -26,7 +27,7 @@ Subscribe the event reported when data is read from the socket.
 | --- | --- | --- | --- |
 | type | 'sppRead' | Yes | Type of the spp read event to listen for. |
 | clientSocket | number | Yes | Client socket ID, which is obtained by sppAccept or sppConnect. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ArrayBuffer> | Yes | Callback used to listen for the spp read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ArrayBuffer&gt; | Yes | Callback used to listen for the spp read event. |
 
 **Error codes:**
 

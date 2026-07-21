@@ -18,6 +18,7 @@ This API inherits from [BaseShape](arkts-arkui-arkui-shape-baseshape-c.md).
 import { RectShape, CircleShape, EllipseShape, PathShape } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -42,8 +43,9 @@ A constructor used to create a **RectShape** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | RectShapeOptions \| RoundRectShapeOptions | No | Rectangle parameters. |
+| options | [RectShapeOptions](arkts-arkui-arkui-shape-rectshapeoptions-i.md) \| RoundRectShapeOptions | No | Rectangle parameters. |
 
+<a id="radius"></a>
 ## radius
 
 ```TypeScript
@@ -68,7 +70,7 @@ Sets the radius of the rectangle border corners.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| radius | number \| string \| Array<number \| string> | Yes | Radius of the rectangle border corners. When an array is provided, it should contain exactly four elements, corresponding to the radius of the upper left, upper right, lower left, and lower right corners of the rectangle, respectively. If more than four elements are contained, only the first four are accepted.<br> When the parameter type is number, the valid value range is [0, +∞). When the parameter type is string, the value must conform to the [Length](arkts-arkui-length-t.md) type specification.<br>Unit: vp.<br>If the value is invalid, 0 vp is used. |
+| radius | number \| string \| Array&lt;number \| string&gt; | Yes | Radius of the rectangle border corners. When an array is provided, it should contain exactly four elements, corresponding to the radius of the upper left, upper right, lower left, and lower right corners of the rectangle, respectively. If more than four elements are contained, only the first four are accepted.<br> When the parameter type is number, the valid value range is [0, +∞). When the parameter type is string, the value must conform to the [Length](arkts-arkui-length-t.md) type specification.<br>Unit: vp.<br>If the value is invalid, 0 vp is used. |
 
 **Return value:**
 
@@ -76,6 +78,7 @@ Sets the radius of the rectangle border corners.
 | --- | --- |
 | [RectShape](arkts-arkui-arkui-shape-rectshape-c.md) | **RectShape** object. |
 
+<a id="radiusheight"></a>
 ## radiusHeight
 
 ```TypeScript
@@ -108,6 +111,7 @@ Sets the radius height of the rectangle border corners.
 | --- | --- |
 | [RectShape](arkts-arkui-arkui-shape-rectshape-c.md) | **RectShape** object. |
 
+<a id="radiuswidth"></a>
 ## radiusWidth
 
 ```TypeScript

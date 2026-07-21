@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="setkeepaliveforappserviceextension"></a>
 ## setKeepAliveForAppServiceExtension
 
 ```TypeScript
@@ -40,7 +41,7 @@ Sets or cancels the keep-alive status for an AppServiceExtensionAbility. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

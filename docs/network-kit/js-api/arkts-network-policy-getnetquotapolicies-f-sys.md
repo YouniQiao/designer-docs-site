@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="getnetquotapolicies"></a>
 ## getNetQuotaPolicies
 
 ```TypeScript
@@ -28,7 +29,7 @@ Get metered network quota policies.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<NetQuotaPolicy>> | Yes | the callback of getNetQuotaPolicies. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;NetQuotaPolicy&gt;&gt; | Yes | the callback of getNetQuotaPolicies. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ policy.getNetQuotaPolicies((error: BusinessError, data: policy.NetQuotaPolicy[])
 ```
 
 
+<a id="getnetquotapolicies-1"></a>
 ## getNetQuotaPolicies
 
 ```TypeScript
@@ -76,7 +78,7 @@ Get metered network quota policies.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NetQuotaPolicy>> | The promise returned by the function. |
+| Promise&lt;Array&lt;NetQuotaPolicy&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

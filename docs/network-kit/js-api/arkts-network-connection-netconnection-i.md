@@ -14,6 +14,7 @@ Represents the network connection handle.
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="on"></a>
 ## on('netAvailable')
 
 ```TypeScript
@@ -35,7 +36,7 @@ Registers a listener for netAvailable events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netAvailable' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetHandle> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetHandle&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -63,6 +64,7 @@ netCon.unregister((error: BusinessError) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('netBlockStatusChange')
 
 ```TypeScript
@@ -82,7 +84,7 @@ Registers a listener for netBlockStatusChange events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netBlockStatusChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetBlockStatusInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetBlockStatusInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -110,6 +112,7 @@ netCon.unregister((error: BusinessError) => {
 
 ```
 
+<a id="on-2"></a>
 ## on('netCapabilitiesChange')
 
 ```TypeScript
@@ -131,7 +134,7 @@ Registers a listener for **netCapabilitiesChange** events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netCapabilitiesChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetCapabilityInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetCapabilityInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -159,6 +162,7 @@ netCon.unregister((error: BusinessError) => {
 
 ```
 
+<a id="on-3"></a>
 ## on('netConnectionPropertiesChange')
 
 ```TypeScript
@@ -178,7 +182,7 @@ Registers a listener for netConnectionPropertiesChange events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netConnectionPropertiesChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetConnectionPropertyInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetConnectionPropertyInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -206,6 +210,7 @@ netCon.unregister((error: BusinessError) => {
 
 ```
 
+<a id="on-4"></a>
 ## on('netLost')
 
 ```TypeScript
@@ -227,7 +232,7 @@ Registers a listener for **netLost** events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netLost' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetHandle> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetHandle&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -255,6 +260,7 @@ netCon.unregister((error: BusinessError) => {
 
 ```
 
+<a id="on-5"></a>
 ## on('netUnavailable')
 
 ```TypeScript
@@ -276,7 +282,7 @@ Registers a listener for netUnavailable events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netUnavailable' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -304,6 +310,7 @@ netCon.unregister((error: BusinessError) => {
 
 ```
 
+<a id="register"></a>
 ## register
 
 ```TypeScript
@@ -326,7 +333,7 @@ Receives status change notifications of a specified network.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of register. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of register. |
 
 **Error codes:**
 
@@ -352,6 +359,7 @@ netCon.register((error: BusinessError) => {
 
 ```
 
+<a id="unregister"></a>
 ## unregister
 
 ```TypeScript
@@ -372,7 +380,7 @@ Cancels listening for network status changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of unregister. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of unregister. |
 
 **Error codes:**
 

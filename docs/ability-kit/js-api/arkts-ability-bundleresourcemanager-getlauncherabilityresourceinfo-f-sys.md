@@ -6,6 +6,7 @@
 import { bundleResourceManager } from '@kit.AbilityKit';
 ```
 
+<a id="getlauncherabilityresourceinfo"></a>
 ## getLauncherAbilityResourceInfo
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the bundle information of the entry ability of an application based on t
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LauncherAbilityResourceInfo> | Resource information of the entry ability obtained. |
+| Array&lt;LauncherAbilityResourceInfo&gt; | Resource information of the entry ability obtained. |
 
 **Error codes:**
 
@@ -47,6 +48,7 @@ Obtains the bundle information of the entry ability of an application based on t
 | [17700001](../errorcode-bundle.md#17700001-bundle-name-does-not-exist) | The specified bundleName is not found. |
 
 
+<a id="getlauncherabilityresourceinfo-1"></a>
 ## getLauncherAbilityResourceInfo
 
 ```TypeScript
@@ -77,7 +79,7 @@ Obtains the launcher ability resource information of an application based on the
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LauncherAbilityResourceInfo> | Resource information of the entry ability obtained. |
+| Array&lt;LauncherAbilityResourceInfo&gt; | Resource information of the entry ability obtained. |
 
 **Error codes:**
 

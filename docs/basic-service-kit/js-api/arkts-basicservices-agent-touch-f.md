@@ -6,6 +6,7 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="touch"></a>
 ## touch
 
 ```TypeScript
@@ -26,7 +27,7 @@ Queries the task details based on the task ID and token. This API uses an asynch
 | --- | --- | --- | --- |
 | id | string | Yes | Task ID. |
 | token | string | Yes | Token for task query. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<TaskInfo> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the **TaskInfo** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;TaskInfo&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the **TaskInfo** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -37,6 +38,7 @@ Queries the task details based on the task ID and token. This API uses an asynch
 | [21900006](../../apis-basic-services-kit/errorcode-request.md#21900006-task-not-found) | Task removed or not found. |
 
 
+<a id="touch-1"></a>
 ## touch
 
 ```TypeScript
@@ -62,7 +64,7 @@ Queries the task details based on the task ID and token. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<TaskInfo> | Promise used to return the **TaskInfo** object. |
+| Promise&lt;TaskInfo&gt; | Promise used to return the **TaskInfo** object. |
 
 **Error codes:**
 

@@ -37,7 +37,7 @@ Name of the module that requests the permission.
 name: string
 ```
 
-[Name of the permission](../../../../security/AccessToken/app-permissions.md) to request.
+[Name of the permission](docroot://security/AccessToken/app-permissions.md) to request.
 
 **Type:** string
 

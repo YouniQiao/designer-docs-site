@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="getcurrentdistrict"></a>
 ## getCurrentDistrict
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the information about the district where the current device is located.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DistrictInfo> | Promise used to return ${DistrictInfo}. |
+| Promise&lt;DistrictInfo&gt; | Promise used to return ${DistrictInfo}. |
 
 **Error codes:**
 

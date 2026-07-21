@@ -16,6 +16,7 @@ Focus extends [FocusQuery](arkts-camera-camera-focusquery-i.md)Provides APIs to 
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getfocallength"></a>
 ## getFocalLength
 
 ```TypeScript
@@ -44,6 +45,7 @@ Obtains the focal length in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getfocusmode"></a>
 ## getFocusMode
 
 ```TypeScript
@@ -72,6 +74,7 @@ Obtains the focus mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getfocuspoint"></a>
 ## getFocusPoint
 
 ```TypeScript
@@ -100,6 +103,7 @@ Obtains the focal point in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="lockfocustracking"></a>
 ## lockFocusTracking
 
 ```TypeScript
@@ -131,6 +135,7 @@ Lock focus tracking.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="setfocusmode"></a>
 ## setFocusMode
 
 ```TypeScript
@@ -159,6 +164,7 @@ Sets a focus mode.Before the setting, call [isFocusModeSupported](arkts-camera-c
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setfocuspoint"></a>
 ## setFocusPoint
 
 ```TypeScript
@@ -189,6 +195,7 @@ The coordinate system is based on the horizontal device direction with the devic
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="unlockfocustracking"></a>
 ## unlockFocusTracking
 
 ```TypeScript

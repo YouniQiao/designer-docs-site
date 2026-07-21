@@ -6,6 +6,7 @@
 import { usb } from '@kit.BasicServicesKit';
 ```
 
+<a id="connectdevice"></a>
 ## connectDevice
 
 ```TypeScript
@@ -36,7 +37,7 @@ Before you do this, call [usb.getDevices](arkts-basicservices-usb-getdevices-f.m
 
 | Type | Description |
 | --- | --- |
-| [Readonly](../../apis-na/arkts-apis/arkts-na-readonly-t.md)<USBDevicePipe> | USB device pipe for data transfer. |
+| [Readonly](../../apis-na/arkts-apis/arkts-na-readonly-t.md)&lt;USBDevicePipe&gt; | USB device pipe for data transfer. |
 
 **Example**
 

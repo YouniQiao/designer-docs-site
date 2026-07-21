@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="buildx509certchain"></a>
 ## buildX509CertChain
 
 ```TypeScript
@@ -32,7 +33,7 @@ Builds an X.509 certificate chain with a CertChainBuildParameters object. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CertChainBuildResult> | Promise used to return the **CertChainBuildResult** object created. |
+| Promise&lt;CertChainBuildResult&gt; | Promise used to return the **CertChainBuildResult** object created. |
 
 **Error codes:**
 

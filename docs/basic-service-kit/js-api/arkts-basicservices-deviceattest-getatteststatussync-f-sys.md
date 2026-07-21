@@ -6,6 +6,7 @@
 import { deviceAttest } from '@kit.BasicServicesKit';
 ```
 
+<a id="getatteststatussync"></a>
 ## getAttestStatusSync
 
 ```TypeScript

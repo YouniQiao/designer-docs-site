@@ -18,6 +18,7 @@ ManualExposure extends [ManualExposureQuery](arkts-camera-camera-manualexposureq
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getexposureduration"></a>
 ## getExposureDuration
 
 ```TypeScript
@@ -47,6 +48,7 @@ Gets current exposure value.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, session or inputdevice maybe abnormal. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setexposureduration"></a>
 ## setExposureDuration
 
 ```TypeScript

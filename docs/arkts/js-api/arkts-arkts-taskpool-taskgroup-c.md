@@ -1,6 +1,6 @@
 # TaskGroup
 
-Implements a task group, in which tasks are associated with each other and all tasks are executed at a time. If all the tasks are executed normally, an array of task results is returned asynchronously, and the sequence of elements in the array is the same as the sequence of tasks added by calling [addTask](arkts-arkts-taskpool-taskgroup-c.md#addtask-2). If any task fails, the corresponding exception is thrown.If multiple tasks in the task group fail, the exception of the first failed task is thrown. A task group can be executed for multiple times, but no task can be added after the task group is executed.
+Implements a task group, in which tasks are associated with each other and all tasks are executed at a time. If all the tasks are executed normally, an array of task results is returned asynchronously, and the sequence of elements in the array is the same as the sequence of tasks added by calling [addTask](arkts-arkts-taskpool-taskgroup-c.md#addtask-1). If any task fails, the corresponding exception is thrown.If multiple tasks in the task group fail, the exception of the first failed task is thrown. A task group can be executed for multiple times, but no task can be added after the task group is executed.
 
 **Since:** 10
 
@@ -14,6 +14,7 @@ Implements a task group, in which tasks are associated with each other and all t
 import { taskpool } from '@kit.ArkTS';
 ```
 
+<a id="addtask"></a>
 ## addTask
 
 ```TypeScript
@@ -34,8 +35,8 @@ Adds the function to be executed to this task group. Before using this API, you 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| func | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Function that must be decorated using [@Concurrent](../../../../arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
-| args | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md)[] | Yes | Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](../../../../reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
+| func | Function | Yes | Function that must be decorated using [@Concurrent](docroot://arkts-utils/taskpool-introduction.md#concurrent-decorator). For details about the supported return value types, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). |
+| args | Object[] | Yes | Arguments of the function. For details about the supported parameter types, see [Sequenceable Data Types](docroot://reference/apis-arkts/js-apis-taskpool.md#sequenceable-data-types). The default value is **undefined**. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ taskGroup.addTask(printArgs, 100); // 100: test number
 
 ```
 
+<a id="addtask-1"></a>
 ## addTask
 
 ```TypeScript
@@ -102,6 +104,7 @@ taskGroup.addTask(task);
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -125,6 +128,7 @@ let taskGroup = new taskpool.TaskGroup();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript

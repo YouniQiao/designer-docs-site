@@ -6,6 +6,7 @@
 import { featureAbility } from '@kit.AbilityKit';
 ```
 
+<a id="disconnectability"></a>
 ## disconnectAbility
 
 ```TypeScript
@@ -27,7 +28,7 @@ Disconnects this ability from a specific ServiceAbility. This API uses an asynch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | connection | number | Yes | ID of the ServiceAbility to disconnect. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -64,6 +65,7 @@ featureAbility.disconnectAbility(connectId, (error) => {
 ```
 
 
+<a id="disconnectability-1"></a>
 ## disconnectAbility
 
 ```TypeScript
@@ -90,7 +92,7 @@ Disconnects this ability from a specific ServiceAbility. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

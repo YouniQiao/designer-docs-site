@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface WeakMapConstructor--><!--Device-unnamed-interface WeakMapConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -14,11 +15,11 @@ new <K extends object, V>(iterable: Iterable<readonly [K, V]>): WeakMap<K, V>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| iterable | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<readonly [K, V]> | Yes |  |
+| iterable | Iterable&lt;readonly [K, V]&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [WeakMap](arkts-na-lib-es2015-collection-weakmap-i.md)<K, V> |  |
+| WeakMap&lt;K, V&gt; |  |
 

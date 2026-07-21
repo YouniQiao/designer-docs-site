@@ -14,6 +14,7 @@ Provides **PasteDataRecord** APIs. A **PasteDataRecord** is an abstract definiti
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
+<a id="addentry"></a>
 ## addEntry
 
 ```TypeScript
@@ -32,7 +33,7 @@ Adds PasteData of an extra type to **PasteDataRecord**. The type added using thi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of extra data. The value can be a predefined MIME type listed in [Constants](../../../../reference/apis-basic-services-kit/js-apis-pasteboard.md#constants),including HTML, WANT, plain text, URI, and pixel map, or a custom type.The value of **mimeType** cannot exceed 1024 bytes. |
+| type | string | Yes | Type of extra data. The value can be a predefined MIME type listed in [Constants](docroot://reference/apis-basic-services-kit/js-apis-pasteboard.md#constants),including HTML, WANT, plain text, URI, and pixel map, or a custom type.The value of **mimeType** cannot exceed 1024 bytes. |
 | value | [ValueType](arkts-basicservices-pasteboard-valuetype-t.md) | Yes | Content of extra data. |
 
 **Error codes:**
@@ -55,6 +56,7 @@ record.addEntry(pasteboard.MIMETYPE_TEXT_HTML, html);
 
 ```
 
+<a id="converttotext"></a>
 ## convertToText
 
 ```TypeScript
@@ -77,7 +79,7 @@ Forcibly converts the content in a **PasteData** object to text. This API uses a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -101,6 +103,7 @@ record.convertToText((err: BusinessError, data: string) => {
 
 ```
 
+<a id="converttotext-1"></a>
 ## convertToText
 
 ```TypeScript
@@ -123,7 +126,7 @@ Forcibly converts the content in a **PasteData** object to text. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the text obtained from the conversion. |
+| Promise&lt;string&gt; | Promise used to return the text obtained from the conversion. |
 
 **Example**
 
@@ -139,6 +142,7 @@ record.convertToText().then((data: string) => {
 
 ```
 
+<a id="getdata"></a>
 ## getData
 
 ```TypeScript
@@ -163,7 +167,7 @@ Obtains data of the specified type from **PasteDataRecord**.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ValueType> | Promise used to return the data of the specified type in **PasteDataRecord**.* If **PasteDataRecord** contains data of multiple types,the non-**PasteDataRecord** data of the default type can be obtained only through this API. |
+| Promise&lt;ValueType&gt; | Promise used to return the data of the specified type in **PasteDataRecord**.* If **PasteDataRecord** contains data of multiple types,the non-**PasteDataRecord** data of the default type can be obtained only through this API. |
 
 **Error codes:**
 
@@ -195,6 +199,7 @@ record.getData(pasteboard.MIMETYPE_TEXT_URI).then((value: pasteboard.ValueType) 
 
 ```
 
+<a id="getvalidtypes"></a>
 ## getValidTypes
 
 ```TypeScript
@@ -213,13 +218,13 @@ Obtains the intersection of the input types and the types of the PasteData.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| types | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of the types. |
+| types | Array&lt;string&gt; | Yes | List of the types. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Intersection of the input types and the types of the PasteData obtained. |
+| Array&lt;string&gt; | Intersection of the input types and the types of the PasteData obtained. |
 
 **Error codes:**
 
@@ -244,6 +249,7 @@ let types: string[] = record.getValidTypes([
 
 ```
 
+<a id="toplaintext"></a>
 ## toPlainText
 
 ```TypeScript
@@ -283,7 +289,7 @@ data: Record<string, ArrayBuffer>
 
 Content of custom data.This parameter is read-only and does not support assignment operations.To assign a value, please use [createData](arkts-basicservices-pasteboard-createdata-f.md#createdata-1)** or ** [addEntry](arkts-basicservices-pasteboard-pastedatarecord-i.md#addentry-1)**
 
-**Type:** Record<string, ArrayBuffer>
+**Type:** Record&lt;string, ArrayBuffer&gt;
 
 **Since:** 9
 

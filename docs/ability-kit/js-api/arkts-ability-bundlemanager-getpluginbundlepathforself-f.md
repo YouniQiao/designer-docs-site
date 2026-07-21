@@ -6,13 +6,14 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getpluginbundlepathforself"></a>
 ## getPluginBundlePathForSelf
 
 ```TypeScript
 function getPluginBundlePathForSelf(pluginBundleName: string): string
 ```
 
-Obtains the installation path of a specified plugin in the current [application sandbox](../../../../file-management/app-sandbox-directory.md).
+Obtains the installation path of a specified plugin in the current [application sandbox](docroot://file-management/app-sandbox-directory.md).
 
 **Since:** 22
 

@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="addcontacts"></a>
 ## addContacts
 
 ```TypeScript
@@ -29,13 +30,13 @@ Adds contacts in batches. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
-| contacts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Contact> | Yes | Indicates the contact information. array. |
+| contacts | Array&lt;Contact&gt; | Yes | Indicates the contact information. array. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the result, which is the ID array of the contacts added in batches. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the result, which is the ID array of the contacts added in batches. |
 
 **Error codes:**
 

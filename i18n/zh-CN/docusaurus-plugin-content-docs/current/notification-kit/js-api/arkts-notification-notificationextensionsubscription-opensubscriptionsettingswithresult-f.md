@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="opensubscriptionsettingswithresult"></a>
 ## openSubscriptionSettingsWithResult
 
 ```TypeScript
@@ -34,7 +35,7 @@ function openSubscriptionSettingsWithResult(context: UIAbilityContext): Promise<
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<UserGrantSetting> | Promise对象，返回用户设置的授权的结果。 |
+| Promise&lt;UserGrantSetting&gt; | Promise对象，返回用户设置的授权的结果。 |
 
 **错误码：**
 
@@ -43,7 +44,7 @@ function openSubscriptionSettingsWithResult(context: UIAbilityContext): Promise<
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied or current device not supported. |
 | [1600001](../errorcode-notification.md#1600001-内部错误) | Internal error. |
 | [1600018](../errorcode-notification.md#1600018-通知设置页面已经拉起) | The notification settings window is already displayed. |
-| [1600023](../errorcode-notification.md#1600023-app-notificationsubscriberextensionability未实现) | The application does not implement the NotificationSubscriberExtensionAbility. |
+| [1600023](../errorcode-notification.md#1600023-应用未实现notificationsubscriberextensionability) | The application does not implement the NotificationSubscriberExtensionAbility. |
 
 **示例：**
 

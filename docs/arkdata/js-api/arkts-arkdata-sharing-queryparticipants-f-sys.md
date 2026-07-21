@@ -6,6 +6,7 @@
 import { cloudData } from '@kit.ArkData';
 ```
 
+<a id="queryparticipants"></a>
 ## queryParticipants
 
 ```TypeScript
@@ -27,7 +28,7 @@ Queries the participants of the specified shared data.This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sharingResource | string | Yes | Shared resource ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Result<Array<Participant>>> | Yes | Callback used to return the participants obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Result&lt;Array&lt;Participant&gt;&gt;&gt; | Yes | Callback used to return the participants obtained. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ cloudData.sharing.queryParticipants('sharing_resource_test', ((err: BusinessErro
 ```
 
 
+<a id="queryparticipants-1"></a>
 ## queryParticipants
 
 ```TypeScript
@@ -79,7 +81,7 @@ Queries the participants of the specified shared data.This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<Array<Participant>>> | Promise used to return the participants obtained. |
+| Promise&lt;Result&lt;Array&lt;Participant&gt;&gt;&gt; | Promise used to return the participants obtained. |
 
 **Error codes:**
 

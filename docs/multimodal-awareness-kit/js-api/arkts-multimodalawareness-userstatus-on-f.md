@@ -6,6 +6,7 @@
 import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="on"></a>
 ## on('userAgeGroupDetected')
 
 ```TypeScript
@@ -33,7 +34,7 @@ When the function is enabled, the application can recommend content based on the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'userAgeGroupDetected' | Yes | Event type. The value **userAgeGroupDetected** indicates the event of enabling age group detection. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<UserClassification> | Yes | Callback used to return the detection result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;UserClassification&gt; | Yes | Callback used to return the detection result. |
 
 **Error codes:**
 

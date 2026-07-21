@@ -10,6 +10,7 @@ The module defines the listeners used to observe the mission status. The listene
 
 **System API:** This is a system API.
 
+<a id="onmissionclosed"></a>
 ## onMissionClosed
 
 ```TypeScript
@@ -32,6 +33,7 @@ Called when the system closes a mission.
 | --- | --- | --- | --- |
 | mission | number | Yes | Mission ID. |
 
+<a id="onmissioncreated"></a>
 ## onMissionCreated
 
 ```TypeScript
@@ -54,6 +56,7 @@ Called when the system creates a mission.
 | --- | --- | --- | --- |
 | mission | number | Yes | Mission ID. |
 
+<a id="onmissiondestroyed"></a>
 ## onMissionDestroyed
 
 ```TypeScript
@@ -76,6 +79,7 @@ Called when the system destroys a mission.
 | --- | --- | --- | --- |
 | mission | number | Yes | Mission ID. |
 
+<a id="onmissioniconupdated"></a>
 ## onMissionIconUpdated
 
 ```TypeScript
@@ -99,6 +103,7 @@ Called when the system updates the icon of a mission.
 | mission | number | Yes | Mission ID. |
 | icon | image.PixelMap | Yes | New mission icon. |
 
+<a id="onmissionlabelupdated"></a>
 ## onMissionLabelUpdated
 
 ```TypeScript
@@ -121,6 +126,7 @@ Called when the system updates the label of a mission.
 | --- | --- | --- | --- |
 | mission | number | Yes | Mission ID. |
 
+<a id="onmissionmovedtofront"></a>
 ## onMissionMovedToFront
 
 ```TypeScript
@@ -143,6 +149,7 @@ Called when the system moves a mission to the foreground.
 | --- | --- | --- | --- |
 | mission | number | Yes | Mission ID. |
 
+<a id="onmissionsnapshotchanged"></a>
 ## onMissionSnapshotChanged
 
 ```TypeScript

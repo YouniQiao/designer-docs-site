@@ -6,6 +6,7 @@
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="createimagecreator"></a>
 ## createImageCreator
 
 ```TypeScript
@@ -18,7 +19,7 @@ Creates an ImageCreator instance by specifying the image width, height, format, 
 
 **Deprecated since:** 11
 
-**Substitutes:** createImageCreator(size:
+**Substitutes:** [createImageCreator(size:](arkts-image-image-createimagecreator-f.md#createimagecreator-1)
 
 <!--Device-image-function createImageCreator(width: number, height: number, format: number, capacity: number): ImageCreator--><!--Device-image-function createImageCreator(width: number, height: number, format: number, capacity: number): ImageCreator-End-->
 
@@ -47,6 +48,7 @@ let creator: image.ImageCreator = image.createImageCreator(8192, 8192, image.Ima
 ```
 
 
+<a id="createimagecreator-1"></a>
 ## createImageCreator
 
 ```TypeScript

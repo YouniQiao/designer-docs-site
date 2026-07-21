@@ -1,5 +1,6 @@
 # isBadgeDisplayed (System API)
 
+<a id="isbadgedisplayed"></a>
 ## isBadgeDisplayed
 
 ```TypeScript
@@ -27,9 +28,10 @@ Checks whether the notification badge is enabled for a specified application.Thi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. |
 
 
+<a id="isbadgedisplayed-1"></a>
 ## isBadgeDisplayed
 
 ```TypeScript
@@ -62,5 +64,5 @@ Checks whether the notification badge is enabled for a specified application.Thi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. |
+| Promise&lt;boolean&gt; | Promise used to return the result. |
 

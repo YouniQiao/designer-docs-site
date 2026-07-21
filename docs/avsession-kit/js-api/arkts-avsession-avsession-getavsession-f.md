@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="getavsession"></a>
 ## getAVSession
 
 ```TypeScript
@@ -32,7 +33,7 @@ Get an AVSession instance if already created.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVSession> | Promise for AVSession |
+| Promise&lt;AVSession&gt; | Promise for AVSession |
 
 **Error codes:**
 

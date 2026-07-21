@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getbasebandversion"></a>
 ## getBasebandVersion
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the version of Baseband.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the baseband version. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the baseband version. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ radio.getBasebandVersion(slotId, (err: BusinessError, data: string) => {
 ```
 
 
+<a id="getbasebandversion-1"></a>
 ## getBasebandVersion
 
 ```TypeScript
@@ -88,7 +90,7 @@ Get the version of Baseband.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the baseband version. |
+| Promise&lt;string&gt; | Returns the baseband version. |
 
 **Error codes:**
 

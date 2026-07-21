@@ -28,7 +28,7 @@ Example: **fetchColumns: ['uri', 'title']**.
 
 If this parameter is left blank for albums, albums are fetched by **'uri'** and **'album_name'** by default.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 10
 

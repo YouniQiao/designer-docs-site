@@ -1,6 +1,6 @@
 # StartOptions
 
-StartOptions can be used as an input parameter for APIs used to launch a UIAbility (for example,[startAbility()](arkts-ability-uiabilitycontext-c.md#startability-2)). It specifies the options for starting the target UIAbility, including but not limited to the window mode and the display where the target UIAbility is started.
+StartOptions can be used as an input parameter for APIs used to launch a UIAbility (for example,[startAbility()](arkts-ability-uiabilitycontext-c.md#startability-1)). It specifies the options for starting the target UIAbility, including but not limited to the window mode and the display where the target UIAbility is started.
 
 **Since:** 9
 
@@ -70,7 +70,7 @@ In versions earlier than API version 14, the default value is **0**, indicating 
 hideStartWindow?: boolean
 ```
 
-Whether to hide the starting window for the UIAbility of the current application upon startup. The options include **true** (yes) and **false** (no). For details about the starting window and its specifications, see [StartWindow](../../../../quick-start/module-configuration-file.md#startwindow).
+Whether to hide the starting window for the UIAbility of the current application upon startup. The options include **true** (yes) and **false** (no). For details about the starting window and its specifications, see [StartWindow](docroot://quick-start/module-configuration-file.md#startwindow).
 
 **Constraints**:
 
@@ -96,7 +96,7 @@ Maximum height of the window, in vp. You can call [getWindowLimitsVP](@ohos.wind
 
 **Constraints**:
 
-This function takes effect only in the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+This function takes effect only in the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Type:** number
 
@@ -118,7 +118,7 @@ Maximum width of the window, in vp. You can call [getWindowLimitsVP](@ohos.windo
 
 **Constraints**:
 
-This function takes effect only in the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+This function takes effect only in the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Type:** number
 
@@ -140,7 +140,7 @@ Minimum height of the window, in vp. You can call [getWindowLimitsVP](@ohos.wind
 
 **Constraints**:
 
-This function takes effect only in the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+This function takes effect only in the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Type:** number
 
@@ -162,7 +162,7 @@ Minimum width of the window, in vp. You can call [getWindowLimitsVP](@ohos.windo
 
 **Constraints**:
 
-This function takes effect only in the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+This function takes effect only in the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Type:** number
 
@@ -291,19 +291,19 @@ Visibility status of the UIAbility after it is started. If the target UIAbility 
 supportWindowModes?: Array<bundleManager.SupportWindowMode>
 ```
 
-Window mode supported by the UIAbility when it is started. The supported window mode specifies whether to display the maximize, minimize, or split-screen button. If this property is not set, the value of **supportWindowMode** configured under [abilities](../../../../quick-start/module-configuration-file.md#abilities) in the [module.json5](../../../../quick-start/module-configuration-file.md) file corresponding to the UIAbility is used by default.
+Window mode supported by the UIAbility when it is started. The supported window mode specifies whether to display the maximize, minimize, or split-screen button. If this property is not set, the value of **supportWindowMode** configured under [abilities](docroot://quick-start/module-configuration-file.md#abilities) in the [module.json5](docroot://quick-start/module-configuration-file.md) file corresponding to the UIAbility is used by default.
 
 - **FULL_SCREEN**: full-screen mode.  
 - **FLOATING**: floating window mode.  
 - **SPLIT**: split-screen mode. Generally, **FULL_SCREEN** or **FLOATING** must be used together. You are not advised to configure only **SPLIT**. If only **SPLIT** is configured, the window on 2-in-1 devices is in floating window mode by default and can transition to the split-screen mode, and the window on tablets is in full-screen mode by default and can transition to the split-screen mode.
 
-When **FULL_SCREEN** and **SPLIT** are both configured for a [freeform window](../../../../windowmanager/window-terminology.md#freeform-window), the window will be started in floating window mode if the value of [targetAPIVersion](../../../../quick-start/app-configuration-file.md#tags-in-the-configuration-file) is less than 15, and in full-screen mode if the value is greater than or equal to 15.
+When **FULL_SCREEN** and **SPLIT** are both configured for a [freeform window](docroot://windowmanager/window-terminology.md#freeform-window), the window will be started in floating window mode if the value of [targetAPIVersion](docroot://quick-start/app-configuration-file.md#tags-in-the-configuration-file) is less than 15, and in full-screen mode if the value is greater than or equal to 15.
 
 **Constraints**:
 
 <!--RP1-->This property takes effect only on 2-in-1 devices and tablets.<!--RP1End-->
 
-**Type:** Array<bundleManager.SupportWindowMode>
+**Type:** Array&lt;bundleManager.SupportWindowMode&gt;
 
 **Since:** 14
 
@@ -343,7 +343,7 @@ The value range is [**minWindowHeight**, **maxWindowHeight**], with the unit bei
 
 **Constraints**:
 
-This function takes effect only in the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+This function takes effect only in the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Type:** number
 
@@ -365,7 +365,7 @@ Distance the window moves along the x-axis, with the top-left vertex of the scre
 
 **Constraints**:
 
-This function takes effect only in the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+This function takes effect only in the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Type:** number
 
@@ -405,7 +405,7 @@ Distance the window moves along the y-axis, with the top-left vertex of the scre
 
 **Constraints**:
 
-This function takes effect only in the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+This function takes effect only in the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Type:** number
 
@@ -429,7 +429,7 @@ The value range is [**minWindowWidth**, **maxWindowWidth**], with the unit being
 
 **Constraints**:
 
-This function takes effect only in the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+This function takes effect only in the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Type:** number
 

@@ -6,6 +6,7 @@
 import { serialManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="getattribute"></a>
 ## getAttribute
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the configuration parameters of a specified serial port.
 
 | Type | Description |
 | --- | --- |
-| [Readonly](../../apis-na/arkts-apis/arkts-na-readonly-t.md)<SerialAttribute> | Configuration parameters of the serial port. |
+| [Readonly](../../apis-na/arkts-apis/arkts-na-readonly-t.md)&lt;SerialAttribute&gt; | Configuration parameters of the serial port. |
 
 **Error codes:**
 

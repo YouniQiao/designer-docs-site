@@ -1,5 +1,6 @@
 # unregisterVsyncCallback (System API)
 
+<a id="unregistervsynccallback"></a>
 ## unregisterVsyncCallback
 
 ```TypeScript

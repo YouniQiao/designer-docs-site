@@ -1,5 +1,6 @@
 # startBackgroundRunning
 
+<a id="startbackgroundrunning"></a>
 ## startBackgroundRunning
 
 ```TypeScript
@@ -12,7 +13,7 @@ Requests a continuous task from the system. This API uses an asynchronous callba
 
 **Deprecated since:** 9
 
-**Substitutes:** startBackgroundRunning(context:
+**Substitutes:** [startBackgroundRunning(context:](arkts-backgroundtasks-backgroundtaskmanager-startbackgroundrunning-f.md#startbackgroundrunning-1)
 
 **Required permissions:** ohos.permission.KEEP_BACKGROUND_RUNNING
 
@@ -27,7 +28,7 @@ Requests a continuous task from the system. This API uses an asynchronous callba
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context.<br>For details about the application context of the FA model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-context-depr-i.md).<br>For details about the application context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md). |
 | bgMode | [BackgroundMode](arkts-backgroundtasks-backgroundtaskmanager-backgroundmode-e.md) | Yes | Background mode requested. |
 | wantAgent | [WantAgent](arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | Notification parameter, which is used to specify the target page that is redirected to when a continuous task notification is clicked. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -109,6 +110,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="startbackgroundrunning-1"></a>
 ## startBackgroundRunning
 
 ```TypeScript
@@ -121,7 +123,7 @@ Requests a continuous task from the system. This API uses a promise to return th
 
 **Deprecated since:** 9
 
-**Substitutes:** startBackgroundRunning(context:
+**Substitutes:** [startBackgroundRunning(context:](arkts-backgroundtasks-backgroundtaskmanager-startbackgroundrunning-f.md#startbackgroundrunning-1)
 
 **Required permissions:** ohos.permission.KEEP_BACKGROUND_RUNNING
 
@@ -141,7 +143,7 @@ Requests a continuous task from the system. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

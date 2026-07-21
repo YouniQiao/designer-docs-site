@@ -6,6 +6,7 @@
 import { bundleResourceManager } from '@kit.AbilityKit';
 ```
 
+<a id="getextensionabilityresourceinfo"></a>
 ## getExtensionAbilityResourceInfo
 
 ```TypeScript
@@ -37,7 +38,7 @@ Obtains the ExtensionAbility resource information of an application based on the
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LauncherAbilityResourceInfo> | ExtensionAbility resource information of the application, including the icon and name. |
+| Array&lt;LauncherAbilityResourceInfo&gt; | ExtensionAbility resource information of the application, including the icon and name. |
 
 **Error codes:**
 

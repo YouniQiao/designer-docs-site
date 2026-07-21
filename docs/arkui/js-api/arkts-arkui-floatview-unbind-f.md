@@ -6,6 +6,7 @@
 import { floatView } from '@kit.ArkUI';
 ```
 
+<a id="unbind"></a>
 ## unbind
 
 ```TypeScript
@@ -36,7 +37,7 @@ Unbinds the float view and floating ball. The unbinding can be performed only af
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

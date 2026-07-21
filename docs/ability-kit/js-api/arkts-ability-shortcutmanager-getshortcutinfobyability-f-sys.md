@@ -6,6 +6,7 @@
 import { shortcutManager } from '@kit.AbilityKit';
 ```
 
+<a id="getshortcutinfobyability"></a>
 ## getShortcutInfoByAbility
 
 ```TypeScript
@@ -40,7 +41,7 @@ Obtains shortcut info by bundleName, moduleName, abilityName, userId and appInde
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ShortcutInfo> | An array of ShortcutInfo objects. |
+| Array&lt;ShortcutInfo&gt; | An array of ShortcutInfo objects. |
 
 **Error codes:**
 

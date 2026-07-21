@@ -14,6 +14,7 @@
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="onprogress"></a>
 ## onProgress
 
 ```TypeScript

@@ -1,6 +1,6 @@
 # ApplicationInfo
 
-The module provides application information. Unless otherwise specified, the information is obtained through [bundle.getApplicationInfo](arkts-ability-bundle-getapplicationinfo-f.md#getapplicationinfo-3).
+The module provides application information. Unless otherwise specified, the information is obtained through [bundle.getApplicationInfo](arkts-ability-bundle-getapplicationinfo-f.md#getapplicationinfo-1).
 
 > **NOTE**  
 >  
@@ -263,9 +263,9 @@ readonly metaData: Map<string, Array<CustomizeData>>
 
 Custom metadata of the application.
 
-The value is obtained by passing in GET_APPLICATION_INFO_WITH_METADATA to [bundle.getApplicationInfo](arkts-ability-bundle-getapplicationinfo-f.md#getapplicationinfo-3).
+The value is obtained by passing in GET_APPLICATION_INFO_WITH_METADATA to [bundle.getApplicationInfo](arkts-ability-bundle-getapplicationinfo-f.md#getapplicationinfo-1).
 
-**Type:** Map<string, Array<CustomizeData>>
+**Type:** Map&lt;string, Array&lt;CustomizeData&gt;&gt;
 
 **Default:** Indicates the metadata of module
 
@@ -287,7 +287,7 @@ readonly moduleInfos: Array<ModuleInfo>
 
 Application module information.
 
-**Type:** Array<ModuleInfo>
+**Type:** Array&lt;ModuleInfo&gt;
 
 **Default:** Indicates module information about an application
 
@@ -309,7 +309,7 @@ readonly moduleSourceDirs: Array<string>
 
 Relative paths for storing application resources. Do not access resource files using concatenated paths. Use [@ohos.resourceManager](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md) instead.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Default:** Indicates the path storing the module resources of the application
 
@@ -351,9 +351,9 @@ readonly permissions: Array<string>
 
 Permissions required for accessing the application.
 
-The value is obtained by passing in GET_APPLICATION_INFO_WITH_PERMISSION to [bundle.getApplicationInfo](arkts-ability-bundle-getapplicationinfo-f.md#getapplicationinfo-3).
+The value is obtained by passing in GET_APPLICATION_INFO_WITH_PERMISSION to [bundle.getApplicationInfo](arkts-ability-bundle-getapplicationinfo-f.md#getapplicationinfo-1).
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Default:** Indicates the permissions required for accessing the application.
 

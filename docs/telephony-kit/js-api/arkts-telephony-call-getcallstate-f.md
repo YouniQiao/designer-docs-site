@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="getcallstate"></a>
 ## getCallState
 
 ```TypeScript
@@ -26,7 +27,7 @@ If an incoming call is ringing or waiting, the system returns {@code CallState#C
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CallState> | Yes | Indicates the callback for getting the call state. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CallState&gt; | Yes | Indicates the callback for getting the call state. |
 
 **Example**
 
@@ -44,6 +45,7 @@ call.getCallState((err: BusinessError, data: call.CallState) => {
 ```
 
 
+<a id="getcallstate-1"></a>
 ## getCallState
 
 ```TypeScript
@@ -64,7 +66,7 @@ If an incoming call is ringing or waiting, the system returns {@code CallState#C
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CallState> | Returns the call state. |
+| Promise&lt;CallState&gt; | Returns the call state. |
 
 **Example**
 

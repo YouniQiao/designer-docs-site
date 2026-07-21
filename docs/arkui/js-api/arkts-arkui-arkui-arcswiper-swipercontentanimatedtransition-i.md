@@ -42,7 +42,7 @@ transition: Callback<SwiperContentTransitionProxy>
 
 Content of the custom page transition animation.
 
-**Type:** Callback<SwiperContentTransitionProxy>
+**Type:** Callback&lt;SwiperContentTransitionProxy&gt;
 
 **Since:** 18
 

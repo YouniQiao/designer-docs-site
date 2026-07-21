@@ -6,6 +6,7 @@
 import { stationary } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="once"></a>
 ## once
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the device status.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | activity | [ActivityType](arkts-multimodalawareness-stationary-activitytype-t.md) | Yes | Device status type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ActivityResponse> | Yes | Callback used to receive reported data. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ActivityResponse&gt; | Yes | Callback used to receive reported data. |
 
 **Example**
 

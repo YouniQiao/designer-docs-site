@@ -5,7 +5,7 @@ Defines parameters of subscription filtering conditions of a [Watcher](arkts-per
 > **NOTE**  
 >  
 > The subscription specifications of system events vary according to application types. For details, see  
-> [HiAppEvent Constraints](../../../../dfx/hiappevent-intro.md#constraints).
+> [HiAppEvent Constraints](docroot://dfx/hiappevent-intro.md#constraints).
 
 **Since:** 9
 

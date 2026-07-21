@@ -33,8 +33,8 @@ Defines the constructor of Text.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| content | string \| Resource | No | Plain text. This parameter takes effect when the child component[Span]{@link span} is not included and [styled string]{@link styled_string} is not set.<br>Default value:**' '**<br>**NOTE**<br>Priority of displayed content: Styled string &gt; Content of the **Span** component &gt; Textcontent of the **Text** component. |
-| value | TextOptions | No | Initialization options of the component. |
+| content | string \| Resource | No | Plain text. This parameter takes effect when the child component [Span]{@link span} is not included and [styled string]{@link styled_string} is not set.<br>Default value: **' '**<br>**NOTE**<br>Priority of displayed content: Styled string > Content of the **Span** component > Text content of the **Text** component.  |
+| value | [TextOptions](arkts-arkui-textoptions-i.md) | No | Initialization options of the component. |
 
 ## Summary
 

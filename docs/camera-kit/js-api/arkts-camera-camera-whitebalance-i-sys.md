@@ -18,6 +18,7 @@
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getwhitebalance"></a>
 ## getWhiteBalance
 
 ```TypeScript
@@ -49,6 +50,7 @@ Obtains the current white balance value.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 19 |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getwhitebalancegains"></a>
 ## getWhiteBalanceGains
 
 ```TypeScript
@@ -80,6 +82,7 @@ Gets RGB white balance gain values.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getwhitebalancemode"></a>
 ## getWhiteBalanceMode
 
 ```TypeScript
@@ -111,6 +114,7 @@ Obtains the white balance mode in use.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 19 |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setwhitebalance"></a>
 ## setWhiteBalance
 
 ```TypeScript
@@ -143,6 +147,7 @@ Sets a white balance value.Before the setting, run [getWhiteBalanceRange](arkts-
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setwhitebalancegains"></a>
 ## setWhiteBalanceGains
 
 ```TypeScript
@@ -174,6 +179,7 @@ Sets RGB white balance gain values.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setwhitebalancemode"></a>
 ## setWhiteBalanceMode
 
 ```TypeScript

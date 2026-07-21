@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="uninstallpubliccertificate"></a>
 ## uninstallPublicCertificate
 
 ```TypeScript
@@ -36,7 +37,7 @@ Uninstalls the public credential of the user. This API is called only by the cer
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

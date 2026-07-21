@@ -6,6 +6,7 @@
 import { deviceAttest } from '@kit.BasicServicesKit';
 ```
 
+<a id="getatteststatus"></a>
 ## getAttestStatus
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the AttestResultInfo object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<AttestResultInfo> | Yes | Indicates the callback containing the AttestResultInfo object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;AttestResultInfo&gt; | Yes | Indicates the callback containing the AttestResultInfo object. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ try {
 ```
 
 
+<a id="getatteststatus-1"></a>
 ## getAttestStatus
 
 ```TypeScript
@@ -83,7 +85,7 @@ Obtains the AttestResultInfo object.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AttestResultInfo> | Returns that the AttestResultInfo object is returned in Promise mode. |
+| Promise&lt;AttestResultInfo&gt; | Returns that the AttestResultInfo object is returned in Promise mode. |
 
 **Error codes:**
 

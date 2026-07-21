@@ -16,6 +16,7 @@ Defines the attributes of SelectionContainer.
 import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithTextCallback, SelectionContainerOptions, SelectionContainerAttribute, SelectionContainerEditMenuOptions, SelectionContainerTextJoinStyle, SelectionContainerController, SelectionContainerMenuOptions } from '@kit.ArkUI';
 ```
 
+<a id="bindselectionmenu"></a>
 ## bindSelectionMenu
 
 ```TypeScript
@@ -43,10 +44,10 @@ Bind to the selection menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| spanType | [Optional](../arkts-components/arkts-arkui-optional-t.md)<TextSpanType> | Yes | Indicates the type of selection menu. Default value is TextSpanType.TEXT. |
-| content | [Optional](../arkts-components/arkts-arkui-optional-t.md)<CustomBuilder> | Yes | Indicates the content of selection menu. |
-| responseType | [Optional](../arkts-components/arkts-arkui-optional-t.md)<TextResponseType> | Yes | Indicates response type of selection menu. Default value is TextResponseType.LONG_PRESS. |
-| options | [Optional](../arkts-components/arkts-arkui-optional-t.md)<SelectionContainerMenuOptions> | No | Indicates the options of selection menu. |
+| spanType | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;TextSpanType&gt; | Yes | Indicates the type of selection menu. Default value is TextSpanType.TEXT. |
+| content | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;CustomBuilder&gt; | Yes | Indicates the content of selection menu. |
+| responseType | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;TextResponseType&gt; | Yes | Indicates response type of selection menu. Default value is TextResponseType.LONG_PRESS. |
+| options | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;SelectionContainerMenuOptions&gt; | No | Indicates the options of selection menu. |
 
 **Return value:**
 
@@ -54,6 +55,7 @@ Bind to the selection menu.
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-arkui-components-selectioncontainer-selectioncontainerattribute-c.md) | returns the instance of the SelectionContainerAttribute. |
 
+<a id="caretcolor"></a>
 ## caretColor
 
 ```TypeScript
@@ -76,7 +78,7 @@ Set the caret color for selected text.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ResourceColor> | Yes | caret color. |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | caret color. |
 
 **Return value:**
 
@@ -84,6 +86,7 @@ Set the caret color for selected text.
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-arkui-components-selectioncontainer-selectioncontainerattribute-c.md) | returns the instance of the SelectionContainerAttribute. |
 
+<a id="copyoption"></a>
 ## copyOption
 
 ```TypeScript
@@ -106,7 +109,7 @@ Set whether to allow copy and where data can be copied.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Optional](../arkts-components/arkts-arkui-optional-t.md)<CopyOptions> | Yes | copy option for selected text. Default value is CopyOptions.InApp. |
+| value | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;CopyOptions&gt; | Yes | copy option for selected text. Default value is CopyOptions.InApp. |
 
 **Return value:**
 
@@ -114,6 +117,7 @@ Set whether to allow copy and where data can be copied.
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-arkui-components-selectioncontainer-selectioncontainerattribute-c.md) | returns the instance of the SelectionContainerAttribute. |
 
+<a id="editmenuoptions"></a>
 ## editMenuOptions
 
 ```TypeScript
@@ -136,7 +140,7 @@ Set the custom text menu.Sets the extended options of the custom context menu on
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| editMenu | [Optional](../arkts-components/arkts-arkui-optional-t.md)<SelectionContainerEditMenuOptions> | Yes | Customize text menu options. |
+| editMenu | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;SelectionContainerEditMenuOptions&gt; | Yes | Customize text menu options. |
 
 **Return value:**
 
@@ -144,6 +148,7 @@ Set the custom text menu.Sets the extended options of the custom context menu on
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-arkui-components-selectioncontainer-selectioncontainerattribute-c.md) | returns the instance of the SelectionContainerAttribute. |
 
+<a id="enablehapticfeedback"></a>
 ## enableHapticFeedback
 
 ```TypeScript
@@ -166,7 +171,7 @@ Enable or disable haptic feedback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isEnabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | whether to enable haptic feedback. Default value is true. |
+| isEnabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | whether to enable haptic feedback. Default value is true. |
 
 **Return value:**
 
@@ -174,6 +179,7 @@ Enable or disable haptic feedback.
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-arkui-components-selectioncontainer-selectioncontainerattribute-c.md) | returns the instance of the SelectionContainerAttribute. |
 
+<a id="oncopy"></a>
 ## onCopy
 
 ```TypeScript
@@ -196,7 +202,7 @@ Called when selected text is copied.Currently, only text can be copied.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Optional](../arkts-components/arkts-arkui-optional-t.md)<Callback<string>> | Yes | callback of copy event.The callback parameter (string) is the selected text concatenated in the visual order of Text components. |
+| callback | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;Callback&lt;string&gt;&gt; | Yes | callback of copy event.The callback parameter (string) is the selected text concatenated in the visual order of Text components. |
 
 **Return value:**
 
@@ -204,6 +210,7 @@ Called when selected text is copied.Currently, only text can be copied.
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-arkui-components-selectioncontainer-selectioncontainerattribute-c.md) | returns the instance of the SelectionContainerAttribute. |
 
+<a id="ontextselectionchange"></a>
 ## onTextSelectionChange
 
 ```TypeScript
@@ -226,7 +233,7 @@ Called when text selection changes in SelectionContainer.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Optional](../arkts-components/arkts-arkui-optional-t.md)<Callback<Array<string>>> | Yes | callback of selection change event.The order of items in the first callback parameter array is consistent with the visual order of Text components. |
+| callback | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;Callback&lt;Array&lt;string&gt;&gt;&gt; | Yes | callback of selection change event.The order of items in the first callback parameter array is consistent with the visual order of Text components. |
 
 **Return value:**
 
@@ -234,6 +241,7 @@ Called when text selection changes in SelectionContainer.
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-arkui-components-selectioncontainer-selectioncontainerattribute-c.md) | returns the instance of the SelectionContainerAttribute. |
 
+<a id="onwillcopy"></a>
 ## onWillCopy
 
 ```TypeScript
@@ -256,7 +264,7 @@ Called before using the Clipboard copy menu.Currently, only text can be copied.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Optional](../arkts-components/arkts-arkui-optional-t.md)<Callback<string, boolean>> | Yes | callback used to check whether copy is allowed.The first callback parameter (string) is the selected text concatenated in the visual order of Text components. |
+| callback | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;Callback&lt;string, boolean&gt;&gt; | Yes | callback used to check whether copy is allowed.The first callback parameter (string) is the selected text concatenated in the visual order of Text components. |
 
 **Return value:**
 
@@ -264,6 +272,7 @@ Called before using the Clipboard copy menu.Currently, only text can be copied.
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-arkui-components-selectioncontainer-selectioncontainerattribute-c.md) | returns the instance of the SelectionContainerAttribute. |
 
+<a id="selectedbackgroundcolor"></a>
 ## selectedBackgroundColor
 
 ```TypeScript
@@ -286,7 +295,7 @@ Set selected text background color.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ResourceColor> | Yes | selected text background color. |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | selected text background color. |
 
 **Return value:**
 
@@ -294,6 +303,7 @@ Set selected text background color.
 | --- | --- |
 | [SelectionContainerAttribute](arkts-arkui-arkui-components-selectioncontainer-selectioncontainerattribute-c.md) | returns the instance of the SelectionContainerAttribute. |
 
+<a id="textjoinstyle"></a>
 ## textJoinStyle
 
 ```TypeScript
@@ -318,7 +328,7 @@ Set text join style for aggregated text in SelectionContainer.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | [Optional](../arkts-components/arkts-arkui-optional-t.md)<SelectionContainerTextJoinStyle> | Yes | text join style for aggregated text. |
+| style | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;SelectionContainerTextJoinStyle&gt; | Yes | text join style for aggregated text. |
 
 **Return value:**
 

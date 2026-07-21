@@ -6,6 +6,7 @@
 import { zlib } from '@kit.BasicServicesKit';
 ```
 
+<a id="creategzip"></a>
 ## createGZip
 
 ```TypeScript
@@ -26,7 +27,7 @@ Creates this **GZip** object. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GZip> | Promise used to return the **GZip** object created. |
+| Promise&lt;GZip&gt; | Promise used to return the **GZip** object created. |
 
 **Example**
 

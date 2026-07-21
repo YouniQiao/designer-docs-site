@@ -18,6 +18,7 @@ The **drawable.json** file is located under **entry/src/main/resources/base/medi
 import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -56,6 +57,7 @@ A constructor used to create a **LayeredDrawableDescriptor** object.
 | background | [DrawableDescriptor](arkts-arkui-arkui-drawabledescriptor-drawabledescriptor-c.md) | No | Options for the background image of the layered drawable. |
 | mask | [DrawableDescriptor](arkts-arkui-arkui-drawabledescriptor-drawabledescriptor-c.md) | No | Options for the mask of the layered drawable. |
 
+<a id="getbackground"></a>
 ## getBackground
 
 ```TypeScript
@@ -126,6 +128,7 @@ struct Index {
 
 ```
 
+<a id="getforeground"></a>
 ## getForeground
 
 ```TypeScript
@@ -201,6 +204,7 @@ struct Index {
 
 ```
 
+<a id="getmask"></a>
 ## getMask
 
 ```TypeScript
@@ -271,6 +275,7 @@ struct Index {
 
 ```
 
+<a id="getmaskclippath"></a>
 ## getMaskClipPath
 
 ```TypeScript
@@ -322,6 +327,7 @@ struct Index {
 
 ```
 
+<a id="setblendmode"></a>
 ## setBlendMode
 
 ```TypeScript

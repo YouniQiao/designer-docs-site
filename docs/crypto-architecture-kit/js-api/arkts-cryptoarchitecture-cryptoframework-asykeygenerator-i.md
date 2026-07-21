@@ -16,6 +16,7 @@ Provides APIs for using the **AsyKeyGenerator**. Before using any API of the **A
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="convertkey"></a>
 ## convertKey
 
 ```TypeScript
@@ -40,7 +41,7 @@ Converts asymmetric key data to a key pair object. This API uses an asynchronous
 | --- | --- | --- | --- |
 | pubKey | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | The public key data blob. |
 | priKey | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | The private key data blob. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KeyPair> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the asymmetric key pair obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KeyPair&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the asymmetric key pair obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ Converts asymmetric key data to a key pair object. This API uses an asynchronous
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="convertkey-1"></a>
 ## convertKey
 
 ```TypeScript
@@ -73,9 +75,9 @@ Converts data into an asymmetric key pair. This API uses an asynchronous callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pubKey | DataBlob \| null | Yes | Public key material to convert. If no public key needs to be converted, set this parameter to **null**. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
-| priKey | DataBlob \| null | Yes | Private key material to convert. If no private key needs to be converted, set this parameter to **null**. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KeyPair> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the key pair obtained. Otherwise, **err** is an error object. |
+| pubKey | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Public key material to convert. If no public key needs to be converted, set this parameter to **null**. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
+| priKey | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Private key material to convert. If no private key needs to be converted, set this parameter to **null**. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KeyPair&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the key pair obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -112,6 +114,7 @@ asyKeyGenerator.convertKey(pubKeyBlob, priKeyBlob, (err, keyPair) => {
 
 ```
 
+<a id="convertkey-2"></a>
 ## convertKey
 
 ```TypeScript
@@ -141,7 +144,7 @@ Converts asymmetric key data to a key pair object. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyPair> | Promise used to return the asymmetric key pair. |
+| Promise&lt;KeyPair&gt; | Promise used to return the asymmetric key pair. |
 
 **Error codes:**
 
@@ -152,6 +155,7 @@ Converts asymmetric key data to a key pair object. This API uses a promise to re
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="convertkey-3"></a>
 ## convertKey
 
 ```TypeScript
@@ -174,14 +178,14 @@ Converts data into an asymmetric key pair. This API uses a promise to return the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pubKey | DataBlob \| null | Yes | Public key material to convert. If no public key needs to be converted, set this parameter to **null**. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
-| priKey | DataBlob \| null | Yes | Private key material to convert. If no private key needs to be converted, set this parameter to **null**. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
+| pubKey | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Public key material to convert. If no public key needs to be converted, set this parameter to **null**. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
+| priKey | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Private key material to convert. If no private key needs to be converted, set this parameter to **null**. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyPair> | Promise used to return the asymmetric key pair. |
+| Promise&lt;KeyPair&gt; | Promise used to return the asymmetric key pair. |
 
 **Error codes:**
 
@@ -218,6 +222,7 @@ keyGenPromise.then(keyPair => {
 
 ```
 
+<a id="convertkeysync"></a>
 ## convertKeySync
 
 ```TypeScript
@@ -240,8 +245,8 @@ Converts data into an asymmetric key pair. This API returns the result synchrono
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pubKey | DataBlob \| null | Yes | Public key material. If no public key needs to be converted, set this parameter to **null**. Before API version 10, only **DataBlob** is supported. Since API version 10, **null** can be passed in. |
-| priKey | DataBlob \| null | Yes | Private key material. If no private key needs to be converted, set this parameter to **null**. Before API version 10, only **DataBlob** is supported. Since API version 10, **null** can be passed in. |
+| pubKey | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Public key material. If no public key needs to be converted, set this parameter to **null**. Before API version 10, only **DataBlob** is supported. Since API version 10, **null** can be passed in. |
+| priKey | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Private key material. If no private key needs to be converted, set this parameter to **null**. Before API version 10, only **DataBlob** is supported. Since API version 10, **null** can be passed in. |
 
 **Return value:**
 
@@ -287,6 +292,7 @@ try {
 
 ```
 
+<a id="convertpemkey"></a>
 ## convertPemKey
 
 ```TypeScript
@@ -326,7 +332,7 @@ Converts data into an asymmetric key pair. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyPair> | Promise used to return the asymmetric key pair. |
+| Promise&lt;KeyPair&gt; | Promise used to return the asymmetric key pair. |
 
 **Error codes:**
 
@@ -378,6 +384,7 @@ async function TestConvertPemKeyByPromise() {
 
 ```
 
+<a id="convertpemkey-1"></a>
 ## convertPemKey
 
 ```TypeScript
@@ -419,7 +426,7 @@ Converts data into an asymmetric key pair. Encrypted private keys are supported.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyPair> | Promise used to return the asymmetric key pair. |
+| Promise&lt;KeyPair&gt; | Promise used to return the asymmetric key pair. |
 
 **Error codes:**
 
@@ -466,6 +473,7 @@ async function TestConvertPemKeyByPromise() {
 
 ```
 
+<a id="convertpemkeysync"></a>
 ## convertPemKeySync
 
 ```TypeScript
@@ -556,6 +564,7 @@ function TestConvertPemKeyBySync() {
 
 ```
 
+<a id="convertpemkeysync-1"></a>
 ## convertPemKeySync
 
 ```TypeScript
@@ -566,7 +575,7 @@ Converts data into an asymmetric key pair. Encrypted private keys are supported.
 
 > **NOTE**  
 > The precautions for using **convertPemKeySync** are the same as those for  
-> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey-2)  
+> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey-1)  
 > .
 
 <br><br>**NOTE**<br>It is recommended to prioritize the use of asynchronous API, {@link convertPemKey}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
@@ -641,6 +650,7 @@ function TestConvertPemKeyBySync() {
 
 ```
 
+<a id="generatekeypair"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -663,7 +673,7 @@ Generates a random key pair using this asymmetric key generator. This API uses a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KeyPair> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the key pair obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KeyPair&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the key pair obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -689,6 +699,7 @@ asyKeyGenerator.generateKeyPair((err, keyPair) => {
 
 ```
 
+<a id="generatekeypair-1"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -711,7 +722,7 @@ Generates a random key pair using this asymmetric key generator. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyPair> | Promise used to return the asymmetric key pair. |
+| Promise&lt;KeyPair&gt; | Promise used to return the asymmetric key pair. |
 
 **Error codes:**
 
@@ -737,6 +748,7 @@ keyGenPromise.then(keyPair => {
 
 ```
 
+<a id="generatekeypairsync"></a>
 ## generateKeyPairSync
 
 ```TypeScript

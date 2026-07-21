@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="startdtmf"></a>
 ## startDTMF
 
 ```TypeScript
@@ -30,7 +31,7 @@ Start DTMF(Dual Tone Multi Frequency).
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
 | character | string | Yes | Indicates the characters sent. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of startDTMF. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of startDTMF. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ call.startDTMF(1, "0", (err: BusinessError) => {
 ```
 
 
+<a id="startdtmf-1"></a>
 ## startDTMF
 
 ```TypeScript
@@ -89,7 +91,7 @@ Start DTMF(Dual Tone Multi Frequency).
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the startDTMF. |
+| Promise&lt;void&gt; | The promise returned by the startDTMF. |
 
 **Error codes:**
 

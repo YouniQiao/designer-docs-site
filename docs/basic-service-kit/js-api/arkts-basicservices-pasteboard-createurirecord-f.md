@@ -6,6 +6,7 @@
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
+<a id="createurirecord"></a>
 ## createUriRecord
 
 ```TypeScript
@@ -18,7 +19,7 @@ Creates a **PasteDataRecord** object of the URI type.
 
 **Deprecated since:** 9
 
-**Substitutes:** createRecord(mimeType:
+**Substitutes:** [createRecord(mimeType:](arkts-basicservices-pasteboard-createrecord-f.md#createrecord-1)
 
 <!--Device-pasteboard-function createUriRecord(uri: string): PasteDataRecord--><!--Device-pasteboard-function createUriRecord(uri: string): PasteDataRecord-End-->
 

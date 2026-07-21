@@ -1,6 +1,6 @@
 # LayoutAlgorithm
 
-Basic layout algorithm of the [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) container.
+Basic layout algorithm of the [DynamicLayout](docroot://reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) container.
 
 > **NOTE**  
 >  

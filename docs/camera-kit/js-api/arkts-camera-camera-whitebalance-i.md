@@ -18,6 +18,7 @@
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getcolortint"></a>
 ## getColorTint
 
 ```TypeScript
@@ -48,6 +49,7 @@ Gets current color tint.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="setcolortint"></a>
 ## setColorTint
 
 ```TypeScript

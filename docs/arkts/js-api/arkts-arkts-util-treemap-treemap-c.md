@@ -14,6 +14,7 @@ TreeMap stores key-value (KV) pairs. Each key must be unique and have only one v
 import { TreeMap } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an ES6 iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -85,6 +86,7 @@ while(!temp.done) {
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -119,6 +121,7 @@ console.info("result:", result); // result: true
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -139,7 +142,7 @@ A constructor used to create a TreeMap object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| comparator | (firstValue: K, secondValue: K) => boolean | No | comparator comparator (Optional) User-defined comparison functions.firstValue (required) previous element.secondValue (required) next element. |
+| comparator | (firstValue: K, secondValue: K) =&gt; boolean | No | comparator comparator (Optional) User-defined comparison functions.firstValue (required) previous element.secondValue (required) next element. |
 
 **Error codes:**
 
@@ -196,6 +199,7 @@ console.info("length:", ts1.length); // length: 2
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -216,7 +220,7 @@ Returns a new Iterator object that contains the [key, value] pairs for each elem
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | @throws { BusinessError } 10200011 - The entries method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | @throws { BusinessError } 10200011 - The entries method cannot be bound. |
 
 **Error codes:**
 
@@ -254,6 +258,7 @@ while(!t.done) {
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -274,8 +279,8 @@ Executes the given callback function once for each real key in the map.It does n
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value?: V, key?: K, map?: TreeMap<K, V>) => void | Yes | callbackFn callbackFn (required) A function that accepts up to three arguments.The function to be called for each element. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | thisArg thisArg (Optional) The value to be used as this value for when callbackFn is called.If thisArg is omitted, undefined is used as the this value. |
+| callbackFn | (value?: V, key?: K, map?: TreeMap&lt;K, V&gt;) =&gt; void | Yes | callbackFn callbackFn (required) A function that accepts up to three arguments.The function to be called for each element. |
+| thisArg | Object | No | thisArg thisArg (Optional) The value to be used as this value for when callbackFn is called.If thisArg is omitted, undefined is used as the this value. |
 
 **Error codes:**
 
@@ -310,6 +315,7 @@ treeMap.forEach((value: number, key: string): void => {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -355,6 +361,7 @@ console.info("result:", result); // result: 356
 
 ```
 
+<a id="getfirstkey"></a>
 ## getFirstKey
 
 ```TypeScript
@@ -382,7 +389,7 @@ Obtains the first sorted key in the treemap.Or returns undefined if tree map is 
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getFirstKey method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -395,6 +402,7 @@ console.info("result:", result); // result: sparrow
 
 ```
 
+<a id="gethigherkey"></a>
 ## getHigherKey
 
 ```TypeScript
@@ -442,6 +450,7 @@ console.info("result:", result); // result: 4
 
 ```
 
+<a id="getlastkey"></a>
 ## getLastKey
 
 ```TypeScript
@@ -469,7 +478,7 @@ Obtains the last sorted key in the treemap.Or returns undefined if tree map is e
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getLastKey method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -482,6 +491,7 @@ console.info("result:", result); // result: squirrel
 
 ```
 
+<a id="getlowerkey"></a>
 ## getLowerKey
 
 ```TypeScript
@@ -529,6 +539,7 @@ console.info("result:", result); // result: 2
 
 ```
 
+<a id="haskey"></a>
 ## hasKey
 
 ```TypeScript
@@ -573,6 +584,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="hasvalue"></a>
 ## hasValue
 
 ```TypeScript
@@ -617,6 +629,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -654,6 +667,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -674,7 +688,7 @@ Returns a new Iterator object that contains the keys contained in this map
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<K> | @throws { BusinessError } 10200011 - The keys method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;K&gt; | @throws { BusinessError } 10200011 - The keys method cannot be bound. |
 
 **Error codes:**
 
@@ -698,6 +712,7 @@ for (let key of keys) {
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -743,6 +758,7 @@ console.info("result = " + result); // result = 356
 
 ```
 
+<a id="replace"></a>
 ## replace
 
 ```TypeScript
@@ -788,6 +804,7 @@ console.info("sparrow:", treeMap.get("sparrow")); // sparrow: 357
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -815,7 +832,7 @@ Adds or updates a(new) key-value pair with a key and value specified for the Map
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | the map object after set |
+| Object | the map object after set |
 
 **Error codes:**
 
@@ -832,6 +849,7 @@ console.info("squirrel:", treeMap.get("squirrel")); // squirrel: 123
 
 ```
 
+<a id="setall"></a>
 ## setAll
 
 ```TypeScript
@@ -852,7 +870,7 @@ Adds all element groups in one map to another map
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| map | [TreeMap](arkts-arkts-util-treemap-treemap-c.md)<K, V> | Yes | map map the Map object to add members |
+| map | [TreeMap](arkts-arkts-util-treemap-treemap-c.md)&lt;K, V&gt; | Yes | map map the Map object to add members |
 
 **Error codes:**
 
@@ -879,6 +897,7 @@ map.forEach((value ?: number, key ?: string) : void => {
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -899,7 +918,7 @@ Returns a new Iterator object that contains the values contained in this map
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<V> | @throws { BusinessError } 10200011 - The values method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;V&gt; | @throws { BusinessError } 10200011 - The values method cannot be bound. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="shiftappwindowpointerevent"></a>
 ## shiftAppWindowPointerEvent
 
 ```TypeScript
@@ -35,7 +36,7 @@ To transfer mouse input events, the source window must call this API within the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

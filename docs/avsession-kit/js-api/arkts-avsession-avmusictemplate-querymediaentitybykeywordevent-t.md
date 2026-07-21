@@ -21,13 +21,13 @@ The query media entity by keyword event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| keyword | string | Yes | keyword |
-| searchType | EntityType | Yes | search type |
-| pageIndex | int | Yes | page index |
+| keyword | string | Yes | keyword  |
+| searchType | [EntityType](arkts-avsession-avmusictemplate-entitytype-e.md) | Yes | search type  |
+| pageIndex | number | Yes | page index  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PageMediaEntity&gt; | (PageMediaEntity) returned through promise |
+| Promise&lt;PageMediaEntity&gt; | (PageMediaEntity) returned through promise  |
 

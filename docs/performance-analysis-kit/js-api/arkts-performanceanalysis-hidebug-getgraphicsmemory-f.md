@@ -6,6 +6,7 @@
 import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="getgraphicsmemory"></a>
 ## getGraphicsMemory
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the total GPU memory size (**gl** + **graph**) of the application. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the total GPU memory size of the application, in KB. |
+| Promise&lt;number&gt; | Promise used to return the total GPU memory size of the application, in KB. |
 
 **Error codes:**
 

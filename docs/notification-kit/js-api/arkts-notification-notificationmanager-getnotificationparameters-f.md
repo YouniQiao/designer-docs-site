@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getnotificationparameters"></a>
 ## getNotificationParameters
 
 ```TypeScript
@@ -33,7 +34,7 @@ Obtains some information about the **wantAgent** field in [NotificationRequest](
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NotificationParameters> | Promise used to return some information about **wantAgent**. |
+| Promise&lt;NotificationParameters&gt; | Promise used to return some information about **wantAgent**. |
 
 **Error codes:**
 

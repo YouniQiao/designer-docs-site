@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="iscellulardataroamingenabled"></a>
 ## isCellularDataRoamingEnabled
 
 ```TypeScript
@@ -27,7 +28,7 @@ Check whether roaming is enabled for cellular data services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the ID of a card slot.The value {@code 0} indicates card 1, and the value {@code 1} indicates card 2. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for checking whether roaming is enabled for cellular data services. Returns {@code true} if roaming is enabled for cellular data services;returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for checking whether roaming is enabled for cellular data services. Returns {@code true} if roaming is enabled for cellular data services;returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ data.isCellularDataRoamingEnabled(0, (err: BusinessError, contextData: boolean) 
 ```
 
 
+<a id="iscellulardataroamingenabled-1"></a>
 ## isCellularDataRoamingEnabled
 
 ```TypeScript
@@ -83,7 +85,7 @@ Check whether roaming is enabled for cellular data services.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if roaming is enabled for cellular data services.Returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if roaming is enabled for cellular data services.Returns {@code false} otherwise. |
 
 **Error codes:**
 

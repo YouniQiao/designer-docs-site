@@ -1,0 +1,224 @@
+# PinchGestureInterface
+
+**PinchGesture** is used to trigger a pinch gesture, which requires two to five fingers with a minimum 5 vp distance between the fingers.
+
+> **NOTE**  
+>  
+> To trigger the pinch gesture again after successful recognition, all fingers must be lifted and then make  
+> contact again to satisfy the recognition criteria.
+
+**Inheritance/Implementation:** PinchGestureInterface extends [GestureInterface<PinchGestureInterface>](GestureInterface<PinchGestureInterface>)
+
+**Since:** 7
+
+<!--Device-unnamed-interface PinchGestureInterface extends GestureInterface<PinchGestureInterface>--><!--Device-unnamed-interface PinchGestureInterface extends GestureInterface<PinchGestureInterface>-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+<a id="constructor"></a>
+## constructor
+
+```TypeScript
+(value?: { fingers?: number; distance?: number }): PinchGestureInterface
+```
+
+Sets the parameters for the pinch gesture. Inherits from [GestureInterface<T>](arkts-arkui-gestureinterface-i.md).
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PinchGestureInterface-(value?: { fingers?: number; distance?: number }): PinchGestureInterface--><!--Device-PinchGestureInterface-(value?: { fingers?: number; distance?: number }): PinchGestureInterface-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | { fingers?: number; distance?: number } | No | Parameters for the pinch gesture.<br> - **fingers**: minimum number of fingers to trigger a pinch. The value ranges from 2 to 5.<br>Default value: **2** <br>Value range: [2, 5]. Values outside this range are automatically adjusted to the default value.<br>While more fingers than the minimum number can be pressed to trigger the gesture, only the first fingers of the minimum number participate in gesture calculation.<br> - **distance**: minimum recognition distance, in vp. This distance refers to the difference between the current average distance from the multiple finger positions to their center point and the average distance when the fingers first made contact. If this difference meets or exceeds the minimum recognition distance,the pinch gesture is recognized.<br>Default value: **5**<br>**NOTE**<br>Value range: [0, +∞). If the value is less than or equal to 0, it will be converted to the default value. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [PinchGestureInterface](arkts-arkui-pinchgestureinterface-i.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@crossplatform |
+
+<a id="constructor-1"></a>
+## constructor
+
+```TypeScript
+(options?: PinchGestureHandlerOptions): PinchGestureInterface
+```
+
+Sets the parameters for the pinch gesture. Compared with [PinchGesture](arkts-arkui-pinchgestureinterface-i.md))},this API adds the **isFingerCountLimited** parameter to **options**, which determines whether to enforce the exact number of fingers touching the screen.
+
+**Since:** 15
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 15.
+
+<!--Device-PinchGestureInterface-(options?: PinchGestureHandlerOptions): PinchGestureInterface--><!--Device-PinchGestureInterface-(options?: PinchGestureHandlerOptions): PinchGestureInterface-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | [PinchGestureHandlerOptions](arkts-arkui-pinchgesturehandleroptions-i.md) | No | Parameters of the pinch gesture handler. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [PinchGestureInterface](arkts-arkui-pinchgestureinterface-i.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+
+<a id="onactioncancel"></a>
+## onActionCancel
+
+```TypeScript
+onActionCancel(event: () => void): PinchGestureInterface
+```
+
+Triggered when a touch cancellation event occurs after successful pinch gesture recognition. No gesture event information is returned.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PinchGestureInterface-onActionCancel(event: () => void): PinchGestureInterface--><!--Device-PinchGestureInterface-onActionCancel(event: () => void): PinchGestureInterface-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | () =&gt; void | Yes | Callback for the pinch event. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [PinchGestureInterface](arkts-arkui-pinchgestureinterface-i.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@crossplatform |
+
+<a id="onactioncancel-1"></a>
+## onActionCancel
+
+```TypeScript
+onActionCancel(event: Callback<GestureEvent>): PinchGestureInterface
+```
+
+Triggered when a touch cancellation event occurs after successful pinch gesture recognition. Compared with [onActionCancel](arkts-arkui-pinchgestureinterface-i.md#onactioncancel-1), this callback returns gesture event information.
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-PinchGestureInterface-onActionCancel(event: Callback<GestureEvent>): PinchGestureInterface--><!--Device-PinchGestureInterface-onActionCancel(event: Callback<GestureEvent>): PinchGestureInterface-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;GestureEvent&gt; | Yes | Callback for the pinch event. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [PinchGestureInterface](arkts-arkui-pinchgestureinterface-i.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+
+<a id="onactionend"></a>
+## onActionEnd
+
+```TypeScript
+onActionEnd(event: (event: GestureEvent) => void): PinchGestureInterface
+```
+
+Triggered when all fingers are lifted after successful pinch gesture recognition.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PinchGestureInterface-onActionEnd(event: (event: GestureEvent) => void): PinchGestureInterface--><!--Device-PinchGestureInterface-onActionEnd(event: (event: GestureEvent) => void): PinchGestureInterface-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | (event: GestureEvent) =&gt; void | Yes | Callback for the pinch event. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [PinchGestureInterface](arkts-arkui-pinchgestureinterface-i.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@crossplatform |
+
+<a id="onactionstart"></a>
+## onActionStart
+
+```TypeScript
+onActionStart(event: (event: GestureEvent) => void): PinchGestureInterface
+```
+
+Triggered after the pinch gesture is recognized.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PinchGestureInterface-onActionStart(event: (event: GestureEvent) => void): PinchGestureInterface--><!--Device-PinchGestureInterface-onActionStart(event: (event: GestureEvent) => void): PinchGestureInterface-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | (event: GestureEvent) =&gt; void | Yes | Callback for the pinch event. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [PinchGestureInterface](arkts-arkui-pinchgestureinterface-i.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@crossplatform |
+
+<a id="onactionupdate"></a>
+## onActionUpdate
+
+```TypeScript
+onActionUpdate(event: (event: GestureEvent) => void): PinchGestureInterface
+```
+
+Triggered when the user moves the finger in the pinch gesture on the screen.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PinchGestureInterface-onActionUpdate(event: (event: GestureEvent) => void): PinchGestureInterface--><!--Device-PinchGestureInterface-onActionUpdate(event: (event: GestureEvent) => void): PinchGestureInterface-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | (event: GestureEvent) =&gt; void | Yes | Callback for the pinch event. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [PinchGestureInterface](arkts-arkui-pinchgestureinterface-i.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@crossplatform |
+

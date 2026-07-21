@@ -6,6 +6,7 @@
 import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
+<a id="offdownloadsuccess"></a>
 ## offDownloadSuccess
 
 ```TypeScript
@@ -25,7 +26,7 @@ Unsubscribes from the pre-download completion events. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | Callback URL to be registered, with a maximum of 8,192 bytes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback to unregister. If this parameter is left blank, all completion callback functions of the URL are unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback to unregister. If this parameter is left blank, all completion callback functions of the URL are unregistered. |
 
 **Example**
 

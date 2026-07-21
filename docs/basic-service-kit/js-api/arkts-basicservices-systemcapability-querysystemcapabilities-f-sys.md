@@ -6,6 +6,7 @@
 import { systemCapability } from '@kit.BasicServicesKit';
 ```
 
+<a id="querysystemcapabilities"></a>
 ## querySystemCapabilities
 
 ```TypeScript
@@ -26,7 +27,7 @@ Get System Capability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes |  |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes |  |
 
 **Example**
 
@@ -45,6 +46,7 @@ try {
 ```
 
 
+<a id="querysystemcapabilities-1"></a>
 ## querySystemCapabilities
 
 ```TypeScript
@@ -65,7 +67,7 @@ Get System Capability.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | system capability string. |
+| Promise&lt;string&gt; | system capability string. |
 
 **Example**
 

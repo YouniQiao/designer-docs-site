@@ -6,6 +6,7 @@
 import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
+<a id="notifydatachange"></a>
 ## notifyDataChange
 
 ```TypeScript
@@ -33,7 +34,7 @@ Notifies the device-cloud service that the cloud data of a specific application 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ cloudSyncManager.notifyDataChange(accountId, bundleName).then(() => {
 ```
 
 
+<a id="notifydatachange-1"></a>
 ## notifyDataChange
 
 ```TypeScript
@@ -81,7 +83,7 @@ Notifies the device-cloud service that the cloud data of a specific application 
 | --- | --- | --- | --- |
 | accountId | string | Yes | Account ID. |
 | bundleName | string | Yes | Bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the application data change in the cloud. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the application data change in the cloud. |
 
 **Error codes:**
 
@@ -109,6 +111,7 @@ cloudSyncManager.notifyDataChange(accountId, bundleName, (err: BusinessError) =>
 ```
 
 
+<a id="notifydatachange-2"></a>
 ## notifyDataChange
 
 ```TypeScript
@@ -138,7 +141,7 @@ Notifies the device-cloud service of the cloud data change information of a spec
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -165,6 +168,7 @@ cloudSyncManager.notifyDataChange(userId, extraData).then(() => {
 ```
 
 
+<a id="notifydatachange-3"></a>
 ## notifyDataChange
 
 ```TypeScript
@@ -189,7 +193,7 @@ Notifies the device-cloud service of the cloud data change information of a spec
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. |
 | extraData | [ExtraData](arkts-corefile-cloudsyncmanager-extradata-i-sys.md) | Yes | Represents the cloud data change information. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the application data change in the cloud. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the application data change in the cloud. |
 
 **Error codes:**
 

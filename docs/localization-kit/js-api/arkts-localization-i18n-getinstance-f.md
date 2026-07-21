@@ -6,6 +6,7 @@
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="getinstance"></a>
 ## getInstance
 
 ```TypeScript
@@ -26,7 +27,7 @@ Creates an **IndexUtil** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string | No | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region.The default value is the current system locale. |
+| locale | string | No | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region.The default value is the current system locale. |
 
 **Return value:**
 

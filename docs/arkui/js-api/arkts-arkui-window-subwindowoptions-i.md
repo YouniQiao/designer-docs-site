@@ -58,7 +58,7 @@ maximizeSupported?: boolean
 
 Whether the child window supports maximization. **true** if supported, **false** otherwise. The default value is **false**.
 
-This parameter can be used properly on devices that support the [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode and are currently in that mode. On devices that do not support the freeform window mode, the API call will neither take effect nor report an error when this parameter is used as an input. On devices that support the freeform window mode but are not currently in that mode, the API call will neither take effect nor report an error when this parameter is used as an input. The setting will take effect after the devices switch to that mode.
+This parameter can be used properly on devices that support the [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode and are currently in that mode. On devices that do not support the freeform window mode, the API call will neither take effect nor report an error when this parameter is used as an input. On devices that support the freeform window mode but are not currently in that mode, the API call will neither take effect nor report an error when this parameter is used as an input. The setting will take effect after the devices switch to that mode.
 
 **Type:** boolean
 
@@ -132,7 +132,7 @@ Title of the child window. The title display area should not go past the left si
 windowRect?: Rect
 ```
 
-Rectangle of the child window, and the size of the child window is limited. For details, see [resize()](arkts-arkui-window-window-i.md#resize-2). If this parameter is not set and [showWindow()](arkts-arkui-window-window-i.md#showwindow-1) is not called, the default value {left: 0, top: 0, width: 0, height: 0} is used. For details, see [Setting a Child Window of an Application](../../../../windowmanager/application-window-stage.md#setting-a-child-window-of-an-application).
+Rectangle of the child window, and the size of the child window is limited. For details, see [resize()](arkts-arkui-window-window-i.md#resize-1). If this parameter is not set and [showWindow()](arkts-arkui-window-window-i.md#showwindow-1) is not called, the default value {left: 0, top: 0, width: 0, height: 0} is used. For details, see [Setting a Child Window of an Application](docroot://windowmanager/application-window-stage.md#setting-a-child-window-of-an-application).
 
 **Type:** Rect
 

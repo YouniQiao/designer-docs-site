@@ -4,6 +4,8 @@ Defines the segmented button with capsule style.
 
 **Since:** 18
 
+**Decorator:** @ComponentV2
+
 <!--Device-unnamed-export declare struct CapsuleSegmentButtonV2--><!--Device-unnamed-export declare struct CapsuleSegmentButtonV2-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -14,6 +16,7 @@ Defines the segmented button with capsule style.
 import { OnSelectedIndexesChange, TabSegmentButtonV2, SegmentButtonV2Items, MultiCapsuleSegmentButtonV2, OnSelectedIndexChange, SegmentButtonV2ItemOptions, SegmentButtonV2Item, CapsuleSegmentButtonV2 } from '@kit.ArkUI';
 ```
 
+<a id="build"></a>
 ## build
 
 ```TypeScript
@@ -68,6 +71,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -91,6 +96,8 @@ This property is read-only.
 **Type:** BackgroundBlurStyleOptions
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -118,6 +125,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -141,6 +150,8 @@ This property is read-only.
 **Type:** BackgroundEffectOptions
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -170,6 +181,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -197,6 +210,8 @@ This property is read-only.
 **Type:** LengthMetrics
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -226,6 +241,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -245,6 +262,8 @@ Enable animation when selectedIndexes change.
 **Type:** boolean
 
 **Since:** 24
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -273,6 +292,8 @@ This property is read-only.
 **Type:** LengthMetrics
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -303,6 +324,8 @@ This property is read-only.
 **Type:** ColorMetrics
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -336,6 +359,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -365,6 +390,8 @@ This property is read-only.
 **Type:** FontWeight
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -396,6 +423,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -424,9 +453,11 @@ When **width** and **height** of **iconModifier** are set for **items**, **itemI
 
 This property is read-only.
 
-**Type:** SizeT<LengthMetrics>
+**Type:** SizeT&lt;LengthMetrics&gt;
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -454,9 +485,11 @@ A value less than 1 is treated as **1**. A value greater than 2 is treated as **
 
 This property is read-only.
 
-**Type:** number | Resource
+**Type:** number \| Resource
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -484,9 +517,11 @@ A value less than 0 is treated as **0**. A value greater than 1 is treated as **
 
 This property is read-only.
 
-**Type:** number | Resource
+**Type:** number \| Resource
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -518,6 +553,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -544,6 +581,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -569,6 +608,8 @@ This property is read-only.
 **Type:** ColorMetrics
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -599,6 +640,8 @@ This property is read-only.
 **Type:** ColorMetrics
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -632,6 +675,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -661,6 +706,8 @@ This property is read-only.
 **Type:** FontWeight
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -692,6 +739,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -722,6 +771,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -744,9 +795,11 @@ If the value is out of the range, the default value is used.
 
 This property is read-only.
 
-**Type:** ShadowOptions | ShadowStyle
+**Type:** ShadowOptions \| ShadowStyle
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -778,6 +831,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -807,6 +862,8 @@ This property is read-only.
 **Type:** ColorMetrics
 
 **Since:** 18
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -840,6 +897,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -863,6 +922,8 @@ This property is read-only.
 **Type:** SegmentButtonV2Items
 
 **Since:** 18
+
+**Decorator:** @Require, @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -890,6 +951,8 @@ This property is read-only.
 
 **Since:** 18
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
@@ -906,7 +969,7 @@ onItemClicked?: Callback<number>
 
 Callback invoked when a segmented button item is clicked.
 
-**Type:** Callback<number>
+**Type:** Callback&lt;number&gt;
 
 **Since:** 18
 
@@ -933,6 +996,8 @@ This property is read-only.
 **Type:** number
 
 **Since:** 18
+
+**Decorator:** @Require, @Param
 
 **Model restriction:** This API can be used only in the stage model.
 

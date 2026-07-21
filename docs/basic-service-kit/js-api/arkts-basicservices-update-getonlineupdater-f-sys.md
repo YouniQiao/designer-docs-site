@@ -6,13 +6,14 @@
 import { update } from '@kit.BasicServicesKit';
 ```
 
+<a id="getonlineupdater"></a>
 ## getOnlineUpdater
 
 ```TypeScript
 function getOnlineUpdater(upgradeInfo: UpgradeInfo): Updater
 ```
 
-Obtains an **OnlineUpdater** object, which can be used to check for new versions online, download update packages,and install update packages. This API can be used in scenarios such as OTA upgrade (for details, see [Upgrading Service Terms](../../../../basic-services/update/update-kit-term.md))of client applications and online system upgrade. This API can help users obtain system updates in a timely manner,improving upgrade efficiency and user experience.
+Obtains an **OnlineUpdater** object, which can be used to check for new versions online, download update packages,and install update packages. This API can be used in scenarios such as OTA upgrade (for details, see [Upgrading Service Terms](docroot://basic-services/update/update-kit-term.md))of client applications and online system upgrade. This API can help users obtain system updates in a timely manner,improving upgrade efficiency and user experience.
 
 **Overview**
 

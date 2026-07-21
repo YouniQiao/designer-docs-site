@@ -27,9 +27,9 @@ import { dragInteraction } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [getDataSummary](arkts-arkui-draginteraction-getdatasummary-f-sys.md#getdatasummary-1) | Obtains the data summary of all dragged objects. |
-| [off](arkts-arkui-draginteraction-off-f-sys.md#off-1) | Disables listening for dragging status changes. |
-| [on](arkts-arkui-draginteraction-on-f-sys.md#on-1) | Enables listening for dragging status changes. |
+| [getDataSummary](arkts-arkui-draginteraction-getdatasummary-f-sys.md#getdatasummary) | Obtains the data summary of all dragged objects. |
+| [off](arkts-arkui-draginteraction-off-f-sys.md#off) | Disables listening for dragging status changes. |
+| [on](arkts-arkui-draginteraction-on-f-sys.md#on) | Enables listening for dragging status changes. |
 <!--DelEnd-->
 
 <!--Del-->

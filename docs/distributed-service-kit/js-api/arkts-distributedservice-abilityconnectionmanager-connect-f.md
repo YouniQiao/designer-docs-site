@@ -6,6 +6,7 @@
 import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -32,7 +33,7 @@ Sets up a UIAbility connection after a collaboration session is created and the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ConnectResult> | Promise used to return the [connection result](arkts-distributedservice-abilityconnectionmanager-connectresult-i.md). |
+| Promise&lt;ConnectResult&gt; | Promise used to return the [connection result](arkts-distributedservice-abilityconnectionmanager-connectresult-i.md). |
 
 **Error codes:**
 

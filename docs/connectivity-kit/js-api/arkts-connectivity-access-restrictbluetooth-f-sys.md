@@ -6,6 +6,7 @@
 import { access } from '@kit.ConnectivityKit';
 ```
 
+<a id="restrictbluetooth"></a>
 ## restrictBluetooth
 
 ```TypeScript
@@ -28,7 +29,7 @@ Restrict Bluetooth BR/EDR ability on a device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

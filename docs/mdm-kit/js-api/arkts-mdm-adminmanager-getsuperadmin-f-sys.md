@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="getsuperadmin"></a>
 ## getSuperAdmin
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the super device administrator application of this administrator. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Want> | Promise used to return the super device administrator application obtained. If no super device administrator application is activated on the device, **bundleName** and **abilityName** in **Want** returned are empty strings. |
+| Promise&lt;Want&gt; | Promise used to return the super device administrator application obtained. If no super device administrator application is activated on the device, **bundleName** and **abilityName** in **Want** returned are empty strings. |
 
 **Error codes:**
 

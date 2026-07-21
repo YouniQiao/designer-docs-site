@@ -10,18 +10,19 @@ UIExtensionContext provides the context environment for [UIExtensionAbility](ark
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="connectserviceextensionability"></a>
 ## connectServiceExtensionAbility
 
 ```TypeScript
 connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
-Connects this UIExtensionAbility to a ServiceExtensionAbility. It enables communication with the ServiceExtensionAbility via a proxy, allowing access to the capabilities exposed by the ServiceExtensionAbility.ServiceExtensionAbility is a special type of [ExtensionAbility](../../../../application-models/extensionability-overview.md) provided by the system. It is designed to offer background services for specific scenarios and is not customizable by developers. It can be connected to by other components and handles requests in the background based on the caller information.
+Connects this UIExtensionAbility to a ServiceExtensionAbility. It enables communication with the ServiceExtensionAbility via a proxy, allowing access to the capabilities exposed by the ServiceExtensionAbility.ServiceExtensionAbility is a special type of [ExtensionAbility](docroot://application-models/extensionability-overview.md) provided by the system. It is designed to offer background services for specific scenarios and is not customizable by developers. It can be connected to by other components and handles requests in the background based on the caller information.
 
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -42,7 +43,7 @@ Connects this UIExtensionAbility to a ServiceExtensionAbility. It enables commun
 
 | Type | Description |
 | --- | --- |
-| number | Connection ID. The client can call [disconnectServiceExtensionAbility](arkts-ability-uiextensioncontext-c.md#disconnectserviceextensionability-2)with this ID for disconnection. |
+| number | Connection ID. The client can call [disconnectServiceExtensionAbility](arkts-ability-uiextensioncontext-c.md#disconnectserviceextensionability-1)with this ID for disconnection. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ Connects this UIExtensionAbility to a ServiceExtensionAbility. It enables commun
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16000070](../errorcode-ability.md#16000070-extensionability-fails-to-start-a-serviceextensionability-in-strict-mode) | The extension cannot start the service. |
 
+<a id="connectuiserviceextensionability"></a>
 ## connectUIServiceExtensionAbility
 
 ```TypeScript
@@ -75,7 +77,7 @@ Connects to a UIServiceExtensionAbility. This API uses a promise to return the r
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -96,7 +98,7 @@ Connects to a UIServiceExtensionAbility. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UIServiceProxy> | Promise used to return a [UIServiceProxy](arkts-ability-uiserviceproxy-i.md) object when the UIServiceExtensionAbility is connected. This object can be used to send data to the UIServiceExtensionAbility. |
+| Promise&lt;UIServiceProxy&gt; | Promise used to return a [UIServiceProxy](arkts-ability-uiserviceproxy-i.md) object when the UIServiceExtensionAbility is connected. This object can be used to send data to the UIServiceExtensionAbility. |
 
 **Error codes:**
 
@@ -115,13 +117,14 @@ Connects to a UIServiceExtensionAbility. This API uses a promise to return the r
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 
+<a id="disconnectserviceextensionability"></a>
 ## disconnectServiceExtensionAbility
 
 ```TypeScript
 disconnectServiceExtensionAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects from a ServiceExtensionAbility. Once the connection is terminated, set the remote object, which is returned when the connection is established, to null. This API uses an asynchronous callback to return the result.ServiceExtensionAbility is a special type of [ExtensionAbility](../../../../application-models/extensionability-overview.md) provided by the system. It is designed to offer background services for specific scenarios and is not customizable by developers. It can be connected to by other components and handles requests in the background based on the caller information.
+Disconnects from a ServiceExtensionAbility. Once the connection is terminated, set the remote object, which is returned when the connection is established, to null. This API uses an asynchronous callback to return the result.ServiceExtensionAbility is a special type of [ExtensionAbility](docroot://application-models/extensionability-overview.md) provided by the system. It is designed to offer background services for specific scenarios and is not customizable by developers. It can be connected to by other components and handles requests in the background based on the caller information.
 
 **Since:** 10
 
@@ -136,7 +139,7 @@ Disconnects from a ServiceExtensionAbility. Once the connection is terminated, s
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | connection | number | Yes | ID of the connected ServiceExtensionAbility, that is, **connectionId** returned by **connectServiceExtensionAbility**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -146,13 +149,14 @@ Disconnects from a ServiceExtensionAbility. Once the connection is terminated, s
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="disconnectserviceextensionability-1"></a>
 ## disconnectServiceExtensionAbility
 
 ```TypeScript
 disconnectServiceExtensionAbility(connection: number): Promise<void>
 ```
 
-Disconnects from a ServiceExtensionAbility. Once the connection is terminated, set the remote object, which is returned when the connection is established, to null. This API uses a promise to return the result.ServiceExtensionAbility is a special type of [ExtensionAbility](../../../../application-models/extensionability-overview.md) provided by the system. It is designed to offer background services for specific scenarios and is not customizable by developers. It can be connected to by other components and handles requests in the background based on the caller information.
+Disconnects from a ServiceExtensionAbility. Once the connection is terminated, set the remote object, which is returned when the connection is established, to null. This API uses a promise to return the result.ServiceExtensionAbility is a special type of [ExtensionAbility](docroot://application-models/extensionability-overview.md) provided by the system. It is designed to offer background services for specific scenarios and is not customizable by developers. It can be connected to by other components and handles requests in the background based on the caller information.
 
 **Since:** 10
 
@@ -172,7 +176,7 @@ Disconnects from a ServiceExtensionAbility. Once the connection is terminated, s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -182,6 +186,7 @@ Disconnects from a ServiceExtensionAbility. Once the connection is terminated, s
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="disconnectuiserviceextensionability"></a>
 ## disconnectUIServiceExtensionAbility
 
 ```TypeScript
@@ -208,7 +213,7 @@ Disconnects from a UIServiceExtensionAbility. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -218,6 +223,7 @@ Disconnects from a UIServiceExtensionAbility. This API uses a promise to return 
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="openatomicservice"></a>
 ## openAtomicService
 
 ```TypeScript
@@ -233,7 +239,7 @@ Opens an atomic service in an independent window and returns the result. This AP
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 12
 
@@ -254,7 +260,7 @@ Opens an atomic service in an independent window and returns the result. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Promise used to return the information to the caller. |
+| Promise&lt;AbilityResult&gt; | Promise used to return the information to the caller. |
 
 **Error codes:**
 
@@ -270,6 +276,7 @@ Opens an atomic service in an independent window and returns the result. This AP
 | [16000069](../errorcode-ability.md#16000069-extensionability-fails-to-start-a-thirdparty-application-in-strict-mode) | The extension cannot start the third party application. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 
+<a id="openlink"></a>
 ## openLink
 
 ```TypeScript
@@ -285,7 +292,7 @@ Starts a UIAbility by using App Linking or Deep Linking. This API uses a promise
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 12
 
@@ -301,13 +308,13 @@ Starts a UIAbility by using App Linking or Deep Linking. This API uses a promise
 | --- | --- | --- | --- |
 | link | string | Yes | URL to open, which must be in the standard format. |
 | options | [OpenLinkOptions](arkts-ability-app-ability-openlinkoptions-openlinkoptions-i.md) | No | Options of the URL. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityResult> | No | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AbilityResult&gt; | No | Callback used to return the result. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | that returns no value. |
+| Promise&lt;void&gt; | that returns no value. |
 
 **Error codes:**
 
@@ -332,6 +339,7 @@ Starts a UIAbility by using App Linking or Deep Linking. This API uses a promise
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000136](../errorcode-ability.md#16000136-prohibited-from-launching-the-applications-own-uiability-via-app-linking) | The UIAbility is prohibited from launching itself via App Linking.<br>**Applicable version:** 23 and later |
 
+<a id="reportdrawncompleted"></a>
 ## reportDrawnCompleted
 
 ```TypeScript
@@ -352,7 +360,7 @@ Called when the window content associated with the UIExtensionAbility finishes d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the event is reported, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the event is reported, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -361,6 +369,7 @@ Called when the window content associated with the UIExtensionAbility finishes d
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="setcolormode"></a>
 ## setColorMode
 
 ```TypeScript
@@ -399,6 +408,7 @@ Sets the dark/light color mode for this UIExtensionAbility. Before calling this 
 | --- | --- |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -410,7 +420,7 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -425,7 +435,7 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the UIAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the UIAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -461,6 +471,7 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
+<a id="startability-1"></a>
 ## startAbility
 
 ```TypeScript
@@ -472,7 +483,7 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -488,7 +499,7 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c.md) | Yes | Extra parameters used for starting the UIAbility. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the UIAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the UIAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -522,6 +533,7 @@ Starts a UIAbility. This API uses an asynchronous callback to return the result.
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
+<a id="startability-2"></a>
 ## startAbility
 
 ```TypeScript
@@ -533,7 +545,7 @@ Starts a UIAbility. This API uses a promise to return the result.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -554,7 +566,7 @@ Starts a UIAbility. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -590,6 +602,7 @@ Starts a UIAbility. This API uses a promise to return the result.
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
+<a id="startabilityforresult"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -605,7 +618,7 @@ Starts a UIAbility and returns the exit result of the launched UIAbility via a c
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -620,7 +633,7 @@ Starts a UIAbility and returns the exit result of the launched UIAbility via a c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityResult> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AbilityResult&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -656,6 +669,7 @@ Starts a UIAbility and returns the exit result of the launched UIAbility via a c
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
+<a id="startabilityforresult-1"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -671,7 +685,7 @@ Starts a UIAbility and returns the exit result of the launched UIAbility via a c
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -687,7 +701,7 @@ Starts a UIAbility and returns the exit result of the launched UIAbility via a c
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want required for starting the UIAbility, which contains information such as the name of the UIAbility to start. |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c.md) | Yes | Extra parameters used for starting the UIAbility. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityResult> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AbilityResult&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -721,6 +735,7 @@ Starts a UIAbility and returns the exit result of the launched UIAbility via a c
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
+<a id="startabilityforresult-2"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -736,7 +751,7 @@ Starts a UIAbility and returns the exit result of the launched UIAbility via a c
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -757,7 +772,7 @@ Starts a UIAbility and returns the exit result of the launched UIAbility via a c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Promise used to return the exit result of the launched UIAbility. |
+| Promise&lt;AbilityResult&gt; | Promise used to return the exit result of the launched UIAbility. |
 
 **Error codes:**
 
@@ -793,6 +808,7 @@ Starts a UIAbility and returns the exit result of the launched UIAbility via a c
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
+<a id="startuiserviceextensionability"></a>
 ## startUIServiceExtensionAbility
 
 ```TypeScript
@@ -804,7 +820,7 @@ Starts a UIServiceExtensionAbility. This API uses a promise to return the result
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -824,7 +840,7 @@ Starts a UIServiceExtensionAbility. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -845,6 +861,7 @@ Starts a UIServiceExtensionAbility. This API uses a promise to return the result
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 
+<a id="terminateself"></a>
 ## terminateSelf
 
 ```TypeScript
@@ -865,7 +882,7 @@ Destroys this UIExtensionAbility and closes the corresponding window. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -873,6 +890,7 @@ Destroys this UIExtensionAbility and closes the corresponding window. This API u
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="terminateself-1"></a>
 ## terminateSelf
 
 ```TypeScript
@@ -893,8 +911,9 @@ Destroys this UIExtensionAbility and closes the corresponding window. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="terminateselfwithresult"></a>
 ## terminateSelfWithResult
 
 ```TypeScript
@@ -916,7 +935,7 @@ Destroys this UIExtensionAbility, closes the corresponding window, and returns t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | parameter | [AbilityResult](arkts-ability-abilityresult-abilityresult-i.md) | Yes | Information returned to the caller of the UIExtensionAbility. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -924,6 +943,7 @@ Destroys this UIExtensionAbility, closes the corresponding window, and returns t
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="terminateselfwithresult-1"></a>
 ## terminateSelfWithResult
 
 ```TypeScript
@@ -950,7 +970,7 @@ Destroys this UIExtensionAbility, closes the corresponding window, and returns t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

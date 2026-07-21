@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="issilentreminderenabled"></a>
 ## isSilentReminderEnabled
 
 ```TypeScript
@@ -34,7 +35,7 @@ Checks whether the silent reminder is enabled. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SwitchState> | Promise used to return the result. |
+| Promise&lt;SwitchState&gt; | Promise used to return the result. |
 
 **Error codes:**
 

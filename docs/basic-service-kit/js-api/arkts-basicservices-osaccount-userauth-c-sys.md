@@ -16,6 +16,7 @@ Provides APIs for user authentication.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="auth"></a>
 ## auth
 
 ```TypeScript
@@ -53,7 +54,7 @@ Performs authentication of the current user.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| challenge | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Challenge value, which is a random number used to improve security. |
+| challenge | Uint8Array | Yes | Challenge value, which is a random number used to improve security. |
 | authType | [AuthType](arkts-basicservices-osaccount-authtype-e-sys.md) | Yes | Authentication credential type. |
 | authTrustLevel | [AuthTrustLevel](arkts-basicservices-osaccount-authtrustlevel-e-sys.md) | Yes | Trust level of the authentication result. |
 | callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
@@ -62,7 +63,7 @@ Performs authentication of the current user.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | ID of the context for canceling the authentication. |
+| Uint8Array | ID of the context for canceling the authentication. |
 
 **Error codes:**
 
@@ -114,6 +115,7 @@ try {
 
 ```
 
+<a id="auth-1"></a>
 ## auth
 
 ```TypeScript
@@ -154,7 +156,7 @@ Starts user authentication based on the specified challenge value, authenticatio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| challenge | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Challenge value, which is a random number used to prevent replay attacks and improve security. |
+| challenge | Uint8Array | Yes | Challenge value, which is a random number used to prevent replay attacks and improve security. |
 | authType | [AuthType](arkts-basicservices-osaccount-authtype-e-sys.md) | Yes | Authentication credential type. |
 | authTrustLevel | [AuthTrustLevel](arkts-basicservices-osaccount-authtrustlevel-e-sys.md) | Yes | Trust level of the authentication result. |
 | options | [AuthOptions](arkts-basicservices-osaccount-authoptions-i-sys.md) | Yes | Optional parameters for the authentication. |
@@ -164,7 +166,7 @@ Starts user authentication based on the specified challenge value, authenticatio
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | ID of the context for canceling the authentication. |
+| Uint8Array | ID of the context for canceling the authentication. |
 
 **Error codes:**
 
@@ -220,6 +222,7 @@ try {
 
 ```
 
+<a id="authuser"></a>
 ## authUser
 
 ```TypeScript
@@ -261,7 +264,7 @@ Performs authentication of the specified user. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. |
-| challenge | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Challenge value, which is a random number used to improve security. |
+| challenge | Uint8Array | Yes | Challenge value, which is a random number used to improve security. |
 | authType | [AuthType](arkts-basicservices-osaccount-authtype-e-sys.md) | Yes | Authentication credential type. |
 | authTrustLevel | [AuthTrustLevel](arkts-basicservices-osaccount-authtrustlevel-e-sys.md) | Yes | Trust level of the authentication result. |
 | callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
@@ -270,7 +273,7 @@ Performs authentication of the specified user. This API uses an asynchronous cal
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | ID of the context for canceling the authentication. |
+| Uint8Array | ID of the context for canceling the authentication. |
 
 **Error codes:**
 
@@ -324,6 +327,7 @@ try {
 
 ```
 
+<a id="cancelauth"></a>
 ## cancelAuth
 
 ```TypeScript
@@ -346,7 +350,7 @@ Cancels an authentication.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| contextID | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | ID of the authentication context. The context ID is dynamically generated. |
+| contextID | Uint8Array | Yes | ID of the authentication context. The context ID is dynamically generated. |
 
 **Error codes:**
 
@@ -381,6 +385,7 @@ try {
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -410,6 +415,7 @@ let userAuth = new osAccount.UserAuth();
 
 ```
 
+<a id="getavailablestatus"></a>
 ## getAvailableStatus
 
 ```TypeScript
@@ -470,6 +476,7 @@ try {
 
 ```
 
+<a id="getproperty"></a>
 ## getProperty
 
 ```TypeScript
@@ -493,7 +500,7 @@ Obtains the executor property based on the request. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | request | [GetPropertyRequest](arkts-basicservices-osaccount-getpropertyrequest-i-sys.md) | Yes | Request information, including the authentication credential type and property list. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<ExecutorProperty> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the executor property information obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;ExecutorProperty&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the executor property information obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -536,6 +543,7 @@ try {
 
 ```
 
+<a id="getproperty-1"></a>
 ## getProperty
 
 ```TypeScript
@@ -564,7 +572,7 @@ Obtains the executor property based on the request. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ExecutorProperty> | Promise used to return the executor property. |
+| Promise&lt;ExecutorProperty&gt; | Promise used to return the executor property. |
 
 **Error codes:**
 
@@ -605,6 +613,7 @@ try {
 
 ```
 
+<a id="getpropertybycredentialid"></a>
 ## getPropertyByCredentialId
 
 ```TypeScript
@@ -627,14 +636,14 @@ Obtains the specified property information of the associated executor based on t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| credentialId | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Credential ID. |
-| keys | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<GetPropertyType> | Yes | Property type array to be queried. |
+| credentialId | Uint8Array | Yes | Credential ID. |
+| keys | Array&lt;GetPropertyType&gt; | Yes | Property type array to be queried. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ExecutorProperty> | Promise used to return the executor attributes. |
+| Promise&lt;ExecutorProperty&gt; | Promise used to return the executor attributes. |
 
 **Error codes:**
 
@@ -687,6 +696,7 @@ async function getProperty() {
 
 ```
 
+<a id="getversion"></a>
 ## getVersion
 
 ```TypeScript
@@ -724,6 +734,7 @@ console.info('getVersion version = ' + version);
 
 ```
 
+<a id="prepareremoteauth"></a>
 ## prepareRemoteAuth
 
 ```TypeScript
@@ -752,7 +763,7 @@ Prepares for remote authentication. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -792,6 +803,7 @@ distributedDeviceMgr.getAvailableDeviceList().then((data: Array<distributedDevic
 
 ```
 
+<a id="setproperty"></a>
 ## setProperty
 
 ```TypeScript
@@ -815,7 +827,7 @@ Sets the property for the initialization algorithm. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | request | [SetPropertyRequest](arkts-basicservices-osaccount-setpropertyrequest-i-sys.md) | Yes | Request information, including the authentication credential type and the key value to set. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -853,6 +865,7 @@ try {
 
 ```
 
+<a id="setproperty-1"></a>
 ## setProperty
 
 ```TypeScript
@@ -881,7 +894,7 @@ Sets the property for the initialization algorithm. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

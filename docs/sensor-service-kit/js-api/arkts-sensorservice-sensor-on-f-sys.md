@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -27,7 +28,7 @@ Subscribes to data of the color sensor.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | SensorId.COLOR | Yes | Sensor type. The value is fixed at **SensorId.COLOR**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ColorResponse> | Yes | Callback used to report the sensor data, which is a **ColorResponse** object. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ColorResponse&gt; | Yes | Callback used to report the sensor data, which is a **ColorResponse** object. |
 | options | [Options](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-zlib-options-i.md) | No | List of optional parameters. This parameter is used to set the data reporting frequency. The default value is 200,000,000 ns. |
 
 **Error codes:**
@@ -39,6 +40,7 @@ Subscribes to data of the color sensor.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission check failed. A non-system application uses the system API.<br>**Applicable version:** 11 and later |
 
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -60,7 +62,7 @@ Subscribes to data of the Sodium Adsorption Ratio (SAR) sensor.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | SensorId.SAR | Yes | Sensor type. The value is fixed at **SensorId.SAR**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SarResponse> | Yes | Callback used to report the sensor data, which is a **SarResponse** object. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SarResponse&gt; | Yes | Callback used to report the sensor data, which is a **SarResponse** object. |
 | options | [Options](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-zlib-options-i.md) | No | List of optional parameters. This parameter is used to set the data reporting frequency. The default value is 200,000,000 ns. |
 
 **Error codes:**

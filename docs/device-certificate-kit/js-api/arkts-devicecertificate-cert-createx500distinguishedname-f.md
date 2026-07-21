@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="createx500distinguishedname"></a>
 ## createX500DistinguishedName
 
 ```TypeScript
@@ -32,7 +33,7 @@ Creates an **X500DistinguishedName** object with a name in the form of a string.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<X500DistinguishedName> | Promise used to return the **X500DistinguishedName** object created. |
+| Promise&lt;X500DistinguishedName&gt; | Promise used to return the **X500DistinguishedName** object created. |
 
 **Error codes:**
 
@@ -83,6 +84,7 @@ async function createX500DistinguishedName() {
 ```
 
 
+<a id="createx500distinguishedname-1"></a>
 ## createX500DistinguishedName
 
 ```TypeScript
@@ -103,13 +105,13 @@ Creates an **X500DistinguishedName** object with a name in DER format. This API 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| nameDer | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | X.500 Distinguished Name in DER format. |
+| nameDer | Uint8Array | Yes | X.500 Distinguished Name in DER format. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<X500DistinguishedName> | Promise used to return the **X500DistinguishedName** object created. |
+| Promise&lt;X500DistinguishedName&gt; | Promise used to return the **X500DistinguishedName** object created. |
 
 **Error codes:**
 

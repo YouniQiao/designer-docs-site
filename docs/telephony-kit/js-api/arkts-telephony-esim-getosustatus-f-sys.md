@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="getosustatus"></a>
 ## getOsuStatus
 
 ```TypeScript
@@ -34,7 +35,7 @@ Returns the current status of eUICC OS upgrade.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsuStatus> | Return the status of eUICC OS upgrade. |
+| Promise&lt;OsuStatus&gt; | Return the status of eUICC OS upgrade. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { serialManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="getportlist"></a>
 ## getPortList
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the serial port device list, including the device name and port number.
 
 | Type | Description |
 | --- | --- |
-| [Readonly](../../apis-na/arkts-apis/arkts-na-readonly-t.md)<SerialPort>[] | Serial port information list. |
+| [Readonly](../../apis-na/arkts-apis/arkts-na-readonly-t.md)&lt;SerialPort&gt;[] | Serial port information list. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { systemDateTime } from '@kit.BasicServicesKit';
 ```
 
+<a id="gettimezonesync"></a>
 ## getTimezoneSync
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the system time zone in synchronous mode.
 
 | Type | Description |
 | --- | --- |
-| string | System time zone. For details, see [Supported System Time Zones](../../../../reference/apis-basic-services-kit/js-apis-date-time.md#supported-system-time-zones). |
+| string | System time zone. For details, see [Supported System Time Zones](docroot://reference/apis-basic-services-kit/js-apis-date-time.md#supported-system-time-zones). |
 
 **Example**
 

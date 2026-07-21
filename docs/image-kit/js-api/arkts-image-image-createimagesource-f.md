@@ -6,6 +6,7 @@
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="createimagesource"></a>
 ## createImageSource
 
 ```TypeScript
@@ -28,7 +29,7 @@ Images occupy a large amount of memory. When you finish using an ImageSource ins
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | Image path. Currently, only the application sandbox path is supported.<br>The following formats are supported: .jpg, .png, .gif, .bmp, .webp, .dng, .heic&lt;sup&gt;12+&lt;/sup&gt;(depending on the hardware), [.svg&lt;sup&gt;10+&lt;/sup&gt;](@ohos.multimedia.image:image.Functions#SVG Tags), and.ico&lt;sup&gt;11+&lt;/sup&gt;. |
+| uri | string | Yes | Image path. Currently, only the application sandbox path is supported.<br>The following formats are supported: .jpg, .png, .gif, .bmp, .webp, .dng, .heic<sup>12+</sup>(depending on the hardware), [.svg<sup>10+</sup>](@ohos.multimedia.image:image.Functions#SVG Tags), and.ico<sup>11+</sup>. |
 
 **Return value:**
 
@@ -48,6 +49,7 @@ async function CreateImageSource(context : Context) {
 ```
 
 
+<a id="createimagesource-1"></a>
 ## createImageSource
 
 ```TypeScript
@@ -72,7 +74,7 @@ Images occupy a large amount of memory. When you finish using an ImageSource ins
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | Image path. Currently, only the application sandbox path is supported.<br>The following formats are supported: .jpg, .png, .gif, .bmp, .webp, .dng, .heic&lt;sup&gt;12+&lt;/sup&gt; (depending on the hardware), [.svg&lt;sup&gt;10+&lt;/sup&gt;](@ohos.multimedia.image:image.Functions#SVG Tags), and.ico&lt;sup&gt;11+&lt;/sup&gt;. |
+| uri | string | Yes | Image path. Currently, only the application sandbox path is supported.<br>The following formats are supported: .jpg, .png, .gif, .bmp, .webp, .dng, .heic<sup>12+</sup> (depending on the hardware), [.svg<sup>10+</sup>](@ohos.multimedia.image:image.Functions#SVG Tags), and.ico<sup>11+</sup>. |
 | options | [SourceOptions](arkts-image-image-sourceoptions-i.md) | Yes | Image properties, including the image pixel density, pixel format, and image size. |
 
 **Return value:**
@@ -94,6 +96,7 @@ async function CreateImageSource(context : Context) {
 ```
 
 
+<a id="createimagesource-2"></a>
 ## createImageSource
 
 ```TypeScript
@@ -139,6 +142,7 @@ async function CreateImageSource(context : Context) {
 ```
 
 
+<a id="createimagesource-3"></a>
 ## createImageSource
 
 ```TypeScript
@@ -188,6 +192,7 @@ async function CreateImageSource(context : Context) {
 ```
 
 
+<a id="createimagesource-4"></a>
 ## createImageSource
 
 ```TypeScript
@@ -210,7 +215,7 @@ Creates an ImageSource instance based on buffers. The data passed by **buf** mus
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Array of image buffers. |
+| buf | ArrayBuffer | Yes | Array of image buffers. |
 
 **Return value:**
 
@@ -229,6 +234,7 @@ async function CreateImageSource() {
 ```
 
 
+<a id="createimagesource-5"></a>
 ## createImageSource
 
 ```TypeScript
@@ -251,7 +257,7 @@ Creates an ImageSource instance based on buffers. The data passed by **buf** mus
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Array of image buffers. |
+| buf | ArrayBuffer | Yes | Array of image buffers. |
 | options | [SourceOptions](arkts-image-image-sourceoptions-i.md) | Yes | Image properties, including the image pixel density, pixel format, and image size. |
 
 **Return value:**
@@ -272,6 +278,7 @@ async function CreateImageSource() {
 ```
 
 
+<a id="createimagesource-6"></a>
 ## createImageSource
 
 ```TypeScript

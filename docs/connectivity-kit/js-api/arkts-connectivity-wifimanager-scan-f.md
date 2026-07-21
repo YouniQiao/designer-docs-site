@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="scan"></a>
 ## scan
 
 ```TypeScript

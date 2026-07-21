@@ -8,9 +8,9 @@ Implements a **UIContext** instance.
 >  
 > - The following APIs must be called through a corresponding UIContext instance. There are three ways to obtain a  
 > **UIContext** instance: (1) using the  
-> [getUIContext()](../../../../reference/apis-arkui/arkts-apis-window-Window.md#getuicontext10) method from  
+> [getUIContext()](docroot://reference/apis-arkui/arkts-apis-window-Window.md#getuicontext10) method from  
 > ohos.window; (2) using the built-in method  
-> [getUIContext()](../../../../reference/apis-arkui/arkui-ts/ts-custom-component-api.md#getuicontext) of a custom  
+> [getUIContext()](docroot://reference/apis-arkui/arkui-ts/ts-custom-component-api.md#getuicontext) of a custom  
 > component; (3) using static methods of the UIContext class such as  
 > [getCallingScopeUIContext](arkts-arkui-arkui-uicontext-uicontext-c.md#getcallingscopeuicontext-1). In this document, the **UIContext** instance  
 > is represented by **uiContext**.
@@ -27,6 +27,7 @@ Implements a **UIContext** instance.
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="animatetoimmediately"></a>
 ## animateToImmediately
 
 ```TypeScript
@@ -51,9 +52,10 @@ Specifies a clear animation host instance context via the UIContext object and t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| param | [AnimateParam](../arkts-components/arkts-arkui-common-animateparam-i.md) | Yes | Animation settings. |
-| processor | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback function. It specifies the closure function that displays the animation. The system automatically inserts the transition animation if the state changes in the closure function. |
+| param | [AnimateParam](../arkts-components/arkts-arkui-animateparam-i.md) | Yes | Animation settings. |
+| processor | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback function. It specifies the closure function that displays the animation. The system automatically inserts the transition animation if the state changes in the closure function. |
 
+<a id="clearresourcecache"></a>
 ## clearResourceCache
 
 ```TypeScript
@@ -99,6 +101,7 @@ struct MyStateSample {
 
 ```
 
+<a id="freezeuinode"></a>
 ## freezeUINode
 
 ```TypeScript
@@ -130,6 +133,7 @@ Sets whether to freeze a specific component by **id** to prevent it from being m
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The caller is not a system application. |
 
+<a id="freezeuinode-1"></a>
 ## freezeUINode
 
 ```TypeScript
@@ -161,6 +165,7 @@ Sets whether to freeze a specific component by **uniqueId** to prevent it from b
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The caller is not a system application. |
 
+<a id="getluminancesampler"></a>
 ## getLuminanceSampler
 
 ```TypeScript
@@ -195,6 +200,7 @@ get the luminance sampler of the specified node. If the node cannot be found, re
 
 For details, see the example of [offBackgroundLuminanceChange](arkts-apis-uicontext-luminancesampler-sys.md#offbackgroundluminancechange23).
 
+<a id="recycleinvisibleimagememory"></a>
 ## recycleInvisibleImageMemory
 
 ```TypeScript
@@ -244,6 +250,7 @@ struct ImageRecycleSample {
 
 ```
 
+<a id="setdynamicdimming"></a>
 ## setDynamicDimming
 
 ```TypeScript
@@ -296,6 +303,7 @@ struct Index {
 
 ```
 
+<a id="setkeyboardappearanceconfig"></a>
 ## setKeyboardAppearanceConfig
 
 ```TypeScript
@@ -319,7 +327,7 @@ Set the keyboard appearance config for this input component before attach InputM
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uniqueId | number | Yes | The unique id of the input component. |
-| config | [KeyboardAppearanceConfig](arkts-arkui-text-common-keyboardappearanceconfig-i-sys.md) | Yes | The config of keyboard. |
+| config | [KeyboardAppearanceConfig](arkts-arkui-keyboardappearanceconfig-i-sys.md) | Yes | The config of keyboard. |
 
 **Error codes:**
 

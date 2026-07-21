@@ -6,6 +6,7 @@
 import { avMusicTemplate } from '@kit.AVSessionKit';
 ```
 
+<a id="offavmusictemplatedestroy"></a>
 ## offAVMusicTemplateDestroy
 
 ```TypeScript
@@ -30,7 +31,7 @@ UnRegister session destroy event
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVMusicTemplateDescriptor> | No | Used to handle 'sessionDestroy' command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVMusicTemplateDescriptor&gt; | No | Used to handle 'sessionDestroy' command |
 
 **Error codes:**
 

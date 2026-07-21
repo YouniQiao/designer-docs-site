@@ -6,6 +6,7 @@
 import { manager } from '@kit.ConnectivityKit';
 ```
 
+<a id="offstatechange"></a>
 ## offStateChange
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unsubscribes from state change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<NearlinkState> | No | Callback used to listen for the state change event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;NearlinkState&gt; | No | Callback used to listen for the state change event. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { metadataBinding } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="submitmetadata"></a>
 ## submitMetadata
 
 ```TypeScript

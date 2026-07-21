@@ -16,6 +16,7 @@
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="attachmetasurface"></a>
 ## attachMetaSurface
 
 ```TypeScript
@@ -47,6 +48,7 @@ Attach a meta surface to VideoOutput.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="enableautodeferredvideoenhancement"></a>
 ## enableAutoDeferredVideoEnhancement
 
 ```TypeScript
@@ -77,6 +79,7 @@ Enable auto deferred video enhancement if needed.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="enableautovideoframerate"></a>
 ## enableAutoVideoFrameRate
 
 ```TypeScript
@@ -106,6 +109,7 @@ Enable auto frame rate for video capture.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="enablemirror"></a>
 ## enableMirror
 
 ```TypeScript
@@ -141,6 +145,7 @@ Enables or disables mirror recording.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getsupportedrotations"></a>
 ## getSupportedRotations
 
 ```TypeScript
@@ -161,7 +166,7 @@ Get supported video rotations.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ImageRotation> | The array of supported video rotations. |
+| Array&lt;ImageRotation&gt; | The array of supported video rotations. |
 
 **Error codes:**
 
@@ -169,6 +174,7 @@ Get supported video rotations.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="getsupportedvideometatypes"></a>
 ## getSupportedVideoMetaTypes
 
 ```TypeScript
@@ -189,7 +195,7 @@ Get supported video meta types.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<VideoMetaType> | The array of supported video meta type. |
+| Array&lt;VideoMetaType&gt; | The array of supported video meta type. |
 
 **Error codes:**
 
@@ -198,6 +204,7 @@ Get supported video meta types.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="isautodeferredvideoenhancementenabled"></a>
 ## isAutoDeferredVideoEnhancementEnabled
 
 ```TypeScript
@@ -227,6 +234,7 @@ Confirm if auto deferred video enhancement is enabled.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="isautodeferredvideoenhancementsupported"></a>
 ## isAutoDeferredVideoEnhancementSupported
 
 ```TypeScript
@@ -256,6 +264,7 @@ Confirm if auto deferred video enhancement is supported in the specific device.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="isautovideoframeratesupported"></a>
 ## isAutoVideoFrameRateSupported
 
 ```TypeScript
@@ -284,6 +293,7 @@ Determine whether auto frame rate is supported.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="ismirrorsupported"></a>
 ## isMirrorSupported
 
 ```TypeScript
@@ -314,6 +324,7 @@ Checks whether mirror recording is supported.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 14 |
 
+<a id="isrotationsupported"></a>
 ## isRotationSupported
 
 ```TypeScript
@@ -342,6 +353,7 @@ Determine whether video rotation is supported.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="off"></a>
 ## off('deferredVideoEnhancementInfo')
 
 ```TypeScript
@@ -363,7 +375,7 @@ Unsubscribes from deferred video enhancement info callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deferredVideoEnhancementInfo' | Yes | Event type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DeferredVideoEnhancementInfo> | No | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DeferredVideoEnhancementInfo&gt; | No | Callback used to return the result. |
 
 **Error codes:**
 
@@ -371,6 +383,7 @@ Unsubscribes from deferred video enhancement info callback.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="on"></a>
 ## on('deferredVideoEnhancementInfo')
 
 ```TypeScript
@@ -392,7 +405,7 @@ Subscribes deferred video enhancement info callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deferredVideoEnhancementInfo' | Yes | Event type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DeferredVideoEnhancementInfo> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DeferredVideoEnhancementInfo&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -400,6 +413,7 @@ Subscribes deferred video enhancement info callback.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="setrotation"></a>
 ## setRotation
 
 ```TypeScript

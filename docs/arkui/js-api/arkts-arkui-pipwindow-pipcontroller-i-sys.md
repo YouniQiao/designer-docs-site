@@ -16,6 +16,7 @@ Before calling any of the following APIs, you must use [PiPWindow.create()](arkt
 import { PiPWindow } from '@kit.ArkUI';
 ```
 
+<a id="ispipsupported"></a>
 ## isPiPSupported
 
 ```TypeScript

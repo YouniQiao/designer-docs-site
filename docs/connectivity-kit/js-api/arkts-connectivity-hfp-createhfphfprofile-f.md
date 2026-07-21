@@ -6,6 +6,7 @@
 import { hfp } from '@kit.ConnectivityKit';
 ```
 
+<a id="createhfphfprofile"></a>
 ## createHfpHfProfile
 
 ```TypeScript

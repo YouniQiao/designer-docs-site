@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="getopname"></a>
 ## getOpName
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the operator name of the SIM card in a specified slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the operator name;Returns an empty string if no SIM card is inserted or no operator name matched. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the operator name;Returns an empty string if no SIM card is inserted or no operator name matched. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ try {
 ```
 
 
+<a id="getopname-1"></a>
 ## getOpName
 
 ```TypeScript
@@ -83,7 +85,7 @@ Obtains the operator name of the SIM card in a specified slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the operator name; returns an empty string if no SIM card is inserted or no operator name matched. |
+| Promise&lt;string&gt; | Returns the operator name; returns an empty string if no SIM card is inserted or no operator name matched. |
 
 **Error codes:**
 

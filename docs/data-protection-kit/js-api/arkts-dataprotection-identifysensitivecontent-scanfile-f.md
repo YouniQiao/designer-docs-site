@@ -6,6 +6,7 @@
 import { identifySensitiveContent } from '@kit.DataProtectionKit';
 ```
 
+<a id="scanfile"></a>
 ## scanFile
 
 ```TypeScript
@@ -27,13 +28,13 @@ Identifies sensitive content in a specified file based on the configured policy 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | filePath | string | Yes | File path identified. The path must be a physical path. The file to which the path points must exist and can be accessed. |
-| identifyPolicies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Policy> | Yes | An array of policies used to identify sensitive content.Each policy defines an identification rule (tags, keywords, and regular expressions).The system scans file content based on these rules and returns the matching result. |
+| identifyPolicies | Array&lt;Policy&gt; | Yes | An array of policies used to identify sensitive content.Each policy defines an identification rule (tags, keywords, and regular expressions).The system scans file content based on these rules and returns the matching result. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<MatchResult>> | Promise used to return the identification result of sensitive content.If the operation is successful, the matching result array is returned. If the operation fails, an error code is returned. |
+| Promise&lt;Array&lt;MatchResult&gt;&gt; | Promise used to return the identification result of sensitive content.If the operation is successful, the matching result array is returned. If the operation fails, an error code is returned. |
 
 **Error codes:**
 

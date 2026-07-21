@@ -5,7 +5,7 @@ The **font** module provides APIs for registering custom fonts.
 > **NOTE**  
 >  
 > - The functionality of this module depends on UI context. This means that the APIs of this module cannot be used  
-> where [the UI context is ambiguous](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). For details, see  
+> where [the UI context is ambiguous](docroot://ui/arkts-global-interface.md#ambiguous-ui-context). For details, see  
 > [UIContext](arkts-arkui-uicontext.md).  
 >  
 > - You are advised to use the [loadFontSync](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-fontcollection-c.md#loadfontsync-1) API of the  
@@ -29,10 +29,10 @@ import { font } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [getFontByName](arkts-arkui-font-getfontbyname-f.md#getfontbyname-1) | Obtains information about a system font based on the font name. |
-| [getSystemFontList](arkts-arkui-font-getsystemfontlist-f.md#getsystemfontlist-1) | Obtains this system font list.This API only takes effect on PCs/2-in-1 devices and returns an empty array on other devices.You are advised to use the [getSystemFontFullNamesByType](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-getsystemfontfullnamesbytype-f.md#getsystemfontfullnamesbytype-1) API to obtain the latest system-supported font list data. |
-| [getUIFontConfig](arkts-arkui-font-getuifontconfig-f.md#getuifontconfig-1) | Obtains the UI font configuration information in the system font configuration file.This API can only obtain the information in the configuration file. If the UI context is not clear, **undefined** may be returned. If you want to obtain the full font configuration information, you are advised to use the [getSystemFontFullNamesByType](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-getsystemfontfullnamesbytype-f.md#getsystemfontfullnamesbytype-1) API of the font engine. |
-| [registerFont](arkts-arkui-font-registerfont-f.md#registerfont-1) | Registers a custom font with the font manager.This API is asynchronous and does not support concurrent calls. |
+| [getFontByName](arkts-arkui-font-getfontbyname-f.md#getfontbyname) | Obtains information about a system font based on the font name. |
+| [getSystemFontList](arkts-arkui-font-getsystemfontlist-f.md#getsystemfontlist) | Obtains this system font list.  This API only takes effect on PCs/2-in-1 devices and returns an empty array on other devices.  You are advised to use the [getSystemFontFullNamesByType](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-getsystemfontfullnamesbytype-f.md#getsystemfontfullnamesbytype-1) API to obtain the latest system-supported font list data. |
+| [getUIFontConfig](arkts-arkui-font-getuifontconfig-f.md#getuifontconfig) | Obtains the UI font configuration information in the system font configuration file.  This API can only obtain the information in the configuration file. If the UI context is not clear, **undefined** may be returned. If you want to obtain the full font configuration information, you are advised to use the [getSystemFontFullNamesByType](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-getsystemfontfullnamesbytype-f.md#getsystemfontfullnamesbytype-1) API of the font engine. |
+| [registerFont](arkts-arkui-font-registerfont-f.md#registerfont) | Registers a custom font with the font manager.  This API is asynchronous and does not support concurrent calls. |
 
 ### Interfaces
 

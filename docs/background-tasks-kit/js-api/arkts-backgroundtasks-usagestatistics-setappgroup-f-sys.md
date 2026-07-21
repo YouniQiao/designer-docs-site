@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="setappgroup"></a>
 ## setAppGroup
 
 ```TypeScript
@@ -30,7 +31,7 @@ Set app group by bundleName.
 | --- | --- | --- | --- |
 | bundleName | string | Yes | name of the application. |
 | newGroup | [GroupType](arkts-backgroundtasks-usagestatistics-grouptype-e-sys.md) | Yes | the group of the application whose name is bundleName. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ usageStatistics.setAppGroup(bundleName, newGroup, (err: BusinessError) => {
 ```
 
 
+<a id="setappgroup-1"></a>
 ## setAppGroup
 
 ```TypeScript
@@ -96,7 +98,7 @@ Set app group by bundleName.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by setAppGroup. |
+| Promise&lt;void&gt; | the promise returned by setAppGroup. |
 
 **Error codes:**
 

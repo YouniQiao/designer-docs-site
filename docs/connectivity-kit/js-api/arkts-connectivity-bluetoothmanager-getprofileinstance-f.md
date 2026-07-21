@@ -6,6 +6,7 @@
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getprofileinstance"></a>
 ## getProfileInstance
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { cardEmulation } from '@kit.ConnectivityKit';
 ```
 
+<a id="hashcecapability"></a>
 ## hasHceCapability
 
 ```TypeScript

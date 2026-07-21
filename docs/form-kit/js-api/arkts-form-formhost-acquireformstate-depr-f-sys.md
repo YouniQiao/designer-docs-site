@@ -1,5 +1,6 @@
 # acquireFormState (System API)
 
+<a id="acquireformstate"></a>
 ## acquireFormState
 
 ```TypeScript
@@ -27,9 +28,10 @@ Obtains the widget state. This API uses an asynchronous callback to return the r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | **Want** information carried to query the widget state. The information must contain the bundle name, ability name, module name, widget name, and widget dimensions. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<formInfo.FormStateInfo> | Yes | Callback used to return the result. If the widget state is obtained, **error** is undefined and **data** is the widget state obtained; otherwise, **error** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;formInfo.FormStateInfo&gt; | Yes | Callback used to return the result. If the widget state is obtained, **error** is undefined and **data** is the widget state obtained; otherwise, **error** is an error object. |
 
 
+<a id="acquireformstate-1"></a>
 ## acquireFormState
 
 ```TypeScript
@@ -62,5 +64,5 @@ Obtains the widget state. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<formInfo.FormStateInfo> | Promise used to return the widget state obtained. |
+| Promise&lt;formInfo.FormStateInfo&gt; | Promise used to return the widget state obtained. |
 

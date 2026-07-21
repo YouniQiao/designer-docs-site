@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="showsystemapnsettings"></a>
 ## showSystemApnSettings
 
 ```TypeScript
@@ -32,5 +33,5 @@ Open the system APN selection menu, which is presented in a semi-modal form and 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 

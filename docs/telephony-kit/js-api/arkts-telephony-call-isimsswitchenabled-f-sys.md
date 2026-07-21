@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="isimsswitchenabled"></a>
 ## isImsSwitchEnabled
 
 ```TypeScript
@@ -27,7 +28,7 @@ Judge whether the Ims switch is enabled.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback of isImsSwitchEnabled.Returns {@code true} If the ims switch is on; returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback of isImsSwitchEnabled.Returns {@code true} If the ims switch is on; returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ call.isImsSwitchEnabled(0, (err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isimsswitchenabled-1"></a>
 ## isImsSwitchEnabled
 
 ```TypeScript
@@ -82,7 +84,7 @@ Judge whether the Ims switch is enabled.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} If the ims switch is on; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} If the ims switch is on; returns {@code false} otherwise. |
 
 **Error codes:**
 

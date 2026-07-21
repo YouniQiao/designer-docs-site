@@ -16,6 +16,7 @@ Provides APIs for managing the **Highlights** album, which is an automatically g
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -67,6 +68,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="deletehighlightalbums"></a>
 ## deleteHighlightAlbums
 
 ```TypeScript
@@ -90,13 +92,13 @@ Deletes highlight albums.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
-| albums | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Album> | Yes | Array of highlight albums to delete. |
+| albums | Array&lt;Album&gt; | Yes | Array of highlight albums to delete. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the operation result. The value **0** means that the operation is successful, and **1** means the opposite. |
+| Promise&lt;number&gt; | Promise used to return the operation result. The value **0** means that the operation is successful, and **1** means the opposite. |
 
 **Error codes:**
 
@@ -137,6 +139,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="gethighlightalbuminfo"></a>
 ## getHighlightAlbumInfo
 
 ```TypeScript
@@ -165,7 +168,7 @@ Obtains specific information about the **Highlights** album.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the album information. |
+| Promise&lt;string&gt; | Promise used to return the album information. |
 
 **Error codes:**
 
@@ -206,6 +209,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="gethighlightresource"></a>
 ## getHighlightResource
 
 ```TypeScript
@@ -234,7 +238,7 @@ Obtains the ArrayBuffer for caching the specified asset.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise used to return the ArrayBuffer. |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the ArrayBuffer. |
 
 **Error codes:**
 
@@ -273,6 +277,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="sethighlightuseractiondata"></a>
 ## setHighlightUserActionData
 
 ```TypeScript
@@ -302,7 +307,7 @@ Sets the user behavior data for the **Highlights** album.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -340,6 +345,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setsubtitle"></a>
 ## setSubTitle
 
 ```TypeScript
@@ -377,7 +383,7 @@ The subtitle must meet the following requirements:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns void |
+| Promise&lt;void&gt; | Returns void |
 
 **Error codes:**
 

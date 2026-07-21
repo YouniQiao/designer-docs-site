@@ -20,6 +20,7 @@ All APIs provided in the **On** class are synchronous. You are advised to use th
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
+<a id="aftercomponent"></a>
 ## afterComponent
 
 ```TypeScript
@@ -54,6 +55,7 @@ Requires that the target Component which is after another Component that specifi
 | --- | --- |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
+<a id="beforecomponent"></a>
 ## beforeComponent
 
 ```TypeScript
@@ -88,6 +90,7 @@ Requires that the target Component which is before another Component that specif
 | --- | --- |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
+<a id="belongingdisplay"></a>
 ## belongingDisplay
 
 ```TypeScript
@@ -108,7 +111,7 @@ Obtains the component object on the specified display.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayId | number | Yes | ID of the display to which the component belongs. The value is an integer greater than or equal to 0.<br>**Note**: If the input **displayId** does not exist, the exception **17000007** is reported. You can use [getAllDisplays](../../apis-arkui/arkts-apis/arkts-arkui-display-getalldisplays-f.md#getalldisplays-1) to obtain all current **display** objects and use them to obtain the corresponding display IDs.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| displayId | number | Yes | ID of the display to which the component belongs. The value is an integer greater than or equal to 0.<br>**Note**: If the input **displayId** does not exist, the exception **17000007** is reported. You can use [getAllDisplays](../../apis-arkui/arkts-apis/arkts-arkui-display-getalldisplays-f.md#getalldisplays-1) to obtain all current **display** objects and use them to obtain the corresponding display IDs.<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -132,6 +135,7 @@ let on: On = ON.belongingDisplay(0); // Use the static constructor ON to create 
 
 ```
 
+<a id="checkable"></a>
 ## checkable
 
 ```TypeScript
@@ -152,7 +156,7 @@ Specifies the checkable attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| b | boolean | No | Checkable status of the component. The value **true** indicates that the component is checkable, and **false** indicates the opposite. Default value: **true**&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| b | boolean | No | Checkable status of the component. The value **true** indicates that the component is checkable, and **false** indicates the opposite. Default value: **true**<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -176,6 +180,7 @@ let on: On = ON.checkable(true); // Use the static constructor ON to create an O
 
 ```
 
+<a id="checked"></a>
 ## checked
 
 ```TypeScript
@@ -196,7 +201,7 @@ Specifies the checked attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| b | boolean | No | Checked status of the component. The value **true** indicates that the component is checked,and **false** indicates the opposite. Default value: **true**&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| b | boolean | No | Checked status of the component. The value **true** indicates that the component is checked,and **false** indicates the opposite. Default value: **true**<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -220,6 +225,7 @@ let on: On = ON.checked(true); // Use the static constructor ON to create an On 
 
 ```
 
+<a id="clickable"></a>
 ## clickable
 
 ```TypeScript
@@ -240,7 +246,7 @@ Specifies the clickable attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| b | boolean | No | Clickable status of the component. The value **true** indicates that the component is clickable, and **false** indicates the opposite. Default value: **true**&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| b | boolean | No | Clickable status of the component. The value **true** indicates that the component is clickable, and **false** indicates the opposite. Default value: **true**<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -264,6 +270,7 @@ let on: On = ON.clickable(true); // Use the static constructor ON to create an O
 
 ```
 
+<a id="description"></a>
 ## description
 
 ```TypeScript
@@ -284,7 +291,7 @@ Specifies the description of the target component. Multiple match patterns are s
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| val | string | Yes | Description of the component.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| val | string | Yes | Description of the component.<!--RP2--><!--RP2End--> |
 | pattern | [MatchPattern](arkts-test-uitest-matchpattern-e.md) | No | Match pattern {@link MatchPattern} .<br>Default value: {@link MatchPattern.EQUALS} |
 
 **Return value:**
@@ -309,6 +316,7 @@ let on: On = ON.description('123'); // Use the static constructor ON to create a
 
 ```
 
+<a id="enabled"></a>
 ## enabled
 
 ```TypeScript
@@ -329,7 +337,7 @@ Specifies the enabled attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| b | boolean | No | Enabled status of the component. The value **true** indicates that the component is enabled,and **false** indicates the opposite. Default value: **true**&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| b | boolean | No | Enabled status of the component. The value **true** indicates that the component is enabled,and **false** indicates the opposite. Default value: **true**<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -353,6 +361,7 @@ let on: On = ON.enabled(true); // Use the static constructor ON to create an On 
 
 ```
 
+<a id="focused"></a>
 ## focused
 
 ```TypeScript
@@ -373,7 +382,7 @@ Specifies the focused attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| b | boolean | No | Focused status of the component. The value **true** indicates that the component is focused,and **false** indicates the opposite. Default value: **true**&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| b | boolean | No | Focused status of the component. The value **true** indicates that the component is focused,and **false** indicates the opposite. Default value: **true**<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -397,6 +406,7 @@ let on: On = ON.focused(true); // Use the static constructor ON to create an On 
 
 ```
 
+<a id="hint"></a>
 ## hint
 
 ```TypeScript
@@ -417,7 +427,7 @@ Obtains the component object of the specified hint text and returns the **On** o
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| val | string | Yes | The specified hint text of the component.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| val | string | Yes | The specified hint text of the component.<!--RP2--><!--RP2End--> |
 | pattern | [MatchPattern](arkts-test-uitest-matchpattern-e.md) | No | Match pattern{@link MatchPattern}.<br>Default value: {@link MatchPattern.EQUALS} |
 
 **Return value:**
@@ -442,6 +452,7 @@ let on: On = ON.hint('welcome', MatchPattern.EQUALS); // Use the static construc
 
 ```
 
+<a id="id"></a>
 ## id
 
 ```TypeScript
@@ -462,7 +473,7 @@ Specifies the ID attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | string | Yes | Component ID.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| id | string | Yes | Component ID.<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -486,6 +497,7 @@ let on: On = ON.id('123'); // Use the static constructor ON to create an On obje
 
 ```
 
+<a id="id-1"></a>
 ## id
 
 ```TypeScript
@@ -506,7 +518,7 @@ Specifies the **id** attribute and match pattern of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | string | Yes | Component ID.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| id | string | Yes | Component ID.<!--RP2--><!--RP2End--> |
 | pattern | [MatchPattern](arkts-test-uitest-matchpattern-e.md) | Yes | Text matching pattern {@link MatchPattern}. |
 
 **Return value:**
@@ -531,6 +543,7 @@ let on: On = ON.id('id', MatchPattern.REG_EXP_ICASE); // Use case-insensitive re
 
 ```
 
+<a id="inwindow"></a>
 ## inWindow
 
 ```TypeScript
@@ -551,7 +564,7 @@ Specifies that the target component is located within the given application wind
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | string | Yes | Bundle name of the application window.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| bundleName | string | Yes | Bundle name of the application window.<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -575,6 +588,7 @@ let on: On = ON.inWindow('com.uitestScene.acts'); // Use the static constructor 
 
 ```
 
+<a id="isafter"></a>
 ## isAfter
 
 ```TypeScript
@@ -595,7 +609,7 @@ Specifies that the target component is located after the given attribute compone
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| on | [On](arkts-test-uitest-on-c.md) | Yes | Information about the attribute component.&lt;!--RP3--&gt;&lt;!--RP3End--&gt; |
+| on | [On](arkts-test-uitest-on-c.md) | Yes | Information about the attribute component.<!--RP3--><!--RP3End--> |
 
 **Return value:**
 
@@ -620,6 +634,7 @@ let on: On = ON.type('Text').isAfter(ON.text('123')); // Search for the first Te
 
 ```
 
+<a id="isbefore"></a>
 ## isBefore
 
 ```TypeScript
@@ -640,7 +655,7 @@ Specifies that the target component is located before the given attribute compon
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| on | [On](arkts-test-uitest-on-c.md) | Yes | Information about the attribute component.&lt;!--RP3--&gt;&lt;!--RP3End--&gt; |
+| on | [On](arkts-test-uitest-on-c.md) | Yes | Information about the attribute component.<!--RP3--><!--RP3End--> |
 
 **Return value:**
 
@@ -665,6 +680,7 @@ let on: On = ON.type('Button').isBefore(ON.text('123')); // Search for the first
 
 ```
 
+<a id="longclickable"></a>
 ## longClickable
 
 ```TypeScript
@@ -685,7 +701,7 @@ Specifies the long-clickable attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| b | boolean | No | Long-clickable status of the component. The value **true** indicates that the component is long  -clickable, and **false** indicates the opposite. Default value: **true**&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| b | boolean | No | Long-clickable status of the component. The value **true** indicates that the component is long   -clickable, and **false** indicates the opposite. Default value: **true**<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -709,6 +725,7 @@ let on: On = ON.longClickable(true); // Use the static constructor ON to create 
 
 ```
 
+<a id="originaltext"></a>
 ## originalText
 
 ```TypeScript
@@ -719,7 +736,7 @@ Specifies the text content and text matching pattern of the component.
 
 > **NOTE**  
 >  
-> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-common-commonmethod-c.md#accessibilitylevel-1)  
+> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md)  
 > of a component is set to **no** or **no-hide-descendants**, this API can be used to specify the text attribute of  
 > the target component for searching for the component. In this case, the [On.text()](arkts-test-uitest-on-c.md#text-1) API does not  
 > take effect.
@@ -736,7 +753,7 @@ Specifies the text content and text matching pattern of the component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| text | string | Yes | Component text, used to match the target component.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| text | string | Yes | Component text, used to match the target component.<!--RP2--><!--RP2End--> |
 | pattern | [MatchPattern](arkts-test-uitest-matchpattern-e.md) | No | Match pattern{@link MatchPattern}.<br>Default value: {@link MatchPattern.EQUALS} |
 
 **Return value:**
@@ -761,6 +778,7 @@ let on: On = ON.originalText('123'); // Use the static constructor ON to create 
 
 ```
 
+<a id="scrollable"></a>
 ## scrollable
 
 ```TypeScript
@@ -781,7 +799,7 @@ Specifies the scrollable attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| b | boolean | No | Scrollable status of the component. The value **true** indicates that the component is scrollable, and **false** indicates the opposite. Default value: **true**&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| b | boolean | No | Scrollable status of the component. The value **true** indicates that the component is scrollable, and **false** indicates the opposite. Default value: **true**<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -805,6 +823,7 @@ let on: On = ON.scrollable(true); // Use the static constructor ON to create an 
 
 ```
 
+<a id="selected"></a>
 ## selected
 
 ```TypeScript
@@ -825,7 +844,7 @@ Specifies the selected attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| b | boolean | No | Selected status of the component. The value **true** indicates that the component is selected,and **false** indicates the opposite. Default value: **true**&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| b | boolean | No | Selected status of the component. The value **true** indicates that the component is selected,and **false** indicates the opposite. Default value: **true**<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -849,6 +868,7 @@ let on: On = ON.selected(true); // Use the static constructor ON to create an On
 
 ```
 
+<a id="text"></a>
 ## text
 
 ```TypeScript
@@ -859,7 +879,7 @@ Specifies the text attribute of the target component. Multiple match patterns ar
 
 > **NOTE**  
 >  
-> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-common-commonmethod-c.md#accessibilitylevel-1)  
+> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md)  
 > of a component is set to **no** or **no-hide-descendants**, this API cannot be used to specify the text attribute  
 > of the target component for searching for the component. In this case, you can use the  
 > [On.originalText()](arkts-test-uitest-on-c.md#originaltext-1) API.
@@ -876,7 +896,7 @@ Specifies the text attribute of the target component. Multiple match patterns ar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| txt | string | Yes | Component text, used to match the target component.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| txt | string | Yes | Component text, used to match the target component.<!--RP2--><!--RP2End--> |
 | pattern | [MatchPattern](arkts-test-uitest-matchpattern-e.md) | No | Match pattern {@link MatchPattern} .<br>Default value: {@link MatchPattern.EQUALS} |
 
 **Return value:**
@@ -901,6 +921,7 @@ let on: On = ON.text('123'); // Use the static constructor ON to create an On ob
 
 ```
 
+<a id="type"></a>
 ## type
 
 ```TypeScript
@@ -921,7 +942,7 @@ Specifies the type attribute of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tp | string | Yes | Component type.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| tp | string | Yes | Component type.<!--RP2--><!--RP2End--> |
 
 **Return value:**
 
@@ -945,6 +966,7 @@ let on: On = ON.type('Button'); // Use the static constructor ON to create an On
 
 ```
 
+<a id="type-1"></a>
 ## type
 
 ```TypeScript
@@ -965,7 +987,7 @@ Specifies the **type** attribute and match pattern of the target component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tp | string | Yes | Component type.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| tp | string | Yes | Component type.<!--RP2--><!--RP2End--> |
 | pattern | [MatchPattern](arkts-test-uitest-matchpattern-e.md) | Yes | Text matching pattern {@link MatchPattern}. |
 
 **Return value:**
@@ -990,6 +1012,7 @@ let on: On = ON.type('Button', MatchPattern.EQUALS); // Use the static construct
 
 ```
 
+<a id="within"></a>
 ## within
 
 ```TypeScript
@@ -1010,7 +1033,7 @@ Specifies that the target component is located within the given attribute compon
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| on | [On](arkts-test-uitest-on-c.md) | Yes | Information about the attribute component.&lt;!--RP3--&gt;&lt;!--RP3End--&gt; |
+| on | [On](arkts-test-uitest-on-c.md) | Yes | Information about the attribute component.<!--RP3--><!--RP3End--> |
 
 **Return value:**
 
@@ -1035,6 +1058,7 @@ let on: On = ON.text('java').within(ON.type('Scroll')); // Search for the child 
 
 ```
 
+<a id="withincomponent"></a>
 ## withinComponent
 
 ```TypeScript

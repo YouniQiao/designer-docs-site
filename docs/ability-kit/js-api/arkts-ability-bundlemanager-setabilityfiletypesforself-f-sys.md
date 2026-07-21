@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="setabilityfiletypesforself"></a>
 ## setAbilityFileTypesForSelf
 
 ```TypeScript
@@ -30,7 +31,7 @@ Sets the file types that can be opened by the current application.
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name. |
 | abilityName | string | Yes | Name of the UIAbility component. |
-| fileTypes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of file types. The array must contain no more than 1024 elements, and each element must not exceed 512 characters. Valid values must be from [UniformDataType](../../apis-arkdata/arkts-apis/arkts-arkdata-uniformtypedescriptor-uniformdatatype-e.md). Empty values,wildcard characters, and **general.object** are not allowed. |
+| fileTypes | Array&lt;string&gt; | Yes | Array of file types. The array must contain no more than 1024 elements, and each element must not exceed 512 characters. Valid values must be from [UniformDataType](../../apis-arkdata/arkts-apis/arkts-arkdata-uniformtypedescriptor-uniformdatatype-e.md). Empty values,wildcard characters, and **general.object** are not allowed. |
 
 **Error codes:**
 

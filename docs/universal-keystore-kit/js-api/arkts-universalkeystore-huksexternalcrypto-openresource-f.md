@@ -6,6 +6,7 @@
 import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="openresource"></a>
 ## openResource
 
 ```TypeScript
@@ -33,7 +34,7 @@ Open resource by specific resource ID.NOTE: The opened resource must be closed u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Return value of the Promise type |
+| Promise&lt;void&gt; | Return value of the Promise type |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getconnectowneruid"></a>
 ## getConnectOwnerUid
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the data network that is activated by default.You can only call this met
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The owner uid of the specified connection. |
+| Promise&lt;number&gt; | The owner uid of the specified connection. |
 
 **Error codes:**
 

@@ -22,7 +22,7 @@ events: Array<string>
 
 Common events to subscribe to.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 7
 

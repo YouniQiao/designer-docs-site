@@ -1,5 +1,6 @@
 # Env
 
+<a id="env"></a>
 ## Env
 
 ```TypeScript
@@ -22,7 +23,7 @@ Defining Env PropertyDecorator.On API 26.0.0 and above, the parameter also suppo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | [SystemEnvKey](arkts-arkui-common-systemenvkey-c.md)<T> \| SystemProperties | Yes | key value input by the user.<br>**Since:** 26.0.0 |
+| key | [SystemEnvKey](arkts-arkui-systemenvkey-c.md)&lt;T&gt; \| SystemProperties | Yes | key value input by the user.<br>**Since:** 26.0.0 |
 
 **Return value:**
 

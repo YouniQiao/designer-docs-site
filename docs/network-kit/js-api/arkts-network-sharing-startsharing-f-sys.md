@@ -6,6 +6,7 @@
 import { sharing } from '@kit.NetworkKit';
 ```
 
+<a id="startsharing"></a>
 ## startSharing
 
 ```TypeScript
@@ -29,7 +30,7 @@ Start network sharing for given type.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [SharingIfaceType](arkts-network-sharing-sharingifacetype-e-sys.md) | Yes | Enumeration of shareable interface types. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of startSharing. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of startSharing. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ sharing.startSharing(SHARING_WIFI, (error: BusinessError) => {
 ```
 
 
+<a id="startsharing-1"></a>
 ## startSharing
 
 ```TypeScript
@@ -89,7 +91,7 @@ Start network sharing for given type.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

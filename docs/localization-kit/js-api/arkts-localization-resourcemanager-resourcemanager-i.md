@@ -18,15 +18,15 @@ Provides APIs for accessing application resources and system resources.
 > [createModuleContext](../../apis-ability-kit/arkts-apis/arkts-ability-application-createmodulecontext-f.md#createmodulecontext-1)  
 > to create the context of the corresponding module and then call the API with **resName** or **resId** specified.  
 > For details, see  
-> [Accessing Resources](../../../../quick-start/resource-categories-and-access.md#accessing-resources).  
+> [Accessing Resources](docroot://quick-start/resource-categories-and-access.md#accessing-resources).  
 >  
 > - In API version 22 and earlier versions, an exception is thrown due to an invalid ID when the intermediate-code  
 > HAR or bytecode HAR accesses resources through resource ID-related APIs. From API version 23, the  
 > intermediate-code HAR or bytecode HAR can properly access resources through resource ID-related APIs.  
-> For details, see [Accessing Resources](../../../../quick-start/resource-categories-and-access.md#accessing-resources).  
+> For details, see [Accessing Resources](docroot://quick-start/resource-categories-and-access.md#accessing-resources).  
 >  
 > - For details about the content of the test files used in the sample code, see  
-> [Appendix](../../../../reference/apis-localization-kit/js-apis-resource-manager.md#appendix).
+> [Appendix](docroot://reference/apis-localization-kit/js-apis-resource-manager.md#appendix).
 
 **Since:** 6
 
@@ -40,6 +40,7 @@ Provides APIs for accessing application resources and system resources.
 import { resourceManager } from '@kit.LocalizationKit';
 ```
 
+<a id="addresource"></a>
 ## addResource
 
 ```TypeScript
@@ -95,6 +96,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="closerawfd"></a>
 ## closeRawFd
 
 ```TypeScript
@@ -116,7 +118,7 @@ Closes the fd of the HAP where a specific rawfile in the **resources/rawfile** d
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the rawfile. |
-| callback | _AsyncCallback<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | _AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -154,6 +156,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="closerawfd-1"></a>
 ## closeRawFd
 
 ```TypeScript
@@ -180,7 +183,7 @@ Closes the fd of the HAP where a specific rawfile in the **resources/rawfile** d
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -213,6 +216,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="closerawfdsync"></a>
 ## closeRawFdSync
 
 ```TypeScript
@@ -267,6 +271,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="closerawfiledescriptor"></a>
 ## closeRawFileDescriptor
 
 ```TypeScript
@@ -279,7 +284,7 @@ Closes the fd of the rawfile in the **resources/rawfile** directory. This API us
 
 **Deprecated since:** 9
 
-**Substitutes:** closeRawFd(path:
+**Substitutes:** [closeRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd-1)
 
 <!--Device-ResourceManager-closeRawFileDescriptor(path: string, callback: AsyncCallback<void>): void--><!--Device-ResourceManager-closeRawFileDescriptor(path: string, callback: AsyncCallback<void>): void-End-->
 
@@ -290,7 +295,7 @@ Closes the fd of the rawfile in the **resources/rawfile** directory. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the rawfile. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -307,6 +312,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="closerawfiledescriptor-1"></a>
 ## closeRawFileDescriptor
 
 ```TypeScript
@@ -319,7 +325,7 @@ Closes the fd of the rawfile in the **resources/rawfile** directory. This API us
 
 **Deprecated since:** 9
 
-**Substitutes:** closeRawFd(path:
+**Substitutes:** [closeRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd-1)
 
 <!--Device-ResourceManager-closeRawFileDescriptor(path: string): Promise<void>--><!--Device-ResourceManager-closeRawFileDescriptor(path: string): Promise<void>-End-->
 
@@ -335,7 +341,7 @@ Closes the fd of the rawfile in the **resources/rawfile** directory. This API us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -348,6 +354,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getboolean"></a>
 ## getBoolean
 
 ```TypeScript
@@ -382,8 +389,8 @@ Obtains a Boolean value based on the specified resource ID. This API returns the
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -421,6 +428,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getboolean-1"></a>
 ## getBoolean
 
 ```TypeScript
@@ -433,7 +441,7 @@ Obtains a Boolean value based on the specified resource object. This API returns
 
 **Deprecated since:** 20
 
-**Substitutes:** getBoolean(resId:
+**Substitutes:** [getBoolean(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getboolean-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -461,8 +469,8 @@ Obtains a Boolean value based on the specified resource object. This API returns
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -500,6 +508,7 @@ try {
 
 ```
 
+<a id="getbooleanbyname"></a>
 ## getBooleanByName
 
 ```TypeScript
@@ -534,8 +543,8 @@ Obtains a Boolean value based on the specified resource name. This API returns t
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -573,6 +582,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getcolor"></a>
 ## getColor
 
 ```TypeScript
@@ -594,7 +604,7 @@ Obtains a color value based on the specified resource ID. This API uses an async
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| callback | _AsyncCallback<number> | Yes | Callback used to return the color value (decimal). |
+| callback | _AsyncCallback&lt;number&gt; | Yes | Callback used to return the color value (decimal). |
 
 **Error codes:**
 
@@ -602,9 +612,10 @@ Obtains a color value based on the specified resource ID. This API uses an async
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
+<a id="getcolor-1"></a>
 ## getColor
 
 ```TypeScript
@@ -631,7 +642,7 @@ Obtains a color value based on the specified resource ID. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the color value (decimal). |
+| Promise&lt;number&gt; | Promise used to return the color value (decimal). |
 
 **Error codes:**
 
@@ -639,8 +650,8 @@ Obtains a color value based on the specified resource ID. This API uses a promis
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -677,6 +688,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getcolor-2"></a>
 ## getColor
 
 ```TypeScript
@@ -689,7 +701,7 @@ Obtains a color value based on the specified resource object. This API uses an a
 
 **Deprecated since:** 20
 
-**Substitutes:** getColor(resId:
+**Substitutes:** [getColor(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getcolor-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -704,7 +716,7 @@ Obtains a color value based on the specified resource object. This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
-| callback | _AsyncCallback<number> | Yes | Callback used to return the color value (decimal). |
+| callback | _AsyncCallback&lt;number&gt; | Yes | Callback used to return the color value (decimal). |
 
 **Error codes:**
 
@@ -712,8 +724,8 @@ Obtains a color value based on the specified resource object. This API uses an a
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -750,6 +762,7 @@ this.context.resourceManager.getColor(resource, (error: BusinessError, value: nu
 
 ```
 
+<a id="getcolor-3"></a>
 ## getColor
 
 ```TypeScript
@@ -762,7 +775,7 @@ Obtains a color value based on the specified resource object. This API uses a pr
 
 **Deprecated since:** 20
 
-**Substitutes:** getColor(resId:
+**Substitutes:** [getColor(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getcolor-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -782,7 +795,7 @@ Obtains a color value based on the specified resource object. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the color value (decimal). |
+| Promise&lt;number&gt; | Promise used to return the color value (decimal). |
 
 **Error codes:**
 
@@ -790,8 +803,8 @@ Obtains a color value based on the specified resource object. This API uses a pr
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -828,6 +841,7 @@ this.context.resourceManager.getColor(resource)
 
 ```
 
+<a id="getcolorbyname"></a>
 ## getColorByName
 
 ```TypeScript
@@ -849,7 +863,7 @@ Obtains a color value based on the specified resource name. This API uses an asy
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
-| callback | _AsyncCallback<number> | Yes | Callback used to return the color value (decimal). |
+| callback | _AsyncCallback&lt;number&gt; | Yes | Callback used to return the color value (decimal). |
 
 **Error codes:**
 
@@ -857,8 +871,8 @@ Obtains a color value based on the specified resource name. This API uses an asy
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -895,6 +909,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getcolorbyname-1"></a>
 ## getColorByName
 
 ```TypeScript
@@ -921,7 +936,7 @@ Obtains a color value based on the specified resource name. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the color value (decimal). |
+| Promise&lt;number&gt; | Promise used to return the color value (decimal). |
 
 **Error codes:**
 
@@ -929,8 +944,8 @@ Obtains a color value based on the specified resource name. This API uses a prom
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -967,6 +982,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getcolorbynamesync"></a>
 ## getColorByNameSync
 
 ```TypeScript
@@ -1001,8 +1017,8 @@ Obtains a color value based on the specified resource name. This API returns the
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -1040,6 +1056,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getcolorsync"></a>
 ## getColorSync
 
 ```TypeScript
@@ -1074,8 +1091,8 @@ Obtains a color value based on the specified resource ID. This API returns the r
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -1113,6 +1130,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getcolorsync-1"></a>
 ## getColorSync
 
 ```TypeScript
@@ -1125,7 +1143,7 @@ Obtains a color value based on the specified resource object. This API returns t
 
 **Deprecated since:** 20
 
-**Substitutes:** getColorSync(resId:
+**Substitutes:** [getColorSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getcolorsync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -1153,8 +1171,8 @@ Obtains a color value based on the specified resource object. This API returns t
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -1192,6 +1210,7 @@ try {
 
 ```
 
+<a id="getconfiguration"></a>
 ## getConfiguration
 
 ```TypeScript
@@ -1212,7 +1231,7 @@ Obtains the device configuration. This API uses an asynchronous callback to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | _AsyncCallback<Configuration> | Yes | Callback used to return the device configuration. |
+| callback | _AsyncCallback&lt;Configuration&gt; | Yes | Callback used to return the device configuration. |
 
 **Example**
 
@@ -1240,6 +1259,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getconfiguration-1"></a>
 ## getConfiguration
 
 ```TypeScript
@@ -1260,7 +1280,7 @@ Obtains the device configuration. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Configuration> | Promise used to return the device configuration. |
+| Promise&lt;Configuration&gt; | Promise used to return the device configuration. |
 
 **Example**
 
@@ -1286,6 +1306,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getconfigurationsync"></a>
 ## getConfigurationSync
 
 ```TypeScript
@@ -1327,6 +1348,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getdevicecapability"></a>
 ## getDeviceCapability
 
 ```TypeScript
@@ -1347,7 +1369,7 @@ Obtains the device capability. This API uses an asynchronous callback to return 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | _AsyncCallback<DeviceCapability> | Yes | Callback used to return the device capability. |
+| callback | _AsyncCallback&lt;DeviceCapability&gt; | Yes | Callback used to return the device capability. |
 
 **Example**
 
@@ -1375,6 +1397,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getdevicecapability-1"></a>
 ## getDeviceCapability
 
 ```TypeScript
@@ -1395,7 +1418,7 @@ Obtains the device capability. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DeviceCapability> | Promise used to return the device capability. |
+| Promise&lt;DeviceCapability&gt; | Promise used to return the device capability. |
 
 **Example**
 
@@ -1421,6 +1444,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getdevicecapabilitysync"></a>
 ## getDeviceCapabilitySync
 
 ```TypeScript
@@ -1462,13 +1486,14 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getdoublepluralstringbynamesync"></a>
 ## getDoublePluralStringByNameSync
 
 ```TypeScript
 getDoublePluralStringByNameSync(resName: string, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
+Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
 
 > **NOTE**  
 >  
@@ -1492,7 +1517,7 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
 | num | number | Yes | Quantity value (a floating point number), used to obtain the corresponding string representation based on the current language's [plural rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
+| args | Array&lt;string \| number&gt; | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
 
 **Return value:**
 
@@ -1505,8 +1530,8 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | Error Code ID | Error Message |
 | --- | --- |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 | [9001008](../errorcode-resource-manager.md#9001008-failed-to-format-the-resource-obtained-based-on-resname) | Failed to format the resource obtained based on the resource name. |
 
 **Example**
@@ -1556,13 +1581,14 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getdoublepluralstringvaluesync"></a>
 ## getDoublePluralStringValueSync
 
 ```TypeScript
 getDoublePluralStringValueSync(resId: number, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
+Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
 
 > **NOTE**  
 >  
@@ -1586,7 +1612,7 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
 | num | number | Yes | Quantity value (a floating point number), used to obtain the corresponding string representation based on the current language's [plural rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
+| args | Array&lt;string \| number&gt; | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
 
 **Return value:**
 
@@ -1599,9 +1625,9 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | Error Code ID | Error Message |
 | --- | --- |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
-| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-resid) | Failed to format the resource obtained based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
+| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-the-current-id) | Failed to format the resource obtained based on the resource ID. |
 
 **Example**
 
@@ -1650,13 +1676,14 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getdoublepluralstringvaluesync-1"></a>
 ## getDoublePluralStringValueSync
 
 ```TypeScript
 getDoublePluralStringValueSync(resource: Resource, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously.
+Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously.
 
 > **NOTE**  
 >  
@@ -1667,7 +1694,7 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 
 **Deprecated since:** 20
 
-**Substitutes:** getDoublePluralStringValueSync(resId:
+**Substitutes:** [getDoublePluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getdoublepluralstringvaluesync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -1683,7 +1710,7 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
 | num | number | Yes | Quantity value (a floating point number), used to obtain the corresponding string representation based on the current language's [plural rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
+| args | Array&lt;string \| number&gt; | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
 
 **Return value:**
 
@@ -1696,9 +1723,9 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | Error Code ID | Error Message |
 | --- | --- |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
-| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-resid) | Failed to format the resource obtained based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
+| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-the-current-id) | Failed to format the resource obtained based on the resource ID. |
 
 **Example**
 
@@ -1748,6 +1775,7 @@ try {
 
 ```
 
+<a id="getdrawabledescriptor"></a>
 ## getDrawableDescriptor
 
 ```TypeScript
@@ -1784,7 +1812,7 @@ Obtains a **DrawableDescriptor** object for icon display based on the specified 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -1824,6 +1852,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getdrawabledescriptor-1"></a>
 ## getDrawableDescriptor
 
 ```TypeScript
@@ -1836,7 +1865,7 @@ Obtains a **DrawableDescriptor** object for icon display based on the specified 
 
 **Deprecated since:** 20
 
-**Substitutes:** getDrawableDescriptor(resId:
+**Substitutes:** [getDrawableDescriptor(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getdrawabledescriptor-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -1866,7 +1895,7 @@ Obtains a **DrawableDescriptor** object for icon display based on the specified 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -1904,6 +1933,7 @@ try {
 
 ```
 
+<a id="getdrawabledescriptorbyname"></a>
 ## getDrawableDescriptorByName
 
 ```TypeScript
@@ -1940,7 +1970,7 @@ Obtains a **DrawableDescriptor** object for icon display based on the specified 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -1980,13 +2010,14 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getintpluralstringbynamesync"></a>
 ## getIntPluralStringByNameSync
 
 ```TypeScript
 getIntPluralStringByNameSync(resName: string, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
+Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
 
 > **NOTE**  
 >  
@@ -2010,7 +2041,7 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
 | num | number | Yes | Integer number used to obtain the corresponding string representation based on the current language's [plural rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
+| args | Array&lt;string \| number&gt; | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
 
 **Return value:**
 
@@ -2023,8 +2054,8 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | Error Code ID | Error Message |
 | --- | --- |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 | [9001008](../errorcode-resource-manager.md#9001008-failed-to-format-the-resource-obtained-based-on-resname) | Failed to format the resource obtained based on the resource name. |
 
 **Example**
@@ -2074,13 +2105,14 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getintpluralstringvaluesync"></a>
 ## getIntPluralStringValueSync
 
 ```TypeScript
 getIntPluralStringValueSync(resId: number, num: number,...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
+Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
 
 > **NOTE**  
 >  
@@ -2104,7 +2136,7 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
 | num | number | Yes | Integer number used to obtain the corresponding string representation based on the current language's [plural rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
+| args | Array&lt;string \| number&gt; | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
 
 **Return value:**
 
@@ -2117,9 +2149,9 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | Error Code ID | Error Message |
 | --- | --- |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
-| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-resid) | Failed to format the resource obtained based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
+| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-the-current-id) | Failed to format the resource obtained based on the resource ID. |
 
 **Example**
 
@@ -2168,13 +2200,14 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getintpluralstringvaluesync-1"></a>
 ## getIntPluralStringValueSync
 
 ```TypeScript
 getIntPluralStringValueSync(resource: Resource, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously.
+Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously.
 
 > **NOTE**  
 >  
@@ -2185,7 +2218,7 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 
 **Deprecated since:** 20
 
-**Substitutes:** getIntPluralStringValueSync(resId:
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -2201,7 +2234,7 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
 | num | number | Yes | Integer number used to obtain the corresponding string representation based on the current language's [plural rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
+| args | Array&lt;string \| number&gt; | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
 
 **Return value:**
 
@@ -2214,9 +2247,9 @@ Obtains a [singular/plural](../../../../internationalization/l10n-singular-plura
 | Error Code ID | Error Message |
 | --- | --- |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
-| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-resid) | Failed to format the resource obtained based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
+| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-the-current-id) | Failed to format the resource obtained based on the resource ID. |
 
 **Example**
 
@@ -2266,6 +2299,7 @@ try {
 
 ```
 
+<a id="getlocales"></a>
 ## getLocales
 
 ```TypeScript
@@ -2292,7 +2326,7 @@ Obtains the language list of an application.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Language list. The strings in the list are comprised of the language, script (optional), and region (optional), which are connected by a hyphen (-). |
+| Array&lt;string&gt; | Language list. The strings in the list are comprised of the language, script (optional), and region (optional), which are connected by a hyphen (-). |
 
 **Error codes:**
 
@@ -2337,6 +2371,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmedia"></a>
 ## getMedia
 
 ```TypeScript
@@ -2349,7 +2384,7 @@ Obtains media file content based on the specified resource ID. This API uses an 
 
 **Deprecated since:** 9
 
-**Substitutes:** getMediaContent(resId:
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
 
 <!--Device-ResourceManager-getMedia(resId: number, callback: AsyncCallback<Uint8Array>): void--><!--Device-ResourceManager-getMedia(resId: number, callback: AsyncCallback<Uint8Array>): void-End-->
 
@@ -2360,7 +2395,7 @@ Obtains media file content based on the specified resource ID. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Uint8Array> | Yes | Callback used to return the media file content. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Uint8Array&gt; | Yes | Callback used to return the media file content. |
 
 **Example**
 
@@ -2377,6 +2412,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getmedia-1"></a>
 ## getMedia
 
 ```TypeScript
@@ -2389,7 +2425,7 @@ Obtains media file content based on the specified resource ID. This API uses a p
 
 **Deprecated since:** 9
 
-**Substitutes:** getMediaContent(resId:
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
 
 <!--Device-ResourceManager-getMedia(resId: number): Promise<Uint8Array>--><!--Device-ResourceManager-getMedia(resId: number): Promise<Uint8Array>-End-->
 
@@ -2405,7 +2441,7 @@ Obtains media file content based on the specified resource ID. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the media file content. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the media file content. |
 
 **Example**
 
@@ -2422,6 +2458,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getmediabase64"></a>
 ## getMediaBase64
 
 ```TypeScript
@@ -2434,7 +2471,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 
 **Deprecated since:** 9
 
-**Substitutes:** getMediaContentBase64(resId:
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
 
 <!--Device-ResourceManager-getMediaBase64(resId: number, callback: AsyncCallback<string>): void--><!--Device-ResourceManager-getMediaBase64(resId: number, callback: AsyncCallback<string>): void-End-->
 
@@ -2445,7 +2482,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the Base64 code of the image. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the Base64 code of the image. |
 
 **Example**
 
@@ -2462,6 +2499,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getmediabase64-1"></a>
 ## getMediaBase64
 
 ```TypeScript
@@ -2474,7 +2512,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 
 **Deprecated since:** 9
 
-**Substitutes:** getMediaContentBase64(resId:
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
 
 <!--Device-ResourceManager-getMediaBase64(resId: number): Promise<string>--><!--Device-ResourceManager-getMediaBase64(resId: number): Promise<string>-End-->
 
@@ -2490,7 +2528,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the Base64 code of the image. |
+| Promise&lt;string&gt; | Promise used to return the Base64 code of the image. |
 
 **Example**
 
@@ -2507,6 +2545,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getmediabase64byname"></a>
 ## getMediaBase64ByName
 
 ```TypeScript
@@ -2528,7 +2567,7 @@ Obtains an image's Base64 code based on the specified resource name. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the Base64 code of the image. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -2536,7 +2575,7 @@ Obtains an image's Base64 code based on the specified resource name. This API us
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -2565,6 +2604,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediabase64byname-1"></a>
 ## getMediaBase64ByName
 
 ```TypeScript
@@ -2587,7 +2627,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
 | density | number | Yes | Screen density. The value **0** indicates the default screen density. |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the Base64 code of the image. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -2595,7 +2635,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -2624,6 +2664,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediabase64byname-2"></a>
 ## getMediaBase64ByName
 
 ```TypeScript
@@ -2650,7 +2691,7 @@ Obtains an image's Base64 code based on the specified resource name. This API us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the Base64 code of the image. |
+| Promise&lt;string&gt; | Promise used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -2658,7 +2699,7 @@ Obtains an image's Base64 code based on the specified resource name. This API us
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -2685,6 +2726,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediabase64byname-3"></a>
 ## getMediaBase64ByName
 
 ```TypeScript
@@ -2712,7 +2754,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the Base64 code of the image. |
+| Promise&lt;string&gt; | Promise used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -2720,7 +2762,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -2747,6 +2789,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediabase64bynamesync"></a>
 ## getMediaBase64ByNameSync
 
 ```TypeScript
@@ -2782,7 +2825,7 @@ Obtains an image's Base64 code for the default or specified screen density based
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -2814,6 +2857,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediabyname"></a>
 ## getMediaByName
 
 ```TypeScript
@@ -2835,7 +2879,7 @@ Obtains media file content based on the specified resource name. This API uses a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
-| callback | _AsyncCallback<Uint8Array> | Yes | Callback used to return the media file content. |
+| callback | _AsyncCallback&lt;Uint8Array&gt; | Yes | Callback used to return the media file content. |
 
 **Error codes:**
 
@@ -2843,7 +2887,7 @@ Obtains media file content based on the specified resource name. This API uses a
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -2872,6 +2916,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediabyname-1"></a>
 ## getMediaByName
 
 ```TypeScript
@@ -2894,7 +2939,7 @@ Obtains the media file content for the specified screen density based on the spe
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
 | density | number | Yes | Screen density. The value **0** indicates the default screen density. |
-| callback | _AsyncCallback<Uint8Array> | Yes | Callback used to return the media file content. |
+| callback | _AsyncCallback&lt;Uint8Array&gt; | Yes | Callback used to return the media file content. |
 
 **Error codes:**
 
@@ -2902,7 +2947,7 @@ Obtains the media file content for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -2931,6 +2976,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediabyname-2"></a>
 ## getMediaByName
 
 ```TypeScript
@@ -2957,7 +3003,7 @@ Obtains media file content based on the specified resource name. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the media file content. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the media file content. |
 
 **Error codes:**
 
@@ -2965,7 +3011,7 @@ Obtains media file content based on the specified resource name. This API uses a
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -2992,6 +3038,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediabyname-3"></a>
 ## getMediaByName
 
 ```TypeScript
@@ -3019,7 +3066,7 @@ Obtains the media file content for the specified screen density based on the spe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the media file content. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the media file content. |
 
 **Error codes:**
 
@@ -3027,7 +3074,7 @@ Obtains the media file content for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -3054,6 +3101,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediabynamesync"></a>
 ## getMediaByNameSync
 
 ```TypeScript
@@ -3081,7 +3129,7 @@ Obtains the media file content for the default or specified screen density based
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Promise used to return the result, which is the content of the media file corresponding to the specified resource name. |
+| Uint8Array | Promise used to return the result, which is the content of the media file corresponding to the specified resource name. |
 
 **Error codes:**
 
@@ -3089,7 +3137,7 @@ Obtains the media file content for the default or specified screen density based
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
 
 **Example**
 
@@ -3121,6 +3169,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontent"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3133,7 +3182,7 @@ Obtains media file content based on the specified resource object. This API uses
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContent(resId:
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3148,7 +3197,7 @@ Obtains media file content based on the specified resource object. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
-| callback | _AsyncCallback<Uint8Array> | Yes | Callback used to return the media file content. |
+| callback | _AsyncCallback&lt;Uint8Array&gt; | Yes | Callback used to return the media file content. |
 
 **Error codes:**
 
@@ -3156,7 +3205,7 @@ Obtains media file content based on the specified resource object. This API uses
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3185,6 +3234,7 @@ try {
 
 ```
 
+<a id="getmediacontent-1"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3197,7 +3247,7 @@ Obtains media file content for the specified screen density based on the specifi
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContent(resId:
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3213,7 +3263,7 @@ Obtains media file content for the specified screen density based on the specifi
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
 | density | number | Yes | Screen density. The value **0** indicates the default screen density. |
-| callback | _AsyncCallback<Uint8Array> | Yes | Callback used to return the media file content. |
+| callback | _AsyncCallback&lt;Uint8Array&gt; | Yes | Callback used to return the media file content. |
 
 **Error codes:**
 
@@ -3221,7 +3271,7 @@ Obtains media file content for the specified screen density based on the specifi
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3250,6 +3300,7 @@ try {
 
 ```
 
+<a id="getmediacontent-2"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3262,7 +3313,7 @@ Obtains media file content based on the specified resource object. This API uses
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContent(resId:
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3282,7 +3333,7 @@ Obtains media file content based on the specified resource object. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the media file content. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the media file content. |
 
 **Error codes:**
 
@@ -3290,7 +3341,7 @@ Obtains media file content based on the specified resource object. This API uses
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3317,6 +3368,7 @@ try {
 
 ```
 
+<a id="getmediacontent-3"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3329,7 +3381,7 @@ Obtains media file content for the specified screen density based on the specifi
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContent(resId:
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3350,7 +3402,7 @@ Obtains media file content for the specified screen density based on the specifi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the media file content. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the media file content. |
 
 **Error codes:**
 
@@ -3358,7 +3410,7 @@ Obtains media file content for the specified screen density based on the specifi
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3385,6 +3437,7 @@ try {
 
 ```
 
+<a id="getmediacontent-4"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3406,7 +3459,7 @@ Obtains media file content based on the specified resource ID. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| callback | _AsyncCallback<Uint8Array> | Yes | Callback used to return the media file content. |
+| callback | _AsyncCallback&lt;Uint8Array&gt; | Yes | Callback used to return the media file content. |
 
 **Error codes:**
 
@@ -3414,7 +3467,7 @@ Obtains media file content based on the specified resource ID. This API uses an 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3444,6 +3497,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontent-5"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3466,7 +3520,7 @@ Obtains the media file content for the specified screen density based on the spe
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
 | density | number | Yes | Screen density. The value **0** indicates the default screen density. |
-| callback | _AsyncCallback<Uint8Array> | Yes | Callback used to return the media file content. |
+| callback | _AsyncCallback&lt;Uint8Array&gt; | Yes | Callback used to return the media file content. |
 
 **Error codes:**
 
@@ -3474,7 +3528,7 @@ Obtains the media file content for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3503,6 +3557,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontent-6"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3529,7 +3584,7 @@ Obtains media file content based on the specified resource ID. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the media file content. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the media file content. |
 
 **Error codes:**
 
@@ -3537,7 +3592,7 @@ Obtains media file content based on the specified resource ID. This API uses a p
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3564,6 +3619,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontent-7"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3591,7 +3647,7 @@ Obtains the media file content for the specified screen density based on the spe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the media file content. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the media file content. |
 
 **Error codes:**
 
@@ -3599,7 +3655,7 @@ Obtains the media file content for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3626,6 +3682,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontentbase64"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3638,7 +3695,7 @@ Obtains an image's Base64 code based on the specified resource object. This API 
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContentBase64(resId:
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3653,7 +3710,7 @@ Obtains an image's Base64 code based on the specified resource object. This API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the Base64 code of the image. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -3661,7 +3718,7 @@ Obtains an image's Base64 code based on the specified resource object. This API 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3690,6 +3747,7 @@ try {
 
 ```
 
+<a id="getmediacontentbase64-1"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3702,7 +3760,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContentBase64(resId:
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3718,7 +3776,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
 | density | number | Yes | Screen density. The value **0** indicates the default screen density. |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the Base64 code of the image. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -3726,7 +3784,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3755,6 +3813,7 @@ try {
 
 ```
 
+<a id="getmediacontentbase64-2"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3767,7 +3826,7 @@ Obtains an image's Base64 code based on the specified resource object. This API 
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContentBase64(resId:
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3787,7 +3846,7 @@ Obtains an image's Base64 code based on the specified resource object. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the Base64 code of the image. |
+| Promise&lt;string&gt; | Promise used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -3795,7 +3854,7 @@ Obtains an image's Base64 code based on the specified resource object. This API 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3822,6 +3881,7 @@ try {
 
 ```
 
+<a id="getmediacontentbase64-3"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3834,7 +3894,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContentBase64(resId:
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3855,7 +3915,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the Base64 code of the image. |
+| Promise&lt;string&gt; | Promise used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -3863,7 +3923,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3890,6 +3950,7 @@ try {
 
 ```
 
+<a id="getmediacontentbase64-4"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3911,7 +3972,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the Base64 code of the image. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -3919,7 +3980,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -3948,6 +4009,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontentbase64-5"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3970,7 +4032,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
 | density | number | Yes | Screen density. The value **0** indicates the default screen density. |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the Base64 code of the image. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -3978,7 +4040,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -4007,6 +4069,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontentbase64-6"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -4033,7 +4096,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the Base64 code of the image. |
+| Promise&lt;string&gt; | Promise used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -4041,7 +4104,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -4068,6 +4131,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontentbase64-7"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -4095,7 +4159,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the Base64 code of the image. |
+| Promise&lt;string&gt; | Promise used to return the Base64 code of the image. |
 
 **Error codes:**
 
@@ -4103,7 +4167,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -4130,6 +4194,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontentbase64sync"></a>
 ## getMediaContentBase64Sync
 
 ```TypeScript
@@ -4165,7 +4230,7 @@ Obtains an image's Base64 code for the default or specified screen density based
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -4197,6 +4262,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontentbase64sync-1"></a>
 ## getMediaContentBase64Sync
 
 ```TypeScript
@@ -4209,7 +4275,7 @@ Obtains an image's Base64 code for the default or specified screen density based
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContentBase64Sync(resId:
+**Substitutes:** [getMediaContentBase64Sync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64sync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -4238,7 +4304,7 @@ Obtains an image's Base64 code for the default or specified screen density based
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -4269,6 +4335,7 @@ try {
 
 ```
 
+<a id="getmediacontentsync"></a>
 ## getMediaContentSync
 
 ```TypeScript
@@ -4296,7 +4363,7 @@ Obtains the media file content for the default or specified screen density based
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Content of the media file corresponding to the specified resource ID. |
+| Uint8Array | Content of the media file corresponding to the specified resource ID. |
 
 **Error codes:**
 
@@ -4304,7 +4371,7 @@ Obtains the media file content for the default or specified screen density based
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -4336,6 +4403,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getmediacontentsync-1"></a>
 ## getMediaContentSync
 
 ```TypeScript
@@ -4348,7 +4416,7 @@ Obtains the media file content for the default or specified screen density based
 
 **Deprecated since:** 20
 
-**Substitutes:** getMediaContentSync(resId:
+**Substitutes:** [getMediaContentSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentsync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -4369,7 +4437,7 @@ Obtains the media file content for the default or specified screen density based
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Content of the media file corresponding to the specified resource object. |
+| Uint8Array | Content of the media file corresponding to the specified resource object. |
 
 **Error codes:**
 
@@ -4377,7 +4445,7 @@ Obtains the media file content for the default or specified screen density based
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 
 **Example**
 
@@ -4408,6 +4476,7 @@ try {
 
 ```
 
+<a id="getnumber"></a>
 ## getNumber
 
 ```TypeScript
@@ -4442,8 +4511,8 @@ Obtains an integer or float number based on the specified resource ID. This API 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -4508,6 +4577,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getnumber-1"></a>
 ## getNumber
 
 ```TypeScript
@@ -4520,7 +4590,7 @@ Obtains an integer or float number based on the specified resource object. This 
 
 **Deprecated since:** 20
 
-**Substitutes:** getNumber(resId:
+**Substitutes:** [getNumber(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getnumber-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -4548,8 +4618,8 @@ Obtains an integer or float number based on the specified resource object. This 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -4588,6 +4658,7 @@ try {
 
 ```
 
+<a id="getnumberbyname"></a>
 ## getNumberByName
 
 ```TypeScript
@@ -4622,8 +4693,8 @@ Obtains an integer or float number based on the specified resource name. This AP
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -4688,6 +4759,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getoverrideconfiguration"></a>
 ## getOverrideConfiguration
 
 ```TypeScript
@@ -4734,6 +4806,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getoverrideresourcemanager"></a>
 ## getOverrideResourceManager
 
 ```TypeScript
@@ -4792,6 +4865,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getpluralstring"></a>
 ## getPluralString
 
 ```TypeScript
@@ -4809,7 +4883,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 **Deprecated since:** 9
 
-**Substitutes:** getPluralStringValue(resId:
+**Substitutes:** [getPluralStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getpluralstringvalue-1)
 
 <!--Device-ResourceManager-getPluralString(resId: number, num: number, callback: AsyncCallback<string>): void--><!--Device-ResourceManager-getPluralString(resId: number, num: number, callback: AsyncCallback<string>): void-End-->
 
@@ -4821,7 +4895,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
 | num | number | Yes | Quantity value, which is used to obtain the corresponding string representation based on the current language's plural rules. For details about the plural rules of a language, see [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the obtained singular/plural string. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the obtained singular/plural string. |
 
 **Example**
 
@@ -4840,6 +4914,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getpluralstring-1"></a>
 ## getPluralString
 
 ```TypeScript
@@ -4857,7 +4932,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 **Deprecated since:** 9
 
-**Substitutes:** getPluralStringValue(resId:
+**Substitutes:** [getPluralStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getpluralstringvalue-1)
 
 <!--Device-ResourceManager-getPluralString(resId: number, num: number): Promise<string>--><!--Device-ResourceManager-getPluralString(resId: number, num: number): Promise<string>-End-->
 
@@ -4874,7 +4949,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the obtained singular/plural string. |
+| Promise&lt;string&gt; | Promise used to return the obtained singular/plural string. |
 
 **Example**
 
@@ -4891,6 +4966,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getpluralstringbyname"></a>
 ## getPluralStringByName
 
 ```TypeScript
@@ -4908,7 +4984,7 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 
 **Deprecated since:** 18
 
-**Substitutes:** getIntPluralStringByNameSync(resName:
+**Substitutes:** [getIntPluralStringByNameSync(resName:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringbynamesync-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -4922,7 +4998,7 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
 | num | number | Yes | Quantity value, which is used to obtain the corresponding string representation based on the current language's plural rules. For details about the plural rules of a language, see [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the obtained singular/plural string. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the obtained singular/plural string. |
 
 **Error codes:**
 
@@ -4930,8 +5006,8 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -4973,6 +5049,7 @@ this.context.resourceManager.getPluralStringByName("test", 1, (error: BusinessEr
 
 ```
 
+<a id="getpluralstringbyname-1"></a>
 ## getPluralStringByName
 
 ```TypeScript
@@ -4990,7 +5067,7 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 
 **Deprecated since:** 18
 
-**Substitutes:** getIntPluralStringByNameSync(resName:
+**Substitutes:** [getIntPluralStringByNameSync(resName:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringbynamesync-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5009,7 +5086,7 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result, which is the singular/plural string corresponding to the specified resource name. |
+| Promise&lt;string&gt; | Promise used to return the result, which is the singular/plural string corresponding to the specified resource name. |
 
 **Error codes:**
 
@@ -5017,8 +5094,8 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -5060,6 +5137,7 @@ this.context.resourceManager.getPluralStringByName("test", 1)
 
 ```
 
+<a id="getpluralstringbynamesync"></a>
 ## getPluralStringByNameSync
 
 ```TypeScript
@@ -5077,7 +5155,7 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 
 **Deprecated since:** 18
 
-**Substitutes:** getIntPluralStringByNameSync(resName:
+**Substitutes:** [getIntPluralStringByNameSync(resName:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringbynamesync-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5104,8 +5182,8 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -5148,6 +5226,7 @@ try {
 
 ```
 
+<a id="getpluralstringvalue"></a>
 ## getPluralStringValue
 
 ```TypeScript
@@ -5165,7 +5244,7 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 
 **Deprecated since:** 18
 
-**Substitutes:** getIntPluralStringValueSync(resId:
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -5181,7 +5260,7 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
 | num | number | Yes | Quantity value, which is used to obtain the corresponding string representation based on the current language's plural rules. For details about the plural rules of a language, see [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the obtained singular/plural string. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the obtained singular/plural string. |
 
 **Error codes:**
 
@@ -5189,8 +5268,8 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -5239,6 +5318,7 @@ this.context.resourceManager.getPluralStringValue(resource, 1,
 
 ```
 
+<a id="getpluralstringvalue-1"></a>
 ## getPluralStringValue
 
 ```TypeScript
@@ -5256,7 +5336,7 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 
 **Deprecated since:** 18
 
-**Substitutes:** getIntPluralStringValueSync(resId:
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -5277,7 +5357,7 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the obtained singular/plural string. |
+| Promise&lt;string&gt; | Promise used to return the obtained singular/plural string. |
 
 **Error codes:**
 
@@ -5285,8 +5365,8 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -5334,6 +5414,7 @@ this.context.resourceManager.getPluralStringValue(resource, 1)
 
 ```
 
+<a id="getpluralstringvalue-2"></a>
 ## getPluralStringValue
 
 ```TypeScript
@@ -5351,7 +5432,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 **Deprecated since:** 18
 
-**Substitutes:** getIntPluralStringValueSync(resId:
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5365,7 +5446,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
 | num | number | Yes | Quantity value, which is used to obtain the corresponding string representation based on the current language's plural rules. For details about the plural rules of a language, see [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the obtained singular/plural string. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the obtained singular/plural string. |
 
 **Error codes:**
 
@@ -5373,8 +5454,8 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -5417,6 +5498,7 @@ this.context.resourceManager.getPluralStringValue($r("app.plural.test").id, 1,
 
 ```
 
+<a id="getpluralstringvalue-3"></a>
 ## getPluralStringValue
 
 ```TypeScript
@@ -5434,7 +5516,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 **Deprecated since:** 18
 
-**Substitutes:** getIntPluralStringValueSync(resId:
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5453,7 +5535,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the obtained singular/plural string. |
+| Promise&lt;string&gt; | Promise used to return the obtained singular/plural string. |
 
 **Error codes:**
 
@@ -5461,8 +5543,8 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -5504,6 +5586,7 @@ this.context.resourceManager.getPluralStringValue($r("app.plural.test").id, 1)
 
 ```
 
+<a id="getpluralstringvaluesync"></a>
 ## getPluralStringValueSync
 
 ```TypeScript
@@ -5521,7 +5604,7 @@ Obtains singular/plural strings based on the specified resource ID and quantity.
 
 **Deprecated since:** 18
 
-**Substitutes:** getIntPluralStringValueSync(resId:
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5548,8 +5631,8 @@ Obtains singular/plural strings based on the specified resource ID and quantity.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -5592,6 +5675,7 @@ try {
 
 ```
 
+<a id="getpluralstringvaluesync-1"></a>
 ## getPluralStringValueSync
 
 ```TypeScript
@@ -5609,7 +5693,7 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 
 **Deprecated since:** 18
 
-**Substitutes:** getIntPluralStringValueSync(resId:
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -5638,8 +5722,8 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -5688,6 +5772,7 @@ try {
 
 ```
 
+<a id="getrawfd"></a>
 ## getRawFd
 
 ```TypeScript
@@ -5715,7 +5800,7 @@ Obtains the fd of the HAP where a specific rawfile in the **resources/rawfile** 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the rawfile. |
-| callback | _AsyncCallback<RawFileDescriptor> | Yes | Callback used to return the fd of the HAP. |
+| callback | _AsyncCallback&lt;RawFileDescriptor&gt; | Yes | Callback used to return the fd of the HAP. |
 
 **Error codes:**
 
@@ -5754,6 +5839,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getrawfd-1"></a>
 ## getRawFd
 
 ```TypeScript
@@ -5786,7 +5872,7 @@ Obtains the fd of the HAP where a specific rawfile in the **resources/rawfile** 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RawFileDescriptor> | Promise used to return the fd of the HAP. |
+| Promise&lt;RawFileDescriptor&gt; | Promise used to return the fd of the HAP. |
 
 **Error codes:**
 
@@ -5823,6 +5909,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getrawfdsync"></a>
 ## getRawFdSync
 
 ```TypeScript
@@ -5885,6 +5972,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getrawfile"></a>
 ## getRawFile
 
 ```TypeScript
@@ -5897,7 +5985,7 @@ Obtains the content of a rawfile in the **resources/rawfile** directory. This AP
 
 **Deprecated since:** 9
 
-**Substitutes:** getRawFileContent(path:
+**Substitutes:** [getRawFileContent(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfilecontent-1)
 
 <!--Device-ResourceManager-getRawFile(path: string, callback: AsyncCallback<Uint8Array>): void--><!--Device-ResourceManager-getRawFile(path: string, callback: AsyncCallback<Uint8Array>): void-End-->
 
@@ -5908,7 +5996,7 @@ Obtains the content of a rawfile in the **resources/rawfile** directory. This AP
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the rawfile. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Uint8Array> | Yes | Callback used to return the rawfile content. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Uint8Array&gt; | Yes | Callback used to return the rawfile content. |
 
 **Example**
 
@@ -5927,6 +6015,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getrawfile-1"></a>
 ## getRawFile
 
 ```TypeScript
@@ -5939,7 +6028,7 @@ Obtains the content of a rawfile in the **resources/rawfile** directory. This AP
 
 **Deprecated since:** 9
 
-**Substitutes:** getRawFileContent(path:
+**Substitutes:** [getRawFileContent(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfilecontent-1)
 
 <!--Device-ResourceManager-getRawFile(path: string): Promise<Uint8Array>--><!--Device-ResourceManager-getRawFile(path: string): Promise<Uint8Array>-End-->
 
@@ -5955,7 +6044,7 @@ Obtains the content of a rawfile in the **resources/rawfile** directory. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the rawfile content. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the rawfile content. |
 
 **Example**
 
@@ -5972,6 +6061,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getrawfilecontent"></a>
 ## getRawFileContent
 
 ```TypeScript
@@ -5993,7 +6083,7 @@ Obtains the content of a rawfile in the **resources/rawfile** directory. This AP
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the rawfile. |
-| callback | _AsyncCallback<Uint8Array> | Yes | Callback used to return the content of the rawfile. |
+| callback | _AsyncCallback&lt;Uint8Array&gt; | Yes | Callback used to return the content of the rawfile. |
 
 **Error codes:**
 
@@ -6029,6 +6119,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getrawfilecontent-1"></a>
 ## getRawFileContent
 
 ```TypeScript
@@ -6055,7 +6146,7 @@ Obtains the content of a rawfile in the **resources/rawfile** directory. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the content of the rawfile. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the content of the rawfile. |
 
 **Error codes:**
 
@@ -6089,6 +6180,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getrawfilecontentsync"></a>
 ## getRawFileContentSync
 
 ```TypeScript
@@ -6115,7 +6207,7 @@ Obtains the content of a rawfile in the **resources/rawfile** directory. This AP
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Content of the rawfile. |
+| Uint8Array | Content of the rawfile. |
 
 **Error codes:**
 
@@ -6145,6 +6237,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getrawfiledescriptor"></a>
 ## getRawFileDescriptor
 
 ```TypeScript
@@ -6157,7 +6250,7 @@ Obtains the fd of the rawfile in the **resources/rawfile** directory. This API u
 
 **Deprecated since:** 9
 
-**Substitutes:** getRawFd(path:
+**Substitutes:** [getRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfd-1)
 
 <!--Device-ResourceManager-getRawFileDescriptor(path: string, callback: AsyncCallback<RawFileDescriptor>): void--><!--Device-ResourceManager-getRawFileDescriptor(path: string, callback: AsyncCallback<RawFileDescriptor>): void-End-->
 
@@ -6168,7 +6261,7 @@ Obtains the fd of the rawfile in the **resources/rawfile** directory. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the rawfile. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RawFileDescriptor> | Yes | Callback used to return the obtained fd. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RawFileDescriptor&gt; | Yes | Callback used to return the obtained fd. |
 
 **Example**
 
@@ -6189,6 +6282,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getrawfiledescriptor-1"></a>
 ## getRawFileDescriptor
 
 ```TypeScript
@@ -6201,7 +6295,7 @@ Obtains the fd of the rawfile in the **resources/rawfile** directory. This API u
 
 **Deprecated since:** 9
 
-**Substitutes:** getRawFd(path:
+**Substitutes:** [getRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfd-1)
 
 <!--Device-ResourceManager-getRawFileDescriptor(path: string): Promise<RawFileDescriptor>--><!--Device-ResourceManager-getRawFileDescriptor(path: string): Promise<RawFileDescriptor>-End-->
 
@@ -6217,7 +6311,7 @@ Obtains the fd of the rawfile in the **resources/rawfile** directory. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RawFileDescriptor> | Promise used to return the obtained fd. |
+| Promise&lt;RawFileDescriptor&gt; | Promise used to return the obtained fd. |
 
 **Example**
 
@@ -6236,6 +6330,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getrawfilelist"></a>
 ## getRawFileList
 
 ```TypeScript
@@ -6262,7 +6357,7 @@ Obtains the list of folders and files in the **resources/rawfile** directory. Th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | **rawfile** directory. |
-| callback | _AsyncCallback<Array<string>> | Yes | Callback used to return the list of folders and files. |
+| callback | _AsyncCallback&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the list of folders and files. |
 
 **Error codes:**
 
@@ -6294,6 +6389,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getrawfilelist-1"></a>
 ## getRawFileList
 
 ```TypeScript
@@ -6325,7 +6421,7 @@ Obtains the list of folders and files in the **resources/rawfile** directory. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the list of folders and files. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the list of folders and files. |
 
 **Error codes:**
 
@@ -6357,6 +6453,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getrawfilelistsync"></a>
 ## getRawFileListSync
 
 ```TypeScript
@@ -6388,7 +6485,7 @@ Obtains the list of folders and files in the **resources/rawfile** directory. Th
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of folders and files in the **rawfile** directory. |
+| Array&lt;string&gt; | List of folders and files in the **rawfile** directory. |
 
 **Error codes:**
 
@@ -6421,6 +6518,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getresourcename"></a>
 ## getResourceName
 
 ```TypeScript
@@ -6493,6 +6591,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstring"></a>
 ## getString
 
 ```TypeScript
@@ -6505,7 +6604,7 @@ Obtains a string based on the specified resource ID. This API uses an asynchrono
 
 **Deprecated since:** 9
 
-**Substitutes:** getStringValue(resId:
+**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue-1)
 
 <!--Device-ResourceManager-getString(resId: number, callback: AsyncCallback<string>): void--><!--Device-ResourceManager-getString(resId: number, callback: AsyncCallback<string>): void-End-->
 
@@ -6516,7 +6615,7 @@ Obtains a string based on the specified resource ID. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the obtained string. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the obtained string. |
 
 **Example**
 
@@ -6533,6 +6632,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getstring-1"></a>
 ## getString
 
 ```TypeScript
@@ -6545,7 +6645,7 @@ Obtains a string based on the specified resource ID. This API uses a promise to 
 
 **Deprecated since:** 9
 
-**Substitutes:** getStringValue(resId:
+**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue-1)
 
 <!--Device-ResourceManager-getString(resId: number): Promise<string>--><!--Device-ResourceManager-getString(resId: number): Promise<string>-End-->
 
@@ -6561,7 +6661,7 @@ Obtains a string based on the specified resource ID. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the obtained string. |
+| Promise&lt;string&gt; | Promise used to return the obtained string. |
 
 **Example**
 
@@ -6578,6 +6678,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getstringarray"></a>
 ## getStringArray
 
 ```TypeScript
@@ -6590,7 +6691,7 @@ Obtains a string array based on the specified resource ID. This API uses an asyn
 
 **Deprecated since:** 9
 
-**Substitutes:** getStringArrayValue(resId:
+**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue-1)
 
 <!--Device-ResourceManager-getStringArray(resId: number, callback: AsyncCallback<Array<string>>): void--><!--Device-ResourceManager-getStringArray(resId: number, callback: AsyncCallback<Array<string>>): void-End-->
 
@@ -6601,7 +6702,7 @@ Obtains a string array based on the specified resource ID. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the obtained string array. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the obtained string array. |
 
 **Example**
 
@@ -6618,6 +6719,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getstringarray-1"></a>
 ## getStringArray
 
 ```TypeScript
@@ -6630,7 +6732,7 @@ Obtains a string array based on the specified resource ID. This API uses a promi
 
 **Deprecated since:** 9
 
-**Substitutes:** getStringArrayValue(resId:
+**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue-1)
 
 <!--Device-ResourceManager-getStringArray(resId: number): Promise<Array<string>>--><!--Device-ResourceManager-getStringArray(resId: number): Promise<Array<string>>-End-->
 
@@ -6646,7 +6748,7 @@ Obtains a string array based on the specified resource ID. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the obtained string array. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the obtained string array. |
 
 **Example**
 
@@ -6663,6 +6765,7 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
+<a id="getstringarraybyname"></a>
 ## getStringArrayByName
 
 ```TypeScript
@@ -6684,7 +6787,7 @@ Obtains a string array based on the specified resource name. This API uses an as
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
-| callback | _AsyncCallback<Array<string>> | Yes | Callback used to return the obtained string array. |
+| callback | _AsyncCallback&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the obtained string array. |
 
 **Error codes:**
 
@@ -6692,8 +6795,8 @@ Obtains a string array based on the specified resource name. This API uses an as
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -6735,6 +6838,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringarraybyname-1"></a>
 ## getStringArrayByName
 
 ```TypeScript
@@ -6761,7 +6865,7 @@ Obtains a string array based on the specified resource name. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the obtained string array. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the obtained string array. |
 
 **Error codes:**
 
@@ -6769,8 +6873,8 @@ Obtains a string array based on the specified resource name. This API uses a pro
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -6811,6 +6915,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringarraybynamesync"></a>
 ## getStringArrayByNameSync
 
 ```TypeScript
@@ -6837,7 +6942,7 @@ Obtains a string array based on the specified resource name. This API returns th
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | String array corresponding to the specified resource name. |
+| Array&lt;string&gt; | String array corresponding to the specified resource name. |
 
 **Error codes:**
 
@@ -6845,8 +6950,8 @@ Obtains a string array based on the specified resource name. This API returns th
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -6888,6 +6993,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringarrayvalue"></a>
 ## getStringArrayValue
 
 ```TypeScript
@@ -6900,7 +7006,7 @@ Obtains a string array based on the specified resource object. This API uses an 
 
 **Deprecated since:** 20
 
-**Substitutes:** getStringArrayValue(resId:
+**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -6915,7 +7021,7 @@ Obtains a string array based on the specified resource object. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
-| callback | _AsyncCallback<Array<string>> | Yes | Callback used to return the obtained string array. |
+| callback | _AsyncCallback&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the obtained string array. |
 
 **Error codes:**
 
@@ -6923,8 +7029,8 @@ Obtains a string array based on the specified resource object. This API uses an 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -6965,6 +7071,7 @@ this.context.resourceManager.getStringArrayValue(resource, (error: BusinessError
 
 ```
 
+<a id="getstringarrayvalue-1"></a>
 ## getStringArrayValue
 
 ```TypeScript
@@ -6977,7 +7084,7 @@ Obtains a string array based on the specified resource object. This API uses a p
 
 **Deprecated since:** 20
 
-**Substitutes:** getStringArrayValue(resId:
+**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -6997,7 +7104,7 @@ Obtains a string array based on the specified resource object. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the obtained string array. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the obtained string array. |
 
 **Error codes:**
 
@@ -7005,8 +7112,8 @@ Obtains a string array based on the specified resource object. This API uses a p
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7047,6 +7154,7 @@ this.context.resourceManager.getStringArrayValue(resource)
 
 ```
 
+<a id="getstringarrayvalue-2"></a>
 ## getStringArrayValue
 
 ```TypeScript
@@ -7068,7 +7176,7 @@ Obtains a string array based on the specified resource ID. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| callback | _AsyncCallback<Array<string>> | Yes | Callback used to return the obtained string array. |
+| callback | _AsyncCallback&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the obtained string array. |
 
 **Error codes:**
 
@@ -7076,8 +7184,8 @@ Obtains a string array based on the specified resource ID. This API uses an asyn
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7119,6 +7227,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringarrayvalue-3"></a>
 ## getStringArrayValue
 
 ```TypeScript
@@ -7145,7 +7254,7 @@ Obtains a string array based on the specified resource ID. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the obtained string array. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the obtained string array. |
 
 **Error codes:**
 
@@ -7153,8 +7262,8 @@ Obtains a string array based on the specified resource ID. This API uses a promi
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7195,6 +7304,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringarrayvaluesync"></a>
 ## getStringArrayValueSync
 
 ```TypeScript
@@ -7221,7 +7331,7 @@ Obtains a string array based on the specified resource ID. This API returns the 
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | String array corresponding to the specified resource ID. |
+| Array&lt;string&gt; | String array corresponding to the specified resource ID. |
 
 **Error codes:**
 
@@ -7229,8 +7339,8 @@ Obtains a string array based on the specified resource ID. This API returns the 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7272,6 +7382,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringarrayvaluesync-1"></a>
 ## getStringArrayValueSync
 
 ```TypeScript
@@ -7284,7 +7395,7 @@ Obtains a string array based on the specified resource object. This API returns 
 
 **Deprecated since:** 20
 
-**Substitutes:** getStringArrayValueSync(resId:
+**Substitutes:** [getStringArrayValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvaluesync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -7304,7 +7415,7 @@ Obtains a string array based on the specified resource object. This API returns 
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | String array corresponding to the specified resource object. |
+| Array&lt;string&gt; | String array corresponding to the specified resource object. |
 
 **Error codes:**
 
@@ -7312,8 +7423,8 @@ Obtains a string array based on the specified resource object. This API returns 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7355,6 +7466,7 @@ try {
 
 ```
 
+<a id="getstringbyname"></a>
 ## getStringByName
 
 ```TypeScript
@@ -7376,7 +7488,7 @@ Obtains a string based on the specified resource name. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the obtained string. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the obtained string. |
 
 **Error codes:**
 
@@ -7384,8 +7496,8 @@ Obtains a string based on the specified resource name. This API uses an asynchro
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7422,6 +7534,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringbyname-1"></a>
 ## getStringByName
 
 ```TypeScript
@@ -7448,7 +7561,7 @@ Obtains a string based on the specified resource name. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the obtained string. |
+| Promise&lt;string&gt; | Promise used to return the obtained string. |
 
 **Error codes:**
 
@@ -7456,8 +7569,8 @@ Obtains a string based on the specified resource name. This API uses a promise t
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7492,6 +7605,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringbynamesync"></a>
 ## getStringByNameSync
 
 ```TypeScript
@@ -7526,8 +7640,8 @@ Obtains a string based on the specified resource name. This API returns the resu
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7565,6 +7679,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringbynamesync-1"></a>
 ## getStringByNameSync
 
 ```TypeScript
@@ -7586,7 +7701,7 @@ Obtains a string based on the specified resource name and formats the string bas
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resName | string | Yes | Resource name. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
+| args | Array&lt;string \| number&gt; | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
 
 **Return value:**
 
@@ -7600,8 +7715,8 @@ Obtains a string based on the specified resource name and formats the string bas
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 | [9001008](../errorcode-resource-manager.md#9001008-failed-to-format-the-resource-obtained-based-on-resname) | Failed to format the resource obtained based on the resource Name. |
 
 **Example**
@@ -7640,6 +7755,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringsync"></a>
 ## getStringSync
 
 ```TypeScript
@@ -7674,8 +7790,8 @@ Obtains a string based on the specified resource ID. This API returns the result
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7713,6 +7829,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringsync-1"></a>
 ## getStringSync
 
 ```TypeScript
@@ -7734,7 +7851,7 @@ Obtains a string based on the specified resource ID and formats the string based
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
+| args | Array&lt;string \| number&gt; | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
 
 **Return value:**
 
@@ -7748,9 +7865,9 @@ Obtains a string based on the specified resource ID and formats the string based
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
-| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-resid) | Failed to format the resource obtained based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
+| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-the-current-id) | Failed to format the resource obtained based on the resource ID. |
 
 **Example**
 
@@ -7788,6 +7905,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getstringsync-2"></a>
 ## getStringSync
 
 ```TypeScript
@@ -7800,7 +7918,7 @@ Obtains a string based on the specified resource object. This API returns the re
 
 **Deprecated since:** 20
 
-**Substitutes:** getStringSync(resId:
+**Substitutes:** [getStringSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringsync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -7828,8 +7946,8 @@ Obtains a string based on the specified resource object. This API returns the re
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -7867,6 +7985,7 @@ try {
 
 ```
 
+<a id="getstringsync-3"></a>
 ## getStringSync
 
 ```TypeScript
@@ -7879,7 +7998,7 @@ Obtains a string based on the specified resource object and formats the string b
 
 **Deprecated since:** 20
 
-**Substitutes:** getStringSync(resId:
+**Substitutes:** [getStringSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringsync-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -7894,7 +8013,7 @@ Obtains a string based on the specified resource object and formats the string b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
+| args | Array&lt;string \| number&gt; | Yes | Arguments for formatting strings.<br>Supported value types include `%d`, `%f`, `%s`, `%%`, `%number$d`, `%number$f`, and `%number$s`.<br>Note: `%%` is converted to `%`. **number** in `%number$d` indicates the sequence number of the parameter in **args**.<br>For example, `%%d` is converted to `%d` after formatting, and `%1$d` indicates that the first parameter is used. |
 
 **Return value:**
 
@@ -7908,9 +8027,9 @@ Obtains a string based on the specified resource object and formats the string b
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
-| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-resid) | Failed to format the resource obtained based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
+| [9001007](../errorcode-resource-manager.md#9001007-failed-to-format-the-resource-obtained-based-on-the-current-id) | Failed to format the resource obtained based on the resource ID. |
 
 **Example**
 
@@ -7948,6 +8067,7 @@ try {
 
 ```
 
+<a id="getstringvalue"></a>
 ## getStringValue
 
 ```TypeScript
@@ -7960,7 +8080,7 @@ Obtains a string based on the specified resource object. This API uses an asynch
 
 **Deprecated since:** 20
 
-**Substitutes:** getStringValue(resId:
+**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -7975,7 +8095,7 @@ Obtains a string based on the specified resource object. This API uses an asynch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resource | [Resource](arkts-localization-resource-resource-i.md) | Yes | Resource object. |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the obtained string. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the obtained string. |
 
 **Error codes:**
 
@@ -7983,8 +8103,8 @@ Obtains a string based on the specified resource object. This API uses an asynch
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -8021,6 +8141,7 @@ this.context.resourceManager.getStringValue(resource, (error: BusinessError, val
 
 ```
 
+<a id="getstringvalue-1"></a>
 ## getStringValue
 
 ```TypeScript
@@ -8033,7 +8154,7 @@ Obtains a string based on the specified resource object. This API uses a promise
 
 **Deprecated since:** 20
 
-**Substitutes:** getStringValue(resId:
+**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -8053,7 +8174,7 @@ Obtains a string based on the specified resource object. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the obtained string. |
+| Promise&lt;string&gt; | Promise used to return the obtained string. |
 
 **Error codes:**
 
@@ -8061,8 +8182,8 @@ Obtains a string based on the specified resource object. This API uses a promise
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -8086,6 +8207,7 @@ this.context.resourceManager.getStringValue(resource, (error: BusinessError, val
 
 ```
 
+<a id="getstringvalue-2"></a>
 ## getStringValue
 
 ```TypeScript
@@ -8107,7 +8229,7 @@ Obtains a string based on the specified resource ID. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resId | number | Yes | Resource ID. |
-| callback | _AsyncCallback<string> | Yes | Callback used to return the obtained string. |
+| callback | _AsyncCallback&lt;string&gt; | Yes | Callback used to return the obtained string. |
 
 **Error codes:**
 
@@ -8115,9 +8237,10 @@ Obtains a string based on the specified resource ID. This API uses an asynchrono
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
+<a id="getstringvalue-3"></a>
 ## getStringValue
 
 ```TypeScript
@@ -8144,7 +8267,7 @@ Obtains a string based on the specified resource ID. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the obtained string. |
+| Promise&lt;string&gt; | Promise used to return the obtained string. |
 
 **Error codes:**
 
@@ -8152,8 +8275,8 @@ Obtains a string based on the specified resource ID. This API uses a promise to 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -8188,6 +8311,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getsymbol"></a>
 ## getSymbol
 
 ```TypeScript
@@ -8222,8 +8346,8 @@ Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/desig
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -8248,6 +8372,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="getsymbol-1"></a>
 ## getSymbol
 
 ```TypeScript
@@ -8260,7 +8385,7 @@ Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/desig
 
 **Deprecated since:** 20
 
-**Substitutes:** getSymbol(resId:
+**Substitutes:** [getSymbol(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getsymbol-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -8288,8 +8413,8 @@ Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/desig
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-invalid-resource-id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-specified-resource-id) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -8314,6 +8439,7 @@ try {
 
 ```
 
+<a id="getsymbolbyname"></a>
 ## getSymbolByName
 
 ```TypeScript
@@ -8348,8 +8474,8 @@ Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/desig
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-invalid-resource-name) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-specified-resource-name) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-cyclic-reference) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-matching-resource-not-found-based-on-the-passed-resource-name) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
 **Example**
 
@@ -8374,6 +8500,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="israwdir"></a>
 ## isRawDir
 
 ```TypeScript
@@ -8400,7 +8527,7 @@ Checks whether a path is a subdirectory in the **rawfile** directory. This API r
 
 | Type | Description |
 | --- | --- |
-| boolean | Whether the path is a subdirectory in the **rawfile** directory.  - **true**: The path is a subdirectory in the **rawfile** directory.  - **false**: The path is not a subdirectory in the **rawfile** directory. |
+| boolean | Whether the path is a subdirectory in the **rawfile** directory.   - **true**: The path is a subdirectory in the **rawfile** directory.   - **false**: The path is not a subdirectory in the **rawfile** directory. |
 
 **Error codes:**
 
@@ -8439,6 +8566,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -8468,6 +8596,7 @@ try {
 
 ```
 
+<a id="removeresource"></a>
 ## removeResource
 
 ```TypeScript
@@ -8523,6 +8652,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="updateoverrideconfiguration"></a>
 ## updateOverrideConfiguration
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="onbadgenumberquery"></a>
 ## onBadgeNumberQuery
 
 ```TypeScript
@@ -28,7 +29,7 @@ Registers a callback for querying the number of application badges.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (bundle: BundleOption) => Promise<number> | Yes | Number of target application badges. |
+| callback | (bundle: BundleOption) =&gt; Promise&lt;number&gt; | Yes | Number of target application badges. |
 
 **Error codes:**
 

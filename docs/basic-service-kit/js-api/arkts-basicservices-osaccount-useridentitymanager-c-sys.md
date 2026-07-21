@@ -16,6 +16,7 @@ Provides APIs for user IDM.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="addcredential"></a>
 ## addCredential
 
 ```TypeScript
@@ -96,6 +97,7 @@ userIDM.openSession((err: BusinessError, challenge: Uint8Array) => {
 
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -118,7 +120,7 @@ Cancels an entry based on the challenge value.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| challenge | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Challenge value. |
+| challenge | Uint8Array | Yes | Challenge value. |
 
 **Error codes:**
 
@@ -146,6 +148,7 @@ try {
 
 ```
 
+<a id="closesession"></a>
 ## closeSession
 
 ```TypeScript
@@ -190,6 +193,7 @@ userIDM.closeSession(accountId);
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -219,6 +223,7 @@ let userIDM = new osAccount.UserIdentityManager();
 
 ```
 
+<a id="delcred"></a>
 ## delCred
 
 ```TypeScript
@@ -241,8 +246,8 @@ Deletes user credential information.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| credentialId | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Credential ID. |
-| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Authentication token. |
+| credentialId | Uint8Array | Yes | Credential ID. |
+| token | Uint8Array | Yes | Authentication token. |
 | callback | [IIdmCallback](arkts-basicservices-osaccount-iidmcallback-i-sys.md) | Yes | Callback used to return the result. |
 
 **Error codes:**
@@ -279,6 +284,7 @@ try {
 
 ```
 
+<a id="deluser"></a>
 ## delUser
 
 ```TypeScript
@@ -301,7 +307,7 @@ Deletes a user with an authentication token. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Authentication token. |
+| token | Uint8Array | Yes | Authentication token. |
 | callback | [IIdmCallback](arkts-basicservices-osaccount-iidmcallback-i-sys.md) | Yes | Callback used to return the result. |
 
 **Error codes:**
@@ -335,6 +341,7 @@ try {
 
 ```
 
+<a id="getauthinfo"></a>
 ## getAuthInfo
 
 ```TypeScript
@@ -357,7 +364,7 @@ Obtains authentication information. This API uses an asynchronous callback to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<EnrolledCredInfo>> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is information about all registered credentials of the user. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;EnrolledCredInfo&gt;&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is information about all registered credentials of the user. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -389,6 +396,7 @@ try {
 
 ```
 
+<a id="getauthinfo-1"></a>
 ## getAuthInfo
 
 ```TypeScript
@@ -412,7 +420,7 @@ Obtains authentication information of the specified type. This API uses an async
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | authType | [AuthType](arkts-basicservices-osaccount-authtype-e-sys.md) | Yes | Authentication credential type. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<EnrolledCredInfo>> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the information about all enrolled credentials of the specified type. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;EnrolledCredInfo&gt;&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the information about all enrolled credentials of the specified type. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -446,6 +454,7 @@ try {
 
 ```
 
+<a id="getauthinfo-2"></a>
 ## getAuthInfo
 
 ```TypeScript
@@ -474,7 +483,7 @@ Obtains authentication information. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<EnrolledCredInfo>> | Promise used to return the information about all the enrolled credentials of the specified type. |
+| Promise&lt;Array&lt;EnrolledCredInfo&gt;&gt; | Promise used to return the information about all the enrolled credentials of the specified type. |
 
 **Error codes:**
 
@@ -505,6 +514,7 @@ try {
 
 ```
 
+<a id="getauthinfo-3"></a>
 ## getAuthInfo
 
 ```TypeScript
@@ -533,7 +543,7 @@ Obtains authentication information. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<EnrolledCredInfo>> | Promise used to return the information about all the enrolled credentials of the specified type. |
+| Promise&lt;Array&lt;EnrolledCredInfo&gt;&gt; | Promise used to return the information about all the enrolled credentials of the specified type. |
 
 **Error codes:**
 
@@ -569,6 +579,7 @@ try {
 
 ```
 
+<a id="getenrolledid"></a>
 ## getEnrolledId
 
 ```TypeScript
@@ -598,7 +609,7 @@ Obtains the ID of the enrolled credential based on the credential type and accou
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the credential ID obtained. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the credential ID obtained. |
 
 **Error codes:**
 
@@ -634,6 +645,7 @@ try {
 
 ```
 
+<a id="offcredentialchanged"></a>
 ## offCredentialChanged
 
 ```TypeScript
@@ -656,7 +668,7 @@ Unsubscribes from credential change events. If no callback is not specified, thi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CredentialChangeInfo> | No | Callback used to listen for the credential change events.The default value is **undefined**, indicating that all subscription records are unregistered.If the value is not undefined, only the subscription records related to the specified callback are unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CredentialChangeInfo&gt; | No | Callback used to listen for the credential change events.The default value is **undefined**, indicating that all subscription records are unregistered.If the value is not undefined, only the subscription records related to the specified callback are unregistered. |
 
 **Error codes:**
 
@@ -701,6 +713,7 @@ try {
 
 ```
 
+<a id="oncredentialchanged"></a>
 ## onCredentialChanged
 
 ```TypeScript
@@ -724,7 +737,7 @@ Subscribes to one or more credential change events. This API uses a callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | credentialTypes | [AuthType](arkts-basicservices-osaccount-authtype-e-sys.md)[] | Yes | Credential types subscribed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CredentialChangeInfo> | Yes | Callback used to listen for the credential change events. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CredentialChangeInfo&gt; | Yes | Callback used to listen for the credential change events. |
 
 **Error codes:**
 
@@ -763,6 +776,7 @@ try {
 
 ```
 
+<a id="opensession"></a>
 ## openSession
 
 ```TypeScript
@@ -785,7 +799,7 @@ Opens a session to obtain the challenge value. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Uint8Array> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the challenge value obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Uint8Array&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the challenge value obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -817,6 +831,7 @@ try {
 
 ```
 
+<a id="opensession-1"></a>
 ## openSession
 
 ```TypeScript
@@ -845,7 +860,7 @@ Opens a session. This API returns a challenge value, which can be used to determ
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the challenge value obtained. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the challenge value obtained. |
 
 **Error codes:**
 
@@ -877,6 +892,7 @@ try {
 
 ```
 
+<a id="updatecredential"></a>
 ## updateCredential
 
 ```TypeScript

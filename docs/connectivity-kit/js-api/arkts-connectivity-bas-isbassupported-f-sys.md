@@ -6,6 +6,7 @@
 import { bas } from '@kit.ConnectivityKit';
 ```
 
+<a id="isbassupported"></a>
 ## isBasSupported
 
 ```TypeScript

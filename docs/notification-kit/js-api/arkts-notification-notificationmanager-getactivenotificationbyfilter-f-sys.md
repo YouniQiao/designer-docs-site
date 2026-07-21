@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getactivenotificationbyfilter"></a>
 ## getActiveNotificationByFilter
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains information about the common live view that matches the specified filter
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | filter | [NotificationFilter](arkts-notification-notificationrequest-notificationfilter-i-sys.md) | Yes | Filter criteria for querying the common live view. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NotificationRequest> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NotificationRequest&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ notificationManager.getActiveNotificationByFilter(filter, getActiveNotificationB
 ```
 
 
+<a id="getactivenotificationbyfilter-1"></a>
 ## getActiveNotificationByFilter
 
 ```TypeScript
@@ -97,7 +99,7 @@ Obtains information about the common live view that matches the specified filter
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NotificationRequest> | Promise used to return the result. |
+| Promise&lt;NotificationRequest&gt; | Promise used to return the result. |
 
 **Error codes:**
 

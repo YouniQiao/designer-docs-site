@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="switchcall"></a>
 ## switchCall
 
 ```TypeScript
@@ -29,7 +30,7 @@ Switch call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of switchCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of switchCall. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ call.switchCall(1, (err: BusinessError) => {
 ```
 
 
+<a id="switchcall-1"></a>
 ## switchCall
 
 ```TypeScript
@@ -87,7 +89,7 @@ Switch call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the switchCall. |
+| Promise&lt;void&gt; | The promise returned by the switchCall. |
 
 **Error codes:**
 

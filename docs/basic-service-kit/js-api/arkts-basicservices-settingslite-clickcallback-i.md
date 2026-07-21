@@ -14,6 +14,7 @@ Defines a callback used to return whether the application started by double-pres
 import { settingsLite } from '@kit.BasicServicesKit';
 ```
 
+<a id="onresult"></a>
 ## onResult
 
 ```TypeScript

@@ -10,6 +10,7 @@ Agent extension connect callback.
 
 **System API:** This is a system API.
 
+<a id="onauth"></a>
 ## onAuth
 
 ```TypeScript
@@ -34,6 +35,7 @@ Called back when authentication is received.
 | --- | --- | --- | --- |
 | handshakeData | string | Yes | Indicates the received handshake data. |
 
+<a id="ondata"></a>
 ## onData
 
 ```TypeScript
@@ -58,6 +60,7 @@ Called back when data is received.
 | --- | --- | --- | --- |
 | data | string | Yes | Indicates the received data. |
 
+<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript

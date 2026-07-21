@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="requestaccessoryright"></a>
 ## requestAccessoryRight
 
 ```TypeScript
@@ -30,7 +31,7 @@ Requests the permission to access a USB accessory for a specified application. T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the application result. The value **true** indicates that the device access permissions are granted; **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the application result. The value **true** indicates that the device access permissions are granted; **false** indicates the opposite. |
 
 **Error codes:**
 

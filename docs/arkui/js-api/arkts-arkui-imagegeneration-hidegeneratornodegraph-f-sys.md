@@ -6,6 +6,7 @@
 import { imageGeneration } from '@kit.ArkUI';
 ```
 
+<a id="hidegeneratornodegraph"></a>
 ## hideGeneratorNodeGraph
 
 ```TypeScript
@@ -34,5 +35,5 @@ Hide the AI node graph Sheet.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the result of hide operation. |
+| Promise&lt;void&gt; | Returns the result of hide operation. |
 

@@ -1,5 +1,6 @@
 # killProcessWithAccount (System API)
 
+<a id="killprocesswithaccount"></a>
 ## killProcessWithAccount
 
 ```TypeScript
@@ -33,7 +34,7 @@ Kill process with account.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Example**
 
@@ -54,6 +55,7 @@ appManager.killProcessWithAccount(bundleName, accountId)
 ```
 
 
+<a id="killprocesswithaccount-1"></a>
 ## killProcessWithAccount
 
 ```TypeScript
@@ -82,7 +84,7 @@ Kill process with account.
 | --- | --- | --- | --- |
 | bundleName | string | Yes | The process bundle name. |
 | accountId | number | Yes | The account id. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Cut off the callback function of the account process. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Cut off the callback function of the account process. |
 
 **Example**
 

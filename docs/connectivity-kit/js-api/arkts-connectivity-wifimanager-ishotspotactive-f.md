@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="ishotspotactive"></a>
 ## isHotspotActive
 
 ```TypeScript

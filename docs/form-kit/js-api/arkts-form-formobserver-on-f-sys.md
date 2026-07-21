@@ -6,6 +6,7 @@
 import { formObserver } from '@kit.FormKit';
 ```
 
+<a id="on"></a>
 ## on('formAdd')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Listens to the event of add form.<p>You can use this method to listen to the eve
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'formAdd' | Yes | Indicates event type. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -39,6 +40,7 @@ Listens to the event of add form.<p>You can use this method to listen to the eve
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-1"></a>
 ## on('formAdd')
 
 ```TypeScript
@@ -63,7 +65,7 @@ Listens to the event of add form.<p>You can use this method to listen to the eve
 | --- | --- | --- | --- |
 | type | 'formAdd' | Yes | Indicates event type. |
 | hostBundleName | string | Yes | Indicates the bundle name of the form host application. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -73,6 +75,7 @@ Listens to the event of add form.<p>You can use this method to listen to the eve
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-2"></a>
 ## on('formRemove')
 
 ```TypeScript
@@ -96,7 +99,7 @@ Listens to the event of remove form.<p>You can use this method to listen to the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'formRemove' | Yes | Indicates event type. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -106,6 +109,7 @@ Listens to the event of remove form.<p>You can use this method to listen to the 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-3"></a>
 ## on('formRemove')
 
 ```TypeScript
@@ -130,7 +134,7 @@ Listens to the event of remove form.<p>You can use this method to listen to the 
 | --- | --- | --- | --- |
 | type | 'formRemove' | Yes | Indicates event type. |
 | hostBundleName | string | Yes | Indicates the bundle name of the form host application. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -140,6 +144,7 @@ Listens to the event of remove form.<p>You can use this method to listen to the 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-4"></a>
 ## on('notifyVisible')
 
 ```TypeScript
@@ -163,7 +168,7 @@ Listens to the event of notifyVisible type change.<p>You can use this method to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'notifyVisible' | Yes | Indicates event type. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<formInfo.RunningFormInfo>> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -173,6 +178,7 @@ Listens to the event of notifyVisible type change.<p>You can use this method to 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-5"></a>
 ## on('notifyVisible')
 
 ```TypeScript
@@ -209,7 +215,7 @@ Listens to the event of notifyVisible type change.<p>You can use this method to 
 | --- | --- | --- | --- |
 | type | 'notifyVisible' | Yes | Indicates event type. |
 | hostBundleName | string | Yes | Indicates the bundle name of the form host application. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<formInfo.RunningFormInfo>> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -219,6 +225,7 @@ Listens to the event of notifyVisible type change.<p>You can use this method to 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-6"></a>
 ## on('notifyInvisible')
 
 ```TypeScript
@@ -242,7 +249,7 @@ Listens to the event of notifyInvisible type change.<p>You can use this method t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'notifyInvisible' | Yes | Indicates event type. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<formInfo.RunningFormInfo>> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -252,6 +259,7 @@ Listens to the event of notifyInvisible type change.<p>You can use this method t
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-7"></a>
 ## on('notifyInvisible')
 
 ```TypeScript
@@ -288,7 +296,7 @@ Listens to the event of notifyInvisible type change.<p>You can use this method t
 | --- | --- | --- | --- |
 | type | 'notifyInvisible' | Yes | Indicates event type. |
 | hostBundleName | string | Yes | Indicates the bundle name of the form host application. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<formInfo.RunningFormInfo>> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -298,6 +306,7 @@ Listens to the event of notifyInvisible type change.<p>You can use this method t
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-8"></a>
 ## on('router')
 
 ```TypeScript
@@ -321,7 +330,7 @@ Router event listening in registered form.<p>This interface requires permission 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'router' | Yes | Indicates event type. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -331,6 +340,7 @@ Router event listening in registered form.<p>This interface requires permission 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-9"></a>
 ## on('router')
 
 ```TypeScript
@@ -355,7 +365,7 @@ Router event listening in registered form.<p>This interface requires permission 
 | --- | --- | --- | --- |
 | type | 'router' | Yes | Indicates event type. |
 | hostBundleName | string | Yes | Indicates the bundle name of the form host application. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -365,6 +375,7 @@ Router event listening in registered form.<p>This interface requires permission 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-10"></a>
 ## on('message')
 
 ```TypeScript
@@ -388,7 +399,7 @@ Message event listening in registered form.<p>This interface requires permission
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates event type. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -398,6 +409,7 @@ Message event listening in registered form.<p>This interface requires permission
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-11"></a>
 ## on('message')
 
 ```TypeScript
@@ -422,7 +434,7 @@ Message event listening in registered form.<p>This interface requires permission
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates event type. |
 | hostBundleName | string | Yes | Indicates the bundle name of the form host application. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -432,6 +444,7 @@ Message event listening in registered form.<p>This interface requires permission
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-12"></a>
 ## on('call')
 
 ```TypeScript
@@ -455,7 +468,7 @@ Call event listening in registered form.<p>This interface requires permission to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'call' | Yes | Indicates event type. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 
@@ -465,6 +478,7 @@ Call event listening in registered form.<p>This interface requires permission to
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 
 
+<a id="on-13"></a>
 ## on('call')
 
 ```TypeScript
@@ -489,7 +503,7 @@ Call event listening in registered form.<p>This interface requires permission to
 | --- | --- | --- | --- |
 | type | 'call' | Yes | Indicates event type. |
 | hostBundleName | string | Yes | Indicates the bundle name of the form host application. |
-| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<formInfo.RunningFormInfo> | Yes | The callback is used to return the running form info. |
+| observerCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;formInfo.RunningFormInfo&gt; | Yes | The callback is used to return the running form info. |
 
 **Error codes:**
 

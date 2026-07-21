@@ -6,6 +6,7 @@
 import { appMemoryOptimizer } from '@kit.AbilityKit';
 ```
 
+<a id="evictfilepages"></a>
 ## evictFilePages
 
 ```TypeScript
@@ -26,13 +27,13 @@ Sends a request to the system to release file page cache of specified files. The
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fileNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of file names for which file page cache needs to be released.File names must end with .so, .hap, or .hsp. |
+| fileNames | Array&lt;string&gt; | Yes | Array of file names for which file page cache needs to be released.File names must end with .so, .hap, or .hsp. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

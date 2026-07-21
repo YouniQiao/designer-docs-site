@@ -6,6 +6,7 @@
 import { systemDateTime } from '@kit.BasicServicesKit';
 ```
 
+<a id="updatentptime"></a>
 ## updateNtpTime
 
 ```TypeScript
@@ -26,7 +27,7 @@ Updates the NTP time from the NTP server This API returns the result asynchronou
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

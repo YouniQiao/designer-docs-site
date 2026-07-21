@@ -6,6 +6,7 @@
 import { bundleMonitor } from '@kit.AbilityKit';
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -29,7 +30,7 @@ Unregister to monitor the installation status
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [BundleChangedEvent](arkts-ability-bundlemonitor-bundlechangedevent-t-sys.md) | Yes | -type Indicates the command should be implement. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BundleChangedInfo> | No | Indicates the callback to be unregister. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BundleChangedInfo&gt; | No | Indicates the callback to be unregister. |
 
 **Error codes:**
 

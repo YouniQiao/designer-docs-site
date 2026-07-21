@@ -14,6 +14,7 @@ Provides APIs to check different types of built-in objects, such as ArrayBuffer,
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -37,6 +38,7 @@ let type = new util.types();
 
 ```
 
+<a id="isanyarraybuffer"></a>
 ## isAnyArrayBuffer
 
 ```TypeScript
@@ -57,7 +59,7 @@ Checks whether the value is of the ArrayBuffer or SharedArrayBuffer type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -75,6 +77,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isargumentsobject"></a>
 ## isArgumentsObject
 
 ```TypeScript
@@ -95,7 +98,7 @@ Checks whether the value is an **arguments** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -116,6 +119,7 @@ let f = foo();
 
 ```
 
+<a id="isarraybuffer"></a>
 ## isArrayBuffer
 
 ```TypeScript
@@ -136,7 +140,7 @@ Checks whether the value is of the ArrayBuffer type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -154,6 +158,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isarraybufferview"></a>
 ## isArrayBufferView
 
 ```TypeScript
@@ -174,7 +179,7 @@ Checks whether the value is of the ArrayBufferView type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -192,6 +197,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isasyncfunction"></a>
 ## isAsyncFunction
 
 ```TypeScript
@@ -212,7 +218,7 @@ Checks whether the value is an asynchronous function.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -230,6 +236,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isbigint64array"></a>
 ## isBigInt64Array
 
 ```TypeScript
@@ -250,7 +257,7 @@ Checks whether the value is of the BigInt64Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -268,6 +275,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isbiguint64array"></a>
 ## isBigUint64Array
 
 ```TypeScript
@@ -288,7 +296,7 @@ Checks whether the value is of the BigUint64Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -306,6 +314,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isbooleanobject"></a>
 ## isBooleanObject
 
 ```TypeScript
@@ -332,7 +341,7 @@ Checks whether the value is of the Boolean type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -350,6 +359,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isboxedprimitive"></a>
 ## isBoxedPrimitive
 
 ```TypeScript
@@ -376,7 +386,7 @@ Checks whether the value is of the Boolean, Number, String, or Symbol type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -394,6 +404,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isdataview"></a>
 ## isDataView
 
 ```TypeScript
@@ -414,7 +425,7 @@ Checks whether the value is of the DataView type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -433,6 +444,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isdate"></a>
 ## isDate
 
 ```TypeScript
@@ -453,7 +465,7 @@ Checks whether the value is of the Date type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -471,6 +483,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isexternal"></a>
 ## isExternal
 
 ```TypeScript
@@ -491,7 +504,7 @@ Checks whether the value is of the native external type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -549,6 +562,7 @@ console.info("result01 = " + result01);
 
 ```
 
+<a id="isfloat32array"></a>
 ## isFloat32Array
 
 ```TypeScript
@@ -569,7 +583,7 @@ Checks whether the value is of the Float32Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -587,6 +601,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isfloat64array"></a>
 ## isFloat64Array
 
 ```TypeScript
@@ -607,7 +622,7 @@ Checks whether the value is of the Float64Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -625,6 +640,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isgeneratorfunction"></a>
 ## isGeneratorFunction
 
 ```TypeScript
@@ -645,7 +661,7 @@ Checks whether the value is a generator function.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -671,6 +687,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isgeneratorobject"></a>
 ## isGeneratorObject
 
 ```TypeScript
@@ -691,7 +708,7 @@ Checks whether the value is a generator object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -718,6 +735,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isint16array"></a>
 ## isInt16Array
 
 ```TypeScript
@@ -738,7 +756,7 @@ Checks whether the value is of the Int16Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -756,6 +774,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isint32array"></a>
 ## isInt32Array
 
 ```TypeScript
@@ -776,7 +795,7 @@ Checks whether the value is of the Int32Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -794,6 +813,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isint8array"></a>
 ## isInt8Array
 
 ```TypeScript
@@ -814,7 +834,7 @@ Checks whether the value is of the Int8Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -832,6 +852,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="ismap"></a>
 ## isMap
 
 ```TypeScript
@@ -852,7 +873,7 @@ Checks whether the value is of the Map type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -870,6 +891,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="ismapiterator"></a>
 ## isMapIterator
 
 ```TypeScript
@@ -890,7 +912,7 @@ Checks whether the value is of the MapIterator type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -909,6 +931,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="ismodulenamespaceobject"></a>
 ## isModuleNamespaceObject
 
 ```TypeScript
@@ -929,7 +952,7 @@ Checks whether the value is a module namespace object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -957,6 +980,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isnativeerror"></a>
 ## isNativeError
 
 ```TypeScript
@@ -977,7 +1001,7 @@ Checks whether the value is of the Error type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -995,6 +1019,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isnumberobject"></a>
 ## isNumberObject
 
 ```TypeScript
@@ -1021,7 +1046,7 @@ Checks whether the value is of the Number type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1039,6 +1064,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="ispromise"></a>
 ## isPromise
 
 ```TypeScript
@@ -1059,7 +1085,7 @@ Checks whether the value is a promise.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1077,6 +1103,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isproxy"></a>
 ## isProxy
 
 ```TypeScript
@@ -1097,7 +1124,7 @@ Checks whether the value is a proxy.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1119,6 +1146,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isregexp"></a>
 ## isRegExp
 
 ```TypeScript
@@ -1139,7 +1167,7 @@ Checks whether the value is of the RegExp type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1157,6 +1185,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isset"></a>
 ## isSet
 
 ```TypeScript
@@ -1177,7 +1206,7 @@ Checks whether the value is of the Set type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1196,6 +1225,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="issetiterator"></a>
 ## isSetIterator
 
 ```TypeScript
@@ -1216,7 +1246,7 @@ Checks whether the value is of the SetIterator type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1235,6 +1265,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="issharedarraybuffer"></a>
 ## isSharedArrayBuffer
 
 ```TypeScript
@@ -1255,7 +1286,7 @@ Checks whether the value is of the SharedArrayBuffer type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1273,6 +1304,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isstringobject"></a>
 ## isStringObject
 
 ```TypeScript
@@ -1299,7 +1331,7 @@ Checks whether the value is a string object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1317,6 +1349,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="issymbolobject"></a>
 ## isSymbolObject
 
 ```TypeScript
@@ -1343,7 +1376,7 @@ Checks whether the value is a symbol object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1369,6 +1402,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="istypedarray"></a>
 ## isTypedArray
 
 ```TypeScript
@@ -1389,7 +1423,7 @@ Checks whether the value is of the TypedArray type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1407,6 +1441,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isuint16array"></a>
 ## isUint16Array
 
 ```TypeScript
@@ -1427,7 +1462,7 @@ Checks whether the value is of the Uint16Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1445,6 +1480,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isuint32array"></a>
 ## isUint32Array
 
 ```TypeScript
@@ -1465,7 +1501,7 @@ Checks whether the value is of the Uint32Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1483,6 +1519,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isuint8array"></a>
 ## isUint8Array
 
 ```TypeScript
@@ -1503,7 +1540,7 @@ Checks whether the value is of the Uint8Array type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1521,6 +1558,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isuint8clampedarray"></a>
 ## isUint8ClampedArray
 
 ```TypeScript
@@ -1541,7 +1579,7 @@ Checks whether the value is of the Uint8ClampedArray type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1559,6 +1597,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isweakmap"></a>
 ## isWeakMap
 
 ```TypeScript
@@ -1579,7 +1618,7 @@ Checks whether the value is of the WeakMap type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 
@@ -1598,6 +1637,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isweakset"></a>
 ## isWeakSet
 
 ```TypeScript
@@ -1618,7 +1658,7 @@ Checks whether the value is of the WeakSet type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object to check. |
+| value | Object | Yes | Object to check. |
 
 **Return value:**
 

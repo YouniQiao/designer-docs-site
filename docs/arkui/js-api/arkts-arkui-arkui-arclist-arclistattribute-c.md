@@ -16,6 +16,7 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 import { ArcListItemAttribute, ArcList, ArcListItem, ArcListAttribute } from '@kit.ArkUI';
 ```
 
+<a id="cachedcount"></a>
 ## cachedCount
 
 ```TypeScript
@@ -36,7 +37,7 @@ Sets the number of arc list items to be preloaded (cached). In a lazy loading sc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| count | [Optional](../arkts-components/arkts-arkui-optional-t.md)<number> | Yes | Number of list items to preload.<br/>Default value: number of nodes visible on the screen, with the maximum value of 16.<br/>Value range: [0, +∞) |
+| count | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Number of list items to preload.<br/>Default value: number of nodes visible on the screen, with the maximum value of 16.<br/>Value range: [0, +∞) |
 
 **Return value:**
 
@@ -44,6 +45,7 @@ Sets the number of arc list items to be preloaded (cached). In a lazy loading sc
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="chainanimation"></a>
 ## chainAnimation
 
 ```TypeScript
@@ -64,7 +66,7 @@ Sets whether to enable chained animations, which provide a visually connected, o
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable chained animations.<br/>**false** (default): Chained animations are disabled. **true**: Chained animations are enabled. |
+| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable chained animations.<br/>**false** (default): Chained animations are disabled. **true**: Chained animations are enabled. |
 
 **Return value:**
 
@@ -72,6 +74,7 @@ Sets whether to enable chained animations, which provide a visually connected, o
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="childrenmainsize"></a>
 ## childrenMainSize
 
 ```TypeScript
@@ -92,7 +95,7 @@ Sets the size information of the child components of the **ArcList** component a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| size | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ChildrenMainSize> | Yes | Precise size information for all child components along the main axis. This ensures accurate scrolling positions in scenarios where child components have varying sizes, are added or removed, or when APIs like **scrollToIndex** are used. It guarantees that **scrollTo** can accurately navigate to the specified position, **currentOffset** or **offset** can accurately reflect the current scrolling position, and the built-in scrollbar can move smoothly without any jumps or abrupt changes. The **offset** API is added from API version 23.<br/>**NOTE**<br/>The provided sizes must match the actual sizes of the child components.Any changes to the sizes, or any additions or removals of child components, must be notified to the **ArcList** component through the **ChildrenMainSize** object. |
+| size | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ChildrenMainSize&gt; | Yes | Precise size information for all child components along the main axis. This ensures accurate scrolling positions in scenarios where child components have varying sizes, are added or removed, or when APIs like **scrollToIndex** are used. It guarantees that **scrollTo** can accurately navigate to the specified position, **currentOffset** or **offset** can accurately reflect the current scrolling position, and the built-in scrollbar can move smoothly without any jumps or abrupt changes. The **offset** API is added from API version 23.<br/>**NOTE**<br/>The provided sizes must match the actual sizes of the child components.Any changes to the sizes, or any additions or removals of child components, must be notified to the **ArcList** component through the **ChildrenMainSize** object. |
 
 **Return value:**
 
@@ -100,6 +103,7 @@ Sets the size information of the child components of the **ArcList** component a
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="digitalcrownsensitivity"></a>
 ## digitalCrownSensitivity
 
 ```TypeScript
@@ -120,7 +124,7 @@ Sets the sensitivity of the digital crown's event response.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sensitivity | [Optional](../arkts-components/arkts-arkui-optional-t.md)<CrownSensitivity> | Yes | Sensitivity of the digital crown's event response.<br/>Default value: **CrownSensitivity.MEDIUM**, indicating moderate response speed. |
+| sensitivity | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;CrownSensitivity&gt; | Yes | Sensitivity of the digital crown's event response.<br/>Default value: **CrownSensitivity.MEDIUM**, indicating moderate response speed. |
 
 **Return value:**
 
@@ -128,6 +132,7 @@ Sets the sensitivity of the digital crown's event response.
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="enablescrollinteraction"></a>
 ## enableScrollInteraction
 
 ```TypeScript
@@ -148,7 +153,7 @@ Sets whether to enable scroll gestures.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable scroll gestures. With the value **true**, scrolling via finger or mouse is enabled. With the value **false**, scrolling via finger or mouse is disabled, but this does not affect the scrolling APIs of the **Scroller**.<br/>Default value: **true** |
+| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable scroll gestures. With the value **true**, scrolling via finger or mouse is enabled. With the value **false**, scrolling via finger or mouse is disabled, but this does not affect the scrolling APIs of the **Scroller**.<br/>Default value: **true** |
 
 **Return value:**
 
@@ -156,6 +161,7 @@ Sets whether to enable scroll gestures.
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="fadingedge"></a>
 ## fadingEdge
 
 ```TypeScript
@@ -176,7 +182,7 @@ Sets whether to enable the edge fading effect.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable the edge fading effect.<br/>When **fadingEdge** is set to **true**, it overrides the **.overlay()** attribute of the component.<br/>With **fadingEdge** set to **true**, avoid setting background-related attributes on the component, as this may affect the display of the fading effect.<br/>When **fadingEdge** is set to **true**, the component is clipped to the boundary. If the **clip** attribute of the component is set to **false**, the setting does not take effect.<br/>With the value **true**, the edge fading effect is enabled. With the value **false**, the edge fading effect is disabled.<br/>Default value: **false**. |
+| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable the edge fading effect.<br/>When **fadingEdge** is set to **true**, it overrides the **.overlay()** attribute of the component.<br/>With **fadingEdge** set to **true**, avoid setting background-related attributes on the component, as this may affect the display of the fading effect.<br/>When **fadingEdge** is set to **true**, the component is clipped to the boundary. If the **clip** attribute of the component is set to **false**, the setting does not take effect.<br/>With the value **true**, the edge fading effect is enabled. With the value **false**, the edge fading effect is disabled.<br/>Default value: **false**. |
 
 **Return value:**
 
@@ -184,6 +190,7 @@ Sets whether to enable the edge fading effect.
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="flingspeedlimit"></a>
 ## flingSpeedLimit
 
 ```TypeScript
@@ -204,7 +211,7 @@ Sets the maximum initial speed for inertial scrolling after a fling gesture. If 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| speed | [Optional](../arkts-components/arkts-arkui-optional-t.md)<number> | Yes | Maximum initial speed for inertial scrolling.<br/>Default value: **9000**.<br/>Unit: vp/s.<br/>Value range: (0, +∞) |
+| speed | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Maximum initial speed for inertial scrolling.<br/>Default value: **9000**.<br/>Unit: vp/s.<br/>Value range: (0, +∞) |
 
 **Return value:**
 
@@ -212,6 +219,7 @@ Sets the maximum initial speed for inertial scrolling after a fling gesture. If 
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="friction"></a>
 ## friction
 
 ```TypeScript
@@ -232,7 +240,7 @@ Sets the friction coefficient. It applies only to gestures in the scrolling area
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| friction | [Optional](../arkts-components/arkts-arkui-optional-t.md)<number> | Yes | Friction coefficient.<br/>Default value: **0.8**<br/>Value range: (0, +∞) |
+| friction | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Friction coefficient.<br/>Default value: **0.8**<br/>Value range: (0, +∞) |
 
 **Return value:**
 
@@ -240,6 +248,7 @@ Sets the friction coefficient. It applies only to gestures in the scrolling area
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="ondidscroll"></a>
 ## onDidScroll
 
 ```TypeScript
@@ -260,7 +269,7 @@ Triggered when the list scrolls. The return value is the offset amount by which 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<OnScrollCallback> | Yes | Callback triggered when the list scrolls. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;OnScrollCallback&gt; | Yes | Callback triggered when the list scrolls. |
 
 **Return value:**
 
@@ -268,6 +277,7 @@ Triggered when the list scrolls. The return value is the offset amount by which 
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onreachend"></a>
 ## onReachEnd
 
 ```TypeScript
@@ -288,7 +298,7 @@ Triggered when the list reaches the end position.If the edge scrolling effect is
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<VoidCallback> | Yes | Callback triggered when the list reaches the end position. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;VoidCallback&gt; | Yes | Callback triggered when the list reaches the end position. |
 
 **Return value:**
 
@@ -296,6 +306,7 @@ Triggered when the list reaches the end position.If the edge scrolling effect is
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onreachstart"></a>
 ## onReachStart
 
 ```TypeScript
@@ -316,7 +327,7 @@ Triggered when the list reaches the start position.This event is triggered durin
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<VoidCallback> | Yes | Callback triggered when the list reaches the start position. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;VoidCallback&gt; | Yes | Callback triggered when the list reaches the start position. |
 
 **Return value:**
 
@@ -324,6 +335,7 @@ Triggered when the list reaches the start position.This event is triggered durin
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onscrollindex"></a>
 ## onScrollIndex
 
 ```TypeScript
@@ -344,7 +356,7 @@ Triggered when a child component enters or leaves the visible area of the **ArcL
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ArcScrollIndexHandler> | Yes | Callback triggered when a child component enters or leaves the visible area of the **ArcList** component. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ArcScrollIndexHandler&gt; | Yes | Callback triggered when a child component enters or leaves the visible area of the **ArcList** component. |
 
 **Return value:**
 
@@ -352,6 +364,7 @@ Triggered when a child component enters or leaves the visible area of the **ArcL
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onscrollstart"></a>
 ## onScrollStart
 
 ```TypeScript
@@ -372,7 +385,7 @@ Triggered when the list starts scrolling initiated by the user's finger dragging
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<VoidCallback> | Yes | Callback triggered when the list starts scrolling. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;VoidCallback&gt; | Yes | Callback triggered when the list starts scrolling. |
 
 **Return value:**
 
@@ -380,6 +393,7 @@ Triggered when the list starts scrolling initiated by the user's finger dragging
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onscrollstop"></a>
 ## onScrollStop
 
 ```TypeScript
@@ -400,7 +414,7 @@ Triggered when the list stops scrolling after the user's finger leaves the scree
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<VoidCallback> | Yes | Callback triggered when the list stops scrolling. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;VoidCallback&gt; | Yes | Callback triggered when the list stops scrolling. |
 
 **Return value:**
 
@@ -408,6 +422,7 @@ Triggered when the list stops scrolling after the user's finger leaves the scree
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onwillscroll"></a>
 ## onWillScroll
 
 ```TypeScript
@@ -428,7 +443,7 @@ Triggered before each frame during list scrolling. The callback returns the offs
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<OnWillScrollCallback> | Yes | Callback triggered before each frame during list scrolling. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;OnWillScrollCallback&gt; | Yes | Callback triggered before each frame during list scrolling. |
 
 **Return value:**
 
@@ -436,6 +451,7 @@ Triggered before each frame during list scrolling. The callback returns the offs
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="scrollbar"></a>
 ## scrollBar
 
 ```TypeScript
@@ -456,7 +472,7 @@ Sets the state of the scrollbar.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| status | [Optional](../arkts-components/arkts-arkui-optional-t.md)<BarState> | Yes | State of the scrollbar.<br/>Default value: **BarState.Auto** |
+| status | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;BarState&gt; | Yes | State of the scrollbar.<br/>Default value: **BarState.Auto** |
 
 **Return value:**
 
@@ -464,6 +480,7 @@ Sets the state of the scrollbar.
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="scrollbarcolor"></a>
 ## scrollBarColor
 
 ```TypeScript
@@ -484,7 +501,7 @@ Sets the color of the scrollbar.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ColorMetrics> | Yes | Color of the scrollbar.<br/>Default value: **ColorMetrics.numeric(0xA9FFFFFF)** |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ColorMetrics&gt; | Yes | Color of the scrollbar.<br/>Default value: **ColorMetrics.numeric(0xA9FFFFFF)** |
 
 **Return value:**
 
@@ -492,6 +509,7 @@ Sets the color of the scrollbar.
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="scrollbarwidth"></a>
 ## scrollBarWidth
 
 ```TypeScript
@@ -512,7 +530,7 @@ Sets the width of the scrollbar. Once the width is set, the scrollbar will use t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| width | [Optional](../arkts-components/arkts-arkui-optional-t.md)<LengthMetrics> | Yes | Width of the scrollbar.<br/>Default value: **LengthMetrics.vp(24)**.<br/>Minimum value: **LengthMetrics.vp(4)**<br>Unit: vp |
+| width | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;LengthMetrics&gt; | Yes | Width of the scrollbar.<br/>Default value: **LengthMetrics.vp(24)**.<br/>Minimum value: **LengthMetrics.vp(4)**<br>Unit: vp |
 
 **Return value:**
 
@@ -520,6 +538,7 @@ Sets the width of the scrollbar. Once the width is set, the scrollbar will use t
 | --- | --- |
 | [ArcListAttribute](arkts-arkui-arkui-arclist-arclistattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="space"></a>
 ## space
 
 ```TypeScript
@@ -540,7 +559,7 @@ Sets the spacing between list items.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| space | [Optional](../arkts-components/arkts-arkui-optional-t.md)<LengthMetrics> | Yes | Spacing between list items.<br/>Default value: **LengthMetrics.vp(0)**.<br/>Child components of **ArcList** whose visibility attribute is set to **None** are not displayed, but the spacing above and below them still takes effect. |
+| space | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;LengthMetrics&gt; | Yes | Spacing between list items.<br/>Default value: **LengthMetrics.vp(0)**.<br/>Child components of **ArcList** whose visibility attribute is set to **None** are not displayed, but the spacing above and below them still takes effect. |
 
 **Return value:**
 

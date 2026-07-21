@@ -6,6 +6,7 @@
 import { netFirewall } from '@kit.NetworkKit';
 ```
 
+<a id="getnetfirewallrules"></a>
 ## getNetFirewallRules
 
 ```TypeScript
@@ -33,7 +34,7 @@ Get firewall rules by userId, and it is necessary to specify the pagination quer
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FirewallRulePage> | Paginated firewall rule list. |
+| Promise&lt;FirewallRulePage&gt; | Paginated firewall rule list. |
 
 **Error codes:**
 

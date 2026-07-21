@@ -1,6 +1,6 @@
 # Sign
 
-Provides APIs for signing. Before using any API of the **Sign** class, you must create a **Sign** instance by using [createSign(algName: string): Sign](arkts-cryptoarchitecture-cryptoframework-createsign-f.md#createsign-1). Invoke **init()**, **update()**, and **sign()** in this class in sequence to complete the signing operation. For details about the sample code, see [Signing and Signature Verification with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md).
+Provides APIs for signing. Before using any API of the **Sign** class, you must create a **Sign** instance by using [createSign(algName: string): Sign](arkts-cryptoarchitecture-cryptoframework-createsign-f.md#createsign-1). Invoke **init()**, **update()**, and **sign()** in this class in sequence to complete the signing operation. For details about the sample code, see [Signing and Signature Verification with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md).
 
 The **Sign** class does not support repeated initialization. When a new key is used for signing, you must create a new **Sign** instance and call **init()** for initialization.
 
@@ -28,6 +28,7 @@ If the DSA algorithm is used for signing and the digest algorithm is **NoHash**,
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="getsignspec"></a>
 ## getSignSpec
 
 ```TypeScript
@@ -82,6 +83,7 @@ function testGetSignSpec() {
 
 ```
 
+<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -107,7 +109,7 @@ The **Sign** class does not support repeated use of **init**.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | priKey | [PriKey](arkts-cryptoarchitecture-cryptoframework-prikey-i.md) | Yes | Private key used for the initialization. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -119,6 +121,7 @@ The **Sign** class does not support repeated use of **init**.
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Incorrect key type.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="init-1"></a>
 ## init
 
 ```TypeScript
@@ -151,7 +154,7 @@ The **Sign** class does not support repeated use of **init**.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -163,6 +166,7 @@ The **Sign** class does not support repeated use of **init**.
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Incorrect key type.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="initsync"></a>
 ## initSync
 
 ```TypeScript
@@ -201,6 +205,7 @@ The **Sign** class does not support repeated use of **initSync**.
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Incorrect key type.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="setsignspec"></a>
 ## setSignSpec
 
 ```TypeScript
@@ -251,6 +256,7 @@ function testSetSignSpec() {
 
 ```
 
+<a id="setsignspec-1"></a>
 ## setSignSpec
 
 ```TypeScript
@@ -290,6 +296,7 @@ Currently, only PSS_SALT_LEN in RSA and USER_ID in SM2 are supported.
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+<a id="setsignspec-2"></a>
 ## setSignSpec
 
 ```TypeScript
@@ -340,6 +347,7 @@ function testSetSignSpec() {
 
 ```
 
+<a id="sign"></a>
 ## sign
 
 ```TypeScript
@@ -363,7 +371,7 @@ Signs the data, including data added via the update interface. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | The data to be signed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataBlob> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the signature obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataBlob&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the signature obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -375,6 +383,7 @@ Signs the data, including data added via the update interface. This API uses an 
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="sign-1"></a>
 ## sign
 
 ```TypeScript
@@ -397,8 +406,8 @@ Signs data. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | DataBlob \| null | Yes | Data to pass in. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataBlob> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the signature obtained. Otherwise, **err** is an error object. |
+| data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Data to pass in. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataBlob&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the signature obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -410,6 +419,7 @@ Signs data. This API uses an asynchronous callback to return the result.
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="sign-2"></a>
 ## sign
 
 ```TypeScript
@@ -438,7 +448,7 @@ Signs the data, including data added via the update interface. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob> | Promise used to return the signature. |
+| Promise&lt;DataBlob&gt; | Promise used to return the signature. |
 
 **Error codes:**
 
@@ -450,6 +460,7 @@ Signs the data, including data added via the update interface. This API uses a p
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="sign-3"></a>
 ## sign
 
 ```TypeScript
@@ -472,13 +483,13 @@ Signs data. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | DataBlob \| null | Yes | Data to pass in. |
+| data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Data to pass in. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob> | Promise used to return the signature. |
+| Promise&lt;DataBlob&gt; | Promise used to return the signature. |
 
 **Error codes:**
 
@@ -490,6 +501,7 @@ Signs data. This API uses a promise to return the result.
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="signsync"></a>
 ## signSync
 
 ```TypeScript
@@ -512,7 +524,7 @@ Signs the data. This API returns the result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | DataBlob \| null | Yes | Data to pass in. |
+| data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Data to pass in. |
 
 **Return value:**
 
@@ -725,6 +737,7 @@ function signBySync() {
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -745,7 +758,7 @@ This API can be called only after the [Sign](arkts-cryptoarchitecture-cryptofram
 > prevents too much memory from being requested at a time.  
 >  
 > For details about the sample code for calling **update()** multiple times in signing, see  
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
+> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
 > . The operations of other algorithms are similar.  
 >  
 > **OnlySign** cannot be used with **update()**. If **OnlySign** is specified, use **sign()** to pass in data.  
@@ -768,7 +781,7 @@ This API can be called only after the [Sign](arkts-cryptoarchitecture-cryptofram
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Data to pass in. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -780,6 +793,7 @@ This API can be called only after the [Sign](arkts-cryptoarchitecture-cryptofram
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -793,7 +807,7 @@ Before using this API, you must initialize the [Sign](arkts-cryptoarchitecture-c
 > **NOTE**  
 >  
 > You can call **update** multiple times or do not use **update** (call  
-> [sign](arkts-cryptoarchitecture-cryptoframework-sign-i.md#sign-2) after  
+> [sign](arkts-cryptoarchitecture-cryptoframework-sign-i.md#sign-1) after  
 > [init](arkts-cryptoarchitecture-cryptoframework-sign-i.md#init-1)), depending on the  
 > data volume.  
 >  
@@ -801,7 +815,7 @@ Before using this API, you must initialize the [Sign](arkts-cryptoarchitecture-c
 > large amount of data, you are advised to call **update()** multiple times to pass in the data by segment. This  
 > prevents too much memory from being requested at a time.  
 > For details about the sample code for calling **update()** multiple times in signing, see  
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
+> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
 > . The operations of other algorithms are similar.  
 >  
 > **OnlySign** cannot be used with **update()**. If **OnlySign** is specified, use **sign()** to pass in data.  
@@ -829,7 +843,7 @@ Before using this API, you must initialize the [Sign](arkts-cryptoarchitecture-c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -841,6 +855,7 @@ Before using this API, you must initialize the [Sign](arkts-cryptoarchitecture-c
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
@@ -862,7 +877,7 @@ This API can be called only after the [Sign](arkts-cryptoarchitecture-cryptofram
 > This prevents too much memory from being requested at a time.  
 >  
 > For details about the sample code for calling **updateSync** multiple times in signing, see  
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
+> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
 > . The operations of other algorithms are similar.  
 >  
 > **OnlySign** cannot be used with **updateSync**. If **OnlySign** is specified, use **signSync** to pass in  

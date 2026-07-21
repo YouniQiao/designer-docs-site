@@ -6,6 +6,7 @@
 import { vibrator } from '@kit.SensorServiceKit';
 ```
 
+<a id="issupporteffectsync"></a>
 ## isSupportEffectSync
 
 ```TypeScript

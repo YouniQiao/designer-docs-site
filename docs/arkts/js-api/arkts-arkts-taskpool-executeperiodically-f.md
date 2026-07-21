@@ -6,6 +6,7 @@
 import { taskpool } from '@kit.ArkTS';
 ```
 
+<a id="executeperiodically"></a>
 ## executePeriodically
 
 ```TypeScript
@@ -83,6 +84,7 @@ taskpoolTest();
 ```
 
 
+<a id="executeperiodically-1"></a>
 ## executePeriodically
 
 ```TypeScript
@@ -104,7 +106,7 @@ Executes a generic task periodically, without verifying the parameter type and r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | period | number | Yes | Execution period, in ms. The value must be greater than or equal to 0.The value should be an integer.<br>Unit:milliseconds. |
-| task | [GenericsTask](arkts-arkts-taskpool-genericstask-c.md)<A, R> | Yes | Generic task to be executed periodically. |
+| task | [GenericsTask](arkts-arkts-taskpool-genericstask-c.md)&lt;A, R&gt; | Yes | Generic task to be executed periodically. |
 | priority | [Priority](arkts-arkts-taskpool-priority-e.md) | No | Priority of the task. The default value is **taskpool.Priority.MEDIUM**. |
 
 **Error codes:**

@@ -1,15 +1,14 @@
 # LauncherAbilityResourceInfo (System API)
 
-The module provides resource information of the entry ability of an application, such as the icon and label. The
-information can be obtained by calling
-[getLauncherAbilityResourceInfo](arkts-ability-getlauncherabilityresourceinfo-f-sys.md#getlauncherabilityresourceinfo-1)
-.
+The module provides resource information of the entry ability of an application, such as the icon and label. The information can be obtained by calling [getLauncherAbilityResourceInfo](arkts-ability-bundleresourcemanager-getlauncherabilityresourceinfo-f-sys.md#getlauncherabilityresourceinfo-1).
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > The APIs provided by this module are system APIs.
 
 **Since:** 11
+
+<!--Device-unnamed-export interface LauncherAbilityResourceInfo--><!--Device-unnamed-export interface LauncherAbilityResourceInfo-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
@@ -27,6 +26,8 @@ Name of the entry ability.
 
 **Since:** 11
 
+<!--Device-LauncherAbilityResourceInfo-readonly abilityName: string--><!--Device-LauncherAbilityResourceInfo-readonly abilityName: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
 **System API:** This is a system API.
@@ -42,6 +43,8 @@ Index of an application clone.
 **Type:** number
 
 **Since:** 12
+
+<!--Device-LauncherAbilityResourceInfo-readonly appIndex: int--><!--Device-LauncherAbilityResourceInfo-readonly appIndex: int-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
@@ -59,6 +62,8 @@ Bundle name of the application.
 
 **Since:** 11
 
+<!--Device-LauncherAbilityResourceInfo-readonly bundleName: string--><!--Device-LauncherAbilityResourceInfo-readonly bundleName: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
 **System API:** This is a system API.
@@ -74,6 +79,8 @@ readonly drawableDescriptor: DrawableDescriptor
 **Type:** DrawableDescriptor
 
 **Since:** 12
+
+<!--Device-LauncherAbilityResourceInfo-readonly drawableDescriptor: DrawableDescriptor--><!--Device-LauncherAbilityResourceInfo-readonly drawableDescriptor: DrawableDescriptor-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
@@ -91,6 +98,8 @@ Application icon, which is encoded using Base64.
 
 **Since:** 11
 
+<!--Device-LauncherAbilityResourceInfo-readonly icon: string--><!--Device-LauncherAbilityResourceInfo-readonly icon: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
 **System API:** This is a system API.
@@ -107,6 +116,8 @@ Application label.
 
 **Since:** 11
 
+<!--Device-LauncherAbilityResourceInfo-readonly label: string--><!--Device-LauncherAbilityResourceInfo-readonly label: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
 **System API:** This is a system API.
@@ -122,6 +133,8 @@ Module name of the application.
 **Type:** string
 
 **Since:** 11
+
+<!--Device-LauncherAbilityResourceInfo-readonly moduleName: string--><!--Device-LauncherAbilityResourceInfo-readonly moduleName: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 

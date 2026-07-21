@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="startosu"></a>
 ## startOsu
 
 ```TypeScript
@@ -34,7 +35,7 @@ Execute OS upgrade if current OS upgrade is not the latest one.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsuStatus> | Return the status of OS upgrade when OS upgrade status changed. |
+| Promise&lt;OsuStatus&gt; | Return the status of OS upgrade when OS upgrade status changed. |
 
 **Error codes:**
 

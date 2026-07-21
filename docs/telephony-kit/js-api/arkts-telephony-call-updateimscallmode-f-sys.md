@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="updateimscallmode"></a>
 ## updateImsCallMode
 
 ```TypeScript
@@ -30,7 +31,7 @@ Update Ims call mode.
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
 | mode | [ImsCallMode](arkts-telephony-call-imscallmode-e-sys.md) | Yes | Indicates the mode of the ims call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of updateImsCallMode. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of updateImsCallMode. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ call.updateImsCallMode(1, 1, (err: BusinessError) => {
 ```
 
 
+<a id="updateimscallmode-1"></a>
 ## updateImsCallMode
 
 ```TypeScript
@@ -89,7 +91,7 @@ Update Ims call mode.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the updateImsCallMode. |
+| Promise&lt;void&gt; | The promise returned by the updateImsCallMode. |
 
 **Error codes:**
 

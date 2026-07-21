@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="queryallprinterppds"></a>
 ## queryAllPrinterPpds
 
 ```TypeScript
@@ -30,7 +31,7 @@ Query all printer ppds.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PpdInfo[]> | - Promise that resolves with all printer ppd info. |
+| Promise&lt;PpdInfo[]&gt; | - Promise that resolves with all printer ppd info. |
 
 **Error codes:**
 

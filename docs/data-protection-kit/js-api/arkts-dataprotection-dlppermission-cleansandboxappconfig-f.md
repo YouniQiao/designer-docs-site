@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="cleansandboxappconfig"></a>
 ## cleanSandboxAppConfig
 
 ```TypeScript
@@ -26,7 +27,7 @@ This API clears the sandbox application configuration and restores the default s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

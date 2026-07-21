@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="addform"></a>
 ## addForm
 
 ```TypeScript
@@ -38,7 +39,7 @@ You can use this method to create a theme form.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<formInfo.RunningFormInfo> | Return the form info. |
+| Promise&lt;formInfo.RunningFormInfo&gt; | Return the form info. |
 
 **Error codes:**
 

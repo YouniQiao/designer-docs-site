@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="onactivesessionchanged"></a>
 ## onActiveSessionChanged
 
 ```TypeScript
@@ -28,7 +29,7 @@ Register active session changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<AVSessionDescriptor>> | Yes | Used to handle activeSessionChange event |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;AVSessionDescriptor&gt;&gt; | Yes | Used to handle activeSessionChange event |
 
 **Error codes:**
 

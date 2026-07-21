@@ -6,6 +6,7 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
+<a id="setdisallowedpermission"></a>
 ## setDisallowedPermission
 
 ```TypeScript

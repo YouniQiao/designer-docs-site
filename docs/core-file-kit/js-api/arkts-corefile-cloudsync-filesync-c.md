@@ -14,6 +14,7 @@ Provides APIs for the file manager application to perform device-cloud sync of t
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -41,6 +42,7 @@ let fileSync = new cloudSync.FileSync()
 
 ```
 
+<a id="getlastsynctime"></a>
 ## getLastSyncTime
 
 ```TypeScript
@@ -59,7 +61,7 @@ Obtains the last sync time. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the last sync time. |
+| Promise&lt;number&gt; | Promise used to return the last sync time. |
 
 **Error codes:**
 
@@ -85,6 +87,7 @@ fileSync.getLastSyncTime().then((timeStamp: number) => {
 
 ```
 
+<a id="getlastsynctime-1"></a>
 ## getLastSyncTime
 
 ```TypeScript
@@ -103,7 +106,7 @@ Obtains the last sync time. This API uses an asynchronous callback to return the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to obtain the last sync time. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to obtain the last sync time. |
 
 **Error codes:**
 
@@ -130,6 +133,7 @@ fileSync.getLastSyncTime((err: BusinessError, timeStamp: number) => {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -149,7 +153,7 @@ Removes the specified callback from the device-cloud sync progress.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'progress' | Yes | Event type. The value is **progress**, which indicates the sync progress event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SyncProgress> | No | Callback used to return the sync progress. The default value is null. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SyncProgress&gt; | No | Callback used to return the sync progress. The default value is null. |
 
 **Error codes:**
 
@@ -173,6 +177,7 @@ fileSync.off('progress', callback);
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -192,7 +197,7 @@ Registers a listener for the device-cloud sync progress.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'progress' | Yes | Event type. The value is **progress**, which indicates the sync progress event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SyncProgress> | Yes | Callback used to return the sync progress. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SyncProgress&gt; | Yes | Callback used to return the sync progress. |
 
 **Error codes:**
 
@@ -213,6 +218,7 @@ fileSync.on('progress', callback);
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -231,7 +237,7 @@ Starts device-cloud sync of a file. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -264,6 +270,7 @@ fileSync.start().then(() => {
 
 ```
 
+<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -282,7 +289,7 @@ Starts device-cloud sync of a file. This API uses an asynchronous callback to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to start device-cloud sync. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to start device-cloud sync. |
 
 **Error codes:**
 
@@ -311,6 +318,7 @@ fileSync.start((err: BusinessError) => {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -331,7 +339,7 @@ Calling **stop** will stop the sync process. To resume the sync, call [start](ar
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -355,6 +363,7 @@ fileSync.stop().then(() => {
 
 ```
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -375,7 +384,7 @@ Calling **stop** will stop the sync process. To resume the sync, call [start](ar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to stop device-cloud sync. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to stop device-cloud sync. |
 
 **Error codes:**
 

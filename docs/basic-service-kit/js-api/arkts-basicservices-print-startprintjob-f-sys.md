@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="startprintjob"></a>
 ## startPrintJob
 
 ```TypeScript
@@ -29,7 +30,7 @@ Starts the specified print job. This API uses an asynchronous callback to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | jobInfo | [PrintJob](arkts-basicservices-print-printjob-i-sys.md) | Yes | Information about the print job. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ print.startPrintJob(jobInfo, (err: BusinessError) => {
 ```
 
 
+<a id="startprintjob-1"></a>
 ## startPrintJob
 
 ```TypeScript
@@ -101,7 +103,7 @@ Starts the specified print job. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { browser } from '@kit.MDMKit';
 ```
 
+<a id="getselfmanagedbrowserpolicy"></a>
 ## getSelfManagedBrowserPolicy
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the browser policy of the current device.
 
 | Type | Description |
 | --- | --- |
-| [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Browser policy obtained. |
+| ArrayBuffer | Browser policy obtained. |
 
 **Example**
 

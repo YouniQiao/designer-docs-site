@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallbundlecachesize"></a>
 ## getAllBundleCacheSize
 
 ```TypeScript
@@ -14,7 +15,7 @@ function getAllBundleCacheSize(): Promise<number>
 
 Obtains the global cache size. This API uses a promise to return the result.
 
-It is not possible to obtain the cache of applications that are currently running or have been granted the "AllowAppDataNotCleared" privilege as specified in the [application configuration guide](../../../../../device-dev/subsystems/subsys-app-privilege-config-guide.md).
+It is not possible to obtain the cache of applications that are currently running or have been granted the "AllowAppDataNotCleared" privilege as specified in the [application configuration guide](docroot://../device-dev/subsystems/subsys-app-privilege-config-guide.md).
 
 **Since:** 15
 
@@ -30,7 +31,7 @@ It is not possible to obtain the cache of applications that are currently runnin
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the size of the global cache, in bytes. |
+| Promise&lt;number&gt; | Promise used to return the size of the global cache, in bytes. |
 
 **Error codes:**
 

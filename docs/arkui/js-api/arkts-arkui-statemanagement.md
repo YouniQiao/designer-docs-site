@@ -12,12 +12,12 @@ import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInacti
 
 | Name | Description |
 | --- | --- |
-| [AppStorageV2](arkts-arkui-arkui-statemanagement-appstoragev2-c.md) | For details about how to use AppStorageV2, see [AppStorageV2: Storing Application-wide UI State](../../../../ui/state-management/arkts-new-appstoragev2.md). |
+| [AppStorageV2](arkts-arkui-arkui-statemanagement-appstoragev2-c.md) | For details about how to use AppStorageV2, see [AppStorageV2: Storing Application-wide UI State](docroot://ui/state-management/arkts-new-appstoragev2.md). |
 | [Binding](arkts-arkui-arkui-statemanagement-binding-c.md) | Represents the generic class for read-only data binding, which can bind data of any type. |
 | [ConnectOptions](arkts-arkui-arkui-statemanagement-connectoptions-c.md) | Defines the parameter type for **globalConnect**. |
-| [ConnectOptionsCollections](arkts-arkui-arkui-statemanagement-connectoptionscollections-c.md) | Defines the parameter type for the [globalConnect](PersistenceV2.globalConnect&lt;T extends CollectionType&lt;S&gt;, S extends object&gt;( type: ConnectOptionsCollections&lt;T, S&gt; \| ConnectOptions&lt;T&gt; ))API. **ConnectOptionsCollections** is inherited from [ConnectOptions\&lt;T\&gt;](arkts-arkui-arkui-statemanagement-connectoptions-c.md). You can use the **ConnectOptionsCollections** input parameter to persist container data (such as **Array\&lt;S&gt;**).The following shows the examples of **StorageDefaultCreator\&lt;T&gt;** and **StorageDefaultCreator\&lt;S&gt;**: |
+| [ConnectOptionsCollections](arkts-arkui-arkui-statemanagement-connectoptionscollections-c.md) | Defines the parameter type for the [globalConnect](PersistenceV2.globalConnect<T extends CollectionType<S>, S extends object>( type: ConnectOptionsCollections<T, S> \| ConnectOptions<T> ))API. **ConnectOptionsCollections** is inherited from [ConnectOptions\<T\>](arkts-arkui-arkui-statemanagement-connectoptions-c.md). You can use the **ConnectOptionsCollections** input parameter to persist container data (such as **Array\<S>**).  The following shows the examples of **StorageDefaultCreator\<T>** and **StorageDefaultCreator\<S>**: |
 | [MutableBinding](arkts-arkui-arkui-statemanagement-mutablebinding-c.md) | Represents a generic class for mutable data binding, which allows the read and write operations on the bound value and provides complete **get** and **set** accessors. |
-| [PersistenceV2](arkts-arkui-arkui-statemanagement-persistencev2-c.md) | Inherits from [AppStorageV2](arkts-arkui-arkui-statemanagement-appstoragev2-c.md). For details, see [PersistenceV2: Persisting Application State](../../../../ui/state-management/arkts-new-persistencev2.md). |
+| [PersistenceV2](arkts-arkui-arkui-statemanagement-persistencev2-c.md) | Inherits from [AppStorageV2](arkts-arkui-arkui-statemanagement-appstoragev2-c.md). For details, see [PersistenceV2: Persisting Application State](docroot://ui/state-management/arkts-new-persistencev2.md). |
 | [UIUtils](arkts-arkui-arkui-statemanagement-uiutils-c.md) | Provides APIs for handling data transformations related to state management. |
 
 ### Interfaces
@@ -48,7 +48,7 @@ import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInacti
 | --- | --- |
 | [CollectionType](arkts-arkui-collectiontype-t.md) | Defines the types of persistent collection data supported by **globalConnect** using the generic type of the input parameter of **globalConnect**. |
 | [GetterCallback](arkts-arkui-gettercallback-t.md) | Defines a callback used to obtain a value. |
-| [MonitorCallback](arkts-arkui-monitorcallback-t.md) | Listener callback function of the [IMonitor](../arkts-components/arkts-arkui-common-imonitor-i.md) type. |
+| [MonitorCallback](arkts-arkui-monitorcallback-t.md) | Listener callback function of the [IMonitor](../arkts-components/arkts-arkui-imonitor-i.md) type. |
 | [PersistenceErrorCallback](arkts-arkui-persistenceerrorcallback-t.md) | Defines a callback used to return the cause of the persistence failure. |
 | [ReusableComponentConstructor](arkts-arkui-reusablecomponentconstructor-t.md) | Function for initializing the reusable custom component. |
 | [SetterCallback](arkts-arkui-settercallback-t.md) | Defines a callback used to set a value. |

@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="dialcall"></a>
 ## dialCall
 
 ```TypeScript
@@ -30,7 +31,7 @@ Makes a call.
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the called number. |
 | options | [DialCallOptions](arkts-telephony-call-dialcalloptions-i-sys.md) | Yes | Indicates additional information carried in the call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of dialCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of dialCall. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ call.dialCall("138xxxxxxxx", dialCallOptions, (err: BusinessError) => {
 ```
 
 
+<a id="dialcall-1"></a>
 ## dialCall
 
 ```TypeScript
@@ -97,7 +99,7 @@ Makes a call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the dialCall. |
+| Promise&lt;void&gt; | The promise returned by the dialCall. |
 
 **Error codes:**
 
@@ -133,6 +135,7 @@ call.dialCall("138xxxxxxxx", dialCallOptions).then(() => {
 ```
 
 
+<a id="dialcall-2"></a>
 ## dialCall
 
 ```TypeScript
@@ -156,7 +159,7 @@ Makes a call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the called number. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of dialCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of dialCall. |
 
 **Error codes:**
 

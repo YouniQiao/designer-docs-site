@@ -14,6 +14,7 @@
 
 **System capability:** SystemCapability.Ability.Form
 
+<a id="startsecondpage"></a>
 ## startSecondPage
 
 ```TypeScript
@@ -40,7 +41,7 @@ Starts the widget provider page to be edited. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Promise used to return the ability result. |
+| Promise&lt;AbilityResult&gt; | Promise used to return the ability result. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ Starts the widget provider page to be edited. This API uses a promise to return 
 | [16500100](../errorcode-form.md#16500100-failed-to-obtain-widget-configuration-information) | Failed to obtain the configuration information. |
 | [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
 
+<a id="startuiability"></a>
 ## startUIAbility
 
 ```TypeScript
@@ -77,7 +79,7 @@ Starts UIAbility of the application to which a widget belongs. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

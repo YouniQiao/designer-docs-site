@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="ispriorityenabled"></a>
 ## isPriorityEnabled
 
 ```TypeScript
@@ -28,7 +29,7 @@ Checks whether the priority notification is enabled.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result.<br> - **true**: The priority notification is enabled.<br> - **false**: The priority notification is disabled. |
+| Promise&lt;boolean&gt; | Promise used to return the result.<br> - **true**: The priority notification is enabled.<br> - **false**: The priority notification is disabled. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ the class for TabBarOption
 import { TabBarPosition, TabBarOptions, AtomicServiceTabs, TabContentBuilder, OnContentWillChangeCallback } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -37,7 +38,7 @@ constructor to init the tabbar including icon, text, unselectedColor and selecte
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| icon | ResourceStr \| TabBarSymbol | Yes |  |
+| icon | [ResourceStr](arkts-arkui-resourcestr-t.md) \| TabBarSymbol | Yes |  |
 | text | [ResourceStr](arkts-arkui-resourcestr-t.md) | Yes | cannot be empty |
 | unselectedColor | [ResourceColor](arkts-arkui-resourcecolor-t.md) | No |  |
 | selectedColor | [ResourceColor](arkts-arkui-resourcecolor-t.md) | No |  |

@@ -14,6 +14,7 @@ Queries the time zone transition rule.
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="nexttransition"></a>
 ## nextTransition
 
 ```TypeScript

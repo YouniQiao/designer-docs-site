@@ -6,6 +6,7 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="trigger"></a>
 ## trigger
 
 ```TypeScript
@@ -40,7 +41,7 @@ Proactively triggers screen content awareness and obtains the current screen awa
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OnscreenAwarenessInfo> | Promise used to return the onscreen awareness result. |
+| Promise&lt;OnscreenAwarenessInfo&gt; | Promise used to return the onscreen awareness result. |
 
 **Error codes:**
 

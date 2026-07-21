@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="openaboutdevicesettingspage"></a>
 ## openAboutDeviceSettingsPage
 
 ```TypeScript

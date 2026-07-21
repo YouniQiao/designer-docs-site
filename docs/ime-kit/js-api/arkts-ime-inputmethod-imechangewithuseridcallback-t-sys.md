@@ -23,7 +23,7 @@ The callback of the inputmethod change event which carries the user ID whose inp
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inputMethodProperty | InputMethodProperty | Yes | the property of current inputmethod. |
-| inputMethodSubtype | InputMethodSubtype | Yes | the subtype of current inputmethod. |
-| userId | int | Yes | the user ID whose inputmethod is changed. |
+| inputMethodProperty | [InputMethodProperty](arkts-ime-inputmethod-inputmethodproperty-i.md) | Yes | the property of current inputmethod.  |
+| inputMethodSubtype | [InputMethodSubtype](arkts-ime-inputmethodsubtype-i.md) | Yes | the subtype of current inputmethod.  |
+| userId | number | Yes | the user ID whose inputmethod is changed.  |
 

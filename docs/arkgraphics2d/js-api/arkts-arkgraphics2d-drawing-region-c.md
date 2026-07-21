@@ -23,6 +23,7 @@ Describes a region, which is used to describe the region where the shape can be 
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -37,6 +38,7 @@ Constructs a **Region** object.
 
 **System capability:** SystemCapability.Graphics.Drawing
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -57,6 +59,7 @@ Copies a **Region** object.
 | --- | --- | --- | --- |
 | region | [Region](../../apis-image-kit/arkts-apis/arkts-image-image-region-i.md) | Yes | Region to be copied. |
 
+<a id="constructor-2"></a>
 ## constructor
 
 ```TypeScript
@@ -80,6 +83,7 @@ Constructs a rectangular region.
 | right | number | Yes | Right position of the rectangle (X coordinate of the lower right corner). The value must be an integer. **0** indicates the coordinate origin. A positive value places the point to the right of the coordinate origin, while a negative value places the point to the left. |
 | bottom | number | Yes | Bottom position of the rectangle (Y coordinate of the lower right corner). The value must be an integer. **0** indicates the coordinate origin. A positive value places the point below the coordinate origin, while a negative value places the point above the coordinate origin. |
 
+<a id="getboundarypath"></a>
 ## getBoundaryPath
 
 ```TypeScript
@@ -100,6 +104,7 @@ Obtains a new path that is the boundary of the existing region.
 | --- | --- |
 | [Path](arkts-arkgraphics2d-drawing-path-c.md) | Path of the boundary of the existing region. |
 
+<a id="getbounds"></a>
 ## getBounds
 
 ```TypeScript
@@ -120,6 +125,7 @@ Obtains the boundaries of the existing region.
 | --- | --- |
 | common2D.Rect | Bounding rectangle of this region. |
 
+<a id="iscomplex"></a>
 ## isComplex
 
 ```TypeScript
@@ -140,6 +146,7 @@ Checks whether this region contains multiple rectangles.
 | --- | --- |
 | boolean | Check result. **true** means yes; **false** otherwise. |
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -160,6 +167,7 @@ Checks whether the existing region is empty.
 | --- | --- |
 | boolean | Check result. **true** means yes; **false** otherwise. |
 
+<a id="isequal"></a>
 ## isEqual
 
 ```TypeScript
@@ -186,6 +194,7 @@ Checks whether another region is equal to this region.
 | --- | --- |
 | boolean | Check result. **true** if the source rectangle is equal to the destination rectangle;**false** otherwise. |
 
+<a id="ispointcontained"></a>
 ## isPointContained
 
 ```TypeScript
@@ -219,6 +228,7 @@ Checks whether a point is contained in this region.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="isrect"></a>
 ## isRect
 
 ```TypeScript
@@ -241,6 +251,7 @@ Checks whether this region is the same as a single rectangle.
 | --- | --- |
 | boolean | Check result. **true** if this region is the same as a single rectangle; **false** otherwise. |
 
+<a id="isregioncontained"></a>
 ## isRegionContained
 
 ```TypeScript
@@ -273,6 +284,7 @@ Checks whether another region is contained in this region.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="offset"></a>
 ## offset
 
 ```TypeScript
@@ -294,6 +306,7 @@ Translates a region.
 | dx | number | Yes | X offset. A positive number indicates an offset towards the positive direction of the X axis,and a negative number indicates an offset towards the negative direction of the X axis. The value is an integer. |
 | dy | number | Yes | Y offset. A positive number indicates an offset towards the positive direction of the Y axis,and a negative number indicates an offset towards the negative direction of the Y axis. The value is an integer. |
 
+<a id="op"></a>
 ## op
 
 ```TypeScript
@@ -327,6 +340,7 @@ Performs an operation on this region and another region, and stores the resultin
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="quickcontains"></a>
 ## quickContains
 
 ```TypeScript
@@ -358,6 +372,7 @@ Checks whether this region is the same as a single rectangle and contains the sp
 | --- | --- |
 | boolean | Check result. **true** if the current region is the same as a single rectangle and contains the specified rectangle; **false** otherwise. |
 
+<a id="quickreject"></a>
 ## quickReject
 
 ```TypeScript
@@ -393,6 +408,7 @@ Checks whether a rectangle do not intersect with this region. Actually, this API
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="quickrejectregion"></a>
 ## quickRejectRegion
 
 ```TypeScript
@@ -419,6 +435,7 @@ Checks whether the existing region does not intersect with another region. Actua
 | --- | --- |
 | boolean | Check result. **true** if the regions do not intersect; **false** otherwise. The value **true** is returned only if the regions intersect with each other by point or edge. |
 
+<a id="setempty"></a>
 ## setEmpty
 
 ```TypeScript
@@ -433,6 +450,7 @@ Set the existing region to empty.
 
 **System capability:** SystemCapability.Graphics.Drawing
 
+<a id="setpath"></a>
 ## setPath
 
 ```TypeScript
@@ -466,6 +484,7 @@ Sets a region that matches the outline of a path within the cropping area.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setrect"></a>
 ## setRect
 
 ```TypeScript
@@ -501,6 +520,7 @@ Sets a rectangle.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setregion"></a>
 ## setRegion
 
 ```TypeScript

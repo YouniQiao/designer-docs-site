@@ -16,6 +16,7 @@ A class object that functions as a thumbnail proxy.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getthumbnail"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the PixelMap of a thumbnail. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | PixelMap of the thumbnail. |
+| Promise&lt;image.PixelMap&gt; | PixelMap of the thumbnail. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ function getThumbnail(proxyObj: camera.DeferredPhotoProxy): void {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -77,7 +79,7 @@ Releases depth data output resources. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="cancelretentionstate"></a>
 ## cancelRetentionState
 
 ```TypeScript
@@ -26,13 +27,13 @@ This API is used to cancel the retention state for sandbox application and resto
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| docUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the files to be canceled with the retention state. The length of the array is not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code401 is thrown. |
+| docUris | Array&lt;string&gt; | Yes | URIs of the files to be canceled with the retention state. The length of the array is not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code401 is thrown. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ dlpPermission.cancelRetentionState([uri]).then(() => { // Cancel the retention s
 ```
 
 
+<a id="cancelretentionstate-1"></a>
 ## cancelRetentionState
 
 ```TypeScript
@@ -77,8 +79,8 @@ This API is used to cancel the retention state for sandbox application and resto
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| docUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the files to be canceled with the retention state. The length of the array is not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code401 is thrown. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| docUris | Array&lt;string&gt; | Yes | URIs of the files to be canceled with the retention state. The length of the array is not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code401 is thrown. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

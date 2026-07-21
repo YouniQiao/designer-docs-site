@@ -10,6 +10,7 @@ Defines the Web attribute functions.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="aisessionoptions"></a>
 ## aiSessionOptions
 
 ```TypeScript
@@ -30,8 +31,9 @@ Custom AI session configuration for Web components.Used to register multiple cus
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| aiSessions | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AISessionEvent> | Yes | Array of AISessionEvent objects. |
+| aiSessions | Array&lt;AISessionEvent&gt; | Yes | Array of AISessionEvent objects. |
 
+<a id="allowwindowopenmethod"></a>
 ## allowWindowOpenMethod
 
 ```TypeScript
@@ -54,6 +56,7 @@ Whether the window can be open automatically through JavaScript.<p><strong>API N
 | --- | --- | --- | --- |
 | flag | boolean | Yes | If it is true, the window can be opened automatically through JavaScript. |
 
+<a id="backtotop"></a>
 ## backToTop
 
 ```TypeScript
@@ -74,6 +77,7 @@ Set whether to enable the back-to-top feature for web component when the status 
 | --- | --- | --- | --- |
 | backToTop | boolean | Yes | { |
 
+<a id="bindselectionmenu"></a>
 ## bindSelectionMenu
 
 ```TypeScript
@@ -95,11 +99,12 @@ Bind to the selection menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elementType | [WebElementType](arkts-arkweb-web-webelementtype-e.md) | Yes | Indicates the type of selection menu. |
+| elementType | [WebElementType](arkts-arkweb-webelementtype-e.md) | Yes | Indicates the type of selection menu. |
 | content | [CustomBuilder](../../apis-arkui/arkts-components/arkts-arkui-custombuilder-t.md) | Yes | Indicates the content of selection menu. |
-| responseType | [WebResponseType](arkts-arkweb-web-webresponsetype-e.md) | Yes | Indicates response type of selection menu. |
-| options | [SelectionMenuOptionsExt](arkts-arkweb-web-selectionmenuoptionsext-i.md) | No | Indicates the options of selection menu. |
+| responseType | [WebResponseType](arkts-arkweb-webresponsetype-e.md) | Yes | Indicates response type of selection menu. |
+| options | [SelectionMenuOptionsExt](arkts-arkweb-selectionmenuoptionsext-i.md) | No | Indicates the options of selection menu. |
 
+<a id="blankscreendetectionconfig"></a>
 ## blankScreenDetectionConfig
 
 ```TypeScript
@@ -129,8 +134,9 @@ Sets the blank screen detection configuration, such as whether to enable the det
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| detectConfig | [BlankScreenDetectionConfig](arkts-arkweb-web-blankscreendetectionconfig-i.md) | Yes | Blank screen detection policy. |
+| detectConfig | [BlankScreenDetectionConfig](arkts-arkweb-blankscreendetectionconfig-i.md) | Yes | Blank screen detection policy. |
 
+<a id="blocknetwork"></a>
 ## blockNetwork
 
 ```TypeScript
@@ -153,6 +159,7 @@ Whether web component can load resource from network.
 | --- | --- | --- | --- |
 | block | boolean | Yes | { |
 
+<a id="bluronkeyboardhidemode"></a>
 ## blurOnKeyboardHideMode
 
 ```TypeScript
@@ -173,8 +180,9 @@ Sets whether to enable blur mode for the web element when soft keyboard is hidde
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [BlurOnKeyboardHideMode](arkts-arkweb-web-bluronkeyboardhidemode-e.md) | Yes | Whether to enable blur mode of the web element when soft keyboard is hidden. The default value is **BlurOnKeyboardHideMode.SILENT**. |
+| mode | [BlurOnKeyboardHideMode](arkts-arkweb-bluronkeyboardhidemode-e.md) | Yes | Whether to enable blur mode of the web element when soft keyboard is hidden. The default value is **BlurOnKeyboardHideMode.SILENT**. |
 
+<a id="bypassvsynccondition"></a>
 ## bypassVsyncCondition
 
 ```TypeScript
@@ -193,8 +201,9 @@ Sets the rendering process to bypass vsync (vertical synchronization) scheduling
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| condition | [WebBypassVsyncCondition](arkts-arkweb-web-webbypassvsynccondition-e.md) | Yes | Condition for triggering the rendering process to bypass vsync scheduling.<br> When **undefined** or **null** is passed in, the value is **NONE**. |
+| condition | [WebBypassVsyncCondition](arkts-arkweb-webbypassvsynccondition-e.md) | Yes | Condition for triggering the rendering process to bypass vsync scheduling.<br> When **undefined** or **null** is passed in, the value is **NONE**. |
 
+<a id="cachemode"></a>
 ## cacheMode
 
 ```TypeScript
@@ -215,8 +224,9 @@ Sets the mode of cache in Web.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| cacheMode | [CacheMode](arkts-arkweb-web-cachemode-e.md) | Yes | The cache mode, which can be {@link CacheMode}. |
+| cacheMode | [CacheMode](arkts-arkweb-cachemode-e.md) | Yes | The cache mode, which can be {@link CacheMode}. |
 
+<a id="copyoptions"></a>
 ## copyOptions
 
 ```TypeScript
@@ -237,8 +247,9 @@ Called to set copy option
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [CopyOptions](../../apis-arkui/arkts-apis/arkts-arkui-enums-copyoptions-e.md) | Yes | copy option.The default value is CopyOptions.LocalDevice. |
+| value | [CopyOptions](../../apis-arkui/arkts-apis/arkts-arkui-copyoptions-e.md) | Yes | copy option.The default value is CopyOptions.LocalDevice. |
 
+<a id="darkmode"></a>
 ## darkMode
 
 ```TypeScript
@@ -247,7 +258,7 @@ darkMode(mode: WebDarkMode)
 
 Sets dark mode for the web page. When this attribute is not explicitly called, dark mode is disabled by default.
 
-When dark mode is enabled, the **Web** component enables the dark style defined in the media query **prefers-color-scheme** of the web page. If it is not defined, the web page remains unchanged. To enable forcible dark mode, use this API with [forceDarkAccess](WebAttribute.forceDarkAccess). For details about how to use dark mode, see [Setting Dark Mode](../../../../web/web-set-dark-mode.md).
+When dark mode is enabled, the **Web** component enables the dark style defined in the media query **prefers-color-scheme** of the web page. If it is not defined, the web page remains unchanged. To enable forcible dark mode, use this API with [forceDarkAccess](WebAttribute.forceDarkAccess). For details about how to use dark mode, see [Setting Dark Mode](docroot://web/web-set-dark-mode.md).
 
 **Since:** 9
 
@@ -261,8 +272,9 @@ When dark mode is enabled, the **Web** component enables the dark style defined 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [WebDarkMode](arkts-arkweb-web-webdarkmode-e.md) | Yes | Dark mode for the web page, which can be set to **Off**, **On**, or **Auto**.<br>When **null** or **undefined** is passed, the value is **WebDarkMode.Off**. |
+| mode | [WebDarkMode](arkts-arkweb-webdarkmode-e.md) | Yes | Dark mode for the web page, which can be set to **Off**, **On**, or **Auto**.<br>When **null** or **undefined** is passed, the value is **WebDarkMode.Off**. |
 
+<a id="datadetectorconfig"></a>
 ## dataDetectorConfig
 
 ```TypeScript
@@ -281,8 +293,9 @@ Data detector with config.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| config | [TextDataDetectorConfig](../../apis-arkui/arkts-apis/arkts-arkui-text-common-textdatadetectorconfig-i.md) | Yes | The config of text data detector. |
+| config | [TextDataDetectorConfig](../../apis-arkui/arkts-apis/arkts-arkui-textdatadetectorconfig-i.md) | Yes | The config of text data detector. |
 
+<a id="databaseaccess"></a>
 ## databaseAccess
 
 ```TypeScript
@@ -295,7 +308,7 @@ Sets whether to enable the Web SQL Database storage API permission. If this perm
 >  
 > - After the ArkWeb kernel is upgraded to M132, the API's control over the Web SQL Database becomes invalid  
 > because the kernel discards Web SQL. For details about the ArkWeb kernel version, see  
-> [Constraints](../../../../web/web-component-overview.md#constraints).
+> [Constraints](docroot://web/web-component-overview.md#constraints).
 
 **Since:** 8
 
@@ -311,6 +324,7 @@ Sets whether to enable the Web SQL Database storage API permission. If this perm
 | --- | --- | --- | --- |
 | databaseAccess | boolean | Yes | Whether to enable Web SQL Database storage API permission.<br>**true** means enabling the detection, and **false** means disabling it.<br>If **undefined** or **null** is passed in, the value is **false**. |
 
+<a id="defaultfixedfontsize"></a>
 ## defaultFixedFontSize
 
 ```TypeScript
@@ -335,6 +349,7 @@ When this attribute is not explicitly called, the default fixed font size is **1
 | --- | --- | --- | --- |
 | size | number | Yes | Default fixed font size to set, in px.<br>Value range: [-2^31, 2^31-1]. In actual rendering, values greater than 72 px are handled as 72 px, and values less than 1 px are handled as 1 px.<br><br>When **null** or **undefined** is passed in, the value is **13**. |
 
+<a id="defaultfontsize"></a>
 ## defaultFontSize
 
 ```TypeScript
@@ -359,6 +374,7 @@ When this attribute is not explicitly called, the default font size of the web p
 | --- | --- | --- | --- |
 | size | number | Yes | Default font size to set, in px.<br>Value range: [-2^31, 2^31-1]. In actual rendering,values greater than 72 px are handled as 72 px, and values less than 1 px are handled as 1 px.<br>When **null** or **undefined** is passed in, the value is **16**. |
 
+<a id="defaulttextencodingformat"></a>
 ## defaultTextEncodingFormat
 
 ```TypeScript
@@ -381,6 +397,7 @@ Sets the default text encoding format for the web page. When this attribute is n
 | --- | --- | --- | --- |
 | textEncodingFormat | string | Yes | Default text encoding format.<br>When **null** or **undefined** is passed in, the value is **UTF-8**. |
 
+<a id="domstorageaccess"></a>
 ## domStorageAccess
 
 ```TypeScript
@@ -403,6 +420,7 @@ Sets whether to enable the DOM Storage API permission. If this attribute is not 
 | --- | --- | --- | --- |
 | domStorageAccess | boolean | Yes | Whether to enable the DOM Storage API.<br>The value **true** means to the DOM Storage API, and **false** means the opposite.<br>If **undefined** or **null** is passed in, the value is **false**. |
 
+<a id="editmenuoptions"></a>
 ## editMenuOptions
 
 ```TypeScript
@@ -423,8 +441,9 @@ Set the custom text menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| editMenu | [EditMenuOptions](../../apis-arkui/arkts-apis/arkts-arkui-text-common-editmenuoptions-i.md) | Yes | Customize text menu options.The number of menu items, as well as the content size and icon size of the menu,should be consistent with the ArkUI Menu component.The system-provided id enumeration values (TextMenuItemId) in the menu are only supported for CUT, COPY, PASTE, SELECT_ALL, TRANSLATE, SEARCH and some AI menu in the web.The textRange parameter in the onMenuItemClick function is meaningless in the web,and the input value is -1. |
+| editMenu | [EditMenuOptions](../../apis-arkui/arkts-apis/arkts-arkui-editmenuoptions-i.md) | Yes | Customize text menu options.The number of menu items, as well as the content size and icon size of the menu,should be consistent with the ArkUI Menu component.The system-provided id enumeration values (TextMenuItemId) in the menu are only supported for CUT, COPY, PASTE, SELECT_ALL, TRANSLATE, SEARCH and some AI menu in the web.The textRange parameter in the onMenuItemClick function is meaningless in the web,and the input value is -1. |
 
+<a id="enableautofill"></a>
 ## enableAutoFill
 
 ```TypeScript
@@ -445,6 +464,7 @@ Sets whether enable auto fill or not.
 | --- | --- | --- | --- |
 | value | boolean | Yes | Indicates the flag whether autofill is enabled.Default value is true.true: enable, false: disable. |
 
+<a id="enabledatadetector"></a>
 ## enableDataDetector
 
 ```TypeScript
@@ -465,6 +485,7 @@ Enable data detector.
 | --- | --- | --- | --- |
 | enable | boolean | Yes | {@code true} means enable data detector in Web;{@code false} otherwise.The default value is false. |
 
+<a id="enabledefaultcontextmenu"></a>
 ## enableDefaultContextMenu
 
 ```TypeScript
@@ -487,6 +508,7 @@ Set whether to enable the default right-click context menu.
 | --- | --- | --- | --- |
 | enable | boolean | Yes | {@code true} means the Web enable the default right-click context menu,{@code false} otherwise.The default value is false. |
 
+<a id="enabledrag"></a>
 ## enableDrag
 
 ```TypeScript
@@ -509,6 +531,7 @@ Enables or disables dragging for this component.
 | --- | --- | --- | --- |
 | value | boolean | Yes | {@code true} to enable dragging, {@code false} to disable it.The default value is true. |
 
+<a id="enablefollowsystemfontweight"></a>
 ## enableFollowSystemFontWeight
 
 ```TypeScript
@@ -529,6 +552,7 @@ Sets whether to follow the system font weight.
 | --- | --- | --- | --- |
 | follow | boolean | Yes | The value true means to follow the system font weight, and false means the opposite. |
 
+<a id="enablefullscreenvideooverlay"></a>
 ## enableFullscreenVideoOverlay
 
 ```TypeScript
@@ -551,6 +575,7 @@ Enables or disables fullscreen video overlay in the WebView component.
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | {@code true} to enable the fullscreen video overlay,{@code false} to disable it.The default value is false. |
 
+<a id="enablehapticfeedback"></a>
 ## enableHapticFeedback
 
 ```TypeScript
@@ -573,6 +598,7 @@ Enable or disable haptic feedback.
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Default value is true, set false to disable haptic feedback. |
 
+<a id="enableimageanalyzer"></a>
 ## enableImageAnalyzer
 
 ```TypeScript
@@ -593,6 +619,7 @@ Set up web component to support AI image recognition capability.
 | --- | --- | --- | --- |
 | enable | boolean | Yes | {@code true} means the Web AI image recognition capability,{@code false} otherwise.The default value is true. |
 
+<a id="enablemedianetworkproxy"></a>
 ## enableMediaNetworkProxy
 
 ```TypeScript
@@ -615,6 +642,7 @@ Set whether to enable media network proxy for Web components.When enabled, netwo
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | {@code true} to enable media network proxy, {@code false} to disable it.The default value is false. |
 
+<a id="enablenativeembedmode"></a>
 ## enableNativeEmbedMode
 
 ```TypeScript
@@ -637,13 +665,14 @@ Sets whether to enable the same-layer rendering feature. When this method is not
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Whether to enable the same-layer rendering feature.<br>The value **true** means to enable the same-layer rendering feature, and **false** means the opposite.<br>When **undefined** or **null** is passed in, the value is **false**. |
 
+<a id="enablenativemediaplayer"></a>
 ## enableNativeMediaPlayer
 
 ```TypeScript
 enableNativeMediaPlayer(config: NativeMediaPlayerConfig)
 ```
 
-Sets whether to enable the [application to take over web page media playback](../../../../web/app-takeovers-web-media.md). When this attribute is not explicitly called, the web page media playback takeover feature is disabled by default.
+Sets whether to enable the [application to take over web page media playback](docroot://web/app-takeovers-web-media.md). When this attribute is not explicitly called, the web page media playback takeover feature is disabled by default.
 
 **Since:** 12
 
@@ -657,8 +686,9 @@ Sets whether to enable the [application to take over web page media playback](..
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| config | [NativeMediaPlayerConfig](arkts-arkweb-web-nativemediaplayerconfig-i.md) | Yes | **enable**: whether to enable the feature.<br> **shouldOverlay**:whether the image of the video player taken over by the application will overlay the web page content, if this feature is enabled.<br>When **undefined** or **null** is passed in, the value is **{enable: false, shouldOverlay: false}**. |
+| config | [NativeMediaPlayerConfig](arkts-arkweb-nativemediaplayerconfig-i.md) | Yes | **enable**: whether to enable the feature.<br> **shouldOverlay**:whether the image of the video player taken over by the application will overlay the web page content, if this feature is enabled.<br>When **undefined** or **null** is passed in, the value is **{enable: false, shouldOverlay: false}**. |
 
+<a id="enablescrolldirectionallock"></a>
 ## enableScrollDirectionalLock
 
 ```TypeScript
@@ -681,9 +711,10 @@ When directional lock is enabled, the scroll axis is locked based on the initial
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to enable directional lock.  - `true`: Enables direction locking for the corresponding type category.  - `false`: Disables direction locking for the corresponding type category. |
-| type | [ScrollDirectionalLockType](arkts-arkweb-web-scrolldirectionallocktype-e.md) | Yes | Specifies the scenario in which directional lock is applied. |
+| value | boolean | Yes | Whether to enable directional lock.   - `true`: Enables direction locking for the corresponding type category.   - `false`: Disables direction locking for the corresponding type category. |
+| type | [ScrollDirectionalLockType](arkts-arkweb-scrolldirectionallocktype-e.md) | Yes | Specifies the scenario in which directional lock is applied. |
 
+<a id="enableselecteddatadetector"></a>
 ## enableSelectedDataDetector
 
 ```TypeScript
@@ -692,16 +723,16 @@ enableSelectedDataDetector(enable: boolean)
 
 Sets whether to enable the AI menu feature for text selection menu. After the AI menu feature is enabled, the email, phone number, website, date, and address in the selection can be identified, and the corresponding AI menu items are displayed in the text selection menu. By default, the AI menu feature is enabled.
 
-When the AI menu feature is enabled, the corresponding AI menu items can be displayed in the text selection menu after text is selected on the web page, including **url** (opening a link), **email** (creating an email),**phoneNumber** (calling), **address** (navigating to the address), and **dateTime** (creating an event) in [TextMenuItemId](../../apis-arkui/arkts-apis/arkts-arkui-text-common-textmenuitemid-c.md).
+When the AI menu feature is enabled, the corresponding AI menu items can be displayed in the text selection menu after text is selected on the web page, including **url** (opening a link), **email** (creating an email),**phoneNumber** (calling), **address** (navigating to the address), and **dateTime** (creating an event) in [TextMenuItemId](../../apis-arkui/arkts-apis/arkts-arkui-textmenuitemid-c.md).
 
-When the AI menu takes effect, the corresponding option can be displayed only when the selection contains a complete AI entity. This menu item and the askAI menu item in [TextMenuItemId](../../apis-arkui/arkts-apis/arkts-arkui-text-common-textmenuitemid-c.md) do not appear at the same time.
+When the AI menu takes effect, the corresponding option can be displayed only when the selection contains a complete AI entity. This menu item and the askAI menu item in [TextMenuItemId](../../apis-arkui/arkts-apis/arkts-arkui-textmenuitemid-c.md) do not appear at the same time.
 
-For details about the application scenario, see [Using Smart Text Data Detector](../../../../web/web-data-detector.md).
+For details about the application scenario, see [Using Smart Text Data Detector](docroot://web/web-data-detector.md).
 
 > **NOTE**  
 >  
 > If **enableSelectedDataDetector** is not set or is set to **true**, the **types** in  
-> [dataDetectorConfig](../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#datadetectorconfig20)  
+> [dataDetectorConfig](docroot://reference/apis-arkweb/arkts-basic-components-web-attributes.md#datadetectorconfig20)  
 > are used. If **dataDetectorConfig** is not set, all types are recognized by default.  
 >  
 > If **enableSelectedDataDetector** is set to false, the AI menu for text selection is not activated.
@@ -718,6 +749,7 @@ For details about the application scenario, see [Using Smart Text Data Detector]
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to enable web text recognition. The value **true** means to enable web text recognition, and **false** means the opposite.<br>If **undefined** or **null** is passed in, the attribute is reset to the default value. |
 
+<a id="enablewebavsession"></a>
 ## enableWebAVSession
 
 ```TypeScript
@@ -738,13 +770,14 @@ Sets whether to support an application to connect to media controller. If this a
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Whether to support an application to connect to media controller.<br>The value **true** means to support an application to connect to media controller, and **false** means the opposite.<br>When **undefined** or **null** is passed in, the value is **true**. |
 
+<a id="fileaccess"></a>
 ## fileAccess
 
 ```TypeScript
 fileAccess(fileAccess: boolean)
 ```
 
-Sets whether to enable access to the file system in the application. This setting does not affect the access to the files specified through [$rawfile(filepath/filename)](../../../../quick-start/resource-categories-and-access.md#accessing-resources). For API version 11 and earlier versions, access to the file system in the application is enabled by default if this attribute is not explicitly called. Since API version 12, access to the file system in the application is disabled by default if this attribute is not explicitly called.
+Sets whether to enable access to the file system in the application. This setting does not affect the access to the files specified through [$rawfile(filepath/filename)](docroot://quick-start/resource-categories-and-access.md#accessing-resources). For API version 11 and earlier versions, access to the file system in the application is enabled by default if this attribute is not explicitly called. Since API version 12, access to the file system in the application is disabled by default if this attribute is not explicitly called.
 
 **Since:** 8
 
@@ -760,6 +793,7 @@ Sets whether to enable access to the file system in the application. This settin
 | --- | --- | --- | --- |
 | fileAccess | boolean | Yes | Whether to enable access to the file system in the application.<br>The value **true** means to enable access to the file system in the application, and **false** means the opposite.<br>When **fileAccess** is set to **false**, only the resources in the read-only resource directory **\/data/storage/el1/bundle/entry/resources/resfile** can be accessed using the file protocol, regardless of the value of **fileAccess**.<br>For API version 11 and earlier versions, if **undefined** or **null** is passed in,the value is **true**. Since API version 12, if **undefined** or **null** is passed in, the value is **false**. |
 
+<a id="forcedarkaccess"></a>
 ## forceDarkAccess
 
 ```TypeScript
@@ -782,6 +816,7 @@ Sets whether to enable forcible dark mode for the web page. This API is applicab
 | --- | --- | --- | --- |
 | access | boolean | Yes | Whether to enable forcible dark mode for the web page.<br>The value **true** means to enable forcible dark mode for the web page, and **false** means the opposite.<br>When **null** or **undefined** is passed in, the value is **false**. |
 
+<a id="forcedisplayscrollbar"></a>
 ## forceDisplayScrollBar
 
 ```TypeScript
@@ -806,6 +841,7 @@ Scroll bar resident is not supported in full expansion mode,that is, when layout
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | { |
 
+<a id="forceenablezoom"></a>
 ## forceEnableZoom
 
 ```TypeScript
@@ -826,6 +862,7 @@ Set whether to comply with the zoom restrictions set by the<meta name="viewport"
 | --- | --- | --- | --- |
 | enable | boolean | Yes | { |
 
+<a id="geolocationaccess"></a>
 ## geolocationAccess
 
 ```TypeScript
@@ -848,6 +885,7 @@ Set whether to enable geolocation access. By default, this feature is enabled.Fo
 | --- | --- | --- | --- |
 | geolocationAccess | boolean | Yes | Whether to enable geolocation access. {@code true} means the Web allows access to geographical locations; {@code false} means the Web disallows access to geographical locations. The default value is true. |
 
+<a id="gesturefocusmode"></a>
 ## gestureFocusMode
 
 ```TypeScript
@@ -866,8 +904,9 @@ Set the gesture focus acquisition mode.When users interact with the web using di
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [GestureFocusMode](arkts-arkweb-web-gesturefocusmode-e.md) | Yes | The gesture focus mode, which can be {@link GestureFocusMode}.The default value is FocusMode.DEFAULT. |
+| mode | [GestureFocusMode](arkts-arkweb-gesturefocusmode-e.md) | Yes | The gesture focus mode, which can be {@link GestureFocusMode}.The default value is FocusMode.DEFAULT. |
 
+<a id="horizontalscrollbaraccess"></a>
 ## horizontalScrollBarAccess
 
 ```TypeScript
@@ -892,6 +931,7 @@ Set whether paint horizontal scroll bar.
 | --- | --- | --- | --- |
 | horizontalScrollBar | boolean | Yes | True if it needs to paint horizontal scroll bar. |
 
+<a id="imageaccess"></a>
 ## imageAccess
 
 ```TypeScript
@@ -914,6 +954,7 @@ Sets whether to enable automatic image loading. When this attribute is not expli
 | --- | --- | --- | --- |
 | imageAccess | boolean | Yes | Whether to enable automatic image loading.<br>The value **true** means to enable automatic image loading, and **false** means the opposite.<br>If **undefined** or **null** is passed in, the value is **false**. |
 
+<a id="initialscale"></a>
 ## initialScale
 
 ```TypeScript
@@ -936,6 +977,7 @@ Sets the initial scale for the Web.
 | --- | --- | --- | --- |
 | percent | number | Yes | the initial scale for the Web. |
 
+<a id="javascriptaccess"></a>
 ## javaScriptAccess
 
 ```TypeScript
@@ -958,6 +1000,7 @@ Sets whether the Web allows JavaScript scripts to execute.
 | --- | --- | --- | --- |
 | javaScriptAccess | boolean | Yes | {@code true} means the Web can allows JavaScript scripts to execute;{@code false} otherwise.The default value is true. |
 
+<a id="javascriptondocumentend"></a>
 ## javaScriptOnDocumentEnd
 
 ```TypeScript
@@ -980,8 +1023,9 @@ Injects the JavaScripts script into the Web component. When the specified page o
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scripts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ScriptItem> | Yes | The array of the JavaScripts to be injected. |
+| scripts | Array&lt;ScriptItem&gt; | Yes | The array of the JavaScripts to be injected. |
 
+<a id="javascriptondocumentstart"></a>
 ## javaScriptOnDocumentStart
 
 ```TypeScript
@@ -1004,8 +1048,9 @@ Injects the JavaScripts script into the Web component.When the specified page or
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scripts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ScriptItem> | Yes | The array of the JavaScripts to be injected. |
+| scripts | Array&lt;ScriptItem&gt; | Yes | The array of the JavaScripts to be injected. |
 
+<a id="javascriptproxy"></a>
 ## javaScriptProxy
 
 ```TypeScript
@@ -1028,8 +1073,9 @@ Registers the supplied ArkTs object in javaScriptProxy into this Web component.T
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| javaScriptProxy | [JavaScriptProxy](arkts-arkweb-web-javascriptproxy-i.md) | Yes | The ArkTs object in javaScriptProxy will be registered into this Web component,and the methods within the methodList of the injected ArkTs object declared in javaScriptProxy can be accessed by JavaScript.<br>**Since:** 12 |
+| javaScriptProxy | [JavaScriptProxy](arkts-arkweb-javascriptproxy-i.md) | Yes | The ArkTs object in javaScriptProxy will be registered into this Web component,and the methods within the methodList of the injected ArkTs object declared in javaScriptProxy can be accessed by JavaScript.<br>**Since:** 12 |
 
+<a id="keyboardappearance"></a>
 ## keyboardAppearance
 
 ```TypeScript
@@ -1050,8 +1096,9 @@ Set the WebKeyboardAppearanceMode to determine the immersive mode for the soft k
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [WebKeyboardAppearanceMode](arkts-arkweb-web-webkeyboardappearancemode-e.md) | Yes | The WebKeyboardAppearanceMode of this web |
+| mode | [WebKeyboardAppearanceMode](arkts-arkweb-webkeyboardappearancemode-e.md) | Yes | The WebKeyboardAppearanceMode of this web |
 
+<a id="keyboardavoidmode"></a>
 ## keyboardAvoidMode
 
 ```TypeScript
@@ -1072,15 +1119,16 @@ Sets the custom soft keyboard avoidance mode.If the keyboard avoidance mode set 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [WebKeyboardAvoidMode](arkts-arkweb-web-webkeyboardavoidmode-e.md) | Yes | Web soft keyboard avoidance mode. In the nested scrolling scenario, the soft keyboard avoidance mode of the **Web** component is not recommended,including **RESIZE_VISUAL** and **RESIZE_CONTENT**. Default value: **WebKeyboardAvoidMode.RESIZE_CONTENT**. |
+| mode | [WebKeyboardAvoidMode](arkts-arkweb-webkeyboardavoidmode-e.md) | Yes | Web soft keyboard avoidance mode. In the nested scrolling scenario, the soft keyboard avoidance mode of the **Web** component is not recommended,including **RESIZE_VISUAL** and **RESIZE_CONTENT**. Default value: **WebKeyboardAvoidMode.RESIZE_CONTENT**. |
 
+<a id="layoutmode"></a>
 ## layoutMode
 
 ```TypeScript
 layoutMode(mode: WebLayoutMode)
 ```
 
-Sets the web layout mode. When this attribute is not explicitly called, the web layout follows the system mode by default. For details, see [Fitting In the Page Content Layout](../../../../web/web-fit-content.md).
+Sets the web layout mode. When this attribute is not explicitly called, the web layout follows the system mode by default. For details, see [Fitting In the Page Content Layout](docroot://web/web-fit-content.md).
 
 > **NOTE**  
 >  
@@ -1118,8 +1166,9 @@ Sets the web layout mode. When this attribute is not explicitly called, the web 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [WebLayoutMode](arkts-arkweb-web-weblayoutmode-e.md) | Yes | Web layout mode.<br>When **null** or **undefined** is passed in, the value is **WebLayoutMode.NONE**. |
+| mode | [WebLayoutMode](arkts-arkweb-weblayoutmode-e.md) | Yes | Web layout mode.<br>When **null** or **undefined** is passed in, the value is **WebLayoutMode.NONE**. |
 
+<a id="mediaoptions"></a>
 ## mediaOptions
 
 ```TypeScript
@@ -1134,7 +1183,7 @@ Sets the web-based media playback policy, including the validity period for auto
 >  
 > - The media playback policy controls videos with an audio track.  
 >  
-> - You are advised to set [audioExclusive](arkts-arkweb-web-webmediaoptions-i.md) to the same value for all **Web**  
+> - You are advised to set [audioExclusive](arkts-arkweb-webmediaoptions-i.md) to the same value for all **Web**  
 > components.  
 >  
 > - Audio and video interruption takes effect within an application and between applications, and playback  
@@ -1152,8 +1201,9 @@ Sets the web-based media playback policy, including the validity period for auto
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [WebMediaOptions](arkts-arkweb-web-webmediaoptions-i.md) | Yes | Web-based media playback policy.<br>After the parameter settings are updated,the playback must be started again for the settings to take effect.<br>When **undefined** or **null** is passed in, **{resumeInterval: 0, audioExclusive: true}** is used. |
+| options | [WebMediaOptions](arkts-arkweb-webmediaoptions-i.md) | Yes | Web-based media playback policy.<br>After the parameter settings are updated,the playback must be started again for the settings to take effect.<br>When **undefined** or **null** is passed in, **{resumeInterval: 0, audioExclusive: true}** is used. |
 
+<a id="mediaplaygestureaccess"></a>
 ## mediaPlayGestureAccess
 
 ```TypeScript
@@ -1176,6 +1226,7 @@ Sets whether video playback must be started by user gestures. This API is not ap
 | --- | --- | --- | --- |
 | access | boolean | Yes | Whether video playback must be started by user gestures.<br>The value **true** indicates that video playback must be started by user gestures, and **false** indicates the opposite.<br>If **undefined** or **null** is passed in, the value is **false**. |
 
+<a id="metaviewport"></a>
 ## metaViewport
 
 ```TypeScript
@@ -1200,6 +1251,7 @@ Sets whether the viewport property of the meta tag is enabled.
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Whether the viewport property of the meta tag is enabled. |
 
+<a id="minfontsize"></a>
 ## minFontSize
 
 ```TypeScript
@@ -1224,6 +1276,7 @@ When no attribute is explicitly called, the default minimum font size of the web
 | --- | --- | --- | --- |
 | size | number | Yes | Minimum font size to set, in px.<br>Value range: [-2^31, 2^31-1]. In actual rendering,values greater than 72 px are handled as 72 px, and values less than 1 px are handled as 1 px.<br>When **null** or **undefined** is passed in, the value is **8**. |
 
+<a id="minlogicalfontsize"></a>
 ## minLogicalFontSize
 
 ```TypeScript
@@ -1252,6 +1305,7 @@ When this attribute is not explicitly called, the default minimum logical font s
 | --- | --- | --- | --- |
 | size | number | Yes | Minimum logical font size to set, in px.<br>Value range: [-2^31, 2^31-1]. In actual rendering, values greater than 72 px are handled as 72 px, and values less than 1 px are handled as 1 px.<br>When **null** or **undefined** is passed in, the value is **18**. |
 
+<a id="mixedmode"></a>
 ## mixedMode
 
 ```TypeScript
@@ -1272,8 +1326,9 @@ Sets the behavior when a secure origin attempts to load a resource from an insec
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mixedMode | [MixedMode](arkts-arkweb-web-mixedmode-e.md) | Yes | The mixed mode, which can be {@link MixedMode}. |
+| mixedMode | [MixedMode](arkts-arkweb-mixedmode-e.md) | Yes | The mixed mode, which can be {@link MixedMode}. |
 
+<a id="multiwindowaccess"></a>
 ## multiWindowAccess
 
 ```TypeScript
@@ -1296,6 +1351,7 @@ Sets whether to enable the multi-window permission.
 | --- | --- | --- | --- |
 | multiWindow | boolean | Yes | True if it needs to be triggered manually by the user else false. |
 
+<a id="nativeembedoptions"></a>
 ## nativeEmbedOptions
 
 ```TypeScript
@@ -1314,8 +1370,9 @@ Sets the same-layer rendering configuration. This attribute takes effect only wh
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [EmbedOptions](arkts-arkweb-web-embedoptions-i.md) | No | Configuration options of the same-layer rendering.<br>If **undefined** or **null** is passed in, the value **{supportDefaultIntrinsicSize: false}** is used. |
+| options | [EmbedOptions](arkts-arkweb-embedoptions-i.md) | No | Configuration options of the same-layer rendering.<br>If **undefined** or **null** is passed in, the value **{supportDefaultIntrinsicSize: false}** is used. |
 
+<a id="nestedscroll"></a>
 ## nestedScroll
 
 ```TypeScript
@@ -1338,15 +1395,16 @@ Called to setting the nested scroll options.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | NestedScrollOptions \| NestedScrollOptionsExt | Yes | options for nested scrolling.<br>**Since:** 14 |
+| value | [NestedScrollOptions](../../apis-arkui/arkts-components/arkts-arkui-nestedscrolloptions-i.md) \| NestedScrollOptionsExt | Yes | options for nested scrolling.<br>**Since:** 14 |
 
+<a id="onactivatecontent"></a>
 ## onActivateContent
 
 ```TypeScript
 onActivateContent(callback: Callback<void>)
 ```
 
-Triggered to check whether a bound **Web** instance exists based on the name when a web page triggers **window.open(url, name)**. If the instance exists, it receives this callback to notify the application of displaying it on the front end. If it does not exist, the application is notified to create a new **Web** instance through [onWindowNew](../../../../reference/apis-arkweb/arkts-basic-components-web-events.md#onwindownew9).
+Triggered to check whether a bound **Web** instance exists based on the name when a web page triggers **window.open(url, name)**. If the instance exists, it receives this callback to notify the application of displaying it on the front end. If it does not exist, the application is notified to create a new **Web** instance through [onWindowNew](docroot://reference/apis-arkweb/arkts-basic-components-web-events.md#onwindownew9).
 
 **Since:** 20
 
@@ -1358,8 +1416,9 @@ Triggered to check whether a bound **Web** instance exists based on the name whe
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback triggered on a new page after **window.open** is triggered on the |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback triggered on a new page after **window.open** is triggered on the |
 
+<a id="onadsblocked"></a>
 ## onAdsBlocked
 
 ```TypeScript
@@ -1382,6 +1441,7 @@ Called when received Ads blocked results.If blocked results exist at the end of 
 | --- | --- | --- | --- |
 | callback | [OnAdsBlockedCallback](arkts-arkweb-onadsblockedcallback-t.md) | Yes | The callback for OnAdsBlockedCallback. |
 
+<a id="onalert"></a>
 ## onAlert
 
 ```TypeScript
@@ -1402,8 +1462,9 @@ Triggered when alert() is invoked to display an alert dialog box on the web page
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnAlertEvent, boolean> | Yes | Callback used when alert() is invoked to display an alert dialog box on the web |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnAlertEvent, boolean&gt; | Yes | Callback used when alert() is invoked to display an alert dialog box on the web |
 
+<a id="onaudiostatechanged"></a>
 ## onAudioStateChanged
 
 ```TypeScript
@@ -1424,8 +1485,9 @@ Triggered when the audio playback status on the web page changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnAudioStateChangedEvent> | Yes | Callback invoked when the audio playback status on the web page changes. Before API 12�� use { function } as param. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnAudioStateChangedEvent&gt; | Yes | Callback invoked when the audio playback status on the web page changes. Before API 12�� use { function } as param. |
 
+<a id="onbeforeunload"></a>
 ## onBeforeUnload
 
 ```TypeScript
@@ -1446,8 +1508,9 @@ Triggered when the Web wants to confirm navigation from JavaScript onbeforeunloa
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnBeforeUnloadEvent, boolean> | Yes | The triggered function when the web page wants to confirm navigation from JavaScript |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnBeforeUnloadEvent, boolean&gt; | Yes | The triggered function when the web page wants to confirm navigation from JavaScript |
 
+<a id="oncameracapturestatechange"></a>
 ## onCameraCaptureStateChange
 
 ```TypeScript
@@ -1478,6 +1541,7 @@ You can use the **startCamera**, **stopCamera**, and **closeCamera** APIs to ena
 | --- | --- | --- | --- |
 | callback | [OnCameraCaptureStateChangeCallback](arkts-arkweb-oncameracapturestatechangecallback-t.md) | Yes | Callback triggered when the camera capture state changes.It returns the original and new states. |
 
+<a id="onclientauthenticationrequest"></a>
 ## onClientAuthenticationRequest
 
 ```TypeScript
@@ -1498,8 +1562,9 @@ Triggered when the Web page needs ssl client certificate from the user.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnClientAuthenticationEvent> | Yes | The triggered callback when needs ssl client certificate from the user. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnClientAuthenticationEvent&gt; | Yes | The triggered callback when needs ssl client certificate from the user. [since 9 - 11] |
 
+<a id="onconfirm"></a>
 ## onConfirm
 
 ```TypeScript
@@ -1520,8 +1585,9 @@ Triggered when confirm() is invoked by the web page.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnConfirmEvent, boolean> | Yes | Callback triggered when confirm() is invoked by the web page. [since 8 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnConfirmEvent, boolean&gt; | Yes | Callback triggered when confirm() is invoked by the web page. [since 8 - 11] |
 
+<a id="onconsole"></a>
 ## onConsole
 
 ```TypeScript
@@ -1542,8 +1608,9 @@ Triggered when the web page receives a JavaScript console message.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnConsoleEvent, boolean> | Yes | The triggered function when the web page receives a JavaScript console |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnConsoleEvent, boolean&gt; | Yes | The triggered function when the web page receives a JavaScript console |
 
+<a id="oncontextmenuhide"></a>
 ## onContextMenuHide
 
 ```TypeScript
@@ -1566,6 +1633,7 @@ Triggered when called to allow custom hide of the context menu.
 | --- | --- | --- | --- |
 | callback | [OnContextMenuHideCallback](arkts-arkweb-oncontextmenuhidecallback-t.md) | Yes | The triggered function when called to allow custom hide of the |
 
+<a id="oncontextmenushow"></a>
 ## onContextMenuShow
 
 ```TypeScript
@@ -1586,8 +1654,9 @@ Triggered when called to allow custom display of the context menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnContextMenuShowEvent, boolean> | Yes | The triggered callback when called to allow custom display of the context |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnContextMenuShowEvent, boolean&gt; | Yes | The triggered callback when called to allow custom display of the context |
 
+<a id="oncontrollerattached"></a>
 ## onControllerAttached
 
 ```TypeScript
@@ -1608,8 +1677,9 @@ Triggered when the controller is successfully bound to the **Web** component. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () => void | Yes | The triggered callback when web controller initialization success. |
+| callback | () =&gt; void | Yes | The triggered callback when web controller initialization success. |
 
+<a id="ondataresubmitted"></a>
 ## onDataResubmitted
 
 ```TypeScript
@@ -1630,8 +1700,9 @@ Triggered when the form could be resubmitted.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnDataResubmittedEvent> | Yes | The triggered callback to decision whether resend form data or not. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnDataResubmittedEvent&gt; | Yes | The triggered callback to decision whether resend form data or not. [since 9 - 11] |
 
+<a id="ondetectedblankscreen"></a>
 ## onDetectedBlankScreen
 
 ```TypeScript
@@ -1657,6 +1728,7 @@ Called when the **Web** component detects a blank screen.
 | --- | --- | --- | --- |
 | callback | [OnDetectBlankScreenCallback](arkts-arkweb-ondetectblankscreencallback-t.md) | Yes | Callback triggered when the **Web** component detects a blank screen. |
 
+<a id="ondownloadstart"></a>
 ## onDownloadStart
 
 ```TypeScript
@@ -1677,15 +1749,16 @@ Triggered when starting to download.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnDownloadStartEvent> | Yes | The triggered function when starting to download. [since 8 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnDownloadStartEvent&gt; | Yes | The triggered function when starting to download. [since 8 - 11] |
 
+<a id="onerrorreceive"></a>
 ## onErrorReceive
 
 ```TypeScript
 onErrorReceive(callback: Callback<OnErrorReceiveEvent>)
 ```
 
-Triggered when an error occurs during web page loading. The error may occur on the main resource or sub-resource.You can use [isMainFrame](arkts-arkweb-web-webresourcerequest-c.md#ismainframe-1) to determine whether the error occurs on the main resource. This API is called when there is no network connection.
+Triggered when an error occurs during web page loading. The error may occur on the main resource or sub-resource.You can use [isMainFrame](arkts-arkweb-webresourcerequest-c.md#ismainframe-1) to determine whether the error occurs on the main resource. This API is called when there is no network connection.
 
 **Since:** 8
 
@@ -1699,8 +1772,9 @@ Triggered when an error occurs during web page loading. The error may occur on t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnErrorReceiveEvent> | Yes | The triggered function when the web page receives a web resource loading |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnErrorReceiveEvent&gt; | Yes | The triggered function when the web page receives a web resource loading |
 
+<a id="onfaviconreceived"></a>
 ## onFaviconReceived
 
 ```TypeScript
@@ -1721,8 +1795,9 @@ Triggered when the application receive a new favicon for the current web page.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnFaviconReceivedEvent> | Yes | The triggered callback when the application receive a new favicon for the |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnFaviconReceivedEvent&gt; | Yes | The triggered callback when the application receive a new favicon for the |
 
+<a id="onfileselectorshow"></a>
 ## onFileSelectorShow
 
 ```TypeScript
@@ -1745,8 +1820,9 @@ Triggered when the file selector shows.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event?: { callback: Function, fileSelector: object }) => void | Yes | The triggered when the file selector shows. |
+| callback | (event?: { callback: Function, fileSelector: object }) =&gt; void | Yes | The triggered when the file selector shows. |
 
+<a id="onfirstcontentfulpaint"></a>
 ## onFirstContentfulPaint
 
 ```TypeScript
@@ -1767,8 +1843,9 @@ Triggered when the first content paint occurs on the web page.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnFirstContentfulPaintEvent> | Yes | Callback invoked when the first content paint occurs on the web page.<br>**Since:** 12 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnFirstContentfulPaintEvent&gt; | Yes | Callback invoked when the first content paint occurs on the web page.<br>**Since:** 12 |
 
+<a id="onfirstmeaningfulpaint"></a>
 ## onFirstMeaningfulPaint
 
 ```TypeScript
@@ -1791,6 +1868,7 @@ Triggered when the first meaningful paint occurs on the web page.
 | --- | --- | --- | --- |
 | callback | [OnFirstMeaningfulPaintCallback](arkts-arkweb-onfirstmeaningfulpaintcallback-t.md) | Yes | Callback invoked when the First Meaningful Paint occurs on the web page. |
 
+<a id="onfirstscreenpaint"></a>
 ## onFirstScreenPaint
 
 ```TypeScript
@@ -1811,6 +1889,7 @@ Triggered when the first screen of the web page has been painted.
 | --- | --- | --- | --- |
 | callback | [OnFirstScreenPaintCallback](arkts-arkweb-onfirstscreenpaintcallback-t.md) | Yes | callback triggered to report the info for the first screen painting of the current web page. |
 
+<a id="onfullscreenenter"></a>
 ## onFullScreenEnter
 
 ```TypeScript
@@ -1833,6 +1912,7 @@ Triggered when the **Web** component enters full screen mode.
 | --- | --- | --- | --- |
 | callback | [OnFullScreenEnterCallback](arkts-arkweb-onfullscreenentercallback-t.md) | Yes | Callback invoked when the **Web** component enters full screen mode. Before API 12�� use { function } as param. |
 
+<a id="onfullscreenexit"></a>
 ## onFullScreenExit
 
 ```TypeScript
@@ -1853,8 +1933,9 @@ Triggered when the **Web** component exits full screen mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () => void | Yes | Callback invoked when the component exits full screen mode. |
+| callback | () =&gt; void | Yes | Callback invoked when the component exits full screen mode. |
 
+<a id="ongeolocationhide"></a>
 ## onGeolocationHide
 
 ```TypeScript
@@ -1875,8 +1956,9 @@ Called to notify the user that the request for obtaining the geolocation informa
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () => void | Yes | Callback invoked when the request for obtaining geolocation information has been |
+| callback | () =&gt; void | Yes | Callback invoked when the request for obtaining geolocation information has been |
 
+<a id="ongeolocationshow"></a>
 ## onGeolocationShow
 
 ```TypeScript
@@ -1897,8 +1979,9 @@ Called when a request to obtain the geolocation information is received.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnGeolocationShowEvent> | Yes | Callback invoked when a request to obtain the geolocation information is received.<br>**Since:** 12 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnGeolocationShowEvent&gt; | Yes | Callback invoked when a request to obtain the geolocation information is received.<br>**Since:** 12 |
 
+<a id="onhttpauthrequest"></a>
 ## onHttpAuthRequest
 
 ```TypeScript
@@ -1919,8 +2002,9 @@ Triggered when the browser needs credentials from the user.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnHttpAuthRequestEvent, boolean> | Yes | The triggered when the browser needs credentials from the user. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnHttpAuthRequestEvent, boolean&gt; | Yes | The triggered when the browser needs credentials from the user. [since 9 - 11] |
 
+<a id="onhttperrorreceive"></a>
 ## onHttpErrorReceive
 
 ```TypeScript
@@ -1941,8 +2025,9 @@ Triggered when the web page receives a web resource loading HTTP error.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnHttpErrorReceiveEvent> | Yes | The triggered function when the web page receives a web resource loading HTTP |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnHttpErrorReceiveEvent&gt; | Yes | The triggered function when the web page receives a web resource loading HTTP |
 
+<a id="oninputmethodattached"></a>
 ## onInputmethodAttached
 
 ```TypeScript
@@ -1965,6 +2050,7 @@ The callback is triggered when the inputmethod is attached to the IMF.
 | --- | --- | --- | --- |
 | callback | [OnInputmethodAttachedCallback](arkts-arkweb-oninputmethodattachedcallback-t.md) | Yes | The triggered callback when the inputmethod is attached to the IMF. |
 
+<a id="onintelligenttrackingpreventionresult"></a>
 ## onIntelligentTrackingPreventionResult
 
 ```TypeScript
@@ -1987,6 +2073,7 @@ Called when tracker's cookie is prevented.
 | --- | --- | --- | --- |
 | callback | [OnIntelligentTrackingPreventionCallback](arkts-arkweb-onintelligenttrackingpreventioncallback-t.md) | Yes | Callback triggered when tracker's cookie is prevented. |
 
+<a id="oninterceptkeyevent"></a>
 ## onInterceptKeyEvent
 
 ```TypeScript
@@ -2007,8 +2094,9 @@ Triggered when the key event is intercepted and before it is consumed by the web
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event: KeyEvent) => boolean | Yes | Key event info. |
+| callback | (event: KeyEvent) =&gt; boolean | Yes | Key event info. |
 
+<a id="oninterceptkeyboardattach"></a>
 ## onInterceptKeyboardAttach
 
 ```TypeScript
@@ -2031,6 +2119,7 @@ Triggered before any editable element (such as the **input** tag) on the web pag
 | --- | --- | --- | --- |
 | callback | [WebKeyboardCallback](arkts-arkweb-webkeyboardcallback-t.md) | Yes | Callback invoked for intercepting the soft keyboard started by the web page. |
 
+<a id="oninterceptrequest"></a>
 ## onInterceptRequest
 
 ```TypeScript
@@ -2053,8 +2142,9 @@ This API is used to intercept the resource loading and return the response data.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnInterceptRequestEvent, WebResourceResponse> | Yes | The triggered callback when the resources loading is intercepted. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnInterceptRequestEvent, WebResourceResponse&gt; | Yes | The triggered callback when the resources loading is intercepted. [since 9 - 11] |
 
+<a id="onlargestcontentfulpaint"></a>
 ## onLargestContentfulPaint
 
 ```TypeScript
@@ -2077,6 +2167,7 @@ Triggered when the largest content paint occurs on the web page.
 | --- | --- | --- | --- |
 | callback | [OnLargestContentfulPaintCallback](arkts-arkweb-onlargestcontentfulpaintcallback-t.md) | Yes | Callback invoked when the largest content paint occurs on the web page. |
 
+<a id="onloadfinished"></a>
 ## onLoadFinished
 
 ```TypeScript
@@ -2097,8 +2188,9 @@ Notify the host application that a page has finished loading. This method is cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnLoadFinishedEvent> | Yes | The triggered function at the end of web page loading. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnLoadFinishedEvent&gt; | Yes | The triggered function at the end of web page loading. |
 
+<a id="onloadintercept"></a>
 ## onLoadIntercept
 
 ```TypeScript
@@ -2119,8 +2211,9 @@ Triggered when the navigation is intercepted.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnLoadInterceptEvent, boolean> | Yes | The triggered callback when the navigation is intercepted. [since 10 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnLoadInterceptEvent, boolean&gt; | Yes | The triggered callback when the navigation is intercepted. [since 10 - 11] |
 
+<a id="onloadstarted"></a>
 ## onLoadStarted
 
 ```TypeScript
@@ -2141,8 +2234,9 @@ Triggered at the begin of web page loading. This method is called once for each 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnLoadStartedEvent> | Yes | The triggered function at the begin of web page loading. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnLoadStartedEvent&gt; | Yes | The triggered function at the begin of web page loading. |
 
+<a id="onmicrophonecapturestatechange"></a>
 ## onMicrophoneCaptureStateChange
 
 ```TypeScript
@@ -2151,7 +2245,7 @@ onMicrophoneCaptureStateChange(callback: OnMicrophoneCaptureStateChangeCallback)
 
 Triggered to notify the user of the microphone state on the current web page, which can be **None**, **Active**,or **Paused**. This API uses an asynchronous callback to return the result.
 
-You can use the **resumeMicrophone**, **pauseMicrophone**, and **stopMicrophone** APIs to resume, pause, and stop the microphone. For details about how to use them, see [resumeMicrophone](../../../../reference/apis-arkweb/arkts-apis-webview-WebviewController.md#resumemicrophone23).
+You can use the **resumeMicrophone**, **pauseMicrophone**, and **stopMicrophone** APIs to resume, pause, and stop the microphone. For details about how to use them, see [resumeMicrophone](docroot://reference/apis-arkweb/arkts-apis-webview-WebviewController.md#resumemicrophone23).
 
 > **NOTE**  
 >  
@@ -2186,6 +2280,7 @@ You can use the **resumeMicrophone**, **pauseMicrophone**, and **stopMicrophone*
 | --- | --- | --- | --- |
 | callback | [OnMicrophoneCaptureStateChangeCallback](arkts-arkweb-onmicrophonecapturestatechangecallback-t.md) | Yes | Callback triggered when the microphone capture state changes. It returns the original and new states. |
 
+<a id="onnativeembedgestureevent"></a>
 ## onNativeEmbedGestureEvent
 
 ```TypeScript
@@ -2206,8 +2301,9 @@ Triggered when a finger touches a same-layer tag.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event: NativeEmbedTouchInfo) => void | Yes | Callback invoked when a finger touches a same-layer tag. |
+| callback | (event: NativeEmbedTouchInfo) =&gt; void | Yes | Callback invoked when a finger touches a same-layer tag. |
 
+<a id="onnativeembedlifecyclechange"></a>
 ## onNativeEmbedLifecycleChange
 
 ```TypeScript
@@ -2228,8 +2324,9 @@ Triggered when the lifecycle of the same-layer tag changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event: NativeEmbedDataInfo) => void | Yes | Callback invoked when the lifecycle of the same-layer tag changes. |
+| callback | (event: NativeEmbedDataInfo) =&gt; void | Yes | Callback invoked when the lifecycle of the same-layer tag changes. |
 
+<a id="onnativeembedmouseevent"></a>
 ## onNativeEmbedMouseEvent
 
 ```TypeScript
@@ -2253,6 +2350,7 @@ Triggered when the following operations are performed on the same-layer tag:
 | --- | --- | --- | --- |
 | callback | [MouseInfoCallback](arkts-arkweb-mouseinfocallback-t.md) | Yes | Callback triggered when a same-layer tag is clicked using the mouse or touchpad. |
 
+<a id="onnativeembedobjectparamchange"></a>
 ## onNativeEmbedObjectParamChange
 
 ```TypeScript
@@ -2273,6 +2371,7 @@ Called when the **param** element embedded in the same-layer rendering tag **obj
 | --- | --- | --- | --- |
 | callback | [OnNativeEmbedObjectParamChangeCallback](arkts-arkweb-onnativeembedobjectparamchangecallback-t.md) | Yes | Callback triggered when the **param** element embedded in the same-layer rendering tag **object** is added, modified, or deleted. |
 
+<a id="onnativeembedvisibilitychange"></a>
 ## onNativeEmbedVisibilityChange
 
 ```TypeScript
@@ -2293,6 +2392,7 @@ Triggered when embed visibility changes.
 | --- | --- | --- | --- |
 | callback | [OnNativeEmbedVisibilityChangeCallback](arkts-arkweb-onnativeembedvisibilitychangecallback-t.md) | Yes | Callback triggered when embed visibility changes. |
 
+<a id="onnavigationentrycommitted"></a>
 ## onNavigationEntryCommitted
 
 ```TypeScript
@@ -2315,6 +2415,7 @@ Called when the load committed.
 | --- | --- | --- | --- |
 | callback | [OnNavigationEntryCommittedCallback](arkts-arkweb-onnavigationentrycommittedcallback-t.md) | Yes | Function Triggered when a load committed. |
 
+<a id="onoverscroll"></a>
 ## onOverScroll
 
 ```TypeScript
@@ -2335,8 +2436,9 @@ Triggered when the overscroll occurs.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnOverScrollEvent> | Yes | Function triggered when the overscroll occurs. [since 10 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnOverScrollEvent&gt; | Yes | Function triggered when the overscroll occurs. [since 10 - 11] |
 
+<a id="onoverrideerrorpage"></a>
 ## onOverrideErrorPage
 
 ```TypeScript
@@ -2359,6 +2461,7 @@ Triggered when the web page's document resource error.
 | --- | --- | --- | --- |
 | callback | [OnOverrideErrorPageCallback](arkts-arkweb-onoverrideerrorpagecallback-t.md) | Yes | The triggered function when the |
 
+<a id="onoverrideurlloading"></a>
 ## onOverrideUrlLoading
 
 ```TypeScript
@@ -2381,6 +2484,7 @@ When the URL is about to be loaded into the current Web, it gives the applicatio
 | --- | --- | --- | --- |
 | callback | [OnOverrideUrlLoadingCallback](arkts-arkweb-onoverrideurlloadingcallback-t.md) | Yes | The callback for onOverrideUrlLoading. |
 
+<a id="onpagebegin"></a>
 ## onPageBegin
 
 ```TypeScript
@@ -2401,8 +2505,9 @@ Called when the web page starts to be loaded.This API is called only for the mai
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnPageBeginEvent> | Yes | The triggered function at the begin of web page loading. [since 8 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnPageBeginEvent&gt; | Yes | The triggered function at the begin of web page loading. [since 8 - 11] |
 
+<a id="onpageend"></a>
 ## onPageEnd
 
 ```TypeScript
@@ -2423,8 +2528,9 @@ Triggered at the end of web page loading.This callback is called only for the ma
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnPageEndEvent> | Yes | The triggered function at the end of web page loading. [since 8 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnPageEndEvent&gt; | Yes | The triggered function at the end of web page loading. [since 8 - 11] |
 
+<a id="onpagevisible"></a>
 ## onPageVisible
 
 ```TypeScript
@@ -2445,8 +2551,9 @@ Triggered when the old page is not displayed and the new page is about to be vis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnPageVisibleEvent> | Yes | Callback invoked when the old |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnPageVisibleEvent&gt; | Yes | Callback invoked when the old |
 
+<a id="onpdfloadevent"></a>
 ## onPdfLoadEvent
 
 ```TypeScript
@@ -2465,8 +2572,9 @@ Called to notify the user of whether the PDF page is successfully loaded.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnPdfLoadEvent> | Yes | Callback triggered to notify users of whether the PDF page is successfully loaded. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnPdfLoadEvent&gt; | Yes | Callback triggered to notify users of whether the PDF page is successfully loaded. |
 
+<a id="onpdfscrollatbottom"></a>
 ## onPdfScrollAtBottom
 
 ```TypeScript
@@ -2485,8 +2593,9 @@ Called to notify the user that the PDF page has been scrolled to the bottom.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnPdfScrollEvent> | Yes | Callback triggered to notify the user that the PDF page has been scrolled to the bottom. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnPdfScrollEvent&gt; | Yes | Callback triggered to notify the user that the PDF page has been scrolled to the bottom. |
 
+<a id="onpermissionrequest"></a>
 ## onPermissionRequest
 
 ```TypeScript
@@ -2507,8 +2616,9 @@ Triggered when a permission request is received. To call this API, you need to d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnPermissionRequestEvent> | Yes | Callback invoked when a permission request is received. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnPermissionRequestEvent&gt; | Yes | Callback invoked when a permission request is received. |
 
+<a id="onprogresschange"></a>
 ## onProgressChange
 
 ```TypeScript
@@ -2529,8 +2639,9 @@ Triggered when the page loading progress changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnProgressChangeEvent> | Yes | The triggered function when the page loading progress changes. [since 8 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnProgressChangeEvent&gt; | Yes | The triggered function when the page loading progress changes. [since 8 - 11] |
 
+<a id="onprompt"></a>
 ## onPrompt
 
 ```TypeScript
@@ -2551,8 +2662,9 @@ Triggered when prompt() is invoked by the web page.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnPromptEvent, boolean> | Yes | Callback used when prompt() is invoked by the web page. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnPromptEvent, boolean&gt; | Yes | Callback used when prompt() is invoked by the web page. [since 9 - 11] |
 
+<a id="onrefreshaccessedhistory"></a>
 ## onRefreshAccessedHistory
 
 ```TypeScript
@@ -2573,15 +2685,16 @@ Triggered when the Web page refreshes accessed history.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnRefreshAccessedHistoryEvent> | Yes | The triggered callback when the Web page refreshes accessed history. [since 8 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnRefreshAccessedHistoryEvent&gt; | Yes | The triggered callback when the Web page refreshes accessed history. [since 8 - 11] |
 
+<a id="onrenderexited"></a>
 ## onRenderExited
 
 ```TypeScript
 onRenderExited(callback: Callback<OnRenderExitedEvent>)
 ```
 
-Triggered when the rendering process exits abnormally. A rendering process may be shared by multiple **Web** components.Each affected **Web** component triggers this callback. You can call the bound **webviewController** APIs to restore the web page when this callback is triggered. For example, [refresh](../arkts-apis/arkts-arkweb-webview-webviewcontroller-c.md#refresh-1) and [loadUrl](../arkts-apis/arkts-arkweb-webview-webviewcontroller-c.md#loadurl-1).For details about the component lifecycle, see [Lifecycle of the Web Components](../../../../web/web-event-sequence.md)
+Triggered when the rendering process exits abnormally. A rendering process may be shared by multiple **Web** components.Each affected **Web** component triggers this callback. You can call the bound **webviewController** APIs to restore the web page when this callback is triggered. For example, [refresh](../arkts-apis/arkts-arkweb-webview-webviewcontroller-c.md#refresh-1) and [loadUrl](../arkts-apis/arkts-arkweb-webview-webviewcontroller-c.md#loadurl-1).For details about the component lifecycle, see [Lifecycle of the Web Components](docroot://web/web-event-sequence.md)
 
 **Since:** 9
 
@@ -2595,8 +2708,9 @@ Triggered when the rendering process exits abnormally. A rendering process may b
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnRenderExitedEvent> | Yes | Triggered when the rendering process exits abnormally.<br>**Since:** 12 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnRenderExitedEvent&gt; | Yes | Triggered when the rendering process exits abnormally.<br>**Since:** 12 |
 
+<a id="onrenderexited-1"></a>
 ## onRenderExited
 
 ```TypeScript
@@ -2619,8 +2733,9 @@ Triggered when the render process exits.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event?: { detail: object }) => boolean | Yes | The triggered when the render process exits. |
+| callback | (event?: { detail: object }) =&gt; boolean | Yes | The triggered when the render process exits. |
 
+<a id="onrenderprocessnotresponding"></a>
 ## onRenderProcessNotResponding
 
 ```TypeScript
@@ -2641,6 +2756,7 @@ Triggered when the rendering process does not respond. If the **Web** component 
 | --- | --- | --- | --- |
 | callback | [OnRenderProcessNotRespondingCallback](arkts-arkweb-onrenderprocessnotrespondingcallback-t.md) | Yes | The triggered function when render process not responding. |
 
+<a id="onrenderprocessresponding"></a>
 ## onRenderProcessResponding
 
 ```TypeScript
@@ -2661,6 +2777,7 @@ Triggered when the rendering process transitions back to a normal operating stat
 | --- | --- | --- | --- |
 | callback | [OnRenderProcessRespondingCallback](arkts-arkweb-onrenderprocessrespondingcallback-t.md) | Yes | Callback |
 
+<a id="onrequestselected"></a>
 ## onRequestSelected
 
 ```TypeScript
@@ -2681,8 +2798,9 @@ Triggered when the Web gets the focus.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () => void | Yes | The triggered function when the Web gets the focus. |
+| callback | () =&gt; void | Yes | The triggered function when the Web gets the focus. |
 
+<a id="onresourceload"></a>
 ## onResourceLoad
 
 ```TypeScript
@@ -2703,8 +2821,9 @@ Triggered when the url loading.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnResourceLoadEvent> | Yes | The triggered when the url loading. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnResourceLoadEvent&gt; | Yes | The triggered when the url loading. [since 9 - 11] |
 
+<a id="onsafebrowsingcheckfinish"></a>
 ## onSafeBrowsingCheckFinish
 
 ```TypeScript
@@ -2727,6 +2846,7 @@ Triggered when the website security risk check is completed.
 | --- | --- | --- | --- |
 | callback | [OnSafeBrowsingCheckResultCallback](arkts-arkweb-onsafebrowsingcheckresultcallback-t.md) | Yes | Triggered when received website security risk check result. |
 
+<a id="onsafebrowsingcheckresult"></a>
 ## onSafeBrowsingCheckResult
 
 ```TypeScript
@@ -2749,6 +2869,7 @@ Called when received website security risk check result.
 | --- | --- | --- | --- |
 | callback | [OnSafeBrowsingCheckResultCallback](arkts-arkweb-onsafebrowsingcheckresultcallback-t.md) | Yes | Function triggered when received website security risk check result. |
 
+<a id="onscalechange"></a>
 ## onScaleChange
 
 ```TypeScript
@@ -2769,8 +2890,9 @@ Triggered when the scale of WebView changed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnScaleChangeEvent> | Yes | The triggered when the scale of WebView changed. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnScaleChangeEvent&gt; | Yes | The triggered when the scale of WebView changed. [since 9 - 11] |
 
+<a id="onscreencapturerequest"></a>
 ## onScreenCaptureRequest
 
 ```TypeScript
@@ -2791,8 +2913,9 @@ Triggered when a screen capture request is received.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnScreenCaptureRequestEvent> | Yes | Callback invoked when a screen capture request is received. Before API 12�� use { function } as param. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnScreenCaptureRequestEvent&gt; | Yes | Callback invoked when a screen capture request is received. Before API 12�� use { function } as param. |
 
+<a id="onscroll"></a>
 ## onScroll
 
 ```TypeScript
@@ -2821,8 +2944,9 @@ If it is global scrolling, the value of window.pagYOffset or window.pagXOffset w
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnScrollEvent> | Yes | Function triggered when the web page scroll to the specified position. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnScrollEvent&gt; | Yes | Function triggered when the web page scroll to the specified position. [since 9 - 11] |
 
+<a id="onsearchresultreceive"></a>
 ## onSearchResultReceive
 
 ```TypeScript
@@ -2843,8 +2967,9 @@ Notify search result to host application through onSearchResultReceive.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnSearchResultReceiveEvent> | Yes | Function Triggered when the host application call searchAllAsync. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnSearchResultReceiveEvent&gt; | Yes | Function Triggered when the host application call searchAllAsync. |
 
+<a id="onshowfileselector"></a>
 ## onShowFileSelector
 
 ```TypeScript
@@ -2865,8 +2990,9 @@ Triggered when the file selector shows.Call this function to handle HTML forms w
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnShowFileSelectorEvent, boolean> | Yes | The triggered when the file selector shows. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnShowFileSelectorEvent, boolean&gt; | Yes | The triggered when the file selector shows. [since 9 - 11] |
 
+<a id="onsslerrorevent"></a>
 ## onSslErrorEvent
 
 ```TypeScript
@@ -2889,6 +3015,7 @@ Called to notify users when an SSL error occurs during the loading of resources 
 | --- | --- | --- | --- |
 | callback | [OnSslErrorEventCallback](arkts-arkweb-onsslerroreventcallback-t.md) | Yes | The triggered callback when the Web page receives an ssl Error. |
 
+<a id="onsslerroreventreceive"></a>
 ## onSslErrorEventReceive
 
 ```TypeScript
@@ -2909,8 +3036,9 @@ Called to notify users when an SSL error occurs with a request for the main fram
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnSslErrorEventReceiveEvent> | Yes | The triggered callback when the Web page receives an ssl Error. [since 9 - 11] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnSslErrorEventReceiveEvent&gt; | Yes | The triggered callback when the Web page receives an ssl Error. [since 9 - 11] |
 
+<a id="onsslerrorreceive"></a>
 ## onSslErrorReceive
 
 ```TypeScript
@@ -2933,8 +3061,9 @@ Triggered when the Web page receives an ssl Error.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event?: { handler: Function, error: object }) => void | Yes | The triggered callback when the Web page receives an ssl Error. |
+| callback | (event?: { handler: Function, error: object }) =&gt; void | Yes | The triggered callback when the Web page receives an ssl Error. |
 
+<a id="ontextselectionchange"></a>
 ## onTextSelectionChange
 
 ```TypeScript
@@ -2955,6 +3084,7 @@ Called when the text selection changes.
 | --- | --- | --- | --- |
 | callback | [TextSelectionChangeCallback](arkts-arkweb-textselectionchangecallback-t.md) | Yes | when the text selection changes. |
 
+<a id="ontitlereceive"></a>
 ## onTitleReceive
 
 ```TypeScript
@@ -2975,8 +3105,9 @@ Notifies the application that the title has changed.If the page being loaded doe
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnTitleReceiveEvent> | Yes | The triggered function when the title of the main application document |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnTitleReceiveEvent&gt; | Yes | The triggered function when the title of the main application document |
 
+<a id="ontouchiconurlreceived"></a>
 ## onTouchIconUrlReceived
 
 ```TypeScript
@@ -2997,8 +3128,9 @@ Triggered when the application receive the url of an apple-touch-icon.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnTouchIconUrlReceivedEvent> | Yes | The triggered callback when the application receive an new url of an |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnTouchIconUrlReceivedEvent&gt; | Yes | The triggered callback when the application receive an new url of an |
 
+<a id="onurlloadintercept"></a>
 ## onUrlLoadIntercept
 
 ```TypeScript
@@ -3021,8 +3153,9 @@ Triggered when the URL loading is intercepted.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event?: { data: string \| WebResourceRequest }) => boolean | Yes | The triggered callback when the URL loading is intercepted. |
+| callback | (event?: { data: string \| WebResourceRequest }) =&gt; boolean | Yes | The triggered callback when the URL loading is intercepted. |
 
+<a id="onverifypin"></a>
 ## onVerifyPin
 
 ```TypeScript
@@ -3043,6 +3176,7 @@ Triggered when the Web page needs verify pin from the user.
 | --- | --- | --- | --- |
 | callback | [OnVerifyPinCallback](arkts-arkweb-onverifypincallback-t.md) | Yes | The triggered callback when needs verify pin from the user. |
 
+<a id="onviewportfitchanged"></a>
 ## onViewportFitChanged
 
 ```TypeScript
@@ -3065,13 +3199,14 @@ Triggered when the **viewport-fit** configuration in the web page's **meta** tag
 | --- | --- | --- | --- |
 | callback | [OnViewportFitChangedCallback](arkts-arkweb-onviewportfitchangedcallback-t.md) | Yes | Callback invoked when the **viewport-fit** configuration in the web page's **meta** tag changes. |
 
+<a id="onwindowexit"></a>
 ## onWindowExit
 
 ```TypeScript
 onWindowExit(callback: () => void)
 ```
 
-Triggered when this window is closed. This API works in the same way as [onWindowNew](../../../../reference/apis-arkweb/arkts-basic-components-web-events.md#onwindownew9). For security,applications should notify users that the pages they interact with are closed.
+Triggered when this window is closed. This API works in the same way as [onWindowNew](docroot://reference/apis-arkweb/arkts-basic-components-web-events.md#onwindownew9). For security,applications should notify users that the pages they interact with are closed.
 
 **Since:** 9
 
@@ -3085,8 +3220,9 @@ Triggered when this window is closed. This API works in the same way as [onWindo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () => void | Yes | The triggered callback when web page requires the user to close a window. |
+| callback | () =&gt; void | Yes | The triggered callback when web page requires the user to close a window. |
 
+<a id="onwindownew"></a>
 ## onWindowNew
 
 ```TypeScript
@@ -3107,8 +3243,9 @@ Triggered when web page requires to create a new window.If the {@link setWebCont
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnWindowNewEvent> | Yes | The web page requests the user to create a window. [since 12] |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnWindowNewEvent&gt; | Yes | The web page requests the user to create a window. [since 12] |
 
+<a id="onwindownewext"></a>
 ## onWindowNewExt
 
 ```TypeScript
@@ -3129,8 +3266,9 @@ Triggered when web page requires to create a new window.If the {@link setWebCont
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<OnWindowNewExtEvent> | Yes | The triggered callback when web page requires the user |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;OnWindowNewExtEvent&gt; | Yes | The triggered callback when web page requires the user |
 
+<a id="onlineimageaccess"></a>
 ## onlineImageAccess
 
 ```TypeScript
@@ -3153,6 +3291,7 @@ Sets whether to enable access to online images through HTTP and HTTPS. When this
 | --- | --- | --- | --- |
 | onlineImageAccess | boolean | Yes | Whether to enable access to online images through HTTP and HTTPS.<br>The value **true** means to enable access to online images through HTTP and HTTPS, and **false** means the opposite.<br>If **undefined** or **null** is passed in, the value is **false**. |
 
+<a id="optimizeparserbudget"></a>
 ## optimizeParserBudget
 
 ```TypeScript
@@ -3179,6 +3318,7 @@ When the FCP of a page is triggered, the default segment parsing logic is restor
 | --- | --- | --- | --- |
 | optimizeParserBudget | boolean | Yes | Whether to enable segment-based HTML parsing optimization.<br>The value |
 
+<a id="overscrollmode"></a>
 ## overScrollMode
 
 ```TypeScript
@@ -3199,8 +3339,9 @@ Sets the over-scroll mode for web
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [OverScrollMode](arkts-arkweb-web-overscrollmode-e.md) | Yes | The over-scroll mode, which can be {@link OverScrollMode}.The default value is OverScrollMode.NEVER. |
+| mode | [OverScrollMode](arkts-arkweb-overscrollmode-e.md) | Yes | The over-scroll mode, which can be {@link OverScrollMode}.The default value is OverScrollMode.NEVER. |
 
+<a id="overviewmodeaccess"></a>
 ## overviewModeAccess
 
 ```TypeScript
@@ -3223,6 +3364,7 @@ Sets whether to load web pages by using the overview mode. That is, zoom out the
 | --- | --- | --- | --- |
 | overviewModeAccess | boolean | Yes | Whether to load web pages by using the overview mode.<br>The value **true** means to load web pages by using the overview mode, and **false** means the opposite.<br>If **undefined** or **null** is passed in, the value is **false**. |
 
+<a id="password"></a>
 ## password
 
 ```TypeScript
@@ -3247,6 +3389,7 @@ Sets whether the Web should save the password.
 | --- | --- | --- | --- |
 | password | boolean | Yes | {@code true} means the Web can save the password; {@code false} otherwise. |
 
+<a id="pinchsmooth"></a>
 ## pinchSmooth
 
 ```TypeScript
@@ -3269,6 +3412,7 @@ Sets whether to enable pinch smooth mode for the web page. When this attribute i
 | --- | --- | --- | --- |
 | isEnabled | boolean | Yes | Whether to enable pinch smooth mode for the web page.<br>The value **true** means to enable pinch smooth mode, and **false** means the opposite.<br>If **undefined** or **null** is passed in, the value is **false**. |
 
+<a id="registernativeembedrule"></a>
 ## registerNativeEmbedRule
 
 ```TypeScript
@@ -3281,7 +3425,7 @@ If the specified type is the same as the W3C standard <object\> or <embed\> type
 
 This API is also controlled by **enableNativeEmbedMode** and does not take effect when same-layer rendering is disabled. When this API is not used, the ArkWeb kernel recognizes the <embed\> tags with the "native/" prefix as same-layer tags.
 
-For details, see [Using Same-Layer Rendering](../../../../web/web-same-layer.md#rendering-text-boxes-at-the-same-layer-on-web-pages).
+For details, see [Using Same-Layer Rendering](docroot://web/web-same-layer.md#rendering-text-boxes-at-the-same-layer-on-web-pages).
 
 **Since:** 12
 
@@ -3298,6 +3442,7 @@ For details, see [Using Same-Layer Rendering](../../../../web/web-same-layer.md#
 | tag | string | Yes | Tag name. |
 | type | string | Yes | Tag type. The ArkWeb kernel uses a prefix to match this parameter. |
 
+<a id="rotaterendereffect"></a>
 ## rotateRenderEffect
 
 ```TypeScript
@@ -3316,8 +3461,9 @@ Sets how the final state of the **Web** component's content is rendered during i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| effect | [WebRotateEffect](arkts-arkweb-web-webrotateeffect-e.md) | Yes | How the final state of the **Web** component's content is rendered during its width and height animation process when the component rotates. |
+| effect | [WebRotateEffect](arkts-arkweb-webrotateeffect-e.md) | Yes | How the final state of the **Web** component's content is rendered during its width and height animation process when the component rotates. |
 
+<a id="runjavascriptondocumentend"></a>
 ## runJavaScriptOnDocumentEnd
 
 ```TypeScript
@@ -3348,8 +3494,9 @@ Injects the JavaScripts that will be run after document has been parsed finished
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scripts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ScriptItem> | Yes | The JavaScripts executed in array order. |
+| scripts | Array&lt;ScriptItem&gt; | Yes | The JavaScripts executed in array order. |
 
+<a id="runjavascriptondocumentstart"></a>
 ## runJavaScriptOnDocumentStart
 
 ```TypeScript
@@ -3381,8 +3528,9 @@ Injects the JavaScripts that will be run just after document object has been cre
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scripts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ScriptItem> | Yes | The JavaScripts executed in array order. |
+| scripts | Array&lt;ScriptItem&gt; | Yes | The JavaScripts executed in array order. |
 
+<a id="runjavascriptonheadend"></a>
 ## runJavaScriptOnHeadEnd
 
 ```TypeScript
@@ -3408,8 +3556,9 @@ Injects the JavaScripts that will be run after head element has been parsed fini
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scripts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ScriptItem> | Yes | The JavaScripts executed in array order. |
+| scripts | Array&lt;ScriptItem&gt; | Yes | The JavaScripts executed in array order. |
 
+<a id="scrollbarlayoutpolicy"></a>
 ## scrollbarLayoutPolicy
 
 ```TypeScript
@@ -3430,8 +3579,9 @@ Sets the scrollbar layout policy.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| policy | [ScrollbarLayoutPolicy](arkts-arkweb-web-scrollbarlayoutpolicy-e.md) | Yes | The layout policy to apply. |
+| policy | [ScrollbarLayoutPolicy](arkts-arkweb-scrollbarlayoutpolicy-e.md) | Yes | The layout policy to apply. |
 
+<a id="selectionmenuoptions"></a>
 ## selectionMenuOptions
 
 ```TypeScript
@@ -3456,8 +3606,9 @@ Set the custom text menu.The Web component custom menu extension item interface 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| expandedMenuOptions | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ExpandedMenuItemOptions> | Yes | Customize text menu options.The number of menu items, the content size of the menu, and the startIcon icon size are consistent with the ArkUI Menu component. |
+| expandedMenuOptions | Array&lt;ExpandedMenuItemOptions&gt; | Yes | Customize text menu options.The number of menu items, the content size of the menu, and the startIcon icon size are consistent with the ArkUI Menu component. |
 
+<a id="tabledata"></a>
 ## tableData
 
 ```TypeScript
@@ -3482,6 +3633,7 @@ Sets whether the Web should save the table data.
 | --- | --- | --- | --- |
 | tableData | boolean | Yes | { |
 
+<a id="textautosizing"></a>
 ## textAutosizing
 
 ```TypeScript
@@ -3515,6 +3667,7 @@ After automatic font sizing takes effect, any text smaller than 16 px is enlarge
 | --- | --- | --- | --- |
 | textAutosizing | boolean | Yes | Whether to enable automatic text resizing.<br>The value **true** means to enable automatic text resizing, and **false** means the opposite.<br>When **undefined** or **null** is passed in, the value is **true**. |
 
+<a id="textzoomatio"></a>
 ## textZoomAtio
 
 ```TypeScript
@@ -3539,6 +3692,7 @@ Sets the text zoom ratio of the page.
 | --- | --- | --- | --- |
 | textZoomAtio | number | Yes | Text zoom ratio to set.<br>The value is a positive integer.<br>Default value:**100** |
 
+<a id="textzoomratio"></a>
 ## textZoomRatio
 
 ```TypeScript
@@ -3561,6 +3715,7 @@ Sets the text zoom ratio of the page. When this attribute is not explicitly call
 | --- | --- | --- | --- |
 | textZoomRatio | number | Yes | Text zoom ratio to set.<br>The value is an integer. The value range is (0, 2147483647]. |
 
+<a id="useragent"></a>
 ## userAgent
 
 ```TypeScript
@@ -3585,6 +3740,7 @@ Sets the Web's user agent.
 | --- | --- | --- | --- |
 | userAgent | string | Yes | The Web's user agent. |
 
+<a id="verticalscrollbaraccess"></a>
 ## verticalScrollBarAccess
 
 ```TypeScript
@@ -3609,6 +3765,7 @@ Set whether paint vertical scroll bar, including the system default scrollbar an
 | --- | --- | --- | --- |
 | verticalScrollBar | boolean | Yes | True if it needs to paint vertical scroll bar. |
 
+<a id="webcursivefont"></a>
 ## webCursiveFont
 
 ```TypeScript
@@ -3633,6 +3790,7 @@ When this attribute is not explicitly called, the default cursive font family of
 | --- | --- | --- | --- |
 | family | string | Yes | Cursive font family to set.<br>When **null** or **undefined** is passed in, the value is **cursive**. |
 
+<a id="webfantasyfont"></a>
 ## webFantasyFont
 
 ```TypeScript
@@ -3657,6 +3815,7 @@ When this attribute is not explicitly called, the default fantasy font family of
 | --- | --- | --- | --- |
 | family | string | Yes | Fantasy font family to set.<br>When **null** or **undefined** is passed in, the value is **fantasy**. |
 
+<a id="webfixedfont"></a>
 ## webFixedFont
 
 ```TypeScript
@@ -3681,6 +3840,7 @@ When this attribute is not explicitly called, the default fixed font family of t
 | --- | --- | --- | --- |
 | family | string | Yes | Fixed font family to set.<br>When **null** or **undefined** is passed in, the value is **monospace**. |
 
+<a id="websansseriffont"></a>
 ## webSansSerifFont
 
 ```TypeScript
@@ -3705,6 +3865,7 @@ When this attribute is not explicitly called, the sans-serif font family of the 
 | --- | --- | --- | --- |
 | family | string | Yes | Sans-serif font family to set.<br>When **null** or **undefined** is passed in, the sans-serif font family is **sans-serif**. |
 
+<a id="webseriffont"></a>
 ## webSerifFont
 
 ```TypeScript
@@ -3729,6 +3890,7 @@ When this attribute is not explicitly called, the default serif font family of t
 | --- | --- | --- | --- |
 | family | string | Yes | Serif font family to set.<br>When **null** or **undefined** is passed in, the sans-serif font family is **serif**. |
 
+<a id="webstandardfont"></a>
 ## webStandardFont
 
 ```TypeScript
@@ -3753,6 +3915,7 @@ When this attribute is not explicitly called, the default standard font family o
 | --- | --- | --- | --- |
 | family | string | Yes | Standard font family to set.<br>When **null** or **undefined** is passed in, the sans-serif font family is **sans-serif**. |
 
+<a id="wideviewmodeaccess"></a>
 ## wideViewModeAccess
 
 ```TypeScript
@@ -3775,8 +3938,9 @@ Sets whether to support the **viewport** attribute of the HTML **\<meta>** tag. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wideViewModeAccess | boolean | Yes | Whether to support the **viewport** attribute of the HTML **&lt;meta&gt;** tag.<br>The value **true** means to support the **viewport** attribute of the HTML **&lt;meta&gt;** tag, and **false** means the opposite. |
+| wideViewModeAccess | boolean | Yes | Whether to support the **viewport** attribute of the HTML **<meta>** tag.<br>The value **true** means to support the **viewport** attribute of the HTML **<meta>** tag, and **false** means the opposite. |
 
+<a id="zoomaccess"></a>
 ## zoomAccess
 
 ```TypeScript
@@ -3799,6 +3963,7 @@ Sets whether the Web supports zooming using gestures.
 | --- | --- | --- | --- |
 | zoomAccess | boolean | Yes | { |
 
+<a id="zoomcontrolaccess"></a>
 ## zoomControlAccess
 
 ```TypeScript

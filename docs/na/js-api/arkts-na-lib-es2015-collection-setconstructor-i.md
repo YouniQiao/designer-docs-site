@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface SetConstructor--><!--Device-unnamed-interface SetConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -20,7 +21,7 @@ new <T = any>(values?: readonly T[] | null): Set<T>
 
 | Type | Description |
 | --- | --- |
-| [Set](arkts-na-lib-es2015-collection-set-i.md)<T> |  |
+| Set&lt;T&gt; |  |
 
 ## prototype
 
@@ -28,7 +29,7 @@ new <T = any>(values?: readonly T[] | null): Set<T>
 readonly prototype: Set<any>
 ```
 
-**Type:** Set<any>
+**Type:** Set&lt;any&gt;
 
 <!--Device-SetConstructor-readonly prototype: Set<any>--><!--Device-SetConstructor-readonly prototype: Set<any>-End-->
 

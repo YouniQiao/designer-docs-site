@@ -6,6 +6,7 @@
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
+<a id="getsystempasteboard"></a>
 ## getSystemPasteboard
 
 ```TypeScript

@@ -12,6 +12,7 @@ Provides a stream for file operations. Before calling any API of the **Stream** 
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -34,7 +35,7 @@ Closes the file stream. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns the file stream closed. |
+| Promise&lt;void&gt; | Promise that returns the file stream closed. |
 
 **Example**
 
@@ -50,6 +51,7 @@ ss.close().then(() => {
 
 ```
 
+<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -72,7 +74,7 @@ Closes the file stream. This API uses an asynchronous callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file stream is closed asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when the file stream is closed asynchronously. |
 
 **Example**
 
@@ -86,6 +88,7 @@ ss.close((err: BusinessError) => {
 
 ```
 
+<a id="closesync"></a>
 ## closeSync
 
 ```TypeScript
@@ -113,6 +116,7 @@ ss.closeSync();
 
 ```
 
+<a id="flush"></a>
 ## flush
 
 ```TypeScript
@@ -135,7 +139,7 @@ Flushes the file stream. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns the file stream flushed. |
+| Promise&lt;void&gt; | Promise that returns the file stream flushed. |
 
 **Example**
 
@@ -151,6 +155,7 @@ ss.flush().then(() => {
 
 ```
 
+<a id="flush-1"></a>
 ## flush
 
 ```TypeScript
@@ -173,7 +178,7 @@ Flushes the file stream. This API uses an asynchronous callback to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file stream is asynchronously flushed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when the file stream is asynchronously flushed. |
 
 **Example**
 
@@ -187,6 +192,7 @@ ss.flush((err: BusinessError) => {
 
 ```
 
+<a id="flushsync"></a>
 ## flushSync
 
 ```TypeScript
@@ -214,6 +220,7 @@ ss.flushSync();
 
 ```
 
+<a id="read"></a>
 ## read
 
 ```TypeScript
@@ -257,14 +264,14 @@ Reads data from a stream file. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
-| options | {       position?: number;       offset?: number;       length?: number;     } | No | The options are as follows:<br>- **offset** (number): position to store the data read in the buffer relative to the start address of the buffer, in bytes. This parameter is optional. The default value is **0**.<br>- **length** (number): length of the data to read. This parameter is optional. The default value is the buffer length minus the offset, in bytes.<br>- **position** (number): position of the data to read in the file. This parameter is optional. By default, data is read from the current position, in bytes.<br>Constraints: offset + length &lt;= Buffer size |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
+| options | {       position?: number;       offset?: number;       length?: number;     } | No | The options are as follows:<br>- **offset** (number): position to store the data read in the buffer relative to the start address of the buffer, in bytes. This parameter is optional. The default value is **0**.<br>- **length** (number): length of the data to read. This parameter is optional. The default value is the buffer length minus the offset, in bytes.<br>- **position** (number): position of the data to read in the file. This parameter is optional. By default, data is read from the current position, in bytes.<br>Constraints: offset + length <= Buffer size |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReadOut> | Promise that returns the data read. |
+| Promise&lt;ReadOut&gt; | Promise that returns the data read. |
 
 **Example**
 
@@ -293,6 +300,7 @@ ss.read(arrayBuffer, option).then((readResult: fileio.ReadOut) => {
 
 ```
 
+<a id="read-1"></a>
 ## read
 
 ```TypeScript
@@ -315,9 +323,10 @@ read.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | buffer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ReadOut> | Yes | callback. |
+| buffer | ArrayBuffer | Yes | buffer. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ReadOut&gt; | Yes | callback. |
 
+<a id="read-2"></a>
 ## read
 
 ```TypeScript
@@ -364,9 +373,9 @@ Reads data from a stream file. This API uses an asynchronous callback to return 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
-| options | {       position?: number;       offset?: number;       length?: number;     } | Yes | The options are as follows:<br>- **offset** (number): position to store the data read in the buffer relative to the start address of the buffer, in bytes. This parameter is optional. The default value is **0**.<br>- **length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length minus the offset.<br>- **position** (number): position of the data to read in the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>Constraints: offset + length &lt;= Buffer size |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ReadOut> | Yes | Callback invoked when data is read asynchronously from the stream file. |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
+| options | {       position?: number;       offset?: number;       length?: number;     } | Yes | The options are as follows:<br>- **offset** (number): position to store the data read in the buffer relative to the start address of the buffer, in bytes. This parameter is optional. The default value is **0**.<br>- **length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length minus the offset.<br>- **position** (number): position of the data to read in the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>Constraints: offset + length <= Buffer size |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ReadOut&gt; | Yes | Callback invoked when data is read asynchronously from the stream file. |
 
 **Example**
 
@@ -395,6 +404,7 @@ ss.read(arrayBuffer, option, (err: BusinessError, readResult: fileio.ReadOut) =>
 
 ```
 
+<a id="readsync"></a>
 ## readSync
 
 ```TypeScript
@@ -438,8 +448,8 @@ Reads data from a stream file. This API returns the result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
-| options | {       position?: number;       offset?: number;       length?: number;     } | No | The options are as follows:<br>- **offset** (number): position to store the data read in the buffer relative to the start address of the buffer, in bytes. This parameter is optional. The default value is **0**.<br>- **length** (number): length of the data to read. This parameter is optional. The default value is the buffer length minus the offset, in bytes.<br>- **position** (number): position of the data to read in the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>Constraints: offset + length &lt;= Buffer size |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
+| options | {       position?: number;       offset?: number;       length?: number;     } | No | The options are as follows:<br>- **offset** (number): position to store the data read in the buffer relative to the start address of the buffer, in bytes. This parameter is optional. The default value is **0**.<br>- **length** (number): length of the data to read. This parameter is optional. The default value is the buffer length minus the offset, in bytes.<br>- **position** (number): position of the data to read in the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>Constraints: offset + length <= Buffer size |
 
 **Return value:**
 
@@ -466,6 +476,7 @@ let num = ss.readSync(buf, option);
 
 ```
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -513,13 +524,13 @@ Writes data to a stream file. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| options | {       offset?: number;       length?: number;       position?: number;       encoding?: string;     } | No | The options are as follows:<br>- **offset** (number): offset of the write position relative to the start address of the data, in bytes. This parameter is optional. The default value is **0**.<br  >- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value is the buffer length minus the offset.<br>- **position** (number): start position to write the data into the file,in bytes. This parameter is optional. By default, data is written from the current position.<br>- **encoding**(string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported.<br>Constraints: offset + length &lt;= Buffer size |
+| options | {       offset?: number;       length?: number;       position?: number;       encoding?: string;     } | No | The options are as follows:<br>- **offset** (number): offset of the write position relative to the start address of the data, in bytes. This parameter is optional. The default value is **0**.<br   >- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value is the buffer length minus the offset.<br>- **position** (number): start position to write the data into the file,in bytes. This parameter is optional. By default, data is written from the current position.<br>- **encoding**(string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported.<br>Constraints: offset + length <= Buffer size |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise that returns the length of the data written, in bytes. |
+| Promise&lt;number&gt; | Promise that returns the length of the data written, in bytes. |
 
 **Example**
 
@@ -545,6 +556,7 @@ ss.write("hello, world", option).then((number: number) => {
 
 ```
 
+<a id="write-1"></a>
 ## write
 
 ```TypeScript
@@ -568,8 +580,9 @@ Writes data to a stream file. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback invoked when the data is written asynchronously, which is used to return the length of the data written, in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback invoked when the data is written asynchronously, which is used to return the length of the data written, in bytes. |
 
+<a id="write-2"></a>
 ## write
 
 ```TypeScript
@@ -620,8 +633,8 @@ Writes data to a stream file. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| options | {       offset?: number;       length?: number;       position?: number;       encoding?: string;     } | Yes | The options are as follows:<br>- **offset** (number): offset of the write position relative to the start address of the data, in bytes. This parameter is optional. The default value is **0**.<br  >- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value is the buffer length minus the offset.<br>- **position** (number): start position to write the data into the file,in bytes. This parameter is optional. By default, data is written from the current position.<br>- **encoding**(string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported.<br>Constraints: offset + length &lt;= Buffer size |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback invoked when the data is written asynchronously, which is used to return the length of the data written, in bytes. |
+| options | {       offset?: number;       length?: number;       position?: number;       encoding?: string;     } | Yes | The options are as follows:<br>- **offset** (number): offset of the write position relative to the start address of the data, in bytes. This parameter is optional. The default value is **0**.<br   >- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value is the buffer length minus the offset.<br>- **position** (number): start position to write the data into the file,in bytes. This parameter is optional. By default, data is written from the current position.<br>- **encoding**(string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported.<br>Constraints: offset + length <= Buffer size |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback invoked when the data is written asynchronously, which is used to return the length of the data written, in bytes. |
 
 **Example**
 
@@ -648,6 +661,7 @@ ss.write("hello, world", option, (err: BusinessError, bytesWritten: number) => {
 
 ```
 
+<a id="writesync"></a>
 ## writeSync
 
 ```TypeScript
@@ -695,7 +709,7 @@ Writes data to a stream file. This API returns the result synchronously.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| options | {       offset?: number;       length?: number;       position?: number;       encoding?: string;     } | No | The options are as follows:<br>- **offset** (number): offset of the write position relative to the start address of the data, in bytes. This parameter is optional. The default value is **0**.<br  >- **length** (number): length of the data to write. This parameter is optional. The default value is the buffer length minus the offset.<br>- **position** (number): start position to write the data into the file, in bytes. This parameter is optional. By default, data is written from the current position.<br>- **encoding** (string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported.<br>Constraints: offset + length &lt;= Buffer size |
+| options | {       offset?: number;       length?: number;       position?: number;       encoding?: string;     } | No | The options are as follows:<br>- **offset** (number): offset of the write position relative to the start address of the data, in bytes. This parameter is optional. The default value is **0**.<br   >- **length** (number): length of the data to write. This parameter is optional. The default value is the buffer length minus the offset.<br>- **position** (number): start position to write the data into the file, in bytes. This parameter is optional. By default, data is written from the current position.<br>- **encoding** (string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported.<br>Constraints: offset + length <= Buffer size |
 
 **Return value:**
 

@@ -14,6 +14,7 @@ Manages SSAP client. Before calling a SSAP client method,you must use {@link cre
 import { ssap } from '@kit.ConnectivityKit';
 ```
 
+<a id="callmethod"></a>
 ## callMethod
 
 ```TypeScript
@@ -44,7 +45,7 @@ Calls the method of a server.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Method> | Promise used to return the Method result. |
+| Promise&lt;Method&gt; | Promise used to return the Method result. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ Calls the method of a server.
 | 36100044 | NearLink standard UUID not allowed. |
 | 36100099 | Operation failed. |
 
+<a id="offeventnotify"></a>
 ## offEventNotify
 
 ```TypeScript
@@ -79,8 +81,9 @@ Unsubscribes from event notifications.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<Event> | No | Callback used to listen for the event notified event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;Event&gt; | No | Callback used to listen for the event notified event. |
 
+<a id="oneventnotify"></a>
 ## onEventNotify
 
 ```TypeScript
@@ -105,8 +108,9 @@ This event is accessible only to system applications that granted the ohos.permi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<Event> | Yes | Callback used to listen for the event notified event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;Event&gt; | Yes | Callback used to listen for the event notified event. |
 
+<a id="readdescriptor"></a>
 ## readDescriptor
 
 ```TypeScript
@@ -137,7 +141,7 @@ Reads the descriptor of a server.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PropertyDescriptor> | Promise used to return the descriptor value. |
+| Promise&lt;PropertyDescriptor&gt; | Promise used to return the descriptor value. |
 
 **Error codes:**
 
@@ -150,6 +154,7 @@ Reads the descriptor of a server.
 | 36100044 | NearLink standard UUID not allowed. |
 | 36100099 | Operation failed. |
 
+<a id="setpropertyindication"></a>
 ## setPropertyIndication
 
 ```TypeScript
@@ -181,7 +186,7 @@ Enables or disables indication of a property when value changed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -195,6 +200,7 @@ Enables or disables indication of a property when value changed.
 | 36100044 | NearLink standard UUID not allowed. |
 | 36100099 | Operation failed. |
 
+<a id="writedescriptor"></a>
 ## writeDescriptor
 
 ```TypeScript
@@ -227,7 +233,7 @@ This method does not support writing client property configuration descriptors. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

@@ -16,6 +16,7 @@ Control class for incremental backup procedure.
 import { backup } from '@kit.CoreFileKit';
 ```
 
+<a id="appendbundles"></a>
 ## appendBundles
 
 ```TypeScript
@@ -38,13 +39,13 @@ Append new bundles to incremental backup.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundlesToBackup | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<IncrementalBackupData> | Yes | Bundles to incremental backup. |
+| bundlesToBackup | Array&lt;IncrementalBackupData&gt; | Yes | Bundles to incremental backup. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -121,6 +122,7 @@ incrementalBackupSession.appendBundles(incrementalBackupDataArray).then(() => {
 
 ```
 
+<a id="appendbundles-1"></a>
 ## appendBundles
 
 ```TypeScript
@@ -143,14 +145,14 @@ Append new bundles to incremental backup.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundlesToAppend | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<IncrementalBackupData> | Yes | Bundles to incremental backup. |
+| bundlesToAppend | Array&lt;IncrementalBackupData&gt; | Yes | Bundles to incremental backup. |
 | infos | string[] | Yes | information of the bundlesToBackup |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -268,6 +270,7 @@ incrementalBackupSession.appendBundles(incrementalBackupDataArray, infos).then((
 
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -368,6 +371,7 @@ incrementalBackupSession.appendBundles(backupBundles);
 
 ```
 
+<a id="cleanbundletempdir"></a>
 ## cleanBundleTempDir
 
 ```TypeScript
@@ -396,7 +400,7 @@ Provides an interface for the tool to clear temporary directories
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Return clean result, true is success, false is fail. |
+| Promise&lt;boolean&gt; | Return clean result, true is success, false is fail. |
 
 **Error codes:**
 
@@ -472,6 +476,7 @@ let incrementalBackupSession = new backup.IncrementalBackupSession(generalCallba
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -554,6 +559,7 @@ let incrementalBackupSession = new backup.IncrementalBackupSession(generalCallba
 
 ```
 
+<a id="getbackupdatasize"></a>
 ## getBackupDataSize
 
 ```TypeScript
@@ -577,13 +583,13 @@ Obtain application data size to be backed up.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isPreciseScan | boolean | Yes | Indicates whether to obtain the exact data size. |
-| dataList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<IncrementalBackupTime> | Yes | Application list. |
+| dataList | Array&lt;IncrementalBackupTime&gt; | Yes | Application list. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -705,6 +711,7 @@ Example of a JSON string returned asynchronously:
 
 ```
 
+<a id="getcompatibilityinfo"></a>
 ## getCompatibilityInfo
 
 ```TypeScript
@@ -734,7 +741,7 @@ Provides an interface for the tool to get compatibility info.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Return compatibility info. |
+| Promise&lt;string&gt; | Return compatibility info. |
 
 **Error codes:**
 
@@ -809,6 +816,7 @@ async function getIncBackupCompatibilityInfo() {
 
 ```
 
+<a id="getlocalcapabilities"></a>
 ## getLocalCapabilities
 
 ```TypeScript
@@ -831,7 +839,7 @@ Obtain a Json file that describes local capabilities.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileData> | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
+| Promise&lt;FileData&gt; | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
 
 **Error codes:**
 
@@ -973,6 +981,7 @@ The capability file can be obtained by using [fileIo.stat](js-apis-file-fs.md#fi
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -995,7 +1004,7 @@ End backup process
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

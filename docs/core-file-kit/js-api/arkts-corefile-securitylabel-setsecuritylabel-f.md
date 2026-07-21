@@ -6,6 +6,7 @@
 import { securityLabel } from '@kit.CoreFileKit';
 ```
 
+<a id="setsecuritylabel"></a>
 ## setSecurityLabel
 
 ```TypeScript
@@ -31,7 +32,7 @@ Sets the data security level for a file or directory. The level can only be adju
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ securityLabel.setSecurityLabel(filePath, "s0").then(() => {
 ```
 
 
+<a id="setsecuritylabel-1"></a>
 ## setSecurityLabel
 
 ```TypeScript
@@ -80,7 +82,7 @@ Sets the data security level for a file or directory. The level can only be adju
 | --- | --- | --- | --- |
 | path | string | Yes | File path. |
 | type | [DataLevel](arkts-corefile-securitylabel-datalevel-t.md) | Yes | Data security level. The value can only be **s0**, **s1**, **s2**, **s3**, or **s4**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the security level. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the security level. |
 
 **Error codes:**
 

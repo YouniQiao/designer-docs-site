@@ -14,7 +14,7 @@ Describes the error information.
 errorCode: T
 ```
 
-Error code. The type of **errorCode** is [BusinessError](../../../../reference/apis-basic-services-kit/js-apis-base.md).
+Error code. The type of **errorCode** is [BusinessError](docroot://reference/apis-basic-services-kit/js-apis-base.md).
 
 **Type:** T
 

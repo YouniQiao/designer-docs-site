@@ -16,6 +16,7 @@ Helper functions to access photos and albums.
 import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="createasset"></a>
 ## createAsset
 
 ```TypeScript
@@ -24,7 +25,7 @@ createAsset(photoType: PhotoType, extension: string, options?: photoAccessHelper
 
 Creates an image or video asset with the specified file type, file name extension, and options. This API uses a promise to return the result.
 
-If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component. For details, see [Saving Media Assets](../../../../media/medialibrary/photoAccessHelper-savebutton.md).
+If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component. For details, see [Saving Media Assets](docroot://media/medialibrary/photoAccessHelper-savebutton.md).
 
 **Since:** 12
 
@@ -42,13 +43,13 @@ If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can 
 | --- | --- | --- | --- |
 | photoType | [PhotoType](arkts-medialibrary-sendablephotoaccesshelper-phototype-e.md) | Yes | Type of the file to create, which can be **IMAGE** or **VIDEO**. |
 | extension | string | Yes | File name extension, for example, **'jpg'**. The string length ranges from 1 to 255. |
-| options | photoAccessHelper.CreateOptions | No | Options for creating the media asset, for example, **{title: 'testPhoto'}**.<br>The file name must not contain any invalid characters.<br>Starting from API version 18, the following characters are considered invalid: \ / : * ? " &lt; &gt; \|<br>For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` &lt; &gt; \| { } [ ] |
+| options | photoAccessHelper.CreateOptions | No | Options for creating the media asset, for example, **{title: 'testPhoto'}**.<br>The file name must not contain any invalid characters.<br>Starting from API version 18, the following characters are considered invalid: \ / : * ? " < > \|<br>For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` < > \| { } [ ] |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URI of the created media asset. |
+| Promise&lt;string&gt; | Promise used to return the URI of the created media asset. |
 
 **Error codes:**
 
@@ -83,6 +84,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getalbums"></a>
 ## getAlbums
 
 ```TypeScript
@@ -111,7 +113,7 @@ Before the operation, ensure that the albums to obtain exist.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<Album>> | Promise used to return the result. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -154,6 +156,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getalbums-1"></a>
 ## getAlbums
 
 ```TypeScript
@@ -196,7 +199,7 @@ Before the operation, ensure that the albums to obtain exist.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<Album>> | Promise used to return the result. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -239,6 +242,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getassets"></a>
 ## getAssets
 
 ```TypeScript
@@ -265,7 +269,7 @@ Obtains image and video assets. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<PhotoAsset>> | Promise used to return the media assets obtained. |
+| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Promise used to return the media assets obtained. |
 
 **Error codes:**
 
@@ -306,6 +310,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getburstassets"></a>
 ## getBurstAssets
 
 ```TypeScript
@@ -333,7 +338,7 @@ Obtains resources of burst photos. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<PhotoAsset>> | Promise used to return the result. |
+| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -383,6 +388,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -401,7 +407,7 @@ Releases the **PhotoAccessHelper** instance. Call this method when the APIs of t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

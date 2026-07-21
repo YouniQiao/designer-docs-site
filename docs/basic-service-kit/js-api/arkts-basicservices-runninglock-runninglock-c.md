@@ -14,6 +14,7 @@ Defines a **RunningLock** object.
 import { runningLock } from '@kit.BasicServicesKit';
 ```
 
+<a id="hold"></a>
 ## hold
 
 ```TypeScript
@@ -34,7 +35,7 @@ Holds a running lock.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| timeout | number | Yes | Duration for locking and holding the **RunningLock** object, in ms.<br>The value must be a number:<br>**-1**: The lock is permanently held and needs to be released automatically.<br>**0**: The lock is released 3 seconds after the timer expires by default.<br>&gt; 0: The lock is released based on the input value after the timer expires. |
+| timeout | number | Yes | Duration for locking and holding the **RunningLock** object, in ms.<br>The value must be a number:<br>**-1**: The lock is permanently held and needs to be released automatically.<br>**0**: The lock is released 3 seconds after the timer expires by default.<br>> 0: The lock is released based on the input value after the timer expires. |
 
 **Error codes:**
 
@@ -75,6 +76,7 @@ class RunningLockTest {
 
 ```
 
+<a id="isholding"></a>
 ## isHolding
 
 ```TypeScript
@@ -123,6 +125,7 @@ class RunningLockTest {
 
 ```
 
+<a id="isused"></a>
 ## isUsed
 
 ```TypeScript
@@ -161,6 +164,7 @@ runningLock.createRunningLock('running_lock_test', runningLock.RunningLockType.B
 
 ```
 
+<a id="lock"></a>
 ## lock
 
 ```TypeScript
@@ -201,6 +205,7 @@ runningLock.createRunningLock('running_lock_test', runningLock.RunningLockType.B
 
 ```
 
+<a id="unhold"></a>
 ## unhold
 
 ```TypeScript
@@ -255,6 +260,7 @@ class RunningLockTest {
 
 ```
 
+<a id="unlock"></a>
 ## unlock
 
 ```TypeScript

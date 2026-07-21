@@ -14,6 +14,7 @@ Manages and record MediaKeySessions. Before calling an MediaKeySystem method, we
 import { drm } from '@kit.DrmKit';
 ```
 
+<a id="clearofflinemediakeys"></a>
 ## clearOfflineMediaKeys
 
 ```TypeScript
@@ -34,7 +35,7 @@ Remove media keys corresponding to the mediaKeyId.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mediaKeyId | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The mediaKeyId specifies which media key should be cleared. |
+| mediaKeyId | Uint8Array | Yes | The mediaKeyId specifies which media key should be cleared. |
 
 **Error codes:**
 
@@ -44,6 +45,7 @@ Remove media keys corresponding to the mediaKeyId.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="createmediakeysession"></a>
 ## createMediaKeySession
 
 ```TypeScript
@@ -81,6 +83,7 @@ Create a MediaKeySession instance with level.
 | [24700104](../errorcode-drm.md#24700104-too-many-mediakeysession-instances) | Meet max MediaKeySession num limit. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="createmediakeysession-1"></a>
 ## createMediaKeySession
 
 ```TypeScript
@@ -111,6 +114,7 @@ Create a MediaKeySession instance.
 | [24700104](../errorcode-drm.md#24700104-too-many-mediakeysession-instances) | Meet max MediaKeySession num limit. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -134,6 +138,7 @@ Release the resource before the MediaKeySystem gonna be unused.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="generatekeysystemrequest"></a>
 ## generateKeySystemRequest
 
 ```TypeScript
@@ -154,7 +159,7 @@ Generate a media key system provision request.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ProvisionRequest> | Promise with ProvisionRequest used to return the result. |
+| Promise&lt;ProvisionRequest&gt; | Promise with ProvisionRequest used to return the result. |
 
 **Error codes:**
 
@@ -163,6 +168,7 @@ Generate a media key system provision request.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="getcertificatestatus"></a>
 ## getCertificateStatus
 
 ```TypeScript
@@ -192,6 +198,7 @@ Get certificate status of the MediaKeySystem.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="getconfigurationbytearray"></a>
 ## getConfigurationByteArray
 
 ```TypeScript
@@ -218,7 +225,7 @@ Get the specified configuration.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | The config value. |
+| Uint8Array | The config value. |
 
 **Error codes:**
 
@@ -228,6 +235,7 @@ Get the specified configuration.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="getconfigurationstring"></a>
 ## getConfigurationString
 
 ```TypeScript
@@ -264,6 +272,7 @@ Get the specified configuration.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="getmaxcontentprotectionlevel"></a>
 ## getMaxContentProtectionLevel
 
 ```TypeScript
@@ -293,6 +302,7 @@ Get max content protection level the device supports.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="getofflinemediakeyids"></a>
 ## getOfflineMediaKeyIds
 
 ```TypeScript
@@ -313,7 +323,7 @@ Get the list of offline MediaKeyIds.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md)[] | The list of offline MediaKeyIds. |
+| Uint8Array[] | The list of offline MediaKeyIds. |
 
 **Error codes:**
 
@@ -322,6 +332,7 @@ Get the list of offline MediaKeyIds.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="getofflinemediakeystatus"></a>
 ## getOfflineMediaKeyStatus
 
 ```TypeScript
@@ -342,7 +353,7 @@ Get offline media key status corresponding to the mediaKeyId.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mediaKeyId | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The media key identifier. |
+| mediaKeyId | Uint8Array | Yes | The media key identifier. |
 
 **Return value:**
 
@@ -358,6 +369,7 @@ Get offline media key status corresponding to the mediaKeyId.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="getstatistics"></a>
 ## getStatistics
 
 ```TypeScript
@@ -387,6 +399,7 @@ Get performance statistics information.That includes currentSessionNum, version,
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="off"></a>
 ## off('keySystemRequired')
 
 ```TypeScript
@@ -408,7 +421,7 @@ Unregister keySystemRequired events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keySystemRequired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for the key system required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | No | Used to listen for the key system required event. |
 
 **Error codes:**
 
@@ -417,6 +430,7 @@ Unregister keySystemRequired events.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="on"></a>
 ## on('keySystemRequired')
 
 ```TypeScript
@@ -438,7 +452,7 @@ Register keySystemRequired events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keySystemRequired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for the key system required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | Yes | Used to listen for the key system required event. |
 
 **Error codes:**
 
@@ -447,6 +461,7 @@ Register keySystemRequired events.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="processkeysystemresponse"></a>
 ## processKeySystemResponse
 
 ```TypeScript
@@ -467,13 +482,13 @@ Process the response corresponding the key system request obtained by the applic
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| response | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Response corresponding to the request. |
+| response | Uint8Array | Yes | Response corresponding to the request. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -483,6 +498,7 @@ Process the response corresponding the key system request obtained by the applic
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="setconfigurationbytearray"></a>
 ## setConfigurationByteArray
 
 ```TypeScript
@@ -504,7 +520,7 @@ Set the specified configuration.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | configName | string | Yes | Used to specify the config name. |
-| value | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The value to be set. |
+| value | Uint8Array | Yes | The value to be set. |
 
 **Error codes:**
 
@@ -514,6 +530,7 @@ Set the specified configuration.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="setconfigurationstring"></a>
 ## setConfigurationString
 
 ```TypeScript

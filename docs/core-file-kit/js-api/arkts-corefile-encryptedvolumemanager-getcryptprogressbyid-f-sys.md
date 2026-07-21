@@ -6,6 +6,7 @@
 import { encryptedVolumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getcryptprogressbyid"></a>
 ## getCryptProgressById
 
 ```TypeScript
@@ -36,7 +37,7 @@ Get the encrypting progress.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | return Promise |
+| Promise&lt;number&gt; | return Promise |
 
 **Error codes:**
 

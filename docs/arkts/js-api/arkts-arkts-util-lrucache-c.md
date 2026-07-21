@@ -14,6 +14,7 @@ Provides APIs to discard the least recently used data to make rooms for new elem
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ Specifies the default iterator for an object.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | Returns a two - dimensional array in the form of key - value pairs. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | Returns a two - dimensional array in the form of key - value pairs. |
 
 **Example**
 
@@ -52,6 +53,7 @@ for (let value of pro) {
 
 ```
 
+<a id="afterremoval"></a>
 ## afterRemoval
 
 ```TypeScript
@@ -83,6 +85,7 @@ Performs subsequent operations after a value is removed. The subsequent operatio
 | value | V | Yes | Value removed. |
 | newValue | V | Yes | New value for the key if the **put()** method is called and the key to be added already exists. In other cases, this parameter is left blank. |
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -114,6 +117,7 @@ console.info('res = ' + res);
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -143,6 +147,7 @@ let pro = new util.LRUCache<number, number>();
 
 ```
 
+<a id="contains"></a>
 ## contains
 
 ```TypeScript
@@ -182,6 +187,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="createdefault"></a>
 ## createDefault
 
 ```TypeScript
@@ -220,6 +226,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -240,7 +247,7 @@ Returns an iterator object that traverses all key-value pairs ([key, value]) in 
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | Iterable array. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | Iterable array. |
 
 **Example**
 
@@ -258,6 +265,7 @@ for (let value of pair) {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -297,6 +305,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="getcapacity"></a>
 ## getCapacity
 
 ```TypeScript
@@ -329,6 +338,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="getcreatecount"></a>
 ## getCreateCount
 
 ```TypeScript
@@ -374,6 +384,7 @@ console.info('res = ' + res);
 
 ```
 
+<a id="getmatchcount"></a>
 ## getMatchCount
 
 ```TypeScript
@@ -408,6 +419,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="getmisscount"></a>
 ## getMissCount
 
 ```TypeScript
@@ -442,6 +454,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="getputcount"></a>
 ## getPutCount
 
 ```TypeScript
@@ -475,6 +488,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="getremovalcount"></a>
 ## getRemovalCount
 
 ```TypeScript
@@ -510,6 +524,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -543,6 +558,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -586,6 +602,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="put"></a>
 ## put
 
 ```TypeScript
@@ -625,6 +642,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -664,6 +682,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -699,6 +718,7 @@ console.info(pro.toString());
 
 ```
 
+<a id="updatecapacity"></a>
 ## updateCapacity
 
 ```TypeScript
@@ -729,6 +749,7 @@ pro.updateCapacity(100);
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript

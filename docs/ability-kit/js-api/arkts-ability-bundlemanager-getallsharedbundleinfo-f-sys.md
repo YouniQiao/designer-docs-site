@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallsharedbundleinfo"></a>
 ## getAllSharedBundleInfo
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains all the shared bundle information. This API uses an asynchronous callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<SharedBundleInfo>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is all the shared bundle information obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;SharedBundleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is all the shared bundle information obtained. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ try {
 ```
 
 
+<a id="getallsharedbundleinfo-1"></a>
 ## getAllSharedBundleInfo
 
 ```TypeScript
@@ -82,7 +84,7 @@ Obtains all the shared bundle information. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<SharedBundleInfo>> | Promise used to return an array of the shared bundle information obtained. |
+| Promise&lt;Array&lt;SharedBundleInfo&gt;&gt; | Promise used to return an array of the shared bundle information obtained. |
 
 **Error codes:**
 

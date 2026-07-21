@@ -18,6 +18,7 @@ The ResourceManager callback.
 import { resourceManager } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -40,6 +41,6 @@ Defines an asynchronous callback that carries an error parameter and asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| err | [Error](../../apis-na/arkts-apis/arkts-na-lib-es5-error-i.md) | Yes | Error message returned when the API fails to be called. |
+| err | Error | Yes | Error message returned when the API fails to be called. |
 | data | T | Yes | Callback invoked when the API is called. |
 

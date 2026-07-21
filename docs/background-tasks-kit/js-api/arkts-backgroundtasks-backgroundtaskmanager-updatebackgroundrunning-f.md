@@ -6,6 +6,7 @@
 import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="updatebackgroundrunning"></a>
 ## updateBackgroundRunning
 
 ```TypeScript
@@ -20,7 +21,7 @@ This API can only be used to update continuous tasks that were requested via the
 
 [startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent, callback: AsyncCallback&lt;void&gt;): void](arkts-backgroundtasks-backgroundtaskmanager-startbackgroundrunning-f.md#startbackgroundrunning-1)
 
-[startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent): Promise&lt;void&gt;](arkts-backgroundtasks-backgroundtaskmanager-startbackgroundrunning-f.md#startbackgroundrunning-2)
+[startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent): Promise&lt;void&gt;](arkts-backgroundtasks-backgroundtaskmanager-startbackgroundrunning-f.md#startbackgroundrunning-1)
 
 [startBackgroundRunning(context: Context, bgModes: string[], wantAgent: WantAgent): Promise&lt;ContinuousTaskNotification&gt;]{@link backgroundTaskManager.startBackgroundRunning(context: Context, bgModes: string[], wantAgent: WantAgent)}
 
@@ -39,13 +40,13 @@ This API can only be used to update continuous tasks that were requested via the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context.<br>For details about the application context of the FA model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-context-depr-i.md).<br>For details about the application context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md).<br> Note: Continuous tasks can be requested only by the UIAbility in the stage model and the ServiceAbility in the FA model. |
-| bgModes | string[] | Yes | Types of continuous tasks after the update.<br>For details about the available options,see [Item](../../../../task-management/continuous-task.md#use-cases).<br> Note: One or more types can be passed. |
+| bgModes | string[] | Yes | Types of continuous tasks after the update.<br>For details about the available options,see [Item](docroot://task-management/continuous-task.md#use-cases).<br> Note: One or more types can be passed. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ContinuousTaskNotification> | Promise that returns an object of the [ContinuousTaskNotification](arkts-backgroundtasks-backgroundtaskmanager-continuoustasknotification-i.md) type. |
+| Promise&lt;ContinuousTaskNotification&gt; | Promise that returns an object of the [ContinuousTaskNotification](arkts-backgroundtasks-backgroundtaskmanager-continuoustasknotification-i.md) type. |
 
 **Error codes:**
 
@@ -87,6 +88,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="updatebackgroundrunning-1"></a>
 ## updateBackgroundRunning
 
 ```TypeScript
@@ -97,7 +99,7 @@ Updates a continuous task. This API uses a promise to return the result. After a
 
 The following restrictions apply when updating a continuous task:
 
-1. This API can only update continuous tasks requested via [startBackgroundRunning(context: Context, request: ContinuousTaskRequest): Promise&lt;ContinuousTaskNotification&gt;](arkts-backgroundtasks-backgroundtaskmanager-startbackgroundrunning-f.md#startbackgroundrunning-4).2. If the main type and subtype of the background tasks are the same,only the wants information (such as **abilityName**) in **ContinuousTaskRequest.wantAgent** can be updated.If the types are different, the update fails.3. If the continuous task to be updated or the specified update type contains the data transmission type,a failure message is returned.
+1. This API can only update continuous tasks requested via [startBackgroundRunning(context: Context, request: ContinuousTaskRequest): Promise&lt;ContinuousTaskNotification&gt;](arkts-backgroundtasks-backgroundtaskmanager-startbackgroundrunning-f.md#startbackgroundrunning-1).2. If the main type and subtype of the background tasks are the same,only the wants information (such as **abilityName**) in **ContinuousTaskRequest.wantAgent** can be updated.If the types are different, the update fails.3. If the continuous task to be updated or the specified update type contains the data transmission type,a failure message is returned.
 
 **Since:** 21
 
@@ -120,7 +122,7 @@ The following restrictions apply when updating a continuous task:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ContinuousTaskNotification> | Promise used to return the updated continuous task notification information, including the continuous task ID. |
+| Promise&lt;ContinuousTaskNotification&gt; | Promise used to return the updated continuous task notification information, including the continuous task ID. |
 
 **Error codes:**
 

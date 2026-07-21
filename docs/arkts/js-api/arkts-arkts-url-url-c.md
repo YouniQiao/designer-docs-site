@@ -14,6 +14,7 @@ The interface of URL is used to parse, construct, normalize, and encode URLs.
 import { url } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -39,6 +40,7 @@ URL constructor, which is used to instantiate a URL object.url: Absolute or rela
 | url | string | Yes | url url |
 | base | string \| URL | No | base base |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -55,6 +57,7 @@ A no-argument constructor used to create a URL. It returns a URL object after pa
 
 **System capability:** SystemCapability.Utils.Lang
 
+<a id="parseurl"></a>
 ## parseURL
 
 ```TypeScript
@@ -76,7 +79,7 @@ Parses a URL.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | A string representing an absolute or a relative URL.In the case of a relative URL, you must specify base to parse the final URL.In the case of an absolute URL, the passed base will be ignored. |
-| base | string \| URL | No | Either a string or an object. The default value is undefined.  - string: string.  - URL: URL object.This parameter is used when url is a relative URL. |
+| base | string \| URL | No | Either a string or an object. The default value is undefined.   - string: string.   - URL: URL object.This parameter is used when url is a relative URL. |
 
 **Return value:**
 
@@ -108,6 +111,7 @@ url.URL.parseURL('https://www.example.com', urlObject); // Output 'https://www.e
 
 ```
 
+<a id="tojson"></a>
 ## toJSON
 
 ```TypeScript
@@ -138,6 +142,7 @@ let result = urlObject.toJSON();
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript

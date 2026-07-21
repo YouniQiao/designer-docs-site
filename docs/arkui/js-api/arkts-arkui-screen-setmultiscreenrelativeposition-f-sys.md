@@ -6,6 +6,7 @@
 import { screen } from '@kit.ArkUI';
 ```
 
+<a id="setmultiscreenrelativeposition"></a>
 ## setMultiScreenRelativePosition
 
 ```TypeScript
@@ -36,7 +37,7 @@ Sets the positions of the primary and secondary screens in extend mode. This API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

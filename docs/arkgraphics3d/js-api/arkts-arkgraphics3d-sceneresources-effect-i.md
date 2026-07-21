@@ -10,6 +10,7 @@ Effect resource.
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="getpropertyvalue"></a>
 ## getPropertyValue
 
 ```TypeScript
@@ -36,8 +37,9 @@ Get the value of a specific effect property.
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | effect property value, return null if the "get" operation failed. |
+| Object | effect property value, return null if the "get" operation failed. |
 
+<a id="setpropertyvalue"></a>
 ## setPropertyValue
 
 ```TypeScript

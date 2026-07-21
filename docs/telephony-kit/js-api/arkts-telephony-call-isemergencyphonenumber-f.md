@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="isemergencyphonenumber"></a>
 ## isEmergencyPhoneNumber
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether a phone number is on the emergency number list.
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the phone number to check. |
 | options | [EmergencyNumberOptions](arkts-telephony-call-emergencynumberoptions-i.md) | Yes | Indicates the additional information for emergency numbers. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for isEmergencyPhoneNumber.Returns {@code true} if the phone number is on the emergency number list. Returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for isEmergencyPhoneNumber.Returns {@code true} if the phone number is on the emergency number list. Returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ call.isEmergencyPhoneNumber("112", options, (err: BusinessError, data: boolean) 
 ```
 
 
+<a id="isemergencyphonenumber-1"></a>
 ## isEmergencyPhoneNumber
 
 ```TypeScript
@@ -80,7 +82,7 @@ Checks whether a phone number is on the emergency number list.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the phone number is on the emergency number list.Returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the phone number is on the emergency number list.Returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -107,6 +109,7 @@ call.isEmergencyPhoneNumber("138xxxxxxxx", options).then((data: boolean) => {
 ```
 
 
+<a id="isemergencyphonenumber-2"></a>
 ## isEmergencyPhoneNumber
 
 ```TypeScript
@@ -126,7 +129,7 @@ Checks whether a phone number is on the emergency number list.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the phone number to check. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for isEmergencyPhoneNumber.Returns {@code true} if the phone number is on the emergency number list. Returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for isEmergencyPhoneNumber.Returns {@code true} if the phone number is on the emergency number list. Returns {@code false} otherwise. |
 
 **Error codes:**
 

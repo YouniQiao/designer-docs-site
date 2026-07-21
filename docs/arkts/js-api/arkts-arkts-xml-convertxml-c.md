@@ -14,6 +14,7 @@ ConvertXML representation refers to extensible markup language.
 import { convertxml } from '@kit.ArkTS';
 ```
 
+<a id="convert"></a>
 ## convert
 
 ```TypeScript
@@ -43,7 +44,7 @@ Converts an XML text to a JavaScript object.
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | JavaScript object. |
+| Object | JavaScript object. |
 
 **Example**
 
@@ -77,6 +78,7 @@ console.info(result);
 
 ```
 
+<a id="converttojsobject"></a>
 ## convertToJSObject
 
 ```TypeScript
@@ -108,7 +110,7 @@ Converts an XML text to an object of the object type.
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | JavaScript object. |
+| Object | JavaScript object. |
 
 **Error codes:**
 
@@ -152,6 +154,7 @@ try {
 
 ```
 
+<a id="fastconverttojsobject"></a>
 ## fastConvertToJSObject
 
 ```TypeScript
@@ -187,7 +190,7 @@ Converts an XML text to an object of the object type.
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | JavaScript object. |
+| Object | JavaScript object. |
 
 **Error codes:**
 
@@ -230,6 +233,7 @@ try {
 
 ```
 
+<a id="largeconverttojsobject"></a>
 ## largeConvertToJSObject
 
 ```TypeScript
@@ -259,7 +263,7 @@ Convert XML text to JavaScript objects, this method supports parsing large XML t
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Returns a JavaScript object converting from XML text. |
+| Object | Returns a JavaScript object converting from XML text. |
 
 **Error codes:**
 

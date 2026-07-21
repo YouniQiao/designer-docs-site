@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="on"></a>
 ## on('netUidPolicyChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Register uid policy change listener.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netUidPolicyChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetUidPolicyInfo> | Yes | the callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetUidPolicyInfo&gt; | Yes | the callback of on. |
 
 **Error codes:**
 
@@ -43,6 +44,7 @@ Register uid policy change listener.
 | [2100003](../errorcode-net-connection.md#2100003-system-internal-error) | System internal error. |
 
 
+<a id="on-1"></a>
 ## on('netUidRuleChange')
 
 ```TypeScript
@@ -66,7 +68,7 @@ Register uid rule change listener.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netUidRuleChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetUidRuleInfo> | Yes | the callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetUidRuleInfo&gt; | Yes | the callback of on. |
 
 **Error codes:**
 
@@ -80,6 +82,7 @@ Register uid rule change listener.
 | [2100003](../errorcode-net-connection.md#2100003-system-internal-error) | System internal error. |
 
 
+<a id="on-2"></a>
 ## on('netMeteredIfacesChange')
 
 ```TypeScript
@@ -103,7 +106,7 @@ Register metered ifaces change listener.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netMeteredIfacesChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> | Yes | the callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | the callback of on. |
 
 **Error codes:**
 
@@ -117,6 +120,7 @@ Register metered ifaces change listener.
 | [2100003](../errorcode-net-connection.md#2100003-system-internal-error) | System internal error. |
 
 
+<a id="on-3"></a>
 ## on('netQuotaPolicyChange')
 
 ```TypeScript
@@ -140,7 +144,7 @@ Register quota policies change listener.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netQuotaPolicyChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<NetQuotaPolicy>> | Yes | the callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;NetQuotaPolicy&gt;&gt; | Yes | the callback of on. |
 
 **Error codes:**
 
@@ -154,6 +158,7 @@ Register quota policies change listener.
 | [2100003](../errorcode-net-connection.md#2100003-system-internal-error) | System internal error. |
 
 
+<a id="on-4"></a>
 ## on('netBackgroundPolicyChange')
 
 ```TypeScript
@@ -177,7 +182,7 @@ Register network background policy change listener.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netBackgroundPolicyChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | the callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | the callback of on. |
 
 **Error codes:**
 

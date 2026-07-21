@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="connectprinter"></a>
 ## connectPrinter
 
 ```TypeScript
@@ -31,7 +32,7 @@ Connects to a printer by printer ID. This API uses an asynchronous callback to r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | printerId | string | Yes | Printer ID. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback to be invoked when a printer is connected. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback to be invoked when a printer is connected. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ print.connectPrinter(printerId, (err: BusinessError) => {
 ```
 
 
+<a id="connectprinter-1"></a>
 ## connectPrinter
 
 ```TypeScript
@@ -88,7 +90,7 @@ Connects to a printer by printer ID. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

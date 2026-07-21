@@ -14,6 +14,7 @@ Internationalization utility class, which provides the capabilities of unit conv
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="convertcanonicallocaleidentifier"></a>
 ## convertCanonicalLocaleIdentifier
 
 ```TypeScript
@@ -44,6 +45,7 @@ Adjusts a locale ID to a format that complies with the [BCP47](https://www.rfc-e
 | --- | --- |
 | string | If the input locale ID is valid, a locale ID that complies with the [BCP47](https://www.rfc-editor.org/info/bcp47) standard will be returned.If the input locale ID is invalid, an empty string is returned. |
 
+<a id="getbestmatchlocale"></a>
 ## getBestMatchLocale
 
 ```TypeScript
@@ -64,7 +66,7 @@ Obtains the locale that best matches a region from the specified locale list.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string | Yes | [Locale ID](../../../../internationalization/i18n-locale-culture.md#how-it-works), for example, **zh-Hans-CN**. |
+| locale | string | Yes | [Locale ID](docroot://internationalization/i18n-locale-culture.md#how-it-works), for example, **zh-Hans-CN**. |
 | localeList | string[] | Yes | List of locale IDs. |
 
 **Return value:**
@@ -80,6 +82,7 @@ Obtains the locale that best matches a region from the specified locale list.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [890001](../errorcode-i18n.md#890001-parameter-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
+<a id="getdateorder"></a>
 ## getDateOrder
 
 ```TypeScript
@@ -100,7 +103,7 @@ Obtains the sequence of the year, month, and day in the specified locale.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string | Yes | [Locale ID](../../../../internationalization/i18n-locale-culture.md#how-it-works), which consists of the language, script, and country/region, for example, **zh-Hans-CN**. |
+| locale | string | Yes | [Locale ID](docroot://internationalization/i18n-locale-culture.md#how-it-works), which consists of the language, script, and country/region, for example, **zh-Hans-CN**. |
 
 **Return value:**
 
@@ -108,6 +111,7 @@ Obtains the sequence of the year, month, and day in the specified locale.
 | --- | --- |
 | string | Sequence of the year, month, and day in the locale. **y** indicates the year, **L** indicates the month, and **d** indicates the day. |
 
+<a id="getthreeletterlanguage"></a>
 ## getThreeLetterLanguage
 
 ```TypeScript
@@ -145,6 +149,7 @@ For example, the two-letter language code of Chinese is **zh**, and the correspo
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [890001](../errorcode-i18n.md#890001-parameter-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
+<a id="getthreeletterregion"></a>
 ## getThreeLetterRegion
 
 ```TypeScript
@@ -182,6 +187,7 @@ For example, the two-letter region code of China is **CN**, and the correspondin
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [890001](../errorcode-i18n.md#890001-parameter-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
+<a id="gettimeperiodname"></a>
 ## getTimePeriodName
 
 ```TypeScript
@@ -203,7 +209,7 @@ Obtains the localized expression of the specified time in the specified locale.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | hour | number | Yes | Specified time, for example, **16**. |
-| locale | string | No | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. for example, **zh-Hans-CN**.The default value is the current system locale. |
+| locale | string | No | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. for example, **zh-Hans-CN**.The default value is the current system locale. |
 
 **Return value:**
 
@@ -218,6 +224,7 @@ Obtains the localized expression of the specified time in the specified locale.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [890001](../errorcode-i18n.md#890001-parameter-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
+<a id="getunicodewrappedfilepath"></a>
 ## getUnicodeWrappedFilePath
 
 ```TypeScript
@@ -256,6 +263,7 @@ For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
 | --- | --- |
 | [8900001](../errorcode-i18n.md#8900001-parameter-verification-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
+<a id="getunicodewrappedfilepath-1"></a>
 ## getUnicodeWrappedFilePath
 
 ```TypeScript
@@ -270,7 +278,7 @@ For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
 
 **Deprecated since:** 20
 
-**Substitutes:** getUnicodeWrappedFilePath(path:
+**Substitutes:** [getUnicodeWrappedFilePath(path:](arkts-localization-i18n-i18nutil-c.md#getunicodewrappedfilepath-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
@@ -298,6 +306,7 @@ For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
 | --- | --- |
 | [890001](../errorcode-i18n.md#890001-parameter-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
+<a id="setunicodewrappedbididirection"></a>
 ## setUnicodeWrappedBidiDirection
 
 ```TypeScript
@@ -329,6 +338,7 @@ Sets the text direction for certain text within a paragraph, including RTL (righ
 | --- | --- |
 | string | Processed Text. |
 
+<a id="unitconvert"></a>
 ## unitConvert
 
 ```TypeScript
@@ -352,8 +362,8 @@ Converts one measurement unit into another and formats the unit based on the spe
 | fromUnit | [UnitInfo](arkts-localization-i18n-unitinfo-i.md) | Yes | Measurement unit to be converted. |
 | toUnit | [UnitInfo](arkts-localization-i18n-unitinfo-i.md) | Yes | Measurement unit to be converted to. |
 | value | number | Yes | Value of the measurement unit to be converted. |
-| locale | string | Yes | [Locale ID](../../../../internationalization/i18n-locale-culture.md#how-it-works), which consists of the language, script, and country/region, for example, **zh-Hans-CN**. |
-| style | string | No | Style used for formatting. The value can be **long**, **short**, or **narrow**. The default value is **short**.For details about the meaning or display effect of different values, see [Number and Unit of Measurement Formatting](../../../../internationalization/i18n-numbers-weights-measures.md). |
+| locale | string | Yes | [Locale ID](docroot://internationalization/i18n-locale-culture.md#how-it-works), which consists of the language, script, and country/region, for example, **zh-Hans-CN**. |
+| style | string | No | Style used for formatting. The value can be **long**, **short**, or **narrow**. The default value is **short**.For details about the meaning or display effect of different values, see [Number and Unit of Measurement Formatting](docroot://internationalization/i18n-numbers-weights-measures.md). |
 
 **Return value:**
 

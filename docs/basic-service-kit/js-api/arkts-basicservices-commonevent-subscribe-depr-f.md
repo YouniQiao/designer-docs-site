@@ -1,5 +1,6 @@
 # subscribe
 
+<a id="subscribe"></a>
 ## subscribe
 
 ```TypeScript
@@ -23,7 +24,7 @@ Subscribes to common events. This API uses an asynchronous callback to return th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | subscriber | [CommonEventSubscriber](arkts-basicservices-commoneventsubscriber-commoneventsubscriber-i.md) | Yes | Subscriber object. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<CommonEventData> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;CommonEventData&gt; | Yes | Callback used to return the result. |
 
 **Example**
 

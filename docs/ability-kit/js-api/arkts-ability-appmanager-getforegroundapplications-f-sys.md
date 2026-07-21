@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="getforegroundapplications"></a>
 ## getForegroundApplications
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains applications that are running in the foreground. The application informa
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AppStateData>> | Yes | Callback used to return the API call result and an array holding the application state data. You can perform error handling or custom processing in this callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AppStateData&gt;&gt; | Yes | Callback used to return the API call result and an array holding the application state data. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ try {
 ```
 
 
+<a id="getforegroundapplications-1"></a>
 ## getForegroundApplications
 
 ```TypeScript
@@ -86,7 +88,7 @@ Obtains applications that are running in the foreground. The application informa
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AppStateData>> | Promise used to return an array holding the application state data. |
+| Promise&lt;Array&lt;AppStateData&gt;&gt; | Promise used to return an array holding the application state data. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ You must first use [on('inputStart')](inputMethodEngine.InputMethodAbility. on(t
 import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
+<a id="deletebackward"></a>
 ## deleteBackward
 
 ```TypeScript
@@ -33,7 +34,7 @@ Deletes the fixed-length text after the cursor. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | length | number | Yes | Text length, which cannot be less than 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ inputClient.deleteBackward(length, (err: BusinessError, result: boolean) => {
 
 ```
 
+<a id="deletebackward-1"></a>
 ## deleteBackward
 
 ```TypeScript
@@ -87,7 +89,7 @@ Deletes the fixed-length text after the cursor. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the deletion is successful, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the deletion is successful, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -115,6 +117,7 @@ inputClient.deleteBackward(length).then((result: boolean) => {
 
 ```
 
+<a id="deletebackwardsync"></a>
 ## deleteBackwardSync
 
 ```TypeScript
@@ -151,6 +154,7 @@ inputClient.deleteBackwardSync(length);
 
 ```
 
+<a id="deleteforward"></a>
 ## deleteForward
 
 ```TypeScript
@@ -170,7 +174,7 @@ Deletes the fixed-length text before the cursor. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | length | number | Yes | Text length, which cannot be less than 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -200,6 +204,7 @@ inputClient.deleteForward(length, (err: BusinessError, result: boolean) => {
 
 ```
 
+<a id="deleteforward-1"></a>
 ## deleteForward
 
 ```TypeScript
@@ -224,7 +229,7 @@ Deletes the fixed-length text before the cursor. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the deletion is successful, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the deletion is successful, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -252,6 +257,7 @@ inputClient.deleteForward(length).then((result: boolean) => {
 
 ```
 
+<a id="deleteforwardsync"></a>
 ## deleteForwardSync
 
 ```TypeScript
@@ -288,6 +294,7 @@ inputClient.deleteForwardSync(length);
 
 ```
 
+<a id="finishtextpreview"></a>
 ## finishTextPreview
 
 ```TypeScript
@@ -310,7 +317,7 @@ Finishes the text preview. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -332,6 +339,7 @@ inputClient.finishTextPreview().then(() => {
 
 ```
 
+<a id="finishtextpreviewsync"></a>
 ## finishTextPreviewSync
 
 ```TypeScript
@@ -364,6 +372,7 @@ inputClient.finishTextPreviewSync();
 
 ```
 
+<a id="getattachoptions"></a>
 ## getAttachOptions
 
 ```TypeScript
@@ -398,6 +407,7 @@ console.info(`Succeeded in getting AttachOptions, AttachOptions is ${attachOptio
 
 ```
 
+<a id="getbackward"></a>
 ## getBackward
 
 ```TypeScript
@@ -417,7 +427,7 @@ Obtains the specific-length text after the cursor. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | length | number | Yes | Text length, which cannot be less than 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the obtained text. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the obtained text. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -443,6 +453,7 @@ inputClient.getBackward(length, (err: BusinessError, text: string) => {
 
 ```
 
+<a id="getbackward-1"></a>
 ## getBackward
 
 ```TypeScript
@@ -467,7 +478,7 @@ Obtains the specific-length text after the cursor. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the specific-length text after the cursor. |
+| Promise&lt;string&gt; | Promise used to return the specific-length text after the cursor. |
 
 **Error codes:**
 
@@ -491,6 +502,7 @@ inputClient.getBackward(length).then((text: string) => {
 
 ```
 
+<a id="getbackwardsync"></a>
 ## getBackwardSync
 
 ```TypeScript
@@ -534,6 +546,7 @@ console.info(`Succeeded in getting backward, text: ${text}`);
 
 ```
 
+<a id="getcallingwindowinfo"></a>
 ## getCallingWindowInfo
 
 ```TypeScript
@@ -557,7 +570,7 @@ Obtains information about the application window, in which the input box that st
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WindowInfo> | Promise used to return the information obtained. |
+| Promise&lt;WindowInfo&gt; | Promise used to return the information obtained. |
 
 **Error codes:**
 
@@ -581,6 +594,7 @@ inputClient.getCallingWindowInfo().then((windowInfo: inputMethodEngine.WindowInf
 
 ```
 
+<a id="geteditorattribute"></a>
 ## getEditorAttribute
 
 ```TypeScript
@@ -599,7 +613,7 @@ Obtains the attribute of the edit box. This API uses an asynchronous callback to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<EditorAttribute> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the attribute of the edit box. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;EditorAttribute&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the attribute of the edit box. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -623,6 +637,7 @@ inputClient.getEditorAttribute((err: BusinessError, editorAttribute: inputMethod
 
 ```
 
+<a id="geteditorattribute-1"></a>
 ## getEditorAttribute
 
 ```TypeScript
@@ -641,7 +656,7 @@ Obtains the attribute of the edit box. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<EditorAttribute> | Promise used to return the attribute of the edit box. |
+| Promise&lt;EditorAttribute&gt; | Promise used to return the attribute of the edit box. |
 
 **Error codes:**
 
@@ -663,6 +678,7 @@ inputClient.getEditorAttribute().then((editorAttribute: inputMethodEngine.Editor
 
 ```
 
+<a id="geteditorattributesync"></a>
 ## getEditorAttributeSync
 
 ```TypeScript
@@ -698,6 +714,7 @@ console.info(`editorAttribute.enterKeyType:  ${editorAttribute.enterKeyType}`);
 
 ```
 
+<a id="getforward"></a>
 ## getForward
 
 ```TypeScript
@@ -717,7 +734,7 @@ Obtains the specific-length text before the cursor. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | length | number | Yes | Text length, which cannot be less than 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the obtained text. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the obtained text. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -743,6 +760,7 @@ inputClient.getForward(length, (err: BusinessError, text: string) => {
 
 ```
 
+<a id="getforward-1"></a>
 ## getForward
 
 ```TypeScript
@@ -767,7 +785,7 @@ Obtains the specific-length text before the cursor. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the specific-length text before the cursor. |
+| Promise&lt;string&gt; | Promise used to return the specific-length text before the cursor. |
 
 **Error codes:**
 
@@ -791,6 +809,7 @@ inputClient.getForward(length).then((text: string) => {
 
 ```
 
+<a id="getforwardsync"></a>
 ## getForwardSync
 
 ```TypeScript
@@ -834,6 +853,7 @@ console.info(`Succeeded in getting forward, text: ${text}`);
 
 ```
 
+<a id="gettextindexatcursor"></a>
 ## getTextIndexAtCursor
 
 ```TypeScript
@@ -852,7 +872,7 @@ Obtains the index of the text where the cursor is located. This API uses an asyn
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the text index is obtained,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the text index is obtained,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -876,6 +896,7 @@ inputClient.getTextIndexAtCursor((err: BusinessError, index: number) => {
 
 ```
 
+<a id="gettextindexatcursor-1"></a>
 ## getTextIndexAtCursor
 
 ```TypeScript
@@ -894,7 +915,7 @@ Obtains the index of the text where the cursor is located. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -916,6 +937,7 @@ inputClient.getTextIndexAtCursor().then((index: number) => {
 
 ```
 
+<a id="gettextindexatcursorsync"></a>
 ## getTextIndexAtCursorSync
 
 ```TypeScript
@@ -951,6 +973,7 @@ console.info(`Succeeded in getTextIndexAtCursorSync, index: ${index}`);
 
 ```
 
+<a id="inserttext"></a>
 ## insertText
 
 ```TypeScript
@@ -970,7 +993,7 @@ Inserts text. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | text | string | Yes | Text to insert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1000,6 +1023,7 @@ inputClient.insertText('test', (err: BusinessError, result: boolean) => {
 
 ```
 
+<a id="inserttext-1"></a>
 ## insertText
 
 ```TypeScript
@@ -1024,7 +1048,7 @@ Inserts text. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the insertion is successful, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the insertion is successful, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -1051,6 +1075,7 @@ inputClient.insertText('test').then((result: boolean) => {
 
 ```
 
+<a id="inserttextsync"></a>
 ## insertTextSync
 
 ```TypeScript
@@ -1086,6 +1111,7 @@ inputClient.insertTextSync('test');
 
 ```
 
+<a id="movecursor"></a>
 ## moveCursor
 
 ```TypeScript
@@ -1105,7 +1131,7 @@ Moves the cursor. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | direction | number | Yes | Direction in which the cursor moves.<br>- **1**: upward.<br>- **2**: downward.<br>- **3**: leftward.<br>- **4**: rightward. which cannot be less than 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1129,6 +1155,7 @@ inputClient.moveCursor(inputMethodEngine.Direction.CURSOR_UP, (err: BusinessErro
 
 ```
 
+<a id="movecursor-1"></a>
 ## moveCursor
 
 ```TypeScript
@@ -1153,7 +1180,7 @@ Moves the cursor. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1175,6 +1202,7 @@ inputClient.moveCursor(inputMethodEngine.Direction.CURSOR_UP).then(() => {
 
 ```
 
+<a id="movecursorsync"></a>
 ## moveCursorSync
 
 ```TypeScript
@@ -1209,6 +1237,7 @@ inputClient.moveCursorSync(inputMethodEngine.Direction.CURSOR_UP);
 
 ```
 
+<a id="off"></a>
 ## off('attachOptionsDidChange')
 
 ```TypeScript
@@ -1228,7 +1257,7 @@ Unsubscribes from the event indicating that additional options for binding an in
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'attachOptionsDidChange' | Yes | Additional option change event when the input method is bound. The value is fixed to **'attachOptionsDidChange'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AttachOptions> | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type by default. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AttachOptions&gt; | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type by default. |
 
 **Example**
 
@@ -1245,6 +1274,7 @@ console.info(`attachOptionsDidChange unsubscribed from attachOptionsDidChange`);
 
 ```
 
+<a id="on"></a>
 ## on('attachOptionsDidChange')
 
 ```TypeScript
@@ -1264,7 +1294,7 @@ Subscribes to the event indicating that the additional options for binding an in
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'attachOptionsDidChange' | Yes | Additional option change event when the input method is bound. The value is fixed to **'attachOptionsDidChange'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AttachOptions> | Yes | Callback used to return the additional options for binding an input method. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AttachOptions&gt; | Yes | Callback used to return the additional options for binding an input method. |
 
 **Error codes:**
 
@@ -1287,6 +1317,7 @@ console.info(`attachOptionsDidChange unsubscribed from attachOptionsDidChange`);
 
 ```
 
+<a id="recvmessage"></a>
 ## recvMessage
 
 ```TypeScript
@@ -1344,6 +1375,7 @@ inputMethodEngine.getInputMethodAbility()
 
 ```
 
+<a id="selectbymovement"></a>
 ## selectByMovement
 
 ```TypeScript
@@ -1363,7 +1395,7 @@ Selects text based on the cursor movement direction. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | movement | [Movement](arkts-ime-inputmethod-movement-i.md) | Yes | Direction in which the cursor moves when the text is selected. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the selection event is sent,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the selection event is sent,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1388,6 +1420,7 @@ inputClient.selectByMovement(movement, (err: BusinessError) => {
 
 ```
 
+<a id="selectbymovement-1"></a>
 ## selectByMovement
 
 ```TypeScript
@@ -1412,7 +1445,7 @@ Selects text based on the cursor movement direction. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1435,6 +1468,7 @@ inputClient.selectByMovement(movement).then(() => {
 
 ```
 
+<a id="selectbymovementsync"></a>
 ## selectByMovementSync
 
 ```TypeScript
@@ -1470,6 +1504,7 @@ inputClient.selectByMovementSync(movement);
 
 ```
 
+<a id="selectbyrange"></a>
 ## selectByRange
 
 ```TypeScript
@@ -1489,7 +1524,7 @@ Selects text based on the specified range. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | range | [Range](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-scan-range-i.md) | Yes | Range of the selected text. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the selection event is sent,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the selection event is sent,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1514,6 +1549,7 @@ inputClient.selectByRange(range, (err: BusinessError) => {
 
 ```
 
+<a id="selectbyrange-1"></a>
 ## selectByRange
 
 ```TypeScript
@@ -1538,7 +1574,7 @@ Selects text based on the specified range. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1561,6 +1597,7 @@ inputClient.selectByRange(range).then(() => {
 
 ```
 
+<a id="selectbyrangesync"></a>
 ## selectByRangeSync
 
 ```TypeScript
@@ -1596,6 +1633,7 @@ inputClient.selectByRangeSync(range);
 
 ```
 
+<a id="sendextendaction"></a>
 ## sendExtendAction
 
 ```TypeScript
@@ -1612,7 +1650,7 @@ Sends an extended edit action. This API uses an asynchronous callback to return 
 >  
 > When the edit box responds to the **PASTE** command of [ExtendAction](arkts-ime-inputmethodengine-extendaction-e.md),  
 > the edit box application needs to apply for the  
-> [ohos.permission.READ_PASTEBOARD](../../../../security/AccessToken/restricted-permissions.md#ohospermissionread_pasteboard)  
+> [ohos.permission.READ_PASTEBOARD](docroot://security/AccessToken/restricted-permissions.md#ohospermissionread_pasteboard)  
 > permission.
 
 **Since:** 10
@@ -1626,7 +1664,7 @@ Sends an extended edit action. This API uses an asynchronous callback to return 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | action | [ExtendAction](arkts-ime-inputmethodengine-extendaction-e.md) | Yes | Extended edit action to send. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1651,6 +1689,7 @@ inputClient.sendExtendAction(inputMethodEngine.ExtendAction.COPY, (err: Business
 
 ```
 
+<a id="sendextendaction-1"></a>
 ## sendExtendAction
 
 ```TypeScript
@@ -1668,7 +1707,7 @@ Sends an extended edit action. This API uses a promise to return the result.
 >  
 > When the edit box responds to the **PASTE** command of [ExtendAction](arkts-ime-inputmethodengine-extendaction-e.md),  
 > the edit box application needs to apply for the  
-> [ohos.permission.READ_PASTEBOARD](../../../../security/AccessToken/restricted-permissions.md#ohospermissionread_pasteboard)  
+> [ohos.permission.READ_PASTEBOARD](docroot://security/AccessToken/restricted-permissions.md#ohospermissionread_pasteboard)  
 > permission.
 
 **Since:** 10
@@ -1687,7 +1726,7 @@ Sends an extended edit action. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1710,6 +1749,7 @@ inputClient.sendExtendAction(inputMethodEngine.ExtendAction.COPY).then(() => {
 
 ```
 
+<a id="sendkeyfunction"></a>
 ## sendKeyFunction
 
 ```TypeScript
@@ -1729,7 +1769,7 @@ Sends the function key. This API uses an asynchronous callback to return the res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | action | number | Yes | Action of the function key.<br>- **0**: invalid key.<br>- **1**: confirm key (Enter key). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1759,6 +1799,7 @@ inputClient.sendKeyFunction(action, (err: BusinessError, result: boolean) => {
 
 ```
 
+<a id="sendkeyfunction-1"></a>
 ## sendKeyFunction
 
 ```TypeScript
@@ -1783,7 +1824,7 @@ Sends the function key. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the operation is successful, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the operation is successful, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -1810,6 +1851,7 @@ inputClient.sendKeyFunction(action).then((result: boolean) => {
 
 ```
 
+<a id="sendmessage"></a>
 ## sendMessage
 
 ```TypeScript
@@ -1836,13 +1878,13 @@ Sends the custom communication to the edit box application attached to the input
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | msgId | string | Yes | Identifier of the custom data to be sent to the edit box application attached to the input method application. |
-| msgParam | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | No | Message body of the custom data to be sent to the edit box application attached to the input method application. |
+| msgParam | ArrayBuffer | No | Message body of the custom data to be sent to the edit box application attached to the input method application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1870,6 +1912,7 @@ inputClient.sendMessage(msgId, msgParam).then(() => {
 
 ```
 
+<a id="sendprivatecommand"></a>
 ## sendPrivateCommand
 
 ```TypeScript
@@ -1896,13 +1939,13 @@ Sends private data to the system component that needs to communicate with the in
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| commandData | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, CommandDataType> | Yes | Private data to send. |
+| commandData | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, CommandDataType&gt; | Yes | Private data to send. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1933,6 +1976,7 @@ inputMethodEngine.getInputMethodAbility().on('inputStart', (kbController, textIn
 
 ```
 
+<a id="setpreviewtext"></a>
 ## setPreviewText
 
 ```TypeScript
@@ -1958,7 +2002,7 @@ Sets the preview text. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1982,6 +2026,7 @@ inputClient.setPreviewText('test', range).then(() => {
 
 ```
 
+<a id="setpreviewtextsync"></a>
 ## setPreviewTextSync
 
 ```TypeScript

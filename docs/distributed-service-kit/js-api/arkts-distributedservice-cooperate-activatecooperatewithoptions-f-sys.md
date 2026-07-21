@@ -6,6 +6,7 @@
 import { cooperate } from '@kit.DistributedServiceKit';
 ```
 
+<a id="activatecooperatewithoptions"></a>
 ## activateCooperateWithOptions
 
 ```TypeScript
@@ -36,13 +37,13 @@ Starts screen hopping based on the specified options. This API uses a promise to
 | --- | --- | --- | --- |
 | targetNetworkId | string | Yes | Descriptor of the target device for screen hopping. |
 | inputDeviceId | number | Yes | ID of the input device that initiates screen hopping. |
-| cooperateOptions | [CooperateOptions](arkts-distributedservice-cooperate-cooperateoptions-i-sys.md) | No | Screen hopping options, such as the exit position. If this parameter is not set, this API works in the same way as [activateCooperate](arkts-distributedservice-cooperate-activatecooperate-f-sys.md#activatecooperate-2). |
+| cooperateOptions | [CooperateOptions](arkts-distributedservice-cooperate-cooperateoptions-i-sys.md) | No | Screen hopping options, such as the exit position. If this parameter is not set, this API works in the same way as [activateCooperate](arkts-distributedservice-cooperate-activatecooperate-f-sys.md#activatecooperate-1). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

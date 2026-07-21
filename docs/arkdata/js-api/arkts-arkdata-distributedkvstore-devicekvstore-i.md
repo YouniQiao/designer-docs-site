@@ -1,6 +1,6 @@
 # DeviceKVStore
 
-Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used.Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of other devices is read-only and cannot be modified.For example, a device KV store can be used to implement image sharing between devices. The images of other devices can be viewed, but not be modified or deleted.Before calling any method in **DeviceKVStore**, you must use [getKVStore](arkts-arkdata-distributedkvstore-kvmanager-i.md#getkvstore-1)to obtain a **DeviceKVStore** object.
+Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used.Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of other devices is read-only and cannot be modified.For example, a device KV store can be used to implement image sharing between devices. The images of other devices can be viewed, but not be modified or deleted.Before calling any method in **DeviceKVStore**, you must use [getKVStore](distributedKVStore.KVManager.getKVStore<T>(storeId: string, options: Options, callback: AsyncCallback<T>))to obtain a **DeviceKVStore** object.
 
 **Inheritance/Implementation:** DeviceKVStore extends [SingleKVStore](arkts-arkdata-distributedkvstore-singlekvstore-i.md)
 
@@ -16,6 +16,7 @@ Provides APIs for querying data in a device KV store and performing cross-device
 import { distributedKVStore } from '@kit.ArkData';
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -37,7 +38,7 @@ Obtains the value of the specified key for this device. This API uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | key | string | Yes | Key of the value to obtain. It cannot be empty, and the length cannot exceed [MAX_KEY_LENGTH](arkts-arkdata-distributedkvstore-constants-i.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean \| string \| number \| number \| Uint8Array> | Yes | Callback used to return the value obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean \| string \| number \| number \| Uint8Array&gt; | Yes | Callback used to return the value obtained. |
 
 **Error codes:**
 
@@ -48,6 +49,7 @@ Obtains the value of the specified key for this device. This API uses an asynchr
 | [15100004](../errorcode-distributedKVStore.md#15100004-failed-to-find-data) | Not found. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 
+<a id="get-1"></a>
 ## get
 
 ```TypeScript
@@ -74,7 +76,7 @@ Obtains the value of the specified key for this device. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean \| string \| number \| number \| Uint8Array> | Promise used to return the value obtained. |
+| Promise&lt;boolean \| string \| number \| number \| Uint8Array&gt; | Promise used to return the value obtained. |
 
 **Error codes:**
 
@@ -85,6 +87,7 @@ Obtains the value of the specified key for this device. This API uses a promise 
 | [15100004](../errorcode-distributedKVStore.md#15100004-failed-to-find-data) | Not found. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 
+<a id="get-2"></a>
 ## get
 
 ```TypeScript
@@ -114,7 +117,7 @@ Obtains a string value that matches the specified device ID and key. This API us
 | --- | --- | --- | --- |
 | deviceId | string | Yes | ID of the target device. |
 | key | string | Yes | Key of the value to obtain. It cannot be empty or exceed [MAX_KEY_LENGTH](arkts-arkdata-distributedkvstore-constants-i.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean \| string \| number \| number \| Uint8Array> | Yes | Callback used to return the value obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean \| string \| number \| number \| Uint8Array&gt; | Yes | Callback used to return the value obtained. |
 
 **Error codes:**
 
@@ -125,6 +128,7 @@ Obtains a string value that matches the specified device ID and key. This API us
 | [15100004](../errorcode-distributedKVStore.md#15100004-failed-to-find-data) | Not found. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 
+<a id="get-3"></a>
 ## get
 
 ```TypeScript
@@ -159,7 +163,7 @@ Obtains a string value that matches the specified device ID and key. This API us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean \| string \| number \| number \| Uint8Array> | Promise used to return the string value that matches the given condition. |
+| Promise&lt;boolean \| string \| number \| number \| Uint8Array&gt; | Promise used to return the string value that matches the given condition. |
 
 **Error codes:**
 
@@ -170,6 +174,7 @@ Obtains a string value that matches the specified device ID and key. This API us
 | [15100004](../errorcode-distributedKVStore.md#15100004-failed-to-find-data) | Not found. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 
+<a id="getentries"></a>
 ## getEntries
 
 ```TypeScript
@@ -191,7 +196,7 @@ Obtains all KV pairs that match the specified key prefix for this device. This A
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keyPrefix | string | Yes | Key prefix to match. It cannot contain '^'; otherwise, the predicate becomes invalid and all data in the RDB store will be returned. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Entry[]> | Yes | Callback used to return the KV pairs that match the specified prefix. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Entry[]&gt; | Yes | Callback used to return the KV pairs that match the specified prefix. |
 
 **Error codes:**
 
@@ -245,6 +250,7 @@ try {
 
 ```
 
+<a id="getentries-1"></a>
 ## getEntries
 
 ```TypeScript
@@ -271,7 +277,7 @@ Obtains all KV pairs that match the specified key prefix for this device. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Entry[]> | Promise used to return the KV pairs that match the specified prefix. |
+| Promise&lt;Entry[]&gt; | Promise used to return the KV pairs that match the specified prefix. |
 
 **Error codes:**
 
@@ -320,6 +326,7 @@ try {
 
 ```
 
+<a id="getentries-2"></a>
 ## getEntries
 
 ```TypeScript
@@ -349,7 +356,7 @@ Obtains all KV pairs that match the specified device ID and key prefix. This API
 | --- | --- | --- | --- |
 | deviceId | string | Yes | ID of the target device. |
 | keyPrefix | string | Yes | Key prefix to match. It cannot contain '^'; otherwise, the predicate becomes invalid and all data in the RDB store will be returned. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Entry[]> | Yes | Callback used to return the KV pairs obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Entry[]&gt; | Yes | Callback used to return the KV pairs obtained. |
 
 **Error codes:**
 
@@ -403,6 +410,7 @@ try {
 
 ```
 
+<a id="getentries-3"></a>
 ## getEntries
 
 ```TypeScript
@@ -437,7 +445,7 @@ Obtains all KV pairs that match the specified device ID and key prefix. This API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Entry[]> | Promise used to return all the KV pairs that match the given condition. |
+| Promise&lt;Entry[]&gt; | Promise used to return all the KV pairs that match the given condition. |
 
 **Error codes:**
 
@@ -489,6 +497,7 @@ try {
 
 ```
 
+<a id="getentries-4"></a>
 ## getEntries
 
 ```TypeScript
@@ -510,7 +519,7 @@ Obtains all KV pairs that match the specified **Query** object for this device. 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | query | [Query](arkts-arkdata-distributeddata-query-c.md) | Yes | Key prefix to match. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Entry[]> | Yes | Callback used to return the KV pairs that match the specified **Query** object on the local device. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Entry[]&gt; | Yes | Callback used to return the KV pairs that match the specified **Query** object on the local device. |
 
 **Error codes:**
 
@@ -567,6 +576,7 @@ try {
 
 ```
 
+<a id="getentries-5"></a>
 ## getEntries
 
 ```TypeScript
@@ -593,7 +603,7 @@ Obtains all KV pairs that match the specified **Query** object for this device. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Entry[]> | Promise used to return the KV pairs that match the specified **Query** object on the local device. |
+| Promise&lt;Entry[]&gt; | Promise used to return the KV pairs that match the specified **Query** object on the local device. |
 
 **Error codes:**
 
@@ -645,6 +655,7 @@ try {
 
 ```
 
+<a id="getentries-6"></a>
 ## getEntries
 
 ```TypeScript
@@ -674,7 +685,7 @@ Obtains the KV pairs that match the specified device ID and **Query** object. Th
 | --- | --- | --- | --- |
 | deviceId | string | Yes | ID of the target device. |
 | query | [Query](arkts-arkdata-distributeddata-query-c.md) | Yes | **Query** object to match. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Entry[]> | Yes | Callback used to return the KV pairs that match the specified device ID and **Query** object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Entry[]&gt; | Yes | Callback used to return the KV pairs that match the specified device ID and **Query** object. |
 
 **Error codes:**
 
@@ -733,6 +744,7 @@ try {
 
 ```
 
+<a id="getentries-7"></a>
 ## getEntries
 
 ```TypeScript
@@ -767,7 +779,7 @@ Obtains the KV pairs that match the specified device ID and **Query** object. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Entry[]> | Promise used to return the KV pairs that match the specified device ID and **Query** object. |
+| Promise&lt;Entry[]&gt; | Promise used to return the KV pairs that match the specified device ID and **Query** object. |
 
 **Error codes:**
 
@@ -820,6 +832,7 @@ try {
 
 ```
 
+<a id="getresultset"></a>
 ## getResultSet
 
 ```TypeScript
@@ -841,7 +854,7 @@ Obtains a result set with the specified prefix for this device. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keyPrefix | string | Yes | Key prefix to match. It cannot contain '^'; otherwise, the predicate becomes invalid and all data in the RDB store will be returned. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KVStoreResultSet> | Yes | Callback used to return the result set with the specified prefix. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KVStoreResultSet&gt; | Yes | Callback used to return the result set with the specified prefix. |
 
 **Error codes:**
 
@@ -904,6 +917,7 @@ try {
 
 ```
 
+<a id="getresultset-1"></a>
 ## getResultSet
 
 ```TypeScript
@@ -930,7 +944,7 @@ Obtains a result set with the specified prefix for this device. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KVStoreResultSet> | Promise used to return the result set with the specified prefix. |
+| Promise&lt;KVStoreResultSet&gt; | Promise used to return the result set with the specified prefix. |
 
 **Error codes:**
 
@@ -985,6 +999,7 @@ try {
 
 ```
 
+<a id="getresultset-2"></a>
 ## getResultSet
 
 ```TypeScript
@@ -1014,7 +1029,7 @@ Obtains a **KVStoreResultSet** object that matches the specified device ID and k
 | --- | --- | --- | --- |
 | deviceId | string | Yes | ID of the target device. |
 | keyPrefix | string | Yes | Key prefix to match. It cannot contain '^'; otherwise, the predicate becomes invalid and all data in the RDB store will be returned. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KVStoreResultSet> | Yes | Callback used to return the **KVStoreResultSet** object obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KVStoreResultSet&gt; | Yes | Callback used to return the **KVStoreResultSet** object obtained. |
 
 **Error codes:**
 
@@ -1056,6 +1071,7 @@ try {
 
 ```
 
+<a id="getresultset-3"></a>
 ## getResultSet
 
 ```TypeScript
@@ -1090,7 +1106,7 @@ Obtains a **KVStoreResultSet** object that matches the specified device ID and k
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KVStoreResultSet> | Promise used to return the **KVStoreResultSet** object obtained. |
+| Promise&lt;KVStoreResultSet&gt; | Promise used to return the **KVStoreResultSet** object obtained. |
 
 **Error codes:**
 
@@ -1128,6 +1144,7 @@ try {
 
 ```
 
+<a id="getresultset-4"></a>
 ## getResultSet
 
 ```TypeScript
@@ -1156,7 +1173,7 @@ Obtains a **KVStoreResultSet** object that matches the specified **Query** objec
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | query | [Query](arkts-arkdata-distributeddata-query-c.md) | Yes | **Query** object to match. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KVStoreResultSet> | Yes | Callback used to return the **KVStoreResultSet** object obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KVStoreResultSet&gt; | Yes | Callback used to return the **KVStoreResultSet** object obtained. |
 
 **Error codes:**
 
@@ -1221,6 +1238,7 @@ try {
 
 ```
 
+<a id="getresultset-5"></a>
 ## getResultSet
 
 ```TypeScript
@@ -1247,7 +1265,7 @@ Obtains a **KVStoreResultSet** object that matches the specified **Query** objec
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KVStoreResultSet> | Promise used to return the **KVStoreResultSet** object obtained. |
+| Promise&lt;KVStoreResultSet&gt; | Promise used to return the **KVStoreResultSet** object obtained. |
 
 **Error codes:**
 
@@ -1297,6 +1315,7 @@ try {
 
 ```
 
+<a id="getresultset-6"></a>
 ## getResultSet
 
 ```TypeScript
@@ -1326,7 +1345,7 @@ Obtains a **KVStoreResultSet** object that matches the specified device ID and *
 | --- | --- | --- | --- |
 | deviceId | string | Yes | ID of the device to which the **KVStoreResultSet** object belongs. |
 | query | [Query](arkts-arkdata-distributeddata-query-c.md) | Yes | **Query** object to match. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KVStoreResultSet> | Yes | Callback used to return the **KVStoreResultSet** object that matches the specified device ID and **Query** object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KVStoreResultSet&gt; | Yes | Callback used to return the **KVStoreResultSet** object that matches the specified device ID and **Query** object. |
 
 **Error codes:**
 
@@ -1391,6 +1410,7 @@ try {
 
 ```
 
+<a id="getresultset-7"></a>
 ## getResultSet
 
 ```TypeScript
@@ -1425,7 +1445,7 @@ Obtains a **KVStoreResultSet** object that matches the specified device ID and *
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KVStoreResultSet> | Promise used to return the **KVStoreResultSet** object that matches the specified device ID and **Query** object. |
+| Promise&lt;KVStoreResultSet&gt; | Promise used to return the **KVStoreResultSet** object that matches the specified device ID and **Query** object. |
 
 **Error codes:**
 
@@ -1487,6 +1507,7 @@ try {
 
 ```
 
+<a id="getresultsize"></a>
 ## getResultSize
 
 ```TypeScript
@@ -1508,7 +1529,7 @@ Obtains the number of results that match the specified **Query** object for this
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | query | [Query](arkts-arkdata-distributeddata-query-c.md) | Yes | **Query** object to match. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of results obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of results obtained. |
 
 **Error codes:**
 
@@ -1562,6 +1583,7 @@ try {
 
 ```
 
+<a id="getresultsize-1"></a>
 ## getResultSize
 
 ```TypeScript
@@ -1588,7 +1610,7 @@ Obtains the number of results that match the specified **Query** object for this
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of results obtained. |
+| Promise&lt;number&gt; | Promise used to return the number of results obtained. |
 
 **Error codes:**
 
@@ -1636,6 +1658,7 @@ try {
 
 ```
 
+<a id="getresultsize-2"></a>
 ## getResultSize
 
 ```TypeScript
@@ -1665,7 +1688,7 @@ Obtains the number of results that match the specified device ID and **Query** o
 | --- | --- | --- | --- |
 | deviceId | string | Yes | ID of the device to which the **KVStoreResultSet** object belongs. |
 | query | [Query](arkts-arkdata-distributeddata-query-c.md) | Yes | **Query** object to match. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of results obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of results obtained. |
 
 **Error codes:**
 
@@ -1719,6 +1742,7 @@ try {
 
 ```
 
+<a id="getresultsize-3"></a>
 ## getResultSize
 
 ```TypeScript
@@ -1753,7 +1777,7 @@ Obtains the number of results that match the specified device ID and **Query** o
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of results obtained. |
+| Promise&lt;number&gt; | Promise used to return the number of results obtained. |
 
 **Error codes:**
 

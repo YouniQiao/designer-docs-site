@@ -14,6 +14,7 @@ Defines the MediaQuery list info.
 import { MediaQueryEvent, MediaQueryList } from '@kit.ArkUI';
 ```
 
+<a id="addlistener"></a>
 ## addListener
 
 ```TypeScript
@@ -34,7 +35,7 @@ Adds a listening function to MediaQueryList.The listening function must be added
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event: MediaQueryEvent) => void | Yes |  |
+| callback | (event: MediaQueryEvent) =&gt; void | Yes |  |
 
 **Example**
 
@@ -51,6 +52,7 @@ mMediaQueryList.addListener(maxWidthMatch);
 
 ```
 
+<a id="removelistener"></a>
 ## removeListener
 
 ```TypeScript
@@ -71,7 +73,7 @@ Removes a listening function from MediaQueryList.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (event: MediaQueryEvent) => void | Yes |  |
+| callback | (event: MediaQueryEvent) =&gt; void | Yes |  |
 
 **Example**
 
@@ -132,7 +134,7 @@ onchange?: (matches: boolean) => void
 
 Called when the matches value changes.
 
-**Type:** (matches: boolean) => void
+**Type:** (matches: boolean) =&gt; void
 
 **Since:** 11
 

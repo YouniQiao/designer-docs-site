@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="getvalue"></a>
 ## getValue
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the value of a specified character string in the database.
 | --- | --- | --- | --- |
 | dataAbilityHelper | [DataAbilityHelper](../../apis-ability-kit/arkts-apis/arkts-ability-dataabilityhelper-dataabilityhelper-i.md) | Yes | Indicates the {@link ohos.aafwk.ability.DataAbilityHelper} used to access the database. |
 | name | string | Yes | Indicates the name of the character string. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<object> | Yes | The callback of getValue result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;object&gt; | Yes | The callback of getValue result. |
 
 **Example**
 
@@ -52,6 +53,7 @@ settings.getValue(helper, settings.display.SCREEN_BRIGHTNESS_STATUS, (err:Error,
 ```
 
 
+<a id="getvalue-1"></a>
 ## getValue
 
 ```TypeScript
@@ -83,7 +85,7 @@ Obtains the value of a specified character string in the database.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<object> | Returns the value of the character string in the domain if any is found; returns {@code null} otherwise. |
+| Promise&lt;object&gt; | Returns the value of the character string in the domain if any is found; returns {@code null} otherwise. |
 
 **Example**
 
@@ -99,6 +101,7 @@ settings.getValue(helper, settings.display.SCREEN_BRIGHTNESS_STATUS).then((value
 ```
 
 
+<a id="getvalue-2"></a>
 ## getValue
 
 ```TypeScript
@@ -121,7 +124,7 @@ Get value from settingsdata
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context. Only UIAbilityContext and ExtensionContext are supported. |
 | name | string | Yes | Indicates the name of the character string. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | The callback of getValue result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | The callback of getValue result. |
 
 **Example**
 
@@ -142,6 +145,7 @@ settings.getValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS, (err, valu
 ```
 
 
+<a id="getvalue-3"></a>
 ## getValue
 
 ```TypeScript
@@ -169,7 +173,7 @@ Get value from settingsdata
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the value of the character string in the domain if any is found; returns {@code null} otherwise. |
+| Promise&lt;string&gt; | Returns the value of the character string in the domain if any is found; returns {@code null} otherwise. |
 
 **Example**
 
@@ -186,6 +190,7 @@ settings.getValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS).then((valu
 ```
 
 
+<a id="getvalue-4"></a>
 ## getValue
 
 ```TypeScript
@@ -214,7 +219,7 @@ Get value from settingsdata [USER_SECURE] domain need ohos.permission.MANAGE_SEC
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the value of the character string in the domain if any is found; returns {@code null} otherwise. |
+| Promise&lt;string&gt; | Returns the value of the character string in the domain if any is found; returns {@code null} otherwise. |
 
 **Example**
 

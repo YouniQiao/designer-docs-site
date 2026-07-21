@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setbadgenumber"></a>
 ## setBadgeNumber
 
 ```TypeScript
@@ -29,7 +30,7 @@ This API can be properly called on devices other than wearables. If it is called
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | badgeNumber | number | Yes | Notification badge number to set. If **badgeNumber** is set to **0**, badges are cleared; if the value is greater than **99**, **99+** is displayed on the badge. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ notificationManager.setBadgeNumber(badgeNumber, setBadgeNumberCallback);
 ```
 
 
+<a id="setbadgenumber-1"></a>
 ## setBadgeNumber
 
 ```TypeScript
@@ -88,7 +90,7 @@ This API can be properly called on devices other than wearables. If it is called
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

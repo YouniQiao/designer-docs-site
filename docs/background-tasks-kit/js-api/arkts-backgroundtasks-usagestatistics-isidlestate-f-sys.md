@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="isidlestate"></a>
 ## isIdleState
 
 ```TypeScript
@@ -29,7 +30,7 @@ Checks whether the application with a specified bundle name is in the idle state
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Indicates the bundle name of the application to query. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result.The value **true** indicates the application is idle in a particular period, and **false** indicates otherwise.The time range of the particular period is defined by the system, which may be hours or days. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result.The value **true** indicates the application is idle in a particular period, and **false** indicates otherwise.The time range of the particular period is defined by the system, which may be hours or days. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ usageStatistics.isIdleState("com.ohos.camera", (err: BusinessError, res: boolean
 ```
 
 
+<a id="isidlestate-1"></a>
 ## isIdleState
 
 ```TypeScript
@@ -90,7 +92,7 @@ Checks whether the application with a specified bundle name is in the idle state
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by isIdleState.boolean value is true mean the application is idle in a particular period; false mean otherwise.The time range of the particular period is defined by the system, which may be hours or days. |
+| Promise&lt;boolean&gt; | the promise returned by isIdleState.boolean value is true mean the application is idle in a particular period; false mean otherwise.The time range of the particular period is defined by the system, which may be hours or days. |
 
 **Error codes:**
 

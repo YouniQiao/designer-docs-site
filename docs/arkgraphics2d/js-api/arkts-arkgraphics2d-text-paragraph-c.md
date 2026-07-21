@@ -16,6 +16,7 @@ Before calling any of the following APIs, you must use [build()](arkts-arkgraphi
 import { text } from '@kit.ArkGraphics2D';
 ```
 
+<a id="didexceedmaxlines"></a>
 ## didExceedMaxLines
 
 ```TypeScript
@@ -45,6 +46,7 @@ let didExceed = paragraph.didExceedMaxLines();
 
 ```
 
+<a id="forcereuserasterresult"></a>
 ## forceReuseRasterResult
 
 ```TypeScript
@@ -69,6 +71,7 @@ Whether to force reuse the rasterization result.
 | --- | --- | --- | --- |
 | isForce | boolean | Yes | Whether to force reuse the rasterization result.True means to force reuse of the rasterization result.False means to allow updates to the rasterization result.The default value is false. |
 
+<a id="getactualtextrange"></a>
 ## getActualTextRange
 
 ```TypeScript
@@ -105,6 +108,7 @@ let rang = paragraph.getActualTextRange(0, true);
 
 ```
 
+<a id="getalphabeticbaseline"></a>
 ## getAlphabeticBaseline
 
 ```TypeScript
@@ -134,6 +138,7 @@ let alphabeticBaseline = paragraph.getAlphabeticBaseline();
 
 ```
 
+<a id="getcharacterpositionatcoordinate"></a>
 ## getCharacterPositionAtCoordinate
 
 ```TypeScript
@@ -164,7 +169,7 @@ Obtains the character position information closest to the given coordinates.
 
 | Type | Description |
 | --- | --- |
-| [PositionWithAffinity](../../apis-arkui/arkts-apis/arkts-arkui-text-common-positionwithaffinity-i.md) | Character position. |
+| [PositionWithAffinity](../../apis-arkui/arkts-apis/arkts-arkui-positionwithaffinity-i.md) | Character position. |
 
 **Error codes:**
 
@@ -209,6 +214,7 @@ struct Index {
 
 ```
 
+<a id="getcharacterrangeforglyphrange"></a>
 ## getCharacterRangeForGlyphRange
 
 ```TypeScript
@@ -238,7 +244,7 @@ Obtains the character range corresponding to the specified glyph range.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Range> | Character range. If the array contains one element, it indicates the character range.If the array contains two elements, the first element indicates the character range, and the second element indicates the actual glyph range. |
+| Array&lt;Range&gt; | Character range. If the array contains one element, it indicates the character range.If the array contains two elements, the first element indicates the character range, and the second element indicates the actual glyph range. |
 
 **Error codes:**
 
@@ -282,6 +288,7 @@ struct Index {
 
 ```
 
+<a id="getglyphpositionatcoordinate"></a>
 ## getGlyphPositionAtCoordinate
 
 ```TypeScript
@@ -309,7 +316,7 @@ Obtains the position of a glyph closest to the given coordinates.
 
 | Type | Description |
 | --- | --- |
-| [PositionWithAffinity](../../apis-arkui/arkts-apis/arkts-arkui-text-common-positionwithaffinity-i.md) | Position of the glyph. |
+| [PositionWithAffinity](../../apis-arkui/arkts-apis/arkts-arkui-positionwithaffinity-i.md) | Position of the glyph. |
 
 **Example**
 
@@ -318,6 +325,7 @@ let positionWithAffinity = paragraph.getGlyphPositionAtCoordinate(0, 0);
 
 ```
 
+<a id="getglyphrangeforcharacterrange"></a>
 ## getGlyphRangeForCharacterRange
 
 ```TypeScript
@@ -347,7 +355,7 @@ Obtains the glyph range corresponding to the specified character range.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Range> | Glyph range. The array contains two elements. The first element indicates the glyph range, and the second element indicates the actual character range. |
+| Array&lt;Range&gt; | Glyph range. The array contains two elements. The first element indicates the glyph range, and the second element indicates the actual character range. |
 
 **Error codes:**
 
@@ -391,6 +399,7 @@ struct Index {
 
 ```
 
+<a id="getheight"></a>
 ## getHeight
 
 ```TypeScript
@@ -420,6 +429,7 @@ let height = paragraph.getHeight();
 
 ```
 
+<a id="getideographicbaseline"></a>
 ## getIdeographicBaseline
 
 ```TypeScript
@@ -449,6 +459,7 @@ let ideographicBaseline = paragraph.getIdeographicBaseline();
 
 ```
 
+<a id="getlinecount"></a>
 ## getLineCount
 
 ```TypeScript
@@ -478,6 +489,7 @@ let lineCount = paragraph.getLineCount();
 
 ```
 
+<a id="getlineheight"></a>
 ## getLineHeight
 
 ```TypeScript
@@ -513,6 +525,7 @@ let lineHeight = paragraph.getLineHeight(0);
 
 ```
 
+<a id="getlinemetrics"></a>
 ## getLineMetrics
 
 ```TypeScript
@@ -533,7 +546,7 @@ Obtains an array of line measurement information.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LineMetrics> | Array of line measurement information. |
+| Array&lt;LineMetrics&gt; | Array of line measurement information. |
 
 **Example**
 
@@ -542,6 +555,7 @@ let arrLineMetric =  paragraph.getLineMetrics();
 
 ```
 
+<a id="getlinemetrics-1"></a>
 ## getLineMetrics
 
 ```TypeScript
@@ -577,6 +591,7 @@ let lineMetrics =  paragraph.getLineMetrics(0);
 
 ```
 
+<a id="getlinewidth"></a>
 ## getLineWidth
 
 ```TypeScript
@@ -612,6 +627,7 @@ let lineWidth = paragraph.getLineWidth(0);
 
 ```
 
+<a id="getlongestline"></a>
 ## getLongestLine
 
 ```TypeScript
@@ -641,6 +657,7 @@ let longestLine = paragraph.getLongestLine();
 
 ```
 
+<a id="getlongestlinewithindent"></a>
 ## getLongestLineWithIndent
 
 ```TypeScript
@@ -670,6 +687,7 @@ let longestLineWithIndent = paragraph.getLongestLineWithIndent();
 
 ```
 
+<a id="getmaxintrinsicwidth"></a>
 ## getMaxIntrinsicWidth
 
 ```TypeScript
@@ -699,6 +717,7 @@ let maxIntrinsicWidth = paragraph.getMaxIntrinsicWidth();
 
 ```
 
+<a id="getmaxwidth"></a>
 ## getMaxWidth
 
 ```TypeScript
@@ -728,6 +747,7 @@ let maxWidth = paragraph.getMaxWidth();
 
 ```
 
+<a id="getminintrinsicwidth"></a>
 ## getMinIntrinsicWidth
 
 ```TypeScript
@@ -757,6 +777,7 @@ let minIntrinsicWidth = paragraph.getMinIntrinsicWidth();
 
 ```
 
+<a id="getparagraphstyle"></a>
 ## getParagraphStyle
 
 ```TypeScript
@@ -817,6 +838,7 @@ struct Index {
 
 ```
 
+<a id="getprocessstate"></a>
 ## getProcessState
 
 ```TypeScript
@@ -877,6 +899,7 @@ struct Index {
 
 ```
 
+<a id="getrectsforplaceholders"></a>
 ## getRectsForPlaceholders
 
 ```TypeScript
@@ -897,7 +920,7 @@ Obtains the rectangles occupied by all placeholders in the text.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<TextBox> | Array holding the rectangles obtained. |
+| Array&lt;TextBox&gt; | Array holding the rectangles obtained. |
 
 **Example**
 
@@ -906,6 +929,7 @@ let placeholderRects = paragraph.getRectsForPlaceholders();
 
 ```
 
+<a id="getrectsforrange"></a>
 ## getRectsForRange
 
 ```TypeScript
@@ -934,7 +958,7 @@ Obtains the rectangles occupied by the characters in the range of the text under
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<TextBox> | Array holding the rectangles obtained. |
+| Array&lt;TextBox&gt; | Array holding the rectangles obtained. |
 
 **Example**
 
@@ -944,6 +968,7 @@ let rects = paragraph.getRectsForRange(range, text.RectWidthStyle.TIGHT, text.Re
 
 ```
 
+<a id="gettextdisplaystate"></a>
 ## getTextDisplayState
 
 ```TypeScript
@@ -1004,6 +1029,7 @@ struct Index {
 
 ```
 
+<a id="gettextlines"></a>
 ## getTextLines
 
 ```TypeScript
@@ -1024,7 +1050,7 @@ Obtains all the text lines.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<TextLine> | Array of text lines. |
+| Array&lt;TextLine&gt; | Array of text lines. |
 
 **Example**
 
@@ -1033,6 +1059,7 @@ let lines = paragraph.getTextLines();
 
 ```
 
+<a id="getvisibletextranges"></a>
 ## getVisibleTextRanges
 
 ```TypeScript
@@ -1055,7 +1082,7 @@ Obtains the range of text that is visible on the screen in a paragraph. Excludes
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Range> | Array of the visible text range of a paragraph. The range is the index of the UTF-16encoding unit. |
+| Array&lt;Range&gt; | Array of the visible text range of a paragraph. The range is the index of the UTF-16encoding unit. |
 
 **Example**
 
@@ -1064,6 +1091,7 @@ let visibleRanges = paragraph.getVisibleTextRanges();
 
 ```
 
+<a id="getwordboundary"></a>
 ## getWordBoundary
 
 ```TypeScript
@@ -1099,6 +1127,7 @@ let wordRange = paragraph.getWordBoundary(0);
 
 ```
 
+<a id="layout"></a>
 ## layout
 
 ```TypeScript
@@ -1125,7 +1154,7 @@ Performs layout and calculates the positions of all glyphs. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1206,6 +1235,7 @@ struct Index {
 
 ```
 
+<a id="layoutsync"></a>
 ## layoutSync
 
 ```TypeScript
@@ -1235,6 +1265,7 @@ paragraph.layoutSync(100);
 
 ```
 
+<a id="layoutwithconstraints"></a>
 ## layoutWithConstraints
 
 ```TypeScript
@@ -1277,6 +1308,7 @@ for (let i = 0; i < result.fitStrRange.length; ++i) {
 
 ```
 
+<a id="paint"></a>
 ## paint
 
 ```TypeScript
@@ -1312,6 +1344,7 @@ paragraph.paint(canvas, 0, 0);
 
 ```
 
+<a id="paintonpath"></a>
 ## paintOnPath
 
 ```TypeScript
@@ -1350,6 +1383,7 @@ paragraph.paintOnPath(canvas, path, 0, 0);
 
 ```
 
+<a id="updatecolor"></a>
 ## updateColor
 
 ```TypeScript
@@ -1379,6 +1413,7 @@ paragraph.updateColor({ alpha: 255, red: 255, green: 0, blue: 0 });
 
 ```
 
+<a id="updatedecoration"></a>
 ## updateDecoration
 
 ```TypeScript

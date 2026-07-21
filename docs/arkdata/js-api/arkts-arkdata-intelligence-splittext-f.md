@@ -6,6 +6,7 @@
 import { intelligence } from '@kit.ArkData';
 ```
 
+<a id="splittext"></a>
 ## splitText
 
 ```TypeScript
@@ -31,7 +32,7 @@ Splits text.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | The promise used to return the result. |
+| Promise&lt;Array&lt;string&gt;&gt; | The promise used to return the result. |
 
 **Error codes:**
 

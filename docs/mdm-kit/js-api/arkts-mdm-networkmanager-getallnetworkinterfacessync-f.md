@@ -6,6 +6,7 @@
 import { networkManager } from '@kit.MDMKit';
 ```
 
+<a id="getallnetworkinterfacessync"></a>
 ## getAllNetworkInterfacesSync
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains all activated wired network interfaces.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Names of all activated wired network interfaces. |
+| Array&lt;string&gt; | Names of all activated wired network interfaces. |
 
 **Error codes:**
 

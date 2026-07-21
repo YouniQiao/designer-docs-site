@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="restore"></a>
 ## restore
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes a wallpaper of the specified type and restores the default one.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | wallpaperType | [WallpaperType](arkts-basicservices-wallpaper-wallpapertype-e.md) | Yes | indicates the wallpaper type. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of restore. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of restore. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ wallpaper.restore(wallpaper.WallpaperType.WALLPAPER_SYSTEM, (error: BusinessErro
 ```
 
 
+<a id="restore-1"></a>
 ## restore
 
 ```TypeScript
@@ -83,7 +85,7 @@ Removes a wallpaper of the specified type and restores the default one.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

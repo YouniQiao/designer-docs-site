@@ -14,6 +14,7 @@ Defines a simple animation parameter object. Unlike **AnimatorOptions**, this ob
 import { AnimatorOptions, SimpleAnimatorOptions, AnimatorResult } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -63,6 +64,7 @@ struct AnimatorTest {
 
 ```
 
+<a id="delay"></a>
 ## delay
 
 ```TypeScript
@@ -117,6 +119,7 @@ struct AnimatorTest {
 
 ```
 
+<a id="direction"></a>
 ## direction
 
 ```TypeScript
@@ -147,6 +150,7 @@ Sets the playback direction for this animator animation.
 | --- | --- |
 | [SimpleAnimatorOptions](arkts-arkui-animator-simpleanimatoroptions-c.md) | **SimpleAnimatorOptions** object for animation parameters. |
 
+<a id="duration"></a>
 ## duration
 
 ```TypeScript
@@ -201,6 +205,7 @@ struct AnimatorTest {
 
 ```
 
+<a id="easing"></a>
 ## easing
 
 ```TypeScript
@@ -255,6 +260,7 @@ struct AnimatorTest {
 
 ```
 
+<a id="fill"></a>
 ## fill
 
 ```TypeScript
@@ -277,7 +283,7 @@ Sets the fill mode for this animation.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fillMode | [FillMode](arkts-arkui-enums-fillmode-e.md) | Yes | Fill mode, which affects how the animation behaves during the delay period and after it ends.<br>Default value: **FillMode.Forwards** |
+| fillMode | [FillMode](arkts-arkui-fillmode-e.md) | Yes | Fill mode, which affects how the animation behaves during the delay period and after it ends.<br>Default value: **FillMode.Forwards** |
 
 **Return value:**
 
@@ -285,6 +291,7 @@ Sets the fill mode for this animation.
 | --- | --- |
 | [SimpleAnimatorOptions](arkts-arkui-animator-simpleanimatoroptions-c.md) | **SimpleAnimatorOptions** object for animation parameters. |
 
+<a id="iterations"></a>
 ## iterations
 
 ```TypeScript

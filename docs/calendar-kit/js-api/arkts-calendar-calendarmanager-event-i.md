@@ -74,7 +74,7 @@ End time of an event. The value is a 13-digit timestamp. For an all-day event, t
 id?: number
 ```
 
-Event ID. When you call [addEvent()](arkts-calendar-calendarmanager-calendar-i.md#addevent-2) or [addEvents()](arkts-calendar-calendarmanager-calendar-i.md#addevents-2) to create an event, this parameter is not required. When you call [deleteEvent()](arkts-calendar-calendarmanager-calendar-i.md#deleteevent-2) or [deleteEvents()](arkts-calendar-calendarmanager-calendar-i.md#deleteevents-2) to delete an event, this parameter is required and must be set to an array of integers. If this parameter is set to an invalid value, an error will be reported.
+Event ID. When you call [addEvent()](arkts-calendar-calendarmanager-calendar-i.md#addevent-1) or [addEvents()](arkts-calendar-calendarmanager-calendar-i.md#addevents-1) to create an event, this parameter is not required. When you call [deleteEvent()](arkts-calendar-calendarmanager-calendar-i.md#deleteevent-1) or [deleteEvents()](arkts-calendar-calendarmanager-calendar-i.md#deleteevents-1) to delete an event, this parameter is required and must be set to an array of integers. If this parameter is set to an invalid value, an error will be reported.
 
 **Type:** number
 
@@ -110,7 +110,7 @@ Unique ID of an event, with a maximum of 5,000 characters. If this parameter is 
 instanceEndTime?: number
 ```
 
-End time of an event. The value is a 13-digit timestamp. This parameter does not need to be set in [addEvent()](arkts-calendar-calendarmanager-calendar-i.md#addevent-2)or [addEvents()](arkts-calendar-calendarmanager-calendar-i.md#addevents-2).
+End time of an event. The value is a 13-digit timestamp. This parameter does not need to be set in [addEvent()](arkts-calendar-calendarmanager-calendar-i.md#addevent-1)or [addEvents()](arkts-calendar-calendarmanager-calendar-i.md#addevents-1).
 
 **Type:** number
 
@@ -128,7 +128,7 @@ End time of an event. The value is a 13-digit timestamp. This parameter does not
 instanceStartTime?: number
 ```
 
-Start time of an event. The value is a 13-digit timestamp. This parameter does not need to be set in [addEvent()](arkts-calendar-calendarmanager-calendar-i.md#addevent-2)or [addEvents()](arkts-calendar-calendarmanager-calendar-i.md#addevents-2).
+Start time of an event. The value is a 13-digit timestamp. This parameter does not need to be set in [addEvent()](arkts-calendar-calendarmanager-calendar-i.md#addevent-1)or [addEvents()](arkts-calendar-calendarmanager-calendar-i.md#addevents-1).
 
 **Type:** number
 

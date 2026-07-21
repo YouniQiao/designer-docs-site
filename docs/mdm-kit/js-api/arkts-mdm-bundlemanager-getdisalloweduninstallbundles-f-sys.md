@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.MDMKit';
 ```
 
+<a id="getdisalloweduninstallbundles"></a>
 ## getDisallowedUninstallBundles
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the applications that cannot be uninstalled by the current user. This AP
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ bundleManager.getDisallowedUninstallBundles(wantTemp, (err, result) => {
 ```
 
 
+<a id="getdisalloweduninstallbundles-1"></a>
 ## getDisallowedUninstallBundles
 
 ```TypeScript
@@ -100,7 +102,7 @@ Obtains the applications that cannot be uninstalled by the user specified by **u
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | userId | number | Yes | User ID, which must be greater than or equal to 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -135,6 +137,7 @@ bundleManager.getDisallowedUninstallBundles(wantTemp, 100, (err, result) => {
 ```
 
 
+<a id="getdisalloweduninstallbundles-2"></a>
 ## getDisallowedUninstallBundles
 
 ```TypeScript
@@ -170,7 +173,7 @@ Obtains the applications that cannot be uninstalled by the current or specified 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the applications that cannot be uninstalled by the current or specified user. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the applications that cannot be uninstalled by the current or specified user. |
 
 **Error codes:**
 

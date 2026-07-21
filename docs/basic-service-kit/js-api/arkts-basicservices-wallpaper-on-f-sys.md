@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="on"></a>
 ## on('wallpaperChange')
 
 ```TypeScript
@@ -36,7 +37,7 @@ Registers a listener for wallpaper changes to receive notifications about the ch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wallpaperChange' | Yes | the incoming wallpaperChange table open receiver when the user modifies the wallpaper settings. |
-| callback | (wallpaperType: WallpaperType, resourceType: WallpaperResourceType, uri?: string) => void | Yes | wallpaperType indicates the wallpaper type.resourceType indicates the resource type of the wallpaper.uri indicates the wallpaper resource address. |
+| callback | (wallpaperType: WallpaperType, resourceType: WallpaperResourceType, uri?: string) =&gt; void | Yes | wallpaperType indicates the wallpaper type.resourceType indicates the resource type of the wallpaper.uri indicates the wallpaper resource address. |
 
 **Error codes:**
 

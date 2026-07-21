@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="setnetworkcapability"></a>
 ## setNetworkCapability
 
 ```TypeScript
@@ -34,7 +35,7 @@ Set the type and state for the specified network capability.
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | type | [NetworkCapabilityType](arkts-telephony-radio-networkcapabilitytype-e-sys.md) | Yes | Indicates the service type of the {@link NetworkCapabilityType}. |
 | state | [NetworkCapabilityState](arkts-telephony-radio-networkcapabilitystate-e-sys.md) | Yes | Indicates the service ability state of the {@link NetworkCapabilityState}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setNetworkCapability. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setNetworkCapability. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ radio.setNetworkCapability(slotId, type, state, (err: BusinessError) => {
 ```
 
 
+<a id="setnetworkcapability-1"></a>
 ## setNetworkCapability
 
 ```TypeScript
@@ -97,7 +99,7 @@ Set the type and state for the specified network capability.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setNetworkCapability. |
+| Promise&lt;void&gt; | The promise returned by the setNetworkCapability. |
 
 **Error codes:**
 

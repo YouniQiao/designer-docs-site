@@ -6,6 +6,7 @@
 import { continueManager } from '@kit.AbilityKit';
 ```
 
+<a id="on"></a>
 ## on('prepareContinue')
 
 ```TypeScript
@@ -28,7 +29,7 @@ Registers a callback to obtain the quick start result when an application is lau
 | --- | --- | --- | --- |
 | type | 'prepareContinue' | Yes | The value is fixed at **prepareContinue**. |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ContinueResultInfo> | Yes | Callback used to return the result. If obtaining the quick start result is successful, **err** is undefined, and **ContinueResultInfo** is the obtained quick startup result.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ContinueResultInfo&gt; | Yes | Callback used to return the result. If obtaining the quick start result is successful, **err** is undefined, and **ContinueResultInfo** is the obtained quick startup result.Otherwise, **err** is an error object. |
 
 **Error codes:**
 

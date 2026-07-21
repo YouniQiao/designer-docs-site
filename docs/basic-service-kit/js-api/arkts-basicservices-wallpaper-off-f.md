@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="off"></a>
 ## off('colorChange')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Unregisters a listener for wallpaper color changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'colorChange' | Yes | incoming colorChange table delete receiver to pick up a color change wallpaper wallpaper color changes |
-| callback | (colors: Array<RgbaColor>, wallpaperType: WallpaperType) => void | No | provides dominant colors of the wallpaper. |
+| callback | (colors: Array&lt;RgbaColor&gt;, wallpaperType: WallpaperType) =&gt; void | No | provides dominant colors of the wallpaper. |
 
 **Example**
 

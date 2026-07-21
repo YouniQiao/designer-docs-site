@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="selectcontact"></a>
 ## selectContact
 
 ```TypeScript
@@ -18,7 +19,7 @@ Selects a contact. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 10
 
-**Substitutes:** selectContacts(callback:
+**Substitutes:** [selectContacts(callback:](arkts-contacts-contact-selectcontacts-f.md#selectcontacts-1)
 
 <!--Device-contact-function selectContact(callback: AsyncCallback<Array<Contact>>): void--><!--Device-contact-function selectContact(callback: AsyncCallback<Array<Contact>>): void-End-->
 
@@ -28,7 +29,7 @@ Selects a contact. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Contact>> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of selected contacts is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Contact&gt;&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of selected contacts is returned. If the operation fails, an error code is returned. |
 
 **Example**
 
@@ -48,6 +49,7 @@ contact.selectContact((err: BusinessError, data) => {
 ```
 
 
+<a id="selectcontact-1"></a>
 ## selectContact
 
 ```TypeScript
@@ -60,7 +62,7 @@ Selects a contact. This API uses a promise to return the result.
 
 **Deprecated since:** 10
 
-**Substitutes:** [selectContacts()](arkts-contacts-contact-selectcontacts-f.md#selectcontacts-2)
+**Substitutes:** [selectContacts()](arkts-contacts-contact-selectcontacts-f.md#selectcontacts-1)
 
 <!--Device-contact-function selectContact(): Promise<Array<Contact>>--><!--Device-contact-function selectContact(): Promise<Array<Contact>>-End-->
 
@@ -70,7 +72,7 @@ Selects a contact. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Contact>> | Promise used to return the result, which is an array of selected contacts. |
+| Promise&lt;Array&lt;Contact&gt;&gt; | Promise used to return the result, which is an array of selected contacts. |
 
 **Example**
 

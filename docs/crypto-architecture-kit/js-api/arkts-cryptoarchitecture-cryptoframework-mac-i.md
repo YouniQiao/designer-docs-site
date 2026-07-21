@@ -16,6 +16,7 @@ Provides APIs for message authentication code (MAC) operations. Before using any
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="dofinal"></a>
 ## doFinal
 
 ```TypeScript
@@ -38,7 +39,7 @@ Finishes the MAC computation and obtains the MAC computation result. This API us
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataBlob> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the MAC computation result obtained. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataBlob&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the MAC computation result obtained. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ function hmacByCallback() {
 
 ```
 
+<a id="dofinal-1"></a>
 ## doFinal
 
 ```TypeScript
@@ -95,7 +97,7 @@ Finishes the MAC computation and obtains the MAC computation result. This API us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob> | Promise used to return the MAC computation result. |
+| Promise&lt;DataBlob&gt; | Promise used to return the MAC computation result. |
 
 **Error codes:**
 
@@ -126,6 +128,7 @@ async function hmacByPromise() {
 
 ```
 
+<a id="dofinalsync"></a>
 ## doFinalSync
 
 ```TypeScript
@@ -181,6 +184,7 @@ function hmacBySync() {
 
 ```
 
+<a id="getmaclength"></a>
 ## getMacLength
 
 ```TypeScript
@@ -249,6 +253,7 @@ function testGetMacLength() {
 
 ```
 
+<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -272,7 +277,7 @@ Initializes the MAC computation using a symmetric key. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | key | [SymKey](arkts-cryptoarchitecture-cryptoframework-symkey-i.md) | Yes | Symmetric key obtained. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -282,6 +287,7 @@ Initializes the MAC computation using a symmetric key. This API uses an asynchro
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+<a id="init-1"></a>
 ## init
 
 ```TypeScript
@@ -310,7 +316,7 @@ Initializes the MAC computation using a symmetric key. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -320,6 +326,7 @@ Initializes the MAC computation using a symmetric key. This API uses a promise t
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+<a id="initsync"></a>
 ## initSync
 
 ```TypeScript
@@ -352,6 +359,7 @@ Initializes the MAC computation using a symmetric key. This API returns the resu
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -363,7 +371,7 @@ Updates the MAC status. This API uses an asynchronous callback to return the res
 > **NOTE**  
 >  
 > For details about the sample code for calling **update** multiple times in an HMAC operation, see  
-> [Generating an HMAC by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
+> [Generating an HMAC by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
 > .
 
 **Since:** 9
@@ -381,7 +389,7 @@ Updates the MAC status. This API uses an asynchronous callback to return the res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | input | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Data to pass in. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -391,6 +399,7 @@ Updates the MAC status. This API uses an asynchronous callback to return the res
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -402,7 +411,7 @@ Updates the MAC status. This API uses a promise to return the result.
 > **NOTE**  
 >  
 > For details about the sample code for calling **update** multiple times in an HMAC operation, see  
-> [Generating an HMAC by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
+> [Generating an HMAC by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
 > .
 
 **Since:** 9
@@ -425,7 +434,7 @@ Updates the MAC status. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -435,6 +444,7 @@ Updates the MAC status. This API uses a promise to return the result.
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
@@ -446,7 +456,7 @@ Updates the MAC status. This API returns the result synchronously.
 > **NOTE**  
 >  
 > For details about the sample code for calling **updateSync** multiple times in an HMAC operation, see  
-> [Generating an HMAC by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
+> [Generating an HMAC by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
 > .
 
 <br><br>**NOTE**<br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.

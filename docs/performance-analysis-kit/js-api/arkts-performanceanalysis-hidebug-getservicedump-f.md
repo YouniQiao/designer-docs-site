@@ -6,6 +6,7 @@
 import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="getservicedump"></a>
 ## getServiceDump
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains system service information.It need dump permission.This API can be calle
 | --- | --- | --- | --- |
 | serviceid | number | Yes | Service ID used to obtain system service information. |
 | fd | number | Yes | File descriptor to which data is written by the API. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Parameter list of the **Dump** API of the system service. The maximum length of a string is 254 characters. The excess part will be truncated. |
+| args | Array&lt;string&gt; | Yes | Parameter list of the **Dump** API of the system service. The maximum length of a string is 254 characters. The excess part will be truncated. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { access } from '@kit.ConnectivityKit';
 ```
 
+<a id="isvalidrandomdeviceid"></a>
 ## isValidRandomDeviceId
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="startdevicelogging"></a>
 ## startDeviceLogging
 
 ```TypeScript
@@ -33,7 +34,7 @@ Begin to write device logs into a file descriptor for the purpose of problem loc
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise for the result |
+| Promise&lt;void&gt; | Promise for the result |
 
 **Error codes:**
 

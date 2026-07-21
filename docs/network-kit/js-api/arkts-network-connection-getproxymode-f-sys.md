@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getproxymode"></a>
 ## getProxyMode
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtain the proxy mode {@link ProxyMode}.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ProxyMode> | the promise returned by the function. |
+| Promise&lt;ProxyMode&gt; | the promise returned by the function. |
 
 **Error codes:**
 

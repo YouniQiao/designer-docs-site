@@ -14,6 +14,7 @@ Represents a **Connection** object, which provides methods for connecting to and
 import { linkEnhance } from '@kit.DistributedServiceKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -65,6 +66,7 @@ try {
 
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -119,6 +121,7 @@ try {
 
 ```
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -170,6 +173,7 @@ try {
 
 ```
 
+<a id="getpeerdeviceid"></a>
 ## getPeerDeviceId
 
 ```TypeScript
@@ -222,6 +226,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('connectResult')
 
 ```TypeScript
@@ -245,7 +250,7 @@ Unregisters the listener for **connectResult** events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectResult' | Yes | Event type, which is **connectResult**. This event is triggered when `connect()` is called. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ConnectResult> | No | Registered callback. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ConnectResult&gt; | No | Registered callback. |
 
 **Error codes:**
 
@@ -281,6 +286,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('disconnected')
 
 ```TypeScript
@@ -304,7 +310,7 @@ Unregisters the listener for **disconnected** events. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'disconnected' | Yes | Event type, which is **disconnected**. This event is triggered when the connection is passively terminated or encounters an exception. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | Registered callback, where **number** indicates the returned error code. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Registered callback, where **number** indicates the returned error code. |
 
 **Error codes:**
 
@@ -340,6 +346,7 @@ try {
 
 ```
 
+<a id="off-2"></a>
 ## off('dataReceived')
 
 ```TypeScript
@@ -363,7 +370,7 @@ Unregisters the listener for **dataReceived** events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataReceived' | Yes | Event type, which is **dataReceived**. This event is triggered when data is received. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ArrayBuffer> | No | Registered callback. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ArrayBuffer&gt; | No | Registered callback. |
 
 **Error codes:**
 
@@ -400,6 +407,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('connectResult')
 
 ```TypeScript
@@ -423,7 +431,7 @@ Registers a listener for **connectResult** events. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectResult' | Yes | Event type, which is **connectResult**. This event is triggered when `connect()` is called. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ConnectResult> | Yes | Registered callback. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ConnectResult&gt; | Yes | Registered callback. |
 
 **Error codes:**
 
@@ -459,6 +467,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on('disconnected')
 
 ```TypeScript
@@ -482,7 +491,7 @@ Registers a listener for **disconnected** events. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'disconnected' | Yes | Event type, which is **disconnected**. This event is triggered when the connection is passively terminated or encounters an exception. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Registered callback, where **number** indicates the returned error code. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Registered callback, where **number** indicates the returned error code. |
 
 **Error codes:**
 
@@ -515,6 +524,7 @@ try {
 
 ```
 
+<a id="on-2"></a>
 ## on('dataReceived')
 
 ```TypeScript
@@ -538,7 +548,7 @@ Registers a listener for the **dataReceived** events. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataReceived' | Yes | Event type, which is **dataReceived**. This event is triggered when data is received. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ArrayBuffer> | Yes | Registered callback. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ArrayBuffer&gt; | Yes | Registered callback. |
 
 **Error codes:**
 
@@ -573,6 +583,7 @@ try {
 
 ```
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript
@@ -595,7 +606,7 @@ Sends data to the server after a connection is established successfully. When th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Data to send. The maximum length is 1024 bytes. |
+| data | ArrayBuffer | Yes | Data to send. The maximum length is 1024 bytes. |
 
 **Error codes:**
 

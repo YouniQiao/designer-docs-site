@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="getkeepalivebundles"></a>
 ## getKeepAliveBundles
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains information about a specified type of keep-alive application of a user. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<KeepAliveBundleInfo>> | Promise used to return the array of keep-alive application information. |
+| Promise&lt;Array&lt;KeepAliveBundleInfo&gt;&gt; | Promise used to return the array of keep-alive application information. |
 
 **Error codes:**
 

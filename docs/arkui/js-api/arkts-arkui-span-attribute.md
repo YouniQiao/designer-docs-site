@@ -1,8 +1,8 @@
 # Span properties/events
 
-Inherited from [BaseSpan](arkts-arkui-span-basespan-c.md).
+Inherited from [BaseSpan](arkts-arkui-basespan-c.md).
 
-Among universal events, only [onClick](arkts-arkui-common-commonmethod-c.md#onclick-2) click events and [onHover](arkts-arkui-common-commonmethod-c.md#onhover-1) hover events are supported.
+Among universal events, only [onClick](arkts-arkui-commonmethod-c.md#onclick-1) click events and [onHover](arkts-arkui-commonmethod-c.md#onhover-1) hover events are supported.
 
 **Inheritance/Implementation:** SpanAttribute extends [BaseSpan<SpanAttribute>](BaseSpan<SpanAttribute>)
 
@@ -12,6 +12,7 @@ Among universal events, only [onClick](arkts-arkui-common-commonmethod-c.md#oncl
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="decoration"></a>
 ## decoration
 
 ```TypeScript
@@ -34,8 +35,9 @@ Style and color of the text decorative line.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [DecorationStyleInterface](../arkts-apis/arkts-arkui-styled-string-decorationstyleinterface-i.md) | Yes | Style of the text decorative line.<br>Default value:<br>{<br> type:TextDecorationType.None,<br> color: Color.Black,<br> style: TextDecorationStyle.SOLID <br>}<br>**NOTE**<br>The **style** parameter cannot be used in widgets.<br>**Since:** 12 |
+| value | [DecorationStyleInterface](../arkts-apis/arkts-arkui-decorationstyleinterface-i.md) | Yes | Style of the text decorative line.<br>Default value:<br>{<br> type:TextDecorationType.None,<br> color: Color.Black,<br> style: TextDecorationStyle.SOLID <br>}<br>**NOTE**<br>The **style** parameter cannot be used in widgets.<br>**Since:** 12 |
 
+<a id="font"></a>
 ## font
 
 ```TypeScript
@@ -60,6 +62,7 @@ Sets the text style, covering the font size, font width, Font family, and font s
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Text style. |
 
+<a id="font-1"></a>
 ## font
 
 ```TypeScript
@@ -83,8 +86,9 @@ Used to set the font of span.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | the span font size, font weight, font family and font style. |
-| fontConfigs | [FontConfigs](../arkts-apis/arkts-arkui-text-common-fontconfigs-i.md) | No | the configuration of font. |
+| fontConfigs | [FontConfigs](../arkts-apis/arkts-arkui-fontconfigs-i.md) | No | the configuration of font. |
 
+<a id="fontcolor"></a>
 ## fontColor
 
 ```TypeScript
@@ -109,6 +113,7 @@ Sets the font color.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color.<br>Default value: **'e6182431'**.<br>Default value for wearables:**'#c5ffffff'** |
 
+<a id="fontfamily"></a>
 ## fontFamily
 
 ```TypeScript
@@ -133,6 +138,7 @@ Sets the font family.
 | --- | --- | --- | --- |
 | value | string \| Resource | Yes | Font family.<br>Default font: **'HarmonyOS Sans'**<br>To specify multiple fonts, separate them with commas (,), and fonts are applied in priority order. Example:**'Arial, HarmonyOS Sans'**. |
 
+<a id="fontsize"></a>
 ## fontSize
 
 ```TypeScript
@@ -157,6 +163,7 @@ Sets the font size.
 | --- | --- | --- | --- |
 | value | number \| string \| Resource | Yes | Font size. If **fontSize** is of the number type, the unit fp is used. The default font size is 16 fp. For the string type, numeric string values with optional units, for example, **"10"** or **"10fp"**, are supported. Percentage values are not supported.<br>Default value on wearable devices: **15fp**. |
 
+<a id="fontstyle"></a>
 ## fontStyle
 
 ```TypeScript
@@ -181,6 +188,7 @@ Sets the font style.
 | --- | --- | --- | --- |
 | value | [FontStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-fontstyle-e.md) | Yes | Font style.<br>Default value: **FontStyle.Normal** |
 
+<a id="fontvariations"></a>
 ## fontVariations
 
 ```TypeScript
@@ -203,8 +211,9 @@ Set the font variation.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fontVariations | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FontVariation> | Yes | Indicates the span font variation. |
+| fontVariations | Array&lt;FontVariation&gt; | Yes | Indicates the span font variation. |
 
+<a id="fontweight"></a>
 ## fontWeight
 
 ```TypeScript
@@ -229,6 +238,7 @@ Sets the font weight. If the value is too large, the text may be clipped dependi
 | --- | --- | --- | --- |
 | value | number \| FontWeight \| ResourceStr | Yes | Font weight. For the number type, the value range is [100, 900], at an interval of 100. The default value is **400**. A larger value indicates a heavier font weight. For the string type, only strings of the number type are supported, for example, **400**, **"bold"**,**"bolder"**, **"lighter"**, **"regular"**, and **"medium"**, which correspond to the enumerated values in **FontWeight**.<br>Default value: **FontWeight.Normal**<br>The [Resource](../../apis-localization-kit/arkts-apis/arkts-localization-resource-resource-i.md) type is supported since API version 20.<br>**Since:** 20 |
 
+<a id="fontweight-1"></a>
 ## fontWeight
 
 ```TypeScript
@@ -254,8 +264,9 @@ Called when the font weight is set.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | weight | number \| FontWeight \| ResourceStr | Yes | the span font weight. |
-| fontWeightConfigs | [FontWeightConfigs](../arkts-apis/arkts-arkui-text-common-fontweightconfigs-i.md) | No | the configuration of font weight. |
+| fontWeightConfigs | [FontWeightConfigs](../arkts-apis/arkts-arkui-fontweightconfigs-i.md) | No | the configuration of font weight. |
 
+<a id="letterspacing"></a>
 ## letterSpacing
 
 ```TypeScript
@@ -280,6 +291,7 @@ Sets the letter spacing. A negative value tightens the spacing; a positive value
 | --- | --- | --- | --- |
 | value | number \| ResourceStr | Yes | Letter spacing.<br>Unit: [fp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)<br>The [Resource](../../apis-localization-kit/arkts-apis/arkts-localization-resource-resource-i.md) type is supported since API version 20.<br>**Since:** 20 |
 
+<a id="lineheight"></a>
 ## lineHeight
 
 ```TypeScript
@@ -304,6 +316,7 @@ Sets the line height for the text.
 | --- | --- | --- | --- |
 | value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Line height of the text.<br> If the value is of the number type, the unit is fp. When using the string type, numeric string values with optional units, for example, **"10"** or **"10fp"**, are supported. |
 
+<a id="textcase"></a>
 ## textCase
 
 ```TypeScript
@@ -326,8 +339,9 @@ Sets the text case.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [TextCase](../arkts-apis/arkts-arkui-enums-textcase-e.md) | Yes | Text case.<br>Default value: **TextCase.Normal** |
+| value | [TextCase](../arkts-apis/arkts-arkui-textcase-e.md) | Yes | Text case.<br>Default value: **TextCase.Normal** |
 
+<a id="textshadow"></a>
 ## textShadow
 
 ```TypeScript
@@ -350,5 +364,5 @@ Text shadow. It supports input parameters in an array to implement multiple text
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ShadowOptions \| Array<ShadowOptions> | Yes | Text shadow. |
+| value | [ShadowOptions](arkts-arkui-shadowoptions-i.md) \| Array&lt;ShadowOptions&gt; | Yes | Text shadow. |
 

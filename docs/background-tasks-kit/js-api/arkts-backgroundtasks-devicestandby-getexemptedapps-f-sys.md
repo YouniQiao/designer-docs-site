@@ -6,6 +6,7 @@
 import { deviceStandby } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="getexemptedapps"></a>
 ## getExemptedApps
 
 ```TypeScript
@@ -29,7 +30,7 @@ Returns the information about the specified exempted application.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resourceTypes | number | Yes | the combination of {@link ResourceType} values. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ExemptedAppInfo>> | Yes | the callback of getExemptedApps. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ExemptedAppInfo&gt;&gt; | Yes | the callback of getExemptedApps. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ deviceStandby.getExemptedApps(resourceTypes, (err: BusinessError, res: Array<dev
 ```
 
 
+<a id="getexemptedapps-1"></a>
 ## getExemptedApps
 
 ```TypeScript
@@ -93,7 +95,7 @@ Returns the information about the specified exempted application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ExemptedAppInfo>> | the promise returned by getExemptedApps. |
+| Promise&lt;Array&lt;ExemptedAppInfo&gt;&gt; | the promise returned by getExemptedApps. |
 
 **Error codes:**
 

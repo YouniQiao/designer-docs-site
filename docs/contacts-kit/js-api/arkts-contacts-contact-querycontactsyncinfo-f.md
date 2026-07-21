@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="querycontactsyncinfo"></a>
 ## queryContactSyncInfo
 
 ```TypeScript
@@ -38,7 +39,7 @@ If the returned contact synchronization information is empty, the invoking party
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ContactSyncInfo>> | Returns the array of contacts synchronization information for the calling application. Returns null if no contacts are being synchronized. |
+| Promise&lt;Array&lt;ContactSyncInfo&gt;&gt; | Returns the array of contacts synchronization information for the calling application. Returns null if no contacts are being synchronized. |
 
 **Error codes:**
 

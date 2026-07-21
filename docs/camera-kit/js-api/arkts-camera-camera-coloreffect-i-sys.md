@@ -18,6 +18,7 @@ ColorEffect extends [ColorEffectQuery](arkts-camera-camera-coloreffectquery-i-sy
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getcoloreffect"></a>
 ## getColorEffect
 
 ```TypeScript
@@ -57,6 +58,7 @@ function getColorEffect(session: camera.PhotoSessionForSys): camera.ColorEffectT
 
 ```
 
+<a id="setcoloreffect"></a>
 ## setColorEffect
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getuniquedeviceid"></a>
 ## getUniqueDeviceId
 
 ```TypeScript
@@ -31,7 +32,7 @@ If the device is registered with a 3GPP-compliant network, the international mob
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the unique device ID.Returns an empty string if the unique device ID does not exist. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the unique device ID.Returns an empty string if the unique device ID does not exist. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ radio.getUniqueDeviceId(slotId, (err: BusinessError, data: string) => {
 ```
 
 
+<a id="getuniquedeviceid-1"></a>
 ## getUniqueDeviceId
 
 ```TypeScript
@@ -92,7 +94,7 @@ If the device is registered with a 3GPP-compliant network, the international mob
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the unique device ID.Returns an empty string if the unique device ID does not exist. |
+| Promise&lt;string&gt; | Returns the unique device ID.Returns an empty string if the unique device ID does not exist. |
 
 **Error codes:**
 
@@ -121,6 +123,7 @@ radio.getUniqueDeviceId(slotId).then((data: string) => {
 ```
 
 
+<a id="getuniquedeviceid-2"></a>
 ## getUniqueDeviceId
 
 ```TypeScript
@@ -145,7 +148,7 @@ If the device is registered with a 3GPP-compliant network, the international mob
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the unique device ID.Returns an empty string if the unique device ID does not exist. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the unique device ID.Returns an empty string if the unique device ID does not exist. |
 
 **Error codes:**
 

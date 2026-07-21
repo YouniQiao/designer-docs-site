@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getappcloneidentity"></a>
 ## getAppCloneIdentity
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the bundle name and clone index of a cloned application based on the giv
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AppCloneIdentity> | Promise used to return the application clone index. |
+| Promise&lt;AppCloneIdentity&gt; | Promise used to return the application clone index. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="addcontactviaui"></a>
 ## addContactViaUI
 
 ```TypeScript
@@ -33,7 +34,7 @@ Creates a contact through UI interaction. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result, which is the contact ID. |
+| Promise&lt;number&gt; | Promise used to return the result, which is the contact ID. |
 
 **Error codes:**
 

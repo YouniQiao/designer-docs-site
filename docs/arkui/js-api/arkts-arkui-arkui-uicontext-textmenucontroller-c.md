@@ -20,6 +20,7 @@ Provides the capability to control text menus.
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="disablemenuitems"></a>
 ## disableMenuItems
 
 ```TypeScript
@@ -35,16 +36,16 @@ Disables specified system service menu items in the text selection menu.
 > - This API can be used in [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md).  
 >  
 > - After this API is called, the [editMenuOptions](TextAttribute#editMenuOptions) API of text components  
-> will be affected. The parameter list of its [onCreateMenu](arkts-arkui-text-common-editmenuoptions-i.md#oncreatemenu-1) callback will not  
+> will be affected. The parameter list of its [onCreateMenu](arkts-arkui-editmenuoptions-i.md#oncreatemenu-1) callback will not  
 > include the disabled menu options.  
 >  
-> - Components involving text selection menus include the following: [Text](./@internal/component/ets/text),  
-> [TextArea](./@internal/component/ets/text_area), [TextInput](./@internal/component/ets/text_input),  
-> [Search](./@internal/component/ets/search), [RichEditor](./@internal/component/ets/rich_editor), and  
-> [Web](./@internal/component/ets/web).  
+> - Components involving text selection menus include the following: [Text](../../apis-arkui/arkts-components/arkts-arkui-text-i),  
+> [TextArea](../../apis-arkui/arkts-components/arkts-arkui-text_area-i), [TextInput](../../apis-arkui/arkts-components/arkts-arkui-text_input-i),  
+> [Search](../../apis-arkui/arkts-components/arkts-arkui-search-i), [RichEditor](../../apis-arkui/arkts-components/arkts-arkui-rich_editor-i), and  
+> [Web](../../apis-arkui/arkts-components/arkts-arkui-web-i).  
 >  
 > - System service menu items refer to menu items other than copy, cut, select all, and paste in  
-> [TextMenuItemId](arkts-arkui-text-common-textmenuitemid-c.md).  
+> [TextMenuItemId](arkts-arkui-textmenuitemid-c.md).  
 >  
 > - When both **disableSystemServiceMenuItems** and **disableMenuItems** are set, the earlier-set  
 > **disableSystemServiceMenuItems** takes precedence.  
@@ -52,7 +53,7 @@ Disables specified system service menu items in the text selection menu.
 > - This API takes effect globally, and multiple calls are subject to the last call.  
 >  
 > - Disabling a first-level menu item will also disable all its second-level menu items. For example, disabling the  
-> first-level menu item **autoFill** (parent item) in [TextMenuItemId](arkts-arkui-text-common-textmenuitemid-c.md) will simultaneously  
+> first-level menu item **autoFill** (parent item) in [TextMenuItemId](arkts-arkui-textmenuitemid-c.md) will simultaneously  
 > disable the second-level menu item **passwordVault** (child item) in **TextMenuItemId**.  
 >  
 > - Disabling individual second-level menu items is not supported. If required, this can be achieved by disabling  
@@ -81,8 +82,9 @@ Disables specified system service menu items in the text selection menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| items | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<TextMenuItemId> | Yes | List of menu items to disable.<br>Default value: [].<br>By default, no menu item is disabled. |
+| items | Array&lt;TextMenuItemId&gt; | Yes | List of menu items to disable.<br>Default value: [].<br>By default, no menu item is disabled. |
 
+<a id="disablesystemservicemenuitems"></a>
 ## disableSystemServiceMenuItems
 
 ```TypeScript
@@ -98,16 +100,16 @@ Disables all system service menu items in the text selection menu.
 > - This API can be used in [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md).  
 >  
 > - After this API is called, the [editMenuOptions](TextAttribute#editMenuOptions) API of text components  
-> will be affected. The parameter list of its [onCreateMenu](arkts-arkui-text-common-editmenuoptions-i.md#oncreatemenu-1) callback will not  
+> will be affected. The parameter list of its [onCreateMenu](arkts-arkui-editmenuoptions-i.md#oncreatemenu-1) callback will not  
 > include the disabled menu options.  
 >  
-> - Components involving text selection menus include the following: [Text](./@internal/component/ets/text),  
-> [TextArea](./@internal/component/ets/text_area), [TextInput](./@internal/component/ets/text_input),  
-> [Search](./@internal/component/ets/search), [RichEditor](./@internal/component/ets/rich_editor), and  
-> [Web](./@internal/component/ets/web).  
+> - Components involving text selection menus include the following: [Text](../../apis-arkui/arkts-components/arkts-arkui-text-i),  
+> [TextArea](../../apis-arkui/arkts-components/arkts-arkui-text_area-i), [TextInput](../../apis-arkui/arkts-components/arkts-arkui-text_input-i),  
+> [Search](../../apis-arkui/arkts-components/arkts-arkui-search-i), [RichEditor](../../apis-arkui/arkts-components/arkts-arkui-rich_editor-i), and  
+> [Web](../../apis-arkui/arkts-components/arkts-arkui-web-i).  
 >  
 > - System service menu items refer to menu items other than copy, cut, select all, and paste in  
-> [TextMenuItemId](arkts-arkui-text-common-textmenuitemid-c.md).  
+> [TextMenuItemId](arkts-arkui-textmenuitemid-c.md).  
 >  
 > - When both **disableSystemServiceMenuItems** and **disableMenuItems** are set, the earlier-set  
 > **disableSystemServiceMenuItems** takes precedence.  
@@ -139,6 +141,7 @@ Disables all system service menu items in the text selection menu.
 | --- | --- | --- | --- |
 | disable | boolean | Yes | Whether to disable system service menu items. The value **true** means to disable system service menu items, and **false** means the opposite.<br>Default value: false. |
 
+<a id="setmenuoptions"></a>
 ## setMenuOptions
 
 ```TypeScript
@@ -161,5 +164,5 @@ Set menu options.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [TextMenuOptions](arkts-arkui-text-common-textmenuoptions-i.md) | Yes | Menu options.<br>Default value: {showMode: TextMenuShowMode.DEFAULT}. |
+| options | [TextMenuOptions](arkts-arkui-textmenuoptions-i.md) | Yes | Menu options.<br>Default value: {showMode: TextMenuShowMode.DEFAULT}. |
 

@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="addusernonstopapps"></a>
 ## addUserNonStopApps
 
 ```TypeScript
@@ -33,7 +34,7 @@ On PCs/2-in-1 devices, after a user taps the application name in **Settings** > 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| applicationInstances | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common.ApplicationInstance> | Yes | Array of non-stoppable applications. A maximum of 10 applications can be added to the non-stoppable application list. This limit is not divided among users.Specifically, the total number of such applications added by all users cannot exceed 10. For example, if there are already 3 applications in the current list, a maximum of 7 more can be added for a specified user via this API. |
+| applicationInstances | Array&lt;common.ApplicationInstance&gt; | Yes | Array of non-stoppable applications. A maximum of 10 applications can be added to the non-stoppable application list. This limit is not divided among users.Specifically, the total number of such applications added by all users cannot exceed 10. For example, if there are already 3 applications in the current list, a maximum of 7 more can be added for a specified user via this API. |
 
 **Error codes:**
 

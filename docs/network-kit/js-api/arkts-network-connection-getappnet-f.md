@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getappnet"></a>
 ## getAppNet
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the {@link NetHandle} bound to a process using {@link setAppNet}.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetHandle> | Yes | Returns the {@link NetHandle} bound to the process;returns {@code null} if no {@link NetHandle} is bound to the process.For details, see {@link NetHandle}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetHandle&gt; | Yes | Returns the {@link NetHandle} bound to the process;returns {@code null} if no {@link NetHandle} is bound to the process.For details, see {@link NetHandle}. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ connection.getAppNet((error: BusinessError, data: connection.NetHandle) => {
 ```
 
 
+<a id="getappnet-1"></a>
 ## getAppNet
 
 ```TypeScript
@@ -69,7 +71,7 @@ Obtains the {@link NetHandle} bound to a process using {@link setAppNet}.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetHandle> | the promise returned by the function. |
+| Promise&lt;NetHandle&gt; | the promise returned by the function. |
 
 **Error codes:**
 

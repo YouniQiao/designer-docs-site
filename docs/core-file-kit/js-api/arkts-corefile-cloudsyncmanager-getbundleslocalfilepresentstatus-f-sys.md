@@ -6,6 +6,7 @@
 import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getbundleslocalfilepresentstatus"></a>
 ## getBundlesLocalFilePresentStatus
 
 ```TypeScript
@@ -28,13 +29,13 @@ Obtains the existence status of local files for multiple applications and checks
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of application bundle names to be checked. Each element is the bundle name of an application. |
+| bundleNames | Array&lt;string&gt; | Yes | Array of application bundle names to be checked. Each element is the bundle name of an application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<LocalFilePresentStatus>> | Promise used to return an array of objects. Each object in the array contains the bundle name of the application to be checked and the local file existence status. |
+| Promise&lt;Array&lt;LocalFilePresentStatus&gt;&gt; | Promise used to return an array of objects. Each object in the array contains the bundle name of the application to be checked and the local file existence status. |
 
 **Error codes:**
 

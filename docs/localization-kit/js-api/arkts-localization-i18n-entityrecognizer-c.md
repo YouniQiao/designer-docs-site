@@ -14,6 +14,7 @@ Provides entity recognition capabilities, which can be used to obtain the type a
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -34,7 +35,7 @@ Creates an **entityRecognizer** object. This object is used to recognize entitie
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string | No | [Locale ID](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region, for example, **zh-Hans-CN**.The default value is the current system locale. |
+| locale | string | No | [Locale ID](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region, for example, **zh-Hans-CN**.The default value is the current system locale. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ try {
 
 ```
 
+<a id="findentityinfo"></a>
 ## findEntityInfo
 
 ```TypeScript
@@ -84,7 +86,7 @@ Obtains entity information in the **text** object.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<EntityInfoItem> | List of entities in the text. |
+| Array&lt;EntityInfoItem&gt; | List of entities in the text. |
 
 **Error codes:**
 

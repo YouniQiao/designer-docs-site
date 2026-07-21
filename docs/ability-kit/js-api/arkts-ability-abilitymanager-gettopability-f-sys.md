@@ -6,6 +6,7 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
+<a id="gettopability"></a>
 ## getTopAbility
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the top ability, which is the ability that has the window focus. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ElementName> | Promise used to return the API call result and the element name. You can perform error handling or other custom processing. |
+| Promise&lt;ElementName&gt; | Promise used to return the API call result and the element name. You can perform error handling or other custom processing. |
 
 **Error codes:**
 
@@ -36,6 +37,7 @@ Obtains the top ability, which is the ability that has the window focus. This AP
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
 
+<a id="gettopability-1"></a>
 ## getTopAbility
 
 ```TypeScript
@@ -56,7 +58,7 @@ Obtains the top ability, which is the ability that has the window focus. This AP
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ElementName> | Yes | Callback used to return the result. If the API call is successful,**err** is **undefined** and **data** is the top ability name obtained. Otherwise, **err** is an error object. You can perform error handling or other custom processing. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ElementName&gt; | Yes | Callback used to return the result. If the API call is successful,**err** is **undefined** and **data** is the top ability name obtained. Otherwise, **err** is an error object. You can perform error handling or other custom processing. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="getsandboxappconfig"></a>
 ## getSandboxAppConfig
 
 ```TypeScript
@@ -26,7 +27,7 @@ This API obtains the sandbox application configuration, which can be used to rea
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. |
+| Promise&lt;string&gt; | Promise used to return the result. |
 
 **Error codes:**
 

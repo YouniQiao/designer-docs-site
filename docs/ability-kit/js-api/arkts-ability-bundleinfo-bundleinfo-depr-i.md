@@ -23,9 +23,9 @@ readonly abilityInfos: Array<AbilityInfo>
 
 Ability configuration information.
 
-The value is obtained by passing in GET_BUNDLE_WITH_ABILITIES to [bundle.getBundleInfo](arkts-ability-bundle-getbundleinfo-f.md#getbundleinfo-3).
+The value is obtained by passing in GET_BUNDLE_WITH_ABILITIES to [bundle.getBundleInfo](arkts-ability-bundle-getbundleinfo-f.md#getbundleinfo-1).
 
-**Type:** Array<AbilityInfo>
+**Type:** Array&lt;AbilityInfo&gt;
 
 **Default:** Obtains configuration information about an ability
 
@@ -172,7 +172,7 @@ readonly hapModuleInfos: Array<HapModuleInfo>
 
 Module configuration information.
 
-**Type:** Array<HapModuleInfo>
+**Type:** Array&lt;HapModuleInfo&gt;
 
 **Default:** Obtains configuration information about a module
 
@@ -300,9 +300,9 @@ readonly reqPermissionDetails: Array<ReqPermissionDetail>
 
 Detailed information of the permissions to request from the system.
 
-The value is obtained by passing in GET_BUNDLE_WITH_REQUESTED_PERMISSION to [bundle.getBundleInfo](arkts-ability-bundle-getbundleinfo-f.md#getbundleinfo-3).
+The value is obtained by passing in GET_BUNDLE_WITH_REQUESTED_PERMISSION to [bundle.getBundleInfo](arkts-ability-bundle-getbundleinfo-f.md#getbundleinfo-1).
 
-**Type:** Array<ReqPermissionDetail>
+**Type:** Array&lt;ReqPermissionDetail&gt;
 
 **Default:** Indicates the required permissions details defined in file config.json
 
@@ -324,7 +324,7 @@ readonly reqPermissionStates: Array<number>
 
 Permission grant state. The value **0** means that the request is successful, and **-1** means the opposite.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Default:** Indicates the grant status of required permissions
 
@@ -346,9 +346,9 @@ readonly reqPermissions: Array<string>
 
 Permissions to request from the system for running the application.
 
-The value is obtained by passing in GET_BUNDLE_WITH_REQUESTED_PERMISSION to [bundle.getBundleInfo](arkts-ability-bundle-getbundleinfo-f.md#getbundleinfo-3).
+The value is obtained by passing in GET_BUNDLE_WITH_REQUESTED_PERMISSION to [bundle.getBundleInfo](arkts-ability-bundle-getbundleinfo-f.md#getbundleinfo-1).
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Default:** Indicates the required permissions name defined in file config.json
 

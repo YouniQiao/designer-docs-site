@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="removecandidateconfig"></a>
 ## removeCandidateConfig
 
 ```TypeScript
@@ -34,7 +35,7 @@ Remove a specified candidate hotspot configuration, only the configuration which
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Return results. |
+| Promise&lt;void&gt; | Return results. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ Remove a specified candidate hotspot configuration, only the configuration which
 ```
 
 
+<a id="removecandidateconfig-1"></a>
 ## removeCandidateConfig
 
 ```TypeScript
@@ -88,7 +90,7 @@ Remove a specified candidate hotspot configuration, only the configuration which
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | networkId | number | Yes | Network ID which will be removed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Indicates call back of removeCandidateConfig. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Indicates call back of removeCandidateConfig. |
 
 **Error codes:**
 

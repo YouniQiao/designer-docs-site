@@ -14,6 +14,7 @@ Represents a **File** object opened by **open()**.
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="getparent"></a>
 ## getParent
 
 ```TypeScript
@@ -52,6 +53,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="lock"></a>
 ## lock
 
 ```TypeScript
@@ -76,7 +78,7 @@ Applies an exclusive lock or a shared lock on this file in blocking mode. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -106,6 +108,7 @@ file.lock(true).then(() => {
 
 ```
 
+<a id="lock-1"></a>
 ## lock
 
 ```TypeScript
@@ -124,7 +127,7 @@ Applies an exclusive lock or a shared lock on this file in blocking mode. This A
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -155,6 +158,7 @@ file.lock((err: BusinessError) => {
 
 ```
 
+<a id="lock-2"></a>
 ## lock
 
 ```TypeScript
@@ -174,7 +178,7 @@ Applies an exclusive lock or a shared lock on this file in blocking mode. This A
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | exclusive | boolean | Yes | Lock to apply.<br> The value **true** means an exclusive lock, and the value **false** (default) means a shared lock. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -205,6 +209,7 @@ file.lock(true, (err: BusinessError) => {
 
 ```
 
+<a id="trylock"></a>
 ## tryLock
 
 ```TypeScript
@@ -247,6 +252,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="unlock"></a>
 ## unlock
 
 ```TypeScript

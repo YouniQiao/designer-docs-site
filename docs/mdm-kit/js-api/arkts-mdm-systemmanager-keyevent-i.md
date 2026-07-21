@@ -76,7 +76,7 @@ keyItems: Array<KeyItem>
 
 Information about other keys that are being pressed when the current key event occurs.
 
-**Type:** Array<KeyItem>
+**Type:** Array&lt;KeyItem&gt;
 
 **Since:** 23
 

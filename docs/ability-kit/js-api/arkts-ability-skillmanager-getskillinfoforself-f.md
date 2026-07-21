@@ -6,6 +6,7 @@
 import { skillManager } from '@kit.AbilityKit';
 ```
 
+<a id="getskillinfoforself"></a>
 ## getSkillInfoForSelf
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains SkillInfo of the calling application based on moduleName and skillName.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SkillInfo> | Returns the SkillInfo object of the specified skill. |
+| Promise&lt;SkillInfo&gt; | Returns the SkillInfo object of the specified skill. |
 
 **Error codes:**
 

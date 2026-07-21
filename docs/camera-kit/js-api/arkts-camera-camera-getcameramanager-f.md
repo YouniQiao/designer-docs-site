@@ -6,6 +6,7 @@
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getcameramanager"></a>
 ## getCameraManager
 
 ```TypeScript

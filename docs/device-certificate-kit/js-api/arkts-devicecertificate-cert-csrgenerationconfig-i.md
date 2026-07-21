@@ -34,7 +34,7 @@ attributes?: Array<CsrAttribute>
 
 A collection of attributes.
 
-**Type:** Array<CsrAttribute>
+**Type:** Array&lt;CsrAttribute&gt;
 
 **Since:** 18
 

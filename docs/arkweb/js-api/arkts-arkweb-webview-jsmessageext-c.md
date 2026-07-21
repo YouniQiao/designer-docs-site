@@ -14,6 +14,7 @@ The message for indicating the of result of JavaScript code execution.
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="getarray"></a>
 ## getArray
 
 ```TypeScript
@@ -34,7 +35,7 @@ Get the array value of the the JavaScript code execution result.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number \| boolean> | - Returns data of Array type |
+| Array&lt;string \| number \| boolean&gt; | - Returns data of Array type |
 
 **Error codes:**
 
@@ -42,6 +43,7 @@ Get the array value of the the JavaScript code execution result.
 | --- | --- |
 | [17100014](../errorcode-webview.md#17100014-type-and-value-mismatch) | The type and value of the message do not match. |
 
+<a id="getarraybuffer"></a>
 ## getArrayBuffer
 
 ```TypeScript
@@ -62,7 +64,7 @@ Get the array buffer value of the JavaScript code execution result.
 
 | Type | Description |
 | --- | --- |
-| [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | - Returns data of ArrayBuffer |
+| ArrayBuffer | - Returns data of ArrayBuffer |
 
 **Error codes:**
 
@@ -70,6 +72,7 @@ Get the array buffer value of the JavaScript code execution result.
 | --- | --- |
 | [17100014](../errorcode-webview.md#17100014-type-and-value-mismatch) | The type and value of the message do not match. |
 
+<a id="getboolean"></a>
 ## getBoolean
 
 ```TypeScript
@@ -98,6 +101,7 @@ Get the boolean value of the JavaScript code execution result.
 | --- | --- |
 | [17100014](../errorcode-webview.md#17100014-type-and-value-mismatch) | The type and value of the message do not match. |
 
+<a id="geterrordescription"></a>
 ## getErrorDescription
 
 ```TypeScript
@@ -116,8 +120,9 @@ Get the object or exception of the the JavaScript code execution result and seri
 
 | Type | Description |
 | --- | --- |
-| string | - If an exception occurs, or the returned type is object, return the serialized string in the format of "Not support type: &lt;{exception\|object}&gt;", Parts exceeding a length of2048 will be truncated; otherwise, return null. |
+| string | - If an exception occurs, or the returned type is object, return the serialized string in the format of "Not support type: <{exception\|object}>", Parts exceeding a length of2048 will be truncated; otherwise, return null. |
 
+<a id="getnumber"></a>
 ## getNumber
 
 ```TypeScript
@@ -146,6 +151,7 @@ Get the number value of the JavaScript code execution result.
 | --- | --- |
 | [17100014](../errorcode-webview.md#17100014-type-and-value-mismatch) | The type and value of the message do not match. |
 
+<a id="getstring"></a>
 ## getString
 
 ```TypeScript
@@ -174,6 +180,7 @@ Get the string value of the JavaScript code execution result.
 | --- | --- |
 | [17100014](../errorcode-webview.md#17100014-type-and-value-mismatch) | The type and value of the message do not match. |
 
+<a id="gettype"></a>
 ## getType
 
 ```TypeScript

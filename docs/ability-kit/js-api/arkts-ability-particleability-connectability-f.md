@@ -6,6 +6,7 @@
 import { particleAbility } from '@kit.AbilityKit';
 ```
 
+<a id="connectability"></a>
 ## connectAbility
 
 ```TypeScript
@@ -17,7 +18,7 @@ Connects this ability to a ServiceAbility.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the FA model, see  
-> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).  
+> [Component Startup Rules (FA Model)](docroot://application-models/component-startup-rules-fa.md).  
 > > To connect to a ServiceAbility of another application, the target application must be configured with  
 > associated startup (**AssociateWakeUp** set to **true**).
 

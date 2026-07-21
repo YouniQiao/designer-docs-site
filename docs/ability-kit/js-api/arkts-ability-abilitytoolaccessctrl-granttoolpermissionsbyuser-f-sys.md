@@ -1,5 +1,6 @@
 # grantToolPermissionsByUser (System API)
 
+<a id="granttoolpermissionsbyuser"></a>
 ## grantToolPermissionsByUser
 
 ```TypeScript
@@ -28,7 +29,7 @@ Grants tool permissions based on user authorization results.This function grants
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<TicketInfo[]> | Promise used to return ${TicketInfo[]}. |
+| Promise&lt;TicketInfo[]&gt; | Promise used to return ${TicketInfo[]}. |
 
 **Error codes:**
 

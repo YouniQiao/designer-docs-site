@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createaudiorecorder"></a>
 ## createAudioRecorder
 
 ```TypeScript
@@ -18,7 +19,7 @@ Creates an AudioRecorder instance to control audio recording. Only one AudioReco
 
 **Deprecated since:** 9
 
-**Substitutes:** createAVRecorder(callback:
+**Substitutes:** [createAVRecorder(callback:](arkts-media-media-createavrecorder-f.md#createavrecorder-1)
 
 <!--Device-media-function createAudioRecorder(): AudioRecorder--><!--Device-media-function createAudioRecorder(): AudioRecorder-End-->
 

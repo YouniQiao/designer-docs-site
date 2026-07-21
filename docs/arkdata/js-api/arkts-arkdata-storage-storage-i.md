@@ -14,6 +14,7 @@ Before calling the following APIs, use [data_storage.getStorage](arkts-arkdata-s
 
 **System capability:** SystemCapability.DistributedDataManager.Preferences.Core
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -34,7 +35,7 @@ Clears this **Storage** object. This API uses an asynchronous callback to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -49,6 +50,7 @@ storage.clear(function (err) {
 
 ```
 
+<a id="clear-1"></a>
 ## clear
 
 ```TypeScript
@@ -69,7 +71,7 @@ Clears this **Storage** object. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A promise object. |
+| Promise&lt;void&gt; | A promise object. |
 
 **Example**
 
@@ -83,6 +85,7 @@ promiseclear.then(() => {
 
 ```
 
+<a id="clearsync"></a>
 ## clearSync
 
 ```TypeScript
@@ -106,6 +109,7 @@ storage.clearSync();
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -127,7 +131,7 @@ Deletes data with the specified key from this storage object. This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | key | string | Yes | Key of the data. It cannot be empty. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -142,6 +146,7 @@ storage.delete('startup', function (err) {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -168,7 +173,7 @@ Deletes data with the specified key from this storage object. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -182,6 +187,7 @@ promisedel.then(() => {
 
 ```
 
+<a id="deletesync"></a>
 ## deleteSync
 
 ```TypeScript
@@ -211,6 +217,7 @@ Deletes data with the specified key from this storage object.
 
 ```
 
+<a id="flush"></a>
 ## flush
 
 ```TypeScript
@@ -231,7 +238,7 @@ Saves the modification of this object to the **Storage** instance and synchroniz
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -246,6 +253,7 @@ storage.flush(function (err) {
 
 ```
 
+<a id="flush-1"></a>
 ## flush
 
 ```TypeScript
@@ -266,7 +274,7 @@ Saves the modification of this object to the **Storage** instance and synchroniz
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -280,6 +288,7 @@ promiseflush.then(() => {
 
 ```
 
+<a id="flushsync"></a>
 ## flushSync
 
 ```TypeScript
@@ -303,6 +312,7 @@ storage.flushSync();
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -325,7 +335,7 @@ Obtains the value corresponding to a key. If the value is null or not of the def
 | --- | --- | --- | --- |
 | key | string | Yes | Key of the data. It cannot be empty. |
 | defValue | [ValueType](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-pasteboard-valuetype-t.md) | Yes | Default value to be returned. It can be a number, string, or Boolean value. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ValueType> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ValueType&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -340,6 +350,7 @@ storage.get('startup', 'default', function(err, value) {
 
 ```
 
+<a id="get-1"></a>
 ## get
 
 ```TypeScript
@@ -367,7 +378,7 @@ Obtains the value corresponding to a key. If the value is null or not of the def
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ValueType> | Promise used to return the result. |
+| Promise&lt;ValueType&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -381,6 +392,7 @@ promiseget.then((value) => {
 
 ```
 
+<a id="getsync"></a>
 ## getSync
 
 ```TypeScript
@@ -418,6 +430,7 @@ console.info("The value of startup is " + value);
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -439,7 +452,7 @@ Checks whether the storage object contains data with a given key. This API uses 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | key | string | Yes | Key of the data. It cannot be empty. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. |
 
 **Return value:**
 
@@ -462,6 +475,7 @@ storage.has('startup', function (err, isExist) {
 
 ```
 
+<a id="has-1"></a>
 ## has
 
 ```TypeScript
@@ -488,7 +502,7 @@ Checks whether the storage object contains data with a given key. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. |
+| Promise&lt;boolean&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -504,6 +518,7 @@ promisehas.then((isExist) => {
 
 ```
 
+<a id="hassync"></a>
 ## hasSync
 
 ```TypeScript
@@ -542,6 +557,7 @@ if (isExist) {
 
 ```
 
+<a id="off"></a>
 ## off('change')
 
 ```TypeScript
@@ -563,7 +579,7 @@ Unsubscribes from data changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. The value **change** indicates data change events. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StorageObserver> | Yes | Callback for the data change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StorageObserver&gt; | Yes | Callback for the data change. |
 
 **Example**
 
@@ -575,6 +591,7 @@ storage.off('change', observer);
 
 ```
 
+<a id="on"></a>
 ## on('change')
 
 ```TypeScript
@@ -596,7 +613,7 @@ Subscribes to data changes. The **StorageObserver** needs to be implemented. Whe
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. The value **change** indicates data change events. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StorageObserver> | Yes | Callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StorageObserver&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -610,6 +627,7 @@ storage.flushSync();  // observer will be called.
 
 ```
 
+<a id="put"></a>
 ## put
 
 ```TypeScript
@@ -632,7 +650,7 @@ Obtains the **Storage** instance corresponding to the specified file, writes dat
 | --- | --- | --- | --- |
 | key | string | Yes | Key of the data. It cannot be empty. |
 | value | [ValueType](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-pasteboard-valuetype-t.md) | Yes | New value to store. It can be a number, string, or Boolean value. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -647,6 +665,7 @@ storage.put('startup', 'auto', function (err) {
 
 ```
 
+<a id="put-1"></a>
 ## put
 
 ```TypeScript
@@ -674,7 +693,7 @@ Obtains the **Storage** instance corresponding to the specified file, writes dat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -688,6 +707,7 @@ promiseput.then(() => {
 
 ```
 
+<a id="putsync"></a>
 ## putSync
 
 ```TypeScript

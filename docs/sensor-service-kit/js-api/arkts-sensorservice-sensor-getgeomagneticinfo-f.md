@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getgeomagneticinfo"></a>
 ## getGeomagneticInfo
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the geomagnetic field of a geographic location at a certain time. This A
 | --- | --- | --- | --- |
 | locationOptions | [LocationOptions](arkts-sensorservice-sensor-locationoptions-i.md) | Yes | Geographic location, including the longitude, latitude, and altitude. |
 | timeMillis | number | Yes | Time when the magnetic declination is obtained. The value is a Unix timestamp, in ms. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<GeomagneticResponse> | Yes | Callback used to return the geomagnetic field. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;GeomagneticResponse&gt; | Yes | Callback used to return the geomagnetic field. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ try {
 ```
 
 
+<a id="getgeomagneticinfo-1"></a>
 ## getGeomagneticInfo
 
 ```TypeScript
@@ -90,7 +92,7 @@ Obtains the geomagnetic field of a geographic location at a certain time. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GeomagneticResponse> | Promise used to return the geomagnetic field. |
+| Promise&lt;GeomagneticResponse&gt; | Promise used to return the geomagnetic field. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getrotationmatrix"></a>
 ## getRotationMatrix
 
 ```TypeScript
@@ -24,8 +25,8 @@ Obtains the rotation matrix from a rotation vector. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the rotation matrix. |
+| rotationVector | Array&lt;number&gt; | Yes | Rotation vector. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the rotation matrix. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ try {
 ```
 
 
+<a id="getrotationmatrix-1"></a>
 ## getRotationMatrix
 
 ```TypeScript
@@ -78,13 +80,13 @@ Obtains the rotation matrix from a rotation vector. This API uses a promise to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
+| rotationVector | Array&lt;number&gt; | Yes | Rotation vector. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the rotation matrix. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the rotation matrix. |
 
 **Error codes:**
 
@@ -118,6 +120,7 @@ try {
 ```
 
 
+<a id="getrotationmatrix-2"></a>
 ## getRotationMatrix
 
 ```TypeScript
@@ -136,9 +139,9 @@ Obtains the rotation matrix based on a gravity vector and geomagnetic vector. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| gravity | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Gravity vector. |
-| geomagnetic | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Geomagnetic vector. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RotationMatrixResponse> | Yes | Callback used to return the rotation matrix. |
+| gravity | Array&lt;number&gt; | Yes | Gravity vector. |
+| geomagnetic | Array&lt;number&gt; | Yes | Geomagnetic vector. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RotationMatrixResponse&gt; | Yes | Callback used to return the rotation matrix. |
 
 **Error codes:**
 
@@ -172,6 +175,7 @@ try {
 ```
 
 
+<a id="getrotationmatrix-3"></a>
 ## getRotationMatrix
 
 ```TypeScript
@@ -190,14 +194,14 @@ Obtains the rotation matrix based on a gravity vector and geomagnetic vector. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| gravity | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Gravity vector. |
-| geomagnetic | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Geomagnetic vector. |
+| gravity | Array&lt;number&gt; | Yes | Gravity vector. |
+| geomagnetic | Array&lt;number&gt; | Yes | Geomagnetic vector. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RotationMatrixResponse> | Promise used to return the rotation matrix. |
+| Promise&lt;RotationMatrixResponse&gt; | Promise used to return the rotation matrix. |
 
 **Error codes:**
 

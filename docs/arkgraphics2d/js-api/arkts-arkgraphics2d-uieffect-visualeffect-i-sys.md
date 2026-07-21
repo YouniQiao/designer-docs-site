@@ -14,6 +14,7 @@ The VisualEffect of Component.
 import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
+<a id="backgroundcolorblender"></a>
 ## backgroundColorBlender
 
 ```TypeScript
@@ -54,6 +55,7 @@ visualEffect.backgroundColorBlender(blender)
 
 ```
 
+<a id="borderlight"></a>
 ## borderLight
 
 ```TypeScript
@@ -137,6 +139,7 @@ struct Index {
 
 ```
 
+<a id="colorgradient"></a>
 ## colorGradient
 
 ```TypeScript
@@ -160,9 +163,9 @@ Sets the color gradient effect, may blend with alpha mask.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colors | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Color> | Yes | array of colors. |
-| positions | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common2D.Point> | Yes | the centers of colors. |
-| strengths | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | the weights of color Mixing. |
+| colors | Array&lt;Color&gt; | Yes | array of colors. |
+| positions | Array&lt;common2D.Point&gt; | Yes | the centers of colors. |
+| strengths | Array&lt;number&gt; | Yes | the weights of color Mixing. |
 | alphaMask | [Mask](arkts-arkgraphics2d-uieffect-mask-c-sys.md) | No | the mask determines the alpha of the effect. |
 
 **Return value:**
@@ -216,6 +219,7 @@ struct ColorGradientExample {
 
 ```
 
+<a id="distortioncollapse"></a>
 ## distortionCollapse
 
 ```TypeScript
@@ -240,7 +244,7 @@ NOTE1. This visual effect supports drawing outside the bounds of the control,but
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| distortionParam | [DistortionParam](../../apis-arkui/arkts-components/arkts-arkui-distortion-component-distortionparam-i-sys.md) | Yes | the distortion params of distortion effect. |
+| distortionParam | [DistortionParam](../../apis-arkui/arkts-components/arkts-arkui-distortionparam-i-sys.md) | Yes | the distortion params of distortion effect. |
 
 **Return value:**
 
@@ -248,6 +252,7 @@ NOTE1. This visual effect supports drawing outside the bounds of the control,but
 | --- | --- |
 | [VisualEffect](../../apis-arkui/arkts-components/arkts-arkui-visualeffect-t.md) | - Returns the VisualEffect that the current effect have been added. |
 
+<a id="liquidmaterial"></a>
 ## liquidMaterial
 
 ```TypeScript

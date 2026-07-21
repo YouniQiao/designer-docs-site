@@ -6,6 +6,7 @@
 import { ranging } from '@kit.ConnectivityKit';
 ```
 
+<a id="startranging"></a>
 ## startRanging
 
 ```TypeScript
@@ -29,7 +30,7 @@ Initiates ranging with a specified device.If the link to the target device is al
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | params | [RangingParams](arkts-connectivity-ranging-rangingparams-i.md) | Yes | Parameters for ranging. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RangingResult> | Yes | Indicates the callback for reporting the ranging result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RangingResult&gt; | Yes | Indicates the callback for reporting the ranging result. |
 
 **Error codes:**
 

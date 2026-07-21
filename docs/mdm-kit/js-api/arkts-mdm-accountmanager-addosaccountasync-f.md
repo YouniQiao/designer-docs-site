@@ -6,6 +6,7 @@
 import { accountManager } from '@kit.MDMKit';
 ```
 
+<a id="addosaccountasync"></a>
 ## addOsAccountAsync
 
 ```TypeScript
@@ -41,7 +42,7 @@ Adds an account in the background. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<osAccount.OsAccountInfo> | Promise used to return the added account information. |
+| Promise&lt;osAccount.OsAccountInfo&gt; | Promise used to return the added account information. |
 
 **Error codes:**
 

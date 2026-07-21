@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="getallsubscriptionbundles"></a>
 ## getAllSubscriptionBundles
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains all applications that have requested the ohos.permission.SUBSCRIBE_NOTIF
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BundleOption[]> | Promise used to return the applications that have requested the ohos.permission.SUBSCRIBE_NOTIFICATION permission and implemented NotificationSubscriberExtensionAbility. |
+| Promise&lt;BundleOption[]&gt; | Promise used to return the applications that have requested the ohos.permission.SUBSCRIBE_NOTIFICATION permission and implemented NotificationSubscriberExtensionAbility. |
 
 **Error codes:**
 

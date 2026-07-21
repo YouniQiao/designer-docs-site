@@ -6,6 +6,7 @@
 import { screen } from '@kit.ArkUI';
 ```
 
+<a id="isscreenrotationlocked"></a>
 ## isScreenRotationLocked
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether auto rotate is locked. This API uses an asynchronous callback to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If **true** is returned, auto rotate is locked. If **false** is returned, auto rotate is unlocked. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If **true** is returned, auto rotate is locked. If **false** is returned, auto rotate is unlocked. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ screen.isScreenRotationLocked((err: BusinessError, isLocked: boolean) => {
 ```
 
 
+<a id="isscreenrotationlocked-1"></a>
 ## isScreenRotationLocked
 
 ```TypeScript
@@ -72,7 +74,7 @@ Checks whether auto rotate is locked. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. If **true** is returned, auto rotate is locked. If **false** is returned, auto rotate is unlocked. |
+| Promise&lt;boolean&gt; | Promise used to return the result. If **true** is returned, auto rotate is locked. If **false** is returned, auto rotate is unlocked. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { a2dp } from '@kit.ConnectivityKit';
 ```
 
+<a id="createa2dpsrcprofile"></a>
 ## createA2dpSrcProfile
 
 ```TypeScript

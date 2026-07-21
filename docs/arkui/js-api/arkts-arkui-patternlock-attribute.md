@@ -1,8 +1,8 @@
 # PatternLock properties/events
 
-In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
+In addition to the [universal attributes](docroot://reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
 
-In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
+In addition to the [universal events](docroot://reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
 
 **Inheritance/Implementation:** PatternLockAttribute extends [CommonMethod<PatternLockAttribute>](CommonMethod<PatternLockAttribute>)
 
@@ -12,6 +12,7 @@ In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="activatecirclestyle"></a>
 ## activateCircleStyle
 
 ```TypeScript
@@ -34,8 +35,9 @@ Sets the background circle style for the dots in a grid when they are in the act
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [Optional](arkts-arkui-optional-t.md)<CircleStyleOptions> | Yes | Background circle style of the dots in the activated state. |
+| options | [Optional](arkts-arkui-optional-t.md)&lt;CircleStyleOptions&gt; | Yes | Background circle style of the dots in the activated state. |
 
+<a id="activecolor"></a>
 ## activeColor
 
 ```TypeScript
@@ -58,6 +60,7 @@ Sets the fill color of the grid dot in the activated state, which is when the do
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Fill color of the grid dot in the activated state.<br>Default value:**'#ff182431'** |
 
+<a id="autoreset"></a>
 ## autoReset
 
 ```TypeScript
@@ -80,6 +83,7 @@ Sets whether to allow the user to reset the component status (that is, clear the
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to allow the user to reset the component status (that is, clear the input) by touching the component again after the input is complete.<br>**true**: yes; **false**: no<br>Default value:**true** |
 
+<a id="backgroundcolor"></a>
 ## backgroundColor
 
 ```TypeScript
@@ -90,7 +94,7 @@ Sets the background color.
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 9
 
@@ -106,6 +110,7 @@ Sets the background color.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color. |
 
+<a id="circleradius"></a>
 ## circleRadius
 
 ```TypeScript
@@ -128,6 +133,7 @@ Sets the radius of the dots in a grid. If this attribute is set to **0** or a ne
 | --- | --- | --- | --- |
 | value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Radius of the dots in a grid.<br>Default value: **6vp**<br>Value range: (0, sideLength/11]. If the value is less than or equal to **0**, the default value is used. If the value exceeds the maximum value, the maximum value is used. |
 
+<a id="ondotconnect"></a>
 ## onDotConnect
 
 ```TypeScript
@@ -140,7 +146,7 @@ The callback parameter is an array of digits, where each digit represents the in
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 20.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
 
 **Since:** 11
 
@@ -156,8 +162,9 @@ The callback parameter is an array of digits, where each digit represents the in
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | import('../api/@ohos.base').Callback<number> | Yes | Invoked when a grid dot is connected during pattern password input. |
+| callback | import('../api/@ohos.base').Callback&lt;number&gt; | Yes | Invoked when a grid dot is connected during pattern password input. |
 
+<a id="onpatterncomplete"></a>
 ## onPatternComplete
 
 ```TypeScript
@@ -178,8 +185,9 @@ Invoked when the pattern password input is complete.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (input: Array<number>) => void | Yes | Array of digits representing the indices of the selected grid dots, in the order they were connected. Grid dots are indexed row-wise from top to bottom, left to right: The first row contains indices 0, 1, 2; the second row 3, 4, 5; and the third row 6, 7, 8. |
+| callback | (input: Array&lt;number&gt;) =&gt; void | Yes | Array of digits representing the indices of the selected grid dots, in the order they were connected. Grid dots are indexed row-wise from top to bottom, left to right: The first row contains indices 0, 1, 2; the second row 3, 4, 5; and the third row 6, 7, 8. |
 
+<a id="pathcolor"></a>
 ## pathColor
 
 ```TypeScript
@@ -202,6 +210,7 @@ Sets the path color.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Path color.<br>Default value: **'#33182431'** |
 
+<a id="pathstrokewidth"></a>
 ## pathStrokeWidth
 
 ```TypeScript
@@ -224,6 +233,7 @@ Sets the width of the path stroke. If this attribute is set to **0** or a negati
 | --- | --- | --- | --- |
 | value | number \| string | Yes | Width of the path stroke.<br>Value constraint: (0, sideLength/3]. Default value: 12vp.<br>Unit: vp. |
 
+<a id="regularcolor"></a>
 ## regularColor
 
 ```TypeScript
@@ -246,6 +256,7 @@ Sets the fill color of the grid dot in the unselected state.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Fill color of the grid dot in the unselected state.<br>Default value:**'#ff182431'** |
 
+<a id="selectedcolor"></a>
 ## selectedColor
 
 ```TypeScript
@@ -268,6 +279,7 @@ Fill color of the grid dot in the selected state.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Fill color of the grid dot in the selected state.<br>Default value:**'#ff182431'** |
 
+<a id="sidelength"></a>
 ## sideLength
 
 ```TypeScript
@@ -278,7 +290,7 @@ Sets the width and height (same value) of the component. If this attribute is se
 
 > **NOTE**  
 >  
-> When the **PatternLock** component has the universal attribute [aspectRatio](arkts-arkui-common-commonmethod-c.md#aspectratio-1) set  
+> When the **PatternLock** component has the universal attribute [aspectRatio](arkts-arkui-commonmethod-c.md#aspectratio-1) set  
 > and the ratio is not equal to 1 (the component is constrained to a rectangle), the nine‑grid pattern is still  
 > drawn as a square, which exceeds the component's bounds.
 
@@ -296,6 +308,7 @@ Sets the width and height (same value) of the component. If this attribute is se
 | --- | --- | --- | --- |
 | value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Width and height of the component. Default value: **288vp** |
 
+<a id="skipunselectedpoint"></a>
 ## skipUnselectedPoint
 
 ```TypeScript

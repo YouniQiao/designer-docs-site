@@ -18,7 +18,7 @@ complete?: () => void
 
 Callback invoked when the API call is complete.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 3
 
@@ -54,7 +54,7 @@ fail?: (data: string, code: number) => void
 
 Callback invoked when the API call fails.**data** indicates the error information.**code** indicates the returned error code:**202**: invalid parameter **300**: I/O error **301**: file or directory not found **302**: text to read exceeding 4 KB
 
-**Type:** (data: string, code: number) => void
+**Type:** (data: string, code: number) =&gt; void
 
 **Since:** 3
 
@@ -108,7 +108,7 @@ success?: (data: FileReadTextResponse) => void
 
 Callback invoked when the API call is successful. **data** is [FileReadTextResponse](arkts-corefile-file-filereadtextresponse-depr-i.md).
 
-**Type:** (data: FileReadTextResponse) => void
+**Type:** (data: FileReadTextResponse) =&gt; void
 
 **Since:** 3
 

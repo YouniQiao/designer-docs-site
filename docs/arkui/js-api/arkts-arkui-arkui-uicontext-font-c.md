@@ -22,6 +22,7 @@ Provides APIs for registering custom fonts.
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="getfontbyname"></a>
 ## getFontByName
 
 ```TypeScript
@@ -52,6 +53,7 @@ Obtains information about a system font based on the font name.
 | --- | --- |
 | font.FontInfo | Detailed information of the font.<br>If no font is found, **undefined** is returned. |
 
+<a id="getsystemfontlist"></a>
 ## getSystemFontList
 
 ```TypeScript
@@ -78,8 +80,9 @@ You are advised to use the [getSystemFontFullNamesByType](../../apis-arkgraphics
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of supported fonts. |
+| Array&lt;string&gt; | List of supported fonts. |
 
+<a id="registerfont"></a>
 ## registerFont
 
 ```TypeScript

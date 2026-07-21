@@ -49,7 +49,7 @@ Event type.
 
 **PageUpdateType**: page update type.
 
-**Type:** accessibility.EventType | accessibility.WindowUpdateType | TouchGuideType | GestureType | PageUpdateType
+**Type:** accessibility.EventType \| accessibility.WindowUpdateType \| TouchGuideType \| GestureType \| PageUpdateType
 
 **Since:** 9
 

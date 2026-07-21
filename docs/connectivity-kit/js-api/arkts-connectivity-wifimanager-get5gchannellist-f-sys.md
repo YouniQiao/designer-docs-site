@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="get5gchannellist"></a>
 ## get5GChannelList
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtain the supported 5G channel list of the device.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Returns 5G channel list. |
+| Array&lt;number&gt; | Returns 5G channel list. |
 
 **Error codes:**
 

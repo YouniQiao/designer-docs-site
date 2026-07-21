@@ -14,6 +14,7 @@ Provide a DateTime formatting interface which could format DateTime to StyleStri
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -78,6 +79,7 @@ try {
 
 ```
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -98,13 +100,13 @@ Formats the date and time as a rich text object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | Date and time to be formatted. |
+| date | Date | Yes | Date and time to be formatted. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [StyledString](../../apis-arkui/arkts-apis/arkts-arkui-styled-string-styledstring-c.md) | Rich text object after formatting. |
+| [StyledString](../../apis-arkui/arkts-apis/arkts-arkui-styledstring-c.md) | Rich text object after formatting. |
 
 **Example**
 

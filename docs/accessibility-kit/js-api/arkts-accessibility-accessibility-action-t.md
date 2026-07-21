@@ -42,7 +42,7 @@ Target actions supported by the application. The target actions for which parame
 | 'delete' | Delete. Not supported yet. |
 | 'scrollForward' | Scroll forward. |
 | 'scrollBackward' | Scroll backward. |
-| 'setSelection' | Select. You need to set the **selectTextBegin**, **selectTextEnd** and**selectTextInForWard** parameters. |
+| 'setSelection' | Select. You need to set the **selectTextBegin**, **selectTextEnd** and **selectTextInForWard** parameters. |
 | 'setCursorPosition' | Set cursor location. You need to set the **offset** parameter. [since 12] |
 | 'home' | Return to the home screen. [since 12] |
 | 'back' | Return to the previous screen. [since 12] |

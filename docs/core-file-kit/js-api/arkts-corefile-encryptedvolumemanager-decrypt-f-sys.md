@@ -6,6 +6,7 @@
 import { encryptedVolumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="decrypt"></a>
 ## decrypt
 
 ```TypeScript
@@ -37,7 +38,7 @@ Decrypt.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | return Promise |
+| Promise&lt;void&gt; | return Promise |
 
 **Error codes:**
 

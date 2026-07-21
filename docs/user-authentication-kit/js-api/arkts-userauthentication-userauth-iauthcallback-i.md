@@ -14,6 +14,7 @@ Provides callbacks to return the authentication result. This API defines the aut
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="onresult"></a>
 ## onResult
 
 ```TypeScript

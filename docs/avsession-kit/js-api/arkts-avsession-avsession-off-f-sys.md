@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="off"></a>
 ## off('sessionCreate')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Unregister session create callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionCreate' | Yes | Registration Type, session creation, 'sessionCreate' |
-| callback | (session: AVSessionDescriptor) => void | No | Used to unregister listener for ('sessionCreate') command |
+| callback | (session: AVSessionDescriptor) =&gt; void | No | Used to unregister listener for ('sessionCreate') command |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ struct Index {
 ```
 
 
+<a id="off-1"></a>
 ## off('sessionDestroy')
 
 ```TypeScript
@@ -85,7 +87,7 @@ Unregister session destroy callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionDestroy' | Yes | Registration Type, session deletion, 'sessionDestroy' |
-| callback | (session: AVSessionDescriptor) => void | No | Used to unregister listener for ('sessionDestroy') command |
+| callback | (session: AVSessionDescriptor) =&gt; void | No | Used to unregister listener for ('sessionDestroy') command |
 
 **Error codes:**
 
@@ -122,6 +124,7 @@ struct Index {
 ```
 
 
+<a id="off-2"></a>
 ## off('topSessionChange')
 
 ```TypeScript
@@ -143,7 +146,7 @@ Unregister top session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'topSessionChange' | Yes | Registration Type, top priority session change, 'topSessionChange' |
-| callback | (session: AVSessionDescriptor) => void | No | Used to unregister listener for ('topSessionChange') command |
+| callback | (session: AVSessionDescriptor) =&gt; void | No | Used to unregister listener for ('topSessionChange') command |
 
 **Error codes:**
 
@@ -180,6 +183,7 @@ struct Index {
 ```
 
 
+<a id="off-3"></a>
 ## off('sessionServiceDie')
 
 ```TypeScript
@@ -201,7 +205,7 @@ Unregister Session service death callback, notifying the application to clean up
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionServiceDie' | Yes | Registration Type, 'sessionServiceDie' |
-| callback | () => void | No | Used to unregister listener for ('sessionServiceDie') command. |
+| callback | () =&gt; void | No | Used to unregister listener for ('sessionServiceDie') command. |
 
 **Error codes:**
 
@@ -219,6 +223,7 @@ avSession.off('sessionServiceDie');
 ```
 
 
+<a id="off-4"></a>
 ## off('distributedSessionChange')
 
 ```TypeScript
@@ -241,7 +246,7 @@ Unregister distributed session changed callback
 | --- | --- | --- | --- |
 | type | 'distributedSessionChange' | Yes | Registration Type, distributed session change |
 | distributedSessionType | [DistributedSessionType](arkts-avsession-avsession-distributedsessiontype-e-sys.md) | Yes | Indicates the distributed session type |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<AVSessionController>> | No | The callback will return remote changed AVSessionController. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;AVSessionController&gt;&gt; | No | The callback will return remote changed AVSessionController. |
 
 **Error codes:**
 
@@ -258,6 +263,7 @@ avSession.off('distributedSessionChange', avSession.DistributedSessionType.TYPE_
 ```
 
 
+<a id="off-5"></a>
 ## off('deviceAvailable')
 
 ```TypeScript
@@ -279,7 +285,7 @@ Unregister device discovery callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceAvailable' | Yes | Registration Type |
-| callback | (device: OutputDeviceInfo) => void | No | Used to returns the device info |
+| callback | (device: OutputDeviceInfo) =&gt; void | No | Used to returns the device info |
 
 **Error codes:**
 
@@ -296,6 +302,7 @@ avSession.off('deviceAvailable');
 ```
 
 
+<a id="off-6"></a>
 ## off('deviceOffline')
 
 ```TypeScript
@@ -317,7 +324,7 @@ Unregister device offline callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceOffline' | Yes | Registration Type |
-| callback | (deviceId: string) => void | No | Used to returns the device info |
+| callback | (deviceId: string) =&gt; void | No | Used to returns the device info |
 
 **Error codes:**
 
@@ -334,6 +341,7 @@ avSession.off('deviceOffline');
 ```
 
 
+<a id="off-7"></a>
 ## off('deviceLogEvent')
 
 ```TypeScript
@@ -355,7 +363,7 @@ UnRegister log event callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceLogEvent' | Yes | Command to register 'deviceLogEvent'. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceLogEventCode> | No | Used to handle ('deviceLogEvent') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceLogEventCode&gt; | No | Used to handle ('deviceLogEvent') command |
 
 **Error codes:**
 
@@ -374,6 +382,7 @@ avSession.off('deviceLogEvent');
 ```
 
 
+<a id="off-8"></a>
 ## off('deviceStateChanged')
 
 ```TypeScript
@@ -397,7 +406,7 @@ Unregisters a system callback for the device connection phase.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceStateChanged' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceState> | No | Callback used to return the device information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceState&gt; | No | Callback used to return the device information. |
 
 **Error codes:**
 

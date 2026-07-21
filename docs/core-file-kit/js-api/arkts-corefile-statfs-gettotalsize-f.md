@@ -6,6 +6,7 @@
 import { statfs } from '@kit.CoreFileKit';
 ```
 
+<a id="gettotalsize"></a>
 ## getTotalSize
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the total size of the specified file system, in bytes. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the total size obtained, in bytes. |
+| Promise&lt;number&gt; | Promise used to return the total size obtained, in bytes. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ statfs.getTotalSize(path).then((number: number) => {
 ```
 
 
+<a id="gettotalsize-1"></a>
 ## getTotalSize
 
 ```TypeScript
@@ -87,7 +89,7 @@ Obtains the total size of the specified file system, in bytes. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | File path of the file system. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the total size obtained, in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the total size obtained, in bytes. |
 
 **Error codes:**
 

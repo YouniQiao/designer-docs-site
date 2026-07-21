@@ -6,6 +6,7 @@
 import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getshortcutinfo"></a>
 ## getShortcutInfo
 
 ```TypeScript
@@ -31,7 +32,7 @@ No permission is required for obtaining the caller's own information.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ShortcutInfo>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**, and **data** is the array of [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) objects obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ShortcutInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**, and **data** is the array of [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) objects obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ try {
 ```
 
 
+<a id="getshortcutinfo-1"></a>
 ## getShortcutInfo
 
 ```TypeScript
@@ -98,7 +100,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ShortcutInfo>> | Promise used to return the array of [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) objects obtained. |
+| Promise&lt;Array&lt;ShortcutInfo&gt;&gt; | Promise used to return the array of [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) objects obtained. |
 
 **Error codes:**
 

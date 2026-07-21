@@ -18,6 +18,7 @@ Depth fusion class. It inherits from [DepthFusionQuery](arkts-camera-camera-dept
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="enabledepthfusion"></a>
 ## enableDepthFusion
 
 ```TypeScript
@@ -67,6 +68,7 @@ function enableDepthFusion(DepthFusion: camera.DepthFusion): void {
 
 ```
 
+<a id="isdepthfusionenabled"></a>
 ## isDepthFusionEnabled
 
 ```TypeScript

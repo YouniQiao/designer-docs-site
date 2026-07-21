@@ -10,6 +10,7 @@ Context is the context base class of the stage model. It is used to access appli
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="createareamodecontext"></a>
 ## createAreaModeContext
 
 ```TypeScript
@@ -40,6 +41,7 @@ Creates an application context with a specific data encryption level. You can ca
 | --- | --- |
 | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Context created based on the data encryption level. |
 
+<a id="createdisplaycontext"></a>
 ## createDisplayContext
 
 ```TypeScript
@@ -76,6 +78,7 @@ Creates an application context based on the specified display ID with screen inf
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="createmodulecontext"></a>
 ## createModuleContext
 
 ```TypeScript
@@ -129,6 +132,7 @@ Creates the context based on the module name.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="getapplicationcontext"></a>
 ## getApplicationContext
 
 ```TypeScript
@@ -159,6 +163,7 @@ Obtains the application context.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
 
+<a id="getgroupdir"></a>
 ## getGroupDir
 
 ```TypeScript
@@ -182,7 +187,7 @@ Obtains the shared directory based on a group ID. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | dataGroupID | string | Yes | Group ID, which is assigned by the system when an application of the atomic service type is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the API call is successful,**err** is **undefined** and **data** is the shared directory obtained (or empty if or is empty if non-existent). Otherwise, an error object is returned.<br>Note: Only the EL2 encryption level is supported. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the API call is successful,**err** is **undefined** and **data** is the shared directory obtained (or empty if or is empty if non-existent). Otherwise, an error object is returned.<br>Note: Only the EL2 encryption level is supported. |
 
 **Error codes:**
 
@@ -191,6 +196,7 @@ Obtains the shared directory based on a group ID. This API uses an asynchronous 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 
+<a id="getgroupdir-1"></a>
 ## getGroupDir
 
 ```TypeScript
@@ -219,7 +225,7 @@ Obtains the shared directory based on a group ID. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. If no shared directory exists, null is returned.Only the encryption level EL2 is supported. |
+| Promise&lt;string&gt; | Promise used to return the result. If no shared directory exists, null is returned.Only the encryption level EL2 is supported. |
 
 **Error codes:**
 
@@ -228,6 +234,7 @@ Obtains the shared directory based on a group ID. This API uses a promise to ret
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 
+<a id="iscontextof"></a>
 ## isContextOf
 
 ```TypeScript
@@ -304,7 +311,7 @@ Information about file partitions, which are divided according to the encryption
 bundleCodeDir: string
 ```
 
-Bundle code directory. Do not access resource files using concatenated paths.Use [resource manager APIs](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md) instead.For details, see [Application Sandbox](../../../../file-management/app-sandbox-directory.md).
+Bundle code directory. Do not access resource files using concatenated paths.Use [resource manager APIs](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md) instead.For details, see [Application Sandbox](docroot://file-management/app-sandbox-directory.md).
 
 **Type:** string
 
@@ -324,7 +331,7 @@ Bundle code directory. Do not access resource files using concatenated paths.Use
 cacheDir: string
 ```
 
-Cache directory.For details, see [Application Sandbox](../../../../file-management/app-sandbox-directory.md).
+Cache directory.For details, see [Application Sandbox](docroot://file-management/app-sandbox-directory.md).
 
 **Type:** string
 
@@ -364,7 +371,7 @@ Cloud file directory.
 databaseDir: string
 ```
 
-Database directory.For details, see [Application Sandbox](../../../../file-management/app-sandbox-directory.md).
+Database directory.For details, see [Application Sandbox](docroot://file-management/app-sandbox-directory.md).
 
 **Type:** string
 
@@ -384,7 +391,7 @@ Database directory.For details, see [Application Sandbox](../../../../file-manag
 distributedFilesDir: string
 ```
 
-Distributed file directory.For details, see [Application Sandbox](../../../../file-management/app-sandbox-directory.md).
+Distributed file directory.For details, see [Application Sandbox](docroot://file-management/app-sandbox-directory.md).
 
 **Type:** string
 
@@ -424,7 +431,7 @@ Event hub that implements event subscription, unsubscription, and triggering.
 filesDir: string
 ```
 
-File directory.For details, see [Application Sandbox](../../../../file-management/app-sandbox-directory.md).
+File directory.For details, see [Application Sandbox](docroot://file-management/app-sandbox-directory.md).
 
 **Type:** string
 
@@ -464,7 +471,7 @@ Directory for storing log files.
 preferencesDir: string
 ```
 
-Preferences directory.For details, see [Application Sandbox](../../../../file-management/app-sandbox-directory.md).
+Preferences directory.For details, see [Application Sandbox](docroot://file-management/app-sandbox-directory.md).
 
 **Type:** string
 
@@ -549,7 +556,7 @@ Object for resource management.
 tempDir: string
 ```
 
-Temporary directory.For details, see [Application Sandbox](../../../../file-management/app-sandbox-directory.md).
+Temporary directory.For details, see [Application Sandbox](docroot://file-management/app-sandbox-directory.md).
 
 **Type:** string
 

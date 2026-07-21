@@ -6,6 +6,7 @@
 import { pointer } from '@kit.InputKit';
 ```
 
+<a id="setpointervisible"></a>
 ## setPointerVisible
 
 ```TypeScript
@@ -25,7 +26,7 @@ Sets whether the mouse pointer is visible in the current window. This API uses a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | visible | boolean | Yes | Whether the mouse pointer is visible in the current window. The value **true** indicates that the mouse pointer is visible, and the value **false** indicates the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ struct Index {
 ```
 
 
+<a id="setpointervisible-1"></a>
 ## setPointerVisible
 
 ```TypeScript
@@ -91,7 +93,7 @@ Sets whether the mouse pointer is visible in the current window. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

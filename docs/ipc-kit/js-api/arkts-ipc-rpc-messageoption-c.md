@@ -14,6 +14,7 @@ Defines the options used to construct the **MessageOption** object.
 import { rpc } from '@kit.IPCKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -50,6 +51,7 @@ class TestRemoteObject extends rpc.MessageOption {
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -85,6 +87,7 @@ class TestRemoteObject extends rpc.MessageOption {
 
 ```
 
+<a id="getflags"></a>
 ## getFlags
 
 ```TypeScript
@@ -128,6 +131,7 @@ try {
 
 ```
 
+<a id="getwaittime"></a>
 ## getWaitTime
 
 ```TypeScript
@@ -169,6 +173,7 @@ try {
 
 ```
 
+<a id="isasync"></a>
 ## isAsync
 
 ```TypeScript
@@ -206,6 +211,7 @@ try {
 
 ```
 
+<a id="setasync"></a>
 ## setAsync
 
 ```TypeScript
@@ -243,6 +249,7 @@ try {
 
 ```
 
+<a id="setflags"></a>
 ## setFlags
 
 ```TypeScript
@@ -283,6 +290,7 @@ try {
 
 ```
 
+<a id="setwaittime"></a>
 ## setWaitTime
 
 ```TypeScript

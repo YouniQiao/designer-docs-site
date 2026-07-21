@@ -6,6 +6,7 @@
 import { overlay } from '@kit.AbilityKit';
 ```
 
+<a id="setoverlayenabledbybundlename"></a>
 ## setOverlayEnabledByBundleName
 
 ```TypeScript
@@ -33,7 +34,7 @@ No permission is required when the specified application is the caller itself.
 | bundleName | string | Yes | Bundle name of the application. |
 | moduleName | string | Yes | Name of the module with the overlay feature. |
 | isEnabled | boolean | Yes | Whether to enable the module with the overlay feature. **true** to enable, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -75,6 +76,7 @@ try {
 ```
 
 
+<a id="setoverlayenabledbybundlename-1"></a>
 ## setOverlayEnabledByBundleName
 
 ```TypeScript
@@ -107,7 +109,7 @@ No permission is required when the specified application is the caller itself.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

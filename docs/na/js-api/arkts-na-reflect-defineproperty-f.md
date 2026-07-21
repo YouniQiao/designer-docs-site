@@ -1,5 +1,6 @@
 # defineProperty
 
+<a id="defineproperty"></a>
 ## defineProperty
 
 ```TypeScript
@@ -16,7 +17,7 @@ Adds a property to an object, or modifies attributes of an existing property.
 | --- | --- | --- | --- |
 | target | object | Yes |  |
 | propertyKey | [PropertyKey](arkts-na-propertykey-t.md) | Yes |  |
-| attributes | [PropertyDescriptor](arkts-na-lib-es5-propertydescriptor-i.md) & ThisType<any> | Yes |  |
+| attributes | [PropertyDescriptor](arkts-na-lib-es5-propertydescriptor-i.md) & ThisType&lt;any&gt; | Yes |  |
 
 **Return value:**
 

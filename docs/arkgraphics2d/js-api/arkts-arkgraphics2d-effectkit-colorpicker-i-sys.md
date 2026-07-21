@@ -14,6 +14,7 @@ A class used to obtain the color from an image. Before calling any method of Col
 import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
+<a id="discriminatepicturelightdegree"></a>
 ## discriminatePictureLightDegree
 
 ```TypeScript
@@ -69,6 +70,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getalphazerotransparentproportion"></a>
 ## getAlphaZeroTransparentProportion
 
 ```TypeScript
@@ -128,6 +130,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getcomplexitydegree"></a>
 ## getComplexityDegree
 
 ```TypeScript
@@ -187,6 +190,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getdeepenimmersioncolor"></a>
 ## getDeepenImmersionColor
 
 ```TypeScript
@@ -242,6 +246,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getimmersivebackgroundcolor"></a>
 ## getImmersiveBackgroundColor
 
 ```TypeScript
@@ -297,6 +302,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getimmersiveforegroundcolor"></a>
 ## getImmersiveForegroundColor
 
 ```TypeScript
@@ -352,6 +358,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getmorandishadowcolor"></a>
 ## getMorandiShadowColor
 
 ```TypeScript
@@ -407,6 +414,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getreversecolor"></a>
 ## getReverseColor
 
 ```TypeScript
@@ -462,6 +470,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getshadedegree"></a>
 ## getShadeDegree
 
 ```TypeScript
@@ -521,6 +530,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="gettopproportioncolorsandpercentage"></a>
 ## getTopProportionColorsAndPercentage
 
 ```TypeScript
@@ -549,7 +559,7 @@ Get top proportion colors and percentages of an image
 
 | Type | Description |
 | --- | --- |
-| [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<Color \| null, number \| null> | Map of colors and percentages, sorted by proportion.  - If the number of colors obtained is less than the value of colorCount, the map size is the actual number obtained.  - If the colors fail to be obtained or the number of colors obtained is less than 1, Map() is returned.  - If the value of colorCount is greater than 10, a map holding the first 10 colors with the top proportions is returned. |
+| Map&lt;Color \| null, number \| null&gt; | Map of colors and percentages, sorted by proportion.   - If the number of colors obtained is less than the value of colorCount, the map size is the actual number obtained.   - If the colors fail to be obtained or the number of colors obtained is less than 1, Map() is returned.   - If the value of colorCount is greater than 10, a map holding the first 10 colors with the top proportions is returned. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { partnerAgent } from '@kit.ConnectivityKit';
 ```
 
+<a id="disabledevicecontrol"></a>
 ## disableDeviceControl
 
 ```TypeScript
@@ -36,7 +37,7 @@ Disables device control for a bound device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

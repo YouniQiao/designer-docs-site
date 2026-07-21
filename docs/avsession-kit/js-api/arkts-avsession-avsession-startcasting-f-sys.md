@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="startcasting"></a>
 ## startCasting
 
 ```TypeScript
@@ -30,7 +31,7 @@ Cast resource to remote device.
 | --- | --- | --- | --- |
 | session | [SessionToken](arkts-avsession-avsession-sessiontoken-i-sys.md) | Yes | Specifies the sessionId which is to be casted. |
 | device | [OutputDeviceInfo](arkts-avsession-avsession-outputdeviceinfo-i.md) | Yes | Specifies the device to cast. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when start casting. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when start casting. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ avSession.on('deviceAvailable', (device: avSession.OutputDeviceInfo) => {
 ```
 
 
+<a id="startcasting-1"></a>
 ## startCasting
 
 ```TypeScript
@@ -92,7 +94,7 @@ Cast resource to remote device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise for the result |
+| Promise&lt;void&gt; | Promise for the result |
 
 **Error codes:**
 

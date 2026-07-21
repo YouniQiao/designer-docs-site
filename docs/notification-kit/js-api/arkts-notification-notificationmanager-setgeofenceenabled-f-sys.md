@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setgeofenceenabled"></a>
 ## setGeofenceEnabled
 
 ```TypeScript
@@ -34,7 +35,7 @@ Sets the enabling state of geofencing. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no result. |
+| Promise&lt;void&gt; | Promise that returns no result. |
 
 **Error codes:**
 

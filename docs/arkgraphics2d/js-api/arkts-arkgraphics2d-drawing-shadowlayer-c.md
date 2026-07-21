@@ -23,6 +23,7 @@ Implements a shadow layer.
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -58,6 +59,7 @@ Creates a **ShadowLayer** object.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="create-1"></a>
 ## create
 
 ```TypeScript

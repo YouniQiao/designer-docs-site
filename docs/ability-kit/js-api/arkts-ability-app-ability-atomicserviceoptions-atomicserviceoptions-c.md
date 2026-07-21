@@ -64,7 +64,7 @@ parameters?: Record<string, Object>
 
 Additional parameters. For details, see the **parameters** field in [Want](arkts-ability-app-ability-want-want-c.md).
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 12
 

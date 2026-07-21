@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="getukeycertificate"></a>
 ## getUkeyCertificate
 
 ```TypeScript
@@ -33,7 +34,7 @@ Obtains the details of a USB Key credential. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMResult> | Promise used to return the obtained USB Key credential details.The return value is the credentialDetailList attribute of the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
+| Promise&lt;CMResult&gt; | Promise used to return the obtained USB Key credential details.The return value is the credentialDetailList attribute of the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
 
 **Error codes:**
 

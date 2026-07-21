@@ -6,6 +6,7 @@
 import { dataTransfer } from '@kit.ConnectivityKit';
 ```
 
+<a id="offreaddata"></a>
 ## offReadData
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unsubscribes from the event reported when data is read from the port.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<DataParams> | No | Callback used to listen for the port read event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;DataParams&gt; | No | Callback used to listen for the port read event. |
 
 **Error codes:**
 

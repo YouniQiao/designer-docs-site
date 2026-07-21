@@ -1,8 +1,8 @@
 # AbilityStage
 
-AbilityStage is a [module](../../../../quick-start/application-package-overview.md#multi-module-design-mechanism)-level component manager. It is used for initializing operations such as resource preloading and thread creation at the module level, as well as maintaining the application state under the module. An AbilityStage instance corresponds to a module.
+AbilityStage is a [module](docroot://quick-start/application-package-overview.md#multi-module-design-mechanism)-level component manager. It is used for initializing operations such as resource preloading and thread creation at the module level, as well as maintaining the application state under the module. An AbilityStage instance corresponds to a module.
 
-When the [HAP](../../../../quick-start/hap-package.md) or [HSP](../../../../quick-start/in-app-hsp.md) of an application is first loaded, an AbilityStage instance is created. If a module contains both AbilityStage and other components (like UIAbility or ExtensionAbility), the AbilityStage instance is created before the other component instances.
+When the [HAP](docroot://quick-start/hap-package.md) or [HSP](docroot://quick-start/in-app-hsp.md) of an application is first loaded, an AbilityStage instance is created. If a module contains both AbilityStage and other components (like UIAbility or ExtensionAbility), the AbilityStage instance is created before the other component instances.
 
 An AbilityStage has the lifecycle callbacks [onCreate()](arkts-ability-app-ability-abilitystage-abilitystage-c.md#oncreate-1) and [onDestroy()](arkts-ability-app-ability-abilitystage-abilitystage-c.md#ondestroy-1), and the event callbacks [onAcceptWant()](arkts-ability-app-ability-abilitystage-abilitystage-c.md#onacceptwant-1),[onConfigurationUpdate()](arkts-ability-app-ability-abilitystage-abilitystage-c.md#onconfigurationupdate-1), and [onMemoryLevel()](arkts-ability-app-ability-abilitystage-abilitystage-c.md#onmemorylevel-1).
 
@@ -18,6 +18,7 @@ An AbilityStage has the lifecycle callbacks [onCreate()](arkts-ability-app-abili
 import { AbilityStage } from '@kit.AbilityKit';
 ```
 
+<a id="onabouttocreateability"></a>
 ## onAboutToCreateAbility
 
 ```TypeScript
@@ -34,6 +35,7 @@ Called when the ability stage is about to create the first ability.If both this 
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="onabouttocreateabilityasync"></a>
 ## onAboutToCreateAbilityAsync
 
 ```TypeScript
@@ -54,15 +56,16 @@ Called when the ability stage is about to create the first ability. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="onacceptwant"></a>
 ## onAcceptWant
 
 ```TypeScript
 onAcceptWant(want: Want): string
 ```
 
-Called when a UIAbility with the launch mode set to [specified](../../../../application-models/uiability-launch-type.md#specified) is launched. This API returns a string representing the unique ID of the UIAbility instance. This API returns the result synchronously and does not support asynchronous callbacks.
+Called when a UIAbility with the launch mode set to [specified](docroot://application-models/uiability-launch-type.md#specified) is launched. This API returns a string representing the unique ID of the UIAbility instance. This API returns the result synchronously and does not support asynchronous callbacks.
 
 If a UIAbility instance with the same ID already exists in the system, that instance is reused. Otherwise, a new instance is created.
 
@@ -107,13 +110,14 @@ export default class MyAbilityStage extends AbilityStage {
 
 ```
 
+<a id="onacceptwantasync"></a>
 ## onAcceptWantAsync
 
 ```TypeScript
 onAcceptWantAsync(want: Want): Promise<string>
 ```
 
-Called when a UIAbility with the launch mode set to [specified](../../../../application-models/uiability-launch-type.md#specified) is launched. This API returns a string representing the unique ID of the UIAbility instance. This API uses a promise to return the result.
+Called when a UIAbility with the launch mode set to [specified](docroot://application-models/uiability-launch-type.md#specified) is launched. This API returns a string representing the unique ID of the UIAbility instance. This API uses a promise to return the result.
 
 If a UIAbility instance with the same ID already exists in the system, that instance is reused. Otherwise, a new instance is created.
 
@@ -137,7 +141,7 @@ If a UIAbility instance with the same ID already exists in the system, that inst
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return a string that uniquely identifies the UIAbility instance launched. If a UIAbility instance with the same ID already exists in the system, that instance is reused.Otherwise, a new instance is created. |
+| Promise&lt;string&gt; | Promise used to return a string that uniquely identifies the UIAbility instance launched. If a UIAbility instance with the same ID already exists in the system, that instance is reused.Otherwise, a new instance is created. |
 
 **Example**
 
@@ -155,6 +159,7 @@ class MyAbilityStage extends AbilityStage {
 
 ```
 
+<a id="onconfigurationupdate"></a>
 ## onConfigurationUpdate
 
 ```TypeScript
@@ -168,7 +173,7 @@ Called when the system global configuration (such as the system language and dar
 > There are certain restrictions when this callback is actually triggered. For example, if you set the application  
 > language by calling [setLanguage](arkts-ability-applicationcontext-c.md#setlanguage-1), the  
 > system does not trigger the **onConfigurationUpdate** callback even if the system language changes. For details,  
-> see [When to Use](../../../../application-models/subscribe-system-environment-variable-changes.md#when-to-use).
+> see [When to Use](docroot://application-models/subscribe-system-environment-variable-changes.md#when-to-use).
 
 **Since:** 9
 
@@ -184,7 +189,7 @@ Called when the system global configuration (such as the system language and dar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| newConfig | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-common-configuration-i.md) | Yes | Callback invoked when the global configuration is updated. The global configuration indicates the configuration of the environment where the application is running and includes the language and color mode. |
+| newConfig | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-configuration-i.md) | Yes | Callback invoked when the global configuration is updated. The global configuration indicates the configuration of the environment where the application is running and includes the language and color mode. |
 
 **Example**
 
@@ -199,6 +204,7 @@ export default class MyAbilityStage extends AbilityStage {
 
 ```
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -232,6 +238,7 @@ export default class MyAbilityStage extends AbilityStage {
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -263,6 +270,7 @@ export default class MyAbilityStage extends AbilityStage {
 
 ```
 
+<a id="onlaunchfromhypersnap"></a>
 ## onLaunchFromHyperSnap
 
 ```TypeScript
@@ -279,6 +287,7 @@ Called when the process is launched from HyperSnap.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="onmemorylevel"></a>
 ## onMemoryLevel
 
 ```TypeScript
@@ -323,13 +332,14 @@ export default class MyAbilityStage extends AbilityStage {
 
 ```
 
+<a id="onnewprocessrequest"></a>
 ## onNewProcessRequest
 
 ```TypeScript
 onNewProcessRequest(want: Want): string
 ```
 
-Called when a UIAbility<!--Del--> or UIExtensionAbility<!--DelEnd-->, which is configured to run in an independent process (with **isolationProcess** set to **true** in the [module.json5](../../../../quick-start/module-configuration-file.md) file), is launched. This API returns a string representing the unique process ID. This API returns the result synchronously and does not support asynchronous callbacks.
+Called when a UIAbility<!--Del--> or UIExtensionAbility<!--DelEnd-->, which is configured to run in an independent process (with **isolationProcess** set to **true** in the [module.json5](docroot://quick-start/module-configuration-file.md) file), is launched. This API returns a string representing the unique process ID. This API returns the result synchronously and does not support asynchronous callbacks.
 
 If the application already has a process with the same ID, the UIAbility<!--Del--> or UIExtensionAbility<!--DelEnd-  
 -> runs in that process. Otherwise, a new process is created.
@@ -338,7 +348,7 @@ If you implement both **onNewProcessRequest** and [onAcceptWant](arkts-ability-a
 
 <!--Del-->
 
-The **isolationProcess** field can be set to **true** in the [module.json5](../../../../quick-start/module-configuration-file.md) file, but only for the UIExtensionAbility of the sys/commonUI type.
+The **isolationProcess** field can be set to **true** in the [module.json5](docroot://quick-start/module-configuration-file.md) file, but only for the UIExtensionAbility of the sys/commonUI type.
 
 <!--DelEnd-->
 
@@ -362,7 +372,7 @@ The **isolationProcess** field can be set to **true** in the [module.json5](../.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want type parameter that includes the launch parameters provided by the caller, such as the UIAbility&lt;!--Del--&gt; or UIExtensionAbility&lt;!--DelEnd--&gt; name and bundle name. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want type parameter that includes the launch parameters provided by the caller, such as the UIAbility<!--Del--> or UIExtensionAbility<!--DelEnd--> name and bundle name. |
 
 **Return value:**
 
@@ -384,20 +394,21 @@ export default class MyAbilityStage extends AbilityStage {
 
 ```
 
+<a id="onnewprocessrequestasync"></a>
 ## onNewProcessRequestAsync
 
 ```TypeScript
 onNewProcessRequestAsync(want: Want): Promise<string>
 ```
 
-Called when a UIAbility<!--Del--> or UIExtensionAbility<!--DelEnd-->, which is configured to run in an independent process (with **isolationProcess** set to **true** in the [module.json5](../../../../quick-start/module-configuration-file.md) file), is launched. This API returns a string representing the unique process ID. This API uses a promise to return the result.
+Called when a UIAbility<!--Del--> or UIExtensionAbility<!--DelEnd-->, which is configured to run in an independent process (with **isolationProcess** set to **true** in the [module.json5](docroot://quick-start/module-configuration-file.md) file), is launched. This API returns a string representing the unique process ID. This API uses a promise to return the result.
 
 If the application already has a process with the same ID, the UIAbility<!--Del--> or UIExtensionAbility<!--DelEnd-  
 -> runs in that process. Otherwise, a new process is created.
 
 <!--Del-->
 
-The **isolationProcess** field can be set to **true** in the [module.json5](../../../../quick-start/module-configuration-file.md) file, but only for the UIExtensionAbility of the sys/commonUI type.
+The **isolationProcess** field can be set to **true** in the [module.json5](docroot://quick-start/module-configuration-file.md) file, but only for the UIExtensionAbility of the sys/commonUI type.
 
 <!--DelEnd-->
 
@@ -415,13 +426,13 @@ The **isolationProcess** field can be set to **true** in the [module.json5](../.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want type parameter that includes the launch parameters provided by the caller, such as the UIAbility&lt;!--Del--&gt; or UIExtensionAbility&lt;!--DelEnd--&gt; name and bundle name. |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want type parameter that includes the launch parameters provided by the caller, such as the UIAbility<!--Del--> or UIExtensionAbility<!--DelEnd--> name and bundle name. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return a string representing the process ID. If the application already has a process with the same ID, the UIAbility&lt;!--Del--&gt; or UIExtensionAbility&lt;!--DelEnd--&gt; runs in that process. Otherwise, a new process is created. |
+| Promise&lt;string&gt; | Promise used to return a string representing the process ID. If the application already has a process with the same ID, the UIAbility<!--Del--> or UIExtensionAbility<!--DelEnd--> runs in that process. Otherwise, a new process is created. |
 
 **Example**
 
@@ -439,6 +450,7 @@ class MyAbilityStage extends AbilityStage {
 
 ```
 
+<a id="onpreparetermination"></a>
 ## onPrepareTermination
 
 ```TypeScript
@@ -488,6 +500,7 @@ export default class MyAbilityStage extends AbilityStage {
 
 ```
 
+<a id="onprepareterminationasync"></a>
 ## onPrepareTerminationAsync
 
 ```TypeScript
@@ -521,7 +534,7 @@ Called when the application is closed by the user, allowing the user to choose b
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityConstant.PrepareTermination> | Promise used to return the user's choice. |
+| Promise&lt;AbilityConstant.PrepareTermination&gt; | Promise used to return the user's choice. |
 
 **Example**
 

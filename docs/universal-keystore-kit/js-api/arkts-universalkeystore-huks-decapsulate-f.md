@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="decapsulate"></a>
 ## decapsulate
 
 ```TypeScript
@@ -29,7 +30,7 @@ Decapsulates a post-quantum cryptography key. This operation can be managed by H
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the post-quantum cryptography key. |
 | params | [HuksParam](arkts-universalkeystore-huks-huksparam-i.md)[] | Yes | Decapsulation properties. |
-| encapData | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Encapsulated shared key. |
+| encapData | Uint8Array | Yes | Encapsulated shared key. |
 | sharedKeyAlias | string | No | Alias of the key used for decapsulation.This parameter must be specified if HUKS is used for key management.If the app manages the key by itself, ignore this parameter. |
 | sharedKeyParams | [HuksParam](arkts-universalkeystore-huks-huksparam-i.md)[] | No | Properties of the decapsulated key.This parameter must be specified if HUKS is used for key management.If the app manages the key by itself, ignore this parameter. |
 
@@ -37,7 +38,7 @@ Decapsulates a post-quantum cryptography key. This operation can be managed by H
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | Promise used to return the result. |
+| Promise&lt;HuksReturnResult&gt; | Promise used to return the result. |
 
 **Error codes:**
 

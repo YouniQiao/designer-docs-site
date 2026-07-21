@@ -16,6 +16,7 @@ Provides APIs for managing DLP files. A **DLPFile** instance indicates a DLP fil
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="adddlplinkfile"></a>
 ## addDLPLinkFile
 
 ```TypeScript
@@ -48,7 +49,7 @@ When a DLP application needs to access a DLP file using a standard file API, it 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -94,6 +95,7 @@ ExampleFunction();
 
 ```
 
+<a id="adddlplinkfile-1"></a>
 ## addDLPLinkFile
 
 ```TypeScript
@@ -121,7 +123,7 @@ This API is called when a DLP application needs to access a DLP file using a sta
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. If the value is out of range, error code 401 is thrown. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to receive the result of adding a link file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to receive the result of adding a link file. |
 
 **Error codes:**
 
@@ -170,6 +172,7 @@ ExampleFunction();
 
 ```
 
+<a id="closedlpfile"></a>
 ## closeDLPFile
 
 ```TypeScript
@@ -200,7 +203,7 @@ This API is used when the file owner decides to close a DLP file.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -244,6 +247,7 @@ ExampleFunction();
 
 ```
 
+<a id="closedlpfile-1"></a>
 ## closeDLPFile
 
 ```TypeScript
@@ -274,7 +278,7 @@ This API is used when the file owner decides to close a DLP file.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to receive the result of closing a **DLPFile** object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to receive the result of closing a **DLPFile** object. |
 
 **Error codes:**
 
@@ -322,6 +326,7 @@ ExampleFunction();
 
 ```
 
+<a id="deletedlplinkfile"></a>
 ## deleteDLPLinkFile
 
 ```TypeScript
@@ -354,7 +359,7 @@ This API is used to clear the link file mapping after DLP file access is complet
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -401,6 +406,7 @@ ExampleFunction();
 
 ```
 
+<a id="deletedlplinkfile-1"></a>
 ## deleteDLPLinkFile
 
 ```TypeScript
@@ -428,7 +434,7 @@ This API is used to clear the link file mapping after DLP file access is complet
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. If the value is out of range, error code 401 is thrown. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to receive the result of deleting a link file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to receive the result of deleting a link file. |
 
 **Error codes:**
 
@@ -478,6 +484,7 @@ ExampleFunction();
 
 ```
 
+<a id="recoverdlpfile"></a>
 ## recoverDLPFile
 
 ```TypeScript
@@ -502,13 +509,13 @@ This API is used when the file owner decides to disable the DLP protection for a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| plaintextFd | number | Yes | FD of the target plaintext file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
+| plaintextFd | number | Yes | FD of the target plaintext file. The value range is [0, 2<sup>31</sup>-1]. If the value of **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd** is greater than 2<sup>31</sup>-1, the excess part will be truncated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -564,6 +571,7 @@ ExampleFunction();
 
 ```
 
+<a id="recoverdlpfile-1"></a>
 ## recoverDLPFile
 
 ```TypeScript
@@ -588,8 +596,8 @@ This API is used when the file owner decides to disable the DLP protection for a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| plaintextFd | number | Yes | FD of the target plaintext file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to receive the result of recovering the plaintext of a DLP file. The callback parameter is **err**. **err** is **undefined** when the operation is successful;otherwise, **err** is an error object. |
+| plaintextFd | number | Yes | FD of the target plaintext file. The value range is [0, 2<sup>31</sup>-1]. If the value of **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd** is greater than 2<sup>31</sup>-1, the excess part will be truncated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to receive the result of recovering the plaintext of a DLP file. The callback parameter is **err**. **err** is **undefined** when the operation is successful;otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -647,6 +655,7 @@ ExampleFunction();
 
 ```
 
+<a id="replacedlplinkfile"></a>
 ## replaceDLPLinkFile
 
 ```TypeScript
@@ -677,7 +686,7 @@ When you need to access a different DLP file, you can replace the link file to c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -726,6 +735,7 @@ ExampleFunction();
 
 ```
 
+<a id="replacedlplinkfile-1"></a>
 ## replaceDLPLinkFile
 
 ```TypeScript
@@ -751,7 +761,7 @@ When you need to access a different DLP file, you can replace the link file.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | linkFileName | string | Yes | Name of the link file in the FUSE. The value contains up to 255 bytes. If the value is out of range, error code 401 is thrown. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to receive the result of replacing a link file. The callback parameter is **err**. **err** is **undefined** when the operation is successful; otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to receive the result of replacing a link file. The callback parameter is **err**. **err** is **undefined** when the operation is successful; otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -803,6 +813,7 @@ ExampleFunction();
 
 ```
 
+<a id="resumefuselink"></a>
 ## resumeFuseLink
 
 ```TypeScript
@@ -829,7 +840,7 @@ After the link file is replaced, the read and write need to be resumed for norma
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -876,6 +887,7 @@ ExampleFunction();
 
 ```
 
+<a id="resumefuselink-1"></a>
 ## resumeFuseLink
 
 ```TypeScript
@@ -902,7 +914,7 @@ After the link file is replaced, the read and write need to be resumed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to receive the result of resuming the read and write on the FUSE. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to receive the result of resuming the read and write on the FUSE. |
 
 **Error codes:**
 
@@ -953,6 +965,7 @@ ExampleFunction();
 
 ```
 
+<a id="stopfuselink"></a>
 ## stopFuseLink
 
 ```TypeScript
@@ -979,7 +992,7 @@ Before deleting a link file, stop the read and write to ensure secure file opera
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1024,6 +1037,7 @@ ExampleFunction();
 
 ```
 
+<a id="stopfuselink-1"></a>
 ## stopFuseLink
 
 ```TypeScript
@@ -1050,7 +1064,7 @@ Before deleting a link file, stop the read and write.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to receive the result of stopping read and write on the FUSE. The callback parameter is **err**. **err** is **undefined** when the operation is successful;otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to receive the result of stopping read and write on the FUSE. The callback parameter is **err**. **err** is **undefined** when the operation is successful;otherwise, **err** is an error object. |
 
 **Error codes:**
 

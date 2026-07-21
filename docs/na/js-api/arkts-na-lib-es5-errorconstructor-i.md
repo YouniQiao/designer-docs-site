@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface ErrorConstructor--><!--Device-unnamed-interface ErrorConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -20,8 +21,9 @@ new(message?: string): Error
 
 | Type | Description |
 | --- | --- |
-| [Error](arkts-na-lib-es5-error-i.md) |  |
+| Error |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -40,7 +42,7 @@ new(message?: string): Error
 
 | Type | Description |
 | --- | --- |
-| [Error](arkts-na-lib-es5-error-i.md) |  |
+| Error |  |
 
 ## prototype
 

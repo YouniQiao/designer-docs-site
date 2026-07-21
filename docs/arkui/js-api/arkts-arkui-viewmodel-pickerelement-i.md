@@ -8,6 +8,7 @@ The <picker> component supports common, date, time, and multi-column text.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
+<a id="rotation"></a>
 ## rotation
 
 ```TypeScript

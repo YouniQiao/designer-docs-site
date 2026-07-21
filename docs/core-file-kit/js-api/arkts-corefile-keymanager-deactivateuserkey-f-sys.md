@@ -6,6 +6,7 @@
 import { keyManager } from '@kit.CoreFileKit';
 ```
 
+<a id="deactivateuserkey"></a>
 ## deactivateUserKey
 
 ```TypeScript
@@ -39,7 +40,7 @@ When the screen is locked, the specified user key is uninstalled synchronously.*
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The input parameter is invalid. Possible causes: Mandatory parameters are left unspecified; Or input parameter has type different from the type the interface requires. |
 | 13600001 | IPC error. |
 | 13600008 | No such object. Possible causes: Cannot find userkey for the specified user. |
-| 13600009 | User ID out of range. Possible causes: input parameter userId &lt; 100 or userId &gt; 10736. |
+| 13600009 | User ID out of range. Possible causes: input parameter userId < 100 or userId > 10736. |
 
 **Example**
 

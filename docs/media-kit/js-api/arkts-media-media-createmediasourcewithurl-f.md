@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createmediasourcewithurl"></a>
 ## createMediaSourceWithUrl
 
 ```TypeScript
@@ -27,7 +28,7 @@ Creates a media source for streaming media to be pre-downloaded.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | - URL of the media source. The following streaming media formats are supported: HLS, HTTP-FLV, DASH, and HTTPS.<br> - FD path of the local M3U8 file. |
-| headers | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string> | No | HTTP header customized for streaming media pre-download. If this parameter is not passed, the default HTTP header of the network request is used.<br>**Since:** 13 |
+| headers | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, string&gt; | No | HTTP header customized for streaming media pre-download. If this parameter is not passed, the default HTTP header of the network request is used.<br>**Since:** 13 |
 
 **Return value:**
 

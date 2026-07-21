@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="issimactive"></a>
 ## isSimActive
 
 ```TypeScript
@@ -25,7 +26,7 @@ Checks whether the SIM card in a specified slot is activated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from {@code 0} to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for checking whether the SIM card in a specified slot is activated.Returns {@code true} if the SIM card is activated; returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for checking whether the SIM card in a specified slot is activated.Returns {@code true} if the SIM card is activated; returns {@code false} otherwise. |
 
 **Example**
 
@@ -40,6 +41,7 @@ sim.isSimActive(0, (err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="issimactive-1"></a>
 ## isSimActive
 
 ```TypeScript
@@ -64,7 +66,7 @@ Checks whether the SIM card in a specified slot is activated.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the SIM card is activated; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the SIM card is activated; returns {@code false} otherwise. |
 
 **Example**
 

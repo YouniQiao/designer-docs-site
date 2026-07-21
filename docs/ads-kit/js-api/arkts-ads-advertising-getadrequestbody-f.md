@@ -6,6 +6,7 @@
 import { advertising } from '@kit.AdsKit';
 ```
 
+<a id="getadrequestbody"></a>
 ## getAdRequestBody
 
 ```TypeScript
@@ -31,7 +32,7 @@ Obtains the body of an ad request. This API uses a promise to return the result(
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the ad data of the string type. |
+| Promise&lt;string&gt; | Promise used to return the ad data of the string type. |
 
 **Error codes:**
 

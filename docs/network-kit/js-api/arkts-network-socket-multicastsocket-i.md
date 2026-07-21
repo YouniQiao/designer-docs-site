@@ -16,6 +16,7 @@ Defines a UDP MulticastSocket connection.
 import { socket } from '@kit.NetworkKit';
 ```
 
+<a id="addmembership"></a>
 ## addMembership
 
 ```TypeScript
@@ -37,7 +38,7 @@ Add the socket to the multicast group.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | multicastAddress | [NetAddress](arkts-network-connection-netaddress-i.md) | Yes | Multicast address information. {@link NetAddress}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of addMembership. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of addMembership. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ multicast.addMembership(addr, (err: Object) => {
 
 ```
 
+<a id="addmembership-1"></a>
 ## addMembership
 
 ```TypeScript
@@ -95,7 +97,7 @@ Add the socket to the multicast group.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -124,6 +126,7 @@ multicast.addMembership(addr).then(() => {
 
 ```
 
+<a id="dropmembership"></a>
 ## dropMembership
 
 ```TypeScript
@@ -145,7 +148,7 @@ Drop the socket from the multicast group.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | multicastAddress | [NetAddress](arkts-network-connection-netaddress-i.md) | Yes | Multicast address information. {@link NetAddress}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of dropMembership. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of dropMembership. |
 
 **Error codes:**
 
@@ -176,6 +179,7 @@ multicast.dropMembership(addr, (err: Object) => {
 
 ```
 
+<a id="dropmembership-1"></a>
 ## dropMembership
 
 ```TypeScript
@@ -202,7 +206,7 @@ Drop the socket from the multicast group.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -231,6 +235,7 @@ multicast.dropMembership(addr).then(() => {
 
 ```
 
+<a id="getloopbackmode"></a>
 ## getLoopbackMode
 
 ```TypeScript
@@ -249,7 +254,7 @@ Get the loopback mode of the socket.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback of getLoopbackMode. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback of getLoopbackMode. |
 
 **Error codes:**
 
@@ -274,6 +279,7 @@ multicast.getLoopbackMode((err: Object, value: Boolean) => {
 
 ```
 
+<a id="getloopbackmode-1"></a>
 ## getLoopbackMode
 
 ```TypeScript
@@ -292,7 +298,7 @@ Get the loopback mode of the socket.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -315,6 +321,7 @@ multicast.getLoopbackMode().then((value: Boolean) => {
 
 ```
 
+<a id="getmulticastttl"></a>
 ## getMulticastTTL
 
 ```TypeScript
@@ -333,7 +340,7 @@ Get the TTL value of socket multicast packet.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | The callback of getMulticastTTL. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | The callback of getMulticastTTL. |
 
 **Error codes:**
 
@@ -358,6 +365,7 @@ multicast.getMulticastTTL((err: Object, value: Number) => {
 
 ```
 
+<a id="getmulticastttl-1"></a>
 ## getMulticastTTL
 
 ```TypeScript
@@ -376,7 +384,7 @@ Get the TTL value of socket multicast packet.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returned by the function. |
+| Promise&lt;number&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -399,6 +407,7 @@ multicast.getMulticastTTL().then((value: Number) => {
 
 ```
 
+<a id="getsocketfd"></a>
 ## getSocketFd
 
 ```TypeScript
@@ -421,7 +430,7 @@ Obtains the file descriptor of the MulticastSocket.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returns the file descriptor of the Multicast socket. |
+| Promise&lt;number&gt; | The promise returns the file descriptor of the Multicast socket. |
 
 **Error codes:**
 
@@ -454,6 +463,7 @@ multicast.bind(bindAddr)
 
 ```
 
+<a id="setloopbackmode"></a>
 ## setLoopbackMode
 
 ```TypeScript
@@ -473,7 +483,7 @@ Set the loopback mode for the socket.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | flag | boolean | Yes | Whether to enable loopback mode. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setLoopbackMode. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setLoopbackMode. |
 
 **Error codes:**
 
@@ -498,6 +508,7 @@ multicast.setLoopbackMode(false, (err: Object) => {
 
 ```
 
+<a id="setloopbackmode-1"></a>
 ## setLoopbackMode
 
 ```TypeScript
@@ -522,7 +533,7 @@ Set the loopback mode for the socket.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -545,6 +556,7 @@ multicast.setLoopbackMode(false).then(() => {
 
 ```
 
+<a id="setmulticastttl"></a>
 ## setMulticastTTL
 
 ```TypeScript
@@ -564,7 +576,7 @@ Set the TTL value for socket multicast packets.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ttl | number | Yes | The TTL value to set. Valid range is typically 0 to 255. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setMulticastTTL. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setMulticastTTL. |
 
 **Error codes:**
 
@@ -591,6 +603,7 @@ multicast.setMulticastTTL(ttl, (err: Object) => {
 
 ```
 
+<a id="setmulticastttl-1"></a>
 ## setMulticastTTL
 
 ```TypeScript
@@ -615,7 +628,7 @@ Set the TTL value for socket multicast packet.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -639,6 +652,7 @@ multicast.setMulticastTTL(8).then(() => {
 
 ```
 
+<a id="setreuseaddress"></a>
 ## setReuseAddress
 
 ```TypeScript

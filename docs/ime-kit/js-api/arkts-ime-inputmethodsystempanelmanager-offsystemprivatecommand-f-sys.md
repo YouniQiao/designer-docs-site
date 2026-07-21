@@ -6,6 +6,7 @@
 import { inputMethodSystemPanelManager } from '@kit.IMEKit';
 ```
 
+<a id="offsystemprivatecommand"></a>
 ## offSystemPrivateCommand
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe from the event when the input method application sends private data 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Record<string, CommandDataType>> | No | callback triggered when an input method application sends a private data command. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Record&lt;string, CommandDataType&gt;&gt; | No | callback triggered when an input method application sends a private data command. |
 
 **Error codes:**
 

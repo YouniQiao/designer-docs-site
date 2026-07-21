@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface IArguments--><!--Device-unnamed-interface IArguments-End-->
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -16,5 +17,5 @@ Iterator
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<any> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;any&gt; |  |
 

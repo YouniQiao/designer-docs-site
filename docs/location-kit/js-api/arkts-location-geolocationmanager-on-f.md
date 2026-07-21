@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="on"></a>
 ## on('locationChange')
 
 ```TypeScript
@@ -32,8 +33,8 @@ Subscribe location changed.You are advised to use the {@link onLocationChange} i
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'locationChange' | Yes | Indicates the location service event to be subscribed to. |
-| request | LocationRequest \| ContinuousLocationRequest | Yes | Indicates the location request parameters.<br>**Since:** 12 |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Location> | Yes | Indicates the callback for reporting the location result. |
+| request | [LocationRequest](arkts-location-geolocation-locationrequest-i.md) \| ContinuousLocationRequest | Yes | Indicates the location request parameters.<br>**Since:** 12 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Location&gt; | Yes | Indicates the callback for reporting the location result. |
 
 **Error codes:**
 
@@ -85,6 +86,7 @@ try {
 ```
 
 
+<a id="on-1"></a>
 ## on('locationError')
 
 ```TypeScript
@@ -108,7 +110,7 @@ Subscribe continuous location error changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'locationError' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LocationError> | Yes | Indicates the callback for reporting the continuous location error. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LocationError&gt; | Yes | Indicates the callback for reporting the continuous location error. |
 
 **Error codes:**
 
@@ -152,6 +154,7 @@ try {
 ```
 
 
+<a id="on-2"></a>
 ## on('locationEnabledChange')
 
 ```TypeScript
@@ -171,7 +174,7 @@ Subscribe location switch changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'locationEnabledChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Indicates the callback for reporting the location switch status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for reporting the location switch status. |
 
 **Error codes:**
 
@@ -198,6 +201,7 @@ try {
 ```
 
 
+<a id="on-3"></a>
 ## on('cachedGnssLocationsChange')
 
 ```TypeScript
@@ -223,7 +227,7 @@ Subscribe to cache GNSS locations update messages.
 | --- | --- | --- | --- |
 | type | 'cachedGnssLocationsChange' | Yes | Indicates the location service event to be subscribed to. |
 | request | [CachedGnssLocationsRequest](arkts-location-geolocationmanager-cachedgnsslocationsrequest-i.md) | Yes | Indicates the cached GNSS locations request parameters. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<Location>> | Yes | Indicates the callback for reporting the cached GNSS locations. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;Location&gt;&gt; | Yes | Indicates the callback for reporting the cached GNSS locations. |
 
 **Error codes:**
 
@@ -257,6 +261,7 @@ try {
 ```
 
 
+<a id="on-4"></a>
 ## on('satelliteStatusChange')
 
 ```TypeScript
@@ -278,7 +283,7 @@ Subscribe satellite status changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'satelliteStatusChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SatelliteStatusInfo> | Yes | Indicates the callback for reporting the satellite status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SatelliteStatusInfo&gt; | Yes | Indicates the callback for reporting the satellite status. |
 
 **Error codes:**
 
@@ -337,6 +342,7 @@ try {
 ```
 
 
+<a id="on-5"></a>
 ## on('nmeaMessage')
 
 ```TypeScript
@@ -358,7 +364,7 @@ Subscribe nmea message changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'nmeaMessage' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | Indicates the callback for reporting the nmea message. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Indicates the callback for reporting the nmea message. |
 
 **Error codes:**
 
@@ -388,6 +394,7 @@ try {
 ```
 
 
+<a id="on-6"></a>
 ## on('gnssFenceStatusChange')
 
 ```TypeScript
@@ -458,6 +465,7 @@ wantAgent.getWantAgent(wantAgentInfo).then((wantAgentObj) => {
 ```
 
 
+<a id="on-7"></a>
 ## on('countryCodeChange')
 
 ```TypeScript
@@ -477,7 +485,7 @@ Registering the callback function for listening to country code changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'countryCodeChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CountryCode> | Yes | Indicates the callback for reporting country code changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CountryCode&gt; | Yes | Indicates the callback for reporting country code changes. |
 
 **Error codes:**
 
@@ -506,6 +514,7 @@ try {
 ```
 
 
+<a id="on-8"></a>
 ## on('bluetoothScanResultChange')
 
 ```TypeScript
@@ -527,7 +536,7 @@ Registers and listens to bluetooth scanning results for location services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'bluetoothScanResultChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BluetoothScanResult> | Yes | Indicates the callback for reporting Bluetooth scan info. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BluetoothScanResult&gt; | Yes | Indicates the callback for reporting Bluetooth scan info. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="off"></a>
 ## off('continuousTaskCancel')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Unsubscribes from continuous task cancellation events. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'continuousTaskCancel' | Yes | Cancels a continuous task. The value is fixed at **'continuousTaskCancel'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ContinuousTaskCancelInfo> | No | Callback for which listening is cancelled. If this parameter is left unspecified, all registered callbacks are cancelled. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ContinuousTaskCancelInfo&gt; | No | Callback for which listening is cancelled. If this parameter is left unspecified, all registered callbacks are cancelled. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="off-1"></a>
 ## off('continuousTaskSuspend')
 
 ```TypeScript
@@ -82,7 +84,7 @@ Unregisters from the listener for continuous task suspension. This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'continuousTaskSuspend' | Yes | Event type. The value is fixed at **'continuousTaskSuspend'**, indicating that the continuous task is suspended. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ContinuousTaskSuspendInfo> | No | Callback used to unregister from the listener for continuous task suspension. If this parameter is not passed, all listeners are unsubscribed from. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ContinuousTaskSuspendInfo&gt; | No | Callback used to unregister from the listener for continuous task suspension. If this parameter is not passed, all listeners are unsubscribed from. |
 
 **Error codes:**
 
@@ -117,6 +119,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="off-2"></a>
 ## off('continuousTaskActive')
 
 ```TypeScript
@@ -138,7 +141,7 @@ Unregisters from the listener for continuous task activation. This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'continuousTaskActive' | Yes | Event type. The value is fixed at **'continuousTaskActive'**, indicating that the continuous task is activated. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ContinuousTaskActiveInfo> | No | Callback used to unregister from the listener for continuous task activation. If this parameter is not passed, all listeners are unsubscribed from. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ContinuousTaskActiveInfo&gt; | No | Callback used to unregister from the listener for continuous task activation. If this parameter is not passed, all listeners are unsubscribed from. |
 
 **Error codes:**
 

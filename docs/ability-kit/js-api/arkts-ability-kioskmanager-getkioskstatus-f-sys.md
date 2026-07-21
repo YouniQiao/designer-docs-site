@@ -6,6 +6,7 @@
 import { kioskManager } from '@kit.AbilityKit';
 ```
 
+<a id="getkioskstatus"></a>
 ## getKioskStatus
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the Kiosk mode status information, including whether the system is in ki
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KioskStatus> | Promise used to return the kiosk mode status information. |
+| Promise&lt;KioskStatus&gt; | Promise used to return the kiosk mode status information. |
 
 **Error codes:**
 

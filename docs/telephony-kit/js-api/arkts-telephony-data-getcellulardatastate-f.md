@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="getcellulardatastate"></a>
 ## getCellularDataState
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtain the connection state of the PS domain.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataConnectState> | Yes | Indicates the callback for getting the connection state,which can be any of the following:&lt;ul&gt;&lt;li&gt;{@code DataConnectState#DATA_STATE_UNKNOWN}&lt;li&gt;{@code DataConnectState#DATA_STATE_DISCONNECTED}&lt;li&gt;{@code DataConnectState#DATA_STATE_CONNECTING}&lt;li&gt;{@code DataConnectState#DATA_STATE_CONNECTED}&lt;li&gt;{@code DataConnectState#DATA_STATE_SUSPENDED}&lt;/ul&gt; |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataConnectState&gt; | Yes | Indicates the callback for getting the connection state,which can be any of the following:<ul><li>{@code DataConnectState#DATA_STATE_UNKNOWN}<li>{@code DataConnectState#DATA_STATE_DISCONNECTED}<li>{@code DataConnectState#DATA_STATE_CONNECTING}<li>{@code DataConnectState#DATA_STATE_CONNECTED}<li>{@code DataConnectState#DATA_STATE_SUSPENDED}</ul> |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ data.getCellularDataState((err: BusinessError, contextData: data.DataConnectStat
 ```
 
 
+<a id="getcellulardatastate-1"></a>
 ## getCellularDataState
 
 ```TypeScript
@@ -71,7 +73,7 @@ Obtain the connection state of the PS domain.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataConnectState> | Returns the connection state,which can be any of the following:&lt;ul&gt;&lt;li&gt;{@code DataConnectState#DATA_STATE_UNKNOWN}&lt;li&gt;{@code DataConnectState#DATA_STATE_DISCONNECTED}&lt;li&gt;{@code DataConnectState#DATA_STATE_CONNECTING}&lt;li&gt;{@code DataConnectState#DATA_STATE_CONNECTED}&lt;li&gt;{@code DataConnectState#DATA_STATE_SUSPENDED}&lt;/ul&gt; |
+| Promise&lt;DataConnectState&gt; | Returns the connection state,which can be any of the following:<ul><li>{@code DataConnectState#DATA_STATE_UNKNOWN}<li>{@code DataConnectState#DATA_STATE_DISCONNECTED}<li>{@code DataConnectState#DATA_STATE_CONNECTING}<li>{@code DataConnectState#DATA_STATE_CONNECTED}<li>{@code DataConnectState#DATA_STATE_SUSPENDED}</ul> |
 
 **Error codes:**
 

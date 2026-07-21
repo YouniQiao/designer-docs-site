@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="makecallwithtoken"></a>
 ## makeCallWithToken
 
 ```TypeScript
@@ -33,7 +34,7 @@ Go to the dial screen and the called number is displayed.The authentication chal
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return access token by the makeCall. |
+| Promise&lt;string&gt; | Promise used to return access token by the makeCall. |
 
 **Error codes:**
 

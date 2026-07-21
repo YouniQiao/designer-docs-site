@@ -14,6 +14,7 @@ HashMap is a map implemented based on the array, linked list, and red-black tree
 import { HashMap } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains an iterator, each item of which is a JavaScript object.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -87,6 +88,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -121,6 +123,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -150,6 +153,7 @@ let hashMap = new HashMap<string, number>();
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -170,7 +174,7 @@ Returns an iterator that contains all the elements in this HashMap.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | Iterator obtained. |
 
 **Error codes:**
 
@@ -207,6 +211,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -227,8 +232,8 @@ Uses a callback to traverse each element.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value?: V, key?: K, map?: HashMap<K, V>) => void | Yes | Callback invoked to traverse the elements in the HashMap. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value?: V, key?: K, map?: HashMap&lt;K, V&gt;) =&gt; void | Yes | Callback invoked to traverse the elements in the HashMap. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -263,6 +268,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -308,6 +314,7 @@ console.info("result:", result);  // result: 356
 
 ```
 
+<a id="haskey"></a>
 ## hasKey
 
 ```TypeScript
@@ -352,6 +359,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="hasvalue"></a>
 ## hasValue
 
 ```TypeScript
@@ -396,6 +404,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -433,6 +442,7 @@ console.info("result = ", result) // result = true
 
 ```
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -453,7 +463,7 @@ Returns an iterator that contains all the keys in this HashMap.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<K> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;K&gt; | Iterator obtained. |
 
 **Error codes:**
 
@@ -476,6 +486,7 @@ for (let key of keys) {
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -521,6 +532,7 @@ console.info("result:", result);  // result: 356
 
 ```
 
+<a id="replace"></a>
 ## replace
 
 ```TypeScript
@@ -566,6 +578,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -593,7 +606,7 @@ Adds or updates an element in this HashMap.
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | HashMap that contains the new element. |
+| Object | HashMap that contains the new element. |
 
 **Error codes:**
 
@@ -610,6 +623,7 @@ console.info("result:", hashMap.get("squirrel"));  // result: 123
 
 ```
 
+<a id="setall"></a>
 ## setAll
 
 ```TypeScript
@@ -630,7 +644,7 @@ Adds all elements in a **HashMap** instance to this HashMap.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| map | [HashMap](arkts-arkts-util-hashmap-hashmap-c.md)<K, V> | Yes | **HashMap** instance whose elements are to be added to the current HashMap. |
+| map | [HashMap](arkts-arkts-util-hashmap-hashmap-c.md)&lt;K, V&gt; | Yes | **HashMap** instance whose elements are to be added to the current HashMap. |
 
 **Error codes:**
 
@@ -652,6 +666,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -672,7 +687,7 @@ Returns an iterator that contains all the values in this HashMap.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<V> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;V&gt; | Iterator obtained. |
 
 **Error codes:**
 

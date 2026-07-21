@@ -14,6 +14,7 @@ Helper functions to access photos and albums.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="acquiredebugdatabase"></a>
 ## acquireDebugDatabase
 
 ```TypeScript
@@ -41,7 +42,7 @@ Start medialibrary database backup and wait for returning with backup informatio
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Map<string, string>> | - The returning with backup information,which includes FILE_FD, FILE_NAME and FILE_SIZE. |
+| Promise&lt;Map&lt;string, string&gt;&gt; | - The returning with backup information,which includes FILE_FD, FILE_NAME and FILE_SIZE. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ Start medialibrary database backup and wait for returning with backup informatio
 | [23800201](../errorcode-medialibrary.md#23800201-unsupported-operation-type) | Unsupported operation type, this api only works on beta device. |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="batchgetphotoassetparams"></a>
 ## batchGetPhotoAssetParams
 
 ```TypeScript
@@ -148,6 +150,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="canperformdeepoptimizespace"></a>
 ## canPerformDeepOptimizeSpace
 
 ```TypeScript
@@ -172,7 +175,7 @@ Whether deep storage space optimization can be performed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates [startDeepOptimizeSpace()](photoAccessHelper.startDeepOptimizeSpace) can be invoked,**false** indicates that [startDeepOptimizeSpace()](photoAccessHelper.startDeepOptimizeSpace)cannot be invoked. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates [startDeepOptimizeSpace()](photoAccessHelper.startDeepOptimizeSpace) can be invoked,**false** indicates that [startDeepOptimizeSpace()](photoAccessHelper.startDeepOptimizeSpace)cannot be invoked. |
 
 **Error codes:**
 
@@ -198,6 +201,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="cancelphotouripermission"></a>
 ## cancelPhotoUriPermission
 
 ```TypeScript
@@ -228,7 +232,7 @@ Cancels the permission for accessing a URI from an application. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. The value **0** means the operation is successful,and the value **-1** means the opposite. |
+| Promise&lt;number&gt; | Promise used to return the result. The value **0** means the operation is successful,and the value **-1** means the opposite. |
 
 **Error codes:**
 
@@ -261,6 +265,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="cloneassetsbypath"></a>
 ## cloneAssetsByPath
 
 ```TypeScript
@@ -293,7 +298,7 @@ clone assets of filemanager to Album.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Returns successed assets URI. |
+| Promise&lt;string[]&gt; | Returns successed assets URI. |
 
 **Error codes:**
 
@@ -323,6 +328,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="clonetoalbum"></a>
 ## cloneToAlbum
 
 ```TypeScript
@@ -355,7 +361,7 @@ clone assets to Album.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset[]> | Returns list of successful assets. |
+| Promise&lt;PhotoAsset[]&gt; | Returns list of successful assets. |
 
 **Error codes:**
 
@@ -396,6 +402,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="clonetodir"></a>
 ## cloneToDir
 
 ```TypeScript
@@ -428,7 +435,7 @@ clone assets of medialibrary sandbox to directory of filemanager.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Returns successed assets path. |
+| Promise&lt;string[]&gt; | Returns successed assets path. |
 
 **Error codes:**
 
@@ -466,6 +473,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="convertassettocompatibleasset"></a>
 ## convertAssetToCompatibleAsset
 
 ```TypeScript
@@ -488,21 +496,22 @@ Convert Asset Attributes to Compatibility Attributes
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | need to be converted. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | need to be converted. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PhotoAsset>> | Promise used to return Converted assets. |
+| Promise&lt;Array&lt;PhotoAsset&gt;&gt; | Promise used to return Converted assets. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
-| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:<br>1. Invalid Array&lt;PhotoAsset&gt;. |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:<br>1. Invalid Array<PhotoAsset>. |
 
+<a id="converttoasset"></a>
 ## convertToAsset
 
 ```TypeScript
@@ -533,7 +542,7 @@ Convert to PhotoAsset from path of filemanagerr.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset> | Returns successed asset. |
+| Promise&lt;PhotoAsset&gt; | Returns successed asset. |
 
 **Error codes:**
 
@@ -561,6 +570,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createalbum"></a>
 ## createAlbum
 
 ```TypeScript
@@ -597,7 +607,7 @@ The album name must meet the following requirements:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the album to create. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Album> | Yes | Callback used to return the created album instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Album&gt; | Yes | Callback used to return the created album instance. |
 
 **Error codes:**
 
@@ -629,6 +639,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createalbum-1"></a>
 ## createAlbum
 
 ```TypeScript
@@ -670,7 +681,7 @@ The album name must meet the following requirements:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Album> | Promise used to return the created album instance. |
+| Promise&lt;Album&gt; | Promise used to return the created album instance. |
 
 **Error codes:**
 
@@ -702,6 +713,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createasset"></a>
 ## createAsset
 
 ```TypeScript
@@ -735,7 +747,7 @@ For API versions 10 to 17, the following characters are considered invalid: . ..
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | displayName | string | Yes | File name of the image or video to create. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PhotoAsset> | Yes | Callback used to return the image or video created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PhotoAsset&gt; | Yes | Callback used to return the image or video created. |
 
 **Error codes:**
 
@@ -768,6 +780,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createasset-1"></a>
 ## createAsset
 
 ```TypeScript
@@ -806,7 +819,7 @@ For API versions 10 to 17, the following characters are considered invalid: . ..
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset> | Promise used to return the created image and video asset. |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the created image and video asset. |
 
 **Error codes:**
 
@@ -838,6 +851,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createasset-2"></a>
 ## createAsset
 
 ```TypeScript
@@ -877,7 +891,7 @@ For API versions 10 to 17, the following characters are considered invalid: . ..
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset> | Promise used to return the created image and video asset. |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the created image and video asset. |
 
 **Error codes:**
 
@@ -912,6 +926,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createasset-3"></a>
 ## createAsset
 
 ```TypeScript
@@ -946,7 +961,7 @@ For API versions 10 to 17, the following characters are considered invalid: . ..
 | --- | --- | --- | --- |
 | displayName | string | Yes | File name of the image or video to create. |
 | options | [PhotoCreateOptions](arkts-medialibrary-photoaccesshelper-photocreateoptions-i-sys.md) | Yes | Options for creating an image or video asset. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PhotoAsset> | Yes | Callback used to return the image or video created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PhotoAsset&gt; | Yes | Callback used to return the image or video created. |
 
 **Error codes:**
 
@@ -982,6 +997,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createassetsforapp"></a>
 ## createAssetsForApp
 
 ```TypeScript
@@ -1007,13 +1023,13 @@ Creates media assets for an application with the specified token ID. The returne
 | bundleName | string | Yes | Bundle name of the target application. |
 | appName | string | Yes | Name of the target application. |
 | tokenId | number | Yes | Token ID of the target application. |
-| photoCreationConfigs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoCreationConfig> | Yes | Configuration for creating (saving) the media assets in the media library. |
+| photoCreationConfigs | Array&lt;PhotoCreationConfig&gt; | Yes | Configuration for creating (saving) the media assets in the media library. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the URIs of the media asset files in the media library. The target application (identified by **tokenId**) can write the media assets based on the URIs without requesting the write permission. If the URIs fail to be generated, a batch creation error code will be returned.<br>The error code **-3006** means that there are invalid characters; **-2004** means that the image type does not match the file name extension; **-203** means that the file operation is abnormal. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the URIs of the media asset files in the media library. The target application (identified by **tokenId**) can write the media assets based on the URIs without requesting the write permission. If the URIs fail to be generated, a batch creation error code will be returned.<br>The error code **-3006** means that there are invalid characters; **-2004** means that the image type does not match the file name extension; **-203** means that the file operation is abnormal. |
 
 **Error codes:**
 
@@ -1053,6 +1069,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createassetsforappwithalbum"></a>
 ## createAssetsForAppWithAlbum
 
 ```TypeScript
@@ -1081,13 +1098,13 @@ Creates assets for the current application or other applications in the specifie
 | source | [PhotoCreationSource](arkts-medialibrary-photoaccesshelper-photocreationsource-i-sys.md) | Yes | Application information provided to create assets on behalf of the application. |
 | albumUri | string | Yes | URI of the album. |
 | isAuthorized | boolean | Yes | Whether to authorize other applications. **true** to authorize, **false** otherwise. |
-| photoCreationConfigs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoCreationConfig> | Yes | Configuration for creating (saving) the media assets in the media library. |
+| photoCreationConfigs | Array&lt;PhotoCreationConfig&gt; | Yes | Configuration for creating (saving) the media assets in the media library. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the URIs of the media asset files in the media library.<br>The target application (identified by **appid**) can write the media assets based on the URIs without requesting the write permission. If the URIs fail to be generated, a batch creation error code will be returned.<br>The error code **-3006** means that there are invalid characters; **-2004** means that the image type does not match the file name extension; **-203** means that the file operation is abnormal. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the URIs of the media asset files in the media library.<br>The target application (identified by **appid**) can write the media assets based on the URIs without requesting the write permission. If the URIs fail to be generated, a batch creation error code will be returned.<br>The error code **-3006** means that there are invalid characters; **-2004** means that the image type does not match the file name extension; **-203** means that the file operation is abnormal. |
 
 **Error codes:**
 
@@ -1132,6 +1149,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createassetsforappwithmode"></a>
 ## createAssetsForAppWithMode
 
 ```TypeScript
@@ -1180,13 +1198,13 @@ Creates assets with a temporary permission. This API uses a promise to return th
 | appId | string | Yes | ID of the target application. |
 | tokenId | number | Yes | Unique identifier for the temporary authorization. |
 | authorizationMode | [AuthorizationMode](arkts-medialibrary-photoaccesshelper-authorizationmode-e-sys.md) | Yes | Authorization mode. No confirmation dialog box is displayed when the application with the temporary permission saves media assets in the give period of time. |
-| photoCreationConfigs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoCreationConfig> | Yes | Configuration for creating (saving) the media assets in the media library. |
+| photoCreationConfigs | Array&lt;PhotoCreationConfig&gt; | Yes | Configuration for creating (saving) the media assets in the media library. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the URIs of the media asset files in the media library. The target application (identified by **appid**) can write the media assets based on the URIs without requesting the write permission. If the URIs fail to be generated, a batch creation error code will be returned.<br>The error code **-3006** means that there are invalid characters; **-2004** means that the image type does not match the file name extension; **-203** means that the file operation is abnormal. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the URIs of the media asset files in the media library. The target application (identified by **appid**) can write the media assets based on the URIs without requesting the write permission. If the URIs fail to be generated, a batch creation error code will be returned.<br>The error code **-3006** means that there are invalid characters; **-2004** means that the image type does not match the file name extension; **-203** means that the file operation is abnormal. |
 
 **Error codes:**
 
@@ -1229,6 +1247,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createassetswithalbum"></a>
 ## createAssetsWithAlbum
 
 ```TypeScript
@@ -1270,7 +1289,7 @@ Batch create assets,which also support to choose whether specifying an album and
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | - Returns the asset uris, which is null when creation failed. |
+| Promise&lt;string[]&gt; | - Returns the asset uris, which is null when creation failed. |
 
 **Error codes:**
 
@@ -1314,6 +1333,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="deletealbums"></a>
 ## deleteAlbums
 
 ```TypeScript
@@ -1340,8 +1360,8 @@ Deletes user albums. This API uses an asynchronous callback to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| albums | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Album> | Yes | Albums to delete. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| albums | Array&lt;Album&gt; | Yes | Albums to delete. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -1383,6 +1403,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="deletealbums-1"></a>
 ## deleteAlbums
 
 ```TypeScript
@@ -1409,13 +1430,13 @@ Deletes user albums. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| albums | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Album> | Yes | Albums to delete. |
+| albums | Array&lt;Album&gt; | Yes | Albums to delete. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1456,6 +1477,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="deleteassets"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -1482,8 +1504,8 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uriList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the media files to delete. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| uriList | Array&lt;string&gt; | Yes | URIs of the media files to delete. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -1531,6 +1553,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="deleteassets-1"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -1557,13 +1580,13 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uriList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the media files to delete. |
+| uriList | Array&lt;string&gt; | Yes | URIs of the media files to delete. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1606,6 +1629,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getalbumidbybundlename"></a>
 ## getAlbumIdByBundleName
 
 ```TypeScript
@@ -1636,7 +1660,7 @@ Get the corresponding albumId of a bundleName.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | - Return the corresponding albumId of the a bundleName. |
+| Promise&lt;number&gt; | - Return the corresponding albumId of the a bundleName. |
 
 **Error codes:**
 
@@ -1668,6 +1692,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getalbumsbyids"></a>
 ## getAlbumsByIds
 
 ```TypeScript
@@ -1690,13 +1715,13 @@ Obtains album information by album IDs. This API uses a promise to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| albumIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Array of album IDs. |
+| albumIds | Array&lt;number&gt; | Yes | Array of album IDs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Map<number, Album>> | Promise used to return the map object that contains the album information. |
+| Promise&lt;Map&lt;number, Album&gt;&gt; | Promise used to return the map object that contains the album information. |
 
 **Error codes:**
 
@@ -1729,6 +1754,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getassetcompatiblecapability"></a>
 ## getAssetCompatibleCapability
 
 ```TypeScript
@@ -1757,7 +1783,7 @@ Obtains the asset compatibility capability based on the bundle name. When an app
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AssetCompatibleCapability> | Promise used to return the specified asset compatibility capability. |
+| Promise&lt;AssetCompatibleCapability&gt; | Promise used to return the specified asset compatibility capability. |
 
 **Error codes:**
 
@@ -1783,6 +1809,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getassetcompatibleuris"></a>
 ## getAssetCompatibleUris
 
 ```TypeScript
@@ -1806,14 +1833,14 @@ Obtain the URI list to be transcoded based on bundleName, photoAsset list, and c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | The app bundleName. |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of the assets. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of the assets. |
 | compatibleFlag | number | No | Compatible configuration mask flag.<br>The value should be an integer. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the media library file uri list that needs to be transcoded. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the media library file uri list that needs to be transcoded. |
 
 **Error codes:**
 
@@ -1851,6 +1878,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getclonedalbumuris"></a>
 ## getClonedAlbumUris
 
 ```TypeScript
@@ -1875,13 +1903,13 @@ To control the size of the database table space, the system automatically delete
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| oldUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of old URIs before cloning. |
+| oldUris | Array&lt;string&gt; | Yes | Array of old URIs before cloning. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Map<string, string>> | Promise used to return a map of URIs. |
+| Promise&lt;Map&lt;string, string&gt;&gt; | Promise used to return a map of URIs. |
 
 **Error codes:**
 
@@ -1915,6 +1943,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getclonedasseturis"></a>
 ## getClonedAssetUris
 
 ```TypeScript
@@ -1939,13 +1968,13 @@ To control the size of the database table space, the system automatically delete
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| oldUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of old URIs before cloning. |
+| oldUris | Array&lt;string&gt; | Yes | Array of old URIs before cloning. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Map<string, string>> | Promise used to return a map of URIs. |
+| Promise&lt;Map&lt;string, string&gt;&gt; | Promise used to return a map of URIs. |
 
 **Error codes:**
 
@@ -1979,6 +2008,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getdataanalysisprogress"></a>
 ## getDataAnalysisProgress
 
 ```TypeScript
@@ -2007,7 +2037,7 @@ Obtains the asset analysis progress. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return a string in JSON format. The string indicates the asset analysis progress.<br>If the parameter is empty, the overall progress is returned. If the parameter is provided, the progress corresponding to the specified analysis type is returned. |
+| Promise&lt;string&gt; | Promise used to return a string in JSON format. The string indicates the asset analysis progress.<br>If the parameter is empty, the overall progress is returned. If the parameter is provided, the progress corresponding to the specified analysis type is returned. |
 
 **Error codes:**
 
@@ -2037,6 +2067,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getdeepoptimizespace"></a>
 ## getDeepOptimizeSpace
 
 ```TypeScript
@@ -2063,7 +2094,7 @@ This API is time-consuming. Before using this API, you are advised to call [canP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | - Promise used to return size. The size indicates the size of the deep storage space. |
+| Promise&lt;number&gt; | - Promise used to return size. The size indicates the size of the deep storage space. |
 
 **Error codes:**
 
@@ -2092,6 +2123,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="gethiddenalbums"></a>
 ## getHiddenAlbums
 
 ```TypeScript
@@ -2116,7 +2148,7 @@ Obtains hidden albums based on the specified display mode and retrieval options.
 | --- | --- | --- | --- |
 | mode | [HiddenPhotosDisplayMode](arkts-medialibrary-photoaccesshelper-hiddenphotosdisplaymode-e-sys.md) | Yes | Display mode of hidden albums. |
 | options | [FetchOptions](arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Retrieval options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<Album>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -2166,6 +2198,7 @@ async function getHiddenAlbumsView(phAccessHelper: photoAccessHelper.PhotoAccess
 
 ```
 
+<a id="gethiddenalbums-1"></a>
 ## getHiddenAlbums
 
 ```TypeScript
@@ -2189,7 +2222,7 @@ Obtains hidden albums based on the specified display mode. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | [HiddenPhotosDisplayMode](arkts-medialibrary-photoaccesshelper-hiddenphotosdisplaymode-e-sys.md) | Yes | Display mode of hidden albums. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<Album>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -2263,6 +2296,7 @@ async function getHiddenAlbumsView(phAccessHelper: photoAccessHelper.PhotoAccess
 
 ```
 
+<a id="gethiddenalbums-2"></a>
 ## getHiddenAlbums
 
 ```TypeScript
@@ -2292,7 +2326,7 @@ Obtains hidden albums based on the specified display mode and retrieval options.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<Album>> | Promise used to return the result. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -2360,6 +2394,7 @@ async function getHiddenAlbumsView(phAccessHelper: photoAccessHelper.PhotoAccess
 
 ```
 
+<a id="getindexconstructprogress"></a>
 ## getIndexConstructProgress
 
 ```TypeScript
@@ -2382,7 +2417,7 @@ Obtains the index construction progress. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return a string in JSON format. The string indicates the number of images that have been analyzed, the total number of images, the number of videos that have been analyzed, and the total number of videos. |
+| Promise&lt;string&gt; | Promise used to return a string in JSON format. The string indicates the number of images that have been analyzed, the total number of images, the number of videos that have been analyzed, and the total number of videos. |
 
 **Error codes:**
 
@@ -2420,6 +2455,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getphotoalbumorder"></a>
 ## getPhotoAlbumOrder
 
 ```TypeScript
@@ -2449,7 +2485,7 @@ Obtains the sorting order for system, user, and source albums. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<AlbumOrder>> | Promise used to return the sorting order. |
+| Promise&lt;FetchResult&lt;AlbumOrder&gt;&gt; | Promise used to return the sorting order. |
 
 **Error codes:**
 
@@ -2491,6 +2527,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getphotoalbums"></a>
 ## getPhotoAlbums
 
 ```TypeScript
@@ -2521,7 +2558,7 @@ Before the operation, ensure that the albums to obtain exist.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<Album>> | Promise used to return the result. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -2561,6 +2598,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getphotoassets"></a>
 ## getPhotoAssets
 
 ```TypeScript
@@ -2589,7 +2627,7 @@ Converts the **ValuesBucket** record to a **PhotoAsset** object.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset[]> | Promise used to return the PhotoAsset object array (which may be empty). |
+| Promise&lt;PhotoAsset[]&gt; | Promise used to return the PhotoAsset object array (which may be empty). |
 
 **Error codes:**
 
@@ -2627,6 +2665,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getphotoindex"></a>
 ## getPhotoIndex
 
 ```TypeScript
@@ -2652,7 +2691,7 @@ Obtains the index of an image or video in an album. This API uses an asynchronou
 | photoUri | string | Yes | URI of the media asset whose index is to be obtained. |
 | albumUri | string | Yes | Album URI, which can be an empty string. If it is an empty string, all the media assets in the Gallery are obtained by default. |
 | options | [FetchOptions](arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Retrieval options. Only one search condition or sorting mode must be set in **predicates**. If no value is set or multiple search criteria or sorting modes are set, the API cannot be called successfully. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the index obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the index obtained. |
 
 **Error codes:**
 
@@ -2707,6 +2746,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getphotoindex-1"></a>
 ## getPhotoIndex
 
 ```TypeScript
@@ -2737,7 +2777,7 @@ Obtains the index of an image or video in an album. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the index obtained. |
+| Promise&lt;number&gt; | Promise used to return the index obtained. |
 
 **Error codes:**
 
@@ -2790,6 +2830,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getpreferredcompatiblemode"></a>
 ## getPreferredCompatibleMode
 
 ```TypeScript
@@ -2818,7 +2859,7 @@ Obtains the preferred compatible mode configured by the application based on bun
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PreferredCompatibleMode> | Preferred compatible mode of the application |
+| Promise&lt;PreferredCompatibleMode&gt; | Preferred compatible mode of the application |
 
 **Error codes:**
 
@@ -2854,6 +2895,7 @@ async function getPreferredCompatibleMode(
 
 ```
 
+<a id="getsharedphotoassets"></a>
 ## getSharedPhotoAssets
 
 ```TypeScript
@@ -2882,7 +2924,7 @@ Obtains the shared photo assets.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<SharedPhotoAsset> | Shared photo assets obtained. |
+| Array&lt;SharedPhotoAsset&gt; | Shared photo assets obtained. |
 
 **Error codes:**
 
@@ -2918,6 +2960,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="grantphotouripermission"></a>
 ## grantPhotoUriPermission
 
 ```TypeScript
@@ -2964,7 +3007,7 @@ Grants an application the permission to access a URI. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. The value **0** means that the permission is granted to the application. The value **1** means that the application already has the permission. The value **-1** means that the permission fails to be granted. |
+| Promise&lt;number&gt; | Promise used to return the result. The value **0** means that the permission is granted to the application. The value **1** means that the application already has the permission. The value **-1** means that the permission fails to be granted. |
 
 **Error codes:**
 
@@ -2998,6 +3041,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="grantphotourispermission"></a>
 ## grantPhotoUrisPermission
 
 ```TypeScript
@@ -3036,7 +3080,7 @@ Grants an application the permission to access multiple URIs. This API uses a pr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | tokenId | number | Yes | ID of the target application. |
-| uriList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | A list of URIs, which cannot exceed 1000. |
+| uriList | Array&lt;string&gt; | Yes | A list of URIs, which cannot exceed 1000. |
 | photoPermissionType | [PhotoPermissionType](arkts-medialibrary-photoaccesshelper-photopermissiontype-e-sys.md) | Yes | Type of the permission to be granted. For details, see the enum. |
 | hideSensitiveType | [HideSensitiveType](arkts-medialibrary-photoaccesshelper-hidesensitivetype-e-sys.md) | Yes | Type of the information to hide. This parameter is reserved.Currently, any enumerated value of **HideSensitiveType** can be passed in. |
 
@@ -3044,7 +3088,7 @@ Grants an application the permission to access multiple URIs. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. The value **0** means that the permission is granted to the application. The value **-1** means that the permission fails to be granted. |
+| Promise&lt;number&gt; | Promise used to return the result. The value **0** means that the permission is granted to the application. The value **-1** means that the permission fails to be granted. |
 
 **Error codes:**
 
@@ -3081,6 +3125,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="iscompatibleduplicatesupported"></a>
 ## isCompatibleDuplicateSupported
 
 ```TypeScript
@@ -3109,7 +3154,7 @@ Checks whether a temporary JPEG copy should be created for an application. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Check result for whether a temporary JPEG copy should be created for the application. **true** if a temporary JPEG copy should be created, **false** otherwise. |
+| Promise&lt;boolean&gt; | Check result for whether a temporary JPEG copy should be created for the application. **true** if a temporary JPEG copy should be created, **false** otherwise. |
 
 **Error codes:**
 
@@ -3136,6 +3181,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="ismediadataready"></a>
 ## isMediaDataReady
 
 ```TypeScript
@@ -3166,7 +3212,7 @@ Checks whether the specified media data is ready.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the media data is ready, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the media data is ready, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -3199,6 +3245,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="modifyalbumdefaultcoverorder"></a>
 ## modifyAlbumDefaultCoverOrder
 
 ```TypeScript
@@ -3237,7 +3284,7 @@ modify the default cover order of album.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns void. |
+| Promise&lt;void&gt; | Returns void. |
 
 **Error codes:**
 
@@ -3276,6 +3323,7 @@ async function modifyAlbumDefaultCoverOrder(phAccessHelper: photoAccessHelper.Ph
 
 ```
 
+<a id="modifyhiddenalbumdefaultcoverorder"></a>
 ## modifyHiddenAlbumDefaultCoverOrder
 
 ```TypeScript
@@ -3314,7 +3362,7 @@ modify the default cover order of hidden album.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns void. |
+| Promise&lt;void&gt; | Returns void. |
 
 **Error codes:**
 
@@ -3352,6 +3400,7 @@ async function modifyHiddenAlbumDefaultCoverOrder(phAccessHelper: photoAccessHel
 
 ```
 
+<a id="moveassetsbypath"></a>
 ## moveAssetsByPath
 
 ```TypeScript
@@ -3384,7 +3433,7 @@ move assets of filemanager to Album.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Returns successed assets URIs. |
+| Promise&lt;string[]&gt; | Returns successed assets URIs. |
 
 **Error codes:**
 
@@ -3414,6 +3463,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="moveassetstodir"></a>
 ## moveAssetsToDir
 
 ```TypeScript
@@ -3446,7 +3496,7 @@ move assets of medialibrary sandbox to directory of filemanager.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Return the paths to the asset |
+| Promise&lt;string[]&gt; | Return the paths to the asset |
 
 **Error codes:**
 
@@ -3484,6 +3534,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="off"></a>
 ## off('hiddenPhotoChange')
 
 ```TypeScript
@@ -3507,7 +3558,7 @@ Unregisters a listener for the **'hiddenPhotoChange'** event to stop monitoring 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hiddenPhotoChange' | Yes | Event type. The value is fixed at **'hiddenPhotoChange'**. After the unregistration is complete, any change to the hidden media assets is no longer returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | No | Exact callback you previously registered with [on('hiddenPhotoChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#on-2). If this parameter is left unspecified, all listeners for the **'hiddenPhotoChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a hidden media asset changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | No | Exact callback you previously registered with [on('hiddenPhotoChange')](photoAccessHelper.PhotoAccessHelper.on(type: 'hiddenPhotoChange', callback: Callback<PhotoAssetChangeInfos>)). If this parameter is left unspecified, all listeners for the **'hiddenPhotoChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a hidden media asset changes. |
 
 **Error codes:**
 
@@ -3552,6 +3603,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
+<a id="off-1"></a>
 ## off('trashedPhotoChange')
 
 ```TypeScript
@@ -3575,7 +3627,7 @@ Unregisters a listener for the **'trashedPhotoChange'** event to stop monitoring
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'trashedPhotoChange' | Yes | Event type. The value is fixed at **'trashedPhotoChange'**. After the unregistration is complete, any change to the trashed media assets is no longer returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | No | Exact callback you previously registered with [on('trashedPhotoChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#on-3). If this parameter is left unspecified, all listeners for the **'trashedPhotoChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a trashed media asset changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | No | Exact callback you previously registered with [on('trashedPhotoChange')](photoAccessHelper.PhotoAccessHelper.on(type: 'trashedPhotoChange', callback: Callback<PhotoAssetChangeInfos>)). If this parameter is left unspecified, all listeners for the **'trashedPhotoChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a trashed media asset changes. |
 
 **Error codes:**
 
@@ -3620,6 +3672,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="off-2"></a>
 ## off('hiddenAlbumChange')
 
 ```TypeScript
@@ -3643,7 +3696,7 @@ Unregisters a listener for the **'hiddenAlbumChange'** event to stop monitoring 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hiddenAlbumChange' | Yes | Event type. The value is fixed at **'hiddenAlbumChange'**. After the unregistration is complete, any change to the hidden albums is no longer returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | No | Exact callback you previously registered with [on('hiddenAlbumChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#on-5). If this parameter is left unspecified, all listeners for the **'hiddenAlbumChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a hidden album changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | No | Exact callback you previously registered with [on('hiddenAlbumChange')](photoAccessHelper.PhotoAccessHelper.on(type: 'hiddenAlbumChange', callback: Callback<AlbumChangeInfos>)). If this parameter is left unspecified, all listeners for the **'hiddenAlbumChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a hidden album changes. |
 
 **Error codes:**
 
@@ -3688,6 +3741,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
+<a id="off-3"></a>
 ## off('trashedAlbumChange')
 
 ```TypeScript
@@ -3711,7 +3765,7 @@ Unregisters a listener for the **'trashedAlbumChange'** event to stop monitoring
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'trashedAlbumChange' | Yes | Event type. The value is fixed at **'trashedAlbumChange'**. After the unregistration is complete, any change to the trashed albums is no longer returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | No | Exact callback you previously registered with [on('trashedAlbumChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#on-6). If this parameter is left unspecified, all listeners for the **'trashedAlbumChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when an album in the trash changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | No | Exact callback you previously registered with [on('trashedAlbumChange')](photoAccessHelper.PhotoAccessHelper.on(type: 'trashedAlbumChange', callback: Callback<AlbumChangeInfos>)). If this parameter is left unspecified, all listeners for the **'trashedAlbumChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when an album in the trash changes. |
 
 **Error codes:**
 
@@ -3756,6 +3810,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="offanalysisalbumchange"></a>
 ## offAnalysisAlbumChange
 
 ```TypeScript
@@ -3780,7 +3835,7 @@ Cancels the listener for the smart analysis album. If multiple listeners are reg
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | No | Callback used to return the changed smart analysis album information. If this parameter is set, the callback listener specified during [onAnalysisAlbumChange](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#onanalysisalbumchange-1)registration is canceled. If this parameter is not set, all listeners registered by [onAnalysisAlbumChange](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#onanalysisalbumchange-1)are canceled.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a smart album changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | No | Callback used to return the changed smart analysis album information. If this parameter is set, the callback listener specified during [onAnalysisAlbumChange](photoAccessHelper.PhotoAccessHelper.onAnalysisAlbumChange(callback: Callback<AlbumChangeInfos>))registration is canceled. If this parameter is not set, all listeners registered by [onAnalysisAlbumChange](photoAccessHelper.PhotoAccessHelper.onAnalysisAlbumChange(callback: Callback<AlbumChangeInfos>))are canceled.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a smart album changes. |
 
 **Error codes:**
 
@@ -3825,6 +3880,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
+<a id="offanalysisphotochange"></a>
 ## offAnalysisPhotoChange
 
 ```TypeScript
@@ -3849,7 +3905,7 @@ Cancels the listening for the media asset changes related to the smart analysis 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | No | Callback used to return the media asset information of the corresponding smart analysis album. If this parameter is set, the callback listener specified during [onAnalysisPhotoChange](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#onanalysisphotochange-1)registration is canceled. If this parameter is not set, all listeners of [onAnalysisPhotoChange](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#onanalysisphotochange-1)are canceled.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when the assets in the smart analysis album change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | No | Callback used to return the media asset information of the corresponding smart analysis album. If this parameter is set, the callback listener specified during [onAnalysisPhotoChange](photoAccessHelper.PhotoAccessHelper.onAnalysisPhotoChange(callback: Callback<PhotoAssetChangeInfos>))registration is canceled. If this parameter is not set, all listeners of [onAnalysisPhotoChange](photoAccessHelper.PhotoAccessHelper.onAnalysisPhotoChange(callback: Callback<PhotoAssetChangeInfos>))are canceled.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when the assets in the smart analysis album change. |
 
 **Error codes:**
 
@@ -3894,6 +3950,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="on"></a>
 ## on('hiddenPhotoChange')
 
 ```TypeScript
@@ -3917,7 +3974,7 @@ Registers a listener for the **'hiddenPhotoChange'** event to monitor hidden med
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hiddenPhotoChange' | Yes | Event type. The value is fixed at **'hiddenPhotoChange'**. After the registration is complete, any change to the hidden media assets is returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | Yes | Callback used to return the hidden media asset information after change, which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('hiddenPhotoChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#off-2)to unregister all listeners or a specific one. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | Yes | Callback used to return the hidden media asset information after change, which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('hiddenPhotoChange')](photoAccessHelper.PhotoAccessHelper.off(type: 'hiddenPhotoChange', callback?: Callback<PhotoAssetChangeInfos>))to unregister all listeners or a specific one. |
 
 **Error codes:**
 
@@ -3959,6 +4016,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
+<a id="on-1"></a>
 ## on('trashedPhotoChange')
 
 ```TypeScript
@@ -3982,7 +4040,7 @@ Registers a listener for the **'trashedPhotoChange'** event to monitor media ass
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'trashedPhotoChange' | Yes | Event type. The value is fixed at **'trashedPhotoChange'**. After the registration is complete, any change to the trashed media assets is returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | Yes | Callback used to return the trashed media asset information after change, which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('trashedPhotoChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#off-3)to unregister all listeners or a specific one. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | Yes | Callback used to return the trashed media asset information after change, which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('trashedPhotoChange')](photoAccessHelper.PhotoAccessHelper.off(type: 'trashedPhotoChange', callback?: Callback<PhotoAssetChangeInfos>))to unregister all listeners or a specific one. |
 
 **Error codes:**
 
@@ -4024,6 +4082,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="on-2"></a>
 ## on('hiddenAlbumChange')
 
 ```TypeScript
@@ -4047,7 +4106,7 @@ Registers a listener for the **'hiddenAlbumChange'** event to monitor hidden alb
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hiddenAlbumChange' | Yes | Event type. The value is fixed at **'hiddenAlbumChange'**. After the registration is complete, any change to the hidden albums is returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | Yes | Callback used to return the hidden album information after change, which is [AlbumChangeInfos](arkts-medialibrary-photoaccesshelper-albumchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('hiddenAlbumChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#off-5)to unregister all listeners or a specific one. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | Yes | Callback used to return the hidden album information after change, which is [AlbumChangeInfos](arkts-medialibrary-photoaccesshelper-albumchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('hiddenAlbumChange')](photoAccessHelper.PhotoAccessHelper.off(type: 'hiddenAlbumChange', callback?: Callback<AlbumChangeInfos>))to unregister all listeners or a specific one. |
 
 **Error codes:**
 
@@ -4089,6 +4148,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
+<a id="on-3"></a>
 ## on('trashedAlbumChange')
 
 ```TypeScript
@@ -4112,7 +4172,7 @@ Registers a listener for the **'trashedAlbumChange'** event to monitor album cha
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'trashedAlbumChange' | Yes | Event type. The value is fixed at **'trashedAlbumChange'**. After the registration is complete, any change to the trashed albums is returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | Yes | Callback used to return the trashed album information after change, which is [AlbumChangeInfos](arkts-medialibrary-photoaccesshelper-albumchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('trashedAlbumChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#off-6)to unregister all listeners or a specific one. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | Yes | Callback used to return the trashed album information after change, which is [AlbumChangeInfos](arkts-medialibrary-photoaccesshelper-albumchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('trashedAlbumChange')](photoAccessHelper.PhotoAccessHelper.off(type: 'trashedAlbumChange', callback?: Callback<AlbumChangeInfos>))to unregister all listeners or a specific one. |
 
 **Error codes:**
 
@@ -4154,6 +4214,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="onanalysisalbumchange"></a>
 ## onAnalysisAlbumChange
 
 ```TypeScript
@@ -4178,7 +4239,7 @@ Listens for the smart analysis album and returns the album change result using a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | Yes | Callback used to return the [AlbumChangeInfos](arkts-medialibrary-photoaccesshelper-albumchangeinfos-i.md) about the smart analysis album.<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [offAnalysisAlbumChange](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#offanalysisalbumchange-1)to unregister all listeners or a specific one. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | Yes | Callback used to return the [AlbumChangeInfos](arkts-medialibrary-photoaccesshelper-albumchangeinfos-i.md) about the smart analysis album.<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [offAnalysisAlbumChange](photoAccessHelper.PhotoAccessHelper.offAnalysisAlbumChange(callback?: Callback<AlbumChangeInfos>))to unregister all listeners or a specific one. |
 
 **Error codes:**
 
@@ -4220,6 +4281,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
+<a id="onanalysisphotochange"></a>
 ## onAnalysisPhotoChange
 
 ```TypeScript
@@ -4244,7 +4306,7 @@ Listens for the changes of media assets associated with the smart analysis album
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | Yes | Callback used to return the [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md) of the corresponding smart analysis album.<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [offAnalysisPhotoChange](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#offanalysisphotochange-1)to unregister all listeners or a specific one. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | Yes | Callback used to return the [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md) of the corresponding smart analysis album.<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [offAnalysisPhotoChange](photoAccessHelper.PhotoAccessHelper.offAnalysisPhotoChange(callback?: Callback<PhotoAssetChangeInfos>))to unregister all listeners or a specific one. |
 
 **Error codes:**
 
@@ -4286,6 +4348,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -4314,7 +4377,7 @@ Queries data in the database using the specified SQL statement. This API does no
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | Promise used to return a **ResultSet** object. If the operation fails, an exception is thrown. |
+| Promise&lt;ResultSet&gt; | Promise used to return a **ResultSet** object. If the operation fails, an exception is thrown. |
 
 **Error codes:**
 
@@ -4349,6 +4412,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="releasedebugdatabase"></a>
 ## releaseDebugDatabase
 
 ```TypeScript
@@ -4376,7 +4440,7 @@ Release medialibrary database backup resources incluses closing backup database 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Return void. |
+| Promise&lt;void&gt; | - Return void. |
 
 **Error codes:**
 
@@ -4387,6 +4451,7 @@ Release medialibrary database backup resources incluses closing backup database 
 | [23800201](../errorcode-medialibrary.md#23800201-unsupported-operation-type) | Unsupported operation type, this api only works on beta device. |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="removeforminfo"></a>
 ## removeFormInfo
 
 ```TypeScript
@@ -4410,7 +4475,7 @@ Removes the Gallery widget information bound to a single image from the database
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | [FormInfo](../../apis-form-kit/arkts-apis/arkts-form-forminfo-forminfo-i-sys.md) | Yes | Information about the Gallery widget to save, which includes the ID of the widget and the URI of the image bound to the widget. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -4447,6 +4512,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="removeforminfo-1"></a>
 ## removeFormInfo
 
 ```TypeScript
@@ -4475,7 +4541,7 @@ Removes the Gallery widget information bound to a single image from the database
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4510,6 +4576,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="removegalleryforminfo"></a>
 ## removeGalleryFormInfo
 
 ```TypeScript
@@ -4538,7 +4605,7 @@ Removes the Gallery widget information bound to a group of images from the datab
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4570,6 +4637,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="saveforminfo"></a>
 ## saveFormInfo
 
 ```TypeScript
@@ -4593,7 +4661,7 @@ Saves the Gallery widget information bound to a single image to the database. Th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | [FormInfo](../../apis-form-kit/arkts-apis/arkts-form-forminfo-forminfo-i-sys.md) | Yes | Information about the Gallery widget to save, which includes the ID of the widget and the URI of the image bound to the widget. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -4639,6 +4707,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="saveforminfo-1"></a>
 ## saveFormInfo
 
 ```TypeScript
@@ -4667,7 +4736,7 @@ Saves the Gallery widget information bound to a single image to the database. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4711,6 +4780,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="savegalleryforminfo"></a>
 ## saveGalleryFormInfo
 
 ```TypeScript
@@ -4739,7 +4809,7 @@ Saves the Gallery widget information bound to a group of images to the database.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4791,6 +4861,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setassetcompatiblecapability"></a>
 ## setAssetCompatibleCapability
 
 ```TypeScript
@@ -4820,7 +4891,7 @@ Sets the asset compatibility capability based on the bundle name. You can obtain
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4849,6 +4920,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setphotoalbumorder"></a>
 ## setPhotoAlbumOrder
 
 ```TypeScript
@@ -4872,13 +4944,13 @@ Sets the sorting order for system, user, and source albums. This API uses a prom
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | orderStyle | number | Yes | Sorting style for albums.<br>The value **0** means the phone style, and **1** means the PC style. |
-| albumOrders | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AlbumOrder> | Yes | Array of album sorting orders. |
+| albumOrders | Array&lt;AlbumOrder&gt; | Yes | Array of album sorting orders. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -4925,6 +4997,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setpreferredcompatiblemode"></a>
 ## setPreferredCompatibleMode
 
 ```TypeScript
@@ -4954,7 +5027,7 @@ Configure the preferred compatible mode configured by the application based on b
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns void. |
+| Promise&lt;void&gt; | Returns void. |
 
 **Error codes:**
 
@@ -4988,6 +5061,7 @@ async function setPreferredCompatibleMode(
 
 ```
 
+<a id="startassetanalysis"></a>
 ## startAssetAnalysis
 
 ```TypeScript
@@ -5011,13 +5085,13 @@ Starts asset analysis.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [AnalysisType](arkts-medialibrary-photoaccesshelper-analysistype-e-sys.md) | Yes | Smart analysis type. Only **ANALYSIS_SEARCH_INDEX** is supported. |
-| assetUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Array of asset URIs.<br>- If this parameter is specified, only the given assets are analyzed.<br>- If this parameter is left blank, full analysis is performed. |
+| assetUris | Array&lt;string&gt; | No | Array of asset URIs.<br>- If this parameter is specified, only the given assets are analyzed.<br>- If this parameter is left blank, full analysis is performed. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the task ID of the service. |
+| Promise&lt;number&gt; | Promise used to return the task ID of the service. |
 
 **Error codes:**
 
@@ -5048,6 +5122,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="startassetanalysisasync"></a>
 ## startAssetAnalysisAsync
 
 ```TypeScript
@@ -5073,13 +5148,13 @@ Starts asynchronous asset analysis. This API uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [AnalysisConfig](arkts-medialibrary-photoaccesshelper-analysisconfig-i-sys.md) | Yes | Asset analysis configuration. The **uris** in the **config** parameter are obtained from the [PhotoAsset](arkts-file-photoaccesshelper.md) object. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AnalysisResult> | Yes | Callback used to return the asset analysis result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AnalysisResult&gt; | Yes | Callback used to return the asset analysis result. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the service task ID. |
+| Promise&lt;number&gt; | Promise used to return the service task ID. |
 
 **Error codes:**
 
@@ -5117,6 +5192,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="startdeepoptimizespace"></a>
 ## startDeepOptimizeSpace
 
 ```TypeScript
@@ -5143,13 +5219,13 @@ Before using this API, you are advised to call [canPerformDeepOptimizeSpace()](p
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeepOptimizeSpaceProgress> | No | Callback used to return the result`DeepOptimizeSpaceProgress` argument info, Default value: null. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeepOptimizeSpaceProgress&gt; | No | Callback used to return the result`DeepOptimizeSpaceProgress` argument info, Default value: null. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5178,6 +5254,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="startthumbnailcreationtask"></a>
 ## startThumbnailCreationTask
 
 ```TypeScript
@@ -5201,7 +5278,7 @@ Generates a thumbnail based on the specified rule.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicate | dataSharePredicates.DataSharePredicates | Yes | Rule for generating the thumbnail. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, the notification task ends, and **err** is undefined. If the task fails, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, the notification task ends, and **err** is undefined. If the task fails, **err** is an error object. |
 
 **Return value:**
 
@@ -5242,6 +5319,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="startthumbnailcreationtask-1"></a>
 ## startThumbnailCreationTask
 
 ```TypeScript
@@ -5267,8 +5345,8 @@ Generates a thumbnail based on the specified rule. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicate | dataSharePredicates.DataSharePredicates | Yes | Predicates for generating a thumbnail. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to notify that the task is complete when the operation is successful. |
-| response | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return whether there are ungenerated thumbnails. If **1** is returned, all thumbnails have been generated. If **0** is returned, some thumbnails have not been generated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to notify that the task is complete when the operation is successful. |
+| response | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return whether there are ungenerated thumbnails. If **1** is returned, all thumbnails have been generated. If **0** is returned, some thumbnails have not been generated. |
 
 **Return value:**
 
@@ -5316,6 +5394,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="stopassetanalysis"></a>
 ## stopAssetAnalysis
 
 ```TypeScript
@@ -5373,6 +5452,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="stopdeepoptimizespace"></a>
 ## stopDeepOptimizeSpace
 
 ```TypeScript
@@ -5397,7 +5477,7 @@ Stop deep optimize storage space.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -5423,6 +5503,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="stopthumbnailcreationtask"></a>
 ## stopThumbnailCreationTask
 
 ```TypeScript
@@ -5473,6 +5554,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="updategalleryforminfo"></a>
 ## updateGalleryFormInfo
 
 ```TypeScript
@@ -5501,7 +5583,7 @@ Updates the information about a Gallery widget and saves the information to the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

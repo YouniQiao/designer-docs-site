@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="removeallowednotificationbundles"></a>
 ## removeAllowedNotificationBundles
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes applications that are allowed to send notifications.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | admin indicates the enterprise admin extension ability information. |
-| bundleNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | bundleNames indicates the bundle name list of the applications. |
+| bundleNames | Array&lt;string&gt; | Yes | bundleNames indicates the bundle name list of the applications. |
 | accountId | number | Yes | accountId indicates the ID of OS account.The value must be an integer greater than or equal to 0. |
 
 **Error codes:**

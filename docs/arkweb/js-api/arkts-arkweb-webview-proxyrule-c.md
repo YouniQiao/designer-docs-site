@@ -14,6 +14,7 @@ The ProxyRule used by insertProxyRule.
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="getschemefilter"></a>
 ## getSchemeFilter
 
 ```TypeScript
@@ -36,6 +37,7 @@ Returns the scheme filter used for this rule.
 | --- | --- |
 | [ProxySchemeFilter](arkts-arkweb-webview-proxyschemefilter-e.md) | The scheme filter used for this rule. |
 
+<a id="geturl"></a>
 ## getUrl
 
 ```TypeScript

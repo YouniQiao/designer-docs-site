@@ -25,6 +25,7 @@ Vector is a linear data structure that is implemented based on arrays. When the 
 import { Vector } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -45,7 +46,7 @@ returns an ES6 iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @syscap SystemCapability.Utils.Lang |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @syscap SystemCapability.Utils.Lang |
 
 **Example**
 
@@ -71,6 +72,7 @@ while(temp != undefined) {
 
 ```
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -116,6 +118,7 @@ let result3 = vector.add(c);
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -144,6 +147,7 @@ vector.clear();
 
 ```
 
+<a id="clone"></a>
 ## clone
 
 ```TypeScript
@@ -164,7 +168,7 @@ Clones this Vector and returns a copy. The modification to the copy does not aff
 
 | Type | Description |
 | --- | --- |
-| [Vector](arkts-arkts-util-vector-vector-c.md)<T> | New **Vector** instance obtained. |
+| [Vector](arkts-arkts-util-vector-vector-c.md)&lt;T&gt; | New **Vector** instance obtained. |
 
 **Example**
 
@@ -178,6 +182,7 @@ let result = vector.clone();
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -201,6 +206,7 @@ let vector : Vector<string | number | Array<number>> = new Vector();
 
 ```
 
+<a id="converttoarray"></a>
 ## convertToArray
 
 ```TypeScript
@@ -221,7 +227,7 @@ Converts this Vector into an array.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Array obtained. |
+| Array&lt;T&gt; | Array obtained. |
 
 **Example**
 
@@ -235,6 +241,7 @@ let result = vector.convertToArray();
 
 ```
 
+<a id="copytoarray"></a>
 ## copyToArray
 
 ```TypeScript
@@ -255,8 +262,9 @@ Copies elements in this Vector into an array to overwrite elements of the same p
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| array | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Yes | Array to which the elements in the Vector will be copied. |
+| array | Array&lt;T&gt; | Yes | Array to which the elements in the Vector will be copied. |
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -277,8 +285,8 @@ Uses a callback to traverse the elements in this Vector and obtain their positio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, vector?: Vector<T>) => void | Yes | Callback invoked for replacement. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, vector?: Vector&lt;T&gt;) =&gt; void | Yes | Callback invoked for replacement. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Example**
 
@@ -294,6 +302,7 @@ vector.forEach((value : number, index ?: number) : void => {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -334,6 +343,7 @@ let result = vector.get(2);
 
 ```
 
+<a id="getcapacity"></a>
 ## getCapacity
 
 ```TypeScript
@@ -368,6 +378,7 @@ let result = vector.getCapacity();
 
 ```
 
+<a id="getfirstelement"></a>
 ## getFirstElement
 
 ```TypeScript
@@ -402,6 +413,7 @@ let result = vector.getFirstElement();
 
 ```
 
+<a id="getindexfrom"></a>
 ## getIndexFrom
 
 ```TypeScript
@@ -443,6 +455,7 @@ let result = vector.getIndexFrom(4, 3);
 
 ```
 
+<a id="getindexof"></a>
 ## getIndexOf
 
 ```TypeScript
@@ -486,6 +499,7 @@ let result = vector.getIndexOf(2);
 
 ```
 
+<a id="getlastelement"></a>
 ## getLastElement
 
 ```TypeScript
@@ -520,6 +534,7 @@ let result = vector.getLastElement();
 
 ```
 
+<a id="getlastindexfrom"></a>
 ## getLastIndexFrom
 
 ```TypeScript
@@ -561,6 +576,7 @@ let result = vector.getLastIndexFrom(4,3);
 
 ```
 
+<a id="getlastindexof"></a>
 ## getLastIndexOf
 
 ```TypeScript
@@ -604,6 +620,7 @@ let result = vector.getLastIndexOf(2);
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -642,6 +659,7 @@ let result1 = vector.has("squirrel");
 
 ```
 
+<a id="increasecapacityto"></a>
 ## increaseCapacityTo
 
 ```TypeScript
@@ -677,6 +695,7 @@ vector.increaseCapacityTo(12);
 
 ```
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -710,6 +729,7 @@ vector.insert(true, 2);
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -744,6 +764,7 @@ let result = vector.isEmpty();
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -784,6 +805,7 @@ let result = vector.remove(2);
 
 ```
 
+<a id="removebyindex"></a>
 ## removeByIndex
 
 ```TypeScript
@@ -825,6 +847,7 @@ let result = vector.removeByIndex(2);
 
 ```
 
+<a id="removebyrange"></a>
 ## removeByRange
 
 ```TypeScript
@@ -860,6 +883,7 @@ vector.removeByRange(2,4);
 
 ```
 
+<a id="replaceallelements"></a>
 ## replaceAllElements
 
 ```TypeScript
@@ -880,8 +904,8 @@ Replaces all elements in this Vector with new elements, and returns the new ones
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, vector?: Vector<T>) => T | Yes | Callback invoked for replacement. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, vector?: Vector&lt;T&gt;) =&gt; T | Yes | Callback invoked for replacement. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Example**
 
@@ -898,6 +922,7 @@ vector.replaceAllElements((value : number) : number => {
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -927,6 +952,7 @@ Replaces an element at the specified position in this Vector with a given elemen
 | --- | --- |
 | T | New element. |
 
+<a id="setlength"></a>
 ## setLength
 
 ```TypeScript
@@ -962,6 +988,7 @@ vector.setLength(2);
 
 ```
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -982,7 +1009,7 @@ Sorts elements in this Vector.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| comparator | (firstValue: T, secondValue: T) => number | No | Callback invoked for sorting. The default value is this instance. |
+| comparator | (firstValue: T, secondValue: T) =&gt; number | No | Callback invoked for sorting. The default value is this instance. |
 
 **Example**
 
@@ -998,6 +1025,7 @@ vector.sort();
 
 ```
 
+<a id="subvector"></a>
 ## subVector
 
 ```TypeScript
@@ -1025,7 +1053,7 @@ Obtains elements within a range in this Vector, including the element at the sta
 
 | Type | Description |
 | --- | --- |
-| [Vector](arkts-arkts-util-vector-vector-c.md)<T> | New **Vector** instance obtained. |
+| [Vector](arkts-arkts-util-vector-vector-c.md)&lt;T&gt; | New **Vector** instance obtained. |
 
 **Example**
 
@@ -1043,6 +1071,7 @@ let result1 = vector.subVector(2,4);
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -1077,6 +1106,7 @@ let result = vector.toString();
 
 ```
 
+<a id="trimtocurrentlength"></a>
 ## trimToCurrentLength
 
 ```TypeScript

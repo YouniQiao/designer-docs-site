@@ -4,6 +4,8 @@ This module provides the capability of displaying ads, covering native, roll, sp
 
 **Since:** 11
 
+**Decorator:** @Component
+
 <!--Device-unnamed-declare struct AdComponent--><!--Device-unnamed-declare struct AdComponent-End-->
 
 **System capability:** SystemCapability.Advertising.Ads
@@ -14,6 +16,7 @@ This module provides the capability of displaying ads, covering native, roll, sp
 import { AdComponent } from '@kit.AdsKit';
 ```
 
+<a id="build"></a>
 ## build
 
 ```TypeScript
@@ -38,7 +41,7 @@ adRenderer?: () => void
 
 Application self-rendered ad style. The application self-rendered ad style is a restricted capability. For details,please consult [Traffic Monetization Official Website Customer Support](https://developer.huawei.com/consumer/en/doc/monetize/support-0000001061434261).
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 

@@ -58,7 +58,7 @@ The value **true** means that the component has built-in events, and **false** m
 nativeEventRegistered: boolean
 ```
 
-Whether the event is bound through node event registration ([registerNodeEvent](../../../../reference/apis-arkui/capi-arkui-nativemodule-arkui-nativenodeapi-1.md#registernodeevent)).
+Whether the event is bound through node event registration ([registerNodeEvent](docroot://reference/apis-arkui/capi-arkui-nativemodule-arkui-nativenodeapi-1.md#registernodeevent)).
 
 The value **true** means that the event is bound through node event registration, and **false** means the opposite.
 
@@ -80,7 +80,7 @@ The value **true** means that the event is bound through node event registration
 nodeEventRegistered: boolean
 ```
 
-Whether the event is bound through a custom component node. For the implementation example, see [Basic Event Example](../../../../reference/apis-arkui/js-apis-arkui-frameNode.md#basic-event-example).
+Whether the event is bound through a custom component node. For the implementation example, see [Basic Event Example](docroot://reference/apis-arkui/js-apis-arkui-frameNode.md#basic-event-example).
 
 The value **true** means that the event is bound through a custom component node, and **false** means the opposite.
 

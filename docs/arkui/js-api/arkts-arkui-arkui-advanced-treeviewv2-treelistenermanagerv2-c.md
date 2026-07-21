@@ -14,6 +14,7 @@ Declare class TreeListenerManagerV2
 import { TreeListenerManagerV2, NodeParamV2, CallbackParamV2, TreeControllerV2, TreeViewV2, TreeListenerV2 } from '@kit.ArkUI';
 ```
 
+<a id="getinstance"></a>
 ## getInstance
 
 ```TypeScript
@@ -38,6 +39,7 @@ Get instance of treeListenerManagerV2.
 | --- | --- |
 | [TreeListenerManagerV2](arkts-arkui-arkui-advanced-treeviewv2-treelistenermanagerv2-c.md) | - Returns the treeListenerManagerV2 instance.@static |
 
+<a id="gettreelistener"></a>
 ## getTreeListener
 
 ```TypeScript

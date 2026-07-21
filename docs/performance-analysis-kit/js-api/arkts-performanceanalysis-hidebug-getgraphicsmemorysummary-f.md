@@ -6,6 +6,7 @@
 import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="getgraphicsmemorysummary"></a>
 ## getGraphicsMemorySummary
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the size of the GPU memory summary. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GraphicsMemorySummary> | Returns the size of the GPU memory summary, in KB. |
+| Promise&lt;GraphicsMemorySummary&gt; | Returns the size of the GPU memory summary, in KB. |
 
 **Error codes:**
 

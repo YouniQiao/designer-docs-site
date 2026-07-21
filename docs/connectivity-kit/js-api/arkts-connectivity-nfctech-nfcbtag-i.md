@@ -10,6 +10,7 @@ Provides interfaces to create an {@code NfcBTag} and perform I/O operations on t
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="getrespappdata"></a>
 ## getRespAppData
 
 ```TypeScript
@@ -32,6 +33,7 @@ Obtains the application data of a tag.
 | --- | --- |
 | number[] | Returns the application data of the tag. |
 
+<a id="getrespprotocol"></a>
 ## getRespProtocol
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="unloadcallui"></a>
 ## unloadCallUI
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unload callUI.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the unloadCallUI. |
+| Promise&lt;boolean&gt; | The promise returned by the unloadCallUI. |
 
 **Error codes:**
 

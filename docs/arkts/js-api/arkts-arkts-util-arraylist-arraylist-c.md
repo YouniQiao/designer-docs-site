@@ -14,6 +14,7 @@ ArrayList is a linear data structure that is implemented based on arrays.ArrayLi
 import { ArrayList } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains an iterator, each item of which is a JavaScript object.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ while(!temp.done) {
 
 ```
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -129,6 +131,7 @@ console.info("length:", arrayList.length);  // length: 5
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -163,6 +166,7 @@ arrayList.clear();
 
 ```
 
+<a id="clone"></a>
 ## clone
 
 ```TypeScript
@@ -183,7 +187,7 @@ Clones this ArrayList and returns a copy. The modification to the copy does not 
 
 | Type | Description |
 | --- | --- |
-| [ArrayList](arkts-arkts-util-arraylist-arraylist-c.md)<T> | New **ArrayList** instance obtained. |
+| [ArrayList](arkts-arkts-util-arraylist-arraylist-c.md)&lt;T&gt; | New **ArrayList** instance obtained. |
 
 **Error codes:**
 
@@ -204,6 +208,7 @@ console.info("result = ", result.length); // result = 4
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -233,6 +238,7 @@ let arrayList = new ArrayList<string | number>();
 
 ```
 
+<a id="converttoarray"></a>
 ## convertToArray
 
 ```TypeScript
@@ -253,7 +259,7 @@ Converts this ArrayList into an array.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Array obtained. |
+| Array&lt;T&gt; | Array obtained. |
 
 **Error codes:**
 
@@ -274,6 +280,7 @@ console.info("result = ", result); // result =  2,4,5,4
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -294,8 +301,8 @@ Uses a callback to traverse each element in the **ArrayList** instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, arrlist?: ArrayList<T>) => void | Yes | Callback invoked for the replacement. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, arrlist?: ArrayList&lt;T&gt;) =&gt; void | Yes | Callback invoked for the replacement. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -321,6 +328,7 @@ arrayList.forEach((value: number, index?: number) => {
 
 ```
 
+<a id="getcapacity"></a>
 ## getCapacity
 
 ```TypeScript
@@ -362,6 +370,7 @@ console.info("result = ", result); // result = 10
 
 ```
 
+<a id="getindexof"></a>
 ## getIndexOf
 
 ```TypeScript
@@ -412,6 +421,7 @@ console.info("result = ", result); // result = 0
 
 ```
 
+<a id="getlastindexof"></a>
 ## getLastIndexOf
 
 ```TypeScript
@@ -462,6 +472,7 @@ console.info("result = ", result); // result = 5
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -506,6 +517,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="increasecapacityto"></a>
 ## increaseCapacityTo
 
 ```TypeScript
@@ -548,6 +560,7 @@ console.info("result = ", arrayList.length); // result = 4
 
 ```
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -589,6 +602,7 @@ console.info("length:", arrayList.length);  // length: 3
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -630,6 +644,7 @@ console.info("result = ", result); // result =  false
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -677,6 +692,7 @@ console.info("result = ", result); // result =  true
 
 ```
 
+<a id="removebyindex"></a>
 ## removeByIndex
 
 ```TypeScript
@@ -726,6 +742,7 @@ console.info("result = ", result); // result = 5
 
 ```
 
+<a id="removebyrange"></a>
 ## removeByRange
 
 ```TypeScript
@@ -768,6 +785,7 @@ arrayList.removeByRange(2, 4);
 
 ```
 
+<a id="replaceallelements"></a>
 ## replaceAllElements
 
 ```TypeScript
@@ -788,8 +806,8 @@ Replaces all elements in this ArrayList with new elements, and returns the new o
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, arrlist?: ArrayList<T>) => T | Yes | Callback invoked for the replacement. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, arrlist?: ArrayList&lt;T&gt;) =&gt; T | Yes | Callback invoked for the replacement. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -812,6 +830,7 @@ arrayList.replaceAllElements((value: number): number => {
 
 ```
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -832,7 +851,7 @@ Sorts elements in an ArrayList according to the order defined by the specified c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| comparator | [ArrayListComparatorFn](arkts-arkts-arraylistcomparatorfn-t.md)<T> | No | Callback invoked for sorting. The default value is the callback function for sorting elements in ascending order.<br> There has been a compatibility change since API version 23. In API version 22 and earlier versions, the type is `(firstValue: T, secondValue: T) =&gt; number`.<br>**Since:** 23 |
+| comparator | [ArrayListComparatorFn](arkts-arkts-arraylistcomparatorfn-t.md)&lt;T&gt; | No | Callback invoked for sorting. The default value is the callback function for sorting elements in ascending order.<br> There has been a compatibility change since API version 23. In API version 22 and earlier versions, the type is `(firstValue: T, secondValue: T) => number`.<br>**Since:** 23 |
 
 **Error codes:**
 
@@ -854,6 +873,7 @@ arrayList.sort();
 
 ```
 
+<a id="subarraylist"></a>
 ## subArrayList
 
 ```TypeScript
@@ -881,7 +901,7 @@ Obtains elements from this **ArrayList** within the range [fromIndex, toIndex) a
 
 | Type | Description |
 | --- | --- |
-| [ArrayList](arkts-arkts-util-arraylist-arraylist-c.md)<T> | New **ArrayList** instance obtained. |
+| [ArrayList](arkts-arkts-util-arraylist-arraylist-c.md)&lt;T&gt; | New **ArrayList** instance obtained. |
 
 **Error codes:**
 
@@ -903,6 +923,7 @@ console.info("result = ", result.length); // result = 2
 
 ```
 
+<a id="trimtocurrentlength"></a>
 ## trimToCurrentLength
 
 ```TypeScript

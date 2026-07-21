@@ -1,5 +1,6 @@
 # getWantAgent
 
+<a id="getwantagent"></a>
 ## getWantAgent
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains a WantAgent object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | [WantAgentInfo](arkts-ability-wantagent-wantagentinfo-t.md) | Yes | about the WantAgent object to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WantAgent> | Yes | Callback method for obtaining the user ID of WantAgent instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WantAgent&gt; | Yes | Callback method for obtaining the user ID of WantAgent instance. |
 
 **Example**
 
@@ -72,6 +73,7 @@ wantAgent.getWantAgent({
 ```
 
 
+<a id="getwantagent-1"></a>
 ## getWantAgent
 
 ```TypeScript
@@ -102,7 +104,7 @@ Obtains a WantAgent object.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WantAgent> | Returns the created {@link WantAgent} object. |
+| Promise&lt;WantAgent&gt; | Returns the created {@link WantAgent} object. |
 
 **Example**
 

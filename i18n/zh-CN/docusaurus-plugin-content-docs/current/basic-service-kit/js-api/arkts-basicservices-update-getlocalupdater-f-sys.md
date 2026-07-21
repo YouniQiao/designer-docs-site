@@ -6,6 +6,7 @@
 import { update } from '@kit.BasicServicesKit';
 ```
 
+<a id="getlocalupdater"></a>
 ## getLocalUpdater
 
 ```TypeScript

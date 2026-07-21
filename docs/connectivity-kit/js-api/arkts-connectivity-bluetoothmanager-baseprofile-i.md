@@ -18,6 +18,7 @@ Base interface of profile.
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getconnectiondevices"></a>
 ## getConnectionDevices
 
 ```TypeScript
@@ -44,7 +45,7 @@ Obtains the connected devices list of profile.On API 10 and above, the permissio
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Returns the address of connected devices list. |
+| Array&lt;string&gt; | Returns the address of connected devices list. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ try {
 
 ```
 
+<a id="getdevicestate"></a>
 ## getDeviceState
 
 ```TypeScript

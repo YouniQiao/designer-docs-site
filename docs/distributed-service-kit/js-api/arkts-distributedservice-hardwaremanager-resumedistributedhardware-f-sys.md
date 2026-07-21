@@ -6,6 +6,7 @@
 import { hardwareManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="resumedistributedhardware"></a>
 ## resumeDistributedHardware
 
 ```TypeScript
@@ -34,7 +35,7 @@ Resumes the distributed hardware service on the controlled device. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

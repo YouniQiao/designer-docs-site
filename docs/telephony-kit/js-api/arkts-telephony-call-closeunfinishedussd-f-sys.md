@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="closeunfinishedussd"></a>
 ## closeUnfinishedUssd
 
 ```TypeScript
@@ -29,7 +30,7 @@ Close unfinished ussd.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of closeUnfinishedUssd. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of closeUnfinishedUssd. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ call.closeUnfinishedUssd(slotId, (err: BusinessError) => {
 ```
 
 
+<a id="closeunfinishedussd-1"></a>
 ## closeUnfinishedUssd
 
 ```TypeScript
@@ -88,7 +90,7 @@ Close unfinished ussd.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the closeUnfinishedUssd. |
+| Promise&lt;void&gt; | The promise returned by the closeUnfinishedUssd. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Implements audio-haptic playback. Before calling any API in AudioHapticPlayer, y
 import { audioHaptic } from '@kit.AudioKit';
 ```
 
+<a id="ismuted"></a>
 ## isMuted
 
 ```TypeScript
@@ -55,6 +56,7 @@ let result: boolean = audioHapticPlayerInstance.isMuted(audioHapticType);
 
 ```
 
+<a id="off"></a>
 ## off('endOfStream')
 
 ```TypeScript
@@ -74,7 +76,7 @@ Unsubscribes from the EOS event. This API uses an asynchronous callback to retur
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'endOfStream' | Yes | Event type. The event **'endOfStream'** is triggered when the audio stream playback ends. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback that returns no value. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback that returns no value. |
 
 **Example**
 
@@ -93,6 +95,7 @@ audioHapticPlayerInstance.off('endOfStream', endOfStreamCallback);
 
 ```
 
+<a id="off-1"></a>
 ## off('audioInterrupt')
 
 ```TypeScript
@@ -112,7 +115,7 @@ Unsubscribes from the audio interruption event. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'audioInterrupt' | Yes | Event type. The event **'audioInterrupt'** is triggered when the audio focus is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<audio.InterruptEvent> | No | Callback used to return the event information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;audio.InterruptEvent&gt; | No | Callback used to return the event information. |
 
 **Example**
 
@@ -177,6 +180,7 @@ audioHapticPlayerInstance.off('audioInterrupt', audioInterruptCallback);
 
 ```
 
+<a id="on"></a>
 ## on('endOfStream')
 
 ```TypeScript
@@ -196,7 +200,7 @@ Subscribes to end of stream (EOS) event, which is triggered when the audio strea
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'endOfStream' | Yes | Event type. The event **'endOfStream'** is triggered when the audio stream playback ends. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -207,6 +211,7 @@ audioHapticPlayerInstance.on('endOfStream', () => {
 
 ```
 
+<a id="on-1"></a>
 ## on('audioInterrupt')
 
 ```TypeScript
@@ -226,7 +231,7 @@ Subscribes to the audio interruption event, which is triggered when the audio fo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'audioInterrupt' | Yes | Event type. The event **'audioInterrupt'** is triggered when the audio focus is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<audio.InterruptEvent> | Yes | Callback used to return the event information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;audio.InterruptEvent&gt; | Yes | Callback used to return the event information. |
 
 **Example**
 
@@ -284,6 +289,7 @@ audioHapticPlayerInstance.on('audioInterrupt', (interruptEvent: audio.InterruptE
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -302,7 +308,7 @@ Releases this audio-haptic player. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -323,6 +329,7 @@ audioHapticPlayerInstance.release().then(() => {
 
 ```
 
+<a id="setloop"></a>
 ## setLoop
 
 ```TypeScript
@@ -351,7 +358,7 @@ Sets this audio-haptic player to play in a loop. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -372,6 +379,7 @@ audioHapticPlayerInstance.setLoop(true).then(() => {
 
 ```
 
+<a id="setvolume"></a>
 ## setVolume
 
 ```TypeScript
@@ -400,7 +408,7 @@ Sets the volume for this audio-haptic player. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -423,6 +431,7 @@ audioHapticPlayerInstance.setVolume(0.5).then(() => {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -441,7 +450,7 @@ Starts playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -464,6 +473,7 @@ audioHapticPlayerInstance.start().then(() => {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -482,7 +492,7 @@ Stops playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

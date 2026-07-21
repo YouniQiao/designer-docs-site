@@ -1,5 +1,6 @@
 # getId
 
+<a id="getid"></a>
 ## getId
 
 ```TypeScript

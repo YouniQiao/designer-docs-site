@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="setdisplaysurface"></a>
 ## setDisplaySurface
 
 ```TypeScript
@@ -35,7 +36,7 @@ Set display surface when video call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setDisplayWindow. |
+| Promise&lt;void&gt; | The promise returned by the setDisplayWindow. |
 
 **Error codes:**
 

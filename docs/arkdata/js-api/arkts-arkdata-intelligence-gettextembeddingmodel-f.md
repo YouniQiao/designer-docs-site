@@ -6,6 +6,7 @@
 import { intelligence } from '@kit.ArkData';
 ```
 
+<a id="gettextembeddingmodel"></a>
 ## getTextEmbeddingModel
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains a text embedding model.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<TextEmbedding> | The promise returned by the function. |
+| Promise&lt;TextEmbedding&gt; | The promise returned by the function. |
 
 **Error codes:**
 

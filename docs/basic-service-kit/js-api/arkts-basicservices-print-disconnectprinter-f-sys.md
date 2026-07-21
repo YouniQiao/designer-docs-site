@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="disconnectprinter"></a>
 ## disconnectPrinter
 
 ```TypeScript
@@ -29,7 +30,7 @@ Disconnects from the specified printer. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | printerId | string | Yes | Printer ID. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ print.disconnectPrinter(printerId, (err: BusinessError) => {
 ```
 
 
+<a id="disconnectprinter-1"></a>
 ## disconnectPrinter
 
 ```TypeScript
@@ -85,7 +87,7 @@ Disconnects from the specified printer. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

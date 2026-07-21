@@ -23,8 +23,8 @@ Defines a callback used to return the cause of the persistence failure.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key of the error. |
-| reason | 'quota' \| 'serialization' \| 'unknown' | Yes | Reason of the error. |
-| message | string | Yes | Extra information about the error. |
+| key | string | Yes | Key of the error.  |
+| reason | 'quota' \| 'serialization' \| 'unknown' | Yes | Reason of the error.  |
+| message | string | Yes | Extra information about the error.  |
 | oldValue | string | No | Old serialized data stored on the disk when deserialization fails. |
 

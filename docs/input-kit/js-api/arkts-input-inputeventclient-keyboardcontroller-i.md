@@ -16,6 +16,7 @@ Provides the capability of simulating key operations. The simulated key operatio
 import { inputEventClient } from '@kit.InputKit';
 ```
 
+<a id="presskey"></a>
 ## pressKey
 
 ```TypeScript
@@ -44,7 +45,7 @@ Presses a key. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -88,6 +89,7 @@ struct Index {
 
 ```
 
+<a id="releasekey"></a>
 ## releaseKey
 
 ```TypeScript
@@ -116,7 +118,7 @@ Releases a key. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -18,6 +18,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 import { ArcSwiperAttribute, ArcSwiper, ArcDirection, ArcSwiperController, ArcDotIndicator } from '@kit.ArkUI';
 ```
 
+<a id="customcontenttransition"></a>
 ## customContentTransition
 
 ```TypeScript
@@ -40,7 +41,7 @@ During finger-following swipes and post-release transition animations, the [Swip
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| transition | [Optional](../arkts-components/arkts-arkui-optional-t.md)<SwiperContentAnimatedTransition> | Yes | Information about the custom page transition animation. |
+| transition | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;SwiperContentAnimatedTransition&gt; | Yes | Information about the custom page transition animation. |
 
 **Return value:**
 
@@ -48,6 +49,7 @@ During finger-following swipes and post-release transition animations, the [Swip
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="digitalcrownsensitivity"></a>
 ## digitalCrownSensitivity
 
 ```TypeScript
@@ -68,7 +70,7 @@ Sets the sensitivity to the digital crown rotation.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sensitivity | [Optional](../arkts-components/arkts-arkui-optional-t.md)<CrownSensitivity> | Yes | Sensitivity to the digital crown rotation.<br>Default value:**CrownSensitivity.MEDIUM**. |
+| sensitivity | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;CrownSensitivity&gt; | Yes | Sensitivity to the digital crown rotation.<br>Default value:**CrownSensitivity.MEDIUM**. |
 
 **Return value:**
 
@@ -76,6 +78,7 @@ Sets the sensitivity to the digital crown rotation.
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="disableswipe"></a>
 ## disableSwipe
 
 ```TypeScript
@@ -96,7 +99,7 @@ Sets whether to disable the swipe feature.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| disabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | Whether to disable the swipe feature. The value **true** means to disable the feature, and **false** means the opposite.<br>Default value: **false** |
+| disabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to disable the swipe feature. The value **true** means to disable the feature, and **false** means the opposite.<br>Default value: **false** |
 
 **Return value:**
 
@@ -104,6 +107,7 @@ Sets whether to disable the swipe feature.
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="disabletransitionanimation"></a>
 ## disableTransitionAnimation
 
 ```TypeScript
@@ -124,7 +128,7 @@ Sets whether to disable the transition animation.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| disabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | Whether to disable the transition animation.<br>**true**: Disable the animation effect. **false**: Do not disable the animation effect.<br>If the input parameter is invalid, the value **false** is used. |
+| disabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to disable the transition animation.<br>**true**: Disable the animation effect. **false**: Do not disable the animation effect.<br>If the input parameter is invalid, the value **false** is used. |
 
 **Return value:**
 
@@ -132,6 +136,7 @@ Sets whether to disable the transition animation.
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="duration"></a>
 ## duration
 
 ```TypeScript
@@ -152,7 +157,7 @@ Sets the duration of the animation for child component switching.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| duration | [Optional](../arkts-components/arkts-arkui-optional-t.md)<number> | Yes | Duration of the autoplay for child component switching.<br>Default value:**400**<br>Unit: ms |
+| duration | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Duration of the autoplay for child component switching.<br>Default value:**400**<br>Unit: ms |
 
 **Return value:**
 
@@ -160,13 +165,14 @@ Sets the duration of the animation for child component switching.
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="effectmode"></a>
 ## effectMode
 
 ```TypeScript
 effectMode(edgeEffect: Optional<EdgeEffect>): ArcSwiperAttribute
 ```
 
-Sets the effect used when the scroll boundary is reached. For details about the supported effects, see [EdgeEffect](arkts-arkui-enums-edgeeffect-e.md). The setting does not take effect when configured using the controller API.
+Sets the effect used when the scroll boundary is reached. For details about the supported effects, see [EdgeEffect](arkts-arkui-edgeeffect-e.md). The setting does not take effect when configured using the controller API.
 
 **Since:** 18
 
@@ -180,7 +186,7 @@ Sets the effect used when the scroll boundary is reached. For details about the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| edgeEffect | [Optional](../arkts-components/arkts-arkui-optional-t.md)<EdgeEffect> | Yes | Effect used when the component is at one of the edges.<br>Default value: **EdgeEffect.Spring** |
+| edgeEffect | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;EdgeEffect&gt; | Yes | Effect used when the component is at one of the edges.<br>Default value: **EdgeEffect.Spring** |
 
 **Return value:**
 
@@ -188,6 +194,7 @@ Sets the effect used when the scroll boundary is reached. For details about the 
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="index"></a>
 ## index
 
 ```TypeScript
@@ -208,7 +215,7 @@ Sets the index of the child component currently displayed in the container. If t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | [Optional](../arkts-components/arkts-arkui-optional-t.md)<number> | Yes | Index of the child component currently displayed in the container.<br>If **index** is set to **undefined**, the value **0** is used. |
+| index | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Index of the child component currently displayed in the container.<br>If **index** is set to **undefined**, the value **0** is used. |
 
 **Return value:**
 
@@ -216,6 +223,7 @@ Sets the index of the child component currently displayed in the container. If t
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="indicator"></a>
 ## indicator
 
 ```TypeScript
@@ -236,7 +244,7 @@ Sets the style of the arc dot navigation indicator.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ArcDotIndicator \| boolean> | Yes | Style of the arc dot navigation indicator.<br> -**ArcDotIndicator**: properties and behavior of the arc dot navigation indicator.<br> - **boolean**: whether to enable the arc dot navigation indicator. **true** to enable, **false** otherwise.<br> Default value: **true**<br> Default type: **ArcDotIndicator** |
+| style | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ArcDotIndicator \| boolean&gt; | Yes | Style of the arc dot navigation indicator.<br> -**ArcDotIndicator**: properties and behavior of the arc dot navigation indicator.<br> - **boolean**: whether to enable the arc dot navigation indicator. **true** to enable, **false** otherwise.<br> Default value: **true**<br> Default type: **ArcDotIndicator** |
 
 **Return value:**
 
@@ -244,6 +252,7 @@ Sets the style of the arc dot navigation indicator.
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onanimationend"></a>
 ## onAnimationEnd
 
 ```TypeScript
@@ -252,7 +261,7 @@ onAnimationEnd(handler: Optional<AnimationEndHandler>): ArcSwiperAttribute
 
 Triggered when the page transition animation ends.
 
-This event is triggered when the page transition animation of the **ArcSwiper** component ends, whether it is caused by gesture interruption or by calling **finishAnimation** through [SwiperController](../arkts-components/arkts-arkui-swiper-swipercontroller-c.md). The **index** parameter indicates the index after the animation ends.When the **ArcSwiper** component contains multiple columns, the index is of the leftmost element.
+This event is triggered when the page transition animation of the **ArcSwiper** component ends, whether it is caused by gesture interruption or by calling **finishAnimation** through [SwiperController](../arkts-components/arkts-arkui-swipercontroller-c.md). The **index** parameter indicates the index after the animation ends.When the **ArcSwiper** component contains multiple columns, the index is of the leftmost element.
 
 **Since:** 18
 
@@ -266,7 +275,7 @@ This event is triggered when the page transition animation of the **ArcSwiper** 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<AnimationEndHandler> | Yes | Triggered when the page transition animation ends. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;AnimationEndHandler&gt; | Yes | Triggered when the page transition animation ends. |
 
 **Return value:**
 
@@ -274,6 +283,7 @@ This event is triggered when the page transition animation of the **ArcSwiper** 
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onanimationstart"></a>
 ## onAnimationStart
 
 ```TypeScript
@@ -294,7 +304,7 @@ Triggered when the page transition animation starts.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<AnimationStartHandler> | Yes | Triggered when the page transition animation starts. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;AnimationStartHandler&gt; | Yes | Triggered when the page transition animation starts. |
 
 **Return value:**
 
@@ -302,6 +312,7 @@ Triggered when the page transition animation starts.
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -310,7 +321,7 @@ onChange(handler: Optional<IndexChangedHandler>): ArcSwiperAttribute
 
 Triggered when the index of the currently displayed child component changes. The return value is the index of the currently displayed child component.
 
-When the **ArcSwiper** component is used together with [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md), the subpage UI update cannot be triggered in the **onChange** event.
+When the **ArcSwiper** component is used together with [LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md), the subpage UI update cannot be triggered in the **onChange** event.
 
 **Since:** 18
 
@@ -324,7 +335,7 @@ When the **ArcSwiper** component is used together with [LazyForEach](../../../..
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<IndexChangedHandler> | Yes | Callback for the index of the currently displayed element. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;IndexChangedHandler&gt; | Yes | Callback for the index of the currently displayed element. |
 
 **Return value:**
 
@@ -332,6 +343,7 @@ When the **ArcSwiper** component is used together with [LazyForEach](../../../..
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="ongestureswipe"></a>
 ## onGestureSwipe
 
 ```TypeScript
@@ -352,7 +364,7 @@ Triggered on a frame-by-frame basis when the page is turned by a swipe.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<GestureSwipeHandler> | Yes | Triggered on a frame-by-frame basis when the page is turned by a swipe. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;GestureSwipeHandler&gt; | Yes | Triggered on a frame-by-frame basis when the page is turned by a swipe. |
 
 **Return value:**
 
@@ -360,6 +372,7 @@ Triggered on a frame-by-frame basis when the page is turned by a swipe.
 | --- | --- |
 | [ArcSwiperAttribute](arkts-arkui-arkui-arcswiper-arcswiperattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="vertical"></a>
 ## vertical
 
 ```TypeScript
@@ -380,7 +393,7 @@ Sets whether vertical swiping is used.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isVertical | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | Whether vertical swiping is used.<br>The value **true** means vertical swiping, and **false** means horizontal swiping.<br>Default value: **false** |
+| isVertical | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether vertical swiping is used.<br>The value **true** means vertical swiping, and **false** means horizontal swiping.<br>Default value: **false** |
 
 **Return value:**
 

@@ -6,18 +6,19 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="downloadfile"></a>
 ## downloadFile
 
 ```TypeScript
 function downloadFile(context: BaseContext, config: DownloadConfig, callback: AsyncCallback<DownloadTask>): void
 ```
 
-Downloads a file. This API uses an asynchronous callback to return the result. HTTP is supported. You can use [on('complete'|'pause'|'remove')](arkts-basicservices-request-downloadtask-i.md#on-2)to obtain the download task state, including task completion, pause, and removal. You can also use [on('fail')](arkts-basicservices-request-downloadtask-i.md#on-5) to obtain the task download error information.
+Downloads a file. This API uses an asynchronous callback to return the result. HTTP is supported. You can use [on('complete'|'pause'|'remove')](request.DownloadTask.on(type: 'complete' | 'pause' | 'remove', callback: () => void))to obtain the download task state, including task completion, pause, and removal. You can also use [on('fail')](request.DownloadTask.on(type: 'fail', callback: (err: int) => void)) to obtain the task download error information.
 
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 9
@@ -34,7 +35,7 @@ Downloads a file. This API uses an asynchronous callback to return the result. H
 | --- | --- | --- | --- |
 | context | [BaseContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-basecontext-t.md) | Yes | Application-based context. |
 | config | [DownloadConfig](arkts-basicservices-request-downloadconfig-i.md) | Yes | Download configuration. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DownloadTask> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DownloadTask** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;DownloadTask&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DownloadTask** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -72,18 +73,19 @@ try {
 ```
 
 
+<a id="downloadfile-1"></a>
 ## downloadFile
 
 ```TypeScript
 function downloadFile(context: BaseContext, config: DownloadConfig): Promise<DownloadTask>
 ```
 
-Downloads a file. This API uses a promise to return the result. HTTP is supported. You can use [on('complete'|'pause'|'remove')](arkts-basicservices-request-downloadtask-i.md#on-2)to obtain the download task state, including task completion, pause, and removal. You can also use [on('fail')](arkts-basicservices-request-downloadtask-i.md#on-5) to obtain the task download error information.
+Downloads a file. This API uses a promise to return the result. HTTP is supported. You can use [on('complete'|'pause'|'remove')](request.DownloadTask.on(type: 'complete' | 'pause' | 'remove', callback: () => void))to obtain the download task state, including task completion, pause, and removal. You can also use [on('fail')](request.DownloadTask.on(type: 'fail', callback: (err: int) => void)) to obtain the task download error information.
 
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 9
@@ -105,7 +107,7 @@ Downloads a file. This API uses a promise to return the result. HTTP is supporte
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DownloadTask> | Promise used to return the **DownloadTask** object. |
+| Promise&lt;DownloadTask&gt; | Promise used to return the **DownloadTask** object. |
 
 **Error codes:**
 

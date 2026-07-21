@@ -8,6 +8,12 @@ type Record<K extends keyof any, T> = {
 
 Construct a type with a set of properties K of type T
 
+<!--Device-unnamed-type Record<K extends keyof any, T> = {
+    [P in K]: T;
+}--><!--Device-unnamed-type Record<K extends keyof any, T> = {
+    [P in K]: T;
+}-End-->
+
 **Property type:** {
     [P in K]: T;
 }

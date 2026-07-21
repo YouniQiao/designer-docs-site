@@ -6,6 +6,7 @@
 import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="cancelreminderondisplay"></a>
 ## cancelReminderOnDisplay
 
 ```TypeScript
@@ -30,7 +31,7 @@ Cancels the notification card displayed in the notification center with the agen
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

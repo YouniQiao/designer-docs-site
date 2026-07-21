@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="startgettingprintfile"></a>
 ## startGettingPrintFile
 
 ```TypeScript
@@ -34,7 +35,7 @@ Starts to obtain the print file. This API uses an asynchronous callback to retur
 | jobId | string | Yes | ID of the print job. |
 | printAttributes | [PrintAttributes](arkts-basicservices-print-printattributes-i.md) | Yes | Print attributes. |
 | fd | number | Yes | File descriptor. |
-| onFileStateChanged | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PrintFileCreationState> | Yes | Callback for updating the file state. |
+| onFileStateChanged | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PrintFileCreationState&gt; | Yes | Callback for updating the file state. |
 
 **Error codes:**
 

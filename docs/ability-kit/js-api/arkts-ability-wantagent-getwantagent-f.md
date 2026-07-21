@@ -6,6 +6,7 @@
 import { WantAgent } from '@kit.AbilityKit';
 ```
 
+<a id="getwantagent"></a>
 ## getWantAgent
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains a WantAgent object.This API uses an asynchronous callback to return the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | [WantAgentInfo](arkts-ability-wantagent-wantagentinfo-t.md) | Yes | Information about the WantAgent object to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WantAgent> | Yes | Callback used to return the WantAgent object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WantAgent&gt; | Yes | Callback used to return the WantAgent object. |
 
 **Error codes:**
 
@@ -94,6 +95,7 @@ try {
 ```
 
 
+<a id="getwantagent-1"></a>
 ## getWantAgent
 
 ```TypeScript
@@ -122,7 +124,7 @@ Obtains a WantAgent object.This API uses a promise to return the result.If the c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WantAgent> | Promise used to return the WantAgent object. |
+| Promise&lt;WantAgent&gt; | Promise used to return the WantAgent object. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { privacyManager } from '@kit.AbilityKit';
 ```
 
+<a id="getpermissionusedrecord"></a>
 ## getPermissionUsedRecord
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains historical permission usage records, which can be used in permission aud
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PermissionUsedResponse> | Promise used to return the queried permission usage record. |
+| Promise&lt;PermissionUsedResponse&gt; | Promise used to return the queried permission usage record. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ privacyManager.getPermissionUsedRecord(request).then((data) => {
 ```
 
 
+<a id="getpermissionusedrecord-1"></a>
 ## getPermissionUsedRecord
 
 ```TypeScript
@@ -102,7 +104,7 @@ Obtains historical permission usage records, which can be used in permission aud
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | request | [PermissionUsedRequest](arkts-ability-privacymanager-permissionusedrequest-i-sys.md) | Yes | Request for querying permission usage records. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PermissionUsedResponse> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and data is the permission usage record is obtained. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PermissionUsedResponse&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and data is the permission usage record is obtained. Otherwise,**err** is an error object. |
 
 **Error codes:**
 

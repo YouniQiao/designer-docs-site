@@ -14,6 +14,7 @@ Defines an HTTP Interceptor chain.
 import { http } from '@kit.NetworkKit';
 ```
 
+<a id="addchain"></a>
 ## addChain
 
 ```TypeScript
@@ -50,6 +51,7 @@ Add an interceptor chain to the HTTP client.
 | 2300802 | Duplicated interceptor type in the chain. |
 | [2300999](../errorcode-net-http.md#2300999-internal-error) | Internal error. |
 
+<a id="apply"></a>
 ## apply
 
 ```TypeScript
@@ -85,6 +87,7 @@ Attach the chain to the target http request.Only one chain can be attached to a 
 | 2300801 | Parameter type not supported by the interceptor. |
 | [2300999](../errorcode-net-http.md#2300999-internal-error) | Internal error. |
 
+<a id="getchain"></a>
 ## getChain
 
 ```TypeScript

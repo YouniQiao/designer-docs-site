@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="createtrustanchorswithkeystore"></a>
 ## createTrustAnchorsWithKeyStore
 
 ```TypeScript
@@ -26,14 +27,14 @@ Creates a [TrustAnchor](arkts-devicecertificate-cert-x509trustanchor-i.md) objec
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| keystore | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Raw data of P12 file, in DER format. |
+| keystore | Uint8Array | Yes | Raw data of P12 file, in DER format. |
 | pwd | string | Yes | Password. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<X509TrustAnchor>> | Promise used to return the **X509TrustAnchor** object array created. |
+| Promise&lt;Array&lt;X509TrustAnchor&gt;&gt; | Promise used to return the **X509TrustAnchor** object array created. |
 
 **Error codes:**
 

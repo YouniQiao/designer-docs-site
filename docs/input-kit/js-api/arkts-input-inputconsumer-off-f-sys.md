@@ -6,6 +6,7 @@
 import { inputConsumer } from '@kit.InputKit';
 ```
 
+<a id="off"></a>
 ## off('key')
 
 ```TypeScript
@@ -28,7 +29,7 @@ Disables listening for system hotkey change events. This API uses an asynchronou
 | --- | --- | --- | --- |
 | type | 'key' | Yes | Event type. Currently, only **key** is supported. |
 | keyOptions | [KeyOptions](../../apis-test-kit/arkts-apis/arkts-test-uitest-keyoptions-i.md) | Yes | Combination key options. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<KeyOptions> | No | Callback to unregister. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;KeyOptions&gt; | No | Callback to unregister. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 

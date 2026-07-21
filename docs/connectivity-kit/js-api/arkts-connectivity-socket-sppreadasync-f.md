@@ -6,6 +6,7 @@
 import { socket } from '@kit.ConnectivityKit';
 ```
 
+<a id="sppreadasync"></a>
 ## sppReadAsync
 
 ```TypeScript
@@ -30,7 +31,7 @@ Asynchronous interface for reading data from the socket.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Returns the promise object, used to get the spp read data. |
+| Promise&lt;ArrayBuffer&gt; | Returns the promise object, used to get the spp read data. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { cloudData } from '@kit.ArkData';
 ```
 
+<a id="exit"></a>
 ## exit
 
 ```TypeScript
@@ -27,7 +28,7 @@ Exits the share of the specified shared resource.This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sharingResource | string | Yes | Shared resource ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Result<void>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Result&lt;void&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ cloudData.sharing.exit('sharing_resource_test', ((err: BusinessError, result) =>
 ```
 
 
+<a id="exit-1"></a>
 ## exit
 
 ```TypeScript
@@ -79,7 +81,7 @@ Exits the share of the specified shared resource.This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<void>> | Promise used to return the result. |
+| Promise&lt;Result&lt;void&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 

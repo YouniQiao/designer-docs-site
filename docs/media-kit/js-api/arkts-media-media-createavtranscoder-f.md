@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createavtranscoder"></a>
 ## createAVTranscoder
 
 ```TypeScript
@@ -30,7 +31,7 @@ Creates an AVTranscoder instance. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVTranscoder> | Promise used to return the result. If the operation is successful, an AVTranscoder instance is returned; otherwise, **null** is returned. The instance can be used for video transcoding. |
+| Promise&lt;AVTranscoder&gt; | Promise used to return the result. If the operation is successful, an AVTranscoder instance is returned; otherwise, **null** is returned. The instance can be used for video transcoding. |
 
 **Error codes:**
 

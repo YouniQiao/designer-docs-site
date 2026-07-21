@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="setglobalhttpproxy"></a>
 ## setGlobalHttpProxy
 
 ```TypeScript
@@ -29,7 +30,7 @@ Set a network independent global {@link HttpProxy} proxy settings.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | httpProxy | [HttpProxy](arkts-network-ethernet-httpproxy-t.md) | Yes | Indicates the global proxy settings. For details, see {@link HttpProxy}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setGlobalHttpProxy. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setGlobalHttpProxy. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ connection.setGlobalHttpProxy(httpProxy, (err: BusinessError) => {
 ```
 
 
+<a id="setglobalhttpproxy-1"></a>
 ## setGlobalHttpProxy
 
 ```TypeScript
@@ -94,7 +96,7 @@ Set a network independent global {@link HttpProxy} proxy settings.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

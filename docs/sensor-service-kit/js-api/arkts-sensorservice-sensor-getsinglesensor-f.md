@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getsinglesensor"></a>
 ## getSingleSensor
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains information about the sensor of a specific type. This API uses an asynch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [SensorId](arkts-sensorservice-sensor-sensorid-e.md) | Yes | Sensor type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Sensor> | Yes | Callback used to return the sensor information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Sensor&gt; | Yes | Callback used to return the sensor information. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ try {
 ```
 
 
+<a id="getsinglesensor-1"></a>
 ## getSingleSensor
 
 ```TypeScript
@@ -90,7 +92,7 @@ Obtains information about the sensor of a specific type. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Sensor> | Promise used to return the sensor information. |
+| Promise&lt;Sensor&gt; | Promise used to return the sensor information. |
 
 **Error codes:**
 

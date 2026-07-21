@@ -14,6 +14,7 @@ The proxy of the UIExtension window.
 import { uiExtension } from '@kit.ArkUI';
 ```
 
+<a id="createsubwindowwithoptions"></a>
 ## createSubWindowWithOptions
 
 ```TypeScript
@@ -43,7 +44,7 @@ Creates a subwindow for this window proxy. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<window.Window> | Promise used to return the subwindow created. |
+| Promise&lt;window.Window&gt; | Promise used to return the subwindow created. |
 
 **Error codes:**
 
@@ -102,6 +103,7 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 
 ```
 
+<a id="createsubwindowwithoptions-1"></a>
 ## createSubWindowWithOptions
 
 ```TypeScript
@@ -133,7 +135,7 @@ Create subwindow.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<window.Window> | Promise used to return the subwindow. |
+| Promise&lt;window.Window&gt; | Promise used to return the subwindow. |
 
 **Error codes:**
 
@@ -191,6 +193,7 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 
 ```
 
+<a id="getwindowavoidarea"></a>
 ## getWindowAvoidArea
 
 ```TypeScript
@@ -245,6 +248,7 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 
 ```
 
+<a id="occupyevents"></a>
 ## occupyEvents
 
 ```TypeScript
@@ -273,7 +277,7 @@ Sets the events that the component (**EmbeddedComponent** or **UIExtensionCompon
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -313,6 +317,7 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 
 ```
 
+<a id="off"></a>
 ## off('avoidAreaChange')
 
 ```TypeScript
@@ -336,7 +341,7 @@ Unsubscribes from events of system avoidance area changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'avoidAreaChange' | Yes | Event type. The value is fixed at **'avoidAreaChange'**, indicating the event of changes to the area where the window cannot be displayed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<AvoidAreaInfo> | No | Callback used for unsubscription. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;AvoidAreaInfo&gt; | No | Callback used for unsubscription. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -361,6 +366,7 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 
 ```
 
+<a id="off-1"></a>
 ## off('windowSizeChange')
 
 ```TypeScript
@@ -384,7 +390,7 @@ Unsubscribes from size change events of the component (**EmbeddedComponent** or 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowSizeChange' | Yes | Event type. The value is fixed at **'windowSizeChange'**, indicating the component (**EmbeddedComponent** or **UIExtensionComponent**) size change events. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<window.Size> | No | Callback used to return the size of the current component (**EmbeddedComponent** or **UIExtensionComponent**). If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;window.Size&gt; | No | Callback used to return the size of the current component (**EmbeddedComponent** or **UIExtensionComponent**). If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -409,6 +415,7 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 
 ```
 
+<a id="off-2"></a>
 ## off('rectChange')
 
 ```TypeScript
@@ -432,7 +439,7 @@ Unsubscribes from position and size change events of the component (**EmbeddedCo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rectChange' | Yes | Event type. The value is fixed at **'rectChange'**, indicating the rectangle change event for the component (**EmbeddedComponent** or **UIExtensionComponent**). |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<RectChangeOptions> | No | Callback used to return the current rectangle change values and the reason for the change of the component (**EmbeddedComponent** or **UIExtensionComponent**). If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;RectChangeOptions&gt; | No | Callback used to return the current rectangle change values and the reason for the change of the component (**EmbeddedComponent** or **UIExtensionComponent**). If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -458,6 +465,7 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 
 ```
 
+<a id="on"></a>
 ## on('avoidAreaChange')
 
 ```TypeScript
@@ -481,7 +489,7 @@ Subscribes to events of system avoidance area changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'avoidAreaChange' | Yes | Event type. The value is fixed at **'avoidAreaChange'**, indicating the event of changes to the area where the window cannot be displayed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<AvoidAreaInfo> | Yes | Callback function that receives the information about the current avoidance area. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;AvoidAreaInfo&gt; | Yes | Callback function that receives the information about the current avoidance area. |
 
 **Error codes:**
 
@@ -509,6 +517,7 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 
 ```
 
+<a id="on-1"></a>
 ## on('windowSizeChange')
 
 ```TypeScript
@@ -532,7 +541,7 @@ Subscribes to size change events of the component (**EmbeddedComponent** or **UI
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowSizeChange' | Yes | Event type. The value is fixed at **'windowSizeChange'**, indicating the component (**EmbeddedComponent** or **UIExtensionComponent**) size change events. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<window.Size> | Yes | Callback function that receives the current component size as the input parameter. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;window.Size&gt; | Yes | Callback function that receives the current component size as the input parameter. |
 
 **Error codes:**
 
@@ -560,6 +569,7 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 
 ```
 
+<a id="on-2"></a>
 ## on('rectChange')
 
 ```TypeScript
@@ -584,7 +594,7 @@ Subscribes to position and size change events of the component (**EmbeddedCompon
 | --- | --- | --- | --- |
 | type | 'rectChange' | Yes | Event type. The value is fixed at **'rectChange'**, indicating the rectangle change event for the component (**EmbeddedComponent** or **UIExtensionComponent**). |
 | reasons | number | Yes | Reason why the position and size of the component (**EmbeddedComponent** or **UIExtensionComponent**) change. For details about the values, see [RectChangeReason](arkts-arkui-uiextension-rectchangereason-e.md). |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<RectChangeOptions> | Yes | Callback used to return the current rectangle change values and the reason for the change of the component (**EmbeddedComponent** or **UIExtensionComponent**). |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;RectChangeOptions&gt; | Yes | Callback used to return the current rectangle change values and the reason for the change of the component (**EmbeddedComponent** or **UIExtensionComponent**). |
 
 **Error codes:**
 
@@ -621,7 +631,7 @@ properties: WindowProxyProperties
 
 Information about the component (**EmbeddedComponent** or **UIExtensionComponent**).
 
-Note: Due to architecture restrictions, avoid obtaining the value in [onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1). Instead, when possible, obtain the value after receiving the [on('windowSizeChange')](arkts-arkui-uiextension-windowproxy-i.md#on-2)callback.
+Note: Due to architecture restrictions, avoid obtaining the value in [onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1). Instead, when possible, obtain the value after receiving the [on('windowSizeChange')](@ohos.arkui.uiExtension:uiExtension.WindowProxy.on(type: 'windowSizeChange', callback: Callback<window.Size>))callback.
 
 **Type:** WindowProxyProperties
 

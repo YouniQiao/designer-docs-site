@@ -1,5 +1,6 @@
 # clearMission (System API)
 
+<a id="clearmission"></a>
 ## clearMission
 
 ```TypeScript
@@ -27,7 +28,7 @@ Clears a given mission, regardless of whether it is locked. This API uses an asy
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | missionId | number | Yes | Mission ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the mission is cleared, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the mission is cleared, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -50,6 +51,7 @@ try {
 ```
 
 
+<a id="clearmission-1"></a>
 ## clearMission
 
 ```TypeScript
@@ -82,7 +84,7 @@ Clears a given mission, regardless of whether it is locked. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

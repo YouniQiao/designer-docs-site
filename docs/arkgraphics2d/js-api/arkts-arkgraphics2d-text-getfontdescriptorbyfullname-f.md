@@ -6,6 +6,7 @@
 import { text } from '@kit.ArkGraphics2D';
 ```
 
+<a id="getfontdescriptorbyfullname"></a>
 ## getFontDescriptorByFullName
 
 ```TypeScript
@@ -35,7 +36,7 @@ A font descriptor is a data structure that describes font features. It contains 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FontDescriptor> | Promise used to return the font descriptor. |
+| Promise&lt;FontDescriptor&gt; | Promise used to return the font descriptor. |
 
 **Error codes:**
 

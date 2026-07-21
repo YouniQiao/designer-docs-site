@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="off"></a>
 ## off('openDLPFile')
 
 ```TypeScript
@@ -27,7 +28,7 @@ This API is usually called to release resources when the page is destroyed or th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'openDLPFile' | Yes | Event type. It has a fixed value of **openDLPFile**, which indicates the DLP file open event. |
-| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AccessedDLPFileInfo> | No | Callback for the DLP file open event. The application will not be notified when a DLP file is opened. By default, this parameter is left blank, which unregisters all callbacks for the file open event. |
+| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AccessedDLPFileInfo&gt; | No | Callback for the DLP file open event. The application will not be notified when a DLP file is opened. By default, this parameter is left blank, which unregisters all callbacks for the file open event. |
 
 **Error codes:**
 

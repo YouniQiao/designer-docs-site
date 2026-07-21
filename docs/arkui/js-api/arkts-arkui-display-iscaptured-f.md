@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="iscaptured"></a>
 ## isCaptured
 
 ```TypeScript
@@ -44,6 +45,7 @@ ret = display.isCaptured();
 ```
 
 
+<a id="iscaptured-1"></a>
 ## isCaptured
 
 ```TypeScript
@@ -66,7 +68,7 @@ Check whether the device is captured, projected, or recorded by any app in the b
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleNameList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | The list of application bundle names that need to be checked.The max size of array is 100. |
+| bundleNameList | Array&lt;string&gt; | Yes | The list of application bundle names that need to be checked.The max size of array is 100. |
 
 **Return value:**
 

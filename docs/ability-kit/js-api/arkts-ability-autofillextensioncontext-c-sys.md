@@ -12,6 +12,7 @@ The AutoFillExtensionContext module provides the context environment for the Aut
 
 **System API:** This is a system API.
 
+<a id="reloadinmodal"></a>
 ## reloadInModal
 
 ```TypeScript
@@ -40,7 +41,7 @@ Reload autoFillExtension in modal window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

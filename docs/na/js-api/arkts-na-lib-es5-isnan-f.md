@@ -1,5 +1,6 @@
 # isNaN
 
+<a id="isnan"></a>
 ## isNaN
 
 ```TypeScript

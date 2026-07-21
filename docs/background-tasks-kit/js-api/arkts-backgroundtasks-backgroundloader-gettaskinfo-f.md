@@ -6,6 +6,7 @@
 import { backgroundLoader } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="gettaskinfo"></a>
 ## getTaskInfo
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the information of a background load task. This API returns the result v
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<TaskInfo> | Promise used to return the TaskInfo. |
+| Promise&lt;TaskInfo&gt; | Promise used to return the TaskInfo. |
 
 **Error codes:**
 

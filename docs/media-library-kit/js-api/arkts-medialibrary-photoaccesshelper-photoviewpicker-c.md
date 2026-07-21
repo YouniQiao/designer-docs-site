@@ -14,6 +14,7 @@ PhotoViewPicker provides APIs for the user to select images and videos. Before u
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="select"></a>
 ## select
 
 ```TypeScript
@@ -28,7 +29,7 @@ Starts a **photoPicker** page for the user to select one or more images or video
 > only by calling  
 > [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets-1)  
 > . For details, see  
-> [Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
+> [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri).
 
 **Since:** 10
 
@@ -48,7 +49,7 @@ Starts a **photoPicker** page for the user to select one or more images or video
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoSelectResult> | Promise used to return information about the images or videos selected. |
+| Promise&lt;PhotoSelectResult&gt; | Promise used to return information about the images or videos selected. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ Starts a **photoPicker** page for the user to select one or more images or video
 | 13900042 | Unknown error |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scene parameters validate failed, possible causes:<br>1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState.Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration;<br>2. An illegal enumeration value was passed to PhotoSelectOptions.assetCompatibleAbility.<br>**Applicable version:** 12 and later |
 
+<a id="select-1"></a>
 ## select
 
 ```TypeScript
@@ -72,7 +74,7 @@ Starts a **photoPicker** page for the user to select one or more images or video
 > only by calling  
 > [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets-1)  
 > . For details, see  
-> [Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
+> [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri).
 
 **Since:** 10
 
@@ -87,7 +89,7 @@ Starts a **photoPicker** page for the user to select one or more images or video
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | option | [PhotoSelectOptions](../../apis-core-file-kit/arkts-apis/arkts-corefile-picker-photoselectoptions-c.md) | Yes | Options for selecting images or videos. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PhotoSelectResult> | Yes | Callback used to return information about the images or videos selected. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PhotoSelectResult&gt; | Yes | Callback used to return information about the images or videos selected. |
 
 **Error codes:**
 
@@ -97,6 +99,7 @@ Starts a **photoPicker** page for the user to select one or more images or video
 | 13900042 | Unknown error |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scene parameters validate failed, possible causes:<br>1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState.Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration;<br>**Applicable version:** 12 and later |
 
+<a id="select-2"></a>
 ## select
 
 ```TypeScript
@@ -111,7 +114,7 @@ Starts a **photoPicker** page for the user to select one or more images or video
 > only by calling  
 > [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets-1)  
 > . For details, see  
-> [Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
+> [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri).
 
 **Since:** 10
 
@@ -125,7 +128,7 @@ Starts a **photoPicker** page for the user to select one or more images or video
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PhotoSelectResult> | Yes | Callback used to return information about the images or videos selected. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PhotoSelectResult&gt; | Yes | Callback used to return information about the images or videos selected. |
 
 **Error codes:**
 

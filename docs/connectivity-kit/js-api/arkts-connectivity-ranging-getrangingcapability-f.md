@@ -6,6 +6,7 @@
 import { ranging } from '@kit.ConnectivityKit';
 ```
 
+<a id="getrangingcapability"></a>
 ## getRangingCapability
 
 ```TypeScript
@@ -28,7 +29,7 @@ Queries whether the current device supports ranging capability.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RangingCapabilitySupported> | Promise used to return the result. |
+| Promise&lt;RangingCapabilitySupported&gt; | Promise used to return the result. |
 
 **Error codes:**
 

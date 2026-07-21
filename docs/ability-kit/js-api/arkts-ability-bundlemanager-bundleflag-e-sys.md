@@ -14,7 +14,7 @@ Enumerates the bundle flags, which indicate the type of bundle information to ob
 GET_BUNDLE_INFO_ONLY_WITH_LAUNCHER_ABILITY = 0x00001000
 ```
 
-Used to obtain the bundle information of the application that has only a home screen icon. It is valid only in the [getAllBundleInfo](arkts-ability-bundlemanager-getallbundleinfo-f-sys.md#getallbundleinfo-2)API.
+Used to obtain the bundle information of the application that has only a home screen icon. It is valid only in the [getAllBundleInfo](arkts-ability-bundlemanager-getallbundleinfo-f-sys.md#getallbundleinfo-1)API.
 
 **System API**: This flag can be used only in system APIs.
 
@@ -32,7 +32,7 @@ Used to obtain the bundle information of the application that has only a home sc
 GET_BUNDLE_INFO_OF_ANY_USER = 0x00002000
 ```
 
-Used to obtain the bundle information of an application installed by any user. It must be used together with **GET_BUNDLE_INFO_WITH_APPLICATION**. It is valid only in the [getBundleInfo](arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-2)and [getAllBundleInfo](arkts-ability-bundlemanager-getallbundleinfo-f-sys.md#getallbundleinfo-2)APIs.
+Used to obtain the bundle information of an application installed by any user. It must be used together with **GET_BUNDLE_INFO_WITH_APPLICATION**. It is valid only in the [getBundleInfo](arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-1)and [getAllBundleInfo](arkts-ability-bundlemanager-getallbundleinfo-f-sys.md#getallbundleinfo-1)APIs.
 
 **System API**: This flag can be used only in system APIs.
 
@@ -50,7 +50,7 @@ Used to obtain the bundle information of an application installed by any user. I
 GET_BUNDLE_INFO_EXCLUDE_CLONE = 0x00004000
 ```
 
-Used to obtain the bundle information of a main application (excluding its clones). It is valid only in the [getAllBundleInfo](arkts-ability-bundlemanager-getallbundleinfo-f-sys.md#getallbundleinfo-2)API.
+Used to obtain the bundle information of a main application (excluding its clones). It is valid only in the [getAllBundleInfo](arkts-ability-bundlemanager-getallbundleinfo-f-sys.md#getallbundleinfo-1)API.
 
 **System API**: This flag can be used only in system APIs.
 
@@ -68,7 +68,7 @@ Used to obtain the bundle information of a main application (excluding its clone
 GET_BUNDLE_INFO_WITH_CLOUD_KIT = 0x00008000
 ```
 
-Used to obtain the bundle information of an application that has device-cloud file synchronization or device-cloud structured data synchronization enabled. It is valid only in the [getAllBundleInfo](arkts-ability-bundlemanager-getallbundleinfo-f-sys.md#getallbundleinfo-2)API.
+Used to obtain the bundle information of an application that has device-cloud file synchronization or device-cloud structured data synchronization enabled. It is valid only in the [getAllBundleInfo](arkts-ability-bundlemanager-getallbundleinfo-f-sys.md#getallbundleinfo-1)API.
 
 **System API**: This flag can be used only in system APIs.
 

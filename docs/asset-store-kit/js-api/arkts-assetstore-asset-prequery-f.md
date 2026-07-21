@@ -6,6 +6,7 @@
 import { asset } from '@kit.AssetStoreKit';
 ```
 
+<a id="prequery"></a>
 ## preQuery
 
 ```TypeScript
@@ -32,7 +33,7 @@ Performs preprocessing for the asset query. This API is used when user authentic
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return a challenge value.<br>**Note**: The challenge value is used for subsequent user authentication. |
+| Promise&lt;Uint8Array&gt; | Promise used to return a challenge value.<br>**Note**: The challenge value is used for subsequent user authentication. |
 
 **Error codes:**
 

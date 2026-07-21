@@ -8,6 +8,7 @@
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="onconnect"></a>
 ## onConnect
 
 ```TypeScript
@@ -29,6 +30,7 @@ Called when a connection is set up.
 | elementName | [ElementName](arkts-ability-bundlemanager-elementname-t.md) | Yes | Element name of the target ability. |
 | remote | rpc.IRemoteObject | Yes | IRemoteObject instance used for IPC with the target ability. |
 
+<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript
@@ -49,6 +51,7 @@ Called when a connection is interrupted.
 | --- | --- | --- | --- |
 | elementName | [ElementName](arkts-ability-bundlemanager-elementname-t.md) | Yes | Element name of the target ability. |
 
+<a id="onfailed"></a>
 ## onFailed
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.MDMKit';
 ```
 
+<a id="getinstalledbundlestoragestats"></a>
 ## getInstalledBundleStorageStats
 
 ```TypeScript
@@ -29,14 +30,14 @@ Get the storage statistics of installed bundles on the device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | admin indicates the enterprise admin extension ability information. |
-| bundleNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | bundleNames indicates the list of application bundle names. |
-| accountId | number | Yes | Account ID.<br>The value must be an integer greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2)of @ ohos.account.osAccount to obtain the account ID. |
+| bundleNames | Array&lt;string&gt; | Yes | bundleNames indicates the list of application bundle names. |
+| accountId | number | Yes | Account ID.<br>The value must be an integer greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)of @ ohos.account.osAccount to obtain the account ID. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleStorageStats>> | Returns the bundle statistics of the installed applications. |
+| Promise&lt;Array&lt;BundleStorageStats&gt;&gt; | Returns the bundle statistics of the installed applications. |
 
 **Error codes:**
 

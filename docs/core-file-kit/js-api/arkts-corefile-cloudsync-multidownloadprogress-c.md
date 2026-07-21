@@ -14,6 +14,7 @@ Represents the batch download progress of a file from the Drive Kit.
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="getfailedfiles"></a>
 ## getFailedFiles
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the list of files that fail to be downloaded in batches.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FailedFileInfo> | List of file URIs that fail to be downloaded and the corresponding error types. |
+| Array&lt;FailedFileInfo&gt; | List of file URIs that fail to be downloaded and the corresponding error types. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ fileCache.startBatch(uriList, cloudSync.DownloadFileType.CONTENT).then((download
 
 ```
 
+<a id="getsuccessfulfiles"></a>
 ## getSuccessfulFiles
 
 ```TypeScript
@@ -91,7 +93,7 @@ Obtains the list of files that are successfully downloaded in batches.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of URIs of the files that are successfully downloaded. The value is an array. |
+| Array&lt;string&gt; | List of URIs of the files that are successfully downloaded. The value is an array. |
 
 **Error codes:**
 

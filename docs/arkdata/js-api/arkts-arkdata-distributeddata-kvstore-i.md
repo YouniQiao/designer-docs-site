@@ -1,6 +1,6 @@
 # KVStore
 
-Provides APIs to manage data in a KV store, for example, adding or deleting data and subscribing to data changes or completion of data sync.Before calling any method in **KVStore**, you must use [getKVStore](arkts-arkdata-distributeddata-kvmanager-i.md#getkvstore-2)to obtain a **KVStore** object.
+Provides APIs to manage data in a KV store, for example, adding or deleting data and subscribing to data changes or completion of data sync.Before calling any method in **KVStore**, you must use [getKVStore](distributedData.KVManager.getKVStore<T extends KVStore>(storeId: string, options: Options, callback: AsyncCallback<T>))to obtain a **KVStore** object.
 
 **Since:** 7
 
@@ -12,6 +12,7 @@ Provides APIs to manage data in a KV store, for example, adding or deleting data
 
 **System capability:** SystemCapability.DistributedDataManager.KVStore.Core
 
+<a id="commit"></a>
 ## commit
 
 ```TypeScript
@@ -34,7 +35,7 @@ Commits the transaction in this KV store. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -54,6 +55,7 @@ try {
 
 ```
 
+<a id="commit-1"></a>
 ## commit
 
 ```TypeScript
@@ -76,7 +78,7 @@ Commits the transaction in this KV store. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -94,6 +96,7 @@ try {
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -117,7 +120,7 @@ Deletes a KV pair from this KV store. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | key | string | Yes | Key of the KV pair to delete. It cannot be empty, and the length cannot exceed [MAX_KEY_LENGTH](arkts-arkdata-distributeddata-constants-n.md#constants). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -146,6 +149,7 @@ try {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -174,7 +178,7 @@ Deletes a KV pair from this KV store. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -199,6 +203,7 @@ try {
 
 ```
 
+<a id="deletebatch"></a>
 ## deleteBatch
 
 ```TypeScript
@@ -222,7 +227,7 @@ Deletes KV pairs in batches from this KV store. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keys | string[] | Yes | KV pairs to delete in batches. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -256,6 +261,7 @@ try {
 
 ```
 
+<a id="deletebatch-1"></a>
 ## deleteBatch
 
 ```TypeScript
@@ -284,7 +290,7 @@ Deletes KV pairs in batches from this KV store. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -322,6 +328,7 @@ try {
 
 ```
 
+<a id="enablesync"></a>
 ## enableSync
 
 ```TypeScript
@@ -345,7 +352,7 @@ Sets data sync, which can be enabled or disabled. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Whether to enable data sync. The value **true** means to enable data sync, and **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -365,6 +372,7 @@ try {
 
 ```
 
+<a id="enablesync-1"></a>
 ## enableSync
 
 ```TypeScript
@@ -393,7 +401,7 @@ Sets data sync, which can be enabled or disabled. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -411,6 +419,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -434,7 +443,7 @@ Unsubscribes from data changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'dataChange' | Yes | Event type. The value is **dataChange**, which indicates data changes. |
-| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ChangeNotification> | No | Callback to unregister. If this parameter is not specified, all callbacks for data changes will be unregistered. |
+| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ChangeNotification&gt; | No | Callback to unregister. If this parameter is not specified, all callbacks for data changes will be unregistered. |
 
 **Example**
 
@@ -458,6 +467,7 @@ class KvstoreModel {
 
 ```
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -481,7 +491,7 @@ Unsubscribes from sync completion events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'syncComplete' | Yes | Event type. The value is **syncComplete**, which indicates a sync completion event. |
-| syncCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<[string, number]>> | No | Callback to unregister. If this parameter is not specified,all callbacks for data changes will be unregistered. |
+| syncCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;[string, number]&gt;&gt; | No | Callback to unregister. If this parameter is not specified,all callbacks for data changes will be unregistered. |
 
 **Example**
 
@@ -505,6 +515,7 @@ class KvstoreModel {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -529,7 +540,7 @@ Subscribes to data changes of the specified type.
 | --- | --- | --- | --- |
 | event | 'dataChange' | Yes | Event type. The value is **dataChange**, which indicates data changes. |
 | type | [SubscribeType](../../apis-notification-kit/arkts-apis/arkts-notification-notificationextensionsubscription-subscribetype-e.md) | Yes | Type of data change. |
-| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ChangeNotification> | Yes | Callback used to return the result. |
+| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ChangeNotification&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -541,6 +552,7 @@ kvStore.on('dataChange', distributedData.SubscribeType.SUBSCRIBE_TYPE_LOCAL, fun
 
 ```
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -564,7 +576,7 @@ Subscribes to sync completion events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'syncComplete' | Yes | Event type. The value is **syncComplete**, which indicates a sync completion event. |
-| syncCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<[string, number]>> | Yes | Callback used to return a sync completion event. |
+| syncCallback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;[string, number]&gt;&gt; | Yes | Callback used to return a sync completion event. |
 
 **Example**
 
@@ -576,6 +588,7 @@ kvStore.on('syncComplete', function (data) {
 
 ```
 
+<a id="put"></a>
 ## put
 
 ```TypeScript
@@ -600,7 +613,7 @@ Adds a KV pair of the specified type to this KV store. This API uses an asynchro
 | --- | --- | --- | --- |
 | key | string | Yes | Key of the KV pair to add. It cannot be empty, and the length cannot exceed [MAX_KEY_LENGTH](arkts-arkdata-distributeddata-constants-n.md#constants). |
 | value | Uint8Array \| string \| number \| boolean | Yes | Value of the KV pair to add. The value type can be Uint8Array,number, string, or boolean. A value of the Uint8Array or string type cannot exceed [MAX_VALUE_LENGTH](arkts-arkdata-distributeddata-constants-n.md#constants). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -622,6 +635,7 @@ try {
 
 ```
 
+<a id="put-1"></a>
 ## put
 
 ```TypeScript
@@ -651,7 +665,7 @@ Adds a KV pair of the specified type to this KV store. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -671,6 +685,7 @@ try {
 
 ```
 
+<a id="putbatch"></a>
 ## putBatch
 
 ```TypeScript
@@ -694,7 +709,7 @@ Inserts KV pairs in batches to this KV store. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | entries | [Entry](arkts-arkdata-distributeddata-entry-i.md)[] | Yes | KV pairs to insert in batches. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -728,6 +743,7 @@ try {
 
 ```
 
+<a id="putbatch-1"></a>
 ## putBatch
 
 ```TypeScript
@@ -756,7 +772,7 @@ Inserts KV pairs in batches to this KV store. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -793,6 +809,7 @@ try {
 
 ```
 
+<a id="rollback"></a>
 ## rollback
 
 ```TypeScript
@@ -815,7 +832,7 @@ Rolls back the transaction in this KV store. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -835,6 +852,7 @@ try {
 
 ```
 
+<a id="rollback-1"></a>
 ## rollback
 
 ```TypeScript
@@ -857,7 +875,7 @@ Rolls back the transaction in this KV store. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -875,6 +893,7 @@ try {
 
 ```
 
+<a id="setsyncrange"></a>
 ## setSyncRange
 
 ```TypeScript
@@ -899,7 +918,7 @@ Sets the data sync range. This API uses an asynchronous callback to return the r
 | --- | --- | --- | --- |
 | localLabels | string[] | Yes | Sync labels set for the local device. |
 | remoteSupportLabels | string[] | Yes | Sync labels set for remote devices. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -917,6 +936,7 @@ try {
 
 ```
 
+<a id="setsyncrange-1"></a>
 ## setSyncRange
 
 ```TypeScript
@@ -946,7 +966,7 @@ Sets the data sync range. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -966,6 +986,7 @@ try {
 
 ```
 
+<a id="starttransaction"></a>
 ## startTransaction
 
 ```TypeScript
@@ -988,7 +1009,7 @@ Starts the transaction in this KV store. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -1028,6 +1049,7 @@ try {
 
 ```
 
+<a id="starttransaction-1"></a>
 ## startTransaction
 
 ```TypeScript
@@ -1050,7 +1072,7 @@ Starts the transaction in this KV store. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

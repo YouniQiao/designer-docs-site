@@ -610,7 +610,7 @@ Indicates that domain account status changes.
 
 When a domain user account is authenticated, deleted, or has the token updated, the common event service is triggered to publish this event carrying the system account ID, domain name, and account status.
 
-The system APIs related to this common event are **removeOsAccount**, **DomainAccountManager.auth**, and **updateAccountToken**. For details, see [@ohos.account.osAccount (System Account Management)](../../../../reference/js-apis-osAccount.md).
+The system APIs related to this common event are **removeOsAccount**, **DomainAccountManager.auth**, and **updateAccountToken**. For details, see [@ohos.account.osAccount (System Account Management)](docroot://reference/js-apis-osAccount.md).
 
 To subscribe to this common event, your application must have the ohos.permission.GET_LOCAL_ACCOUNTS permission.(This permission is available only for system applications.)
 
@@ -814,7 +814,7 @@ COMMON_EVENT_SHORTCUT_CHANGED = 'usual.event.SHORTCUT_CHANGED'
 
 Indicates that the application shortcut has changed.
 
-This common event is sent when the shortcut is changed (for example, when [shortcutManager.setShortcutVisibleForSelf](../../../../apis-ability-kit/js-apis-shortcutManager.md#shortcutmanagersetshortcutvisibleforself)of the shortcutManager module is successfully called).
+This common event is sent when the shortcut is changed (for example, when [shortcutManager.setShortcutVisibleForSelf](docroot://apis-ability-kit/js-apis-shortcutManager.md#shortcutmanagersetshortcutvisibleforself)of the shortcutManager module is successfully called).
 
 To subscribe to this common event, your application must have the ohos.permission.MANAGE_SHORTCUTS permission.
 

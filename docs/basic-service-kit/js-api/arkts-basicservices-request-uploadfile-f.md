@@ -6,18 +6,19 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="uploadfile"></a>
 ## uploadFile
 
 ```TypeScript
 function uploadFile(context: BaseContext, config: UploadConfig, callback: AsyncCallback<UploadTask>): void
 ```
 
-Uploads a file. This API uses an asynchronous callback to return the result. HTTP is supported. You can use [on('complete'|'fail')](arkts-basicservices-request-uploadtask-i.md#on-3)to obtain the upload success or error information.
+Uploads a file. This API uses an asynchronous callback to return the result. HTTP is supported. You can use [on('complete'|'fail')](request.UploadTask.on(type: 'complete' | 'fail', callback: Callback<Array<TaskState>>))to obtain the upload success or error information.
 
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 9
@@ -34,7 +35,7 @@ Uploads a file. This API uses an asynchronous callback to return the result. HTT
 | --- | --- | --- | --- |
 | context | [BaseContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-basecontext-t.md) | Yes | Application-based context. |
 | config | [UploadConfig](arkts-basicservices-request-uploadconfig-i.md) | Yes | Upload configurations. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<UploadTask> | Yes | Callback used to return the **UploadTask** object. If the operation is successful, **err** is **undefined**, and **data** is the **UploadTask** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;UploadTask&gt; | Yes | Callback used to return the **UploadTask** object. If the operation is successful, **err** is **undefined**, and **data** is the **UploadTask** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -75,18 +76,19 @@ try {
 ```
 
 
+<a id="uploadfile-1"></a>
 ## uploadFile
 
 ```TypeScript
 function uploadFile(context: BaseContext, config: UploadConfig): Promise<UploadTask>
 ```
 
-Uploads a file. This API uses a promise to return the result. HTTP is supported. You can use [on('complete'|'fail')](arkts-basicservices-request-uploadtask-i.md#on-3)to obtain the upload success or error information.
+Uploads a file. This API uses a promise to return the result. HTTP is supported. You can use [on('complete'|'fail')](request.UploadTask.on(type: 'complete' | 'fail', callback: Callback<Array<TaskState>>))to obtain the upload success or error information.
 
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 9
@@ -108,7 +110,7 @@ Uploads a file. This API uses a promise to return the result. HTTP is supported.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UploadTask> | Promise used to return the **UploadTask** object. |
+| Promise&lt;UploadTask&gt; | Promise used to return the **UploadTask** object. |
 
 **Error codes:**
 

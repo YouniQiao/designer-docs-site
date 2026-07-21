@@ -1,6 +1,6 @@
 # Task
 
-Implements an upload or download task. Before using this API, you must obtain a **Task** object, from a promise through [request.agent.create](arkts-basicservices-agent-create-f.md#create-2) or from a callback through [request.agent.create](arkts-basicservices-agent-create-f.md#create-1).
+Implements an upload or download task. Before using this API, you must obtain a **Task** object, from a promise through [request.agent.create](arkts-basicservices-agent-create-f.md#create-1) or from a callback through [request.agent.create](arkts-basicservices-agent-create-f.md#create-1).
 
 > **NOTE**  
 >  
@@ -19,6 +19,7 @@ Implements an upload or download task. Before using this API, you must obtain a 
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -30,7 +31,7 @@ Unsubscribes from task progress events.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -46,7 +47,7 @@ Unsubscribes from task progress events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'progress' | Yes | Event type.<br>- **'progress'**: task progress. |
-| callback | (progress: Progress) => void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task progress events are unregistered. |
+| callback | (progress: Progress) =&gt; void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task progress events are unregistered. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ Unsubscribes from task progress events.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | task mode error.<br>**Applicable version:** 10 and later |
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -66,7 +68,7 @@ Unsubscribes from task completion events.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -82,7 +84,7 @@ Unsubscribes from task completion events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'completed' | Yes | Event type.<br>- **'completed'**: task completion. |
-| callback | (progress: Progress) => void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task completion events are unregistered. |
+| callback | (progress: Progress) =&gt; void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task completion events are unregistered. |
 
 **Error codes:**
 
@@ -91,6 +93,7 @@ Unsubscribes from task completion events.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | Operation with wrong task mode.<br>**Applicable version:** 10 and later |
 
+<a id="off-2"></a>
 ## off
 
 ```TypeScript
@@ -102,7 +105,7 @@ Unsubscribes from task failure events.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -118,7 +121,7 @@ Unsubscribes from task failure events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'failed' | Yes | Event type.<br>- **'failed'**: task failure. |
-| callback | (progress: Progress) => void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task failure events are unregistered. |
+| callback | (progress: Progress) =&gt; void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task failure events are unregistered. |
 
 **Error codes:**
 
@@ -127,6 +130,7 @@ Unsubscribes from task failure events.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | Operation with wrong task mode.<br>**Applicable version:** 10 and later |
 
+<a id="off-3"></a>
 ## off
 
 ```TypeScript
@@ -138,7 +142,7 @@ Unsubscribes from the foreground task pause event.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 11
@@ -152,7 +156,7 @@ Unsubscribes from the foreground task pause event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'pause' | Yes | Event type.<br>- **'pause'**: task pause. |
-| callback | (progress: Progress) => void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task pause events are unregistered. |
+| callback | (progress: Progress) =&gt; void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task pause events are unregistered. |
 
 **Error codes:**
 
@@ -160,6 +164,7 @@ Unsubscribes from the foreground task pause event.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="off-4"></a>
 ## off
 
 ```TypeScript
@@ -171,7 +176,7 @@ Unsubscribes from foreground task resume events.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 11
@@ -185,7 +190,7 @@ Unsubscribes from foreground task resume events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'resume' | Yes | Event type.<br>- **'resume'**: task resume. |
-| callback | (progress: Progress) => void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task resume events are unregistered. |
+| callback | (progress: Progress) =&gt; void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task resume events are unregistered. |
 
 **Error codes:**
 
@@ -193,6 +198,7 @@ Unsubscribes from foreground task resume events.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="off-5"></a>
 ## off
 
 ```TypeScript
@@ -204,7 +210,7 @@ Unsubscribes from the task removal event.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 11
@@ -218,7 +224,7 @@ Unsubscribes from the task removal event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'remove' | Yes | Event type.<br>- **'remove'**: task removal. |
-| callback | (progress: Progress) => void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task removal events are unregistered. |
+| callback | (progress: Progress) =&gt; void | No | Callback to be invoked when the specified event occurs. If this parameter is not specified, all callbacks of the task removal events are unregistered. |
 
 **Error codes:**
 
@@ -226,6 +232,7 @@ Unsubscribes from the task removal event.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types.<br> 3. Parameter verification failed. |
 
+<a id="off-6"></a>
 ## off
 
 ```TypeScript
@@ -237,7 +244,7 @@ Unsubscribes from task response headers.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 12
@@ -253,7 +260,7 @@ Unsubscribes from task response headers.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'response' | Yes | Event type.<br>- **response**: task response. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<HttpResponse> | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;HttpResponse&gt; | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -261,6 +268,7 @@ Unsubscribes from task response headers.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="off-7"></a>
 ## off
 
 ```TypeScript
@@ -272,7 +280,7 @@ Unsubscribes from task failure events.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 20
@@ -286,7 +294,7 @@ Unsubscribes from task failure events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'faultOccur' | Yes | Event type.<br>- **'faultOccur'**: task failure. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Faults> | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Faults&gt; | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -294,6 +302,7 @@ Unsubscribes from task failure events.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="off-8"></a>
 ## off
 
 ```TypeScript
@@ -305,7 +314,7 @@ Unsubscribes from task waiting events.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 20
@@ -319,7 +328,7 @@ Unsubscribes from task waiting events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'wait' | Yes | Event type.<br>- 'wait': The task is waiting. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WaitingReason> | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WaitingReason&gt; | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -327,6 +336,7 @@ Unsubscribes from task waiting events.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -338,7 +348,7 @@ Subscribes to task progress changes. This API uses an asynchronous callback to r
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -354,7 +364,7 @@ Subscribes to task progress changes. This API uses an asynchronous callback to r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'progress' | Yes | Event type.<br>- **'progress'**: task progress. |
-| callback | (progress: Progress) => void | Yes | Callback to be invoked when the specified event occurs. |
+| callback | (progress: Progress) =&gt; void | Yes | Callback to be invoked when the specified event occurs. |
 
 **Error codes:**
 
@@ -363,6 +373,7 @@ Subscribes to task progress changes. This API uses an asynchronous callback to r
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | task mode error.<br>**Applicable version:** 10 and later |
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -374,7 +385,7 @@ Subscribes to task completion events. This API uses an asynchronous callback to 
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -390,7 +401,7 @@ Subscribes to task completion events. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'completed' | Yes | Event type.<br>- **'completed'**: task completion. |
-| callback | (progress: Progress) => void | Yes | Callback to be invoked when the specified event occurs. |
+| callback | (progress: Progress) =&gt; void | Yes | Callback to be invoked when the specified event occurs. |
 
 **Error codes:**
 
@@ -399,18 +410,19 @@ Subscribes to task completion events. This API uses an asynchronous callback to 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | task mode error.<br>**Applicable version:** 10 and later |
 
+<a id="on-2"></a>
 ## on
 
 ```TypeScript
 on(event: 'failed', callback: (progress: Progress) => void): void
 ```
 
-Subscribes to task failure events. This API uses an asynchronous callback to return the result. You can call [request.agent.show](arkts-basicservices-agent-show-f.md#show-2) to view the error cause.
+Subscribes to task failure events. This API uses an asynchronous callback to return the result. You can call [request.agent.show](arkts-basicservices-agent-show-f.md#show-1) to view the error cause.
 
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -426,7 +438,7 @@ Subscribes to task failure events. This API uses an asynchronous callback to ret
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'failed' | Yes | Event type.<br>- **'failed'**: task failure. |
-| callback | (progress: Progress) => void | Yes | Callback to be invoked when the specified event occurs. |
+| callback | (progress: Progress) =&gt; void | Yes | Callback to be invoked when the specified event occurs. |
 
 **Error codes:**
 
@@ -435,6 +447,7 @@ Subscribes to task failure events. This API uses an asynchronous callback to ret
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | Operation with wrong task mode.<br>**Applicable version:** 10 and later |
 
+<a id="on-3"></a>
 ## on
 
 ```TypeScript
@@ -446,7 +459,7 @@ Subscribes to task pause events. This API uses an asynchronous callback to retur
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 11
@@ -460,7 +473,7 @@ Subscribes to task pause events. This API uses an asynchronous callback to retur
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'pause' | Yes | Event type.<br>- **'pause'**: task pause. |
-| callback | (progress: Progress) => void | Yes | Callback to be invoked when the specified event occurs. |
+| callback | (progress: Progress) =&gt; void | Yes | Callback to be invoked when the specified event occurs. |
 
 **Error codes:**
 
@@ -468,6 +481,7 @@ Subscribes to task pause events. This API uses an asynchronous callback to retur
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="on-4"></a>
 ## on
 
 ```TypeScript
@@ -479,7 +493,7 @@ Subscribes to task resume events. This API uses an asynchronous callback to retu
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 11
@@ -493,7 +507,7 @@ Subscribes to task resume events. This API uses an asynchronous callback to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'resume' | Yes | Event type.<br>- **'resume'**: task resume. |
-| callback | (progress: Progress) => void | Yes | Callback to be invoked when the specified event occurs. |
+| callback | (progress: Progress) =&gt; void | Yes | Callback to be invoked when the specified event occurs. |
 
 **Error codes:**
 
@@ -501,6 +515,7 @@ Subscribes to task resume events. This API uses an asynchronous callback to retu
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="on-5"></a>
 ## on
 
 ```TypeScript
@@ -512,7 +527,7 @@ Subscribes to task removal events. This API uses an asynchronous callback to ret
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 11
@@ -526,7 +541,7 @@ Subscribes to task removal events. This API uses an asynchronous callback to ret
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'remove' | Yes | Event type.<br>- **'remove'**: task removal. |
-| callback | (progress: Progress) => void | Yes | Callback to be invoked when the specified event occurs. |
+| callback | (progress: Progress) =&gt; void | Yes | Callback to be invoked when the specified event occurs. |
 
 **Error codes:**
 
@@ -534,6 +549,7 @@ Subscribes to task removal events. This API uses an asynchronous callback to ret
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="on-6"></a>
 ## on
 
 ```TypeScript
@@ -545,7 +561,7 @@ Subscribes to task response headers. This API uses an asynchronous callback to r
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 12
@@ -561,7 +577,7 @@ Subscribes to task response headers. This API uses an asynchronous callback to r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'response' | Yes | Event type.<br>- **'response'**: task response. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<HttpResponse> | Yes | Callback used to return the data structure of the task response header. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;HttpResponse&gt; | Yes | Callback used to return the data structure of the task response header. |
 
 **Error codes:**
 
@@ -569,6 +585,7 @@ Subscribes to task response headers. This API uses an asynchronous callback to r
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="on-7"></a>
 ## on
 
 ```TypeScript
@@ -580,7 +597,7 @@ Subscribes to task failure events. This API uses a callback to return the result
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 20
@@ -594,7 +611,7 @@ Subscribes to task failure events. This API uses a callback to return the result
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'faultOccur' | Yes | Event type.<br>- **'faultOccur'**: task failure. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Faults> | Yes | Callback used to return the failure cause of the task. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Faults&gt; | Yes | Callback used to return the failure cause of the task. |
 
 **Error codes:**
 
@@ -602,6 +619,7 @@ Subscribes to task failure events. This API uses a callback to return the result
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="on-8"></a>
 ## on
 
 ```TypeScript
@@ -613,7 +631,7 @@ Subscribes to task wait events. This API uses a callback to return the result.
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 20
@@ -627,7 +645,7 @@ Subscribes to task wait events. This API uses a callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'wait' | Yes | Event type.<br>- 'wait': The task is waiting. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WaitingReason> | Yes | Callback used to return the waiting reason of the task. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WaitingReason&gt; | Yes | Callback used to return the waiting reason of the task. |
 
 **Error codes:**
 
@@ -635,6 +653,7 @@ Subscribes to task wait events. This API uses a callback to return the result.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
+<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -653,7 +672,7 @@ Pauses a task that is waiting, running, or retrying. A paused task can be resume
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -663,6 +682,7 @@ Pauses a task that is waiting, running, or retrying. A paused task can be resume
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | Operation with wrong task mode.<br>**Applicable version:** 10 and later |
 | [21900007](../../apis-basic-services-kit/errorcode-request.md#21900007-operation-not-supported-by-the-task-state) | Operation with wrong task state. |
 
+<a id="pause-1"></a>
 ## pause
 
 ```TypeScript
@@ -681,7 +701,7 @@ Pauses a task that is waiting, running, or retrying. A paused task can be resume
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -691,6 +711,7 @@ Pauses a task that is waiting, running, or retrying. A paused task can be resume
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | Operation with wrong task mode.<br>**Applicable version:** 10 and later |
 | [21900007](../../apis-basic-services-kit/errorcode-request.md#21900007-operation-not-supported-by-the-task-state) | Operation with wrong task state. |
 
+<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -711,7 +732,7 @@ Resumes a paused task. This API uses an asynchronous callback to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -722,6 +743,7 @@ Resumes a paused task. This API uses an asynchronous callback to return the resu
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | Operation with wrong task mode.<br>**Applicable version:** 10 and later |
 | [21900007](../../apis-basic-services-kit/errorcode-request.md#21900007-operation-not-supported-by-the-task-state) | Operation with wrong task state. |
 
+<a id="resume-1"></a>
 ## resume
 
 ```TypeScript
@@ -742,7 +764,7 @@ Resumes a paused task. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -753,6 +775,7 @@ Resumes a paused task. This API uses a promise to return the result.
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | Operation with wrong task mode.<br>**Applicable version:** 10 and later |
 | [21900007](../../apis-basic-services-kit/errorcode-request.md#21900007-operation-not-supported-by-the-task-state) | Operation with wrong task state. |
 
+<a id="setmaxspeed"></a>
 ## setMaxSpeed
 
 ```TypeScript
@@ -777,7 +800,7 @@ Sets the maximum number of bytes that can be transmitted by a task per second. T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -786,6 +809,7 @@ Sets the maximum number of bytes that can be transmitted by a task per second. T
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [13400003](../../apis-basic-services-kit/errorcode-request.md#13400003-service-error) | Task service ability error. |
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -801,7 +825,7 @@ Tasks in the following states can be started:
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -818,7 +842,7 @@ Tasks in the following states can be started:
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -828,6 +852,7 @@ Tasks in the following states can be started:
 | [13400003](../../apis-basic-services-kit/errorcode-request.md#13400003-service-error) | Task service ability error. |
 | [21900007](../../apis-basic-services-kit/errorcode-request.md#21900007-operation-not-supported-by-the-task-state) | Operation with wrong task state. |
 
+<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -843,7 +868,7 @@ Tasks in the following states can be started:
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -860,7 +885,7 @@ Tasks in the following states can be started:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -870,6 +895,7 @@ Tasks in the following states can be started:
 | [13400003](../../apis-basic-services-kit/errorcode-request.md#13400003-service-error) | Task service ability error. |
 | [21900007](../../apis-basic-services-kit/errorcode-request.md#21900007-operation-not-supported-by-the-task-state) | Operation with wrong task state. |
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -890,7 +916,7 @@ Stops a task that is running, waiting, or retrying. A paused task can be resumed
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -899,6 +925,7 @@ Stops a task that is running, waiting, or retrying. A paused task can be resumed
 | [13400003](../../apis-basic-services-kit/errorcode-request.md#13400003-service-error) | Task service ability error. |
 | [21900007](../../apis-basic-services-kit/errorcode-request.md#21900007-operation-not-supported-by-the-task-state) | Operation with wrong task state. |
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -919,7 +946,7 @@ Stops a task that is running, waiting, or retrying. A paused task can be resumed
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

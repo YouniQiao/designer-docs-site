@@ -6,6 +6,7 @@
 import { map } from '@kit.ConnectivityKit';
 ```
 
+<a id="createmapmseprofile"></a>
 ## createMapMseProfile
 
 ```TypeScript

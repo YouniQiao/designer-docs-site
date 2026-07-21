@@ -6,6 +6,7 @@
 import { omapi } from '@kit.ConnectivityKit';
 ```
 
+<a id="on"></a>
 ## on('stateChanged')
 
 ```TypeScript
@@ -25,7 +26,7 @@ Register the service state changed event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stateChanged' | Yes | The type to register. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ServiceState> | Yes | The callback used to listen for the state change event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ServiceState&gt; | Yes | The callback used to listen for the state change event. |
 
 **Error codes:**
 

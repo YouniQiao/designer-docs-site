@@ -14,6 +14,7 @@ Represents a component on the UI and provides APIs for obtaining component attri
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
+<a id="cleartext"></a>
 ## clearText
 
 ```TypeScript
@@ -34,7 +35,7 @@ Clears the text information of a component. This API takes effect only for edita
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ async function demo() {
 
 ```
 
+<a id="click"></a>
 ## click
 
 ```TypeScript
@@ -77,7 +79,7 @@ Clicks this component. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -100,6 +102,7 @@ async function demo() {
 
 ```
 
+<a id="doubleclick"></a>
 ## doubleClick
 
 ```TypeScript
@@ -120,7 +123,7 @@ Double-clicks this component. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -143,6 +146,7 @@ async function demo() {
 
 ```
 
+<a id="dragto"></a>
 ## dragTo
 
 ```TypeScript
@@ -169,7 +173,7 @@ Drags a component to the target component. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -194,6 +198,7 @@ async function demo() {
 
 ```
 
+<a id="getbounds"></a>
 ## getBounds
 
 ```TypeScript
@@ -214,7 +219,7 @@ Obtains the bounds information of this component. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Rect> | - Promise used to return the bound information of the component object. |
+| Promise&lt;Rect&gt; | - Promise used to return the bound information of the component object. |
 
 **Error codes:**
 
@@ -237,6 +242,7 @@ async function demo() {
 
 ```
 
+<a id="getboundscenter"></a>
 ## getBoundsCenter
 
 ```TypeScript
@@ -257,7 +263,7 @@ Obtains the center point of the area occupied by this component. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Point> | - Promise used to return the center point of the area occupied by the component object. |
+| Promise&lt;Point&gt; | - Promise used to return the center point of the area occupied by the component object. |
 
 **Error codes:**
 
@@ -280,6 +286,7 @@ async function demo() {
 
 ```
 
+<a id="getdescription"></a>
 ## getDescription
 
 ```TypeScript
@@ -300,7 +307,7 @@ Obtains the description of this component. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - Promise used to return the description of the component. |
+| Promise&lt;string&gt; | - Promise used to return the description of the component. |
 
 **Error codes:**
 
@@ -323,6 +330,7 @@ async function demo() {
 
 ```
 
+<a id="getdisplayid"></a>
 ## getDisplayId
 
 ```TypeScript
@@ -343,7 +351,7 @@ Obtains the ID of the display to which the component belongs. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | - Promise used to return the ID of the display to which the component belongs. |
+| Promise&lt;number&gt; | - Promise used to return the ID of the display to which the component belongs. |
 
 **Error codes:**
 
@@ -366,6 +374,7 @@ async function demo() {
 
 ```
 
+<a id="gethint"></a>
 ## getHint
 
 ```TypeScript
@@ -386,7 +395,7 @@ Obtains the hint text of a component. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - Promise used to return the hint text of a component. |
+| Promise&lt;string&gt; | - Promise used to return the hint text of a component. |
 
 **Error codes:**
 
@@ -409,6 +418,7 @@ async function demo() {
 
 ```
 
+<a id="getid"></a>
 ## getId
 
 ```TypeScript
@@ -429,7 +439,7 @@ Obtains the ID of this component. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - Promise used to return the component ID. |
+| Promise&lt;string&gt; | - Promise used to return the component ID. |
 
 **Error codes:**
 
@@ -452,13 +462,14 @@ async function demo() {
 
 ```
 
+<a id="getoriginaltext"></a>
 ## getOriginalText
 
 ```TypeScript
 getOriginalText(): Promise<string>
 ```
 
-Obtains the text information of this component. This API uses a promise to return the result. If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-common-commonmethod-c.md#accessibilitylevel-1)attribute of the component is set to **no** or **no-hide-descendants**, this API can be used to obtain the text information of the component, but [Component.getText()](arkts-test-uitest-component-c.md#gettext-1) cannot.
+Obtains the text information of this component. This API uses a promise to return the result. If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md)attribute of the component is set to **no** or **no-hide-descendants**, this API can be used to obtain the text information of the component, but [Component.getText()](arkts-test-uitest-component-c.md#gettext-1) cannot.
 
 **Since:** 20
 
@@ -472,7 +483,7 @@ Obtains the text information of this component. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - Promise used to return the text information of the component. |
+| Promise&lt;string&gt; | - Promise used to return the text information of the component. |
 
 **Error codes:**
 
@@ -495,6 +506,7 @@ async function demo() {
 
 ```
 
+<a id="gettext"></a>
 ## getText
 
 ```TypeScript
@@ -505,7 +517,7 @@ Obtains the text information of this component. This API uses a promise to retur
 
 > **NOTE**  
 >  
-> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-common-commonmethod-c.md#accessibilitylevel-1)  
+> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md)  
 > attribute of the component is set to **no** or **no-hide-descendants**, this API cannot be used to obtain the  
 > text information of the component. In this case, you can use  
 > [Component.getOriginalText ()](arkts-test-uitest-component-c.md#getoriginaltext-1) instead.
@@ -522,7 +534,7 @@ Obtains the text information of this component. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - Promise used to return the text information of the component. |
+| Promise&lt;string&gt; | - Promise used to return the text information of the component. |
 
 **Error codes:**
 
@@ -545,6 +557,7 @@ async function demo() {
 
 ```
 
+<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -565,7 +578,7 @@ Obtains the type of this component. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - Promise used to return the component type. |
+| Promise&lt;string&gt; | - Promise used to return the component type. |
 
 **Error codes:**
 
@@ -588,6 +601,7 @@ async function demo() {
 
 ```
 
+<a id="inputtext"></a>
 ## inputText
 
 ```TypeScript
@@ -614,7 +628,7 @@ Clears the original text in a component and inputs the specified text. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -638,6 +652,7 @@ async function demo() {
 
 ```
 
+<a id="inputtext-1"></a>
 ## inputText
 
 ```TypeScript
@@ -665,7 +680,7 @@ Inputs text to a component in a specified text input mode. This API takes effect
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -690,6 +705,7 @@ async function mode_demo() {
 
 ```
 
+<a id="ischeckable"></a>
 ## isCheckable
 
 ```TypeScript
@@ -710,7 +726,7 @@ Obtains the checkable status of this component. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the component object is checkable.The value **true** indicates indicates that the component is checkable, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the component object is checkable.The value **true** indicates indicates that the component is checkable, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -737,6 +753,7 @@ async function demo() {
 
 ```
 
+<a id="ischecked"></a>
 ## isChecked
 
 ```TypeScript
@@ -757,7 +774,7 @@ Obtains the checked status of this component. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return the checked status of the component object.The value **true** indicates indicates that the component is checked, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return the checked status of the component object.The value **true** indicates indicates that the component is checked, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -784,6 +801,7 @@ async function demo() {
 
 ```
 
+<a id="isclickable"></a>
 ## isClickable
 
 ```TypeScript
@@ -804,7 +822,7 @@ Obtains the clickable status of this component. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the component object is clickable.The value **true** indicates that the component is clickable, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the component object is clickable.The value **true** indicates that the component is clickable, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -831,6 +849,7 @@ async function demo() {
 
 ```
 
+<a id="isenabled"></a>
 ## isEnabled
 
 ```TypeScript
@@ -851,7 +870,7 @@ Obtains the enabled status of this component. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the component is enabled.The value **true** indicates that the component is enabled, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the component is enabled.The value **true** indicates that the component is enabled, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -878,6 +897,7 @@ async function demo() {
 
 ```
 
+<a id="isfocused"></a>
 ## isFocused
 
 ```TypeScript
@@ -898,7 +918,7 @@ Checks whether a component is focused. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the component is focused.The value **true** indicates that the component is focused, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the component is focused.The value **true** indicates that the component is focused, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -925,6 +945,7 @@ async function demo() {
 
 ```
 
+<a id="islongclickable"></a>
 ## isLongClickable
 
 ```TypeScript
@@ -945,7 +966,7 @@ Obtains the clickable status of this component. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the component object is clickable.The value **true** indicates that the component is clickable, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the component object is clickable.The value **true** indicates that the component is clickable, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -972,6 +993,7 @@ async function demo() {
 
 ```
 
+<a id="isscrollable"></a>
 ## isScrollable
 
 ```TypeScript
@@ -992,7 +1014,7 @@ Obtains the scrollable status of this component. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the component object is scrollable.The value **true** indicates that the component is scrollable, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the component object is scrollable.The value **true** indicates that the component is scrollable, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1019,6 +1041,7 @@ async function demo() {
 
 ```
 
+<a id="isselected"></a>
 ## isSelected
 
 ```TypeScript
@@ -1039,7 +1062,7 @@ Obtains the selected status of this component. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the component is selected.The value **true** indicates that the component is selected, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the component is selected.The value **true** indicates that the component is selected, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1066,6 +1089,7 @@ async function demo() {
 
 ```
 
+<a id="longclick"></a>
 ## longClick
 
 ```TypeScript
@@ -1086,7 +1110,7 @@ Long-clicks this component. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1109,6 +1133,7 @@ async function demo() {
 
 ```
 
+<a id="pinchin"></a>
 ## pinchIn
 
 ```TypeScript
@@ -1135,7 +1160,7 @@ Pinches in a component at the specified scale. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1159,6 +1184,7 @@ async function demo() {
 
 ```
 
+<a id="pinchout"></a>
 ## pinchOut
 
 ```TypeScript
@@ -1185,7 +1211,7 @@ Pinches out a component at the specified scale. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1209,6 +1235,7 @@ async function demo() {
 
 ```
 
+<a id="scrollsearch"></a>
 ## scrollSearch
 
 ```TypeScript
@@ -1235,7 +1262,7 @@ Scrolls on this component to search for the target component. This API is applic
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Component> | - Promise used to return the target component. |
+| Promise&lt;Component&gt; | - Promise used to return the target component. |
 
 **Error codes:**
 
@@ -1259,6 +1286,7 @@ async function demo() {
 
 ```
 
+<a id="scrollsearch-1"></a>
 ## scrollSearch
 
 ```TypeScript
@@ -1287,7 +1315,7 @@ Scrolls on this component to search for the target component. This API is applic
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Component> | - Promise used to return the target component. |
+| Promise&lt;Component&gt; | - Promise used to return the target component. |
 
 **Error codes:**
 
@@ -1311,6 +1339,7 @@ async function demo() {
 
 ```
 
+<a id="scrolltobottom"></a>
 ## scrollToBottom
 
 ```TypeScript
@@ -1337,7 +1366,7 @@ Scrolls to the bottom of this component. This API is applicable to components th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1361,6 +1390,7 @@ async function demo() {
 
 ```
 
+<a id="scrolltotop"></a>
 ## scrollToTop
 
 ```TypeScript
@@ -1387,7 +1417,7 @@ Scrolls to the top of this component. This API is applicable to components that 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 

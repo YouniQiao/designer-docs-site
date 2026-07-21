@@ -1,5 +1,6 @@
 # trigger
 
+<a id="trigger"></a>
 ## trigger
 
 ```TypeScript
@@ -26,7 +27,7 @@ Triggers a WantAgent.
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | to trigger. |
 | triggerInfo | [TriggerInfo](arkts-ability-wantagent-triggerinfo-t.md) | Yes | parameters. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CompleteData> | No | Indicates the callback method to be called after the {@link WantAgent} is triggered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CompleteData&gt; | No | Indicates the callback method to be called after the {@link WantAgent} is triggered. |
 
 **Example**
 

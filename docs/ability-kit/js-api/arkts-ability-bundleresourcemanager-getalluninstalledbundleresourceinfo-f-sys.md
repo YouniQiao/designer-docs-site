@@ -6,6 +6,7 @@
 import { bundleResourceManager } from '@kit.AbilityKit';
 ```
 
+<a id="getalluninstalledbundleresourceinfo"></a>
 ## getAllUninstalledBundleResourceInfo
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the bundle resource information of all uninstalled applications that hav
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleResourceInfo>> | Promise used to return the BundleResourceInfo array. |
+| Promise&lt;Array&lt;BundleResourceInfo&gt;&gt; | Promise used to return the BundleResourceInfo array. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ OIS (Optical Image Stabilization) query interface.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getcurrentcustomoisbias"></a>
 ## getCurrentCustomOISBias
 
 ```TypeScript
@@ -51,6 +52,7 @@ Gets the current custom bias value for the specified OIS axis.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getcurrentoismode"></a>
 ## getCurrentOISMode
 
 ```TypeScript
@@ -82,6 +84,7 @@ Gets the current OIS mode.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getsupportedoisbiasrange"></a>
 ## getSupportedOISBiasRange
 
 ```TypeScript
@@ -110,7 +113,7 @@ Gets the supported bias range for the specified OIS axis.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | The bias range. |
+| Array&lt;number&gt; | The bias range. |
 
 **Error codes:**
 
@@ -119,6 +122,7 @@ Gets the supported bias range for the specified OIS axis.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getsupportedoisbiasstep"></a>
 ## getSupportedOISBiasStep
 
 ```TypeScript
@@ -156,6 +160,7 @@ Gets the bias step for the specified OIS axis.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="isoismodesupported"></a>
 ## isOISModeSupported
 
 ```TypeScript

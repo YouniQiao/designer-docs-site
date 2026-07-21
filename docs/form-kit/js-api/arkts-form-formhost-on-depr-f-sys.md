@@ -1,5 +1,6 @@
 # on (System API)
 
+<a id="on"></a>
 ## on('formUninstall')
 
 ```TypeScript
@@ -30,5 +31,5 @@ Subscribes to widget uninstall events. This API uses an asynchronous callback to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'formUninstall' | Yes | Event type. The value **'formUninstall'** indicates a widget uninstallation event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | Callback used to return the widget ID. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Callback used to return the widget ID. |
 

@@ -20,7 +20,7 @@ import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInacti
 areaMode?: contextConstant.AreaMode
 ```
 
-Encryption level, ranging from EL1 to EL5 (corresponding to the value from 0 to 4). For details, see [Encryption Levels](../../../../application-models/application-context-stage.md#obtaining-and-modifying-encryption-levels).If no value is passed in, EL2 is used by default. Storage paths vary based on the encryption levels. If the input value of encryption level is not in the range of **0** to **4**, a crash occurs.
+Encryption level, ranging from EL1 to EL5 (corresponding to the value from 0 to 4). For details, see [Encryption Levels](docroot://application-models/application-context-stage.md#obtaining-and-modifying-encryption-levels).If no value is passed in, EL2 is used by default. Storage paths vary based on the encryption levels. If the input value of encryption level is not in the range of **0** to **4**, a crash occurs.
 
 **Type:** contextConstant.AreaMode
 
@@ -42,7 +42,7 @@ defaultCreator?: StorageDefaultCreator<T>
 
 Default constructor. You are advised to pass this parameter. If **globalConnect** is connected to the key for the first time, an error is reported if this parameter is not passed in.
 
-**Type:** StorageDefaultCreator<T>
+**Type:** StorageDefaultCreator&lt;T&gt;
 
 **Since:** 18
 
@@ -82,7 +82,7 @@ type: TypeConstructorWithArgs<T>
 
 Specified type.
 
-**Type:** TypeConstructorWithArgs<T>
+**Type:** TypeConstructorWithArgs&lt;T&gt;
 
 **Since:** 18
 

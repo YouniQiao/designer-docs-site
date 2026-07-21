@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="inputdialerspecialcode"></a>
 ## inputDialerSpecialCode
 
 ```TypeScript
@@ -29,7 +30,7 @@ Enters the special code on the keypad.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inputCode | string | Yes | Indicates the special code to enter. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of inputDialerSpecialCode. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of inputDialerSpecialCode. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ call.inputDialerSpecialCode('*#*#2846579#*#*', (err: BusinessError) => {
 ```
 
 
+<a id="inputdialerspecialcode-1"></a>
 ## inputDialerSpecialCode
 
 ```TypeScript
@@ -86,7 +88,7 @@ Enters the special code on the keypad.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the inputDialerSpecialCode. |
+| Promise&lt;void&gt; | The promise returned by the inputDialerSpecialCode. |
 
 **Error codes:**
 

@@ -1,5 +1,6 @@
 # deleteRdbStore
 
+<a id="deleterdbstore"></a>
 ## deleteRdbStore
 
 ```TypeScript
@@ -24,9 +25,10 @@ Deletes an RDB store. This API uses an asynchronous callback to return the resul
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context.<br>For details about the application context of the FA model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-context-depr-i.md).<br>For details about the application context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-context-depr-i.md). |
 | name | string | Yes | Name of the RDB store to delete. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 
+<a id="deleterdbstore-1"></a>
 ## deleteRdbStore
 
 ```TypeScript
@@ -56,5 +58,5 @@ Deletes an RDB store. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 

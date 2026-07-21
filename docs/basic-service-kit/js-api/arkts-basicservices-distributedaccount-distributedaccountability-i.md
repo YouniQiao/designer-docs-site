@@ -14,6 +14,7 @@ Provides APIs for querying and updating the login state of a distributed account
 import { distributedAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="getosaccountdistributedinfo"></a>
 ## getOsAccountDistributedInfo
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the distributed account information. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DistributedInfo> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the distributed account information obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;DistributedInfo&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the distributed account information obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ try {
 
 ```
 
+<a id="getosaccountdistributedinfo-1"></a>
 ## getOsAccountDistributedInfo
 
 ```TypeScript
@@ -87,7 +89,7 @@ Obtains the distributed account information. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DistributedInfo> | Promise used to return the distributed account information obtained. |
+| Promise&lt;DistributedInfo&gt; | Promise used to return the distributed account information obtained. |
 
 **Error codes:**
 
@@ -116,6 +118,7 @@ try {
 
 ```
 
+<a id="queryosaccountdistributedinfo"></a>
 ## queryOsAccountDistributedInfo
 
 ```TypeScript
@@ -134,7 +137,7 @@ Queries the distributed account information. This API uses an asynchronous callb
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountDistributedInfo(callback:
+**Substitutes:** [getOsAccountDistributedInfo(callback:](arkts-basicservices-distributedaccount-distributedaccountability-i.md#getosaccountdistributedinfo-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.DISTRIBUTED_DATASYNC
 
@@ -146,7 +149,7 @@ Queries the distributed account information. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DistributedInfo> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the distributed account information obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;DistributedInfo&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the distributed account information obtained.Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -166,6 +169,7 @@ accountAbility.queryOsAccountDistributedInfo(
 
 ```
 
+<a id="queryosaccountdistributedinfo-1"></a>
 ## queryOsAccountDistributedInfo
 
 ```TypeScript
@@ -177,14 +181,14 @@ Queries the distributed account information. This API uses a promise to return t
 > **NOTE**  
 >  
 > This API is supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [getOsAccountDistributedInfo](arkts-basicservices-distributedaccount-distributedaccountability-i.md#getosaccountdistributedinfo-2)  
+> [getOsAccountDistributedInfo](arkts-basicservices-distributedaccount-distributedaccountability-i.md#getosaccountdistributedinfo-1)  
 > instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [getOsAccountDistributedInfo()](arkts-basicservices-distributedaccount-distributedaccountability-i.md#getosaccountdistributedinfo-2)
+**Substitutes:** [getOsAccountDistributedInfo()](arkts-basicservices-distributedaccount-distributedaccountability-i.md#getosaccountdistributedinfo-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.DISTRIBUTED_DATASYNC
 
@@ -196,7 +200,7 @@ Queries the distributed account information. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DistributedInfo> | Promise used to return the distributed account information obtained. |
+| Promise&lt;DistributedInfo&gt; | Promise used to return the distributed account information obtained. |
 
 **Example**
 
@@ -213,6 +217,7 @@ accountAbility.queryOsAccountDistributedInfo().then((data: distributedAccount.Di
 
 ```
 
+<a id="setosaccountdistributedinfo"></a>
 ## setOsAccountDistributedInfo
 
 ```TypeScript
@@ -234,7 +239,7 @@ Sets the distributed account information. This API uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | accountInfo | [DistributedInfo](arkts-basicservices-distributedaccount-distributedinfo-i.md) | Yes | Distributed account information to set. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the distributed account information is set successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the distributed account information is set successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -271,6 +276,7 @@ try {
 
 ```
 
+<a id="setosaccountdistributedinfo-1"></a>
 ## setOsAccountDistributedInfo
 
 ```TypeScript
@@ -297,7 +303,7 @@ Sets the distributed account information. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -332,6 +338,7 @@ try {
 
 ```
 
+<a id="updateosaccountdistributedinfo"></a>
 ## updateOsAccountDistributedInfo
 
 ```TypeScript
@@ -350,7 +357,7 @@ Updates the distributed account information. This API uses an asynchronous callb
 
 **Deprecated since:** 9
 
-**Substitutes:** setOsAccountDistributedInfo(accountInfo:
+**Substitutes:** [setOsAccountDistributedInfo(accountInfo:](arkts-basicservices-distributedaccount-distributedaccountability-i.md#setosaccountdistributedinfo-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -363,7 +370,7 @@ Updates the distributed account information. This API uses an asynchronous callb
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | accountInfo | [DistributedInfo](arkts-basicservices-distributedaccount-distributedinfo-i.md) | Yes | Distributed account information to update. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the distributed account information is updated successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the distributed account information is updated successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -385,6 +392,7 @@ accountAbility.updateOsAccountDistributedInfo(accountInfo, (err: BusinessError) 
 
 ```
 
+<a id="updateosaccountdistributedinfo-1"></a>
 ## updateOsAccountDistributedInfo
 
 ```TypeScript
@@ -396,14 +404,14 @@ Updates the distributed account information. This API uses a promise to return t
 > **NOTE**  
 >  
 > This API is supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [setOsAccountDistributedInfo](arkts-basicservices-distributedaccount-distributedaccountability-i.md#setosaccountdistributedinfo-2)  
+> [setOsAccountDistributedInfo](arkts-basicservices-distributedaccount-distributedaccountability-i.md#setosaccountdistributedinfo-1)  
 > instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** setOsAccountDistributedInfo(accountInfo:
+**Substitutes:** [setOsAccountDistributedInfo(accountInfo:](arkts-basicservices-distributedaccount-distributedaccountability-i.md#setosaccountdistributedinfo-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -421,7 +429,7 @@ Updates the distributed account information. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

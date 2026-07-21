@@ -1,5 +1,6 @@
 # traceByValue
 
+<a id="tracebyvalue"></a>
 ## traceByValue
 
 ```TypeScript

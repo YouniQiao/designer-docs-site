@@ -16,6 +16,7 @@ AutoExposure inherits from [AutoExposureQuery](arkts-camera-camera-autoexposureq
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getexposuremeteringmode"></a>
 ## getExposureMeteringMode
 
 ```TypeScript
@@ -48,6 +49,7 @@ Gets current exposure metering mode.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 and later |
 
+<a id="setexposuremeteringmode"></a>
 ## setExposureMeteringMode
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { vibrator } from '@kit.SensorServiceKit';
 ```
 
+<a id="stopvibration"></a>
 ## stopVibration
 
 ```TypeScript
@@ -26,13 +27,13 @@ Stops vibration in the specified mode. This API uses a promise to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| stopMode | [VibratorStopMode](arkts-sensorservice-vibrator-vibratorstopmode-e.md) | Yes | Vibration stop mode:<br>- **VIBRATOR_STOP_MODE_TIME**: used to stop vibration of the specified duration.<br>- **VIBRATOR_STOP_MODE_PRESET**: used to stop vibration of the preset effect.<br>To stop custom vibration, use [vibrator.stopVibration&lt;sup&gt;10+&lt;/sup&gt;](arkts-sensorservice-vibrator-stopvibration-f.md#stopvibration-4). |
+| stopMode | [VibratorStopMode](arkts-sensorservice-vibrator-vibratorstopmode-e.md) | Yes | Vibration stop mode:<br>- **VIBRATOR_STOP_MODE_TIME**: used to stop vibration of the specified duration.<br>- **VIBRATOR_STOP_MODE_PRESET**: used to stop vibration of the preset effect.<br>To stop custom vibration, use [vibrator.stopVibration<sup>10+</sup>](arkts-sensorservice-vibrator-stopvibration-f.md#stopvibration-1). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns the result. |
+| Promise&lt;void&gt; | Promise that returns the result. |
 
 **Error codes:**
 
@@ -122,6 +123,7 @@ try {
 ```
 
 
+<a id="stopvibration-1"></a>
 ## stopVibration
 
 ```TypeScript
@@ -142,8 +144,8 @@ Stops vibration in the specified mode. This API uses an asynchronous callback to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| stopMode | [VibratorStopMode](arkts-sensorservice-vibrator-vibratorstopmode-e.md) | Yes | Mode to stop the vibration. The options are as follows:<br>-**VIBRATOR_STOP_MODE_TIME**: used to stop vibration of the specified duration.<br>-**VIBRATOR_STOP_MODE_PRESET**: used to stop vibration of the preset effect.<br>To stop custom vibration, use [vibrator.stopVibration&lt;sup&gt;10+&lt;/sup&gt;](arkts-sensorservice-vibrator-stopvibration-f.md#stopvibration-3). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the vibration stops, **err** is **undefined**; otherwise, **err** is an error object. |
+| stopMode | [VibratorStopMode](arkts-sensorservice-vibrator-vibratorstopmode-e.md) | Yes | Mode to stop the vibration. The options are as follows:<br>-**VIBRATOR_STOP_MODE_TIME**: used to stop vibration of the specified duration.<br>-**VIBRATOR_STOP_MODE_PRESET**: used to stop vibration of the preset effect.<br>To stop custom vibration, use [vibrator.stopVibration<sup>10+</sup>](arkts-sensorservice-vibrator-stopvibration-f.md#stopvibration-1). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the vibration stops, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -241,6 +243,7 @@ try {
 ```
 
 
+<a id="stopvibration-2"></a>
 ## stopVibration
 
 ```TypeScript
@@ -263,7 +266,7 @@ Stops vibration in all modes. This API uses an asynchronous callback to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the vibration stops, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the vibration stops, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -295,6 +298,7 @@ try {
 ```
 
 
+<a id="stopvibration-3"></a>
 ## stopVibration
 
 ```TypeScript
@@ -317,7 +321,7 @@ Stops vibration in all modes. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns the result. |
+| Promise&lt;void&gt; | Promise that returns the result. |
 
 **Error codes:**
 
@@ -347,6 +351,7 @@ try {
 ```
 
 
+<a id="stopvibration-4"></a>
 ## stopVibration
 
 ```TypeScript
@@ -373,7 +378,7 @@ Stops vibration based on the specified vibrator parameters. If no parameters are
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns the result. |
+| Promise&lt;void&gt; | Promise that returns the result. |
 
 **Error codes:**
 

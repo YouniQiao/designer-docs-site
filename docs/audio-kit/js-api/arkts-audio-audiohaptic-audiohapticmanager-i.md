@@ -14,6 +14,7 @@ Manages the audio-haptic feature. Before calling any API in AudioHapticManager, 
 import { audioHaptic } from '@kit.AudioKit';
 ```
 
+<a id="createplayer"></a>
 ## createPlayer
 
 ```TypeScript
@@ -41,7 +42,7 @@ Create an audio haptic player. This method uses a promise to return the result. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioHapticPlayer> | Promise used to return the audio-haptic player. |
+| Promise&lt;AudioHapticPlayer&gt; | Promise used to return the audio-haptic player. |
 
 **Error codes:**
 
@@ -72,6 +73,7 @@ audioHapticManagerInstance.createPlayer(id, options).then((value: audioHaptic.Au
 
 ```
 
+<a id="registersource"></a>
 ## registerSource
 
 ```TypeScript
@@ -97,14 +99,14 @@ Registers audio and haptic resources via URIs. This API uses a promise to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| audioUri | string | Yes | URI of the audio source.<br>- For details about the supported audio resource formats and path formats in the normal latency mode, see [AVPlayer](../../apis-media-kit/arkts-apis/arkts-multimedia-media.md).<br>- For details about the supported audio resource formats in the low-latency mode, see [SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool). The path format must meet the requirements described in [fileIo.open](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioopen).<br>- In both modes, you are advised to pass in the absolute path of the file. |
-| hapticUri | string | Yes | URI of the haptic source.<br>For details about the supported haptic resource formats, see [HapticFileDescriptor](../../apis-sensor-service-kit/arkts-apis/arkts-sensorservice-vibrator-hapticfiledescriptor-i.md). The path format must meet the requirements described in [fileIo.open](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioopen).<br>You are advised to pass in the absolute path of the file. |
+| audioUri | string | Yes | URI of the audio source.<br>- For details about the supported audio resource formats and path formats in the normal latency mode, see [AVPlayer](../../apis-media-kit/arkts-apis/arkts-multimedia-media.md).<br>- For details about the supported audio resource formats in the low-latency mode, see [SoundPool](docroot://reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool). The path format must meet the requirements described in [fileIo.open](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileioopen).<br>- In both modes, you are advised to pass in the absolute path of the file. |
+| hapticUri | string | Yes | URI of the haptic source.<br>For details about the supported haptic resource formats, see [HapticFileDescriptor](../../apis-sensor-service-kit/arkts-apis/arkts-sensorservice-vibrator-hapticfiledescriptor-i.md). The path format must meet the requirements described in [fileIo.open](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileioopen).<br>You are advised to pass in the absolute path of the file. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise, which returns the registered resource ID.<br>In normal cases, the returned resource ID is a non-negative number. A negative ID indicates a registration failure. In this case, check whether the number of registered resources exceeds the upper limit. |
+| Promise&lt;number&gt; | Promise, which returns the registered resource ID.<br>In normal cases, the returned resource ID is a non-negative number. A negative ID indicates a registration failure. In this case, check whether the number of registered resources exceeds the upper limit. |
 
 **Error codes:**
 
@@ -130,6 +132,7 @@ audioHapticManagerInstance.registerSource(audioUri, hapticUri).then((value: numb
 
 ```
 
+<a id="registersourcefromfd"></a>
 ## registerSourceFromFd
 
 ```TypeScript
@@ -162,7 +165,7 @@ Registers audio and haptic resources via file descriptors. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise, which returns the registered resource ID.<br>In normal cases, the returned resource ID is a non-negative number. A negative ID indicates a registration failure. In this case, check whether the number of registered resources exceeds the upper limit. |
+| Promise&lt;number&gt; | Promise, which returns the registered resource ID.<br>In normal cases, the returned resource ID is a non-negative number. A negative ID indicates a registration failure. In this case, check whether the number of registered resources exceeds the upper limit. |
 
 **Example**
 
@@ -197,6 +200,7 @@ audioHapticManagerInstance.registerSourceFromFd(audioFd, hapticFd).then((value: 
 
 ```
 
+<a id="setaudiolatencymode"></a>
 ## setAudioLatencyMode
 
 ```TypeScript
@@ -238,6 +242,7 @@ audioHapticManagerInstance.setAudioLatencyMode(id, latencyMode);
 
 ```
 
+<a id="setstreamusage"></a>
 ## setStreamUsage
 
 ```TypeScript
@@ -280,6 +285,7 @@ audioHapticManagerInstance.setStreamUsage(id, usage);
 
 ```
 
+<a id="unregistersource"></a>
 ## unregisterSource
 
 ```TypeScript
@@ -309,7 +315,7 @@ Unregisters an audio-haptic source. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

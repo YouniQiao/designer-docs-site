@@ -12,6 +12,7 @@ Defines the schema of a KV store. You can create a **Schema** object and place i
 
 **System capability:** SystemCapability.DistributedDataManager.KVStore.DistributedKVStore
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -38,7 +39,7 @@ indexes: Array<string>
 
 String array in JSON format.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 8
 

@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getpriorityenabledbybundles"></a>
 ## getPriorityEnabledByBundles
 
 ```TypeScript
@@ -30,13 +31,13 @@ Obtains whether priority notifications are enabled for applications in batches. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundles | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<BundleOption> | Yes | Array of application bundles. |
+| bundles | Array&lt;BundleOption&gt; | Yes | Array of application bundles. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Map<BundleOption, boolean>> | Promise used to return the key-value pair set of the application notification priority enabling status. |
+| Promise&lt;Map&lt;BundleOption, boolean&gt;&gt; | Promise used to return the key-value pair set of the application notification priority enabling status. |
 
 **Error codes:**
 

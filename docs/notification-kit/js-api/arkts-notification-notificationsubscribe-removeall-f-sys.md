@@ -6,6 +6,7 @@
 import { notificationSubscribe } from '@kit.NotificationKit';
 ```
 
+<a id="removeall"></a>
 ## removeAll
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes all notifications for a specified application. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ notificationSubscribe.removeAll(bundle, removeAllCallback);
 ```
 
 
+<a id="removeall-1"></a>
 ## removeAll
 
 ```TypeScript
@@ -85,7 +87,7 @@ Removes all notifications. This API uses an asynchronous callback to return the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -115,6 +117,7 @@ notificationSubscribe.removeAll(removeAllCallback);
 ```
 
 
+<a id="removeall-2"></a>
 ## removeAll
 
 ```TypeScript
@@ -138,7 +141,7 @@ Removes all notifications for a specified user. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -171,6 +174,7 @@ notificationSubscribe.removeAll(userId, removeAllCallback);
 ```
 
 
+<a id="removeall-3"></a>
 ## removeAll
 
 ```TypeScript
@@ -199,7 +203,7 @@ Removes all notifications for a specified user. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -228,6 +232,7 @@ notificationSubscribe.removeAll(userId).then(() => {
 ```
 
 
+<a id="removeall-4"></a>
 ## removeAll
 
 ```TypeScript
@@ -256,7 +261,7 @@ Removes all notifications for a specified application. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -14,13 +15,13 @@ function create(id: string, type: WindowType, callback: AsyncCallback<Window>): 
 
 Creates a child window. This API uses an asynchronous callback to return the result.
 
-The child window created uses an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout)by default.
+The child window created uses an [immersive layout](docroot://windowmanager/window-terminology.md#immersive-layout)by default.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** createWindow(config:
+**Substitutes:** [createWindow(config:](arkts-arkui-window-createwindow-f.md#createwindow-1)
 
 **Model restriction:** This API can be used only in the FA model.
 
@@ -34,7 +35,7 @@ The child window created uses an [immersive layout](../../../../windowmanager/wi
 | --- | --- | --- | --- |
 | id | string | Yes | Window name, that is, the value of name in [Configuration](arkts-arkui-window-configuration-i.md). |
 | type | [WindowType](../../apis-accessibility-kit/arkts-apis/arkts-accessibility-windowtype-t.md) | Yes | Window type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Window> | Yes | Callback used to return the child window created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Window&gt; | Yes | Callback used to return the child window created. |
 
 **Example**
 
@@ -55,6 +56,7 @@ window.create('test', window.WindowType.TYPE_APP, (err: BusinessError, data) => 
 ```
 
 
+<a id="create-1"></a>
 ## create
 
 ```TypeScript
@@ -63,13 +65,13 @@ function create(id: string, type: WindowType): Promise<Window>
 
 Creates a child window. This API uses a promise to return the result.
 
-The child window created uses an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout)by default.
+The child window created uses an [immersive layout](docroot://windowmanager/window-terminology.md#immersive-layout)by default.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** createWindow(config:
+**Substitutes:** [createWindow(config:](arkts-arkui-window-createwindow-f.md#createwindow-1)
 
 **Model restriction:** This API can be used only in the FA model.
 
@@ -88,7 +90,7 @@ The child window created uses an [immersive layout](../../../../windowmanager/wi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | Promise used to return the child window created. |
+| Promise&lt;Window&gt; | Promise used to return the child window created. |
 
 **Example**
 
@@ -107,6 +109,7 @@ promise.then((data) => {
 ```
 
 
+<a id="create-2"></a>
 ## create
 
 ```TypeScript
@@ -119,7 +122,7 @@ Creates a system window. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** createWindow(config:
+**Substitutes:** [createWindow(config:](arkts-arkui-window-createwindow-f.md#createwindow-1)
 
 <!--Device-window-function create(ctx: BaseContext, id: string, type: WindowType): Promise<Window>--><!--Device-window-function create(ctx: BaseContext, id: string, type: WindowType): Promise<Window>-End-->
 
@@ -137,7 +140,7 @@ Creates a system window. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | Promise used to return the child window created. |
+| Promise&lt;Window&gt; | Promise used to return the child window created. |
 
 **Example**
 
@@ -156,6 +159,7 @@ promise.then((data) => {
 ```
 
 
+<a id="create-3"></a>
 ## create
 
 ```TypeScript
@@ -168,7 +172,7 @@ Creates a system window. This API uses an asynchronous callback to return the re
 
 **Deprecated since:** 9
 
-**Substitutes:** createWindow(config:
+**Substitutes:** [createWindow(config:](arkts-arkui-window-createwindow-f.md#createwindow-1)
 
 <!--Device-window-function create(ctx: BaseContext, id: string, type: WindowType, callback: AsyncCallback<Window>): void--><!--Device-window-function create(ctx: BaseContext, id: string, type: WindowType, callback: AsyncCallback<Window>): void-End-->
 
@@ -181,7 +185,7 @@ Creates a system window. This API uses an asynchronous callback to return the re
 | ctx | [BaseContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-basecontext-t.md) | Yes | Current application context. |
 | id | string | Yes | Window name, that is, the value of name in [Configuration](arkts-arkui-window-configuration-i.md). |
 | type | [WindowType](../../apis-accessibility-kit/arkts-apis/arkts-accessibility-windowtype-t.md) | Yes | Window type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Window> | Yes | Callback used to return the child window created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Window&gt; | Yes | Callback used to return the child window created. |
 
 **Example**
 

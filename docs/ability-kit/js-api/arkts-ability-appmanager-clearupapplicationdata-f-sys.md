@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="clearupapplicationdata"></a>
 ## clearUpApplicationData
 
 ```TypeScript
@@ -34,7 +35,7 @@ Clears application data by bundle name. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the API call result. You can perform error handling or custom processing in this callback. |
+| Promise&lt;void&gt; | Promise used to return the API call result. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ try {
 ```
 
 
+<a id="clearupapplicationdata-1"></a>
 ## clearUpApplicationData
 
 ```TypeScript
@@ -91,7 +93,7 @@ Clears application data by bundle name. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the API call result. You can perform error handling or custom processing in this callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the API call result. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 

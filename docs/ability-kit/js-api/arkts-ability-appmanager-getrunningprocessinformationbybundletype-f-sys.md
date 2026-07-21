@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="getrunningprocessinformationbybundletype"></a>
 ## getRunningProcessInformationByBundleType
 
 ```TypeScript
@@ -37,7 +38,7 @@ Obtains the information about the running process based on the bundle type. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProcessInformation>> | Promise used to return the process information. |
+| Promise&lt;Array&lt;ProcessInformation&gt;&gt; | Promise used to return the process information. |
 
 **Error codes:**
 

@@ -18,6 +18,7 @@ Manages GATT server. Before calling an Gatt server method, you must use {@link c
 import { bluetooth } from '@kit.ConnectivityKit';
 ```
 
+<a id="addservice"></a>
 ## addService
 
 ```TypeScript
@@ -87,6 +88,7 @@ if (ret) {
 
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -115,6 +117,7 @@ server.close();
 
 ```
 
+<a id="notifycharacteristicchanged"></a>
 ## notifyCharacteristicChanged
 
 ```TypeScript
@@ -172,6 +175,7 @@ server.notifyCharacteristicChanged('XX:XX:XX:XX:XX:XX', notifyCharacteristic);
 
 ```
 
+<a id="off"></a>
 ## off('characteristicRead')
 
 ```TypeScript
@@ -197,7 +201,7 @@ Unsubscribe characteristic read event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'characteristicRead' | Yes | Type of the characteristic read event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CharacteristicReadReq> | No | Callback used to listen for the characteristic read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CharacteristicReadReq&gt; | No | Callback used to listen for the characteristic read event. |
 
 **Example**
 
@@ -207,6 +211,7 @@ gattServer.off("characteristicRead");
 
 ```
 
+<a id="off-1"></a>
 ## off('characteristicWrite')
 
 ```TypeScript
@@ -232,7 +237,7 @@ Unsubscribe characteristic write event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'characteristicWrite' | Yes | Type of the characteristic write event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CharacteristicWriteReq> | No | Callback used to listen for the characteristic write event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CharacteristicWriteReq&gt; | No | Callback used to listen for the characteristic write event. |
 
 **Example**
 
@@ -242,6 +247,7 @@ gattServer.off("characteristicWrite");
 
 ```
 
+<a id="off-2"></a>
 ## off('descriptorRead')
 
 ```TypeScript
@@ -267,7 +273,7 @@ Unsubscribe descriptor read event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'descriptorRead' | Yes | Type of the descriptor read event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DescriptorReadReq> | No | Callback used to listen for the descriptor read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DescriptorReadReq&gt; | No | Callback used to listen for the descriptor read event. |
 
 **Example**
 
@@ -277,6 +283,7 @@ gattServer.off("descriptorRead");
 
 ```
 
+<a id="off-3"></a>
 ## off('descriptorWrite')
 
 ```TypeScript
@@ -302,7 +309,7 @@ Unsubscribe descriptor write event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'descriptorWrite' | Yes | Type of the descriptor write event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DescriptorWriteReq> | No | Callback used to listen for the descriptor write event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DescriptorWriteReq&gt; | No | Callback used to listen for the descriptor write event. |
 
 **Example**
 
@@ -312,6 +319,7 @@ gattServer.off("descriptorWrite");
 
 ```
 
+<a id="off-4"></a>
 ## off('connectStateChange')
 
 ```TypeScript
@@ -337,7 +345,7 @@ Unsubscribe server connection state changed event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectStateChange' | Yes | Type of the connection state changed event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BLEConnectChangedState> | No | Callback used to listen for the connection state changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BLEConnectChangedState&gt; | No | Callback used to listen for the connection state changed event. |
 
 **Example**
 
@@ -347,6 +355,7 @@ gattServer.off("connectStateChange");
 
 ```
 
+<a id="on"></a>
 ## on('characteristicRead')
 
 ```TypeScript
@@ -372,7 +381,7 @@ Subscribe characteristic read event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'characteristicRead' | Yes | Type of the characteristic read event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CharacteristicReadReq> | Yes | Callback used to listen for the characteristic read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CharacteristicReadReq&gt; | Yes | Callback used to listen for the characteristic read event. |
 
 **Example**
 
@@ -402,6 +411,7 @@ gattServer.on("characteristicRead", ReadCharacteristicReq);
 
 ```
 
+<a id="on-1"></a>
 ## on('characteristicWrite')
 
 ```TypeScript
@@ -427,7 +437,7 @@ Subscribe characteristic write event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'characteristicWrite' | Yes | Type of the characteristic write event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CharacteristicWriteReq> | Yes | Callback used to listen for the characteristic write event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CharacteristicWriteReq&gt; | Yes | Callback used to listen for the characteristic write event. |
 
 **Example**
 
@@ -460,6 +470,7 @@ gattServer.on("characteristicWrite", WriteCharacteristicReq);
 
 ```
 
+<a id="on-2"></a>
 ## on('descriptorRead')
 
 ```TypeScript
@@ -485,7 +496,7 @@ Subscribe descriptor read event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'descriptorRead' | Yes | Type of the descriptor read event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DescriptorReadReq> | Yes | Callback used to listen for the descriptor read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DescriptorReadReq&gt; | Yes | Callback used to listen for the descriptor read event. |
 
 **Example**
 
@@ -515,6 +526,7 @@ gattServer.on("descriptorRead", ReadDescriptorReq);
 
 ```
 
+<a id="on-3"></a>
 ## on('descriptorWrite')
 
 ```TypeScript
@@ -540,7 +552,7 @@ Subscribe descriptor write event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'descriptorWrite' | Yes | Type of the descriptor write event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DescriptorWriteReq> | Yes | Callback used to listen for the descriptor write event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DescriptorWriteReq&gt; | Yes | Callback used to listen for the descriptor write event. |
 
 **Example**
 
@@ -572,6 +584,7 @@ gattServer.on("descriptorWrite", WriteDescriptorReq);
 
 ```
 
+<a id="on-4"></a>
 ## on('connectStateChange')
 
 ```TypeScript
@@ -597,7 +610,7 @@ Subscribe server connection state changed event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectStateChange' | Yes | Type of the connection state changed event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BLEConnectChangedState> | Yes | Callback used to listen for the connection state changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BLEConnectChangedState&gt; | Yes | Callback used to listen for the connection state changed event. |
 
 **Example**
 
@@ -612,6 +625,7 @@ gattServer.on("connectStateChange", Connected);
 
 ```
 
+<a id="removeservice"></a>
 ## removeService
 
 ```TypeScript
@@ -652,6 +666,7 @@ server.removeService('00001810-0000-1000-8000-00805F9B34FB');
 
 ```
 
+<a id="sendresponse"></a>
 ## sendResponse
 
 ```TypeScript
@@ -709,6 +724,7 @@ if (ret) {
 
 ```
 
+<a id="startadvertising"></a>
 ## startAdvertising
 
 ```TypeScript
@@ -785,6 +801,7 @@ gattServer.startAdvertising(setting, advData, advResponse);
 
 ```
 
+<a id="stopadvertising"></a>
 ## stopAdvertising
 
 ```TypeScript

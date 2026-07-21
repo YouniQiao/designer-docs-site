@@ -16,6 +16,7 @@ A special duplex stream that supports data conversion and result output. The **T
 import { stream } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -39,6 +40,7 @@ let transform = new stream.Transform();
 
 ```
 
+<a id="doflush"></a>
 ## doFlush
 
 ```TypeScript
@@ -59,7 +61,7 @@ Called at the end of the stream to process the remaining data. This API uses an 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Callback function. |
+| callback | Function | Yes | Callback function. |
 
 **Example**
 
@@ -86,6 +88,7 @@ transform.on('data', (data) => {
 
 ```
 
+<a id="dotransform"></a>
 ## doTransform
 
 ```TypeScript
@@ -108,7 +111,7 @@ Converts or processes input data chunks and uses a callback to notify that the p
 | --- | --- | --- | --- |
 | chunk | string | Yes | Data to write. |
 | encoding | string | Yes | Encoding format. Currently, **'utf8'**, **'gb18030'**, **'gbk'**, and **'gb2312'** are supported. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Callback function. |
+| callback | Function | Yes | Callback function. |
 
 **Example**
 

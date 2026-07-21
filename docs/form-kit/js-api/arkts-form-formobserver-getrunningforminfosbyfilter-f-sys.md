@@ -6,6 +6,7 @@
 import { formObserver } from '@kit.FormKit';
 ```
 
+<a id="getrunningforminfosbyfilter"></a>
 ## getRunningFormInfosByFilter
 
 ```TypeScript
@@ -42,7 +43,7 @@ Obtains the RunningFormInfo objects by FormProviderFilter.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<formInfo.RunningFormInfo>> | The promise returned by the function. |
+| Promise&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ Obtains the RunningFormInfo objects by FormProviderFilter.
 | [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
 
 
+<a id="getrunningforminfosbyfilter-1"></a>
 ## getRunningFormInfosByFilter
 
 ```TypeScript
@@ -90,7 +92,7 @@ Obtains the RunningFormInfo objects by FormProviderFilter.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | formProviderFilter | formInfo.FormProviderFilter | Yes | Indicates the form provider app info. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<formInfo.RunningFormInfo>> | Yes | The callback of getFormInstancesByFilter. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Yes | The callback of getFormInstancesByFilter. |
 
 **Error codes:**
 

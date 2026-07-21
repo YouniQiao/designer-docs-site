@@ -6,6 +6,7 @@
 import { cooperate } from '@kit.DistributedServiceKit';
 ```
 
+<a id="deactivate"></a>
 ## deactivate
 
 ```TypeScript
@@ -18,7 +19,7 @@ Stops screen hopping. This API uses an asynchronous callback to return the resul
 
 **Deprecated since:** 11
 
-**Substitutes:** deactivateCooperate(isUnchained:
+**Substitutes:** [deactivateCooperate(isUnchained:](arkts-distributedservice-cooperate-deactivatecooperate-f-sys.md#deactivatecooperate-1)
 
 <!--Device-cooperate-function deactivate(isUnchained: boolean, callback: AsyncCallback<void>): void--><!--Device-cooperate-function deactivate(isUnchained: boolean, callback: AsyncCallback<void>): void-End-->
 
@@ -31,7 +32,7 @@ Stops screen hopping. This API uses an asynchronous callback to return the resul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isUnchained | boolean | Yes | Whether to disable the cross-device link.<br> The value **true** means to disable the cross-device link, and the value **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the operation result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the operation result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ try {
 ```
 
 
+<a id="deactivate-1"></a>
 ## deactivate
 
 ```TypeScript
@@ -72,7 +74,7 @@ Stops screen hopping. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** deactivateCooperate(isUnchained:
+**Substitutes:** [deactivateCooperate(isUnchained:](arkts-distributedservice-cooperate-deactivatecooperate-f-sys.md#deactivatecooperate-1)
 
 <!--Device-cooperate-function deactivate(isUnchained: boolean): Promise<void>--><!--Device-cooperate-function deactivate(isUnchained: boolean): Promise<void>-End-->
 
@@ -90,7 +92,7 @@ Stops screen hopping. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

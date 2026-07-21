@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setbadgedisplaystatusbybundles"></a>
 ## setBadgeDisplayStatusByBundles
 
 ```TypeScript
@@ -28,13 +29,13 @@ Batch sets whether to display badges for specified applications. This API uses a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| badges | [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<BundleOption, boolean> | Yes | List containing bundle names and badge display statuses. |
+| badges | Map&lt;BundleOption, boolean&gt; | Yes | List containing bundle names and badge display statuses. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

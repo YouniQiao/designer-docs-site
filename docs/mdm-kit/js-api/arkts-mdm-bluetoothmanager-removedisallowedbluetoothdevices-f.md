@@ -6,6 +6,7 @@
 import { bluetoothManager } from '@kit.MDMKit';
 ```
 
+<a id="removedisallowedbluetoothdevices"></a>
 ## removeDisallowedBluetoothDevices
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes disallowed Bluetooth devices. If some Bluetooth devices are removed from
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| deviceIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | MAC addresses of the Bluetooth devices to remove. |
+| deviceIds | Array&lt;string&gt; | Yes | MAC addresses of the Bluetooth devices to remove. |
 
 **Error codes:**
 

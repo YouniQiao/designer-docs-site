@@ -6,6 +6,7 @@
 import { deviceStandby } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="releaseexemptionresource"></a>
 ## releaseExemptionResource
 
 ```TypeScript

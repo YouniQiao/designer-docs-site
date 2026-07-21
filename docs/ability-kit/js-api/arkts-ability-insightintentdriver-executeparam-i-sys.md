@@ -22,7 +22,7 @@ import { insightIntentDriver } from '@kit.AbilityKit';
 abilityName: string
 ```
 
-Name of the ability to be called. If an intent defined by the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)decorator is used to implement application redirection, this parameter can be left empty.
+Name of the ability to be called. If an intent defined by the [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)decorator is used to implement application redirection, this parameter can be left empty.
 
 **Type:** string
 
@@ -102,7 +102,7 @@ Physical screen ID specified during intent call. The value must be an integer. T
 executeMode: insightIntent.ExecuteMode
 ```
 
-Intent execution mode. If an intent defined by the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)decorator is used to implement application redirection, this parameter must be filled (with any value that conforms to the definition), although it will not actually take effect.
+Intent execution mode. If an intent defined by the [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)decorator is used to implement application redirection, this parameter must be filled (with any value that conforms to the definition), although it will not actually take effect.
 
 **Type:** insightIntent.ExecuteMode
 
@@ -168,7 +168,7 @@ insightIntentParam: Record<string, Object>
 
 Intent call parameter.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 11
 
@@ -206,9 +206,9 @@ Name of the module to which the ability belongs.
 uris?: Array<string>
 ```
 
-List of URIs authorized by the intent caller to the intent executor during the call. If an intent defined by the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)decorator is used to implement application redirection, this field is mandatory. Only the first element in the array is read as the URI of [openLink](arkts-ability-uiabilitycontext-c.md#openlink-1).
+List of URIs authorized by the intent caller to the intent executor during the call. If an intent defined by the [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)decorator is used to implement application redirection, this field is mandatory. Only the first element in the array is read as the URI of [openLink](arkts-ability-uiabilitycontext-c.md#openlink-1).
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 18
 

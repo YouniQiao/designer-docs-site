@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setdistributedenablebybundles"></a>
 ## setDistributedEnableByBundles
 
 ```TypeScript
@@ -30,14 +31,14 @@ This API can be properly called on devices other than wearables and TVs. If it i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleEnableInfos | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DistributedBundleEnableInfo> | Yes | Applications to set. |
+| bundleEnableInfos | Array&lt;DistributedBundleEnableInfo&gt; | Yes | Applications to set. |
 | deviceType | string | Yes | Device type. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no result. |
+| Promise&lt;void&gt; | Promise that returns no result. |
 
 **Error codes:**
 

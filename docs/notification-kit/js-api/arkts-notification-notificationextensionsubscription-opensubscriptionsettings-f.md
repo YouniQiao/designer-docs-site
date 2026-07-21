@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="opensubscriptionsettings"></a>
 ## openSubscriptionSettings
 
 ```TypeScript
@@ -32,7 +33,7 @@ Opens the settings screen of notification extension subscription in a semi-modal
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

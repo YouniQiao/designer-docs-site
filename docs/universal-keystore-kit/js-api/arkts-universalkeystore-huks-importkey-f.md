@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="importkey"></a>
 ## importKey
 
 ```TypeScript
@@ -18,7 +19,7 @@ Imports a key in plaintext. This API uses an asynchronous callback to return the
 
 **Deprecated since:** 9
 
-**Substitutes:** importKeyItem(keyAlias:
+**Substitutes:** [importKeyItem(keyAlias:](arkts-universalkeystore-huks-importkeyitem-f.md#importkeyitem-1)
 
 <!--Device-huks-function importKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void--><!--Device-huks-function importKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void-End-->
 
@@ -30,7 +31,7 @@ Imports a key in plaintext. This API uses an asynchronous callback to return the
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key. The value can contain up to 128 bytes and should not include sensitive data such as personal information. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Tags required for the import and key to import. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HuksResult> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the obtained **HuksResult**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HuksResult&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the obtained **HuksResult**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -82,6 +83,7 @@ huks.importKey(keyAlias, options, (err, data) => {
 ```
 
 
+<a id="importkey-1"></a>
 ## importKey
 
 ```TypeScript
@@ -94,7 +96,7 @@ Imports a key in plaintext. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** importKeyItem(keyAlias:
+**Substitutes:** [importKeyItem(keyAlias:](arkts-universalkeystore-huks-importkeyitem-f.md#importkeyitem-1)
 
 <!--Device-huks-function importKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>--><!--Device-huks-function importKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>-End-->
 
@@ -111,7 +113,7 @@ Imports a key in plaintext. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksResult> | Promise that returns **HuksResult**. |
+| Promise&lt;HuksResult&gt; | Promise that returns **HuksResult**. |
 
 **Example**
 

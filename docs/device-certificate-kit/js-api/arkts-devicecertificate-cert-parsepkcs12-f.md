@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="parsepkcs12"></a>
 ## parsePkcs12
 
 ```TypeScript
@@ -26,7 +27,7 @@ Parses P12.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Raw data of P12 file, in DER format. |
+| data | Uint8Array | Yes | Raw data of P12 file, in DER format. |
 | config | [Pkcs12ParsingConfig](arkts-devicecertificate-cert-pkcs12parsingconfig-i.md) | Yes | Configuration for parsing the P12. |
 
 **Return value:**
@@ -224,6 +225,7 @@ function doTestParsePkcs12() {
 ```
 
 
+<a id="parsepkcs12-1"></a>
 ## parsePkcs12
 
 ```TypeScript
@@ -244,14 +246,14 @@ Parses P12. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Raw data of P12 file, in DER format. |
+| data | Uint8Array | Yes | Raw data of P12 file, in DER format. |
 | password | string | Yes | Password. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Pkcs12Data> | Promise used to return the parsed P12 data. The private key in the returned **Pkcs12Data** is encoded in PEM format. |
+| Promise&lt;Pkcs12Data&gt; | Promise used to return the parsed P12 data. The private key in the returned **Pkcs12Data** is encoded in PEM format. |
 
 **Error codes:**
 

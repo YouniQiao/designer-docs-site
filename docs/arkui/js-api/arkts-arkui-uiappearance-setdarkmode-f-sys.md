@@ -6,6 +6,7 @@
 import { uiAppearance } from '@kit.ArkUI';
 ```
 
+<a id="setdarkmode"></a>
 ## setDarkMode
 
 ```TypeScript
@@ -31,7 +32,7 @@ Sets the system color mode. This API uses an asynchronous callback to return the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | [DarkMode](arkts-arkui-uiappearance-darkmode-e-sys.md) | Yes | indicates the dark-mode to set |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setDarkMode |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setDarkMode |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ try {
 ```
 
 
+<a id="setdarkmode-1"></a>
 ## setDarkMode
 
 ```TypeScript
@@ -93,7 +95,7 @@ Sets the system color mode. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

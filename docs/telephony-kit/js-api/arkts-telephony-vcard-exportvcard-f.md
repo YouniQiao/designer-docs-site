@@ -6,6 +6,7 @@
 import { vcard } from '@kit.TelephonyKit';
 ```
 
+<a id="exportvcard"></a>
 ## exportVCard
 
 ```TypeScript
@@ -29,7 +30,7 @@ Export contact data to a vcf file.
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Execute statement. |
 | options | [VCardBuilderOptions](arkts-telephony-vcard-vcardbuilderoptions-i.md) | Yes | Encoding and version. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Represents the address of the generated vcf file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Represents the address of the generated vcf file. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ class EntryAbility extends UIAbility {
 ```
 
 
+<a id="exportvcard-1"></a>
 ## exportVCard
 
 ```TypeScript
@@ -96,7 +98,7 @@ Export contact data to a vcf file.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | the promise represents the address of the generated vcf file.. |
+| Promise&lt;string&gt; | the promise represents the address of the generated vcf file.. |
 
 **Error codes:**
 
@@ -136,6 +138,7 @@ class EntryAbility extends UIAbility {
 ```
 
 
+<a id="exportvcard-2"></a>
 ## exportVCard
 
 ```TypeScript
@@ -158,7 +161,7 @@ Export contact data to a vcf file.
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Execute statement. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Represents the address of the generated vcf file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Represents the address of the generated vcf file. |
 
 **Error codes:**
 

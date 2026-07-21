@@ -6,6 +6,7 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
+<a id="getwatermarkimageapps"></a>
 ## getWatermarkImageApps
 
 ```TypeScript
@@ -35,7 +36,7 @@ Gets the bundle names of the applications that have been set watermark.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> |  |
+| Array&lt;string&gt; |  |
 
 **Error codes:**
 

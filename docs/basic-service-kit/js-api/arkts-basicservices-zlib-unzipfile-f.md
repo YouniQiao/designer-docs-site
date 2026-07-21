@@ -6,6 +6,7 @@
 import { zlib } from '@kit.BasicServicesKit';
 ```
 
+<a id="unzipfile"></a>
 ## unzipFile
 
 ```TypeScript
@@ -23,7 +24,7 @@ Unzips a file. The execution result is returned after the decompression is compl
 
 **Deprecated since:** 9
 
-**Substitutes:** decompressFile(inFile:
+**Substitutes:** [decompressFile(inFile:](arkts-basicservices-zlib-decompressfile-f.md#decompressfile-1)
 
 <!--Device-zlib-function unzipFile(inFile: string, outFile: string, options: Options): Promise<void>--><!--Device-zlib-function unzipFile(inFile: string, outFile: string, options: Options): Promise<void>-End-->
 
@@ -41,7 +42,7 @@ Unzips a file. The execution result is returned after the decompression is compl
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

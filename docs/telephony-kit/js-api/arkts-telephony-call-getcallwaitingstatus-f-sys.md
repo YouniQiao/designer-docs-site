@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="getcallwaitingstatus"></a>
 ## getCallWaitingStatus
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get call waiting status.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CallWaitingStatus> | Yes | Indicates the callback for getting the call waiting status. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CallWaitingStatus&gt; | Yes | Indicates the callback for getting the call waiting status. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ call.getCallWaitingStatus(0, (err: BusinessError, data: call.CallWaitingStatus) 
 ```
 
 
+<a id="getcallwaitingstatus-1"></a>
 ## getCallWaitingStatus
 
 ```TypeScript
@@ -87,7 +89,7 @@ Get call waiting status.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CallWaitingStatus> | Returns the callback for getting the call waiting status. |
+| Promise&lt;CallWaitingStatus&gt; | Returns the callback for getting the call waiting status. |
 
 **Error codes:**
 

@@ -1,5 +1,6 @@
 # chmodSync
 
+<a id="chmodsync"></a>
 ## chmodSync
 
 ```TypeScript

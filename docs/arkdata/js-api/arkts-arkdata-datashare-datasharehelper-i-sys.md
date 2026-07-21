@@ -16,6 +16,7 @@ Provides a **DataShareHelper** instance to access or manage data on the server. 
 import { dataShare } from '@kit.ArkData';
 ```
 
+<a id="addtemplate"></a>
 ## addTemplate
 
 ```TypeScript
@@ -76,6 +77,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="batchinsert"></a>
 ## batchInsert
 
 ```TypeScript
@@ -101,8 +103,8 @@ In non-silent scenarios, the size of the **values** parameter and the **uri** pa
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to insert. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Data to insert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the number of data records inserted. Otherwise, **err** is an error object.The number of inserted data records is not returned if the APIs of the database in use (for example, KVDB) do not support this return. |
+| values | Array&lt;ValuesBucket&gt; | Yes | Data to insert. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the number of data records inserted. Otherwise, **err** is an error object.The number of inserted data records is not returned if the APIs of the database in use (for example, KVDB) do not support this return. |
 
 **Error codes:**
 
@@ -141,6 +143,7 @@ try {
 
 ```
 
+<a id="batchinsert-1"></a>
 ## batchInsert
 
 ```TypeScript
@@ -166,13 +169,13 @@ In non-silent scenarios, the size of the **values** parameter and the **uri** pa
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to insert. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Data to insert. |
+| values | Array&lt;ValuesBucket&gt; | Yes | Data to insert. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of data records inserted.The number of inserted data records is not returned if the APIs of the database in use(for example, KVDB) do not support this return. |
+| Promise&lt;number&gt; | Promise used to return the number of data records inserted.The number of inserted data records is not returned if the APIs of the database in use(for example, KVDB) do not support this return. |
 
 **Error codes:**
 
@@ -209,6 +212,7 @@ try {
 
 ```
 
+<a id="batchupdate"></a>
 ## batchUpdate
 
 ```TypeScript
@@ -233,13 +237,13 @@ In non-silent scenarios, the size of the **operations** parameter passed in this
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| operations | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Array<UpdateOperation>> | Yes | Collection of the path of the data to update,update conditions, and new data. |
+| operations | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Array&lt;UpdateOperation&gt;&gt; | Yes | Collection of the path of the data to update,update conditions, and new data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, Array<number>>> | Promise used to return an array of updated data records. The value **-1** means the update operation fails.The number of updated data records is not returned if the APIs of the database in use(for example, KVDB) do not support this return. |
+| Promise&lt;Record&lt;string, Array&lt;number&gt;&gt;&gt; | Promise used to return an array of updated data records. The value **-1** means the update operation fails.The number of updated data records is not returned if the APIs of the database in use(for example, KVDB) do not support this return. |
 
 **Error codes:**
 
@@ -309,6 +313,7 @@ try {
 
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -331,7 +336,7 @@ Closes the **DataShareHelper** instance. After this API is called, the instance 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | returns no value. |
+| Promise&lt;void&gt; | returns no value. |
 
 **Error codes:**
 
@@ -349,6 +354,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="deltemplate"></a>
 ## delTemplate
 
 ```TypeScript
@@ -408,6 +414,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -436,7 +443,7 @@ In silent scenarios, the total size of the **uri** and **predicates** parameters
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to delete. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Conditions for deleting data.The predicate methods supported by **delete()** vary depending on the database in use. For example, the KVDB supports only **inKeys**. If this parameter is left empty, the entire table will be deleted by default. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the number of deleted data records. Otherwise, **err** is an error object.The number of deleted data records is not returned if the APIs of the database in use (for example, KVDB) do not support this return. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the number of deleted data records. Otherwise, **err** is an error object.The number of deleted data records is not returned if the APIs of the database in use (for example, KVDB) do not support this return. |
 
 **Error codes:**
 
@@ -473,6 +480,7 @@ try {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -506,7 +514,7 @@ In silent scenarios, the total size of the **uri** and **predicates** parameters
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of deleted data records.The number of deleted data records is not returned if the APIs of the database in use(for example, KVDB) do not support this return. |
+| Promise&lt;number&gt; | Promise used to return the number of deleted data records.The number of deleted data records is not returned if the APIs of the database in use(for example, KVDB) do not support this return. |
 
 **Error codes:**
 
@@ -541,6 +549,7 @@ try {
 
 ```
 
+<a id="denormalizeuri"></a>
 ## denormalizeUri
 
 ```TypeScript
@@ -564,7 +573,7 @@ Denormalizes a URI. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | [URI](../../apis-arkts/arkts-apis/arkts-arkts-uri-uri-c.md) to denormalize. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the URI obtained. If the original URI is returned, denormalization is not required. If **null** is returned, denormalization is not supported. If the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the URI obtained. If the original URI is returned, denormalization is not required. If **null** is returned, denormalization is not supported. If the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -592,6 +601,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="denormalizeuri-1"></a>
 ## denormalizeUri
 
 ```TypeScript
@@ -620,7 +630,7 @@ Denormalizes a URI. This API uses a promise to return the result. Silent access 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. If the denormalization is successful, the URI obtained is returned. If no operation is required, the original URI is returned. If denormalization is not supported, **null** is returned. |
+| Promise&lt;string&gt; | Promise used to return the result. If the denormalization is successful, the URI obtained is returned. If no operation is required, the original URI is returned. If denormalization is not supported, **null** is returned. |
 
 **Error codes:**
 
@@ -646,6 +656,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="getpublisheddata"></a>
 ## getPublishedData
 
 ```TypeScript
@@ -671,7 +682,7 @@ In silent scenarios, the size of the **bundleName** parameter passed in this API
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Application to which the data belongs. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<PublishedItem>> | Yes | Callback used to return the published data obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;PublishedItem&gt;&gt; | Yes | Callback used to return the published data obtained. |
 
 **Error codes:**
 
@@ -696,6 +707,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="getpublisheddata-1"></a>
 ## getPublishedData
 
 ```TypeScript
@@ -726,7 +738,7 @@ In silent scenarios, the size of the **bundleName** parameter passed in this API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PublishedItem>> | Promise used to return the published data obtained. |
+| Promise&lt;Array&lt;PublishedItem&gt;&gt; | Promise used to return the published data obtained. |
 
 **Error codes:**
 
@@ -746,6 +758,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -774,7 +787,7 @@ In silent scenarios, the total size of the **uri** and **value** parameters pass
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to insert. |
 | value | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | Value of the data to insert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the index of the inserted data record. Otherwise, **err** is an error object.The data index is not returned if the APIs of the database in use, for example, the key-value database (KVDB), do not support the return of indexes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the index of the inserted data record. Otherwise, **err** is an error object.The data index is not returned if the APIs of the database in use, for example, the key-value database (KVDB), do not support the return of indexes. |
 
 **Error codes:**
 
@@ -820,6 +833,7 @@ try {
 
 ```
 
+<a id="insert-1"></a>
 ## insert
 
 ```TypeScript
@@ -853,7 +867,7 @@ In silent scenarios, the total size of the **uri** and **value** parameters pass
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the index of the inserted data record.The data index is not returned if the APIs of the database in use (for example, KVDB) do not support this return. |
+| Promise&lt;number&gt; | Promise used to return the index of the inserted data record.The data index is not returned if the APIs of the database in use (for example, KVDB) do not support this return. |
 
 **Error codes:**
 
@@ -897,6 +911,7 @@ try {
 
 ```
 
+<a id="normalizeuri"></a>
 ## normalizeUri
 
 ```TypeScript
@@ -920,7 +935,7 @@ Normalizes a **DataShare** URI. The **DataShare** URI can be used only by the lo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | [URI](../../apis-arkts/arkts-apis/arkts-arkts-uri-uri-c.md) to normalize. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the normalized URI (if **null** is returned, URI normalization is not supported). Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the normalized URI (if **null** is returned, URI normalization is not supported). Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -948,6 +963,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="normalizeuri-1"></a>
 ## normalizeUri
 
 ```TypeScript
@@ -976,7 +992,7 @@ Normalizes a **DataShare** URI. The **DataShare** URI can be used only by the lo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. If URI normalization is supported, the normalized URI is returned. Otherwise, **null** is returned. |
+| Promise&lt;string&gt; | Promise used to return the result. If URI normalization is supported, the normalized URI is returned. Otherwise, **null** is returned. |
 
 **Error codes:**
 
@@ -1002,6 +1018,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="notifychange"></a>
 ## notifyChange
 
 ```TypeScript
@@ -1027,7 +1044,7 @@ In non-silent scenarios, the size of the **uri** parameter passed in this API ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to be observed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the observer is notified of the data changes, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the observer is notified of the data changes, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1049,6 +1066,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="notifychange-1"></a>
 ## notifyChange
 
 ```TypeScript
@@ -1079,7 +1097,7 @@ In non-silent scenarios, the size of the **uri** parameter passed in this API ca
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1099,6 +1117,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="notifychange-2"></a>
 ## notifyChange
 
 ```TypeScript
@@ -1129,7 +1148,7 @@ In non-silent scenarios, the size of the **data** parameter passed in this API c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1158,13 +1177,14 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="off"></a>
 ## off('dataChange')
 
 ```TypeScript
 off(type: 'dataChange', uri: string, callback?: AsyncCallback<void>): void
 ```
 
-Unsubscribes from the data change of the specified URI. This API corresponds to the [on](arkts-arkdata-datashare-datasharehelper-i-sys.md#on-1) API.
+Unsubscribes from the data change of the specified URI. This API corresponds to the [on](dataShare.DataShareHelper.on(type: 'dataChange', uri: string, callback: AsyncCallback<void>)) API.
 
 **Since:** 9
 
@@ -1182,7 +1202,7 @@ Unsubscribes from the data change of the specified URI. This API corresponds to 
 | --- | --- | --- | --- |
 | type | 'dataChange' | Yes | Event/callback type. The value is **'dataChange'**, which indicates the data change. |
 | uri | string | Yes | URI of the data to be observed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | No | Callback to unregister. If this parameter is **undefined**, **null**,or left empty, this API unregisters all callbacks for the specified URI. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback to unregister. If this parameter is **undefined**, **null**,or left empty, this API unregisters all callbacks for the specified URI. |
 
 **Error codes:**
 
@@ -1206,13 +1226,14 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
 off(event: 'dataChange', type:SubscriptionType, uri: string, callback?: AsyncCallback<ChangeInfo>): void
 ```
 
-Unsubscribes from the data change of the specified URI. This API corresponds to the [on](arkts-arkdata-datashare-datasharehelper-i-sys.md#on-2)API.
+Unsubscribes from the data change of the specified URI. This API corresponds to the [on](dataShare.DataShareHelper.on(event: 'dataChange', type:SubscriptionType, uri: string, callback: AsyncCallback<ChangeInfo>))API.
 
 **Since:** 12
 
@@ -1231,7 +1252,7 @@ Unsubscribes from the data change of the specified URI. This API corresponds to 
 | event | 'dataChange' | Yes | Event/callback type. The value is **'dataChange'**, which indicates the data change. |
 | type | [SubscriptionType](arkts-arkdata-datashare-subscriptiontype-e-sys.md) | Yes | Subscription type. |
 | uri | string | Yes | URI of the data to be observed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ChangeInfo> | No | Callback to unregister. If this parameter is **undefined**,**null**, or left empty, this API unregisters all callbacks for the specified URI. If this parameter is specified, the callback must be the one registered in [on('datachange')](arkts-arkdata-datashare-datasharehelper-i-sys.md#on-2). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ChangeInfo&gt; | No | Callback to unregister. If this parameter is **undefined**,**null**, or left empty, this API unregisters all callbacks for the specified URI. If this parameter is specified, the callback must be the one registered in [on('datachange')](dataShare.DataShareHelper.on(event: 'dataChange', type:SubscriptionType, uri: string, callback: AsyncCallback<ChangeInfo>)). |
 
 **Error codes:**
 
@@ -1257,6 +1278,7 @@ if (dataShareHelper !== undefined) {
 
 ```
 
+<a id="off-2"></a>
 ## off('rdbDataChange')
 
 ```TypeScript
@@ -1295,15 +1317,15 @@ Unsubscribes from the changes of the data corresponding to the specified URI and
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rdbDataChange' | Yes | Event type. The value is **rdbDataChange**, which indicates the change of the RDB data. |
-| uris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the target data. |
+| uris | Array&lt;string&gt; | Yes | URIs of the target data. |
 | templateId | [TemplateId](arkts-arkdata-datashare-templateid-i-sys.md) | Yes | ID of the template that triggers the callback. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RdbDataChangeNode> | No | Callback to unregister. If this parameter is **undefined**, **null**, or left empty, this API unregisters all callbacks for the specified URI. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RdbDataChangeNode&gt; | No | Callback to unregister. If this parameter is **undefined**, **null**, or left empty, this API unregisters all callbacks for the specified URI. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<OperationResult> | Returns the operation result. |
+| Array&lt;OperationResult&gt; | Returns the operation result. |
 
 **Error codes:**
 
@@ -1324,6 +1346,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="off-3"></a>
 ## off('publishedDataChange')
 
 ```TypeScript
@@ -1362,15 +1385,15 @@ Unsubscribes from the change of the published data. Only silent access is suppor
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'publishedDataChange' | Yes | Event type. The value is **publishedDataChange**, which indicates the change of the published data. |
-| uris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the target data. |
+| uris | Array&lt;string&gt; | Yes | URIs of the target data. |
 | subscriberId | string | Yes | Subscriber ID of the callback. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PublishedDataChangeNode> | No | Callback to unregister. If this parameter is **undefined**, **null**, or left empty, this API unregisters all callbacks for the specified URI. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PublishedDataChangeNode&gt; | No | Callback to unregister. If this parameter is **undefined**, **null**, or left empty, this API unregisters all callbacks for the specified URI. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<OperationResult> | Returns the operation result. |
+| Array&lt;OperationResult&gt; | Returns the operation result. |
 
 **Error codes:**
 
@@ -1396,6 +1419,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="on"></a>
 ## on('dataChange')
 
 ```TypeScript
@@ -1404,7 +1428,7 @@ on(type: 'dataChange', uri: string, callback: AsyncCallback<void>): void
 
 Subscribes to the data change of the specified URI. After an observer is registered, the subscriber will receive a notification when the **notifyChange** API is called. This API uses an asynchronous callback to return the result. This function does not support cross-user notification subscription. An application can subscribe to a single URI for a maximum of 51 times.
 
-Notification triggering: In non-silent scenarios, a notification is published if the [notifyChange](arkts-arkdata-datashare-datasharehelper-i-sys.md#notifychange-2) method is called. In silent scenarios,a notification is automatically published if data is modified via silent access.
+Notification triggering: In non-silent scenarios, a notification is published if the [notifyChange](arkts-arkdata-datashare-datasharehelper-i-sys.md#notifychange-1) method is called. In silent scenarios,a notification is automatically published if data is modified via silent access.
 
 **Since:** 9
 
@@ -1422,7 +1446,7 @@ Notification triggering: In non-silent scenarios, a notification is published if
 | --- | --- | --- | --- |
 | type | 'dataChange' | Yes | Event/callback type. The value is **dataChange**, which indicates the data change. |
 | uri | string | Yes | URI of the data to be observed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the data is changed, **err** is **undefined**. Otherwise, this callback is not invoked or **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the data is changed, **err** is **undefined**. Otherwise, this callback is not invoked or **err** is an error object. |
 
 **Error codes:**
 
@@ -1445,6 +1469,7 @@ if (dataShareHelper !== undefined) {
 
 ```
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -1453,7 +1478,7 @@ on(event: 'dataChange', type:SubscriptionType, uri: string, callback: AsyncCallb
 
 Subscribes to the data change of the specified URI. After a change notification is registered, the subscriber will receive a notification when the **notifyChange** API is called. The change notification contains the data change type, URI of the data changed, and the changed data. This API uses an asynchronous callback to return the result. This function does not support cross-user notification subscription. An application can subscribe to a single URI for a maximum of 51 times.
 
-Notification triggering: In non-silent scenarios, a notification is published if the [notifyChange](arkts-arkdata-datashare-datasharehelper-i-sys.md#notifychange-3) method is called. In silent scenarios, a notification is automatically published if data is modified via silent access, but **changeInfo** in the callback is invalid.
+Notification triggering: In non-silent scenarios, a notification is published if the [notifyChange](arkts-arkdata-datashare-datasharehelper-i-sys.md#notifychange-1) method is called. In silent scenarios, a notification is automatically published if data is modified via silent access, but **changeInfo** in the callback is invalid.
 
 **Since:** 12
 
@@ -1472,7 +1497,7 @@ Notification triggering: In non-silent scenarios, a notification is published if
 | event | 'dataChange' | Yes | Event/callback type. The value is **dataChange**, which indicates the data change. |
 | type | [SubscriptionType](arkts-arkdata-datashare-subscriptiontype-e-sys.md) | Yes | Subscription type. |
 | uri | string | Yes | URI of the data to be observed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ChangeInfo> | Yes | Callback to be invoked when data is changed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ChangeInfo&gt; | Yes | Callback to be invoked when data is changed. |
 
 **Error codes:**
 
@@ -1497,6 +1522,7 @@ if (dataShareHelper !== undefined) {
 
 ```
 
+<a id="on-2"></a>
 ## on('rdbDataChange')
 
 ```TypeScript
@@ -1535,15 +1561,15 @@ Subscribes to the changes of the data corresponding to the specified URI and tem
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rdbDataChange' | Yes | Event type. The value is **rdbDataChange**, which indicates the change of the RDB data. If **type** is any other value, there is no response to this API. |
-| uris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the target data. |
+| uris | Array&lt;string&gt; | Yes | URIs of the target data. |
 | templateId | [TemplateId](arkts-arkdata-datashare-templateid-i-sys.md) | Yes | ID of the template that triggers the callback. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RdbDataChangeNode> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **node** is the data changed. Otherwise, this callback is not invoked or **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RdbDataChangeNode&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **node** is the data changed. Otherwise, this callback is not invoked or **err** is an error object. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<OperationResult> | Returns the operation result. |
+| Array&lt;OperationResult&gt; | Returns the operation result. |
 
 **Error codes:**
 
@@ -1579,6 +1605,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="on-3"></a>
 ## on('publishedDataChange')
 
 ```TypeScript
@@ -1617,15 +1644,15 @@ Subscribes to the change of the published data. Only silent access is supported.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'publishedDataChange' | Yes | Event type. The value is **publishedDataChange**, which indicates the change of the published data. |
-| uris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the target data. |
+| uris | Array&lt;string&gt; | Yes | URIs of the target data. |
 | subscriberId | string | Yes | Subscriber ID of the callback. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PublishedDataChangeNode> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **node** is the data changed. Otherwise, this callback is not invoked or **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PublishedDataChangeNode&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **node** is the data changed. Otherwise, this callback is not invoked or **err** is an error object. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<OperationResult> | Returns the operation result. |
+| Array&lt;OperationResult&gt; | Returns the operation result. |
 
 **Error codes:**
 
@@ -1661,6 +1688,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="publish"></a>
 ## publish
 
 ```TypeScript
@@ -1700,10 +1728,10 @@ In silent scenarios, the total size of the **data** and **bundleName** parameter
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PublishedItem> | Yes | Data to publish. |
+| data | Array&lt;PublishedItem&gt; | Yes | Data to publish. |
 | bundleName | string | Yes | Application of the data to publish. This parameter is valid only for the private data published. Only the application can read the data. |
 | version | number | Yes | Version of the data to publish. A larger value indicates a later version. If the version of the data published is earlier than that of the data in the database, the data in the database will not be updated. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<OperationResult>> | Yes | Callback used to return the result. If data is published, **err** is **undefined**, and **result** is the data publish result. Otherwise, this callback is not triggered or **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;OperationResult&gt;&gt; | Yes | Callback used to return the result. If data is published, **err** is **undefined**, and **result** is the data publish result. Otherwise, this callback is not triggered or **err** is an error object. |
 
 **Error codes:**
 
@@ -1736,6 +1764,7 @@ try {
 
 ```
 
+<a id="publish-1"></a>
 ## publish
 
 ```TypeScript
@@ -1772,9 +1801,9 @@ In silent scenarios, the total size of the **data** and **bundleName** parameter
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PublishedItem> | Yes | Data to publish. |
+| data | Array&lt;PublishedItem&gt; | Yes | Data to publish. |
 | bundleName | string | Yes | Application of the data to publish. This parameter is valid only for the private data published. Only the application can read the data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<OperationResult>> | Yes | Callback used to return the result. If data is published, **err** is **undefined**, and **result** is the data publish result. Otherwise, this callback is not triggered or **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;OperationResult&gt;&gt; | Yes | Callback used to return the result. If data is published, **err** is **undefined**, and **result** is the data publish result. Otherwise, this callback is not triggered or **err** is an error object. |
 
 **Error codes:**
 
@@ -1803,6 +1832,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="publish-2"></a>
 ## publish
 
 ```TypeScript
@@ -1827,7 +1857,7 @@ In silent scenarios, the total size of the **data** and **bundleName** parameter
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PublishedItem> | Yes | Data to publish. |
+| data | Array&lt;PublishedItem&gt; | Yes | Data to publish. |
 | bundleName | string | Yes | Application of the data to publish. This parameter is valid only for the private data published. Only the application can read the data. |
 | version | number | No | Version of the data to publish. A larger value indicates a later version. If the version of the data published is earlier than that of the data in the database, the data in the database will not be updated. If the data version is not checked, leave this parameter unspecified. |
 
@@ -1835,7 +1865,7 @@ In silent scenarios, the total size of the **data** and **bundleName** parameter
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<OperationResult>> | Returns the operation result. |
+| Promise&lt;Array&lt;OperationResult&gt;&gt; | Returns the operation result. |
 
 **Error codes:**
 
@@ -1859,6 +1889,7 @@ if (dataShareHelper != undefined) {
 
 ```
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -1876,7 +1907,7 @@ In non-silent scenarios, the size of the **predicates** parameter and the total 
 
 In silent scenarios, the total size of the **uri**, **predicates**, and **columns** parameters passed in this API cannot exceed 200 KB. If the size exceeds the limit, the operation fails or an exception is thrown.
 
-When this API is used to query database data, if the query content exceeds the resource limit, the operation fails and an error is returned. You can retry the operation based on the scenario. For details about the resource limit, see [Silent Access via DatamgrService](../../../../database/share-data-by-silent-access-sys.md#constraints)and [Sharing Data Using DataShareExtensionAbility](../../../../database/share-data-by-datashareextensionability-sys.md#constraints).
+When this API is used to query database data, if the query content exceeds the resource limit, the operation fails and an error is returned. You can retry the operation based on the scenario. For details about the resource limit, see [Silent Access via DatamgrService](docroot://database/share-data-by-silent-access-sys.md#constraints)and [Sharing Data Using DataShareExtensionAbility](docroot://database/share-data-by-datashareextensionability-sys.md#constraints).
 
 **Since:** 9
 
@@ -1904,8 +1935,8 @@ When this API is used to query database data, if the query content exceeds the r
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to query. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Conditions for querying data.The predicate methods supported by **query()** vary depending on the database used. For example, the KVDB supports only **inKeys** and **prefixKey**. If this parameter is left empty, the entire table will be queried by default. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Column to query. If this parameter is left empty, all columns will be queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataShareResultSet> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the result set obtained. Otherwise, **err** is an error object. |
+| columns | Array&lt;string&gt; | Yes | Column to query. If this parameter is left empty, all columns will be queried. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataShareResultSet&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the result set obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1943,6 +1974,7 @@ try {
 
 ```
 
+<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -1959,7 +1991,7 @@ In non-silent scenarios, the size of the **predicates** parameter and the total 
 
 In silent scenarios, the total size of the **uri**, **predicates**, and **columns** parameters passed in this API cannot exceed 200 KB. If the size exceeds the limit, the operation fails or an exception is thrown.
 
-When this API is used to query database data, if the query content exceeds the resource limit, the operation fails and an error is returned. You can retry the operation based on the scenario. For details about the resource limit, see [Silent Access via DatamgrService (ArkTS) (for System Applications Only)](../../../../database/share-data-by-silent-access-sys.md#constraints)and [Sharing Data Using DataShareExtensionAbility (ArkTS) (for System Applications Only)](../../../../database/share-data-by-datashareextensionability-sys.md#constraints).
+When this API is used to query database data, if the query content exceeds the resource limit, the operation fails and an error is returned. You can retry the operation based on the scenario. For details about the resource limit, see [Silent Access via DatamgrService (ArkTS) (for System Applications Only)](docroot://database/share-data-by-silent-access-sys.md#constraints)and [Sharing Data Using DataShareExtensionAbility (ArkTS) (for System Applications Only)](docroot://database/share-data-by-datashareextensionability-sys.md#constraints).
 
 **Since:** 9
 
@@ -1985,13 +2017,13 @@ When this API is used to query database data, if the query content exceeds the r
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to query. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Conditions for querying data.The predicate methods supported by **query()** vary depending on the database used. For example, the KVDB supports only **inKeys** and **prefixKey**. If this parameter is left empty, the entire table will be queried by default. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Column to query. If this parameter is left empty, all columns will be queried. |
+| columns | Array&lt;string&gt; | Yes | Column to query. If this parameter is left empty, all columns will be queried. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataShareResultSet> | Promise used to return the result set obtained. |
+| Promise&lt;DataShareResultSet&gt; | Promise used to return the result set obtained. |
 
 **Error codes:**
 
@@ -2027,6 +2059,7 @@ try {
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -2071,7 +2104,7 @@ In silent scenarios, the total size of the **uri**, **predicates**, and **value*
 | uri | string | Yes | URI of the data to update. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Conditions for updating data.The predicate methods supported by **update()** vary depending on the database in use. For example, only the relational database (RDB) supports predicates. If this parameter is left empty, the entire table will be updated by default. |
 | value | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | Value of the data to update. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the number of updated data records. Otherwise, **err** is an error object.The number of updated data records is not returned if the APIs of the database in use (for example, KVDB) do not support this return. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the number of updated data records. Otherwise, **err** is an error object.The number of updated data records is not returned if the APIs of the database in use (for example, KVDB) do not support this return. |
 
 **Error codes:**
 
@@ -2119,6 +2152,7 @@ try {
 
 ```
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -2153,7 +2187,7 @@ In silent scenarios, the total size of the **uri**, **predicates**, and **value*
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of data records updated.The number of updated data records is not returned if the APIs of the database in use(for example, KVDB) do not support this return. |
+| Promise&lt;number&gt; | Promise used to return the number of data records updated.The number of updated data records is not returned if the APIs of the database in use(for example, KVDB) do not support this return. |
 
 **Error codes:**
 

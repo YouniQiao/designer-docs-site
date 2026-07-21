@@ -1,5 +1,6 @@
 # requestToolPermissions (System API)
 
+<a id="requesttoolpermissions"></a>
 ## requestToolPermissions
 
 ```TypeScript
@@ -28,7 +29,7 @@ Queries tool permissions based on the specified operations.This function checks 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PermissionQueryResult> | Promise used to return ${PermissionQueryResult}. |
+| Promise&lt;PermissionQueryResult&gt; | Promise used to return ${PermissionQueryResult}. |
 
 **Error codes:**
 

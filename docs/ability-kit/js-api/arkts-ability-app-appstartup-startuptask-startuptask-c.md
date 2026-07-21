@@ -1,6 +1,6 @@
 # StartupTask
 
-The module provides capabilities related to startup tasks in [AppStartup](../../../../application-models/app-startup.md).
+The module provides capabilities related to startup tasks in [AppStartup](docroot://application-models/app-startup.md).
 
 **Since:** 12
 
@@ -16,6 +16,7 @@ The module provides capabilities related to startup tasks in [AppStartup](../../
 import { StartupTask } from '@kit.AbilityKit';
 ```
 
+<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -42,7 +43,7 @@ Called when all the dependent startup tasks are complete. You can initialize the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Object \| void> | Promise used to return the execution result. |
+| Promise&lt;Object \| void&gt; | Promise used to return the execution result. |
 
 **Example**
 
@@ -69,6 +70,7 @@ export default class StartupTask_001 extends StartupTask {
 
 ```
 
+<a id="ondependencycompleted"></a>
 ## onDependencyCompleted
 
 ```TypeScript
@@ -90,7 +92,7 @@ Called when the dependent startup task is complete.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | dependency | string | Yes | Name of the dependent startup task. |
-| result | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Execution result of [init](StartupTask#init(context: AbilityStageContext)) of the dependent startup task. |
+| result | Object | Yes | Execution result of [init](arkts-ability-app-appstartup-startuptask-startuptask-c.md#init-1) of the dependent startup task. |
 
 **Example**
 

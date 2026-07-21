@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="createx509cert"></a>
 ## createX509Cert
 
 ```TypeScript
@@ -27,7 +28,7 @@ Creates an **X509Cert** instance. This API uses an asynchronous callback to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inStream | [EncodingBlob](arkts-devicecertificate-cert-encodingblob-i.md) | Yes | X.509 certificate serialization data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<X509Cert> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the **X509Cert** instance created. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;X509Cert&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the **X509Cert** instance created. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -80,6 +81,7 @@ cert.createX509Cert(encodingBlob, (error, x509Cert) => {
 ```
 
 
+<a id="createx509cert-1"></a>
 ## createX509Cert
 
 ```TypeScript
@@ -106,7 +108,7 @@ Creates an **X509Cert** instance. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<X509Cert> | Promise used to return the **X509Cert** instance created. |
+| Promise&lt;X509Cert&gt; | Promise used to return the **X509Cert** instance created. |
 
 **Error codes:**
 

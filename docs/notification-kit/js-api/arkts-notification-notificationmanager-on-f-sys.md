@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="on"></a>
 ## on('checkNotification')
 
 ```TypeScript
@@ -33,7 +34,7 @@ This API can be properly called on devices other than wearables. If it is called
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'checkNotification' | Yes | Event type. The value is fixed to **'checkNotification'**. |
-| callback | (checkInfo: NotificationCheckInfo) => NotificationCheckResult | Yes | Pointer to the notification verification function. |
+| callback | (checkInfo: NotificationCheckInfo) =&gt; NotificationCheckResult | Yes | Pointer to the notification verification function. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ try{
 ```
 
 
+<a id="on-1"></a>
 ## on('checkNotification')
 
 ```TypeScript
@@ -98,7 +100,7 @@ This API can be properly called on devices other than wearables. If it is called
 | --- | --- | --- | --- |
 | type | 'checkNotification' | Yes | Event type. The value is fixed to **'checkNotification'**. |
 | checkRequest | [NotificationCheckRequest](arkts-notification-notificationrequest-notificationcheckrequest-i-sys.md) | Yes | Notification verification content. |
-| callback | (checkInfo: NotificationCheckInfo) => Promise<NotificationCheckResult> | Yes | Pointer to the notification verification function. |
+| callback | (checkInfo: NotificationCheckInfo) =&gt; Promise&lt;NotificationCheckResult&gt; | Yes | Pointer to the notification verification function. |
 
 **Error codes:**
 

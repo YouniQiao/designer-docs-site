@@ -14,6 +14,7 @@ Implements a **DragPreview** object. This API does not work in the **OnDrop** an
 import { dragController } from '@kit.ArkUI';
 ```
 
+<a id="animate"></a>
 ## animate
 
 ```TypeScript
@@ -37,7 +38,7 @@ Applies a foreground color animation to the drag preview. This API does not work
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [AnimationOptions](arkts-arkui-arkui-drawabledescriptor-animationoptions-i.md) | Yes | Animation settings. |
-| handler | () =>void | Yes | Callback used to change attributes such as the background mask color. |
+| handler | () =&gt;void | Yes | Callback used to change attributes such as the background mask color. |
 
 **Example**
 
@@ -191,6 +192,7 @@ struct DragControllerPage {
 
 ```
 
+<a id="setforegroundcolor"></a>
 ## setForegroundColor
 
 ```TypeScript

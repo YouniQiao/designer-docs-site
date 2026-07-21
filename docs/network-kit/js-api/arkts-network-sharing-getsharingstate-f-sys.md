@@ -6,6 +6,7 @@
 import { sharing } from '@kit.NetworkKit';
 ```
 
+<a id="getsharingstate"></a>
 ## getSharingState
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the network sharing state for given type.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [SharingIfaceType](arkts-network-sharing-sharingifacetype-e-sys.md) | Yes | Is the enumeration of shareable interface types. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SharingIfaceState> | Yes | the callback of getSharingState. {@code SharingIfaceState}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SharingIfaceState&gt; | Yes | the callback of getSharingState. {@code SharingIfaceState}. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sharing.getSharingState(SHARING_WIFI, (error: BusinessError, data: sharing.Shari
 ```
 
 
+<a id="getsharingstate-1"></a>
 ## getSharingState
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains the network sharing state for given type.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SharingIfaceState> | The promise returned by the function. |
+| Promise&lt;SharingIfaceState&gt; | The promise returned by the function. |
 
 **Error codes:**
 

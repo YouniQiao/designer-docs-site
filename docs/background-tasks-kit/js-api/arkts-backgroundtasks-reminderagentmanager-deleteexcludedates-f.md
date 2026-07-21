@@ -6,6 +6,7 @@
 import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="deleteexcludedates"></a>
 ## deleteExcludeDates
 
 ```TypeScript
@@ -30,7 +31,7 @@ Deletes all non-reminder dates for a recurring calendar reminder with a specific
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { observer } from '@kit.TelephonyKit';
 ```
 
+<a id="off"></a>
 ## off('networkStateChange')
 
 ```TypeScript
@@ -25,7 +26,7 @@ Cancel callback when the network state is updated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'networkStateChange' | Yes | Event type. Indicates the networkStateChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetworkState> | No | Indicates the callback for getting an instance of the {@code NetworkState} class. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetworkState&gt; | No | Indicates the callback for getting an instance of the {@code NetworkState} class. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ observer.off('networkStateChange');
 ```
 
 
+<a id="off-1"></a>
 ## off('signalInfoChange')
 
 ```TypeScript
@@ -70,7 +72,7 @@ Cancel callback when the signal strength is updated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'signalInfoChange' | Yes | Event type. Indicates the signalInfoChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<SignalInformation>> | No | Indicates the callback to unsubscribe from the signalInfoChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;SignalInformation&gt;&gt; | No | Indicates the callback to unsubscribe from the signalInfoChange event. |
 
 **Error codes:**
 
@@ -98,6 +100,7 @@ observer.off('signalInfoChange');
 ```
 
 
+<a id="off-2"></a>
 ## off('cellularDataConnectionStateChange')
 
 ```TypeScript
@@ -117,7 +120,7 @@ Cancel callback when the cellular data link connection state is updated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cellularDataConnectionStateChange' | Yes | Event type. Indicates the cellularDataConnectionStateChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataConnectionStateInfo> | No | Indicates the callback to unsubscribe from the cellularDataConnectionStateChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataConnectionStateInfo&gt; | No | Indicates the callback to unsubscribe from the cellularDataConnectionStateChange event. |
 
 **Error codes:**
 
@@ -143,6 +146,7 @@ observer.off('cellularDataConnectionStateChange');
 ```
 
 
+<a id="off-3"></a>
 ## off('cellularDataFlowChange')
 
 ```TypeScript
@@ -162,7 +166,7 @@ Cancel callback when the uplink and downlink data flow state of cellular data se
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cellularDataFlowChange' | Yes | Event type. Indicates the cellularDataFlowChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataFlowType> | No | Indicates the callback to unsubscribe from the cellularDataFlowChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataFlowType&gt; | No | Indicates the callback to unsubscribe from the cellularDataFlowChange event. |
 
 **Error codes:**
 
@@ -190,6 +194,7 @@ observer.off('cellularDataFlowChange');
 ```
 
 
+<a id="off-4"></a>
 ## off('callStateChange')
 
 ```TypeScript
@@ -209,7 +214,7 @@ Cancel callback when the call state is updated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callStateChange' | Yes | Event type. Indicates the callStateChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallStateInfo> | No | Indicates the callback to unsubscribe from the callStateChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallStateInfo&gt; | No | Indicates the callback to unsubscribe from the callStateChange event. |
 
 **Error codes:**
 
@@ -235,6 +240,7 @@ observer.off('callStateChange');
 ```
 
 
+<a id="off-5"></a>
 ## off('callStateChangeEx')
 
 ```TypeScript
@@ -254,7 +260,7 @@ Cancel callback when the telCall state is updated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callStateChangeEx' | Yes | Event type. Indicates the callStateChangeEx event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TelCallState> | No | Indicates the callback to unsubscribe from the callStateChangeEx event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TelCallState&gt; | No | Indicates the callback to unsubscribe from the callStateChangeEx event. |
 
 **Error codes:**
 
@@ -280,6 +286,7 @@ observer.off('callStateChangeEx');
 ```
 
 
+<a id="off-6"></a>
 ## off('simStateChange')
 
 ```TypeScript
@@ -299,7 +306,7 @@ Cancel callback when the sim state is updated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'simStateChange' | Yes | Event type. Indicates the simStateChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SimStateData> | No | Indicates the callback to unsubscribe from the simStateChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SimStateData&gt; | No | Indicates the callback to unsubscribe from the simStateChange event. |
 
 **Error codes:**
 
@@ -325,6 +332,7 @@ observer.off('simStateChange');
 ```
 
 
+<a id="off-7"></a>
 ## off('iccAccountInfoChange')
 
 ```TypeScript
@@ -344,7 +352,7 @@ Cancel to receive an ICC account change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'iccAccountInfoChange' | Yes | iccAccountInfoChange |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | including state Indicates the ICC account information,and reason Indicates the cause of the change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | including state Indicates the ICC account information,and reason Indicates the cause of the change. |
 
 **Error codes:**
 

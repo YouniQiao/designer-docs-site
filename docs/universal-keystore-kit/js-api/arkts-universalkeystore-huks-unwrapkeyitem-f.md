@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="unwrapkeyitem"></a>
 ## unwrapKeyItem
 
 ```TypeScript
@@ -35,13 +36,13 @@ Unwraps a key. This API uses a promise to return the result.
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key to be unwrapped. |
 | params | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Encryption type of the key to be imported. |
-| wrappedKey | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Ciphertext of the key to be exported. |
+| wrappedKey | Uint8Array | Yes | Ciphertext of the key to be exported. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | Promise that returns the operation result. |
+| Promise&lt;HuksReturnResult&gt; | Promise that returns the operation result. |
 
 **Error codes:**
 

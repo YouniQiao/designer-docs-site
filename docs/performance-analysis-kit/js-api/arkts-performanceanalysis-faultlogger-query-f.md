@@ -6,6 +6,7 @@
 import { FaultLogger } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the fault information about the current application. This API uses an as
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | faultType | [FaultType](arkts-performanceanalysis-faultlogger-faulttype-e.md) | Yes | Fault type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<FaultLogInfo>> | Yes | Callback used to return the fault information array.<br>**value** is the fault information array obtained. If **value** is **undefined**, an exception occurs during the information retrieval. In this case, an error string will be returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;FaultLogInfo&gt;&gt; | Yes | Callback used to return the fault information array.<br>**value** is the fault information array obtained. If **value** is **undefined**, an exception occurs during the information retrieval. In this case, an error string will be returned. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ try {
 ```
 
 
+<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -101,7 +103,7 @@ Obtains the fault information about the current application. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<FaultLogInfo>> | Promise used to return the fault information array. You can obtain the fault information instance in its **then()** method or use **await**.<br>**value** is the fault information array obtained. If **value** is **undefined**,an exception occurs during the information retrieval. |
+| Promise&lt;Array&lt;FaultLogInfo&gt;&gt; | Promise used to return the fault information array. You can obtain the fault information instance in its **then()** method or use **await**.<br>**value** is the fault information array obtained. If **value** is **undefined**,an exception occurs during the information retrieval. |
 
 **Error codes:**
 

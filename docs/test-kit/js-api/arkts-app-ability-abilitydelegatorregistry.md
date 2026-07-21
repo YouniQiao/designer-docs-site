@@ -4,7 +4,7 @@
 
 > **NOTE**  
 >  
-> The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md).
+> The APIs of this module can be used only in [JsUnit](docroot://application-test/unittest-guidelines.md).
 
 **Since:** 9
 
@@ -24,8 +24,8 @@ import { abilityDelegatorRegistry } from '@kit.TestKit';
 
 | Name | Description |
 | --- | --- |
-| [getAbilityDelegator](arkts-test-abilitydelegatorregistry-getabilitydelegator-f.md#getabilitydelegator-1) | Obtains an [AbilityDelegator](application/AbilityDelegator:AbilityDelegator) object. |
-| [getArguments](arkts-test-abilitydelegatorregistry-getarguments-f.md#getarguments-1) | Obtains an [AbilityDelegatorArgs](application/abilityDelegatorArgs:AbilityDelegatorArgs) object. |
+| [getAbilityDelegator](arkts-test-abilitydelegatorregistry-getabilitydelegator-f.md#getabilitydelegator) | Obtains an [AbilityDelegator](application/AbilityDelegator:AbilityDelegator) object. |
+| [getArguments](arkts-test-abilitydelegatorregistry-getarguments-f.md#getarguments) | Obtains an [AbilityDelegatorArgs](application/abilityDelegatorArgs:AbilityDelegatorArgs) object. |
 
 ### Enums
 

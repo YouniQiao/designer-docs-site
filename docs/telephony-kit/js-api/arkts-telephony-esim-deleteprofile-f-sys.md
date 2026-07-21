@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="deleteprofile"></a>
 ## deleteProfile
 
 ```TypeScript
@@ -35,7 +36,7 @@ Deletes the given profile from eUICC.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultCode> | Returns the response to deletes the given profile. |
+| Promise&lt;ResultCode&gt; | Returns the response to deletes the given profile. |
 
 **Error codes:**
 

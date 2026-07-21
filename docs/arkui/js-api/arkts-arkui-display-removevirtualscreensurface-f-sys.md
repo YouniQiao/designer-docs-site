@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="removevirtualscreensurface"></a>
 ## removeVirtualScreenSurface
 
 ```TypeScript
@@ -35,7 +36,7 @@ Remove surface for the virtual screen.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

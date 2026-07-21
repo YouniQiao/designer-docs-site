@@ -6,6 +6,7 @@
 import { bundle } from '@kit.AbilityKit';
 ```
 
+<a id="getbundleinstaller"></a>
 ## getBundleInstaller
 
 ```TypeScript
@@ -32,9 +33,10 @@ Obtains the installation package. This API uses an asynchronous callback to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<BundleInstaller> | Yes | Callback used to return the installation package. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;BundleInstaller&gt; | Yes | Callback used to return the installation package. |
 
 
+<a id="getbundleinstaller-1"></a>
 ## getBundleInstaller
 
 ```TypeScript
@@ -61,5 +63,5 @@ Obtains the installation package. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BundleInstaller> | Promise used to return the installation package. |
+| Promise&lt;BundleInstaller&gt; | Promise used to return the installation package. |
 

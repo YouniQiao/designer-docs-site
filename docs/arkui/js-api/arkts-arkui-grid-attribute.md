@@ -1,8 +1,8 @@
 # Grid properties/events
 
-In addition to [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) and [scrollable component common attributes](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#attributes), the following attributes are also supported.
+In addition to [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) and [scrollable component common attributes](docroot://reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#attributes), the following attributes are also supported.
 
-In addition to [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) and [scrollable component common events](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#events), the following events are also supported.
+In addition to [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) and [scrollable component common events](docroot://reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#events), the following events are also supported.
 
 **Inheritance/Implementation:** GridAttribute extends [ScrollableCommonMethod<GridAttribute>](ScrollableCommonMethod<GridAttribute>)
 
@@ -12,13 +12,14 @@ In addition to [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ab
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="alignitems"></a>
 ## alignItems
 
 ```TypeScript
 alignItems(alignment: Optional<GridItemAlignment>)
 ```
 
-Sets the alignment mode of grid items in the grid. For details about the usage, see [Example 9](../../../../reference/apis-arkui/arkui-ts/ts-container-grid.md#example-9-setting-grid-item-heights-based-on-the-tallest-item-in-the-current-row).
+Sets the alignment mode of grid items in the grid. For details about the usage, see [Example 9](docroot://reference/apis-arkui/arkui-ts/ts-container-grid.md#example-9-setting-grid-item-heights-based-on-the-tallest-item-in-the-current-row).
 
 **Since:** 12
 
@@ -34,19 +35,20 @@ Sets the alignment mode of grid items in the grid. For details about the usage, 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| alignment | [Optional](arkts-arkui-optional-t.md)<GridItemAlignment> | Yes | Alignment mode of grid items in the grid.<br>Default value:**GridItemAlignment.DEFAULT** |
+| alignment | [Optional](arkts-arkui-optional-t.md)&lt;GridItemAlignment&gt; | Yes | Alignment mode of grid items in the grid.<br>Default value:**GridItemAlignment.DEFAULT** |
 
+<a id="cachedcount"></a>
 ## cachedCount
 
 ```TypeScript
 cachedCount(value: number)
 ```
 
-Sets the number of grid items to be cached (preloaded). It works only in [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) and [Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md) with the [virtualScroll](../arkts-apis/arkts-arkui-repeat-repeatattribute-c.md#virtualscroll-1) option enabled. <!--Del-->For details, see [Minimizing White Blocks During Swiping](../../../../performance/arkts-performance-improvement-recommendation.md#minimizing-white-blocks-during-swiping).<!--DelEnd-->
+Sets the number of grid items to be cached (preloaded). It works only in [LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md) and [Repeat](docroot://ui/rendering-control/arkts-new-rendering-control-repeat.md) with the [virtualScroll](../arkts-apis/arkts-arkui-repeatattribute-c.md#virtualscroll-1) option enabled. <!--Del-->For details, see [Minimizing White Blocks During Swiping](docroot://performance/arkts-performance-improvement-recommendation.md#minimizing-white-blocks-during-swiping).<!--DelEnd-->
 
 The number of the grid items to be cached before and after the currently displayed one equals the value of **cachedCount** multiplied by the number of columns.
 
-[LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) and [Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md) with [virtualScroll](../arkts-apis/arkts-arkui-repeat-repeatattribute-c.md#virtualscroll-1) enabled will release **GridItem** components that are outside the display and cache range.
+[LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md) and [Repeat](docroot://ui/rendering-control/arkts-new-rendering-control-repeat.md) with [virtualScroll](../arkts-apis/arkts-arkui-repeatattribute-c.md#virtualscroll-1) enabled will release **GridItem** components that are outside the display and cache range.
 
 **Since:** 7
 
@@ -62,6 +64,7 @@ The number of the grid items to be cached before and after the currently display
 | --- | --- | --- | --- |
 | value | number | Yes | Number of grid items to be cached (preloaded).<br>Default value: the number of rows visible on the screen for vertical scrolling, or the number of columns visible on the screen for horizontal scrolling. The maximum value is 16.<br>Value range:[0, +∞).<br>Values less than 0 are treated as **1**.<br>When **value** is updated using a state variable,the **Grid** component does not trigger a layout update.The number of cached nodes is updated only during the next layout. |
 
+<a id="cachedcount-1"></a>
 ## cachedCount
 
 ```TypeScript
@@ -70,7 +73,7 @@ cachedCount(count: number, show: boolean)
 
 Sets the number of grid items to be cached (preloaded) and specifies whether to display the preloaded nodes.
 
-The number of the grid items to be cached before and after the currently displayed one equals the value of **cachedCount** multiplied by the number of columns. This attribute can be combined with the [clip](arkts-arkui-common-commonmethod-c.md#clip-1) or [clipContent](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#clipcontent14) attributes to display the preloaded nodes.
+The number of the grid items to be cached before and after the currently displayed one equals the value of **cachedCount** multiplied by the number of columns. This attribute can be combined with the [clip](arkts-arkui-commonmethod-c.md#clip-1) or [clipContent](docroot://reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#clipcontent14) attributes to display the preloaded nodes.
 
 **Since:** 14
 
@@ -89,6 +92,7 @@ The number of the grid items to be cached before and after the currently display
 | count | number | Yes | Number of grid items to be cached (preloaded).<br>Default value: the number of rows visible on the screen for vertical scrolling, or the number of columns visible on the screen for horizontal scrolling. The maximum value is 16.<br>Value range:[0, +∞).<br>Values less than 0 are treated as **1**.<br>When the count value is updated using the state variable,the **Grid** component does not trigger a layout update.The number of cached nodes is updated only during the next layout. |
 | show | boolean | Yes | Whether to display the preloaded nodes. If this parameter is set to **true**, the preloaded **GridItem** is displayed. If this parameter is set to **false**, the preloaded **GridItem** is not displayed.<br> Default value: **false** |
 
+<a id="celllength"></a>
 ## cellLength
 
 ```TypeScript
@@ -115,6 +119,7 @@ When **layoutDirection** is **Column** or **ColumnReverse**, the value indicates
 | --- | --- | --- | --- |
 | value | number | Yes | Height per row or width per column.<br>Default value: size of the first element<br>Unit:vp<br>Value range: (0, +∞). If the value is less than or equal to 0, the default value is used. |
 
+<a id="columnsgap"></a>
 ## columnsGap
 
 ```TypeScript
@@ -137,6 +142,7 @@ Sets the gap between columns. A value less than 0 evaluates to the default value
 | --- | --- | --- | --- |
 | value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Gap between columns.<br>Default value: **0**<br>Value range: [0, +∞). |
 
+<a id="columnstemplate"></a>
 ## columnsTemplate
 
 ```TypeScript
@@ -169,6 +175,7 @@ If this attribute is set to **'0fr'**, the column width is 0, and grid item in t
 | --- | --- | --- | --- |
 | value | string | Yes |  |
 
+<a id="columnstemplate-1"></a>
 ## columnsTemplate
 
 ```TypeScript
@@ -179,7 +186,7 @@ Number of columns in the current grid layout. If this attribute is not set, one 
 
 When the value is of the string type, refer to [columnsTemplate(value: string)](GridAttribute#columnsTemplate(value: string | ItemFillPolicy)) for the usage.
 
-When the value is of the **ItemFillPolicy** type, the number of columns is determined based on the [breakpoint type](../../../../ui/arkts-layout-development-grid-layout.md#breakpoints) corresponding to the width of the **Grid** component.
+When the value is of the **ItemFillPolicy** type, the number of columns is determined based on the [breakpoint type](docroot://ui/arkts-layout-development-grid-layout.md#breakpoints) corresponding to the width of the **Grid** component.
 
 For example, the **ItemFillPolicy.BREAKPOINT_DEFAULT** component displays two columns when the component width falls within the sm or smaller breakpoint range, three columns for the md breakpoint range, and five columns for the lg or larger breakpoint range, with each column being 1 fr.
 
@@ -199,6 +206,7 @@ For example, the **ItemFillPolicy.BREAKPOINT_DEFAULT** component displays two co
 | --- | --- | --- | --- |
 | value | string \| ItemFillPolicy | Yes | Number of columns in the current grid layout. |
 
+<a id="edgeeffect"></a>
 ## edgeEffect
 
 ```TypeScript
@@ -221,9 +229,10 @@ Sets the effect used when the scroll boundary is reached.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [EdgeEffect](../arkts-apis/arkts-arkui-enums-edgeeffect-e.md) | Yes | Effect used when the scroll boundary is reached. The spring and shadow effects are supported.<br>Default value: **EdgeEffect.None** |
-| options | [EdgeEffectOptions](arkts-arkui-common-edgeeffectoptions-i.md) | No | Whether to enable the scroll effect when the component content is smaller than the component itself. The value **{ alwaysEnabled: true }** means to enable the scroll effect, and **{ alwaysEnabled: false }** means the opposite.<br>Default value: **{ alwaysEnabled: false }**<br>**Since:** 11 |
+| value | [EdgeEffect](../arkts-apis/arkts-arkui-edgeeffect-e.md) | Yes | Effect used when the scroll boundary is reached. The spring and shadow effects are supported.<br>Default value: **EdgeEffect.None** |
+| options | [EdgeEffectOptions](arkts-arkui-edgeeffectoptions-i.md) | No | Whether to enable the scroll effect when the component content is smaller than the component itself. The value **{ alwaysEnabled: true }** means to enable the scroll effect, and **{ alwaysEnabled: false }** means the opposite.<br>Default value: **{ alwaysEnabled: false }**<br>**Since:** 11 |
 
+<a id="editmode"></a>
 ## editMode
 
 ```TypeScript
@@ -246,6 +255,7 @@ Sets whether to enable edit mode. In edit mode, the user can drag the [grid item
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to enable edit mode. If this parameter is set to **true**, the **Grid** component is in edit mode. If this parameter is set to **false**, the **Grid** component is not in edit mode.<br>Default value: **false** |
 
+<a id="editmodeoptions"></a>
 ## editModeOptions
 
 ```TypeScript
@@ -268,8 +278,9 @@ Sets the options of the edit mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [EditModeOptions](arkts-arkui-common-editmodeoptions-i.md) | No | Edit mode options. |
+| options | [EditModeOptions](arkts-arkui-editmodeoptions-i.md) | No | Edit mode options. |
 
+<a id="enableeditmode"></a>
 ## enableEditMode
 
 ```TypeScript
@@ -294,6 +305,7 @@ Sets whether to enable the edit mode for the **Grid** component. After the edit 
 | --- | --- | --- | --- |
 | enabled | boolean \| undefined | Yes | Whether to enable the edit mode. **true** means to enable the edit mode and swiping to select multiple items is supported; **false** or **undefined** means to disable the edit mode and swiping to select multiple items is not supported. |
 
+<a id="enablescrollinteraction"></a>
 ## enableScrollInteraction
 
 ```TypeScript
@@ -320,8 +332,9 @@ Sets whether to support the scrolling gesture.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to support scroll gestures. With the value **true**, scrolling via finger or mouse is enabled. With the value **false**, scrolling via finger or mouse is disabled, but this does not affect the scrolling APIs of the [Scroller](arkts-arkui-scroll-scroller-c.md).<br>Default value: **true** |
+| value | boolean | Yes | Whether to support scroll gestures. With the value **true**, scrolling via finger or mouse is enabled. With the value **false**, scrolling via finger or mouse is disabled, but this does not affect the scrolling APIs of the [Scroller](arkts-arkui-scroller-c.md).<br>Default value: **true** |
 
+<a id="focuswrapmode"></a>
 ## focusWrapMode
 
 ```TypeScript
@@ -344,8 +357,9 @@ Sets the focus wrap mode for cross-axis arrow keys.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [Optional](arkts-arkui-optional-t.md)<FocusWrapMode> | Yes | Focus wrap mode for cross-axis arrow keys.<br>Default value:**FocusWrapMode.DEFAULT**<br>**NOTE**<br>Abnormal values are treated as the default value, meaning that cross-axis arrow keys cannot wrap. |
+| mode | [Optional](arkts-arkui-optional-t.md)&lt;FocusWrapMode&gt; | Yes | Focus wrap mode for cross-axis arrow keys.<br>Default value:**FocusWrapMode.DEFAULT**<br>**NOTE**<br>Abnormal values are treated as the default value, meaning that cross-axis arrow keys cannot wrap. |
 
+<a id="friction"></a>
 ## friction
 
 ```TypeScript
@@ -370,6 +384,7 @@ Sets the friction coefficient. It applies only to gestures in the scrolling area
 | --- | --- | --- | --- |
 | value | number \| Resource | Yes | Friction coefficient.<br>Default value: **0.9** for wearable devices and **0.6** for non-wearable devices<br>Since API version 11, the default value for non-wearable devices is **0.7**.<br>Since API version 12, the default value for non-wearable devices is **0.75**.<br>Value range: (0, +∞). If this parameter is set to a value less than or equal to 0, the default value is used. |
 
+<a id="layoutdirection"></a>
 ## layoutDirection
 
 ```TypeScript
@@ -390,8 +405,9 @@ Sets the main axis layout direction of the grid.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [GridDirection](arkts-arkui-grid-griddirection-e.md) | Yes | Main axis layout direction of the grid.<br>Default value: **GridDirection.Row** |
+| value | [GridDirection](arkts-arkui-griddirection-e.md) | Yes | Main axis layout direction of the grid.<br>Default value: **GridDirection.Row** |
 
+<a id="maxcount"></a>
 ## maxCount
 
 ```TypeScript
@@ -420,6 +436,7 @@ If the value of **maxCount** is smaller than that of **minCount**, the default v
 | --- | --- | --- | --- |
 | value | number | Yes | Maximum number of rows or columns that can be displayed.<br>Default value: **Infinity** |
 
+<a id="mincount"></a>
 ## minCount
 
 ```TypeScript
@@ -448,6 +465,7 @@ If the value of **minCount** is greater than that of **maxCount**, both **minCou
 | --- | --- | --- | --- |
 | value | number | Yes | Minimum number of rows or columns that can be displayed.<br>Default value: **1** |
 
+<a id="multiselectable"></a>
 ## multiSelectable
 
 ```TypeScript
@@ -470,6 +488,7 @@ Sets whether to enable multiselect. After multiselect is enabled, you can use **
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to enable multiselect.<br>Default value: **false**<br>**false**: Multiselect is disabled. **true**: Multiselect is enabled. |
 
+<a id="nestedscroll"></a>
 ## nestedScroll
 
 ```TypeScript
@@ -492,8 +511,9 @@ Sets the nested scrolling options. Sets the nested scrolling modes for both forw
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [NestedScrollOptions](arkts-arkui-common-nestedscrolloptions-i.md) | Yes | Nested scrolling options. |
+| value | [NestedScrollOptions](arkts-arkui-nestedscrolloptions-i.md) | Yes | Nested scrolling options. |
 
+<a id="oneditmodechange"></a>
 ## onEditModeChange
 
 ```TypeScript
@@ -516,8 +536,9 @@ Triggered when the editing mode status changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> \| undefined | Yes | Callback triggered when editing mode status changes.<br>Passing undefined will unregister the callback. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; \| undefined | Yes | Callback triggered when editing mode status changes.<br>Passing undefined will unregister the callback. |
 
+<a id="onitemdragenter"></a>
 ## onItemDragEnter
 
 ```TypeScript
@@ -538,8 +559,9 @@ Triggered when the dragged item enters the drop target of the grid.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (event: ItemDragInfo) => void | Yes | Information about the drag point. |
+| event | (event: ItemDragInfo) =&gt; void | Yes | Information about the drag point. |
 
+<a id="onitemdragleave"></a>
 ## onItemDragLeave
 
 ```TypeScript
@@ -560,8 +582,9 @@ After binding, a callback is triggered when the component is dragged out of the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (event: ItemDragInfo, itemIndex: number) => void | Yes |  |
+| event | (event: ItemDragInfo, itemIndex: number) =&gt; void | Yes |  |
 
+<a id="onitemdragmove"></a>
 ## onItemDragMove
 
 ```TypeScript
@@ -582,8 +605,9 @@ After binding, a callback is triggered when the drag moves within the range of a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (event: ItemDragInfo, itemIndex: number, insertIndex: number) => void | Yes |  |
+| event | (event: ItemDragInfo, itemIndex: number, insertIndex: number) =&gt; void | Yes |  |
 
+<a id="onitemdragstart"></a>
 ## onItemDragStart
 
 ```TypeScript
@@ -594,11 +618,11 @@ Triggered when a grid item starts to be dragged.
 
 This event is triggered when the user long presses a grid item.
 
-Drag gesture recognition is also initiated by a long press, and the event processing mechanism prioritizes child component events. Therefore, when the grid item is bound to the [LongPressGesture](../arkts-apis/arkts-arkui-gesture-longpressgestureinterface-i.md), it cannot be dragged. In light of this, if both long press and drag operations are required on the grid item, you can use the universal drag event.
+Drag gesture recognition is also initiated by a long press, and the event processing mechanism prioritizes child component events. Therefore, when the grid item is bound to the [LongPressGesture](../arkts-apis/arkts-arkui-longpressgestureinterface-i.md), it cannot be dragged. In light of this, if both long press and drag operations are required on the grid item, you can use the universal drag event.
 
-The floating grid element being dragged can move within the application window. If it is necessary to restrict its movement range, this can be achieved through custom gestures. For details, see [Example 16: Customizing the Drag Effect for GridItem](../../../../reference/apis-arkui/arkui-ts/ts-container-grid.md#example-16-customizing-the-drag-effect-for-griditem).
+The floating grid element being dragged can move within the application window. If it is necessary to restrict its movement range, this can be achieved through custom gestures. For details, see [Example 16: Customizing the Drag Effect for GridItem](docroot://reference/apis-arkui/arkui-ts/ts-container-grid.md#example-16-customizing-the-drag-effect-for-griditem).
 
-Automatic scrolling is not supported when a grid item is dragged to the edge of the grid. You can use the universal drag event to implement this function. For details, see [Example 17: Dragging GridItem Components with Drag Events](../../../../reference/apis-arkui/arkui-ts/ts-container-grid.md#example-17-dragging-grid-items-with-drag-events).
+Automatic scrolling is not supported when a grid item is dragged to the edge of the grid. You can use the universal drag event to implement this function. For details, see [Example 17: Dragging GridItem Components with Drag Events](docroot://reference/apis-arkui/arkui-ts/ts-container-grid.md#example-17-dragging-grid-items-with-drag-events).
 
 **Since:** 8
 
@@ -612,8 +636,9 @@ Automatic scrolling is not supported when a grid item is dragged to the edge of 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [OnItemDragStartCallback](arkts-arkui-onitemdragstartcallback-t.md) | Yes | Callback triggered when the dragging of a grid element starts.<br>In API version 22 and earlier versions, the parameter type is **(event: ItemDragInfo, itemIndex: number) =&gt; (() =&gt; any) \| void**. For details about the **event** and **itemIndex** parameters, see [OnItemDragStartCallback](arkts-arkui-onitemdragstartcallback-t.md).<br>**Since:** 23 |
+| event | [OnItemDragStartCallback](arkts-arkui-onitemdragstartcallback-t.md) | Yes | Callback triggered when the dragging of a grid element starts.<br>In API version 22 and earlier versions, the parameter type is **(event: ItemDragInfo, itemIndex: number) => (() => any) \| void**. For details about the **event** and **itemIndex** parameters, see [OnItemDragStartCallback](arkts-arkui-onitemdragstartcallback-t.md).<br>**Since:** 23 |
 
+<a id="onitemdrop"></a>
 ## onItemDrop
 
 ```TypeScript
@@ -640,8 +665,9 @@ The component bound to this event can be used as the drag release target.This ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (event: ItemDragInfo, itemIndex: number, insertIndex: number, isSuccess: boolean) => void | Yes |  |
+| event | (event: ItemDragInfo, itemIndex: number, insertIndex: number, isSuccess: boolean) =&gt; void | Yes |  |
 
+<a id="onreachend"></a>
 ## onReachEnd
 
 ```TypeScript
@@ -666,8 +692,9 @@ If the edge effect is set to a spring effect, this event is triggered once when 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () => void | Yes | Callback triggered when the grid reaches the end position. |
+| event | () =&gt; void | Yes | Callback triggered when the grid reaches the end position. |
 
+<a id="onreachstart"></a>
 ## onReachStart
 
 ```TypeScript
@@ -692,8 +719,9 @@ This event is triggered once when the grid is initialized and once when the grid
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () => void | Yes | Callback triggered when the grid reaches the start position. |
+| event | () =&gt; void | Yes | Callback triggered when the grid reaches the start position. |
 
+<a id="onscroll"></a>
 ## onScroll
 
 ```TypeScript
@@ -720,8 +748,9 @@ Called When sliding the grid.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (scrollOffset: number, scrollState: ScrollState) => void | Yes | callback of grid scroll,scrollOffset: Offset relative to the previous frame.The offset is positive when the **Grid** component is scrolled up and negative when it is scrolled down.<br>Unit: vp scrollState: Current scroll state. |
+| event | (scrollOffset: number, scrollState: ScrollState) =&gt; void | Yes | callback of grid scroll,scrollOffset: Offset relative to the previous frame.The offset is positive when the **Grid** component is scrolled up and negative when it is scrolled down.<br>Unit: vp scrollState: Current scroll state. |
 
+<a id="onscrollbarupdate"></a>
 ## onScrollBarUpdate
 
 ```TypeScript
@@ -744,8 +773,9 @@ Triggered at the end of each frame layout in the grid.You can use the callback t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (index: number, offset: number) => ComputedBarAttribute | Yes | callback of grid scroll,index: Index of the first item of the grid.offset: Offset of the displayed first item relative to the start position of the grid, in vp.return ComputedBarAttribute to update scrollbar position and height. |
+| event | (index: number, offset: number) =&gt; ComputedBarAttribute | Yes | callback of grid scroll,index: Index of the first item of the grid.offset: Offset of the displayed first item relative to the start position of the grid, in vp.return ComputedBarAttribute to update scrollbar position and height. |
 
+<a id="onscrollframebegin"></a>
 ## onScrollFrameBegin
 
 ```TypeScript
@@ -756,11 +786,11 @@ When this API is called back, the event parameter passes the scroll offset that 
 
 This event is triggered when either of the following conditions is met:
 
-1. Scrolling is initiated by user interaction (for example, finger swipe, keyboard, or mouse operation).2. The **Grid** component scrolls by inertia.3. Call the [fling](arkts-arkui-scroll-scroller-c.md#fling-1) API to trigger scrolling.
+1. Scrolling is initiated by user interaction (for example, finger swipe, keyboard, or mouse operation).2. The **Grid** component scrolls by inertia.3. Call the [fling](arkts-arkui-scroller-c.md#fling-1) API to trigger scrolling.
 
 This event is not triggered in the following scenarios:
 
-1. A scroll control API other than [fling](arkts-arkui-scroll-scroller-c.md#fling-1) is called.2. The out-of-bounds bounce effect is active.3. The scrollbar is dragged.
+1. A scroll control API other than [fling](arkts-arkui-scroller-c.md#fling-1) is called.2. The out-of-bounds bounce effect is active.3. The scrollbar is dragged.
 
 **Since:** 10
 
@@ -778,6 +808,7 @@ This event is not triggered in the following scenarios:
 | --- | --- | --- | --- |
 | event | [OnScrollFrameBeginCallback](arkts-arkui-onscrollframebegincallback-t.md) | Yes | Callback triggered when each frame scrolling starts.<br>**Since:** 20 |
 
+<a id="onscrollindex"></a>
 ## onScrollIndex
 
 ```TypeScript
@@ -798,15 +829,16 @@ Called when the first or last item displayed in the grid changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (first: number, last: number) => void | Yes | of grid scroll,first is the index of the first item displayed in the grid,last is the index of the last item displayed in the grid. |
+| event | (first: number, last: number) =&gt; void | Yes | of grid scroll,first is the index of the first item displayed in the grid,last is the index of the last item displayed in the grid. |
 
+<a id="onscrollstart"></a>
 ## onScrollStart
 
 ```TypeScript
 onScrollStart(event: () => void)
 ```
 
-Triggered when the grid starts scrolling initiated by the user's finger dragging the grid or its scrollbar. This event is also triggered when the animation contained in the scrolling triggered by [Scroller](arkts-arkui-scroll-scroller-c.md)starts.
+Triggered when the grid starts scrolling initiated by the user's finger dragging the grid or its scrollbar. This event is also triggered when the animation contained in the scrolling triggered by [Scroller](arkts-arkui-scroller-c.md)starts.
 
 **Since:** 10
 
@@ -822,15 +854,16 @@ Triggered when the grid starts scrolling initiated by the user's finger dragging
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () => void | Yes | Callback invoked when the grid starts scrolling. |
+| event | () =&gt; void | Yes | Callback invoked when the grid starts scrolling. |
 
+<a id="onscrollstop"></a>
 ## onScrollStop
 
 ```TypeScript
 onScrollStop(event: () => void)
 ```
 
-Triggered when the grid stops scrolling after the user's finger leaves the screen. This event is also triggered when the animation contained in the scrolling triggered by [Scroller](arkts-arkui-scroll-scroller-c.md) stops.
+Triggered when the grid stops scrolling after the user's finger leaves the screen. This event is also triggered when the animation contained in the scrolling triggered by [Scroller](arkts-arkui-scroller-c.md) stops.
 
 **Since:** 10
 
@@ -846,8 +879,9 @@ Triggered when the grid stops scrolling after the user's finger leaves the scree
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | () => void | Yes | Callback when the grid stops scrolling. |
+| event | () =&gt; void | Yes | Callback when the grid stops scrolling. |
 
+<a id="rowsgap"></a>
 ## rowsGap
 
 ```TypeScript
@@ -870,6 +904,7 @@ Sets the gap between rows. A value less than 0 evaluates to the default value.
 | --- | --- | --- | --- |
 | value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Gap between rows.<br>Default value: **0**<br>Value range: [0, +∞). |
 
+<a id="rowstemplate"></a>
 ## rowsTemplate
 
 ```TypeScript
@@ -902,6 +937,7 @@ If this attribute is set to **'0fr'**, the row height is 0, and grid item in the
 | --- | --- | --- | --- |
 | value | string | Yes |  |
 
+<a id="scrollbar"></a>
 ## scrollBar
 
 ```TypeScript
@@ -922,8 +958,9 @@ Sets the scrollbar state.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [BarState](../arkts-apis/arkts-arkui-enums-barstate-e.md) | Yes | Scrollbar state.<br>Default value: **BarState.Auto**<br>**NOTE**<br>In API version 9and earlier versions, the default value is **BarState.Off**. Since API version 10, the default value is **BarState.Auto**. |
+| value | [BarState](../arkts-apis/arkts-arkui-barstate-e.md) | Yes | Scrollbar state.<br>Default value: **BarState.Auto**<br>**NOTE**<br>In API version 9and earlier versions, the default value is **BarState.Off**. Since API version 10, the default value is **BarState.Auto**. |
 
+<a id="scrollbarcolor"></a>
 ## scrollBarColor
 
 ```TypeScript
@@ -944,8 +981,9 @@ Sets the scrollbar color.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Color \| number \| string | Yes | Scrollbar color.<br>Default value: **'#182431'** (40% opacity)<br>A number value indicates a HEX color in RGB or ARGB format, for example, **0xffffff**.<br>A string value indicates a color in RGB or ARGB format, for example, **'#ffffff'**. |
+| value | [Color](../../apis-arkgraphics3d/arkts-apis/arkts-arkgraphics3d-scenetypes-color-i.md) \| number \| string | Yes | Scrollbar color.<br>Default value: **'#182431'** (40% opacity)<br>A number value indicates a HEX color in RGB or ARGB format, for example, **0xffffff**.<br>A string value indicates a color in RGB or ARGB format, for example, **'#ffffff'**. |
 
+<a id="scrollbarcolor-1"></a>
 ## scrollBarColor
 
 ```TypeScript
@@ -968,8 +1006,9 @@ Sets the scrollbar color. Compared with [scrollBarColor](GridAttribute#scrollBar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | Color \| number \| string \| Resource | Yes | Scrollbar color.<br>Default value: **'#182431'** (40% opacity)<br>A number value indicates a HEX color in RGB or ARGB format, for example, **0xffffff**. A string value indicates a color in RGB or ARGB format, for example, **'#ffffff'**. |
+| color | [Color](../../apis-arkgraphics3d/arkts-apis/arkts-arkgraphics3d-scenetypes-color-i.md) \| number \| string \| Resource | Yes | Scrollbar color.<br>Default value: **'#182431'** (40% opacity)<br>A number value indicates a HEX color in RGB or ARGB format, for example, **0xffffff**. A string value indicates a color in RGB or ARGB format, for example, **'#ffffff'**. |
 
+<a id="scrollbarwidth"></a>
 ## scrollBarWidth
 
 ```TypeScript
@@ -992,6 +1031,7 @@ Sets the scrollbar width. This attribute cannot be set in percentage. After the 
 | --- | --- | --- | --- |
 | value | number \| string | Yes | Scrollbar width.<br>Default value: **4**<br>Unit: vp<br>If this parameter is set to a value less than or equal to 0, the default value is used. The value **0** means not to show the scrollbar. |
 
+<a id="scrollbarwidth-1"></a>
 ## scrollBarWidth
 
 ```TypeScript
@@ -1018,6 +1058,7 @@ If this attribute is not set, the scrollbar width is 4 vp.
 | --- | --- | --- | --- |
 | value | number \| string \| Resource | Yes | Scrollbar width.<br>Unit: vp<br>The value range is [0, +∞). If this parameter is set to a value less than 0, **4vp** is used.The value **0** means not to show the scrollbar. |
 
+<a id="supportanimation"></a>
 ## supportAnimation
 
 ```TypeScript
@@ -1028,7 +1069,7 @@ Sets whether to enable animation. Currently, the grid item drag animation is sup
 
 Drag animations are only supported in grids with fixed size rules; scenarios involving spanning across rows or columns are not supported.
 
-For details about the **supportAnimation** animation effect, see [Example 5: Implementing Dragging in a Grid](../../../../reference/apis-arkui/arkui-ts/ts-container-grid.md#example-5-implementing-dragging-in-a-grid).For other animation effects, customize the drag effect.
+For details about the **supportAnimation** animation effect, see [Example 5: Implementing Dragging in a Grid](docroot://reference/apis-arkui/arkui-ts/ts-container-grid.md#example-5-implementing-dragging-in-a-grid).For other animation effects, customize the drag effect.
 
 **Since:** 8
 
@@ -1044,6 +1085,7 @@ For details about the **supportAnimation** animation effect, see [Example 5: Imp
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to enable animation. If this parameter is set to **true**, the drag animation of **GridItem** is supported. If this parameter is set to **false**, the drag animation of **GridItem** is not supported.<br>Default value: **false** |
 
+<a id="supportemptybranchinlazyloading"></a>
 ## supportEmptyBranchInLazyLoading
 
 ```TypeScript
@@ -1066,8 +1108,9 @@ Sets whether the current **Grid** component supports the use of the if/else rend
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| supported | boolean \| undefined | Yes | Whether the current **Grid** component supports the use of the [if/else](../../../../ui/rendering-control/arkts-rendering-control-ifelse.md) rendering syntax in [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) or [Repeat](../../../../ui/rendering-control/arkts-new-rendering-control-repeat.md) to generate an empty branch node that contains no child component.<br>**true**: yes; **false**: no<br>If the value is **undefined**, it is processed as **false**. |
+| supported | boolean \| undefined | Yes | Whether the current **Grid** component supports the use of the [if/else](docroot://ui/rendering-control/arkts-rendering-control-ifelse.md) rendering syntax in [LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md) or [Repeat](docroot://ui/rendering-control/arkts-new-rendering-control-repeat.md) to generate an empty branch node that contains no child component.<br>**true**: yes; **false**: no<br>If the value is **undefined**, it is processed as **false**. |
 
+<a id="syncload"></a>
 ## syncLoad
 
 ```TypeScript

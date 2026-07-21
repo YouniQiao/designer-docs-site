@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="createx509certchain"></a>
 ## createX509CertChain
 
 ```TypeScript
@@ -32,7 +33,7 @@ Creates an **X509CertChain** instance. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<X509CertChain> | Promise used to return the **X509CertChain** instance created. |
+| Promise&lt;X509CertChain&gt; | Promise used to return the **X509CertChain** instance created. |
 
 **Error codes:**
 
@@ -134,6 +135,7 @@ createX509CertChain();
 ```
 
 
+<a id="createx509certchain-1"></a>
 ## createX509CertChain
 
 ```TypeScript
@@ -155,7 +157,7 @@ Creates an **X509CertChain** instance. This API uses an asynchronous callback to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inStream | [EncodingBlob](arkts-devicecertificate-cert-encodingblob-i.md) | Yes | X.509 certificate serialization data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<X509CertChain> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the **X509CertChain** instance created. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;X509CertChain&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the **X509CertChain** instance created. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -252,6 +254,7 @@ cert.createX509CertChain(encodingBlob, (err, certChain) => {
 ```
 
 
+<a id="createx509certchain-2"></a>
 ## createX509CertChain
 
 ```TypeScript
@@ -272,7 +275,7 @@ Creates an X.509 certificate chain object based on the specified certificates. T
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| certs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<X509Cert> | Yes | Array of X.509 certificates. |
+| certs | Array&lt;X509Cert&gt; | Yes | Array of X.509 certificates. |
 
 **Return value:**
 

@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="disablecellulardataroaming"></a>
 ## disableCellularDataRoaming
 
 ```TypeScript
@@ -29,7 +30,7 @@ Disable cellular data roaming.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the ID of a card slot.The value {@code 0} indicates card 1, and the value {@code 1} indicates card 2. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of disableCellularDataRoaming. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of disableCellularDataRoaming. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ data.disableCellularDataRoaming(0, (err: BusinessError) => {
 ```
 
 
+<a id="disablecellulardataroaming-1"></a>
 ## disableCellularDataRoaming
 
 ```TypeScript
@@ -88,7 +90,7 @@ Disable cellular data roaming.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the disableCellularDataRoaming. |
+| Promise&lt;void&gt; | The promise returned by the disableCellularDataRoaming. |
 
 **Error codes:**
 

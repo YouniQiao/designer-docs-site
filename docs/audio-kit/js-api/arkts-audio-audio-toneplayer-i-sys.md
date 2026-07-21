@@ -16,6 +16,7 @@ Provides APIs for tone playing.
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="load"></a>
 ## load
 
 ```TypeScript
@@ -37,7 +38,7 @@ Loads tone. This method uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [ToneType](arkts-audio-audio-tonetype-e-sys.md) | Yes | Tone type to play. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -55,6 +56,7 @@ tonePlayer.load(audio.ToneType.TONE_TYPE_DIAL_5, (err: BusinessError) => {
 
 ```
 
+<a id="load-1"></a>
 ## load
 
 ```TypeScript
@@ -81,7 +83,7 @@ Loads tone. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -94,6 +96,7 @@ tonePlayer.load(audio.ToneType.TONE_TYPE_DIAL_1).then(() => {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -114,7 +117,7 @@ Releases the player. This method uses an asynchronous callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -132,6 +135,7 @@ tonePlayer.release((err: BusinessError) => {
 
 ```
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -152,7 +156,7 @@ Releases the player. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -165,6 +169,7 @@ tonePlayer.release().then(() => {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -185,7 +190,7 @@ Starts player. This method uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -203,6 +208,7 @@ tonePlayer.start((err: BusinessError) => {
 
 ```
 
+<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -223,7 +229,7 @@ Starts player. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> |  |
+| Promise&lt;void&gt; |  |
 
 **Example**
 
@@ -236,6 +242,7 @@ tonePlayer.start().then(() => {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -256,7 +263,7 @@ Stops player. This method uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -274,6 +281,7 @@ tonePlayer.stop((err: BusinessError) => {
 
 ```
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -294,7 +302,7 @@ Stops player. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 

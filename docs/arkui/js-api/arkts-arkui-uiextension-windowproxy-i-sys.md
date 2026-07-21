@@ -14,6 +14,7 @@ The proxy of the UIExtension window.
 import { uiExtension } from '@kit.ArkUI';
 ```
 
+<a id="hidenonsecurewindows"></a>
 ## hideNonSecureWindows
 
 ```TypeScript
@@ -25,8 +26,8 @@ Sets whether to hide non-secure windows. This API uses a promise to return the r
 > **NOTE**  
 >  
 > - A non-secure window refers to any window that may obstruct the  
-> [EmbeddedComponent](./@internal/component/ets/embedded_component) or  
-> [UIExtensionComponent](./@internal/component/ets/ui_extension_component), such as global floating windows  
+> [EmbeddedComponent](../../apis-arkui/arkts-components/arkts-arkui-embedded_component-i) or  
+> [UIExtensionComponent](../../apis-arkui/arkts-components/arkts-arkui-ui_extension_component-i), such as global floating windows  
 > , host subwindows, and dialog box windows created by the host application (excluding windows of these types  
 > created by system applications).  
 >  
@@ -59,7 +60,7 @@ Sets whether to hide non-secure windows. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -102,6 +103,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="setwatermarkflag"></a>
 ## setWaterMarkFlag
 
 ```TypeScript
@@ -135,7 +137,7 @@ Adds or deletes the watermark flag for this window. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

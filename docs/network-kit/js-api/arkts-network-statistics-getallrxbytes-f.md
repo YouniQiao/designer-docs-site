@@ -6,6 +6,7 @@
 import { statistics } from '@kit.NetworkKit';
 ```
 
+<a id="getallrxbytes"></a>
 ## getAllRxBytes
 
 ```TypeScript
@@ -26,7 +27,7 @@ Queries the data traffic (including all TCP and UDP data packets) received throu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Returns the data traffic received through all NICs. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Returns the data traffic received through all NICs. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ statistics.getAllRxBytes((error: BusinessError, stats: number) => {
 ```
 
 
+<a id="getallrxbytes-1"></a>
 ## getAllRxBytes
 
 ```TypeScript
@@ -74,7 +76,7 @@ Queries the data traffic (including all TCP and UDP data packets) received throu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returned by the function. |
+| Promise&lt;number&gt; | The promise returned by the function. |
 
 **Error codes:**
 

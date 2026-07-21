@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface DataView--><!--Device-unnamed-interface DataView-End-->
 
+<a id="getfloat32"></a>
 ## getFloat32
 
 ```TypeScript
@@ -25,6 +26,7 @@ Gets the Float32 value at the specified byte offset from the start of the view. 
 | --- | --- |
 | number |  |
 
+<a id="getfloat64"></a>
 ## getFloat64
 
 ```TypeScript
@@ -48,6 +50,7 @@ Gets the Float64 value at the specified byte offset from the start of the view. 
 | --- | --- |
 | number |  |
 
+<a id="getint16"></a>
 ## getInt16
 
 ```TypeScript
@@ -71,6 +74,7 @@ Gets the Int16 value at the specified byte offset from the start of the view. Th
 | --- | --- |
 | number |  |
 
+<a id="getint32"></a>
 ## getInt32
 
 ```TypeScript
@@ -94,6 +98,7 @@ Gets the Int32 value at the specified byte offset from the start of the view. Th
 | --- | --- |
 | number |  |
 
+<a id="getint8"></a>
 ## getInt8
 
 ```TypeScript
@@ -116,6 +121,7 @@ Gets the Int8 value at the specified byte offset from the start of the view. The
 | --- | --- |
 | number |  |
 
+<a id="getuint16"></a>
 ## getUint16
 
 ```TypeScript
@@ -139,6 +145,7 @@ Gets the Uint16 value at the specified byte offset from the start of the view. T
 | --- | --- |
 | number |  |
 
+<a id="getuint32"></a>
 ## getUint32
 
 ```TypeScript
@@ -162,6 +169,7 @@ Gets the Uint32 value at the specified byte offset from the start of the view. T
 | --- | --- |
 | number |  |
 
+<a id="getuint8"></a>
 ## getUint8
 
 ```TypeScript
@@ -184,6 +192,7 @@ Gets the Uint8 value at the specified byte offset from the start of the view. Th
 | --- | --- |
 | number |  |
 
+<a id="setfloat32"></a>
 ## setFloat32
 
 ```TypeScript
@@ -202,6 +211,7 @@ Stores an Float32 value at the specified byte offset from the start of the view.
 | value | number | Yes |  |
 | littleEndian | boolean | No |  |
 
+<a id="setfloat64"></a>
 ## setFloat64
 
 ```TypeScript
@@ -220,6 +230,7 @@ Stores an Float64 value at the specified byte offset from the start of the view.
 | value | number | Yes |  |
 | littleEndian | boolean | No |  |
 
+<a id="setint16"></a>
 ## setInt16
 
 ```TypeScript
@@ -238,6 +249,7 @@ Stores an Int16 value at the specified byte offset from the start of the view.
 | value | number | Yes |  |
 | littleEndian | boolean | No |  |
 
+<a id="setint32"></a>
 ## setInt32
 
 ```TypeScript
@@ -256,6 +268,7 @@ Stores an Int32 value at the specified byte offset from the start of the view.
 | value | number | Yes |  |
 | littleEndian | boolean | No |  |
 
+<a id="setint8"></a>
 ## setInt8
 
 ```TypeScript
@@ -273,6 +286,7 @@ Stores an Int8 value at the specified byte offset from the start of the view.
 | byteOffset | number | Yes |  |
 | value | number | Yes |  |
 
+<a id="setuint16"></a>
 ## setUint16
 
 ```TypeScript
@@ -291,6 +305,7 @@ Stores an Uint16 value at the specified byte offset from the start of the view.
 | value | number | Yes |  |
 | littleEndian | boolean | No |  |
 
+<a id="setuint32"></a>
 ## setUint32
 
 ```TypeScript
@@ -309,6 +324,7 @@ Stores an Uint32 value at the specified byte offset from the start of the view.
 | value | number | Yes |  |
 | littleEndian | boolean | No |  |
 
+<a id="setuint8"></a>
 ## setUint8
 
 ```TypeScript

@@ -16,6 +16,7 @@ Provides APIs for managing the media album change request.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="createalbumrequest"></a>
 ## createAlbumRequest
 
 ```TypeScript
@@ -82,6 +83,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="deletealbums"></a>
 ## deleteAlbums
 
 ```TypeScript
@@ -105,13 +107,13 @@ Deletes user albums. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
-| albums | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Album> | Yes | Albums to delete. |
+| albums | Array&lt;Album&gt; | Yes | Albums to delete. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -148,6 +150,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="deletealbumswithuri"></a>
 ## deleteAlbumsWithUri
 
 ```TypeScript
@@ -171,13 +174,13 @@ Deletes user albums by URI. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
-| albumUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of URIs of the albums to be deleted. |
+| albumUris | Array&lt;string&gt; | Yes | Array of URIs of the albums to be deleted. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -203,6 +206,7 @@ async function example(context: Context, albumUri: string) {
 
 ```
 
+<a id="deleteassets"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -228,7 +232,7 @@ Permanently deletes assets from the trash.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Assets to be permanently deleted. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Assets to be permanently deleted. |
 
 **Error codes:**
 
@@ -278,6 +282,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="deleteassetswithuri"></a>
 ## deleteAssetsWithUri
 
 ```TypeScript
@@ -303,7 +308,7 @@ Permanently deletes assets from the trash.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of URIs of the assets to be permanently deleted. |
+| assetUris | Array&lt;string&gt; | Yes | Array of URIs of the assets to be permanently deleted. |
 
 **Error codes:**
 
@@ -314,6 +319,7 @@ Permanently deletes assets from the trash.
 | 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
+<a id="dismiss"></a>
 ## dismiss
 
 ```TypeScript
@@ -362,6 +368,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="dismissassets"></a>
 ## dismissAssets
 
 ```TypeScript
@@ -382,7 +389,7 @@ Removes assets from this portrait album or group photo album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Assets to remove. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Assets to remove. |
 
 **Error codes:**
 
@@ -430,6 +437,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="mergealbum"></a>
 ## mergeAlbum
 
 ```TypeScript
@@ -496,6 +504,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="moveassets"></a>
 ## moveAssets
 
 ```TypeScript
@@ -516,7 +525,7 @@ Moves assets to another album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Assets to move. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Assets to move. |
 | targetAlbum | [Album](arkts-medialibrary-sendablephotoaccesshelper-album-i-sys.md) | Yes | Album to which the assets are to be moved. |
 
 **Error codes:**
@@ -564,6 +573,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="moveassetswithuri"></a>
 ## moveAssetsWithUri
 
 ```TypeScript
@@ -584,7 +594,7 @@ Moves assets in an album to another album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of URIs of the assets to move. |
+| assetUris | Array&lt;string&gt; | Yes | Array of URIs of the assets to move. |
 | targetAlbum | [Album](arkts-medialibrary-sendablephotoaccesshelper-album-i-sys.md) | Yes | Album to which the assets are to be moved. |
 
 **Error codes:**
@@ -596,6 +606,7 @@ Moves assets in an album to another album.
 | 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
+<a id="operateattribute"></a>
 ## operateAttribute
 
 ```TypeScript
@@ -673,6 +684,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="placebefore"></a>
 ## placeBefore
 
 ```TypeScript
@@ -729,6 +741,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="recoverassets"></a>
 ## recoverAssets
 
 ```TypeScript
@@ -749,7 +762,7 @@ Restores the assets corresponding to the specified PhotoAsset object array from 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Assets to recover. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Assets to recover. |
 
 **Error codes:**
 
@@ -791,6 +804,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="recoverassetswithuri"></a>
 ## recoverAssetsWithUri
 
 ```TypeScript
@@ -811,7 +825,7 @@ Restores the assets corresponding to the specified URI string array from the tra
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assetUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of URIs of the assets to recover. |
+| assetUris | Array&lt;string&gt; | Yes | Array of URIs of the assets to recover. |
 
 **Error codes:**
 
@@ -822,6 +836,7 @@ Restores the assets corresponding to the specified URI string array from the tra
 | 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
+<a id="resetcoveruri"></a>
 ## resetCoverUri
 
 ```TypeScript
@@ -874,6 +889,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setalbumnamebyfile"></a>
 ## setAlbumNameByFile
 
 ```TypeScript
@@ -896,7 +912,7 @@ set album name by filemanger.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| name | string | Yes | Album name to set.<br>Value range:1-255<br>Album name parameter specifications:The album name contains 1 to 255 characters.Invalid English characters, including:\ /: *? "'`&lt; &gt; \| {} []It is not allowed to name only. or..English characters are case insensitive.The album name must be unique. |
+| name | string | Yes | Album name to set.<br>Value range:1-255<br>Album name parameter specifications:The album name contains 1 to 255 characters.Invalid English characters, including:\ /: *? "'`< > \| {} []It is not allowed to name only. or..English characters are case insensitive.The album name must be unique. |
 
 **Error codes:**
 
@@ -933,6 +949,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setcoveruri"></a>
 ## setCoverUri
 
 ```TypeScript
@@ -1001,6 +1018,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setdisplaylevel"></a>
 ## setDisplayLevel
 
 ```TypeScript
@@ -1059,6 +1077,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="sethiddenattribute"></a>
 ## setHiddenAttribute
 
 ```TypeScript
@@ -1120,6 +1139,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setisme"></a>
 ## setIsMe
 
 ```TypeScript
@@ -1172,6 +1192,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setuploadstatus"></a>
 ## setUploadStatus
 
 ```TypeScript
@@ -1202,7 +1223,7 @@ Sets whether the albums can be synced to cloud storage or family storage. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

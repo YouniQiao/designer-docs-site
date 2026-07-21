@@ -6,13 +6,14 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getlaunchwant"></a>
 ## getLaunchWant
 
 ```TypeScript
 function getLaunchWant(): Want
 ```
 
-Obtains the **Want** parameters of the [entry UIAbility](../../../../quick-start/application-package-glossary.md#uiability) of the current application.
+Obtains the **Want** parameters of the [entry UIAbility](docroot://quick-start/application-package-glossary.md#uiability) of the current application.
 
 **Since:** 13
 

@@ -1,8 +1,8 @@
 # TextTimer properties/events
 
-In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
+In addition to the [universal attributes](docroot://reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
 
-In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
+In addition to the [universal events](docroot://reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
 
 **Inheritance/Implementation:** TextTimerAttribute extends [CommonMethod<TextTimerAttribute>](CommonMethod<TextTimerAttribute>)
 
@@ -12,6 +12,7 @@ In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="contentmodifier"></a>
 ## contentModifier
 
 ```TypeScript
@@ -34,8 +35,9 @@ Creates a content modifier.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<TextTimerConfiguration> | Yes | Content modifier to apply to the **TextTimer** component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-contentmodifier-i.md)&lt;TextTimerConfiguration&gt; | Yes | Content modifier to apply to the **TextTimer** component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
+<a id="fontcolor"></a>
 ## fontColor
 
 ```TypeScript
@@ -60,6 +62,7 @@ Sets the font color.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color.<br>Default value on wearable devices: **'#c5ffffff'**, indicating that the text is displayed in white.<br>Default value on other devices: **'#e6182431'**, indicating that the text is displayed in black. |
 
+<a id="fontfamily"></a>
 ## fontFamily
 
 ```TypeScript
@@ -84,6 +87,7 @@ Sets the font family.
 | --- | --- | --- | --- |
 | value | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | Font family. The default font is **'HarmonyOS Sans'**.<br>The 'HarmonyOS Sans' font and [registered custom fonts](../arkts-apis/arkts-font.md) are supported for applications.<br>Only the 'HarmonyOS Sans' font is supported for widgets. |
 
+<a id="fontsize"></a>
 ## fontSize
 
 ```TypeScript
@@ -106,8 +110,9 @@ Sets the font size.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Font size. When the value is of the number type in Length, the unit is fp. The default font size is 16 fp. When the value is of the string type in Length:<br>- If the string does not start with a digit, it is treated as 0 fp.<br>- If the string starts with a digit and contains characters other than [pixel units](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md) (such as letters or special characters), the leading numeric part is extracted as the value and the unit is fp. For example, the value **"abc"** is treated as **0fp**, **"10vp"** is treated as **10vp**, and **"10vp11abc"** is treated as **10fp**.The value cannot be a percentage. |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Font size. When the value is of the number type in Length, the unit is fp. The default font size is 16 fp. When the value is of the string type in Length:<br>- If the string does not start with a digit, it is treated as 0 fp.<br>- If the string starts with a digit and contains characters other than [pixel units](docroot://reference/apis-arkui/arkui-ts/ts-pixel-units.md) (such as letters or special characters), the leading numeric part is extracted as the value and the unit is fp. For example, the value **"abc"** is treated as **0fp**, **"10vp"** is treated as **10vp**, and **"10vp11abc"** is treated as **10fp**.The value cannot be a percentage. |
 
+<a id="fontstyle"></a>
 ## fontStyle
 
 ```TypeScript
@@ -132,6 +137,7 @@ Sets the font style.
 | --- | --- | --- | --- |
 | value | [FontStyle](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-fontstyle-e.md) | Yes | Font style, for example, italic.<br>Default value: **FontStyle.Normal** |
 
+<a id="fontweight"></a>
 ## fontWeight
 
 ```TypeScript
@@ -156,6 +162,7 @@ Sets the font weight of the text. If the value is too large, the text in differe
 | --- | --- | --- | --- |
 | value | number \| FontWeight \| ResourceStr | Yes | Font weight of the text. The value range of the number type is [100, 900]. The value interval is 100. A larger value indicates a wider font. If the value of the number type is not within the value range, the default value is **400**. The [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) type supports only strings of the number type, such as **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and **"medium"**, corresponding to the enums in **FontWeight**.<br>Default value: **FontWeight.Normal**<br>The Resource type is supported since API version 20.<br>**Since:** 20 |
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -182,6 +189,7 @@ The timer update frequency is in the minimum unit of **format**. For example, if
 | --- | --- | --- | --- |
 | value | string | Yes | Custom date display format.<br>Default value: **'HH:mm:ss.SS'** |
 
+<a id="ontimer"></a>
 ## onTimer
 
 ```TypeScript
@@ -204,8 +212,9 @@ Event triggered when the time text changes. This event is not triggered when the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (utc: number, elapsedTime: number) => void | Yes | utc: Linux timestamp, which is the amount of time that has elapsed since January 1, 1970, in the minimum unit of the format.<br>elapsedTime: Elapsed time of the timer, in the minimum unit of the format. |
+| event | (utc: number, elapsedTime: number) =&gt; void | Yes | utc: Linux timestamp, which is the amount of time that has elapsed since January 1, 1970, in the minimum unit of the format.<br>elapsedTime: Elapsed time of the timer, in the minimum unit of the format. |
 
+<a id="textshadow"></a>
 ## textShadow
 
 ```TypeScript
@@ -216,7 +225,7 @@ Sets the text shadow. It supports input parameters in an array to implement mult
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -232,5 +241,5 @@ Sets the text shadow. It supports input parameters in an array to implement mult
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ShadowOptions \| Array<ShadowOptions> | Yes | Parameters of the text shadow effect, including the color,blur radius, and offset. |
+| value | [ShadowOptions](arkts-arkui-shadowoptions-i.md) \| Array&lt;ShadowOptions&gt; | Yes | Parameters of the text shadow effect, including the color,blur radius, and offset. |
 

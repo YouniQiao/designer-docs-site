@@ -6,6 +6,7 @@
 import { motion } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="off"></a>
 ## off('operatingHandChanged')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Unsubscribes from operating hand change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'operatingHandChanged' | Yes | Event type. This parameter has a fixed value of **operatingHandChanged**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OperatingHandStatus> | No | Callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OperatingHandStatus&gt; | No | Callback used to return the result. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ try {
 ```
 
 
+<a id="off-1"></a>
 ## off('holdingHandChanged')
 
 ```TypeScript
@@ -78,7 +80,7 @@ Disables listening for holding hand status changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'holdingHandChanged' | Yes | Event type. The value **holdingHandChanged** indicates the holding hand status change event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<HoldingHandStatus> | No | Callback to unregister. If this parameter is not passed, all callbacks for the holding hand status change event will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;HoldingHandStatus&gt; | No | Callback to unregister. If this parameter is not passed, all callbacks for the holding hand status change event will be unregistered. |
 
 **Error codes:**
 

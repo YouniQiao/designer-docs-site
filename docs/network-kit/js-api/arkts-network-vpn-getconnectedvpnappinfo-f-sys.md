@@ -6,6 +6,7 @@
 import { vpn } from '@kit.NetworkKit';
 ```
 
+<a id="getconnectedvpnappinfo"></a>
 ## getConnectedVpnAppInfo
 
 ```TypeScript
@@ -28,7 +29,7 @@ Get the connected VPN App Info.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | The promise returned by the connected VPN App Info. |
+| Promise&lt;Array&lt;string&gt;&gt; | The promise returned by the connected VPN App Info. |
 
 **Error codes:**
 

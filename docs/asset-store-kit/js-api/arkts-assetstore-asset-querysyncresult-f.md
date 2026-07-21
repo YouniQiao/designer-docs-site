@@ -6,6 +6,7 @@
 import { asset } from '@kit.AssetStoreKit';
 ```
 
+<a id="querysyncresult"></a>
 ## querySyncResult
 
 ```TypeScript
@@ -30,7 +31,7 @@ Queries the result of the sync operation. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SyncResult> | Promise used to return the result obtained. |
+| Promise&lt;SyncResult&gt; | Promise used to return the result obtained. |
 
 **Error codes:**
 

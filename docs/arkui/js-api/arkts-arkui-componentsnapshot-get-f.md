@@ -6,6 +6,7 @@
 import { componentSnapshot } from '@kit.ArkUI';
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -42,7 +43,7 @@ Obtains the snapshot of a component that has been loaded based on the provided [
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | id | string | Yes | [ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) of the target component. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return the result. |
 | options | [SnapshotOptions](arkts-arkui-componentsnapshot-snapshotoptions-i.md) | No | Custom settings of the snapshot.<br>**Since:** 12 |
 
 **Error codes:**
@@ -97,6 +98,7 @@ struct SnapshotExample {
 ```
 
 
+<a id="get-1"></a>
 ## get
 
 ```TypeScript
@@ -139,7 +141,7 @@ Obtains the snapshot of a component that has been loaded based on the provided [
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the result. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the result. |
 
 **Error codes:**
 

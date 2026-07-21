@@ -14,6 +14,7 @@ Provides index management capabilities, such as obtaining the locale index list 
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="addlocale"></a>
 ## addLocale
 
 ```TypeScript
@@ -34,7 +35,7 @@ Adds the index list of a new locale to the index list of the current locale to f
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string | Yes | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
+| locale | string | Yes | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
 
 **Example**
 
@@ -46,6 +47,7 @@ indexUtil.addLocale('en-US');
 
 ```
 
+<a id="getindex"></a>
 ## getIndex
 
 ```TypeScript
@@ -84,6 +86,7 @@ let index: string = indexUtil.getIndex('hi'); // index = 'H'
 
 ```
 
+<a id="getindexlist"></a>
 ## getIndexList
 
 ```TypeScript
@@ -104,7 +107,7 @@ Obtains the index list of the current locale.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Index list of the current locale. The first and last elements are **...**. |
+| Array&lt;string&gt; | Index list of the current locale. The first and last elements are **...**. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { vibrator } from '@kit.SensorServiceKit';
 ```
 
+<a id="issupporteffect"></a>
 ## isSupportEffect
 
 ```TypeScript
@@ -25,7 +26,7 @@ Checks whether an effect ID is supported. This API uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | effectId | string | Yes | Effect ID. The value is a string of a maximum of 64 characters. If the length exceeds64 characters, the first 64 characters are used. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that the effect ID is supported, and the value **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that the effect ID is supported, and the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -79,6 +80,7 @@ try {
 ```
 
 
+<a id="issupporteffect-1"></a>
 ## isSupportEffect
 
 ```TypeScript
@@ -103,7 +105,7 @@ Checks whether an effect ID is supported. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise that returns the result. The value **true** means that the effect ID is supported, and the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise that returns the result. The value **true** means that the effect ID is supported, and the value **false** means the opposite. |
 
 **Error codes:**
 

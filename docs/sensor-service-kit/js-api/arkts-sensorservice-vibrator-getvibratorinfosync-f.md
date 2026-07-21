@@ -6,6 +6,7 @@
 import { vibrator } from '@kit.SensorServiceKit';
 ```
 
+<a id="getvibratorinfosync"></a>
 ## getVibratorInfoSync
 
 ```TypeScript
@@ -30,7 +31,7 @@ Queries the vibrator list of one or all devices.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<VibratorInfo> | Vibrator information. |
+| Array&lt;VibratorInfo&gt; | Vibrator information. |
 
 **Example**
 

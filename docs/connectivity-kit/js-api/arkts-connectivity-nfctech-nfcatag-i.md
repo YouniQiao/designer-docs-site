@@ -10,6 +10,7 @@ Provides interfaces to control the read and write of tags that support the NFC-A
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="getatqa"></a>
 ## getAtqa
 
 ```TypeScript
@@ -32,6 +33,7 @@ Obtains the ATQA of an NFC-A tag.
 | --- | --- |
 | number[] | Returns the ATQA of the NFC-A tag. |
 
+<a id="getsak"></a>
 ## getSak
 
 ```TypeScript

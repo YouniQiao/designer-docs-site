@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="getwallpaperbystate"></a>
 ## getWallpaperByState
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the default pixel map of a wallpaper of the specified device type. Retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | the promise returned by the function. |
+| Promise&lt;image.PixelMap&gt; | the promise returned by the function. |
 
 **Error codes:**
 

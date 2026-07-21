@@ -1,15 +1,14 @@
 # BundleResourceInfo (System API)
 
-The module provides resource information of an application, such as the icon and label. The information can be
-obtained by calling
-[getBundleResourceInfo](./../@ohos.bundle.bundleResourceManager:bundleResourceManager.bundleResourceManager.getBundleResourceInfo(bundleName: string, resourceFlags?: int))
-.
+The module provides resource information of an application, such as the icon and label. The information can be obtained by calling [getBundleResourceInfo](./../@ohos.bundle.bundleResourceManager:bundleResourceManager.bundleResourceManager.getBundleResourceInfo(bundleName: string, resourceFlags?: int)).
 
-> **NOTE**
->
+> **NOTE**  
+>  
 > The APIs provided by this module are system APIs.
 
 **Since:** 11
+
+<!--Device-unnamed-export interface BundleResourceInfo--><!--Device-unnamed-export interface BundleResourceInfo-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
@@ -27,6 +26,8 @@ Index of an application clone.
 
 **Since:** 12
 
+<!--Device-BundleResourceInfo-readonly appIndex: int--><!--Device-BundleResourceInfo-readonly appIndex: int-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
 **System API:** This is a system API.
@@ -42,6 +43,8 @@ Bundle name of the application.
 **Type:** string
 
 **Since:** 11
+
+<!--Device-BundleResourceInfo-readonly bundleName: string--><!--Device-BundleResourceInfo-readonly bundleName: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
@@ -59,6 +62,8 @@ drawableDescriptor object of the application icon.
 
 **Since:** 12
 
+<!--Device-BundleResourceInfo-readonly drawableDescriptor: DrawableDescriptor--><!--Device-BundleResourceInfo-readonly drawableDescriptor: DrawableDescriptor-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
 **System API:** This is a system API.
@@ -75,6 +80,8 @@ Application icon, which is encoded using Base64.
 
 **Since:** 11
 
+<!--Device-BundleResourceInfo-readonly icon: string--><!--Device-BundleResourceInfo-readonly icon: string-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 
 **System API:** This is a system API.
@@ -90,6 +97,8 @@ Application label.
 **Type:** string
 
 **Since:** 11
+
+<!--Device-BundleResourceInfo-readonly label: string--><!--Device-BundleResourceInfo-readonly label: string-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Resource
 

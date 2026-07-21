@@ -16,6 +16,7 @@ Before calling any API in Display, you must use [getAllDisplays()](arkts-arkui-d
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="hasimmersivewindow"></a>
 ## hasImmersiveWindow
 
 ```TypeScript
@@ -36,7 +37,7 @@ Checks whether this display contains an immersive window. This API uses an async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. **true** if the display contains an immersive window, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. **true** if the display contains an immersive window, **false** otherwise. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ displayClass.hasImmersiveWindow((err: BusinessError, data: boolean) => {
 
 ```
 
+<a id="hasimmersivewindow-1"></a>
 ## hasImmersiveWindow
 
 ```TypeScript
@@ -88,7 +90,7 @@ Checks whether this display contains an immersive window. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if the display contains an immersive window, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if the display contains an immersive window, **false** otherwise. |
 
 **Error codes:**
 

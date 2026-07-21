@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="stopdtmf"></a>
 ## stopDTMF
 
 ```TypeScript
@@ -29,7 +30,7 @@ Stop DTMF(Dual Tone Multi Frequency).
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of stopDTMF. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of stopDTMF. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ call.stopDTMF(1, (err: BusinessError) => {
 ```
 
 
+<a id="stopdtmf-1"></a>
 ## stopDTMF
 
 ```TypeScript
@@ -87,7 +89,7 @@ Stop DTMF(Dual Tone Multi Frequency).
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the stopDTMF. |
+| Promise&lt;void&gt; | The promise returned by the stopDTMF. |
 
 **Error codes:**
 

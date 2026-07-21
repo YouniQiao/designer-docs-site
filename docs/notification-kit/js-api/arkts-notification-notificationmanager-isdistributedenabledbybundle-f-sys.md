@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="isdistributedenabledbybundle"></a>
 ## isDistributedEnabledByBundle
 
 ```TypeScript
@@ -18,7 +19,7 @@ Checks whether distributed notification is enabled for a specified application. 
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** isDistributedEnabledByBundle(bundle:
+**Substitutes:** [isDistributedEnabledByBundle(bundle:](arkts-notification-notificationmanager-isdistributedenabledbybundle-f-sys.md#isdistributedenabledbybundle-1)
 
 **Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
 
@@ -33,7 +34,7 @@ Checks whether distributed notification is enabled for a specified application. 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that distributed notification is enabled, and **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that distributed notification is enabled, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ notificationManager.isDistributedEnabledByBundle(bundle, isDistributedEnabledByB
 ```
 
 
+<a id="isdistributedenabledbybundle-1"></a>
 ## isDistributedEnabledByBundle
 
 ```TypeScript
@@ -81,7 +83,7 @@ Checks whether distributed notification is enabled for a specified application. 
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** isDistributedEnabledByBundle(bundle:
+**Substitutes:** [isDistributedEnabledByBundle(bundle:](arkts-notification-notificationmanager-isdistributedenabledbybundle-f-sys.md#isdistributedenabledbybundle-1)
 
 **Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
 
@@ -101,7 +103,7 @@ Checks whether distributed notification is enabled for a specified application. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that distributed notification is enabled, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that distributed notification is enabled, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -134,6 +136,7 @@ notificationManager.isDistributedEnabledByBundle(bundle).then((data: boolean) =>
 ```
 
 
+<a id="isdistributedenabledbybundle-2"></a>
 ## isDistributedEnabledByBundle
 
 ```TypeScript
@@ -165,7 +168,7 @@ This API can be properly called on devices other than wearables and TVs. If it i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the cross-device collaboration is enabled, and the value **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the cross-device collaboration is enabled, and the value **false** indicates the opposite. |
 
 **Error codes:**
 

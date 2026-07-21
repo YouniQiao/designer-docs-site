@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="generatelocaloobdata"></a>
 ## generateLocalOobData
 
 ```TypeScript
@@ -36,7 +37,7 @@ Generate out-of-band data of the local device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OobData> | Returns the out-of-band data. |
+| Promise&lt;OobData&gt; | Returns the out-of-band data. |
 
 **Error codes:**
 

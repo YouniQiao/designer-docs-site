@@ -14,6 +14,7 @@ Manages SSAP client. Before calling a SSAP client method,you must use {@link cre
 import { ssap } from '@kit.ConnectivityKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -40,6 +41,7 @@ Closes the client.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -62,7 +64,7 @@ Connects to the server.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -72,6 +74,7 @@ Connects to the server.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -94,7 +97,7 @@ Disconnects from or stops an ongoing connection to a server.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -104,6 +107,7 @@ Disconnects from or stops an ongoing connection to a server.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="getservices"></a>
 ## getServices
 
 ```TypeScript
@@ -126,7 +130,7 @@ Starts discovering all services on server.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Service[]> | Returns the service list of the server. |
+| Promise&lt;Service[]&gt; | Returns the service list of the server. |
 
 **Error codes:**
 
@@ -136,6 +140,7 @@ Starts discovering all services on server.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="offconnectionstatechange"></a>
 ## offConnectionStateChange
 
 ```TypeScript
@@ -156,8 +161,9 @@ Unsubscribes from client connection state changed events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<ConnectionChangeState> | No | Callback used to listen for the SSAP connection state changed event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;ConnectionChangeState&gt; | No | Callback used to listen for the SSAP connection state changed event. |
 
+<a id="offmtuchange"></a>
 ## offMtuChange
 
 ```TypeScript
@@ -178,8 +184,9 @@ Unsubscribes from MTU changed events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | No | Callback used to listen for the MTU changed event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | No | Callback used to listen for the MTU changed event. |
 
+<a id="offpropertychange"></a>
 ## offPropertyChange
 
 ```TypeScript
@@ -200,8 +207,9 @@ Unsubscribe property value changed event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<Property> | No | Callback used to listen for the property value changed event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;Property&gt; | No | Callback used to listen for the property value changed event. |
 
+<a id="onconnectionstatechange"></a>
 ## onConnectionStateChange
 
 ```TypeScript
@@ -224,8 +232,9 @@ This event is accessible only to applications that granted the ohos.permission.N
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<ConnectionChangeState> | Yes | Callback used to listen for the SSAP connection state changed event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;ConnectionChangeState&gt; | Yes | Callback used to listen for the SSAP connection state changed event. |
 
+<a id="onmtuchange"></a>
 ## onMtuChange
 
 ```TypeScript
@@ -248,8 +257,9 @@ This event is accessible only to applications that granted the ohos.permission.N
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<number> | Yes | Callback used to listen for the MTU changed event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Callback used to listen for the MTU changed event. |
 
+<a id="onpropertychange"></a>
 ## onPropertyChange
 
 ```TypeScript
@@ -272,8 +282,9 @@ This event is accessible only to applications that granted the ohos.permission.N
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<Property> | Yes | Callback used to listen for the property value changed event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;Property&gt; | Yes | Callback used to listen for the property value changed event. |
 
+<a id="readproperty"></a>
 ## readProperty
 
 ```TypeScript
@@ -302,7 +313,7 @@ Reads the property of a server.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Property> | Promise used to return the property value. |
+| Promise&lt;Property&gt; | Promise used to return the property value. |
 
 **Error codes:**
 
@@ -314,6 +325,7 @@ Reads the property of a server.
 | 36100044 | NearLink standard UUID not allowed. |
 | 36100099 | Operation failed. |
 
+<a id="requestmtusize"></a>
 ## requestMtuSize
 
 ```TypeScript
@@ -342,7 +354,7 @@ Negotiate the MTU size with server.The negotiation result needs to be obtained b
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -352,6 +364,7 @@ Negotiate the MTU size with server.The negotiation result needs to be obtained b
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="setpropertynotification"></a>
 ## setPropertyNotification
 
 ```TypeScript
@@ -381,7 +394,7 @@ Enables or disables notification of a property when value changed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -393,6 +406,7 @@ Enables or disables notification of a property when value changed.
 | 36100044 | NearLink standard UUID not allowed. |
 | 36100099 | Operation failed. |
 
+<a id="writeproperty"></a>
 ## writeProperty
 
 ```TypeScript
@@ -422,7 +436,7 @@ Writes the property of a server.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

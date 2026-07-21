@@ -14,6 +14,7 @@ Provides the string collation capability.
 import { intl } from '@kit.LocalizationKit';
 ```
 
+<a id="compare"></a>
 ## compare
 
 ```TypeScript
@@ -41,7 +42,7 @@ Compares two strings based on the specified collation rules.
 
 | Type | Description |
 | --- | --- |
-| number | Comparison result.  - If the value is a negative number, the first string comes before the second string.  - If the value is **0**, the first and second strings are in the same sequence.  - If the value is a positive number, the first string is comes after the second string. |
+| number | Comparison result.   - If the value is a negative number, the first string comes before the second string.   - If the value is **0**, the first and second strings are in the same sequence.   - If the value is a positive number, the first string is comes after the second string. |
 
 **Example**
 
@@ -55,6 +56,7 @@ let compareResult = collator.compare('first', 'second'); // compareResult = -1
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -81,6 +83,7 @@ let collator = new intl.Collator();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -101,7 +104,7 @@ Creates a **Collator** object based on the specified locale and options.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string \| Array<string> | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
+| locale | string \| Array&lt;string&gt; | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
 | options | [CollatorOptions](arkts-localization-intl-collatoroptions-i.md) | No | Options for creating a **Collator** object. |
 
 **Example**
@@ -114,6 +117,7 @@ let collator = new intl.Collator('zh-CN', {localeMatcher: 'lookup', usage: 'sort
 
 ```
 
+<a id="resolvedoptions"></a>
 ## resolvedOptions
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="hasmatchedcalllog"></a>
 ## hasMatchedCallLog
 
 ```TypeScript
@@ -40,7 +41,7 @@ By default, the system queries call records generated within 6 hours.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns true if any matching call is found, false otherwise. |
+| Promise&lt;boolean&gt; | Returns true if any matching call is found, false otherwise. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ contact.hasMatchedCallLog(context, phoneNumber, minDuration).then((hasMatch:bool
 ```
 
 
+<a id="hasmatchedcalllog-1"></a>
 ## hasMatchedCallLog
 
 ```TypeScript
@@ -104,7 +106,7 @@ Check whether there are any calls that meet the specified condition.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns true if any matching call is found, false otherwise. |
+| Promise&lt;boolean&gt; | Returns true if any matching call is found, false otherwise. |
 
 **Error codes:**
 

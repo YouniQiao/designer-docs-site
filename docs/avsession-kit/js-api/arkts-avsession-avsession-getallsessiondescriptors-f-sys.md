@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="getallsessiondescriptors"></a>
 ## getAllSessionDescriptors
 
 ```TypeScript
@@ -28,7 +29,7 @@ Get all avsession descriptors of the system
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Readonly<AVSessionDescriptor>>> | Yes | async callback for an array of AVSessionDescriptors. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Readonly&lt;AVSessionDescriptor&gt;&gt;&gt; | Yes | async callback for an array of AVSessionDescriptors. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ struct Index {
 ```
 
 
+<a id="getallsessiondescriptors-1"></a>
 ## getAllSessionDescriptors
 
 ```TypeScript
@@ -94,7 +96,7 @@ Get all avsession descriptors which can be shown on system entrance.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Readonly<AVSessionDescriptor>>> | Promise for an array of AVSessionDescriptors |
+| Promise&lt;Array&lt;Readonly&lt;AVSessionDescriptor&gt;&gt;&gt; | Promise for an array of AVSessionDescriptors |
 
 **Error codes:**
 

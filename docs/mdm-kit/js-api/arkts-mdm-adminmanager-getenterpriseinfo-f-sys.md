@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="getenterpriseinfo"></a>
 ## getEnterpriseInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the enterprise information of the device administrator application. This
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<EnterpriseInfo> | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null** and **data** is the enterprise information of the device administrator application obtained. If the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;EnterpriseInfo&gt; | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null** and **data** is the enterprise information of the device administrator application obtained. If the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ adminManager.getEnterpriseInfo(wantTemp, (err, result) => {
 ```
 
 
+<a id="getenterpriseinfo-1"></a>
 ## getEnterpriseInfo
 
 ```TypeScript
@@ -90,7 +92,7 @@ Obtains the enterprise information of the device administrator application. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<EnterpriseInfo> | Promise used to return the enterprise information of the device administrator application. |
+| Promise&lt;EnterpriseInfo&gt; | Promise used to return the enterprise information of the device administrator application. |
 
 **Error codes:**
 

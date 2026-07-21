@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.MDMKit';
 ```
 
+<a id="iswifidisabled"></a>
 ## isWifiDisabled
 
 ```TypeScript
@@ -18,7 +19,7 @@ Queries whether Wi-Fi is disabled on the current device.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** getDisallowedPolicy(admin:
+**Substitutes:** [getDisallowedPolicy(admin:](arkts-mdm-restrictions-getdisallowedpolicy-f.md#getdisallowedpolicy-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_MANAGE_WIFI
 

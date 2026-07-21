@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="off"></a>
 ## off('printerStateChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Unregisters the listener for printer state change events. This API uses a callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'printerStateChange' | Yes | Listening type. The value is fixed at **'printerStateChange'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to return the result. The value **true** means that the operation is successful, and **false** means the opposite. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to return the result. The value **true** means that the operation is successful, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ print.off('printerStateChange', (data: boolean) => {
 ```
 
 
+<a id="off-1"></a>
 ## off('jobStateChange')
 
 ```TypeScript
@@ -74,7 +76,7 @@ Unregisters the listener for print job state change events. This API uses a call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'jobStateChange' | Yes | Listening type. The value is fixed at **'jobStateChange'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to return the result. The value **true** means that the operation is successful, and **false** means the opposite. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to return the result. The value **true** means that the operation is successful, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -96,6 +98,7 @@ print.off('jobStateChange', (data: boolean) => {
 ```
 
 
+<a id="off-2"></a>
 ## off('extInfoChange')
 
 ```TypeScript
@@ -119,7 +122,7 @@ Unregisters the listener for printer extension information change events. This A
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'extInfoChange' | Yes | Listening type. The value is fixed at **'extInfoChange'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to return the result. The value **true** means that the operation is successful, and **false** means the opposite. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to return the result. The value **true** means that the operation is successful, and **false** means the opposite. |
 
 **Error codes:**
 

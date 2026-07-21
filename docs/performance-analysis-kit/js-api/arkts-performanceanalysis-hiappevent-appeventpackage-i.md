@@ -24,7 +24,7 @@ Event object group.
 
 **Atomic service API**: This parameter can be used in atomic services since API version 12.
 
-**Type:** Array<AppEventInfo>
+**Type:** Array&lt;AppEventInfo&gt;
 
 **Since:** 12
 

@@ -1,5 +1,6 @@
 # getUid
 
+<a id="getuid"></a>
 ## getUid
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the UID of a WantAgent.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | whose UID to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Create a callback method for WantAgent. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Create a callback method for WantAgent. |
 
 **Example**
 
@@ -83,6 +84,7 @@ wantAgent.getWantAgent({
 ```
 
 
+<a id="getuid-1"></a>
 ## getUid
 
 ```TypeScript
@@ -113,7 +115,7 @@ Obtains the UID of a WantAgent.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the UID of the {@link WantAgent} if any; returns {@code -1} otherwise. |
+| Promise&lt;number&gt; | Returns the UID of the {@link WantAgent} if any; returns {@code -1} otherwise. |
 
 **Example**
 

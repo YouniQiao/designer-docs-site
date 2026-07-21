@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Set<T>--><!--Device-unnamed-interface Set<T>-End-->
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -24,6 +25,7 @@ Appends a new element with a specified value to the end of the Set.
 | --- | --- |
 | this |  |
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -32,6 +34,7 @@ clear(): void
 
 <!--Device-Set-clear(): void--><!--Device-Set-clear(): void-End-->
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -54,6 +57,7 @@ Removes a specified value from the Set.
 | --- | --- |
 | boolean |  |
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -68,9 +72,10 @@ Executes a provided function once per each value in the Set object, in insertion
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (value: T, value2: T, set: Set<T>) => void | Yes |  |
+| callbackfn | (value: T, value2: T, set: Set&lt;T&gt;) =&gt; void | Yes |  |
 | thisArg | any | No |  |
 
+<a id="has"></a>
 ## has
 
 ```TypeScript

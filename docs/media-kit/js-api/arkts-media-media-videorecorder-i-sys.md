@@ -16,6 +16,7 @@ The maintenance of this interface has been stopped since version api 9. Please u
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="getinputsurface"></a>
 ## getInputSurface
 
 ```TypeScript
@@ -36,7 +37,7 @@ get input surface.it must be called between prepare completed and start.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the input surface id in string. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the input surface id in string. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ videoRecorder.getInputSurface((err: BusinessError, surfaceId: string) => {
 
 ```
 
+<a id="getinputsurface-1"></a>
 ## getInputSurface
 
 ```TypeScript
@@ -85,7 +87,7 @@ get input surface. it must be called between prepare completed and start.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | A Promise instance used to return the input surface id in string. |
+| Promise&lt;string&gt; | A Promise instance used to return the input surface id in string. |
 
 **Error codes:**
 
@@ -112,6 +114,7 @@ videoRecorder.getInputSurface().then((surfaceId: string) => {
 
 ```
 
+<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -156,6 +159,7 @@ videoRecorder.on('error', (error: BusinessError) => { // Set the 'error' event c
 
 ```
 
+<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -176,7 +180,7 @@ Pauses video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when pause completed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when pause completed. |
 
 **Error codes:**
 
@@ -203,6 +207,7 @@ videoRecorder.pause((err: BusinessError) => {
 
 ```
 
+<a id="pause-1"></a>
 ## pause
 
 ```TypeScript
@@ -223,7 +228,7 @@ Pauses video recording.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return when pause completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when pause completed. |
 
 **Error codes:**
 
@@ -248,6 +253,7 @@ videoRecorder.pause().then(() => {
 
 ```
 
+<a id="prepare"></a>
 ## prepare
 
 ```TypeScript
@@ -271,7 +277,7 @@ Prepares for recording.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [VideoRecorderConfig](arkts-media-media-videorecorderconfig-i-sys.md) | Yes | Recording parameters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when prepare completed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when prepare completed. |
 
 **Error codes:**
 
@@ -322,6 +328,7 @@ videoRecorder.prepare(videoConfig, (err: BusinessError) => {
 
 ```
 
+<a id="prepare-1"></a>
 ## prepare
 
 ```TypeScript
@@ -350,7 +357,7 @@ Prepares for recording.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return when prepare completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when prepare completed. |
 
 **Error codes:**
 
@@ -399,6 +406,7 @@ videoRecorder.prepare(videoConfig).then(() => {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -419,7 +427,7 @@ Releases resources used for video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when release completed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when release completed. |
 
 **Error codes:**
 
@@ -444,6 +452,7 @@ videoRecorder.release((err: BusinessError) => {
 
 ```
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -464,7 +473,7 @@ Releases resources used for video recording.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return when release completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when release completed. |
 
 **Error codes:**
 
@@ -487,6 +496,7 @@ videoRecorder.release().then(() => {
 
 ```
 
+<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -507,7 +517,7 @@ Resets video recording.Before resetting video recording, you must call stop() to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when reset completed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when reset completed. |
 
 **Error codes:**
 
@@ -533,6 +543,7 @@ videoRecorder.reset((err: BusinessError) => {
 
 ```
 
+<a id="reset-1"></a>
 ## reset
 
 ```TypeScript
@@ -553,7 +564,7 @@ Resets video recording.Before resetting video recording, you must call stop() to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return when reset completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when reset completed. |
 
 **Error codes:**
 
@@ -577,6 +588,7 @@ videoRecorder.reset().then(() => {
 
 ```
 
+<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -597,7 +609,7 @@ Resumes video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when resume completed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when resume completed. |
 
 **Error codes:**
 
@@ -624,6 +636,7 @@ videoRecorder.resume((err: BusinessError) => {
 
 ```
 
+<a id="resume-1"></a>
 ## resume
 
 ```TypeScript
@@ -644,7 +657,7 @@ Resumes video recording.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return when resume completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when resume completed. |
 
 **Error codes:**
 
@@ -669,6 +682,7 @@ videoRecorder.resume().then(() => {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -689,7 +703,7 @@ Starts video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when start completed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when start completed. |
 
 **Error codes:**
 
@@ -716,6 +730,7 @@ videoRecorder.start((err: BusinessError) => {
 
 ```
 
+<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -736,7 +751,7 @@ Starts video recording.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return when start completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when start completed. |
 
 **Error codes:**
 
@@ -761,6 +776,7 @@ videoRecorder.start().then(() => {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -781,7 +797,7 @@ Stops video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when stop completed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when stop completed. |
 
 **Error codes:**
 
@@ -808,6 +824,7 @@ videoRecorder.stop((err: BusinessError) => {
 
 ```
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -828,7 +845,7 @@ Stops video recording.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return when stop completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when stop completed. |
 
 **Error codes:**
 

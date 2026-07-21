@@ -6,6 +6,7 @@
 import { config } from '@kit.AccessibilityKit';
 ```
 
+<a id="on"></a>
 ## on('enabledAccessibilityExtensionListChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Adds a listener for changes in the list of enabled accessibility extension abili
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'enabledAccessibilityExtensionListChange' | Yes | Listening type. The value is fixed at **'enabledAccessibilityExtensionListChange'**, indicating listening for changes in the list of enabled accessibility extension abilities. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback invoked when the list of enabled accessibility extension abilities changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback invoked when the list of enabled accessibility extension abilities changes. |
 
 **Error codes:**
 
@@ -40,6 +41,7 @@ Adds a listener for changes in the list of enabled accessibility extension abili
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
 
+<a id="on-1"></a>
 ## on('installedAccessibilityListChange')
 
 ```TypeScript
@@ -63,7 +65,7 @@ Adds a listener for changes in the list of installed accessibility extension abi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'installedAccessibilityListChange' | Yes | Listening type. The value is fixed at **'installedAccessibilityListChange'**, indicating listening for changes in the list of installed accessibility extension abilities. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback invoked when the list of installed accessibility extension abilities changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback invoked when the list of installed accessibility extension abilities changes. |
 
 **Error codes:**
 

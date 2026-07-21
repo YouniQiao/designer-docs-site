@@ -20,7 +20,7 @@ icons?: Array<image.PixelMap>
 
 List of button icons, corresponding one-to-one with **names**, with each icon displayed on its corresponding button. A maximum of 3 icons is supported. The total bytes of icon pixels does not exceed 192 KB (the total bytes of icon pixels is obtained through getPixelBytesNumber). It is recommended that the icon pixel dimensions be 128 x 128. The value defaults to empty. This parameter is mutually exclusive with **iconsResource**; only one of them can be used.
 
-**Type:** Array<image.PixelMap>
+**Type:** Array&lt;image.PixelMap&gt;
 
 **Since:** 11
 
@@ -36,7 +36,7 @@ iconsResource?: Array<Resource>
 
 List of button icon resources, corresponding one-to-one with **names** via Resource references. A maximum of 3resources is supported. The value defaults to empty. This parameter is mutually exclusive with **icons**; only one of them can be used.
 
-**Type:** Array<Resource>
+**Type:** Array&lt;Resource&gt;
 
 **Since:** 12
 
@@ -52,7 +52,7 @@ names?: Array<string>
 
 List of button names. Each name corresponds to the text displayed on a notification button. A maximum of 3buttons is supported. The size of each name does not exceed 202 bytes, and the excess part will be truncated.The value defaults to empty.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 11
 

@@ -6,6 +6,7 @@
 import { observer } from '@kit.TelephonyKit';
 ```
 
+<a id="on"></a>
 ## on('networkStateChange')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Callback when the network state corresponding to the default sim card is updated
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'networkStateChange' | Yes | Event type. Indicates the networkStateChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetworkState> | Yes | Indicates the callback for getting an instance of the {@code NetworkState} class. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetworkState&gt; | Yes | Indicates the callback for getting an instance of the {@code NetworkState} class. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ observer.on('networkStateChange', (data: observer.NetworkState) => {
 ```
 
 
+<a id="on-1"></a>
 ## on('networkStateChange')
 
 ```TypeScript
@@ -72,7 +74,7 @@ Callback when the network state corresponding to the monitored {@code slotId} is
 | --- | --- | --- | --- |
 | type | 'networkStateChange' | Yes | Event type. Indicates the networkStateChange event to be subscribed to. |
 | options | [ObserverOptions](arkts-telephony-observer-observeroptions-i.md) | Yes | Indicates the options for observer. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetworkState> | Yes | Indicates the callback for getting an instance of the {@code NetworkState} class. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetworkState&gt; | Yes | Indicates the callback for getting an instance of the {@code NetworkState} class. |
 
 **Error codes:**
 
@@ -98,6 +100,7 @@ observer.on('networkStateChange', options, (data: observer.NetworkState) => {
 ```
 
 
+<a id="on-2"></a>
 ## on('signalInfoChange')
 
 ```TypeScript
@@ -117,7 +120,7 @@ Callback when the signal strength corresponding to the default sim card is updat
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'signalInfoChange' | Yes | Event type. Indicates the signalInfoChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<SignalInformation>> | Yes | Indicates the callback for getting an array of instances of the classes derived from {@link SignalInformation}. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;SignalInformation&gt;&gt; | Yes | Indicates the callback for getting an array of instances of the classes derived from {@link SignalInformation}. |
 
 **Error codes:**
 
@@ -141,6 +144,7 @@ observer.on('signalInfoChange', (data: Array<radio.SignalInformation>) => {
 ```
 
 
+<a id="on-3"></a>
 ## on('signalInfoChange')
 
 ```TypeScript
@@ -161,7 +165,7 @@ Callback when the signal strength corresponding to a monitored {@code slotId} is
 | --- | --- | --- | --- |
 | type | 'signalInfoChange' | Yes | Event type. Indicates the signalInfoChange event to be subscribed to. |
 | options | [ObserverOptions](arkts-telephony-observer-observeroptions-i.md) | Yes | Indicates the options for observer. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<SignalInformation>> | Yes | Indicates the callback for getting an array of instances of the classes derived from {@link SignalInformation}. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;SignalInformation&gt;&gt; | Yes | Indicates the callback for getting an array of instances of the classes derived from {@link SignalInformation}. |
 
 **Error codes:**
 
@@ -188,6 +192,7 @@ observer.on('signalInfoChange', options, (data: Array<radio.SignalInformation>) 
 ```
 
 
+<a id="on-4"></a>
 ## on('cellularDataConnectionStateChange')
 
 ```TypeScript
@@ -207,7 +212,7 @@ Callback when the cellular data link connection state corresponding to the defau
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cellularDataConnectionStateChange' | Yes | Event type. Indicates the cellularDataConnectionStateChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataConnectionStateInfo> | Yes | Indicates the callback for getting the cellular data link connection state, and networkType Indicates the radio access technology for cellular data services. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataConnectionStateInfo&gt; | Yes | Indicates the callback for getting the cellular data link connection state, and networkType Indicates the radio access technology for cellular data services. |
 
 **Error codes:**
 
@@ -229,6 +234,7 @@ observer.on('cellularDataConnectionStateChange', (data: observer.DataConnectionS
 ```
 
 
+<a id="on-5"></a>
 ## on('cellularDataConnectionStateChange')
 
 ```TypeScript
@@ -252,7 +258,7 @@ Callback when the cellular data link connection state corresponding to the monit
 | --- | --- | --- | --- |
 | type | 'cellularDataConnectionStateChange' | Yes | Event type. Indicates the cellularDataConnectionStateChange event to be subscribed to. |
 | options | [ObserverOptions](arkts-telephony-observer-observeroptions-i.md) | Yes | Indicates the options for observer. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataConnectionStateInfo> | Yes | Indicates the callback for getting the cellular data link connection state, and networkType Indicates the radio access technology for cellular data services. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataConnectionStateInfo&gt; | Yes | Indicates the callback for getting the cellular data link connection state, and networkType Indicates the radio access technology for cellular data services. |
 
 **Error codes:**
 
@@ -277,6 +283,7 @@ observer.on('cellularDataConnectionStateChange', options, (data: observer.DataCo
 ```
 
 
+<a id="on-6"></a>
 ## on('cellularDataFlowChange')
 
 ```TypeScript
@@ -296,7 +303,7 @@ Callback when the uplink and downlink data flow state of cellular data services 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cellularDataFlowChange' | Yes | Event type. Indicates the cellularDataFlowChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataFlowType> | Yes | Indicates the callback for getting the cellular data flow state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataFlowType&gt; | Yes | Indicates the callback for getting the cellular data flow state. |
 
 **Error codes:**
 
@@ -320,6 +327,7 @@ observer.on('cellularDataFlowChange', (data: data.DataFlowType) => {
 ```
 
 
+<a id="on-7"></a>
 ## on('cellularDataFlowChange')
 
 ```TypeScript
@@ -340,7 +348,7 @@ Callback when the uplink and downlink data flow state of cellular data services 
 | --- | --- | --- | --- |
 | type | 'cellularDataFlowChange' | Yes | Event type. Indicates the cellularDataFlowChange event to be subscribed to. |
 | options | [ObserverOptions](arkts-telephony-observer-observeroptions-i.md) | Yes | Indicates the options for observer. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataFlowType> | Yes | Indicates the callback for getting the cellular data flow state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataFlowType&gt; | Yes | Indicates the callback for getting the cellular data flow state. |
 
 **Error codes:**
 
@@ -367,6 +375,7 @@ observer.on('cellularDataFlowChange', options, (data: data.DataFlowType) => {
 ```
 
 
+<a id="on-8"></a>
 ## on('callStateChange')
 
 ```TypeScript
@@ -386,7 +395,7 @@ Callback when the call state corresponding to the default sim card is updated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callStateChange' | Yes | Event type. Indicates the callStateChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallStateInfo> | Yes | Indicates the callback for getting the call state and the called number. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallStateInfo&gt; | Yes | Indicates the callback for getting the call state and the called number. |
 
 **Error codes:**
 
@@ -408,6 +417,7 @@ observer.on('callStateChange', (data: observer.CallStateInfo) => {
 ```
 
 
+<a id="on-9"></a>
 ## on('callStateChange')
 
 ```TypeScript
@@ -428,7 +438,7 @@ Callback when the call state corresponding to the monitored {@code slotId} is up
 | --- | --- | --- | --- |
 | type | 'callStateChange' | Yes | Event type. Indicates the callStateChange event to be subscribed to. |
 | options | [ObserverOptions](arkts-telephony-observer-observeroptions-i.md) | Yes | Indicates the options for observer. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallStateInfo> | Yes | Indicates the callback for getting the call state and the called number. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallStateInfo&gt; | Yes | Indicates the callback for getting the call state and the called number. |
 
 **Error codes:**
 
@@ -453,6 +463,7 @@ observer.on('callStateChange', options, (data: observer.CallStateInfo) => {
 ```
 
 
+<a id="on-10"></a>
 ## on('callStateChangeEx')
 
 ```TypeScript
@@ -472,7 +483,7 @@ Callback when the telCall state corresponding to the monitored {@code slotId} is
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callStateChangeEx' | Yes | Event type. Indicates the callStateChangeEx event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TelCallState> | Yes | Indicates the callback for getting the telCall state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TelCallState&gt; | Yes | Indicates the callback for getting the telCall state. |
 | options | [ObserverOptions](arkts-telephony-observer-observeroptions-i.md) | No | Indicates the options for observer. |
 
 **Error codes:**
@@ -502,6 +513,7 @@ observer.on('callStateChangeEx', callback);
 ```
 
 
+<a id="on-11"></a>
 ## on('simStateChange')
 
 ```TypeScript
@@ -521,7 +533,7 @@ Callback when the sim state corresponding to the default sim card is updated.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'simStateChange' | Yes | Event type. Indicates the simStateChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SimStateData> | Yes | Indicates the callback for getting the SimStateData object.including state Indicates the sim state, and reason Indicates the cause of the change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SimStateData&gt; | Yes | Indicates the callback for getting the SimStateData object.including state Indicates the sim state, and reason Indicates the cause of the change. |
 
 **Error codes:**
 
@@ -543,6 +555,7 @@ observer.on('simStateChange', (data: observer.SimStateData) => {
 ```
 
 
+<a id="on-12"></a>
 ## on('simStateChange')
 
 ```TypeScript
@@ -563,7 +576,7 @@ Callback when the sim state corresponding to the monitored {@code slotId} is upd
 | --- | --- | --- | --- |
 | type | 'simStateChange' | Yes | Event type. Indicates the simStateChange event to be subscribed to. |
 | options | [ObserverOptions](arkts-telephony-observer-observeroptions-i.md) | Yes | Indicates the options for observer. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SimStateData> | Yes | Indicates the callback for getting the SimStateData object. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SimStateData&gt; | Yes | Indicates the callback for getting the SimStateData object. |
 
 **Error codes:**
 
@@ -588,6 +601,7 @@ observer.on('simStateChange', options, (data: observer.SimStateData) => {
 ```
 
 
+<a id="on-13"></a>
 ## on('iccAccountInfoChange')
 
 ```TypeScript
@@ -607,7 +621,7 @@ Receives an ICC account change. This callback is invoked when the ICC account up
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'iccAccountInfoChange' | Yes | iccAccountInfoChange |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | including state Indicates the ICC account information,and reason Indicates the cause of the change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | including state Indicates the ICC account information,and reason Indicates the cause of the change. |
 
 **Error codes:**
 

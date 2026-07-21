@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="anonattestkeyitemasuser"></a>
 ## anonAttestKeyItemAsUser
 
 ```TypeScript
@@ -38,7 +39,7 @@ This operation requires Internet access and takes time.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | Promise used to return the result. If the operation is successful,**certChains** in **HuksReturnResult** is the certificate chain obtained. |
+| Promise&lt;HuksReturnResult&gt; | Promise used to return the result. If the operation is successful,**certChains** in **HuksReturnResult** is the certificate chain obtained. |
 
 **Error codes:**
 

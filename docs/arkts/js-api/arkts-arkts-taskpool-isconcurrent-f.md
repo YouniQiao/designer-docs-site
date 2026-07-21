@@ -6,6 +6,7 @@
 import { taskpool } from '@kit.ArkTS';
 ```
 
+<a id="isconcurrent"></a>
 ## isConcurrent
 
 ```TypeScript
@@ -26,13 +27,13 @@ Checks whether a function is a concurrent function.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| func | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Function to check. |
+| func | Function | Yes | Function to check. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result. The value **true** is returned if the function is a concurrent function, that is, a function decorated with [@Concurrent](../../../../arkts-utils/taskpool-introduction.md#concurrent-decorator);otherwise, **false** is returned. |
+| boolean | Check result. The value **true** is returned if the function is a concurrent function, that is, a function decorated with [@Concurrent](docroot://arkts-utils/taskpool-introduction.md#concurrent-decorator);otherwise, **false** is returned. |
 
 **Example**
 

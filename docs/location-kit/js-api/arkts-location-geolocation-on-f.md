@@ -6,6 +6,7 @@
 import { geolocation } from '@kit.LocationKit';
 ```
 
+<a id="on"></a>
 ## on('locationChange')
 
 ```TypeScript
@@ -32,7 +33,7 @@ Subscribe location changed
 | --- | --- | --- | --- |
 | type | 'locationChange' | Yes | Indicates the location service event to be subscribed to. |
 | request | [LocationRequest](arkts-location-geolocation-locationrequest-i.md) | Yes | Indicates the location request parameters. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Location> | Yes | Indicates the callback for reporting the location result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Location&gt; | Yes | Indicates the callback for reporting the location result. |
 
 **Example**
 
@@ -47,6 +48,7 @@ geolocation.on('locationChange', requestInfo, locationChange);
 ```
 
 
+<a id="on-1"></a>
 ## on('locationServiceState')
 
 ```TypeScript
@@ -72,7 +74,7 @@ Subscribe location switch changed
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'locationServiceState' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Indicates the callback for reporting the location result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for reporting the location result. |
 
 **Example**
 
@@ -86,6 +88,7 @@ geolocation.on('locationServiceState', locationServiceState);
 ```
 
 
+<a id="on-2"></a>
 ## on('cachedGnssLocationsReporting')
 
 ```TypeScript
@@ -112,7 +115,7 @@ Subscribe to cache GNSS locations update messages
 | --- | --- | --- | --- |
 | type | 'cachedGnssLocationsReporting' | Yes | Indicates the location service event to be subscribed to. |
 | request | [CachedGnssLocationsRequest](arkts-location-geolocationmanager-cachedgnsslocationsrequest-i.md) | Yes | Indicates the cached GNSS locations request parameters. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<Location>> | Yes | Indicates the callback for reporting the cached GNSS locations. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;Location&gt;&gt; | Yes | Indicates the callback for reporting the cached GNSS locations. |
 
 **Example**
 
@@ -127,6 +130,7 @@ geolocation.on('cachedGnssLocationsReporting', requestInfo, cachedLocationsCb);
 ```
 
 
+<a id="on-3"></a>
 ## on('gnssStatusChange')
 
 ```TypeScript
@@ -152,7 +156,7 @@ Subscribe gnss status changed
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'gnssStatusChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SatelliteStatusInfo> | Yes | Indicates the callback for reporting the gnss status change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SatelliteStatusInfo&gt; | Yes | Indicates the callback for reporting the gnss status change. |
 
 **Example**
 
@@ -166,6 +170,7 @@ geolocation.on('gnssStatusChange', gnssStatusCb);
 ```
 
 
+<a id="on-4"></a>
 ## on('nmeaMessageChange')
 
 ```TypeScript
@@ -191,7 +196,7 @@ Subscribe nmea message changed
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'nmeaMessageChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | Indicates the callback for reporting the nmea message. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Indicates the callback for reporting the nmea message. |
 
 **Example**
 
@@ -205,6 +210,7 @@ geolocation.on('nmeaMessageChange', nmeaCb );
 ```
 
 
+<a id="on-5"></a>
 ## on('fenceStatusChange')
 
 ```TypeScript

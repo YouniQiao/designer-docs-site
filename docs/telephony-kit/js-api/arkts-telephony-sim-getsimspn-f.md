@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="getsimspn"></a>
 ## getSimSpn
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the service provider name (SPN) of the SIM card in a specified slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the SPN;returns an empty string if no SIM card is inserted or no EFSPN file in the SIM card. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the SPN;returns an empty string if no SIM card is inserted or no EFSPN file in the SIM card. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ sim.getSimSpn(0, (err: BusinessError, data: string) => {
 ```
 
 
+<a id="getsimspn-1"></a>
 ## getSimSpn
 
 ```TypeScript
@@ -79,7 +81,7 @@ Obtains the service provider name (SPN) of the SIM card in a specified slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the SPN; returns an empty string if no SIM card is inserted or no EFSPN file in the SIM card. |
+| Promise&lt;string&gt; | Returns the SPN; returns an empty string if no SIM card is inserted or no EFSPN file in the SIM card. |
 
 **Error codes:**
 

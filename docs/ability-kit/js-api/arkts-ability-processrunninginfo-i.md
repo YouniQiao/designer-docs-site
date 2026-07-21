@@ -20,7 +20,7 @@ bundleNames: Array<string>
 
 Names of all running bundles in the process.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Default:** an array of the bundleNames running in the process
 

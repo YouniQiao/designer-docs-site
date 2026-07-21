@@ -6,6 +6,7 @@
 import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
+<a id="createeffect"></a>
 ## createEffect
 
 ```TypeScript

@@ -18,6 +18,7 @@ This API inherits from [CommonShapeMethod](arkts-arkui-arkui-shape-commonshapeme
 import { RectShape, CircleShape, EllipseShape, PathShape } from '@kit.ArkUI';
 ```
 
+<a id="commands"></a>
 ## commands
 
 ```TypeScript
@@ -50,6 +51,7 @@ Sets the path drawing commands.
 | --- | --- |
 | [PathShape](arkts-arkui-arkui-shape-pathshape-c.md) | **PathShape** object. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

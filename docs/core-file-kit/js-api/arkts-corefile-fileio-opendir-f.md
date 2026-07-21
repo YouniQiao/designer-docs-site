@@ -1,5 +1,6 @@
 # opendir
 
+<a id="opendir"></a>
 ## opendir
 
 ```TypeScript
@@ -28,9 +29,10 @@ Opens a directory. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Dir> | Promise that returns the **Dir** object opened. |
+| Promise&lt;Dir&gt; | Promise that returns the **Dir** object opened. |
 
 
+<a id="opendir-1"></a>
 ## opendir
 
 ```TypeScript
@@ -54,5 +56,5 @@ Opens a file directory. This API uses an asynchronous callback to return the res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the directory to open. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Dir> | Yes | Callback invoked when the directory is opened asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Dir&gt; | Yes | Callback invoked when the directory is opened asynchronously. |
 

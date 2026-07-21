@@ -6,6 +6,7 @@
 import { appControl } from '@kit.AbilityKit';
 ```
 
+<a id="getalldisposedrules"></a>
 ## getAllDisposedRules
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains all the disposed rules set for the current user.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DisposedRuleConfiguration> | Array of disposed rules. |
+| Array&lt;DisposedRuleConfiguration&gt; | Array of disposed rules. |
 
 **Error codes:**
 

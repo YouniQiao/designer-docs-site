@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="refreshglobalhttpproxy"></a>
 ## refreshGlobalHttpProxy
 
 ```TypeScript
@@ -28,7 +29,7 @@ Notifies the system that global proxy re-authentication is required.Upon receivi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HttpProxy> | the promise returned by the function. |
+| Promise&lt;HttpProxy&gt; | the promise returned by the function. |
 
 **Error codes:**
 

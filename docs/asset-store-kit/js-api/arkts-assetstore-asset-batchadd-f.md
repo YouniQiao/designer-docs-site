@@ -6,6 +6,7 @@
 import { asset } from '@kit.AssetStoreKit';
 ```
 
+<a id="batchadd"></a>
 ## batchAdd
 
 ```TypeScript
@@ -26,13 +27,13 @@ Only assets with the same {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRY
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| attributesArray | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AssetMap> | Yes | an array of assets to be added. |
+| attributesArray | Array&lt;AssetMap&gt; | Yes | an array of assets to be added. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BatchResult> | The result of the batch operation, including error information for adding failed assets, if there are any failures. |
+| Promise&lt;BatchResult&gt; | The result of the batch operation, including error information for adding failed assets, if there are any failures. |
 
 **Error codes:**
 

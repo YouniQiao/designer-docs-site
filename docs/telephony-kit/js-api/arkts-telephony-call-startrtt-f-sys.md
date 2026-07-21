@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="startrtt"></a>
 ## startRtt
 
 ```TypeScript
@@ -35,7 +36,7 @@ Start rtt.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the startRtt. |
+| Promise&lt;void&gt; | The promise returned by the startRtt. |
 
 **Error codes:**
 

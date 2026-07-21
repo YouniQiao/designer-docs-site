@@ -12,6 +12,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="autocapitalizationmode"></a>
 ## autoCapitalizationMode
 
 ```TypeScript
@@ -34,15 +35,16 @@ Sets the text auto-capitalization mode. This API provides the capability, but ac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [AutoCapitalizationMode](../arkts-apis/arkts-arkui-text-common-autocapitalizationmode-e.md) | Yes | Auto-capitalization mode. The default state is inactive. |
+| mode | [AutoCapitalizationMode](../arkts-apis/arkts-arkui-autocapitalizationmode-e.md) | Yes | Auto-capitalization mode. The default state is inactive. |
 
+<a id="cancelbutton"></a>
 ## cancelButton
 
 ```TypeScript
 cancelButton(value: CancelButtonOptions | CancelButtonSymbolOptions)
 ```
 
-Sets the style of the cancel button on the right. For details, see [Example 2: Setting Search and Delete Icons](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-search.md#example-2-setting-search-and-delete-icons)and [Example 11: Setting a Custom Symbol-Type Cancel Button](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-search.md#example-11-setting-a-custom-symbol-type-cancel-button).
+Sets the style of the cancel button on the right. For details, see [Example 2: Setting Search and Delete Icons](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-search.md#example-2-setting-search-and-delete-icons)and [Example 11: Setting a Custom Symbol-Type Cancel Button](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-search.md#example-11-setting-a-custom-symbol-type-cancel-button).
 
 The default icon size on wearable devices is 18 fp.
 
@@ -60,8 +62,9 @@ The default icon size on wearable devices is 18 fp.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | CancelButtonOptions \| CancelButtonSymbolOptions | Yes | Style of the cancel button on the right.<br>Default value:<br>{<br>style: CancelButtonStyle.INPUT,<br>icon: {<br>size: '16vp',<br>color: '#99ffffff',<br>src: ' '<br>}<br>}<br>When style is set to **CancelButtonStyle.CONSTANT**, the cancel button is displayed in a default style.<br>**Since:** 12 |
+| value | [CancelButtonOptions](arkts-arkui-cancelbuttonoptions-i.md) \| CancelButtonSymbolOptions | Yes | Style of the cancel button on the right.<br>Default value:<br>{<br>style: CancelButtonStyle.INPUT,<br>icon: {<br>size: '16vp',<br>color: '#99ffffff',<br>src: ' '<br>}<br>}<br>When style is set to **CancelButtonStyle.CONSTANT**, the cancel button is displayed in a default style.<br>**Since:** 12 |
 
+<a id="caretstyle"></a>
 ## caretStyle
 
 ```TypeScript
@@ -84,8 +87,9 @@ Sets the caret style.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [CaretStyle](../arkts-apis/arkts-arkui-text-common-caretstyle-i.md) | Yes | Caret style.<br>Default value:<br>{<br>width: '2.0vp',<br>color: '#007DFF'<br>} |
+| value | [CaretStyle](../arkts-apis/arkts-arkui-caretstyle-i.md) | Yes | Caret style.<br>Default value:<br>{<br>width: '2.0vp',<br>color: '#007DFF'<br>} |
 
+<a id="compressleadingpunctuation"></a>
 ## compressLeadingPunctuation
 
 ```TypeScript
@@ -115,8 +119,9 @@ Sets whether to enable leading punctuation compression.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enabled | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable leading punctuation compression.<br>**true**: Leading punctuation compression is enabled. **false**: Leading punctuation compression is disabled. |
+| enabled | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable leading punctuation compression.<br>**true**: Leading punctuation compression is enabled. **false**: Leading punctuation compression is disabled. |
 
+<a id="copyoption"></a>
 ## copyOption
 
 ```TypeScript
@@ -139,8 +144,9 @@ Dragging is not allowed when **CopyOptions.None** is set.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [CopyOptions](../arkts-apis/arkts-arkui-enums-copyoptions-e.md) | Yes | Whether the input text can be copied.<br>Default value: **CopyOptions.LocalDevice** |
+| value | [CopyOptions](../arkts-apis/arkts-arkui-copyoptions-e.md) | Yes | Whether the input text can be copied.<br>Default value: **CopyOptions.LocalDevice** |
 
+<a id="customkeyboard"></a>
 ## customKeyboard
 
 ```TypeScript
@@ -157,15 +163,15 @@ The custom keyboard is presented by overlaying the original screen. It is not co
 
 The custom keyboard cannot obtain focus, but it blocks gesture events.
 
-By default, the custom keyboard is closed when the input component loses focus. You can also use the [stopEditing](arkts-arkui-search-searchcontroller-c.md#stopediting-1) API to close the keyboard.
+By default, the custom keyboard is closed when the input component loses focus. You can also use the [stopEditing](arkts-arkui-searchcontroller-c.md#stopediting-1) API to close the keyboard.
 
-When setting a custom keyboard, you can bind the [onKeyPreIme](arkts-arkui-common-commonmethod-c.md#onkeypreime-1) event to prevent input from the physical keyboard.
+When setting a custom keyboard, you can bind the [onKeyPreIme](arkts-arkui-commonmethod-c.md#onkeypreime-1) event to prevent input from the physical keyboard.
 
-From API version 23, the [setCustomKeyboardContinueFeature](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#setcustomkeyboardcontinuefeature23)API can be used to enable the continuation feature for custom keyboards. When switching between custom keyboards,the system changes the keyboard directly without triggering the close and open animations.
+From API version 23, the [setCustomKeyboardContinueFeature](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#setcustomkeyboardcontinuefeature23)API can be used to enable the continuation feature for custom keyboards. When switching between custom keyboards,the system changes the keyboard directly without triggering the close and open animations.
 
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 10
 
@@ -181,9 +187,10 @@ From API version 23, the [setCustomKeyboardContinueFeature](../../../../referenc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | CustomBuilder \| ComponentContent \| undefined | Yes | Custom keyboard. If the value is **undefined**, the custom keyboard is closed.<br>**Since:** 22 |
-| options | [KeyboardOptions](arkts-arkui-rich-editor-keyboardoptions-i.md) | No | Whether to support keyboard avoidance.<br>**Since:** 12 |
+| value | [CustomBuilder](arkts-arkui-custombuilder-t.md) \| ComponentContent \| undefined | Yes | Custom keyboard. If the value is **undefined**, the custom keyboard is closed.<br>**Since:** 22 |
+| options | [KeyboardOptions](arkts-arkui-keyboardoptions-i.md) | No | Whether to support keyboard avoidance.<br>**Since:** 12 |
 
+<a id="decoration"></a>
 ## decoration
 
 ```TypeScript
@@ -206,8 +213,9 @@ Sets the color, type, and style of the text decorative line.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [TextDecorationOptions](arkts-arkui-common-textdecorationoptions-i.md) | Yes | Text decorative line options.<br>Default value: {<br> type:TextDecorationType.None,<br> color: Color.Black,<br> style: TextDecorationStyle.SOLID <br>} |
+| value | [TextDecorationOptions](arkts-arkui-textdecorationoptions-i.md) | Yes | Text decorative line options.<br>Default value: {<br> type:TextDecorationType.None,<br> color: Color.Black,<br> style: TextDecorationStyle.SOLID <br>} |
 
+<a id="dividercolor"></a>
 ## dividerColor
 
 ```TypeScript
@@ -230,8 +238,9 @@ Sets the color of the text box divider.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](arkts-arkui-optional-t.md)<ColorMetrics> | Yes | Divider color.<br>By default, system theme colors are used: 0x33000000 in light mode (appears as light black), 0x33FFFFFF in dark mode (appears as light white). |
+| color | [Optional](arkts-arkui-optional-t.md)&lt;ColorMetrics&gt; | Yes | Divider color.<br>By default, system theme colors are used: 0x33000000 in light mode (appears as light black), 0x33FFFFFF in dark mode (appears as light white). |
 
+<a id="editmenuoptions"></a>
 ## editMenuOptions
 
 ```TypeScript
@@ -240,9 +249,9 @@ editMenuOptions(editMenu: EditMenuOptions)
 
 Sets the extended options of the custom menu, including the text content, icon, and callback.
 
-When [disableMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20) or
+When [disableMenuItems](docroot://reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20) or
 
-[disableSystemServiceMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20)is used to disable system service menu items in the text selection menu, the disabled menu options will be excluded from the parameter list in the [onCreateMenu](../arkts-apis/arkts-arkui-text-common-editmenuoptions-i.md#oncreatemenu-1) callback of **editMenuOptions**.
+[disableSystemServiceMenuItems](docroot://reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20)is used to disable system service menu items in the text selection menu, the disabled menu options will be excluded from the parameter list in the [onCreateMenu](../arkts-apis/arkts-arkui-editmenuoptions-i.md#oncreatemenu-1) callback of **editMenuOptions**.
 
 **Since:** 12
 
@@ -258,8 +267,9 @@ When [disableMenuItems](../../../../reference/apis-arkui/arkts-apis-uicontext-te
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| editMenu | [EditMenuOptions](../arkts-apis/arkts-arkui-text-common-editmenuoptions-i.md) | Yes | Extended options of the custom menu. |
+| editMenu | [EditMenuOptions](../arkts-apis/arkts-arkui-editmenuoptions-i.md) | Yes | Extended options of the custom menu. |
 
+<a id="enableautospacing"></a>
 ## enableAutoSpacing
 
 ```TypeScript
@@ -282,8 +292,9 @@ Sets whether to enable automatic spacing between Chinese and Western characters.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enabled | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable automatic spacing between Chinese and Western characters.<br>**true**: Enabled. **false**: Disabled.<br>Default value: **false** |
+| enabled | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable automatic spacing between Chinese and Western characters.<br>**true**: Enabled. **false**: Disabled.<br>Default value: **false** |
 
+<a id="enablehapticfeedback"></a>
 ## enableHapticFeedback
 
 ```TypeScript
@@ -292,7 +303,7 @@ enableHapticFeedback(isEnabled: boolean)
 
 Specifies whether to enable haptic feedback.
 
-To enable haptic feedback, you must declare the **ohos.permission.VIBRATE** permission under **requestPermissions** in the [module.json5](../../../../quick-start/module-configuration-file.md) file of the project.
+To enable haptic feedback, you must declare the **ohos.permission.VIBRATE** permission under **requestPermissions** in the [module.json5](docroot://quick-start/module-configuration-file.md) file of the project.
 
 **Since:** 13
 
@@ -310,6 +321,7 @@ To enable haptic feedback, you must declare the **ohos.permission.VIBRATE** perm
 | --- | --- | --- | --- |
 | isEnabled | boolean | Yes | Whether to enable haptic feedback.<br>**true**: Haptic feedback is enabled.**false**: Haptic feedback is disabled.<br>Default value: **true** |
 
+<a id="enablekeyboardonfocus"></a>
 ## enableKeyboardOnFocus
 
 ```TypeScript
@@ -336,6 +348,7 @@ Since API version 10, the **Search** component is bound to the input method by d
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to automatically pop up the soft keyboard when the **Search** component gains focus.<br>**true**: The soft keyboard pops up. **false**: The soft keyboard does not pop up.<br>Default value:**true** |
 
+<a id="enablepreviewtext"></a>
 ## enablePreviewText
 
 ```TypeScript
@@ -362,6 +375,7 @@ The preview content is defined as a temporary, uncommitted input state. Currentl
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to enable preview text.<br>**true**: Preview text is enabled. **false**:Preview text is disabled.<br>Default value: **true** |
 
+<a id="enableselecteddatadetector"></a>
 ## enableSelectedDataDetector
 
 ```TypeScript
@@ -390,6 +404,7 @@ This feature is only effective when [CopyOptions](../../apis-core-file-kit/arkts
 | --- | --- | --- | --- |
 | enable | boolean \| undefined | Yes | Whether to enable entity recognition for selected text.<br>**true**: Entity recognition is enabled. **false**: Entity recognition is disabled. Default value: **true** |
 
+<a id="enterkeytype"></a>
 ## enterKeyType
 
 ```TypeScript
@@ -412,8 +427,9 @@ Sets the type of the Enter key.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [EnterKeyType](arkts-arkui-text-input-enterkeytype-e.md) | Yes | Type of the Enter key.<br>Default value: **EnterKeyType.Search** |
+| value | [EnterKeyType](arkts-arkui-enterkeytype-e.md) | Yes | Type of the Enter key.<br>Default value: **EnterKeyType.Search** |
 
+<a id="fallbacklinespacing"></a>
 ## fallbackLineSpacing
 
 ```TypeScript
@@ -436,8 +452,9 @@ Adapts the line height to the actual text height for overlapped multi-line text.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enabled | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether the line height is adapted to the actual text height.<br>**true**:Line height is adapted to the actual text height. **false**: Line height is not adapted to the actual text height. |
+| enabled | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether the line height is adapted to the actual text height.<br>**true**:Line height is adapted to the actual text height. **false**: Line height is not adapted to the actual text height. |
 
+<a id="fontcolor"></a>
 ## fontColor
 
 ```TypeScript
@@ -462,6 +479,7 @@ Sets the font color of the input text. **fontSize**, **fontStyle**, **fontWeight
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color of the input text.<br>Default value: **'#FF182431'**<br>Default value on wearable devices: **'#dbffffff' ** |
 
+<a id="fontfeature"></a>
 ## fontFeature
 
 ```TypeScript
@@ -494,6 +512,7 @@ For example, the input format for monospaced clock fonts is "ss01" on.
 | --- | --- | --- | --- |
 | value | string | Yes | Font feature. |
 
+<a id="halfleading"></a>
 ## halfLeading
 
 ```TypeScript
@@ -516,8 +535,9 @@ Enables half leading for text, which splits the leading equally between the top 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| halfLeading | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether half leading is enabled. Half leading refers to splitting the leading in half and applying it equally to the top and bottom of the line.<br>**true**: Half leading is enabled. **false**: Half leading is not enabled.<br>Default value: **false** |
+| halfLeading | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether half leading is enabled. Half leading refers to splitting the leading in half and applying it equally to the top and bottom of the line.<br>**true**: Half leading is enabled. **false**: Half leading is not enabled.<br>Default value: **false** |
 
+<a id="includefontpadding"></a>
 ## includeFontPadding
 
 ```TypeScript
@@ -540,8 +560,9 @@ Sets whether to add spacing to the first and last lines to avoid text truncation
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| include | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to add spacing to the first and last lines to avoid text truncation.<br>**true**: Spacing is added to the first and last lines. **false**: Spacing is not added to the first and last lines. |
+| include | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to add spacing to the first and last lines to avoid text truncation.<br>**true**: Spacing is added to the first and last lines. **false**: Spacing is not added to the first and last lines. |
 
+<a id="inputfilter"></a>
 ## inputFilter
 
 ```TypeScript
@@ -569,15 +590,16 @@ If **inputFilter** is set and the entered characters are not null, the filtering
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | Regular expression. |
-| error | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<string> | No | Filtered-out content to return when regular expression matching fails. |
+| error | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;string&gt; | No | Filtered-out content to return when regular expression matching fails. |
 
+<a id="keyboardappearance"></a>
 ## keyboardAppearance
 
 ```TypeScript
 keyboardAppearance(appearance: Optional<KeyboardAppearance>)
 ```
 
-Sets the keyboard appearance for the text box. This setting takes effect only after input method adaptation. For details, see [Immersive Mode of the Input Method Application](../../../../inputmethod/inputmethod-immersive-mode-guide.md).
+Sets the keyboard appearance for the text box. This setting takes effect only after input method adaptation. For details, see [Immersive Mode of the Input Method Application](docroot://inputmethod/inputmethod-immersive-mode-guide.md).
 
 **Since:** 15
 
@@ -593,8 +615,9 @@ Sets the keyboard appearance for the text box. This setting takes effect only af
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| appearance | [Optional](arkts-arkui-optional-t.md)<KeyboardAppearance> | Yes | Appearance of the keyboard.<br>Default value:**KeyboardAppearance.NONE_IMMERSIVE** |
+| appearance | [Optional](arkts-arkui-optional-t.md)&lt;KeyboardAppearance&gt; | Yes | Appearance of the keyboard.<br>Default value:**KeyboardAppearance.NONE_IMMERSIVE** |
 
+<a id="letterspacing"></a>
 ## letterSpacing
 
 ```TypeScript
@@ -623,6 +646,7 @@ This setting applies to every character, including those at line endings.
 | --- | --- | --- | --- |
 | value | number \| string \| Resource | Yes | Letter spacing.<br>Unit: [fp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) |
 
+<a id="lineheight"></a>
 ## lineHeight
 
 ```TypeScript
@@ -647,6 +671,7 @@ Sets the text line height. If the value is less than or equal to **0**, the line
 | --- | --- | --- | --- |
 | value | number \| string \| Resource | Yes | Text line height. |
 
+<a id="maxfontscale"></a>
 ## maxFontScale
 
 ```TypeScript
@@ -669,8 +694,9 @@ Sets the maximum font scale factor for text.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scale | [Optional](arkts-arkui-optional-t.md)<number\|Resource> | Yes | Maximum font scale factor for text. The **undefined** type is supported.<br>Value range:[1, +∞)<br>**NOTE**<br>A value less than 1 is handled as **1**. Abnormal values are ineffective by default.<br>After the **maxFontScale** attribute is set, the content of the **Search** component can be scaled up to 2 times at most.<br>Before use, you need to configure the [configuration.json](../../../../quick-start/app-configuration-file.md#tags-in-the-configuration-file) and [app.json5](../../../../quick-start/app-configuration-file.md) files in the project. For details, see [Example 19: Setting the Minimum and Maximum Font Scale Factors](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-search.md#example-19-setting-the-minimum-and-maximum-font-scale-factors). |
+| scale | [Optional](arkts-arkui-optional-t.md)&lt;number\|Resource&gt; | Yes | Maximum font scale factor for text. The **undefined** type is supported.<br>Value range:[1, +∞)<br>**NOTE**<br>A value less than 1 is handled as **1**. Abnormal values are ineffective by default.<br>After the **maxFontScale** attribute is set, the content of the **Search** component can be scaled up to 2 times at most.<br>Before use, you need to configure the [configuration.json](docroot://quick-start/app-configuration-file.md#tags-in-the-configuration-file) and [app.json5](docroot://quick-start/app-configuration-file.md) files in the project. For details, see [Example 19: Setting the Minimum and Maximum Font Scale Factors](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-search.md#example-19-setting-the-minimum-and-maximum-font-scale-factors). |
 
+<a id="maxfontsize"></a>
 ## maxFontSize
 
 ```TypeScript
@@ -701,6 +727,7 @@ If **maxFontSize** is less than or equal to 0 or **maxFontSize** is less than **
 | --- | --- | --- | --- |
 | value | number \| string \| Resource | Yes | Maximum font size.<br>Unit: [fp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) |
 
+<a id="maxlength"></a>
 ## maxLength
 
 ```TypeScript
@@ -725,6 +752,7 @@ Sets the maximum number of characters for text input. By default, there is no ma
 | --- | --- | --- | --- |
 | value | number | Yes | Maximum number of characters for text input.<br> When the value is less than 0, the default value is used and no limit is applied. |
 
+<a id="minfontscale"></a>
 ## minFontScale
 
 ```TypeScript
@@ -747,8 +775,9 @@ Sets the minimum font scale factor for text.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scale | [Optional](arkts-arkui-optional-t.md)<number\|Resource> | Yes | Minimum font scale factor for text. The **undefined** type is supported.<br>Value range: [0, 1]<br>**NOTE**<br>A value less than 0 is handled as **0**. A value greater than1 is handled as **1**. Abnormal values are ineffective by default.<br>Before use, you need to configure the [configuration.json](../../../../quick-start/app-configuration-file.md#tags-in-the-configuration-file) and [app.json5](../../../../quick-start/app-configuration-file.md) files in the project. For details, see [Example 19: Setting the Minimum and Maximum Font Scale Factors](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-search.md#example-19-setting-the-minimum-and-maximum-font-scale-factors). |
+| scale | [Optional](arkts-arkui-optional-t.md)&lt;number\|Resource&gt; | Yes | Minimum font scale factor for text. The **undefined** type is supported.<br>Value range: [0, 1]<br>**NOTE**<br>A value less than 0 is handled as **0**. A value greater than1 is handled as **1**. Abnormal values are ineffective by default.<br>Before use, you need to configure the [configuration.json](docroot://quick-start/app-configuration-file.md#tags-in-the-configuration-file) and [app.json5](docroot://quick-start/app-configuration-file.md) files in the project. For details, see [Example 19: Setting the Minimum and Maximum Font Scale Factors](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-search.md#example-19-setting-the-minimum-and-maximum-font-scale-factors). |
 
+<a id="minfontsize"></a>
 ## minFontSize
 
 ```TypeScript
@@ -779,6 +808,7 @@ If **minFontSize** is less than or equal to 0, the adaptive font size does not t
 | --- | --- | --- | --- |
 | value | number \| string \| Resource | Yes | Minimum font size.<br>Unit: [fp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) |
 
+<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -803,6 +833,7 @@ In this callback, if caret operations are performed, you must adjust the caret l
 | --- | --- | --- | --- |
 | callback | [EditableTextOnChangeCallback](../arkts-apis/arkts-arkui-editabletextonchangecallback-t.md) | Yes | Callback invoked when the input in the text box changes.<br>**Since:** 12 |
 
+<a id="oncontentscroll"></a>
 ## onContentScroll
 
 ```TypeScript
@@ -827,6 +858,7 @@ Called when the text content is scrolled.
 | --- | --- | --- | --- |
 | callback | [OnContentScrollCallback](../arkts-apis/arkts-arkui-oncontentscrollcallback-t.md) | Yes | Callback for text content scrolling.<br>**Since:** 18 |
 
+<a id="oncopy"></a>
 ## onCopy
 
 ```TypeScript
@@ -847,8 +879,9 @@ Called when a copy operation is performed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<string> | Yes | Callback used to return the copied text content.<br>**Since:** 18 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;string&gt; | Yes | Callback used to return the copied text content.<br>**Since:** 18 |
 
+<a id="oncut"></a>
 ## onCut
 
 ```TypeScript
@@ -869,8 +902,9 @@ Called when a cut operation is performed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<string> | Yes | Callback used to return the cut text content.<br>**Since:** 18 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;string&gt; | Yes | Callback used to return the cut text content.<br>**Since:** 18 |
 
+<a id="ondiddelete"></a>
 ## onDidDelete
 
 ```TypeScript
@@ -893,8 +927,9 @@ Called when text is deleted.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<DeleteValue> | Yes | Callback invoked when text is deleted.<br>It is available only for system input methods. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;DeleteValue&gt; | Yes | Callback invoked when text is deleted.<br>It is available only for system input methods. |
 
+<a id="ondidinsert"></a>
 ## onDidInsert
 
 ```TypeScript
@@ -917,8 +952,9 @@ Called when text is inserted.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<InsertValue> | Yes | Callback invoked when text is inserted.<br>It is available only for system input methods. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;InsertValue&gt; | Yes | Callback invoked when text is inserted.<br>It is available only for system input methods. |
 
+<a id="oneditchange"></a>
 ## onEditChange
 
 ```TypeScript
@@ -941,8 +977,9 @@ Called when the input state changes. The text box is in the editing state when i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback for editing state changes. The value **true** indicates that the text is being inserted, and **false** indicates that the text box is out of focus and text cannot be inserted. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback for editing state changes. The value **true** indicates that the text is being inserted, and **false** indicates that the text box is out of focus and text cannot be inserted. |
 
+<a id="onpaste"></a>
 ## onPaste
 
 ```TypeScript
@@ -965,6 +1002,7 @@ Called when a paste operation is performed.
 | --- | --- | --- | --- |
 | callback | [OnPasteCallback](../arkts-apis/arkts-arkui-onpastecallback-t.md) | Yes | Executed when a paste operation is performed.Callback used to return the pasted text content.<br>**Since:** 18 |
 
+<a id="onsubmit"></a>
 ## onSubmit
 
 ```TypeScript
@@ -985,8 +1023,9 @@ Called when the search icon, search button, or soft keyboard search button is cl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<string> | Yes | Search submission callback, which returns the text content currently in the search box.<br>**Since:** 18 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;string&gt; | Yes | Search submission callback, which returns the text content currently in the search box.<br>**Since:** 18 |
 
+<a id="onsubmit-1"></a>
 ## onSubmit
 
 ```TypeScript
@@ -1011,6 +1050,7 @@ Invoked when the search icon, search button, or soft keyboard search button is c
 | --- | --- | --- | --- |
 | callback | [SearchSubmitCallback](arkts-arkui-searchsubmitcallback-t.md) | Yes | Callback invoked when the search icon, search button, or soft keyboard search button is clicked. |
 
+<a id="ontextselectionchange"></a>
 ## onTextSelectionChange
 
 ```TypeScript
@@ -1035,6 +1075,7 @@ Called when the text selection changes or the caret position changes during edit
 | --- | --- | --- | --- |
 | callback | [OnTextSelectionChangeCallback](arkts-arkui-ontextselectionchangecallback-t.md) | Yes | Callback for text selection changes or caret position changes.<br>**Since:** 18 |
 
+<a id="onwillattachime"></a>
 ## onWillAttachIME
 
 ```TypeScript
@@ -1047,13 +1088,13 @@ Called when the search box is about to be bound to an input method.
 
 Before the search box is bound to an input method, you can use the [setKeyboardAppearanceConfig](../arkts-apis/arkts-arkui-arkui-uicontext-uicontext-c-sys.md#setkeyboardappearanceconfig-1) API of **UIContext** to set the keyboard style.<!--DelEnd-->
 
-From API version 22, the [setExtraConfig](../arkts-apis/arkts-arkui-text-common-imeclient-i.md#setextraconfig-1) method of [IMEClient](../arkts-apis/arkts-arkui-text-common-imeclient-i.md)can be called to set input method extension information. After the input method is bound, it receives this extension information, which can be used to implement custom functionality.
+From API version 22, the [setExtraConfig](../arkts-apis/arkts-arkui-imeclient-i.md#setextraconfig-1) method of [IMEClient](../arkts-apis/arkts-arkui-imeclient-i.md)can be called to set input method extension information. After the input method is bound, it receives this extension information, which can be used to implement custom functionality.
 
 **IMEClient** is valid only during the execution of **onWillAttachIME** and cannot be called asynchronously.
 
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 20
 
@@ -1069,8 +1110,9 @@ From API version 22, the [setExtraConfig](../arkts-apis/arkts-arkui-text-common-
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<IMEClient> | Yes | Called when the search box is about to be bound to an input method. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;IMEClient&gt; | Yes | Called when the search box is about to be bound to an input method. |
 
+<a id="onwillchange"></a>
 ## onWillChange
 
 ```TypeScript
@@ -1095,8 +1137,9 @@ This callback is triggered after **onWillInsert** and **onWillDelete**, but befo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<EditableTextChangeValue, boolean> | Yes | Callback invoked when the text content is about to change.<br>Returning **true** allows the change to proceed, while returning **false** cancels the change. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;EditableTextChangeValue, boolean&gt; | Yes | Callback invoked when the text content is about to change.<br>Returning **true** allows the change to proceed, while returning **false** cancels the change. |
 
+<a id="onwillcopy"></a>
 ## onWillCopy
 
 ```TypeScript
@@ -1119,8 +1162,9 @@ Called before using the Clipboard copy menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<string, boolean> | Yes | Callback used to check whether copy is allowed. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;string, boolean&gt; | Yes | Callback used to check whether copy is allowed. |
 
+<a id="onwillcut"></a>
 ## onWillCut
 
 ```TypeScript
@@ -1143,8 +1187,9 @@ Called before using the Clipboard cut menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<string, boolean> | Yes | Callback used to check whether cut is allowed. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;string, boolean&gt; | Yes | Callback used to check whether cut is allowed. |
 
+<a id="onwilldelete"></a>
 ## onWillDelete
 
 ```TypeScript
@@ -1167,8 +1212,9 @@ Called when text is about to be deleted.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<DeleteValue, boolean> | Yes | Callback invoked when text is about to be deleted.<br>It returns **true** if the text is deleted; returns **false** otherwise.<br>This callback is not invoked for text preview.<br>It is available only for system input methods. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;DeleteValue, boolean&gt; | Yes | Callback invoked when text is about to be deleted.<br>It returns **true** if the text is deleted; returns **false** otherwise.<br>This callback is not invoked for text preview.<br>It is available only for system input methods. |
 
+<a id="onwillinsert"></a>
 ## onWillInsert
 
 ```TypeScript
@@ -1191,8 +1237,9 @@ Called when text is about to be inserted.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<InsertValue, boolean> | Yes | Callback invoked when text is about to be inserted.<br>It returns **true** if the text is inserted; returns **false** otherwise.<br>This callback is not invoked for pre-edit or candidate word operations.<br>It is available only for system input methods. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;InsertValue, boolean&gt; | Yes | Callback invoked when text is about to be inserted.<br>It returns **true** if the text is inserted; returns **false** otherwise.<br>This callback is not invoked for pre-edit or candidate word operations.<br>It is available only for system input methods. |
 
+<a id="placeholdercolor"></a>
 ## placeholderColor
 
 ```TypeScript
@@ -1215,6 +1262,7 @@ Sets the placeholder text color. The default value on wearable devices is **'#99
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Placeholder text color.<br>Default value: **'#99182431'** |
 
+<a id="placeholderfont"></a>
 ## placeholderFont
 
 ```TypeScript
@@ -1237,6 +1285,7 @@ Placeholder text style, including the font size, font weight, font family, and f
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | No | Placeholder text style. |
 
+<a id="searchbutton"></a>
 ## searchButton
 
 ```TypeScript
@@ -1262,8 +1311,9 @@ The default font size on wearable devices is 18 fp.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | Text on the search button located next to the search text box.<br>The Resource type is supported since API version 20.<br>**Since:** 20 |
-| option | [SearchButtonOptions](arkts-arkui-search-searchbuttonoptions-i.md) | No | Text style of the search button located next to the search text box.<br>Default value:<br>{<br>fontSize: '16fp',<br>fontColor: '#ff3f97e9'<br>}<br>**Since:** 10 |
+| option | [SearchButtonOptions](arkts-arkui-searchbuttonoptions-i.md) | No | Text style of the search button located next to the search text box.<br>Default value:<br>{<br>fontSize: '16fp',<br>fontColor: '#ff3f97e9'<br>}<br>**Since:** 10 |
 
+<a id="searchicon"></a>
 ## searchIcon
 
 ```TypeScript
@@ -1288,8 +1338,9 @@ The default icon size on wearable devices is 16 vp.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | IconOptions \| SymbolGlyphModifier | Yes | Style of the search icon on the left.&lt;!--RP1--&gt;<br>Default value in light mode:<br>{<br>size: '16vp',<br>color: '#99182431',<br>src: ' '<br>}<br>Default value in dark mode:<br>{<br>size: '16vp',<br>color: '#99ffffff',<br>src: ' '<br>} &lt;!--RP1End--&gt;<br>**Since:** 12 |
+| value | [IconOptions](arkts-arkui-iconoptions-i.md) \| SymbolGlyphModifier | Yes | Style of the search icon on the left.<!--RP1--><br>Default value in light mode:<br>{<br>size: '16vp',<br>color: '#99182431',<br>src: ' '<br>}<br>Default value in dark mode:<br>{<br>size: '16vp',<br>color: '#99ffffff',<br>src: ' '<br>} <!--RP1End--><br>**Since:** 12 |
 
+<a id="selectedbackgroundcolor"></a>
 ## selectedBackgroundColor
 
 ```TypeScript
@@ -1314,6 +1365,7 @@ Sets the background color of the selected text. If the opacity is not set, a 20%
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the selected text. |
 
+<a id="selecteddragpreviewstyle"></a>
 ## selectedDragPreviewStyle
 
 ```TypeScript
@@ -1336,8 +1388,9 @@ Sets the drag preview style for text being dragged in the search box.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | SelectedDragPreviewStyle \| undefined | Yes | Drag preview style for text being dragged in the search box.<br>If this parameter is set to **undefined**, the drag preview follows the theme: white in light mode and black in dark mode. |
+| value | [SelectedDragPreviewStyle](../arkts-apis/arkts-arkui-selecteddragpreviewstyle-i.md) \| undefined | Yes | Drag preview style for text being dragged in the search box.<br>If this parameter is set to **undefined**, the drag preview follows the theme: white in light mode and black in dark mode. |
 
+<a id="selectionmenuhidden"></a>
 ## selectionMenuHidden
 
 ```TypeScript
@@ -1362,6 +1415,7 @@ Sets whether to hide the system text selection menu.
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to hide the system text selection menu.<br>**true**: Tapping, long-pressing,double-tapping, triple-tapping, or right-clicking the text box will not trigger the system text selection menu.<br>**false**: Tapping, long-pressing, double-tapping, triple-tapping, or right-clicking the text box will trigger the system text selection menu.<br>Default value: **false** |
 
+<a id="shaderstyle"></a>
 ## shaderStyle
 
 ```TypeScript
@@ -1384,8 +1438,9 @@ Set the shader style of the text, such as lineargradient or radialgradient.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| shader | ShaderStyle \| undefined | Yes | The shader style of the text.Passing `undefined` resets it to the default value. |
+| shader | [ShaderStyle](../arkts-apis/arkts-arkui-shaderstyle-c.md) \| undefined | Yes | The shader style of the text.Passing `undefined` resets it to the default value. |
 
+<a id="stopbackpress"></a>
 ## stopBackPress
 
 ```TypeScript
@@ -1408,8 +1463,9 @@ Sets whether to prevent the back key event from being propagated.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isStopped | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to prevent the back key event from being propagated.<br>**true**:Propagation is prevented. **false**: Propagation is allowed.<br>Default value: **true** The default value is used for abnormal values. |
+| isStopped | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to prevent the back key event from being propagated.<br>**true**:Propagation is prevented. **false**: Propagation is allowed.<br>Default value: **true** The default value is used for abnormal values. |
 
+<a id="strokecolor"></a>
 ## strokeColor
 
 ```TypeScript
@@ -1432,8 +1488,9 @@ Sets the text stroke color.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](arkts-arkui-optional-t.md)<ResourceColor> | Yes | Stroke color. Default value: font color. Invalid values are treated as the default value. |
+| color | [Optional](arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Stroke color. Default value: font color. Invalid values are treated as the default value. |
 
+<a id="strokejoinstyle"></a>
 ## strokeJoinStyle
 
 ```TypeScript
@@ -1456,8 +1513,9 @@ Set the join style of the stroke.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| strokeJoinStyle | StrokeJoinStyle \| undefined | Yes | The join style of stroke.Passing `undefined` resets it to the default value |
+| strokeJoinStyle | [StrokeJoinStyle](../arkts-apis/arkts-arkui-strokejoinstyle-e.md) \| undefined | Yes | The join style of stroke.Passing `undefined` resets it to the default value |
 
+<a id="strokewidth"></a>
 ## strokeWidth
 
 ```TypeScript
@@ -1480,8 +1538,9 @@ Sets the text stroke width.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| width | [Optional](arkts-arkui-optional-t.md)<LengthMetrics> | Yes | Text stroke width. When the unit of **LengthMetrics** is px:<br>Values &lt;0: solid text.<br>Values &gt; 0: outlined text.<br>Default value: **0** (no stroke) |
+| width | [Optional](arkts-arkui-optional-t.md)&lt;LengthMetrics&gt; | Yes | Text stroke width. When the unit of **LengthMetrics** is px:<br>Values <0: solid text.<br>Values > 0: outlined text.<br>Default value: **0** (no stroke) |
 
+<a id="textalign"></a>
 ## textAlign
 
 ```TypeScript
@@ -1504,6 +1563,7 @@ Sets the text alignment mode in the search text box. Currently, the following al
 | --- | --- | --- | --- |
 | value | [TextAlign](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-textalign-e.md) | Yes | Text alignment mode in the search text box.<br>Default value: **TextAlign.Start** |
 
+<a id="textdirection"></a>
 ## textDirection
 
 ```TypeScript
@@ -1526,8 +1586,9 @@ Specifies the text layout direction. If this attribute is not set, the default t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| direction | TextDirection \| undefined | Yes | Defines the text layout direction.<br>If this parameter is set to **undefined**, the text layout direction follows the component layout direction as defined by **TextDirection.DEFAULT**. |
+| direction | [TextDirection](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-text-textdirection-e.md) \| undefined | Yes | Defines the text layout direction.<br>If this parameter is set to **undefined**, the text layout direction follows the component layout direction as defined by **TextDirection.DEFAULT**. |
 
+<a id="textfont"></a>
 ## textFont
 
 ```TypeScript
@@ -1552,6 +1613,7 @@ The default font size on wearable devices is 18 fp.
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | No | Text font of the search text box. |
 
+<a id="textindent"></a>
 ## textIndent
 
 ```TypeScript
@@ -1576,6 +1638,7 @@ Sets the indent of the first line text.
 | --- | --- | --- | --- |
 | value | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) | Yes | Indent of the first line text.<br>Default value: **0** |
 
+<a id="type"></a>
 ## type
 
 ```TypeScript
@@ -1600,5 +1663,5 @@ Different **SearchType** values trigger corresponding keyboard types and enforce
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [SearchType](arkts-arkui-search-searchtype-e.md) | Yes | Text box type.<br>Default value: **SearchType.NORMAL** |
+| value | [SearchType](arkts-arkui-searchtype-e.md) | Yes | Text box type.<br>Default value: **SearchType.NORMAL** |
 

@@ -6,6 +6,7 @@
 import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="registertracelistener"></a>
 ## registerTraceListener
 
 ```TypeScript
@@ -42,7 +43,7 @@ After the registration is successful, the callback is executed immediately. Subs
 
 | Type | Description |
 | --- | --- |
-| number | Callback registration status.<br>&gt;= 0: The registration is successful. The callback index for deregistration is returned.The index ranges from 0 to 9.<br> **-1**: The maximum number of callbacks has been reached.<br> **-2**: Invalid parameter. The parameter is not of the **TraceEventListener** type. |
+| number | Callback registration status.<br>>= 0: The registration is successful. The callback index for deregistration is returned.The index ranges from 0 to 9.<br> **-1**: The maximum number of callbacks has been reached.<br> **-2**: Invalid parameter. The parameter is not of the **TraceEventListener** type. |
 
 **Example**
 

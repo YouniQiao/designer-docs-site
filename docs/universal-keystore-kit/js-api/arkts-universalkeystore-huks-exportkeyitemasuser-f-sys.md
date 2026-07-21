@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="exportkeyitemasuser"></a>
 ## exportKeyItemAsUser
 
 ```TypeScript
@@ -36,7 +37,7 @@ Exports the public key for the specified user. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | Promise used to return the result. If the operation is successful,**outData** in **HuksReturnResult** is the public key exported. |
+| Promise&lt;HuksReturnResult&gt; | Promise used to return the result. If the operation is successful,**outData** in **HuksReturnResult** is the public key exported. |
 
 **Error codes:**
 

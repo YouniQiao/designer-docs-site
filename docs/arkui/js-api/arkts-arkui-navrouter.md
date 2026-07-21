@@ -68,7 +68,7 @@ Provides route information so that clicking the **NavRouter** component redirect
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | RouteInfo | Yes | Route information. |
+| value | [RouteInfo](../../apis-network-kit/arkts-apis/arkts-network-vpnextension-routeinfo-t.md) | Yes | Route information.  |
 
 ## Summary
 

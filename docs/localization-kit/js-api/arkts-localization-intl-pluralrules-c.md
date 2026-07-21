@@ -18,6 +18,7 @@ Provides the capability for obtaining the plural rule type.
 import { intl } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -48,6 +49,7 @@ let pluralRules = new intl.PluralRules();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -72,7 +74,7 @@ Creates a **PluralRules** object to obtain the singular-plural type of numbers.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string \| Array<string> | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
+| locale | string \| Array&lt;string&gt; | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
 | options | [PluralRulesOptions](arkts-localization-intl-pluralrulesoptions-i.md) | No | Options for creating a **PluralRules** object. |
 
 **Example**
@@ -85,6 +87,7 @@ let pluralRules: intl.PluralRules = new intl.PluralRules('zh-CN', { localeMatche
 
 ```
 
+<a id="select"></a>
 ## select
 
 ```TypeScript

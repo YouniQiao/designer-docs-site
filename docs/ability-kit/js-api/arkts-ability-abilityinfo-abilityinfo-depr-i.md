@@ -1,6 +1,6 @@
 # AbilityInfo
 
-The module provides information about an ability. Unless otherwise specified, the information is obtained through [bundle.getAbilityInfo](arkts-ability-bundle-getabilityinfo-f.md#getabilityinfo-2).
+The module provides information about an ability. Unless otherwise specified, the information is obtained through [bundle.getAbilityInfo](arkts-ability-bundle-getabilityinfo-f.md#getabilityinfo-1).
 
 > **NOTE**  
 >  
@@ -25,7 +25,7 @@ readonly applicationInfo: ApplicationInfo
 
 Application configuration information.
 
-The value is obtained by passing in GET_ABILITY_INFO_WITH_APPLICATION to [bundle.getAbilityInfo](arkts-ability-bundle-getabilityinfo-f.md#getabilityinfo-2).
+The value is obtained by passing in GET_ABILITY_INFO_WITH_APPLICATION to [bundle.getAbilityInfo](arkts-ability-bundle-getabilityinfo-f.md#getabilityinfo-1).
 
 **Type:** ApplicationInfo
 
@@ -139,7 +139,7 @@ readonly deviceCapabilities: Array<string>
 
 Device capabilities required for the ability.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Default:** The device capability that this ability needs
 
@@ -159,7 +159,7 @@ readonly deviceTypes: Array<string>
 
 Device types supported by the ability.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Default:** The device types that this ability can run on
 
@@ -359,9 +359,9 @@ readonly metaData: Array<CustomizeData>
 
 Metadata of the ability.
 
-The value is obtained by passing in GET_ABILITY_INFO_WITH_METADATA to [bundle.getAbilityInfo](arkts-ability-bundle-getabilityinfo-f.md#getabilityinfo-2).
+The value is obtained by passing in GET_ABILITY_INFO_WITH_METADATA to [bundle.getAbilityInfo](arkts-ability-bundle-getabilityinfo-f.md#getabilityinfo-1).
 
-**Type:** Array<CustomizeData>
+**Type:** Array&lt;CustomizeData&gt;
 
 **Default:** Indicates the metadata of ability
 
@@ -449,9 +449,9 @@ readonly permissions: Array<string>
 
 Permissions required for other applications to call the ability.
 
-The value is obtained by passing in GET_ABILITY_INFO_WITH_PERMISSION to [bundle.getAbilityInfo](arkts-ability-bundle-getabilityinfo-f.md#getabilityinfo-2).
+The value is obtained by passing in GET_ABILITY_INFO_WITH_PERMISSION to [bundle.getAbilityInfo](arkts-ability-bundle-getabilityinfo-f.md#getabilityinfo-1).
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Default:** The permissions that others need to launch this ability
 

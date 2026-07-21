@@ -1,5 +1,6 @@
 # getContext
 
+<a id="getcontext"></a>
 ## getContext
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the Context object associated with a component on the page.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| component | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | indicate the component on the page.If no component is passed in or the passed-in parameter type is invalid, the default context is returned.The default context is the context obtained by tracing the call chain of the API.If this API is used in an asynchronous callback or not initially called on the current page, the context of the instance may fail to be traced. In this case, undefined is returned. |
+| component | Object | No | indicate the component on the page.If no component is passed in or the passed-in parameter type is invalid, the default context is returned.The default context is the context obtained by tracing the call chain of the API.If this API is used in an asynchronous callback or not initially called on the current page, the context of the instance may fail to be traced. In this case, undefined is returned. |
 
 **Return value:**
 

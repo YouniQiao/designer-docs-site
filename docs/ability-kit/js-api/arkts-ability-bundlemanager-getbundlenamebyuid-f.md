@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getbundlenamebyuid"></a>
 ## getBundleNameByUid
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the bundle name based on the given UID. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uid | number | Yes | UID of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result.If the information is successfully obtained, **err** is **null** and **data** is the bundle name. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result.If the information is successfully obtained, **err** is **null** and **data** is the bundle name. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ try {
 ```
 
 
+<a id="getbundlenamebyuid-1"></a>
 ## getBundleNameByUid
 
 ```TypeScript
@@ -87,7 +89,7 @@ Obtains the bundle name based on the given UID. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the bundle name obtained. |
+| Promise&lt;string&gt; | Promise used to return the bundle name obtained. |
 
 **Error codes:**
 

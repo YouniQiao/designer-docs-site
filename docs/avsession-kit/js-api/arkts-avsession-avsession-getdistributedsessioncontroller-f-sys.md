@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="getdistributedsessioncontroller"></a>
 ## getDistributedSessionController
 
 ```TypeScript
@@ -34,7 +35,7 @@ Get distributed avsession controller
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AVSessionController>> | Promise for AVSessionController. |
+| Promise&lt;Array&lt;AVSessionController&gt;&gt; | Promise for AVSessionController. |
 
 **Error codes:**
 

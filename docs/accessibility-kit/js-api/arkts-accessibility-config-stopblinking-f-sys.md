@@ -6,6 +6,7 @@
 import { config } from '@kit.AccessibilityKit';
 ```
 
+<a id="stopblinking"></a>
 ## stopBlinking
 
 ```TypeScript

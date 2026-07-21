@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="createvlaninterface"></a>
 ## createVlanInterface
 
 ```TypeScript
@@ -37,7 +38,7 @@ Create vlan interface by vlanId.To invoke this method, you must have the {@code 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - The promise returned by the function. |
+| Promise&lt;void&gt; | - The promise returned by the function. |
 
 **Error codes:**
 

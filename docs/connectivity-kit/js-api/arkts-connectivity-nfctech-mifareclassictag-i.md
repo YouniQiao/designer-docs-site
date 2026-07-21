@@ -10,6 +10,7 @@ Provides methods for accessing MifareClassic tag.
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="authenticatesector"></a>
 ## authenticateSector
 
 ```TypeScript
@@ -40,7 +41,7 @@ Authenticates a sector with the key. Only successful authentication sector can b
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void |
+| Promise&lt;void&gt; | The void |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ Authenticates a sector with the key. Only successful authentication sector can b
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="authenticatesector-1"></a>
 ## authenticateSector
 
 ```TypeScript
@@ -76,7 +78,7 @@ Authenticates a sector with the key. Only successful authentication sector can b
 | sectorIndex | number | Yes | Index of sector to authenticate. |
 | key | number[] | Yes | The key(6-bytes) to authenticate. |
 | isKeyA | boolean | Yes | KeyA flag. true means KeyA, otherwise KeyB. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback. |
 
 **Error codes:**
 
@@ -87,6 +89,7 @@ Authenticates a sector with the key. Only successful authentication sector can b
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The Tag I/O operation failed. |
 
+<a id="decrementblock"></a>
 ## decrementBlock
 
 ```TypeScript
@@ -116,7 +119,7 @@ Decreases the contents of a block, and stores the result in the internal transfe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void |
+| Promise&lt;void&gt; | The void |
 
 **Error codes:**
 
@@ -127,6 +130,7 @@ Decreases the contents of a block, and stores the result in the internal transfe
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="decrementblock-1"></a>
 ## decrementBlock
 
 ```TypeScript
@@ -151,7 +155,7 @@ Decreases the contents of a block, and stores the result in the internal transfe
 | --- | --- | --- | --- |
 | blockIndex | number | Yes | The index of block to decrease. |
 | value | number | Yes | The value to decrease, non-negative. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback. |
 
 **Error codes:**
 
@@ -162,6 +166,7 @@ Decreases the contents of a block, and stores the result in the internal transfe
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The Tag I/O operation failed. |
 
+<a id="getblockcountinsector"></a>
 ## getBlockCountInSector
 
 ```TypeScript
@@ -196,6 +201,7 @@ Gets the number of blocks in the sector.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
+<a id="getblockindex"></a>
 ## getBlockIndex
 
 ```TypeScript
@@ -230,6 +236,7 @@ Gets the first block of the specific sector.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
+<a id="getsectorcount"></a>
 ## getSectorCount
 
 ```TypeScript
@@ -252,6 +259,7 @@ Gets the number of sectors in MifareClassic tag.
 | --- | --- |
 | number | Returns the number of sectors. |
 
+<a id="getsectorindex"></a>
 ## getSectorIndex
 
 ```TypeScript
@@ -286,6 +294,7 @@ Gets the sector index, that the sector contains the specific block.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
+<a id="gettagsize"></a>
 ## getTagSize
 
 ```TypeScript
@@ -308,6 +317,7 @@ Gets size of the tag in bytes.
 | --- | --- |
 | number | Returns the size of the tag. |
 
+<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -330,6 +340,7 @@ Gets the type of the MifareClassic tag.
 | --- | --- |
 | tag.MifareClassicType | Returns type of MifareClassic tag. |
 
+<a id="incrementblock"></a>
 ## incrementBlock
 
 ```TypeScript
@@ -359,7 +370,7 @@ Increments the contents of a block, and stores the result in the internal transf
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void |
+| Promise&lt;void&gt; | The void |
 
 **Error codes:**
 
@@ -370,6 +381,7 @@ Increments the contents of a block, and stores the result in the internal transf
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="incrementblock-1"></a>
 ## incrementBlock
 
 ```TypeScript
@@ -394,7 +406,7 @@ Increments the contents of a block, and stores the result in the internal transf
 | --- | --- | --- | --- |
 | blockIndex | number | Yes | The index of block to increment. |
 | value | number | Yes | The value to increment, non-negative. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback. |
 
 **Error codes:**
 
@@ -405,6 +417,7 @@ Increments the contents of a block, and stores the result in the internal transf
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The Tag I/O operation failed. |
 
+<a id="isemulatedtag"></a>
 ## isEmulatedTag
 
 ```TypeScript
@@ -427,6 +440,7 @@ Checks if the tag is emulated or not.
 | --- | --- |
 | boolean | Returns true if tag is emulated, otherwise false. |
 
+<a id="readsingleblock"></a>
 ## readSingleBlock
 
 ```TypeScript
@@ -455,7 +469,7 @@ Reads a block, one block size is 16 bytes.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number[]> | Returns the block data. |
+| Promise&lt;number[]&gt; | Returns the block data. |
 
 **Error codes:**
 
@@ -466,6 +480,7 @@ Reads a block, one block size is 16 bytes.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="readsingleblock-1"></a>
 ## readSingleBlock
 
 ```TypeScript
@@ -489,7 +504,7 @@ Reads a block, one block size is 16 bytes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | blockIndex | number | Yes | The index of block to read. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number[]> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number[]&gt; | Yes | The callback. |
 
 **Error codes:**
 
@@ -500,6 +515,7 @@ Reads a block, one block size is 16 bytes.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The Tag I/O operation failed. |
 
+<a id="restorefromblock"></a>
 ## restoreFromBlock
 
 ```TypeScript
@@ -528,7 +544,7 @@ Moves the contents of a block into the internal transfer buffer.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void |
+| Promise&lt;void&gt; | The void |
 
 **Error codes:**
 
@@ -539,6 +555,7 @@ Moves the contents of a block into the internal transfer buffer.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="restorefromblock-1"></a>
 ## restoreFromBlock
 
 ```TypeScript
@@ -562,7 +579,7 @@ Moves the contents of a block into the internal transfer buffer.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | blockIndex | number | Yes | The index of value block to be moved from. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback. |
 
 **Error codes:**
 
@@ -573,6 +590,7 @@ Moves the contents of a block into the internal transfer buffer.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The Tag I/O operation failed. |
 
+<a id="transfertoblock"></a>
 ## transferToBlock
 
 ```TypeScript
@@ -601,7 +619,7 @@ Writes the contents of the internal transfer buffer to a value block.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void |
+| Promise&lt;void&gt; | The void |
 
 **Error codes:**
 
@@ -612,6 +630,7 @@ Writes the contents of the internal transfer buffer to a value block.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="transfertoblock-1"></a>
 ## transferToBlock
 
 ```TypeScript
@@ -635,7 +654,7 @@ Writes the contents of the internal transfer buffer to a value block.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | blockIndex | number | Yes | The index of value block to be written. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback. |
 
 **Error codes:**
 
@@ -646,6 +665,7 @@ Writes the contents of the internal transfer buffer to a value block.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The Tag I/O operation failed. |
 
+<a id="writesingleblock"></a>
 ## writeSingleBlock
 
 ```TypeScript
@@ -675,7 +695,7 @@ Writes a block, one block size is 16 bytes.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void |
+| Promise&lt;void&gt; | The void |
 
 **Error codes:**
 
@@ -686,6 +706,7 @@ Writes a block, one block size is 16 bytes.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="writesingleblock-1"></a>
 ## writeSingleBlock
 
 ```TypeScript
@@ -710,7 +731,7 @@ Writes a block, one block size is 16 bytes.
 | --- | --- | --- | --- |
 | blockIndex | number | Yes | The index of block to write. |
 | data | number[] | Yes | The block data to write. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback. |
 
 **Error codes:**
 

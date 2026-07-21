@@ -6,6 +6,7 @@
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="promisewrapper"></a>
 ## promiseWrapper
 
 ```TypeScript
@@ -28,11 +29,11 @@ Receives a function that uses the error-first callback mode, that is, uses `(err
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| original | (err: Object, value: Object) => void | Yes | Asynchronous function. |
+| original | (err: Object, value: Object) =&gt; void | Yes | Asynchronous function. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Promise in the error-first style (that is, (err, value) =&gt; ... is called as the last parameter). |
+| Object | Promise in the error-first style (that is, (err, value) => ... is called as the last parameter). |
 

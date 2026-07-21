@@ -6,6 +6,7 @@
 import { autoStartupManager } from '@kit.AbilityKit';
 ```
 
+<a id="getautostartupstatusforself"></a>
 ## getAutoStartupStatusForSelf
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether the current application is enabled for automatic startup at boot 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the auto-startup status. **true** if enabled for automatic startup at boot time, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the auto-startup status. **true** if enabled for automatic startup at boot time, **false** otherwise. |
 
 **Error codes:**
 

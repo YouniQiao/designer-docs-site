@@ -24,9 +24,9 @@ import { stationary } from '@kit.MultimodalAwarenessKit';
 
 | Name | Description |
 | --- | --- |
-| [off](arkts-multimodalawareness-stationary-off-f.md#off-1) | Unsubscribes from the device status. |
-| [on](arkts-multimodalawareness-stationary-on-f.md#on-1) | Subscribes to the device status. |
-| [once](arkts-multimodalawareness-stationary-once-f.md#once-1) | Obtains the device status. |
+| [off](arkts-multimodalawareness-stationary-off-f.md#off) | Unsubscribes from the device status. |
+| [on](arkts-multimodalawareness-stationary-on-f.md#on) | Subscribes to the device status. |
+| [once](arkts-multimodalawareness-stationary-once-f.md#once) | Obtains the device status. |
 
 ### Interfaces
 

@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="on"></a>
 ## on('streamChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Subscribe Wi-Fi stream change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'streamChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | the callback of on, 1: stream down, 2: stream up, 3: stream bidirectional |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | the callback of on, 1: stream down, 2: stream up, 3: stream bidirectional |
 
 **Error codes:**
 
@@ -42,6 +43,7 @@ Subscribe Wi-Fi stream change events.
 | [2501000](../errorcode-wifi.md#2501000-sta-internal-error) | Operation failed. |
 
 
+<a id="on-1"></a>
 ## on('deviceConfigChange')
 
 ```TypeScript
@@ -65,7 +67,7 @@ Subscribe Wi-Fi device config change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceConfigChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | the callback of on, 0: config is added, 1: config is changed, 2: config is removed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | the callback of on, 0: config is added, 1: config is changed, 2: config is removed. |
 
 **Error codes:**
 
@@ -78,6 +80,7 @@ Subscribe Wi-Fi device config change events.
 | [2501000](../errorcode-wifi.md#2501000-sta-internal-error) | Operation failed. |
 
 
+<a id="on-2"></a>
 ## on('hotspotStaJoin')
 
 ```TypeScript
@@ -101,7 +104,7 @@ Subscribe Wi-Fi hotspot sta join events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hotspotStaJoin' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StationInfo> | Yes | the callback of on |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StationInfo&gt; | Yes | the callback of on |
 
 **Error codes:**
 
@@ -114,6 +117,7 @@ Subscribe Wi-Fi hotspot sta join events.
 | [2601000](../errorcode-wifi.md#2601000-hotspot-module-error) | Operation failed. |
 
 
+<a id="on-3"></a>
 ## on('hotspotStaLeave')
 
 ```TypeScript
@@ -137,7 +141,7 @@ Subscribe Wi-Fi hotspot sta leave events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hotspotStaLeave' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StationInfo> | Yes | the callback of on |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StationInfo&gt; | Yes | the callback of on |
 
 **Error codes:**
 

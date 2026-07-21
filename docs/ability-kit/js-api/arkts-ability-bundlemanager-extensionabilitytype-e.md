@@ -484,7 +484,7 @@ NOTIFICATION_SUBSCRIBER = 34
 CRYPTO = 35
 ```
 
-[CryptoExtensionAbility](../../../../security/UniversalKeystoreKit/huks-extension-ability-support-dev.md): provides extended capabilities for external key management.
+[CryptoExtensionAbility](docroot://security/UniversalKeystoreKit/huks-extension-ability-support-dev.md): provides extended capabilities for external key management.
 
 **Since:** 22
 
@@ -562,7 +562,7 @@ Indicates extension info with type of the modular object extension.
 UNSPECIFIED = 255
 ```
 
-The ability type is not specified. <!--Del-->It can be used in [queryExtensionAbilityInfo](arkts-ability-bundlemanager-queryextensionabilityinfo-f-sys.md#queryextensionabilityinfo-2)to obtain ExtensionAbility components of all types.<!--DelEnd-->
+The ability type is not specified. <!--Del-->It can be used in [queryExtensionAbilityInfo](arkts-ability-bundlemanager-queryextensionabilityinfo-f-sys.md#queryextensionabilityinfo-1)to obtain ExtensionAbility components of all types.<!--DelEnd-->
 
 **Since:** 9
 

@@ -6,6 +6,7 @@
 import { systemSoundManager } from '@kit.AudioKit';
 ```
 
+<a id="createsystemsoundplayer"></a>
 ## createSystemSoundPlayer
 
 ```TypeScript
@@ -24,7 +25,7 @@ Creates a SystemSoundPlayer instance. This function uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SystemSoundPlayer \| null> | Promise used to return the result.If the operation is successful, a SystemSoundPlayer instance is returned.Otherwise, null is returned. The instance is used for loading and playback. |
+| Promise&lt;SystemSoundPlayer \| null&gt; | Promise used to return the result.If the operation is successful, a SystemSoundPlayer instance is returned.Otherwise, null is returned. The instance is used for loading and playback. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="off"></a>
 ## off('receiveImage')
 
 ```TypeScript
@@ -33,7 +34,7 @@ Unregisters receiveImage event.
 | --- | --- | --- | --- |
 | type | 'receiveImage' | Yes | Registration Type, 'receiveImage'. |
 | sessionId | number | Yes | Ability connection Session id. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventCallbackInfo> | No | Used to handle ('receiveImage') command. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventCallbackInfo&gt; | No | Used to handle ('receiveImage') command. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ abilityConnectionManager.off("receiveImage", sessionId);
 ```
 
 
+<a id="off-1"></a>
 ## off('collaborateEvent')
 
 ```TypeScript
@@ -80,7 +82,7 @@ Unregisters collaborateEvent event.
 | --- | --- | --- | --- |
 | type | 'collaborateEvent' | Yes | Registration Type, 'collaborateEvent'. |
 | sessionId | number | Yes | Ability connection Session id. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CollaborateEventInfo> | No | Called when an error event comes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CollaborateEventInfo&gt; | No | Called when an error event comes. |
 
 **Error codes:**
 

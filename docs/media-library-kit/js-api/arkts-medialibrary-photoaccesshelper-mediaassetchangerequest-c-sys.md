@@ -16,6 +16,7 @@ Represents a media asset change request.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="addresource"></a>
 ## addResource
 
 ```TypeScript
@@ -78,6 +79,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, asse
 
 ```
 
+<a id="addresourceforpicker"></a>
 ## addResourceForPicker
 
 ```TypeScript
@@ -112,6 +114,7 @@ Adds a resource using fileUri from file management directory
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="createassetrequest"></a>
 ## createAssetRequest
 
 ```TypeScript
@@ -183,6 +186,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="deleteassetspermanentlywithuri"></a>
 ## deleteAssetsPermanentlyWithUri
 
 ```TypeScript
@@ -222,7 +226,7 @@ Permanently deletes images or videos in batches by URI. The deleted images or vi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -248,6 +252,7 @@ async function example(context: Context, assetUri: string) {
 
 ```
 
+<a id="deletecloudassetswithuri"></a>
 ## deleteCloudAssetsWithUri
 
 ```TypeScript
@@ -286,7 +291,7 @@ Deletes cloud media assets to the trash in batches. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -311,6 +316,7 @@ async function example(context: Context, assetUri: string) {
 
 ```
 
+<a id="deletelocalassetspermanently"></a>
 ## deleteLocalAssetsPermanently
 
 ```TypeScript
@@ -339,13 +345,13 @@ Permanently deletes images or videos in batches. This API uses a promise to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of images or videos to be permanently deleted. The array can contain a maximum of 500 elements. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of images or videos to be permanently deleted. The array can contain a maximum of 500 elements. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -380,6 +386,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="deletelocalassetspermanentlywithuri"></a>
 ## deleteLocalAssetsPermanentlyWithUri
 
 ```TypeScript
@@ -408,13 +415,13 @@ Permanently deletes images or video assets in batches by URI. This API uses a pr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
-| assetUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of URIs of the images or videos to be permanently deleted. The array can contain a maximum of 500 elements. |
+| assetUris | Array&lt;string&gt; | Yes | Array of URIs of the images or videos to be permanently deleted. The array can contain a maximum of 500 elements. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -425,6 +432,7 @@ Permanently deletes images or video assets in batches by URI. This API uses a pr
 | 13900020 | Invalid argument |
 | 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="deletelocalassetswithuri"></a>
 ## deleteLocalAssetsWithUri
 
 ```TypeScript
@@ -463,7 +471,7 @@ Deletes local media assets to the trash in batches. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -488,6 +496,7 @@ async function example(context: Context, assetUri: string) {
 
 ```
 
+<a id="setapplinkinfo"></a>
 ## setAppLinkInfo
 
 ```TypeScript
@@ -540,6 +549,7 @@ async function example(asset: photoAccessHelper.PhotoAsset, appLinkInfo: string,
 
 ```
 
+<a id="setapplinkstate"></a>
 ## setAppLinkState
 
 ```TypeScript
@@ -593,6 +603,7 @@ async function example(asset: photoAccessHelper.PhotoAsset, context: Context) {
 
 ```
 
+<a id="setcamerashotkey"></a>
 ## setCameraShotKey
 
 ```TypeScript
@@ -643,6 +654,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, asse
 
 ```
 
+<a id="setcompositedisplaymode"></a>
 ## setCompositeDisplayMode
 
 ```TypeScript
@@ -669,7 +681,7 @@ Sets the display mode of the composite image. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -705,6 +717,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="seteditdata"></a>
 ## setEditData
 
 ```TypeScript
@@ -768,6 +781,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="seteffectmode"></a>
 ## setEffectMode
 
 ```TypeScript
@@ -823,6 +837,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, asse
 
 ```
 
+<a id="setfavorite"></a>
 ## setFavorite
 
 ```TypeScript
@@ -879,6 +894,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="sethasapplink"></a>
 ## setHasAppLink
 
 ```TypeScript
@@ -936,6 +952,7 @@ async function example(asset: photoAccessHelper.PhotoAsset, hasAppLink: linkType
 
 ```
 
+<a id="sethidden"></a>
 ## setHidden
 
 ```TypeScript
@@ -994,6 +1011,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="sethiddenattribute"></a>
 ## setHiddenAttribute
 
 ```TypeScript
@@ -1054,6 +1072,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setlocation"></a>
 ## setLocation
 
 ```TypeScript
@@ -1113,6 +1132,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setmovingphotoversion"></a>
 ## setMovingPhotoVersion
 
 ```TypeScript
@@ -1171,6 +1191,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setsupportedwatermarktype"></a>
 ## setSupportedWatermarkType
 
 ```TypeScript
@@ -1227,6 +1248,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="settitlebyfile"></a>
 ## setTitleByFile
 
 ```TypeScript
@@ -1249,7 +1271,7 @@ Set title by filemanger.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| name | string | Yes | asset name to set.<br> Should not contain extensions.The file name contains 1 to 255 characters.Invalid English characters, including:. \ /: *? "'`&lt; &gt; \| {} []Name-only is not allowed. Or.. |
+| name | string | Yes | asset name to set.<br> Should not contain extensions.The file name contains 1 to 255 characters.Invalid English characters, including:. \ /: *? "'`< > \| {} []Name-only is not allowed. Or.. |
 
 **Error codes:**
 
@@ -1286,6 +1308,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setusercomment"></a>
 ## setUserComment
 
 ```TypeScript
@@ -1345,6 +1368,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setvideoenhancementattr"></a>
 ## setVideoEnhancementAttr
 
 ```TypeScript

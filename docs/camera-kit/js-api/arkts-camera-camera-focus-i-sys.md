@@ -16,6 +16,7 @@ Focus extends [FocusQuery](arkts-camera-camera-focusquery-i.md)Provides APIs to 
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getfocusassist"></a>
 ## getFocusAssist
 
 ```TypeScript
@@ -62,6 +63,7 @@ function getFocusAssist(professionalPhotoSession: camera.ProfessionalPhotoSessio
 
 ```
 
+<a id="getfocusdriven"></a>
 ## getFocusDriven
 
 ```TypeScript
@@ -110,6 +112,7 @@ function getFocusDriven(session: camera.VideoSessionForSys): camera.FocusDrivenT
 
 ```
 
+<a id="getfocusrange"></a>
 ## getFocusRange
 
 ```TypeScript
@@ -158,6 +161,7 @@ function getFocusRange(session: camera.VideoSessionForSys): camera.FocusRangeTyp
 
 ```
 
+<a id="setfocusassist"></a>
 ## setFocusAssist
 
 ```TypeScript
@@ -205,6 +209,7 @@ function setFocusAssist(professionalPhotoSession: camera.ProfessionalPhotoSessio
 
 ```
 
+<a id="setfocusdriven"></a>
 ## setFocusDriven
 
 ```TypeScript
@@ -254,6 +259,7 @@ function setFocusDriven(session: camera.VideoSessionForSys, type: camera.FocusDr
 
 ```
 
+<a id="setfocusrange"></a>
 ## setFocusRange
 
 ```TypeScript

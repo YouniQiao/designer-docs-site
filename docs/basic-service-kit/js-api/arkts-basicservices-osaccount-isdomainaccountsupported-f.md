@@ -6,6 +6,7 @@
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="isdomainaccountsupported"></a>
 ## isDomainAccountSupported
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether this domain account is supported. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means this domain account is supported; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means this domain account is supported; the value **false** means the opposite. |
 
 **Error codes:**
 

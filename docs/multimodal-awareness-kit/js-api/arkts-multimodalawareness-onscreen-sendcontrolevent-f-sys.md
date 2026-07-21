@@ -6,6 +6,7 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="sendcontrolevent"></a>
 ## sendControlEvent
 
 ```TypeScript
@@ -34,7 +35,7 @@ If the target window is displayed on the screen, you can use this API to send sc
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

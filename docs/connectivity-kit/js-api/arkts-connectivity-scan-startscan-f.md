@@ -6,6 +6,7 @@
 import { scan } from '@kit.ConnectivityKit';
 ```
 
+<a id="startscan"></a>
 ## startScan
 
 ```TypeScript
@@ -35,7 +36,7 @@ Starts scanning for specified NearLink devices with filters.It is allowed to set
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise object is returned. |
+| Promise&lt;void&gt; | The promise object is returned. |
 
 **Error codes:**
 

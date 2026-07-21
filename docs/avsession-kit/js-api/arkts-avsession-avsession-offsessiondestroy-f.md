@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="offsessiondestroy"></a>
 ## offSessionDestroy
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unregister session destroy callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVSessionDescriptor> | No | Used to unregister listener for ('sessionDestroy') command |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVSessionDescriptor&gt; | No | Used to unregister listener for ('sessionDestroy') command |
 
 **Error codes:**
 

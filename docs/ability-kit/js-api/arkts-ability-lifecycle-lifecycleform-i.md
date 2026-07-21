@@ -8,6 +8,7 @@ interface of form lifecycle.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="onacquireformstate"></a>
 ## onAcquireFormState
 
 ```TypeScript
@@ -36,6 +37,7 @@ Called to return a {@link FormState} object.<p>You must override this callback i
 | --- | --- |
 | formInfo.FormState | Returns the {@link formInfo#FormState} object. |
 
+<a id="oncasttonormal"></a>
 ## onCastToNormal
 
 ```TypeScript
@@ -58,6 +60,7 @@ Called when the form provider is notified that a temporary form is successfully 
 | --- | --- | --- | --- |
 | formId | string | Yes | Indicates the ID of the form. |
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -86,6 +89,7 @@ Called to return a {@link formBindingData.FormBindingData} object.
 | --- | --- |
 | formBindingData.FormBindingData | Returns the created {@link formBindingData#FormBindingData} object. |
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -108,6 +112,7 @@ Called to notify the form provider that a specified form has been deleted. Overr
 | --- | --- | --- | --- |
 | formId | string | Yes | Indicates the ID of the deleted form. |
 
+<a id="onevent"></a>
 ## onEvent
 
 ```TypeScript
@@ -131,6 +136,7 @@ Called when a specified message event defined by the form provider is triggered.
 | formId | string | Yes | Indicates the ID of the form on which the message event is triggered, which is provided by the client to the form provider. |
 | message | string | Yes | Indicates the value of the {@code params} field of the message event. This parameter is used to identify the specific component on which the event is triggered. |
 
+<a id="onupdate"></a>
 ## onUpdate
 
 ```TypeScript
@@ -153,6 +159,7 @@ Called to notify the form provider to update a specified form.
 | --- | --- | --- | --- |
 | formId | string | Yes | Indicates the ID of the form to update. |
 
+<a id="onvisibilitychange"></a>
 ## onVisibilityChange
 
 ```TypeScript
@@ -173,5 +180,5 @@ Called when the form provider receives form events from the system.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| newStatus | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, number> | Yes | Indicates the form events occurred. The key in the {@code Map}object indicates form ID,and the value indicates the event type,which can be either{@link formInfo#VisibilityType#FORM_VISIBLE} or{@link formInfo#VisibilityType#FORM_INVISIBLE}.{@link formInfo#VisibilityType#FORM_VISIBLE}means that the form becomes visible, and{@link formInfo#VisibilityType#FORM_INVISIBLE}means that the form becomes invisible. |
+| newStatus | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, number&gt; | Yes | Indicates the form events occurred. The key in the {@code Map}object indicates form ID,and the value indicates the event type,which can be either{@link formInfo#VisibilityType#FORM_VISIBLE} or{@link formInfo#VisibilityType#FORM_INVISIBLE}.{@link formInfo#VisibilityType#FORM_VISIBLE}means that the form becomes visible, and{@link formInfo#VisibilityType#FORM_INVISIBLE}means that the form becomes invisible. |
 

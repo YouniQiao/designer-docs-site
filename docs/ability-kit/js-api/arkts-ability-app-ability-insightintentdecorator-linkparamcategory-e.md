@@ -1,6 +1,6 @@
 # LinkParamCategory
 
-Enumerates the intent parameter categories available for the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)decorator. The enum is used to define how intent parameters should be passed.
+Enumerates the intent parameter categories available for the [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)decorator. The enum is used to define how intent parameters should be passed.
 
 **Since:** 20
 

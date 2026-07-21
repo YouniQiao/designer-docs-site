@@ -10,6 +10,7 @@ The accessibility extension context. Used to configure, query information, and i
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
+<a id="addaccessibilityvirtualnodes"></a>
 ## addAccessibilityVirtualNodes
 
 ```TypeScript
@@ -36,13 +37,13 @@ Add accessibility virtual nodes.
 | --- | --- | --- | --- |
 | elementId | number | Yes | Indicates the id of the node to which the accessibility virtual node tree belongs |
 | windowId | number | Yes | Indicates the window id<br>The value range is all integers. |
-| nodes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AccessibilityVirtualNode> | Yes | Indicates accessibility virtual node tree. |
+| nodes | Array&lt;AccessibilityVirtualNode&gt; | Yes | Indicates accessibility virtual node tree. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperateVirtualNodeResult> | Promise used to return the result code. |
+| Promise&lt;OperateVirtualNodeResult&gt; | Promise used to return the result code. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ Add accessibility virtual nodes.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300000](../errorcode-accessibility.md#9300000-accessibility-service-abnormal) | System abnormality.Possible causes:<br>1.Internal operation failed.<br>2.Failed to obtain the required service or client object (null pointer).<br>3.IPC communication failed.<br>4.Failed to obtain the accessibility service proxy.<br>5.Timed out while waiting for the result of an asynchronous operation. |
 
+<a id="getaccessibilityfocusedelement"></a>
 ## getAccessibilityFocusedElement
 
 ```TypeScript
@@ -74,7 +76,7 @@ Obtains the element that is currently focused. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -85,6 +87,7 @@ Obtains the element that is currently focused. This API uses a promise to return
 | [9300003](../errorcode-accessibility.md#9300003-no-accessibility-permission-to-perform-the-operation) | No accessibility permission to perform the operation. |
 | [9300006](../errorcode-accessibility.md#9300006-failed-to-connect-the-target-application-and-accessibility-services) | The target application failed to connect to accessibility service. |
 
+<a id="getaccessibilitywindowssync"></a>
 ## getAccessibilityWindowsSync
 
 ```TypeScript
@@ -113,7 +116,7 @@ Obtains the accessibility windows.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AccessibilityElement> | List of windows. |
+| Array&lt;AccessibilityElement&gt; | List of windows. |
 
 **Error codes:**
 
@@ -123,6 +126,7 @@ Obtains the accessibility windows.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300003](../errorcode-accessibility.md#9300003-no-accessibility-permission-to-perform-the-operation) | No accessibility permission to perform the operation. |
 
+<a id="getdefaultfocusedelementids"></a>
 ## getDefaultFocusedElementIds
 
 ```TypeScript
@@ -149,7 +153,7 @@ Obtains the custom default focuses of an application. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the result. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -159,6 +163,7 @@ Obtains the custom default focuses of an application. This API uses a promise to
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [9300003](../errorcode-accessibility.md#9300003-no-accessibility-permission-to-perform-the-operation) | No accessibility permission to perform the operation. |
 
+<a id="getelements"></a>
 ## getElements
 
 ```TypeScript
@@ -186,7 +191,7 @@ Obtains node elements in batches. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AccessibilityElement>> | Promise used to return the result. |
+| Promise&lt;Array&lt;AccessibilityElement&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -196,6 +201,7 @@ Obtains node elements in batches. This API uses a promise to return the result.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [9300003](../errorcode-accessibility.md#9300003-no-accessibility-permission-to-perform-the-operation) | No accessibility permission to perform the operation. |
 
+<a id="getrootinactivewindow"></a>
 ## getRootInActiveWindow
 
 ```TypeScript
@@ -224,7 +230,7 @@ Obtains the root element of an active window. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -235,6 +241,7 @@ Obtains the root element of an active window. This API uses a promise to return 
 | [9300003](../errorcode-accessibility.md#9300003-no-accessibility-permission-to-perform-the-operation) | No accessibility permission to perform the operation. |
 | [9300006](../errorcode-accessibility.md#9300006-failed-to-connect-the-target-application-and-accessibility-services) | The target application failed to connect to accessibility service. |
 
+<a id="holdrunninglocksync"></a>
 ## holdRunningLockSync
 
 ```TypeScript
@@ -260,6 +267,7 @@ Holds the running lock. After the lock is held, the screen will not turn off aut
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="notifydisconnect"></a>
 ## notifyDisconnect
 
 ```TypeScript
@@ -268,7 +276,7 @@ notifyDisconnect(): void
 
 Notifies the accessibility service that the accessibility extension service can be disconnected.
 
-This API must be used together with the [on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1) API.If the **on('preDisconnect')** API is not called, this API does not take effect.
+This API must be used together with the [on('preDisconnect')](AccessibilityExtensionContext#on(type: 'preDisconnect', callback: Callback<void>)) API.If the **on('preDisconnect')** API is not called, this API does not take effect.
 
 **Since:** 20
 
@@ -287,6 +295,7 @@ This API must be used together with the [on('preDisconnect')](arkts-accessibilit
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="off"></a>
 ## off('preDisconnect')
 
 ```TypeScript
@@ -310,7 +319,7 @@ Unsubscribes from the pre-disconnection event of the accessibility extension ser
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'preDisconnect' | Yes | Name of the event to listen for. The value is fixed at **'preDisconnect'**,indicating that the accessibility extension service is about to be disconnected. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback to unregister, which must be the same as that of [on('preDisconnect')](arkts-accessibility-accessibilityextensioncontext-c-sys.md#on-1).If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback to unregister, which must be the same as that of [on('preDisconnect')](AccessibilityExtensionContext#on(type: 'preDisconnect', callback: Callback<void>)).If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
 
 **Error codes:**
 
@@ -319,6 +328,7 @@ Unsubscribes from the pre-disconnection event of the accessibility extension ser
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="on"></a>
 ## on('preDisconnect')
 
 ```TypeScript
@@ -344,7 +354,7 @@ Used together with [notifyDisconnect](arkts-accessibility-accessibilityextension
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'preDisconnect' | Yes | Name of the event to listen for. The value is fixed at **'preDisconnect'**,indicating that the accessibility extension service is about to be disconnected. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback to be invoked when the accessibility extension service is about to be disconnected. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback to be invoked when the accessibility extension service is about to be disconnected. |
 
 **Error codes:**
 
@@ -353,6 +363,7 @@ Used together with [notifyDisconnect](arkts-accessibility-accessibilityextension
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="removeaccessibilityvirtualnodes"></a>
 ## removeAccessibilityVirtualNodes
 
 ```TypeScript
@@ -384,7 +395,7 @@ Remove accessibility virtual nodes.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperateVirtualNodeResult> | Promise used to return the result code. |
+| Promise&lt;OperateVirtualNodeResult&gt; | Promise used to return the result code. |
 
 **Error codes:**
 
@@ -394,6 +405,7 @@ Remove accessibility virtual nodes.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300000](../errorcode-accessibility.md#9300000-accessibility-service-abnormal) | System abnormality.Possible causes:<br>1.Internal operation failed.<br>2.Failed to obtain the required service or client object (null pointer).<br>3.IPC communication failed.<br>4.Failed to obtain the accessibility service proxy.<br>5.Timed out while waiting for the result of an asynchronous operation. |
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -420,7 +432,7 @@ Starts the foreground page. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -429,6 +441,7 @@ Starts the foreground page. This API uses a promise to return the result.
 | [201](../../errorcode-universal.md#201-permission-denied) | The application does not have the permission required to call the API. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="unholdrunninglocksync"></a>
 ## unholdRunningLockSync
 
 ```TypeScript
@@ -454,6 +467,7 @@ Releases the running lock. After the lock is released, the screen will automatic
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="updateaccessibilityelementproperty"></a>
 ## updateAccessibilityElementProperty
 
 ```TypeScript
@@ -486,7 +500,7 @@ Update accessibility element property.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OperateVirtualNodeResult> | Promise used to return the result code. |
+| Promise&lt;OperateVirtualNodeResult&gt; | Promise used to return the result code. |
 
 **Error codes:**
 

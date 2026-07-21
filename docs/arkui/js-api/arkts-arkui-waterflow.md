@@ -56,7 +56,7 @@ Creates a **WaterFlow** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | WaterFlowOptions | No | Parameters of the **WaterFlow** component. |
+| options | [WaterFlowOptions](arkts-arkui-waterflowoptions-i.md) | No | Parameters of the **WaterFlow** component.  |
 
 ## Summary
 

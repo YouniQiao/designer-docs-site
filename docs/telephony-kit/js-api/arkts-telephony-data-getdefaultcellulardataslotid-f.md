@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="getdefaultcellulardataslotid"></a>
 ## getDefaultCellularDataSlotId
 
 ```TypeScript
@@ -24,7 +25,7 @@ Get the default cellular data card.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Indicates the default cellular data slot id. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Indicates the default cellular data slot id. |
 
 **Example**
 
@@ -43,6 +44,7 @@ data.getDefaultCellularDataSlotId((err: BusinessError, contextData: number) => {
 ```
 
 
+<a id="getdefaultcellulardataslotid-1"></a>
 ## getDefaultCellularDataSlotId
 
 ```TypeScript
@@ -61,7 +63,7 @@ Get the default cellular data card.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the default cellular data slot id. |
+| Promise&lt;number&gt; | Returns the default cellular data slot id. |
 
 **Example**
 

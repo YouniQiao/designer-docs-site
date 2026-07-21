@@ -6,6 +6,7 @@
 import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
 
+<a id="loadmodelfromfile"></a>
 ## loadModelFromFile
 
 ```TypeScript
@@ -39,16 +40,16 @@ Create a Model instance from file path
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Model> | the promise returned by the function. |
+| Promise&lt;Model&gt; | the promise returned by the function. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000000 | Model path error. Possible causes: 1. The model path is null; 2. The model path does not exist.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000002 | Failed to create native model. Possible causes: 1. Insufficient permission to access the model path; 2. The model file is corrupted.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000000 | Model path error. Possible causes: 1. The model path is null; 2. The model path does not exist.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000002 | Failed to create native model. Possible causes: 1. Insufficient permission to access the model path; 2. The model file is corrupted.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -70,6 +71,7 @@ mindSporeLite.loadModelFromFile(modelFile).then((mindSporeLiteModel: mindSporeLi
 ```
 
 
+<a id="loadmodelfromfile-1"></a>
 ## loadModelFromFile
 
 ```TypeScript
@@ -94,16 +96,16 @@ Create a Model instance from file path.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | model | string | Yes | model indicates model path to be loaded |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Model> | Yes | the callback of model |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Model&gt; | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000000 | Model path error. Possible causes: 1. The model path is null; 2. The model path does not exist.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000002 | Failed to create native model. Possible causes: 1. Insufficient permission to access the model path; 2. The model file is corrupted.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000000 | Model path error. Possible causes: 1. The model path is null; 2. The model path does not exist.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000002 | Failed to create native model. Possible causes: 1. Insufficient permission to access the model path; 2. The model file is corrupted.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -123,6 +125,7 @@ mindSporeLite.loadModelFromFile(modelFile, (mindSporeLiteModel: mindSporeLite.Mo
 ```
 
 
+<a id="loadmodelfromfile-2"></a>
 ## loadModelFromFile
 
 ```TypeScript
@@ -151,16 +154,16 @@ Create a Model instance from file path.
 | --- | --- | --- | --- |
 | model | string | Yes | model indicates model path to be loaded |
 | context | [Context](arkts-mindsporelite-mindsporelite-context-i.md) | Yes | context indicates model context information |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Model> | Yes | the callback of model |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Model&gt; | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000000 | Model path error. Possible causes: 1. The model path is null; 2. The model path does not exist.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000002 | Failed to create native model. Possible causes: 1. Insufficient permission to access the model path; 2. The model file is corrupted.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000000 | Model path error. Possible causes: 1. The model path is null; 2. The model path does not exist.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000002 | Failed to create native model. Possible causes: 1. Insufficient permission to access the model path; 2. The model file is corrupted.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

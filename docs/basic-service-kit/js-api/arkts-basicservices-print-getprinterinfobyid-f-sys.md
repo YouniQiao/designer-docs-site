@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="getprinterinfobyid"></a>
 ## getPrinterInfoById
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains printer information based on the printer ID. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PrinterInfo> | Promise used to return the printer information. |
+| Promise&lt;PrinterInfo&gt; | Promise used to return the printer information. |
 
 **Error codes:**
 

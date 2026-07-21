@@ -1,5 +1,6 @@
 # isRamConstrainedDevice
 
+<a id="isramconstraineddevice"></a>
 ## isRamConstrainedDevice
 
 ```TypeScript
@@ -22,7 +23,7 @@ Checks whether the current device is a RAM-constrained device (a device with sev
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the API call result and the result indicating whether the device is RAM-constrained. You can perform error handling or custom processing in this callback. **true** if the device is RAM  -constrained, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the API call result and the result indicating whether the device is RAM-constrained. You can perform error handling or custom processing in this callback. **true** if the device is RAM   -constrained, **false** otherwise. |
 
 **Example**
 
@@ -39,6 +40,7 @@ appManager.isRamConstrainedDevice().then((data) => {
 ```
 
 
+<a id="isramconstraineddevice-1"></a>
 ## isRamConstrainedDevice
 
 ```TypeScript
@@ -61,7 +63,7 @@ Checks whether the current device is a RAM-constrained device (a device with sev
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the API call result and the result indicating whether the device is RAM-constrained. You can perform error handling or custom processing in this callback.**true** if the device is RAM-constrained, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the API call result and the result indicating whether the device is RAM-constrained. You can perform error handling or custom processing in this callback.**true** if the device is RAM-constrained, **false** otherwise. |
 
 **Example**
 

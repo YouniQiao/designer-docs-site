@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="startcastdevicediscovery"></a>
 ## startCastDeviceDiscovery
 
 ```TypeScript
@@ -26,7 +27,7 @@ Start device discovery.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | a callback function |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | a callback function |
 
 **Error codes:**
 
@@ -45,6 +46,7 @@ avSession.startCastDeviceDiscovery(() => {
 ```
 
 
+<a id="startcastdevicediscovery-1"></a>
 ## startCastDeviceDiscovery
 
 ```TypeScript
@@ -66,7 +68,7 @@ Start device discovery.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | filter | number | Yes | device filter when discovering, can be an union of { |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | a callback function |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | a callback function |
 
 **Error codes:**
 
@@ -87,6 +89,7 @@ avSession.startCastDeviceDiscovery(filter, () => {
 ```
 
 
+<a id="startcastdevicediscovery-2"></a>
 ## startCastDeviceDiscovery
 
 ```TypeScript
@@ -108,13 +111,13 @@ Start device discovery.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | filter | number | No | device filter when discovering, can be an union of {@link ProtocolType}<br>**Since:** 12 |
-| drmSchemes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | filter drm-enabled devices which are represented by uuid.It is effective when protocol type is TYPE_CAST_PLUS_STREAM.<br>**Since:** 12 |
+| drmSchemes | Array&lt;string&gt; | No | filter drm-enabled devices which are represented by uuid.It is effective when protocol type is TYPE_CAST_PLUS_STREAM.<br>**Since:** 12 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise for the result |
+| Promise&lt;void&gt; | Promise for the result |
 
 **Error codes:**
 

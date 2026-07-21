@@ -6,6 +6,7 @@
 import { BundleStatusCallback } from '@kit.AbilityKit';
 ```
 
+<a id="on"></a>
 ## on('BundleStatusChange')
 
 ```TypeScript
@@ -18,7 +19,7 @@ Registers a callback to receive bundle status changes. This API uses an asynchro
 > **NOTE**  
 >  
 > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [on](arkts-ability-bundlemonitor-on-f-sys.md#on-1)  
+> [on](@ohos.bundle.bundleMonitor:bundleMonitor.on(type: BundleChangedEvent, callback: Callback<BundleChangedInfo>))  
 > instead.
 
 **Since:** 8
@@ -43,9 +44,10 @@ Registers a callback to receive bundle status changes. This API uses an asynchro
 | --- | --- | --- | --- |
 | type | 'BundleStatusChange' | Yes | Event type. Only **BundleStatusChange** is supported. |
 | bundleStatusCallback | [BundleStatusCallback](arkts-ability-bundlestatuscallback-t-sys.md) | Yes | Callback to register. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return a successful result or error Callback to register. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return a successful result or error Callback to register. |
 
 
+<a id="on-1"></a>
 ## on('BundleStatusChange')
 
 ```TypeScript
@@ -57,7 +59,7 @@ Registers a callback to receive bundle status changes. This API uses an asynchro
 > **NOTE**  
 >  
 > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [on](arkts-ability-bundlemonitor-on-f-sys.md#on-1)  
+> [on](@ohos.bundle.bundleMonitor:bundleMonitor.on(type: BundleChangedEvent, callback: Callback<BundleChangedInfo>))  
 > instead.
 
 **Since:** 8
@@ -85,5 +87,5 @@ Registers a callback to receive bundle status changes. This API uses an asynchro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - Promise used to return a successful result or error information. |
+| Promise&lt;string&gt; | - Promise used to return a successful result or error information. |
 

@@ -6,6 +6,7 @@
 import { omapi } from '@kit.ConnectivityKit';
 ```
 
+<a id="createservice"></a>
 ## createService
 
 ```TypeScript
@@ -24,7 +25,7 @@ Establish a new connection that can be used to connect to all the SEs available 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SEService> | Returns the created SEService instance. |
+| Promise&lt;SEService&gt; | Returns the created SEService instance. |
 
 **Error codes:**
 

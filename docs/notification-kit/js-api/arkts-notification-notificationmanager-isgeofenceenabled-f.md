@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="isgeofenceenabled"></a>
 ## isGeofenceEnabled
 
 ```TypeScript
@@ -24,7 +25,7 @@ Checks whether geofencing is enabled. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that geofencing is enabled, and the value **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that geofencing is enabled, and the value **false** indicates the opposite. |
 
 **Error codes:**
 

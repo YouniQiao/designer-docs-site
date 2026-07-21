@@ -6,13 +6,14 @@
 import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript
 function sendData(sessionId: number, data: ArrayBuffer): Promise<void>
 ```
 
-Sends [ArrayBuffer](../../../../arkts-utils/arraybuffer-object.md) byte streams from one device to another after a connection is successfully established.
+Sends [ArrayBuffer](docroot://arkts-utils/arraybuffer-object.md) byte streams from one device to another after a connection is successfully established.
 
 **Since:** 18
 
@@ -27,13 +28,13 @@ Sends [ArrayBuffer](../../../../arkts-utils/arraybuffer-object.md) byte streams 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sessionId | number | Yes | ID of the collaboration session. |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Byte stream information. |
+| data | ArrayBuffer | Yes | Byte stream information. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

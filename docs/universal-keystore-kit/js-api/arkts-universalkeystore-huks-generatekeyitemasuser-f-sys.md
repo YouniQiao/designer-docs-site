@@ -6,13 +6,14 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="generatekeyitemasuser"></a>
 ## generateKeyItemAsUser
 
 ```TypeScript
 function generateKeyItemAsUser(userId: number, keyAlias: string, huksOptions: HuksOptions): Promise<void>
 ```
 
-Generates a key for the specified user. This API uses a promise to return the result. Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through the promise and is only used to indicate whether the call is successful.
+Generates a key for the specified user. This API uses a promise to return the result. Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](docroot://security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through the promise and is only used to indicate whether the call is successful.
 
 **Since:** 12
 
@@ -30,13 +31,13 @@ Generates a key for the specified user. This API uses a promise to return the re
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. |
 | keyAlias | string | Yes | Key alias. The value can contain up to 128 bytes and should not include sensitive data such as personal information. |
-| huksOptions | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | [Attribute tags](../../../../reference/apis-universal-keystore-kit/capi-native-huks-type-h.md#enums) of the key to generate. The algorithm, key purpose, and key length are mandatory. |
+| huksOptions | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | [Attribute tags](docroot://reference/apis-universal-keystore-kit/capi-native-huks-type-h.md#enums) of the key to generate. The algorithm, key purpose, and key length are mandatory. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

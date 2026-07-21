@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="sendsystemcommoncommand"></a>
 ## sendSystemCommonCommand
 
 ```TypeScript
@@ -37,7 +38,7 @@ Send system control command. The system automatically selects the recipient.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | callback info for sync command |
+| Promise&lt;string&gt; | callback info for sync command |
 
 **Error codes:**
 

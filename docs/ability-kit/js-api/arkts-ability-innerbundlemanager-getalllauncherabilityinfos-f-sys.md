@@ -6,6 +6,7 @@
 import { BundleStatusCallback } from '@kit.AbilityKit';
 ```
 
+<a id="getalllauncherabilityinfos"></a>
 ## getAllLauncherAbilityInfos
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the information about all launcher abilities. This API uses an asynchron
 
 **Deprecated since:** 9
 
-**Substitutes:** getAllLauncherAbilityInfo(userId:
+**Substitutes:** [getAllLauncherAbilityInfo(userId:](arkts-ability-launcherbundlemanager-getalllauncherabilityinfo-f-sys.md#getalllauncherabilityinfo-1)
 
 **Required permissions:** ohos.permission.GET_BUNDLE_INFO_PRIVILEGED
 
@@ -39,9 +40,10 @@ Obtains the information about all launcher abilities. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. The value must be greater than or equal to 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<LauncherAbilityInfo>> | Yes | Callback used to return an array of the launcher ability information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | Yes | Callback used to return an array of the launcher ability information. |
 
 
+<a id="getalllauncherabilityinfos-1"></a>
 ## getAllLauncherAbilityInfos
 
 ```TypeScript
@@ -60,7 +62,7 @@ Obtains the information about all launcher abilities. This API uses a promise to
 
 **Deprecated since:** 9
 
-**Substitutes:** getAllLauncherAbilityInfo(userId:
+**Substitutes:** [getAllLauncherAbilityInfo(userId:](arkts-ability-launcherbundlemanager-getalllauncherabilityinfo-f-sys.md#getalllauncherabilityinfo-1)
 
 **Required permissions:** ohos.permission.GET_BUNDLE_INFO_PRIVILEGED
 
@@ -80,5 +82,5 @@ Obtains the information about all launcher abilities. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<LauncherAbilityInfo>> | Promise used to return an array of the launcher ability information. |
+| Promise&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | Promise used to return an array of the launcher ability information. |
 

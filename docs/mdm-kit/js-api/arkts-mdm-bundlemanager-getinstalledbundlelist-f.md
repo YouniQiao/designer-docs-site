@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.MDMKit';
 ```
 
+<a id="getinstalledbundlelist"></a>
 ## getInstalledBundleList
 
 ```TypeScript
@@ -29,13 +30,13 @@ Obtains the applications installed by a specified user on a device. This API use
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| accountId | number | Yes | Account ID. The value is a positive integer greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2) of @ohos.account.osAccount to obtain the account ID. |
+| accountId | number | Yes | Account ID. The value is a positive integer greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1) of @ohos.account.osAccount to obtain the account ID. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleInfo>> | Promise used to return the bundle information of the installed application. |
+| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Promise used to return the bundle information of the installed application. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ bundleManager.getInstalledBundleList(wantTemp, accountId).then((result) => {
 ```
 
 
+<a id="getinstalledbundlelist-1"></a>
 ## getInstalledBundleList
 
 ```TypeScript
@@ -91,14 +93,14 @@ Obtains the list of applications installed by a specified user based on the spec
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| accountId | number | Yes | Account ID.<br>The value must be an integer greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2)of @ ohos.account.osAccount to obtain the account ID. |
+| accountId | number | Yes | Account ID.<br>The value must be an integer greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)of @ ohos.account.osAccount to obtain the account ID. |
 | bundleInfoGetFlag | number | Yes | Type of the bundle information to obtain<br>The value range is all integers. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleInfo>> | Promise used to return the bundle information of the installed application. |
+| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Promise used to return the bundle information of the installed application. |
 
 **Error codes:**
 

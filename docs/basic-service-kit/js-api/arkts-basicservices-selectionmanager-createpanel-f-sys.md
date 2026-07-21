@@ -6,6 +6,7 @@
 import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="createpanel"></a>
 ## createPanel
 
 ```TypeScript
@@ -35,7 +36,7 @@ Creates a word selection panel. This API uses a promise to return the result.Onl
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Panel> | Promise used to return the word selection panel created. |
+| Promise&lt;Panel&gt; | Promise used to return the word selection panel created. |
 
 **Error codes:**
 

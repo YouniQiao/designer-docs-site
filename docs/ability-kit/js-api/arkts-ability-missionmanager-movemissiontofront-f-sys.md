@@ -6,6 +6,7 @@
 import { missionManager } from '@kit.AbilityKit';
 ```
 
+<a id="movemissiontofront"></a>
 ## moveMissionToFront
 
 ```TypeScript
@@ -29,7 +30,7 @@ Switches a given mission to the foreground. This API uses an asynchronous callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | missionId | number | Yes | Mission ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ try {
 ```
 
 
+<a id="movemissiontofront-1"></a>
 ## moveMissionToFront
 
 ```TypeScript
@@ -88,7 +90,7 @@ Switches a given mission to the foreground, with the startup parameters for the 
 | --- | --- | --- | --- |
 | missionId | number | Yes | Mission ID. |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Startup parameters, which are used to specify the window mode and device ID for switching the mission to the foreground. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -123,6 +125,7 @@ try {
 ```
 
 
+<a id="movemissiontofront-2"></a>
 ## moveMissionToFront
 
 ```TypeScript
@@ -152,7 +155,7 @@ Switches a given mission to the foreground, with the startup parameters for the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

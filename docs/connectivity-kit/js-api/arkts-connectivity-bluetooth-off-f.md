@@ -6,6 +6,7 @@
 import { bluetooth } from '@kit.ConnectivityKit';
 ```
 
+<a id="off"></a>
 ## off('bluetoothDeviceFind')
 
 ```TypeScript
@@ -31,7 +32,7 @@ Unsubscribe the event reported when a remote Bluetooth device is discovered.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'bluetoothDeviceFind' | Yes | Type of the discovering event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> | No | Callback used to listen for the discovering event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;string&gt;&gt; | No | Callback used to listen for the discovering event. |
 
 **Example**
 
@@ -45,6 +46,7 @@ bluetooth.off('bluetoothDeviceFind', onReceiveEvent);
 ```
 
 
+<a id="off-1"></a>
 ## off('bondStateChange')
 
 ```TypeScript
@@ -70,7 +72,7 @@ Unsubscribe the event reported when a remote Bluetooth device is bonded.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'bondStateChange' | Yes | Type of the bond state event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BondStateParam> | No | Callback used to listen for the bond state event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BondStateParam&gt; | No | Callback used to listen for the bond state event. |
 
 **Example**
 
@@ -84,6 +86,7 @@ bluetooth.off('bondStateChange', onReceiveEvent);
 ```
 
 
+<a id="off-2"></a>
 ## off('pinRequired')
 
 ```TypeScript
@@ -109,7 +112,7 @@ Unsubscribe the event of a pairing request from a remote Bluetooth device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'pinRequired' | Yes | Type of the pairing request event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PinRequiredParam> | No | Callback used to listen for the pairing request event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PinRequiredParam&gt; | No | Callback used to listen for the pairing request event. |
 
 **Example**
 
@@ -123,6 +126,7 @@ bluetooth.off('pinRequired', onReceiveEvent);
 ```
 
 
+<a id="off-3"></a>
 ## off('stateChange')
 
 ```TypeScript
@@ -148,7 +152,7 @@ Unsubscribe the event reported when the Bluetooth state changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stateChange' | Yes | Type of the Bluetooth state changes event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BluetoothState> | No | Callback used to listen for the Bluetooth state event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BluetoothState&gt; | No | Callback used to listen for the Bluetooth state event. |
 
 **Example**
 
@@ -162,6 +166,7 @@ bluetooth.off('stateChange', onReceiveEvent);
 ```
 
 
+<a id="off-4"></a>
 ## off('sppRead')
 
 ```TypeScript
@@ -186,7 +191,7 @@ Unsubscribe the event reported when data is read from the socket.
 | --- | --- | --- | --- |
 | type | 'sppRead' | Yes | Type of the spp read event to listen for. |
 | clientSocket | number | Yes | Client socket ID, which is obtained by sppAccept or sppConnect. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ArrayBuffer> | No | Callback used to listen for the spp read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ArrayBuffer&gt; | No | Callback used to listen for the spp read event. |
 
 **Example**
 

@@ -8,6 +8,7 @@ WebGL 2.0
 
 **System capability:** SystemCapability.Graphic.Graphic2D.WebGL2
 
+<a id="bufferdata"></a>
 ## bufferData
 
 ```TypeScript
@@ -32,6 +33,7 @@ Sets buffer data
 | size | webgl.GLsizeiptr | Yes | Buffer size |
 | usage | webgl.GLenum | Yes | Buffer usage |
 
+<a id="bufferdata-1"></a>
 ## bufferData
 
 ```TypeScript
@@ -56,6 +58,7 @@ Sets buffer data from BufferSource
 | srcData | BufferSource \| null | Yes | Buffer data |
 | usage | webgl.GLenum | Yes | Buffer usage |
 
+<a id="bufferdata-2"></a>
 ## bufferData
 
 ```TypeScript
@@ -100,6 +103,7 @@ Sets buffer data from ArrayBufferView with offset
 | srcOffset | webgl.GLuint | Yes | Source offset |
 | length | webgl.GLuint | No | Length |
 
+<a id="buffersubdata"></a>
 ## bufferSubData
 
 ```TypeScript
@@ -124,6 +128,7 @@ Sets buffer sub data
 | dstByteOffset | webgl.GLintptr | Yes | Destination byte offset |
 | srcData | BufferSource | Yes | Source data |
 
+<a id="buffersubdata-1"></a>
 ## bufferSubData
 
 ```TypeScript
@@ -168,6 +173,7 @@ Sets buffer sub data with offset
 | srcOffset | webgl.GLuint | Yes | Source offset |
 | length | webgl.GLuint | No | Length |
 
+<a id="compressedteximage2d"></a>
 ## compressedTexImage2D
 
 ```TypeScript
@@ -224,6 +230,7 @@ Compressed texture image 2D from PBO offset
 | imageSize | webgl.GLsizei | Yes | Image size |
 | offset | webgl.GLintptr | Yes | Offset |
 
+<a id="compressedteximage2d-1"></a>
 ## compressedTexImage2D
 
 ```TypeScript
@@ -284,6 +291,7 @@ Compressed texture image 2D from ArrayBufferView
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLengthOverride | webgl.GLuint | No | Source length override |
 
+<a id="compressedtexsubimage2d"></a>
 ## compressedTexSubImage2D
 
 ```TypeScript
@@ -344,6 +352,7 @@ Compressed texture sub image 2D from PBO offset
 | imageSize | webgl.GLsizei | Yes | Image size |
 | offset | webgl.GLintptr | Yes | Offset |
 
+<a id="compressedtexsubimage2d-1"></a>
 ## compressedTexSubImage2D
 
 ```TypeScript
@@ -408,6 +417,7 @@ Compressed texture sub image 2D from ArrayBufferView
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLengthOverride | webgl.GLuint | No | Source length override |
 
+<a id="readpixels"></a>
 ## readPixels
 
 ```TypeScript
@@ -458,8 +468,9 @@ Reads pixels from the framebuffer to ArrayBufferView
 | height | webgl.GLsizei | Yes | Height |
 | format | webgl.GLenum | Yes | Pixel format |
 | type | webgl.GLenum | Yes | Pixel type |
-| dstData | ArrayBufferView \| null | Yes | Destination data |
+| dstData | [ArrayBufferView](../../apis-na/arkts-apis/arkts-na-lib-es5-arraybufferview-i.md) \| null | Yes | Destination data |
 
+<a id="readpixels-1"></a>
 ## readPixels
 
 ```TypeScript
@@ -512,6 +523,7 @@ Reads pixels from the framebuffer to PBO offset
 | type | webgl.GLenum | Yes | Pixel type |
 | offset | webgl.GLintptr | Yes | Offset |
 
+<a id="readpixels-2"></a>
 ## readPixels
 
 ```TypeScript
@@ -568,6 +580,7 @@ Reads pixels from the framebuffer to ArrayBufferView with offset
 | dstData | [ArrayBufferView](../../apis-na/arkts-apis/arkts-na-lib-es5-arraybufferview-i.md) | Yes | Destination data |
 | dstOffset | webgl.GLuint | Yes | Destination offset |
 
+<a id="teximage2d"></a>
 ## texImage2D
 
 ```TypeScript
@@ -626,8 +639,9 @@ Sets texture image 2D from pixels
 | border | webgl.GLint | Yes | Border |
 | format | webgl.GLenum | Yes | Pixel format |
 | type | webgl.GLenum | Yes | Pixel type |
-| pixels | ArrayBufferView \| null | Yes | Pixel data |
+| pixels | [ArrayBufferView](../../apis-na/arkts-apis/arkts-na-lib-es5-arraybufferview-i.md) \| null | Yes | Pixel data |
 
+<a id="teximage2d-1"></a>
 ## texImage2D
 
 ```TypeScript
@@ -676,6 +690,7 @@ Sets texture image 2D from TexImageSource
 | type | webgl.GLenum | Yes | Pixel type |
 | source | webgl.TexImageSource | Yes | Image source |
 
+<a id="teximage2d-2"></a>
 ## texImage2D
 
 ```TypeScript
@@ -736,6 +751,7 @@ Sets texture image 2D from PBO offset
 | type | webgl.GLenum | Yes | Pixel type |
 | pboOffset | webgl.GLintptr | Yes | PBO offset |
 
+<a id="teximage2d-3"></a>
 ## texImage2D
 
 ```TypeScript
@@ -796,6 +812,7 @@ Sets texture image 2D from TexImageSource
 | type | webgl.GLenum | Yes | Pixel type |
 | source | webgl.TexImageSource | Yes | Image source |
 
+<a id="teximage2d-4"></a>
 ## texImage2D
 
 ```TypeScript
@@ -860,6 +877,7 @@ Sets texture image 2D from ArrayBufferView with offset
 | srcData | [ArrayBufferView](../../apis-na/arkts-apis/arkts-na-lib-es5-arraybufferview-i.md) | Yes | Source data |
 | srcOffset | webgl.GLuint | Yes | Source offset |
 
+<a id="texsubimage2d"></a>
 ## texSubImage2D
 
 ```TypeScript
@@ -918,8 +936,9 @@ Sets texture sub image 2D from pixels
 | height | webgl.GLsizei | Yes | Height |
 | format | webgl.GLenum | Yes | Pixel format |
 | type | webgl.GLenum | Yes | Pixel type |
-| pixels | ArrayBufferView \| null | Yes | Pixel data |
+| pixels | [ArrayBufferView](../../apis-na/arkts-apis/arkts-na-lib-es5-arraybufferview-i.md) \| null | Yes | Pixel data |
 
+<a id="texsubimage2d-1"></a>
 ## texSubImage2D
 
 ```TypeScript
@@ -972,6 +991,7 @@ Sets texture sub image 2D from TexImageSource
 | type | webgl.GLenum | Yes | Pixel type |
 | source | webgl.TexImageSource | Yes | Image source |
 
+<a id="texsubimage2d-2"></a>
 ## texSubImage2D
 
 ```TypeScript
@@ -1032,6 +1052,7 @@ Sets texture sub image 2D from PBO offset
 | type | webgl.GLenum | Yes | Pixel type |
 | pboOffset | webgl.GLintptr | Yes | PBO offset |
 
+<a id="texsubimage2d-3"></a>
 ## texSubImage2D
 
 ```TypeScript
@@ -1092,6 +1113,7 @@ Sets texture sub image 2D from TexImageSource
 | type | webgl.GLenum | Yes | Pixel type |
 | source | webgl.TexImageSource | Yes | Image source |
 
+<a id="texsubimage2d-4"></a>
 ## texSubImage2D
 
 ```TypeScript
@@ -1156,6 +1178,7 @@ Sets texture sub image 2D from ArrayBufferView with offset
 | srcData | [ArrayBufferView](../../apis-na/arkts-apis/arkts-na-lib-es5-arraybufferview-i.md) | Yes | Source data |
 | srcOffset | webgl.GLuint | Yes | Source offset |
 
+<a id="uniform1fv"></a>
 ## uniform1fv
 
 ```TypeScript
@@ -1196,6 +1219,7 @@ Sets uniform1fv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniform1iv"></a>
 ## uniform1iv
 
 ```TypeScript
@@ -1236,6 +1260,7 @@ Sets uniform1iv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniform2fv"></a>
 ## uniform2fv
 
 ```TypeScript
@@ -1276,6 +1301,7 @@ Sets uniform2fv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniform2iv"></a>
 ## uniform2iv
 
 ```TypeScript
@@ -1316,6 +1342,7 @@ Sets uniform2iv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniform3fv"></a>
 ## uniform3fv
 
 ```TypeScript
@@ -1356,6 +1383,7 @@ Sets uniform3fv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniform3iv"></a>
 ## uniform3iv
 
 ```TypeScript
@@ -1396,6 +1424,7 @@ Sets uniform3iv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniform4fv"></a>
 ## uniform4fv
 
 ```TypeScript
@@ -1436,6 +1465,7 @@ Sets uniform4fv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniform4iv"></a>
 ## uniform4iv
 
 ```TypeScript
@@ -1476,6 +1506,7 @@ Sets uniform4iv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniformmatrix2fv"></a>
 ## uniformMatrix2fv
 
 ```TypeScript
@@ -1520,6 +1551,7 @@ Sets uniformMatrix2fv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniformmatrix3fv"></a>
 ## uniformMatrix3fv
 
 ```TypeScript
@@ -1564,6 +1596,7 @@ Sets uniformMatrix3fv value
 | srcOffset | webgl.GLuint | No | Source offset |
 | srcLength | webgl.GLuint | No | Source length |
 
+<a id="uniformmatrix4fv"></a>
 ## uniformMatrix4fv
 
 ```TypeScript

@@ -14,6 +14,7 @@ Implements a **PasteData** object. PasteData contains one or more data records (
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
+<a id="addhtmlrecord"></a>
 ## addHtmlRecord
 
 ```TypeScript
@@ -26,7 +27,7 @@ Adds an HTML record to the PasteData, and adds **MIMETYPE_TEXT_HTML** to **mimeT
 
 **Deprecated since:** 9
 
-**Substitutes:** addRecord(mimeType:
+**Substitutes:** [addRecord(mimeType:](arkts-basicservices-pasteboard-pastedata-i.md#addrecord-1)
 
 <!--Device-PasteData-addHtmlRecord(htmlText: string): void--><!--Device-PasteData-addHtmlRecord(htmlText: string): void-End-->
 
@@ -47,6 +48,7 @@ pasteData.addHtmlRecord(html);
 
 ```
 
+<a id="addrecord"></a>
 ## addRecord
 
 ```TypeScript
@@ -83,6 +85,7 @@ pasteData.addRecord(htmlRecord);
 
 ```
 
+<a id="addrecord-1"></a>
 ## addRecord
 
 ```TypeScript
@@ -123,6 +126,7 @@ pasteData.addRecord('app/xml', dataXml);
 
 ```
 
+<a id="addtextrecord"></a>
 ## addTextRecord
 
 ```TypeScript
@@ -135,7 +139,7 @@ Adds a plain text record to the PasteData, and adds **MIMETYPE_TEXT_PLAIN** to *
 
 **Deprecated since:** 9
 
-**Substitutes:** addRecord(mimeType:
+**Substitutes:** [addRecord(mimeType:](arkts-basicservices-pasteboard-pastedata-i.md#addrecord-1)
 
 <!--Device-PasteData-addTextRecord(text: string): void--><!--Device-PasteData-addTextRecord(text: string): void-End-->
 
@@ -155,6 +159,7 @@ pasteData.addTextRecord('good');
 
 ```
 
+<a id="addurirecord"></a>
 ## addUriRecord
 
 ```TypeScript
@@ -167,7 +172,7 @@ Adds a URI record to the PasteData, and adds **MIMETYPE_TEXT_URI** to **mimeType
 
 **Deprecated since:** 9
 
-**Substitutes:** addRecord(mimeType:
+**Substitutes:** [addRecord(mimeType:](arkts-basicservices-pasteboard-pastedata-i.md#addrecord-1)
 
 <!--Device-PasteData-addUriRecord(uri: string): void--><!--Device-PasteData-addUriRecord(uri: string): void-End-->
 
@@ -187,6 +192,7 @@ pasteData.addUriRecord('dataability:///com.example.myapplication1/user.txt');
 
 ```
 
+<a id="addwantrecord"></a>
 ## addWantRecord
 
 ```TypeScript
@@ -199,7 +205,7 @@ Adds a Want record to the PasteData, and adds **MIMETYPE_TEXT_WANT** to **mimeTy
 
 **Deprecated since:** 9
 
-**Substitutes:** addRecord(mimeType:
+**Substitutes:** [addRecord(mimeType:](arkts-basicservices-pasteboard-pastedata-i.md#addrecord-1)
 
 <!--Device-PasteData-addWantRecord(want: Want): void--><!--Device-PasteData-addWantRecord(want: Want): void-End-->
 
@@ -225,6 +231,7 @@ pasteData.addWantRecord(object);
 
 ```
 
+<a id="getmimetypes"></a>
 ## getMimeTypes
 
 ```TypeScript
@@ -245,7 +252,7 @@ Obtains types of [PasteDataProperty](arkts-basicservices-pasteboard-pastedatapro
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Data types of the PasteData. |
+| Array&lt;string&gt; | Data types of the PasteData. |
 
 **Example**
 
@@ -255,6 +262,7 @@ let types: string[] = pasteData.getMimeTypes();
 
 ```
 
+<a id="getprimaryhtml"></a>
 ## getPrimaryHtml
 
 ```TypeScript
@@ -291,6 +299,7 @@ systemPasteboard.getData().then((pasteData: pasteboard.PasteData) => {
 
 ```
 
+<a id="getprimarymimetype"></a>
 ## getPrimaryMimeType
 
 ```TypeScript
@@ -321,6 +330,7 @@ let type: string = pasteData.getPrimaryMimeType();
 
 ```
 
+<a id="getprimarypixelmap"></a>
 ## getPrimaryPixelMap
 
 ```TypeScript
@@ -366,6 +376,7 @@ image.createPixelMap(buffer, opt).then((pixelMap: image.PixelMap) => {
 
 ```
 
+<a id="getprimarytext"></a>
 ## getPrimaryText
 
 ```TypeScript
@@ -406,6 +417,7 @@ systemPasteboard.getData().then((pasteData: pasteboard.PasteData) => {
 
 ```
 
+<a id="getprimaryuri"></a>
 ## getPrimaryUri
 
 ```TypeScript
@@ -442,6 +454,7 @@ systemPasteboard.getData().then((pasteData: pasteboard.PasteData) => {
 
 ```
 
+<a id="getprimarywant"></a>
 ## getPrimaryWant
 
 ```TypeScript
@@ -479,6 +492,7 @@ systemPasteboard.getData().then((pasteData: pasteboard.PasteData) => {
 
 ```
 
+<a id="getproperty"></a>
 ## getProperty
 
 ```TypeScript
@@ -509,6 +523,7 @@ let property: pasteboard.PasteDataProperty = pasteData.getProperty();
 
 ```
 
+<a id="getrecord"></a>
 ## getRecord
 
 ```TypeScript
@@ -552,6 +567,7 @@ let record: pasteboard.PasteDataRecord = pasteData.getRecord(0);
 
 ```
 
+<a id="getrecordat"></a>
 ## getRecordAt
 
 ```TypeScript
@@ -564,7 +580,7 @@ Obtains the record with a specific index in PasteData.
 
 **Deprecated since:** 9
 
-**Substitutes:** getRecord(index:
+**Substitutes:** [getRecord(index:](arkts-basicservices-pasteboard-pastedata-i.md#getrecord-1)
 
 <!--Device-PasteData-getRecordAt(index: number): PasteDataRecord--><!--Device-PasteData-getRecordAt(index: number): PasteDataRecord-End-->
 
@@ -596,6 +612,7 @@ let record: pasteboard.PasteDataRecord = pasteData.getRecordAt(0);
 
 ```
 
+<a id="getrecordcount"></a>
 ## getRecordCount
 
 ```TypeScript
@@ -626,6 +643,7 @@ let count: number = pasteData.getRecordCount();
 
 ```
 
+<a id="gettag"></a>
 ## getTag
 
 ```TypeScript
@@ -656,6 +674,7 @@ let tag: string = pasteData.getTag();
 
 ```
 
+<a id="hasmimetype"></a>
 ## hasMimeType
 
 ```TypeScript
@@ -668,7 +687,7 @@ Checks whether the PasteData contains data of the specified type.
 
 **Deprecated since:** 9
 
-**Substitutes:** hasType(mimeType:
+**Substitutes:** [hasType(mimeType:](arkts-basicservices-pasteboard-pastedata-i.md#hastype-1)
 
 <!--Device-PasteData-hasMimeType(mimeType: string): boolean--><!--Device-PasteData-hasMimeType(mimeType: string): boolean-End-->
 
@@ -700,6 +719,7 @@ let hasType: boolean = pasteData.hasMimeType(pasteboard.MIMETYPE_TEXT_PLAIN);
 
 ```
 
+<a id="hastype"></a>
 ## hasType
 
 ```TypeScript
@@ -720,7 +740,7 @@ Checks whether the PasteData contains data of the specified MIME type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mimeType | string | Yes | Type of the data to query. The value can be a predefined type listed in [Constants](../../../../reference/apis-basic-services-kit/js-apis-pasteboard.md#constants),including HTML, WANT, plain text, URI, and pixel map, or a custom type. |
+| mimeType | string | Yes | Type of the data to query. The value can be a predefined type listed in [Constants](docroot://reference/apis-basic-services-kit/js-apis-pasteboard.md#constants),including HTML, WANT, plain text, URI, and pixel map, or a custom type. |
 
 **Return value:**
 
@@ -742,6 +762,7 @@ let hasType: boolean = pasteData.hasType(pasteboard.MIMETYPE_TEXT_PLAIN);
 
 ```
 
+<a id="pastecomplete"></a>
 ## pasteComplete
 
 ```TypeScript
@@ -774,6 +795,7 @@ systemPasteboard.getData((err: BusinessError, pasteData: pasteboard.PasteData) =
 
 ```
 
+<a id="pastestart"></a>
 ## pasteStart
 
 ```TypeScript
@@ -806,6 +828,7 @@ systemPasteboard.getData((err: BusinessError, pasteData: pasteboard.PasteData) =
 
 ```
 
+<a id="removerecord"></a>
 ## removeRecord
 
 ```TypeScript
@@ -843,6 +866,7 @@ pasteData.removeRecord(0);
 
 ```
 
+<a id="removerecordat"></a>
 ## removeRecordAt
 
 ```TypeScript
@@ -855,7 +879,7 @@ Removes the record with a specific index in PasteData.
 
 **Deprecated since:** 9
 
-**Substitutes:** removeRecord(index:
+**Substitutes:** [removeRecord(index:](arkts-basicservices-pasteboard-pastedata-i.md#removerecord-1)
 
 <!--Device-PasteData-removeRecordAt(index: number): boolean--><!--Device-PasteData-removeRecordAt(index: number): boolean-End-->
 
@@ -887,6 +911,7 @@ let isRemove: boolean = pasteData.removeRecordAt(0);
 
 ```
 
+<a id="replacerecord"></a>
 ## replaceRecord
 
 ```TypeScript
@@ -926,6 +951,7 @@ pasteData.replaceRecord(0, record);
 
 ```
 
+<a id="replacerecordat"></a>
 ## replaceRecordAt
 
 ```TypeScript
@@ -938,7 +964,7 @@ Replaces the record with a specific index in PasteData.
 
 **Deprecated since:** 9
 
-**Substitutes:** replaceRecord(index:
+**Substitutes:** [replaceRecord(index:](arkts-basicservices-pasteboard-pastedata-i.md#replacerecord-1)
 
 <!--Device-PasteData-replaceRecordAt(index: number, record: PasteDataRecord): boolean--><!--Device-PasteData-replaceRecordAt(index: number, record: PasteDataRecord): boolean-End-->
 
@@ -966,6 +992,7 @@ let isReplace: boolean = pasteData.replaceRecordAt(0, record);
 
 ```
 
+<a id="setproperty"></a>
 ## setProperty
 
 ```TypeScript

@@ -1,5 +1,6 @@
 # isFinite
 
+<a id="isfinite"></a>
 ## isFinite
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="holdcall"></a>
 ## holdCall
 
 ```TypeScript
@@ -29,7 +30,7 @@ Keep a call on hold.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of holdCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of holdCall. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ call.holdCall(1, (err: BusinessError) => {
 ```
 
 
+<a id="holdcall-1"></a>
 ## holdCall
 
 ```TypeScript
@@ -87,7 +89,7 @@ Keep a call on hold.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the holdCall. |
+| Promise&lt;void&gt; | The promise returned by the holdCall. |
 
 **Error codes:**
 

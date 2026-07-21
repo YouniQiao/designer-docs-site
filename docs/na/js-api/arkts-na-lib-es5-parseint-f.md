@@ -1,5 +1,6 @@
 # parseInt
 
+<a id="parseint"></a>
 ## parseInt
 
 ```TypeScript

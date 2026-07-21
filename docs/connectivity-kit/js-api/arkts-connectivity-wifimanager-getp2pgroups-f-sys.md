@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getp2pgroups"></a>
 ## getP2pGroups
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtain information about the groups.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<WifiP2pGroupInfo>> | Returns the information about own device info. |
+| Promise&lt;Array&lt;WifiP2pGroupInfo&gt;&gt; | Returns the information about own device info. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ wifiManager.getP2pGroups().then(data => {
 ```
 
 
+<a id="getp2pgroups-1"></a>
 ## getP2pGroups
 
 ```TypeScript
@@ -83,7 +85,7 @@ Obtain information about the groups.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<WifiP2pGroupInfo>> | Yes | Indicates callback of function. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;WifiP2pGroupInfo&gt;&gt; | Yes | Indicates callback of function. |
 
 **Error codes:**
 

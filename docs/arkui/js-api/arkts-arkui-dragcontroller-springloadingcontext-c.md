@@ -14,6 +14,7 @@ Defines callback context information passed to applications during hover detecti
 import { dragController } from '@kit.ArkUI';
 ```
 
+<a id="abort"></a>
 ## abort
 
 ```TypeScript
@@ -32,13 +33,14 @@ Terminates subsequent hover detection. This API does not trigger CANCEL state no
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="updateconfiguration"></a>
 ## updateConfiguration
 
 ```TypeScript
 updateConfiguration(config: DragSpringLoadingConfiguration): void
 ```
 
-Updates the hover detection configuration. This API is effective only when the hover detection state is BEGIN.Applications typically set the hover detection configuration when binding [onDragSpringLoading](../arkts-components/arkts-arkui-common-commonmethod-c.md#ondragspringloading-1) or use the default configuration. This API does not modify the original configuration set during binding, but updates dynamic configuration information for subsequent hover detection. Use this API with caution, as different drag data types may require different UX timing.
+Updates the hover detection configuration. This API is effective only when the hover detection state is BEGIN.Applications typically set the hover detection configuration when binding [onDragSpringLoading](../arkts-components/arkts-arkui-commonmethod-c.md#ondragspringloading-1) or use the default configuration. This API does not modify the original configuration set during binding, but updates dynamic configuration information for subsequent hover detection. Use this API with caution, as different drag data types may require different UX timing.
 
 **Since:** 20
 

@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="setkeepaliveforbundle"></a>
 ## setKeepAliveForBundle
 
 ```TypeScript
@@ -17,7 +18,7 @@ Sets or cancels the keep-alive status for an application that belongs to a speci
 > **NOTE**  
 >  
 > - To support keep-alive, **mainElement** in the  
-> [module.json5](../../../../quick-start/module-configuration-file.md) file of the application must be a UIAbility.  
+> [module.json5](docroot://quick-start/module-configuration-file.md) file of the application must be a UIAbility.  
 > The system initiates the keep-alive operation only when this mainElement has been launched.  
 >  
 > - On 2-in-1 devices, the application must appear in the status bar within 5 seconds of launch. Otherwise, the  
@@ -48,7 +49,7 @@ Sets or cancels the keep-alive status for an application that belongs to a speci
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { sendableImage } from '@kit.ImageKit';
 ```
 
+<a id="createpixelmap"></a>
 ## createPixelMap
 
 ```TypeScript
@@ -24,14 +25,14 @@ Create PixelMap by data buffer.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colors | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | The image color buffer. |
+| colors | ArrayBuffer | Yes | The image color buffer. |
 | options | image.InitializationOptions | Yes | Initialization options for PixelMap. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PixelMap> | A Promise instance used to return the PixelMap object. |
+| Promise&lt;PixelMap&gt; | A Promise instance used to return the PixelMap object. |
 
 **Example**
 

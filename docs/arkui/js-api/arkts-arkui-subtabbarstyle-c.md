@@ -1,0 +1,368 @@
+# SubTabBarStyle
+
+Implements the subtab style. A transition animation is played when the user switches between tabs.
+
+**Since:** 9
+
+<!--Device-unnamed-declare class SubTabBarStyle--><!--Device-unnamed-declare class SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+<a id="board"></a>
+## board
+
+```TypeScript
+board(value: BoardStyle): SubTabBarStyle
+```
+
+Sets the background style (board style) of the selected subtab. It takes effect only in the horizontal layout.
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SubTabBarStyle-board(value: BoardStyle): SubTabBarStyle--><!--Device-SubTabBarStyle-board(value: BoardStyle): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | [BoardStyle](arkts-arkui-boardstyle-i.md) | Yes | Background style object for the selected subtab. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object. |
+
+<a id="constructor"></a>
+## constructor
+
+```TypeScript
+constructor(content: ResourceStr)
+```
+
+Constructor used to create a **SubTabBarStyle** instance.
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SubTabBarStyle-constructor(content: ResourceStr)--><!--Device-SubTabBarStyle-constructor(content: ResourceStr)-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| content | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | Text for the tab. |
+
+<a id="constructor-1"></a>
+## constructor
+
+```TypeScript
+constructor(content: ResourceStr | ComponentContent)
+```
+
+Constructor used to create a **SubTabBarStyle** instance. You can set custom content with **ComponentContent**.
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-SubTabBarStyle-constructor(content: ResourceStr | ComponentContent)--><!--Device-SubTabBarStyle-constructor(content: ResourceStr | ComponentContent)-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| content | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) \| ComponentContent | Yes | Content on the tab.<br>**NOTE**<br>1. Custom content does not support the **labelStyle** attribute.<br>2. If the custom content exceeds the content box of the tab page, the excess part is not displayed.<br>3. If the custom content is within the content box of the tab page, it is aligned in the center.<br>4. If the custom content is abnormal or no display component is available, a blank area is displayed. |
+
+<a id="id"></a>
+## id
+
+```TypeScript
+id(value: string): SubTabBarStyle
+```
+
+Sets the [ID](arkts-arkui-commonmethod-c.md#id-1) of the subtab.
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-SubTabBarStyle-id(value: string): SubTabBarStyle--><!--Device-SubTabBarStyle-id(value: string): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | string | Yes | [ID](arkts-arkui-commonmethod-c.md#id-1) of the subtab. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object. |
+
+<a id="indicator"></a>
+## indicator
+
+```TypeScript
+indicator(value: IndicatorStyle): SubTabBarStyle
+```
+
+Sets the indicator style of the selected subtab. It takes effect only in the horizontal layout.
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SubTabBarStyle-indicator(value: IndicatorStyle): SubTabBarStyle--><!--Device-SubTabBarStyle-indicator(value: IndicatorStyle): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | [IndicatorStyle](arkts-arkui-indicatorstyle-i.md) | Yes | Indicator style object for the selected subtab. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object. |
+
+<a id="indicator-1"></a>
+## indicator
+
+```TypeScript
+indicator(value: IndicatorStyle | DrawableTabBarIndicator): SubTabBarStyle
+```
+
+Sets the indicator style of the selected subtab. Compared with [indicator](arkts-arkui-subtabbarstyle-c.md#indicator-1), the image format is added. For details about the display effect of the image, see [ImageFit.Cover](../arkts-apis/arkts-arkui-imagefit-e.md). It takes effect only in the horizontal layout.
+
+**Since:** 22
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+<!--Device-SubTabBarStyle-indicator(value: IndicatorStyle | DrawableTabBarIndicator): SubTabBarStyle--><!--Device-SubTabBarStyle-indicator(value: IndicatorStyle | DrawableTabBarIndicator): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | [IndicatorStyle](arkts-arkui-indicatorstyle-i.md) \| DrawableTabBarIndicator | Yes | Yes |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object. |
+
+<a id="labelstyle"></a>
+## labelStyle
+
+```TypeScript
+labelStyle(value: LabelStyle): SubTabBarStyle
+```
+
+Sets the style of the label text and font for the subtab.
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SubTabBarStyle-labelStyle(value: LabelStyle): SubTabBarStyle--><!--Device-SubTabBarStyle-labelStyle(value: LabelStyle): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | [LabelStyle](arkts-arkui-labelstyle-i.md) | Yes | Style object for the label text and font of the subtab. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object. |
+
+<a id="of"></a>
+## of
+
+```TypeScript
+static of(content: ResourceStr): SubTabBarStyle
+```
+
+Static constructor used to create a **SubTabBarStyle** instance.
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SubTabBarStyle-static of(content: ResourceStr): SubTabBarStyle--><!--Device-SubTabBarStyle-static of(content: ResourceStr): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| content | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | Text for the tab. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object created. |
+
+<a id="of-1"></a>
+## of
+
+```TypeScript
+static of(content: ResourceStr | ComponentContent): SubTabBarStyle
+```
+
+Static constructor used to create a **SubTabBarStyle** instance. You can set custom content with **ComponentContent**.
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-SubTabBarStyle-static of(content: ResourceStr | ComponentContent): SubTabBarStyle--><!--Device-SubTabBarStyle-static of(content: ResourceStr | ComponentContent): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| content | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) \| ComponentContent | Yes | Content on the tab. You can set custom content with **ComponentContent**.<br>**NOTE**<br>1. Custom content does not support the **labelStyle** attribute.<br>2. If the custom content exceeds the content box of the tab page, the excess part is not displayed.<br>3. If the custom content is within the content box of the tab page, it is aligned in the center.<br>4. If the custom content is abnormal or no display component is available, a blank area is displayed. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object created. |
+
+<a id="padding"></a>
+## padding
+
+```TypeScript
+padding(value: Padding | Dimension): SubTabBarStyle
+```
+
+Sets the padding of the subtab. It cannot be set in percentage. When the parameter is of the Dimension type, the value applies to all sides.
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SubTabBarStyle-padding(value: Padding | Dimension): SubTabBarStyle--><!--Device-SubTabBarStyle-padding(value: Padding | Dimension): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | [Padding](../arkts-apis/arkts-arkui-padding-t.md) \| Dimension | Yes | Padding of the subtab.<br>Value range: [0, +∞]<br>Default value:**{left:8.0vp,right:8.0vp,top:17.0vp,bottom:18.0vp}** |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object. |
+
+<a id="padding-1"></a>
+## padding
+
+```TypeScript
+padding(padding: LocalizedPadding): SubTabBarStyle
+```
+
+Sets the padding of the subtab. This API supports mirroring but does not support percentage-based settings.
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-SubTabBarStyle-padding(padding: LocalizedPadding): SubTabBarStyle--><!--Device-SubTabBarStyle-padding(padding: LocalizedPadding): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| padding | [LocalizedPadding](../arkts-apis/arkts-arkui-localizedpadding-i.md) | Yes | Padding of the subtab.<br>Value range: [0, +∞]<br>Default value:**{start:LengthMetrics.vp(8),end:LengthMetrics.vp(8)**<br>**top:LengthMetrics.vp(17),bottom:LengthMetrics.vp(18)}** |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object. |
+
+<a id="selectedmode"></a>
+## selectedMode
+
+```TypeScript
+selectedMode(value: SelectedMode): SubTabBarStyle
+```
+
+Sets the display mode of the selected subtab. It takes effect only in the horizontal layout.
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-SubTabBarStyle-selectedMode(value: SelectedMode): SubTabBarStyle--><!--Device-SubTabBarStyle-selectedMode(value: SelectedMode): SubTabBarStyle-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | [SelectedMode](arkts-arkui-selectedmode-e.md) | Yes | Display mode of the selected subtab.<br>Default value: **SelectedMode.INDICATOR** |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [SubTabBarStyle](arkts-arkui-subtabbarstyle-c.md) | **SubTabBarStyle** object. |
+

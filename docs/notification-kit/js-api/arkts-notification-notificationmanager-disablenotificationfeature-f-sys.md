@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="disablenotificationfeature"></a>
 ## disableNotificationFeature
 
 ```TypeScript
@@ -29,13 +30,13 @@ Disables the application from publishing notifications by adding the application
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | disabled | boolean | Yes | Whether to enable the permission control list for publishing notifications (**true**:enabled; **false**: disabled). |
-| bundleList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Application list under the permission control list. The bundle name is used to represent a specific application. |
+| bundleList | Array&lt;string&gt; | Yes | Application list under the permission control list. The bundle name is used to represent a specific application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ try {
 ```
 
 
+<a id="disablenotificationfeature-1"></a>
 ## disableNotificationFeature
 
 ```TypeScript
@@ -92,14 +94,14 @@ Disables the application from publishing notifications by adding the application
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | disabled | boolean | Yes | Whether to enable the notification permission control list. The value **true** indicates that the notification permission control list is enabled; **false** indicates the opposite. |
-| bundleList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Bundles under the permission control list. The bundle name is used to represent a specific application. |
+| bundleList | Array&lt;string&gt; | Yes | Bundles under the permission control list. The bundle name is used to represent a specific application. |
 | userId | number | Yes | User ID. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

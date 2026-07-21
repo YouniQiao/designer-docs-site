@@ -16,6 +16,7 @@ WebNativeMessagingExtensionContext is the context of web native message extensio
 import { WebNativeMessagingExtensionContext } from '@kit.ArkWeb';
 ```
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -43,7 +44,7 @@ Starts an ability using a promise.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns by the function. |
+| Promise&lt;void&gt; | Promise that returns by the function. |
 
 **Error codes:**
 
@@ -96,6 +97,7 @@ export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAb
 
 ```
 
+<a id="startabilityforresult"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -123,7 +125,7 @@ Starts an ability and returns the execution result when the ability is destroyed
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Returns the result of startAbility. |
+| Promise&lt;AbilityResult&gt; | Returns the result of startAbility. |
 
 **Error codes:**
 
@@ -152,6 +154,7 @@ Starts an ability and returns the execution result when the ability is destroyed
 | [16000079](../../apis-ability-kit/errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified. |
 | [16000080](../../apis-ability-kit/errorcode-ability.md#16000080-new-instances-cannot-be-created) | Instances cannot be created for other applications during inter-application startup. |
 
+<a id="stopnativeconnection"></a>
 ## stopNativeConnection
 
 ```TypeScript
@@ -178,7 +181,7 @@ Stops a native connection. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns by the function. |
+| Promise&lt;void&gt; | Promise that returns by the function. |
 
 **Error codes:**
 
@@ -208,6 +211,7 @@ export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAb
 
 ```
 
+<a id="terminateself"></a>
 ## terminateSelf
 
 ```TypeScript
@@ -228,7 +232,7 @@ Destroys the current native web message extension.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns by the function. |
+| Promise&lt;void&gt; | Promise that returns by the function. |
 
 **Error codes:**
 

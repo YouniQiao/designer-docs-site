@@ -4,6 +4,7 @@
 
 <!--Device-unnamed-interface SyntaxErrorConstructor extends ErrorConstructor--><!--Device-unnamed-interface SyntaxErrorConstructor extends ErrorConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -22,8 +23,9 @@ new(message?: string): SyntaxError
 
 | Type | Description |
 | --- | --- |
-| [SyntaxError](arkts-na-lib-es5-syntaxerror-i.md) |  |
+| SyntaxError |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -42,7 +44,7 @@ new(message?: string): SyntaxError
 
 | Type | Description |
 | --- | --- |
-| [SyntaxError](arkts-na-lib-es5-syntaxerror-i.md) |  |
+| SyntaxError |  |
 
 ## prototype
 

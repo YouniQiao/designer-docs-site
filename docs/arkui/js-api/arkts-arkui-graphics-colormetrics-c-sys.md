@@ -8,6 +8,7 @@ Used to mix colors.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="createhdrcolor"></a>
 ## createHDRColor
 
 ```TypeScript
@@ -42,6 +43,7 @@ Create ColorMetrics class using HDR color with default exposure.Create an HDR co
 | --- | --- |
 | [ColorMetrics](arkts-arkui-graphics-colormetrics-c-sys.md) | ColorMetrics class instance with HDR color. |
 
+<a id="createhdrcolorwithlinearexposure"></a>
 ## createHDRColorWithLinearExposure
 
 ```TypeScript
@@ -80,6 +82,7 @@ Create ColorMetrics class using HDR color with linear exposure.Create an HDR col
 | --- | --- |
 | [ColorMetrics](arkts-arkui-graphics-colormetrics-c-sys.md) | ColorMetrics class instance with HDR color. |
 
+<a id="createhdrcolorwithlogexposure"></a>
 ## createHDRColorWithLogExposure
 
 ```TypeScript
@@ -118,6 +121,7 @@ Create ColorMetrics class using HDR color with linear exposure.Create an HDR col
 | --- | --- |
 | [ColorMetrics](arkts-arkui-graphics-colormetrics-c-sys.md) | ColorMetrics class instance with HDR color. |
 
+<a id="getbluevalue"></a>
 ## getBlueValue
 
 ```TypeScript
@@ -140,8 +144,9 @@ Get blue value.Returns blue channel value as a floating-point number.For SDR col
 
 | Type | Description |
 | --- | --- |
-| number | The blue value.Valid range:For SDR colors: [0, 1].Fro HDR colors: [0, +∞), values &gt; 1.0 indicate HDR brightness. |
+| number | The blue value.Valid range:For SDR colors: [0, 1].Fro HDR colors: [0, +∞), values > 1.0 indicate HDR brightness. |
 
+<a id="getcolorspace"></a>
 ## getColorSpace
 
 ```TypeScript
@@ -166,6 +171,7 @@ Get color space of the ColorMetrics.Returns the color space used when creating t
 | --- | --- |
 | [ColorSpace](arkts-arkui-window-colorspace-e.md) | The color space of the ColorMetrics.Possible value: ColorSpace.SRGB, ColorSpace.DISPLAY_P3, ColorSpace.BT2020. |
 
+<a id="getgreenvalue"></a>
 ## getGreenValue
 
 ```TypeScript
@@ -188,8 +194,9 @@ Get green value.Returns green channel value as a floating-point number.For SDR c
 
 | Type | Description |
 | --- | --- |
-| number | The green value.Valid range:For SDR colors: [0, 1].Fro HDR colors: [0, +∞), values &gt; 1.0 indicate HDR brightness. |
+| number | The green value.Valid range:For SDR colors: [0, 1].Fro HDR colors: [0, +∞), values > 1.0 indicate HDR brightness. |
 
+<a id="getredvalue"></a>
 ## getRedValue
 
 ```TypeScript
@@ -212,8 +219,9 @@ Get red value.Returns red channel value as a floating-point number.For SDR color
 
 | Type | Description |
 | --- | --- |
-| number | The red value.Valid range:For SDR colors: [0, 1].Fro HDR colors: [0, +∞), values &gt; 1.0 indicate HDR brightness. |
+| number | The red value.Valid range:For SDR colors: [0, 1].Fro HDR colors: [0, +∞), values > 1.0 indicate HDR brightness. |
 
+<a id="ishdr"></a>
 ## isHDR
 
 ```TypeScript
@@ -236,5 +244,5 @@ Check if ColorMetrics represents an HDR color.Returns true if color was created 
 
 | Type | Description |
 | --- | --- |
-| boolean | Whether ColorMetrics is an HDR color.Returns true if:  - The color was created using createHDRColorWithXx() method.  - Any RGB channel value is greater than 1.0. |
+| boolean | Whether ColorMetrics is an HDR color.Returns true if:   - The color was created using createHDRColorWithXx() method.   - Any RGB channel value is greater than 1.0. |
 

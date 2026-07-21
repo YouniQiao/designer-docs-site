@@ -14,6 +14,7 @@ Provides APIs for managing a distributed data object. Before using any API of th
 import { distributedDataObject } from '@kit.ArkData';
 ```
 
+<a id="bindassetstore"></a>
 ## bindAssetStore
 
 ```TypeScript
@@ -34,7 +35,7 @@ Binds joint assets. Currently, only the binding between an asset in a distribute
 | --- | --- | --- | --- |
 | assetKey | string | Yes | Key of the joint asset in the distributed data object. |
 | bindInfo | [BindInfo](arkts-arkdata-distributeddataobject-bindinfo-i.md) | Yes | Information about the joint asset in the RDB store, including the RDB store name,table name, primary key, column name, and asset name in the RDB store. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -99,6 +100,7 @@ class EntryAbility extends UIAbility {
 
 ```
 
+<a id="bindassetstore-1"></a>
 ## bindAssetStore
 
 ```TypeScript
@@ -124,7 +126,7 @@ Binds joint assets. Currently, only the binding between an asset in a distribute
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -188,6 +190,7 @@ class EntryAbility extends UIAbility {
 
 ```
 
+<a id="off"></a>
 ## off('change')
 
 ```TypeScript
@@ -207,7 +210,7 @@ Unsubscribes from data changes of this distributed data object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. The value is 'change', which indicates data changes. |
-| callback | (sessionId: string, fields: Array<string>) => void | No | Callback to unregister. If this parameter is not specified, this API unsubscribes from all callbacks for data changes of this distributed object. sessionId indicates the session ID of the distributed data object. fields indicates the changed properties of the distributed data object. |
+| callback | (sessionId: string, fields: Array&lt;string&gt;) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unsubscribes from all callbacks for data changes of this distributed object. sessionId indicates the session ID of the distributed data object. fields indicates the changed properties of the distributed data object. |
 
 **Error codes:**
 
@@ -232,6 +235,7 @@ g_object.off('change');
 
 ```
 
+<a id="off-1"></a>
 ## off('status')
 
 ```TypeScript
@@ -260,7 +264,7 @@ Unsubscribes from the status change of this distributed data object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'status' | Yes | Event type. The value is 'status', which indicates the status change (online or offline) of the distributed object. |
-| callback | (sessionId: string, networkId: string, status: 'online' \| 'offline' ) => void | No | Callback to unregister. If this parameter is not specified, this API unsubscribes from all callbacks for status changes of this distributed object. sessionId indicates the session ID distributed data object. networkId identifies the distributed data object. status indicates the indicates the object status, which can be online or offline. |
+| callback | (sessionId: string, networkId: string, status: 'online' \| 'offline' ) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unsubscribes from all callbacks for status changes of this distributed object. sessionId indicates the session ID distributed data object. networkId identifies the distributed data object. status indicates the indicates the object status, which can be online or offline. |
 
 **Error codes:**
 
@@ -280,6 +284,7 @@ g_object.off('status');
 
 ```
 
+<a id="off-2"></a>
 ## off('change')
 
 ```TypeScript
@@ -337,6 +342,7 @@ try {
 
 ```
 
+<a id="off-3"></a>
 ## off('status')
 
 ```TypeScript
@@ -383,6 +389,7 @@ try {
 
 ```
 
+<a id="off-4"></a>
 ## off('progressChanged')
 
 ```TypeScript
@@ -431,6 +438,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('change')
 
 ```TypeScript
@@ -450,7 +458,7 @@ Subscribes to data changes of this distributed data object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. The value is **'change'**, which indicates data changes. sessionId |
-| callback | (sessionId: string, fields: Array<string>) => void | Yes | Callback used to return the changes of the distributed data object.indicates the session ID of the distributed data object. fields indicates the changed properties of the distributed data object. |
+| callback | (sessionId: string, fields: Array&lt;string&gt;) =&gt; void | Yes | Callback used to return the changes of the distributed data object.indicates the session ID of the distributed data object. fields indicates the changed properties of the distributed data object. |
 
 **Error codes:**
 
@@ -472,6 +480,7 @@ g_object.on('change', (sessionId: string, fields: Array<string>) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('status')
 
 ```TypeScript
@@ -500,7 +509,7 @@ Subscribes to status changes of this distributed data object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'status' | Yes | Event type. The value is 'status', which indicates the status change (online or offline) of the distributed object. |
-| callback | (sessionId: string, networkId: string, status: 'online' \| 'offline' ) => void | Yes | Callback used to return the status change. sessionId indicates the session ID of the distributed data object. networkId identifies the device. status indicates the object status,which can be online or offline. |
+| callback | (sessionId: string, networkId: string, status: 'online' \| 'offline' ) =&gt; void | Yes | Callback used to return the status change. sessionId indicates the session ID of the distributed data object. networkId identifies the device. status indicates the object status,which can be online or offline. |
 
 **Error codes:**
 
@@ -517,6 +526,7 @@ g_object.on('status', (sessionId: string, networkId: string, status: 'online' | 
 
 ```
 
+<a id="on-2"></a>
 ## on('change')
 
 ```TypeScript
@@ -557,6 +567,7 @@ try {
 
 ```
 
+<a id="on-3"></a>
 ## on('status')
 
 ```TypeScript
@@ -592,6 +603,7 @@ try {
 
 ```
 
+<a id="on-4"></a>
 ## on('progressChanged')
 
 ```TypeScript
@@ -628,6 +640,7 @@ try {
 
 ```
 
+<a id="revokesave"></a>
 ## revokeSave
 
 ```TypeScript
@@ -646,7 +659,7 @@ Revokes the data of this distributed data object saved. This API uses an asynchr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RevokeSaveSuccessResponse> | Yes | Callback used to return RevokeSaveSuccessResponse, which contains the session ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RevokeSaveSuccessResponse&gt; | Yes | Callback used to return RevokeSaveSuccessResponse, which contains the session ID. |
 
 **Error codes:**
 
@@ -681,6 +694,7 @@ g_object.revokeSave((err: BusinessError, result: distributedDataObject.RevokeSav
 
 ```
 
+<a id="revokesave-1"></a>
 ## revokeSave
 
 ```TypeScript
@@ -699,7 +713,7 @@ Revokes the data of this distributed data object saved. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RevokeSaveSuccessResponse> | Promise used to return RevokeSaveSuccessResponse, which contains the session ID. |
+| Promise&lt;RevokeSaveSuccessResponse&gt; | Promise used to return RevokeSaveSuccessResponse, which contains the session ID. |
 
 **Error codes:**
 
@@ -730,6 +744,7 @@ g_object.revokeSave().then((result: distributedDataObject.RevokeSaveSuccessRespo
 
 ```
 
+<a id="save"></a>
 ## save
 
 ```TypeScript
@@ -749,7 +764,7 @@ Saves a distributed data object. This API uses an asynchronous callback to retur
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | ID of the device where the data is stored. The value local indicates a local device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SaveSuccessResponse> | Yes | Callback used to return SaveSuccessResponse, which contains information such as session ID, version, and device ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SaveSuccessResponse&gt; | Yes | Callback used to return SaveSuccessResponse, which contains information such as session ID, version, and device ID. |
 
 **Error codes:**
 
@@ -775,6 +790,7 @@ g_object.save('local', (err: BusinessError, result:distributedDataObject.SaveSuc
 
 ```
 
+<a id="save-1"></a>
 ## save
 
 ```TypeScript
@@ -799,7 +815,7 @@ Saves a distributed data object. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SaveSuccessResponse> | Promise used to return SaveSuccessResponse, which contains information such as session ID, version, and device ID. |
+| Promise&lt;SaveSuccessResponse&gt; | Promise used to return SaveSuccessResponse, which contains information such as session ID, version, and device ID. |
 
 **Error codes:**
 
@@ -823,6 +839,7 @@ g_object.save('local').then((callbackInfo: distributedDataObject.SaveSuccessResp
 
 ```
 
+<a id="setasset"></a>
 ## setAsset
 
 ```TypeScript
@@ -848,7 +865,7 @@ Sets the property information about a single asset in a distributed object. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -902,6 +919,7 @@ class EntryAbility extends UIAbility {
 
 ```
 
+<a id="setassets"></a>
 ## setAssets
 
 ```TypeScript
@@ -921,13 +939,13 @@ Sets the property information about multiple assets in a distributed object. Thi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | assetsKey | string | Yes | Property name of the assets in the distributed object. |
-| uris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the new asset array to be set, indicating the distributed paths for storing each element of the asset. The number of array elements ranges from 1 to 50. The URI of an element must be the distributed path corresponding to an actual asset. |
+| uris | Array&lt;string&gt; | Yes | URIs of the new asset array to be set, indicating the distributed paths for storing each element of the asset. The number of array elements ranges from 1 to 50. The URI of an element must be the distributed path corresponding to an actual asset. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -981,6 +999,7 @@ class EntryAbility extends UIAbility {
 
 ```
 
+<a id="setsessionid"></a>
 ## setSessionId
 
 ```TypeScript
@@ -1002,7 +1021,7 @@ Sets a session ID. This API uses an asynchronous callback to return the result. 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sessionId | string | Yes | ID of a distributed data object on a trusted network. The value can contain only letters, digits, and underscores (_), and cannot exceed 128 characters. If this parameter is set to "" or null, the distributed data object exits the network. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Asynchronous callback invoked when the session ID is successfully set. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Asynchronous callback invoked when the session ID is successfully set. |
 
 **Error codes:**
 
@@ -1026,6 +1045,7 @@ g_object.setSessionId('', () => {
 
 ```
 
+<a id="setsessionid-1"></a>
 ## setSessionId
 
 ```TypeScript
@@ -1047,7 +1067,7 @@ Exits all sessions. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the distributed data object exits all sessions. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when the distributed data object exits all sessions. |
 
 **Error codes:**
 
@@ -1071,6 +1091,7 @@ g_object.setSessionId(() => {
 
 ```
 
+<a id="setsessionid-2"></a>
 ## setSessionId
 
 ```TypeScript
@@ -1097,7 +1118,7 @@ Sets a session ID or exits the distributed network. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

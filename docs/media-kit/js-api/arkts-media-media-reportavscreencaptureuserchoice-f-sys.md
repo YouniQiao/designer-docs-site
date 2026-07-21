@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="reportavscreencaptureuserchoice"></a>
 ## reportAVScreenCaptureUserChoice
 
 ```TypeScript
@@ -33,7 +34,7 @@ Reports the user selection result in the screen capture privacy dialog box to th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

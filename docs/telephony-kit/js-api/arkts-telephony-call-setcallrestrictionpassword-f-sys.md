@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="setcallrestrictionpassword"></a>
 ## setCallRestrictionPassword
 
 ```TypeScript
@@ -31,7 +32,7 @@ Set call barring password.
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | oldPassword | string | Yes | Indicates the call restriction old password. |
 | newPassword | string | Yes | Indicates the call restriction new password. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setCallRestrictionPassword. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setCallRestrictionPassword. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ call.setCallRestrictionPassword(0, "123456", "654321", (err: BusinessError) => {
 ```
 
 
+<a id="setcallrestrictionpassword-1"></a>
 ## setCallRestrictionPassword
 
 ```TypeScript
@@ -91,7 +93,7 @@ Set call barring password.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setCallRestrictionPassword. |
+| Promise&lt;void&gt; | The promise returned by the setCallRestrictionPassword. |
 
 **Error codes:**
 

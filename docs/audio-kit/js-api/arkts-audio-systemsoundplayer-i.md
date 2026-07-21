@@ -8,6 +8,7 @@ Implements a system sound player that provides functions for loading, unloading,
 
 **System capability:** SystemCapability.Multimedia.SystemSound.Core
 
+<a id="load"></a>
 ## load
 
 ```TypeScript
@@ -34,7 +35,7 @@ Loads a system sound.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -44,6 +45,7 @@ Loads a system sound.
 | [5400105](../../apis-media-kit/errorcode-media.md#5400105-play-service-dead) | Crash or blocking occurs in system process. |
 | [5400108](../../apis-media-kit/errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed. Returned by promise. |
 
+<a id="play"></a>
 ## play
 
 ```TypeScript
@@ -70,7 +72,7 @@ Plays a system sound.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -80,6 +82,7 @@ Plays a system sound.
 | [5400105](../../apis-media-kit/errorcode-media.md#5400105-play-service-dead) | Crash or blocking occurs in system process. |
 | [5400108](../../apis-media-kit/errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed. Returned by promise. |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -100,7 +103,7 @@ Releases this system sound player instance.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -108,6 +111,7 @@ Releases this system sound player instance.
 | --- | --- |
 | [5400105](../../apis-media-kit/errorcode-media.md#5400105-play-service-dead) | Crash or blocking occurs in system process. |
 
+<a id="unload"></a>
 ## unload
 
 ```TypeScript
@@ -134,7 +138,7 @@ Unloads a system sound that has been loaded before.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

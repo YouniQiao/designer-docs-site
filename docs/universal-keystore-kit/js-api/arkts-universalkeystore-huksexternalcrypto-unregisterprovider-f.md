@@ -6,6 +6,7 @@
 import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="unregisterprovider"></a>
 ## unregisterProvider
 
 ```TypeScript
@@ -27,13 +28,13 @@ Unregisters a specified external Provider. This API uses a promise to return the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | providerName | string | Yes | Provider name, which contains a maximum of 128 characters. It is recommended that the value contain the vendor information, be globally unique, and not contain sensitive data such as personal contact information. If a provider has registered multiple extension capabilities, all the extension capabilities of the provider will be unregistered. |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<HuksExternalCryptoParam> | No | Parameters to be passed during the operation.<br>You can specify [HUKS_EXT_CRYPTO_TAG_ABILITY_NAME](arkts-universalkeystore-huksexternalcrypto-huksexternalcryptotagtype-e.md) in the **params** parameter to unregister the corresponding **cryptoExtensionAbility** based on the bundle name,**providerName**, and **abilityName**.<br>If [HUKS_EXT_CRYPTO_TAG_ABILITY_NAME](arkts-universalkeystore-huksexternalcrypto-huksexternalcryptotagtype-e.md) is not specified in the **params** parameter or the **params** parameter is not passed, all providers under the corresponding **providerName** are unregistered. |
+| params | Array&lt;HuksExternalCryptoParam&gt; | No | Parameters to be passed during the operation.<br>You can specify [HUKS_EXT_CRYPTO_TAG_ABILITY_NAME](arkts-universalkeystore-huksexternalcrypto-huksexternalcryptotagtype-e.md) in the **params** parameter to unregister the corresponding **cryptoExtensionAbility** based on the bundle name,**providerName**, and **abilityName**.<br>If [HUKS_EXT_CRYPTO_TAG_ABILITY_NAME](arkts-universalkeystore-huksexternalcrypto-huksexternalcryptotagtype-e.md) is not specified in the **params** parameter or the **params** parameter is not passed, all providers under the corresponding **providerName** are unregistered. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

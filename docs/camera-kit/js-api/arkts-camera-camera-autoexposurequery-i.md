@@ -18,6 +18,7 @@ AutoExposureQuery provides APIs to query the automatic exposure feature of a cam
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getexposurebiasrange"></a>
 ## getExposureBiasRange
 
 ```TypeScript
@@ -38,7 +39,7 @@ Obtains the exposure compensation values of the camera device.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array of compensation values. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
+| Array&lt;number&gt; | Array of compensation values. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
@@ -46,6 +47,7 @@ Obtains the exposure compensation values of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 
+<a id="isexposuremodesupported"></a>
 ## isExposureModeSupported
 
 ```TypeScript

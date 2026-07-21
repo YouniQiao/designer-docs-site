@@ -14,6 +14,7 @@ UIExtensionContentSession is the UI operation class for the UIExtensionAbility. 
 import { UIExtensionContentSession } from '@kit.AbilityKit';
 ```
 
+<a id="getuiextensionhostwindowproxy"></a>
 ## getUIExtensionHostWindowProxy
 
 ```TypeScript
@@ -92,6 +93,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript
@@ -114,7 +116,7 @@ Sends data to the UIExtensionComponent.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Data to send.<br>**Since:** 11 |
+| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Data to send.<br>**Since:** 11 |
 
 **Error codes:**
 
@@ -159,6 +161,7 @@ struct Index {
 
 ```
 
+<a id="setreceivedatacallback"></a>
 ## setReceiveDataCallback
 
 ```TypeScript
@@ -181,7 +184,7 @@ Sets a callback to receive data from the UIExtensionComponent. This API uses an 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (data: Record<string, Object>) => void | Yes | Callback used to return the received data. |
+| callback | (data: Record&lt;string, Object&gt;) =&gt; void | Yes | Callback used to return the received data. |
 
 **Error codes:**
 
@@ -219,6 +222,7 @@ struct Index {
 
 ```
 
+<a id="setreceivedataforresultcallback"></a>
 ## setReceiveDataForResultCallback
 
 ```TypeScript
@@ -241,7 +245,7 @@ Sets a callback with a return value to receive data from the UIExtensionComponen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (data: Record<string, Object>) => Record<string, Object> | Yes | Callback used to return the received data with a return value. |
+| callback | (data: Record&lt;string, Object&gt;) =&gt; Record&lt;string, Object&gt; | Yes | Callback used to return the received data with a return value. |
 
 **Error codes:**
 
@@ -280,6 +284,7 @@ struct Index {
 
 ```
 
+<a id="setwindowbackgroundcolor"></a>
 ## setWindowBackgroundColor
 
 ```TypeScript
@@ -342,6 +347,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -353,7 +359,7 @@ Starts an ability. This API uses an asynchronous callback to return the result.U
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
 > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -371,7 +377,7 @@ Starts an ability. This API uses an asynchronous callback to return the result.U
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -420,6 +426,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="startability-1"></a>
 ## startAbility
 
 ```TypeScript
@@ -431,7 +438,7 @@ Starts an ability with **options** specified. This API uses an asynchronous call
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
 > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -450,7 +457,7 @@ Starts an ability with **options** specified. This API uses an asynchronous call
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Parameters used for starting the ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -501,6 +508,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="startability-2"></a>
 ## startAbility
 
 ```TypeScript
@@ -512,7 +520,7 @@ Starts an ability. This API uses a promise to return the result.UI extension use
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
 > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -536,7 +544,7 @@ Starts an ability. This API uses a promise to return the result.UI extension use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -589,6 +597,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="startabilityascaller"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -612,7 +621,7 @@ Starts an ability as the caller. The initial ability places its caller informati
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -666,6 +675,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="startabilityascaller-1"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -690,7 +700,7 @@ Starts an ability as the caller, with **options** specified. The initial ability
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Parameters used for starting the ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -746,6 +756,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="startabilityascaller-2"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -775,7 +786,7 @@ Starts an ability as the caller. The initial ability places its caller informati
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -833,6 +844,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="startabilityforresult"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -850,7 +862,7 @@ An ability can be terminated in the following ways:
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
 > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -868,7 +880,7 @@ An ability can be terminated in the following ways:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityResult> | Yes | Callback used to return the result. If the ability is started and terminated, **err** is **undefined** and **data** is the obtained result code and data; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AbilityResult&gt; | Yes | Callback used to return the result. If the ability is started and terminated, **err** is **undefined** and **data** is the obtained result code and data; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -917,6 +929,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="startabilityforresult-1"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -934,7 +947,7 @@ An ability can be terminated in the following ways:
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
 > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -953,7 +966,7 @@ An ability can be terminated in the following ways:
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target ability. |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Parameters used for starting the ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityResult> | Yes | Callback used to return the result. If the ability is started and terminated, **err** is **undefined** and **data** is the obtained result code and data; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AbilityResult&gt; | Yes | Callback used to return the result. If the ability is started and terminated, **err** is **undefined** and **data** is the obtained result code and data; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1004,6 +1017,7 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
+<a id="startabilityforresult-2"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -1021,7 +1035,7 @@ An ability can be terminated in the following ways:
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
 > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -1045,7 +1059,7 @@ An ability can be terminated in the following ways:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Promise used to return the result code and data. |
+| Promise&lt;AbilityResult&gt; | Promise used to return the result code and data. |
 
 **Error codes:**
 

@@ -191,7 +191,7 @@ parameters?: Record<string, Object>
 
 Data format of intent parameters, which is used to define the input data format during intent calls.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 20
 
@@ -211,7 +211,7 @@ result?: Record<string, Object>
 
 Data format for the results returned by intent calls. It defines how the data should be structured.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 20
 
@@ -229,7 +229,7 @@ Data format for the results returned by intent calls. It defines how the data sh
 schema?: string
 ```
 
-Name of a standard intent schema. This field is required when you [access a standard intent](../../../../application-models/insight-intent-definition.md#accessing-standard-intents).It is not required when you [create a custom intent](../../../../application-models/insight-intent-definition.md#creating-custom-intents). For details about the standard intent list, see [Appendix: Standard Intent Access Specifications](../../../../application-models/insight-intent-access-specifications.md).
+Name of a standard intent schema. This field is required when you [access a standard intent](docroot://application-models/insight-intent-definition.md#accessing-standard-intents).It is not required when you [create a custom intent](docroot://application-models/insight-intent-definition.md#creating-custom-intents). For details about the standard intent list, see [Appendix: Standard Intent Access Specifications](docroot://application-models/insight-intent-access-specifications.md).
 
 **Type:** string
 

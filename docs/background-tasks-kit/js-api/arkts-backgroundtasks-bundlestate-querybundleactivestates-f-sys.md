@@ -6,6 +6,7 @@
 import { bundleState } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="querybundleactivestates"></a>
 ## queryBundleActiveStates
 
 ```TypeScript
@@ -32,7 +33,7 @@ Queries state data of all bundles within a specified period identified by the st
 | --- | --- | --- | --- |
 | begin | number | Yes | Indicates the start time of the query period, in milliseconds. |
 | end | number | Yes | Indicates the end time of the query period, in milliseconds. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<BundleActiveState>> | Yes | the state data of all bundles. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;BundleActiveState&gt;&gt; | Yes | the state data of all bundles. |
 
 **Example**
 
@@ -55,6 +56,7 @@ bundleState.queryBundleActiveStates(0, 20000000000000, (err: BusinessError, res:
 ```
 
 
+<a id="querybundleactivestates-1"></a>
 ## queryBundleActiveStates
 
 ```TypeScript
@@ -86,7 +88,7 @@ Queries state data of all bundles within a specified period identified by the st
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleActiveState>> | the state data of all bundles. |
+| Promise&lt;Array&lt;BundleActiveState&gt;&gt; | the state data of all bundles. |
 
 **Example**
 

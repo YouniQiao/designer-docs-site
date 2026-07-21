@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -26,9 +27,9 @@ Updates the data for the signing or signature verification operation. It needs t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handle | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Handle of initialization which needs to be obtained by calling the init method. |
-| data | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Data to be signed or verified. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| handle | Uint8Array | Yes | Handle of initialization which needs to be obtained by calling the init method. |
+| data | Uint8Array | Yes | Data to be signed or verified. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ try {
 ```
 
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -85,14 +87,14 @@ Updates the data for the signing or signature verification operation. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handle | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Handle of initialization, which needs to be obtained by calling the init method |
-| data | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Data to be signed or verified. |
+| handle | Uint8Array | Yes | Handle of initialization, which needs to be obtained by calling the init method |
+| data | Uint8Array | Yes | Data to be signed or verified. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

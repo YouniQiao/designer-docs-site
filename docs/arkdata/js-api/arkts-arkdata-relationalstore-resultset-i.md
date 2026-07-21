@@ -4,7 +4,7 @@ Provides APIs to access the result set obtained by querying the RDB store. This 
 
 The **ResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data.
 
-For the following APIs, you should use either [query](@ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates)),[querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1),[remoteQuery](@ohos.data.relationalStore:relationalStore.RdbStore.remoteQuery(device: string, table: string)), or [queryLockedRow](arkts-arkdata-relationalstore-rdbstore-i.md#querylockedrow-1) to obtain the **ResultSet** instance first, and then use this instance to call the corresponding method.
+For the following APIs, you should use either [query](arkts-arkdata-relationalstore-rdbstore-i.md#query-1),[querySql](arkts-arkdata-relationalstore-rdbstore-i.md#querysqlwithoutrowcount-1),[remoteQuery](arkts-arkdata-relationalstore-rdbstore-i.md#remotequery-1), or [queryLockedRow](arkts-arkdata-relationalstore-rdbstore-i.md#querylockedrow-1) to obtain the **ResultSet** instance first, and then use this instance to call the corresponding method.
 
 **Since:** 9
 
@@ -18,6 +18,7 @@ For the following APIs, you should use either [query](@ohos.data.relationalStore
 import { relationalStore } from '@kit.ArkData';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -39,6 +40,7 @@ Closes this **resultSet** to release memory. If the **resultSet** is not closed,
 | [14800012](../errorcode-data-rdb.md#14800012-empty-result-set-or-invalid-position) | ResultSet is empty or pointer index is out of bounds. |
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error.<br>**Applicable version:** 12 and later |
 
+<a id="getasset"></a>
 ## getAsset
 
 ```TypeScript
@@ -90,6 +92,7 @@ Obtains the value from the specified column in the current row, and returns the 
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getassets"></a>
 ## getAssets
 
 ```TypeScript
@@ -141,6 +144,7 @@ Obtains the value from the specified column in the current row, and returns the 
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getblob"></a>
 ## getBlob
 
 ```TypeScript
@@ -167,7 +171,7 @@ If the type of the value in the specified column is INTEGER, DOUBLE, TEXT, or BL
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Value obtained. |
+| Uint8Array | Value obtained. |
 
 **Error codes:**
 
@@ -194,6 +198,7 @@ If the type of the value in the specified column is INTEGER, DOUBLE, TEXT, or BL
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getcolumnindex"></a>
 ## getColumnIndex
 
 ```TypeScript
@@ -245,6 +250,7 @@ Obtains the column index based on the column name.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getcolumnname"></a>
 ## getColumnName
 
 ```TypeScript
@@ -296,6 +302,7 @@ Obtains the column name based on the column index.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getcolumnnames"></a>
 ## getColumnNames
 
 ```TypeScript
@@ -318,7 +325,7 @@ The column names are returned in a string array. The sequence of strings in the 
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Names of all columns in the result set obtained. Duplicate column names can be obtained. |
+| Array&lt;string&gt; | Names of all columns in the result set obtained. Duplicate column names can be obtained. |
 
 **Error codes:**
 
@@ -333,6 +340,7 @@ The column names are returned in a string array. The sequence of strings in the 
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="getcolumntype"></a>
 ## getColumnType
 
 ```TypeScript
@@ -357,7 +365,7 @@ Obtains the column type based on the specified column index or column name. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ColumnType> | Promise used to return the column type obtained. If the result set contains duplicate column names, the return value is not as expected. |
+| Promise&lt;ColumnType&gt; | Promise used to return the column type obtained. If the result set contains duplicate column names, the return value is not as expected. |
 
 **Error codes:**
 
@@ -385,6 +393,7 @@ Obtains the column type based on the specified column index or column name. This
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="getcolumntypesync"></a>
 ## getColumnTypeSync
 
 ```TypeScript
@@ -437,6 +446,7 @@ Obtains the column type based on the specified column index or column name. This
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="getcurrentrowdata"></a>
 ## getCurrentRowData
 
 ```TypeScript
@@ -473,6 +483,7 @@ Obtains the values of all columns in this row.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="getdouble"></a>
 ## getDouble
 
 ```TypeScript
@@ -526,6 +537,7 @@ If the type of the value in the specified column is INTEGER, DOUBLE, TEXT, or BL
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getlong"></a>
 ## getLong
 
 ```TypeScript
@@ -579,6 +591,7 @@ If the type of the value in the specified column is INTEGER, DOUBLE, TEXT, or BL
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getrow"></a>
 ## getRow
 
 ```TypeScript
@@ -623,6 +636,7 @@ Obtains this row.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getrows"></a>
 ## getRows
 
 ```TypeScript
@@ -648,7 +662,7 @@ Obtains a specified amount of data from the result set. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ValuesBucket>> | Promise used to return **maxCount** rows of data obtained. If the number of remaining records is less than **maxCount**, the remaining records are returned. Returning an empty array indicates that the end of the result set is reached. If the result set contains duplicate column names,the return values are not as expected. You are advised to use the [getRowsData](arkts-arkdata-relationalstore-resultset-i.md#getrowsdata-1) API. |
+| Promise&lt;Array&lt;ValuesBucket&gt;&gt; | Promise used to return **maxCount** rows of data obtained. If the number of remaining records is less than **maxCount**, the remaining records are returned. Returning an empty array indicates that the end of the result set is reached. If the result set contains duplicate column names,the return values are not as expected. You are advised to use the [getRowsData](arkts-arkdata-relationalstore-resultset-i.md#getrowsdata-1) API. |
 
 **Error codes:**
 
@@ -672,6 +686,7 @@ Obtains a specified amount of data from the result set. This API uses a promise 
 | [14800032](../errorcode-data-rdb.md#14800032-sqlite-abort-due-to-constraint-violation) | SQLite: Abort due to constraint violation. |
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 
+<a id="getrowsdata"></a>
 ## getRowsData
 
 ```TypeScript
@@ -699,7 +714,7 @@ Obtains data of a specified number of rows from the specified position. This API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RowsData> | Promise used to return **maxCount** rows of data obtained. If the number of remaining records is less than **maxCount**, the remaining records are returned. Returning an empty array indicates that the end of the result set is reached. The values of columns with the same name can be obtained. |
+| Promise&lt;RowsData&gt; | Promise used to return **maxCount** rows of data obtained. If the number of remaining records is less than **maxCount**, the remaining records are returned. Returning an empty array indicates that the end of the result set is reached. The values of columns with the same name can be obtained. |
 
 **Error codes:**
 
@@ -716,6 +731,7 @@ Obtains data of a specified number of rows from the specified position. This API
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 | [14800031](../errorcode-data-rdb.md#14800031-sqlite-text-or-blob-exceeds-the-limit) | SQLite: TEXT or BLOB exceeds size limit. |
 
+<a id="getsendablerow"></a>
 ## getSendableRow
 
 ```TypeScript
@@ -760,6 +776,7 @@ Obtains the sendable data from the current row. The sendable data can be passed 
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="getstring"></a>
 ## getString
 
 ```TypeScript
@@ -813,6 +830,7 @@ If the type of the value in the specified column is INTEGER, DOUBLE, TEXT, or BL
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getvalue"></a>
 ## getValue
 
 ```TypeScript
@@ -864,6 +882,7 @@ Obtains the value from the specified column in the current row. If the value typ
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="goto"></a>
 ## goTo
 
 ```TypeScript
@@ -915,6 +934,7 @@ Moves the result set pointer based on the offset specified.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="gotofirstrow"></a>
 ## goToFirstRow
 
 ```TypeScript
@@ -959,6 +979,7 @@ Moves to the first row of the result set.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="gotolastrow"></a>
 ## goToLastRow
 
 ```TypeScript
@@ -1003,6 +1024,7 @@ Moves to the last row of the result set.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="gotonextrow"></a>
 ## goToNextRow
 
 ```TypeScript
@@ -1047,6 +1069,7 @@ Moves to the next row in the result set.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="gotopreviousrow"></a>
 ## goToPreviousRow
 
 ```TypeScript
@@ -1091,6 +1114,7 @@ Moves to the previous row in the result set.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="gotorow"></a>
 ## goToRow
 
 ```TypeScript
@@ -1142,6 +1166,7 @@ Moves to the specified row in the result set.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="iscolumnnull"></a>
 ## isColumnNull
 
 ```TypeScript
@@ -1217,7 +1242,7 @@ columnNames: Array<string>
 
 Names of all columns in the result set. If the result set contains duplicate column names, the return values are not as expected. You are advised to use the [getColumnNames](arkts-arkdata-relationalstore-resultset-i.md#getcolumnnames-1) API to obtain the column names.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 

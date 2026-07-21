@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="off"></a>
 ## off('streamChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Unsubscribe Wi-Fi stream change events.All callback functions will be deregister
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'streamChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ wifiManager.off("streamChange", recvStreamChangeFunc);
 ```
 
 
+<a id="off-1"></a>
 ## off('deviceConfigChange')
 
 ```TypeScript
@@ -83,7 +85,7 @@ Subscribe Wi-Fi device config change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceConfigChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | the callback of off,0: config is added, 1: config is changed, 2: config is removed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | the callback of off,0: config is added, 1: config is changed, 2: config is removed. |
 
 **Error codes:**
 
@@ -114,6 +116,7 @@ wifiManager.off("deviceConfigChange", recvDeviceConfigChangeFunc);
 ```
 
 
+<a id="off-2"></a>
 ## off('hotspotStaJoin')
 
 ```TypeScript
@@ -137,7 +140,7 @@ Unsubscribe Wi-Fi hotspot sta join events.All callback functions will be deregis
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hotspotStaJoin' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StationInfo> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StationInfo&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -168,6 +171,7 @@ wifiManager.off("hotspotStaJoin", recvHotspotStaJoinFunc);
 ```
 
 
+<a id="off-3"></a>
 ## off('hotspotStaLeave')
 
 ```TypeScript
@@ -191,7 +195,7 @@ Unsubscribe Wi-Fi hotspot sta leave events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hotspotStaLeave' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StationInfo> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StationInfo&gt; | No | the callback of off |
 
 **Error codes:**
 

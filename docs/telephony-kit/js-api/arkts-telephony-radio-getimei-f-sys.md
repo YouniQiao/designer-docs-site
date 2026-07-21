@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getimei"></a>
 ## getIMEI
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the IMEI of a specified card slot of the device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the IMEI.Returns an empty string if the IMEI does not exist. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the IMEI.Returns an empty string if the IMEI does not exist. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ radio.getIMEI(slotId, (err: BusinessError, data: string) => {
 ```
 
 
+<a id="getimei-1"></a>
 ## getIMEI
 
 ```TypeScript
@@ -88,7 +90,7 @@ Obtains the IMEI of a specified card slot of the device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the IMEI. Returns an empty string if the IMEI does not exist. |
+| Promise&lt;string&gt; | Returns the IMEI. Returns an empty string if the IMEI does not exist. |
 
 **Error codes:**
 
@@ -117,6 +119,7 @@ radio.getIMEI(slotId).then((data: string) => {
 ```
 
 
+<a id="getimei-2"></a>
 ## getIMEI
 
 ```TypeScript
@@ -139,7 +142,7 @@ Obtains the IMEI of a specified card slot of the device.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the IMEI.Returns an empty string if the IMEI does not exist. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the IMEI.Returns an empty string if the IMEI does not exist. |
 
 **Error codes:**
 

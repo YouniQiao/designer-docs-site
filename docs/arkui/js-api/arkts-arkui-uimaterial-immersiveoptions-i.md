@@ -22,7 +22,7 @@ applyShadow?: boolean
 
 Whether to add a shadow effect for a material.
 
-If this parameter is set to **true**, the added shadow effect in the material always takes effect, which takes precedence over the general [shadow](../arkts-components/arkts-arkui-common-commonmethod-c.md#shadow-1) attribute. If this parameter is set to **false**, only the general shadow attribute takes effect.
+If this parameter is set to **true**, the added shadow effect in the material always takes effect, which takes precedence over the general [shadow](../arkts-components/arkts-arkui-commonmethod-c.md#shadow-1) attribute. If this parameter is set to **false**, only the general shadow attribute takes effect.
 
 Note: This parameter takes effect only for the display effect of devices with all levels of computing power.
 
@@ -54,7 +54,7 @@ Whether the subtree of the node of the material object automatically adapts the 
 
 **true** indicates that the material is automatically adapted to the complementary color of the background color only when the material layer is thin enough. The materials that can be adapted to the complementary color are defined by the system. Such materials must have at least the **THIN** or **ULTRA_THIN** style, and are related to the strength configuration of the immersive light effect of the application. The thinner the material and the stronger the immersive light effect, the more likely the material meets the requirements for adapting to the complementary color.
 
-The capability of automatically adapting the material to the complementary color takes effect only when special resource values are set for some attribute APIs. The attribute APIs include [fontColor](TextAttribute#fontColor) of the **Text** component,[fontColor](ButtonAttribute#fontColor) of the **Button** component,[fontColor](SymbolGlyphAttribute#fontColor(value: Array<ResourceColor>)) of the **SymbolGlyph** component,[fillColor](ImageAttribute#fillColor(value: ResourceColor)) of the **Image** component, icon colors in [placeholderColor](SearchAttribute#placeholderColor), [fontColor](SearchAttribute#fontColor), and [searchIcon](SearchAttribute#searchIcon) of the **Search** component, icon colors in [cancelButton](SearchAttribute#cancelButton), caret colors in [caretStyle](SearchAttribute#caretStyle), and text and icon colors in [tabBar](TabContentAttribute#tabBar(options: string | Resource | CustomBuilder | TabBarOptions)) of the **TabContent** component when the [BottomTabBarStyle](../arkts-components/arkts-arkui-tab-content-bottomtabbarstyle-c.md) style is used.
+The capability of automatically adapting the material to the complementary color takes effect only when special resource values are set for some attribute APIs. The attribute APIs include [fontColor](TextAttribute#fontColor) of the **Text** component,[fontColor](ButtonAttribute#fontColor) of the **Button** component,[fontColor](SymbolGlyphAttribute#fontColor(value: Array<ResourceColor>)) of the **SymbolGlyph** component,[fillColor](ImageAttribute#fillColor(value: ResourceColor)) of the **Image** component, icon colors in [placeholderColor](SearchAttribute#placeholderColor), [fontColor](SearchAttribute#fontColor), and [searchIcon](SearchAttribute#searchIcon) of the **Search** component, icon colors in [cancelButton](SearchAttribute#cancelButton), caret colors in [caretStyle](SearchAttribute#caretStyle), and text and icon colors in [tabBar](TabContentAttribute#tabBar(options: string | Resource | CustomBuilder | TabBarOptions)) of the **TabContent** component when the [BottomTabBarStyle](../arkts-components/arkts-arkui-bottomtabbarstyle-c.md) style is used.
 
 Note: This parameter takes effect only for the display effect of devices with high- and mid-level computing power.
 
@@ -110,7 +110,7 @@ Note: This parameter takes effect for the display effect of devices with all lev
 
 Default value: **undefined**, indicating that the light sensing interaction feedback effect is not set.
 
-**Type:** LightEffectOptions | null
+**Type:** LightEffectOptions \| null
 
 **Since:** 26.0.0
 

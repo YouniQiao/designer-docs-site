@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface String--><!--Device-unnamed-interface String-End-->
 
+<a id="anchor"></a>
 ## anchor
 
 ```TypeScript
@@ -26,6 +27,7 @@ Returns an `<a>` HTML anchor element and sets the name attribute to the text val
 | --- | --- |
 | string |  |
 
+<a id="big"></a>
 ## big
 
 ```TypeScript
@@ -44,6 +46,7 @@ Returns a `<big>` HTML element
 | --- | --- |
 | string |  |
 
+<a id="blink"></a>
 ## blink
 
 ```TypeScript
@@ -62,6 +65,7 @@ Returns a `<blink>` HTML element
 | --- | --- |
 | string |  |
 
+<a id="bold"></a>
 ## bold
 
 ```TypeScript
@@ -80,6 +84,7 @@ Returns a `<b>` HTML element
 | --- | --- |
 | string |  |
 
+<a id="codepointat"></a>
 ## codePointAt
 
 ```TypeScript
@@ -102,6 +107,7 @@ Returns a nonnegative integer Number less than 1114112 (0x110000) that is the co
 | --- | --- |
 | number |  |
 
+<a id="endswith"></a>
 ## endsWith
 
 ```TypeScript
@@ -125,6 +131,7 @@ Returns true if the sequence of elements of searchString converted to a String i
 | --- | --- |
 | boolean |  |
 
+<a id="fixed"></a>
 ## fixed
 
 ```TypeScript
@@ -143,6 +150,7 @@ Returns a `<tt>` HTML element
 | --- | --- |
 | string |  |
 
+<a id="fontcolor"></a>
 ## fontcolor
 
 ```TypeScript
@@ -167,6 +175,7 @@ Returns a `<font>` HTML element and sets the color attribute value
 | --- | --- |
 | string |  |
 
+<a id="fontsize"></a>
 ## fontsize
 
 ```TypeScript
@@ -191,6 +200,7 @@ Returns a `<font>` HTML element and sets the size attribute value
 | --- | --- |
 | string |  |
 
+<a id="fontsize-1"></a>
 ## fontsize
 
 ```TypeScript
@@ -215,6 +225,7 @@ Returns a `<font>` HTML element and sets the size attribute value
 | --- | --- |
 | string |  |
 
+<a id="includes"></a>
 ## includes
 
 ```TypeScript
@@ -238,6 +249,7 @@ Returns true if searchString appears as a substring of the result of converting 
 | --- | --- |
 | boolean |  |
 
+<a id="italics"></a>
 ## italics
 
 ```TypeScript
@@ -256,6 +268,7 @@ Returns an `<i>` HTML element
 | --- | --- |
 | string |  |
 
+<a id="link"></a>
 ## link
 
 ```TypeScript
@@ -280,6 +293,7 @@ Returns an `<a>` HTML element and sets the href attribute value
 | --- | --- |
 | string |  |
 
+<a id="normalize"></a>
 ## normalize
 
 ```TypeScript
@@ -302,6 +316,7 @@ Returns the String value result of normalizing the string into the normalization
 | --- | --- |
 | string |  |
 
+<a id="normalize-1"></a>
 ## normalize
 
 ```TypeScript
@@ -324,6 +339,7 @@ Returns the String value result of normalizing the string into the normalization
 | --- | --- |
 | string |  |
 
+<a id="repeat"></a>
 ## repeat
 
 ```TypeScript
@@ -346,6 +362,7 @@ Returns a String value that is made from count copies appended together. If coun
 | --- | --- |
 | string |  |
 
+<a id="small"></a>
 ## small
 
 ```TypeScript
@@ -364,6 +381,7 @@ Returns a `<small>` HTML element
 | --- | --- |
 | string |  |
 
+<a id="startswith"></a>
 ## startsWith
 
 ```TypeScript
@@ -387,6 +405,7 @@ Returns true if the sequence of elements of searchString converted to a String i
 | --- | --- |
 | boolean |  |
 
+<a id="strike"></a>
 ## strike
 
 ```TypeScript
@@ -405,6 +424,7 @@ Returns a `<strike>` HTML element
 | --- | --- |
 | string |  |
 
+<a id="sub"></a>
 ## sub
 
 ```TypeScript
@@ -423,6 +443,7 @@ Returns a `<sub>` HTML element
 | --- | --- |
 | string |  |
 
+<a id="sup"></a>
 ## sup
 
 ```TypeScript

@@ -16,6 +16,7 @@ Provides APIs for using the **AsyKeyGeneratorBySpec**. Before using the APIs of 
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="generatekeypair"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -40,7 +41,7 @@ If a key parameter of the [COMMON_PARAMS_SPEC](arkts-cryptoarchitecture-cryptofr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KeyPair> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the key pair obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KeyPair&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the key pair obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -94,6 +95,7 @@ function testGenerateKeyPair() {
 
 ```
 
+<a id="generatekeypair-1"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -118,7 +120,7 @@ If a key parameter of the [COMMON_PARAMS_SPEC](arkts-cryptoarchitecture-cryptofr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyPair> | Promise used to return the asymmetric key pair. |
+| Promise&lt;KeyPair&gt; | Promise used to return the asymmetric key pair. |
 
 **Error codes:**
 
@@ -172,6 +174,7 @@ function testGenerateKeyPair() {
 
 ```
 
+<a id="generatekeypairsync"></a>
 ## generateKeyPairSync
 
 ```TypeScript
@@ -255,6 +258,7 @@ function testGenerateKeyPairSync() {
 
 ```
 
+<a id="generateprikey"></a>
 ## generatePriKey
 
 ```TypeScript
@@ -279,7 +283,7 @@ If [PRIVATE_KEY_SPEC](arkts-cryptoarchitecture-cryptoframework-asykeyspectype-e.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PriKey> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the private key obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PriKey&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the private key obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -333,6 +337,7 @@ function testGeneratePriKey() {
 
 ```
 
+<a id="generateprikey-1"></a>
 ## generatePriKey
 
 ```TypeScript
@@ -357,7 +362,7 @@ If a key parameter of the [PRIVATE_KEY_SPEC](arkts-cryptoarchitecture-cryptofram
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PriKey> | Promise used to return the private key. |
+| Promise&lt;PriKey&gt; | Promise used to return the private key. |
 
 **Error codes:**
 
@@ -411,6 +416,7 @@ function testGeneratePriKey() {
 
 ```
 
+<a id="generateprikeysync"></a>
 ## generatePriKeySync
 
 ```TypeScript
@@ -492,6 +498,7 @@ function testGeneratePriKeySync() {
 
 ```
 
+<a id="generatepubkey"></a>
 ## generatePubKey
 
 ```TypeScript
@@ -516,7 +523,7 @@ If a key parameter of the [PUBLIC_KEY_SPEC](arkts-cryptoarchitecture-cryptoframe
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PubKey> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the public key obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PubKey&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the public key obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -570,6 +577,7 @@ function testGeneratePubKey() {
 
 ```
 
+<a id="generatepubkey-1"></a>
 ## generatePubKey
 
 ```TypeScript
@@ -594,7 +602,7 @@ If a key parameter of the [PUBLIC_KEY_SPEC](arkts-cryptoarchitecture-cryptoframe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PubKey> | Promise used to return the public key. |
+| Promise&lt;PubKey&gt; | Promise used to return the public key. |
 
 **Error codes:**
 
@@ -648,6 +656,7 @@ function testGeneratePubKey() {
 
 ```
 
+<a id="generatepubkeysync"></a>
 ## generatePubKeySync
 
 ```TypeScript

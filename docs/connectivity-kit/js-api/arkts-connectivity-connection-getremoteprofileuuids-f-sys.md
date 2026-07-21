@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="getremoteprofileuuids"></a>
 ## getRemoteProfileUuids
 
 ```TypeScript
@@ -31,7 +32,7 @@ Obtains the profile UUIDs supported by the remote device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ProfileUuids>> | Yes | the callback of getRemoteProfileUuids. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ProfileUuids&gt;&gt; | Yes | the callback of getRemoteProfileUuids. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ try {
 ```
 
 
+<a id="getremoteprofileuuids-1"></a>
 ## getRemoteProfileUuids
 
 ```TypeScript
@@ -91,7 +93,7 @@ Obtains the profile UUIDs supported by the remote device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ProfileUuids>> | Returns the promise object. |
+| Promise&lt;Array&lt;ProfileUuids&gt;&gt; | Returns the promise object. |
 
 **Error codes:**
 

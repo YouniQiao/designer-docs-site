@@ -14,6 +14,7 @@ The class used to control dialog.
 import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseController, DialogBaseAlignment, DialogDismissal } from '@kit.ArkUI';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -32,6 +33,7 @@ Close the corresponding dialog.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -50,6 +52,7 @@ The constructor.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript

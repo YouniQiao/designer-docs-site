@@ -6,13 +6,14 @@
 import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="updatereminder"></a>
 ## updateReminder
 
 ```TypeScript
 function updateReminder(reminderId: number, reminderReq: ReminderRequest): Promise<void>
 ```
 
-Updates the agent-powered reminder with the specified ID. This API uses a promise to return the result. Only [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints) that are not displayed in the notification panel can be updated.
+Updates the agent-powered reminder with the specified ID. This API uses a promise to return the result. Only [valid (not yet expired) reminders](docroot://task-management/agent-powered-reminder.md#constraints) that are not displayed in the notification panel can be updated.
 
 **Since:** 20
 
@@ -33,7 +34,7 @@ Updates the agent-powered reminder with the specified ID. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

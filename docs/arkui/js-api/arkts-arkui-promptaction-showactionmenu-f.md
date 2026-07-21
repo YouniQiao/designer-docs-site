@@ -6,6 +6,7 @@
 import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 
+<a id="showactionmenu"></a>
 ## showActionMenu
 
 ```TypeScript
@@ -37,7 +38,7 @@ Creates and displays an action menu. This API uses an asynchronous callback to r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [ActionMenuOptions](arkts-arkui-prompt-actionmenuoptions-i.md) | Yes | Action menu options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ActionMenuSuccessResponse> | Yes | Callback used to return the result.On success, **err** is **undefined** and **data** contains the action menu response.On failure, **err** provides error details. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ActionMenuSuccessResponse&gt; | Yes | Callback used to return the result.On success, **err** is **undefined** and **data** contains the action menu response.On failure, **err** provides error details. |
 
 **Error codes:**
 
@@ -155,6 +156,7 @@ struct Index {
 ```
 
 
+<a id="showactionmenu-1"></a>
 ## showActionMenu
 
 ```TypeScript
@@ -191,7 +193,7 @@ Creates and displays an action menu in the given settings. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ActionMenuSuccessResponse> | Promise that returns the action menu response. |
+| Promise&lt;ActionMenuSuccessResponse&gt; | Promise that returns the action menu response. |
 
 **Error codes:**
 

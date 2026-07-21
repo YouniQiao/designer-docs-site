@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getcurrentgroup"></a>
 ## getCurrentGroup
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtain information about the current p2p group.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WifiP2pGroupInfo> | Returns p2p group information. |
+| Promise&lt;WifiP2pGroupInfo&gt; | Returns p2p group information. |
 
 **Error codes:**
 
@@ -37,6 +38,7 @@ Obtain information about the current p2p group.
 | [2801000](../errorcode-wifi.md#2801000-p2p-module-error) | Operation failed. |
 
 
+<a id="getcurrentgroup-1"></a>
 ## getCurrentGroup
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtain information about the current p2p group.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WifiP2pGroupInfo> | Yes | Indicates callback of function. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WifiP2pGroupInfo&gt; | Yes | Indicates callback of function. |
 
 **Error codes:**
 

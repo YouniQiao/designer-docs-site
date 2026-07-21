@@ -14,6 +14,7 @@ In the following API examples, you must first use [createPanel](arkts-ime-inputm
 import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
+<a id="adjustpanelrect"></a>
 ## adjustPanelRect
 
 ```TypeScript
@@ -84,6 +85,7 @@ panel.adjustPanelRect(panelFlag, panelRect);
 
 ```
 
+<a id="adjustpanelrect-1"></a>
 ## adjustPanelRect
 
 ```TypeScript
@@ -163,6 +165,7 @@ panel.adjustPanelRect(panelFlag, panelRect);
 
 ```
 
+<a id="changeflag"></a>
 ## changeFlag
 
 ```TypeScript
@@ -197,6 +200,7 @@ panel.changeFlag(panelFlag);
 
 ```
 
+<a id="getdisplayid"></a>
 ## getDisplayId
 
 ```TypeScript
@@ -215,7 +219,7 @@ Obtains the window ID. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. It returns **displayId** of the window. |
+| Promise&lt;number&gt; | Promise used to return the result. It returns **displayId** of the window. |
 
 **Error codes:**
 
@@ -237,6 +241,7 @@ panel.getDisplayId().then((result: number) => {
 
 ```
 
+<a id="getimmersivemode"></a>
 ## getImmersiveMode
 
 ```TypeScript
@@ -264,6 +269,7 @@ let mode: inputMethodEngine.ImmersiveMode = panel.getImmersiveMode();
 
 ```
 
+<a id="getsystempanelcurrentinsets"></a>
 ## getSystemPanelCurrentInsets
 
 ```TypeScript
@@ -288,7 +294,7 @@ Obtains the offset area of the soft keyboard relative to the system panel under 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SystemPanelInsets> | Promise used to return the offset area between the input method keyboard and the system panel. |
+| Promise&lt;SystemPanelInsets&gt; | Promise used to return the offset area between the input method keyboard and the system panel. |
 
 **Error codes:**
 
@@ -322,6 +328,7 @@ inputMethodAbility.createPanel(this.context, panelConfig).then( (panel: inputMet
 
 ```
 
+<a id="hide"></a>
 ## hide
 
 ```TypeScript
@@ -340,7 +347,7 @@ Hides this panel. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -357,6 +364,7 @@ panel.hide((err: BusinessError) => {
 
 ```
 
+<a id="hide-1"></a>
 ## hide
 
 ```TypeScript
@@ -375,7 +383,7 @@ Hides this panel. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -390,6 +398,7 @@ panel.hide().then(() => {
 
 ```
 
+<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -410,7 +419,7 @@ Moves this input method panel to the specified position. This API uses an asynch
 | --- | --- | --- | --- |
 | x | number | Yes | Distance to move along the horizontal axis, in px. A positive value indicates moving rightwards. The value must be an integer. |
 | y | number | Yes | Distance to move along the vertical axis, in px. A positive value indicates moving downwards.The value must be an integer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -433,6 +442,7 @@ panel.moveTo(300, 300, (err: BusinessError) => {
 
 ```
 
+<a id="moveto-1"></a>
 ## moveTo
 
 ```TypeScript
@@ -458,7 +468,7 @@ Moves this input method panel to the specified position. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -479,6 +489,7 @@ panel.moveTo(300, 300).then(() => {
 
 ```
 
+<a id="off"></a>
 ## off('show')
 
 ```TypeScript
@@ -498,7 +509,7 @@ Disables listening for the show event of this panel. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'show' | Yes | Event type, which is **'show'**. |
-| callback | () => void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | () =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Error codes:**
 
@@ -513,6 +524,7 @@ panel.off('show');
 
 ```
 
+<a id="off-1"></a>
 ## off('hide')
 
 ```TypeScript
@@ -532,7 +544,7 @@ Disables listening for the hide event of this panel. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hide' | Yes | Event type, which is **'hide'**. |
-| callback | () => void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | () =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Error codes:**
 
@@ -547,6 +559,7 @@ panel.off('hide');
 
 ```
 
+<a id="off-2"></a>
 ## off('sizeChange')
 
 ```TypeScript
@@ -566,7 +579,7 @@ Disables listening for the panel size change. This API uses an asynchronous call
 > parameters of the [window.Size](../../apis-arkui/arkts-apis/arkts-arkui-window-size-i.md) type.  
 >  
 > - Since API version 15, after the  
-> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-2) API  
+> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1) API  
 > is called, an optional parameter of the [KeyboardArea](arkts-ime-inputmethodengine-keyboardarea-i.md) type is added to  
 > the callback function of this API.
 
@@ -594,6 +607,7 @@ panel.off('sizeChange', (windowSize: window.Size) => {
 
 ```
 
+<a id="on"></a>
 ## on('show')
 
 ```TypeScript
@@ -613,7 +627,7 @@ Enables listening for the show event of this panel. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'show' | Yes | Event type, which is **'show'**. |
-| callback | () => void | Yes | Callback used to return the result. |
+| callback | () =&gt; void | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -624,6 +638,7 @@ panel.on('show', () => {
 
 ```
 
+<a id="on-1"></a>
 ## on('hide')
 
 ```TypeScript
@@ -643,7 +658,7 @@ Enables listening for the hide event of this panel. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hide' | Yes | Event type, which is **'hide'**. |
-| callback | () => void | Yes | Callback used to return the result. |
+| callback | () =&gt; void | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -654,6 +669,7 @@ panel.on('hide', () => {
 
 ```
 
+<a id="on-2"></a>
 ## on('sizeChange')
 
 ```TypeScript
@@ -673,7 +689,7 @@ Enables listening for the panel size change. This API uses an asynchronous callb
 > parameters of the [window.Size](../../apis-arkui/arkts-apis/arkts-arkui-window-size-i.md) type.  
 >  
 > - Since API version 15, after the  
-> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-2) API  
+> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1) API  
 > is called, an optional parameter of the [KeyboardArea](arkts-ime-inputmethodengine-keyboardarea-i.md) type is added to  
 > the callback function of this API.
 
@@ -706,6 +722,7 @@ panel.on('sizeChange', (windowSize: window.Size, keyboardArea: inputMethodEngine
 
 ```
 
+<a id="resize"></a>
 ## resize
 
 ```TypeScript
@@ -735,7 +752,7 @@ Resizes this input method panel. This API uses an asynchronous callback to retur
 | --- | --- | --- | --- |
 | width | number | Yes | Target width of the panel, in px. The value is an integer greater than or equal to 0, and cannot be greater than the screen width. |
 | height | number | Yes | Target height of the panel, in px. The value is an integer greater than or equal to 0,and cannot be greater than 0.7 times the screen height. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -758,6 +775,7 @@ panel.resize(500, 1000, (err: BusinessError) => {
 
 ```
 
+<a id="resize-1"></a>
 ## resize
 
 ```TypeScript
@@ -792,7 +810,7 @@ Resizes this input method panel. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -813,6 +831,7 @@ panel.resize(500, 1000).then(() => {
 
 ```
 
+<a id="setimmersiveeffect"></a>
 ## setImmersiveEffect
 
 ```TypeScript
@@ -827,7 +846,7 @@ Sets the immersive effect of the input method application.
 - Only system applications can set the fluid light mode.  
 - The current API can be called only after any of the following APIs is called:  
 - [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1) (available since API version 12)  
-- [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-2) (available since API version 15)  
+- [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1) (available since API version 15)  
 - [resize](arkts-ime-inputmethodengine-panel-i.md#resize-1) (available since API version 10)
 
 **Since:** 20
@@ -863,6 +882,7 @@ panel.setImmersiveEffect(effect);
 
 ```
 
+<a id="setimmersivemode"></a>
 ## setImmersiveMode
 
 ```TypeScript
@@ -898,6 +918,7 @@ panel.setImmersiveMode(inputMethodEngine.ImmersiveMode.LIGHT_IMMERSIVE);
 
 ```
 
+<a id="setkeepscreenon"></a>
 ## setKeepScreenOn
 
 ```TypeScript
@@ -930,7 +951,7 @@ Sets to keep the screen always on. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -951,6 +972,7 @@ panel.setKeepScreenOn(true).then(() => {
 
 ```
 
+<a id="setprivacymode"></a>
 ## setPrivacyMode
 
 ```TypeScript
@@ -988,6 +1010,7 @@ panel.setPrivacyMode(isPrivacyMode);
 
 ```
 
+<a id="setsystempanelbuttoncolor"></a>
 ## setSystemPanelButtonColor
 
 ```TypeScript
@@ -1013,7 +1036,7 @@ Sets the color of the function buttons and their background color on the current
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no result. |
+| Promise&lt;void&gt; | Promise that returns no result. |
 
 **Example**
 
@@ -1035,6 +1058,7 @@ try {
 
 ```
 
+<a id="setuicontent"></a>
 ## setUiContent
 
 ```TypeScript
@@ -1054,7 +1078,7 @@ Loads content from a page to this input method panel. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the page from which the content will be loaded. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1077,6 +1101,7 @@ panel.setUiContent('pages/page2/page2', (err: BusinessError) => {
 
 ```
 
+<a id="setuicontent-1"></a>
 ## setUiContent
 
 ```TypeScript
@@ -1101,7 +1126,7 @@ Loads content from a page to this input method panel. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1122,6 +1147,7 @@ panel.setUiContent('pages/page2/page2').then(() => {
 
 ```
 
+<a id="setuicontent-2"></a>
 ## setUiContent
 
 ```TypeScript
@@ -1141,8 +1167,8 @@ Loads content from a page linked to LocalStorage to this input method panel. Thi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the page linked to LocalStorage. |
-| storage | [LocalStorage](../../apis-arkui/arkts-apis/arkts-arkui-common-ts-ets-api-localstorage-c.md) | Yes | Storage unit that provides storage for mutable and immutable state variables in the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| storage | [LocalStorage](../../apis-arkui/arkts-apis/arkts-arkui-localstorage-c.md) | Yes | Storage unit that provides storage for mutable and immutable state variables in the application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1167,6 +1193,7 @@ panel.setUiContent('pages/page2/page2', storage, (err: BusinessError) => {
 
 ```
 
+<a id="setuicontent-3"></a>
 ## setUiContent
 
 ```TypeScript
@@ -1186,13 +1213,13 @@ Loads content from a page linked to LocalStorage to this panel. This API uses a 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the page from which the content will be loaded. |
-| storage | [LocalStorage](../../apis-arkui/arkts-apis/arkts-arkui-common-ts-ets-api-localstorage-c.md) | Yes | Storage unit that provides storage for mutable and immutable state variables in the application. |
+| storage | [LocalStorage](../../apis-arkui/arkts-apis/arkts-arkui-localstorage-c.md) | Yes | Storage unit that provides storage for mutable and immutable state variables in the application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1215,6 +1242,7 @@ panel.setUiContent('pages/page2/page2', storage).then(() => {
 
 ```
 
+<a id="show"></a>
 ## show
 
 ```TypeScript
@@ -1233,7 +1261,7 @@ Shows this input method panel. This API uses an asynchronous callback to return 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -1250,6 +1278,7 @@ panel.show((err: BusinessError) => {
 
 ```
 
+<a id="show-1"></a>
 ## show
 
 ```TypeScript
@@ -1268,7 +1297,7 @@ Shows this input method panel. This API uses a promise to return the result. It 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -1283,6 +1312,7 @@ panel.show().then(() => {
 
 ```
 
+<a id="startmoving"></a>
 ## startMoving
 
 ```TypeScript
@@ -1313,6 +1343,7 @@ panel.startMoving();
 
 ```
 
+<a id="updatepanelrect"></a>
 ## updatePanelRect
 
 ```TypeScript
@@ -1348,7 +1379,7 @@ Update the panel rectangle. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1356,6 +1387,7 @@ Update the panel rectangle. This API uses a promise to return the result.
 | --- | --- |
 | [12800013](../errorcode-inputmethod-framework.md#12800013-window-manager-service-error) | window manager service error. |
 
+<a id="updatepanelrect-1"></a>
 ## updatePanelRect
 
 ```TypeScript
@@ -1395,7 +1427,7 @@ Update the panel rectangle, and customizes the avoid area and touch area. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1404,6 +1436,7 @@ Update the panel rectangle, and customizes the avoid area and touch area. This A
 | [12800013](../errorcode-inputmethod-framework.md#12800013-window-manager-service-error) | window manager service error. |
 | [12800017](../errorcode-inputmethod-framework.md#12800017-invalid-panel-type-or-panel-flag) | invalid panel type or panel flag. |
 
+<a id="updatepanelrectsync"></a>
 ## updatePanelRectSync
 
 ```TypeScript
@@ -1441,6 +1474,7 @@ Update the panel rectangle.
 | --- | --- |
 | [12800013](../errorcode-inputmethod-framework.md#12800013-window-manager-service-error) | window manager service error. |
 
+<a id="updatepanelrectsync-1"></a>
 ## updatePanelRectSync
 
 ```TypeScript
@@ -1483,6 +1517,7 @@ Update the panel rectangle, and customizes the avoid area and touch area.
 | [12800013](../errorcode-inputmethod-framework.md#12800013-window-manager-service-error) | window manager service error. |
 | [12800017](../errorcode-inputmethod-framework.md#12800017-invalid-panel-type-or-panel-flag) | invalid panel type or panel flag. |
 
+<a id="updateregion"></a>
 ## updateRegion
 
 ```TypeScript
@@ -1509,7 +1544,7 @@ Updates the hot zone on the input method panel in the current state.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inputRegion | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<window.Rect> | Yes | Region for receiving input events.<br>- The array size is limited to [1, 4].<br>- The input hot zone is relative to the left vertex of the input method panel window. |
+| inputRegion | Array&lt;window.Rect&gt; | Yes | Region for receiving input events.<br>- The array size is limited to [1, 4].<br>- The input hot zone is relative to the left vertex of the input method panel window. |
 
 **Error codes:**
 

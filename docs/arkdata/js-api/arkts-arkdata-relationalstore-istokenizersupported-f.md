@@ -6,6 +6,7 @@
 import { relationalStore } from '@kit.ArkData';
 ```
 
+<a id="istokenizersupported"></a>
 ## isTokenizerSupported
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { cliManager } from '@kit.AbilityKit';
 ```
 
+<a id="execcmd"></a>
 ## execCmd
 
 ```TypeScript
@@ -37,7 +38,7 @@ Execute a command. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CliSessionInfo> | Promise used to return CliSessionInfo. |
+| Promise&lt;CliSessionInfo&gt; | Promise used to return CliSessionInfo. |
 
 **Error codes:**
 

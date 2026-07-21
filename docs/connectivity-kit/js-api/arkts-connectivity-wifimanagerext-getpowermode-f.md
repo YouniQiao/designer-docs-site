@@ -6,6 +6,7 @@
 import { wifiManagerExt } from '@kit.ConnectivityKit';
 ```
 
+<a id="getpowermode"></a>
 ## getPowerMode
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the current Wi-Fi power mode.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PowerMode> | @throws {BusinessError} 201 - Permission denied. |
+| Promise&lt;PowerMode&gt; | @throws {BusinessError} 201 - Permission denied. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ Obtains the current Wi-Fi power mode.
 ```
 
 
+<a id="getpowermode-1"></a>
 ## getPowerMode
 
 ```TypeScript
@@ -71,7 +73,7 @@ Obtains the current Wi-Fi power mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PowerMode> | Yes | the callback of model |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PowerMode&gt; | Yes | the callback of model |
 
 **Error codes:**
 

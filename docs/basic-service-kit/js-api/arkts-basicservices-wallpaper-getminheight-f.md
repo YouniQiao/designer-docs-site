@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="getminheight"></a>
 ## getMinHeight
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the minimum height of the wallpaper. in pixels. returns 0 if no wallpape
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | the callback of getMinHeight. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | the callback of getMinHeight. |
 
 **Example**
 
@@ -44,6 +45,7 @@ wallpaper.getMinHeight((error: BusinessError, data: Number) => {
 ```
 
 
+<a id="getminheight-1"></a>
 ## getMinHeight
 
 ```TypeScript
@@ -64,7 +66,7 @@ Obtains the minimum height of the wallpaper. in pixels. returns 0 if no wallpape
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | the promise returned by the function. |
+| Promise&lt;number&gt; | the promise returned by the function. |
 
 **Example**
 

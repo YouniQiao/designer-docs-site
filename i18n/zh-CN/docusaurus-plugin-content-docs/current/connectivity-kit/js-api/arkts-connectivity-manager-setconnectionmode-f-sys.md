@@ -6,6 +6,7 @@
 import { manager } from '@kit.ConnectivityKit';
 ```
 
+<a id="setconnectionmode"></a>
 ## setConnectionMode
 
 ```TypeScript
@@ -37,7 +38,7 @@ function setConnectionMode(mode: ConnectionMode, duration: number): Promise<void
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | 返回promise对象。 |
+| Promise&lt;void&gt; | 返回promise对象。 |
 
 **错误码：**
 

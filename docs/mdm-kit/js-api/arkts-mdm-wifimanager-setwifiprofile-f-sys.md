@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.MDMKit';
 ```
 
+<a id="setwifiprofile"></a>
 ## setWifiProfile
 
 ```TypeScript
@@ -36,7 +37,7 @@ Configures Wi-Fi for the current device to connect to a specified network. This 
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | profile | [WifiProfile](arkts-mdm-wifimanager-wifiprofile-i.md) | Yes | Wi-Fi configuration information. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -77,6 +78,7 @@ wifiManager.setWifiProfile(wantTemp, profile, (err) => {
 ```
 
 
+<a id="setwifiprofile-1"></a>
 ## setWifiProfile
 
 ```TypeScript
@@ -112,7 +114,7 @@ Configures Wi-Fi for the current device to connect to a specified network. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. An error object is thrown if the Wi-Fi fails to be configured. |
+| Promise&lt;void&gt; | Promise that returns no value. An error object is thrown if the Wi-Fi fails to be configured. |
 
 **Error codes:**
 

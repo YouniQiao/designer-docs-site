@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="clearcustomdnsrules"></a>
 ## clearCustomDnsRules
 
 ```TypeScript
@@ -26,7 +27,7 @@ Clear all custom DNS rules for current application.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Returns the callback of clearCustomDnsRules. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Returns the callback of clearCustomDnsRules. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ connection.clearCustomDnsRules((error: BusinessError, data: void) => {
 ```
 
 
+<a id="clearcustomdnsrules-1"></a>
 ## clearCustomDnsRules
 
 ```TypeScript
@@ -75,7 +77,7 @@ Clear all custom DNS rules for current application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

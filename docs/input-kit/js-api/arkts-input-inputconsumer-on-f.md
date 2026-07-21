@@ -6,6 +6,7 @@
 import { inputConsumer } from '@kit.InputKit';
 ```
 
+<a id="on"></a>
 ## on('hotkeyChange')
 
 ```TypeScript
@@ -26,7 +27,7 @@ Subscribes to application shortcut key change events. This API obtains combinati
 | --- | --- | --- | --- |
 | type | 'hotkeyChange' | Yes | Event type. This parameter has a fixed value of **hotkeyChange**. |
 | hotkeyOptions | [HotkeyOptions](arkts-input-inputconsumer-hotkeyoptions-i.md) | Yes | Shortcut key options. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<HotkeyOptions> | Yes | Callback used to return the combination key input events that meet the conditions. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;HotkeyOptions&gt; | Yes | Callback used to return the combination key input events that meet the conditions. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ struct Index {
 ```
 
 
+<a id="on-1"></a>
 ## on('keyPressed')
 
 ```TypeScript
@@ -81,7 +83,7 @@ function on(type: 'keyPressed', options: KeyPressedConfig, callback: Callback<Ke
 
 Subscribes to key press events. If the current application is in the foreground focus window, a callback is triggered when the specified key is pressed. This API uses an asynchronous callback to return the result.
 
-If the API call is successful, the system's default response to the key event will be intercepted; that is, system-level actions, such as volume adjustment, will no longer be triggered. To restore the system response, call [off](arkts-input-inputconsumer-off-f.md#off-3) to disable listening for the key event.
+If the API call is successful, the system's default response to the key event will be intercepted; that is, system-level actions, such as volume adjustment, will no longer be triggered. To restore the system response, call [off](inputConsumer.off(type: 'keyPressed', callback?: Callback<KeyEvent>)) to disable listening for the key event.
 
 **Since:** 16
 
@@ -95,7 +97,7 @@ If the API call is successful, the system's default response to the key event wi
 | --- | --- | --- | --- |
 | type | 'keyPressed' | Yes | Event type. This parameter has a fixed value of **keyPressed**. |
 | options | [KeyPressedConfig](arkts-input-inputconsumer-keypressedconfig-i.md) | Yes | Sets the key event consumption configuration. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<KeyEvent> | Yes | Callback used to return key press events. Ensure that different callbacks are used for different key events. Otherwise, the subscription does not take effect. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;KeyEvent&gt; | Yes | Callback used to return key press events. Ensure that different callbacks are used for different key events. Otherwise, the subscription does not take effect. |
 
 **Error codes:**
 

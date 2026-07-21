@@ -6,7 +6,7 @@ Enumerates the storage security levels of a key.
 >  
 > When using a key whose storage level is ECE, you are advised to clear the session resources created using the key  
 > by detecting the  
-> [lock screen event](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_screen_locked)  
+> [lock screen event](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_screen_locked)  
 > to ensure security.
 
 **Since:** 11

@@ -14,6 +14,7 @@ AVCastController definition used to implement a remote control when a cast is co
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="setdisplaysurface"></a>
 ## setDisplaySurface
 
 ```TypeScript
@@ -35,7 +36,7 @@ Set a surface instance to display playing view, used at sink side.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | surfaceId | string | Yes | surface id, video player will use this id get a surface instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | A callback instance used to return when set surface completed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | A callback instance used to return when set surface completed. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ media.createAVRecorder().then((avRecorder) => {
 
 ```
 
+<a id="setdisplaysurface-1"></a>
 ## setDisplaySurface
 
 ```TypeScript
@@ -91,7 +93,7 @@ Set a surface instance to display playing view, used at sink side.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

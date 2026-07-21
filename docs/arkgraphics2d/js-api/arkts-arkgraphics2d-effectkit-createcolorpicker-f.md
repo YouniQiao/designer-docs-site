@@ -6,6 +6,7 @@
 import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
+<a id="createcolorpicker"></a>
 ## createColorPicker
 
 ```TypeScript
@@ -34,7 +35,7 @@ Creates a ColorPicker instance based on a pixel map. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ColorPicker> | - Promise used to return the ColorPicker instance created. |
+| Promise&lt;ColorPicker&gt; | - Promise used to return the ColorPicker instance created. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 ```
 
 
+<a id="createcolorpicker-1"></a>
 ## createColorPicker
 
 ```TypeScript
@@ -93,13 +95,13 @@ Creates a ColorPicker instance for the selected region based on a pixel map. Thi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | source | image.PixelMap | Yes | PixelMap instance created by the image module. An instance can be obtained by decoding an image or directly created. For details, see Image Overview. |
-| region | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Region of the image from which the color is picked.The array consists of four elements, representing the left, top, right, and bottom positions of the image,respectively.The value of each element must be in the range [0, 1]. The leftmost and topmost positions of the image correspond to 0,and the rightmost and bottom positions correspond to 1. In the array, the third element must be greater than the first element,and the fourth element must be greater than the second element. |
+| region | Array&lt;number&gt; | Yes | Region of the image from which the color is picked.The array consists of four elements, representing the left, top, right, and bottom positions of the image,respectively.The value of each element must be in the range [0, 1]. The leftmost and topmost positions of the image correspond to 0,and the rightmost and bottom positions correspond to 1. In the array, the third element must be greater than the first element,and the fourth element must be greater than the second element. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ColorPicker> | - Promise used to return the ColorPicker instance created. |
+| Promise&lt;ColorPicker&gt; | - Promise used to return the ColorPicker instance created. |
 
 **Error codes:**
 
@@ -135,6 +137,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 ```
 
 
+<a id="createcolorpicker-2"></a>
 ## createColorPicker
 
 ```TypeScript
@@ -158,7 +161,7 @@ Creates a ColorPicker instance based on a pixel map. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | source | image.PixelMap | Yes | PixelMap instance created by the image module. An instance can be obtained by decoding an image or directly created. For details, see Image Overview. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ColorPicker> | Yes | the callback of createColorPicker. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ColorPicker&gt; | Yes | the callback of createColorPicker. |
 
 **Error codes:**
 
@@ -194,6 +197,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 ```
 
 
+<a id="createcolorpicker-3"></a>
 ## createColorPicker
 
 ```TypeScript
@@ -217,8 +221,8 @@ Creates a ColorPicker instance for the selected region based on a pixel map. Thi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | source | image.PixelMap | Yes | PixelMap instance created by the image module. An instance can be obtained by decoding an image or directly created. For details, see Image Overview. |
-| region | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Region of the image from which the color is picked.The array consists of four elements, representing the left, top, right, and bottom positions of the image,respectively.The value of each element must be in the range [0, 1]. The leftmost and topmost positions of the image correspond to 0,and the rightmost and bottom positions correspond to 1. In the array, the third element must be greater than the first element,and the fourth element must be greater than the second element. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ColorPicker> | Yes | Callback used to return the ColorPicker instance created. |
+| region | Array&lt;number&gt; | Yes | Region of the image from which the color is picked.The array consists of four elements, representing the left, top, right, and bottom positions of the image,respectively.The value of each element must be in the range [0, 1]. The leftmost and topmost positions of the image correspond to 0,and the rightmost and bottom positions correspond to 1. In the array, the third element must be greater than the first element,and the fourth element must be greater than the second element. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ColorPicker&gt; | Yes | Callback used to return the ColorPicker instance created. |
 
 **Error codes:**
 

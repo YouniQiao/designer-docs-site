@@ -6,6 +6,7 @@
 import { freeInstall } from '@kit.AbilityKit';
 ```
 
+<a id="sethapmoduleupgradeflag"></a>
 ## setHapModuleUpgradeFlag
 
 ```TypeScript
@@ -34,7 +35,7 @@ Sets an upgrade flag for a module. This API uses an asynchronous callback to ret
 | bundleName | string | Yes | Bundle name. |
 | moduleName | string | Yes | Module name. |
 | upgradeFlag | [UpgradeFlag](arkts-ability-freeinstall-upgradeflag-e-sys.md) | Yes | Upgrade flag, which is for internal use only. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -48,6 +49,7 @@ Sets an upgrade flag for a module. This API uses an asynchronous callback to ret
 | [17700002](../errorcode-bundle.md#17700002-module-name-does-not-exist) | The specified module name is not found. |
 
 
+<a id="sethapmoduleupgradeflag-1"></a>
 ## setHapModuleUpgradeFlag
 
 ```TypeScript
@@ -78,7 +80,7 @@ Sets an upgrade flag for a module. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

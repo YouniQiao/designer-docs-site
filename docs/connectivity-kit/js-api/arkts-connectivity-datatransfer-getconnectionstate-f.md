@@ -6,6 +6,7 @@
 import { dataTransfer } from '@kit.ConnectivityKit';
 ```
 
+<a id="getconnectionstate"></a>
 ## getConnectionState
 
 ```TypeScript

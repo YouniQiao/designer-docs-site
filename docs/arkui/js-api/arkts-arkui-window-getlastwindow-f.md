@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="getlastwindow"></a>
 ## getLastWindow
 
 ```TypeScript
@@ -29,7 +30,7 @@ If no child window exists or the child window is not displayed by calling [showW
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ctx | [BaseContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-basecontext-t.md) | Yes | Current application context. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Window> | Yes | Callback used to return the top window obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Window&gt; | Yes | Callback used to return the top window obtained. |
 
 **Error codes:**
 
@@ -86,6 +87,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="getlastwindow-1"></a>
 ## getLastWindow
 
 ```TypeScript
@@ -114,7 +116,7 @@ If no child window exists or the child window is not displayed by calling [showW
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | Promise used to return the topmost layer window obtained. |
+| Promise&lt;Window&gt; | Promise used to return the topmost layer window obtained. |
 
 **Error codes:**
 

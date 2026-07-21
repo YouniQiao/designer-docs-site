@@ -25,7 +25,7 @@ Creates a **Canvas** component. The maximum allowed size cannot exceed 10000 px 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | CanvasRenderingContext2D \| DrawingRenderingContext | No | 2D rendering contextfor a canvas.<br>**CanvasRenderingContext2D**: Canvases cannot share one **CanvasRenderingContext2D** object.**DrawingRenderingContext**: Canvases cannot share one **DrawingRenderingContext** object.<br>If the value is **null** or **undefined**, **context** is considered unset. |
+| context | [CanvasRenderingContext2D](arkts-arkui-canvasrenderingcontext2d-c.md) \| DrawingRenderingContext | No | 2D rendering context for a canvas. <br>**CanvasRenderingContext2D**: Canvases cannot share one **CanvasRenderingContext2D** object. **DrawingRenderingContext**: Canvases cannot share one **DrawingRenderingContext** object. <br>If the value is **null** or **undefined**, **context** is considered unset.  |
 
 ## Canvas
 
@@ -49,8 +49,8 @@ Creates a **Canvas** component. You can specify a **CanvasRenderingContext2D** o
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | CanvasRenderingContext2D \| DrawingRenderingContext | Yes | 2D rendering contextfor a canvas.<br>**CanvasRenderingContext2D**: Canvases cannot share one **CanvasRenderingContext2D** object.**DrawingRenderingContext**: Canvases cannot share one **DrawingRenderingContext** object.<br>If the value is **null** or **undefined**, **context** is considered unset. |
-| imageAIOptions | ImageAIOptions | Yes | AI image analysis options. You can configure theanalysis type or bind an analyzer controller through this parameter.<br>If the value is **null** or **undefined**, the default value of **ImageAIOptions** is used. |
+| context | [CanvasRenderingContext2D](arkts-arkui-canvasrenderingcontext2d-c.md) \| DrawingRenderingContext | Yes | 2D rendering context for a canvas. <br>**CanvasRenderingContext2D**: Canvases cannot share one **CanvasRenderingContext2D** object. **DrawingRenderingContext**: Canvases cannot share one **DrawingRenderingContext** object. <br>If the value is **null** or **undefined**, **context** is considered unset.  |
+| imageAIOptions | [ImageAIOptions](../arkts-apis/arkts-arkui-imageaioptions-i.md) | Yes | AI image analysis options. You can configure the analysis type or bind an analyzer controller through this parameter. <br>If the value is **null** or **undefined**, the default value of **ImageAIOptions** is used.  |
 
 ## Canvas
 
@@ -89,7 +89,7 @@ Creates a **Canvas** component that does not cache commands using **CanvasParams
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| params | CanvasParams | Yes | Construction parameters of the **Canvas** component. |
+| params | [CanvasParams](arkts-arkui-canvasparams-i.md) | Yes | Construction parameters of the **Canvas** component.  |
 
 ## Summary
 

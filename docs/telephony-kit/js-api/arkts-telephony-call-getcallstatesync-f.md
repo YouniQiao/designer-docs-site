@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="getcallstatesync"></a>
 ## getCallStateSync
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="istraceenabled"></a>
 ## isTraceEnabled
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether application trace capture is enabled.
 
 | Type | Description |
 | --- | --- |
-| boolean | **true** is returned when the trace capture is enabled using [hitrace](../../../../dfx/hitrace.md). **false** is returned when it is disabled or stopped. In this case,calling the HiTraceMeter API does not take effect. |
+| boolean | **true** is returned when the trace capture is enabled using [hitrace](docroot://dfx/hitrace.md). **false** is returned when it is disabled or stopped. In this case,calling the HiTraceMeter API does not take effect. |
 
 **Example**
 

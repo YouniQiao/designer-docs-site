@@ -10,6 +10,7 @@ Implements callbacks for an automatic or a manual saving request.
 
 **System API:** This is a system API.
 
+<a id="onfailure"></a>
 ## onFailure
 
 ```TypeScript
@@ -35,6 +36,7 @@ Called when a saving request fails to be processed.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied, non-system app called system api. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="onsuccess"></a>
 ## onSuccess
 
 ```TypeScript

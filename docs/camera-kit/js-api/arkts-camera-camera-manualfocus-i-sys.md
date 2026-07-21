@@ -18,6 +18,7 @@ ManualFocus object.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getfocusdistance"></a>
 ## getFocusDistance
 
 ```TypeScript
@@ -50,6 +51,7 @@ Gets current focus distance, ranging from 0.0 to 1.0, with 0.0 being shortest di
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 and later |
 
+<a id="setfocusdistance"></a>
 ## setFocusDistance
 
 ```TypeScript

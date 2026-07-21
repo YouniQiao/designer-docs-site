@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="setfunctionkeyenabled"></a>
 ## setFunctionKeyEnabled
 
 ```TypeScript
@@ -33,7 +34,7 @@ Specifies whether to enable a function key (for example, **CapsLock**). This API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

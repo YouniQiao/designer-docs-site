@@ -6,6 +6,7 @@
 import { securityLabel } from '@kit.CoreFileKit';
 ```
 
+<a id="getsecuritylabel"></a>
 ## getSecurityLabel
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the data security level of a file or directory. If no data security leve
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the data security level. |
+| Promise&lt;string&gt; | Promise used to return the data security level. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ securityLabel.getSecurityLabel(filePath).then((type: string) => {
 ```
 
 
+<a id="getsecuritylabel-1"></a>
 ## getSecurityLabel
 
 ```TypeScript
@@ -78,7 +80,7 @@ Obtains the data security level of a file or directory. If no data security leve
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | File path. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback after the data security level is obtained asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback after the data security level is obtained asynchronously. |
 
 **Error codes:**
 

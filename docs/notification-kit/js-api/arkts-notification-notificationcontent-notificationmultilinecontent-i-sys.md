@@ -31,7 +31,7 @@ lineWantAgents?: Array<WantAgent>
 
 **wantAgent**s triggered when a line of text in the multi-line text is tapped. The text in different lines corresponds to different **wantAgent**s. The maximum number of lines configured for this field is equal to the value of lines. This parameter is left empty by default.
 
-**Type:** Array<WantAgent>
+**Type:** Array&lt;WantAgent&gt;
 
 **Since:** 20
 

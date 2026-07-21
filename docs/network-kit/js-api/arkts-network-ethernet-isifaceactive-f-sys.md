@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="isifaceactive"></a>
 ## isIfaceActive
 
 ```TypeScript
@@ -29,7 +30,7 @@ Check whether the specified network is active.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | iface | string | Yes | Indicates the network interface name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | the callback of isIfaceActive. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | the callback of isIfaceActive. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ ethernet.isIfaceActive("eth0", (error: BusinessError, value: number) => {
 ```
 
 
+<a id="isifaceactive-1"></a>
 ## isIfaceActive
 
 ```TypeScript
@@ -88,7 +90,7 @@ Check whether the specified network is active.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | the promise returned by the function. |
+| Promise&lt;number&gt; | the promise returned by the function. |
 
 **Error codes:**
 

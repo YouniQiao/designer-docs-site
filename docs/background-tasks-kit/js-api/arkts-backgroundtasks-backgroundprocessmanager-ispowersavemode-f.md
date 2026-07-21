@@ -6,6 +6,7 @@
 import { backgroundProcessManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="ispowersavemode"></a>
 ## isPowerSaveMode
 
 ```TypeScript
@@ -32,7 +33,7 @@ Queries whether the process is in power saving mode. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the query result. The value **true** means that the process is in power saving mode; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the query result. The value **true** means that the process is in power saving mode; the value **false** means the opposite. |
 
 **Error codes:**
 

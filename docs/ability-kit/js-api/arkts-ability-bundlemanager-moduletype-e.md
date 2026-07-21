@@ -46,7 +46,7 @@ Dynamic feature module of the application, extending the application functionali
 SHARED = 3
 ```
 
-[Dynamic shared library](../../../../quick-start/in-app-hsp.md) of the application.
+[Dynamic shared library](docroot://quick-start/in-app-hsp.md) of the application.
 
 **Since:** 9
 

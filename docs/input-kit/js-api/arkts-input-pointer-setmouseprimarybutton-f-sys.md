@@ -6,6 +6,7 @@
 import { pointer } from '@kit.InputKit';
 ```
 
+<a id="setmouseprimarybutton"></a>
 ## setMousePrimaryButton
 
 ```TypeScript
@@ -27,7 +28,7 @@ Sets the primary mouse button. This API uses an asynchronous callback to return 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | primary | [PrimaryButton](arkts-input-pointer-primarybutton-e.md) | Yes | Type of the primary mouse button. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ struct Index {
 ```
 
 
+<a id="setmouseprimarybutton-1"></a>
 ## setMousePrimaryButton
 
 ```TypeScript
@@ -95,7 +97,7 @@ Sets the primary mouse button. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

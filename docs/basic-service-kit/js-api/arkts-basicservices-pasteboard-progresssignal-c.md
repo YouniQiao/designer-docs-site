@@ -14,6 +14,7 @@ Defines a function for canceling the paste task. This parameter is valid only wh
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript

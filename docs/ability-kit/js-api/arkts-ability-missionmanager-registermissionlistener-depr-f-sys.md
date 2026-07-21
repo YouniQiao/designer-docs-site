@@ -1,5 +1,6 @@
 # registerMissionListener (System API)
 
+<a id="registermissionlistener"></a>
 ## registerMissionListener
 
 ```TypeScript

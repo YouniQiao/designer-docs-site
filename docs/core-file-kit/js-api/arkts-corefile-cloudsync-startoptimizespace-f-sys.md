@@ -6,6 +6,7 @@
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="startoptimizespace"></a>
 ## startOptimizeSpace
 
 ```TypeScript
@@ -31,13 +32,13 @@ startOptimizeSpace is used together with **stopOptimizeSpace**. If **startOptimi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | optimizePara | [OptimizeSpaceParam](arkts-corefile-cloudsync-optimizespaceparam-i-sys.md) | Yes | Optimizes parameters. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OptimizeSpaceProgress> | No | Callback used to return the optimization progress. By default, error code 401 is returned and no clearing task is executed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OptimizeSpaceProgress&gt; | No | Callback used to return the optimization progress. By default, error code 401 is returned and no clearing task is executed. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

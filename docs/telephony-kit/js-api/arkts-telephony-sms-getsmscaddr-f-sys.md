@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="getsmscaddr"></a>
 ## getSmscAddr
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the SMSC address based on a specified slot ID.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the ID of the slot holding the SIM card for sending SMS messages. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the SMSC address. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the SMSC address. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sms.getSmscAddr(slotId, (err: BusinessError, data: string) => {
 ```
 
 
+<a id="getsmscaddr-1"></a>
 ## getSmscAddr
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains the SMSC address based on a specified slot ID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the SMSC address. |
+| Promise&lt;string&gt; | Returns the SMSC address. |
 
 **Error codes:**
 

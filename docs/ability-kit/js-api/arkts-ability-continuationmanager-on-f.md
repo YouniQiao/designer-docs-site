@@ -6,6 +6,7 @@
 import { continuationManager } from '@kit.AbilityKit';
 ```
 
+<a id="on"></a>
 ## on('deviceSelected')
 
 ```TypeScript
@@ -36,7 +37,7 @@ Subscribes to device connection events. This API uses an asynchronous callback t
 | --- | --- | --- | --- |
 | type | 'deviceSelected' | Yes | Event type. The value is fixed at **deviceSelected**. |
 | token | number | Yes | Token obtained after the registration of the continuation management service. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<ContinuationResult>> | Yes | Callback invoked when a device is selected from the device list provided by the device selection module. This callback returns the device ID, type, and name. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;ContinuationResult&gt;&gt; | Yes | Callback invoked when a device is selected from the device list provided by the device selection module. This callback returns the device ID, type, and name. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ try {
 ```
 
 
+<a id="on-1"></a>
 ## on('deviceUnselected')
 
 ```TypeScript
@@ -100,7 +102,7 @@ Subscribes to device disconnection events. This API uses an asynchronous callbac
 | --- | --- | --- | --- |
 | type | 'deviceUnselected' | Yes | Event type. The value is fixed at **deviceUnselected**. |
 | token | number | Yes | Token obtained after the registration of the continuation management service. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<ContinuationResult>> | Yes | Callback invoked when a device is unselected from the device list provided by the device selection module. This callback returns the device ID, type, and name. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;ContinuationResult&gt;&gt; | Yes | Callback invoked when a device is unselected from the device list provided by the device selection module. This callback returns the device ID, type, and name. |
 
 **Error codes:**
 
@@ -135,6 +137,7 @@ try {
 ```
 
 
+<a id="on-2"></a>
 ## on('deviceConnect')
 
 ```TypeScript
@@ -160,7 +163,7 @@ Subscribes to device connection events. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceConnect' | Yes | Event type. The value is fixed at **deviceConnect**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ContinuationResult> | Yes | Callback invoked when a device is selected from the device list provided by the device selection module. This callback returns the device ID, type, and name. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ContinuationResult&gt; | Yes | Callback invoked when a device is selected from the device list provided by the device selection module. This callback returns the device ID, type, and name. |
 
 **Example**
 
@@ -176,6 +179,7 @@ continuationManager.on("deviceConnect", (data) => {
 ```
 
 
+<a id="on-3"></a>
 ## on('deviceDisconnect')
 
 ```TypeScript
@@ -201,7 +205,7 @@ Subscribes to device disconnection events. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceDisconnect' | Yes | Event type. The value is fixed at **deviceDisconnect**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | Callback invoked when a device is unselected from the device list provided by the device selection module. This callback returns the device ID. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Callback invoked when a device is unselected from the device list provided by the device selection module. This callback returns the device ID. |
 
 **Example**
 

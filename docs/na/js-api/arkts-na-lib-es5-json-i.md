@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface JSON--><!--Device-unnamed-interface JSON-End-->
 
+<a id="parse"></a>
 ## parse
 
 ```TypeScript
@@ -17,7 +18,7 @@ Converts a JavaScript Object Notation (JSON) string into an object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | text | string | Yes |  |
-| reviver | (this: any, key: string, value: any) => any | No |  |
+| reviver | (this: any, key: string, value: any) =&gt; any | No |  |
 
 **Return value:**
 
@@ -25,6 +26,7 @@ Converts a JavaScript Object Notation (JSON) string into an object.
 | --- | --- |
 | any |  |
 
+<a id="stringify"></a>
 ## stringify
 
 ```TypeScript
@@ -40,7 +42,7 @@ Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | any | Yes |  |
-| replacer | (this: any, key: string, value: any) => any | No |  |
+| replacer | (this: any, key: string, value: any) =&gt; any | No |  |
 | space | string \| number | No |  |
 
 **Return value:**
@@ -49,6 +51,7 @@ Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
 | --- | --- |
 | string |  |
 
+<a id="stringify-1"></a>
 ## stringify
 
 ```TypeScript

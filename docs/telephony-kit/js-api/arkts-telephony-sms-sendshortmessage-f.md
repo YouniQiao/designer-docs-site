@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="sendshortmessage"></a>
 ## sendShortMessage
 
 ```TypeScript
@@ -29,7 +30,7 @@ Sends a text or data SMS message.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [SendMessageOptions](../../apis-arkui/arkts-apis/arkts-arkui-featureability-sendmessageoptions-i.md) | Yes | Indicates the parameters and callback for sending the SMS message. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of sendShortMessage. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of sendShortMessage. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ sms.sendShortMessage(options, (err: BusinessError) => {
 ```
 
 
+<a id="sendshortmessage-1"></a>
 ## sendShortMessage
 
 ```TypeScript
@@ -98,7 +100,7 @@ Sends a text or data SMS message.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the sendShortMessage. |
+| Promise&lt;void&gt; | The promise returned by the sendShortMessage. |
 
 **Error codes:**
 

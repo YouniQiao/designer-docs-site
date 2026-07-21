@@ -14,6 +14,7 @@ Ad request callback.
 import { RespCallback } from '@kit.AdsKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -32,5 +33,5 @@ Data in the ad request callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| respData | [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<string, Array<advertising.Advertisement>> | Yes | Callback data of ad requests.It is a mapping collection that takes ad unit ID as the key and stores acquired ad content. |
+| respData | Map&lt;string, Array&lt;advertising.Advertisement&gt;&gt; | Yes | Callback data of ad requests.It is a mapping collection that takes ad unit ID as the key and stores acquired ad content. |
 

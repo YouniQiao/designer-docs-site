@@ -14,6 +14,7 @@ A Caller UIAbility can use the [startAbilityByCall](arkts-ability-uiabilityconte
 import { Callee, Caller, OnReleaseCallback, OnRemoteStateChangeCallback, CalleeCallback } from '@kit.AbilityKit';
 ```
 
+<a id="call"></a>
 ## call
 
 ```TypeScript
@@ -41,7 +42,7 @@ Used by a Caller UIAbility to send serialized data, as agreed upon by both parti
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -111,6 +112,7 @@ export default class MainUIAbility extends UIAbility {
 
 ```
 
+<a id="callwithresult"></a>
 ## callWithResult
 
 ```TypeScript
@@ -138,7 +140,7 @@ Used by a Caller UIAbility to send serialized data to a Callee UIAbility and ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<rpc.MessageSequence> | Promise used to return the response data from the Callee UIAbility. |
+| Promise&lt;rpc.MessageSequence&gt; | Promise used to return the response data from the Callee UIAbility. |
 
 **Error codes:**
 
@@ -211,6 +213,7 @@ export default class MainUIAbility extends UIAbility {
 
 ```
 
+<a id="off"></a>
 ## off('release')
 
 ```TypeScript
@@ -272,6 +275,7 @@ export default class MainUIAbility extends UIAbility {
 
 ```
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -334,6 +338,7 @@ export default class MainUIAbility extends UIAbility {
 
 ```
 
+<a id="on"></a>
 ## on('release')
 
 ```TypeScript
@@ -395,6 +400,7 @@ export default class MainUIAbility extends UIAbility {
 
 ```
 
+<a id="onrelease"></a>
 ## onRelease
 
 ```TypeScript
@@ -454,6 +460,7 @@ export default class MainUIAbility extends UIAbility {
 
 ```
 
+<a id="onremotestatechange"></a>
 ## onRemoteStateChange
 
 ```TypeScript
@@ -514,6 +521,7 @@ export default class MainAbility extends UIAbility {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript

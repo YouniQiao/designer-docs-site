@@ -14,6 +14,7 @@ Double-ended queue (deque) is a sequence container implemented based on the queu
 import { Deque } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -78,6 +79,7 @@ Output: 4
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -107,6 +109,7 @@ let deque = new Deque<string | number | boolean | Object>();
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -127,8 +130,8 @@ Uses a callback to traverse each element in the **Deque** instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, deque?: Deque<T>) => void | Yes | Callback invoked to traverse the elements in the Deque. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, deque?: Deque&lt;T&gt;) =&gt; void | Yes | Callback invoked to traverse the elements in the Deque. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -156,6 +159,7 @@ Output: value:1 index:0
 
 ```
 
+<a id="getfirst"></a>
 ## getFirst
 
 ```TypeScript
@@ -183,7 +187,7 @@ Obtains the first element of this Deque.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getFirst method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -198,6 +202,7 @@ console.info("result:", result);  // result: 4
 
 ```
 
+<a id="getlast"></a>
 ## getLast
 
 ```TypeScript
@@ -225,7 +230,7 @@ Obtains the last element of this Deque.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getLast method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -240,6 +245,7 @@ console.info("result:", result);  // result: 2
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -284,6 +290,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="insertend"></a>
 ## insertEnd
 
 ```TypeScript
@@ -332,6 +339,7 @@ console.info("result:", deque[0]);  // result: a
 
 ```
 
+<a id="insertfront"></a>
 ## insertFront
 
 ```TypeScript
@@ -380,6 +388,7 @@ console.info("result:", deque[0]);  // result: false
 
 ```
 
+<a id="popfirst"></a>
 ## popFirst
 
 ```TypeScript
@@ -407,7 +416,7 @@ Removes the first element of this Deque.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The popFirst method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -423,6 +432,7 @@ console.info("result:", result);  // result: 4
 
 ```
 
+<a id="poplast"></a>
 ## popLast
 
 ```TypeScript
@@ -450,7 +460,7 @@ Removes the last element of this Deque.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The popLast method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

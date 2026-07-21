@@ -6,6 +6,7 @@
 import { commonEventManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="removestickycommonevent"></a>
 ## removeStickyCommonEvent
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes a sticky common event. This API uses an asynchronous callback to return 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | string | Yes | Sticky common event to remove. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ commonEventManager.removeStickyCommonEvent('sticky_event', (err: BusinessError) 
 ```
 
 
+<a id="removestickycommonevent-1"></a>
 ## removeStickyCommonEvent
 
 ```TypeScript
@@ -86,7 +88,7 @@ Removes a sticky common event. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -20,6 +20,7 @@ Before calling any API in AudioVolumeGroupManager, you must use [getVolumeGroupM
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="getmaxamplitudeforinputdevice"></a>
 ## getMaxAmplitudeForInputDevice
 
 ```TypeScript
@@ -44,7 +45,7 @@ Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the maximum amplitude, which is in the range [0, 1]. |
+| Promise&lt;number&gt; | Promise used to return the maximum amplitude, which is in the range [0, 1]. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an i
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by promise. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | System error. Return by promise. |
 
+<a id="getmaxamplitudeforoutputdevice"></a>
 ## getMaxAmplitudeForOutputDevice
 
 ```TypeScript
@@ -78,7 +80,7 @@ Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an o
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the maximum amplitude, which is in the range [0, 1]. |
+| Promise&lt;number&gt; | Promise used to return the maximum amplitude, which is in the range [0, 1]. |
 
 **Error codes:**
 
@@ -88,6 +90,7 @@ Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an o
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by promise. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | System error. Return by promise. |
 
+<a id="getmaxvolume"></a>
 ## getMaxVolume
 
 ```TypeScript
@@ -111,8 +114,9 @@ Obtains the maximum volume level of a stream. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | volumeType | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e.md) | Yes | Audio volume type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the maximum stream volume level obtained; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the maximum stream volume level obtained; otherwise, **err** is an error object. |
 
+<a id="getmaxvolume-1"></a>
 ## getMaxVolume
 
 ```TypeScript
@@ -141,8 +145,9 @@ Obtains the maximum volume level of a stream. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the maximum volume level. |
+| Promise&lt;number&gt; | Promise used to return the maximum volume level. |
 
+<a id="getmaxvolumesync"></a>
 ## getMaxVolumeSync
 
 ```TypeScript
@@ -180,6 +185,7 @@ Obtains the maximum volume level of a stream. This API returns the result synchr
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="getminvolume"></a>
 ## getMinVolume
 
 ```TypeScript
@@ -203,8 +209,9 @@ Obtains the minimum volume level of a stream. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | volumeType | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e.md) | Yes | Audio volume type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the minimum stream volume level obtained; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the minimum stream volume level obtained; otherwise, **err** is an error object. |
 
+<a id="getminvolume-1"></a>
 ## getMinVolume
 
 ```TypeScript
@@ -233,8 +240,9 @@ Obtains the minimum volume level of a stream. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the minimum volume level. |
+| Promise&lt;number&gt; | Promise used to return the minimum volume level. |
 
+<a id="getminvolumesync"></a>
 ## getMinVolumeSync
 
 ```TypeScript
@@ -272,6 +280,7 @@ Obtains the minimum volume level of a stream. This API returns the result synchr
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="getringermode"></a>
 ## getRingerMode
 
 ```TypeScript
@@ -290,8 +299,9 @@ Obtains the ringer mode. This API uses an asynchronous callback to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AudioRingMode> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the ringer mode obtained; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AudioRingMode&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the ringer mode obtained; otherwise, **err** is an error object. |
 
+<a id="getringermode-1"></a>
 ## getRingerMode
 
 ```TypeScript
@@ -310,8 +320,9 @@ Obtains the ringer mode. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioRingMode> | Promise used to return the ringer mode. |
+| Promise&lt;AudioRingMode&gt; | Promise used to return the ringer mode. |
 
+<a id="getringermodesync"></a>
 ## getRingerModeSync
 
 ```TypeScript
@@ -332,6 +343,7 @@ Obtains the ringer mode. This API returns the result synchronously.
 | --- | --- |
 | [AudioRingMode](arkts-audio-audio-audioringmode-e.md) | Ringer mode. |
 
+<a id="getsystemvolumeindb"></a>
 ## getSystemVolumeInDb
 
 ```TypeScript
@@ -357,7 +369,7 @@ Obtains the volume gain. This API uses an asynchronous callback to return the re
 | volumeType | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e.md) | Yes | Audio volume type. |
 | volumeLevel | number | Yes | Volume level. |
 | device | [DeviceType](../../apis-localization-kit/arkts-apis/arkts-localization-resourcemanager-devicetype-e.md) | Yes | Device type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the volume gain obtained; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the volume gain obtained; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -367,6 +379,7 @@ Obtains the volume gain. This API uses an asynchronous callback to return the re
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by callback. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | System error. Return by callback. |
 
+<a id="getsystemvolumeindb-1"></a>
 ## getSystemVolumeInDb
 
 ```TypeScript
@@ -397,7 +410,7 @@ Obtains the volume gain. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the volume gain (in dB). |
+| Promise&lt;number&gt; | Promise used to return the volume gain (in dB). |
 
 **Error codes:**
 
@@ -407,6 +420,7 @@ Obtains the volume gain. This API uses a promise to return the result.
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by promise. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | System error. Return by promise. |
 
+<a id="getsystemvolumeindbsync"></a>
 ## getSystemVolumeInDbSync
 
 ```TypeScript
@@ -446,6 +460,7 @@ Obtains the volume gain. This API returns the result synchronously.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="getvolume"></a>
 ## getVolume
 
 ```TypeScript
@@ -469,8 +484,9 @@ Obtains the volume level of a stream. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | volumeType | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e.md) | Yes | Audio volume type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the stream volume level obtained; otherwise, **err** is an error object. The volume range of a specified stream can be obtained by calling [getMinVolume](arkts-audio-audio-audiovolumegroupmanager-i.md#getminvolume-1)and [getMaxVolume](arkts-audio-audio-audiovolumegroupmanager-i.md#getmaxvolume-1). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the stream volume level obtained; otherwise, **err** is an error object. The volume range of a specified stream can be obtained by calling [getMinVolume](arkts-audio-audio-audiovolumegroupmanager-i.md#getminvolume-1)and [getMaxVolume](arkts-audio-audio-audiovolumegroupmanager-i.md#getmaxvolume-1). |
 
+<a id="getvolume-1"></a>
 ## getVolume
 
 ```TypeScript
@@ -499,8 +515,9 @@ Obtains the volume level of a stream. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the stream volume level. The volume range of a specified stream can be obtained by calling [getMinVolume](arkts-audio-audio-audiovolumegroupmanager-i.md#getminvolume-1)and [getMaxVolume](arkts-audio-audio-audiovolumegroupmanager-i.md#getmaxvolume-1). |
+| Promise&lt;number&gt; | Promise used to return the stream volume level. The volume range of a specified stream can be obtained by calling [getMinVolume](arkts-audio-audio-audiovolumegroupmanager-i.md#getminvolume-1)and [getMaxVolume](arkts-audio-audio-audiovolumegroupmanager-i.md#getmaxvolume-1). |
 
+<a id="getvolumesync"></a>
 ## getVolumeSync
 
 ```TypeScript
@@ -538,6 +555,7 @@ Obtains the volume level of a stream. This API returns the result synchronously.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="ismicrophonemute"></a>
 ## isMicrophoneMute
 
 ```TypeScript
@@ -556,8 +574,9 @@ Checks whether the microphone is muted. This API uses an asynchronous callback t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true** if the microphone is muted or **false** if not muted;otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true** if the microphone is muted or **false** if not muted;otherwise, **err** is an error object. |
 
+<a id="ismicrophonemute-1"></a>
 ## isMicrophoneMute
 
 ```TypeScript
@@ -576,8 +595,9 @@ Checks whether the microphone is muted. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result, indicating whether the microphone is muted.**true** if muted, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result, indicating whether the microphone is muted.**true** if muted, **false** otherwise. |
 
+<a id="ismicrophonemutesync"></a>
 ## isMicrophoneMuteSync
 
 ```TypeScript
@@ -598,6 +618,7 @@ Checks whether the microphone is muted. This API returns the result synchronousl
 | --- | --- |
 | boolean | Check result for whether the microphone is muted. **true** if muted, **false** otherwise. |
 
+<a id="ismute"></a>
 ## isMute
 
 ```TypeScript
@@ -621,8 +642,9 @@ Checks whether a stream is muted. This API uses an asynchronous callback to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | volumeType | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e.md) | Yes | Audio volume type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true** if the stream is muted or **false** if not muted; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true** if the stream is muted or **false** if not muted; otherwise, **err** is an error object. |
 
+<a id="ismute-1"></a>
 ## isMute
 
 ```TypeScript
@@ -651,8 +673,9 @@ Checks whether a stream is muted. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result, indicating whether the stream is muted. **true** if muted, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result, indicating whether the stream is muted. **true** if muted, **false** otherwise. |
 
+<a id="ismutesync"></a>
 ## isMuteSync
 
 ```TypeScript
@@ -690,6 +713,7 @@ Checks whether a stream is muted. This API returns the result synchronously.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="isvolumeunadjustable"></a>
 ## isVolumeUnadjustable
 
 ```TypeScript
@@ -710,6 +734,7 @@ Checks whether the fixed volume mode is enabled. When the fixed volume mode is e
 | --- | --- |
 | boolean | Check result for whether the fixed volume mode is enabled. **true** if enabled, **false** otherwise. |
 
+<a id="off"></a>
 ## off('ringerModeChange')
 
 ```TypeScript
@@ -729,7 +754,7 @@ Unsubscribes from the ringer mode change event. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'ringerModeChange' | Yes | Event type. The event **'ringerModeChange'** is triggered when the ringer mode is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioRingMode> | No | Callback used to return the changed ringer mode. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioRingMode&gt; | No | Callback used to return the changed ringer mode. |
 
 **Error codes:**
 
@@ -737,6 +762,7 @@ Unsubscribes from the ringer mode change event. This API uses an asynchronous ca
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="off-1"></a>
 ## off('micStateChange')
 
 ```TypeScript
@@ -756,7 +782,7 @@ Unsubscribes from the microphone state change event. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'micStateChange' | Yes | Event type. The event **'micStateChange'** is triggered when the microphone state is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MicStateChangeEvent> | No | Callback used to return the changed microphone state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MicStateChangeEvent&gt; | No | Callback used to return the changed microphone state. |
 
 **Error codes:**
 
@@ -765,6 +791,7 @@ Unsubscribes from the microphone state change event. This API uses an asynchrono
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters missing;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on"></a>
 ## on('ringerModeChange')
 
 ```TypeScript
@@ -784,7 +811,7 @@ Subscribes to the ringer mode change event, which is triggered when the [AudioRi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'ringerModeChange' | Yes | Event type. The event **'ringerModeChange'** is triggered when the ringer mode is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioRingMode> | Yes | Callback used to return the changed ringer mode. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioRingMode&gt; | Yes | Callback used to return the changed ringer mode. |
 
 **Error codes:**
 
@@ -793,6 +820,7 @@ Subscribes to the ringer mode change event, which is triggered when the [AudioRi
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on-1"></a>
 ## on('micStateChange')
 
 ```TypeScript
@@ -814,7 +842,7 @@ Currently, when multiple AudioManager instances are used in a single process, on
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'micStateChange' | Yes | Event type. The event **'micStateChange'** is triggered when the microphone state is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MicStateChangeEvent> | Yes | Callback used to return the changed microphone state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MicStateChangeEvent&gt; | Yes | Callback used to return the changed microphone state. |
 
 **Error codes:**
 
@@ -823,6 +851,7 @@ Currently, when multiple AudioManager instances are used in a single process, on
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="setmicrophonemute"></a>
 ## setMicrophoneMute
 
 ```TypeScript
@@ -846,8 +875,9 @@ Mutes or unmutes the microphone. This method uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mute | boolean | Yes | Mute status to set. The value true means to mute the microphone, and false means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="setmicrophonemute-1"></a>
 ## setMicrophoneMute
 
 ```TypeScript
@@ -876,5 +906,5 @@ Mutes or unmutes the microphone. This method uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 

@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="sendevent"></a>
 ## sendEvent
 
 ```TypeScript
@@ -18,7 +19,7 @@ Sends an accessibility event. This API uses an asynchronous callback to return t
 
 **Deprecated since:** 9
 
-**Substitutes:** sendAccessibilityEvent(event:
+**Substitutes:** [sendAccessibilityEvent(event:](arkts-accessibility-accessibility-sendaccessibilityevent-f.md#sendaccessibilityevent-1)
 
 <!--Device-accessibility-function sendEvent(event: EventInfo, callback: AsyncCallback<void>): void--><!--Device-accessibility-function sendEvent(event: EventInfo, callback: AsyncCallback<void>): void-End-->
 
@@ -29,7 +30,7 @@ Sends an accessibility event. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | [EventInfo](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-update-eventinfo-i-sys.md) | Yes | Accessibility event. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation fails, **err** that contains data is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation fails, **err** that contains data is returned. |
 
 **Example**
 
@@ -54,6 +55,7 @@ accessibility.sendEvent(eventInfo, (err: BusinessError) => {
 ```
 
 
+<a id="sendevent-1"></a>
 ## sendEvent
 
 ```TypeScript
@@ -66,7 +68,7 @@ Sends an accessibility event. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** sendAccessibilityEvent(event:
+**Substitutes:** [sendAccessibilityEvent(event:](arkts-accessibility-accessibility-sendaccessibilityevent-f.md#sendaccessibilityevent-1)
 
 <!--Device-accessibility-function sendEvent(event: EventInfo): Promise<void>--><!--Device-accessibility-function sendEvent(event: EventInfo): Promise<void>-End-->
 
@@ -82,7 +84,7 @@ Sends an accessibility event. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

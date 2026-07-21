@@ -35,5 +35,5 @@ The type of control command.
 | 'answer' | Answer an incoming call. [since 11] |
 | 'hangUp' | Hang up the current call. [since 11] |
 | 'toggleCallMute' | Toggle the mute status of the call. [since 11] |
-| 'setTargetLoopMode' | Set the target loop mode. [since 18]* |
+| 'setTargetLoopMode' | Set the target loop mode. [since 18] * |
 

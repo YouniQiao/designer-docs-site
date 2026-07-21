@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="setpreferredapn"></a>
 ## setPreferredApn
 
 ```TypeScript
@@ -32,7 +33,7 @@ Set preferred APN.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if preferred APN set success; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if preferred APN set success; returns {@code false} otherwise. |
 
 **Error codes:**
 

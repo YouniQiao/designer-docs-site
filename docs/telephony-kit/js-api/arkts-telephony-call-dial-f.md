@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="dial"></a>
 ## dial
 
 ```TypeScript
@@ -32,7 +33,7 @@ Makes a call.
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the called number. |
 | options | [DialOptions](arkts-telephony-call-dialoptions-i.md) | Yes | Indicates additional information carried in the call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for getting the result of the call.Returns {@code true} if the call request is successful; returns {@code false} otherwise.Note that the value {@code true} indicates only the successful processing of the request; it does not mean that the call is or can be connected. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for getting the result of the call.Returns {@code true} if the call request is successful; returns {@code false} otherwise.Note that the value {@code true} indicates only the successful processing of the request; it does not mean that the call is or can be connected. |
 
 **Example**
 
@@ -49,6 +50,7 @@ call.dial("138xxxxxxxx", dialOptions, (err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="dial-1"></a>
 ## dial
 
 ```TypeScript
@@ -80,7 +82,7 @@ Makes a call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns the result of the call.Returns {@code true} if the call request is successful; returns {@code false} otherwise.Note that the value {@code true} indicates only the successful processing of the request; it does not mean that the call is or can be connected. |
+| Promise&lt;boolean&gt; | Returns the result of the call.Returns {@code true} if the call request is successful; returns {@code false} otherwise.Note that the value {@code true} indicates only the successful processing of the request; it does not mean that the call is or can be connected. |
 
 **Example**
 
@@ -99,6 +101,7 @@ call.dial("138xxxxxxxx", dialOptions).then((data: boolean) => {
 ```
 
 
+<a id="dial-2"></a>
 ## dial
 
 ```TypeScript
@@ -124,7 +127,7 @@ Makes a call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the called number. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for getting the result of the call.Returns {@code true} if the call request is successful; returns {@code false} otherwise.Note that the value {@code true} indicates only the successful processing of the request; it does not mean that the call is or can be connected. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for getting the result of the call.Returns {@code true} if the call request is successful; returns {@code false} otherwise.Note that the value {@code true} indicates only the successful processing of the request; it does not mean that the call is or can be connected. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
+<a id="getsecuritystatus"></a>
 ## getSecurityStatus
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the security status of the current device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| item | string | Yes | Type of the security status to obtain.<br>- **patch**: device security patch.<br>-**encryption**: device file system encryption.&lt;!--RP1--&gt;&lt;!--RP1End--&gt; |
+| item | string | Yes | Type of the security status to obtain.<br>- **patch**: device security patch.<br>-**encryption**: device file system encryption.<!--RP1--><!--RP1End--> |
 
 **Return value:**
 

@@ -14,6 +14,7 @@ Defines a TLSSocket connection.
 import { socket } from '@kit.NetworkKit';
 ```
 
+<a id="bind"></a>
 ## bind
 
 ```TypeScript
@@ -35,7 +36,7 @@ Binds the IP address and port number. The port number can be specified or random
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | address | [NetAddress](arkts-network-connection-netaddress-i.md) | Yes | Destination address. {@link NetAddress} |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of bind. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of bind. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ tls.bind(bindAddr, (err: BusinessError) => {
 
 ```
 
+<a id="bind-1"></a>
 ## bind
 
 ```TypeScript
@@ -93,7 +95,7 @@ Binds the IP address and port number. The port number can be specified or random
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -123,6 +125,7 @@ tls.bind(bindAddr).then(() => {
 
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -141,7 +144,7 @@ Closes a TLSSocket connection
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of close. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of close. |
 
 **Error codes:**
 
@@ -170,6 +173,7 @@ tls.close((err: BusinessError) => {
 
 ```
 
+<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -188,7 +192,7 @@ Closes a TLSSocket connection
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -215,6 +219,7 @@ tls.close().then(() => {
 
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -234,7 +239,7 @@ Sets up a connection to the specified IP address and port number.Only TCP is sup
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [TLSConnectOptions](arkts-network-socket-tlsconnectoptions-i.md) | Yes | Optional parameters {@link TLSConnectOptions}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of connect. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of connect. |
 
 **Error codes:**
 
@@ -418,6 +423,7 @@ tlsOneWay.connect(tlsOneWayConnectOptions, (err: BusinessError) => {
 
 ```
 
+<a id="connect-1"></a>
 ## connect
 
 ```TypeScript
@@ -442,7 +448,7 @@ Sets up a connection to the specified IP address and port number.Only TCP is sup
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -634,6 +640,7 @@ tlsOneWay.connect(tlsOneWayConnectOptions).then(() => {
 
 ```
 
+<a id="getcertificate"></a>
 ## getCertificate
 
 ```TypeScript
@@ -652,7 +659,7 @@ Returns an object representing a local certificate.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<X509CertRawData> | Yes | the callback of getCertificate. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;X509CertRawData&gt; | Yes | the callback of getCertificate. |
 
 **Error codes:**
 
@@ -662,6 +669,7 @@ Returns an object representing a local certificate.
 | [2303504](../errorcode-net-socket.md#2303504-x509-failed-to-look-up-the-x509-certificate) | An error occurred when verifying the X.509 certificate. |
 | [2300002](../errorcode-net-socket.md#2300002-system-internal-error) | System internal error. |
 
+<a id="getcertificate-1"></a>
 ## getCertificate
 
 ```TypeScript
@@ -680,7 +688,7 @@ Returns an object representing a local certificate.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<X509CertRawData> | The promise returned by the function. |
+| Promise&lt;X509CertRawData&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -690,6 +698,7 @@ Returns an object representing a local certificate.
 | [2303504](../errorcode-net-socket.md#2303504-x509-failed-to-look-up-the-x509-certificate) | An error occurred when verifying the X.509 certificate. |
 | [2300002](../errorcode-net-socket.md#2300002-system-internal-error) | System internal error. |
 
+<a id="getciphersuite"></a>
 ## getCipherSuite
 
 ```TypeScript
@@ -708,7 +717,7 @@ Returns a list containing the negotiated cipher suite information.For example:{"
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | the callback of getCipherSuite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | the callback of getCipherSuite. |
 
 **Error codes:**
 
@@ -736,6 +745,7 @@ tls.getCipherSuite((err: BusinessError, data: Array<string>) => {
 
 ```
 
+<a id="getciphersuite-1"></a>
 ## getCipherSuite
 
 ```TypeScript
@@ -754,7 +764,7 @@ Returns a list containing the negotiated cipher suite information.For example:{"
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | The promise returned by the function. |
+| Promise&lt;Array&lt;string&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -780,6 +790,7 @@ tls.getCipherSuite().then((data: Array<string>) => {
 
 ```
 
+<a id="getlocaladdress"></a>
 ## getLocalAddress
 
 ```TypeScript
@@ -798,7 +809,7 @@ Obtains the local address of a TLSSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetAddress> | The promise returned by the function. |
+| Promise&lt;NetAddress&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -823,6 +834,7 @@ tls.getLocalAddress().then((localAddress: socket.NetAddress) => {
 
 ```
 
+<a id="getprotocol"></a>
 ## getProtocol
 
 ```TypeScript
@@ -841,7 +853,7 @@ Returns a string containing the negotiated SSL/TLS protocol version of the curre
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | the callback of getProtocol. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | the callback of getProtocol. |
 
 **Error codes:**
 
@@ -868,6 +880,7 @@ tls.getProtocol((err: BusinessError, data: string) => {
 
 ```
 
+<a id="getprotocol-1"></a>
 ## getProtocol
 
 ```TypeScript
@@ -886,7 +899,7 @@ Returns a string containing the negotiated SSL/TLS protocol version of the curre
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | The promise returned by the function. |
+| Promise&lt;string&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -911,6 +924,7 @@ tls.getProtocol().then((data: string) => {
 
 ```
 
+<a id="getremoteaddress"></a>
 ## getRemoteAddress
 
 ```TypeScript
@@ -929,7 +943,7 @@ Obtains the peer address of a TLSSocket connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetAddress> | Yes | the callback of getRemoteAddress. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetAddress&gt; | Yes | the callback of getRemoteAddress. |
 
 **Error codes:**
 
@@ -955,6 +969,7 @@ tls.getRemoteAddress((err: BusinessError, data: socket.NetAddress) => {
 
 ```
 
+<a id="getremoteaddress-1"></a>
 ## getRemoteAddress
 
 ```TypeScript
@@ -973,7 +988,7 @@ Obtains the peer address of a TLSSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetAddress> | The promise returned by the function. |
+| Promise&lt;NetAddress&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -997,6 +1012,7 @@ tls.getRemoteAddress().then(() => {
 
 ```
 
+<a id="getremotecertificate"></a>
 ## getRemoteCertificate
 
 ```TypeScript
@@ -1015,7 +1031,7 @@ getRemoteCertificate(callback: AsyncCallback<X509CertRawData>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<X509CertRawData> | Yes | the callback of getRemoteCertificate. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;X509CertRawData&gt; | Yes | the callback of getRemoteCertificate. |
 
 **Error codes:**
 
@@ -1024,6 +1040,7 @@ getRemoteCertificate(callback: AsyncCallback<X509CertRawData>): void
 | [2303501](../errorcode-net-socket.md#2303501-null-ssl) | SSL is null. |
 | [2300002](../errorcode-net-socket.md#2300002-system-internal-error) | System internal error. |
 
+<a id="getremotecertificate-1"></a>
 ## getRemoteCertificate
 
 ```TypeScript
@@ -1042,7 +1059,7 @@ getRemoteCertificate(): Promise<X509CertRawData>
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<X509CertRawData> | The promise returned by the function. |
+| Promise&lt;X509CertRawData&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -1051,6 +1068,7 @@ getRemoteCertificate(): Promise<X509CertRawData>
 | [2303501](../errorcode-net-socket.md#2303501-null-ssl) | SSL is null. |
 | [2300002](../errorcode-net-socket.md#2300002-system-internal-error) | System internal error. |
 
+<a id="getsignaturealgorithms"></a>
 ## getSignatureAlgorithms
 
 ```TypeScript
@@ -1069,7 +1087,7 @@ getSignatureAlgorithms(callback: AsyncCallback<Array<string>>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | the callback of getSignatureAlgorithms.@see https://www.openssl.org/docs/man1.1.1/man3/SSL_get_shared_sigalgs.html |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | the callback of getSignatureAlgorithms.@see https://www.openssl.org/docs/man1.1.1/man3/SSL_get_shared_sigalgs.html |
 
 **Error codes:**
 
@@ -1095,6 +1113,7 @@ tls.getSignatureAlgorithms((err: BusinessError, data: Array<string>) => {
 
 ```
 
+<a id="getsignaturealgorithms-1"></a>
 ## getSignatureAlgorithms
 
 ```TypeScript
@@ -1113,7 +1132,7 @@ getSignatureAlgorithms(): Promise<Array<string>>
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | The promise returned by the function.@see https://www.openssl.org/docs/man1.1.1/man3/SSL_get_shared_sigalgs.html |
+| Promise&lt;Array&lt;string&gt;&gt; | The promise returned by the function.@see https://www.openssl.org/docs/man1.1.1/man3/SSL_get_shared_sigalgs.html |
 
 **Error codes:**
 
@@ -1137,6 +1156,7 @@ tls.getSignatureAlgorithms().then((data: Array<string>) => {
 
 ```
 
+<a id="getsocketfd"></a>
 ## getSocketFd
 
 ```TypeScript
@@ -1155,7 +1175,7 @@ Obtains the file descriptor of the TLSSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returns the file descriptor of the TLSSocket connection. |
+| Promise&lt;number&gt; | The promise returns the file descriptor of the TLSSocket connection. |
 
 **Example**
 
@@ -1180,6 +1200,7 @@ tls.getSocketFd().then((data: number) => {
 
 ```
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript
@@ -1198,7 +1219,7 @@ Obtains the status of the TLSSocket connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SocketStateBase> | Yes | the callback of getState. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SocketStateBase&gt; | Yes | the callback of getState. |
 
 **Error codes:**
 
@@ -1235,6 +1256,7 @@ tls.getState((err: BusinessError, data: socket.SocketStateBase) => {
 
 ```
 
+<a id="getstate-1"></a>
 ## getState
 
 ```TypeScript
@@ -1253,7 +1275,7 @@ Obtains the status of the TLSSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SocketStateBase> | The promise returned by the function. |
+| Promise&lt;SocketStateBase&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -1288,6 +1310,7 @@ tls.getState().then(() => {
 
 ```
 
+<a id="off"></a>
 ## off('message')
 
 ```TypeScript
@@ -1307,7 +1330,7 @@ Cancels listening for message receiving events of the TLSSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SocketMessageInfo> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SocketMessageInfo&gt; | No | the callback used to return the result. |
 
 **Error codes:**
 
@@ -1339,6 +1362,7 @@ tls.off('message', callback);
 
 ```
 
+<a id="off-1"></a>
 ## off('connect' | 'close')
 
 ```TypeScript
@@ -1358,7 +1382,7 @@ Cancels listening for connection or close events of the TLSSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' \| 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | the callback used to return the result. |
 
 **Error codes:**
 
@@ -1389,6 +1413,7 @@ tls.off('close', callback2);
 
 ```
 
+<a id="off-2"></a>
 ## off('connect' | 'close')
 
 ```TypeScript
@@ -1408,7 +1433,7 @@ Cancels listening for connection or close events of the TLSSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' \| 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | the callback used to return the result. |
 
 **Error codes:**
 
@@ -1439,6 +1464,7 @@ tls.off('close', callback2);
 
 ```
 
+<a id="off-3"></a>
 ## off('error')
 
 ```TypeScript
@@ -1482,6 +1508,7 @@ tls.off('error', callback);
 
 ```
 
+<a id="on"></a>
 ## on('message')
 
 ```TypeScript
@@ -1501,7 +1528,7 @@ Listens for message receiving events of the TLSSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SocketMessageInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SocketMessageInfo&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -1541,6 +1568,7 @@ tls.bind(bindAddr, (err: BusinessError) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('connect' | 'close')
 
 ```TypeScript
@@ -1560,7 +1588,7 @@ Listens for connection or close events of the TLSSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' \| 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -1595,6 +1623,7 @@ tls.bind(bindAddr, (err: BusinessError) => {
 
 ```
 
+<a id="on-2"></a>
 ## on('connect' | 'close')
 
 ```TypeScript
@@ -1614,7 +1643,7 @@ Listens for connection or close events of the TLSSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' \| 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -1649,6 +1678,7 @@ tls.bind(bindAddr, (err: BusinessError) => {
 
 ```
 
+<a id="on-3"></a>
 ## on('error')
 
 ```TypeScript
@@ -1700,6 +1730,7 @@ tls.bind(bindAddr, (err: BusinessError) => {
 
 ```
 
+<a id="send"></a>
 ## send
 
 ```TypeScript
@@ -1719,7 +1750,7 @@ Sends data over a TLSSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | string \| ArrayBuffer | Yes | Parameters for sending data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of send. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of send. |
 
 **Error codes:**
 
@@ -1749,6 +1780,7 @@ tls.send("xxxx", (err: BusinessError) => {
 
 ```
 
+<a id="send-1"></a>
 ## send
 
 ```TypeScript
@@ -1773,7 +1805,7 @@ Sends data over a TLSSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -1801,6 +1833,7 @@ tls.send("xxxx").then(() => {
 
 ```
 
+<a id="setextraoptions"></a>
 ## setExtraOptions
 
 ```TypeScript
@@ -1820,7 +1853,7 @@ Sets other attributes of the TLSSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [TCPExtraOptions](arkts-network-socket-tcpextraoptions-i.md) | Yes | Optional parameters {@link TCPExtraOptions}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setExtraOptions. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setExtraOptions. |
 
 **Error codes:**
 
@@ -1875,6 +1908,7 @@ tls.setExtraOptions(tcpExtraOptions, (err: BusinessError) => {
 
 ```
 
+<a id="setextraoptions-1"></a>
 ## setExtraOptions
 
 ```TypeScript
@@ -1899,7 +1933,7 @@ Sets other attributes of the TLSSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

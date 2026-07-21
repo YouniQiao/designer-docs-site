@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallpreinstalledapplicationinfo"></a>
 ## getAllPreinstalledApplicationInfo
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains information about all preinstalled applications. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PreinstalledApplicationInfo>> | Promise used to return the array of preinstalled applications obtained. |
+| Promise&lt;Array&lt;PreinstalledApplicationInfo&gt;&gt; | Promise used to return the array of preinstalled applications obtained. |
 
 **Error codes:**
 

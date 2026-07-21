@@ -30,6 +30,7 @@ This upgrade mode applies to offline system upgrade or upgrade with poor network
 import { update } from '@kit.BasicServicesKit';
 ```
 
+<a id="applynewversion"></a>
 ## applyNewVersion
 
 ```TypeScript
@@ -65,8 +66,8 @@ Use scenarios: This method is used to upgrade the system from a local storage de
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| upgradeFiles | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<UpgradeFile> | Yes | An array of upgrade files, which is used to specify the local upgrade files to be installed. You must call **verifyUpgradePackage** to verify the upgrade package and pass the verification before using this parameter to install the upgrade package. The parameter contains the **fileType** and **filePath** fields. The value of **filePath** is a string of 1 to 255 characters. If the value is out of range, an exception is thrown, and you need to provide the path of the upgrade package. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback function used to receive the result of installing the upgrade package. The callback parameter is **err**. If the operation is successful, **err** is **null**; if the operation fails, **err** is an error object. |
+| upgradeFiles | Array&lt;UpgradeFile&gt; | Yes | An array of upgrade files, which is used to specify the local upgrade files to be installed. You must call **verifyUpgradePackage** to verify the upgrade package and pass the verification before using this parameter to install the upgrade package. The parameter contains the **fileType** and **filePath** fields. The value of **filePath** is a string of 1 to 255 characters. If the value is out of range, an exception is thrown, and you need to provide the path of the upgrade package. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback function used to receive the result of installing the upgrade package. The callback parameter is **err**. If the operation is successful, **err** is **null**; if the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -104,6 +105,7 @@ try {
 
 ```
 
+<a id="applynewversion-1"></a>
 ## applyNewVersion
 
 ```TypeScript
@@ -139,13 +141,13 @@ Use scenarios: This method is used to upgrade the system from a local storage de
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| upgradeFiles | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<UpgradeFile> | Yes | An array of upgrade files, which is used to specify the local upgrade files to be installed. You must call **verifyUpgradePackage** to verify the upgrade package and pass the verification before using this parameter to install the upgrade package. The parameter contains the **fileType** and **filePath** fields. The value of **filePath** is a string of 1 to 255 characters. If the value is out of range, an exception is thrown, and you need to provide the path of the upgrade package. |
+| upgradeFiles | Array&lt;UpgradeFile&gt; | Yes | An array of upgrade files, which is used to specify the local upgrade files to be installed. You must call **verifyUpgradePackage** to verify the upgrade package and pass the verification before using this parameter to install the upgrade package. The parameter contains the **fileType** and **filePath** fields. The value of **filePath** is a string of 1 to 255 characters. If the value is out of range, an exception is thrown, and you need to provide the path of the upgrade package. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
+| Promise&lt;void&gt; | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
 
 **Error codes:**
 
@@ -181,6 +183,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -245,6 +248,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -314,6 +318,7 @@ try {
 
 ```
 
+<a id="verifyupgradepackage"></a>
 ## verifyUpgradePackage
 
 ```TypeScript
@@ -355,7 +360,7 @@ The process is as follows: Read the upgrade package and certificate file. Use th
 | --- | --- | --- | --- |
 | upgradeFile | [UpgradeFile](arkts-basicservices-update-upgradefile-i-sys.md) | Yes | Upgrade file, including the file type and file path, which are used to specify the local upgrade package to be verified. |
 | certsFile | string | Yes | Certificate file path, which is used to verify the upgrade package signature. The certificate file must be downloaded from the official website of the vendor to ensure that the source is trusted. The value can be an absolute path or a relative path. The path length ranges from 1 to 255characters. Only letters, digits, underscores (_), hyphens (-), dots (.), and slashes (/) are allowed. An exception is thrown if the value is out of range or contains invalid characters. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to receive the verification result. The callback parameter is **err**. If the operation is successful, **err** is **null**; if the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to receive the verification result. The callback parameter is **err**. If the operation is successful, **err** is **null**; if the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -396,6 +401,7 @@ try {
 
 ```
 
+<a id="verifyupgradepackage-1"></a>
 ## verifyUpgradePackage
 
 ```TypeScript
@@ -438,7 +444,7 @@ The process is as follows: Read the upgrade package and certificate file. Use th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
+| Promise&lt;void&gt; | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
 
 **Error codes:**
 

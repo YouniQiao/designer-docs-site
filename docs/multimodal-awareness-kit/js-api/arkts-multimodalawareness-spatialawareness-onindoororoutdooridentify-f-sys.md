@@ -6,6 +6,7 @@
 import { spatialAwareness } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="onindoororoutdooridentify"></a>
 ## onIndoorOrOutdoorIdentify
 
 ```TypeScript
@@ -34,7 +35,7 @@ Subscribe to the results of indoorand outdoor identification.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | configParams | [DistanceMeasurementConfigParams](arkts-multimodalawareness-spatialawareness-distancemeasurementconfigparams-i-sys.md) | Yes | Configuration parameters for identification inside and<br> outside the door. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DoorPositionResponse> | Yes | Callback for identification inside and outside the door. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DoorPositionResponse&gt; | Yes | Callback for identification inside and outside the door. |
 
 **Error codes:**
 

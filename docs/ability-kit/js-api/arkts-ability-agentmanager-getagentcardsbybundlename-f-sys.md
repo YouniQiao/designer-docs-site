@@ -6,6 +6,7 @@
 import { agentManager } from '@kit.AbilityKit';
 ```
 
+<a id="getagentcardsbybundlename"></a>
 ## getAgentCardsByBundleName
 
 ```TypeScript
@@ -30,13 +31,13 @@ Gets all AgentCards within specified bundleName.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | string | Yes | The bundle name of the AgentCard belongs to. |
+| bundleName | string | Yes | The bundle name the AgentCard belongs to. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AgentCard>> | Returns the array of AgentCard. |
+| Promise&lt;Array&lt;AgentCard&gt;&gt; | Returns the array of AgentCard. |
 
 **Error codes:**
 

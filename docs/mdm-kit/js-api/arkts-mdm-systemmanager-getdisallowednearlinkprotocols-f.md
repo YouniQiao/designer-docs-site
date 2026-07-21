@@ -6,6 +6,7 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
+<a id="getdisallowednearlinkprotocols"></a>
 ## getDisallowedNearLinkProtocols
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the list of disallowed NearLink protocols for a specified user.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<NearLinkProtocol> | List of disallowed NearLink protocols for a specified user. |
+| Array&lt;NearLinkProtocol&gt; | List of disallowed NearLink protocols for a specified user. |
 
 **Error codes:**
 

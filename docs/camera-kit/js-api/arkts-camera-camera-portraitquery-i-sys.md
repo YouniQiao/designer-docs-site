@@ -16,6 +16,7 @@ Queries portrait parameters.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getsupportedportraiteffects"></a>
 ## getSupportedPortraitEffects
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the supported portrait effects.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PortraitEffect> | Array of portrait effects supported. |
+| Array&lt;PortraitEffect&gt; | Array of portrait effects supported. |
 
 **Error codes:**
 

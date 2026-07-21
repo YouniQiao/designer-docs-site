@@ -6,6 +6,7 @@
 import { taskpool } from '@kit.ArkTS';
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -37,6 +38,7 @@ Cancels a task in the task pool. If the task is in the internal queue of the tas
 | [10200055](../errorcode-utils.md#10200055-asynchronous-queue-task-canceled) | The asyncRunner task has been canceled.<br>**Applicable version:** 18 and later |
 
 
+<a id="cancel-1"></a>
 ## cancel
 
 ```TypeScript
@@ -107,6 +109,7 @@ concurrentFunc();
 ```
 
 
+<a id="cancel-2"></a>
 ## cancel
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="getdownloadableprofiles"></a>
 ## getDownloadableProfiles
 
 ```TypeScript
@@ -39,7 +40,7 @@ Gets downloadable profile List which are available for download on this device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GetDownloadableProfilesResult> | Return metadata for downloadableProfile which are available for download on this device. |
+| Promise&lt;GetDownloadableProfilesResult&gt; | Return metadata for downloadableProfile which are available for download on this device. |
 
 **Error codes:**
 

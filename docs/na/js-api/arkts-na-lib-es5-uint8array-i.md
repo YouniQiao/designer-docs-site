@@ -4,6 +4,7 @@ A typed array of 8-bit unsigned integer values. The contents are initialized to 
 
 <!--Device-unnamed-interface Uint8Array--><!--Device-unnamed-interface Uint8Array-End-->
 
+<a id="copywithin"></a>
 ## copyWithin
 
 ```TypeScript
@@ -28,6 +29,7 @@ Returns the this object after copying a section of the array identified by start
 | --- | --- |
 | this |  |
 
+<a id="every"></a>
 ## every
 
 ```TypeScript
@@ -42,7 +44,7 @@ Determines whether all the members of an array satisfy the specified test.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: number, index: number, array: Uint8Array) => unknown | Yes |  |
+| predicate | (value: number, index: number, array: Uint8Array) =&gt; unknown | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -51,6 +53,7 @@ Determines whether all the members of an array satisfy the specified test.
 | --- | --- |
 | boolean |  |
 
+<a id="fill"></a>
 ## fill
 
 ```TypeScript
@@ -75,6 +78,7 @@ Changes all array elements from `start` to `end` index to a static `value` and r
 | --- | --- |
 | this |  |
 
+<a id="filter"></a>
 ## filter
 
 ```TypeScript
@@ -89,15 +93,16 @@ Returns the elements of an array that meet the condition specified in a callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: number, index: number, array: Uint8Array) => any | Yes |  |
+| predicate | (value: number, index: number, array: Uint8Array) =&gt; any | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](arkts-na-lib-es5-uint8array-i.md) |  |
+| Uint8Array |  |
 
+<a id="find"></a>
 ## find
 
 ```TypeScript
@@ -112,7 +117,7 @@ Returns the value of the first element in the array where predicate is true, and
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: number, index: number, obj: Uint8Array) => boolean | Yes |  |
+| predicate | (value: number, index: number, obj: Uint8Array) =&gt; boolean | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -121,6 +126,7 @@ Returns the value of the first element in the array where predicate is true, and
 | --- | --- |
 | number |  |
 
+<a id="findindex"></a>
 ## findIndex
 
 ```TypeScript
@@ -135,7 +141,7 @@ Returns the index of the first element in the array where predicate is true, and
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: number, index: number, obj: Uint8Array) => boolean | Yes |  |
+| predicate | (value: number, index: number, obj: Uint8Array) =&gt; boolean | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -144,6 +150,7 @@ Returns the index of the first element in the array where predicate is true, and
 | --- | --- |
 | number |  |
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -158,9 +165,10 @@ Performs the specified action for each element in an array.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (value: number, index: number, array: Uint8Array) => void | Yes |  |
+| callbackfn | (value: number, index: number, array: Uint8Array) =&gt; void | Yes |  |
 | thisArg | any | No |  |
 
+<a id="indexof"></a>
 ## indexOf
 
 ```TypeScript
@@ -184,6 +192,7 @@ Returns the index of the first occurrence of a value in an array.
 | --- | --- |
 | number |  |
 
+<a id="join"></a>
 ## join
 
 ```TypeScript
@@ -206,6 +215,7 @@ Adds all the elements of an array separated by the specified separator string.
 | --- | --- |
 | string |  |
 
+<a id="lastindexof"></a>
 ## lastIndexOf
 
 ```TypeScript
@@ -229,6 +239,7 @@ Returns the index of the last occurrence of a value in an array.
 | --- | --- |
 | number |  |
 
+<a id="map"></a>
 ## map
 
 ```TypeScript
@@ -243,15 +254,16 @@ Calls a defined callback function on each element of an array, and returns an ar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (value: number, index: number, array: Uint8Array) => number | Yes |  |
+| callbackfn | (value: number, index: number, array: Uint8Array) =&gt; number | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](arkts-na-lib-es5-uint8array-i.md) |  |
+| Uint8Array |  |
 
+<a id="reduce"></a>
 ## reduce
 
 ```TypeScript
@@ -266,7 +278,7 @@ Calls the specified callback function for all the elements in an array. The retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: number, currentValue: number, currentIndex: number, array: Uint8Array) => number | Yes |  |
+| callbackfn | (previousValue: number, currentValue: number, currentIndex: number, array: Uint8Array) =&gt; number | Yes |  |
 
 **Return value:**
 
@@ -274,6 +286,7 @@ Calls the specified callback function for all the elements in an array. The retu
 | --- | --- |
 | number |  |
 
+<a id="reduce-1"></a>
 ## reduce
 
 ```TypeScript
@@ -286,7 +299,7 @@ reduce(callbackfn: (previousValue: number, currentValue: number, currentIndex: n
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: number, currentValue: number, currentIndex: number, array: Uint8Array) => number | Yes |  |
+| callbackfn | (previousValue: number, currentValue: number, currentIndex: number, array: Uint8Array) =&gt; number | Yes |  |
 | initialValue | number | Yes |  |
 
 **Return value:**
@@ -295,6 +308,7 @@ reduce(callbackfn: (previousValue: number, currentValue: number, currentIndex: n
 | --- | --- |
 | number |  |
 
+<a id="reduce-2"></a>
 ## reduce
 
 ```TypeScript
@@ -309,7 +323,7 @@ Calls the specified callback function for all the elements in an array. The retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: U, currentValue: number, currentIndex: number, array: Uint8Array) => U | Yes |  |
+| callbackfn | (previousValue: U, currentValue: number, currentIndex: number, array: Uint8Array) =&gt; U | Yes |  |
 | initialValue | U | Yes |  |
 
 **Return value:**
@@ -318,6 +332,7 @@ Calls the specified callback function for all the elements in an array. The retu
 | --- | --- |
 | U |  |
 
+<a id="reduceright"></a>
 ## reduceRight
 
 ```TypeScript
@@ -332,7 +347,7 @@ Calls the specified callback function for all the elements in an array, in desce
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: number, currentValue: number, currentIndex: number, array: Uint8Array) => number | Yes |  |
+| callbackfn | (previousValue: number, currentValue: number, currentIndex: number, array: Uint8Array) =&gt; number | Yes |  |
 
 **Return value:**
 
@@ -340,6 +355,7 @@ Calls the specified callback function for all the elements in an array, in desce
 | --- | --- |
 | number |  |
 
+<a id="reduceright-1"></a>
 ## reduceRight
 
 ```TypeScript
@@ -352,7 +368,7 @@ reduceRight(callbackfn: (previousValue: number, currentValue: number, currentInd
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: number, currentValue: number, currentIndex: number, array: Uint8Array) => number | Yes |  |
+| callbackfn | (previousValue: number, currentValue: number, currentIndex: number, array: Uint8Array) =&gt; number | Yes |  |
 | initialValue | number | Yes |  |
 
 **Return value:**
@@ -361,6 +377,7 @@ reduceRight(callbackfn: (previousValue: number, currentValue: number, currentInd
 | --- | --- |
 | number |  |
 
+<a id="reduceright-2"></a>
 ## reduceRight
 
 ```TypeScript
@@ -375,7 +392,7 @@ Calls the specified callback function for all the elements in an array, in desce
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: U, currentValue: number, currentIndex: number, array: Uint8Array) => U | Yes |  |
+| callbackfn | (previousValue: U, currentValue: number, currentIndex: number, array: Uint8Array) =&gt; U | Yes |  |
 | initialValue | U | Yes |  |
 
 **Return value:**
@@ -384,6 +401,7 @@ Calls the specified callback function for all the elements in an array, in desce
 | --- | --- |
 | U |  |
 
+<a id="reverse"></a>
 ## reverse
 
 ```TypeScript
@@ -398,8 +416,9 @@ Reverses the elements in an Array.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](arkts-na-lib-es5-uint8array-i.md) |  |
+| Uint8Array |  |
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -414,9 +433,10 @@ Sets a value or an array of values.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| array | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<number> | Yes |  |
+| array | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; | Yes |  |
 | offset | number | No |  |
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript
@@ -438,8 +458,9 @@ Returns a section of an array.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](arkts-na-lib-es5-uint8array-i.md) |  |
+| Uint8Array |  |
 
+<a id="some"></a>
 ## some
 
 ```TypeScript
@@ -454,7 +475,7 @@ Determines whether the specified callback function returns true for any element 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: number, index: number, array: Uint8Array) => unknown | Yes |  |
+| predicate | (value: number, index: number, array: Uint8Array) =&gt; unknown | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -463,6 +484,7 @@ Determines whether the specified callback function returns true for any element 
 | --- | --- |
 | boolean |  |
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -477,7 +499,7 @@ Sorts an array.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| compareFn | (a: number, b: number) => number | No |  |
+| compareFn | (a: number, b: number) =&gt; number | No |  |
 
 **Return value:**
 
@@ -485,6 +507,7 @@ Sorts an array.
 | --- | --- |
 | this |  |
 
+<a id="subarray"></a>
 ## subarray
 
 ```TypeScript
@@ -506,8 +529,9 @@ Gets a new Uint8Array view of the ArrayBuffer store for this array, referencing 
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](arkts-na-lib-es5-uint8array-i.md) |  |
+| Uint8Array |  |
 
+<a id="tolocalestring"></a>
 ## toLocaleString
 
 ```TypeScript
@@ -524,6 +548,7 @@ Converts a number to a string by using the current locale.
 | --- | --- |
 | string |  |
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -540,6 +565,7 @@ Returns a string representation of an array.
 | --- | --- |
 | string |  |
 
+<a id="valueof"></a>
 ## valueOf
 
 ```TypeScript
@@ -554,7 +580,7 @@ Returns the primitive value of the specified object.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](arkts-na-lib-es5-uint8array-i.md) |  |
+| Uint8Array |  |
 
 ## BYTES_PER_ELEMENT
 

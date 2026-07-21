@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="createquaternion"></a>
 ## createQuaternion
 
 ```TypeScript
@@ -18,7 +19,7 @@ Converts a rotation vector into a quaternion. This API uses an asynchronous call
 
 **Deprecated since:** 9
 
-**Substitutes:** getQuaternion(rotationVector:
+**Substitutes:** [getQuaternion(rotationVector:](arkts-sensorservice-sensor-getquaternion-f.md#getquaternion-1)
 
 <!--Device-sensor-function createQuaternion(rotationVector: Array<number>, callback: AsyncCallback<Array<number>>): void--><!--Device-sensor-function createQuaternion(rotationVector: Array<number>, callback: AsyncCallback<Array<number>>): void-End-->
 
@@ -28,8 +29,8 @@ Converts a rotation vector into a quaternion. This API uses an asynchronous call
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector to convert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the quaternion. |
+| rotationVector | Array&lt;number&gt; | Yes | Rotation vector to convert. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the quaternion. |
 
 **Example**
 
@@ -51,6 +52,7 @@ sensor.createQuaternion([0.20046076, 0.21907, 0.73978853, 0.60376877],
 ```
 
 
+<a id="createquaternion-1"></a>
 ## createQuaternion
 
 ```TypeScript
@@ -63,7 +65,7 @@ Converts a rotation vector into a quaternion. This API uses a promise to return 
 
 **Deprecated since:** 9
 
-**Substitutes:** getQuaternion(rotationVector:
+**Substitutes:** [getQuaternion(rotationVector:](arkts-sensorservice-sensor-getquaternion-f.md#getquaternion-1)
 
 <!--Device-sensor-function createQuaternion(rotationVector: Array<number>): Promise<Array<number>>--><!--Device-sensor-function createQuaternion(rotationVector: Array<number>): Promise<Array<number>>-End-->
 
@@ -73,13 +75,13 @@ Converts a rotation vector into a quaternion. This API uses a promise to return 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector to convert. |
+| rotationVector | Array&lt;number&gt; | Yes | Rotation vector to convert. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the quaternion. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the quaternion. |
 
 **Example**
 

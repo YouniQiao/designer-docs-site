@@ -6,6 +6,7 @@
 import { hyperSnapManager } from '@kit.AbilityKit';
 ```
 
+<a id="sethypersnapenabled"></a>
 ## setHyperSnapEnabled
 
 ```TypeScript
@@ -34,7 +35,7 @@ When enabled, the system will create a snapshot of the application process at an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enableFlag | boolean | Yes | Indicates the desired optimization state:  - `true`: Indicates the application's compatibility with Hyper Snap optimization (system may apply when appropriate)  - `false`: Disables Hyper Snap; uses standard cold-start process. |
+| enableFlag | boolean | Yes | Indicates the desired optimization state:   - `true`: Indicates the application's compatibility with Hyper Snap optimization (system may apply when appropriate)   - `false`: Disables Hyper Snap; uses standard cold-start process. |
 
 **Error codes:**
 

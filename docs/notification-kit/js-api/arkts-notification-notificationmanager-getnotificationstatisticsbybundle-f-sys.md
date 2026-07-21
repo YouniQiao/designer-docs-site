@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getnotificationstatisticsbybundle"></a>
 ## getNotificationStatisticsByBundle
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains notification statistics of a specified list of applications in batches.T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BundleNotificationStatistics[]> | Promise used to return the notification statistics of a specified list of applications. |
+| Promise&lt;BundleNotificationStatistics[]&gt; | Promise used to return the notification statistics of a specified list of applications. |
 
 **Error codes:**
 

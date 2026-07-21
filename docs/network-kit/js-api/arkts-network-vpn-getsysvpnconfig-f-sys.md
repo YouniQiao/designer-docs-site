@@ -6,6 +6,7 @@
 import { vpn } from '@kit.NetworkKit';
 ```
 
+<a id="getsysvpnconfig"></a>
 ## getSysVpnConfig
 
 ```TypeScript
@@ -34,7 +35,7 @@ Get the configuration of system VPN network by the specified vpnId.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SysVpnConfig> | The promise returned by the VPN network configuration. |
+| Promise&lt;SysVpnConfig&gt; | The promise returned by the VPN network configuration. |
 
 **Error codes:**
 

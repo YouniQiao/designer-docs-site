@@ -6,6 +6,7 @@
 import { deviceManager } from '@kit.DriverDevelopmentKit';
 ```
 
+<a id="unbinddevice"></a>
 ## unbindDevice
 
 ```TypeScript
@@ -18,7 +19,7 @@ Unbinds a peripheral device.
 
 **Deprecated since:** 19
 
-**Substitutes:** unbindDriverWithDeviceId(deviceId:
+**Substitutes:** [unbindDriverWithDeviceId(deviceId:](arkts-driverdevelopment-devicemanager-unbinddriverwithdeviceid-f.md#unbinddriverwithdeviceid-1)
 
 **Required permissions:** ohos.permission.ACCESS_EXTENSIONAL_DEVICE_DRIVER
 
@@ -31,7 +32,7 @@ Unbinds a peripheral device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | number | Yes | Device ID, which can be obtained via **queryDevices()**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. When the bound device is disconnected, the value of **err** is **undefined** and the value of **data** is the ID of the unbound device.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. When the bound device is disconnected, the value of **err** is **undefined** and the value of **data** is the ID of the unbound device.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ try {
 ```
 
 
+<a id="unbinddevice-1"></a>
 ## unbindDevice
 
 ```TypeScript
@@ -75,7 +77,7 @@ Unbinds a peripheral device. This API uses a promise to return the result.
 
 **Deprecated since:** 19
 
-**Substitutes:** unbindDriverWithDeviceId(deviceId:
+**Substitutes:** [unbindDriverWithDeviceId(deviceId:](arkts-driverdevelopment-devicemanager-unbinddriverwithdeviceid-f.md#unbinddriverwithdeviceid-1)
 
 **Required permissions:** ohos.permission.ACCESS_EXTENSIONAL_DEVICE_DRIVER
 
@@ -93,7 +95,7 @@ Unbinds a peripheral device. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the ID of the unbound device. |
+| Promise&lt;number&gt; | Promise used to return the ID of the unbound device. |
 
 **Error codes:**
 

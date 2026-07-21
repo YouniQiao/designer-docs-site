@@ -14,6 +14,7 @@ Represents the device-cloud file version management class. It allows you to mana
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="clearfileconflict"></a>
 ## clearFileConflict
 
 ```TypeScript
@@ -38,7 +39,7 @@ Clears the version conflict flag of the local file. If a conflict occurs, you ne
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -78,6 +79,7 @@ fileVersion.clearFileConflict(uri).then(() => {
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -105,6 +107,7 @@ let fileVersion = new cloudSync.FileVersion();
 
 ```
 
+<a id="downloadhistoryversion"></a>
 ## downloadHistoryVersion
 
 ```TypeScript
@@ -125,13 +128,13 @@ Obtains the content of a file of a specified version based on the version number
 | --- | --- | --- | --- |
 | uri | string | Yes | File URI. |
 | versionId | string | Yes | Version ID of a file. The format is returned by the [gethistoryversionlist](arkts-corefile-cloudsync-fileversion-c.md#gethistoryversionlist-1) API. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<VersionDownloadProgress> | Yes | Callback used to return the download progress. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;VersionDownloadProgress&gt; | Yes | Callback used to return the download progress. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URI of the temporary file of a historical version. |
+| Promise&lt;string&gt; | Promise used to return the URI of the temporary file of a historical version. |
 
 **Error codes:**
 
@@ -146,6 +149,7 @@ Obtains the content of a file of a specified version based on the version number
 | 22400002 | Network unavailable. |
 | 22400005 | Inner error. Possible causes:<br>1.Failed to access the database or execute the SQL statement.<br>2.System error, such as a null pointer, insufficient memory or a JS engine exception. |
 
+<a id="gethistoryversionlist"></a>
 ## getHistoryVersionList
 
 ```TypeScript
@@ -175,7 +179,7 @@ If the number of cloud versions is greater than or equal to the length limit, th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<HistoryVersion>> | Promise used to return the list of historical versions. |
+| Promise&lt;Array&lt;HistoryVersion&gt;&gt; | Promise used to return the list of historical versions. |
 
 **Error codes:**
 
@@ -212,6 +216,7 @@ fileVersion.getHistoryVersionList(uri, limit).then((versionList: Array<cloudSync
 
 ```
 
+<a id="isfileconflict"></a>
 ## isFileConflict
 
 ```TypeScript
@@ -238,7 +243,7 @@ Once the application is configured for manual conflict resolution, calling this 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the conflict flag between the local file and the cloud file.The value **true** indicates that the local file conflicts with the cloud file, and the value **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the conflict flag between the local file and the cloud file.The value **true** indicates that the local file conflicts with the cloud file, and the value **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -271,6 +276,7 @@ fileVersion.isFileConflict(uri).then((isConflict: boolean) => {
 
 ```
 
+<a id="replacefilewithhistoryversion"></a>
 ## replaceFileWithHistoryVersion
 
 ```TypeScript
@@ -296,7 +302,7 @@ Replaces the local file with the file of a historical version. Before replacemen
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { continuationManager } from '@kit.AbilityKit';
 ```
 
+<a id="unregister"></a>
 ## unregister
 
 ```TypeScript
@@ -31,7 +32,7 @@ Unregisters the continuation management service. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | token | number | Yes | Token obtained after the registration of the continuation management service. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the unregistration is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the unregistration is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Example**
 
@@ -50,6 +51,7 @@ continuationManager.unregister(token, (err) => {
 ```
 
 
+<a id="unregister-1"></a>
 ## unregister
 
 ```TypeScript
@@ -80,7 +82,7 @@ Unregisters the continuation management service. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 

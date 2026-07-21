@@ -6,6 +6,7 @@
 import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="opencertificatemanagerdialog"></a>
 ## openCertificateManagerDialog
 
 ```TypeScript
@@ -35,7 +36,7 @@ Opens the certificate management dialog box and displays the page of the specifi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

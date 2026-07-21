@@ -12,6 +12,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="checked"></a>
 ## checked
 
 ```TypeScript
@@ -20,9 +21,9 @@ checked(value: boolean)
 
 Sets whether the radio button is selected.
 
-Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this attribute supports two-way binding through [$$](docroot://ui/state-management/arkts-two-way-sync.md).
 
-Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Since API version 18, this attribute supports two-way binding through [!!](docroot://ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -40,6 +41,7 @@ Since API version 18, this attribute supports two-way binding through [!!](../..
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether the radio button is selected.<br>Default value: **false**<br>**true**: The radio button is selected. **false**: The radio button is not selected. |
 
+<a id="checked-1"></a>
 ## checked
 
 ```TypeScript
@@ -48,7 +50,7 @@ checked(isChecked: Optional<boolean>)
 
 Sets whether the radio button is selected. Compared with [checked](RadioAttribute#checked(value: boolean)),this API supports the **undefined** type for the **isChecked** parameter.
 
-This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+This attribute supports two-way binding through [$$](docroot://ui/state-management/arkts-two-way-sync.md) and [!!](docroot://ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 
@@ -66,8 +68,9 @@ This attribute supports two-way binding through [$$](../../../../ui/state-manage
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isChecked | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether the radio button is selected.<br>If **isChecked** is set to **undefined**, the default value **false** is used.<br>**true**: The radio button is selected. **false**: The radio button is not selected. |
+| isChecked | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether the radio button is selected.<br>If **isChecked** is set to **undefined**, the default value **false** is used.<br>**true**: The radio button is selected. **false**: The radio button is not selected. |
 
+<a id="contentmodifier"></a>
 ## contentModifier
 
 ```TypeScript
@@ -90,8 +93,9 @@ Creates a content modifier.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<RadioConfiguration> | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-contentmodifier-i.md)&lt;RadioConfiguration&gt; | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
+<a id="contentmodifier-1"></a>
 ## contentModifier
 
 ```TypeScript
@@ -115,8 +119,9 @@ Creates a content modifier. Compared with [contentModifier](RadioAttribute#conte
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [Optional](arkts-arkui-optional-t.md)<ContentModifier<RadioConfiguration>> | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API.<br>If **modifier** is set to **undefined**, no content modifier is used. |
+| modifier | [Optional](arkts-arkui-optional-t.md)&lt;ContentModifier&lt;RadioConfiguration&gt;&gt; | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API.<br>If **modifier** is set to **undefined**, no content modifier is used. |
 
+<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -139,8 +144,9 @@ Triggered when the selected state of the radio button changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (isChecked: boolean) => void | Yes | Selected state of the radio button.<br>The value **true** means that the radio button changes from unselected to selected, and **false** means that the radio button changes from selected to unselected. |
+| callback | (isChecked: boolean) =&gt; void | Yes | Selected state of the radio button.<br>The value **true** means that the radio button changes from unselected to selected, and **false** means that the radio button changes from selected to unselected. |
 
+<a id="onchange-1"></a>
 ## onChange
 
 ```TypeScript
@@ -165,8 +171,9 @@ Triggered when the selected state of the radio button changes. Compared with [on
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Optional](arkts-arkui-optional-t.md)<OnRadioChangeCallback> | Yes | Callback for radio button selection state changes.<br>If **callback** is set to **undefined**, the callback function is not used. |
+| callback | [Optional](arkts-arkui-optional-t.md)&lt;OnRadioChangeCallback&gt; | Yes | Callback for radio button selection state changes.<br>If **callback** is set to **undefined**, the callback function is not used. |
 
+<a id="radiostyle"></a>
 ## radioStyle
 
 ```TypeScript
@@ -191,5 +198,5 @@ Since API version 10, this API is supported in ArkTS widgets.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [RadioStyle](arkts-arkui-radio-radiostyle-i.md) | No | Style of the radio button in selected or deselected state. |
+| value | [RadioStyle](arkts-arkui-radiostyle-i.md) | No | Style of the radio button in selected or deselected state. |
 

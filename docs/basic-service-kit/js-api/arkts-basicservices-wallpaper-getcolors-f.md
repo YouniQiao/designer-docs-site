@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="getcolors"></a>
 ## getColors
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the wallpaper colors for the wallpaper of the specified type. Returns rg
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | wallpaperType | [WallpaperType](arkts-basicservices-wallpaper-wallpapertype-e.md) | Yes | indicates the wallpaper type. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<RgbaColor>> | Yes | the callback of getColors. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;RgbaColor&gt;&gt; | Yes | the callback of getColors. |
 
 **Example**
 
@@ -45,6 +46,7 @@ wallpaper.getColors(wallpaper.WallpaperType.WALLPAPER_SYSTEM, (error: BusinessEr
 ```
 
 
+<a id="getcolors-1"></a>
 ## getColors
 
 ```TypeScript
@@ -71,7 +73,7 @@ Obtains the wallpaper colors for the wallpaper of the specified type. Returns rg
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<RgbaColor>> | the promise returned by the function. |
+| Promise&lt;Array&lt;RgbaColor&gt;&gt; | the promise returned by the function. |
 
 **Example**
 

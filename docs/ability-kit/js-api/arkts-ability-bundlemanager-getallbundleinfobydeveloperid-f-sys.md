@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallbundleinfobydeveloperid"></a>
 ## getAllBundleInfoByDeveloperId
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the information about all bundles of the current user based on the given
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<BundleInfo> | An array of bundle information. |
+| Array&lt;BundleInfo&gt; | An array of bundle information. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="getbackgroundpolicybyuid"></a>
 ## getBackgroundPolicyByUid
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the background network policy for the specified uid.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uid | number | Yes | The specified UID of application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetBackgroundPolicy> | Yes | the callback of getBackgroundPolicyByUid. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetBackgroundPolicy&gt; | Yes | the callback of getBackgroundPolicyByUid. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ policy.getBackgroundPolicyByUid(11111, (error: BusinessError, data: policy.NetBa
 ```
 
 
+<a id="getbackgroundpolicybyuid-1"></a>
 ## getBackgroundPolicyByUid
 
 ```TypeScript
@@ -83,7 +85,7 @@ Get the background network policy for the specified uid.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetBackgroundPolicy> | The promise returned by the function. |
+| Promise&lt;NetBackgroundPolicy&gt; | The promise returned by the function. |
 
 **Error codes:**
 

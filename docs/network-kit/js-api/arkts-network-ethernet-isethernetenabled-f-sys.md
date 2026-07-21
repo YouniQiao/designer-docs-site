@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="isethernetenabled"></a>
 ## isEthernetEnabled
 
 ```TypeScript

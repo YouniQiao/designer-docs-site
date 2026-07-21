@@ -1,5 +1,6 @@
 # getActiveNotificationCount
 
+<a id="getactivenotificationcount"></a>
 ## getActiveNotificationCount
 
 ```TypeScript
@@ -22,9 +23,10 @@ Obtains the number of active notifications of this application. This API uses an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. |
 
 
+<a id="getactivenotificationcount-1"></a>
 ## getActiveNotificationCount
 
 ```TypeScript
@@ -47,5 +49,5 @@ Obtains the number of active notifications of this application. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 

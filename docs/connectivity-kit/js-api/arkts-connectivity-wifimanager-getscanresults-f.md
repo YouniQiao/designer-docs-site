@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getscanresults"></a>
 ## getScanResults
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtain the scanned sta list.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<WifiScanInfo>> | Returns information about scanned Wi-Fi hotspot if any. |
+| Promise&lt;Array&lt;WifiScanInfo&gt;&gt; | Returns information about scanned Wi-Fi hotspot if any. |
 
 **Error codes:**
 
@@ -41,6 +42,7 @@ Obtain the scanned sta list.
 | [2501000](../errorcode-wifi.md#2501000-sta-internal-error) | Operation failed. |
 
 
+<a id="getscanresults-1"></a>
 ## getScanResults
 
 ```TypeScript
@@ -65,7 +67,7 @@ Obtain the scanned sta list.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<WifiScanInfo>> | Yes | Returns information about scanned Wi-Fi hotspot if any. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;WifiScanInfo&gt;&gt; | Yes | Returns information about scanned Wi-Fi hotspot if any. |
 
 **Error codes:**
 

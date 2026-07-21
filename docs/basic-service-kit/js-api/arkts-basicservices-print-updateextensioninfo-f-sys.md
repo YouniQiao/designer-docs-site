@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="updateextensioninfo"></a>
 ## updateExtensionInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Updates the printer extension information. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | string | Yes | New printer extension information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ print.updateExtensionInfo(info, (err: BusinessError) => {
 ```
 
 
+<a id="updateextensioninfo-1"></a>
 ## updateExtensionInfo
 
 ```TypeScript
@@ -85,7 +87,7 @@ Updates the printer extension information. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

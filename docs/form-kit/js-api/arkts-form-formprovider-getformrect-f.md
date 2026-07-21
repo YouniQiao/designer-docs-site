@@ -6,6 +6,7 @@
 import { formProvider } from '@kit.FormKit';
 ```
 
+<a id="getformrect"></a>
 ## getFormRect
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the position and dimension of a widget. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<formInfo.Rect> | Promise used to return the position and dimension of the widget relative to the upper-left corner of the screen, in vp. |
+| Promise&lt;formInfo.Rect&gt; | Promise used to return the position and dimension of the widget relative to the upper-left corner of the screen, in vp. |
 
 **Error codes:**
 

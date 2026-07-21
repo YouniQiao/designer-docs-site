@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Array<T>--><!--Device-unnamed-interface Array<T>-End-->
 
+<a id="concat"></a>
 ## concat
 
 ```TypeScript
@@ -16,7 +17,7 @@ Combines two or more arrays.This method returns a new array without modifying an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| items | [ConcatArray](arkts-na-lib-es5-concatarray-i.md)<T>[] | Yes |  |
+| items | [ConcatArray](arkts-na-lib-es5-concatarray-i.md)&lt;T&gt;[] | Yes |  |
 
 **Return value:**
 
@@ -24,6 +25,7 @@ Combines two or more arrays.This method returns a new array without modifying an
 | --- | --- |
 | T[] |  |
 
+<a id="concat-1"></a>
 ## concat
 
 ```TypeScript
@@ -38,7 +40,7 @@ Combines two or more arrays.This method returns a new array without modifying an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| items | (T \| ConcatArray<T>)[] | Yes |  |
+| items | (T \| ConcatArray&lt;T&gt;)[] | Yes |  |
 
 **Return value:**
 
@@ -46,6 +48,7 @@ Combines two or more arrays.This method returns a new array without modifying an
 | --- | --- |
 | T[] |  |
 
+<a id="every"></a>
 ## every
 
 ```TypeScript
@@ -60,7 +63,7 @@ Determines whether all the members of an array satisfy the specified test.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, array: T[]) => value is S | Yes |  |
+| predicate | (value: T, index: number, array: T[]) =&gt; value is S | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -69,6 +72,7 @@ Determines whether all the members of an array satisfy the specified test.
 | --- | --- |
 | this is S[] |  |
 
+<a id="every-1"></a>
 ## every
 
 ```TypeScript
@@ -83,7 +87,7 @@ Determines whether all the members of an array satisfy the specified test.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, array: T[]) => unknown | Yes |  |
+| predicate | (value: T, index: number, array: T[]) =&gt; unknown | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -92,6 +96,7 @@ Determines whether all the members of an array satisfy the specified test.
 | --- | --- |
 | boolean |  |
 
+<a id="filter"></a>
 ## filter
 
 ```TypeScript
@@ -106,7 +111,7 @@ Returns the elements of an array that meet the condition specified in a callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, array: T[]) => value is S | Yes |  |
+| predicate | (value: T, index: number, array: T[]) =&gt; value is S | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -115,6 +120,7 @@ Returns the elements of an array that meet the condition specified in a callback
 | --- | --- |
 | S[] |  |
 
+<a id="filter-1"></a>
 ## filter
 
 ```TypeScript
@@ -129,7 +135,7 @@ Returns the elements of an array that meet the condition specified in a callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, array: T[]) => unknown | Yes |  |
+| predicate | (value: T, index: number, array: T[]) =&gt; unknown | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -138,6 +144,7 @@ Returns the elements of an array that meet the condition specified in a callback
 | --- | --- |
 | T[] |  |
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -152,9 +159,10 @@ Performs the specified action for each element in an array.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (value: T, index: number, array: T[]) => void | Yes |  |
+| callbackfn | (value: T, index: number, array: T[]) =&gt; void | Yes |  |
 | thisArg | any | No |  |
 
+<a id="indexof"></a>
 ## indexOf
 
 ```TypeScript
@@ -178,6 +186,7 @@ Returns the index of the first occurrence of a value in an array, or -1 if it is
 | --- | --- |
 | number |  |
 
+<a id="join"></a>
 ## join
 
 ```TypeScript
@@ -200,6 +209,7 @@ Adds all the elements of an array into a string, separated by the specified sepa
 | --- | --- |
 | string |  |
 
+<a id="lastindexof"></a>
 ## lastIndexOf
 
 ```TypeScript
@@ -223,6 +233,7 @@ Returns the index of the last occurrence of a specified value in an array, or -1
 | --- | --- |
 | number |  |
 
+<a id="map"></a>
 ## map
 
 ```TypeScript
@@ -237,7 +248,7 @@ Calls a defined callback function on each element of an array, and returns an ar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (value: T, index: number, array: T[]) => U | Yes |  |
+| callbackfn | (value: T, index: number, array: T[]) =&gt; U | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -246,6 +257,7 @@ Calls a defined callback function on each element of an array, and returns an ar
 | --- | --- |
 | U[] |  |
 
+<a id="pop"></a>
 ## pop
 
 ```TypeScript
@@ -262,6 +274,7 @@ Removes the last element from an array and returns it.If the array is empty, und
 | --- | --- |
 | T |  |
 
+<a id="push"></a>
 ## push
 
 ```TypeScript
@@ -284,6 +297,7 @@ Appends new elements to the end of an array, and returns the new length of the a
 | --- | --- |
 | number |  |
 
+<a id="reduce"></a>
 ## reduce
 
 ```TypeScript
@@ -298,7 +312,7 @@ Calls the specified callback function for all the elements in an array. The retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T | Yes |  |
+| callbackfn | (previousValue: T, currentValue: T, currentIndex: number, array: T[]) =&gt; T | Yes |  |
 
 **Return value:**
 
@@ -306,6 +320,7 @@ Calls the specified callback function for all the elements in an array. The retu
 | --- | --- |
 | T |  |
 
+<a id="reduce-1"></a>
 ## reduce
 
 ```TypeScript
@@ -318,7 +333,7 @@ reduce(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, arr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T | Yes |  |
+| callbackfn | (previousValue: T, currentValue: T, currentIndex: number, array: T[]) =&gt; T | Yes |  |
 | initialValue | T | Yes |  |
 
 **Return value:**
@@ -327,6 +342,7 @@ reduce(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, arr
 | --- | --- |
 | T |  |
 
+<a id="reduce-2"></a>
 ## reduce
 
 ```TypeScript
@@ -341,7 +357,7 @@ Calls the specified callback function for all the elements in an array. The retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U | Yes |  |
+| callbackfn | (previousValue: U, currentValue: T, currentIndex: number, array: T[]) =&gt; U | Yes |  |
 | initialValue | U | Yes |  |
 
 **Return value:**
@@ -350,6 +366,7 @@ Calls the specified callback function for all the elements in an array. The retu
 | --- | --- |
 | U |  |
 
+<a id="reduceright"></a>
 ## reduceRight
 
 ```TypeScript
@@ -364,7 +381,7 @@ Calls the specified callback function for all the elements in an array, in desce
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T | Yes |  |
+| callbackfn | (previousValue: T, currentValue: T, currentIndex: number, array: T[]) =&gt; T | Yes |  |
 
 **Return value:**
 
@@ -372,6 +389,7 @@ Calls the specified callback function for all the elements in an array, in desce
 | --- | --- |
 | T |  |
 
+<a id="reduceright-1"></a>
 ## reduceRight
 
 ```TypeScript
@@ -384,7 +402,7 @@ reduceRight(callbackfn: (previousValue: T, currentValue: T, currentIndex: number
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T | Yes |  |
+| callbackfn | (previousValue: T, currentValue: T, currentIndex: number, array: T[]) =&gt; T | Yes |  |
 | initialValue | T | Yes |  |
 
 **Return value:**
@@ -393,6 +411,7 @@ reduceRight(callbackfn: (previousValue: T, currentValue: T, currentIndex: number
 | --- | --- |
 | T |  |
 
+<a id="reduceright-2"></a>
 ## reduceRight
 
 ```TypeScript
@@ -407,7 +426,7 @@ Calls the specified callback function for all the elements in an array, in desce
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U | Yes |  |
+| callbackfn | (previousValue: U, currentValue: T, currentIndex: number, array: T[]) =&gt; U | Yes |  |
 | initialValue | U | Yes |  |
 
 **Return value:**
@@ -416,6 +435,7 @@ Calls the specified callback function for all the elements in an array, in desce
 | --- | --- |
 | U |  |
 
+<a id="reverse"></a>
 ## reverse
 
 ```TypeScript
@@ -432,6 +452,7 @@ Reverses the elements in an array in place.This method mutates the array and ret
 | --- | --- |
 | T[] |  |
 
+<a id="shift"></a>
 ## shift
 
 ```TypeScript
@@ -448,6 +469,7 @@ Removes the first element from an array and returns it.If the array is empty, un
 | --- | --- |
 | T |  |
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript
@@ -471,6 +493,7 @@ Returns a copy of a section of an array.For both start and end, a negative index
 | --- | --- |
 | T[] |  |
 
+<a id="some"></a>
 ## some
 
 ```TypeScript
@@ -485,7 +508,7 @@ Determines whether the specified callback function returns true for any element 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, array: T[]) => unknown | Yes |  |
+| predicate | (value: T, index: number, array: T[]) =&gt; unknown | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -494,6 +517,7 @@ Determines whether the specified callback function returns true for any element 
 | --- | --- |
 | boolean |  |
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -508,7 +532,7 @@ Sorts an array in place.This method mutates the array and returns a reference to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| compareFn | (a: T, b: T) => number | No |  |
+| compareFn | (a: T, b: T) =&gt; number | No |  |
 
 **Return value:**
 
@@ -516,6 +540,7 @@ Sorts an array in place.This method mutates the array and returns a reference to
 | --- | --- |
 | this |  |
 
+<a id="splice"></a>
 ## splice
 
 ```TypeScript
@@ -539,6 +564,7 @@ Removes elements from an array and, if necessary, inserts new elements in their 
 | --- | --- |
 | T[] |  |
 
+<a id="splice-1"></a>
 ## splice
 
 ```TypeScript
@@ -563,6 +589,7 @@ Removes elements from an array and, if necessary, inserts new elements in their 
 | --- | --- |
 | T[] |  |
 
+<a id="tolocalestring"></a>
 ## toLocaleString
 
 ```TypeScript
@@ -579,6 +606,7 @@ Returns a string representation of an array. The elements are converted to strin
 | --- | --- |
 | string |  |
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -595,6 +623,7 @@ Returns a string representation of an array.
 | --- | --- |
 | string |  |
 
+<a id="unshift"></a>
 ## unshift
 
 ```TypeScript

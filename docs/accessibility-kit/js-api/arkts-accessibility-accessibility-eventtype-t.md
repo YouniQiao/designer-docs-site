@@ -39,14 +39,14 @@ Accessibility event types.
 | 'hoverEnter' | Event indicating that the hover enters a component. |
 | 'hoverExit' | Event indicating that the hover exits a component. |
 | 'textUpdate' | Event indicating that the component text has been updated. |
-| 'textSelectionUpdate' | Event indicating that the selected text has been updated. Not supportedcurrently. |
+| 'textSelectionUpdate' | Event indicating that the selected text has been updated. Not supported currently. |
 | 'scroll' | Event of the scroll view. |
 | 'requestFocusForAccessibility' | Event of the auto-focusing. [since 12] |
 | 'announceForAccessibility' | Event of the auto-broadcasting. [since 12] |
-| 'requestFocusForAccessibilityNotInterrupt' | Event of the auto-focusing withoutinterruption. [since 18] |
-| 'announceForAccessibilityNotInterrupt' | Event of the auto-broadcasting withoutinterruption. [since 18] |
-| 'scrolling' | Event indicating that an item is scrolled out of the screen in the scrollingview. [since 18] |
-| 'pageActive' | Event indicating that a page changes. The value is fixed at **'pageActive'**. [since 23] |
-| 'notificationUpdate' | Event indicating that a notification changes. The value is fixed at**'notificationUpdate'**. [since 26.0.0] |
+| 'requestFocusForAccessibilityNotInterrupt' | Event of the auto-focusing without interruption. [since 18] |
+| 'announceForAccessibilityNotInterrupt' | Event of the auto-broadcasting without interruption. [since 18] |
+| 'scrolling' | Event indicating that an item is scrolled out of the screen in the scrolling view. [since 18] |
+| 'pageActive' | Event indicating that a page changes. The value is fixed at **'pageActive'** . [since 23] |
+| 'notificationUpdate' | Event indicating that a notification changes. The value is fixed at **'notificationUpdate'**. [since 26.0.0] |
 | 'focusInvisible' | [since 26.0.0] |
 

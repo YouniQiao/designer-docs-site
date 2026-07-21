@@ -6,6 +6,7 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="offreadingscreenpermissionlistener"></a>
 ## offReadingScreenPermissionListener
 
 ```TypeScript
@@ -30,7 +31,7 @@ Disables the screen content access permission monitoring.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ReadingScreenPermissionStatus> | No | Callback to unregister. If this parameter<br> is not passed, all callbacks of the event are unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ReadingScreenPermissionStatus&gt; | No | Callback to unregister. If this parameter<br> is not passed, all callbacks of the event are unregistered. |
 
 **Error codes:**
 

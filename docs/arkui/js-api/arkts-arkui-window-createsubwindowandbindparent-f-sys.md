@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="createsubwindowandbindparent"></a>
 ## createSubWindowAndBindParent
 
 ```TypeScript
@@ -40,7 +41,7 @@ Create a subwindow with a specific name and bind parent.The parent window only s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | The interface for creating a window returns a promise. |
+| Promise&lt;Window&gt; | The interface for creating a window returns a promise. |
 
 **Error codes:**
 

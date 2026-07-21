@@ -14,6 +14,7 @@ Provides an interface that can be implemented for releasing a resource which is 
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="onfinalization"></a>
 ## onFinalization
 
 ```TypeScript

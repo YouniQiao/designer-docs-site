@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Math--><!--Device-unnamed-interface Math-End-->
 
+<a id="acosh"></a>
 ## acosh
 
 ```TypeScript
@@ -24,6 +25,7 @@ Returns the inverse hyperbolic cosine of a number.
 | --- | --- |
 | number |  |
 
+<a id="asinh"></a>
 ## asinh
 
 ```TypeScript
@@ -46,6 +48,7 @@ Returns the inverse hyperbolic sine of a number.
 | --- | --- |
 | number |  |
 
+<a id="atanh"></a>
 ## atanh
 
 ```TypeScript
@@ -68,6 +71,7 @@ Returns the inverse hyperbolic tangent of a number.
 | --- | --- |
 | number |  |
 
+<a id="cbrt"></a>
 ## cbrt
 
 ```TypeScript
@@ -90,6 +94,7 @@ Returns an implementation-dependent approximation to the cube root of number.
 | --- | --- |
 | number |  |
 
+<a id="clz32"></a>
 ## clz32
 
 ```TypeScript
@@ -112,6 +117,7 @@ Returns the number of leading zero bits in the 32-bit binary representation of a
 | --- | --- |
 | number |  |
 
+<a id="cosh"></a>
 ## cosh
 
 ```TypeScript
@@ -134,6 +140,7 @@ Returns the hyperbolic cosine of a number.
 | --- | --- |
 | number |  |
 
+<a id="expm1"></a>
 ## expm1
 
 ```TypeScript
@@ -156,6 +163,7 @@ Returns the result of (e^x - 1), which is an implementation-dependent approximat
 | --- | --- |
 | number |  |
 
+<a id="fround"></a>
 ## fround
 
 ```TypeScript
@@ -178,6 +186,7 @@ Returns the nearest single precision float representation of a number.
 | --- | --- |
 | number |  |
 
+<a id="hypot"></a>
 ## hypot
 
 ```TypeScript
@@ -200,6 +209,7 @@ Returns the square root of the sum of squares of its arguments.
 | --- | --- |
 | number |  |
 
+<a id="imul"></a>
 ## imul
 
 ```TypeScript
@@ -223,6 +233,7 @@ Returns the result of 32-bit multiplication of two numbers.
 | --- | --- |
 | number |  |
 
+<a id="log10"></a>
 ## log10
 
 ```TypeScript
@@ -245,6 +256,7 @@ Returns the base 10 logarithm of a number.
 | --- | --- |
 | number |  |
 
+<a id="log1p"></a>
 ## log1p
 
 ```TypeScript
@@ -267,6 +279,7 @@ Returns the natural logarithm of 1 + x.
 | --- | --- |
 | number |  |
 
+<a id="log2"></a>
 ## log2
 
 ```TypeScript
@@ -289,6 +302,7 @@ Returns the base 2 logarithm of a number.
 | --- | --- |
 | number |  |
 
+<a id="sign"></a>
 ## sign
 
 ```TypeScript
@@ -311,6 +325,7 @@ Returns the sign of the x, indicating whether x is positive, negative or zero.
 | --- | --- |
 | number |  |
 
+<a id="sinh"></a>
 ## sinh
 
 ```TypeScript
@@ -333,6 +348,7 @@ Returns the hyperbolic sine of a number.
 | --- | --- |
 | number |  |
 
+<a id="tanh"></a>
 ## tanh
 
 ```TypeScript
@@ -355,6 +371,7 @@ Returns the hyperbolic tangent of a number.
 | --- | --- |
 | number |  |
 
+<a id="trunc"></a>
 ## trunc
 
 ```TypeScript

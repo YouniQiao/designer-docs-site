@@ -16,6 +16,7 @@ Before calling the following APIs, you must use [floatView.create()](arkts-arkui
 import { floatView } from '@kit.ArkUI';
 ```
 
+<a id="getwindowproperties"></a>
 ## getWindowProperties
 
 ```TypeScript
@@ -58,6 +59,7 @@ try {
 
 ```
 
+<a id="offlimitschange"></a>
 ## offLimitsChange
 
 ```TypeScript
@@ -78,7 +80,7 @@ Unregisters the callback for listening to limit changes of the float view.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FloatViewLimits> | No | Callback used to return the limit change information of the current float view. If a value is passed in, the corresponding callback is unregistered. If no value is passed in, all callbacks associated with the limit change event of the float view are unregistered. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FloatViewLimits&gt; | No | Callback used to return the limit change information of the current float view. If a value is passed in, the corresponding callback is unregistered. If no value is passed in, all callbacks associated with the limit change event of the float view are unregistered. |
 
 **Error codes:**
 
@@ -102,6 +104,7 @@ try {
 
 ```
 
+<a id="offrectchange"></a>
 ## offRectChange
 
 ```TypeScript
@@ -122,7 +125,7 @@ Unregisters the callback for listening to changes in the rectangular area of the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FloatViewRectChangeInfo> | No | Callback used to return the rectangle area change information of the current float view. If a value is passed in, the corresponding callback is unregistered.If no value is passed in, all callbacks associated with the rectangle area change event of the float view are unregistered. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FloatViewRectChangeInfo&gt; | No | Callback used to return the rectangle area change information of the current float view. If a value is passed in, the corresponding callback is unregistered.If no value is passed in, all callbacks associated with the rectangle area change event of the float view are unregistered. |
 
 **Error codes:**
 
@@ -146,6 +149,7 @@ try {
 
 ```
 
+<a id="offstatechange"></a>
 ## offStateChange
 
 ```TypeScript
@@ -166,7 +170,7 @@ Unregisters the callback for listening to float view state changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FloatViewStateChangeInfo> | No | Callback used to return the status change information of the current float view. If a value is passed in, the corresponding callback is unregistered. If no value is passed in, all callbacks associated with the status change event of the float view are unregistered. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FloatViewStateChangeInfo&gt; | No | Callback used to return the status change information of the current float view. If a value is passed in, the corresponding callback is unregistered. If no value is passed in, all callbacks associated with the status change event of the float view are unregistered. |
 
 **Error codes:**
 
@@ -190,6 +194,7 @@ try {
 
 ```
 
+<a id="onlimitschange"></a>
 ## onLimitsChange
 
 ```TypeScript
@@ -210,7 +215,7 @@ Registers a callback for listening to limit changes of the float view. When the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FloatViewLimits> | Yes | Callback used to return the limit change information of the current float view. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FloatViewLimits&gt; | Yes | Callback used to return the limit change information of the current float view. |
 
 **Error codes:**
 
@@ -235,6 +240,7 @@ try {
 
 ```
 
+<a id="onrectchange"></a>
 ## onRectChange
 
 ```TypeScript
@@ -255,7 +261,7 @@ Registers a callback for listening to changes in the rectangular area (position 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FloatViewRectChangeInfo> | Yes | Callback used to return the rectangle area change information of the current float view. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FloatViewRectChangeInfo&gt; | Yes | Callback used to return the rectangle area change information of the current float view. |
 
 **Error codes:**
 
@@ -280,6 +286,7 @@ try {
 
 ```
 
+<a id="onstatechange"></a>
 ## onStateChange
 
 ```TypeScript
@@ -300,7 +307,7 @@ Registers a callback for listening to float view state changes. To prevent memor
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FloatViewStateChangeInfo> | Yes | Callback used to return the status change information of the current float view. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FloatViewStateChangeInfo&gt; | Yes | Callback used to return the status change information of the current float view. |
 
 **Error codes:**
 
@@ -325,6 +332,7 @@ try {
 
 ```
 
+<a id="restoremainwindow"></a>
 ## restoreMainWindow
 
 ```TypeScript
@@ -345,13 +353,13 @@ Restores the main window of the float view to display in the foreground. If this
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wantParameters | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | No | Custom parameters passed to the main window when the main window of the float view is restored. The main window will receive the parameters when the [onNewWant](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-abilitylifecyclecallback-abilitylifecyclecallback-c.md#onnewwant-1)callback is triggered. The default value is empty, indicating that no custom parameters are passed to the main window. |
+| wantParameters | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | No | Custom parameters passed to the main window when the main window of the float view is restored. The main window will receive the parameters when the [onNewWant](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-abilitylifecyclecallback-abilitylifecyclecallback-c.md#onnewwant-1)callback is triggered. The default value is empty, indicating that no custom parameters are passed to the main window. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -386,6 +394,7 @@ try {
 
 ```
 
+<a id="setfloatviewvisibilityinapp"></a>
 ## setFloatViewVisibilityInApp
 
 ```TypeScript
@@ -414,7 +423,7 @@ After the float view is created and before this API is called, the float view is
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -442,6 +451,7 @@ try {
 
 ```
 
+<a id="setuicontext"></a>
 ## setUIContext
 
 ```TypeScript
@@ -463,13 +473,13 @@ Loads the content of a page, with its path specified in the current project, for
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the page content which needs to be loaded to the window. The path needs to be configured in the **main_pages.json** file of the project. The path cannot be a relative path and must be the same as the value of **src** in the **main_pages.json** file. |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | No | Page-level UI state storage unit, which is used to transfer the state attribute for the page. By default, the value is empty. |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | No | Page-level UI state storage unit, which is used to transfer the state attribute for the page. By default, the value is empty. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -498,13 +508,14 @@ try {
 
 ```
 
+<a id="setuicontextbyname"></a>
 ## setUIContextByName
 
 ```TypeScript
 setUIContextByName(name: string, storage?: LocalStorage): Promise<void>
 ```
 
-Sets the UI content of a [named route](../../../../ui/arkts-routing.md#named-route) page to this float view window.
+Sets the UI content of a [named route](docroot://ui/arkts-routing.md#named-route) page to this float view window.
 
 **Since:** 26.0.0
 
@@ -519,13 +530,13 @@ Sets the UI content of a [named route](../../../../ui/arkts-routing.md#named-rou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the named route page. |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | No | The data object shared within the content instance loaded by the window. |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | No | The data object shared within the content instance loaded by the window. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -584,13 +595,14 @@ export struct Hello {
 
 ```
 
+<a id="setwindowsize"></a>
 ## setWindowSize
 
 ```TypeScript
 setWindowSize(size: window.Size): Promise<void>
 ```
 
-Sets the size of the float view. You are advised to call the [getFloatViewLimits](arkts-arkui-floatview-getfloatviewlimits-f.md#getfloatviewlimits-1) API to obtain the recommended width and height ranges and aspect ratio range, and then call this API based on the recommended values. The actual window size change can be listened to through the [onRectChange](arkts-arkui-floatview-floatviewcontroller-i.md#onrectchange-1)API. This API uses a promise to return the result.
+Sets the size of the float view. You are advised to call the [getFloatViewLimits](arkts-arkui-floatview-getfloatviewlimits-f.md#getfloatviewlimits-1) API to obtain the recommended width and height ranges and aspect ratio range, and then call this API based on the recommended values. The actual window size change can be listened to through the [onRectChange](floatView.FloatViewController.onRectChange(callback: Callback<FloatViewRectChangeInfo>))API. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -610,7 +622,7 @@ Sets the size of the float view. You are advised to call the [getFloatViewLimits
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -644,13 +656,14 @@ try {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
 start(): Promise<void>
 ```
 
-Starts the float view. The return value of this API does not indicate that the start process is complete. You need to use the [onStateChange](arkts-arkui-floatview-floatviewcontroller-i.md#onstatechange-1)API to listen for the **STARTED** callback to determine whether the start is successful. You are advised to call **start ()** after calling [setUIContext()](arkts-arkui-floatview-floatviewcontroller-i.md#setuicontext-1). This API uses a promise to return the result.
+Starts the float view. The return value of this API does not indicate that the start process is complete. You need to use the [onStateChange](floatView.FloatViewController.onStateChange(callback: Callback<FloatViewStateChangeInfo>))API to listen for the **STARTED** callback to determine whether the start is successful. You are advised to call **start ()** after calling [setUIContext()](arkts-arkui-floatview-floatviewcontroller-i.md#setuicontext-1). This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -666,7 +679,7 @@ Starts the float view. The return value of this API does not indicate that the s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -699,13 +712,14 @@ try {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
 stop(): Promise<void>
 ```
 
-Stops the float view. The return value of this API does not indicate that the stop process is complete. You need to use the [onStateChange](arkts-arkui-floatview-floatviewcontroller-i.md#onstatechange-1)API to listen for the **STOPPED** callback to determine whether the stop is successful. This API uses a promise to return the result.
+Stops the float view. The return value of this API does not indicate that the stop process is complete. You need to use the [onStateChange](floatView.FloatViewController.onStateChange(callback: Callback<FloatViewStateChangeInfo>))API to listen for the **STOPPED** callback to determine whether the stop is successful. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -719,7 +733,7 @@ Stops the float view. The return value of this API does not indicate that the st
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -749,13 +763,14 @@ try {
 
 ```
 
+<a id="switchtemplate"></a>
 ## switchTemplate
 
 ```TypeScript
 switchTemplate(templateProperty: TemplateProperty): Promise<void>
 ```
 
-Switches the template of the flow view and changes the window size. You are advised to call the [getFloatViewLimits](arkts-arkui-floatview-getfloatviewlimits-f.md#getfloatviewlimits-1) API to obtain the recommended width and height ranges and aspect ratio range of the target template, and then call this API based on the recommended values. The actual window size change can be listened to through the [onRectChange](arkts-arkui-floatview-floatviewcontroller-i.md#onrectchange-1)API. This API uses a promise to return the result.
+Switches the template of the flow view and changes the window size. You are advised to call the [getFloatViewLimits](arkts-arkui-floatview-getfloatviewlimits-f.md#getfloatviewlimits-1) API to obtain the recommended width and height ranges and aspect ratio range of the target template, and then call this API based on the recommended values. The actual window size change can be listened to through the [onRectChange](floatView.FloatViewController.onRectChange(callback: Callback<FloatViewRectChangeInfo>))API. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -775,7 +790,7 @@ Switches the template of the flow view and changes the window size. You are advi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getsharedbundleinfo"></a>
 ## getSharedBundleInfo
 
 ```TypeScript
@@ -32,7 +33,7 @@ No permission is required for obtaining the caller's own information.
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | moduleName | string | Yes | Module name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<SharedBundleInfo>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the shared bundle information obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;SharedBundleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the shared bundle information obtained. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ try {
 ```
 
 
+<a id="getsharedbundleinfo-1"></a>
 ## getSharedBundleInfo
 
 ```TypeScript
@@ -101,7 +103,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<SharedBundleInfo>> | Promise used to return the shared bundle information obtained. |
+| Promise&lt;Array&lt;SharedBundleInfo&gt;&gt; | Promise used to return the shared bundle information obtained. |
 
 **Error codes:**
 

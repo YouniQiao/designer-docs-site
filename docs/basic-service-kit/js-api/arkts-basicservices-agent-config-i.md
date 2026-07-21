@@ -65,7 +65,7 @@ data?: string | Array<FormItem>
 - For the download task, the value is a string, typically in JSON format (an object will be converted to a JSON string); the default value is null.  
 - For the upload task, the value is Array<[FormItem](arkts-basicservices-agent-formitem-i.md)>. Since API version 15, a maximum of 100 files can be uploaded in a single task. This parameter is left empty by default.
 
-**Type:** string | Array<FormItem>
+**Type:** string \| Array&lt;FormItem&gt;
 
 **Since:** 10
 
@@ -485,7 +485,7 @@ Path for storing downloaded files. The options are as follows:
 - Application sandbox path. Only the **base** directory and its subdirectories are supported, for example,**./data/storage/el1/base/path/to/file.txt**.  
 - File protocol path, which can be the path of an application file or a user file. For the application file,the application bundle name must be matched and only the **base** directory and its subdirectories are supported, for example, **file://com.example.test/data/storage/el2/base/file.txt**. For the user file, its path must be the user file URI created by the caller.
 
-Since API version 20, the default file path can be the cache path of the caller (that is, the passed context),except for [downloading network resource files to the user file](../../../../basic-services/request/app-file-upload-download.md#downloading-network-resource-files-to-the-user-file). The default file name is the part truncated from the last slash (/) in the URL.
+Since API version 20, the default file path can be the cache path of the caller (that is, the passed context),except for [downloading network resource files to the user file](docroot://basic-services/request/app-file-upload-download.md#downloading-network-resource-files-to-the-user-file). The default file name is the part truncated from the last slash (/) in the URL.
 
 **Type:** string
 
@@ -557,7 +557,7 @@ Task token. To query a task with a token, you need to provide the token and use 
 url: string
 ```
 
-Resource URL. From API version 6 to 14, the value contains a maximum of 2048 characters; since API version 15,the value contains a maximum of 8192 characters.[Intercepting HTTP](../../../../basic-services/request/app-file-upload-download.md#intercepting-http) is supported.
+Resource URL. From API version 6 to 14, the value contains a maximum of 2048 characters; since API version 15,the value contains a maximum of 8192 characters.[Intercepting HTTP](docroot://basic-services/request/app-file-upload-download.md#intercepting-http) is supported.
 
 **Type:** string
 

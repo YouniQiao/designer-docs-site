@@ -16,6 +16,7 @@ The class of agent extension ability. This class cannot be used in Harmony Archi
 import { AgentExtensionAbility } from '@kit.AbilityKit';
 ```
 
+<a id="onauth"></a>
 ## onAuth
 
 ```TypeScript
@@ -41,6 +42,7 @@ Called back when authentication is sent.
 | proxy | [AgentHostProxy](arkts-ability-common-agenthostproxy-t.md) | Yes | Indicates the agent service host proxy. |
 | handshakeData | string | Yes | Indicates the received handshake data. |
 
+<a id="onconnect"></a>
 ## onConnect
 
 ```TypeScript
@@ -66,6 +68,7 @@ Called back when an agent extension is connected to an ability.
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Indicates connection information about the AgentExtensionAbility. |
 | proxy | [AgentHostProxy](arkts-ability-common-agenthostproxy-t.md) | Yes | Indicates the agent service host proxy. |
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -90,6 +93,7 @@ Called back when an agent extension is started for initialization.
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information, including the ability name and bundle name. |
 
+<a id="ondata"></a>
 ## onData
 
 ```TypeScript
@@ -115,6 +119,7 @@ Called back when data is sent.
 | proxy | [AgentHostProxy](arkts-ability-common-agenthostproxy-t.md) | Yes | Indicates the agent service host proxy. |
 | data | string | Yes | Indicates the received data. |
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -133,6 +138,7 @@ Called back before an agent service extension is destroyed.
 
 **System capability:** SystemCapability.Ability.AgentRuntime.Core
 
+<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript

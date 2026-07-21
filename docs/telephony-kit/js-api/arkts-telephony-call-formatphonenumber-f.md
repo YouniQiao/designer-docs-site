@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="formatphonenumber"></a>
 ## formatPhoneNumber
 
 ```TypeScript
@@ -26,7 +27,7 @@ Formats a phone number according to the Chinese Telephone Code Plan. Before the 
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the phone number to format. |
 | options | [NumberFormatOptions](arkts-telephony-call-numberformatoptions-i.md) | Yes | Indicates the country code option. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback to obtain a formatted phone number.Returns an empty string if the input phone number is invalid. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback to obtain a formatted phone number.Returns an empty string if the input phone number is invalid. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ call.formatPhoneNumber("138xxxxxxxx", options, (err: BusinessError, data: string
 ```
 
 
+<a id="formatphonenumber-1"></a>
 ## formatPhoneNumber
 
 ```TypeScript
@@ -82,7 +84,7 @@ Formats a phone number according to the Chinese Telephone Code Plan. Before the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the phone number after being formatted. |
+| Promise&lt;string&gt; | Returns the phone number after being formatted. |
 
 **Error codes:**
 
@@ -111,6 +113,7 @@ call.formatPhoneNumber("138xxxxxxxx", options).then((data: string) => {
 ```
 
 
+<a id="formatphonenumber-2"></a>
 ## formatPhoneNumber
 
 ```TypeScript
@@ -130,7 +133,7 @@ Formats a phone number according to the Chinese Telephone Code Plan. Before the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Indicates the phone number to format. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback to obtain a formatted phone number.Returns an empty string if the input phone number is invalid. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback to obtain a formatted phone number.Returns an empty string if the input phone number is invalid. |
 
 **Error codes:**
 

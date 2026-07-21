@@ -6,6 +6,7 @@
 import { wifi } from '@kit.ConnectivityKit';
 ```
 
+<a id="getdeviceconfigs"></a>
 ## getDeviceConfigs
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the list of all existing Wi-Fi configurations.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WifiDeviceConfig> | sReturns the list of all existing Wi-Fi configurations you created on your application. |
+| Array&lt;WifiDeviceConfig&gt; | sReturns the list of all existing Wi-Fi configurations you created on your application. |
 
 **Example**
 

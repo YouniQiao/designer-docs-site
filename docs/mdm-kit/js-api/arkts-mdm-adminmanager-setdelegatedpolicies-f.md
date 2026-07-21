@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="setdelegatedpolicies"></a>
 ## setDelegatedPolicies
 
 ```TypeScript
@@ -30,7 +31,7 @@ Delegates other applications to set device management policies. The applications
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | bundleName | string | Yes | Bundle name of the delegated application. The distribution type of the delegated application must be **enterprise_normal** or **enterprise_mdm**. You can call the [getBundleInfoForSelf](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)API to query the [BundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundleinfo-i.md) of the application, where **BundleInfo.appInfo.appDistributionType** indicates the distribution type. |
-| policies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | [Delegation Policy List](../../../../reference/apis-mdm-kit/js-apis-enterprise-adminManager.md#delegation-policy-list) |
+| policies | Array&lt;string&gt; | Yes | [Delegation Policy List](docroot://reference/apis-mdm-kit/js-apis-enterprise-adminManager.md#delegation-policy-list) |
 
 **Error codes:**
 

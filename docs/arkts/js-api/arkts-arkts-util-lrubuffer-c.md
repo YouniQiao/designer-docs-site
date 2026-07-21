@@ -18,6 +18,7 @@ The LruBuffer algorithm replaces the least used data with new data when the buff
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -40,7 +41,7 @@ Specifies the default iterator for an object.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | Returns a two - dimensional array in the form of key - value pairs. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | Returns a two - dimensional array in the form of key - value pairs. |
 
 **Example**
 
@@ -51,6 +52,7 @@ let result = pro[Symbol.iterator]();
 
 ```
 
+<a id="afterremoval"></a>
 ## afterRemoval
 
 ```TypeScript
@@ -104,6 +106,7 @@ lru.put(33, 3);
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -132,6 +135,7 @@ pro.clear();
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -163,6 +167,7 @@ let pro : util.LruBuffer<number,number> = new util.LruBuffer();
 
 ```
 
+<a id="contains"></a>
 ## contains
 
 ```TypeScript
@@ -204,6 +209,7 @@ console.info('result = ' + result);
 
 ```
 
+<a id="createdefault"></a>
 ## createDefault
 
 ```TypeScript
@@ -242,6 +248,7 @@ let result = pro.createDefault(50);
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -264,7 +271,7 @@ Obtains a new iterator object that contains all key-value pairs in this object.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | Iterable array. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | Iterable array. |
 
 **Example**
 
@@ -275,6 +282,7 @@ let result = pro.entries();
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -316,6 +324,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="getcapacity"></a>
 ## getCapacity
 
 ```TypeScript
@@ -350,6 +359,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="getcreatecount"></a>
 ## getCreateCount
 
 ```TypeScript
@@ -385,6 +395,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="getmatchcount"></a>
 ## getMatchCount
 
 ```TypeScript
@@ -421,6 +432,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="getmisscount"></a>
 ## getMissCount
 
 ```TypeScript
@@ -457,6 +469,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="getputcount"></a>
 ## getPutCount
 
 ```TypeScript
@@ -492,6 +505,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="getremovalcount"></a>
 ## getRemovalCount
 
 ```TypeScript
@@ -529,6 +543,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -564,6 +579,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -599,6 +615,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="put"></a>
 ## put
 
 ```TypeScript
@@ -640,6 +657,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -681,6 +699,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -718,6 +737,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="updatecapacity"></a>
 ## updateCapacity
 
 ```TypeScript
@@ -750,6 +770,7 @@ pro.updateCapacity(100);
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript

@@ -18,6 +18,7 @@
 import { VibrateOptions } from '@kit.SensorServiceKit';
 ```
 
+<a id="vibrate"></a>
 ## vibrate
 
 ```TypeScript
@@ -35,7 +36,7 @@ Triggers device vibration.
 
 **Deprecated since:** 8
 
-**Substitutes:** startVibration(effect:
+**Substitutes:** [startVibration(effect:](arkts-sensorservice-vibrator-startvibration-f.md#startvibration-1)
 
 **Required permissions:** ohos.permission.VIBRATE
 

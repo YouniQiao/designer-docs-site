@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallappclonebundleinfo"></a>
 ## getAllAppCloneBundleInfo
 
 ```TypeScript
@@ -38,7 +39,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleInfo>> | Promise used to return an array of bundle information. |
+| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Promise used to return an array of bundle information. |
 
 **Error codes:**
 

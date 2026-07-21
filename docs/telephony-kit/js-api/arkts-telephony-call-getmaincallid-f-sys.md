@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="getmaincallid"></a>
 ## getMainCallId
 
 ```TypeScript
@@ -27,7 +28,7 @@ Get the main call Id.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Indicates the callback for getting the main call id. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Indicates the callback for getting the main call id. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ call.getMainCallId(1, (err: BusinessError, data: number) => {
 ```
 
 
+<a id="getmaincallid-1"></a>
 ## getMainCallId
 
 ```TypeScript
@@ -82,7 +84,7 @@ Get the main call Id.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the main call id. |
+| Promise&lt;number&gt; | Returns the main call id. |
 
 **Error codes:**
 

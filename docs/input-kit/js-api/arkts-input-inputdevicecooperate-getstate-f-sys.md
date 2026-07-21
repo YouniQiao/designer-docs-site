@@ -6,6 +6,7 @@
 import { inputDeviceCooperate } from '@kit.InputKit';
 ```
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript
@@ -31,7 +32,7 @@ Obtains the state of the screen hopping switch. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceDescriptor | string | Yes | Descriptor of the target device for screen hopping. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<{ state: boolean }> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;{ state: boolean }&gt; | Yes |  |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ struct Index {
 ```
 
 
+<a id="getstate-1"></a>
 ## getState
 
 ```TypeScript
@@ -103,7 +105,7 @@ Checks whether screen hopping is enabled. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<{ state: boolean }> |  |
+| Promise&lt;{ state: boolean }&gt; |  |
 
 **Error codes:**
 

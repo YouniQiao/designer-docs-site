@@ -21,6 +21,7 @@ A compound geometric path consisting of line segments, arcs, quadratic Bezier cu
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="addarc"></a>
 ## addArc
 
 ```TypeScript
@@ -51,6 +52,7 @@ Adds an arc to this path.When **startAngle** and **sweepAngle** meet the followi
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="addcircle"></a>
 ## addCircle
 
 ```TypeScript
@@ -80,6 +82,7 @@ Adds a circle to this path in the specified direction. The start point of the ci
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="addoval"></a>
 ## addOval
 
 ```TypeScript
@@ -108,6 +111,7 @@ Adds the inscribed ellipse of a rectangle to this path in the specified directio
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="addpath"></a>
 ## addPath
 
 ```TypeScript
@@ -127,7 +131,7 @@ Transforms the points in a path by a matrix and stores the resulting path in the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | [Path](arkts-arkgraphics2d-drawing-path-c.md) | Yes | Source **Path** object. |
-| matrix | Matrix \| null | No | **Matrix** object. The default value is an identity matrix. |
+| matrix | [Matrix](arkts-arkgraphics2d-drawing-matrix-c.md) \| null | No | **Matrix** object. The default value is an identity matrix. |
 
 **Error codes:**
 
@@ -135,6 +139,7 @@ Transforms the points in a path by a matrix and stores the resulting path in the
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="addpolygon"></a>
 ## addPolygon
 
 ```TypeScript
@@ -153,7 +158,7 @@ Adds a polygon to this path.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| points | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common2D.Point> | Yes | Array that holds the vertex coordinates of the polygon. |
+| points | Array&lt;common2D.Point&gt; | Yes | Array that holds the vertex coordinates of the polygon. |
 | close | boolean | Yes | Whether to close the path, that is, whether to add a line segment from the start point to the end point of the path. The value **true** means to close the path, and **false** means the opposite. |
 
 **Error codes:**
@@ -162,6 +167,7 @@ Adds a polygon to this path.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="addrect"></a>
 ## addRect
 
 ```TypeScript
@@ -189,6 +195,7 @@ Adds a rectangle to a path in the specified direction. The start point is the up
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="addroundrect"></a>
 ## addRoundRect
 
 ```TypeScript
@@ -216,6 +223,7 @@ Adds a rounded rectangle to a path in the specified direction. When the path dir
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="approximate"></a>
 ## approximate
 
 ```TypeScript
@@ -251,7 +259,7 @@ Converts the existing path into an approximate path consisting of consecutive li
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | An array of points in the approximate path, which contains at least two points. Each point consists of three values:<br>1. Length ratio of the point to the start point of the path. The value range is [0.0, 1.0].<br>2. X coordinate of a point.<br>3. Y coordinate of a point. |
+| Array&lt;number&gt; | An array of points in the approximate path, which contains at least two points. Each point consists of three values:<br>1. Length ratio of the point to the start point of the path. The value range is [0.0, 1.0].<br>2. X coordinate of a point.<br>3. Y coordinate of a point. |
 
 **Error codes:**
 
@@ -259,6 +267,7 @@ Converts the existing path into an approximate path consisting of consecutive li
 | --- | --- |
 | [25900001](../errorcode-drawing.md#25900001-abnormal-parameter-value) | Parameter error. Possible causes: Incorrect parameter range. |
 
+<a id="arcto"></a>
 ## arcTo
 
 ```TypeScript
@@ -292,6 +301,7 @@ Draws an arc to this path using angle arc mode. This mode first defines a rectan
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="buildfromsvgstring"></a>
 ## buildFromSvgString
 
 ```TypeScript
@@ -324,6 +334,7 @@ Parses the path represented by an SVG string.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -338,6 +349,7 @@ Closes this path by adding a line segment from the start point to the last point
 
 **System capability:** SystemCapability.Graphics.Drawing
 
+<a id="conicto"></a>
 ## conicTo
 
 ```TypeScript
@@ -370,6 +382,7 @@ Draws a conic curve from the last point of this path to the target point. If the
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -386,6 +399,7 @@ Constructs a path.
 
 **System capability:** SystemCapability.Graphics.Drawing
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -408,6 +422,7 @@ Constructs a copy of an existing path.
 | --- | --- | --- | --- |
 | path | [Path](arkts-arkgraphics2d-drawing-path-c.md) | Yes | Path to copy. |
 
+<a id="contains"></a>
 ## contains
 
 ```TypeScript
@@ -441,6 +456,7 @@ Checks whether a coordinate point is included in this path. For details, see [Pa
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="converttosvgstring"></a>
 ## convertToSvgString
 
 ```TypeScript
@@ -463,6 +479,7 @@ Converts path to an SVG string.
 | --- | --- |
 | string | The SVG string of the path. |
 
+<a id="cubicto"></a>
 ## cubicTo
 
 ```TypeScript
@@ -496,6 +513,7 @@ Draws a cubic Bezier curve from the last point of this path to the target point.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="getbounds"></a>
 ## getBounds
 
 ```TypeScript
@@ -516,6 +534,7 @@ Obtains the minimum bounding rectangle that encloses this path.
 | --- | --- |
 | common2D.Rect | Minimum bounding rectangle. |
 
+<a id="getconicweightdata"></a>
 ## getConicWeightData
 
 ```TypeScript
@@ -536,8 +555,9 @@ Gets path conic weight data.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | path conic weight array. |
+| Array&lt;number&gt; | path conic weight array. |
 
+<a id="getfilltype"></a>
 ## getFillType
 
 ```TypeScript
@@ -558,6 +578,7 @@ Obtains the fill type of a path.
 | --- | --- |
 | [PathFillType](arkts-arkgraphics2d-drawing-pathfilltype-e.md) | Fill type of a path. |
 
+<a id="getlastpoint"></a>
 ## getLastPoint
 
 ```TypeScript
@@ -580,6 +601,7 @@ Gets the last point of the path.
 | --- | --- |
 | common2D.Point | Returns the last point of the path. |
 
+<a id="getlength"></a>
 ## getLength
 
 ```TypeScript
@@ -606,6 +628,7 @@ Obtains the path length.
 | --- | --- |
 | number | Path length. |
 
+<a id="getmatrix"></a>
 ## getMatrix
 
 ```TypeScript
@@ -641,6 +664,7 @@ Obtains a transformation matrix at a specific position along the path, which rep
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 
+<a id="getpathiterator"></a>
 ## getPathIterator
 
 ```TypeScript
@@ -661,6 +685,7 @@ Obtains the operation iterator of this path.
 | --- | --- |
 | [PathIterator](arkts-arkgraphics2d-drawing-pathiterator-c.md) | **Iterator** object of the path. |
 
+<a id="getpointdata"></a>
 ## getPointData
 
 ```TypeScript
@@ -681,8 +706,9 @@ Gets path point data.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common2D.Point> | path points array. |
+| Array&lt;common2D.Point&gt; | path points array. |
 
+<a id="getpositionandtangent"></a>
 ## getPositionAndTangent
 
 ```TypeScript
@@ -718,6 +744,7 @@ Obtains the coordinates and tangent at a distance from the start point of this p
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="getsegment"></a>
 ## getSegment
 
 ```TypeScript
@@ -748,6 +775,7 @@ Extracts a segment of a path and appends it to a destination path.
 | --- | --- |
 | boolean | Extraction result. The value **true** means that the extraction is successful, and **false** means the opposite. |
 
+<a id="getverbdata"></a>
 ## getVerbData
 
 ```TypeScript
@@ -768,8 +796,9 @@ Gets path verb data.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PathIteratorVerb> | path verbs array. |
+| Array&lt;PathIteratorVerb&gt; | path verbs array. |
 
+<a id="interpolate"></a>
 ## interpolate
 
 ```TypeScript
@@ -804,6 +833,7 @@ Interpolates between the existing path and another path based on the given weigh
 | --- | --- |
 | [25900001](../errorcode-drawing.md#25900001-abnormal-parameter-value) | Parameter error. Possible causes: Incorrect parameter range. |
 
+<a id="isclosed"></a>
 ## isClosed
 
 ```TypeScript
@@ -824,6 +854,7 @@ Checks whether a path is closed.
 | --- | --- |
 | boolean | Check result. The value **true** means that the path is closed, and **false** means the opposite. |
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -844,6 +875,7 @@ Checks whether a path is empty.
 | --- | --- |
 | boolean | Whether a path is empty. **true** means yes; **false** otherwise. |
 
+<a id="isequal"></a>
 ## isEqual
 
 ```TypeScript
@@ -872,6 +904,7 @@ Checks if two paths are equal.
 | --- | --- |
 | boolean | Returns true if the two paths are equal, otherwise returns false. |
 
+<a id="isinterpolate"></a>
 ## isInterpolate
 
 ```TypeScript
@@ -898,6 +931,7 @@ Checks whether the existing path and another path are compatible for interpolati
 | --- | --- |
 | boolean | Whether the existing path and another path are compatible for interpolation. **true** means yes; **false** otherwise. |
 
+<a id="isinversefilltype"></a>
 ## isInverseFillType
 
 ```TypeScript
@@ -918,6 +952,7 @@ Checks whether the current path fill type is the inverse fill type. For example,
 | --- | --- |
 | boolean | Whether the current path fill type is the inverse fill type. **true** means yes; **false** otherwise. |
 
+<a id="isrect"></a>
 ## isRect
 
 ```TypeScript
@@ -944,6 +979,7 @@ Checks whether a path forms a rectangle.
 | --- | --- |
 | boolean | Whether a path forms a rectangle. **true** means yes; **false** otherwise. |
 
+<a id="lineto"></a>
 ## lineTo
 
 ```TypeScript
@@ -973,6 +1009,7 @@ Draws a line segment from the last point of this path to the target point. If th
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -1002,6 +1039,7 @@ Sets the start point of this path.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="offset"></a>
 ## offset
 
 ```TypeScript
@@ -1035,6 +1073,7 @@ Offsets this path by specified distances along the X axis and Y axis and stores 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="op"></a>
 ## op
 
 ```TypeScript
@@ -1068,6 +1107,7 @@ Combines this path with the passed-in path based on the specified operation mode
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="quadto"></a>
 ## quadTo
 
 ```TypeScript
@@ -1099,6 +1139,7 @@ Draws a quadratic Bezier curve from the last point of this path to the target po
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="rconicto"></a>
 ## rConicTo
 
 ```TypeScript
@@ -1131,6 +1172,7 @@ Draws a conic curve from the last point of this path to a point relative to the 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="rcubicto"></a>
 ## rCubicTo
 
 ```TypeScript
@@ -1164,6 +1206,7 @@ Draws a cubic Bezier curve from the last point of this path to a point relative 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="rlineto"></a>
 ## rLineTo
 
 ```TypeScript
@@ -1193,6 +1236,7 @@ Draws a line segment from the last point of this path to a point relative to the
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="rmoveto"></a>
 ## rMoveTo
 
 ```TypeScript
@@ -1222,6 +1266,7 @@ Sets the start position relative to the last point of this path. If the path is 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="rquadto"></a>
 ## rQuadTo
 
 ```TypeScript
@@ -1253,6 +1298,7 @@ Draws a quadratic Bezier curve from the last point of this path to a point relat
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -1267,6 +1313,7 @@ Resets the path data.
 
 **System capability:** SystemCapability.Graphics.Drawing
 
+<a id="rewind"></a>
 ## rewind
 
 ```TypeScript
@@ -1281,6 +1328,7 @@ Rewinds a path by clearing all its points and lines but reserves the memory spac
 
 **System capability:** SystemCapability.Graphics.Drawing
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -1303,6 +1351,7 @@ Updates the existing path with another path.
 | --- | --- | --- | --- |
 | src | [Path](arkts-arkgraphics2d-drawing-path-c.md) | Yes | Path for the update. |
 
+<a id="setfilltype"></a>
 ## setFillType
 
 ```TypeScript
@@ -1329,6 +1378,7 @@ Sets the fill type of this path. The fill type determines how "inside" of the pa
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setlastpoint"></a>
 ## setLastPoint
 
 ```TypeScript
@@ -1350,6 +1400,7 @@ Sets the last point of a path.
 | x | number | Yes | X coordinate of a point. The value is a floating point number. **0** indicates the coordinate origin. A positive value places the point to the right of the coordinate origin, while a negative value places the point to the left. |
 | y | number | Yes | Y coordinate of a point. The value is a floating point number. **0** indicates the coordinate origin. A positive value places the point below the coordinate origin, while a negative value places the point above the coordinate origin. |
 
+<a id="toggleinversefilltype"></a>
 ## toggleInverseFillType
 
 ```TypeScript
@@ -1364,6 +1415,7 @@ Toggles the fill type of the path to the inverse type. For example, if the **Win
 
 **System capability:** SystemCapability.Graphics.Drawing
 
+<a id="transform"></a>
 ## transform
 
 ```TypeScript

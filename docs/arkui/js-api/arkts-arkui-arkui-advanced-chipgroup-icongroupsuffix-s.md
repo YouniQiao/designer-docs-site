@@ -9,6 +9,8 @@ The **ChipGroup** component provides a set of chips for organizing and categoriz
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct IconGroupSuffix--><!--Device-unnamed-export declare struct IconGroupSuffix-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -49,11 +51,11 @@ items: Array<IconItemOptions | SymbolGlyphModifier | SymbolItemOptions>
 
 Custom builder items.
 
-**Type:** Array<IconItemOptions | SymbolGlyphModifier | SymbolItemOptions>
+**Type:** Array&lt;IconItemOptions \| SymbolGlyphModifier \| SymbolItemOptions&gt;
 
 **Since:** 12
 
-**Decorator:** @Prop
+**Decorator:** @Require, @Prop
 
 **Model restriction:** This API can be used only in the stage model.
 

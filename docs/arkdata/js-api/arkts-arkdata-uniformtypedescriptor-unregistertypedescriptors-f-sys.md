@@ -6,6 +6,7 @@
 import { uniformTypeDescriptor } from '@kit.ArkData';
 ```
 
+<a id="unregistertypedescriptors"></a>
 ## unregisterTypeDescriptors
 
 ```TypeScript
@@ -32,13 +33,13 @@ Unregister one or more type descriptors from the system by the given type IDs.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| typeIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | The list of type IDs to be unregistered. |
+| typeIds | Array&lt;string&gt; | Yes | The list of type IDs to be unregistered. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

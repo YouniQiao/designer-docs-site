@@ -6,6 +6,7 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
+<a id="clearpreloadeduiextensionabilities"></a>
 ## clearPreloadedUIExtensionAbilities
 
 ```TypeScript
@@ -30,7 +31,7 @@ Clears all preloaded [UIExtensionAbility](arkts-ability-app-ability-uiextensiona
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

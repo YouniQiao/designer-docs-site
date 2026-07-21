@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="synccontacts"></a>
 ## syncContacts
 
 ```TypeScript
@@ -35,13 +36,13 @@ A maximum of 400 contacts can be synchronized in batches. The invoking party mus
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of the application or capability. |
 | mode | [ContactSyncMode](arkts-contacts-contact-contactsyncmode-e.md) | Yes | Indicates the type of contact synchronization mode. |
 | progress | [ContactSyncProgress](arkts-contacts-contact-contactsyncprogress-i.md) | Yes | Indicates the information about the contact synchronization progress. |
-| contacts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Contact> | Yes | Indicates the array of contact information to be synchronized into the database. |
+| contacts | Array&lt;Contact&gt; | Yes | Indicates the array of contact information to be synchronized into the database. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Returns the array of contacts creation results. Valid contact ID (which can be obtained by {@link Contact#getId()}) indicates that the creation was successful.{@link Contact#INVALID_CONTACT_ID} indicates the creation failed. |
+| Promise&lt;Array&lt;number&gt;&gt; | Returns the array of contacts creation results. Valid contact ID (which can be obtained by {@link Contact#getId()}) indicates that the creation was successful.{@link Contact#INVALID_CONTACT_ID} indicates the creation failed. |
 
 **Error codes:**
 

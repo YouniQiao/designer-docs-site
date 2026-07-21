@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="notifyvisibleforms"></a>
 ## notifyVisibleForms
 
 ```TypeScript
@@ -28,8 +29,8 @@ Instructs the widget framework to make a widget visible. After this API is calle
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of widget IDs. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If a notification is sent to the widget framework to make the widget visible, **error** is undefined; otherwise, **error** is an error object. |
+| formIds | Array&lt;string&gt; | Yes | List of widget IDs. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If a notification is sent to the widget framework to make the widget visible, **error** is undefined; otherwise, **error** is an error object. |
 
 **Error codes:**
 
@@ -43,6 +44,7 @@ Instructs the widget framework to make a widget visible. After this API is calle
 | [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
 
 
+<a id="notifyvisibleforms-1"></a>
 ## notifyVisibleForms
 
 ```TypeScript
@@ -65,13 +67,13 @@ Instructs the widget framework to make a widget visible. After this API is calle
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of widget IDs. |
+| formIds | Array&lt;string&gt; | Yes | List of widget IDs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

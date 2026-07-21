@@ -14,6 +14,7 @@ The MediaAssetManager class is used for manipulating the read and write operatio
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="cancelrequest"></a>
 ## cancelRequest
 
 ```TypeScript
@@ -41,7 +42,7 @@ Cancels a request for the asset, the callback of which has not been triggered ye
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ Cancels a request for the asset, the callback of which has not been triggered ye
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
+<a id="loadmovingphoto"></a>
 ## loadMovingPhoto
 
 ```TypeScript
@@ -91,7 +93,7 @@ Loads a moving photo in the application sandbox. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MovingPhoto> | Promise used to return the [MovingPhoto](arkts-file-photoaccesshelper.md) instance. |
+| Promise&lt;MovingPhoto&gt; | Promise used to return the [MovingPhoto](arkts-file-photoaccesshelper.md) instance. |
 
 **Error codes:**
 
@@ -100,6 +102,7 @@ Loads a moving photo in the application sandbox. This API uses a promise to retu
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
+<a id="quickrequestimage"></a>
 ## quickRequestImage
 
 ```TypeScript
@@ -138,13 +141,13 @@ Requests an image quickly. This API uses a promise to return the result.
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
 | asset | [PhotoAsset](arkts-medialibrary-sendablephotoaccesshelper-photoasset-i.md) | Yes | Image to request. |
 | requestOptions | [RequestOptions](arkts-medialibrary-photoaccesshelper-requestoptions-i.md) | Yes | Options for requesting the image. |
-| dataHandler | [QuickImageDataHandler](arkts-medialibrary-photoaccesshelper-quickimagedatahandler-i.md)<image.Picture> | Yes | Media asset handler, which invokes a callback to return the image when the requested image is ready. |
+| dataHandler | [QuickImageDataHandler](arkts-medialibrary-photoaccesshelper-quickimagedatahandler-i.md)&lt;image.Picture&gt; | Yes | Media asset handler, which invokes a callback to return the image when the requested image is ready. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 
@@ -154,6 +157,7 @@ Requests an image quickly. This API uses a promise to return the result.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
+<a id="requestimage"></a>
 ## requestImage
 
 ```TypeScript
@@ -192,13 +196,13 @@ Requests an image. This API uses a promise to return the result.
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
 | asset | [PhotoAsset](arkts-medialibrary-sendablephotoaccesshelper-photoasset-i.md) | Yes | Image to request. |
 | requestOptions | [RequestOptions](arkts-medialibrary-photoaccesshelper-requestoptions-i.md) | Yes | Options for requesting the image. |
-| dataHandler | [MediaAssetDataHandler](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md)<image.ImageSource> | Yes | Media asset handler, which invokes a callback to return the image when the requested image is ready. |
+| dataHandler | [MediaAssetDataHandler](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md)&lt;image.ImageSource&gt; | Yes | Media asset handler, which invokes a callback to return the image when the requested image is ready. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 
@@ -208,6 +212,7 @@ Requests an image. This API uses a promise to return the result.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="requestimagedata"></a>
 ## requestImageData
 
 ```TypeScript
@@ -246,13 +251,13 @@ Requests image data. This API uses a promise to return the result.
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
 | asset | [PhotoAsset](arkts-medialibrary-sendablephotoaccesshelper-photoasset-i.md) | Yes | Image to request. |
 | requestOptions | [RequestOptions](arkts-medialibrary-photoaccesshelper-requestoptions-i.md) | Yes | Options for requesting the image. |
-| dataHandler | [MediaAssetDataHandler](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md)<ArrayBuffer> | Yes | Media asset handler, which invokes a callback to return the image when the requested image is ready. |
+| dataHandler | [MediaAssetDataHandler](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md)&lt;ArrayBuffer&gt; | Yes | Media asset handler, which invokes a callback to return the image when the requested image is ready. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 
@@ -262,6 +267,7 @@ Requests image data. This API uses a promise to return the result.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="requestmovingphoto"></a>
 ## requestMovingPhoto
 
 ```TypeScript
@@ -300,13 +306,13 @@ Requests a moving photo object, which can be used to request the asset data of t
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
 | asset | [PhotoAsset](arkts-medialibrary-sendablephotoaccesshelper-photoasset-i.md) | Yes | Image to request. |
 | requestOptions | [RequestOptions](arkts-medialibrary-photoaccesshelper-requestoptions-i.md) | Yes | Options for requesting the image. |
-| dataHandler | [MediaAssetDataHandler](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md)<MovingPhoto> | Yes | Media asset handler, which invokes a callback to return the image when the requested image is ready. |
+| dataHandler | [MediaAssetDataHandler](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md)&lt;MovingPhoto&gt; | Yes | Media asset handler, which invokes a callback to return the image when the requested image is ready. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 
@@ -317,6 +323,7 @@ Requests a moving photo object, which can be used to request the asset data of t
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 | 14000011 | System inner fail |
 
+<a id="requestvideofile"></a>
 ## requestVideoFile
 
 ```TypeScript
@@ -359,13 +366,13 @@ Requests a video and saves it to the specified sandbox directory. This API uses 
 | asset | [PhotoAsset](arkts-medialibrary-sendablephotoaccesshelper-photoasset-i.md) | Yes | Image to request. |
 | requestOptions | [RequestOptions](arkts-medialibrary-photoaccesshelper-requestoptions-i.md) | Yes | Options for requesting the video asset. |
 | fileUri | string | Yes | URI of the sandbox directory, to which the requested video asset is to be saved.Example: **'file://com.example.temptest/data/storage/el2/base/haps/entry/files/test.mp4'**. |
-| dataHandler | [MediaAssetDataHandler](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md)<boolean> | Yes | Media asset handler. When the requested video is written to the specified directory, a callback is triggered.<br>If the video is successfully written, **true** is returned. Otherwise, **false** is returned. |
+| dataHandler | [MediaAssetDataHandler](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md)&lt;boolean&gt; | Yes | Media asset handler. When the requested video is written to the specified directory, a callback is triggered.<br>If the video is successfully written, **true** is returned. Otherwise, **false** is returned. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
+| Promise&lt;string&gt; | Promise used to return the request ID, which can be used in [cancelRequest](arkts-medialibrary-photoaccesshelper-mediaassetmanager-c.md#cancelrequest-1) to cancel a request. |
 
 **Error codes:**
 

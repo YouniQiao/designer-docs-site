@@ -18,6 +18,7 @@ Manages GATT server. Before calling an Gatt server method, you must use {@link c
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="addservice"></a>
 ## addService
 
 ```TypeScript
@@ -96,6 +97,7 @@ try {
 
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -141,6 +143,7 @@ try {
 
 ```
 
+<a id="notifycharacteristicchanged"></a>
 ## notifyCharacteristicChanged
 
 ```TypeScript
@@ -210,6 +213,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('characteristicRead')
 
 ```TypeScript
@@ -237,7 +241,7 @@ Unsubscribe characteristic read event.On API 10 and above, the permission requir
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'characteristicRead' | Yes | Type of the characteristic read event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CharacteristicReadRequest> | No | Callback used to listen for the characteristic read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CharacteristicReadRequest&gt; | No | Callback used to listen for the characteristic read event. |
 
 **Error codes:**
 
@@ -260,6 +264,7 @@ gattServer.off("characteristicRead");
 
 ```
 
+<a id="off-1"></a>
 ## off('characteristicWrite')
 
 ```TypeScript
@@ -287,7 +292,7 @@ Unsubscribe characteristic write event.On API 10 and above, the permission requi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'characteristicWrite' | Yes | Type of the characteristic write event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CharacteristicWriteRequest> | No | Callback used to listen for the characteristic write event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CharacteristicWriteRequest&gt; | No | Callback used to listen for the characteristic write event. |
 
 **Error codes:**
 
@@ -310,6 +315,7 @@ gattServer.off("characteristicWrite");
 
 ```
 
+<a id="off-2"></a>
 ## off('descriptorRead')
 
 ```TypeScript
@@ -337,7 +343,7 @@ Unsubscribe descriptor read event.On API 10 and above, the permission required b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'descriptorRead' | Yes | Type of the descriptor read event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DescriptorReadRequest> | No | Callback used to listen for the descriptor read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DescriptorReadRequest&gt; | No | Callback used to listen for the descriptor read event. |
 
 **Error codes:**
 
@@ -360,6 +366,7 @@ gattServer.off("descriptorRead");
 
 ```
 
+<a id="off-3"></a>
 ## off('descriptorWrite')
 
 ```TypeScript
@@ -387,7 +394,7 @@ Unsubscribe descriptor write event.On API 10 and above, the permission required 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'descriptorWrite' | Yes | Type of the descriptor write event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DescriptorWriteRequest> | No | Callback used to listen for the descriptor write event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DescriptorWriteRequest&gt; | No | Callback used to listen for the descriptor write event. |
 
 **Error codes:**
 
@@ -410,6 +417,7 @@ gattServer.off("descriptorWrite");
 
 ```
 
+<a id="off-4"></a>
 ## off('connectStateChange')
 
 ```TypeScript
@@ -437,7 +445,7 @@ Unsubscribe server connection state changed event.On API 10 and above, the permi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectStateChange' | Yes | Type of the connection state changed event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BLEConnectChangedState> | No | Callback used to listen for the connection state changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BLEConnectChangedState&gt; | No | Callback used to listen for the connection state changed event. |
 
 **Error codes:**
 
@@ -460,6 +468,7 @@ gattServer.off("connectStateChange");
 
 ```
 
+<a id="on"></a>
 ## on('characteristicRead')
 
 ```TypeScript
@@ -487,7 +496,7 @@ Subscribe characteristic read event.On API 10 and above, the permission required
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'characteristicRead' | Yes | Type of the characteristic read event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CharacteristicReadRequest> | Yes | Callback used to listen for the characteristic read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CharacteristicReadRequest&gt; | Yes | Callback used to listen for the characteristic read event. |
 
 **Error codes:**
 
@@ -524,6 +533,7 @@ gattServer.on("characteristicRead", ReadCharacteristicReq);
 
 ```
 
+<a id="on-1"></a>
 ## on('characteristicWrite')
 
 ```TypeScript
@@ -551,7 +561,7 @@ Subscribe characteristic write event.On API 10 and above, the permission require
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'characteristicWrite' | Yes | Type of the characteristic write event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CharacteristicWriteRequest> | Yes | Callback used to listen for the characteristic write event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CharacteristicWriteRequest&gt; | Yes | Callback used to listen for the characteristic write event. |
 
 **Error codes:**
 
@@ -591,6 +601,7 @@ gattServer.on("characteristicWrite", WriteCharacteristicReq);
 
 ```
 
+<a id="on-2"></a>
 ## on('descriptorRead')
 
 ```TypeScript
@@ -618,7 +629,7 @@ Subscribe descriptor read event.On API 10 and above, the permission required by 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'descriptorRead' | Yes | Type of the descriptor read event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DescriptorReadRequest> | Yes | Callback used to listen for the descriptor read event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DescriptorReadRequest&gt; | Yes | Callback used to listen for the descriptor read event. |
 
 **Error codes:**
 
@@ -655,6 +666,7 @@ gattServer.on("descriptorRead", ReadDescriptorReq);
 
 ```
 
+<a id="on-3"></a>
 ## on('descriptorWrite')
 
 ```TypeScript
@@ -682,7 +694,7 @@ Subscribe descriptor write event.On API 10 and above, the permission required by
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'descriptorWrite' | Yes | Type of the descriptor write event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DescriptorWriteRequest> | Yes | Callback used to listen for the descriptor write event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DescriptorWriteRequest&gt; | Yes | Callback used to listen for the descriptor write event. |
 
 **Error codes:**
 
@@ -722,6 +734,7 @@ gattServer.on("descriptorWrite", WriteDescriptorReq);
 
 ```
 
+<a id="on-4"></a>
 ## on('connectStateChange')
 
 ```TypeScript
@@ -749,7 +762,7 @@ Subscribe server connection state changed event.On API 10 and above, the permiss
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectStateChange' | Yes | Type of the connection state changed event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BLEConnectChangedState> | Yes | Callback used to listen for the connection state changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BLEConnectChangedState&gt; | Yes | Callback used to listen for the connection state changed event. |
 
 **Error codes:**
 
@@ -776,6 +789,7 @@ gattServer.on("connectStateChange", Connected);
 
 ```
 
+<a id="removeservice"></a>
 ## removeService
 
 ```TypeScript
@@ -829,6 +843,7 @@ try {
 
 ```
 
+<a id="sendresponse"></a>
 ## sendResponse
 
 ```TypeScript
@@ -893,6 +908,7 @@ try {
 
 ```
 
+<a id="startadvertising"></a>
 ## startAdvertising
 
 ```TypeScript
@@ -983,6 +999,7 @@ try {
 
 ```
 
+<a id="stopadvertising"></a>
 ## stopAdvertising
 
 ```TypeScript

@@ -16,6 +16,7 @@ Before calling any API in AudioManager, you must use [getAudioManager](arkts-aud
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="disablesafemediavolume"></a>
 ## disableSafeMediaVolume
 
 ```TypeScript
@@ -38,7 +39,7 @@ user disable the safe media volume state.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ audioManager.disableSafeMediaVolume().then(() => {
 
 ```
 
+<a id="getcollaborativemanager"></a>
 ## getCollaborativeManager
 
 ```TypeScript
@@ -88,6 +90,7 @@ Obtains a collaborative playback management instance.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 
+<a id="geteffectmanager"></a>
 ## getEffectManager
 
 ```TypeScript
@@ -125,6 +128,7 @@ let audioEffectManager: audio.AudioEffectManager = audioManager.getEffectManager
 
 ```
 
+<a id="getextraparameters"></a>
 ## getExtraParameters
 
 ```TypeScript
@@ -146,13 +150,13 @@ Obtains the values of a certain key. This method uses a promise to return the qu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mainKey | string | Yes | Main key of the audio parameters to get. |
-| subKeys | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Sub keys of the audio parameters to get. |
+| subKeys | Array&lt;string&gt; | No | Sub keys of the audio parameters to get. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, string>> | Promise used to return the key-value pairs. |
+| Promise&lt;Record&lt;string, string&gt;&gt; | Promise used to return the key-value pairs. |
 
 **Error codes:**
 
@@ -176,6 +180,7 @@ audioManager.getExtraParameters('key_example', subKeys).then((value: Record<stri
 
 ```
 
+<a id="on"></a>
 ## on('volumeChange')
 
 ```TypeScript
@@ -201,7 +206,7 @@ Listens for system volume change events. This method uses a callback to get volu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'volumeChange' | Yes | Type of the event to listen for. Only the volumeChange event is supported. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<VolumeEvent> | Yes | Callback used to get the system volume change event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;VolumeEvent&gt; | Yes | Callback used to get the system volume change event. |
 
 **Example**
 
@@ -214,6 +219,7 @@ audioManager.on('volumeChange', (volumeEvent: audio.VolumeEvent) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('ringerModeChange')
 
 ```TypeScript
@@ -239,7 +245,7 @@ Listens for ringer mode change events. This method uses a callback to get ringer
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'ringerModeChange' | Yes | Type of the event to listen for. Only the ringerModeChange event is supported. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioRingMode> | Yes | Callback used to get the updated ringer mode. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioRingMode&gt; | Yes | Callback used to get the updated ringer mode. |
 
 **Example**
 
@@ -250,6 +256,7 @@ audioManager.on('ringerModeChange', (ringerMode: audio.AudioRingMode) => {
 
 ```
 
+<a id="setaudioscene"></a>
 ## setAudioScene
 
 ```TypeScript
@@ -271,7 +278,7 @@ Sets the audio scene mode to change audio strategies. This method uses an asynch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | scene | [AudioScene](arkts-audio-audio-audioscene-e.md) | Yes | Audio scene mode. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -288,6 +295,7 @@ audioManager.setAudioScene(audio.AudioScene.AUDIO_SCENE_PHONE_CALL, (err: Busine
 
 ```
 
+<a id="setaudioscene-1"></a>
 ## setAudioScene
 
 ```TypeScript
@@ -314,7 +322,7 @@ Sets the audio scene mode to change audio strategies. This method uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -329,6 +337,7 @@ audioManager.setAudioScene(audio.AudioScene.AUDIO_SCENE_PHONE_CALL).then(() => {
 
 ```
 
+<a id="setextraparameters"></a>
 ## setExtraParameters
 
 ```TypeScript
@@ -352,13 +361,13 @@ Sets extra audio parameters. This method uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mainKey | string | Yes | Main key of the audio parameters to set. |
-| kvpairs | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string> | Yes | Key-value pairs with subkeys and values to set. |
+| kvpairs | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, string&gt; | Yes | Key-value pairs with subkeys and values to set. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

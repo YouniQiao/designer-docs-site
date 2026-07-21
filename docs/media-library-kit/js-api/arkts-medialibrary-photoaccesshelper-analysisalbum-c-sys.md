@@ -16,6 +16,7 @@ Implements an **Analysis** album.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -70,6 +71,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="getorderposition"></a>
 ## getOrderPosition
 
 ```TypeScript
@@ -92,13 +94,13 @@ Obtains the sequence of assets in the **Analysis** album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Assets in the album whose sequence needs to be obtained. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Assets in the album whose sequence needs to be obtained. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Sequence number of an asset in the album. |
+| Promise&lt;Array&lt;number&gt;&gt; | Sequence number of an asset in the album. |
 
 **Error codes:**
 
@@ -148,6 +150,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="getrelationship"></a>
 ## getRelationship
 
 ```TypeScript
@@ -170,7 +173,7 @@ Obtains the relationships of a person in the portrait album.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Relationships of the person in the portrait album. |
+| Promise&lt;string&gt; | Relationships of the person in the portrait album. |
 
 **Error codes:**
 

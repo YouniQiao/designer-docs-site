@@ -14,6 +14,7 @@ This class offers a comprehensive set of operations for handling common2D Point 
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="negate"></a>
 ## negate
 
 ```TypeScript
@@ -36,6 +37,7 @@ Negates the point's coordinates.
 | --- | --- | --- | --- |
 | point | common2D.Point | Yes | Specifies the point to be negated. |
 
+<a id="offset"></a>
 ## offset
 
 ```TypeScript

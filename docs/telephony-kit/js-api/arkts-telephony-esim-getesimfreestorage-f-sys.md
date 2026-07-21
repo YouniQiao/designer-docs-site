@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="getesimfreestorage"></a>
 ## getEsimFreeStorage
 
 ```TypeScript
@@ -28,7 +29,7 @@ Returns the remaining storage space in KB for the eUICC hardware.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the size of the remaining storage space in KB for the eUICC. |
+| Promise&lt;number&gt; | Returns the size of the remaining storage space in KB for the eUICC. |
 
 **Error codes:**
 

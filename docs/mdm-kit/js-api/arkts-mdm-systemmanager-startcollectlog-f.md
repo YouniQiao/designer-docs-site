@@ -6,6 +6,7 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
+<a id="startcollectlog"></a>
 ## startCollectLog
 
 ```TypeScript
@@ -40,7 +41,7 @@ Starts to collect the [fault logs](../../apis-performance-analysis-kit/arkts-api
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. When a log collection task fails to be created, an error object is thrown. |
+| Promise&lt;void&gt; | Promise that returns no value. When a log collection task fails to be created, an error object is thrown. |
 
 **Error codes:**
 

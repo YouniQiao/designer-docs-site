@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="getallwindowlayoutinfo"></a>
 ## getAllWindowLayoutInfo
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the layout information array of all windows visible on a display. The la
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<WindowLayoutInfo>> | Promise used to return an array of window layout information objects. |
+| Promise&lt;Array&lt;WindowLayoutInfo&gt;&gt; | Promise used to return an array of window layout information objects. |
 
 **Error codes:**
 
@@ -44,6 +45,7 @@ Obtains the layout information array of all windows visible on a display. The la
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.Possible cause: Internal task error. |
 
 
+<a id="getallwindowlayoutinfo-1"></a>
 ## getAllWindowLayoutInfo
 
 ```TypeScript
@@ -73,7 +75,7 @@ Obtains the array of window layout info visible on a specified screen.The width 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<WindowLayoutInfo>> | Promise used to return the WindowLayoutInfo. |
+| Promise&lt;Array&lt;WindowLayoutInfo&gt;&gt; | Promise used to return the WindowLayoutInfo. |
 
 **Error codes:**
 

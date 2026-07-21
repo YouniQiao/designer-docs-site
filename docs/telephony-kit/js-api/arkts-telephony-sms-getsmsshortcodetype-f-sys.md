@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="getsmsshortcodetype"></a>
 ## getSmsShortCodeType
 
 ```TypeScript
@@ -35,7 +36,7 @@ Get the SMS short code type of the destination address.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SmsShortCodeType> | Returns the SMS short code type of the sending destination address. |
+| Promise&lt;SmsShortCodeType&gt; | Returns the SMS short code type of the sending destination address. |
 
 **Error codes:**
 

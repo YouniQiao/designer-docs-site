@@ -6,6 +6,7 @@
 import { systemDateTime } from '@kit.BasicServicesKit';
 ```
 
+<a id="getdate"></a>
 ## getDate
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the current system date. This API uses an asynchronous callback to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Date> | Yes | Callback used to return the current system date. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Date&gt; | Yes | Callback used to return the current system date. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ try {
 ```
 
 
+<a id="getdate-1"></a>
 ## getDate
 
 ```TypeScript
@@ -79,7 +81,7 @@ Obtains the current system date. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Date> | Promise used to return the current system date. |
+| Promise&lt;Date&gt; | Promise used to return the current system date. |
 
 **Error codes:**
 

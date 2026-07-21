@@ -1,5 +1,6 @@
 # apply
 
+<a id="apply"></a>
 ## apply
 
 ```TypeScript
@@ -26,9 +27,9 @@ Calls the function with the specified object as the this value and the elements 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| target | (this: T, ...args: A) => R | Yes |  |
+| target | (this: T, ...args: A) =&gt; R | Yes |  |
 | thisArgument | T | Yes |  |
-| argumentsList | [Readonly](arkts-na-readonly-t.md)<A> | Yes |  |
+| argumentsList | [Readonly](arkts-na-readonly-t.md)&lt;A&gt; | Yes |  |
 
 **Return value:**
 
@@ -37,6 +38,7 @@ Calls the function with the specified object as the this value and the elements 
 | R |  |
 
 
+<a id="apply-1"></a>
 ## apply
 
 ```TypeScript
@@ -49,9 +51,9 @@ function apply(target: Function, thisArgument: any, argumentsList: ArrayLike<any
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| target | [Function](arkts-na-lib-es2015-core-function-i.md) | Yes |  |
+| target | Function | Yes |  |
 | thisArgument | any | Yes |  |
-| argumentsList | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<any> | Yes |  |
+| argumentsList | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;any&gt; | Yes |  |
 
 **Return value:**
 

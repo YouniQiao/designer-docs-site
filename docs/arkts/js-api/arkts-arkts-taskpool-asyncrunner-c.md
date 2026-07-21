@@ -14,6 +14,7 @@ Implements an asynchronous queue, for which you can specify the task execution c
 import { taskpool } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -44,6 +45,7 @@ let runner: taskpool.AsyncRunner = new taskpool.AsyncRunner(5);
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -82,6 +84,7 @@ let runner:taskpool.AsyncRunner = new taskpool.AsyncRunner("runner1", 5, 5);
 
 ```
 
+<a id="execute"></a>
 ## execute
 
 ```TypeScript
@@ -125,7 +128,7 @@ Adds a task to the asynchronous queue for execution. Before using this API, you 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Object> | Promise used to return the task execution result. |
+| Promise&lt;Object&gt; | Promise used to return the task execution result. |
 
 **Error codes:**
 

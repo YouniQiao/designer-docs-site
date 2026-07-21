@@ -14,6 +14,7 @@ Provides APIs that support Aspect Oriented Programming (AOP). These APIs can be 
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="addafter"></a>
 ## addAfter
 
 ```TypeScript
@@ -34,10 +35,10 @@ Inserts a function after a method of a class object. The final return value is t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| targetClass | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Target class object. |
+| targetClass | Object | Yes | Target class object. |
 | methodName | string | Yes | Name of the method. Read-only methods are not supported. |
 | isStatic | boolean | Yes | Whether the method is a static method. The value **true** means a static method,and **false** means an instance method. |
-| after | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Function to insert. If the function carries parameters, then the first parameter is the **this** object, which is the target class object (specified by **targetClass**) if **isStatic** is **true** or the instance object of the method if **isStatic** is **false**; the second parameter is the return value of the original method (**undefined** if the original method does not have a return value);other parameters are the parameters carried by the original method. If the function does not carry any parameter, no processing is performed. |
+| after | Function | Yes | Function to insert. If the function carries parameters, then the first parameter is the **this** object, which is the target class object (specified by **targetClass**) if **isStatic** is **true** or the instance object of the method if **isStatic** is **false**; the second parameter is the return value of the original method (**undefined** if the original method does not have a return value);other parameters are the parameters carried by the original method. If the function does not carry any parameter, no processing is performed. |
 
 **Example**
 
@@ -96,6 +97,7 @@ util.Aspect.addAfter(AroundTest, 'foo', false, () => {
 
 ```
 
+<a id="addbefore"></a>
 ## addBefore
 
 ```TypeScript
@@ -116,10 +118,10 @@ Inserts a function before a method of a class object. The inserted function is e
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| targetClass | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Target class object. |
+| targetClass | Object | Yes | Target class object. |
 | methodName | string | Yes | Name of the method. Read-only methods are not supported. |
 | isStatic | boolean | Yes | Whether the method is a static method. The value **true** means a static method,and **false** means an instance method. |
-| before | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Function to insert. If the function carries parameters, then the first parameter is the **this** object, which is the target class object (specified by **targetClass**) if **isStatic** is **true** or the instance object of the method if **isStatic** is **false**; other parameters are the parameters carried in the original method. If the function does not carry any parameter, no processing is performed. |
+| before | Function | Yes | Function to insert. If the function carries parameters, then the first parameter is the **this** object, which is the target class object (specified by **targetClass**) if **isStatic** is **true** or the instance object of the method if **isStatic** is **false**; other parameters are the parameters carried in the original method. If the function does not carry any parameter, no processing is performed. |
 
 **Example**
 
@@ -187,6 +189,7 @@ console.info('MyClass.data is ' + MyClass.data);
 
 ```
 
+<a id="replace"></a>
 ## replace
 
 ```TypeScript
@@ -207,10 +210,10 @@ Replaces a method of a class object with another function. After the replacement
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| targetClass | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Target class object. |
+| targetClass | Object | Yes | Target class object. |
 | methodName | string | Yes | Name of the method. Read-only methods are not supported. |
 | isStatic | boolean | Yes | Whether the method is a static method. The value **true** means a static method,and **false** means an instance method. |
-| instead | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Function to be used replacement. If the function carries parameters, then the first parameter is the **this** object, which is the target class object (specified by **targetClass**) if **isStatic** is **true** or the instance object of the method if **isStatic** is **false**; other parameters are the parameters carried in the original method. If the function does not carry any parameter, no processing is performed. |
+| instead | Function | Yes | Function to be used replacement. If the function carries parameters, then the first parameter is the **this** object, which is the target class object (specified by **targetClass**) if **isStatic** is **true** or the instance object of the method if **isStatic** is **false**; other parameters are the parameters carried in the original method. If the function does not carry any parameter, no processing is performed. |
 
 **Example**
 

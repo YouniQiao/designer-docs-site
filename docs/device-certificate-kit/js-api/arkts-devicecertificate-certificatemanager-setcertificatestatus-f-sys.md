@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="setcertificatestatus"></a>
 ## setCertificateStatus
 
 ```TypeScript
@@ -38,7 +39,7 @@ Sets the status of a CA certificate. Currently, only the status of a user's CA c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

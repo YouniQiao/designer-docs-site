@@ -6,6 +6,7 @@
 import { netFirewall } from '@kit.NetworkKit';
 ```
 
+<a id="updatenetfirewallrule"></a>
 ## updateNetFirewallRule
 
 ```TypeScript
@@ -32,7 +33,7 @@ Update a firewall rule.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns void. |
+| Promise&lt;void&gt; | Returns void. |
 
 **Error codes:**
 

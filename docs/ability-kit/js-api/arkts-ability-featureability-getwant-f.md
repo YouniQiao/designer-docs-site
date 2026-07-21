@@ -6,6 +6,7 @@
 import { featureAbility } from '@kit.AbilityKit';
 ```
 
+<a id="getwant"></a>
 ## getWant
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the Want corresponding to the ability to start. This API uses an asynchr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Want> | Yes | Callback used to return the Want. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Want&gt; | Yes | Callback used to return the Want. |
 
 **Example**
 
@@ -44,6 +45,7 @@ featureAbility.getWant((error, data) => {
 ```
 
 
+<a id="getwant-1"></a>
 ## getWant
 
 ```TypeScript
@@ -64,7 +66,7 @@ Obtains the Want corresponding to the ability to start. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Want> | Promise used to return the Want. |
+| Promise&lt;Want&gt; | Promise used to return the Want. |
 
 **Example**
 

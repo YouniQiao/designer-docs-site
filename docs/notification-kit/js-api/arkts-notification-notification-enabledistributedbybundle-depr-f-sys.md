@@ -1,5 +1,6 @@
 # enableDistributedByBundle (System API)
 
+<a id="enabledistributedbybundle"></a>
 ## enableDistributedByBundle
 
 ```TypeScript
@@ -28,9 +29,10 @@ Sets whether a specified application supports distributed notifications.This API
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
 | enable | boolean | Yes | Whether the device supports distributed notifications. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 
+<a id="enabledistributedbybundle-1"></a>
 ## enableDistributedByBundle
 
 ```TypeScript
@@ -64,5 +66,5 @@ Sets whether a specified application supports distributed notifications.This API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 

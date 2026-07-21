@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getsyncnotificationenabledwithoutapp"></a>
 ## getSyncNotificationEnabledWithoutApp
 
 ```TypeScript
@@ -31,7 +32,7 @@ Obtains whether the notification sync feature is enabled for devices where the a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that the notification sync feature is enabled, and **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that the notification sync feature is enabled, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ notificationManager.getSyncNotificationEnabledWithoutApp(userId, getSyncNotifica
 ```
 
 
+<a id="getsyncnotificationenabledwithoutapp-1"></a>
 ## getSyncNotificationEnabledWithoutApp
 
 ```TypeScript
@@ -95,7 +97,7 @@ Obtains whether the notification sync feature is enabled for devices where the a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the notification sync feature is enabled, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the notification sync feature is enabled, and **false** means the opposite. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="onaudiomonostatechange"></a>
 ## onAudioMonoStateChange
 
 ```TypeScript
@@ -20,7 +21,7 @@ Subscribes to the state changes in mono audio mode. This API uses an asynchronou
 > Otherwise, a new underlying object is created each time the function is called, causing memory leakage.  
 >  
 > - After calling this method, you must use  
-> [accessibility.offAudioMonoStateChange](arkts-accessibility-accessibility-offaudiomonostatechange-f.md#offaudiomonostatechange-1)  
+> [accessibility.offAudioMonoStateChange](accessibility.offAudioMonoStateChange(callback?: Callback<boolean>))  
 > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 23
@@ -35,7 +36,7 @@ Subscribes to the state changes in mono audio mode. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback function. Returns **true** if mono audio mode is enabled; returns **false** otherwise. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback function. Returns **true** if mono audio mode is enabled; returns **false** otherwise. |
 
 **Example**
 

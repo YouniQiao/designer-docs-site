@@ -6,6 +6,7 @@
 import { cooperate } from '@kit.DistributedServiceKit';
 ```
 
+<a id="unprepare"></a>
 ## unprepare
 
 ```TypeScript
@@ -18,7 +19,7 @@ Cancels the preparation for screen hopping. This API uses an asynchronous callba
 
 **Deprecated since:** 11
 
-**Substitutes:** unprepareCooperate(callback:
+**Substitutes:** [unprepareCooperate(callback:](arkts-distributedservice-cooperate-unpreparecooperate-f-sys.md#unpreparecooperate-1)
 
 <!--Device-cooperate-function unprepare(callback: AsyncCallback<void>): void--><!--Device-cooperate-function unprepare(callback: AsyncCallback<void>): void-End-->
 
@@ -30,7 +31,7 @@ Cancels the preparation for screen hopping. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the operation result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the operation result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ try {
 ```
 
 
+<a id="unprepare-1"></a>
 ## unprepare
 
 ```TypeScript
@@ -71,7 +73,7 @@ Cancels the preparation for screen hopping. This API uses a promise to return th
 
 **Deprecated since:** 11
 
-**Substitutes:** [unprepareCooperate()](arkts-distributedservice-cooperate-unpreparecooperate-f-sys.md#unpreparecooperate-2)
+**Substitutes:** [unprepareCooperate()](arkts-distributedservice-cooperate-unpreparecooperate-f-sys.md#unpreparecooperate-1)
 
 <!--Device-cooperate-function unprepare(): Promise<void>--><!--Device-cooperate-function unprepare(): Promise<void>-End-->
 
@@ -83,7 +85,7 @@ Cancels the preparation for screen hopping. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

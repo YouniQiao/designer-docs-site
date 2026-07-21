@@ -52,7 +52,7 @@ onAbilityBackground?: (ability: UIAbility) => void
 
 Callback invoked when the UIAbility object transitions to the background.
 
-**Type:** (ability: UIAbility) => void
+**Type:** (ability: UIAbility) =&gt; void
 
 **Since:** 9
 
@@ -70,7 +70,7 @@ onAbilityCreate?: (ability: UIAbility) => void
 
 Callback invoked when the UIAbility object is created.
 
-**Type:** (ability: UIAbility) => void
+**Type:** (ability: UIAbility) =&gt; void
 
 **Since:** 9
 
@@ -88,7 +88,7 @@ onAbilityDestroy?: (ability: UIAbility) => void
 
 Callback invoked when the UIAbility object is destroyed.
 
-**Type:** (ability: UIAbility) => void
+**Type:** (ability: UIAbility) =&gt; void
 
 **Since:** 9
 
@@ -106,7 +106,7 @@ onAbilityForeground?: (ability: UIAbility) => void
 
 Callback invoked when the UIAbility object transitions to the foreground.
 
-**Type:** (ability: UIAbility) => void
+**Type:** (ability: UIAbility) =&gt; void
 
 **Since:** 9
 
@@ -124,7 +124,7 @@ onWindowStageCreate?: (ability: UIAbility) => void
 
 Callback invoked when a WindowStage instance is created.
 
-**Type:** (ability: UIAbility) => void
+**Type:** (ability: UIAbility) =&gt; void
 
 **Since:** 9
 
@@ -142,7 +142,7 @@ onWindowStageDestroy?: (ability: UIAbility) => void
 
 Callback invoked when the WindowStage instance is destroyed.
 
-**Type:** (ability: UIAbility) => void
+**Type:** (ability: UIAbility) =&gt; void
 
 **Since:** 9
 
@@ -160,7 +160,7 @@ onWindowStageRestore?: (ability: UIAbility) => void
 
 Callback invoked when the page stack is restored for the target UIAbility during cross-device migration.
 
-**Type:** (ability: UIAbility) => void
+**Type:** (ability: UIAbility) =&gt; void
 
 **Since:** 9
 

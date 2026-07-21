@@ -6,13 +6,14 @@
 import { uiObserver } from '@kit.ArkUI';
 ```
 
+<a id="on"></a>
 ## on('navDestinationUpdate')
 
 ```TypeScript
 export function on(type: 'navDestinationUpdate', options: { navigationId: ResourceStr }, callback: Callback<NavDestinationInfo>): void
 ```
 
-Subscribes to status changes of the **NavDestination** component. Compared with [uiObserver.on](arkts-arkui-uiobserver-on-f.md#on-2), this API supports the **options** parameter, which enables you to specify the ID of the target **Navigation** component to observe.
+Subscribes to status changes of the **NavDestination** component. Compared with [uiObserver.on](uiObserver.on(type: 'navDestinationUpdate', callback: Callback<NavDestinationInfo>)), this API supports the **options** parameter, which enables you to specify the ID of the target **Navigation** component to observe.
 
 **Since:** 11
 
@@ -30,7 +31,7 @@ Subscribes to status changes of the **NavDestination** component. Compared with 
 | --- | --- | --- | --- |
 | type | 'navDestinationUpdate' | Yes | Event type. Set to **'navDestinationUpdate'** for **NavDestination** component status change events. |
 | options | { navigationId: ResourceStr } | Yes | ID of the target **Navigation** component. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<NavDestinationInfo> | Yes | Callback used to return the result. It provides the current state of the **NavDestination** component. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;NavDestinationInfo&gt; | Yes | Callback used to return the result. It provides the current state of the **NavDestination** component. |
 
 **Example**
 
@@ -90,6 +91,7 @@ struct Index {
 ```
 
 
+<a id="on-1"></a>
 ## on('navDestinationUpdate')
 
 ```TypeScript
@@ -113,7 +115,7 @@ Subscribes to status changes of the **NavDestination** component.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'navDestinationUpdate' | Yes | Event type. Set to **'navDestinationUpdate'** for **NavDestination** component status change events. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<NavDestinationInfo> | Yes | Callback used to return the result. It provides the current state of the **NavDestination** component. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;NavDestinationInfo&gt; | Yes | Callback used to return the result. It provides the current state of the **NavDestination** component. |
 
 **Example**
 
@@ -172,6 +174,7 @@ struct Index {
 ```
 
 
+<a id="on-2"></a>
 ## on('scrollEvent')
 
 ```TypeScript
@@ -196,9 +199,10 @@ Registers a callback function to be called when the scroll event start or stop.
 | --- | --- | --- | --- |
 | type | 'scrollEvent' | Yes | The type of event to listen for. Must be 'scrollEvent'. |
 | options | [ObserverOptions](../../apis-telephony-kit/arkts-apis/arkts-telephony-observer-observeroptions-i.md) | Yes | The options object. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<ScrollEventInfo> | Yes | The callback function to be called when the scroll event start or stop. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;ScrollEventInfo&gt; | Yes | The callback function to be called when the scroll event start or stop. |
 
 
+<a id="on-3"></a>
 ## on('scrollEvent')
 
 ```TypeScript
@@ -222,9 +226,10 @@ Registers a callback function to be called when the scroll event start or stop.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'scrollEvent' | Yes | The type of event to listen for. Must be 'scrollEvent'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<ScrollEventInfo> | Yes | The callback function to be called when the scroll event start or stop. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;ScrollEventInfo&gt; | Yes | The callback function to be called when the scroll event start or stop. |
 
 
+<a id="on-4"></a>
 ## on('routerPageUpdate')
 
 ```TypeScript
@@ -248,8 +253,8 @@ Subscribes to state changes of the page during routing.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'routerPageUpdate' | Yes | Event type. The value is fixed at **'routerPageUpdate'**, which indicates the state change event of the page during routing. |
-| context | UIAbilityContext \| UIContext | Yes | Context information, which is used to specify the target page scope. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<RouterPageInfo> | Yes | Callback used to return the result. If **pageInfo** is passed, the current page state is returned. |
+| context | [UIAbilityContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-uiabilitycontext-t.md) \| UIContext | Yes | Context information, which is used to specify the target page scope. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;RouterPageInfo&gt; | Yes | Callback used to return the result. If **pageInfo** is passed, the current page state is returned. |
 
 **Example**
 
@@ -289,6 +294,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="on-5"></a>
 ## on('densityUpdate')
 
 ```TypeScript
@@ -313,7 +319,7 @@ Listens for screen pixel density changes.
 | --- | --- | --- | --- |
 | type | 'densityUpdate' | Yes | Event type. Set to **'densityUpdate'** for screen pixel density change events. |
 | context | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | Context information, which is used to specify the target page scope. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<DensityInfo> | Yes | Callback used to return the result. It provides information about the changed screen pixel density. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;DensityInfo&gt; | Yes | Callback used to return the result. It provides information about the changed screen pixel density. |
 
 **Example**
 
@@ -348,6 +354,7 @@ struct Index {
 ```
 
 
+<a id="on-6"></a>
 ## on('willDraw')
 
 ```TypeScript
@@ -372,7 +379,7 @@ Listens for drawing instruction dispatch in each frame.
 | --- | --- | --- | --- |
 | type | 'willDraw' | Yes | Event event. The value **'willDraw'** indicates whether drawing is about to occur. |
 | context | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | Context information, which is used to specify the target page scope. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -398,6 +405,7 @@ struct Index {
 ```
 
 
+<a id="on-7"></a>
 ## on('didLayout')
 
 ```TypeScript
@@ -422,7 +430,7 @@ Listens for layout completion status in each frame.
 | --- | --- | --- | --- |
 | type | 'didLayout' | Yes | Event type. The value **'didLayout'** indicates whether the layout has been completed. |
 | context | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | Context information, which is used to specify the target page scope. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -448,13 +456,14 @@ struct Index {
 ```
 
 
+<a id="on-8"></a>
 ## on('tabContentUpdate')
 
 ```TypeScript
 export function on(type: 'tabContentUpdate', options: ObserverOptions, callback: Callback<TabContentInfo>): void
 ```
 
-Subscribes to **TabContent** page switching events for the specified **Tabs** component identified by its ID.Unlike [on('tabChange')](arkts-arkui-arkui-uicontext-uiobserver-c.md#on-23),this API does not support listening for the initial tab display event when the **Tabs** component is initialized.
+Subscribes to **TabContent** page switching events for the specified **Tabs** component identified by its ID.Unlike [on('tabChange')](@ohos.arkui.UIContext:UIObserver#on(type: 'tabChange', callback: Callback<observer.TabContentInfo>)),this API does not support listening for the initial tab display event when the **Tabs** component is initialized.
 
 **Since:** 12
 
@@ -472,7 +481,7 @@ Subscribes to **TabContent** page switching events for the specified **Tabs** co
 | --- | --- | --- | --- |
 | type | 'tabContentUpdate' | Yes | Event type. Set to **'tabContentUpdate'** for **TabContent** page switching events. |
 | options | [ObserverOptions](../../apis-telephony-kit/arkts-apis/arkts-telephony-observer-observeroptions-i.md) | Yes | ID of the target **Tabs** component. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<TabContentInfo> | Yes | Callback used to return the result. It provides information about **TabContent** switch events through **TabContentInfo**. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;TabContentInfo&gt; | Yes | Callback used to return the result. It provides information about **TabContent** switch events through **TabContentInfo**. |
 
 **Example**
 
@@ -527,13 +536,14 @@ struct TabsExample {
 ```
 
 
+<a id="on-9"></a>
 ## on('tabContentUpdate')
 
 ```TypeScript
 export function on(type: 'tabContentUpdate', callback: Callback<TabContentInfo>): void
 ```
 
-Subscribes to **TabContent** switch events. Unlike [on('tabChange')](arkts-arkui-arkui-uicontext-uiobserver-c.md#on-23),this API does not support listening for the initial tab display event when the **Tabs** component is initialized.
+Subscribes to **TabContent** switch events. Unlike [on('tabChange')](@ohos.arkui.UIContext:UIObserver#on(type: 'tabChange', callback: Callback<observer.TabContentInfo>)),this API does not support listening for the initial tab display event when the **Tabs** component is initialized.
 
 **Since:** 12
 
@@ -550,7 +560,7 @@ Subscribes to **TabContent** switch events. Unlike [on('tabChange')](arkts-arkui
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'tabContentUpdate' | Yes | Event type. Set to **'tabContentUpdate'** for **TabContent** page switching events. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<TabContentInfo> | Yes | Callback used to return the result. It provides information about **TabContent** switch events through **TabContentInfo**. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;TabContentInfo&gt; | Yes | Callback used to return the result. It provides information about **TabContent** switch events through **TabContentInfo**. |
 
 **Example**
 
@@ -605,6 +615,7 @@ struct TabsExample {
 ```
 
 
+<a id="on-10"></a>
 ## on('navDestinationSwitch')
 
 ```TypeScript
@@ -640,8 +651,8 @@ Subscribes to **Navigation** component page switching events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'navDestinationSwitch' | Yes | Event type. Set to **'navDestinationSwitch'** for **Navigation** component page switching events. |
-| context | UIAbilityContext \| UIContext | Yes | Context information, which is used to specify the target scope for page switching events. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<NavDestinationSwitchInfo> | Yes | Callback used to return the result. It provides page switching event information through **NavDestinationSwitchInfo**. |
+| context | [UIAbilityContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-uiabilitycontext-t.md) \| UIContext | Yes | Context information, which is used to specify the target scope for page switching events. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;NavDestinationSwitchInfo&gt; | Yes | Callback used to return the result. It provides page switching event information through **NavDestinationSwitchInfo**. |
 
 **Example**
 
@@ -754,6 +765,7 @@ struct Index {
 ```
 
 
+<a id="on-11"></a>
 ## on('navDestinationSwitch')
 
 ```TypeScript
@@ -765,7 +777,7 @@ export function on(
   ): void
 ```
 
-Subscribes to **Navigation** component page switching events. Compared with [uiObserver.on](arkts-arkui-uiobserver-on-f.md#on-11),this API supports the **observerOptions** parameter, which enables you to configure observation options.
+Subscribes to **Navigation** component page switching events. Compared with [uiObserver.on](uiObserver.on( type: 'navDestinationSwitch', context: UIAbilityContext | UIContext, callback: Callback<NavDestinationSwitchInfo> )),this API supports the **observerOptions** parameter, which enables you to configure observation options.
 
 **Since:** 12
 
@@ -792,9 +804,9 @@ Subscribes to **Navigation** component page switching events. Compared with [uiO
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'navDestinationSwitch' | Yes | Event type. Set to **'navDestinationSwitch'** for **Navigation** component page switching events. |
-| context | UIAbilityContext \| UIContext | Yes | Context information, which is used to specify the target scope for page switching events. |
+| context | [UIAbilityContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-uiabilitycontext-t.md) \| UIContext | Yes | Context information, which is used to specify the target scope for page switching events. |
 | observerOptions | [NavDestinationSwitchObserverOptions](arkts-arkui-uiobserver-navdestinationswitchobserveroptions-i.md) | Yes | Observer configuration options. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<NavDestinationSwitchInfo> | Yes | Callback used to return the result. It provides page switching event information through **NavDestinationSwitchInfo**. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;NavDestinationSwitchInfo&gt; | Yes | Callback used to return the result. It provides page switching event information through **NavDestinationSwitchInfo**. |
 
 **Example**
 

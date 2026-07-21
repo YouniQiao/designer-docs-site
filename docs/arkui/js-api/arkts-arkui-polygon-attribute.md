@@ -1,6 +1,6 @@
 # Polygon properties/events
 
-In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
 **Inheritance/Implementation:** PolygonAttribute extends [CommonShapeMethod<PolygonAttribute>](CommonShapeMethod<PolygonAttribute>)
 
@@ -10,13 +10,14 @@ In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md),
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="points"></a>
 ## points
 
 ```TypeScript
 points(value: Array<any>)
 ```
 
-Sets the vertex coordinates of the polygon. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
+Sets the vertex coordinates of the polygon. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
 
 **Since:** 7
 
@@ -32,5 +33,5 @@ Sets the vertex coordinates of the polygon. This attribute can be dynamically se
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<any> | Yes | Vertex coordinates of the polygon. A two-dimensional array is passed, and each subarray indicates the `[x, y]` coordinates of a vertex.<br>Default value: **[]** (empty array)<br>Default unit: vp<br>The **undefined** and **null** values are invalid and treated as the default value. |
+| value | Array&lt;any&gt; | Yes | Vertex coordinates of the polygon. A two-dimensional array is passed, and each subarray indicates the `[x, y]` coordinates of a vertex.<br>Default value: **[]** (empty array)<br>Default unit: vp<br>The **undefined** and **null** values are invalid and treated as the default value. |
 

@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Float32ArrayConstructor--><!--Device-unnamed-interface Float32ArrayConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -20,8 +21,9 @@ new(length: number): Float32Array
 
 | Type | Description |
 | --- | --- |
-| [Float32Array](arkts-na-lib-es2015-iterable-float32array-i.md) |  |
+| Float32Array |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -34,14 +36,15 @@ new(array: ArrayLike<number> | ArrayBufferLike): Float32Array
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| array | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<number> \| ArrayBufferLike | Yes |  |
+| array | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; \| ArrayBufferLike | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Float32Array](arkts-na-lib-es2015-iterable-float32array-i.md) |  |
+| Float32Array |  |
 
+<a id="constructor-2"></a>
 ## constructor
 
 ```TypeScript
@@ -62,8 +65,9 @@ new(buffer: ArrayBufferLike, byteOffset?: number, length?: number): Float32Array
 
 | Type | Description |
 | --- | --- |
-| [Float32Array](arkts-na-lib-es2015-iterable-float32array-i.md) |  |
+| Float32Array |  |
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -78,14 +82,15 @@ Creates an array from an array-like or iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<number> | Yes |  |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Float32Array](arkts-na-lib-es2015-iterable-float32array-i.md) |  |
+| Float32Array |  |
 
+<a id="from-1"></a>
 ## from
 
 ```TypeScript
@@ -100,16 +105,17 @@ Creates an array from an array-like or iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<T> | Yes |  |
-| mapfn | (v: T, k: number) => number | Yes |  |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;T&gt; | Yes |  |
+| mapfn | (v: T, k: number) =&gt; number | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Float32Array](arkts-na-lib-es2015-iterable-float32array-i.md) |  |
+| Float32Array |  |
 
+<a id="of"></a>
 ## of
 
 ```TypeScript
@@ -130,7 +136,7 @@ Returns a new array from a set of elements.
 
 | Type | Description |
 | --- | --- |
-| [Float32Array](arkts-na-lib-es2015-iterable-float32array-i.md) |  |
+| Float32Array |  |
 
 ## BYTES_PER_ELEMENT
 

@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getsignalinformationsync"></a>
 ## getSignalInformationSync
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the list of signal strength information of the registered network corres
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<SignalInformation> | Returns the callback for getting the instance list of the child classes derived from {@link SignalInformation}. |
+| Array&lt;SignalInformation&gt; | Returns the callback for getting the instance list of the child classes derived from {@link SignalInformation}. |
 
 **Example**
 

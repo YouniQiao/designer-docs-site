@@ -20,18 +20,18 @@ import { pasteboard } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [createData](arkts-basicservices-pasteboard-createdata-f.md#createdata-1) | Creates a **PasteData** object of the specified type. |
-| [createData](arkts-basicservices-pasteboard-createdata-f.md#createdata-2) | Creates a **PasteData** object that contains multiple types of data. |
-| [createHtmlData](arkts-basicservices-pasteboard-createhtmldata-f.md#createhtmldata-1) | Creates a **PasteData** object of the HTML type. |
-| [createHtmlTextRecord](arkts-basicservices-pasteboard-createhtmltextrecord-f.md#createhtmltextrecord-1) | Creates a **PasteDataRecord** object of the HTML text type. |
-| [createPlainTextData](arkts-basicservices-pasteboard-createplaintextdata-f.md#createplaintextdata-1) | Creates a **PasteData** object of the plain text type. |
-| [createPlainTextRecord](arkts-basicservices-pasteboard-createplaintextrecord-f.md#createplaintextrecord-1) | Creates a **PasteDataRecord** object of the plain text type. |
-| [createRecord](arkts-basicservices-pasteboard-createrecord-f.md#createrecord-1) | Creates a **PasteDataRecord** object of the specified type. |
-| [createUriData](arkts-basicservices-pasteboard-createuridata-f.md#createuridata-1) | Creates a **PasteData** object of the URI type. |
-| [createUriRecord](arkts-basicservices-pasteboard-createurirecord-f.md#createurirecord-1) | Creates a **PasteDataRecord** object of the URI type. |
-| [createWantData](arkts-basicservices-pasteboard-createwantdata-f.md#createwantdata-1) | Creates a **PasteData** object of the Want type. |
-| [createWantRecord](arkts-basicservices-pasteboard-createwantrecord-f.md#createwantrecord-1) | Creates a **PasteDataRecord** object of the Want type. |
-| [getSystemPasteboard](arkts-basicservices-pasteboard-getsystempasteboard-f.md#getsystempasteboard-1) | Obtains **SystemPasteboard** object. |
+| [createData](arkts-basicservices-pasteboard-createdata-f.md#createdata) | Creates a **PasteData** object of the specified type. |
+| [createData](arkts-basicservices-pasteboard-createdata-f.md#createdata-1) | Creates a **PasteData** object that contains multiple types of data. |
+| [createHtmlData](arkts-basicservices-pasteboard-createhtmldata-f.md#createhtmldata) | Creates a **PasteData** object of the HTML type. |
+| [createHtmlTextRecord](arkts-basicservices-pasteboard-createhtmltextrecord-f.md#createhtmltextrecord) | Creates a **PasteDataRecord** object of the HTML text type. |
+| [createPlainTextData](arkts-basicservices-pasteboard-createplaintextdata-f.md#createplaintextdata) | Creates a **PasteData** object of the plain text type. |
+| [createPlainTextRecord](arkts-basicservices-pasteboard-createplaintextrecord-f.md#createplaintextrecord) | Creates a **PasteDataRecord** object of the plain text type. |
+| [createRecord](arkts-basicservices-pasteboard-createrecord-f.md#createrecord) | Creates a **PasteDataRecord** object of the specified type. |
+| [createUriData](arkts-basicservices-pasteboard-createuridata-f.md#createuridata) | Creates a **PasteData** object of the URI type. |
+| [createUriRecord](arkts-basicservices-pasteboard-createurirecord-f.md#createurirecord) | Creates a **PasteDataRecord** object of the URI type. |
+| [createWantData](arkts-basicservices-pasteboard-createwantdata-f.md#createwantdata) | Creates a **PasteData** object of the Want type. |
+| [createWantRecord](arkts-basicservices-pasteboard-createwantrecord-f.md#createwantrecord) | Creates a **PasteDataRecord** object of the Want type. |
+| [getSystemPasteboard](arkts-basicservices-pasteboard-getsystempasteboard-f.md#getsystempasteboard) | Obtains **SystemPasteboard** object. |
 
 ### Classes
 
@@ -48,13 +48,13 @@ import { pasteboard } from '@kit.BasicServicesKit';
 | [PasteDataProperty](arkts-basicservices-pasteboard-pastedataproperty-i.md) | Defines the properties of PasteData in the pasteboard, including the timestamp, data types, pasteable range,and additional data. The defined properties can be applied to the pasteboard only with the [setProperty](arkts-basicservices-pasteboard-pastedata-i.md#setproperty-1) method. |
 | [PasteDataRecord](arkts-basicservices-pasteboard-pastedatarecord-i.md) | Provides **PasteDataRecord** APIs. A **PasteDataRecord** is an abstract definition of the content in the pasteboard. The pasteboard content consists of one or more plain text, HTML, URI, or Want records. |
 | [ProgressInfo](arkts-basicservices-pasteboard-progressinfo-i.md) | Defines the progress information. This information is reported only when [ProgressIndicator](arkts-basicservices-pasteboard-progressindicator-e.md) is set to **NONE**. |
+| [SystemPasteboard](arkts-basicservices-pasteboard-systempasteboard-i.md) | Provides **SystemPasteboard** APIs.Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using [getSystemPasteboard](arkts-basicservices-pasteboard-getsystempasteboard-f.md#getsystempasteboard-1). |
 
 <!--Del-->
 ### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [SystemPasteboard](arkts-basicservices-pasteboard-systempasteboard-i.md) | Provides **SystemPasteboard** APIs.Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using [getSystemPasteboard](arkts-basicservices-pasteboard-getsystempasteboard-f.md#getsystempasteboard-1). |
 | [SystemPasteboard](arkts-basicservices-pasteboard-systempasteboard-i-sys.md) | Provides **SystemPasteboard** APIs.Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using [getSystemPasteboard](arkts-basicservices-pasteboard-getsystempasteboard-f.md#getsystempasteboard-1). |
 <!--DelEnd-->
 
@@ -79,7 +79,7 @@ import { pasteboard } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [MAX_RECORD_NUM](arkts-basicservices-pasteboard-con.md#max_record_num) | Maximum number of records in a **PasteData** object. In versions earlier than API version 10, the value is 512,indicating that no more records can be added once the number of records reaches 512.Since API version 10, no limit is placed on the number of records in a **PasteData** object. |
+| [MAX_RECORD_NUM](arkts-basicservices-pasteboard-con.md#max_record_num) | Maximum number of records in a **PasteData** object. In versions earlier than API version 10, the value is 512,indicating that no more records can be added once the number of records reaches 512.  Since API version 10, no limit is placed on the number of records in a **PasteData** object. |
 | [MIMETYPE_PIXELMAP](arkts-basicservices-pasteboard-con.md#mimetype_pixelmap) | MIME type of the PixelMap content. |
 | [MIMETYPE_TEXT_HTML](arkts-basicservices-pasteboard-con.md#mimetype_text_html) | MIME type of the HTML content. |
 | [MIMETYPE_TEXT_PLAIN](arkts-basicservices-pasteboard-con.md#mimetype_text_plain) | MIME type of the plain text content. |

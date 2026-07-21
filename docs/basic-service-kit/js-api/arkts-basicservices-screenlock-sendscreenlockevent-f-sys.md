@@ -6,6 +6,7 @@
 import { screenLock } from '@kit.BasicServicesKit';
 ```
 
+<a id="sendscreenlockevent"></a>
 ## sendScreenLockEvent
 
 ```TypeScript
@@ -28,9 +29,9 @@ The screen lock app sends the event to the screen lock service.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | Yes | event type. |
+| event | String | Yes | event type. |
 | parameter | number | Yes | operation result of the event. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of sendScreenLockEvent. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of sendScreenLockEvent. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ screenLock.sendScreenLockEvent('unlockScreenResult', 0, (err: BusinessError, res
 ```
 
 
+<a id="sendscreenlockevent-1"></a>
 ## sendScreenLockEvent
 
 ```TypeScript
@@ -79,14 +81,14 @@ The screen lock app sends the event to the screen lock service.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | Yes | event type. |
+| event | String | Yes | event type. |
 | parameter | number | Yes | operation result of the event. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 

@@ -19,6 +19,7 @@ This module provides ExtensionAbility for word selection, allowing users to sear
 import { SelectionExtensionAbility } from '@kit.BasicServicesKit';
 ```
 
+<a id="onconnect"></a>
 ## onConnect
 
 ```TypeScript
@@ -76,6 +77,7 @@ class ServiceExtAbility extends SelectionExtensionAbility {
 
 ```
 
+<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript

@@ -6,13 +6,14 @@
 import { childProcessManager } from '@kit.AbilityKit';
 ```
 
+<a id="startarkchildprocess"></a>
 ## startArkChildProcess
 
 ```TypeScript
 function startArkChildProcess(srcEntry: string, args: ChildProcessArgs, options?: ChildProcessOptions): Promise<number>
 ```
 
-Starts an [ArkTS child process](../../../../application-models/ability-terminology.md#arkts-child-process). This API uses a promise to return the result.This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 801is returned.
+Starts an [ArkTS child process](docroot://application-models/ability-terminology.md#arkts-child-process). This API uses a promise to return the result.This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 801is returned.
 
 > **NOTE**  
 >  
@@ -43,7 +44,7 @@ Starts an [ArkTS child process](../../../../application-models/ability-terminolo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the PID of the child process. |
+| Promise&lt;number&gt; | Promise used to return the PID of the child process. |
 
 **Error codes:**
 

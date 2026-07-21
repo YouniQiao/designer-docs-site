@@ -6,6 +6,7 @@
 import { pointer } from '@kit.InputKit';
 ```
 
+<a id="gettouchpadrightclicktype"></a>
 ## getTouchpadRightClickType
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the touchpad right-click menu type. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RightClickType> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and the object is the touchpad right-click menu type. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RightClickType&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and the object is the touchpad right-click menu type. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ struct Index {
 ```
 
 
+<a id="gettouchpadrightclicktype-1"></a>
 ## getTouchpadRightClickType
 
 ```TypeScript
@@ -84,7 +86,7 @@ Obtains the touchpad right-click menu type. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RightClickType> | Promise used to return the touchpad right-click menu type. |
+| Promise&lt;RightClickType&gt; | Promise used to return the touchpad right-click menu type. |
 
 **Error codes:**
 

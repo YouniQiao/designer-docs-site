@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="querybundlestatsinfos"></a>
 ## queryBundleStatsInfos
 
 ```TypeScript
@@ -37,7 +38,7 @@ Queries bundle statistics information of applications.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<BundleStatsInfo> | returns the bundle statistics information of the applications. |
+| Array&lt;BundleStatsInfo&gt; | returns the bundle statistics information of the applications. |
 
 **Error codes:**
 

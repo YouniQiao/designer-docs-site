@@ -6,6 +6,7 @@
 import { deviceManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="createdevicemanager"></a>
 ## createDeviceManager
 
 ```TypeScript
@@ -31,7 +32,7 @@ Creates a **DeviceManager** instance.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name of the application. The value is a string of 1 to 255 characters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DeviceManager> | Yes | Callback used to return the **DeviceManager** instance created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DeviceManager&gt; | Yes | Callback used to return the **DeviceManager** instance created. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { relationalStore } from '@kit.ArkData';
 ```
 
+<a id="getinsertsqlinfo"></a>
 ## getInsertSqlInfo
 
 ```TypeScript

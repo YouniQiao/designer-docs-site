@@ -1,6 +1,6 @@
 # GridRow properties/events
 
-In addition to the [universal events](arkts-arkui-common-commonmethod-c.md), the following events are supported.
+In addition to the [universal events](arkts-arkui-commonmethod-c.md), the following events are supported.
 
 **Inheritance/Implementation:** GridRowAttribute extends [CommonMethod<GridRowAttribute>](CommonMethod<GridRowAttribute>)
 
@@ -10,6 +10,7 @@ In addition to the [universal events](arkts-arkui-common-commonmethod-c.md), the
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="alignitems"></a>
 ## alignItems
 
 ```TypeScript
@@ -34,8 +35,9 @@ Sets the alignment mode of the **GridCol** components along the vertical main ax
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [ItemAlign](../arkts-apis/arkts-arkui-enums-itemalign-e.md) | Yes | Alignment mode of the **GridCol** components along the vertical main axis of the **GridRow** component.<br>Default value: **ItemAlign.Start**<br>Invalid values are treated as the default value.<br><br>**NOTE**<br>**ItemAlign** supports the following enums: **ItemAlign.Start**, **ItemAlign.Center**,**ItemAlign.End**, and **ItemAlign.Stretch**. |
+| value | [ItemAlign](../arkts-apis/arkts-arkui-itemalign-e.md) | Yes | Alignment mode of the **GridCol** components along the vertical main axis of the **GridRow** component.<br>Default value: **ItemAlign.Start**<br>Invalid values are treated as the default value.<br><br>**NOTE**<br>**ItemAlign** supports the following enums: **ItemAlign.Start**, **ItemAlign.Center**,**ItemAlign.End**, and **ItemAlign.Stretch**. |
 
+<a id="onbreakpointchange"></a>
 ## onBreakpointChange
 
 ```TypeScript
@@ -47,7 +49,7 @@ Triggered when the breakpoint changes.
 > **NOTE**  
 > >  
 > When [breakpointsreference](#breakpointsreference) is set to **BreakpointsReference.ComponentSize**, you are not  
-> advised to dynamically change the [padding](arkts-arkui-common-commonmethod-c.md#padding-1) or [margin](arkts-arkui-common-commonmethod-c.md#margin-1)  
+> advised to dynamically change the [padding](arkts-arkui-commonmethod-c.md#padding-1) or [margin](arkts-arkui-commonmethod-c.md#margin-1)  
 > attribute value of the **GridRow** component in the **onBreakpointChange** callback.
 
 **Since:** 9
@@ -64,5 +66,5 @@ Triggered when the breakpoint changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (breakpoints: string) => void | Yes | Breakpoint change. The value can be **"xs"**, **"sm"**, **"md"**, **"lg"**, **"xl"**, or **"xxl"**. |
+| callback | (breakpoints: string) =&gt; void | Yes | Breakpoint change. The value can be **"xs"**, **"sm"**, **"md"**, **"lg"**, **"xl"**, or **"xxl"**. |
 

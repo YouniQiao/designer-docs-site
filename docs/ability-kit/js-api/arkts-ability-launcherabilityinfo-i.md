@@ -1,12 +1,10 @@
 # LauncherAbilityInfo
 
-The module describes the ability information of the launcher application. The information can be obtained by calling
-[getLauncherAbilityInfoSync](arkts-ability-getlauncherabilityinfosync-f.md#getlauncherabilityinfosync-1)
-<!--Del--> or
-[getLauncherAbilityInfo](./../@ohos.bundle.launcherBundleManager:launcherBundleManager.getLauncherAbilityInfo(bundleName: string, userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>))
-<!--DelEnd-->.
+The module describes the ability information of the launcher application. The information can be obtained by calling [getLauncherAbilityInfoSync](arkts-ability-launcherbundlemanager-getlauncherabilityinfosync-f.md#getlauncherabilityinfosync-1)<!--Del--> or [getLauncherAbilityInfo](arkts-ability-launcherbundlemanager-getlauncherabilityinfo-f-sys.md#getlauncherabilityinfo-1)<!--DelEnd-->.
 
 **Since:** 18
+
+<!--Device-unnamed-export interface LauncherAbilityInfo--><!--Device-unnamed-export interface LauncherAbilityInfo-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Launcher
 
@@ -22,6 +20,8 @@ Application information of the launcher ability.
 
 **Since:** 18
 
+<!--Device-LauncherAbilityInfo-readonly applicationInfo: ApplicationInfo--><!--Device-LauncherAbilityInfo-readonly applicationInfo: ApplicationInfo-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Launcher
 
 ## elementName
@@ -35,6 +35,8 @@ Element name of the launcher ability.
 **Type:** ElementName
 
 **Since:** 18
+
+<!--Device-LauncherAbilityInfo-readonly elementName: ElementName--><!--Device-LauncherAbilityInfo-readonly elementName: ElementName-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Launcher
 
@@ -50,6 +52,8 @@ Icon ID of the launcher ability.
 
 **Since:** 18
 
+<!--Device-LauncherAbilityInfo-readonly iconId: long--><!--Device-LauncherAbilityInfo-readonly iconId: long-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Launcher
 
 ## installTime
@@ -63,6 +67,8 @@ Timestamp when the launcher ability was installed, in milliseconds.
 **Type:** number
 
 **Since:** 18
+
+<!--Device-LauncherAbilityInfo-readonly installTime: long--><!--Device-LauncherAbilityInfo-readonly installTime: long-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Launcher
 
@@ -78,6 +84,8 @@ Label ID of the launcher ability.
 
 **Since:** 18
 
+<!--Device-LauncherAbilityInfo-readonly labelId: long--><!--Device-LauncherAbilityInfo-readonly labelId: long-End-->
+
 **System capability:** SystemCapability.BundleManager.BundleFramework.Launcher
 
 ## userId
@@ -91,6 +99,8 @@ User ID of the launcher ability.
 **Type:** number
 
 **Since:** 18
+
+<!--Device-LauncherAbilityInfo-readonly userId: int--><!--Device-LauncherAbilityInfo-readonly userId: int-End-->
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Launcher
 

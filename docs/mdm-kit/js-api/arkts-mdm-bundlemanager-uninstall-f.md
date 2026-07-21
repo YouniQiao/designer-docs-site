@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.MDMKit';
 ```
 
+<a id="uninstall"></a>
 ## uninstall
 
 ```TypeScript
@@ -44,7 +45,7 @@ Uninstalls an application of the current or specified user. The **isKeepData** p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. An error object will be thrown if the application fails to be uninstalled. |
+| Promise&lt;void&gt; | Promise that returns no value. An error object will be thrown if the application fails to be uninstalled. |
 
 **Error codes:**
 

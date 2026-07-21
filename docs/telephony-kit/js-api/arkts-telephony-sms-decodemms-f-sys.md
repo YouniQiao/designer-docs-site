@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="decodemms"></a>
 ## decodeMms
 
 ```TypeScript
@@ -26,8 +27,8 @@ Decode the message content.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mmsFilePathName | string \| Array<number> | Yes | Indicates the path name of the multimedia message file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<MmsInformation> | Yes | Indicates the callback for getting a {@code MmsInformation}object. |
+| mmsFilePathName | string \| Array&lt;number&gt; | Yes | Indicates the path name of the multimedia message file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;MmsInformation&gt; | Yes | Indicates the callback for getting a {@code MmsInformation}object. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ sms.decodeMms(mmsPdu, (err: BusinessError, data: sms.MmsInformation) => {
 ```
 
 
+<a id="decodemms-1"></a>
 ## decodeMms
 
 ```TypeScript
@@ -79,13 +81,13 @@ Decode the message content.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mmsFilePathName | string \| Array<number> | Yes | Indicates the path name of the multimedia message file. |
+| mmsFilePathName | string \| Array&lt;number&gt; | Yes | Indicates the path name of the multimedia message file. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MmsInformation> | Returns a {@code MmsInformation} object. |
+| Promise&lt;MmsInformation&gt; | Returns a {@code MmsInformation} object. |
 
 **Error codes:**
 

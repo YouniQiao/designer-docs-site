@@ -1,5 +1,6 @@
 # encodeURIComponent
 
+<a id="encodeuricomponent"></a>
 ## encodeURIComponent
 
 ```TypeScript

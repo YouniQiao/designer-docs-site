@@ -6,6 +6,7 @@
 import { reminderAgent } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="publishreminder"></a>
 ## publishReminder
 
 ```TypeScript
@@ -31,7 +32,7 @@ Publishes a reminder through the reminder agent. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | reminderReq | [ReminderRequest](arkts-backgroundtasks-reminderagentmanager-reminderrequest-i.md) | Yes | Reminder to be published. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the published reminder's ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the published reminder's ID. |
 
 **Example**
 
@@ -51,6 +52,7 @@ reminderAgent.publishReminder(timer, (err: BusinessError, reminderId: number) =>
 ```
 
 
+<a id="publishreminder-1"></a>
 ## publishReminder
 
 ```TypeScript
@@ -81,7 +83,7 @@ Publishes a reminder through the reminder agent. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | reminder id. |
+| Promise&lt;number&gt; | reminder id. |
 
 **Example**
 

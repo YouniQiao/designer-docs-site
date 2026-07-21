@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="authorizeadmin"></a>
 ## authorizeAdmin
 
 ```TypeScript
@@ -32,7 +33,7 @@ Authorizes the administrator permission to a specified application. This API use
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | bundleName | string | Yes | Bundle name of the application to be authorized with the administrator rights. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ adminManager.authorizeAdmin(wantTemp, bundleName, (err) => {
 ```
 
 
+<a id="authorizeadmin-1"></a>
 ## authorizeAdmin
 
 ```TypeScript
@@ -101,7 +103,7 @@ Authorizes the administrator permission to a specified application. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. An error object is thrown when the permissions of a specified application administrator fail to be granted. |
+| Promise&lt;void&gt; | Promise that returns no value. An error object is thrown when the permissions of a specified application administrator fail to be granted. |
 
 **Error codes:**
 

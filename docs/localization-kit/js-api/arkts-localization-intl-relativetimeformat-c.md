@@ -18,6 +18,7 @@ Provides the relative time formatting capability.
 import { intl } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -48,6 +49,7 @@ let formatter: intl.RelativeTimeFormat = new intl.RelativeTimeFormat();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -72,7 +74,7 @@ Creates a **RelativeTimeFormat** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string \| Array<string> | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
+| locale | string \| Array&lt;string&gt; | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
 | options | [RelativeTimeFormatInputOptions](arkts-localization-intl-relativetimeformatinputoptions-i.md) | No | Options for creating a **RelativeTimeFormat** object. |
 
 **Example**
@@ -89,6 +91,7 @@ let formatter: intl.RelativeTimeFormat = new intl.RelativeTimeFormat('zh-CN', {
 
 ```
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -134,6 +137,7 @@ let formatResult: string = formatter.format(3, 'quarter'); // formatResult = '3 
 
 ```
 
+<a id="formattoparts"></a>
 ## formatToParts
 
 ```TypeScript
@@ -165,7 +169,7 @@ Formats the relative time
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<object> | Components of the formatted result. |
+| Array&lt;object&gt; | Components of the formatted result. |
 
 **Example**
 
@@ -178,6 +182,7 @@ let parts: Array<object> = formatter.formatToParts(10, 'seconds'); // parts = [ 
 
 ```
 
+<a id="resolvedoptions"></a>
 ## resolvedOptions
 
 ```TypeScript

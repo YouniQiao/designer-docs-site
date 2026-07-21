@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface WeakMap<K extends object, V>--><!--Device-unnamed-interface WeakMap<K extends object, V>-End-->
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -24,6 +25,7 @@ Removes the specified element from the WeakMap.
 | --- | --- |
 | boolean |  |
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -44,6 +46,7 @@ get(key: K): V | undefined
 | --- | --- |
 | V |  |
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -64,6 +67,7 @@ has(key: K): boolean
 | --- | --- |
 | boolean |  |
 
+<a id="set"></a>
 ## set
 
 ```TypeScript

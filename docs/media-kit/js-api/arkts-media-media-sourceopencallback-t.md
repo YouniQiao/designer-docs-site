@@ -22,11 +22,11 @@ This callback function is implemented by applications to handle resource open re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| request | MediaSourceLoadingRequest | Yes | Parameters for the resource open request, including detailedinformation about the requested resource and the data push method. |
+| request | [MediaSourceLoadingRequest](arkts-media-media-mediasourceloadingrequest-i.md) | Yes | Parameters for the resource open request, including detailed information about the requested resource and the data push method.  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| long | Handle for the current resource open request. A value greater than 0 means the request issuccessful, whereas a value less than or equal to 0 means it fails.<br> - The handle for the request object is unique. |
+| number | Handle for the current resource open request. A value greater than 0 means the request is successful, whereas a value less than or equal to 0 means it fails. <br> - The handle for the request object is unique.  |
 

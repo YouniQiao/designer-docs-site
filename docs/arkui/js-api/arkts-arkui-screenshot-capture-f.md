@@ -6,6 +6,7 @@
 import { screenshot } from '@kit.ArkUI';
 ```
 
+<a id="capture"></a>
 ## capture
 
 ```TypeScript
@@ -39,7 +40,7 @@ This API allows you to take screenshots of different screens by setting various 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return a PixelMap object. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return a PixelMap object. |
 
 **Error codes:**
 

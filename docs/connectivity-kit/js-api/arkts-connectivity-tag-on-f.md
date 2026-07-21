@@ -6,6 +6,7 @@
 import { tag } from '@kit.ConnectivityKit';
 ```
 
+<a id="on"></a>
 ## on('readerMode')
 
 ```TypeScript
@@ -31,7 +32,7 @@ Set reader mode enabled when the specific application is foreground. Dispatches 
 | type | 'readerMode' | Yes | The callback type to be registered. |
 | elementName | [ElementName](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-elementname-t.md) | Yes | The element name of application, must include the bundleName and abilityName. |
 | discTech | number[] | Yes | The technologies list to set for discovering. From {@link NFC_A} to {@link MIFARE_ULTRALIGHT}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<TagInfo> | Yes | The callback to dispatched the TagInfo object for application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;TagInfo&gt; | Yes | The callback to dispatched the TagInfo object for application. |
 
 **Error codes:**
 
@@ -44,6 +45,7 @@ Set reader mode enabled when the specific application is foreground. Dispatches 
 | [3100202](../errorcode-nfc.md#3100202-application-status-error) | The element state is invalid. |
 
 
+<a id="on-1"></a>
 ## on('readerModeWithInterval')
 
 ```TypeScript
@@ -87,7 +89,7 @@ Set reader mode enabled when the specific application is on foreground and set c
 | type | 'readerModeWithInterval' | Yes | The callback type to be registered. |
 | elementName | [ElementName](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-elementname-t.md) | Yes | The element name of application, must include the bundleName and abilityName. |
 | discTech | number[] | Yes | The technologies list to set for discovering.From {@link NFC_A} to {@link MIFARE_ULTRALIGHT}. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TagInfo> | Yes | The callback to dispatched the TagInfo object for application. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TagInfo&gt; | Yes | The callback to dispatched the TagInfo object for application. |
 | interval | number | Yes | The interval for reader presence check. |
 
 **Error codes:**

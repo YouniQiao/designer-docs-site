@@ -14,6 +14,7 @@ FetchResult provides APIs to manage the file retrieval result.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -37,6 +38,7 @@ Closes this FetchResult instance to invalidate it. After this instance is releas
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="contains"></a>
 ## contains
 
 ```TypeScript
@@ -65,8 +67,9 @@ Checks whether the specified file asset is contained in the result set. This API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** indicates that the specified file asset is contained in the result set, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** indicates that the specified file asset is contained in the result set, and **false** indicates the opposite. |
 
+<a id="getallobjects"></a>
 ## getAllObjects
 
 ```TypeScript
@@ -87,7 +90,7 @@ Obtains all the file assets in the result set. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<T>> | Yes | Callback function. If all file assets in the result set are successfully obtained, **err** is **undefined**, and **data** is the specific search result. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;T&gt;&gt; | Yes | Callback function. If all file assets in the result set are successfully obtained, **err** is **undefined**, and **data** is the specific search result. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -96,6 +99,7 @@ Obtains all the file assets in the result set. This API uses an asynchronous cal
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getallobjects-1"></a>
 ## getAllObjects
 
 ```TypeScript
@@ -116,7 +120,7 @@ Obtains all the file assets in the result set. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<T>> | Promise used to return an array of all file assets. |
+| Promise&lt;Array&lt;T&gt;&gt; | Promise used to return an array of all file assets. |
 
 **Error codes:**
 
@@ -125,6 +129,7 @@ Obtains all the file assets in the result set. This API uses a promise to return
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getcount"></a>
 ## getCount
 
 ```TypeScript
@@ -154,6 +159,7 @@ Obtains the total number of files in the result set.
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getfirstobject"></a>
 ## getFirstObject
 
 ```TypeScript
@@ -174,7 +180,7 @@ Obtains the first file asset in the result set. This API uses an asynchronous ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback function. If the first file asset in the result set is successfully obtained, **err** is **undefined**, and **data** is the specific search result. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback function. If the first file asset in the result set is successfully obtained, **err** is **undefined**, and **data** is the specific search result. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -183,6 +189,7 @@ Obtains the first file asset in the result set. This API uses an asynchronous ca
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getfirstobject-1"></a>
 ## getFirstObject
 
 ```TypeScript
@@ -203,7 +210,7 @@ Obtains the first file asset in the result set. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the first object in the result set. |
+| Promise&lt;T&gt; | Promise used to return the first object in the result set. |
 
 **Error codes:**
 
@@ -212,6 +219,7 @@ Obtains the first file asset in the result set. This API uses a promise to retur
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getindex"></a>
 ## getIndex
 
 ```TypeScript
@@ -240,8 +248,9 @@ Obtains the index of a specified file asset in the result set. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the object exists in the result set, the corresponding index is returned. Otherwise, **-1** is returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the object exists in the result set, the corresponding index is returned. Otherwise, **-1** is returned. |
 
+<a id="getlastobject"></a>
 ## getLastObject
 
 ```TypeScript
@@ -262,7 +271,7 @@ Obtains the last file asset in the result set. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback function. If the last file asset in the result set is successfully obtained, **err** is **undefined**, and **data** is the specific search result. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback function. If the last file asset in the result set is successfully obtained, **err** is **undefined**, and **data** is the specific search result. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -271,6 +280,7 @@ Obtains the last file asset in the result set. This API uses an asynchronous cal
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getlastobject-1"></a>
 ## getLastObject
 
 ```TypeScript
@@ -291,7 +301,7 @@ Obtains the last file asset in the result set. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the last object in the result set. |
+| Promise&lt;T&gt; | Promise used to return the last object in the result set. |
 
 **Error codes:**
 
@@ -300,6 +310,7 @@ Obtains the last file asset in the result set. This API uses a promise to return
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getnextobject"></a>
 ## getNextObject
 
 ```TypeScript
@@ -322,7 +333,7 @@ Before using this API, you must use [isAfterLast()](arkts-medialibrary-photoacce
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback function. If the next file asset in the result set is successfully obtained, **err** is **undefined**, and **data** is the specific search result. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback function. If the next file asset in the result set is successfully obtained, **err** is **undefined**, and **data** is the specific search result. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -331,6 +342,7 @@ Before using this API, you must use [isAfterLast()](arkts-medialibrary-photoacce
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getnextobject-1"></a>
 ## getNextObject
 
 ```TypeScript
@@ -353,7 +365,7 @@ Before using this API, you must use [isAfterLast()](arkts-medialibrary-photoacce
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the next object in the result set. |
+| Promise&lt;T&gt; | Promise used to return the next object in the result set. |
 
 **Error codes:**
 
@@ -362,6 +374,7 @@ Before using this API, you must use [isAfterLast()](arkts-medialibrary-photoacce
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getobjectbyposition"></a>
 ## getObjectByPosition
 
 ```TypeScript
@@ -383,7 +396,7 @@ Obtains a file asset with the specified index in the result set. This API uses a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the file asset to obtain. The value starts from **0**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback function. If the file asset with the specified index in the result set is successfully obtained, **err** is **undefined**, and **data** is the specific search result.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback function. If the file asset with the specified index in the result set is successfully obtained, **err** is **undefined**, and **data** is the specific search result.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -392,6 +405,7 @@ Obtains a file asset with the specified index in the result set. This API uses a
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getobjectbyposition-1"></a>
 ## getObjectByPosition
 
 ```TypeScript
@@ -418,7 +432,7 @@ Obtains a file asset with the specified index in the result set. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the file asset obtained. |
+| Promise&lt;T&gt; | Promise used to return the file asset obtained. |
 
 **Error codes:**
 
@@ -427,6 +441,7 @@ Obtains a file asset with the specified index in the result set. This API uses a
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getobjectsbyindexset"></a>
 ## getObjectsByIndexSet
 
 ```TypeScript
@@ -455,7 +470,7 @@ Obtains the file asset array corresponding to the specified index set in the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T[]> | Promise object, which returns the file asset array corresponding to the specified index set. |
+| Promise&lt;T[]&gt; | Promise object, which returns the file asset array corresponding to the specified index set. |
 
 **Error codes:**
 
@@ -463,6 +478,7 @@ Obtains the file asset array corresponding to the specified index set in the res
 | --- | --- |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:<br>1.The indexSet is null, undefined or empty.<br>2.The indexSet length is bigger than 500.<br>3.The max value of indexSet is equal or bigger than the fetch result length.<br>4.The min value of indexSet is less than 0. |
 
+<a id="isafterlast"></a>
 ## isAfterLast
 
 ```TypeScript

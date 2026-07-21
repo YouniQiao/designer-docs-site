@@ -10,6 +10,7 @@ The context of Photo Editor extension. It allows access to PhotoEditorExtension-
 
 **System capability:** SystemCapability.Ability.AppExtension.PhotoEditorExtension
 
+<a id="saveeditedcontentwithimage"></a>
 ## saveEditedContentWithImage
 
 ```TypeScript
@@ -35,7 +36,7 @@ Save image data by image pixmap.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Returns the result of save. |
+| Promise&lt;AbilityResult&gt; | Returns the result of save. |
 
 **Error codes:**
 
@@ -46,6 +47,7 @@ Save image data by image pixmap.
 | [29600002](../errorcode-ability.md#29600002-internal-error-during-image-editing) | Image input error. |
 | [29600003](../errorcode-ability.md#29600003-image-too-large) | Image too big. |
 
+<a id="saveeditedcontentwithuri"></a>
 ## saveEditedContentWithUri
 
 ```TypeScript
@@ -70,7 +72,7 @@ Save image data by uri.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Returns the result of save. |
+| Promise&lt;AbilityResult&gt; | Returns the result of save. |
 
 **Error codes:**
 

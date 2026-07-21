@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="getintervalsincelastinput"></a>
 ## getIntervalSinceLastInput
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the interval (including the device sleep time) elapsed since the last sy
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the time elapsed since the last system input event, in microseconds (μs). |
+| Promise&lt;number&gt; | Promise used to return the time elapsed since the last system input event, in microseconds (μs). |
 
 **Example**
 

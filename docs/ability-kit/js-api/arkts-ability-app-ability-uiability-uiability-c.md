@@ -16,6 +16,7 @@ Application component that has the UI. It provides lifecycle callbacks such as c
 import { Callee, Caller, OnReleaseCallback, OnRemoteStateChangeCallback, CalleeCallback } from '@kit.AbilityKit';
 ```
 
+<a id="onbackpressed"></a>
 ## onBackPressed
 
 ```TypeScript
@@ -56,6 +57,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="onbackground"></a>
 ## onBackground
 
 ```TypeScript
@@ -91,6 +93,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="oncollaborate"></a>
 ## onCollaborate
 
 ```TypeScript
@@ -102,7 +105,7 @@ Callback invoked to return the collaboration result in multi-device collaboratio
 > **NOTE**  
 >  
 > - This callback does not support ability launch in  
-> [specified mode](../../../../application-models/uiability-launch-type.md#specified).  
+> [specified mode](docroot://application-models/uiability-launch-type.md#specified).  
 >  
 > - When you use methods such as  
 > [startAbility](arkts-ability-uiabilitycontext-c.md#startability-1)  
@@ -110,10 +113,10 @@ Callback invoked to return the collaboration result in multi-device collaboratio
 > [Flags](arkts-ability-wantconstant-flags-e.md) in the Want object.  
 >  
 > - During a  
-> [cold start](../../../../application-models/uiability-intra-device-interaction.md#cold-starting-uiability), this  
+> [cold start](docroot://application-models/uiability-intra-device-interaction.md#cold-starting-uiability), this  
 > callback must be invoked before [onForeground](arkts-ability-app-ability-uiability-uiability-c.md#onforeground-1) or after  
 > [onBackground](arkts-ability-app-ability-uiability-uiability-c.md#onbackground-1). During a  
-> [hot start](../../../../application-models/uiability-intra-device-interaction.md#hot-starting-uiability), this  
+> [hot start](docroot://application-models/uiability-intra-device-interaction.md#hot-starting-uiability), this  
 > callback must be invoked before [onNewWant](arkts-ability-app-ability-uiability-uiability-c.md#onnewwant-1).
 
 **Since:** 18
@@ -128,7 +131,7 @@ Callback invoked to return the collaboration result in multi-device collaboratio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Want parameter, which supports only the key **"ohos.extra.param.key.supportCollaborateIndex"**. The key can be used to obtain the data passed by the caller and perform corresponding processing. |
+| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Want parameter, which supports only the key **"ohos.extra.param.key.supportCollaborateIndex"**. The key can be used to obtain the data passed by the caller and perform corresponding processing. |
 
 **Return value:**
 
@@ -149,6 +152,7 @@ export default class MyAbility extends UIAbility {
 
 ```
 
+<a id="oncontinue"></a>
 ## onContinue
 
 ```TypeScript
@@ -179,14 +183,14 @@ Called when a UIAbility is to be migrated across devices. You can save service d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Data to be migrated.<br>**Since:** 11 |
+| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Data to be migrated.<br>**Since:** 11 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
 | AbilityConstant.OnContinueResult | Return the result of onContinue.<br>**Applicable version:** 9 - 11 |
-| AbilityConstant.OnContinueResult \| Promise<AbilityConstant.OnContinueResult> | Whether the migration is accepted. The options are as follows:<br>- **AGREE**: The migration is allowed.<br>- **REJECT**: The migration is rejected, for example, when an application is abnormal in **onContinue()**.<br>- **MISMATCH**: The application versions of the source and target devices do not match. The application on the source device can obtain the version of the target application from **onContinue**. If the ability continuation cannot be performed due to version mismatch, this result is returned.<br> This callback comes in pairs with **onWindowStageRestore**. In ability continuation scenarios, the source UIAbility triggers **onContinue** to save custom data, and the target UIAbility triggers **onWindowStageRestore** to restore the custom data.<br>**Applicable version:** 12 and later |
+| AbilityConstant.OnContinueResult \| Promise&lt;AbilityConstant.OnContinueResult&gt; | Whether the migration is accepted. The options are as follows:<br>- **AGREE**: The migration is allowed.<br>- **REJECT**: The migration is rejected, for example, when an application is abnormal in **onContinue()**.<br>- **MISMATCH**: The application versions of the source and target devices do not match. The application on the source device can obtain the version of the target application from **onContinue**. If the ability continuation cannot be performed due to version mismatch, this result is returned.<br> This callback comes in pairs with **onWindowStageRestore**. In ability continuation scenarios, the source UIAbility triggers **onContinue** to save custom data, and the target UIAbility triggers **onWindowStageRestore** to restore the custom data.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -229,13 +233,14 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
 onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void
 ```
 
-Called when a UIAbility instance is created. You can execute initialization logic (such as defining variables and loading resources) in this callback. This callback is invoked during a [cold start](../../../../application-models/uiability-intra-device-interaction.md#cold-starting-uiability) of the UIAbility.
+Called when a UIAbility instance is created. You can execute initialization logic (such as defining variables and loading resources) in this callback. This callback is invoked during a [cold start](docroot://application-models/uiability-intra-device-interaction.md#cold-starting-uiability) of the UIAbility.
 
 This API returns the result synchronously and does not support asynchronous callback.
 
@@ -272,6 +277,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -333,6 +339,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="ondidbackground"></a>
 ## onDidBackground
 
 ```TypeScript
@@ -406,6 +413,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="ondidforeground"></a>
 ## onDidForeground
 
 ```TypeScript
@@ -430,6 +438,7 @@ This API returns the result synchronously and does not support asynchronous call
 
 For details, see [onWillForeground](#onwillforeground20).
 
+<a id="ondump"></a>
 ## onDump
 
 ```TypeScript
@@ -452,13 +461,13 @@ Called when UIAbility data is dumped by running the dump command during applicat
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Parameters for the dump command. |
+| params | Array&lt;string&gt; | Yes | Parameters for the dump command. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Information returned by the dump operation. |
+| Array&lt;string&gt; | Information returned by the dump operation. |
 
 **Example**
 
@@ -474,6 +483,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onforeground"></a>
 ## onForeground
 
 ```TypeScript
@@ -508,6 +518,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onnewwant"></a>
 ## onNewWant
 
 ```TypeScript
@@ -549,6 +560,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onpreparetoterminate"></a>
 ## onPrepareToTerminate
 
 ```TypeScript
@@ -567,7 +579,7 @@ Triggered by the system just before the UIAbility is about to close (for example
 > UIAbility.  
 >  
 > - Additionally, if the application or a third-party framework registers a listener for  
-> [window.WindowStage.on('windowStageClose')](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#onwindowstageclose14)  
+> [window.WindowStage.on('windowStageClose')](docroot://reference/apis-arkui/arkts-apis-window-WindowStage.md#onwindowstageclose14)  
 > , this callback function is not executed.
 
 **Since:** 10
@@ -622,6 +634,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="onpreparetoterminateasync"></a>
 ## onPrepareToTerminateAsync
 
 ```TypeScript
@@ -641,7 +654,7 @@ You can return **true** to block the current closure attempt and then manually c
 > UIAbility.  
 >  
 > - Additionally, if the application or a third-party framework registers a listener for  
-> [window.WindowStage.on('windowStageClose')](../../../../reference/apis-arkui/arkts-apis-window-WindowStage.md#onwindowstageclose14)  
+> [window.WindowStage.on('windowStageClose')](docroot://reference/apis-arkui/arkts-apis-window-WindowStage.md#onwindowstageclose14)  
 > , this callback function is not executed.  
 >  
 > - If an asynchronous callback crashes, it will be handled as a timeout. If the UIAbility does not respond within  
@@ -663,7 +676,7 @@ You can return **true** to block the current closure attempt and then manually c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result.<br>The value <code>true</code> means that the termination process is canceled.<br>The value <code>false</code> means to continue terminating the UIAbility. |
+| Promise&lt;boolean&gt; | Promise used to return the result.<br>The value <code>true</code> means that the termination process is canceled.<br>The value <code>false</code> means to continue terminating the UIAbility. |
 
 **Example**
 
@@ -681,6 +694,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="onsavestate"></a>
 ## onSaveState
 
 ```TypeScript
@@ -710,7 +724,7 @@ This API must be used with [appRecovery](arkts-app-ability-apprecovery.md). When
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | reason | AbilityConstant.StateType | Yes | Reason for triggering the application to save its state. Currently,only **APP_RECOVERY** (fault recovery scenario) is supported. |
-| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Custom application state data, which is stored in **Want.parameters** in [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate-1) when the application restarts.<br>**Since:** 11 |
+| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Custom application state data, which is stored in **Want.parameters** in [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate-1) when the application restarts.<br>**Since:** 11 |
 
 **Return value:**
 
@@ -733,6 +747,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onsavestateasync"></a>
 ## onSaveStateAsync
 
 ```TypeScript
@@ -756,13 +771,13 @@ This API must be used with [appRecovery](arkts-app-ability-apprecovery.md). When
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | stateType | AbilityConstant.StateType | Yes | Reason for triggering the application to save its state. Currently, only **APP_RECOVERY** (fault recovery scenario) is supported. |
-| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Custom application state data, which is stored in **Want.parameters** in [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate-1) when the application restarts. |
+| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Custom application state data, which is stored in **Want.parameters** in [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate-1) when the application restarts. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityConstant.OnSaveResult> | Promise used to return the result. An object indicating the data  -saving policy (for example, all denied, all allowed, or only allowed in fault recovery scenarios). |
+| Promise&lt;AbilityConstant.OnSaveResult&gt; | Promise used to return the result. An object indicating the data   -saving policy (for example, all denied, all allowed, or only allowed in fault recovery scenarios). |
 
 **Example**
 
@@ -781,6 +796,7 @@ class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onshare"></a>
 ## onShare
 
 ```TypeScript
@@ -803,7 +819,7 @@ Called when an atomic service is shared across devices. You can set the title, a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Data to share.<br>**Since:** 11 |
+| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Data to share.<br>**Since:** 11 |
 
 **Example**
 
@@ -819,6 +835,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onwillbackground"></a>
 ## onWillBackground
 
 ```TypeScript
@@ -870,6 +887,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onwillforeground"></a>
 ## onWillForeground
 
 ```TypeScript
@@ -945,6 +963,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="onwindowstagecreate"></a>
 ## onWindowStageCreate
 
 ```TypeScript
@@ -991,6 +1010,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onwindowstagedestroy"></a>
 ## onWindowStageDestroy
 
 ```TypeScript
@@ -1026,6 +1046,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onwindowstagerestore"></a>
 ## onWindowStageRestore
 
 ```TypeScript
@@ -1039,8 +1060,8 @@ Called when the page stack is restored for the target UIAbility during cross-dev
 > When an application is launched as a result of a migration, the **onWindowStageRestore()** lifecycle callback  
 > function, rather than **onWindowStageCreate()**, is triggered following [onCreate()](arkts-ability-app-ability-uiability-uiability-c.md#oncreate-1) or  
 > [onNewWant()](arkts-ability-app-ability-uiability-uiability-c.md#onnewwant-1). This sequence occurs for both  
-> [cold start](../../../../application-models/uiability-intra-device-interaction.md#cold-starting-uiability) and  
-> [hot start](../../../../application-models/uiability-intra-device-interaction.md#hot-starting-uiability).
+> [cold start](docroot://application-models/uiability-intra-device-interaction.md#cold-starting-uiability) and  
+> [hot start](docroot://application-models/uiability-intra-device-interaction.md#hot-starting-uiability).
 
 **Since:** 9
 
@@ -1073,6 +1094,7 @@ export default class MyUIAbility extends UIAbility {
 
 ```
 
+<a id="onwindowstagewilldestroy"></a>
 ## onWindowStageWillDestroy
 
 ```TypeScript
@@ -1199,7 +1221,7 @@ Want in the most recent request to launch the UIAbility.
 launchWant: Want
 ```
 
-Want in the request used to [cold start](../../../../application-models/uiability-intra-device-interaction.md#cold-starting-uiability) the UIAbility. The value is the Want received in [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate-1).
+Want in the request used to [cold start](docroot://application-models/uiability-intra-device-interaction.md#cold-starting-uiability) the UIAbility. The value is the Want received in [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate-1).
 
 **Type:** Want
 
@@ -1219,7 +1241,7 @@ Want in the request used to [cold start](../../../../application-models/uiabilit
 specifiedId?: string
 ```
 
-Custom UIAbility ID. This parameter is available only when the UIAbility launch mode is set to [specified](../../../../application-models/uiability-launch-type.md#specified).
+Custom UIAbility ID. This parameter is available only when the UIAbility launch mode is set to [specified](docroot://application-models/uiability-launch-type.md#specified).
 
 **Type:** string
 

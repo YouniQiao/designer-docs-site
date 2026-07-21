@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="setmockedlocations"></a>
 ## setMockedLocations
 
 ```TypeScript

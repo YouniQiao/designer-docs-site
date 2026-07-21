@@ -1,6 +1,6 @@
 # AccessibilityElement
 
-Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElement**, you must call [AccessibilityExtensionContext.getFocusElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getfocuselement-2)or [AccessibilityExtensionContext.getWindowRootElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getwindowrootelement-2)to obtain an **AccessibilityElement** instance.
+Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElement**, you must call [AccessibilityExtensionContext.getFocusElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getfocuselement-1)or [AccessibilityExtensionContext.getWindowRootElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getwindowrootelement-1)to obtain an **AccessibilityElement** instance.
 
 **Since:** 9
 
@@ -8,6 +8,7 @@ Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElem
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
+<a id="enablescreencurtain"></a>
 ## enableScreenCurtain
 
 ```TypeScript
@@ -38,6 +39,7 @@ Enables or disables the screen curtain.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [9300003](../errorcode-accessibility.md#9300003-no-accessibility-permission-to-perform-the-operation) | No accessibility permission to perform the operation. |
 
+<a id="executeaction"></a>
 ## executeAction
 
 ```TypeScript
@@ -60,14 +62,14 @@ Executes a specific action based on the specified action type and input paramete
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| action | [AccessibilityAction](../../apis-arkui/arkts-components/arkts-arkui-common-accessibilityaction-e.md) | Yes | Executable action for the accessibility node. |
+| action | [AccessibilityAction](../../apis-arkui/arkts-components/arkts-arkui-accessibilityaction-e.md) | Yes | Executable action for the accessibility node. |
 | parameters | [Parameter](arkts-accessibility-parameter-t-sys.md) | No | Parameters set for the action. This parameter is left empty by default. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -77,6 +79,7 @@ Executes a specific action based on the specified action type and input paramete
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300005](../errorcode-accessibility.md#9300005-action-not-supported) | This action is not supported. |
 
+<a id="findelement"></a>
 ## findElement
 
 ```TypeScript
@@ -104,7 +107,7 @@ Finds all node elements based on the **accessibilityTextHint** text type configu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AccessibilityElement>> | Promise used to return the result. |
+| Promise&lt;Array&lt;AccessibilityElement&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -112,6 +115,7 @@ Finds all node elements based on the **accessibilityTextHint** text type configu
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="findelement-1"></a>
 ## findElement
 
 ```TypeScript
@@ -139,7 +143,7 @@ Finds the node element of the current active window based on the element ID. Thi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -147,6 +151,7 @@ Finds the node element of the current active window based on the element ID. Thi
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="findelementbycontent"></a>
 ## findElementByContent
 
 ```TypeScript
@@ -175,7 +180,7 @@ Finds elements based on the content. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AccessibilityElement>> | Promise used to return the result. |
+| Promise&lt;Array&lt;AccessibilityElement&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -185,6 +190,7 @@ Finds elements based on the content. This API uses a promise to return the resul
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300006](../errorcode-accessibility.md#9300006-failed-to-connect-the-target-application-and-accessibility-services) | The target application failed to connect to accessibility service. |
 
+<a id="findelementbyfocusdirection"></a>
 ## findElementByFocusDirection
 
 ```TypeScript
@@ -213,7 +219,7 @@ Finds elements based on the focus direction. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -223,6 +229,7 @@ Finds elements based on the focus direction. This API uses a promise to return t
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300006](../errorcode-accessibility.md#9300006-failed-to-connect-the-target-application-and-accessibility-services) | The target application failed to connect to accessibility service. |
 
+<a id="findelementbyfocusdirection-1"></a>
 ## findElementByFocusDirection
 
 ```TypeScript
@@ -254,7 +261,7 @@ Finds elements based on the focus direction. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -264,6 +271,7 @@ Finds elements based on the focus direction. This API uses a promise to return t
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300006](../errorcode-accessibility.md#9300006-failed-to-connect-the-target-application-and-accessibility-services) | The target application failed to connect to accessibility service. |
 
+<a id="findelementbyid"></a>
 ## findElementById
 
 ```TypeScript
@@ -292,7 +300,7 @@ Finds elements based on element ID. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -302,6 +310,7 @@ Finds elements based on element ID. This API uses a promise to return the result
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300006](../errorcode-accessibility.md#9300006-failed-to-connect-the-target-application-and-accessibility-services) | The target application failed to connect to accessibility service. |
 
+<a id="findelementsbyaccessibilityhinttext"></a>
 ## findElementsByAccessibilityHintText
 
 ```TypeScript
@@ -330,7 +339,7 @@ Finds elements based on the hint text. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AccessibilityElement>> | Promise used to return the result. |
+| Promise&lt;Array&lt;AccessibilityElement&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -340,6 +349,7 @@ Finds elements based on the hint text. This API uses a promise to return the res
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [9300006](../errorcode-accessibility.md#9300006-failed-to-connect-the-target-application-and-accessibility-services) | The target application failed to connect to accessibility service. |
 
+<a id="findelementsbycondition"></a>
 ## findElementsByCondition
 
 ```TypeScript
@@ -369,7 +379,7 @@ Finds a focusable node by conditions. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FocusMoveResult> | Promise used to return the result. |
+| Promise&lt;FocusMoveResult&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -378,6 +388,7 @@ Finds a focusable node by conditions. This API uses a promise to return the resu
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="findelementsbycondition-1"></a>
 ## findElementsByCondition
 
 ```TypeScript
@@ -410,7 +421,7 @@ Finds a focusable node by conditions. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FocusMoveResult> | Promise used to return the result. |
+| Promise&lt;FocusMoveResult&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -419,6 +430,7 @@ Finds a focusable node by conditions. This API uses a promise to return the resu
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="getchildren"></a>
 ## getChildren
 
 ```TypeScript
@@ -441,7 +453,7 @@ Obtains the child elements of an element. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AccessibilityElement>> | Promise used to return the result. |
+| Promise&lt;Array&lt;AccessibilityElement&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -450,6 +462,7 @@ Obtains the child elements of an element. This API uses a promise to return the 
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="getcursorposition"></a>
 ## getCursorPosition
 
 ```TypeScript
@@ -470,8 +483,9 @@ Obtains the cursor position in the **Text** component. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback function used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback function used to return the result. |
 
+<a id="getcursorposition-1"></a>
 ## getCursorPosition
 
 ```TypeScript
@@ -492,8 +506,9 @@ Obtains the cursor position in the **Text** component. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
+<a id="getparent"></a>
 ## getParent
 
 ```TypeScript
@@ -516,7 +531,7 @@ Obtains the parent element of an accessibility node. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -525,6 +540,7 @@ Obtains the parent element of an accessibility node. This API uses a promise to 
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="getroot"></a>
 ## getRoot
 
 ```TypeScript
@@ -547,7 +563,7 @@ Obtains the root element of an active window. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -826,7 +842,7 @@ childrenIds?: Array<number>
 
 List of child element IDs of a component.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 20
 
@@ -940,7 +956,7 @@ contents?: Array<string>
 
 Content displayed in the element.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 20
 
@@ -996,7 +1012,7 @@ customActions?: Array<string>
 
 Indicates the custom actions supported by the component.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 26.0.0
 
@@ -1704,7 +1720,7 @@ supportedActionNames?: Array<string>
 
 Supported action names.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 20
 

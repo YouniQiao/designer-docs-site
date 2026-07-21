@@ -1,6 +1,6 @@
 # @ohos.resourceManager
 
-The **resourceManager** module provides the resource management functionality. It allows an application to obtain the best matched application resources or system resources based on the specified [configuration](arkts-localization-resourcemanager-configuration-c.md). For details about the matching rules, see [Matching Resources](../../../../quick-start/resource-categories-and-access.md#matching-resources).The configuration includes language, region, screen orientation, color mode, mobile country code (MCC), mobile network code (MNC), device capability, and density.
+The **resourceManager** module provides the resource management functionality. It allows an application to obtain the best matched application resources or system resources based on the specified [configuration](arkts-localization-resourcemanager-configuration-c.md). For details about the matching rules, see [Matching Resources](docroot://quick-start/resource-categories-and-access.md#matching-resources).The configuration includes language, region, screen orientation, color mode, mobile country code (MCC), mobile network code (MNC), device capability, and density.
 
 **Since:** 6
 
@@ -20,12 +20,12 @@ import { resourceManager } from '@kit.LocalizationKit';
 
 | Name | Description |
 | --- | --- |
-| [getResourceManager](arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager-1) | Obtains the **ResourceManager** object of this application. This API uses an asynchronous callback to return the result. |
-| [getResourceManager](arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager-2) | Obtains the **ResourceManager** object of the specified application. This API uses an asynchronous callback to return the result. |
-| [getResourceManager](arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager-3) | Obtains the **ResourceManager** object of this application. This API uses a promise to return the result. |
-| [getResourceManager](arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager-4) | Obtains the **ResourceManager** object of the specified application. This API uses a promise to return the result. |
-| [getSysResourceManager](arkts-localization-resourcemanager-getsysresourcemanager-f.md#getsysresourcemanager-1) | Obtains a system **ResourceManager** object. |
-| [getSystemResourceManager](arkts-localization-resourcemanager-getsystemresourcemanager-f.md#getsystemresourcemanager-1) | Obtains a system **ResourceManager** object. |
+| [getResourceManager](arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager) | Obtains the **ResourceManager** object of this application. This API uses an asynchronous callback to return the result. |
+| [getResourceManager](arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager-1) | Obtains the **ResourceManager** object of the specified application. This API uses an asynchronous callback to return the result. |
+| [getResourceManager](arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager-2) | Obtains the **ResourceManager** object of this application. This API uses a promise to return the result. |
+| [getResourceManager](arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager-3) | Obtains the **ResourceManager** object of the specified application. This API uses a promise to return the result. |
+| [getSysResourceManager](arkts-localization-resourcemanager-getsysresourcemanager-f.md#getsysresourcemanager) | Obtains a system **ResourceManager** object. |
+| [getSystemResourceManager](arkts-localization-resourcemanager-getsystemresourcemanager-f.md#getsystemresourcemanager) | Obtains a system **ResourceManager** object. |
 
 ### Classes
 

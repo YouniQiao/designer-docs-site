@@ -6,6 +6,7 @@
 import { router } from '@kit.ArkUI';
 ```
 
+<a id="getparams"></a>
 ## getParams
 
 ```TypeScript
@@ -17,7 +18,7 @@ Obtains the parameters passed from the page that initiates redirection to the cu
 > **NOTE**  
 >  
 > - Since API version 10, you can use the  
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
+> [getRouter](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
 > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated  
 > with the current UI context.  
 >  
@@ -40,7 +41,7 @@ Obtains the parameters passed from the page that initiates redirection to the cu
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Parameters passed from the page that initiates redirection to the current page. |
+| Object | Parameters passed from the page that initiates redirection to the current page. |
 
 **Example**
 

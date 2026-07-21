@@ -14,6 +14,7 @@ Implements an animation controller object. It provides APIs for playing, stoppin
 import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@kit.ArkUI';
 ```
 
+<a id="getstatus"></a>
 ## getStatus
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the current animation playback status.
 
 | Type | Description |
 | --- | --- |
-| [AnimationStatus](arkts-arkui-enums-animationstatus-e.md) | Current animation state: initial, running, paused, or stopped. |
+| [AnimationStatus](arkts-arkui-animationstatus-e.md) | Current animation state: initial, running, paused, or stopped. |
 
 **Example**
 
@@ -82,6 +83,7 @@ struct Example {
 
 ```
 
+<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -128,6 +130,7 @@ struct Example {
 
 ```
 
+<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -174,6 +177,7 @@ struct Example {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -220,6 +224,7 @@ struct Example {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { geolocation } from '@kit.LocationKit';
 ```
 
+<a id="sendcommand"></a>
 ## sendCommand
 
 ```TypeScript
@@ -31,7 +32,7 @@ Send extended commands to location subsystem.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | command | [LocationCommand](arkts-location-geolocationmanager-locationcommand-i.md) | Yes | Indicates the extended Command Message Body. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for reporting the send command result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for reporting the send command result. |
 
 **Example**
 
@@ -50,6 +51,7 @@ geolocation.sendCommand(requestInfo, (err, result) => {
 ```
 
 
+<a id="sendcommand-1"></a>
 ## sendCommand
 
 ```TypeScript
@@ -80,7 +82,7 @@ Send extended commands to location subsystem.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="notifyprintserviceevent"></a>
 ## notifyPrintServiceEvent
 
 ```TypeScript
@@ -34,7 +35,7 @@ Notifies the print service of the print application events. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ print.notifyPrintServiceEvent(event).then(() => {
 ```
 
 
+<a id="notifyprintserviceevent-1"></a>
 ## notifyPrintServiceEvent
 
 ```TypeScript
@@ -89,7 +91,7 @@ Notifies the print service of the print application events. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

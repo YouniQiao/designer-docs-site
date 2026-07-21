@@ -6,6 +6,7 @@
 import { BundleStatusCallback } from '@kit.AbilityKit';
 ```
 
+<a id="off"></a>
 ## off('BundleStatusChange')
 
 ```TypeScript
@@ -17,7 +18,7 @@ Unregisters the callback that receives bundle status changes. This API uses an a
 > **NOTE**  
 >  
 > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [off](arkts-ability-bundlemonitor-off-f-sys.md#off-1)  
+> [off](@ohos.bundle.bundleMonitor:bundleMonitor.off(type: BundleChangedEvent, callback?: Callback<BundleChangedInfo>))  
 > instead.
 
 **Since:** 8
@@ -39,9 +40,10 @@ Unregisters the callback that receives bundle status changes. This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'BundleStatusChange' | Yes | Event type. Only **BundleStatusChange** is supported. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return a successful result or error information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return a successful result or error information. |
 
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -53,7 +55,7 @@ Unregisters the callback that receives bundle status changes. This API uses an a
 > **NOTE**  
 >  
 > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [off](arkts-ability-bundlemonitor-off-f-sys.md#off-1)  
+> [off](@ohos.bundle.bundleMonitor:bundleMonitor.off(type: BundleChangedEvent, callback?: Callback<BundleChangedInfo>))  
 > instead.
 
 **Since:** 8
@@ -80,5 +82,5 @@ Unregisters the callback that receives bundle status changes. This API uses an a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return a successful result or error information. |
+| Promise&lt;string&gt; | Promise used to return a successful result or error information. |
 

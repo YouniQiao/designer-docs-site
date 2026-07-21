@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="isfunctionkeyenabled"></a>
 ## isFunctionKeyEnabled
 
 ```TypeScript
@@ -30,7 +31,7 @@ Checks whether the specified function key (for example, **CapsLock**) is enabled
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the function key is enabled, and the value **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the function key is enabled, and the value **false** indicates the opposite. |
 
 **Error codes:**
 

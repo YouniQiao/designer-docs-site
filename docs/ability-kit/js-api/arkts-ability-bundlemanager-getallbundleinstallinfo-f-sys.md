@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallbundleinstallinfo"></a>
 ## getAllBundleInstallInfo
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the extended install information about all applications in the system.Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Record<string, Object>>> | Promise used to return the list of extended install information set of all applications. |
+| Promise&lt;Array&lt;Record&lt;string, Object&gt;&gt;&gt; | Promise used to return the list of extended install information set of all applications. |
 
 **Error codes:**
 

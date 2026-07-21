@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getpermissiondef"></a>
 ## getPermissionDef
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the PermissionDef struct based on the given permission name. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | permissionName | string | Yes | Name of the permission. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PermissionDef> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the PermissionDef object obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PermissionDef&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the PermissionDef object obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ try {
 ```
 
 
+<a id="getpermissiondef-1"></a>
 ## getPermissionDef
 
 ```TypeScript
@@ -92,7 +94,7 @@ Obtains the PermissionDef struct based on the given permission name. This API us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PermissionDef> | Promise used to return the PermissionDef object obtained. |
+| Promise&lt;PermissionDef&gt; | Promise used to return the PermissionDef object obtained. |
 
 **Error codes:**
 

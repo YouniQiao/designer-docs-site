@@ -6,6 +6,7 @@
 import { webNativeMessagingExtensionManager } from '@kit.ArkWeb';
 ```
 
+<a id="connectnative"></a>
 ## connectNative
 
 ```TypeScript

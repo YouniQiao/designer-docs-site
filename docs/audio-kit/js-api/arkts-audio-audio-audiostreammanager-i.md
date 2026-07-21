@@ -20,6 +20,7 @@ Before calling any API in AudioStreamManager, you must use [getStreamManager](ar
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="getaudioeffectinfoarray"></a>
 ## getAudioEffectInfoArray
 
 ```TypeScript
@@ -39,7 +40,7 @@ Obtains information about the audio effect mode in use. This API uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | usage | [StreamUsage](arkts-audio-audio-streamusage-e.md) | Yes | Audio stream usage. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AudioEffectInfoArray> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the information about the audio effect mode obtained;otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AudioEffectInfoArray&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the information about the audio effect mode obtained;otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -48,6 +49,7 @@ Obtains information about the audio effect mode in use. This API uses an asynchr
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by callback. |
 
+<a id="getaudioeffectinfoarray-1"></a>
 ## getAudioEffectInfoArray
 
 ```TypeScript
@@ -72,7 +74,7 @@ Obtains information about the audio effect mode in use. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioEffectInfoArray> | Promise used to return the information about the audio effect mode obtained. |
+| Promise&lt;AudioEffectInfoArray&gt; | Promise used to return the information about the audio effect mode obtained. |
 
 **Error codes:**
 
@@ -81,6 +83,7 @@ Obtains information about the audio effect mode in use. This API uses a promise 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by promise. |
 
+<a id="getaudioeffectinfoarraysync"></a>
 ## getAudioEffectInfoArraySync
 
 ```TypeScript
@@ -114,6 +117,7 @@ Obtains information about the audio effect mode in use. This API returns the res
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="getcurrentaudiocapturerinfoarray"></a>
 ## getCurrentAudioCapturerInfoArray
 
 ```TypeScript
@@ -137,8 +141,9 @@ Obtains the information about this audio capturer. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AudioCapturerChangeInfoArray> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the audio capturer information obtained;otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AudioCapturerChangeInfoArray&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the audio capturer information obtained;otherwise, **err** is an error object. |
 
+<a id="getcurrentaudiocapturerinfoarray-1"></a>
 ## getCurrentAudioCapturerInfoArray
 
 ```TypeScript
@@ -162,8 +167,9 @@ Obtains the information about this audio capturer. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioCapturerChangeInfoArray> | Promise used to return the audio capturer information. |
+| Promise&lt;AudioCapturerChangeInfoArray&gt; | Promise used to return the audio capturer information. |
 
+<a id="getcurrentaudiocapturerinfoarraysync"></a>
 ## getCurrentAudioCapturerInfoArraySync
 
 ```TypeScript
@@ -189,6 +195,7 @@ Obtains the information about this audio capturer. This API returns the result s
 | --- | --- |
 | [AudioCapturerChangeInfoArray](arkts-audio-audio-audiocapturerchangeinfoarray-t.md) | Audio capturer information. |
 
+<a id="getcurrentaudiorendererinfoarray"></a>
 ## getCurrentAudioRendererInfoArray
 
 ```TypeScript
@@ -212,8 +219,9 @@ Obtains the information about this audio renderer. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AudioRendererChangeInfoArray> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the audio renderer information obtained;otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AudioRendererChangeInfoArray&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the audio renderer information obtained;otherwise, **err** is an error object. |
 
+<a id="getcurrentaudiorendererinfoarray-1"></a>
 ## getCurrentAudioRendererInfoArray
 
 ```TypeScript
@@ -237,8 +245,9 @@ Obtains the information about this audio renderer. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioRendererChangeInfoArray> | Promise used to return the audio renderer information. |
+| Promise&lt;AudioRendererChangeInfoArray&gt; | Promise used to return the audio renderer information. |
 
+<a id="getcurrentaudiorendererinfoarraysync"></a>
 ## getCurrentAudioRendererInfoArraySync
 
 ```TypeScript
@@ -264,6 +273,7 @@ Obtains the information about this audio renderer. This API returns the result s
 | --- | --- |
 | [AudioRendererChangeInfoArray](arkts-audio-audio-audiorendererchangeinfoarray-t.md) | Audio renderer information. |
 
+<a id="isacousticechocancelersupported"></a>
 ## isAcousticEchoCancelerSupported
 
 ```TypeScript
@@ -296,6 +306,7 @@ Checks whether the specified audio source type supports echo cancellation.
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="isactive"></a>
 ## isActive
 
 ```TypeScript
@@ -319,8 +330,9 @@ Checks whether a stream is active. This API uses an asynchronous callback to ret
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | volumeType | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e.md) | Yes | Audio stream types. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true** if the stream is active or **false** if not active;otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true** if the stream is active or **false** if not active;otherwise, **err** is an error object. |
 
+<a id="isactive-1"></a>
 ## isActive
 
 ```TypeScript
@@ -349,8 +361,9 @@ Checks whether a stream is active. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result, indicating whether the stream is active.**true** if active, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result, indicating whether the stream is active.**true** if active, **false** otherwise. |
 
+<a id="isactivesync"></a>
 ## isActiveSync
 
 ```TypeScript
@@ -388,6 +401,7 @@ Checks whether a stream is active. This API returns the result synchronously.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="isaudioloopbacksupported"></a>
 ## isAudioLoopbackSupported
 
 ```TypeScript
@@ -420,6 +434,7 @@ Checks whether the current system supports the specified audio loopback mode.
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="isdirectplaybacksupported"></a>
 ## isDirectPlaybackSupported
 
 ```TypeScript
@@ -449,6 +464,7 @@ Return if direct playback is supported for the specific audio stream info and us
 | --- | --- |
 | boolean | True if direct playback is supported in this situation. |
 
+<a id="isfastplaybacksupported"></a>
 ## isFastPlaybackSupported
 
 ```TypeScript
@@ -478,6 +494,7 @@ Return if fast playback is supported for the specific audio stream info and usag
 | --- | --- |
 | boolean | True if fast playback is supported in this situation. |
 
+<a id="isfastrecordingsupported"></a>
 ## isFastRecordingSupported
 
 ```TypeScript
@@ -507,6 +524,7 @@ Return if fast recording is supported for the specific audio stream info and usa
 | --- | --- |
 | boolean | True if fast recording is supported in this situation. |
 
+<a id="isintelligentnoisereductionenabledforcurrentdevice"></a>
 ## isIntelligentNoiseReductionEnabledForCurrentDevice
 
 ```TypeScript
@@ -539,6 +557,7 @@ Checks whether the intelligent noise reduction feature is enabled for the audio 
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="ismultichannelplaybacksupported"></a>
 ## isMultichannelPlaybackSupported
 
 ```TypeScript
@@ -568,6 +587,7 @@ Return if multichannel playback is supported for the specific audio stream info 
 | --- | --- |
 | boolean | True if multichannel playback is supported in this situation. |
 
+<a id="isoffloadplaybacksupported"></a>
 ## isOffloadPlaybackSupported
 
 ```TypeScript
@@ -597,6 +617,7 @@ Return if offload playback is supported for the specific audio stream info and u
 | --- | --- |
 | boolean | True if offload playback is supported in this situation. |
 
+<a id="isrecordingavailable"></a>
 ## isRecordingAvailable
 
 ```TypeScript
@@ -629,6 +650,7 @@ Checks whether recording can be started based on the audio source type in the au
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="isstreamactive"></a>
 ## isStreamActive
 
 ```TypeScript
@@ -661,6 +683,7 @@ Checks whether a stream is active. This API returns the result synchronously.
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="off"></a>
 ## off('audioRendererChange')
 
 ```TypeScript
@@ -685,7 +708,7 @@ Unsubscribes from the audio renderer change event. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'audioRendererChange' | Yes | Event type. The event **'audioRendererChange'** is triggered when the audio playback stream status or device is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioRendererChangeInfoArray> | No | Callback used to return the audio renderer information.<br>**Since:** 18 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioRendererChangeInfoArray&gt; | No | Callback used to return the audio renderer information.<br>**Since:** 18 |
 
 **Error codes:**
 
@@ -693,6 +716,7 @@ Unsubscribes from the audio renderer change event. This API uses an asynchronous
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="off-1"></a>
 ## off('audioCapturerChange')
 
 ```TypeScript
@@ -717,7 +741,7 @@ Unsubscribes from the audio capturer change event. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'audioCapturerChange' | Yes | Event type. The event **'audioCapturerChange'** is triggered when the audio capturer is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioCapturerChangeInfoArray> | No | Callback used to return the audio capturer information.<br>**Since:** 18 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioCapturerChangeInfoArray&gt; | No | Callback used to return the audio capturer information.<br>**Since:** 18 |
 
 **Error codes:**
 
@@ -725,6 +749,7 @@ Unsubscribes from the audio capturer change event. This API uses an asynchronous
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on"></a>
 ## on('audioRendererChange')
 
 ```TypeScript
@@ -749,7 +774,7 @@ Subscribes to the audio renderer change event, which is triggered when the audio
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'audioRendererChange' | Yes | Event type. The event **'audioRendererChange'** is triggered when the audio playback stream status or device is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioRendererChangeInfoArray> | Yes | Callback used to return the audio renderer information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioRendererChangeInfoArray&gt; | Yes | Callback used to return the audio renderer information. |
 
 **Error codes:**
 
@@ -758,6 +783,7 @@ Subscribes to the audio renderer change event, which is triggered when the audio
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on-1"></a>
 ## on('audioCapturerChange')
 
 ```TypeScript
@@ -782,7 +808,7 @@ Subscribes to the audio capturer change event, which is triggered when the audio
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'audioCapturerChange' | Yes | Event type. The event **'audioCapturerChange'** is triggered when the audio recording stream status or device is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioCapturerChangeInfoArray> | Yes | Callback used to return the audio capturer information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioCapturerChangeInfoArray&gt; | Yes | Callback used to return the audio capturer information. |
 
 **Error codes:**
 

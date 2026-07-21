@@ -16,7 +16,7 @@ complete?: () => void
 
 Called when the execution is completed.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 3
 
@@ -56,7 +56,7 @@ fail?: (data: string, code: number) => void
 
 Called when the stored content fails to be read.
 
-**Type:** (data: string, code: number) => void
+**Type:** (data: string, code: number) =&gt; void
 
 **Since:** 3
 
@@ -96,7 +96,7 @@ success?: (data: any) => void
 
 Called when the stored content is read successfully.
 
-**Type:** (data: any) => void
+**Type:** (data: any) =&gt; void
 
 **Since:** 3
 

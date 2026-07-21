@@ -6,6 +6,7 @@
 import { distributedMissionManager } from '@kit.AbilityKit';
 ```
 
+<a id="on"></a>
 ## on('continueStateChange')
 
 ```TypeScript
@@ -31,7 +32,7 @@ Subscribes to continuation state change events of the current mission.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'continueStateChange' | Yes | Event type. The value **'continueStateChange'** indicates the continuation state change event of the current mission. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ContinueCallbackInfo> | Yes | Callback used to return the continuation state and information of the current mission.<br>**Since:** 11 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ContinueCallbackInfo&gt; | Yes | Callback used to return the continuation state and information of the current mission.<br>**Since:** 11 |
 
 **Error codes:**
 

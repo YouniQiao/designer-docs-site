@@ -6,6 +6,7 @@
 import { manager } from '@kit.ConnectivityKit';
 ```
 
+<a id="enable"></a>
 ## enable
 
 ```TypeScript

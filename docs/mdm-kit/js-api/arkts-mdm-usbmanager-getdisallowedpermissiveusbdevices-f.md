@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.MDMKit';
 ```
 
+<a id="getdisallowedpermissiveusbdevices"></a>
 ## getDisallowedPermissiveUsbDevices
 
 ```TypeScript
@@ -28,13 +29,13 @@ Gets the list of disallowed USB devices.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | admin indicates the enterprise admin extension ability information.The admin must have the corresponding permission. |
+| admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) \| null | Yes | admin indicates the enterprise admin extension ability information.The admin must have the corresponding permission. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PermissiveUsbDeviceType> | USB device types that are disallowed. |
+| Array&lt;PermissiveUsbDeviceType&gt; | USB device types that are disallowed. |
 
 **Error codes:**
 

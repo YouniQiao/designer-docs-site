@@ -1,6 +1,6 @@
 # Verify
 
-Provides APIs for signature verification. Before using any API of the **Verify** class, you must create a **Verify** instance by using [createVerify(algName: string): Verify](arkts-cryptoarchitecture-cryptoframework-createverify-f.md#createverify-1). Invoke **init()**, **update()**, and **verify()** in this class in sequence to complete the signature verification. For details about the sample code, see [Signing and Signature Verification with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md).
+Provides APIs for signature verification. Before using any API of the **Verify** class, you must create a **Verify** instance by using [createVerify(algName: string): Verify](arkts-cryptoarchitecture-cryptoframework-createverify-f.md#createverify-1). Invoke **init()**, **update()**, and **verify()** in this class in sequence to complete the signature verification. For details about the sample code, see [Signing and Signature Verification with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md).
 
 The **Verify** class does not support repeated initialization. When a new key is used for signature verification,you must create a new **Verify** instance and call **init()** for initialization.
 
@@ -26,6 +26,7 @@ If the DSA algorithm is used for signature verification and the digest algorithm
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="getverifyspec"></a>
 ## getVerifySpec
 
 ```TypeScript
@@ -80,6 +81,7 @@ function testGetVerifySpec() {
 
 ```
 
+<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -103,7 +105,7 @@ Initializes the **Verify** object using a public key. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | pubKey | [PubKey](arkts-cryptoarchitecture-cryptoframework-pubkey-i.md) | Yes | Public key used to initialize the **Verify** instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -115,6 +117,7 @@ Initializes the **Verify** object using a public key. This API uses an asynchron
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Incorrect key type.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="init-1"></a>
 ## init
 
 ```TypeScript
@@ -143,7 +146,7 @@ Initializes the **Verify** object using a public key. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -155,6 +158,7 @@ Initializes the **Verify** object using a public key. This API uses a promise to
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Incorrect key type.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="initsync"></a>
 ## initSync
 
 ```TypeScript
@@ -189,6 +193,7 @@ Initializes the **Verify** instance with a public key. This API returns the resu
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Incorrect key type.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="recover"></a>
 ## recover
 
 ```TypeScript
@@ -219,7 +224,7 @@ Recovers the original data from a signature. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob \| null> | Promise used to return the raw data recovered from the signature. |
+| Promise&lt;DataBlob \| null&gt; | Promise used to return the raw data recovered from the signature. |
 
 **Error codes:**
 
@@ -310,6 +315,7 @@ async function recoverByPromise() {
 
 ```
 
+<a id="recoversync"></a>
 ## recoverSync
 
 ```TypeScript
@@ -354,6 +360,7 @@ Recovers the original data from a signature. This API returns the result synchro
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="setverifyspec"></a>
 ## setVerifySpec
 
 ```TypeScript
@@ -406,6 +413,7 @@ function testSetVerifySpec() {
 
 ```
 
+<a id="setverifyspec-1"></a>
 ## setVerifySpec
 
 ```TypeScript
@@ -447,6 +455,7 @@ The parameters for signature verification must be the same as those for signing.
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+<a id="setverifyspec-2"></a>
 ## setVerifySpec
 
 ```TypeScript
@@ -499,6 +508,7 @@ function testSetVerifySpec() {
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -512,7 +522,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 > **NOTE**  
 >  
 > You can call **update** multiple times or do not use **update** (call  
-> [verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verify-2)  
+> [verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verify-1)  
 > after [init](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init-1)), depending on  
 > the data volume.  
 >  
@@ -521,7 +531,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 > prevents too much memory from being requested at a time.  
 >  
 > For details about the sample code for calling **update()** multiple times in signature verification, see  
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
+> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
 > . The operations of other algorithms are similar.  
 >  
 > **OnlyVerify** cannot be used with **update()**. If **OnlyVerify** is specified, use **verify()** to pass in  
@@ -545,7 +555,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Data to pass in. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -557,6 +567,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -570,7 +581,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 > **NOTE**  
 >  
 > You can call **update** multiple times or do not use **update** (call  
-> [verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verify-4) after  
+> [verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verify-1) after  
 > [init](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init-1)), depending on the data volume.
 
 > The amount of the data to be passed in by **update()** (one-time or accumulative) is not limited. If there is a  
@@ -578,7 +589,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 > prevents too much memory from being requested at a time.
 
 > For details about the sample code for calling **update()** multiple times in signature verification, see  
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
+> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
 > . The operations of other algorithms are similar.
 
 > **OnlyVerify** cannot be used with **update()**. If **OnlyVerify** is specified, use **verify()** to pass in  
@@ -607,7 +618,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -619,6 +630,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
@@ -640,7 +652,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 > This prevents too much memory from being requested at a time.
 
 > For details about the sample code for calling **updateSync** multiple times in signature verification, see  
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
+> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
 > . The operations of other algorithms are similar.
 
 > **OnlyVerify** cannot be used with **updateSync()**. If **OnlyVerify** is specified, use **verifySync()** to pass  
@@ -675,6 +687,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="verify"></a>
 ## verify
 
 ```TypeScript
@@ -699,7 +712,7 @@ Verifies the message, including the update data. This API uses an asynchronous c
 | --- | --- | --- | --- |
 | data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Data to be verified. |
 | signatureData | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | The signature data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** indicates that the signature verification is successful, and **false** indicates the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** indicates that the signature verification is successful, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -711,6 +724,7 @@ Verifies the message, including the update data. This API uses an asynchronous c
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="verify-1"></a>
 ## verify
 
 ```TypeScript
@@ -733,9 +747,9 @@ Verifies the signature of the data. This API uses an asynchronous callback to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | DataBlob \| null | Yes | Data to pass in. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
+| data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Data to pass in. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
 | signatureData | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Signature data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** indicates that the signature verification is successful, and **false** indicates the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** indicates that the signature verification is successful, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -747,6 +761,7 @@ Verifies the signature of the data. This API uses an asynchronous callback to re
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="verify-2"></a>
 ## verify
 
 ```TypeScript
@@ -776,7 +791,7 @@ Verifies the message, including the update data. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the signature verification is successful, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the signature verification is successful, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -788,6 +803,7 @@ Verifies the message, including the update data. This API uses a promise to retu
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="verify-3"></a>
 ## verify
 
 ```TypeScript
@@ -810,14 +826,14 @@ Verifies the signature of the data. This API uses a promise to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | DataBlob \| null | Yes | Data to pass in. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
+| data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Data to pass in. In versions earlier than API version 10, only **DataBlob** is supported. Since API version 10, **null** is also supported. |
 | signatureData | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Signature data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the signature verification is successful, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the signature verification is successful, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -829,6 +845,7 @@ Verifies the signature of the data. This API uses a promise to return the result
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
+<a id="verifysync"></a>
 ## verifySync
 
 ```TypeScript
@@ -851,7 +868,7 @@ Verifies the signature. This API returns the verification result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | DataBlob \| null | Yes | Data to pass in. |
+| data | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) \| null | Yes | Data to pass in. |
 | signatureData | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Signature data. |
 
 **Return value:**

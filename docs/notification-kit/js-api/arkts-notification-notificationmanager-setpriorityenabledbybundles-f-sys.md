@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setpriorityenabledbybundles"></a>
 ## setPriorityEnabledByBundles
 
 ```TypeScript
@@ -30,13 +31,13 @@ Sets whether priority notifications are enabled for applications in batches. Thi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| switches | [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<BundleOption, boolean> | Yes | Key-value pair set of the application notification priority enabling status. |
+| switches | Map&lt;BundleOption, boolean&gt; | Yes | Key-value pair set of the application notification priority enabling status. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

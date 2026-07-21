@@ -16,6 +16,7 @@ General callbacks for both backup and restore procedure.The backup service will 
 import { backup } from '@kit.CoreFileKit';
 ```
 
+<a id="onprocess"></a>
 ## onProcess
 
 ```TypeScript
@@ -56,6 +57,7 @@ Callback called when the backup_sa service return result information.The first r
 | 13900020 | Invalid argument |
 | 13900025 | No space left on device |
 
+<a id="onresultreport"></a>
 ## onResultReport
 
 ```TypeScript
@@ -101,7 +103,7 @@ onAllBundlesEnd: AsyncCallback<undefined>
 
 Callback called when the all the bundles to backup/restore are done or aborted unexpectedly.
 
-**Type:** AsyncCallback<undefined>
+**Type:** AsyncCallback&lt;undefined&gt;
 
 **Since:** 10
 
@@ -119,7 +121,7 @@ onBackupServiceDied: Callback<undefined>
 
 Callback called when the backup service dies unexpectedly.
 
-**Type:** Callback<undefined>
+**Type:** Callback&lt;undefined&gt;
 
 **Since:** 10
 
@@ -155,7 +157,7 @@ onBundleBegin: AsyncCallback<string, void | string>
 
 Callback called when a backup/restore procedure for an bundle is started.The first return string parameter indicates the name of the bundle.The second return string parameter indicates that when BusinessError errors occur,the callback data is the name of the bundle.
 
-**Type:** AsyncCallback<string, void | string>
+**Type:** AsyncCallback&lt;string, void \| string&gt;
 
 **Since:** 12
 
@@ -173,7 +175,7 @@ onBundleEnd: AsyncCallback<string, void | string>
 
 Callback called when a backup/restore procedure for an bundle ends successfully or gets aborted unexpectedly.The first return string parameter indicates the name of the bundle.The second return string parameter indicates that when BusinessError errors occur,the callback data is the name of the bundle.
 
-**Type:** AsyncCallback<string, void | string>
+**Type:** AsyncCallback&lt;string, void \| string&gt;
 
 **Since:** 12
 
@@ -191,7 +193,7 @@ onFileReady: AsyncCallback<File>
 
 Callback called when the backup service tries to send files to the client.The File argument indicates a file to send to the client.The returned file is owned by the backup service and will be cleaned by the service once the file is closed.
 
-**Type:** AsyncCallback<File>
+**Type:** AsyncCallback&lt;File&gt;
 
 **Since:** 10
 
@@ -229,7 +231,7 @@ onMigrateResult?: AsyncCallback<string, void | string>
 
 Callback called when the migrate result is reported.The first return string parameter indicates the name of the bundle.The second return string parameter indicates that when BusinessError errors occur,the callback data is the name of the bundle.
 
-**Type:** AsyncCallback<string, void | string>
+**Type:** AsyncCallback&lt;string, void \| string&gt;
 
 **Since:** 26.0.0
 

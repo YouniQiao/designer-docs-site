@@ -6,6 +6,7 @@
 import { distributedBundle } from '@kit.AbilityKit';
 ```
 
+<a id="getremoteabilityinfos"></a>
 ## getRemoteAbilityInfos
 
 ```TypeScript
@@ -35,10 +36,11 @@ Obtains the information about remote abilities that match the given element name
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elementNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ElementName> | Yes | **ElementName** array, whose maximum length is 10. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<RemoteAbilityInfo>> | Yes | Callback used to return an array of the remote ability information. |
+| elementNames | Array&lt;ElementName&gt; | Yes | **ElementName** array, whose maximum length is 10. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;RemoteAbilityInfo&gt;&gt; | Yes | Callback used to return an array of the remote ability information. |
 
 
+<a id="getremoteabilityinfos-1"></a>
 ## getRemoteAbilityInfos
 
 ```TypeScript
@@ -65,11 +67,11 @@ Obtains the information about remote abilities that match the given element name
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elementNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ElementName> | Yes | **ElementName** array, whose maximum length is 10. |
+| elementNames | Array&lt;ElementName&gt; | Yes | **ElementName** array, whose maximum length is 10. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<RemoteAbilityInfo>> | Promise used to return an array of the remote ability information. |
+| Promise&lt;Array&lt;RemoteAbilityInfo&gt;&gt; | Promise used to return an array of the remote ability information. |
 

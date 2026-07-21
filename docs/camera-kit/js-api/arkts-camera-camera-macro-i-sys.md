@@ -18,6 +18,7 @@ Macro inherits from [MacroQuery](arkts-camera-camera-macroquery-i-sys.md).It pro
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="enablemacro"></a>
 ## enableMacro
 
 ```TypeScript

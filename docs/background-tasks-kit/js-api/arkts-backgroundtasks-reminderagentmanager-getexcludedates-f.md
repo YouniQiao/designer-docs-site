@@ -6,6 +6,7 @@
 import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="getexcludedates"></a>
 ## getExcludeDates
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains all non-reminder dates for a recurring calendar reminder with a specific
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Date>> | Promise used to return all the non-reminder dates. |
+| Promise&lt;Array&lt;Date&gt;&gt; | Promise used to return all the non-reminder dates. |
 
 **Error codes:**
 

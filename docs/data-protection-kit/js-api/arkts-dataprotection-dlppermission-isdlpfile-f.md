@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="isdlpfile"></a>
 ## isDLPFile
 
 ```TypeScript
@@ -26,13 +27,13 @@ During file processing, the system checks whether the file is a DLP file and the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fd | number | Yes | FD of the file to be checked. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of **fd** is less than 0, error code 19100001 is thrown. If the value of **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1,the excess part will be truncated. |
+| fd | number | Yes | FD of the file to be checked. The value range is [0, 2<sup>31</sup>-1]. If the value of **fd** is less than 0, error code 19100001 is thrown. If the value of **fd** is greater than 2<sup>31</sup>-1,the excess part will be truncated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if {@link fd} is a DLP file; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if {@link fd} is a DLP file; returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ dlpPermission.isDLPFile(file).then((isDLPFile: boolean) => {
 ```
 
 
+<a id="isdlpfile-1"></a>
 ## isDLPFile
 
 ```TypeScript
@@ -84,8 +86,8 @@ During file processing, the system checks whether the file is a DLP file and the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fd | number | Yes | FD of the file to be checked. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of **fd** is less than 0, error code 19100001 is thrown. If the value of **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1,the excess part will be truncated. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to receive the query result. The callback parameters include **err** and **res**. **err** is **undefined** when the query is successful; otherwise, **err** is an error object. If **true** is returned, **res** is a DLP file; if **false** is returned, **res** is not a DLP file. |
+| fd | number | Yes | FD of the file to be checked. The value range is [0, 2<sup>31</sup>-1]. If the value of **fd** is less than 0, error code 19100001 is thrown. If the value of **fd** is greater than 2<sup>31</sup>-1,the excess part will be truncated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to receive the query result. The callback parameters include **err** and **res**. **err** is **undefined** when the query is successful; otherwise, **err** is an error object. If **true** is returned, **res** is a DLP file; if **false** is returned, **res** is not a DLP file. |
 
 **Error codes:**
 

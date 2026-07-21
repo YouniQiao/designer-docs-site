@@ -6,6 +6,7 @@
 import { text } from '@kit.ArkGraphics2D';
 ```
 
+<a id="getfontunicodeset"></a>
 ## getFontUnicodeSet
 
 ```TypeScript
@@ -35,7 +36,7 @@ An empty array is returned if the font file is not found, the font file path is 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the Unicode array corresponding to the font file. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the Unicode array corresponding to the font file. |
 
 **Example**
 

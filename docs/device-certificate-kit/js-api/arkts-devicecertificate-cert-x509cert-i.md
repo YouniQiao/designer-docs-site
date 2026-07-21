@@ -14,6 +14,7 @@ Provides APIs for X.509 certificate operations.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="checkvaliditywithdate"></a>
 ## checkValidityWithDate
 
 ```TypeScript
@@ -46,6 +47,7 @@ Checks the validity period of this X.509 certificate.
 | [19030003](../errorcode-cert.md#19030003-certificate-has-not-taken-effect) | the certificate has not taken effect. |
 | [19030004](../errorcode-cert.md#19030004-certificate-expired) | the certificate has expired. |
 
+<a id="getbasicconstraints"></a>
 ## getBasicConstraints
 
 ```TypeScript
@@ -68,6 +70,7 @@ Obtains the basic constraints of this X.509 certificate.
 | --- | --- |
 | number | Basic constraints obtained. |
 
+<a id="getcrldistributionpoint"></a>
 ## getCRLDistributionPoint
 
 ```TypeScript
@@ -98,6 +101,7 @@ Obtains the CRL distribution points of this X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getcertserialnumber"></a>
 ## getCertSerialNumber
 
 ```TypeScript
@@ -126,6 +130,7 @@ Obtains the X.509 certificate serial number.
 | --- | --- |
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 
+<a id="getencoded"></a>
 ## getEncoded
 
 ```TypeScript
@@ -146,7 +151,7 @@ Obtains the serialized X.509 certificate data. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<EncodingBlob> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the serialized X.509 certificate data obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;EncodingBlob&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the serialized X.509 certificate data obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -157,6 +162,7 @@ Obtains the serialized X.509 certificate data. This API uses an asynchronous cal
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getencoded-1"></a>
 ## getEncoded
 
 ```TypeScript
@@ -177,7 +183,7 @@ Obtains the serialized X.509 certificate data. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<EncodingBlob> | Promise used to return the serialized X.509 certificate data obtained. |
+| Promise&lt;EncodingBlob&gt; | Promise used to return the serialized X.509 certificate data obtained. |
 
 **Error codes:**
 
@@ -188,6 +194,7 @@ Obtains the serialized X.509 certificate data. This API uses a promise to return
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getextkeyusage"></a>
 ## getExtKeyUsage
 
 ```TypeScript
@@ -218,6 +225,7 @@ Obtains the usage of the extended key of this X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getextensionsobject"></a>
 ## getExtensionsObject
 
 ```TypeScript
@@ -248,6 +256,7 @@ Obtains the certificate extensions in DER format.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getissueraltnames"></a>
 ## getIssuerAltNames
 
 ```TypeScript
@@ -282,6 +291,7 @@ Obtains the Issuer Alternative Names (IANs) of this X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getissuername"></a>
 ## getIssuerName
 
 ```TypeScript
@@ -316,6 +326,7 @@ Obtains the X.509 certificate issuer.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getissuername-1"></a>
 ## getIssuerName
 
 ```TypeScript
@@ -353,6 +364,7 @@ Obtains the issuer name of an X.509 certificate based on the encoding type.
 | [19020003](../errorcode-cert.md#19020003-parameter-check-failure) | parameter check failed. Possible causes:<br>1. The value of encodingType is not in the EncodingType enumeration range. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getissuerx500distinguishedname"></a>
 ## getIssuerX500DistinguishedName
 
 ```TypeScript
@@ -383,6 +395,7 @@ Obtains the X.500 distinguished name object of the X.509 certificate issuer.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getitem"></a>
 ## getItem
 
 ```TypeScript
@@ -420,6 +433,7 @@ Obtains the fields in the X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getkeyusage"></a>
 ## getKeyUsage
 
 ```TypeScript
@@ -449,6 +463,7 @@ Obtains the key usage of this X.509 certificate.
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getnotaftertime"></a>
 ## getNotAfterTime
 
 ```TypeScript
@@ -479,6 +494,7 @@ Obtains the expiration time of this X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getnotbeforetime"></a>
 ## getNotBeforeTime
 
 ```TypeScript
@@ -509,6 +525,7 @@ Obtains the start time of this X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getpublickey"></a>
 ## getPublicKey
 
 ```TypeScript
@@ -538,6 +555,7 @@ Obtains the public key of this X.509 certificate.
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getserialnumber"></a>
 ## getSerialNumber
 
 ```TypeScript
@@ -567,6 +585,7 @@ Obtains the X.509 certificate serial number.
 | --- | --- |
 | number | X.509 certificate serial number obtained. |
 
+<a id="getsignature"></a>
 ## getSignature
 
 ```TypeScript
@@ -597,6 +616,7 @@ Obtains the signature data of this X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getsignaturealgname"></a>
 ## getSignatureAlgName
 
 ```TypeScript
@@ -627,6 +647,7 @@ Obtains the signing algorithm of this X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getsignaturealgoid"></a>
 ## getSignatureAlgOid
 
 ```TypeScript
@@ -657,6 +678,7 @@ Obtains the object identifier (OID) of the X.509 certificate signing algorithm. 
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getsignaturealgparams"></a>
 ## getSignatureAlgParams
 
 ```TypeScript
@@ -688,6 +710,7 @@ Obtains the signing algorithm parameters of this X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getsubjectaltnames"></a>
 ## getSubjectAltNames
 
 ```TypeScript
@@ -722,6 +745,7 @@ Obtains the Subject Alternative Names (SANs) of this X.509 certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getsubjectname"></a>
 ## getSubjectName
 
 ```TypeScript
@@ -763,6 +787,7 @@ Obtains the subject of this X.509 certificate.
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | invalid parameters. Possible causes:<br>1. Incorrect parameter types;<br>2. Parameter verification failed.<br>**Applicable version:** 12 and later |
 
+<a id="getsubjectx500distinguishedname"></a>
 ## getSubjectX500DistinguishedName
 
 ```TypeScript
@@ -793,6 +818,7 @@ Obtains the X.500 distinguished name object of the X.509 certificate subject.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="getversion"></a>
 ## getVersion
 
 ```TypeScript
@@ -815,6 +841,7 @@ Obtains the X.509 certificate version.
 | --- | --- |
 | number | X.509 certificate version obtained. |
 
+<a id="hashcode"></a>
 ## hashCode
 
 ```TypeScript
@@ -835,7 +862,7 @@ Obtains the hash value of the data in DER format.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Hash value obtained. |
+| Uint8Array | Hash value obtained. |
 
 **Error codes:**
 
@@ -845,6 +872,7 @@ Obtains the hash value of the data in DER format.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="match"></a>
 ## match
 
 ```TypeScript
@@ -881,6 +909,7 @@ Checks whether this certificate matches the specified parameters.
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -911,6 +940,7 @@ Converts the object data into a string.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="tostring-1"></a>
 ## toString
 
 ```TypeScript
@@ -948,6 +978,7 @@ Converts this object into a string in the specified encoding format.
 | [19020003](../errorcode-cert.md#19020003-parameter-check-failure) | parameter check failed. Possible causes:<br>1. The value of encodingType is not in the EncodingType enumeration range. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="verify"></a>
 ## verify
 
 ```TypeScript
@@ -969,7 +1000,7 @@ Verifies the certificate signature. This API uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | key | cryptoFramework.PubKey | Yes | Public key used for signature verification. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -978,6 +1009,7 @@ Verifies the certificate signature. This API uses an asynchronous callback to re
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | invalid parameters. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
+<a id="verify-1"></a>
 ## verify
 
 ```TypeScript
@@ -1004,7 +1036,7 @@ Verifies the certificate signature. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

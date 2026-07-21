@@ -1,5 +1,6 @@
 # getRemainingDelayTime
 
+<a id="getremainingdelaytime"></a>
 ## getRemainingDelayTime
 
 ```TypeScript
@@ -12,7 +13,7 @@ Obtains the remaining duration before the application is suspended. This API use
 
 **Deprecated since:** 9
 
-**Substitutes:** getRemainingDelayTime(requestId:
+**Substitutes:** [getRemainingDelayTime(requestId:](arkts-backgroundtasks-backgroundtaskmanager-getremainingdelaytime-f.md#getremainingdelaytime-1)
 
 <!--Device-backgroundTaskManager-function getRemainingDelayTime(requestId: number, callback: AsyncCallback<number>): void--><!--Device-backgroundTaskManager-function getRemainingDelayTime(requestId: number, callback: AsyncCallback<number>): void-End-->
 
@@ -23,7 +24,7 @@ Obtains the remaining duration before the application is suspended. This API use
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | requestId | number | Yes | ID of the suspension delay request. The value is obtained by calling [requestSuspendDelay](arkts-backgroundtasks-backgroundtaskmanager-requestsuspenddelay-depr-f.md#requestsuspenddelay-1). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the remaining duration before the application is suspended, in milliseconds. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the remaining duration before the application is suspended, in milliseconds. |
 
 **Example**
 
@@ -43,6 +44,7 @@ backgroundTaskManager.getRemainingDelayTime(delayInfo.requestId, (err: BusinessE
 ```
 
 
+<a id="getremainingdelaytime-1"></a>
 ## getRemainingDelayTime
 
 ```TypeScript
@@ -55,7 +57,7 @@ Obtains the remaining duration before the application is suspended. This API use
 
 **Deprecated since:** 9
 
-**Substitutes:** getRemainingDelayTime(requestId:
+**Substitutes:** [getRemainingDelayTime(requestId:](arkts-backgroundtasks-backgroundtaskmanager-getremainingdelaytime-f.md#getremainingdelaytime-1)
 
 <!--Device-backgroundTaskManager-function getRemainingDelayTime(requestId: number): Promise<number>--><!--Device-backgroundTaskManager-function getRemainingDelayTime(requestId: number): Promise<number>-End-->
 
@@ -71,7 +73,7 @@ Obtains the remaining duration before the application is suspended. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the remaining duration before the application is suspended, in milliseconds. |
+| Promise&lt;number&gt; | Promise used to return the remaining duration before the application is suspended, in milliseconds. |
 
 **Example**
 

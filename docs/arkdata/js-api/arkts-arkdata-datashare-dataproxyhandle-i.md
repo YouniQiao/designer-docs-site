@@ -14,6 +14,7 @@ Defines the data proxy handle, which can be used to access or manage shared conf
 import { dataShare } from '@kit.ArkData';
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -41,7 +42,7 @@ Deletes the specified shared configuration items based on URIs. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataProxyResult[]> | Promise used to return the result array of the batch operations. |
+| Promise&lt;DataProxyResult[]&gt; | Promise used to return the result array of the batch operations. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ dataProxyHandle.delete(urisToDelete, config).then((results: dataShare.DataProxyR
 
 ```
 
+<a id="deletemypublisheddata"></a>
 ## deleteMyPublishedData
 
 ```TypeScript
@@ -94,7 +96,7 @@ Deletes all the data published by the publisher.Only the data publisher can dele
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataProxyResult[]> | Promise used to return the operation result. |
+| Promise&lt;DataProxyResult[]&gt; | Promise used to return the operation result. |
 
 **Error codes:**
 
@@ -119,6 +121,7 @@ dataProxyHandle.deleteMyPublishedData(config).then((results: dataShare.DataProxy
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -146,7 +149,7 @@ Obtains a specified shared configuration item based on the URI. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataProxyGetResult[]> | Promise used to return the result array of the batch operations. |
+| Promise&lt;DataProxyGetResult[]&gt; | Promise used to return the result array of the batch operations. |
 
 **Error codes:**
 
@@ -173,6 +176,7 @@ dataProxyHandle.get(urisToGet, config).then((results: dataShare.DataProxyGetResu
 
 ```
 
+<a id="getvalues"></a>
 ## getValues
 
 ```TypeScript
@@ -200,7 +204,7 @@ Obtains all multi-value data under a specified URI. Only the publisher and the a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ValueType[]> | Promise used to return an array of all values under the URI. |
+| Promise&lt;ValueType[]&gt; | Promise used to return an array of all values under the URI. |
 
 **Error codes:**
 
@@ -243,6 +247,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -281,7 +286,7 @@ Unsubscribes from the change event of the proxy data corresponding to a specifie
 | event | 'dataChange' | Yes | Event or callback type. The value is **dataChange**, which indicates the data change. |
 | uris | string[] | Yes | Array of URIs to be unsubscribed, with a maximum of 32 URIs. The URI value is fixed at the format of **"datashareproxy://{*bundleName*}/{*path*}"**, in which **bundleName** indicates the bundle name of the publisher application, and **path** can be set to any value but must be unique in the same application. The value contains a maximum of 256 bytes. |
 | config | [DataProxyConfig](arkts-arkdata-datashare-dataproxyconfig-i.md) | Yes | Data proxy configuration. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataProxyChangeInfo[]> | No | Callback function. If the value is empty, undefined,or null, all notifications of the URIs are unsubscribed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataProxyChangeInfo[]&gt; | No | Callback function. If the value is empty, undefined,or null, all notifications of the URIs are unsubscribed. |
 
 **Return value:**
 
@@ -320,6 +325,7 @@ results.forEach((result) => {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -360,7 +366,7 @@ When the publisher calls the [publish](arkts-arkdata-datashare-dataproxyhandle-i
 | event | 'dataChange' | Yes | Event or callback type. The value is **dataChange**, which indicates the data change. This event is triggered when the publisher modifies the configuration. |
 | uris | string[] | Yes | Array of URIs to be subscribed, with a maximum of 32 URIs. The URI value is fixed at the format of **"datashareproxy://{*bundleName*}/{*path*}"**, in which **bundleName** indicates the bundle name of the publisher application, and **path** can be set to any value but must be unique in the same application. The value contains a maximum of 256 bytes. |
 | config | [DataProxyConfig](arkts-arkdata-datashare-dataproxyconfig-i.md) | Yes | Data proxy configuration. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataProxyChangeInfo[]> | Yes | Callback triggered when the publisher modifies the configuration. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataProxyChangeInfo[]&gt; | Yes | Callback triggered when the publisher modifies the configuration. |
 
 **Return value:**
 
@@ -399,6 +405,7 @@ results.forEach((result) => {
 
 ```
 
+<a id="publish"></a>
 ## publish
 
 ```TypeScript
@@ -426,7 +433,7 @@ Publishes shared configuration items. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataProxyResult[]> | Promise used to return the result array of the batch operations. |
+| Promise&lt;DataProxyResult[]&gt; | Promise used to return the result array of the batch operations. |
 
 **Error codes:**
 
@@ -460,6 +467,7 @@ dataProxyHandle.publish(newConfigData, config).then((results: dataShare.DataProx
 
 ```
 
+<a id="putvalue"></a>
 ## putValue
 
 ```TypeScript
@@ -489,7 +497,7 @@ Puts a value into the published data. This operation can be performed only on mu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -532,6 +540,7 @@ try {
 
 ```
 
+<a id="removevalue"></a>
 ## removeValue
 
 ```TypeScript
@@ -560,7 +569,7 @@ Removes the value corresponding to the key. This operation can be performed only
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

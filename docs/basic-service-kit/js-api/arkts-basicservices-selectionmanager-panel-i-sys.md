@@ -16,6 +16,7 @@ Represents the word selection panel.
 import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="hide"></a>
 ## hide
 
 ```TypeScript
@@ -36,7 +37,7 @@ Hides the word selection panel. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ selectionPanel.hide().then(() => {
 
 ```
 
+<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -89,7 +91,7 @@ Moves the word selection panel to the specified coordinates on the screen. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -115,6 +117,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('destroyed')
 
 ```TypeScript
@@ -136,7 +139,7 @@ Unregisters the callback used to listen for the destroy event of the word select
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'destroyed' | Yes | Event type, which is **'destroyed'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback function that returns no value. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback function that returns no value. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -151,6 +154,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('hidden')
 
 ```TypeScript
@@ -172,7 +176,7 @@ Unregisters the callback used to listen for the hide event of the word selection
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hidden' | Yes | Event type, which is **'hidden'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback function that returns no value. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback function that returns no value. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -187,6 +191,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('destroyed')
 
 ```TypeScript
@@ -208,7 +213,7 @@ Registers a callback to listen for the destroy event of the word selection panel
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'destroyed' | Yes | Event type, which is **'destroyed'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback function that returns no value. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback function that returns no value. |
 
 **Example**
 
@@ -225,6 +230,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on('hidden')
 
 ```TypeScript
@@ -246,7 +252,7 @@ Registers a callback to listen for the hide event of the word selection panel. T
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hidden' | Yes | Event type, which is **'hidden'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback function that returns no value. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback function that returns no value. |
 
 **Example**
 
@@ -263,6 +269,7 @@ try {
 
 ```
 
+<a id="setuicontent"></a>
 ## setUiContent
 
 ```TypeScript
@@ -291,7 +298,7 @@ Sets the page content for the word selection panel. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -317,6 +324,7 @@ try {
 
 ```
 
+<a id="show"></a>
 ## show
 
 ```TypeScript
@@ -339,7 +347,7 @@ Shows the word selection panel. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -361,6 +369,7 @@ selectionPanel.show().then(() => {
 
 ```
 
+<a id="startmoving"></a>
 ## startMoving
 
 ```TypeScript
@@ -383,7 +392,7 @@ Moves the word selection panel by dragging. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

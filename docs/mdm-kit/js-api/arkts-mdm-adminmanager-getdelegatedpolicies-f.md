@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="getdelegatedpolicies"></a>
 ## getDelegatedPolicies
 
 ```TypeScript
@@ -35,7 +36,7 @@ Queries the list of policies that can be accessed by the delegated application.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Delegation policy list. |
+| Array&lt;string&gt; | Delegation policy list. |
 
 **Error codes:**
 

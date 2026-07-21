@@ -6,6 +6,7 @@
 import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 
+<a id="showdialog"></a>
 ## showDialog
 
 ```TypeScript
@@ -37,7 +38,7 @@ Creates and displays a dialog box. This API uses an asynchronous callback to ret
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [ShowDialogOptions](arkts-arkui-promptaction-showdialogoptions-i.md) | Yes | Dialog box configuration options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ShowDialogSuccessResponse> | Yes | Callback used to return the result.On success, **err** is **undefined** and **data** contains the dialog box response.On failure, **err** provides error details. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ShowDialogSuccessResponse&gt; | Yes | Callback used to return the result.On success, **err** is **undefined** and **data** contains the dialog box response.On failure, **err** provides error details. |
 
 **Error codes:**
 
@@ -313,6 +314,7 @@ struct DialogExample {
 ```
 
 
+<a id="showdialog-1"></a>
 ## showDialog
 
 ```TypeScript
@@ -349,7 +351,7 @@ Creates and displays a dialog box in the given settings. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ShowDialogSuccessResponse> | Promise that returns the dialog box response. |
+| Promise&lt;ShowDialogSuccessResponse&gt; | Promise that returns the dialog box response. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { uriPermissionManager } from '@kit.AbilityKit';
 ```
 
+<a id="revokeuripermission"></a>
 ## revokeUriPermission
 
 ```TypeScript
@@ -40,7 +41,7 @@ Revokes the URI permission from an application. This API uses an asynchronous ca
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file. The scheme has a fixed value of **file**. For details, see [FileUri](../../apis-core-file-kit/arkts-apis/arkts-corefile-fileuri-fileuri-c.md#constructor-1). |
 | targetBundleName | string | Yes | Bundle name of the application, from which the permission is revoked. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **0** is returned; otherwise, **-1** is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **0** is returned; otherwise, **-1** is returned. |
 
 **Error codes:**
 
@@ -72,6 +73,7 @@ uriPermissionManager.revokeUriPermission(uri, targetBundleName, (error) => {
 ```
 
 
+<a id="revokeuripermission-1"></a>
 ## revokeUriPermission
 
 ```TypeScript
@@ -111,7 +113,7 @@ Revokes the URI permission from an application. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the operation is successful, **0** is returned;otherwise, **-1** is returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the operation is successful, **0** is returned;otherwise, **-1** is returned. |
 
 **Error codes:**
 
@@ -143,6 +145,7 @@ uriPermissionManager.revokeUriPermission(uri, targetBundleName)
 ```
 
 
+<a id="revokeuripermission-2"></a>
 ## revokeUriPermission
 
 ```TypeScript
@@ -183,7 +186,7 @@ Revokes the URI permission from an application. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

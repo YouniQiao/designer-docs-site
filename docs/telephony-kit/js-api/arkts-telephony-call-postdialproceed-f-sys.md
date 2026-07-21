@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="postdialproceed"></a>
 ## postDialProceed
 
 ```TypeScript
@@ -30,7 +31,7 @@ Continue post-dial DTMF(Dual Tone Multi Frequency).
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
 | proceed | boolean | Yes | Indicates whether to continue the post-dial DTMF. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of postDialProceed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of postDialProceed. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ call.postDialProceed(1, true, (err: BusinessError) => {
 ```
 
 
+<a id="postdialproceed-1"></a>
 ## postDialProceed
 
 ```TypeScript
@@ -85,7 +87,7 @@ Continue post-dial DTMF(Dual Tone Multi Frequency).
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the postDialProceed. |
+| Promise&lt;void&gt; | The promise returned by the postDialProceed. |
 
 **Error codes:**
 

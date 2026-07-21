@@ -16,6 +16,7 @@ Provides APIs for uploading and downloading assets.
 import { cloudExtension } from '@kit.ArkData';
 ```
 
+<a id="download"></a>
 ## download
 
 ```TypeScript
@@ -39,13 +40,13 @@ Downloads assets. This API uses a promise to return the result.
 | table | string | Yes | Table name. |
 | gid | string | Yes | Unique identifier generated for the data added to the cloud. |
 | prefix | string | Yes | Asset prefix information. |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CloudAsset> | Yes | Assets to download. |
+| assets | Array&lt;CloudAsset&gt; | Yes | Assets to download. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Result<CloudAsset>>> | Promise used to return the asset download result,including the asset IDs and asset hash values. |
+| Promise&lt;Array&lt;Result&lt;CloudAsset&gt;&gt;&gt; | Promise used to return the asset download result,including the asset IDs and asset hash values. |
 
 **Example**
 
@@ -61,6 +62,7 @@ class MyAssetLoader implements cloudExtension.AssetLoader {
 
 ```
 
+<a id="upload"></a>
 ## upload
 
 ```TypeScript
@@ -83,13 +85,13 @@ Uploads assets. This API uses a promise to return the result.
 | --- | --- | --- | --- |
 | table | string | Yes | Table name. |
 | gid | string | Yes | Unique identifier generated for the data added to the cloud. |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CloudAsset> | Yes | Assets to upload. |
+| assets | Array&lt;CloudAsset&gt; | Yes | Assets to upload. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Result<CloudAsset>>> | Promise used to return the asset upload result,including the asset IDs and asset hash values. |
+| Promise&lt;Array&lt;Result&lt;CloudAsset&gt;&gt;&gt; | Promise used to return the asset upload result,including the asset IDs and asset hash values. |
 
 **Example**
 

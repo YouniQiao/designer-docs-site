@@ -45,7 +45,7 @@ Set value.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | {    date: { year: number; month: number; day: number };    currentData: MonthData;    preData: MonthData;    nextData: MonthData;    controller?: CalendarController;  } | Yes |  |
+| value | {     date: { year: number; month: number; day: number };     currentData: MonthData;     preData: MonthData;     nextData: MonthData;     controller?: CalendarController;   } | Yes |  |
 
 ## Summary
 

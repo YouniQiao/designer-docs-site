@@ -14,6 +14,7 @@
 import { webSocket } from '@kit.NetworkKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -41,7 +42,7 @@ Close a given WebSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Indicating whether the connection is closed sucessfully. |
+| Promise&lt;boolean&gt; | Indicating whether the connection is closed sucessfully. |
 
 **Error codes:**
 
@@ -87,6 +88,7 @@ localServer.on('connect', (connection: webSocket.WebSocketConnection) => {
 
 ```
 
+<a id="listallconnections"></a>
 ## listAllConnections
 
 ```TypeScript
@@ -156,6 +158,7 @@ localServer.on('connect', async (connection: webSocket.WebSocketConnection) => {
 
 ```
 
+<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -188,6 +191,7 @@ localServer.off('error');
 
 ```
 
+<a id="off-1"></a>
 ## off('connect')
 
 ```TypeScript
@@ -207,7 +211,7 @@ Cancels listening for events that a client requested to connect the server.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' | Yes | event indicating that a client requested to connect the server. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WebSocketConnection> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WebSocketConnection&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -220,6 +224,7 @@ localServer.off('connect');
 
 ```
 
+<a id="off-2"></a>
 ## off('close')
 
 ```TypeScript
@@ -252,6 +257,7 @@ localServer.off('close');
 
 ```
 
+<a id="off-3"></a>
 ## off('messageReceive')
 
 ```TypeScript
@@ -271,7 +277,7 @@ Cancels listening for events that the server received a message.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'messageReceive' | Yes | event indicating that the server received a message. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WebSocketMessage> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WebSocketMessage&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -284,6 +290,7 @@ localServer.off('messageReceive');
 
 ```
 
+<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -318,6 +325,7 @@ wsServer.on('error', (err: BusinessError) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('connect')
 
 ```TypeScript
@@ -337,7 +345,7 @@ Enables listening for events that a client requested to connect the server.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' | Yes | event indicating that a client requested to connect the server. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WebSocketConnection> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WebSocketConnection&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -352,6 +360,7 @@ localServer.on('connect', (connection: webSocket.WebSocketConnection) => {
 
 ```
 
+<a id="on-2"></a>
 ## on('messageReceive')
 
 ```TypeScript
@@ -371,7 +380,7 @@ Enables listening for events that the server received a message.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'messageReceive' | Yes | event indicating that the server received a message. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WebSocketMessage> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WebSocketMessage&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -386,6 +395,7 @@ localServer.on('messageReceive', (message: webSocket.WebSocketMessage) => {
 
 ```
 
+<a id="on-3"></a>
 ## on('close')
 
 ```TypeScript
@@ -420,6 +430,7 @@ localServer.on('close', (clientConnection: webSocket.WebSocketConnection, closeR
 
 ```
 
+<a id="send"></a>
 ## send
 
 ```TypeScript
@@ -447,7 +458,7 @@ Send a message using a specific connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Indicating whether the message is sent sucessfully. |
+| Promise&lt;boolean&gt; | Indicating whether the message is sent sucessfully. |
 
 **Error codes:**
 
@@ -496,6 +507,7 @@ localServer.on('connect', async (connection: webSocket.WebSocketConnection) => {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -522,7 +534,7 @@ Start the WebSocket Server, and listen to a given port.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Indicating whether the server starts sucessfully. |
+| Promise&lt;boolean&gt; | Indicating whether the server starts sucessfully. |
 
 **Error codes:**
 
@@ -561,6 +573,7 @@ localServer.start(config).then((success: boolean) => {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -581,7 +594,7 @@ Stop listening.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The Indicating whether the server stops sucessfully. |
+| Promise&lt;boolean&gt; | The Indicating whether the server stops sucessfully. |
 
 **Error codes:**
 

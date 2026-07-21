@@ -6,6 +6,7 @@
 import { vcard } from '@kit.TelephonyKit';
 ```
 
+<a id="importvcard"></a>
 ## importVCard
 
 ```TypeScript
@@ -29,7 +30,7 @@ Import contacts from the specified vcf file.
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | filePath | string | Yes | Vcf file path. |
 | accountId | number | Yes | Contact account ID. When the app chooses to import the vcf file into a contact account,it needs to pass in the accountId. If the accountId is not passed, a new contact account will be added by default. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of the function. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of the function. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ class EntryAbility extends UIAbility {
 ```
 
 
+<a id="importvcard-1"></a>
 ## importVCard
 
 ```TypeScript
@@ -91,7 +93,7 @@ Import contacts from the specified vcf file.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -126,6 +128,7 @@ class EntryAbility extends UIAbility {
 ```
 
 
+<a id="importvcard-2"></a>
 ## importVCard
 
 ```TypeScript
@@ -148,7 +151,7 @@ Import contacts from the specified vcf file.
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | filePath | string | Yes | Vcf file path. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of the function. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of the function. |
 
 **Error codes:**
 

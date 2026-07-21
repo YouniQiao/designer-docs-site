@@ -1,6 +1,6 @@
 # WriteStream
 
-Defines a writeable stream. You need to use [fileIo.createWriteStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatewritestream12) to create a **WriteStream** instance, which is inherited from [stream.Writable](../../apis-arkts/arkts-apis/arkts-arkts-stream-writable-c.md).
+Defines a writeable stream. You need to use [fileIo.createWriteStream](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatewritestream12) to create a **WriteStream** instance, which is inherited from [stream.Writable](../../apis-arkts/arkts-apis/arkts-arkts-stream-writable-c.md).
 
 **Inheritance/Implementation:** WriteStream extends [stream.Writable](../../apis-arkts/arkts-apis/arkts-arkts-stream-writable-c.md)
 
@@ -16,6 +16,7 @@ Defines a writeable stream. You need to use [fileIo.createWriteStream](../../../
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -50,6 +51,7 @@ ws.close();
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -64,6 +66,7 @@ The WriteStream constructor.
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
+<a id="seek"></a>
 ## seek
 
 ```TypeScript

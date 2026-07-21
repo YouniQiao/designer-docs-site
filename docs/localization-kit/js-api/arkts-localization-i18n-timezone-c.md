@@ -14,6 +14,7 @@ Provides time zone management capabilities, such as time zone name translation, 
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="getappdefaulttimezone"></a>
 ## getAppDefaultTimeZone
 
 ```TypeScript
@@ -58,6 +59,7 @@ console.info(`getAppDefaultTimeZone success, time zone id: ${id}`);
 
 ```
 
+<a id="getavailableids"></a>
 ## getAvailableIDs
 
 ```TypeScript
@@ -78,7 +80,7 @@ Obtains the list of time zone IDs supported by the system.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of time zone IDs supported by the system. |
+| Array&lt;string&gt; | List of time zone IDs supported by the system. |
 
 **Example**
 
@@ -90,6 +92,7 @@ let ids: Array<string> = i18n.TimeZone.getAvailableIDs();
 
 ```
 
+<a id="getavailablezonecityids"></a>
 ## getAvailableZoneCityIDs
 
 ```TypeScript
@@ -110,7 +113,7 @@ Obtains the list of time zone city IDs supported by the system.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of time zone city IDs supported by the system. |
+| Array&lt;string&gt; | List of time zone city IDs supported by the system. |
 
 **Example**
 
@@ -122,6 +125,7 @@ let cityIDs: Array<string> = i18n.TimeZone.getAvailableZoneCityIDs();
 
 ```
 
+<a id="getcitydisplayname"></a>
 ## getCityDisplayName
 
 ```TypeScript
@@ -143,7 +147,7 @@ Obtains time zone city display name in the specified language.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | cityID | string | Yes | Time zone city ID. |
-| locale | string | Yes | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
+| locale | string | Yes | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
 
 **Return value:**
 
@@ -160,6 +164,7 @@ let displayName: string = i18n.TimeZone.getCityDisplayName('Shanghai', 'zh-CN');
 
 ```
 
+<a id="getdisplayname"></a>
 ## getDisplayName
 
 ```TypeScript
@@ -180,7 +185,7 @@ Obtains time zone display name in the specified language.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string | No | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. The default value is the current system locale. |
+| locale | string | No | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. The default value is the current system locale. |
 | isDST | boolean | No | Whether DST information is displayed. The value **true** indicates that DST information is displayed, and the value **false** indicates the opposite. The default value is **false**. |
 
 **Return value:**
@@ -199,6 +204,7 @@ let timezoneName: string = timezone.getDisplayName('zh-CN', false); // timezoneN
 
 ```
 
+<a id="getid"></a>
 ## getID
 
 ```TypeScript
@@ -231,6 +237,7 @@ let timezoneID: string = timezone.getID(); // timezoneID = 'Asia/Shanghai'
 
 ```
 
+<a id="getoffset"></a>
 ## getOffset
 
 ```TypeScript
@@ -269,6 +276,7 @@ let offset: number = timezone.getOffset(1234567890); // offset = 28800000
 
 ```
 
+<a id="getrawoffset"></a>
 ## getRawOffset
 
 ```TypeScript
@@ -301,6 +309,7 @@ let offset: number = timezone.getRawOffset(); // offset = 28800000
 
 ```
 
+<a id="gettimezonefromcity"></a>
 ## getTimezoneFromCity
 
 ```TypeScript
@@ -338,6 +347,7 @@ let timezone: i18n.TimeZone = i18n.TimeZone.getTimezoneFromCity('Shanghai');
 
 ```
 
+<a id="gettimezonesbylocation"></a>
 ## getTimezonesByLocation
 
 ```TypeScript
@@ -365,7 +375,7 @@ Creates an array of **TimeZone** objects corresponding to the specified location
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<TimeZone> | **TimeZone** objects corresponding to the specified location. |
+| Array&lt;TimeZone&gt; | **TimeZone** objects corresponding to the specified location. |
 
 **Error codes:**
 
@@ -389,13 +399,14 @@ try {
 
 ```
 
+<a id="getzonerules"></a>
 ## getZoneRules
 
 ```TypeScript
 public getZoneRules(): ZoneRules
 ```
 
-Obtains the time zone transition rules. For details about the time zone transition logic, see [DST Transition](../../../../internationalization/i18n-dst-transition.md).
+Obtains the time zone transition rules. For details about the time zone transition logic, see [DST Transition](docroot://internationalization/i18n-dst-transition.md).
 
 **Since:** 20
 
@@ -411,6 +422,7 @@ Obtains the time zone transition rules. For details about the time zone transiti
 | --- | --- |
 | [ZoneRules](arkts-localization-i18n-zonerules-c.md) | Time zone transition rule, including the transition time and the offset before and after the transition. |
 
+<a id="isdaylightsavingtime"></a>
 ## isDaylightSavingTime
 
 ```TypeScript
@@ -433,7 +445,7 @@ Check if the given date use daylight saving time. The calculation will be based 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | Date and time. Note: The month starts from **0**, indicating January. |
+| date | Date | Yes | Date and time. Note: The month starts from **0**, indicating January. |
 
 **Return value:**
 
@@ -441,6 +453,7 @@ Check if the given date use daylight saving time. The calculation will be based 
 | --- | --- |
 | boolean | true if the date use daylight saving time, and false otherwise. |
 
+<a id="setappdefaulttimezonebyid"></a>
 ## setAppDefaultTimeZoneById
 
 ```TypeScript

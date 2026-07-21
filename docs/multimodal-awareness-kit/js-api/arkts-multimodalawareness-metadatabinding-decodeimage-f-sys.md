@@ -6,6 +6,7 @@
 import { metadataBinding } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="decodeimage"></a>
 ## decodeImage
 
 ```TypeScript
@@ -32,7 +33,7 @@ Decodes the information carried in the image. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise object, which is used to return the encoded metadata of the image. |
+| Promise&lt;string&gt; | Promise object, which is used to return the encoded metadata of the image. |
 
 **Error codes:**
 

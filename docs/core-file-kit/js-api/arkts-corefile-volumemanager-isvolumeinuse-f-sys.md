@@ -6,6 +6,7 @@
 import { volumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="isvolumeinuse"></a>
 ## isVolumeInUse
 
 ```TypeScript
@@ -36,7 +37,7 @@ Query whether the specified volume is currently in use. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return whether the specified volume is currently in use. |
+| Promise&lt;boolean&gt; | Promise used to return whether the specified volume is currently in use. |
 
 **Error codes:**
 

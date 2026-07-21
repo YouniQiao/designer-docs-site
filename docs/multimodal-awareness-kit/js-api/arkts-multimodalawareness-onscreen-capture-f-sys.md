@@ -6,6 +6,7 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="capture"></a>
 ## capture
 
 ```TypeScript
@@ -40,7 +41,7 @@ Proactively triggers screen content awareness to obtain page information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OnscreenAwarenessInfo[]> | Promise used to return the onscreen awareness result.<br>The returned onscreen awareness information list **OnscreenAwarenessInfo[]** contains a<br> maximum of two awareness information items. |
+| Promise&lt;OnscreenAwarenessInfo[]&gt; | Promise used to return the onscreen awareness result.<br>The returned onscreen awareness information list **OnscreenAwarenessInfo[]** contains a<br> maximum of two awareness information items. |
 
 **Error codes:**
 

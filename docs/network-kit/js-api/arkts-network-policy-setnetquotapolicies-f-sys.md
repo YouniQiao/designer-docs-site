@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="setnetquotapolicies"></a>
 ## setNetQuotaPolicies
 
 ```TypeScript
@@ -28,8 +29,8 @@ Set metered network quota policies.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| quotaPolicies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<NetQuotaPolicy> | Yes | Indicates {@link NetQuotaPolicy}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setNetQuotaPolicies. |
+| quotaPolicies | Array&lt;NetQuotaPolicy&gt; | Yes | Indicates {@link NetQuotaPolicy}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setNetQuotaPolicies. |
 
 **Error codes:**
 
@@ -72,6 +73,7 @@ policy.setNetQuotaPolicies(netQuotaPolicyList, (error: BusinessError) => {
 ```
 
 
+<a id="setnetquotapolicies-1"></a>
 ## setNetQuotaPolicies
 
 ```TypeScript
@@ -94,13 +96,13 @@ Set metered network quota policies.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| quotaPolicies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<NetQuotaPolicy> | Yes | Indicates {@link NetQuotaPolicy}. |
+| quotaPolicies | Array&lt;NetQuotaPolicy&gt; | Yes | Indicates {@link NetQuotaPolicy}. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { backup } from '@kit.CoreFileKit';
 ```
 
+<a id="getbackupversion"></a>
 ## getBackupVersion
 
 ```TypeScript

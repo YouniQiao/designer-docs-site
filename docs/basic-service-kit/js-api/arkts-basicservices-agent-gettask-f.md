@@ -6,6 +6,7 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="gettask"></a>
 ## getTask
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains task information based on the task ID. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Task> | Promise used to return the created task. |
+| Promise&lt;Task&gt; | Promise used to return the created task. |
 
 **Error codes:**
 

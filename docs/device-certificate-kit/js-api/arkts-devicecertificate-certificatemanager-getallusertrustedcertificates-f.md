@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="getallusertrustedcertificates"></a>
 ## getAllUserTrustedCertificates
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains all user trusted root CA certificates of the device. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMResult> | Promise used to return the operation result, that is, **certList** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
+| Promise&lt;CMResult&gt; | Promise used to return the operation result, that is, **certList** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ try {
 ```
 
 
+<a id="getallusertrustedcertificates-1"></a>
 ## getAllUserTrustedCertificates
 
 ```TypeScript
@@ -88,7 +90,7 @@ Obtains the user root CA certificates based on the certificate scope. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMResult> | Promise used to return the operation result, that is, **certList** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
+| Promise&lt;CMResult&gt; | Promise used to return the operation result, that is, **certList** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
 
 **Error codes:**
 

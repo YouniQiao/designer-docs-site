@@ -2,8 +2,8 @@
 
 The uiEffect module provides basic capabilities to apply an effect, for example, blur, pixel stretch, and brightness,to a component. Effects are classified into filters and visual effects. Effects of the same category can be cascaded in an effect instance of the corresponding category. In actual development, the blur effect can be used for background blurring, and the brightness effect can be used for screen-on display.
 
-- [Filter](../../../../reference/apis-arkgraphics2d/js-apis-uiEffect.md#filter): applies a filter to a component.  
-- [VisualEffect](../../../../reference/apis-arkgraphics2d/js-apis-uiEffect.md#visualeffect): applies a visual effect to a component.
+- [Filter](docroot://reference/apis-arkgraphics2d/js-apis-uiEffect.md#filter): applies a filter to a component.  
+- [VisualEffect](docroot://reference/apis-arkgraphics2d/js-apis-uiEffect.md#visualeffect): applies a visual effect to a component.
 
 **Since:** 12
 
@@ -23,17 +23,17 @@ import { uiEffect } from '@kit.ArkGraphics2D';
 
 | Name | Description |
 | --- | --- |
-| [createFilter](arkts-arkgraphics2d-uieffect-createfilter-f.md#createfilter-1) | Create a Filter to add multiple effects to the component. |
-| [createEffect](arkts-arkgraphics2d-uieffect-createeffect-f.md#createeffect-1) | Create a VisualEffect to add multiple effects to the component. |
+| [createFilter](arkts-arkgraphics2d-uieffect-createfilter-f.md#createfilter) | Create a Filter to add multiple effects to the component. |
+| [createEffect](arkts-arkgraphics2d-uieffect-createeffect-f.md#createeffect) | Create a VisualEffect to add multiple effects to the component. |
 
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [createBrightnessBlender](arkts-arkgraphics2d-uieffect-createbrightnessblender-f-sys.md#createbrightnessblender-1) | Create a BrightnessBlender, which is used to adjust the brightness of UI components. |
-| [createHdrBrightnessBlender](arkts-arkgraphics2d-uieffect-createhdrbrightnessblender-f-sys.md#createhdrbrightnessblender-1) | Create an HdrBrightnessBlender, which is used to adjust the HDR brightness of UI components. |
-| [createHdrDarkenBlender](arkts-arkgraphics2d-uieffect-createhdrdarkenblender-f-sys.md#createhdrdarkenblender-1) | Create an HdrDarkenBlender, which is used to apply HDR-adaptive darken blender on UI components. |
+| [createBrightnessBlender](arkts-arkgraphics2d-uieffect-createbrightnessblender-f-sys.md#createbrightnessblender) | Create a BrightnessBlender, which is used to adjust the brightness of UI components. |
+| [createHdrBrightnessBlender](arkts-arkgraphics2d-uieffect-createhdrbrightnessblender-f-sys.md#createhdrbrightnessblender) | Create an HdrBrightnessBlender, which is used to adjust the HDR brightness of UI components. |
+| [createHdrDarkenBlender](arkts-arkgraphics2d-uieffect-createhdrdarkenblender-f-sys.md#createhdrdarkenblender) | Create an HdrDarkenBlender, which is used to apply HDR-adaptive darken blender on UI components. |
 <!--DelEnd-->
 
 <!--Del-->

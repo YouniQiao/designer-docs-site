@@ -14,6 +14,7 @@ Manages the ble scanner.Before calling a ble scanner method, you must use {@link
 import { ble } from '@kit.ConnectivityKit';
 ```
 
+<a id="off"></a>
 ## off('BLEDeviceFind')
 
 ```TypeScript
@@ -39,7 +40,7 @@ Unsubscribe BLE scan result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'BLEDeviceFind' | Yes | Type of the scan result event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScanReport> | No | Callback used to listen for the scan result event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScanReport&gt; | No | Callback used to listen for the scan result event. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('BLEDeviceFind')
 
 ```TypeScript
@@ -95,7 +97,7 @@ Subscribe BLE scan result.On API 26.0.0 and above, if the application has ohos.p
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'BLEDeviceFind' | Yes | Type of the scan result event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScanReport> | Yes | Callback used to listen for the scan result event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScanReport&gt; | Yes | Callback used to listen for the scan result event. |
 
 **Error codes:**
 
@@ -123,6 +125,7 @@ try {
 
 ```
 
+<a id="startscan"></a>
 ## startScan
 
 ```TypeScript
@@ -147,14 +150,14 @@ Starts scanning for specified BLE devices with filters.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| filters | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ScanFilter> | Yes | Indicates the list of filters used to filter out specified devices.If you do not want to use filter, set this parameter to {@code null}. |
+| filters | Array&lt;ScanFilter&gt; | Yes | Indicates the list of filters used to filter out specified devices.If you do not want to use filter, set this parameter to {@code null}. |
 | options | [ScanOptions](arkts-connectivity-bluetoothmanager-scanoptions-i.md) | No | Indicates the parameters for scanning and if the user does not assign a value,the default value will be used. {@link ScanOptions#interval} set to 0,and {@link ScanOptions#dutyMode} set to {@link SCAN_MODE_LOW_POWER}and {@link ScanOptions#matchMode} set to {@link MATCH_MODE_AGGRESSIVE}.and {@link ScanOptions#phyType} set to {@link PHY_LE_ALL_SUPPORTED}.and {@link ScanOptions#reportMode} set to {@link ScanReportMode#NORMAL}. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -202,6 +205,7 @@ startscan();
 
 ```
 
+<a id="stopscan"></a>
 ## stopScan
 
 ```TypeScript
@@ -226,7 +230,7 @@ Stops BLE scanning.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

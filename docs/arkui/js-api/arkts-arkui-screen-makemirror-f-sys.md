@@ -6,6 +6,7 @@
 import { screen } from '@kit.ArkUI';
 ```
 
+<a id="makemirror"></a>
 ## makeMirror
 
 ```TypeScript
@@ -27,8 +28,8 @@ Sets the screen to mirror mode. This API uses an asynchronous callback to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mainScreen | number | Yes | ID of the primary screen. The ID must be an integer. |
-| mirrorScreen | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Array of IDs of secondary screens. Each ID must be an integer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the group ID of the secondary screens, where the ID is an integer. |
+| mirrorScreen | Array&lt;number&gt; | Yes | Array of IDs of secondary screens. Each ID must be an integer. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the group ID of the secondary screens, where the ID is an integer. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ screen.makeMirror(mainScreenId, mirrorScreenIds, (err: BusinessError, data: numb
 ```
 
 
+<a id="makemirror-1"></a>
 ## makeMirror
 
 ```TypeScript
@@ -80,13 +82,13 @@ Sets the screen to mirror mode. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mainScreen | number | Yes | ID of the primary screen. The ID must be an integer. |
-| mirrorScreen | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Array of IDs of secondary screens. Each ID must be an integer. |
+| mirrorScreen | Array&lt;number&gt; | Yes | Array of IDs of secondary screens. Each ID must be an integer. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the group ID of the secondary screens, where the ID is an integer. |
+| Promise&lt;number&gt; | Promise used to return the group ID of the secondary screens, where the ID is an integer. |
 
 **Error codes:**
 

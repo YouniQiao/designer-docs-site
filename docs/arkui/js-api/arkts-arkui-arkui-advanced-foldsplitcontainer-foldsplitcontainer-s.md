@@ -13,6 +13,8 @@
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct FoldSplitContainer--><!--Device-unnamed-export declare struct FoldSplitContainer-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -31,7 +33,7 @@ animationOptions?: AnimateParam | null
 
 Animation settings. The value **null** indicates that the animation is disabled.
 
-**Type:** AnimateParam | null
+**Type:** AnimateParam \| null
 
 **Since:** 12
 
@@ -75,7 +77,7 @@ extra?: Callback<void>
 
 Callback function for the extra region. If this parameter is not provided,there is no corresponding region.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 
@@ -161,7 +163,7 @@ primary: Callback<void>
 
 Callback function for the primary region.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 
@@ -183,7 +185,7 @@ secondary: Callback<void>
 
 Callback function for the extra region.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 

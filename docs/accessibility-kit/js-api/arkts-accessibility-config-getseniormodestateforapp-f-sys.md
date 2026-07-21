@@ -6,6 +6,7 @@
 import { config } from '@kit.AccessibilityKit';
 ```
 
+<a id="getseniormodestateforapp"></a>
 ## getSeniorModeStateForApp
 
 ```TypeScript
@@ -37,7 +38,7 @@ Get the senior mode state for app.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if senior mode is enabled; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if senior mode is enabled; returns {@code false} otherwise. |
 
 **Error codes:**
 

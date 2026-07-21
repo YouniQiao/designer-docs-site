@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="offrtterrcause"></a>
 ## offRttErrCause
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe from the rtt error report event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RttErrorInfo> | No | Indicates the callback for getting the rtt error report. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RttErrorInfo&gt; | No | Indicates the callback for getting the rtt error report. |
 
 **Error codes:**
 

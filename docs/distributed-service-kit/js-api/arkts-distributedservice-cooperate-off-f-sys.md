@@ -6,6 +6,7 @@
 import { cooperate } from '@kit.DistributedServiceKit';
 ```
 
+<a id="off"></a>
 ## off('cooperate')
 
 ```TypeScript
@@ -31,7 +32,7 @@ Disables listening for screen hopping status change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cooperate' | Yes | Event type. The value is **cooperate**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback to be unregistered. If this parameter is not specified, all callbacks registered by the current application will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback to be unregistered. If this parameter is not specified, all callbacks registered by the current application will be unregistered. |
 
 **Error codes:**
 
@@ -41,6 +42,7 @@ Disables listening for screen hopping status change events.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
 
 
+<a id="off-1"></a>
 ## off('cooperateMessage')
 
 ```TypeScript
@@ -64,7 +66,7 @@ Disables listening for screen hopping status change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cooperateMessage' | Yes | Event type. The value is **cooperateMessage**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CooperateMessage> | No | Callback to be unregistered. If this parameter is not specified,all callbacks registered by the current application will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CooperateMessage&gt; | No | Callback to be unregistered. If this parameter is not specified,all callbacks registered by the current application will be unregistered. |
 
 **Error codes:**
 
@@ -75,6 +77,7 @@ Disables listening for screen hopping status change events.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
 
 
+<a id="off-2"></a>
 ## off('cooperateMouse')
 
 ```TypeScript
@@ -99,7 +102,7 @@ Unregisters the listener for the mouse cursor position of a device.
 | --- | --- | --- | --- |
 | type | 'cooperateMouse' | Yes | Event type, which is **'cooperateMouse'**. |
 | networkId | string | Yes | Descriptor of the target device. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MouseLocation> | No | Callback to be unregistered. If this parameter is not specified,all callbacks registered by the current application will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MouseLocation&gt; | No | Callback to be unregistered. If this parameter is not specified,all callbacks registered by the current application will be unregistered. |
 
 **Error codes:**
 

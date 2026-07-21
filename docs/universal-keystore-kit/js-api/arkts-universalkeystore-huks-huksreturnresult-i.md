@@ -22,7 +22,7 @@ certChains?: Array<string>
 
 Certificate chain information. The default value is **undefined**.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 
@@ -58,7 +58,7 @@ properties?: Array<HuksParam>
 
 Challenge obtained after the [initSession](arkts-universalkeystore-huks-initsession-f.md#initsession-1)operation. The default value is **undefined**.
 
-**Type:** Array<HuksParam>
+**Type:** Array&lt;HuksParam&gt;
 
 **Since:** 9
 

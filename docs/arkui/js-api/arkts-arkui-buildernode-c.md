@@ -2,7 +2,7 @@
 
 class BuilderNode\<Args extends Object[]>
 
-Implements a BuilderNode, which can create a component tree through the stateless UI method [@Builder](../../../../ui/state-management/arkts-builder.md) and hold the root node of the component tree. A BuilderNode cannot be defined as a state variable. The FrameNode held in the BuilderNode is only used to mount the BuilderNode to other FrameNodes as a child node. Undefined behavior may occur if you set attributes or perform operations on subnodes of the FrameNode held by the BuilderNode. Therefore, after you have obtained a [RenderNode](arkts-arkui-rendernode-c.md) through the [getFrameNode](arkts-arkui-buildernode-c.md#getframenode-1) method of the BuilderNode and the [getRenderNode](arkts-arkui-framenode-c.md#getrendernode-1) method of the [FrameNode](arkts-arkui-framenode-c.md), avoid setting the attributes or operating the subnodes through APIs of [RenderNode](arkts-arkui-rendernode-c.md).
+Implements a BuilderNode, which can create a component tree through the stateless UI method [@Builder](docroot://ui/state-management/arkts-builder.md) and hold the root node of the component tree. A BuilderNode cannot be defined as a state variable. The FrameNode held in the BuilderNode is only used to mount the BuilderNode to other FrameNodes as a child node. Undefined behavior may occur if you set attributes or perform operations on subnodes of the FrameNode held by the BuilderNode. Therefore, after you have obtained a [RenderNode](arkts-arkui-rendernode-c.md) through the [getFrameNode](arkts-arkui-buildernode-c.md#getframenode-1) method of the BuilderNode and the [getRenderNode](arkts-arkui-framenode-c.md#getrendernode-1) method of the [FrameNode](arkts-arkui-framenode-c.md), avoid setting the attributes or operating the subnodes through APIs of [RenderNode](arkts-arkui-rendernode-c.md).
 
 **Since:** 11
 
@@ -10,13 +10,14 @@ Implements a BuilderNode, which can create a component tree through the stateles
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="build"></a>
 ## build
 
 ```TypeScript
 build(builder: WrappedBuilder<Args>, arg?: Object): void
 ```
 
-Creates a component tree based on the passed object and holds the root node of the component tree. The stateless UI method [@Builder](../../../../ui/state-management/arkts-builder.md) has at most one root node.
+Creates a component tree based on the passed object and holds the root node of the component tree. The stateless UI method [@Builder](docroot://ui/state-management/arkts-builder.md) has at most one root node.
 
 Custom components are allowed.
 
@@ -53,23 +54,24 @@ Custom components are allowed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| builder | [WrappedBuilder](../arkts-components/arkts-arkui-common-wrappedbuilder-c.md)<Args> | Yes | Stateless UI method [@Builder](../../../../ui/state-management/arkts-builder.md) required for creating a component tree. |
-| arg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Argument of the builder. Only one input parameter is supported, and the type of the input parameter must be consistent with the type defined by @Builder.<br>Default value: **undefined**. |
+| builder | [WrappedBuilder](../arkts-components/arkts-arkui-wrappedbuilder-c.md)&lt;Args&gt; | Yes | Stateless UI method [@Builder](docroot://ui/state-management/arkts-builder.md) required for creating a component tree. |
+| arg | Object | No | Argument of the builder. Only one input parameter is supported, and the type of the input parameter must be consistent with the type defined by @Builder.<br>Default value: **undefined**. |
 
+<a id="build-1"></a>
 ## build
 
 ```TypeScript
 build(builder: WrappedBuilder<Args>, arg: Object, options: BuildOptions): void
 ```
 
-Creates a component tree based on the passed object and holds the root node of the component tree. The stateless UI method [@Builder](../../../../ui/state-management/arkts-builder.md) has at most one root node.
+Creates a component tree based on the passed object and holds the root node of the component tree. The stateless UI method [@Builder](docroot://ui/state-management/arkts-builder.md) has at most one root node.
 
 Custom components are allowed. Compared with the [build(builder: WrappedBuilder\<Args>, arg?: Object)](arkts-arkui-buildernode-c.md) API, this API can use the builder configuration parameters to determine whether @Builder can be nested with @Builder.
 
 > **NOTE**
 
 > - For details about the creation and update using @Builder, see  
-> [@Builder](../../../../ui/state-management/arkts-builder.md).  
+> [@Builder](docroot://ui/state-management/arkts-builder.md).  
 >  
 > - The outermost @Builder supports only one input parameter.
 
@@ -87,10 +89,11 @@ Custom components are allowed. Compared with the [build(builder: WrappedBuilder\
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| builder | [WrappedBuilder](../arkts-components/arkts-arkui-common-wrappedbuilder-c.md)<Args> | Yes | Stateless UI method [@Builder](../../../../ui/state-management/arkts-builder.md) required for creating a component tree. |
-| arg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Argument of the builder. Only one input parameter is supported, and the type of the input parameter must be consistent with the type defined by @Builder. |
+| builder | [WrappedBuilder](../arkts-components/arkts-arkui-wrappedbuilder-c.md)&lt;Args&gt; | Yes | Stateless UI method [@Builder](docroot://ui/state-management/arkts-builder.md) required for creating a component tree. |
+| arg | Object | Yes | Argument of the builder. Only one input parameter is supported, and the type of the input parameter must be consistent with the type defined by @Builder. |
 | options | [BuildOptions](arkts-arkui-buildernode-buildoptions-i.md) | Yes | Build options, which determine whether to support nesting @Builder within @Builder. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -113,16 +116,17 @@ When content generated by BuilderNode is embedded within another RenderNode for 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uiContext | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UI context. For details about how to obtain it, see [Obtaining UI Context](../../../../reference/apis-arkui/js-apis-arkui-node.md#obtaining-ui-context). |
+| uiContext | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UI context. For details about how to obtain it, see [Obtaining UI Context](docroot://reference/apis-arkui/js-apis-arkui-node.md#obtaining-ui-context). |
 | options | [RenderOptions](arkts-arkui-buildernode-renderoptions-i.md) | No | Parameters for creating a BuilderNode.<br>Default value: **undefined**. |
 
+<a id="dispose"></a>
 ## dispose
 
 ```TypeScript
 dispose(): void
 ```
 
-Immediately releases the reference relationship between this BuilderNode object and its [entity node](../../../../ui/arkts-user-defined-node.md#basic-concepts). For details about the scenarios involving BuilderNode unbinding, see [Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).
+Immediately releases the reference relationship between this BuilderNode object and its [entity node](docroot://ui/arkts-user-defined-node.md#basic-concepts). For details about the scenarios involving BuilderNode unbinding, see [Canceling the Reference to the Entity Node](docroot://ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).
 
 > **NOTE**  
 >  
@@ -130,7 +134,7 @@ Immediately releases the reference relationship between this BuilderNode object 
 > frontend object BuilderNode cannot be released, memory leaks may occur. To avoid this, be sure to call  
 > **dispose()** on the BuilderNode when you no longer need it. This reduces the complexity of reference  
 > relationships and lowers the risk of memory leaks. For details, see  
-> [Memory Leak Caused by Circular Reference Between BuilderNode Frontend and Backend](../../../../ui/arkts-user-defined-node-faq.md#memory-leak-caused-by-circular-reference-between-buildernode-frontend-and-backend).
+> [Memory Leak Caused by Circular Reference Between BuilderNode Frontend and Backend](docroot://ui/arkts-user-defined-node-faq.md#memory-leak-caused-by-circular-reference-between-buildernode-frontend-and-backend).
 
 **Since:** 12
 
@@ -142,6 +146,7 @@ Immediately releases the reference relationship between this BuilderNode object 
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="getframenode"></a>
 ## getFrameNode
 
 ```TypeScript
@@ -166,6 +171,7 @@ Obtains the [FrameNode](arkts-arkui-framenode-c.md) from the BuilderNode. The Fr
 | --- | --- |
 | [FrameNode](../arkts-components/arkts-arkui-framenode-t.md) | **FrameNode** object. If no such object is held by the **BuilderNode** instance, null is returned. |
 
+<a id="inheritfreezeoptions"></a>
 ## inheritFreezeOptions
 
 ```TypeScript
@@ -196,6 +202,7 @@ Sets whether this **BuilderNode** object inherits the freeze policy from its par
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Whether the current **BuilderNode** object inherits the freeze policy from its parent component's custom components. The value **true** means to inherit the freeze policy from parent component's custom components, and **false** means the opposite. |
 
+<a id="isdisposed"></a>
 ## isDisposed
 
 ```TypeScript
@@ -220,6 +227,7 @@ Checks whether this BuilderNode object has released its reference to its backend
 | --- | --- |
 | boolean | Whether the reference to the backend node is released. The value **true** means that the reference to backend node is released, and **false** means the opposite. |
 
+<a id="postinputevent"></a>
 ## postInputEvent
 
 ```TypeScript
@@ -230,7 +238,7 @@ Dispatches the specified input event to the target node.
 
 **offsetA** indicates the BuilderNode's offset relative to its parent component, **offsetB** the hit position's offset relative to the BuilderNode, **offsetC** the composite offset (offsetA + offsetB) passed to the window in **postInputEvent**.
 
-![Coordinate conversion example](../../../../reference/apis-arkui/figures/postInputEvent-point.png)
+![Coordinate conversion example](docroot://reference/apis-arkui/figures/postInputEvent-point.png)
 
 > **NOTE**  
 >  
@@ -239,9 +247,9 @@ Dispatches the specified input event to the target node.
 >  
 > - Mouse left-click events are automatically converted to touch events. Avoid binding both touch and mouse events  
 > at the outer layer, as this may cause coordinate offsets. This is because the **SourceType** remains unchanged  
-> during event conversion. For details, see [onTouch](../arkts-components/arkts-arkui-common-commonmethod-c.md#ontouch-1).  
+> during event conversion. For details, see [onTouch](../arkts-components/arkts-arkui-commonmethod-c.md#ontouch-1).  
 >  
-> - When an [axis event](../arkts-components/arkts-arkui-common-axisevent-i.md) event is injected, it cannot trigger [rotation gestures](arkts-gesture.md),  
+> - When an [axis event](../arkts-components/arkts-arkui-axisevent-i.md) event is injected, it cannot trigger [rotation gestures](arkts-gesture.md),  
 > because the axis event does not include rotation axis information.  
 >  
 > - A forwarded event undergoes touch testing in the target component's subtree and triggers corresponding  
@@ -250,7 +258,7 @@ Dispatches the specified input event to the target node.
 >  
 > - For developer-constructed events, mandatory fields must be assigned values, such as the **touches** field for  
 > touch events and the **scrollStep** field for axis events Ensure the completeness of the event, for example, both  
-> **DOWN** and **UP** [TouchType](arkts-arkui-enums-touchtype-e.md) states must be included for a touch event to prevent undefined  
+> **DOWN** and **UP** [TouchType](arkts-arkui-touchtype-e.md) states must be included for a touch event to prevent undefined  
 > behavior.  
 >  
 > - [webview](../../apis-arkweb/arkts-apis/arkts-web-webview.md) has already handled coordinate system transformation, so events can  
@@ -285,6 +293,7 @@ Dispatches the specified input event to the target node.
 | --- | --- |
 | boolean | Whether the event is successfully dispatched. Returns **true** if the event is successfully dispatched; returns **false** otherwise. |
 
+<a id="postinputeventwithstrategy"></a>
 ## postInputEventWithStrategy
 
 ```TypeScript
@@ -302,10 +311,10 @@ Before calling this API, you need to convert the value of **event** to the corre
 >  
 > - When processing a mouse left-click event, the system converts the event to a touch event. When forwarding the  
 > event, do not bind the touch event and mouse event at the outer layer at the same time, as this may cause  
-> coordinate offsets. This is because [SourceType](arkts-arkui-enums-touchtype-e.md) does not change during the event conversion.  
-> For details about the specifications, see [onTouch](../arkts-components/arkts-arkui-common-commonmethod-c.md#ontouch-1).  
+> coordinate offsets. This is because [SourceType](arkts-arkui-touchtype-e.md) does not change during the event conversion.  
+> For details about the specifications, see [onTouch](../arkts-components/arkts-arkui-commonmethod-c.md#ontouch-1).  
 >  
-> - When an [axis event](../arkts-components/arkts-arkui-common-axisevent-i.md) event is injected, it cannot trigger [rotation gestures](arkts-gesture.md),  
+> - When an [axis event](../arkts-components/arkts-arkui-axisevent-i.md) event is injected, it cannot trigger [rotation gestures](arkts-gesture.md),  
 > because the axis event does not include rotation axis information.  
 >  
 > - The forwarded event is posted to the target component and its child components for processing, and triggers the  
@@ -314,7 +323,7 @@ Before calling this API, you need to convert the value of **event** to the corre
 >  
 > - If the event is converted to a developer-constructed event, mandatory fields must be assigned values, for  
 > example, the **touches** field of a touch event and the **scrollStep** field of an axis event. Ensure the  
-> completeness of the event. For example, [TouchType](arkts-arkui-enums-touchtype-e.md) of a touch event must contain both the  
+> completeness of the event. For example, [TouchType](arkts-arkui-touchtype-e.md) of a touch event must contain both the  
 > **DOWN** and **UP** fields to prevent program exceptions or unexpected crashes.  
 >  
 > - The same event can be forwarded multiple times. This API cannot be called by  
@@ -335,7 +344,7 @@ Before calling this API, you need to convert the value of **event** to the corre
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | [InputEventType](arkts-arkui-inputeventtype-t.md) | Yes | Input event used for event posting. |
-| competitionStrategy | [CompetitionStrategy](arkts-arkui-enums-competitionstrategy-e.md) | No | Whether the gesture for posting the event is in a competition scenario. By default, the gesture is not in a competition scenario. |
+| competitionStrategy | [CompetitionStrategy](arkts-arkui-competitionstrategy-e.md) | No | Whether the gesture for posting the event is in a competition scenario. By default, the gesture is not in a competition scenario. |
 
 **Return value:**
 
@@ -343,6 +352,7 @@ Before calling this API, you need to convert the value of **event** to the corre
 | --- | --- |
 | boolean | Whether the event is successfully dispatched. Returns **true** if the operation is successful;returns **false** otherwise. |
 
+<a id="posttouchevent"></a>
 ## postTouchEvent
 
 ```TypeScript
@@ -355,7 +365,7 @@ Posts a raw touch event to the FrameNode created by this BuilderNode.
 
 **OffsetA** indicates the offset of the BuilderNode relative to the parent component. You can obtain this offset by calling [getPositionToParent](arkts-arkui-framenode-c.md#getpositiontoparent-1) in the FrameNode. **OffsetB** indicates the offset of the touch point relative to the BuilderNode. You can obtain this offset from the [TouchEvent](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-touchevent-touchevent-i.md) object. **OffsetC** is the sum of **OffsetA** and **OffsetB**. It represents the final offset that you need to pass to **postTouchEvent**.
 
-![postTouchEvent](../../../../reference/apis-arkui/figures/postTouchEvent.PNG)
+![postTouchEvent](docroot://reference/apis-arkui/figures/postTouchEvent.PNG)
 
 > **NOTE**  
 >  
@@ -391,19 +401,20 @@ Posts a raw touch event to the FrameNode created by this BuilderNode.
 | --- | --- |
 | boolean | Whether the event is successfully dispatched. The value **true** means the event is consumed by a component that responds to the event, and **false** means that no component responds to the event.<br>**NOTE**<br>If the event does not hit the expected component, ensure the following:<br>1. The coordinate system has been correctly transformed<br>2. The component is in an interactive state.<br>3. The event has been bound to the component. |
 
+<a id="recycle"></a>
 ## recycle
 
 ```TypeScript
 recycle(): void
 ```
 
-Triggers recycling of custom components under this BuilderNode. Component recycling is part of the component reuse mechanism. For details, see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). Since API version 26.0.0, custom components in **BuilderNode** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
+Triggers recycling of custom components under this BuilderNode. Component recycling is part of the component reuse mechanism. For details, see [@Reusable Decorator: Reusing V1 Components](docroot://ui/state-management/arkts-reusable.md). Since API version 26.0.0, custom components in **BuilderNode** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](docroot://ui/state-management/arkts-new-reusableV2.md).
 
 > **NOTE**  
 >  
 > The BuilderNode completes the reuse event transfer between internal and external custom components through  
 > **reuse** and **recycle**. For specific usage scenarios, see  
-> [Implementing Node Reuse with the BuilderNode reuse and recycle APIs](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis).
+> [Implementing Node Reuse with the BuilderNode reuse and recycle APIs](docroot://ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis).
 
 **Since:** 12
 
@@ -415,13 +426,14 @@ Triggers recycling of custom components under this BuilderNode. Component recycl
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="reuse"></a>
 ## reuse
 
 ```TypeScript
 reuse(param?: Object): void
 ```
 
-Triggers component reuse for custom components under this BuilderNode. For details about component reuse, see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). For details about the scenarios involving BuilderNode unbinding, see [Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).Since API version 26.0.0, custom components in **BuilderNode** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
+Triggers component reuse for custom components under this BuilderNode. For details about component reuse, see [@Reusable Decorator: Reusing V1 Components](docroot://ui/state-management/arkts-reusable.md). For details about the scenarios involving BuilderNode unbinding, see [Canceling the Reference to the Entity Node](docroot://ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).Since API version 26.0.0, custom components in **BuilderNode** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](docroot://ui/state-management/arkts-new-reusableV2.md).
 
 **Since:** 12
 
@@ -437,15 +449,16 @@ Triggers component reuse for custom components under this BuilderNode. For detai
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| param | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Parameter used to reuse the BuilderNode. This parameter is passed to all top-level custom components within the BuilderNode during reuse and must include all required constructor parameters for each component; otherwise, undefined behavior may occur. Calling this method synchronously triggers the [aboutToReuse](../../../../reference/apis-arkui/arkui-ts/ts-custom-component-lifecycle.md#abouttoreuse10)lifecycle callback of internal custom components, with this parameter as the callback input. Default value:**undefined**, in which case the custom components in the BuilderNode will use their original construction data source. |
+| param | Object | No | Parameter used to reuse the BuilderNode. This parameter is passed to all top-level custom components within the BuilderNode during reuse and must include all required constructor parameters for each component; otherwise, undefined behavior may occur. Calling this method synchronously triggers the [aboutToReuse](docroot://reference/apis-arkui/arkui-ts/ts-custom-component-lifecycle.md#abouttoreuse10)lifecycle callback of internal custom components, with this parameter as the callback input. Default value:**undefined**, in which case the custom components in the BuilderNode will use their original construction data source. |
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
 update(arg: Object): void
 ```
 
-Updates this BuilderNode using the provided parameter, which must be of the same type as the input parameter passed to the [build](arkts-arkui-buildernode-c.md) API. When updating a custom component, define the variables used in the component as [@Prop](../../../../ui/state-management/arkts-prop.md) decorated properties.
+Updates this BuilderNode using the provided parameter, which must be of the same type as the input parameter passed to the [build](arkts-arkui-buildernode-c.md) API. When updating a custom component, define the variables used in the component as [@Prop](docroot://ui/state-management/arkts-prop.md) decorated properties.
 
 **Since:** 11
 
@@ -461,8 +474,9 @@ Updates this BuilderNode using the provided parameter, which must be of the same
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Parameter used to update the BuilderNode. It is of the same type as the parameter passed to the [build](arkts-arkui-buildernode-c.md) API. |
+| arg | Object | Yes | Parameter used to update the BuilderNode. It is of the same type as the parameter passed to the [build](arkts-arkui-buildernode-c.md) API. |
 
+<a id="updateconfiguration"></a>
 ## updateConfiguration
 
 ```TypeScript

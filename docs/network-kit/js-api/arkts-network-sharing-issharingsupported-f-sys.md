@@ -6,6 +6,7 @@
 import { sharing } from '@kit.NetworkKit';
 ```
 
+<a id="issharingsupported"></a>
 ## isSharingSupported
 
 ```TypeScript
@@ -28,7 +29,7 @@ Checks whether this device allows for network sharing.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Returns {@code true} indicating network sharing is supported;returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Returns {@code true} indicating network sharing is supported;returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ sharing.isSharingSupported((error: BusinessError, data: boolean) => {
 ```
 
 
+<a id="issharingsupported-1"></a>
 ## isSharingSupported
 
 ```TypeScript
@@ -76,7 +78,7 @@ Checks whether this device allows for network sharing.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Error codes:**
 

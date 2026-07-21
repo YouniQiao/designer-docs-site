@@ -6,6 +6,7 @@
 import { remoteDevice } from '@kit.ConnectivityKit';
 ```
 
+<a id="onacbstatechange"></a>
 ## onAcbStateChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ This event is accessible only to applications that granted the ohos.permission.N
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<AcbStateParam> | Yes | Callback of the event to be listened to. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;AcbStateParam&gt; | Yes | Callback of the event to be listened to. |
 
 **Error codes:**
 

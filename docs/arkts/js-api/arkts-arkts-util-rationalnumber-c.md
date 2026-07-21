@@ -14,6 +14,7 @@ Provides APIs to compare rational numbers and obtain numerators and denominators
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="compare"></a>
 ## compare
 
 ```TypeScript
@@ -42,6 +43,7 @@ Compares the current RationalNumber object to the given object.
 | --- | --- |
 | number | Returns 0 or 1, or -1, depending on the comparison. |
 
+<a id="compareto"></a>
 ## compareTo
 
 ```TypeScript
@@ -72,6 +74,7 @@ Compares the current RationalNumber object to the given object.
 | --- | --- |
 | number | Returns 0 or 1, or -1, depending on the comparison. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -104,6 +107,7 @@ let rationalNumber = new util.RationalNumber(1,2);
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -127,6 +131,7 @@ let rationalNumber = new util.RationalNumber();
 
 ```
 
+<a id="createrationalfromstring"></a>
 ## createRationalFromString
 
 ```TypeScript
@@ -168,6 +173,7 @@ let rational = util.RationalNumber.createRationalFromString("3/4");
 
 ```
 
+<a id="equals"></a>
 ## equals
 
 ```TypeScript
@@ -188,7 +194,7 @@ Checks whether this **RationalNumber** object equals the given object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| obj | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object used to compare with this **RationalNumber** object. |
+| obj | Object | Yes | Object used to compare with this **RationalNumber** object. |
 
 **Return value:**
 
@@ -218,6 +224,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="getcommondivisor"></a>
 ## getCommonDivisor
 
 ```TypeScript
@@ -249,6 +256,7 @@ Obtains the greatest common divisor of two specified integers.
 | --- | --- |
 | number | Greatest common divisor obtained. |
 
+<a id="getcommonfactor"></a>
 ## getCommonFactor
 
 ```TypeScript
@@ -274,8 +282,8 @@ Obtains the greatest common divisor of two specified integers.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| number1 | number | Yes | The first integer used to get the greatest common divisor. Value range: -Number.MAX_VALUE &lt;= number1 &lt;= Number.MAX_VALUE. |
-| number2 | number | Yes | The second integer used to get the greatest common divisor. Value range: -Number.MAX_VALUE &lt;= number2 &lt;= Number.MAX_VALUE. |
+| number1 | number | Yes | The first integer used to get the greatest common divisor. Value range: -Number.MAX_VALUE <= number1 <= Number.MAX_VALUE. |
+| number2 | number | Yes | The second integer used to get the greatest common divisor. Value range: -Number.MAX_VALUE <= number2 <= Number.MAX_VALUE. |
 
 **Return value:**
 
@@ -292,6 +300,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="getdenominator"></a>
 ## getDenominator
 
 ```TypeScript
@@ -334,6 +343,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="getnumerator"></a>
 ## getNumerator
 
 ```TypeScript
@@ -376,6 +386,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isfinite"></a>
 ## isFinite
 
 ```TypeScript
@@ -418,6 +429,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="isnan"></a>
 ## isNaN
 
 ```TypeScript
@@ -460,6 +472,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="iszero"></a>
 ## isZero
 
 ```TypeScript
@@ -502,6 +515,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="parserationalnumber"></a>
 ## parseRationalNumber
 
 ```TypeScript
@@ -528,8 +542,8 @@ Creates a **RationalNumber** instance with a given numerator and denominator.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| numerator | number | Yes | Numerator, which is an integer. Value range: -Number.MAX_VALUE &lt;= numerator &lt;=Number.MAX_VALUE. |
-| denominator | number | Yes | Denominator, which is an integer. Value range: -Number.MAX_VALUE &lt;= denominator &lt;= Number.MAX_VALUE. |
+| numerator | number | Yes | Numerator, which is an integer. Value range: -Number.MAX_VALUE <= numerator <=Number.MAX_VALUE. |
+| denominator | number | Yes | Denominator, which is an integer. Value range: -Number.MAX_VALUE <= denominator <= Number.MAX_VALUE. |
 
 **Return value:**
 
@@ -544,6 +558,7 @@ let rationalNumber = util.RationalNumber.parseRationalNumber(1,2);
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -586,6 +601,7 @@ console.info("result = " + result);
 
 ```
 
+<a id="valueof"></a>
 ## valueOf
 
 ```TypeScript

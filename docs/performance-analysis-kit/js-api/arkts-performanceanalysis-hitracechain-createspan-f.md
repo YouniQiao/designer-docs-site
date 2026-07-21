@@ -6,6 +6,7 @@
 import { hiTraceChain } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="createspan"></a>
 ## createSpan
 
 ```TypeScript

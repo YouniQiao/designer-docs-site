@@ -16,6 +16,7 @@ Defines the abstract interface of albums.
 import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="getassets"></a>
 ## getAssets
 
 ```TypeScript
@@ -42,7 +43,7 @@ Obtains media assets. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<PhotoAsset>> | Promise used to return the media assets obtained. |
+| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Promise used to return the media assets obtained. |
 
 **Error codes:**
 

@@ -16,6 +16,7 @@ A class for querying depth fusion capabilities.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getdepthfusionthreshold"></a>
 ## getDepthFusionThreshold
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the depth fusion threshold.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Depth fusion threshold. |
+| Array&lt;number&gt; | Depth fusion threshold. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ function getDepthFusionThreshold(DepthFusionQuery: camera.DepthFusionQuery): voi
 
 ```
 
+<a id="isdepthfusionsupported"></a>
 ## isDepthFusionSupported
 
 ```TypeScript

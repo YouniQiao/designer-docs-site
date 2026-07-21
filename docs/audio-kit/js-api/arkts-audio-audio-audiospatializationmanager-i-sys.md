@@ -14,6 +14,7 @@ Implements audio spatialization management.
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="downloadpersonalizedhrtf"></a>
 ## downloadPersonalizedHRTF
 
 ```TypeScript
@@ -44,7 +45,7 @@ Downloads personalized HRTF data from anonymous file descriptor.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> |  |
+| Promise&lt;void&gt; |  |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ Downloads personalized HRTF data from anonymous file descriptor.
 | [6800105](../errorcode-audio.md#6800105-processing-timeout) | Time out when saving HRTF on disk. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | System error, fail to save HRTF on disk. |
 
+<a id="getcurrentspatialaudiosourcetype"></a>
 ## getCurrentSpatialAudioSourceType
 
 ```TypeScript
@@ -87,6 +89,7 @@ Gets the current spatial audio source type.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 
+<a id="getspatializationscenetype"></a>
 ## getSpatializationSceneType
 
 ```TypeScript
@@ -131,6 +134,7 @@ try {
 
 ```
 
+<a id="isadaptivespatialrenderingenabled"></a>
 ## isAdaptiveSpatialRenderingEnabled
 
 ```TypeScript
@@ -166,6 +170,7 @@ Checks whether the adaptive spatial rendering is enabled by the specified device
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="isheadtrackingenabled"></a>
 ## isHeadTrackingEnabled
 
 ```TypeScript
@@ -214,6 +219,7 @@ try {
 
 ```
 
+<a id="isheadtrackingenabled-1"></a>
 ## isHeadTrackingEnabled
 
 ```TypeScript
@@ -281,6 +287,7 @@ try {
 
 ```
 
+<a id="isheadtrackingsupported"></a>
 ## isHeadTrackingSupported
 
 ```TypeScript
@@ -325,6 +332,7 @@ try {
 
 ```
 
+<a id="isheadtrackingsupportedfordevice"></a>
 ## isHeadTrackingSupportedForDevice
 
 ```TypeScript
@@ -392,6 +400,7 @@ try {
 
 ```
 
+<a id="ispersonalizedspatializationenabled"></a>
 ## isPersonalizedSpatializationEnabled
 
 ```TypeScript
@@ -429,6 +438,7 @@ Checks whether the personalized spatialization is enabled by the specified devic
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="ispersonalizedspatializationsupported"></a>
 ## isPersonalizedSpatializationSupported
 
 ```TypeScript
@@ -459,6 +469,7 @@ Checks whether personalized spatialization is supported by system.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 
+<a id="isspatializationenabled"></a>
 ## isSpatializationEnabled
 
 ```TypeScript
@@ -507,6 +518,7 @@ try {
 
 ```
 
+<a id="isspatializationenabled-1"></a>
 ## isSpatializationEnabled
 
 ```TypeScript
@@ -574,6 +586,7 @@ try {
 
 ```
 
+<a id="isspatializationsupported"></a>
 ## isSpatializationSupported
 
 ```TypeScript
@@ -617,6 +630,7 @@ try {
 
 ```
 
+<a id="isspatializationsupportedfordevice"></a>
 ## isSpatializationSupportedForDevice
 
 ```TypeScript
@@ -684,6 +698,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('spatializationEnabledChange')
 
 ```TypeScript
@@ -709,7 +724,7 @@ Unsubscribes to the spatialization enable state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'spatializationEnabledChange' | Yes | Type of the event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to get the spatialization enable state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to get the spatialization enable state. |
 
 **Error codes:**
 
@@ -736,6 +751,7 @@ audioSpatializationManager.off('spatializationEnabledChange', spatializationEnab
 
 ```
 
+<a id="off-1"></a>
 ## off('spatializationEnabledChangeForAnyDevice')
 
 ```TypeScript
@@ -757,7 +773,7 @@ Unsubscribes to the spatialization enable state change events by the specified d
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'spatializationEnabledChangeForAnyDevice' | Yes | Type of the event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioSpatialEnabledStateForDevice> | No | Callback used to get the spatialization enable state by the specified device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioSpatialEnabledStateForDevice&gt; | No | Callback used to get the spatialization enable state by the specified device. |
 
 **Error codes:**
 
@@ -787,6 +803,7 @@ audioSpatializationManager.off('spatializationEnabledChangeForAnyDevice', spatia
 
 ```
 
+<a id="off-2"></a>
 ## off('headTrackingEnabledChange')
 
 ```TypeScript
@@ -812,7 +829,7 @@ Unsubscribes to the head tracking enable state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'headTrackingEnabledChange' | Yes | Type of the event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to get the head tracking enable state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to get the head tracking enable state. |
 
 **Error codes:**
 
@@ -841,6 +858,7 @@ audioSpatializationManager.off('headTrackingEnabledChange', headTrackingEnabledC
 
 ```
 
+<a id="off-3"></a>
 ## off('headTrackingEnabledChangeForAnyDevice')
 
 ```TypeScript
@@ -862,7 +880,7 @@ Unsubscribes to the head tracking enable state change events by the specified de
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'headTrackingEnabledChangeForAnyDevice' | Yes | Type of the event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioSpatialEnabledStateForDevice> | No | Callback used to get the head tracking enable state by the specified device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioSpatialEnabledStateForDevice&gt; | No | Callback used to get the head tracking enable state by the specified device. |
 
 **Error codes:**
 
@@ -892,6 +910,7 @@ audioSpatializationManager.off('headTrackingEnabledChangeForAnyDevice', headTrac
 
 ```
 
+<a id="offadaptivespatialrenderingenabledchangeforanydevice"></a>
 ## offAdaptiveSpatialRenderingEnabledChangeForAnyDevice
 
 ```TypeScript
@@ -912,7 +931,7 @@ Unsubscribes to the adaptive spatial rendering enable state change events by the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioSpatialEnabledStateForDevice> | No | Callback used to get the adaptive spatial rendering enable state by the specified device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioSpatialEnabledStateForDevice&gt; | No | Callback used to get the adaptive spatial rendering enable state by the specified device. |
 
 **Error codes:**
 
@@ -921,6 +940,7 @@ Unsubscribes to the adaptive spatial rendering enable state change events by the
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="offpersonalizedspatializationenabledchangeforanydevice"></a>
 ## offPersonalizedSpatializationEnabledChangeForAnyDevice
 
 ```TypeScript
@@ -946,7 +966,7 @@ Unsubscribes to the personalized spatialization enable state change events by th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioPersonalizedSpatialEnabledChangeForAnyDevice> | No | Callback used to get the personalized spatialization enable state by the specified device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioPersonalizedSpatialEnabledChangeForAnyDevice&gt; | No | Callback used to get the personalized spatialization enable state by the specified device. |
 
 **Error codes:**
 
@@ -954,6 +974,7 @@ Unsubscribes to the personalized spatialization enable state change events by th
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 
+<a id="offspatialaudiosourcetypechange"></a>
 ## offSpatialAudioSourceTypeChange
 
 ```TypeScript
@@ -976,7 +997,7 @@ Unsubscribes from the spatial audio source type change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SpatialAudioSourceType> | No | Callback used to receive the current spatial audio source type change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SpatialAudioSourceType&gt; | No | Callback used to receive the current spatial audio source type change. |
 
 **Error codes:**
 
@@ -985,6 +1006,7 @@ Unsubscribes from the spatial audio source type change events.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on"></a>
 ## on('spatializationEnabledChange')
 
 ```TypeScript
@@ -1010,7 +1032,7 @@ Subscribes to the spatialization enable state change events. When the spatializa
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'spatializationEnabledChange' | Yes | Type of the event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback used to get the spatialization enable state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback used to get the spatialization enable state. |
 
 **Error codes:**
 
@@ -1031,6 +1053,7 @@ audioSpatializationManager.on('spatializationEnabledChange', (isSpatializationEn
 
 ```
 
+<a id="on-1"></a>
 ## on('spatializationEnabledChangeForAnyDevice')
 
 ```TypeScript
@@ -1052,7 +1075,7 @@ Subscribes to the spatialization enable state change events by the specified dev
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'spatializationEnabledChangeForAnyDevice' | Yes | Type of the event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioSpatialEnabledStateForDevice> | Yes | Callback used to get the spatialization enable state by the specified device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioSpatialEnabledStateForDevice&gt; | Yes | Callback used to get the spatialization enable state by the specified device. |
 
 **Error codes:**
 
@@ -1074,6 +1097,7 @@ audioSpatializationManager.on('spatializationEnabledChangeForAnyDevice', (audioS
 
 ```
 
+<a id="on-2"></a>
 ## on('headTrackingEnabledChange')
 
 ```TypeScript
@@ -1099,7 +1123,7 @@ Subscribes to the head tracking enable state change events. When the head tracki
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'headTrackingEnabledChange' | Yes | Type of the event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback used to get the head tracking enable state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback used to get the head tracking enable state. |
 
 **Error codes:**
 
@@ -1120,6 +1144,7 @@ audioSpatializationManager.on('headTrackingEnabledChange', (isHeadTrackingEnable
 
 ```
 
+<a id="on-3"></a>
 ## on('headTrackingEnabledChangeForAnyDevice')
 
 ```TypeScript
@@ -1141,7 +1166,7 @@ Subscribes to the head tracking enable state change events by the specified devi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'headTrackingEnabledChangeForAnyDevice' | Yes | Type of the event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioSpatialEnabledStateForDevice> | Yes | Callback used to get the head tracking enable state by the specified device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioSpatialEnabledStateForDevice&gt; | Yes | Callback used to get the head tracking enable state by the specified device. |
 
 **Error codes:**
 
@@ -1163,6 +1188,7 @@ audioSpatializationManager.on('headTrackingEnabledChangeForAnyDevice', (audioSpa
 
 ```
 
+<a id="onadaptivespatialrenderingenabledchangeforanydevice"></a>
 ## onAdaptiveSpatialRenderingEnabledChangeForAnyDevice
 
 ```TypeScript
@@ -1183,7 +1209,7 @@ Subscribes to the adaptive spatial rendering enable state change events by the s
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioSpatialEnabledStateForDevice> | Yes | Callback used to get the adaptive spatial rendering enable state by the specified device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioSpatialEnabledStateForDevice&gt; | Yes | Callback used to get the adaptive spatial rendering enable state by the specified device. |
 
 **Error codes:**
 
@@ -1192,6 +1218,7 @@ Subscribes to the adaptive spatial rendering enable state change events by the s
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="onpersonalizedspatializationenabledchangeforanydevice"></a>
 ## onPersonalizedSpatializationEnabledChangeForAnyDevice
 
 ```TypeScript
@@ -1217,7 +1244,7 @@ Subscribes to the personalized spatialization enable state change events by the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioPersonalizedSpatialEnabledChangeForAnyDevice> | Yes | Callback used to get the personalized spatialization enable state by the specified device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioPersonalizedSpatialEnabledChangeForAnyDevice&gt; | Yes | Callback used to get the personalized spatialization enable state by the specified device. |
 
 **Error codes:**
 
@@ -1225,6 +1252,7 @@ Subscribes to the personalized spatialization enable state change events by the 
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 
+<a id="onspatialaudiosourcetypechange"></a>
 ## onSpatialAudioSourceTypeChange
 
 ```TypeScript
@@ -1247,7 +1275,7 @@ Subscribes to the spatial audio source type change events. When the current spat
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SpatialAudioSourceType> | Yes | Callback used to receive the current spatial audio source type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SpatialAudioSourceType&gt; | Yes | Callback used to receive the current spatial audio source type. |
 
 **Error codes:**
 
@@ -1256,6 +1284,7 @@ Subscribes to the spatial audio source type change events. When the current spat
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="setadaptivespatialrenderingenabled"></a>
 ## setAdaptiveSpatialRenderingEnabled
 
 ```TypeScript
@@ -1285,7 +1314,7 @@ Sets the adaptive spatial rendering enabled or disabled by the specified device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1296,6 +1325,7 @@ Sets the adaptive spatial rendering enabled or disabled by the specified device.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported on the device. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="setheadtrackingenabled"></a>
 ## setHeadTrackingEnabled
 
 ```TypeScript
@@ -1323,7 +1353,7 @@ Sets the head tracking enabled or disabled. This method uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Head tracking enable state. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1352,6 +1382,7 @@ audioSpatializationManager.setHeadTrackingEnabled(enable, (err: BusinessError) =
 
 ```
 
+<a id="setheadtrackingenabled-1"></a>
 ## setHeadTrackingEnabled
 
 ```TypeScript
@@ -1384,7 +1415,7 @@ Sets the head tracking enabled or disabled. This method uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1410,6 +1441,7 @@ audioSpatializationManager.setHeadTrackingEnabled(enable).then(() => {
 
 ```
 
+<a id="setheadtrackingenabled-2"></a>
 ## setHeadTrackingEnabled
 
 ```TypeScript
@@ -1439,7 +1471,7 @@ Sets the head tracking enabled or disabled by the specified device.This method u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1480,6 +1512,7 @@ audioSpatializationManager.setHeadTrackingEnabled(deviceDescriptor, enable).then
 
 ```
 
+<a id="setpersonalizedspatializationenabled"></a>
 ## setPersonalizedSpatializationEnabled
 
 ```TypeScript
@@ -1511,7 +1544,7 @@ Set the personalized spatialization enabled or disabled by the specified device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1521,6 +1554,7 @@ Set the personalized spatialization enabled or disabled by the specified device.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported on the device. |
 
+<a id="setspatializationenabled"></a>
 ## setSpatializationEnabled
 
 ```TypeScript
@@ -1548,7 +1582,7 @@ Sets the spatialization enabled or disabled. This method uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Spatialization enable state. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1577,6 +1611,7 @@ audioSpatializationManager.setSpatializationEnabled(enable, (err: BusinessError)
 
 ```
 
+<a id="setspatializationenabled-1"></a>
 ## setSpatializationEnabled
 
 ```TypeScript
@@ -1609,7 +1644,7 @@ Sets the spatialization enabled or disabled. This method uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1635,6 +1670,7 @@ audioSpatializationManager.setSpatializationEnabled(enable).then(() => {
 
 ```
 
+<a id="setspatializationenabled-2"></a>
 ## setSpatializationEnabled
 
 ```TypeScript
@@ -1664,7 +1700,7 @@ Sets the spatialization enabled or disabled by the specified device.This method 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1705,6 +1741,7 @@ audioSpatializationManager.setSpatializationEnabled(deviceDescriptor, enabled).t
 
 ```
 
+<a id="setspatializationscenetype"></a>
 ## setSpatializationSceneType
 
 ```TypeScript
@@ -1754,6 +1791,7 @@ try {
 
 ```
 
+<a id="updatespatialdevicestate"></a>
 ## updateSpatialDeviceState
 
 ```TypeScript

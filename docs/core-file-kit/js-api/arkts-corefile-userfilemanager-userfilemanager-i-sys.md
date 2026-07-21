@@ -20,6 +20,7 @@ Defines the UserFileManager class and provides functions to access the data in u
 import { userFileManager } from '@kit.CoreFileKit';
 ```
 
+<a id="createalbum"></a>
 ## createAlbum
 
 ```TypeScript
@@ -57,7 +58,7 @@ The album name must meet the following requirements:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the album to create. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Album> | Yes | Callback used to return the created album instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Album&gt; | Yes | Callback used to return the created album instance. |
 
 **Example**
 
@@ -78,6 +79,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="createalbum-1"></a>
 ## createAlbum
 
 ```TypeScript
@@ -120,7 +122,7 @@ The album name must meet the following requirements:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Album> | Promise that returns the created album instance. |
+| Promise&lt;Album&gt; | Promise that returns the created album instance. |
 
 **Example**
 
@@ -141,6 +143,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="createaudioasset"></a>
 ## createAudioAsset
 
 ```TypeScript
@@ -166,7 +169,7 @@ Creates an audio asset. This API uses an asynchronous callback to return the res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | displayName | string | Yes | File name of the audio asset to create. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FileAsset> | Yes | Callback used to return the created audio asset. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FileAsset&gt; | Yes | Callback used to return the created audio asset. |
 
 **Error codes:**
 
@@ -195,6 +198,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="createaudioasset-1"></a>
 ## createAudioAsset
 
 ```TypeScript
@@ -225,7 +229,7 @@ Creates an audio asset. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileAsset> | Promise that returns the created audio asset. |
+| Promise&lt;FileAsset&gt; | Promise that returns the created audio asset. |
 
 **Error codes:**
 
@@ -252,6 +256,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="createphotoasset"></a>
 ## createPhotoAsset
 
 ```TypeScript
@@ -280,7 +285,7 @@ Creates an image or video asset with the specified file name and URI. This API u
 | --- | --- | --- | --- |
 | displayName | string | Yes | File name of the image or video to create. |
 | albumUri | string | Yes | URI of the album where the image or video is located. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FileAsset> | Yes | Callback used to return the image or video created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FileAsset&gt; | Yes | Callback used to return the image or video created. |
 
 **Error codes:**
 
@@ -317,6 +322,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="createphotoasset-1"></a>
 ## createPhotoAsset
 
 ```TypeScript
@@ -344,7 +350,7 @@ Creates an image or video asset with the specified file name. This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | displayName | string | Yes | File name of the image or video to create. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FileAsset> | Yes | Callback used to return the image or video created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FileAsset&gt; | Yes | Callback used to return the image or video created. |
 
 **Error codes:**
 
@@ -373,6 +379,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="createphotoasset-2"></a>
 ## createPhotoAsset
 
 ```TypeScript
@@ -406,7 +413,7 @@ Creates an image or video asset with the specified file name and album URI. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileAsset> | Promise that returns the created image or video asset. |
+| Promise&lt;FileAsset&gt; | Promise that returns the created image or video asset. |
 
 **Error codes:**
 
@@ -433,6 +440,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="createphotoasset-3"></a>
 ## createPhotoAsset
 
 ```TypeScript
@@ -466,7 +474,7 @@ Creates an image or video asset with the specified file name and options. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileAsset> | Promise that returns the created image or video asset. |
+| Promise&lt;FileAsset&gt; | Promise that returns the created image or video asset. |
 
 **Error codes:**
 
@@ -496,6 +504,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="createphotoasset-4"></a>
 ## createPhotoAsset
 
 ```TypeScript
@@ -524,7 +533,7 @@ Creates an image or video asset with the specified file name and options. This A
 | --- | --- | --- | --- |
 | displayName | string | Yes | File name of the image or video to create. |
 | createOption | [PhotoCreateOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photocreateoptions-i-sys.md) | Yes | Options for creating an image or video asset. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FileAsset> | Yes | Callback used to return the image or video created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FileAsset&gt; | Yes | Callback used to return the image or video created. |
 
 **Error codes:**
 
@@ -556,6 +565,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -583,7 +593,7 @@ Deletes a media file. This API uses an asynchronous callback to return the resul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the media file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -628,6 +638,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -660,7 +671,7 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -698,6 +709,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="deletealbums"></a>
 ## deleteAlbums
 
 ```TypeScript
@@ -724,8 +736,8 @@ Deletes user albums. This API uses an asynchronous callback to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| albums | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Album> | Yes | Albums to delete. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| albums | Array&lt;Album&gt; | Yes | Albums to delete. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -757,6 +769,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="deletealbums-1"></a>
 ## deleteAlbums
 
 ```TypeScript
@@ -783,13 +796,13 @@ Deletes user albums. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| albums | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Album> | Yes | Albums to delete. |
+| albums | Array&lt;Album&gt; | Yes | Albums to delete. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -821,6 +834,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getactivepeers"></a>
 ## getActivePeers
 
 ```TypeScript
@@ -843,7 +857,7 @@ Obtains information about online peer devices. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<PeerInfo>> | Yes | Callback used to return a list of online peer devices. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;PeerInfo&gt;&gt; | Yes | Callback used to return a list of online peer devices. |
 
 **Example**
 
@@ -866,6 +880,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getactivepeers-1"></a>
 ## getActivePeers
 
 ```TypeScript
@@ -888,7 +903,7 @@ Obtains the information about online peer devices. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PeerInfo>> | Promise that returns a list of online peer devices. |
+| Promise&lt;Array&lt;PeerInfo&gt;&gt; | Promise that returns a list of online peer devices. |
 
 **Example**
 
@@ -914,6 +929,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getalbums"></a>
 ## getAlbums
 
 ```TypeScript
@@ -962,7 +978,7 @@ Before the operation, ensure that the albums to obtain exist.
 | type | [AlbumType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-albumtype-e-sys.md) | Yes | Type of the album to obtain. |
 | subType | [AlbumSubType](arkts-corefile-userfilemanager-albumsubtype-e-sys.md) | Yes | Subtype of the album. |
 | options | [FetchOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Retrieval options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<Album>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1003,6 +1019,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getalbums-1"></a>
 ## getAlbums
 
 ```TypeScript
@@ -1035,7 +1052,7 @@ Before the operation, ensure that the albums to obtain exist.
 | --- | --- | --- | --- |
 | type | [AlbumType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-albumtype-e-sys.md) | Yes | Type of the album to obtain. |
 | subType | [AlbumSubType](arkts-corefile-userfilemanager-albumsubtype-e-sys.md) | Yes | Subtype of the album. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<Album>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1068,6 +1085,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getalbums-2"></a>
 ## getAlbums
 
 ```TypeScript
@@ -1106,7 +1124,7 @@ Before the operation, ensure that the albums to obtain exist.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<Album>> | Promise that returns the albums. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise that returns the albums. |
 
 **Error codes:**
 
@@ -1146,6 +1164,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getallpeers"></a>
 ## getAllPeers
 
 ```TypeScript
@@ -1168,7 +1187,7 @@ Obtains information about all peer devices. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<PeerInfo>> | Yes | Callback used to return a list of online peer devices. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;PeerInfo&gt;&gt; | Yes | Callback used to return a list of online peer devices. |
 
 **Example**
 
@@ -1191,6 +1210,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getallpeers-1"></a>
 ## getAllPeers
 
 ```TypeScript
@@ -1213,7 +1233,7 @@ Obtains the information about all peer devices. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PeerInfo>> | Promise that returns the information obtained. |
+| Promise&lt;Array&lt;PeerInfo&gt;&gt; | Promise that returns the information obtained. |
 
 **Example**
 
@@ -1240,6 +1260,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getaudioassets"></a>
 ## getAudioAssets
 
 ```TypeScript
@@ -1265,7 +1286,7 @@ Obtains audio assets. This API uses an asynchronous callback to return the resul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [FetchOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Retrieval options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<FileAsset>> | Yes | Callback used to return the audio assets obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;FileAsset&gt;&gt; | Yes | Callback used to return the audio assets obtained. |
 
 **Error codes:**
 
@@ -1303,6 +1324,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getaudioassets-1"></a>
 ## getAudioAssets
 
 ```TypeScript
@@ -1333,7 +1355,7 @@ Obtains an audio asset. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<FileAsset>> | Promise that returns the audio assets obtained. |
+| Promise&lt;FetchResult&lt;FileAsset&gt;&gt; | Promise that returns the audio assets obtained. |
 
 **Error codes:**
 
@@ -1371,6 +1393,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getphotoalbums"></a>
 ## getPhotoAlbums
 
 ```TypeScript
@@ -1402,7 +1425,7 @@ This API will be deprecated. Use [getAlbums](arkts-corefile-userfilemanager-user
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [AlbumFetchOptions](arkts-corefile-userfilemanager-albumfetchoptions-i-sys.md) | Yes | Options for fetching the albums. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<Album>> | Yes | Callback used to return the albums obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the albums obtained. |
 
 **Error codes:**
 
@@ -1442,6 +1465,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getphotoalbums-1"></a>
 ## getPhotoAlbums
 
 ```TypeScript
@@ -1478,7 +1502,7 @@ This API will be deprecated. Use [getAlbums](arkts-corefile-userfilemanager-user
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<Album>> | Promise that returns the albums obtained. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise that returns the albums obtained. |
 
 **Error codes:**
 
@@ -1511,6 +1535,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getphotoassets"></a>
 ## getPhotoAssets
 
 ```TypeScript
@@ -1538,7 +1563,7 @@ Obtains image and video assets. This API uses an asynchronous callback to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [FetchOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Options for fetching the image and video assets. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<FileAsset>> | Yes | Callback used to return the image and video assets obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;FileAsset&gt;&gt; | Yes | Callback used to return the image and video assets obtained. |
 
 **Error codes:**
 
@@ -1576,6 +1601,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getphotoassets-1"></a>
 ## getPhotoAssets
 
 ```TypeScript
@@ -1608,7 +1634,7 @@ Obtains image and video assets. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<FileAsset>> | Promise that returns the image and video assets obtained. |
+| Promise&lt;FetchResult&lt;FileAsset&gt;&gt; | Promise that returns the image and video assets obtained. |
 
 **Error codes:**
 
@@ -1646,6 +1672,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getphotoindex"></a>
 ## getPhotoIndex
 
 ```TypeScript
@@ -1675,7 +1702,7 @@ Obtains the index of an image or video in an album. This API uses an asynchronou
 | photoUri | string | Yes | URI of the media asset whose index is to be obtained. |
 | albumUri | string | Yes | Album URI, which can be an empty string. If it is an empty string, all the media assets in the Gallery are obtained by default. |
 | options | [FetchOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Retrieval options. Only one search condition or sorting mode must be set in **predicates**. If no value is set or multiple search criteria or sorting modes are set, the API cannot be called successfully. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the index obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the index obtained. |
 
 **Error codes:**
 
@@ -1725,6 +1752,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getphotoindex-1"></a>
 ## getPhotoIndex
 
 ```TypeScript
@@ -1759,7 +1787,7 @@ Obtains the index of an image or video in an album. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise that returns the index obtained. |
+| Promise&lt;number&gt; | Promise that returns the index obtained. |
 
 **Error codes:**
 
@@ -1812,6 +1840,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getprivatealbum"></a>
 ## getPrivateAlbum
 
 ```TypeScript
@@ -1841,7 +1870,7 @@ This API will be deprecated. Use [getAlbums](arkts-corefile-userfilemanager-user
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [PrivateAlbumType](arkts-corefile-userfilemanager-privatealbumtype-e-sys.md) | Yes | Type of the system album to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<PrivateAlbum>> | Yes | Callback used to return the albums obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;PrivateAlbum&gt;&gt; | Yes | Callback used to return the albums obtained. |
 
 **Error codes:**
 
@@ -1868,6 +1897,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getprivatealbum-1"></a>
 ## getPrivateAlbum
 
 ```TypeScript
@@ -1902,7 +1932,7 @@ This API will be deprecated. Use [getAlbums](arkts-corefile-userfilemanager-user
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<PrivateAlbum>> | Promise that returns the albums obtained. |
+| Promise&lt;FetchResult&lt;PrivateAlbum&gt;&gt; | Promise that returns the albums obtained. |
 
 **Error codes:**
 
@@ -1928,6 +1958,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -1936,7 +1967,7 @@ off(type: ChangeEvent, callback?: Callback<void>): void
 
 Unsubscribes from changes of the file management library. This API uses a callback to return the result.
 
-This API will be deprecated. Use [off](arkts-corefile-userfilemanager-userfilemanager-i-sys.md#off-2)instead.
+This API will be deprecated. Use [off](userFileManager.UserFileManager.off(uri: string, callback?: Callback<ChangeData>))instead.
 
 **Since:** 9
 
@@ -1955,7 +1986,7 @@ This API will be deprecated. Use [off](arkts-corefile-userfilemanager-userfilema
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [ChangeEvent](arkts-corefile-userfilemanager-changeevent-t-sys.md) | Yes | Type of event to subscribe to.<br>**'deviceChange'**: device change.<br>**'albumChange'**: album change.<br>**'imageChange'**: image change.<br>**'audioChange'**: audio file change.<br>**'videoChange'**: video file change.<br>**'remoteFileChange'**: change of the file on a registered device. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback that returns no value. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback that returns no value. |
 
 **Example**
 
@@ -1992,6 +2023,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -2017,7 +2049,7 @@ Unregisters the listener for the specified URI. Multiple callbacks can be regist
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file asset or album, or [DefaultChangeUri](arkts-corefile-userfilemanager-defaultchangeuri-e-sys.md). |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ChangeData> | No | Callback registered by [on](arkts-corefile-userfilemanager-userfilemanager-i-sys.md#on-2). If this parameter is not specified, all listener callbacks registered for the URI will be unregistered.<br>Note that the specified callback will not be invoked. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ChangeData&gt; | No | Callback registered by [on](userFileManager.UserFileManager.on(uri: string, forSubUri: boolean, callback: Callback<ChangeData>)). If this parameter is not specified, all listener callbacks registered for the URI will be unregistered.<br>Note that the specified callback will not be invoked. |
 
 **Error codes:**
 
@@ -2069,6 +2101,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -2077,7 +2110,7 @@ on(type: ChangeEvent, callback: Callback<void>): void
 
 Subscribes to changes of the file management library. This API uses a callback to return the result.
 
-This API will be deprecated. Use [on](arkts-corefile-userfilemanager-userfilemanager-i-sys.md#on-2)instead.
+This API will be deprecated. Use [on](userFileManager.UserFileManager.on(uri: string, forSubUri: boolean, callback: Callback<ChangeData>))instead.
 
 **Since:** 9
 
@@ -2096,7 +2129,7 @@ This API will be deprecated. Use [on](arkts-corefile-userfilemanager-userfileman
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [ChangeEvent](arkts-corefile-userfilemanager-changeevent-t-sys.md) | Yes | Type of event to subscribe to.<br>**'deviceChange'**: device change.<br>**'albumChange'**: album change.<br>**'imageChange'**: image change.<br>**'audioChange'**: audio file change.<br>**'videoChange'**: video file change.<br>**'remoteFileChange'**: change of the file on a registered device. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -2131,6 +2164,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -2157,7 +2191,7 @@ Registers a listener for the specified URI. This API uses an asynchronous callba
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file asset or album, or [DefaultChangeUri](arkts-corefile-userfilemanager-defaultchangeuri-e-sys.md). |
 | forSubUri | boolean | Yes | Whether to perform fuzzy listening.<br>If **uri** is the URI of the album, the value **true** means to listen for the file change in the album; the value **false** means to listen for the album change only. If **uri** is the URI of the file asset, there is no difference whether **forSubUri** is **true** or **false**. If **uri** is **DefaultChangeUri**, the value must be **true**, otherwise, the URI cannot be found and no message can be received. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ChangeData> | Yes | Callback used to return [ChangeData](arkts-corefile-userfilemanager-changedata-i-sys.md).<br>Note that different callbacks can be registered for a URI. You can use [off](arkts-corefile-userfilemanager-userfilemanager-i-sys.md#off-2)to disable the specified callback or all callbacks for the URI. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ChangeData&gt; | Yes | Callback used to return [ChangeData](arkts-corefile-userfilemanager-changedata-i-sys.md).<br>Note that different callbacks can be registered for a URI. You can use [off](userFileManager.UserFileManager.off(uri: string, callback?: Callback<ChangeData>))to disable the specified callback or all callbacks for the URI. |
 
 **Error codes:**
 
@@ -2208,6 +2242,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -2234,7 +2269,7 @@ Call this API when the APIs in the **UserFileManager** instance are no longer us
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -2254,6 +2289,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -2280,7 +2316,7 @@ Call this API when the APIs in the **UserFileManager** instance are no longer us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

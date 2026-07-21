@@ -16,6 +16,7 @@ class of web native messaging extension ability.
 import { ConnectionInfo } from '@kit.ArkWeb';
 ```
 
+<a id="onconnectnative"></a>
 ## onConnectNative
 
 ```TypeScript
@@ -54,6 +55,7 @@ export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAb
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -84,6 +86,7 @@ export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAb
 
 ```
 
+<a id="ondisconnectnative"></a>
 ## onDisconnectNative
 
 ```TypeScript

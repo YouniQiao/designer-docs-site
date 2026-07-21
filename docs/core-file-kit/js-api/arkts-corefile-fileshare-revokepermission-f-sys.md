@@ -6,6 +6,7 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
+<a id="revokepermission"></a>
 ## revokePermission
 
 ```TypeScript
@@ -36,7 +37,7 @@ Revoke all persistence permissions for the application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ Revoke all persistence permissions for the application.
 | 13900020 | Invalid tokenID |
 
 
+<a id="revokepermission-1"></a>
 ## revokePermission
 
 ```TypeScript
@@ -74,13 +76,13 @@ Revoke persistence permissions for the URI.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | tokenID | number | Yes | Token ID of the application. |
-| policies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PolicyInfo> | Yes | Policy information to revoke permission on URIs. |
+| policies | Array&lt;PolicyInfo&gt; | Yes | Policy information to revoke permission on URIs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

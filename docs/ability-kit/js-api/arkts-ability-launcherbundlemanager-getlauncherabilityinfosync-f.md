@@ -6,6 +6,7 @@
 import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getlauncherabilityinfosync"></a>
 ## getLauncherAbilityInfoSync
 
 ```TypeScript
@@ -33,7 +34,7 @@ Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.m
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LauncherAbilityInfo> | Array of the [LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md) objects obtained. |
+| Array&lt;LauncherAbilityInfo&gt; | Array of the [LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md) objects obtained. |
 
 **Error codes:**
 

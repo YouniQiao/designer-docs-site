@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="publishasbundle"></a>
 ## publishAsBundle
 
 ```TypeScript
@@ -46,7 +47,7 @@ Publishes a notification through the reminder agent. This API uses an asynchrono
 | request | [NotificationRequest](arkts-notification-notificationmanager-notificationrequest-t.md) | Yes | Content and related configuration of the notification to publish. |
 | representativeBundle | string | Yes | Bundle name of the application whose notification function is taken over by the reminder agent. |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -109,6 +110,7 @@ notificationManager.publishAsBundle(request, representativeBundle, userId, callb
 ```
 
 
+<a id="publishasbundle-1"></a>
 ## publishAsBundle
 
 ```TypeScript
@@ -139,7 +141,7 @@ Publishes a notification through the reminder agent. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -198,6 +200,7 @@ notificationManager.publishAsBundle(request, representativeBundle, userId).then(
 ```
 
 
+<a id="publishasbundle-2"></a>
 ## publishAsBundle
 
 ```TypeScript
@@ -227,7 +230,7 @@ Publishes a notification through the reminder agent. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

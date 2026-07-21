@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="disablecellulardata"></a>
 ## disableCellularData
 
 ```TypeScript
@@ -28,7 +29,7 @@ Disable cellular data services.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of disableCellularData. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of disableCellularData. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ data.disableCellularData((err: BusinessError) => {
 ```
 
 
+<a id="disablecellulardata-1"></a>
 ## disableCellularData
 
 ```TypeScript
@@ -81,7 +83,7 @@ Disable cellular data services.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the disableCellularData. |
+| Promise&lt;void&gt; | The promise returned by the disableCellularData. |
 
 **Error codes:**
 

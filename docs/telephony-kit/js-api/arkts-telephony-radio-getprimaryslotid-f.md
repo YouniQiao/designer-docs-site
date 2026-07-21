@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getprimaryslotid"></a>
 ## getPrimarySlotId
 
 ```TypeScript
@@ -26,7 +27,7 @@ The primary card is the SIM card inserted in the card slot that uses data servic
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Indicates the callback for getting the index number of the primary card slot. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Indicates the callback for getting the index number of the primary card slot. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ radio.getPrimarySlotId((err: BusinessError, data: number) => {
 ```
 
 
+<a id="getprimaryslotid-1"></a>
 ## getPrimarySlotId
 
 ```TypeScript
@@ -74,7 +76,7 @@ The primary card is the SIM card inserted in the card slot that uses data servic
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the index number of the primary card slot. |
+| Promise&lt;number&gt; | Returns the index number of the primary card slot. |
 
 **Error codes:**
 

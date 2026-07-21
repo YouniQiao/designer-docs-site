@@ -6,6 +6,7 @@
 import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="off"></a>
 ## off('connect')
 
 ```TypeScript
@@ -31,7 +32,7 @@ Disables listening for **connect** events.
 | --- | --- | --- | --- |
 | type | 'connect' | Yes | Event type. This field has a fixed value of **connect**. |
 | sessionId | number | Yes | ID of the collaboration session. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventCallbackInfo> | No | Registered callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventCallbackInfo&gt; | No | Registered callback function. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ abilityConnectionManager.off("connect", sessionId);
 ```
 
 
+<a id="off-1"></a>
 ## off('disconnect')
 
 ```TypeScript
@@ -76,7 +78,7 @@ Disables listening for **disconnect** events.
 | --- | --- | --- | --- |
 | type | 'disconnect' | Yes | Event type. This field has a fixed value of **disconnect**. |
 | sessionId | number | Yes | ID of the collaboration session. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventCallbackInfo> | No | Registered callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventCallbackInfo&gt; | No | Registered callback function. |
 
 **Error codes:**
 
@@ -97,6 +99,7 @@ abilityConnectionManager.off("disconnect", sessionId);
 ```
 
 
+<a id="off-2"></a>
 ## off('receiveMessage')
 
 ```TypeScript
@@ -122,7 +125,7 @@ Disables listening for **receiveMessage** events.
 | --- | --- | --- | --- |
 | type | 'receiveMessage' | Yes | Event type. This field has a fixed value of **receiveMessage**. |
 | sessionId | number | Yes | ID of the collaboration session. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventCallbackInfo> | No | Registered callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventCallbackInfo&gt; | No | Registered callback function. |
 
 **Error codes:**
 
@@ -143,6 +146,7 @@ abilityConnectionManager.off("receiveMessage", sessionId);
 ```
 
 
+<a id="off-3"></a>
 ## off('receiveData')
 
 ```TypeScript
@@ -168,7 +172,7 @@ Disables listening for **receiveData** events.
 | --- | --- | --- | --- |
 | type | 'receiveData' | Yes | Event type. This field has a fixed value of **receiveData**. |
 | sessionId | number | Yes | ID of the collaboration session. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventCallbackInfo> | No | Registered callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventCallbackInfo&gt; | No | Registered callback function. |
 
 **Error codes:**
 

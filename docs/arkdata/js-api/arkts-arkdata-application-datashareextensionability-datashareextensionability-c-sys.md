@@ -16,6 +16,7 @@ This module provides data sharing and expansion capabilities.
 import { DataShareExtensionAbility } from '@kit.ArkData';
 ```
 
+<a id="batchinsert"></a>
 ## batchInsert
 
 ```TypeScript
@@ -39,8 +40,8 @@ Batch inserts data into the database. This API is called by the server and can b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to insert. |
-| valueBuckets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Data to insert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of inserted data records. |
+| valueBuckets | Array&lt;ValuesBucket&gt; | Yes | Data to insert. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of inserted data records. |
 
 **Example**
 
@@ -66,6 +67,7 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 
 ```
 
+<a id="batchupdate"></a>
 ## batchUpdate
 
 ```TypeScript
@@ -97,8 +99,8 @@ Batch updates data into the database. This API is called by the server and can b
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| operations | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Array<UpdateOperation>> | Yes | Collection of the path of the data to update, update conditions, and new data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Record<string, Array<number>>> | Yes | Callback used to return an array of updated data records. The value **-1** means the update operation fails. |
+| operations | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Array&lt;UpdateOperation&gt;&gt; | Yes | Collection of the path of the data to update, update conditions, and new data. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Record&lt;string, Array&lt;number&gt;&gt;&gt; | Yes | Callback used to return an array of updated data records. The value **-1** means the update operation fails. |
 
 **Example**
 
@@ -135,6 +137,7 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -159,7 +162,7 @@ Deletes data from the database. This API can be overridden as required.
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to delete. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Filter criteria for deleting data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of deleted data records. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of deleted data records. |
 
 **Example**
 
@@ -184,6 +187,7 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 
 ```
 
+<a id="denormalizeuri"></a>
 ## denormalizeUri
 
 ```TypeScript
@@ -207,7 +211,7 @@ Denormalizes a URI. This API can be overridden as required.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | [URI](../../apis-arkts/arkts-apis/arkts-arkts-uri-uri-c.md) to denormalize. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the operation is successful, the denormalized URI is returned. If the URI passed in is returned, denormalization is not required. If denormalization is not supported, **null** is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful, the denormalized URI is returned. If the URI passed in is returned, denormalization is not required. If denormalization is not supported, **null** is returned. |
 
 **Example**
 
@@ -231,6 +235,7 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 
 ```
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -255,7 +260,7 @@ Inserts data into the database. This API can be overridden as required.
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to insert. |
 | valueBucket | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | Data to insert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the index of the inserted data record. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the index of the inserted data record. |
 
 **Example**
 
@@ -282,6 +287,7 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 
 ```
 
+<a id="normalizeuri"></a>
 ## normalizeUri
 
 ```TypeScript
@@ -305,7 +311,7 @@ Normalizes a URI. This API can be overridden as required.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | [URI](../../apis-arkts/arkts-apis/arkts-arkts-uri-uri-c.md) to normalize. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the operation is successful, the normalized URI is returned. Otherwise, **null** is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful, the normalized URI is returned. Otherwise, **null** is returned. |
 
 **Example**
 
@@ -329,6 +335,7 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 
 ```
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -352,7 +359,7 @@ Called by the server to initialize service logic when the DataShare client conne
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information, including the ability name and bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -387,6 +394,7 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 
 ```
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -426,8 +434,8 @@ Queries data from the database. This API can be overridden as required.
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to query. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Filter criteria for querying data. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Columns to query. If this parameter is empty, all columns will be queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Object> | Yes | Callback used to return the result set obtained. |
+| columns | Array&lt;string&gt; | Yes | Columns to query. If this parameter is empty, all columns will be queried. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Object&gt; | Yes | Callback used to return the result set obtained. |
 
 **Example**
 
@@ -455,6 +463,7 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -495,7 +504,7 @@ Updates data in the database. This API can be overridden as required.
 | uri | string | Yes | URI of the data to update. |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Filter criteria for updating data. |
 | valueBucket | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | New data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of data records updated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of data records updated. |
 
 **Example**
 

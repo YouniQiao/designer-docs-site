@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createavmetadataextractor"></a>
 ## createAVMetadataExtractor
 
 ```TypeScript
@@ -24,7 +25,7 @@ Creates an AVMetadataExtractor instance. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVMetadataExtractor> | Promise used to return the AVMetadataExtractor instance. |
+| Promise&lt;AVMetadataExtractor&gt; | Promise used to return the AVMetadataExtractor instance. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ media.createAVMetadataExtractor().then((extractor: media.AVMetadataExtractor) =>
 ```
 
 
+<a id="createavmetadataextractor-1"></a>
 ## createAVMetadataExtractor
 
 ```TypeScript
@@ -70,7 +72,7 @@ Creates an AVMetadataExtractor instance. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVMetadataExtractor> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the AVMetadataExtractor instance created; otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVMetadataExtractor&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the AVMetadataExtractor instance created; otherwise,**err** is an error object. |
 
 **Error codes:**
 

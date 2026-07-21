@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="reportnetdisconnected"></a>
 ## reportNetDisconnected
 
 ```TypeScript
@@ -27,7 +28,7 @@ Reports the network state is disconnected.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | netHandle | [NetHandle](arkts-network-connection-nethandle-i.md) | Yes | Indicates the network whose state is to be reported. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of reportNetDisconnected. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of reportNetDisconnected. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ connection.getDefaultNet((error: BusinessError, netHandle: connection.NetHandle)
 ```
 
 
+<a id="reportnetdisconnected-1"></a>
 ## reportNetDisconnected
 
 ```TypeScript
@@ -88,7 +90,7 @@ Reports the network state is disconnected.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

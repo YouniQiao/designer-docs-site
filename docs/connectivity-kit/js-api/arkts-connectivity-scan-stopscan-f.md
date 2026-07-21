@@ -6,6 +6,7 @@
 import { scan } from '@kit.ConnectivityKit';
 ```
 
+<a id="stopscan"></a>
 ## stopScan
 
 ```TypeScript
@@ -28,7 +29,7 @@ Stops scanning.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | @throws { BusinessError } 201 - Permission denied. |
+| Promise&lt;void&gt; | @throws { BusinessError } 201 - Permission denied. |
 
 **Error codes:**
 

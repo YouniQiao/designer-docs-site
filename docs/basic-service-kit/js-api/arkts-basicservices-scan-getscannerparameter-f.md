@@ -6,6 +6,7 @@
 import { scan } from '@kit.BasicServicesKit';
 ```
 
+<a id="getscannerparameter"></a>
 ## getScannerParameter
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains scanner parameters. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ScannerParameter[]> | Promise used to return the scanner parameters. |
+| Promise&lt;ScannerParameter[]&gt; | Promise used to return the scanner parameters. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="isbluetoothdiscovering"></a>
 ## isBluetoothDiscovering
 
 ```TypeScript

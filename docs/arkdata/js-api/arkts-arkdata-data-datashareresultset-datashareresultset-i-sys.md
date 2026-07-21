@@ -18,6 +18,7 @@ The column or key names are returned as a string array, in which the strings are
 import { DataType } from '@kit.ArkData';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -47,6 +48,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="getblob"></a>
 ## getBlob
 
 ```TypeScript
@@ -77,7 +79,7 @@ If the specified column or key is empty or the value is not of the Blob type, yo
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Value obtained. |
+| Uint8Array | Value obtained. |
 
 **Example**
 
@@ -95,6 +97,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="getcolumnindex"></a>
 ## getColumnIndex
 
 ```TypeScript
@@ -138,6 +141,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="getcolumnname"></a>
 ## getColumnName
 
 ```TypeScript
@@ -181,6 +185,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="getdatatype"></a>
 ## getDataType
 
 ```TypeScript
@@ -224,6 +229,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="getdouble"></a>
 ## getDouble
 
 ```TypeScript
@@ -268,6 +274,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="getlong"></a>
 ## getLong
 
 ```TypeScript
@@ -312,6 +319,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="getstring"></a>
 ## getString
 
 ```TypeScript
@@ -356,6 +364,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="goto"></a>
 ## goTo
 
 ```TypeScript
@@ -397,6 +406,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="gotofirstrow"></a>
 ## goToFirstRow
 
 ```TypeScript
@@ -432,6 +442,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="gotolastrow"></a>
 ## goToLastRow
 
 ```TypeScript
@@ -466,6 +477,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="gotonextrow"></a>
 ## goToNextRow
 
 ```TypeScript
@@ -500,6 +512,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="gotopreviousrow"></a>
 ## goToPreviousRow
 
 ```TypeScript
@@ -534,6 +547,7 @@ if (resultSet != undefined) {
 
 ```
 
+<a id="gotorow"></a>
 ## goToRow
 
 ```TypeScript
@@ -603,7 +617,7 @@ columnNames: Array<string>
 
 Names of all columns in the result set.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 

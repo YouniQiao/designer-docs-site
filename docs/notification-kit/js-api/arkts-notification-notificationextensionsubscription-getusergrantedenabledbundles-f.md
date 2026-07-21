@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="getusergrantedenabledbundles"></a>
 ## getUserGrantedEnabledBundles
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the applications that are allowed to access device notifications. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GrantedBundleInfo[]> | Promise used to return the applications obtained. |
+| Promise&lt;GrantedBundleInfo[]&gt; | Promise used to return the applications obtained. |
 
 **Error codes:**
 

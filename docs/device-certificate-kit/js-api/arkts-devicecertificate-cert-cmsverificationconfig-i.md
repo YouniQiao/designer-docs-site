@@ -60,7 +60,7 @@ signerCerts?: Array<X509Cert>
 
 Signer certificates.
 
-**Type:** Array<X509Cert>
+**Type:** Array&lt;X509Cert&gt;
 
 **Since:** 22
 
@@ -82,7 +82,7 @@ Trusted certificates.
 >  
 > You need to configure the trust certificates of all signers.
 
-**Type:** Array<X509Cert>
+**Type:** Array&lt;X509Cert&gt;
 
 **Since:** 22
 

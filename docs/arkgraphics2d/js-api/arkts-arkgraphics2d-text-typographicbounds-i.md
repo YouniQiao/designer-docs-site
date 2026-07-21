@@ -9,16 +9,16 @@ Describes the typographic boundaries of a text line. These boundaries depend on 
 > leading (line spacing), top (highest point of the current line), baseline (character baseline), bottom (lowest  
 > point of the current line), and next line top (highest point of the next line).  
 >  
-> ![image_Typographic.png](../../../../reference/apis-arkgraphics2d/figures/image_Typographic.png)  
+> ![image_Typographic.png](docroot://reference/apis-arkgraphics2d/figures/image_Typographic.png)  
 >  
 > The following figure shows the typographic boundaries of the string " a b ".  
 >  
-> ![image_TypographicBounds.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds.png)  
+> ![image_TypographicBounds.png](docroot://reference/apis-arkgraphics2d/figures/image_TypographicBounds.png)  
 >  
 > The following figure shows the typographic boundaries of the strings "j" and "E".  
 >  
 > !  
-> [image_TypographicBounds_Character.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
+> [image_TypographicBounds_Character.png](docroot://reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
 
 **Since:** 18
 

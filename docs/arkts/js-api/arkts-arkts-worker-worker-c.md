@@ -20,6 +20,7 @@ The Worker class contains all Worker functions.
 import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -58,6 +59,7 @@ const workerInstance = new worker.Worker('entry/ets/workers/worker.ets', {name: 
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -95,6 +97,7 @@ workerInstance.off("alert");
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -133,6 +136,7 @@ workerInstance.on("alert", () => {
 
 ```
 
+<a id="once"></a>
 ## once
 
 ```TypeScript
@@ -171,6 +175,7 @@ workerInstance.once("alert", () => {
 
 ```
 
+<a id="postmessage"></a>
 ## postMessage
 
 ```TypeScript
@@ -193,8 +198,8 @@ Sends a message to the worker thread.The data is transferred using the structure
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| message | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Data to be sent to the worker |
-| transfer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md)[] | Yes | transfer ArrayBuffer instance that can be transferred.The transferList array cannot contain null. |
+| message | Object | Yes | Data to be sent to the worker |
+| transfer | ArrayBuffer[] | Yes | transfer ArrayBuffer instance that can be transferred.The transferList array cannot contain null. |
 
 **Example**
 
@@ -209,6 +214,7 @@ workerInstance.postMessage(buffer, [buffer]);
 
 ```
 
+<a id="postmessage-1"></a>
 ## postMessage
 
 ```TypeScript
@@ -231,7 +237,7 @@ Sends a message to the worker thread.The data is transferred using the structure
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| message | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Data to be sent to the worker |
+| message | Object | Yes | Data to be sent to the worker |
 | options | [PostMessageOptions](arkts-arkts-worker-postmessageoptions-i.md) | No | Option can be set for postmessage.The transferList array cannot contain null. |
 
 **Example**
@@ -249,6 +255,7 @@ workerInstance.postMessage(buffer, [buffer]);
 
 ```
 
+<a id="terminate"></a>
 ## terminate
 
 ```TypeScript
@@ -286,7 +293,7 @@ onerror?: (err: ErrorEvent) => void
 
 The onerror attribute of the worker specifies the event handler to be called when an exception occurs during worker execution.The event handler is executed in the host thread.
 
-**Type:** (err: ErrorEvent) => void
+**Type:** (err: ErrorEvent) =&gt; void
 
 **Since:** 7
 
@@ -306,7 +313,7 @@ onexit?: (code: number) => void
 
 Called when the Worker thread exits. The event handler is executed in the host thread. In the callback function,the code value is of the number type, where the value 1 indicates abnormal exit and 0 indicates normal exit.The default value is undefined.
 
-**Type:** (code: number) => void
+**Type:** (code: number) =&gt; void
 
 **Since:** 7
 
@@ -326,7 +333,7 @@ onmessage?: (event: MessageEvent) => void
 
 The onmessage attribute of the worker specifies the event handler to be called then the host thread receives a message created by itself and sent by the worker through the parentPort.postMessage.The event handler is executed in the host thread.
 
-**Type:** (event: MessageEvent) => void
+**Type:** (event: MessageEvent) =&gt; void
 
 **Since:** 7
 
@@ -346,7 +353,7 @@ onmessageerror?: (event: MessageEvent) => void
 
 The onmessage attribute of the worker specifies the event handler when the worker receives a message that cannot be serialized.The event handler is executed in the host thread.
 
-**Type:** (event: MessageEvent) => void
+**Type:** (event: MessageEvent) =&gt; void
 
 **Since:** 7
 

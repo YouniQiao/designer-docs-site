@@ -12,6 +12,8 @@
 
 **Since:** 14
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct MultiNavigation--><!--Device-unnamed-export declare struct MultiNavigation-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full

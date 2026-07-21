@@ -6,6 +6,7 @@
 import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
+<a id="clean"></a>
 ## clean
 
 ```TypeScript
@@ -29,13 +30,13 @@ Callback used to clear the cloud data locally. This API uses a promise to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | accountId | string | Yes | Account ID. |
-| appActions | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Action> | Yes | Action to perform. The bundle name of the application whose data is to be cleared is a string. [Action](arkts-corefile-cloudsyncmanager-action-e-sys.md) specifies the action to perform. |
+| appActions | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Action&gt; | Yes | Action to perform. The bundle name of the application whose data is to be cleared is a string. [Action](arkts-corefile-cloudsyncmanager-action-e-sys.md) specifies the action to perform. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ cloudSyncManager.clean(accountId, appActions).then(() => {
 ```
 
 
+<a id="clean-1"></a>
 ## clean
 
 ```TypeScript
@@ -87,8 +89,8 @@ Callback used to clear the cloud data locally. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | accountId | string | Yes | Account ID. |
-| appActions | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Action> | Yes | Action to perform. The bundle name of the application whose data is to be cleared is a string. [Action](arkts-corefile-cloudsyncmanager-action-e-sys.md) specifies the action to perform. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to clear the cloud data locally. |
+| appActions | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Action&gt; | Yes | Action to perform. The bundle name of the application whose data is to be cleared is a string. [Action](arkts-corefile-cloudsyncmanager-action-e-sys.md) specifies the action to perform. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to clear the cloud data locally. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { privacyManager } from '@kit.AbilityKit';
 ```
 
+<a id="addpermissionusedrecord"></a>
 ## addPermissionUsedRecord
 
 ```TypeScript
@@ -61,7 +62,7 @@ The permission usage record includes the application identity of the caller, the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -104,6 +105,7 @@ privacyManager.addPermissionUsedRecord(tokenID, 'ohos.permission.READ_AUDIO', 1,
 ```
 
 
+<a id="addpermissionusedrecord-1"></a>
 ## addPermissionUsedRecord
 
 ```TypeScript
@@ -152,7 +154,7 @@ The permission usage record is controlled by the toggle status set by [setPermis
 | permissionName | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission to be recorded. Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
 | successCount | number | Yes | Number of successful accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |
 | failCount | number | Yes | Number of failed accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

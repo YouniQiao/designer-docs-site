@@ -6,6 +6,7 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
+<a id="revokeshareddirectorypermission"></a>
 ## revokeSharedDirectoryPermission
 
 ```TypeScript
@@ -30,7 +31,7 @@ Revokes permission for application-shared directories
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

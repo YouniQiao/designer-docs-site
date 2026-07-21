@@ -1,8 +1,8 @@
 # QRCode properties/events
 
-In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
+In addition to the [universal attributes](docroot://reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
 
-The [universal events][universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
+The [universal events][universal events](docroot://reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
 
 **Inheritance/Implementation:** QRCodeAttribute extends [CommonMethod<QRCodeAttribute>](CommonMethod<QRCodeAttribute>)
 
@@ -12,6 +12,7 @@ The [universal events][universal events](../../../../reference/apis-arkui/arkui-
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="backgroundcolor"></a>
 ## backgroundColor
 
 ```TypeScript
@@ -36,6 +37,7 @@ Sets the background color of the QR code.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the QR code.<br>Default value: **Color.White**<br>Since API version 11, the default value is **'#ffffffff'** and does not change with the system color mode. |
 
+<a id="color"></a>
 ## color
 
 ```TypeScript
@@ -60,6 +62,7 @@ Sets the color of the QR code.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | QR code color. The default value is **'#ff000000'** and does not change with the system color mode.<br> |
 
+<a id="contentopacity"></a>
 ## contentOpacity
 
 ```TypeScript

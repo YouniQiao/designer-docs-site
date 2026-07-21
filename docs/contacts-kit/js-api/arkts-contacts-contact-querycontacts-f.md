@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="querycontacts"></a>
 ## queryContacts
 
 ```TypeScript
@@ -18,7 +19,7 @@ Queries all contacts. This API uses an asynchronous callback to return the resul
 
 **Deprecated since:** 10
 
-**Substitutes:** queryContacts(context:
+**Substitutes:** [queryContacts(context:](arkts-contacts-contact-querycontacts-f.md#querycontacts-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -30,7 +31,7 @@ Queries all contacts. This API uses an asynchronous callback to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Contact>> | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Contact&gt;&gt; | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
 
 **Example**
 
@@ -50,6 +51,7 @@ contact.queryContacts((err: BusinessError, data) => {
 ```
 
 
+<a id="querycontacts-1"></a>
 ## queryContacts
 
 ```TypeScript
@@ -71,7 +73,7 @@ Queries all contacts. This API uses an asynchronous callback to return the resul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Contact>> | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Contact&gt;&gt; | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
 
 **Error codes:**
 
@@ -102,6 +104,7 @@ contact.queryContacts(context, (err: BusinessError, data) => {
 ```
 
 
+<a id="querycontacts-2"></a>
 ## queryContacts
 
 ```TypeScript
@@ -114,7 +117,7 @@ Queries all contacts based on the specified holder. This API uses an asynchronou
 
 **Deprecated since:** 10
 
-**Substitutes:** queryContacts(context:
+**Substitutes:** [queryContacts(context:](arkts-contacts-contact-querycontacts-f.md#querycontacts-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -127,7 +130,7 @@ Queries all contacts based on the specified holder. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | holder | [Holder](arkts-contacts-contact-holder-c.md) | Yes | Application that creates the contacts.If the passed parameter is empty, the system contact application is used by default. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Contact>> | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Contact&gt;&gt; | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
 
 **Example**
 
@@ -151,6 +154,7 @@ contact.queryContacts({
 ```
 
 
+<a id="querycontacts-3"></a>
 ## queryContacts
 
 ```TypeScript
@@ -173,7 +177,7 @@ Queries all contacts based on the specified holder. This API uses an asynchronou
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | holder | [Holder](arkts-contacts-contact-holder-c.md) | Yes | Application that creates the contacts.If the passed parameter is empty, the system contact application is used by default. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Contact>> | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Contact&gt;&gt; | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
 
 **Error codes:**
 
@@ -208,6 +212,7 @@ contact.queryContacts(context, {
 ```
 
 
+<a id="querycontacts-4"></a>
 ## queryContacts
 
 ```TypeScript
@@ -220,7 +225,7 @@ Queries all contacts based on the specified attributes. This API uses an asynchr
 
 **Deprecated since:** 10
 
-**Substitutes:** queryContacts(context:
+**Substitutes:** [queryContacts(context:](arkts-contacts-contact-querycontacts-f.md#querycontacts-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -233,7 +238,7 @@ Queries all contacts based on the specified attributes. This API uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | attrs | [ContactAttributes](arkts-contacts-contact-contactattributes-c.md) | Yes | List of contact attributes. If this parameter is empty, all attribute fields (including the name, phone number, and email address) of the contact are queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Contact>> | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Contact&gt;&gt; | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
 
 **Example**
 
@@ -255,6 +260,7 @@ contact.queryContacts({
 ```
 
 
+<a id="querycontacts-5"></a>
 ## queryContacts
 
 ```TypeScript
@@ -277,7 +283,7 @@ Queries all contacts based on the specified attributes. This API uses an asynchr
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | attrs | [ContactAttributes](arkts-contacts-contact-contactattributes-c.md) | Yes | List of contact attributes. If this parameter is empty, all attribute fields (including the name, phone number, and email address) of the contact are queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Contact>> | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Contact&gt;&gt; | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
 
 **Error codes:**
 
@@ -310,6 +316,7 @@ contact.queryContacts(context, {
 ```
 
 
+<a id="querycontacts-6"></a>
 ## queryContacts
 
 ```TypeScript
@@ -322,7 +329,7 @@ Queries all contacts based on the specified holder and attributes. This API uses
 
 **Deprecated since:** 10
 
-**Substitutes:** queryContacts(context:
+**Substitutes:** [queryContacts(context:](arkts-contacts-contact-querycontacts-f.md#querycontacts-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -336,7 +343,7 @@ Queries all contacts based on the specified holder and attributes. This API uses
 | --- | --- | --- | --- |
 | holder | [Holder](arkts-contacts-contact-holder-c.md) | Yes | Application that creates the contacts.If the passed parameter is empty, the system contact application is used by default. |
 | attrs | [ContactAttributes](arkts-contacts-contact-contactattributes-c.md) | Yes | List of contact attributes. If this parameter is empty, all attribute fields (including the name, phone number, and email address) of the contact are queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Contact>> | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Contact&gt;&gt; | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
 
 **Example**
 
@@ -362,6 +369,7 @@ contact.queryContacts({
 ```
 
 
+<a id="querycontacts-7"></a>
 ## queryContacts
 
 ```TypeScript
@@ -385,7 +393,7 @@ Queries all contacts based on the specified holder and attributes. This API uses
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | holder | [Holder](arkts-contacts-contact-holder-c.md) | Yes | Application that creates the contacts.If the passed parameter is empty, the system contact application is used by default. |
 | attrs | [ContactAttributes](arkts-contacts-contact-contactattributes-c.md) | Yes | List of contact attributes. If this parameter is empty, all attribute fields (including the name, phone number, and email address) of the contact are queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Contact>> | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Contact&gt;&gt; | Yes | Indicates the callback for getting the result of the call.Returns the contact list which user select; returns empty contact list if user not select. |
 
 **Error codes:**
 
@@ -422,6 +430,7 @@ contact.queryContacts(context, {
 ```
 
 
+<a id="querycontacts-8"></a>
 ## queryContacts
 
 ```TypeScript
@@ -434,7 +443,7 @@ Queries all contacts based on the specified holder and attributes. This API uses
 
 **Deprecated since:** 10
 
-**Substitutes:** queryContacts(context:
+**Substitutes:** [queryContacts(context:](arkts-contacts-contact-querycontacts-f.md#querycontacts-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -453,7 +462,7 @@ Queries all contacts based on the specified holder and attributes. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Contact>> | Promise used to return the result, which is an array of queried contacts. |
+| Promise&lt;Array&lt;Contact&gt;&gt; | Promise used to return the result, which is an array of queried contacts. |
 
 **Example**
 
@@ -475,6 +484,7 @@ Queries all contacts based on the specified holder and attributes. This API uses
 ```
 
 
+<a id="querycontacts-9"></a>
 ## queryContacts
 
 ```TypeScript
@@ -503,7 +513,7 @@ Queries all contacts based on the specified holder and attributes. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Contact>> | Promise used to return the result, which is an array of queried contacts. |
+| Promise&lt;Array&lt;Contact&gt;&gt; | Promise used to return the result, which is an array of queried contacts. |
 
 **Error codes:**
 

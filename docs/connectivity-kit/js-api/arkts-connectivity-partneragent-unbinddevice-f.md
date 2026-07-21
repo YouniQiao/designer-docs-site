@@ -6,6 +6,7 @@
 import { partnerAgent } from '@kit.ConnectivityKit';
 ```
 
+<a id="unbinddevice"></a>
 ## unbindDevice
 
 ```TypeScript
@@ -34,7 +35,7 @@ Unbinds a partner device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

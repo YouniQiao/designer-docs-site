@@ -14,6 +14,7 @@ The **Metadata** class provides APIs for storing image metadata. For details abo
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="clone"></a>
 ## clone
 
 ```TypeScript
@@ -32,8 +33,9 @@ Clones the metadata. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Metadata> | Promise used to return the metadata instance. |
+| Promise&lt;Metadata&gt; | Promise used to return the metadata instance. |
 
+<a id="getallproperties"></a>
 ## getAllProperties
 
 ```TypeScript
@@ -54,8 +56,9 @@ For details about how to query the property values, see [PropertyKey](arkts-imag
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, string \| null>> | Promise used to return the values of all properties. |
+| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the values of all properties. |
 
+<a id="getblob"></a>
 ## getBlob
 
 ```TypeScript
@@ -76,8 +79,9 @@ Obtains the metadata in binary format. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise that returns the binary data of the metadata. |
+| Promise&lt;ArrayBuffer&gt; | Promise that returns the binary data of the metadata. |
 
+<a id="getproperties"></a>
 ## getProperties
 
 ```TypeScript
@@ -96,13 +100,13 @@ Obtains the values of properties from the image's metadata. This API uses a prom
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Names of the properties. |
+| key | Array&lt;string&gt; | Yes | Names of the properties. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, string \| null>> | Promise used to return the property values. If the operation fails, an error code is returned. |
+| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the property values. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -111,6 +115,7 @@ Obtains the values of properties from the image's metadata. This API uses a prom
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 | [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. The metadata type does not match the auxiliary picture type. |
 
+<a id="setblob"></a>
 ## setBlob
 
 ```TypeScript
@@ -131,13 +136,13 @@ Replaces the current metadata with binary data. This API uses a promise to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| blob | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Binary data used to replace the metadata. |
+| blob | ArrayBuffer | Yes | Binary data used to replace the metadata. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -145,6 +150,7 @@ Replaces the current metadata with binary data. This API uses a promise to retur
 | --- | --- |
 | [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
 
+<a id="setproperties"></a>
 ## setProperties
 
 ```TypeScript
@@ -165,13 +171,13 @@ For details about how to query the property values, see [PropertyKey](arkts-imag
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| records | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string \| null> | Yes | Array of properties and their values. |
+| records | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, string \| null&gt; | Yes | Array of properties and their values. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. If the operation fails, an error code is returned. |
+| Promise&lt;void&gt; | Promise that returns no value. If the operation fails, an error code is returned. |
 
 **Error codes:**
 

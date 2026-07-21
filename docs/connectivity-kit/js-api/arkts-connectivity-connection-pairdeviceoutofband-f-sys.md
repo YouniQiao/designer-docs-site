@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="pairdeviceoutofband"></a>
 ## pairDeviceOutOfBand
 
 ```TypeScript
@@ -34,14 +35,14 @@ Starts pairing with a remote Bluetooth device using the Out Of Band mechanism.Th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | transport | [BluetoothTransport](arkts-connectivity-connection-bluetoothtransport-e.md) | Yes | Indicates the transport of a remote Bluetooth device. |
-| p192Data | OobData \| null | Yes | The out-of-band data (P192), or null if not available. |
-| p256Data | OobData \| null | Yes | The out-of-band data (P256), or null if not available. |
+| p192Data | [OobData](arkts-connectivity-connection-oobdata-i-sys.md) \| null | Yes | The out-of-band data (P192), or null if not available. |
+| p256Data | [OobData](arkts-connectivity-connection-oobdata-i-sys.md) \| null | Yes | The out-of-band data (P256), or null if not available. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

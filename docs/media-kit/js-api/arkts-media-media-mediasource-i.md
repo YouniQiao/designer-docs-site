@@ -14,6 +14,7 @@ The MediaSource class defines the media data information, which is from [createM
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="enableofflinecache"></a>
 ## enableOfflineCache
 
 ```TypeScript
@@ -34,6 +35,7 @@ Sets whether to enable offline caching during video playback.
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to enable offline caching during video playback. **true** to enable, **false** otherwise. |
 
+<a id="getid"></a>
 ## getID
 
 ```TypeScript
@@ -58,6 +60,7 @@ Gets the identifier of the media source.
 | --- | --- |
 | string | Identifier of the media source. Empty string means call failed. |
 
+<a id="setmediaresourceloaderdelegate"></a>
 ## setMediaResourceLoaderDelegate
 
 ```TypeScript
@@ -80,6 +83,7 @@ Sets a MediaSourceLoader object, which is used to help the player request media 
 | --- | --- | --- | --- |
 | resourceLoader | [MediaSourceLoader](arkts-media-media-mediasourceloader-i.md) | Yes | **MediaSourceLoader** object used to obtain media data for the player. |
 
+<a id="setmimetype"></a>
 ## setMimeType
 
 ```TypeScript

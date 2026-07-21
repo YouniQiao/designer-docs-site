@@ -14,6 +14,7 @@ Implements camera management. Before calling any API in CameraManager, you must 
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="createcamerainput"></a>
 ## createCameraInput
 
 ```TypeScript
@@ -52,6 +53,7 @@ Creates a **CameraInput** instance with the specified **CameraDevice** instance.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed.<br>**Applicable version:** 12 and later |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error.<br>**Applicable version:** 12 and later |
 
+<a id="createcamerainput-1"></a>
 ## createCameraInput
 
 ```TypeScript
@@ -91,6 +93,7 @@ Creates a **CameraInput** instance with the specified camera position and type. 
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed.<br>**Applicable version:** 12 and later |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error.<br>**Applicable version:** 12 and later |
 
+<a id="createcapturesession"></a>
 ## createCaptureSession
 
 ```TypeScript
@@ -121,6 +124,7 @@ Creates a **CaptureSession** instance. This API returns the result synchronously
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="createmetadataoutput"></a>
 ## createMetadataOutput
 
 ```TypeScript
@@ -141,7 +145,7 @@ Creates a **MetadataOutput** instance. This API returns the result synchronously
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| metadataObjectTypes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<MetadataObjectType> | Yes | Metadata object types, which are obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-2). |
+| metadataObjectTypes | Array&lt;MetadataObjectType&gt; | Yes | Metadata object types, which are obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-1). |
 
 **Return value:**
 
@@ -156,6 +160,7 @@ Creates a **MetadataOutput** instance. This API returns the result synchronously
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error.<br>**Applicable version:** 12 and later |
 
+<a id="createphotooutput"></a>
 ## createPhotoOutput
 
 ```TypeScript
@@ -172,7 +177,7 @@ Creates a **PhotoOutput** instance. This API returns the result synchronously.
 
 **Deprecated since:** 11
 
-**Substitutes:** createPhotoOutput(profile?:
+**Substitutes:** [createPhotoOutput(profile?:](arkts-camera-camera-cameramanager-i.md#createphotooutput-1)
 
 <!--Device-CameraManager-createPhotoOutput(profile: Profile, surfaceId: string): PhotoOutput--><!--Device-CameraManager-createPhotoOutput(profile: Profile, surfaceId: string): PhotoOutput-End-->
 
@@ -182,7 +187,7 @@ Creates a **PhotoOutput** instance. This API returns the result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| profile | [Profile](arkts-camera-camera-profile-i.md) | Yes | Supported photo profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-2). |
+| profile | [Profile](arkts-camera-camera-profile-i.md) | Yes | Supported photo profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-1). |
 | surfaceId | string | Yes | Surface ID, which is obtained from [ImageReceiver](../../apis-image-kit/arkts-apis/arkts-image-image-imagereceiver-i.md). |
 
 **Return value:**
@@ -197,6 +202,7 @@ Creates a **PhotoOutput** instance. This API returns the result synchronously.
 | --- | --- |
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 
+<a id="createphotooutput-1"></a>
 ## createPhotoOutput
 
 ```TypeScript
@@ -217,7 +223,7 @@ Creates a **PhotoOutput** instance. This API returns the result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| profile | [Profile](arkts-camera-camera-profile-i.md) | No | Supported photo profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-2).<br>In API version 11, this parameter is mandatory. Starting from API version 12, it will overwrite the preconfigured parameters passed in through [preconfig](arkts-camera-camera-photosession-i.md#preconfig-1). |
+| profile | [Profile](arkts-camera-camera-profile-i.md) | No | Supported photo profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-1).<br>In API version 11, this parameter is mandatory. Starting from API version 12, it will overwrite the preconfigured parameters passed in through [preconfig](arkts-camera-camera-photosession-i.md#preconfig-1). |
 
 **Return value:**
 
@@ -232,6 +238,7 @@ Creates a **PhotoOutput** instance. This API returns the result synchronously.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error.<br>**Applicable version:** 12 and later |
 
+<a id="createpreviewoutput"></a>
 ## createPreviewOutput
 
 ```TypeScript
@@ -252,7 +259,7 @@ Creates a **PreviewOutput** instance. This API returns the result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| profile | [Profile](arkts-camera-camera-profile-i.md) | Yes | Supported preview profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-2). |
+| profile | [Profile](arkts-camera-camera-profile-i.md) | Yes | Supported preview profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-1). |
 | surfaceId | string | Yes | Surface ID, which is obtained from [XComponent](XComponent) or [ImageReceiver](../../apis-image-kit/arkts-apis/arkts-image-image-imagereceiver-i.md). |
 
 **Return value:**
@@ -268,6 +275,7 @@ Creates a **PreviewOutput** instance. This API returns the result synchronously.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error.<br>**Applicable version:** 12 and later |
 
+<a id="createpreviewoutput-1"></a>
 ## createPreviewOutput
 
 ```TypeScript
@@ -303,6 +311,7 @@ Creates a **PreviewOutput** instance without configuration. This API returns the
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="createsession"></a>
 ## createSession
 
 ```TypeScript
@@ -338,6 +347,7 @@ Creates a **Session** instance with a given scene mode. This API returns the res
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified; 2. Incorrect parameter types;3. Parameter verification failed.<br>**Applicable version:** 19 and later |
 
+<a id="createvideooutput"></a>
 ## createVideoOutput
 
 ```TypeScript
@@ -362,7 +372,7 @@ Creates a **VideoOutput** instance. This API returns the result synchronously.In
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| profile | [VideoProfile](arkts-camera-camera-videoprofile-i.md) | Yes | Supported video profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-2). |
+| profile | [VideoProfile](arkts-camera-camera-videoprofile-i.md) | Yes | Supported video profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-1). |
 | surfaceId | string | Yes | Surface ID, which is obtained from [AVRecorder](../../apis-media-kit/arkts-apis/arkts-multimedia-media.md). |
 
 **Return value:**
@@ -378,6 +388,7 @@ Creates a **VideoOutput** instance. This API returns the result synchronously.In
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error.<br>**Applicable version:** 12 and later |
 
+<a id="createvideooutput-1"></a>
 ## createVideoOutput
 
 ```TypeScript
@@ -413,6 +424,7 @@ Creates a **VideoOutput** instance without configuration. This API returns the r
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="getcameraconcurrentinfos"></a>
 ## getCameraConcurrentInfos
 
 ```TypeScript
@@ -433,13 +445,13 @@ Obtains the concurrency information of the specified cameras. If the return valu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| cameras | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CameraDevice> | Yes | Array of **CameraDevice** objects. You are advised to use the front and rear cameras obtained by calling [getCameraDevice](arkts-camera-camera-cameramanager-i.md#getcameradevice-1). |
+| cameras | Array&lt;CameraDevice&gt; | Yes | Array of **CameraDevice** objects. You are advised to use the front and rear cameras obtained by calling [getCameraDevice](arkts-camera-camera-cameramanager-i.md#getcameradevice-1). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CameraConcurrentInfo> | Array of concurrency information corresponding to the provided CameraDevice objects, with a one-to-one mapping. |
+| Array&lt;CameraConcurrentInfo&gt; | Array of concurrency information corresponding to the provided CameraDevice objects, with a one-to-one mapping. |
 
 **Error codes:**
 
@@ -447,6 +459,7 @@ Obtains the concurrency information of the specified cameras. If the return valu
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="getcameradevice"></a>
 ## getCameraDevice
 
 ```TypeScript
@@ -482,6 +495,7 @@ Obtains the specified camera based on the camera position and type.Obtains the c
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="getcameradevices"></a>
 ## getCameraDevices
 
 ```TypeScript
@@ -503,14 +517,14 @@ Obtains the list of cameras that meet the search criteria based on the camera po
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | position | [CameraPosition](arkts-camera-camera-cameraposition-e.md) | Yes | Camera position. |
-| types | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CameraType> | Yes | Array of camera types. |
+| types | Array&lt;CameraType&gt; | Yes | Array of camera types. |
 | connectType | [ConnectionType](arkts-camera-camera-connectiontype-e.md) | Yes | Camera connection type. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CameraDevice> | Array of cameras that meet the search criteria. |
+| Array&lt;CameraDevice&gt; | Array of cameras that meet the search criteria. |
 
 **Error codes:**
 
@@ -518,6 +532,7 @@ Obtains the list of cameras that meet the search criteria based on the camera po
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
+<a id="getsupportedcameras"></a>
 ## getSupportedCameras
 
 ```TypeScript
@@ -538,8 +553,9 @@ Obtains the supported camera devices. This API returns the result synchronously.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CameraDevice> | Array of camera devices supported. |
+| Array&lt;CameraDevice&gt; | Array of camera devices supported. |
 
+<a id="getsupportedfulloutputcapability"></a>
 ## getSupportedFullOutputCapability
 
 ```TypeScript
@@ -576,6 +592,7 @@ Obtains the complete output capabilities supported by a specified camera in a sp
 | --- | --- |
 | [CameraOutputCapability](arkts-camera-camera-cameraoutputcapability-i.md) | Camera output capability obtained. |
 
+<a id="getsupportedoutputcapability"></a>
 ## getSupportedOutputCapability
 
 ```TypeScript
@@ -588,7 +605,7 @@ Obtains the output capability supported by a camera device. This API returns the
 
 **Deprecated since:** 11
 
-**Substitutes:** getSupportedOutputCapability(camera:
+**Substitutes:** [getSupportedOutputCapability(camera:](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-1)
 
 <!--Device-CameraManager-getSupportedOutputCapability(camera: CameraDevice): CameraOutputCapability--><!--Device-CameraManager-getSupportedOutputCapability(camera: CameraDevice): CameraOutputCapability-End-->
 
@@ -606,6 +623,7 @@ Obtains the output capability supported by a camera device. This API returns the
 | --- | --- |
 | [CameraOutputCapability](arkts-camera-camera-cameraoutputcapability-i.md) | Camera output capability obtained. |
 
+<a id="getsupportedoutputcapability-1"></a>
 ## getSupportedOutputCapability
 
 ```TypeScript
@@ -635,6 +653,7 @@ Obtains the output capability supported by a camera device in a given scene mode
 | --- | --- |
 | [CameraOutputCapability](arkts-camera-camera-cameraoutputcapability-i.md) | Camera output capability obtained. |
 
+<a id="getsupportedscenemodes"></a>
 ## getSupportedSceneModes
 
 ```TypeScript
@@ -661,8 +680,9 @@ Obtains the scene modes supported by a camera device. This API returns the resul
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<SceneMode> | Array of scene modes supported. |
+| Array&lt;SceneMode&gt; | Array of scene modes supported. |
 
+<a id="gettorchmode"></a>
 ## getTorchMode
 
 ```TypeScript
@@ -685,6 +705,7 @@ Obtains the flashlight mode of this camera device.
 | --- | --- |
 | [TorchMode](arkts-camera-camera-torchmode-e.md) | Flashlight mode. |
 
+<a id="iscameramuted"></a>
 ## isCameraMuted
 
 ```TypeScript
@@ -707,6 +728,7 @@ Checks whether this camera is muted.
 | --- | --- |
 | boolean | Check result for whether the camera is muted. **true** if muted, **false** otherwise. |
 
+<a id="istorchmodesupported"></a>
 ## isTorchModeSupported
 
 ```TypeScript
@@ -735,6 +757,7 @@ Checks whether a flashlight mode is supported.
 | --- | --- |
 | boolean | Check result for the support of the flashlight mode. **true** if supported, **false** otherwise. If the API call fails, undefined is returned. |
 
+<a id="istorchsupported"></a>
 ## isTorchSupported
 
 ```TypeScript
@@ -757,6 +780,7 @@ Checks whether the camera device supports the flashlight.
 | --- | --- |
 | boolean | Check result for the support of the flashlight. **true** if supported, **false** otherwise.If the API call fails, undefined is returned. |
 
+<a id="off"></a>
 ## off('cameraStatus')
 
 ```TypeScript
@@ -778,8 +802,9 @@ Unsubscribes from camera status events. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cameraStatus' | Yes | Event type. The value is fixed at **'cameraStatus'**. The event can be listened for when a **CameraManager** instance is obtained. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CameraStatusInfo> | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CameraStatusInfo&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
+<a id="off-1"></a>
 ## off('foldStatusChange')
 
 ```TypeScript
@@ -801,8 +826,9 @@ Unsubscribes from fold state change events of the foldable device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'foldStatusChange' | Yes | Event type. The value is fixed at **'foldStatusChange'**. The event is triggered when the fold state of the foldable device changes. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FoldStatusInfo> | No | Callback used to return the fold state information about the foldable device. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FoldStatusInfo&gt; | No | Callback used to return the fold state information about the foldable device. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
+<a id="off-2"></a>
 ## off('torchStatusChange')
 
 ```TypeScript
@@ -824,8 +850,9 @@ Unsubscribes from flashlight status change events. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'torchStatusChange' | Yes | Event type. The value is fixed at **'torchStatusChange'**. The event can be listened for when a **CameraManager** instance is obtained. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<TorchStatusInfo> | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;TorchStatusInfo&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
+<a id="on"></a>
 ## on('cameraStatus')
 
 ```TypeScript
@@ -851,8 +878,9 @@ Subscribes to camera status events. This API uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cameraStatus' | Yes | Event type. The value is fixed at **'cameraStatus'**. The event can be listened for when a **CameraManager** instance is obtained. This event is triggered and the corresponding information is returned only when the camera device is enabled or disabled. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CameraStatusInfo> | Yes | Callback used to return the camera status change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CameraStatusInfo&gt; | Yes | Callback used to return the camera status change. |
 
+<a id="on-1"></a>
 ## on('foldStatusChange')
 
 ```TypeScript
@@ -878,8 +906,9 @@ Subscribes to fold status change events of the foldable device. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'foldStatusChange' | Yes | Event type. The value is fixed at **'foldStatusChange'**. The event is triggered when the fold state of the foldable device changes. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FoldStatusInfo> | Yes | Callback used to return the fold state information about the foldable device. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FoldStatusInfo&gt; | Yes | Callback used to return the fold state information about the foldable device. |
 
+<a id="on-2"></a>
 ## on('torchStatusChange')
 
 ```TypeScript
@@ -905,8 +934,9 @@ Subscribes to flashlight status change events. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'torchStatusChange' | Yes | Event type. The value is fixed at **'torchStatusChange'**. The event can be listened for when a **CameraManager** instance is obtained. Currently, this event is triggered only in the following scenarios: The flashlight is turned on or turned off, or becomes unavailable or available. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<TorchStatusInfo> | Yes | Callback used to return the flashlight status. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;TorchStatusInfo&gt; | Yes | Callback used to return the flashlight status. |
 
+<a id="settorchmode"></a>
 ## setTorchMode
 
 ```TypeScript

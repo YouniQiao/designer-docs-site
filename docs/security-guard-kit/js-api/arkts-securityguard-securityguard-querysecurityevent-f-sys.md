@@ -6,6 +6,7 @@
 import { securityGuard } from '@kit.SecurityGuardKit';
 ```
 
+<a id="querysecurityevent"></a>
 ## querySecurityEvent
 
 ```TypeScript
@@ -28,7 +29,7 @@ Query security event information from security guard.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rules | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<SecurityEventRule> | Yes | rule of get security event information. |
+| rules | Array&lt;SecurityEventRule&gt; | Yes | rule of get security event information. |
 | querier | [Querier](arkts-securityguard-securityguard-querier-i-sys.md) | Yes | callback of receiving the query data. |
 
 **Error codes:**

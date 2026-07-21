@@ -1,6 +1,6 @@
 # AccessibilityElement
 
-Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElement**, you must call [AccessibilityExtensionContext.getFocusElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getfocuselement-2)or [AccessibilityExtensionContext.getWindowRootElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getwindowrootelement-2)to obtain an **AccessibilityElement** instance.
+Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElement**, you must call [AccessibilityExtensionContext.getFocusElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getfocuselement-1)or [AccessibilityExtensionContext.getWindowRootElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getwindowrootelement-1)to obtain an **AccessibilityElement** instance.
 
 **Since:** 9
 
@@ -8,6 +8,7 @@ Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElem
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
+<a id="actionnames"></a>
 ## actionNames
 
 ```TypeScript
@@ -28,8 +29,9 @@ Obtains the names of all actions supported by this element. This API uses an asy
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the names of all actions supported by the element. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the names of all actions supported by the element. |
 
+<a id="actionnames-1"></a>
 ## actionNames
 
 ```TypeScript
@@ -50,8 +52,9 @@ Obtains the names of all actions supported by this element. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the names of all actions supported by the element. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the names of all actions supported by the element. |
 
+<a id="attributenames"></a>
 ## attributeNames
 
 ```TypeScript
@@ -72,8 +75,9 @@ Obtains all attribute names of this element. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<T>> | Yes | Callback used to return all attribute names of the element. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;T&gt;&gt; | Yes | Callback used to return all attribute names of the element. |
 
+<a id="attributenames-1"></a>
 ## attributeNames
 
 ```TypeScript
@@ -94,8 +98,9 @@ Obtains all attribute names of this element. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<T>> | Promise used to return all attribute names of the element. |
+| Promise&lt;Array&lt;T&gt;&gt; | Promise used to return all attribute names of the element. |
 
+<a id="attributevalue"></a>
 ## attributeValue
 
 ```TypeScript
@@ -126,7 +131,7 @@ Obtains the attribute value based on an attribute name. This API uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | attributeName | T | Yes | Attribute name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ElementAttributeValues[T]> | Yes | Callback used to return the attribute value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ElementAttributeValues[T]&gt; | Yes | Callback used to return the attribute value. |
 
 **Error codes:**
 
@@ -135,6 +140,7 @@ Obtains the attribute value based on an attribute name. This API uses an asynchr
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [9300004](../errorcode-accessibility.md#9300004-property-not-found) | This property does not exist. |
 
+<a id="attributevalue-1"></a>
 ## attributeValue
 
 ```TypeScript
@@ -161,7 +167,7 @@ Obtains the attribute value based on an attribute name. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ElementAttributeValues[T]> | Promise used to return the attribute value. |
+| Promise&lt;ElementAttributeValues[T]&gt; | Promise used to return the attribute value. |
 
 **Error codes:**
 
@@ -170,6 +176,7 @@ Obtains the attribute value based on an attribute name. This API uses a promise 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [9300004](../errorcode-accessibility.md#9300004-property-not-found) | This property does not exist. |
 
+<a id="findelement"></a>
 ## findElement
 
 ```TypeScript
@@ -192,7 +199,7 @@ Finds an element based on the content type. This API uses an asynchronous callba
 | --- | --- | --- | --- |
 | type | 'content' | Yes | Type of element finding. The value is fixed at **'content'**. |
 | condition | string | Yes | Search criteria. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AccessibilityElement>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AccessibilityElement&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -200,6 +207,7 @@ Finds an element based on the content type. This API uses an asynchronous callba
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="findelement-1"></a>
 ## findElement
 
 ```TypeScript
@@ -227,7 +235,7 @@ Finds an element based on the content type. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AccessibilityElement>> | Promise used to return the result. |
+| Promise&lt;Array&lt;AccessibilityElement&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -235,6 +243,7 @@ Finds an element based on the content type. This API uses a promise to return th
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="findelement-2"></a>
 ## findElement
 
 ```TypeScript
@@ -257,7 +266,7 @@ Finds an element based on the focus type. This API uses an asynchronous callback
 | --- | --- | --- | --- |
 | type | 'focusType' | Yes | Type of element finding. The value is fixed at **'focusType'**. |
 | condition | [FocusType](arkts-accessibility-focustype-t.md) | Yes | Focus type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AccessibilityElement> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AccessibilityElement&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -265,6 +274,7 @@ Finds an element based on the focus type. This API uses an asynchronous callback
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="findelement-3"></a>
 ## findElement
 
 ```TypeScript
@@ -292,7 +302,7 @@ Finds an element based on the focus type. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -300,6 +310,7 @@ Finds an element based on the focus type. This API uses a promise to return the 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="findelement-4"></a>
 ## findElement
 
 ```TypeScript
@@ -322,7 +333,7 @@ Finds an element based on the focus direction. This API uses an asynchronous cal
 | --- | --- | --- | --- |
 | type | 'focusDirection' | Yes | Type of element finding. The value is fixed at **'focusDirection'**. |
 | condition | [FocusDirection](arkts-accessibility-focusdirection-t.md) | Yes | Direction of the next focus element. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AccessibilityElement> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AccessibilityElement&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -330,6 +341,7 @@ Finds an element based on the focus direction. This API uses an asynchronous cal
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="findelement-5"></a>
 ## findElement
 
 ```TypeScript
@@ -357,7 +369,7 @@ Finds an element based on the focus direction. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessibilityElement> | Promise used to return the result. |
+| Promise&lt;AccessibilityElement&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -365,6 +377,7 @@ Finds an element based on the focus direction. This API uses a promise to return
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
+<a id="performaction"></a>
 ## performAction
 
 ```TypeScript
@@ -387,7 +400,7 @@ Performs an action based on the specified action name. This API uses an asynchro
 | --- | --- | --- | --- |
 | actionName | string | Yes | Action name. For details, see [Action](arkts-accessibility-accessibility-action-t.md). |
 | parameters | object | Yes | Parameters required for performing the target action. Empty by default. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -396,6 +409,7 @@ Performs an action based on the specified action name. This API uses an asynchro
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [9300005](../errorcode-accessibility.md#9300005-action-not-supported) | This action is not supported. |
 
+<a id="performaction-1"></a>
 ## performAction
 
 ```TypeScript
@@ -423,7 +437,7 @@ Performs an action based on the specified action name. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -432,6 +446,7 @@ Performs an action based on the specified action name. This API uses a promise t
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [9300005](../errorcode-accessibility.md#9300005-action-not-supported) | This action is not supported. |
 
+<a id="performaction-2"></a>
 ## performAction
 
 ```TypeScript
@@ -453,7 +468,7 @@ Performs an action based on the specified action name. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | actionName | string | Yes | Action name. For details, see [Action](arkts-accessibility-accessibility-action-t.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 

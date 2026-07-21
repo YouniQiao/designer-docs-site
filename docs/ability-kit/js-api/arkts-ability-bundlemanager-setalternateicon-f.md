@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="setalternateicon"></a>
 ## setAlternateIcon
 
 ```TypeScript
@@ -32,7 +33,7 @@ Sets the alternate icon of the caller based on the given alternate icon name.Thi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

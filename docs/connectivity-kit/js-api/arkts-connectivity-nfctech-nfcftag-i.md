@@ -10,6 +10,7 @@ Provides methods for creating an NFC-F tag, obtaining tag information, and contr
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="getpmm"></a>
 ## getPmm
 
 ```TypeScript
@@ -32,6 +33,7 @@ Obtains the PMm (consisting of the IC code and manufacturer parameters) from thi
 | --- | --- |
 | number[] | Returns the PMm. |
 
+<a id="getsystemcode"></a>
 ## getSystemCode
 
 ```TypeScript

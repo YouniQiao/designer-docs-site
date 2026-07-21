@@ -14,6 +14,7 @@ A cleaner for releasing resources managed by developers through a developer-defi
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="register"></a>
 ## register
 
 ```TypeScript
@@ -34,6 +35,6 @@ Register objects that release resources managed by developers.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| obj | [AutoFinalizer](arkts-arkts-util-autofinalizer-i.md)<T> | Yes | The object is registered to the cleaner. |
+| obj | [AutoFinalizer](arkts-arkts-util-autofinalizer-i.md)&lt;T&gt; | Yes | The object is registered to the cleaner. |
 | heldValue | T | Yes | The value to pass to the finalizer. |
 

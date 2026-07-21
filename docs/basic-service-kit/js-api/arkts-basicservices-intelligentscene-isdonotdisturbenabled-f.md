@@ -6,6 +6,7 @@
 import { intelligentScene } from '@kit.BasicServicesKit';
 ```
 
+<a id="isdonotdisturbenabled"></a>
 ## isDoNotDisturbEnabled
 
 ```TypeScript
@@ -28,7 +29,7 @@ Checks whether Do Not Disturb is enabled on this device.The Do Not Disturb state
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns whether Do Not Disturb is enabled. |
+| Promise&lt;boolean&gt; | Returns whether Do Not Disturb is enabled. |
 
 **Error codes:**
 

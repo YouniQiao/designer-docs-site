@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="ontemplateformdetailinfochange"></a>
 ## onTemplateFormDetailInfoChange
 
 ```TypeScript

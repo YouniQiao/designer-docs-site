@@ -18,7 +18,7 @@ authInfo?: Record<string, Object>
 
 Authentication information.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 8
 
@@ -84,7 +84,7 @@ deviceType?: Array<string>
 
 Device type.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 8
 

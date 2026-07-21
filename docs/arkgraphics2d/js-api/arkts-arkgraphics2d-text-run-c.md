@@ -16,6 +16,7 @@ Before calling any of the following APIs, you must use [getGlyphRuns()](arkts-ar
 import { text } from '@kit.ArkGraphics2D';
 ```
 
+<a id="getadvances"></a>
 ## getAdvances
 
 ```TypeScript
@@ -42,7 +43,7 @@ Obtains the glyph width array of each glyph within the specified range of the ru
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common2D.Point> | Returns the glyph width array of each glyph in the run unit relative to the horizontal direction. In [common2D.Point](arkts-arkgraphics2d-common2d-point-i.md), the x value represents the glyph width of each glyph relative to the horizontal direction, in physical pixels (px). The y value is a reserved field and returns **0** by default. |
+| Array&lt;common2D.Point&gt; | Returns the glyph width array of each glyph in the run unit relative to the horizontal direction. In [common2D.Point](arkts-arkgraphics2d-common2d-point-i.md), the x value represents the glyph width of each glyph relative to the horizontal direction, in physical pixels (px). The y value is a reserved field and returns **0** by default. |
 
 **Example**
 
@@ -54,6 +55,7 @@ let advancesNull = runs[0].getAdvances(null); // null is an invalid value, and u
 
 ```
 
+<a id="getfont"></a>
 ## getFont
 
 ```TypeScript
@@ -83,6 +85,7 @@ let font = runs[0].getFont();
 
 ```
 
+<a id="getglyphcount"></a>
 ## getGlyphCount
 
 ```TypeScript
@@ -112,6 +115,7 @@ let glyphs = runs[0].getGlyphCount();
 
 ```
 
+<a id="getglyphs"></a>
 ## getGlyphs
 
 ```TypeScript
@@ -132,7 +136,7 @@ Obtains the index of each glyph in this run.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array holding the index of each glyph in the run. |
+| Array&lt;number&gt; | Array holding the index of each glyph in the run. |
 
 **Example**
 
@@ -141,6 +145,7 @@ let glyph = runs[0].getGlyphs();
 
 ```
 
+<a id="getglyphs-1"></a>
 ## getGlyphs
 
 ```TypeScript
@@ -167,7 +172,7 @@ Obtains the index of each glyph in the specified range of this run.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array holding the index of each glyph in the run. |
+| Array&lt;number&gt; | Array holding the index of each glyph in the run. |
 
 **Example**
 
@@ -198,6 +203,7 @@ struct Index {
 
 ```
 
+<a id="getimagebounds"></a>
 ## getImageBounds
 
 ```TypeScript
@@ -210,12 +216,12 @@ Obtains the image boundaries of the typographic unit. Equivalent to visual bound
 >  
 > The following figure shows the image boundaries of the string " a b ".  
 >  
-> ![image_ImageBounds.png](../../../../reference/apis-arkgraphics2d/figures/image_ImageBounds.png)  
+> ![image_ImageBounds.png](docroot://reference/apis-arkgraphics2d/figures/image_ImageBounds.png)  
 >  
 > The following figure shows the image boundaries of the strings "j" and "E".  
 >  
 > !  
-> [image_ImageBounds_Character.png](../../../../reference/apis-arkgraphics2d/figures/image_ImageBounds_Character.png)
+> [image_ImageBounds_Character.png](docroot://reference/apis-arkgraphics2d/figures/image_ImageBounds_Character.png)
 
 **Since:** 18
 
@@ -238,6 +244,7 @@ let bounds = runs[0].getImageBounds();
 
 ```
 
+<a id="getoffsets"></a>
 ## getOffsets
 
 ```TypeScript
@@ -258,7 +265,7 @@ Obtains the offset of each glyph in this run relative to its index.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common2D.Point> | Array holding the offset of each glyph in the run relative to its index. |
+| Array&lt;common2D.Point&gt; | Array holding the offset of each glyph in the run relative to its index. |
 
 **Example**
 
@@ -267,6 +274,7 @@ let offsets = runs[0].getOffsets();
 
 ```
 
+<a id="getpositions"></a>
 ## getPositions
 
 ```TypeScript
@@ -287,7 +295,7 @@ Obtains the position of each glyph relative to the respective line in this run.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common2D.Point> | Array holding the position of each glyph relative to the respective line in the run. |
+| Array&lt;common2D.Point&gt; | Array holding the position of each glyph relative to the respective line in the run. |
 
 **Example**
 
@@ -296,6 +304,7 @@ let positions = runs[0].getPositions();
 
 ```
 
+<a id="getpositions-1"></a>
 ## getPositions
 
 ```TypeScript
@@ -322,7 +331,7 @@ Obtains the position array of each glyph relative to the respective line within 
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common2D.Point> | Array holding the position of each glyph relative to the respective line in the run. |
+| Array&lt;common2D.Point&gt; | Array holding the position of each glyph relative to the respective line in the run. |
 
 **Example**
 
@@ -353,6 +362,7 @@ struct Index {
 
 ```
 
+<a id="getstringindices"></a>
 ## getStringIndices
 
 ```TypeScript
@@ -379,7 +389,7 @@ Obtains an array of character indices for glyphs within a specified range of thi
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array of character indices. |
+| Array&lt;number&gt; | Array of character indices. |
 
 **Example**
 
@@ -410,6 +420,7 @@ struct Index {
 
 ```
 
+<a id="getstringrange"></a>
 ## getStringRange
 
 ```TypeScript
@@ -441,6 +452,7 @@ let length = runStringRange.end;
 
 ```
 
+<a id="gettextdirection"></a>
 ## getTextDirection
 
 ```TypeScript
@@ -470,6 +482,7 @@ let textDirection = runs[0].getTextDirection();
 
 ```
 
+<a id="gettextstyle"></a>
 ## getTextStyle
 
 ```TypeScript
@@ -494,6 +507,7 @@ Obtains the text style of this run.
 | --- | --- |
 | [TextStyle](arkts-arkgraphics2d-text-textstyle-i.md) | Text style of this run. |
 
+<a id="gettypographicbounds"></a>
 ## getTypographicBounds
 
 ```TypeScript
@@ -506,12 +520,12 @@ Obtains the typographic boundaries of the typographic unit. These boundaries are
 >  
 > The following figure shows the typographic boundaries of the string " a b ".  
 >  
-> ![image_TypographicBounds.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds.png)  
+> ![image_TypographicBounds.png](docroot://reference/apis-arkgraphics2d/figures/image_TypographicBounds.png)  
 >  
 > The following figure shows the typographic boundaries of the strings "j" and "E".  
 >  
 > !  
-> [image_TypographicBounds_Character.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
+> [image_TypographicBounds_Character.png](docroot://reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
 
 **Since:** 18
 
@@ -534,6 +548,7 @@ let typographicBounds = runs[0].getTypographicBounds();
 
 ```
 
+<a id="paint"></a>
 ## paint
 
 ```TypeScript

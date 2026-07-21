@@ -14,6 +14,7 @@ Defines the ContainerReader Component.Used for reading and analyzing container l
 import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

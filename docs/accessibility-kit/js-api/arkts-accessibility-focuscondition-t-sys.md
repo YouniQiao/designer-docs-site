@@ -22,7 +22,7 @@ Defines a condition for querying the focusable node.
 | 'forward' | Queries the next focusable node. The value is fixed at **'forward'**. |
 | 'backward' | Queries the next focusable node. The value is fixed at **'backward'**. |
 | 'findLast' | Queries the last child node of the start node. The value is fixed at **'findLast'**. |
-| 'getForwardScrollAncestor' | Queries the parent component that supports forward scrolling. The valueis fixed at **'getForwardScrollAncestor'**. |
-| 'getBackwardScrollAncestor' | Queries the parent component that supports backward scrolling. The valueis fixed at **'getBackwardScrollAncestor'**. |
-| 'getScrollableAncestor' | Queries the parent component that supports scrolling in any direction. Thevalue is fixed at **'getScrollableAncestor'**. |
+| 'getForwardScrollAncestor' | Queries the parent component that supports forward scrolling. The value is fixed at **'getForwardScrollAncestor'**. |
+| 'getBackwardScrollAncestor' | Queries the parent component that supports backward scrolling. The value is fixed at **'getBackwardScrollAncestor'**. |
+| 'getScrollableAncestor' | Queries the parent component that supports scrolling in any direction. The value is fixed at **'getScrollableAncestor'**. |
 

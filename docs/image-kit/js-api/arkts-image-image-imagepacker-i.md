@@ -20,6 +20,7 @@ Currently, the following formats are supported: jpeg, webp, png, heic<sup>12+</s
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="packbinaryimagetotiffdata"></a>
 ## packBinaryImageToTiffData
 
 ```TypeScript
@@ -47,7 +48,7 @@ Compresses or packs an image into a file and uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | A Promise instance used to return the compressed or packed data. |
+| Promise&lt;ArrayBuffer&gt; | A Promise instance used to return the compressed or packed data. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ Compresses or packs an image into a file and uses a promise to return the result
 | [7800202](../errorcode-image.md#7800202-invalid-imagepacker-parameter) | Invalid parameter. Possible causes: 1. Invalid FD; 2. Compression algorithm mismatch. |
 | [7800301](../errorcode-image.md#7800301-encoding-failure) | Encode failed. |
 
+<a id="packbinaryimagetotifffile"></a>
 ## packBinaryImageToTiffFile
 
 ```TypeScript
@@ -84,7 +86,7 @@ Compresses or packs an image into a file and uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result. |
 
 **Error codes:**
 
@@ -93,6 +95,7 @@ Compresses or packs an image into a file and uses a promise to return the result
 | [7800202](../errorcode-image.md#7800202-invalid-imagepacker-parameter) | Invalid parameter. Possible causes: 1. Invalid FD; 2. Compression algorithm mismatch. |
 | [7800301](../errorcode-image.md#7800301-encoding-failure) | Encode failed. |
 
+<a id="packtodata"></a>
 ## packToData
 
 ```TypeScript
@@ -120,7 +123,7 @@ Compresses or re-encodes an image. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise used to return the compressed or encoded image data. |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
 
 **Error codes:**
 
@@ -136,6 +139,7 @@ Compresses or re-encodes an image. This API uses a promise to return the result.
 | [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
 | [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
+<a id="packtodata-1"></a>
 ## packToData
 
 ```TypeScript
@@ -169,7 +173,7 @@ Compresses or re-encodes an image. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise used to return the compressed or encoded image data. |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
 
 **Error codes:**
 
@@ -185,6 +189,7 @@ Compresses or re-encodes an image. This API uses a promise to return the result.
 | [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
 | [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
+<a id="packtodatafrompixelmapsequence"></a>
 ## packToDataFromPixelmapSequence
 
 ```TypeScript
@@ -203,14 +208,14 @@ Encodes multiple PixelMap objects into GIF data. This API uses a promise to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pixelmapSequence | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PixelMap> | Yes | PixelMaps to encode. |
+| pixelmapSequence | Array&lt;PixelMap&gt; | Yes | PixelMaps to encode. |
 | options | [PackingOptionsForSequence](arkts-image-image-packingoptionsforsequence-i.md) | Yes | Options for encoding animated images. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise used to return the encoded data. |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the encoded data. |
 
 **Error codes:**
 
@@ -219,6 +224,7 @@ Encodes multiple PixelMap objects into GIF data. This API uses a promise to retu
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types;3.Parameter verification failed. |
 | [7800301](../errorcode-image.md#7800301-encoding-failure) | Failed to encode image. |
 
+<a id="packtofile"></a>
 ## packToFile
 
 ```TypeScript
@@ -240,7 +246,7 @@ Encodes the image source into a file based on the specified encoding parameters.
 | source | [ImageSource](arkts-image-sendableimage-imagesource-i.md) | Yes | Image source to encode. |
 | fd | number | Yes | File descriptor. |
 | options | [PackingOption](arkts-image-image-packingoption-i.md) | Yes | Encoding parameters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -256,6 +262,7 @@ Encodes the image source into a file based on the specified encoding parameters.
 | [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
 | [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
+<a id="packtofile-1"></a>
 ## packToFile
 
 ```TypeScript
@@ -282,7 +289,7 @@ Encodes the image source into a file based on the specified encoding parameters.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -298,6 +305,7 @@ Encodes the image source into a file based on the specified encoding parameters.
 | [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
 | [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
+<a id="packtofile-2"></a>
 ## packToFile
 
 ```TypeScript
@@ -325,7 +333,7 @@ Encodes the PixelMap into a file based on the specified encoding parameters. Thi
 | source | [PixelMap](arkts-image-image-pixelmap-i.md) | Yes | PixelMap to encode. |
 | fd | number | Yes | File descriptor. |
 | options | [PackingOption](arkts-image-image-packingoption-i.md) | Yes | Encoding parameters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -341,6 +349,7 @@ Encodes the PixelMap into a file based on the specified encoding parameters. Thi
 | [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
 | [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
+<a id="packtofile-3"></a>
 ## packToFile
 
 ```TypeScript
@@ -373,7 +382,7 @@ Encodes the PixelMap into a file based on the specified encoding parameters. Thi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -389,6 +398,7 @@ Encodes the PixelMap into a file based on the specified encoding parameters. Thi
 | [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
 | [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
+<a id="packtofile-4"></a>
 ## packToFile
 
 ```TypeScript
@@ -415,7 +425,7 @@ Encodes the Picture into a file based on the specified encoding parameters. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | that returns no value. |
+| Promise&lt;void&gt; | that returns no value. |
 
 **Error codes:**
 
@@ -424,6 +434,7 @@ Encodes the Picture into a file based on the specified encoding parameters. This
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 | [7800301](../errorcode-image.md#7800301-encoding-failure) | Encode failed. |
 
+<a id="packtofilefrompixelmapsequence"></a>
 ## packToFileFromPixelmapSequence
 
 ```TypeScript
@@ -442,7 +453,7 @@ Encodes multiple PixelMaps into a GIF file. This API uses a promise to return th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pixelmapSequence | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PixelMap> | Yes | PixelMaps to encode. |
+| pixelmapSequence | Array&lt;PixelMap&gt; | Yes | PixelMaps to encode. |
 | fd | number | Yes | File descriptor. |
 | options | [PackingOptionsForSequence](arkts-image-image-packingoptionsforsequence-i.md) | Yes | Options for encoding animated images. |
 
@@ -450,7 +461,7 @@ Encodes multiple PixelMaps into a GIF file. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | that returns no value. |
+| Promise&lt;void&gt; | that returns no value. |
 
 **Error codes:**
 
@@ -459,6 +470,7 @@ Encodes multiple PixelMaps into a GIF file. This API uses a promise to return th
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types;3.Parameter verification failed. |
 | [7800301](../errorcode-image.md#7800301-encoding-failure) | Failed to encode image. |
 
+<a id="packing"></a>
 ## packing
 
 ```TypeScript
@@ -485,8 +497,9 @@ Compresses or re-encodes an image. This API uses an asynchronous callback to ret
 | --- | --- | --- | --- |
 | source | [ImageSource](arkts-image-sendableimage-imagesource-i.md) | Yes | Image source to compress or re-encode. |
 | option | [PackingOption](arkts-image-image-packingoption-i.md) | Yes | Encoding parameters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ArrayBuffer> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the compressed or encoded image data; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ArrayBuffer&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the compressed or encoded image data; otherwise, **err** is an error object. |
 
+<a id="packing-1"></a>
 ## packing
 
 ```TypeScript
@@ -518,8 +531,9 @@ Compresses or re-encodes an image. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise used to return the compressed or encoded image data. |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
 
+<a id="packing-2"></a>
 ## packing
 
 ```TypeScript
@@ -552,8 +566,9 @@ Compresses or re-encodes an image. This API uses an asynchronous callback to ret
 | --- | --- | --- | --- |
 | source | [PixelMap](arkts-image-image-pixelmap-i.md) | Yes | PixelMap to compress or re-encode. |
 | option | [PackingOption](arkts-image-image-packingoption-i.md) | Yes | Encoding parameters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ArrayBuffer> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the compressed or encoded image data; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ArrayBuffer&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the compressed or encoded image data; otherwise, **err** is an error object. |
 
+<a id="packing-3"></a>
 ## packing
 
 ```TypeScript
@@ -591,8 +606,9 @@ Compresses or re-encodes an image. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise used to return the compressed or encoded image data. |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
 
+<a id="packing-4"></a>
 ## packing
 
 ```TypeScript
@@ -618,7 +634,7 @@ Compresses or re-encodes an image. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise used to return the compressed or encoded image data. |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
 
 **Error codes:**
 
@@ -627,6 +643,7 @@ Compresses or re-encodes an image. This API uses a promise to return the result.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 | [7800301](../errorcode-image.md#7800301-encoding-failure) | Encode failed. |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -649,8 +666,9 @@ Before releasing the instance, ensure that all asynchronous operations associate
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -673,7 +691,7 @@ Before releasing the instance, ensure that all asynchronous operations associate
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 ## supportedFormats
 
@@ -683,7 +701,7 @@ readonly supportedFormats: Array<string>
 
 Supported formats for image encoding, including jpeg, webp, png, heic<sup>12+</sup>, and gif<sup>18+</sup>. (The supported formats may vary depending on the hardware.)
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 6
 

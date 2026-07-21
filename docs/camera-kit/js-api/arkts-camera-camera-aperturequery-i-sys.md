@@ -16,6 +16,7 @@ Provides the aperture query capability.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getsupportedphysicalapertures"></a>
 ## getSupportedPhysicalApertures
 
 ```TypeScript
@@ -38,7 +39,7 @@ Gets the supported physical apertures.Move to ApertureQuery interface from Apert
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhysicalAperture> | The array of supported physical apertures. |
+| Array&lt;PhysicalAperture&gt; | The array of supported physical apertures. |
 
 **Error codes:**
 
@@ -48,6 +49,7 @@ Gets the supported physical apertures.Move to ApertureQuery interface from Apert
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 and later |
 
+<a id="getsupportedvirtualapertures"></a>
 ## getSupportedVirtualApertures
 
 ```TypeScript
@@ -68,7 +70,7 @@ Obtains the supported virtual apertures.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array of virtual apertures supported. |
+| Array&lt;number&gt; | Array of virtual apertures supported. |
 
 **Error codes:**
 

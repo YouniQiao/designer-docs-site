@@ -6,6 +6,7 @@
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="getauthlockstate"></a>
 ## getAuthLockState
 
 ```TypeScript
@@ -34,7 +35,7 @@ Queries the lockout state of the specified authentication type. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AuthLockState> | Promise used to return the result. An error is reported when the operation fails. |
+| Promise&lt;AuthLockState&gt; | Promise used to return the result. An error is reported when the operation fails. |
 
 **Error codes:**
 

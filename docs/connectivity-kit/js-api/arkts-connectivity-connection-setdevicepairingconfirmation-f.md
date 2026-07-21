@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="setdevicepairingconfirmation"></a>
 ## setDevicePairingConfirmation
 
 ```TypeScript

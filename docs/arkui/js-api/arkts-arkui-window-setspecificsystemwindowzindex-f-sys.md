@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="setspecificsystemwindowzindex"></a>
 ## setSpecificSystemWindowZIndex
 
 ```TypeScript
@@ -37,7 +38,7 @@ You are advised to set different **zIndex** values for different types of window
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

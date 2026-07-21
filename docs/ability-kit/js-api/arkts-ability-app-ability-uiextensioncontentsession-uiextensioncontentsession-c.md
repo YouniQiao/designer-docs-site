@@ -14,6 +14,7 @@ UIExtensionContentSession is the UI operation class for the UIExtensionAbility. 
 import { UIExtensionContentSession } from '@kit.AbilityKit';
 ```
 
+<a id="getuiextensionwindowproxy"></a>
 ## getUIExtensionWindowProxy
 
 ```TypeScript
@@ -83,13 +84,14 @@ struct Extension {
 
 ```
 
+<a id="loadcontent"></a>
 ## loadContent
 
 ```TypeScript
 loadContent(path: string, storage?: LocalStorage): void
 ```
 
-Loads a page for the [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md), with state properties passed to the page through [LocalStorage](../../../../ui/state-management/arkts-localstorage.md).This API is used to load a page in the [onSessionCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1) lifecycle of the UIExtensionAbility.
+Loads a page for the [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md), with state properties passed to the page through [LocalStorage](docroot://ui/state-management/arkts-localstorage.md).This API is used to load a page in the [onSessionCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1) lifecycle of the UIExtensionAbility.
 
 **Since:** 10
 
@@ -103,8 +105,8 @@ Loads a page for the [UIExtensionAbility](arkts-ability-app-ability-uiextensiona
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| path | string | Yes | Path of the page to load. The path is configured using the [pages](../../../../quick-start/module-configuration-file.md#pages) tag in the [module.json5](../../../../quick-start/module-configuration-file.md) file. |
-| storage | [LocalStorage](../../apis-arkui/arkts-apis/arkts-arkui-common-ts-ets-api-localstorage-c.md) | No | A page-level UI state storage unit, which is used to pass state properties to the page. |
+| path | string | Yes | Path of the page to load. The path is configured using the [pages](docroot://quick-start/module-configuration-file.md#pages) tag in the [module.json5](docroot://quick-start/module-configuration-file.md) file. |
+| storage | [LocalStorage](../../apis-arkui/arkts-apis/arkts-arkui-localstorage-c.md) | No | A page-level UI state storage unit, which is used to pass state properties to the page. |
 
 **Error codes:**
 
@@ -140,13 +142,14 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 
 ```
 
+<a id="loadcontentbyname"></a>
 ## loadContentByName
 
 ```TypeScript
 loadContentByName(name: string, storage?: LocalStorage): void
 ```
 
-Loads a [named route](../../../../ui/arkts-routing.md#named-route) page for a [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md), with state properties passed to the page through [LocalStorage](../../../../ui/state-management/arkts-localstorage.md). This API is used to load a named route page in the [onSessionCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1) lifecycle of the UIExtensionAbility.
+Loads a [named route](docroot://ui/arkts-routing.md#named-route) page for a [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md), with state properties passed to the page through [LocalStorage](docroot://ui/state-management/arkts-localstorage.md). This API is used to load a named route page in the [onSessionCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1) lifecycle of the UIExtensionAbility.
 
 **Since:** 18
 
@@ -161,7 +164,7 @@ Loads a [named route](../../../../ui/arkts-routing.md#named-route) page for a [U
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the named route page. |
-| storage | [LocalStorage](../../apis-arkui/arkts-apis/arkts-arkui-common-ts-ets-api-localstorage-c.md) | No | A page-level UI state storage unit, which is used to pass state properties to the page. |
+| storage | [LocalStorage](../../apis-arkui/arkts-apis/arkts-arkui-localstorage-c.md) | No | A page-level UI state storage unit, which is used to pass state properties to the page. |
 
 **Error codes:**
 
@@ -229,6 +232,7 @@ struct UIExtensionPage {
 
 ```
 
+<a id="setwindowprivacymode"></a>
 ## setWindowPrivacyMode
 
 ```TypeScript
@@ -257,7 +261,7 @@ Enables or disables the window privacy mode of the host application. A window in
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -298,6 +302,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 
 ```
 
+<a id="setwindowprivacymode-1"></a>
 ## setWindowPrivacyMode
 
 ```TypeScript
@@ -321,7 +326,7 @@ Enables or disables the window privacy mode of the host application. A window in
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isPrivacyMode | boolean | Yes | Whether to enable the privacy mode. **true** to enable, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the setting is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the setting is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -362,6 +367,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 
 ```
 
+<a id="startabilitybytype"></a>
 ## startAbilityByType
 
 ```TypeScript
@@ -385,10 +391,10 @@ Implicitly starts a given type of UIExtensionAbility. This API uses an asynchron
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of the UIExtensionAbility. For details, see [Starting an Application of the Specified Type](../../../../application-models/start-intent-panel.md#matching-rules). |
-| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Parameters passed for starting the UIExtensionAbility. |
+| type | string | Yes | Type of the UIExtensionAbility. For details, see [Starting an Application of the Specified Type](docroot://application-models/start-intent-panel.md#matching-rules). |
+| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Parameters passed for starting the UIExtensionAbility. |
 | abilityStartCallback | [AbilityStartCallback](arkts-ability-abilitystartcallback-c.md) | Yes | Execution result of starting the UIExtensionAbility. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -439,6 +445,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 
 ```
 
+<a id="startabilitybytype-1"></a>
 ## startAbilityByType
 
 ```TypeScript
@@ -462,15 +469,15 @@ Implicitly starts a given type of UIExtensionAbility. This API uses a promise to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of the UIExtensionAbility. For details, see [Starting an Application of the Specified Type](../../../../application-models/start-intent-panel.md#matching-rules). |
-| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Parameters passed for starting the UIExtensionAbility. |
+| type | string | Yes | Type of the UIExtensionAbility. For details, see [Starting an Application of the Specified Type](docroot://application-models/start-intent-panel.md#matching-rules). |
+| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Parameters passed for starting the UIExtensionAbility. |
 | abilityStartCallback | [AbilityStartCallback](arkts-ability-abilitystartcallback-c.md) | Yes | Execution result of starting the UIExtensionAbility. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -521,6 +528,7 @@ export default class ShareExtAbility extends ShareExtensionAbility {
 
 ```
 
+<a id="terminateself"></a>
 ## terminateSelf
 
 ```TypeScript
@@ -541,7 +549,7 @@ Destroys this UIExtensionAbility and closes the corresponding window of the host
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -584,6 +592,7 @@ struct Index {
 
 ```
 
+<a id="terminateself-1"></a>
 ## terminateSelf
 
 ```TypeScript
@@ -604,7 +613,7 @@ Destroys this UIExtensionAbility and closes the corresponding window of the host
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -641,6 +650,7 @@ struct Index {
 
 ```
 
+<a id="terminateselfwithresult"></a>
 ## terminateSelfWithResult
 
 ```TypeScript
@@ -662,7 +672,7 @@ Destroys this UIExtensionAbility, closes the corresponding window of the host ap
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | parameter | [AbilityResult](arkts-ability-abilityresult-abilityresult-i.md) | Yes | Information returned to the host application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -715,6 +725,7 @@ struct Index {
 
 ```
 
+<a id="terminateselfwithresult-1"></a>
 ## terminateSelfWithResult
 
 ```TypeScript
@@ -741,7 +752,7 @@ Destroys this UIExtensionAbility, closes the corresponding window of the host ap
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

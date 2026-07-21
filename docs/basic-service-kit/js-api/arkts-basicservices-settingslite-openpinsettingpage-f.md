@@ -6,6 +6,7 @@
 import { settingsLite } from '@kit.BasicServicesKit';
 ```
 
+<a id="openpinsettingpage"></a>
 ## openPinSettingPage
 
 ```TypeScript

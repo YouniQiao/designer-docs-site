@@ -30,11 +30,11 @@ import { common } from '@kit.AbilityKit';
 | [AgentHostProxy](arkts-ability-common-agenthostproxy-t.md) | The AgentHostProxy is a proxy object for the client connected to the Agent, through which it can communicate with the Agent's connection counterpart. |
 | [AgentProvider](arkts-ability-common-agentprovider-t.md) | The Provider in an AgentCard refers to the organization or platform that issues and manages the agent's credentials. |
 | [AgentSkill](arkts-ability-common-agentskill-t.md) | Skills in an AgentCard represent the specific abilities, expertise, and proficiencies that an agent possesses for performing tasks or solving problems. |
-| [AppServiceExtensionContext](arkts-ability-common-appserviceextensioncontext-t.md) | Defines the context environment for the [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md). It inherits from Context. |
+| [AppServiceExtensionContext](arkts-ability-common-appserviceextensioncontext-t.md) | Defines the context environment for the [AppServiceExtensionAbility](docroot://reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md). It inherits from Context. |
 | [ApplicationContext](arkts-ability-common-applicationcontext-t.md) | Defines the application context. It inherits from Context. |
 | [BaseContext](arkts-ability-common-basecontext-t.md) | Defines the parent class of all context types. |
 | [ConnectOptions](arkts-ability-common-connectoptions-t.md) | Defines the connection options. It is used as an input parameter for connection to a background service, to receive the connection status with the background service. |
-| [Context](arkts-ability-common-context-t.md) | Defines the context base class for the [stage model](../../../../application-models/ability-terminology.md#stage-model). |
+| [Context](arkts-ability-common-context-t.md) | Defines the context base class for the [stage model](docroot://application-models/ability-terminology.md#stage-model). |
 | [EmbeddableUIAbilityContext](arkts-ability-common-embeddableuiabilitycontext-t.md) | Defines the context environment for the [EmbeddableUIAbility](arkts-ability-app-ability-embeddableuiability-embeddableuiability-c.md). It inherits from Context. |
 | [EventHub](arkts-ability-common-eventhub-t.md) | Defines EventHub, which is an event communication mechanism based on the publish-subscribe pattern. |
 | [ExtensionContext](arkts-ability-common-extensioncontext-t.md) | Defines the context environment for the [ExtensionAbility](arkts-ability-app-ability-extensionability-extensionability-c.md). It inherits from Context. |

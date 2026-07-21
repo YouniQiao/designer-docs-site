@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="getshownumber"></a>
 ## getShowNumber
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the SIM card number of the specified card slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the SIM card number. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the SIM card number. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sim.getShowNumber(0, (err: BusinessError, data: string) => {
 ```
 
 
+<a id="getshownumber-1"></a>
 ## getShowNumber
 
 ```TypeScript
@@ -85,7 +87,7 @@ Get the SIM card number of the specified card slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the SIM card number. |
+| Promise&lt;string&gt; | Returns the SIM card number. |
 
 **Error codes:**
 

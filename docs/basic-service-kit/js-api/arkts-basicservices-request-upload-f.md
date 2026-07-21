@@ -6,6 +6,7 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="upload"></a>
 ## upload
 
 ```TypeScript
@@ -18,7 +19,7 @@ Uploads a file. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** uploadFile(context:
+**Substitutes:** [uploadFile(context:](arkts-basicservices-request-uploadfile-f.md#uploadfile-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -33,7 +34,7 @@ Uploads a file. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [UploadConfig](arkts-basicservices-request-uploadconfig-i.md) | Yes | Upload configurations. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<UploadTask> | Yes | Callback used to return the **UploadTask** object. If the operation is successful, **err** is **undefined**, and **data** is the **UploadTask** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;UploadTask&gt; | Yes | Callback used to return the **UploadTask** object. If the operation is successful, **err** is **undefined**, and **data** is the **UploadTask** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ request.upload(uploadConfig, (err: BusinessError, data: request.UploadTask) => {
 ```
 
 
+<a id="upload-1"></a>
 ## upload
 
 ```TypeScript
@@ -75,7 +77,7 @@ Uploads a file. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** uploadFile(context:
+**Substitutes:** [uploadFile(context:](arkts-basicservices-request-uploadfile-f.md#uploadfile-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -95,7 +97,7 @@ Uploads a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UploadTask> | Promise used to return the **UploadTask** object. |
+| Promise&lt;UploadTask&gt; | Promise used to return the **UploadTask** object. |
 
 **Error codes:**
 

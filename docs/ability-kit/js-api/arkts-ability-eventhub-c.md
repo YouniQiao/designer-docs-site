@@ -1,6 +1,6 @@
 # EventHub
 
-EventHub is an event communication mechanism based on the publish-subscribe pattern. It decouples senders and subscribers through event names, supporting efficient data transfer and state synchronization between different service modules.It is primarily used for [data communication between UIAbility components and UI pages](../../../../application-models/uiability-data-sync-with-ui.md).Different Context objects have different EventHub objects, and different EventHub objects cannot communicate directly with each other. Event subscription, unsubscription, and triggering all take place on a specific EventHub object.Since Worker and TaskPool implement [multithreaded concurrency](../../../../arkts-utils/multi-thread-concurrency-overview.md#multithreaded-concurrency-models)through the actor model, where different virtual machine instances have exclusive memory, EventHub objects cannot be used for inter-thread data communication.
+EventHub is an event communication mechanism based on the publish-subscribe pattern. It decouples senders and subscribers through event names, supporting efficient data transfer and state synchronization between different service modules.It is primarily used for [data communication between UIAbility components and UI pages](docroot://application-models/uiability-data-sync-with-ui.md).Different Context objects have different EventHub objects, and different EventHub objects cannot communicate directly with each other. Event subscription, unsubscription, and triggering all take place on a specific EventHub object.Since Worker and TaskPool implement [multithreaded concurrency](docroot://arkts-utils/multi-thread-concurrency-overview.md#multithreaded-concurrency-models)through the actor model, where different virtual machine instances have exclusive memory, EventHub objects cannot be used for inter-thread data communication.
 
 **Since:** 9
 
@@ -8,6 +8,7 @@ EventHub is an event communication mechanism based on the publish-subscribe patt
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="emit"></a>
 ## emit
 
 ```TypeScript
@@ -31,7 +32,7 @@ Trigger the event callbacks.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | string | Yes | Indicates the event. |
-| args | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md)[] | Yes | Indicates the callback arguments. |
+| args | Object[] | Yes | Indicates the callback arguments. |
 
 **Error codes:**
 
@@ -39,6 +40,7 @@ Trigger the event callbacks.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -65,7 +67,7 @@ Unsubscribes from an event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | string | Yes | Event name. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | No | Callback for the event. If **callback** is unspecified, the given event with all callbacks is unsubscribed. |
+| callback | Function | No | Callback for the event. If **callback** is unspecified, the given event with all callbacks is unsubscribed. |
 
 **Error codes:**
 
@@ -73,6 +75,7 @@ Unsubscribes from an event.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -101,7 +104,7 @@ Subscribes to an event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | string | Yes | Event name. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Callback invoked when the event is triggered. |
+| callback | Function | Yes | Callback invoked when the event is triggered. |
 
 **Error codes:**
 

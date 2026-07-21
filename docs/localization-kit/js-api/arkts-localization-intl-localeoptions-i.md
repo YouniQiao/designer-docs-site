@@ -5,7 +5,7 @@ Options for initializing the **Locale** object. Since API version 9, the **Local
 > **NOTE**  
 >  
 > - For details about **calendar**, see Table 1 in  
-> [Calendar Setting](../../../../internationalization/i18n-calendar.md).
+> [Calendar Setting](docroot://internationalization/i18n-calendar.md).
 
 **Since:** 6
 

@@ -21,13 +21,13 @@ The type of conversion result function.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| this | ISendable | Yes | The ISendable to which the parsed key value pair belongs. |
-| key | string | Yes | Attribute name. |
-| value | ISendable \| undefined \| null | Yes | The value of the parsed key value pair. |
+| this | [ISendable](arkts-arkts-ason-isendable-t.md) | Yes | The ISendable to which the parsed key value pair belongs.  |
+| key | string | Yes | Attribute name.  |
+| value | [ISendable](arkts-arkts-ason-isendable-t.md) \| undefined \| null | Yes | The value of the parsed key value pair.  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| ISendable \| undefined \| null | Return the modified ISendable or undefined or null. |
+| [ISendable](arkts-arkts-ason-isendable-t.md) \| undefined \| null | Return the modified ISendable or undefined or null.  |
 

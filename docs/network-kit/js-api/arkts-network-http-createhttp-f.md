@@ -6,6 +6,7 @@
 import { http } from '@kit.NetworkKit';
 ```
 
+<a id="createhttp"></a>
 ## createHttp
 
 ```TypeScript

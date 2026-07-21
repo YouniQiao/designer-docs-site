@@ -14,6 +14,7 @@ Class ThemeControl provides the Theme management for whole Ability and pages.
 import { CustomColors, ThemeControl, Colors, CustomDarkColors, Theme, CustomTheme } from '@kit.ArkUI';
 ```
 
+<a id="setdefaulttheme"></a>
 ## setDefaultTheme
 
 ```TypeScript

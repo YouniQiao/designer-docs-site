@@ -6,6 +6,7 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
+<a id="uninstallusercertificate"></a>
 ## uninstallUserCertificate
 
 ```TypeScript
@@ -35,7 +36,7 @@ Uninstalls a user certificate. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. An error object is thrown when a user certificate fails to be uninstalled. |
+| Promise&lt;void&gt; | Promise that returns no value. An error object is thrown when a user certificate fails to be uninstalled. |
 
 **Error codes:**
 

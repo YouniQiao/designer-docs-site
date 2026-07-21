@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="gettopnavdestinationname"></a>
 ## getTopNavDestinationName
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the name of [NavDestination](NavDestination) in the current top-level [N
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the [NavDestination](NavDestination) name obtained.<br>If there are nested [Navigation](Navigation) components or multiple [Navigation](Navigation) components on the current page, the information of the most recently created [Navigation](Navigation) component is queried.<br>If the page does not have the [Navigation](Navigation) component or the [Navigation](Navigation) component does not have [NavDestination](NavDestination), an empty string is returned. |
+| Promise&lt;string&gt; | Promise used to return the [NavDestination](NavDestination) name obtained.<br>If there are nested [Navigation](Navigation) components or multiple [Navigation](Navigation) components on the current page, the information of the most recently created [Navigation](Navigation) component is queried.<br>If the page does not have the [Navigation](Navigation) component or the [Navigation](Navigation) component does not have [NavDestination](NavDestination), an empty string is returned. |
 
 **Error codes:**
 

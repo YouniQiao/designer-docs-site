@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="querykey"></a>
 ## queryKey
 
 ```TypeScript
@@ -18,7 +19,7 @@ Queries the key of a contact based on the specified contact ID. This API uses an
 
 **Deprecated since:** 10
 
-**Substitutes:** queryKey(context:
+**Substitutes:** [queryKey(context:](arkts-contacts-contact-querykey-f.md#querykey-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -31,7 +32,7 @@ Queries the key of a contact based on the specified contact ID. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | id | number | Yes | Contact ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, the key of the queried contact is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, the key of the queried contact is returned. If the operation fails, an error code is returned. |
 
 **Example**
 
@@ -50,6 +51,7 @@ contact.queryKey(1, (err: BusinessError, data) => {
 ```
 
 
+<a id="querykey-1"></a>
 ## queryKey
 
 ```TypeScript
@@ -72,7 +74,7 @@ Queries the key of a contact based on the specified contact ID. This API uses an
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | id | number | Yes | Contact ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, the key of the queried contact is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, the key of the queried contact is returned. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -103,6 +105,7 @@ contact.queryKey(context, 1, (err: BusinessError, data) => {
 ```
 
 
+<a id="querykey-2"></a>
 ## queryKey
 
 ```TypeScript
@@ -115,7 +118,7 @@ Queries the key of a contact based on the specified contact ID and holder. This 
 
 **Deprecated since:** 10
 
-**Substitutes:** queryKey(context:
+**Substitutes:** [queryKey(context:](arkts-contacts-contact-querykey-f.md#querykey-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -129,7 +132,7 @@ Queries the key of a contact based on the specified contact ID and holder. This 
 | --- | --- | --- | --- |
 | id | number | Yes | Contact ID. |
 | holder | [Holder](arkts-contacts-contact-holder-c.md) | Yes | Application that creates the contacts.If the passed parameter is empty, the system contact application is used by default. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, the key of the queried contact is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, the key of the queried contact is returned. If the operation fails, an error code is returned. |
 
 **Example**
 
@@ -152,6 +155,7 @@ contact.queryKey(1, {
 ```
 
 
+<a id="querykey-3"></a>
 ## queryKey
 
 ```TypeScript
@@ -175,7 +179,7 @@ Queries the key of a contact based on the specified contact ID and holder. This 
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | id | number | Yes | Contact ID. |
 | holder | [Holder](arkts-contacts-contact-holder-c.md) | Yes | Application that creates the contacts.If the passed parameter is empty, the system contact application is used by default. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, the key of the queried contact is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, the key of the queried contact is returned. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -210,6 +214,7 @@ contact.queryKey(context, 1, {
 ```
 
 
+<a id="querykey-4"></a>
 ## queryKey
 
 ```TypeScript
@@ -222,7 +227,7 @@ Queries the key of a contact based on the specified contact ID and holder. This 
 
 **Deprecated since:** 10
 
-**Substitutes:** queryKey(context:
+**Substitutes:** [queryKey(context:](arkts-contacts-contact-querykey-f.md#querykey-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -241,7 +246,7 @@ Queries the key of a contact based on the specified contact ID and holder. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result, which is the key of the queried contact. |
+| Promise&lt;string&gt; | Promise used to return the result, which is the key of the queried contact. |
 
 **Example**
 
@@ -260,6 +265,7 @@ promise.then((data) => {
 ```
 
 
+<a id="querykey-5"></a>
 ## queryKey
 
 ```TypeScript
@@ -288,7 +294,7 @@ Queries the key of a contact based on the specified contact ID and holder. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result, which is the key of the queried contact. |
+| Promise&lt;string&gt; | Promise used to return the result, which is the key of the queried contact. |
 
 **Error codes:**
 

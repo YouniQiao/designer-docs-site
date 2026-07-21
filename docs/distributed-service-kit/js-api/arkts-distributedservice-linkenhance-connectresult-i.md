@@ -44,7 +44,7 @@ Number indicating the result code. If the connection is successful, **0** is ret
 - 32390201: The server service is not started.  
 - 32390300: Internal error.
 
-For details about the error codes, see [Link Enhancement Error Codes](../../../../reference/apis-distributedservice-kit/errorcode-link-enhance.md).
+For details about the error codes, see [Link Enhancement Error Codes](docroot://reference/apis-distributedservice-kit/errorcode-link-enhance.md).
 
 **Type:** number
 

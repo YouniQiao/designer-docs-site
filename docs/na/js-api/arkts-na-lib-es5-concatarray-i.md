@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface ConcatArray<T>--><!--Device-unnamed-interface ConcatArray<T>-End-->
 
+<a id="join"></a>
 ## join
 
 ```TypeScript
@@ -22,6 +23,7 @@ join(separator?: string): string
 | --- | --- |
 | string |  |
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript

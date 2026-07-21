@@ -6,6 +6,7 @@
 import { continuationManager } from '@kit.AbilityKit';
 ```
 
+<a id="updateconnectstatus"></a>
 ## updateConnectStatus
 
 ```TypeScript
@@ -48,7 +49,7 @@ Instructs the device selection module to update the device connection state. Thi
 | token | number | Yes | Token obtained after the registration of the continuation management service. |
 | deviceId | string | Yes | Device ID. |
 | status | [DeviceConnectState](arkts-ability-continuationmanager-deviceconnectstate-e.md) | Yes | Device connection state. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the state is updated, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the state is updated, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Example**
 
@@ -68,6 +69,7 @@ continuationManager.updateConnectStatus(token, deviceId, continuationManager.Dev
 ```
 
 
+<a id="updateconnectstatus-1"></a>
 ## updateConnectStatus
 
 ```TypeScript
@@ -100,7 +102,7 @@ Instructs the device selection module to update the device connection state. Thi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 

@@ -12,6 +12,7 @@ UIServiceExtensionConnectCallback provides callbacks for the connection to a UIS
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="ondata"></a>
 ## onData
 
 ```TypeScript
@@ -23,7 +24,7 @@ Called to receive data when a connection to the UIServiceExtensionAbility is est
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -39,8 +40,9 @@ Called to receive data when a connection to the UIServiceExtensionAbility is est
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Data about the UIServiceExtensionAbility connection. |
+| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Data about the UIServiceExtensionAbility connection. |
 
+<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript
@@ -52,7 +54,7 @@ Called when the connection to the UIServiceExtensionAbility is interrupted.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 14
 

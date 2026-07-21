@@ -14,6 +14,7 @@ The module provides the context for intent execution. It is used as a property i
 import { InsightIntentContext } from '@kit.AbilityKit';
 ```
 
+<a id="setreturnmodeforuiabilityforeground"></a>
 ## setReturnModeForUIAbilityForeground
 
 ```TypeScript
@@ -88,6 +89,7 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
 
 ```
 
+<a id="setreturnmodeforuiextensionability"></a>
 ## setReturnModeForUIExtensionAbility
 
 ```TypeScript
@@ -161,6 +163,7 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
 
 ```
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -184,7 +187,7 @@ Starts a UIAbility. This API can only be used to start UIAbility components with
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information for starting the UIAbility. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -246,6 +249,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 
 ```
 
+<a id="startability-1"></a>
 ## startAbility
 
 ```TypeScript
@@ -274,7 +278,7 @@ Starts a UIAbility. This API can only be used to start UIAbility components with
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

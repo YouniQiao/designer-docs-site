@@ -18,6 +18,7 @@ NotificationSubscriberExtensionAbility is the base class for notification subscr
 import { NotificationSubscriberExtensionAbility } from '@kit.NotificationKit';
 ```
 
+<a id="oncancelmessages"></a>
 ## onCancelMessages
 
 ```TypeScript
@@ -38,7 +39,7 @@ Called when notifications are canceled.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hashCodes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of hash codes representing the notifications to be canceled. |
+| hashCodes | Array&lt;string&gt; | Yes | Array of hash codes representing the notifications to be canceled. |
 
 **Example**
 
@@ -53,6 +54,7 @@ export default class NotificationSubscriberExtAbility extends NotificationSubscr
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -82,6 +84,7 @@ export default class NotificationSubscriberExtAbility extends NotificationSubscr
 
 ```
 
+<a id="onreceivemessage"></a>
 ## onReceiveMessage
 
 ```TypeScript

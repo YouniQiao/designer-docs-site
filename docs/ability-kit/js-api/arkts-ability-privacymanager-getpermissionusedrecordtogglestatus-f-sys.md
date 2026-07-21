@@ -6,6 +6,7 @@
 import { privacyManager } from '@kit.AbilityKit';
 ```
 
+<a id="getpermissionusedrecordtogglestatus"></a>
 ## getPermissionUsedRecordToggleStatus
 
 ```TypeScript
@@ -28,7 +29,7 @@ A system application can call this API to obtain the current user's permission u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the switch status value of the current user is on, and **false** indicates that the switch status value of the current user is off. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the switch status value of the current user is on, and **false** indicates that the switch status value of the current user is off. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ privacyManager.getPermissionUsedRecordToggleStatus().then((status) => {
 ```
 
 
+<a id="getpermissionusedrecordtogglestatus-1"></a>
 ## getPermissionUsedRecordToggleStatus
 
 ```TypeScript
@@ -90,7 +92,7 @@ A system application can call this API to obtain the permission usage record tog
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the toggle is enabled for the specified sub-profile, and **false** indicates that it is disabled. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the toggle is enabled for the specified sub-profile, and **false** indicates that it is disabled. |
 
 **Error codes:**
 

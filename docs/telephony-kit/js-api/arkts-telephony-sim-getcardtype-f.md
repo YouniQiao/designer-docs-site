@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="getcardtype"></a>
 ## getCardType
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the type of the SIM card installed in a specified slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from {@code 0} to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CardType> | Yes | Indicates the callback for getting the SIM card type. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CardType&gt; | Yes | Indicates the callback for getting the SIM card type. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ sim.getCardType(0, (err: BusinessError, data: sim.CardType) => {
 ```
 
 
+<a id="getcardtype-1"></a>
 ## getCardType
 
 ```TypeScript
@@ -75,7 +77,7 @@ Obtains the type of the SIM card installed in a specified slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CardType> | Returns the SIM card type. |
+| Promise&lt;CardType&gt; | Returns the SIM card type. |
 
 **Error codes:**
 

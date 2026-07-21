@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getsystemnetportstates"></a>
 ## getSystemNetPortStates
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the port states of system network.To invoke this method, you must have t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetPortStatesInfo> | Returns the port status of system network. |
+| Promise&lt;NetPortStatesInfo&gt; | Returns the port status of system network. |
 
 **Error codes:**
 

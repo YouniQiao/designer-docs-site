@@ -1,6 +1,6 @@
 # HashStream
 
-The **HashStream** class is a utility for creating a message digest of data. You can use [createHash](../../../../reference/apis-core-file-kit/js-apis-file-hash.md#hashcreatehash12) to create a **HashStream** instance.
+The **HashStream** class is a utility for creating a message digest of data. You can use [createHash](docroot://reference/apis-core-file-kit/js-apis-file-hash.md#hashcreatehash12) to create a **HashStream** instance.
 
 **Inheritance/Implementation:** HashStream extends [stream.Transform](../../apis-arkts/arkts-apis/arkts-arkts-stream-transform-c.md)
 
@@ -16,6 +16,7 @@ The **HashStream** class is a utility for creating a message digest of data. You
 import { hash } from '@kit.CoreFileKit';
 ```
 
+<a id="digest"></a>
 ## digest
 
 ```TypeScript
@@ -56,6 +57,7 @@ console.info(`hashResult: ${hashResult}`);
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -74,7 +76,7 @@ Updates the data for generating a message digest. This API can be called multipl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Data to be calculated. |
+| data | ArrayBuffer | Yes | Data to be calculated. |
 
 **Error codes:**
 

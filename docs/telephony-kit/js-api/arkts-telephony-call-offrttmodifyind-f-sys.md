@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="offrttmodifyind"></a>
 ## offRttModifyInd
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe from the rtt modify indication.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RttEventInfo> | No | Indicates the callback for getting the rtt event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RttEventInfo&gt; | No | Indicates the callback for getting the rtt event. |
 
 **Error codes:**
 

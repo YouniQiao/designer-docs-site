@@ -14,6 +14,7 @@ Manages GATT client. Before calling an Gatt client method, you must use {@link c
 import { ble } from '@kit.ConnectivityKit';
 ```
 
+<a id="writecharacteristicvaluewithcontext"></a>
 ## writeCharacteristicValueWithContext
 
 ```TypeScript
@@ -48,7 +49,7 @@ Writes the characteristic of a BLE peripheral device with context.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GattRspContext> | Promise used to return the result. |
+| Promise&lt;GattRspContext&gt; | Promise used to return the result. |
 
 **Error codes:**
 

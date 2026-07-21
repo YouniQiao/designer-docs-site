@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="cancelprintjob"></a>
 ## cancelPrintJob
 
 ```TypeScript
@@ -29,7 +30,7 @@ Cancels the specified print job, which is on the print queue of the printer. Thi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | jobId | string | Yes | Print job ID. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ print.cancelPrintJob(jobId, (err: BusinessError) => {
 ```
 
 
+<a id="cancelprintjob-1"></a>
 ## cancelPrintJob
 
 ```TypeScript
@@ -85,7 +87,7 @@ Cancels the specified print job, which is on the print queue of the printer. Thi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

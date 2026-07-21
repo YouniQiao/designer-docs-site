@@ -33,8 +33,7 @@ readonly property: Record<string, string | number | Vec2 | Vec3 | Vec4 | SceneRe
 
 Component properties
 
-**Type:** Record<string, string | number | Vec2 | Vec3 | Vec4 | SceneResource | boolean | number[] |
-  string[] | SceneResource[] | Vec2[] | Vec3[] | Vec4[] | null | undefined>
+**Type:** Record&lt;string, string \| number \| Vec2 \| Vec3 \| Vec4 \| SceneResource \| boolean \| number[] \|   string[] \| SceneResource[] \| Vec2[] \| Vec3[] \| Vec4[] \| null \| undefined&gt;
 
 **Since:** 20
 

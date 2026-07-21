@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="setifaceconfig"></a>
 ## setIfaceConfig
 
 ```TypeScript
@@ -30,7 +31,7 @@ Set the specified network interface parameters.
 | --- | --- | --- | --- |
 | iface | string | Yes | Indicates the network interface name of the network parameter. |
 | ic | [InterfaceConfiguration](arkts-network-ethernet-interfaceconfiguration-i-sys.md) | Yes | Indicates the ic. See {@link InterfaceConfiguration}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setIfaceConfig. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setIfaceConfig. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ ethernet.setIfaceConfig("eth0", config, (error: BusinessError) => {
 ```
 
 
+<a id="setifaceconfig-1"></a>
 ## setIfaceConfig
 
 ```TypeScript
@@ -102,7 +104,7 @@ Set the specified network interface parameters.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

@@ -8,6 +8,7 @@ Defines the 3d scene.
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="clonenode"></a>
 ## cloneNode
 
 ```TypeScript
@@ -36,6 +37,7 @@ clone a node or a subtree whose root node is the input node
 | --- | --- |
 | [Node](arkts-arkgraphics3d-scenenodes-node-i.md) | the clone result, return null if clone is failed. |
 
+<a id="createcomponent"></a>
 ## createComponent
 
 ```TypeScript
@@ -61,8 +63,9 @@ Create a new component.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SceneComponent> | - The newly added component. |
+| Promise&lt;SceneComponent&gt; | - The newly added component. |
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -77,6 +80,7 @@ Release all native scene resources. All TS references will be undefined.
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="getcomponent"></a>
 ## getComponent
 
 ```TypeScript
@@ -104,6 +108,7 @@ Get component by name.
 | --- | --- |
 | [SceneComponent](arkts-arkgraphics3d-scene-scenecomponent-i.md) | @syscap SystemCapability.ArkUi.Graphics3D |
 
+<a id="getdefaultrendercontext"></a>
 ## getDefaultRenderContext
 
 ```TypeScript
@@ -124,6 +129,7 @@ Get default render context
 | --- | --- |
 | [RenderContext](arkts-arkgraphics3d-scene-rendercontext-i.md) | -- The default RenderContext instance@static |
 
+<a id="getnodebypath"></a>
 ## getNodeByPath
 
 ```TypeScript
@@ -151,6 +157,7 @@ Get a node by path.
 | --- | --- |
 | [Node](arkts-arkgraphics3d-scenenodes-node-i.md) | if the node is found by it's path |
 
+<a id="getresourcefactory"></a>
 ## getResourceFactory
 
 ```TypeScript
@@ -171,6 +178,7 @@ Get resource factory.
 | --- | --- |
 | [SceneResourceFactory](arkts-arkgraphics3d-scene-sceneresourcefactory-i.md) | if the node is found by it's path |
 
+<a id="importnode"></a>
 ## importNode
 
 ```TypeScript
@@ -191,7 +199,7 @@ Import node into the scene. The original node may come from separate Scene.The n
 | --- | --- | --- | --- |
 | name | string | Yes | The name of the newly created node. |
 | node | [Node](arkts-arkgraphics3d-scenenodes-node-i.md) | Yes | The node to be imported. |
-| parent | Node \| null | Yes | The parent node or null for root |
+| parent | [Node](arkts-arkgraphics3d-scenenodes-node-i.md) \| null | Yes | The parent node or null for root |
 
 **Return value:**
 
@@ -199,6 +207,7 @@ Import node into the scene. The original node may come from separate Scene.The n
 | --- | --- |
 | [Node](arkts-arkgraphics3d-scenenodes-node-i.md) | The newly created node. |
 
+<a id="importscene"></a>
 ## importScene
 
 ```TypeScript
@@ -219,7 +228,7 @@ Import scene into the scene as a node. The node hierarchy will appear under the 
 | --- | --- | --- | --- |
 | name | string | Yes | The name of the newly created node |
 | scene | [Scene](arkts-arkgraphics3d-scene-c.md) | Yes | The scene to be imported. |
-| parent | Node \| null | Yes | The parent node or null for root |
+| parent | [Node](arkts-arkgraphics3d-scenenodes-node-i.md) \| null | Yes | The parent node or null for root |
 
 **Return value:**
 
@@ -227,6 +236,7 @@ Import scene into the scene as a node. The node hierarchy will appear under the 
 | --- | --- |
 | [Node](arkts-arkgraphics3d-scenenodes-node-i.md) | The newly created node. |
 
+<a id="load"></a>
 ## load
 
 ```TypeScript
@@ -251,8 +261,9 @@ Create a new scene from a ResourceStr.If uri is not provided, will return an emp
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Scene> | promise a scene@static |
+| Promise&lt;Scene&gt; | promise a scene@static |
 
+<a id="renderframe"></a>
 ## renderFrame
 
 ```TypeScript

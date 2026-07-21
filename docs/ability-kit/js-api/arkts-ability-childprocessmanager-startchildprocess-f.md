@@ -6,13 +6,14 @@
 import { childProcessManager } from '@kit.AbilityKit';
 ```
 
+<a id="startchildprocess"></a>
 ## startChildProcess
 
 ```TypeScript
 function startChildProcess(srcEntry: string, startMode: StartMode): Promise<number>
 ```
 
-Starts an [ArkTS child process](../../../../application-models/ability-terminology.md#arkts-child-process). This API uses a promise to return the result.This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 16000061 is returned.
+Starts an [ArkTS child process](docroot://application-models/ability-terminology.md#arkts-child-process). This API uses a promise to return the result.This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 16000061 is returned.
 
 > **NOTE**  
 >  
@@ -42,7 +43,7 @@ Starts an [ArkTS child process](../../../../application-models/ability-terminolo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the PID of the child process. |
+| Promise&lt;number&gt; | Promise used to return the PID of the child process. |
 
 **Error codes:**
 
@@ -90,13 +91,14 @@ try {
 ```
 
 
+<a id="startchildprocess-1"></a>
 ## startChildProcess
 
 ```TypeScript
 function startChildProcess(srcEntry: string, startMode: StartMode, callback: AsyncCallback<number>): void
 ```
 
-Starts an [ArkTS child process](../../../../application-models/ability-terminology.md#arkts-child-process). This API uses an asynchronous callback to return the result.This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 16000061 is returned.
+Starts an [ArkTS child process](docroot://application-models/ability-terminology.md#arkts-child-process). This API uses an asynchronous callback to return the result.This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 16000061 is returned.
 
 > **NOTE**  
 >  
@@ -121,7 +123,7 @@ Starts an [ArkTS child process](../../../../application-models/ability-terminolo
 | --- | --- | --- | --- |
 | srcEntry | string | Yes | Path of the source file of the child process relative to the root directory **src/main**.The source file can be stored only in the module of the entry type. For example, if the source file of a child process is **src/main/ets/process/DemoProcess.ets** in the entry module, then **srcEntry** is **./ets/process/DemoProcess.ets**.<br>In addition, ensure that the source file of the child process is referenced by other files to prevent it from being optimized by the build tool. (For details, see the sample code below.) |
 | startMode | [StartMode](arkts-ability-childprocessmanager-startmode-e.md) | Yes | Start mode of the child process. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the subprocess is started, **err** is **undefined** and **data** is the PID of the child process. Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the subprocess is started, **err** is **undefined** and **data** is the PID of the child process. Otherwise, **data** is an error object. |
 
 **Error codes:**
 

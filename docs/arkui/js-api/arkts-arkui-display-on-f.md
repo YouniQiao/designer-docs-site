@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="on"></a>
 ## on('add' | 'remove' | 'change')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Subscribes to display changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'add' \| 'remove' \| 'change' | Yes | Event type.<br>- **add**, indicating the display addition event.Example: event that a display is connected.<br>- **remove**, indicating the display removal event. Example:event that a display is disconnected.<br>- **change**, indicating the display change event. Example: event that the display orientation is changed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the ID of the display, which is an integer. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the ID of the display, which is an integer. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ display.on('add', callback);
 ```
 
 
+<a id="on-1"></a>
 ## on('add' | 'remove' | 'change')
 
 ```TypeScript
@@ -70,7 +72,7 @@ Subscribes to display changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'add' \| 'remove' \| 'change' | Yes | Event type.<br>- **add**, indicating the display addition event.Example: event that a display is connected.<br>- **remove**, indicating the display removal event. Example:event that a display is disconnected.<br>- **change**, indicating the display change event. Example: event that the display orientation is changed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the ID of the display, which is an integer. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the ID of the display, which is an integer. |
 
 **Error codes:**
 
@@ -92,6 +94,7 @@ display.on('add', callback);
 ```
 
 
+<a id="on-2"></a>
 ## on('add' | 'remove' | 'change')
 
 ```TypeScript
@@ -113,7 +116,7 @@ Subscribes to display changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'add' \| 'remove' \| 'change' | Yes | Event type.<br>- **add**, indicating the display addition event.Example: event that a display is connected.<br>- **remove**, indicating the display removal event. Example:event that a display is disconnected.<br>- **change**, indicating the display change event. Example: event that the display orientation is changed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the ID of the display, which is an integer. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the ID of the display, which is an integer. |
 
 **Error codes:**
 
@@ -135,6 +138,7 @@ display.on('add', callback);
 ```
 
 
+<a id="on-3"></a>
 ## on('foldStatusChange')
 
 ```TypeScript
@@ -143,11 +147,11 @@ function on(type: 'foldStatusChange', callback: Callback<FoldStatus>): void
 
 Subscribes to fold status change events of the foldable device.
 
-To subscribe to display mode change events of foldable devices, use [display.on('foldDisplayModeChange')](arkts-arkui-display-on-f.md#on-8).
+To subscribe to display mode change events of foldable devices, use [display.on('foldDisplayModeChange')](display.on(type: 'foldDisplayModeChange', callback: Callback<FoldDisplayMode>)).
 
 The two are different. In terms of timing, the fold status changes first, and the bottom layer matches the display mode status based on the fold status.
 
-To check whether the content is displayed on the inner or outer screen of the foldable device, use [display.on('foldDisplayModeChange')](arkts-arkui-display-on-f.md#on-8).
+To check whether the content is displayed on the inner or outer screen of the foldable device, use [display.on('foldDisplayModeChange')](display.on(type: 'foldDisplayModeChange', callback: Callback<FoldDisplayMode>)).
 
 **Since:** 10
 
@@ -162,7 +166,7 @@ To check whether the content is displayed on the inner or outer screen of the fo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'foldStatusChange' | Yes | Event type. The event **'foldStatusChange'** is triggered when the fold status of the device changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FoldStatus> | Yes | Callback used to return the fold status. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FoldStatus&gt; | Yes | Callback used to return the fold status. |
 
 **Error codes:**
 
@@ -188,6 +192,7 @@ display.on('foldStatusChange', callback);
 ```
 
 
+<a id="on-4"></a>
 ## on('foldAngleChange')
 
 ```TypeScript
@@ -209,7 +214,7 @@ Subscribes to folding angle change events of the foldable device. Note that ther
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'foldAngleChange' | Yes | Event type. The event **'foldAngleChange'** is triggered when the folding angle of the device changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<Array<number>> | Yes | Callback used to return the folding angle (0�C180 degrees). For dual-fold axis devices, the array contains two angles. The first value represents the folding angle of the first fold axis, while the second value represents the folding angle of the second fold axis. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the folding angle (0�C180 degrees). For dual-fold axis devices, the array contains two angles. The first value represents the folding angle of the first fold axis, while the second value represents the folding angle of the second fold axis. |
 
 **Error codes:**
 
@@ -231,6 +236,7 @@ display.on('foldAngleChange', callback);
 ```
 
 
+<a id="on-5"></a>
 ## on('captureStatusChange')
 
 ```TypeScript
@@ -252,7 +258,7 @@ Subscribes to events indicating whether the device's screen content is being cap
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'captureStatusChange' | Yes | Event type. The event **'captureStatusChange'** is triggered when the screen capture status changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback used to return the result indicating whether the device's screen content is being captured. **true** is returned when screen content is being captured (including active screen capture, casting, recording, or the creation of a virtual screen that could be captured). **false** is returned when screen content is no longer being captured. In the case of screen capture, **true** is returned only once. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result indicating whether the device's screen content is being captured. **true** is returned when screen content is being captured (including active screen capture, casting, recording, or the creation of a virtual screen that could be captured). **false** is returned when screen content is no longer being captured. In the case of screen capture, **true** is returned only once. |
 
 **Error codes:**
 
@@ -274,6 +280,7 @@ display.on('captureStatusChange', callback);
 ```
 
 
+<a id="on-6"></a>
 ## on('foldDisplayModeChange')
 
 ```TypeScript
@@ -282,7 +289,7 @@ function on(type: 'foldDisplayModeChange', callback: Callback<FoldDisplayMode>):
 
 Subscribes to display mode change events of the foldable device.
 
-To subscribe to fold status change events of foldable devices, use [display.on('foldStatusChange')](arkts-arkui-display-on-f.md#on-5).
+To subscribe to fold status change events of foldable devices, use [display.on('foldStatusChange')](display.on(type: 'foldStatusChange', callback: Callback<FoldStatus>)).
 
 The two are different. In terms of timing, the fold status changes first, and the bottom layer matches the display mode status based on the fold status.
 
@@ -299,7 +306,7 @@ The two are different. In terms of timing, the fold status changes first, and th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'foldDisplayModeChange' | Yes | Event type. The event **'foldDisplayModeChange'** is triggered when the display mode of the device changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<FoldDisplayMode> | Yes | Callback used to return the display mode. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;FoldDisplayMode&gt; | Yes | Callback used to return the display mode. |
 
 **Error codes:**
 
@@ -325,6 +332,7 @@ display.on('foldDisplayModeChange', callback);
 ```
 
 
+<a id="on-7"></a>
 ## on('brightnessInfoChange')
 
 ```TypeScript
@@ -346,7 +354,7 @@ Subscribes to events related to screen brightness information changes. If the sc
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'brightnessInfoChange' | Yes | Event type. The value is fixed at **'brightnessInfoChange'**, indicating that the screen brightness information is changed. |
-| callback | [BrightnessCallback](arkts-arkui-display-brightnesscallback-t.md)<number, BrightnessInfo> | Yes | Callback used to return the display ID (parameter 1)and the corresponding screen brightness information (parameter 2). |
+| callback | [BrightnessCallback](arkts-arkui-display-brightnesscallback-t.md)&lt;number, BrightnessInfo&gt; | Yes | Callback used to return the display ID (parameter 1)and the corresponding screen brightness information (parameter 2). |
 
 **Error codes:**
 

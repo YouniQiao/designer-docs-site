@@ -6,6 +6,7 @@
 import { inputEventClient } from '@kit.InputKit';
 ```
 
+<a id="createmousecontroller"></a>
 ## createMouseController
 
 ```TypeScript
@@ -28,7 +29,7 @@ Creates a mouse controller for simulating mouse operations. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MouseController> | Promise used to return the mouse controller instance. |
+| Promise&lt;MouseController&gt; | Promise used to return the mouse controller instance. |
 
 **Error codes:**
 

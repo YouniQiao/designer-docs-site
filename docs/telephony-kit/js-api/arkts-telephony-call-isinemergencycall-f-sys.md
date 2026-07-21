@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="isinemergencycall"></a>
 ## isInEmergencyCall
 
 ```TypeScript
@@ -28,7 +29,7 @@ Judge whether the emergency call is in progress.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback of isInEmergencyCall.Returns {@code true} if the call is in emergency; returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback of isInEmergencyCall.Returns {@code true} if the call is in emergency; returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ call.isInEmergencyCall((err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isinemergencycall-1"></a>
 ## isInEmergencyCall
 
 ```TypeScript
@@ -80,7 +82,7 @@ Judge whether the emergency call is in progress.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the call is in emergency; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the call is in emergency; returns {@code false} otherwise. |
 
 **Error codes:**
 

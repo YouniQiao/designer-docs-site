@@ -6,6 +6,7 @@
 import { missionManager } from '@kit.AbilityKit';
 ```
 
+<a id="movemissionstobackground"></a>
 ## moveMissionsToBackground
 
 ```TypeScript
@@ -28,8 +29,8 @@ Switches a batch of missions to the background. The mission IDs returned are sor
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| missionIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Array holding the mission IDs. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the result. |
+| missionIds | Array&lt;number&gt; | Yes | Array holding the mission IDs. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -76,6 +77,7 @@ try {
 ```
 
 
+<a id="movemissionstobackground-1"></a>
 ## moveMissionsToBackground
 
 ```TypeScript
@@ -98,13 +100,13 @@ Switches a batch of missions to the background. The mission IDs returned are sor
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| missionIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Array holding the mission IDs. |
+| missionIds | Array&lt;number&gt; | Yes | Array holding the mission IDs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return an array of mission IDs. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return an array of mission IDs. |
 
 **Error codes:**
 

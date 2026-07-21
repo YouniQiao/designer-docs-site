@@ -1,5 +1,6 @@
 # getBundleName
 
+<a id="getbundlename"></a>
 ## getBundleName
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the bundle name of a WantAgent.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | whose bundle name to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | A callback method to obtain the package name of the WantAgent instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | A callback method to obtain the package name of the WantAgent instance. |
 
 **Example**
 
@@ -83,6 +84,7 @@ wantAgent.getWantAgent({
 ```
 
 
+<a id="getbundlename-1"></a>
 ## getBundleName
 
 ```TypeScript
@@ -113,7 +115,7 @@ Obtains the bundle name of a WantAgent.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the bundle name of the {@link WantAgent} if any. |
+| Promise&lt;string&gt; | Returns the bundle name of the {@link WantAgent} if any. |
 
 **Example**
 

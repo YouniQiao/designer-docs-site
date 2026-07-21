@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="queryprintercapabilitybyuri"></a>
 ## queryPrinterCapabilityByUri
 
 ```TypeScript
@@ -37,7 +38,7 @@ Query printer capabilityies by printer uri.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PrinterCapabilities> | - Promise that resolves with the printer capabilityies. |
+| Promise&lt;PrinterCapabilities&gt; | - Promise that resolves with the printer capabilityies. |
 
 **Error codes:**
 

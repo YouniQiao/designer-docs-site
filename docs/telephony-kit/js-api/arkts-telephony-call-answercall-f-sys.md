@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="answercall"></a>
 ## answerCall
 
 ```TypeScript
@@ -29,7 +30,7 @@ Answers the incoming call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call to answer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of answerCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of answerCall. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ call.answerCall(1, (err: BusinessError) => {
 ```
 
 
+<a id="answercall-1"></a>
 ## answerCall
 
 ```TypeScript
@@ -87,7 +89,7 @@ Answers the incoming call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the answerCall. |
+| Promise&lt;void&gt; | The promise returned by the answerCall. |
 
 **Error codes:**
 
@@ -115,6 +117,7 @@ call.answerCall(1).then(() => {
 ```
 
 
+<a id="answercall-2"></a>
 ## answerCall
 
 ```TypeScript
@@ -137,7 +140,7 @@ Answers the incoming call without callId.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of answerCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of answerCall. |
 
 **Error codes:**
 
@@ -167,6 +170,7 @@ call.answerCall((err: BusinessError) => {
 ```
 
 
+<a id="answercall-3"></a>
 ## answerCall
 
 ```TypeScript
@@ -196,7 +200,7 @@ Answers the incoming video call
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the answerCall. |
+| Promise&lt;void&gt; | The promise returned by the answerCall. |
 
 **Error codes:**
 
@@ -224,6 +228,7 @@ call.answerCall(0, 1).then(() => {
 ```
 
 
+<a id="answercall-4"></a>
 ## answerCall
 
 ```TypeScript
@@ -254,7 +259,7 @@ Answers the incoming rtt
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the answerCall. |
+| Promise&lt;void&gt; | The promise returned by the answerCall. |
 
 **Error codes:**
 

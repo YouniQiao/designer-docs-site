@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Map<K, V>--><!--Device-unnamed-interface Map<K, V>-End-->
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -10,6 +11,7 @@ clear(): void
 
 <!--Device-Map-clear(): void--><!--Device-Map-clear(): void-End-->
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -30,6 +32,7 @@ delete(key: K): boolean
 | --- | --- |
 | boolean |  |
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -44,9 +47,10 @@ Executes a provided function once per each key/value pair in the Map, in inserti
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackfn | (value: V, key: K, map: Map<K, V>) => void | Yes |  |
+| callbackfn | (value: V, key: K, map: Map&lt;K, V&gt;) =&gt; void | Yes |  |
 | thisArg | any | No |  |
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -69,6 +73,7 @@ Returns a specified element from the Map object. If the value that is associated
 | --- | --- |
 | V |  |
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -89,6 +94,7 @@ has(key: K): boolean
 | --- | --- |
 | boolean |  |
 
+<a id="set"></a>
 ## set
 
 ```TypeScript

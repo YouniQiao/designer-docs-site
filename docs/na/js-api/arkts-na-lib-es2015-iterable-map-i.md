@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Map<K, V>--><!--Device-unnamed-interface Map<K, V>-End-->
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -16,8 +17,9 @@ Returns an iterable of entries in the map.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; |  |
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -32,8 +34,9 @@ Returns an iterable of key, value pairs for every entry in the map.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; |  |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -48,8 +51,9 @@ Returns an iterable of keys in the map
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<K> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;K&gt; |  |
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -64,5 +68,5 @@ Returns an iterable of values in the map
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<V> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;V&gt; |  |
 

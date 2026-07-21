@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="getpoiinfo"></a>
 ## getPoiInfo
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtaining POI Information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PoiInfo> | The promise returned by the function, for reporting POI info. |
+| Promise&lt;PoiInfo&gt; | The promise returned by the function, for reporting POI info. |
 
 **Error codes:**
 

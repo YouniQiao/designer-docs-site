@@ -6,6 +6,7 @@
 import { dataShare } from '@kit.ArkData';
 ```
 
+<a id="createdatasharehelper"></a>
 ## createDataShareHelper
 
 ```TypeScript
@@ -30,7 +31,7 @@ Creates a **DataShareHelper** instance. This API uses an asynchronous callback t
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the application. |
 | uri | string | Yes | URI of the server application to connect. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataShareHelper> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DataShareHelper** instance created. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataShareHelper&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DataShareHelper** instance created. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="createdatasharehelper-1"></a>
 ## createDataShareHelper
 
 ```TypeScript
@@ -111,7 +113,7 @@ Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whe
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the application context. |
 | uri | string | Yes | Indicates the path of the file to open. |
 | options | [DataShareHelperOptions](arkts-arkdata-datashare-datasharehelperoptions-i-sys.md) | Yes | Indicates the optional config. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataShareHelper> | Yes | {DataShareHelper}: The dataShareHelper for consumer. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataShareHelper&gt; | Yes | {DataShareHelper}: The dataShareHelper for consumer. |
 
 **Error codes:**
 
@@ -152,6 +154,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="createdatasharehelper-2"></a>
 ## createDataShareHelper
 
 ```TypeScript
@@ -194,7 +197,7 @@ Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataShareHelper> | Promise used to return the **DataShareHelper** instance created. |
+| Promise&lt;DataShareHelper&gt; | Promise used to return the **DataShareHelper** instance created. |
 
 **Error codes:**
 

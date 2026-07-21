@@ -14,6 +14,7 @@ Channel represents an [ISO 7816-4] channel opened to a SE. It can be either a lo
 import { omapi } from '@kit.ConnectivityKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -51,6 +52,7 @@ try {
 
 ```
 
+<a id="getselectresponse"></a>
 ## getSelectResponse
 
 ```TypeScript
@@ -95,6 +97,7 @@ try {
 
 ```
 
+<a id="getsession"></a>
 ## getSession
 
 ```TypeScript
@@ -140,6 +143,7 @@ try {
 
 ```
 
+<a id="isbasicchannel"></a>
 ## isBasicChannel
 
 ```TypeScript
@@ -184,6 +188,7 @@ try {
 
 ```
 
+<a id="isclosed"></a>
 ## isClosed
 
 ```TypeScript
@@ -228,6 +233,7 @@ try {
 
 ```
 
+<a id="transmit"></a>
 ## transmit
 
 ```TypeScript
@@ -252,7 +258,7 @@ Transmit an APDU command (as per ISO/IEC 7816) to the SE.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number[]> | The response received, as a byte array. |
+| Promise&lt;number[]&gt; | The response received, as a byte array. |
 
 **Error codes:**
 
@@ -287,6 +293,7 @@ try {
 
 ```
 
+<a id="transmit-1"></a>
 ## transmit
 
 ```TypeScript
@@ -306,7 +313,7 @@ Transmit an APDU command (as per ISO/IEC 7816) to the SE.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | command | number[] | Yes | The APDU command to be transmitted, as a byte array. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number[]> | Yes | The callback to return the response received, as a byte array. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number[]&gt; | Yes | The callback to return the response received, as a byte array. |
 
 **Error codes:**
 

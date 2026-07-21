@@ -6,6 +6,7 @@
 import { backup } from '@kit.CoreFileKit';
 ```
 
+<a id="getlocalcapabilities"></a>
 ## getLocalCapabilities
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtain a Json file that describes local capabilities.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileData> | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
+| Promise&lt;FileData&gt; | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
 
 **Error codes:**
 
@@ -81,6 +82,7 @@ The capability file can be obtained by using [fileIo.stat](js-apis-file-fs.md#fi
 ```
 
 
+<a id="getlocalcapabilities-1"></a>
 ## getLocalCapabilities
 
 ```TypeScript
@@ -103,7 +105,7 @@ Obtain a Json file that describes local capabilities.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FileData> | Yes | A callback method, the argument FileData will holding all the local capabilities. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FileData&gt; | Yes | A callback method, the argument FileData will holding all the local capabilities. |
 
 **Error codes:**
 
@@ -159,6 +161,7 @@ The capability file can be obtained by using [fileIo.stat](js-apis-file-fs.md#fi
 ```
 
 
+<a id="getlocalcapabilities-2"></a>
 ## getLocalCapabilities
 
 ```TypeScript
@@ -181,13 +184,13 @@ Obtain a json file that describes local capabilities.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dataList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<IncrementalBackupTime> | Yes |  |
+| dataList | Array&lt;IncrementalBackupTime&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileData> | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
+| Promise&lt;FileData&gt; | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
 
 **Error codes:**
 

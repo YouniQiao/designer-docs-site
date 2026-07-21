@@ -1,0 +1,50 @@
+# USBDevice
+
+USB device information, which is inherited from [Device](arkts-driverdevelopment-devicemanager-querydevices-f.md#querydevices-1).
+
+**Inheritance/Implementation:** USBDevice extends [Device](arkts-driverdevelopment-devicemanager-device-i.md)
+
+**Since:** 10
+
+<!--Device-deviceManager-interface USBDevice extends Device--><!--Device-deviceManager-interface USBDevice extends Device-End-->
+
+**System capability:** SystemCapability.Driver.ExternalDevice
+
+## Modules to Import
+
+```TypeScript
+import { deviceManager } from '@kit.DriverDevelopmentKit';
+```
+
+## productId
+
+```TypeScript
+productId: number
+```
+
+Product ID of the USB device.
+
+**Type:** number
+
+**Since:** 10
+
+<!--Device-USBDevice-productId: int--><!--Device-USBDevice-productId: int-End-->
+
+**System capability:** SystemCapability.Driver.ExternalDevice
+
+## vendorId
+
+```TypeScript
+vendorId: number
+```
+
+Vendor ID of the USB device.
+
+**Type:** number
+
+**Since:** 10
+
+<!--Device-USBDevice-vendorId: int--><!--Device-USBDevice-vendorId: int-End-->
+
+**System capability:** SystemCapability.Driver.ExternalDevice
+

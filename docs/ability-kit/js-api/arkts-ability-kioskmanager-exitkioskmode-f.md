@@ -6,6 +6,7 @@
 import { kioskManager } from '@kit.AbilityKit';
 ```
 
+<a id="exitkioskmode"></a>
 ## exitKioskMode
 
 ```TypeScript
@@ -32,7 +33,7 @@ Exits kiosk mode. This API uses a promise to return the result.This API takes ef
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

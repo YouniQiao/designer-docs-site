@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="turnonradio"></a>
 ## turnOnRadio
 
 ```TypeScript
@@ -29,7 +30,7 @@ Turn on the radio service.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of turnOnRadio. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of turnOnRadio. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ radio.turnOnRadio(slotId, (err: BusinessError) => {
 ```
 
 
+<a id="turnonradio-1"></a>
 ## turnOnRadio
 
 ```TypeScript
@@ -88,7 +90,7 @@ Turn on the radio service.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the turnOnRadio. |
+| Promise&lt;void&gt; | The promise returned by the turnOnRadio. |
 
 **Error codes:**
 
@@ -117,6 +119,7 @@ radio.turnOnRadio(slotId).then(() => {
 ```
 
 
+<a id="turnonradio-2"></a>
 ## turnOnRadio
 
 ```TypeScript
@@ -139,7 +142,7 @@ Turn on the radio service.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of turnOnRadio. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of turnOnRadio. |
 
 **Error codes:**
 

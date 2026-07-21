@@ -18,6 +18,7 @@ Provides the API for accessing unicode character properties. For example, determ
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -48,6 +49,7 @@ Obtains the type of the input character.
 | --- | --- |
 | string | Type of the input character. |
 
+<a id="isdigit"></a>
 ## isDigit
 
 ```TypeScript
@@ -78,6 +80,7 @@ Checks whether the input character is a digit.
 | --- | --- |
 | boolean | **true** if the input character is a digit, and **false** otherwise. |
 
+<a id="isideograph"></a>
 ## isIdeograph
 
 ```TypeScript
@@ -108,6 +111,7 @@ Checks whether the input character is an ideographic character.
 | --- | --- |
 | boolean | **true** if the input character an ideographic character, and **false** otherwise. |
 
+<a id="isletter"></a>
 ## isLetter
 
 ```TypeScript
@@ -138,6 +142,7 @@ Checks whether the input character is a letter.
 | --- | --- |
 | boolean | **true** if the input character a letter, and **false** otherwise. |
 
+<a id="islowercase"></a>
 ## isLowerCase
 
 ```TypeScript
@@ -168,6 +173,7 @@ Checks whether the input character is a lowercase letter.
 | --- | --- |
 | boolean | **true** if the input character a lowercase letter, and **false** otherwise. |
 
+<a id="isrtl"></a>
 ## isRTL
 
 ```TypeScript
@@ -198,6 +204,7 @@ Checks whether the input character is of the right to left (RTL) language.
 | --- | --- |
 | boolean | **true** if the input character is of the RTL language, and **false** otherwise. |
 
+<a id="isspacechar"></a>
 ## isSpaceChar
 
 ```TypeScript
@@ -228,6 +235,7 @@ Checks whether the input character is a space.
 | --- | --- |
 | boolean | **true** if the input character is a space, and **false** otherwise. |
 
+<a id="isuppercase"></a>
 ## isUpperCase
 
 ```TypeScript
@@ -258,6 +266,7 @@ Checks whether the input character is an uppercase letter.
 | --- | --- |
 | boolean | **true** if the input character an uppercase letter, and **false** otherwise. |
 
+<a id="iswhitespace"></a>
 ## isWhitespace
 
 ```TypeScript

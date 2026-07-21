@@ -6,6 +6,7 @@
 import { intelligence } from '@kit.ArkData';
 ```
 
+<a id="getimageembeddingmodel"></a>
 ## getImageEmbeddingModel
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains an image embedding model.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ImageEmbedding> | The promise returned by the function. |
+| Promise&lt;ImageEmbedding&gt; | The promise returned by the function. |
 
 **Error codes:**
 

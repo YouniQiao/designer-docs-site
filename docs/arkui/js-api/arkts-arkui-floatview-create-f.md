@@ -6,6 +6,7 @@
 import { floatView } from '@kit.ArkUI';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -32,7 +33,7 @@ Creates a float view controller. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FloatViewController> | Promise used to return the created float view controller. |
+| Promise&lt;FloatViewController&gt; | Promise used to return the created float view controller. |
 
 **Error codes:**
 

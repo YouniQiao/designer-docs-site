@@ -6,6 +6,7 @@
 import { spatialAwareness } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="offdistancemeasure"></a>
 ## offDistanceMeasure
 
 ```TypeScript
@@ -34,7 +35,7 @@ Unsubscribe from distance measurement result data.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | configParams | [DistanceMeasurementConfigParams](arkts-multimodalawareness-spatialawareness-distancemeasurementconfigparams-i-sys.md) | Yes | Configuration parameters of the distance measurement. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DistanceMeasurementResponse> | No | Callback of the ranging result |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DistanceMeasurementResponse&gt; | No | Callback of the ranging result |
 
 **Error codes:**
 

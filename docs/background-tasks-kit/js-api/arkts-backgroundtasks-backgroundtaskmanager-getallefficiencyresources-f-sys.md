@@ -6,6 +6,7 @@
 import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="getallefficiencyresources"></a>
 ## getAllEfficiencyResources
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains all information about the requested efficiency resources, including the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<EfficiencyResourcesInfo[]> | Promise used to return all information about efficiency resources. |
+| Promise&lt;EfficiencyResourcesInfo[]&gt; | Promise used to return all information about efficiency resources. |
 
 **Error codes:**
 

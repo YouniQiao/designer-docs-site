@@ -6,6 +6,7 @@
 import { config } from '@kit.AccessibilityKit';
 ```
 
+<a id="onseniormodestatechangeforapp"></a>
 ## onSeniorModeStateChangeForApp
 
 ```TypeScript
@@ -30,7 +31,7 @@ Register an observer for anyone application's senior mode state changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AppSeniorModeInfo> | Yes | Asynchronous callback interface. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AppSeniorModeInfo&gt; | Yes | Asynchronous callback interface. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setdistributedenable"></a>
 ## setDistributedEnable
 
 ```TypeScript
@@ -18,7 +19,7 @@ Sets whether to enable distributed notification on this device. This API uses an
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setDistributedEnabled(enable:
+**Substitutes:** [setDistributedEnabled(enable:](arkts-notification-notificationmanager-setdistributedenabled-f-sys.md#setdistributedenabled-1)
 
 **Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
 
@@ -33,7 +34,7 @@ Sets whether to enable distributed notification on this device. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to enable distributed notification. The value **true** means to enable distributed notification, and **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ notificationManager.setDistributedEnable(enable, setDistributedEnableCallback);
 ```
 
 
+<a id="setdistributedenable-1"></a>
 ## setDistributedEnable
 
 ```TypeScript
@@ -78,7 +80,7 @@ Sets whether to enable distributed notification on this device. This API uses a 
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setDistributedEnabled(enable:
+**Substitutes:** [setDistributedEnabled(enable:](arkts-notification-notificationmanager-setdistributedenabled-f-sys.md#setdistributedenabled-1)
 
 **Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
 
@@ -98,7 +100,7 @@ Sets whether to enable distributed notification on this device. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

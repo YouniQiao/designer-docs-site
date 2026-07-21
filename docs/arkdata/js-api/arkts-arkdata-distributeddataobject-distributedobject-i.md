@@ -18,6 +18,7 @@ Provides APIs for managing a distributed data object. Before using any API of th
 import { distributedDataObject } from '@kit.ArkData';
 ```
 
+<a id="off"></a>
 ## off('change')
 
 ```TypeScript
@@ -41,7 +42,7 @@ Unsubscribes from data changes of this distributed data object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. The value is 'change', which indicates data changes. |
-| callback | (sessionId: string, fields: Array<string>) => void | No | Callback to unregister. If this parameter is not specified, this API unsubscribes from all callbacks for data changes of this distributed object.sessionId indicates the session ID of the distributed data object. fields indicates the changed properties of the distributed data object. |
+| callback | (sessionId: string, fields: Array&lt;string&gt;) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unsubscribes from all callbacks for data changes of this distributed object.sessionId indicates the session ID of the distributed data object. fields indicates the changed properties of the distributed data object. |
 
 **Example**
 
@@ -74,6 +75,7 @@ g_object.off('change');
 
 ```
 
+<a id="off-1"></a>
 ## off('status')
 
 ```TypeScript
@@ -106,7 +108,7 @@ Unsubscribes from the status change of this distributed data object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'status' | Yes | Event type. The value is 'status', which indicates the status change (online or offline) of the distributed object. |
-| callback | (sessionId: string, networkId: string, status: 'online' \| 'offline' ) => void | No | Callback to unregister. If this parameter is not specified, this API unsubscribes from all callbacks for status changes of this distributed object. sessionId indicates the session ID of the distributed data object. networkId identifies the distributed data object. status indicates the object status, which can be online or offline. |
+| callback | (sessionId: string, networkId: string, status: 'online' \| 'offline' ) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unsubscribes from all callbacks for status changes of this distributed object. sessionId indicates the session ID of the distributed data object. networkId identifies the distributed data object. status indicates the object status, which can be online or offline. |
 
 **Example**
 
@@ -134,6 +136,7 @@ g_object.off('status');
 
 ```
 
+<a id="on"></a>
 ## on('change')
 
 ```TypeScript
@@ -157,7 +160,7 @@ Subscribes to data changes of this distributed data object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. The value is 'change', which indicates data changes. |
-| callback | (sessionId: string, fields: Array<string>) => void | Yes | Callback used to return the changes of the distributed data object. sessionId indicates the session ID of the distributed data object. fields indicates the changed properties of the distributed data object. |
+| callback | (sessionId: string, fields: Array&lt;string&gt;) =&gt; void | Yes | Callback used to return the changes of the distributed data object. sessionId indicates the session ID of the distributed data object. fields indicates the changed properties of the distributed data object. |
 
 **Example**
 
@@ -187,6 +190,7 @@ g_object.on('change', (sessionId: string, fields: Array<string>) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('status')
 
 ```TypeScript
@@ -219,7 +223,7 @@ Subscribes to status changes of this distributed data object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'status' | Yes | Event type. The value is 'status', which indicates the status change (online or offline) of the distributed object. |
-| callback | (sessionId: string, networkId: string, status: 'online' \| 'offline' ) => void | Yes | Callback used to return the status change. sessionId indicates the session ID of the distributed data object. networkId identifies the device. status indicates the object status, which can be online or offline. |
+| callback | (sessionId: string, networkId: string, status: 'online' \| 'offline' ) =&gt; void | Yes | Callback used to return the status change. sessionId indicates the session ID of the distributed data object. networkId identifies the device. status indicates the object status, which can be online or offline. |
 
 **Example**
 
@@ -245,6 +249,7 @@ g_object.on('status', (sessionId: string, networkId: string, status: 'online' | 
 
 ```
 
+<a id="setsessionid"></a>
 ## setSessionId
 
 ```TypeScript
@@ -257,7 +262,7 @@ Sets a session ID. For the devices in the collaboration state in a trusted netwo
 
 **Deprecated since:** 9
 
-**Substitutes:** setSessionId(sessionId:
+**Substitutes:** [setSessionId(sessionId:](arkts-arkdata-distributeddataobject-dataobject-i.md#setsessionid-1)
 
 **Required permissions:** ohos.permission.DISTRIBUTED_DATASYNC
 

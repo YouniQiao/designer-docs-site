@@ -10,6 +10,7 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="enablenestedscroll"></a>
 ## enableNestedScroll
 
 ```TypeScript
@@ -24,13 +25,13 @@ Sets whether nested scrolling is enabled.
 > then passes it to the outer parent scrollable component based on the set nested scrolling priority.  
 >  
 > Nested scrolling is not supported when the **WaterFlow** component is in  
-> [WaterFlowLayoutMode.SLIDING_WINDOW](../../../../reference/apis-arkui/arkui-ts/ts-container-waterflow.md#waterflowlayoutmode12)  
+> [WaterFlowLayoutMode.SLIDING_WINDOW](docroot://reference/apis-arkui/arkui-ts/ts-container-waterflow.md#waterflowlayoutmode12)  
 > layout mode.  
 >  
 > When the nested scrolling mode is set to  
-> [PARALLEL](../../../../reference/apis-arkui/arkui-ts/ts-appendix-enums.md#nestedscrollmode10), both the parent  
+> [PARALLEL](docroot://reference/apis-arkui/arkui-ts/ts-appendix-enums.md#nestedscrollmode10), both the parent  
 > and child components scroll simultaneously. You need to manage the scroll order in the  
-> [onScrollFrameBegin](../../../../reference/apis-arkui/arkui-ts/ts-container-scroll.md#onscrollframebegin9) event  
+> [onScrollFrameBegin](docroot://reference/apis-arkui/arkui-ts/ts-container-scroll.md#onscrollframebegin9) event  
 > according to the desired logic.
 
 **Since:** 14
@@ -47,8 +48,9 @@ Sets whether nested scrolling is enabled.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enabled | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether nested scrolling is enabled. The value **true** means that nested scrolling is enabled, and **false** means the opposite.<br>Default value: **false** |
+| enabled | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether nested scrolling is enabled. The value **true** means that nested scrolling is enabled, and **false** means the opposite.<br>Default value: **false** |
 
+<a id="scrollbarcolor"></a>
 ## scrollBarColor
 
 ```TypeScript
@@ -71,5 +73,5 @@ Sets the color of the scrollbar slider. This parameter is valid only when the sc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](arkts-arkui-optional-t.md)<ColorMetrics> | Yes | Scrollbar color.<br>Default value: **ColorMetrics.numeric(0x66182431)** |
+| color | [Optional](arkts-arkui-optional-t.md)&lt;ColorMetrics&gt; | Yes | Scrollbar color.<br>Default value: **ColorMetrics.numeric(0x66182431)** |
 

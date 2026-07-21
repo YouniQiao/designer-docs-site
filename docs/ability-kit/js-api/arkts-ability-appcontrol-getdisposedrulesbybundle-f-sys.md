@@ -6,6 +6,7 @@
 import { appControl } from '@kit.AbilityKit';
 ```
 
+<a id="getdisposedrulesbybundle"></a>
 ## getDisposedRulesByBundle
 
 ```TypeScript
@@ -36,7 +37,7 @@ Query all disposed rules under the current user for the specified bundle name.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DisposedRuleConfiguration> | Returns disposed rules. |
+| Array&lt;DisposedRuleConfiguration&gt; | Returns disposed rules. |
 
 **Error codes:**
 

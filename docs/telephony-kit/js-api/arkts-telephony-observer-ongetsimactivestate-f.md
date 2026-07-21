@@ -6,6 +6,7 @@
 import { observer } from '@kit.TelephonyKit';
 ```
 
+<a id="ongetsimactivestate"></a>
 ## onGetSimActiveState
 
 ```TypeScript
@@ -27,7 +28,7 @@ Subscribe to sim active state change events using a callback-based approach as a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the ID of the target card slot. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Indicates the callback for sim active state |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for sim active state |
 
 **Error codes:**
 

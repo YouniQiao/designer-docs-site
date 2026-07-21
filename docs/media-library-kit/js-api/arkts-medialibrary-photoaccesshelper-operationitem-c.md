@@ -72,7 +72,7 @@ This field is not involved in non-conditional predicates such as **and**, **or**
 
 The maximum length is 10; if exceeded, only the first 10 values are considered.
 
-**Type:** Array<OperationValueType>
+**Type:** Array&lt;OperationValueType&gt;
 
 **Since:** 22
 

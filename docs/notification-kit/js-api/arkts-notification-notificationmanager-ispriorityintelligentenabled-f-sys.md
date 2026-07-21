@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="ispriorityintelligentenabled"></a>
 ## isPriorityIntelligentEnabled
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains whether the intelligent priority notification service is enabled. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise that contains the enabling status of the intelligent priority notification service.<br> - **true**: The intelligent priority notification service is enabled.<br> - **false**: The intelligent priority notification service is disabled. |
+| Promise&lt;boolean&gt; | Promise that contains the enabling status of the intelligent priority notification service.<br> - **true**: The intelligent priority notification service is enabled.<br> - **false**: The intelligent priority notification service is disabled. |
 
 **Error codes:**
 

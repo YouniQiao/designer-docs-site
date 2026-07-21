@@ -6,6 +6,7 @@
 import { functionManager } from '@kit.AbilityKit';
 ```
 
+<a id="queryfunctions"></a>
 ## queryFunctions
 
 ```TypeScript
@@ -30,7 +31,7 @@ Query all available functions.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<FunctionInfo>> | The promise used to return available functions. |
+| Promise&lt;Array&lt;FunctionInfo&gt;&gt; | The promise used to return available functions. |
 
 **Error codes:**
 

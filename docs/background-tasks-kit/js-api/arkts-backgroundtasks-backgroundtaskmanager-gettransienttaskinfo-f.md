@@ -6,6 +6,7 @@
 import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="gettransienttaskinfo"></a>
 ## getTransientTaskInfo
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains all transient task information, including the remaining quota of the cur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<TransientTaskInfo> | Promise that returns all transient task information. |
+| Promise&lt;TransientTaskInfo&gt; | Promise that returns all transient task information. |
 
 **Error codes:**
 

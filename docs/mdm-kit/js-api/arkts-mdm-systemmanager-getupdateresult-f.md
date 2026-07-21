@@ -6,6 +6,7 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
+<a id="getupdateresult"></a>
 ## getUpdateResult
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the system update result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UpdateResult> | Promise used to return the system update result. |
+| Promise&lt;UpdateResult&gt; | Promise used to return the system update result. |
 
 **Error codes:**
 

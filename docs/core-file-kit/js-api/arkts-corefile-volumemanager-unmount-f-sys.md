@@ -6,6 +6,7 @@
 import { volumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="unmount"></a>
 ## unmount
 
 ```TypeScript
@@ -29,7 +30,7 @@ Unmounts a volume. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | volumeId | string | Yes | Volume ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the specified volume is unmounted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when the specified volume is unmounted. |
 
 **Error codes:**
 
@@ -46,6 +47,7 @@ Unmounts a volume. This API uses an asynchronous callback to return the result.
 | 13900042 | Unknown error. |
 
 
+<a id="unmount-1"></a>
 ## unmount
 
 ```TypeScript
@@ -74,7 +76,7 @@ Unmounts a volume. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

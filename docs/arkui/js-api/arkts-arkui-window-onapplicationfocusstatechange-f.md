@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="onapplicationfocusstatechange"></a>
 ## onApplicationFocusStateChange
 
 ```TypeScript
@@ -26,7 +27,7 @@ Register the callback for application process focus state changes.This listener 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback used to return the result whether application process focused or not.The value true means that the application process becomes focused,and false means that the application process becomes unfocused. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result whether application process focused or not.The value true means that the application process becomes focused,and false means that the application process becomes unfocused. |
 
 **Example**
 

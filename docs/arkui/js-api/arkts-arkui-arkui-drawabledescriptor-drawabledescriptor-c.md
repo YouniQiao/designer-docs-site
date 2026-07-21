@@ -14,6 +14,7 @@ Represents the base class providing overridable methods for [PixelMap](../../api
 import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@kit.ArkUI';
 ```
 
+<a id="getpixelmap"></a>
 ## getPixelMap
 
 ```TypeScript
@@ -48,6 +49,7 @@ Obtains this **PixelMap** instance.
 
 For details, see [LayeredDrawableDescriptor](#layereddrawabledescriptor).
 
+<a id="invalidate"></a>
 ## invalidate
 
 ```TypeScript
@@ -66,6 +68,7 @@ Redraws **DrawableDescriptor**. Currently, this API is supported for the [Pictur
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="isreleased"></a>
 ## isReleased
 
 ```TypeScript
@@ -90,6 +93,7 @@ Checks whether **DrawableDescriptor** is released. If **true** is returned, the 
 | --- | --- |
 | boolean | Whether **DrawableDescriptor** is released. The value **true** indicates that the object is released, and **false** indicates that the object is not released. |
 
+<a id="load"></a>
 ## load
 
 ```TypeScript
@@ -112,7 +116,7 @@ Asynchronously loads the image resource and returns the loading result. This API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DrawableDescriptorLoadedResult> | Image resource loading result. |
+| Promise&lt;DrawableDescriptorLoadedResult&gt; | Image resource loading result. |
 
 **Error codes:**
 
@@ -125,6 +129,7 @@ Asynchronously loads the image resource and returns the loading result. This API
 
 For details, see [DrawableDescriptorLoadedResult](#drawabledescriptorloadedresult21).
 
+<a id="loadsync"></a>
 ## loadSync
 
 ```TypeScript
@@ -160,6 +165,7 @@ Synchronously loads the image resource and returns the loading result.
 
 For details, see [DrawableDescriptorLoadedResult](#drawabledescriptorloadedresult21).
 
+<a id="release"></a>
 ## release
 
 ```TypeScript

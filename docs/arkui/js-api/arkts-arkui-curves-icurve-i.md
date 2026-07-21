@@ -14,6 +14,7 @@ Represents a curve object. Different types of curve objects can be created using
 import { curves } from '@kit.ArkUI';
 ```
 
+<a id="interpolate"></a>
 ## interpolate
 
 ```TypeScript

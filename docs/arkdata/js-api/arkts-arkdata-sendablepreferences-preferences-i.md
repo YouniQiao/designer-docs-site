@@ -1,6 +1,6 @@
 # Preferences
 
-Provides APIs for obtaining and modifying **Preferences** instances. **Preferences** inherits from [ISendable](../../../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads) by reference.Before calling any API of **Preferences**, obtain a **Preferences** instance by using [sendablePreferences.getPreferences](arkts-arkdata-sendablepreferences-getpreferences-f.md#getpreferences-1).
+Provides APIs for obtaining and modifying **Preferences** instances. **Preferences** inherits from [ISendable](docroot://arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads) by reference.Before calling any API of **Preferences**, obtain a **Preferences** instance by using [sendablePreferences.getPreferences](arkts-arkdata-sendablepreferences-getpreferences-f.md#getpreferences-1).
 
 **Inheritance/Implementation:** Preferences extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-lang-isendable-i.md)
 
@@ -16,6 +16,7 @@ Provides APIs for obtaining and modifying **Preferences** instances. **Preferenc
 import { sendablePreferences } from '@kit.ArkData';
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -36,7 +37,7 @@ Clears this **Preferences** instance. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ promise.then(() => {
 
 ```
 
+<a id="clearsync"></a>
 ## clearSync
 
 ```TypeScript
@@ -87,6 +89,7 @@ preferences.clearSync();
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -107,13 +110,13 @@ Deletes a KV pair from this **Preferences** instance. This API uses a promise to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key to be deleted. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](../../../../reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
+| key | string | Yes | Key to be deleted. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](docroot://reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -136,6 +139,7 @@ promise.then(() => {
 
 ```
 
+<a id="deletesync"></a>
 ## deleteSync
 
 ```TypeScript
@@ -156,7 +160,7 @@ Deletes a KV pair from this **Preferences** instance. This API returns the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key to be deleted. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](../../../../reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
+| key | string | Yes | Key to be deleted. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](docroot://reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
 
 **Error codes:**
 
@@ -172,6 +176,7 @@ preferences.deleteSync('startup');
 
 ```
 
+<a id="flush"></a>
 ## flush
 
 ```TypeScript
@@ -192,7 +197,7 @@ Flushes the data in this **Preferences** instance to the persistent file. This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -214,6 +219,7 @@ promise.then(() => {
 
 ```
 
+<a id="flushsync"></a>
 ## flushSync
 
 ```TypeScript
@@ -243,6 +249,7 @@ preferences.flushSync();
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -263,14 +270,14 @@ Obtains the value of a key from this **Preferences** instance. This API uses a p
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key to be obtained. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](../../../../reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
+| key | string | Yes | Key to be obtained. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](docroot://reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
 | defValue | lang.ISendable | Yes | Default value to be returned. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<lang.ISendable> | Promise used to return the value obtained.* This instance inherits from [ISendable](../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads)by reference. For details, see [Using Sendable Objects](../../arkts-utils/sendable-guide.md). |
+| Promise&lt;lang.ISendable&gt; | Promise used to return the value obtained.* This instance inherits from [ISendable](../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads)by reference. For details, see [Using Sendable Objects](../../arkts-utils/sendable-guide.md). |
 
 **Error codes:**
 
@@ -295,6 +302,7 @@ promise.then((data: lang.ISendable) => {
 
 ```
 
+<a id="getall"></a>
 ## getAll
 
 ```TypeScript
@@ -315,7 +323,7 @@ Obtains all KV pairs from this **Preferences** instance. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<lang.ISendable> | Promise used to return the KV pairs obtained.* This object inherits from [ISendable](../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads)by reference. For details, see [Using Sendable Objects](../../arkts-utils/sendable-guide.md). |
+| Promise&lt;lang.ISendable&gt; | Promise used to return the KV pairs obtained.* This object inherits from [ISendable](../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads)by reference. For details, see [Using Sendable Objects](../../arkts-utils/sendable-guide.md). |
 
 **Error codes:**
 
@@ -340,6 +348,7 @@ promise.then((keyValues: lang.ISendable) => {
 
 ```
 
+<a id="getallsync"></a>
 ## getAllSync
 
 ```TypeScript
@@ -380,6 +389,7 @@ for (let value of Object.keys(keyValues)) {
 
 ```
 
+<a id="getsync"></a>
 ## getSync
 
 ```TypeScript
@@ -400,7 +410,7 @@ Obtains the value of a key from this **Preferences** instance. This API returns 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key to be obtained. The value cannot be empty, and the maximum length is 1024 bytes. For details, see [MAX_KEY_LENGTH](../../../../reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
+| key | string | Yes | Key to be obtained. The value cannot be empty, and the maximum length is 1024 bytes. For details, see [MAX_KEY_LENGTH](docroot://reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
 | defValue | lang.ISendable | Yes | Default value to be returned. |
 
 **Return value:**
@@ -424,6 +434,7 @@ let value: lang.ISendable = preferences.getSync('startup', 'default');
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -444,13 +455,13 @@ Checks whether this **Preferences** instance contains the KV pair of the given k
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key to be checked. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](../../../../reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
+| key | string | Yes | Key to be checked. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](docroot://reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the **Preferences** instance contains the KV pair; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the **Preferences** instance contains the KV pair; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -477,6 +488,7 @@ promise.then((val: boolean) => {
 
 ```
 
+<a id="hassync"></a>
 ## hasSync
 
 ```TypeScript
@@ -497,7 +509,7 @@ Checks whether this **Preferences** instance contains the KV pair of the given k
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key to be checked. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](../../../../reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
+| key | string | Yes | Key to be checked. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](docroot://reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
 
 **Return value:**
 
@@ -524,6 +536,7 @@ if (isExist) {
 
 ```
 
+<a id="off"></a>
 ## off('change')
 
 ```TypeScript
@@ -545,7 +558,7 @@ Unsubscribes from data changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. The value is **'change'**, which indicates data changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for data changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for data changes. |
 
 **Error codes:**
 
@@ -573,6 +586,7 @@ preferences.flush().then(() => {
 
 ```
 
+<a id="off-1"></a>
 ## off('multiProcessChange')
 
 ```TypeScript
@@ -594,7 +608,7 @@ Unsubscribes from inter-process data changes.This API is provided for applicatio
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'multiProcessChange' | Yes | Event type. The value is **'multiProcessChange'**, which indicates inter-process data changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for data changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for data changes. |
 
 **Error codes:**
 
@@ -622,6 +636,7 @@ preferences.flush().then(() => {
 
 ```
 
+<a id="off-2"></a>
 ## off('dataChange')
 
 ```TypeScript
@@ -643,8 +658,8 @@ Unsubscribes from changes of specific data.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataChange' | Yes | Event type. The value is **'dataChange'**, which indicates data changes. |
-| keys | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Keys to be unsubscribed from. If this parameter is not specified, this API unsubscribes from the changes of all keys. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<lang.ISendable> | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the changes of the specified data. |
+| keys | Array&lt;string&gt; | Yes | Keys to be unsubscribed from. If this parameter is not specified, this API unsubscribes from the changes of all keys. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;lang.ISendable&gt; | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the changes of the specified data. |
 
 **Error codes:**
 
@@ -675,6 +690,7 @@ preferences.flush().then(() => {
 
 ```
 
+<a id="on"></a>
 ## on('change')
 
 ```TypeScript
@@ -696,7 +712,7 @@ Subscribes to data changes. The registered callback will be invoked to return th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. The value is **'change'**, which indicates data changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | Callback used to return the key whose value is changed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Callback used to return the key whose value is changed. |
 
 **Error codes:**
 
@@ -723,6 +739,7 @@ preferences.flush().then(() => {
 
 ```
 
+<a id="on-1"></a>
 ## on('multiProcessChange')
 
 ```TypeScript
@@ -744,7 +761,7 @@ Subscribes to data changes between processes. When multiple processes hold the s
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'multiProcessChange' | Yes | Event type. The value is **'multiProcessChange'**, which indicates inter-process data changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | Callback used to return the key whose value is changed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Callback used to return the key whose value is changed. |
 
 **Error codes:**
 
@@ -772,6 +789,7 @@ preferences.flush().then(() => {
 
 ```
 
+<a id="on-2"></a>
 ## on('dataChange')
 
 ```TypeScript
@@ -793,8 +811,8 @@ Subscribes to changes of specific data. The registered callback will be invoked 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataChange' | Yes | Event type. The value is **'dataChange'**, which indicates data changes. |
-| keys | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Keys to be observed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<lang.ISendable> | Yes | Callback used to return the KV pairs changed. The keys are the keys observed, and the values are the new values. The values support the following types: number, string,boolean, bigint, and serializable object. |
+| keys | Array&lt;string&gt; | Yes | Keys to be observed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;lang.ISendable&gt; | Yes | Callback used to return the KV pairs changed. The keys are the keys observed, and the values are the new values. The values support the following types: number, string,boolean, bigint, and serializable object. |
 
 **Error codes:**
 
@@ -824,6 +842,7 @@ preferences.flush().then(() => {
 
 ```
 
+<a id="put"></a>
 ## put
 
 ```TypeScript
@@ -844,14 +863,14 @@ Writes data to this **Preferences** instance. This API uses a promise to return 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key to be modified. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](../../../../reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
+| key | string | Yes | Key to be modified. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](docroot://reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
 | value | lang.ISendable | Yes | Value to write. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -874,6 +893,7 @@ promise.then(() => {
 
 ```
 
+<a id="putsync"></a>
 ## putSync
 
 ```TypeScript
@@ -894,7 +914,7 @@ Writes data to this **Preferences** instance. This API returns the result synchr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key to be modified. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](../../../../reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
+| key | string | Yes | Key to be modified. The value cannot be empty, and the maximum length is 1024 bytes. For details,see [MAX_KEY_LENGTH](docroot://reference/apis-arkdata/js-apis-data-sendablePreferences.md#constants). |
 | value | lang.ISendable | Yes | Value to write. |
 
 **Error codes:**

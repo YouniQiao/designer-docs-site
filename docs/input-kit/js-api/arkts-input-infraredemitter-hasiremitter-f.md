@@ -6,6 +6,7 @@
 import { infraredEmitter } from '@kit.InputKit';
 ```
 
+<a id="hasiremitter"></a>
 ## hasIrEmitter
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether the device has an infrared transmitter. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** is returned if the device has an infrared emitter, and **false** is returned if the device does not have an infrared emitter. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** is returned if the device has an infrared emitter, and **false** is returned if the device does not have an infrared emitter. |
 
 **Error codes:**
 

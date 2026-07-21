@@ -6,6 +6,7 @@
 import { distributedBundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getremotebundleversioncode"></a>
 ## getRemoteBundleVersionCode
 
 ```TypeScript
@@ -37,7 +38,7 @@ Obtains the version information of an app with a specified bundle name on a spec
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise object. If the call succeeds, the version information is returned;if the call fails, an error object is returned. |
+| Promise&lt;number&gt; | Promise object. If the call succeeds, the version information is returned;if the call fails, an error object is returned. |
 
 **Error codes:**
 

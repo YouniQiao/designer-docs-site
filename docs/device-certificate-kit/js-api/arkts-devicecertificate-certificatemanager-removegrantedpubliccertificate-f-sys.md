@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="removegrantedpubliccertificate"></a>
 ## removeGrantedPublicCertificate
 
 ```TypeScript
@@ -37,7 +38,7 @@ Removes the permission for an application to use the public credentials of a use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

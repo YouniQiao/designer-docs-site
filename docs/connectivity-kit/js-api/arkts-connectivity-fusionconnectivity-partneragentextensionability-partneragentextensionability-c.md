@@ -16,6 +16,7 @@ Class for the PartnerAgentExtensionAbility.Applications can use this ability to 
 import { PartnerAgentExtensionAbility } from '@kit.ConnectivityKit';
 ```
 
+<a id="ondestroywithreason"></a>
 ## onDestroyWithReason
 
 ```TypeScript
@@ -49,6 +50,7 @@ export default class PartnerAgentExtAbility extends PartnerAgentExtensionAbility
 
 ```
 
+<a id="ondevicediscovered"></a>
 ## onDeviceDiscovered
 
 ```TypeScript

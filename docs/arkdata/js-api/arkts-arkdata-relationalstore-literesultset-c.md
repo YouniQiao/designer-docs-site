@@ -22,6 +22,7 @@ In the following API examples, you need to obtain an **LiteResultSet** instance 
 import { relationalStore } from '@kit.ArkData';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -38,6 +39,7 @@ Closes this **resultSet** to release memory. If the **resultSet** is not closed,
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
+<a id="getasset"></a>
 ## getAsset
 
 ```TypeScript
@@ -77,6 +79,7 @@ If the data type of the current column is Asset, the value is returned as an Ass
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800041](../errorcode-data-rdb.md#14800041-type-conversion-failure) | Type conversion failed. |
 
+<a id="getassets"></a>
 ## getAssets
 
 ```TypeScript
@@ -116,6 +119,7 @@ If the data type of the current column is Assets, the value is returned as Asset
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800041](../errorcode-data-rdb.md#14800041-type-conversion-failure) | Type conversion failed. |
 
+<a id="getblob"></a>
 ## getBlob
 
 ```TypeScript
@@ -146,7 +150,7 @@ If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT,
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Value obtained. |
+| Uint8Array | Value obtained. |
 
 **Error codes:**
 
@@ -157,6 +161,7 @@ If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT,
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800041](../errorcode-data-rdb.md#14800041-type-conversion-failure) | Type conversion failed. |
 
+<a id="getcolumnindex"></a>
 ## getColumnIndex
 
 ```TypeScript
@@ -198,6 +203,7 @@ Obtains the column index based on the column name.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="getcolumnname"></a>
 ## getColumnName
 
 ```TypeScript
@@ -240,6 +246,7 @@ Obtains the column name based on the column index.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="getcolumnnames"></a>
 ## getColumnNames
 
 ```TypeScript
@@ -262,7 +269,7 @@ The column names are returned in a string array. The sequence of strings in the 
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Names of all columns in the result set obtained. Duplicate column names can be obtained. |
+| Array&lt;string&gt; | Names of all columns in the result set obtained. Duplicate column names can be obtained. |
 
 **Error codes:**
 
@@ -277,6 +284,7 @@ The column names are returned in a string array. The sequence of strings in the 
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="getcolumntype"></a>
 ## getColumnType
 
 ```TypeScript
@@ -303,7 +311,7 @@ Obtains the column type based on the specified column index or column name. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ColumnType> | Promise used to return the column type obtained. If the result set contains duplicate column names, the return value is not as expected. |
+| Promise&lt;ColumnType&gt; | Promise used to return the column type obtained. If the result set contains duplicate column names, the return value is not as expected. |
 
 **Error codes:**
 
@@ -320,6 +328,7 @@ Obtains the column type based on the specified column index or column name. This
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="getcolumntypesync"></a>
 ## getColumnTypeSync
 
 ```TypeScript
@@ -363,6 +372,7 @@ Obtains the column type based on the specified column index or column name.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="getcurrentrowdata"></a>
 ## getCurrentRowData
 
 ```TypeScript
@@ -399,6 +409,7 @@ Obtains the values of all columns in this row.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="getdouble"></a>
 ## getDouble
 
 ```TypeScript
@@ -440,6 +451,7 @@ If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT,
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800041](../errorcode-data-rdb.md#14800041-type-conversion-failure) | Type conversion failed. |
 
+<a id="getlong"></a>
 ## getLong
 
 ```TypeScript
@@ -481,6 +493,7 @@ If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT,
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800041](../errorcode-data-rdb.md#14800041-type-conversion-failure) | Type conversion failed. |
 
+<a id="getrow"></a>
 ## getRow
 
 ```TypeScript
@@ -517,6 +530,7 @@ Obtains data for the current row.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="getrows"></a>
 ## getRows
 
 ```TypeScript
@@ -544,7 +558,7 @@ Obtains a specified amount of data from the result set. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ValuesBucket>> | Promise used to return **maxCount** rows of data obtained. If the number of remaining records is less than **maxCount**, the remaining records are returned. Returning an empty array indicates that the end of the result set is reached. If the result set contains duplicate column names,the return values are not as expected. You are advised to use the [getRowsData](arkts-arkdata-relationalstore-literesultset-c.md#getrowsdata-1) API. |
+| Promise&lt;Array&lt;ValuesBucket&gt;&gt; | Promise used to return **maxCount** rows of data obtained. If the number of remaining records is less than **maxCount**, the remaining records are returned. Returning an empty array indicates that the end of the result set is reached. If the result set contains duplicate column names,the return values are not as expected. You are advised to use the [getRowsData](arkts-arkdata-relationalstore-literesultset-c.md#getrowsdata-1) API. |
 
 **Error codes:**
 
@@ -561,6 +575,7 @@ Obtains a specified amount of data from the result set. This API uses a promise 
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 | [14800031](../errorcode-data-rdb.md#14800031-sqlite-text-or-blob-exceeds-the-limit) | SQLite: TEXT or BLOB exceeds size limit. |
 
+<a id="getrowsdata"></a>
 ## getRowsData
 
 ```TypeScript
@@ -588,7 +603,7 @@ Obtains data of a specified number of rows from the specified position. This API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RowsData> | Promise used to return **maxCount** rows of data obtained. If the number of remaining records is less than **maxCount**, the remaining records are returned. Returning an empty array indicates that the end of the result set is reached. The values of columns with the same name can be obtained. |
+| Promise&lt;RowsData&gt; | Promise used to return **maxCount** rows of data obtained. If the number of remaining records is less than **maxCount**, the remaining records are returned. Returning an empty array indicates that the end of the result set is reached. The values of columns with the same name can be obtained. |
 
 **Error codes:**
 
@@ -605,6 +620,7 @@ Obtains data of a specified number of rows from the specified position. This API
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 | [14800031](../errorcode-data-rdb.md#14800031-sqlite-text-or-blob-exceeds-the-limit) | SQLite: TEXT or BLOB exceeds size limit. |
 
+<a id="getstring"></a>
 ## getString
 
 ```TypeScript
@@ -648,6 +664,7 @@ If the data type of the current column is ASSET, ASSETS, FLOATVECTOR, or BIGINT,
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800041](../errorcode-data-rdb.md#14800041-type-conversion-failure) | Type conversion failed. |
 
+<a id="getvalue"></a>
 ## getValue
 
 ```TypeScript
@@ -686,6 +703,7 @@ If the value type is INTEGER and the value is greater than **Number.MAX_SAFE_INT
 | [14800013](../errorcode-data-rdb.md#14800013-null-column-value-or-column-data-type-incompatible-with-the-api-called) | Column index is out of bounds. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="gotonextrow"></a>
 ## goToNextRow
 
 ```TypeScript
@@ -723,6 +741,7 @@ Moves the result set to the next row.
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 | [14800031](../errorcode-data-rdb.md#14800031-sqlite-text-or-blob-exceeds-the-limit) | SQLite: TEXT or BLOB exceeds size limit. |
 
+<a id="iscolumnnull"></a>
 ## isColumnNull
 
 ```TypeScript

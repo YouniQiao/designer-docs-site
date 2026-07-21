@@ -14,6 +14,7 @@ Implements configuration management for captions. Before calling any API of **Ca
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="off"></a>
 ## off('enableChange')
 
 ```TypeScript
@@ -35,7 +36,7 @@ Unsubscribes from the state changes of captions configuration. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'enableChange' | Yes | Event type, which is set to **'enableChange'** in this API. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to unregister. It must be consistent with the callback used in [on('enableChange')](arkts-accessibility-accessibility-captionsmanager-i.md#on-1). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to unregister. It must be consistent with the callback used in [on('enableChange')](accessibility.CaptionsManager.on(type: 'enableChange', callback: Callback<boolean>)). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ struct Index {
 
 ```
 
+<a id="off-1"></a>
 ## off('styleChange')
 
 ```TypeScript
@@ -95,7 +97,7 @@ Unsubscribes from the captions style changes. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'styleChange' | Yes | Event type, which is set to **'styleChange'** in this API. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CaptionsStyle> | No | Callback used to unregister. It must be consistent with the callback used in [on('styleChange')](arkts-accessibility-accessibility-captionsmanager-i.md#on-2). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CaptionsStyle&gt; | No | Callback used to unregister. It must be consistent with the callback used in [on('styleChange')](accessibility.CaptionsManager.on(type: 'styleChange', callback: Callback<CaptionsStyle>)). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
 
 **Error codes:**
 
@@ -134,6 +136,7 @@ struct Index {
 
 ```
 
+<a id="on"></a>
 ## on('enableChange')
 
 ```TypeScript
@@ -148,7 +151,7 @@ Subscribes to the state changes of captions configuration. This API uses an asyn
 > Otherwise, a new underlying object is created each time the function is called, causing memory leakage.  
 >  
 > - After calling this method, you must use  
-> [off('enableChange')](arkts-accessibility-accessibility-captionsmanager-i.md#off-1)  
+> [off('enableChange')](accessibility.CaptionsManager.off(type: 'enableChange', callback?: Callback<boolean>))  
 > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 8
@@ -164,7 +167,7 @@ Subscribes to the state changes of captions configuration. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'enableChange' | Yes | Event type, which is set to **'enableChange'** in this API. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback invoked when the enabled status of captions configuration changes. The value **true** indicates that the subtitle configuration is enabled, and the value **false** indicates that the subtitle configuration is disabled. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback invoked when the enabled status of captions configuration changes. The value **true** indicates that the subtitle configuration is enabled, and the value **false** indicates that the subtitle configuration is disabled. |
 
 **Error codes:**
 
@@ -198,6 +201,7 @@ struct Index {
 
 ```
 
+<a id="on-1"></a>
 ## on('styleChange')
 
 ```TypeScript
@@ -212,7 +216,7 @@ Subscribes to captions style changes. This API uses an asynchronous callback to 
 > Otherwise, a new underlying object is created each time the function is called, causing memory leakage.  
 >  
 > - After calling this method, you must use  
-> [off('styleChange')](arkts-accessibility-accessibility-captionsmanager-i.md#off-2)  
+> [off('styleChange')](accessibility.CaptionsManager.off(type: 'styleChange', callback?: Callback<CaptionsStyle>))  
 > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 8
@@ -228,7 +232,7 @@ Subscribes to captions style changes. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'styleChange' | Yes | Event type, which is set to **'styleChange'** in this API. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CaptionsStyle> | Yes | Callback invoked when the style of captions changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CaptionsStyle&gt; | Yes | Callback invoked when the style of captions changes. |
 
 **Error codes:**
 

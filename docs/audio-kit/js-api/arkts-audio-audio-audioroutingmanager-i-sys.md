@@ -20,6 +20,7 @@ Before calling any API in AudioRoutingManager, you must use [getRoutingManager](
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="excludeoutputdevices"></a>
 ## excludeOutputDevices
 
 ```TypeScript
@@ -50,7 +51,7 @@ Exclude output devices. After calling this function successfully, audio will not
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return result. |
+| Promise&lt;void&gt; | Promise used to return result. |
 
 **Error codes:**
 
@@ -93,6 +94,7 @@ async function excludeOutputDevices(){
 
 ```
 
+<a id="getactiveoutputdevicedescriptors"></a>
 ## getActiveOutputDeviceDescriptors
 
 ```TypeScript
@@ -115,7 +117,7 @@ Gets the active output device descriptors for the current audio device.The activ
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioDeviceDescriptors> | Promise used to get the output device descriptors. |
+| Promise&lt;AudioDeviceDescriptors&gt; | Promise used to get the output device descriptors. |
 
 **Error codes:**
 
@@ -123,6 +125,7 @@ Gets the active output device descriptors for the current audio device.The activ
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not a system application. |
 
+<a id="getexcludeddevices"></a>
 ## getExcludedDevices
 
 ```TypeScript
@@ -172,6 +175,7 @@ async function getExcludedDevices(){
 
 ```
 
+<a id="getpreferredinputdevicebyfilter"></a>
 ## getPreferredInputDeviceByFilter
 
 ```TypeScript
@@ -230,6 +234,7 @@ async function getPreferredInputDeviceByFilter(){
 
 ```
 
+<a id="getpreferredoutputdevicebyfilter"></a>
 ## getPreferredOutputDeviceByFilter
 
 ```TypeScript
@@ -289,6 +294,7 @@ async function selectOutputDeviceByFilter(){
 
 ```
 
+<a id="off"></a>
 ## off('preferredOutputDeviceChangeByFilter')
 
 ```TypeScript
@@ -310,7 +316,7 @@ UnSubscribes to prefer output device change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'preferredOutputDeviceChangeByFilter' | Yes | Type of the event to listen for. Only the preferredOutputDeviceChangeByFilter event is supported. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceDescriptors> | No | Callback used in subscribe. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceDescriptors&gt; | No | Callback used in subscribe. |
 
 **Error codes:**
 
@@ -344,6 +350,7 @@ audioRoutingManager.off('preferredOutputDeviceChangeByFilter', preferredOutputDe
 
 ```
 
+<a id="offpreferredinputdevicechangebyfilter"></a>
 ## offPreferredInputDeviceChangeByFilter
 
 ```TypeScript
@@ -366,7 +373,7 @@ Unsubscribes to preferred input device change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceDescriptors> | No | Callback used in subscribe. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceDescriptors&gt; | No | Callback used in subscribe. |
 
 **Error codes:**
 
@@ -375,6 +382,7 @@ Unsubscribes to preferred input device change events.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | Audio client call audio service error, System error. |
 
+<a id="on"></a>
 ## on('preferredOutputDeviceChangeByFilter')
 
 ```TypeScript
@@ -397,7 +405,7 @@ Subscribes to prefer output device change events. When preferred device for targ
 | --- | --- | --- | --- |
 | type | 'preferredOutputDeviceChangeByFilter' | Yes | Type of the event to listen for. Only the preferredOutputDeviceChangeByFilter event is supported. |
 | filter | [AudioRendererFilter](arkts-audio-audio-audiorendererfilter-i-sys.md) | Yes | Filter for AudioRenderer. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceDescriptors> | Yes | Callback used to obtain the changed prefer devices information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceDescriptors&gt; | Yes | Callback used to obtain the changed prefer devices information. |
 
 **Error codes:**
 
@@ -424,6 +432,7 @@ audioRoutingManager.on('preferredOutputDeviceChangeByFilter', outputAudioRendere
 
 ```
 
+<a id="onpreferredinputdevicechangebyfilter"></a>
 ## onPreferredInputDeviceChangeByFilter
 
 ```TypeScript
@@ -447,7 +456,7 @@ Subscribes to preferred input device change events. When the preferred device fo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | filter | [AudioCapturerFilter](arkts-audio-audio-audiocapturerfilter-i-sys.md) | Yes | Filter for capturer. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceDescriptors> | Yes | Callback to receive information about the changed preferred devices. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceDescriptors&gt; | Yes | Callback to receive information about the changed preferred devices. |
 
 **Error codes:**
 
@@ -457,6 +466,7 @@ Subscribes to preferred input device change events. When the preferred device fo
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | Audio client call audio service error, System error. |
 
+<a id="restoreoutputdevicebyfilter"></a>
 ## restoreOutputDeviceByFilter
 
 ```TypeScript
@@ -485,7 +495,7 @@ Restores the output device for the specified audio renderer filter to the defaul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return result. |
+| Promise&lt;void&gt; | Promise used to return result. |
 
 **Error codes:**
 
@@ -494,6 +504,7 @@ Restores the output device for the specified audio renderer filter to the defaul
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="selectinputdevice"></a>
 ## selectInputDevice
 
 ```TypeScript
@@ -515,7 +526,7 @@ Select the input device. This method uses an asynchronous callback to return the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inputAudioDevices | [AudioDeviceDescriptors](arkts-audio-audio-audiodevicedescriptors-t.md) | Yes | Audio device description |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -550,6 +561,7 @@ async function selectInputDevice(){
 
 ```
 
+<a id="selectinputdevice-1"></a>
 ## selectInputDevice
 
 ```TypeScript
@@ -576,7 +588,7 @@ Select the input device. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -609,6 +621,7 @@ async function getRoutingManager(){
 
 ```
 
+<a id="selectinputdevicebyfilter"></a>
 ## selectInputDeviceByFilter
 
 ```TypeScript
@@ -636,7 +649,7 @@ Select the input device with desired AudioCapturer. This method uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -686,6 +699,7 @@ async function selectInputDeviceByFilter(){
 
 ```
 
+<a id="selectoutputdevice"></a>
 ## selectOutputDevice
 
 ```TypeScript
@@ -707,7 +721,7 @@ Select the output device. This method uses an asynchronous callback to return th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | outputAudioDevices | [AudioDeviceDescriptors](arkts-audio-audio-audiodevicedescriptors-t.md) | Yes | Audio device description |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -741,6 +755,7 @@ async function selectOutputDevice(){
 
 ```
 
+<a id="selectoutputdevice-1"></a>
 ## selectOutputDevice
 
 ```TypeScript
@@ -767,7 +782,7 @@ Select the output device. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -800,6 +815,7 @@ async function selectOutputDevice(){
 
 ```
 
+<a id="selectoutputdevicebyfilter"></a>
 ## selectOutputDeviceByFilter
 
 ```TypeScript
@@ -822,7 +838,7 @@ Select the output device with desired AudioRenderer. This method uses an asynchr
 | --- | --- | --- | --- |
 | filter | [AudioRendererFilter](arkts-audio-audio-audiorendererfilter-i-sys.md) | Yes | Filter for AudioRenderer. |
 | outputAudioDevices | [AudioDeviceDescriptors](arkts-audio-audio-audiodevicedescriptors-t.md) | Yes | Audio device description. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -865,6 +881,7 @@ async function selectOutputDeviceByFilter(){
 
 ```
 
+<a id="selectoutputdevicebyfilter-1"></a>
 ## selectOutputDeviceByFilter
 
 ```TypeScript
@@ -892,7 +909,7 @@ Select the output device with desired AudioRenderer. This method uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -934,6 +951,7 @@ async function selectOutputDeviceByFilter(){
 
 ```
 
+<a id="selectoutputdevicebyfilter-2"></a>
 ## selectOutputDeviceByFilter
 
 ```TypeScript
@@ -962,7 +980,7 @@ Select the output device with desired AudioRenderer. This method uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1009,6 +1027,7 @@ audioRoutingManager.selectOutputDeviceByFilter(outputAudioRendererFilter, output
 
 ```
 
+<a id="unexcludeoutputdevices"></a>
 ## unexcludeOutputDevices
 
 ```TypeScript
@@ -1039,7 +1058,7 @@ Unexclude output devices. This function will unexclude target output devices bel
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return result. |
+| Promise&lt;void&gt; | Promise used to return result. |
 
 **Error codes:**
 
@@ -1082,6 +1101,7 @@ async function unexcludeOutputDevices(){
 
 ```
 
+<a id="unexcludeoutputdevices-1"></a>
 ## unexcludeOutputDevices
 
 ```TypeScript
@@ -1111,7 +1131,7 @@ Unexclude output devices. This function will unexclude all output devices belong
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return result. |
+| Promise&lt;void&gt; | Promise used to return result. |
 
 **Error codes:**
 

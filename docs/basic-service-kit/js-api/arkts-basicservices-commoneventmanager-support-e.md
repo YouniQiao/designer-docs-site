@@ -790,7 +790,7 @@ Indicates that a user switchover is complete.
 
 When a system account is switched, the common event service is triggered to publish this event carrying the system account ID.
 
-The system API related to this common event is **activateOsAccount**. For details, see [@ohos.account.osAccount (System Account Management)](../../../../reference/js-apis-osAccount.md).
+The system API related to this common event is **activateOsAccount**. For details, see [@ohos.account.osAccount (System Account Management)](docroot://reference/js-apis-osAccount.md).
 
 To subscribe to this common event, your application must have the ohos.permission.MANAGE_LOCAL_ACCOUNTS permission (before API version 21); ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission (since API version 21).
 
@@ -872,7 +872,7 @@ Indicates a successful login from a distributed account.
 
 When a distributed account is successfully logged in, the event notification service is triggered to publish this event carrying the OS account ID and the sub-profile ID.
 
-APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](../../../../reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
 
 **Since:** 9
 
@@ -892,7 +892,7 @@ Indicates a successful logout from a distributed account.
 
 When a distributed account is successfully logged out, the event notification service is triggered to publish this event carrying the OS account ID and the sub-profile ID.
 
-APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](../../../../reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
 
 **Since:** 9
 
@@ -912,7 +912,7 @@ Indicates that the token of a distributed account is invalid.
 
 When the token of a distributed account is invalid, the event notification service is triggered to publish this event carrying the OS account ID and the sub-profile ID.
 
-APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](../../../../reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
 
 **Since:** 9
 
@@ -932,7 +932,7 @@ Indicates that a distributed account is deregistered.
 
 When a distributed account is deregistered, the event notification service is triggered to publish this event carrying the OS account ID and the sub-profile ID.
 
-APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](../../../../reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
 
 **Since:** 9
 
@@ -2115,7 +2115,7 @@ Indicates that a user has been added to the system.
 
 When a system account is created, the common event service is triggered to publish this event carrying the system account ID.
 
-The system APIs related to this common event are **createOsAccount** and **createOsAccountForDomain**. For details, see [@ohos.account.osAccount (System Account Management)](../../../../reference/js-apis-osAccount.md).
+The system APIs related to this common event are **createOsAccount** and **createOsAccountForDomain**. For details, see [@ohos.account.osAccount (System Account Management)](docroot://reference/js-apis-osAccount.md).
 
 To subscribe to this common event, your application must have the ohos.permission.MANAGE_LOCAL_ACCOUNTS permission.(This permission is available only for system applications.)
 
@@ -2135,7 +2135,7 @@ Indicates that a user has been removed from the system.
 
 When a system account is removed, the common event service is triggered to publish this event carrying the system account ID.
 
-The system API related to this common event is **removeOsAccount**. For details, see [@ohos.account.osAccount (System Account Management)](../../../../reference/js-apis-osAccount.md).
+The system API related to this common event is **removeOsAccount**. For details, see [@ohos.account.osAccount (System Account Management)](docroot://reference/js-apis-osAccount.md).
 
 To subscribe to this common event, your application must have the ohos.permission.MANAGE_LOCAL_ACCOUNTS permission.(This permission is available only for system applications.)
 
@@ -2799,7 +2799,7 @@ Indicates that the user information has been updated.
 
 When the distributed account information, system account profile picture, or system account name is changed, the event notification service is triggered to publish this event carrying the system account ID.
 
-APIs related to this event: **setOsAccountName**, **setOsAccountProfilePhoto**, and **setOsAccountDistributedInfo**. The first two are system APIs, and the last is a public API. For details, see [@ohos.account.osAccount (System Account Management)](../../../../reference/js-apis-osAccount.md) and [@ohos.account.distributedAccount (Distributed Account Management)](../../../../reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountName**, **setOsAccountProfilePhoto**, and **setOsAccountDistributedInfo**. The first two are system APIs, and the last is a public API. For details, see [@ohos.account.osAccount (System Account Management)](docroot://reference/js-apis-osAccount.md) and [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
 
 **Since:** 9
 

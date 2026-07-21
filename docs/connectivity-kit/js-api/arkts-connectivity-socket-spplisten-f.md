@@ -6,6 +6,7 @@
 import { socket } from '@kit.ConnectivityKit';
 ```
 
+<a id="spplisten"></a>
 ## sppListen
 
 ```TypeScript
@@ -28,7 +29,7 @@ Creates a Bluetooth server listening socket.
 | --- | --- | --- | --- |
 | name | string | Yes | Indicates the service name. |
 | options | [SppOptions](arkts-connectivity-socket-sppoptions-i.md) | Yes | Indicates the listen parameters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return a server socket ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return a server socket ID. |
 
 **Error codes:**
 

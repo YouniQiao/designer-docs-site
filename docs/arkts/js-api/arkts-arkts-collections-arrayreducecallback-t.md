@@ -21,14 +21,14 @@ Defines the ArkTS Array reduction function, which is used by the 'reduceRight' A
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| previousValue | AccType | Yes | Accumulated value of the current traversal. |
-| currentValue | ElementType | Yes | Element that is being traversed in the ArkTS array. |
-| currentIndex | number | Yes | Index of the element in the ArkTS array. |
-| array | ArrayType | Yes | ArkTS array that is being traversed. |
+| previousValue | AccType | Yes | Accumulated value of the current traversal.  |
+| currentValue | ElementType | Yes | Element that is being traversed in the ArkTS array.  |
+| currentIndex | number | Yes | Index of the element in the ArkTS array.  |
+| array | ArrayType | Yes | ArkTS array that is being traversed.  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| AccType | The result of the reduction. |
+| AccType | The result of the reduction.  |
 

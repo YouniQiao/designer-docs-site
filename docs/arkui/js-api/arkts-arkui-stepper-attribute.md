@@ -14,6 +14,7 @@ Defines the stepper attribute functions
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -40,8 +41,9 @@ Triggered when the step navigation switches by clicking [prevLabel](StepperItemA
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (prevIndex: number, index: number) => void | Yes | Callback triggered when the page is switched.<br/>prevIndex: Index of the step page before the switching.<br>Value range:[0, +∞).<br/>index: Index of the step page after the switching, that is, index of the previous or next page.<br>Value range: [0, +∞). |
+| callback | (prevIndex: number, index: number) =&gt; void | Yes | Callback triggered when the page is switched.<br/>prevIndex: Index of the step page before the switching.<br>Value range:[0, +∞).<br/>index: Index of the step page after the switching, that is, index of the previous or next page.<br>Value range: [0, +∞). |
 
+<a id="onfinish"></a>
 ## onFinish
 
 ```TypeScript
@@ -68,8 +70,9 @@ Triggered when [nextLabel](StepperItemAttribute#nextLabel) of the last [StepperI
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () => void | Yes | Invoked when the **nextLabel** of the last **StepperItem** in the **Stepper** is clicked and the **ItemState** attribute is set to **Normal**. |
+| callback | () =&gt; void | Yes | Invoked when the **nextLabel** of the last **StepperItem** in the **Stepper** is clicked and the **ItemState** attribute is set to **Normal**. |
 
+<a id="onnext"></a>
 ## onNext
 
 ```TypeScript
@@ -96,8 +99,9 @@ Triggered when switching to the next step by clicking [nextLabel](StepperItemAtt
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (index: number, pendingIndex: number) => void | Yes | Callback triggered when the page is switched.<br/>index: Index of the current step page.<br/>pendingIndex: Index of the next step page. |
+| callback | (index: number, pendingIndex: number) =&gt; void | Yes | Callback triggered when the page is switched.<br/>index: Index of the current step page.<br/>pendingIndex: Index of the next step page. |
 
+<a id="onprevious"></a>
 ## onPrevious
 
 ```TypeScript
@@ -124,8 +128,9 @@ Triggered when switching to the previous step by clicking [prevLabel](StepperIte
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (index: number, pendingIndex: number) => void | Yes | Callback triggered when the page is switched.<br/>index: Index of the current step page.<br/>pendingIndex: Index of the next step page. |
+| callback | (index: number, pendingIndex: number) =&gt; void | Yes | Callback triggered when the page is switched.<br/>index: Index of the current step page.<br/>pendingIndex: Index of the next step page. |
 
+<a id="onskip"></a>
 ## onSkip
 
 ```TypeScript
@@ -152,5 +157,5 @@ Triggered when [nextLabel](StepperItemAttribute#nextLabel) is clicked and the [S
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | () => void | Yes | Invoked when the current **StepperItem** is **ItemState.Skip** and the **nextLabel** is clicked. |
+| callback | () =&gt; void | Yes | Invoked when the current **StepperItem** is **ItemState.Skip** and the **nextLabel** is clicked. |
 

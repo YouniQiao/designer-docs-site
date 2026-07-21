@@ -14,6 +14,7 @@ Represents a download task, You can use this object to operate the corresponding
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -30,6 +31,7 @@ Cancel the web download.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="deserialize"></a>
 ## deserialize
 
 ```TypeScript
@@ -50,7 +52,7 @@ Deserialize web download from typed array.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| serializedData | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The serialized data. |
+| serializedData | Uint8Array | Yes | The serialized data. |
 
 **Return value:**
 
@@ -64,6 +66,7 @@ Deserialize web download from typed array.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types.<br>2. Parameter verification failed. |
 
+<a id="getcurrentspeed"></a>
 ## getCurrentSpeed
 
 ```TypeScript
@@ -86,6 +89,7 @@ Get current speed, in bytes per second.
 | --- | --- |
 | number | - Returns the current download speed. |
 
+<a id="getfullpath"></a>
 ## getFullPath
 
 ```TypeScript
@@ -108,6 +112,7 @@ Get full path of the web download.
 | --- | --- |
 | string | - Returns the full path of the download. |
 
+<a id="getguid"></a>
 ## getGuid
 
 ```TypeScript
@@ -130,6 +135,7 @@ Get guid.
 | --- | --- |
 | string | - Returns the download's guid. |
 
+<a id="getlasterrorcode"></a>
 ## getLastErrorCode
 
 ```TypeScript
@@ -152,6 +158,7 @@ Get last error code of the web download.
 | --- | --- |
 | [WebDownloadErrorCode](arkts-arkweb-webview-webdownloaderrorcode-e.md) | - Returns the last error code. |
 
+<a id="getmethod"></a>
 ## getMethod
 
 ```TypeScript
@@ -174,6 +181,7 @@ Get http method of the web download request.
 | --- | --- |
 | string | - Returns the http request method. |
 
+<a id="getmimetype"></a>
 ## getMimeType
 
 ```TypeScript
@@ -196,6 +204,7 @@ Get mime type of the web download.
 | --- | --- |
 | string | - Returns the mimetype. |
 
+<a id="getoriginalurl"></a>
 ## getOriginalUrl
 
 ```TypeScript
@@ -218,6 +227,7 @@ Get the original url of the web download.
 | --- | --- |
 | string | - Returns the original url of the download. |
 
+<a id="getpercentcomplete"></a>
 ## getPercentComplete
 
 ```TypeScript
@@ -240,6 +250,7 @@ Get percent complete.
 | --- | --- |
 | number | - Returns -1 if progress is unknown. 100 if the download is already complete. |
 
+<a id="getreceivedbytes"></a>
 ## getReceivedBytes
 
 ```TypeScript
@@ -262,6 +273,7 @@ Get received bytes.
 | --- | --- |
 | number | - Returns the received bytes. |
 
+<a id="getreferrerurl"></a>
 ## getReferrerUrl
 
 ```TypeScript
@@ -284,6 +296,7 @@ Get the referrer url of the web download.
 | --- | --- |
 | string | - Returns the referrer url of the download. |
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript
@@ -306,6 +319,7 @@ Get state of the web download.
 | --- | --- |
 | [WebDownloadState](arkts-arkweb-webview-webdownloadstate-e.md) | - Returns the current download state. |
 
+<a id="getsuggestedfilename"></a>
 ## getSuggestedFileName
 
 ```TypeScript
@@ -328,6 +342,7 @@ Get suggested file name of the web download request.
 | --- | --- |
 | string | - Returns the suggested file name. |
 
+<a id="gettotalbytes"></a>
 ## getTotalBytes
 
 ```TypeScript
@@ -350,6 +365,7 @@ Get total bytes.
 | --- | --- |
 | number | - Returns the total bytes received, -1 if the total size is unknown. |
 
+<a id="geturl"></a>
 ## getUrl
 
 ```TypeScript
@@ -372,6 +388,7 @@ Get url of the web download request.
 | --- | --- |
 | string | - Returns the url. |
 
+<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -394,6 +411,7 @@ Pause the web download.
 | --- | --- |
 | [17100019](../errorcode-webview.md#17100019-download-not-started-yet) | The download task is not started yet. |
 
+<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -416,6 +434,7 @@ Resume the web download.Use WebDownloadManager.resumeDownload to resume deserial
 | --- | --- |
 | [17100016](../errorcode-webview.md#17100016-download-task-not-paused) | The download task is not paused. |
 
+<a id="serialize"></a>
 ## serialize
 
 ```TypeScript
@@ -436,8 +455,9 @@ Serialize web download to typed array.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | - Returns the serialized data. |
+| Uint8Array | - Returns the serialized data. |
 
+<a id="start"></a>
 ## start
 
 ```TypeScript

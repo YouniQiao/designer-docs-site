@@ -6,6 +6,7 @@
 import { scriptManager } from '@kit.AbilityKit';
 ```
 
+<a id="completearktsscriptinapp"></a>
 ## completeArkTSScriptInApp
 
 ```TypeScript
@@ -36,7 +37,7 @@ complete arkTS script for in-app skills.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - The promise returned by the function. |
+| Promise&lt;void&gt; | - The promise returned by the function. |
 
 **Error codes:**
 

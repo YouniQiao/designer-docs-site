@@ -1,5 +1,6 @@
 # hash
 
+<a id="hash"></a>
 ## hash
 
 ```TypeScript
@@ -29,9 +30,10 @@ Calculates the hash value of a file. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise that returns the hash value. The hash value is a hexadecimal string consisting of digits and uppercase letters. |
+| Promise&lt;string&gt; | Promise that returns the hash value. The hash value is a hexadecimal string consisting of digits and uppercase letters. |
 
 
+<a id="hash-1"></a>
 ## hash
 
 ```TypeScript
@@ -56,5 +58,5 @@ Calculates the hash value of a file. This API uses an asynchronous callback to r
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file. |
 | algorithm | string | Yes | Algorithm used to calculate the hash value. The value can be **md5**, **sha1**, or **sha256**. **sha256** is recommended for security purposes. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the hash value obtained. The hash value is a hexadecimal string consisting of digits and uppercase letters. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the hash value obtained. The hash value is a hexadecimal string consisting of digits and uppercase letters. |
 

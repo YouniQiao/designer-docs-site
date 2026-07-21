@@ -8,6 +8,7 @@
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -28,6 +29,7 @@ Constructs a 2D change matrix object. The default value is the unit matrix.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="identity"></a>
 ## identity
 
 ```TypeScript
@@ -54,6 +56,7 @@ Transforms the current 2D matrix back to the identity matrix (i.e., without any 
 | --- | --- |
 | [Matrix2D](arkts-arkui-canvaspattern-matrix2d-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@famodelonly@form@atomicservice |
 
+<a id="invert"></a>
 ## invert
 
 ```TypeScript
@@ -80,6 +83,7 @@ Transform the current 2D matrix into an inverse matrix (that is, the transformat
 | --- | --- |
 | [Matrix2D](arkts-arkui-canvaspattern-matrix2d-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@famodelonly@form@atomicservice |
 
+<a id="multiply"></a>
 ## multiply
 
 ```TypeScript
@@ -112,6 +116,7 @@ The matrix is superimposed in right multiplication mode. When the input paramete
 | --- | --- |
 | [Matrix2D](arkts-arkui-canvaspattern-matrix2d-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@famodelonly@form@atomicservice |
 
+<a id="rotate"></a>
 ## rotate
 
 ```TypeScript
@@ -145,6 +150,7 @@ Adds the rotation effect of the X and Y axes to the current matrix.
 | --- | --- |
 | [Matrix2D](arkts-arkui-canvaspattern-matrix2d-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@famodelonly@form@atomicservice |
 
+<a id="scale"></a>
 ## scale
 
 ```TypeScript
@@ -178,6 +184,7 @@ Adds the scaling effect of the X and Y axes to the current matrix.
 | --- | --- |
 | [Matrix2D](arkts-arkui-canvaspattern-matrix2d-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Full@famodelonly@form@atomicservice |
 
+<a id="translate"></a>
 ## translate
 
 ```TypeScript

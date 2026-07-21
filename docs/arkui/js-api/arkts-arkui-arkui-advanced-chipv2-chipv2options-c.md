@@ -4,6 +4,8 @@ Defines chip options class.
 
 **Since:** 26.0.0
 
+**Decorator:** @ObservedV2
+
 <!--Device-unnamed-export class ChipV2Options--><!--Device-unnamed-export class ChipV2Options-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -14,6 +16,7 @@ Defines chip options class.
 import { ChipV2SuffixSymbolIconConfig, ChipV2Label, ChipV2PrefixSymbolIconConfig, IChipV2OptionsConfig, ChipV2SymbolIcon, ChipV2SuffixImageIconConfig, ChipV2LocalizedLabelMarginConfig, ChipV2SymbolIconConfig, ChipV2LabelConfig, ChipV2SuffixSymbolIcon, ChipV2AccessibilityConfig, ChipV2Icon, ChipV2Size, ChipV2CloseConfig, ChipV2SuffixImageIcon, ChipV2Accessibility, ChipV2Options, ChipV2ImageIconConfig, ChipV2ImageIcon, ChipV2PrefixImageIcon, ChipV2LabelMarginConfig, ChipV2PrefixSymbolIcon, ChipV2, ChipV2CloseIcon, ChipV2PrefixImageIconConfig, ChipV2AccessibilitySelectedType } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -346,7 +349,7 @@ public maxFontScale?: number | Resource
 
 Maximum font scale for Chip.
 
-**Type:** number | Resource
+**Type:** number \| Resource
 
 **Since:** 26.0.0
 
@@ -366,7 +369,7 @@ public minFontScale?: number | Resource
 
 Minimum font scale for Chip.
 
-**Type:** number | Resource
+**Type:** number \| Resource
 
 **Since:** 26.0.0
 
@@ -386,7 +389,7 @@ public onClicked?: Callback<void>
 
 On clicked action.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 26.0.0
 
@@ -466,7 +469,7 @@ public size?: ChipV2Size | SizeT<LengthMetrics>
 
 Chip size.
 
-**Type:** ChipV2Size | SizeT<LengthMetrics>
+**Type:** ChipV2Size \| SizeT&lt;LengthMetrics&gt;
 
 **Since:** 26.0.0
 

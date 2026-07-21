@@ -6,6 +6,7 @@
 import { statistics } from '@kit.NetworkKit';
 ```
 
+<a id="on"></a>
 ## on('netStatsChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Register notifications of network traffic updates.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'netStatsChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetStatsChangeInfo> | Yes | The callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetStatsChangeInfo&gt; | Yes | The callback of on. |
 
 **Error codes:**
 

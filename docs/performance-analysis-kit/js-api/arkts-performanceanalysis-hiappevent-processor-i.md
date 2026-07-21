@@ -106,7 +106,7 @@ Custom extended parameters. If the input parameter name and value do not meet th
 
 **Atomic service API**: This parameter can be used in atomic services since API version 12.
 
-**Type:** Record<string, string>
+**Type:** Record&lt;string, string&gt;
 
 **Since:** 12
 

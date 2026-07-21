@@ -22,7 +22,7 @@ import { audioHaptic } from '@kit.AudioKit';
 
 | Name | Description |
 | --- | --- |
-| [getAudioHapticManager](arkts-audio-audiohaptic-getaudiohapticmanager-f.md#getaudiohapticmanager-1) | Obtains an {@link AudioHapticManager} instance. This object is singleton in one process. |
+| [getAudioHapticManager](arkts-audio-audiohaptic-getaudiohapticmanager-f.md#getaudiohapticmanager) | Obtains an {@link AudioHapticManager} instance. This object is singleton in one process. |
 
 ### Interfaces
 

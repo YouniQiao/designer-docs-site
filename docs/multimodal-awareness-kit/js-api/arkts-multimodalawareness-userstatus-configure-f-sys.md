@@ -6,6 +6,7 @@
 import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="configure"></a>
 ## configure
 
 ```TypeScript

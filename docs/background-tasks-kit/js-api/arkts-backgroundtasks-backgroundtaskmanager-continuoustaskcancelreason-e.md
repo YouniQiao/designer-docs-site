@@ -70,7 +70,7 @@ A continuous task of the DATA_TRANSFER type is requested, but the data transmiss
 SYSTEM_CANCEL_AUDIO_PLAYBACK_NOT_USE_AVSESSION = 5
 ```
 
-A continuous task of the AUDIO_PLAYBACK type is requested, but the [AVSession](../../../../media/avsession/avsession-overview.md) is not accessed. This value is reserved.
+A continuous task of the AUDIO_PLAYBACK type is requested, but the [AVSession](docroot://media/avsession/avsession-overview.md) is not accessed. This value is reserved.
 
 **Since:** 15
 

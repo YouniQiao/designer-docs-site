@@ -14,6 +14,7 @@ Represents a class for defining a uniform data type. It provides properties and 
 import { uniformTypeDescriptor } from '@kit.ArkData';
 ```
 
+<a id="belongsto"></a>
 ## belongsTo
 
 ```TypeScript
@@ -67,6 +68,7 @@ try{
 
 ```
 
+<a id="equals"></a>
 ## equals
 
 ```TypeScript
@@ -120,6 +122,7 @@ try{
 
 ```
 
+<a id="ishigherleveltype"></a>
 ## isHigherLevelType
 
 ```TypeScript
@@ -173,6 +176,7 @@ try{
 
 ```
 
+<a id="islowerleveltype"></a>
 ## isLowerLevelType
 
 ```TypeScript
@@ -234,7 +238,7 @@ set belongingToTypes(value: Array<string>)
 
 Uniform data type IDs that the uniform data type belongs to.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 11
 
@@ -270,7 +274,7 @@ set filenameExtensions(value: Array<string>)
 
 File name extensions for the uniform data type.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 12
 
@@ -306,7 +310,7 @@ set mimeTypes(value: Array<string>)
 
 MIMETypes of the uniform data type.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 12
 

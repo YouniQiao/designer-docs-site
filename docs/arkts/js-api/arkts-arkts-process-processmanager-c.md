@@ -16,6 +16,7 @@ Construct a **ProcessManager** object.
 import { process } from '@kit.ArkTS';
 ```
 
+<a id="exit"></a>
 ## exit
 
 ```TypeScript
@@ -48,6 +49,7 @@ pro.exit(0);
 
 ```
 
+<a id="getenvironmentvar"></a>
 ## getEnvironmentVar
 
 ```TypeScript
@@ -89,6 +91,7 @@ let pres = pro.getEnvironmentVar("PATH");
 
 ```
 
+<a id="getsystemconfig"></a>
 ## getSystemConfig
 
 ```TypeScript
@@ -126,6 +129,7 @@ let pres = pro.getSystemConfig(_SC_ARG_MAX);
 
 ```
 
+<a id="getthreadpriority"></a>
 ## getThreadPriority
 
 ```TypeScript
@@ -163,6 +167,7 @@ let pres = pro.getThreadPriority(tid);
 
 ```
 
+<a id="getuidforname"></a>
 ## getUidForName
 
 ```TypeScript
@@ -199,6 +204,7 @@ let pres = pro.getUidForName("tool");
 
 ```
 
+<a id="isappuid"></a>
 ## isAppUid
 
 ```TypeScript
@@ -238,6 +244,7 @@ console.info("result: " + result); // result: true
 
 ```
 
+<a id="kill"></a>
 ## kill
 
 ```TypeScript
@@ -258,7 +265,7 @@ Sends a signal to the specified process to terminate it. Only the current proces
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| signal | number | Yes | Signal to send. Value range: 1 &lt;= signal &lt;= 64. |
+| signal | number | Yes | Signal to send. Value range: 1 <= signal <= 64. |
 | pid | number | Yes | PID of the process, to which the signal will be sent. |
 
 **Return value:**

@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getnetworkcapability"></a>
 ## getNetworkCapability
 
 ```TypeScript
@@ -33,7 +34,7 @@ Get the network capability state according to the specified capability type.
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | type | [NetworkCapabilityType](arkts-telephony-radio-networkcapabilitytype-e-sys.md) | Yes | Indicates the service type of the {@link NetworkCapabilityType}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetworkCapabilityState> | Yes | Indicates the callback for getting the network capability state. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetworkCapabilityState&gt; | Yes | Indicates the callback for getting the network capability state. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ radio.getNetworkCapability(slotId, type, (err: BusinessError, data: radio.Networ
 ```
 
 
+<a id="getnetworkcapability-1"></a>
 ## getNetworkCapability
 
 ```TypeScript
@@ -94,7 +96,7 @@ Get the network capability state according to the specified capability type.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetworkCapabilityState> | Returns the callback for getting the network capability state. |
+| Promise&lt;NetworkCapabilityState&gt; | Returns the callback for getting the network capability state. |
 
 **Error codes:**
 

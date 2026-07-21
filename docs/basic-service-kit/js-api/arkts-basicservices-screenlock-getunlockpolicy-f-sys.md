@@ -6,6 +6,7 @@
 import { screenLock } from '@kit.BasicServicesKit';
 ```
 
+<a id="getunlockpolicy"></a>
 ## getUnlockPolicy
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { workScheduler } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="islastworktimeout"></a>
 ## isLastWorkTimeOut
 
 ```TypeScript
@@ -18,7 +19,7 @@ Checks whether the last execution of a task timed out. This API uses an asynchro
 
 **Deprecated since:** 10
 
-**Substitutes:** isLastWorkTimeOut(workId:
+**Substitutes:** [isLastWorkTimeOut(workId:](arkts-backgroundtasks-workscheduler-islastworktimeout-f.md#islastworktimeout-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -31,7 +32,7 @@ Checks whether the last execution of a task timed out. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | workId | number | Yes | ID of the deferred task. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Return value:**
 
@@ -50,6 +51,7 @@ Checks whether the last execution of a task timed out. This API uses an asynchro
 | [9700004](../../apis-backgroundtasks-kit/errorcode-workScheduler.md#9700004-workinfo-verification-failure) | Check on workInfo failed. |
 
 
+<a id="islastworktimeout-1"></a>
 ## isLastWorkTimeOut
 
 ```TypeScript
@@ -71,7 +73,7 @@ Checks whether the last execution of a task timed out. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | workId | number | Yes | ID of the deferred task. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -100,6 +102,7 @@ Checks whether the last execution of a task timed out. This API uses an asynchro
 ```
 
 
+<a id="islastworktimeout-2"></a>
 ## isLastWorkTimeOut
 
 ```TypeScript
@@ -126,7 +129,7 @@ Checks whether the last execution of a task timed out. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the last execution of the specified task times out, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the last execution of the specified task times out, and **false** means the opposite. |
 
 **Error codes:**
 

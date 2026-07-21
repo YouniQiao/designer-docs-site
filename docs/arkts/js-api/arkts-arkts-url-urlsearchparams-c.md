@@ -18,6 +18,7 @@ The URLSearchParams interface defines some practical methods to process URL quer
 import { url } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -40,7 +41,7 @@ Returns an iterator allowing to go through all key/value pairs contained in this
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[string, string]> | Returns an ES6 iterator. Each item of the iterator is a JavaScript Array.The first item of Array is name, and the second item of Array is value. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[string, string]&gt; | Returns an ES6 iterator. Each item of the iterator is a JavaScript Array.The first item of Array is name, and the second item of Array is value. |
 
 **Example**
 
@@ -55,6 +56,7 @@ for (let pair of pairs) {
 
 ```
 
+<a id="append"></a>
 ## append
 
 ```TypeScript
@@ -89,6 +91,7 @@ paramsObject.append('fod', '3');
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -111,7 +114,7 @@ A parameterized constructor used to create an URLSearchParams instance.As the in
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| init | string[][] \| Record<string, string> \| string \| URLSearchParams | No | init init |
+| init | string[][] \| Record&lt;string, string&gt; \| string \| URLSearchParams | No | init init |
 
 **Example**
 
@@ -124,6 +127,7 @@ let params = new url.URLSearchParams(urlObject.search);
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -157,6 +161,7 @@ paramsObject.delete('fod');
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -179,7 +184,7 @@ Returns an ES6 iterator. Each item of the iterator is a JavaScript Array.The fir
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[string, string]> | Returns an iterator for ES6. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[string, string]&gt; | Returns an iterator for ES6. |
 
 **Example**
 
@@ -194,6 +199,7 @@ for (let pair of iter) {
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -216,8 +222,8 @@ Callback functions are used to traverse key-value pairs on the URLSearchParams i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: string, key: string, searchParams: URLSearchParams) => void | Yes | The callback function to execute for each key-value pair |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | The value to use as this when executing callbackFn |
+| callbackFn | (value: string, key: string, searchParams: URLSearchParams) =&gt; void | Yes | The callback function to execute for each key-value pair |
+| thisArg | Object | No | The value to use as this when executing callbackFn |
 
 **Example**
 
@@ -229,6 +235,7 @@ myURLObject.searchParams.forEach((value, name, searchParams) => {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -269,6 +276,7 @@ let getObj = paramsObject.get("abc"); // undefined
 
 ```
 
+<a id="getall"></a>
 ## getAll
 
 ```TypeScript
@@ -309,6 +317,7 @@ console.info(params.getAll('fod').toString()) // Output ["1","3"].
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -348,6 +357,7 @@ paramsObject.has('bard') === true;
 
 ```
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -370,7 +380,7 @@ Returns an iterator allowing to go through all keys contained in this object.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<string> | Returns an ES6 Iterator over the names of each name-value pair. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;string&gt; | Returns an ES6 Iterator over the names of each name-value pair. |
 
 **Example**
 
@@ -385,6 +395,7 @@ for (let key of keys) {
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -419,6 +430,7 @@ paramsObject.set('baz', '3'); // Add a third parameter.
 
 ```
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -446,6 +458,7 @@ console.info(searchParamsObject.toString()); // Display the sorted query string 
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -480,6 +493,7 @@ console.info(params.toString()); // Output 'fod=1&bard=2&fod=3'
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -502,7 +516,7 @@ Returns an iterator allowing to go through all values contained in this object.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<string> | Returns an ES6 Iterator over the values of each name-value pair. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;string&gt; | Returns an ES6 Iterator over the values of each name-value pair. |
 
 **Example**
 

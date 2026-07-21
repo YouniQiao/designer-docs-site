@@ -28,6 +28,7 @@
 import { update } from '@kit.BasicServicesKit';
 ```
 
+<a id="applynewversion"></a>
 ## applyNewVersion
 
 ```TypeScript
@@ -63,8 +64,8 @@ applyNewVersion(upgradeFiles: Array<UpgradeFile>, callback: AsyncCallback<void>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| upgradeFiles | [Array](../../apis-arkts/arkts-apis/arkts-arkts-collections-array-c.md)<UpgradeFile> | 是 | 升级文件数组，用于指定要安装的本地升级包列表。必须先调用verifyUpgradePackage校验升级包并校验通过后才能使用此参数安装。每个元素包含fileType(文件类型)和filePath(文件路径)字段，filePath长度范围[1，255]，单位：字符。超出范围时抛出异常，由开发者提供升级包文件路径。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收安装升级包结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
+| upgradeFiles | Array&lt;UpgradeFile&gt; | 是 | 升级文件数组，用于指定要安装的本地升级包列表。必须先调用verifyUpgradePackage校验升级包并校验通过后才能使用此参数安装。每个元素包含fileType(文件类型)和filePath(文件路径)字段，filePath长度范围[1，255]，单位：字符。超出范围时抛出异常，由开发者提供升级包文件路径。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收安装升级包结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
 
 **错误码：**
 
@@ -102,6 +103,7 @@ try {
 
 ```
 
+<a id="applynewversion-1"></a>
 ## applyNewVersion
 
 ```TypeScript
@@ -137,13 +139,13 @@ applyNewVersion(upgradeFiles: Array<UpgradeFile>): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| upgradeFiles | [Array](../../apis-arkts/arkts-apis/arkts-arkts-collections-array-c.md)<UpgradeFile> | 是 | 升级文件数组，用于指定要安装的本地升级包列表。必须先调用verifyUpgradePackage校验升级包并校验通过后才能使用此参数安装。每个元素包含fileType(文件类型)和filePath(文件路径)字段，filePath长度范围[1，255], 单位：字符。超出范围时抛出异常，由开发者提供升级包文件路径。 |
+| upgradeFiles | Array&lt;UpgradeFile&gt; | 是 | 升级文件数组，用于指定要安装的本地升级包列表。必须先调用verifyUpgradePackage校验升级包并校验通过后才能使用此参数安装。每个元素包含fileType(文件类型)和filePath(文件路径)字段，filePath长度范围[1，255], 单位：字符。超出范围时抛出异常，由开发者提供升级包文件路径。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -179,6 +181,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -212,7 +215,7 @@ off(eventClassifyInfo: EventClassifyInfo, taskCallback?: UpgradeTaskCallback): v
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | eventClassifyInfo | [EventClassifyInfo](arkts-basicservices-update-eventclassifyinfo-i-sys.md) | 是 | 事件信息对象（EventClassifyInfo），用于指定要取消监听的升级事件类型。必须先通过on方法注册监听后才能使用此参数取消监听。 |
-| taskCallback | [UpgradeTaskCallback](arkts-basicservices-update-upgradetaskcallback-t-sys.md) | 否 | 事件回调，用于取消指定回调监听。回调签名：(eventInfo: EventInfo) =&gt; void，其中eventInfo为事件信息对象，包含eventId和taskBody字段。当需要取消特定回调监听时传入此参数；不传入此参数时默认为undefined，表示取消该事件类型的所有监听。 |
+| taskCallback | [UpgradeTaskCallback](arkts-basicservices-update-upgradetaskcallback-t-sys.md) | 否 | 事件回调，用于取消指定回调监听。回调签名：(eventInfo: EventInfo) => void，其中eventInfo为事件信息对象，包含eventId和taskBody字段。当需要取消特定回调监听时传入此参数；不传入此参数时默认为undefined，表示取消该事件类型的所有监听。 |
 
 **错误码：**
 
@@ -243,6 +246,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -281,7 +285,7 @@ on(eventClassifyInfo: EventClassifyInfo, taskCallback: UpgradeTaskCallback): voi
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | eventClassifyInfo | [EventClassifyInfo](arkts-basicservices-update-eventclassifyinfo-i-sys.md) | 是 | 事件信息对象(EventClassifyInfo)，用于指定要注册监听的升级事件类型。 |
-| taskCallback | [UpgradeTaskCallback](arkts-basicservices-update-upgradetaskcallback-t-sys.md) | 是 | 事件回调，用于接收升级任务事件通知。回调签名：(eventInfo: EventInfo) =&gt; void，其中eventInfo为事件信息对象，包含eventId（事件ID）和taskBody（任务数据）字段。 |
+| taskCallback | [UpgradeTaskCallback](arkts-basicservices-update-upgradetaskcallback-t-sys.md) | 是 | 事件回调，用于接收升级任务事件通知。回调签名：(eventInfo: EventInfo) => void，其中eventInfo为事件信息对象，包含eventId（事件ID）和taskBody（任务数据）字段。 |
 
 **错误码：**
 
@@ -312,6 +316,7 @@ try {
 
 ```
 
+<a id="verifyupgradepackage"></a>
 ## verifyUpgradePackage
 
 ```TypeScript
@@ -353,7 +358,7 @@ verifyUpgradePackage(upgradeFile: UpgradeFile, certsFile: string, callback: Asyn
 | --- | --- | --- | --- |
 | upgradeFile | [UpgradeFile](arkts-basicservices-update-upgradefile-i-sys.md) | 是 | 升级文件（UpgradeFile），包含文件类型和文件路径，用于指定要校验的本地升级包。 |
 | certsFile | string | 是 | 证书文件路径，用于校验升级包签名。证书文件必须从设备厂商官网下载，确保来源可信。支持绝对路径或相对路径，路径长度范围[1，255]，单位：字符。仅支持字母、数字、下划线、连字符、点号和斜杠等路径合法字符。超出长度范围或包含无效字符时抛出异常。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收校验结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收校验结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
 
 **错误码：**
 
@@ -394,6 +399,7 @@ try {
 
 ```
 
+<a id="verifyupgradepackage-1"></a>
 ## verifyUpgradePackage
 
 ```TypeScript
@@ -436,7 +442,7 @@ verifyUpgradePackage(upgradeFile: UpgradeFile, certsFile: string): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 

@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="gethidelaunchericon"></a>
 ## getHideLauncherIcon
 
 ```TypeScript
@@ -28,13 +29,13 @@ Gets applications that hide launcher icons.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | admin indicates the enterprise admin extension ability information. |
+| admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) \| null | Yes | admin indicates the enterprise admin extension ability information. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | the bundle name list of the applications. |
+| Array&lt;string&gt; | the bundle name list of the applications. |
 
 **Error codes:**
 

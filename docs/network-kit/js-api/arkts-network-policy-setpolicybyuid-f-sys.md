@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="setpolicybyuid"></a>
 ## setPolicyByUid
 
 ```TypeScript
@@ -30,7 +31,7 @@ Set the policy for the specified UID.
 | --- | --- | --- | --- |
 | uid | number | Yes | the specified UID of application. |
 | policy | [NetUidPolicy](arkts-network-policy-netuidpolicy-e-sys.md) | Yes | the policy of the current UID of application.For details, see {@link NetUidPolicy}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setPolicyByUid. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setPolicyByUid. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ policy.setPolicyByUid(11111, policy.NetUidPolicy.NET_POLICY_NONE, (error: Busine
 ```
 
 
+<a id="setpolicybyuid-1"></a>
 ## setPolicyByUid
 
 ```TypeScript
@@ -84,7 +86,7 @@ Set the policy for the specified UID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

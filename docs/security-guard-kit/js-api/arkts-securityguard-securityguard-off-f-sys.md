@@ -6,6 +6,7 @@
 import { securityGuard } from '@kit.SecurityGuardKit';
 ```
 
+<a id="off"></a>
 ## off('securityEventOccur')
 
 ```TypeScript
@@ -30,7 +31,7 @@ Unsubscribe the security event.
 | --- | --- | --- | --- |
 | type | 'securityEventOccur' | Yes |  |
 | securityEventInfo | [SecurityEventInfo](arkts-securityguard-securityguard-securityeventinfo-i-sys.md) | Yes | Indicates the subscribed event information. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<SecurityEvent> | No | Indicates the listener when the security event occurs. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;SecurityEvent&gt; | No | Indicates the listener when the security event occurs. |
 
 **Error codes:**
 

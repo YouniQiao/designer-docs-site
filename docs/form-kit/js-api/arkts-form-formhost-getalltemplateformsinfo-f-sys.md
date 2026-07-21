@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="getalltemplateformsinfo"></a>
 ## getAllTemplateFormsInfo
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the template widget information provided by all applications on the devi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<formInfo.FormInfo>> | Promise used to return the information obtained. |
+| Promise&lt;Array&lt;formInfo.FormInfo&gt;&gt; | Promise used to return the information obtained. |
 
 **Error codes:**
 

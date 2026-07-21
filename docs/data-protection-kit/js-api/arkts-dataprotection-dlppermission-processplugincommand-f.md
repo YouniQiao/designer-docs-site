@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="processplugincommand"></a>
 ## processPluginCommand
 
 ```TypeScript
@@ -35,7 +36,7 @@ Process the plugin-related commands in the transparent encryption and decryption
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. |
+| Promise&lt;string&gt; | Promise used to return the result. |
 
 **Error codes:**
 

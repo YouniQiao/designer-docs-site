@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="connecttocandidateconfigwithuseraction"></a>
 ## connectToCandidateConfigWithUserAction
 
 ```TypeScript
@@ -34,7 +35,7 @@ Connect to a specified candidate hotspot by networkId, and wait for user respond
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Returns the promise object that used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | - Returns the promise object that used to return the operation result.If the operation fails, an error message is returned. |
 
 **Error codes:**
 

@@ -18,6 +18,7 @@ Provides APIs for reading and writing data in specific format. During RPC, the s
 import { rpc } from '@kit.IPCKit';
 ```
 
+<a id="closefiledescriptor"></a>
 ## closeFileDescriptor
 
 ```TypeScript
@@ -30,7 +31,7 @@ Closes a file descriptor. This API is a static method.
 
 **Deprecated since:** 9
 
-**Substitutes:** closeFileDescriptor(fd:
+**Substitutes:** [closeFileDescriptor(fd:](arkts-ipc-rpc-messagesequence-c.md#closefiledescriptor-1)
 
 <!--Device-MessageParcel-static closeFileDescriptor(fd: number): void--><!--Device-MessageParcel-static closeFileDescriptor(fd: number): void-End-->
 
@@ -59,6 +60,7 @@ try {
 
 ```
 
+<a id="containfiledescriptors"></a>
 ## containFileDescriptors
 
 ```TypeScript
@@ -104,6 +106,7 @@ try {
 
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -116,7 +119,7 @@ Creates a **MessageParcel** object. This method is a static method.
 
 **Deprecated since:** 9
 
-**Substitutes:** create()
+**Substitutes:** [create()](arkts-ipc-rpc-messagesequence-c.md#create-1)
 
 <!--Device-MessageParcel-static create(): MessageParcel--><!--Device-MessageParcel-static create(): MessageParcel-End-->
 
@@ -146,6 +149,7 @@ try {
 
 ```
 
+<a id="dupfiledescriptor"></a>
 ## dupFileDescriptor
 
 ```TypeScript
@@ -158,7 +162,7 @@ Duplicates a file descriptor. This API is a static method.
 
 **Deprecated since:** 9
 
-**Substitutes:** dupFileDescriptor(fd:
+**Substitutes:** [dupFileDescriptor(fd:](arkts-ipc-rpc-messagesequence-c.md#dupfiledescriptor-1)
 
 <!--Device-MessageParcel-static dupFileDescriptor(fd: number): number--><!--Device-MessageParcel-static dupFileDescriptor(fd: number): number-End-->
 
@@ -193,6 +197,7 @@ try {
 
 ```
 
+<a id="getcapacity"></a>
 ## getCapacity
 
 ```TypeScript
@@ -233,6 +238,7 @@ try {
 
 ```
 
+<a id="getrawdatacapacity"></a>
 ## getRawDataCapacity
 
 ```TypeScript
@@ -273,6 +279,7 @@ try {
 
 ```
 
+<a id="getreadposition"></a>
 ## getReadPosition
 
 ```TypeScript
@@ -313,6 +320,7 @@ try {
 
 ```
 
+<a id="getreadablebytes"></a>
 ## getReadableBytes
 
 ```TypeScript
@@ -354,6 +362,7 @@ try {
 
 ```
 
+<a id="getsize"></a>
 ## getSize
 
 ```TypeScript
@@ -395,6 +404,7 @@ try {
 
 ```
 
+<a id="getwritablebytes"></a>
 ## getWritableBytes
 
 ```TypeScript
@@ -436,6 +446,7 @@ try {
 
 ```
 
+<a id="getwriteposition"></a>
 ## getWritePosition
 
 ```TypeScript
@@ -477,6 +488,7 @@ try {
 
 ```
 
+<a id="readashmem"></a>
 ## readAshmem
 
 ```TypeScript
@@ -520,6 +532,7 @@ try {
 
 ```
 
+<a id="readboolean"></a>
 ## readBoolean
 
 ```TypeScript
@@ -562,6 +575,7 @@ try {
 
 ```
 
+<a id="readbooleanarray"></a>
 ## readBooleanArray
 
 ```TypeScript
@@ -574,7 +588,7 @@ Reads the Boolean array from this **MessageParcel** object and writes it to the 
 
 **Deprecated since:** 9
 
-**Substitutes:** readBooleanArray(dataIn:
+**Substitutes:** [readBooleanArray(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readbooleanarray-1)
 
 <!--Device-MessageParcel-readBooleanArray(dataIn: boolean[]): void--><!--Device-MessageParcel-readBooleanArray(dataIn: boolean[]): void-End-->
 
@@ -605,6 +619,7 @@ try {
 
 ```
 
+<a id="readbooleanarray-1"></a>
 ## readBooleanArray
 
 ```TypeScript
@@ -617,7 +632,7 @@ Reads the Boolean array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readBooleanArray()](arkts-ipc-rpc-messagesequence-c.md#readbooleanarray-2)
+**Substitutes:** [readBooleanArray()](arkts-ipc-rpc-messagesequence-c.md#readbooleanarray-1)
 
 <!--Device-MessageParcel-readBooleanArray(): boolean[]--><!--Device-MessageParcel-readBooleanArray(): boolean[]-End-->
 
@@ -647,6 +662,7 @@ try {
 
 ```
 
+<a id="readbyte"></a>
 ## readByte
 
 ```TypeScript
@@ -689,6 +705,7 @@ try {
 
 ```
 
+<a id="readbytearray"></a>
 ## readByteArray
 
 ```TypeScript
@@ -701,7 +718,7 @@ Reads the byte array from this **MessageParcel** object and writes it to the cre
 
 **Deprecated since:** 9
 
-**Substitutes:** readByteArray(dataIn:
+**Substitutes:** [readByteArray(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readbytearray-1)
 
 <!--Device-MessageParcel-readByteArray(dataIn: number[]): void--><!--Device-MessageParcel-readByteArray(dataIn: number[]): void-End-->
 
@@ -732,6 +749,7 @@ try {
 
 ```
 
+<a id="readbytearray-1"></a>
 ## readByteArray
 
 ```TypeScript
@@ -744,7 +762,7 @@ Reads the byte array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readByteArray()](arkts-ipc-rpc-messagesequence-c.md#readbytearray-2)
+**Substitutes:** [readByteArray()](arkts-ipc-rpc-messagesequence-c.md#readbytearray-1)
 
 <!--Device-MessageParcel-readByteArray(): number[]--><!--Device-MessageParcel-readByteArray(): number[]-End-->
 
@@ -775,6 +793,7 @@ try {
 
 ```
 
+<a id="readchar"></a>
 ## readChar
 
 ```TypeScript
@@ -817,6 +836,7 @@ try {
 
 ```
 
+<a id="readchararray"></a>
 ## readCharArray
 
 ```TypeScript
@@ -829,7 +849,7 @@ Reads the character array from this **MessageParcel** object and writes it to th
 
 **Deprecated since:** 9
 
-**Substitutes:** readCharArray(dataIn:
+**Substitutes:** [readCharArray(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readchararray-1)
 
 <!--Device-MessageParcel-readCharArray(dataIn: number[]): void--><!--Device-MessageParcel-readCharArray(dataIn: number[]): void-End-->
 
@@ -860,6 +880,7 @@ try {
 
 ```
 
+<a id="readchararray-1"></a>
 ## readCharArray
 
 ```TypeScript
@@ -872,7 +893,7 @@ Reads the single character array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readCharArray()](arkts-ipc-rpc-messagesequence-c.md#readchararray-2)
+**Substitutes:** [readCharArray()](arkts-ipc-rpc-messagesequence-c.md#readchararray-1)
 
 <!--Device-MessageParcel-readCharArray(): number[]--><!--Device-MessageParcel-readCharArray(): number[]-End-->
 
@@ -902,6 +923,7 @@ try {
 
 ```
 
+<a id="readdouble"></a>
 ## readDouble
 
 ```TypeScript
@@ -944,6 +966,7 @@ try {
 
 ```
 
+<a id="readdoublearray"></a>
 ## readDoubleArray
 
 ```TypeScript
@@ -956,7 +979,7 @@ Reads the double array from this **MessageParcel** object and writes it to the c
 
 **Deprecated since:** 9
 
-**Substitutes:** readDoubleArray(dataIn:
+**Substitutes:** [readDoubleArray(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readdoublearray-1)
 
 <!--Device-MessageParcel-readDoubleArray(dataIn: number[]): void--><!--Device-MessageParcel-readDoubleArray(dataIn: number[]): void-End-->
 
@@ -987,6 +1010,7 @@ try {
 
 ```
 
+<a id="readdoublearray-1"></a>
 ## readDoubleArray
 
 ```TypeScript
@@ -999,7 +1023,7 @@ Reads the double array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readDoubleArray()](arkts-ipc-rpc-messagesequence-c.md#readdoublearray-2)
+**Substitutes:** [readDoubleArray()](arkts-ipc-rpc-messagesequence-c.md#readdoublearray-1)
 
 <!--Device-MessageParcel-readDoubleArray(): number[]--><!--Device-MessageParcel-readDoubleArray(): number[]-End-->
 
@@ -1029,6 +1053,7 @@ try {
 
 ```
 
+<a id="readexception"></a>
 ## readException
 
 ```TypeScript
@@ -1125,6 +1150,7 @@ try {
 
 ```
 
+<a id="readfiledescriptor"></a>
 ## readFileDescriptor
 
 ```TypeScript
@@ -1169,6 +1195,7 @@ try {
 
 ```
 
+<a id="readfloat"></a>
 ## readFloat
 
 ```TypeScript
@@ -1211,6 +1238,7 @@ try {
 
 ```
 
+<a id="readfloatarray"></a>
 ## readFloatArray
 
 ```TypeScript
@@ -1223,7 +1251,7 @@ Reads the double array from this **MessageParcel** object and writes it to the c
 
 **Deprecated since:** 9
 
-**Substitutes:** readFloatArray(dataIn:
+**Substitutes:** [readFloatArray(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readfloatarray-1)
 
 <!--Device-MessageParcel-readFloatArray(dataIn: number[]): void--><!--Device-MessageParcel-readFloatArray(dataIn: number[]): void-End-->
 
@@ -1254,6 +1282,7 @@ try {
 
 ```
 
+<a id="readfloatarray-1"></a>
 ## readFloatArray
 
 ```TypeScript
@@ -1266,7 +1295,7 @@ Reads the double array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readFloatArray()](arkts-ipc-rpc-messagesequence-c.md#readfloatarray-2)
+**Substitutes:** [readFloatArray()](arkts-ipc-rpc-messagesequence-c.md#readfloatarray-1)
 
 <!--Device-MessageParcel-readFloatArray(): number[]--><!--Device-MessageParcel-readFloatArray(): number[]-End-->
 
@@ -1296,6 +1325,7 @@ try {
 
 ```
 
+<a id="readint"></a>
 ## readInt
 
 ```TypeScript
@@ -1338,6 +1368,7 @@ try {
 
 ```
 
+<a id="readintarray"></a>
 ## readIntArray
 
 ```TypeScript
@@ -1350,7 +1381,7 @@ Reads the integer array from this **MessageParcel** object and writes it to the 
 
 **Deprecated since:** 9
 
-**Substitutes:** readIntArray(dataIn:
+**Substitutes:** [readIntArray(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readintarray-1)
 
 <!--Device-MessageParcel-readIntArray(dataIn: number[]): void--><!--Device-MessageParcel-readIntArray(dataIn: number[]): void-End-->
 
@@ -1381,6 +1412,7 @@ try {
 
 ```
 
+<a id="readintarray-1"></a>
 ## readIntArray
 
 ```TypeScript
@@ -1393,7 +1425,7 @@ Reads the integer array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readIntArray()](arkts-ipc-rpc-messagesequence-c.md#readintarray-2)
+**Substitutes:** [readIntArray()](arkts-ipc-rpc-messagesequence-c.md#readintarray-1)
 
 <!--Device-MessageParcel-readIntArray(): number[]--><!--Device-MessageParcel-readIntArray(): number[]-End-->
 
@@ -1423,6 +1455,7 @@ try {
 
 ```
 
+<a id="readinterfacetoken"></a>
 ## readInterfaceToken
 
 ```TypeScript
@@ -1464,6 +1497,7 @@ try {
 
 ```
 
+<a id="readlong"></a>
 ## readLong
 
 ```TypeScript
@@ -1506,6 +1540,7 @@ try {
 
 ```
 
+<a id="readlongarray"></a>
 ## readLongArray
 
 ```TypeScript
@@ -1518,7 +1553,7 @@ Reads the long array from this **MessageParcel** object and writes it to the cre
 
 **Deprecated since:** 9
 
-**Substitutes:** readLongArray(dataIn:
+**Substitutes:** [readLongArray(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readlongarray-1)
 
 <!--Device-MessageParcel-readLongArray(dataIn: number[]): void--><!--Device-MessageParcel-readLongArray(dataIn: number[]): void-End-->
 
@@ -1549,6 +1584,7 @@ try {
 
 ```
 
+<a id="readlongarray-1"></a>
 ## readLongArray
 
 ```TypeScript
@@ -1561,7 +1597,7 @@ Reads the long array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readLongArray()](arkts-ipc-rpc-messagesequence-c.md#readlongarray-2)
+**Substitutes:** [readLongArray()](arkts-ipc-rpc-messagesequence-c.md#readlongarray-1)
 
 <!--Device-MessageParcel-readLongArray(): number[]--><!--Device-MessageParcel-readLongArray(): number[]-End-->
 
@@ -1591,6 +1627,7 @@ try {
 
 ```
 
+<a id="readrawdata"></a>
 ## readRawData
 
 ```TypeScript
@@ -1603,7 +1640,7 @@ Reads raw data from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** readRawDataBuffer(size:
+**Substitutes:** [readRawDataBuffer(size:](arkts-ipc-rpc-messagesequence-c.md#readrawdatabuffer-1)
 
 <!--Device-MessageParcel-readRawData(size: number): number[]--><!--Device-MessageParcel-readRawData(size: number): number[]-End-->
 
@@ -1640,6 +1677,7 @@ try {
 
 ```
 
+<a id="readremoteobject"></a>
 ## readRemoteObject
 
 ```TypeScript
@@ -1693,6 +1731,7 @@ try {
 
 ```
 
+<a id="readremoteobjectarray"></a>
 ## readRemoteObjectArray
 
 ```TypeScript
@@ -1705,7 +1744,7 @@ Reads the **IRemoteObject** array from this **MessageParcel** object and writes 
 
 **Deprecated since:** 9
 
-**Substitutes:** readRemoteObjectArray(objects:
+**Substitutes:** [readRemoteObjectArray(objects:](arkts-ipc-rpc-messagesequence-c.md#readremoteobjectarray-1)
 
 <!--Device-MessageParcel-readRemoteObjectArray(objects: IRemoteObject[]): void--><!--Device-MessageParcel-readRemoteObjectArray(objects: IRemoteObject[]): void-End-->
 
@@ -1748,6 +1787,7 @@ try {
 
 ```
 
+<a id="readremoteobjectarray-1"></a>
 ## readRemoteObjectArray
 
 ```TypeScript
@@ -1760,7 +1800,7 @@ Reads the **IRemoteObject** array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** readRemoteObjectArray(objects:
+**Substitutes:** [readRemoteObjectArray(objects:](arkts-ipc-rpc-messagesequence-c.md#readremoteobjectarray-1)
 
 <!--Device-MessageParcel-readRemoteObjectArray(): IRemoteObject[]--><!--Device-MessageParcel-readRemoteObjectArray(): IRemoteObject[]-End-->
 
@@ -1803,6 +1843,7 @@ try {
 
 ```
 
+<a id="readsequenceable"></a>
 ## readSequenceable
 
 ```TypeScript
@@ -1815,7 +1856,7 @@ Reads member variables from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** readParcelable(dataIn:
+**Substitutes:** [readParcelable(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readparcelable-1)
 
 <!--Device-MessageParcel-readSequenceable(dataIn: Sequenceable): boolean--><!--Device-MessageParcel-readSequenceable(dataIn: Sequenceable): boolean-End-->
 
@@ -1872,6 +1913,7 @@ try {
 
 ```
 
+<a id="readsequenceablearray"></a>
 ## readSequenceableArray
 
 ```TypeScript
@@ -1884,7 +1926,7 @@ Reads the **Sequenceable** array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** readParcelableArray(parcelableArray:
+**Substitutes:** [readParcelableArray(parcelableArray:](arkts-ipc-rpc-messagesequence-c.md#readparcelablearray-1)
 
 <!--Device-MessageParcel-readSequenceableArray(sequenceableArray: Sequenceable[]): void--><!--Device-MessageParcel-readSequenceableArray(sequenceableArray: Sequenceable[]): void-End-->
 
@@ -1937,6 +1979,7 @@ try {
 
 ```
 
+<a id="readshort"></a>
 ## readShort
 
 ```TypeScript
@@ -1979,6 +2022,7 @@ try {
 
 ```
 
+<a id="readshortarray"></a>
 ## readShortArray
 
 ```TypeScript
@@ -1991,7 +2035,7 @@ Reads the short array from this **MessageParcel** object and writes it to the cr
 
 **Deprecated since:** 9
 
-**Substitutes:** readShortArray(dataIn:
+**Substitutes:** [readShortArray(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readshortarray-1)
 
 <!--Device-MessageParcel-readShortArray(dataIn: number[]): void--><!--Device-MessageParcel-readShortArray(dataIn: number[]): void-End-->
 
@@ -2022,6 +2066,7 @@ try {
 
 ```
 
+<a id="readshortarray-1"></a>
 ## readShortArray
 
 ```TypeScript
@@ -2034,7 +2079,7 @@ Reads the short array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readShortArray()](arkts-ipc-rpc-messagesequence-c.md#readshortarray-2)
+**Substitutes:** [readShortArray()](arkts-ipc-rpc-messagesequence-c.md#readshortarray-1)
 
 <!--Device-MessageParcel-readShortArray(): number[]--><!--Device-MessageParcel-readShortArray(): number[]-End-->
 
@@ -2064,6 +2109,7 @@ try {
 
 ```
 
+<a id="readstring"></a>
 ## readString
 
 ```TypeScript
@@ -2106,6 +2152,7 @@ try {
 
 ```
 
+<a id="readstringarray"></a>
 ## readStringArray
 
 ```TypeScript
@@ -2118,7 +2165,7 @@ Reads the string array from this **MessageParcel** object and writes it to the c
 
 **Deprecated since:** 9
 
-**Substitutes:** readStringArray(dataIn:
+**Substitutes:** [readStringArray(dataIn:](arkts-ipc-rpc-messagesequence-c.md#readstringarray-1)
 
 <!--Device-MessageParcel-readStringArray(dataIn: string[]): void--><!--Device-MessageParcel-readStringArray(dataIn: string[]): void-End-->
 
@@ -2149,6 +2196,7 @@ try {
 
 ```
 
+<a id="readstringarray-1"></a>
 ## readStringArray
 
 ```TypeScript
@@ -2161,7 +2209,7 @@ Reads the string array from this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readStringArray()](arkts-ipc-rpc-messagesequence-c.md#readstringarray-2)
+**Substitutes:** [readStringArray()](arkts-ipc-rpc-messagesequence-c.md#readstringarray-1)
 
 <!--Device-MessageParcel-readStringArray(): string[]--><!--Device-MessageParcel-readStringArray(): string[]-End-->
 
@@ -2191,6 +2239,7 @@ try {
 
 ```
 
+<a id="reclaim"></a>
 ## reclaim
 
 ```TypeScript
@@ -2224,6 +2273,7 @@ try {
 
 ```
 
+<a id="rewindread"></a>
 ## rewindRead
 
 ```TypeScript
@@ -2236,7 +2286,7 @@ Moves the read pointer to the specified position.
 
 **Deprecated since:** 9
 
-**Substitutes:** rewindRead(pos:
+**Substitutes:** [rewindRead(pos:](arkts-ipc-rpc-messagesequence-c.md#rewindread-1)
 
 <!--Device-MessageParcel-rewindRead(pos: number): boolean--><!--Device-MessageParcel-rewindRead(pos: number): boolean-End-->
 
@@ -2275,6 +2325,7 @@ try {
 
 ```
 
+<a id="rewindwrite"></a>
 ## rewindWrite
 
 ```TypeScript
@@ -2287,7 +2338,7 @@ Moves the write pointer to the specified position.
 
 **Deprecated since:** 9
 
-**Substitutes:** rewindWrite(pos:
+**Substitutes:** [rewindWrite(pos:](arkts-ipc-rpc-messagesequence-c.md#rewindwrite-1)
 
 <!--Device-MessageParcel-rewindWrite(pos: number): boolean--><!--Device-MessageParcel-rewindWrite(pos: number): boolean-End-->
 
@@ -2324,6 +2375,7 @@ try {
 
 ```
 
+<a id="setcapacity"></a>
 ## setCapacity
 
 ```TypeScript
@@ -2336,7 +2388,7 @@ Sets the storage capacity of this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** setCapacity(size:
+**Substitutes:** [setCapacity(size:](arkts-ipc-rpc-messagesequence-c.md#setcapacity-1)
 
 <!--Device-MessageParcel-setCapacity(size: number): boolean--><!--Device-MessageParcel-setCapacity(size: number): boolean-End-->
 
@@ -2370,6 +2422,7 @@ try {
 
 ```
 
+<a id="setsize"></a>
 ## setSize
 
 ```TypeScript
@@ -2382,7 +2435,7 @@ Sets the size of data contained in this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** setSize(size:
+**Substitutes:** [setSize(size:](arkts-ipc-rpc-messagesequence-c.md#setsize-1)
 
 <!--Device-MessageParcel-setSize(size: number): boolean--><!--Device-MessageParcel-setSize(size: number): boolean-End-->
 
@@ -2416,6 +2469,7 @@ try {
 
 ```
 
+<a id="writeashmem"></a>
 ## writeAshmem
 
 ```TypeScript
@@ -2428,7 +2482,7 @@ Writes an anonymous shared object to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeAshmem(ashmem:
+**Substitutes:** [writeAshmem(ashmem:](arkts-ipc-rpc-messagesequence-c.md#writeashmem-1)
 
 <!--Device-MessageParcel-writeAshmem(ashmem: Ashmem): boolean--><!--Device-MessageParcel-writeAshmem(ashmem: Ashmem): boolean-End-->
 
@@ -2463,6 +2517,7 @@ try {
 
 ```
 
+<a id="writeboolean"></a>
 ## writeBoolean
 
 ```TypeScript
@@ -2475,7 +2530,7 @@ Writes a Boolean value to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeBoolean(val:
+**Substitutes:** [writeBoolean(val:](arkts-ipc-rpc-messagesequence-c.md#writeboolean-1)
 
 <!--Device-MessageParcel-writeBoolean(val: boolean): boolean--><!--Device-MessageParcel-writeBoolean(val: boolean): boolean-End-->
 
@@ -2509,6 +2564,7 @@ try {
 
 ```
 
+<a id="writebooleanarray"></a>
 ## writeBooleanArray
 
 ```TypeScript
@@ -2521,7 +2577,7 @@ Writes a Boolean array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeBooleanArray(booleanArray:
+**Substitutes:** [writeBooleanArray(booleanArray:](arkts-ipc-rpc-messagesequence-c.md#writebooleanarray-1)
 
 <!--Device-MessageParcel-writeBooleanArray(booleanArray: boolean[]): boolean--><!--Device-MessageParcel-writeBooleanArray(booleanArray: boolean[]): boolean-End-->
 
@@ -2555,6 +2611,7 @@ try {
 
 ```
 
+<a id="writebyte"></a>
 ## writeByte
 
 ```TypeScript
@@ -2567,7 +2624,7 @@ Writes a Byte value to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeByte(val:
+**Substitutes:** [writeByte(val:](arkts-ipc-rpc-messagesequence-c.md#writebyte-1)
 
 <!--Device-MessageParcel-writeByte(val: number): boolean--><!--Device-MessageParcel-writeByte(val: number): boolean-End-->
 
@@ -2601,6 +2658,7 @@ try {
 
 ```
 
+<a id="writebytearray"></a>
 ## writeByteArray
 
 ```TypeScript
@@ -2613,7 +2671,7 @@ Writes a byte array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeByteArray(byteArray:
+**Substitutes:** [writeByteArray(byteArray:](arkts-ipc-rpc-messagesequence-c.md#writebytearray-1)
 
 <!--Device-MessageParcel-writeByteArray(byteArray: number[]): boolean--><!--Device-MessageParcel-writeByteArray(byteArray: number[]): boolean-End-->
 
@@ -2648,6 +2706,7 @@ try {
 
 ```
 
+<a id="writechar"></a>
 ## writeChar
 
 ```TypeScript
@@ -2660,7 +2719,7 @@ Writes a single character value to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeChar(val:
+**Substitutes:** [writeChar(val:](arkts-ipc-rpc-messagesequence-c.md#writechar-1)
 
 <!--Device-MessageParcel-writeChar(val: number): boolean--><!--Device-MessageParcel-writeChar(val: number): boolean-End-->
 
@@ -2694,6 +2753,7 @@ try {
 
 ```
 
+<a id="writechararray"></a>
 ## writeCharArray
 
 ```TypeScript
@@ -2706,7 +2766,7 @@ Writes a single character array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeCharArray(charArray:
+**Substitutes:** [writeCharArray(charArray:](arkts-ipc-rpc-messagesequence-c.md#writechararray-1)
 
 <!--Device-MessageParcel-writeCharArray(charArray: number[]): boolean--><!--Device-MessageParcel-writeCharArray(charArray: number[]): boolean-End-->
 
@@ -2740,6 +2800,7 @@ try {
 
 ```
 
+<a id="writedouble"></a>
 ## writeDouble
 
 ```TypeScript
@@ -2752,7 +2813,7 @@ Writes a double value to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeDouble(val:
+**Substitutes:** [writeDouble(val:](arkts-ipc-rpc-messagesequence-c.md#writedouble-1)
 
 <!--Device-MessageParcel-writeDouble(val: number): boolean--><!--Device-MessageParcel-writeDouble(val: number): boolean-End-->
 
@@ -2786,6 +2847,7 @@ try {
 
 ```
 
+<a id="writedoublearray"></a>
 ## writeDoubleArray
 
 ```TypeScript
@@ -2798,7 +2860,7 @@ Writes a double array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeDoubleArray(doubleArray:
+**Substitutes:** [writeDoubleArray(doubleArray:](arkts-ipc-rpc-messagesequence-c.md#writedoublearray-1)
 
 <!--Device-MessageParcel-writeDoubleArray(doubleArray: number[]): boolean--><!--Device-MessageParcel-writeDoubleArray(doubleArray: number[]): boolean-End-->
 
@@ -2832,6 +2894,7 @@ try {
 
 ```
 
+<a id="writefiledescriptor"></a>
 ## writeFileDescriptor
 
 ```TypeScript
@@ -2844,7 +2907,7 @@ Writes a file descriptor to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeFileDescriptor(fd:
+**Substitutes:** [writeFileDescriptor(fd:](arkts-ipc-rpc-messagesequence-c.md#writefiledescriptor-1)
 
 <!--Device-MessageParcel-writeFileDescriptor(fd: number): boolean--><!--Device-MessageParcel-writeFileDescriptor(fd: number): boolean-End-->
 
@@ -2881,6 +2944,7 @@ try {
 
 ```
 
+<a id="writefloat"></a>
 ## writeFloat
 
 ```TypeScript
@@ -2893,7 +2957,7 @@ Writes a double value to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeFloat(val:
+**Substitutes:** [writeFloat(val:](arkts-ipc-rpc-messagesequence-c.md#writefloat-1)
 
 <!--Device-MessageParcel-writeFloat(val: number): boolean--><!--Device-MessageParcel-writeFloat(val: number): boolean-End-->
 
@@ -2927,6 +2991,7 @@ try {
 
 ```
 
+<a id="writefloatarray"></a>
 ## writeFloatArray
 
 ```TypeScript
@@ -2939,7 +3004,7 @@ Writes a double array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeFloatArray(floatArray:
+**Substitutes:** [writeFloatArray(floatArray:](arkts-ipc-rpc-messagesequence-c.md#writefloatarray-1)
 
 <!--Device-MessageParcel-writeFloatArray(floatArray: number[]): boolean--><!--Device-MessageParcel-writeFloatArray(floatArray: number[]): boolean-End-->
 
@@ -2973,6 +3038,7 @@ try {
 
 ```
 
+<a id="writeint"></a>
 ## writeInt
 
 ```TypeScript
@@ -2985,7 +3051,7 @@ Writes an int value to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeInt(val:
+**Substitutes:** [writeInt(val:](arkts-ipc-rpc-messagesequence-c.md#writeint-1)
 
 <!--Device-MessageParcel-writeInt(val: number): boolean--><!--Device-MessageParcel-writeInt(val: number): boolean-End-->
 
@@ -3019,6 +3085,7 @@ try {
 
 ```
 
+<a id="writeintarray"></a>
 ## writeIntArray
 
 ```TypeScript
@@ -3031,7 +3098,7 @@ Writes an integer array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeIntArray(intArray:
+**Substitutes:** [writeIntArray(intArray:](arkts-ipc-rpc-messagesequence-c.md#writeintarray-1)
 
 <!--Device-MessageParcel-writeIntArray(intArray: number[]): boolean--><!--Device-MessageParcel-writeIntArray(intArray: number[]): boolean-End-->
 
@@ -3065,6 +3132,7 @@ try {
 
 ```
 
+<a id="writeinterfacetoken"></a>
 ## writeInterfaceToken
 
 ```TypeScript
@@ -3077,7 +3145,7 @@ Writes an interface token to this **MessageParcel** object. The remote object ca
 
 **Deprecated since:** 9
 
-**Substitutes:** writeInterfaceToken(token:
+**Substitutes:** [writeInterfaceToken(token:](arkts-ipc-rpc-messagesequence-c.md#writeinterfacetoken-1)
 
 <!--Device-MessageParcel-writeInterfaceToken(token: string): boolean--><!--Device-MessageParcel-writeInterfaceToken(token: string): boolean-End-->
 
@@ -3111,6 +3179,7 @@ try {
 
 ```
 
+<a id="writelong"></a>
 ## writeLong
 
 ```TypeScript
@@ -3123,7 +3192,7 @@ Writes a long int value to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeLong(val:
+**Substitutes:** [writeLong(val:](arkts-ipc-rpc-messagesequence-c.md#writelong-1)
 
 <!--Device-MessageParcel-writeLong(val: number): boolean--><!--Device-MessageParcel-writeLong(val: number): boolean-End-->
 
@@ -3157,6 +3226,7 @@ try {
 
 ```
 
+<a id="writelongarray"></a>
 ## writeLongArray
 
 ```TypeScript
@@ -3169,7 +3239,7 @@ Writes a long array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeLongArray(longArray:
+**Substitutes:** [writeLongArray(longArray:](arkts-ipc-rpc-messagesequence-c.md#writelongarray-1)
 
 <!--Device-MessageParcel-writeLongArray(longArray: number[]): boolean--><!--Device-MessageParcel-writeLongArray(longArray: number[]): boolean-End-->
 
@@ -3203,6 +3273,7 @@ try {
 
 ```
 
+<a id="writenoexception"></a>
 ## writeNoException
 
 ```TypeScript
@@ -3251,6 +3322,7 @@ onRemoteRequest(code: number, data: rpc.MessageParcel, reply: rpc.MessageParcel,
 
 ```
 
+<a id="writerawdata"></a>
 ## writeRawData
 
 ```TypeScript
@@ -3263,7 +3335,7 @@ Writes raw data to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeRawDataBuffer(rawData:
+**Substitutes:** [writeRawDataBuffer(rawData:](arkts-ipc-rpc-messagesequence-c.md#writerawdatabuffer-1)
 
 <!--Device-MessageParcel-writeRawData(rawData: number[], size: number): boolean--><!--Device-MessageParcel-writeRawData(rawData: number[], size: number): boolean-End-->
 
@@ -3299,6 +3371,7 @@ try {
 
 ```
 
+<a id="writeremoteobject"></a>
 ## writeRemoteObject
 
 ```TypeScript
@@ -3311,7 +3384,7 @@ Serializes a remote object and writes it to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeRemoteObject(obj:
+**Substitutes:** [writeRemoteObject(obj:](arkts-ipc-rpc-messagesequence-c.md#writeremoteobject-1)
 
 <!--Device-MessageParcel-writeRemoteObject(object: IRemoteObject): boolean--><!--Device-MessageParcel-writeRemoteObject(object: IRemoteObject): boolean-End-->
 
@@ -3355,6 +3428,7 @@ try {
 
 ```
 
+<a id="writeremoteobjectarray"></a>
 ## writeRemoteObjectArray
 
 ```TypeScript
@@ -3367,7 +3441,7 @@ Writes an **IRemoteObject** array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeRemoteObjectArray(objectArray:
+**Substitutes:** [writeRemoteObjectArray(objectArray:](arkts-ipc-rpc-messagesequence-c.md#writeremoteobjectarray-1)
 
 <!--Device-MessageParcel-writeRemoteObjectArray(objectArray: IRemoteObject[]): boolean--><!--Device-MessageParcel-writeRemoteObjectArray(objectArray: IRemoteObject[]): boolean-End-->
 
@@ -3413,6 +3487,7 @@ try {
 
 ```
 
+<a id="writesequenceable"></a>
 ## writeSequenceable
 
 ```TypeScript
@@ -3425,7 +3500,7 @@ Writes a **Sequenceable** object to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeParcelable(val:
+**Substitutes:** [writeParcelable(val:](arkts-ipc-rpc-messagesequence-c.md#writeparcelable-1)
 
 <!--Device-MessageParcel-writeSequenceable(val: Sequenceable): boolean--><!--Device-MessageParcel-writeSequenceable(val: Sequenceable): boolean-End-->
 
@@ -3479,6 +3554,7 @@ try {
 
 ```
 
+<a id="writesequenceablearray"></a>
 ## writeSequenceableArray
 
 ```TypeScript
@@ -3491,7 +3567,7 @@ Writes a **Sequenceable** array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeParcelableArray(parcelableArray:
+**Substitutes:** [writeParcelableArray(parcelableArray:](arkts-ipc-rpc-messagesequence-c.md#writeparcelablearray-1)
 
 <!--Device-MessageParcel-writeSequenceableArray(sequenceableArray: Sequenceable[]): boolean--><!--Device-MessageParcel-writeSequenceableArray(sequenceableArray: Sequenceable[]): boolean-End-->
 
@@ -3548,6 +3624,7 @@ try {
 
 ```
 
+<a id="writeshort"></a>
 ## writeShort
 
 ```TypeScript
@@ -3560,7 +3637,7 @@ Writes a short int value to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeShort(val:
+**Substitutes:** [writeShort(val:](arkts-ipc-rpc-messagesequence-c.md#writeshort-1)
 
 <!--Device-MessageParcel-writeShort(val: number): boolean--><!--Device-MessageParcel-writeShort(val: number): boolean-End-->
 
@@ -3594,6 +3671,7 @@ try {
 
 ```
 
+<a id="writeshortarray"></a>
 ## writeShortArray
 
 ```TypeScript
@@ -3606,7 +3684,7 @@ Writes a short array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeShortArray(shortArray:
+**Substitutes:** [writeShortArray(shortArray:](arkts-ipc-rpc-messagesequence-c.md#writeshortarray-1)
 
 <!--Device-MessageParcel-writeShortArray(shortArray: number[]): boolean--><!--Device-MessageParcel-writeShortArray(shortArray: number[]): boolean-End-->
 
@@ -3640,6 +3718,7 @@ try {
 
 ```
 
+<a id="writestring"></a>
 ## writeString
 
 ```TypeScript
@@ -3652,7 +3731,7 @@ Writes a string to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeString(val:
+**Substitutes:** [writeString(val:](arkts-ipc-rpc-messagesequence-c.md#writestring-1)
 
 <!--Device-MessageParcel-writeString(val: string): boolean--><!--Device-MessageParcel-writeString(val: string): boolean-End-->
 
@@ -3686,6 +3765,7 @@ try {
 
 ```
 
+<a id="writestringarray"></a>
 ## writeStringArray
 
 ```TypeScript
@@ -3698,7 +3778,7 @@ Writes a string array to this **MessageParcel** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** writeStringArray(stringArray:
+**Substitutes:** [writeStringArray(stringArray:](arkts-ipc-rpc-messagesequence-c.md#writestringarray-1)
 
 <!--Device-MessageParcel-writeStringArray(stringArray: string[]): boolean--><!--Device-MessageParcel-writeStringArray(stringArray: string[]): boolean-End-->
 

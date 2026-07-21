@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="queryholders"></a>
 ## queryHolders
 
 ```TypeScript
@@ -18,7 +19,7 @@ Queries all applications that have created contacts. This API uses an asynchrono
 
 **Deprecated since:** 10
 
-**Substitutes:** queryHolders(context:
+**Substitutes:** [queryHolders(context:](arkts-contacts-contact-queryholders-f.md#queryholders-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -30,7 +31,7 @@ Queries all applications that have created contacts. This API uses an asynchrono
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Holder>> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of the queried applications is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Holder&gt;&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of the queried applications is returned. If the operation fails, an error code is returned. |
 
 **Example**
 
@@ -49,6 +50,7 @@ contact.queryHolders((err: BusinessError, data) => {
 ```
 
 
+<a id="queryholders-1"></a>
 ## queryHolders
 
 ```TypeScript
@@ -70,7 +72,7 @@ Queries all applications that have created contacts. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Holder>> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of the queried applications is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Holder&gt;&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, an array of the queried applications is returned. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -101,6 +103,7 @@ contact.queryHolders(context, (err: BusinessError, data) => {
 ```
 
 
+<a id="queryholders-2"></a>
 ## queryHolders
 
 ```TypeScript
@@ -113,7 +116,7 @@ Queries all applications that have created contacts. This API uses a promise to 
 
 **Deprecated since:** 10
 
-**Substitutes:** queryHolders(context:
+**Substitutes:** [queryHolders(context:](arkts-contacts-contact-queryholders-f.md#queryholders-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -125,7 +128,7 @@ Queries all applications that have created contacts. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Holder>> | Promise used to return the result, which is an array of queried applications. |
+| Promise&lt;Array&lt;Holder&gt;&gt; | Promise used to return the result, which is an array of queried applications. |
 
 **Example**
 
@@ -140,6 +143,7 @@ promise.then((data) => {
 ```
 
 
+<a id="queryholders-3"></a>
 ## queryHolders
 
 ```TypeScript
@@ -166,7 +170,7 @@ Queries all applications that have created contacts. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Holder>> | Promise used to return the result, which is an array of queried applications. |
+| Promise&lt;Array&lt;Holder&gt;&gt; | Promise used to return the result, which is an array of queried applications. |
 
 **Error codes:**
 

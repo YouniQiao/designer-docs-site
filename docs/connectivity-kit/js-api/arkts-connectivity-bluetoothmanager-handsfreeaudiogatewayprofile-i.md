@@ -20,6 +20,7 @@ Manager handsfree AG profile.
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -73,6 +74,7 @@ try {
 
 ```
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -126,6 +128,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('connectionStateChange')
 
 ```TypeScript
@@ -152,7 +155,7 @@ Unsubscribe the event reported when the profile connection state changes.On API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectionStateChange' | Yes | Type of the profile connection state changes event to listen for . |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StateChangeParam> | No | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StateChangeParam&gt; | No | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -161,6 +164,7 @@ Unsubscribe the event reported when the profile connection state changes.On API 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 
+<a id="on"></a>
 ## on('connectionStateChange')
 
 ```TypeScript
@@ -187,7 +191,7 @@ Subscribe the event reported when the profile connection state changes.On API 10
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectionStateChange' | Yes | Type of the profile connection state changes event to listen for . |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<StateChangeParam> | Yes | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;StateChangeParam&gt; | Yes | Callback used to listen for event. |
 
 **Error codes:**
 

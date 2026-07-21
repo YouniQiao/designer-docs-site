@@ -14,6 +14,7 @@ Manages a CDSM client instance. Before invoking any CDSM client method,you must 
 import { cdsm } from '@kit.ConnectivityKit';
 ```
 
+<a id="getcdsminfo"></a>
 ## getCdsmInfo
 
 ```TypeScript
@@ -46,6 +47,7 @@ Gets the coordinated devices set information.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="offcdsminfochange"></a>
 ## offCdsmInfoChange
 
 ```TypeScript
@@ -66,8 +68,9 @@ Unsubscribes from coordinated devices set information change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<CdsmInfo> | No | Callback used to listen for the coordinated devices set information. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;CdsmInfo&gt; | No | Callback used to listen for the coordinated devices set information. |
 
+<a id="oncdsminfochange"></a>
 ## onCdsmInfoChange
 
 ```TypeScript
@@ -90,5 +93,5 @@ This event is accessible only to applications that granted the ohos.permission.N
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<CdsmInfo> | Yes | Callback used to listen for the coordinated devices set information. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;CdsmInfo&gt; | Yes | Callback used to listen for the coordinated devices set information. |
 

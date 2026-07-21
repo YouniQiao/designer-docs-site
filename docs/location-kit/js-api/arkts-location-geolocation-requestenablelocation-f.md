@@ -6,6 +6,7 @@
 import { geolocation } from '@kit.LocationKit';
 ```
 
+<a id="requestenablelocation"></a>
 ## requestEnableLocation
 
 ```TypeScript
@@ -28,7 +29,7 @@ Request enable location
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for reporting the location switch status. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for reporting the location switch status. |
 
 **Example**
 
@@ -46,6 +47,7 @@ geolocation.requestEnableLocation((err, data) => {
 ```
 
 
+<a id="requestenablelocation-1"></a>
 ## requestEnableLocation
 
 ```TypeScript
@@ -68,7 +70,7 @@ Request enable location
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Example**
 

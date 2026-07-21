@@ -18,6 +18,7 @@ Decodes a string or Uint8Array containing Base64 data into a newly allocated Uin
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -36,6 +37,7 @@ A constructor used to create a **Base64** object.
 
 **System capability:** SystemCapability.Utils.Lang
 
+<a id="decode"></a>
 ## decode
 
 ```TypeScript
@@ -64,8 +66,9 @@ Decodes the input content into a Uint8Array object. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the Uint8Array object obtained. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the Uint8Array object obtained. |
 
+<a id="decodesync"></a>
 ## decodeSync
 
 ```TypeScript
@@ -94,8 +97,9 @@ Decodes the input content into a Uint8Array object.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Uint8Array object obtained. |
+| Uint8Array | Uint8Array object obtained. |
 
+<a id="encode"></a>
 ## encode
 
 ```TypeScript
@@ -118,14 +122,15 @@ Encodes the input content into a Uint8Array object. This API uses a promise to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| src | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Uint8Array object to encode. |
+| src | Uint8Array | Yes | Uint8Array object to encode. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the Uint8Array object obtained. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the Uint8Array object obtained. |
 
+<a id="encodesync"></a>
 ## encodeSync
 
 ```TypeScript
@@ -148,14 +153,15 @@ Performs Base64 encoding on the input Uint8Array byte array and returns the enco
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| src | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Uint8Array object to encode. |
+| src | Uint8Array | Yes | Uint8Array object to encode. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Uint8Array object obtained. |
+| Uint8Array | Uint8Array object obtained. |
 
+<a id="encodetostring"></a>
 ## encodeToString
 
 ```TypeScript
@@ -178,14 +184,15 @@ Encodes the input content into a string. This API uses a promise to return the r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| src | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Uint8Array object to encode. |
+| src | Uint8Array | Yes | Uint8Array object to encode. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the string obtained. |
+| Promise&lt;string&gt; | Promise used to return the string obtained. |
 
+<a id="encodetostringsync"></a>
 ## encodeToStringSync
 
 ```TypeScript
@@ -208,7 +215,7 @@ Performs Base64 encoding on the input Uint8Array byte array and returns the enco
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| src | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Uint8Array object to encode. |
+| src | Uint8Array | Yes | Uint8Array object to encode. |
 
 **Return value:**
 

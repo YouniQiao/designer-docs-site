@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface AggregateErrorConstructor--><!--Device-unnamed-interface AggregateErrorConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -26,7 +27,7 @@ new (
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| errors | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<any> | Yes |  |
+| errors | Iterable&lt;any&gt; | Yes |  |
 | message | string | No |  |
 | options | [ErrorOptions](arkts-na-lib-es2022-error-erroroptions-i.md) | No |  |
 
@@ -36,6 +37,7 @@ new (
 | --- | --- |
 | AggregateError |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -60,7 +62,7 @@ new (
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| errors | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<any> | Yes |  |
+| errors | Iterable&lt;any&gt; | Yes |  |
 | message | string | No |  |
 | options | [ErrorOptions](arkts-na-lib-es2022-error-erroroptions-i.md) | No |  |
 

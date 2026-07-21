@@ -1,5 +1,6 @@
 # wrapBuilder
 
+<a id="wrapbuilder"></a>
 ## wrapBuilder
 
 ```TypeScript
@@ -22,11 +23,11 @@ wrapBuilder is a template function that returns a WrappedBuilder object.wrapBuil
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| builder | (...args: Args) => void | Yes |  |
+| builder | (...args: Args) =&gt; void | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [WrappedBuilder](arkts-arkui-common-wrappedbuilder-c.md)<Args> | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+| [WrappedBuilder](arkts-arkui-wrappedbuilder-c.md)&lt;Args&gt; | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
 

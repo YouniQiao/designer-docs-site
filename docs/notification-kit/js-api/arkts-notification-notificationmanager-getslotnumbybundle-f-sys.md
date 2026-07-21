@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getslotnumbybundle"></a>
 ## getSlotNumByBundle
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the number of notification slots of a specified application. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ notificationManager.getSlotNumByBundle(bundle, getSlotNumByBundleCallback);
 ```
 
 
+<a id="getslotnumbybundle-1"></a>
 ## getSlotNumByBundle
 
 ```TypeScript
@@ -94,7 +96,7 @@ Obtains the number of notification slots of a specified application. This API us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 

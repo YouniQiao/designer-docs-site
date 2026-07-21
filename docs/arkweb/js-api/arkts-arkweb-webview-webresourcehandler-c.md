@@ -14,6 +14,7 @@ Used to intercept url requests. Response headers and body can be sent through We
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="didfail"></a>
 ## didFail
 
 ```TypeScript
@@ -43,6 +44,7 @@ Notify that this request should be failed.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 | [17100021](../errorcode-webview.md#17100021-webresourcehandler-is-invalid) | The resource handler is invalid. |
 
+<a id="didfail-1"></a>
 ## didFail
 
 ```TypeScript
@@ -71,6 +73,7 @@ Notify that this request should be failed.
 | [17100101](../errorcode-webview.md#17100101-incorrect-network-error-code) | The errorCode is either ARKWEB_NET_OK or outside the range of error codes in WebNetErrorList. |
 | [17100021](../errorcode-webview.md#17100021-webresourcehandler-is-invalid) | The resource handler is invalid. |
 
+<a id="didfinish"></a>
 ## didFinish
 
 ```TypeScript
@@ -93,6 +96,7 @@ Notify that this request should be finished and there is no more data available.
 | --- | --- |
 | [17100021](../errorcode-webview.md#17100021-webresourcehandler-is-invalid) | The resource handler is invalid. |
 
+<a id="didreceiveresponse"></a>
 ## didReceiveResponse
 
 ```TypeScript
@@ -122,6 +126,7 @@ Pass response headers to intercepted requests.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 | [17100021](../errorcode-webview.md#17100021-webresourcehandler-is-invalid) | The resource handler is invalid. |
 
+<a id="didreceiveresponsebody"></a>
 ## didReceiveResponseBody
 
 ```TypeScript
@@ -142,7 +147,7 @@ Pass response body data to intercepted requests.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Set response body to intercept. |
+| data | ArrayBuffer | Yes | Set response body to intercept. |
 
 **Error codes:**
 

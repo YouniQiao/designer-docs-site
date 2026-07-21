@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="getusergrantedstate"></a>
 ## getUserGrantedState
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the enabling state of the **Allow access to notifications on this device
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the device notification access is enabled, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the device notification access is enabled, and **false** indicates the opposite. |
 
 **Error codes:**
 

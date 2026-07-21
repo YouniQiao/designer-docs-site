@@ -6,6 +6,7 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -29,7 +30,7 @@ Queries specified task details.Creates a group based on GroupConfig
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | id | string | Yes | the task id. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<TaskInfo> | Yes | callback function with a `TaskInfo` argument for informations of the |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;TaskInfo&gt; | Yes | callback function with a `TaskInfo` argument for informations of the |
 
 **Error codes:**
 
@@ -42,6 +43,7 @@ Queries specified task details.Creates a group based on GroupConfig
 | [21900006](../../apis-basic-services-kit/errorcode-request.md#21900006-task-not-found) | Task removed or not found. |
 
 
+<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -70,7 +72,7 @@ Queries specified task details.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<TaskInfo> | the promise returned by the function. |
+| Promise&lt;TaskInfo&gt; | the promise returned by the function. |
 
 **Error codes:**
 

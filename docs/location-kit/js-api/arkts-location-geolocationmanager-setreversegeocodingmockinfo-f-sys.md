@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="setreversegeocodingmockinfo"></a>
 ## setReverseGeocodingMockInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Set the configuration parameters for simulating reverse geocoding.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mockInfos | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ReverseGeocodingMockInfo> | Yes | Indicates the set of locations and place names to be simulated. |
+| mockInfos | Array&lt;ReverseGeocodingMockInfo&gt; | Yes | Indicates the set of locations and place names to be simulated. |
 
 **Error codes:**
 

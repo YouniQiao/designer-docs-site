@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createavdownloadermanager"></a>
 ## createAVDownloaderManager
 
 ```TypeScript
@@ -26,5 +27,5 @@ Creating a Streaming Resource Download Task Manager
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVDownloaderManager> | Returns an instance of the Offline Download Manager |
+| Promise&lt;AVDownloaderManager&gt; | Returns an instance of the Offline Download Manager |
 

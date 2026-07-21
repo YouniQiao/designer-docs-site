@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="installpubliccertificate"></a>
 ## installPublicCertificate
 
 ```TypeScript
@@ -30,14 +31,14 @@ Installs the public credential of the user. This API is called only by the certi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| keystore | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Keystore file containing the key pair and certificate. Only the P12 format is supported. |
+| keystore | Uint8Array | Yes | Keystore file containing the key pair and certificate. Only the P12 format is supported. |
 | keystorePwd | string | Yes | Password of the keystore file. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMResult> | Promise used to return the operation result, that is, **uri** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
+| Promise&lt;CMResult&gt; | Promise used to return the operation result, that is, **uri** in the [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md) object. |
 
 **Error codes:**
 

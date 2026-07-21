@@ -6,6 +6,7 @@
 import { scan } from '@kit.BasicServicesKit';
 ```
 
+<a id="on"></a>
 ## on('scanDeviceFound')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Registers a callback used to listen for the scanner discovery event. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'scanDeviceFound' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScannerDevice> | Yes | Callback used to return the discovered scanner. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScannerDevice&gt; | Yes | Callback used to return the discovered scanner. |
 
 **Error codes:**
 
@@ -47,6 +48,7 @@ scan.on('scanDeviceFound', (device: scan.ScannerDevice) => {
 ```
 
 
+<a id="on-1"></a>
 ## on('scanDeviceSync')
 
 ```TypeScript
@@ -68,7 +70,7 @@ Registers a callback used to listen for the scanner sync event. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'scanDeviceSync' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScannerSyncDevice> | Yes | Callback used to return the synced scanner. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScannerSyncDevice&gt; | Yes | Callback used to return the synced scanner. |
 
 **Error codes:**
 

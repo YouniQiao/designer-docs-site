@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="createavsession"></a>
 ## createAVSession
 
 ```TypeScript
@@ -27,7 +28,7 @@ Create an AVSession instance. An ability can only create one AVSession
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | The context of application |
 | tag | string | Yes | A user-defined name for this session |
 | type | [AVSessionType](arkts-avsession-avsession-avsessiontype-t.md) | Yes | The type of session {@link AVSessionType} |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVSession> | Yes | async callback for AVSession. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVSession&gt; | Yes | async callback for AVSession. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ struct Index {
 ```
 
 
+<a id="createavsession-1"></a>
 ## createAVSession
 
 ```TypeScript
@@ -97,7 +99,7 @@ Create an AVSession instance. An ability can only create one AVSession
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVSession> | Promise for AVSession |
+| Promise&lt;AVSession&gt; | Promise for AVSession |
 
 **Error codes:**
 

@@ -1,6 +1,6 @@
 # ReadStream
 
-Defines a readable stream. You need to use [fileIo.createReadStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatereadstream12) to create a **ReadStream** instance, which is inherited from [stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-stream-readableoptions-i.md).
+Defines a readable stream. You need to use [fileIo.createReadStream](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatereadstream12) to create a **ReadStream** instance, which is inherited from [stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-stream-readableoptions-i.md).
 
 The data obtained by **ReadStream** is a decoded string. Currently, only the UTF-8 format is supported.
 
@@ -18,6 +18,7 @@ The data obtained by **ReadStream** is a decoded string. Currently, only the UTF
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -52,6 +53,7 @@ rs.close();
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -66,6 +68,7 @@ The ReadStream constructor.
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
+<a id="seek"></a>
 ## seek
 
 ```TypeScript

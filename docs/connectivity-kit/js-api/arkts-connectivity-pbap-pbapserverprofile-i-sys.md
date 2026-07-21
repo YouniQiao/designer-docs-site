@@ -16,6 +16,7 @@ Manager PBAP server profile.
 import { pbap } from '@kit.ConnectivityKit';
 ```
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -66,6 +67,7 @@ try {
 
 ```
 
+<a id="getphonebookaccessauthorization"></a>
 ## getPhoneBookAccessAuthorization
 
 ```TypeScript
@@ -89,7 +91,7 @@ Get the phone book access authorization.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AccessAuthorization> | Yes | the callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AccessAuthorization&gt; | Yes | the callback result. |
 
 **Error codes:**
 
@@ -119,6 +121,7 @@ try {
 
 ```
 
+<a id="getphonebookaccessauthorization-1"></a>
 ## getPhoneBookAccessAuthorization
 
 ```TypeScript
@@ -147,7 +150,7 @@ Get the phone book access authorization.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessAuthorization> | Returns the promise object. |
+| Promise&lt;AccessAuthorization&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -177,6 +180,7 @@ try {
 
 ```
 
+<a id="getsharetype"></a>
 ## getShareType
 
 ```TypeScript
@@ -200,7 +204,7 @@ Get the PBAP sharing type.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ShareType> | Yes | the callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ShareType&gt; | Yes | the callback result. |
 
 **Error codes:**
 
@@ -230,6 +234,7 @@ try {
 
 ```
 
+<a id="getsharetype-1"></a>
 ## getShareType
 
 ```TypeScript
@@ -258,7 +263,7 @@ Get the PBAP sharing type.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ShareType> | Returns the promise object. |
+| Promise&lt;ShareType&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -288,6 +293,7 @@ try {
 
 ```
 
+<a id="setphonebookaccessauthorization"></a>
 ## setPhoneBookAccessAuthorization
 
 ```TypeScript
@@ -324,7 +330,7 @@ Set the phone book access authorization.
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
 | authorization | [AccessAuthorization](arkts-connectivity-pbap-accessauthorization-t-sys.md) | Yes | Indicates the permission. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback result. |
 
 **Error codes:**
 
@@ -354,6 +360,7 @@ try {
 
 ```
 
+<a id="setphonebookaccessauthorization-1"></a>
 ## setPhoneBookAccessAuthorization
 
 ```TypeScript
@@ -383,7 +390,7 @@ Set the phone book access authorization.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -413,6 +420,7 @@ try {
 
 ```
 
+<a id="setsharetype"></a>
 ## setShareType
 
 ```TypeScript
@@ -437,7 +445,7 @@ Set the PBAP sharing type.
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
 | type | [ShareType](arkts-connectivity-pbap-sharetype-e-sys.md) | Yes | Indicates the PBAP sharing type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback result. |
 
 **Error codes:**
 
@@ -467,6 +475,7 @@ try {
 
 ```
 
+<a id="setsharetype-1"></a>
 ## setShareType
 
 ```TypeScript
@@ -496,7 +505,7 @@ Set the PBAP sharing type.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

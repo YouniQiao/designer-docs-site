@@ -6,6 +6,7 @@
 import { wifi } from '@kit.ConnectivityKit';
 ```
 
+<a id="enablewifi"></a>
 ## enableWifi
 
 ```TypeScript

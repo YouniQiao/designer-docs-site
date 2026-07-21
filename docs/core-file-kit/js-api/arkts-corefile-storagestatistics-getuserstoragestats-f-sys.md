@@ -6,6 +6,7 @@
 import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
+<a id="getuserstoragestats"></a>
 ## getUserStorageStats
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the storage statistics of this user, in bytes. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<StorageStats> | Promise used to return the storage statistics (in bytes) obtained. |
+| Promise&lt;StorageStats&gt; | Promise used to return the storage statistics (in bytes) obtained. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ storageStatistics.getUserStorageStats().then((storageStats: storageStatistics.St
 ```
 
 
+<a id="getuserstoragestats-1"></a>
 ## getUserStorageStats
 
 ```TypeScript
@@ -75,7 +77,7 @@ Obtains the storage statistics of this user, in bytes. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<StorageStats> | Yes | Callback used to return the storage statistics obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;StorageStats&gt; | Yes | Callback used to return the storage statistics obtained. |
 
 **Error codes:**
 
@@ -103,6 +105,7 @@ storageStatistics.getUserStorageStats((error: BusinessError, storageStats: stora
 ```
 
 
+<a id="getuserstoragestats-2"></a>
 ## getUserStorageStats
 
 ```TypeScript
@@ -131,7 +134,7 @@ Obtains the storage statistics of the specified user, in bytes. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<StorageStats> | Promise used to return the storage statistics (in bytes) obtained. |
+| Promise&lt;StorageStats&gt; | Promise used to return the storage statistics (in bytes) obtained. |
 
 **Error codes:**
 
@@ -158,6 +161,7 @@ storageStatistics.getUserStorageStats(userId).then((storageStats: storageStatist
 ```
 
 
+<a id="getuserstoragestats-3"></a>
 ## getUserStorageStats
 
 ```TypeScript
@@ -181,7 +185,7 @@ Obtains the storage statistics of the specified user, in bytes. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<StorageStats> | Yes | Callback used to return the storage statistics obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;StorageStats&gt; | Yes | Callback used to return the storage statistics obtained. |
 
 **Error codes:**
 

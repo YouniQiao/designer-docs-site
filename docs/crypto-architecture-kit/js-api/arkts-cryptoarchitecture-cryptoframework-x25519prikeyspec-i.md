@@ -1,0 +1,42 @@
+# X25519PriKeySpec
+
+Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-cryptoframework-asykeyspec-i.md) used to specify the parameters of the private key in the X25519 algorithm.
+
+To generate a key based on key parameters, pass it to [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-cryptoframework-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.
+
+**Inheritance/Implementation:** X25519PriKeySpec extends [AsyKeySpec](arkts-cryptoarchitecture-cryptoframework-asykeyspec-i.md)
+
+**Since:** 11
+
+<!--Device-cryptoFramework-interface X25519PriKeySpec extends AsyKeySpec--><!--Device-cryptoFramework-interface X25519PriKeySpec extends AsyKeySpec-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 11: SystemCapability.Security.CryptoFramework
+
+## Modules to Import
+
+```TypeScript
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+```
+
+## sk
+
+```TypeScript
+sk: bigint
+```
+
+Private key **sk** in the X25519 algorithm.
+
+**Type:** bigint
+
+**Since:** 11
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-X25519PriKeySpec-sk: bigint--><!--Device-X25519PriKeySpec-sk: bigint-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 11: SystemCapability.Security.CryptoFramework
+

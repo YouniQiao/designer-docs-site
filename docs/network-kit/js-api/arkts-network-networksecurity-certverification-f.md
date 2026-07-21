@@ -6,6 +6,7 @@
 import { networkSecurity } from '@kit.NetworkKit';
 ```
 
+<a id="certverification"></a>
 ## certVerification
 
 ```TypeScript
@@ -31,7 +32,7 @@ Certificate verification to the server.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returned by the function.Number equals 0 if verify of certification from server succeed, else verify failed. |
+| Promise&lt;number&gt; | The promise returned by the function.Number equals 0 if verify of certification from server succeed, else verify failed. |
 
 **Error codes:**
 

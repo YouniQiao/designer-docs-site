@@ -6,6 +6,7 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="createrandom"></a>
 ## createRandom
 
 ```TypeScript
@@ -32,7 +33,7 @@ Creates a **Random** instance for generating random numbers and setting seeds.
 
 | Type | Description |
 | --- | --- |
-| [Random](arkts-cryptoarchitecture-cryptoframework-random-i.md) | Returns the [Random](arkts-cryptoarchitecture-cryptoframework-random-i.md) instance created.<br>For details about the supported specifications, see [Supported Algorithms and Specifications](../../../../security/CryptoArchitectureKit/crypto-generate-random-number.md#supported-algorithms-and-specifications). |
+| [Random](arkts-cryptoarchitecture-cryptoframework-random-i.md) | Returns the [Random](arkts-cryptoarchitecture-cryptoframework-random-i.md) instance created.<br>For details about the supported specifications, see [Supported Algorithms and Specifications](docroot://security/CryptoArchitectureKit/crypto-generate-random-number.md#supported-algorithms-and-specifications). |
 
 **Error codes:**
 

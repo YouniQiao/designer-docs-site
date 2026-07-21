@@ -6,6 +6,7 @@
 import { serial } from '@kit.BasicServicesKit';
 ```
 
+<a id="getserialportlist"></a>
 ## getSerialPortList
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the serial port list. This API returns the result asynchronously through
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SerialPort[]> | - Promise used to return the list of serial port devices. |
+| Promise&lt;SerialPort[]&gt; | - Promise used to return the list of serial port devices. |
 
 **Error codes:**
 

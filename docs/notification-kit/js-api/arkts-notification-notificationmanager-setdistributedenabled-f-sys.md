@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setdistributedenabled"></a>
 ## setDistributedEnabled
 
 ```TypeScript
@@ -29,13 +30,13 @@ Sets whether the device of a specified type enables cross-device notification. T
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether the device of a specified type enables cross-device notification. The value **true** indicates that the cross-device notification is enabled, and the value **false** indicates the opposite. |
-| deviceType | string | Yes | Device type. The options are as follows:<br>- **headset**: wearable audio device<br>  - **liteWearable**: lite wearable<br>- **wearable**: wearable<br>- **current**: current device<br>- **2in1**:PC<br>- **tablet**: tablet |
+| deviceType | string | Yes | Device type. The options are as follows:<br>- **headset**: wearable audio device<br>   - **liteWearable**: lite wearable<br>- **wearable**: wearable<br>- **current**: current device<br>- **2in1**:PC<br>- **tablet**: tablet |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no result. |
+| Promise&lt;void&gt; | Promise that returns no result. |
 
 **Error codes:**
 

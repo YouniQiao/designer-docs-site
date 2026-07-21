@@ -6,6 +6,7 @@
 import { manager } from '@kit.ConnectivityKit';
 ```
 
+<a id="onstatechange"></a>
 ## onStateChange
 
 ```TypeScript
@@ -26,7 +27,7 @@ Subscribes to state change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<NearlinkState> | Yes | Callback used to listen for the state change event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;NearlinkState&gt; | Yes | Callback used to listen for the state change event. |
 
 **Error codes:**
 

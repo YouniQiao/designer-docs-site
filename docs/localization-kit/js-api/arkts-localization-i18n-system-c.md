@@ -14,6 +14,7 @@ Provides system attribute configuration functions, including translating languag
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="getapppreferredlanguage"></a>
 ## getAppPreferredLanguage
 
 ```TypeScript
@@ -45,6 +46,7 @@ let appPreferredLanguage: string = i18n.System.getAppPreferredLanguage();
 
 ```
 
+<a id="getdisplaycountry"></a>
 ## getDisplayCountry
 
 ```TypeScript
@@ -65,8 +67,8 @@ Obtains the country/region display name in the specified language.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| country | string | Yes | Valid country/region code. For details, see [System Locale](../../../../internationalization/i18n-locale-culture.md#how-it-works). |
-| locale | string | Yes | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
+| country | string | Yes | Valid country/region code. For details, see [System Locale](docroot://internationalization/i18n-locale-culture.md#how-it-works). |
+| locale | string | Yes | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
 | sentenceCase | boolean | No | Whether to use sentence case to display the text. The value **true** means to display the text in title case format, and the value **false** means to display the text in the default case format of the locale. The default value is **true**. |
 
 **Return value:**
@@ -97,6 +99,7 @@ try {
 
 ```
 
+<a id="getdisplaylanguage"></a>
 ## getDisplayLanguage
 
 ```TypeScript
@@ -117,8 +120,8 @@ Obtains the language display name in the specified language.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| language | string | Yes | Valid language ID. For details, see [System Locale](../../../../internationalization/i18n-locale-culture.md#how-it-works). |
-| locale | string | Yes | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
+| language | string | Yes | Valid language ID. For details, see [System Locale](docroot://internationalization/i18n-locale-culture.md#how-it-works). |
+| locale | string | Yes | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
 | sentenceCase | boolean | No | Whether to use sentence case to display the text. The value **true** means to display the text in title case format, and the value **false** means to display the text in the default case format of the locale. The default value is **true**. |
 
 **Return value:**
@@ -150,6 +153,7 @@ try {
 
 ```
 
+<a id="getfirstdayofweek"></a>
 ## getFirstDayOfWeek
 
 ```TypeScript
@@ -181,6 +185,7 @@ let firstDayOfWeek: i18n.WeekDay = i18n.System.getFirstDayOfWeek();
 
 ```
 
+<a id="getfirstpreferredlanguage"></a>
 ## getFirstPreferredLanguage
 
 ```TypeScript
@@ -212,6 +217,7 @@ let firstPreferredLanguage: string = i18n.System.getFirstPreferredLanguage();
 
 ```
 
+<a id="getpreferredlanguagelist"></a>
 ## getPreferredLanguageList
 
 ```TypeScript
@@ -232,7 +238,7 @@ Obtains the list of preferred languages.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of preferred languages. |
+| Array&lt;string&gt; | List of preferred languages. |
 
 **Example**
 
@@ -243,6 +249,7 @@ let preferredLanguageList: Array<string> = i18n.System.getPreferredLanguageList(
 
 ```
 
+<a id="getsimplifiedlanguage"></a>
 ## getSimplifiedLanguage
 
 ```TypeScript
@@ -263,7 +270,7 @@ Obtains the simplified representation of a language. For example, the simplified
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| language | string | No | [Valid language ID](../../../../internationalization/i18n-locale-culture.md#how-it-works). The default value is the system language. |
+| language | string | No | [Valid language ID](docroot://internationalization/i18n-locale-culture.md#how-it-works). The default value is the system language. |
 
 **Return value:**
 
@@ -296,6 +303,7 @@ try {
 
 ```
 
+<a id="getsystemcountries"></a>
 ## getSystemCountries
 
 ```TypeScript
@@ -316,13 +324,13 @@ Obtains the list of countries/regions supported for the specified language.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| language | string | Yes | [Valid language ID](../../../../internationalization/i18n-locale-culture.md#how-it-works). |
+| language | string | Yes | [Valid language ID](docroot://internationalization/i18n-locale-culture.md#how-it-works). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of countries/regions supported for the specified language. |
+| Array&lt;string&gt; | List of countries/regions supported for the specified language. |
 
 **Error codes:**
 
@@ -347,13 +355,14 @@ try {
 
 ```
 
+<a id="getsystemlanguage"></a>
 ## getSystemLanguage
 
 ```TypeScript
 static getSystemLanguage(): string
 ```
 
-Obtains the current system language. To listen for system language changes, enable listening for [COMMON_EVENT_LOCALE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed). For details, see [System Language and Region](../../../../internationalization/i18n-system-language-region.md#how-to-develop).
+Obtains the current system language. To listen for system language changes, enable listening for [COMMON_EVENT_LOCALE_CHANGED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed). For details, see [System Language and Region](docroot://internationalization/i18n-system-language-region.md#how-to-develop).
 
 **Since:** 9
 
@@ -380,6 +389,7 @@ let systemLanguage: string = i18n.System.getSystemLanguage(); // If the system l
 
 ```
 
+<a id="getsystemlanguages"></a>
 ## getSystemLanguages
 
 ```TypeScript
@@ -400,7 +410,7 @@ Obtains the list of system languages.Since API version 11, this API is supported
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of system languages. |
+| Array&lt;string&gt; | List of system languages. |
 
 **Example**
 
@@ -412,6 +422,7 @@ let systemLanguages: Array<string> = i18n.System.getSystemLanguages();
 
 ```
 
+<a id="getsystemlocale"></a>
 ## getSystemLocale
 
 ```TypeScript
@@ -447,13 +458,14 @@ let systemLocale: string = i18n.System.getSystemLocale(); // If the system langu
 
 ```
 
+<a id="getsystemlocaleinstance"></a>
 ## getSystemLocaleInstance
 
 ```TypeScript
 static getSystemLocaleInstance(): Intl.Locale
 ```
 
-Obtains the current system locale. To listen for system locale changes, enable listening for [COMMON_EVENT_LOCALE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed). For details, see [System Language and Region](../../../../internationalization/i18n-system-language-region.md#how-to-develop).
+Obtains the current system locale. To listen for system locale changes, enable listening for [COMMON_EVENT_LOCALE_CHANGED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed). For details, see [System Language and Region](docroot://internationalization/i18n-system-language-region.md#how-to-develop).
 
 **Since:** 20
 
@@ -478,13 +490,14 @@ let systemLocale: Intl.Locale = i18n.System.getSystemLocaleInstance();
 
 ```
 
+<a id="getsystemregion"></a>
 ## getSystemRegion
 
 ```TypeScript
 static getSystemRegion(): string
 ```
 
-Obtains the current system country/region. To listen for system region changes, enable listening for [COMMON_EVENT_LOCALE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed). For details, see [System Language and Region](../../../../internationalization/i18n-system-language-region.md#how-to-develop).
+Obtains the current system country/region. To listen for system region changes, enable listening for [COMMON_EVENT_LOCALE_CHANGED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed). For details, see [System Language and Region](docroot://internationalization/i18n-system-language-region.md#how-to-develop).
 
 **Since:** 9
 
@@ -509,6 +522,7 @@ let systemRegion: string = i18n.System.getSystemRegion(); // If the system regio
 
 ```
 
+<a id="gettemperaturename"></a>
 ## getTemperatureName
 
 ```TypeScript
@@ -559,6 +573,7 @@ try {
 
 ```
 
+<a id="gettemperaturetype"></a>
 ## getTemperatureType
 
 ```TypeScript
@@ -590,6 +605,7 @@ let temperatureType: i18n.TemperatureType = i18n.System.getTemperatureType();
 
 ```
 
+<a id="getusinglocaldigit"></a>
 ## getUsingLocalDigit
 
 ```TypeScript
@@ -621,13 +637,14 @@ let usingLocalDigit: boolean = i18n.System.getUsingLocalDigit();
 
 ```
 
+<a id="is24hourclock"></a>
 ## is24HourClock
 
 ```TypeScript
 static is24HourClock(): boolean
 ```
 
-Checks whether the 24-hour clock is used. To listen for system time format changes, enable listening for [COMMON_EVENT_TIME_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_time_changed). For details, see [User Preference](../../../../internationalization/i18n-user-preferences.md#how-to-develop).
+Checks whether the 24-hour clock is used. To listen for system time format changes, enable listening for [COMMON_EVENT_TIME_CHANGED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_time_changed). For details, see [User Preference](docroot://internationalization/i18n-user-preferences.md#how-to-develop).
 
 **Since:** 9
 
@@ -654,6 +671,7 @@ let is24HourClock: boolean = i18n.System.is24HourClock(); // If the 24-hour cloc
 
 ```
 
+<a id="issuggested"></a>
 ## isSuggested
 
 ```TypeScript
@@ -674,8 +692,8 @@ Checks whether a language is a suggested language in the specified region. It ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| language | string | Yes | [Valid language ID](../../../../internationalization/i18n-locale-culture.md#how-it-works), for example, **zh**. |
-| region | string | No | [Valid country/region code](../../../../internationalization/i18n-locale-culture.md#how-it-works), for example,**CN**.The default value is the country/region of the SIM card. |
+| language | string | Yes | [Valid language ID](docroot://internationalization/i18n-locale-culture.md#how-it-works), for example, **zh**. |
+| region | string | No | [Valid country/region code](docroot://internationalization/i18n-locale-culture.md#how-it-works), for example,**CN**.The default value is the country/region of the SIM card. |
 
 **Return value:**
 
@@ -706,6 +724,7 @@ try {
 
 ```
 
+<a id="setapppreferredlanguage"></a>
 ## setAppPreferredLanguage
 
 ```TypeScript
@@ -726,7 +745,7 @@ Sets the preferred language of the application. Resources are loaded in the pref
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| language | string | Yes | [Valid language ID](../../../../internationalization/i18n-locale-culture.md#how-it-works) or **default**. |
+| language | string | Yes | [Valid language ID](docroot://internationalization/i18n-locale-culture.md#how-it-works) or **default**. |
 
 **Error codes:**
 

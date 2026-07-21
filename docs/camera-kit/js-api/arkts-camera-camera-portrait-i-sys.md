@@ -18,6 +18,7 @@ Portrait: inherits from [PortraitQuery](arkts-camera-camera-portraitquery-i-sys.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getportraiteffect"></a>
 ## getPortraitEffect
 
 ```TypeScript
@@ -57,6 +58,7 @@ function getPortraitEffect(portraitPhotoSession: camera.PortraitPhotoSession): c
 
 ```
 
+<a id="setportraiteffect"></a>
 ## setPortraitEffect
 
 ```TypeScript

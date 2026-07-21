@@ -20,6 +20,7 @@ Manager pan profile.
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -63,6 +64,7 @@ Disconnect to device with pan.On API 10 and above, the permission required by th
 | 2900004 | Profile not supported. |
 | 2900099 | Operation failed. |
 
+<a id="istetheringon"></a>
 ## isTetheringOn
 
 ```TypeScript
@@ -99,6 +101,7 @@ Obtains the tethering enable or disable.On API 10 and above, the permission requ
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications are not allowed to use system APIs. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 
+<a id="settethering"></a>
 ## setTethering
 
 ```TypeScript

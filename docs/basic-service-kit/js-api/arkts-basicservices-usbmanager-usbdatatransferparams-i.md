@@ -38,7 +38,7 @@ callback: AsyncCallback<SubmitTransferCallback>
 
 Information returned by the callback.
 
-**Type:** AsyncCallback<SubmitTransferCallback>
+**Type:** AsyncCallback&lt;SubmitTransferCallback&gt;
 
 **Since:** 18
 

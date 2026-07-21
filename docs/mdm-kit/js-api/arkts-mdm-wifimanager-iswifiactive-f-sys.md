@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.MDMKit';
 ```
 
+<a id="iswifiactive"></a>
 ## isWifiActive
 
 ```TypeScript
@@ -35,7 +36,7 @@ Queries the Wi-Fi status of the current device. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is a Boolean value (**true** means that Wi-Fi is enabled; and **false** means the opposite). If the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is a Boolean value (**true** means that Wi-Fi is enabled; and **false** means the opposite). If the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ wifiManager.isWifiActive(wantTemp, (err, result) => {
 ```
 
 
+<a id="iswifiactive-1"></a>
 ## isWifiActive
 
 ```TypeScript
@@ -104,7 +106,7 @@ Queries the Wi-Fi status of the current device. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the Wi-Fi status.<br>The value **true** means that Wi-Fi is enabled; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the Wi-Fi status.<br>The value **true** means that Wi-Fi is enabled; the value **false** means the opposite. |
 
 **Error codes:**
 

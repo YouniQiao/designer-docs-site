@@ -10,6 +10,7 @@ The proxy object of the AgentExtensionAbility, used to send messages to the Agen
 
 **System API:** This is a system API.
 
+<a id="authorize"></a>
 ## authorize
 
 ```TypeScript
@@ -40,6 +41,7 @@ Send authentication to the AgentExtensionAbility.
 | --- | --- |
 | [35600002](../errorcode-ability.md#35600002-failed-to-send-ipc-messages) | Failed to send the IPC message. |
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript

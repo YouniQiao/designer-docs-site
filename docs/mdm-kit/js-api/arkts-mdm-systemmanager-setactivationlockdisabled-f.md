@@ -6,6 +6,7 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
+<a id="setactivationlockdisabled"></a>
 ## setActivationLockDisabled
 
 ```TypeScript
@@ -30,13 +31,13 @@ Enables or disables the device activation lock. After the device activation lock
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | isDisabled | boolean | Yes | Whether to disable the activation lock. The value **true** indicates yes, and the value **false** indicates no. |
-| credential | string | No | Credential for disabling the activation lock. To disable the activation lock, you must set this parameter to a valid credential&lt;!--RP6--&gt;&lt;!--RP6End--&gt;. Leave this parameter empty when enabling the activation lock. |
+| credential | string | No | Credential for disabling the activation lock. To disable the activation lock, you must set this parameter to a valid credential<!--RP6--><!--RP6End-->. Leave this parameter empty when enabling the activation lock. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. An error object is thrown when the activation lock fails to be enabled or disabled. |
+| Promise&lt;void&gt; | Promise that returns no value. An error object is thrown when the activation lock fails to be enabled or disabled. |
 
 **Error codes:**
 

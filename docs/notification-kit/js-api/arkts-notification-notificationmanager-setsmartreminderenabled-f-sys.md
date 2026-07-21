@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setsmartreminderenabled"></a>
 ## setSmartReminderEnabled
 
 ```TypeScript
@@ -37,7 +38,7 @@ This API can be properly called on devices other than wearables and TVs. If it i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

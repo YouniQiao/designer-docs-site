@@ -6,6 +6,7 @@
 import { backup } from '@kit.CoreFileKit';
 ```
 
+<a id="updatetimer"></a>
 ## updateTimer
 
 ```TypeScript

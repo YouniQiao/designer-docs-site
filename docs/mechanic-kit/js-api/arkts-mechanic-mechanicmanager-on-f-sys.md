@@ -6,6 +6,7 @@
 import { mechanicManager } from '@kit.MechanicKit';
 ```
 
+<a id="on"></a>
 ## on('rotationAxesStatusChange')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Register a listener for axis state changes.The status of the rotation axis chang
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rotationAxesStatusChange' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RotationAxesStateChangeInfo> | Yes | Rotate axis state changes callback. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RotationAxesStateChangeInfo&gt; | Yes | Rotate axis state changes callback. |
 
 **Error codes:**
 

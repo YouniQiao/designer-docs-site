@@ -20,6 +20,7 @@ Defines the AbsAlbum.
 import { userFileManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getphotoassets"></a>
 ## getPhotoAssets
 
 ```TypeScript
@@ -47,7 +48,7 @@ Obtains image and video assets. This API uses an asynchronous callback to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [FetchOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Retrieval options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<FileAsset>> | Yes | Callback used to return the image and video assets obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;FileAsset&gt;&gt; | Yes | Callback used to return the image and video assets obtained. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ Obtains image and video assets. This API uses an asynchronous callback to return
 | --- | --- |
 | 13900020 | if type options is not FetchOptions |
 
+<a id="getphotoassets-1"></a>
 ## getPhotoAssets
 
 ```TypeScript
@@ -87,7 +89,7 @@ Obtains image and video assets. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<FileAsset>> | Promise that returns the image and video assets obtained. |
+| Promise&lt;FetchResult&lt;FileAsset&gt;&gt; | Promise that returns the image and video assets obtained. |
 
 **Error codes:**
 

@@ -1,8 +1,8 @@
 # AVImageGenerator
 
-AVImageGenerator is a class for video thumbnail retrieval. It provides APIs to obtain a thumbnail from a video.Before calling any API in AVImageGenerator, you must use [createAVImageGenerator()](arkts-media-media-createavimagegenerator-f.md#createavimagegenerator-3)to create an AVImageGenerator instance.
+AVImageGenerator is a class for video thumbnail retrieval. It provides APIs to obtain a thumbnail from a video.Before calling any API in AVImageGenerator, you must use [createAVImageGenerator()](arkts-media-media-createavimagegenerator-f.md#createavimagegenerator-1)to create an AVImageGenerator instance.
 
-For details about the demo for obtaining video thumbnails, see [Obtaining Video Thumbnails](../../../../media/media/avimagegenerator.md).
+For details about the demo for obtaining video thumbnails, see [Obtaining Video Thumbnails](docroot://media/media/avimagegenerator.md).
 
 **Since:** 12
 
@@ -16,6 +16,7 @@ For details about the demo for obtaining video thumbnails, see [Obtaining Video 
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="fetchframebytime"></a>
 ## fetchFrameByTime
 
 ```TypeScript
@@ -40,7 +41,7 @@ Obtains a video thumbnail. This API uses an asynchronous callback to return the 
 | timeUs | number | Yes | Time of the video for which a thumbnail is to be obtained, in μs. |
 | options | [AVImageQueryOptions](arkts-media-media-avimagequeryoptions-e.md) | Yes | Relationship between the thumbnail timestamp in and the video frame. |
 | param | [PixelMapParams](arkts-media-media-pixelmapparams-i.md) | Yes | Format parameters of the thumbnail to be obtained. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the PixelMap instance obtained; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the PixelMap instance obtained; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ Obtains a video thumbnail. This API uses an asynchronous callback to return the 
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Returned by callback. |
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. Returned by callback. |
 
+<a id="fetchframebytime-1"></a>
 ## fetchFrameByTime
 
 ```TypeScript
@@ -75,7 +77,7 @@ Obtains a video thumbnail. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the video thumbnail. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the video thumbnail. |
 
 **Error codes:**
 
@@ -84,6 +86,7 @@ Obtains a video thumbnail. This API uses a promise to return the result.
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Returned by promise. |
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. Returned by promise. |
 
+<a id="fetchscaledframebytime"></a>
 ## fetchScaledFrameByTime
 
 ```TypeScript
@@ -113,7 +116,7 @@ Fetches a scaled thumbnail from the video at a particular timestamp. This API us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the video thumbnail. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the video thumbnail. |
 
 **Error codes:**
 
@@ -122,6 +125,7 @@ Fetches a scaled thumbnail from the video at a particular timestamp. This API us
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) |  |
 | [5400106](../errorcode-media.md#5400106-format-not-supported) |  |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -140,7 +144,7 @@ Releases this AVImageGenerator instance. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -148,6 +152,7 @@ Releases this AVImageGenerator instance. This API uses an asynchronous callback 
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Returned by callback. |
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -166,7 +171,7 @@ Releases this AVImageGenerator instance. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

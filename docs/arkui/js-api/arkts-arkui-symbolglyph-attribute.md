@@ -12,6 +12,7 @@ The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-commo
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="effectstrategy"></a>
 ## effectStrategy
 
 ```TypeScript
@@ -22,7 +23,7 @@ Sets the effect strategy of the **SymbolGlyph** component.
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -40,8 +41,9 @@ Sets the effect strategy of the **SymbolGlyph** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [SymbolEffectStrategy](arkts-arkui-symbolglyph-symboleffectstrategy-e.md) | Yes | Effect strategy of the **SymbolGlyph** component.<br>Default value:**SymbolEffectStrategy.NONE** |
+| value | [SymbolEffectStrategy](arkts-arkui-symboleffectstrategy-e.md) | Yes | Effect strategy of the **SymbolGlyph** component.<br>Default value:**SymbolEffectStrategy.NONE** |
 
+<a id="fontcolor"></a>
 ## fontColor
 
 ```TypeScript
@@ -52,7 +54,7 @@ Sets the color of the **SymbolGlyph** component.
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -70,8 +72,9 @@ Sets the color of the **SymbolGlyph** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ResourceColor> | Yes | Color of the **SymbolGlyph** component.<br> Default value: depending on the rendering strategy |
+| value | Array&lt;ResourceColor&gt; | Yes | Color of the **SymbolGlyph** component.<br> Default value: depending on the rendering strategy |
 
+<a id="fontcolor-1"></a>
 ## fontColor
 
 ```TypeScript
@@ -96,8 +99,9 @@ Called when the SymbolGlyph color is set.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ResourceColor \| ColorMetrics> \| undefined | Yes |  |
+| value | Array&lt;ResourceColor \| ColorMetrics&gt; \| undefined | Yes |  |
 
+<a id="fontsize"></a>
 ## fontSize
 
 ```TypeScript
@@ -110,7 +114,7 @@ The display size of the symbol glyph is controlled by the **fontSize** setting. 
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -130,6 +134,7 @@ The display size of the symbol glyph is controlled by the **fontSize** setting. 
 | --- | --- | --- | --- |
 | value | number \| string \| Resource | Yes | Size of the **SymbolGlyph** component.<br>Default value: **16fp**<br>Unit: [fp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)<br>Percentage strings are not supported. |
 
+<a id="fontweight"></a>
 ## fontWeight
 
 ```TypeScript
@@ -142,7 +147,7 @@ The **sys.symbol.ohos_lungs** icon does not support font weight setting.
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -162,6 +167,7 @@ The **sys.symbol.ohos_lungs** icon does not support font weight setting.
 | --- | --- | --- | --- |
 | value | number \| FontWeight \| string | Yes | Font weight of the **SymbolGlyph** component.<br>Default value:**FontWeight.Normal** |
 
+<a id="fontweight-1"></a>
 ## fontWeight
 
 ```TypeScript
@@ -187,8 +193,9 @@ Used to set the font weight of symbolGlyph.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | number \| FontWeight \| ResourceStr | Yes | the symbolGlyph font weight. |
-| fontWeightConfigs | [FontWeightConfigs](../arkts-apis/arkts-arkui-text-common-fontweightconfigs-i.md) | No | the configuration of font weight. |
+| fontWeightConfigs | [FontWeightConfigs](../arkts-apis/arkts-arkui-fontweightconfigs-i.md) | No | the configuration of font weight. |
 
+<a id="maxfontscale"></a>
 ## maxFontScale
 
 ```TypeScript
@@ -211,8 +218,9 @@ Sets the maximum font scale factor for the **SymbolGlyph** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scale | [Optional](arkts-arkui-optional-t.md)<number\|Resource> | Yes | Maximum font scale factor for the **SymbolGlyph** component.<br>Value range:[1, +∞)<br>**NOTE**<br>A value less than 1 is handled as **1**. Abnormal values are ineffective by default. |
+| scale | [Optional](arkts-arkui-optional-t.md)&lt;number\|Resource&gt; | Yes | Maximum font scale factor for the **SymbolGlyph** component.<br>Value range:[1, +∞)<br>**NOTE**<br>A value less than 1 is handled as **1**. Abnormal values are ineffective by default. |
 
+<a id="minfontscale"></a>
 ## minFontScale
 
 ```TypeScript
@@ -235,8 +243,9 @@ Sets the minimum font scale factor for the **SymbolGlyph** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scale | [Optional](arkts-arkui-optional-t.md)<number\|Resource> | Yes | Minimum font scale factor for the **SymbolGlyph** component.<br>Value range: [0, 1]<br>The value **0** results in the minimum scaling.<br>**NOTE**<br>A value less than 0 is handled as 0. A value greater than 1 is handled as 1. Abnormal values are ineffective by default. |
+| scale | [Optional](arkts-arkui-optional-t.md)&lt;number\|Resource&gt; | Yes | Minimum font scale factor for the **SymbolGlyph** component.<br>Value range: [0, 1]<br>The value **0** results in the minimum scaling.<br>**NOTE**<br>A value less than 0 is handled as 0. A value greater than 1 is handled as 1. Abnormal values are ineffective by default. |
 
+<a id="renderingstrategy"></a>
 ## renderingStrategy
 
 ```TypeScript
@@ -247,7 +256,7 @@ Sets the rendering strategy of the **SymbolGlyph** component.
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -265,8 +274,9 @@ Sets the rendering strategy of the **SymbolGlyph** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [SymbolRenderingStrategy](arkts-arkui-symbolglyph-symbolrenderingstrategy-e.md) | Yes | Rendering strategy of the **SymbolGlyph** component.<br>Default value:**SymbolRenderingStrategy.SINGLE** |
+| value | [SymbolRenderingStrategy](arkts-arkui-symbolrenderingstrategy-e.md) | Yes | Rendering strategy of the **SymbolGlyph** component.<br>Default value:**SymbolRenderingStrategy.SINGLE** |
 
+<a id="shaderstyle"></a>
 ## shaderStyle
 
 ```TypeScript
@@ -275,7 +285,7 @@ shaderStyle(shader: Array<ShaderStyle | undefined> | ShaderStyle)
 
 Applies a gradient or solid color shader effect to the **SymbolGlyph** component.
 
-This API supports [RadialGradientStyle](../arkts-apis/arkts-arkui-text-common-radialgradientstyle-c.md),[LinearGradientStyle](../arkts-apis/arkts-arkui-text-common-lineargradientstyle-c.md), and [ColorShaderStyle](../arkts-apis/arkts-arkui-text-common-colorshaderstyle-c.md). When set,**shaderStyle** takes precedence over [fontColor](SymbolSpanAttribute#fontColor) and any AI-based styling. To apply a simple solid color, using [fontColor](SymbolSpanAttribute#fontColor) is recommended.
+This API supports [RadialGradientStyle](../arkts-apis/arkts-arkui-radialgradientstyle-c.md),[LinearGradientStyle](../arkts-apis/arkts-arkui-lineargradientstyle-c.md), and [ColorShaderStyle](../arkts-apis/arkts-arkui-colorshaderstyle-c.md). When set,**shaderStyle** takes precedence over [fontColor](SymbolSpanAttribute#fontColor) and any AI-based styling. To apply a simple solid color, using [fontColor](SymbolSpanAttribute#fontColor) is recommended.
 
 **Since:** 20
 
@@ -291,8 +301,9 @@ This API supports [RadialGradientStyle](../arkts-apis/arkts-arkui-text-common-ra
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| shader | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ShaderStyle \| undefined> \| ShaderStyle | Yes | Shader effect.<br>Input types and behavior:<br>Single **ShaderStyle** object: applies the specified effect to all layers. Array of **ShaderStyle** objects:applies the specified effect to the corresponding layer. Array of **undefined**: applies the default **SymbolGlyph** color to the corresponding layer. Layers unset retain their default color.<br> Based on the input, the system applies a radial gradient ([RadialGradientStyle](../arkts-apis/arkts-arkui-text-common-radialgradientstyle-c.md)), linear gradient([LinearGradientStyle](../arkts-apis/arkts-arkui-text-common-lineargradientstyle-c.md)), or solid color ([ColorShaderStyle](../arkts-apis/arkts-arkui-text-common-colorshaderstyle-c.md))to the **SymbolGlyph** component.<br>**NOTE**<br>Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)<br>Specify the center point and radius using percentages. If a non-percentage value (e.g., **10px**) is provided, it will be interpreted as 1000%.<br>You are advised to specify the radius using percentages.<br>Percentages are relative to the icon's size.The recommended value range is [0, 1). |
+| shader | Array&lt;ShaderStyle \| undefined&gt; \| ShaderStyle | Yes | Shader effect.<br>Input types and behavior:<br>Single **ShaderStyle** object: applies the specified effect to all layers. Array of **ShaderStyle** objects:applies the specified effect to the corresponding layer. Array of **undefined**: applies the default **SymbolGlyph** color to the corresponding layer. Layers unset retain their default color.<br> Based on the input, the system applies a radial gradient ([RadialGradientStyle](../arkts-apis/arkts-arkui-radialgradientstyle-c.md)), linear gradient([LinearGradientStyle](../arkts-apis/arkts-arkui-lineargradientstyle-c.md)), or solid color ([ColorShaderStyle](../arkts-apis/arkts-arkui-colorshaderstyle-c.md))to the **SymbolGlyph** component.<br>**NOTE**<br>Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)<br>Specify the center point and radius using percentages. If a non-percentage value (e.g., **10px**) is provided, it will be interpreted as 1000%.<br>You are advised to specify the radius using percentages.<br>Percentages are relative to the icon's size.The recommended value range is [0, 1). |
 
+<a id="symboleffect"></a>
 ## symbolEffect
 
 ```TypeScript
@@ -317,9 +328,10 @@ Sets the symbol effect and effect state for the **SymbolGlyph** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| symbolEffect | [SymbolEffect](arkts-arkui-symbolglyph-symboleffect-c.md) | Yes | Symbol effect of the **SymbolGlyph** component.<br>Default value:[SymbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean)) |
+| symbolEffect | [SymbolEffect](arkts-arkui-symboleffect-c.md) | Yes | Symbol effect of the **SymbolGlyph** component.<br>Default value:[SymbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean)) |
 | isActive | boolean | No | Whether the effect is active.<br>**true**: playing. **false**: not playing.<br>Default value: **false**. |
 
+<a id="symboleffect-1"></a>
 ## symbolEffect
 
 ```TypeScript
@@ -344,9 +356,10 @@ Sets the symbol effect and effect trigger for the **SymbolGlyph** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| symbolEffect | [SymbolEffect](arkts-arkui-symbolglyph-symboleffect-c.md) | Yes | Symbol effect of the **SymbolGlyph** component.<br>Default value:[SymbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean)) |
+| symbolEffect | [SymbolEffect](arkts-arkui-symboleffect-c.md) | Yes | Symbol effect of the **SymbolGlyph** component.<br>Default value:[SymbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean)) |
 | triggerValue | number | No | Value that, when changed, initiates the animation of the **SymbolGlyph** component.<br>To prevent the motion effect from triggering initially, set it to **-1**. |
 
+<a id="symbolshadow"></a>
 ## symbolShadow
 
 ```TypeScript
@@ -371,5 +384,5 @@ Sets the shadow effect of the **SymbolGlyph** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| shadow | [Optional](arkts-arkui-optional-t.md)<ShadowOptions> | Yes | Shadow effect of the **SymbolGlyph** component.<br>Unit:[vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)<br>Default value: {<br>radius: 0,<br>color: Color.Black<br>offsetX: 0,<br>offsetY: 0<br>} <br>The **fill** and **type** attributes, as well as the enumerated values of **ColoringStrategy** within the **color **attribute, are not supported. |
+| shadow | [Optional](arkts-arkui-optional-t.md)&lt;ShadowOptions&gt; | Yes | Shadow effect of the **SymbolGlyph** component.<br>Unit:[vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)<br>Default value: {<br>radius: 0,<br>color: Color.Black<br>offsetX: 0,<br>offsetY: 0<br>} <br>The **fill** and **type** attributes, as well as the enumerated values of **ColoringStrategy** within the **color **attribute, are not supported. |
 

@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="getkeyboardtype"></a>
 ## getKeyboardType
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the keyboard type of the input device, such as full keyboard and numeric
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | number | Yes | Unique ID of the input device. If a physical device is repeatedly reinstalled or restarted, its ID may change. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KeyboardType> | Yes | Callback function. If the query is successful, **err** is **undefined**, and **data** is the keyboard type of the input device. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KeyboardType&gt; | Yes | Callback function. If the query is successful, **err** is **undefined**, and **data** is the keyboard type of the input device. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ struct Index {
 ```
 
 
+<a id="getkeyboardtype-1"></a>
 ## getKeyboardType
 
 ```TypeScript
@@ -91,7 +93,7 @@ Obtains the keyboard type of an input device. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KeyboardType> | Promise used to return the keyboard type of the input device. |
+| Promise&lt;KeyboardType&gt; | Promise used to return the keyboard type of the input device. |
 
 **Error codes:**
 

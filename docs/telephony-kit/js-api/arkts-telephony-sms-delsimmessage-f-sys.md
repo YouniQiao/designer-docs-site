@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="delsimmessage"></a>
 ## delSimMessage
 
 ```TypeScript
@@ -30,7 +31,7 @@ Delete an SMS Message from the SIM card.
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
 | msgIndex | number | Yes | Indicates the message index. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of delSimMessage. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of delSimMessage. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ sms.delSimMessage(slotId, msgIndex, (err: BusinessError) => {
 ```
 
 
+<a id="delsimmessage-1"></a>
 ## delSimMessage
 
 ```TypeScript
@@ -88,7 +90,7 @@ Delete an SMS Message from the SIM card.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the delSimMessage. |
+| Promise&lt;void&gt; | The promise returned by the delSimMessage. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Declare TreeController
 import { TreeListener, NodeParam, CallbackParam, TreeListenType, TreeView, TreeController, TreeListenerManager } from '@kit.ArkUI';
 ```
 
+<a id="addnode"></a>
 ## addNode
 
 ```TypeScript
@@ -46,6 +47,7 @@ A maximum of 50 directory levels can be added.
 | --- | --- |
 | [TreeController](arkts-arkui-arkui-advanced-treeview-treecontroller-c.md) |  |
 
+<a id="builddone"></a>
 ## buildDone
 
 ```TypeScript
@@ -66,6 +68,7 @@ This interface must be called when you finish initializing the ListTreeView by a
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="modifynode"></a>
 ## modifyNode
 
 ```TypeScript
@@ -84,6 +87,7 @@ Modify the node name.Register an ON_ITEM_MODIFY callback to obtain the ID, paren
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="refreshnode"></a>
 ## refreshNode
 
 ```TypeScript
@@ -110,6 +114,7 @@ This interface is called when a secondaryTitle needs to be updated
 | parentSubTitle | [ResourceStr](arkts-arkui-resourcestr-t.md) | Yes |  |
 | currentSubtitle | [ResourceStr](arkts-arkui-resourcestr-t.md) | Yes |  |
 
+<a id="removenode"></a>
 ## removeNode
 
 ```TypeScript

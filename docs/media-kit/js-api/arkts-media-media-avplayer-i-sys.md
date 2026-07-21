@@ -2,11 +2,11 @@
 
 AVPlayer is a playback management class. It provides APIs to manage and play media assets. Before calling any API in AVPlayer, you must use [createAVPlayer()](arkts-media-media-createavplayer-f.md#createavplayer-1) to create an AVPlayer instance.
 
-When using the AVPlayer instance, you are advised to register the following callbacks to proactively obtain status changes: [on('stateChange')](arkts-media-media-avplayer-i.md#on-2):listens for AVPlayer state changes. [on('error')](arkts-media-media-avplayer-i.md#on-16):listens for error events.
+When using the AVPlayer instance, you are advised to register the following callbacks to proactively obtain status changes: [on('stateChange')](media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle)):listens for AVPlayer state changes. [on('error')](media.AVPlayer.on(type: 'error', callback: ErrorCallback)):listens for error events.
 
 Applications must properly manage AVPlayer instances according to their specific needs, creating and freeing them when necessary. Holding too many AVPlayer instances can lead to high memory usage, and in some cases, the system might terminate applications to free up resources.
 
-For details about the audio and video playback demo, see [Audio Playback](../../../../media/media/using-avplayer-for-playback.md) and [Video Playback](../../../../media/media/video-playback.md).
+For details about the audio and video playback demo, see [Audio Playback](docroot://media/media/using-avplayer-for-playback.md) and [Video Playback](docroot://media/media/video-playback.md).
 
 **Since:** 9
 
@@ -20,6 +20,7 @@ For details about the audio and video playback demo, see [Audio Playback](../../
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="enablecamerapostprocessing"></a>
 ## enableCameraPostprocessing
 
 ```TypeScript
@@ -44,7 +45,7 @@ Enable the post-processing function of Camera for video playback.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ Enable the post-processing function of Camera for video playback.
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called from Non-System applications. Return by promise. |
 
+<a id="forceloadvideo"></a>
 ## forceLoadVideo
 
 ```TypeScript
@@ -82,7 +84,7 @@ Specifies whether to forcibly load the video. This API can be called only when t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return when forceLoadVideo completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when forceLoadVideo completed. |
 
 **Error codes:**
 

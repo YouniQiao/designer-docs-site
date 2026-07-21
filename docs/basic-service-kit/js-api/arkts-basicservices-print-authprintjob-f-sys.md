@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="authprintjob"></a>
 ## authPrintJob
 
 ```TypeScript
@@ -38,7 +39,7 @@ Authenticate a print job.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 

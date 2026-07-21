@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="queryopenedenterprisedlpfiles"></a>
 ## queryOpenedEnterpriseDlpFiles
 
 ```TypeScript
@@ -46,7 +47,7 @@ This API is called when the system needs to manage or track enterprise DLP files
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the URI list of the target enterprise DLP files that have been opened. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the URI list of the target enterprise DLP files that have been opened. |
 
 **Error codes:**
 

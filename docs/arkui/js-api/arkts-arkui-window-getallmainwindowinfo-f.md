@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="getallmainwindowinfo"></a>
 ## getAllMainWindowInfo
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the information about all main windows. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<MainWindowInfo>> | Promise used to return an array of main window information. |
+| Promise&lt;Array&lt;MainWindowInfo&gt;&gt; | Promise used to return an array of main window information. |
 
 **Error codes:**
 

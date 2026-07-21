@@ -45,7 +45,7 @@ File Descriptor (FD) handles, which are used for communication between the main 
 - **fds** supports a maximum of 16 groups. In each group, **key** contains a maximum of 20 characters.  
 - The ID of a handle passed to the child process may change, but the handle always points to the same file.
 
-**Type:** Record<string, number>
+**Type:** Record&lt;string, number&gt;
 
 **Since:** 12
 

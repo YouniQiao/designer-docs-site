@@ -14,6 +14,7 @@ ColorManagementQuery provides the APIs for color space query.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getsupportedcolorspaces"></a>
 ## getSupportedColorSpaces
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the supported color spaces.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<colorSpaceManager.ColorSpace> | Array of color spaces supported. If the API call fails,undefined is returned. |
+| Array&lt;colorSpaceManager.ColorSpace&gt; | Array of color spaces supported. If the API call fails,undefined is returned. |
 
 **Error codes:**
 

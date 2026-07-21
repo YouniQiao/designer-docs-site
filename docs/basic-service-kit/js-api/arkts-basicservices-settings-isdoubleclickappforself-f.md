@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="isdoubleclickappforself"></a>
 ## isDoubleClickAppForSelf
 
 ```TypeScript
@@ -26,7 +27,7 @@ function isDoubleClickAppForSelf(): Promise<boolean>
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Check result.{@code true} is returned if the specified application is started. Otherwise, {@code false} is returned. |
+| Promise&lt;boolean&gt; | Check result.{@code true} is returned if the specified application is started. Otherwise, {@code false} is returned. |
 
 **Example**
 

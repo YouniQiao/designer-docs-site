@@ -6,6 +6,7 @@
 import { statistics } from '@kit.NetworkKit';
 ```
 
+<a id="gettrafficstatsbynetwork"></a>
 ## getTrafficStatsByNetwork
 
 ```TypeScript
@@ -34,7 +35,7 @@ Get the traffic usage details of the specified network of all applications in th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UidNetStatsInfo> | The statistics of the sim card. |
+| Promise&lt;UidNetStatsInfo&gt; | The statistics of the sim card. |
 
 **Error codes:**
 

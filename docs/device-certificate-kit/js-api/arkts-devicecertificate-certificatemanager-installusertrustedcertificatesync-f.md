@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="installusertrustedcertificatesync"></a>
 ## installUserTrustedCertificateSync
 
 ```TypeScript
@@ -26,7 +27,7 @@ Installs a user CA certificate.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| cert | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | CA certificate data. The value contains up to 8196 bytes. |
+| cert | Uint8Array | Yes | CA certificate data. The value contains up to 8196 bytes. |
 | certScope | [CertScope](arkts-devicecertificate-certificatemanager-certscope-e.md) | Yes | Scope of the CA certificate. |
 
 **Return value:**

@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="removemissedincomingcallnotification"></a>
 ## removeMissedIncomingCallNotification
 
 ```TypeScript
@@ -28,7 +29,7 @@ Remove missed incoming call notification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of removeMissedIncomingCallNotification. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of removeMissedIncomingCallNotification. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ call.removeMissedIncomingCallNotification((err: BusinessError) => {
 ```
 
 
+<a id="removemissedincomingcallnotification-1"></a>
 ## removeMissedIncomingCallNotification
 
 ```TypeScript
@@ -79,7 +81,7 @@ Remove missed incoming call notification.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the removeMissedIncomingCallNotification. |
+| Promise&lt;void&gt; | The promise returned by the removeMissedIncomingCallNotification. |
 
 **Error codes:**
 

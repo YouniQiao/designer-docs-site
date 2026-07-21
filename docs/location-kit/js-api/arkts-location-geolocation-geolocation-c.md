@@ -16,6 +16,7 @@
 import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, GetLocationTypeResponse, GetLocationOption } from '@kit.LocationKit';
 ```
 
+<a id="getlocation"></a>
 ## getLocation
 
 ```TypeScript
@@ -44,6 +45,7 @@ Obtains the geographic location.
 | --- | --- | --- | --- |
 | options | [GetLocationOption](arkts-location-geolocation-getlocationoption-i.md) | No |  |
 
+<a id="getlocationtype"></a>
 ## getLocationType
 
 ```TypeScript
@@ -68,6 +70,7 @@ Obtains the location types supported by the system.
 | --- | --- | --- | --- |
 | options | [GetLocationTypeOption](arkts-location-geolocation-getlocationtypeoption-i.md) | No |  |
 
+<a id="getsupportedcoordtypes"></a>
 ## getSupportedCoordTypes
 
 ```TypeScript
@@ -90,8 +93,9 @@ Obtains the supported coordinate system types.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> |  |
+| Array&lt;string&gt; |  |
 
+<a id="subscribe"></a>
 ## subscribe
 
 ```TypeScript
@@ -120,6 +124,7 @@ Listens to the geographical location. If this method is called multiple times, t
 | --- | --- | --- | --- |
 | options | [SubscribeLocationOption](arkts-location-geolocation-subscribelocationoption-i.md) | Yes |  |
 
+<a id="unsubscribe"></a>
 ## unsubscribe
 
 ```TypeScript

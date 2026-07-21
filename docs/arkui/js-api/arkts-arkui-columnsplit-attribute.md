@@ -1,8 +1,8 @@
 # ColumnSplit properties/events
 
-In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
-The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
+The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** ColumnSplitAttribute extends [CommonMethod<ColumnSplitAttribute>](CommonMethod<ColumnSplitAttribute>)
 
@@ -12,6 +12,7 @@ The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="divider"></a>
 ## divider
 
 ```TypeScript
@@ -34,8 +35,9 @@ Margin of the divider.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ColumnSplitDividerStyle \| null | Yes | Margin of the divider, that is, the distance between the divider and the child component.<br>Default value: **null**. When this parameter is set to null, the distance between the divider and the child component is 0 vp.<br>Invalid values are treated as the default value. |
+| value | [ColumnSplitDividerStyle](arkts-arkui-columnsplitdividerstyle-i.md) \| null | Yes | Margin of the divider, that is, the distance between the divider and the child component.<br>Default value: **null**. When this parameter is set to null, the distance between the divider and the child component is 0 vp.<br>Invalid values are treated as the default value. |
 
+<a id="resizeable"></a>
 ## resizeable
 
 ```TypeScript

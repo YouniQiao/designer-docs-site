@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface DateConstructor--><!--Device-unnamed-interface DateConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -20,5 +21,5 @@ new (value: number | string | Date): Date
 
 | Type | Description |
 | --- | --- |
-| [Date](arkts-na-lib-es5-date-i.md) |  |
+| Date |  |
 

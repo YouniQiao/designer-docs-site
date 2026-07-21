@@ -20,6 +20,7 @@ Before calling any API in AudioCapturer, you must use [createAudioCapturer](arkt
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="offreadmicindata"></a>
 ## offReadMicInData
 
 ```TypeScript
@@ -42,7 +43,7 @@ Unsubscribes from micIn audio data callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioCapturerMicInData> | No | Callback for the buffers to read. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioCapturerMicInData&gt; | No | Callback for the buffers to read. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ Unsubscribes from micIn audio data callback.
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 | [6800103](../errorcode-audio.md#6800103-unsupported-state) | Operation not permitted at running state. |
 
+<a id="onreadmicindata"></a>
 ## onReadMicInData
 
 ```TypeScript
@@ -74,7 +76,7 @@ Subscribes to micIn audio data callback. This callback has higher priority than 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioCapturerMicInData> | Yes | Callback for the buffers to read. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioCapturerMicInData&gt; | Yes | Callback for the buffers to read. |
 
 **Error codes:**
 
@@ -83,6 +85,7 @@ Subscribes to micIn audio data callback. This callback has higher priority than 
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 | [6800103](../errorcode-audio.md#6800103-unsupported-state) | Operation not permitted at running state. |
 
+<a id="setinputdevicetoaccessory"></a>
 ## setInputDeviceToAccessory
 
 ```TypeScript

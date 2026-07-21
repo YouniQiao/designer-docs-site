@@ -20,21 +20,21 @@ import { cloudSync } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [getCoreFileSyncState](arkts-corefile-cloudsync-getcorefilesyncstate-f.md#getcorefilesyncstate-1) | Obtains the upload sync state of a cloud file. This API returns the result synchronously. |
-| [registerChange](arkts-corefile-cloudsync-registerchange-f.md#registerchange-1) | Subscribes to the change of a file. The callback returns the changed data. |
-| [unregisterChange](arkts-corefile-cloudsync-unregisterchange-f.md#unregisterchange-1) | Unsubscribes from the change of a file. |
+| [getCoreFileSyncState](arkts-corefile-cloudsync-getcorefilesyncstate-f.md#getcorefilesyncstate) | Obtains the upload sync state of a cloud file. This API returns the result synchronously. |
+| [registerChange](arkts-corefile-cloudsync-registerchange-f.md#registerchange) | Subscribes to the change of a file. The callback returns the changed data. |
+| [unregisterChange](arkts-corefile-cloudsync-unregisterchange-f.md#unregisterchange) | Unsubscribes from the change of a file. |
 
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [getFileSyncState](arkts-corefile-cloudsync-getfilesyncstate-f-sys.md#getfilesyncstate-1) | Obtains the file sync state. This API uses a promise to return the result. |
-| [getFileSyncState](arkts-corefile-cloudsync-getfilesyncstate-f-sys.md#getfilesyncstate-2) | Obtains the file sync state. This API uses an asynchronous callback to return the result. |
-| [getFileSyncState](arkts-corefile-cloudsync-getfilesyncstate-f-sys.md#getfilesyncstate-3) | Obtains the file sync state. |
-| [optimizeStorage](arkts-corefile-cloudsync-optimizestorage-f-sys.md#optimizestorage-1) | Optimizes the resources that have been synced to the cloud from the local Gallery and executes the automatic aging policy according to the remaining local space. This API uses a promise to return the result. |
-| [startOptimizeSpace](arkts-corefile-cloudsync-startoptimizespace-f-sys.md#startoptimizespace-1) | Optimizes local resources that have been synced to the cloud and optimizes local images and videos that have not been accessed before the aging period expires. This API uses a promise to return the result. The callback returns the optimization progress.startOptimizeSpace is used together with **stopOptimizeSpace**. If **startOptimizeSpace** is called repeatedly, the error code 22400006 will be returned, indicating that other tasks are being executed. |
-| [stopOptimizeSpace](arkts-corefile-cloudsync-stopoptimizespace-f-sys.md#stopoptimizespace-1) | Synchronously stops optimizing cloud resource space. This method is used with **startOptimizeSpace**. |
+| [getFileSyncState](arkts-corefile-cloudsync-getfilesyncstate-f-sys.md#getfilesyncstate) | Obtains the file sync state. This API uses a promise to return the result. |
+| [getFileSyncState](arkts-corefile-cloudsync-getfilesyncstate-f-sys.md#getfilesyncstate-1) | Obtains the file sync state. This API uses an asynchronous callback to return the result. |
+| [getFileSyncState](arkts-corefile-cloudsync-getfilesyncstate-f-sys.md#getfilesyncstate-2) | Obtains the file sync state. |
+| [optimizeStorage](arkts-corefile-cloudsync-optimizestorage-f-sys.md#optimizestorage) | Optimizes the resources that have been synced to the cloud from the local Gallery and executes the automatic aging policy according to the remaining local space. This API uses a promise to return the result. |
+| [startOptimizeSpace](arkts-corefile-cloudsync-startoptimizespace-f-sys.md#startoptimizespace) | Optimizes local resources that have been synced to the cloud and optimizes local images and videos that have not been accessed before the aging period expires. This API uses a promise to return the result. The callback returns the optimization progress.  startOptimizeSpace is used together with **stopOptimizeSpace**. If **startOptimizeSpace** is called repeatedly, the error code 22400006 will be returned, indicating that other tasks are being executed. |
+| [stopOptimizeSpace](arkts-corefile-cloudsync-stopoptimizespace-f-sys.md#stopoptimizespace) | Synchronously stops optimizing cloud resource space. This method is used with **startOptimizeSpace**. |
 <!--DelEnd-->
 
 ### Classes
@@ -84,7 +84,7 @@ import { cloudSync } from '@kit.CoreFileKit';
 | --- | --- |
 | [DownloadErrorType](arkts-corefile-cloudsync-downloaderrortype-e.md) | Enumerates the device-cloud download error types. |
 | [DownloadFileType](arkts-corefile-cloudsync-downloadfiletype-e.md) | Enumerates the download file types from the Drive Kit. |
-| [ErrorType](arkts-corefile-cloudsync-errortype-e.md) | Enumerates the device-cloud sync errors.- In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi are unavailable. If the mobile data network is available, the synchronization can be performed normally. - During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW** will be return when the current upload is complete. - When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is not allowed. - If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file in the cloud. |
+| [ErrorType](arkts-corefile-cloudsync-errortype-e.md) | Enumerates the device-cloud sync errors.  - In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi are unavailable. If the mobile data network is available, the synchronization can be performed normally.  - During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW** will be return when the current upload is complete.  - When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is not allowed.  - If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file in the cloud. |
 | [FileState](arkts-corefile-cloudsync-filestate-e.md) | Enumerates the device-cloud file sync states. |
 | [NotifyType](arkts-corefile-cloudsync-notifytype-e.md) | Enumerates the data change types. |
 | [State](arkts-corefile-cloudsync-state-e.md) | Enumerates the download states of a cloud file. |
@@ -95,7 +95,7 @@ import { cloudSync } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [ErrorType](arkts-corefile-cloudsync-errortype-e-sys.md) | Enumerates the device-cloud sync errors.- In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi are unavailable. If the mobile data network is available, the synchronization can be performed normally. - During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW** will be return when the current upload is complete. - When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is not allowed. - If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file in the cloud. |
+| [ErrorType](arkts-corefile-cloudsync-errortype-e-sys.md) | Enumerates the device-cloud sync errors.  - In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi are unavailable. If the mobile data network is available, the synchronization can be performed normally.  - During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW** will be return when the current upload is complete.  - When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is not allowed.  - If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file in the cloud. |
 | [FileSyncState](arkts-corefile-cloudsync-filesyncstate-e-sys.md) | Enumerates the device-cloud file sync states. |
 | [OptimizeState](arkts-corefile-cloudsync-optimizestate-e-sys.md) | Enumerates the space optimization states. |
 | [State](arkts-corefile-cloudsync-state-e-sys.md) | Enumerates the download states of a cloud file. |

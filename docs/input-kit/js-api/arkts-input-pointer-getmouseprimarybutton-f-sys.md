@@ -6,6 +6,7 @@
 import { pointer } from '@kit.InputKit';
 ```
 
+<a id="getmouseprimarybutton"></a>
 ## getMousePrimaryButton
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the current primary mouse button. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PrimaryButton> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **PrimaryButton** is the obtained key value. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PrimaryButton&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **PrimaryButton** is the obtained key value. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ struct Index {
 ```
 
 
+<a id="getmouseprimarybutton-1"></a>
 ## getMousePrimaryButton
 
 ```TypeScript
@@ -88,7 +90,7 @@ Obtains the current primary mouse button. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PrimaryButton> | Promise used to return the primary mouse button. |
+| Promise&lt;PrimaryButton&gt; | Promise used to return the primary mouse button. |
 
 **Error codes:**
 

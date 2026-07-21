@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getrecoverableapplicationinfo"></a>
 ## getRecoverableApplicationInfo
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains information about all preinstalled applications that can be restored. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<RecoverableApplicationInfo>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)used to return the result. If the operation is successful, **err** is **null** and **data** is the information about all preinstalled applications. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;RecoverableApplicationInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)used to return the result. If the operation is successful, **err** is **null** and **data** is the information about all preinstalled applications. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ try {
 ```
 
 
+<a id="getrecoverableapplicationinfo-1"></a>
 ## getRecoverableApplicationInfo
 
 ```TypeScript
@@ -82,7 +84,7 @@ Obtains information about all preinstalled applications that can be restored. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<RecoverableApplicationInfo>> | Promise used to return the information about all recoverable applications. |
+| Promise&lt;Array&lt;RecoverableApplicationInfo&gt;&gt; | Promise used to return the information about all recoverable applications. |
 
 **Error codes:**
 

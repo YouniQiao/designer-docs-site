@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="sendterminalresponsecmd"></a>
 ## sendTerminalResponseCmd
 
 ```TypeScript
@@ -30,7 +31,7 @@ Send terminal response command to SIM card.
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | cmd | string | Yes | Indicates sending command. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of sendTerminalResponseCmd. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of sendTerminalResponseCmd. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ sim.sendTerminalResponseCmd(0, "ls", (err: BusinessError) => {
 ```
 
 
+<a id="sendterminalresponsecmd-1"></a>
 ## sendTerminalResponseCmd
 
 ```TypeScript
@@ -87,7 +89,7 @@ Send terminal response command to SIM card.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the sendTerminalResponseCmd. |
+| Promise&lt;void&gt; | The promise returned by the sendTerminalResponseCmd. |
 
 **Error codes:**
 

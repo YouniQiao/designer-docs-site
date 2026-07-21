@@ -8,6 +8,7 @@ interface of form lifecycle.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="onshare"></a>
 ## onShare
 
 ```TypeScript
@@ -38,6 +39,7 @@ Called when the system shares the form.
 | --- | --- |
 | { [key: string]: any } | Returns the wantParams object. |
 
+<a id="onshareform"></a>
 ## onShareForm
 
 ```TypeScript
@@ -66,5 +68,5 @@ Called when the system shares the form.The ability of this function is same as o
 
 | Type | Description |
 | --- | --- |
-| [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Returns the wantParams object. |
+| [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Returns the wantParams object. |
 

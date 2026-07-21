@@ -6,6 +6,7 @@
 import { sharing } from '@kit.NetworkKit';
 ```
 
+<a id="getsharingifaces"></a>
 ## getSharingIfaces
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the names of interfaces in each sharing state.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | state | [SharingIfaceState](arkts-network-sharing-sharingifacestate-e-sys.md) | Yes | Is the network sharing state. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Returns an array of interface names that meet this status. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Returns an array of interface names that meet this status. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sharing.getSharingIfaces(SHARING_BLUETOOTH, (error: BusinessError, data: string[
 ```
 
 
+<a id="getsharingifaces-1"></a>
 ## getSharingIfaces
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains the names of interfaces in each sharing state.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | The promise returned by the function. |
+| Promise&lt;Array&lt;string&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

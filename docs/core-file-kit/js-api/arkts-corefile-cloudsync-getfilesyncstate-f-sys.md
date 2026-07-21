@@ -6,6 +6,7 @@
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="getfilesyncstate"></a>
 ## getFileSyncState
 
 ```TypeScript
@@ -28,13 +29,13 @@ Obtains the file sync state. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URI of the file whose sync state is to be obtained. |
+| uri | Array&lt;string&gt; | Yes | URI of the file whose sync state is to be obtained. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<FileSyncState>> | Promise used to return the sync state obtained. |
+| Promise&lt;Array&lt;FileSyncState&gt;&gt; | Promise used to return the sync state obtained. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ cloudSync.getFileSyncState(uris).then((syncStates: Array<cloudSync.FileSyncState
 ```
 
 
+<a id="getfilesyncstate-1"></a>
 ## getFileSyncState
 
 ```TypeScript
@@ -87,8 +89,8 @@ Obtains the file sync state. This API uses an asynchronous callback to return th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URI of the file whose sync state is to be obtained. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<FileSyncState>> | Yes | Callback used to return the file sync state. |
+| uri | Array&lt;string&gt; | Yes | URI of the file whose sync state is to be obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;FileSyncState&gt;&gt; | Yes | Callback used to return the file sync state. |
 
 **Error codes:**
 
@@ -120,6 +122,7 @@ cloudSync.getFileSyncState(uris, (err: BusinessError, syncStates: Array<cloudSyn
 ```
 
 
+<a id="getfilesyncstate-2"></a>
 ## getFileSyncState
 
 ```TypeScript

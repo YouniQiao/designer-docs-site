@@ -19,6 +19,7 @@ Calls **registerPlugin** and **unregisterPlugin** to register or unregister call
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -52,6 +53,7 @@ let dlpConnManager: dlpPermission.DlpConnManager = new dlpPermission.DlpConnMana
 
 ```
 
+<a id="registerplugin"></a>
 ## registerPlugin
 
 ```TypeScript
@@ -84,7 +86,7 @@ Registers a callback with the SA.
 
 | Type | Description |
 | --- | --- |
-| number | Registration result. The unique ID of the callback is returned. The value range is [0, 2&lt;sup&gt;64&lt;/sup&gt;-1]. |
+| number | Registration result. The unique ID of the callback is returned. The value range is [0, 2<sup>64</sup>-1]. |
 
 **Error codes:**
 
@@ -122,6 +124,7 @@ let pluginId: number = dlpPermission.DlpConnManager.registerPlugin(new DataCapsu
 
 ```
 
+<a id="unregisterplugin"></a>
 ## unregisterPlugin
 
 ```TypeScript

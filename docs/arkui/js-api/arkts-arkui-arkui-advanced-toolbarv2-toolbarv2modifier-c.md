@@ -14,6 +14,7 @@ Declare ToolBarV2Modifier used in ToolBar
 import { ToolBarV2ItemImageOptions, ToolBarV2Item, ToolBarV2ItemText, ToolBarV2SymbolGlyphOptions, ToolBarV2ItemAction, ToolBarV2ItemOptions, ToolBarV2, ToolBarV2SymbolGlyph, ToolBarV2ItemIconType, ToolBarV2ItemImage, ToolBarV2ItemState, ToolBarV2ItemTextOptions, ToolBarV2Modifier } from '@kit.ArkUI';
 ```
 
+<a id="backgroundcolor"></a>
 ## backgroundColor
 
 ```TypeScript
@@ -44,6 +45,7 @@ Sets the backgroundColor of the toolBarV2.
 | --- | --- |
 | [ToolBarV2Modifier](arkts-arkui-arkui-advanced-toolbarv2-toolbarv2modifier-c.md) | returns the instance of the ToolBarV2Modifier. |
 
+<a id="height"></a>
 ## height
 
 ```TypeScript
@@ -74,6 +76,7 @@ Sets the height of the toolBarV2.
 | --- | --- |
 | [ToolBarV2Modifier](arkts-arkui-arkui-advanced-toolbarv2-toolbarv2modifier-c.md) | returns the instance of the ToolBarV2Modifier. |
 
+<a id="padding"></a>
 ## padding
 
 ```TypeScript
@@ -104,6 +107,7 @@ Sets the left and right padding of the toolbarV2.
 | --- | --- |
 | [ToolBarV2Modifier](arkts-arkui-arkui-advanced-toolbarv2-toolbarv2modifier-c.md) | returns the instance of the ToolBarV2Modifier. |
 
+<a id="stateeffect"></a>
 ## stateEffect
 
 ```TypeScript

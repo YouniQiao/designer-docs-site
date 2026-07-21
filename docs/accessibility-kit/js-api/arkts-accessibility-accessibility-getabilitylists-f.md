@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="getabilitylists"></a>
 ## getAbilityLists
 
 ```TypeScript
@@ -22,7 +23,7 @@ Obtains the accessibility application list. This API uses an asynchronous callba
 
 **Deprecated since:** 9
 
-**Substitutes:** getAccessibilityExtensionList(abilityType:
+**Substitutes:** [getAccessibilityExtensionList(abilityType:](arkts-accessibility-accessibility-getaccessibilityextensionlist-f.md#getaccessibilityextensionlist-1)
 
 <!--Device-accessibility-function getAbilityLists(
     abilityType: AbilityType,
@@ -42,7 +43,7 @@ Obtains the accessibility application list. This API uses an asynchronous callba
 | --- | --- | --- | --- |
 | abilityType | [AbilityType](arkts-accessibility-accessibility-abilitytype-t.md) | Yes | Accessibility application type. |
 | stateType | [AbilityState](arkts-accessibility-accessibility-abilitystate-t.md) | Yes | Accessibility application status. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AccessibilityAbilityInfo>> | Yes | Callback used to return the accessibility application list. If the operation is successful, **err** is **undefined** and **data** is the accessibility application list. Otherwise, it is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AccessibilityAbilityInfo&gt;&gt; | Yes | Callback used to return the accessibility application list. If the operation is successful, **err** is **undefined** and **data** is the accessibility application list. Otherwise, it is an error object. |
 
 **Example**
 
@@ -64,6 +65,7 @@ accessibility.getAbilityLists(abilityType, abilityState, (err: BusinessError, da
 ```
 
 
+<a id="getabilitylists-1"></a>
 ## getAbilityLists
 
 ```TypeScript
@@ -76,7 +78,7 @@ Obtains the accessibility application list. This API uses a promise to return th
 
 **Deprecated since:** 9
 
-**Substitutes:** getAccessibilityExtensionList(abilityType:
+**Substitutes:** [getAccessibilityExtensionList(abilityType:](arkts-accessibility-accessibility-getaccessibilityextensionlist-f.md#getaccessibilityextensionlist-1)
 
 <!--Device-accessibility-function getAbilityLists(abilityType: AbilityType, stateType: AbilityState): Promise<Array<AccessibilityAbilityInfo>>--><!--Device-accessibility-function getAbilityLists(abilityType: AbilityType, stateType: AbilityState): Promise<Array<AccessibilityAbilityInfo>>-End-->
 
@@ -93,7 +95,7 @@ Obtains the accessibility application list. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AccessibilityAbilityInfo>> | Promise used to return the accessibility application list. |
+| Promise&lt;Array&lt;AccessibilityAbilityInfo&gt;&gt; | Promise used to return the accessibility application list. |
 
 **Example**
 

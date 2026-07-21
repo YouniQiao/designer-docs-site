@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="createpkcs12sync"></a>
 ## createPkcs12Sync
 
 ```TypeScript
@@ -33,7 +34,7 @@ Creates P12. This API returns the result synchronously.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | P12 file created, in DER format. |
+| Uint8Array | P12 file created, in DER format. |
 
 **Error codes:**
 

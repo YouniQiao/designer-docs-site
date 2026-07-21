@@ -16,6 +16,7 @@ Manager HID device profile.
 import { hid } from '@kit.ConnectivityKit';
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -69,6 +70,7 @@ try {
 
 ```
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -109,6 +111,7 @@ try {
 
 ```
 
+<a id="offgetreport"></a>
 ## offGetReport
 
 ```TypeScript
@@ -131,7 +134,7 @@ Unsubscribe from the event that a GET_REPORT message is received from the peer d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<GetReportData> | No | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GetReportData&gt; | No | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -156,6 +159,7 @@ try {
 
 ```
 
+<a id="offinterruptdatareceived"></a>
 ## offInterruptDataReceived
 
 ```TypeScript
@@ -178,7 +182,7 @@ Unsubscribe from the event reported when InterruptData is received from the remo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<InterruptData> | No | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;InterruptData&gt; | No | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -203,6 +207,7 @@ try {
 
 ```
 
+<a id="offsetprotocol"></a>
 ## offSetProtocol
 
 ```TypeScript
@@ -225,7 +230,7 @@ Unsubscribe from the event that a SET_PROTOCOL message is received from the peer
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ProtocolData> | No | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ProtocolData&gt; | No | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -250,6 +255,7 @@ try {
 
 ```
 
+<a id="offsetreport"></a>
 ## offSetReport
 
 ```TypeScript
@@ -272,7 +278,7 @@ Unsubscribe from the event that a SET_REPORT message is received from the peer d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SetReportData> | No | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SetReportData&gt; | No | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -297,6 +303,7 @@ try {
 
 ```
 
+<a id="offvirtualcableunplug"></a>
 ## offVirtualCableUnplug
 
 ```TypeScript
@@ -319,7 +326,7 @@ Unsubscribe from the event reported when virtual Cable is removed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -344,6 +351,7 @@ try {
 
 ```
 
+<a id="ongetreport"></a>
 ## onGetReport
 
 ```TypeScript
@@ -366,7 +374,7 @@ Subscribe to the event reported when GET_REPORT message is received from the rem
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<GetReportData> | Yes | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GetReportData&gt; | Yes | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -390,6 +398,7 @@ try {
 
 ```
 
+<a id="oninterruptdatareceived"></a>
 ## onInterruptDataReceived
 
 ```TypeScript
@@ -412,7 +421,7 @@ Subscribe to the event reported when InterruptData is received from the remote.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<InterruptData> | Yes | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;InterruptData&gt; | Yes | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -436,6 +445,7 @@ try {
 
 ```
 
+<a id="onsetprotocol"></a>
 ## onSetProtocol
 
 ```TypeScript
@@ -458,7 +468,7 @@ Subscribe to the event reported when SET_PROTOCOL message is received from the r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ProtocolData> | Yes | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ProtocolData&gt; | Yes | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -482,6 +492,7 @@ try {
 
 ```
 
+<a id="onsetreport"></a>
 ## onSetReport
 
 ```TypeScript
@@ -504,7 +515,7 @@ Subscribe to the event reported when SET_REPORT message is received from the rem
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SetReportData> | Yes | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SetReportData&gt; | Yes | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -528,6 +539,7 @@ try {
 
 ```
 
+<a id="onvirtualcableunplug"></a>
 ## onVirtualCableUnplug
 
 ```TypeScript
@@ -550,7 +562,7 @@ Subscribe to the event reported when virtual Cable is removed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -574,6 +586,7 @@ try {
 
 ```
 
+<a id="registerhiddevice"></a>
 ## registerHidDevice
 
 ```TypeScript
@@ -599,7 +612,7 @@ Application registers the HID Device capability.The application will only succes
 | sdp | [HidDeviceSdp](arkts-connectivity-hid-hiddevicesdp-i.md) | Yes | Describe the hid device capability fields of this endpoint being queried. |
 | inQos | [HidDeviceQos](arkts-connectivity-hid-hiddeviceqos-i.md) | Yes | Describe the In Quality of Service (QoS) settings for the Bluetooth HID device application. |
 | outQos | [HidDeviceQos](arkts-connectivity-hid-hiddeviceqos-i.md) | Yes | Describe the Out Quality of Service (QoS) settings for the Bluetooth HID device application. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback for HID device registration status changes,{@code true} indicates register success or {@code false} otherwise. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback for HID device registration status changes,{@code true} indicates register success or {@code false} otherwise. |
 
 **Error codes:**
 
@@ -664,6 +677,7 @@ try {
 
 ```
 
+<a id="replyreport"></a>
 ## replyReport
 
 ```TypeScript
@@ -688,7 +702,7 @@ Reply report to a remote HID host device.
 | --- | --- | --- | --- |
 | type | [ReportType](arkts-connectivity-hid-reporttype-e.md) | Yes | Report type for reply |
 | id | number | Yes | Report Id, as defined in descriptor.It can be 0 in case Report Id are not defined in descriptor. |
-| reportData | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Report Data send to host. |
+| reportData | Uint8Array | Yes | Report Data send to host. |
 
 **Error codes:**
 
@@ -716,6 +730,7 @@ try {
 
 ```
 
+<a id="reporterror"></a>
 ## reportError
 
 ```TypeScript
@@ -764,6 +779,7 @@ try {
 
 ```
 
+<a id="sendreport"></a>
 ## sendReport
 
 ```TypeScript
@@ -787,7 +803,7 @@ Send report to a remote HID host device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | id | number | Yes | Report ID defined in the descriptor. |
-| reportData | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Report data sent to the host device. |
+| reportData | Uint8Array | Yes | Report data sent to the host device. |
 
 **Error codes:**
 
@@ -814,6 +830,7 @@ try {
 
 ```
 
+<a id="unregisterhiddevice"></a>
 ## unregisterHidDevice
 
 ```TypeScript

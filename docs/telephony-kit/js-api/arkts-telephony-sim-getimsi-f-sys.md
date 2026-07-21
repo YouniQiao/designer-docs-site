@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="getimsi"></a>
 ## getIMSI
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the international mobile subscriber ID.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the international mobile subscriber ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the international mobile subscriber ID. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sim.getIMSI(0, (err: BusinessError, data: string) => {
 ```
 
 
+<a id="getimsi-1"></a>
 ## getIMSI
 
 ```TypeScript
@@ -85,7 +87,7 @@ Get the international mobile subscriber ID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the international mobile subscriber ID. |
+| Promise&lt;string&gt; | Returns the international mobile subscriber ID. |
 
 **Error codes:**
 

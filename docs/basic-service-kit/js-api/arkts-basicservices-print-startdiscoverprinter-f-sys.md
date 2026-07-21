@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="startdiscoverprinter"></a>
 ## startDiscoverPrinter
 
 ```TypeScript
@@ -30,8 +31,8 @@ Discovers printers by specifying the extension list. The discovered printers con
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| extensionList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of [PrintExtensionAbilities](arkts-basicservices-app-ability-printextensionability-printextensionability-c.md) to be loaded.The list members are the bundle names of the applications with print extension abilities. An empty list indicates that all extension abilities are loaded. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback to be invoked when a printer is discovered. |
+| extensionList | Array&lt;string&gt; | Yes | List of [PrintExtensionAbilities](arkts-basicservices-app-ability-printextensionability-printextensionability-c.md) to be loaded.The list members are the bundle names of the applications with print extension abilities. An empty list indicates that all extension abilities are loaded. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback to be invoked when a printer is discovered. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ print.startDiscoverPrinter(extensionList, (err: BusinessError) => {
 ```
 
 
+<a id="startdiscoverprinter-1"></a>
 ## startDiscoverPrinter
 
 ```TypeScript
@@ -85,13 +87,13 @@ Discovers printers by specifying the extension list. The discovered printers con
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| extensionList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of [PrintExtensionAbilities](arkts-basicservices-app-ability-printextensionability-printextensionability-c.md) to be loaded.The list members are the bundle names of the applications with print extension abilities. An empty list indicates that all extension abilities are loaded. |
+| extensionList | Array&lt;string&gt; | Yes | List of [PrintExtensionAbilities](arkts-basicservices-app-ability-printextensionability-printextensionability-c.md) to be loaded.The list members are the bundle names of the applications with print extension abilities. An empty list indicates that all extension abilities are loaded. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

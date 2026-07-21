@@ -2,7 +2,7 @@
 
 Provides APIs for managing data in an RDB store.
 
-Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-relationalstore-getrdbstore-f.md#getrdbstore-2)method and then call the corresponding method through the instance.
+Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-relationalstore-getrdbstore-f.md#getrdbstore-1)method and then call the corresponding method through the instance.
 
 In addition, use [execute](arkts-arkdata-relationalstore-rdbstore-i.md#execute-1)to initialize the database table structure and related data first, ensuring that the prerequisites for related API calls are met.
 
@@ -18,6 +18,7 @@ In addition, use [execute](arkts-arkdata-relationalstore-rdbstore-i.md#execute-1
 import { relationalStore } from '@kit.ArkData';
 ```
 
+<a id="attach"></a>
 ## attach
 
 ```TypeScript
@@ -44,7 +45,7 @@ Attaches a database file to the currently linked database.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of attached databases. |
+| Promise&lt;number&gt; | Promise used to return the number of attached databases. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ Attaches a database file to the currently linked database.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="attach-1"></a>
 ## attach
 
 ```TypeScript
@@ -100,7 +102,7 @@ Attaches a database file to the currently linked database.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of attached databases. |
+| Promise&lt;number&gt; | Promise used to return the number of attached databases. |
 
 **Error codes:**
 
@@ -131,6 +133,7 @@ Attaches a database file to the currently linked database.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="backup"></a>
 ## backup
 
 ```TypeScript
@@ -150,7 +153,7 @@ Backs up a database in a specified name.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | destName | string | Yes | Indicates the name that saves the database backup. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of backup. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of backup. |
 
 **Error codes:**
 
@@ -177,6 +180,7 @@ Backs up a database in a specified name.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="backup-1"></a>
 ## backup
 
 ```TypeScript
@@ -201,7 +205,7 @@ Backs up a database in a specified name.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -227,6 +231,7 @@ Backs up a database in a specified name.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="batchinsert"></a>
 ## batchInsert
 
 ```TypeScript
@@ -250,8 +255,8 @@ Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Indicates the rows of data {@link ValuesBucket}to be inserted into the table. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | The number of values that were inserted if the operation is successful. returns -1 otherwise. |
+| values | Array&lt;ValuesBucket&gt; | Yes | Indicates the rows of data {@link ValuesBucket}to be inserted into the table. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | The number of values that were inserted if the operation is successful. returns -1 otherwise. |
 
 **Error codes:**
 
@@ -278,6 +283,7 @@ Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="batchinsert-1"></a>
 ## batchInsert
 
 ```TypeScript
@@ -301,13 +307,13 @@ Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
+| values | Array&lt;ValuesBucket&gt; | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The number of values that were inserted if the operation is successful.Returns -1 otherwise. |
+| Promise&lt;number&gt; | The number of values that were inserted if the operation is successful.Returns -1 otherwise. |
 
 **Error codes:**
 
@@ -334,6 +340,7 @@ Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="batchinsertsync"></a>
 ## batchInsertSync
 
 ```TypeScript
@@ -357,7 +364,7 @@ Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
+| values | Array&lt;ValuesBucket&gt; | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
 
 **Return value:**
 
@@ -390,6 +397,7 @@ Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="batchinsertwithconflictresolution"></a>
 ## batchInsertWithConflictResolution
 
 ```TypeScript
@@ -423,14 +431,14 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
+| values | Array&lt;ValuesBucket&gt; | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | Yes | Indicates the {@link ConflictResolution} to insert data into the table. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The number of values that were inserted if the operation is successful.Returns -1 otherwise. |
+| Promise&lt;number&gt; | The number of values that were inserted if the operation is successful.Returns -1 otherwise. |
 
 **Error codes:**
 
@@ -457,6 +465,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="batchinsertwithconflictresolutionsync"></a>
 ## batchInsertWithConflictResolutionSync
 
 ```TypeScript
@@ -490,7 +499,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
+| values | Array&lt;ValuesBucket&gt; | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | Yes | Indicates the {@link ConflictResolution} to insert data into the table. |
 
 **Return value:**
@@ -524,6 +533,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="batchinsertwithreturning"></a>
 ## batchInsertWithReturning
 
 ```TypeScript
@@ -550,7 +560,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
+| values | Array&lt;ValuesBucket&gt; | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
 | config | [ReturningConfig](arkts-arkdata-relationalstore-returningconfig-i.md) | Yes | Indicate the information that needs to be returned. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | No | Indicates the {@link ConflictResolution} to insert data into the table.The default conflict resolution policy is {@link ConflictResolution.ON_CONFLICT_NONE}. |
 
@@ -558,7 +568,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result> | The {@link Result} result of the inserted field includes the number of modified rows and the result set of changed data. |
+| Promise&lt;Result&gt; | The {@link Result} result of the inserted field includes the number of modified rows and the result set of changed data. |
 
 **Error codes:**
 
@@ -577,6 +587,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="batchinsertwithreturningsync"></a>
 ## batchInsertWithReturningSync
 
 ```TypeScript
@@ -603,7 +614,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
+| values | Array&lt;ValuesBucket&gt; | Yes | Indicates the rows of data {@link ValuesBucket} to be inserted into the table. |
 | config | [ReturningConfig](arkts-arkdata-relationalstore-returningconfig-i.md) | Yes | Indicate the information that needs to be returned. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | No | Indicates the {@link ConflictResolution} to insert data into the table.The default conflict resolution policy is {@link ConflictResolution.ON_CONFLICT_NONE}. |
 
@@ -630,6 +641,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="begintrans"></a>
 ## beginTrans
 
 ```TypeScript
@@ -648,7 +660,7 @@ Begins a transaction before executing the SQL statement.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the transaction ID. |
+| Promise&lt;number&gt; | Returns the transaction ID. |
 
 **Error codes:**
 
@@ -676,6 +688,7 @@ Begins a transaction before executing the SQL statement.
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="begintransaction"></a>
 ## beginTransaction
 
 ```TypeScript
@@ -715,6 +728,7 @@ BeginTransaction before execute your sql.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="cleandirtydata"></a>
 ## cleanDirtyData
 
 ```TypeScript
@@ -737,7 +751,7 @@ Data with a cursor smaller than the specified cursor will be cleaned up.
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the name of the table to check. |
 | cursor | number | Yes | Indicates the position of the data to be cleaned up. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Indicates the callback invoked to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Indicates the callback invoked to return the result. |
 
 **Error codes:**
 
@@ -764,6 +778,7 @@ Data with a cursor smaller than the specified cursor will be cleaned up.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="cleandirtydata-1"></a>
 ## cleanDirtyData
 
 ```TypeScript
@@ -783,7 +798,7 @@ Cleans all dirty data deleted in the cloud.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the name of the table to check. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of clean. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of clean. |
 
 **Error codes:**
 
@@ -810,6 +825,7 @@ Cleans all dirty data deleted in the cloud.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="cleandirtydata-2"></a>
 ## cleanDirtyData
 
 ```TypeScript
@@ -837,7 +853,7 @@ If a cursor is specified, data with a cursor smaller than the specified cursor w
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | -The promise returned by the function. |
+| Promise&lt;void&gt; | -The promise returned by the function. |
 
 **Error codes:**
 
@@ -864,6 +880,7 @@ If a cursor is specified, data with a cursor smaller than the specified cursor w
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -882,7 +899,7 @@ Close the RdbStore and all resultSets.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -891,6 +908,7 @@ Close the RdbStore and all resultSets.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: The RdbStore verification failed. |
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 
+<a id="cloudsync"></a>
 ## cloudSync
 
 ```TypeScript
@@ -910,8 +928,8 @@ Sync data to cloud.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | [SyncMode](arkts-arkdata-relationalstore-syncmode-e.md) | Yes | indicates the database synchronization mode. |
-| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ProgressDetails> | Yes | Callback used to return the {@link ProgressDetails} result. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of cloudSync. |
+| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ProgressDetails&gt; | Yes | Callback used to return the {@link ProgressDetails} result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of cloudSync. |
 
 **Error codes:**
 
@@ -921,6 +939,7 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="cloudsync-1"></a>
 ## cloudSync
 
 ```TypeScript
@@ -940,13 +959,13 @@ Sync data to cloud.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | [SyncMode](arkts-arkdata-relationalstore-syncmode-e.md) | Yes | indicates the database synchronization mode. |
-| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ProgressDetails> | Yes | Callback used to return the {@link ProgressDetails} result. |
+| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ProgressDetails&gt; | Yes | Callback used to return the {@link ProgressDetails} result. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | : The promise returned by the function. |
+| Promise&lt;void&gt; | : The promise returned by the function. |
 
 **Error codes:**
 
@@ -956,6 +975,7 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="cloudsync-2"></a>
 ## cloudSync
 
 ```TypeScript
@@ -991,8 +1011,8 @@ Sync data to cloud.
 | --- | --- | --- | --- |
 | mode | [SyncMode](arkts-arkdata-relationalstore-syncmode-e.md) | Yes | indicates the database synchronization mode. |
 | tables | string[] | Yes | indicates the database synchronization mode. |
-| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ProgressDetails> | Yes | Callback used to return the {@link ProgressDetails} result. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of cloudSync. |
+| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ProgressDetails&gt; | Yes | Callback used to return the {@link ProgressDetails} result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of cloudSync. |
 
 **Error codes:**
 
@@ -1002,6 +1022,7 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="cloudsync-3"></a>
 ## cloudSync
 
 ```TypeScript
@@ -1022,13 +1043,13 @@ Sync data to cloud.
 | --- | --- | --- | --- |
 | mode | [SyncMode](arkts-arkdata-relationalstore-syncmode-e.md) | Yes | indicates the database synchronization mode. |
 | tables | string[] | Yes | indicates the database synchronization mode. |
-| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ProgressDetails> | Yes | Callback used to return the {@link ProgressDetails} result. |
+| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ProgressDetails&gt; | Yes | Callback used to return the {@link ProgressDetails} result. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | : The promise returned by the function. |
+| Promise&lt;void&gt; | : The promise returned by the function. |
 
 **Error codes:**
 
@@ -1038,6 +1059,7 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="cloudsyncex"></a>
 ## cloudSyncEx
 
 ```TypeScript
@@ -1059,13 +1081,13 @@ Synchronizes data to the cloud. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [CloudSyncConfig](arkts-arkdata-relationalstore-cloudsyncconfig-i.md) | Yes | indicates the cloud synchronization config. |
-| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ProgressDetails> | Yes | Callback used to return the sync progress. |
+| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ProgressDetails&gt; | Yes | Callback used to return the sync progress. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1073,6 +1095,7 @@ Synchronizes data to the cloud. This API uses a promise to return the result.
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="commit"></a>
 ## commit
 
 ```TypeScript
@@ -1111,6 +1134,7 @@ Commit the the sql you have executed.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="commit-1"></a>
 ## commit
 
 ```TypeScript
@@ -1135,7 +1159,7 @@ Commits the SQL statement executed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1161,6 +1185,7 @@ Commits the SQL statement executed.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="createtransaction"></a>
 ## createTransaction
 
 ```TypeScript
@@ -1185,7 +1210,7 @@ create a transaction instance and begin.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Transaction> | The {@link Transaction} object if the operation is successful. |
+| Promise&lt;Transaction&gt; | The {@link Transaction} object if the operation is successful. |
 
 **Error codes:**
 
@@ -1202,6 +1227,7 @@ create a transaction instance and begin.
 | [14800029](../errorcode-data-rdb.md#14800029-sqlite-database-is-full) | SQLite: The database is full. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -1221,7 +1247,7 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified delete condition by the instance object of {@link RdbPredicates}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | The number of affected rows. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | The number of affected rows. |
 
 **Error codes:**
 
@@ -1248,6 +1274,7 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -1272,7 +1299,7 @@ Deletes data from the database based on a specified instance object of RdbPredic
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | return the number of affected rows. |
+| Promise&lt;number&gt; | return the number of affected rows. |
 
 **Error codes:**
 
@@ -1299,6 +1326,7 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="deletesync"></a>
 ## deleteSync
 
 ```TypeScript
@@ -1350,6 +1378,7 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="deletewithreturning"></a>
 ## deleteWithReturning
 
 ```TypeScript
@@ -1377,7 +1406,7 @@ Deletes data from the database based on a specified instance object of RdbPredic
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result> | The {@link Result} result of the deleted field includes the number of modified rows and the result set of changed data. |
+| Promise&lt;Result&gt; | The {@link Result} result of the deleted field includes the number of modified rows and the result set of changed data. |
 
 **Error codes:**
 
@@ -1396,6 +1425,7 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="deletewithreturningsync"></a>
 ## deleteWithReturningSync
 
 ```TypeScript
@@ -1442,6 +1472,7 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="detach"></a>
 ## detach
 
 ```TypeScript
@@ -1467,7 +1498,7 @@ Detaches a database from this database.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Return the current number of attached databases. |
+| Promise&lt;number&gt; | Return the current number of attached databases. |
 
 **Error codes:**
 
@@ -1493,6 +1524,7 @@ Detaches a database from this database.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="emit"></a>
 ## emit
 
 ```TypeScript
@@ -1523,6 +1555,7 @@ Notifies the registered observers of a change to the data resource specified by 
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="execute"></a>
 ## execute
 
 ```TypeScript
@@ -1542,13 +1575,13 @@ Executes a SQL statement that contains specified parameters and returns a value 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Indicates the {@link ValueType} values of the parameters in the SQL statement.The values are strings. |
+| args | Array&lt;ValueType&gt; | No | Indicates the {@link ValueType} values of the parameters in the SQL statement.The values are strings. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ValueType> | The promise returned by the function. |
+| Promise&lt;ValueType&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -1576,6 +1609,7 @@ Executes a SQL statement that contains specified parameters and returns a value 
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="execute-1"></a>
 ## execute
 
 ```TypeScript
@@ -1596,13 +1630,13 @@ Executes a SQL statement that contains specified parameters and returns a value 
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
 | txId | number | Yes | Indicates the transaction ID which is obtained by beginTrans or 0. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Indicates the {@link ValueType} values of the parameters in the SQL statement.The values are strings. |
+| args | Array&lt;ValueType&gt; | No | Indicates the {@link ValueType} values of the parameters in the SQL statement.The values are strings. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ValueType> | The promise returned by the function. |
+| Promise&lt;ValueType&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -1630,6 +1664,7 @@ Executes a SQL statement that contains specified parameters and returns a value 
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="executesql"></a>
 ## executeSql
 
 ```TypeScript
@@ -1649,7 +1684,7 @@ Executes a SQL statement that contains specified parameters but returns no value
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of executeSql. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of executeSql. |
 
 **Error codes:**
 
@@ -1677,6 +1712,7 @@ Executes a SQL statement that contains specified parameters but returns no value
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="executesql-1"></a>
 ## executeSql
 
 ```TypeScript
@@ -1696,8 +1732,8 @@ Executes a SQL statement that contains specified parameters but returns no value
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | Yes | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of executeSql. |
+| bindArgs | Array&lt;ValueType&gt; | Yes | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of executeSql. |
 
 **Error codes:**
 
@@ -1725,6 +1761,7 @@ Executes a SQL statement that contains specified parameters but returns no value
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="executesql-2"></a>
 ## executeSql
 
 ```TypeScript
@@ -1744,13 +1781,13 @@ Executes a SQL statement that contains specified parameters but returns no value
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
+| bindArgs | Array&lt;ValueType&gt; | No | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -1778,6 +1815,7 @@ Executes a SQL statement that contains specified parameters but returns no value
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="executesync"></a>
 ## executeSync
 
 ```TypeScript
@@ -1797,7 +1835,7 @@ Executes a SQL statement that contains specified parameters and returns a value 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Indicates the {@link ValueType} values of the parameters in the SQL statement.The values are strings. |
+| args | Array&lt;ValueType&gt; | No | Indicates the {@link ValueType} values of the parameters in the SQL statement.The values are strings. |
 
 **Return value:**
 
@@ -1830,6 +1868,7 @@ Executes a SQL statement that contains specified parameters and returns a value 
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="getmodifytime"></a>
 ## getModifyTime
 
 ```TypeScript
@@ -1856,7 +1895,7 @@ Obtains the modify time of rows corresponding to the primary keys.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ModifyTime> | -The promise returned by the function. ModifyTime indicates the modify time of current row.If this table does not support cloud, the {@link ModifyTime} will be empty. |
+| Promise&lt;ModifyTime&gt; | -The promise returned by the function. ModifyTime indicates the modify time of current row.If this table does not support cloud, the {@link ModifyTime} will be empty. |
 
 **Error codes:**
 
@@ -1883,6 +1922,7 @@ Obtains the modify time of rows corresponding to the primary keys.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="getmodifytime-1"></a>
 ## getModifyTime
 
 ```TypeScript
@@ -1919,7 +1959,7 @@ Obtains the modify time of rows corresponding to the primary keys.
 | table | string | Yes | Indicates the name of the table to check. |
 | columnName | string | Yes | Indicates the name of the column to check. |
 | primaryKeys | [PRIKeyType](arkts-arkdata-relationalstore-prikeytype-t.md)[] | Yes | Indicates the primary keys of the rows to check. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ModifyTime> | Yes | The callback of getModifyTime. ModifyTime indicates the modify time of current row.If this table does not support cloud, the {@link ModifyTime} will be empty. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ModifyTime&gt; | Yes | The callback of getModifyTime. ModifyTime indicates the modify time of current row.If this table does not support cloud, the {@link ModifyTime} will be empty. |
 
 **Error codes:**
 
@@ -1946,6 +1986,7 @@ Obtains the modify time of rows corresponding to the primary keys.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -1966,7 +2007,7 @@ Inserts a row of data into the target table.
 | --- | --- | --- | --- |
 | table | string | Yes | Indicates the target table. |
 | values | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | Indicates the row of data {@link ValuesBucket} to be inserted into the table. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | The row ID if the operation is successful. returns -1 otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | The row ID if the operation is successful. returns -1 otherwise. |
 
 **Error codes:**
 
@@ -1993,6 +2034,7 @@ Inserts a row of data into the target table.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="insert-1"></a>
 ## insert
 
 ```TypeScript
@@ -2014,7 +2056,7 @@ Inserts a row of data into the target table.
 | table | string | Yes | Indicates the target table. |
 | values | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | Indicates the row of data {@link ValuesBucket} to be inserted into the table. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | Yes | Indicates the {@link ConflictResolution} to insert data into the table. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | The row ID if the operation is successful. returns -1 otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | The row ID if the operation is successful. returns -1 otherwise. |
 
 **Error codes:**
 
@@ -2041,6 +2083,7 @@ Inserts a row of data into the target table.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="insert-2"></a>
 ## insert
 
 ```TypeScript
@@ -2066,7 +2109,7 @@ Inserts a row of data into the target table.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The row ID if the operation is successful. return -1 otherwise. |
+| Promise&lt;number&gt; | The row ID if the operation is successful. return -1 otherwise. |
 
 **Error codes:**
 
@@ -2093,6 +2136,7 @@ Inserts a row of data into the target table.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="insert-3"></a>
 ## insert
 
 ```TypeScript
@@ -2119,7 +2163,7 @@ Inserts a row of data into the target table.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The row ID if the operation is successful. return -1 otherwise. |
+| Promise&lt;number&gt; | The row ID if the operation is successful. return -1 otherwise. |
 
 **Error codes:**
 
@@ -2146,6 +2190,7 @@ Inserts a row of data into the target table.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="insertsync"></a>
 ## insertSync
 
 ```TypeScript
@@ -2199,6 +2244,7 @@ Inserts a row of data into the target table with sync interface.
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="insertsync-1"></a>
 ## insertSync
 
 ```TypeScript
@@ -2252,6 +2298,7 @@ Inserts a row of data into the target table with sync interface.
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="lockrow"></a>
 ## lockRow
 
 ```TypeScript
@@ -2276,7 +2323,7 @@ Locks data from the database based on a specified instance object of RdbPredicat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -2303,6 +2350,7 @@ Locks data from the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="obtaindistributedtablename"></a>
 ## obtainDistributedTableName
 
 ```TypeScript
@@ -2325,7 +2373,7 @@ Obtain distributed table name of specified remote device according to local tabl
 | --- | --- | --- | --- |
 | device | string | Yes | Indicates the remote device. |
 | table | string | Yes | {string}: the distributed table name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes |  |
 
 **Error codes:**
 
@@ -2336,6 +2384,7 @@ Obtain distributed table name of specified remote device according to local tabl
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="obtaindistributedtablename-1"></a>
 ## obtainDistributedTableName
 
 ```TypeScript
@@ -2363,7 +2412,7 @@ Obtain distributed table name of specified remote device according to local tabl
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | {string}: the distributed table name. |
+| Promise&lt;string&gt; | {string}: the distributed table name. |
 
 **Error codes:**
 
@@ -2374,6 +2423,7 @@ Obtain distributed table name of specified remote device according to local tabl
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -2394,7 +2444,7 @@ Remove specified observer of specified type from the database.
 | --- | --- | --- | --- |
 | event | 'dataChange' | Yes | Indicates the event must be string 'dataChange'. |
 | type | [SubscribeType](../../apis-notification-kit/arkts-apis/arkts-notification-notificationextensionsubscription-subscribetype-e.md) | Yes | Indicates the subscription type, which is defined in {@link SubscribeType}.If its value is SUBSCRIBE_TYPE_REMOTE, ohos.permission.DISTRIBUTED_DATASYNC is required. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> | Yes | {Array&lt;string&gt;}: the data change observer already registered. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | {Array<string>}: the data change observer already registered. |
 
 **Error codes:**
 
@@ -2404,6 +2454,7 @@ Remove specified observer of specified type from the database.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -2436,7 +2487,7 @@ Remove specified observer of specified type from the database.
 | --- | --- | --- | --- |
 | event | 'dataChange' | Yes | indicates the event must be string 'dataChange'. |
 | type | [SubscribeType](../../apis-notification-kit/arkts-apis/arkts-notification-notificationextensionsubscription-subscribetype-e.md) | Yes | indicates the subscription type, which is defined in {@link SubscribeType}.If its value is SUBSCRIBE_TYPE_REMOTE, ohos.permission.DISTRIBUTED_DATASYNC is required. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> \| Callback<Array<ChangeInfo>> | No | {Array&lt;string&gt;}: the data change observer already registered.{Array&lt;ChangeInfo&gt;}: the change info already registered. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;string&gt;&gt; \| Callback&lt;Array&lt;ChangeInfo&gt;&gt; | No | {Array<string>}: the data change observer already registered.{Array<ChangeInfo>}: the change info already registered. |
 
 **Error codes:**
 
@@ -2447,6 +2498,7 @@ Remove specified observer of specified type from the database.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="off-2"></a>
 ## off
 
 ```TypeScript
@@ -2467,7 +2519,7 @@ Remove specified observer of specified type from the database.
 | --- | --- | --- | --- |
 | event | string | Yes | Indicates the subscription event. |
 | interProcess | boolean | Yes | Indicates whether it is an interprocess subscription or an in-process subscription. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | The data change observer already registered.<br>**Since:** 12 |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | The data change observer already registered.<br>**Since:** 12 |
 
 **Error codes:**
 
@@ -2479,6 +2531,7 @@ Remove specified observer of specified type from the database.
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="off-3"></a>
 ## off
 
 ```TypeScript
@@ -2498,7 +2551,7 @@ Unregister the database auto synchronization callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'autoSyncProgress' | Yes | indicates the event must be string 'autoSyncProgress'. |
-| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ProgressDetails> | No | Callback used to return the {@link ProgressDetails} result. |
+| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ProgressDetails&gt; | No | Callback used to return the {@link ProgressDetails} result. |
 
 **Error codes:**
 
@@ -2508,6 +2561,7 @@ Unregister the database auto synchronization callback.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="off-4"></a>
 ## off
 
 ```TypeScript
@@ -2527,7 +2581,7 @@ Unsubscribes from the SQL statistics.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'statistics' | Yes | Indicates the event type, which must be 'statistics'. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SqlExecutionInfo> | No | Indicates the callback to unregister. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SqlExecutionInfo&gt; | No | Indicates the callback to unregister. |
 
 **Error codes:**
 
@@ -2538,6 +2592,7 @@ Unsubscribes from the SQL statistics.
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="off-5"></a>
 ## off
 
 ```TypeScript
@@ -2557,7 +2612,7 @@ Unsubscribes from the SQL performance statistics.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'perfStat' | Yes | Event type, which must be 'perfStat'. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SqlExecutionInfo> | No | Callback to unregister. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SqlExecutionInfo&gt; | No | Callback to unregister. |
 
 **Error codes:**
 
@@ -2566,6 +2621,7 @@ Unsubscribes from the SQL performance statistics.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="off-6"></a>
 ## off
 
 ```TypeScript
@@ -2585,7 +2641,7 @@ Unsubscribes from the SQL execution error logs.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'sqliteErrorOccurred' | Yes | Indicates the event type, which must be 'sqliteErrorOccurred'. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ExceptionMessage> | No | Callback to unregister. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ExceptionMessage&gt; | No | Callback to unregister. |
 
 **Error codes:**
 
@@ -2594,6 +2650,7 @@ Unsubscribes from the SQL execution error logs.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -2614,7 +2671,7 @@ Subscribes to data changes of this RDB store.The registered callback will be cal
 | --- | --- | --- | --- |
 | event | 'dataChange' | Yes | Indicates the event must be string 'dataChange'. |
 | type | [SubscribeType](../../apis-notification-kit/arkts-apis/arkts-notification-notificationextensionsubscription-subscribetype-e.md) | Yes | Indicates the subscription type, which is defined in {@link SubscribeType}.If its value is SUBSCRIBE_TYPE_REMOTE, ohos.permission.DISTRIBUTED_DATASYNC is required. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> | Yes | {Array&lt;string&gt;}: the observer of data change events in the distributed database. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | {Array<string>}: the observer of data change events in the distributed database. |
 
 **Error codes:**
 
@@ -2624,6 +2681,7 @@ Subscribes to data changes of this RDB store.The registered callback will be cal
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -2644,7 +2702,7 @@ Subscribes to data changes of this RDB store.The registered callback will be cal
 | --- | --- | --- | --- |
 | event | 'dataChange' | Yes | Indicates the event must be string 'dataChange'. |
 | type | [SubscribeType](../../apis-notification-kit/arkts-apis/arkts-notification-notificationextensionsubscription-subscribetype-e.md) | Yes | Indicates the subscription type, which is defined in {@link SubscribeType}.If its value is SUBSCRIBE_TYPE_REMOTE, ohos.permission.DISTRIBUTED_DATASYNC is required. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> \| Callback<Array<ChangeInfo>> | Yes | {Array&lt;string&gt;}: the observer of data change events in the distributed database. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;string&gt;&gt; \| Callback&lt;Array&lt;ChangeInfo&gt;&gt; | Yes | {Array<string>}: the observer of data change events in the distributed database. |
 
 **Error codes:**
 
@@ -2655,6 +2713,7 @@ Subscribes to data changes of this RDB store.The registered callback will be cal
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="on-2"></a>
 ## on
 
 ```TypeScript
@@ -2675,7 +2734,7 @@ Registers an observer for the database.
 | --- | --- | --- | --- |
 | event | string | Yes | Event type, which must match the event type in {@link emit}. |
 | interProcess | boolean | Yes | Indicates whether it is an interprocess subscription or an in-process subscription. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | The observer of data change events in the database. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | The observer of data change events in the database. |
 
 **Error codes:**
 
@@ -2687,6 +2746,7 @@ Registers an observer for the database.
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="on-3"></a>
 ## on
 
 ```TypeScript
@@ -2706,7 +2766,7 @@ Register an automatic synchronization callback to the database.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'autoSyncProgress' | Yes | Indicates the event must be string 'autoSyncProgress'. |
-| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ProgressDetails> | Yes | Callback used to return the {@link ProgressDetails} result. |
+| progress | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ProgressDetails&gt; | Yes | Callback used to return the {@link ProgressDetails} result. |
 
 **Error codes:**
 
@@ -2716,6 +2776,7 @@ Register an automatic synchronization callback to the database.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="on-4"></a>
 ## on
 
 ```TypeScript
@@ -2735,7 +2796,7 @@ Subscribes to the SQL statistics.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'statistics' | Yes | Indicates the event type, which must be 'statistics'. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SqlExecutionInfo> | Yes | Indicates the callback used to return the SQL execution statistics {@link SqlExeInfo} in the database. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SqlExecutionInfo&gt; | Yes | Indicates the callback used to return the SQL execution statistics {@link SqlExeInfo} in the database. |
 
 **Error codes:**
 
@@ -2746,6 +2807,7 @@ Subscribes to the SQL statistics.
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="on-5"></a>
 ## on
 
 ```TypeScript
@@ -2765,7 +2827,7 @@ Subscribes to the SQL performance statistics.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'perfStat' | Yes | Event type, which must be 'perfStat'. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SqlExecutionInfo> | Yes | Callback used to return the SQL execution statistics{@link SqlExecutionInfo}. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SqlExecutionInfo&gt; | Yes | Callback used to return the SQL execution statistics{@link SqlExecutionInfo}. |
 
 **Error codes:**
 
@@ -2774,6 +2836,7 @@ Subscribes to the SQL performance statistics.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="on-6"></a>
 ## on
 
 ```TypeScript
@@ -2793,7 +2856,7 @@ Subscribes to the SQL execution error logs.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'sqliteErrorOccurred' | Yes | Event type, which must be 'sqliteErrorOccurred'. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ExceptionMessage> | Yes | Callback used to return the SQL execution errorlog{@link ExceptionMessage}. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ExceptionMessage&gt; | Yes | Callback used to return the SQL execution errorlog{@link ExceptionMessage}. |
 
 **Error codes:**
 
@@ -2802,6 +2865,7 @@ Subscribes to the SQL execution error logs.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -2821,7 +2885,7 @@ Queries data in the database based on specified conditions.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified query condition by the instance object of {@link RdbPredicates}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | The {@link ResultSet} object if the operation is successful. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -2832,6 +2896,7 @@ Queries data in the database based on specified conditions.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
+<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -2851,8 +2916,8 @@ Queries data in the database based on specified conditions.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified query condition by the instance object of {@link RdbPredicates}. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | The columns to query. If the value is empty array, the query applies to all columns. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | The {@link ResultSet} object if the operation is successful. |
+| columns | Array&lt;string&gt; | Yes | The columns to query. If the value is empty array, the query applies to all columns. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -2863,6 +2928,7 @@ Queries data in the database based on specified conditions.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
+<a id="query-2"></a>
 ## query
 
 ```TypeScript
@@ -2882,13 +2948,13 @@ Queries data in the database based on specified conditions.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified query condition by the instance object of {@link RdbPredicates}. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | The columns to query. If the value is null, the query applies to all columns. |
+| columns | Array&lt;string&gt; | No | The columns to query. If the value is null, the query applies to all columns. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | The {@link ResultSet} object if the operation is successful. |
+| Promise&lt;ResultSet&gt; | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -2899,6 +2965,7 @@ Queries data in the database based on specified conditions.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
+<a id="querybystep"></a>
 ## queryByStep
 
 ```TypeScript
@@ -2920,13 +2987,13 @@ Query data in the database step‑by‑step based on SQL statements.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute.<br>Value range: (0, +∞)<br>A valid SQL statement must be used. Otherwise, an error code may be thrown when ResultSet is used. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Indicates the {@link ValueType} values of the parameters in the SQL statement.<br>Default value:The default value is an empty array.<br>The value must be the same as the number of placeholders in the SQL statement. |
+| bindArgs | Array&lt;ValueType&gt; | No | Indicates the {@link ValueType} values of the parameters in the SQL statement.<br>Default value:The default value is an empty array.<br>The value must be the same as the number of placeholders in the SQL statement. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | The {@link ResultSet} object if the operation is successful. |
+| Promise&lt;ResultSet&gt; | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -2934,6 +3001,7 @@ Query data in the database step‑by‑step based on SQL statements.
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="querybystep-1"></a>
 ## queryByStep
 
 ```TypeScript
@@ -2955,13 +3023,13 @@ Queries data in the database step‑by‑step based on specified conditions.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified query condition by the instance object of {@link RdbPredicates}. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | The columns to query.If the value is null, the query applies to all columns.<br>Default value: empty array by default.<br>If an empty array is transferred, all columns are queried. |
+| columns | Array&lt;string&gt; | No | The columns to query.If the value is null, the query applies to all columns.<br>Default value: empty array by default.<br>If an empty array is transferred, all columns are queried. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | The {@link ResultSet} object if the operation is successful. |
+| Promise&lt;ResultSet&gt; | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -2969,6 +3037,7 @@ Queries data in the database step‑by‑step based on specified conditions.
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="querylockedrow"></a>
 ## queryLockedRow
 
 ```TypeScript
@@ -2988,13 +3057,13 @@ Queries locked data in the database based on specified conditions.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified query condition by the instance object of {@link RdbPredicates}. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | The columns to query. If the value is null, the query applies to all columns. |
+| columns | Array&lt;string&gt; | No | The columns to query. If the value is null, the query applies to all columns. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | The {@link ResultSet} object if the operation is successful. |
+| Promise&lt;ResultSet&gt; | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -3020,6 +3089,7 @@ Queries locked data in the database based on specified conditions.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="querysql"></a>
 ## querySql
 
 ```TypeScript
@@ -3039,7 +3109,7 @@ Queries data in the database based on SQL statement.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | The {@link ResultSet} object if the operation is successful. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -3050,6 +3120,7 @@ Queries data in the database based on SQL statement.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
+<a id="querysql-1"></a>
 ## querySql
 
 ```TypeScript
@@ -3069,8 +3140,8 @@ Queries data in the database based on SQL statement.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | Yes | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | The {@link ResultSet} object if the operation is successful. |
+| bindArgs | Array&lt;ValueType&gt; | Yes | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -3081,6 +3152,7 @@ Queries data in the database based on SQL statement.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
+<a id="querysql-2"></a>
 ## querySql
 
 ```TypeScript
@@ -3100,13 +3172,13 @@ Queries data in the database based on SQL statement.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
+| bindArgs | Array&lt;ValueType&gt; | No | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | The {@link ResultSet} object if the operation is successful. |
+| Promise&lt;ResultSet&gt; | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -3117,6 +3189,7 @@ Queries data in the database based on SQL statement.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
+<a id="querysqlsync"></a>
 ## querySqlSync
 
 ```TypeScript
@@ -3136,7 +3209,7 @@ Queries data in the database based on SQL statement with sync interface.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | Indicates the SQL statement to execute. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
+| bindArgs | Array&lt;ValueType&gt; | No | Indicates the {@link ValueType} values of the parameters in the SQL statement. The values are strings. |
 
 **Return value:**
 
@@ -3153,6 +3226,7 @@ Queries data in the database based on SQL statement with sync interface.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond. |
 
+<a id="querysqlwithoutrowcount"></a>
 ## querySqlWithoutRowCount
 
 ```TypeScript
@@ -3174,13 +3248,13 @@ Queries data from the RDB store based on specified conditions without calculatin
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
+| bindArgs | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<LiteResultSet> | Promise used to return the result. If the operation is successful, a **LiteResultSet** object will be returned. |
+| Promise&lt;LiteResultSet&gt; | Promise used to return the result. If the operation is successful, a **LiteResultSet** object will be returned. |
 
 **Error codes:**
 
@@ -3189,6 +3263,7 @@ Queries data from the RDB store based on specified conditions without calculatin
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. Parameter is out of valid range. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="querysqlwithoutrowcountsync"></a>
 ## querySqlWithoutRowCountSync
 
 ```TypeScript
@@ -3210,7 +3285,7 @@ Queries data from the RDB store based on specified SQL statements without calcul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. The default value is null. |
+| bindArgs | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. The default value is null. |
 
 **Return value:**
 
@@ -3225,6 +3300,7 @@ Queries data from the RDB store based on specified SQL statements without calcul
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. Parameter is out of valid range. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="querysync"></a>
 ## querySync
 
 ```TypeScript
@@ -3244,7 +3320,7 @@ Queries data in the database based on specified conditions with sync function.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified query condition by the instance object of {@link RdbPredicates}. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | The columns to query. If the value is empty array, the query applies to all columns. |
+| columns | Array&lt;string&gt; | No | The columns to query. If the value is empty array, the query applies to all columns. |
 
 **Return value:**
 
@@ -3261,6 +3337,7 @@ Queries data in the database based on specified conditions with sync function.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond. |
 
+<a id="querywithoutrowcount"></a>
 ## queryWithoutRowCount
 
 ```TypeScript
@@ -3282,13 +3359,13 @@ Queries data without rowCount in the database based on specified conditions.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified query condition by the instance object of {@link RdbPredicates}. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | The columns to query. If the value is null, the query applies to all columns. |
+| columns | Array&lt;string&gt; | No | The columns to query. If the value is null, the query applies to all columns. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<LiteResultSet> | The {@link LiteResultSet} object if the operation is successful. |
+| Promise&lt;LiteResultSet&gt; | The {@link LiteResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -3296,6 +3373,7 @@ Queries data without rowCount in the database based on specified conditions.
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="querywithoutrowcountsync"></a>
 ## queryWithoutRowCountSync
 
 ```TypeScript
@@ -3317,7 +3395,7 @@ Queries data without rowCount in the database based on specified conditions with
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified query condition by the instance object of {@link RdbPredicates}. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | The columns to query. If the value is null, the query applies to all columns. |
+| columns | Array&lt;string&gt; | No | The columns to query. If the value is null, the query applies to all columns. |
 
 **Return value:**
 
@@ -3331,6 +3409,7 @@ Queries data without rowCount in the database based on specified conditions with
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="rekey"></a>
 ## rekey
 
 ```TypeScript
@@ -3355,7 +3434,7 @@ Changes the key used to encrypt the database.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3374,6 +3453,7 @@ Changes the key used to encrypt the database.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800029](../errorcode-data-rdb.md#14800029-sqlite-database-is-full) | SQLite: The database is full. |
 
+<a id="rekeyex"></a>
 ## rekeyEx
 
 ```TypeScript
@@ -3398,7 +3478,7 @@ Change the encryption parameters of the database.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3416,6 +3496,7 @@ Change the encryption parameters of the database.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800029](../errorcode-data-rdb.md#14800029-sqlite-database-is-full) | SQLite: The database is full. |
 
+<a id="remotequery"></a>
 ## remoteQuery
 
 ```TypeScript
@@ -3455,8 +3536,8 @@ Queries remote data in the database based on specified conditions before Synchro
 | device | string | Yes | Indicates specified remote device. |
 | table | string | Yes | Indicates the target table. |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified remote remote query condition by the instance object of {@link RdbPredicates}. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | The columns to remote query.If the value is empty array, the remote query applies to all columns. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | The {@link ResultSet} object if the operation is successful. |
+| columns | Array&lt;string&gt; | Yes | The columns to remote query.If the value is empty array, the remote query applies to all columns. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -3467,6 +3548,7 @@ Queries remote data in the database based on specified conditions before Synchro
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="remotequery-1"></a>
 ## remoteQuery
 
 ```TypeScript
@@ -3488,13 +3570,13 @@ Queries remote data in the database based on specified conditions before Synchro
 | device | string | Yes | Indicates specified remote device. |
 | table | string | Yes | Indicates the target table. |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified remote remote query condition by the instance object of {@link RdbPredicates}. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | The columns to remote query.If the value is empty array, the remote query applies to all columns. |
+| columns | Array&lt;string&gt; | Yes | The columns to remote query.If the value is empty array, the remote query applies to all columns. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | The {@link ResultSet} object if the operation is successful. |
+| Promise&lt;ResultSet&gt; | The {@link ResultSet} object if the operation is successful. |
 
 **Error codes:**
 
@@ -3505,6 +3587,7 @@ Queries remote data in the database based on specified conditions before Synchro
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="restore"></a>
 ## restore
 
 ```TypeScript
@@ -3524,7 +3607,7 @@ Restores a database from a specified database file.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | srcName | string | Yes | Indicates the name that saves the database file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of restore. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of restore. |
 
 **Error codes:**
 
@@ -3550,6 +3633,7 @@ Restores a database from a specified database file.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="restore-1"></a>
 ## restore
 
 ```TypeScript
@@ -3574,7 +3658,7 @@ Restores a database from a specified database file.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -3600,6 +3684,7 @@ Restores a database from a specified database file.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="rollback"></a>
 ## rollBack
 
 ```TypeScript
@@ -3638,6 +3723,7 @@ Roll back the sql you have already executed.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="rollback"></a>
 ## rollback
 
 ```TypeScript
@@ -3662,7 +3748,7 @@ Rolls back the SQL statement executed.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -3688,6 +3774,7 @@ Rolls back the SQL statement executed.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="setdistributedtables"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3708,8 +3795,8 @@ Set table to be distributed table.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tables | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Indicates the table names you want to set. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setDistributedTables. |
+| tables | Array&lt;string&gt; | Yes | Indicates the table names you want to set. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setDistributedTables. |
 
 **Error codes:**
 
@@ -3720,6 +3807,7 @@ Set table to be distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="setdistributedtables-1"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3740,13 +3828,13 @@ Set table to be distributed table.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tables | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Indicates the table names you want to set. |
+| tables | Array&lt;string&gt; | Yes | Indicates the table names you want to set. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -3757,6 +3845,7 @@ Set table to be distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="setdistributedtables-2"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3777,9 +3866,9 @@ Set table to be distributed table.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tables | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Indicates the table names you want to set. |
+| tables | Array&lt;string&gt; | Yes | Indicates the table names you want to set. |
 | type | [DistributedType](arkts-arkdata-relationalstore-distributedtype-e.md) | Yes | Indicates the distributed type {@link DistributedType}.ohos.permission.DISTRIBUTED_DATASYNC is required only when type is DISTRIBUTED_DEVICE. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setDistributedTables. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setDistributedTables. |
 
 **Error codes:**
 
@@ -3791,6 +3880,7 @@ Set table to be distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="setdistributedtables-3"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3826,10 +3916,10 @@ Set table to be distributed table.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tables | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Indicates the table names you want to set. |
+| tables | Array&lt;string&gt; | Yes | Indicates the table names you want to set. |
 | type | [DistributedType](arkts-arkdata-relationalstore-distributedtype-e.md) | Yes | Indicates the distributed type {@link DistributedType}.ohos.permission.DISTRIBUTED_DATASYNC is required only when type is DISTRIBUTED_DEVICE. |
 | config | [DistributedConfig](arkts-arkdata-relationalstore-distributedconfig-i.md) | Yes | Indicates the distributed config of the tables. For details, see {@link DistributedConfig}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setDistributedTables. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setDistributedTables. |
 
 **Error codes:**
 
@@ -3841,6 +3931,7 @@ Set table to be distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="setdistributedtables-4"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3861,7 +3952,7 @@ Set table to be a distributed table.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tables | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Indicates the table names you want to set. |
+| tables | Array&lt;string&gt; | Yes | Indicates the table names you want to set. |
 | type | [DistributedType](arkts-arkdata-relationalstore-distributedtype-e.md) | No | Indicates the distributed type {@link DistributedType}.ohos.permission.DISTRIBUTED_DATASYNC is required only when type is DISTRIBUTED_DEVICE. |
 | config | [DistributedConfig](arkts-arkdata-relationalstore-distributedconfig-i.md) | No | Indicates the distributed config of the tables. For details, see {@link DistributedConfig}. |
 
@@ -3869,7 +3960,7 @@ Set table to be a distributed table.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -3881,6 +3972,7 @@ Set table to be a distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="setlocale"></a>
 ## setLocale
 
 ```TypeScript
@@ -3905,7 +3997,7 @@ Support for collations in different languages.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -3918,6 +4010,7 @@ Support for collations in different languages.
 | [14800026](../errorcode-data-rdb.md#14800026-sqlite-insufficient-database-memory) | SQLite: The database is out of memory. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="stopcloudsync"></a>
 ## stopCloudSync
 
 ```TypeScript
@@ -3938,7 +4031,7 @@ Stops synchronizing data with the cloud.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | : The promise returned by the function. |
+| Promise&lt;void&gt; | : The promise returned by the function. |
 
 **Error codes:**
 
@@ -3947,6 +4040,7 @@ Stops synchronizing data with the cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported because the device does not support the cloud synchronization capability. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="sync"></a>
 ## sync
 
 ```TypeScript
@@ -3969,7 +4063,7 @@ Sync data between devices.
 | --- | --- | --- | --- |
 | mode | [SyncMode](arkts-arkdata-relationalstore-syncmode-e.md) | Yes | Indicates the database synchronization mode. |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified sync condition by the instance object of {@link RdbPredicates}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<[string, number]>> | Yes | {Array&lt;[string, int]&gt;}: devices sync status array,{string}: device id,{int}: device sync status. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;[string, number]&gt;&gt; | Yes | {Array<[string, int]>}: devices sync status array,{string}: device id,{int}: device sync status. |
 
 **Error codes:**
 
@@ -3980,6 +4074,7 @@ Sync data between devices.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="sync-1"></a>
 ## sync
 
 ```TypeScript
@@ -4007,7 +4102,7 @@ Sync data between devices.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<[string, number]>> | {Array&lt;[string, int]&gt;}: devices sync status array, {string}: device id, {int}: device sync status. |
+| Promise&lt;Array&lt;[string, number]&gt;&gt; | {Array<[string, int]>}: devices sync status array, {string}: device id, {int}: device sync status. |
 
 **Error codes:**
 
@@ -4018,6 +4113,7 @@ Sync data between devices.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
+<a id="syncex"></a>
 ## syncEx
 
 ```TypeScript
@@ -4049,7 +4145,7 @@ Sync data between devices.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<SyncResult>> | devices sync result array, see {@link SyncResult} for details. |
+| Promise&lt;Array&lt;SyncResult&gt;&gt; | devices sync result array, see {@link SyncResult} for details. |
 
 **Error codes:**
 
@@ -4059,6 +4155,7 @@ Sync data between devices.
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. Parameter is out of valid range. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
+<a id="unlockrow"></a>
 ## unlockRow
 
 ```TypeScript
@@ -4083,7 +4180,7 @@ Unlocks data from the database based on a specified instance object of RdbPredic
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -4110,6 +4207,7 @@ Unlocks data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -4130,7 +4228,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | --- | --- | --- | --- |
 | values | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | Indicates the row of data to be updated in the database.The key-value pairs are associated with column names of the database table. |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Indicates the specified update condition by the instance object of {@link RdbPredicates}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | The number of affected rows. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | The number of affected rows. |
 
 **Error codes:**
 
@@ -4157,6 +4255,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -4193,7 +4292,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | values | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | Indicates the row of data to be updated in the database.The key-value pairs are associated with column names of the database table. |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Indicates the specified update condition by the instance object of {@link RdbPredicates}. |
 | conflict | [ConflictResolution](../../apis-asset-store-kit/arkts-apis/arkts-assetstore-asset-conflictresolution-e.md) | Yes | Indicates the {@link ConflictResolution} to insert data into the table. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | The number of affected rows. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | The number of affected rows. |
 
 **Error codes:**
 
@@ -4220,6 +4319,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="update-2"></a>
 ## update
 
 ```TypeScript
@@ -4245,7 +4345,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The number of affected rows. |
+| Promise&lt;number&gt; | The number of affected rows. |
 
 **Error codes:**
 
@@ -4272,6 +4372,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="update-3"></a>
 ## update
 
 ```TypeScript
@@ -4298,7 +4399,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The number of affected rows. |
+| Promise&lt;number&gt; | The number of affected rows. |
 
 **Error codes:**
 
@@ -4325,6 +4426,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
+<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
@@ -4378,6 +4480,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="updatewithreturning"></a>
 ## updateWithReturning
 
 ```TypeScript
@@ -4410,7 +4513,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result> | The {@link Result} result of the updated field includes the number of modified rows and the result set of changed data. |
+| Promise&lt;Result&gt; | The {@link Result} result of the updated field includes the number of modified rows and the result set of changed data. |
 
 **Error codes:**
 
@@ -4429,6 +4532,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
+<a id="updatewithreturningsync"></a>
 ## updateWithReturningSync
 
 ```TypeScript

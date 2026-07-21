@@ -14,6 +14,7 @@ An object that implements the setting of the frame rate and callback. It provide
 import { displaySync } from '@kit.ArkGraphics2D';
 ```
 
+<a id="off"></a>
 ## off('frame')
 
 ```TypeScript
@@ -33,7 +34,7 @@ Unsubscribes from change events of each frame.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'frame' | Yes | Event type. The value is fixed at **'frame'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<IntervalInfo> | No | Callback used for unsubscription.If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;IntervalInfo&gt; | No | Callback used for unsubscription.If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Example**
 
@@ -49,6 +50,7 @@ backDisplaySync?.off("frame", callback)
 
 ```
 
+<a id="on"></a>
 ## on('frame')
 
 ```TypeScript
@@ -68,7 +70,7 @@ Subscribes to change events of each frame.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'frame' | Yes | Event type. The value is fixed at **'frame'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<IntervalInfo> | Yes | Callback used for subscription. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;IntervalInfo&gt; | Yes | Callback used for subscription. |
 
 **Example**
 
@@ -82,6 +84,7 @@ backDisplaySync?.on("frame", callback)
 
 ```
 
+<a id="setexpectedframeraterange"></a>
 ## setExpectedFrameRateRange
 
 ```TypeScript
@@ -100,7 +103,7 @@ Sets the expected frame rate range.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rateRange | [ExpectedFrameRateRange](../../apis-arkui/arkts-components/arkts-arkui-common-expectedframeraterange-i.md) | Yes | Expected frame rate range. |
+| rateRange | [ExpectedFrameRateRange](../../apis-arkui/arkts-components/arkts-arkui-expectedframeraterange-i.md) | Yes | Expected frame rate range. |
 
 **Error codes:**
 
@@ -122,6 +125,7 @@ backDisplaySync?.setExpectedFrameRateRange(range)
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -186,6 +190,7 @@ struct Index {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript

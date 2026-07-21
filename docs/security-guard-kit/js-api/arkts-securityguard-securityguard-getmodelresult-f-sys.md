@@ -6,6 +6,7 @@
 import { securityGuard } from '@kit.SecurityGuardKit';
 ```
 
+<a id="getmodelresult"></a>
 ## getModelResult
 
 ```TypeScript
@@ -34,7 +35,7 @@ Request security model result from security guard.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ModelResult> | model Results with Promises. |
+| Promise&lt;ModelResult&gt; | model Results with Promises. |
 
 **Error codes:**
 

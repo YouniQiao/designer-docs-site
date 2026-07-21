@@ -6,6 +6,7 @@
 import { proxyChannelManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="on"></a>
 ## on('receiveData')
 
 ```TypeScript
@@ -30,7 +31,7 @@ Subscribes to data receiving events. This API returns the result asynchronously 
 | --- | --- | --- | --- |
 | type | 'receiveData' | Yes | Event type. The value **receiveData** indicates the data receiving event. |
 | channelId | number | Yes | Channel ID obtained when the proxy channel is opened. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataInfo> | Yes | Callback used to return the received data. If the callback function is registered multiple times, only the last registered one takes effect. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataInfo&gt; | Yes | Callback used to return the received data. If the callback function is registered multiple times, only the last registered one takes effect. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ struct Index {
 ```
 
 
+<a id="on-1"></a>
 ## on('channelStateChange')
 
 ```TypeScript
@@ -97,7 +99,7 @@ Subscribes to channel state change events. This API returns the result asynchron
 | --- | --- | --- | --- |
 | type | 'channelStateChange' | Yes | Event type. The value **channelStateChange** indicates the channel state change event. |
 | channelId | number | Yes | Channel ID obtained when the proxy channel is opened. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ChannelStateInfo> | Yes | Callback used to return the received channel state. If the callback function is registered multiple times, only the last registered one takes effect. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ChannelStateInfo&gt; | Yes | Callback used to return the received channel state. If the callback function is registered multiple times, only the last registered one takes effect. |
 
 **Error codes:**
 

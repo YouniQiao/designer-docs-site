@@ -6,6 +6,7 @@
 import { motion } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="onpickupchange"></a>
 ## onPickupChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ Subscribe to pick up sensor event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PickupEvent> | Yes | The callback to receive pickup status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PickupEvent&gt; | Yes | The callback to receive pickup status. |
 
 **Error codes:**
 

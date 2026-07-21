@@ -6,6 +6,7 @@
 import { geolocation } from '@kit.LocationKit';
 ```
 
+<a id="getcachedgnsslocationssize"></a>
 ## getCachedGnssLocationsSize
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtain the number of cached GNSS locations reported at a time
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Indicates the callback for reporting the cached GNSS locations size. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Indicates the callback for reporting the cached GNSS locations size. |
 
 **Example**
 
@@ -48,6 +49,7 @@ geolocation.getCachedGnssLocationsSize((err, size) => {
 ```
 
 
+<a id="getcachedgnsslocationssize-1"></a>
 ## getCachedGnssLocationsSize
 
 ```TypeScript
@@ -72,7 +74,7 @@ Obtain the number of cached GNSS locations reported at a time
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returned by the function. |
+| Promise&lt;number&gt; | The promise returned by the function. |
 
 **Example**
 

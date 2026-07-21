@@ -6,6 +6,7 @@
 import { observer } from '@kit.TelephonyKit';
 ```
 
+<a id="offccallstatechange"></a>
 ## offCCallStateChange
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unsubscribes from the callback for listening to the carrier call state.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CCallStateInfo> | No | Indicates the callback to unsubscribe from. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CCallStateInfo&gt; | No | Indicates the callback to unsubscribe from. |
 
 **Error codes:**
 

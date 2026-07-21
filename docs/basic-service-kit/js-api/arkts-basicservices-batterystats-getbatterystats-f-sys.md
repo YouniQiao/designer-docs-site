@@ -6,6 +6,7 @@
 import { batteryStats } from '@kit.BasicServicesKit';
 ```
 
+<a id="getbatterystats"></a>
 ## getBatteryStats
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the power consumption information list. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BatteryStatsInfo>> | Promise used to return the power consumption information list. |
+| Promise&lt;Array&lt;BatteryStatsInfo&gt;&gt; | Promise used to return the power consumption information list. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ batteryStats.getBatteryStats()
 ```
 
 
+<a id="getbatterystats-1"></a>
 ## getBatteryStats
 
 ```TypeScript
@@ -69,7 +71,7 @@ Obtains the power consumption information list. This API uses an asynchronous ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<BatteryStatsInfo>> | Yes | Callback used to return the result. If the operation is successful, **err** is undefined and **data** is the obtained Array&lt;[BatteryStatsInfo](arkts-basicservices-batterystats-batterystatsinfo-i-sys.md)&gt;. Otherwise, **err** is an error object.**AsyncCallback** has encapsulated an API of the **BatteryStatsInfo** class. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;BatteryStatsInfo&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is undefined and **data** is the obtained Array<[BatteryStatsInfo](arkts-basicservices-batterystats-batterystatsinfo-i-sys.md)>. Otherwise, **err** is an error object.**AsyncCallback** has encapsulated an API of the **BatteryStatsInfo** class. |
 
 **Error codes:**
 

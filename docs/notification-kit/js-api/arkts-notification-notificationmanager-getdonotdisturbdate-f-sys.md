@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getdonotdisturbdate"></a>
 ## getDoNotDisturbDate
 
 ```TypeScript
@@ -30,7 +31,7 @@ This API can be properly called on devices other than wearables and TVs. If it i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DoNotDisturbDate> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DoNotDisturbDate&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ notificationManager.getDoNotDisturbDate(getDoNotDisturbDateCallback);
 ```
 
 
+<a id="getdonotdisturbdate-1"></a>
 ## getDoNotDisturbDate
 
 ```TypeScript
@@ -87,7 +89,7 @@ This API can be properly called on devices other than wearables and TVs. If it i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DoNotDisturbDate> | Promise used to return the result. |
+| Promise&lt;DoNotDisturbDate&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -115,6 +117,7 @@ notificationManager.getDoNotDisturbDate().then((data: notificationManager.DoNotD
 ```
 
 
+<a id="getdonotdisturbdate-2"></a>
 ## getDoNotDisturbDate
 
 ```TypeScript
@@ -140,7 +143,7 @@ This API can be properly called on devices other than wearables and TVs. If it i
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DoNotDisturbDate> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DoNotDisturbDate&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -177,6 +180,7 @@ notificationManager.getDoNotDisturbDate(userId, getDoNotDisturbDateCallback);
 ```
 
 
+<a id="getdonotdisturbdate-3"></a>
 ## getDoNotDisturbDate
 
 ```TypeScript
@@ -207,7 +211,7 @@ This API can be properly called on devices other than wearables and TVs. If it i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DoNotDisturbDate> | Promise used to return the result. |
+| Promise&lt;DoNotDisturbDate&gt; | Promise used to return the result. |
 
 **Error codes:**
 

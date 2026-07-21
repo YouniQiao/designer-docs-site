@@ -16,6 +16,7 @@ Describes a depth data object.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -36,7 +37,7 @@ Releases depth data output resources. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

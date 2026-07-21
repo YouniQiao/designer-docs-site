@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="anonattestkeyitemofflineasuser"></a>
 ## anonAttestKeyItemOfflineAsUser
 
 ```TypeScript
@@ -49,7 +50,7 @@ Obtains an anonymous key certificate in offline mode for a specified user. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | Promise used to return the result. When the call is successful, the **certChains** member of the **HuksReturnResult** object is the obtained certificate chain. Otherwise, the member is empty. |
+| Promise&lt;HuksReturnResult&gt; | Promise used to return the result. When the call is successful, the **certChains** member of the **HuksReturnResult** object is the obtained certificate chain. Otherwise, the member is empty. |
 
 **Error codes:**
 

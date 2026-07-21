@@ -6,6 +6,7 @@
 import { socket } from '@kit.NetworkKit';
 ```
 
+<a id="constructlocalsocketserverinstance"></a>
 ## constructLocalSocketServerInstance
 
 ```TypeScript

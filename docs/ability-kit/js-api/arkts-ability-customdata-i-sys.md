@@ -18,7 +18,7 @@ data: Record<string, Object>
 
 Custom data transferred for starting the modal page. The data is of the Record type.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 13
 

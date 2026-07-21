@@ -6,6 +6,7 @@
 import { Environment } from '@kit.CoreFileKit';
 ```
 
+<a id="getstoragedatadir"></a>
 ## getStorageDataDir
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the root directory of the memory. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the root directory of the memory. |
+| Promise&lt;string&gt; | Promise used to return the root directory of the memory. |
 
 **Error codes:**
 
@@ -37,6 +38,7 @@ Obtains the root directory of the memory. This API uses a promise to return the 
 | 13900042 | Unknown error |
 
 
+<a id="getstoragedatadir-1"></a>
 ## getStorageDataDir
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtains the root directory of the memory. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the root directory of the memory. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the root directory of the memory. |
 
 **Error codes:**
 

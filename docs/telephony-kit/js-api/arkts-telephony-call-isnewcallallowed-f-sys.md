@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="isnewcallallowed"></a>
 ## isNewCallAllowed
 
 ```TypeScript
@@ -26,7 +27,7 @@ Judge whether to allow another new call.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback of isNewCallAllowed. Returns {@code true} if the device currently allows new calls; returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback of isNewCallAllowed. Returns {@code true} if the device currently allows new calls; returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ call.isNewCallAllowed((err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isnewcallallowed-1"></a>
 ## isNewCallAllowed
 
 ```TypeScript
@@ -75,7 +77,7 @@ Judge whether to allow another new call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} If the device currently allows new calls.Returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} If the device currently allows new calls.Returns {@code false} otherwise. |
 
 **Error codes:**
 

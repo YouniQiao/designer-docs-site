@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="isflashreminderenabled"></a>
 ## isFlashReminderEnabled
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether flash alerts mode is enabled. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. Returns **true** if flash alerts mode is enabled;returns **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if flash alerts mode is enabled;returns **false** otherwise. |
 
 **Example**
 

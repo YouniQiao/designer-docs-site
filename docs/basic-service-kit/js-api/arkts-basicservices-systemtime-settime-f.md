@@ -6,6 +6,7 @@
 import { systemTime } from '@kit.BasicServicesKit';
 ```
 
+<a id="settime"></a>
 ## setTime
 
 ```TypeScript
@@ -31,7 +32,7 @@ Sets the system time. This API uses an asynchronous callback to return the resul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | time | number | Yes | Timestamp to set, in milliseconds. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ try {
 ```
 
 
+<a id="settime-1"></a>
 ## setTime
 
 ```TypeScript
@@ -92,7 +94,7 @@ Sets the system time. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

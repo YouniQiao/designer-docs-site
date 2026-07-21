@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="importcontactsviaui"></a>
 ## importContactsViaUI
 
 ```TypeScript
@@ -31,13 +32,13 @@ A maximum of 100 contacts can be imported at a time.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of the application or capability. |
-| contacts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Contact> | Yes | Indicates the array of contact information to be imported into the database. |
+| contacts | Array&lt;Contact&gt; | Yes | Indicates the array of contact information to be imported into the database. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Returns the array of contacts creation results. Valid contact ID (which can be obtained by [getId](Contact#getId())) indicates that the creation was successful.[INVALID_CONTACT_ID](arkts-contacts-contact-contact-c.md#invalid_contact_id) indicates the creation failed.  -2 indicates that the user has not selected this contact. |
+| Promise&lt;Array&lt;number&gt;&gt; | Returns the array of contacts creation results. Valid contact ID (which can be obtained by [getId](Contact#getId())) indicates that the creation was successful.[INVALID_CONTACT_ID](arkts-contacts-contact-contact-c.md#invalid_contact_id) indicates the creation failed.   -2 indicates that the user has not selected this contact. |
 
 **Error codes:**
 

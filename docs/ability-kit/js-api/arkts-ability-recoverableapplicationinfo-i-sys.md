@@ -58,7 +58,7 @@ readonly codePaths: Array<string>
 
 Installation directory of the application.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 12
 

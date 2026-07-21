@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="gethotspotblocklist"></a>
 ## getHotspotBlockList
 
 ```TypeScript
@@ -28,7 +29,7 @@ Get all the stations in the block list. If does't have the permission of ohos.pe
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<StationInfo> | stations in the block list. |
+| Array&lt;StationInfo&gt; | stations in the block list. |
 
 **Error codes:**
 

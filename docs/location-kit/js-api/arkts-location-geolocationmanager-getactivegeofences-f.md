@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="getactivegeofences"></a>
 ## getActiveGeoFences
 
 ```TypeScript
@@ -26,7 +27,7 @@ Get all active fences.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Map<number, Geofence>> | The promise returned by the function.The key of the map represents the fence ID. The value of the map represents the detailed information of the fence. |
+| Promise&lt;Map&lt;number, Geofence&gt;&gt; | The promise returned by the function.The key of the map represents the fence ID. The value of the map represents the detailed information of the fence. |
 
 **Error codes:**
 

@@ -18,6 +18,7 @@ HEIF image sequence metadata.
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="clone"></a>
 ## clone
 
 ```TypeScript
@@ -38,8 +39,9 @@ Clones the HEIFS metadata. This API returns the result asynchronously through a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HeifsMetadata> | Promise used to return the HEIFS metadata instance. |
+| Promise&lt;HeifsMetadata&gt; | Promise used to return the HEIFS metadata instance. |
 
+<a id="createinstance"></a>
 ## createInstance
 
 ```TypeScript
@@ -62,6 +64,7 @@ Creates an empty [HeifsMetadata](arkts-image-image-heifsmetadata-c.md) instance.
 | --- | --- |
 | [HeifsMetadata](arkts-image-image-heifsmetadata-c.md) | Empty **HeifsMetadata** instance. |
 
+<a id="getallproperties"></a>
 ## getAllProperties
 
 ```TypeScript
@@ -84,8 +87,9 @@ For details about the properties, see [HeifsPropertyKey](arkts-image-image-heifs
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, string \| null>> | Promise used to return the values of all properties. |
+| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the values of all properties. |
 
+<a id="getblob"></a>
 ## getBlob
 
 ```TypeScript
@@ -106,8 +110,9 @@ Obtains the metadata in binary format. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise that returns the binary data of the metadata. |
+| Promise&lt;ArrayBuffer&gt; | Promise that returns the binary data of the metadata. |
 
+<a id="getproperties"></a>
 ## getProperties
 
 ```TypeScript
@@ -128,13 +133,13 @@ Obtains the property values of image metadata. This API returns the result async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Names of the properties to query. |
+| key | Array&lt;string&gt; | Yes | Names of the properties to query. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, string \| null>> | Promise used to return the property values. If the operation fails, an error code is returned. |
+| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the property values. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -142,6 +147,7 @@ Obtains the property values of image metadata. This API returns the result async
 | --- | --- |
 | [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: unsupported metadata type |
 
+<a id="setblob"></a>
 ## setBlob
 
 ```TypeScript
@@ -162,13 +168,13 @@ Replaces the current metadata with binary data. This API uses a promise to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| blob | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Binary data used to replace the metadata. |
+| blob | ArrayBuffer | Yes | Binary data used to replace the metadata. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -176,6 +182,7 @@ Replaces the current metadata with binary data. This API uses a promise to retur
 | --- | --- |
 | [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
 
+<a id="setproperties"></a>
 ## setProperties
 
 ```TypeScript
@@ -198,13 +205,13 @@ For details about the properties, see [HeifsPropertyKey](arkts-image-image-heifs
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| records | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string \| null> | Yes | Set of key-value pairs representing the **HeifsMetadata** properties and corresponding values. |
+| records | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, string \| null&gt; | Yes | Set of key-value pairs representing the **HeifsMetadata** properties and corresponding values. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

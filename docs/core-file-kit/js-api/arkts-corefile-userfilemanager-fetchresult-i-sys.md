@@ -20,6 +20,7 @@ Provides APIs to manage the file retrieval result.
 import { userFileManager } from '@kit.CoreFileKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -65,6 +66,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getallobject"></a>
 ## getAllObject
 
 ```TypeScript
@@ -89,7 +91,7 @@ Obtains all the file assets in the result set. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<T>> | Yes | Callback used to return an array of all file assets in the result set. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;T&gt;&gt; | Yes | Callback used to return an array of all file assets in the result set. |
 
 **Example**
 
@@ -117,6 +119,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getallobject-1"></a>
 ## getAllObject
 
 ```TypeScript
@@ -141,7 +144,7 @@ Obtains all the file assets in the result set. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<T>> | Promise that returns an array of all file assets in the result set. |
+| Promise&lt;Array&lt;T&gt;&gt; | Promise that returns an array of all file assets in the result set. |
 
 **Example**
 
@@ -164,6 +167,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getcount"></a>
 ## getCount
 
 ```TypeScript
@@ -211,6 +215,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getfirstobject"></a>
 ## getFirstObject
 
 ```TypeScript
@@ -235,7 +240,7 @@ Obtains the first file asset in the result set. This API uses an asynchronous ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback used to return the first file asset obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback used to return the first file asset obtained. |
 
 **Example**
 
@@ -263,6 +268,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getfirstobject-1"></a>
 ## getFirstObject
 
 ```TypeScript
@@ -287,7 +293,7 @@ Obtains the first file asset in the result set. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise that returns the first object in the result set. |
+| Promise&lt;T&gt; | Promise that returns the first object in the result set. |
 
 **Example**
 
@@ -310,6 +316,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getlastobject"></a>
 ## getLastObject
 
 ```TypeScript
@@ -334,7 +341,7 @@ Obtains the last file asset in the result set. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback used to return the last file asset obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback used to return the last file asset obtained. |
 
 **Example**
 
@@ -362,6 +369,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getlastobject-1"></a>
 ## getLastObject
 
 ```TypeScript
@@ -386,7 +394,7 @@ Obtains the last file asset in the result set. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise that returns the last object in the result set. |
+| Promise&lt;T&gt; | Promise that returns the last object in the result set. |
 
 **Example**
 
@@ -409,6 +417,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getnextobject"></a>
 ## getNextObject
 
 ```TypeScript
@@ -435,7 +444,7 @@ Before using this API, you must use [isAfterLast()](arkts-corefile-userfilemanag
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback used to return the next file asset. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback used to return the next file asset. |
 
 **Example**
 
@@ -466,6 +475,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getnextobject-1"></a>
 ## getNextObject
 
 ```TypeScript
@@ -492,7 +502,7 @@ Before using this API, you must use [isAfterLast()](arkts-corefile-userfilemanag
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise that returns the next object in the result set. |
+| Promise&lt;T&gt; | Promise that returns the next object in the result set. |
 
 **Example**
 
@@ -518,6 +528,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getpositionobject"></a>
 ## getPositionObject
 
 ```TypeScript
@@ -543,7 +554,7 @@ Obtains a file asset with the specified index in the result set. This API uses a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the file asset to obtain. The value starts from **0**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback used to return the file asset obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback used to return the file asset obtained. |
 
 **Error codes:**
 
@@ -577,6 +588,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getpositionobject-1"></a>
 ## getPositionObject
 
 ```TypeScript
@@ -607,7 +619,7 @@ Obtains a file asset with the specified index in the result set. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise that returns the file asset obtained. |
+| Promise&lt;T&gt; | Promise that returns the file asset obtained. |
 
 **Error codes:**
 
@@ -640,6 +652,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="isafterlast"></a>
 ## isAfterLast
 
 ```TypeScript

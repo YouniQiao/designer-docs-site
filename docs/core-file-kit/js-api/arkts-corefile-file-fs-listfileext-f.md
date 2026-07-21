@@ -6,6 +6,7 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="listfileext"></a>
 ## listFileExt
 
 ```TypeScript
@@ -42,7 +43,7 @@ Lists all file names in a directory. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Promise used to return the file names listed. |
+| Promise&lt;string[]&gt; | Promise used to return the file names listed. |
 
 **Error codes:**
 

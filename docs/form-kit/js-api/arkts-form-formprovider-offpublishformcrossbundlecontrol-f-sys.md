@@ -6,6 +6,7 @@
 import { formProvider } from '@kit.FormKit';
 ```
 
+<a id="offpublishformcrossbundlecontrol"></a>
 ## offPublishFormCrossBundleControl
 
 ```TypeScript

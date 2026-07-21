@@ -6,6 +6,7 @@
 import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="dumpheapdata"></a>
 ## dumpHeapData
 
 ```TypeScript

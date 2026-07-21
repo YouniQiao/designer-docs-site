@@ -6,6 +6,7 @@
 import { deviceManager } from '@kit.DriverDevelopmentKit';
 ```
 
+<a id="unbinddriverwithdeviceid"></a>
 ## unbindDriverWithDeviceId
 
 ```TypeScript
@@ -32,7 +33,7 @@ Unbinds a peripheral device. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the ID of the unbound device. |
+| Promise&lt;number&gt; | Promise used to return the ID of the unbound device. |
 
 **Error codes:**
 

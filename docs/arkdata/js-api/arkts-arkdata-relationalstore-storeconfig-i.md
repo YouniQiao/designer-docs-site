@@ -240,11 +240,11 @@ SystemCapability.DistributedDataManager.RelationalStore.Core
 pluginLibs?: Array<string>
 ```
 
-Loads custom dynamic libraries. Multiple dynamic library names can be passed in the array. For details, see [Constraints and Examples of pluginLibs](../../../../reference/apis-arkdata/arkts-apis-data-relationalStore-i.md#constraints-and-examples-of-pluginlibs).
+Loads custom dynamic libraries. Multiple dynamic library names can be passed in the array. For details, see [Constraints and Examples of pluginLibs](docroot://reference/apis-arkdata/arkts-apis-data-relationalStore-i.md#constraints-and-examples-of-pluginlibs).
 
 SystemCapability.DistributedDataManager.RelationalStore.Core
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 12
 
@@ -300,7 +300,7 @@ Type of the tokenizer to be used for FTS.
 
 If this parameter is left blank, English tokenization is supported if FTS does not support Chinese or multi-language tokenization.
 
-If you want to use a custom tokenizer, you can configure it through the **pluginLibs** parameter. For details,see [Restrictions and Examples of pluginLibs](../../../../reference/apis-arkdata/arkts-apis-data-relationalStore-i.md#constraints-and-examples-of-pluginlibs).
+If you want to use a custom tokenizer, you can configure it through the **pluginLibs** parameter. For details,see [Restrictions and Examples of pluginLibs](docroot://reference/apis-arkdata/arkts-apis-data-relationalStore-i.md#constraints-and-examples-of-pluginlibs).
 
 SystemCapability.DistributedDataManager.RelationalStore.Core
 

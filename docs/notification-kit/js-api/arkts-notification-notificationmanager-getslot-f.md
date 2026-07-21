@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getslot"></a>
 ## getSlot
 
 ```TypeScript
@@ -27,7 +28,7 @@ This API is used to query the detailed configuration information of a created no
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotType | [SlotType](arkts-notification-notificationmanager-slottype-e.md) | Yes | Notification slot type, such as social communication, service reminder,and content consultation. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NotificationSlot> | Yes | Callback used to return the result. If the notification slot is obtained successfully, **err** is **undefined** and **data** is the obtained **NotificationSlot**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NotificationSlot&gt; | Yes | Callback used to return the result. If the notification slot is obtained successfully, **err** is **undefined** and **data** is the obtained **NotificationSlot**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ notificationManager.getSlot(slotType, getSlotCallback);
 ```
 
 
+<a id="getslot-1"></a>
 ## getSlot
 
 ```TypeScript
@@ -83,7 +85,7 @@ This API is used to query the detailed configuration information of a created no
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NotificationSlot> | Promise used to return the result. |
+| Promise&lt;NotificationSlot&gt; | Promise used to return the result. |
 
 **Error codes:**
 

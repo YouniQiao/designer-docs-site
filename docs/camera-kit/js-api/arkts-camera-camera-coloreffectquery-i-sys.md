@@ -16,6 +16,7 @@ Provides the API to obtain the color effects supported.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getsupportedcoloreffects"></a>
 ## getSupportedColorEffects
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the supported color effects.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ColorEffectType> | Array of color effects supported. |
+| Array&lt;ColorEffectType&gt; | Array of color effects supported. |
 
 **Error codes:**
 

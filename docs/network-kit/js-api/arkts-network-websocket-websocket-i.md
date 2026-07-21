@@ -14,6 +14,7 @@
 import { webSocket } from '@kit.NetworkKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -36,7 +37,7 @@ Closes a WebSocket connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of close. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of close. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ ws.close((err: BusinessError) => {
 
 ```
 
+<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -85,7 +87,7 @@ Closes a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [WebSocketCloseOptions](arkts-network-websocket-websocketcloseoptions-i.md) | Yes | Optional parameters {@link WebSocketCloseOptions}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of close. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of close. |
 
 **Error codes:**
 
@@ -117,6 +119,7 @@ ws.close(options, (err: BusinessError) => {
 
 ```
 
+<a id="close-2"></a>
 ## close
 
 ```TypeScript
@@ -145,7 +148,7 @@ Closes a WebSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -174,6 +177,7 @@ promise.then((value: boolean) => {
 
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -197,7 +201,7 @@ Initiates a WebSocket request to establish a WebSocket connection to a given URL
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for establishing a WebSocket connection. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of connect. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of connect. |
 
 **Error codes:**
 
@@ -229,6 +233,7 @@ ws.connect(url, (err: BusinessError, value: boolean) => {
 
 ```
 
+<a id="connect-1"></a>
 ## connect
 
 ```TypeScript
@@ -253,7 +258,7 @@ Initiates a WebSocket request to establish a WebSocket connection to a given URL
 | --- | --- | --- | --- |
 | url | string | Yes | URL for establishing a WebSocket connection. |
 | options | [WebSocketRequestOptions](arkts-network-websocket-websocketrequestoptions-i.md) | Yes | Optional parameters {@link WebSocketRequestOptions}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of connect. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of connect. |
 
 **Error codes:**
 
@@ -310,6 +315,7 @@ ws.connect(url, options, (err: BusinessError, value: Object) => {
 
 ```
 
+<a id="connect-2"></a>
 ## connect
 
 ```TypeScript
@@ -339,7 +345,7 @@ Initiates a WebSocket request to establish a WebSocket connection to a given URL
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -369,6 +375,7 @@ promise.then((value: boolean) => {
 
 ```
 
+<a id="off"></a>
 ## off('open')
 
 ```TypeScript
@@ -390,7 +397,7 @@ Cancels listening for the open events of a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'open' | Yes | event indicating that a WebSocket connection has been opened. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Object> | No | the callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Object&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -412,6 +419,7 @@ ws.off('open', callback1);
 
 ```
 
+<a id="off-1"></a>
 ## off('openInfo')
 
 ```TypeScript
@@ -433,7 +441,7 @@ Cancels listening for the open info events of a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'openInfo' | Yes | event indicating that the open info of a WebSocket connection is returned. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WebSocketOpenInfo> | No | the callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WebSocketOpenInfo&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -455,6 +463,7 @@ ws.off('openInfo', callback1);
 
 ```
 
+<a id="off-2"></a>
 ## off('message')
 
 ```TypeScript
@@ -476,7 +485,7 @@ Cancels listening for the message events of a WebSocket connection.data in Async
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | event indicating that a message has been received from the server. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string \| ArrayBuffer> | No | the callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string \| ArrayBuffer&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -488,6 +497,7 @@ ws.off('message');
 
 ```
 
+<a id="off-3"></a>
 ## off('close')
 
 ```TypeScript
@@ -509,7 +519,7 @@ Cancels listening for the close events of a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'close' | Yes | event indicating that a WebSocket connection has been closed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CloseResult> | No | the callback used to return the result.<br>close indicates the close error code and reason indicates the error code description. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CloseResult&gt; | No | the callback used to return the result.<br>close indicates the close error code and reason indicates the error code description. |
 
 **Example**
 
@@ -521,6 +531,7 @@ ws.off('close');
 
 ```
 
+<a id="off-4"></a>
 ## off('error')
 
 ```TypeScript
@@ -554,6 +565,7 @@ ws.off('error');
 
 ```
 
+<a id="off-5"></a>
 ## off('dataEnd')
 
 ```TypeScript
@@ -573,7 +585,7 @@ Cancels listening for receiving data ends events of a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataEnd' | Yes | event indicating the WebSocket connection has received data ends. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No |  |
 
 **Example**
 
@@ -585,6 +597,7 @@ ws.off('dataEnd');
 
 ```
 
+<a id="off-6"></a>
 ## off('headerReceive')
 
 ```TypeScript
@@ -604,7 +617,7 @@ Unregisters the observer for HTTP Response Header events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'headerReceive' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ResponseHeaders> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ResponseHeaders&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -616,6 +629,7 @@ ws.off('headerReceive');
 
 ```
 
+<a id="on"></a>
 ## on('open')
 
 ```TypeScript
@@ -637,7 +651,7 @@ Enables listening for the open events of a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'open' | Yes | event indicating that a WebSocket connection has been opened. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Object> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Object&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -656,6 +670,7 @@ ws.on('open', (err: BusinessError, value: Object) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('openInfo')
 
 ```TypeScript
@@ -677,7 +692,7 @@ Enables listening for the open info events of a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'openInfo' | Yes | event indicating that the open info of a WebSocket connection is returned. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WebSocketOpenInfo> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WebSocketOpenInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -696,6 +711,7 @@ ws.on('openInfo', (err: BusinessError, value: webSocket.WebSocketOpenInfo) => {
 
 ```
 
+<a id="on-2"></a>
 ## on('message')
 
 ```TypeScript
@@ -717,7 +733,7 @@ Enables listening for the message events of a WebSocket connection.data in Async
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | event indicating that a message has been received from the server. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string \| ArrayBuffer> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string \| ArrayBuffer&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -732,6 +748,7 @@ ws.on('message', (err: BusinessError<void>, value: string | ArrayBuffer) => {
 
 ```
 
+<a id="on-3"></a>
 ## on('close')
 
 ```TypeScript
@@ -753,7 +770,7 @@ Enables listening for the close events of a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'close' | Yes | event indicating that a WebSocket connection has been closed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CloseResult> | Yes | the callback used to return the result.<br>close indicates the close error code and reason indicates the error code description. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CloseResult&gt; | Yes | the callback used to return the result.<br>close indicates the close error code and reason indicates the error code description. |
 
 **Example**
 
@@ -768,6 +785,7 @@ ws.on('close', (err: BusinessError, value: webSocket.CloseResult) => {
 
 ```
 
+<a id="on-4"></a>
 ## on('error')
 
 ```TypeScript
@@ -804,6 +822,7 @@ ws.on('error', (err: BusinessError) => {
 
 ```
 
+<a id="on-5"></a>
 ## on('dataEnd')
 
 ```TypeScript
@@ -823,7 +842,7 @@ Enables listening for receiving data ends events of a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataEnd' | Yes | event indicating the WebSocket connection has received data ends. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -837,6 +856,7 @@ ws.on('dataEnd', () => {
 
 ```
 
+<a id="on-6"></a>
 ## on('headerReceive')
 
 ```TypeScript
@@ -856,7 +876,7 @@ Registers an observer for HTTP Response Header events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'headerReceive' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ResponseHeaders> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ResponseHeaders&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -870,6 +890,7 @@ ws.on('headerReceive', (data) => {
 
 ```
 
+<a id="send"></a>
 ## send
 
 ```TypeScript
@@ -893,7 +914,7 @@ Sends data through a WebSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | string \| ArrayBuffer | Yes | Data to send. It can be a string(API 6) or an ArrayBuffer(API 8). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of send. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of send. |
 
 **Error codes:**
 
@@ -934,6 +955,7 @@ ws.on('open', (err: BusinessError, value: Object) => {
 
 ```
 
+<a id="send-1"></a>
 ## send
 
 ```TypeScript
@@ -962,7 +984,7 @@ Sends data through a WebSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Error codes:**
 

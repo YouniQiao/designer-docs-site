@@ -6,6 +6,7 @@
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="decomposetopicture"></a>
 ## decomposeToPicture
 
 ```TypeScript
@@ -35,7 +36,7 @@ Decomposes an HDR Pixelmap object to a Picture object which contains an SDR Pixe
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Picture \| undefined> | Promise used to return the Picture object. |
+| Promise&lt;Picture \| undefined&gt; | Promise used to return the Picture object. |
 
 **Error codes:**
 

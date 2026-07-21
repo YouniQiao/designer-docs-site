@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="getaddedprinters"></a>
 ## getAddedPrinters
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the list of printers added to the system. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return a list of all added printers. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return a list of all added printers. |
 
 **Error codes:**
 

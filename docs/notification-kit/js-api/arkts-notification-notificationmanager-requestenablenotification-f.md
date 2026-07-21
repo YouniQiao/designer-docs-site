@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="requestenablenotification"></a>
 ## requestEnableNotification
 
 ```TypeScript
@@ -16,7 +17,7 @@ Requests notification to be enabled for this application. This API uses an async
 
 > **NOTE**  
 >  
-> This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification-2)with context instead.
+> This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification-1)with context instead.
 
 **Since:** 9
 
@@ -32,7 +33,7 @@ Requests notification to be enabled for this application. This API uses an async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ notificationManager.requestEnableNotification(requestEnableNotificationCallback)
 ```
 
 
+<a id="requestenablenotification-1"></a>
 ## requestEnableNotification
 
 ```TypeScript
@@ -94,7 +96,7 @@ Requests notification to be enabled for this application. You can call this API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [UIAbilityContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-uiabilitycontext-t.md) | Yes | Ability context bound to the notification dialog box. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -139,6 +141,7 @@ class MyAbility extends UIAbility {
 ```
 
 
+<a id="requestenablenotification-2"></a>
 ## requestEnableNotification
 
 ```TypeScript
@@ -149,7 +152,7 @@ Requests notification to be enabled for this application. This API uses a promis
 
 > **NOTE**  
 >  
-> This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification-4)with context instead.
+> This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification-1)with context instead.
 
 **Since:** 9
 
@@ -165,7 +168,7 @@ Requests notification to be enabled for this application. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -191,6 +194,7 @@ notificationManager.requestEnableNotification().then(() => {
 ```
 
 
+<a id="requestenablenotification-3"></a>
 ## requestEnableNotification
 
 ```TypeScript
@@ -228,7 +232,7 @@ Requests notification to be enabled for this application. You can call this API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

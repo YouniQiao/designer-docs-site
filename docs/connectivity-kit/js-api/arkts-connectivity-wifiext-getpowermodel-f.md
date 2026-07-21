@@ -6,6 +6,7 @@
 import { wifiext } from '@kit.ConnectivityKit';
 ```
 
+<a id="getpowermodel"></a>
 ## getPowerModel
 
 ```TypeScript
@@ -30,9 +31,10 @@ Obtains the current Wi-Fi power mode.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PowerModel> | Returns the current Wi-Fi power mode. If a value less than zero is returned, it indicates a failure. |
+| Promise&lt;PowerModel&gt; | Returns the current Wi-Fi power mode. If a value less than zero is returned, it indicates a failure. |
 
 
+<a id="getpowermodel-1"></a>
 ## getPowerModel
 
 ```TypeScript
@@ -57,5 +59,5 @@ Obtains the current Wi-Fi power mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PowerModel> | Yes | callback function, no return value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PowerModel&gt; | Yes | callback function, no return value. |
 

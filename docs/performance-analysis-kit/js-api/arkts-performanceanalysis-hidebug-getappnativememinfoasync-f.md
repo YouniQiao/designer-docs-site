@@ -6,6 +6,7 @@
 import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="getappnativememinfoasync"></a>
 ## getAppNativeMemInfoAsync
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the memory information of application processes by reading the data of t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NativeMemInfo> | Promise used to return the application process memory information. |
+| Promise&lt;NativeMemInfo&gt; | Promise used to return the application process memory information. |
 
 **Example**
 

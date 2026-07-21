@@ -6,6 +6,7 @@
 import { power } from '@kit.BasicServicesKit';
 ```
 
+<a id="unregistershutdowncallback"></a>
 ## unregisterShutdownCallback
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unregisters the callback to be invoked when the device is shut down or rebooted.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Callback that returns no value. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="setnetextattribute"></a>
 ## setNetExtAttribute
 
 ```TypeScript
@@ -33,7 +34,7 @@ Set the network extended attribute for a {@link NetHandle} object.To invoke this
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

@@ -10,6 +10,7 @@ Defines Node interface.
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="getnodebypath"></a>
 ## getNodeByPath
 
 ```TypeScript
@@ -44,7 +45,7 @@ readonly children: Container<Node>
 
 Children of the node.
 
-**Type:** Container<Node>
+**Type:** Container&lt;Node&gt;
 
 **Since:** 12
 
@@ -92,7 +93,7 @@ readonly parent: Node | null
 
 Parent of the node.
 
-**Type:** Node | null
+**Type:** Node \| null
 
 **Since:** 12
 

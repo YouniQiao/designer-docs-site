@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="releaseform"></a>
 ## releaseForm
 
 ```TypeScript
@@ -29,7 +30,7 @@ Releases a widget. After this API is called, the application can no longer use t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | formId | string | Yes | Widget ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the widget is released, **error** is undefined; otherwise, **error** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the widget is released, **error** is undefined; otherwise, **error** is an error object. |
 
 **Error codes:**
 
@@ -45,6 +46,7 @@ Releases a widget. After this API is called, the application can no longer use t
 | [16501003](../errorcode-form.md#16501003-widget-not-operatable) | The form cannot be operated by the current application. |
 
 
+<a id="releaseform-1"></a>
 ## releaseForm
 
 ```TypeScript
@@ -69,7 +71,7 @@ Releases a widget. After this API is called, the application can no longer use t
 | --- | --- | --- | --- |
 | formId | string | Yes | Widget ID. |
 | isReleaseCache | boolean | Yes | Whether to release the cache.<br>**true**: Release the cache.<br>**false**: Not release the cache. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the widget is released, **error** is undefined; otherwise, **error** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the widget is released, **error** is undefined; otherwise, **error** is an error object. |
 
 **Error codes:**
 
@@ -85,6 +87,7 @@ Releases a widget. After this API is called, the application can no longer use t
 | [16501003](../errorcode-form.md#16501003-widget-not-operatable) | The form cannot be operated by the current application. |
 
 
+<a id="releaseform-2"></a>
 ## releaseForm
 
 ```TypeScript
@@ -114,7 +117,7 @@ Releases a widget. After this API is called, the application can no longer use t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

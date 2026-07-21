@@ -22,7 +22,7 @@ readonly sortedHashCode: Array<string>
 
 Hash codes for notification sorting.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 7
 
@@ -40,7 +40,7 @@ readonly sortings: Record<string, NotificationSorting>
 
 Array of notification sorting information.
 
-**Type:** Record<string, NotificationSorting>
+**Type:** Record&lt;string, NotificationSorting&gt;
 
 **Since:** 7
 

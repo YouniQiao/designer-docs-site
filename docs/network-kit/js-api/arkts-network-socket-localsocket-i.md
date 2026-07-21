@@ -14,6 +14,7 @@ Defines a LocalSocket connection.
 import { socket } from '@kit.NetworkKit';
 ```
 
+<a id="bind"></a>
 ## bind
 
 ```TypeScript
@@ -38,7 +39,7 @@ Binds the Local address.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ client.bind(address).then(() => {
 
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -89,7 +91,7 @@ Closes a LocalSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -112,6 +114,7 @@ client.close().then(() => {
 
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -136,7 +139,7 @@ Sets up a connection to the specified Local address .
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -174,6 +177,7 @@ client.connect(connectOpt).then(() => {
 
 ```
 
+<a id="getextraoptions"></a>
 ## getExtraOptions
 
 ```TypeScript
@@ -192,7 +196,7 @@ Gets other attributes of the LocalSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ExtraOptionsBase> | The promise returned by the function. |
+| Promise&lt;ExtraOptionsBase&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -231,6 +235,7 @@ client.connect(connectOpt).then(() => {
 
 ```
 
+<a id="getlocaladdress"></a>
 ## getLocalAddress
 
 ```TypeScript
@@ -249,7 +254,7 @@ Obtains the local address of a LocalSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | The promise returned by the function. |
+| Promise&lt;string&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -287,6 +292,7 @@ client.bind(address).then(() => {
 
 ```
 
+<a id="getsocketfd"></a>
 ## getSocketFd
 
 ```TypeScript
@@ -305,7 +311,7 @@ Obtains the file descriptor of the LocalSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returns the file descriptor of the LocalSocket connection. |
+| Promise&lt;number&gt; | The promise returns the file descriptor of the LocalSocket connection. |
 
 **Example**
 
@@ -338,6 +344,7 @@ client.getSocketFd().then((data: number) => {
 
 ```
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript
@@ -356,7 +363,7 @@ Obtains the status of the LocalSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SocketStateBase> | The promise returned by the function. |
+| Promise&lt;SocketStateBase&gt; | The promise returned by the function. |
 
 **Example**
 
@@ -389,6 +396,7 @@ client.connect(connectOpt).then(() => {
 
 ```
 
+<a id="off"></a>
 ## off('message')
 
 ```TypeScript
@@ -408,7 +416,7 @@ Cancels listening for message receiving events of the LocalSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LocalSocketMessageInfo> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LocalSocketMessageInfo&gt; | No | the callback used to return the result. |
 
 **Error codes:**
 
@@ -437,6 +445,7 @@ client.off('message');
 
 ```
 
+<a id="off-1"></a>
 ## off('connect')
 
 ```TypeScript
@@ -456,7 +465,7 @@ Cancels listening for connection events of the LocalSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | the callback used to return the result. |
 
 **Error codes:**
 
@@ -480,6 +489,7 @@ client.off('connect');
 
 ```
 
+<a id="off-2"></a>
 ## off('close')
 
 ```TypeScript
@@ -499,7 +509,7 @@ Cancels listening for close events of the LocalSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | the callback used to return the result. |
 
 **Error codes:**
 
@@ -523,6 +533,7 @@ client.off('close');
 
 ```
 
+<a id="off-3"></a>
 ## off('error')
 
 ```TypeScript
@@ -566,6 +577,7 @@ client.off('error');
 
 ```
 
+<a id="on"></a>
 ## on('message')
 
 ```TypeScript
@@ -585,7 +597,7 @@ Listens for message receiving events of the LocalSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LocalSocketMessageInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LocalSocketMessageInfo&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -611,6 +623,7 @@ client.on('message', (value: socket.LocalSocketMessageInfo) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('connect')
 
 ```TypeScript
@@ -630,7 +643,7 @@ Listens for connection events of the LocalSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -650,6 +663,7 @@ client.on('connect', () => {
 
 ```
 
+<a id="on-2"></a>
 ## on('close')
 
 ```TypeScript
@@ -669,7 +683,7 @@ Listens for close events of the LocalSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -690,6 +704,7 @@ client.on('close', callback);
 
 ```
 
+<a id="on-3"></a>
 ## on('error')
 
 ```TypeScript
@@ -729,6 +744,7 @@ client.on('error', (err: Object) => {
 
 ```
 
+<a id="send"></a>
 ## send
 
 ```TypeScript
@@ -753,7 +769,7 @@ Sends data over a LocalSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -796,6 +812,7 @@ client.send(sendOpt).then(() => {
 
 ```
 
+<a id="setextraoptions"></a>
 ## setExtraOptions
 
 ```TypeScript
@@ -820,7 +837,7 @@ Sets other attributes of the LocalSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

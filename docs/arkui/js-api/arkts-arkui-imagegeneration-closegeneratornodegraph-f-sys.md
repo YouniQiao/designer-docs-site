@@ -6,6 +6,7 @@
 import { imageGeneration } from '@kit.ArkUI';
 ```
 
+<a id="closegeneratornodegraph"></a>
 ## closeGeneratorNodeGraph
 
 ```TypeScript
@@ -34,5 +35,5 @@ Close the AI node graph Sheet.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Returns the result. |
+| Promise&lt;void&gt; | - Returns the result. |
 

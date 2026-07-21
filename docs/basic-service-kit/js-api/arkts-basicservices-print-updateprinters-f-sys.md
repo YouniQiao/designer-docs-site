@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="updateprinters"></a>
 ## updatePrinters
 
 ```TypeScript
@@ -28,8 +29,8 @@ Updates information about the specified printers. This API uses an asynchronous 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| printers | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PrinterInfo> | Yes | List of printers whose information is to be updated. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| printers | Array&lt;PrinterInfo&gt; | Yes | List of printers whose information is to be updated. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ print.updatePrinters([printerInfo], (err: BusinessError) => {
 ```
 
 
+<a id="updateprinters-1"></a>
 ## updatePrinters
 
 ```TypeScript
@@ -87,13 +89,13 @@ Updates information about the specified printers. This API uses a promise to ret
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| printers | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PrinterInfo> | Yes | List of printers whose information is to be updated. |
+| printers | Array&lt;PrinterInfo&gt; | Yes | List of printers whose information is to be updated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

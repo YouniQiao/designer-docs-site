@@ -1,8 +1,8 @@
 # RelativeContainer properties/events
 
-In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
-The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
+The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** RelativeContainerAttribute extends [CommonMethod<RelativeContainerAttribute>](CommonMethod<RelativeContainerAttribute>)
 
@@ -12,13 +12,14 @@ The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="barrier"></a>
 ## barrier
 
 ```TypeScript
 barrier(value: Array<BarrierStyle>)
 ```
 
-Sets the [barriers](../../../../ui/arkts-layout-development-relative-layout.md#setting-barriers-for-multiple-components) in the **RelativeContainer** component. The value is an array, each element of which is a barrier.
+Sets the [barriers](docroot://ui/arkts-layout-development-relative-layout.md#setting-barriers-for-multiple-components) in the **RelativeContainer** component. The value is an array, each element of which is a barrier.
 
 **Since:** 12
 
@@ -34,8 +35,9 @@ Sets the [barriers](../../../../ui/arkts-layout-development-relative-layout.md#s
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<BarrierStyle> | Yes | Barriers in the **RelativeContainer** component. |
+| value | Array&lt;BarrierStyle&gt; | Yes | Barriers in the **RelativeContainer** component. |
 
+<a id="barrier-1"></a>
 ## barrier
 
 ```TypeScript
@@ -58,15 +60,16 @@ Sets barriers in the **RelativeContainer** component. Each array element defines
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| barrierStyle | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LocalizedBarrierStyle> | Yes | Barriers in the **RelativeContainer** component. |
+| barrierStyle | Array&lt;LocalizedBarrierStyle&gt; | Yes | Barriers in the **RelativeContainer** component. |
 
+<a id="guideline"></a>
 ## guideLine
 
 ```TypeScript
 guideLine(value: Array<GuideLineStyle>)
 ```
 
-Sets the [guidelines](../../../../ui/arkts-layout-development-relative-layout.md#positioning-child-components-using-guidelines)in the **RelativeContainer** component. The value is an array, each element of which is a guideline.
+Sets the [guidelines](docroot://ui/arkts-layout-development-relative-layout.md#positioning-child-components-using-guidelines)in the **RelativeContainer** component. The value is an array, each element of which is a guideline.
 
 **Since:** 12
 
@@ -82,5 +85,5 @@ Sets the [guidelines](../../../../ui/arkts-layout-development-relative-layout.md
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<GuideLineStyle> | Yes | Guidelines in the **RelativeContainer** component. |
+| value | Array&lt;GuideLineStyle&gt; | Yes | Guidelines in the **RelativeContainer** component. |
 

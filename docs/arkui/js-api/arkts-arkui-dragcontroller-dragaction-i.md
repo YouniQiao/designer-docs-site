@@ -14,6 +14,7 @@ Implements a **DragAction** object to subscribe to drag state changes and start 
 import { dragController } from '@kit.ArkUI';
 ```
 
+<a id="off"></a>
 ## off('statusChange')
 
 ```TypeScript
@@ -37,8 +38,9 @@ Unsubscribes from drag state changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'statusChange' | Yes | for status changing |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<DragAndDropInfo> | No | with drag event and status information |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;DragAndDropInfo&gt; | No | with drag event and status information |
 
+<a id="on"></a>
 ## on('statusChange')
 
 ```TypeScript
@@ -62,8 +64,9 @@ Subscribes to drag state changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'statusChange' | Yes | for status changing |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<DragAndDropInfo> | Yes | with drag event and status information |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;DragAndDropInfo&gt; | Yes | with drag event and status information |
 
+<a id="startdrag"></a>
 ## startDrag
 
 ```TypeScript
@@ -86,7 +89,7 @@ Starts the drag service. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

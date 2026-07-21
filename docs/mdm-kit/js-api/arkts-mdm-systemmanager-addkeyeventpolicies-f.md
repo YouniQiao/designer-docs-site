@@ -6,6 +6,7 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
+<a id="addkeyeventpolicies"></a>
 ## addKeyEventPolicies
 
 ```TypeScript
@@ -29,7 +30,7 @@ Adds a key event handling policy. When the system triggers a key event, if the e
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| keyPolicies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<KeyEventPolicy> | Yes | Key policy. Physical keys (power key, volume up, and volume down)and navigation keys (back, home, and recently opened) are supported. Physical keys can be combined into a combination key, but navigation keys cannot. For details about the combination key event response, see [Key Event Callback](arkts-mdm-enterprise-enterpriseadminextensionability-enterpriseadminextensionability-c.md#onkeyevent-1). |
+| keyPolicies | Array&lt;KeyEventPolicy&gt; | Yes | Key policy. Physical keys (power key, volume up, and volume down)and navigation keys (back, home, and recently opened) are supported. Physical keys can be combined into a combination key, but navigation keys cannot. For details about the combination key event response, see [Key Event Callback](arkts-mdm-enterprise-enterpriseadminextensionability-enterpriseadminextensionability-c.md#onkeyevent-1). |
 
 **Error codes:**
 

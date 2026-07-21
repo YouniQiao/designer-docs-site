@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="initsessionasuser"></a>
 ## initSessionAsUser
 
 ```TypeScript
@@ -36,7 +37,7 @@ Initialize a key session for the specified user. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksSessionHandle> | Promise used to return a session handle for subsequent operations. |
+| Promise&lt;HuksSessionHandle&gt; | Promise used to return a session handle for subsequent operations. |
 
 **Error codes:**
 

@@ -4,6 +4,8 @@ Defines chipGroupV2.
 
 **Since:** 26.0.0
 
+**Decorator:** @ComponentV2
+
 <!--Device-unnamed-export declare struct ChipGroupV2--><!--Device-unnamed-export declare struct ChipGroupV2-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -14,6 +16,7 @@ Defines chipGroupV2.
 import { ChipGroupV2ItemConfig, ChipGroupV2ItemStyleConfig, ChipGroupV2SpaceConfig, ChipGroupV2IconGroupSuffix, ChipGroupV2Items, ChipGroupV2Padding, ChipGroupV2Item, ChipGroupV2ItemStyle, ChipGroupV2, ChipGroupV2PaddingConfig, ChipGroupV2IconItemConfig, ChipGroupV2SymbolItemConfig, ChipGroupV2Space } from '@kit.ArkUI';
 ```
 
+<a id="build"></a>
 ## build
 
 ```TypeScript
@@ -40,7 +43,7 @@ $items?: Callback<ChipGroupV2Items>
 
 Two-way binding callback method for ChipV2 item.
 
-**Type:** Callback<ChipGroupV2Items>
+**Type:** Callback&lt;ChipGroupV2Items&gt;
 
 **Since:** 26.0.0
 
@@ -60,7 +63,7 @@ $selectedIndexes?: Callback<Array<number>>
 
 Two-way binding callback method for selected ChipV2 item indexes.
 
-**Type:** Callback<Array<number>>
+**Type:** Callback&lt;Array&lt;number&gt;&gt;
 
 **Since:** 26.0.0
 
@@ -84,6 +87,8 @@ ChipGroupV2 padding (only support top and bottom).
 
 **Since:** 26.0.0
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
@@ -103,6 +108,8 @@ Left and right inner margins and spacing between ChipV2.
 **Type:** ChipGroupV2Space
 
 **Since:** 26.0.0
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -124,6 +131,8 @@ ChipV2 item style.
 
 **Since:** 26.0.0
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
@@ -143,6 +152,8 @@ ChipV2 item.
 **Type:** ChipGroupV2Items
 
 **Since:** 26.0.0
+
+**Decorator:** @Require, @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -164,6 +175,8 @@ Support multiple ChipV2 item selection.
 
 **Since:** 26.0.0
 
+**Decorator:** @Param
+
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
@@ -180,7 +193,7 @@ onChange?: Callback<Array<number>>
 
 Callback method when the chipV2 status changes
 
-**Type:** Callback<Array<number>>
+**Type:** Callback&lt;Array&lt;number&gt;&gt;
 
 **Since:** 26.0.0
 
@@ -200,9 +213,11 @@ selectedIndexes?: Array<number>
 
 Selected ChipV2 item indexes.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 26.0.0
+
+**Decorator:** @Param
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -220,7 +235,7 @@ suffix?: Callback<void>
 
 The builder function which will be rendered in the suffix of ChipGroupV2.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 26.0.0
 

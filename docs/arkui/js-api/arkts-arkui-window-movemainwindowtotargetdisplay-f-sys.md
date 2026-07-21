@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="movemainwindowtotargetdisplay"></a>
 ## moveMainWindowToTargetDisplay
 
 ```TypeScript
@@ -36,7 +37,7 @@ Move a window to the target display. The window must be a main window.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value indicates complete. |
+| Promise&lt;void&gt; | - Promise that returns no value indicates complete. |
 
 **Error codes:**
 

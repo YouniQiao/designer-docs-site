@@ -6,6 +6,7 @@
 import { statistics } from '@kit.NetworkKit';
 ```
 
+<a id="gettrafficstatsbyiface"></a>
 ## getTrafficStatsByIface
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the traffic usage details of the network interface in the specified time per
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ifaceInfo | [IfaceInfo](arkts-network-statistics-ifaceinfo-i-sys.md) | Yes | Detailed query content. See {@link IfaceInfo}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetStatsInfo> | Yes | Returns the {@link NetStatsInfo} object; |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetStatsInfo&gt; | Yes | Returns the {@link NetStatsInfo} object; |
 
 **Error codes:**
 
@@ -75,6 +76,7 @@ if (iFaceInfo) {
 ```
 
 
+<a id="gettrafficstatsbyiface-1"></a>
 ## getTrafficStatsByIface
 
 ```TypeScript
@@ -103,7 +105,7 @@ Get the traffic usage details of the network interface in the specified time per
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetStatsInfo> | The promise returned by the function. |
+| Promise&lt;NetStatsInfo&gt; | The promise returned by the function. |
 
 **Error codes:**
 

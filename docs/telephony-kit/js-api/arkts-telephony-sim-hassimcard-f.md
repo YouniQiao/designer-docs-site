@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="hassimcard"></a>
 ## hasSimCard
 
 ```TypeScript
@@ -25,7 +26,7 @@ Checks whether a SIM card is inserted in a specified slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for hasSimCard.Returns {@code true} if a SIM card is inserted; return {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for hasSimCard.Returns {@code true} if a SIM card is inserted; return {@code false} otherwise. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ sim.hasSimCard(0, (err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="hassimcard-1"></a>
 ## hasSimCard
 
 ```TypeScript
@@ -74,7 +76,7 @@ Checks whether a SIM card is inserted in a specified slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if a SIM card is inserted; return {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if a SIM card is inserted; return {@code false} otherwise. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Provides APIs for key encapsulation and decapsulation operations using the key e
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="decapsulate"></a>
 ## decapsulate
 
 ```TypeScript
@@ -37,13 +38,13 @@ Key decapsulation operation. Using the receiver's private key, executed by the r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | priKey | [PriKey](arkts-cryptoarchitecture-cryptoframework-prikey-i.md) | Yes | The private key of the receiver. |
-| wrappedKey | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The wrapped key of the KEM. |
+| wrappedKey | Uint8Array | Yes | The wrapped key of the KEM. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the shared secret. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the shared secret. |
 
 **Error codes:**
 
@@ -77,6 +78,7 @@ async function kemDecapsulate() {
 
 ```
 
+<a id="decapsulatesync"></a>
 ## decapsulateSync
 
 ```TypeScript
@@ -102,13 +104,13 @@ Key decapsulation operation. Using the receiver's private key, executed by the r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | priKey | [PriKey](arkts-cryptoarchitecture-cryptoframework-prikey-i.md) | Yes | The private key of the receiver. |
-| wrappedKey | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The wrapped key of the KEM. |
+| wrappedKey | Uint8Array | Yes | The wrapped key of the KEM. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | The decapsulation result of the KEM. |
+| Uint8Array | The decapsulation result of the KEM. |
 
 **Error codes:**
 
@@ -142,6 +144,7 @@ function kemDecapsulateSync() {
 
 ```
 
+<a id="encapsulate"></a>
 ## encapsulate
 
 ```TypeScript
@@ -171,7 +174,7 @@ Key encapsulation operation. Using the recipient's public key, executed by the s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KemEncapResult> | Promise used to return the KemEncapResult. |
+| Promise&lt;KemEncapResult&gt; | Promise used to return the KemEncapResult. |
 
 **Error codes:**
 
@@ -205,6 +208,7 @@ async function kemEncapsulate() {
 
 ```
 
+<a id="encapsulatesync"></a>
 ## encapsulateSync
 
 ```TypeScript

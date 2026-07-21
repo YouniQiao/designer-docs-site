@@ -6,6 +6,7 @@
 import { encryptedVolumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="verifycryptpasswd"></a>
 ## verifyCryptPasswd
 
 ```TypeScript
@@ -37,7 +38,7 @@ Verify Encrypted Volume Device password.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | return Promise |
+| Promise&lt;void&gt; | return Promise |
 
 **Error codes:**
 

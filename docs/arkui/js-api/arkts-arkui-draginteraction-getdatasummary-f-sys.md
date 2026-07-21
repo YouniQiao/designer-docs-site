@@ -6,6 +6,7 @@
 import { dragInteraction } from '@kit.ArkUI';
 ```
 
+<a id="getdatasummary"></a>
 ## getDataSummary
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the data summary of all dragged objects.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Summary> | Data summary of all dragged objects, including their type and data length. |
+| Array&lt;Summary&gt; | Data summary of all dragged objects, including their type and data length. |
 
 **Error codes:**
 

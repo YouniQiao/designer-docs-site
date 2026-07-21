@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="installdlpsandbox"></a>
 ## installDLPSandbox
 
 ```TypeScript
@@ -34,14 +35,14 @@ Before a DLP file management application opens a protected file, the system need
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name of the application. The value contains 7 to 128 bytes. If the value is out of range, error code 401 is thrown. |
 | access | [DLPFileAccess](arkts-dataprotection-dlppermission-dlpfileaccess-e.md) | Yes | Permission on the DLP file. The permissions on a DLP file determine the access scope of the file. |
-| userId | number | Yes | Current user ID, which is the system account ID obtained by the account subsystem. The default super user ID is **100**.<br>The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value is out of range,the excess part will be truncated. If the value of the passed parameter is less than 0, an error log is generated. |
+| userId | number | Yes | Current user ID, which is the system account ID obtained by the account subsystem. The default super user ID is **100**.<br>The value range is [0, 2<sup>31</sup>-1]. If the value is out of range,the excess part will be truncated. If the value of the passed parameter is less than 0, an error log is generated. |
 | uri | string | Yes | URI of the DLP file. The value contains up to 4095 bytes. If the value is out of range,error code 401 is thrown. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DLPSandboxInfo> | Promise used to return the information about the sandbox application installed. |
+| Promise&lt;DLPSandboxInfo&gt; | Promise used to return the information about the sandbox application installed. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ dlpPermission.installDLPSandbox('com.ohos.note', dlpPermission.DLPFileAccess.REA
 ```
 
 
+<a id="installdlpsandbox-1"></a>
 ## installDLPSandbox
 
 ```TypeScript
@@ -97,9 +99,9 @@ Before a DLP file management application opens a protected file, the system need
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name of the application. The value contains 7 to 128 bytes. If the value is out of range, error code 401 is thrown. |
 | access | [DLPFileAccess](arkts-dataprotection-dlppermission-dlpfileaccess-e.md) | Yes | Permission on the DLP file. The permissions on a DLP file determine the access scope of the file. |
-| userId | number | Yes | Current user ID, which is the system account ID obtained by the account subsystem. The default super user ID is **100**.<br>The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value is out of range,the excess part will be truncated. If the value of the passed parameter is less than 0, an error log is generated. |
+| userId | number | Yes | Current user ID, which is the system account ID obtained by the account subsystem. The default super user ID is **100**.<br>The value range is [0, 2<sup>31</sup>-1]. If the value is out of range,the excess part will be truncated. If the value of the passed parameter is less than 0, an error log is generated. |
 | uri | string | Yes | URI of the DLP file. The value contains up to 4095 bytes. If the value is out of range,error code 401 is thrown. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DLPSandboxInfo> | Yes | Callback used to return the result. If the DLP sandbox installation is successful, **err** is **undefined**, and **data** is the sandbox information obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DLPSandboxInfo&gt; | Yes | Callback used to return the result. If the DLP sandbox installation is successful, **err** is **undefined**, and **data** is the sandbox information obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 

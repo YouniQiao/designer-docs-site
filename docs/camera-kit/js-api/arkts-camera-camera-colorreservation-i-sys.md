@@ -18,6 +18,7 @@ ColorReservation extends [ColorReservationQuery](arkts-camera-camera-colorreserv
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getcolorreservation"></a>
 ## getColorReservation
 
 ```TypeScript
@@ -66,6 +67,7 @@ function getColorReservation(session: camera.VideoSessionForSys): camera.ColorRe
 
 ```
 
+<a id="setcolorreservation"></a>
 ## setColorReservation
 
 ```TypeScript

@@ -20,6 +20,7 @@ Images occupy a large amount of memory. When you finish using an ImageSource ins
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="createwidegamutsdrpixelmap"></a>
 ## createWideGamutSdrPixelMap
 
 ```TypeScript
@@ -40,7 +41,7 @@ Decodes to a SDR PixelMap, using a as wide gamut as possible.For a SDR ImageSour
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PixelMap> | Decoded PixelMap. |
+| Promise&lt;PixelMap&gt; | Decoded PixelMap. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ Decodes to a SDR PixelMap, using a as wide gamut as possible.For a SDR ImageSour
 | [7700103](../errorcode-image.md#7700103-image-oversized) | Image too large. |
 | [7700301](../errorcode-image.md#7700301-decoding-failure) | Decoding failed. |
 
+<a id="isjpegprogressive"></a>
 ## isJpegProgressive
 
 ```TypeScript
@@ -73,7 +75,7 @@ Checks whether a JPEG image is progressive. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise object. The value **true** indicates that the JPEG image is progressive,and the value **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise object. The value **true** indicates that the JPEG image is progressive,and the value **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -98,6 +100,7 @@ async function IsJpegProgressive(imageSource : image.ImageSource) {
 
 ```
 
+<a id="modifyimageallproperties"></a>
 ## modifyImageAllProperties
 
 ```TypeScript
@@ -120,13 +123,13 @@ Modify the value of properties in an image with the specified keys.The HwMnote r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| records | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string\|null> | Yes | Property Records whose values are to be modified,when the value is set to null the tag will be removed. |
+| records | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, string\|null&gt; | Yes | Property Records whose values are to be modified,when the value is set to null the tag will be removed. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result. If the operation fails,an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result. If the operation fails,an error message is returned. |
 
 **Error codes:**
 

@@ -38,7 +38,7 @@ Ability name of the application. It represents the ability name of the target ap
 action?: string
 ```
 
-Action to take, such as viewing and sharing application details. In implicit Want, you can define this field and use it together with **uri** or **parameters** to specify the operation to be performed on the data. For details about the definition and matching rules of implicit Want, see [Matching Rules of Explicit Want and Implicit Want](../../../../application-models/explicit-implicit-want-mappings.md).
+Action to take, such as viewing and sharing application details. In implicit Want, you can define this field and use it together with **uri** or **parameters** to specify the operation to be performed on the data. For details about the definition and matching rules of implicit Want, see [Matching Rules of Explicit Want and Implicit Want](docroot://application-models/explicit-implicit-want-mappings.md).
 
 **Type:** string
 
@@ -94,7 +94,7 @@ entities?: Array<string>
 
 Additional category information (such as browser and video player) of the ability. It is a supplement to the **action** field for implicit Want. and is used to filter ability types.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 
@@ -114,7 +114,7 @@ File descriptor (FD). The FD written by the launcher in the application launch s
 
 This API can be used in atomic services since API version 15.
 
-**Type:** Record<string, number>
+**Type:** Record&lt;string, number&gt;
 
 **Since:** 15
 
@@ -154,7 +154,7 @@ Module name of the application. It represents the module name of the target appl
 
 **NOTE**
 
-If the ability belongs to a [HAR](../../../../quick-start/har-package.md) module, **moduleName** must be set to the name of the [HAP](../../../../quick-start/hap-package.md) or [HSP](../../../../quick-start/in-app-hsp.md) module that depends on this HAR.
+If the ability belongs to a [HAR](docroot://quick-start/har-package.md) module, **moduleName** must be set to the name of the [HAP](docroot://quick-start/hap-package.md) or [HSP](docroot://quick-start/in-app-hsp.md) module that depends on this HAR.
 
 **Type:** string
 
@@ -204,7 +204,7 @@ Note that a maximum of 100 KB data that can be transferred by using **WantParams
 
 The values of **parameters** must be of the following basic data types: String, Number, Boolean, Object, undefined,and null. Functions in an object cannot be transferred.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 9
 

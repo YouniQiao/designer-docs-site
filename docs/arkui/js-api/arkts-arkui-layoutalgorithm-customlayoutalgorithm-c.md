@@ -6,17 +6,20 @@ Custom layout algorithm class.
 >  
 > The object of the **CustomLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as  
 > the input parameter of the  
-> [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the  
+> [DynamicLayout](docroot://reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the  
 > layout algorithm.
 
 **Inheritance/Implementation:** CustomLayoutAlgorithm implements [LayoutAlgorithm](arkts-arkui-layoutalgorithm-i.md)
 
 **Since:** 24
 
+**Decorator:** @ObservedV2
+
 <!--Device-unnamed-export class CustomLayoutAlgorithm implements LayoutAlgorithm--><!--Device-unnamed-export class CustomLayoutAlgorithm implements LayoutAlgorithm-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="onlayout"></a>
 ## onLayout
 
 ```TypeScript
@@ -28,13 +31,13 @@ Customizes the position of the child component to be arranged. When the position
 > **NOTE**  
 >  
 > In this callback, you can call  
-> [getChild()](../../../../reference/apis-arkui/js-apis-arkui-frameNode.md#getchild12) of  
-> [FrameNode](../../../../reference/apis-arkui/js-apis-arkui-frameNode.md#framenode-1) to obtain the child  
+> [getChild()](docroot://reference/apis-arkui/js-apis-arkui-frameNode.md#getchild12) of  
+> [FrameNode](docroot://reference/apis-arkui/js-apis-arkui-frameNode.md#framenode-1) to obtain the child  
 > component **FrameNode** and call  
-> [layout()](../../../../reference/apis-arkui/js-apis-arkui-frameNode.md#layout12) of  
-> [FrameNode](../../../../reference/apis-arkui/js-apis-arkui-frameNode.md#framenode-1) to set the position of the  
+> [layout()](docroot://reference/apis-arkui/js-apis-arkui-frameNode.md#layout12) of  
+> [FrameNode](docroot://reference/apis-arkui/js-apis-arkui-frameNode.md#framenode-1) to set the position of the  
 > child component. For details, see  
-> [Example 1](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md#example-1-implementing-waterfall-layout-using-a-custom-layout-algorithm).
+> [Example 1](docroot://reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md#example-1-implementing-waterfall-layout-using-a-custom-layout-algorithm).
 
 **Since:** 24
 
@@ -53,8 +56,9 @@ Customizes the position of the child component to be arranged. When the position
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | self | [FrameNode](../arkts-components/arkts-arkui-framenode-t.md) | Yes | Entity node of the dynamic layout component in the component tree. |
-| position | [Position](arkts-arkui-units-position-i.md) | Yes | Position information used in layout of the dynamic layout component. |
+| position | [Position](arkts-arkui-position-i.md) | Yes | Position information used in layout of the dynamic layout component. |
 
+<a id="onmeasure"></a>
 ## onMeasure
 
 ```TypeScript
@@ -66,13 +70,13 @@ Customizes the size of the child component to be measured. When the size of the 
 > **NOTE**  
 >  
 > In this callback, you can call  
-> [getChild()](../../../../reference/apis-arkui/js-apis-arkui-frameNode.md#getchild12) of  
-> [FrameNode](../../../../reference/apis-arkui/js-apis-arkui-frameNode.md#framenode-1) to obtain the child  
+> [getChild()](docroot://reference/apis-arkui/js-apis-arkui-frameNode.md#getchild12) of  
+> [FrameNode](docroot://reference/apis-arkui/js-apis-arkui-frameNode.md#framenode-1) to obtain the child  
 > component **FrameNode** and call  
-> [measure()](../../../../reference/apis-arkui/js-apis-arkui-frameNode.md#measure12) of  
-> [FrameNode](../../../../reference/apis-arkui/js-apis-arkui-frameNode.md#framenode-1) to measure the size of the  
+> [measure()](docroot://reference/apis-arkui/js-apis-arkui-frameNode.md#measure12) of  
+> [FrameNode](docroot://reference/apis-arkui/js-apis-arkui-frameNode.md#framenode-1) to measure the size of the  
 > child component. For details, see  
-> [Example 1](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md#example-1-implementing-waterfall-layout-using-a-custom-layout-algorithm).
+> [Example 1](docroot://reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md#example-1-implementing-waterfall-layout-using-a-custom-layout-algorithm).
 
 **Since:** 24
 

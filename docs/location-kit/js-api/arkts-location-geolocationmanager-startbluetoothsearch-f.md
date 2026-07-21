@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="startbluetoothsearch"></a>
 ## startBluetoothSearch
 
 ```TypeScript
@@ -34,7 +35,7 @@ Starts Bluetooth scanning and matches the device ID list in the input parameter 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | request | [BluetoothSearchRequestParams](arkts-location-geolocationmanager-bluetoothsearchrequestparams-i.md) | Yes | Indicates the configuration parameters for the Bluetooth search function. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BluetoothScanResult> | Yes | Callback used to return ${BluetoothScanResult}. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BluetoothScanResult&gt; | Yes | Callback used to return ${BluetoothScanResult}. |
 
 **Error codes:**
 

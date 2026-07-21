@@ -6,6 +6,7 @@
 import { ranging } from '@kit.ConnectivityKit';
 ```
 
+<a id="startpassiveranging"></a>
 ## startPassiveRanging
 
 ```TypeScript
@@ -38,7 +39,7 @@ The returned handle can be used to stop the passive ranging broadcast via stopPa
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the handle for starts ranging listening. |
+| Promise&lt;number&gt; | Promise used to return the handle for starts ranging listening. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { childProcessManager } from '@kit.AbilityKit';
 ```
 
+<a id="isarkchildprocesssupported"></a>
 ## isArkChildProcessSupported
 
 ```TypeScript
@@ -26,5 +27,5 @@ Checks whether the caller is allowed to create ark child processes on this devic
 
 | Type | Description |
 | --- | --- |
-| boolean | - `true`: The caller is allowed to create ark child processes.  - `false`: The caller is not allowed to create ark child processes. |
+| boolean | - `true`: The caller is allowed to create ark child processes.   - `false`: The caller is not allowed to create ark child processes. |
 

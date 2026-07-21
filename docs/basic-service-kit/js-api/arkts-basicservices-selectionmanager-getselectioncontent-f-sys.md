@@ -6,6 +6,7 @@
 import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="getselectioncontent"></a>
 ## getSelectionContent
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains this selected text content. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the content of the selected text. |
+| Promise&lt;string&gt; | Promise used to return the content of the selected text. |
 
 **Error codes:**
 

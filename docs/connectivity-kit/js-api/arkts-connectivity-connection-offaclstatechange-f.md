@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="offaclstatechange"></a>
 ## offAclStateChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe the event of acl state changed from a remote device.If the applicati
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AclStateResult> | No | Callback used to listen. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AclStateResult&gt; | No | Callback used to listen. |
 
 **Error codes:**
 

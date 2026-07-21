@@ -21,6 +21,7 @@ StabilizationQuery provides APIs to check the support for video stabilization.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="isvideostabilizationmodesupported"></a>
 ## isVideoStabilizationModeSupported
 
 ```TypeScript

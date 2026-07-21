@@ -6,6 +6,7 @@
 import { scan } from '@kit.ConnectivityKit';
 ```
 
+<a id="startscan"></a>
 ## startScan
 
 ```TypeScript
@@ -35,7 +36,7 @@ function startScan(filters: ScanFilters[] | null, options?: ScanOptions): Promis
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | 返回promise对象。 |
+| Promise&lt;void&gt; | 返回promise对象。 |
 
 **错误码：**
 

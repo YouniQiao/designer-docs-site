@@ -6,6 +6,7 @@
 import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="dumpjsrawheapdata"></a>
 ## dumpJsRawHeapData
 
 ```TypeScript
@@ -39,7 +40,7 @@ Dumps the original heap snapshot of the VM for the current thread and generates 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Path of the generated snapshot file. |
+| Promise&lt;string&gt; | Path of the generated snapshot file. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ hidebug.dumpJsRawHeapData().then((filePath: string) => {
 ```
 
 
+<a id="dumpjsrawheapdata-1"></a>
 ## dumpJsRawHeapData
 
 ```TypeScript
@@ -97,7 +99,7 @@ Dumps the original heap snapshot of the VM for the current thread. The API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the path of the generated snapshot file. |
+| Promise&lt;string&gt; | Returns the path of the generated snapshot file. |
 
 **Error codes:**
 
@@ -127,6 +129,7 @@ hidebug.dumpJsRawHeapData(true, true).then((filePath: string) => {
 ```
 
 
+<a id="dumpjsrawheapdata-2"></a>
 ## dumpJsRawHeapData
 
 ```TypeScript
@@ -159,7 +162,7 @@ The generated file will be stored in a folder within the application directory. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Returns a list of the full path of raw heap snapshot file. |
+| Promise&lt;Array&lt;string&gt;&gt; | Returns a list of the full path of raw heap snapshot file. |
 
 **Error codes:**
 

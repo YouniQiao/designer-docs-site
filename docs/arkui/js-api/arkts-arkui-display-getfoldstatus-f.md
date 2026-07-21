@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="getfoldstatus"></a>
 ## getFoldStatus
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the fold status of this foldable device.
 
 | Type | Description |
 | --- | --- |
-| [FoldStatus](arkts-arkui-enums-foldstatus-e.md) | Fold status of the device. |
+| [FoldStatus](arkts-arkui-foldstatus-e.md) | Fold status of the device. |
 
 **Error codes:**
 

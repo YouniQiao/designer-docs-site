@@ -6,6 +6,7 @@
 import { volumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getpartitiontable"></a>
 ## getPartitionTable
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains partition table information based on the disk ID. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PartitionTableInfo> | Promise used to return the partition table information of the current disk ID. |
+| Promise&lt;PartitionTableInfo&gt; | Promise used to return the partition table information of the current disk ID. |
 
 **Error codes:**
 

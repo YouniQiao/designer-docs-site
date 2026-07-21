@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="getcalltransferinfo"></a>
 ## getCallTransferInfo
 
 ```TypeScript
@@ -30,7 +31,7 @@ Get call forwarding information.
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | type | [CallTransferType](arkts-telephony-call-calltransfertype-e-sys.md) | Yes | Indicates which type of call forwarding to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CallTransferResult> | Yes | Indicates the callback for getting the call forwarding status. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CallTransferResult&gt; | Yes | Indicates the callback for getting the call forwarding status. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ call.getCallTransferInfo(0, call.CallTransferType.TRANSFER_TYPE_BUSY, (err: Busi
 ```
 
 
+<a id="getcalltransferinfo-1"></a>
 ## getCallTransferInfo
 
 ```TypeScript
@@ -89,7 +91,7 @@ Get call forwarding information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CallTransferResult> | Returns the call forwarding status. |
+| Promise&lt;CallTransferResult&gt; | Returns the call forwarding status. |
 
 **Error codes:**
 

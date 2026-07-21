@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="sendcommand"></a>
 ## sendCommand
 
 ```TypeScript
@@ -25,7 +26,7 @@ Send extended commands to location subsystem.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | command | [LocationCommand](arkts-location-geolocationmanager-locationcommand-i.md) | Yes | Indicates the extended command message body. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Indicates the callback for reporting the error message.If the function fails to execute, the error message will be carried in the first parameter err of AsyncCallback,If the function executes successfully, execute the callback function only, no data will be returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Indicates the callback for reporting the error message.If the function fails to execute, the error message will be carried in the first parameter err of AsyncCallback,If the function executes successfully, execute the callback function only, no data will be returned. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ try {
 ```
 
 
+<a id="sendcommand-1"></a>
 ## sendCommand
 
 ```TypeScript
@@ -78,7 +80,7 @@ Send extended commands to location subsystem.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

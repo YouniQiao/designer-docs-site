@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="getdefaultsmssimid"></a>
 ## getDefaultSmsSimId
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the default SIM ID for sending SMS messages.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Returns the SIM ID of the default sms sim and SIM ID will increase from 1. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Returns the SIM ID of the default sms sim and SIM ID will increase from 1. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ sms.getDefaultSmsSimId((err: BusinessError, data: number) => {
 ```
 
 
+<a id="getdefaultsmssimid-1"></a>
 ## getDefaultSmsSimId
 
 ```TypeScript
@@ -69,7 +71,7 @@ Obtains the default SIM ID for sending SMS messages.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the SIM ID of the default sms sim and SIM ID will increase from 1. |
+| Promise&lt;number&gt; | Returns the SIM ID of the default sms sim and SIM ID will increase from 1. |
 
 **Error codes:**
 

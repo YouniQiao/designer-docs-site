@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getorientation"></a>
 ## getOrientation
 
 ```TypeScript
@@ -24,8 +25,8 @@ Obtains the device direction based on the rotation matrix. This API uses an asyn
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationMatrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation matrix. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the rotation angle around the z, x, and y axes, in degrees. |
+| rotationMatrix | Array&lt;number&gt; | Yes | Rotation matrix. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the rotation angle around the z, x, and y axes, in degrees. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ try {
 ```
 
 
+<a id="getorientation-1"></a>
 ## getOrientation
 
 ```TypeScript
@@ -85,13 +87,13 @@ Obtains the device direction based on the rotation matrix. This API uses a promi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationMatrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation matrix. |
+| rotationMatrix | Array&lt;number&gt; | Yes | Rotation matrix. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the rotation angle around the z, x, and y axes, in degrees. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the rotation angle around the z, x, and y axes, in degrees. |
 
 **Error codes:**
 

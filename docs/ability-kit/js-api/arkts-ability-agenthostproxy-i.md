@@ -8,6 +8,7 @@ The proxy object of the connected party for the AgentExtensionAbility,used to se
 
 **System capability:** SystemCapability.Ability.AgentRuntime.Core
 
+<a id="authorize"></a>
 ## authorize
 
 ```TypeScript
@@ -38,6 +39,7 @@ Send authentication to an agent service host.
 | --- | --- |
 | [35600002](../errorcode-ability.md#35600002-failed-to-send-ipc-messages) | Failed to send the IPC message. |
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript

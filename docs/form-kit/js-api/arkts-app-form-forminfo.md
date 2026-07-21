@@ -4,10 +4,12 @@ The **formInfo** module provides types and enums related to the widget informati
 
 > **NOTE**
 
-> - This topic describes only system APIs provided by the module. For details about its public APIs, see
+> - This topic describes only system APIs provided by the module. For details about its public APIs, see  
 > [@ohos.app.form.formInfo (formInfo)](arkts-app-form-forminfo.md).
 
 **Since:** 9
+
+<!--Device-unnamed-declare namespace formInfo--><!--Device-unnamed-declare namespace formInfo-End-->
 
 **System capability:** SystemCapability.Ability.Form
 
@@ -23,57 +25,57 @@ import { formInfo } from '@kit.FormKit';
 
 | Name | Description |
 | --- | --- |
-| [FormInfo](arkts-form-forminfo-i.md) | Provides information about a form. |
-| [FormInfoFilter](arkts-form-forminfofilter-i.md) | The optional options used as filters to askgetFormsInfo to return formInfos from only forms that match the options. |
-| [FormStateInfo](arkts-form-formstateinfo-i.md) | Provides state information about a form. |
-| [OverflowInfo](arkts-form-overflowinfo-i.md) | Provides OverflowInfo about funInteraction or sceneAnimation form |
-| [Rect](arkts-form-rect-i.md) | Indicates rectangle, unit is vp. |
+| [FormInfo](arkts-form-forminfo-forminfo-i.md) | Provides information about a form. |
+| [FormInfoFilter](arkts-form-forminfo-forminfofilter-i.md) | The optional options used as filters to ask getFormsInfo to return formInfos from only forms that match the options. |
+| [FormStateInfo](arkts-form-forminfo-formstateinfo-i.md) | Provides state information about a form. |
+| [OverflowInfo](arkts-form-forminfo-overflowinfo-i.md) | Provides OverflowInfo about funInteraction or sceneAnimation form |
+| [Rect](arkts-form-forminfo-rect-i.md) | Indicates rectangle, unit is vp. |
 
 <!--Del-->
 ### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [ChangeSceneAnimationStateRequest](arkts-form-changesceneanimationstaterequest-i-sys.md) | ChangeSceneAnimationStateRequest |
-| [FormCustomConfig](arkts-form-formcustomconfig-i-sys.md) | FormCustomConfig |
-| [FormInfo](arkts-form-forminfo-i-sys.md) | Provides information about a form. |
-| [FormInfoFilter](arkts-form-forminfofilter-i-sys.md) | The optional options used as filters to askgetFormsInfo to return formInfos from only forms that match the options. |
-| [FormProviderFilter](arkts-form-formproviderfilter-i-sys.md) | Information about a running form. |
-| [FunInteractionParams](arkts-form-funinteractionparams-i-sys.md) | The fun interaction form params. |
-| [OverflowRequest](arkts-form-overflowrequest-i-sys.md) | Provides OverflowRequest about request/cancel form's overflow |
-| [PublishFormCrossBundleInfo](arkts-form-publishformcrossbundleinfo-i-sys.md) | PublishFormCrossBundleInfo |
-| [PublishFormResult](arkts-form-publishformresult-i-sys.md) | The result of publish form. |
-| [RunningFormInfo](arkts-form-runningforminfo-i-sys.md) | The class of a running form information. |
-| [SceneAnimationParams](arkts-form-sceneanimationparams-i-sys.md) | The scene animation form params. |
-| [TemplateFormDetailInfo](arkts-form-templateformdetailinfo-i-sys.md) | TemplateFormDetailInfo |
+| [ChangeSceneAnimationStateRequest](arkts-form-forminfo-changesceneanimationstaterequest-i-sys.md) | ChangeSceneAnimationStateRequest |
+| [FormCustomConfig](arkts-form-forminfo-formcustomconfig-i-sys.md) | FormCustomConfig |
+| [FormInfo](arkts-form-forminfo-forminfo-i-sys.md) | Provides information about a form. |
+| [FormInfoFilter](arkts-form-forminfo-forminfofilter-i-sys.md) | The optional options used as filters to ask getFormsInfo to return formInfos from only forms that match the options. |
+| [FormProviderFilter](arkts-form-forminfo-formproviderfilter-i-sys.md) | Information about a running form. |
+| [FunInteractionParams](arkts-form-forminfo-funinteractionparams-i-sys.md) | The fun interaction form params. |
+| [OverflowRequest](arkts-form-forminfo-overflowrequest-i-sys.md) | Provides OverflowRequest about request/cancel form's overflow |
+| [PublishFormCrossBundleInfo](arkts-form-forminfo-publishformcrossbundleinfo-i-sys.md) | PublishFormCrossBundleInfo |
+| [PublishFormResult](arkts-form-forminfo-publishformresult-i-sys.md) | The result of publish form. |
+| [RunningFormInfo](arkts-form-forminfo-runningforminfo-i-sys.md) | The class of a running form information. |
+| [SceneAnimationParams](arkts-form-forminfo-sceneanimationparams-i-sys.md) | The scene animation form params. |
+| [TemplateFormDetailInfo](arkts-form-forminfo-templateformdetailinfo-i-sys.md) | TemplateFormDetailInfo |
 <!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ColorMode](arkts-form-colormode-e.md) | Color mode. |
-| [FormDimension](arkts-form-formdimension-e.md) | Defines the FormDimension enum. |
-| [FormLocation](arkts-form-formlocation-e.md) | Enumerates the widget locations. |
-| [FormParam](arkts-form-formparam-e.md) | Enumerates widget parameters. |
-| [FormShape](arkts-form-formshape-e.md) | Defines the FormShape enum. |
-| [FormState](arkts-form-formstate-e.md) | Provides state about a form. |
-| [FormType](arkts-form-formtype-e.md) | Type of form. |
-| [FormUpdateReason](arkts-form-formupdatereason-e.md) | Form update reason. |
-| [LaunchReason](arkts-form-launchreason-e.md) | Indicates the launch reason of a form. |
-| [VisibilityType](arkts-form-visibilitytype-e.md) | The visibility of a form. |
+| [ColorMode](arkts-form-forminfo-colormode-e.md) | Color mode. |
+| [FormDimension](arkts-form-forminfo-formdimension-e.md) | Defines the FormDimension enum. |
+| [FormLocation](arkts-form-forminfo-formlocation-e.md) | Enumerates the widget locations. |
+| [FormParam](arkts-form-forminfo-formparam-e.md) | Enumerates widget parameters. |
+| [FormShape](arkts-form-forminfo-formshape-e.md) | Defines the FormShape enum. |
+| [FormState](arkts-form-forminfo-formstate-e.md) | Provides state about a form. |
+| [FormType](arkts-form-forminfo-formtype-e.md) | Type of form. |
+| [FormUpdateReason](arkts-form-forminfo-formupdatereason-e.md) | Form update reason. |
+| [LaunchReason](arkts-form-forminfo-launchreason-e.md) | Indicates the launch reason of a form. |
+| [VisibilityType](arkts-form-forminfo-visibilitytype-e.md) | The visibility of a form. |
 
 <!--Del-->
 ### Enums（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [FormLocation](arkts-form-formlocation-e-sys.md) | Enumerates the widget locations. |
-| [FormParam](arkts-form-formparam-e-sys.md) | Enumerates widget parameters. |
-| [FormUsageState](arkts-form-formusagestate-e-sys.md) | Enumerates the usage statuses of a widget. |
-| [PublishFormErrorCode](arkts-form-publishformerrorcode-e-sys.md) | Enumerates the result codes that may be used for the operation of adding a widget to the home screen. |
-| [RenderingMode](arkts-form-renderingmode-e-sys.md) | Enumerates the rendering modes supported by the widget. |
-| [SceneAnimationTriggerType](arkts-form-sceneanimationtriggertype-e-sys.md) | The trigger type of the scene animation. |
+| [FormLocation](arkts-form-forminfo-formlocation-e-sys.md) | Enumerates the widget locations. |
+| [FormParam](arkts-form-forminfo-formparam-e-sys.md) | Enumerates widget parameters. |
+| [FormUsageState](arkts-form-forminfo-formusagestate-e-sys.md) | Enumerates the usage statuses of a widget. |
+| [PublishFormErrorCode](arkts-form-forminfo-publishformerrorcode-e-sys.md) | Enumerates the result codes that may be used for the operation of adding a widget to the home screen. |
+| [RenderingMode](arkts-form-forminfo-renderingmode-e-sys.md) | Enumerates the rendering modes supported by the widget. |
+| [SceneAnimationTriggerType](arkts-form-forminfo-sceneanimationtriggertype-e-sys.md) | The trigger type of the scene animation. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -81,12 +83,12 @@ import { formInfo } from '@kit.FormKit';
 
 | Name | Description |
 | --- | --- |
-| [DeleteFormsCallback](arkts-form-deleteformscallback-t-sys.md) | callback for deleting the forms. |
-| [GetFormRectInfoCallback](arkts-form-getformrectinfocallback-t-sys.md) | Get form rect info callback |
-| [GetLiveFormStatusCallback](arkts-form-getliveformstatuscallback-t-sys.md) | Get live form status info callback |
-| [GetWantParamsCallback](arkts-form-getwantparamscallback-t-sys.md) | Get want parameters callback. |
-| [PublishFormCrossBundleControlCallback](arkts-form-publishformcrossbundlecontrolcallback-t-sys.md) | publish form cross bundle control callback. |
-| [TemplateFormDetailInfoCallback](arkts-form-templateformdetailinfocallback-t-sys.md) | template form detail info callback. |
-| [UpdateFormsConfigCallback](arkts-form-updateformsconfigcallback-t-sys.md) | Callback for updating the forms. |
+| [DeleteFormsCallback](arkts-form-forminfo-deleteformscallback-t-sys.md) | callback for deleting the forms. |
+| [GetFormRectInfoCallback](arkts-form-forminfo-getformrectinfocallback-t-sys.md) | Get form rect info callback |
+| [GetLiveFormStatusCallback](arkts-form-forminfo-getliveformstatuscallback-t-sys.md) | Get live form status info callback |
+| [GetWantParamsCallback](arkts-form-forminfo-getwantparamscallback-t-sys.md) | Get want parameters callback. |
+| [PublishFormCrossBundleControlCallback](arkts-form-forminfo-publishformcrossbundlecontrolcallback-t-sys.md) | publish form cross bundle control callback. |
+| [TemplateFormDetailInfoCallback](arkts-form-forminfo-templateformdetailinfocallback-t-sys.md) | template form detail info callback. |
+| [UpdateFormsConfigCallback](arkts-form-forminfo-updateformsconfigcallback-t-sys.md) | Callback for updating the forms. |
 <!--DelEnd-->
 

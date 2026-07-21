@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.MDMKit';
 ```
 
+<a id="removedisallowedpermissiveusbdevices"></a>
 ## removeDisallowedPermissiveUsbDevices
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes disallowed USB devices via an array of {@link PermissiveUsbDeviceType}.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | admin indicates the enterprise admin extension ability information.The admin must have the corresponding permission. |
-| usbDevices | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PermissiveUsbDeviceType> | Yes | list of USB device types. |
+| usbDevices | Array&lt;PermissiveUsbDeviceType&gt; | Yes | list of USB device types. |
 
 **Error codes:**
 

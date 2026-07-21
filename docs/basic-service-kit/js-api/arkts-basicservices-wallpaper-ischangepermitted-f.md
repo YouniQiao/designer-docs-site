@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="ischangepermitted"></a>
 ## isChangePermitted
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether to allow the application to change the wallpaper for the current 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of isChangePermitted. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of isChangePermitted. |
 
 **Example**
 
@@ -44,6 +45,7 @@ wallpaper.isChangePermitted((error: BusinessError, data: Boolean) => {
 ```
 
 
+<a id="ischangepermitted-1"></a>
 ## isChangePermitted
 
 ```TypeScript
@@ -64,7 +66,7 @@ Checks whether to allow the application to change the wallpaper for the current 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Example**
 

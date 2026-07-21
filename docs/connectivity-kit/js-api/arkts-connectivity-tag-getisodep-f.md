@@ -6,6 +6,7 @@
 import { tag } from '@kit.ConnectivityKit';
 ```
 
+<a id="getisodep"></a>
 ## getIsoDep
 
 ```TypeScript

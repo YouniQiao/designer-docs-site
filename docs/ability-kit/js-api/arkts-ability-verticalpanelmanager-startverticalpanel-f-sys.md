@@ -6,6 +6,7 @@
 import { verticalPanelManager } from '@kit.AbilityKit';
 ```
 
+<a id="startverticalpanel"></a>
 ## startVerticalPanel
 
 ```TypeScript
@@ -44,7 +45,7 @@ Starts the vertical domain picker with panel config.If the target ability is vis
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | common.UIAbilityContext | Yes | Indicates the ui ability context of the application. |
-| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Indicates the want parameter. |
+| wantParam | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Indicates the want parameter. |
 | panelConfig | [PanelConfig](arkts-ability-verticalpanelmanager-panelconfig-i-sys.md) | Yes | Indicates the panel config. |
 | panelStartCallback | [PanelStartCallback](arkts-ability-verticalpanelmanager-panelstartcallback-i-sys.md) | Yes | indicates the panelStartCallback. |
 
@@ -52,7 +53,7 @@ Starts the vertical domain picker with panel config.If the target ability is vis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

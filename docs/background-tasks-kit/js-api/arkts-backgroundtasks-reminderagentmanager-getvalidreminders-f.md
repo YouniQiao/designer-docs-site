@@ -6,13 +6,14 @@
 import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="getvalidreminders"></a>
 ## getValidReminders
 
 ```TypeScript
 function getValidReminders(callback: AsyncCallback<Array<ReminderRequest>>): void
 ```
 
-Obtains all [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints)set by the current application. This API uses an asynchronous callback to return the result.
+Obtains all [valid (not yet expired) reminders](docroot://task-management/agent-powered-reminder.md#constraints)set by the current application. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -24,7 +25,7 @@ Obtains all [valid (not yet expired) reminders](../../../../task-management/agen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ReminderRequest>> | Yes | Callback used to return the result.If the agent-powered reminder is queried, **err** is **undefined**, and **data** contains all valid (not yet expired) reminders set by the current application. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ReminderRequest&gt;&gt; | Yes | Callback used to return the result.If the agent-powered reminder is queried, **err** is **undefined**, and **data** contains all valid (not yet expired) reminders set by the current application. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -70,13 +71,14 @@ reminderAgentManager.getValidReminders((err: BusinessError, reminders: Array<rem
 ```
 
 
+<a id="getvalidreminders-1"></a>
 ## getValidReminders
 
 ```TypeScript
 function getValidReminders(): Promise<Array<ReminderRequest>>
 ```
 
-Obtains all [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints)set by the current application. This API uses a promise to return the result.
+Obtains all [valid (not yet expired) reminders](docroot://task-management/agent-powered-reminder.md#constraints)set by the current application. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -88,7 +90,7 @@ Obtains all [valid (not yet expired) reminders](../../../../task-management/agen
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ReminderRequest>> | Promise used to return all the valid reminders. |
+| Promise&lt;Array&lt;ReminderRequest&gt;&gt; | Promise used to return all the valid reminders. |
 
 **Error codes:**
 

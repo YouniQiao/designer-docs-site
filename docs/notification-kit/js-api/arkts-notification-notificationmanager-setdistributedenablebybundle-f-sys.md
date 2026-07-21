@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setdistributedenablebybundle"></a>
 ## setDistributedEnableByBundle
 
 ```TypeScript
@@ -18,7 +19,7 @@ Sets whether to enable distributed notification for a specified application. Thi
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setDistributedEnabledByBundle(bundle:
+**Substitutes:** [setDistributedEnabledByBundle(bundle:](arkts-notification-notificationmanager-setdistributedenabledbybundle-f-sys.md#setdistributedenabledbybundle-1)
 
 **Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
 
@@ -34,7 +35,7 @@ Sets whether to enable distributed notification for a specified application. Thi
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
 | enable | boolean | Yes | Whether to enable distributed notification. The value **true** means to enable distributed notification, and **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ notificationManager.setDistributedEnableByBundle(bundle, enable, setDistributedE
 ```
 
 
+<a id="setdistributedenablebybundle-1"></a>
 ## setDistributedEnableByBundle
 
 ```TypeScript
@@ -83,7 +85,7 @@ Sets whether to enable distributed notification for a specified application. Thi
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setDistributedEnabledByBundle(bundle:
+**Substitutes:** [setDistributedEnabledByBundle(bundle:](arkts-notification-notificationmanager-setdistributedenabledbybundle-f-sys.md#setdistributedenabledbybundle-1)
 
 **Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
 
@@ -104,7 +106,7 @@ Sets whether to enable distributed notification for a specified application. Thi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

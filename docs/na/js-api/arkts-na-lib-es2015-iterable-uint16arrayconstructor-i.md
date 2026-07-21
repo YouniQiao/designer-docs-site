@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Uint16ArrayConstructor--><!--Device-unnamed-interface Uint16ArrayConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -14,14 +15,15 @@ new (elements: Iterable<number>): Uint16Array
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elements | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes |  |
+| elements | Iterable&lt;number&gt; | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint16Array](arkts-na-lib-es2015-iterable-uint16array-i.md) |  |
+| Uint16Array |  |
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -36,13 +38,13 @@ Creates an array from an array-like or iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<number> | Yes |  |
-| mapfn | (v: number, k: number) => number | No |  |
+| arrayLike | Iterable&lt;number&gt; | Yes |  |
+| mapfn | (v: number, k: number) =&gt; number | No |  |
 | thisArg | any | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Uint16Array](arkts-na-lib-es2015-iterable-uint16array-i.md) |  |
+| Uint16Array |  |
 

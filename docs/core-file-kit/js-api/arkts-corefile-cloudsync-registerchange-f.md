@@ -6,6 +6,7 @@
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="registerchange"></a>
 ## registerChange
 
 ```TypeScript
@@ -26,7 +27,7 @@ Subscribes to the change of a file. The callback returns the changed data.
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file to download. |
 | recursion | boolean | Yes | Whether to listen for the change of the URI, subfiles, and subdirectories. The value **true** means to listen for the change of the URI, subfiles, and subdirectories; the value **false** means to only listen for the change of the URI. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ChangeData> | Yes | Callback used to return the changed data. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ChangeData&gt; | Yes | Callback used to return the changed data. |
 
 **Error codes:**
 

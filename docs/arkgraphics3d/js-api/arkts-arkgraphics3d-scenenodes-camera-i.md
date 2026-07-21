@@ -10,6 +10,7 @@ Defines camera.
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="getprojectionmatrix"></a>
 ## getProjectionMatrix
 
 ```TypeScript
@@ -30,6 +31,7 @@ Get the projection matrix of this camera.
 | --- | --- |
 | [Mat4x4](arkts-arkgraphics3d-scenetypes-mat4x4-i.md) | -- the projection matrix of this camera |
 
+<a id="getviewmatrix"></a>
 ## getViewMatrix
 
 ```TypeScript
@@ -50,6 +52,7 @@ Get the view matrix of this camera.
 | --- | --- |
 | [Mat4x4](arkts-arkgraphics3d-scenetypes-mat4x4-i.md) | -- the view matrix of this camera |
 
+<a id="raycast"></a>
 ## raycast
 
 ```TypeScript
@@ -75,7 +78,7 @@ Casts a ray to a position on the screen and lists what the ray hits.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RaycastResult[]> | - Promise used to return an array of hit results, sorted from the closest to the farthest. The array may be empty. |
+| Promise&lt;RaycastResult[]&gt; | - Promise used to return an array of hit results, sorted from the closest to the farthest. The array may be empty. |
 
 ## clearColor
 
@@ -85,7 +88,7 @@ clearColor: Color | null
 
 Background clear color (environment background overrides this color,BACKGROUND_NONE is needed for this to actually take effect).
 
-**Type:** Color | null
+**Type:** Color \| null
 
 **Since:** 12
 
@@ -101,7 +104,7 @@ readonly effects: Container<Effect>
 
 The effects to apply on the camera output.
 
-**Type:** Container<Effect>
+**Type:** Container&lt;Effect&gt;
 
 **Since:** 21
 
@@ -199,7 +202,7 @@ postProcess: PostProcessSettings | null
 
 The post processing settings of the camera.
 
-**Type:** PostProcessSettings | null
+**Type:** PostProcessSettings \| null
 
 **Since:** 12
 

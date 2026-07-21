@@ -6,6 +6,7 @@
 import { vpnExtension } from '@kit.NetworkKit';
 ```
 
+<a id="isalwaysonvpnenabled"></a>
 ## isAlwaysOnVpnEnabled
 
 ```TypeScript
@@ -36,7 +37,7 @@ Get the Always on VPN mode status for a device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | return the mode for alway on vpn status |
+| Promise&lt;boolean&gt; | return the mode for alway on vpn status |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="setabilitydisabled"></a>
 ## setAbilityDisabled
 
 ```TypeScript
@@ -30,7 +31,7 @@ Sets whether to disable the Ability component of a specified application (system
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | bundleName | string | Yes | App bundle name. |
-| accountId | number | Yes | Account ID. The value is an integer greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2)of @ohos.account.osAccount to obtain the ID. |
+| accountId | number | Yes | Account ID. The value is an integer greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)of @ohos.account.osAccount to obtain the ID. |
 | abilityName | string | Yes | Name of the ability to be disabled or enabled. Currently, only UIAbility is supported. |
 | isDisabled | boolean | Yes | Whether to disable the ability. **true**: Disable the ability. **false**: Enable the ability. |
 

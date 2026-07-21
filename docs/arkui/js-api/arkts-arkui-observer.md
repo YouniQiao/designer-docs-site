@@ -26,30 +26,30 @@ import { uiObserver } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [off](arkts-arkui-uiobserver-off-f.md#off-1) | Unsubscribes from status changes of the **NavDestination** component. Compared with [uiObserver.off](arkts-arkui-uiobserver-off-f.md#off-2), this API supports the **options** parameter, which enables you to specify the ID of the target **Navigation** component to observe. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-2) | Unsubscribes from status changes of the **NavDestination** component. |
+| [off](arkts-arkui-uiobserver-off-f.md#off) | Unsubscribes from status changes of the **NavDestination** component. Compared with [uiObserver.off](uiObserver.off(type: 'navDestinationUpdate', callback?: Callback<NavDestinationInfo>)), this API supports the **options** parameter, which enables you to specify the ID of the target **Navigation** component to observe. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-1) | Unsubscribes from status changes of the **NavDestination** component. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-2) | Removes a callback function that was previously registered with `on()`. |
 | [off](arkts-arkui-uiobserver-off-f.md#off-3) | Removes a callback function that was previously registered with `on()`. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-4) | Removes a callback function that was previously registered with `on()`. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-5) | Unsubscribes from state changes of the page during routing. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-6) | Unregisters the listener for screen pixel density changes. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-7) | Unregisters the listener for drawing instruction dispatch in each frame. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-8) | Unregisters the listener for layout completion status in each frame. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-9) | Unsubscribes from **TabContent** page switching events for the specified **Tabs** component identified by its ID. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-10) | Unsubscribes from the **TabContent** switching event. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-11) | Unsubscribes from **Navigation** component page switching events. |
-| [off](arkts-arkui-uiobserver-off-f.md#off-12) | Unsubscribes from **Navigation** component page switching events. Compared with [uiObserver.off](uiObserver.off( type: 'navDestinationSwitch', context: UIAbilityContext \| UIContext, callback?: Callback&lt;NavDestinationSwitchInfo&gt; )),this API supports the **observerOptions** parameter, which enables you to configure observation options. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-1) | Subscribes to status changes of the **NavDestination** component. Compared with [uiObserver.on](arkts-arkui-uiobserver-on-f.md#on-2), this API supports the **options** parameter, which enables you to specify the ID of the target **Navigation** component to observe. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-2) | Subscribes to status changes of the **NavDestination** component. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-4) | Unsubscribes from state changes of the page during routing. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-5) | Unregisters the listener for screen pixel density changes. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-6) | Unregisters the listener for drawing instruction dispatch in each frame. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-7) | Unregisters the listener for layout completion status in each frame. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-8) | Unsubscribes from **TabContent** page switching events for the specified **Tabs** component identified by its ID. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-9) | Unsubscribes from the **TabContent** switching event. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-10) | Unsubscribes from **Navigation** component page switching events. |
+| [off](arkts-arkui-uiobserver-off-f.md#off-11) | Unsubscribes from **Navigation** component page switching events. Compared with [uiObserver.off](uiObserver.off( type: 'navDestinationSwitch', context: UIAbilityContext \| UIContext, callback?: Callback<NavDestinationSwitchInfo> )),this API supports the **observerOptions** parameter, which enables you to configure observation options. |
+| [on](arkts-arkui-uiobserver-on-f.md#on) | Subscribes to status changes of the **NavDestination** component. Compared with [uiObserver.on](uiObserver.on(type: 'navDestinationUpdate', callback: Callback<NavDestinationInfo>)), this API supports the **options** parameter, which enables you to specify the ID of the target **Navigation** component to observe. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-1) | Subscribes to status changes of the **NavDestination** component. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-2) | Registers a callback function to be called when the scroll event start or stop. |
 | [on](arkts-arkui-uiobserver-on-f.md#on-3) | Registers a callback function to be called when the scroll event start or stop. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-4) | Registers a callback function to be called when the scroll event start or stop. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-5) | Subscribes to state changes of the page during routing. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-6) | Listens for screen pixel density changes. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-7) | Listens for drawing instruction dispatch in each frame. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-8) | Listens for layout completion status in each frame. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-9) | Subscribes to **TabContent** page switching events for the specified **Tabs** component identified by its ID.Unlike [on('tabChange')](arkts-arkui-arkui-uicontext-uiobserver-c.md#on-23),this API does not support listening for the initial tab display event when the **Tabs** component is initialized. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-10) | Subscribes to **TabContent** switch events. Unlike [on('tabChange')](arkts-arkui-arkui-uicontext-uiobserver-c.md#on-23),this API does not support listening for the initial tab display event when the **Tabs** component is initialized. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-11) | Subscribes to **Navigation** component page switching events. |
-| [on](arkts-arkui-uiobserver-on-f.md#on-12) | Subscribes to **Navigation** component page switching events. Compared with [uiObserver.on](uiObserver.on( type: 'navDestinationSwitch', context: UIAbilityContext \| UIContext, callback: Callback&lt;NavDestinationSwitchInfo&gt; )),this API supports the **observerOptions** parameter, which enables you to configure observation options. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-4) | Subscribes to state changes of the page during routing. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-5) | Listens for screen pixel density changes. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-6) | Listens for drawing instruction dispatch in each frame. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-7) | Listens for layout completion status in each frame. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-8) | Subscribes to **TabContent** page switching events for the specified **Tabs** component identified by its ID.Unlike [on('tabChange')](@ohos.arkui.UIContext:UIObserver#on(type: 'tabChange', callback: Callback<observer.TabContentInfo>)),this API does not support listening for the initial tab display event when the **Tabs** component is initialized. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-9) | Subscribes to **TabContent** switch events. Unlike [on('tabChange')](@ohos.arkui.UIContext:UIObserver#on(type: 'tabChange', callback: Callback<observer.TabContentInfo>)),this API does not support listening for the initial tab display event when the **Tabs** component is initialized. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-10) | Subscribes to **Navigation** component page switching events. |
+| [on](arkts-arkui-uiobserver-on-f.md#on-11) | Subscribes to **Navigation** component page switching events. Compared with [uiObserver.on](uiObserver.on( type: 'navDestinationSwitch', context: UIAbilityContext \| UIContext, callback: Callback<NavDestinationSwitchInfo> )),this API supports the **observerOptions** parameter, which enables you to configure observation options. |
 
 ### Classes
 
@@ -77,7 +77,7 @@ import { uiObserver } from '@kit.ArkUI';
 | Name | Description |
 | --- | --- |
 | [NavDestinationState](arkts-arkui-uiobserver-navdestinationstate-e.md) | Describes the state of the **NavDestination** component. |
-| [RouterPageState](arkts-arkui-uiobserver-routerpagestate-e.md) | Enumerates the states of a page during routing. **RouterPageState** is used in [RouterPageInfo](arkts-arkui-uiobserver-routerpageinfo-c.md) as the callback parameter for passive observation via [routerPageUpdate](uiObserver.on(type: 'routerPageUpdate', context: UIAbilityContext \| UIContext, callback: Callback&lt;RouterPageInfo&gt;)). |
+| [RouterPageState](arkts-arkui-uiobserver-routerpagestate-e.md) | Enumerates the states of a page during routing. **RouterPageState** is used in [RouterPageInfo](arkts-arkui-uiobserver-routerpageinfo-c.md) as the callback parameter for passive observation via [routerPageUpdate](uiObserver.on(type: 'routerPageUpdate', context: UIAbilityContext \| UIContext, callback: Callback<RouterPageInfo>)). |
 | [ScrollEventType](arkts-arkui-uiobserver-scrolleventtype-e.md) | ScrollEvent type. |
 | [TabContentState](arkts-arkui-uiobserver-tabcontentstate-e.md) | TabContent state. |
 

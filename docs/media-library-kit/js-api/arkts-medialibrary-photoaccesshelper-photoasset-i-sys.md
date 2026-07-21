@@ -14,6 +14,7 @@ PhotoAsset provides APIs for encapsulating file asset attributes.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="cancelphotorequest"></a>
 ## cancelPhotoRequest
 
 ```TypeScript
@@ -86,6 +87,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="commiteditedasset"></a>
 ## commitEditedAsset
 
 ```TypeScript
@@ -116,7 +118,7 @@ The edited file is transferred to the media library based on the URI, which is *
 | --- | --- | --- | --- |
 | editData | string | Yes | New data to commit. |
 | uri | string | Yes | URI of the committed image or video in the application sandbox. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -127,6 +129,7 @@ The edited file is transferred to the media library based on the URI, which is *
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="commiteditedasset-1"></a>
 ## commitEditedAsset
 
 ```TypeScript
@@ -162,7 +165,7 @@ The edited file is transferred to the media library based on the URI, which is *
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -201,6 +204,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="convertimageformat"></a>
 ## convertImageFormat
 
 ```TypeScript
@@ -230,7 +234,7 @@ Duplicates an image within the same album (either user-created or application-sp
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset> | Promise used to return the PhotoAsset instance representing the new image file. |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the PhotoAsset instance representing the new image file. |
 
 **Error codes:**
 
@@ -266,6 +270,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="createtemporarycompatibleduplicate"></a>
 ## createTemporaryCompatibleDuplicate
 
 ```TypeScript
@@ -288,7 +293,7 @@ Creates a JPEG-compatible copy for a third-party application that does not suppo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -323,6 +328,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getanalysisdata"></a>
 ## getAnalysisData
 
 ```TypeScript
@@ -351,7 +357,7 @@ Obtains analysis data. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns analysis info into a json string |
+| Promise&lt;string&gt; | Returns analysis info into a json string |
 
 **Error codes:**
 
@@ -392,6 +398,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="geteditdata"></a>
 ## getEditData
 
 ```TypeScript
@@ -416,7 +423,7 @@ If the asset has never been edited, an empty string is returned.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MediaAssetEditData> | Promise used to return the edited asset data. |
+| Promise&lt;MediaAssetEditData&gt; | Promise used to return the edited asset data. |
 
 **Error codes:**
 
@@ -454,6 +461,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getexif"></a>
 ## getExif
 
 ```TypeScript
@@ -484,7 +492,7 @@ The Exif data obtained are provided by the [image](../../apis-image-kit/arkts-ap
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the Exif data, in JSON strings. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the Exif data, in JSON strings. |
 
 **Error codes:**
 
@@ -532,6 +540,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getexif-1"></a>
 ## getExif
 
 ```TypeScript
@@ -562,7 +571,7 @@ The Exif data obtained are provided by the [image](../../apis-image-kit/arkts-ap
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the Exif data, in JSON strings. |
+| Promise&lt;string&gt; | Promise used to return the Exif data, in JSON strings. |
 
 **Error codes:**
 
@@ -603,6 +612,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getkeyframethumbnail"></a>
 ## getKeyFrameThumbnail
 
 ```TypeScript
@@ -632,7 +642,7 @@ Obtains the thumbnail of the specified type for the key frame. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the PixelMap of the thumbnail obtained. The cover frame is returned by default if no thumbnail is obtained. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the PixelMap of the thumbnail obtained. The cover frame is returned by default if no thumbnail is obtained. |
 
 **Error codes:**
 
@@ -673,6 +683,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="getthumbnaildata"></a>
 ## getThumbnailData
 
 ```TypeScript
@@ -701,7 +712,7 @@ Obtains the ArrayBuffer of a file thumbnail by specifying its type. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise used to return the ArrayBuffer of the thumbnail. |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the ArrayBuffer of the thumbnail. |
 
 **Error codes:**
 
@@ -737,6 +748,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="isedited"></a>
 ## isEdited
 
 ```TypeScript
@@ -759,7 +771,7 @@ Checks whether this image or video asset is edited. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result indicating whether the image or video asset is edited. **true** if edited, **false** otherwise. The default value is **false**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result indicating whether the image or video asset is edited. **true** if edited, **false** otherwise. The default value is **false**. |
 
 **Error codes:**
 
@@ -805,6 +817,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="isedited-1"></a>
 ## isEdited
 
 ```TypeScript
@@ -827,7 +840,7 @@ Checks whether this image or video asset is edited. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result indicating whether the image or video asset is edited. **true** if edited, **false** otherwise. The default value is **false**. |
+| Promise&lt;boolean&gt; | Promise used to return the result indicating whether the image or video asset is edited. **true** if edited, **false** otherwise. The default value is **false**. |
 
 **Error codes:**
 
@@ -868,6 +881,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="open"></a>
 ## open
 
 ```TypeScript
@@ -902,7 +916,7 @@ The returned FD must be closed when it is not required.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | string | Yes | Mode for opening the file, which can be **'r'** (read-only), **'w'** (write-only), or **'rw'** (read/write). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the file descriptor (FD) of the file opened. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the file descriptor (FD) of the file opened. |
 
 **Error codes:**
 
@@ -935,6 +949,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="open-1"></a>
 ## open
 
 ```TypeScript
@@ -974,7 +989,7 @@ The returned FD must be closed when it is not required.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the FD of the file opened. |
+| Promise&lt;number&gt; | Promise used to return the FD of the file opened. |
 
 **Error codes:**
 
@@ -1010,6 +1025,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="requesteditdata"></a>
 ## requestEditData
 
 ```TypeScript
@@ -1034,7 +1050,7 @@ If the asset has never been edited, an empty string is returned.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the edit data obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the edit data obtained. |
 
 **Error codes:**
 
@@ -1076,6 +1092,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="requesteditdata-1"></a>
 ## requestEditData
 
 ```TypeScript
@@ -1100,7 +1117,7 @@ If the asset has never been edited, an empty string is returned.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the edit data obtained. |
+| Promise&lt;string&gt; | Promise used to return the edit data obtained. |
 
 **Error codes:**
 
@@ -1137,6 +1154,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="requestphoto"></a>
 ## requestPhoto
 
 ```TypeScript
@@ -1161,7 +1179,7 @@ The size of a quick thumbnail is 128 x 128, and the size of a quality thumbnail 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback invoked twice to return the quick and quality thumbnails obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback invoked twice to return the quick and quality thumbnails obtained. |
 
 **Return value:**
 
@@ -1210,6 +1228,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="requestphoto-1"></a>
 ## requestPhoto
 
 ```TypeScript
@@ -1233,7 +1252,7 @@ Obtains the thumbnails of an asset based on the specified options. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [RequestPhotoOptions](arkts-medialibrary-photoaccesshelper-requestphotooptions-i-sys.md) | Yes | Options for obtaining the asset thumbnail. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return the thumbnails obtained. The callback may be invoked more than once, depending on **options**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return the thumbnails obtained. The callback may be invoked more than once, depending on **options**. |
 
 **Return value:**
 
@@ -1288,6 +1307,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="requestsource"></a>
 ## requestSource
 
 ```TypeScript
@@ -1310,7 +1330,7 @@ Opens the source file and returns the FD. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the FD. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the FD. |
 
 **Error codes:**
 
@@ -1352,6 +1372,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="requestsource-1"></a>
 ## requestSource
 
 ```TypeScript
@@ -1374,7 +1395,7 @@ Opens the source file and returns the FD. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the FD. |
+| Promise&lt;number&gt; | Promise used to return the FD. |
 
 **Error codes:**
 
@@ -1411,6 +1432,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="reverttooriginal"></a>
 ## revertToOriginal
 
 ```TypeScript
@@ -1438,7 +1460,7 @@ Reverts to the state of the file before being edited. This API uses an asynchron
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -1449,6 +1471,7 @@ Reverts to the state of the file before being edited. This API uses an asynchron
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | 14000011 | System inner fail |
 
+<a id="reverttooriginal-1"></a>
 ## revertToOriginal
 
 ```TypeScript
@@ -1476,7 +1499,7 @@ Reverts to the state of the file before being edited. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1517,6 +1540,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setfavorite"></a>
 ## setFavorite
 
 ```TypeScript
@@ -1544,7 +1568,7 @@ Favorites or unfavorites this file asset. This API uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | favoriteState | boolean | Yes | Whether to favorite the file asset. **true** to favorite, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -1583,6 +1607,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setfavorite-1"></a>
 ## setFavorite
 
 ```TypeScript
@@ -1615,7 +1640,7 @@ Favorites or unfavorites this file asset. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1657,6 +1682,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="sethidden"></a>
 ## setHidden
 
 ```TypeScript
@@ -1686,7 +1712,7 @@ Private files are stored in the private album. After obtaining private files fro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | hiddenState | boolean | Yes | Whether to set a file to hidden state. **true** to hide, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -1725,6 +1751,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="sethidden-1"></a>
 ## setHidden
 
 ```TypeScript
@@ -1759,7 +1786,7 @@ Private files are stored in the private album. After obtaining private files fro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1800,6 +1827,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setpending"></a>
 ## setPending
 
 ```TypeScript
@@ -1830,7 +1858,7 @@ The pending state can be removed only through **setPending(false)**. You can use
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | pendingState | boolean | Yes | Whether to set the file to pending state. **true** to pend, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -1871,6 +1899,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setpending-1"></a>
 ## setPending
 
 ```TypeScript
@@ -1906,7 +1935,7 @@ The pending state can be removed only through **setPending(false)**. You can use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1937,6 +1966,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setusercomment"></a>
 ## setUserComment
 
 ```TypeScript
@@ -1964,7 +1994,7 @@ Sets user comment information of an image or video. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userComment | string | Yes | User comment information to set, which cannot exceed 420 characters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -2008,6 +2038,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setusercomment-1"></a>
 ## setUserComment
 
 ```TypeScript
@@ -2040,7 +2071,7 @@ Sets user comment information of an image or video. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

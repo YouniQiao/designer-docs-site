@@ -18,6 +18,7 @@ Provides the APIs for aperture settings. It inherits from [ApertureQuery](arkts-
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getphysicalaperture"></a>
 ## getPhysicalAperture
 
 ```TypeScript
@@ -50,6 +51,7 @@ Gets current physical aperture value.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 and later |
 
+<a id="getvirtualaperture"></a>
 ## getVirtualAperture
 
 ```TypeScript
@@ -89,6 +91,7 @@ function getVirtualAperture(session: camera.PortraitPhotoSession): number {
 
 ```
 
+<a id="setphysicalaperture"></a>
 ## setPhysicalAperture
 
 ```TypeScript
@@ -121,6 +124,7 @@ Sets physical aperture value.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 and later |
 
+<a id="setvirtualaperture"></a>
 ## setVirtualAperture
 
 ```TypeScript

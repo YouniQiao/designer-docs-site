@@ -18,6 +18,7 @@ ProfessionalPhotoSession extends Session, AutoExposure, ManualExposure, Focus, M
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -56,6 +57,7 @@ function unregisterSessionError(professionalPhotoSession: camera.ProfessionalPho
 
 ```
 
+<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -77,7 +79,7 @@ Unsubscribes from focus state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | No | Callback used to return the result. This parameter is optional.If this parameter is specified, the subscription to the specified event **on('focusStateChange')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | No | Callback used to return the result. This parameter is optional.If this parameter is specified, the subscription to the specified event **on('focusStateChange')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
@@ -94,6 +96,7 @@ function unregisterFocusStateChange(professionalPhotoSession: camera.Professiona
 
 ```
 
+<a id="off-2"></a>
 ## off('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -115,7 +118,7 @@ Unsubscribes from smooth zoom state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SmoothZoomInfo> | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('smoothZoomInfoAvailable')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SmoothZoomInfo&gt; | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('smoothZoomInfoAvailable')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
@@ -132,6 +135,7 @@ function unregisterSmoothZoomInfo(professionalPhotoSession: camera.ProfessionalP
 
 ```
 
+<a id="off-3"></a>
 ## off('isoInfoChange')
 
 ```TypeScript
@@ -153,7 +157,7 @@ Unsubscribes from automatic ISO change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'isoInfoChange' | Yes | Event type. The value is fixed at **'isoInfoChange'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<IsoInfo> | No | Callback, which is optional and is used to match **callback** in **on('isoInfoChange')**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;IsoInfo&gt; | No | Callback, which is optional and is used to match **callback** in **on('isoInfoChange')**. |
 
 **Error codes:**
 
@@ -170,6 +174,7 @@ function unregisterIsoInfoEvent(professionalPhotoSession: camera.ProfessionalPho
 
 ```
 
+<a id="off-4"></a>
 ## off('exposureInfoChange')
 
 ```TypeScript
@@ -191,7 +196,7 @@ Unsubscribes from exposure information change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'exposureInfoChange' | Yes | Event type. The value is fixed at **'exposureInfoChange'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ExposureInfo> | No | Callback, which is optional and is used to match **callback** in **on('exposureInfoChange')**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ExposureInfo&gt; | No | Callback, which is optional and is used to match **callback** in **on('exposureInfoChange')**. |
 
 **Error codes:**
 
@@ -208,6 +213,7 @@ function unregisterExposureInfoEvent(professionalPhotoSession: camera.Profession
 
 ```
 
+<a id="off-5"></a>
 ## off('apertureInfoChange')
 
 ```TypeScript
@@ -229,7 +235,7 @@ Unsubscribes from aperture change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'apertureInfoChange' | Yes | Event type. The value is fixed at **'apertureInfoChange'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ApertureInfo> | No | Callback, which is optional and is used to match **callback** in **on('apertureInfoChange')**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ApertureInfo&gt; | No | Callback, which is optional and is used to match **callback** in **on('apertureInfoChange')**. |
 
 **Error codes:**
 
@@ -246,6 +252,7 @@ function unregisterApertureInfoEvent(professionalPhotoSession: camera.Profession
 
 ```
 
+<a id="off-6"></a>
 ## off('luminationInfoChange')
 
 ```TypeScript
@@ -267,7 +274,7 @@ Unsubscribes from illumination change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'luminationInfoChange' | Yes | Event type. The value is fixed at **'luminationInfoChange'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<LuminationInfo> | No | Callback, which is optional and is used to match **callback** in **on('luminationInfoChange')**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;LuminationInfo&gt; | No | Callback, which is optional and is used to match **callback** in **on('luminationInfoChange')**. |
 
 **Error codes:**
 
@@ -284,6 +291,7 @@ function unregisterLuminationInfoEvent(professionalPhotoSession: camera.Professi
 
 ```
 
+<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -304,7 +312,7 @@ Subscribes to HighResolutionPhotoSession error events. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-2), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
@@ -328,6 +336,7 @@ function registerSessionError(professionalPhotoSession: camera.ProfessionalPhoto
 
 ```
 
+<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -349,7 +358,7 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. This event is triggered only when the camera focus state changes in auto focus mode. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | Yes | Callback used to return the focus state change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | Yes | Callback used to return the focus state change. |
 
 **Error codes:**
 
@@ -376,6 +385,7 @@ function registerFocusStateChange(professionalPhotoSession: camera.ProfessionalP
 
 ```
 
+<a id="on-2"></a>
 ## on('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -397,7 +407,7 @@ Subscribes to smooth zoom state change events. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SmoothZoomInfo> | Yes | Callback used to return the smooth zoom state change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SmoothZoomInfo&gt; | Yes | Callback used to return the smooth zoom state change. |
 
 **Error codes:**
 
@@ -424,6 +434,7 @@ function registerSmoothZoomInfo(professionalPhotoSession: camera.ProfessionalPho
 
 ```
 
+<a id="on-3"></a>
 ## on('isoInfoChange')
 
 ```TypeScript
@@ -445,7 +456,7 @@ Subscribes to automatic ISO change events to obtain real-time ISO information. T
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'isoInfoChange' | Yes | Event type. The value is fixed at **'isoInfoChange'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<IsoInfo> | Yes | Callback used to return the ISO information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;IsoInfo&gt; | Yes | Callback used to return the ISO information. |
 
 **Error codes:**
 
@@ -472,6 +483,7 @@ function registerIsoInfoEvent(professionalPhotoSession: camera.ProfessionalPhoto
 
 ```
 
+<a id="on-4"></a>
 ## on('exposureInfoChange')
 
 ```TypeScript
@@ -493,7 +505,7 @@ Subscribes to exposure information change events to obtain the exposure informat
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'exposureInfoChange' | Yes | Event type. The value is fixed at **'exposureInfoChange'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ExposureInfo> | Yes | Callback used to return the exposure information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ExposureInfo&gt; | Yes | Callback used to return the exposure information. |
 
 **Error codes:**
 
@@ -520,6 +532,7 @@ function registerExposureInfoEvent(professionalPhotoSession: camera.Professional
 
 ```
 
+<a id="on-5"></a>
 ## on('apertureInfoChange')
 
 ```TypeScript
@@ -541,7 +554,7 @@ Subscribes to aperture change events to obtain the real-time aperture informatio
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'apertureInfoChange' | Yes | Event type. The value is fixed at **'apertureInfoChange'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ApertureInfo> | Yes | Callback used to return the aperture information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ApertureInfo&gt; | Yes | Callback used to return the aperture information. |
 
 **Error codes:**
 
@@ -568,6 +581,7 @@ function registerApertureInfoEvent(professionalPhotoSession: camera.Professional
 
 ```
 
+<a id="on-6"></a>
 ## on('luminationInfoChange')
 
 ```TypeScript
@@ -589,7 +603,7 @@ Subscribes to illumination change events to obtain real-time illumination inform
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'luminationInfoChange' | Yes | Event type. The value is fixed at **'luminationInfoChange'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<LuminationInfo> | Yes | Callback used to return the illumination information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;LuminationInfo&gt; | Yes | Callback used to return the illumination information. |
 
 **Error codes:**
 

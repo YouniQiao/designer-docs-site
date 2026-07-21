@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="setappnet"></a>
 ## setAppNet
 
 ```TypeScript
@@ -27,7 +28,7 @@ Binds a process to {@code NetHandle}.<p>All the sockets created from the process
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | netHandle | [NetHandle](arkts-network-connection-nethandle-i.md) | Yes | Indicates the handle. For details, see {@link NetHandle}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setAppNet. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setAppNet. |
 
 **Error codes:**
 
@@ -92,6 +93,7 @@ netCon.register((error: BusinessError) => {
 ```
 
 
+<a id="setappnet-1"></a>
 ## setAppNet
 
 ```TypeScript
@@ -118,7 +120,7 @@ Binds a process to {@code NetHandle}.<p>All the sockets created from the process
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

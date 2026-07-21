@@ -6,6 +6,7 @@
 import { bundle } from '@kit.AbilityKit';
 ```
 
+<a id="getbundlearchiveinfo"></a>
 ## getBundleArchiveInfo
 
 ```TypeScript
@@ -28,9 +29,10 @@ Obtains information about the bundles contained in a HAP file. This API uses an 
 | --- | --- | --- | --- |
 | hapFilePath | string | Yes | Path where the HAP file is stored. The absolute path of the application and the data directory sandbox path are supported. |
 | bundleFlags | number | Yes | Flags used to specify information contained in the BundleInfo object that will be returned. For details about the available enumerated values, see the bundle information flags in [BundleFlag](arkts-ability-bundle-bundleflag-e.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<BundleInfo> | Yes | Callback used to return the information about the bundles. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;BundleInfo&gt; | Yes | Callback used to return the information about the bundles. |
 
 
+<a id="getbundlearchiveinfo-1"></a>
 ## getBundleArchiveInfo
 
 ```TypeScript
@@ -58,5 +60,5 @@ Obtains information about the bundles contained in a HAP file. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BundleInfo> | - Returns the BundleInfo object. |
+| Promise&lt;BundleInfo&gt; | - Returns the BundleInfo object. |
 

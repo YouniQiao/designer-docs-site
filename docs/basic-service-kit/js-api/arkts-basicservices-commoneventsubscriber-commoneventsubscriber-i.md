@@ -8,6 +8,7 @@ The **CommonEventSubscriber** module provides APIs for describing the common eve
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
+<a id="abortcommonevent"></a>
 ## abortCommonEvent
 
 ```TypeScript
@@ -26,7 +27,7 @@ Aborts an ordered common event. This API is used with [finishCommonEvent](arkts-
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -34,6 +35,7 @@ Aborts an ordered common event. This API is used with [finishCommonEvent](arkts-
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="abortcommonevent-1"></a>
 ## abortCommonEvent
 
 ```TypeScript
@@ -52,8 +54,9 @@ Aborts this ordered common event. This API is used with [finishCommonEvent](arkt
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="abortcommoneventsync"></a>
 ## abortCommonEventSync
 
 ```TypeScript
@@ -68,6 +71,7 @@ Aborts this ordered common event synchronously. This API is used with [finishCom
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
+<a id="clearabortcommonevent"></a>
 ## clearAbortCommonEvent
 
 ```TypeScript
@@ -86,7 +90,7 @@ Clears the abort state of an ordered common event. Use this API together with [f
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -94,6 +98,7 @@ Clears the abort state of an ordered common event. Use this API together with [f
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="clearabortcommonevent-1"></a>
 ## clearAbortCommonEvent
 
 ```TypeScript
@@ -112,8 +117,9 @@ Clears the abort state of this ordered common event. Use this API together with 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="clearabortcommoneventsync"></a>
 ## clearAbortCommonEventSync
 
 ```TypeScript
@@ -128,6 +134,7 @@ Clears the abort state of this ordered common event. Use this API together with 
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
+<a id="finishcommonevent"></a>
 ## finishCommonEvent
 
 ```TypeScript
@@ -146,7 +153,7 @@ Finishes this ordered common event. This API uses an asynchronous callback to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -154,6 +161,7 @@ Finishes this ordered common event. This API uses an asynchronous callback to re
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="finishcommonevent-1"></a>
 ## finishCommonEvent
 
 ```TypeScript
@@ -172,8 +180,9 @@ Finishes this ordered common event. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="getabortcommonevent"></a>
 ## getAbortCommonEvent
 
 ```TypeScript
@@ -192,7 +201,7 @@ Checks whether this ordered common event should be aborted. This API uses an asy
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. Returns **true** if the ordered common event is in the abort state; returns **false** otherwise. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. Returns **true** if the ordered common event is in the abort state; returns **false** otherwise. |
 
 **Error codes:**
 
@@ -200,6 +209,7 @@ Checks whether this ordered common event should be aborted. This API uses an asy
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="getabortcommonevent-1"></a>
 ## getAbortCommonEvent
 
 ```TypeScript
@@ -218,8 +228,9 @@ Checks whether this ordered common event should be aborted. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. Returns **true** if the ordered common event is in the abort state; returns **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if the ordered common event is in the abort state; returns **false** otherwise. |
 
+<a id="getabortcommoneventsync"></a>
 ## getAbortCommonEventSync
 
 ```TypeScript
@@ -240,6 +251,7 @@ Checks whether this ordered common event should be aborted.
 | --- | --- |
 | boolean | Returns **true** if the ordered common event is in the abort state; returns **false** otherwise. |
 
+<a id="getcode"></a>
 ## getCode
 
 ```TypeScript
@@ -260,7 +272,7 @@ Obtains the result code (number type) of an ordered common event. This API uses 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -268,6 +280,7 @@ Obtains the result code (number type) of an ordered common event. This API uses 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="getcode-1"></a>
 ## getCode
 
 ```TypeScript
@@ -288,8 +301,9 @@ Obtains the result code (number type) of an ordered common event. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
+<a id="getcodesync"></a>
 ## getCodeSync
 
 ```TypeScript
@@ -312,6 +326,7 @@ Obtains the result code (number type) of an ordered common event.
 | --- | --- |
 | number | Result code of an ordered common event. |
 
+<a id="getdata"></a>
 ## getData
 
 ```TypeScript
@@ -332,7 +347,7 @@ Obtains the result data (string type) of an ordered common event. This API uses 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -340,6 +355,7 @@ Obtains the result data (string type) of an ordered common event. This API uses 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="getdata-1"></a>
 ## getData
 
 ```TypeScript
@@ -360,8 +376,9 @@ Obtains the result data (string type) of an ordered common event. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. |
+| Promise&lt;string&gt; | Promise used to return the result. |
 
+<a id="getdatasync"></a>
 ## getDataSync
 
 ```TypeScript
@@ -384,6 +401,7 @@ Obtains the result data (string type) of an ordered common event.
 | --- | --- |
 | string | Result data of an ordered common event. |
 
+<a id="getsubscribeinfo"></a>
 ## getSubscribeInfo
 
 ```TypeScript
@@ -404,7 +422,7 @@ Obtains the subscriber information. This API uses an asynchronous callback to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<CommonEventSubscribeInfo> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;CommonEventSubscribeInfo&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -412,6 +430,7 @@ Obtains the subscriber information. This API uses an asynchronous callback to re
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="getsubscribeinfo-1"></a>
 ## getSubscribeInfo
 
 ```TypeScript
@@ -432,8 +451,9 @@ Obtains the subscriber information. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CommonEventSubscribeInfo> | Promise used to return the result. |
+| Promise&lt;CommonEventSubscribeInfo&gt; | Promise used to return the result. |
 
+<a id="getsubscribeinfosync"></a>
 ## getSubscribeInfoSync
 
 ```TypeScript
@@ -456,6 +476,7 @@ Obtains the subscriber information.
 | --- | --- |
 | [CommonEventSubscribeInfo](arkts-basicservices-commoneventmanager-commoneventsubscribeinfo-t.md) | Subscriber information. |
 
+<a id="isorderedcommonevent"></a>
 ## isOrderedCommonEvent
 
 ```TypeScript
@@ -474,7 +495,7 @@ Checks whether the current common event is an ordered common event. This API use
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. Returns **true** if the common event is an ordered one; returns **false** if the common event is an unordered one. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. Returns **true** if the common event is an ordered one; returns **false** if the common event is an unordered one. |
 
 **Error codes:**
 
@@ -482,6 +503,7 @@ Checks whether the current common event is an ordered common event. This API use
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="isorderedcommonevent-1"></a>
 ## isOrderedCommonEvent
 
 ```TypeScript
@@ -500,8 +522,9 @@ Checks whether the current common event is an ordered common event. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. Returns **true** if the common event is an ordered one; returns **false** if the common event is an unordered one. |
+| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if the common event is an ordered one; returns **false** if the common event is an unordered one. |
 
+<a id="isorderedcommoneventsync"></a>
 ## isOrderedCommonEventSync
 
 ```TypeScript
@@ -522,6 +545,7 @@ Checks whether the current common event is an ordered common event.
 | --- | --- |
 | boolean | Returns **true** if the common event is an ordered one; returns **false** if the common event is an unordered one. |
 
+<a id="isstickycommonevent"></a>
 ## isStickyCommonEvent
 
 ```TypeScript
@@ -540,7 +564,7 @@ Checks whether a common event is a sticky one. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. Returns **true** if the common event is a sticky one; returns **false** otherwise. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. Returns **true** if the common event is a sticky one; returns **false** otherwise. |
 
 **Error codes:**
 
@@ -548,6 +572,7 @@ Checks whether a common event is a sticky one. This API uses an asynchronous cal
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="isstickycommonevent-1"></a>
 ## isStickyCommonEvent
 
 ```TypeScript
@@ -566,8 +591,9 @@ Checks whether a common event is a sticky one. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. Returns **true** if the common event is a sticky one; returns **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if the common event is a sticky one; returns **false** otherwise. |
 
+<a id="isstickycommoneventsync"></a>
 ## isStickyCommonEventSync
 
 ```TypeScript
@@ -588,6 +614,7 @@ Checks whether a common event is a sticky one.
 | --- | --- |
 | boolean | Returns **true** if the common event is a sticky one; returns **false** otherwise. |
 
+<a id="setcode"></a>
 ## setCode
 
 ```TypeScript
@@ -609,7 +636,7 @@ Sets the result code (number type) of an ordered common event. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | code | number | Yes | Result code of an ordered common event. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -617,6 +644,7 @@ Sets the result code (number type) of an ordered common event. This API uses an 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setcode-1"></a>
 ## setCode
 
 ```TypeScript
@@ -643,7 +671,7 @@ Sets the result code (number type) of an ordered common event. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -651,6 +679,7 @@ Sets the result code (number type) of an ordered common event. This API uses a p
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setcodeanddata"></a>
 ## setCodeAndData
 
 ```TypeScript
@@ -673,7 +702,7 @@ Sets the result code and data of an ordered common event. This API uses an async
 | --- | --- | --- | --- |
 | code | number | Yes | Result code of an ordered common event. |
 | data | string | Yes | Result data of an ordered common event. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -681,6 +710,7 @@ Sets the result code and data of an ordered common event. This API uses an async
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setcodeanddata-1"></a>
 ## setCodeAndData
 
 ```TypeScript
@@ -708,7 +738,7 @@ Sets the result code and data of an ordered common event. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -716,6 +746,7 @@ Sets the result code and data of an ordered common event. This API uses a promis
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setcodeanddatasync"></a>
 ## setCodeAndDataSync
 
 ```TypeScript
@@ -745,6 +776,7 @@ Sets the result code and data of an ordered common event.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setcodesync"></a>
 ## setCodeSync
 
 ```TypeScript
@@ -773,6 +805,7 @@ Sets the result code (number type) of an ordered common event.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setdata"></a>
 ## setData
 
 ```TypeScript
@@ -794,7 +827,7 @@ Sets the result data (string type) of an ordered common event. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | string | Yes | Result data of an ordered common event. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -802,6 +835,7 @@ Sets the result data (string type) of an ordered common event. This API uses an 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setdata-1"></a>
 ## setData
 
 ```TypeScript
@@ -828,7 +862,7 @@ Sets the result data (string type) of an ordered common event. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -836,6 +870,7 @@ Sets the result data (string type) of an ordered common event. This API uses a p
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="setdatasync"></a>
 ## setDataSync
 
 ```TypeScript

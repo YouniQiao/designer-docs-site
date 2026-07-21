@@ -22,5 +22,5 @@ This callback function is implemented by applications to release related resourc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uuid | long | Yes | ID for the resource handle. |
+| uuid | number | Yes | ID for the resource handle.  |
 

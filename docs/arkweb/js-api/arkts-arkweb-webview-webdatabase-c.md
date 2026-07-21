@@ -20,6 +20,7 @@ Implements a **WebDataBase** object.
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="deletehttpauthcredentials"></a>
 ## deleteHttpAuthCredentials
 
 ```TypeScript
@@ -36,6 +37,7 @@ Deletes all HTTP authentication credentials saved in the cache. This API returns
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="existhttpauthcredentials"></a>
 ## existHttpAuthCredentials
 
 ```TypeScript
@@ -58,6 +60,7 @@ Checks whether any saved HTTP authentication credentials exist. This API returns
 | --- | --- |
 | boolean | Whether any saved HTTP authentication credentials exist.<br>**true** is returned if any saved HTTP authentication credentials exist; otherwise, **false** is returned. |
 
+<a id="gethttpauthcredentials"></a>
 ## getHttpAuthCredentials
 
 ```TypeScript
@@ -85,7 +88,7 @@ Retrieves HTTP authentication credentials for a given host and realm. This API r
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Array of the matching user names and passwords is returned if the operation is successful; otherwise, an empty array is returned. |
+| Array&lt;string&gt; | Array of the matching user names and passwords is returned if the operation is successful; otherwise, an empty array is returned. |
 
 **Error codes:**
 
@@ -93,6 +96,7 @@ Retrieves HTTP authentication credentials for a given host and realm. This API r
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="savehttpauthcredentials"></a>
 ## saveHttpAuthCredentials
 
 ```TypeScript

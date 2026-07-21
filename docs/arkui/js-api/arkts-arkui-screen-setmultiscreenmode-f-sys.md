@@ -6,6 +6,7 @@
 import { screen } from '@kit.ArkUI';
 ```
 
+<a id="setmultiscreenmode"></a>
 ## setMultiScreenMode
 
 ```TypeScript
@@ -37,7 +38,7 @@ Sets the display mode (mirror or extend) of the secondary screen. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

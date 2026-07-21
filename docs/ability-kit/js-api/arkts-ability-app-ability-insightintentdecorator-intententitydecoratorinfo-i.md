@@ -1,6 +1,6 @@
 # IntentEntityDecoratorInfo
 
-Describes the parameters supported by the [@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity)decorator.
+Describes the parameters supported by the [@InsightIntentEntity](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity)decorator.
 
 **Since:** 20
 
@@ -42,7 +42,7 @@ parameters?: Record<string, Object>
 
 Data format of the intent entity.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 20
 

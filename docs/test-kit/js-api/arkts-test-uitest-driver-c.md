@@ -14,6 +14,7 @@ The **Driver** class is the main entry to the UiTest framework. It provides APIs
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
+<a id="assertcomponentexist"></a>
 ## assertComponentExist
 
 ```TypeScript
@@ -40,7 +41,7 @@ Asserts whether a component matches the specified attributes exists on the curre
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ async function demo() {
 
 ```
 
+<a id="click"></a>
 ## click
 
 ```TypeScript
@@ -90,7 +92,7 @@ Clicks the target coordinate point. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -112,6 +114,7 @@ async function demo() {
 
 ```
 
+<a id="clickat"></a>
 ## clickAt
 
 ```TypeScript
@@ -138,7 +141,7 @@ Clicks the target coordinate point. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -160,6 +163,7 @@ async function demo() {
 
 ```
 
+<a id="clickatwithoptions"></a>
 ## clickAtWithOptions
 
 ```TypeScript
@@ -187,7 +191,7 @@ Click on the specified location on the screen, with optional touch options.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -196,6 +200,7 @@ Click on the specified location on the screen, with optional touch options.
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -236,6 +241,7 @@ async function demo() {
 
 ```
 
+<a id="createuieventobserver"></a>
 ## createUIEventObserver
 
 ```TypeScript
@@ -277,6 +283,7 @@ async function demo() {
 
 ```
 
+<a id="crownrotate"></a>
 ## crownRotate
 
 ```TypeScript
@@ -304,7 +311,7 @@ Injects a crown rotation event. You can specify the rotation speed. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -330,6 +337,7 @@ async function demo() {
 
 ```
 
+<a id="delayms"></a>
 ## delayMs
 
 ```TypeScript
@@ -350,13 +358,13 @@ Delays execution for the specified duration. This API uses a promise to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| duration | number | Yes | Specified time, in ms. The value is an integer greater than or equal to 0.<br>Unit: ms<br>Value range: The value should be &gt;= 0 |
+| duration | number | Yes | Specified time, in ms. The value is an integer greater than or equal to 0.<br>Unit: ms<br>Value range: The value should be >= 0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -378,6 +386,7 @@ async function demo() {
 
 ```
 
+<a id="doubleclick"></a>
 ## doubleClick
 
 ```TypeScript
@@ -405,7 +414,7 @@ Double-clicks the target coordinate point. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -427,6 +436,7 @@ async function demo() {
 
 ```
 
+<a id="doubleclickat"></a>
 ## doubleClickAt
 
 ```TypeScript
@@ -453,7 +463,7 @@ Double-clicks the target coordinate point. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -475,6 +485,7 @@ async function demo() {
 
 ```
 
+<a id="drag"></a>
 ## drag
 
 ```TypeScript
@@ -505,7 +516,7 @@ Drags from the start coordinate point to the target coordinate point. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -527,6 +538,7 @@ async function demo() {
 
 ```
 
+<a id="dragbetween"></a>
 ## dragBetween
 
 ```TypeScript
@@ -550,13 +562,13 @@ Drags from the start point to the target point. You can specify the drag speed a
 | from | [Point](arkts-test-uitest-point-i.md) | Yes | Point object, which transfers the coordinates of the start point and the ID of the display to which the start point belongs. |
 | to | [Point](arkts-test-uitest-point-i.md) | Yes | Point object, which transfers the coordinates of the target point and the ID of the display to which it belongs.<br> **Note**: The target point and the start point must be on the same screen. Otherwise, the **17000007** exception is thrown. |
 | speed | number | No | Drag speed, in px/s. The value ranges from 200 to 40000. If the set value is not in the range, the default value **600** is used.<br>Value range:[200, 40000]<br>Unit: px/s.<br>Throws error code 17000007 if negative.<br>Default value: 600 |
-| duration | number | No | The duration of the long press before dragging.<br>Value range: The value should be &gt;= 1500<br>Unit: ms<br>Default value: 1500 |
+| duration | number | No | The duration of the long press before dragging.<br>Value range: The value should be >= 1500<br>Unit: ms<br>Default value: 1500 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -578,6 +590,7 @@ async function demo() {
 
 ```
 
+<a id="dragbetweenwithoptions"></a>
 ## dragBetweenWithOptions
 
 ```TypeScript
@@ -606,7 +619,7 @@ Drag on the screen between the specified points with optional settings.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -615,6 +628,7 @@ Drag on the screen between the specified points with optional settings.
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
+<a id="dumplayout"></a>
 ## dumpLayout
 
 ```TypeScript
@@ -635,14 +649,14 @@ Get the current layout information and save as file with json format.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| savePath | string | Yes | the path where to store the json, must be in the application sandbox directory.The path must be the [sandbox path](../../../../file-management/app-sandbox-directory.md) of the current application. |
+| savePath | string | Yes | the path where to store the json, must be in the application sandbox directory.The path must be the [sandbox path](docroot://file-management/app-sandbox-directory.md) of the current application. |
 | displayId | number | No | the Id of the specified display, default is the displayId of the main screen. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | true if dump layout and file-storing are completed successfully,false otherwise. |
+| Promise&lt;boolean&gt; | true if dump layout and file-storing are completed successfully,false otherwise. |
 
 **Error codes:**
 
@@ -665,6 +679,7 @@ async function demo() {
 
 ```
 
+<a id="findcomponent"></a>
 ## findComponent
 
 ```TypeScript
@@ -691,7 +706,7 @@ Searches for the target component based on the specified attributes. This API us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Component> | - Promise used to return the {@link Component} or undefined. |
+| Promise&lt;Component&gt; | - Promise used to return the {@link Component} or undefined. |
 
 **Error codes:**
 
@@ -713,6 +728,7 @@ async function demo() {
 
 ```
 
+<a id="findcomponents"></a>
 ## findComponents
 
 ```TypeScript
@@ -739,7 +755,7 @@ Searches for all matched components based on the specified attributes and saves 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Component>> | - Promise used to return the list of {@link Component}s. |
+| Promise&lt;Array&lt;Component&gt;&gt; | - Promise used to return the list of {@link Component}s. |
 
 **Error codes:**
 
@@ -761,6 +777,7 @@ async function demo() {
 
 ```
 
+<a id="findwindow"></a>
 ## findWindow
 
 ```TypeScript
@@ -787,7 +804,7 @@ Searches for a window based on the specified attributes. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UiWindow> | - Promise used to return the target {@link UiWindow}. |
+| Promise&lt;UiWindow&gt; | - Promise used to return the target {@link UiWindow}. |
 
 **Error codes:**
 
@@ -809,6 +826,7 @@ async function demo() {
 
 ```
 
+<a id="fling"></a>
 ## fling
 
 ```TypeScript
@@ -838,7 +856,7 @@ Simulates a fling operation. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -860,6 +878,7 @@ async function demo() {
 
 ```
 
+<a id="fling-1"></a>
 ## fling
 
 ```TypeScript
@@ -887,7 +906,7 @@ Simulates a fling operation with the specified direction and speed. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -909,6 +928,7 @@ async function demo() {
 
 ```
 
+<a id="fling-2"></a>
 ## fling
 
 ```TypeScript
@@ -937,7 +957,7 @@ Simulates a fling operation on a specified display with the specified direction 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -959,6 +979,7 @@ async function demo() {
 
 ```
 
+<a id="getdisplaydensity"></a>
 ## getDisplayDensity
 
 ```TypeScript
@@ -979,7 +1000,7 @@ Obtains the display density of the current device. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Point> | Promise used to return the **Point** object. The density of the current device display is **Point.x*Point.y**. |
+| Promise&lt;Point&gt; | Promise used to return the **Point** object. The density of the current device display is **Point.x*Point.y**. |
 
 **Error codes:**
 
@@ -1000,6 +1021,7 @@ async function demo() {
 
 ```
 
+<a id="getdisplaydensity-1"></a>
 ## getDisplayDensity
 
 ```TypeScript
@@ -1026,7 +1048,7 @@ Obtains the density of the specified display of the current device. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Point> | Promise used to return the **Point** object. The density of the specified display is **Point.x*Point.y**. |
+| Promise&lt;Point&gt; | Promise used to return the **Point** object. The density of the specified display is **Point.x*Point.y**. |
 
 **Error codes:**
 
@@ -1048,6 +1070,7 @@ async function demo() {
 
 ```
 
+<a id="getdisplayrotation"></a>
 ## getDisplayRotation
 
 ```TypeScript
@@ -1068,7 +1091,7 @@ Obtains the display rotation of the current device. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DisplayRotation> | - Promise used to return the display rotation of the current device. |
+| Promise&lt;DisplayRotation&gt; | - Promise used to return the display rotation of the current device. |
 
 **Error codes:**
 
@@ -1089,6 +1112,7 @@ async function demo() {
 
 ```
 
+<a id="getdisplayrotation-1"></a>
 ## getDisplayRotation
 
 ```TypeScript
@@ -1115,7 +1139,7 @@ Obtains the display rotation of the specified device. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DisplayRotation> | - Promise used to return the display rotation of the specified device. |
+| Promise&lt;DisplayRotation&gt; | - Promise used to return the display rotation of the specified device. |
 
 **Error codes:**
 
@@ -1137,6 +1161,7 @@ async function demo() {
 
 ```
 
+<a id="getdisplaysize"></a>
 ## getDisplaySize
 
 ```TypeScript
@@ -1157,7 +1182,7 @@ Obtains the display size of the current device. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Point> | - Promise used to return the **Point** object.The size of the current device screen is **Point.x * Point.y**. |
+| Promise&lt;Point&gt; | - Promise used to return the **Point** object.The size of the current device screen is **Point.x * Point.y**. |
 
 **Error codes:**
 
@@ -1178,6 +1203,7 @@ async function demo() {
 
 ```
 
+<a id="getdisplaysize-1"></a>
 ## getDisplaySize
 
 ```TypeScript
@@ -1204,7 +1230,7 @@ Obtains the size of the specified display on the current device. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Point> | Promise used to return the **Point** object. The size of the specified display is **Point.x * Point.y**. |
+| Promise&lt;Point&gt; | Promise used to return the **Point** object. The size of the specified display is **Point.x * Point.y**. |
 
 **Error codes:**
 
@@ -1226,6 +1252,7 @@ async function demo() {
 
 ```
 
+<a id="injectknucklepointeraction"></a>
 ## injectKnucklePointerAction
 
 ```TypeScript
@@ -1257,7 +1284,7 @@ Simulates a multi-point knuckle scrolling operation. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1288,6 +1315,7 @@ async function demo() {
 
 ```
 
+<a id="injectmultipointeraction"></a>
 ## injectMultiPointerAction
 
 ```TypeScript
@@ -1315,7 +1343,7 @@ Injects a multi-finger operation into a device. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the operation is successful.The value **true** indicates that the operation is successful, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the operation is successful.The value **true** indicates that the operation is successful, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1348,6 +1376,7 @@ async function demo() {
 
 ```
 
+<a id="injectpenpointeraction"></a>
 ## injectPenPointerAction
 
 ```TypeScript
@@ -1376,7 +1405,7 @@ Simulates a continuous multi-point pen injection operation. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1402,6 +1431,7 @@ async function demo() {
 
 ```
 
+<a id="inputtext"></a>
 ## inputText
 
 ```TypeScript
@@ -1429,7 +1459,7 @@ Inputs text at a specified coordinate without clearing the original text in the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1453,6 +1483,7 @@ async function demo() {
 
 ```
 
+<a id="inputtext-1"></a>
 ## inputText
 
 ```TypeScript
@@ -1481,7 +1512,7 @@ Inputs text at a specified coordinate point in a specified input mode. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1514,6 +1545,7 @@ async function demo_Chinese() {
 
 ```
 
+<a id="iscomponentpresentwhendrag"></a>
 ## isComponentPresentWhenDrag
 
 ```TypeScript
@@ -1538,13 +1570,13 @@ Drags from the start point to the end point and checks whether the target compon
 | from | [Point](arkts-test-uitest-point-i.md) | Yes | Point object, which transfers the coordinates of the start point and the ID of the display to which the start point belongs. |
 | to | [Point](arkts-test-uitest-point-i.md) | Yes | Point object, which transfers the coordinates of the target point and the ID of the display to which it belongs.<br> **Note**: The target point and the start point must be on the same screen. Otherwise, the **17000007** exception is thrown. |
 | speed | number | No | Drag speed.<br>Value range:[200, 40000]<br>Throws error code 17000007 if negative.<br>Default value: 600 |
-| duration | number | No | The duration of the long press before dragging.<br>Value range: The value should be &gt;= 1500<br>Default value: 1500 |
+| duration | number | No | The duration of the long press before dragging.<br>Value range: The value should be >= 1500<br>Default value: 1500 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the target component exists during the dragging operation. The value **true** indicates that the target component exists, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the target component exists during the dragging operation. The value **true** indicates that the target component exists, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1566,6 +1598,7 @@ async function demo() {
 
 ```
 
+<a id="iscomponentpresentwhenlongclick"></a>
 ## isComponentPresentWhenLongClick
 
 ```TypeScript
@@ -1588,13 +1621,13 @@ Long-clicks at the specified coordinates and checks whether the target component
 | --- | --- | --- | --- |
 | on | [On](arkts-test-uitest-on-c.md) | Yes | Attributes of the target {@link Component}. |
 | point | [Point](arkts-test-uitest-point-i.md) | Yes | Coordinates of the long-clicked point. |
-| duration | number | No | Long-click duration.<br>Value range: The value should be &gt;= 1500<br>Default value: 1500 |
+| duration | number | No | Long-click duration.<br>Value range: The value should be >= 1500<br>Default value: 1500 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the target component exists during a long-click operation. The value **true** indicates that the target component exists, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the target component exists during a long-click operation. The value **true** indicates that the target component exists, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1616,6 +1649,7 @@ async function demo() {
 
 ```
 
+<a id="iscomponentpresentwhenswipe"></a>
 ## isComponentPresentWhenSwipe
 
 ```TypeScript
@@ -1645,7 +1679,7 @@ Swipes from the start point to the end point and checks whether the target compo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the target component exists during the swiping operation.The value **true** indicates that the target component exists, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the target component exists during the swiping operation.The value **true** indicates that the target component exists, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1667,6 +1701,7 @@ async function demo() {
 
 ```
 
+<a id="knuckleknock"></a>
 ## knuckleKnock
 
 ```TypeScript
@@ -1691,14 +1726,14 @@ Simulates a knuckle knock on the display. This API uses a promise to return the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pointers | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Point> | Yes | Array of knuckle knock coordinates on the display. The array length can be 1 or 2. |
+| pointers | Array&lt;Point&gt; | Yes | Array of knuckle knock coordinates on the display. The array length can be 1 or 2. |
 | times | number | Yes | Number of consecutive knocks on the display.<br>Value range:[1,2] |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1723,6 +1758,7 @@ async function demo() {
 
 ```
 
+<a id="longclick"></a>
 ## longClick
 
 ```TypeScript
@@ -1750,7 +1786,7 @@ Long-clicks the target coordinate point. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1772,6 +1808,7 @@ async function demo() {
 
 ```
 
+<a id="longclickat"></a>
 ## longClickAt
 
 ```TypeScript
@@ -1793,13 +1830,13 @@ Long-clicks the target coordinate point for a specified duration. This API uses 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | point | [Point](arkts-test-uitest-point-i.md) | Yes | Point object, which is used to transfer the target point information. |
-| duration | number | No | Long-click duration, in ms.<br>Value range: The value should be &gt;= 1500<br>Unit: ms<br>Default value: 1500 |
+| duration | number | No | Long-click duration, in ms.<br>Value range: The value should be >= 1500<br>Unit: ms<br>Default value: 1500 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1821,6 +1858,7 @@ async function demo() {
 
 ```
 
+<a id="longclickatwithoptions"></a>
 ## longClickAtWithOptions
 
 ```TypeScript
@@ -1848,7 +1886,7 @@ LongClick on the specified location on the screen, with optional touch settings.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1857,6 +1895,7 @@ LongClick on the specified location on the screen, with optional touch settings.
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
+<a id="mouseclick"></a>
 ## mouseClick
 
 ```TypeScript
@@ -1886,7 +1925,7 @@ Injects a mouse click action at the specified coordinates, with the optional key
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1908,6 +1947,7 @@ async function demo() {
 
 ```
 
+<a id="mousedoubleclick"></a>
 ## mouseDoubleClick
 
 ```TypeScript
@@ -1937,7 +1977,7 @@ Injects a double-click action at the specified coordinates, with the optional ke
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -1959,6 +1999,7 @@ async function demo() {
 
 ```
 
+<a id="mousedrag"></a>
 ## mouseDrag
 
 ```TypeScript
@@ -1987,7 +2028,7 @@ Drags the mouse pointer from the start point to the end point. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2009,6 +2050,7 @@ async function demo() {
 
 ```
 
+<a id="mousedrag-1"></a>
 ## mouseDrag
 
 ```TypeScript
@@ -2032,13 +2074,13 @@ Drags the mouse from the start point to the end point. You can specify the dragg
 | from | [Point](arkts-test-uitest-point-i.md) | Yes | Coordinates of the start point. |
 | to | [Point](arkts-test-uitest-point-i.md) | Yes | Coordinates of the end point. |
 | speed | number | No | Speed of mouse drag.<br>Value range:[200, 40000]<br>Unit: px/s.<br>Throws error code 401 if negative.<br>Default value: 600 |
-| duration | number | No | The duration of the long press before dragging.<br>Value range: The value should be &gt;= 1500<br>Unit: ms<br>Default value: 1500 |
+| duration | number | No | The duration of the long press before dragging.<br>Value range: The value should be >= 1500<br>Unit: ms<br>Default value: 1500 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2060,6 +2102,7 @@ async function demo() {
 
 ```
 
+<a id="mousedragwithoptions"></a>
 ## mouseDragWithOptions
 
 ```TypeScript
@@ -2089,7 +2132,7 @@ Hold down the left mouse button and drag on the screen between the specified poi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2098,6 +2141,7 @@ Hold down the left mouse button and drag on the screen between the specified poi
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
+<a id="mouselongclick"></a>
 ## mouseLongClick
 
 ```TypeScript
@@ -2127,7 +2171,7 @@ Injects a mouse long-click action at the specified coordinates, with the optiona
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2149,6 +2193,7 @@ async function demo() {
 
 ```
 
+<a id="mouselongclick-1"></a>
 ## mouseLongClick
 
 ```TypeScript
@@ -2173,13 +2218,13 @@ Injects a mouse long-click action at the specified coordinates, with the optiona
 | btnId | [MouseButton](arkts-test-uitest-mousebutton-e.md) | Yes | Mouse button pressed. |
 | key1 | number | No | First key value. The value is an integer greater than or equal to 0.For details, see [KeyCode](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keycode-keycode-e.md).<br>Default value: 0 |
 | key2 | number | No | Second key value. The value is an integer greater than or equal to 0.For details, see [KeyCode](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keycode-keycode-e.md).<br>Default value: 0 |
-| duration | number | No | Long-click duration.<br>Value range: The value should be &gt;= 1500<br>Unit: ms<br>Default value: 1500 |
+| duration | number | No | Long-click duration.<br>Value range: The value should be >= 1500<br>Unit: ms<br>Default value: 1500 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2201,6 +2246,7 @@ async function demo() {
 
 ```
 
+<a id="mousemoveto"></a>
 ## mouseMoveTo
 
 ```TypeScript
@@ -2227,7 +2273,7 @@ Moves the mouse cursor to the target point. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2249,6 +2295,7 @@ async function demo() {
 
 ```
 
+<a id="mousemovewithtrack"></a>
 ## mouseMoveWithTrack
 
 ```TypeScript
@@ -2277,7 +2324,7 @@ Moves the mouse pointer from the start point to the end point. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2299,6 +2346,7 @@ async function demo() {
 
 ```
 
+<a id="mousescroll"></a>
 ## mouseScroll
 
 ```TypeScript
@@ -2321,7 +2369,7 @@ Injects a mouse scroll action at the specified coordinates, with the optional ke
 | --- | --- | --- | --- |
 | p | [Point](arkts-test-uitest-point-i.md) | Yes | Coordinates of the mouse click. |
 | down | boolean | Yes | Whether the mouse wheel scrolls downward. The value **true** indicates the mouse wheel scrolls downward, and **false** indicates the mouse wheel scrolls upward. |
-| d | number | Yes | Number of ticks scrolled by the mouse wheel. A tick indicates a 120 px shift to the target point.The value is an integer greater than or equal to 0.<br>Value range: The value should be &gt;= 0<br>Unit: px |
+| d | number | Yes | Number of ticks scrolled by the mouse wheel. A tick indicates a 120 px shift to the target point.The value is an integer greater than or equal to 0.<br>Value range: The value should be >= 0<br>Unit: px |
 | key1 | number | No | First key value. The value is an integer greater than or equal to 0.For details, see [KeyCode](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keycode-keycode-e.md).<br>Default value: 0 |
 | key2 | number | No | Second key value. The value is an integer greater than or equal to 0.For details, see [KeyCode](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keycode-keycode-e.md).<br>Default value: 0 |
 
@@ -2329,7 +2377,7 @@ Injects a mouse scroll action at the specified coordinates, with the optional ke
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2351,6 +2399,7 @@ async function demo() {
 
 ```
 
+<a id="mousescroll-1"></a>
 ## mouseScroll
 
 ```TypeScript
@@ -2382,7 +2431,7 @@ Injects a mouse scroll action at the specified coordinates, with the optional ke
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2404,6 +2453,7 @@ async function demo() {
 
 ```
 
+<a id="penclick"></a>
 ## penClick
 
 ```TypeScript
@@ -2430,7 +2480,7 @@ Simulates a pen click operation. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2452,6 +2502,7 @@ async function demo() {
 
 ```
 
+<a id="pendoubleclick"></a>
 ## penDoubleClick
 
 ```TypeScript
@@ -2478,7 +2529,7 @@ Simulates a pen double-click operation. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2500,6 +2551,7 @@ async function demo() {
 
 ```
 
+<a id="penlongclick"></a>
 ## penLongClick
 
 ```TypeScript
@@ -2527,7 +2579,7 @@ Simulates a pen long-click operation. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2549,6 +2601,7 @@ async function demo() {
 
 ```
 
+<a id="penswipe"></a>
 ## penSwipe
 
 ```TypeScript
@@ -2578,7 +2631,7 @@ Simulates a pen swipe operation. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2600,6 +2653,7 @@ async function demo() {
 
 ```
 
+<a id="pressback"></a>
 ## pressBack
 
 ```TypeScript
@@ -2620,7 +2674,7 @@ Presses the Back button. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2641,6 +2695,7 @@ async function demo() {
 
 ```
 
+<a id="pressback-1"></a>
 ## pressBack
 
 ```TypeScript
@@ -2667,7 +2722,7 @@ Presses the Back button on the specified screen. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2689,6 +2744,7 @@ async function demo() {
 
 ```
 
+<a id="presshome"></a>
 ## pressHome
 
 ```TypeScript
@@ -2709,7 +2765,7 @@ Injects an operation of returning to the home screen on the device. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2730,6 +2786,7 @@ async function demo() {
 
 ```
 
+<a id="presshome-1"></a>
 ## pressHome
 
 ```TypeScript
@@ -2756,7 +2813,7 @@ Injects an operation of returning to the home screen on the specified display. T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2778,6 +2835,7 @@ async function demo() {
 
 ```
 
+<a id="screencap"></a>
 ## screenCap
 
 ```TypeScript
@@ -2798,13 +2856,13 @@ Captures the current screen and saves it as a PNG image to the given save path. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| savePath | string | Yes | File save path. The path must be the [sandbox path](../../../../file-management/app-sandbox-directory.md) of the current application. |
+| savePath | string | Yes | File save path. The path must be the [sandbox path](docroot://file-management/app-sandbox-directory.md) of the current application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the screenshot operation is successful.The value **true** indicates that the operation is successful, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the screenshot operation is successful.The value **true** indicates that the operation is successful, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -2826,6 +2884,7 @@ async function demo() {
 
 ```
 
+<a id="screencap-1"></a>
 ## screenCap
 
 ```TypeScript
@@ -2846,14 +2905,14 @@ Captures the specified screen and saves it as a PNG image to the given save path
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| savePath | string | Yes | File save path. The path must be the [sandbox path](../../../../file-management/app-sandbox-directory.md) of the current application. |
+| savePath | string | Yes | File save path. The path must be the [sandbox path](docroot://file-management/app-sandbox-directory.md) of the current application. |
 | displayId | number | Yes | Display ID. The value is an integer greater than or equal to 0.<br> **Note**: If the input **displayId** does not exist, the exception **401** is reported. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return whether the screenshot operation is successful. The value **true** indicates that the screen capture operation is successful, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return whether the screenshot operation is successful. The value **true** indicates that the screen capture operation is successful, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -2875,6 +2934,7 @@ async function demo() {
 
 ```
 
+<a id="screencapture"></a>
 ## screenCapture
 
 ```TypeScript
@@ -2895,14 +2955,14 @@ Captures the specified area of the current screen and saves the captured screens
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| savePath | string | Yes | File save path. The path must be the [sandbox path](../../../../file-management/app-sandbox-directory.md) of the current application. |
+| savePath | string | Yes | File save path. The path must be the [sandbox path](docroot://file-management/app-sandbox-directory.md) of the current application. |
 | rect | [Rect](../../apis-form-kit/arkts-apis/arkts-form-forminfo-rect-i.md) | No | Area of the screen to capture. The default value is the entire screen. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the screenshot operation is successful.The value **true** indicates the screenshot operation is successful, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the screenshot operation is successful.The value **true** indicates the screenshot operation is successful, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -2929,6 +2989,7 @@ async function demo() {
 
 ```
 
+<a id="setdisplayrotation"></a>
 ## setDisplayRotation
 
 ```TypeScript
@@ -2955,7 +3016,7 @@ Sets the display rotation of the current scene. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -2977,6 +3038,7 @@ async function demo() {
 
 ```
 
+<a id="setdisplayrotationenabled"></a>
 ## setDisplayRotationEnabled
 
 ```TypeScript
@@ -3003,7 +3065,7 @@ Enables or disables display rotation. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3025,6 +3087,7 @@ async function demo() {
 
 ```
 
+<a id="swipe"></a>
 ## swipe
 
 ```TypeScript
@@ -3055,7 +3118,7 @@ Swipes from the start coordinate point to the target coordinate point. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3077,6 +3140,7 @@ async function demo() {
 
 ```
 
+<a id="swipebetween"></a>
 ## swipeBetween
 
 ```TypeScript
@@ -3105,7 +3169,7 @@ Swipes from the start coordinate point to the target coordinate point. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3127,6 +3191,7 @@ async function demo() {
 
 ```
 
+<a id="swipebetweenwithoptions"></a>
 ## swipeBetweenWithOptions
 
 ```TypeScript
@@ -3155,7 +3220,7 @@ Swipe on the screen between the specified points with optional touch options.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3164,6 +3229,7 @@ Swipe on the screen between the specified points with optional touch options.
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
+<a id="touchpadmultifingerswipe"></a>
 ## touchPadMultiFingerSwipe
 
 ```TypeScript
@@ -3192,7 +3258,7 @@ Simulates a multi-finger swipe gesture on the touchpad. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3215,6 +3281,7 @@ async function demo() {
 
 ```
 
+<a id="touchpadtwofingersscroll"></a>
 ## touchPadTwoFingersScroll
 
 ```TypeScript
@@ -3244,7 +3311,7 @@ Simulates a two-finger scroll gesture on the touchpad. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3267,6 +3334,7 @@ async function demo() {
 
 ```
 
+<a id="triggercombinekeys"></a>
 ## triggerCombineKeys
 
 ```TypeScript
@@ -3295,7 +3363,7 @@ Triggers a combination key event based on the specified key values. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3317,6 +3385,7 @@ async function demo() {
 
 ```
 
+<a id="triggercombinekeys-1"></a>
 ## triggerCombineKeys
 
 ```TypeScript
@@ -3346,7 +3415,7 @@ Triggers a combination key event based on the specified key values on the specif
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3368,6 +3437,7 @@ async function demo() {
 
 ```
 
+<a id="triggerkey"></a>
 ## triggerKey
 
 ```TypeScript
@@ -3394,7 +3464,7 @@ Triggers a key event by passing the key value. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3417,6 +3487,7 @@ async function demo() {
 
 ```
 
+<a id="triggerkey-1"></a>
 ## triggerKey
 
 ```TypeScript
@@ -3444,7 +3515,7 @@ Triggers a key event by passing the key value on the specified screen. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3467,6 +3538,7 @@ async function demo() {
 
 ```
 
+<a id="triggerpenkey"></a>
 ## triggerPenKey
 
 ```TypeScript
@@ -3501,7 +3573,7 @@ Supported combinations:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -3529,6 +3601,7 @@ async function demo() {
 
 ```
 
+<a id="waitforcomponent"></a>
 ## waitForComponent
 
 ```TypeScript
@@ -3550,13 +3623,13 @@ Searches for the target component based on the attributes within a specified tim
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | on | [On](arkts-test-uitest-on-c.md) | Yes | Attributes of the target {@link Component}. |
-| time | number | Yes | Duration for searching for the target {@link Component}, in ms. The value is an integer greater than or equal to 0.<br>Unit: ms<br>Value range: The value should be &gt;= 0 |
+| time | number | Yes | Duration for searching for the target {@link Component}, in ms. The value is an integer greater than or equal to 0.<br>Unit: ms<br>Value range: The value should be >= 0 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Component> | the first matched {@link Component} or undefined. |
+| Promise&lt;Component&gt; | the first matched {@link Component} or undefined. |
 
 **Error codes:**
 
@@ -3578,6 +3651,7 @@ async function demo() {
 
 ```
 
+<a id="waitforidle"></a>
 ## waitForIdle
 
 ```TypeScript
@@ -3605,7 +3679,7 @@ Checks whether all components on the current UI are idle. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether all components on the current UI are idle. The value true indicates that all components on the current UI are idle, and false indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether all components on the current UI are idle. The value true indicates that all components on the current UI are idle, and false indicates the opposite. |
 
 **Error codes:**
 
@@ -3627,6 +3701,7 @@ async function demo() {
 
 ```
 
+<a id="wakeupdisplay"></a>
 ## wakeUpDisplay
 
 ```TypeScript
@@ -3647,7 +3722,7 @@ Wakes up the current display. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 

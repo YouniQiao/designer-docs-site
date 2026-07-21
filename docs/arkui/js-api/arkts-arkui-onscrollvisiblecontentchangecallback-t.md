@@ -12,7 +12,7 @@ If the values of **start** and **end** are both **0**, the **List** component co
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 14.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 14.
 
 **Since:** 12
 
@@ -28,6 +28,6 @@ If the values of **start** and **end** are both **0**, the **List** component co
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| start | VisibleListContentInfo | Yes | 1. Index of the first child component in the list display area.<br>2. If thefirst child component in the list display area is **ListItemGroup**, you can obtain the area where the firstchild component belongs.<br>3. If the first child component in the list display area is **ListItem** in**ListItemGroup**, you can obtain the index of **ListItem** in **ListItemGroup**. |
-| end | VisibleListContentInfo | Yes | 1. Index of the last child component in the list display area.<br>2. If thelast child component in the list display area is **ListItemGroup**, you can obtain the area where the last childcomponent belongs.<br>3. If the last child component in the list display area is **ListItem** in**ListItemGroup**, you can obtain the index of **ListItem** in **ListItemGroup**. |
+| start | [VisibleListContentInfo](arkts-arkui-visiblelistcontentinfo-i.md) | Yes | 1. Index of the first child component in the list display area.<br>2. If the first child component in the list display area is **ListItemGroup**, you can obtain the area where the first child component belongs.<br>3. If the first child component in the list display area is **ListItem** in **ListItemGroup**, you can obtain the index of **ListItem** in **ListItemGroup**.  |
+| end | [VisibleListContentInfo](arkts-arkui-visiblelistcontentinfo-i.md) | Yes | 1. Index of the last child component in the list display area.<br>2. If the last child component in the list display area is **ListItemGroup**, you can obtain the area where the last child component belongs.<br>3. If the last child component in the list display area is **ListItem** in **ListItemGroup**, you can obtain the index of **ListItem** in **ListItemGroup**.  |
 

@@ -14,6 +14,7 @@ Class of fence extension ability.
 import { FenceExtensionAbility } from '@kit.LocationKit';
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -45,6 +46,7 @@ class MyFenceExtensionAbility extends FenceExtensionAbility {
 
 ```
 
+<a id="onfencestatuschange"></a>
 ## onFenceStatusChange
 
 ```TypeScript
@@ -66,7 +68,7 @@ Called back when geofence status is change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | transition | geoLocationManager.GeofenceTransition | Yes | Geofence transition status |
-| additions | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string> | Yes | Indicates additional information |
+| additions | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, string&gt; | Yes | Indicates additional information |
 
 **Example**
 

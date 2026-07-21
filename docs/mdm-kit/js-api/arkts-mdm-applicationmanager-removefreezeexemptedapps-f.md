@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="removefreezeexemptedapps"></a>
 ## removeFreezeExemptedApps
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes the background freeze-exempt application list for a specified user. If t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| applicationInstances | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common.ApplicationInstance> | Yes | Array of the background freeze-exempt application list. |
+| applicationInstances | Array&lt;common.ApplicationInstance&gt; | Yes | Array of the background freeze-exempt application list. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="on"></a>
 ## on('callDetailsChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Subscribe to the callDetailsChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callDetailsChange' | Yes | Event type. Indicates the callDetailsChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallAttributeOptions> | Yes | Indicates the callback for getting the result of call details. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallAttributeOptions&gt; | Yes | Indicates the callback for getting the result of call details. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ call.on('callDetailsChange', (data: call.CallAttributeOptions) => {
 ```
 
 
+<a id="on-1"></a>
 ## on('callEventChange')
 
 ```TypeScript
@@ -76,7 +78,7 @@ Subscribe to the callEventChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callEventChange' | Yes | Event type. Indicates the callEventChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallEventOptions> | Yes | Indicates the callback for getting the call event id. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallEventOptions&gt; | Yes | Indicates the callback for getting the call event id. |
 
 **Error codes:**
 
@@ -100,6 +102,7 @@ call.on('callEventChange', (data: call.CallEventOptions) => {
 ```
 
 
+<a id="on-2"></a>
 ## on('callDisconnectedCause')
 
 ```TypeScript
@@ -123,7 +126,7 @@ Subscribe to the callDisconnectedCause event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callDisconnectedCause' | Yes | Event type. Indicates the callDisconnectedCause event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DisconnectedDetails> | Yes | Indicates the callback for getting the call disconnection reason. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DisconnectedDetails&gt; | Yes | Indicates the callback for getting the call disconnection reason. |
 
 **Error codes:**
 
@@ -147,6 +150,7 @@ call.on('callDisconnectedCause', (data: call.DisconnectedDetails) => {
 ```
 
 
+<a id="on-3"></a>
 ## on('mmiCodeResult')
 
 ```TypeScript
@@ -170,7 +174,7 @@ Subscribe to the mmiCodeResult event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'mmiCodeResult' | Yes | Event type. Indicates the mmiCodeResult event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MmiCodeResults> | Yes | Indicates the callback for getting the result of MMI code. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MmiCodeResults&gt; | Yes | Indicates the callback for getting the result of MMI code. |
 
 **Error codes:**
 
@@ -194,6 +198,7 @@ call.on('mmiCodeResult', (data: call.MmiCodeResults) => {
 ```
 
 
+<a id="on-4"></a>
 ## on('audioDeviceChange')
 
 ```TypeScript
@@ -217,7 +222,7 @@ Subscribe to the audioDeviceChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'audioDeviceChange' | Yes | Event type. Indicates the audioDeviceChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceCallbackInfo> | Yes | Indicates the callback for getting the result of Current AudioDevice. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceCallbackInfo&gt; | Yes | Indicates the callback for getting the result of Current AudioDevice. |
 
 **Error codes:**
 
@@ -241,6 +246,7 @@ call.on('audioDeviceChange', (data: call.AudioDeviceCallbackInfo) => {
 ```
 
 
+<a id="on-5"></a>
 ## on('postDialDelay')
 
 ```TypeScript
@@ -264,7 +270,7 @@ Subscribe to the postDialDelay event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'postDialDelay' | Yes | Event type. Indicates the postDialDelay event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | Indicates the callback for getting the result of post-dial string. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the result of post-dial string. |
 
 **Error codes:**
 
@@ -288,6 +294,7 @@ call.on('postDialDelay', (data: string) => {
 ```
 
 
+<a id="on-6"></a>
 ## on('imsCallModeChange')
 
 ```TypeScript
@@ -311,7 +318,7 @@ Subscribe to the imsCallModeChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'imsCallModeChange' | Yes | Event type. Indicates the imsCallModeChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ImsCallModeInfo> | Yes | Indicates the callback for getting the result of ImsCallModeInfo details. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ImsCallModeInfo&gt; | Yes | Indicates the callback for getting the result of ImsCallModeInfo details. |
 
 **Error codes:**
 
@@ -337,6 +344,7 @@ call.on('imsCallModeChange', (data: call.ImsCallModeInfo) => {
 ```
 
 
+<a id="on-7"></a>
 ## on('callSessionEvent')
 
 ```TypeScript
@@ -360,7 +368,7 @@ Subscribe to the callSessionEvent.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callSessionEvent' | Yes | Event type. Indicates the callSessionEvent event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallSessionEvent> | Yes | Indicates the callback for getting the result of CallSessionEvent. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallSessionEvent&gt; | Yes | Indicates the callback for getting the result of CallSessionEvent. |
 
 **Error codes:**
 
@@ -386,6 +394,7 @@ call.on('callSessionEvent', (data: call.CallSessionEvent) => {
 ```
 
 
+<a id="on-8"></a>
 ## on('peerDimensionsChange')
 
 ```TypeScript
@@ -409,7 +418,7 @@ Subscribe to the peerDimensionsChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'peerDimensionsChange' | Yes | Event type. Indicates the peerDimensionsChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PeerDimensionsDetail> | Yes | Indicates the callback for getting the result of PeerDimensionsDetail details. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PeerDimensionsDetail&gt; | Yes | Indicates the callback for getting the result of PeerDimensionsDetail details. |
 
 **Error codes:**
 
@@ -435,6 +444,7 @@ call.on('peerDimensionsChange', (data: call.PeerDimensionsDetail) => {
 ```
 
 
+<a id="on-9"></a>
 ## on('cameraCapabilitiesChange')
 
 ```TypeScript
@@ -458,7 +468,7 @@ Subscribe to the cameraCapabilitiesChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cameraCapabilitiesChange' | Yes | Event type. Indicates the cameraCapabilitiesChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CameraCapabilities> | Yes | Indicates the callback for getting the result of CameraCapabilities details. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CameraCapabilities&gt; | Yes | Indicates the callback for getting the result of CameraCapabilities details. |
 
 **Error codes:**
 

@@ -20,6 +20,7 @@ Specifies the worker thread running environment, which is isolated from the host
 import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -60,6 +61,7 @@ parentPort.onmessage = (): void => {
 
 ```
 
+<a id="postmessage"></a>
 ## postMessage
 
 ```TypeScript
@@ -82,9 +84,10 @@ Send a message to be host thread from the worker
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| messageObject | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | messageObject Data to be sent to the worker |
+| messageObject | Object | Yes | messageObject Data to be sent to the worker |
 | transfer | Transferable[] | Yes | transfer array cannot contain null. |
 
+<a id="postmessage-1"></a>
 ## postMessage
 
 ```TypeScript
@@ -107,7 +110,7 @@ Send a message to be host thread from the worker
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| messageObject | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | messageObject Data to be sent to the worker |
+| messageObject | Object | Yes | messageObject Data to be sent to the worker |
 | options | [PostMessageOptions](arkts-arkts-worker-postmessageoptions-i.md) | No | Option can be set for postmessage. |
 
 **Example**
@@ -135,6 +138,7 @@ parentPort.onmessage = (e: MessageEvents) => {
 
 ```
 
+<a id="postmessage-2"></a>
 ## postMessage
 
 ```TypeScript
@@ -157,8 +161,8 @@ Send a message to host thread from the worker
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| messageObject | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | messageObject Data to be sent to the worker |
-| transfer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md)[] | Yes | transfer array cannot contain null. |
+| messageObject | Object | Yes | messageObject Data to be sent to the worker |
+| transfer | ArrayBuffer[] | Yes | transfer array cannot contain null. |
 
 **Example**
 
@@ -197,7 +201,7 @@ onmessage?: (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 
 The onmessage attribute of parentPort specifies the event handler to be called then the worker thread receives a message sent by the host thread through worker postMessage.The event handler is executed in the worker thread.
 
-**Type:** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
+**Type:** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) =&gt; void
 
 **Since:** 7
 
@@ -217,7 +221,7 @@ onmessageerror?: (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 
 The onmessage attribute of parentPort specifies the event handler to be called then the worker receives a message that cannot be deserialized.The event handler is executed in the worker thread.
 
-**Type:** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
+**Type:** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) =&gt; void
 
 **Since:** 7
 

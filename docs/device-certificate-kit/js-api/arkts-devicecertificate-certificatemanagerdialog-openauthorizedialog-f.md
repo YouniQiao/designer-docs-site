@@ -6,6 +6,7 @@
 import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="openauthorizedialog"></a>
 ## openAuthorizeDialog
 
 ```TypeScript
@@ -34,7 +35,7 @@ Opens the authorization page of the certificate management dialog box to grant a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URI of the certificate authorized. The value contains up to256 bytes. |
+| Promise&lt;string&gt; | Promise used to return the URI of the certificate authorized. The value contains up to256 bytes. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ try {
 ```
 
 
+<a id="openauthorizedialog-1"></a>
 ## openAuthorizeDialog
 
 ```TypeScript
@@ -100,7 +102,7 @@ Opens the Certificate Credential Authorization page of the Certificate Managemen
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CertReference> | Promise used to return the result of the authorization certificate reference. |
+| Promise&lt;CertReference&gt; | Promise used to return the result of the authorization certificate reference. |
 
 **Error codes:**
 

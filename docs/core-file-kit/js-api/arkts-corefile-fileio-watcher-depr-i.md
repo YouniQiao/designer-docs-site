@@ -12,6 +12,7 @@ Listens for file change. You can call the **Watcher.stop()** method synchronousl
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -34,7 +35,7 @@ Stops the **watcher** instance. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | return Promise |
+| Promise&lt;void&gt; | return Promise |
 
 **Example**
 
@@ -49,6 +50,7 @@ watcher.stop().then(() => {
 
 ```
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -71,7 +73,7 @@ Stops the **watcher** instance. This API uses an asynchronous callback to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when **watcher** is stopped asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when **watcher** is stopped asynchronously. |
 
 **Example**
 

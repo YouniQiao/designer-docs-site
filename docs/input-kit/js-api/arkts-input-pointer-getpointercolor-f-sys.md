@@ -6,6 +6,7 @@
 import { pointer } from '@kit.InputKit';
 ```
 
+<a id="getpointercolor"></a>
 ## getPointerColor
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the mouse pointer color. This API uses an asynchronous callback to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **number** is the obtained mouse pointer color. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **number** is the obtained mouse pointer color. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ struct Index {
 ```
 
 
+<a id="getpointercolor-1"></a>
 ## getPointerColor
 
 ```TypeScript
@@ -88,7 +90,7 @@ Obtains the current mouse pointer color. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the mouse pointer color. |
+| Promise&lt;number&gt; | Promise used to return the mouse pointer color. |
 
 **Error codes:**
 

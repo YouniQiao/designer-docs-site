@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getmultilinkedinfo"></a>
 ## getMultiLinkedInfo
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtain multiple Wi-Fi connection information when Wi-Fi linked in MLO(Muti-Link 
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WifiLinkedInfo> | Returns Wi-Fi multiple link information. |
+| Array&lt;WifiLinkedInfo&gt; | Returns Wi-Fi multiple link information. |
 
 **Error codes:**
 

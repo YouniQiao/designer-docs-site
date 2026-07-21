@@ -6,6 +6,7 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="fdopenstream"></a>
 ## fdopenStream
 
 ```TypeScript
@@ -33,7 +34,7 @@ Opens a stream based on an FD. This API uses a promise to return the result. To 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Stream> | Promise used to return the file stream. |
+| Promise&lt;Stream&gt; | Promise used to return the file stream. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ Opens a stream based on an FD. This API uses a promise to return the result. To 
 | 13900042 | Unknown error |
 
 
+<a id="fdopenstream-1"></a>
 ## fdopenStream
 
 ```TypeScript
@@ -90,7 +92,7 @@ Opens a stream based on an FD. This API uses an asynchronous callback to return 
 | --- | --- | --- | --- |
 | fd | number | Yes | FD of the file. |
 | mode | string | Yes | - **r**: Open a file for reading. The file must exist.<br>- **r+**: Open a file for both reading and writing. The file must exist.<br>- **w**: Open a file for writing. If the file exists, clear its content. If the file does not exist, create a file.<br>- **w+**: Open a file for both reading and writing. If the file exists, clear its content. If the file does not exist, create a file.<br>- **a**: Open a file in append mode for writing at the end of the file. If the file does not exist, create a file. If the file exists, write data to the end of the file (the original content of the file is reserved).<br>- **a+**: Open a file in append mode for reading or updating at the end of the file. If the file does not exist, create a file. If the file exists, write data to the end of the file (the original content of the file is reserved). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Stream> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Stream&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 

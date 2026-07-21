@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="cancelpairingdevice"></a>
 ## cancelPairingDevice
 
 ```TypeScript
@@ -31,7 +32,7 @@ Remove a pairing remote device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of cancelPairingDevice. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of cancelPairingDevice. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ try {
 ```
 
 
+<a id="cancelpairingdevice-1"></a>
 ## cancelPairingDevice
 
 ```TypeScript
@@ -88,7 +90,7 @@ Remove a pairing remote device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

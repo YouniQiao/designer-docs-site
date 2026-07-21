@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="setvalue"></a>
 ## setValue
 
 ```TypeScript
@@ -31,7 +32,7 @@ Set settingsdata value.
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context. Only UIAbilityContext and ExtensionContext are supported. |
 | name | string | Yes | Indicates the name of the character string. |
 | value | string | Yes | Indicates the value of the character string. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback of setValue result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback of setValue result. |
 
 **Example**
 
@@ -49,6 +50,7 @@ settings.setValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS, '100', (st
 ```
 
 
+<a id="setvalue-1"></a>
 ## setValue
 
 ```TypeScript
@@ -79,7 +81,7 @@ Set settingsdata value.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the operation is successful; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the operation is successful; returns {@code false} otherwise. |
 
 **Example**
 
@@ -97,6 +99,7 @@ settings.setValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS, '100').the
 ```
 
 
+<a id="setvalue-2"></a>
 ## setValue
 
 ```TypeScript
@@ -128,7 +131,7 @@ Set settingsdata value.[DEVICE_SHARED, USER_PROPERTY] domain need ohos.permissio
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the operation is successful; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the operation is successful; returns {@code false} otherwise. |
 
 **Error codes:**
 

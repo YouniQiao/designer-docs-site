@@ -14,6 +14,7 @@ Provides APIs to obtain information about trusted devices and local devices. Bef
 import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="getdeviceiconinfo"></a>
 ## getDeviceIconInfo
 
 ```TypeScript
@@ -42,7 +43,7 @@ Obtains the device icon. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DeviceIconInfo> | Promise used to return the device icon information. |
+| Promise&lt;DeviceIconInfo&gt; | Promise used to return the device icon information. |
 
 **Error codes:**
 
@@ -85,6 +86,7 @@ try {
 
 ```
 
+<a id="getdevicenetworkidlist"></a>
 ## getDeviceNetworkIdList
 
 ```TypeScript
@@ -113,7 +115,7 @@ Obtains the list of network devices according to the specified filter options.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the device list. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the device list. |
 
 **Error codes:**
 
@@ -149,6 +151,7 @@ try {
 
 ```
 
+<a id="getdeviceprofileinfolist"></a>
 ## getDeviceProfileInfoList
 
 ```TypeScript
@@ -177,7 +180,7 @@ Obtains the list of devices under the same account. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<DeviceProfileInfo>> | Promise used to return the device list. |
+| Promise&lt;Array&lt;DeviceProfileInfo&gt;&gt; | Promise used to return the device list. |
 
 **Error codes:**
 
@@ -210,6 +213,7 @@ try {
 
 ```
 
+<a id="getidentificationbydeviceids"></a>
 ## getIdentificationByDeviceIds
 
 ```TypeScript
@@ -234,13 +238,13 @@ Query device identification by device IDs.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| deviceIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | A list of device IDs that could be obtained by the application,with a maximum list size of 50. |
+| deviceIds | Array&lt;string&gt; | Yes | A list of device IDs that could be obtained by the application,with a maximum list size of 50. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DeviceIdentification> | - Returns a list of DeviceIdentification. |
+| Array&lt;DeviceIdentification&gt; | - Returns a list of DeviceIdentification. |
 
 **Error codes:**
 
@@ -279,6 +283,7 @@ getDeviceUdids(deviceIds: Array<string>): void {
 
 ```
 
+<a id="getlocaldisplaydevicename"></a>
 ## getLocalDisplayDeviceName
 
 ```TypeScript
@@ -307,7 +312,7 @@ Obtains the local device's display name with the specified length. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Maximum number of bytes in the local device's display name. |
+| Promise&lt;string&gt; | Maximum number of bytes in the local device's display name. |
 
 **Error codes:**
 
@@ -339,6 +344,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('replyResult')
 
 ```TypeScript
@@ -362,7 +368,7 @@ Unsubscribes from the reply to the UI operation result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'replyResult' | Yes | Event type, which has a fixed value of **replyResult**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ param: string; }> | No |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ param: string; }&gt; | No |  |
 
 **Error codes:**
 
@@ -388,6 +394,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('replyResult')
 
 ```TypeScript
@@ -411,7 +418,7 @@ Subscribes to the reply to the UI operation result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'replyResult' | Yes | Event type, which has a fixed value of **replyResult**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<{ param: string; }> | Yes |  |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;{ param: string; }&gt; | Yes |  |
 
 **Error codes:**
 
@@ -450,6 +457,7 @@ try {
 
 ```
 
+<a id="putdeviceprofileinfolist"></a>
 ## putDeviceProfileInfoList
 
 ```TypeScript
@@ -472,13 +480,13 @@ Updates the device list. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| deviceProfileInfoList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DeviceProfileInfo> | Yes | Device list. |
+| deviceProfileInfoList | Array&lt;DeviceProfileInfo&gt; | Yes | Device list. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Operation result. The value **0** indicates that the operation is successful. |
+| Promise&lt;number&gt; | Operation result. The value **0** indicates that the operation is successful. |
 
 **Error codes:**
 
@@ -510,6 +518,7 @@ try {
 
 ```
 
+<a id="replyuiaction"></a>
 ## replyUiAction
 
 ```TypeScript
@@ -568,6 +577,7 @@ try {
 
 ```
 
+<a id="restorelocaldeivcename"></a>
 ## restoreLocalDeivceName
 
 ```TypeScript
@@ -614,6 +624,7 @@ try {
 
 ```
 
+<a id="restorelocaldevicename"></a>
 ## restoreLocalDeviceName
 
 ```TypeScript
@@ -658,6 +669,7 @@ try {
 
 ```
 
+<a id="setheartbeatpolicy"></a>
 ## setHeartbeatPolicy
 
 ```TypeScript
@@ -710,6 +722,7 @@ try {
 
 ```
 
+<a id="setlocaldevicename"></a>
 ## setLocalDeviceName
 
 ```TypeScript
@@ -738,7 +751,7 @@ Sets the local device name. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Operation result. The value **0** indicates that the operation is successful. |
+| Promise&lt;number&gt; | Operation result. The value **0** indicates that the operation is successful. |
 
 **Error codes:**
 
@@ -773,6 +786,7 @@ try {
 
 ```
 
+<a id="setremotedevicename"></a>
 ## setRemoteDeviceName
 
 ```TypeScript
@@ -802,7 +816,7 @@ Sets the remote device name. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Operation result. The value **0** indicates that the operation is successful. |
+| Promise&lt;number&gt; | Operation result. The value **0** indicates that the operation is successful. |
 
 **Error codes:**
 

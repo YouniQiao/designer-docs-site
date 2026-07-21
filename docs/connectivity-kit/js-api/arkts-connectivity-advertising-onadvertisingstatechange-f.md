@@ -6,6 +6,7 @@
 import { advertising } from '@kit.ConnectivityKit';
 ```
 
+<a id="onadvertisingstatechange"></a>
 ## onAdvertisingStateChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ This event is accessible only to applications that granted the ohos.permission.N
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<AdvertisingStateChangeInfo> | Yes | Callback used to listen for the advertising state. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;AdvertisingStateChangeInfo&gt; | Yes | Callback used to listen for the advertising state. |
 
 **Error codes:**
 

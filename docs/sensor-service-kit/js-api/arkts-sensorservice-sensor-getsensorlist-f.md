@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getsensorlist"></a>
 ## getSensorList
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains information about all sensors on the device. This API uses an asynchrono
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Sensor>> | Yes | Callback used to return the sensor list. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Sensor&gt;&gt; | Yes | Callback used to return the sensor list. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ try {
 ```
 
 
+<a id="getsensorlist-1"></a>
 ## getSensorList
 
 ```TypeScript
@@ -76,7 +78,7 @@ Obtains information about all sensors on the device. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Sensor>> | Promise used to return the sensor list. |
+| Promise&lt;Array&lt;Sensor&gt;&gt; | Promise used to return the sensor list. |
 
 **Error codes:**
 

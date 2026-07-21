@@ -28,7 +28,7 @@ Date display format. The value can be:
 
 "long", "short", "medium", "full", or  "auto".
 
-For details about their display effects, see [Table 1](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 1](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -82,7 +82,7 @@ Time period display format. The value can be:
 
 "long", "short", "narrow", or  "auto".
 
-For details about their display effects, see [Table 10](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 10](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -110,7 +110,7 @@ Epoch display format. The value can be:
 
 "long", "short", "narrow", or  "auto".
 
-For details about their display effects, see [Table 9](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 9](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -219,9 +219,9 @@ Hour cycle. The value can be:
 
 "h11", "h12", "h23", or  "h24".
 
-For the display effects when **dateStyle** or **timeStyle** is not set, see [Table 5](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For the display effects when **dateStyle** or **timeStyle** is not set, see [Table 5](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
-For the display effects when **dateStyle** or **timeStyle** is not set, see [Table 6](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For the display effects when **dateStyle** or **timeStyle** is not set, see [Table 6](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -326,7 +326,7 @@ Month display format. The value can be:
 
 "numeric", "2-digit", "long", "short", "narrow", or  "auto".
 
-For details about their display effects, see [Table 7](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 7](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -406,7 +406,7 @@ Time display format. The value can be:
 
 "long", "short", "medium", "full", or  "auto".
 
-For details about their display effects, see [Table 2](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 2](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -458,7 +458,7 @@ Localized representation of a time zone name. The value can be:
 
 "long", "short", or  "auto".
 
-For details about their display effects, see [Table 8](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 8](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -486,7 +486,7 @@ Week display format. The value can be:
 
 "long", "short", "narrow", or  "auto".
 
-For details about their display effects, see [Table 4](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 4](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -514,7 +514,7 @@ Year display format. The value can be:
 
 "numeric" or  "2-digit".
 
-For details about their display effects, see [Table 3](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 3](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 

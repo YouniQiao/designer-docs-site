@@ -14,6 +14,7 @@ Defines a common callback that carries an error parameter and asynchronous retur
 import { Callback, BusinessError, ErrorCallback, AsyncCallback } from '@kit.BasicServicesKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -34,6 +35,6 @@ import { Callback, BusinessError, ErrorCallback, AsyncCallback } from '@kit.Basi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| err | [BusinessError](arkts-basicservices-base-businesserror-i.md)<E> | Yes | Common error message returned when the API fails to be called. |
+| err | [BusinessError](arkts-basicservices-base-businesserror-i.md)&lt;E&gt; | Yes | Common error message returned when the API fails to be called. |
 | data | T | Yes | Data returned asynchronously when the API is successfully called. The data type is defined by the developer. This parameter is unavailable when the API fails to be called. |
 

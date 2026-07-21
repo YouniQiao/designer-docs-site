@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="paircredibledevice"></a>
 ## pairCredibleDevice
 
 ```TypeScript
@@ -32,7 +33,7 @@ Starts pairing with a credible remote Bluetooth device with transport.This inter
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
 | transport | [BluetoothTransport](arkts-connectivity-connection-bluetoothtransport-e.md) | Yes | the transport of the remote device to pair. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of pairCredibleDevice. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of pairCredibleDevice. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ try {
 ```
 
 
+<a id="paircredibledevice-1"></a>
 ## pairCredibleDevice
 
 ```TypeScript
@@ -97,7 +99,7 @@ Starts pairing with a credible remote Bluetooth device with transport.This inter
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

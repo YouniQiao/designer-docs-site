@@ -6,6 +6,7 @@
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="createpremultipliedpixelmap"></a>
 ## createPremultipliedPixelMap
 
 ```TypeScript
@@ -26,7 +27,7 @@ Transforms pixelmap from unpremultiplied alpha format to premultiplied alpha for
 | --- | --- | --- | --- |
 | src | [PixelMap](arkts-image-image-pixelmap-i.md) | Yes | The source pixelmap. |
 | dst | [PixelMap](arkts-image-image-pixelmap-i.md) | Yes | The destination pixelmap. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the operation result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the operation result. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ async function CreatePremultipliedPixelMap() {
 ```
 
 
+<a id="createpremultipliedpixelmap-1"></a>
 ## createPremultipliedPixelMap
 
 ```TypeScript
@@ -93,7 +95,7 @@ Transforms pixelmap from premultiplied alpha format to unpremultiplied alpha for
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Error codes:**
 

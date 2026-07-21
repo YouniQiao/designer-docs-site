@@ -6,13 +6,14 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="getsnapshot"></a>
 ## getSnapshot
 
 ```TypeScript
 function getSnapshot(windowId: number): Promise<image.PixelMap>
 ```
 
-Obtains a snapshot of the same size as the specified window. This API uses a promise to return the result. If privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-2)), taking a screenshot will result in a blank screen.
+Obtains a snapshot of the same size as the specified window. This API uses a promise to return the result. If privacy mode is enabled for the current window (using [setWindowPrivacyMode](arkts-arkui-window-window-i.md#setwindowprivacymode-1)), taking a screenshot will result in a blank screen.
 
 **Since:** 12
 
@@ -32,7 +33,7 @@ Obtains a snapshot of the same size as the specified window. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | - Promise that returns no value. |
+| Promise&lt;image.PixelMap&gt; | - Promise that returns no value. |
 
 **Error codes:**
 

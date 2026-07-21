@@ -22,6 +22,7 @@ In the following API examples, you need to obtain an **LiteResultSet** instance 
 import { relationalStore } from '@kit.ArkData';
 ```
 
+<a id="getfloat32array"></a>
 ## getFloat32Array
 
 ```TypeScript
@@ -50,7 +51,7 @@ Obtains the value of the specified column in the current row as a float array.Th
 
 | Type | Description |
 | --- | --- |
-| [Float32Array](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-float32array-i.md) | The value of the specified column as a float array. |
+| Float32Array | The value of the specified column as a float array. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { pointer } from '@kit.InputKit';
 ```
 
+<a id="setcustomcursor"></a>
 ## setCustomCursor
 
 ```TypeScript
@@ -33,7 +34,7 @@ Sets a custom pointer style for a specified window. This API can set only the cu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -86,6 +87,7 @@ struct Index {
 ```
 
 
+<a id="setcustomcursor-1"></a>
 ## setCustomCursor
 
 ```TypeScript
@@ -114,7 +116,7 @@ The cursor may be switched back to the system style in the following cases: appl
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

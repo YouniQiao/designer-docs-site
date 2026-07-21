@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="transformcoordinatesystem"></a>
 ## transformCoordinateSystem
 
 ```TypeScript
@@ -19,7 +20,7 @@ Rotates a rotation vector so that it can represent the coordinate system in diff
 
 **Deprecated since:** 9
 
-**Substitutes:** transformRotationMatrix(inRotationVector:
+**Substitutes:** [transformRotationMatrix(inRotationVector:](arkts-sensorservice-sensor-transformrotationmatrix-f.md#transformrotationmatrix-1)
 
 <!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions,
     callback: AsyncCallback<Array<number>>): void--><!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions,
@@ -31,9 +32,9 @@ Rotates a rotation vector so that it can represent the coordinate system in diff
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inRotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
+| inRotationVector | Array&lt;number&gt; | Yes | Rotation vector. |
 | coordinates | [CoordinatesOptions](arkts-sensorservice-sensor-coordinatesoptions-i.md) | Yes | Direction of the coordinate system. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the rotation vector after being rotated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the rotation vector after being rotated. |
 
 **Example**
 
@@ -56,6 +57,7 @@ sensor.transformCoordinateSystem([1, 0, 0, 0, 1, 0, 0, 0, 1], { x: 2, y: 3 },
 ```
 
 
+<a id="transformcoordinatesystem-1"></a>
 ## transformCoordinateSystem
 
 ```TypeScript
@@ -68,7 +70,7 @@ Rotates a rotation vector so that it can represent the coordinate system in diff
 
 **Deprecated since:** 9
 
-**Substitutes:** transformRotationMatrix(inRotationVector:
+**Substitutes:** [transformRotationMatrix(inRotationVector:](arkts-sensorservice-sensor-transformrotationmatrix-f.md#transformrotationmatrix-1)
 
 <!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions): Promise<Array<number>>--><!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions): Promise<Array<number>>-End-->
 
@@ -78,14 +80,14 @@ Rotates a rotation vector so that it can represent the coordinate system in diff
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inRotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
+| inRotationVector | Array&lt;number&gt; | Yes | Rotation vector. |
 | coordinates | [CoordinatesOptions](arkts-sensorservice-sensor-coordinatesoptions-i.md) | Yes | Direction of the coordinate system. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the rotation vector after being rotated. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the rotation vector after being rotated. |
 
 **Example**
 

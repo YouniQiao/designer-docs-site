@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="startavplayback"></a>
 ## startAVPlayback
 
 ```TypeScript
@@ -35,7 +36,7 @@ Start an application for media playback.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ avSession.startAVPlayback("com.example.myapplication", "121278").then(() => {
 ```
 
 
+<a id="startavplayback-1"></a>
 ## startAVPlayback
 
 ```TypeScript
@@ -88,7 +90,7 @@ Start an application for media playback with command info.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 

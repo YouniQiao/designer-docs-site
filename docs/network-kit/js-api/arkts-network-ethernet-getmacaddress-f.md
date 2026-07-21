@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="getmacaddress"></a>
 ## getMacAddress
 
 ```TypeScript
@@ -26,7 +27,7 @@ Get the ethernet mac address list.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<MacAddressInfo>> | the promise returned by the function. |
+| Promise&lt;Array&lt;MacAddressInfo&gt;&gt; | the promise returned by the function. |
 
 **Error codes:**
 

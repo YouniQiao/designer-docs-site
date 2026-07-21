@@ -6,13 +6,14 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="canopenlink"></a>
 ## canOpenLink
 
 ```TypeScript
 function canOpenLink(link: string): boolean
 ```
 
-Checks whether the target application can be accessed based on the provided link. The scheme specified in the link must be configured in the **querySchemes** field of the [module.json5](../../../../quick-start/module-configuration-file.md) file.
+Checks whether the target application can be accessed based on the provided link. The scheme specified in the link must be configured in the **querySchemes** field of the [module.json5](docroot://quick-start/module-configuration-file.md) file.
 
 **Since:** 12
 

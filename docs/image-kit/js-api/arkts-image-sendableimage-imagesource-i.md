@@ -16,6 +16,7 @@ Images occupy a large amount of memory. When you finish using an ImageSource ins
 import { sendableImage } from '@kit.ImageKit';
 ```
 
+<a id="createpixelmap"></a>
 ## createPixelMap
 
 ```TypeScript
@@ -46,7 +47,7 @@ Images occupy a large amount of memory. When you finish using a PixelMap instanc
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PixelMap> | Promise used to return the PixelMap object. |
+| Promise&lt;PixelMap&gt; | Promise used to return the PixelMap object. |
 
 **Example**
 
@@ -66,6 +67,7 @@ async function Demo(context : Context) {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -88,7 +90,7 @@ Before releasing the instance, ensure that all asynchronous operations associate
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getstations"></a>
 ## getStations
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtain the list of stations that are connected to the Wi-Fi hotspot.This method 
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<StationInfo> | the list of clients that are connected to the Wi-Fi hotspot. |
+| Array&lt;StationInfo&gt; | the list of clients that are connected to the Wi-Fi hotspot. |
 
 **Error codes:**
 

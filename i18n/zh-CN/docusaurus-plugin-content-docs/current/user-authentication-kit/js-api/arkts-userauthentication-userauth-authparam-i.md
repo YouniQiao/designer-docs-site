@@ -27,7 +27,7 @@ authTrustLevel: AuthTrustLevel
 - ATL3：适用于设备解锁等较高安全场景。  
 - ATL4：适用于小额支付等高安全场景。
 
-典型操作需要的身份认证可信等级，以及身份认证可信等级的划分请参见[认证可信等级划分原则](../../../../security/UserAuthenticationKit/user-authentication-overview.md#生物认证可信等级划分原则)。
+典型操作需要的身份认证可信等级，以及身份认证可信等级的划分请参见[认证可信等级划分原则](docroot://security/UserAuthenticationKit/user-authentication-overview.md#生物认证可信等级划分原则)。
 
 **类型：** AuthTrustLevel
 
@@ -101,7 +101,7 @@ skipLockedBiometricAuth?: boolean
 
 是否跳过已禁用的认证方式自动切换至其它方式的认证。若无可切换的认证方式则关闭控件，返回认证冻结错误码。
 
-- true：生物认证冻结时，跳过倒计时界面直接切换到其他方式的认证（如从冻结的指纹切换到人脸或PIN）。适用于希望快速完成认证的场景。  
+- true：生物认证冻结时，跳过倒计时界面直接切换到其他方式的认证（如从冻结的指纹切换到PIN）。适用于希望快速完成认证的场景。  
 - false（默认）：不跳过，用户需要等待冻结倒计时结束后才能继续尝试该认证方式或手动切换。
 
 **类型：** boolean

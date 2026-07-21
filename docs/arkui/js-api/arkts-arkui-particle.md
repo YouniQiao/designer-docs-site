@@ -67,7 +67,7 @@ Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| particles | Particles&lt;      PARTICLE,      COLOR_UPDATER,      OPACITY_UPDATER,      SCALE_UPDATER,      ACC_SPEED_UPDATER,      ACC_ANGLE_UPDATER,      SPIN_UPDATER    &gt; | Yes | Array of particles. |
+| particles | [Particles](arkts-arkui-particles-i.md)&lt;       PARTICLE,       COLOR_UPDATER,       OPACITY_UPDATER,       SCALE_UPDATER,       ACC_SPEED_UPDATER,       ACC_ANGLE_UPDATER,       SPIN_UPDATER     &gt; | Yes | Array of particles. |
 
 ## Summary
 

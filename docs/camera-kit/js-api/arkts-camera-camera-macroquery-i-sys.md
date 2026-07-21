@@ -16,6 +16,7 @@ MacroQuery provides the API to check the support for macro photography.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="ismacrosupported"></a>
 ## isMacroSupported
 
 ```TypeScript

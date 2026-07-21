@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="decapsulate"></a>
 ## decapsulate
 
 ```TypeScript
@@ -29,7 +30,7 @@ Post-Quantum Cryptography密钥解封装操作，支持HUKS密钥管理或由应
 | --- | --- | --- | --- |
 | keyAlias | string | 是 | 后量子加密算法的密钥名称。 |
 | params | [HuksParam](arkts-universalkeystore-huks-huksparam-i.md)[] | 是 | 表示解封装属性。 |
-| encapData | [Uint8Array](../../apis-arkts/arkts-apis/arkts-arkts-collections-uint8array-c.md) | 是 | 表示封装后的共享密钥。 |
+| encapData | Uint8Array | 是 | 表示封装后的共享密钥。 |
 | sharedKeyAlias | string | 否 | 表示解封装密钥的密钥别名。如果使用HUKS进行密钥管理，则必须指定该参数。如果应用程序自己管理密钥，则忽略此参数。 |
 | sharedKeyParams | [HuksParam](arkts-universalkeystore-huks-huksparam-i.md)[] | 否 | 表示解封装后的key的属性。如果使用HUKS进行密钥管理，则必须指定该参数。如果应用程序自己管理密钥，则忽略此参数。 |
 
@@ -37,7 +38,7 @@ Post-Quantum Cryptography密钥解封装操作，支持HUKS密钥管理或由应
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<HuksReturnResult> | 返回值 |
+| Promise&lt;HuksReturnResult&gt; | 返回值 |
 
 **错误码：**
 
@@ -55,7 +56,7 @@ Post-Quantum Cryptography密钥解封装操作，支持HUKS密钥管理或由应
 | [12000013](../errorcode-huks.md#12000013-密钥设置生物访问控制时待绑定的凭据不存在) | Queried credential does not exist |
 | [12000014](../errorcode-huks.md#12000014-内存不足) | Insufficient memory. |
 | [12000015](../errorcode-huks.md#12000015-调用其他系统服务失败) | Failed to obtain the security information using UserIAM. |
-| 12000016 | The lock screen password is not set. |
+| [12000016](../errorcode-huks.md#12000016-设备密码未设置) | The lock screen password is not set. |
 | [12000017](../errorcode-huks.md#12000017-同名密钥已存在) | A key with the same alias already exists. |
 | [12000018](../errorcode-huks.md#12000018-输入参数非法) | Invalid input parameter. |
 

@@ -10,6 +10,7 @@ NodeContent is the entity encapsulation of the node content.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="addframenode"></a>
 ## addFrameNode
 
 ```TypeScript
@@ -40,6 +41,7 @@ Adds a FrameNode to this **NodeContent** object.
 | --- | --- |
 | [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reason are included in the error message.For example: "The parameter 'node' is invalid: it cannot be adopted."<br>**Applicable version:** 22 and later |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -58,6 +60,7 @@ A constructor used to create a **NodeContent** object.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="removeframenode"></a>
 ## removeFrameNode
 
 ```TypeScript

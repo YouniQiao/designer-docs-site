@@ -6,13 +6,14 @@
 import { asset } from '@kit.AssetStoreKit';
 ```
 
+<a id="queryasuser"></a>
 ## queryAsUser
 
 ```TypeScript
 function queryAsUser(userId: number, query: AssetMap): Promise<Array<AssetMap>>
 ```
 
-Queries one or more assets in the specified user space. If user authentication is required for the access to the asset, call [asset.preQueryAsUser](arkts-assetstore-asset-prequeryasuser-f-sys.md#prequeryasuser-1) before this API and call [asset.postQueryAsUser](arkts-assetstore-asset-postqueryasuser-f-sys.md#postqueryasuser-1) after this API. For details about the development procedure,see [Development Guidance](../../../../security/AssetStoreKit/asset-js-query-auth.md).This API uses a promise to return the result.
+Queries one or more assets in the specified user space. If user authentication is required for the access to the asset, call [asset.preQueryAsUser](arkts-assetstore-asset-prequeryasuser-f-sys.md#prequeryasuser-1) before this API and call [asset.postQueryAsUser](arkts-assetstore-asset-postqueryasuser-f-sys.md#postqueryasuser-1) after this API. For details about the development procedure,see [Development Guidance](docroot://security/AssetStoreKit/asset-js-query-auth.md).This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -35,7 +36,7 @@ Queries one or more assets in the specified user space. If user authentication i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AssetMap>> | Promise used to return the result obtained. |
+| Promise&lt;Array&lt;AssetMap&gt;&gt; | Promise used to return the result obtained. |
 
 **Error codes:**
 

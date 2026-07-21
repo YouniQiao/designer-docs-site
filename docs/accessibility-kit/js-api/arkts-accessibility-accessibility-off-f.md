@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="off"></a>
 ## off('accessibilityStateChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Unsubscribes from the state changes of the accessibility application. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'accessibilityStateChange' | Yes | Event type, which is set to **'accessibilityStateChange'** in this API. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to unregister. It must be consistent with the callback used in [accessibility.on('accessibilityStateChange')](arkts-accessibility-accessibility-on-f.md#on-1). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type.<br>**Since:** 20 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to unregister. It must be consistent with the callback used in [accessibility.on('accessibilityStateChange')](accessibility.on(type: 'accessibilityStateChange', callback: Callback<boolean>)). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type.<br>**Since:** 20 |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ accessibility.off('accessibilityStateChange', (data: boolean) => {
 ```
 
 
+<a id="off-1"></a>
 ## off('touchGuideStateChange')
 
 ```TypeScript
@@ -72,7 +74,7 @@ Unsubscribes from the state changes in touch guide mode. This API uses an asynch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'touchGuideStateChange' | Yes | Event type, which is set to **'touchGuideStateChange'** in this API. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to unregister. It must be consistent with the callback used in [accessibility.on('touchGuideStateChange')](arkts-accessibility-accessibility-on-f.md#on-2). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to unregister. It must be consistent with the callback used in [accessibility.on('touchGuideStateChange')](accessibility.on(type: 'touchGuideStateChange', callback: Callback<boolean>)). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
 
 **Error codes:**
 
@@ -92,6 +94,7 @@ accessibility.off('touchGuideStateChange', (data: boolean) => {
 ```
 
 
+<a id="off-2"></a>
 ## off('screenReaderStateChange')
 
 ```TypeScript
@@ -115,7 +118,7 @@ Unsubscribes from the state changes of the screen reader. This API uses an async
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'screenReaderStateChange' | Yes | Event type, which is set to **'screenReaderStateChange'** in this API. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to unregister. It must be consistent with the callback used in [accessibility.on('screenReaderStateChange')](arkts-accessibility-accessibility-on-f.md#on-3). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to unregister. It must be consistent with the callback used in [accessibility.on('screenReaderStateChange')](accessibility.on(type: 'screenReaderStateChange', callback: Callback<boolean>)). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
 
 **Error codes:**
 
@@ -135,6 +138,7 @@ accessibility.off('screenReaderStateChange', (data: boolean) => {
 ```
 
 
+<a id="off-3"></a>
 ## off('touchModeChange')
 
 ```TypeScript
@@ -158,7 +162,7 @@ Unsubscribes from the single- or double-touch event changes in touch guide mode.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'touchModeChange' | Yes | Event type, which is set to **'touchModeChange'** in this API. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Callback used to unregister. The value must be the same as the value of callback in [accessibility.on('touchModeChange')](arkts-accessibility-accessibility-on-f.md#on-4). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Callback used to unregister. The value must be the same as the value of callback in [accessibility.on('touchModeChange')](accessibility.on(type: 'touchModeChange', callback: Callback<string>)). If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
 
 **Error codes:**
 

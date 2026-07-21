@@ -1,0 +1,142 @@
+# ECCCommonParamsSpec
+
+Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-cryptoframework-asykeyspec-i.md) used to specify the common parameters of the public and private keys in the ECC algorithm. It can be used to randomly generate a public or private key.
+
+To generate a key based on key parameters, pass it to [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-cryptoframework-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.
+
+**Inheritance/Implementation:** ECCCommonParamsSpec extends [AsyKeySpec](arkts-cryptoarchitecture-cryptoframework-asykeyspec-i.md)
+
+**Since:** 10
+
+<!--Device-cryptoFramework-interface ECCCommonParamsSpec extends AsyKeySpec--><!--Device-cryptoFramework-interface ECCCommonParamsSpec extends AsyKeySpec-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+
+## Modules to Import
+
+```TypeScript
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+```
+
+## a
+
+```TypeScript
+a: bigint
+```
+
+First coefficient **a** of the elliptic curve.
+
+**Type:** bigint
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-ECCCommonParamsSpec-a: bigint--><!--Device-ECCCommonParamsSpec-a: bigint-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+
+## b
+
+```TypeScript
+b: bigint
+```
+
+Second coefficient **b** of the elliptic curve.
+
+**Type:** bigint
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-ECCCommonParamsSpec-b: bigint--><!--Device-ECCCommonParamsSpec-b: bigint-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+
+## field
+
+```TypeScript
+field: ECField
+```
+
+Field of the elliptic curve. Currently, only **Fp** is supported.
+
+**Type:** ECField
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-ECCCommonParamsSpec-field: ECField--><!--Device-ECCCommonParamsSpec-field: ECField-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+
+## g
+
+```TypeScript
+g: Point
+```
+
+Base point g.
+
+**Type:** Point
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-ECCCommonParamsSpec-g: Point--><!--Device-ECCCommonParamsSpec-g: Point-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+
+## h
+
+```TypeScript
+h: number
+```
+
+Cofactor **h**.
+
+**Type:** number
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-ECCCommonParamsSpec-h: int--><!--Device-ECCCommonParamsSpec-h: int-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+
+## n
+
+```TypeScript
+n: bigint
+```
+
+Order **n** of the base point **g** in the ECC algorithm.
+
+**Type:** bigint
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-ECCCommonParamsSpec-n: bigint--><!--Device-ECCCommonParamsSpec-n: bigint-End-->
+
+**System capability:** 
+- API version 12 and later: SystemCapability.Security.CryptoFramework.Key.AsymKey
+- API version 10 to 11: SystemCapability.Security.CryptoFramework
+

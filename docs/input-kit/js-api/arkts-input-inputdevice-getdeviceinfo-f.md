@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="getdeviceinfo"></a>
 ## getDeviceInfo
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains information about the specified input device. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | number | Yes | Unique ID of the input device. If a physical device is repeatedly reinstalled or restarted, its ID may change. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<InputDeviceData> | Yes | Callback function. If the retrieval is successful, **err** is **undefined**, and **data** is the input device information (including the device ID, name, supported input capabilities). Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;InputDeviceData&gt; | Yes | Callback function. If the retrieval is successful, **err** is **undefined**, and **data** is the input device information (including the device ID, name, supported input capabilities). Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ struct Index {
 ```
 
 
+<a id="getdeviceinfo-1"></a>
 ## getDeviceInfo
 
 ```TypeScript
@@ -91,7 +93,7 @@ Obtains the information about the input device with the specified ID. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<InputDeviceData> | Promise used to return information about the input device, including device ID, name, supported source, physical address, version information, and product information. |
+| Promise&lt;InputDeviceData&gt; | Promise used to return information about the input device, including device ID, name, supported source, physical address, version information, and product information. |
 
 **Error codes:**
 

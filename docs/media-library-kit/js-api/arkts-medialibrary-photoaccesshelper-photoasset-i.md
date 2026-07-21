@@ -14,6 +14,7 @@ PhotoAsset provides APIs for encapsulating file asset attributes.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="clone"></a>
 ## clone
 
 ```TypeScript
@@ -34,13 +35,13 @@ Clones a media asset. The file name can be set, but the file type cannot be chan
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| title | string | Yes | Title of the cloned asset. The title must meet the following requirements:<br>- It must not contain a file name extension.<br>- The string length ranges from 1 to 255. (The asset file name is in the format of title + file name extension.)<br>- It must not contain any invalid characters, which are:\ / : * ? " ' ` &lt; &gt; \| { } [ ] |
+| title | string | Yes | Title of the cloned asset. The title must meet the following requirements:<br>- It must not contain a file name extension.<br>- The string length ranges from 1 to 255. (The asset file name is in the format of title + file name extension.)<br>- It must not contain any invalid characters, which are:\ / : * ? " ' ` < > \| { } [ ] |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset> | Promise used to return the [PhotoAsset](arkts-file-photoaccesshelper.md) instance. |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the [PhotoAsset](arkts-file-photoaccesshelper.md) instance. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ Clones a media asset. The file name can be set, but the file type cannot be chan
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -73,7 +75,7 @@ Closes the current file. This API uses an asynchronous callback to return the re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fd | number | Yes | FD of the file to close. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback function. If the current file is closed successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback function. If the current file is closed successfully, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -83,6 +85,7 @@ Closes the current file. This API uses an asynchronous callback to return the re
 | 13900020 | Invalid argument. |
 | 14000011 | System inner fail |
 
+<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -111,7 +114,7 @@ Closes the current file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -121,6 +124,7 @@ Closes the current file. This API uses a promise to return the result.
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="commitmodify"></a>
 ## commitModify
 
 ```TypeScript
@@ -143,7 +147,7 @@ Commits the modification on the file metadata to the database. This API uses an 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback function. If the file metadata is modified successfully,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback function. If the file metadata is modified successfully,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -156,6 +160,7 @@ Commits the modification on the file metadata to the database. This API uses an 
 | 14000001 | Invalid display name |
 | 14000011 | System inner fail |
 
+<a id="commitmodify-1"></a>
 ## commitModify
 
 ```TypeScript
@@ -178,7 +183,7 @@ Commits the modification on the file metadata to the database. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -191,6 +196,7 @@ Commits the modification on the file metadata to the database. This API uses a p
 | 14000001 | Invalid display name |
 | 14000011 | System inner fail |
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -226,6 +232,7 @@ Obtains a **PhotoAsset** member parameter.
 | 13900020 | Invalid argument |
 | 14000014 | The provided member must be a property name of PhotoKey. |
 
+<a id="getreadonlyfd"></a>
 ## getReadOnlyFd
 
 ```TypeScript
@@ -252,7 +259,7 @@ The returned FD must be closed when it is not required.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback function. If the current file is opened successfully,**err** is **undefined**, and **data** is the file descriptor. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback function. If the current file is opened successfully,**err** is **undefined**, and **data** is the file descriptor. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -263,6 +270,7 @@ The returned FD must be closed when it is not required.
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="getreadonlyfd-1"></a>
 ## getReadOnlyFd
 
 ```TypeScript
@@ -289,7 +297,7 @@ The returned FD must be closed when it is not required.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the FD of the file opened. |
+| Promise&lt;number&gt; | Promise used to return the FD of the file opened. |
 
 **Error codes:**
 
@@ -300,6 +308,7 @@ The returned FD must be closed when it is not required.
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="getthumbnail"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -322,7 +331,7 @@ Obtains the thumbnail of a file. This API uses an asynchronous callback to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback function. If the thumbnail of a file is successfully obtained, **err** is **undefined**, and **data** is the PixelMap of the thumbnail. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback function. If the thumbnail of a file is successfully obtained, **err** is **undefined**, and **data** is the PixelMap of the thumbnail. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -333,6 +342,7 @@ Obtains the thumbnail of a file. This API uses an asynchronous callback to retur
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getthumbnail-1"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -356,7 +366,7 @@ Obtains the file thumbnail of the given size. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | size | image.Size | Yes | Size of the thumbnail. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback function. If the thumbnail of a file is successfully obtained, **err** is **undefined**, and **data** is the PixelMap of the thumbnail. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback function. If the thumbnail of a file is successfully obtained, **err** is **undefined**, and **data** is the PixelMap of the thumbnail. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -367,6 +377,7 @@ Obtains the file thumbnail of the given size. This API uses an asynchronous call
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getthumbnail-2"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -395,7 +406,7 @@ Obtains the file thumbnail of the given size. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the PixelMap of the thumbnail. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the PixelMap of the thumbnail. |
 
 **Error codes:**
 
@@ -406,6 +417,7 @@ Obtains the file thumbnail of the given size. This API uses a promise to return 
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -425,7 +437,7 @@ Sets a **PhotoAsset** member parameter.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | member | string | Yes | Name of the member parameter to set, for example,[PhotoKeys](arkts-medialibrary-photoaccesshelper-photokeys-e.md).TITLE. The string length ranges from 1 to 255. |
-| value | string | Yes | Value of the member parameter to set. Only the value of [PhotoKeys](arkts-medialibrary-photoaccesshelper-photokeys-e.md).TITLE can be changed. The title must meet the following requirements:<br>- It must not contain a file name extension.<br>- The string length ranges from 1 to 255. (The asset file name is in the format of title + file name extension.)<br>- It must not contain any invalid characters, which are:\ / : * ? " ' ` &lt; &gt; \| { } [ ] |
+| value | string | Yes | Value of the member parameter to set. Only the value of [PhotoKeys](arkts-medialibrary-photoaccesshelper-photokeys-e.md).TITLE can be changed. The title must meet the following requirements:<br>- It must not contain a file name extension.<br>- The string length ranges from 1 to 255. (The asset file name is in the format of title + file name extension.)<br>- It must not contain any invalid characters, which are:\ / : * ? " ' ` < > \| { } [ ] |
 
 **Error codes:**
 
@@ -477,7 +489,7 @@ Type of the file.
 readonly uri: string
 ```
 
-Media asset URI, for example, **file://media/Photo/1/IMG_datetime_0001/displayName.jpg**. For details, see [Media File URI](../../../../file-management/user-file-uri-intro.md#media-file-uri).
+Media asset URI, for example, **file://media/Photo/1/IMG_datetime_0001/displayName.jpg**. For details, see [Media File URI](docroot://file-management/user-file-uri-intro.md#media-file-uri).
 
 **Type:** string
 

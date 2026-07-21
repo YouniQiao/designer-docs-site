@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="finishsession"></a>
 ## finishSession
 
 ```TypeScript
@@ -30,7 +31,7 @@ The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** mus
 | --- | --- | --- | --- |
 | handle | number | Yes | Handle of the **finishSession** operation, which is of the uint64 type. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Parameter set used for the **finishSession** operation. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HuksReturnResult> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the obtained **HuksReturnResult**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HuksReturnResult&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the obtained **HuksReturnResult**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** mus
 | [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 and later |
 
 
+<a id="finishsession-1"></a>
 ## finishSession
 
 ```TypeScript
@@ -98,8 +100,8 @@ The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** mus
 | --- | --- | --- | --- |
 | handle | number | Yes | Handle of the **finishSession** operation, which is of the uint64 type. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Parameter set used for the **finishSession** operation. |
-| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Authentication token for [refined key access control](../../../../security/UniversalKeystoreKit/huks-identity-authentication-overview.md#refined-key-access-control). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HuksReturnResult> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the obtained **HuksReturnResult**. Otherwise, **err** is an error object. |
+| token | Uint8Array | Yes | Authentication token for [refined key access control](docroot://security/UniversalKeystoreKit/huks-identity-authentication-overview.md#refined-key-access-control). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HuksReturnResult&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the obtained **HuksReturnResult**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -124,6 +126,7 @@ The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** mus
 | [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 and later |
 
 
+<a id="finishsession-2"></a>
 ## finishSession
 
 ```TypeScript
@@ -148,13 +151,13 @@ The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** mus
 | --- | --- | --- | --- |
 | handle | number | Yes | Handle of the **finishSession** operation, which is of the uint64 type. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Parameter set used for the **finishSession** operation. |
-| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | No | Authentication token for [refined key access control](../../../../security/UniversalKeystoreKit/huks-identity-authentication-overview.md#refined-key-access-control). If this parameter is left blank, refined key access control is not performed. |
+| token | Uint8Array | No | Authentication token for [refined key access control](docroot://security/UniversalKeystoreKit/huks-identity-authentication-overview.md#refined-key-access-control). If this parameter is left blank, refined key access control is not performed. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | Promise that returns the operation result. If the operation is successful,**outData** of **HuksReturnResult** returns the corresponding data. |
+| Promise&lt;HuksReturnResult&gt; | Promise that returns the operation result. If the operation is successful,**outData** of **HuksReturnResult** returns the corresponding data. |
 
 **Error codes:**
 

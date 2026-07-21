@@ -8,6 +8,7 @@ Render context defines the context for all rendering resources. Resources within
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="getrenderresourcefactory"></a>
 ## getRenderResourceFactory
 
 ```TypeScript
@@ -28,6 +29,7 @@ Get resource factory.
 | --- | --- |
 | [RenderResourceFactory](arkts-arkgraphics3d-scene-renderresourcefactory-i.md) | -- RenderResourceFactory instance |
 
+<a id="loadplugin"></a>
 ## loadPlugin
 
 ```TypeScript
@@ -52,8 +54,9 @@ Load external plugin
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise a boolean to show if the plugin load is successful |
+| Promise&lt;boolean&gt; | - Promise a boolean to show if the plugin load is successful |
 
+<a id="registerresourcepath"></a>
 ## registerResourcePath
 
 ```TypeScript

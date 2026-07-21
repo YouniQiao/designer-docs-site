@@ -14,6 +14,7 @@ Class to be override for backup extension ability.
 import { BundleVersion } from '@kit.CoreFileKit';
 ```
 
+<a id="onbackup"></a>
 ## onBackup
 
 ```TypeScript
@@ -41,6 +42,7 @@ class BackupExt extends BackupExtensionAbility {
 
 ```
 
+<a id="onbackupex"></a>
 ## onBackupEx
 
 ```TypeScript
@@ -134,6 +136,7 @@ class BackupExt extends BackupExtensionAbility {
 
 ```
 
+<a id="onprocess"></a>
 ## onProcess
 
 ```TypeScript
@@ -233,6 +236,7 @@ function appJob(progressInfo: MigrateProgressInfo, args: number) : string {
 
 ```
 
+<a id="onrelease"></a>
 ## onRelease
 
 ```TypeScript
@@ -259,7 +263,7 @@ Callback to be called before extension ability exits.Developer could override th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function |
+| Promise&lt;void&gt; | the promise returned by the function |
 
 **Example**
 
@@ -295,6 +299,7 @@ class BackupExt extends BackupExtensionAbility {
 
 ```
 
+<a id="onrestore"></a>
 ## onRestore
 
 ```TypeScript
@@ -330,6 +335,7 @@ class BackupExt extends BackupExtensionAbility {
 
 ```
 
+<a id="onrestoreex"></a>
 ## onRestoreEx
 
 ```TypeScript

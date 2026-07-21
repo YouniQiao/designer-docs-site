@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="off"></a>
 ## off('checkNotification')
 
 ```TypeScript
@@ -38,7 +39,7 @@ Unsubscribes from notification events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'checkNotification' | Yes | Event type. The value is fixed to **'checkNotification'**. |
-| callback | (checkInfo: NotificationCheckInfo) => NotificationCheckResult | No | Pointer to the notification verification function. |
+| callback | (checkInfo: NotificationCheckInfo) =&gt; NotificationCheckResult | No | Pointer to the notification verification function. |
 
 **Error codes:**
 

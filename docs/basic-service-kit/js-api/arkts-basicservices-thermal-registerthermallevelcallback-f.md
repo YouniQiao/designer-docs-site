@@ -6,6 +6,7 @@
 import { thermal } from '@kit.BasicServicesKit';
 ```
 
+<a id="registerthermallevelcallback"></a>
 ## registerThermalLevelCallback
 
 ```TypeScript
@@ -24,7 +25,7 @@ Registers a callback to be invoked when the thermal level changes. This API uses
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ThermalLevel> | Yes | Callback used to return thermal level. This parameter is of the function type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ThermalLevel&gt; | Yes | Callback used to return thermal level. This parameter is of the function type. |
 
 **Error codes:**
 

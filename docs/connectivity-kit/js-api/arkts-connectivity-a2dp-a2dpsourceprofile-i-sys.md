@@ -16,6 +16,7 @@ Manager a2dp source profile.
 import { a2dp } from '@kit.ConnectivityKit';
 ```
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -53,6 +54,7 @@ Initiate an A2DP connection to a remote device.
 | 2900004 | Profile not supported. |
 | 2900099 | Operation failed. |
 
+<a id="disableabsolutevolume"></a>
 ## disableAbsoluteVolume
 
 ```TypeScript
@@ -81,7 +83,7 @@ Turn off the absolute volume switch.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -95,6 +97,7 @@ Turn off the absolute volume switch.
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="disableabsolutevolume-1"></a>
 ## disableAbsoluteVolume
 
 ```TypeScript
@@ -118,7 +121,7 @@ Turn off the absolute volume switch..
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback result. |
 
 **Error codes:**
 
@@ -132,6 +135,7 @@ Turn off the absolute volume switch..
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="disableautoplay"></a>
 ## disableAutoPlay
 
 ```TypeScript
@@ -155,13 +159,13 @@ Restriction devices to play music within {@code duration} milliseconds of connec
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| duration | number | Yes | Restricted duration &lt;milliseconds&gt;. Valid range is from 3000ms to 20000ms. |
+| duration | number | Yes | Restricted duration <milliseconds>. Valid range is from 3000ms to 20000ms. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -175,6 +179,7 @@ Restriction devices to play music within {@code duration} milliseconds of connec
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -212,6 +217,7 @@ Disconnect the A2DP connection with the remote device.
 | 2900004 | Profile not supported. |
 | 2900099 | Operation failed. |
 
+<a id="enableabsolutevolume"></a>
 ## enableAbsoluteVolume
 
 ```TypeScript
@@ -240,7 +246,7 @@ Turn on the absolute volume switch.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -254,6 +260,7 @@ Turn on the absolute volume switch.
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="enableabsolutevolume-1"></a>
 ## enableAbsoluteVolume
 
 ```TypeScript
@@ -277,7 +284,7 @@ Turn on the absolute volume switch..
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback result. |
 
 **Error codes:**
 
@@ -291,6 +298,7 @@ Turn on the absolute volume switch..
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="enableautoplay"></a>
 ## enableAutoPlay
 
 ```TypeScript
@@ -319,7 +327,7 @@ Allow devices to automatically play music when connected.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -333,6 +341,7 @@ Allow devices to automatically play music when connected.
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="getautoplaydisabledduration"></a>
 ## getAutoPlayDisabledDuration
 
 ```TypeScript
@@ -361,7 +370,7 @@ Obtains the duration for which automatic playback is disabled.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the duration &lt;milliseconds&gt;;If returns { @code -1 } means allow devices automatic play music when connected. |
+| Promise&lt;number&gt; | Returns the duration <milliseconds>;If returns { @code -1 } means allow devices automatic play music when connected. |
 
 **Error codes:**
 
@@ -375,6 +384,7 @@ Obtains the duration for which automatic playback is disabled.
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="getcurrentcodecinfo"></a>
 ## getCurrentCodecInfo
 
 ```TypeScript
@@ -417,6 +427,7 @@ Get codec information.
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="getcurrentfullcodecinfo"></a>
 ## getCurrentFullCodecInfo
 
 ```TypeScript
@@ -459,6 +470,7 @@ Get the full codec capabilities negotiated between the active device and the loc
 | 2900099 | Operation failed. |
 | 2902008 | Current device is not an active device. |
 
+<a id="isabsolutevolumeenabled"></a>
 ## isAbsoluteVolumeEnabled
 
 ```TypeScript
@@ -487,7 +499,7 @@ Checks whether the absolute volume is enabled.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns the promise object. |
+| Promise&lt;boolean&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -501,6 +513,7 @@ Checks whether the absolute volume is enabled.
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="isabsolutevolumeenabled-1"></a>
 ## isAbsoluteVolumeEnabled
 
 ```TypeScript
@@ -524,7 +537,7 @@ Checks whether the absolute volume is enabled.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback result. |
 
 **Error codes:**
 
@@ -538,6 +551,7 @@ Checks whether the absolute volume is enabled.
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="isabsolutevolumesupported"></a>
 ## isAbsoluteVolumeSupported
 
 ```TypeScript
@@ -566,7 +580,7 @@ Checks whether the device supports absolute volume.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns the promise object. |
+| Promise&lt;boolean&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -580,6 +594,7 @@ Checks whether the device supports absolute volume.
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="isabsolutevolumesupported-1"></a>
 ## isAbsoluteVolumeSupported
 
 ```TypeScript
@@ -603,7 +618,7 @@ Checks whether the device supports absolute volume.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to listen for the pairing request event. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to listen for the pairing request event. |
 
 **Error codes:**
 
@@ -617,6 +632,7 @@ Checks whether the device supports absolute volume.
 | 2900003 | Bluetooth disabled. |
 | 2900099 | Operation failed. |
 
+<a id="setcurrentcodecinfo"></a>
 ## setCurrentCodecInfo
 
 ```TypeScript

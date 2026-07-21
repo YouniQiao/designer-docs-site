@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="reserveprofilesforfactoryrestore"></a>
 ## reserveProfilesForFactoryRestore
 
 ```TypeScript
@@ -34,7 +35,7 @@ Ensure that profiles will be retained on the next factory reset.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultCode> | Returns the result code. |
+| Promise&lt;ResultCode&gt; | Returns the result code. |
 
 **Error codes:**
 

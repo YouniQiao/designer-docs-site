@@ -6,6 +6,7 @@
 import { text } from '@kit.ArkGraphics2D';
 ```
 
+<a id="getsystemfontfullnamesbytype"></a>
 ## getSystemFontFullNamesByType
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the full names of all fonts of the specified type. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the full names of all fonts of the specified type. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the full names of all fonts of the specified type. |
 
 **Error codes:**
 

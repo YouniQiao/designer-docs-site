@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="on"></a>
 ## on('discoveryResult')
 
 ```TypeScript
@@ -34,7 +35,7 @@ Subscribe the event reported when a remote Bluetooth device is discovered.On API
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discoveryResult' | Yes | Type of the discovering event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<DiscoveryResult>> | Yes | Callback used to listen for the discovering event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;DiscoveryResult&gt;&gt; | Yes | Callback used to listen for the discovering event. |
 
 **Error codes:**
 

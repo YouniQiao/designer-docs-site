@@ -6,6 +6,7 @@
 import { proxyChannelManager } from '@kit.DistributedServiceKit';
 ```
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript
@@ -29,13 +30,13 @@ Sends data to the peer end. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | channelId | number | Yes | Channel ID obtained when the proxy channel is opened. |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Byte message sent to the peer end. The maximum length is 4096 bytes. |
+| data | ArrayBuffer | Yes | Byte message sent to the peer end. The maximum length is 4096 bytes. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

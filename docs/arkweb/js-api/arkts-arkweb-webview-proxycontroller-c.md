@@ -14,6 +14,7 @@ This class is used for set proxy for ArkWeb.
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="applyproxyoverride"></a>
 ## applyProxyOverride
 
 ```TypeScript
@@ -43,6 +44,7 @@ Sets ProxyConfig which will be used by all Webs in the app. URLs that match patt
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 
+<a id="removeproxyoverride"></a>
 ## removeProxyOverride
 
 ```TypeScript

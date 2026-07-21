@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="getapplicationwindowstates"></a>
 ## getApplicationWindowStates
 
 ```TypeScript
@@ -36,7 +37,7 @@ Gets the window states of the application.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WindowStateInfo> | Returns the window states information of application. |
+| Array&lt;WindowStateInfo&gt; | Returns the window states information of application. |
 
 **Error codes:**
 

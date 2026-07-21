@@ -16,6 +16,7 @@ Provides APIs to manage albums.
 import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="commitmodify"></a>
 ## commitModify
 
 ```TypeScript
@@ -36,7 +37,7 @@ Commits the modification on the album attributes to the database. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="converttophotoalbum"></a>
 ## convertToPhotoAlbum
 
 ```TypeScript

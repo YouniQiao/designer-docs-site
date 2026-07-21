@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="kickoutfromconference"></a>
 ## kickOutFromConference
 
 ```TypeScript
@@ -29,7 +30,7 @@ Kick out call from the conference call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call which kick out. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of kickOutFromConference. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of kickOutFromConference. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ call.kickOutFromConference(1, (err: BusinessError) => {
 ```
 
 
+<a id="kickoutfromconference-1"></a>
 ## kickOutFromConference
 
 ```TypeScript
@@ -87,7 +89,7 @@ Kick out call from the conference call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the kickOutFromConference. |
+| Promise&lt;void&gt; | The promise returned by the kickOutFromConference. |
 
 **Error codes:**
 

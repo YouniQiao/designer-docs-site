@@ -16,6 +16,7 @@ Defines the key derivation function class. Before using APIs of this class, you 
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="generatesecret"></a>
 ## generateSecret
 
 ```TypeScript
@@ -39,7 +40,7 @@ Generates a key based on the specified key derivation parameters. This API uses 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | params | [KdfSpec](arkts-cryptoarchitecture-cryptoframework-kdfspec-i.md) | Yes | Parameters of the key derivation function. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataBlob> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the derived key obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataBlob&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the derived key obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -98,6 +99,7 @@ kdf.generateSecret(spec, (err, secret) => {
 
 ```
 
+<a id="generatesecret-1"></a>
 ## generateSecret
 
 ```TypeScript
@@ -126,7 +128,7 @@ Generates a key based on the specified key derivation parameters. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob> | Promise used to return the derived key. |
+| Promise&lt;DataBlob&gt; | Promise used to return the derived key. |
 
 **Error codes:**
 
@@ -185,6 +187,7 @@ kdfPromise.then(secret => {
 
 ```
 
+<a id="generatesecretsync"></a>
 ## generateSecretSync
 
 ```TypeScript

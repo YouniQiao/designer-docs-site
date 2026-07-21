@@ -14,13 +14,14 @@ Observes lifecycle status changes of a custom component,and triggers the lifecyc
 import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInactive, PersistenceV2, ComponentDisappear, MutableBinding, CustomComponentLifecycleObserver, AppStorageV2, Type, ConnectOptionsCollections, CollectionType, CustomComponentContext, IReusePool, ConnectOptions, UIUtils, ComponentActive, CustomComponentLifecycle, ComponentInit, ComponentAppear, ComponentBuilt, ComponentRecycle, IReusableInfo } from '@kit.ArkUI';
 ```
 
+<a id="abouttoappear"></a>
 ## aboutToAppear
 
 ```TypeScript
 aboutToAppear?(): void
 ```
 
-Called after a new instance of the custom component is created and before its **build()** function is executed.You can modify the status variables in this phase.Its function is similar to that of [aboutToAppear](../arkts-components/arkts-arkui-common-basecustomcomponent-c.md#abouttoappear-1),but it is triggered under the constraints of the custom component state machine.
+Called after a new instance of the custom component is created and before its **build()** function is executed.You can modify the status variables in this phase.Its function is similar to that of [aboutToAppear](../arkts-components/arkts-arkui-basecustomcomponent-c.md#abouttoappear-1),but it is triggered under the constraints of the custom component state machine.
 
 **Since:** 23
 
@@ -32,6 +33,7 @@ Called after a new instance of the custom component is created and before its **
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="abouttodisappear"></a>
 ## aboutToDisappear
 
 ```TypeScript
@@ -50,6 +52,7 @@ Called before the custom component is destroyed. You are advised not to change s
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="abouttorecycle"></a>
 ## aboutToRecycle
 
 ```TypeScript
@@ -68,6 +71,7 @@ Called after necessary component recycling operations defined in the application
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="abouttoreuse"></a>
 ## aboutToReuse
 
 ```TypeScript
@@ -90,8 +94,9 @@ Called when a reusable custom component is re-added to the node tree from the ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| params | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object \| undefined \| null> | No | The value is not **undefined** in the reuse callback of the V1 component and is **undefined** in the reuse callback of the V2 component. |
+| params | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object \| undefined \| null&gt; | No | The value is not **undefined** in the reuse callback of the V1 component and is **undefined** in the reuse callback of the V2 component. |
 
+<a id="ondidbuild"></a>
 ## onDidBuild
 
 ```TypeScript

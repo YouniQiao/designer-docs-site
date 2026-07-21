@@ -4,6 +4,7 @@
 
 <!--Device-unnamed-interface EvalErrorConstructor extends ErrorConstructor--><!--Device-unnamed-interface EvalErrorConstructor extends ErrorConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -24,6 +25,7 @@ new(message?: string): EvalError
 | --- | --- |
 | [EvalError](arkts-na-lib-es5-evalerror-i.md) |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript

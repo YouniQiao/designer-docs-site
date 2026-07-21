@@ -14,6 +14,7 @@ Provides enhanced audio device management capabilities.
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="getsoundcardinfo"></a>
 ## getSoundCardInfo
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the sound card information. This method uses a Promise to return the que
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SoundCardInfo> | Promise used to return the sound card information. |
+| Promise&lt;SoundCardInfo&gt; | Promise used to return the sound card information. |
 
 **Error codes:**
 

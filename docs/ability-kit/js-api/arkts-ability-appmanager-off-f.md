@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="off"></a>
 ## off('applicationState')
 
 ```TypeScript
@@ -27,8 +28,8 @@ Unregisters the observer used to listen for application state changes. This API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'applicationState' | Yes | Type of the API to call. It is fixed at **'applicationState'**. |
-| observerId | number | Yes | ID of the observer registered, which is the listener ID returned by [on('applicationState')](arkts-ability-appmanager-on-f.md#on-1). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the application state observer is deregistered, **err** is undefined; otherwise, **error** is an error object. |
+| observerId | number | Yes | ID of the observer registered, which is the listener ID returned by [on('applicationState')](appManager.on(type: 'applicationState', observer: ApplicationStateObserver)). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the application state observer is deregistered, **err** is undefined; otherwise, **error** is an error object. |
 
 **Error codes:**
 
@@ -100,6 +101,7 @@ try {
 ```
 
 
+<a id="off-1"></a>
 ## off('applicationState')
 
 ```TypeScript
@@ -121,13 +123,13 @@ Unregisters the observer used to listen for application state changes. This API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'applicationState' | Yes | Type of the API to call. It is fixed at **'applicationState'**. |
-| observerId | number | Yes | ID of the observer registered, which is the listener ID returned by [on('applicationState')](arkts-ability-appmanager-on-f.md#on-1). |
+| observerId | number | Yes | ID of the observer registered, which is the listener ID returned by [on('applicationState')](appManager.on(type: 'applicationState', observer: ApplicationStateObserver)). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

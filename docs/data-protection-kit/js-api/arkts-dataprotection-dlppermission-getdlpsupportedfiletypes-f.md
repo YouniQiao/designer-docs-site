@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="getdlpsupportedfiletypes"></a>
 ## getDLPSupportedFileTypes
 
 ```TypeScript
@@ -26,7 +27,7 @@ This API is used to obtain the types of files that can be used to generate DLP f
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the file name extension types obtained. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the file name extension types obtained. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ dlpPermission.getDLPSupportedFileTypes().then((fileTypes) => { // Obtain the fil
 ```
 
 
+<a id="getdlpsupportedfiletypes-1"></a>
 ## getDLPSupportedFileTypes
 
 ```TypeScript
@@ -69,7 +71,7 @@ This API is used to obtain the types of files that can be used to generate DLP f
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

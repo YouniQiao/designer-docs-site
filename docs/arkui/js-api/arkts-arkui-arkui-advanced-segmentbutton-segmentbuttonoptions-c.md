@@ -8,6 +8,8 @@ Provides initial data and custom properties for the **SegmentButton** component.
 
 **Since:** 11
 
+**Decorator:** @Observed
+
 <!--Device-unnamed-declare class SegmentButtonOptions--><!--Device-unnamed-declare class SegmentButtonOptions-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -18,6 +20,7 @@ Provides initial data and custom properties for the **SegmentButton** component.
 import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions, SegmentButtonIconTextItem, SegmentButtonItemOptions, SegmentButtonTextItem, CapsuleSegmentButtonOptions, SegmentButtonOptions, CapsuleSegmentButtonConstructionOptions, SegmentButtonItemTuple, SegmentButton, SegmentButtonItemArray, SegmentButtonItemOptionsArray, SegmentButtonIconItem, BorderRadiusMode, TabSegmentButtonConstructionOptions, TabSegmentButtonOptions, ItemRestriction, DimensionNoPercentage } from '@kit.ArkUI';
 ```
 
+<a id="capsule"></a>
 ## capsule
 
 ```TypeScript
@@ -48,6 +51,7 @@ Creates a **SegmentButtonOptions** object specifically for capsule-style segment
 | --- | --- |
 | [SegmentButtonOptions](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonoptions-c.md) | Options of the **SegmentButton** component. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -70,8 +74,9 @@ Constructor.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | TabSegmentButtonOptions \| CapsuleSegmentButtonOptions | Yes | Configuration options for tab-style or capsule-style segmented buttons. |
+| options | [TabSegmentButtonOptions](arkts-arkui-arkui-advanced-segmentbutton-tabsegmentbuttonoptions-i.md) \| CapsuleSegmentButtonOptions | Yes | Configuration options for tab-style or capsule-style segmented buttons. |
 
+<a id="tab"></a>
 ## tab
 
 ```TypeScript
@@ -220,7 +225,7 @@ Icon + text button: **{ top: 6, right: 8, bottom: 6, left: 8 }**.
 
 Unit: vp
 
-**Type:** Padding | Dimension
+**Type:** Padding \| Dimension
 
 **Since:** 11
 
@@ -584,7 +589,7 @@ When the value is **undefined**, the text padding is 0.
 
 Unit: vp
 
-**Type:** Padding | Dimension
+**Type:** Padding \| Dimension
 
 **Since:** 11
 
@@ -610,7 +615,7 @@ Type of the **SegmentButton** component.
 
 **"capsule"**: capsule-style segmented buttons, suitable for single or multiple selection scenarios.
 
-**Type:** "tab" | "capsule"
+**Type:** "tab" \| "capsule"
 
 **Since:** 11
 

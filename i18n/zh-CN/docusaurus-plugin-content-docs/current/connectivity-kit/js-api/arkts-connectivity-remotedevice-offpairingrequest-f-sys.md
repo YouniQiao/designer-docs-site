@@ -6,6 +6,7 @@
 import { remoteDevice } from '@kit.ConnectivityKit';
 ```
 
+<a id="offpairingrequest"></a>
 ## offPairingRequest
 
 ```TypeScript
@@ -28,7 +29,7 @@ function offPairingRequest(callback?: Callback<PairingRequestParam>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PairingRequestParam> | 否 | 用于监听配对请求事件的回调。 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;PairingRequestParam&gt; | 否 | 用于监听配对请求事件的回调。 |
 
 **错误码：**
 

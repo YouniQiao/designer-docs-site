@@ -14,6 +14,7 @@ Defines the connection of the TCPSocket client and server.
 import { socket } from '@kit.NetworkKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -34,7 +35,7 @@ Closes a TCPSocket client connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of close. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of close. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -84,7 +86,7 @@ Closes a TCPSocket client connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -110,6 +112,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="getlocaladdress"></a>
 ## getLocalAddress
 
 ```TypeScript
@@ -128,7 +131,7 @@ Obtains the local address of a TCPSocketServer connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetAddress> | The promise returned by the function. |
+| Promise&lt;NetAddress&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -178,6 +181,7 @@ tcpServer.listen(listenAddr, (err: BusinessError) => {
 
 ```
 
+<a id="getremoteaddress"></a>
 ## getRemoteAddress
 
 ```TypeScript
@@ -198,7 +202,7 @@ Obtains the peer address of a TCPSocketServer connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetAddress> | Yes | The callback of getRemoteAddress. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetAddress&gt; | Yes | The callback of getRemoteAddress. |
 
 **Error codes:**
 
@@ -228,6 +232,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="getremoteaddress-1"></a>
 ## getRemoteAddress
 
 ```TypeScript
@@ -248,7 +253,7 @@ Obtains the peer address of a TCPSocketServer connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetAddress> | The promise returned by the function. |
+| Promise&lt;NetAddress&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -275,6 +280,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="getsocketfd"></a>
 ## getSocketFd
 
 ```TypeScript
@@ -295,7 +301,7 @@ Obtains the file descriptor of the TCPSocketConnection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returns the file descriptor of the TCP socket connection. |
+| Promise&lt;number&gt; | The promise returns the file descriptor of the TCP socket connection. |
 
 **Error codes:**
 
@@ -329,6 +335,7 @@ tcpServer.listen(listenAddr, (err: BusinessError) => {
 
 ```
 
+<a id="off"></a>
 ## off('message')
 
 ```TypeScript
@@ -348,7 +355,7 @@ Cancels listening for message receiving events of the TCPSocketConnection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SocketMessageInfo> | No | The callback of off. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SocketMessageInfo&gt; | No | The callback of off. |
 
 **Error codes:**
 
@@ -383,6 +390,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="off-1"></a>
 ## off('close')
 
 ```TypeScript
@@ -402,7 +410,7 @@ Cancels listening for close events of the TCPSocketConnection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | The callback of off. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | The callback of off. |
 
 **Error codes:**
 
@@ -428,6 +436,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="off-2"></a>
 ## off('error')
 
 ```TypeScript
@@ -474,6 +483,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="on"></a>
 ## on('message')
 
 ```TypeScript
@@ -493,7 +503,7 @@ Listens for message receiving events of the TCPSocketConnection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SocketMessageInfo> | Yes | The callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SocketMessageInfo&gt; | Yes | The callback of on. |
 
 **Error codes:**
 
@@ -525,6 +535,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('close')
 
 ```TypeScript
@@ -544,7 +555,7 @@ Listens for close events of the TCPSocketConnection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | The callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | The callback of on. |
 
 **Error codes:**
 
@@ -567,6 +578,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="on-2"></a>
 ## on('error')
 
 ```TypeScript
@@ -609,6 +621,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="send"></a>
 ## send
 
 ```TypeScript
@@ -630,7 +643,7 @@ Sends data over a TCPSocketServer connection to client.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [TCPSendOptions](arkts-network-socket-tcpsendoptions-i.md) | Yes | Parameters for sending data {@link TCPSendOptions}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of send. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of send. |
 
 **Error codes:**
 
@@ -658,6 +671,7 @@ tcpServer.on('connect', (client: socket.TCPSocketConnection) => {
 
 ```
 
+<a id="send-1"></a>
 ## send
 
 ```TypeScript
@@ -684,7 +698,7 @@ Sends data over a TCPSocketServer connection to client.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

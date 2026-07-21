@@ -8,6 +8,7 @@ Controls tag read and write.<p>Classes for different types of tags inherit from 
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -34,6 +35,7 @@ Connects to a tag. Must be called before data is read from or written to the tag
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 
+<a id="connecttag"></a>
 ## connectTag
 
 ```TypeScript
@@ -60,6 +62,7 @@ Connects to a tag.<p>This method must be called before data is read from or writ
 | --- | --- |
 | boolean | Returns {@code true} if the connection is set up; returns {@code false} otherwise. |
 
+<a id="getmaxsendlength"></a>
 ## getMaxSendLength
 
 ```TypeScript
@@ -86,6 +89,7 @@ Queries the maximum length of data that can be sent to a tag.
 | --- | --- |
 | number | Returns the maximum length of the data to be sent to the tag. |
 
+<a id="getmaxtransmitsize"></a>
 ## getMaxTransmitSize
 
 ```TypeScript
@@ -118,6 +122,7 @@ Obtains the maximum length of data that can be sent to a tag.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 
+<a id="getsenddatatimeout"></a>
 ## getSendDataTimeout
 
 ```TypeScript
@@ -144,6 +149,7 @@ Queries the timeout duration (ms) for sending data to a tag.
 | --- | --- |
 | number | Returns the timeout duration. |
 
+<a id="gettaginfo"></a>
 ## getTagInfo
 
 ```TypeScript
@@ -170,6 +176,7 @@ Obtains the tag information.
 | --- | --- |
 | tag.TagInfo | Returns the tag information, which is a {@link TagInfo} object. |
 
+<a id="gettimeout"></a>
 ## getTimeout
 
 ```TypeScript
@@ -202,6 +209,7 @@ Obtains the timeout duration (ms) for sending data to a tag.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 
+<a id="isconnected"></a>
 ## isConnected
 
 ```TypeScript
@@ -230,6 +238,7 @@ Checks whether a connection has been set up with a tag.
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 
+<a id="istagconnected"></a>
 ## isTagConnected
 
 ```TypeScript
@@ -254,6 +263,7 @@ Checks whether a connection has been set up with a tag.
 | --- | --- |
 | boolean | Returns {@code true} if a connection has been set up with the tag;returns {@code false} otherwise. |
 
+<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -274,6 +284,7 @@ Resets a connection with a tag and restores the default timeout duration for wri
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="resetconnection"></a>
 ## resetConnection
 
 ```TypeScript
@@ -300,6 +311,7 @@ Resets a connection with a tag and restores the default timeout duration for wri
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript
@@ -330,8 +342,9 @@ Writes data to a tag.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number[]> | Returns bytes received in response. Or bytes with a length of 0 if the data fails to be written to the tag. |
+| Promise&lt;number[]&gt; | Returns bytes received in response. Or bytes with a length of 0 if the data fails to be written to the tag. |
 
+<a id="senddata-1"></a>
 ## sendData
 
 ```TypeScript
@@ -357,8 +370,9 @@ Writes data to a tag.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | number[] | Yes | Indicates the data to be written to the tag. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number[]> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number[]&gt; | Yes | The callback. |
 
+<a id="setsenddatatimeout"></a>
 ## setSendDataTimeout
 
 ```TypeScript
@@ -391,6 +405,7 @@ Sets the timeout duration (ms) for sending data to a tag.<p>If data is not sent 
 | --- | --- |
 | boolean | Returns {@code true} if the setting is successful; returns {@code false} otherwise. |
 
+<a id="settimeout"></a>
 ## setTimeout
 
 ```TypeScript
@@ -424,6 +439,7 @@ Sets the timeout duration (ms) for sending data to a tag.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 
+<a id="transmit"></a>
 ## transmit
 
 ```TypeScript
@@ -452,7 +468,7 @@ Writes data to a tag.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number[]> | Returns bytes received in response. Or bytes with a length of 0 if the data fails to be written to the tag. |
+| Promise&lt;number[]&gt; | Returns bytes received in response. Or bytes with a length of 0 if the data fails to be written to the tag. |
 
 **Error codes:**
 
@@ -464,6 +480,7 @@ Writes data to a tag.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="transmit-1"></a>
 ## transmit
 
 ```TypeScript
@@ -487,7 +504,7 @@ Writes data to a tag.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | number[] | Yes | Indicates the data to be written to the tag. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number[]> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number[]&gt; | Yes | The callback. |
 
 **Error codes:**
 

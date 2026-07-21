@@ -6,6 +6,7 @@
 import { fastbuffer } from '@kit.ArkTS';
 ```
 
+<a id="isbuffer"></a>
 ## isBuffer
 
 ```TypeScript
@@ -26,7 +27,7 @@ Returns true if obj is a FastBuffer, false otherwise
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| obj | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | The object to check if it's a FastBuffer |
+| obj | Object | Yes | The object to check if it's a FastBuffer |
 
 **Return value:**
 

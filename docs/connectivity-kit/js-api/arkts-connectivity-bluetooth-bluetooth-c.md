@@ -14,6 +14,7 @@ Provides methods to manage BLE scan.
 import { BluetoothDevice, BLEFoundResponse, StopBLEScanOptions, SubscribeBLEFoundOptions, StartBLEScanOptions } from '@kit.ConnectivityKit';
 ```
 
+<a id="startblescan"></a>
 ## startBLEScan
 
 ```TypeScript
@@ -36,6 +37,7 @@ Start BLE scan
 | --- | --- | --- | --- |
 | options | [StartBLEScanOptions](arkts-connectivity-bluetooth-startblescanoptions-i.md) | Yes | Options |
 
+<a id="stopblescan"></a>
 ## stopBLEScan
 
 ```TypeScript
@@ -58,6 +60,7 @@ Stop BLE scan
 | --- | --- | --- | --- |
 | options | [StopBLEScanOptions](arkts-connectivity-bluetooth-stopblescanoptions-i.md) | Yes | Options |
 
+<a id="subscribeblefound"></a>
 ## subscribeBLEFound
 
 ```TypeScript
@@ -80,6 +83,7 @@ Subscribe BLE found
 | --- | --- | --- | --- |
 | options | [SubscribeBLEFoundOptions](arkts-connectivity-bluetooth-subscribeblefoundoptions-i.md) | Yes | Options |
 
+<a id="unsubscribeblefound"></a>
 ## unsubscribeBLEFound
 
 ```TypeScript

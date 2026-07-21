@@ -6,6 +6,7 @@
 import { commonEventManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="setstaticsubscriberstate"></a>
 ## setStaticSubscriberState
 
 ```TypeScript
@@ -29,7 +30,7 @@ Enables or disables static subscription for an application. This API uses an asy
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether static subscription is enabled.<br> **true**: enabled.<br>**false**: disabled. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ commonEventManager.setStaticSubscriberState(true, (err: BusinessError) => {
 ```
 
 
+<a id="setstaticsubscriberstate-1"></a>
 ## setStaticSubscriberState
 
 ```TypeScript
@@ -84,7 +86,7 @@ Enables or disables static subscription for an application. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -109,6 +111,7 @@ commonEventManager.setStaticSubscriberState(false).then(() => {
 ```
 
 
+<a id="setstaticsubscriberstate-2"></a>
 ## setStaticSubscriberState
 
 ```TypeScript
@@ -132,13 +135,13 @@ Enables or disables the static subscription event for the current application an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether static subscription is enabled.<br> **true**: enabled.<br>**false**: disabled. |
-| events | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Name of a recorded event. |
+| events | Array&lt;string&gt; | No | Name of a recorded event. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

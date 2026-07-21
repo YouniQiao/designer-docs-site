@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getnetworksearchinformation"></a>
 ## getNetworkSearchInformation
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get network search information.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetworkSearchResult> | Yes | Indicates the callback for getting the search results of the network. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetworkSearchResult&gt; | Yes | Indicates the callback for getting the search results of the network. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ radio.getNetworkSearchInformation(0, (err: BusinessError, data: radio.NetworkSea
 ```
 
 
+<a id="getnetworksearchinformation-1"></a>
 ## getNetworkSearchInformation
 
 ```TypeScript
@@ -87,7 +89,7 @@ Get network search information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetworkSearchResult> | Returns the search results of the network. |
+| Promise&lt;NetworkSearchResult&gt; | Returns the search results of the network. |
 
 **Error codes:**
 

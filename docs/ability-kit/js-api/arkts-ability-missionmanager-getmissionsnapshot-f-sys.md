@@ -6,6 +6,7 @@
 import { missionManager } from '@kit.AbilityKit';
 ```
 
+<a id="getmissionsnapshot"></a>
 ## getMissionSnapShot
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the snapshot of a given mission. This API uses an asynchronous callback 
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Device ID. It is a null string by default for the local device. |
 | missionId | number | Yes | Mission ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<MissionSnapshot> | Yes | Callback used to return the snapshot information obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;MissionSnapshot&gt; | Yes | Callback used to return the snapshot information obtained. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ try {
 ```
 
 
+<a id="getmissionsnapshot-1"></a>
 ## getMissionSnapShot
 
 ```TypeScript
@@ -93,7 +95,7 @@ Obtains the snapshot of a given mission. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MissionSnapshot> | Promise used to return the snapshot information obtained. |
+| Promise&lt;MissionSnapshot&gt; | Promise used to return the snapshot information obtained. |
 
 **Error codes:**
 

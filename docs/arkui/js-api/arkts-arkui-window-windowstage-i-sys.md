@@ -16,6 +16,7 @@ Before calling any of the following APIs, you must use [onWindowStageCreate()](.
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="disablewindowdecor"></a>
 ## disableWindowDecor
 
 ```TypeScript
@@ -61,6 +62,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="removeimageforrecent"></a>
 ## removeImageForRecent
 
 ```TypeScript
@@ -86,7 +88,7 @@ Removes the image that the application has set to be displayed in the multitaski
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -98,6 +100,7 @@ Removes the image that the application has set to be displayed in the multitaski
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setimageforrecent"></a>
 ## setImageForRecent
 
 ```TypeScript
@@ -110,7 +113,7 @@ Sets the image displayed in the multitasking view and on dock hover. This API us
 >  
 > Before calling this API, you are advised to complete page loading via  
 > [loadContent](arkts-arkui-window-window-i.md#loadcontent-1) or  
-> [setUIContent](arkts-arkui-window-window-i.md#setuicontent-2). If this API is called before the application  
+> [setUIContent](arkts-arkui-window-window-i.md#setuicontent-1). If this API is called before the application  
 > completes page loading, the intended functionality does not take effect. As a result, only the application's  
 > launch page is displayed in the multitasking view.
 
@@ -132,13 +135,13 @@ Sets the image displayed in the multitasking view and on dock hover. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | imageResource | number \| image.PixelMap | Yes | imageResourceId or pixelMap for recent image.imageResourceId Value Range: [0x1000000, 0xffffffff]. |
-| value | [ImageFit](arkts-arkui-enums-imagefit-e.md) | Yes | Sets the zoom type of an image. |
+| value | [ImageFit](arkts-arkui-imagefit-e.md) | Yes | Sets the zoom type of an image. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -151,6 +154,7 @@ Sets the image displayed in the multitasking view and on dock hover. This API us
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause:1. Invalid parameter range. 2. Invalid parameter length. |
 
+<a id="setimageforrecent-1"></a>
 ## setImageForRecent
 
 ```TypeScript
@@ -174,13 +178,13 @@ Sets the image displayed in the multitasking view. This API uses a promise to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | imgResourceId | number | Yes | Resource ID of the custom image. The image must be stored in the **resources/base/media** directory and its resource ID can be obtained using the **$r** resource access mode.For example, to obtain the resource ID of the startIcon image, use the following: $r("app.media.startIcon").id. |
-| value | [ImageFit](arkts-arkui-enums-imagefit-e.md) | Yes | Fill mode of the custom image. |
+| value | [ImageFit](arkts-arkui-imagefit-e.md) | Yes | Fill mode of the custom image. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -219,6 +223,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="setshowonlockscreen"></a>
 ## setShowOnLockScreen
 
 ```TypeScript

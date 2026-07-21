@@ -1,5 +1,6 @@
 # getSlot
 
+<a id="getslot"></a>
 ## getSlot
 
 ```TypeScript
@@ -23,9 +24,10 @@ Obtains a notification slot of a specified type. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotType | [SlotType](arkts-notification-notificationmanager-slottype-e.md) | Yes | Type of the notification slot, which can be used for social communication, service information, content consultation, and other purposes. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NotificationSlot> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NotificationSlot&gt; | Yes | Callback used to return the result. |
 
 
+<a id="getslot-1"></a>
 ## getSlot
 
 ```TypeScript
@@ -54,5 +56,5 @@ Obtains a notification slot of a specified type. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NotificationSlot> | Promise used to return the result. |
+| Promise&lt;NotificationSlot&gt; | Promise used to return the result. |
 

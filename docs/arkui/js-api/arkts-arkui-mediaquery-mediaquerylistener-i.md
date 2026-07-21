@@ -18,6 +18,7 @@ Inherits from [MediaQueryResult](arkts-arkui-mediaquery-mediaqueryresult-i.md).
 import { mediaquery } from '@kit.ArkUI';
 ```
 
+<a id="off"></a>
 ## off('change')
 
 ```TypeScript
@@ -41,7 +42,7 @@ Deregisters a media query listener, so that no callback is triggered when the me
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Listener type. The value is fixed at **'change'**. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<MediaQueryResult> | No | Callback to unregister. If this parameter is not specified, all callbacks under this handle are unregistered. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;MediaQueryResult&gt; | No | Callback to unregister. If this parameter is not specified, all callbacks under this handle are unregistered. |
 
 **Example**
 
@@ -61,6 +62,7 @@ listener.off('change', onPortrait) // Unregister the callback.
 
 ```
 
+<a id="on"></a>
 ## on('change')
 
 ```TypeScript
@@ -88,7 +90,7 @@ Registers a media query listener. The callback is triggered when the media attri
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Listener type. The value is fixed at **'change'**. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<MediaQueryResult> | Yes | Callback registered with media query. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;MediaQueryResult&gt; | Yes | Callback registered with media query. |
 
 **Example**
 

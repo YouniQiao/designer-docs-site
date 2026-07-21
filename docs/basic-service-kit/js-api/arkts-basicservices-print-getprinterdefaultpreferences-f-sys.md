@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="getprinterdefaultpreferences"></a>
 ## getPrinterDefaultPreferences
 
 ```TypeScript
@@ -36,7 +37,7 @@ Get default preferences by printer ID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PrinterPreferences> | - Promise that resolves with the default preferences of the printer. |
+| Promise&lt;PrinterPreferences&gt; | - Promise that resolves with the default preferences of the printer. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { sendablePreferences } from '@kit.ArkData';
 ```
 
+<a id="getpreferences"></a>
 ## getPreferences
 
 ```TypeScript
@@ -33,7 +34,7 @@ Obtains a **Preferences** instance. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Preferences> | Promise used to return the **Preferences** instance obtained.* This instance inherits from [ISendable](../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads)by reference. For details, see [Using Sendable Objects](../../arkts-utils/sendable-guide.md). |
+| Promise&lt;Preferences&gt; | Promise used to return the **Preferences** instance obtained.* This instance inherits from [ISendable](../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads)by reference. For details, see [Using Sendable Objects](../../arkts-utils/sendable-guide.md). |
 
 **Error codes:**
 

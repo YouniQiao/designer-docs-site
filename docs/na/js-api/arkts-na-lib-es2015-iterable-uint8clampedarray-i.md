@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Uint8ClampedArray--><!--Device-unnamed-interface Uint8ClampedArray-End-->
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -14,8 +15,9 @@
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;number&gt; |  |
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -30,8 +32,9 @@ Returns an array of key, value pairs for every entry in the array
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[number, number]> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[number, number]&gt; |  |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -46,8 +49,9 @@ Returns an list of keys in the array
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;number&gt; |  |
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -62,5 +66,5 @@ Returns an list of values in the array
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;number&gt; |  |
 

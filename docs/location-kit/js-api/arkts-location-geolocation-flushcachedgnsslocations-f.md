@@ -6,6 +6,7 @@
 import { geolocation } from '@kit.LocationKit';
 ```
 
+<a id="flushcachedgnsslocations"></a>
 ## flushCachedGnssLocations
 
 ```TypeScript
@@ -30,7 +31,7 @@ All prepared GNSS locations are returned to the application through the callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for reporting the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for reporting the result. |
 
 **Example**
 
@@ -48,6 +49,7 @@ geolocation.flushCachedGnssLocations((err, result) => {
 ```
 
 
+<a id="flushcachedgnsslocations-1"></a>
 ## flushCachedGnssLocations
 
 ```TypeScript
@@ -72,7 +74,7 @@ All prepared GNSS locations are returned to the application through the callback
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Example**
 

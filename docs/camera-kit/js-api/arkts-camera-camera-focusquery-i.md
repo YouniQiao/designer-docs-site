@@ -14,6 +14,7 @@ Provides the API to check whether the focus assist is supported.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="isfocusmodesupported"></a>
 ## isFocusModeSupported
 
 ```TypeScript
@@ -48,6 +49,7 @@ Checks whether a focus mode is supported.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 
+<a id="islockfocustrackingsupported"></a>
 ## isLockFocusTrackingSupported
 
 ```TypeScript

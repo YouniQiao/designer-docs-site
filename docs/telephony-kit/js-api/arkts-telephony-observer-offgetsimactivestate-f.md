@@ -6,6 +6,7 @@
 import { observer } from '@kit.TelephonyKit';
 ```
 
+<a id="offgetsimactivestate"></a>
 ## offGetSimActiveState
 
 ```TypeScript
@@ -26,7 +27,7 @@ Cancel callback when the sim active state is updated.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Indicates the callback to unsubscribe from the simActiveStateChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Indicates the callback to unsubscribe from the simActiveStateChange event. |
 
 **Error codes:**
 

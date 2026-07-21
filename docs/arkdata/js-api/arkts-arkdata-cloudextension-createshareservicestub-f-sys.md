@@ -6,6 +6,7 @@
 import { cloudExtension } from '@kit.ArkData';
 ```
 
+<a id="createshareservicestub"></a>
 ## createShareServiceStub
 
 ```TypeScript
@@ -32,7 +33,7 @@ Creates a RemoteObject instance based on a ShareCenter instance.The system uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<rpc.RemoteObject> | Promise used to return the RemoteObject instance of ShareCenter. |
+| Promise&lt;rpc.RemoteObject&gt; | Promise used to return the RemoteObject instance of ShareCenter. |
 
 **Example**
 

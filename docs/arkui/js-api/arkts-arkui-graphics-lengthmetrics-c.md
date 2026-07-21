@@ -8,6 +8,7 @@ Defines the length attribute. When the length unit is PERCENT, the value **1** i
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="autorefresh"></a>
 ## autoRefresh
 
 ```TypeScript
@@ -38,6 +39,7 @@ Sets automatic refresh for the LengthMetrics object.When enabled, the length val
 | --- | --- |
 | [LengthMetrics](arkts-arkui-lengthmetrics-t.md) | Returns the LengthMetrics object for chaining. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -63,6 +65,7 @@ A constructor used to create a **LengthMetrics** instance. If the **unit** param
 | value | number | Yes | Value of the length property.<br>Value range: [0, +∞). |
 | unit | [LengthUnit](arkts-arkui-graphics-lengthunit-e.md) | No | Unit of the length property. |
 
+<a id="fp"></a>
 ## fp
 
 ```TypeScript
@@ -93,6 +96,7 @@ Creates a length property in fp.
 | --- | --- |
 | [LengthMetrics](arkts-arkui-lengthmetrics-t.md) | Instance of the **LengthMetrics** class. |
 
+<a id="lpx"></a>
 ## lpx
 
 ```TypeScript
@@ -123,6 +127,7 @@ Creates a length property in lpx.
 | --- | --- |
 | [LengthMetrics](arkts-arkui-lengthmetrics-t.md) | Instance of the **LengthMetrics** class. |
 
+<a id="percent"></a>
 ## percent
 
 ```TypeScript
@@ -153,6 +158,7 @@ Creates a length property in percent. The value **1** indicates 100%.
 | --- | --- |
 | [LengthMetrics](arkts-arkui-lengthmetrics-t.md) | Instance of the **LengthMetrics** class. |
 
+<a id="px"></a>
 ## px
 
 ```TypeScript
@@ -183,6 +189,7 @@ Creates a length property in px.
 | --- | --- |
 | [LengthMetrics](arkts-arkui-lengthmetrics-t.md) | Instance of the **LengthMetrics** class. |
 
+<a id="resource"></a>
 ## resource
 
 ```TypeScript
@@ -213,6 +220,7 @@ Represents the length of a resource of the Resource type.
 | --- | --- |
 | [LengthMetrics](arkts-arkui-lengthmetrics-t.md) | Instance of the **LengthMetrics** class. |
 
+<a id="vp"></a>
 ## vp
 
 ```TypeScript

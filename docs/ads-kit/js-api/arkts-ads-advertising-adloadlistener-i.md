@@ -14,6 +14,7 @@ Enumerates the callbacks used for the request for loading an ad.
 import { advertising } from '@kit.AdsKit';
 ```
 
+<a id="onadloadfailure"></a>
 ## onAdLoadFailure
 
 ```TypeScript
@@ -54,6 +55,7 @@ const adLoaderListener: advertising.AdLoadListener = {
 
 ```
 
+<a id="onadloadsuccess"></a>
 ## onAdLoadSuccess
 
 ```TypeScript
@@ -74,7 +76,7 @@ Called when an ad request is successful.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ads | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Advertisement> | Yes | Ad data. |
+| ads | Array&lt;Advertisement&gt; | Yes | Ad data. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { freeInstall } from '@kit.AbilityKit';
 ```
 
+<a id="getdispatchinfo"></a>
 ## getDispatchInfo
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the dispatch information. This API uses an asynchronous callback to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DispatchInfo> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**, and **data** is the [DispatchInfo](arkts-ability-dispatchinfo-i-sys.md) object obtained. otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DispatchInfo&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null**, and **data** is the [DispatchInfo](arkts-ability-dispatchinfo-i-sys.md) object obtained. otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -39,6 +40,7 @@ Obtains the dispatch information. This API uses an asynchronous callback to retu
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 
 
+<a id="getdispatchinfo-1"></a>
 ## getDispatchInfo
 
 ```TypeScript
@@ -61,7 +63,7 @@ Obtains the dispatch information. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DispatchInfo> | Promise used to return the [DispatchInfo](arkts-ability-dispatchinfo-i-sys.md) object obtained. |
+| Promise&lt;DispatchInfo&gt; | Promise used to return the [DispatchInfo](arkts-ability-dispatchinfo-i-sys.md) object obtained. |
 
 **Error codes:**
 

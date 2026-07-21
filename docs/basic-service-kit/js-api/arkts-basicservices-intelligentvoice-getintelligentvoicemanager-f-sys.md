@@ -6,6 +6,7 @@
 import { intelligentVoice } from '@kit.BasicServicesKit';
 ```
 
+<a id="getintelligentvoicemanager"></a>
 ## getIntelligentVoiceManager
 
 ```TypeScript

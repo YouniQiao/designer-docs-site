@@ -6,6 +6,7 @@
 import { runningLock } from '@kit.BasicServicesKit';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -28,7 +29,7 @@ Creates a {@link RunningLock} object. This API uses an asynchronous callback to 
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the **RunningLock** object. The value must be a string. |
 | type | [RunningLockType](arkts-basicservices-runninglock-runninglocktype-e.md) | Yes | Type of the **RunningLock** object. The value must be an enum. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<RunningLock> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and data is the created **RunningLock** object. Otherwise, **err** is an error object. **AsyncCallback** has encapsulated an API of the **RunningLock** class. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;RunningLock&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and data is the created **RunningLock** object. Otherwise, **err** is an error object. **AsyncCallback** has encapsulated an API of the **RunningLock** class. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ runningLock.create('running_lock_test', runningLock.RunningLockType.PROXIMITY_SC
 ```
 
 
+<a id="create-1"></a>
 ## create
 
 ```TypeScript
@@ -79,7 +81,7 @@ Creates a {@link RunningLock} object. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RunningLock> | Promise used to return the {@link RunningLock} object. |
+| Promise&lt;RunningLock&gt; | Promise used to return the {@link RunningLock} object. |
 
 **Error codes:**
 

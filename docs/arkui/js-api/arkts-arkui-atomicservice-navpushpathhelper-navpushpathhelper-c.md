@@ -14,6 +14,7 @@ provides a push method for the target page in the routing table.
 import { NavPushPathHelper } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -34,8 +35,9 @@ The constructor used to create a NavPushPathHelper object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| navPathStack | [NavPathStack](../arkts-components/arkts-arkui-navigation-navpathstack-c.md) | Yes | The stack of the route table. |
+| navPathStack | [NavPathStack](../arkts-components/arkts-arkui-navpathstack-c.md) | Yes | The stack of the route table. |
 
+<a id="pushdestination"></a>
 ## pushDestination
 
 ```TypeScript
@@ -57,14 +59,14 @@ Pushes the route page into the stack.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
-| info | [NavPathInfo](../arkts-components/arkts-arkui-navigation-navpathinfo-c.md) | Yes | Indicates the route page to be pushed. |
+| info | [NavPathInfo](../arkts-components/arkts-arkui-navpathinfo-c.md) | Yes | Indicates the route page to be pushed. |
 | animated | boolean | No | Indicates whether the transition is animated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -76,6 +78,7 @@ Pushes the route page into the stack.
 | [100006](../errorcode-router.md#100006-navdestination-not-found) | NavDestination not found. |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="pushdestination-1"></a>
 ## pushDestination
 
 ```TypeScript
@@ -97,14 +100,14 @@ Pushes the NavDestination into the stack.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
-| info | [NavPathInfo](../arkts-components/arkts-arkui-navigation-navpathinfo-c.md) | Yes | Indicates the NavDestination to be pushed. |
-| options | [NavigationOptions](../arkts-components/arkts-arkui-navigation-navigationoptions-i.md) | No | Indicates options of stack operation. |
+| info | [NavPathInfo](../arkts-components/arkts-arkui-navpathinfo-c.md) | Yes | Indicates the NavDestination to be pushed. |
+| options | [NavigationOptions](../arkts-components/arkts-arkui-navigationoptions-i.md) | No | Indicates options of stack operation. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -116,6 +119,7 @@ Pushes the NavDestination into the stack.
 | [100006](../errorcode-router.md#100006-navdestination-not-found) | NavDestination not found. |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="pushdestinationbyname"></a>
 ## pushDestinationByName
 
 ```TypeScript
@@ -138,14 +142,14 @@ Pushes the specified route page into the stack.
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
 | name | string | Yes | Indicates the name of the route page to be pushed. |
-| param | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Indicates the detailed parameter of the route page to be pushed. |
+| param | Object | Yes | Indicates the detailed parameter of the route page to be pushed. |
 | animated | boolean | No | Indicates whether the transition is animated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -157,6 +161,7 @@ Pushes the specified route page into the stack.
 | [100006](../errorcode-router.md#100006-navdestination-not-found) | NavDestination not found. |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="pushdestinationbyname-1"></a>
 ## pushDestinationByName
 
 ```TypeScript
@@ -182,15 +187,15 @@ Pushes the specified route page into the stack.
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
 | name | string | Yes | Indicates the name of the route page to be pushed. |
-| param | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Indicates the detailed parameter of the route page to be pushed. |
-| onPop | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PopInfo> | Yes | The callback when next page returns. |
+| param | Object | Yes | Indicates the detailed parameter of the route page to be pushed. |
+| onPop | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;PopInfo&gt; | Yes | The callback when next page returns. |
 | animated | boolean | No | Indicates whether the transition is animated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -202,6 +207,7 @@ Pushes the specified route page into the stack.
 | [100006](../errorcode-router.md#100006-navdestination-not-found) | NavDestination not found. |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="pushpath"></a>
 ## pushPath
 
 ```TypeScript
@@ -223,14 +229,14 @@ Pushes the route page into the stack.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
-| info | [NavPathInfo](../arkts-components/arkts-arkui-navigation-navpathinfo-c.md) | Yes | Indicates the route page to be pushed. |
+| info | [NavPathInfo](../arkts-components/arkts-arkui-navpathinfo-c.md) | Yes | Indicates the route page to be pushed. |
 | animated | boolean | No | Indicates whether the transition is animated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -238,6 +244,7 @@ Pushes the route page into the stack.
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="pushpath-1"></a>
 ## pushPath
 
 ```TypeScript
@@ -259,14 +266,14 @@ Pushes the NavDestination into the stack.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
-| info | [NavPathInfo](../arkts-components/arkts-arkui-navigation-navpathinfo-c.md) | Yes | Indicates the NavDestination to be pushed. |
-| options | [NavigationOptions](../arkts-components/arkts-arkui-navigation-navigationoptions-i.md) | No | Indicates options of stack operation. |
+| info | [NavPathInfo](../arkts-components/arkts-arkui-navpathinfo-c.md) | Yes | Indicates the NavDestination to be pushed. |
+| options | [NavigationOptions](../arkts-components/arkts-arkui-navigationoptions-i.md) | No | Indicates options of stack operation. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -274,6 +281,7 @@ Pushes the NavDestination into the stack.
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="pushpathbyname"></a>
 ## pushPathByName
 
 ```TypeScript
@@ -296,14 +304,14 @@ Pushes the specified route page into the stack.
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
 | name | string | Yes | Indicates the name of the route page to be pushed. |
-| param | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Indicates the detailed parameter of the route page to be pushed. |
+| param | Object | Yes | Indicates the detailed parameter of the route page to be pushed. |
 | animated | boolean | No | Indicates whether the transition is animated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -311,6 +319,7 @@ Pushes the specified route page into the stack.
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="pushpathbyname-1"></a>
 ## pushPathByName
 
 ```TypeScript
@@ -336,15 +345,15 @@ Pushes the specified route page into the stack.
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
 | name | string | Yes | Indicates the name of the route page to be pushed. |
-| param | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Indicates the detailed parameter of the route page to be pushed. |
-| onPop | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PopInfo> | Yes | The callback when next page returns. |
+| param | Object | Yes | Indicates the detailed parameter of the route page to be pushed. |
+| onPop | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;PopInfo&gt; | Yes | The callback when next page returns. |
 | animated | boolean | No | Indicates whether the transition is animated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -352,6 +361,7 @@ Pushes the specified route page into the stack.
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="replacepath"></a>
 ## replacePath
 
 ```TypeScript
@@ -373,14 +383,14 @@ replace the current page with the specific one.The current page will be destroye
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
-| info | [NavPathInfo](../arkts-components/arkts-arkui-navigation-navpathinfo-c.md) | Yes | Indicates the the new route page in top of the stack. |
+| info | [NavPathInfo](../arkts-components/arkts-arkui-navpathinfo-c.md) | Yes | Indicates the the new route page in top of the stack. |
 | animated | boolean | No | Indicates whether the transition is animated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -388,6 +398,7 @@ replace the current page with the specific one.The current page will be destroye
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="replacepath-1"></a>
 ## replacePath
 
 ```TypeScript
@@ -409,14 +420,14 @@ Replace the current NavDestination with the specific one.The current NavDestinat
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
-| info | [NavPathInfo](../arkts-components/arkts-arkui-navigation-navpathinfo-c.md) | Yes | Indicates the new NavDestination in top of the stack. |
-| options | [NavigationOptions](../arkts-components/arkts-arkui-navigation-navigationoptions-i.md) | No | Indicates options of stack operation. |
+| info | [NavPathInfo](../arkts-components/arkts-arkui-navpathinfo-c.md) | Yes | Indicates the new NavDestination in top of the stack. |
+| options | [NavigationOptions](../arkts-components/arkts-arkui-navigationoptions-i.md) | No | Indicates options of stack operation. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -424,6 +435,7 @@ Replace the current NavDestination with the specific one.The current NavDestinat
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
+<a id="replacepathbyname"></a>
 ## replacePathByName
 
 ```TypeScript
@@ -446,14 +458,14 @@ replace the current page with the specific one.The current page will be destroye
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name |
 | name | string | Yes | Indicates name of the new route page in top of stack. |
-| param | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Indicates the detailed parameter of the new route page in top of the stack. |
+| param | Object | Yes | Indicates the detailed parameter of the new route page in top of the stack. |
 | animated | boolean | No | Indicates whether the transition is animated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

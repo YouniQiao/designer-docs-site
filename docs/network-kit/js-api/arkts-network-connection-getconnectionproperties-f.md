@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getconnectionproperties"></a>
 ## getConnectionProperties
 
 ```TypeScript
@@ -27,7 +28,7 @@ Queries the connection properties of a network.This method requires the {@code o
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | netHandle | [NetHandle](arkts-network-connection-nethandle-i.md) | Yes | Indicates the network to be queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ConnectionProperties> | Yes | the callback of getConnectionProperties.{@link ConnectionProperties}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ConnectionProperties&gt; | Yes | the callback of getConnectionProperties.{@link ConnectionProperties}. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ connection.getDefaultNet().then((netHandle: connection.NetHandle) => {
 ```
 
 
+<a id="getconnectionproperties-1"></a>
 ## getConnectionProperties
 
 ```TypeScript
@@ -89,7 +91,7 @@ Queries the connection properties of a network.This method requires the {@code o
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ConnectionProperties> | The promise returned by the function. |
+| Promise&lt;ConnectionProperties&gt; | The promise returned by the function. |
 
 **Error codes:**
 

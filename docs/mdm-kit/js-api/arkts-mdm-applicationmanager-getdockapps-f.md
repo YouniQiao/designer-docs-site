@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="getdockapps"></a>
 ## getDockApps
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the list of applications in the shortcut bar currently.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DockInfo> | Array of application information in the shortcut bar. |
+| Array&lt;DockInfo&gt; | Array of application information in the shortcut bar. |
 
 **Error codes:**
 

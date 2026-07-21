@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="queryproberesult"></a>
 ## queryProbeResult
 
 ```TypeScript
@@ -35,7 +36,7 @@ Query a network probe result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ProbeResultInfo> | The promise returned by the function. |
+| Promise&lt;ProbeResultInfo&gt; | The promise returned by the function. |
 
 **Error codes:**
 

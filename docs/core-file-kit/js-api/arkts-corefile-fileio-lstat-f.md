@@ -1,5 +1,6 @@
 # lstat
 
+<a id="lstat"></a>
 ## lstat
 
 ```TypeScript
@@ -28,9 +29,10 @@ Obtains information about a symbolic link that is used to refer to a file or dir
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Stat> | Promise that returns the symbolic link information obtained. For details, see **stat**. |
+| Promise&lt;Stat&gt; | Promise that returns the symbolic link information obtained. For details, see **stat**. |
 
 
+<a id="lstat-1"></a>
 ## lstat
 
 ```TypeScript
@@ -54,5 +56,5 @@ Obtains information about a symbolic link that is used to refer to a file or dir
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the target file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Stat> | Yes | Callback used to return the symbolic link information obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Stat&gt; | Yes | Callback used to return the symbolic link information obtained. |
 

@@ -6,6 +6,7 @@
 import { shortcutManager } from '@kit.AbilityKit';
 ```
 
+<a id="setshortcutvisibleforself"></a>
 ## setShortcutVisibleForSelf
 
 ```TypeScript
@@ -24,14 +25,14 @@ Sets whether to display the specified shortcut for the current application. This
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | string | Yes | Shortcut ID, which is the value of the **shortcutId** field under the **shortcuts** tag in the [module.json5](../../../../quick-start/module-configuration-file.md) file. The value is a string of up to 63bytes. |
+| id | string | Yes | Shortcut ID, which is the value of the **shortcutId** field under the **shortcuts** tag in the [module.json5](docroot://quick-start/module-configuration-file.md) file. The value is a string of up to 63bytes. |
 | visible | boolean | Yes | Whether to display the shortcut. **true** to display, **false** otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

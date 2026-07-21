@@ -1,8 +1,8 @@
 # LoadingProgress properties/events
 
-In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
+In addition to the [universal attributes](docroot://reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported.
 
-The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
+The [universal events](docroot://reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
 
 **Inheritance/Implementation:** LoadingProgressAttribute extends [CommonMethod<LoadingProgressAttribute>](CommonMethod<LoadingProgressAttribute>)
 
@@ -12,6 +12,7 @@ The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-ge
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="color"></a>
 ## color
 
 ```TypeScript
@@ -36,6 +37,7 @@ Sets the foreground color for the **LoadingProgress** component.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Foreground color of the **LoadingProgress** component.<br>Default value:<br>API version 10 or earlier: **'#99666666'**<br>API version 11 or later: **'#ff666666'** |
 
+<a id="contentmodifier"></a>
 ## contentModifier
 
 ```TypeScript
@@ -58,15 +60,16 @@ Creates a content modifier.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<LoadingProgressConfiguration> | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-contentmodifier-i.md)&lt;LoadingProgressConfiguration&gt; | Yes | Content modifier to apply to the current component.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
+<a id="enableloading"></a>
 ## enableLoading
 
 ```TypeScript
 enableLoading(value: boolean)
 ```
 
-Sets whether to display the LoadingProgress animation. The component still takes up space in the layout when the loading animation is not shown. The universal attribute [Visibility](../arkts-apis/arkts-arkui-enums-visibility-e.md).Hidden hides the entire component area, including the regions specified by [border](arkts-arkui-common-commonmethod-c.md#border-1) and [padding](arkts-arkui-common-commonmethod-c.md#padding-1). In contrast, when the value of **enableLoading** is set to **false**, only the loading animation itself is hidden without affecting the borders or other elements.
+Sets whether to display the LoadingProgress animation. The component still takes up space in the layout when the loading animation is not shown. The universal attribute [Visibility](../arkts-apis/arkts-arkui-visibility-e.md).Hidden hides the entire component area, including the regions specified by [border](arkts-arkui-commonmethod-c.md#border-1) and [padding](arkts-arkui-commonmethod-c.md#padding-1). In contrast, when the value of **enableLoading** is set to **false**, only the loading animation itself is hidden without affecting the borders or other elements.
 
 **Since:** 10
 

@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="killprocesswithaccount"></a>
 ## killProcessWithAccount
 
 ```TypeScript
@@ -42,7 +43,7 @@ Kills a process by bundle name and account ID. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -77,6 +78,7 @@ try {
 ```
 
 
+<a id="killprocesswithaccount-1"></a>
 ## killProcessWithAccount
 
 ```TypeScript
@@ -116,7 +118,7 @@ Kills a process by bundle name and account ID. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -153,6 +155,7 @@ try {
 ```
 
 
+<a id="killprocesswithaccount-2"></a>
 ## killProcessWithAccount
 
 ```TypeScript
@@ -184,7 +187,7 @@ Kills a process by bundle name and account ID. This API uses an asynchronous cal
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | accountId | number | Yes | ID of a system account. For details, see [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the API call result. You can perform error handling or custom processing in this callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the API call result. You can perform error handling or custom processing in this callback. |
 
 **Error codes:**
 

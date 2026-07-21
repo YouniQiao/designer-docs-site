@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="getdelegatedbundlenames"></a>
 ## getDelegatedBundleNames
 
 ```TypeScript
@@ -35,7 +36,7 @@ Queries the delegated applications that can access a delegation policy and outpu
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of delegated applications. |
+| Array&lt;string&gt; | List of delegated applications. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
+<a id="getcurrentbundlestats"></a>
 ## getCurrentBundleStats
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the storage space (in bytes) of this application. This API uses an async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<BundleStats> | Yes | Callback used to return the application space obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;BundleStats&gt; | Yes | Callback used to return the application space obtained. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ storageStatistics.getCurrentBundleStats((error: BusinessError, bundleStats: stor
 ```
 
 
+<a id="getcurrentbundlestats-1"></a>
 ## getCurrentBundleStats
 
 ```TypeScript
@@ -68,7 +70,7 @@ Obtains the storage space (in bytes) of this application. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BundleStats> | Promise used to return the application storage space obtained. |
+| Promise&lt;BundleStats&gt; | Promise used to return the application storage space obtained. |
 
 **Error codes:**
 

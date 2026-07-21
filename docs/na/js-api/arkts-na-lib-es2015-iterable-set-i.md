@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Set<T>--><!--Device-unnamed-interface Set<T>-End-->
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -16,8 +17,9 @@ Iterates over values in the set.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; |  |
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -32,8 +34,9 @@ Returns an iterable of [v,v] pairs for every value `v` in the set.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[T, T]> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[T, T]&gt; |  |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -48,8 +51,9 @@ Despite its name, returns an iterable of the values in the set.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; |  |
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -64,5 +68,5 @@ Returns an iterable of values in the set.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> |  |
+| [IterableIterator](arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; |  |
 

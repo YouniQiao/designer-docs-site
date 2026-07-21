@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="getaccessibilityextensionlistsync"></a>
 ## getAccessibilityExtensionListSync
 
 ```TypeScript
@@ -44,5 +45,5 @@ Query the list of accessibility applications in the current system, which can be
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AccessibilityAbilityInfo> | Promise used to return the accessibility application list. |
+| Array&lt;AccessibilityAbilityInfo&gt; | Promise used to return the accessibility application list. |
 

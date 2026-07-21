@@ -6,6 +6,7 @@
 import { commonEventManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="subscribe"></a>
 ## subscribe
 
 ```TypeScript
@@ -27,7 +28,7 @@ Subscribes to a common event. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | subscriber | [CommonEventSubscriber](arkts-basicservices-commoneventsubscriber-commoneventsubscriber-i.md) | Yes | Subscriber object. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<CommonEventData> | Yes | Callback triggered if the operation is successful; otherwise,**err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;CommonEventData&gt; | Yes | Callback triggered if the operation is successful; otherwise,**err** is an error object. |
 
 **Error codes:**
 

@@ -72,7 +72,7 @@ Note: If the application process is forcibly terminated using methods not provid
 CPP_CRASH = 3
 ```
 
-The ability exits due to [process crash](../../../../dfx/cppcrash-guidelines.md).
+The ability exits due to [process crash](docroot://dfx/cppcrash-guidelines.md).
 
 **Since:** 10
 
@@ -108,7 +108,7 @@ The ability exits due to a JS_ERROR fault triggered when an application has a JS
 APP_FREEZE = 5
 ```
 
-The ability exits due to [application freeze](../../../../dfx/appfreeze-guidelines.md).
+The ability exits due to [application freeze](docroot://dfx/appfreeze-guidelines.md).
 
 **Since:** 10
 

@@ -6,6 +6,7 @@
 import { inputMonitor } from '@kit.InputKit';
 ```
 
+<a id="off"></a>
 ## off('touch')
 
 ```TypeScript
@@ -106,6 +107,7 @@ struct Index {
 ```
 
 
+<a id="off-1"></a>
 ## off('mouse')
 
 ```TypeScript
@@ -129,7 +131,7 @@ Disables listening for global mouse events. This API uses an asynchronous callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'mouse' | Yes | Event type. This field has a fixed value of **mouse**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MouseEvent> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MouseEvent&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -206,6 +208,7 @@ struct Index {
 ```
 
 
+<a id="off-2"></a>
 ## off('pinch')
 
 ```TypeScript
@@ -229,7 +232,7 @@ Disables listening for global touchpad pinch events. This API uses an asynchrono
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'pinch' | Yes | Event type. This field has a fixed value of **pinch**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Pinch> | No | Callback for which listening is disabled. If this parameter is not specified,listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Pinch&gt; | No | Callback for which listening is disabled. If this parameter is not specified,listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -306,6 +309,7 @@ struct Index {
 ```
 
 
+<a id="off-3"></a>
 ## off('pinch')
 
 ```TypeScript
@@ -330,7 +334,7 @@ Disables listening for global touchpad pinch events. This API uses an asynchrono
 | --- | --- | --- | --- |
 | type | 'pinch' | Yes | Event type. This field has a fixed value of **pinch**. |
 | fingers | number | Yes | Number of fingers that trigger the pinch. The value must be greater than or equal to **2**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Pinch> | No | Callback for which listening is disabled. If this parameter is not specified,listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Pinch&gt; | No | Callback for which listening is disabled. If this parameter is not specified,listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -407,6 +411,7 @@ struct Index {
 ```
 
 
+<a id="off-4"></a>
 ## off('rotate')
 
 ```TypeScript
@@ -431,7 +436,7 @@ Disables listening for rotation events of the touchpad. This API uses an asynchr
 | --- | --- | --- | --- |
 | type | 'rotate' | Yes | Event type. This field has a fixed value of **rotate**. |
 | fingers | number | Yes | Number of fingers that trigger a rotation. The value must not be greater than **2**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Rotate> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Rotate&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -508,6 +513,7 @@ struct Index {
 ```
 
 
+<a id="off-5"></a>
 ## off('threeFingersSwipe')
 
 ```TypeScript
@@ -531,7 +537,7 @@ Disables listening for three-finger swipe events. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'threeFingersSwipe' | Yes | Event type. This field has a fixed value of **threeFingersSwipe**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ThreeFingersSwipe> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ThreeFingersSwipe&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -608,6 +614,7 @@ struct Index {
 ```
 
 
+<a id="off-6"></a>
 ## off('fourFingersSwipe')
 
 ```TypeScript
@@ -631,7 +638,7 @@ Disables listening for four-finger swipe events. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'fourFingersSwipe' | Yes | Event type. This field has a fixed value of **fourFingersSwipe**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<FourFingersSwipe> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;FourFingersSwipe&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -708,6 +715,7 @@ struct Index {
 ```
 
 
+<a id="off-7"></a>
 ## off('threeFingersTap')
 
 ```TypeScript
@@ -731,7 +739,7 @@ Disables listening for three-finger tap events. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'threeFingersTap' | Yes | Event type. This field has a fixed value of **threeFingersTap**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ThreeFingersTap> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ThreeFingersTap&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -808,6 +816,7 @@ struct Index {
 ```
 
 
+<a id="off-8"></a>
 ## off('fingerprint')
 
 ```TypeScript
@@ -831,7 +840,7 @@ Disables listening for fingerprint gesture input events. This API uses an asynch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'fingerprint' | Yes | Input event type. The value is **fingerprint**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<FingerprintEvent> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;FingerprintEvent&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -908,6 +917,7 @@ struct Index {
 ```
 
 
+<a id="off-9"></a>
 ## off('swipeInward')
 
 ```TypeScript
@@ -931,7 +941,7 @@ Cancels listening for inward swipe events. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'swipeInward' | Yes | Input event type. The value is fixed at **SwipeInward**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SwipeInward> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SwipeInward&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -1006,6 +1016,7 @@ build() {
 ```
 
 
+<a id="off-10"></a>
 ## off('touchscreenSwipe')
 
 ```TypeScript
@@ -1030,7 +1041,7 @@ Disables listening for touchscreen swipe events. This API uses an asynchronous c
 | --- | --- | --- | --- |
 | type | 'touchscreenSwipe' | Yes | Event type. This field has a fixed value of **touchscreenSwipe**. |
 | fingers | number | Yes | Number of fingers that trigger the swipe. The value range is [3, 5]. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TouchGestureEvent> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TouchGestureEvent&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -1104,6 +1115,7 @@ struct Index {
 ```
 
 
+<a id="off-11"></a>
 ## off('touchscreenPinch')
 
 ```TypeScript
@@ -1128,7 +1140,7 @@ Disables listening for touchscreen pinch events. This API uses an asynchronous c
 | --- | --- | --- | --- |
 | type | 'touchscreenPinch' | Yes | Event type. This field has a fixed value of **touchscreenPinch**. |
 | fingers | number | Yes | Number of fingers that trigger the pinch. The value range is [4, 5]. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TouchGestureEvent> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TouchGestureEvent&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 
@@ -1202,6 +1214,7 @@ struct Index {
 ```
 
 
+<a id="off-12"></a>
 ## off('keyPressed')
 
 ```TypeScript
@@ -1225,7 +1238,7 @@ Cancels listening for the press and release events of the specified key, which c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyPressed' | Yes | Event type. This parameter has a fixed value of **keyPressed**. |
-| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<KeyEvent> | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
+| receiver | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;KeyEvent&gt; | No | Callback for which listening is disabled. If this parameter is not specified, listening will be disabled for all callbacks registered by the current application. |
 
 **Error codes:**
 

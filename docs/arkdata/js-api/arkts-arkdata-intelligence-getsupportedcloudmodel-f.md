@@ -6,6 +6,7 @@
 import { intelligence } from '@kit.ArkData';
 ```
 
+<a id="getsupportedcloudmodel"></a>
 ## getSupportedCloudModel
 
 ```TypeScript
@@ -26,5 +27,5 @@ Obtains the supported cloud embedding models.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<CloudModelInfo>> | The promise returned by the function. |
+| Promise&lt;Array&lt;CloudModelInfo&gt;&gt; | The promise returned by the function. |
 

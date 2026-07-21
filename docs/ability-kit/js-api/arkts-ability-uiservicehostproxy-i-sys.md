@@ -14,6 +14,7 @@ UIServiceHostProxy functions as a proxy to send data from the [UIServiceExtensio
 
 **System API:** This is a system API.
 
+<a id="senddata"></a>
 ## sendData
 
 ```TypeScript
@@ -36,7 +37,7 @@ Sends data from the [UIServiceExtensionAbility](arkts-ability-app-ability-uiserv
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Data to be sent to the [UIServiceExtensionAbility](arkts-ability-app-ability-uiserviceextensionability-uiserviceextensionability-c-sys.md)client. |
+| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Data to be sent to the [UIServiceExtensionAbility](arkts-ability-app-ability-uiserviceextensionability-uiserviceextensionability-c-sys.md)client. |
 
 **Error codes:**
 

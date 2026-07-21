@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="getsharedhosts"></a>
 ## getSharedHosts
 
 ```TypeScript
@@ -30,7 +31,7 @@ Get all available shared hosts.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SharedHost[]> | Promise that resolves with the list of shared hosts. |
+| Promise&lt;SharedHost[]&gt; | Promise that resolves with the list of shared hosts. |
 
 **Error codes:**
 

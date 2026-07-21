@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="findmatchingwlan"></a>
 ## findMatchingWlan
 
 ```TypeScript
@@ -33,7 +34,7 @@ Check whether the WLAN scan results match the WLAN BSSID list,return information
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wlanBssidArray | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Indicates the list of WLAN BSSIDs that need to be matched. |
+| wlanBssidArray | Array&lt;string&gt; | Yes | Indicates the list of WLAN BSSIDs that need to be matched. |
 | rssiThreshold | number | Yes | Indicates the WLAN RSSI threshold, only matches WLAN BSSIDs with RSSI greater than this threshold. |
 | needStartScan | boolean | Yes | Indicates whether a WLAN scan needs to be initiated. |
 
@@ -41,7 +42,7 @@ Check whether the WLAN scan results match the WLAN BSSID list,return information
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<MatchingWlanInfo>> | The promise returned by the function. |
+| Promise&lt;Array&lt;MatchingWlanInfo&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

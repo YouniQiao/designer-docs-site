@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="showappnetpolicysettings"></a>
 ## showAppNetPolicySettings
 
 ```TypeScript
@@ -32,7 +33,7 @@ Open the network settings interface of the application, which is presented in a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Example**
 

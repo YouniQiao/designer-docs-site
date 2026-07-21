@@ -6,6 +6,7 @@
 import { inputMethod } from '@kit.IMEKit';
 ```
 
+<a id="switchinputmethod"></a>
 ## switchInputMethod
 
 ```TypeScript
@@ -28,7 +29,7 @@ Switch input method. The caller must be the current inputmethod.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | target | [InputMethodProperty](arkts-ime-inputmethod-inputmethodproperty-i.md) | Yes | indicates the target input method. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of switchInputMethod. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of switchInputMethod. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ inputMethod.switchInputMethod(currentIme, (err: BusinessError, result: boolean) 
 ```
 
 
+<a id="switchinputmethod-1"></a>
 ## switchInputMethod
 
 ```TypeScript
@@ -87,7 +89,7 @@ Switch input method. The caller must be the current inputmethod.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 

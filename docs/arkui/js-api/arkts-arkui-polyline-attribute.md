@@ -1,6 +1,6 @@
 # Polyline properties/events
 
-In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
 **Inheritance/Implementation:** PolylineAttribute extends [CommonShapeMethod<PolylineAttribute>](CommonShapeMethod<PolylineAttribute>)
 
@@ -10,13 +10,14 @@ In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md),
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="points"></a>
 ## points
 
 ```TypeScript
 points(value: Array<any>)
 ```
 
-Sets the list of coordinates through which the polyline passes. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+Sets the list of coordinates through which the polyline passes. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 
@@ -32,5 +33,5 @@ Sets the list of coordinates through which the polyline passes. This attribute c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<any> | Yes | List of coordinates that the polyline passes through. A two-dimensional array is passed, and each subarray indicates the `[x, y]` coordinates of a vertex.<br>Default value: **[]** (empty array)<br>Default unit: vp<br>The **undefined** and **null** values are invalid and treated as the default value. |
+| value | Array&lt;any&gt; | Yes | List of coordinates that the polyline passes through. A two-dimensional array is passed, and each subarray indicates the `[x, y]` coordinates of a vertex.<br>Default value: **[]** (empty array)<br>Default unit: vp<br>The **undefined** and **null** values are invalid and treated as the default value. |
 

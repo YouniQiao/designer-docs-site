@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="alterpin"></a>
 ## alterPin
 
 ```TypeScript
@@ -31,7 +32,7 @@ Change Pin Password.
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | newPin | string | Yes | Indicates a new password. |
 | oldPin | string | Yes | Indicates old password. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<LockStatusResponse> | Yes | Indicates the callback for getting the response to obtain the SIM card lock status of the specified card slot. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;LockStatusResponse&gt; | Yes | Indicates the callback for getting the response to obtain the SIM card lock status of the specified card slot. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ sim.alterPin(0, "1234", "0000", (err: BusinessError, data: sim.LockStatusRespons
 ```
 
 
+<a id="alterpin-1"></a>
 ## alterPin
 
 ```TypeScript
@@ -90,7 +92,7 @@ Change Pin Password.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<LockStatusResponse> | Returns the response to obtain the SIM card lock status of the specified card slot. |
+| Promise&lt;LockStatusResponse&gt; | Returns the response to obtain the SIM card lock status of the specified card slot. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="opencertificatedetaildialog"></a>
 ## openCertificateDetailDialog
 
 ```TypeScript
@@ -29,14 +30,14 @@ Opens the Certificate Management dialog box to display the certificate details. 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | common.Context | Yes | Context of the application. |
-| cert | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The certificate Data. |
+| cert | Uint8Array | Yes | The certificate Data. |
 | property | [CertificateDialogProperty](arkts-devicecertificate-certificatemanagerdialog-certificatedialogproperty-i.md) | Yes | Property of the certificate management dialog box. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -1,6 +1,6 @@
 # DownloadTask
 
-Implements file downloads. Before using any APIs of this class, you must obtain a **DownloadTask** object, from a promise through [request.downloadFile](arkts-basicservices-request-downloadfile-f.md#downloadfile-2) or from a callback through [request.downloadFile](arkts-basicservices-request-downloadfile-f.md#downloadfile-1).
+Implements file downloads. Before using any APIs of this class, you must obtain a **DownloadTask** object, from a promise through [request.downloadFile](arkts-basicservices-request-downloadfile-f.md#downloadfile-1) or from a callback through [request.downloadFile](arkts-basicservices-request-downloadfile-f.md#downloadfile-1).
 
 **Since:** 6
 
@@ -14,6 +14,7 @@ Implements file downloads. Before using any APIs of this class, you must obtain 
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -39,7 +40,7 @@ Deletes the download task. This API uses an asynchronous callback to return the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -75,6 +76,7 @@ try {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -100,7 +102,7 @@ Deletes the download task. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -133,6 +135,7 @@ try {
 
 ```
 
+<a id="gettaskinfo"></a>
 ## getTaskInfo
 
 ```TypeScript
@@ -158,7 +161,7 @@ Obtains the information about this download task. This API uses an asynchronous 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DownloadInfo> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DownloadInfo** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;DownloadInfo&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DownloadInfo** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -194,6 +197,7 @@ try {
 
 ```
 
+<a id="gettaskinfo-1"></a>
 ## getTaskInfo
 
 ```TypeScript
@@ -219,7 +223,7 @@ Obtains the information about this download task. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DownloadInfo> | Promise used to return a **DownloadInfo** object. |
+| Promise&lt;DownloadInfo&gt; | Promise used to return a **DownloadInfo** object. |
 
 **Error codes:**
 
@@ -253,6 +257,7 @@ try {
 
 ```
 
+<a id="gettaskmimetype"></a>
 ## getTaskMimeType
 
 ```TypeScript
@@ -278,7 +283,7 @@ Obtains the MIME type (that is, media type of resources in HTTP) of a download t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and data is the **MimeType** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and data is the **MimeType** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -314,6 +319,7 @@ try {
 
 ```
 
+<a id="gettaskmimetype-1"></a>
 ## getTaskMimeType
 
 ```TypeScript
@@ -339,7 +345,7 @@ Obtains the MIME type (that is, media type of resources in HTTP) of a download t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the MIME type of a download task. |
+| Promise&lt;string&gt; | Promise used to return the MIME type of a download task. |
 
 **Error codes:**
 
@@ -373,6 +379,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('progress')
 
 ```TypeScript
@@ -392,7 +399,7 @@ Unsubscribes from download progress events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'progress' | Yes | Event type.<br>- **'progress'**: download progress. |
-| callback | (receivedSize: number, totalSize: number) => void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
+| callback | (receivedSize: number, totalSize: number) =&gt; void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -433,6 +440,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('complete' | 'pause' | 'remove')
 
 ```TypeScript
@@ -452,7 +460,7 @@ Unsubscribes from download events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'pause' \| 'remove' | Yes | Event type.<br>- **'complete'**: download task completion.<br>-**'pause'**: download task pause.<br>- **'remove'**: download task removal. |
-| callback | () => void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
+| callback | () =&gt; void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -519,6 +527,7 @@ try {
 
 ```
 
+<a id="off-2"></a>
 ## off('complete' | 'pause' | 'remove')
 
 ```TypeScript
@@ -538,7 +547,7 @@ Unsubscribes from download events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'pause' \| 'remove' | Yes | Event type.<br>- **'complete'**: download task completion.<br>-**'pause'**: download task pause.<br>- **'remove'**: download task removal. |
-| callback | () => void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
+| callback | () =&gt; void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -605,6 +614,7 @@ try {
 
 ```
 
+<a id="off-3"></a>
 ## off('complete' | 'pause' | 'remove')
 
 ```TypeScript
@@ -624,7 +634,7 @@ Unsubscribes from download events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'pause' \| 'remove' | Yes | Event type.<br>- **'complete'**: download task completion.<br>-**'pause'**: download task pause.<br>- **'remove'**: download task removal. |
-| callback | () => void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
+| callback | () =&gt; void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered. |
 
 **Error codes:**
 
@@ -691,6 +701,7 @@ try {
 
 ```
 
+<a id="off-4"></a>
 ## off('fail')
 
 ```TypeScript
@@ -710,7 +721,7 @@ Unsubscribes from download failure events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'fail' | Yes | Event type.<br>- **'fail'**: download task failure. |
-| callback | (err: number) => void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered.For details about the error codes, see [Download Error Codes](../../../../reference/apis-basic-services-kit/js-apis-request.md#constants). |
+| callback | (err: number) =&gt; void | No | Callback to unregister. If this parameter is not specified, all callbacks of the current type will be unregistered.For details about the error codes, see [Download Error Codes](docroot://reference/apis-basic-services-kit/js-apis-request.md#constants). |
 
 **Error codes:**
 
@@ -751,6 +762,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('progress')
 
 ```TypeScript
@@ -775,7 +787,7 @@ Subscribes to download progress events. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'progress' | Yes | Event type.<br>- **'progress'**: download progress. |
-| callback | (receivedSize: number, totalSize: number) => void | Yes | Callback used to return the size of the uploaded file and the total size of the file to upload, in bytes. If the server uses the chunk mode for data transmission and the total file size cannot be obtained from the request header, the value of **totalSize** is treated as **-1**. |
+| callback | (receivedSize: number, totalSize: number) =&gt; void | Yes | Callback used to return the size of the uploaded file and the total size of the file to upload, in bytes. If the server uses the chunk mode for data transmission and the total file size cannot be obtained from the request header, the value of **totalSize** is treated as **-1**. |
 
 **Error codes:**
 
@@ -808,6 +820,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on('complete' | 'pause' | 'remove')
 
 ```TypeScript
@@ -827,7 +840,7 @@ Subscribes to download events. This API uses an asynchronous callback to return 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'pause' \| 'remove' | Yes | Event type.<br>- **'complete'**: download task completion.<br>-**'pause'**: download task pause.<br>- **'remove'**: download task removal. |
-| callback | () => void | Yes | Callback used to return the result. |
+| callback | () =&gt; void | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -870,6 +883,7 @@ try {
 
 ```
 
+<a id="on-2"></a>
 ## on('complete' | 'pause' | 'remove')
 
 ```TypeScript
@@ -889,7 +903,7 @@ Subscribes to download events. This API uses an asynchronous callback to return 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'pause' \| 'remove' | Yes | Event type.<br>- **'complete'**: download task completion.<br>-**'pause'**: download task pause.<br>- **'remove'**: download task removal. |
-| callback | () => void | Yes | Callback used to return the result. |
+| callback | () =&gt; void | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -932,6 +946,7 @@ try {
 
 ```
 
+<a id="on-3"></a>
 ## on('complete' | 'pause' | 'remove')
 
 ```TypeScript
@@ -951,7 +966,7 @@ Subscribes to download events. This API uses an asynchronous callback to return 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'complete' \| 'pause' \| 'remove' | Yes | Event type.<br>- **'complete'**: download task completion.<br>-**'pause'**: download task pause.<br>- **'remove'**: download task removal. |
-| callback | () => void | Yes | Callback used to return the result. |
+| callback | () =&gt; void | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -994,6 +1009,7 @@ try {
 
 ```
 
+<a id="on-4"></a>
 ## on('fail')
 
 ```TypeScript
@@ -1013,7 +1029,7 @@ Subscribes to download failure events. This API uses an asynchronous callback to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'fail' | Yes | Event type.<br>- **'fail'**: download task failure. |
-| callback | (err: number) => void | Yes | Callback for the download task failure event.For details about the error codes,see [Download Error Codes](../../../../reference/apis-basic-services-kit/js-apis-request.md#constants). |
+| callback | (err: number) =&gt; void | Yes | Callback for the download task failure event.For details about the error codes,see [Download Error Codes](docroot://reference/apis-basic-services-kit/js-apis-request.md#constants). |
 
 **Error codes:**
 
@@ -1046,6 +1062,7 @@ try {
 
 ```
 
+<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -1058,7 +1075,7 @@ Pauses this download task. This API uses an asynchronous callback to return the 
 
 **Deprecated since:** 9
 
-**Substitutes:** suspend(callback:
+**Substitutes:** [suspend(callback:](arkts-basicservices-request-downloadtask-i.md#suspend-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1070,7 +1087,7 @@ Pauses this download task. This API uses an asynchronous callback to return the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1091,6 +1108,7 @@ downloadTask.pause((err: BusinessError) => {
 
 ```
 
+<a id="pause-1"></a>
 ## pause
 
 ```TypeScript
@@ -1103,7 +1121,7 @@ Pauses this download task. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [suspend()](arkts-basicservices-request-downloadtask-i.md#suspend-2)
+**Substitutes:** [suspend()](arkts-basicservices-request-downloadtask-i.md#suspend-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1115,7 +1133,7 @@ Pauses this download task. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1134,6 +1152,7 @@ downloadTask.pause().then(() => {
 
 ```
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -1146,7 +1165,7 @@ Queries this download task. This API uses an asynchronous callback to return the
 
 **Deprecated since:** 9
 
-**Substitutes:** getTaskInfo(callback:
+**Substitutes:** [getTaskInfo(callback:](arkts-basicservices-request-downloadtask-i.md#gettaskinfo-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1158,7 +1177,7 @@ Queries this download task. This API uses an asynchronous callback to return the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DownloadInfo> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DownloadInfo** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;DownloadInfo&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DownloadInfo** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1179,6 +1198,7 @@ downloadTask.query((err: BusinessError, downloadInfo: request.DownloadInfo)=>{
 
 ```
 
+<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -1191,7 +1211,7 @@ Queries this download task. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getTaskInfo()](arkts-basicservices-request-downloadtask-i.md#gettaskinfo-2)
+**Substitutes:** [getTaskInfo()](arkts-basicservices-request-downloadtask-i.md#gettaskinfo-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1203,7 +1223,7 @@ Queries this download task. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DownloadInfo> | Promise used to return the **DownloadInfo** object. |
+| Promise&lt;DownloadInfo&gt; | Promise used to return the **DownloadInfo** object. |
 
 **Error codes:**
 
@@ -1222,6 +1242,7 @@ downloadTask.query().then((downloadInfo) => {
 
 ```
 
+<a id="querymimetype"></a>
 ## queryMimeType
 
 ```TypeScript
@@ -1234,7 +1255,7 @@ Queries the MIME type of this download task. This API uses an asynchronous callb
 
 **Deprecated since:** 9
 
-**Substitutes:** getTaskMimeType(callback:
+**Substitutes:** [getTaskMimeType(callback:](arkts-basicservices-request-downloadtask-i.md#gettaskmimetype-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1246,7 +1267,7 @@ Queries the MIME type of this download task. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and data is the **MimeType** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and data is the **MimeType** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1267,6 +1288,7 @@ downloadTask.queryMimeType((err: BusinessError, data: string)=>{
 
 ```
 
+<a id="querymimetype-1"></a>
 ## queryMimeType
 
 ```TypeScript
@@ -1279,7 +1301,7 @@ Queries the MIME type of this download task. This API uses a promise to return t
 
 **Deprecated since:** 9
 
-**Substitutes:** [getTaskMimeType()](arkts-basicservices-request-downloadtask-i.md#gettaskmimetype-2)
+**Substitutes:** [getTaskMimeType()](arkts-basicservices-request-downloadtask-i.md#gettaskmimetype-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1291,7 +1313,7 @@ Queries the MIME type of this download task. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the MIME type of a download task. |
+| Promise&lt;string&gt; | Promise used to return the MIME type of a download task. |
 
 **Error codes:**
 
@@ -1310,6 +1332,7 @@ downloadTask.queryMimeType().then((data: string) => {
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -1322,7 +1345,7 @@ Deletes the download task. This API uses an asynchronous callback to return the 
 
 **Deprecated since:** 9
 
-**Substitutes:** delete(callback:
+**Substitutes:** [delete(callback:](arkts-basicservices-request-uploadtask-i.md#delete-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1334,7 +1357,7 @@ Deletes the download task. This API uses an asynchronous callback to return the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1355,6 +1378,7 @@ downloadTask.remove((err, result)=>{
 
 ```
 
+<a id="remove-1"></a>
 ## remove
 
 ```TypeScript
@@ -1367,7 +1391,7 @@ Deletes the download task. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [delete()](arkts-basicservices-request-uploadtask-i.md#delete-2)
+**Substitutes:** [delete()](arkts-basicservices-request-uploadtask-i.md#delete-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1379,7 +1403,7 @@ Deletes the download task. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1398,6 +1422,7 @@ downloadTask.remove().then((result) => {
 
 ```
 
+<a id="restore"></a>
 ## restore
 
 ```TypeScript
@@ -1423,7 +1448,7 @@ Restores the download task. This API uses an asynchronous callback to return the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1459,6 +1484,7 @@ try {
 
 ```
 
+<a id="restore-1"></a>
 ## restore
 
 ```TypeScript
@@ -1484,7 +1510,7 @@ Restores the download task. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1518,6 +1544,7 @@ try {
 
 ```
 
+<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -1530,7 +1557,7 @@ Restores the download task. This API uses an asynchronous callback to return the
 
 **Deprecated since:** 9
 
-**Substitutes:** restore(callback:
+**Substitutes:** [restore(callback:](arkts-basicservices-request-downloadtask-i.md#restore-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1542,7 +1569,7 @@ Restores the download task. This API uses an asynchronous callback to return the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1563,6 +1590,7 @@ downloadTask.resume((err: BusinessError) => {
 
 ```
 
+<a id="resume-1"></a>
 ## resume
 
 ```TypeScript
@@ -1575,7 +1603,7 @@ Restores the download task. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [restore()](arkts-basicservices-request-downloadtask-i.md#restore-2)
+**Substitutes:** [restore()](arkts-basicservices-request-downloadtask-i.md#restore-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -1587,7 +1615,7 @@ Restores the download task. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1606,13 +1634,14 @@ downloadTask.resume().then(() => {
 
 ```
 
+<a id="suspend"></a>
 ## suspend
 
 ```TypeScript
 suspend(callback: AsyncCallback<boolean>): void
 ```
 
-Suspends this download task. You can use [restore](arkts-basicservices-request-downloadtask-i.md#restore-2) to restore the download.This API uses an asynchronous callback to return the result.
+Suspends this download task. You can use [restore](arkts-basicservices-request-downloadtask-i.md#restore-1) to restore the download.This API uses an asynchronous callback to return the result.
 
 > **NOTE**  
 >  
@@ -1631,7 +1660,7 @@ Suspends this download task. You can use [restore](arkts-basicservices-request-d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1667,13 +1696,14 @@ try {
 
 ```
 
+<a id="suspend-1"></a>
 ## suspend
 
 ```TypeScript
 suspend(): Promise<boolean>
 ```
 
-Suspends this download task. You can use [restore](arkts-basicservices-request-downloadtask-i.md#restore-2) to restore the download.This API uses a promise to return the result.
+Suspends this download task. You can use [restore](arkts-basicservices-request-downloadtask-i.md#restore-1) to restore the download.This API uses a promise to return the result.
 
 > **NOTE**  
 >  
@@ -1692,7 +1722,7 @@ Suspends this download task. You can use [restore](arkts-basicservices-request-d
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the operation is successful; **false** indicates the opposite. |
 
 **Error codes:**
 

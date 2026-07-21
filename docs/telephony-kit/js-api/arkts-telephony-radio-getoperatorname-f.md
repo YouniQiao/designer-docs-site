@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getoperatorname"></a>
 ## getOperatorName
 
 ```TypeScript
@@ -25,7 +26,7 @@ Get the operator name of the specified SIM card slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Indicates the callback for getting the operator name. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Indicates the callback for getting the operator name. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ radio.getOperatorName(slotId, (err: BusinessError, data: string) => {
 ```
 
 
+<a id="getoperatorname-1"></a>
 ## getOperatorName
 
 ```TypeScript
@@ -78,7 +80,7 @@ Get the operator name of the specified SIM card slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the operator name. |
+| Promise&lt;string&gt; | Returns the operator name. |
 
 **Error codes:**
 

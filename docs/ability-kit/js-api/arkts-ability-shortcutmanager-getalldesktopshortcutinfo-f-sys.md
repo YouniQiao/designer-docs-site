@@ -6,6 +6,7 @@
 import { shortcutManager } from '@kit.AbilityKit';
 ```
 
+<a id="getalldesktopshortcutinfo"></a>
 ## getAllDesktopShortcutInfo
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the information about all shortcuts of the given user.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ShortcutInfo>> | Promise that returns the shortcut information defined in the application configuration file. |
+| Promise&lt;Array&lt;ShortcutInfo&gt;&gt; | Promise that returns the shortcut information defined in the application configuration file. |
 
 **Error codes:**
 

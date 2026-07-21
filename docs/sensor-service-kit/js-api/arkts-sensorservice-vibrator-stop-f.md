@@ -6,6 +6,7 @@
 import { vibrator } from '@kit.SensorServiceKit';
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -18,7 +19,7 @@ Stops vibration in the specified mode. This API uses a promise to return the res
 
 **Deprecated since:** 9
 
-**Substitutes:** stopVibration(stopMode:
+**Substitutes:** [stopVibration(stopMode:](arkts-sensorservice-vibrator-stopvibration-f.md#stopvibration-1)
 
 **Required permissions:** ohos.permission.VIBRATE
 
@@ -36,7 +37,7 @@ Stops vibration in the specified mode. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns the result. |
+| Promise&lt;void&gt; | Promise that returns the result. |
 
 **Example**
 
@@ -62,6 +63,7 @@ vibrator.stop(vibrator.VibratorStopMode.VIBRATOR_STOP_MODE_PRESET).then(() => {
 ```
 
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -74,7 +76,7 @@ Stops vibration in the specified mode. This API uses an asynchronous callback to
 
 **Deprecated since:** 9
 
-**Substitutes:** stopVibration(stopMode:
+**Substitutes:** [stopVibration(stopMode:](arkts-sensorservice-vibrator-stopvibration-f.md#stopvibration-1)
 
 **Required permissions:** ohos.permission.VIBRATE
 
@@ -87,7 +89,7 @@ Stops vibration in the specified mode. This API uses an asynchronous callback to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | stopMode | [VibratorStopMode](arkts-sensorservice-vibrator-vibratorstopmode-e.md) | Yes | Mode to stop the vibration. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | No | Callback used to return the result. If the vibration stops, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback used to return the result. If the vibration stops, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { systemTime } from '@kit.BasicServicesKit';
 ```
 
+<a id="getcurrenttime"></a>
 ## getCurrentTime
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the time elapsed since the Unix epoch. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isNano | boolean | Yes | Whether the time to return is in nanoseconds.<br>- **true**: The result is in nanoseconds.<br>- **false**: The result is in milliseconds. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the time elapsed since the Unix epoch. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the time elapsed since the Unix epoch. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ try {
 ```
 
 
+<a id="getcurrenttime-1"></a>
 ## getCurrentTime
 
 ```TypeScript
@@ -80,7 +82,7 @@ Obtains the time elapsed since the Unix epoch. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the time elapsed since the Unix epoch, in milliseconds. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the time elapsed since the Unix epoch, in milliseconds. |
 
 **Error codes:**
 
@@ -109,6 +111,7 @@ try {
 ```
 
 
+<a id="getcurrenttime-2"></a>
 ## getCurrentTime
 
 ```TypeScript
@@ -137,7 +140,7 @@ Obtains the time elapsed since the Unix epoch. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the time elapsed since the Unix epoch. |
+| Promise&lt;number&gt; | Promise used to return the time elapsed since the Unix epoch. |
 
 **Error codes:**
 

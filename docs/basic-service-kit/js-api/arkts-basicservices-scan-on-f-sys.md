@@ -6,6 +6,7 @@
 import { scan } from '@kit.BasicServicesKit';
 ```
 
+<a id="on"></a>
 ## on('scanDeviceAdd')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Registers a callback used to listen for the scanner addition event. This API use
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'scanDeviceAdd' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScannerDevice> | Yes | Callback used to return the added scanner. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScannerDevice&gt; | Yes | Callback used to return the added scanner. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ scan.on('scanDeviceAdd', (device: scan.ScannerDevice) => {
 ```
 
 
+<a id="on-1"></a>
 ## on('scanDeviceDel')
 
 ```TypeScript
@@ -73,7 +75,7 @@ Registers a callback used to listen for the scanner deletion event. This API use
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'scanDeviceDel' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScannerDevice> | Yes | Callback used to return the deleted scanner. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScannerDevice&gt; | Yes | Callback used to return the deleted scanner. |
 
 **Error codes:**
 

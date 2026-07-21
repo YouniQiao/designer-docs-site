@@ -96,7 +96,7 @@ Component scroll end event.
 COMPONENT_TEXT_CHANGED = 5
 ```
 
-Text change event of the [text input component](../../../../ui/arkts-common-components-text-input.md).
+Text change event of the [text input component](docroot://ui/arkts-common-components-text-input.md).
 
 **Since:** 22
 

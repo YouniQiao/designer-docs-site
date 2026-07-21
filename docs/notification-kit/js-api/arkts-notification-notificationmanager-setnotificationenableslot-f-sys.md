@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setnotificationenableslot"></a>
 ## setNotificationEnableSlot
 
 ```TypeScript
@@ -48,7 +49,7 @@ This API can be properly called on devices other than wearables. If it is called
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
 | type | [SlotType](arkts-notification-notificationmanager-slottype-e-sys.md) | Yes | Notification slot type. |
 | enable | boolean | Yes | Whether to enable the notification slot type. The value **true** means to enable the notification slot type, and **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -86,6 +87,7 @@ notificationManager.setNotificationEnableSlot(
 ```
 
 
+<a id="setnotificationenableslot-1"></a>
 ## setNotificationEnableSlot
 
 ```TypeScript
@@ -132,7 +134,7 @@ This API can be properly called on devices other than wearables. If it is called
 | type | [SlotType](arkts-notification-notificationmanager-slottype-e-sys.md) | Yes | Notification slot type. |
 | enable | boolean | Yes | Whether to enable the notification slot type. The value **true** means to enable the notification slot type, and **false** means the opposite. |
 | isForceControl | boolean | Yes | Whether the slot is affected by the notification authorization. The value **true** means the slot is affected, and **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -149,6 +151,7 @@ This API can be properly called on devices other than wearables. If it is called
 | [17700001](../../apis-ability-kit/errorcode-bundle.md#17700001-bundle-name-does-not-exist) | The specified bundle name was not found. |
 
 
+<a id="setnotificationenableslot-2"></a>
 ## setNotificationEnableSlot
 
 ```TypeScript
@@ -182,7 +185,7 @@ This API can be properly called on devices other than wearables. If it is called
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

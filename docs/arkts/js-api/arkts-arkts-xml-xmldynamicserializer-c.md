@@ -14,6 +14,7 @@ The XmlDynamicSerializer interface is used to dynamically generate an xml file.
 import { xml } from '@kit.ArkTS';
 ```
 
+<a id="addemptyelement"></a>
 ## addEmptyElement
 
 ```TypeScript
@@ -57,6 +58,7 @@ console.info(result); // <d/>
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -92,6 +94,7 @@ let serializer = new xml.XmlDynamicSerializer('utf-8');
 
 ```
 
+<a id="endelement"></a>
 ## endElement
 
 ```TypeScript
@@ -131,6 +134,7 @@ console.info(result); // <note>Happy</note>
 
 ```
 
+<a id="getoutput"></a>
 ## getOutput
 
 ```TypeScript
@@ -151,7 +155,7 @@ Get an ArrayBuffer from a XmlDynamicSerializer instance.
 
 | Type | Description |
 | --- | --- |
-| [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md) | - Returns ArrayBuffer result from a XmlDynamicSerializer instance. |
+| ArrayBuffer | - Returns ArrayBuffer result from a XmlDynamicSerializer instance. |
 
 **Example**
 
@@ -169,6 +173,7 @@ console.info(result); // <note>Happy</note>
 
 ```
 
+<a id="setattributes"></a>
 ## setAttributes
 
 ```TypeScript
@@ -216,6 +221,7 @@ console.info(result); // <note importance="high"/>
 
 ```
 
+<a id="setcdata"></a>
 ## setCdata
 
 ```TypeScript
@@ -259,6 +265,7 @@ console.info(result); // <![CDATA[root SYSTEM]]>
 
 ```
 
+<a id="setcomment"></a>
 ## setComment
 
 ```TypeScript
@@ -302,6 +309,7 @@ console.info(result); // <!--Hello, World!-->
 
 ```
 
+<a id="setdeclaration"></a>
 ## setDeclaration
 
 ```TypeScript
@@ -339,6 +347,7 @@ console.info(result); // <?xml version="1.0" encoding="utf-8"?>
 
 ```
 
+<a id="setdoctype"></a>
 ## setDocType
 
 ```TypeScript
@@ -382,6 +391,7 @@ console.info(result); // <!DOCTYPE root SYSTEM "http://www.test.org/test.dtd">
 
 ```
 
+<a id="setnamespace"></a>
 ## setNamespace
 
 ```TypeScript
@@ -428,6 +438,7 @@ console.info(result); // <h:note xmlns:h="http://www.w3.org/TR/html4/"/>
 
 ```
 
+<a id="settext"></a>
 ## setText
 
 ```TypeScript
@@ -474,6 +485,7 @@ console.info(result); // <note importance="high">Happy</note>
 
 ```
 
+<a id="startelement"></a>
 ## startElement
 
 ```TypeScript

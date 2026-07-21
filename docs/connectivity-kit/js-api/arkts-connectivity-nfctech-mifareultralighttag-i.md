@@ -10,6 +10,7 @@ Provides methods for accessing MifareUltralight tag.
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -32,6 +33,7 @@ Gets the type of the MifareUltralight tag.
 | --- | --- |
 | tag.MifareUltralightType | Returns the type of MifareUltralight tag. |
 
+<a id="readmultiplepages"></a>
 ## readMultiplePages
 
 ```TypeScript
@@ -60,7 +62,7 @@ Reads 4 pages, total is 16 bytes. Page size is 4 bytes.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number[]> | Returns 4 pages data. |
+| Promise&lt;number[]&gt; | Returns 4 pages data. |
 
 **Error codes:**
 
@@ -71,6 +73,7 @@ Reads 4 pages, total is 16 bytes. Page size is 4 bytes.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="readmultiplepages-1"></a>
 ## readMultiplePages
 
 ```TypeScript
@@ -94,7 +97,7 @@ Reads 4 pages, total is 16 bytes. Page size is 4 bytes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | pageIndex | number | Yes | The index of page to read. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number[]> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number[]&gt; | Yes | The callback. |
 
 **Error codes:**
 
@@ -105,6 +108,7 @@ Reads 4 pages, total is 16 bytes. Page size is 4 bytes.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The Tag I/O operation failed. |
 
+<a id="writesinglepage"></a>
 ## writeSinglePage
 
 ```TypeScript
@@ -134,7 +138,7 @@ Writes a page, total 4 bytes.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The void |
+| Promise&lt;void&gt; | The void |
 
 **Error codes:**
 
@@ -145,6 +149,7 @@ Writes a page, total 4 bytes.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="writesinglepage-1"></a>
 ## writeSinglePage
 
 ```TypeScript
@@ -169,7 +174,7 @@ Writes a page, total 4 bytes.
 | --- | --- | --- | --- |
 | pageIndex | number | Yes | The index of page to write. |
 | data | number[] | Yes | The page data to write. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback. |
 
 **Error codes:**
 

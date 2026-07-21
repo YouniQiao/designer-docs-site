@@ -14,6 +14,7 @@ Provides APIs for the file manager application to download files from the Drive 
 import { cloudSync } from '@kit.CoreFileKit';
 ```
 
+<a id="cleanallfilecache"></a>
 ## cleanAllFileCache
 
 ```TypeScript
@@ -34,7 +35,7 @@ Clean all downloaded files except those not yet migrated to the cloud or those t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -42,6 +43,7 @@ Clean all downloaded files except those not yet migrated to the cloud or those t
 | --- | --- |
 | 13900010 | Try again. |
 
+<a id="cleanfilecache"></a>
 ## cleanFileCache
 
 ```TypeScript
@@ -94,6 +96,7 @@ try {
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -121,6 +124,7 @@ let fileCache = new cloudSync.CloudFileCache();
 
 ```
 
+<a id="getcachedtotalsize"></a>
 ## getCachedTotalSize
 
 ```TypeScript
@@ -141,7 +145,7 @@ Query the total size of cached files.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | - Return the total size of cached files. |
+| Promise&lt;number&gt; | - Return the total size of cached files. |
 
 **Error codes:**
 
@@ -149,6 +153,7 @@ Query the total size of cached files.
 | --- | --- |
 | 13900010 | Try again. |
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -168,7 +173,7 @@ Removes the specified callback from the device-cloud file cache progress.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'progress' | Yes | Event type. The value is **progress**, which indicates the sync progress event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DownloadProgress> | No | Callback used to return the file download progress. If this parameter is not specified, this API unregisters all callbacks for the download progress event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DownloadProgress&gt; | No | Callback used to return the file download progress. If this parameter is not specified, this API unregisters all callbacks for the download progress event. |
 
 **Error codes:**
 
@@ -198,13 +203,14 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
 off(event: 'batchDownload', callback?: Callback<MultiDownloadProgress>): void
 ```
 
-Removes the listener added via the [on](arkts-corefile-cloudsync-cloudfilecache-c.md#on-2) API for file batch downloads.
+Removes the listener added via the [on](cloudSync.CloudFileCache#on(event: 'batchDownload', callback: Callback<MultiDownloadProgress>)) API for file batch downloads.
 
 **Since:** 20
 
@@ -217,7 +223,7 @@ Removes the listener added via the [on](arkts-corefile-cloudsync-cloudfilecache-
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'batchDownload' | Yes | Event type. The value is **'batchDownload'**, indicating the batch download event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MultiDownloadProgress> | No | Callback used to return the download progress of a file.If this parameter is set, the specified callback will be canceled; otherwise, all currently subscribed callbacks of the same event type will be canceled. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MultiDownloadProgress&gt; | No | Callback used to return the download progress of a file.If this parameter is set, the specified callback will be canceled; otherwise, all currently subscribed callbacks of the same event type will be canceled. |
 
 **Error codes:**
 
@@ -246,6 +252,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -265,7 +272,7 @@ Registers a listener for the download progress of a file from the Drive Kit.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'progress' | Yes | Event. The value is **progress**, which indicates the download progress event of a cloud file. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DownloadProgress> | Yes | Callback used to return the file download progress. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DownloadProgress&gt; | Yes | Callback used to return the file download progress. |
 
 **Error codes:**
 
@@ -293,6 +300,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -312,7 +320,7 @@ Registers a listener for the batch download of a file from the Drive Kit.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | 'batchDownload' | Yes | Event type. The value is **'batchDownload'**, indicating the batch download event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MultiDownloadProgress> | Yes | Callback used to return the download progress of a file. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MultiDownloadProgress&gt; | Yes | Callback used to return the download progress of a file. |
 
 **Error codes:**
 
@@ -345,6 +353,7 @@ try {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -369,7 +378,7 @@ Starts downloading a file from the Drive Kit to the local device. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -408,6 +417,7 @@ fileCache.start(uri).then(() => {
 
 ```
 
+<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -427,7 +437,7 @@ Starts downloading a file from the Drive Kit to the local device. This API uses 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file to download. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to start downloading a cloud file asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to start downloading a cloud file asynchronously. |
 
 **Error codes:**
 
@@ -459,6 +469,7 @@ fileCache.start(uri, (err: BusinessError) => {
 
 ```
 
+<a id="startbatch"></a>
 ## startBatch
 
 ```TypeScript
@@ -479,14 +490,14 @@ Different batch download tasks can be distinguished by the task ID returned.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URI list. A maximum of 400 URIs can be transferred at a time. An error (22400004)will be thrown if the number of URIs exceeds 400. |
+| uris | Array&lt;string&gt; | Yes | URI list. A maximum of 400 URIs can be transferred at a time. An error (22400004)will be thrown if the number of URIs exceeds 400. |
 | fileType | [DownloadFileType](arkts-corefile-cloudsync-downloadfiletype-e.md) | No | File type. The default value is **CONTENT**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the ID of the batch download task. |
+| Promise&lt;number&gt; | Promise used to return the ID of the batch download task. |
 
 **Error codes:**
 
@@ -522,6 +533,7 @@ fileCache.startBatch(uriList, cloudSync.DownloadFileType.CONTENT).then((download
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -549,7 +561,7 @@ When **stop()** is called, the current file download process terminates, and dow
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -578,6 +590,7 @@ fileCache.stop(uri, true).then(() => {
 
 ```
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -599,7 +612,7 @@ When **stop()** is called, the current file download process terminates, and dow
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file to download. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to stop downloading a cloud file asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to stop downloading a cloud file asynchronously. |
 
 **Error codes:**
 
@@ -630,6 +643,7 @@ fileCache.stop(uri, (err: BusinessError) => {
 
 ```
 
+<a id="stopbatch"></a>
 ## stopBatch
 
 ```TypeScript
@@ -657,7 +671,7 @@ When **stopBatch()** is called, the batch download terminates. The **needClean**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

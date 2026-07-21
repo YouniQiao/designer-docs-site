@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="getsimaccountinfo"></a>
 ## getSimAccountInfo
 
 ```TypeScript
@@ -27,7 +28,7 @@ Get account information of SIM card.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<IccAccountInfo> | Yes | Indicates the callback for getting a {@code IccAccountInfo} object. The ICCID and phone number will be null if the permission ohos.permission.GET_TELEPHONY_STATE is not granted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;IccAccountInfo&gt; | Yes | Indicates the callback for getting a {@code IccAccountInfo} object. The ICCID and phone number will be null if the permission ohos.permission.GET_TELEPHONY_STATE is not granted. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ sim.getSimAccountInfo(0, (err:BusinessError , data: sim.IccAccountInfo) => {
 ```
 
 
+<a id="getsimaccountinfo-1"></a>
 ## getSimAccountInfo
 
 ```TypeScript
@@ -80,7 +82,7 @@ Get account information of SIM card.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<IccAccountInfo> | Returns a {@code IccAccountInfo} object. The ICCID and phone number will be null if has no ohos.permission.GET_TELEPHONY_STATE. |
+| Promise&lt;IccAccountInfo&gt; | Returns a {@code IccAccountInfo} object. The ICCID and phone number will be null if has no ohos.permission.GET_TELEPHONY_STATE. |
 
 **Error codes:**
 

@@ -1,10 +1,10 @@
 # MissionSnapshot (System API)
 
-The module defines the snapshot of a mission. The snapshot can be obtained through
-[missionManager.getMissionSnapShot](arkts-ability-getmissionsnapshot-f-sys.md#getmissionsnapshot-1)
-.
+The module defines the snapshot of a mission. The snapshot can be obtained through [missionManager.getMissionSnapShot](arkts-ability-missionmanager-getmissionsnapshot-f-sys.md#getmissionsnapshot-1).
 
 **Since:** 8
+
+<!--Device-unnamed-export interface MissionSnapshot--><!--Device-unnamed-export interface MissionSnapshot-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Mission
 
@@ -22,6 +22,8 @@ Ability information of the mission.
 
 **Since:** 8
 
+<!--Device-MissionSnapshot-ability: ElementName--><!--Device-MissionSnapshot-ability: ElementName-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.Mission
 
 **System API:** This is a system API.
@@ -37,6 +39,8 @@ Snapshot of the mission.
 **Type:** image.PixelMap
 
 **Since:** 8
+
+<!--Device-MissionSnapshot-snapshot: image.PixelMap--><!--Device-MissionSnapshot-snapshot: image.PixelMap-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Mission
 

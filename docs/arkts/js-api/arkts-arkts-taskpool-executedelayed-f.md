@@ -6,6 +6,7 @@
 import { taskpool } from '@kit.ArkTS';
 ```
 
+<a id="executedelayed"></a>
 ## executeDelayed
 
 ```TypeScript
@@ -34,7 +35,7 @@ Executes a task after a given delay. In this execution mode, you can set the tas
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Object> | Promise used to return an object that carries the function execution result. |
+| Promise&lt;Object&gt; | Promise used to return an object that carries the function execution result. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ taskpool.executeDelayed(1000, task).then(() => { // 1000: delayTime is 1000ms
 ```
 
 
+<a id="executedelayed-1"></a>
 ## executeDelayed
 
 ```TypeScript
@@ -90,14 +92,14 @@ Executes the generic task with a delay without verifying the parameter type and 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | delayTime | number | Yes | Delay, in ms. The value must be greater than or equal to 0.The value should be an integer.<br>Unit:milliseconds. |
-| task | [GenericsTask](arkts-arkts-taskpool-genericstask-c.md)<A, R> | Yes | Generic task to be executed with a delay. |
+| task | [GenericsTask](arkts-arkts-taskpool-genericstask-c.md)&lt;A, R&gt; | Yes | Generic task to be executed with a delay. |
 | priority | [Priority](arkts-arkts-taskpool-priority-e.md) | No | Priority of the task. The default value is **taskpool.Priority.MEDIUM**. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<R> | Promise used to return an object that carries the function execution result. |
+| Promise&lt;R&gt; | Promise used to return an object that carries the function execution result. |
 
 **Error codes:**
 

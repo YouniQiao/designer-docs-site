@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="addcustomdnsrule"></a>
 ## addCustomDnsRule
 
 ```TypeScript
@@ -29,8 +30,8 @@ Add a custom {@link host} and corresponding {@link ip} mapping for current appli
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | host | string | Yes | Indicates the host name or the domain. |
-| ip | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of IP addresses mapped to the host name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Returns the callback of addCustomDnsRule. |
+| ip | Array&lt;string&gt; | Yes | List of IP addresses mapped to the host name. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Returns the callback of addCustomDnsRule. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ connection.addCustomDnsRule("xxxx", ["xx.xx.xx.xx","xx.xx.xx.xx"], (error: Busin
 ```
 
 
+<a id="addcustomdnsrule-1"></a>
 ## addCustomDnsRule
 
 ```TypeScript
@@ -82,13 +84,13 @@ Add a custom {@link host} and corresponding {@link ip} mapping for current appli
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | host | string | Yes | Indicates the host name or the domain. |
-| ip | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of IP addresses mapped to the host name. |
+| ip | Array&lt;string&gt; | Yes | List of IP addresses mapped to the host name. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

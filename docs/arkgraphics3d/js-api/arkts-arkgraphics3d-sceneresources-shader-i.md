@@ -10,6 +10,7 @@ Shader resource.
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="setshaderinputs"></a>
 ## setShaderInputs
 
 ```TypeScript
@@ -30,7 +31,7 @@ Set shader inputs. Offers the same functionality for setting shader inputs as th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inputs | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, number \| Vec2 \| Vec3 \| Vec4 \| Image> | Yes | Inputs of the shader |
+| inputs | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, number \| Vec2 \| Vec3 \| Vec4 \| Image&gt; | Yes | Inputs of the shader |
 
 ## inputs
 
@@ -40,7 +41,7 @@ readonly inputs: Record<string, number | Vec2 | Vec3 | Vec4 | Image>
 
 Shader inputs.
 
-**Type:** Record<string, number | Vec2 | Vec3 | Vec4 | Image>
+**Type:** Record&lt;string, number \| Vec2 \| Vec3 \| Vec4 \| Image&gt;
 
 **Since:** 12
 

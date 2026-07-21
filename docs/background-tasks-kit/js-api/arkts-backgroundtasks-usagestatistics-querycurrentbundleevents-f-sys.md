@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="querycurrentbundleevents"></a>
 ## queryCurrentBundleEvents
 
 ```TypeScript
@@ -28,7 +29,7 @@ Queries state data of the current bundle within a specified period.
 | --- | --- | --- | --- |
 | begin | number | Yes | Indicates the start time of the query period, in milliseconds.<br> Unit:ms |
 | end | number | Yes | Indicates the end time of the query period, in milliseconds.<br> Unit:ms |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<BundleEvents>> | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the {@link BundleEvents} object Array containing the state data of the current bundle. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;BundleEvents&gt;&gt; | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the {@link BundleEvents} object Array containing the state data of the current bundle. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ usageStatistics.queryCurrentBundleEvents(0, 20000000000000, (err: BusinessError,
 ```
 
 
+<a id="querycurrentbundleevents-1"></a>
 ## queryCurrentBundleEvents
 
 ```TypeScript
@@ -92,7 +94,7 @@ Queries state data of the current bundle within a specified period.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleEvents>> | the promise returned by queryCurrentBundleEvents.the {@link BundleEvents} object Array containing the state data of the current bundle. |
+| Promise&lt;Array&lt;BundleEvents&gt;&gt; | the promise returned by queryCurrentBundleEvents.the {@link BundleEvents} object Array containing the state data of the current bundle. |
 
 **Error codes:**
 
@@ -127,6 +129,7 @@ usageStatistics.queryCurrentBundleEvents(0, 20000000000000).then((res: Array<usa
 ```
 
 
+<a id="querycurrentbundleevents-2"></a>
 ## queryCurrentBundleEvents
 
 ```TypeScript
@@ -157,7 +160,7 @@ Queries state data of the current bundle within a specified period.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleEvents>> | the promise returned by queryCurrentBundleEvents.the {@link BundleEvents} object Array containing the state data of the current bundle. |
+| Promise&lt;Array&lt;BundleEvents&gt;&gt; | the promise returned by queryCurrentBundleEvents.the {@link BundleEvents} object Array containing the state data of the current bundle. |
 
 **Error codes:**
 

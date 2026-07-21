@@ -6,6 +6,7 @@
 import { sharing } from '@kit.NetworkKit';
 ```
 
+<a id="on"></a>
 ## on('sharingStateChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Register a callback for the global network sharing state change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sharingStateChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | the callback function that returns the status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | the callback function that returns the status. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ sharing.on('sharingStateChange', (data: boolean) => {
 ```
 
 
+<a id="on-1"></a>
 ## on('interfaceSharingStateChange')
 
 ```TypeScript
@@ -74,7 +76,7 @@ Register a callback for the interface network sharing state change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'interfaceSharingStateChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<InterfaceSharingStateInfo> | Yes | the callback function that returns the message. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;InterfaceSharingStateInfo&gt; | Yes | the callback function that returns the message. |
 
 **Error codes:**
 
@@ -96,6 +98,7 @@ sharing.on('interfaceSharingStateChange', (data: object) => {
 ```
 
 
+<a id="on-2"></a>
 ## on('sharingUpstreamChange')
 
 ```TypeScript
@@ -119,7 +122,7 @@ Register a callback for the sharing upstream network change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sharingUpstreamChange' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetHandle> | Yes | the callback function that returns the network handle. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetHandle&gt; | Yes | the callback function that returns the network handle. |
 
 **Error codes:**
 

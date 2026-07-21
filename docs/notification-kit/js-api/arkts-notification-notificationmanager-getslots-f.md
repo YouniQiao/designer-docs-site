@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getslots"></a>
 ## getSlots
 
 ```TypeScript
@@ -26,7 +27,7 @@ This API is used to batch query the configuration information of all notificatio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<NotificationSlot>> | Yes | Callback used to return the result. If the notification slots are obtained successfully, **err** is **undefined** and **data** is the obtained **NotificationSlot** array. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;NotificationSlot&gt;&gt; | Yes | Callback used to return the result. If the notification slots are obtained successfully, **err** is **undefined** and **data** is the obtained **NotificationSlot** array. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ notificationManager.getSlots(getSlotsCallback);
 ```
 
 
+<a id="getslots-1"></a>
 ## getSlots
 
 ```TypeScript
@@ -75,7 +77,7 @@ This API is used to batch query the configuration information of all notificatio
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NotificationSlot>> | Promise used to return the result. |
+| Promise&lt;Array&lt;NotificationSlot&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 

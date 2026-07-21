@@ -14,6 +14,7 @@ Provides the API for formatting number strings.
 import { intl } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -40,6 +41,7 @@ let formatter: intl.NumberFormat = new intl.NumberFormat();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -60,7 +62,7 @@ Creates a **NumberFormat** object based on the specified locale and options.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string \| Array<string> | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
+| locale | string \| Array&lt;string&gt; | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
 | options | [NumberOptions](arkts-localization-intl-numberoptions-i.md) | No | Options for creating the **NumberFormat** object. |
 
 **Example**
@@ -73,6 +75,7 @@ let formatter: intl.NumberFormat = new intl.NumberFormat('en-GB', { style: 'deci
 
 ```
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -119,6 +122,7 @@ let result: string = formatter.format(1.23456); // result = 1.23
 
 ```
 
+<a id="formatrange"></a>
 ## formatRange
 
 ```TypeScript
@@ -158,6 +162,7 @@ let formattedRange: string = formatter.formatRange(0, 3); // formattedRange: 0â€
 
 ```
 
+<a id="resolvedoptions"></a>
 ## resolvedOptions
 
 ```TypeScript

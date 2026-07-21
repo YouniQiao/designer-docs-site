@@ -16,6 +16,7 @@ Provides APIs for random number operations. Before using any API of the **Random
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="enablehardwareentropy"></a>
 ## enableHardwareEntropy
 
 ```TypeScript
@@ -67,6 +68,7 @@ rand.generateRandom(12, (err, randData) => {
 
 ```
 
+<a id="generaterandom"></a>
 ## generateRandom
 
 ```TypeScript
@@ -94,7 +96,7 @@ Generates a random number of the specified length. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | len | number | Yes | Length of the random number to generate, in bytes. The value range is [1, INT_MAX]. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataBlob> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the random number obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataBlob&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the random number obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -120,6 +122,7 @@ rand.generateRandom(12, (err, randData) => {
 
 ```
 
+<a id="generaterandom-1"></a>
 ## generateRandom
 
 ```TypeScript
@@ -150,7 +153,7 @@ Generates a random number of the specified length. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob> | Promise used to return the random number generated. |
+| Promise&lt;DataBlob&gt; | Promise used to return the random number generated. |
 
 **Error codes:**
 
@@ -247,6 +250,7 @@ export default {
 
 ```
 
+<a id="generaterandomsync"></a>
 ## generateRandomSync
 
 ```TypeScript
@@ -384,6 +388,7 @@ export default {
 
 ```
 
+<a id="setseed"></a>
 ## setSeed
 
 ```TypeScript

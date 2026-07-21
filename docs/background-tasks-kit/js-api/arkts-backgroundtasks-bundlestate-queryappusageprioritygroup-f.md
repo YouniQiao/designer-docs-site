@@ -6,6 +6,7 @@
 import { bundleState } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="queryappusageprioritygroup"></a>
 ## queryAppUsagePriorityGroup
 
 ```TypeScript
@@ -28,7 +29,7 @@ The priority defined in a priority group restricts the resource usage of an appl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | the callback of queryAppUsagePriorityGroup.Returns the app group of the calling application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | the callback of queryAppUsagePriorityGroup.Returns the app group of the calling application. |
 
 **Example**
 
@@ -47,6 +48,7 @@ bundleState.queryAppUsagePriorityGroup((err: BusinessError, res: number) => {
 ```
 
 
+<a id="queryappusageprioritygroup-1"></a>
 ## queryAppUsagePriorityGroup
 
 ```TypeScript
@@ -69,7 +71,7 @@ The priority defined in a priority group restricts the resource usage of an appl
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | the promise returned by queryAppUsagePriorityGroup.Returns the app group of the calling application. |
+| Promise&lt;number&gt; | the promise returned by queryAppUsagePriorityGroup.Returns the app group of the calling application. |
 
 **Example**
 

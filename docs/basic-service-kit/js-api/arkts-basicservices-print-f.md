@@ -6,13 +6,14 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="print"></a>
 ## print
 
 ```TypeScript
 function print(files: Array<string>, callback: AsyncCallback<PrintTask>): void
 ```
 
-Prints files. This API uses an asynchronous callback to return the result. To start the system print preview page,call the [print](arkts-basicservices-print-f.md#print-4) API and pass in context.
+Prints files. This API uses an asynchronous callback to return the result. To start the system print preview page,call the [print](arkts-basicservices-print-f.md#print-1) API and pass in context.
 
 **Since:** 10
 
@@ -30,8 +31,8 @@ Prints files. This API uses an asynchronous callback to return the result. To st
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| files | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of files to print. Images (in .jpg, .png, .gif, .bmp, or .webp format) and PDF files are supported. You should save the files to the application sandbox, obtain the sandbox URI through **fileUri.getUriFromPath**, and then pass this URI as a parameter to this API. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<PrintTask> | Yes | Callback to be invoked when the print job is finished. |
+| files | Array&lt;string&gt; | Yes | List of files to print. Images (in .jpg, .png, .gif, .bmp, or .webp format) and PDF files are supported. You should save the files to the application sandbox, obtain the sandbox URI through **fileUri.getUriFromPath**, and then pass this URI as a parameter to this API. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;PrintTask&gt; | Yes | Callback to be invoked when the print job is finished. |
 
 **Error codes:**
 
@@ -63,13 +64,14 @@ print.print([fileUri.getUriFromPath(filePath)], (err: BusinessError, printTask: 
 ```
 
 
+<a id="print-1"></a>
 ## print
 
 ```TypeScript
 function print(files: Array<string>): Promise<PrintTask>
 ```
 
-Prints files. This API uses a promise to return the result. To start the system print preview page, call the [print](arkts-basicservices-print-f.md#print-4) API and pass in context.
+Prints files. This API uses a promise to return the result. To start the system print preview page, call the [print](arkts-basicservices-print-f.md#print-1) API and pass in context.
 
 **Since:** 10
 
@@ -87,13 +89,13 @@ Prints files. This API uses a promise to return the result. To start the system 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| files | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of files to print. Images (in .jpg, .png, .gif, .bmp, or .webp format) and PDF files are supported. You should save the files to the application sandbox, obtain the sandbox URI through **fileUri.getUriFromPath**, and then pass this URI as a parameter to this API. |
+| files | Array&lt;string&gt; | Yes | List of files to print. Images (in .jpg, .png, .gif, .bmp, or .webp format) and PDF files are supported. You should save the files to the application sandbox, obtain the sandbox URI through **fileUri.getUriFromPath**, and then pass this URI as a parameter to this API. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PrintTask> | Promise used to return a [PrintTask](arkts-basicservices-print-printtask-i.md) object. |
+| Promise&lt;PrintTask&gt; | Promise used to return a [PrintTask](arkts-basicservices-print-printtask-i.md) object. |
 
 **Error codes:**
 
@@ -123,6 +125,7 @@ print.print([fileUri.getUriFromPath(filePath)]).then((printTask: print.PrintTask
 ```
 
 
+<a id="print-2"></a>
 ## print
 
 ```TypeScript
@@ -143,9 +146,9 @@ Prints files. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| files | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of files to be printed. Currently, the following file types are supported: ".bm", ".bmp", ".doc", ".docm", ".docx", ".dot", ".dotm", ".dotx", ".gif", ".jfif", ".jpe", ".jpeg", ".jpg", "pdf", ".pot", ".potm", ".potx", ".pps", ".ppsm", ".ppsx", ".ppt", ".pptm", ".pptx", ".png", ".rtf", ".txt", ".webp", ".wps", ".xls", ".xlsb", ".xlsm", ".xlsx", ".xlt", ".xltx", and ".xml". You should save the files to the application sandbox, obtain the sandbox URI through **fileUri.getUriFromPath**, and then pass this URI as a parameter to this API. |
+| files | Array&lt;string&gt; | Yes | List of files to be printed. Currently, the following file types are supported: ".bm", ".bmp", ".doc", ".docm", ".docx", ".dot", ".dotm", ".dotx", ".gif", ".jfif", ".jpe", ".jpeg", ".jpg", "pdf", ".pot", ".potm", ".potx", ".pps", ".ppsm", ".ppsx", ".ppt", ".pptm", ".pptx", ".png", ".rtf", ".txt", ".webp", ".wps", ".xls", ".xlsb", ".xlsm", ".xlsx", ".xlt", ".xltx", and ".xml". You should save the files to the application sandbox, obtain the sandbox URI through **fileUri.getUriFromPath**, and then pass this URI as a parameter to this API. |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | UIAbilityContext used to start the system print UI. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<PrintTask> | Yes | Callback to be invoked when the print job is finished. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;PrintTask&gt; | Yes | Callback to be invoked when the print job is finished. |
 
 **Error codes:**
 
@@ -193,6 +196,7 @@ struct Index {
 ```
 
 
+<a id="print-3"></a>
 ## print
 
 ```TypeScript
@@ -213,14 +217,14 @@ Prints files. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| files | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of files to be printed. Currently, the following file types are supported: ".bm", ".bmp", ".doc", ".docm", ".docx", ".dot", ".dotm", ".dotx", ".gif", ".jfif", ".jpe", ".jpeg", ".jpg", "pdf", ".pot", ".potm", ".potx", ".pps", ".ppsm", ".ppsx", ".ppt", ".pptm", ".pptx", ".png", ".rtf", ".txt", ".webp", ".wps", ".xls", ".xlsb", ".xlsm", ".xlsx", ".xlt", ".xltx", and ".xml". You should save the files to the application sandbox, obtain the sandbox URI through **fileUri.getUriFromPath**, and then pass this URI as a parameter to this API. |
+| files | Array&lt;string&gt; | Yes | List of files to be printed. Currently, the following file types are supported: ".bm", ".bmp", ".doc", ".docm", ".docx", ".dot", ".dotm", ".dotx", ".gif", ".jfif", ".jpe", ".jpeg", ".jpg", "pdf", ".pot", ".potm", ".potx", ".pps", ".ppsm", ".ppsx", ".ppt", ".pptm", ".pptx", ".png", ".rtf", ".txt", ".webp", ".wps", ".xls", ".xlsb", ".xlsm", ".xlsx", ".xlt", ".xltx", and ".xml". You should save the files to the application sandbox, obtain the sandbox URI through **fileUri.getUriFromPath**, and then pass this URI as a parameter to this API. |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | UIAbilityContext used to start the system print UI. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PrintTask> | Promise used to return a [PrintTask](arkts-basicservices-print-printtask-i.md) object. |
+| Promise&lt;PrintTask&gt; | Promise used to return a [PrintTask](arkts-basicservices-print-printtask-i.md) object. |
 
 **Error codes:**
 
@@ -266,6 +270,7 @@ struct Index {
 ```
 
 
+<a id="print-4"></a>
 ## print
 
 ```TypeScript
@@ -298,7 +303,7 @@ Prints a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PrintTask> | Promise used to return a [PrintTask](arkts-basicservices-print-printtask-i.md) object. |
+| Promise&lt;PrintTask&gt; | Promise used to return a [PrintTask](arkts-basicservices-print-printtask-i.md) object. |
 
 **Error codes:**
 

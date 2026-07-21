@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="isuidnetallowed"></a>
 ## isUidNetAllowed
 
 ```TypeScript
@@ -30,7 +31,7 @@ Get the status whether the uid app can access the metered network or non-metered
 | --- | --- | --- | --- |
 | uid | number | Yes | The specified UID of application. |
 | isMetered | boolean | Yes | Indicates metered network or non-metered network. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of isUidNetAllowed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of isUidNetAllowed. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ policy.isUidNetAllowed(11111, true, (error: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isuidnetallowed-1"></a>
 ## isUidNetAllowed
 
 ```TypeScript
@@ -85,7 +87,7 @@ Get the status whether the uid app can access the metered network or non-metered
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -115,6 +117,7 @@ policy
 ```
 
 
+<a id="isuidnetallowed-2"></a>
 ## isUidNetAllowed
 
 ```TypeScript
@@ -139,7 +142,7 @@ Get the status of whether the specified uid can access the specified network.
 | --- | --- | --- | --- |
 | uid | number | Yes | The specified UID of application. |
 | iface | string | Yes | The specified network interface name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of isUidNetAllowed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of isUidNetAllowed. |
 
 **Error codes:**
 
@@ -165,6 +168,7 @@ policy.isUidNetAllowed(11111, 'wlan0', (error: BusinessError, data: boolean) => 
 ```
 
 
+<a id="isuidnetallowed-3"></a>
 ## isUidNetAllowed
 
 ```TypeScript
@@ -194,7 +198,7 @@ Get the status of whether the specified uid can access the specified network.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Error codes:**
 

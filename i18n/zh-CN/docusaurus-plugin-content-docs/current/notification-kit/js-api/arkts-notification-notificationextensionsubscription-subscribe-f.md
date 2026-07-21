@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="subscribe"></a>
 ## subscribe
 
 ```TypeScript
@@ -32,7 +33,7 @@ function subscribe(info: NotificationExtensionSubscriptionInfo[]): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -41,7 +42,7 @@ function subscribe(info: NotificationExtensionSubscriptionInfo[]): Promise<void>
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied or current device not supported. |
 | [1600001](../errorcode-notification.md#1600001-内部错误) | Internal error. |
 | [1600003](../errorcode-notification.md#1600003-连接通知服务失败) | Failed to connect to the service. |
-| [1600023](../errorcode-notification.md#1600023-app-notificationsubscriberextensionability未实现) | The application does not implement the NotificationSubscriberExtensionAbility. |
+| [1600023](../errorcode-notification.md#1600023-应用未实现notificationsubscriberextensionability) | The application does not implement the NotificationSubscriberExtensionAbility. |
 
 **示例：**
 

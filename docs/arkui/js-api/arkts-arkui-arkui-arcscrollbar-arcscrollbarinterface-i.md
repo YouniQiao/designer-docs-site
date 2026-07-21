@@ -1,6 +1,6 @@
 # ArcScrollBarInterface
 
-The **ArcScrollBar** component is designed to be used together with scrollable components such as [ArcList](arkts-arkui-arclist.md), [List](../arkts-components/arkts-arkui-list.md),[Grid](../arkts-components/arkts-arkui-grid.md), [Scroll](../arkts-components/arkts-arkui-scroll.md), and [WaterFlow](../arkts-components/arkts-arkui-waterflow.md).
+The **ArcScrollBar** component is designed to be used together with scrollable components such as [ArcList](arkts-arkui-arclist.md), [List](../../apis-arkts/arkts-apis/arkts-arkts-util-list-list-c.md),[Grid](../arkts-components/arkts-arkui-grid.md), [Scroll](../arkts-components/arkts-arkui-scroll.md), and [WaterFlow](../arkts-components/arkts-arkui-waterflow.md).
 
 > **NOTE**  
 >  
@@ -10,7 +10,7 @@ The **ArcScrollBar** component is designed to be used together with scrollable c
 > - When the width and height of the **ArcScrollBar** component are not set, the **maxSize** value specified in its  
 > parent component [LayoutConstraint](arkts-arkui-framenode-layoutconstraint-i.md) is used as the width and height. If  
 > the parent component of the **ArcScrollBar** component contains scrollable components, such as  
-> [ArcList](arkts-arkui-arclist.md), [List](../arkts-components/arkts-arkui-list.md),  
+> [ArcList](arkts-arkui-arclist.md), [List](../../apis-arkts/arkts-apis/arkts-arkts-util-list-list-c.md),  
 > [Grid](../arkts-components/arkts-arkui-grid.md), [Scroll](../arkts-components/arkts-arkui-scroll.md), or  
 > [WaterFlow](../arkts-components/arkts-arkui-waterflow.md), you are advised to set the width and height of the  
 > **ArcScrollBar** component. Otherwise, the width and height of the component may be infinite.  
@@ -31,6 +31,7 @@ The **ArcScrollBar** component is designed to be used together with scrollable c
 import { ArcScrollBarAttribute, ArcScrollBar } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

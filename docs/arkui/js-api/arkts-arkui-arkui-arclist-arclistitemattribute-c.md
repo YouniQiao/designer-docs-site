@@ -16,6 +16,7 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 import { ArcListItemAttribute, ArcList, ArcListItem, ArcListAttribute } from '@kit.ArkUI';
 ```
 
+<a id="autoscale"></a>
 ## autoScale
 
 ```TypeScript
@@ -36,7 +37,7 @@ Sets whether to enable auto-scaling for the **ArcListItem** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable auto-scaling.<br>**true**: Enable auto-scaling.<br>**false**: Disable auto-scaling.<br>Default value: **true**. |
+| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable auto-scaling.<br>**true**: Enable auto-scaling.<br>**false**: Disable auto-scaling.<br>Default value: **true**. |
 
 **Return value:**
 
@@ -44,6 +45,7 @@ Sets whether to enable auto-scaling for the **ArcListItem** component.
 | --- | --- |
 | [ArcListItemAttribute](arkts-arkui-arkui-arclist-arclistitemattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="swipeaction"></a>
 ## swipeAction
 
 ```TypeScript
@@ -64,7 +66,7 @@ Sets the swipe action item displayed when the **ArcListItem** component is swipe
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [Optional](../arkts-components/arkts-arkui-optional-t.md)<SwipeActionOptions> | Yes | Swipe action item displayed when the **ArcListItem** component is swiped out from the screen edge. |
+| options | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;SwipeActionOptions&gt; | Yes | Swipe action item displayed when the **ArcListItem** component is swiped out from the screen edge. |
 
 **Return value:**
 

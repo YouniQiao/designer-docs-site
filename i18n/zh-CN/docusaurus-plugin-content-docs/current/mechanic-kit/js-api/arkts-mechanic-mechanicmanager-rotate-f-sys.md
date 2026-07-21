@@ -6,13 +6,14 @@
 import { mechanicManager } from '@kit.MechanicKit';
 ```
 
+<a id="rotate"></a>
 ## rotate
 
 ```TypeScript
 function rotate(mechId: number, angles: RotationAngles, duration: number): Promise<Result>
 ```
 
-Rotates a mechanical device to the relative angles.
+将机械设备旋转到相对角度
 
 **起始版本：** 20
 
@@ -34,7 +35,7 @@ Rotates a mechanical device to the relative angles.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<Result> | Promise that return the execution result. |
+| Promise&lt;Result&gt; | Promise that return the execution result. |
 
 **错误码：**
 

@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="isapplicationrunning"></a>
 ## isApplicationRunning
 
 ```TypeScript
@@ -34,7 +35,7 @@ Checks whether the application with the specified bundle name is running across 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** is returned if at least one user is running the specified application. **false** is returned if none of the users are running the application. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** is returned if at least one user is running the specified application. **false** is returned if none of the users are running the application. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ appManager.isApplicationRunning(bundleName).then((data) => {
 ```
 
 
+<a id="isapplicationrunning-1"></a>
 ## isApplicationRunning
 
 ```TypeScript
@@ -85,7 +87,7 @@ Checks whether the application with the specified bundle name is running across 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. **true** is returned if at least one user is running the specified application. **false** is returned if none of the users are running the application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. **true** is returned if at least one user is running the specified application. **false** is returned if none of the users are running the application. |
 
 **Error codes:**
 

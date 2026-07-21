@@ -6,6 +6,7 @@
 import { vpnExtension } from '@kit.NetworkKit';
 ```
 
+<a id="stopvpnextensionability"></a>
 ## stopVpnExtensionAbility
 
 ```TypeScript
@@ -32,7 +33,7 @@ Stops a service within the same application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

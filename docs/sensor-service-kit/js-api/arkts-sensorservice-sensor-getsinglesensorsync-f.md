@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getsinglesensorsync"></a>
 ## getSingleSensorSync
 
 ```TypeScript

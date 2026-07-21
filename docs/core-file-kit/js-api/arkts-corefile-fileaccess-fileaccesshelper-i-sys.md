@@ -18,6 +18,7 @@ Provides a **FileAccessHelper** object.
 import { fileAccess } from '@kit.CoreFileKit';
 ```
 
+<a id="access"></a>
 ## access
 
 ```TypeScript
@@ -50,7 +51,7 @@ Checks whether a file or directory exists. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns whether it exists. |
+| Promise&lt;boolean&gt; | Returns whether it exists. |
 
 **Error codes:**
 
@@ -119,6 +120,7 @@ async function accessFunc() {
 
 ```
 
+<a id="access-1"></a>
 ## access
 
 ```TypeScript
@@ -146,7 +148,7 @@ Checks whether a file or directory exists. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sourceFileUri | string | Yes | Indicates the selected file or directory. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback is used to return whether it exists. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback is used to return whether it exists. |
 
 **Error codes:**
 
@@ -217,6 +219,7 @@ try {
 
 ```
 
+<a id="copy"></a>
 ## copy
 
 ```TypeScript
@@ -251,8 +254,9 @@ Copies a file or directory. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<CopyResult>> | Promise used to return the result. If the file or directory is copied successfully, no information is returned. If the file copy fails, a **copyResult** array is returned. |
+| Promise&lt;Array&lt;CopyResult&gt;&gt; | Promise used to return the result. If the file or directory is copied successfully, no information is returned. If the file copy fails, a **copyResult** array is returned. |
 
+<a id="copy-1"></a>
 ## copy
 
 ```TypeScript
@@ -281,7 +285,7 @@ Copies a file or directory. This API uses an asynchronous callback to return the
 | --- | --- | --- | --- |
 | sourceUri | string | Yes | URI of the source file or directory to copy. For example,**file://docs/storage/Users/currentUser/Download/1.txt**. |
 | destUri | string | Yes | URI of the destination directory, to which the file or directory is moved. For example, **file://docs/storage/Users/currentUser/Download/test**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<CopyResult>> | Yes | Callback invoked to return the result. If the file or directory is copied successfully, no information is returned. If the copy fails, a **copyResult** array is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;CopyResult&gt;&gt; | Yes | Callback invoked to return the result. If the file or directory is copied successfully, no information is returned. If the copy fails, a **copyResult** array is returned. |
 
 **Example**
 
@@ -319,6 +323,7 @@ try {
 
 ```
 
+<a id="copy-2"></a>
 ## copy
 
 ```TypeScript
@@ -348,7 +353,7 @@ Copies a file or directory. If a file with the same name already exists, you can
 | sourceUri | string | Yes | URI of the source file or directory to copy. For example,**file://docs/storage/Users/currentUser/Download/1.txt**. |
 | destUri | string | Yes | URI of the destination directory, to which the file or directory is moved. For example, **file://docs/storage/Users/currentUser/Download/test**. |
 | force | boolean | Yes | Whether to forcibly overwrite the original file with the same name. If **force** is set to **true**, the original file is forcibly overwritten. If **force** is left empty or set to **false**,the original file is not overwritten. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<CopyResult>> | Yes | Callback invoked to return the result. If the file or directory is copied successfully, no information is returned. If the copy fails, a **copyResult** array is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;CopyResult&gt;&gt; | Yes | Callback invoked to return the result. If the file or directory is copied successfully, no information is returned. If the copy fails, a **copyResult** array is returned. |
 
 **Example**
 
@@ -386,6 +391,7 @@ try {
 
 ```
 
+<a id="copyfile"></a>
 ## copyFile
 
 ```TypeScript
@@ -422,7 +428,7 @@ Copies a file with an alternative file name. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | URI of the file generated. |
+| Promise&lt;string&gt; | URI of the file generated. |
 
 **Error codes:**
 
@@ -479,6 +485,7 @@ async function copyFunc01() {
 
 ```
 
+<a id="copyfile-1"></a>
 ## copyFile
 
 ```TypeScript
@@ -510,7 +517,7 @@ Copies a file with an alternative file name. This API uses an asynchronous callb
 | sourceUri | string | Yes | URI of the source file or directory to copy. For example,**file://docs/storage/Users/currentUser/Download/1.txt**. |
 | destUri | string | Yes | URI of the destination directory, to which the file or directory is moved. For example, **file://docs/storage/Users/currentUser/Download/test**. |
 | fileName | string | Yes | File name to use if there is a file with the same name as the source file in the destination directory. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | URI of the file generated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | URI of the file generated. |
 
 **Error codes:**
 
@@ -566,6 +573,7 @@ try {
 
 ```
 
+<a id="createfile"></a>
 ## createFile
 
 ```TypeScript
@@ -599,7 +607,7 @@ Creates a file in a directory. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the new file's URI. |
+| Promise&lt;string&gt; | Returns the new file's URI. |
 
 **Error codes:**
 
@@ -670,6 +678,7 @@ async function createFile() {
 
 ```
 
+<a id="createfile-1"></a>
 ## createFile
 
 ```TypeScript
@@ -698,7 +707,7 @@ Creates a file in a directory. This API uses an asynchronous callback to return 
 | --- | --- | --- | --- |
 | uri | string | Yes | Represents a specific parent directory. |
 | displayName | string | Yes | Indicates the new file name, and supports with suffix. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | The callback is used to return the new file's URI. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | The callback is used to return the new file's URI. |
 
 **Error codes:**
 
@@ -766,6 +775,7 @@ try {
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -798,7 +808,7 @@ Deletes a file or directory. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | @throws { BusinessError } 13900001 - Operation not permitted |
+| Promise&lt;number&gt; | @throws { BusinessError } 13900001 - Operation not permitted |
 
 **Error codes:**
 
@@ -864,6 +874,7 @@ async function deleteFile01() {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -891,7 +902,7 @@ Deletes a file or directory. This API uses an asynchronous callback to return th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | Indicates the file or directory to be deleted. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes |  |
 
 **Error codes:**
 
@@ -958,6 +969,7 @@ try {
 
 ```
 
+<a id="getfileinfofromrelativepath"></a>
 ## getFileInfoFromRelativePath
 
 ```TypeScript
@@ -990,7 +1002,7 @@ Obtains a **FileInfo** object based on a relative path. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileInfo> | Returns a FileInfo. |
+| Promise&lt;FileInfo&gt; | Returns a FileInfo. |
 
 **Example**
 
@@ -1014,6 +1026,7 @@ async function getRelativePath() {
 
 ```
 
+<a id="getfileinfofromrelativepath-1"></a>
 ## getFileInfoFromRelativePath
 
 ```TypeScript
@@ -1041,7 +1054,7 @@ Obtains a **FileInfo** object based on a relative path. This API uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | relativePath | string | Yes | Indicates the selected file or directory. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FileInfo> | Yes | The callback is used to return a fileinfo object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FileInfo&gt; | Yes | The callback is used to return a fileinfo object. |
 
 **Example**
 
@@ -1069,6 +1082,7 @@ try {
 
 ```
 
+<a id="getfileinfofromuri"></a>
 ## getFileInfoFromUri
 
 ```TypeScript
@@ -1101,7 +1115,7 @@ Obtains a **FileInfo** object based on a URI. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileInfo> | Returns a FileInfo. |
+| Promise&lt;FileInfo&gt; | Returns a FileInfo. |
 
 **Example**
 
@@ -1126,6 +1140,7 @@ async function getUri() {
 
 ```
 
+<a id="getfileinfofromuri-1"></a>
 ## getFileInfoFromUri
 
 ```TypeScript
@@ -1153,7 +1168,7 @@ Obtains a **FileInfo** object based on a URI. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | Indicates the selected file or directory. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FileInfo> | Yes | The callback is used to return a fileinfo object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FileInfo&gt; | Yes | The callback is used to return a fileinfo object. |
 
 **Example**
 
@@ -1182,6 +1197,7 @@ try {
 
 ```
 
+<a id="getroots"></a>
 ## getRoots
 
 ```TypeScript
@@ -1206,7 +1222,7 @@ Obtains information about the device root nodes of the file management services 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RootIterator> | Returns a RootIterator. |
+| Promise&lt;RootIterator&gt; | Returns a RootIterator. |
 
 **Error codes:**
 
@@ -1279,6 +1295,7 @@ async function getRoots() {
 
 ```
 
+<a id="getroots-1"></a>
 ## getRoots
 
 ```TypeScript
@@ -1303,7 +1320,7 @@ Obtains information about the device root nodes of the file management services 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RootIterator> | Yes | The callback is used to return a RootIterator. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RootIterator&gt; | Yes | The callback is used to return a RootIterator. |
 
 **Error codes:**
 
@@ -1377,6 +1394,7 @@ async function getRoots() {
 
 ```
 
+<a id="mkdir"></a>
 ## mkDir
 
 ```TypeScript
@@ -1410,7 +1428,7 @@ Creates a directory in a specified directory. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the new directory's URI. |
+| Promise&lt;string&gt; | Returns the new directory's URI. |
 
 **Error codes:**
 
@@ -1481,6 +1499,7 @@ async function createDirectory() {
 
 ```
 
+<a id="mkdir-1"></a>
 ## mkDir
 
 ```TypeScript
@@ -1509,7 +1528,7 @@ Creates a directory in a specified directory. This API uses an asynchronous call
 | --- | --- | --- | --- |
 | parentUri | string | Yes | Represents a specific parent directory. |
 | displayName | string | Yes | Indicates the new directory name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | The callback is used to return the new directory's URI. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | The callback is used to return the new directory's URI. |
 
 **Error codes:**
 
@@ -1577,6 +1596,7 @@ try {
 
 ```
 
+<a id="move"></a>
 ## move
 
 ```TypeScript
@@ -1610,7 +1630,7 @@ Moves a file or directory. This API uses a promise to return the result. Current
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URI of the file or directory in the destination directory. |
+| Promise&lt;string&gt; | Promise used to return the URI of the file or directory in the destination directory. |
 
 **Error codes:**
 
@@ -1676,6 +1696,7 @@ async function moveFile01() {
 
 ```
 
+<a id="move-1"></a>
 ## move
 
 ```TypeScript
@@ -1704,7 +1725,7 @@ Moves a file or directory. This API uses an asynchronous callback to return the 
 | --- | --- | --- | --- |
 | sourceFile | string | Yes | Indicates the file or directory to be moved. |
 | destFile | string | Yes | Represents the destination folder. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | The callback is used to return the generated new file or directory. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | The callback is used to return the generated new file or directory. |
 
 **Error codes:**
 
@@ -1772,6 +1793,7 @@ try {
 
 ```
 
+<a id="movefile"></a>
 ## moveFile
 
 ```TypeScript
@@ -1808,7 +1830,7 @@ Moves a file, and renames it if a file with the same name already exists in the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URI of the file in the destination directory. |
+| Promise&lt;string&gt; | Promise used to return the URI of the file in the destination directory. |
 
 **Error codes:**
 
@@ -1865,6 +1887,7 @@ async function moveFile01() {
 
 ```
 
+<a id="movefile-1"></a>
 ## moveFile
 
 ```TypeScript
@@ -1896,7 +1919,7 @@ Moves a file, and renames it if a file with the same name already exists in the 
 | sourceUri | string | Yes | URI of the source file to move. |
 | destUri | string | Yes | URI of the destination directory, to which the file is moved. |
 | fileName | string | Yes | New name of the file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback invoked to return the URI of the file in the destination directory. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback invoked to return the URI of the file in the destination directory. |
 
 **Error codes:**
 
@@ -1955,6 +1978,7 @@ try {
 
 ```
 
+<a id="moveitem"></a>
 ## moveItem
 
 ```TypeScript
@@ -1991,7 +2015,7 @@ Moves a file or directory. This API uses a promise to return the result.You can 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<MoveResult>> | Promise used to return the result. If the operation is successful, no information is returned. If the operation fails, a **MoveResult** array is returned. |
+| Promise&lt;Array&lt;MoveResult&gt;&gt; | Promise used to return the result. If the operation is successful, no information is returned. If the operation fails, a **MoveResult** array is returned. |
 
 **Error codes:**
 
@@ -2022,6 +2046,7 @@ Moves a file or directory. This API uses a promise to return the result.You can 
 | 14300003 | Fail to get fileextension info |
 | 14300004 | Get wrong result |
 
+<a id="moveitem-1"></a>
 ## moveItem
 
 ```TypeScript
@@ -2052,7 +2077,7 @@ Moves a file or directory. This API uses an asynchronous callback to return the 
 | --- | --- | --- | --- |
 | sourceUri | string | Yes | URI of the source file or directory to move. |
 | destUri | string | Yes | URI of the destination directory, to which the file or directory is moved. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<MoveResult>> | Yes | Callback invoked to return the result. If the operation is successful, no information is returned. If the operation fails, a **MoveResult** array is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;MoveResult&gt;&gt; | Yes | Callback invoked to return the result. If the operation is successful, no information is returned. If the operation fails, a **MoveResult** array is returned. |
 
 **Error codes:**
 
@@ -2119,6 +2144,7 @@ try {
 
 ```
 
+<a id="moveitem-2"></a>
 ## moveItem
 
 ```TypeScript
@@ -2150,7 +2176,7 @@ Moves a file or directory. This API uses an asynchronous callback to return the 
 | sourceUri | string | Yes | URI of the source file or directory to move. |
 | destUri | string | Yes | URI of the destination directory, to which the file or directory is moved. |
 | force | boolean | Yes | Whether to forcibly overwrite the file with the same name. The value **true** means to overwrite the file forcibly; the value **false** means the opposite. The default value is **false**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<MoveResult>> | Yes | Callback invoked to return the result. If the operation is successful, no information is returned. If the operation fails, a **MoveResult** array is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;MoveResult&gt;&gt; | Yes | Callback invoked to return the result. If the operation is successful, no information is returned. If the operation fails, a **MoveResult** array is returned. |
 
 **Error codes:**
 
@@ -2217,6 +2243,7 @@ try {
 
 ```
 
+<a id="openfile"></a>
 ## openFile
 
 ```TypeScript
@@ -2250,7 +2277,7 @@ Opens a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the file descriptor. |
+| Promise&lt;number&gt; | Returns the file descriptor. |
 
 **Error codes:**
 
@@ -2314,6 +2341,7 @@ async function openFile01() {
 
 ```
 
+<a id="openfile-1"></a>
 ## openFile
 
 ```TypeScript
@@ -2342,7 +2370,7 @@ Opens a file. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | uri | string | Yes | Indicates the path of the file to open. |
 | flags | [OPENFLAGS](arkts-corefile-fileaccess-openflags-e-sys.md) | Yes | Indicate options of opening a file. The default value is read-only. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | The callback is used to return the file descriptor. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | The callback is used to return the file descriptor. |
 
 **Error codes:**
 
@@ -2409,6 +2437,7 @@ try {
 
 ```
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -2442,7 +2471,7 @@ Queries the attribute information about a file or directory based on a URI. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return a JSON string that contains the file attribute and the value obtained. |
+| Promise&lt;string&gt; | Promise used to return a JSON string that contains the file attribute and the value obtained. |
 
 **Example**
 
@@ -2467,6 +2496,7 @@ async function getQuery01() {
 
 ```
 
+<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -2495,7 +2525,7 @@ Queries the attribute information about a file or directory based on a URI. This
 | --- | --- | --- | --- |
 | uri | string | Yes | File or directory URI obtained from [FileInfo](arkts-corefile-fileaccess-fileinfo-i-sys.md). |
 | metaJson | string | Yes | Attribute [FILEKEY](arkts-corefile-fileaccess-filekey-e-sys.md) to query. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return a JSON string that contains the file attribute and the value obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return a JSON string that contains the file attribute and the value obtained. |
 
 **Example**
 
@@ -2525,6 +2555,7 @@ async function getQuery02() {
 
 ```
 
+<a id="registerobserver"></a>
 ## registerObserver
 
 ```TypeScript
@@ -2553,7 +2584,7 @@ Registers a callback to listen for a URI. URIs and callbacks can be in many-to-m
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file or directory. |
 | notifyForDescendants | boolean | Yes | Whether to observe changes of the files in the directory. The value **true** means to observe changes of the files in the directory; the value **false** means the opposite. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NotifyMessage> | Yes | Callback invoked to return the notification. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NotifyMessage&gt; | Yes | Callback invoked to return the notification. |
 
 **Error codes:**
 
@@ -2561,6 +2592,7 @@ Registers a callback to listen for a URI. URIs and callbacks can be in many-to-m
 | --- | --- |
 | 14300002 | Invalid uri |
 
+<a id="rename"></a>
 ## rename
 
 ```TypeScript
@@ -2594,7 +2626,7 @@ Renames a file or directory. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns a URI representing the new file or directory. |
+| Promise&lt;string&gt; | Returns a URI representing the new file or directory. |
 
 **Error codes:**
 
@@ -2659,6 +2691,7 @@ async function renameFile01() {
 
 ```
 
+<a id="rename-1"></a>
 ## rename
 
 ```TypeScript
@@ -2687,7 +2720,7 @@ Renames a file or directory. This API uses an asynchronous callback to return th
 | --- | --- | --- | --- |
 | uri | string | Yes | Indicates the selected file or directory. |
 | displayName | string | Yes | Indicates the new directory or file name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | The callback is used to return a URI representing the new file or directory. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | The callback is used to return a URI representing the new file or directory. |
 
 **Error codes:**
 
@@ -2754,6 +2787,7 @@ try {
 
 ```
 
+<a id="unregisterobserver"></a>
 ## unregisterObserver
 
 ```TypeScript
@@ -2779,7 +2813,7 @@ Unregisters a callback that is used to listen for the specified URI.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file or directory. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NotifyMessage> | No | Callback to unregister. If this parameter is not specified, all callbacks of the specified URI will be unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NotifyMessage&gt; | No | Callback to unregister. If this parameter is not specified, all callbacks of the specified URI will be unregistered. |
 
 **Error codes:**
 

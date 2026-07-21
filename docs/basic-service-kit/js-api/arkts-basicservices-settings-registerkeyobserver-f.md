@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="registerkeyobserver"></a>
 ## registerKeyObserver
 
 ```TypeScript
@@ -29,7 +30,7 @@ Monitor registration key(synchronous method)[USER_SECURE] domain need ohos.permi
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context. Only UIAbilityContext and ExtensionContext are supported. |
 | name | string | Yes | Indicates the name of the character string. |
 | domainName | string | Yes | Indicates the name of the domain name to set. |
-| observer | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | callback when monitored key value is changed. |
+| observer | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | callback when monitored key value is changed. |
 
 **Return value:**
 

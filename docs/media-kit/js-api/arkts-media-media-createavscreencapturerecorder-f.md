@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createavscreencapturerecorder"></a>
 ## createAVScreenCaptureRecorder
 
 ```TypeScript
@@ -24,7 +25,7 @@ Creates an AVScreenCaptureRecorder instance. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVScreenCaptureRecorder> | Promise used to return the result. If the operation is successful, an AVScreenCaptureRecorder instance is returned; otherwise, **null** is returned. The instance can be used for screen capture. |
+| Promise&lt;AVScreenCaptureRecorder&gt; | Promise used to return the result. If the operation is successful, an AVScreenCaptureRecorder instance is returned; otherwise, **null** is returned. The instance can be used for screen capture. |
 
 **Error codes:**
 

@@ -24,6 +24,7 @@ All APIs provided in the **By** class are synchronous. You are advised to use th
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
+<a id="clickable"></a>
 ## clickable
 
 ```TypeScript
@@ -64,6 +65,7 @@ let by: By = BY.clickable(true); // Use the static constructor BY to create a By
 
 ```
 
+<a id="enabled"></a>
 ## enabled
 
 ```TypeScript
@@ -104,6 +106,7 @@ let by: By = BY.enabled(true); // Use the static constructor BY to create a By o
 
 ```
 
+<a id="focused"></a>
 ## focused
 
 ```TypeScript
@@ -144,6 +147,7 @@ let by: By = BY.focused(true); // Use the static constructor BY to create a By o
 
 ```
 
+<a id="id"></a>
 ## id
 
 ```TypeScript
@@ -156,7 +160,7 @@ Specifies the ID attribute of the target component.
 
 **Deprecated since:** 9
 
-**Substitutes:** id(id:
+**Substitutes:** [id(id:](arkts-test-uitest-on-c.md#id-1)
 
 <!--Device-By-id(id: number): By--><!--Device-By-id(id: number): By-End-->
 
@@ -184,6 +188,7 @@ let by: By = BY.id(123); // Use the static constructor BY to create a By object 
 
 ```
 
+<a id="isafter"></a>
 ## isAfter
 
 ```TypeScript
@@ -196,7 +201,7 @@ Specifies that the target component is located after the given attribute compone
 
 **Deprecated since:** 9
 
-**Substitutes:** isAfter(on:
+**Substitutes:** [isAfter(on:](arkts-test-uitest-on-c.md#isafter-1)
 
 <!--Device-By-isAfter(by: By): By--><!--Device-By-isAfter(by: By): By-End-->
 
@@ -225,6 +230,7 @@ let by: By = BY.type('Text').isAfter(BY.text('123')); // Search for the first Te
 
 ```
 
+<a id="isbefore"></a>
 ## isBefore
 
 ```TypeScript
@@ -237,7 +243,7 @@ Specifies that the target component is located before the given attribute compon
 
 **Deprecated since:** 9
 
-**Substitutes:** isBefore(on:
+**Substitutes:** [isBefore(on:](arkts-test-uitest-on-c.md#isbefore-1)
 
 <!--Device-By-isBefore(by: By): By--><!--Device-By-isBefore(by: By): By-End-->
 
@@ -266,6 +272,7 @@ let by: By = BY.type('Button').isBefore(BY.text('123')); // Search for the first
 
 ```
 
+<a id="key"></a>
 ## key
 
 ```TypeScript
@@ -278,7 +285,7 @@ Specifies the key attribute of the target component.
 
 **Deprecated since:** 9
 
-**Substitutes:** id(id:
+**Substitutes:** [id(id:](arkts-test-uitest-on-c.md#id-1)
 
 <!--Device-By-key(key: string): By--><!--Device-By-key(key: string): By-End-->
 
@@ -306,6 +313,7 @@ let by: By = BY.key('123'); // Use the static constructor BY to create a By obje
 
 ```
 
+<a id="scrollable"></a>
 ## scrollable
 
 ```TypeScript
@@ -346,6 +354,7 @@ let by: By = BY.scrollable(true); // Use the static constructor BY to create a B
 
 ```
 
+<a id="selected"></a>
 ## selected
 
 ```TypeScript
@@ -386,6 +395,7 @@ let by: By = BY.selected(true); // Use the static constructor BY to create a By 
 
 ```
 
+<a id="text"></a>
 ## text
 
 ```TypeScript
@@ -427,6 +437,7 @@ let by: By = BY.text('123'); // Use the static constructor BY to create a By obj
 
 ```
 
+<a id="type"></a>
 ## type
 
 ```TypeScript
@@ -439,7 +450,7 @@ Specifies the type attribute of the target component.
 
 **Deprecated since:** 9
 
-**Substitutes:** type(tp:
+**Substitutes:** [type(tp:](arkts-test-uitest-on-c.md#type-1)
 
 <!--Device-By-type(tp: string): By--><!--Device-By-type(tp: string): By-End-->
 

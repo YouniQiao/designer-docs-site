@@ -6,6 +6,7 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
+<a id="removekeyeventpolicies"></a>
 ## removeKeyEventPolicies
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes a key event handling policy.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| keyCodes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<KeyCode> | Yes | Key code. You can remove multiple key policies at a time. Removing an unsupported key will report error code 9200012. |
+| keyCodes | Array&lt;KeyCode&gt; | Yes | Key code. You can remove multiple key policies at a time. Removing an unsupported key will report error code 9200012. |
 
 **Error codes:**
 

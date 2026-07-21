@@ -6,6 +6,7 @@
 import { resourceManager } from '@kit.LocalizationKit';
 ```
 
+<a id="getsysresourcemanager"></a>
 ## getSysResourceManager
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains a system **ResourceManager** object.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [9001009](../errorcode-resource-manager.md#9001009-failed-to-obtain-a-resourcemanager-object) | Failed to access the system resource.which is not mapped to application sandbox, This error code will be thrown. |
+| [9001009](../errorcode-resource-manager.md#9001009-failed-to-obtain-the-system-resource-management-object) | Failed to access the system resource.which is not mapped to application sandbox, This error code will be thrown. |
 
 **Example**
 

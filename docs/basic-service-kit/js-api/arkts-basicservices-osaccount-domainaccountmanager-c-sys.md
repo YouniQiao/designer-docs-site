@@ -14,6 +14,7 @@ Provides APIs for domain account management.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="auth"></a>
 ## auth
 
 ```TypeScript
@@ -37,7 +38,7 @@ Authenticates a domain account.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| credential | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Credentials of the domain account. |
+| credential | Uint8Array | Yes | Credentials of the domain account. |
 | callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
 
 **Error codes:**
@@ -85,6 +86,7 @@ try {
 
 ```
 
+<a id="auth-1"></a>
 ## auth
 
 ```TypeScript
@@ -120,7 +122,7 @@ Authenticates a specified domain account. You can specify authentication options
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| credential | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Credentials of the domain account. |
+| credential | Uint8Array | Yes | Credentials of the domain account. |
 | options | [DomainAccountAuthOptions](arkts-basicservices-osaccount-domainaccountauthoptions-i-sys.md) | Yes | Options for domain account authentication. |
 | callback | [IUserAuthCallback](arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the authentication result. |
 
@@ -175,6 +177,7 @@ try {
 
 ```
 
+<a id="authwithpopup"></a>
 ## authWithPopup
 
 ```TypeScript
@@ -238,6 +241,7 @@ try {
 
 ```
 
+<a id="authwithpopup-1"></a>
 ## authWithPopup
 
 ```TypeScript
@@ -303,6 +307,7 @@ try {
 
 ```
 
+<a id="getaccesstoken"></a>
 ## getAccessToken
 
 ```TypeScript
@@ -323,8 +328,8 @@ Obtains the service access token of a domain account. This API uses an asynchron
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| businessParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Service parameters.The specific formats vary depending on the domain plug-in. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Uint8Array> | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, an error object is returned. |
+| businessParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Service parameters.The specific formats vary depending on the domain plug-in. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Uint8Array&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, an error object is returned. |
 
 **Error codes:**
 
@@ -367,6 +372,7 @@ try {
 
 ```
 
+<a id="getaccesstoken-1"></a>
 ## getAccessToken
 
 ```TypeScript
@@ -387,13 +393,13 @@ Obtains the service access token of a domain account. This API uses a promise to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| businessParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Service parameters.The specific formats vary depending on the domain plug-in. |
+| businessParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Service parameters.The specific formats vary depending on the domain plug-in. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise used to return the service access token obtained. |
+| Promise&lt;Uint8Array&gt; | Promise used to return the service access token obtained. |
 
 **Error codes:**
 
@@ -434,6 +440,7 @@ try {
 
 ```
 
+<a id="getaccountinfo"></a>
 ## getAccountInfo
 
 ```TypeScript
@@ -457,7 +464,7 @@ Obtains information about a specified domain account. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [GetDomainAccountInfoOptions](arkts-basicservices-osaccount-getdomainaccountinfooptions-i-sys.md) | Yes | Domain account information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DomainAccountInfo> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;DomainAccountInfo&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -500,6 +507,7 @@ try {
 
 ```
 
+<a id="getaccountinfo-1"></a>
 ## getAccountInfo
 
 ```TypeScript
@@ -528,7 +536,7 @@ Obtains information about a specified domain account. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DomainAccountInfo> | Promise used to return the domain account information obtained. |
+| Promise&lt;DomainAccountInfo&gt; | Promise used to return the domain account information obtained. |
 
 **Error codes:**
 
@@ -569,6 +577,7 @@ try {
 
 ```
 
+<a id="hasaccount"></a>
 ## hasAccount
 
 ```TypeScript
@@ -592,7 +601,7 @@ Checks whether a domain account exists. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result.The value **true** means that the specified domain account exists; the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result.The value **true** means that the specified domain account exists; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -634,6 +643,7 @@ try {
 
 ```
 
+<a id="hasaccount-1"></a>
 ## hasAccount
 
 ```TypeScript
@@ -662,7 +672,7 @@ Checks whether a domain account exists. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result.The value **true** means that the specified domain account exists; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result.The value **true** means that the specified domain account exists; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -702,6 +712,7 @@ try {
 
 ```
 
+<a id="isauthenticationexpired"></a>
 ## isAuthenticationExpired
 
 ```TypeScript
@@ -730,7 +741,7 @@ Checks whether the authentication of a domain account has expired. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the specified domain account has expired; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the specified domain account has expired; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -763,6 +774,7 @@ try {
 
 ```
 
+<a id="registerplugin"></a>
 ## registerPlugin
 
 ```TypeScript
@@ -829,6 +841,7 @@ try {
 
 ```
 
+<a id="unregisterplugin"></a>
 ## unregisterPlugin
 
 ```TypeScript
@@ -870,6 +883,7 @@ try {
 
 ```
 
+<a id="updateaccounttoken"></a>
 ## updateAccountToken
 
 ```TypeScript
@@ -905,8 +919,8 @@ Updates the token of a domain account. An empty token means an invalid token. Th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | New domain account token. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| token | Uint8Array | Yes | New domain account token. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -945,6 +959,7 @@ try {
 
 ```
 
+<a id="updateaccounttoken-1"></a>
 ## updateAccountToken
 
 ```TypeScript
@@ -968,13 +983,13 @@ Updates the token of a domain account. An empty token means an invalid token. Th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainAccountInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i-sys.md) | Yes | Domain account information. |
-| token | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | New domain account token. |
+| token | Uint8Array | Yes | New domain account token. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

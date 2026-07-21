@@ -14,6 +14,7 @@ Stack is implemented based on the array data structure.It follows the principle 
 import { Stack } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an ES6 iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ while(temp != undefined) {
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -103,6 +105,7 @@ let stack = new Stack<number | string | Object>();
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -123,8 +126,8 @@ Uses a callback to traverse each element in the **Stack** instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, stack?: Stack<T>) => void | Yes | Callback invoked to traverse the elements in the Stack. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, stack?: Stack&lt;T&gt;) =&gt; void | Yes | Callback invoked to traverse the elements in the Stack. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -150,6 +153,7 @@ stack.forEach((value : number, index: number) :void => {
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -191,6 +195,7 @@ console.info("result:", result);  // result: false
 
 ```
 
+<a id="locate"></a>
 ## locate
 
 ```TypeScript
@@ -238,6 +243,7 @@ console.info("result:", result);  // result: 2
 
 ```
 
+<a id="peek"></a>
 ## peek
 
 ```TypeScript
@@ -265,7 +271,7 @@ Obtains the top element of this Stack. If the Stack is empty, **undefined** is r
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The peek method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -280,6 +286,7 @@ console.info("result:", result);  // result: 2
 
 ```
 
+<a id="pop"></a>
 ## pop
 
 ```TypeScript
@@ -307,7 +314,7 @@ Removes the top element from this Stack.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The pop method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -323,6 +330,7 @@ console.info("result = " + result); // result = 4
 
 ```
 
+<a id="push"></a>
 ## push
 
 ```TypeScript

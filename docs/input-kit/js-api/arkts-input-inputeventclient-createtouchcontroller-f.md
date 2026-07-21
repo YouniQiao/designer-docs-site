@@ -6,6 +6,7 @@
 import { inputEventClient } from '@kit.InputKit';
 ```
 
+<a id="createtouchcontroller"></a>
 ## createTouchController
 
 ```TypeScript
@@ -28,7 +29,7 @@ Creates a touch controller for simulating touch operations. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<TouchController> | Promise used to return the touch controller instance. |
+| Promise&lt;TouchController&gt; | Promise used to return the touch controller instance. |
 
 **Error codes:**
 

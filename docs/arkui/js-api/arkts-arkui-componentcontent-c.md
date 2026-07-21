@@ -1,6 +1,6 @@
 # ComponentContent
 
-Inherits from [Content](../../../../reference/apis-arkui/js-apis-arkui-Content.md#content-1).
+Inherits from [Content](docroot://reference/apis-arkui/js-apis-arkui-Content.md#content-1).
 
 **Inheritance/Implementation:** ComponentContent extends [Content](arkts-arkui-content-c.md)
 
@@ -10,6 +10,7 @@ Inherits from [Content](../../../../reference/apis-arkui/js-apis-arkui-Content.m
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -33,8 +34,9 @@ A constructor used to create a **ComponentContent** object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uiContext | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UI context required for creating a node. |
-| builder | [WrappedBuilder](../arkts-components/arkts-arkui-common-wrappedbuilder-c.md)<[]> | Yes | **WrappedBuilder** object that encapsulates a builder function that has no parameters. |
+| builder | [WrappedBuilder](../arkts-components/arkts-arkui-wrappedbuilder-c.md)&lt;[]&gt; | Yes | **WrappedBuilder** object that encapsulates a builder function that has no parameters. |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -58,9 +60,10 @@ A constructor used to create a **ComponentContent** object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uiContext | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UI context required for creating a node. |
-| builder | [WrappedBuilder](../arkts-components/arkts-arkui-common-wrappedbuilder-c.md)<[T]> | Yes | **WrappedBuilder** object that encapsulates a builder function that has parameters. |
+| builder | [WrappedBuilder](../arkts-components/arkts-arkui-wrappedbuilder-c.md)&lt;[T]&gt; | Yes | **WrappedBuilder** object that encapsulates a builder function that has parameters. |
 | args | T | Yes | Parameters of the builder function encapsulated in the **WrappedBuilder** object. |
 
+<a id="constructor-2"></a>
 ## constructor
 
 ```TypeScript
@@ -84,17 +87,18 @@ A constructor used to create a **ComponentContent** object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uiContext | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UI context required for creating a node. |
-| builder | [WrappedBuilder](../arkts-components/arkts-arkui-common-wrappedbuilder-c.md)<[T]> | Yes | **WrappedBuilder** object that encapsulates a builder function that has parameters. |
+| builder | [WrappedBuilder](../arkts-components/arkts-arkui-wrappedbuilder-c.md)&lt;[T]&gt; | Yes | **WrappedBuilder** object that encapsulates a builder function that has parameters. |
 | args | T | Yes | Parameters of the builder function encapsulated in the **WrappedBuilder** object. |
 | options | [BuildOptions](arkts-arkui-buildernode-buildoptions-i.md) | Yes | Build options, which determine whether to support the behavior of nesting **@Builder** within **@Builder**. |
 
+<a id="dispose"></a>
 ## dispose
 
 ```TypeScript
 dispose(): void
 ```
 
-Immediately releases the reference relationship between this **ComponentContent** object and its [entity node](../../../../ui/arkts-user-defined-node.md#basic-concepts). For details about the scenarios involving **ComponentContent** unbinding, see [Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).
+Immediately releases the reference relationship between this **ComponentContent** object and its [entity node](docroot://ui/arkts-user-defined-node.md#basic-concepts). For details about the scenarios involving **ComponentContent** unbinding, see [Canceling the Reference to the Entity Node](docroot://ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).
 
 > **NOTE**  
 >  
@@ -113,6 +117,7 @@ Immediately releases the reference relationship between this **ComponentContent*
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="inheritfreezeoptions"></a>
 ## inheritFreezeOptions
 
 ```TypeScript
@@ -144,6 +149,7 @@ Sets whether this **ComponentContent** object inherits the freeze policy from it
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Whether the current **ComponentContent** object inherits the freeze policy from its parent component's custom components. The value **true** means to inherit the freeze policy from the parent component's custom components, and **false** means the opposite. |
 
+<a id="isdisposed"></a>
 ## isDisposed
 
 ```TypeScript
@@ -168,6 +174,7 @@ Checks whether this **ComponentContent** object has released its reference to it
 | --- | --- |
 | boolean | Whether the reference to the backend node is released. The value **true** means that the reference to backend node is released, and **false** means the opposite. |
 
+<a id="istransferred"></a>
 ## isTransferred
 
 ```TypeScript
@@ -192,14 +199,15 @@ Returns a flag indicating whether the current ComponentContent was obtained thro
 | --- | --- |
 | boolean | - Returns true if the ComponentContent was converted between dynamic and static states,otherwise, returns false. |
 
+<a id="recycle"></a>
 ## recycle
 
 ```TypeScript
 recycle(): void
 ```
 
-- Triggers recycling of custom components under this **ComponentContent**. Component recycling is part of the component reuse mechanism. For details, see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md).  
-- **ComponentContent** completes the reuse event transfer between internal and external custom components through **reuse** and **recycle**. For specific usage scenarios, see [Implementing Node Reuse with the BuilderNode reuse and recycle APIs](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis).Since API version 26.0.0, custom components in **ComponentContent** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
+- Triggers recycling of custom components under this **ComponentContent**. Component recycling is part of the component reuse mechanism. For details, see [@Reusable Decorator: Reusing V1 Components](docroot://ui/state-management/arkts-reusable.md).  
+- **ComponentContent** completes the reuse event transfer between internal and external custom components through **reuse** and **recycle**. For specific usage scenarios, see [Implementing Node Reuse with the BuilderNode reuse and recycle APIs](docroot://ui/arkts-user-defined-arktsNode-builderNode.md#implementing-node-reuse-with-the-buildernode-reuse-and-recycle-apis).Since API version 26.0.0, custom components in **ComponentContent** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](docroot://ui/state-management/arkts-new-reusableV2.md).
 
 **Since:** 12
 
@@ -211,13 +219,14 @@ recycle(): void
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="reuse"></a>
 ## reuse
 
 ```TypeScript
 reuse(param?: Object): void
 ```
 
-Triggers component reuse for custom components under this **ComponentContent**. For details about component reuse,see [@Reusable Decorator: Reusing V1 Components](../../../../ui/state-management/arkts-reusable.md). For details about the scenarios involving **ComponentContent** unbinding, see [Canceling the Reference to the Entity Node](../../../../ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).Since API version 26.0.0, custom components in **ComponentContent** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](../../../../ui/state-management/arkts-new-reusableV2.md).
+Triggers component reuse for custom components under this **ComponentContent**. For details about component reuse,see [@Reusable Decorator: Reusing V1 Components](docroot://ui/state-management/arkts-reusable.md). For details about the scenarios involving **ComponentContent** unbinding, see [Canceling the Reference to the Entity Node](docroot://ui/arkts-user-defined-arktsNode-builderNode.md#canceling-the-reference-to-the-entity-node).Since API version 26.0.0, custom components in **ComponentContent** support V2 component reuse. For details, see [@ReusableV2 Decorator: Reusing Components](docroot://ui/state-management/arkts-new-reusableV2.md).
 
 **Since:** 12
 
@@ -233,15 +242,16 @@ Triggers component reuse for custom components under this **ComponentContent**. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| param | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Parameters for **ComponentContent** reuse. This parameter is passed to all top-level custom components within the **ComponentContent** during reuse and must include all required constructor parameters for each component; otherwise, undefined behavior may occur. Calling this method synchronously triggers the [aboutToReuse](../../../../reference/apis-arkui/arkui-ts/ts-custom-component-lifecycle.md#abouttoreuse10)lifecycle callback of internal custom components, with this parameter as the callback input. The default value is undefined. In this case, the custom component in ComponentContent directly uses the data source during construction. |
+| param | Object | No | Parameters for **ComponentContent** reuse. This parameter is passed to all top-level custom components within the **ComponentContent** during reuse and must include all required constructor parameters for each component; otherwise, undefined behavior may occur. Calling this method synchronously triggers the [aboutToReuse](docroot://reference/apis-arkui/arkui-ts/ts-custom-component-lifecycle.md#abouttoreuse10)lifecycle callback of internal custom components, with this parameter as the callback input. The default value is undefined. In this case, the custom component in ComponentContent directly uses the data source during construction. |
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
 update(args: T): void
 ```
 
-Updates the builder function parameters encapsulated by the [WrappedBuilder](../../../../ui/state-management/arkts-wrapBuilder.md) object. The parameter type must be the same as that passed by constructor.
+Updates the builder function parameters encapsulated by the [WrappedBuilder](docroot://ui/state-management/arkts-wrapBuilder.md) object. The parameter type must be the same as that passed by constructor.
 
 **Since:** 12
 
@@ -257,8 +267,9 @@ Updates the builder function parameters encapsulated by the [WrappedBuilder](../
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| args | T | Yes | Updates the builder function parameters encapsulated by the [WrappedBuilder](../../../../ui/state-management/arkts-wrapBuilder.md) object. The parameter type must be the same as that passed by constructor. |
+| args | T | Yes | Updates the builder function parameters encapsulated by the [WrappedBuilder](docroot://ui/state-management/arkts-wrapBuilder.md) object. The parameter type must be the same as that passed by constructor. |
 
+<a id="updateconfiguration"></a>
 ## updateConfiguration
 
 ```TypeScript

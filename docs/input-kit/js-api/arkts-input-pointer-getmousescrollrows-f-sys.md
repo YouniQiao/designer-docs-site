@@ -6,6 +6,7 @@
 import { pointer } from '@kit.InputKit';
 ```
 
+<a id="getmousescrollrows"></a>
 ## getMouseScrollRows
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the number of mouse scroll lines. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **number** is the number of mouse scroll lines. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **number** is the number of mouse scroll lines. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ struct Index {
 ```
 
 
+<a id="getmousescrollrows-1"></a>
 ## getMouseScrollRows
 
 ```TypeScript
@@ -88,7 +90,7 @@ Obtains the number of mouse scroll lines. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of mouse scroll lines. |
+| Promise&lt;number&gt; | Promise used to return the number of mouse scroll lines. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getringtoneinfobybundle"></a>
 ## getRingtoneInfoByBundle
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the custom ringtone information of an application. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RingtoneInfo> | Promise used to return the result. |
+| Promise&lt;RingtoneInfo&gt; | Promise used to return the result. |
 
 **Error codes:**
 

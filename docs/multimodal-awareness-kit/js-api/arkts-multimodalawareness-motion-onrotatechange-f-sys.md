@@ -6,6 +6,7 @@
 import { motion } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="onrotatechange"></a>
 ## onRotateChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ Subscribe to rotate sensor event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RotateEvent> | Yes | The callback to receive rotate orientation. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RotateEvent&gt; | Yes | The callback to receive rotate orientation. |
 
 **Error codes:**
 

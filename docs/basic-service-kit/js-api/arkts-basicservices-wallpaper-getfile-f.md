@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="getfile"></a>
 ## getFile
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains a file of the wallpaper of the specified type. Returns the file descript
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | wallpaperType | [WallpaperType](arkts-basicservices-wallpaper-wallpapertype-e.md) | Yes | indicates the wallpaper type. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | the callback of getFile. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | the callback of getFile. |
 
 **Example**
 
@@ -47,6 +48,7 @@ wallpaper.getFile(wallpaper.WallpaperType.WALLPAPER_SYSTEM, (error: BusinessErro
 ```
 
 
+<a id="getfile-1"></a>
 ## getFile
 
 ```TypeScript
@@ -75,7 +77,7 @@ Obtains a file of the wallpaper of the specified type. Returns the file descript
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | the promise returned by the function. |
+| Promise&lt;number&gt; | the promise returned by the function. |
 
 **Example**
 

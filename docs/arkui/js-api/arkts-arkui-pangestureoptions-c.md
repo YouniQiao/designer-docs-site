@@ -1,0 +1,152 @@
+# PanGestureOptions
+
+Defines the PanGesture options.
+
+**Since:** 7
+
+<!--Device-unnamed-declare class PanGestureOptions--><!--Device-unnamed-declare class PanGestureOptions-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+<a id="constructor"></a>
+## constructor
+
+```TypeScript
+constructor(value?: { fingers?: number; direction?: PanDirection; distance?: number })
+```
+
+Creates a pan gesture configuration object. The **PanGestureOptions** API enables dynamic updates to pan gesture properties without requiring state variable modifications that would trigger UI re-renders.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PanGestureOptions-constructor(value?: { fingers?: number; direction?: PanDirection; distance?: number })--><!--Device-PanGestureOptions-constructor(value?: { fingers?: number; direction?: PanDirection; distance?: number })-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | { fingers?: number; direction?: PanDirection; distance?: number } | No | Pan gesture configuration.<br>**fingers**: minimum number of fingers required. The value ranges from 1 to 10.<br>Default value: **1**<br>**direction**: pan direction. The value supports the AND (&) and OR (\|) operations.<br>Default value:**PanDirection.All**<br>**distance**: minimum pan distance to trigger the gesture, in vp.<br>Default value: **8** for the stylus and **5** for other input sources.<br>**NOTE**<br>If a pan gesture and a [tab](../arkts-components/arkts-arkui-tabs.md) swipe occur at the same time, set **distance** to **1** to make the gesture more easily recognizable.<br>If the value specified is less than **0**, the default value is used.<br>To avoid slow response and lagging during scrolling, set a reasonable pan distance.<br>When the [scale](../arkts-components/arkts-arkui-commonmethod-c.md#scale-1) attribute is applied to the component, the actual pan distance is adjusted based on the **scale** ratio. |
+
+<a id="getdirection"></a>
+## getDirection
+
+```TypeScript
+getDirection(): PanDirection
+```
+
+Obtains the pan direction.
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-PanGestureOptions-getDirection(): PanDirection--><!--Device-PanGestureOptions-getDirection(): PanDirection-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| [PanDirection](arkts-arkui-pandirection-e.md) | Pan direction. |
+
+<a id="getdistance"></a>
+## getDistance
+
+```TypeScript
+getDistance(): number
+```
+
+Obtains the minimum pan distance to trigger the gesture. The unit is vp.
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 18.
+
+<!--Device-PanGestureOptions-getDistance(): number--><!--Device-PanGestureOptions-getDistance(): number-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Minimum pan distance to trigger the gesture. |
+
+<a id="setdirection"></a>
+## setDirection
+
+```TypeScript
+setDirection(value: PanDirection)
+```
+
+Sets the pan direction.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PanGestureOptions-setDirection(value: PanDirection)--><!--Device-PanGestureOptions-setDirection(value: PanDirection)-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | [PanDirection](arkts-arkui-pandirection-e.md) | Yes | Pan direction. The value supports the AND (&) and OR (\|) operations.<br>Default value: **PanDirection.All** |
+
+<a id="setdistance"></a>
+## setDistance
+
+```TypeScript
+setDistance(value: number)
+```
+
+Sets the minimum pan distance to trigger the gesture, in vp. To avoid performance degradation due to excessive response delays or accidental releases, avoid excessively large values. For best practices, see [Reducing the Pan Distance for Gesture Recognition](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-application-latency-optimization-cases#section1116134115286).
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PanGestureOptions-setDistance(value: number)--><!--Device-PanGestureOptions-setDistance(value: number)-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | number | Yes | Minimum pan distance to trigger the gesture, in vp.<br>Default value: **8** for the stylus and **5** for other input sources.<br>**NOTE**<br>If a pan gesture and a [tab](../arkts-components/arkts-arkui-tabs.md) swipe occur at the same time, set **distance** to **1** to make the gesture more easily recognizable.<br>If the value specified is less than **0**, the default value is used.<br>To avoid slow response and lagging during scrolling, set a reasonable pan distance.<br>When the [scale](../arkts-components/arkts-arkui-commonmethod-c.md#scale-1)attribute is applied to the component, the actual pan distance is adjusted based on the **scale** ratio. |
+
+<a id="setfingers"></a>
+## setFingers
+
+```TypeScript
+setFingers(value: number)
+```
+
+Sets the minimum number of fingers to trigger the gesture.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-PanGestureOptions-setFingers(value: number)--><!--Device-PanGestureOptions-setFingers(value: number)-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | number | Yes | Minimum number of fingers to trigger a pan gesture. The value ranges from 1 to 10.<br>Default value: **1** |
+

@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="offscanmodechange"></a>
 ## offScanModeChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe to an event indicating that the scanning mode of the local device ha
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScanMode> | No | Callback used to listen. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScanMode&gt; | No | Callback used to listen. |
 
 **Error codes:**
 

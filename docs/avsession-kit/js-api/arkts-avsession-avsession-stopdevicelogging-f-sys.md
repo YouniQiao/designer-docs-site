@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="stopdevicelogging"></a>
 ## stopDeviceLogging
 
 ```TypeScript
@@ -26,7 +27,7 @@ Stop the current device written even the discovery is ongoing.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise for the result |
+| Promise&lt;void&gt; | Promise for the result |
 
 **Error codes:**
 

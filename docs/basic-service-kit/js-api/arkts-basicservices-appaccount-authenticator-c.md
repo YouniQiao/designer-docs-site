@@ -14,6 +14,7 @@ Provides APIs to operate the authenticator.
 import { appAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="addaccountimplicitly"></a>
 ## addAccountImplicitly
 
 ```TypeScript
@@ -30,14 +31,14 @@ Adds an application account implicitly based on the specified authentication typ
 > **NOTE**  
 >  
 > This API is supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [createAccountImplicitly](../../../../reference/apis-basic-services-kit/js-apis-appAccount.md#createaccountimplicitly9-2)  
+> [createAccountImplicitly](docroot://reference/apis-basic-services-kit/js-apis-appAccount.md#createaccountimplicitly9-2)  
 > instead.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** createAccountImplicitly(options:
+**Substitutes:** [createAccountImplicitly(options:](arkts-basicservices-appaccount-authenticator-c.md#createaccountimplicitly-1)
 
 <!--Device-Authenticator-addAccountImplicitly(
       authType: string,
@@ -62,6 +63,7 @@ Adds an application account implicitly based on the specified authentication typ
 | options | { [key: string]: any } | Yes | Options for the authentication. |
 | callback | [AuthenticatorCallback](arkts-basicservices-appaccount-authenticatorcallback-i.md) | Yes | Authenticator callback used to return the result. |
 
+<a id="auth"></a>
 ## auth
 
 ```TypeScript
@@ -82,9 +84,10 @@ Authenticates an application account. This API uses an asynchronous callback to 
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the application account. The value cannot exceed 512 characters. |
 | authType | string | Yes | Authentication type. The custom type, The value cannot exceed 1024 characters. |
-| options | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Options for the authentication. |
+| options | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Options for the authentication. |
 | callback | [AuthCallback](arkts-basicservices-appaccount-authcallback-i.md) | Yes | Authenticator callback used to return the result. |
 
+<a id="authenticate"></a>
 ## authenticate
 
 ```TypeScript
@@ -102,13 +105,13 @@ Authenticates an application account to obtain the OAuth token. This API uses an
 > **NOTE**  
 >  
 > This API is supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [auth](../../../../reference/apis-basic-services-kit/js-apis-appAccount.md#auth9-2) instead.
+> [auth](docroot://reference/apis-basic-services-kit/js-apis-appAccount.md#auth9-2) instead.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** auth(name:
+**Substitutes:** [auth(name:](arkts-basicservices-appaccount-authenticator-c.md#auth-1)
 
 <!--Device-Authenticator-authenticate(
       name: string,
@@ -136,6 +139,7 @@ Authenticates an application account to obtain the OAuth token. This API uses an
 | options | { [key: string]: any } | Yes | Options for the authentication. |
 | callback | [AuthenticatorCallback](arkts-basicservices-appaccount-authenticatorcallback-i.md) | Yes | Authenticator callback used to return the result. |
 
+<a id="checkaccountlabels"></a>
 ## checkAccountLabels
 
 ```TypeScript
@@ -155,13 +159,14 @@ Checks the account labels. This API uses an asynchronous callback to return the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Name of the application account. The value cannot exceed 512 characters. |
-| labels | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Labels to check. |
+| labels | Array&lt;string&gt; | Yes | Labels to check. |
 | callback | [AuthCallback](arkts-basicservices-appaccount-authcallback-i.md) | Yes | Authenticator callback used to return the result. |
 
 **Example**
 
 This API must be used together with the getRemoteObject API. For details, see the example of the [getRemoteObject](#getremoteobject9) API.
 
+<a id="checkaccountremovable"></a>
 ## checkAccountRemovable
 
 ```TypeScript
@@ -187,6 +192,7 @@ Checks whether an application account can be deleted. This API uses an asynchron
 
 This API must be used together with the getRemoteObject API. For details, see the example of the [getRemoteObject](#getremoteobject9) API.
 
+<a id="createaccountimplicitly"></a>
 ## createAccountImplicitly
 
 ```TypeScript
@@ -208,6 +214,7 @@ Creates an application account implicitly based on the specified account owner. 
 | options | [CreateAccountImplicitlyOptions](arkts-basicservices-appaccount-createaccountimplicitlyoptions-i.md) | Yes | Options for implicitly creating the account. |
 | callback | [AuthCallback](arkts-basicservices-appaccount-authcallback-i.md) | Yes | Authenticator callback used to return the result. |
 
+<a id="getremoteobject"></a>
 ## getRemoteObject
 
 ```TypeScript
@@ -276,6 +283,7 @@ export default {
 
 ```
 
+<a id="setproperties"></a>
 ## setProperties
 
 ```TypeScript
@@ -301,6 +309,7 @@ Sets the authenticator properties. This API uses an asynchronous callback to ret
 
 This API must be used together with the getRemoteObject API. For details, see the example of the [getRemoteObject](#getremoteobject9) API.
 
+<a id="verifycredential"></a>
 ## verifyCredential
 
 ```TypeScript

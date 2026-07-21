@@ -6,6 +6,7 @@
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="getsimpledatetimeformatbypattern"></a>
 ## getSimpleDateTimeFormatByPattern
 
 ```TypeScript
@@ -42,19 +43,20 @@ Obtains a **SimpleDateTimeFormat** object based on the specified pattern string.
 | [8900001](../errorcode-i18n.md#8900001-parameter-verification-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
 
+<a id="getsimpledatetimeformatbypattern-1"></a>
 ## getSimpleDateTimeFormatByPattern
 
 ```TypeScript
 export function getSimpleDateTimeFormatByPattern(pattern: string, locale?: intl.Locale): SimpleDateTimeFormat
 ```
 
-Obtains a **SimpleDateTimeFormat** object based on the specified pattern string. For details about the difference between the objects obtained by this API and [getSimpleDateTimeFormatBySkeleton](arkts-localization-i18n-getsimpledatetimeformatbyskeleton-f.md#getsimpledatetimeformatbyskeleton-2), see the examples in [SimpleDateTimeFormat.format](arkts-localization-i18n-simpledatetimeformat-c.md#format-1).
+Obtains a **SimpleDateTimeFormat** object based on the specified pattern string. For details about the difference between the objects obtained by this API and [getSimpleDateTimeFormatBySkeleton](arkts-localization-i18n-getsimpledatetimeformatbyskeleton-f.md#getsimpledatetimeformatbyskeleton-1), see the examples in [SimpleDateTimeFormat.format](arkts-localization-i18n-simpledatetimeformat-c.md#format-1).
 
 **Since:** 18
 
 **Deprecated since:** 20
 
-**Substitutes:** getSimpleDateTimeFormatByPattern(pattern:
+**Substitutes:** [getSimpleDateTimeFormatByPattern(pattern:](arkts-localization-i18n-getsimpledatetimeformatbypattern-f.md#getsimpledatetimeformatbypattern-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 

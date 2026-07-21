@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface ObjectConstructor--><!--Device-unnamed-interface ObjectConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -20,8 +21,9 @@ new(value?: any): Object
 
 | Type | Description |
 | --- | --- |
-| [Object](arkts-na-lib-es5-object-i.md) |  |
+| Object |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -36,6 +38,7 @@ new(value?: any): Object
 | --- | --- |
 | any |  |
 
+<a id="constructor-2"></a>
 ## constructor
 
 ```TypeScript
@@ -56,6 +59,7 @@ new(value?: any): Object
 | --- | --- |
 | any |  |
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -78,6 +82,7 @@ Creates an object that has the specified prototype or that has null prototype.
 | --- | --- |
 | any |  |
 
+<a id="create-1"></a>
 ## create
 
 ```TypeScript
@@ -93,7 +98,7 @@ Creates an object that has the specified prototype, and that optionally contains
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | o | object \| null | Yes |  |
-| properties | [PropertyDescriptorMap](arkts-na-lib-es5-propertydescriptormap-i.md) & ThisType<any> | Yes |  |
+| properties | [PropertyDescriptorMap](arkts-na-lib-es5-propertydescriptormap-i.md) & ThisType&lt;any&gt; | Yes |  |
 
 **Return value:**
 
@@ -101,6 +106,7 @@ Creates an object that has the specified prototype, and that optionally contains
 | --- | --- |
 | any |  |
 
+<a id="defineproperties"></a>
 ## defineProperties
 
 ```TypeScript
@@ -116,7 +122,7 @@ Adds one or more properties to an object, and/or modifies attributes of existing
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | o | T | Yes |  |
-| properties | [PropertyDescriptorMap](arkts-na-lib-es5-propertydescriptormap-i.md) & ThisType<any> | Yes |  |
+| properties | [PropertyDescriptorMap](arkts-na-lib-es5-propertydescriptormap-i.md) & ThisType&lt;any&gt; | Yes |  |
 
 **Return value:**
 
@@ -124,6 +130,7 @@ Adds one or more properties to an object, and/or modifies attributes of existing
 | --- | --- |
 | T |  |
 
+<a id="defineproperty"></a>
 ## defineProperty
 
 ```TypeScript
@@ -140,7 +147,7 @@ Adds a property to an object, or modifies attributes of an existing property.
 | --- | --- | --- | --- |
 | o | T | Yes |  |
 | p | [PropertyKey](arkts-na-propertykey-t.md) | Yes |  |
-| attributes | [PropertyDescriptor](arkts-na-lib-es5-propertydescriptor-i.md) & ThisType<any> | Yes |  |
+| attributes | [PropertyDescriptor](arkts-na-lib-es5-propertydescriptor-i.md) & ThisType&lt;any&gt; | Yes |  |
 
 **Return value:**
 
@@ -148,6 +155,7 @@ Adds a property to an object, or modifies attributes of an existing property.
 | --- | --- |
 | T |  |
 
+<a id="freeze"></a>
 ## freeze
 
 ```TypeScript
@@ -170,6 +178,7 @@ Prevents the modification of existing property attributes and values, and preven
 | --- | --- |
 | T |  |
 
+<a id="freeze-1"></a>
 ## freeze
 
 ```TypeScript
@@ -190,8 +199,9 @@ Prevents the modification of existing property attributes and values, and preven
 
 | Type | Description |
 | --- | --- |
-| [Readonly](arkts-na-readonly-t.md)<T> |  |
+| [Readonly](arkts-na-readonly-t.md)&lt;T&gt; |  |
 
+<a id="freeze-2"></a>
 ## freeze
 
 ```TypeScript
@@ -212,8 +222,9 @@ Prevents the modification of existing property attributes and values, and preven
 
 | Type | Description |
 | --- | --- |
-| [Readonly](arkts-na-readonly-t.md)<T> |  |
+| [Readonly](arkts-na-readonly-t.md)&lt;T&gt; |  |
 
+<a id="getownpropertydescriptor"></a>
 ## getOwnPropertyDescriptor
 
 ```TypeScript
@@ -237,6 +248,7 @@ Gets the own property descriptor of the specified object.An own property descrip
 | --- | --- |
 | [PropertyDescriptor](arkts-na-lib-es5-propertydescriptor-i.md) |  |
 
+<a id="getownpropertynames"></a>
 ## getOwnPropertyNames
 
 ```TypeScript
@@ -259,6 +271,7 @@ Returns the names of the own properties of an object. The own properties of an o
 | --- | --- |
 | string[] |  |
 
+<a id="getprototypeof"></a>
 ## getPrototypeOf
 
 ```TypeScript
@@ -281,6 +294,7 @@ Returns the prototype of an object.
 | --- | --- |
 | any |  |
 
+<a id="isextensible"></a>
 ## isExtensible
 
 ```TypeScript
@@ -303,6 +317,7 @@ Returns a value that indicates whether new properties can be added to an object.
 | --- | --- |
 | boolean |  |
 
+<a id="isfrozen"></a>
 ## isFrozen
 
 ```TypeScript
@@ -325,6 +340,7 @@ Returns true if existing property attributes and values cannot be modified in an
 | --- | --- |
 | boolean |  |
 
+<a id="issealed"></a>
 ## isSealed
 
 ```TypeScript
@@ -347,6 +363,7 @@ Returns true if existing property attributes cannot be modified in an object and
 | --- | --- |
 | boolean |  |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -369,6 +386,7 @@ Returns the names of the enumerable string properties and methods of an object.
 | --- | --- |
 | string[] |  |
 
+<a id="preventextensions"></a>
 ## preventExtensions
 
 ```TypeScript
@@ -391,6 +409,7 @@ Prevents the addition of new properties to an object.
 | --- | --- |
 | T |  |
 
+<a id="seal"></a>
 ## seal
 
 ```TypeScript

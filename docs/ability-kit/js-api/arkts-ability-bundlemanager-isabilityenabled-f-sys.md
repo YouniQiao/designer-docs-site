@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="isabilityenabled"></a>
 ## isAbilityEnabled
 
 ```TypeScript
@@ -33,7 +34,7 @@ Checks whether an ability of an application or an application clone is enabled. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if enabled, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if enabled, **false** otherwise. |
 
 **Error codes:**
 
@@ -81,6 +82,7 @@ try {
 ```
 
 
+<a id="isabilityenabled-1"></a>
 ## isAbilityEnabled
 
 ```TypeScript
@@ -102,7 +104,7 @@ Checks whether an ability is enabled. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | [AbilityInfo](arkts-ability-abilityinfo-i.md) | Yes | Information about the target ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result.**true** if enabled, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result.**true** if enabled, **false** otherwise. |
 
 **Error codes:**
 
@@ -151,6 +153,7 @@ try {
 ```
 
 
+<a id="isabilityenabled-2"></a>
 ## isAbilityEnabled
 
 ```TypeScript
@@ -177,7 +180,7 @@ Checks whether an ability is enabled. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if enabled, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if enabled, **false** otherwise. |
 
 **Error codes:**
 

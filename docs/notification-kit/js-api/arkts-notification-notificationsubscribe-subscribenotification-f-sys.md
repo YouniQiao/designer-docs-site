@@ -6,6 +6,7 @@
 import { notificationSubscribe } from '@kit.NotificationKit';
 ```
 
+<a id="subscribenotification"></a>
 ## subscribeNotification
 
 ```TypeScript
@@ -36,7 +37,7 @@ Subscribes to notifications. After the subscription, the new message is received
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ notificationSubscribe.subscribeNotification(subscriber).then(() => {
 ```
 
 
+<a id="subscribenotification-1"></a>
 ## subscribeNotification
 
 ```TypeScript
@@ -99,7 +101,7 @@ Subscribes to notifications. After the subscription, the new message is received
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

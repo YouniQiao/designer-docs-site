@@ -6,6 +6,7 @@
 import { fontManager } from '@kit.LocalizationKit';
 ```
 
+<a id="installfont"></a>
 ## installFont
 
 ```TypeScript
@@ -34,7 +35,7 @@ Installs a font in the specified path. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. The value **0** indicates that the installation is successful, and any other value indicates that the installation has failed. |
+| Promise&lt;number&gt; | Promise used to return the result. The value **0** indicates that the installation is successful, and any other value indicates that the installation has failed. |
 
 **Error codes:**
 

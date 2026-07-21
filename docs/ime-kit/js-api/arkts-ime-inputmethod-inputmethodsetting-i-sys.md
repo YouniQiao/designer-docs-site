@@ -14,6 +14,7 @@ In the following API examples, you must first use [getSetting](arkts-ime-inputme
 import { inputMethod } from '@kit.IMEKit';
 ```
 
+<a id="enableinputmethod"></a>
 ## enableInputMethod
 
 ```TypeScript
@@ -44,7 +45,7 @@ Enables or disables an input method. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -82,6 +83,7 @@ enableInputMethodSafely();
 
 ```
 
+<a id="enableinputmethod-1"></a>
 ## enableInputMethod
 
 ```TypeScript
@@ -118,7 +120,7 @@ Change the enabled state of an input method of a specified user.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -133,6 +135,7 @@ Change the enabled state of an input method of a specified user.
 | 12800024 | the specified user is not in the foreground. |
 | 12800025 | cross-user operation denied.Only user 0 applications are authorized for this operation. |
 
+<a id="getallinputmethodssync"></a>
 ## getAllInputMethodsSync
 
 ```TypeScript
@@ -161,7 +164,7 @@ Get all input methods sync of a specified user.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<InputMethodProperty> | the list of all input methods. |
+| Array&lt;InputMethodProperty&gt; | the list of all input methods. |
 
 **Error codes:**
 
@@ -174,6 +177,7 @@ Get all input methods sync of a specified user.
 | 12800024 | the specified user is not in the foreground. |
 | 12800025 | cross-user operation denied.Only user 0 applications are authorized for this operation. |
 
+<a id="getcursorinfo"></a>
 ## getCursorInfo
 
 ```TypeScript
@@ -230,6 +234,7 @@ try {
 
 ```
 
+<a id="getdefaultinputmethodability"></a>
 ## getDefaultInputMethodAbility
 
 ```TypeScript
@@ -273,6 +278,7 @@ try {
 
 ```
 
+<a id="getinputmethodsubtypes"></a>
 ## getInputMethodSubtypes
 
 ```TypeScript
@@ -302,7 +308,7 @@ Get subtypes of a specified input method of a specified user.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<InputMethodSubtype> | the subtype of target input method. |
+| Array&lt;InputMethodSubtype&gt; | the subtype of target input method. |
 
 **Error codes:**
 
@@ -315,6 +321,7 @@ Get subtypes of a specified input method of a specified user.
 | 12800024 | the specified user is not in the foreground. |
 | 12800025 | cross-user operation denied.Only user 0 applications are authorized for this operation. |
 
+<a id="getinputmethodssync"></a>
 ## getInputMethodsSync
 
 ```TypeScript
@@ -344,7 +351,7 @@ List enabled or disabled input methods sync of a specified user.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<InputMethodProperty> | the list of input methods. |
+| Array&lt;InputMethodProperty&gt; | the list of input methods. |
 
 **Error codes:**
 
@@ -357,6 +364,7 @@ List enabled or disabled input methods sync of a specified user.
 | 12800024 | the specified user is not in the foreground. |
 | 12800025 | cross-user operation denied.Only user 0 applications are authorized for this operation. |
 
+<a id="ispanelshown"></a>
 ## isPanelShown
 
 ```TypeScript
@@ -408,6 +416,7 @@ console.info('Succeeded in querying isPanelShown, result: ' + result);
 
 ```
 
+<a id="ispanelshown-1"></a>
 ## isPanelShown
 
 ```TypeScript
@@ -462,6 +471,7 @@ console.info('Succeeded in querying isPanelShown, result: ' + result);
 
 ```
 
+<a id="off"></a>
 ## off('imeShow')
 
 ```TypeScript
@@ -483,7 +493,7 @@ Unsubscribes from the soft keyboard show event of the [input method panel](arkts
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'imeShow' | Yes | Event type, which is **'imeShow'**. |
-| callback | (info: Array<InputWindowInfo>) => void | No | Callback to unregister.<br>If this parameter is not specified, this API unregisters all callbacks for the specified event type. |
+| callback | (info: Array&lt;InputWindowInfo&gt;) =&gt; void | No | Callback to unregister.<br>If this parameter is not specified, this API unregisters all callbacks for the specified event type. |
 
 **Example**
 
@@ -492,6 +502,7 @@ inputMethod.getSetting().off('imeShow');
 
 ```
 
+<a id="off-1"></a>
 ## off('imeHide')
 
 ```TypeScript
@@ -513,7 +524,7 @@ Unsubscribes from the soft keyboard hide event of the [input method panel](arkts
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'imeHide' | Yes | Event type, which is **'imeHide'**. |
-| callback | (info: Array<InputWindowInfo>) => void | No | Callback to unregister.<br>If this parameter is not specified, this API unregisters all callbacks for the specified event type. |
+| callback | (info: Array&lt;InputWindowInfo&gt;) =&gt; void | No | Callback to unregister.<br>If this parameter is not specified, this API unregisters all callbacks for the specified event type. |
 
 **Example**
 
@@ -522,6 +533,7 @@ inputMethod.getSetting().off('imeHide');
 
 ```
 
+<a id="offimechangewithuserid"></a>
 ## offImeChangeWithUserId
 
 ```TypeScript
@@ -552,6 +564,7 @@ Unsubscribe from the input method change event.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | not system application. |
 
+<a id="on"></a>
 ## on('imeShow')
 
 ```TypeScript
@@ -573,7 +586,7 @@ Subscribes to the soft keyboard show event of the [input method panel](arkts-ime
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'imeShow' | Yes | Event type, which is **'imeShow'**. |
-| callback | (info: Array<InputWindowInfo>) => void | Yes | Callback used to return the soft keyboard information of the input method panel in the fixed state. |
+| callback | (info: Array&lt;InputWindowInfo&gt;) =&gt; void | Yes | Callback used to return the soft keyboard information of the input method panel in the fixed state. |
 
 **Error codes:**
 
@@ -590,6 +603,7 @@ inputMethod.getSetting().on('imeShow', (info: Array<inputMethod.InputWindowInfo>
 
 ```
 
+<a id="on-1"></a>
 ## on('imeHide')
 
 ```TypeScript
@@ -611,7 +625,7 @@ Subscribes to the soft keyboard hide event of the [input method panel](arkts-ime
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'imeHide' | Yes | Event type, which is **'imeHide'**. |
-| callback | (info: Array<InputWindowInfo>) => void | Yes | Callback used to return the soft keyboard information of the input method panel in the fixed state. |
+| callback | (info: Array&lt;InputWindowInfo&gt;) =&gt; void | Yes | Callback used to return the soft keyboard information of the input method panel in the fixed state. |
 
 **Error codes:**
 
@@ -628,6 +642,7 @@ inputMethod.getSetting().on('imeHide', (info: Array<inputMethod.InputWindowInfo>
 
 ```
 
+<a id="onimechangewithuserid"></a>
 ## onImeChangeWithUserId
 
 ```TypeScript

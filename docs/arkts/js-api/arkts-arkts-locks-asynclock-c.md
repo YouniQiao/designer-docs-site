@@ -16,6 +16,7 @@ Class to execute an asynchronous operation under lock.
 import { ArkTSUtils } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -32,6 +33,7 @@ Default constructor.
 
 **System capability:** SystemCapability.Utils.Lang
 
+<a id="lockasync"></a>
 ## lockAsync
 
 ```TypeScript
@@ -52,13 +54,13 @@ Perform an operation with the acquired lock exclusively.The method acquires the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncLockCallback](arkts-arkts-locks-asynclockcallback-t.md)<T> | Yes | function to call when the lock gets acquired. |
+| callback | [AsyncLockCallback](arkts-arkts-locks-asynclockcallback-t.md)&lt;T&gt; | Yes | function to call when the lock gets acquired. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise that will be resolved after the callback gets executed. |
+| Promise&lt;T&gt; | Promise that will be resolved after the callback gets executed. |
 
 **Error codes:**
 
@@ -66,6 +68,7 @@ Perform an operation with the acquired lock exclusively.The method acquires the 
 | --- | --- |
 | [10200030](../errorcode-utils.md#10200030-lock-does-not-exist) | The lock does not exist. |
 
+<a id="lockasync-1"></a>
 ## lockAsync
 
 ```TypeScript
@@ -86,14 +89,14 @@ Perform an operation with the acquired lock.The method acquires the lock first, 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncLockCallback](arkts-arkts-locks-asynclockcallback-t.md)<T> | Yes | function to call when the lock gets acquired. |
+| callback | [AsyncLockCallback](arkts-arkts-locks-asynclockcallback-t.md)&lt;T&gt; | Yes | function to call when the lock gets acquired. |
 | mode | [AsyncLockMode](arkts-arkts-locks-asynclockmode-e.md) | Yes | mode of the lock operation. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise that will be resolved after the callback gets executed or rejected. |
+| Promise&lt;T&gt; | Promise that will be resolved after the callback gets executed or rejected. |
 
 **Error codes:**
 
@@ -101,6 +104,7 @@ Perform an operation with the acquired lock.The method acquires the lock first, 
 | --- | --- |
 | [10200030](../errorcode-utils.md#10200030-lock-does-not-exist) | The lock does not exist. |
 
+<a id="lockasync-2"></a>
 ## lockAsync
 
 ```TypeScript
@@ -124,15 +128,15 @@ Perform an operation with the acquired lock.The method acquires the lock first, 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncLockCallback](arkts-arkts-locks-asynclockcallback-t.md)<T> | Yes | function to call when the lock gets acquired. |
+| callback | [AsyncLockCallback](arkts-arkts-locks-asynclockcallback-t.md)&lt;T&gt; | Yes | function to call when the lock gets acquired. |
 | mode | [AsyncLockMode](arkts-arkts-locks-asynclockmode-e.md) | Yes | mode of the lock operation. |
-| options | [AsyncLockOptions](arkts-arkts-locks-asynclockoptions-c.md)<U> | Yes | lock operation options. |
+| options | [AsyncLockOptions](arkts-arkts-locks-asynclockoptions-c.md)&lt;U&gt; | Yes | lock operation options. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T \| U> | Promise that will be resolved after the callback gets executed or rejected in case timeout exceeded. |
+| Promise&lt;T \| U&gt; | Promise that will be resolved after the callback gets executed or rejected in case timeout exceeded. |
 
 **Error codes:**
 
@@ -141,6 +145,7 @@ Perform an operation with the acquired lock.The method acquires the lock first, 
 | [10200030](../errorcode-utils.md#10200030-lock-does-not-exist) | The lock does not exist. |
 | [10200031](../errorcode-utils.md#10200031-calling-lockasync-timed-out) | Timeout exceeded. |
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -175,6 +180,7 @@ Query information about the specified lock.
 | --- | --- |
 | [10200030](../errorcode-utils.md#10200030-lock-does-not-exist) | The lock does not exist. |
 
+<a id="queryall"></a>
 ## queryAll
 
 ```TypeScript
@@ -197,6 +203,7 @@ Query information about all locks.
 | --- | --- |
 | [AsyncLockState](arkts-arkts-locks-asynclockstate-c.md)[] | Returns an array of AsyncLockState. |
 
+<a id="request"></a>
 ## request
 
 ```TypeScript

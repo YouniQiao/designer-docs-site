@@ -1,5 +1,6 @@
 # removeGroupByBundle (System API)
 
+<a id="removegroupbybundle"></a>
 ## removeGroupByBundle
 
 ```TypeScript
@@ -28,9 +29,10 @@ Removes notifications under a notification group of a specified application.This
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
 | groupName | string | Yes | Name of the notification group. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 
+<a id="removegroupbybundle-1"></a>
 ## removeGroupByBundle
 
 ```TypeScript
@@ -64,5 +66,5 @@ Removes notifications under a notification group of a specified application.This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 

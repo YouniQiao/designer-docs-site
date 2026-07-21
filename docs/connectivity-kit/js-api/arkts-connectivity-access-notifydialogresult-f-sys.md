@@ -6,6 +6,7 @@
 import { access } from '@kit.ConnectivityKit';
 ```
 
+<a id="notifydialogresult"></a>
 ## notifyDialogResult
 
 ```TypeScript
@@ -34,7 +35,7 @@ Notify bluetooth the result of bluetooth dialog.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

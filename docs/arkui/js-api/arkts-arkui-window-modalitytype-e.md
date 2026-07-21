@@ -32,7 +32,7 @@ APPLICATION_MODALITY = 1
 
 Select this value when other instances of the application should also not respond to user operations.
 
-This enumeration can be called properly on a device that supports [freeform windows](../../../../windowmanager/window-terminology.md#freeform-window) and is in the freeform window state. If the device does not support freeform windows, or if the device supports freeform windows but is not in the freeform window state, error code 801 is returned.
+This enumeration can be called properly on a device that supports [freeform windows](docroot://windowmanager/window-terminology.md#freeform-window) and is in the freeform window state. If the device does not support freeform windows, or if the device supports freeform windows but is not in the freeform window state, error code 801 is returned.
 
 **Since:** 14
 

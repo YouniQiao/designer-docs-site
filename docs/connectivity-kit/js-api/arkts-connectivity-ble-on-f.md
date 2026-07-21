@@ -6,6 +6,7 @@
 import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="on"></a>
 ## on('BLEDeviceFind')
 
 ```TypeScript
@@ -33,7 +34,7 @@ Subscribe BLE scan result.On API 10 and above, the permission required by this i
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'BLEDeviceFind' | Yes | Type of the scan result event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<ScanResult>> | Yes | Callback used to listen for the scan result event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;ScanResult&gt;&gt; | Yes | Callback used to listen for the scan result event. |
 
 **Error codes:**
 

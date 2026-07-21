@@ -6,6 +6,7 @@
 import { reminderAgent } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="cancelreminder"></a>
 ## cancelReminder
 
 ```TypeScript
@@ -29,7 +30,7 @@ Cancels the reminder with the specified ID. This API uses an asynchronous callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | reminderId | number | Yes | ID of the reminder. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -44,6 +45,7 @@ reminderAgent.cancelReminder(1, (err: BusinessError, data: void) => {
 ```
 
 
+<a id="cancelreminder-1"></a>
 ## cancelReminder
 
 ```TypeScript
@@ -72,7 +74,7 @@ Cancels the reminder with the specified ID. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 

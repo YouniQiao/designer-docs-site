@@ -1,5 +1,6 @@
 # isNotificationEnabled (System API)
 
+<a id="isnotificationenabled"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -27,9 +28,10 @@ Checks whether notification is enabled for a specified application.This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. |
 
 
+<a id="isnotificationenabled-1"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -62,9 +64,10 @@ Checks whether notification is enabled for a specified application. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. |
+| Promise&lt;boolean&gt; | Promise used to return the result. |
 
 
+<a id="isnotificationenabled-2"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -91,9 +94,10 @@ Checks whether notification is enabled for this application.This API uses an asy
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. |
 
 
+<a id="isnotificationenabled-3"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -120,9 +124,10 @@ Checks whether notification is enabled for this application. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. |
+| Promise&lt;boolean&gt; | Promise used to return the result. |
 
 
+<a id="isnotificationenabled-4"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -150,9 +155,10 @@ Checks whether notification is enabled for a specified user.This API uses an asy
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result.The value **true** means that the notification is enabled, and **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result.The value **true** means that the notification is enabled, and **false** means the opposite. |
 
 
+<a id="isnotificationenabled-5"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -185,5 +191,5 @@ Checks whether notification is enabled for a specified user. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result.The value **true** means that the notification is enabled, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result.The value **true** means that the notification is enabled, and **false** means the opposite. |
 

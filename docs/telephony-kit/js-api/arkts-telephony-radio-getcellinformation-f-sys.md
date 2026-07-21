@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getcellinformation"></a>
 ## getCellInformation
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the current cell information.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<CellInformation>> | Yes | Indicates the callback for getting cell information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;CellInformation&gt;&gt; | Yes | Indicates the callback for getting cell information. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ radio.getCellInformation(slotId, (err: BusinessError, data: Array<radio.CellInfo
 ```
 
 
+<a id="getcellinformation-1"></a>
 ## getCellInformation
 
 ```TypeScript
@@ -88,7 +90,7 @@ Get the current cell information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<CellInformation>> | Returns the current cell information. |
+| Promise&lt;Array&lt;CellInformation&gt;&gt; | Returns the current cell information. |
 
 **Error codes:**
 
@@ -117,6 +119,7 @@ radio.getCellInformation(slotId).then((data: Array<radio.CellInformation>) => {
 ```
 
 
+<a id="getcellinformation-2"></a>
 ## getCellInformation
 
 ```TypeScript
@@ -139,7 +142,7 @@ Get the current cell information.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<CellInformation>> | Yes | Indicates the callback for getting cell information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;CellInformation&gt;&gt; | Yes | Indicates the callback for getting cell information. |
 
 **Error codes:**
 

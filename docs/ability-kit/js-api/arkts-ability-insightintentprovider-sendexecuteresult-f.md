@@ -6,6 +6,7 @@
 import { insightIntentProvider } from '@kit.AbilityKit';
 ```
 
+<a id="sendexecuteresult"></a>
 ## sendExecuteResult
 
 ```TypeScript
@@ -35,7 +36,7 @@ Send execute result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - The promise returned by the function. |
+| Promise&lt;void&gt; | - The promise returned by the function. |
 
 **Error codes:**
 

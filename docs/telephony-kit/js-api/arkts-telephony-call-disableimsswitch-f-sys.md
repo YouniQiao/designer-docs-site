@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="disableimsswitch"></a>
 ## disableImsSwitch
 
 ```TypeScript
@@ -29,7 +30,7 @@ Turn off Ims switch.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of disableImsSwitch. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of disableImsSwitch. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ call.disableImsSwitch(0, (err: BusinessError) => {
 ```
 
 
+<a id="disableimsswitch-1"></a>
 ## disableImsSwitch
 
 ```TypeScript
@@ -87,7 +89,7 @@ Turn off Ims switch.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the disableImsSwitch. |
+| Promise&lt;void&gt; | The promise returned by the disableImsSwitch. |
 
 **Error codes:**
 

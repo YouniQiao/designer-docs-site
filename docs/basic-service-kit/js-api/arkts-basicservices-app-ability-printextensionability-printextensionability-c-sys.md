@@ -14,6 +14,7 @@ class of print extensionAbility.
 import { PrintExtensionAbility } from '@kit.BasicServicesKit';
 ```
 
+<a id="onrequestpreview"></a>
 ## onRequestPreview
 
 ```TypeScript

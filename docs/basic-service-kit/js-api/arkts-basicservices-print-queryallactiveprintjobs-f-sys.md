@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="queryallactiveprintjobs"></a>
 ## queryAllActivePrintJobs
 
 ```TypeScript
@@ -28,7 +29,7 @@ Queries all active print jobs. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PrintJob[]> | Promise used to return a list of all active print jobs. |
+| Promise&lt;PrintJob[]&gt; | Promise used to return a list of all active print jobs. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Represents a **WebviewController** object used to control various behaviors of *
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="accessbackward"></a>
 ## accessBackward
 
 ```TypeScript
@@ -42,6 +43,7 @@ Checks whether the web page can go back.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="accessforward"></a>
 ## accessForward
 
 ```TypeScript
@@ -70,6 +72,7 @@ Checks whether the web page can go forward.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="accessstep"></a>
 ## accessStep
 
 ```TypeScript
@@ -105,6 +108,7 @@ Checks whether the web page can go back or forward the given number of steps.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="addintelligenttrackingpreventionbypassinglist"></a>
 ## addIntelligentTrackingPreventionBypassingList
 
 ```TypeScript
@@ -125,7 +129,7 @@ Add bypassing hosts for Intelligent Tracking Prevention.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hostList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Hosts that bypass the Intelligent Tracking Prevention. |
+| hostList | Array&lt;string&gt; | Yes | Hosts that bypass the Intelligent Tracking Prevention. |
 
 **Error codes:**
 
@@ -134,6 +138,7 @@ Add bypassing hosts for Intelligent Tracking Prevention.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
+<a id="avoidvisibleviewportbottom"></a>
 ## avoidVisibleViewportBottom
 
 ```TypeScript
@@ -155,7 +160,7 @@ Sets the bottom avoidance height of the visible viewport on the web page.
 >  
 > - When the height of this API is set to **0**, the web page content can be restored, and the keyboard avoidance  
 > mode is specified by  
-> [keyboardAvoidMode()](../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#keyboardavoidmode12)  
+> [keyboardAvoidMode()](docroot://reference/apis-arkweb/arkts-basic-components-web-attributes.md#keyboardavoidmode12)  
 > .
 
 **Since:** 20
@@ -177,6 +182,7 @@ Sets the bottom avoidance height of the visible viewport on the web page.
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The WebviewController must be associated with a Web component. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | This functionality is not supported. |
 
+<a id="backorforward"></a>
 ## backOrForward
 
 ```TypeScript
@@ -206,6 +212,7 @@ Goes forward or back backOrForward in the history of the web page.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="backward"></a>
 ## backward
 
 ```TypeScript
@@ -228,6 +235,7 @@ Goes back in the history of the web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="clearblanklessloadingcache"></a>
 ## clearBlanklessLoadingCache
 
 ```TypeScript
@@ -252,7 +260,7 @@ In an applet or web application, when the content changes significantly during p
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| keys | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Key value list on the pages using the blankless optimization solution. The |
+| keys | Array&lt;string&gt; | No | Key value list on the pages using the blankless optimization solution. The |
 
 **Error codes:**
 
@@ -260,6 +268,7 @@ In an applet or web application, when the content changes significantly during p
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) |  |
 
+<a id="clearclientauthenticationcache"></a>
 ## clearClientAuthenticationCache
 
 ```TypeScript
@@ -282,6 +291,7 @@ Clears the client authentication certificate cache in the Web.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="clearhistory"></a>
 ## clearHistory
 
 ```TypeScript
@@ -304,6 +314,7 @@ Clears the history in the Web.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="clearhostip"></a>
 ## clearHostIP
 
 ```TypeScript
@@ -332,6 +343,7 @@ Clear the host name IP address.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="clearintelligenttrackingpreventionbypassinglist"></a>
 ## clearIntelligentTrackingPreventionBypassingList
 
 ```TypeScript
@@ -354,6 +366,7 @@ Clear bypassing hosts for Intelligent Tracking Prevention.
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
+<a id="clearmatches"></a>
 ## clearMatches
 
 ```TypeScript
@@ -376,6 +389,7 @@ Clears the matches found through [searchAllAsync](arkts-arkweb-webview-webviewco
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="clearprefetchedresource"></a>
 ## clearPrefetchedResource
 
 ```TypeScript
@@ -396,8 +410,9 @@ Clears the cache of prefetched resources based on the specified cache key list. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| cacheKeyList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Key used to query the cache of prefetched resources. The value can contain only letters and digits. If this parameter is not passed or is left empty, **url** is used by default. |
+| cacheKeyList | Array&lt;string&gt; | Yes | Key used to query the cache of prefetched resources. The value can contain only letters and digits. If this parameter is not passed or is left empty, **url** is used by default. |
 
+<a id="clearserviceworkerwebschemehandler"></a>
 ## clearServiceWorkerWebSchemeHandler
 
 ```TypeScript
@@ -414,6 +429,7 @@ Clear all web service worker scheme handlers.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="clearsslcache"></a>
 ## clearSslCache
 
 ```TypeScript
@@ -436,6 +452,7 @@ Clears the ssl cache in the Web.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="clearwebschemehandler"></a>
 ## clearWebSchemeHandler
 
 ```TypeScript
@@ -458,6 +475,7 @@ Clear all web scheme handlers for related web component.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="closeallmediapresentations"></a>
 ## closeAllMediaPresentations
 
 ```TypeScript
@@ -480,6 +498,7 @@ Closes all full-screen videos on a web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="closecamera"></a>
 ## closeCamera
 
 ```TypeScript
@@ -502,6 +521,7 @@ Disables the camera capture of the current web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -524,6 +544,7 @@ Constructs a WebviewController object.
 | --- | --- | --- | --- |
 | webTag | string | No | specified the name of the web component, Empty by default. |
 
+<a id="createpdf"></a>
 ## createPdf
 
 ```TypeScript
@@ -545,7 +566,7 @@ Obtains the data stream of a specified web page using an asynchronous callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | configuration | [PdfConfiguration](arkts-arkweb-webview-pdfconfiguration-i.md) | Yes | Parameters required for creating a PDF file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PdfData> | Yes | Callback used to return the data stream of an online PDF file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PdfData&gt; | Yes | Callback used to return the data stream of an online PDF file. |
 
 **Error codes:**
 
@@ -554,6 +575,7 @@ Obtains the data stream of a specified web page using an asynchronous callback.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid input parameter. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="createpdf-1"></a>
 ## createPdf
 
 ```TypeScript
@@ -580,7 +602,7 @@ Obtains the data stream of a specified web page using a promise.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PdfData> | Promise used to return the data stream of a web page. |
+| Promise&lt;PdfData&gt; | Promise used to return the data stream of a web page. |
 
 **Error codes:**
 
@@ -589,6 +611,7 @@ Obtains the data stream of a specified web page using a promise.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid input parameter. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="createwebmessageports"></a>
 ## createWebMessagePorts
 
 ```TypeScript
@@ -615,7 +638,7 @@ Create web message ports
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WebMessagePort> | An array represent 2 WebMessagePort, then can use those ports to communication with html pages. |
+| Array&lt;WebMessagePort&gt; | An array represent 2 WebMessagePort, then can use those ports to communication with html pages. |
 
 **Error codes:**
 
@@ -624,6 +647,7 @@ Create web message ports
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed.<br>**Applicable version:** 10 and later |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="createwebprintdocumentadapter"></a>
 ## createWebPrintDocumentAdapter
 
 ```TypeScript
@@ -657,6 +681,7 @@ Creates a **PrintDocumentAdapter** instance to provide content for printing.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="customizeschemes"></a>
 ## customizeSchemes
 
 ```TypeScript
@@ -677,7 +702,7 @@ Grant the Web kernel the permission to initiate cross-domain requests for custom
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| schemes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WebCustomScheme> | Yes | Configuration of web custom scheme. |
+| schemes | Array&lt;WebCustomScheme&gt; | Yes | Configuration of web custom scheme. |
 
 **Error codes:**
 
@@ -686,6 +711,7 @@ Grant the Web kernel the permission to initiate cross-domain requests for custom
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100020](../errorcode-webview.md#17100020-failed-to-register-custom-schemes) | Failed to register custom schemes.<br>**Applicable version:** 12 and later |
 
+<a id="customizeschemes-1"></a>
 ## customizeSchemes
 
 ```TypeScript
@@ -706,7 +732,7 @@ Grant the Web kernel the permission to initiate cross-domain requests for custom
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| schemes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WebCustomScheme> | Yes | Configuration of web custom scheme. |
+| schemes | Array&lt;WebCustomScheme&gt; | Yes | Configuration of web custom scheme. |
 | lazyInitWebEngine | boolean | Yes | When true: The interface internally skips initializing WebEngine and temporarily stores the registered schemes, which will be passed to WebEngine when it actually initializes. When false: The interface automatically performs WebEngine initialization internally |
 
 **Error codes:**
@@ -716,6 +742,7 @@ Grant the Web kernel the permission to initiate cross-domain requests for custom
 | [17100020](../errorcode-webview.md#17100020-failed-to-register-custom-schemes) | Failed to register custom schemes. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. The length of the schemes array is greater than 10.2. The character length of the scheme is greater than 32.3. The character in the scheme is not within the allowed range of lowercase English letters, numbers,and the symbols ".", "+", "-". |
 
+<a id="deletejavascriptregister"></a>
 ## deleteJavaScriptRegister
 
 ```TypeScript
@@ -746,6 +773,7 @@ Deletes a registered JavaScript object with given name.
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [17100008](../errorcode-webview.md#17100008-deleting-a-javascriptproxy-that-does-not-exist) | Failed to delete JavaScriptProxy because it does not exist. |
 
+<a id="enableadsblock"></a>
 ## enableAdsBlock
 
 ```TypeScript
@@ -776,6 +804,7 @@ Enable the ability to block Ads, disabled by default.
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
+<a id="enableadvancedsecuritymode"></a>
 ## enableAdvancedSecurityMode
 
 ```TypeScript
@@ -798,6 +827,7 @@ Enable the application disable some features such as PDFViewer to enhance the se
 | --- | --- | --- | --- |
 | securityParams | [SecurityParams](arkts-arkweb-webview-securityparams-i.md) | Yes | The parameters means which supported option or item will be disabled. |
 
+<a id="enablebackforwardcache"></a>
 ## enableBackForwardCache
 
 ```TypeScript
@@ -818,6 +848,7 @@ Enable the BackForwardCache and indicate features that are allowed to enter Back
 | --- | --- | --- | --- |
 | features | [BackForwardCacheSupportedFeatures](arkts-arkweb-webview-backforwardcachesupportedfeatures-c.md) | Yes | The features that supports BackForwardCache. |
 
+<a id="enableintelligenttrackingprevention"></a>
 ## enableIntelligentTrackingPrevention
 
 ```TypeScript
@@ -848,6 +879,7 @@ Enable the ability to use Intelligent Tracking Prevention; default is disabled.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
+<a id="enableprivatenetworkaccess"></a>
 ## enablePrivateNetworkAccess
 
 ```TypeScript
@@ -868,6 +900,7 @@ After enable PrivateNetworkAccess feature, ArkWeb will send a CORS preflight req
 | --- | --- | --- | --- |
 | enable | boolean | Yes | {@code true} enable the private network acccess check; {@code false} otherwise. |
 
+<a id="enablesafebrowsing"></a>
 ## enableSafeBrowsing
 
 ```TypeScript
@@ -896,6 +929,7 @@ Enable the ability to check website security risks.Illegal and fraudulent websit
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 
+<a id="enablewholewebpagedrawing"></a>
 ## enableWholeWebPageDrawing
 
 ```TypeScript
@@ -912,6 +946,7 @@ Enables the full drawing capability for the web page. This API works only during
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="executeaipagecommand"></a>
 ## executeAIPageCommand
 
 ```TypeScript
@@ -938,7 +973,7 @@ Asynchronously executes AI page command operations.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | A promise that resolves after the command is executed.This JSON-formatted value will be the result of command execution. |
+| Promise&lt;string&gt; | A promise that resolves after the command is executed.This JSON-formatted value will be the result of command execution. |
 
 **Error codes:**
 
@@ -947,6 +982,7 @@ Asynchronously executes AI page command operations.
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | 17100024 | Command format error.The command parameter does not conform to the JSON format requirements. |
 
+<a id="forward"></a>
 ## forward
 
 ```TypeScript
@@ -969,6 +1005,7 @@ Goes forward in the history of the web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getactivewebengineversion"></a>
 ## getActiveWebEngineVersion
 
 ```TypeScript
@@ -989,6 +1026,7 @@ Obtains the current ArkWeb kernel version.
 | --- | --- |
 | [ArkWebEngineVersion](arkts-arkweb-webview-arkwebengineversion-e.md) | The ArkWeb kernel version defined by [ArkWebEngineVersion](arkts-arkweb-webview-arkwebengineversion-e.md). |
 
+<a id="getattachstate"></a>
 ## getAttachState
 
 ```TypeScript
@@ -1009,6 +1047,7 @@ Get whether webviewController is attached to a web component.
 | --- | --- |
 | [ControllerAttachState](arkts-arkweb-webview-controllerattachstate-e.md) | the attach state of controller |
 
+<a id="getbackforwardentries"></a>
 ## getBackForwardEntries
 
 ```TypeScript
@@ -1039,6 +1078,7 @@ Get back forward stack list from current webview.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getblanklessinfowithkey"></a>
 ## getBlanklessInfoWithKey
 
 ```TypeScript
@@ -1070,7 +1110,7 @@ Obtains the prediction information about blankless loading (for details, see [Bl
 >  
 > - Add the **ohos.permission.INTERNET** and **ohos.permission.GET_NETWORK_INFO** permissions to **module.json5**  
 > . For details, see  
-> [Declaring Permissions in the Configuration File](../../../../security/AccessToken/declare-permissions.md#declaring-permissions-in-the-configuration-file).
+> [Declaring Permissions in the Configuration File](docroot://security/AccessToken/declare-permissions.md#declaring-permissions-in-the-configuration-file).
 
 **Since:** 20
 
@@ -1096,6 +1136,7 @@ Obtains the prediction information about blankless loading (for details, see [Bl
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) |  |
 
+<a id="getcertificate"></a>
 ## getCertificate
 
 ```TypeScript
@@ -1116,7 +1157,7 @@ Get certificate for the current website.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<cert.X509Cert>> | the promise of the current website's certificate. |
+| Promise&lt;Array&lt;cert.X509Cert&gt;&gt; | the promise of the current website's certificate. |
 
 **Error codes:**
 
@@ -1124,6 +1165,7 @@ Get certificate for the current website.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a web component. |
 
+<a id="getcertificate-1"></a>
 ## getCertificate
 
 ```TypeScript
@@ -1144,7 +1186,7 @@ Get certificate for the current website.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<cert.X509Cert>> | Yes | the callback of getCertificate. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;cert.X509Cert&gt;&gt; | Yes | the callback of getCertificate. |
 
 **Error codes:**
 
@@ -1153,6 +1195,7 @@ Get certificate for the current website.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a web component. |
 
+<a id="getcustomuseragent"></a>
 ## getCustomUserAgent
 
 ```TypeScript
@@ -1181,6 +1224,7 @@ Get custom user agent.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getdefaultuseragent"></a>
 ## getDefaultUserAgent
 
 ```TypeScript
@@ -1201,6 +1245,7 @@ Get the default user agent.
 | --- | --- |
 | string | The default user agent string. |
 
+<a id="geterrorpageenabled"></a>
 ## getErrorPageEnabled
 
 ```TypeScript
@@ -1227,6 +1272,7 @@ Get whether default error page feature is enabled.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getfavicon"></a>
 ## getFavicon
 
 ```TypeScript
@@ -1255,6 +1301,7 @@ Gets the favicon of current Web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="gethittest"></a>
 ## getHitTest
 
 ```TypeScript
@@ -1287,6 +1334,7 @@ Obtains the element type of the area being clicked.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="gethittestvalue"></a>
 ## getHitTestValue
 
 ```TypeScript
@@ -1319,6 +1367,7 @@ Obtains the element information of the area being clicked.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getlasthittest"></a>
 ## getLastHitTest
 
 ```TypeScript
@@ -1345,6 +1394,7 @@ Obtains the element information of the area being clicked last time.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getlastjavascriptproxycallingframeurl"></a>
 ## getLastJavascriptProxyCallingFrameUrl
 
 ```TypeScript
@@ -1373,6 +1423,7 @@ Get the url of the last frame that calls the JavaScriptProxy.This should be call
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getlastpostmessageurl"></a>
 ## getLastPostMessageURL
 
 ```TypeScript
@@ -1401,6 +1452,7 @@ Gets URL of frame that sent the latest postMessage to native application.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getmediaplaybackstate"></a>
 ## getMediaPlaybackState
 
 ```TypeScript
@@ -1429,6 +1481,7 @@ Queries the audio and video playback status of the current web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getoriginalurl"></a>
 ## getOriginalUrl
 
 ```TypeScript
@@ -1457,13 +1510,14 @@ Gets the original url of current Web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getpageheight"></a>
 ## getPageHeight
 
 ```TypeScript
 getPageHeight(): number
 ```
 
-Obtains the height of this web page. For details, see [Obtaining the Web Page Content Height](../../../../web/web-getpage-height.md).
+Obtains the height of this web page. For details, see [Obtaining the Web Page Content Height](docroot://web/web-getpage-height.md).
 
 **Since:** 9
 
@@ -1485,6 +1539,7 @@ Obtains the height of this web page. For details, see [Obtaining the Web Page Co
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getpageoffset"></a>
 ## getPageOffset
 
 ```TypeScript
@@ -1511,6 +1566,7 @@ Obtains the current scrolling offset of the web page (excluding the over-scrolli
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 
+<a id="getprintbackground"></a>
 ## getPrintBackground
 
 ```TypeScript
@@ -1539,6 +1595,7 @@ Obtains whether the web page background is printed.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getprogress"></a>
 ## getProgress
 
 ```TypeScript
@@ -1565,6 +1622,7 @@ Gets the loading progress for the current page.
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 
+<a id="getrenderprocessmode"></a>
 ## getRenderProcessMode
 
 ```TypeScript
@@ -1587,6 +1645,7 @@ Obtains the ArkWeb render subprocess mode.
 | --- | --- |
 | [RenderProcessMode](arkts-arkweb-webview-renderprocessmode-e.md) | mode - The render process mode of the ArkWeb.Call {@link getRenderProcessMode} to get the ArkWeb rendering subprocess mode of the current device,with an enumeration value of 0 as a single subprocess mode and an enumeration value of 1 as a multi-subprocess mode.If the obtained value is not within the range of the RenderProcessMode enumeration value,it defaults to the multi-rendering subprocess mode. |
 
+<a id="getscrolloffset"></a>
 ## getScrollOffset
 
 ```TypeScript
@@ -1609,6 +1668,7 @@ Obtains the current scrolling offset (including the over-scrolling offset) of th
 | --- | --- |
 | [ScrollOffset](arkts-arkweb-webview-scrolloffset-i.md) | Current scrolling offset (including the over-scrolling offset) of the web page. |
 
+<a id="getscrollable"></a>
 ## getScrollable
 
 ```TypeScript
@@ -1637,6 +1697,7 @@ Obtains whether this web page is scrollable.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getsecuritylevel"></a>
 ## getSecurityLevel
 
 ```TypeScript
@@ -1665,6 +1726,7 @@ Get the security level of the current page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getsiteisolationmode"></a>
 ## getSiteIsolationMode
 
 ```TypeScript
@@ -1685,6 +1747,7 @@ Queries the currently effective site isolation mode.
 | --- | --- |
 | [SiteIsolationMode](arkts-arkweb-webview-siteisolationmode-e.md) | The site isolation mode of the application.@static |
 
+<a id="getsubframeerrorpageenabled"></a>
 ## getSubframeErrorPageEnabled
 
 ```TypeScript
@@ -1713,6 +1776,7 @@ Get whether default error page feature is enabled for subframes.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getsurfaceid"></a>
 ## getSurfaceId
 
 ```TypeScript
@@ -1740,6 +1804,7 @@ Obtains the ID of the surface corresponding to ArkWeb. The ID can be used to cap
 | --- | --- |
 | string | ID of the surface held by ArkWeb. |
 
+<a id="gettitle"></a>
 ## getTitle
 
 ```TypeScript
@@ -1768,6 +1833,7 @@ Gets the title of current Web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="geturl"></a>
 ## getUrl
 
 ```TypeScript
@@ -1796,6 +1862,7 @@ Gets the url of current Web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getuseragent"></a>
 ## getUserAgent
 
 ```TypeScript
@@ -1824,6 +1891,7 @@ Gets the default user agent.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="getuseragentclienthintsenabled"></a>
 ## getUserAgentClientHintsEnabled
 
 ```TypeScript
@@ -1844,6 +1912,7 @@ Get if the UserAgent Client Hints enabled.
 | --- | --- |
 | boolean | If UserAgent Client Hints was enabled. |
 
+<a id="getuseragentmetadata"></a>
 ## getUserAgentMetadata
 
 ```TypeScript
@@ -1870,6 +1939,7 @@ Get the User-Agent metadata corresponding to the User-Agent.
 | --- | --- |
 | [UserAgentMetadata](arkts-arkweb-webview-useragentmetadata-c.md) | The UserAgentMetadata for the userAgent. |
 
+<a id="getwebid"></a>
 ## getWebId
 
 ```TypeScript
@@ -1898,6 +1968,7 @@ Obtains the index value of this Web component, which can be used for **Web** com
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="hasimage"></a>
 ## hasImage
 
 ```TypeScript
@@ -1918,7 +1989,7 @@ Checks whether this page contains images. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result.<br> The value **true** indicates that this page contains images, and the value **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result.<br> The value **true** indicates that this page contains images, and the value **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1927,6 +1998,7 @@ Checks whether this page contains images. This API uses a promise to return the 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="hasimage-1"></a>
 ## hasImage
 
 ```TypeScript
@@ -1947,7 +2019,7 @@ Checks whether this page contains images. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result.<br> The value **true** indicates that this page contains images, and the value **false** indicates the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result.<br> The value **true** indicates that this page contains images, and the value **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -1956,6 +2028,7 @@ Checks whether this page contains images. This API uses an asynchronous callback
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="initializewebengine"></a>
 ## initializeWebEngine
 
 ```TypeScript
@@ -1972,6 +2045,7 @@ Loads the dynamic link library (DLL) file of the web engine. This API can be cal
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="injectofflineresources"></a>
 ## injectOfflineResources
 
 ```TypeScript
@@ -2000,7 +2074,7 @@ After **webview.WebviewController.SetRenderProcessMode(webview.RenderProcessMode
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resourceMaps | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<OfflineResourceMap> | Yes | Configuration object for local offline resources. A maximum of 30 resources can be injected in a single call, with a maximum size of 10 MB per individual resource. |
+| resourceMaps | Array&lt;OfflineResourceMap&gt; | Yes | Configuration object for local offline resources. A maximum of 30 resources can be injected in a single call, with a maximum size of 10 MB per individual resource. |
 
 **Error codes:**
 
@@ -2011,6 +2085,7 @@ After **webview.WebviewController.SetRenderProcessMode(webview.RenderProcessMode
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 12 - 21 |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 12 - 21 |
 
+<a id="isactivewebengineevergreen"></a>
 ## isActiveWebEngineEvergreen
 
 ```TypeScript
@@ -2031,6 +2106,7 @@ Checks whether the system is using the evergreen kernel, that is, the latest ker
 | --- | --- |
 | boolean | Whether the system is using the evergreen kernel. If the system is using the evergreen kernel,**true** is returned. Otherwise, **false** is returned. |
 
+<a id="isadsblockenabled"></a>
 ## isAdsBlockEnabled
 
 ```TypeScript
@@ -2059,6 +2135,7 @@ Get whether Ads block is enabled.
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
+<a id="isadsblockenabledforcurpage"></a>
 ## isAdsBlockEnabledForCurPage
 
 ```TypeScript
@@ -2087,6 +2164,7 @@ Get whether Ads block is enabled for current Webpage.
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
+<a id="isautopreconnectenabled"></a>
 ## isAutoPreconnectEnabled
 
 ```TypeScript
@@ -2107,6 +2185,7 @@ static isAutoPreconnectEnabled(): boolean
 | --- | --- |
 | boolean | Return true if enabled, false if disabled. |
 
+<a id="isincognitomode"></a>
 ## isIncognitoMode
 
 ```TypeScript
@@ -2135,6 +2214,7 @@ Whether the incognito mode is set.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="isintelligenttrackingpreventionenabled"></a>
 ## isIntelligentTrackingPreventionEnabled
 
 ```TypeScript
@@ -2164,6 +2244,7 @@ Get whether Intelligent Tracking Prevention is enabled.
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
+<a id="isprivatenetworkaccessenabled"></a>
 ## isPrivateNetworkAccessEnabled
 
 ```TypeScript
@@ -2184,6 +2265,7 @@ Get whether PrivateNetworkAccess is enabled.
 | --- | --- |
 | boolean | True is enable the ability to check private network access else false. |
 
+<a id="issafebrowsingenabled"></a>
 ## isSafeBrowsingEnabled
 
 ```TypeScript
@@ -2206,6 +2288,7 @@ Get whether checking website security risks is enabled.
 | --- | --- |
 | boolean | True if enable the ability to check website security risks else false. |
 
+<a id="loaddata"></a>
 ## loadData
 
 ```TypeScript
@@ -2244,6 +2327,7 @@ If **encoding** is not base64 (including null values), ASCII encoding is used fo
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 9 - 10 |
 
+<a id="loadurl"></a>
 ## loadUrl
 
 ```TypeScript
@@ -2265,7 +2349,7 @@ Loads the data or URL.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string \| Resource | Yes | The URL to load. |
-| headers | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WebHeader> | No | Additional HTTP request header for URL. |
+| headers | Array&lt;WebHeader&gt; | No | Additional HTTP request header for URL. |
 
 **Error codes:**
 
@@ -2276,6 +2360,7 @@ Loads the data or URL.
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid. |
 | [17100003](../errorcode-webview.md#17100003-incorrect-resource-path) | Invalid resource path or file type. |
 
+<a id="off"></a>
 ## off('controllerAttachStateChange')
 
 ```TypeScript
@@ -2295,8 +2380,9 @@ Unregister the callback for controller attach state change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'controllerAttachStateChange' | Yes | the event of controller attach state change. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ControllerAttachState> | No | Callback used to return the controller attach state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ControllerAttachState&gt; | No | Callback used to return the controller attach state. |
 
+<a id="on"></a>
 ## on('controllerAttachStateChange')
 
 ```TypeScript
@@ -2316,8 +2402,9 @@ Register the callback for controller attach state change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'controllerAttachStateChange' | Yes | the event of controller attach state change. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ControllerAttachState> | Yes | Callback used to return the controller attach state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ControllerAttachState&gt; | Yes | Callback used to return the controller attach state. |
 
+<a id="onactive"></a>
 ## onActive
 
 ```TypeScript
@@ -2340,13 +2427,14 @@ Called when the Web component enters the active state. The application can inter
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="oncreatenativemediaplayer"></a>
 ## onCreateNativeMediaPlayer
 
 ```TypeScript
 onCreateNativeMediaPlayer(callback: CreateNativeMediaPlayerCallback): void
 ```
 
-Called when the [application takes over media playback of the web page](../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12)and a media file is played on the web page.
+Called when the [application takes over media playback of the web page](docroot://reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12)and a media file is played on the web page.
 
 If the application does not take over media playback on the web page, this callback is not invoked.
 
@@ -2364,6 +2452,7 @@ If the application does not take over media playback on the web page, this callb
 | --- | --- | --- | --- |
 | callback | [CreateNativeMediaPlayerCallback](arkts-arkweb-webview-createnativemediaplayercallback-t.md) | Yes | Callback when the application takes over media playback on the web page. |
 
+<a id="oninactive"></a>
 ## onInactive
 
 ```TypeScript
@@ -2386,6 +2475,7 @@ Called when the Web component enters the inactive state. You can implement the b
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="pagedown"></a>
 ## pageDown
 
 ```TypeScript
@@ -2415,6 +2505,7 @@ Scrolls the page down by half the viewport or jumps to the bottom of the page.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="pageup"></a>
 ## pageUp
 
 ```TypeScript
@@ -2444,6 +2535,7 @@ Scrolls the page up by half the viewport or jumps to the top of the page.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="pauseallmedia"></a>
 ## pauseAllMedia
 
 ```TypeScript
@@ -2466,6 +2558,7 @@ Pauses all audio and video on a web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="pausealltimers"></a>
 ## pauseAllTimers
 
 ```TypeScript
@@ -2488,6 +2581,7 @@ Called when the Web component enters the inactive state. You can implement the b
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="pausemicrophone"></a>
 ## pauseMicrophone
 
 ```TypeScript
@@ -2508,6 +2602,7 @@ Pauses microphone capture on the current web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The WebviewController must be associated with a Web component. |
 
+<a id="postmessage"></a>
 ## postMessage
 
 ```TypeScript
@@ -2529,7 +2624,7 @@ Post web message port to html
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | Data name information to send. |
-| ports | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WebMessagePort> | Yes | Port number array information to send. |
+| ports | Array&lt;WebMessagePort&gt; | Yes | Port number array information to send. |
 | uri | string | Yes | URI to receive this information. |
 
 **Error codes:**
@@ -2539,6 +2634,7 @@ Post web message port to html
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="posturl"></a>
 ## postUrl
 
 ```TypeScript
@@ -2560,7 +2656,7 @@ Loads the URL use "POST" method with post data.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | Request the URL use "POST" method. |
-| postData | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | This data will passed to "POST" request. |
+| postData | ArrayBuffer | Yes | This data will passed to "POST" request. |
 
 **Error codes:**
 
@@ -2570,6 +2666,7 @@ Loads the URL use "POST" method with post data.
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid. |
 
+<a id="precompilejavascript"></a>
 ## precompileJavaScript
 
 ```TypeScript
@@ -2598,7 +2695,7 @@ The API determines whether to update the existing bytecode cache based on the pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | - Promise used to return the error code for generating the bytecode cache. The value **0** indicates no error, and the value **-1** indicates an internal error. |
+| Promise&lt;number&gt; | - Promise used to return the error code for generating the bytecode cache. The value **0** indicates no error, and the value **-1** indicates an internal error. |
 
 **Error codes:**
 
@@ -2607,6 +2704,7 @@ The API determines whether to update the existing bytecode cache based on the pr
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid input parameter.Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="prefetchpage"></a>
 ## prefetchPage
 
 ```TypeScript
@@ -2628,7 +2726,7 @@ Prefetch the resources required by the page, but will not execute js or render t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | Which url to preresolve/preconnect. |
-| additionalHeaders | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WebHeader> | No | Additional HTTP request header of the URL. |
+| additionalHeaders | Array&lt;WebHeader&gt; | No | Additional HTTP request header of the URL. |
 
 **Error codes:**
 
@@ -2638,6 +2736,7 @@ Prefetch the resources required by the page, but will not execute js or render t
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 10 - 21 |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 10 - 21 |
 
+<a id="prefetchpage-1"></a>
 ## prefetchPage
 
 ```TypeScript
@@ -2659,7 +2758,7 @@ Prefetch the resources required by the page, but will not execute js or render t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | Which url to preresolve/preconnect. |
-| additionalHeaders | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WebHeader> | No | Additional HTTP request header of the URL. |
+| additionalHeaders | Array&lt;WebHeader&gt; | No | Additional HTTP request header of the URL. |
 | prefetchOptions | [PrefetchOptions](arkts-arkweb-webview-prefetchoptions-c.md) | No | Prefetch behavior can be customized via ?prefetchOptions?,including ignoring Cache-Control: no-store and adjusting the throttling interval. |
 
 **Error codes:**
@@ -2670,6 +2769,7 @@ Prefetch the resources required by the page, but will not execute js or render t
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 21 and later |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 21 and later |
 
+<a id="prefetchresource"></a>
 ## prefetchResource
 
 ```TypeScript
@@ -2696,7 +2796,7 @@ Resources in the memory cache are automatically managed by the ArkWeb engine. Wh
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | request | [RequestInfo](../../apis-ability-kit/arkts-apis/arkts-ability-dialogrequest-requestinfo-i.md) | Yes | Information about the prefetched request. |
-| additionalHeaders | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WebHeader> | No | Additional HTTP request header of the prefetched request.<br>If **undefined** or **null** is passed, error code **401** will be thrown. |
+| additionalHeaders | Array&lt;WebHeader&gt; | No | Additional HTTP request header of the prefetched request.<br>If **undefined** or **null** is passed, error code **401** will be thrown. |
 | cacheKey | string | No | Key used to query the cache of prefetched resources. The value can contain only letters and digits. If this parameter is not passed or is left empty, **url** is used by default.<br>If **undefined** or **null** is passed, error code **401** will be thrown. |
 | cacheValidTime | number | No | Validity period for caching prefetched resources.<br>Value range: (0, 2147483647]<br>Default value: **300s**<br>Unit: second.<br>If **undefined** or **null** is passed, error code **401** will be thrown. |
 
@@ -2708,6 +2808,7 @@ Resources in the memory cache are automatically managed by the ArkWeb engine. Wh
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 12 - 21 |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 12 - 21 |
 
+<a id="prepareforpageload"></a>
 ## prepareForPageLoad
 
 ```TypeScript
@@ -2740,6 +2841,7 @@ Preresolve or Preconnect the url. This API can be called before loading the url 
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 10 - 21 |
 | [17100013](../errorcode-webview.md#17100013-invalid-number-of-sockets-during-preconnection) | The number of preconnect sockets is invalid. |
 
+<a id="refresh"></a>
 ## refresh
 
 ```TypeScript
@@ -2762,6 +2864,7 @@ Refreshes the current URL.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="refresh-1"></a>
 ## refresh
 
 ```TypeScript
@@ -2788,6 +2891,7 @@ Refreshes the current URL.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="registerjavascriptproxy"></a>
 ## registerJavaScriptProxy
 
 ```TypeScript
@@ -2815,8 +2919,8 @@ Registers the supplied ArkTs object into this Web component.The object is regist
 | --- | --- | --- | --- |
 | jsObject | object | Yes | Application side JavaScript objects participating in registration.<br>**Since:** 9 |
 | name | string | Yes | The name of the registered object, which is consistent with the object name called in the window. |
-| methodList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | The method of the application side JavaScript object participating in the registration. |
-| asyncMethodList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | The async method of the application side JavaScript object participating in the registration.<br>**Since:** 12 |
+| methodList | Array&lt;string&gt; | Yes | The method of the application side JavaScript object participating in the registration. |
+| asyncMethodList | Array&lt;string&gt; | No | The async method of the application side JavaScript object participating in the registration.<br>**Since:** 12 |
 | permission | string | No | permission configuration defining web page URLs that can access JavaScriptProxy methods.The configuration can be defined at two levels, object level and method level.<br>**Since:** 12 |
 
 **Error codes:**
@@ -2826,6 +2930,7 @@ Registers the supplied ArkTs object into this Web component.The object is regist
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="removeallcache"></a>
 ## removeAllCache
 
 ```TypeScript
@@ -2852,6 +2957,7 @@ Remove resource cache in application. So this method will remove all cache for a
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 
+<a id="removecache"></a>
 ## removeCache
 
 ```TypeScript
@@ -2881,6 +2987,7 @@ Clears the cache in the application. This API will clear the cache for all webvi
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="removeintelligenttrackingpreventionbypassinglist"></a>
 ## removeIntelligentTrackingPreventionBypassingList
 
 ```TypeScript
@@ -2901,7 +3008,7 @@ Remove bypassing hosts for Intelligent Tracking Prevention.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hostList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Hosts needs to remove from bypass list. |
+| hostList | Array&lt;string&gt; | Yes | Hosts needs to remove from bypass list. |
 
 **Error codes:**
 
@@ -2910,6 +3017,7 @@ Remove bypassing hosts for Intelligent Tracking Prevention.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
+<a id="requestfocus"></a>
 ## requestFocus
 
 ```TypeScript
@@ -2932,6 +3040,7 @@ Requests focus for this web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="restorewebstate"></a>
 ## restoreWebState
 
 ```TypeScript
@@ -2952,7 +3061,7 @@ Restores the page status history from the serialized data of the current WebView
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| state | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Web access stack after serialization. |
+| state | Uint8Array | Yes | Web access stack after serialization. |
 
 **Error codes:**
 
@@ -2961,6 +3070,7 @@ Restores the page status history from the serialized data of the current WebView
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="resumeallmedia"></a>
 ## resumeAllMedia
 
 ```TypeScript
@@ -2983,6 +3093,7 @@ Resumes the playback of the audio and video that are paused by the pauseAllMedia
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="resumealltimers"></a>
 ## resumeAllTimers
 
 ```TypeScript
@@ -3005,13 +3116,14 @@ Resume all timers suspended from the pauseAllTimers() interface.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="resumemicrophone"></a>
 ## resumeMicrophone
 
 ```TypeScript
 resumeMicrophone(): void
 ```
 
-Resumes microphone capture on the current web page. Before using the microphone , add the **ohos.permission.MICROPHONE** permission to **module.json5**. For details about how to add the permission, see [Declaring Permissions in the Configuration File](../../../../security/AccessToken/declare-permissions.md).
+Resumes microphone capture on the current web page. Before using the microphone , add the **ohos.permission.MICROPHONE** permission to **module.json5**. For details about how to add the permission, see [Declaring Permissions in the Configuration File](docroot://security/AccessToken/declare-permissions.md).
 
 **Since:** 23
 
@@ -3025,6 +3137,7 @@ Resumes microphone capture on the current web page. Before using the microphone 
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The WebviewController must be associated with a Web component. |
 
+<a id="runjavascript"></a>
 ## runJavaScript
 
 ```TypeScript
@@ -3053,7 +3166,7 @@ Asynchronously execute JavaScript in the context of the currently displayed page
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | A promise is solved after the JavaScript script is executed.This parameter will be the result of JavaScript script execution.If the JavaScript script fails to execute or has no return value,null will be returned. |
+| Promise&lt;string&gt; | A promise is solved after the JavaScript script is executed.This parameter will be the result of JavaScript script execution.If the JavaScript script fails to execute or has no return value,null will be returned. |
 
 **Error codes:**
 
@@ -3063,6 +3176,7 @@ Asynchronously execute JavaScript in the context of the currently displayed page
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [17100003](../errorcode-webview.md#17100003-incorrect-resource-path) | Calling a JS method that returns an empty ArrayBuffer via runJavaScript. |
 
+<a id="runjavascript-1"></a>
 ## runJavaScript
 
 ```TypeScript
@@ -3086,7 +3200,7 @@ Asynchronously execute JavaScript in the context of the currently displayed page
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | script | string | Yes | JavaScript Script. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callbacks execute JavaScript script results. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callbacks execute JavaScript script results. |
 
 **Error codes:**
 
@@ -3096,6 +3210,7 @@ Asynchronously execute JavaScript in the context of the currently displayed page
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [17100003](../errorcode-webview.md#17100003-incorrect-resource-path) | Calling a JS method that returns an empty ArrayBuffer via runJavaScript. |
 
+<a id="runjavascriptext"></a>
 ## runJavaScriptExt
 
 ```TypeScript
@@ -3122,7 +3237,7 @@ Execute JavaScript code in the context of the currently displayed page, and retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<JsMessageExt> | A promise is solved after the JavaScript script is executed.This parameter will be the result of JavaScript script execution.If the JavaScript script fails to execute or has no return value,a none type value will be returned. |
+| Promise&lt;JsMessageExt&gt; | A promise is solved after the JavaScript script is executed.This parameter will be the result of JavaScript script execution.If the JavaScript script fails to execute or has no return value,a none type value will be returned. |
 
 **Error codes:**
 
@@ -3131,6 +3246,7 @@ Execute JavaScript code in the context of the currently displayed page, and retu
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="runjavascriptext-1"></a>
 ## runJavaScriptExt
 
 ```TypeScript
@@ -3152,7 +3268,7 @@ Execute JavaScript code in the context of the currently displayed page, and retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | script | string \| ArrayBuffer | Yes | JavaScript Script.<br>**Since:** 12 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<JsMessageExt> | Yes | Callbacks execute JavaScript script results. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;JsMessageExt&gt; | Yes | Callbacks execute JavaScript script results. |
 
 **Error codes:**
 
@@ -3161,6 +3277,7 @@ Execute JavaScript code in the context of the currently displayed page, and retu
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="scrollby"></a>
 ## scrollBy
 
 ```TypeScript
@@ -3192,6 +3309,7 @@ Scrolls the page by the specified amount within a specified period.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="scrollbywithresult"></a>
 ## scrollByWithResult
 
 ```TypeScript
@@ -3226,6 +3344,7 @@ Scrolls the page by the specified amount and returns value to indicate whether t
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="scrollto"></a>
 ## scrollTo
 
 ```TypeScript
@@ -3257,6 +3376,7 @@ Scrolls the page to the specified absolute position within a specified period.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="searchallasync"></a>
 ## searchAllAsync
 
 ```TypeScript
@@ -3286,6 +3406,7 @@ Searches the web page for content that matches the keyword specified by **'searc
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="searchnext"></a>
 ## searchNext
 
 ```TypeScript
@@ -3315,6 +3436,7 @@ Highlights and scrolls to the next match search.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="serializewebstate"></a>
 ## serializeWebState
 
 ```TypeScript
@@ -3335,7 +3457,7 @@ Serialize the access stack of the web, that is, the history of access.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Web access stack after serialization. |
+| Uint8Array | Web access stack after serialization. |
 
 **Error codes:**
 
@@ -3343,6 +3465,7 @@ Serialize the access stack of the web, that is, the history of access.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="setactivewebengineversion"></a>
 ## setActiveWebEngineVersion
 
 ```TypeScript
@@ -3370,6 +3493,7 @@ Sets the ArkWeb kernel version. If the system does not support the specified ver
 | --- | --- | --- | --- |
 | engineVersion | [ArkWebEngineVersion](arkts-arkweb-webview-arkwebengineversion-e.md) | Yes | ArkWeb kernel version. |
 
+<a id="setappcustomuseragent"></a>
 ## setAppCustomUserAgent
 
 ```TypeScript
@@ -3392,6 +3516,7 @@ Set the default User-Agent for the application.
 | --- | --- | --- | --- |
 | userAgent | string | Yes | The User-Agent string. |
 
+<a id="setaudiomuted"></a>
 ## setAudioMuted
 
 ```TypeScript
@@ -3421,6 +3546,7 @@ Mutes this web page.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="setautopreconnect"></a>
 ## setAutoPreconnect
 
 ```TypeScript
@@ -3441,6 +3567,7 @@ Configure whether to enable automatic pre-connection to high-frequency URLs acce
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Enable if true, disable if false. |
 
+<a id="setbackforwardcacheoptions"></a>
 ## setBackForwardCacheOptions
 
 ```TypeScript
@@ -3467,6 +3594,7 @@ Configure the BackForwardCache.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="setblanklessloadingcachecapacity"></a>
 ## setBlanklessLoadingCacheCapacity
 
 ```TypeScript
@@ -3499,6 +3627,7 @@ Sets the persistent cache capacity of the blankless loading solution and returns
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) |  |
 
+<a id="setblanklessloadingwithkey"></a>
 ## setBlanklessLoadingWithKey
 
 ```TypeScript
@@ -3518,7 +3647,7 @@ Sets whether to enable blankless loading. This API must be used together with [g
 >  
 > - Add the **ohos.permission.INTERNET** and **ohos.permission.GET_NETWORK_INFO** permissions to **module.json5**  
 > . For details, see  
-> [Declaring Permissions in the Configuration File](../../../../security/AccessToken/declare-permissions.md#declaring-permissions-in-the-configuration-file).
+> [Declaring Permissions in the Configuration File](docroot://security/AccessToken/declare-permissions.md#declaring-permissions-in-the-configuration-file).
 
 **Since:** 20
 
@@ -3545,6 +3674,7 @@ Sets whether to enable blankless loading. This API must be used together with [g
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) |  |
 
+<a id="setblanklessloadingwithparams"></a>
 ## setBlanklessLoadingWithParams
 
 ```TypeScript
@@ -3585,6 +3715,7 @@ Device behavior differences: Only the mobile phone is supported. For other devic
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 
+<a id="setconnectiontimeout"></a>
 ## setConnectionTimeout
 
 ```TypeScript
@@ -3613,6 +3744,7 @@ Set web engine socket connection timeout. Unit: seconds. the default timeout int
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3. Parameter verification failed. |
 
+<a id="setcustomuseragent"></a>
 ## setCustomUserAgent
 
 ```TypeScript
@@ -3642,6 +3774,7 @@ Set custom user agent.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="setdownloaddelegate"></a>
 ## setDownloadDelegate
 
 ```TypeScript
@@ -3670,6 +3803,7 @@ Set delegate for download.Used to notify the progress of the download triggered 
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="seterrorpageenabled"></a>
 ## setErrorPageEnabled
 
 ```TypeScript
@@ -3696,6 +3830,7 @@ Set whether enable the error page. onOverrideErrorPage will be triggered when th
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="seterrorpageenabled-1"></a>
 ## setErrorPageEnabled
 
 ```TypeScript
@@ -3725,6 +3860,7 @@ Set whether to enable error page. onOverrideErrorPage will be triggered when the
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="sethostip"></a>
 ## setHostIP
 
 ```TypeScript
@@ -3755,6 +3891,7 @@ Set IP address for host name.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="sethttpdns"></a>
 ## setHttpDns
 
 ```TypeScript
@@ -3784,6 +3921,7 @@ Set web engine to use HttpDns server to resolve dns.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3. Parameter verification failed. |
 
+<a id="setnetworkavailable"></a>
 ## setNetworkAvailable
 
 ```TypeScript
@@ -3813,6 +3951,7 @@ Put network state for web. Which is used to set window.navigator.onLine property
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="setpathallowinguniversalaccess"></a>
 ## setPathAllowingUniversalAccess
 
 ```TypeScript
@@ -3837,7 +3976,7 @@ If a path in the list is not of the preceding paths, error code 401 is reported 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pathList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | The path list allow universal access. |
+| pathList | Array&lt;string&gt; | Yes | The path list allow universal access. |
 
 **Error codes:**
 
@@ -3846,13 +3985,14 @@ If a path in the list is not of the preceding paths, error code 401 is reported 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Parameter string is too long.<br>3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="setprintbackground"></a>
 ## setPrintBackground
 
 ```TypeScript
 setPrintBackground(enable: boolean): void
 ```
 
-Sets whether to print the background of a web page. If the setting of this API is inconsistent with that of [PrintAttributes](../../../../reference/apis-basic-services-kit/js-apis-print.md#printattributes11), the setting of this API takes precedence.
+Sets whether to print the background of a web page. If the setting of this API is inconsistent with that of [PrintAttributes](docroot://reference/apis-basic-services-kit/js-apis-print.md#printattributes11), the setting of this API takes precedence.
 
 **Since:** 12
 
@@ -3875,6 +4015,7 @@ Sets whether to print the background of a web page. If the setting of this API i
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="setrenderprocessmode"></a>
 ## setRenderProcessMode
 
 ```TypeScript
@@ -3903,6 +4044,7 @@ Sets the ArkWeb render subprocess mode.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.@static |
 
+<a id="setscrollable"></a>
 ## setScrollable
 
 ```TypeScript
@@ -3933,6 +4075,7 @@ Sets whether this web page is scrollable.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="setscrollbarmode"></a>
 ## setScrollbarMode
 
 ```TypeScript
@@ -3964,6 +4107,7 @@ Sets the global scrollbar mode in the web page. When this API is not explicitly 
 | --- | --- | --- | --- |
 | scrollbarMode | [ScrollbarMode](arkts-arkweb-webview-scrollbarmode-e.md) | Yes | Scroll bar mode. |
 
+<a id="setserviceworkerwebschemehandler"></a>
 ## setServiceWorkerWebSchemeHandler
 
 ```TypeScript
@@ -3993,6 +4137,7 @@ Set web scheme handler for specific scheme. This is used for service worker.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 
+<a id="setsiteisolationmode"></a>
 ## setSiteIsolationMode
 
 ```TypeScript
@@ -4019,6 +4164,7 @@ Set the site isolation mode.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. Possible causes:1. Site Isolation mode is already set by the developer.2. Site Isolation mode cannot be strict in single-render-process mode.3. Site Isolation mode cannot be changed while Secure Shield mode is active.@static |
 
+<a id="setsocketidletimeout"></a>
 ## setSocketIdleTimeout
 
 ```TypeScript
@@ -4041,6 +4187,7 @@ Set web engine socket idle timeout.
 | --- | --- | --- | --- |
 | timeout | number | Yes | Socket idle timeout. |
 
+<a id="setsoftkeyboardbehaviormode"></a>
 ## setSoftKeyboardBehaviorMode
 
 ```TypeScript
@@ -4067,6 +4214,7 @@ Set the behavior mode of the soft keyboard. If this API is not explicitly called
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The WebviewController must be associated with a Web component. |
 
+<a id="seturltrustlist"></a>
 ## setUrlTrustList
 
 ```TypeScript
@@ -4096,6 +4244,7 @@ Set the URL trust list for the ArkWeb.When the URL trust list has been set, only
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Parameter string is too long. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="seturltrustlist-1"></a>
 ## setUrlTrustList
 
 ```TypeScript
@@ -4131,6 +4280,7 @@ Example of the urlTrustList:
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) |  |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Initialization error.The WebviewController must be associated with a Web component. |
 
+<a id="setuseragentclienthintsenabled"></a>
 ## setUserAgentClientHintsEnabled
 
 ```TypeScript
@@ -4151,6 +4301,7 @@ Enable the UserAgent Client Hints.
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | UserAgent Client Hints will enabled when set true. |
 
+<a id="setuseragentforhosts"></a>
 ## setUserAgentForHosts
 
 ```TypeScript
@@ -4172,8 +4323,9 @@ Set the User-Agent to be used for specified hosts, with a maximum of 20,000 host
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userAgent | string | Yes | The User-Agent string. |
-| hosts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | The hosts to which the User-Agent apply. |
+| hosts | Array&lt;string&gt; | Yes | The hosts to which the User-Agent apply. |
 
+<a id="setuseragentmetadata"></a>
 ## setUserAgentMetadata
 
 ```TypeScript
@@ -4205,6 +4357,7 @@ If the UserAgentMetadata is not found according to the overridden User-Agent but
 | userAgent | string | Yes | The User-Agent string. |
 | metaData | [UserAgentMetadata](arkts-arkweb-webview-useragentmetadata-c.md) | Yes | The UserAgentMetadata for the userAgent. |
 
+<a id="setwebdebuggingaccess"></a>
 ## setWebDebuggingAccess
 
 ```TypeScript
@@ -4235,6 +4388,7 @@ Sets whether to enable web debugging. By default, web debugging is disabled.For 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="setwebdebuggingaccess-1"></a>
 ## setWebDebuggingAccess
 
 ```TypeScript
@@ -4264,6 +4418,7 @@ Enables debugging of web contents.
 | --- | --- |
 | [17100023](../errorcode-webview.md#17100023-port-number-not-allowed) | The port number is not within the allowed range. |
 
+<a id="setwebdestroymode"></a>
 ## setWebDestroyMode
 
 ```TypeScript
@@ -4284,6 +4439,7 @@ Sets the destroy mode of the Web component. The destroy mode of the Web componen
 | --- | --- | --- | --- |
 | mode | [WebDestroyMode](arkts-arkweb-webview-webdestroymode-e.md) | Yes | web destroy mode, default NORMAL_MODE. |
 
+<a id="setwebschemehandler"></a>
 ## setWebSchemeHandler
 
 ```TypeScript
@@ -4314,6 +4470,7 @@ Set web scheme handler for specific scheme. This is only used for related web co
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="slidescroll"></a>
 ## slideScroll
 
 ```TypeScript
@@ -4344,13 +4501,14 @@ Simulates a slide-to-scroll action on the page at the specified velocity.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="startcamera"></a>
 ## startCamera
 
 ```TypeScript
 startCamera(): void
 ```
 
-Enables the camera capture of the current web page. Before using the camera, add the **ohos.permission.CAMERA** permission to **module.json5**. For details about how to add the permission, see [Declaring Permissions in the Configuration File](../../../../security/AccessToken/declare-permissions.md).
+Enables the camera capture of the current web page. Before using the camera, add the **ohos.permission.CAMERA** permission to **module.json5**. For details about how to add the permission, see [Declaring Permissions in the Configuration File](docroot://security/AccessToken/declare-permissions.md).
 
 **Since:** 12
 
@@ -4366,6 +4524,7 @@ Enables the camera capture of the current web page. Before using the camera, add
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="startdownload"></a>
 ## startDownload
 
 ```TypeScript
@@ -4396,6 +4555,7 @@ Start a download.
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 11 - 21 |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 11 - 21 |
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -4418,6 +4578,7 @@ Stops the current load.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="stopallmedia"></a>
 ## stopAllMedia
 
 ```TypeScript
@@ -4440,6 +4601,7 @@ Stops all audio and video on a web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="stopcamera"></a>
 ## stopCamera
 
 ```TypeScript
@@ -4462,6 +4624,7 @@ Stops the camera capture of the current web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="stopmicrophone"></a>
 ## stopMicrophone
 
 ```TypeScript
@@ -4482,6 +4645,7 @@ Stops microphone capture on the current web page.
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The WebviewController must be associated with a Web component. |
 
+<a id="storewebarchive"></a>
 ## storeWebArchive
 
 ```TypeScript
@@ -4509,7 +4673,7 @@ Stores the current page as a web archive.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | a promise resolved after the web archive has been stored. The parameter will either be the filename under which the file was stored, or empty if storing the file failed. |
+| Promise&lt;string&gt; | a promise resolved after the web archive has been stored. The parameter will either be the filename under which the file was stored, or empty if storing the file failed. |
 
 **Error codes:**
 
@@ -4519,6 +4683,7 @@ Stores the current page as a web archive.
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [17100003](../errorcode-webview.md#17100003-incorrect-resource-path) | Invalid resource path or file type. |
 
+<a id="storewebarchive-1"></a>
 ## storeWebArchive
 
 ```TypeScript
@@ -4541,7 +4706,7 @@ Stores the current page as a web archive.
 | --- | --- | --- | --- |
 | baseName | string | Yes | Where the generated offline webpage is stored, This value cannot be null. |
 | autoName | boolean | Yes | Decide whether to automatically generate the file name. If false, it is stored by the file name of baseName. If true, the file name is automatically generated based on the current URL and stored in the file directory of baseName. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | called after the web archive has been stored. The parameter will either be the filename under which the file was stored,or empty if storing the file failed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | called after the web archive has been stored. The parameter will either be the filename under which the file was stored,or empty if storing the file failed. |
 
 **Error codes:**
 
@@ -4551,6 +4716,7 @@ Stores the current page as a web archive.
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [17100003](../errorcode-webview.md#17100003-incorrect-resource-path) | Invalid resource path or file type. |
 
+<a id="terminaterenderprocess"></a>
 ## terminateRenderProcess
 
 ```TypeScript
@@ -4577,6 +4743,7 @@ Terminates this render process.Calling this API will destroy the associated rend
 | --- | --- |
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 
+<a id="trimmemorybypressurelevel"></a>
 ## trimMemoryByPressureLevel
 
 ```TypeScript
@@ -4605,6 +4772,7 @@ Trim memory by different memory pressure level.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Parameter string is too long.<br>3.Parameter verification failed. |
 
+<a id="waitforattached"></a>
 ## waitForAttached
 
 ```TypeScript
@@ -4629,8 +4797,9 @@ Asynchronously waits for the WebViewController to be attached to the Web compone
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ControllerAttachState> | Promise used to return the state of attach. |
+| Promise&lt;ControllerAttachState&gt; | Promise used to return the state of attach. |
 
+<a id="warmupserviceworker"></a>
 ## warmupServiceWorker
 
 ```TypeScript
@@ -4660,6 +4829,7 @@ Warmup the registered service worker associated the url.
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 12 - 21 |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. The webpage corresponding to the URL is invalid, or the URL length exceeds 2048.<br>**Applicable version:** 12 - 21 |
 
+<a id="webpagesnapshot"></a>
 ## webPageSnapshot
 
 ```TypeScript
@@ -4688,8 +4858,9 @@ Obtains the full drawing result of the web page.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | [SnapshotInfo](arkts-arkweb-webview-snapshotinfo-i.md) | Yes | Information for obtaining the full drawing result. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SnapshotResult> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SnapshotResult&gt; | Yes | Callback used to return the result. |
 
+<a id="zoom"></a>
 ## zoom
 
 ```TypeScript
@@ -4720,6 +4891,7 @@ Zooms in or out of this web page. This API is effective only when [zoomAccess](@
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [17100004](../errorcode-webview.md#17100004-function-not-enabled) | Function not enabled. |
 
+<a id="zoomin"></a>
 ## zoomIn
 
 ```TypeScript
@@ -4743,6 +4915,7 @@ Zooms in on this web page by 25%.
 | [17100001](../errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error.The WebviewController must be associated with a Web component. |
 | [17100004](../errorcode-webview.md#17100004-function-not-enabled) | Function not enabled. |
 
+<a id="zoomout"></a>
 ## zoomOut
 
 ```TypeScript

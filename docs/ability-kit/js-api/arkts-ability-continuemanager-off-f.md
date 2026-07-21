@@ -6,6 +6,7 @@
 import { continueManager } from '@kit.AbilityKit';
 ```
 
+<a id="off"></a>
 ## off('prepareContinue')
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unregisters the callback used to obtain the quick start result when an applicati
 | --- | --- | --- | --- |
 | type | 'prepareContinue' | Yes | The value is fixed at **prepareContinue**. |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ContinueResultInfo> | No | Callback used to return the result. If the callback is unregistered, **err** is undefined, and **ContinueResultInfo** is the callback unregistration result. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ContinueResultInfo&gt; | No | Callback used to return the result. If the callback is unregistered, **err** is undefined, and **ContinueResultInfo** is the callback unregistration result. Otherwise,**err** is an error object. |
 
 **Error codes:**
 

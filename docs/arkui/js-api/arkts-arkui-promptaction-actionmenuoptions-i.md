@@ -29,14 +29,7 @@ buttons: [
 
 Array of menu item buttons.The array structure is **{text:'button', color: '\#666666'}**.Up to six buttons are supported. If there are more than six buttons, only the first six buttons will be displayed.
 
-**Type:** [
-            Button,
-            Button?,
-            Button?,
-            Button?,
-            Button?,
-            Button?
-        ]
+**Type:** [             Button,             Button?,             Button?,             Button?,             Button?,             Button?         ]
 
 **Since:** 9
 
@@ -154,7 +147,7 @@ onDidAppear?: Callback<void>
 
 Callback invoked after the menu appears.<br>**NOTE**<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.<br>2. When a menu is dismissed immediately after being shown, **onWillDisappear** may be triggered before **onDidAppear**.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 20
 
@@ -174,7 +167,7 @@ onDidDisappear?: Callback<void>
 
 Callback invoked after the menu disappears.<br>**NOTE**<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 20
 
@@ -194,7 +187,7 @@ onWillAppear?: Callback<void>
 
 Callback invoked before the menu appearance animation.<br>**NOTE**<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 20
 
@@ -214,7 +207,7 @@ onWillDisappear?: Callback<void>
 
 Callback invoked before the menu disappearance animation.<br>**NOTE**<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > onWillDisappear > onDidDisappear.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 20
 
@@ -276,7 +269,7 @@ title?: string | Resource
 
 Title of the dialog box.<br>Default value: **undefined**, which indicates that no title is not displayed by default.
 
-**Type:** string | Resource
+**Type:** string \| Resource
 
 **Since:** 9
 

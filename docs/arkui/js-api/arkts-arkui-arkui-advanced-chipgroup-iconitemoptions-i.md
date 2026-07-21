@@ -108,7 +108,7 @@ Callback of custom builder items.
 
 If the value is **undefined**, the event is unbound.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 

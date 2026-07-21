@@ -32,7 +32,7 @@ Click type. The chip acts as a regular clickable component, without reporting an
 CHECKED = 1
 ```
 
-Checkbox type. The chip reports its selected state to accessibility services using the [accessibilityChecked](../arkts-components/arkts-arkui-common-commonmethod-c.md#accessibilitychecked-1) attribute. Use this type for multi-select scenarios, such as tag filtering and attribute selection.
+Checkbox type. The chip reports its selected state to accessibility services using the [accessibilityChecked](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilitychecked-1) attribute. Use this type for multi-select scenarios, such as tag filtering and attribute selection.
 
 **Since:** 14
 
@@ -50,7 +50,7 @@ Checkbox type. The chip reports its selected state to accessibility services usi
 SELECTED = 2
 ```
 
-Radio type. The chip reports its selected state to accessibility services using the [accessibilitySelected](../arkts-components/arkts-arkui-common-commonmethod-c.md#accessibilityselected-1) attribute. Use this type for single-select scenarios, such as navigation bar tabs and radio buttons.
+Radio type. The chip reports its selected state to accessibility services using the [accessibilitySelected](../arkts-components/arkts-arkui-commonmethod-c.md#accessibilityselected-1) attribute. Use this type for single-select scenarios, such as navigation bar tabs and radio buttons.
 
 **Since:** 14
 

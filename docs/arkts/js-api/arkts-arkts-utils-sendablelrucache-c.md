@@ -16,6 +16,7 @@ Object used for store least recently used sendable Object.
 import { ArkTSUtils } from '@kit.ArkTS';
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -32,6 +33,7 @@ Clear all key-value pairs from the SendableLruCache.
 
 **System capability:** SystemCapability.Utils.Lang
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -54,6 +56,7 @@ Default constructor.
 | --- | --- | --- | --- |
 | capacity | number | No | The capacity of the SendableLruCache. |
 
+<a id="contains"></a>
 ## contains
 
 ```TypeScript
@@ -82,6 +85,7 @@ Check whether the given key exists in the SendableLruCache. If exists, returns t
 | --- | --- |
 | boolean | The result of the checked. |
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -102,8 +106,9 @@ Returns an iterable of key-value pairs for each element in the SendableLruCache.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | A new iterable iterator object. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | A new iterable iterator object. |
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -132,6 +137,7 @@ Get the value associated with a specified key in the SendableLruCache.
 | --- | --- |
 | V | The value associated with the key if the specified key is present;returns undefined otherwise. |
 
+<a id="getcapacity"></a>
 ## getCapacity
 
 ```TypeScript
@@ -154,6 +160,7 @@ Get the Capacity of the SendableLruCache.
 | --- | --- |
 | number | The Capacity of the SendableLruCache. |
 
+<a id="getcreatecount"></a>
 ## getCreateCount
 
 ```TypeScript
@@ -176,6 +183,7 @@ Get the number of times createDefault in the SendableLruCache.
 | --- | --- |
 | number | The number of times createDefault. |
 
+<a id="getmatchcount"></a>
 ## getMatchCount
 
 ```TypeScript
@@ -198,6 +206,7 @@ Get the number of times that the queried values are matched in the SendableLruCa
 | --- | --- |
 | number | The number of times that the queried values are matched. |
 
+<a id="getmisscount"></a>
 ## getMissCount
 
 ```TypeScript
@@ -220,6 +229,7 @@ Get the number of times that the queried values are not matched in the SendableL
 | --- | --- |
 | number | The number of times that the queried values are unmatched. |
 
+<a id="getputcount"></a>
 ## getPutCount
 
 ```TypeScript
@@ -242,6 +252,7 @@ Get the number of times that values are added to SendableLruCache.
 | --- | --- |
 | number | The number of times that values are added. |
 
+<a id="getremovecount"></a>
 ## getRemoveCount
 
 ```TypeScript
@@ -264,6 +275,7 @@ Get the number of times that values are removed from the SendableLruCache.
 | --- | --- |
 | number | The number of times that values are removed. |
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -286,6 +298,7 @@ Checks whether the SendableLruCache is empty.
 | --- | --- |
 | boolean | true if the SendableLruCache is empty, otherwise false. |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -308,6 +321,7 @@ Returns a list of all keys in the SendableLruCache.
 | --- | --- |
 | K[] | An array of all keys. |
 
+<a id="put"></a>
 ## put
 
 ```TypeScript
@@ -337,6 +351,7 @@ Adds a key-value pair to the SendableLruCache.
 | --- | --- |
 | V | The value associated with the added key or the original value if the key to add already exists. |
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -365,6 +380,7 @@ Remove a specified key and its associated value from the SendableLruCache.
 | --- | --- |
 | V | The deleted value or undefined. |
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -387,6 +403,7 @@ Return the string representation of the object.The returned string format is: Se
 | --- | --- |
 | string | A new string contains all elements. |
 
+<a id="updatecapacity"></a>
 ## updateCapacity
 
 ```TypeScript
@@ -409,6 +426,7 @@ Update the capacity of the SendableLruCache.
 | --- | --- | --- | --- |
 | newCapacity | number | Yes | The new capacity of the SendableLruCache. |
 
+<a id="values"></a>
 ## values
 
 ```TypeScript

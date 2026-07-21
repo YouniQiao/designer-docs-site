@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="isusergranted"></a>
 ## isUserGranted
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether the **Allow access to notifications on this device** switch is to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that this feature is enabled, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that this feature is enabled, and **false** indicates the opposite. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { zlib } from '@kit.BasicServicesKit';
 ```
 
+<a id="getoriginalsize"></a>
 ## getOriginalSize
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the original size of a compressed file. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise object, which returns the original size of the compressed file, in bytes. |
+| Promise&lt;number&gt; | Promise object, which returns the original size of the compressed file, in bytes. |
 
 **Error codes:**
 

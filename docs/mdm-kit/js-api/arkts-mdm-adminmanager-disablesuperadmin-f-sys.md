@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="disablesuperadmin"></a>
 ## disableSuperAdmin
 
 ```TypeScript
@@ -30,8 +31,8 @@ Disables a super device administrator application based on **bundleName**. This 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | Yes | Bundle name of the super device administrator application to disable. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| bundleName | String | Yes | Bundle name of the super device administrator application to disable. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ adminManager.disableSuperAdmin(bundleName, (err) => {
 ```
 
 
+<a id="disablesuperadmin-1"></a>
 ## disableSuperAdmin
 
 ```TypeScript
@@ -86,13 +88,13 @@ Disables a super device administrator application based on **bundleName**. This 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | Yes | Bundle name of the super device administrator application to disable. |
+| bundleName | String | Yes | Bundle name of the super device administrator application to disable. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. If the operation fails, an error object will be thrown. |
+| Promise&lt;void&gt; | Promise that returns no value. If the operation fails, an error object will be thrown. |
 
 **Error codes:**
 

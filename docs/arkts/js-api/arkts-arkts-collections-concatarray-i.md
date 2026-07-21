@@ -7,7 +7,7 @@ An array-like object that can be concatenated. This API extends **ISendable**.
 > - This module can be imported only to ArkTS files (with the file name extension .ets).  
 > This section uses the following to identify the use of generics:
 
-- T: type, which can be any of the [sendable data types](../../../../arkts-utils/arkts-sendable.md#sendable-data-types).
+- T: type, which can be any of the [sendable data types](docroot://arkts-utils/arkts-sendable.md#sendable-data-types).
 
 **Inheritance/Implementation:** ConcatArray extends [ISendable](arkts-arkts-collections-isendable-t.md)
 
@@ -23,6 +23,7 @@ An array-like object that can be concatenated. This API extends **ISendable**.
 import { collections } from '@kit.ArkTS';
 ```
 
+<a id="join"></a>
 ## join
 
 ```TypeScript
@@ -51,6 +52,7 @@ Concatenates all elements in this array into a string, with a given separator.
 | --- | --- |
 | string | String obtained. If the array is empty, an empty string is returned. |
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript
@@ -78,7 +80,7 @@ Selects a range of elements in this array to create an array.
 
 | Type | Description |
 | --- | --- |
-| [ConcatArray](../../apis-na/arkts-apis/arkts-na-lib-es5-concatarray-i.md)<T> | New array containing the selected elements. |
+| [ConcatArray](../../apis-na/arkts-apis/arkts-na-lib-es5-concatarray-i.md)&lt;T&gt; | New array containing the selected elements. |
 
 ## index
 

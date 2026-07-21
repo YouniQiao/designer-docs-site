@@ -6,6 +6,7 @@
 import { tag } from '@kit.ConnectivityKit';
 ```
 
+<a id="createndefmessage"></a>
 ## createNdefMessage
 
 ```TypeScript
@@ -41,6 +42,7 @@ Creates an NDEF message with raw bytes.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
 
+<a id="createndefmessage-1"></a>
 ## createNdefMessage
 
 ```TypeScript

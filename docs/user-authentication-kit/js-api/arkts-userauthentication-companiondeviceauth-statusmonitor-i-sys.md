@@ -16,6 +16,7 @@ Status monitor object. It is used to listen for or obtain information such as th
 import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="gettemplatestatus"></a>
 ## getTemplateStatus
 
 ```TypeScript
@@ -40,7 +41,7 @@ Obtains the status of the companion device template. This API is used to query t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<TemplateStatus[]> | Promise used to return the status list of all templates of the current user. The status of each template contains the template ID, validity, and device information. If the operation fails, an error code is returned. |
+| Promise&lt;TemplateStatus[]&gt; | Promise used to return the status list of all templates of the current user. The status of each template contains the template ID, validity, and device information. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ statusMonitor.getTemplateStatus()
 
 ```
 
+<a id="offavailabledevicechange"></a>
 ## offAvailableDeviceChange
 
 ```TypeScript
@@ -117,6 +119,7 @@ try {
 
 ```
 
+<a id="offcontinuousauthchange"></a>
 ## offContinuousAuthChange
 
 ```TypeScript
@@ -178,6 +181,7 @@ try {
 
 ```
 
+<a id="offtemplatechange"></a>
 ## offTemplateChange
 
 ```TypeScript
@@ -230,6 +234,7 @@ try {
 
 ```
 
+<a id="onavailabledevicechange"></a>
 ## onAvailableDeviceChange
 
 ```TypeScript
@@ -281,6 +286,7 @@ try {
 
 ```
 
+<a id="oncontinuousauthchange"></a>
 ## onContinuousAuthChange
 
 ```TypeScript
@@ -343,6 +349,7 @@ try {
 
 ```
 
+<a id="ontemplatechange"></a>
 ## onTemplateChange
 
 ```TypeScript

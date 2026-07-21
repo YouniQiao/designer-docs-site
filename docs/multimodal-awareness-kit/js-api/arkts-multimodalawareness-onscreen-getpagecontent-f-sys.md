@@ -6,6 +6,7 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="getpagecontent"></a>
 ## getPageContent
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the onscreen content when a window is displayed on the screen.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PageContent> | Indicates the promise which carries retrieved page content |
+| Promise&lt;PageContent&gt; | Indicates the promise which carries retrieved page content |
 
 **Error codes:**
 

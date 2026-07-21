@@ -2,7 +2,7 @@
 
 Enumerates the signing and signature verification parameters, which can be set by using [setSignSpec](arkts-cryptoarchitecture-cryptoframework-sign-i.md#setsignspec-1) and [setVerifySpec](arkts-cryptoarchitecture-cryptoframework-verify-i.md#setverifyspec-1), and obtained by using [getSignSpec](arkts-cryptoarchitecture-cryptoframework-sign-i.md#getsignspec-1) and [getVerifySpec](arkts-cryptoarchitecture-cryptoframework-verify-i.md#getverifyspec-1).
 
-Currently, only RSA and SM2 are supported. Since API version 11, the **SM2_USER_ID_UINT8ARR** parameter is supported. For details, see [Signing and Signature Verification Overview and Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-sign-sig-verify-overview.md).
+Currently, only RSA and SM2 are supported. Since API version 11, the **SM2_USER_ID_UINT8ARR** parameter is supported. For details, see [Signing and Signature Verification Overview and Algorithm Specifications](docroot://security/CryptoArchitectureKit/crypto-sign-sig-verify-overview.md).
 
 **Since:** 10
 

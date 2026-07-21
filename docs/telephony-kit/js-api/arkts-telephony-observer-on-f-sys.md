@@ -6,6 +6,7 @@
 import { observer } from '@kit.TelephonyKit';
 ```
 
+<a id="on"></a>
 ## on('cellInfoChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Callback when the cell information corresponding to the default sim card is upda
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cellInfoChange' | Yes | Event type. Indicates the cellInfoChange event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<CellInformation>> | Yes | Indicates the callback for getting an array of instances of the classes derived from {@link CellInformation}. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;CellInformation&gt;&gt; | Yes | Indicates the callback for getting an array of instances of the classes derived from {@link CellInformation}. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ observer.on('cellInfoChange', (data: Array<radio.CellInformation>) => {
 ```
 
 
+<a id="on-1"></a>
 ## on('cellInfoChange')
 
 ```TypeScript
@@ -79,7 +81,7 @@ Callback when the cell information corresponding to a monitored {@code slotId} i
 | --- | --- | --- | --- |
 | type | 'cellInfoChange' | Yes | Event type. Indicates the cellInfoChange event to be subscribed to. |
 | options | [ObserverOptions](arkts-telephony-observer-observeroptions-i.md) | Yes | Indicates the options for observer. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<CellInformation>> | Yes | Indicates the callback for getting an array of instances of the classes derived from {@link CellInformation}. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;CellInformation&gt;&gt; | Yes | Indicates the callback for getting an array of instances of the classes derived from {@link CellInformation}. |
 
 **Error codes:**
 

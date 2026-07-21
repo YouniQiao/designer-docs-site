@@ -1,5 +1,6 @@
 # getTotalBytes
 
+<a id="gettotalbytes"></a>
 ## getTotalBytes
 
 ```TypeScript
@@ -23,7 +24,7 @@ Obtains the total size of the specified file system, in bytes. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the file system. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the total size obtained, in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the total size obtained, in bytes. |
 
 **Example**
 
@@ -43,6 +44,7 @@ statfs.getTotalBytes(path, (err: BusinessError, totalBytes:Number) => {
 ```
 
 
+<a id="gettotalbytes-1"></a>
 ## getTotalBytes
 
 ```TypeScript
@@ -71,7 +73,7 @@ Obtains the total size of the specified file system, in byte. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the total size obtained, in bytes. |
+| Promise&lt;number&gt; | Promise used to return the total size obtained, in bytes. |
 
 **Example**
 

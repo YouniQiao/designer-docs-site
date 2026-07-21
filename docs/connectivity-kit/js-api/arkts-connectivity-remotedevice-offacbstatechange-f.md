@@ -6,6 +6,7 @@
 import { remoteDevice } from '@kit.ConnectivityKit';
 ```
 
+<a id="offacbstatechange"></a>
 ## offAcbStateChange
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unsubscribes from the NearLink ACB connection status change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<AcbStateParam> | No | Callback of the event to be listened to. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;AcbStateParam&gt; | No | Callback of the event to be listened to. |
 
 **Error codes:**
 

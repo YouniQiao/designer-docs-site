@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="generatekey"></a>
 ## generateKey
 
 ```TypeScript
@@ -18,7 +19,7 @@ Generates a key. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** generateKeyItem(keyAlias:
+**Substitutes:** [generateKeyItem(keyAlias:](arkts-universalkeystore-huks-generatekeyitem-f.md#generatekeyitem-1)
 
 <!--Device-huks-function generateKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void--><!--Device-huks-function generateKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void-End-->
 
@@ -30,7 +31,7 @@ Generates a key. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key. The value can contain up to 128 bytes and should not include sensitive data such as personal information. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Tags required for generating the key. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HuksResult> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the obtained **HuksResult**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HuksResult&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the obtained **HuksResult**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -71,6 +72,7 @@ huks.generateKey(keyAlias, options, (err, data) => {
 ```
 
 
+<a id="generatekey-1"></a>
 ## generateKey
 
 ```TypeScript
@@ -83,7 +85,7 @@ Generates a key. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** generateKeyItem(keyAlias:
+**Substitutes:** [generateKeyItem(keyAlias:](arkts-universalkeystore-huks-generatekeyitem-f.md#generatekeyitem-1)
 
 <!--Device-huks-function generateKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>--><!--Device-huks-function generateKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>-End-->
 
@@ -100,7 +102,7 @@ Generates a key. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksResult> | Promise that returns **HuksResult**. |
+| Promise&lt;HuksResult&gt; | Promise that returns **HuksResult**. |
 
 **Example**
 

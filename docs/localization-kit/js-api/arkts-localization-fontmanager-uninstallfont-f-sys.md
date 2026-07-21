@@ -6,6 +6,7 @@
 import { fontManager } from '@kit.LocalizationKit';
 ```
 
+<a id="uninstallfont"></a>
 ## uninstallFont
 
 ```TypeScript
@@ -34,7 +35,7 @@ Uninstalls a font by name. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. The value **0** indicates that the uninstallation is successful, and any other value indicates that the uninstallation has failed. |
+| Promise&lt;number&gt; | Promise used to return the result. The value **0** indicates that the uninstallation is successful, and any other value indicates that the uninstallation has failed. |
 
 **Error codes:**
 

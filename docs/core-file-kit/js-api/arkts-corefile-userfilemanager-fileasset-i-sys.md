@@ -20,6 +20,7 @@ Provides APIs for encapsulating file asset attributes.
 import { userFileManager } from '@kit.CoreFileKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -45,7 +46,7 @@ Closes a file. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fd | number | Yes | File descriptor of the file to close. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -80,6 +81,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -110,7 +112,7 @@ Closes this file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -140,6 +142,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="commitmodify"></a>
 ## commitModify
 
 ```TypeScript
@@ -166,7 +169,7 @@ Commits the modification on the file metadata to the database. This API uses an 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -202,6 +205,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="commitmodify-1"></a>
 ## commitModify
 
 ```TypeScript
@@ -228,7 +232,7 @@ Commits the modification on the file metadata to the database. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -263,6 +267,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="favorite"></a>
 ## favorite
 
 ```TypeScript
@@ -290,7 +295,7 @@ Favorites or unfavorites a file. This API uses an asynchronous callback to retur
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isFavorite | boolean | Yes | Whether to favorite or unfavorite the file. The value **true** means to favorite the file; the value **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -319,6 +324,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="favorite-1"></a>
 ## favorite
 
 ```TypeScript
@@ -351,7 +357,7 @@ Favorites or unfavorites this file asset. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -379,6 +385,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -438,6 +445,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getexif"></a>
 ## getExif
 
 ```TypeScript
@@ -510,7 +518,7 @@ For details about the EXIF tags, see [image.PropertyKey](../../apis-image-kit/ar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback that returns the EXIF data, in JSON strings. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback that returns the EXIF data, in JSON strings. |
 
 **Error codes:**
 
@@ -559,6 +567,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getexif-1"></a>
 ## getExif
 
 ```TypeScript
@@ -631,7 +640,7 @@ For details about the EXIF tags, see [image.PropertyKey](../../apis-image-kit/ar
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise that returns the EXIF data, in JSON strings. |
+| Promise&lt;string&gt; | Promise that returns the EXIF data, in JSON strings. |
 
 **Error codes:**
 
@@ -670,6 +679,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getthumbnail"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -696,7 +706,7 @@ Obtains the thumbnail of a file. This API uses an asynchronous callback to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return the PixelMap of the thumbnail. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return the PixelMap of the thumbnail. |
 
 **Example**
 
@@ -726,6 +736,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getthumbnail-1"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -753,7 +764,7 @@ Obtains the file thumbnail of the given size. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | size | image.Size | Yes | Size of the thumbnail. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return the PixelMap of the thumbnail. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return the PixelMap of the thumbnail. |
 
 **Example**
 
@@ -785,6 +796,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="getthumbnail-2"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -817,7 +829,7 @@ Obtains the file thumbnail of the given size. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise that returns the PixelMap of the thumbnail. |
+| Promise&lt;image.PixelMap&gt; | Promise that returns the PixelMap of the thumbnail. |
 
 **Example**
 
@@ -848,6 +860,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="open"></a>
 ## open
 
 ```TypeScript
@@ -880,7 +893,7 @@ Opens this file asset. This API uses an asynchronous callback to return the resu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | string | Yes | Mode of opening the file, for example, **'r'** (read-only), **'w'** (write-only), and **'rw'** (read-write). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the file descriptor of the file opened. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the file descriptor of the file opened. |
 
 **Example**
 
@@ -903,6 +916,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="open-1"></a>
 ## open
 
 ```TypeScript
@@ -940,7 +954,7 @@ Opens this file asset. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise that returns the file descriptor of the file opened. |
+| Promise&lt;number&gt; | Promise that returns the file descriptor of the file opened. |
 
 **Example**
 
@@ -966,6 +980,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -1019,6 +1034,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="sethidden"></a>
 ## setHidden
 
 ```TypeScript
@@ -1048,7 +1064,7 @@ The private files set to hidden state are located in the private album (in hidde
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | hiddenState | boolean | Yes | Whether to hide the file. The value **true** means to hide the file; the value **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -1084,6 +1100,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="sethidden-1"></a>
 ## setHidden
 
 ```TypeScript
@@ -1118,7 +1135,7 @@ The private files set to hidden state are located in the private album (in hidde
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1156,6 +1173,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="setusercomment"></a>
 ## setUserComment
 
 ```TypeScript
@@ -1187,7 +1205,7 @@ Sets user comment information of an image or video. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userComment | string | Yes | User comment information to set, which cannot exceed 140 characters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -1228,6 +1246,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="setusercomment-1"></a>
 ## setUserComment
 
 ```TypeScript
@@ -1264,7 +1283,7 @@ Sets user comment information of an image or video. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1349,7 +1368,7 @@ Type of the file.
 readonly uri: string
 ```
 
-Media asset URI, for example, **file://media/Photo/1/IMG_datetime_0001/displayName.jpg**. For details, see [Media File URI](../../../../file-management/user-file-uri-intro.md#media-file-uri).
+Media asset URI, for example, **file://media/Photo/1/IMG_datetime_0001/displayName.jpg**. For details, see [Media File URI](docroot://file-management/user-file-uri-intro.md#media-file-uri).
 
 **Type:** string
 

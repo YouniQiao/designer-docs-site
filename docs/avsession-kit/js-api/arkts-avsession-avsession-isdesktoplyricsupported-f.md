@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="isdesktoplyricsupported"></a>
 ## isDesktopLyricSupported
 
 ```TypeScript
@@ -26,7 +27,7 @@ Whether desktop lyric feature is supported.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - result returned to indicate desktop lyric is supported. |
+| Promise&lt;boolean&gt; | - result returned to indicate desktop lyric is supported. |
 
 **Error codes:**
 

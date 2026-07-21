@@ -22,6 +22,7 @@ Provides APIs to manage albums.
 import { userFileManager } from '@kit.CoreFileKit';
 ```
 
+<a id="addphotoassets"></a>
 ## addPhotoAssets
 
 ```TypeScript
@@ -48,8 +49,8 @@ Adds image and video assets to an album. Before the operation, ensure that the i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FileAsset> | Yes | Array of the image and video assets to add. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| assets | Array&lt;FileAsset&gt; | Yes | Array of the image and video assets to add. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -90,6 +91,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="addphotoassets-1"></a>
 ## addPhotoAssets
 
 ```TypeScript
@@ -116,13 +118,13 @@ Adds image and video assets to an album. Before the operation, ensure that the i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FileAsset> | Yes | Array of the image and video assets to add. |
+| assets | Array&lt;FileAsset&gt; | Yes | Array of the image and video assets to add. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -162,6 +164,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="commitmodify"></a>
 ## commitModify
 
 ```TypeScript
@@ -188,7 +191,7 @@ Commits the modification on the album attributes to the database. This API uses 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Example**
 
@@ -217,6 +220,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="commitmodify-1"></a>
 ## commitModify
 
 ```TypeScript
@@ -243,7 +247,7 @@ Commits the modification on the album attributes to the database. This API uses 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -275,6 +279,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="deletephotoassets"></a>
 ## deletePhotoAssets
 
 ```TypeScript
@@ -306,8 +311,8 @@ Deletes image or video assets from the recycle bin. Before the operation, ensure
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FileAsset> | Yes | Array of the image or video assets to delete. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| assets | Array&lt;FileAsset&gt; | Yes | Array of the image or video assets to delete. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -348,6 +353,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="deletephotoassets-1"></a>
 ## deletePhotoAssets
 
 ```TypeScript
@@ -379,13 +385,13 @@ Deletes image or video assets from the recycle bin. Before the operation, ensure
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FileAsset> | Yes | Array of the image or video assets to delete. |
+| assets | Array&lt;FileAsset&gt; | Yes | Array of the image or video assets to delete. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -425,6 +431,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="recoverphotoassets"></a>
 ## recoverPhotoAssets
 
 ```TypeScript
@@ -451,8 +458,8 @@ Recovers image or video assets from the recycle bin. Before the operation, ensur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FileAsset> | Yes | Array of the image or video assets to recover. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| assets | Array&lt;FileAsset&gt; | Yes | Array of the image or video assets to recover. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -493,6 +500,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="recoverphotoassets-1"></a>
 ## recoverPhotoAssets
 
 ```TypeScript
@@ -519,13 +527,13 @@ Recovers image or video assets from the recycle bin. Before the operation, ensur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FileAsset> | Yes | Array of the image or video assets to recover. |
+| assets | Array&lt;FileAsset&gt; | Yes | Array of the image or video assets to recover. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -565,6 +573,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="removephotoassets"></a>
 ## removePhotoAssets
 
 ```TypeScript
@@ -591,8 +600,8 @@ Removes image and video assets from an album. The album and file resources must 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FileAsset> | Yes | Array of the image and video assets to remove. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| assets | Array&lt;FileAsset&gt; | Yes | Array of the image and video assets to remove. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -633,6 +642,7 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
+<a id="removephotoassets-1"></a>
 ## removePhotoAssets
 
 ```TypeScript
@@ -659,13 +669,13 @@ Removes image and video assets from an album. The album and file resources must 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FileAsset> | Yes | Array of the image and video assets to remove. |
+| assets | Array&lt;FileAsset&gt; | Yes | Array of the image and video assets to remove. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

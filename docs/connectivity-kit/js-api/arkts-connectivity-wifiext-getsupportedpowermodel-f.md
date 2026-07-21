@@ -6,6 +6,7 @@
 import { wifiext } from '@kit.ConnectivityKit';
 ```
 
+<a id="getsupportedpowermodel"></a>
 ## getSupportedPowerModel
 
 ```TypeScript
@@ -30,9 +31,10 @@ Obtains the supported power model.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PowerModel>> | Returns the array of supported power model. |
+| Promise&lt;Array&lt;PowerModel&gt;&gt; | Returns the array of supported power model. |
 
 
+<a id="getsupportedpowermodel-1"></a>
 ## getSupportedPowerModel
 
 ```TypeScript
@@ -57,5 +59,5 @@ Obtains the supported power model.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<PowerModel>> | Yes | callback function, no return value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;PowerModel&gt;&gt; | Yes | callback function, no return value. |
 

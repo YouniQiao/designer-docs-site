@@ -6,6 +6,7 @@
 import { systemTimer } from '@kit.BasicServicesKit';
 ```
 
+<a id="createtimer"></a>
 ## createTimer
 
 ```TypeScript
@@ -33,7 +34,7 @@ Creates a timer. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [TimerOptions](arkts-basicservices-systemtimer-timeroptions-i-sys.md) | Yes | Timer initialization options, including the timer type, whether the timer is a repeating timer, interval, and **WantAgent** options. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the timer ID. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the timer ID. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ try {
 ```
 
 
+<a id="createtimer-1"></a>
 ## createTimer
 
 ```TypeScript
@@ -99,7 +101,7 @@ Creates a timer. This API uses a promise to return the timer ID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the timer ID. |
+| Promise&lt;number&gt; | Promise used to return the timer ID. |
 
 **Error codes:**
 

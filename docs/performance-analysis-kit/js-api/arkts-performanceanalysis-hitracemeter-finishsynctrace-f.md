@@ -6,6 +6,7 @@
 import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="finishsynctrace"></a>
 ## finishSyncTrace
 
 ```TypeScript

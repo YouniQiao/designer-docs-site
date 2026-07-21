@@ -1,5 +1,6 @@
 # unregisterApplicationStateObserver (System API)
 
+<a id="unregisterapplicationstateobserver"></a>
 ## unregisterApplicationStateObserver
 
 ```TypeScript
@@ -27,7 +28,7 @@ Unregister application state observer.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | observerId | number | Yes | Indicates the number code of the observer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Represents the specified callback method. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Represents the specified callback method. |
 
 **Example**
 
@@ -49,6 +50,7 @@ appManager.unregisterApplicationStateObserver(observerId, unregisterApplicationS
 ```
 
 
+<a id="unregisterapplicationstateobserver-1"></a>
 ## unregisterApplicationStateObserver
 
 ```TypeScript
@@ -81,7 +83,7 @@ Unregister application state observer.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Example**
 

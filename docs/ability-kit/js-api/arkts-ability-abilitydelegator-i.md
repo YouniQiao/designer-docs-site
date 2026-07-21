@@ -4,7 +4,7 @@ The **AbilityDelegator** module can listen for and manage the lifecycle changes 
 
 > **NOTE**  
 >  
-> The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md).
+> The APIs of this module can be used only in [JsUnit](docroot://application-test/unittest-guidelines.md).
 
 **Since:** 9
 
@@ -12,6 +12,7 @@ The **AbilityDelegator** module can listen for and manage the lifecycle changes 
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="addabilitymonitor"></a>
 ## addAbilityMonitor
 
 ```TypeScript
@@ -33,7 +34,7 @@ Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the **AbilityMonitor** instance is added, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityMonitor** instance is added, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -42,6 +43,7 @@ Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to r
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling AddAbilityMonitor failed. |
 
+<a id="addabilitymonitor-1"></a>
 ## addAbilityMonitor
 
 ```TypeScript
@@ -68,7 +70,7 @@ Adds an **AbilityMonitor** instance. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -77,6 +79,7 @@ Adds an **AbilityMonitor** instance. This API uses a promise to return the resul
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling AddAbilityMonitor failed. |
 
+<a id="addabilitymonitorsync"></a>
 ## addAbilityMonitorSync
 
 ```TypeScript
@@ -106,6 +109,7 @@ Adds an **AbilityMonitor** instance. This API returns the result synchronously. 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling AddAbilityMonitorSync failed. |
 
+<a id="addabilitystagemonitor"></a>
 ## addAbilityStageMonitor
 
 ```TypeScript
@@ -127,7 +131,7 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance is added, **err** is undefined. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance is added, **err** is undefined. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -136,6 +140,7 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling AddAbilityStageMonitor failed. |
 
+<a id="addabilitystagemonitor-1"></a>
 ## addAbilityStageMonitor
 
 ```TypeScript
@@ -162,7 +167,7 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -171,6 +176,7 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling AddAbilityStageMonitor failed. |
 
+<a id="addabilitystagemonitorsync"></a>
 ## addAbilityStageMonitorSync
 
 ```TypeScript
@@ -200,6 +206,7 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling AddAbilityStageMonitorSync failed. |
 
+<a id="addinteropabilitymonitorsync"></a>
 ## addInteropAbilityMonitorSync
 
 ```TypeScript
@@ -230,6 +237,7 @@ Add an InteropAbilityMonitor object for monitoring the lifecycle state changes o
 | --- | --- |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling AddInteropAbilityMonitorSync failed. |
 
+<a id="doabilitybackground"></a>
 ## doAbilityBackground
 
 ```TypeScript
@@ -251,7 +259,7 @@ Schedules the lifecycle state of an ability to **Background**. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ability | [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md) | Yes | Target ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability lifecycle state is changed to **Background**, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the ability lifecycle state is changed to **Background**, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -260,6 +268,7 @@ Schedules the lifecycle state of an ability to **Background**. This API uses an 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling DoAbilityBackground failed. |
 
+<a id="doabilitybackground-1"></a>
 ## doAbilityBackground
 
 ```TypeScript
@@ -286,7 +295,7 @@ Schedules the lifecycle state of an ability to **Background**. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -295,6 +304,7 @@ Schedules the lifecycle state of an ability to **Background**. This API uses a p
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling DoAbilityBackground failed. |
 
+<a id="doabilityforeground"></a>
 ## doAbilityForeground
 
 ```TypeScript
@@ -316,7 +326,7 @@ Schedules the lifecycle state of an ability to **Foreground**. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | ability | [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md) | Yes | Target ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability lifecycle state is changed to **Foreground**, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the ability lifecycle state is changed to **Foreground**, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -325,6 +335,7 @@ Schedules the lifecycle state of an ability to **Foreground**. This API uses an 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling DoAbilityForeground failed. |
 
+<a id="doabilityforeground-1"></a>
 ## doAbilityForeground
 
 ```TypeScript
@@ -351,7 +362,7 @@ Schedules the lifecycle state of an ability to **Foreground**. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -360,6 +371,7 @@ Schedules the lifecycle state of an ability to **Foreground**. This API uses a p
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling DoAbilityForeground failed. |
 
+<a id="executeshellcommand"></a>
 ## executeShellCommand
 
 ```TypeScript
@@ -381,8 +393,9 @@ Executes a shell command. This API uses an asynchronous callback to return the r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | cmd | string | Yes | Shell command string. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ShellCmdResult> | Yes | Callback used to return the result. If the shell command is executed, **err** is **undefined** and **data** is the execution result obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ShellCmdResult&gt; | Yes | Callback used to return the result. If the shell command is executed, **err** is **undefined** and **data** is the execution result obtained. Otherwise, **err** is an error object. |
 
+<a id="executeshellcommand-1"></a>
 ## executeShellCommand
 
 ```TypeScript
@@ -405,8 +418,9 @@ Executes a shell command with the timeout period specified. This API uses an asy
 | --- | --- | --- | --- |
 | cmd | string | Yes | Shell command string. |
 | timeoutSecs | number | Yes | Command timeout period, in seconds. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ShellCmdResult> | Yes | Callback used to return the result. If the shell command is executed, **err** is **undefined** and **data** is the execution result obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ShellCmdResult&gt; | Yes | Callback used to return the result. If the shell command is executed, **err** is **undefined** and **data** is the execution result obtained. Otherwise, **err** is an error object. |
 
+<a id="executeshellcommand-2"></a>
 ## executeShellCommand
 
 ```TypeScript
@@ -434,8 +448,9 @@ Executes a shell command with the timeout period specified. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ShellCmdResult> | Promise used to return a [ShellCmdResult](arkts-ability-shellcmdresult-shellcmdresult-i.md) object. |
+| Promise&lt;ShellCmdResult&gt; | Promise used to return a [ShellCmdResult](arkts-ability-shellcmdresult-shellcmdresult-i.md) object. |
 
+<a id="finishtest"></a>
 ## finishTest
 
 ```TypeScript
@@ -458,7 +473,7 @@ Finishes the test and prints log information to the unit test console. This API 
 | --- | --- | --- | --- |
 | msg | string | Yes | Log string. |
 | code | number | Yes | Log code. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the test finishes and the log information is printed to the unit test console, **err** is undefined. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the test finishes and the log information is printed to the unit test console, **err** is undefined. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -467,6 +482,7 @@ Finishes the test and prints log information to the unit test console. This API 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling FinishTest failed. |
 
+<a id="finishtest-1"></a>
 ## finishTest
 
 ```TypeScript
@@ -494,7 +510,7 @@ Finishes the test and prints log information to the unit test console. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -503,6 +519,7 @@ Finishes the test and prints log information to the unit test console. This API 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling FinishTest failed. |
 
+<a id="getabilitystate"></a>
 ## getAbilityState
 
 ```TypeScript
@@ -537,6 +554,7 @@ Obtains the lifecycle state of an ability.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 
+<a id="getappcontext"></a>
 ## getAppContext
 
 ```TypeScript
@@ -559,6 +577,7 @@ Obtains the application context.
 | --- | --- |
 | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | [Context](arkts-ability-context-context-depr-i.md). |
 
+<a id="getcurrenttopability"></a>
 ## getCurrentTopAbility
 
 ```TypeScript
@@ -579,7 +598,7 @@ Obtains the top ability of this application. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<UIAbility> | Yes | Callback used to return the result. If the top ability is obtained,**err** is **undefined** and **data** is the **Ability** instance obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;UIAbility&gt; | Yes | Callback used to return the result. If the top ability is obtained,**err** is **undefined** and **data** is the **Ability** instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -588,6 +607,7 @@ Obtains the top ability of this application. This API uses an asynchronous callb
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling GetCurrentTopAbility failed. |
 
+<a id="getcurrenttopability-1"></a>
 ## getCurrentTopAbility
 
 ```TypeScript
@@ -608,7 +628,7 @@ Obtains the top ability of this application. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UIAbility> | Promise used to return the top ability. |
+| Promise&lt;UIAbility&gt; | Promise used to return the top ability. |
 
 **Error codes:**
 
@@ -616,6 +636,7 @@ Obtains the top ability of this application. This API uses a promise to return t
 | --- | --- |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling GetCurrentTopAbility failed. |
 
+<a id="print"></a>
 ## print
 
 ```TypeScript
@@ -637,8 +658,9 @@ Prints log information to the unit test console. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | msg | string | Yes | Log string. The value contains a maximum of 10,000 characters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the log information is printed to the unit test console, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the log information is printed to the unit test console, **err** is **undefined**. Otherwise, **err** is an error object. |
 
+<a id="print-1"></a>
 ## print
 
 ```TypeScript
@@ -665,8 +687,9 @@ Prints log information to the unit test console. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="printsync"></a>
 ## printSync
 
 ```TypeScript
@@ -695,6 +718,7 @@ Prints log information to the unit test console.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 
+<a id="removeabilitymonitor"></a>
 ## removeAbilityMonitor
 
 ```TypeScript
@@ -716,7 +740,7 @@ Removes an **AbilityMonitor** instance. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the **AbilityMonitor** instance is removed, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityMonitor** instance is removed, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -725,6 +749,7 @@ Removes an **AbilityMonitor** instance. This API uses an asynchronous callback t
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling RemoveAbilityMonitor failed. |
 
+<a id="removeabilitymonitor-1"></a>
 ## removeAbilityMonitor
 
 ```TypeScript
@@ -751,7 +776,7 @@ Removes an **AbilityMonitor** instance. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -760,6 +785,7 @@ Removes an **AbilityMonitor** instance. This API uses a promise to return the re
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling RemoveAbilityMonitor failed. |
 
+<a id="removeabilitymonitorsync"></a>
 ## removeAbilityMonitorSync
 
 ```TypeScript
@@ -789,6 +815,7 @@ Removes an **AbilityMonitor** instance. This API returns the result synchronousl
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling RemoveAbilityMonitorSync failed. |
 
+<a id="removeabilitystagemonitor"></a>
 ## removeAbilityStageMonitor
 
 ```TypeScript
@@ -810,7 +837,7 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance is removed, **err** is undefined. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance is removed, **err** is undefined. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -819,6 +846,7 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling RemoveAbilityStageMonitor failed. |
 
+<a id="removeabilitystagemonitor-1"></a>
 ## removeAbilityStageMonitor
 
 ```TypeScript
@@ -845,7 +873,7 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -854,6 +882,7 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling RemoveAbilityStageMonitor failed. |
 
+<a id="removeabilitystagemonitorsync"></a>
 ## removeAbilityStageMonitorSync
 
 ```TypeScript
@@ -883,6 +912,7 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling RemoveAbilityStageMonitorSync failed. |
 
+<a id="removeinteropabilitymonitorsync"></a>
 ## removeInteropAbilityMonitorSync
 
 ```TypeScript
@@ -913,6 +943,7 @@ Remove a specified InteropAbilityMonitor object from the application memory.
 | --- | --- |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling RemoveInteropAbilityMonitorSync failed. |
 
+<a id="setmocklist"></a>
 ## setMockList
 
 ```TypeScript
@@ -933,7 +964,7 @@ Sets a list of mock data.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mockList | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string> | Yes | Key-value object of the mock, where **key** is the target path to be replaced and **value** is the path of the mock implementation to be used for the replacement. |
+| mockList | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, string&gt; | Yes | Key-value object of the mock, where **key** is the target path to be replaced and **value** is the path of the mock implementation to be used for the replacement. |
 
 **Error codes:**
 
@@ -942,6 +973,7 @@ Sets a list of mock data.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -963,7 +995,7 @@ Starts an ability. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | **Want** parameter for starting the ability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the ability is started, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -986,6 +1018,7 @@ Starts an ability. This API uses an asynchronous callback to return the result.
 | [16000012](../errorcode-ability.md#16000012-application-under-control) | The application is controlled.<br>**Applicable version:** 10 and later |
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 
+<a id="startability-1"></a>
 ## startAbility
 
 ```TypeScript
@@ -1012,7 +1045,7 @@ Starts an ability. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1035,6 +1068,7 @@ Starts an ability. This API uses a promise to return the result.
 | [16000012](../errorcode-ability.md#16000012-application-under-control) | The application is controlled.<br>**Applicable version:** 10 and later |
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 
+<a id="waitabilitymonitor"></a>
 ## waitAbilityMonitor
 
 ```TypeScript
@@ -1056,7 +1090,7 @@ Waits for the **Ability** instance that matches the **AbilityMonitor** instance 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<UIAbility> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the **Ability** instance obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;UIAbility&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the **Ability** instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1065,6 +1099,7 @@ Waits for the **Ability** instance that matches the **AbilityMonitor** instance 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling WaitAbilityMonitor failed. |
 
+<a id="waitabilitymonitor-1"></a>
 ## waitAbilityMonitor
 
 ```TypeScript
@@ -1087,7 +1122,7 @@ Waits a period of time for the **Ability** instance that matches the **AbilityMo
 | --- | --- | --- | --- |
 | monitor | [AbilityMonitor](../../apis-test-kit/arkts-apis/arkts-test-abilitydelegatorregistry-abilitymonitor-t.md) | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 | timeout | number | Yes | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<UIAbility> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;UIAbility&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1096,6 +1131,7 @@ Waits a period of time for the **Ability** instance that matches the **AbilityMo
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling WaitAbilityMonitor failed. |
 
+<a id="waitabilitymonitor-2"></a>
 ## waitAbilityMonitor
 
 ```TypeScript
@@ -1123,7 +1159,7 @@ Waits a period of time for the **Ability** instance that matches the **AbilityMo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UIAbility> | Promise used to return the **Ability** instance obtained. |
+| Promise&lt;UIAbility&gt; | Promise used to return the **Ability** instance obtained. |
 
 **Error codes:**
 
@@ -1132,6 +1168,7 @@ Waits a period of time for the **Ability** instance that matches the **AbilityMo
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling WaitAbilityMonitor failed. |
 
+<a id="waitabilitystagemonitor"></a>
 ## waitAbilityStageMonitor
 
 ```TypeScript
@@ -1153,7 +1190,7 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityStage> | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AbilityStage&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1162,6 +1199,7 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling WaitAbilityStageMonitor failed. |
 
+<a id="waitabilitystagemonitor-1"></a>
 ## waitAbilityStageMonitor
 
 ```TypeScript
@@ -1184,7 +1222,7 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 | --- | --- | --- | --- |
 | monitor | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 | timeout | number | Yes | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AbilityStage> | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AbilityStage&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1193,6 +1231,7 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-failed-to-call-abilitymonitor-apis-to-listen-for-ability-lifecycle-changes) | Calling WaitAbilityStageMonitor failed. |
 
+<a id="waitabilitystagemonitor-2"></a>
 ## waitAbilityStageMonitor
 
 ```TypeScript
@@ -1220,7 +1259,7 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityStage> | Promise used to return the [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md) instance. |
+| Promise&lt;AbilityStage&gt; | Promise used to return the [AbilityStage](arkts-ability-app-ability-abilitystage-abilitystage-c.md) instance. |
 
 **Error codes:**
 

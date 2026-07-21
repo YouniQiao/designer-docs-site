@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="getvonrstate"></a>
 ## getVoNRState
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get switch state for voice over NR.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<VoNRState> | Yes | Indicates the callback for getVoNRState. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;VoNRState&gt; | Yes | Indicates the callback for getVoNRState. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ call.getVoNRState(slotId, (err: BusinessError, data: call.VoNRState) => {
 ```
 
 
+<a id="getvonrstate-1"></a>
 ## getVoNRState
 
 ```TypeScript
@@ -88,7 +90,7 @@ Get switch state for voice over NR.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<VoNRState> | Returns the VoNR state. |
+| Promise&lt;VoNRState&gt; | Returns the VoNR state. |
 
 **Error codes:**
 

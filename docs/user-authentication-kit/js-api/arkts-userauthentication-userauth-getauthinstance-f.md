@@ -6,6 +6,7 @@
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="getauthinstance"></a>
 ## getAuthInstance
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains an **AuthInstance** instance for user authentication.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| challenge | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Challenge value. It cannot exceed 32 bytes and can be passed in Uint8Array([])format. |
+| challenge | Uint8Array | Yes | Challenge value. It cannot exceed 32 bytes and can be passed in Uint8Array([])format. |
 | authType | [UserAuthType](arkts-userauthentication-userauth-userauthtype-e.md) | Yes | Authentication type. Currently, **FACE** and **FINGERPRINT** are supported. |
 | authTrustLevel | [AuthTrustLevel](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-authtrustlevel-e-sys.md) | Yes | Authentication trust level. |
 

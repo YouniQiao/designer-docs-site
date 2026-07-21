@@ -6,6 +6,7 @@
 import { remoteDevice } from '@kit.ConnectivityKit';
 ```
 
+<a id="offpairingrequest"></a>
 ## offPairingRequest
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribes from pairing request events from remote NearLink devices.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PairingRequestParam> | No | Callback used to listen for the pairing request event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;PairingRequestParam&gt; | No | Callback used to listen for the pairing request event. |
 
 **Error codes:**
 

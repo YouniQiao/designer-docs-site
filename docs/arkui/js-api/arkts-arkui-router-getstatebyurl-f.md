@@ -6,6 +6,7 @@
 import { router } from '@kit.ArkUI';
 ```
 
+<a id="getstatebyurl"></a>
 ## getStateByUrl
 
 ```TypeScript
@@ -17,7 +18,7 @@ Obtains the status information about a page by its URL.
 > **NOTE**  
 >  
 > - Since API version 12, you can use the  
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
+> [getRouter](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
 > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated  
 > with the current UI context.
 
@@ -45,7 +46,7 @@ Obtains the status information about a page by its URL.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<RouterState> | Page routing state. |
+| Array&lt;RouterState&gt; | Page routing state. |
 
 **Example**
 

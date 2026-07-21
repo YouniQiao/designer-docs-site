@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="setvalue"></a>
 ## setValue
 
 ```TypeScript
@@ -35,9 +36,10 @@ Saves a character string name and its value to the database.
 | dataAbilityHelper | [DataAbilityHelper](../../apis-ability-kit/arkts-apis/arkts-ability-dataabilityhelper-dataabilityhelper-i.md) | Yes | Indicates the {@link ohos.aafwk.ability.DataAbilityHelper} used to access the database. |
 | name | string | Yes | Indicates the name of the character string. |
 | value | object | Yes | Indicates the value of the character string. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback of setValue result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback of setValue result. |
 
 
+<a id="setvalue-1"></a>
 ## setValue
 
 ```TypeScript
@@ -72,5 +74,5 @@ Saves a character string name and its value to the database.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the operation is successful; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the operation is successful; returns {@code false} otherwise. |
 

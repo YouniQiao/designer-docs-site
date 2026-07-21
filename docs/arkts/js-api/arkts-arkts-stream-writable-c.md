@@ -14,6 +14,7 @@ Stream to which data can be written. A writable stream allows data to be written
 import { stream } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -37,6 +38,7 @@ let writableStream = new stream.Writable();
 
 ```
 
+<a id="cork"></a>
 ## cork
 
 ```TypeScript
@@ -78,6 +80,7 @@ console.info("Writable cork result", result); // Writable cork result true
 
 ```
 
+<a id="doinitialize"></a>
 ## doInitialize
 
 ```TypeScript
@@ -98,7 +101,7 @@ You need to implement this API but do not call it directly. It is automatically 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Callback function. |
+| callback | Function | Yes | Callback function. |
 
 **Example**
 
@@ -118,6 +121,7 @@ new MyWritable();
 
 ```
 
+<a id="dowrite"></a>
 ## doWrite
 
 ```TypeScript
@@ -140,7 +144,7 @@ A data write API. You need to implement this API but do not call it directly. Th
 | --- | --- | --- | --- |
 | chunk | string \| Uint8Array | Yes | Data to write. |
 | encoding | string | Yes | Encoding format. Currently, **'utf8'**, **'gb18030'**, **'gbk'**, and **'gb2312'** are supported. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Callback function. |
+| callback | Function | Yes | Callback function. |
 
 **Example**
 
@@ -161,6 +165,7 @@ writableStream.write('data', 'utf8');
 
 ```
 
+<a id="dowritev"></a>
 ## doWritev
 
 ```TypeScript
@@ -182,7 +187,7 @@ A batch data write API. You need to implement this API but do not call it direct
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | chunks | string[] \| Uint8Array[] | Yes | Data arrays to write in batches. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Callback function. |
+| callback | Function | Yes | Callback function. |
 
 **Example**
 
@@ -208,6 +213,7 @@ writableStream.end();
 
 ```
 
+<a id="end"></a>
 ## end
 
 ```TypeScript
@@ -230,7 +236,7 @@ Ends the writing process in a writable stream. If the value of **writableCorked*
 | --- | --- | --- | --- |
 | chunk | string \| Uint8Array | No | Data to write. The default value is **undefined**. |
 | encoding | string | No | Encoding format. The default value is **'utf8'**. Currently, **'utf8'**,**'gb18030'**, **'gbk'**, and **'gb2312'** are supported. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | No | Callback used to return the result. |
+| callback | Function | No | Callback used to return the result. |
 
 **Return value:**
 
@@ -268,6 +274,7 @@ writableStream.end('finish', 'utf8', () => {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -289,7 +296,7 @@ Unregisters an event processing callback used to listen for different events on 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | string | Yes | Type of the event. The following events are supported: |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<emitter.EventData> | No | Callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;emitter.EventData&gt; | No | Callback function. |
 
 **Example**
 
@@ -319,6 +326,7 @@ setTimeout(() => {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -340,7 +348,7 @@ Registers an event processing callback to listen for different events on the wri
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | string | Yes | Type of the event. The following events are supported: |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<emitter.EventData> | Yes | Callback function used to return the event data. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;emitter.EventData&gt; | Yes | Callback function used to return the event data. |
 
 **Example**
 
@@ -365,6 +373,7 @@ writable.write('hello', 'utf8', () => {
 
 ```
 
+<a id="setdefaultencoding"></a>
 ## setDefaultEncoding
 
 ```TypeScript
@@ -412,6 +421,7 @@ console.info("Writable is result", result); // Writable is result true
 
 ```
 
+<a id="uncork"></a>
 ## uncork
 
 ```TypeScript
@@ -459,6 +469,7 @@ writableStream.on('finish', () => {
 
 ```
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -481,7 +492,7 @@ Writes data to the buffer of the stream. This API uses an asynchronous callback 
 | --- | --- | --- | --- |
 | chunk | string \| Uint8Array | No | Data to write. It cannot be **null**, **undefined**, or an empty string. |
 | encoding | string | No | Encoding format. The default value is **'utf8'**. Currently, **'utf8'**,**'gb18030'**, **'gbk'**, and **'gb2312'** are supported. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | No | Callback used to return the result. It is not called by default. |
+| callback | Function | No | Callback used to return the result. It is not called by default. |
 
 **Return value:**
 

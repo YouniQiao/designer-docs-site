@@ -6,6 +6,7 @@
 import { zlib } from '@kit.BasicServicesKit';
 ```
 
+<a id="zipfile"></a>
 ## zipFile
 
 ```TypeScript
@@ -18,7 +19,7 @@ Zips a file. The execution result is returned after the compression is complete.
 
 **Deprecated since:** 9
 
-**Substitutes:** compressFile(inFile:
+**Substitutes:** [compressFile(inFile:](arkts-basicservices-zlib-compressfile-f.md#compressfile-1)
 
 <!--Device-zlib-function zipFile(inFile: string, outFile: string, options: Options): Promise<void>--><!--Device-zlib-function zipFile(inFile: string, outFile: string, options: Options): Promise<void>-End-->
 
@@ -36,7 +37,7 @@ Zips a file. The execution result is returned after the compression is complete.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

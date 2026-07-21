@@ -6,6 +6,7 @@
 import { shortcutManager } from '@kit.AbilityKit';
 ```
 
+<a id="setshortcutsenabled"></a>
 ## setShortcutsEnabled
 
 ```TypeScript
@@ -28,14 +29,14 @@ Enables or disables the specified static shortcuts. This API uses a promise to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| shortcutsInfo | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ShortcutInfo> | Yes | Array of static shortcuts.<br>**NOTE**<br>This API does not distinguish between the main application and the cloned application, and only takes effect for static shortcuts. Therefore, the **appIndex** and **sourceType** fields in **ShortcutInfo** do not take effect. |
+| shortcutsInfo | Array&lt;ShortcutInfo&gt; | Yes | Array of static shortcuts.<br>**NOTE**<br>This API does not distinguish between the main application and the cloned application, and only takes effect for static shortcuts. Therefore, the **appIndex** and **sourceType** fields in **ShortcutInfo** do not take effect. |
 | isEnabled | boolean | Yes | Whether to enable the static shortcuts. **true** to enable, **false** otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

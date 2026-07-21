@@ -6,6 +6,7 @@
 import { motion } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="onhoverhandchange"></a>
 ## onHoverHandChange
 
 ```TypeScript
@@ -29,7 +30,7 @@ Subscribes to hover hand events and immediately starts detection for five second
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | detectionArea | [HoverHandDetectionArea](arkts-multimodalawareness-motion-hoverhanddetectionarea-i-sys.md) | Yes | Rectangular detection area for hover hand.<br> Repeated calls will override the previously set detection area.<br> If the area exceeds the screen bounds, it defaults to detecting the overlap. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<HoverHandAction> | Yes | Callback used to return hover hand action. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;HoverHandAction&gt; | Yes | Callback used to return hover hand action. |
 
 **Error codes:**
 
@@ -41,6 +42,7 @@ Subscribes to hover hand events and immediately starts detection for five second
 | [31500002](../../apis-multimodalawareness-kit/errorcode-motion.md#31500002-subscription-failed) | Subscription failed. Possible causes: 1. Callback registration failure;<br> 2. Failed to bind native object to js wrapper; 3. N-API invocation exception, invalid N-API status; 4. IPC<br> request exception. |
 
 
+<a id="onhoverhandchange-1"></a>
 ## onHoverHandChange
 
 ```TypeScript
@@ -68,7 +70,7 @@ Subscribes to hover hand events and immediately starts detection.
 | --- | --- | --- | --- |
 | detectionArea | [HoverHandDetectionArea](arkts-multimodalawareness-motion-hoverhanddetectionarea-i-sys.md) | Yes | Rectangular detection area for hover hand.<br> Repeated calls will override the previously set detection area.<br> If the area exceeds the screen bounds, it defaults to detecting the overlap. |
 | duration | number | Yes | Detection duration.<br> Unit: Seconds. The value must be an integer within [1,10].<br> Subscription ends automatically after duration expires. Call again to restart the detection.<br> Hover hand events are high power consumption events, developers are advised to set the duration as needed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<HoverHandAction> | Yes | Callback used to return hover hand action. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;HoverHandAction&gt; | Yes | Callback used to return hover hand action. |
 
 **Error codes:**
 

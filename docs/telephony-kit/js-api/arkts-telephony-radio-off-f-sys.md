@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="off"></a>
 ## off('imsRegStateChange')
 
 ```TypeScript
@@ -31,7 +32,7 @@ Unsubscribe from imsRegStateChange event.
 | type | 'imsRegStateChange' | Yes | Event type. Indicates the imsRegStateChange event to unsubscribe from. |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | imsType | [ImsServiceType](arkts-telephony-radio-imsservicetype-e-sys.md) | Yes | Indicates the ims service type of the {@link ImsServiceType}. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ImsRegInfo> | No | Indicates the callback for getting an instance of the {@link ImsRegInfo} class. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ImsRegInfo&gt; | No | Indicates the callback for getting an instance of the {@link ImsRegInfo} class. |
 
 **Error codes:**
 

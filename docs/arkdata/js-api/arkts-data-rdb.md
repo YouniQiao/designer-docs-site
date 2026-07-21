@@ -23,10 +23,10 @@ This module provides the following RDB-related functions:
 
 | Name | Description |
 | --- | --- |
-| [deleteRdbStore](arkts-arkdata-rdb-deleterdbstore-f.md#deleterdbstore-1) | Deletes an RDB store. This API uses an asynchronous callback to return the result. |
-| [deleteRdbStore](arkts-arkdata-rdb-deleterdbstore-f.md#deleterdbstore-2) | Deletes an RDB store. This API uses a promise to return the result. |
-| [getRdbStore](arkts-arkdata-rdb-getrdbstore-f.md#getrdbstore-1) | Obtains an RDB store. This API uses an asynchronous callback to return the result. You can set parameters for the RDB store based on service requirements and call APIs to perform data operations. |
-| [getRdbStore](arkts-arkdata-rdb-getrdbstore-f.md#getrdbstore-2) | Obtains an RDB store. This API uses a promise to return the result. You can set parameters for the RDB store based on service requirements and call APIs to perform data operations. |
+| [deleteRdbStore](arkts-arkdata-rdb-deleterdbstore-f.md#deleterdbstore) | Deletes an RDB store. This API uses an asynchronous callback to return the result. |
+| [deleteRdbStore](arkts-arkdata-rdb-deleterdbstore-f.md#deleterdbstore-1) | Deletes an RDB store. This API uses a promise to return the result. |
+| [getRdbStore](arkts-arkdata-rdb-getrdbstore-f.md#getrdbstore) | Obtains an RDB store. This API uses an asynchronous callback to return the result. You can set parameters for the RDB store based on service requirements and call APIs to perform data operations. |
+| [getRdbStore](arkts-arkdata-rdb-getrdbstore-f.md#getrdbstore-1) | Obtains an RDB store. This API uses a promise to return the result. You can set parameters for the RDB store based on service requirements and call APIs to perform data operations. |
 
 ### Classes
 
@@ -38,7 +38,7 @@ This module provides the following RDB-related functions:
 
 | Name | Description |
 | --- | --- |
-| [RdbStore](arkts-arkdata-rdb-rdbstore-i.md) | Provides APIs for managing data in an RDB store.Before using the APIs of this class, use [executeSql](arkts-arkdata-rdb-rdbstore-i.md#executesql-1)to initialize the database table structure and related data. |
+| [RdbStore](arkts-arkdata-rdb-rdbstore-i.md) | Provides APIs for managing data in an RDB store.  Before using the APIs of this class, use [executeSql](arkts-arkdata-rdb-rdbstore-i.md#executesql-1)to initialize the database table structure and related data. |
 | [StoreConfig](arkts-arkdata-rdb-storeconfig-i.md) | Defines the RDB store configuration. |
 
 ### Enums

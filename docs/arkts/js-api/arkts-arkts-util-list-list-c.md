@@ -14,6 +14,7 @@ List is implemented based on the singly linked list. Each node has a reference p
 import { List } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ while(!temp.done) {
 
 ```
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -127,6 +129,7 @@ console.info("result = ", result5) // result =  true
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -163,6 +166,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -192,6 +196,7 @@ let list = new List<string | number | boolean | object>();
 
 ```
 
+<a id="converttoarray"></a>
 ## convertToArray
 
 ```TypeScript
@@ -212,7 +217,7 @@ Converts this List into an array and returns the array.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Array obtained. |
+| Array&lt;T&gt; | Array obtained. |
 
 **Error codes:**
 
@@ -233,6 +238,7 @@ console.info("result:", result);  // result: 2,4,5,4
 
 ```
 
+<a id="equal"></a>
 ## equal
 
 ```TypeScript
@@ -253,7 +259,7 @@ Compares whether a specified object is equal to this List.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| obj | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Object used for comparison. |
+| obj | Object | Yes | Object used for comparison. |
 
 **Return value:**
 
@@ -283,6 +289,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -303,8 +310,8 @@ Uses a callback to traverse each element in the **List** instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, List?: List<T>) => void | Yes | Callback used to return the result. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, List?: List&lt;T&gt;) =&gt; void | Yes | Callback used to return the result. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -330,6 +337,7 @@ list.forEach((value: number, index: number) => {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -363,7 +371,7 @@ Obtains the element at the specified position in this List.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The get method cannot be bound. |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of index is out of range.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of index is out of range.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -381,6 +389,7 @@ console.info("result:", result);  // result: 5
 
 ```
 
+<a id="getfirst"></a>
 ## getFirst
 
 ```TypeScript
@@ -408,7 +417,7 @@ Obtains the first element in this List.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getFirst method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -423,6 +432,7 @@ console.info("result:", result);  // result: 2
 
 ```
 
+<a id="getindexof"></a>
 ## getIndexOf
 
 ```TypeScript
@@ -473,6 +483,7 @@ console.info("result:", result); // result: 0
 
 ```
 
+<a id="getlast"></a>
 ## getLast
 
 ```TypeScript
@@ -500,7 +511,7 @@ Obtains the last element in this List.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getLast method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -515,6 +526,7 @@ console.info("result:", result);  // result: 4
 
 ```
 
+<a id="getlastindexof"></a>
 ## getLastIndexOf
 
 ```TypeScript
@@ -565,6 +577,7 @@ console.info("result:", result); // result: 5
 
 ```
 
+<a id="getsublist"></a>
 ## getSubList
 
 ```TypeScript
@@ -592,7 +605,7 @@ Obtains elements within a range in this List, including the element at the start
 
 | Type | Description |
 | --- | --- |
-| [List](arkts-arkts-util-list-list-c.md)<T> | New **List** instance obtained. |
+| [List](arkts-arkts-util-list-list-c.md)&lt;T&gt; | New **List** instance obtained. |
 
 **Error codes:**
 
@@ -614,6 +627,7 @@ console.info("result:", result.convertToArray());  // result: 4,6
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -658,6 +672,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -699,6 +714,7 @@ console.info("result:", list.get(1));  // result: 0
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -740,6 +756,7 @@ console.info("result:", result);  // result: false
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -787,6 +804,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="removebyindex"></a>
 ## removeByIndex
 
 ```TypeScript
@@ -836,6 +854,7 @@ console.info("result:", result);  // result: 5
 
 ```
 
+<a id="replaceallelements"></a>
 ## replaceAllElements
 
 ```TypeScript
@@ -856,8 +875,8 @@ Replaces all elements in this List with new elements, and returns the new ones.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, list?: List<T>) => T | Yes | Callback invoked for the replacement. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, list?: List&lt;T&gt;) =&gt; T | Yes | Callback invoked for the replacement. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -885,6 +904,7 @@ console.info("result:", list.get(2));  // result: 10
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -934,6 +954,7 @@ console.info("result:", JSON.stringify(list));  // result: {"0":2,"1":4,"2":"b",
 
 ```
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -954,7 +975,7 @@ Sorts elements in this List.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| comparator | [ListComparatorFn](arkts-arkts-listcomparatorfn-t.md)<T> | Yes | Callback used to return the result.<br> There has been a compatibility change since API version 23. In API version 22 and earlier versions, the type is `(firstValue: T, secondValue:T) =&gt; number`.<br>**Since:** 23 |
+| comparator | [ListComparatorFn](arkts-arkts-listcomparatorfn-t.md)&lt;T&gt; | Yes | Callback used to return the result.<br> There has been a compatibility change since API version 23. In API version 22 and earlier versions, the type is `(firstValue: T, secondValue:T) => number`.<br>**Since:** 23 |
 
 **Error codes:**
 

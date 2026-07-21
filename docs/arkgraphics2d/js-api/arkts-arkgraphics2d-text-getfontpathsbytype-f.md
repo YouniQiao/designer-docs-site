@@ -6,6 +6,7 @@
 import { text } from '@kit.ArkGraphics2D';
 ```
 
+<a id="getfontpathsbytype"></a>
 ## getFontPathsByType
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the paths of all font files of a specified font type.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of font file paths. |
+| Array&lt;string&gt; | List of font file paths. |
 
 **Example**
 

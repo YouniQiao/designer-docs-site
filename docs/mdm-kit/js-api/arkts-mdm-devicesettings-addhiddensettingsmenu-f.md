@@ -6,6 +6,7 @@
 import { deviceSettings } from '@kit.MDMKit';
 ```
 
+<a id="addhiddensettingsmenu"></a>
 ## addHiddenSettingsMenu
 
 ```TypeScript
@@ -29,7 +30,7 @@ Adds a setting item to the hidden setting item list of the current user. Then th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| menusToHidden | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<SettingsMenu> | Yes | Hidden setting item list. |
+| menusToHidden | Array&lt;SettingsMenu&gt; | Yes | Hidden setting item list. |
 
 **Error codes:**
 

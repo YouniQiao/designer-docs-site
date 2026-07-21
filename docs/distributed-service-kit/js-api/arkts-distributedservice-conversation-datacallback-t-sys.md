@@ -20,6 +20,6 @@ Callback function invoked when a message is received.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| networkId | string | Yes | NetworkId of the source device that sent the message. |
-| msg | ArrayBuffer | Yes | Message content received as a string. |
+| networkId | string | Yes | NetworkId of the source device that sent the message.  |
+| msg | ArrayBuffer | Yes | Message content received as a string.  |
 

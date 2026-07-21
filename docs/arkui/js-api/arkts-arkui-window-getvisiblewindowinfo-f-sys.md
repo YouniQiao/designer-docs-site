@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="getvisiblewindowinfo"></a>
 ## getVisibleWindowInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains information about visible main windows on the current screen. Visible ma
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<WindowInfo>> | Promise used to return the information about visible windows. |
+| Promise&lt;Array&lt;WindowInfo&gt;&gt; | Promise used to return the information about visible windows. |
 
 **Error codes:**
 

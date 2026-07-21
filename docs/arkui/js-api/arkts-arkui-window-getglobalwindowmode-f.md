@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="getglobalwindowmode"></a>
 ## getGlobalWindowMode
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the window mode of the window that is in the foreground lifecycle on the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the window mode. Each binary bit represents a window mode. For details about the supported window modes, see [GlobalWindowMode](arkts-arkui-window-globalwindowmode-e.md).The return value is the result of a bitwise OR operation on the corresponding window mode values. For example,if there are full-screen, floating, and PiP windows on the specified screen, the return value is `0b1\|0b100\|0b1000 = 13`. |
+| Promise&lt;number&gt; | Promise used to return the window mode. Each binary bit represents a window mode. For details about the supported window modes, see [GlobalWindowMode](arkts-arkui-window-globalwindowmode-e.md).The return value is the result of a bitwise OR operation on the corresponding window mode values. For example,if there are full-screen, floating, and PiP windows on the specified screen, the return value is `0b1\|0b100\|0b1000 = 13`. |
 
 **Error codes:**
 

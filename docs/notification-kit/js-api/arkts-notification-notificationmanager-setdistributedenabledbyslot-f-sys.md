@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="setdistributedenabledbyslot"></a>
 ## setDistributedEnabledBySlot
 
 ```TypeScript
@@ -36,7 +37,7 @@ Sets whether notifications of a specified slot can be sent to devices of a speci
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

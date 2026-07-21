@@ -6,6 +6,7 @@
 import { WantAgent } from '@kit.AbilityKit';
 ```
 
+<a id="getbundlename"></a>
 ## getBundleName
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the bundle name of a WantAgent object.This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | Target WantAgent object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the bundle name. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the bundle name. |
 
 **Error codes:**
 
@@ -105,6 +106,7 @@ try {
 ```
 
 
+<a id="getbundlename-1"></a>
 ## getBundleName
 
 ```TypeScript
@@ -131,7 +133,7 @@ Obtains the bundle name of a WantAgent object.This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the bundle name. |
+| Promise&lt;string&gt; | Promise used to return the bundle name. |
 
 **Error codes:**
 

@@ -31,8 +31,8 @@ Construct the EmbeddedComponent.<br/>Called when the EmbeddedComponent is used.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| loader | import('../api/@ohos.app.ability.Want').default | Yes | indicates initialization parameter |
-| type | EmbeddedType | Yes | indicates type of the EmbeddedComponent |
+| loader | import('../api/@ohos.app.ability.Want').default | Yes | indicates initialization parameter  |
+| type | [EmbeddedType](../arkts-apis/arkts-arkui-embeddedtype-e.md) | Yes | indicates type of the EmbeddedComponent  |
 
 ## EmbeddedComponent
 
@@ -65,9 +65,9 @@ Construct the EmbeddedComponent.<br/>Called when the EmbeddedComponent is used.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| loader | import('../api/@ohos.app.ability.Want').default | Yes | indicates initialization parameter |
-| type | EmbeddedType | Yes | indicates type of the EmbeddedComponent |
-| options | EmbeddedOptions | No | construction configuration of EmbeddedComponent |
+| loader | import('../api/@ohos.app.ability.Want').default | Yes | indicates initialization parameter  |
+| type | [EmbeddedType](../arkts-apis/arkts-arkui-embeddedtype-e.md) | Yes | indicates type of the EmbeddedComponent  |
+| options | [EmbeddedOptions](arkts-arkui-embeddedoptions-i.md) | No | construction configuration of EmbeddedComponent  |
 
 ## Summary
 

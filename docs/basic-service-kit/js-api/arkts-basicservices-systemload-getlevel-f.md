@@ -6,6 +6,7 @@
 import { systemLoad } from '@kit.BasicServicesKit';
 ```
 
+<a id="getlevel"></a>
 ## getLevel
 
 ```TypeScript
@@ -24,5 +25,5 @@ Obtains the system load level. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SystemLoadLevel> | Promise used to return the system load level. |
+| Promise&lt;SystemLoadLevel&gt; | Promise used to return the system load level. |
 

@@ -6,6 +6,7 @@
 import { pluginBundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getalllocalplugininfoforself"></a>
 ## getAllLocalPluginInfoForSelf
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains information about all local plugins installed on the current application
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PluginBundleInfo>> | Promise used to return the list of PluginBundleInfos object. |
+| Promise&lt;Array&lt;PluginBundleInfo&gt;&gt; | Promise used to return the list of PluginBundleInfos object. |
 
 **Error codes:**
 

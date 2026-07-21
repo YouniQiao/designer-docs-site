@@ -6,6 +6,7 @@
 import { dragController } from '@kit.ArkUI';
 ```
 
+<a id="createdragaction"></a>
 ## createDragAction
 
 ```TypeScript
@@ -41,7 +42,7 @@ Initiates a drag action, with the object to be dragged and the drag information 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| customArray | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CustomBuilder \| DragItemInfo> | Yes | Object to be dragged. |
+| customArray | Array&lt;CustomBuilder \| DragItemInfo&gt; | Yes | Object to be dragged. |
 | dragInfo | [DragInfo](arkts-arkui-dragcontroller-draginfo-i.md) | Yes | Drag information. |
 
 **Return value:**

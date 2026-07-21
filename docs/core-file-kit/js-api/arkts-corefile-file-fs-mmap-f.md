@@ -6,6 +6,7 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="mmap"></a>
 ## mmap
 
 ```TypeScript
@@ -35,7 +36,7 @@ Creates a file mapping object based on a file descriptor or file object, using p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileMapping> | Promise object. Returns a FileMapping object. |
+| Promise&lt;FileMapping&gt; | Promise object. Returns a FileMapping object. |
 
 **Error codes:**
 

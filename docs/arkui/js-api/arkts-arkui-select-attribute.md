@@ -10,6 +10,7 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="arrowmodifier"></a>
 ## arrowModifier
 
 ```TypeScript
@@ -20,7 +21,7 @@ Creates an arrow modifier to customize the drop-down arrow icon style of the **S
 
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 20
 
@@ -36,8 +37,9 @@ Creates an arrow modifier to customize the drop-down arrow icon style of the **S
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [Optional](arkts-arkui-optional-t.md)<SymbolGlyphModifier> | Yes | Arrow modifier to apply to the **Select** button for customizing the drop-down arrow icon style. |
+| modifier | [Optional](arkts-arkui-optional-t.md)&lt;SymbolGlyphModifier&gt; | Yes | Arrow modifier to apply to the **Select** button for customizing the drop-down arrow icon style. |
 
+<a id="arrowposition"></a>
 ## arrowPosition
 
 ```TypeScript
@@ -60,8 +62,9 @@ Sets the alignment between the text and arrow of an option.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [ArrowPosition](arkts-arkui-select-arrowposition-e.md) | Yes | Alignment between the text and arrow of an option.<br>Default value:**ArrowPosition.END** |
+| value | [ArrowPosition](arkts-arkui-arrowposition-e.md) | Yes | Alignment between the text and arrow of an option.<br>Default value:**ArrowPosition.END** |
 
+<a id="arrowposition-1"></a>
 ## arrowPosition
 
 ```TypeScript
@@ -84,8 +87,9 @@ Sets the alignment between the text and arrow of an option. Compared with [arrow
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| position | [Optional](arkts-arkui-optional-t.md)<ArrowPosition> | Yes | Alignment between the text and arrow of an option.<br>If **position** is set to **undefined**, the default value **ArrowPosition.END** is used. |
+| position | [Optional](arkts-arkui-optional-t.md)&lt;ArrowPosition&gt; | Yes | Alignment between the text and arrow of an option.<br>If **position** is set to **undefined**, the default value **ArrowPosition.END** is used. |
 
+<a id="avoidance"></a>
 ## avoidance
 
 ```TypeScript
@@ -108,8 +112,9 @@ Sets the avoidance mode for the drop-down menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [AvoidanceMode](arkts-arkui-select-avoidancemode-e.md) | Yes | Avoidance mode for the drop-down menu.<br>Default value:**AvoidanceMode.COVER_TARGET** |
+| mode | [AvoidanceMode](arkts-arkui-avoidancemode-e.md) | Yes | Avoidance mode for the drop-down menu.<br>Default value:**AvoidanceMode.COVER_TARGET** |
 
+<a id="controlsize"></a>
 ## controlSize
 
 ```TypeScript
@@ -132,8 +137,9 @@ Sets the size of the **Select** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [ControlSize](arkts-arkui-button-controlsize-e.md) | Yes | Size of the **Select** component.<br>Default value: **ControlSize.NORMAL** |
+| value | [ControlSize](arkts-arkui-controlsize-e.md) | Yes | Size of the **Select** component.<br>Default value: **ControlSize.NORMAL** |
 
+<a id="controlsize-1"></a>
 ## controlSize
 
 ```TypeScript
@@ -156,8 +162,9 @@ Sets the size of the **Select** component. Compared with [controlSize](SelectAtt
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| size | [Optional](arkts-arkui-optional-t.md)<ControlSize> | Yes | Size of the **Select** component.<br>If **size** is set to **undefined**,the default value **ControlSize.NORMAL** is used. |
+| size | [Optional](arkts-arkui-optional-t.md)&lt;ControlSize&gt; | Yes | Size of the **Select** component.<br>If **size** is set to **undefined**,the default value **ControlSize.NORMAL** is used. |
 
+<a id="divider"></a>
 ## divider
 
 ```TypeScript
@@ -180,8 +187,9 @@ Sets the divider style. If this attribute is not set, the divider is displayed b
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [Optional](arkts-arkui-optional-t.md)<DividerOptions> \| null | Yes | Divider options.<br>1. If **DividerOptions** is set, the divider is displayed in the configured style.<br>Default value:<br>{<br>strokeWidth: '1px' , <br>color: '#33182431'<br>}<br>2. If this parameter is set to **null**, the divider is not displayed.<br>3. If the value of **strokeWidth** is too larger, the divider may overlap the text. The divider extends both upwards and downwards from the bottom of each item.<br>4. The default values for **startMargin** and **endMargin** are consistent with the style of the divider when the **divider** attribute is not set. If the sum of **startMargin** and **endMargin** is equal to the value of **optionWidth**, the divider is not displayed. If the sum of **startMargin** and **endMargin** exceeds the value of **optionWidth**, the divider line is displayed in the default style. |
+| options | [Optional](arkts-arkui-optional-t.md)&lt;DividerOptions&gt; \| null | Yes | Divider options.<br>1. If **DividerOptions** is set, the divider is displayed in the configured style.<br>Default value:<br>{<br>strokeWidth: '1px' , <br>color: '#33182431'<br>}<br>2. If this parameter is set to **null**, the divider is not displayed.<br>3. If the value of **strokeWidth** is too larger, the divider may overlap the text. The divider extends both upwards and downwards from the bottom of each item.<br>4. The default values for **startMargin** and **endMargin** are consistent with the style of the divider when the **divider** attribute is not set. If the sum of **startMargin** and **endMargin** is equal to the value of **optionWidth**, the divider is not displayed. If the sum of **startMargin** and **endMargin** exceeds the value of **optionWidth**, the divider line is displayed in the default style. |
 
+<a id="dividerstyle"></a>
 ## dividerStyle
 
 ```TypeScript
@@ -204,8 +212,9 @@ Sets the divider style. If this attribute is not set, the divider is displayed b
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | [Optional](arkts-arkui-optional-t.md)<DividerStyleOptions> | Yes | Divider options.<br>1. If **DividerOptions** is set, the divider is displayed in the configured style.<br>Default value:<br>{<br>strokeWidth: '1px' , <br>color: '#33182431'<br>}<br>2. If this parameter is set to **null** or **undefined**, the default divider is displayed.<br>3. When **mode** is set to **FLOAT_ABOVE_MENU**, be careful with the **strokeWidth** settings to avoid covering text.The divider extends both upwards and downwards from the bottom of each item. When **mode** is **EMBEDDED_IN_MENU**, the divider expands to fill its own space within the menu.<br>4. The default values for **startMargin** and **endMargin** are consistent with the style of the divider when the **divider** attribute is not set. If the sum of **startMargin** and **endMargin** is equal to the value of **optionWidth**, the divider is not displayed. If the sum of **startMargin** and **endMargin** exceeds the value of **optionWidth**,the divider line is displayed in the default style. |
+| style | [Optional](arkts-arkui-optional-t.md)&lt;DividerStyleOptions&gt; | Yes | Divider options.<br>1. If **DividerOptions** is set, the divider is displayed in the configured style.<br>Default value:<br>{<br>strokeWidth: '1px' , <br>color: '#33182431'<br>}<br>2. If this parameter is set to **null** or **undefined**, the default divider is displayed.<br>3. When **mode** is set to **FLOAT_ABOVE_MENU**, be careful with the **strokeWidth** settings to avoid covering text.The divider extends both upwards and downwards from the bottom of each item. When **mode** is **EMBEDDED_IN_MENU**, the divider expands to fill its own space within the menu.<br>4. The default values for **startMargin** and **endMargin** are consistent with the style of the divider when the **divider** attribute is not set. If the sum of **startMargin** and **endMargin** is equal to the value of **optionWidth**, the divider is not displayed. If the sum of **startMargin** and **endMargin** exceeds the value of **optionWidth**,the divider line is displayed in the default style. |
 
+<a id="font"></a>
 ## font
 
 ```TypeScript
@@ -226,8 +235,9 @@ Sets the text style of the drop-down button. When **size** is set to **0**, the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Text style of the drop-down list button.<br>For API versions 11 and earlier, the default value is as follows:<br>{<br>size: `$r('sys.float.ohos_id_text_size_button1')`,<br>weight: FontWeight.Medium<br  >} <br>Since API version 12: The default value of **size** is **$r('sys.float.ohos_id_text_size_button2')** in the case of **controlSize.SMALL** and **$r('sys.float.ohos_id_text_size_button1')** in other cases. |
+| value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Text style of the drop-down list button.<br>For API versions 11 and earlier, the default value is as follows:<br>{<br>size: `$r('sys.float.ohos_id_text_size_button1')`,<br>weight: FontWeight.Medium<br   >} <br>Since API version 12: The default value of **size** is **$r('sys.float.ohos_id_text_size_button2')** in the case of **controlSize.SMALL** and **$r('sys.float.ohos_id_text_size_button1')** in other cases. |
 
+<a id="font-1"></a>
 ## font
 
 ```TypeScript
@@ -250,8 +260,9 @@ Sets the text style of the drop-down button. When **size** is set to **0**, the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| selectFont | [Optional](arkts-arkui-optional-t.md)<Font> | Yes | Text style of the drop-down list button.<br>If **controlSize** is set to **controlSize.SMALL**, the default value of **size** is **$r('sys.float.ohos_id_text_size_button2')**.Otherwise, the default value is **$r('sys.float.ohos_id_text_size_button1')**.<br>If **selectFont** is set to **undefined**, the default font style is used. |
+| selectFont | [Optional](arkts-arkui-optional-t.md)&lt;Font&gt; | Yes | Text style of the drop-down list button.<br>If **controlSize** is set to **controlSize.SMALL**, the default value of **size** is **$r('sys.float.ohos_id_text_size_button2')**.Otherwise, the default value is **$r('sys.float.ohos_id_text_size_button1')**.<br>If **selectFont** is set to **undefined**, the default font style is used. |
 
+<a id="fontcolor"></a>
 ## fontColor
 
 ```TypeScript
@@ -274,6 +285,7 @@ Sets the font color of the drop-down button.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color of the drop-down button.<br>Default value:**$r('sys.color.ohos_id_color_text_primary')** with the opacity of **$r('sys.color.ohos_id_alpha_content_primary')** |
 
+<a id="fontcolor-1"></a>
 ## fontColor
 
 ```TypeScript
@@ -296,8 +308,9 @@ Sets the font color of the drop-down button. Compared with [fontColor](SelectAtt
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resColor | [Optional](arkts-arkui-optional-t.md)<ResourceColor> | Yes | Font color of the drop-down button.<br>When **resColor** is set to **undefined**, the default value is a blend of **$r('sys.color.ohos_id_color_text_primary')** with the opacity of **$r('sys.color.ohos_id_alpha_content_primary')**.<br>If **value** is set to **undefined**, the previous value is retained. |
+| resColor | [Optional](arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Font color of the drop-down button.<br>When **resColor** is set to **undefined**, the default value is a blend of **$r('sys.color.ohos_id_color_text_primary')** with the opacity of **$r('sys.color.ohos_id_alpha_content_primary')**.<br>If **value** is set to **undefined**, the previous value is retained. |
 
+<a id="keyboardavoidmode"></a>
 ## keyboardAvoidMode
 
 ```TypeScript
@@ -320,8 +333,9 @@ Sets whether the drop-down menu avoids the soft keyboard. If this API is not use
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [Optional](arkts-arkui-optional-t.md)<MenuKeyboardAvoidMode> | Yes | Whether the drop-down menu avoids the soft keyboard. If the value is **undefined**, it is treated as **MenuKeyboardAvoidMode.NONE**. |
+| mode | [Optional](arkts-arkui-optional-t.md)&lt;MenuKeyboardAvoidMode&gt; | Yes | Whether the drop-down menu avoids the soft keyboard. If the value is **undefined**, it is treated as **MenuKeyboardAvoidMode.NONE**. |
 
+<a id="menualign"></a>
 ## menuAlign
 
 ```TypeScript
@@ -344,9 +358,10 @@ Sets the alignment between the drop-down button and the drop-down menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| alignType | [MenuAlignType](arkts-arkui-select-menualigntype-e.md) | Yes | Alignment type.<br>Default value: **MenuAlignType.START** |
+| alignType | [MenuAlignType](arkts-arkui-menualigntype-e.md) | Yes | Alignment type.<br>Default value: **MenuAlignType.START** |
 | offset | [Offset](../arkts-apis/arkts-arkui-componentutils-offset-i.md) | No | Offset of the drop-down menu relative to the drop-down button after alignment based on the alignment type.<br> Default value: **{dx: 0, dy: 0}** |
 
+<a id="menualign-1"></a>
 ## menuAlign
 
 ```TypeScript
@@ -369,9 +384,10 @@ Sets the alignment between the drop-down button and the drop-down menu. Compared
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| alignType | [Optional](arkts-arkui-optional-t.md)<MenuAlignType> | Yes | Alignment type.<br>If **alignType** is set to **undefined**, the default value **MenuAlignType.START** is used. |
+| alignType | [Optional](arkts-arkui-optional-t.md)&lt;MenuAlignType&gt; | Yes | Alignment type.<br>If **alignType** is set to **undefined**, the default value **MenuAlignType.START** is used. |
 | offset | [Offset](../arkts-apis/arkts-arkui-componentutils-offset-i.md) | No | Offset of the drop-down menu relative to the drop-down button after alignment based on the alignment type.<br> Default value: **{dx: 0, dy: 0}** |
 
+<a id="menubackgroundblurstyle"></a>
 ## menuBackgroundBlurStyle
 
 ```TypeScript
@@ -382,7 +398,7 @@ Sets the background blur style of the drop-down menu.
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -398,8 +414,9 @@ Sets the background blur style of the drop-down menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [BlurStyle](arkts-arkui-common-blurstyle-e.md) | Yes | Background blur style of the drop-down menu.<br>Default value:**BlurStyle.COMPONENT_ULTRA_THICK** |
+| value | [BlurStyle](arkts-arkui-blurstyle-e.md) | Yes | Background blur style of the drop-down menu.<br>Default value:**BlurStyle.COMPONENT_ULTRA_THICK** |
 
+<a id="menubackgroundblurstyle-1"></a>
 ## menuBackgroundBlurStyle
 
 ```TypeScript
@@ -422,8 +439,9 @@ Sets the background blur style of the drop-down menu. Compared with [menuBackgro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | [Optional](arkts-arkui-optional-t.md)<BlurStyle> | Yes | Background blur style of the drop-down menu.<br>If **style** is set to **undefined**, the default value **BlurStyle.COMPONENT_ULTRA_THICK** is used. |
+| style | [Optional](arkts-arkui-optional-t.md)&lt;BlurStyle&gt; | Yes | Background blur style of the drop-down menu.<br>If **style** is set to **undefined**, the default value **BlurStyle.COMPONENT_ULTRA_THICK** is used. |
 
+<a id="menubackgroundblurstyleoptions"></a>
 ## menuBackgroundBlurStyleOptions
 
 ```TypeScript
@@ -446,8 +464,9 @@ Defines the select menu's background blur style with options
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| blurStyle | [Optional](arkts-arkui-optional-t.md)<BackgroundBlurStyleOptions> | Yes | The background blur style of menu. |
+| blurStyle | [Optional](arkts-arkui-optional-t.md)&lt;BackgroundBlurStyleOptions&gt; | Yes | The background blur style of menu. |
 
+<a id="menubackgroundcolor"></a>
 ## menuBackgroundColor
 
 ```TypeScript
@@ -458,7 +477,7 @@ Sets the background color of the drop-down menu.
 
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 
@@ -476,6 +495,7 @@ Sets the background color of the drop-down menu.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the drop-down menu.<br>Default value:<br>Versions earlier than API version 11: **$r('sys.color.ohos_id_color_card_bg')**<br>Since API version 11: **Color.Transparent** |
 
+<a id="menubackgroundcolor-1"></a>
 ## menuBackgroundColor
 
 ```TypeScript
@@ -498,8 +518,9 @@ Sets the background color of the drop-down menu. Compared with [menuBackgroundCo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resColor | [Optional](arkts-arkui-optional-t.md)<ResourceColor> | Yes | Background color of the drop-down menu.<br>If **resColor** is set to **undefined**, the default value **Color.Transparent** is used. |
+| resColor | [Optional](arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Background color of the drop-down menu.<br>If **resColor** is set to **undefined**, the default value **Color.Transparent** is used. |
 
+<a id="menubackgroundeffect"></a>
 ## menuBackgroundEffect
 
 ```TypeScript
@@ -522,8 +543,9 @@ Defines the select menu's background effect with options
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| effect | [Optional](arkts-arkui-optional-t.md)<BackgroundEffectOptions> | Yes | Background effect, including saturation, brightness, and color.<br>The configuration does not take effect when it is undefined. |
+| effect | [Optional](arkts-arkui-optional-t.md)&lt;BackgroundEffectOptions&gt; | Yes | Background effect, including saturation, brightness, and color.<br>The configuration does not take effect when it is undefined. |
 
+<a id="menuitemcontentmodifier"></a>
 ## menuItemContentModifier
 
 ```TypeScript
@@ -534,7 +556,7 @@ Creates a content modifier for the drop-down menu. After **menuItemContentModifi
 
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 12
 
@@ -550,8 +572,9 @@ Creates a content modifier for the drop-down menu. After **menuItemContentModifi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [ContentModifier](arkts-arkui-common-contentmodifier-i.md)<MenuItemConfiguration> | Yes | Content modifier to apply to the drop-down menu.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
+| modifier | [ContentModifier](arkts-arkui-contentmodifier-i.md)&lt;MenuItemConfiguration&gt; | Yes | Content modifier to apply to the drop-down menu.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API. |
 
+<a id="menuitemcontentmodifier-1"></a>
 ## menuItemContentModifier
 
 ```TypeScript
@@ -562,7 +585,7 @@ Creates a content modifier for the drop-down menu. Compared with [menuItemConten
 
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 18
 
@@ -578,8 +601,9 @@ Creates a content modifier for the drop-down menu. Compared with [menuItemConten
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [Optional](arkts-arkui-optional-t.md)<ContentModifier<MenuItemConfiguration>> | Yes | Content modifier to apply to the drop-down menu.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API.<br>If **modifier** is set to **undefined**, no content modifier is used. |
+| modifier | [Optional](arkts-arkui-optional-t.md)&lt;ContentModifier&lt;MenuItemConfiguration&gt;&gt; | Yes | Content modifier to apply to the drop-down menu.<br>**modifier**: content modifier. You need a custom class to implement the **ContentModifier** API.<br>If **modifier** is set to **undefined**, no content modifier is used. |
 
+<a id="menuoutline"></a>
 ## menuOutline
 
 ```TypeScript
@@ -602,8 +626,9 @@ Sets the outline style for the drop-down menu.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| outline | [MenuOutlineOptions](arkts-arkui-select-menuoutlineoptions-i.md) | Yes | Outline style of the drop-down menu. |
+| outline | [MenuOutlineOptions](arkts-arkui-menuoutlineoptions-i.md) | Yes | Outline style of the drop-down menu. |
 
+<a id="minkeyboardavoiddistance"></a>
 ## minKeyboardAvoidDistance
 
 ```TypeScript
@@ -626,8 +651,9 @@ Sets the minimum distance for the **Select** component to avoid the soft keyboar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| distance | [Optional](arkts-arkui-optional-t.md)<LengthMetrics> | Yes | Sets the minimum distance for the drop-down menu to avoid the soft keyboard. If the value is set to a negative number or **undefined**, the value 8 vp will be used. |
+| distance | [Optional](arkts-arkui-optional-t.md)&lt;LengthMetrics&gt; | Yes | Sets the minimum distance for the drop-down menu to avoid the soft keyboard. If the value is set to a negative number or **undefined**, the value 8 vp will be used. |
 
+<a id="onselect"></a>
 ## onSelect
 
 ```TypeScript
@@ -648,8 +674,9 @@ Triggered when a drop-down menu option is selected.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (index: number, value: string) => void | Yes |  |
+| callback | (index: number, value: string) =&gt; void | Yes |  |
 
+<a id="onselect-1"></a>
 ## onSelect
 
 ```TypeScript
@@ -672,8 +699,9 @@ Triggered when a drop-down menu option is selected. Compared with [onSelect](Sel
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Optional](arkts-arkui-optional-t.md)<OnSelectCallback> | Yes | Callback invoked when a drop-down menu option is selected.<br>If **callback** is set to **undefined**, the callback function is not used. |
+| callback | [Optional](arkts-arkui-optional-t.md)&lt;OnSelectCallback&gt; | Yes | Callback invoked when a drop-down menu option is selected.<br>If **callback** is set to **undefined**, the callback function is not used. |
 
+<a id="optionbgcolor"></a>
 ## optionBgColor
 
 ```TypeScript
@@ -696,6 +724,7 @@ Sets the background color of options in the drop-down menu.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of options in the drop-down menu.<br>Default value:<br>Versions earlier than API version 11: **Color.White**<br>Since API version 11: **Color.Transparent** |
 
+<a id="optionbgcolor-1"></a>
 ## optionBgColor
 
 ```TypeScript
@@ -718,8 +747,9 @@ Sets the background color of options in the drop-down menu. Compared with [optio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resColor | [Optional](arkts-arkui-optional-t.md)<ResourceColor> | Yes | Background color of options in the drop-down menu.<br>When the value of resColor is undefined, the background color of the drop-down menu item is Color.White. |
+| resColor | [Optional](arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Background color of options in the drop-down menu.<br>When the value of resColor is undefined, the background color of the drop-down menu item is Color.White. |
 
+<a id="optionfont"></a>
 ## optionFont
 
 ```TypeScript
@@ -742,6 +772,7 @@ Sets the text font of options in the drop-down menu. When **size** is set to **0
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Text font of options in the drop-down menu.<br>Default value:<br>{<br>size: $r('sys.float.ohos_id_text_size_body1'),<br>weight: FontWeight.Regular<br>} |
 
+<a id="optionfont-1"></a>
 ## optionFont
 
 ```TypeScript
@@ -766,8 +797,9 @@ Compared with [optionFont](SelectAttribute#optionFont(value: Font)), this API su
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| selectFont | [Optional](arkts-arkui-optional-t.md)<Font> | Yes | Text font of options in the drop-down menu.<br>If **selectFont** is set to **undefined**, the default value is used:<br>{<br>size: $r('sys.float.ohos_id_text_size_body1'),<br>weight:FontWeight.Regular<br>} |
+| selectFont | [Optional](arkts-arkui-optional-t.md)&lt;Font&gt; | Yes | Text font of options in the drop-down menu.<br>If **selectFont** is set to **undefined**, the default value is used:<br>{<br>size: $r('sys.float.ohos_id_text_size_body1'),<br>weight:FontWeight.Regular<br>} |
 
+<a id="optionfontcolor"></a>
 ## optionFontColor
 
 ```TypeScript
@@ -790,6 +822,7 @@ Sets the font color of options in the drop-down menu.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color of options in the drop-down menu.<br>Default value:**$r('sys.color.ohos_id_color_text_primary')** |
 
+<a id="optionfontcolor-1"></a>
 ## optionFontColor
 
 ```TypeScript
@@ -812,8 +845,9 @@ Sets the font color of options in the drop-down menu. Compared with [optionFontC
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resColor | [Optional](arkts-arkui-optional-t.md)<ResourceColor> | Yes | Font color of options in the drop-down menu.<br>If **resColor** is set to **undefined**, the default value **$r('sys.color.ohos_id_color_text_primary')** is used. |
+| resColor | [Optional](arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Font color of options in the drop-down menu.<br>If **resColor** is set to **undefined**, the default value **$r('sys.color.ohos_id_color_text_primary')** is used. |
 
+<a id="optionheight"></a>
 ## optionHeight
 
 ```TypeScript
@@ -842,6 +876,7 @@ If the actual height of all drop-down menu options is less than the set height, 
 | --- | --- | --- | --- |
 | value | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) | Yes | Maximum height of the drop-down menu. |
 
+<a id="optionheight-1"></a>
 ## optionHeight
 
 ```TypeScript
@@ -868,8 +903,9 @@ If the actual height of all drop-down menu options is less than the set height, 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| height | [Optional](arkts-arkui-optional-t.md)<Dimension> | Yes | Maximum height of the drop-down menu.<br>If **height** is set to **undefined**, the default value, which is 80% of the available screen height, is used. |
+| height | [Optional](arkts-arkui-optional-t.md)&lt;Dimension&gt; | Yes | Maximum height of the drop-down menu.<br>If **height** is set to **undefined**, the default value, which is 80% of the available screen height, is used. |
 
+<a id="optiontextmodifier"></a>
 ## optionTextModifier
 
 ```TypeScript
@@ -882,7 +918,7 @@ If both [optionFont](SelectAttribute#optionFont(value: Font)) and **Font** of **
 
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 20
 
@@ -898,8 +934,9 @@ If both [optionFont](SelectAttribute#optionFont(value: Font)) and **Font** of **
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [Optional](arkts-arkui-optional-t.md)<TextModifier> | Yes | Option text modifier to apply to the **Select** component for customizing the text style of unselected options in the drop-down menu. |
+| modifier | [Optional](arkts-arkui-optional-t.md)&lt;TextModifier&gt; | Yes | Option text modifier to apply to the **Select** component for customizing the text style of unselected options in the drop-down menu. |
 
+<a id="optionwidth"></a>
 ## optionWidth
 
 ```TypeScript
@@ -926,8 +963,9 @@ The **Select** component maintains 16 vp spacing from both left and right screen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Dimension \| OptionWidthMode | Yes | Width of the drop-down menu option. |
+| value | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) \| OptionWidthMode | Yes | Width of the drop-down menu option. |
 
+<a id="optionwidth-1"></a>
 ## optionWidth
 
 ```TypeScript
@@ -954,8 +992,9 @@ The **Select** component maintains 16 vp spacing from both left and right screen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| width | [Optional](arkts-arkui-optional-t.md)<Dimension \| OptionWidthMode> | Yes | Width of the drop-down menu option.<br>If **width** is set to **undefined**, it has no effect. In this case, the option width uses the default value, which is the width of two columns. |
+| width | [Optional](arkts-arkui-optional-t.md)&lt;Dimension \| OptionWidthMode&gt; | Yes | Width of the drop-down menu option.<br>If **width** is set to **undefined**, it has no effect. In this case, the option width uses the default value, which is the width of two columns. |
 
+<a id="selected"></a>
 ## selected
 
 ```TypeScript
@@ -964,9 +1003,9 @@ selected(value: number | Resource)
 
 Sets the index of the initially selected option in the drop-down menu, where the first option has an index of 0.When **selected** is set to an invalid value or is not set, the default default **-1** is used, which indicates no selection. When **selected** is set to **undefined** or **null**, the first option is selected.
 
-Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this attribute supports two-way binding through [$$](docroot://ui/state-management/arkts-two-way-sync.md).
 
-Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Since API version 18, this attribute supports two-way binding through [!!](docroot://ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -982,6 +1021,7 @@ Since API version 18, this attribute supports two-way binding through [!!](../..
 | --- | --- | --- | --- |
 | value | number \| Resource | Yes | Index of the initially selected option. The index is zero-based.<br>**Since:** 11 |
 
+<a id="selected-1"></a>
 ## selected
 
 ```TypeScript
@@ -990,7 +1030,7 @@ selected(numCount: Optional<number | Resource>)
 
 Sets the index of the initially selected option in the drop-down menu, where the first option has an index of 0.When **selected** is set to an invalid value or is not set, the default default **-1** is used, which indicates no selection. When **selected** is set to **undefined** or **null**, the first option is selected.
 
-This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+This attribute supports two-way binding through [$$](docroot://ui/state-management/arkts-two-way-sync.md) and [!!](docroot://ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 
@@ -1006,8 +1046,9 @@ This attribute supports two-way binding through [$$](../../../../ui/state-manage
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| numCount | [Optional](arkts-arkui-optional-t.md)<number \| Resource> | Yes | Index of the initially selected option.<br>When **numCount** is set to **undefined**, the first option is selected. |
+| numCount | [Optional](arkts-arkui-optional-t.md)&lt;number \| Resource&gt; | Yes | Index of the initially selected option.<br>When **numCount** is set to **undefined**, the first option is selected. |
 
+<a id="selectedoptionbgcolor"></a>
 ## selectedOptionBgColor
 
 ```TypeScript
@@ -1030,6 +1071,7 @@ Sets the background color of the selected option in the drop-down menu.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the selected option in the drop-down menu.<br>Default value:**$r('sys.color.ohos_id_color_component_activated')** with the opacity of **$r('sys.color.ohos_id_alpha_highlight_bg')** |
 
+<a id="selectedoptionbgcolor-1"></a>
 ## selectedOptionBgColor
 
 ```TypeScript
@@ -1052,8 +1094,9 @@ Sets the background color of the selected option in the drop-down menu. Compared
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resColor | [Optional](arkts-arkui-optional-t.md)<ResourceColor> | Yes | Background color of the selected option in the drop-down menu.<br>When **resColor** is set to **undefined**, the default value is a blend of **$r('sys.color.ohos_id_color_component_activated')** with the opacity of **$r('sys.color.ohos_id_alpha_highlight_bg')**. |
+| resColor | [Optional](arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Background color of the selected option in the drop-down menu.<br>When **resColor** is set to **undefined**, the default value is a blend of **$r('sys.color.ohos_id_color_component_activated')** with the opacity of **$r('sys.color.ohos_id_alpha_highlight_bg')**. |
 
+<a id="selectedoptionfont"></a>
 ## selectedOptionFont
 
 ```TypeScript
@@ -1076,6 +1119,7 @@ Sets the text font of the selected option in the drop-down menu. When **size** i
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Text font of the selected option in the drop-down menu.<br>Default value:<br>{<br>size: $r('sys.float.ohos_id_text_size_body1'),<br>weight: FontWeight.Regular<br>} |
 
+<a id="selectedoptionfont-1"></a>
 ## selectedOptionFont
 
 ```TypeScript
@@ -1098,8 +1142,9 @@ Sets the text font of the selected option in the drop-down menu. When **size** i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| selectFont | [Optional](arkts-arkui-optional-t.md)<Font> | Yes | Text font of the selected option in the drop-down menu.<br>If **selectFont** is set to **undefined**, the default value is used:<br>{<br>size: $r('sys.float.ohos_id_text_size_body1'),<br>weight: FontWeight.Regular<br>} |
+| selectFont | [Optional](arkts-arkui-optional-t.md)&lt;Font&gt; | Yes | Text font of the selected option in the drop-down menu.<br>If **selectFont** is set to **undefined**, the default value is used:<br>{<br>size: $r('sys.float.ohos_id_text_size_body1'),<br>weight: FontWeight.Regular<br>} |
 
+<a id="selectedoptionfontcolor"></a>
 ## selectedOptionFontColor
 
 ```TypeScript
@@ -1122,6 +1167,7 @@ Sets the font color of the selected option in the drop-down menu.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color of the selected option in the drop-down menu.<br>Default value:**$r('sys.color.ohos_id_color_text_primary_activated')** |
 
+<a id="selectedoptionfontcolor-1"></a>
 ## selectedOptionFontColor
 
 ```TypeScript
@@ -1144,8 +1190,9 @@ Sets the font color of the selected option in the drop-down menu. Compared with 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resColor | [Optional](arkts-arkui-optional-t.md)<ResourceColor> | Yes | Font color of the selected option in the drop-down menu.<br>If **resColor** is set to **undefined**, the default value **$r('sys.color.ohos_id_color_text_primary_activated')** is used. |
+| resColor | [Optional](arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Font color of the selected option in the drop-down menu.<br>If **resColor** is set to **undefined**, the default value **$r('sys.color.ohos_id_color_text_primary_activated')** is used. |
 
+<a id="selectedoptiontextmodifier"></a>
 ## selectedOptionTextModifier
 
 ```TypeScript
@@ -1158,7 +1205,7 @@ If both [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font)) an
 
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 20
 
@@ -1174,8 +1221,9 @@ If both [selectedOptionFont](SelectAttribute#selectedOptionFont(value: Font)) an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [Optional](arkts-arkui-optional-t.md)<TextModifier> | Yes | Selected-option text modifier to apply to the **Select** component for customizing the text style of selected options in the drop-down menu.<br>You can manage and maintain the text style as needed. |
+| modifier | [Optional](arkts-arkui-optional-t.md)&lt;TextModifier&gt; | Yes | Selected-option text modifier to apply to the **Select** component for customizing the text style of selected options in the drop-down menu.<br>You can manage and maintain the text style as needed. |
 
+<a id="showdefaultselectedicon"></a>
 ## showDefaultSelectedIcon
 
 ```TypeScript
@@ -1200,6 +1248,7 @@ Sets whether to display the default selection icon.
 | --- | --- | --- | --- |
 | show | boolean | Yes | Whether to display the default selection icon.<br>**true**: The default icon is displayed. **false**: The default icon is not displayed. The background color is highlighted to indicate that the icon is selected.<br>Default value: **false**<br>When **show** is set to **true** and the background color of the selected option is set, both the background color of the selected option and the icon selected by default are displayed. If the background color of the selected item is not set via **selectedOptionBgColor**,the background color is not highlighted and only the icon selected by default is displayed. |
 
+<a id="showinsubwindow"></a>
 ## showInSubWindow
 
 ```TypeScript
@@ -1222,8 +1271,9 @@ Sets whether the drop-down menu is displayed in the subwindow. If this API is no
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| showInSubWindow | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether the drop-down menu is displayed in the subwindow.<br>**true**: The drop-down menu is displayed in the subwindow.<br>**false**: The drop-down menu is not displayed in the subwindow. |
+| showInSubWindow | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether the drop-down menu is displayed in the subwindow.<br>**true**: The drop-down menu is displayed in the subwindow.<br>**false**: The drop-down menu is not displayed in the subwindow. |
 
+<a id="space"></a>
 ## space
 
 ```TypeScript
@@ -1246,8 +1296,9 @@ Sets the spacing between the text and arrow of a drop-down menu option. This att
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Spacing between the text and arrow of a drop-down menu option.<br>Default value: **8**<br  >Note: For the string type, percentage values are not supported. |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Spacing between the text and arrow of a drop-down menu option.<br>Default value: **8**<br   >Note: For the string type, percentage values are not supported. |
 
+<a id="space-1"></a>
 ## space
 
 ```TypeScript
@@ -1270,8 +1321,9 @@ Sets the spacing between the text and arrow of a drop-down menu option. This att
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| spaceLength | [Optional](arkts-arkui-optional-t.md)<Length> | Yes | Spacing between the text and arrow of an option.<br>If **spaceLength** is set to **undefined**, the default value **8** is used. |
+| spaceLength | [Optional](arkts-arkui-optional-t.md)&lt;Length&gt; | Yes | Spacing between the text and arrow of an option.<br>If **spaceLength** is set to **undefined**, the default value **8** is used. |
 
+<a id="textmodifier"></a>
 ## textModifier
 
 ```TypeScript
@@ -1282,7 +1334,7 @@ Creates a text modifier to customize the text style of the **Select** button. Af
 
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 20
 
@@ -1298,8 +1350,9 @@ Creates a text modifier to customize the text style of the **Select** button. Af
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| modifier | [Optional](arkts-arkui-optional-t.md)<TextModifier> | Yes | Text modifier to apply to the **Select** button for customizing the text style. |
+| modifier | [Optional](arkts-arkui-optional-t.md)&lt;TextModifier&gt; | Yes | Text modifier to apply to the **Select** button for customizing the text style. |
 
+<a id="value"></a>
 ## value
 
 ```TypeScript
@@ -1308,9 +1361,9 @@ value(value: ResourceStr)
 
 Sets the text content of drop-down button. After a menu option is selected, the button text will automatically update to display the selected option's text.
 
-Since API version 10, this attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this attribute supports two-way binding through [$$](docroot://ui/state-management/arkts-two-way-sync.md).
 
-Since API version 18, this attribute supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Since API version 18, this attribute supports two-way binding through [!!](docroot://ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 8
 
@@ -1326,6 +1379,7 @@ Since API version 18, this attribute supports two-way binding through [!!](../..
 | --- | --- | --- | --- |
 | value | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | Text of the drop-down button.<br>Note: If the text exceeds the column width, it will be truncated.<br>**Since:** 11 |
 
+<a id="value-1"></a>
 ## value
 
 ```TypeScript
@@ -1334,7 +1388,7 @@ value(resStr: Optional<ResourceStr>)
 
 Sets the text content of drop-down button. After a menu option is selected, the button text will automatically update to display the selected option's text. Compared with [value](SelectAttribute#value(value: ResourceStr)), this API supports the **undefined** type for the **resStr** parameter.
 
-This attribute supports two-way binding through [$$](../../../../ui/state-management/arkts-two-way-sync.md) and [!!](../../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+This attribute supports two-way binding through [$$](docroot://ui/state-management/arkts-two-way-sync.md) and [!!](docroot://ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 18
 
@@ -1350,5 +1404,5 @@ This attribute supports two-way binding through [$$](../../../../ui/state-manage
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resStr | [Optional](arkts-arkui-optional-t.md)<ResourceStr> | Yes | Text of the drop-down button.<br>If **resStr** is set to **undefined**,the previous value is retained. |
+| resStr | [Optional](arkts-arkui-optional-t.md)&lt;ResourceStr&gt; | Yes | Text of the drop-down button.<br>If **resStr** is set to **undefined**,the previous value is retained. |
 

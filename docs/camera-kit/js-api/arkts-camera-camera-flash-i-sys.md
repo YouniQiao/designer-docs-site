@@ -16,6 +16,7 @@ Flash extends [FlashQuery](arkts-camera-camera-flashquery-i.md)Provides APIs rel
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="enablelcdflash"></a>
 ## enableLcdFlash
 
 ```TypeScript

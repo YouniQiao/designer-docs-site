@@ -6,6 +6,7 @@
 import { connectedTag } from '@kit.ConnectivityKit';
 ```
 
+<a id="readndeftag"></a>
 ## readNdefTag
 
 ```TypeScript
@@ -30,7 +31,7 @@ Reads the NDEF Data.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the NDEF Data. |
+| Promise&lt;string&gt; | Returns the NDEF Data. |
 
 **Example**
 
@@ -47,6 +48,7 @@ connectedTag.readNdefTag().then((data) => {
 ```
 
 
+<a id="readndeftag-1"></a>
 ## readNdefTag
 
 ```TypeScript
@@ -71,7 +73,7 @@ Reads the NDEF Data.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes |  |
 
 **Example**
 

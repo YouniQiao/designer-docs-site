@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="getnetworkaccesspolicy"></a>
 ## getNetworkAccessPolicy
 
 ```TypeScript
@@ -34,7 +35,7 @@ Query the network access policy of the specified application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetworkAccessPolicy> | Returns the network access policy of the application. For details, see {@link NetworkAccessPolicy}. |
+| Promise&lt;NetworkAccessPolicy&gt; | Returns the network access policy of the application. For details, see {@link NetworkAccessPolicy}. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ policy
 ```
 
 
+<a id="getnetworkaccesspolicy-1"></a>
 ## getNetworkAccessPolicy
 
 ```TypeScript
@@ -86,7 +88,7 @@ Query the network access policy of all applications.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UidNetworkAccessPolicy> | the network access policy of all applications. |
+| Promise&lt;UidNetworkAccessPolicy&gt; | the network access policy of all applications. |
 
 **Error codes:**
 

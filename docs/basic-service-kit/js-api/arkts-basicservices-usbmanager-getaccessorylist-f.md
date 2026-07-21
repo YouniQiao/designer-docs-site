@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="getaccessorylist"></a>
 ## getAccessoryList
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the list of USB accessories connected to the host.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Readonly<USBAccessory>> | List of USB accessories (read-only). Currently, only one USB accessory is contained in the list. |
+| Array&lt;Readonly&lt;USBAccessory&gt;&gt; | List of USB accessories (read-only). Currently, only one USB accessory is contained in the list. |
 
 **Error codes:**
 

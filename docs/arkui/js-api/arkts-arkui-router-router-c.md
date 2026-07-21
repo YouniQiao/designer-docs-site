@@ -18,6 +18,7 @@ The **Router** module provides APIs to access pages through URIs.
 import { BackRouterOptions, DisableAlertBeforeBackPageOptions, RouterOptions, RouterState, EnableAlertBeforeBackPageOptions } from '@kit.ArkUI';
 ```
 
+<a id="back"></a>
 ## back
 
 ```TypeScript
@@ -47,6 +48,7 @@ Returns to the previous or a specified page.
 | --- | --- | --- | --- |
 | options | [BackRouterOptions](arkts-arkui-router-backrouteroptions-i.md) | No | For details, see **BackRouterOptions**. |
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -65,6 +67,7 @@ Clears all historical pages in the stack and retains only the current page at th
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="disablealertbeforebackpage"></a>
 ## disableAlertBeforeBackPage
 
 ```TypeScript
@@ -89,6 +92,7 @@ Disables the display of a confirm dialog box before returning to the previous pa
 | --- | --- | --- | --- |
 | options | [DisableAlertBeforeBackPageOptions](arkts-arkui-router-disablealertbeforebackpageoptions-i.md) | No | For details, see **DisableAlertBeforeBackPageOptions**. |
 
+<a id="enablealertbeforebackpage"></a>
 ## enableAlertBeforeBackPage
 
 ```TypeScript
@@ -113,6 +117,7 @@ Enables the display of a confirm dialog box before returning to the previous pag
 | --- | --- | --- | --- |
 | options | [EnableAlertBeforeBackPageOptions](arkts-arkui-router-enablealertbeforebackpageoptions-i.md) | Yes | For details, see **EnableAlertBeforeBackPageOptions**. |
 
+<a id="getlength"></a>
 ## getLength
 
 ```TypeScript
@@ -137,6 +142,7 @@ Obtains the number of pages in the current stack.
 | --- | --- |
 | string | Number of pages in the stack. The maximum value is **32**. |
 
+<a id="getparams"></a>
 ## getParams
 
 ```TypeScript
@@ -161,6 +167,7 @@ Obtains parameter information about the current page.
 | --- | --- |
 | [ParamsInterface](arkts-arkui-paramsinterface-t.md) | For details, see **ParamsInterface**. |
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript
@@ -185,6 +192,7 @@ Obtains state information about the current page.
 | --- | --- |
 | [RouterState](arkts-arkui-router-routerstate-i.md) | For details, see **RouterState**. |
 
+<a id="push"></a>
 ## push
 
 ```TypeScript
@@ -213,6 +221,7 @@ Navigates to a specified page in the application.
 | --- | --- | --- | --- |
 | options | [RouterOptions](arkts-arkui-router-routeroptions-i.md) | Yes | Page routing parameters. For details, see **RouterOptions**. |
 
+<a id="replace"></a>
 ## replace
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="cancelasbundle"></a>
 ## cancelAsBundle
 
 ```TypeScript
@@ -46,7 +47,7 @@ Cancels a notification published through the reminder agent. This API uses an as
 | id | number | Yes | Notification ID. |
 | representativeBundle | string | Yes | Bundle name of the application whose notification function is taken over by the reminder agent. |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -84,6 +85,7 @@ notificationManager.cancelAsBundle(0, representativeBundle, userId, cancelAsBund
 ```
 
 
+<a id="cancelasbundle-1"></a>
 ## cancelAsBundle
 
 ```TypeScript
@@ -114,7 +116,7 @@ Cancels a notification published through the reminder agent. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -148,6 +150,7 @@ notificationManager.cancelAsBundle(0, representativeBundle, userId).then(() => {
 ```
 
 
+<a id="cancelasbundle-2"></a>
 ## cancelAsBundle
 
 ```TypeScript
@@ -177,7 +180,7 @@ Cancels a notification published through the reminder agent. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

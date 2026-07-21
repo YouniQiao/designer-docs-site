@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Number--><!--Device-unnamed-interface Number-End-->
 
+<a id="toexponential"></a>
 ## toExponential
 
 ```TypeScript
@@ -24,6 +25,7 @@ Returns a string containing a number represented in exponential notation.
 | --- | --- |
 | string |  |
 
+<a id="tofixed"></a>
 ## toFixed
 
 ```TypeScript
@@ -46,6 +48,7 @@ Returns a string representing a number in fixed-point notation.
 | --- | --- |
 | string |  |
 
+<a id="tolocalestring"></a>
 ## toLocaleString
 
 ```TypeScript
@@ -69,6 +72,7 @@ Converts a number to a string by using the current or specified locale.
 | --- | --- |
 | string |  |
 
+<a id="toprecision"></a>
 ## toPrecision
 
 ```TypeScript
@@ -91,6 +95,7 @@ Returns a string containing a number represented either in exponential or fixed-
 | --- | --- |
 | string |  |
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -113,6 +118,7 @@ Returns a string representation of an object.
 | --- | --- |
 | string |  |
 
+<a id="valueof"></a>
 ## valueOf
 
 ```TypeScript

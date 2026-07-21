@@ -10,6 +10,7 @@ The module defines the callback to be invoked when auto-startup is set or cancel
 
 **System API:** This is a system API.
 
+<a id="onautostartupoff"></a>
 ## onAutoStartupOff
 
 ```TypeScript
@@ -34,6 +35,7 @@ Called when the auto-startup setting of an application component is canceled.
 | --- | --- | --- | --- |
 | info | [AutoStartupInfo](arkts-ability-common-autostartupinfo-t-sys.md) | Yes | Information about the target application component. |
 
+<a id="onautostartupon"></a>
 ## onAutoStartupOn
 
 ```TypeScript

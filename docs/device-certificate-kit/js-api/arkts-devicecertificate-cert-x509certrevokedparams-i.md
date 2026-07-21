@@ -74,7 +74,7 @@ crls?: Array<X509CRL>
 
 CRL list. Maximum count: 100.
 
-**Type:** Array<X509CRL>
+**Type:** Array&lt;X509CRL&gt;
 
 **Since:** 26.0.0
 
@@ -116,7 +116,7 @@ ocspResponses?: Array<Uint8Array>
 
 Preconfigured OCSP response data. Maximum count: 100.
 
-**Type:** Array<Uint8Array>
+**Type:** Array&lt;Uint8Array&gt;
 
 **Since:** 26.0.0
 
@@ -136,7 +136,7 @@ revocationFlags: Array<CertRevocationFlag>
 
 Revocation check flag. Array length range: [1,4]. The array must contain either CERT_REVOCATION_CRL_CHECK or CERT_REVOCATION_OCSP_CHECK.
 
-**Type:** Array<CertRevocationFlag>
+**Type:** Array&lt;CertRevocationFlag&gt;
 
 **Since:** 26.0.0
 

@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="castaudio"></a>
 ## castAudio
 
 ```TypeScript
@@ -28,9 +29,9 @@ Cast Audio to the remote devices or cast back local device
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| session | SessionToken \| 'all' | Yes | Specifies the sessionId which to send to remote. |
-| audioDevices | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<audio.AudioDeviceDescriptor> | Yes | Specifies the audio devices to cast. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully'all' means cast all the media audio of this device to remote. |
+| session | [SessionToken](arkts-avsession-avsession-sessiontoken-i-sys.md) \| 'all' | Yes | Specifies the sessionId which to send to remote. |
+| audioDevices | Array&lt;audio.AudioDeviceDescriptor&gt; | Yes | Specifies the audio devices to cast. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully'all' means cast all the media audio of this device to remote. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ audioRoutingManager.getDevices(audio.DeviceFlag.OUTPUT_DEVICES_FLAG).then((data)
 ```
 
 
+<a id="castaudio-1"></a>
 ## castAudio
 
 ```TypeScript
@@ -86,14 +88,14 @@ Cast Audio to the remote devices or cast back local device
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| session | SessionToken \| 'all' | Yes | Specifies the sessionId which to send to remote. |
-| audioDevices | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<audio.AudioDeviceDescriptor> | Yes | Specifies the audio devices to cast. |
+| session | [SessionToken](arkts-avsession-avsession-sessiontoken-i-sys.md) \| 'all' | Yes | Specifies the sessionId which to send to remote. |
+| audioDevices | Array&lt;audio.AudioDeviceDescriptor&gt; | Yes | Specifies the audio devices to cast. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully'all' means cast all the media audio of this device to remote. |
+| Promise&lt;void&gt; | void promise when executed successfully'all' means cast all the media audio of this device to remote. |
 
 **Error codes:**
 

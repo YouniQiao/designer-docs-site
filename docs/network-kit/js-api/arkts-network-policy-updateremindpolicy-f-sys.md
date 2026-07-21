@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="updateremindpolicy"></a>
 ## updateRemindPolicy
 
 ```TypeScript
@@ -31,7 +32,7 @@ Update the policy when the quota reaches the upper limit.
 | netType | [NetBearType](arkts-network-statistics-netbeartype-t.md) | Yes | {@link NetBearType}. |
 | simId | string | Yes | Specify the matched simId of quota policy when netType is cellular. |
 | remindType | [RemindType](arkts-network-policy-remindtype-e-sys.md) | Yes | {@link RemindType}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of updateRemindPolicy. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of updateRemindPolicy. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ policy.updateRemindPolicy(
 ```
 
 
+<a id="updateremindpolicy-1"></a>
 ## updateRemindPolicy
 
 ```TypeScript
@@ -92,7 +94,7 @@ Update the policy when the quota reaches the upper limit.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

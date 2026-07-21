@@ -30,6 +30,7 @@ Implements the proxy object returned during the execution of the custom page tra
 import { ArcSwiperAttribute, ArcSwiper, ArcDirection, ArcSwiperController, ArcDotIndicator } from '@kit.ArkUI';
 ```
 
+<a id="finishtransition"></a>
 ## finishTransition
 
 ```TypeScript

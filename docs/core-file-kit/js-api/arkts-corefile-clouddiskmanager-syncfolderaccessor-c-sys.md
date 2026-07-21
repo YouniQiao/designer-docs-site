@@ -16,6 +16,7 @@ A sync root management class that enables the File Manager to access the sync ro
 import { cloudDiskManager } from '@kit.CoreFileKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -67,6 +68,7 @@ struct Index {
 
 ```
 
+<a id="getallsyncfolders"></a>
 ## getAllSyncFolders
 
 ```TypeScript
@@ -89,7 +91,7 @@ Obtains information about all registered sync roots. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<SyncFolder>> | Promise that returns the sync root list of all cloud disk applications. |
+| Promise&lt;Array&lt;SyncFolder&gt;&gt; | Promise that returns the sync root list of all cloud disk applications. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="queryprintjoblist"></a>
 ## queryPrintJobList
 
 ```TypeScript
@@ -28,7 +29,7 @@ Queries all print jobs. This API uses an asynchronous callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<PrintJob>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;PrintJob&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ print.queryPrintJobList((err: BusinessError, printJobs : print.PrintJob[]) => {
 ```
 
 
+<a id="queryprintjoblist-1"></a>
 ## queryPrintJobList
 
 ```TypeScript
@@ -76,7 +78,7 @@ Queries all print jobs. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PrintJob>> | Promise used to return a list of all print jobs. |
+| Promise&lt;Array&lt;PrintJob&gt;&gt; | Promise used to return a list of all print jobs. |
 
 **Error codes:**
 

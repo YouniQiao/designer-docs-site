@@ -6,6 +6,7 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
+<a id="preloaduiextensionability"></a>
 ## preloadUIExtensionAbility
 
 ```TypeScript
@@ -36,7 +37,7 @@ Preloads a [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uie
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the ID of the preloaded [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md) instance for further clearing or management. |
+| Promise&lt;number&gt; | Promise used to return the ID of the preloaded [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md) instance for further clearing or management. |
 
 **Error codes:**
 

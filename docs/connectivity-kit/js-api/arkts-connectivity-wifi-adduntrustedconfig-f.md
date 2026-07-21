@@ -6,6 +6,7 @@
 import { wifi } from '@kit.ConnectivityKit';
 ```
 
+<a id="adduntrustedconfig"></a>
 ## addUntrustedConfig
 
 ```TypeScript
@@ -38,7 +39,7 @@ Adds a specified untrusted hotspot configuration.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the untrusted hotspot configuration is added, returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the untrusted hotspot configuration is added, returns {@code false} otherwise. |
 
 **Example**
 
@@ -75,6 +76,7 @@ try {
 ```
 
 
+<a id="adduntrustedconfig-1"></a>
 ## addUntrustedConfig
 
 ```TypeScript
@@ -102,7 +104,7 @@ Adds a specified untrusted hotspot configuration.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [WifiDeviceConfig](arkts-connectivity-wifi-wifideviceconfig-i.md) | Yes | Indicates the device configuration for connection to the Wi-Fi network. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes |  |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { tag } from '@kit.ConnectivityKit';
 ```
 
+<a id="registerforegrounddispatch"></a>
 ## registerForegroundDispatch
 
 ```TypeScript
@@ -30,7 +31,7 @@ Register tag foreground dispatch. Dispatches to this application only if a tag d
 | --- | --- | --- | --- |
 | elementName | [ElementName](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-elementname-t.md) | Yes | The element name of application, must include the bundleName and abilityName. |
 | discTech | number[] | Yes | The technologies list to set for discovering. From {@link NFC_A} to {@link MIFARE_ULTRALIGHT}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<TagInfo> | Yes | The callback to dispatched the TagInfo object for application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;TagInfo&gt; | Yes | The callback to dispatched the TagInfo object for application. |
 
 **Error codes:**
 

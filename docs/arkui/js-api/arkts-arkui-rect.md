@@ -40,7 +40,7 @@ Use new function to create Rect.Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | RectOptions \| RoundedRectOptions | No | Rect options |
+| options | [RectOptions](arkts-arkui-rectoptions-i.md) \| RoundedRectOptions | No | Rect options |
 
 ## Rect
 
@@ -70,7 +70,7 @@ Defines the constructor of Rect component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | RectOptions \| RoundedRectOptions | No | Options of the rectangle.<br>The **undefined** and **null** values are treated as invalid and will not take effect. |
+| options | [RectOptions](arkts-arkui-rectoptions-i.md) \| RoundedRectOptions | No | Options of the rectangle. <br>The **undefined** and **null** values are treated as invalid and will not take effect. |
 
 ## Summary
 

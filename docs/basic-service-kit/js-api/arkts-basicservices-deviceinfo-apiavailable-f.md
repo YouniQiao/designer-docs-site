@@ -6,6 +6,7 @@
 import { deviceInfo } from '@kit.BasicServicesKit';
 ```
 
+<a id="apiavailable"></a>
 ## apiAvailable
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether a specified API version is available on the current device.This A
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| version | string \| number | Yes | API version number to be verified. The value can be an integer or in the dotted format.  - String format with dots (e.g., "26.0.0", "5.0.1"):  - For API 26+ (version &gt;= 26.0.0): Represents both OpenHarmony and Distribution OS API versions  - For API 26- (version &lt; 26.0.0): Represents Distribution OS API version  - Number format (e.g., 13): Represents OpenHarmony SDK API version (API 26- only) |
+| version | string \| number | Yes | API version number to be verified. The value can be an integer or in the dotted format.   - String format with dots (e.g., "26.0.0", "5.0.1"):   - For API 26+ (version >= 26.0.0): Represents both OpenHarmony and Distribution OS API versions   - For API 26- (version < 26.0.0): Represents Distribution OS API version   - Number format (e.g., 13): Represents OpenHarmony SDK API version (API 26- only) |
 
 **Return value:**
 

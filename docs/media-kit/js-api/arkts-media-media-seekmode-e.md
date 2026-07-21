@@ -68,7 +68,7 @@ Applications can call [isSeekContinuousSupported](arkts-media-media-avplayer-i.m
 
 If the video source does not support this mode, calling **seek** will result in an **AVERR_SEEK_CONTINUOUS_UNSUPPORTED** error (see [AVErrorCode](arkts-media-media-averrorcode-e.md)), and the smoothness of frame updates will be compromised.
 
-This seek mode does not trigger the [on('seekDone')](arkts-media-media-avplayer-i.md#on-5)event.
+This seek mode does not trigger the [on('seekDone')](@ohos.multimedia.media:media.AVPlayer.on(type: 'seekDone', callback: Callback<int>))event.
 
 To exit this seeking mode, applications must call **seek(-1, SeekMode.SEEK_CONTINUOUS)** to end the seeking process.
 

@@ -6,6 +6,7 @@
 import { videoProcessingEngine } from '@kit.ImageKit';
 ```
 
+<a id="deinitializeenvironment"></a>
 ## deinitializeEnvironment
 
 ```TypeScript
@@ -26,7 +27,7 @@ Deinitialize global environment for image processing.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Error codes:**
 

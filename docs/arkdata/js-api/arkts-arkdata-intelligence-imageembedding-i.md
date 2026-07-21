@@ -14,6 +14,7 @@ Describes the image embedding functions of the multi-modal embedding model.
 import { intelligence } from '@kit.ArkData';
 ```
 
+<a id="getembedding"></a>
 ## getEmbedding
 
 ```TypeScript
@@ -38,7 +39,7 @@ Obtains the embedding vector of the given image.The model can handle images belo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | The promise used to return the embedding result. |
+| Promise&lt;Array&lt;number&gt;&gt; | The promise used to return the embedding result. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ imageEmbedding.getEmbedding(image)
 
 ```
 
+<a id="loadmodel"></a>
 ## loadModel
 
 ```TypeScript
@@ -83,7 +85,7 @@ Loads this image embedding model. If the loading fails, an error code is returne
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -107,6 +109,7 @@ imageEmbedding.loadModel()
 
 ```
 
+<a id="releasemodel"></a>
 ## releaseModel
 
 ```TypeScript
@@ -125,7 +128,7 @@ Releases this image embedding model. If the releasing fails, an error code is re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="getcallrestrictionstatus"></a>
 ## getCallRestrictionStatus
 
 ```TypeScript
@@ -30,7 +31,7 @@ Get call barring status.
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | type | [CallRestrictionType](arkts-telephony-call-callrestrictiontype-e-sys.md) | Yes | Indicates which type of call restriction to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RestrictionStatus> | Yes | Indicates the callback for getting the call restriction status. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RestrictionStatus&gt; | Yes | Indicates the callback for getting the call restriction status. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ call.getCallRestrictionStatus(0, 1, (err: BusinessError, data: call.RestrictionS
 ```
 
 
+<a id="getcallrestrictionstatus-1"></a>
 ## getCallRestrictionStatus
 
 ```TypeScript
@@ -89,7 +91,7 @@ Get call barring status.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RestrictionStatus> | Returns the call restriction status. |
+| Promise&lt;RestrictionStatus&gt; | Returns the call restriction status. |
 
 **Error codes:**
 

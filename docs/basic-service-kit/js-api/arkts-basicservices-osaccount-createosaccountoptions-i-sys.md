@@ -24,7 +24,7 @@ allowedPreinstalledBundles?: Array<string>
 
 Trustlist of the preinstalled applications, which can be installed on the device. The default value is **std::nullopt**.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 19
 
@@ -42,7 +42,7 @@ disallowedPreinstalledBundles?: Array<string>
 
 Forbidden list of the preinstalled applications, which cannot be installed on the device. The value is left empty by default.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 19
 

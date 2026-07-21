@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -29,7 +30,7 @@ Compared with notificationManager.cancel(id, label, callback), which includes th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | id | number | Yes | Notification ID, used to identify the target notification. This value is specified by the **id** field of NotificationRequest when a notification is published. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ notificationManager.cancel(0, cancelCallback);
 ```
 
 
+<a id="cancel-1"></a>
 ## cancel
 
 ```TypeScript
@@ -83,7 +85,7 @@ Compared with notificationManager.cancel(id, callback), which only passes in the
 | --- | --- | --- | --- |
 | id | number | Yes | Notification ID, used to identify the target notification. This value is specified by the **id** field of NotificationRequest when a notification is published. |
 | label | string | Yes | Notification tag, used to distinguish notifications with different tags under the same ID. This value is specified by the **label** field of NotificationRequest when a notification is published. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -113,6 +115,7 @@ notificationManager.cancel(0, "label", cancelCallback);
 ```
 
 
+<a id="cancel-2"></a>
 ## cancel
 
 ```TypeScript
@@ -140,7 +143,7 @@ After cancellation, the corresponding notification will be removed from the noti
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

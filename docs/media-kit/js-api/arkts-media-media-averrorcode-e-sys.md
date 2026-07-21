@@ -1,6 +1,6 @@
 # AVErrorCode
 
-Enumerates the types of [Media error codes](../../../../reference/apis-media-kit/errorcode-media.md).
+Enumerates the types of [Media error codes](docroot://reference/apis-media-kit/errorcode-media.md).
 
 **Since:** 9
 

@@ -10,6 +10,7 @@ Context is the context base class of the stage model. It is used to access appli
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="createbundlecontext"></a>
 ## createBundleContext
 
 ```TypeScript
@@ -21,7 +22,7 @@ Creates the context based on the bundle name.
 > **NOTE**  
 >  
 > If there are multiple modules in the stage model, resource ID conflicts may occur. You are advised to use  
-> [application.createModuleContext](arkts-ability-application-createmodulecontext-f-sys.md#createmodulecontext-2)  
+> [application.createModuleContext](arkts-ability-application-createmodulecontext-f.md#createmodulecontext-1)  
 > instead.  
 >  
 > This API has been supported since API version 9 and deprecated since API version 12. You are advised to use  
@@ -64,6 +65,7 @@ Creates the context based on the bundle name.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied, non-system app called system api. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="createmodulecontext"></a>
 ## createModuleContext
 
 ```TypeScript
@@ -75,7 +77,7 @@ Creates the context based on the bundle name and module name.
 > **NOTE**  
 >  
 > This API has been supported since API version 9 and deprecated since API version 12. You are advised to use  
-> [application.createModuleContext](arkts-ability-application-createmodulecontext-f-sys.md#createmodulecontext-2)  
+> [application.createModuleContext](arkts-ability-application-createmodulecontext-f.md#createmodulecontext-1)  
 > instead.
 
 **Since:** 9
@@ -111,6 +113,7 @@ Creates the context based on the bundle name and module name.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="createmoduleresourcemanager"></a>
 ## createModuleResourceManager
 
 ```TypeScript
@@ -152,13 +155,14 @@ Creates a resource management object for a module.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied, non-system app called system api. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="createsystemhspmoduleresourcemanager"></a>
 ## createSystemHspModuleResourceManager
 
 ```TypeScript
 createSystemHspModuleResourceManager(bundleName: string, moduleName: string): resmgr.ResourceManager
 ```
 
-Creates a [resource manager](../../apis-localization-kit/arkts-apis/arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager-1)for an OEM-preset [system-level HSP](../../../../quick-start/application-package-glossary.md#system-level-hsp).
+Creates a [resource manager](../../apis-localization-kit/arkts-apis/arkts-localization-resourcemanager-getresourcemanager-f.md#getresourcemanager-1)for an OEM-preset [system-level HSP](docroot://quick-start/application-package-glossary.md#system-level-hsp).
 
 **Since:** 12
 

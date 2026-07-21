@@ -6,6 +6,7 @@
 import { startupManager } from '@kit.AbilityKit';
 ```
 
+<a id="getstartuptaskresult"></a>
 ## getStartupTaskResult
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the execution result of a startup task or .so file preloading task.
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Execution result of [init](@ohos.app.appstartup.StartupTask:StartupTask#init(context: AbilityStageContext)) of the startup task if a startup task name is passed.<br>undefined if a .so file name is passed. |
+| Object | Execution result of [init](arkts-ability-app-appstartup-startuptask-startuptask-c.md#init-1) of the startup task if a startup task name is passed.<br>undefined if a .so file name is passed. |
 
 **Error codes:**
 

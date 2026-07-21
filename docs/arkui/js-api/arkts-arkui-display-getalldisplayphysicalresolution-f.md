@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="getalldisplayphysicalresolution"></a>
 ## getAllDisplayPhysicalResolution
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains all the display modes supported by the current device, along with the ph
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<DisplayPhysicalResolution>> | Promise used to return all the DisplayPhysicalResolution objects. |
+| Promise&lt;Array&lt;DisplayPhysicalResolution&gt;&gt; | Promise used to return all the DisplayPhysicalResolution objects. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { router } from '@kit.ArkUI';
 ```
 
+<a id="replace"></a>
 ## replace
 
 ```TypeScript
@@ -18,7 +19,7 @@ Replaces the current page with another one in the application and destroys the c
 
 **Deprecated since:** 9
 
-**Substitutes:** replaceUrl(options:
+**Substitutes:** [replaceUrl(options:](arkts-arkui-arkui-uicontext-router-c.md#replaceurl-1)
 
 <!--Device-router-function replace(options: RouterOptions): void--><!--Device-router-function replace(options: RouterOptions): void-End-->
 

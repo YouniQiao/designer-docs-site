@@ -6,6 +6,7 @@
 import { screen } from '@kit.ArkUI';
 ```
 
+<a id="destroyvirtualscreen"></a>
 ## destroyVirtualScreen
 
 ```TypeScript
@@ -27,7 +28,7 @@ Destroys a virtual screen. This API uses an asynchronous callback to return the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | screenId | number | Yes | Screen ID. The value must be an integer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the virtual screen is destroyed,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the virtual screen is destroyed,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ screen.destroyVirtualScreen(screenId, (err: BusinessError) => {
 ```
 
 
+<a id="destroyvirtualscreen-1"></a>
 ## destroyVirtualScreen
 
 ```TypeScript
@@ -84,7 +86,7 @@ Destroys a virtual screen. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

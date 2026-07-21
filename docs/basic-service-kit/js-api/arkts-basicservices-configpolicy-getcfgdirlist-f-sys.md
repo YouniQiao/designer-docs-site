@@ -6,6 +6,7 @@
 import { configPolicy } from '@kit.BasicServicesKit';
 ```
 
+<a id="getcfgdirlist"></a>
 ## getCfgDirList
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains a list of configuration level directories, in ascending order of priorit
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the result. If the list of configuration level directories is successfully obtained, <strong>err</strong> is <strong>undefined</strong>,and <strong>data</strong> is the obtained list. Otherwise, <strong>err</strong> is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the result. If the list of configuration level directories is successfully obtained, <strong>err</strong> is <strong>undefined</strong>,and <strong>data</strong> is the obtained list. Otherwise, <strong>err</strong> is an error object. |
 
 **Error codes:**
 
@@ -35,6 +36,7 @@ Obtains a list of configuration level directories, in ascending order of priorit
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 
 
+<a id="getcfgdirlist-1"></a>
 ## getCfgDirList
 
 ```TypeScript
@@ -55,5 +57,5 @@ Obtains a list of configuration level directories, in ascending order of priorit
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the list of configuration level directories. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the list of configuration level directories. |
 

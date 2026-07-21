@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getipneightable"></a>
 ## getIpNeighTable
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtain the IP and MAC address correspondence table of the neighboring network.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NetIpMacInfo>> | The promise returned by the function. |
+| Promise&lt;Array&lt;NetIpMacInfo&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

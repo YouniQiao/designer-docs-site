@@ -16,6 +16,7 @@ Provides APIs for cloud enhancement management, including managing the tasks of 
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="cancelallcloudenhancementtasks"></a>
 ## cancelAllCloudEnhancementTasks
 
 ```TypeScript
@@ -38,7 +39,7 @@ Cancels all cloud enhancement tasks.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="cancelcloudenhancementtasks"></a>
 ## cancelCloudEnhancementTasks
 
 ```TypeScript
@@ -88,13 +90,13 @@ Cancels cloud enhancement tasks.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoAssets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of [PhotoAsset](arkts-medialibrary-photoaccesshelper-photoasset-i.md) objects whose cloud enhancement tasks are to be canceled. |
+| photoAssets | Array&lt;PhotoAsset&gt; | Yes | Array of [PhotoAsset](arkts-medialibrary-photoaccesshelper-photoasset-i.md) objects whose cloud enhancement tasks are to be canceled. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -135,6 +137,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="getcloudenhancementinstance"></a>
 ## getCloudEnhancementInstance
 
 ```TypeScript
@@ -198,6 +201,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="getcloudenhancementpair"></a>
 ## getCloudEnhancementPair
 
 ```TypeScript
@@ -226,7 +230,7 @@ Obtains the photo after cloud enhancement.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset> | Promise used to return the photo after cloud enhancement. |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the photo after cloud enhancement. |
 
 **Error codes:**
 
@@ -268,6 +272,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="prioritizecloudenhancementtask"></a>
 ## prioritizeCloudEnhancementTask
 
 ```TypeScript
@@ -296,7 +301,7 @@ Prioritizes a cloud enhancement task.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -338,6 +343,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="querycloudenhancementtaskstate"></a>
 ## queryCloudEnhancementTaskState
 
 ```TypeScript
@@ -366,7 +372,7 @@ Queries information about a cloud enhancement task.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CloudEnhancementTaskState> | Promise used to return the information about the cloud enhancement task. |
+| Promise&lt;CloudEnhancementTaskState&gt; | Promise used to return the information about the cloud enhancement task. |
 
 **Error codes:**
 
@@ -434,6 +440,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="submitcloudenhancementtasks"></a>
 ## submitCloudEnhancementTasks
 
 ```TypeScript
@@ -456,14 +463,14 @@ Submits cloud enhancement tasks. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoAssets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | [PhotoAsset](arkts-medialibrary-photoaccesshelper-photoasset-i.md) to enhance. |
+| photoAssets | Array&lt;PhotoAsset&gt; | Yes | [PhotoAsset](arkts-medialibrary-photoaccesshelper-photoasset-i.md) to enhance. |
 | hasCloudWatermark | boolean | Yes | Whether to add a cloud enhancement watermark to the enhanced images. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -503,6 +510,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="submitcloudenhancementtasks-1"></a>
 ## submitCloudEnhancementTasks
 
 ```TypeScript
@@ -537,7 +545,7 @@ Submits cloud enhancement tasks. You can select the trigger mode of the cloud en
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| photoAssets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | [PhotoAsset](arkts-medialibrary-photoaccesshelper-photoasset-i.md) to enhance. |
+| photoAssets | Array&lt;PhotoAsset&gt; | Yes | [PhotoAsset](arkts-medialibrary-photoaccesshelper-photoasset-i.md) to enhance. |
 | hasCloudWatermark | boolean | Yes | Whether to add a cloud watermark to the enhanced image. **true** to add,**false** otherwise. |
 | triggerMode | number | No | Trigger mode of the cloud enhancement task.<br>**- 0**: manually triggered.<br>**- 1**: automatically triggered.<br>The default value is **0**. |
 
@@ -545,7 +553,7 @@ Submits cloud enhancement tasks. You can select the trigger mode of the cloud en
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -586,6 +594,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="synccloudenhancementtaskstatus"></a>
 ## syncCloudEnhancementTaskStatus
 
 ```TypeScript
@@ -608,7 +617,7 @@ Synchronizes the cloud enhancement task status.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

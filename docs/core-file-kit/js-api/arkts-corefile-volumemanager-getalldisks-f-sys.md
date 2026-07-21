@@ -6,6 +6,7 @@
 import { volumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getalldisks"></a>
 ## getAllDisks
 
 ```TypeScript
@@ -30,7 +31,7 @@ Querying Information About All Disks.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Disk>> | return Promise |
+| Promise&lt;Array&lt;Disk&gt;&gt; | return Promise |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="disableethernetinterface"></a>
 ## disableEthernetInterface
 
 ```TypeScript
@@ -30,7 +31,7 @@ Disable the ethernet interface.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned when the ethernet interface is disabled. |
+| Promise&lt;void&gt; | The promise returned when the ethernet interface is disabled. |
 
 **Error codes:**
 

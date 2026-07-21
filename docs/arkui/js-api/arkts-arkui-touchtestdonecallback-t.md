@@ -20,6 +20,6 @@ Represents the callback type for dynamically specifying gesture recognizer parti
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | BaseGestureEvent | Yes | Basic gesture event information after[hit testing](../../../../ui/arkts-interaction-basic-principles.md#hit-testing) completes.<br>**NOTE**<br>Only**BaseGestureEvent** information is contained, excluding child class extensions.<br>The values of**axisHorizontal** and **axisVertical** are **0**. |
-| recognizers | Array&lt;GestureRecognizer&gt; | Yes | All gesture recognizers after[hit testing](../../../../ui/arkts-interaction-basic-principles.md#hit-testing) completes. |
+| event | [BaseGestureEvent](../arkts-apis/arkts-arkui-basegestureevent-i.md) | Yes | Basic gesture event information after [hit testing](docroot://ui/arkts-interaction-basic-principles.md#hit-testing) completes.<br>**NOTE**<br>Only **BaseGestureEvent** information is contained, excluding child class extensions.<br>The values of **axisHorizontal** and **axisVertical** are **0**.  |
+| recognizers | Array&lt;GestureRecognizer&gt; | Yes | All gesture recognizers after [hit testing](docroot://ui/arkts-interaction-basic-principles.md#hit-testing) completes.  |
 

@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="sendsystemcontrolcommand"></a>
 ## sendSystemControlCommand
 
 ```TypeScript
@@ -29,7 +30,7 @@ Send system control command.The system automatically selects the recipient.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | command | [AVControlCommand](arkts-avsession-avsession-avcontrolcommand-i.md) | Yes | The command to be sent. See {@link AVControlCommand} |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ avSession.sendSystemControlCommand(avcommand, () => {
 ```
 
 
+<a id="sendsystemcontrolcommand-1"></a>
 ## sendSystemControlCommand
 
 ```TypeScript
@@ -96,7 +98,7 @@ Send system control command.The system automatically selects the recipient.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 

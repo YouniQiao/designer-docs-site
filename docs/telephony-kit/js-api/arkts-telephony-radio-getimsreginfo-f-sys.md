@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="getimsreginfo"></a>
 ## getImsRegInfo
 
 ```TypeScript
@@ -30,7 +31,7 @@ Get the IMS registration state info of specified IMS service type.
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | imsType | [ImsServiceType](arkts-telephony-radio-imsservicetype-e-sys.md) | Yes | Indicates the ims service type of the {@link ImsServiceType}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ImsRegInfo> | Yes | Indicates an instance of the {@link ImsRegInfo} class. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ImsRegInfo&gt; | Yes | Indicates an instance of the {@link ImsRegInfo} class. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ radio.getImsRegInfo(slotId, mode, (err: BusinessError, data: radio.ImsRegInfo) =
 ```
 
 
+<a id="getimsreginfo-1"></a>
 ## getImsRegInfo
 
 ```TypeScript
@@ -91,7 +93,7 @@ Get the IMS registration state info of specified IMS service type.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ImsRegInfo> | Returns an instance of the {@link ImsRegInfo} class. |
+| Promise&lt;ImsRegInfo&gt; | Returns an instance of the {@link ImsRegInfo} class. |
 
 **Error codes:**
 

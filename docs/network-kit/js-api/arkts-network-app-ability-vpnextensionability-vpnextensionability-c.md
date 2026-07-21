@@ -14,6 +14,7 @@ class of vpn extension ability.
 import { VpnExtensionContext } from '@kit.NetworkKit';
 ```
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -50,6 +51,7 @@ class MyVpnExtAbility extends VpnExtensionAbility {
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript

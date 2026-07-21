@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="startmanualnetworkscan"></a>
 ## startManualNetworkScan
 
 ```TypeScript
@@ -29,7 +30,7 @@ start ManualNetworkScan , Real-time report.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<NetworkSearchRealTimeResult> | Yes | Indicates the callback for manual network scan |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;NetworkSearchRealTimeResult&gt; | Yes | Indicates the callback for manual network scan |
 
 **Error codes:**
 

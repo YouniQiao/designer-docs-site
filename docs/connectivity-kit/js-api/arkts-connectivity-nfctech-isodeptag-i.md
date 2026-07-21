@@ -10,6 +10,7 @@ Provides methods for accessing IsoDep tag.
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="gethilayerresponse"></a>
 ## getHiLayerResponse
 
 ```TypeScript
@@ -32,6 +33,7 @@ Gets IsoDep HiLayer Response bytes of the tag, which is based on NfcB RF technol
 | --- | --- |
 | number[] | Returns HiLayer Response bytes, the length could be 0. |
 
+<a id="gethistoricalbytes"></a>
 ## getHistoricalBytes
 
 ```TypeScript
@@ -54,6 +56,7 @@ Gets IsoDep Historical bytes of the tag, which is based on NfcA RF technology.It
 | --- | --- |
 | number[] | Returns the Historical bytes, the length could be 0. |
 
+<a id="isextendedapdusupported"></a>
 ## isExtendedApduSupported
 
 ```TypeScript
@@ -76,7 +79,7 @@ Checks if extended apdu length supported or not.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns true if extended apdu length supported, otherwise false. |
+| Promise&lt;boolean&gt; | Returns true if extended apdu length supported, otherwise false. |
 
 **Error codes:**
 
@@ -87,6 +90,7 @@ Checks if extended apdu length supported or not.
 | [3100201](../errorcode-nfc.md#3100201-tag-readwrite-error) | The tag running state is abnormal in the service. |
 | [3100204](../errorcode-nfc.md#3100204-nfc-chip-io-exception) | The tag I/O operation failed. |
 
+<a id="isextendedapdusupported-1"></a>
 ## isExtendedApduSupported
 
 ```TypeScript
@@ -109,7 +113,7 @@ Checks if extended apdu length supported or not.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The callback. |
 
 **Error codes:**
 

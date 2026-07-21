@@ -72,7 +72,7 @@ numeric: string
 
 Format of the output result. It determines whether numeric values are used to represent relative dates or times in the formatting result. The value can be **always** or **auto**.
 
-For details about their display effects, see [Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 23](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -96,7 +96,7 @@ style: string
 
 Length of an internationalized message. The value can be **long**, **short**, or **narrow**.
 
-For details about their display effects, see [Table 24](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 24](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 

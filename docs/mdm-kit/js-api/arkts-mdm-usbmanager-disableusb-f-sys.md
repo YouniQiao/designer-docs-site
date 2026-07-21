@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.MDMKit';
 ```
 
+<a id="disableusb"></a>
 ## disableUsb
 
 ```TypeScript
@@ -18,7 +19,7 @@ Enables or disables USB.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setDisallowedPolicy(admin:
+**Substitutes:** [setDisallowedPolicy(admin:](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_MANAGE_USB
 

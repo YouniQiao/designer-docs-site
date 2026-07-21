@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="isinsandbox"></a>
 ## isInSandbox
 
 ```TypeScript
@@ -26,7 +27,7 @@ This API is used to determine whether the current application is running in a DL
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the application is running in a sandbox; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the application is running in a sandbox; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ dlpPermission.isInSandbox().then((isInSandbox) => { // Check whether the applica
 ```
 
 
+<a id="isinsandbox-1"></a>
 ## isInSandbox
 
 ```TypeScript
@@ -69,7 +71,7 @@ This API is used to determine whether the current application is running in a DL
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. The value **true** means the application is running in a sandbox; the value **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. The value **true** means the application is running in a sandbox; the value **false** means the opposite. |
 
 **Error codes:**
 

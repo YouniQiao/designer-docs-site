@@ -1,6 +1,6 @@
 # Stat
 
-Represents detailed file information. Before calling any API of the **Stat()** class, use [stat()](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiostat) to create a **Stat** instance.
+Represents detailed file information. Before calling any API of the **Stat()** class, use [stat()](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileiostat) to create a **Stat** instance.
 
 **Since:** 9
 
@@ -14,6 +14,7 @@ Represents detailed file information. Before calling any API of the **Stat()** c
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="isblockdevice"></a>
 ## isBlockDevice
 
 ```TypeScript
@@ -49,6 +50,7 @@ let isBLockDevice = fileIo.statSync(filePath).isBlockDevice();
 
 ```
 
+<a id="ischaracterdevice"></a>
 ## isCharacterDevice
 
 ```TypeScript
@@ -84,6 +86,7 @@ let isCharacterDevice = fileIo.statSync(filePath).isCharacterDevice();
 
 ```
 
+<a id="isdirectory"></a>
 ## isDirectory
 
 ```TypeScript
@@ -121,6 +124,7 @@ let isDirectory = fileIo.statSync(dirPath).isDirectory();
 
 ```
 
+<a id="isfifo"></a>
 ## isFIFO
 
 ```TypeScript
@@ -156,6 +160,7 @@ let isFIFO = fileIo.statSync(filePath).isFIFO();
 
 ```
 
+<a id="isfile"></a>
 ## isFile
 
 ```TypeScript
@@ -193,6 +198,7 @@ let isFile = fileIo.statSync(filePath).isFile();
 
 ```
 
+<a id="issocket"></a>
 ## isSocket
 
 ```TypeScript
@@ -228,6 +234,7 @@ let isSocket = fileIo.statSync(filePath).isSocket();
 
 ```
 
+<a id="issymboliclink"></a>
 ## isSymbolicLink
 
 ```TypeScript

@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface MapConstructor--><!--Device-unnamed-interface MapConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -14,8 +15,9 @@ new(): Map<any, any>
 
 | Type | Description |
 | --- | --- |
-| [Map](arkts-na-lib-es2015-collection-map-i.md)<any, any> |  |
+| Map&lt;any, any&gt; |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -28,11 +30,11 @@ new <K, V>(iterable?: Iterable<readonly [K, V]> | null): Map<K, V>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| iterable | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<readonly [K, V]> \| null | No |  |
+| iterable | Iterable&lt;readonly [K, V]&gt; \| null | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Map](arkts-na-lib-es2015-collection-map-i.md)<K, V> |  |
+| Map&lt;K, V&gt; |  |
 

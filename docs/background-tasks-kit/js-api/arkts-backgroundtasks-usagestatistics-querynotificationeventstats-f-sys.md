@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="querynotificationeventstats"></a>
 ## queryNotificationEventStats
 
 ```TypeScript
@@ -42,7 +43,7 @@ Queries app notification number within a specified period identified by the star
 | --- | --- | --- | --- |
 | begin | number | Yes | Indicates the start time of the query period, in milliseconds.<br> Unit:ms |
 | end | number | Yes | Indicates the end time of the query period, in milliseconds.<br> Unit:ms |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<DeviceEventStats>> | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the {@link DeviceEventStats} object Array containing the event states data. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;DeviceEventStats&gt;&gt; | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the {@link DeviceEventStats} object Array containing the event states data. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -77,6 +78,7 @@ usageStatistics.queryNotificationEventStats(0, 20000000000000, (err: BusinessErr
 ```
 
 
+<a id="querynotificationeventstats-1"></a>
 ## queryNotificationEventStats
 
 ```TypeScript
@@ -106,7 +108,7 @@ Queries app notification number within a specified period identified by the star
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<DeviceEventStats>> | the promise returned by queryNotificationEventStats.the {@link DeviceEventStats} object Array containing the event states data. |
+| Promise&lt;Array&lt;DeviceEventStats&gt;&gt; | the promise returned by queryNotificationEventStats.the {@link DeviceEventStats} object Array containing the event states data. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { inputMethodSystemPanelManager } from '@kit.IMEKit';
 ```
 
+<a id="connectsystemchannel"></a>
 ## connectSystemChannel
 
 ```TypeScript
@@ -30,7 +31,7 @@ Connect system channel for the panel and input method.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

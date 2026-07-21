@@ -16,6 +16,7 @@ Manager MAP MSE profile.
 import { map } from '@kit.ConnectivityKit';
 ```
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -53,6 +54,7 @@ Disconnect the map connection with the remote device.
 | 2900004 | Profile not supported. |
 | 2900099 | Operation failed. |
 
+<a id="getmessageaccessauthorization"></a>
 ## getMessageAccessAuthorization
 
 ```TypeScript
@@ -81,7 +83,7 @@ Get the message access authorization.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AccessAuthorization> | Returns the promise object. |
+| Promise&lt;AccessAuthorization&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -96,6 +98,7 @@ Get the message access authorization.
 | 2900004 | Profile not supported. |
 | 2900099 | Operation failed. |
 
+<a id="setmessageaccessauthorization"></a>
 ## setMessageAccessAuthorization
 
 ```TypeScript
@@ -125,7 +128,7 @@ Set the message access authorization.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

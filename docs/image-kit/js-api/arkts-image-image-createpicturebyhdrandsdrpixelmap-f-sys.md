@@ -6,6 +6,7 @@
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="createpicturebyhdrandsdrpixelmap"></a>
 ## createPictureByHdrAndSdrPixelMap
 
 ```TypeScript
@@ -33,7 +34,7 @@ Creates a Picture object based on an HDR PixelMap and an SDR PixelMap. The syste
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Picture> | Picture object that contains the SDR PixelMap and gainmap, both in RGBA8888 format. |
+| Promise&lt;Picture&gt; | Picture object that contains the SDR PixelMap and gainmap, both in RGBA8888 format. |
 
 **Error codes:**
 
@@ -81,6 +82,7 @@ async function CreatePictureTest(context: Context) {
 ```
 
 
+<a id="createpicturebyhdrandsdrpixelmap-1"></a>
 ## createPictureByHdrAndSdrPixelMap
 
 ```TypeScript
@@ -114,7 +116,7 @@ Creates a Picture object by a HDR PixelMap and a SDR PixelMap with specified opt
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Picture> | Returns the Picture object. |
+| Promise&lt;Picture&gt; | Returns the Picture object. |
 
 **Error codes:**
 

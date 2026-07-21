@@ -6,6 +6,7 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
+<a id="notifyupdatepackages"></a>
 ## notifyUpdatePackages
 
 ```TypeScript
@@ -40,7 +41,7 @@ Notifies the system of the update packages. In intranet updates, call this API t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. An error object will be thrown if the operation fails. |
+| Promise&lt;void&gt; | Promise that returns no value. An error object will be thrown if the operation fails. |
 
 **Error codes:**
 

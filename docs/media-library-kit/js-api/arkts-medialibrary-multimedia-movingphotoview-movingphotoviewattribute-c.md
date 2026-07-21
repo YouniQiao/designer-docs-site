@@ -16,6 +16,7 @@ Defines the moving photo view attribute functions.
 import { PixelMapFormat, MovingPhotoViewAttribute, MovingPhotoView, MovingPhotoViewController, DynamicRangeMode } from '@kit.MediaLibraryKit';
 ```
 
+<a id="autoplay"></a>
 ## autoPlay
 
 ```TypeScript
@@ -44,6 +45,7 @@ Sets whether to allow automatic play. If the value is true, the moving photo sta
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="autoplayperiod"></a>
 ## autoPlayPeriod
 
 ```TypeScript
@@ -73,6 +75,7 @@ Sets automatic play period, If not set, the moving photo plays in the full video
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="enableanalyzer"></a>
 ## enableAnalyzer
 
 ```TypeScript
@@ -101,6 +104,7 @@ Sets whether to enable moving photo analyzer. If the value is true, the moving p
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="muted"></a>
 ## muted
 
 ```TypeScript
@@ -129,6 +133,7 @@ Called when judging whether the video is muted.
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="objectfit"></a>
 ## objectFit
 
 ```TypeScript
@@ -149,7 +154,7 @@ Called when determining the zoom type of the view.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [ImageFit](../../apis-arkui/arkts-apis/arkts-arkui-enums-imagefit-e.md) | Yes |  |
+| value | [ImageFit](../../apis-arkui/arkts-apis/arkts-arkui-imagefit-e.md) | Yes |  |
 
 **Return value:**
 
@@ -157,6 +162,7 @@ Called when determining the zoom type of the view.
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="oncomplete"></a>
 ## onComplete
 
 ```TypeScript
@@ -185,6 +191,7 @@ Called when the image load completed.
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="onerror"></a>
 ## onError
 
 ```TypeScript
@@ -213,6 +220,7 @@ Called when playback fails.
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="onfinish"></a>
 ## onFinish
 
 ```TypeScript
@@ -241,6 +249,7 @@ Called when the video playback ends.
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="onpause"></a>
 ## onPause
 
 ```TypeScript
@@ -269,6 +278,7 @@ Called when the video playback paused.
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="onprepared"></a>
 ## onPrepared
 
 ```TypeScript
@@ -297,6 +307,7 @@ Called when playback prepared.
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="onstart"></a>
 ## onStart
 
 ```TypeScript
@@ -325,6 +336,7 @@ Called when the video is played.
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="onstop"></a>
 ## onStop
 
 ```TypeScript
@@ -353,6 +365,7 @@ Called when the video playback stopped.
 | --- | --- |
 | [MovingPhotoViewAttribute](arkts-medialibrary-multimedia-movingphotoview-movingphotoviewattribute-c.md) | @syscap SystemCapability.FileManagement.PhotoAccessHelper.Core@crossplatform@atomicservice |
 
+<a id="repeatplay"></a>
 ## repeatPlay
 
 ```TypeScript

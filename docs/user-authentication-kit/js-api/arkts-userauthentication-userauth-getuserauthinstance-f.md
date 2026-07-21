@@ -6,6 +6,7 @@
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="getuserauthinstance"></a>
 ## getUserAuthInstance
 
 ```TypeScript
@@ -38,7 +39,7 @@ Obtains a [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-
 
 | Type | Description |
 | --- | --- |
-| [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) | **UserAuthInstance** instance that supports UI. After obtaining the instance, call [on('result')](arkts-userauthentication-userauth-userauthinstance-i.md#on-1) to subscribe to the authentication result, and then call [start](arkts-userauthentication-userauth-userauthinstance-i.md#start-1) to start authentication.After the authentication is complete, you can obtain the authentication result through a callback. |
+| [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) | **UserAuthInstance** instance that supports UI. After obtaining the instance, call [on('result')](userAuth.UserAuthInstance.on(type: 'result', callback: IAuthCallback)) to subscribe to the authentication result, and then call [start](arkts-userauthentication-userauth-userauthinstance-i.md#start-1) to start authentication.After the authentication is complete, you can obtain the authentication result through a callback. |
 
 **Error codes:**
 

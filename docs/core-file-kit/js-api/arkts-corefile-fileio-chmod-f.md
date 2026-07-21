@@ -1,5 +1,6 @@
 # chmod
 
+<a id="chmod"></a>
 ## chmod
 
 ```TypeScript
@@ -27,9 +28,10 @@ Changes file permissions. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 
+<a id="chmod-1"></a>
 ## chmod
 
 ```TypeScript
@@ -52,5 +54,5 @@ Changes file permissions. This API uses an asynchronous callback to return the r
 | --- | --- | --- | --- |
 | path | string | Yes | Application sandbox path of the file. |
 | mode | number | Yes | Permissions on the file. You can specify multiple permissions, separated using a bitwise OR operator (\|).<br>- **0o700**: The owner has the read, write, and execute permissions.<br>- **0o400**: The owner has the read permission.<br>- **0o200**: The owner has the write permission.<br>- **0o100**: The owner has the execute permission.<br>- **0o070**: The user group has the read, write, and execute permissions.<br>- **0o040**:The user group has the read permission.<br>- **0o020**: The user group has the write permission.<br>- **0o010**:The user group has the execute permission.<br>- **0o007**: Other users have the read, write, and execute permissions.<br>- **0o004**: Other users have the read permission.<br>- **0o002**: Other users have the write permission.<br>- **0o001**: Other users have the execute permission. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file permissions are changed asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when the file permissions are changed asynchronously. |
 

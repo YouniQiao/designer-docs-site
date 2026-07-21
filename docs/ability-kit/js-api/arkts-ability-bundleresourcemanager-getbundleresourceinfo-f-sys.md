@@ -6,6 +6,7 @@
 import { bundleResourceManager } from '@kit.AbilityKit';
 ```
 
+<a id="getbundleresourceinfo"></a>
 ## getBundleResourceInfo
 
 ```TypeScript
@@ -47,6 +48,7 @@ Obtains the resource information of an application based on the given bundle nam
 | [17700001](../errorcode-bundle.md#17700001-bundle-name-does-not-exist) | The specified bundleName is not found. |
 
 
+<a id="getbundleresourceinfo-1"></a>
 ## getBundleResourceInfo
 
 ```TypeScript

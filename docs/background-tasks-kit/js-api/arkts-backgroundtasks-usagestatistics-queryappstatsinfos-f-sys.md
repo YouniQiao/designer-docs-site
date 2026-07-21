@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="queryappstatsinfos"></a>
 ## queryAppStatsInfos
 
 ```TypeScript
@@ -37,7 +38,7 @@ This method queries usage information at the {@link #BY_OPTIMIZED} interval by d
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AppStatsMap> | the promise returned by queryAppStatsInfos.the {@link AppStatsMap} objects containing the usage information about each application. |
+| Promise&lt;AppStatsMap&gt; | the promise returned by queryAppStatsInfos.the {@link AppStatsMap} objects containing the usage information about each application. |
 
 **Error codes:**
 

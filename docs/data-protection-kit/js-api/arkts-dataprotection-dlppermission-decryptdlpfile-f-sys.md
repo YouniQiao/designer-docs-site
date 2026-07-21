@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="decryptdlpfile"></a>
 ## decryptDlpFile
 
 ```TypeScript
@@ -35,14 +36,14 @@ This API decrypts DLP files into plaintext files, which is applicable to exporti
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dlpFd | number | Yes | FD of the DLP file to be decrypted. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of **fd** is less than 0, n error log is generated, and the function stops running. If the value of **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
-| plaintextFd | number | Yes | FD of the decrypted file. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;, the excess part will be truncated. |
+| dlpFd | number | Yes | FD of the DLP file to be decrypted. The value range is [0, 2<sup>31</sup>-1]. If the value of **fd** is less than 0, n error log is generated, and the function stops running. If the value of **fd** is greater than 2<sup>31</sup>-1, the excess part will be truncated. |
+| plaintextFd | number | Yes | FD of the decrypted file. The value range is [0, 2<sup>31</sup>-1]. If the value of **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd** is greater than 2<sup>31</sup>, the excess part will be truncated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

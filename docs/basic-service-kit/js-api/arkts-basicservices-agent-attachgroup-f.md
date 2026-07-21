@@ -6,6 +6,7 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="attachgroup"></a>
 ## attachGroup
 
 ```TypeScript
@@ -33,7 +34,7 @@ If any task ID does not meet the attachment conditions, all tasks in the list wi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

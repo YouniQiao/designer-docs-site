@@ -10,6 +10,7 @@ In addition to the universal attributes, the following attributes are supported.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="editable"></a>
 ## editable
 
 ```TypeScript
@@ -32,6 +33,7 @@ Sets whether to enable edit mode, where the list item can be deleted or moved.
 | --- | --- | --- | --- |
 | value | boolean \| EditMode | Yes |  |
 
+<a id="onselect"></a>
 ## onSelect
 
 ```TypeScript
@@ -54,8 +56,9 @@ Triggered when the selected state of the list item for multiselect changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | (isSelected: boolean) => void | Yes |  |
+| event | (isSelected: boolean) =&gt; void | Yes |  |
 
+<a id="selectable"></a>
 ## selectable
 
 ```TypeScript
@@ -80,6 +83,7 @@ Sets whether the list item is selectable for multiselect.This attribute takes ef
 | --- | --- | --- | --- |
 | value | boolean | Yes |  |
 
+<a id="selected"></a>
 ## selected
 
 ```TypeScript
@@ -106,6 +110,7 @@ Sets whether the list item is selected. This attribute supports two-way binding 
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether the list item is selected. |
 
+<a id="sticky"></a>
 ## sticky
 
 ```TypeScript
@@ -128,8 +133,9 @@ Sets the sticky effect of the list item.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Sticky](arkts-arkui-list-item-sticky-e.md) | Yes |  |
+| value | [Sticky](arkts-arkui-sticky-e.md) | Yes |  |
 
+<a id="swipeaction"></a>
 ## swipeAction
 
 ```TypeScript
@@ -150,5 +156,5 @@ Sets the swipe action item displayed when the list item is swiped out from the s
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [SwipeActionOptions](arkts-arkui-list-item-swipeactionoptions-i.md) | Yes | Swipe action item displayed when the list item is swiped out from the screen edge. |
+| value | [SwipeActionOptions](arkts-arkui-swipeactionoptions-i.md) | Yes | Swipe action item displayed when the list item is swiped out from the screen edge. |
 

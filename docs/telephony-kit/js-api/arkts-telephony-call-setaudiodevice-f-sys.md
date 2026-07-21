@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="setaudiodevice"></a>
 ## setAudioDevice
 
 ```TypeScript
@@ -29,7 +30,7 @@ Set the audio device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | device | [AudioDevice](arkts-telephony-call-audiodevice-i-sys.md) | Yes | Indicates the device of audio. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setAudioDevice. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setAudioDevice. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ call.setAudioDevice(audioDevice, (err: BusinessError) => {
 ```
 
 
+<a id="setaudiodevice-1"></a>
 ## setAudioDevice
 
 ```TypeScript
@@ -90,7 +92,7 @@ Set the audio device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setAudioDevice. |
+| Promise&lt;void&gt; | The promise returned by the setAudioDevice. |
 
 **Error codes:**
 

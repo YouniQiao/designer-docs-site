@@ -14,6 +14,7 @@ Lock operation's options
 import { ArkTSUtils } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -56,7 +57,7 @@ signal: AbortSignal<T> | null
 
 The object used to abort the async operation. If signal.aborted is true, the callback will not be called.
 
-**Type:** AbortSignal<T> | null
+**Type:** AbortSignal&lt;T&gt; \| null
 
 **Since:** 12
 

@@ -6,6 +6,7 @@
 import { systemTime } from '@kit.BasicServicesKit';
 ```
 
+<a id="setdate"></a>
 ## setDate
 
 ```TypeScript
@@ -30,8 +31,8 @@ Sets the system date. This API uses an asynchronous callback to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | Target date to set. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| date | Date | Yes | Target date to set. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ try {
 ```
 
 
+<a id="setdate-1"></a>
 ## setDate
 
 ```TypeScript
@@ -85,13 +87,13 @@ Sets the system date. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | Target date to set. |
+| date | Date | Yes | Target date to set. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

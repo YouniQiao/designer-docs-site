@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.MDMKit';
 ```
 
+<a id="addinstallationallowedappdistributiontypes"></a>
 ## addInstallationAllowedAppDistributionTypes
 
 ```TypeScript
@@ -31,7 +32,7 @@ For details about the distribution type of the application signing certificate, 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| appDistributionTypes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AppDistributionType> | Yes | Distribution types of the application signing certificate. |
+| appDistributionTypes | Array&lt;AppDistributionType&gt; | Yes | Distribution types of the application signing certificate. |
 
 **Error codes:**
 

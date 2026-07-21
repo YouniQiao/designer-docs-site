@@ -6,6 +6,7 @@
 import { userFileManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getuserfilemgr"></a>
 ## getUserFileMgr
 
 ```TypeScript

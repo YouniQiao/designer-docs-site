@@ -38,7 +38,7 @@ Operation that triggers the permission state change.
 permissionName: Permissions
 ```
 
-Permissions whose authorization state changes. For details about the permissions, see [Application Permissions](../../../../security/AccessToken/app-permissions.md).
+Permissions whose authorization state changes. For details about the permissions, see [Application Permissions](docroot://security/AccessToken/app-permissions.md).
 
 **Type:** Permissions
 

@@ -34,7 +34,7 @@ abilityStartSettings?: Record<string, Object>
 
 Indicates the special start setting used in starting ability.The ability of this property is same as abilityStartSetting. If both are set, this property will be used.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 11
 

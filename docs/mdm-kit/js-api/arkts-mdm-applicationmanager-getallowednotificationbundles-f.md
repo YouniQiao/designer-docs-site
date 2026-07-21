@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="getallowednotificationbundles"></a>
 ## getAllowedNotificationBundles
 
 ```TypeScript
@@ -28,14 +29,14 @@ Gets applications that are allowed to send notifications.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | admin indicates the enterprise admin extension ability information. |
+| admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) \| null | Yes | admin indicates the enterprise admin extension ability information. |
 | accountId | number | Yes | accountId indicates the ID of OS account.The value must be an integer greater than or equal to 0. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | returns the list of bundle names of the applications. |
+| Array&lt;string&gt; | returns the list of bundle names of the applications. |
 
 **Error codes:**
 

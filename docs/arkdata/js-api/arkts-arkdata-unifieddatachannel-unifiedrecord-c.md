@@ -14,6 +14,7 @@ An abstract definition of the data content supported by the UDMF. A **UnifiedRec
 import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
+<a id="addentry"></a>
 ## addEntry
 
 ```TypeScript
@@ -73,6 +74,7 @@ unifiedData.addRecord(record);
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -98,6 +100,7 @@ let unifiedRecord = new unifiedDataChannel.UnifiedRecord();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -169,6 +172,7 @@ let pixelMapRecord =
 
 ```
 
+<a id="getentries"></a>
 ## getEntries
 
 ```TypeScript
@@ -191,7 +195,7 @@ Obtains all the data in the current data record.
 
 | Type | Description |
 | --- | --- |
-| [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, ValueType> | Values and types obtained. |
+| [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, ValueType&gt; | Values and types obtained. |
 
 **Example**
 
@@ -243,6 +247,7 @@ for (let i = 0; i < records.length; i++) {
 
 ```
 
+<a id="getentry"></a>
 ## getEntry
 
 ```TypeScript
@@ -330,6 +335,7 @@ for (let i = 0; i < records.length; i++) {
 
 ```
 
+<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -375,6 +381,7 @@ if (records[0].getType() == uniformTypeDescriptor.UniformDataType.PLAIN_TEXT) {
 
 ```
 
+<a id="gettypes"></a>
 ## getTypes
 
 ```TypeScript
@@ -397,7 +404,7 @@ Obtains all the data types in the data record. This API can be called using the 
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Array of [UniformDataType](arkts-arkdata-uniformtypedescriptor-uniformdatatype-e.md)s obtained. |
+| Array&lt;string&gt; | Array of [UniformDataType](arkts-arkdata-uniformtypedescriptor-uniformdatatype-e.md)s obtained. |
 
 **Example**
 
@@ -444,6 +451,7 @@ for (let i = 0; i < records.length; i++) {
 
 ```
 
+<a id="getvalue"></a>
 ## getValue
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="getcandidateconfigs"></a>
 ## getCandidateConfigs
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtain the list of all existed candidate Wi-Fi configurations which added by our
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WifiDeviceConfig> | Returns the list of all existed Wi-Fi configurations you created on your application. |
+| Array&lt;WifiDeviceConfig&gt; | Returns the list of all existed Wi-Fi configurations you created on your application. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { encryptedVolumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="updatecryptpasswd"></a>
 ## updateCryptPasswd
 
 ```TypeScript
@@ -38,7 +39,7 @@ Updating the Password of an Encrypted Volume Device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | return Promise |
+| Promise&lt;void&gt; | return Promise |
 
 **Error codes:**
 

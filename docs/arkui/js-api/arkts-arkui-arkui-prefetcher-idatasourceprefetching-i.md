@@ -1,8 +1,8 @@
 # IDataSourcePrefetching
 
-Extends the [IDataSource](../arkts-components/arkts-arkui-lazy-for-each-idatasource-i.md) API to add data prefetching capability to your data source.
+Extends the [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md) API to add data prefetching capability to your data source.
 
-**Inheritance/Implementation:** IDataSourcePrefetching extends [IDataSource](../arkts-components/arkts-arkui-lazy-for-each-idatasource-i.md)
+**Inheritance/Implementation:** IDataSourcePrefetching extends [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md)
 
 **Since:** 12
 
@@ -16,6 +16,7 @@ Extends the [IDataSource](../arkts-components/arkts-arkui-lazy-for-each-idatasou
 import { IDataSourcePrefetching, BasicPrefetcher, IPrefetcher } from '@kit.ArkUI';
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -44,8 +45,9 @@ Cancels the prefetching of a specified data item from the dataset. This API can 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise when this API is executed asynchronously; no return value when this API is executed synchronously. The promise only indicates that the operation is completed and contains no actual return content. |
+| Promise&lt;void&gt; | Promise when this API is executed asynchronously; no return value when this API is executed synchronously. The promise only indicates that the operation is completed and contains no actual return content. |
 
+<a id="prefetch"></a>
 ## prefetch
 
 ```TypeScript
@@ -74,5 +76,5 @@ Prefetches a specified data item from the dataset. This API can be either synchr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise when this API is executed asynchronously; no return value when this API is executed synchronously. The promise only indicates that the operation is completed and contains no actual return content. |
+| Promise&lt;void&gt; | Promise when this API is executed asynchronously; no return value when this API is executed synchronously. The promise only indicates that the operation is completed and contains no actual return content. |
 

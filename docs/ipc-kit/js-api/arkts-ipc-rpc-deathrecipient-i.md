@@ -14,6 +14,7 @@ Subscribes to death notifications of a remote object. When the remote object is 
 import { rpc } from '@kit.IPCKit';
 ```
 
+<a id="onremotedied"></a>
 ## onRemoteDied
 
 ```TypeScript

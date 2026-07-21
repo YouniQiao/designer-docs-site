@@ -6,6 +6,7 @@
 import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="getresourceid"></a>
 ## getResourceId
 
 ```TypeScript
@@ -33,7 +34,7 @@ Obtain the resource ID of the provider.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | The promise returned by the function. |
+| Promise&lt;string&gt; | The promise returned by the function. |
 
 **Error codes:**
 

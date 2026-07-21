@@ -6,6 +6,7 @@
 import { privacyManager } from '@kit.AbilityKit';
 ```
 
+<a id="getpermissionusedtypeinfos"></a>
 ## getPermissionUsedTypeInfos
 
 ```TypeScript
@@ -41,7 +42,7 @@ Obtains information about how a sensitive permission is used by an application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PermissionUsedTypeInfo>> | Promise used to return the list of permission access type information. |
+| Promise&lt;Array&lt;PermissionUsedTypeInfo&gt;&gt; | Promise used to return the list of permission access type information. |
 
 **Error codes:**
 

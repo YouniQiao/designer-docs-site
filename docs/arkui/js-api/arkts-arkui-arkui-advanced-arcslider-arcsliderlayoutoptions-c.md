@@ -4,6 +4,8 @@ Defines the layout of the arc slider.
 
 **Since:** 18
 
+**Decorator:** @ObservedV2
+
 <!--Device-unnamed-declare class ArcSliderLayoutOptions--><!--Device-unnamed-declare class ArcSliderLayoutOptions-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Circle
@@ -14,6 +16,7 @@ Defines the layout of the arc slider.
 import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSliderValueOptions, ArcSliderStyleOptionsConstructorOptions, ArcSlider, ArcSliderLayoutOptionsConstructorOptions, ArcSliderOptions, ArcSliderStyleOptions, ArcSliderPosition, ArcSliderOptionsConstructorOptions } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

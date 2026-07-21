@@ -6,13 +6,14 @@
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="isrtl"></a>
 ## isRTL
 
 ```TypeScript
 export function isRTL(locale: string): boolean
 ```
 
-Checks whether a language is an RTL language. For an RTL language,[UI mirroring](../../../../internationalization/i18n-ui-design.md#ui-mirroring) is required.
+Checks whether a language is an RTL language. For an RTL language,[UI mirroring](docroot://internationalization/i18n-ui-design.md#ui-mirroring) is required.
 
 **Since:** 7
 
@@ -26,7 +27,7 @@ Checks whether a language is an RTL language. For an RTL language,[UI mirroring]
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string | Yes | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
+| locale | string | Yes | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
 
 **Return value:**
 

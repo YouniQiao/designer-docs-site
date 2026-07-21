@@ -25,6 +25,7 @@ Provides APIs for listening for UI component behavior changes.
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="addglobalgesturelistener"></a>
 ## addGlobalGestureListener
 
 ```TypeScript
@@ -54,6 +55,7 @@ Registers a callback to listen for gesture triggering information.
 | option | [GestureObserverConfigs](arkts-arkui-arkui-uicontext-gestureobserverconfigs-i.md) | Yes | Configuration options for binding the global listener. |
 | callback | [GestureListenerCallback](arkts-arkui-gesturelistenercallback-t.md) | Yes | Callback triggered when the gesture state updates. |
 
+<a id="off"></a>
 ## off('navDestinationUpdate')
 
 ```TypeScript
@@ -78,8 +80,9 @@ Removes a callback function that was previously registered with `on()`.
 | --- | --- | --- | --- |
 | type | 'navDestinationUpdate' | Yes | The type of event to remove the listener for. Must be 'navDestinationUpdate'. |
 | options | { navigationId: ResourceStr } | Yes | The options object. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | No | The callback function to remove. If not provided, all callbacks for the given event type and navigation ID will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | No | The callback function to remove. If not provided, all callbacks for the given event type and navigation ID will be removed. |
 
+<a id="off-1"></a>
 ## off('navDestinationUpdate')
 
 ```TypeScript
@@ -103,8 +106,9 @@ Removes a callback function that was previously registered with `on()`.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'navDestinationUpdate' | Yes | The type of event to remove the listener for. Must be 'navDestinationUpdate'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | No | The callback function to remove. If not provided, all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | No | The callback function to remove. If not provided, all callbacks for the given event type will be removed. |
 
+<a id="off-2"></a>
 ## off('navDestinationUpdateByUniqueId')
 
 ```TypeScript
@@ -129,8 +133,9 @@ Removes a callback function that was previously registered with `on()`.
 | --- | --- | --- | --- |
 | type | 'navDestinationUpdateByUniqueId' | Yes | The type of event to remove the listener for. Must be 'navDestinationUpdateByUniqueId'. |
 | navigationUniqueId | number | Yes | The uniqueId of the navigation. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | No | The callback function to remove. If not provided, all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | No | The callback function to remove. If not provided, all callbacks for the given event type will be removed. |
 
+<a id="off-3"></a>
 ## off('scrollEvent')
 
 ```TypeScript
@@ -155,8 +160,9 @@ Removes a callback function that was previously registered with `on()`.
 | --- | --- | --- | --- |
 | type | 'scrollEvent' | Yes | The type of event to remove the listener for. Must be 'scrollEvent'. |
 | options | observer.ObserverOptions | Yes | The options object. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.ScrollEventInfo> | No | The callback function to remove. If not provided, all callbacks for the given event type and scroll ID will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.ScrollEventInfo&gt; | No | The callback function to remove. If not provided, all callbacks for the given event type and scroll ID will be removed. |
 
+<a id="off-4"></a>
 ## off('scrollEvent')
 
 ```TypeScript
@@ -180,8 +186,9 @@ Removes a callback function that was previously registered with `on()`.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'scrollEvent' | Yes | The type of event to remove the listener for. Must be 'scrollEvent'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.ScrollEventInfo> | No | The callback function to remove. If not provided, all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.ScrollEventInfo&gt; | No | The callback function to remove. If not provided, all callbacks for the given event type will be removed. |
 
+<a id="off-5"></a>
 ## off('routerPageUpdate')
 
 ```TypeScript
@@ -205,8 +212,9 @@ Removes a callback function that was previously registered with `on()`.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'routerPageUpdate' | Yes | The type of event to remove the listener for. Must be 'routerPageUpdate'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.RouterPageInfo> | No | The callback function to remove. If not provided, all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.RouterPageInfo&gt; | No | The callback function to remove. If not provided, all callbacks for the given event type will be removed. |
 
+<a id="off-6"></a>
 ## off('densityUpdate')
 
 ```TypeScript
@@ -230,8 +238,9 @@ Unregisters the listener for screen pixel density changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'densityUpdate' | Yes | Event type. The value **'densityUpdate'** indicates the pixel density changes of the screen. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.DensityInfo> | No | Target listener to unregister. If no parameter is provided,all screen pixel density change listeners for the current [UIContext](arkts-arkui-uicontext.md) are removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.DensityInfo&gt; | No | Target listener to unregister. If no parameter is provided,all screen pixel density change listeners for the current [UIContext](arkts-arkui-uicontext.md) are removed. |
 
+<a id="off-7"></a>
 ## off('willDraw')
 
 ```TypeScript
@@ -255,8 +264,9 @@ Unregisters the listener for drawing instruction dispatch in each frame.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'willDraw' | Yes | Event event. The value **'willDraw'** indicates whether drawing is about to occur. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Target listener to unregister. If no parameter is provided, all drawing instruction dispatch listeners are unregistered. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Target listener to unregister. If no parameter is provided, all drawing instruction dispatch listeners are unregistered. |
 
+<a id="off-8"></a>
 ## off('didLayout')
 
 ```TypeScript
@@ -280,8 +290,9 @@ Unregisters the listener for layout completion status in each frame.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'didLayout' | Yes | Event type. The value **'didLayout'** indicates whether the layout has been completed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | No | Target listener to unregister. If no parameter is provided, all layout completion listeners are unregistered. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Target listener to unregister. If no parameter is provided, all layout completion listeners are unregistered. |
 
+<a id="off-9"></a>
 ## off('navDestinationSwitch')
 
 ```TypeScript
@@ -314,8 +325,9 @@ Removes a callback function that was previously registered with `on()`.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'navDestinationSwitch' | Yes | The type of event to remove the listener for. Must be 'navDestinationSwitch'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationSwitchInfo> | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationSwitchInfo&gt; | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
 
+<a id="off-10"></a>
 ## off('navDestinationSwitch')
 
 ```TypeScript
@@ -352,8 +364,9 @@ Removes a callback function that was previously registered with `on()`.
 | --- | --- | --- | --- |
 | type | 'navDestinationSwitch' | Yes | The type of event to remove the listener for. Must be 'navDestinationSwitch'. |
 | observerOptions | observer.NavDestinationSwitchObserverOptions | Yes | Options. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationSwitchInfo> | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationSwitchInfo&gt; | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
 
+<a id="off-11"></a>
 ## off('willClick')
 
 ```TypeScript
@@ -379,6 +392,7 @@ Removes a callback function to be called before clickEvent is called.
 | type | 'willClick' | Yes | The type of event to remove the listener for. |
 | callback | [ClickEventListenerCallback](arkts-arkui-clickeventlistenercallback-t.md) | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
 
+<a id="off-12"></a>
 ## off('didClick')
 
 ```TypeScript
@@ -404,6 +418,7 @@ Removes a callback function to be called after clickEvent is called.
 | type | 'didClick' | Yes | The type of event to remove the listener for. |
 | callback | [ClickEventListenerCallback](arkts-arkui-clickeventlistenercallback-t.md) | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
 
+<a id="off-13"></a>
 ## off('willClick')
 
 ```TypeScript
@@ -429,6 +444,7 @@ Removes a callback function to be called before tapGesture is called.
 | type | 'willClick' | Yes | The type of event to remove the listener for. |
 | callback | [GestureEventListenerCallback](arkts-arkui-gestureeventlistenercallback-t.md) | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
 
+<a id="off-14"></a>
 ## off('didClick')
 
 ```TypeScript
@@ -454,13 +470,14 @@ Removes a callback function to be called after tapGesture is called.
 | type | 'didClick' | Yes | The type of event to remove the listener for. |
 | callback | [GestureEventListenerCallback](arkts-arkui-gestureeventlistenercallback-t.md) | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
 
+<a id="off-15"></a>
 ## off('beforePanStart')
 
 ```TypeScript
 off(type: 'beforePanStart', callback?: PanListenerCallback): void
 ```
 
-Unregisters the listener for pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) pre-execution events, canceling callbacks registered via [on('beforePanStart')](arkts-arkui-arkui-uicontext-uiobserver-c.md#on-16).
+Unregisters the listener for pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) pre-execution events, canceling callbacks registered via [on('beforePanStart')](UIObserver#on(type: 'beforePanStart', callback: PanListenerCallback)).
 
 **Since:** 19
 
@@ -476,16 +493,17 @@ Unregisters the listener for pan gesture [onActionStart](arkts-arkui-gesture-pan
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'beforePanStart' | Yes | Event type. The value is fixed at **'beforePanStart'**, indicating command dispatch before the execution of the pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1)event. |
-| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | No | Target listener to unregister. If no parameter is provided, all callback listeners for command dispatch before the execution of the pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) event will be removed. |
+| type | 'beforePanStart' | Yes | Event type. The value is fixed at **'beforePanStart'**, indicating command dispatch before the execution of the pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1)event. |
+| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | No | Target listener to unregister. If no parameter is provided, all callback listeners for command dispatch before the execution of the pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) event will be removed. |
 
+<a id="off-16"></a>
 ## off('beforePanEnd')
 
 ```TypeScript
 off(type: 'beforePanEnd', callback?: PanListenerCallback): void
 ```
 
-Unregisters the listener for pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) pre-execution events,canceling callbacks registered via [on('beforePanEnd')](arkts-arkui-arkui-uicontext-uiobserver-c.md#on-17).
+Unregisters the listener for pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) pre-execution events,canceling callbacks registered via [on('beforePanEnd')](UIObserver#on(type: 'beforePanEnd', callback: PanListenerCallback)).
 
 **Since:** 19
 
@@ -501,16 +519,17 @@ Unregisters the listener for pan gesture [onActionEnd](arkts-arkui-gesture-pange
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'beforePanEnd' | Yes | Event type. The value is fixed at **'beforePanEnd'**, indicating command dispatch before the execution of the pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) event. |
-| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | No | Target listener to unregister. If no parameter is provided, all callback listeners for command dispatch before the execution of the pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) event will be removed. |
+| type | 'beforePanEnd' | Yes | Event type. The value is fixed at **'beforePanEnd'**, indicating command dispatch before the execution of the pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) event. |
+| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | No | Target listener to unregister. If no parameter is provided, all callback listeners for command dispatch before the execution of the pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) event will be removed. |
 
+<a id="off-17"></a>
 ## off('afterPanStart')
 
 ```TypeScript
 off(type: 'afterPanStart', callback?: PanListenerCallback): void
 ```
 
-Unregisters the listener for pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) post-execution events, canceling callbacks registered via [on('afterPanStart')](arkts-arkui-arkui-uicontext-uiobserver-c.md#on-18).
+Unregisters the listener for pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) post-execution events, canceling callbacks registered via [on('afterPanStart')](UIObserver#on(type: 'afterPanStart', callback: PanListenerCallback)).
 
 **Since:** 19
 
@@ -526,16 +545,17 @@ Unregisters the listener for pan gesture [onActionStart](arkts-arkui-gesture-pan
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'afterPanStart' | Yes | Event type. The value is fixed at **'afterPanStart'**, indicating command dispatch after the execution of the pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) event. |
-| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | No | Target listener to unregister. If no parameter is provided, all callback listeners for command dispatch after the execution of the pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) event will be removed. |
+| type | 'afterPanStart' | Yes | Event type. The value is fixed at **'afterPanStart'**, indicating command dispatch after the execution of the pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) event. |
+| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | No | Target listener to unregister. If no parameter is provided, all callback listeners for command dispatch after the execution of the pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) event will be removed. |
 
+<a id="off-18"></a>
 ## off('afterPanEnd')
 
 ```TypeScript
 off(type: 'afterPanEnd', callback?: PanListenerCallback): void
 ```
 
-Unregisters the listener for pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) post-execution events, canceling callbacks registered via [on('afterPanEnd')](arkts-arkui-arkui-uicontext-uiobserver-c.md#on-19).
+Unregisters the listener for pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) post-execution events, canceling callbacks registered via [on('afterPanEnd')](UIObserver#on(type: 'afterPanEnd', callback: PanListenerCallback)).
 
 **Since:** 19
 
@@ -551,9 +571,10 @@ Unregisters the listener for pan gesture [onActionEnd](arkts-arkui-gesture-pange
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'afterPanEnd' | Yes | Event type. The value is fixed at **'afterPanEnd'**, indicating command dispatch after the execution of the pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) event. |
-| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | No | Target listener to unregister. If no parameter is provided, all callback listeners for command dispatch after the execution of the pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) event will be removed. |
+| type | 'afterPanEnd' | Yes | Event type. The value is fixed at **'afterPanEnd'**, indicating command dispatch after the execution of the pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) event. |
+| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | No | Target listener to unregister. If no parameter is provided, all callback listeners for command dispatch after the execution of the pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) event will be removed. |
 
+<a id="off-19"></a>
 ## off('tabContentUpdate')
 
 ```TypeScript
@@ -578,8 +599,9 @@ Removes a callback function that was previously registered with `on()`.
 | --- | --- | --- | --- |
 | type | 'tabContentUpdate' | Yes | The type of event to remove the listener for. Must be 'tabContentUpdate'. |
 | options | observer.ObserverOptions | Yes | The options object. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TabContentInfo> | No | The callback function to remove. If not provided,all callbacks for the given event type and Tabs ID will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TabContentInfo&gt; | No | The callback function to remove. If not provided,all callbacks for the given event type and Tabs ID will be removed. |
 
+<a id="off-20"></a>
 ## off('tabContentUpdate')
 
 ```TypeScript
@@ -603,8 +625,9 @@ Removes a callback function that was previously registered with `on()`.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'tabContentUpdate' | Yes | The type of event to remove the listener for. Must be 'tabContentUpdate'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TabContentInfo> | No | The callback function to remove. If not provided,all callbacks for the given event type and Tabs ID will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TabContentInfo&gt; | No | The callback function to remove. If not provided,all callbacks for the given event type and Tabs ID will be removed. |
 
+<a id="off-21"></a>
 ## off('tabChange')
 
 ```TypeScript
@@ -629,8 +652,9 @@ Removes a callback function that was previously registered with `on()`.
 | --- | --- | --- | --- |
 | type | 'tabChange' | Yes | The type of event to remove the listener for. Must be 'tabChange'. |
 | config | observer.ObserverOptions | Yes | The config object. Includes the observed component id. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TabContentInfo> | No | The callback function to remove.If not provided, all callbacks for the given event type and Tabs ID will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TabContentInfo&gt; | No | The callback function to remove.If not provided, all callbacks for the given event type and Tabs ID will be removed. |
 
+<a id="off-22"></a>
 ## off('tabChange')
 
 ```TypeScript
@@ -654,8 +678,9 @@ Removes a callback function that was previously registered with `on()`.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'tabChange' | Yes | The type of event to remove the listener for. Must be 'tabChange'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TabContentInfo> | No | The callback function to remove.If not provided, all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TabContentInfo&gt; | No | The callback function to remove.If not provided, all callbacks for the given event type will be removed. |
 
+<a id="off-23"></a>
 ## off('windowSizeLayoutBreakpointChange')
 
 ```TypeScript
@@ -679,8 +704,9 @@ Unregisters previously registered window size layout breakpoint change listeners
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowSizeLayoutBreakpointChange' | Yes | Event type. The value is fixed at **'windowSizeLayoutBreakpointChange'**, indicating window size layout breakpoint changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.WindowSizeLayoutBreakpointInfo> | No | Target listener to unregister. If no parameter is provided, all window size layout breakpoint change listeners for the current [UIContext](arkts-arkui-uicontext.md) are removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.WindowSizeLayoutBreakpointInfo&gt; | No | Target listener to unregister. If no parameter is provided, all window size layout breakpoint change listeners for the current [UIContext](arkts-arkui-uicontext.md) are removed. |
 
+<a id="off-24"></a>
 ## off('nodeRenderState')
 
 ```TypeScript
@@ -707,6 +733,7 @@ Unregisters the callback for listening for node rendering state changes.
 | nodeIdentity | [NodeIdentity](arkts-arkui-nodeidentity-t.md) | Yes | Node ID. |
 | callback | [NodeRenderStateChangeCallback](arkts-arkui-noderenderstatechangecallback-t.md) | No | Target listener to unregister. If no parameter is provided,all node rendering state change listeners are unregistered. |
 
+<a id="off-25"></a>
 ## off('textChange')
 
 ```TypeScript
@@ -730,8 +757,9 @@ Removes a callback function that was previously registered with `on()`.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'textChange' | Yes | The type of event to remove the listener for. Must be 'textChange'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TextChangeEventInfo> | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TextChangeEventInfo&gt; | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
 
+<a id="off-26"></a>
 ## off('textChange')
 
 ```TypeScript
@@ -756,8 +784,9 @@ Removes a callback function that was previously registered with `on()`.
 | --- | --- | --- | --- |
 | type | 'textChange' | Yes | The type of event to remove the listener for. Must be 'textChange'. |
 | identity | observer.ObserverOptions | Yes | Identity options. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TextChangeEventInfo> | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TextChangeEventInfo&gt; | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
 
+<a id="offnavdestinationsizechange"></a>
 ## offNavDestinationSizeChange
 
 ```TypeScript
@@ -780,8 +809,9 @@ Removes the listener callback registered using the **onNavDestinationSizeChange*
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | No | Callback to be removed. If no parameter is passed,all callbacks are removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | No | Callback to be removed. If no parameter is passed,all callbacks are removed. |
 
+<a id="offnavdestinationsizechangebyuniqueid"></a>
 ## offNavDestinationSizeChangeByUniqueId
 
 ```TypeScript
@@ -805,8 +835,9 @@ Removes a callback function that was previously registered with 'onNavDestinatio
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | navigationUniqueId | number | Yes | The uniqueId of the Navigation to which NavDestination belongs. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | No | The callback function to remove. If not provided,all callbacks for the given event type will be removed. |
 
+<a id="offrouterpagesizechange"></a>
 ## offRouterPageSizeChange
 
 ```TypeScript
@@ -829,8 +860,9 @@ Removes the listener callback registered using the **onRouterPageSizeChange** AP
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.RouterPageInfo> | No | Callback to be removed. If no parameter is passed, all callbacks are removed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.RouterPageInfo&gt; | No | Callback to be removed. If no parameter is passed, all callbacks are removed. |
 
+<a id="offswipercontentupdate"></a>
 ## offSwiperContentUpdate
 
 ```TypeScript
@@ -853,8 +885,9 @@ Unregister the listener for content switching events of the **Swiper** component
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<SwiperContentInfo> | No | Target listener to unregister. If no parameter is provided, all listeners for the **Swiper** component are unregistered. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;SwiperContentInfo&gt; | No | Target listener to unregister. If no parameter is provided, all listeners for the **Swiper** component are unregistered. |
 
+<a id="offswipercontentupdate-1"></a>
 ## offSwiperContentUpdate
 
 ```TypeScript
@@ -878,8 +911,9 @@ Unregister the listener for content switching events of a specific **Swiper** co
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | observer.ObserverOptions | Yes | Information about the target **Swiper** component. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<SwiperContentInfo> | No | Target listener to unregister. If no parameter is provided, all listeners for the **Swiper** component are unregistered. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;SwiperContentInfo&gt; | No | Target listener to unregister. If no parameter is provided, all listeners for the **Swiper** component are unregistered. |
 
+<a id="on"></a>
 ## on('navDestinationUpdate')
 
 ```TypeScript
@@ -904,8 +938,9 @@ Subscribes to status changes of this **NavDestination** component.
 | --- | --- | --- | --- |
 | type | 'navDestinationUpdate' | Yes | Event type.The value is fixed at **'navDestinationUpdate'**, which indicates the state change event<br>of the **NavDestination** component. |
 | options | { navigationId: ResourceStr } | Yes | ID of the target **NavDestination** component. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | Yes | Callback used to return the current<br>state of the **NavDestination** component. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | Yes | Callback used to return the current<br>state of the **NavDestination** component. |
 
+<a id="on-1"></a>
 ## on('navDestinationUpdate')
 
 ```TypeScript
@@ -929,8 +964,9 @@ Subscribes to status changes of this **NavDestination** component.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'navDestinationUpdate' | Yes | Event type.The value is fixed at **'navDestinationUpdate'**,<br>which indicates the state change event of the **NavDestination** component. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | Yes | Callback used to return the current state of<br>the **NavDestination** component. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | Yes | Callback used to return the current state of<br>the **NavDestination** component. |
 
+<a id="on-2"></a>
 ## on('navDestinationUpdateByUniqueId')
 
 ```TypeScript
@@ -955,8 +991,9 @@ Registers a callback function to be called when the navigation destination is up
 | --- | --- | --- | --- |
 | type | 'navDestinationUpdateByUniqueId' | Yes | The type of event to listen for. Must be 'navDestinationUpdateByUniqueId'. |
 | navigationUniqueId | number | Yes | The uniqueId of the navigation. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | Yes | The callback function to be called when the navigation destination is updated. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | Yes | The callback function to be called when the navigation destination is updated. |
 
+<a id="on-3"></a>
 ## on('scrollEvent')
 
 ```TypeScript
@@ -981,8 +1018,9 @@ Registers a callback function to be called when the scroll event start or stop.
 | --- | --- | --- | --- |
 | type | 'scrollEvent' | Yes | The type of event to listen for. Must be 'scrollEvent'. |
 | options | observer.ObserverOptions | Yes | The options object. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.ScrollEventInfo> | Yes | The callback function to be called when the scroll event start or stop. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.ScrollEventInfo&gt; | Yes | The callback function to be called when the scroll event start or stop. |
 
+<a id="on-4"></a>
 ## on('scrollEvent')
 
 ```TypeScript
@@ -1006,8 +1044,9 @@ Registers a callback function to be called when the scroll event start or stop.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'scrollEvent' | Yes | The type of event to listen for. Must be 'scrollEvent'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.ScrollEventInfo> | Yes | The callback function to be called when the scroll event start or stop. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.ScrollEventInfo&gt; | Yes | The callback function to be called when the scroll event start or stop. |
 
+<a id="on-5"></a>
 ## on('routerPageUpdate')
 
 ```TypeScript
@@ -1031,8 +1070,9 @@ Unsubscribes to state changes of the page in the router.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'routerPageUpdate' | Yes | Event type.<br>The value is fixed at 'routerPageUpdate', which indicates the state change event of the page in the router. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.RouterPageInfo> | Yes | Callback to be unregistered. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.RouterPageInfo&gt; | Yes | Callback to be unregistered. |
 
+<a id="on-6"></a>
 ## on('densityUpdate')
 
 ```TypeScript
@@ -1056,8 +1096,9 @@ Listens for screen pixel density changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'densityUpdate' | Yes | Event type. The value **'densityUpdate'** indicates the pixel density changes of the screen. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.DensityInfo> | Yes | Callback used to return the updated screen pixel density using a [DensityInfo](arkts-arkui-uiobserver-densityinfo-c.md) object. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.DensityInfo&gt; | Yes | Callback used to return the updated screen pixel density using a [DensityInfo](arkts-arkui-uiobserver-densityinfo-c.md) object. |
 
+<a id="on-7"></a>
 ## on('willDraw')
 
 ```TypeScript
@@ -1081,8 +1122,9 @@ Listens for drawing instruction dispatch in each frame.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'willDraw' | Yes | Event event. The value **'willDraw'** indicates whether drawing is about to occur. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="on-8"></a>
 ## on('didLayout')
 
 ```TypeScript
@@ -1106,8 +1148,9 @@ Listens for layout completion status in each frame.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'didLayout' | Yes | Event type. The value **'didLayout'** indicates whether the layout has been completed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
+<a id="on-9"></a>
 ## on('navDestinationSwitch')
 
 ```TypeScript
@@ -1140,8 +1183,9 @@ Registers a callback function to be called when the navigation switched to a new
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'navDestinationSwitch' | Yes | The type of event to listen for. Must be 'navDestinationSwitch'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationSwitchInfo> | Yes | The callback function to be called when the navigation switched to a new navDestination. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationSwitchInfo&gt; | Yes | The callback function to be called when the navigation switched to a new navDestination. |
 
+<a id="on-10"></a>
 ## on('navDestinationSwitch')
 
 ```TypeScript
@@ -1178,8 +1222,9 @@ Registers a callback function to be called when the navigation switched to a new
 | --- | --- | --- | --- |
 | type | 'navDestinationSwitch' | Yes | The type of event to listen for. Must be 'navDestinationSwitch'. |
 | observerOptions | observer.NavDestinationSwitchObserverOptions | Yes | Options. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationSwitchInfo> | Yes | The callback function to be called when the navigation switched to a new navDestination. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationSwitchInfo&gt; | Yes | The callback function to be called when the navigation switched to a new navDestination. |
 
+<a id="on-11"></a>
 ## on('willClick')
 
 ```TypeScript
@@ -1205,6 +1250,7 @@ Registers a callback function to be called before clickEvent is called.
 | type | 'willClick' | Yes | The type of event to listen for. |
 | callback | [ClickEventListenerCallback](arkts-arkui-clickeventlistenercallback-t.md) | Yes | The callback function to be called when the clickEvent will be trigger or after. |
 
+<a id="on-12"></a>
 ## on('didClick')
 
 ```TypeScript
@@ -1230,6 +1276,7 @@ Registers a callback function to be called after clickEvent is called.
 | type | 'didClick' | Yes | The type of event to listen for. |
 | callback | [ClickEventListenerCallback](arkts-arkui-clickeventlistenercallback-t.md) | Yes | The callback function to be called when the clickEvent will be trigger or after. |
 
+<a id="on-13"></a>
 ## on('willClick')
 
 ```TypeScript
@@ -1255,6 +1302,7 @@ Registers a callback function to be called before tapGesture is called.
 | type | 'willClick' | Yes | The type of event to listen for. |
 | callback | [GestureEventListenerCallback](arkts-arkui-gestureeventlistenercallback-t.md) | Yes | The callback function to be called when the clickEvent will be trigger or after. |
 
+<a id="on-14"></a>
 ## on('didClick')
 
 ```TypeScript
@@ -1280,13 +1328,14 @@ Registers a callback function to be called after tapGesture is called.
 | type | 'didClick' | Yes | The type of event to listen for. |
 | callback | [GestureEventListenerCallback](arkts-arkui-gestureeventlistenercallback-t.md) | Yes | The callback function to be called when the clickEvent will be trigger or after. |
 
+<a id="on-15"></a>
 ## on('beforePanStart')
 
 ```TypeScript
 on(type: 'beforePanStart', callback: PanListenerCallback): void
 ```
 
-Listens for pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) pre-execution events, executing the callback before the actual [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) event. It works for finger swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
+Listens for pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) pre-execution events, executing the callback before the actual [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) event. It works for finger swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
 
 **Since:** 19
 
@@ -1302,16 +1351,17 @@ Listens for pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'beforePanStart' | Yes | Event type. The value is fixed at **'beforePanStart'**, indicating command dispatch before the execution of the pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1)event. The registered callback is triggered before **onActionStart** is executed. |
-| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | Yes | Callback used to return the result. It provides [GestureEvent](arkts-arkui-gesture-gestureevent-i.md), [GestureRecognizer](arkts-arkui-gesture-gesturerecognizer-c.md), and the target component's [FrameNode](arkts-arkui-framenode-c.md) information. |
+| type | 'beforePanStart' | Yes | Event type. The value is fixed at **'beforePanStart'**, indicating command dispatch before the execution of the pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1)event. The registered callback is triggered before **onActionStart** is executed. |
+| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | Yes | Callback used to return the result. It provides [GestureEvent](arkts-arkui-gestureevent-i.md), [GestureRecognizer](arkts-arkui-gesturerecognizer-c.md), and the target component's [FrameNode](arkts-arkui-framenode-c.md) information. |
 
+<a id="on-16"></a>
 ## on('beforePanEnd')
 
 ```TypeScript
 on(type: 'beforePanEnd', callback: PanListenerCallback): void
 ```
 
-Listens for pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) pre-execution events, executing the callback before the actual [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) event. It works for finger swiping,mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
+Listens for pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) pre-execution events, executing the callback before the actual [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) event. It works for finger swiping,mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
 
 **Since:** 19
 
@@ -1327,16 +1377,17 @@ Listens for pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'beforePanEnd' | Yes | Event type. The value is fixed at **'beforePanEnd'**, indicating command dispatch before the execution of the pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) event. The registered callback is triggered before **onActionEnd** is executed. |
-| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | Yes | Callback used to return the result. It provides [GestureEvent](arkts-arkui-gesture-gestureevent-i.md), [GestureRecognizer](arkts-arkui-gesture-gesturerecognizer-c.md), and the target component's [FrameNode](arkts-arkui-framenode-c.md) information. |
+| type | 'beforePanEnd' | Yes | Event type. The value is fixed at **'beforePanEnd'**, indicating command dispatch before the execution of the pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) event. The registered callback is triggered before **onActionEnd** is executed. |
+| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | Yes | Callback used to return the result. It provides [GestureEvent](arkts-arkui-gestureevent-i.md), [GestureRecognizer](arkts-arkui-gesturerecognizer-c.md), and the target component's [FrameNode](arkts-arkui-framenode-c.md) information. |
 
+<a id="on-17"></a>
 ## on('afterPanStart')
 
 ```TypeScript
 on(type: 'afterPanStart', callback: PanListenerCallback): void
 ```
 
-Listens for pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) post-execution events, executing the callback after the actual [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) event. It works for finger swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
+Listens for pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) post-execution events, executing the callback after the actual [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) event. It works for finger swiping, mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
 
 **Since:** 19
 
@@ -1352,16 +1403,17 @@ Listens for pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'afterPanStart' | Yes | Event type. The value is fixed at **'afterPanStart'**, indicating command dispatch after the execution of the pan gesture [onActionStart](arkts-arkui-gesture-pangestureinterface-i.md#onactionstart-1) event.The registered callback is triggered after **onActionStart** is executed. |
-| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | Yes | Callback used to return the result. It provides [GestureEvent](arkts-arkui-gesture-gestureevent-i.md), [GestureRecognizer](arkts-arkui-gesture-gesturerecognizer-c.md), and the target component's [FrameNode](arkts-arkui-framenode-c.md) information. |
+| type | 'afterPanStart' | Yes | Event type. The value is fixed at **'afterPanStart'**, indicating command dispatch after the execution of the pan gesture [onActionStart](arkts-arkui-pangestureinterface-i.md#onactionstart-1) event.The registered callback is triggered after **onActionStart** is executed. |
+| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | Yes | Callback used to return the result. It provides [GestureEvent](arkts-arkui-gestureevent-i.md), [GestureRecognizer](arkts-arkui-gesturerecognizer-c.md), and the target component's [FrameNode](arkts-arkui-framenode-c.md) information. |
 
+<a id="on-18"></a>
 ## on('afterPanEnd')
 
 ```TypeScript
 on(type: 'afterPanEnd', callback: PanListenerCallback): void
 ```
 
-Listens for pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) post-execution events, executing the callback after the actual [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) event. It works for finger swiping,mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
+Listens for pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) post-execution events, executing the callback after the actual [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) event. It works for finger swiping,mouse dragging, mouse wheel scrolling, and touchpad movements, but not for screen reader touch mode.
 
 **Since:** 19
 
@@ -1377,9 +1429,10 @@ Listens for pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'afterPanEnd' | Yes | Event type. The value is fixed at **'beforePanEnd'**, indicating command dispatch after the execution of the pan gesture [onActionEnd](arkts-arkui-gesture-pangestureinterface-i.md#onactionend-1) event. The registered callback is triggered after **onActionEnd** is executed. |
-| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | Yes | Callback used to return the result. It provides [GestureEvent](arkts-arkui-gesture-gestureevent-i.md), [GestureRecognizer](arkts-arkui-gesture-gesturerecognizer-c.md), and the target component's [FrameNode](arkts-arkui-framenode-c.md) information. |
+| type | 'afterPanEnd' | Yes | Event type. The value is fixed at **'beforePanEnd'**, indicating command dispatch after the execution of the pan gesture [onActionEnd](arkts-arkui-pangestureinterface-i.md#onactionend-1) event. The registered callback is triggered after **onActionEnd** is executed. |
+| callback | [PanListenerCallback](arkts-arkui-panlistenercallback-t.md) | Yes | Callback used to return the result. It provides [GestureEvent](arkts-arkui-gestureevent-i.md), [GestureRecognizer](arkts-arkui-gesturerecognizer-c.md), and the target component's [FrameNode](arkts-arkui-framenode-c.md) information. |
 
+<a id="on-19"></a>
 ## on('tabContentUpdate')
 
 ```TypeScript
@@ -1404,8 +1457,9 @@ Registers a callback function to be called when the tabContent is showed or hidd
 | --- | --- | --- | --- |
 | type | 'tabContentUpdate' | Yes | The type of event to listen for. Must be 'tabContentUpdate'. |
 | options | observer.ObserverOptions | Yes | The options object. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TabContentInfo> | Yes | The callback function to be called when the tabContent show or hide. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TabContentInfo&gt; | Yes | The callback function to be called when the tabContent show or hide. |
 
+<a id="on-20"></a>
 ## on('tabContentUpdate')
 
 ```TypeScript
@@ -1429,8 +1483,9 @@ Registers a callback function to be called when the tabContent is showed or hidd
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'tabContentUpdate' | Yes | The type of event to listen for. Must be 'tabContentUpdate'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TabContentInfo> | Yes | The callback function to be called when the tabContent is showed or hidden. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TabContentInfo&gt; | Yes | The callback function to be called when the tabContent is showed or hidden. |
 
+<a id="on-21"></a>
 ## on('tabChange')
 
 ```TypeScript
@@ -1455,8 +1510,9 @@ Registers a callback function to be called when the tabContent is showed or hidd
 | --- | --- | --- | --- |
 | type | 'tabChange' | Yes | The type of event to listen for. Must be 'tabChange'. |
 | config | observer.ObserverOptions | Yes | The options object. Includes the observed component id. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TabContentInfo> | Yes | The callback function to be called when when the tabContent is showed or hidden. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TabContentInfo&gt; | Yes | The callback function to be called when when the tabContent is showed or hidden. |
 
+<a id="on-22"></a>
 ## on('tabChange')
 
 ```TypeScript
@@ -1480,8 +1536,9 @@ Registers a callback function to be called when the tabContent is showed or hidd
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'tabChange' | Yes | The type of event to listen for. Must be 'tabChange'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TabContentInfo> | Yes | The callback function to be called when the tabContent is showed or hidden. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TabContentInfo&gt; | Yes | The callback function to be called when the tabContent is showed or hidden. |
 
+<a id="on-23"></a>
 ## on('windowSizeLayoutBreakpointChange')
 
 ```TypeScript
@@ -1505,8 +1562,9 @@ Registers a callback for window size layout breakpoint changes. This enables ada
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowSizeLayoutBreakpointChange' | Yes | Event type. The value is fixed at **'windowSizeLayoutBreakpointChange'**, indicating window size layout breakpoint changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.WindowSizeLayoutBreakpointInfo> | Yes | Callback used to return the result. It provides window width and height layout breakpoint enumerations using a **WindowSizeLayoutBreakpointinfo** object. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.WindowSizeLayoutBreakpointInfo&gt; | Yes | Callback used to return the result. It provides window width and height layout breakpoint enumerations using a **WindowSizeLayoutBreakpointinfo** object. |
 
+<a id="on-24"></a>
 ## on('nodeRenderState')
 
 ```TypeScript
@@ -1543,6 +1601,7 @@ Typically, a **RENDER_OUT** notification is received when a component moves off-
 | --- | --- |
 | [161001](../errorcode-node-render-monitor.md#161001-number-of-nodes-listening-for-render-state-exceeds-the-limit) | The count of nodes monitoring render state is over the limitation. |
 
+<a id="on-25"></a>
 ## on('textChange')
 
 ```TypeScript
@@ -1566,8 +1625,9 @@ Registers a callback function to be called when text field's content is changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'textChange' | Yes | The type of event to listen for. Must be 'textChange'. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TextChangeEventInfo> | Yes | The callback function to be called when text field's content is changed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TextChangeEventInfo&gt; | Yes | The callback function to be called when text field's content is changed. |
 
+<a id="on-26"></a>
 ## on('textChange')
 
 ```TypeScript
@@ -1592,8 +1652,9 @@ Registers a callback function to be called when text field's content is changed.
 | --- | --- | --- | --- |
 | type | 'textChange' | Yes | The type of event to listen for. Must be 'textChange'. |
 | identity | observer.ObserverOptions | Yes | Identity options. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.TextChangeEventInfo> | Yes | The callback function to be called when the text field's content is changed. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.TextChangeEventInfo&gt; | Yes | The callback function to be called when the text field's content is changed. |
 
+<a id="onnavdestinationsizechange"></a>
 ## onNavDestinationSizeChange
 
 ```TypeScript
@@ -1616,8 +1677,9 @@ Registers a callback that is triggered when the size of the visible navigation d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | Yes | Callback used to return navigation destination information. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | Yes | Callback used to return navigation destination information. |
 
+<a id="onnavdestinationsizechangebyuniqueid"></a>
 ## onNavDestinationSizeChangeByUniqueId
 
 ```TypeScript
@@ -1640,9 +1702,10 @@ Removes the listener callback registered using the **onNavDestinationSizeChangeB
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| navigationUniqueId | number | Yes | Unique ID of the **Navigation** component to which the **NavDestination** component to be listened belongs, which can be obtained through [queryNavigationInfo](../arkts-components/arkts-arkui-common-basecustomcomponent-c.md#querynavigationinfo-1). |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.NavDestinationInfo> | Yes | Callback to be removed. If no parameter is passed,all callbacks with the same **navigationUniqueId** setting are removed. |
+| navigationUniqueId | number | Yes | Unique ID of the **Navigation** component to which the **NavDestination** component to be listened belongs, which can be obtained through [queryNavigationInfo](../arkts-components/arkts-arkui-basecustomcomponent-c.md#querynavigationinfo-1). |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.NavDestinationInfo&gt; | Yes | Callback to be removed. If no parameter is passed,all callbacks with the same **navigationUniqueId** setting are removed. |
 
+<a id="onrouterpagesizechange"></a>
 ## onRouterPageSizeChange
 
 ```TypeScript
@@ -1665,8 +1728,9 @@ Registers a callback that is triggered when the size of the visible router page 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<observer.RouterPageInfo> | Yes | Callback used to return the information about the router page. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;observer.RouterPageInfo&gt; | Yes | Callback used to return the information about the router page. |
 
+<a id="onswipercontentupdate"></a>
 ## onSwiperContentUpdate
 
 ```TypeScript
@@ -1689,8 +1753,9 @@ Listens for content switching events of the **Swiper** component. This API uses 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<SwiperContentInfo> | Yes | Callback used to return the result. It provides the **Swiper** content switching information using a **SwiperContentInfo** object. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;SwiperContentInfo&gt; | Yes | Callback used to return the result. It provides the **Swiper** content switching information using a **SwiperContentInfo** object. |
 
+<a id="onswipercontentupdate-1"></a>
 ## onSwiperContentUpdate
 
 ```TypeScript
@@ -1714,8 +1779,9 @@ Listens for content switching events of a specific **Swiper** component identifi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | observer.ObserverOptions | Yes | Information about the target **Swiper** component. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<SwiperContentInfo> | Yes | Callback used to return the result. It provides the **Swiper** content switching information using a **SwiperContentInfo** object. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;SwiperContentInfo&gt; | Yes | Callback used to return the result. It provides the **Swiper** content switching information using a **SwiperContentInfo** object. |
 
+<a id="removeglobalgesturelistener"></a>
 ## removeGlobalGestureListener
 
 ```TypeScript

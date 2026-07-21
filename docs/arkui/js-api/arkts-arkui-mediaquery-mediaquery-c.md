@@ -14,6 +14,7 @@ Defines the mediaquery interface.
 import { MediaQueryEvent, MediaQueryList } from '@kit.ArkUI';
 ```
 
+<a id="matchmedia"></a>
 ## matchMedia
 
 ```TypeScript

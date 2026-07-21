@@ -1,8 +1,8 @@
 # Column properties/events
 
-In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
-The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
+The [universal events](arkts-arkui-commonmethod-c.md) are supported.
 
 **Inheritance/Implementation:** ColumnAttribute extends [CommonMethod<ColumnAttribute>](CommonMethod<ColumnAttribute>)
 
@@ -12,6 +12,7 @@ The [universal events](arkts-arkui-common-commonmethod-c.md) are supported.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="alignitems"></a>
 ## alignItems
 
 ```TypeScript
@@ -34,8 +35,9 @@ Alignment mode of the child components in the horizontal direction.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [HorizontalAlign](../arkts-apis/arkts-arkui-enums-horizontalalign-e.md) | Yes | Alignment mode of child components in the horizontal direction.<br>Default value: **HorizontalAlign.Center** |
+| value | [HorizontalAlign](../arkts-apis/arkts-arkui-horizontalalign-e.md) | Yes | Alignment mode of child components in the horizontal direction.<br>Default value: **HorizontalAlign.Center** |
 
+<a id="justifycontent"></a>
 ## justifyContent
 
 ```TypeScript
@@ -58,8 +60,9 @@ Alignment mode of the child components in the vertical direction.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [FlexAlign](../arkts-apis/arkts-arkui-enums-flexalign-e.md) | Yes | Alignment mode of child components in the vertical direction.<br>Default value:**FlexAlign.Start** |
+| value | [FlexAlign](../arkts-apis/arkts-arkui-flexalign-e.md) | Yes | Alignment mode of child components in the vertical direction.<br>Default value:**FlexAlign.Start** |
 
+<a id="reverse"></a>
 ## reverse
 
 ```TypeScript
@@ -84,5 +87,5 @@ Sets whether to reverse the vertical arrangement of child components.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isReversed | [Optional](arkts-arkui-optional-t.md)<boolean> | Yes | Whether to reverse the vertical arrangement of child components.<br>Default value: **true**. **true**: Child components are arranged in reverse order vertically. **false**: Child components are arranged in normal order vertically. |
+| isReversed | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to reverse the vertical arrangement of child components.<br>Default value: **true**. **true**: Child components are arranged in reverse order vertically. **false**: Child components are arranged in normal order vertically. |
 

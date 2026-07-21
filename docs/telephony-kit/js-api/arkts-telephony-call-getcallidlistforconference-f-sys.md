@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="getcallidlistforconference"></a>
 ## getCallIdListForConference
 
 ```TypeScript
@@ -27,7 +28,7 @@ Get the call Id list of the conference.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Indicates the callback for getting the call id list of conference calls. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Indicates the callback for getting the call id list of conference calls. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ call.getCallIdListForConference(1, (err: BusinessError, data: Array<string>) => 
 ```
 
 
+<a id="getcallidlistforconference-1"></a>
 ## getCallIdListForConference
 
 ```TypeScript
@@ -82,7 +84,7 @@ Get the call Id list of the conference.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Returns the call id list of conference calls. |
+| Promise&lt;Array&lt;string&gt;&gt; | Returns the call id list of conference calls. |
 
 **Error codes:**
 

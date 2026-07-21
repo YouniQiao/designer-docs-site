@@ -21,6 +21,7 @@ Defines a block consisting of one or more characters with the same font.
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="bounds"></a>
 ## bounds
 
 ```TypeScript
@@ -41,6 +42,7 @@ Obtains the rectangular bounding box of the text blob.
 | --- | --- |
 | common2D.Rect | Rectangular bounding box. |
 
+<a id="makefrompostext"></a>
 ## makeFromPosText
 
 ```TypeScript
@@ -76,6 +78,7 @@ Creates a **TextBlob** object from the text. The coordinates of each font in the
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="makefromrunbuffer"></a>
 ## makeFromRunBuffer
 
 ```TypeScript
@@ -94,7 +97,7 @@ Creates a **TextBlob** object based on the **RunBuffer** information.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pos | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<TextBlobRunBuffer> | Yes | **TextBlobRunBuffer** array. |
+| pos | Array&lt;TextBlobRunBuffer&gt; | Yes | **TextBlobRunBuffer** array. |
 | font | [Font](../../apis-arkui/arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | **Font** object. |
 | bounds | common2D.Rect | No | Bounding box. If this parameter is not set, there is no bounding box. |
 
@@ -110,6 +113,7 @@ Creates a **TextBlob** object based on the **RunBuffer** information.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="makefromstring"></a>
 ## makeFromString
 
 ```TypeScript
@@ -144,6 +148,7 @@ Converts a value of the string type into a **TextBlob** object.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="uniqueid"></a>
 ## uniqueID
 
 ```TypeScript

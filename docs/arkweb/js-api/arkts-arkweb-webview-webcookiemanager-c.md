@@ -14,6 +14,7 @@ Provides methods for managing the web cookies.
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="clearallcookies"></a>
 ## clearAllCookies
 
 ```TypeScript
@@ -34,7 +35,7 @@ Remove all cookies Asynchronously.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - A promise resolved after the cookies have been deleted. |
+| Promise&lt;void&gt; | - A promise resolved after the cookies have been deleted. |
 
 **Error codes:**
 
@@ -42,6 +43,7 @@ Remove all cookies Asynchronously.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 
+<a id="clearallcookies-1"></a>
 ## clearAllCookies
 
 ```TypeScript
@@ -62,7 +64,7 @@ Remove all cookies Asynchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Called after the cookies have been deleted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Called after the cookies have been deleted. |
 
 **Error codes:**
 
@@ -70,6 +72,7 @@ Remove all cookies Asynchronously.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 
+<a id="clearallcookiessync"></a>
 ## clearAllCookiesSync
 
 ```TypeScript
@@ -92,6 +95,7 @@ Remove all cookies.
 | --- | --- | --- | --- |
 | incognito | boolean | No | {@code true} remove all cookies in incognito mode;{@code false} otherwise. |
 
+<a id="clearsessioncookie"></a>
 ## clearSessionCookie
 
 ```TypeScript
@@ -112,7 +116,7 @@ Delete the session cookies Asynchronously.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - A promise resolved after the cookies have been deleted. |
+| Promise&lt;void&gt; | - A promise resolved after the cookies have been deleted. |
 
 **Error codes:**
 
@@ -120,6 +124,7 @@ Delete the session cookies Asynchronously.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. |
 
+<a id="clearsessioncookie-1"></a>
 ## clearSessionCookie
 
 ```TypeScript
@@ -140,7 +145,7 @@ Delete the session cookies Asynchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Called after the cookies have been deleted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Called after the cookies have been deleted. |
 
 **Error codes:**
 
@@ -148,6 +153,7 @@ Delete the session cookies Asynchronously.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 
+<a id="clearsessioncookiesync"></a>
 ## clearSessionCookieSync
 
 ```TypeScript
@@ -164,6 +170,7 @@ Delete the session cookies.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="configcookie"></a>
 ## configCookie
 
 ```TypeScript
@@ -191,7 +198,7 @@ Set a single cookie (key-value pair) for the given URL Asynchronously.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - A promise resolved after the cookies of given URL have been set. |
+| Promise&lt;void&gt; | - A promise resolved after the cookies of given URL have been set. |
 
 **Error codes:**
 
@@ -201,6 +208,7 @@ Set a single cookie (key-value pair) for the given URL Asynchronously.
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 | [17100005](../errorcode-webview.md#17100005-invalid-cookie-value) | The provided cookie value is invalid. It must follow the format specified<br>in RFC 6265. |
 
+<a id="configcookie-1"></a>
 ## configCookie
 
 ```TypeScript
@@ -228,7 +236,7 @@ Set a single cookie (key-value pair) for the given URL Asynchronously.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - A promise resolved after the cookies of given URL have been set. |
+| Promise&lt;void&gt; | - A promise resolved after the cookies of given URL have been set. |
 
 **Error codes:**
 
@@ -238,6 +246,7 @@ Set a single cookie (key-value pair) for the given URL Asynchronously.
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 | [17100005](../errorcode-webview.md#17100005-invalid-cookie-value) | The provided cookie value is invalid. It must follow the format specified<br>in RFC 6265. |
 
+<a id="configcookie-2"></a>
 ## configCookie
 
 ```TypeScript
@@ -260,7 +269,7 @@ Set a single cookie (key-value pair) for the given URL Asynchronously.
 | --- | --- | --- | --- |
 | url | string | Yes | The URL for which the cookie is to be set. |
 | value | string | Yes | The cookie as a string, using the format of the 'Set-Cookie' HTTP response header. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Called after the cookies have been set. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Called after the cookies have been set. |
 
 **Error codes:**
 
@@ -270,6 +279,7 @@ Set a single cookie (key-value pair) for the given URL Asynchronously.
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 | [17100005](../errorcode-webview.md#17100005-invalid-cookie-value) | The provided cookie value is invalid. It must follow the format specified<br>in RFC 6265. |
 
+<a id="configcookiesync"></a>
 ## configCookieSync
 
 ```TypeScript
@@ -324,6 +334,7 @@ Set a single cookie (key-value pair) for the given URL.
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 | [17100005](../errorcode-webview.md#17100005-invalid-cookie-value) | The provided cookie value is invalid. It must follow the format specified<br>in RFC 6265. |
 
+<a id="configcookiesync-1"></a>
 ## configCookieSync
 
 ```TypeScript
@@ -377,6 +388,7 @@ Set a single cookie (key-value pair) for the given URL.
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 | [17100005](../errorcode-webview.md#17100005-invalid-cookie-value) | The provided cookie value is invalid. It must follow the format specified<br>in RFC 6265. |
 
+<a id="deleteentirecookie"></a>
 ## deleteEntireCookie
 
 ```TypeScript
@@ -395,6 +407,7 @@ Remove all cookies.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="deletesessioncookie"></a>
 ## deleteSessionCookie
 
 ```TypeScript
@@ -413,6 +426,7 @@ Delete the session cookies.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="existcookie"></a>
 ## existCookie
 
 ```TypeScript
@@ -441,6 +455,7 @@ Check whether exists any cookies.
 | --- | --- |
 | boolean | True if exists more than one cookie else false; |
 
+<a id="fetchallcookies"></a>
 ## fetchAllCookies
 
 ```TypeScript
@@ -465,8 +480,9 @@ Fetches all stored cookies asynchronously.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<WebHttpCookie>> | - A promise resolved after the cookies gotten. |
+| Promise&lt;Array&lt;WebHttpCookie&gt;&gt; | - A promise resolved after the cookies gotten. |
 
+<a id="fetchcookie"></a>
 ## fetchCookie
 
 ```TypeScript
@@ -493,7 +509,7 @@ Gets all cookies for the given URL Asynchronously.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - A promise resolved after the cookies of given URL have been gotten. |
+| Promise&lt;string&gt; | - A promise resolved after the cookies of given URL have been gotten. |
 
 **Error codes:**
 
@@ -502,6 +518,7 @@ Gets all cookies for the given URL Asynchronously.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 
+<a id="fetchcookie-1"></a>
 ## fetchCookie
 
 ```TypeScript
@@ -527,7 +544,7 @@ Gets all cookies for the given URL Asynchronously.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - A promise resolved after the cookies of given URL have been gotten. |
+| Promise&lt;string&gt; | - A promise resolved after the cookies of given URL have been gotten. |
 
 **Error codes:**
 
@@ -536,6 +553,7 @@ Gets all cookies for the given URL Asynchronously.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 
+<a id="fetchcookie-2"></a>
 ## fetchCookie
 
 ```TypeScript
@@ -557,7 +575,7 @@ Gets all cookies for the given URL Asynchronously.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | The URL for which the cookies are requested. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Called after the cookies of given URL have been gotten. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Called after the cookies of given URL have been gotten. |
 
 **Error codes:**
 
@@ -566,6 +584,7 @@ Gets all cookies for the given URL Asynchronously.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 
+<a id="fetchcookie-3"></a>
 ## fetchCookie
 
 ```TypeScript
@@ -594,7 +613,7 @@ Gets all cookies for the given URL Asynchronously.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | A promise resolved with the cookie string. |
+| Promise&lt;string&gt; | A promise resolved with the cookie string. |
 
 **Error codes:**
 
@@ -602,6 +621,7 @@ Gets all cookies for the given URL Asynchronously.
 | --- | --- |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 
+<a id="fetchcookiesync"></a>
 ## fetchCookieSync
 
 ```TypeScript
@@ -642,6 +662,7 @@ Gets all cookies for the given URL.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 
+<a id="fetchcookiesync-1"></a>
 ## fetchCookieSync
 
 ```TypeScript
@@ -682,6 +703,7 @@ Gets all cookies for the given URL.
 | --- | --- |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 
+<a id="getcookie"></a>
 ## getCookie
 
 ```TypeScript
@@ -719,6 +741,7 @@ Gets all cookies for the given URL.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 
+<a id="iscookieallowed"></a>
 ## isCookieAllowed
 
 ```TypeScript
@@ -741,6 +764,7 @@ Get whether the instance can send and accept cookies.
 | --- | --- |
 | boolean | True if the instance can send and accept cookies else false. |
 
+<a id="isthirdpartycookieallowed"></a>
 ## isThirdPartyCookieAllowed
 
 ```TypeScript
@@ -763,6 +787,7 @@ Get whether the instance can send and accept thirdparty cookies.
 | --- | --- |
 | boolean | True if the instance can send and accept thirdparty cookies else false. |
 
+<a id="putacceptcookieenabled"></a>
 ## putAcceptCookieEnabled
 
 ```TypeScript
@@ -791,6 +816,7 @@ Set whether the instance should send and accept cookies.By default this is set t
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="putacceptthirdpartycookieenabled"></a>
 ## putAcceptThirdPartyCookieEnabled
 
 ```TypeScript
@@ -819,6 +845,7 @@ Set whether the instance should send and accept thirdparty cookies.By default th
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="savecookieasync"></a>
 ## saveCookieAsync
 
 ```TypeScript
@@ -839,7 +866,7 @@ Save the cookies Asynchronously.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - A promise resolved after the cookies have been saved. |
+| Promise&lt;void&gt; | - A promise resolved after the cookies have been saved. |
 
 **Error codes:**
 
@@ -847,6 +874,7 @@ Save the cookies Asynchronously.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="savecookieasync-1"></a>
 ## saveCookieAsync
 
 ```TypeScript
@@ -867,7 +895,7 @@ Save the cookies Asynchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Called after the cookies have been saved. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Called after the cookies have been saved. |
 
 **Error codes:**
 
@@ -875,6 +903,7 @@ Save the cookies Asynchronously.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="savecookiesync"></a>
 ## saveCookieSync
 
 ```TypeScript
@@ -893,6 +922,7 @@ Save the cookies synchronously.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
+<a id="setcookie"></a>
 ## setCookie
 
 ```TypeScript
@@ -926,6 +956,7 @@ Set a single cookie (key-value pair) for the given URL.
 | [17100002](../errorcode-webview.md#17100002-incorrect-url-format) | URL error. No valid cookie found for the specified URL. |
 | [17100005](../errorcode-webview.md#17100005-invalid-cookie-value) | The provided cookie value is invalid. It must follow the format specified<br>in RFC 6265. |
 
+<a id="setlazyinitializewebengine"></a>
 ## setLazyInitializeWebEngine
 
 ```TypeScript

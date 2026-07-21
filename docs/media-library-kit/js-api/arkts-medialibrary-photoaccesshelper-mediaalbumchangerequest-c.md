@@ -16,6 +16,7 @@ Provides APIs for managing the media album change request.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="addassets"></a>
 ## addAssets
 
 ```TypeScript
@@ -34,7 +35,7 @@ Add assets to the album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of assets to add. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of assets to add. |
 
 **Error codes:**
 
@@ -44,6 +45,7 @@ Add assets to the album.
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -71,6 +73,7 @@ Constructor used to initialize a new object.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
+<a id="getalbum"></a>
 ## getAlbum
 
 ```TypeScript
@@ -104,6 +107,7 @@ Obtains the album in the current album change request.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | 14000011 | System inner fail |
 
+<a id="removeassets"></a>
 ## removeAssets
 
 ```TypeScript
@@ -122,7 +126,7 @@ Removes assets from the album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of assets to remove. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of assets to remove. |
 
 **Error codes:**
 
@@ -132,6 +136,7 @@ Removes assets from the album.
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
+<a id="setalbumname"></a>
 ## setAlbumName
 
 ```TypeScript

@@ -16,6 +16,7 @@ A class that provides APIs to query and monitor the system screen recorder statu
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="off"></a>
 ## off('systemScreenRecorder')
 
 ```TypeScript
@@ -37,7 +38,7 @@ Unsubscribes from state change events of the system screen recorder.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'systemScreenRecorder' | Yes | Event type, which is **'systemScreenRecorder'** in this case.This event is triggered when the state of the system screen recorder changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScreenCaptureEvent> | No | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. If this parameter is not specified,the last subscription event is canceled. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScreenCaptureEvent&gt; | No | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. If this parameter is not specified,the last subscription event is canceled. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ screenCaptureMonitor.off('systemScreenRecorder');
 
 ```
 
+<a id="on"></a>
 ## on('systemScreenRecorder')
 
 ```TypeScript
@@ -73,7 +75,7 @@ Subscribes to state change events of the system screen recorder. From the Screen
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'systemScreenRecorder' | Yes | Event type, which is **'systemScreenRecorder'** in this case.This event is triggered when the state of the system screen recorder changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScreenCaptureEvent> | Yes | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScreenCaptureEvent&gt; | Yes | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. |
 
 **Error codes:**
 
@@ -93,6 +95,7 @@ screenCaptureMonitor.on('systemScreenRecorder', (event: media.ScreenCaptureEvent
 
 ```
 
+<a id="onsystemscreenrecorder"></a>
 ## onSystemScreenRecorder
 
 ```TypeScript
@@ -111,7 +114,7 @@ Subscribes to state change events of the system screen recorder. From the Screen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ScreenCaptureEvent> | Yes | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ScreenCaptureEvent&gt; | Yes | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. |
 
 **Error codes:**
 

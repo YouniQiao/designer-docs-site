@@ -16,6 +16,7 @@ Implements enroll intelligent voice engine.
 import { intelligentVoice } from '@kit.BasicServicesKit';
 ```
 
+<a id="commit"></a>
 ## commit
 
 ```TypeScript
@@ -38,7 +39,7 @@ Commit enroll, This method uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="commit-1"></a>
 ## commit
 
 ```TypeScript
@@ -87,7 +89,7 @@ Commit enroll, This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise used to return the result. |
+| Promise&lt;void&gt; | the promise used to return the result. |
 
 **Error codes:**
 
@@ -112,6 +114,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="enrollforresult"></a>
 ## enrollForResult
 
 ```TypeScript
@@ -135,7 +138,7 @@ Enrolls for result, This method uses an asynchronous callback to return the resu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isLast | boolean | Yes | isLast indicates if it is the last time to enroll. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<EnrollCallbackInfo> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;EnrollCallbackInfo&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -165,6 +168,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="enrollforresult-1"></a>
 ## enrollForResult
 
 ```TypeScript
@@ -193,7 +197,7 @@ Enrolls for result, This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<EnrollCallbackInfo> | the promise used to return the result. |
+| Promise&lt;EnrollCallbackInfo&gt; | the promise used to return the result. |
 
 **Error codes:**
 
@@ -221,6 +225,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="evaluateforresult"></a>
 ## evaluateForResult
 
 ```TypeScript
@@ -249,7 +254,7 @@ Evaluates for result, This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<EvaluationResult> | the promise used to return the result. |
+| Promise&lt;EvaluationResult&gt; | the promise used to return the result. |
 
 **Error codes:**
 
@@ -277,6 +282,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="getparameter"></a>
 ## getParameter
 
 ```TypeScript
@@ -300,7 +306,7 @@ Obtains the value of an intelligent voice parameter. This method uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | key | string | Yes | the key of the intelligent voice parameter whose value is to be obtained. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | the callback used to return the value of the intelligent voice parameter. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | the callback used to return the value of the intelligent voice parameter. |
 
 **Error codes:**
 
@@ -329,6 +335,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="getparameter-1"></a>
 ## getParameter
 
 ```TypeScript
@@ -357,7 +364,7 @@ Obtains the value of an intelligent voice parameter. This method uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | the promise used to return the value of the intelligent voice parameter. |
+| Promise&lt;string&gt; | the promise used to return the value of the intelligent voice parameter. |
 
 **Error codes:**
 
@@ -384,6 +391,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="getsupportedregions"></a>
 ## getSupportedRegions
 
 ```TypeScript
@@ -406,7 +414,7 @@ Obtains the supported regions, This method uses an asynchronous callback to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | the callback used to return the supported regions. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | the callback used to return the supported regions. |
 
 **Error codes:**
 
@@ -435,6 +443,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="getsupportedregions-1"></a>
 ## getSupportedRegions
 
 ```TypeScript
@@ -457,7 +466,7 @@ Obtains the supported regions, This method uses a promise to return the query re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | the promise used to return the supported regions. |
+| Promise&lt;Array&lt;string&gt;&gt; | the promise used to return the supported regions. |
 
 **Error codes:**
 
@@ -483,6 +492,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -506,7 +516,7 @@ Initials the engine, This method uses an asynchronous callback to return the res
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [EnrollEngineConfig](arkts-basicservices-intelligentvoice-enrollengineconfig-i-sys.md) | Yes | config indicates enroll engine configuration. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -539,6 +549,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="init-1"></a>
 ## init
 
 ```TypeScript
@@ -567,7 +578,7 @@ Initials the engine, This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise used to return the result. |
+| Promise&lt;void&gt; | the promise used to return the result. |
 
 **Error codes:**
 
@@ -599,6 +610,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -621,7 +633,7 @@ Releases the engine, This method uses an asynchronous callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -647,6 +659,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -669,7 +682,7 @@ Releases the engine, This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise used to return the result. |
+| Promise&lt;void&gt; | the promise used to return the result. |
 
 **Error codes:**
 
@@ -693,6 +706,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="setparameter"></a>
 ## setParameter
 
 ```TypeScript
@@ -717,7 +731,7 @@ Sets an intelligent voice parameter. This method uses an asynchronous callback t
 | --- | --- | --- | --- |
 | key | string | Yes | the key of the intelligent voice parameter to set. |
 | value | string | Yes | the value of the intelligent voice parameter to set. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -745,6 +759,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="setparameter-1"></a>
 ## setParameter
 
 ```TypeScript
@@ -774,7 +789,7 @@ Sets an intelligent voice parameter. This method uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise used to return the result. |
+| Promise&lt;void&gt; | the promise used to return the result. |
 
 **Error codes:**
 
@@ -800,6 +815,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="setsensibility"></a>
 ## setSensibility
 
 ```TypeScript
@@ -823,7 +839,7 @@ Sets sensibility, This method uses an asynchronous callback to return the result
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sensibility | [SensibilityType](arkts-basicservices-intelligentvoice-sensibilitytype-e-sys.md) | Yes | sensibility to set. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -851,6 +867,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="setsensibility-1"></a>
 ## setSensibility
 
 ```TypeScript
@@ -879,7 +896,7 @@ Sets sensibility, This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise used to return the result. |
+| Promise&lt;void&gt; | the promise used to return the result. |
 
 **Error codes:**
 
@@ -905,6 +922,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="setwakeuphapinfo"></a>
 ## setWakeupHapInfo
 
 ```TypeScript
@@ -928,7 +946,7 @@ Sets wakeup hap information, This method uses an asynchronous callback to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | [WakeupHapInfo](arkts-basicservices-intelligentvoice-wakeuphapinfo-i-sys.md) | Yes | info indicates wakeup hap information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -960,6 +978,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="setwakeuphapinfo-1"></a>
 ## setWakeupHapInfo
 
 ```TypeScript
@@ -988,7 +1007,7 @@ Sets wakeup hap information, This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise used to return the result. |
+| Promise&lt;void&gt; | the promise used to return the result. |
 
 **Error codes:**
 
@@ -1018,6 +1037,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -1040,7 +1060,7 @@ Stops the engine, This method uses an asynchronous callback to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Error codes:**
 
@@ -1066,6 +1086,7 @@ if (enrollIntelligentVoiceEngine != null) {
 
 ```
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -1088,7 +1109,7 @@ Stops the engine, This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise used to return the result. |
+| Promise&lt;void&gt; | the promise used to return the result. |
 
 **Error codes:**
 

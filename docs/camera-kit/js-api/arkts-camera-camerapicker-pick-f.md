@@ -6,6 +6,7 @@
 import { cameraPicker } from '@kit.CameraKit';
 ```
 
+<a id="pick"></a>
 ## pick
 
 ```TypeScript
@@ -33,14 +34,14 @@ Starts the camera picker and enters the corresponding mode based on the media ty
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context. |
-| mediaTypes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PickerMediaType> | Yes | Media type. |
+| mediaTypes | Array&lt;PickerMediaType&gt; | Yes | Media type. |
 | pickerProfile | [PickerProfile](arkts-camera-camerapicker-pickerprofile-c.md) | Yes | Profile of the camera picker. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PickerResult> | Promise used to return the processing result ([PickerResult](arkts-camera-camerapicker-pickerresult-c.md)) of the camera picker. |
+| Promise&lt;PickerResult&gt; | Promise used to return the processing result ([PickerResult](arkts-camera-camerapicker-pickerresult-c.md)) of the camera picker. |
 
 **Example**
 

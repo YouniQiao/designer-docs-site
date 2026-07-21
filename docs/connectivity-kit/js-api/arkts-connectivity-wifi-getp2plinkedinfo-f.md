@@ -6,6 +6,7 @@
 import { wifi } from '@kit.ConnectivityKit';
 ```
 
+<a id="getp2plinkedinfo"></a>
 ## getP2pLinkedInfo
 
 ```TypeScript
@@ -30,9 +31,10 @@ Obtains information about a P2P connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WifiP2pLinkedInfo> | Returns the P2P connection information. |
+| Promise&lt;WifiP2pLinkedInfo&gt; | Returns the P2P connection information. |
 
 
+<a id="getp2plinkedinfo-1"></a>
 ## getP2pLinkedInfo
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtains information about a P2P connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WifiP2pLinkedInfo> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WifiP2pLinkedInfo&gt; | Yes |  |
 
 **Example**
 

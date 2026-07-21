@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="off"></a>
 ## off('change')
 
 ```TypeScript
@@ -25,7 +26,7 @@ Disables listening for device hot swap events. This API is called before the app
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. This field has a fixed value of **change**. |
-| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceListener> | No | Callback to unregister. If this parameter is left unspecified,listening for hot swap events of all input devices will be canceled. |
+| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceListener&gt; | No | Callback to unregister. If this parameter is left unspecified,listening for hot swap events of all input devices will be canceled. |
 
 **Error codes:**
 

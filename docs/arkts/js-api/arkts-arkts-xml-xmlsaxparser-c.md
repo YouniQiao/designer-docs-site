@@ -14,6 +14,7 @@ The XmlSAXParser provides the capability of parsing XML in a streaming manner.
 import { xml } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -39,6 +40,7 @@ Creates and returns an XmlSAXParser instance.
 | inputStream | stream.Readable | Yes | An instance, of stream.Readable for the new XmlSAXParser. |
 | encoding | string | No | [encoding='utf8'] this is its encoding. |
 
+<a id="parse"></a>
 ## parse
 
 ```TypeScript

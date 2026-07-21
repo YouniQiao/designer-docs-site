@@ -16,9 +16,9 @@ Input event listener callback type.
 > this parameter.  
 >  
 > - The current callback parameter **event** only encapsulates the following raw input event types:  
-> [MouseEvent](arkts-arkui-common-mouseevent-i.md), [TouchEvent](arkts-arkui-common-touchevent-i.md), [KeyEvent](arkts-arkui-common-keyevent-i.md). Developers can obtain  
-> the corresponding event objects using [asMouseEvent](arkts-arkui-common-rawinputeventwrapper-c.md#asmouseevent-1),  
-> [asTouchEvent](arkts-arkui-common-rawinputeventwrapper-c.md#astouchevent-1), and [asKeyEvent](arkts-arkui-common-rawinputeventwrapper-c.md#askeyevent-1).  
+> [MouseEvent](arkts-arkui-mouseevent-i.md), [TouchEvent](arkts-arkui-touchevent-i.md), [KeyEvent](arkts-arkui-keyevent-i.md). Developers can obtain  
+> the corresponding event objects using [asMouseEvent](arkts-arkui-rawinputeventwrapper-c.md#asmouseevent-1),  
+> [asTouchEvent](arkts-arkui-rawinputeventwrapper-c.md#astouchevent-1), and [asKeyEvent](arkts-arkui-rawinputeventwrapper-c.md#askeyevent-1).  
 >  
 > - Do not perform time-consuming operations (such as complex calculations or network requests) in the callback, as  
 > this may cause application lag.  
@@ -44,11 +44,11 @@ Input event listener callback type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | RawInputEventWrapper | Yes | Input event wrapper. The system automatically creates and passes it.Developers do not need to create it manually. |
+| event | [RawInputEventWrapper](arkts-arkui-rawinputeventwrapper-c.md) | Yes | Input event wrapper. The system automatically creates and passes it. Developers do not need to create it manually.  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| InputEventInterceptResult | Event interception result. |
+| [InputEventInterceptResult](arkts-arkui-inputeventinterceptresult-i.md) | Event interception result.  |
 

@@ -18,6 +18,7 @@ Provides APIs for managing the analysis album change request.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -73,6 +74,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="createanalysisalbumrequest"></a>
 ## createAnalysisAlbumRequest
 
 ```TypeScript
@@ -152,6 +154,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
+<a id="setdefaultcoveruri"></a>
 ## setDefaultCoverUri
 
 ```TypeScript
@@ -233,6 +236,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="setorderposition"></a>
 ## setOrderPosition
 
 ```TypeScript
@@ -255,8 +259,8 @@ Sets the sequence of assets in the **Analysis** album.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Assets in the album for which the sequence needs to be set. |
-| position | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Sequence of assets in the album. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Assets in the album for which the sequence needs to be set. |
+| position | Array&lt;number&gt; | Yes | Sequence of assets in the album. |
 
 **Error codes:**
 
@@ -312,6 +316,7 @@ async function example(context: Context) {
 
 ```
 
+<a id="setrelationship"></a>
 ## setRelationship
 
 ```TypeScript
@@ -368,7 +373,7 @@ The supported relationship names include:
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

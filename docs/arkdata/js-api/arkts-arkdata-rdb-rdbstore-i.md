@@ -14,6 +14,7 @@ Before using the APIs of this class, use [executeSql](arkts-arkdata-rdb-rdbstore
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
+<a id="batchinsert"></a>
 ## batchInsert
 
 ```TypeScript
@@ -37,8 +38,8 @@ Inserts a batch of data into a table. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | An array of data to insert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,the number of inserted data records is returned. Otherwise, **-1** is returned. |
+| values | Array&lt;ValuesBucket&gt; | Yes | An array of data to insert. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,the number of inserted data records is returned. Otherwise, **-1** is returned. |
 
 **Example**
 
@@ -91,6 +92,7 @@ rdbStore.batchInsert("EMPLOYEE", valueBuckets, (status: number, insertNum: numbe
 
 ```
 
+<a id="batchinsert-1"></a>
 ## batchInsert
 
 ```TypeScript
@@ -114,13 +116,13 @@ Inserts a batch of data into a table. This API uses a promise to return the resu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | An array of data to insert. |
+| values | Array&lt;ValuesBucket&gt; | Yes | An array of data to insert. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the operation is successful, the number of inserted data records is returned. Otherwise, **-1** is returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the operation is successful, the number of inserted data records is returned. Otherwise, **-1** is returned. |
 
 **Example**
 
@@ -172,6 +174,7 @@ promise.then((insertNum: number) => {
 
 ```
 
+<a id="begintransaction"></a>
 ## beginTransaction
 
 ```TypeScript
@@ -220,6 +223,7 @@ data_rdb.getRdbStore(this.context, "RdbTest.db", 1, async (err: BusinessError, r
 
 ```
 
+<a id="commit"></a>
 ## commit
 
 ```TypeScript
@@ -268,6 +272,7 @@ data_rdb.getRdbStore(this.context, "RdbTest.db", 1, async (err: BusinessError, r
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -291,7 +296,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Deletion conditions specified by the **RdbPredicates** object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of rows deleted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of rows deleted. |
 
 **Example**
 
@@ -308,6 +313,7 @@ rdbStore.delete(predicates, (err: BusinessError, rows: number) => {
 
 ```
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -336,7 +342,7 @@ Deletes data from the RDB store based on the specified **RdbPredicates** object.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of rows deleted. |
+| Promise&lt;number&gt; | Promise used to return the number of rows deleted. |
 
 **Example**
 
@@ -352,6 +358,7 @@ promise.then((rows: number) => {
 
 ```
 
+<a id="executesql"></a>
 ## executeSql
 
 ```TypeScript
@@ -375,8 +382,8 @@ Executes an SQL statement that contains specified arguments but returns no value
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | Yes | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, the value of this parameter must be an empty array. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| bindArgs | Array&lt;ValueType&gt; | Yes | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, the value of this parameter must be an empty array. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -392,6 +399,7 @@ rdbStore.executeSql(SQL_DELETE_TABLE, ['zhangsan'], (err: BusinessError) => {
 
 ```
 
+<a id="executesql-1"></a>
 ## executeSql
 
 ```TypeScript
@@ -415,13 +423,13 @@ Executes an SQL statement that contains specified arguments but returns no value
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
+| bindArgs | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -436,6 +444,7 @@ promise.then(() => {
 
 ```
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -460,7 +469,7 @@ Inserts a row of data into a table. This API uses an asynchronous callback to re
 | --- | --- | --- | --- |
 | table | string | Yes | Name of the target table. |
 | values | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | Row of data to insert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,the row ID will be returned. Otherwise, **-1** will be returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,the row ID will be returned. Otherwise, **-1** will be returned. |
 
 **Example**
 
@@ -492,6 +501,7 @@ rdbStore.insert("EMPLOYEE", valueBucket, (status: number, rowId: number) => {
 
 ```
 
+<a id="insert-1"></a>
 ## insert
 
 ```TypeScript
@@ -521,7 +531,7 @@ Inserts a row of data into a table. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the operation is successful, the row ID will be returned. Otherwise, **-1** will be returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the operation is successful, the row ID will be returned. Otherwise, **-1** will be returned. |
 
 **Example**
 
@@ -552,6 +562,7 @@ promise.then((rowId: BusinessError) => {
 
 ```
 
+<a id="obtaindistributedtablename"></a>
 ## obtainDistributedTableName
 
 ```TypeScript
@@ -585,7 +596,7 @@ Obtains the distributed table name of a remote device based on the local table n
 | --- | --- | --- | --- |
 | device | string | Yes | ID of the remote device. |
 | table | string | Yes | Local table name of the remote device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. If the operation succeeds, the distributed table name of the remote device is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. If the operation succeeds, the distributed table name of the remote device is returned. |
 
 **Example**
 
@@ -614,6 +625,7 @@ rdbStore.obtainDistributedTableName(deviceId, "EMPLOYEE", (err: BusinessError, t
 
 ```
 
+<a id="obtaindistributedtablename-1"></a>
 ## obtainDistributedTableName
 
 ```TypeScript
@@ -652,7 +664,7 @@ Obtains the distributed table name of a remote device based on the local table n
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. If the operation succeeds, the distributed table name of the remote device is returned. |
+| Promise&lt;string&gt; | Promise used to return the result. If the operation succeeds, the distributed table name of the remote device is returned. |
 
 **Example**
 
@@ -680,6 +692,7 @@ promise.then((tableName: String) => {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -704,7 +717,7 @@ Unregisters the observer of the specified type from the RDB store. This API uses
 | --- | --- | --- | --- |
 | event | 'dataChange' | Yes | Event to observe. The value is **dataChange**, which indicates a data change event. |
 | type | [SubscribeType](../../apis-notification-kit/arkts-apis/arkts-notification-notificationextensionsubscription-subscribetype-e.md) | Yes | Subscription type to register. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> | Yes | Data change observer registered. **Array&lt;string&gt;** indicates the ID of the peer device whose data in the database is changed. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Data change observer registered. **Array<string>** indicates the ID of the peer device whose data in the database is changed. |
 
 **Example**
 
@@ -723,6 +736,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -747,7 +761,7 @@ Registers an observer for this RDB store. When the data in the RDB store changes
 | --- | --- | --- | --- |
 | event | 'dataChange' | Yes | Event to observe. The value is **dataChange**, which indicates a data change event. |
 | type | [SubscribeType](../../apis-notification-kit/arkts-apis/arkts-notification-notificationextensionsubscription-subscribetype-e.md) | Yes | Subscription type to register. |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> | Yes | Observer that listens for the data changes in the RDB store.**Array&lt;string&gt;** indicates the ID of the peer device whose data in the database is changed. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Observer that listens for the data changes in the RDB store.**Array<string>** indicates the ID of the peer device whose data in the database is changed. |
 
 **Example**
 
@@ -766,6 +780,7 @@ try {
 
 ```
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -789,8 +804,8 @@ Queries data from the RDB store based on specified conditions. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Query conditions specified by the **RdbPredicates** object. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Columns to query. If this parameter is not specified, the query applies to all columns. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | Callback used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
+| columns | Array&lt;string&gt; | Yes | Columns to query. If this parameter is not specified, the query applies to all columns. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | Callback used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
 
 **Example**
 
@@ -808,6 +823,7 @@ rdbStore.query(predicates, ["ID", "NAME", "AGE", "SALARY", "CODES"], (err: Busin
 
 ```
 
+<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -831,13 +847,13 @@ Queries data from the RDB store based on specified conditions. This API uses a p
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Query conditions specified by the **RdbPredicates** object. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Columns to query. If this parameter is not specified, the query applies to all columns. |
+| columns | Array&lt;string&gt; | No | Columns to query. If this parameter is not specified, the query applies to all columns. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | Promise used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
+| Promise&lt;ResultSet&gt; | Promise used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
 
 **Example**
 
@@ -854,6 +870,7 @@ promise.then((resultSet: void) => {
 
 ```
 
+<a id="querysql"></a>
 ## querySql
 
 ```TypeScript
@@ -877,8 +894,8 @@ Queries data using the specified SQL statement. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | Yes | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, the value of this parameter must be an empty array. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | Callback used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
+| bindArgs | Array&lt;ValueType&gt; | Yes | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, the value of this parameter must be an empty array. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | Callback used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
 
 **Example**
 
@@ -894,6 +911,7 @@ rdbStore.querySql("SELECT * FROM EMPLOYEE CROSS JOIN BOOK WHERE BOOK.NAME = ?", 
 
 ```
 
+<a id="querysql-1"></a>
 ## querySql
 
 ```TypeScript
@@ -917,13 +935,13 @@ Queries data using the specified SQL statement. This API uses a promise to retur
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sql | string | Yes | SQL statement to run. |
-| bindArgs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
+| bindArgs | Array&lt;ValueType&gt; | No | Arguments in the SQL statement. The value corresponds to the placeholders in the SQL parameter statement. If the SQL parameter statement is complete, leave this parameter blank. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | Promise used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
+| Promise&lt;ResultSet&gt; | Promise used to return the result. If the operation is successful, a **ResultSet** object will be returned. |
 
 **Example**
 
@@ -938,6 +956,7 @@ promise.then((resultSet: void) => {
 
 ```
 
+<a id="rollback"></a>
 ## rollBack
 
 ```TypeScript
@@ -991,6 +1010,7 @@ data_rdb.getRdbStore(this,context, "RdbTest.db", 1, async (err: BusinessError, r
 
 ```
 
+<a id="setdistributedtables"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -1015,8 +1035,8 @@ Sets distributed tables. This API uses an asynchronous callback to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tables | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Names of the distributed tables to set. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| tables | Array&lt;string&gt; | Yes | Names of the distributed tables to set. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -1031,6 +1051,7 @@ rdbStore.setDistributedTables(["EMPLOYEE"], (err: BusinessError) => {
 
 ```
 
+<a id="setdistributedtables-1"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -1055,13 +1076,13 @@ Sets distributed tables. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tables | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Names of the distributed tables to set. |
+| tables | Array&lt;string&gt; | Yes | Names of the distributed tables to set. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -1075,6 +1096,7 @@ promise.then(() => {
 
 ```
 
+<a id="sync"></a>
 ## sync
 
 ```TypeScript
@@ -1101,7 +1123,7 @@ Synchronizes data across devices. This API uses an asynchronous callback to retu
 | --- | --- | --- | --- |
 | mode | [SyncMode](arkts-arkdata-relationalstore-syncmode-e.md) | Yes | Data sync mode. The value can be **push** or **pull**. |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | **RdbPredicates** object that specifies the data and devices to synchronize. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<[string, number]>> | Yes | Callback invoked to send the sync result to the caller. <br>**string** indicates the device ID. <br>**number** indicates the sync status of that device. The value **0** indicates a successful sync. Other values indicate a sync failure. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;[string, number]&gt;&gt; | Yes | Callback invoked to send the sync result to the caller. <br>**string** indicates the device ID. <br>**number** indicates the sync status of that device. The value **0** indicates a successful sync. Other values indicate a sync failure. |
 
 **Example**
 
@@ -1137,6 +1159,7 @@ rdbStore.sync(data_rdb.SyncMode.SYNC_MODE_PUSH, predicates, (err: BusinessError,
 
 ```
 
+<a id="sync-1"></a>
 ## sync
 
 ```TypeScript
@@ -1168,7 +1191,7 @@ Synchronizes data across devices. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<[string, number]>> | Promise used to send the sync result.<br>**string** indicates the device ID.<br>**number** indicates the sync status of that device. The value **0** indicates a successful sync. Other values indicate a sync failure. |
+| Promise&lt;Array&lt;[string, number]&gt;&gt; | Promise used to send the sync result.<br>**string** indicates the device ID.<br>**number** indicates the sync status of that device. The value **0** indicates a successful sync. Other values indicate a sync failure. |
 
 **Example**
 
@@ -1203,6 +1226,7 @@ promise.then((result: void) =>{
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -1227,7 +1251,7 @@ Updates data in the RDB store based on the specified **RdbPredicates** object. T
 | --- | --- | --- | --- |
 | values | [ValuesBucket](arkts-arkdata-rdb-valuesbucket-t.md) | Yes | Rows of data to update in the RDB store. The key-value pair is associated with the column name in the target table. |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | Update conditions specified by the **RdbPredicates** object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback invoked to return the number of rows updated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback invoked to return the number of rows updated. |
 
 **Example**
 
@@ -1261,6 +1285,7 @@ rdbStore.update(valueBucket, predicates, (err: BusinessError, rows: number) => {
 
 ```
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -1290,7 +1315,7 @@ Updates data based on the specified **RdbPredicates** object. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of rows updated. |
+| Promise&lt;number&gt; | Promise used to return the number of rows updated. |
 
 **Example**
 

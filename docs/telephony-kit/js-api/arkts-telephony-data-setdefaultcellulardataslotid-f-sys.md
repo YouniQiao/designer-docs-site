@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="setdefaultcellulardataslotid"></a>
 ## setDefaultCellularDataSlotId
 
 ```TypeScript
@@ -29,7 +30,7 @@ Switch cellular data services to another card, without changing the default sett
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the ID of the target card slot.The value {@code 0} indicates card 1, and the value {@code 1} indicates card 2. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setDefaultCellularDataSlotId. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setDefaultCellularDataSlotId. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ data.setDefaultCellularDataSlotId(0, (err: BusinessError) => {
 ```
 
 
+<a id="setdefaultcellulardataslotid-1"></a>
 ## setDefaultCellularDataSlotId
 
 ```TypeScript
@@ -90,7 +92,7 @@ Switch cellular data services to another card, without changing the default sett
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setDefaultCellularDataSlotId. |
+| Promise&lt;void&gt; | The promise returned by the setDefaultCellularDataSlotId. |
 
 **Error codes:**
 

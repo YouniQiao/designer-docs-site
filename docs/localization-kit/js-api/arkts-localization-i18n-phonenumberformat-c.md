@@ -14,6 +14,7 @@ Provides phone number management capabilities, such as phone number validity ver
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -47,6 +48,7 @@ let phoneNumberFormat: i18n.PhoneNumberFormat = new i18n.PhoneNumberFormat('CN',
 
 ```
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -99,6 +101,7 @@ for (let i = 0; i < phoneNumber.length; i++) {
 
 ```
 
+<a id="getlocationname"></a>
 ## getLocationName
 
 ```TypeScript
@@ -123,7 +126,7 @@ Obtains the home location of a phone number.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | phoneNumber | string | Yes | Phone number. To obtain the home location of a number in other countries/regions,you need to prefix the number with **00** and the country code.<br>**Since:** 12 |
-| locale | string | Yes | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
+| locale | string | Yes | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
 
 **Return value:**
 
@@ -153,6 +156,7 @@ formatResult = typingFormatter.getLocationName('133426', 'en'); // formatResult 
 
 ```
 
+<a id="isvalidnumber"></a>
 ## isValidNumber
 
 ```TypeScript

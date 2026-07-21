@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createmediasourcewithdirectory"></a>
 ## createMediaSourceWithDirectory
 
 ```TypeScript
@@ -32,7 +33,7 @@ Create a MediaSource object from the given directory.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)< MediaSource \| undefined> | If success, an MediaSource is returned. Otherwise returns null. |
+| Promise&lt; MediaSource \| undefined&gt; | If success, an MediaSource is returned. Otherwise returns null. |
 
 **Error codes:**
 

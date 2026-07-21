@@ -16,6 +16,7 @@
 import { OnBodyStateResponse, subscribeAccelerometerOptions, ProximityResponse, SubscribeGyroscopeOptions, SubscribeStepCounterOptions, SubscribeDeviceOrientationOptions, HeartRateResponse, LightResponse, AccelerometerResponse, SubscribeLightOptions, DeviceOrientationResponse, SubscribeHeartRateOptions, StepCounterResponse, SubscribeCompassOptions, GetOnBodyStateOptions, SubscribeBarometerOptions, BarometerResponse, SubscribeProximityOptions, CompassResponse, GyroscopeResponse, SubscribeOnBodyStateOptions } from '@kit.SensorServiceKit';
 ```
 
+<a id="getonbodystate"></a>
 ## getOnBodyState
 
 ```TypeScript
@@ -42,6 +43,7 @@ Obtains the wearing state of a wearable device.
 | --- | --- | --- | --- |
 | options | [GetOnBodyStateOptions](arkts-sensorservice-sensor-getonbodystateoptions-i.md) | Yes | Callback invoked when obtaining the wearing state of the device that houses the sensor. |
 
+<a id="subscribeaccelerometer"></a>
 ## subscribeAccelerometer
 
 ```TypeScript
@@ -53,7 +55,7 @@ Subscribes to data changes of the acceleration sensor. If this API is called mul
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [ACCELEROMETER](arkts-sensorservice-sensor-on-f.md#on-25)  
+> [ACCELEROMETER](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback: Callback<AccelerometerResponse>, options?: Options))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -76,6 +78,7 @@ Subscribes to data changes of the acceleration sensor. If this API is called mul
 | --- | --- | --- | --- |
 | options | [subscribeAccelerometerOptions](arkts-sensorservice-sensor-subscribeaccelerometeroptions-i.md) | Yes | Type of data to return. |
 
+<a id="subscribebarometer"></a>
 ## subscribeBarometer
 
 ```TypeScript
@@ -87,7 +90,7 @@ Subscribes to data changes of the barometer sensor. If this API is called multip
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [BAROMETER](arkts-sensorservice-sensor-on-f.md#on-29)  
+> [BAROMETER](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback: Callback<BarometerResponse>, options?: Options))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -108,6 +111,7 @@ Subscribes to data changes of the barometer sensor. If this API is called multip
 | --- | --- | --- | --- |
 | options | [SubscribeBarometerOptions](arkts-sensorservice-sensor-subscribebarometeroptions-i.md) | Yes | Type of data to return. |
 
+<a id="subscribecompass"></a>
 ## subscribeCompass
 
 ```TypeScript
@@ -119,7 +123,7 @@ Subscribes to data changes of the compass sensor. If this API is called multiple
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [ORIENTATION](arkts-sensorservice-sensor-on-f.md#on-39)  
+> [ORIENTATION](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback: Callback<OrientationResponse>, options?: Options))  
 > since API Version 8.
 
 **Since:** 3
@@ -140,6 +144,7 @@ Subscribes to data changes of the compass sensor. If this API is called multiple
 | --- | --- | --- | --- |
 | options | [SubscribeCompassOptions](arkts-sensorservice-sensor-subscribecompassoptions-i.md) | Yes | Type of data to return. |
 
+<a id="subscribedeviceorientation"></a>
 ## subscribeDeviceOrientation
 
 ```TypeScript
@@ -153,7 +158,7 @@ If this API is called multiple times for the same application, the last call tak
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [ORIENTATION](arkts-sensorservice-sensor-on-f.md#on-39)  
+> [ORIENTATION](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback: Callback<OrientationResponse>, options?: Options))  
 > instead. since API Version 8.
 
 **Since:** 6
@@ -174,6 +179,7 @@ If this API is called multiple times for the same application, the last call tak
 | --- | --- | --- | --- |
 | options | [SubscribeDeviceOrientationOptions](arkts-sensorservice-sensor-subscribedeviceorientationoptions-i.md) | Yes | Type of data to return. |
 
+<a id="subscribegyroscope"></a>
 ## subscribeGyroscope
 
 ```TypeScript
@@ -187,7 +193,7 @@ If this API is called multiple times for the same application, the last call tak
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [GYROSCOPE](arkts-sensorservice-sensor-on-f.md#on-31)  
+> [GYROSCOPE](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback: Callback<GyroscopeResponse>, options?: Options))  
 > instead. since API Version 8.
 
 **Since:** 6
@@ -210,6 +216,7 @@ If this API is called multiple times for the same application, the last call tak
 | --- | --- | --- | --- |
 | options | [SubscribeGyroscopeOptions](arkts-sensorservice-sensor-subscribegyroscopeoptions-i.md) | Yes | Type of data to return. |
 
+<a id="subscribeheartrate"></a>
 ## subscribeHeartRate
 
 ```TypeScript
@@ -221,7 +228,7 @@ Subscribes to data changes of the heart rate sensor. If this API is called multi
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [HEART_RATE](arkts-sensorservice-sensor-on-f.md#on-34)  
+> [HEART_RATE](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback: Callback<HeartRateResponse>, options?: Options))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -244,6 +251,7 @@ Subscribes to data changes of the heart rate sensor. If this API is called multi
 | --- | --- | --- | --- |
 | options | [SubscribeHeartRateOptions](arkts-sensorservice-sensor-subscribeheartrateoptions-i.md) | Yes | Type of data to return. |
 
+<a id="subscribelight"></a>
 ## subscribeLight
 
 ```TypeScript
@@ -255,7 +263,7 @@ Subscribes to data changes of the ambient light sensor. If this API is called mu
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [AMBIENT_LIGHT](arkts-sensorservice-sensor-on-f.md#on-27)  
+> [AMBIENT_LIGHT](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback: Callback<LightResponse>, options?: Options))  
 > since API Version 8.
 
 **Since:** 3
@@ -276,6 +284,7 @@ Subscribes to data changes of the ambient light sensor. If this API is called mu
 | --- | --- | --- | --- |
 | options | [SubscribeLightOptions](arkts-sensorservice-sensor-subscribelightoptions-i.md) | Yes | Type of data to return. |
 
+<a id="subscribeonbodystate"></a>
 ## subscribeOnBodyState
 
 ```TypeScript
@@ -287,7 +296,7 @@ Subscribes to wearing status changes of a wearable device. If this API is called
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [WEAR_DETECTION](arkts-sensorservice-sensor-on-f.md#on-45)  
+> [WEAR_DETECTION](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback: Callback<WearDetectionResponse>, options?: Options))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -308,6 +317,7 @@ Subscribes to wearing status changes of a wearable device. If this API is called
 | --- | --- | --- | --- |
 | options | [SubscribeOnBodyStateOptions](arkts-sensorservice-sensor-subscribeonbodystateoptions-i.md) | Yes | Type of data to return. |
 
+<a id="subscribeproximity"></a>
 ## subscribeProximity
 
 ```TypeScript
@@ -319,7 +329,7 @@ Subscribes to data changes of the proximity sensor. If this API is called multip
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [PROXIMITY](arkts-sensorservice-sensor-on-f.md#on-42)  
+> [PROXIMITY](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback: Callback<ProximityResponse>, options?: Options))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -340,6 +350,7 @@ Subscribes to data changes of the proximity sensor. If this API is called multip
 | --- | --- | --- | --- |
 | options | [SubscribeProximityOptions](arkts-sensorservice-sensor-subscribeproximityoptions-i.md) | Yes | Type of data to return. |
 
+<a id="subscribestepcounter"></a>
 ## subscribeStepCounter
 
 ```TypeScript
@@ -351,7 +362,7 @@ Subscribes to data changes of the step counter sensor. If this API is called mul
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [PEDOMETER](arkts-sensorservice-sensor-on-f.md#on-40)  
+> [PEDOMETER](@ohos.sensor:sensor.on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback: Callback<PedometerResponse>, options?: Options))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -374,6 +385,7 @@ Subscribes to data changes of the step counter sensor. If this API is called mul
 | --- | --- | --- | --- |
 | options | [SubscribeStepCounterOptions](arkts-sensorservice-sensor-subscribestepcounteroptions-i.md) | Yes | Type of data to return. |
 
+<a id="unsubscribeaccelerometer"></a>
 ## unsubscribeAccelerometer
 
 ```TypeScript
@@ -385,7 +397,7 @@ Unsubscribes from data changes of the acceleration sensor.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [ACCELEROMETER](arkts-sensorservice-sensor-off-f.md#off-48)  
+> [ACCELEROMETER](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback?: Callback<AccelerometerResponse>))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -402,6 +414,7 @@ Unsubscribes from data changes of the acceleration sensor.
 
 **System capability:** SystemCapability.Sensors.Sensor.Lite
 
+<a id="unsubscribebarometer"></a>
 ## unsubscribeBarometer
 
 ```TypeScript
@@ -413,7 +426,7 @@ Unsubscribes from data changes of the barometer sensor.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [BAROMETER](arkts-sensorservice-sensor-off-f.md#off-52)  
+> [BAROMETER](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback?: Callback<BarometerResponse>))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -428,6 +441,7 @@ Unsubscribes from data changes of the barometer sensor.
 
 **System capability:** SystemCapability.Sensors.Sensor.Lite
 
+<a id="unsubscribecompass"></a>
 ## unsubscribeCompass
 
 ```TypeScript
@@ -439,7 +453,7 @@ Unsubscribes from data changes of the compass sensor.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [ORIENTATION](arkts-sensorservice-sensor-off-f.md#off-62)  
+> [ORIENTATION](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback?: Callback<OrientationResponse>))  
 > instead.
 
 **Since:** 3
@@ -454,6 +468,7 @@ Unsubscribes from data changes of the compass sensor.
 
 **System capability:** SystemCapability.Sensors.Sensor.Lite
 
+<a id="unsubscribedeviceorientation"></a>
 ## unsubscribeDeviceOrientation
 
 ```TypeScript
@@ -465,7 +480,7 @@ Unsubscribes from data changes of the device orientation sensor.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [ORIENTATION](arkts-sensorservice-sensor-off-f.md#off-62)  
+> [ORIENTATION](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback?: Callback<OrientationResponse>))  
 > instead. since API Version 8.
 
 **Since:** 6
@@ -480,6 +495,7 @@ Unsubscribes from data changes of the device orientation sensor.
 
 **System capability:** SystemCapability.Sensors.Sensor.Lite
 
+<a id="unsubscribegyroscope"></a>
 ## unsubscribeGyroscope
 
 ```TypeScript
@@ -491,7 +507,7 @@ Unsubscribes from data changes of the gyroscope sensor.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [GYROSCOPE](arkts-sensorservice-sensor-off-f.md#off-54)  
+> [GYROSCOPE](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback?: Callback<GyroscopeResponse>))  
 > instead. since API Version 8.
 
 **Since:** 6
@@ -508,6 +524,7 @@ Unsubscribes from data changes of the gyroscope sensor.
 
 **System capability:** SystemCapability.Sensors.Sensor.Lite
 
+<a id="unsubscribeheartrate"></a>
 ## unsubscribeHeartRate
 
 ```TypeScript
@@ -519,7 +536,7 @@ Unsubscribes from data changes of the heart rate sensor.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [HEART_RATE](arkts-sensorservice-sensor-off-f.md#off-57)  
+> [HEART_RATE](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback?: Callback<HeartRateResponse>))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -536,6 +553,7 @@ Unsubscribes from data changes of the heart rate sensor.
 
 **System capability:** SystemCapability.Sensors.Sensor.Lite
 
+<a id="unsubscribelight"></a>
 ## unsubscribeLight
 
 ```TypeScript
@@ -547,7 +565,7 @@ Unsubscribes from data changes of the ambient light sensor.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [AMBIENT_LIGHT](arkts-sensorservice-sensor-off-f.md#off-50)  
+> [AMBIENT_LIGHT](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback?: Callback<LightResponse>))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -562,6 +580,7 @@ Unsubscribes from data changes of the ambient light sensor.
 
 **System capability:** SystemCapability.Sensors.Sensor.Lite
 
+<a id="unsubscribeonbodystate"></a>
 ## unsubscribeOnBodyState
 
 ```TypeScript
@@ -573,7 +592,7 @@ Unsubscribes from wearing status changes of a wearable device.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [WEAR_DETECTION](arkts-sensorservice-sensor-off-f.md#off-68)  
+> [WEAR_DETECTION](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback?: Callback<WearDetectionResponse>))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -588,6 +607,7 @@ Unsubscribes from wearing status changes of a wearable device.
 
 **System capability:** SystemCapability.Sensors.Sensor.Lite
 
+<a id="unsubscribeproximity"></a>
 ## unsubscribeProximity
 
 ```TypeScript
@@ -599,7 +619,7 @@ Unsubscribes from data changes of the proximity sensor.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [PROXIMITY](arkts-sensorservice-sensor-off-f.md#off-65)  
+> [PROXIMITY](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback?: Callback<ProximityResponse>))  
 > instead. since API Version 8.
 
 **Since:** 3
@@ -614,6 +634,7 @@ Unsubscribes from data changes of the proximity sensor.
 
 **System capability:** SystemCapability.Sensors.Sensor.Lite
 
+<a id="unsubscribestepcounter"></a>
 ## unsubscribeStepCounter
 
 ```TypeScript
@@ -625,7 +646,7 @@ Unsubscribes from data changes of the step counter sensor.
 > **NOTE**  
 >  
 > Except for lite wearables, You are advised to use  
-> [PEDOMETER](arkts-sensorservice-sensor-off-f.md#off-63)  
+> [PEDOMETER](@ohos.sensor:sensor.off(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback?: Callback<PedometerResponse>))  
 > instead. since API Version 8.
 
 **Since:** 3

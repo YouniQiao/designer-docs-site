@@ -16,6 +16,7 @@ Provides APIs to manage albums.
 import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="getfaceid"></a>
 ## getFaceId
 
 ```TypeScript
@@ -38,7 +39,7 @@ Obtains the face identifier on the cover of a portrait album or group photo albu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return **tag_id** of the portrait album, **group_tag** of the group photo album, or an empty string if no face identifier is found. |
+| Promise&lt;string&gt; | Promise used to return **tag_id** of the portrait album, **group_tag** of the group photo album, or an empty string if no face identifier is found. |
 
 **Error codes:**
 

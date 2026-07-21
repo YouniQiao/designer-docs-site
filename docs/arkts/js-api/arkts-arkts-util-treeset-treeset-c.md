@@ -14,6 +14,7 @@ TreeSet is implemented based on TreeMap. In TreeSet, only value objects are proc
 import { TreeSet } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an ES6 iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -79,6 +80,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -122,6 +124,7 @@ console.info("result:", result); // result: true
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -156,6 +159,7 @@ console.info("result:", result); // result: true
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -176,7 +180,7 @@ A constructor used to create a TreeSet object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| comparator | (firstValue: T, secondValue: T) => boolean | No | comparator comparator (Optional) User-defined comparison functions.firstValue (required) previous element.secondValue (required) next element. |
+| comparator | (firstValue: T, secondValue: T) =&gt; boolean | No | comparator comparator (Optional) User-defined comparison functions.firstValue (required) previous element.secondValue (required) next element. |
 
 **Error codes:**
 
@@ -229,6 +233,7 @@ console.info("treeSet: ", ts1.length);
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -249,7 +254,7 @@ Returns a new Iterator object that contains the [key, value] pairs for each elem
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[T, T]> | @throws { BusinessError } 10200011 - The entries method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[T, T]&gt; | @throws { BusinessError } 10200011 - The entries method cannot be bound. |
 
 **Error codes:**
 
@@ -286,6 +291,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -306,8 +312,8 @@ Executes a provided function once for each value in the Set object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value?: T, key?: T, set?: TreeSet<T>) => void | Yes | callbackFn callbackFn (required) A function that accepts up to three arguments.The function to be called for each element. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | thisArg thisArg (Optional) The value to be used as this value for when callbackFn is called.If thisArg is omitted, undefined is used as the this value. |
+| callbackFn | (value?: T, key?: T, set?: TreeSet&lt;T&gt;) =&gt; void | Yes | callbackFn callbackFn (required) A function that accepts up to three arguments.The function to be called for each element. |
+| thisArg | Object | No | thisArg thisArg (Optional) The value to be used as this value for when callbackFn is called.If thisArg is omitted, undefined is used as the this value. |
 
 **Error codes:**
 
@@ -341,6 +347,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="getfirstvalue"></a>
 ## getFirstValue
 
 ```TypeScript
@@ -368,7 +375,7 @@ Gets the first elements in a set
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getFirstValue method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -381,6 +388,7 @@ console.info("result:", result); // result: sparrow
 
 ```
 
+<a id="gethighervalue"></a>
 ## getHigherValue
 
 ```TypeScript
@@ -427,6 +435,7 @@ console.info("result:", result); // result: squirrel
 
 ```
 
+<a id="getlastvalue"></a>
 ## getLastValue
 
 ```TypeScript
@@ -454,7 +463,7 @@ Gets the last elements in a set
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getLastValue method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -467,6 +476,7 @@ console.info("result:", result); // result: squirrel
 
 ```
 
+<a id="getlowervalue"></a>
 ## getLowerValue
 
 ```TypeScript
@@ -513,6 +523,7 @@ console.info("result:", result); // result: gander
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -557,6 +568,7 @@ console.info("result:", result); // result: true
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -594,6 +606,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="popfirst"></a>
 ## popFirst
 
 ```TypeScript
@@ -621,7 +634,7 @@ Return and delete the first element, returns undefined if tree set is empty
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The popFirst method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -634,6 +647,7 @@ console.info("result:", result); // result: sparrow
 
 ```
 
+<a id="poplast"></a>
 ## popLast
 
 ```TypeScript
@@ -661,7 +675,7 @@ Return and delete the last element, returns undefined if tree set is empty
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The popLast method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -674,6 +688,7 @@ console.info("result:", result); // result: squirrel
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -719,6 +734,7 @@ console.info("result:", result); // result: true
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -739,7 +755,7 @@ Returns a new Iterator object that contains the values contained in this set
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @throws { BusinessError } 10200011 - The values method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @throws { BusinessError } 10200011 - The values method cannot be bound. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="getcountrycode"></a>
 ## getCountryCode
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtain the current country code.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CountryCode> | Yes | Indicates the callback for reporting the country code. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CountryCode&gt; | Yes | Indicates the callback for reporting the country code. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ try {
 ```
 
 
+<a id="getcountrycode-1"></a>
 ## getCountryCode
 
 ```TypeScript
@@ -74,7 +76,7 @@ Obtain the current country code.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CountryCode> | The promise returned by the function. |
+| Promise&lt;CountryCode&gt; | The promise returned by the function. |
 
 **Error codes:**
 

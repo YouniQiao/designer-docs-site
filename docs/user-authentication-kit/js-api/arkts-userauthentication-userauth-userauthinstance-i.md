@@ -21,6 +21,7 @@ Before using the APIs of **UserAuthInstance**, you must obtain a **UserAuthInsta
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -95,6 +96,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('result')
 
 ```TypeScript
@@ -121,7 +123,7 @@ Unsubscribes from the user authentication result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'result' | Yes | Event type. The value is **result**, which indicates the authentication result. |
-| callback | [IAuthCallback](arkts-userauthentication-userauth-iauthcallback-i.md) | No | Callback used to return the user authentication result. If this parameter is not passed, the value passed when the [on('result')](arkts-userauthentication-userauth-userauthinstance-i.md#on-1) API is called is used by default. |
+| callback | [IAuthCallback](arkts-userauthentication-userauth-iauthcallback-i.md) | No | Callback used to return the user authentication result. If this parameter is not passed, the value passed when the [on('result')](userAuth.UserAuthInstance.on(type: 'result', callback: IAuthCallback)) API is called is used by default. |
 
 **Error codes:**
 
@@ -175,6 +177,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('authTip')
 
 ```TypeScript
@@ -252,13 +255,14 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('result')
 
 ```TypeScript
 on(type: 'result', callback: IAuthCallback): void
 ```
 
-Subscribes to the user authentication result. This API is used to obtain the final identity authentication result after the user completes identity authentication interaction with the authentication component. Before the authentication widget disappears, the intermediate authentication failures will not be returned through this API.Only the final authentication result (success or failure) is returned through this API. To perceive each authentication failure and intermediate status during the entire authentication process, use the [on('authTip')](arkts-userauthentication-userauth-userauthinstance-i.md#on-2) API for subscription.
+Subscribes to the user authentication result. This API is used to obtain the final identity authentication result after the user completes identity authentication interaction with the authentication component. Before the authentication widget disappears, the intermediate authentication failures will not be returned through this API.Only the final authentication result (success or failure) is returned through this API. To perceive each authentication failure and intermediate status during the entire authentication process, use the [on('authTip')](userAuth.UserAuthInstance.on(type: 'authTip', callback: AuthTipCallback)) API for subscription.
 
 > **NOTE**
 
@@ -267,7 +271,7 @@ Subscribes to the user authentication result. This API is used to obtain the fin
 > configured) and receives the authentication result, and if other windows need to be displayed, the application  
 > needs to obtain the flag message released by the component pop-up window and subscribe to the component release  
 > message (**authTipInfo.tipCode = UserAuthTipCode.WIDGET_RELEASED**) through the  
-> [on('authTip')](arkts-userauthentication-userauth-userauthinstance-i.md#on-2) API.
+> [on('authTip')](userAuth.UserAuthInstance.on(type: 'authTip', callback: AuthTipCallback)) API.
 
 **Since:** 10
 
@@ -291,6 +295,7 @@ Subscribes to the user authentication result. This API is used to obtain the fin
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
 | [12500002](../errorcode-useriam.md#12500002-common-error-code-of-the-identity-authentication-system) | General operation error. |
 
+<a id="on-1"></a>
 ## on('authTip')
 
 ```TypeScript
@@ -306,7 +311,7 @@ Subscribes to authentication tip information. This API is used to obtain the wid
 > configured) and receives the authentication result, and if other windows need to be displayed, the application  
 > needs to obtain the flag message released by the component pop-up window and subscribe to the component release  
 > message (**authTipInfo.tipCode = UserAuthTipCode.WIDGET_RELEASED**) through the  
-> [on('authTip')](arkts-userauthentication-userauth-userauthinstance-i.md#on-2) API.
+> [on('authTip')](userAuth.UserAuthInstance.on(type: 'authTip', callback: AuthTipCallback)) API.
 
 **Since:** 20
 
@@ -375,6 +380,7 @@ try {
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="getid"></a>
 ## getId
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the ID of the wallpaper of the specified type. Returns an integer greate
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | wallpaperType | [WallpaperType](arkts-basicservices-wallpaper-wallpapertype-e.md) | Yes | indicates the wallpaper type. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | the callback of getId. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | the callback of getId. |
 
 **Example**
 
@@ -45,6 +46,7 @@ wallpaper.getId(wallpaper.WallpaperType.WALLPAPER_SYSTEM, (error: BusinessError,
 ```
 
 
+<a id="getid-1"></a>
 ## getId
 
 ```TypeScript
@@ -71,7 +73,7 @@ Obtains the ID of the wallpaper of the specified type. Returns an integer greate
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | the promise returned by the function. |
+| Promise&lt;number&gt; | the promise returned by the function. |
 
 **Example**
 

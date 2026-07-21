@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="onchangewithattribute"></a>
 ## onChangeWithAttribute
 
 ```TypeScript
@@ -26,8 +27,8 @@ Subscribes to changes of specified attributes of a display.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayAttributeOption | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Attribute names. Only attributes contained in [Display](arkts-arkui-display-display-i.md) are supported. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the ID of the display, which is an integer. |
+| displayAttributeOption | Array&lt;string&gt; | Yes | Attribute names. Only attributes contained in [Display](arkts-arkui-display-display-i.md) are supported. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the ID of the display, which is an integer. |
 
 **Error codes:**
 

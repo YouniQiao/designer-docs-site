@@ -21,6 +21,7 @@ Provides APIs to create and display toasts, dialog boxes, action menus, and cust
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="closecustomdialog"></a>
 ## closeCustomDialog
 
 ```TypeScript
@@ -43,13 +44,13 @@ Closes a custom dialog box corresponding to **dialogContent**. This API uses a p
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content of the custom dialog box. |
+| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content of the custom dialog box. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ Closes a custom dialog box corresponding to **dialogContent**. This API uses a p
 | [103301](../errorcode-promptAction.md#103301-dialog-content-error) | Dialog content error. The ComponentContent is incorrect. |
 | [103303](../errorcode-promptAction.md#103303-custom-dialog-box-not-found) | Dialog content not found. The ComponentContent cannot be found. |
 
+<a id="closecustomdialog-1"></a>
 ## closeCustomDialog
 
 ```TypeScript
@@ -90,6 +92,7 @@ Closes the specified custom dialog box.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="closemenu"></a>
 ## closeMenu
 
 ```TypeScript
@@ -112,13 +115,13 @@ Closes the menu corresponding to the provided content. This API uses a promise t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content displayed in the menu. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content displayed in the menu. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -128,6 +131,7 @@ Closes the menu corresponding to the provided content. This API uses a promise t
 | [103301](../errorcode-promptAction.md#103301-dialog-content-error) | The ComponentContent is incorrect. |
 | [103303](../errorcode-promptAction.md#103303-custom-dialog-box-not-found) | The ComponentContent cannot be found. |
 
+<a id="closepopup"></a>
 ## closePopup
 
 ```TypeScript
@@ -150,13 +154,13 @@ Closes the popup corresponding to the provided **content**. This API uses a prom
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content displayed in the popup. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content displayed in the popup. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -166,6 +170,7 @@ Closes the popup corresponding to the provided **content**. This API uses a prom
 | [103301](../errorcode-promptAction.md#103301-dialog-content-error) | The ComponentContent is incorrect. |
 | [103303](../errorcode-promptAction.md#103303-custom-dialog-box-not-found) | The ComponentContent cannot be found. |
 
+<a id="closetoast"></a>
 ## closeToast
 
 ```TypeScript
@@ -198,6 +203,7 @@ Closes the specified toast.
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 | [103401](../errorcode-promptAction.md#103401-toast-not-found) | Cannot find the toast. |
 
+<a id="getbottomorder"></a>
 ## getBottomOrder
 
 ```TypeScript
@@ -222,6 +228,7 @@ This API returns the order of the dialog box currently at the bottom layer. This
 | --- | --- |
 | [LevelOrder](arkts-arkui-levelorder-t.md) | Order of the topmost dialog box. |
 
+<a id="gettoporder"></a>
 ## getTopOrder
 
 ```TypeScript
@@ -248,6 +255,7 @@ This API returns the order of the dialog box currently at the top layer. This in
 | --- | --- |
 | [LevelOrder](arkts-arkui-levelorder-t.md) | Order of the topmost dialog box. |
 
+<a id="opencustomdialog"></a>
 ## openCustomDialog
 
 ```TypeScript
@@ -270,14 +278,14 @@ Opens a custom dialog box corresponding to **dialogContent**. This API uses a pr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content of the custom dialog box. |
+| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content of the custom dialog box. |
 | options | promptAction.BaseDialogOptions | No | Dialog box style.<br>Note: If both [isModal](arkts-arkui-promptaction-basedialogoptions-i.md) and [showInSubWindow](arkts-arkui-promptaction-basedialogoptions-i.md)in **BaseDialogOptions** are set to **true**, only **showInSubWindow** takes effect.In this case, the non-modal dialog box is displayed without mask in the subwindow. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -287,6 +295,7 @@ Opens a custom dialog box corresponding to **dialogContent**. This API uses a pr
 | [103301](../errorcode-promptAction.md#103301-dialog-content-error) | Dialog content error. The ComponentContent is incorrect. |
 | [103302](../errorcode-promptAction.md#103302-custom-dialog-box-already-exists) | Dialog content already exist. The ComponentContent has already been opened. |
 
+<a id="opencustomdialog-1"></a>
 ## openCustomDialog
 
 ```TypeScript
@@ -317,7 +326,7 @@ Creates and displays a custom dialog box. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise that returns the dialog box ID for use with **closeCustomDialog**. |
+| Promise&lt;number&gt; | Promise that returns the dialog box ID for use with **closeCustomDialog**. |
 
 **Error codes:**
 
@@ -326,6 +335,7 @@ Creates and displays a custom dialog box. This API uses a promise to return the 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="opencustomdialogwithcontroller"></a>
 ## openCustomDialogWithController
 
 ```TypeScript
@@ -353,7 +363,7 @@ The dialog box displayed through this API has its content fully following style 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content of the custom dialog box. |
+| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content of the custom dialog box. |
 | controller | promptAction.DialogController | Yes | Controller of the custom dialog box. |
 | options | promptAction.BaseDialogOptions | No | Style of the custom dialog box.<br>Note: If both [isModal](arkts-arkui-promptaction-basedialogoptions-i.md)and [showInSubWindow](arkts-arkui-promptaction-basedialogoptions-i.md) in **BaseDialogOptions** are set to **true**,only **showInSubWindow** takes effect. In this case, the non-modal dialog box is displayed without mask in the subwindow. |
 
@@ -361,7 +371,7 @@ The dialog box displayed through this API has its content fully following style 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -371,6 +381,7 @@ The dialog box displayed through this API has its content fully following style 
 | [103301](../errorcode-promptAction.md#103301-dialog-content-error) | Dialog content error. The ComponentContent is incorrect. |
 | [103302](../errorcode-promptAction.md#103302-custom-dialog-box-already-exists) | Dialog content already exist. The ComponentContent has already been opened. |
 
+<a id="openmenu"></a>
 ## openMenu
 
 ```TypeScript
@@ -408,15 +419,15 @@ Opens a menu with the specified content. This API uses a promise to return the r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content displayed in the menu. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content displayed in the menu. |
 | target | [TargetInfo](arkts-arkui-arkui-uicontext-targetinfo-i.md) | Yes | Information about the target component to bind. |
-| options | [MenuOptions](../arkts-components/arkts-arkui-common-menuoptions-i.md) | No | Style of the menu.<br>**NOTE**<br>The **title** property is not effective.<br>The **preview** parameter supports only the **MenuPreviewMode** type. |
+| options | [MenuOptions](../arkts-components/arkts-arkui-menuoptions-i.md) | No | Style of the menu.<br>**NOTE**<br>The **title** property is not effective.<br>The **preview** parameter supports only the **MenuPreviewMode** type. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -428,6 +439,7 @@ Opens a menu with the specified content. This API uses a promise to return the r
 | [103304](../errorcode-promptAction.md#103304-target-id-not-found) | The targetId does not exist. |
 | [103305](../errorcode-promptAction.md#103305-node-not-mounted) | The node of targetId is not in the component tree. |
 
+<a id="openpopup"></a>
 ## openPopup
 
 ```TypeScript
@@ -462,15 +474,15 @@ Creates and displays a popup with the specified content. This API uses a promise
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content displayed in the popup. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content displayed in the popup. |
 | target | [TargetInfo](arkts-arkui-arkui-uicontext-targetinfo-i.md) | Yes | Information about the target component to bind. |
-| options | [PopupCommonOptions](../arkts-components/arkts-arkui-common-popupcommonoptions-i.md) | No | Style of the popup. |
+| options | [PopupCommonOptions](../arkts-components/arkts-arkui-popupcommonoptions-i.md) | No | Style of the popup. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -482,6 +494,7 @@ Creates and displays a popup with the specified content. This API uses a promise
 | [103304](../errorcode-promptAction.md#103304-target-id-not-found) | The targetId does not exist. |
 | [103305](../errorcode-promptAction.md#103305-node-not-mounted) | The node of targetId is not in the component tree. |
 
+<a id="opentoast"></a>
 ## openToast
 
 ```TypeScript
@@ -510,7 +523,7 @@ Displays a toast. This API uses a promise to return the toast ID for use with **
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise that returns the toast ID for use with **closeToast**. |
+| Promise&lt;number&gt; | Promise that returns the toast ID for use with **closeToast**. |
 
 **Error codes:**
 
@@ -519,6 +532,7 @@ Displays a toast. This API uses a promise to return the toast ID for use with **
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="presentcustomdialog"></a>
 ## presentCustomDialog
 
 ```TypeScript
@@ -546,7 +560,7 @@ The dialog box ID can be included in the dialog box content for related operatio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| builder | CustomBuilder \| CustomBuilderWithId | Yes | Content of the custom dialog box. |
+| builder | [CustomBuilder](../arkts-components/arkts-arkui-custombuilder-t.md) \| CustomBuilderWithId | Yes | Content of the custom dialog box. |
 | controller | promptAction.DialogController | No | Controller of the custom dialog box. |
 | options | promptAction.DialogOptions | No | Style of the custom dialog box.<br>Note: If both [isModal](arkts-arkui-promptaction-basedialogoptions-i.md)and [showInSubWindow](arkts-arkui-promptaction-basedialogoptions-i.md) in **BaseDialogOptions** are set to **true**,only **showInSubWindow** takes effect. In this case, the non-modal dialog box is displayed without mask in the subwindow. |
 
@@ -554,7 +568,7 @@ The dialog box ID can be included in the dialog box content for related operatio
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise Promise used to return the custom dialog box ID. |
+| Promise&lt;number&gt; | Promise Promise used to return the custom dialog box ID. |
 
 **Error codes:**
 
@@ -563,6 +577,7 @@ The dialog box ID can be included in the dialog box content for related operatio
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="showactionmenu"></a>
 ## showActionMenu
 
 ```TypeScript
@@ -597,6 +612,7 @@ Shows an action menu in the given settings. This API uses an asynchronous callba
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="showactionmenu-1"></a>
 ## showActionMenu
 
 ```TypeScript
@@ -620,7 +636,7 @@ Creates and displays an action menu. This API uses an asynchronous callback to r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | promptAction.ActionMenuOptions | Yes | Action menu options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<promptAction.ActionMenuSuccessResponse> | Yes | Callback used to return the result.On success, **err** is **undefined** and **data** contains the action menu response.On failure, **err** provides error details. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;promptAction.ActionMenuSuccessResponse&gt; | Yes | Callback used to return the result.On success, **err** is **undefined** and **data** contains the action menu response.On failure, **err** provides error details. |
 
 **Error codes:**
 
@@ -629,6 +645,7 @@ Creates and displays an action menu. This API uses an asynchronous callback to r
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="showactionmenu-2"></a>
 ## showActionMenu
 
 ```TypeScript
@@ -657,7 +674,7 @@ Creates and displays an action menu. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<promptAction.ActionMenuSuccessResponse> | callback - Promise that returns the action menu response. |
+| Promise&lt;promptAction.ActionMenuSuccessResponse&gt; | callback - Promise that returns the action menu response. |
 
 **Error codes:**
 
@@ -666,6 +683,7 @@ Creates and displays an action menu. This API uses a promise to return the resul
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="showdialog"></a>
 ## showDialog
 
 ```TypeScript
@@ -689,7 +707,7 @@ Creates and displays a dialog box. This API uses an asynchronous callback to ret
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | promptAction.ShowDialogOptions | Yes | Dialog box configuration options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<promptAction.ShowDialogSuccessResponse> | Yes | Callback used to return the result.On success, **err** is **undefined** and **data** contains the dialog box response.On failure, **err** provides error details. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;promptAction.ShowDialogSuccessResponse&gt; | Yes | Callback used to return the result.On success, **err** is **undefined** and **data** contains the dialog box response.On failure, **err** provides error details. |
 
 **Error codes:**
 
@@ -698,6 +716,7 @@ Creates and displays a dialog box. This API uses an asynchronous callback to ret
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="showdialog-1"></a>
 ## showDialog
 
 ```TypeScript
@@ -726,7 +745,7 @@ Creates and displays a dialog box. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<promptAction.ShowDialogSuccessResponse> | Promise that returns the dialog box response. |
+| Promise&lt;promptAction.ShowDialogSuccessResponse&gt; | Promise that returns the dialog box response. |
 
 **Error codes:**
 
@@ -735,6 +754,7 @@ Creates and displays a dialog box. This API uses a promise to return the result.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="showtoast"></a>
 ## showToast
 
 ```TypeScript
@@ -766,6 +786,7 @@ Creates and displays a toast.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
+<a id="updatecustomdialog"></a>
 ## updateCustomDialog
 
 ```TypeScript
@@ -788,14 +809,14 @@ Updates a custom dialog box corresponding to **dialogContent**. This API uses a 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content of the custom dialog box. |
+| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content of the custom dialog box. |
 | options | promptAction.BaseDialogOptions | Yes | Dialog box style. Currently,only **alignment**, **offset**, **autoCancel**, and **maskColor** can be updated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -805,6 +826,7 @@ Updates a custom dialog box corresponding to **dialogContent**. This API uses a 
 | [103301](../errorcode-promptAction.md#103301-dialog-content-error) | Dialog content error. The ComponentContent is incorrect. |
 | [103303](../errorcode-promptAction.md#103303-custom-dialog-box-not-found) | Dialog content not found. The ComponentContent cannot be found. |
 
+<a id="updatemenu"></a>
 ## updateMenu
 
 ```TypeScript
@@ -819,7 +841,7 @@ Updates the style of the menu corresponding to the provided **content**. This AP
 > **transition**, **onAppear**, **aboutToAppear**, **onDisappear**, **aboutToDisappear**, **onWillAppear**,  
 > **onDidAppear**, **onWillDisappear**, and **onDidDisappear**.  
 >  
-> - The mask style can be updated by configuring [MenuMaskType](../arkts-components/arkts-arkui-common-menumasktype-i.md). However, this API does not  
+> - The mask style can be updated by configuring [MenuMaskType](../arkts-components/arkts-arkui-menumasktype-i.md). However, this API does not  
 > support mask presence toggling (that is, switching the mask from non-existent to existent or vice versa) by  
 > setting a boolean value.
 
@@ -837,15 +859,15 @@ Updates the style of the menu corresponding to the provided **content**. This AP
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content displayed in the menu. |
-| options | [MenuOptions](../arkts-components/arkts-arkui-common-menuoptions-i.md) | Yes | Style of the menu.<br>**NOTE**<br>1. Updating for the following is not supported:**showInSubWindow**, **preview**, **previewAnimationOptions**, **transition**, **onAppear**, **aboutToAppear**,**onDisappear**, **aboutToDisappear**, **onWillAppear**, **onDidAppear**, **onWillDisappear**, and **onDidDisappear**.<br>2. The mask style can be updated by configuring [MenuMaskType](../arkts-components/arkts-arkui-common-menumasktype-i.md).However, this API does not support mask presence toggling (that is, switching the mask from non-existent to existent or vice versa) by setting a boolean value. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content displayed in the menu. |
+| options | [MenuOptions](../arkts-components/arkts-arkui-menuoptions-i.md) | Yes | Style of the menu.<br>**NOTE**<br>1. Updating for the following is not supported:**showInSubWindow**, **preview**, **previewAnimationOptions**, **transition**, **onAppear**, **aboutToAppear**,**onDisappear**, **aboutToDisappear**, **onWillAppear**, **onDidAppear**, **onWillDisappear**, and **onDidDisappear**.<br>2. The mask style can be updated by configuring [MenuMaskType](../arkts-components/arkts-arkui-menumasktype-i.md).However, this API does not support mask presence toggling (that is, switching the mask from non-existent to existent or vice versa) by setting a boolean value. |
 | partialUpdate | boolean | No | Whether to update the menu in incremental mode. Default value: **false**.<br>**NOTE**<br>1. **true**: incremental update, where the specified properties in **options** are updated, and other properties stay at their current value.<br>2. **false**: full update, where all properties except those specified in **options** are restored to default values. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -855,6 +877,7 @@ Updates the style of the menu corresponding to the provided **content**. This AP
 | [103301](../errorcode-promptAction.md#103301-dialog-content-error) | The ComponentContent is incorrect. |
 | [103303](../errorcode-promptAction.md#103303-custom-dialog-box-not-found) | The ComponentContent cannot be found. |
 
+<a id="updatepopup"></a>
 ## updatePopup
 
 ```TypeScript
@@ -881,15 +904,15 @@ Updates the style of the popup corresponding to the provided **content**. This A
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)<T> | Yes | Content displayed in the popup. |
-| options | [PopupCommonOptions](../arkts-components/arkts-arkui-common-popupcommonoptions-i.md) | Yes | Style of the popup.<br>**NOTE**<br>Updating the following properties is not supported: **showInSubWindow**, **focusable**, **onStateChange**,**onWillDismiss**, and **transition**. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | Yes | Content displayed in the popup. |
+| options | [PopupCommonOptions](../arkts-components/arkts-arkui-popupcommonoptions-i.md) | Yes | Style of the popup.<br>**NOTE**<br>Updating the following properties is not supported: **showInSubWindow**, **focusable**, **onStateChange**,**onWillDismiss**, and **transition**. |
 | partialUpdate | boolean | No | Whether to update the popup in incremental mode.<br>Default value: **false**<br>**NOTE**<br>**true**: Incremental update. Only specified attributes in **options** are updated, and the other attributes retain their current values. If the attribute value passed in **options** is invalid or **undefined**, the attribute is not updated.<br>**false**: Full update. Specified attributes in **options** are updated, and the other attributes are restored to their default values. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

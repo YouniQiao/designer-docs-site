@@ -23,6 +23,7 @@ Rounded rectangle.
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -43,6 +44,7 @@ Copies a rounded rectangle.
 | --- | --- | --- | --- |
 | roundRect | [RoundRect](arkts-arkgraphics2d-drawing-roundrect-c.md) | Yes | Rounded rectangle to be copied. |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -71,6 +73,7 @@ A constructor used to create a **RoundRect** object. A rounded rectangle is crea
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="getcorner"></a>
 ## getCorner
 
 ```TypeScript
@@ -103,6 +106,7 @@ Obtains the radii of the specified rounded corner in this rounded rectangle.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="offset"></a>
 ## offset
 
 ```TypeScript
@@ -130,6 +134,7 @@ Translates this rounded rectangle by an offset along the X axis and Y axis.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="setcorner"></a>
 ## setCorner
 
 ```TypeScript

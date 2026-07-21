@@ -6,6 +6,7 @@
 import { deviceManager } from '@kit.DriverDevelopmentKit';
 ```
 
+<a id="querydriverinfo"></a>
 ## queryDriverInfo
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the list of detailed information about peripheral drivers. If the device
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Readonly<DriverInfo>> | List of detailed information about peripheral drivers. |
+| Array&lt;Readonly&lt;DriverInfo&gt;&gt; | List of detailed information about peripheral drivers. |
 
 **Error codes:**
 

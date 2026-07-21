@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="setbackgroundallowed"></a>
 ## setBackgroundAllowed
 
 ```TypeScript
@@ -29,7 +30,7 @@ Control if applications can use data on background.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isAllowed | boolean | Yes | Allow applications to use data on background. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setBackgroundAllowed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setBackgroundAllowed. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ policy.setBackgroundAllowed(true, (error: BusinessError) => {
 ```
 
 
+<a id="setbackgroundallowed-1"></a>
 ## setBackgroundAllowed
 
 ```TypeScript
@@ -82,7 +84,7 @@ Control if applications can use data on background.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

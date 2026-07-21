@@ -6,6 +6,7 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
+<a id="activatepermission"></a>
 ## activatePermission
 
 ```TypeScript
@@ -26,13 +27,13 @@ Enable the URI that have been permanently authorized
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| policies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PolicyInfo> | Yes | Policy information to grant permission on URIs. |
+| policies | Array&lt;PolicyInfo&gt; | Yes | Policy information to grant permission on URIs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

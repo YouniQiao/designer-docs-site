@@ -6,6 +6,7 @@
 import { networkManager } from '@kit.MDMKit';
 ```
 
+<a id="getipaddress"></a>
 ## getIpAddress
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the device IP address based on the network interface. This API uses an a
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | networkInterface | string | Yes | Network port. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is the IP address obtained. If the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is the IP address obtained. If the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -72,6 +73,7 @@ networkManager.getIpAddress(wantTemp, 'eth0', (err, result) => {
 ```
 
 
+<a id="getipaddress-1"></a>
 ## getIpAddress
 
 ```TypeScript
@@ -107,7 +109,7 @@ Obtains the device IP address based on the network interface. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the device IP address obtained. |
+| Promise&lt;string&gt; | Promise used to return the device IP address obtained. |
 
 **Error codes:**
 

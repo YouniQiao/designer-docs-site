@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="getgeofencesupportedcoordtypes"></a>
 ## getGeofenceSupportedCoordTypes
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains the coordinate system types supported by geofence.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CoordinateSystemType> | Return the coordinate system types supported by geofence. |
+| Array&lt;CoordinateSystemType&gt; | Return the coordinate system types supported by geofence. |
 
 **Error codes:**
 

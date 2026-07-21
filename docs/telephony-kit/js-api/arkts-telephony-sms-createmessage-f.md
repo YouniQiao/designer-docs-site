@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="createmessage"></a>
 ## createMessage
 
 ```TypeScript
@@ -26,9 +27,9 @@ Creates an SMS message instance based on the protocol data unit (PDU) and the sp
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pdu | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Indicates the original data, which is obtained from the received SMS. |
+| pdu | Array&lt;number&gt; | Yes | Indicates the original data, which is obtained from the received SMS. |
 | specification | string | Yes | Indicates the SMS protocol type. The value {@code 3gpp} indicates GSM/UMTS/LTE SMS, and the value {@code 3gpp2} indicates CDMA/LTE SMS. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ShortMessage> | Yes | Indicates the callback for getting an SMS message instance;returns {@code null} if {@code pdu} is empty or {@code specification} is not supported. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ShortMessage&gt; | Yes | Indicates the callback for getting an SMS message instance;returns {@code null} if {@code pdu} is empty or {@code specification} is not supported. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ sms.createMessage(pdu, specification, (err: BusinessError, data: sms.ShortMessag
 ```
 
 
+<a id="createmessage-1"></a>
 ## createMessage
 
 ```TypeScript
@@ -76,14 +78,14 @@ Creates an SMS message instance based on the protocol data unit (PDU) and the sp
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pdu | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Indicates the original data, which is obtained from the received SMS. |
+| pdu | Array&lt;number&gt; | Yes | Indicates the original data, which is obtained from the received SMS. |
 | specification | string | Yes | Indicates the SMS protocol type. The value {@code 3gpp} indicates GSM/UMTS/LTE SMS, and the value {@code 3gpp2} indicates CDMA/LTE SMS. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ShortMessage> | Returns an SMS message instance;returns {@code null} if {@code pdu} is empty or {@code specification} is not supported. |
+| Promise&lt;ShortMessage&gt; | Returns an SMS message instance;returns {@code null} if {@code pdu} is empty or {@code specification} is not supported. |
 
 **Error codes:**
 

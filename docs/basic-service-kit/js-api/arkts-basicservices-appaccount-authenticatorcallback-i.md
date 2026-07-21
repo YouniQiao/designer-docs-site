@@ -35,13 +35,13 @@ Called to redirect a request.
 >  
 > This API is supported since API version 8 and deprecated since API version 9. Use [onRequestRedirected](#onrequestredirected9) instead.
 
-**Type:** (request: Want) => void
+**Type:** (request: Want) =&gt; void
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** onRequestRedirected
+**Substitutes:** [onRequestRedirected](arkts-basicservices-appaccount-authcallback-i.md#onrequestredirected)
 
 <!--Device-AuthenticatorCallback-onRequestRedirected: (request: Want) => void--><!--Device-AuthenticatorCallback-onRequestRedirected: (request: Want) => void-End-->
 
@@ -59,13 +59,13 @@ Called to return the result of an authentication request.
 >  
 > This API is supported since API version 8 and deprecated since API version 9. Use [onResult](#onresult9) instead.
 
-**Type:** (code: number, result: { [key: string]: any }) => void
+**Type:** (code: number, result: { [key: string]: any }) =&gt; void
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** onResult
+**Substitutes:** [onResult](arkts-basicservices-appaccount-authcallback-i.md#onresult)
 
 <!--Device-AuthenticatorCallback-onResult: (code: number, result: { [key: string]: any }) => void--><!--Device-AuthenticatorCallback-onResult: (code: number, result: { [key: string]: any }) => void-End-->
 

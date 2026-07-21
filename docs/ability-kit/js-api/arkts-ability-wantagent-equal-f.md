@@ -6,6 +6,7 @@
 import { WantAgent } from '@kit.AbilityKit';
 ```
 
+<a id="equal"></a>
 ## equal
 
 ```TypeScript
@@ -28,7 +29,7 @@ Checks whether two WantAgent objects are equal, so as to determine whether the s
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | The first WantAgent object. |
 | otherAgent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | The second WantAgent object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value <code>true</code> means that the two WantAgent objects are equal, and <code>false</code> means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value <code>true</code> means that the two WantAgent objects are equal, and <code>false</code> means the opposite. |
 
 **Error codes:**
 
@@ -106,6 +107,7 @@ try {
 ```
 
 
+<a id="equal-1"></a>
 ## equal
 
 ```TypeScript
@@ -133,7 +135,7 @@ Checks whether two WantAgent objects are equal, so as to determine whether the s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value <code>true</code> means that the two WantAgent objects are equal, and <code>false</code> means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value <code>true</code> means that the two WantAgent objects are equal, and <code>false</code> means the opposite. |
 
 **Error codes:**
 

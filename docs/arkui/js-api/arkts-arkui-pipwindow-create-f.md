@@ -6,6 +6,7 @@
 import { PiPWindow } from '@kit.ArkUI';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -32,7 +33,7 @@ Creates a PiP controller. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PiPController> | Promise used to return the PiP controller. |
+| Promise&lt;PiPController&gt; | Promise used to return the PiP controller. |
 
 **Error codes:**
 
@@ -146,6 +147,7 @@ struct Index {
 ```
 
 
+<a id="create-1"></a>
 ## create
 
 ```TypeScript
@@ -173,7 +175,7 @@ Creates a PiP controller. This API uses **typeNode** to add a custom UI node for
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PiPController> | Promise used to return the PiP controller. |
+| Promise&lt;PiPController&gt; | Promise used to return the PiP controller. |
 
 **Error codes:**
 

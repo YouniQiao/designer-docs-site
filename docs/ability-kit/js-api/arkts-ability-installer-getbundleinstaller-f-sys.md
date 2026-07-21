@@ -6,6 +6,7 @@
 import { installer } from '@kit.AbilityKit';
 ```
 
+<a id="getbundleinstaller"></a>
 ## getBundleInstaller
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains a BundleInstaller object. This API uses an asynchronous callback to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<BundleInstaller> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the BundleInstaller object obtained; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;BundleInstaller&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the BundleInstaller object obtained; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -36,6 +37,7 @@ Obtains a BundleInstaller object. This API uses an asynchronous callback to retu
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 
 
+<a id="getbundleinstaller-1"></a>
 ## getBundleInstaller
 
 ```TypeScript
@@ -56,7 +58,7 @@ Obtains a BundleInstaller object. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BundleInstaller> | BundleInstaller object. |
+| Promise&lt;BundleInstaller&gt; | BundleInstaller object. |
 
 **Error codes:**
 

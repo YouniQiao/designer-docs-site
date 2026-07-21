@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="setrouterproxy"></a>
 ## setRouterProxy
 
 ```TypeScript
@@ -36,9 +37,9 @@ Sets a router proxy for widgets and obtains the Want information required for re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of widget IDs. |
-| proxy | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Want> | Yes | Callback used to return the Want information required for redirection. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the router proxy is set, **error** is **undefined**; otherwise, an exception is thrown. |
+| formIds | Array&lt;string&gt; | Yes | Array of widget IDs. |
+| proxy | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Want&gt; | Yes | Callback used to return the Want information required for redirection. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the router proxy is set, **error** is **undefined**; otherwise, an exception is thrown. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ Sets a router proxy for widgets and obtains the Want information required for re
 | [16501003](../errorcode-form.md#16501003-widget-not-operatable) | The form cannot be operated by the current application. |
 
 
+<a id="setrouterproxy-1"></a>
 ## setRouterProxy
 
 ```TypeScript
@@ -84,14 +86,14 @@ Sets a router proxy for widgets and obtains the Want information required for re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of widget IDs. |
-| proxy | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Want> | Yes | Callback used to return the Want information required for redirection. |
+| formIds | Array&lt;string&gt; | Yes | Array of widget IDs. |
+| proxy | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Want&gt; | Yes | Callback used to return the Want information required for redirection. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

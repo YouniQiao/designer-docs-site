@@ -9,6 +9,9 @@ The **StepperItem** component represents a page component used within a [Stepper
 
 > Updates will be marked with a superscript to indicate their
 
+## Child Components
+
+This component supports only one child component.
 
 ## StepperItem
 
@@ -27,6 +30,8 @@ Creates a page component for the [Stepper]{@link stepper} container.
 **Substitutes:** <!--SUBSTITUTE_API-->Swiper#SwiperAttribute<!--/SUBSTITUTE_API-->
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
+
+<!--Device-StepperItemInterface-(): StepperItemAttribute--><!--Device-StepperItemInterface-(): StepperItemAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

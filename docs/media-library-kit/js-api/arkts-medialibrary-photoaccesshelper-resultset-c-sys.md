@@ -18,6 +18,7 @@ Before calling any of the following APIs, you must use [query](arkts-medialibrar
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -56,6 +57,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getrow"></a>
 ## getRow
 
 ```TypeScript
@@ -102,6 +104,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getvalue"></a>
 ## getValue
 
 ```TypeScript
@@ -155,6 +158,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="gotofirstrow"></a>
 ## goToFirstRow
 
 ```TypeScript
@@ -200,6 +204,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="gotonextrow"></a>
 ## goToNextRow
 
 ```TypeScript
@@ -245,6 +250,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="gotorow"></a>
 ## goToRow
 
 ```TypeScript

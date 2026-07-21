@@ -6,6 +6,7 @@
 import { systemParameterEnhance } from '@kit.BasicServicesKit';
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains a value of the specified key. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | key | string | Yes | Key to be queried. The value can contain a maximum of 128 bytes. Only letters, digits,periods (.), hyphens (-), at signs (@), colons (:), and underscores (_) are allowed. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ try {
 ```
 
 
+<a id="get-1"></a>
 ## get
 
 ```TypeScript
@@ -79,7 +81,7 @@ Obtains a value of the specified key. This API uses an asynchronous callback to 
 | --- | --- | --- | --- |
 | key | string | Yes | Key to be queried. The value can contain a maximum of 128 bytes. Only letters, digits,periods (.), hyphens (-), at signs (@), colons (:), and underscores (_) are allowed. |
 | def | string | Yes | Default value. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -110,6 +112,7 @@ try {
 ```
 
 
+<a id="get-2"></a>
 ## get
 
 ```TypeScript
@@ -137,7 +140,7 @@ Obtains a value of the specified key. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the execution result. |
+| Promise&lt;string&gt; | Promise used to return the execution result. |
 
 **Error codes:**
 

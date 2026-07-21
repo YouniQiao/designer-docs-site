@@ -6,6 +6,7 @@
 import { imageGeneration } from '@kit.ArkUI';
 ```
 
+<a id="restoregeneratordialog"></a>
 ## restoreGeneratorDialog
 
 ```TypeScript
@@ -34,5 +35,5 @@ Restore the AI image generation task popup.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the result of restore operation. |
+| Promise&lt;void&gt; | Returns the result of restore operation. |
 

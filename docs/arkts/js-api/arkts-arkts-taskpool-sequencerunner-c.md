@@ -14,6 +14,7 @@ Implements a serial queue, in which all tasks are executed in sequence.
 import { taskpool } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -43,6 +44,7 @@ let runner: taskpool.SequenceRunner = new taskpool.SequenceRunner();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -80,6 +82,7 @@ let runner:taskpool.SequenceRunner = new taskpool.SequenceRunner("runner1", task
 
 ```
 
+<a id="execute"></a>
 ## execute
 
 ```TypeScript
@@ -112,7 +115,7 @@ Adds a task to the serial queue for execution. Before using this API, you must c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Object> | Promise used to return the task execution result. |
+| Promise&lt;Object&gt; | Promise used to return the task execution result. |
 
 **Error codes:**
 

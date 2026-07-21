@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="getuidsbypolicy"></a>
 ## getUidsByPolicy
 
 ```TypeScript
@@ -29,7 +30,7 @@ Query the application UIDs of the specified policy.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | policy | [NetUidPolicy](arkts-network-policy-netuidpolicy-e-sys.md) | Yes | the policy of the current UID of application.For details, see {@link NetUidPolicy}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | the callback of getUidsByPolicy. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | the callback of getUidsByPolicy. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ policy.getUidsByPolicy(11111, (error: BusinessError, data: number[]) => {
 ```
 
 
+<a id="getuidsbypolicy-1"></a>
 ## getUidsByPolicy
 
 ```TypeScript
@@ -83,7 +85,7 @@ Query the application UIDs of the specified policy.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | The promise returned by the function. |
+| Promise&lt;Array&lt;number&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

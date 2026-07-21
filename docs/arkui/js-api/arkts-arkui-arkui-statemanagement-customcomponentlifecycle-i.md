@@ -14,6 +14,7 @@
 import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInactive, PersistenceV2, ComponentDisappear, MutableBinding, CustomComponentLifecycleObserver, AppStorageV2, Type, ConnectOptionsCollections, CollectionType, CustomComponentContext, IReusePool, ConnectOptions, UIUtils, ComponentActive, CustomComponentLifecycle, ComponentInit, ComponentAppear, ComponentBuilt, ComponentRecycle, IReusableInfo } from '@kit.ArkUI';
 ```
 
+<a id="addobserver"></a>
 ## addObserver
 
 ```TypeScript
@@ -38,6 +39,7 @@ Registers a listener for the lifecycle of a custom component. Lifecycle changes 
 | --- | --- | --- | --- |
 | observer | [CustomComponentLifecycleObserver](arkts-arkui-arkui-statemanagement-customcomponentlifecycleobserver-i.md) | Yes | Listener for a custom component. |
 
+<a id="getcurrentstate"></a>
 ## getCurrentState
 
 ```TypeScript
@@ -62,6 +64,7 @@ getCurrentState(): CustomComponentLifecycleState
 | --- | --- |
 | [CustomComponentLifecycleState](arkts-arkui-arkui-statemanagement-customcomponentlifecyclestate-e.md) | - Current lifecycle status of a custom component. |
 
+<a id="removeobserver"></a>
 ## removeObserver
 
 ```TypeScript

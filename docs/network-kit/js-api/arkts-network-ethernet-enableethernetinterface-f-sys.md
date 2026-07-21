@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="enableethernetinterface"></a>
 ## enableEthernetInterface
 
 ```TypeScript
@@ -30,7 +31,7 @@ Enable the ethernet interface.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned when the ethernet interface is enabled. |
+| Promise&lt;void&gt; | The promise returned when the ethernet interface is enabled. |
 
 **Error codes:**
 

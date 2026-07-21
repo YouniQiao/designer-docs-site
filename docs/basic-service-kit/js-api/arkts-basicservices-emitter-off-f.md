@@ -6,6 +6,7 @@
 import { emitter } from '@kit.BasicServicesKit';
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -39,6 +40,7 @@ emitter.off(1);
 ```
 
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -72,13 +74,14 @@ emitter.off("eventId1");
 ```
 
 
+<a id="off-2"></a>
 ## off
 
 ```TypeScript
 function off(eventId: number, callback: Callback<EventData>): void
 ```
 
-Unsubscribes from an event with the specified event ID and processed by the specified callback. This API takes effect only when **Callback\<EventData>** has been registered through the [on](arkts-basicservices-emitter-on-f.md#on-1) or [once](arkts-basicservices-emitter-once-f.md#once-1) API. Otherwise, no processing is performed.
+Unsubscribes from an event with the specified event ID and processed by the specified callback. This API takes effect only when **Callback\<EventData>** has been registered through the [on](emitter.on(event: InnerEvent, callback: Callback<EventData>)) or [once](emitter.once(event: InnerEvent, callback: Callback<EventData>)) API. Otherwise, no processing is performed.
 
 After this API is used to unsubscribe from an event, the event that has been published through the [emit](emitter.emit(eventId: string)) API but has not been executed will be unsubscribed.
 
@@ -95,7 +98,7 @@ After this API is used to unsubscribe from an event, the event that has been pub
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | number | Yes | Event ID. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventData> | Yes | Callback to unregister. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | Yes | Callback to unregister. |
 
 **Example**
 
@@ -112,13 +115,14 @@ emitter.off(1, callback);
 ```
 
 
+<a id="off-3"></a>
 ## off
 
 ```TypeScript
 function off(eventId: string, callback: Callback<EventData>): void
 ```
 
-Unsubscribes from an event with the specified event ID and processed by the specified callback. This API takes effect only when **Callback\<EventData>** has been registered through the [on](arkts-basicservices-emitter-on-f.md#on-2) or [once](arkts-basicservices-emitter-once-f.md#once-2) API. Otherwise, no processing is performed.
+Unsubscribes from an event with the specified event ID and processed by the specified callback. This API takes effect only when **Callback\<EventData>** has been registered through the [on](emitter.on(eventId: string, callback: Callback<EventData>)) or [once](emitter.once(eventId: string, callback: Callback<EventData>)) API. Otherwise, no processing is performed.
 
 After this API is used to unsubscribe from an event, the event that has been published through the [emit](emitter.emit(eventId: string)) API but has not been executed will be unsubscribed.
 
@@ -135,7 +139,7 @@ After this API is used to unsubscribe from an event, the event that has been pub
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventData> | Yes | Callback to unregister. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | Yes | Callback to unregister. |
 
 **Example**
 
@@ -152,13 +156,14 @@ emitter.off("eventId1", callback);
 ```
 
 
+<a id="off-4"></a>
 ## off
 
 ```TypeScript
 function off<T>(eventId: string, callback: Callback<GenericEventData<T>>): void
 ```
 
-Unsubscribes from an event with the specified event ID and processed by the specified callback. This API takes effect only when **Callback\<EventData>** has been registered through the [on](arkts-basicservices-emitter-on-f.md#on-3) or [once](arkts-basicservices-emitter-once-f.md#once-3) API. Otherwise, no processing is performed.
+Unsubscribes from an event with the specified event ID and processed by the specified callback. This API takes effect only when **Callback\<EventData>** has been registered through the [on](emitter.on<T>(eventId: string, callback: Callback<GenericEventData<T>>)) or [once](emitter.once<T>(eventId: string, callback: Callback<GenericEventData<T>>)) API. Otherwise, no processing is performed.
 
 After this API is used to unsubscribe from an event, the event that has been published through the [emit](emitter.emit(eventId: string)) API but has not been executed will be unsubscribed.
 
@@ -175,7 +180,7 @@ After this API is used to unsubscribe from an event, the event that has been pub
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<GenericEventData<T>> | Yes | Callback to unregister. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GenericEventData&lt;T&gt;&gt; | Yes | Callback to unregister. |
 
 **Example**
 

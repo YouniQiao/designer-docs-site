@@ -14,6 +14,7 @@ A class used to add a specified effect to an image. Before calling any method of
 import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
+<a id="blur"></a>
 ## blur
 
 ```TypeScript
@@ -108,6 +109,7 @@ struct Index {
 
 ```
 
+<a id="blur-1"></a>
 ## blur
 
 ```TypeScript
@@ -199,6 +201,7 @@ struct Index {
 
 ```
 
+<a id="brightness"></a>
 ## brightness
 
 ```TypeScript
@@ -293,6 +296,7 @@ struct Index {
 
 ```
 
+<a id="geteffectpixelmap"></a>
 ## getEffectPixelMap
 
 ```TypeScript
@@ -315,7 +319,7 @@ Obtains image.PixelMap of the source image to which the filter linked list is ad
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | - Promise used to return image.PixelMap of the source image. |
+| Promise&lt;image.PixelMap&gt; | - Promise used to return image.PixelMap of the source image. |
 
 **Example**
 
@@ -340,6 +344,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="geteffectpixelmap-1"></a>
 ## getEffectPixelMap
 
 ```TypeScript
@@ -368,7 +373,7 @@ Gets the PixelMap where all filter effects have been added to the image.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | - returns the PixelMap generated. |
+| Promise&lt;image.PixelMap&gt; | - returns the PixelMap generated. |
 
 **Example**
 
@@ -393,6 +398,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="getpixelmap"></a>
 ## getPixelMap
 
 ```TypeScript
@@ -439,6 +445,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
+<a id="grayscale"></a>
 ## grayscale
 
 ```TypeScript
@@ -526,6 +533,7 @@ struct Index {
 
 ```
 
+<a id="invert"></a>
 ## invert
 
 ```TypeScript
@@ -609,6 +617,7 @@ struct Index {
 
 ```
 
+<a id="setcolormatrix"></a>
 ## setColorMatrix
 
 ```TypeScript
@@ -627,7 +636,7 @@ Adds a custom effect to the filter linked list, and returns the head node of the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colorMatrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Custom color matrix.A 5 x 4 matrix can be created. The value range of the matrix element is [0, 1],where 0 indicates that the color channel is not involved in the calculation,and 1 indicates that the color channel is involved in the calculation and retains the original weight. |
+| colorMatrix | Array&lt;number&gt; | Yes | Custom color matrix.A 5 x 4 matrix can be created. The value range of the matrix element is [0, 1],where 0 indicates that the color channel is not involved in the calculation,and 1 indicates that the color channel is involved in the calculation and retains the original weight. |
 
 **Return value:**
 

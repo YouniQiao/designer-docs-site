@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="supportkeyssync"></a>
 ## supportKeysSync
 
 ```TypeScript
@@ -25,13 +26,13 @@ Checks whether the input device supports the specified keys.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | number | Yes | Unique ID of the input device. If a physical device is repeatedly reinstalled or restarted, its ID may change. |
-| keys | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<KeyCode> | Yes | Keys to be queried. A maximum of five keys can be specified. |
+| keys | Array&lt;KeyCode&gt; | Yes | Keys to be queried. A maximum of five keys can be specified. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<boolean> | Result indicating whether the input device supports the keycode value. The value **true** indicates yes, and the value **false** indicates no. |
+| Array&lt;boolean&gt; | Result indicating whether the input device supports the keycode value. The value **true** indicates yes, and the value **false** indicates no. |
 
 **Error codes:**
 

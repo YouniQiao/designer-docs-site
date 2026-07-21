@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="iscellulardataenabled"></a>
 ## isCellularDataEnabled
 
 ```TypeScript
@@ -26,7 +27,7 @@ Check whether cellular data services are enabled.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for checking whether cellular data services are enabled. Returns {@code true} if cellular data services are enabled; returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for checking whether cellular data services are enabled. Returns {@code true} if cellular data services are enabled; returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ data.isCellularDataEnabled((err: BusinessError, contextData: boolean) => {
 ```
 
 
+<a id="iscellulardataenabled-1"></a>
 ## isCellularDataEnabled
 
 ```TypeScript
@@ -76,7 +78,7 @@ Check whether cellular data services are enabled.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if cellular data services are enabled.Returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if cellular data services are enabled.Returns {@code false} otherwise. |
 
 **Error codes:**
 

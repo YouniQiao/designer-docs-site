@@ -1,5 +1,6 @@
 # setMonitorForCrownEvents
 
+<a id="setmonitorforcrownevents"></a>
 ## setMonitorForCrownEvents
 
 ```TypeScript
@@ -20,5 +21,5 @@ Sets a digital crown events listener for current page, only be supported on the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Indicates the function to be called when the crown event trigger. |
+| handler | Function | Yes | Indicates the function to be called when the crown event trigger. |
 

@@ -130,7 +130,7 @@ Default value: **ChipSize.NORMAL** or **{ height: 0, width: 0 }**
 
 If the value is **undefined**, the default value is used.
 
-**Type:** ChipSize | SizeOptions
+**Type:** ChipSize \| SizeOptions
 
 **Since:** 12
 

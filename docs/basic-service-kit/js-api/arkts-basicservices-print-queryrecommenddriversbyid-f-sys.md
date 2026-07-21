@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="queryrecommenddriversbyid"></a>
 ## queryRecommendDriversById
 
 ```TypeScript
@@ -36,7 +37,7 @@ Query recommend printer drivers by printer ID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PpdInfo[]> | - Promise that resolves with all ppd info of the printer. |
+| Promise&lt;PpdInfo[]&gt; | - Promise that resolves with all ppd info of the printer. |
 
 **Error codes:**
 

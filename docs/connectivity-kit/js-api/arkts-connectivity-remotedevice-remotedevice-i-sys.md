@@ -14,6 +14,7 @@ Remote device operation methods.
 import { remoteDevice } from '@kit.ConnectivityKit';
 ```
 
+<a id="canceldevicepairing"></a>
 ## cancelDevicePairing
 
 ```TypeScript
@@ -38,7 +39,7 @@ Cancel an in-progress pairing request.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ Cancel an in-progress pairing request.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -73,7 +75,7 @@ Connect all allowed profiles.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the result of connecting to profiles as a Promise. |
+| Promise&lt;void&gt; | Returns the result of connecting to profiles as a Promise. |
 
 **Error codes:**
 
@@ -84,6 +86,7 @@ Connect all allowed profiles.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -108,7 +111,7 @@ Disconnect all connected profiles.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the result of connecting to profiles as a Promise. |
+| Promise&lt;void&gt; | Returns the result of connecting to profiles as a Promise. |
 
 **Error codes:**
 
@@ -119,6 +122,7 @@ Disconnect all connected profiles.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="getdevicealias"></a>
 ## getDeviceAlias
 
 ```TypeScript
@@ -154,6 +158,7 @@ Gets the alias of a remote device.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="getdevicemodel"></a>
 ## getDeviceModel
 
 ```TypeScript
@@ -186,6 +191,7 @@ Obtains the model information of a remote device.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="getrssivalue"></a>
 ## getRssiValue
 
 ```TypeScript
@@ -210,7 +216,7 @@ Gets the RSSI value of a remote device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns promise object of RSSI value. |
+| Promise&lt;number&gt; | Returns promise object of RSSI value. |
 
 **Error codes:**
 
@@ -221,6 +227,7 @@ Gets the RSSI value of a remote device.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="removepaireddevice"></a>
 ## removePairedDevice
 
 ```TypeScript
@@ -245,7 +252,7 @@ Remove a paired remote device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -256,6 +263,7 @@ Remove a paired remote device.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="setconnectioninterval"></a>
 ## setConnectionInterval
 
 ```TypeScript
@@ -291,6 +299,7 @@ Sets the connection interval with a remote device.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="setdevicealias"></a>
 ## setDeviceAlias
 
 ```TypeScript
@@ -327,6 +336,7 @@ Sets the alias of a remote device.
 | 36100046 | String exceeds maximum length. |
 | 36100099 | Operation failed. |
 
+<a id="setpairingconfirmation"></a>
 ## setPairingConfirmation
 
 ```TypeScript
@@ -362,6 +372,7 @@ Set the confirmation to a pairing request.
 | 36100003 | NearLink disabled. |
 | 36100099 | Operation failed. |
 
+<a id="setpairingpasscode"></a>
 ## setPairingPasscode
 
 ```TypeScript
@@ -392,7 +403,7 @@ Set the passcode during pairing if the pairing type is passcode
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise object is returned. |
+| Promise&lt;void&gt; | The promise object is returned. |
 
 **Error codes:**
 
@@ -404,6 +415,7 @@ Set the passcode during pairing if the pairing type is passcode
 | 36100045 | Passcode must be a 6-digit number. |
 | 36100099 | Operation failed. |
 
+<a id="startcrediblepairing"></a>
 ## startCrediblePairing
 
 ```TypeScript
@@ -428,7 +440,7 @@ Starts pairing with a credible remote NearLink device.This interface does not tr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

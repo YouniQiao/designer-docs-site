@@ -12,6 +12,7 @@ Defines predicates for an RDB store. This class determines whether the condition
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
+<a id="and"></a>
 ## and
 
 ```TypeScript
@@ -46,6 +47,7 @@ predicates.equalTo("NAME", "Lisa")
 
 ```
 
+<a id="beginwrap"></a>
 ## beginWrap
 
 ```TypeScript
@@ -83,6 +85,7 @@ predicates.equalTo("NAME", "lisi")
 
 ```
 
+<a id="beginswith"></a>
 ## beginsWith
 
 ```TypeScript
@@ -122,6 +125,7 @@ predicates.beginsWith("NAME", "os")
 
 ```
 
+<a id="between"></a>
 ## between
 
 ```TypeScript
@@ -162,6 +166,7 @@ predicates.between("AGE", 10, 50)
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -193,6 +198,7 @@ let predicates = new data_rdb.RdbPredicates("EMPLOYEE")
 
 ```
 
+<a id="contains"></a>
 ## contains
 
 ```TypeScript
@@ -232,6 +238,7 @@ predicates.contains("NAME", "os")
 
 ```
 
+<a id="distinct"></a>
 ## distinct
 
 ```TypeScript
@@ -264,6 +271,7 @@ predicates.equalTo("NAME", "Rose").distinct()
 
 ```
 
+<a id="endwrap"></a>
 ## endWrap
 
 ```TypeScript
@@ -301,6 +309,7 @@ predicates.equalTo("NAME", "lisi")
 
 ```
 
+<a id="endswith"></a>
 ## endsWith
 
 ```TypeScript
@@ -340,6 +349,7 @@ predicates.endsWith("NAME", "se")
 
 ```
 
+<a id="equalto"></a>
 ## equalTo
 
 ```TypeScript
@@ -379,6 +389,7 @@ predicates.equalTo("NAME", "lisi")
 
 ```
 
+<a id="glob"></a>
 ## glob
 
 ```TypeScript
@@ -418,6 +429,7 @@ predicates.glob("NAME", "?h*g")
 
 ```
 
+<a id="greaterthan"></a>
 ## greaterThan
 
 ```TypeScript
@@ -457,6 +469,7 @@ predicates.greaterThan("AGE", 18)
 
 ```
 
+<a id="greaterthanorequalto"></a>
 ## greaterThanOrEqualTo
 
 ```TypeScript
@@ -496,6 +509,7 @@ predicates.greaterThanOrEqualTo("AGE", 18)
 
 ```
 
+<a id="groupby"></a>
 ## groupBy
 
 ```TypeScript
@@ -518,7 +532,7 @@ Creates an **RdbPredicates** object to group the query results based on the spec
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fields | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Names of columns to group. |
+| fields | Array&lt;string&gt; | Yes | Names of columns to group. |
 
 **Return value:**
 
@@ -534,6 +548,7 @@ predicates.groupBy(["AGE", "NAME"])
 
 ```
 
+<a id="in"></a>
 ## in
 
 ```TypeScript
@@ -557,7 +572,7 @@ Creates an **RdbPredicates** object to search for the records in the specified c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | field | string | Yes | Column name in the database table. |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | Yes | Array of **ValueType**s to match. |
+| value | Array&lt;ValueType&gt; | Yes | Array of **ValueType**s to match. |
 
 **Return value:**
 
@@ -573,6 +588,7 @@ predicates.in("AGE", [18, 20])
 
 ```
 
+<a id="inalldevices"></a>
 ## inAllDevices
 
 ```TypeScript
@@ -605,6 +621,7 @@ predicates.inAllDevices()
 
 ```
 
+<a id="indevices"></a>
 ## inDevices
 
 ```TypeScript
@@ -634,7 +651,7 @@ Creates an **RdbPredicates** object to specify the remote devices to connect on 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| devices | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | IDs of the remote devices in the same network. |
+| devices | Array&lt;string&gt; | Yes | IDs of the remote devices in the same network. |
 
 **Return value:**
 
@@ -671,6 +688,7 @@ predicates.inDevices(deviceIds);
 
 ```
 
+<a id="indexedby"></a>
 ## indexedBy
 
 ```TypeScript
@@ -709,6 +727,7 @@ predicates.indexedBy("SALARY_INDEX")
 
 ```
 
+<a id="isnotnull"></a>
 ## isNotNull
 
 ```TypeScript
@@ -753,6 +772,7 @@ predicates.isNotNull("NAME")
 
 ```
 
+<a id="isnull"></a>
 ## isNull
 
 ```TypeScript
@@ -791,6 +811,7 @@ predicates.isNull("NAME")
 
 ```
 
+<a id="lessthan"></a>
 ## lessThan
 
 ```TypeScript
@@ -830,6 +851,7 @@ predicates.lessThan("AGE", 20)
 
 ```
 
+<a id="lessthanorequalto"></a>
 ## lessThanOrEqualTo
 
 ```TypeScript
@@ -869,6 +891,7 @@ predicates.lessThanOrEqualTo("AGE", 20)
 
 ```
 
+<a id="like"></a>
 ## like
 
 ```TypeScript
@@ -908,6 +931,7 @@ predicates.like("NAME", "%os%")
 
 ```
 
+<a id="limitas"></a>
 ## limitAs
 
 ```TypeScript
@@ -946,6 +970,7 @@ predicates.equalTo("NAME", "Rose").limitAs(3)
 
 ```
 
+<a id="notbetween"></a>
 ## notBetween
 
 ```TypeScript
@@ -986,6 +1011,7 @@ predicates.notBetween("AGE", 10, 50)
 
 ```
 
+<a id="notequalto"></a>
 ## notEqualTo
 
 ```TypeScript
@@ -1025,6 +1051,7 @@ predicates.notEqualTo("NAME", "lisi")
 
 ```
 
+<a id="notin"></a>
 ## notIn
 
 ```TypeScript
@@ -1048,7 +1075,7 @@ Creates an **RdbPredicates** object to search for the records in the specified c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | field | string | Yes | Column name in the database table. |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValueType> | Yes | Array of **ValueType**s to match. |
+| value | Array&lt;ValueType&gt; | Yes | Array of **ValueType**s to match. |
 
 **Return value:**
 
@@ -1064,6 +1091,7 @@ predicates.notIn("NAME", ["Lisa", "Rose"])
 
 ```
 
+<a id="offsetas"></a>
 ## offsetAs
 
 ```TypeScript
@@ -1102,6 +1130,7 @@ predicates.equalTo("NAME", "Rose").limitAs(-1).offsetAs(3)
 
 ```
 
+<a id="or"></a>
 ## or
 
 ```TypeScript
@@ -1136,6 +1165,7 @@ predicates.equalTo("NAME", "Lisa")
 
 ```
 
+<a id="orderbyasc"></a>
 ## orderByAsc
 
 ```TypeScript
@@ -1174,6 +1204,7 @@ predicates.orderByAsc("NAME")
 
 ```
 
+<a id="orderbydesc"></a>
 ## orderByDesc
 
 ```TypeScript

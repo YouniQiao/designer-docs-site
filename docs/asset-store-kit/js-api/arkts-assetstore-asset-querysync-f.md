@@ -6,13 +6,14 @@
 import { asset } from '@kit.AssetStoreKit';
 ```
 
+<a id="querysync"></a>
 ## querySync
 
 ```TypeScript
 function querySync(query: AssetMap): Array<AssetMap>
 ```
 
-Queries one or more assets. If user authentication is required for the access to the asset, call [asset.preQuerySync](arkts-assetstore-asset-prequerysync-f.md#prequerysync-1) before this API and call [asset.postQuerySync](arkts-assetstore-asset-postquerysync-f.md#postquerysync-1) after this API. For details about the development procedure, see [Development Guidance](../../../../security/AssetStoreKit/asset-js-query-auth.md).This API returns the result synchronously.
+Queries one or more assets. If user authentication is required for the access to the asset, call [asset.preQuerySync](arkts-assetstore-asset-prequerysync-f.md#prequerysync-1) before this API and call [asset.postQuerySync](arkts-assetstore-asset-postquerysync-f.md#postquerysync-1) after this API. For details about the development procedure, see [Development Guidance](docroot://security/AssetStoreKit/asset-js-query-auth.md).This API returns the result synchronously.
 
 If no asset is found, an exception indicating that no asset is found is thrown instead of returning an empty query result list.
 
@@ -34,7 +35,7 @@ If no asset is found, an exception indicating that no asset is found is thrown i
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AssetMap> | Array of query results. |
+| Array&lt;AssetMap&gt; | Array of query results. |
 
 **Error codes:**
 

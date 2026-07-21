@@ -1,5 +1,6 @@
 # equal
 
+<a id="equal"></a>
 ## equal
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether two WantAgent objects are equal.
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | to compare. |
 | otherAgent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | WantAgent Object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback method for determining whether two WantAgent instances are equal. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback method for determining whether two WantAgent instances are equal. |
 
 **Example**
 
@@ -86,6 +87,7 @@ wantAgent.getWantAgent({
 ```
 
 
+<a id="equal-1"></a>
 ## equal
 
 ```TypeScript
@@ -117,7 +119,7 @@ Checks whether two WantAgent objects are equal.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} If the two objects are the same; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} If the two objects are the same; returns {@code false} otherwise. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="getpixelmap"></a>
 ## getPixelMap
 
 ```TypeScript
@@ -31,7 +32,7 @@ Obtains the default pixel map of a wallpaper of the specified type. Returns the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | wallpaperType | [WallpaperType](arkts-basicservices-wallpaper-wallpapertype-e.md) | Yes | indicates the wallpaper type. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | the callback of getPixelMap. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | the callback of getPixelMap. |
 
 **Example**
 
@@ -50,6 +51,7 @@ wallpaper.getPixelMap(wallpaper.WallpaperType.WALLPAPER_SYSTEM, (error: Business
 ```
 
 
+<a id="getpixelmap-1"></a>
 ## getPixelMap
 
 ```TypeScript
@@ -80,7 +82,7 @@ Obtains the default pixel map of a wallpaper of the specified type. Returns the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | the promise returned by the function. |
+| Promise&lt;image.PixelMap&gt; | the promise returned by the function. |
 
 **Example**
 

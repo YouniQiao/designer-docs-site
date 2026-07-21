@@ -6,6 +6,7 @@
 import { uniformTypeDescriptor } from '@kit.ArkData';
 ```
 
+<a id="registertypedescriptors"></a>
 ## registerTypeDescriptors
 
 ```TypeScript
@@ -32,13 +33,13 @@ Register type descriptors into the system.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| typeDescriptors | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<TypeDescriptor> | Yes | The list of type descriptors to be registered. |
+| typeDescriptors | Array&lt;TypeDescriptor&gt; | Yes | The list of type descriptors to be registered. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

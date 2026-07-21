@@ -6,6 +6,7 @@
 import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="subscribe"></a>
 ## subscribe
 
 ```TypeScript
@@ -32,7 +33,7 @@ Subscribes to user status monitoring.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | featureId | [UserStatusFeature](arkts-multimodalawareness-userstatus-userstatusfeature-e-sys.md) | Yes | Indicates the feature to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<UserStatusData> | Yes | Callback used to return user status data. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;UserStatusData&gt; | Yes | Callback used to return user status data. |
 | deviceInfo | [DeviceInfo](../../apis-avsession-kit/arkts-apis/arkts-avsession-avsession-deviceinfo-i-sys.md)[] | No | List of devices to enable user status monitoring. |
 
 **Return value:**

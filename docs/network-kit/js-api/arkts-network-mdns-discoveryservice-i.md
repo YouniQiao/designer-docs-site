@@ -14,6 +14,7 @@ Defines a DiscoveryService object for discovering mDNS services of the specified
 import { mdns } from '@kit.NetworkKit';
 ```
 
+<a id="off"></a>
 ## off('discoveryStart')
 
 ```TypeScript
@@ -35,7 +36,7 @@ Cancels listening for discoveryStart events of mDNS services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discoveryStart' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DiscoveryEventInfo> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DiscoveryEventInfo&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -64,6 +65,7 @@ discoveryService.off('discoveryStart', (data: mdns.DiscoveryEventInfo) => {
 
 ```
 
+<a id="off-1"></a>
 ## off('discoveryStop')
 
 ```TypeScript
@@ -85,8 +87,9 @@ Cancels listening for discoveryStop events of mDNS services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discoveryStop' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DiscoveryEventInfo> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DiscoveryEventInfo&gt; | No | the callback used to return the result. |
 
+<a id="off-2"></a>
 ## off('serviceFound')
 
 ```TypeScript
@@ -108,7 +111,7 @@ Cancels listening for serviceFound events of mDNS services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serviceFound' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LocalServiceInfo> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LocalServiceInfo&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -140,6 +143,7 @@ discoveryService.off('serviceFound', (data: mdns.LocalServiceInfo) => {
 
 ```
 
+<a id="off-3"></a>
 ## off('serviceLost')
 
 ```TypeScript
@@ -161,7 +165,7 @@ Cancels listening for serviceLost events of mDNS services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serviceLost' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LocalServiceInfo> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LocalServiceInfo&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -190,6 +194,7 @@ discoveryService.off('serviceLost', (data: mdns.LocalServiceInfo) => {
 
 ```
 
+<a id="on"></a>
 ## on('discoveryStart')
 
 ```TypeScript
@@ -211,7 +216,7 @@ Enables listening for discoveryStart events of mDNS services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discoveryStart' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DiscoveryEventInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DiscoveryEventInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -236,6 +241,7 @@ discoveryService.stopSearchingMDNS();
 
 ```
 
+<a id="on-1"></a>
 ## on('discoveryStop')
 
 ```TypeScript
@@ -257,7 +263,7 @@ Enables listening for discoveryStop events of mDNS services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'discoveryStop' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DiscoveryEventInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DiscoveryEventInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -282,6 +288,7 @@ discoveryService.stopSearchingMDNS();
 
 ```
 
+<a id="on-2"></a>
 ## on('serviceFound')
 
 ```TypeScript
@@ -303,7 +310,7 @@ Enables listening for serviceFound events of mDNS services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serviceFound' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LocalServiceInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LocalServiceInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -331,6 +338,7 @@ discoveryService.stopSearchingMDNS();
 
 ```
 
+<a id="on-3"></a>
 ## on('serviceLost')
 
 ```TypeScript
@@ -352,7 +360,7 @@ Enables listening for serviceLost events of mDNS services.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serviceLost' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LocalServiceInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LocalServiceInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -377,6 +385,7 @@ discoveryService.stopSearchingMDNS();
 
 ```
 
+<a id="startsearchingmdns"></a>
 ## startSearchingMDNS
 
 ```TypeScript
@@ -410,6 +419,7 @@ discoveryService.startSearchingMDNS();
 
 ```
 
+<a id="stopsearchingmdns"></a>
 ## stopSearchingMDNS
 
 ```TypeScript

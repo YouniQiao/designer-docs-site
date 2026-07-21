@@ -6,6 +6,7 @@
 import { advertising } from '@kit.ConnectivityKit';
 ```
 
+<a id="startadvertising"></a>
 ## startAdvertising
 
 ```TypeScript
@@ -34,7 +35,7 @@ function startAdvertising(advertisingParams: AdvertisingParams): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<number> | 返回广播句柄promise对象。 |
+| Promise&lt;number&gt; | 返回广播句柄promise对象。 |
 
 **错误码：**
 

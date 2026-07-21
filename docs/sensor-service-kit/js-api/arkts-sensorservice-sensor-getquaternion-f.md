@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getquaternion"></a>
 ## getQuaternion
 
 ```TypeScript
@@ -24,8 +25,8 @@ Obtains the quaternion from a rotation vector. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the quaternion. |
+| rotationVector | Array&lt;number&gt; | Yes | Rotation vector. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the quaternion. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ try {
 ```
 
 
+<a id="getquaternion-1"></a>
 ## getQuaternion
 
 ```TypeScript
@@ -78,13 +80,13 @@ Obtains the quaternion from a rotation vector. This API uses a promise to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotationVector | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Rotation vector. |
+| rotationVector | Array&lt;number&gt; | Yes | Rotation vector. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the quaternion. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the quaternion. |
 
 **Error codes:**
 

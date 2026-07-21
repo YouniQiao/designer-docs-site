@@ -6,6 +6,7 @@
 import { scan } from '@kit.BasicServicesKit';
 ```
 
+<a id="getscannercurrentsetting"></a>
 ## getScannerCurrentSetting
 
 ```TypeScript
@@ -33,7 +34,7 @@ Obtains the current scanner settings. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ScannerOptionValue> | Promise used to return the scanner option value. |
+| Promise&lt;ScannerOptionValue&gt; | Promise used to return the scanner option value. |
 
 **Error codes:**
 

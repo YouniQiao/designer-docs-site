@@ -6,6 +6,7 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
+<a id="getforegrounduiabilities"></a>
 ## getForegroundUIAbilities
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the information about the UIAbility components of an application that is
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AbilityStateData>> | Yes | Callback used to return the API call result and the UIAbility information. You can perform error handling or custom processing in it. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AbilityStateData&gt;&gt; | Yes | Callback used to return the API call result and the UIAbility information. You can perform error handling or custom processing in it. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ abilityManager.getForegroundUIAbilities((err: BusinessError, data: Array<ability
 ```
 
 
+<a id="getforegrounduiabilities-1"></a>
 ## getForegroundUIAbilities
 
 ```TypeScript
@@ -78,7 +80,7 @@ Obtains the information about the UIAbility components of an application that is
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AbilityStateData>> | Promise used to return the API call result and the UIAbility information.You can perform error handling or custom processing in it. |
+| Promise&lt;Array&lt;AbilityStateData&gt;&gt; | Promise used to return the API call result and the UIAbility information.You can perform error handling or custom processing in it. |
 
 **Error codes:**
 

@@ -1,6 +1,6 @@
 # ApplicationStateObserver
 
-The module defines an observer to listen for application state changes. It can be used as an input parameter in [on('applicationState')](arkts-ability-appmanager-on-f.md#on-1)to listen for lifecycle changes of the application.
+The module defines an observer to listen for application state changes. It can be used as an input parameter in [on('applicationState')](./../@ohos.app.ability.appManager:appManager.on(type: 'applicationState', observer: ApplicationStateObserver))to listen for lifecycle changes of the application.
 
 **Since:** 14
 
@@ -8,6 +8,7 @@ The module defines an observer to listen for application state changes. It can b
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="onabilitystatechanged"></a>
 ## onAbilityStateChanged
 
 ```TypeScript
@@ -28,6 +29,7 @@ Called when the ability state changes.
 | --- | --- | --- | --- |
 | abilityStateData | [AbilityStateData](arkts-ability-abilitystatedata-c.md) | Yes | Ability state data. |
 
+<a id="onappstarted"></a>
 ## onAppStarted
 
 ```TypeScript
@@ -48,6 +50,7 @@ Called when the first process of the application is created.
 | --- | --- | --- | --- |
 | appStateData | [AppStateData](arkts-ability-appmanager-appstatedata-t.md) | Yes | Application state data. |
 
+<a id="onappstopped"></a>
 ## onAppStopped
 
 ```TypeScript
@@ -68,6 +71,7 @@ Called when the last process of the application is destroyed.
 | --- | --- | --- | --- |
 | appStateData | [AppStateData](arkts-ability-appmanager-appstatedata-t.md) | Yes | Application state data. |
 
+<a id="onforegroundapplicationchanged"></a>
 ## onForegroundApplicationChanged
 
 ```TypeScript
@@ -88,6 +92,7 @@ Called when the foreground or background state of an application changes.
 | --- | --- | --- | --- |
 | appStateData | [AppStateData](arkts-ability-appmanager-appstatedata-t.md) | Yes | Application state data. |
 
+<a id="onprocesscreated"></a>
 ## onProcessCreated
 
 ```TypeScript
@@ -108,6 +113,7 @@ Called when a process is created.
 | --- | --- | --- | --- |
 | processData | [ProcessData](arkts-ability-processdata-c.md) | Yes | Process data. |
 
+<a id="onprocessdied"></a>
 ## onProcessDied
 
 ```TypeScript
@@ -128,6 +134,7 @@ Called when a process is destroyed.
 | --- | --- | --- | --- |
 | processData | [ProcessData](arkts-ability-processdata-c.md) | Yes | Process data. |
 
+<a id="onprocessstatechanged"></a>
 ## onProcessStateChanged
 
 ```TypeScript

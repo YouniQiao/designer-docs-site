@@ -6,6 +6,7 @@
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="createmicinaudiocapturer"></a>
 ## createMicInAudioCapturer
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains a special {@link #AudioCapturer} instance. This method uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioCapturer \| null> | Promise used to return the audio capturer instance,or null if any error occurs. |
+| Promise&lt;AudioCapturer \| null&gt; | Promise used to return the audio capturer instance,or null if any error occurs. |
 
 **Error codes:**
 

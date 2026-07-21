@@ -14,6 +14,7 @@ Provide functions and keep a decrypt module. Before calling an MediaKeySession m
 import { drm } from '@kit.DrmKit';
 ```
 
+<a id="checkmediakeystatus"></a>
 ## checkMediaKeyStatus
 
 ```TypeScript
@@ -43,6 +44,7 @@ Check the media key status
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="clearmediakeys"></a>
 ## clearMediaKeys
 
 ```TypeScript
@@ -66,6 +68,7 @@ Remove media key.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -89,6 +92,7 @@ Release the resource before the session gonna be unused.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="generatemediakeyrequest"></a>
 ## generateMediaKeyRequest
 
 ```TypeScript
@@ -110,7 +114,7 @@ Generate the media key request.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mimeType | string | Yes | Media type. |
-| initData | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | PSSH info. |
+| initData | Uint8Array | Yes | PSSH info. |
 | mediaKeyType | number | Yes | Offline or online. |
 | options | [OptionsData](arkts-drm-drm-optionsdata-i.md)[] | No | Optional data the application set to drm framework. |
 
@@ -118,7 +122,7 @@ Generate the media key request.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<MediaKeyRequest> | Promise with MediaKeyRequest used to return the result. |
+| Promise&lt;MediaKeyRequest&gt; | Promise with MediaKeyRequest used to return the result. |
 
 **Error codes:**
 
@@ -128,6 +132,7 @@ Generate the media key request.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="generateofflinereleaserequest"></a>
 ## generateOfflineReleaseRequest
 
 ```TypeScript
@@ -148,13 +153,13 @@ Generate offline media key request.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mediaKeyId | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The mediaKeyId specifies which media content's media key request should be generated. |
+| mediaKeyId | Uint8Array | Yes | The mediaKeyId specifies which media content's media key request should be generated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise with media key request in Uint8Array used to return the result. |
+| Promise&lt;Uint8Array&gt; | Promise with media key request in Uint8Array used to return the result. |
 
 **Error codes:**
 
@@ -164,6 +169,7 @@ Generate offline media key request.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="getcontentprotectionlevel"></a>
 ## getContentProtectionLevel
 
 ```TypeScript
@@ -193,6 +199,7 @@ Get content protection level.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="off"></a>
 ## off('keyRequired')
 
 ```TypeScript
@@ -214,7 +221,7 @@ Unregister keyRequired event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyRequired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | No | used to listen for the key required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | No | used to listen for the key required event. |
 
 **Error codes:**
 
@@ -223,6 +230,7 @@ Unregister keyRequired event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="off-1"></a>
 ## off('keyExpired')
 
 ```TypeScript
@@ -244,7 +252,7 @@ Unregister keyExpired event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyExpired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for the key required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | No | Used to listen for the key required event. |
 
 **Error codes:**
 
@@ -253,6 +261,7 @@ Unregister keyExpired event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="off-2"></a>
 ## off('vendorDefined')
 
 ```TypeScript
@@ -274,7 +283,7 @@ Unregister vendorDefined event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'vendorDefined' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for the vendor defined event. |
+| callback | (eventInfo: EventInfo) =&gt; void | No | Used to listen for the vendor defined event. |
 
 **Error codes:**
 
@@ -283,6 +292,7 @@ Unregister vendorDefined event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="off-3"></a>
 ## off('expirationUpdate')
 
 ```TypeScript
@@ -304,7 +314,7 @@ Unregister expirationUpdate event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'expirationUpdate' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for expiration update event. |
+| callback | (eventInfo: EventInfo) =&gt; void | No | Used to listen for expiration update event. |
 
 **Error codes:**
 
@@ -313,6 +323,7 @@ Unregister expirationUpdate event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="off-4"></a>
 ## off('keysChange')
 
 ```TypeScript
@@ -334,7 +345,7 @@ Unregister keysChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keysChange' | Yes | Type of the drm event to listen for. |
-| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) => void | No | Used to listen for keys change event. |
+| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) =&gt; void | No | Used to listen for keys change event. |
 
 **Error codes:**
 
@@ -343,6 +354,7 @@ Unregister keysChange event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="on"></a>
 ## on('keyRequired')
 
 ```TypeScript
@@ -364,7 +376,7 @@ Register keyRequired event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyRequired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | Yes | used to listen for the key required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | Yes | used to listen for the key required event. |
 
 **Error codes:**
 
@@ -373,6 +385,7 @@ Register keyRequired event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="on-1"></a>
 ## on('keyExpired')
 
 ```TypeScript
@@ -394,7 +407,7 @@ Register keyExpired event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyExpired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for the key required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | Yes | Used to listen for the key required event. |
 
 **Error codes:**
 
@@ -403,6 +416,7 @@ Register keyExpired event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="on-2"></a>
 ## on('vendorDefined')
 
 ```TypeScript
@@ -424,7 +438,7 @@ Register vendorDefined event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'vendorDefined' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for the vendor defined event. |
+| callback | (eventInfo: EventInfo) =&gt; void | Yes | Used to listen for the vendor defined event. |
 
 **Error codes:**
 
@@ -433,6 +447,7 @@ Register vendorDefined event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="on-3"></a>
 ## on('expirationUpdate')
 
 ```TypeScript
@@ -454,7 +469,7 @@ Register expirationUpdate event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'expirationUpdate' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for expiration update event. |
+| callback | (eventInfo: EventInfo) =&gt; void | Yes | Used to listen for expiration update event. |
 
 **Error codes:**
 
@@ -463,6 +478,7 @@ Register expirationUpdate event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="on-4"></a>
 ## on('keysChange')
 
 ```TypeScript
@@ -484,7 +500,7 @@ Register keysChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keysChange' | Yes | Type of the drm event to listen for. |
-| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) => void | Yes | Used to listen for keys change event. |
+| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) =&gt; void | Yes | Used to listen for keys change event. |
 
 **Error codes:**
 
@@ -493,6 +509,7 @@ Register keysChange event.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
+<a id="processmediakeyresponse"></a>
 ## processMediaKeyResponse
 
 ```TypeScript
@@ -513,13 +530,13 @@ Process the response corresponding to the media key request obtained by the appl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| response | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The response. |
+| response | Uint8Array | Yes | The response. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Uint8Array> | Promise with media key identifier in Uint8Array used to return the result. |
+| Promise&lt;Uint8Array&gt; | Promise with media key identifier in Uint8Array used to return the result. |
 
 **Error codes:**
 
@@ -529,6 +546,7 @@ Process the response corresponding to the media key request obtained by the appl
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="processofflinereleaseresponse"></a>
 ## processOfflineReleaseResponse
 
 ```TypeScript
@@ -549,14 +567,14 @@ Process offline media key response.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mediaKeyId | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The mediaKeyId specifies which media content's media key it is. |
-| response | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The offline media key. |
+| mediaKeyId | Uint8Array | Yes | The mediaKeyId specifies which media content's media key it is. |
+| response | Uint8Array | Yes | The offline media key. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -566,6 +584,7 @@ Process offline media key response.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="requiresecuredecodermodule"></a>
 ## requireSecureDecoderModule
 
 ```TypeScript
@@ -602,6 +621,7 @@ Whether the encrypted content require a secure decoder or not.
 | [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 | [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
+<a id="restoreofflinemediakeys"></a>
 ## restoreOfflineMediaKeys
 
 ```TypeScript
@@ -622,13 +642,13 @@ Restore offline media key.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mediaKeyId | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The mediaKeyId specifies which media key should be restore. |
+| mediaKeyId | Uint8Array | Yes | The mediaKeyId specifies which media key should be restore. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

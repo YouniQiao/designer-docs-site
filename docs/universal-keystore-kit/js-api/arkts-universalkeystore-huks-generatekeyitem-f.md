@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="generatekeyitem"></a>
 ## generateKeyItem
 
 ```TypeScript
@@ -14,7 +15,7 @@ function generateKeyItem(keyAlias: string, options: HuksOptions, callback: Async
 
 Generates a key. This API uses an asynchronous callback to return the result.
 
-Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through this API and is only used to indicate whether the call is successful.
+Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](docroot://security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through this API and is only used to indicate whether the call is successful.
 
 > **NOTE**  
 >  
@@ -35,7 +36,7 @@ Based on the principle that the key cannot be transferred out of [Trusted Execut
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key. The value can contain up to 128 bytes and should not include sensitive data such as personal information. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Tags required for generating the key. The algorithm, key purpose, and key length are mandatory. When specifying the SE security level defined in [HuksKeySecurityLevel](arkts-universalkeystore-huks-hukskeysecuritylevel-e.md), the ohos.permission.ACCESS_SE_KEY permission is required. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -190,6 +191,7 @@ export default {
 ```
 
 
+<a id="generatekeyitem-1"></a>
 ## generateKeyItem
 
 ```TypeScript
@@ -203,7 +205,7 @@ Generates a key. This API uses a promise to return the result.
 > Generating SE security level keys defined in [HuksKeySecurityLevel](arkts-universalkeystore-huks-hukskeysecuritylevel-e.md)  
 > requires the ohos.permission.ACCESS_SE_KEY permission.
 
-Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through this API and is only used to indicate whether the call is successful.
+Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](docroot://security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through this API and is only used to indicate whether the call is successful.
 
 **Since:** 9
 
@@ -224,7 +226,7 @@ Based on the principle that the key cannot be transferred out of [Trusted Execut
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

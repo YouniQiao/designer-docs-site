@@ -21,6 +21,7 @@ Provides the capability to set cursor styles.
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="restoredefault"></a>
 ## restoreDefault
 
 ```TypeScript
@@ -39,6 +40,7 @@ Restores the default cursor style.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="setcursor"></a>
 ## setCursor
 
 ```TypeScript
@@ -67,6 +69,7 @@ Sets the cursor style.
 | --- | --- | --- | --- |
 | value | [PointerStyle](arkts-arkui-pointerstyle-t.md) | Yes | Pointer style. |
 
+<a id="setcustomcursor"></a>
 ## setCustomCursor
 
 ```TypeScript

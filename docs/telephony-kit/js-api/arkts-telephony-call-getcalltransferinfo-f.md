@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="getcalltransferinfo"></a>
 ## getCallTransferInfo
 
 ```TypeScript
@@ -33,7 +34,7 @@ Obtains call transfer information with the phone number.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CallTransferResult> | - Call transfer status. |
+| Promise&lt;CallTransferResult&gt; | - Call transfer status. |
 
 **Error codes:**
 

@@ -46,7 +46,7 @@ key: string | Uint8Array
 
 Key material.
 
-**Type:** string | Uint8Array
+**Type:** string \| Uint8Array
 
 **Since:** 22
 

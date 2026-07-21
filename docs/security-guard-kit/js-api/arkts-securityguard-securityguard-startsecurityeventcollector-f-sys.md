@@ -6,6 +6,7 @@
 import { securityGuard } from '@kit.SecurityGuardKit';
 ```
 
+<a id="startsecurityeventcollector"></a>
 ## startSecurityEventCollector
 
 ```TypeScript

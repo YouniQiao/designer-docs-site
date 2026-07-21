@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="setusergrantedstate"></a>
 ## setUserGrantedState
 
 ```TypeScript
@@ -35,7 +36,7 @@ Sets the enabling state of the **Allow access to notifications on this device** 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

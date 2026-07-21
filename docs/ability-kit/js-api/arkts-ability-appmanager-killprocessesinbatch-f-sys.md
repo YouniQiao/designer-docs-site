@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="killprocessesinbatch"></a>
 ## killProcessesInBatch
 
 ```TypeScript
@@ -28,13 +29,13 @@ Kills processes in batches. This API uses a promise to return the result.This AP
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pids | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Array of process IDs. |
+| pids | Array&lt;number&gt; | Yes | Array of process IDs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

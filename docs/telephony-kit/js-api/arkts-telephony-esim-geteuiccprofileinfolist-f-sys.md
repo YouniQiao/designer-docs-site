@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="geteuiccprofileinfolist"></a>
 ## getEuiccProfileInfoList
 
 ```TypeScript
@@ -34,7 +35,7 @@ Returns a list of all eUICC profile information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GetEuiccProfileInfoListResult> | Return a list of eUICC profile information. |
+| Promise&lt;GetEuiccProfileInfoListResult&gt; | Return a list of eUICC profile information. |
 
 **Error codes:**
 

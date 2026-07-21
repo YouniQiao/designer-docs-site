@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="on"></a>
 ## on('systemBarTintChange')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Subscribes to the property change event of the status bar and navigation bar.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'systemBarTintChange' | Yes | Event type. The value is fixed at **'systemBarTintChange'**, indicating the property change event of the status bar and navigation bar. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<SystemBarTintState> | Yes | Callback used to return the properties of the status bar and navigation bar. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;SystemBarTintState&gt; | Yes | Callback used to return the properties of the status bar and navigation bar. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ try {
 ```
 
 
+<a id="on-1"></a>
 ## on('gestureNavigationEnabledChange')
 
 ```TypeScript
@@ -71,7 +73,7 @@ Subscribes to the gesture navigation status change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'gestureNavigationEnabledChange' | Yes | Event type. The value is fixed at **'gestureNavigationEnabledChange'**, indicating the gesture navigation status change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback used to return the gesture navigation status. **true** if enabled,**false** otherwise. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the gesture navigation status. **true** if enabled,**false** otherwise. |
 
 **Error codes:**
 
@@ -96,6 +98,7 @@ try {
 ```
 
 
+<a id="on-2"></a>
 ## on('waterMarkFlagChange')
 
 ```TypeScript
@@ -117,7 +120,7 @@ Subscribes to the watermark status change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'waterMarkFlagChange' | Yes | Event type. The value is fixed at **'waterMarkFlagChange'**, indicating the watermark status change event. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback used to return the watermark status. **true** if enabled,**false** otherwise. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the watermark status. **true** if enabled,**false** otherwise. |
 
 **Error codes:**
 

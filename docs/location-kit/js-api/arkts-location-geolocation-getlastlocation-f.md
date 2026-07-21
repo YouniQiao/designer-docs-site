@@ -6,6 +6,7 @@
 import { geolocation } from '@kit.LocationKit';
 ```
 
+<a id="getlastlocation"></a>
 ## getLastLocation
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtain last known location
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Location> | Yes | Indicates the callback for reporting the location result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Location&gt; | Yes | Indicates the callback for reporting the location result. |
 
 **Example**
 
@@ -48,6 +49,7 @@ geolocation.getLastLocation((err, data) => {
 ```
 
 
+<a id="getlastlocation-1"></a>
 ## getLastLocation
 
 ```TypeScript
@@ -72,7 +74,7 @@ Obtain last known location
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Location> | The promise returned by the function. |
+| Promise&lt;Location&gt; | The promise returned by the function. |
 
 **Example**
 

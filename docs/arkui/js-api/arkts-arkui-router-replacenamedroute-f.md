@@ -6,6 +6,7 @@
 import { router } from '@kit.ArkUI';
 ```
 
+<a id="replacenamedroute"></a>
 ## replaceNamedRoute
 
 ```TypeScript
@@ -17,7 +18,7 @@ Replaces the current page with another one using the named route and destroys th
 > **NOTE**  
 >  
 > - Since API version 10, you can use the  
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
+> [getRouter](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
 > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated  
 > with the current UI context.
 
@@ -25,7 +26,7 @@ Replaces the current page with another one using the named route and destroys th
 
 **Deprecated since:** 18
 
-**Substitutes:** replaceNamedRoute(options:
+**Substitutes:** [replaceNamedRoute(options:](arkts-arkui-arkui-uicontext-router-c.md#replacenamedroute-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -40,7 +41,7 @@ Replaces the current page with another one using the named route and destroys th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [NamedRouterOptions](arkts-arkui-router-namedrouteroptions-i.md) | Yes | Description of the new page. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -77,6 +78,7 @@ router.replaceNamedRoute({
 ```
 
 
+<a id="replacenamedroute-1"></a>
 ## replaceNamedRoute
 
 ```TypeScript
@@ -88,7 +90,7 @@ Replaces the current page with another one using the named route and destroys th
 > **NOTE**  
 >  
 > - Since API version 10, you can use the  
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
+> [getRouter](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
 > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated  
 > with the current UI context.
 
@@ -96,7 +98,7 @@ Replaces the current page with another one using the named route and destroys th
 
 **Deprecated since:** 18
 
-**Substitutes:** replaceNamedRoute(options:
+**Substitutes:** [replaceNamedRoute(options:](arkts-arkui-arkui-uicontext-router-c.md#replacenamedroute-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -116,7 +118,7 @@ Replaces the current page with another one using the named route and destroys th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -155,6 +157,7 @@ router.replaceNamedRoute({
 ```
 
 
+<a id="replacenamedroute-2"></a>
 ## replaceNamedRoute
 
 ```TypeScript
@@ -166,7 +169,7 @@ Replaces the current page with another one using the named route and destroys th
 > **NOTE**  
 >  
 > - Since API version 10, you can use the  
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
+> [getRouter](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
 > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated  
 > with the current UI context.
 
@@ -174,7 +177,7 @@ Replaces the current page with another one using the named route and destroys th
 
 **Deprecated since:** 18
 
-**Substitutes:** replaceNamedRoute(options:
+**Substitutes:** [replaceNamedRoute(options:](arkts-arkui-arkui-uicontext-router-c.md#replacenamedroute-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -190,7 +193,7 @@ Replaces the current page with another one using the named route and destroys th
 | --- | --- | --- | --- |
 | options | [NamedRouterOptions](arkts-arkui-router-namedrouteroptions-i.md) | Yes | Description of the new page. |
 | mode | [RouterMode](arkts-arkui-router-routermode-e.md) | Yes | Routing mode. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -227,6 +230,7 @@ router.replaceNamedRoute({
 ```
 
 
+<a id="replacenamedroute-3"></a>
 ## replaceNamedRoute
 
 ```TypeScript
@@ -238,7 +242,7 @@ Replaces the current page with another one using the named route and destroys th
 > **NOTE**  
 >  
 > - Since API version 10, you can use the  
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
+> [getRouter](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
 > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated  
 > with the current UI context.
 
@@ -246,7 +250,7 @@ Replaces the current page with another one using the named route and destroys th
 
 **Deprecated since:** 18
 
-**Substitutes:** replaceNamedRoute(options:
+**Substitutes:** [replaceNamedRoute(options:](arkts-arkui-arkui-uicontext-router-c.md#replacenamedroute-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -267,7 +271,7 @@ Replaces the current page with another one using the named route and destroys th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

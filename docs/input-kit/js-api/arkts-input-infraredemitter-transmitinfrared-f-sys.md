@@ -6,6 +6,7 @@
 import { infraredEmitter } from '@kit.InputKit';
 ```
 
+<a id="transmitinfrared"></a>
 ## transmitInfrared
 
 ```TypeScript
@@ -29,7 +30,7 @@ Generates IR signals at the specified frequency and level.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | infraredFrequency | number | Yes | IR frequency, in Hz. |
-| pattern | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Infrared level signal, in microseconds (μs). The number of infrared level signals ranges from 0 to 1024. The value of this parameter must be greater than 0. If this parameter is set to **0**,the API does not take effect. <br/>For example, in the level signal array [100,200,300,400], **100** indicates a high-level signal, **200** indicates a low-level signal, **300** is a high-level signal, and **400** is a low  -level signal. |
+| pattern | Array&lt;number&gt; | Yes | Infrared level signal, in microseconds (μs). The number of infrared level signals ranges from 0 to 1024. The value of this parameter must be greater than 0. If this parameter is set to **0**,the API does not take effect. <br/>For example, in the level signal array [100,200,300,400], **100** indicates a high-level signal, **200** indicates a low-level signal, **300** is a high-level signal, and **400** is a low   -level signal. |
 
 **Error codes:**
 

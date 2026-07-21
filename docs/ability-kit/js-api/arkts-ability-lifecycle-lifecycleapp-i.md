@@ -8,6 +8,7 @@ interface of app lifecycle.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="onactive"></a>
 ## onActive
 
 ```TypeScript
@@ -24,6 +25,7 @@ Called back when an ability enters the <b>ACTIVE</b> state.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="oncompletecontinuation"></a>
 ## onCompleteContinuation
 
 ```TypeScript
@@ -46,6 +48,7 @@ Called back when a local ability migration is complete.<p>You can define the pro
 | --- | --- | --- | --- |
 | result | number | Yes | Indicates the migration result code. The value {@code 0} indicates that the migration is successful, and {@code -1} indicates that the migration fails. |
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -62,6 +65,7 @@ Called back when an ability is started for initialization.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -78,6 +82,7 @@ Called back before an ability is destroyed.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="onhide"></a>
 ## onHide
 
 ```TypeScript
@@ -94,6 +99,7 @@ Called back when an ability enters the <b>BACKGROUND</b> state.
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="oninactive"></a>
 ## onInactive
 
 ```TypeScript
@@ -110,6 +116,7 @@ Called back when an ability enters the <b>INACTIVE</b> state (an ability in this
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="onmemorylevel"></a>
 ## onMemoryLevel
 
 ```TypeScript
@@ -132,6 +139,7 @@ Called when the system has determined to trim the memory, for example, when the 
 | --- | --- | --- | --- |
 | level | number | Yes | Indicates the memory trim level, which shows the current memory usage status. |
 
+<a id="onnewwant"></a>
 ## onNewWant
 
 ```TypeScript
@@ -154,6 +162,7 @@ Called when the launch mode of an ability is set to singleton.
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Indicates the new {@code want} containing information about the ability. |
 
+<a id="onremoteterminated"></a>
 ## onRemoteTerminated
 
 ```TypeScript
@@ -170,6 +179,7 @@ Called to notify the local device when a running ability on the remote device is
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="onrestoreabilitystate"></a>
 ## onRestoreAbilityState
 
 ```TypeScript
@@ -192,6 +202,7 @@ This method is called if an ability was destroyed at a certain time due to resou
 | --- | --- | --- | --- |
 | inState | [PacMap](arkts-ability-dataabilityhelper-pacmap-i.md) | Yes | Indicates the {@code PacMap} object used for storing data and states. This parameter can not be null. |
 
+<a id="onrestoredata"></a>
 ## onRestoreData
 
 ```TypeScript
@@ -212,8 +223,9 @@ Restores the user data saved during the migration for an ability on the remote d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Indicates the user data to restore. |
+| data | Object | Yes | Indicates the user data to restore. |
 
+<a id="onsaveabilitystate"></a>
 ## onSaveAbilityState
 
 ```TypeScript
@@ -236,6 +248,7 @@ This method is called when the system determines that the ability may be destroy
 | --- | --- | --- | --- |
 | outState | [PacMap](arkts-ability-dataabilityhelper-pacmap-i.md) | Yes | Indicates the {@code PacMap} object used for storing user data and states. This parameter cannot be null. |
 
+<a id="onsavedata"></a>
 ## onSaveData
 
 ```TypeScript
@@ -256,7 +269,7 @@ Saves the user data of a local ability generated during runtime.After the migrat
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Indicates the user data to save. |
+| data | Object | Yes | Indicates the user data to save. |
 
 **Return value:**
 
@@ -264,6 +277,7 @@ Saves the user data of a local ability generated during runtime.After the migrat
 | --- | --- |
 | boolean | Returns {@code true} if the data is successfully saved; returns {@code false} otherwise. |
 
+<a id="onshow"></a>
 ## onShow
 
 ```TypeScript
@@ -280,6 +294,7 @@ Called back when the state of an ability changes from <b>BACKGROUND</b> to <b>IN
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="onstartcontinuation"></a>
 ## onStartContinuation
 
 ```TypeScript

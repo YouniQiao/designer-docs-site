@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="opennotificationsettings"></a>
 ## openNotificationSettings
 
 ```TypeScript
@@ -34,7 +35,7 @@ This is suitable for scenarios where users need to manually modify notification 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

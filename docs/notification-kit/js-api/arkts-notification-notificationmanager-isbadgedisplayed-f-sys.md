@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="isbadgedisplayed"></a>
 ## isBadgeDisplayed
 
 ```TypeScript
@@ -29,7 +30,7 @@ Checks whether the notification badge is enabled for a specified application. Th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that the badge is enabled, and **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that the badge is enabled, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ notificationManager.isBadgeDisplayed(bundle, isBadgeDisplayedCallback);
 ```
 
 
+<a id="isbadgedisplayed-1"></a>
 ## isBadgeDisplayed
 
 ```TypeScript
@@ -92,7 +94,7 @@ Checks whether the notification badge is enabled for a specified application. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the badge is enabled, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the badge is enabled, and **false** means the opposite. |
 
 **Error codes:**
 

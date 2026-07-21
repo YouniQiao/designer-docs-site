@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="updatesimmessage"></a>
 ## updateSimMessage
 
 ```TypeScript
@@ -29,7 +30,7 @@ Update a SIM SMS of SIM card.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [UpdateSimMessageOptions](arkts-telephony-sms-updatesimmessageoptions-i-sys.md) | Yes | Indicates update SIM message options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of updateSimMessage. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of updateSimMessage. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ sms.updateSimMessage(updateSimMessageOptions, (err: BusinessError) => {
 ```
 
 
+<a id="updatesimmessage-1"></a>
 ## updateSimMessage
 
 ```TypeScript
@@ -91,7 +93,7 @@ Update a SIM SMS of SIM card.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the updateSimMessage. |
+| Promise&lt;void&gt; | The promise returned by the updateSimMessage. |
 
 **Error codes:**
 

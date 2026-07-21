@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="querybundleevents"></a>
 ## queryBundleEvents
 
 ```TypeScript
@@ -30,7 +31,7 @@ Queries state data of all bundles within a specified period identified by the st
 | --- | --- | --- | --- |
 | begin | number | Yes | Indicates the start time of the query period, in milliseconds.<br> Unit:ms |
 | end | number | Yes | Indicates the end time of the query period, in milliseconds.<br> Unit:ms |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<BundleEvents>> | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the list of {@link BundleEvents} objects containing the state data of all bundles. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;BundleEvents&gt;&gt; | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the list of {@link BundleEvents} objects containing the state data of all bundles. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ usageStatistics.queryBundleEvents(0, 20000000000000, (err: BusinessError, res: A
 ```
 
 
+<a id="querybundleevents-1"></a>
 ## queryBundleEvents
 
 ```TypeScript
@@ -97,7 +99,7 @@ Queries state data of all bundles within a specified period identified by the st
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleEvents>> | the promise returned by queryBundleEvents.the list of {@link BundleEvents} objects containing the state data of all bundles. |
+| Promise&lt;Array&lt;BundleEvents&gt;&gt; | the promise returned by queryBundleEvents.the list of {@link BundleEvents} objects containing the state data of all bundles. |
 
 **Error codes:**
 
@@ -133,6 +135,7 @@ usageStatistics.queryBundleEvents(0, 20000000000000).then((res: Array<usageStati
 ```
 
 
+<a id="querybundleevents-2"></a>
 ## queryBundleEvents
 
 ```TypeScript
@@ -165,7 +168,7 @@ Queries state data of all bundles within a specified period identified by the st
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleEvents>> | the promise returned by queryBundleEvents.the list of {@link BundleEvents} objects containing the state data of all bundles. |
+| Promise&lt;Array&lt;BundleEvents&gt;&gt; | the promise returned by queryBundleEvents.the list of {@link BundleEvents} objects containing the state data of all bundles. |
 
 **Error codes:**
 

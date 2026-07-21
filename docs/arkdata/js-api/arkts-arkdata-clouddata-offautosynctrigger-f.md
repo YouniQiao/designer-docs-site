@@ -6,6 +6,7 @@
 import { cloudData } from '@kit.ArkData';
 ```
 
+<a id="offautosynctrigger"></a>
 ## offAutoSyncTrigger
 
 ```TypeScript
@@ -26,7 +27,7 @@ Describes unsubscribing from the device-cloud automatic synchronization trigger 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AutoSyncTriggerInfo> | No | Callback for automatic synchronization trigger interception. |
+| observer | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AutoSyncTriggerInfo&gt; | No | Callback for automatic synchronization trigger interception. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="offupdateformsconfigcallback"></a>
 ## offUpdateFormsConfigCallback
 
 ```TypeScript

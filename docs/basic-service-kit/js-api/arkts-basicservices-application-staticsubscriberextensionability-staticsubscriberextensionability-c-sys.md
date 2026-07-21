@@ -16,6 +16,7 @@ The **StaticSubscriberExtensionAbility** module provides Extension abilities for
 import { StaticSubscriberExtensionAbility } from '@kit.BasicServicesKit';
 ```
 
+<a id="onreceiveevent"></a>
 ## onReceiveEvent
 
 ```TypeScript

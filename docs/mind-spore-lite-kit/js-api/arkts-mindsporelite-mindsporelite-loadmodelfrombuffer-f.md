@@ -6,6 +6,7 @@
 import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
 
+<a id="loadmodelfrombuffer"></a>
 ## loadModelFromBuffer
 
 ```TypeScript
@@ -32,23 +33,23 @@ Create a Model instance from buffer
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| model | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | model indicates model buffer to be loaded |
+| model | ArrayBuffer | Yes | model indicates model buffer to be loaded |
 | context | [Context](arkts-mindsporelite-mindsporelite-context-i.md) | No | context indicates model context information |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Model> | the promise returned by the function. |
+| Promise&lt;Model&gt; | the promise returned by the function. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is a null pointer.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer size is incorrect; 2. The buffer file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is a null pointer.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer size is incorrect; 2. The buffer file is damaged.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -82,6 +83,7 @@ globalContext.getApplicationContext()
 ```
 
 
+<a id="loadmodelfrombuffer-1"></a>
 ## loadModelFromBuffer
 
 ```TypeScript
@@ -105,17 +107,17 @@ Create a Model instance from buffer
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| model | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | model indicates model buffer to be loaded |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Model> | Yes | the callback of model |
+| model | ArrayBuffer | Yes | model indicates model buffer to be loaded |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Model&gt; | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is a null pointer.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer size is incorrect; 2. The buffer file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is a null pointer.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer size is incorrect; 2. The buffer file is damaged.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -147,6 +149,7 @@ globalContext.getApplicationContext()
 ```
 
 
+<a id="loadmodelfrombuffer-2"></a>
 ## loadModelFromBuffer
 
 ```TypeScript
@@ -173,18 +176,18 @@ Create a Model instance from buffer
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| model | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | model indicates model buffer to be loaded |
+| model | ArrayBuffer | Yes | model indicates model buffer to be loaded |
 | context | [Context](arkts-mindsporelite-mindsporelite-context-i.md) | Yes | context indicates model context information |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Model> | Yes | the callback of model |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Model&gt; | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is a null pointer.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer size is incorrect; 2. The buffer file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be path, buffer, or fd.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is a null pointer.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer size is incorrect; 2. The buffer file is damaged.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

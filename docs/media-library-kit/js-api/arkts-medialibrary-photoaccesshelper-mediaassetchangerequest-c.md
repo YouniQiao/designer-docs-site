@@ -16,6 +16,7 @@ Represents a media asset change request.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="addresource"></a>
 ## addResource
 
 ```TypeScript
@@ -53,6 +54,7 @@ Adds resources from the application sandbox based on the file URI. For details a
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
+<a id="addresource-1"></a>
 ## addResource
 
 ```TypeScript
@@ -79,7 +81,7 @@ Adds a resource using **ArrayBuffer** data.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [ResourceType](../../apis-ability-kit/arkts-apis/arkts-ability-errormanager-resourcetype-e.md) | Yes | Type of the resource to add. |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Data of the resource to add. |
+| data | ArrayBuffer | Yes | Data of the resource to add. |
 
 **Error codes:**
 
@@ -89,6 +91,7 @@ Adds a resource using **ArrayBuffer** data.
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -118,6 +121,7 @@ Constructor used to initialize an asset change request.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
+<a id="createassetrequest"></a>
 ## createAssetRequest
 
 ```TypeScript
@@ -141,7 +145,7 @@ Create an asset change request based on the file type and filename extension.
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
 | photoType | [PhotoType](arkts-medialibrary-sendablephotoaccesshelper-phototype-e.md) | Yes | Type of the file to create, which can be **IMAGE** or **VIDEO**. |
 | extension | string | Yes | File name extension, for example, **'jpg'**. |
-| options | [CreateOptions](arkts-medialibrary-photoaccesshelper-createoptions-i.md) | No | Options for creating the image or video asset, for example,**{title: 'testPhoto'}**.<br>The file name must not contain any invalid characters, which are:.. \ / : * ? " ' ` &lt; &gt; \| { } [ ] |
+| options | [CreateOptions](arkts-medialibrary-photoaccesshelper-createoptions-i.md) | No | Options for creating the image or video asset, for example,**{title: 'testPhoto'}**.<br>The file name must not contain any invalid characters, which are:.. \ / : * ? " ' ` < > \| { } [ ] |
 
 **Return value:**
 
@@ -156,6 +160,7 @@ Create an asset change request based on the file type and filename extension.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
+<a id="createimageassetrequest"></a>
 ## createImageAssetRequest
 
 ```TypeScript
@@ -195,6 +200,7 @@ For details about data source of the asset to be created, see [@ohos.file.fileur
 | 13900002 | The file corresponding to the URI is not in the app sandbox. |
 | 14000011 | System inner fail |
 
+<a id="createvideoassetrequest"></a>
 ## createVideoAssetRequest
 
 ```TypeScript
@@ -232,6 +238,7 @@ For details about data source of the asset to be created, see [@ohos.file.fileur
 | 13900002 | The file corresponding to the URI is not in the app sandbox. |
 | 14000011 | System inner fail |
 
+<a id="deleteassets"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -253,13 +260,13 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of media assets to delete. The array can contain a maximum of 300elements. &lt;!--Del--&gt;System applications are not subject to this limitation.&lt;!--DelEnd--&gt; |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of media assets to delete. The array can contain a maximum of 300elements. <!--Del-->System applications are not subject to this limitation.<!--DelEnd--> |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -269,6 +276,7 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
+<a id="deleteassets-1"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -290,13 +298,13 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
-| uriList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the media assets to delete. The array can contain a maximum of 300elements. &lt;!--Del--&gt;System applications are not subject to this limitation.&lt;!--DelEnd--&gt; |
+| uriList | Array&lt;string&gt; | Yes | URIs of the media assets to delete. The array can contain a maximum of 300elements. <!--Del-->System applications are not subject to this limitation.<!--DelEnd--> |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -307,6 +315,7 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 | 14000002 | The uri format is incorrect or does not exist. |
 | 14000011 | System inner fail |
 
+<a id="discardcameraphoto"></a>
 ## discardCameraPhoto
 
 ```TypeScript
@@ -328,6 +337,7 @@ Discards the photo taken by the camera.
 | 14000011 | Internal system error |
 | 14000016 | Operation Not Support |
 
+<a id="getasset"></a>
 ## getAsset
 
 ```TypeScript
@@ -363,6 +373,7 @@ Obtains the asset in this asset change request.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | 14000011 | System inner fail |
 
+<a id="getwritecachehandler"></a>
 ## getWriteCacheHandler
 
 ```TypeScript
@@ -388,7 +399,7 @@ Obtains the handler used for writing a file to cache. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the write handle obtained. |
+| Promise&lt;number&gt; | Promise used to return the write handle obtained. |
 
 **Error codes:**
 
@@ -399,6 +410,7 @@ Obtains the handler used for writing a file to cache. This API uses a promise to
 | 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
+<a id="savecameraphoto"></a>
 ## saveCameraPhoto
 
 ```TypeScript
@@ -420,6 +432,7 @@ Saves the photo taken by the camera.
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
+<a id="savecameraphoto-1"></a>
 ## saveCameraPhoto
 
 ```TypeScript
@@ -447,6 +460,7 @@ Saves the photo taken by the camera.
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
+<a id="setorientation"></a>
 ## setOrientation
 
 ```TypeScript
@@ -474,6 +488,7 @@ Sets the orientation of this image.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
+<a id="settitle"></a>
 ## setTitle
 
 ```TypeScript

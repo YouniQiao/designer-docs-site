@@ -18,6 +18,7 @@ VideoPlayer is a class for video playback management. It provides APIs to manage
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="gettrackdescription"></a>
 ## getTrackDescription
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains the video track information. This API uses an asynchronous callback to r
 
 **Deprecated since:** 9
 
-**Substitutes:** getTrackDescription(callback:
+**Substitutes:** [getTrackDescription(callback:](arkts-media-media-avplayer-i.md#gettrackdescription-1)
 
 <!--Device-VideoPlayer-getTrackDescription(callback: AsyncCallback<Array<MediaDescription>>): void--><!--Device-VideoPlayer-getTrackDescription(callback: AsyncCallback<Array<MediaDescription>>): void-End-->
 
@@ -40,8 +41,9 @@ Obtains the video track information. This API uses an asynchronous callback to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<MediaDescription>> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the MediaDescription array obtained; otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;MediaDescription&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the MediaDescription array obtained; otherwise,**err** is an error object. |
 
+<a id="gettrackdescription-1"></a>
 ## getTrackDescription
 
 ```TypeScript
@@ -54,7 +56,7 @@ Obtains the video track information. This API uses a promise to return the resul
 
 **Deprecated since:** 9
 
-**Substitutes:** [getTrackDescription()](arkts-media-media-avplayer-i.md#gettrackdescription-2)
+**Substitutes:** [getTrackDescription()](arkts-media-media-avplayer-i.md#gettrackdescription-1)
 
 <!--Device-VideoPlayer-getTrackDescription(): Promise<Array<MediaDescription>>--><!--Device-VideoPlayer-getTrackDescription(): Promise<Array<MediaDescription>>-End-->
 
@@ -64,8 +66,9 @@ Obtains the video track information. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<MediaDescription>> | Promise used to return the MediaDescription array that holds the video track information. |
+| Promise&lt;Array&lt;MediaDescription&gt;&gt; | Promise used to return the MediaDescription array that holds the video track information. |
 
+<a id="on"></a>
 ## on('playbackCompleted')
 
 ```TypeScript
@@ -89,8 +92,9 @@ Subscribes to the video playback completion event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playbackCompleted' | Yes | Event type, which is **'playbackCompleted'** in this case. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback invoked when the event is triggered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback invoked when the event is triggered. |
 
+<a id="on-1"></a>
 ## on('bufferingUpdate')
 
 ```TypeScript
@@ -114,8 +118,9 @@ Subscribes to the video buffering update event. This API works only under online
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'bufferingUpdate' | Yes | Event type, which is **'bufferingUpdate'** in this case. |
-| callback | (infoType: BufferingInfoType, value: number) => void | Yes | Callback invoked when the event is triggered.<br>The value of [BufferingInfoType](arkts-media-media-bufferinginfotype-e.md) is fixed at **0**. |
+| callback | (infoType: BufferingInfoType, value: number) =&gt; void | Yes | Callback invoked when the event is triggered.<br>The value of [BufferingInfoType](arkts-media-media-bufferinginfotype-e.md) is fixed at **0**. |
 
+<a id="on-2"></a>
 ## on('startRenderFrame')
 
 ```TypeScript
@@ -139,8 +144,9 @@ Subscribes to the frame rendering start event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'startRenderFrame' | Yes | Event type, which is **'startRenderFrame'** in this case. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | Callback invoked when the event is triggered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback invoked when the event is triggered. |
 
+<a id="on-3"></a>
 ## on('videoSizeChanged')
 
 ```TypeScript
@@ -164,8 +170,9 @@ Subscribes to the video width and height change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'videoSizeChanged' | Yes | Event type, which is **'videoSizeChanged'** in this case. |
-| callback | (width: number, height: number) => void | Yes | Callback invoked when the event is triggered. **width** indicates the video width,and **height** indicates the video height, in px. |
+| callback | (width: number, height: number) =&gt; void | Yes | Callback invoked when the event is triggered. **width** indicates the video width,and **height** indicates the video height, in px. |
 
+<a id="on-4"></a>
 ## on('audioInterrupt')
 
 ```TypeScript
@@ -189,8 +196,9 @@ Subscribes to the audio interruption event. For details, see [audio.InterruptEve
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'audioInterrupt' | Yes | Event type, which is **'audioInterrupt'** in this case. |
-| callback | (info: audio.InterruptEvent) => void | Yes | Callback invoked when the event is triggered. |
+| callback | (info: audio.InterruptEvent) =&gt; void | Yes | Callback invoked when the event is triggered. |
 
+<a id="on-5"></a>
 ## on('error')
 
 ```TypeScript
@@ -216,6 +224,7 @@ Subscribes to video playback error events. After an error event is reported, you
 | type | 'error' | Yes | Event type, which is **'error'** in this case.<br>This event is triggered when an error occurs during video playback. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback invoked when the event is triggered. |
 
+<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -228,7 +237,7 @@ Pauses video playback. This API uses an asynchronous callback to return the resu
 
 **Deprecated since:** 9
 
-**Substitutes:** pause(callback:
+**Substitutes:** [pause(callback:](arkts-media-media-avplayer-i.md#pause-1)
 
 <!--Device-VideoPlayer-pause(callback: AsyncCallback<void>): void--><!--Device-VideoPlayer-pause(callback: AsyncCallback<void>): void-End-->
 
@@ -238,8 +247,9 @@ Pauses video playback. This API uses an asynchronous callback to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
+<a id="pause-1"></a>
 ## pause
 
 ```TypeScript
@@ -252,7 +262,7 @@ Pauses video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [pause()](arkts-media-media-avplayer-i.md#pause-2)
+**Substitutes:** [pause()](arkts-media-media-avplayer-i.md#pause-1)
 
 <!--Device-VideoPlayer-pause(): Promise<void>--><!--Device-VideoPlayer-pause(): Promise<void>-End-->
 
@@ -262,8 +272,9 @@ Pauses video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="play"></a>
 ## play
 
 ```TypeScript
@@ -276,7 +287,7 @@ Starts video playback. This API uses an asynchronous callback to return the resu
 
 **Deprecated since:** 9
 
-**Substitutes:** play(callback:
+**Substitutes:** [play(callback:](arkts-media-media-avplayer-i.md#play-1)
 
 <!--Device-VideoPlayer-play(callback: AsyncCallback<void>): void--><!--Device-VideoPlayer-play(callback: AsyncCallback<void>): void-End-->
 
@@ -286,8 +297,9 @@ Starts video playback. This API uses an asynchronous callback to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
+<a id="play-1"></a>
 ## play
 
 ```TypeScript
@@ -300,7 +312,7 @@ Starts video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [play()](arkts-media-media-avplayer-i.md#play-2)
+**Substitutes:** [play()](arkts-media-media-avplayer-i.md#play-1)
 
 <!--Device-VideoPlayer-play(): Promise<void>--><!--Device-VideoPlayer-play(): Promise<void>-End-->
 
@@ -310,8 +322,9 @@ Starts video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="prepare"></a>
 ## prepare
 
 ```TypeScript
@@ -324,7 +337,7 @@ Prepares for video playback. This API uses an asynchronous callback to return th
 
 **Deprecated since:** 9
 
-**Substitutes:** prepare(callback:
+**Substitutes:** [prepare(callback:](arkts-media-media-avplayer-i.md#prepare-1)
 
 <!--Device-VideoPlayer-prepare(callback: AsyncCallback<void>): void--><!--Device-VideoPlayer-prepare(callback: AsyncCallback<void>): void-End-->
 
@@ -334,8 +347,9 @@ Prepares for video playback. This API uses an asynchronous callback to return th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
+<a id="prepare-1"></a>
 ## prepare
 
 ```TypeScript
@@ -348,7 +362,7 @@ Prepares for video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [prepare()](arkts-media-media-avplayer-i.md#prepare-2)
+**Substitutes:** [prepare()](arkts-media-media-avplayer-i.md#prepare-1)
 
 <!--Device-VideoPlayer-prepare(): Promise<void>--><!--Device-VideoPlayer-prepare(): Promise<void>-End-->
 
@@ -358,8 +372,9 @@ Prepares for video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -372,7 +387,7 @@ Releases the video playback resources. This API uses an asynchronous callback to
 
 **Deprecated since:** 9
 
-**Substitutes:** release(callback:
+**Substitutes:** [release(callback:](arkts-media-media-avplayer-i.md#release-1)
 
 <!--Device-VideoPlayer-release(callback: AsyncCallback<void>): void--><!--Device-VideoPlayer-release(callback: AsyncCallback<void>): void-End-->
 
@@ -382,8 +397,9 @@ Releases the video playback resources. This API uses an asynchronous callback to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -396,7 +412,7 @@ Releases the video playback resources. This API uses a promise to return the res
 
 **Deprecated since:** 9
 
-**Substitutes:** [release()](arkts-media-media-avplayer-i.md#release-2)
+**Substitutes:** [release()](arkts-media-media-avplayer-i.md#release-1)
 
 <!--Device-VideoPlayer-release(): Promise<void>--><!--Device-VideoPlayer-release(): Promise<void>-End-->
 
@@ -406,8 +422,9 @@ Releases the video playback resources. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -420,7 +437,7 @@ Resets video playback. This API uses an asynchronous callback to return the resu
 
 **Deprecated since:** 9
 
-**Substitutes:** reset(callback:
+**Substitutes:** [reset(callback:](arkts-media-media-avplayer-i.md#reset-1)
 
 <!--Device-VideoPlayer-reset(callback: AsyncCallback<void>): void--><!--Device-VideoPlayer-reset(callback: AsyncCallback<void>): void-End-->
 
@@ -430,8 +447,9 @@ Resets video playback. This API uses an asynchronous callback to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
+<a id="reset-1"></a>
 ## reset
 
 ```TypeScript
@@ -444,7 +462,7 @@ Resets video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [reset()](arkts-media-media-avplayer-i.md#reset-2)
+**Substitutes:** [reset()](arkts-media-media-avplayer-i.md#reset-1)
 
 <!--Device-VideoPlayer-reset(): Promise<void>--><!--Device-VideoPlayer-reset(): Promise<void>-End-->
 
@@ -454,8 +472,9 @@ Resets video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="seek"></a>
 ## seek
 
 ```TypeScript
@@ -479,8 +498,9 @@ Seeks to the specified playback position. The previous key frame at the specifie
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | timeMs | number | Yes | Position to seek to, in ms. The value range is [0, duration]. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the new playback position; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the new playback position; otherwise, **err** is an error object. |
 
+<a id="seek-1"></a>
 ## seek
 
 ```TypeScript
@@ -505,8 +525,9 @@ Seeks to the specified playback position. This API uses an asynchronous callback
 | --- | --- | --- | --- |
 | timeMs | number | Yes | Position to seek to, in ms. The value range is [0, duration]. |
 | mode | [SeekMode](arkts-media-media-seekmode-e.md) | Yes | Seek mode. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the new playback position; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the new playback position; otherwise, **err** is an error object. |
 
+<a id="seek-2"></a>
 ## seek
 
 ```TypeScript
@@ -536,8 +557,9 @@ Seeks to the specified playback position. If **mode** is not specified, the prev
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the playback position, in ms. |
+| Promise&lt;number&gt; | Promise used to return the playback position, in ms. |
 
+<a id="setdisplaysurface"></a>
 ## setDisplaySurface
 
 ```TypeScript
@@ -565,9 +587,10 @@ Sets a surface ID. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| surfaceId | string | Yes | Surface ID, which is obtained from the **XComponent**. For details about how to obtain it, see [XComponent](./@internal/component/ets/xcomponent). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the setting is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| surfaceId | string | Yes | Surface ID, which is obtained from the **XComponent**. For details about how to obtain it, see [XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponent-i). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the setting is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
+<a id="setdisplaysurface-1"></a>
 ## setDisplaySurface
 
 ```TypeScript
@@ -595,14 +618,15 @@ Sets a surface ID. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| surfaceId | string | Yes | Surface ID, which is obtained from the **XComponent**. For details about how to obtain it, see [XComponent](./@internal/component/ets/xcomponent). |
+| surfaceId | string | Yes | Surface ID, which is obtained from the **XComponent**. For details about how to obtain it, see [XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponent-i). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="setspeed"></a>
 ## setSpeed
 
 ```TypeScript
@@ -626,8 +650,9 @@ Sets the playback speed. This API uses an asynchronous callback to return the re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | speed | number | Yes | Video playback speed. For details, see [PlaybackSpeed](arkts-media-media-playbackspeed-e.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the playback speed; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the playback speed; otherwise, **err** is an error object. |
 
+<a id="setspeed-1"></a>
 ## setSpeed
 
 ```TypeScript
@@ -656,8 +681,9 @@ Sets the playback speed. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the playback speed. For details, see [PlaybackSpeed](arkts-media-media-playbackspeed-e.md). |
+| Promise&lt;number&gt; | Promise used to return the playback speed. For details, see [PlaybackSpeed](arkts-media-media-playbackspeed-e.md). |
 
+<a id="setvolume"></a>
 ## setVolume
 
 ```TypeScript
@@ -681,8 +707,9 @@ Sets the volume. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | vol | number | Yes | Relative volume. The value ranges from 0.00 to 1.00. The value **1.00** indicates the maximum volume (100%). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the setting is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the setting is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
+<a id="setvolume-1"></a>
 ## setVolume
 
 ```TypeScript
@@ -711,8 +738,9 @@ Sets the volume. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -725,7 +753,7 @@ Stops video playback. This API uses an asynchronous callback to return the resul
 
 **Deprecated since:** 9
 
-**Substitutes:** stop(callback:
+**Substitutes:** [stop(callback:](arkts-media-media-avplayer-i.md#stop-1)
 
 <!--Device-VideoPlayer-stop(callback: AsyncCallback<void>): void--><!--Device-VideoPlayer-stop(callback: AsyncCallback<void>): void-End-->
 
@@ -735,8 +763,9 @@ Stops video playback. This API uses an asynchronous callback to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
+<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -749,7 +778,7 @@ Stops video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [stop()](arkts-media-media-avplayer-i.md#stop-2)
+**Substitutes:** [stop()](arkts-media-media-avplayer-i.md#stop-1)
 
 <!--Device-VideoPlayer-stop(): Promise<void>--><!--Device-VideoPlayer-stop(): Promise<void>-End-->
 
@@ -759,7 +788,7 @@ Stops video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 ## audioInterruptMode
 
@@ -925,7 +954,7 @@ Video URL. The video formats MP4, MPEG-TS, and MKV are supported.
 
 1. FD: fd://xx
 
-![](../../../../reference/apis-media-kit/figures/en-us_image_url.png)
+![](docroot://reference/apis-media-kit/figures/en-us_image_url.png)
 
 2. HTTP: http://xx3. HTTPS: https://xx4. HLS: http://xx or https://xx5. File type: file://xx
 

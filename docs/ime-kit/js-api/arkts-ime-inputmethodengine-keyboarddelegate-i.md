@@ -14,6 +14,7 @@ In the following API examples, you must first use [getKeyboardDelegate](arkts-im
 import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
+<a id="off"></a>
 ## off('keyDown' | 'keyUp')
 
 ```TypeScript
@@ -33,7 +34,7 @@ Disables listening for a physical keyboard event. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyDown' \| 'keyUp' | Yes | Event type.<br>- The value **'keyDown'** indicates the keydown event.<br>- The value **'keyUp'** indicates the keyup event. |
-| callback | (event: KeyEvent) => boolean | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | (event: KeyEvent) =&gt; boolean | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -49,6 +50,7 @@ inputMethodEngine.getKeyboardDelegate().off('keyDown', (keyEvent: inputMethodEng
 
 ```
 
+<a id="off-1"></a>
 ## off('keyDown' | 'keyUp')
 
 ```TypeScript
@@ -68,7 +70,7 @@ Disables listening for a physical keyboard event. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyDown' \| 'keyUp' | Yes | Event type.<br>- The value **'keyDown'** indicates the keydown event.<br>- The value **'keyUp'** indicates the keyup event. |
-| callback | (event: KeyEvent) => boolean | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | (event: KeyEvent) =&gt; boolean | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -84,6 +86,7 @@ inputMethodEngine.getKeyboardDelegate().off('keyDown', (keyEvent: inputMethodEng
 
 ```
 
+<a id="off-2"></a>
 ## off('keyEvent')
 
 ```TypeScript
@@ -103,7 +106,7 @@ Disables listening for a keyboard event. This API uses an asynchronous callback 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyEvent' | Yes | Event type, which is **'keyEvent'**. |
-| callback | (event: InputKeyEvent) => boolean | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | (event: InputKeyEvent) =&gt; boolean | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -118,6 +121,7 @@ inputMethodEngine.getKeyboardDelegate().off('keyEvent');
 
 ```
 
+<a id="off-3"></a>
 ## off('cursorContextChange')
 
 ```TypeScript
@@ -137,7 +141,7 @@ Disables listening for cursor context changes. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cursorContextChange' | Yes | Event type, which is **'cursorContextChange'**. |
-| callback | (x: number, y: number, height: number) => void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | (x: number, y: number, height: number) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -148,6 +152,7 @@ inputMethodEngine.getKeyboardDelegate().off('cursorContextChange', (x: number, y
 
 ```
 
+<a id="off-4"></a>
 ## off('selectionChange')
 
 ```TypeScript
@@ -176,7 +181,7 @@ Disables listening for the text selection change event. This API uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selectionChange' | Yes | Event type, which is **'selectionChange'**. |
-| callback | (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) => void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -188,6 +193,7 @@ inputMethodEngine.getKeyboardDelegate()
 
 ```
 
+<a id="off-5"></a>
 ## off('textChange')
 
 ```TypeScript
@@ -207,7 +213,7 @@ Disables listening for the text change event. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'textChange' | Yes | Event type, which is **'textChange'**. |
-| callback | (text: string) => void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | (text: string) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 
@@ -218,6 +224,7 @@ inputMethodEngine.getKeyboardDelegate().off('textChange', (text: string) => {
 
 ```
 
+<a id="off-6"></a>
 ## off('editorAttributeChanged')
 
 ```TypeScript
@@ -237,7 +244,7 @@ Disables listening for the edit box attribute change event. This API uses an asy
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'editorAttributeChanged' | Yes | Event type, which is **'editorAttributeChanged'**. |
-| callback | (attr: EditorAttribute) => void | No | Callback used for unsubscription. If this parameter is not specified, this API unregisters all callbacks for the specified type by default. |
+| callback | (attr: EditorAttribute) =&gt; void | No | Callback used for unsubscription. If this parameter is not specified, this API unregisters all callbacks for the specified type by default. |
 
 **Example**
 
@@ -246,6 +253,7 @@ inputMethodEngine.getKeyboardDelegate().off('editorAttributeChanged');
 
 ```
 
+<a id="on"></a>
 ## on('keyDown' | 'keyUp')
 
 ```TypeScript
@@ -265,7 +273,7 @@ Enables listening for a physical keyboard event. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyDown' \| 'keyUp' | Yes | Event type.<br>- The value **'keyDown'** indicates the keydown event.<br>- The value **'keyUp'** indicates the keyup event. |
-| callback | (event: KeyEvent) => boolean | Yes | Callback used to return the key information. If the event is consumed by the event subscriber, **true** is returned. Otherwise, **false** is returned. |
+| callback | (event: KeyEvent) =&gt; boolean | Yes | Callback used to return the key information. If the event is consumed by the event subscriber, **true** is returned. Otherwise, **false** is returned. |
 
 **Example**
 
@@ -283,6 +291,7 @@ inputMethodEngine.getKeyboardDelegate().on('keyDown', (keyEvent: inputMethodEngi
 
 ```
 
+<a id="on-1"></a>
 ## on('keyDown' | 'keyUp')
 
 ```TypeScript
@@ -302,7 +311,7 @@ Enables listening for a physical keyboard event. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyDown' \| 'keyUp' | Yes | Event type.<br>- The value **'keyDown'** indicates the keydown event.<br>- The value **'keyUp'** indicates the keyup event. |
-| callback | (event: KeyEvent) => boolean | Yes | Callback used to return the key information. If the event is consumed by the event subscriber, **true** is returned. Otherwise, **false** is returned. |
+| callback | (event: KeyEvent) =&gt; boolean | Yes | Callback used to return the key information. If the event is consumed by the event subscriber, **true** is returned. Otherwise, **false** is returned. |
 
 **Example**
 
@@ -320,6 +329,7 @@ inputMethodEngine.getKeyboardDelegate().on('keyDown', (keyEvent: inputMethodEngi
 
 ```
 
+<a id="on-2"></a>
 ## on('keyEvent')
 
 ```TypeScript
@@ -339,7 +349,7 @@ Enables listening for a keyboard event. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyEvent' | Yes | Event type, which is **'keyEvent'**. |
-| callback | (event: InputKeyEvent) => boolean | Yes | Callback used to return the result. The input parameter is the key event information and the return value is of the Boolean type.<br>- Input parameter: [InputKeyEvent](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keyevent-keyevent-i.md).<br>- If the event is consumed by the event subscriber, **true** is returned. Otherwise, **false** is returned. |
+| callback | (event: InputKeyEvent) =&gt; boolean | Yes | Callback used to return the result. The input parameter is the key event information and the return value is of the Boolean type.<br>- Input parameter: [InputKeyEvent](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-keyevent-keyevent-i.md).<br>- If the event is consumed by the event subscriber, **true** is returned. Otherwise, **false** is returned. |
 
 **Example**
 
@@ -356,6 +366,7 @@ inputMethodEngine.getKeyboardDelegate().on('keyEvent', (keyEvent: KeyEvent) => {
 
 ```
 
+<a id="on-3"></a>
 ## on('cursorContextChange')
 
 ```TypeScript
@@ -375,7 +386,7 @@ Enables listening for the cursor change event. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cursorContextChange' | Yes | Event type, which is **'cursorContextChange'**. |
-| callback | (x: number, y: number, height: number) => void | Yes | Callback used to return the cursor information.<br>- **x**: x coordinate of the top of the cursor.<br>- **y**: y coordinate of the bottom of the cursor.<br>- **height**: height of the cursor. |
+| callback | (x: number, y: number, height: number) =&gt; void | Yes | Callback used to return the cursor information.<br>- **x**: x coordinate of the top of the cursor.<br>- **y**: y coordinate of the bottom of the cursor.<br>- **height**: height of the cursor. |
 
 **Example**
 
@@ -388,6 +399,7 @@ inputMethodEngine.getKeyboardDelegate().on('cursorContextChange', (x: number, y:
 
 ```
 
+<a id="on-4"></a>
 ## on('selectionChange')
 
 ```TypeScript
@@ -416,7 +428,7 @@ Enables listening for the text selection change event. This API uses an asynchro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selectionChange' | Yes | Event type, which is **'selectionChange'**. |
-| callback | (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) => void | Yes | Callback used to return the text selection information.<br>- **oldBegin**: start of the selected text before the change.<br>- **oldEnd**: end of the selected text before the change.<br>- **newBegin**: start of the selected text after the change.<br>- **newEnd**: end of the selected text after the change. |
+| callback | (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) =&gt; void | Yes | Callback used to return the text selection information.<br>- **oldBegin**: start of the selected text before the change.<br>- **oldEnd**: end of the selected text before the change.<br>- **newBegin**: start of the selected text after the change.<br>- **newEnd**: end of the selected text after the change. |
 
 **Example**
 
@@ -431,6 +443,7 @@ inputMethodEngine.getKeyboardDelegate()
 
 ```
 
+<a id="on-5"></a>
 ## on('textChange')
 
 ```TypeScript
@@ -450,7 +463,7 @@ Enables listening for the text change event. This API uses an asynchronous callb
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'textChange' | Yes | Event type, which is **'textChange'**. |
-| callback | (text: string) => void | Yes | Callback used to return the text content. |
+| callback | (text: string) =&gt; void | Yes | Callback used to return the text content. |
 
 **Example**
 
@@ -461,6 +474,7 @@ inputMethodEngine.getKeyboardDelegate().on('textChange', (text: string) => {
 
 ```
 
+<a id="on-6"></a>
 ## on('editorAttributeChanged')
 
 ```TypeScript
@@ -480,7 +494,7 @@ Enables listening for the edit box attribute change event. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'editorAttributeChanged' | Yes | Event type, which is **'editorAttributeChanged'**. |
-| callback | (attr: EditorAttribute) => void | Yes | Callback used to return the changed edit box attribute. |
+| callback | (attr: EditorAttribute) =&gt; void | Yes | Callback used to return the changed edit box attribute. |
 
 **Example**
 

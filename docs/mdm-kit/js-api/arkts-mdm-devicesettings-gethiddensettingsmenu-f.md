@@ -6,6 +6,7 @@
 import { deviceSettings } from '@kit.MDMKit';
 ```
 
+<a id="gethiddensettingsmenu"></a>
 ## getHiddenSettingsMenu
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the hidden setting item list of the current user.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<SettingsMenu> | Hidden setting item list. |
+| Array&lt;SettingsMenu&gt; | Hidden setting item list. |
 
 **Error codes:**
 

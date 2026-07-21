@@ -6,6 +6,7 @@
 import { screenLock } from '@kit.BasicServicesKit';
 ```
 
+<a id="unlock"></a>
 ## unlock
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unlock the screen.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of unlock. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of unlock. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ screenLock.unlock((err: BusinessError, data: Boolean) => {
 ```
 
 
+<a id="unlock-1"></a>
 ## unlock
 
 ```TypeScript
@@ -73,7 +75,7 @@ Unlock the screen.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 

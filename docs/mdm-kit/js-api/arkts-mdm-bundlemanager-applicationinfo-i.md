@@ -20,7 +20,7 @@ import { bundleManager } from '@kit.MDMKit';
 readonly accessTokenId: number
 ```
 
-Access token ID of the application, which is used in the [application access control verification API](../../../../reference/apis-ability-kit/js-apis-abilityAccessCtrl.md#checkaccesstoken9).
+Access token ID of the application, which is used in the [application access control verification API](docroot://reference/apis-ability-kit/js-apis-abilityAccessCtrl.md#checkaccesstoken9).
 
 **Type:** number
 
@@ -146,7 +146,7 @@ Whether the application is running in debug mode. **true** if in debug mode, **f
 readonly description: string
 ```
 
-Description of the application. It corresponds to the **description** field in [app.json5](../../../../quick-start/app-configuration-file.md). For details about **description**, see the **descriptionResource** field in this table.
+Description of the application. It corresponds to the **description** field in [app.json5](docroot://quick-start/app-configuration-file.md). For details about **description**, see the **descriptionResource** field in this table.
 
 **Type:** string
 
@@ -218,7 +218,7 @@ Whether the application is enabled. **true** if enabled, **false** otherwise.
 readonly icon: string
 ```
 
-Application icon. It corresponds to the **icon** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file. For details about **icon**, see the **iconResource** field in this table.
+Application icon. It corresponds to the **icon** field in the [app.json5](docroot://quick-start/app-configuration-file.md) file. For details about **icon**, see the **iconResource** field in this table.
 
 **Type:** string
 
@@ -368,7 +368,7 @@ Resource information of the application label, including the bundle name, module
 readonly name: string
 ```
 
-Name of the application bundle. It corresponds to the **bundleName** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Name of the application bundle. It corresponds to the **bundleName** field in the [app.json5](docroot://quick-start/app-configuration-file.md) file.
 
 **Type:** string
 

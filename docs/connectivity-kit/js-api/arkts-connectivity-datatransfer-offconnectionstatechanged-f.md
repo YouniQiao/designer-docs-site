@@ -6,6 +6,7 @@
 import { dataTransfer } from '@kit.ConnectivityKit';
 ```
 
+<a id="offconnectionstatechanged"></a>
 ## offConnectionStateChanged
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unsubscribes from the connection state change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<ConnectionResult> | No | Callback used to listen for the state change event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;ConnectionResult&gt; | No | Callback used to listen for the state change event. |
 
 **Error codes:**
 

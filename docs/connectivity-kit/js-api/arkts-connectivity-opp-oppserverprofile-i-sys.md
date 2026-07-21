@@ -14,6 +14,7 @@ Manager OPP server profile.
 import { opp } from '@kit.ConnectivityKit';
 ```
 
+<a id="canceltransfer"></a>
 ## cancelTransfer
 
 ```TypeScript
@@ -38,7 +39,7 @@ cancel the current file transfer action.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ try {
 
 ```
 
+<a id="getcurrenttransferinformation"></a>
 ## getCurrentTransferInformation
 
 ```TypeScript
@@ -96,7 +98,7 @@ Obtains the information about the file that is being transferred.On API 26.0.0 a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OppTransferInformation> | Returns the promise object. |
+| Promise&lt;OppTransferInformation&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -112,6 +114,7 @@ Obtains the information about the file that is being transferred.On API 26.0.0 a
 | 2900099 | Failed to obtain the current transmission information. |
 | 2903004 | Current Transfer Information is empty. |
 
+<a id="off"></a>
 ## off('transferStateChange')
 
 ```TypeScript
@@ -137,7 +140,7 @@ Unsubscribe the event reported when the file transfer status changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'transferStateChange' | Yes | Type of transport state change event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OppTransferInformation> | No | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OppTransferInformation&gt; | No | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -168,6 +171,7 @@ try {
 
 ```
 
+<a id="off-1"></a>
 ## off('receiveIncomingFile')
 
 ```TypeScript
@@ -193,7 +197,7 @@ Unsubscribe to the event of receiving a file transfer request.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'receiveIncomingFile' | Yes | Type of the event for receiving a file request to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OppTransferInformation> | No | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OppTransferInformation&gt; | No | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -223,6 +227,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('transferStateChange')
 
 ```TypeScript
@@ -250,7 +255,7 @@ Subscribe the event reported when the file transfer status changes.On API 26.0.0
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'transferStateChange' | Yes | Type of transport state change event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OppTransferInformation> | Yes | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OppTransferInformation&gt; | Yes | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -289,6 +294,7 @@ try {
 
 ```
 
+<a id="on-1"></a>
 ## on('receiveIncomingFile')
 
 ```TypeScript
@@ -316,7 +322,7 @@ Subscribe to the event of receiving a file transfer request.On API 26.0.0 and ab
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'receiveIncomingFile' | Yes | Type of the event for receiving a file request to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OppTransferInformation> | Yes | Callback used to listen for event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OppTransferInformation&gt; | Yes | Callback used to listen for event. |
 
 **Error codes:**
 
@@ -355,6 +361,7 @@ try {
 
 ```
 
+<a id="sendfile"></a>
 ## sendFile
 
 ```TypeScript
@@ -380,13 +387,13 @@ Send files to the remote device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID. For example, "11:22:33:AA:BB:FF". |
-| fileHolds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<FileHolder> | Yes | Indicates the information about files to be sent. |
+| fileHolds | Array&lt;FileHolder&gt; | Yes | Indicates the information about files to be sent. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -437,6 +444,7 @@ try {
 
 ```
 
+<a id="setincomingfileconfirmation"></a>
 ## setIncomingFileConfirmation
 
 ```TypeScript
@@ -468,7 +476,7 @@ Set the user confirmation information for incoming files.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 
@@ -510,6 +518,7 @@ try {
 
 ```
 
+<a id="setlastreceivedfileuri"></a>
 ## setLastReceivedFileUri
 
 ```TypeScript
@@ -540,7 +549,7 @@ Set the URI of the last received file.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

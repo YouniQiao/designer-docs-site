@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="isradioon"></a>
 ## isRadioOn
 
 ```TypeScript
@@ -27,7 +28,7 @@ Checks whether the radio service is enabled.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Returns {@code true} If the radio service is enabled.Returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Returns {@code true} If the radio service is enabled.Returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ radio.isRadioOn(slotId, (err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isradioon-1"></a>
 ## isRadioOn
 
 ```TypeScript
@@ -83,7 +85,7 @@ Checks whether the radio service is enabled.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} If the radio service is enabled; returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} If the radio service is enabled; returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -111,6 +113,7 @@ radio.isRadioOn(slotId).then((data: boolean) => {
 ```
 
 
+<a id="isradioon-2"></a>
 ## isRadioOn
 
 ```TypeScript
@@ -131,7 +134,7 @@ Checks whether the radio service is enabled.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Returns {@code true} If the radio service is enabled.Returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Returns {@code true} If the radio service is enabled.Returns {@code false} otherwise. |
 
 **Error codes:**
 

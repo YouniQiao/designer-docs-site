@@ -6,6 +6,7 @@
 import { formProvider } from '@kit.FormKit';
 ```
 
+<a id="openformmanagercrossbundle"></a>
 ## openFormManagerCrossBundle
 
 ```TypeScript

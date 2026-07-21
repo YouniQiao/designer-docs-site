@@ -16,6 +16,7 @@ Defines the lazy waterflow layout attribute.
 import { LazyVWaterFlowLayout, LazyWaterFlowLayoutAttribute, LazyVWaterFlowLayoutAttribute } from '@kit.ArkUI';
 ```
 
+<a id="columnsgap"></a>
 ## columnsGap
 
 ```TypeScript
@@ -38,7 +39,7 @@ The spacing between columns.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | LengthMetrics \| undefined | Yes | The spacing between columns.<br>Default value: LengthMetrics.vp(0) |
+| value | [LengthMetrics](arkts-arkui-lengthmetrics-t.md) \| undefined | Yes | The spacing between columns.<br>Default value: LengthMetrics.vp(0) |
 
 **Return value:**
 
@@ -46,6 +47,7 @@ The spacing between columns.
 | --- | --- |
 | T | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
 
+<a id="footer"></a>
 ## footer
 
 ```TypeScript
@@ -68,7 +70,7 @@ Sets the footer of the lazy waterflow layout.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| builder | CustomBuilder \| undefined | Yes | The footer builder function.<br>Passing undefined will remove the footer. |
+| builder | [CustomBuilder](../arkts-components/arkts-arkui-custombuilder-t.md) \| undefined | Yes | The footer builder function.<br>Passing undefined will remove the footer. |
 
 **Return value:**
 
@@ -76,6 +78,7 @@ Sets the footer of the lazy waterflow layout.
 | --- | --- |
 | T | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
 
+<a id="header"></a>
 ## header
 
 ```TypeScript
@@ -98,7 +101,7 @@ Sets the header of the lazy waterflow layout.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| builder | CustomBuilder \| undefined | Yes | The header builder function.<br>Passing undefined will remove the header. |
+| builder | [CustomBuilder](../arkts-components/arkts-arkui-custombuilder-t.md) \| undefined | Yes | The header builder function.<br>Passing undefined will remove the header. |
 
 **Return value:**
 
@@ -106,6 +109,7 @@ Sets the header of the lazy waterflow layout.
 | --- | --- |
 | T | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
 
+<a id="onvisibleindexeschange"></a>
 ## onVisibleIndexesChange
 
 ```TypeScript
@@ -128,7 +132,7 @@ Called when the first or last item displayed in the component changes.It is trig
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | OnVisibleIndexesChangeCallback \| undefined | Yes | callback function, triggered when the index of child components in the visible area changes.<br>Passing undefined will unregister the callback. |
+| callback | [OnVisibleIndexesChangeCallback](../arkts-components/arkts-arkui-onvisibleindexeschangecallback-t.md) \| undefined | Yes | callback function, triggered when the index of child components in the visible area changes.<br>Passing undefined will unregister the callback. |
 
 **Return value:**
 
@@ -136,6 +140,7 @@ Called when the first or last item displayed in the component changes.It is trig
 | --- | --- |
 | T | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
 
+<a id="rowsgap"></a>
 ## rowsGap
 
 ```TypeScript
@@ -158,7 +163,7 @@ The spacing between rows.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | LengthMetrics \| undefined | Yes | The spacing between rows.<br>Default value: LengthMetrics.vp(0) |
+| value | [LengthMetrics](arkts-arkui-lengthmetrics-t.md) \| undefined | Yes | The spacing between rows.<br>Default value: LengthMetrics.vp(0) |
 
 **Return value:**
 
@@ -166,6 +171,7 @@ The spacing between rows.
 | --- | --- |
 | T | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
 
+<a id="sticky"></a>
 ## sticky
 
 ```TypeScript
@@ -188,7 +194,7 @@ Sets the sticky style for header and footer.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sticky | StickyStyle \| undefined | Yes | The sticky style for header and footer. |
+| sticky | [StickyStyle](../arkts-components/arkts-arkui-stickystyle-e.md) \| undefined | Yes | The sticky style for header and footer. |
 
 **Return value:**
 

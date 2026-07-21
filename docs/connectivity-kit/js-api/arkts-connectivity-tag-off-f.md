@@ -6,6 +6,7 @@
 import { tag } from '@kit.ConnectivityKit';
 ```
 
+<a id="off"></a>
 ## off('readerMode')
 
 ```TypeScript
@@ -30,7 +31,7 @@ Disable foreground reader mode settings explicitly.
 | --- | --- | --- | --- |
 | type | 'readerMode' | Yes | The callback type to be unregistered. |
 | elementName | [ElementName](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-elementname-t.md) | Yes | The element name of application, must include the bundleName and abilityName. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<TagInfo> | No | The callback to dispatched the TagInfo object for application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;TagInfo&gt; | No | The callback to dispatched the TagInfo object for application. |
 
 **Error codes:**
 
@@ -43,6 +44,7 @@ Disable foreground reader mode settings explicitly.
 | [3100203](../errorcode-nfc.md#3100203-incorrect-api-call-sequence) | The off() API can be called only when the on() has been called. |
 
 
+<a id="off-1"></a>
 ## off('readerModeWithInterval')
 
 ```TypeScript
@@ -67,7 +69,7 @@ Disable foreground reader mode settings explicitly.
 | --- | --- | --- | --- |
 | type | 'readerModeWithInterval' | Yes | The callback type to be unregistered. |
 | elementName | [ElementName](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-elementname-t.md) | Yes | The element name of application, must include the bundleName and abilityName. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TagInfo> | No | The callback to dispatched the TagInfo object for application. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TagInfo&gt; | No | The callback to dispatched the TagInfo object for application. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="on"></a>
 ## on('colorChange')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Registers a listener for wallpaper color changes to receive notifications about 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'colorChange' | Yes | the incoming colorChange table open receiver pick a color change wallpaper wallpaper color changes. |
-| callback | (colors: Array<RgbaColor>, wallpaperType: WallpaperType) => void | Yes | provides dominant colors of the wallpaper. |
+| callback | (colors: Array&lt;RgbaColor&gt;, wallpaperType: WallpaperType) =&gt; void | Yes | provides dominant colors of the wallpaper. |
 
 **Example**
 

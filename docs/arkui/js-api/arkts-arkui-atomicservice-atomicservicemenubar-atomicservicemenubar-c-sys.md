@@ -16,6 +16,7 @@ Provide configuration capabilities for the menuBar of atomicservice
 import { AtomicServiceMenuBar } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -42,6 +43,7 @@ The constructor used to create a AtomicServiceMenuBar object.
 | --- | --- | --- | --- |
 | uiContext | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | The atomicservice context instance. |
 
+<a id="setvisible"></a>
 ## setVisible
 
 ```TypeScript

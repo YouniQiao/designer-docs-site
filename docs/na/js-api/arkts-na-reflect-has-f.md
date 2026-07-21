@@ -1,5 +1,6 @@
 # has
 
+<a id="has"></a>
 ## has
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { mediaquery } from '@kit.ArkUI';
 ```
 
+<a id="matchmediasync"></a>
 ## matchMediaSync
 
 ```TypeScript
@@ -17,13 +18,13 @@ Sets the media query condition. This API returns the corresponding media query l
 > **NOTE**  
 >  
 > - This API is supported since API version 7 and deprecated since API version 18. You are advised to use  
-> [matchMediaSync](@link @ohos.arkui.UIContext:MediaQuery#matchMediaSync) instead. Before calling this API, you  
-> need to obtain the [MediaQuery](@link @ohos.arkui.UIContext:MediaQuery) object using the  
-> [getMediaQuery](@link @ohos.arkui.UIContext:UIContext#getMediaQuery) method in  
-> [UIContext](@link @ohos.arkui.UIContext).  
+> [matchMediaSync](arkts-arkui-arkui-uicontext-mediaquery-c.md#matchmediasync-1) instead. Before calling this API, you  
+> need to obtain the [MediaQuery](arkts-arkui-arkui-uicontext-mediaquery-c.md) object using the  
+> [getMediaQuery](arkts-arkui-arkui-uicontext-uicontext-c.md#getmediaquery-1) method in  
+> [UIContext](arkts-arkui-uicontext.md).  
 >  
 > - Since API version 10, you can use the  
-> [getMediaQuery](@link @ohos.arkui.UIContext:UIContext#getMediaQuery) API in  
+> [getMediaQuery](arkts-arkui-arkui-uicontext-uicontext-c.md#getmediaquery-1) API in  
 > [UIContext](arkts-arkui-arkui-uicontext-uicontext-c.md) to obtain the  
 > [MediaQuery](arkts-arkui-arkui-uicontext-mediaquery-c.md) object associated with the current UI context.
 
@@ -45,7 +46,7 @@ Sets the media query condition. This API returns the corresponding media query l
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| condition | string | Yes | Media query condition. For details, see [Syntax](../../../../ui/arkts-layout-development-media-query.md#syntax). |
+| condition | string | Yes | Media query condition. For details, see [Syntax](docroot://ui/arkts-layout-development-media-query.md#syntax). |
 
 **Return value:**
 

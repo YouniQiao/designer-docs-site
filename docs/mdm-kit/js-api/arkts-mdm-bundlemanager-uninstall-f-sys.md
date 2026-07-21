@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.MDMKit';
 ```
 
+<a id="uninstall"></a>
 ## uninstall
 
 ```TypeScript
@@ -25,7 +26,7 @@ Uninstalls an application of the current user without retaining the bundle data.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** uninstall(admin:
+**Substitutes:** [uninstall(admin:](arkts-mdm-bundlemanager-uninstall-f.md#uninstall-5)
 
 **Required permissions:** ohos.permission.ENTERPRISE_INSTALL_BUNDLE
 
@@ -43,7 +44,7 @@ Uninstalls an application of the current user without retaining the bundle data.
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | bundleName | string | Yes | Name of the bundle to uninstall. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -78,6 +79,7 @@ bundleManager.uninstall(wantTemp, 'bundleName', (err) => {
 ```
 
 
+<a id="uninstall-1"></a>
 ## uninstall
 
 ```TypeScript
@@ -97,7 +99,7 @@ Uninstalls an application of the specified user without retaining the bundle dat
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** uninstall(admin:
+**Substitutes:** [uninstall(admin:](arkts-mdm-bundlemanager-uninstall-f.md#uninstall-5)
 
 **Required permissions:** ohos.permission.ENTERPRISE_INSTALL_BUNDLE
 
@@ -116,7 +118,7 @@ Uninstalls an application of the specified user without retaining the bundle dat
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | bundleName | string | Yes | Name of the bundle to uninstall. |
 | userId | number | Yes | User ID, which must be greater than or equal to 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -151,6 +153,7 @@ bundleManager.uninstall(wantTemp, 'bundleName', 100, (err) => {
 ```
 
 
+<a id="uninstall-2"></a>
 ## uninstall
 
 ```TypeScript
@@ -170,7 +173,7 @@ Uninstalls an application of the current user. The **isKeepData** parameter spec
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** uninstall(admin:
+**Substitutes:** [uninstall(admin:](arkts-mdm-bundlemanager-uninstall-f.md#uninstall-5)
 
 **Required permissions:** ohos.permission.ENTERPRISE_INSTALL_BUNDLE
 
@@ -189,7 +192,7 @@ Uninstalls an application of the current user. The **isKeepData** parameter spec
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | bundleName | string | Yes | Name of the bundle to uninstall. |
 | isKeepData | boolean | Yes | Whether to retain the bundle data. The value **true** means to retain the bundle data; the value **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -224,6 +227,7 @@ bundleManager.uninstall(wantTemp, 'bundleName', true, (err) => {
 ```
 
 
+<a id="uninstall-3"></a>
 ## uninstall
 
 ```TypeScript
@@ -243,7 +247,7 @@ Uninstalls an application of the specified user. The **isKeepData** parameter sp
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** uninstall(admin:
+**Substitutes:** [uninstall(admin:](arkts-mdm-bundlemanager-uninstall-f.md#uninstall-5)
 
 **Required permissions:** ohos.permission.ENTERPRISE_INSTALL_BUNDLE
 
@@ -263,7 +267,7 @@ Uninstalls an application of the specified user. The **isKeepData** parameter sp
 | bundleName | string | Yes | Name of the bundle to uninstall. |
 | userId | number | Yes | User ID, which must be greater than or equal to 0. |
 | isKeepData | boolean | Yes | Whether to retain the bundle data. The value **true** means to retain the bundle data; the value **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

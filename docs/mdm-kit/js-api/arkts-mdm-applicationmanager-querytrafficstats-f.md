@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="querytrafficstats"></a>
 ## queryTrafficStats
 
 ```TypeScript
@@ -49,14 +50,14 @@ Queries usage statistics of application traffic.
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | admin indicates the enterprise admin extension ability information. |
 | bundleName | string | Yes | bundleName indicates the bundle name of application to be queried. |
 | appIndex | number | Yes | appIndex indicates the index of the bundle.<br>The value must be an integer greater than or equal to 0. |
-| accountId | number | Yes | accountId indicates the local ID of the OS account.<br>The value must be an integer greater than or equal to 0.<br>You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2)of @ohos.account.osAccount to obtain the ID. |
+| accountId | number | Yes | accountId indicates the local ID of the OS account.<br>The value must be an integer greater than or equal to 0.<br>You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)of @ohos.account.osAccount to obtain the ID. |
 | networkInfo | statistics.NetworkInfo | Yes | networkInfo indicates the network information. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<statistics.NetStatsInfo> | returns the detailed network statistics information. |
+| Promise&lt;statistics.NetStatsInfo&gt; | returns the detailed network statistics information. |
 
 **Error codes:**
 

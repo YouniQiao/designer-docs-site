@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="off"></a>
 ## off('callDetailsChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Unsubscribe from the callDetailsChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callDetailsChange' | Yes | Event type. Indicates the callDetailsChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallAttributeOptions> | No | Indicates the callback to unsubscribe from the callDetailsChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallAttributeOptions&gt; | No | Indicates the callback to unsubscribe from the callDetailsChange event. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ call.off('callDetailsChange', (data: call.CallAttributeOptions) => {
 ```
 
 
+<a id="off-1"></a>
 ## off('callEventChange')
 
 ```TypeScript
@@ -76,7 +78,7 @@ Unsubscribe from the callEventChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callEventChange' | Yes | Event type. Indicates the callEventChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallEventOptions> | No | Indicates the callback to unsubscribe from the callEventChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallEventOptions&gt; | No | Indicates the callback to unsubscribe from the callEventChange event. |
 
 **Error codes:**
 
@@ -100,6 +102,7 @@ call.off('callEventChange', (data: call.CallEventOptions) => {
 ```
 
 
+<a id="off-2"></a>
 ## off('callDisconnectedCause')
 
 ```TypeScript
@@ -123,7 +126,7 @@ Unsubscribe from the callDisconnectedCause event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callDisconnectedCause' | Yes | Event type. Indicates the callDisconnectedCause event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DisconnectedDetails> | No | Indicates the callback used to cancel the registration monitoring for obtaining the call end reason. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DisconnectedDetails&gt; | No | Indicates the callback used to cancel the registration monitoring for obtaining the call end reason. |
 
 **Error codes:**
 
@@ -147,6 +150,7 @@ call.off('callDisconnectedCause', (data: call.DisconnectedDetails) => {
 ```
 
 
+<a id="off-3"></a>
 ## off('mmiCodeResult')
 
 ```TypeScript
@@ -170,7 +174,7 @@ Unsubscribe from the mmiCodeResult event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'mmiCodeResult' | Yes | Event type. Indicates the mmiCodeResult event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MmiCodeResults> | No | Indicates the callback used to cancel getting mmicode registered listening. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MmiCodeResults&gt; | No | Indicates the callback used to cancel getting mmicode registered listening. |
 
 **Error codes:**
 
@@ -194,6 +198,7 @@ call.off('mmiCodeResult', (data: call.MmiCodeResults) => {
 ```
 
 
+<a id="off-4"></a>
 ## off('audioDeviceChange')
 
 ```TypeScript
@@ -217,7 +222,7 @@ Unsubscribe from the audioDeviceChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'audioDeviceChange' | Yes | Event type. Indicates the audioDeviceChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioDeviceCallbackInfo> | No | Indicates the callback for getting the result of Current AudioDevice. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioDeviceCallbackInfo&gt; | No | Indicates the callback for getting the result of Current AudioDevice. |
 
 **Error codes:**
 
@@ -241,6 +246,7 @@ call.off('audioDeviceChange', (data: call.AudioDeviceCallbackInfo) => {
 ```
 
 
+<a id="off-5"></a>
 ## off('postDialDelay')
 
 ```TypeScript
@@ -264,7 +270,7 @@ Unsubscribe from the postDialDelay event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'postDialDelay' | Yes | Event type. Indicates the postDialDelay event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Indicates the callback for getting the result of post-dial string. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Indicates the callback for getting the result of post-dial string. |
 
 **Error codes:**
 
@@ -288,6 +294,7 @@ call.off('postDialDelay', (data: string) => {
 ```
 
 
+<a id="off-6"></a>
 ## off('imsCallModeChange')
 
 ```TypeScript
@@ -311,7 +318,7 @@ Unsubscribe from the imsCallModeChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'imsCallModeChange' | Yes | Event type. Indicates the imsCallModeChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ImsCallModeInfo> | No | Indicates the callback to unsubscribe from the imsCallModeChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ImsCallModeInfo&gt; | No | Indicates the callback to unsubscribe from the imsCallModeChange event. |
 
 **Error codes:**
 
@@ -337,6 +344,7 @@ call.off('imsCallModeChange', (data: call.ImsCallModeInfo) => {
 ```
 
 
+<a id="off-7"></a>
 ## off('callSessionEvent')
 
 ```TypeScript
@@ -360,7 +368,7 @@ Unsubscribe from the callSessionEvent.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callSessionEvent' | Yes | Event type. Indicates the callSessionEventChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallSessionEvent> | No | Indicates the callback to unsubscribe from the CallSessionEvent event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallSessionEvent&gt; | No | Indicates the callback to unsubscribe from the CallSessionEvent event. |
 
 **Error codes:**
 
@@ -386,6 +394,7 @@ call.off('callSessionEvent', (data: call.CallSessionEvent) => {
 ```
 
 
+<a id="off-8"></a>
 ## off('peerDimensionsChange')
 
 ```TypeScript
@@ -409,7 +418,7 @@ Unsubscribe from the peerDimensionsChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'peerDimensionsChange' | Yes | Event type. Indicates the peerDimensionsChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PeerDimensionsDetail> | No | Indicates the callback to unsubscribe from peerDimensionsChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PeerDimensionsDetail&gt; | No | Indicates the callback to unsubscribe from peerDimensionsChange event. |
 
 **Error codes:**
 
@@ -435,6 +444,7 @@ call.off('peerDimensionsChange', (data: call.PeerDimensionsDetail) => {
 ```
 
 
+<a id="off-9"></a>
 ## off('cameraCapabilitiesChange')
 
 ```TypeScript
@@ -458,7 +468,7 @@ Unsubscribe from the cameraCapabilitiesChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cameraCapabilitiesChange' | Yes | Event type. Indicates the cameraCapabilitiesChange event to unsubscribe from. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CameraCapabilities> | No | Indicates the callback to unsubscribe from cameraCapabilitiesChange event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CameraCapabilities&gt; | No | Indicates the callback to unsubscribe from cameraCapabilitiesChange event. |
 
 **Error codes:**
 

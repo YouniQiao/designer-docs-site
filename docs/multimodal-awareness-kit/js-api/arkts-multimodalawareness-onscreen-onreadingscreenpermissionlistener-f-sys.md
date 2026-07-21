@@ -6,6 +6,7 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="onreadingscreenpermissionlistener"></a>
 ## onReadingScreenPermissionListener
 
 ```TypeScript
@@ -30,7 +31,7 @@ Enables the screen content access permission monitoring and returns the permissi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ReadingScreenPermissionStatus> | Yes | Callback used to return the status of the permission<br> for reading screen information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ReadingScreenPermissionStatus&gt; | Yes | Callback used to return the status of the permission<br> for reading screen information. |
 
 **Error codes:**
 

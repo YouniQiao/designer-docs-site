@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getaddressesbyname"></a>
 ## getAddressesByName
 
 ```TypeScript
@@ -27,7 +28,7 @@ Resolves the host name to obtain all IP addresses based on the default data netw
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | host | string | Yes | Indicates the host name or the domain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<NetAddress>> | Yes | Returns the NetAddress list. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;NetAddress&gt;&gt; | Yes | Returns the NetAddress list. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ connection.getAddressesByName("xxxx", (error: BusinessError, data: connection.Ne
 ```
 
 
+<a id="getaddressesbyname-1"></a>
 ## getAddressesByName
 
 ```TypeScript
@@ -82,7 +84,7 @@ Resolves the host name to obtain all IP addresses based on the default data netw
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NetAddress>> | The promise returned by the function. |
+| Promise&lt;Array&lt;NetAddress&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

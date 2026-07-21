@@ -14,6 +14,7 @@ Provides recording strategy management, including collaborative recording and re
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="enablesystemrecordcontroller"></a>
 ## enableSystemRecordController
 
 ```TypeScript
@@ -41,7 +42,7 @@ Enables or disables the system recording controller panel.The application can ca
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

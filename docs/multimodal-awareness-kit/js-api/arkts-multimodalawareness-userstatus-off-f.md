@@ -6,6 +6,7 @@
 import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="off"></a>
 ## off('userAgeGroupDetected')
 
 ```TypeScript
@@ -32,7 +33,7 @@ Disables the age group detection function.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'userAgeGroupDetected' | Yes | Event type. The value **userAgeGroupDetected** indicates the event of enabling age group detection. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<UserClassification> | No | Callback used to return the detection result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;UserClassification&gt; | No | Callback used to return the detection result. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { configPolicy } from '@kit.BasicServicesKit';
 ```
 
+<a id="getcfgfiles"></a>
 ## getCfgFiles
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains a list of all files with the specified names, in ascending order of prio
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | relPath | string | Yes | Name of the configuration file. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the result. If the file list is successfully obtained, **err** is **undefined**, and **data** is the obtained file list. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the result. If the file list is successfully obtained, **err** is **undefined**, and **data** is the obtained file list. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -36,6 +37,7 @@ Obtains a list of all files with the specified names, in ascending order of prio
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 
 
+<a id="getcfgfiles-1"></a>
 ## getCfgFiles
 
 ```TypeScript
@@ -58,7 +60,7 @@ Obtains a list of all files of a specified file name based on the provided follo
 | --- | --- | --- | --- |
 | relPath | string | Yes | Name of the configuration file. |
 | followMode | [FollowXMode](arkts-basicservices-configpolicy-followxmode-e-sys.md) | Yes | Follow mode. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the result. If the file list is successfully obtained, **err** is **undefined**, and **data** is the obtained file list. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the result. If the file list is successfully obtained, **err** is **undefined**, and **data** is the obtained file list. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -67,6 +69,7 @@ Obtains a list of all files of a specified file name based on the provided follo
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 
 
+<a id="getcfgfiles-2"></a>
 ## getCfgFiles
 
 ```TypeScript
@@ -90,7 +93,7 @@ Obtains a list of all files of a specified file name based on the provided follo
 | relPath | string | Yes | Name of the configuration file. |
 | followMode | [FollowXMode](arkts-basicservices-configpolicy-followxmode-e-sys.md) | Yes | Follow mode. |
 | extra | string | Yes | Custom follow rule. This parameter is valid only when **followMode** is set to [USER_DEFINED](arkts-basicservices-configpolicy-followxmode-e-sys.md#user_defined). |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the result. If the file list is successfully obtained, **err** is **undefined**, and **data** is the obtained file list. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the result. If the file list is successfully obtained, **err** is **undefined**, and **data** is the obtained file list. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -99,6 +102,7 @@ Obtains a list of all files of a specified file name based on the provided follo
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 
 
+<a id="getcfgfiles-3"></a>
 ## getCfgFiles
 
 ```TypeScript
@@ -125,7 +129,7 @@ Obtains a list of all files with the specified names, in ascending order of prio
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the file list. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the file list. |
 
 **Error codes:**
 
@@ -134,6 +138,7 @@ Obtains a list of all files with the specified names, in ascending order of prio
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 
 
+<a id="getcfgfiles-4"></a>
 ## getCfgFiles
 
 ```TypeScript
@@ -162,7 +167,7 @@ Obtains a list of all files of a specified file name based on the provided follo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the file list. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the file list. |
 
 **Error codes:**
 

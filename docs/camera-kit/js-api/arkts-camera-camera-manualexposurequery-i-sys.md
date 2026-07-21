@@ -16,6 +16,7 @@ Provides APIs to obtain the manual exposure range supported.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getsupportedexposurerange"></a>
 ## getSupportedExposureRange
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the supported manual exposure durations.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array of manual exposure durations supported, in ms. |
+| Array&lt;number&gt; | Array of manual exposure durations supported, in ms. |
 
 **Error codes:**
 

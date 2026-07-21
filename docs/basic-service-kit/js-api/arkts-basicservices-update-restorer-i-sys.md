@@ -28,6 +28,7 @@ This method quickly clears errors, releases storage space, and protects private 
 import { update } from '@kit.BasicServicesKit';
 ```
 
+<a id="deepfactoryreset"></a>
 ## deepFactoryReset
 
 ```TypeScript
@@ -76,7 +77,7 @@ This method provides data clearance of the highest security level. Unlike **fact
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
+| Promise&lt;void&gt; | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
 
 **Error codes:**
 
@@ -111,6 +112,7 @@ try {
 
 ```
 
+<a id="factoryreset"></a>
 ## factoryReset
 
 ```TypeScript
@@ -146,7 +148,7 @@ The process is as follows: Verify the permission to call APIs. Clear data in the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to receive the factory reset result. The callback parameter is **err**. If the operation is successful, **err** is **null**; if the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to receive the factory reset result. The callback parameter is **err**. If the operation is successful, **err** is **null**; if the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -180,6 +182,7 @@ try {
 
 ```
 
+<a id="factoryreset-1"></a>
 ## factoryReset
 
 ```TypeScript
@@ -215,7 +218,7 @@ The process is as follows: Verify the permission to call APIs. Clear data in the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
+| Promise&lt;void&gt; | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
 
 **Error codes:**
 
@@ -246,6 +249,7 @@ try {
 
 ```
 
+<a id="forcefactoryreset"></a>
 ## forceFactoryReset
 
 ```TypeScript
@@ -283,7 +287,7 @@ The difference between this method and **factoryReset** is that this method clea
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
+| Promise&lt;void&gt; | Promise used to return the result. If the operation is successful, **resolve** returns no value. If the operation fails, the return value of **reject** is an error message. |
 
 **Error codes:**
 
@@ -313,6 +317,7 @@ try {
 
 ```
 
+<a id="getdeepfactoryresetinfo"></a>
 ## getDeepFactoryResetInfo
 
 ```TypeScript
@@ -357,7 +362,7 @@ This method calculates the time required by analyzing the data clearance scope a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FactoryResetInfo> | Promise used to return the result. If the operation is successful, the return value of **resolve** is a **FactoryResetInfo** object, including the estimated time required for reset. If the operation fails, the return value of **reject** is an error message. |
+| Promise&lt;FactoryResetInfo&gt; | Promise used to return the result. If the operation is successful, the return value of **resolve** is a **FactoryResetInfo** object, including the estimated time required for reset. If the operation fails, the return value of **reject** is an error message. |
 
 **Error codes:**
 

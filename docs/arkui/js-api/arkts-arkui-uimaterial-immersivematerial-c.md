@@ -2,7 +2,7 @@
 
 Immersive material class, which inherits from [Material](arkts-arkui-uimaterial-materialtype-e-sys.md).
 
-The performance of an immersive material varies based on device computing power. The high, medium, and low levels of device computing power are determined by device vendors and defined in the system configuration files. On devices with high- and mid-level computing power, the filter and [shadow](../arkts-components/arkts-arkui-common-commonmethod-c.md#shadow-1) effects of the material layer are affected.On devices with low-level computing power, the [background color](../arkts-components/arkts-arkui-common-commonmethod-c.md#backgroundcolor-1),[border color](../arkts-components/arkts-arkui-common-commonmethod-c.md#bordercolor-1), [border width](../arkts-components/arkts-arkui-common-commonmethod-c.md#borderwidth-1), and [shadow](../arkts-components/arkts-arkui-common-commonmethod-c.md#shadow-1) effects are affected. In addition, the effect of the same material is affected by the immersive light configuration in the application. The material parameters and effects vary depending on the immersive light configuration.
+The performance of an immersive material varies based on device computing power. The high, medium, and low levels of device computing power are determined by device vendors and defined in the system configuration files. On devices with high- and mid-level computing power, the filter and [shadow](../arkts-components/arkts-arkui-commonmethod-c.md#shadow-1) effects of the material layer are affected.On devices with low-level computing power, the [background color](../arkts-components/arkts-arkui-commonmethod-c.md#backgroundcolor-1),[border color](../arkts-components/arkts-arkui-commonmethod-c.md#bordercolor-1), [border width](../arkts-components/arkts-arkui-commonmethod-c.md#borderwidth-1), and [shadow](../arkts-components/arkts-arkui-commonmethod-c.md#shadow-1) effects are affected. In addition, the effect of the same material is affected by the immersive light configuration in the application. The material parameters and effects vary depending on the immersive light configuration.
 
 **Inheritance/Implementation:** ImmersiveMaterial extends [Material](arkts-arkui-uimaterial-material-c-sys.md)
 
@@ -18,6 +18,7 @@ The performance of an immersive material varies based on device computing power.
 import { uiMaterial } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="resetpolicies"></a>
 ## resetPolicies
 
 ```TypeScript
@@ -29,7 +30,7 @@ Reset network policies\rules\quota policies\firewall rules.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | simId | string | Yes | Specify the matched simId of quota policy. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of resetPolicies. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of resetPolicies. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ policy.resetPolicies('1', (error: BusinessError) => {
 ```
 
 
+<a id="resetpolicies-1"></a>
 ## resetPolicies
 
 ```TypeScript
@@ -82,7 +84,7 @@ Reset network policies\rules\quota policies\firewall rules.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

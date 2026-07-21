@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="getkeyitemproperties"></a>
 ## getKeyItemProperties
 
 ```TypeScript
@@ -47,7 +48,7 @@ Obtains key properties. This API uses an asynchronous callback to return the res
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Key alias, which must be the same as the alias used when the key was generated. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Empty object (leave this parameter empty). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HuksReturnResult> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the obtained **HuksReturnResult**. Otherwise, **err** is an error object. **properties** of **HuksReturnResult** are the parameters required for generating a key. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HuksReturnResult&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the obtained **HuksReturnResult**. Otherwise, **err** is an error object. **properties** of **HuksReturnResult** are the parameters required for generating a key. |
 
 **Error codes:**
 
@@ -90,6 +91,7 @@ huks.getKeyItemProperties(keyAlias, emptyOptions, (error, data) => {
 ```
 
 
+<a id="getkeyitemproperties-1"></a>
 ## getKeyItemProperties
 
 ```TypeScript
@@ -122,7 +124,7 @@ Obtains key properties. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | Promise that returns the operation result. If the operation is successful,**properties** of **HuksReturnResult** is the obtained key property information. |
+| Promise&lt;HuksReturnResult&gt; | Promise that returns the operation result. If the operation is successful,**properties** of **HuksReturnResult** is the obtained key property information. |
 
 **Error codes:**
 

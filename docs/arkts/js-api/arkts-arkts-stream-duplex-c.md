@@ -16,6 +16,7 @@ A stream that is both readable and writable. A duplex stream allows data to be t
 import { stream } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -39,6 +40,7 @@ let duplex = new stream.Duplex();
 
 ```
 
+<a id="cork"></a>
 ## cork
 
 ```TypeScript
@@ -70,6 +72,7 @@ console.info("duplexStream cork result", result); // duplexStream cork result tr
 
 ```
 
+<a id="dowrite"></a>
 ## doWrite
 
 ```TypeScript
@@ -92,7 +95,7 @@ A data write API. You need to implement this API but do not call it directly. Th
 | --- | --- | --- | --- |
 | chunk | string \| Uint8Array | Yes | Data to write. |
 | encoding | string | Yes | Encoding format. Currently, **'utf8'**, **'gb18030'**, **'gbk'**, and **'gb2312'** are supported. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Callback function. |
+| callback | Function | Yes | Callback function. |
 
 **Example**
 
@@ -116,6 +119,7 @@ duplexStream.write('data', 'utf8');
 
 ```
 
+<a id="dowritev"></a>
 ## doWritev
 
 ```TypeScript
@@ -137,7 +141,7 @@ A batch data write API. You need to implement this API but do not call it direct
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | chunks | string[] \| Uint8Array[] | Yes | Data arrays to write in batches. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Callback function. |
+| callback | Function | Yes | Callback function. |
 
 **Example**
 
@@ -169,6 +173,7 @@ duplexStream.end();
 
 ```
 
+<a id="end"></a>
 ## end
 
 ```TypeScript
@@ -191,7 +196,7 @@ Ends the writing process in a duplex stream. If the value of **writableCorked** 
 | --- | --- | --- | --- |
 | chunk | string \| Uint8Array | No | Data to write. The default value is **undefined**. |
 | encoding | string | No | Encoding format. The default value is **'utf8'**. Currently, **'utf8'**,**'gb18030'**, **'gbk'**, and **'gb2312'** are supported. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | No | Callback used to return the result. It is not called by default. |
+| callback | Function | No | Callback used to return the result. It is not called by default. |
 
 **Return value:**
 
@@ -229,6 +234,7 @@ duplexStream.end('test', 'utf8', () => {
 
 ```
 
+<a id="setdefaultencoding"></a>
 ## setDefaultEncoding
 
 ```TypeScript
@@ -279,6 +285,7 @@ console.info("duplexStream is result", result); // duplexStream is result true
 
 ```
 
+<a id="uncork"></a>
 ## uncork
 
 ```TypeScript
@@ -328,6 +335,7 @@ console.info("Duplex test uncork", dataWritten); // Duplex test uncork ab
 
 ```
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -350,7 +358,7 @@ Writes data to the buffer of the stream. This API uses an asynchronous callback 
 | --- | --- | --- | --- |
 | chunk | string \| Uint8Array | No | Data to write. It cannot be **null**, **undefined**, or an empty string. |
 | encoding | string | No | Encoding format. The default value is **'utf8'**. Currently, **'utf8'**,**'gb18030'**, **'gbk'**, and **'gb2312'** are supported. |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | No | Callback used to return the result. It is not called by default. |
+| callback | Function | No | Callback used to return the result. It is not called by default. |
 
 **Return value:**
 

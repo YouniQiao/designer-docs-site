@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="getpostprocessingtrack"></a>
 ## getPostProcessingTrack
 
 ```TypeScript
@@ -40,7 +41,7 @@ Returns data within 24 hours since tracking started; Subsequent calls return onl
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Location>> | Promise used to return `Array&lt;Location&gt;`. |
+| Promise&lt;Array&lt;Location&gt;&gt; | Promise used to return `Array<Location>`. |
 
 **Error codes:**
 

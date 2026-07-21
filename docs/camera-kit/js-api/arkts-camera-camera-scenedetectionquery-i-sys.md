@@ -16,6 +16,7 @@ Provides the scene detection and query capabilities.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="isscenefeaturesupported"></a>
 ## isSceneFeatureSupported
 
 ```TypeScript

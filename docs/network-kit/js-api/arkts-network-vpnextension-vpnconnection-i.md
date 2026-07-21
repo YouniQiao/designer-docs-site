@@ -14,6 +14,7 @@ Defines a VPN connection.
 import { vpnExtension } from '@kit.NetworkKit';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -38,7 +39,7 @@ Create a VPN network using the VpnConfig.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returns file descriptor of VPN interface. |
+| Promise&lt;number&gt; | The promise returns file descriptor of VPN interface. |
 
 **Error codes:**
 
@@ -131,6 +132,7 @@ export default class MyVpnExtAbility extends VpnExtensionAbility {
 
 ```
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -149,7 +151,7 @@ Destroy the VPN network.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -181,6 +183,7 @@ export default class MyVpnExtAbility extends VpnExtensionAbility {
 
 ```
 
+<a id="destroy-1"></a>
 ## destroy
 
 ```TypeScript
@@ -205,7 +208,7 @@ Destroy the VPN network.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -236,6 +239,7 @@ export default class MyVpnExtAbility extends VpnExtensionAbility {
 
 ```
 
+<a id="generatevpnid"></a>
 ## generateVpnId
 
 ```TypeScript
@@ -254,7 +258,7 @@ generate vpn id.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | The promise returns vpn id. |
+| Promise&lt;string&gt; | The promise returns vpn id. |
 
 **Error codes:**
 
@@ -284,6 +288,7 @@ export default class MyVpnExtAbility extends VpnExtensionAbility {
 
 ```
 
+<a id="protect"></a>
 ## protect
 
 ```TypeScript
@@ -308,7 +313,7 @@ Protect a socket from VPN connections. After protecting, data sent through this 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -353,6 +358,7 @@ export default class MyVpnExtAbility extends VpnExtensionAbility {
 
 ```
 
+<a id="protectprocessnet"></a>
 ## protectProcessNet
 
 ```TypeScript
@@ -371,7 +377,7 @@ Protect all socket of the VPN process. After executing this function,all sockets
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Example**
 

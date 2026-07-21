@@ -16,6 +16,7 @@ WhiteBalanceQuery provides APIs to check whether a white balance mode is support
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getcolortintrange"></a>
 ## getColorTintRange
 
 ```TypeScript
@@ -38,7 +39,7 @@ Query the color tint range.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | The array of color tint range. |
+| Array&lt;number&gt; | The array of color tint range. |
 
 **Error codes:**
 

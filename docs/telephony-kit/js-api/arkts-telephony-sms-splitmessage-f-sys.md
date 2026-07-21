@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="splitmessage"></a>
 ## splitMessage
 
 ```TypeScript
@@ -31,7 +32,7 @@ Splits a long SMS message into multiple fragments.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | content | string | Yes | Indicates the short message content, which cannot be {@code null}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Indicates the callback for getting a list of split segments,which can be combined into a complete SMS message;Returns an empty string if no permission is granted or the short message content is {@code null}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Indicates the callback for getting a list of split segments,which can be combined into a complete SMS message;Returns an empty string if no permission is granted or the short message content is {@code null}. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ sms.splitMessage(content, (err: BusinessError, data: string[]) => {
 ```
 
 
+<a id="splitmessage-1"></a>
 ## splitMessage
 
 ```TypeScript
@@ -89,7 +91,7 @@ Splits a long SMS message into multiple fragments.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Returns a list of split segments, which can be combined into a complete SMS message; Returns an empty string if no permission is granted or the short message content is {@code null}. |
+| Promise&lt;Array&lt;string&gt;&gt; | Returns a list of split segments, which can be combined into a complete SMS message; Returns an empty string if no permission is granted or the short message content is {@code null}. |
 
 **Error codes:**
 

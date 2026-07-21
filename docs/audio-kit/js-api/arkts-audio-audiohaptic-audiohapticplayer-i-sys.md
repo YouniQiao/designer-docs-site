@@ -14,6 +14,7 @@ Implements audio-haptic playback. Before calling any API in AudioHapticPlayer, y
 import { audioHaptic } from '@kit.AudioKit';
 ```
 
+<a id="enablehapticsinsilentmode"></a>
 ## enableHapticsInSilentMode
 
 ```TypeScript
@@ -43,6 +44,7 @@ Enable haptics when the ringer mode is silent mode.This function should be calle
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 | [5400102](../../apis-media-kit/errorcode-media.md#5400102-unsupported-operation) | Operate not permit in current state. |
 
+<a id="ishapticsintensityadjustmentsupported"></a>
 ## isHapticsIntensityAdjustmentSupported
 
 ```TypeScript
@@ -71,6 +73,7 @@ Check whether the device supports haptics intensity adjustment.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 
+<a id="ishapticsrampsupported"></a>
 ## isHapticsRampSupported
 
 ```TypeScript
@@ -99,6 +102,7 @@ Check whether the device supports haptics intensity ramp effect.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 
+<a id="sethapticsintensity"></a>
 ## setHapticsIntensity
 
 ```TypeScript
@@ -125,7 +129,7 @@ Set haptics intensity for this player. This method uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -136,6 +140,7 @@ Set haptics intensity for this player. This method uses a promise to return the 
 | [5400102](../../apis-media-kit/errorcode-media.md#5400102-unsupported-operation) | Operate not permit in current state. |
 | [5400108](../../apis-media-kit/errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter out of range. |
 
+<a id="sethapticsramp"></a>
 ## setHapticsRamp
 
 ```TypeScript
@@ -164,7 +169,7 @@ Set haptics intensity ramp effect for this player. This method uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

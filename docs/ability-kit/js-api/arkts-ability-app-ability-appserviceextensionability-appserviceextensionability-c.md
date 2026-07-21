@@ -16,6 +16,7 @@ The AppServiceExtensionAbility module provides extended capabilities for backgro
 import { AppServiceExtensionAbility } from '@kit.AbilityKit';
 ```
 
+<a id="onconnect"></a>
 ## onConnect
 
 ```TypeScript
@@ -71,6 +72,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 
 ```
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -114,6 +116,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 
 ```
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -146,6 +149,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 
 ```
 
+<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript
@@ -184,6 +188,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 
 ```
 
+<a id="onrequest"></a>
 ## onRequest
 
 ```TypeScript

@@ -1,6 +1,6 @@
 # IntentResult
 
-Defines the return result of intent execution. The [generic type](../../../../quick-start/introduction-to-arkts.md#generic-class-and-interface) is supported.
+Defines the return result of intent execution. The [generic type](docroot://quick-start/introduction-to-arkts.md#generic-class-and-interface) is supported.
 
 **Since:** 20
 

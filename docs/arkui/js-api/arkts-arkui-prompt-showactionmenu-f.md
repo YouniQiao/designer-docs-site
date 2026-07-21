@@ -6,6 +6,7 @@
 import { prompt } from '@kit.ArkUI';
 ```
 
+<a id="showactionmenu"></a>
 ## showActionMenu
 
 ```TypeScript
@@ -29,7 +30,7 @@ Displays the menu.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [ActionMenuOptions](arkts-arkui-prompt-actionmenuoptions-i.md) | Yes | Options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ActionMenuSuccessResponse> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ActionMenuSuccessResponse&gt; | Yes |  |
 
 **Example**
 
@@ -58,6 +59,7 @@ prompt.showActionMenu({
 ```
 
 
+<a id="showactionmenu-1"></a>
 ## showActionMenu
 
 ```TypeScript
@@ -86,7 +88,7 @@ Displays the menu.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ActionMenuSuccessResponse> | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel |
+| Promise&lt;ActionMenuSuccessResponse&gt; | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel |
 
 **Example**
 

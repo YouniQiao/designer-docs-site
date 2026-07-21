@@ -6,6 +6,7 @@
 import { logLibrary } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="copy"></a>
 ## copy
 
 ```TypeScript
@@ -36,7 +37,7 @@ Copies log files of the specified type to the target application directory. This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. Depending on whether the operation is successful, you can use the **then()** or **catch()** method to process the callback. |
+| Promise&lt;void&gt; | Promise used to return the result. Depending on whether the operation is successful, you can use the **then()** or **catch()** method to process the callback. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ try {
 ```
 
 
+<a id="copy-1"></a>
 ## copy
 
 ```TypeScript
@@ -99,7 +101,7 @@ Copies log files of the specified type to the target application directory. This
 | logType | string | Yes | Log type, for example, **HILOG**, **FAULTLOG**, **BETACLUB**, or **REMOTELOG**. |
 | logName | string | Yes | Log file name. |
 | dest | string | Yes | Target directory. Enter the relative path of the directory. If this parameter is specified, log files will be saved to the **hiview/dest** folder in the application cache path, that is,**../cache/hiview/dest**. You can enter a multi-level directory.<br>If you leave this parameter empty, log files will be saved to the root directory, that is,the **hiview** folder in the application cache path. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to process the received return value. The value **0** indicates that the operation is successful, and any other value indicates that the operation has failed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to process the received return value. The value **0** indicates that the operation is successful, and any other value indicates that the operation has failed. |
 
 **Error codes:**
 

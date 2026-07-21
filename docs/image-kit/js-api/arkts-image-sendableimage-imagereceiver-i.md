@@ -16,6 +16,7 @@ Before calling any APIs in ImageReceiver, you must create an ImageReceiver insta
 import { sendableImage } from '@kit.ImageKit';
 ```
 
+<a id="getreceivingsurfaceid"></a>
 ## getReceivingSurfaceId
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains a surface ID for the camera or other components. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Asynchronously returns the surface ID. |
+| Promise&lt;string&gt; | Asynchronously returns the surface ID. |
 
 **Example**
 
@@ -58,6 +59,7 @@ async function Demo() {
 
 ```
 
+<a id="on"></a>
 ## on('imageArrival')
 
 ```TypeScript
@@ -77,7 +79,7 @@ Listens for image arrival events. This API uses an asynchronous callback to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'imageArrival' | Yes | Type of event to listen for. The value is fixed at **'imageArrival'**, which is triggered when an image is received. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked for the event. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked for the event. |
 
 **Example**
 
@@ -98,6 +100,7 @@ async function Demo() {
 
 ```
 
+<a id="readlatestimage"></a>
 ## readLatestImage
 
 ```TypeScript
@@ -123,7 +126,7 @@ Reads the latest image from the ImageReceiver instance. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Image> | Promise used to return the latest image. |
+| Promise&lt;Image&gt; | Promise used to return the latest image. |
 
 **Example**
 
@@ -147,6 +150,7 @@ async function Demo() {
 
 ```
 
+<a id="readnextimage"></a>
 ## readNextImage
 
 ```TypeScript
@@ -172,7 +176,7 @@ Reads the next image from the ImageReceiver instance. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Image> | Promise used to return the next image. |
+| Promise&lt;Image&gt; | Promise used to return the next image. |
 
 **Example**
 
@@ -196,6 +200,7 @@ async function Demo() {
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -214,7 +219,7 @@ Releases this ImageReceiver instance. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 

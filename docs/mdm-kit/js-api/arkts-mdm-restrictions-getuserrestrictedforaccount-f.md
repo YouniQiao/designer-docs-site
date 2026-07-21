@@ -6,6 +6,7 @@
 import { restrictions } from '@kit.MDMKit';
 ```
 
+<a id="getuserrestrictedforaccount"></a>
 ## getUserRestrictedForAccount
 
 ```TypeScript
@@ -18,7 +19,7 @@ Obtains the disabled status of a setting item for a specified user.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** getUserRestrictedForAccount(admin:
+**Substitutes:** [getUserRestrictedForAccount(admin:](arkts-mdm-restrictions-getuserrestrictedforaccount-f.md#getuserrestrictedforaccount-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_SET_USER_RESTRICTION
 
@@ -32,7 +33,7 @@ Obtains the disabled status of a setting item for a specified user.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
+| admin | [Want](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-want-want-c.md) \| null | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | settingsItem | string | Yes | Setting item.<br>- **modifyWallpaper**: Modify the wallpaper, including the lock screen wallpaper and home screen wallpaper. |
 | accountId | number | Yes | Account ID.<br>The value must be an integer greater than or equal to 0.<br>You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)to obtain the user ID. |
 
@@ -76,6 +77,7 @@ try {
 ```
 
 
+<a id="getuserrestrictedforaccount-1"></a>
 ## getUserRestrictedForAccount
 
 ```TypeScript
@@ -98,7 +100,7 @@ Gets whether users are restricted from changing specified settings items for acc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | admin indicates the administrator ability information. |
+| admin | [Want](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-want-want-c.md) \| null | Yes | admin indicates the administrator ability information. |
 | settingsItem | [SettingsForAccount](arkts-mdm-restrictions-settingsforaccount-e.md) | Yes | settingsItem indicates the specific settings item to be disallowed. |
 | accountId | number | Yes | accountId indicates the account ID to be restricted.<br>Value range:[0, +∞). |
 

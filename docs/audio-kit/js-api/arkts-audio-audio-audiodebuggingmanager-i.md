@@ -14,6 +14,7 @@ Provides audio debug management capabilities.
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="printappinfo"></a>
 ## printAppInfo
 
 ```TypeScript
@@ -36,6 +37,7 @@ Prints full audio runtime snapshot for current app process.The snapshot will con
 | --- | --- | --- | --- |
 | fd | number | Yes | fd is a file descriptor, indicates the location that the snapshot information will be written to. If the fd is less than 0 or no writable, the snapshot information will be printed into the running log, otherwise the snapshot will be written into the file. |
 
+<a id="printcapturerinfo"></a>
 ## printCapturerInfo
 
 ```TypeScript
@@ -59,6 +61,7 @@ Prints full audio runtime snapshot for target audio capturer instance.The snapsh
 | capturer | [AudioCapturer](arkts-audio-audio-audiocapturer-i.md) | Yes | target audio capturer instance to print snapshot. |
 | fd | number | Yes | fd is a file descriptor, indicates the location that the snapshot information will be written to. If the fd is less than 0 or no writable, the snapshot information will be printed into the running log, otherwise the snapshot will be written into the file. |
 
+<a id="printloopbackinfo"></a>
 ## printLoopbackInfo
 
 ```TypeScript
@@ -82,6 +85,7 @@ Prints full audio runtime snapshot for target audio loopback instance.The snapsh
 | loopback | [AudioLoopback](arkts-audio-audio-audioloopback-i.md) | Yes | target audio loopback instance to print snapshot. |
 | fd | number | Yes | fd is a file descriptor, indicates the location that the snapshot information will be written to. If the fd is less than 0 or no writable, the snapshot information will be printed into the running log, otherwise the snapshot will be written into the file. |
 
+<a id="printrendererinfo"></a>
 ## printRendererInfo
 
 ```TypeScript
@@ -105,6 +109,7 @@ Prints full audio runtime snapshot for target audio renderer instance.The snapsh
 | renderer | [AudioRenderer](arkts-audio-audio-audiorenderer-i.md) | Yes | target audio renderer instance to print snapshot. |
 | fd | number | Yes | fd is a file descriptor, indicates the location that the snapshot information will be written to. If the fd is less than 0 or no writable, the snapshot information will be printed into the running log, otherwise the snapshot will be written into the file. |
 
+<a id="printsessioninfo"></a>
 ## printSessionInfo
 
 ```TypeScript

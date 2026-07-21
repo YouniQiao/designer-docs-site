@@ -6,6 +6,7 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="createsymkeygenerator"></a>
 ## createSymKeyGenerator
 
 ```TypeScript
@@ -14,7 +15,7 @@ function createSymKeyGenerator(algName: string): SymKeyGenerator
 
 Creates a symmetric key generator instance with the specified algorithm.
 
-For details about the supported specifications, see [Symmetric Key Generation and Conversion Specifications](../../../../security/CryptoArchitectureKit/crypto-sym-key-generation-conversion-spec.md).
+For details about the supported specifications, see [Symmetric Key Generation and Conversion Specifications](docroot://security/CryptoArchitectureKit/crypto-sym-key-generation-conversion-spec.md).
 
 **Since:** 9
 
@@ -30,7 +31,7 @@ For details about the supported specifications, see [Symmetric Key Generation an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| algName | string | Yes | Algorithm to be used by the **symKeyGenerator** instance.<br>For details, see **String Parameter** in [Symmetric Key Generation and Conversion Specifications](../../../../security/CryptoArchitectureKit/crypto-sym-key-generation-conversion-spec.md). |
+| algName | string | Yes | Algorithm to be used by the **symKeyGenerator** instance.<br>For details, see **String Parameter** in [Symmetric Key Generation and Conversion Specifications](docroot://security/CryptoArchitectureKit/crypto-sym-key-generation-conversion-spec.md). |
 
 **Return value:**
 

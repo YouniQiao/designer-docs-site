@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="querydlppolicy"></a>
 ## queryDlpPolicy
 
 ```TypeScript
@@ -34,13 +35,13 @@ This API obtains the policy information of a DLP file for analysis in scenarios 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dlpFd | number | Yes | FD of the DLP file to be queried. The value range is [0, 2&lt;sup&gt;31&lt;/sup&gt;-1]. If the value of **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd** is greater than 2&lt;sup&gt;31&lt;/sup&gt;-1, the excess part will be truncated. |
+| dlpFd | number | Yes | FD of the DLP file to be queried. The value range is [0, 2<sup>31</sup>-1]. If the value of **fd** is less than 0, an error log is generated, and the function stops running. If the value of **fd** is greater than 2<sup>31</sup>-1, the excess part will be truncated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the JSON string of the DLP policy. The length cannot exceed4,194,304 bytes. |
+| Promise&lt;string&gt; | Promise used to return the JSON string of the DLP policy. The length cannot exceed4,194,304 bytes. |
 
 **Error codes:**
 

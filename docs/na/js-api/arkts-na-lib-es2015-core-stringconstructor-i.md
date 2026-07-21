@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface StringConstructor--><!--Device-unnamed-interface StringConstructor-End-->
 
+<a id="fromcodepoint"></a>
 ## fromCodePoint
 
 ```TypeScript
@@ -24,6 +25,7 @@ Return the String value whose elements are, in order, the elements in the List e
 | --- | --- |
 | string |  |
 
+<a id="raw"></a>
 ## raw
 
 ```TypeScript
@@ -38,7 +40,7 @@ String.raw is usually used as a tag function of a Tagged Template String. When c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| template | { raw: readonly string[] \| ArrayLike<string>} | Yes |  |
+| template | { raw: readonly string[] \| ArrayLike&lt;string&gt;} | Yes |  |
 | substitutions | any[] | Yes |  |
 
 **Return value:**

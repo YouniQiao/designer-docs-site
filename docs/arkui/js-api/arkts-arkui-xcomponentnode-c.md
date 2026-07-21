@@ -14,6 +14,7 @@ Defines XComponent Node.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="changerendertype"></a>
 ## changeRenderType
 
 ```TypeScript
@@ -46,6 +47,7 @@ Set the render type of the builderNode.
 | --- | --- |
 | boolean | - Returns if change the render type successfully. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -76,9 +78,10 @@ constructor.
 | uiContext | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UIContext used to create the FrameNode |
 | options | [RenderOptions](arkts-arkui-buildernode-renderoptions-i.md) | Yes | Render options of the Builder Node |
 | id | string | Yes | XComponent id defined by the application |
-| type | [XComponentType](arkts-arkui-enums-xcomponenttype-e.md) | Yes | XComponent type |
+| type | [XComponentType](arkts-arkui-xcomponenttype-e.md) | Yes | XComponent type |
 | libraryName | string | No | The name of the library to be loaded by XComponent |
 
+<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -103,8 +106,9 @@ Called when the XComponent surface has been created.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | event from native when the library loaded |
+| event | Object | No | event from native when the library loaded |
 
+<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript

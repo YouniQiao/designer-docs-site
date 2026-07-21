@@ -6,6 +6,7 @@
 import { volumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getvolumebyuuid"></a>
 ## getVolumeByUuid
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains information about a volume based on the UUID. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uuid | string | Yes | UUID of the volume. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Volume> | Yes | Callback used to return the volume information obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Volume&gt; | Yes | Callback used to return the volume information obtained. |
 
 **Error codes:**
 
@@ -43,6 +44,7 @@ Obtains information about a volume based on the UUID. This API uses an asynchron
 | 13900042 | Unknown error. |
 
 
+<a id="getvolumebyuuid-1"></a>
 ## getVolumeByUuid
 
 ```TypeScript
@@ -71,7 +73,7 @@ Obtains information about a volume based on the universally unique identifier (U
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Volume> | Promise used to return the volume information of the current UUID. |
+| Promise&lt;Volume&gt; | Promise used to return the volume information of the current UUID. |
 
 **Error codes:**
 

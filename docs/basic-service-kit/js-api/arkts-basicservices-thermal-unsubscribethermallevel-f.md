@@ -6,6 +6,7 @@
 import { thermal } from '@kit.BasicServicesKit';
 ```
 
+<a id="unsubscribethermallevel"></a>
 ## unsubscribeThermalLevel
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribes from the thermal level changes. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | No | Callback that returns no value. If this parameter is not set, all callbacks will be unregistered. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback that returns no value. If this parameter is not set, all callbacks will be unregistered. |
 
 **Example**
 

@@ -8,6 +8,7 @@ The <swiper> component provides a swiper container.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
+<a id="rotation"></a>
 ## rotation
 
 ```TypeScript

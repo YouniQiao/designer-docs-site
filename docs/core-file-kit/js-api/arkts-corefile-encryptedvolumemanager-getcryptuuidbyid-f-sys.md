@@ -6,6 +6,7 @@
 import { encryptedVolumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getcryptuuidbyid"></a>
 ## getCryptUuidById
 
 ```TypeScript
@@ -36,7 +37,7 @@ Get the encrypting uuid.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | return Promise |
+| Promise&lt;string&gt; | return Promise |
 
 **Error codes:**
 

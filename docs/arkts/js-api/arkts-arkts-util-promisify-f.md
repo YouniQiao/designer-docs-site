@@ -6,6 +6,7 @@
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="promisify"></a>
 ## promisify
 
 ```TypeScript
@@ -26,14 +27,14 @@ Receives a function that uses the error-first callback mode, that is, uses `(err
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| original | (err: Object, value: Object) => void | Yes | Function, in which the first parameter **err** indicates the cause of the rejection(the value is **null** if the promise has been resolved) and the second parameter **value** indicates the resolved value. |
+| original | (err: Object, value: Object) =&gt; void | Yes | Function, in which the first parameter **err** indicates the cause of the rejection(the value is **null** if the promise has been resolved) and the second parameter **value** indicates the resolved value. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
 | function | Return a function that returns promises<br>**Applicable version:** 9 - 11 |
-| [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Promise function.<br>**Applicable version:** 10 and later |
+| Function | Promise function.<br>**Applicable version:** 10 and later |
 
 **Example**
 

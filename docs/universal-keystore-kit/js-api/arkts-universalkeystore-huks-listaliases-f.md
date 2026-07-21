@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="listaliases"></a>
 ## listAliases
 
 ```TypeScript
@@ -32,7 +33,7 @@ Lists key aliases. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksListAliasesReturnResult> | Promise that returns the operation result. If the operation is successful, **keyAliases** of **HuksListAliasesReturnResult** is the obtained key aliases. |
+| Promise&lt;HuksListAliasesReturnResult&gt; | Promise that returns the operation result. If the operation is successful, **keyAliases** of **HuksListAliasesReturnResult** is the obtained key aliases. |
 
 **Error codes:**
 

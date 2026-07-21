@@ -14,6 +14,7 @@ Defines the handle of the data network.
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="bindsocket"></a>
 ## bindSocket
 
 ```TypeScript
@@ -32,8 +33,8 @@ bindSocket(socketParam: TCPSocket | UDPSocket, callback: AsyncCallback<void>): v
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| socketParam | TCPSocket \| UDPSocket | Yes | Indicates the TCPSocket or UDPSocket object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of bindSocket. |
+| socketParam | [TCPSocket](arkts-network-socket-tcpsocket-i.md) \| UDPSocket | Yes | Indicates the TCPSocket or UDPSocket object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of bindSocket. |
 
 **Error codes:**
 
@@ -107,6 +108,7 @@ interface Data {
 
 ```
 
+<a id="bindsocket-1"></a>
 ## bindSocket
 
 ```TypeScript
@@ -125,13 +127,13 @@ bindSocket(socketParam: TCPSocket | UDPSocket): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| socketParam | TCPSocket \| UDPSocket | Yes | Indicates the TCPSocket or UDPSocket object. |
+| socketParam | [TCPSocket](arkts-network-socket-tcpsocket-i.md) \| UDPSocket | Yes | Indicates the TCPSocket or UDPSocket object. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -200,6 +202,7 @@ connection.getDefaultNet().then((netHandle: connection.NetHandle) => {
 
 ```
 
+<a id="getaddressbyname"></a>
 ## getAddressByName
 
 ```TypeScript
@@ -221,7 +224,7 @@ Resolves a host name to obtain the first IP address based on the specified NetHa
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | host | string | Yes | Indicates the host name or the domain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetAddress> | Yes | the callback of getAddressByName. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetAddress&gt; | Yes | the callback of getAddressByName. |
 
 **Error codes:**
 
@@ -256,6 +259,7 @@ connection.getDefaultNet().then((netHandle: connection.NetHandle) => {
 
 ```
 
+<a id="getaddressbyname-1"></a>
 ## getAddressByName
 
 ```TypeScript
@@ -282,7 +286,7 @@ Resolves a host name to obtain the first IP address based on the specified NetHa
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetAddress> | The promise returned by the function. |
+| Promise&lt;NetAddress&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -312,6 +316,7 @@ connection.getDefaultNet().then((netHandle: connection.NetHandle) => {
 
 ```
 
+<a id="getaddressesbyname"></a>
 ## getAddressesByName
 
 ```TypeScript
@@ -335,7 +340,7 @@ Resolves a host name to obtain all IP addresses based on the specified NetHandle
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | host | string | Yes | Indicates the host name or the domain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<NetAddress>> | Yes | the callback of getAddressesByName. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;NetAddress&gt;&gt; | Yes | the callback of getAddressesByName. |
 
 **Error codes:**
 
@@ -370,6 +375,7 @@ connection.getDefaultNet().then((netHandle: connection.NetHandle) => {
 
 ```
 
+<a id="getaddressesbyname-1"></a>
 ## getAddressesByName
 
 ```TypeScript
@@ -398,7 +404,7 @@ Resolves a host name to obtain all IP addresses based on the specified NetHandle
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NetAddress>> | The promise returned by the function. |
+| Promise&lt;Array&lt;NetAddress&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -428,6 +434,7 @@ connection.getDefaultNet().then((netHandle: connection.NetHandle) => {
 
 ```
 
+<a id="getaddressesbynamewithoptions"></a>
 ## getAddressesByNameWithOptions
 
 ```TypeScript
@@ -457,7 +464,7 @@ Resolves a host name to obtain all IP addresses based on the specified NetHandle
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NetAddress>> | The promise returned by the function. |
+| Promise&lt;Array&lt;NetAddress&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
+<a id="offdownloaderror"></a>
 ## offDownloadError
 
 ```TypeScript
@@ -25,7 +26,7 @@ Unsubscribes from the pre-download error events. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL to be unregistered, with a maximum of 8192 bytes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DownloadError> | No | Callback used to return the error information about the pre-download. If this parameter is left blank, all error callback functions of the URL are unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DownloadError&gt; | No | Callback used to return the error information about the pre-download. If this parameter is left blank, all error callback functions of the URL are unregistered. |
 
 **Example**
 

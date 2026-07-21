@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="isdistributedenabled"></a>
 ## isDistributedEnabled
 
 ```TypeScript
@@ -18,7 +19,7 @@ Checks whether the device supports cross-device notifications. This API uses an 
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** isDistributedEnabled(deviceType:
+**Substitutes:** [isDistributedEnabled(deviceType:](arkts-notification-notificationmanager-isdistributedenabled-f.md#isdistributedenabled-1)
 
 <!--Device-notificationManager-function isDistributedEnabled(callback: AsyncCallback<boolean>): void--><!--Device-notificationManager-function isDistributedEnabled(callback: AsyncCallback<boolean>): void-End-->
 
@@ -28,7 +29,7 @@ Checks whether the device supports cross-device notifications. This API uses an 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that the cross-device notification is supported; **false** means the opposite. If this API call fails, an error object is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that the cross-device notification is supported; **false** means the opposite. If this API call fails, an error object is returned. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ notificationManager.isDistributedEnabled(isDistributedEnabledCallback);
 ```
 
 
+<a id="isdistributedenabled-1"></a>
 ## isDistributedEnabled
 
 ```TypeScript
@@ -70,7 +72,7 @@ Checks whether the device supports cross-device notifications. This API uses a p
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** isDistributedEnabled(deviceType:
+**Substitutes:** [isDistributedEnabled(deviceType:](arkts-notification-notificationmanager-isdistributedenabled-f.md#isdistributedenabled-1)
 
 <!--Device-notificationManager-function isDistributedEnabled(): Promise<boolean>--><!--Device-notificationManager-function isDistributedEnabled(): Promise<boolean>-End-->
 
@@ -80,7 +82,7 @@ Checks whether the device supports cross-device notifications. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the cross-device notification is supported; **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the cross-device notification is supported; **false** means the opposite. |
 
 **Error codes:**
 

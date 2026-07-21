@@ -6,6 +6,7 @@
 import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="getproperty"></a>
 ## getProperty
 
 ```TypeScript
@@ -33,15 +34,15 @@ The **propertyId** indicates the ID of the property to be queried. Currently, on
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resourceId | string | Yes | Resource ID, which can be obtained using [certificateManagerDialog.openAuthorizeDialog22+](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-certificatemanagerdialog-openauthorizedialog-f.md#openauthorizedialog-2). The result contains **resourceId**. |
+| resourceId | string | Yes | Resource ID, which can be obtained using [certificateManagerDialog.openAuthorizeDialog22+](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-certificatemanagerdialog-openauthorizedialog-f.md#openauthorizedialog-1). The result contains **resourceId**. |
 | propertyId | string | Yes | Property name for the search operation, which is the SKF API name defined in GMT 0016-2023. You need to make adaptation based on the API name. |
-| params | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<HuksExternalCryptoParam> | No | Parameters to be passed to [Extension Ability](arkts-security-cryptoextensionability.md). If a non-system application passes [HUKS_EXT_CRYPTO_TAG_UID](arkts-universalkeystore-huksexternalcrypto-huksexternalcryptotagtype-e.md), the parameter is invalid. |
+| params | Array&lt;HuksExternalCryptoParam&gt; | No | Parameters to be passed to [Extension Ability](arkts-security-cryptoextensionability.md). If a non-system application passes [HUKS_EXT_CRYPTO_TAG_UID](arkts-universalkeystore-huksexternalcrypto-huksexternalcryptotagtype-e.md), the parameter is invalid. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<HuksExternalCryptoParam>> | Promise that returns the operation result. If the call is successful, an array of the **HuksExternalCryptoParam** type is returned, containing the properties to be queried. |
+| Promise&lt;Array&lt;HuksExternalCryptoParam&gt;&gt; | Promise that returns the operation result. If the call is successful, an array of the **HuksExternalCryptoParam** type is returned, containing the properties to be queried. |
 
 **Error codes:**
 

@@ -1,0 +1,145 @@
+# NavigationTransitionProxy
+
+Implements a custom transition animation proxy.
+
+**Since:** 11
+
+<!--Device-unnamed-declare interface NavigationTransitionProxy--><!--Device-unnamed-declare interface NavigationTransitionProxy-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+<a id="canceltransition"></a>
+## cancelTransition
+
+```TypeScript
+cancelTransition?(): void
+```
+
+Cancels this interactive transition animation, restoring the routing stack to its state before page redirection. (Non-interactive transition animations cannot be canceled.)
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-NavigationTransitionProxy-cancelTransition?(): void--><!--Device-NavigationTransitionProxy-cancelTransition?(): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+<a id="finishtransition"></a>
+## finishTransition
+
+```TypeScript
+finishTransition(): void
+```
+
+Finishes this custom transition animation. This API must be manually called to end the animation. Otherwise, the system ends the animation when the timeout expires.
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-NavigationTransitionProxy-finishTransition(): void--><!--Device-NavigationTransitionProxy-finishTransition(): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+<a id="updatetransition"></a>
+## updateTransition
+
+```TypeScript
+updateTransition?(progress: number): void
+```
+
+Updates the progress of this interactive transition animation. (Non-interactive animations do not support setting the animation progress).
+
+> **NOTE**  
+>  
+> You are not advised to use stack operations in [aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1), as the  
+> page has not yet finished building at this stage, which may lead to issues such as white screens or navigation  
+> failures.
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-NavigationTransitionProxy-updateTransition?(progress: number): void--><!--Device-NavigationTransitionProxy-updateTransition?(progress: number): void-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| progress | number | Yes | Progress percentage of the interactive transition animation. Value range: [0, 1]. |
+
+## from
+
+```TypeScript
+from: NavContentInfo
+```
+
+Information about the exit page.
+
+**Type:** NavContentInfo
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-NavigationTransitionProxy-from: NavContentInfo--><!--Device-NavigationTransitionProxy-from: NavContentInfo-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## isInteractive
+
+```TypeScript
+isInteractive?: boolean
+```
+
+Whether the transition animation is interactive.
+
+**true**: yes; **false**: no
+
+Default value: **false**
+
+**Type:** boolean
+
+**Default:** false
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-NavigationTransitionProxy-isInteractive?: boolean--><!--Device-NavigationTransitionProxy-isInteractive?: boolean-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## to
+
+```TypeScript
+to: NavContentInfo
+```
+
+Information about the enter page.
+
+**Type:** NavContentInfo
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-NavigationTransitionProxy-to: NavContentInfo--><!--Device-NavigationTransitionProxy-to: NavContentInfo-End-->
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+

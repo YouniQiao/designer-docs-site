@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="getsupportedpkids"></a>
 ## getSupportedPkids
 
 ```TypeScript
@@ -34,7 +35,7 @@ Get supported pkids
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the supported pkids. |
+| Promise&lt;string&gt; | Returns the supported pkids. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ LightWeightMap stores key-value (KV) pairs. Each key must be unique and have onl
 import { LightWeightMap } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an ES6 iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -86,6 +87,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -120,6 +122,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -149,6 +152,7 @@ let lightWeightMap = new LightWeightMap<string, number>();
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -169,7 +173,7 @@ Returns an iterator that contains all the elements in this LightWeightMap.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | Iterator obtained. |
 
 **Error codes:**
 
@@ -205,6 +209,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -225,8 +230,8 @@ Uses a callback to traverse the elements in this LightWeightMap and obtain their
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value?: V, key?: K, map?: LightWeightMap<K, V>) => void | Yes | Callback invoked to traverse the elements in the LightWeightMap. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value?: V, key?: K, map?: LightWeightMap&lt;K, V&gt;) =&gt; void | Yes | Callback invoked to traverse the elements in the LightWeightMap. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -260,6 +265,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -305,6 +311,7 @@ console.info("result:", result);  // result: 356
 
 ```
 
+<a id="getindexofkey"></a>
 ## getIndexOfKey
 
 ```TypeScript
@@ -350,6 +357,7 @@ console.info("result:", result);  // result: 0
 
 ```
 
+<a id="getindexofvalue"></a>
 ## getIndexOfValue
 
 ```TypeScript
@@ -395,6 +403,7 @@ console.info("result:", result);  // result: 1
 
 ```
 
+<a id="getkeyat"></a>
 ## getKeyAt
 
 ```TypeScript
@@ -441,6 +450,7 @@ console.info("result:", result);  // result: squirrel
 
 ```
 
+<a id="getvalueat"></a>
 ## getValueAt
 
 ```TypeScript
@@ -487,6 +497,7 @@ console.info("result:", result);  // result: 123
 
 ```
 
+<a id="hasall"></a>
 ## hasAll
 
 ```TypeScript
@@ -507,7 +518,7 @@ Checks whether this LightWeightMap contains all elements of the specified **Ligh
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| map | [LightWeightMap](arkts-arkts-util-lightweightmap-lightweightmap-c.md)<K, V> | Yes | **LightWeightMap** instance to be used for comparison. |
+| map | [LightWeightMap](arkts-arkts-util-lightweightmap-lightweightmap-c.md)&lt;K, V&gt; | Yes | **LightWeightMap** instance to be used for comparison. |
 
 **Return value:**
 
@@ -534,6 +545,7 @@ console.info("result = ", result); // result = true
 
 ```
 
+<a id="haskey"></a>
 ## hasKey
 
 ```TypeScript
@@ -578,6 +590,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="hasvalue"></a>
 ## hasValue
 
 ```TypeScript
@@ -622,6 +635,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="increasecapacityto"></a>
 ## increaseCapacityTo
 
 ```TypeScript
@@ -658,6 +672,7 @@ lightWeightMap.increaseCapacityTo(10);
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -695,6 +710,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -715,7 +731,7 @@ Returns an iterator that contains all the keys in this LightWeightMap.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<K> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;K&gt; | Iterator obtained. |
 
 **Error codes:**
 
@@ -738,6 +754,7 @@ for (let key of keys) {
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -782,6 +799,7 @@ console.info("result:", result);  // result: 356
 
 ```
 
+<a id="removeat"></a>
 ## removeAt
 
 ```TypeScript
@@ -827,6 +845,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -854,7 +873,7 @@ Adds or updates an element in this LightWeightMap.
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | LightWeightMap that contains the new element. |
+| Object | LightWeightMap that contains the new element. |
 
 **Error codes:**
 
@@ -871,6 +890,7 @@ console.info("result:", result);  // result: squirrel:123
 
 ```
 
+<a id="setall"></a>
 ## setAll
 
 ```TypeScript
@@ -891,7 +911,7 @@ Adds all elements in a LightWeightMap to this LightWeightMap.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| map | [LightWeightMap](arkts-arkts-util-lightweightmap-lightweightmap-c.md)<K, V> | Yes | LightWeightMap whose elements are to be added to the current LightWeightMap. |
+| map | [LightWeightMap](arkts-arkts-util-lightweightmap-lightweightmap-c.md)&lt;K, V&gt; | Yes | LightWeightMap whose elements are to be added to the current LightWeightMap. |
 
 **Error codes:**
 
@@ -912,6 +932,7 @@ console.info("result:", result);  // result: 356
 
 ```
 
+<a id="setvalueat"></a>
 ## setValueAt
 
 ```TypeScript
@@ -959,6 +980,7 @@ console.info("result:", lightWeightMap.get("squirrel"));  // result: 3546
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -979,7 +1001,7 @@ Concatenates the elements in this LightWeightMap into a string and returns the s
 
 | Type | Description |
 | --- | --- |
-| [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | String obtained. |
+| String | String obtained. |
 
 **Error codes:**
 
@@ -998,6 +1020,7 @@ console.info("result:", result);  // result: sparrow:356,squirrel:123
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -1018,7 +1041,7 @@ Returns an iterator that contains all the values in this LightWeightMap.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<V> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;V&gt; | Iterator obtained. |
 
 **Error codes:**
 

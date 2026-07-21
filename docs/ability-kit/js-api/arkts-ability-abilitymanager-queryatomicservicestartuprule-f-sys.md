@@ -6,6 +6,7 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
+<a id="queryatomicservicestartuprule"></a>
 ## queryAtomicServiceStartupRule
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the rule for launching an [EmbeddableUIAbility](arkts-ability-app-abilit
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AtomicServiceStartupRule> | Promise used to return the rule for launching the embedded atomic service. |
+| Promise&lt;AtomicServiceStartupRule&gt; | Promise used to return the rule for launching the embedded atomic service. |
 
 **Error codes:**
 

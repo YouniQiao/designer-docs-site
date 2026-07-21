@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="getdefaultsmdpaddress"></a>
 ## getDefaultSmdpAddress
 
 ```TypeScript
@@ -34,7 +35,7 @@ Gets the default SM-DP+ address stored in an eUICC.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Returns the default SM-DP+ address. |
+| Promise&lt;string&gt; | Returns the default SM-DP+ address. |
 
 **Error codes:**
 

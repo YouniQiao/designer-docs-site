@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="reportnetconnected"></a>
 ## reportNetConnected
 
 ```TypeScript
@@ -27,7 +28,7 @@ Reports the network state is connected.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | netHandle | [NetHandle](arkts-network-connection-nethandle-i.md) | Yes | Indicates the network whose state is to be reported. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of reportNetConnected. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of reportNetConnected. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ connection.getDefaultNet().then((netHandle: connection.NetHandle) => {
 ```
 
 
+<a id="reportnetconnected-1"></a>
 ## reportNetConnected
 
 ```TypeScript
@@ -80,7 +82,7 @@ Reports the network state is connected.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

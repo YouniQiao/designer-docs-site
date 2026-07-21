@@ -11,11 +11,11 @@ The number of application fault logs stored in the system is limited by the syst
 > **APP_FREEZE** events in later versions.  
 >  
 > For details about how to use HiAppEvent to subscribe to the **APP_CRASH** event, see  
-> [Migrating Crash Events from the FaultLogger API](../../../../dfx/hiappevent-watcher-crash-events-arkts.md#migrating-crash-events-from-the-faultlogger-api)  
+> [Migrating Crash Events from the FaultLogger API](docroot://dfx/hiappevent-watcher-crash-events-arkts.md#migrating-crash-events-from-the-faultlogger-api)  
 > .  
 >  
 > For details about how to use HiAppEvent to subscribe to the **APP_FREEZE** event, see  
-> [Migrating Application Freeze Events from the Faultlogger API](../../../../dfx/hiappevent-watcher-freeze-events-arkts.md#migrating-application-freeze-events-from-the-faultlogger-api)  
+> [Migrating Application Freeze Events from the Faultlogger API](docroot://dfx/hiappevent-watcher-freeze-events-arkts.md#migrating-application-freeze-events-from-the-faultlogger-api)  
 > .
 
 **Since:** 8
@@ -40,10 +40,10 @@ import { FaultLogger } from '@kit.PerformanceAnalysisKit';
 
 | Name | Description |
 | --- | --- |
-| [query](arkts-performanceanalysis-faultlogger-query-f.md#query-1) | Obtains the fault information about the current application. This API uses an asynchronous callback to return the fault information array obtained, which contains a maximum of 10 pieces of fault information. |
-| [query](arkts-performanceanalysis-faultlogger-query-f.md#query-2) | Obtains the fault information about the current application. This API uses a promise to return the fault information array obtained, which contains a maximum of 10 pieces of fault information. |
-| [querySelfFaultLog](arkts-performanceanalysis-faultlogger-queryselffaultlog-f.md#queryselffaultlog-1) | Obtains the fault information about the current application. This API uses an asynchronous callback to return the fault information array obtained, which contains a maximum of 10 pieces of fault information. |
-| [querySelfFaultLog](arkts-performanceanalysis-faultlogger-queryselffaultlog-f.md#queryselffaultlog-2) | Obtains the fault information about the current application. This API uses a promise to return the fault information array obtained, which contains a maximum of 10 pieces of fault information. |
+| [query](arkts-performanceanalysis-faultlogger-query-f.md#query) | Obtains the fault information about the current application. This API uses an asynchronous callback to return the fault information array obtained, which contains a maximum of 10 pieces of fault information. |
+| [query](arkts-performanceanalysis-faultlogger-query-f.md#query-1) | Obtains the fault information about the current application. This API uses a promise to return the fault information array obtained, which contains a maximum of 10 pieces of fault information. |
+| [querySelfFaultLog](arkts-performanceanalysis-faultlogger-queryselffaultlog-f.md#queryselffaultlog) | Obtains the fault information about the current application. This API uses an asynchronous callback to return the fault information array obtained, which contains a maximum of 10 pieces of fault information. |
+| [querySelfFaultLog](arkts-performanceanalysis-faultlogger-queryselffaultlog-f.md#queryselffaultlog-1) | Obtains the fault information about the current application. This API uses a promise to return the fault information array obtained, which contains a maximum of 10 pieces of fault information. |
 
 ### Interfaces
 

@@ -20,35 +20,35 @@ import { inputMethod } from '@kit.IMEKit';
 
 | Name | Description |
 | --- | --- |
-| [getController](arkts-ime-inputmethod-getcontroller-f.md#getcontroller-1) | Input method controller |
-| [getCurrentInputMethod](arkts-ime-inputmethod-getcurrentinputmethod-f.md#getcurrentinputmethod-1) | Get current input method |
-| [getCurrentInputMethodSubtype](arkts-ime-inputmethod-getcurrentinputmethodsubtype-f.md#getcurrentinputmethodsubtype-1) | Get the current input method subtype |
-| [getDefaultInputMethod](arkts-ime-inputmethod-getdefaultinputmethod-f.md#getdefaultinputmethod-1) | Get default input method |
-| [getInputMethodController](arkts-ime-inputmethod-getinputmethodcontroller-f.md#getinputmethodcontroller-1) | Input method controller |
-| [getInputMethodSetting](arkts-ime-inputmethod-getinputmethodsetting-f.md#getinputmethodsetting-1) | Input method setting |
-| [getSetting](arkts-ime-inputmethod-getsetting-f.md#getsetting-1) | Input method setting |
-| [getSystemInputMethodConfigAbility](arkts-ime-inputmethod-getsysteminputmethodconfigability-f.md#getsysteminputmethodconfigability-1) | Get system input method config ability |
-| [offAttachmentDidFail](arkts-ime-inputmethod-offattachmentdidfail-f.md#offattachmentdidfail-1) | Unsubscribe the attachment failure event. |
-| [onAttachmentDidFail](arkts-ime-inputmethod-onattachmentdidfail-f.md#onattachmentdidfail-1) | Subscribe the attachment failure event. |
-| [setSimpleKeyboardEnabled](arkts-ime-inputmethod-setsimplekeyboardenabled-f.md#setsimplekeyboardenabled-1) | Set simple keyboard mode. |
+| [getController](arkts-ime-inputmethod-getcontroller-f.md#getcontroller) | Input method controller |
+| [getCurrentInputMethod](arkts-ime-inputmethod-getcurrentinputmethod-f.md#getcurrentinputmethod) | Get current input method |
+| [getCurrentInputMethodSubtype](arkts-ime-inputmethod-getcurrentinputmethodsubtype-f.md#getcurrentinputmethodsubtype) | Get the current input method subtype |
+| [getDefaultInputMethod](arkts-ime-inputmethod-getdefaultinputmethod-f.md#getdefaultinputmethod) | Get default input method |
+| [getInputMethodController](arkts-ime-inputmethod-getinputmethodcontroller-f.md#getinputmethodcontroller) | Input method controller |
+| [getInputMethodSetting](arkts-ime-inputmethod-getinputmethodsetting-f.md#getinputmethodsetting) | Input method setting |
+| [getSetting](arkts-ime-inputmethod-getsetting-f.md#getsetting) | Input method setting |
+| [getSystemInputMethodConfigAbility](arkts-ime-inputmethod-getsysteminputmethodconfigability-f.md#getsysteminputmethodconfigability) | Get system input method config ability |
+| [offAttachmentDidFail](arkts-ime-inputmethod-offattachmentdidfail-f.md#offattachmentdidfail) | Unsubscribe the attachment failure event. |
+| [onAttachmentDidFail](arkts-ime-inputmethod-onattachmentdidfail-f.md#onattachmentdidfail) | Subscribe the attachment failure event. |
+| [setSimpleKeyboardEnabled](arkts-ime-inputmethod-setsimplekeyboardenabled-f.md#setsimplekeyboardenabled) | Set simple keyboard mode. |
+| [switchCurrentInputMethodAndSubtype](arkts-ime-inputmethod-switchcurrentinputmethodandsubtype-f.md#switchcurrentinputmethodandsubtype) | Switch input method and subtype. The caller must be the current inputmethod. |
 | [switchCurrentInputMethodAndSubtype](arkts-ime-inputmethod-switchcurrentinputmethodandsubtype-f.md#switchcurrentinputmethodandsubtype-1) | Switch input method and subtype. The caller must be the current inputmethod. |
-| [switchCurrentInputMethodAndSubtype](arkts-ime-inputmethod-switchcurrentinputmethodandsubtype-f.md#switchcurrentinputmethodandsubtype-2) | Switch input method and subtype. The caller must be the current inputmethod. |
+| [switchCurrentInputMethodSubtype](arkts-ime-inputmethod-switchcurrentinputmethodsubtype-f.md#switchcurrentinputmethodsubtype) | Switch current input method subtype. The caller must be the current inputmethod. |
 | [switchCurrentInputMethodSubtype](arkts-ime-inputmethod-switchcurrentinputmethodsubtype-f.md#switchcurrentinputmethodsubtype-1) | Switch current input method subtype. The caller must be the current inputmethod. |
-| [switchCurrentInputMethodSubtype](arkts-ime-inputmethod-switchcurrentinputmethodsubtype-f.md#switchcurrentinputmethodsubtype-2) | Switch current input method subtype. The caller must be the current inputmethod. |
+| [switchInputMethod](arkts-ime-inputmethod-switchinputmethod-f.md#switchinputmethod) | Switch input method. The caller must be the current inputmethod. |
 | [switchInputMethod](arkts-ime-inputmethod-switchinputmethod-f.md#switchinputmethod-1) | Switch input method. The caller must be the current inputmethod. |
-| [switchInputMethod](arkts-ime-inputmethod-switchinputmethod-f.md#switchinputmethod-2) | Switch input method. The caller must be the current inputmethod. |
 
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [getCurrentInputMethod](arkts-ime-inputmethod-getcurrentinputmethod-f-sys.md#getcurrentinputmethod-2) | Get the current input method of a specified user. |
-| [getCurrentInputMethodSubtype](arkts-ime-inputmethod-getcurrentinputmethodsubtype-f-sys.md#getcurrentinputmethodsubtype-2) | Get the current input method subtype of a specified user. |
-| [getDefaultInputMethod](arkts-ime-inputmethod-getdefaultinputmethod-f-sys.md#getdefaultinputmethod-2) | Get the default input method of a specified user. |
-| [getSystemInputMethodConfigAbility](arkts-ime-inputmethod-getsysteminputmethodconfigability-f-sys.md#getsysteminputmethodconfigability-2) | Get the system input method config ability of a specified user. |
-| [switchInputMethod](arkts-ime-inputmethod-switchinputmethod-f-sys.md#switchinputmethod-3) | Switches to another input method. This API uses a promise to return the result. |
-| [switchInputMethodWithUserId](arkts-ime-inputmethod-switchinputmethodwithuserid-f-sys.md#switchinputmethodwithuserid-1) | Switch input method and subtype of a specified user. |
+| [getCurrentInputMethod](arkts-ime-inputmethod-getcurrentinputmethod-f-sys.md#getcurrentinputmethod-1) | Get the current input method of a specified user. |
+| [getCurrentInputMethodSubtype](arkts-ime-inputmethod-getcurrentinputmethodsubtype-f-sys.md#getcurrentinputmethodsubtype-1) | Get the current input method subtype of a specified user. |
+| [getDefaultInputMethod](arkts-ime-inputmethod-getdefaultinputmethod-f-sys.md#getdefaultinputmethod-1) | Get the default input method of a specified user. |
+| [getSystemInputMethodConfigAbility](arkts-ime-inputmethod-getsysteminputmethodconfigability-f-sys.md#getsysteminputmethodconfigability-1) | Get the system input method config ability of a specified user. |
+| [switchInputMethod](arkts-ime-inputmethod-switchinputmethod-f-sys.md#switchinputmethod-2) | Switches to another input method. This API uses a promise to return the result. |
+| [switchInputMethodWithUserId](arkts-ime-inputmethod-switchinputmethodwithuserid-f-sys.md#switchinputmethodwithuserid) | Switch input method and subtype of a specified user. |
 <!--DelEnd-->
 
 ### Interfaces
@@ -63,7 +63,7 @@ import { inputMethod } from '@kit.IMEKit';
 | [InputMethodProperty](arkts-ime-inputmethod-inputmethodproperty-i.md) | input method property |
 | [InputMethodSetting](arkts-ime-inputmethod-inputmethodsetting-i.md) | In the following API examples, you must first use [getSetting](arkts-ime-inputmethod-getsetting-f.md#getsetting-1) to obtain an **InputMethodSetting** instance, and then call the APIs using the obtained instance. |
 | [InputWindowInfo](arkts-ime-inputmethod-inputwindowinfo-i.md) | Information of input window. |
-| [MessageHandler](arkts-ime-inputmethod-messagehandler-i.md) | &lt;p&gt;Custom message handler.&lt;/p&gt;&lt;p&gt;Implement this interface to respond to custom messages.&lt;/p&gt; |
+| [MessageHandler](arkts-ime-inputmethod-messagehandler-i.md) | <p>Custom message handler.</p><p>Implement this interface to respond to custom messages.</p> |
 | [Movement](arkts-ime-inputmethod-movement-i.md) | Movement of cursor. |
 | [Range](arkts-ime-inputmethod-range-i.md) | Range of selected text. |
 | [TextConfig](arkts-ime-inputmethod-textconfig-i.md) | Config of editor. |

@@ -4,6 +4,8 @@ The class for PickerController
 
 **Since:** 12
 
+**Decorator:** @Observed
+
 <!--Device-unnamed-export declare class PickerController--><!--Device-unnamed-export declare class PickerController-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
@@ -14,6 +16,7 @@ The class for PickerController
 import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, SelectMode, PhotoBrowserUIElement, ItemType, PinchGridSwitchedCallback, SingleLineConfig, ClickResult, ClickType, UpdatablePickerConfigs, DataType, VideoPlayerState, ItemDisplayRatio, ScrollStopAtStartCallback, ScrollStopAtEndCallback, PickerOrientation, videoPlayStateChangedCallback, PhotoBrowserChangeStartCallback, MovingPhotoBadgeStateChangedCallback, ErrorCallback, PickerOptions, ItemsDeletedCallback, PhotoBrowserRange, SaveMode, MaxSelected, PickerController, PickerError, PhotoPickerComponent, ExceedMaxSelectedCallback, ReminderMode, ItemClickedNotifyCallback, PickerColorMode, BadgeConfig, BadgeType, PhotoBrowserInfo, CurrentAlbumDeletedCallback } from '@kit.MediaLibraryKit';
 ```
 
+<a id="adddata"></a>
 ## addData
 
 ```TypeScript
@@ -35,8 +38,9 @@ Add data to picker component
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | dataType | [DataType](arkts-medialibrary-file-photopickercomponent-datatype-e.md) | Yes | data type |
-| data | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | data |
+| data | Object | Yes | data |
 
+<a id="completed"></a>
 ## completed
 
 ```TypeScript
@@ -59,8 +63,9 @@ Call this method to obtain the complete data after a selection operation has fin
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CompletedResult> | Promise&lt;CompletedResult&gt; |
+| Promise&lt;CompletedResult&gt; | Promise<CompletedResult> |
 
+<a id="deletedata"></a>
 ## deleteData
 
 ```TypeScript
@@ -82,8 +87,9 @@ Delete data to picker component
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | dataType | [DataType](arkts-medialibrary-file-photopickercomponent-datatype-e.md) | Yes | data type |
-| data | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | data |
+| data | Object | Yes | data |
 
+<a id="exitphotobrowser"></a>
 ## exitPhotoBrowser
 
 ```TypeScript
@@ -100,6 +106,7 @@ Exit photo browser.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
+<a id="replacephotopickerpreview"></a>
 ## replacePhotoPickerPreview
 
 ```TypeScript
@@ -122,8 +129,9 @@ Display the photo after edit.
 | --- | --- | --- | --- |
 | originalUri | string | Yes | Original uri |
 | newUri | string | Yes | New uri after replacement |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Returns void |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Returns void |
 
+<a id="savetrustedphotoassets"></a>
 ## saveTrustedPhotoAssets
 
 ```TypeScript
@@ -147,11 +155,12 @@ Save the photo assets of uris.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| trustedUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Uris need to be saved |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Returns the uri list |
-| configs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<photoAccessHelper.PhotoCreationConfig> | No | Photo asset creation configs |
+| trustedUris | Array&lt;string&gt; | Yes | Uris need to be saved |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Returns the uri list |
+| configs | Array&lt;photoAccessHelper.PhotoCreationConfig&gt; | No | Photo asset creation configs |
 | saveMode | [SaveMode](arkts-medialibrary-file-photopickercomponent-savemode-e.md) | No | Mode of save |
 
+<a id="savetrustedphotoassetsex"></a>
 ## saveTrustedPhotoAssetsEx
 
 ```TypeScript
@@ -177,16 +186,17 @@ Save the photo assets of uris.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| trustedUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Uris need to be saved |
-| settings | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<photoAccessHelper.CreationSetting> | No | Photo asset creation settings |
+| trustedUris | Array&lt;string&gt; | Yes | Uris need to be saved |
+| settings | Array&lt;photoAccessHelper.CreationSetting&gt; | No | Photo asset creation settings |
 | saveMode | [SaveMode](arkts-medialibrary-file-photopickercomponent-savemode-e.md) | No | Mode of save |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | - Returns the media library file uri list to application which has been authorized |
+| Promise&lt;Array&lt;string&gt;&gt; | - Returns the media library file uri list to application which has been authorized |
 
+<a id="setdata"></a>
 ## setData
 
 ```TypeScript
@@ -208,8 +218,9 @@ Set data to picker component
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | dataType | [DataType](arkts-medialibrary-file-photopickercomponent-datatype-e.md) | Yes | data type |
-| data | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | data |
+| data | Object | Yes | data |
 
+<a id="setmaxselected"></a>
 ## setMaxSelected
 
 ```TypeScript
@@ -232,6 +243,7 @@ Set max select count to picker component, include max_total_count, max_photo_cou
 | --- | --- | --- | --- |
 | maxSelected | [MaxSelected](arkts-medialibrary-file-photopickercomponent-maxselected-c.md) | Yes | max select count data |
 
+<a id="setmovingphotostate"></a>
 ## setMovingPhotoState
 
 ```TypeScript
@@ -260,7 +272,7 @@ Sets the moving photo effect in the photo browser view.This configuration only t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise&lt;void&gt; |
+| Promise&lt;void&gt; | Promise<void> |
 
 **Error codes:**
 
@@ -269,6 +281,7 @@ Sets the moving photo effect in the photo browser view.This configuration only t
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scene parameters validate failed, possible causes:1. An invalid enumeration value was passed. Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration; |
 | [23800202](../errorcode-medialibrary.md#23800202-invalid-scenario-call) | Invalid call context. Possible causes:1. The API is called outside the photo browsing scenario.2. The API is called when isMovingPhotoBadgeShown is already set to true. |
 
+<a id="setphotobrowseritem"></a>
 ## setPhotoBrowserItem
 
 ```TypeScript
@@ -292,6 +305,7 @@ Set photo browser item to picker component.
 | uri | string | Yes | specify image uri for photo browsing |
 | photoBrowserRange | [PhotoBrowserRange](arkts-medialibrary-file-photopickercomponent-photobrowserrange-e.md) | No | photo browser slide range |
 
+<a id="setphotobrowseruielementvisibility"></a>
 ## setPhotoBrowserUIElementVisibility
 
 ```TypeScript
@@ -312,9 +326,10 @@ Sets whether other elements on the photo browser page are visible.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elements | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoBrowserUIElement> | Yes | other elements on the photo browser page |
+| elements | Array&lt;PhotoBrowserUIElement&gt; | Yes | other elements on the photo browser page |
 | isVisible | boolean | Yes | visible or not |
 
+<a id="updatepickeroptions"></a>
 ## updatePickerOptions
 
 ```TypeScript
@@ -341,5 +356,5 @@ Update options of the PhotoPicker component.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise&lt;void&gt; |
+| Promise&lt;void&gt; | Promise<void> |
 

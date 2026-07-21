@@ -14,6 +14,7 @@ Provides calendar management capabilities, such as calendar name retrieval and d
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -62,6 +63,7 @@ try {
 
 ```
 
+<a id="comparedays"></a>
 ## compareDays
 
 ```TypeScript
@@ -82,7 +84,7 @@ Compares the current date of this **Calendar** object with the specified date fo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | Date and time. Note: The month starts from **0**. For example, **0** indicates January. |
+| date | Date | Yes | Date and time. Note: The month starts from **0**. For example, **0** indicates January. |
 
 **Return value:**
 
@@ -114,6 +116,7 @@ try {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -153,6 +156,7 @@ let hourOfDay: number = calendar.get('hour_of_day'); // hourOfDay = 8
 
 ```
 
+<a id="getdisplayname"></a>
 ## getDisplayName
 
 ```TypeScript
@@ -173,7 +177,7 @@ Obtains calendar display name in the specified language.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string | Yes | [System locale](../../../../internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
+| locale | string | Yes | [System locale](docroot://internationalization/i18n-locale-culture.md#how-it-works),which consists of the language, script, and country/region. |
 
 **Return value:**
 
@@ -191,6 +195,7 @@ let calendarName: string = calendar.getDisplayName('zh'); // calendarName = 'Bud
 
 ```
 
+<a id="getfirstdayofweek"></a>
 ## getFirstDayOfWeek
 
 ```TypeScript
@@ -223,6 +228,7 @@ let firstDayOfWeek: number = calendar.getFirstDayOfWeek(); // firstDayOfWeek = 1
 
 ```
 
+<a id="getminimaldaysinfirstweek"></a>
 ## getMinimalDaysInFirstWeek
 
 ```TypeScript
@@ -255,6 +261,7 @@ let minimalDaysInFirstWeek: number = calendar.getMinimalDaysInFirstWeek(); // mi
 
 ```
 
+<a id="gettimeinmillis"></a>
 ## getTimeInMillis
 
 ```TypeScript
@@ -288,6 +295,7 @@ let millisecond: number = calendar.getTimeInMillis(); // millisecond = 5000
 
 ```
 
+<a id="gettimezone"></a>
 ## getTimeZone
 
 ```TypeScript
@@ -321,6 +329,7 @@ let timezone: string = calendar.getTimeZone(); // timezone = 'Asia/Shanghai'
 
 ```
 
+<a id="isweekend"></a>
 ## isWeekend
 
 ```TypeScript
@@ -341,7 +350,7 @@ Checks whether a given date is a weekend in this **Calendar** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | No | Date and time. Note: The month starts from **0**. For example, **0** indicates January.The default value is current date of the **Calendar** object. |
+| date | Date | No | Date and time. Note: The month starts from **0**. For example, **0** indicates January.The default value is current date of the **Calendar** object. |
 
 **Return value:**
 
@@ -362,6 +371,7 @@ isWeekend = calendar.isWeekend(date); // isWeekend = false
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -399,6 +409,7 @@ calendar.set(2021, 10, 1, 8, 0, 0); // Set the date and time to 2021.11.1 08:00:
 
 ```
 
+<a id="setfirstdayofweek"></a>
 ## setFirstDayOfWeek
 
 ```TypeScript
@@ -432,6 +443,7 @@ let firstDayOfWeek: number = calendar.getFirstDayOfWeek(); // firstDayOfWeek = 3
 
 ```
 
+<a id="setminimaldaysinfirstweek"></a>
 ## setMinimalDaysInFirstWeek
 
 ```TypeScript
@@ -465,6 +477,7 @@ let minimalDaysInFirstWeek: number = calendar.getMinimalDaysInFirstWeek(); // mi
 
 ```
 
+<a id="settime"></a>
 ## setTime
 
 ```TypeScript
@@ -485,7 +498,7 @@ Sets the date and time for a **Calendar** object based on the input **Date** obj
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | Date and time. Note: The month starts from **0**. For example, **0** indicates January. |
+| date | Date | Yes | Date and time. Note: The month starts from **0**. For example, **0** indicates January. |
 
 **Example**
 
@@ -498,6 +511,7 @@ calendar.setTime(date);
 
 ```
 
+<a id="settime-1"></a>
 ## setTime
 
 ```TypeScript
@@ -530,6 +544,7 @@ calendar.setTime(10540800000);
 
 ```
 
+<a id="settimezone"></a>
 ## setTimeZone
 
 ```TypeScript

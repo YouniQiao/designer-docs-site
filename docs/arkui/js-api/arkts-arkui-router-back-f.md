@@ -6,6 +6,7 @@
 import { router } from '@kit.ArkUI';
 ```
 
+<a id="back"></a>
 ## back
 
 ```TypeScript
@@ -17,7 +18,7 @@ Returns to the previous page or a specified page, which deletes all pages betwee
 > **NOTE**  
 >  
 > - Since API version 10, you can use the  
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
+> [getRouter](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
 > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated  
 > with the current UI context.
 
@@ -25,7 +26,7 @@ Returns to the previous page or a specified page, which deletes all pages betwee
 
 **Deprecated since:** 18
 
-**Substitutes:** back(options?:
+**Substitutes:** [back(options?:](arkts-arkui-arkui-uicontext-router-c.md#back-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -47,6 +48,7 @@ this.getUIContext().getRouter().back({ url: 'pages/detail' });
 ```
 
 
+<a id="back-1"></a>
 ## back
 
 ```TypeScript
@@ -58,7 +60,7 @@ Returns to the specified page, which deletes all pages between the current page 
 > **NOTE**  
 >  
 > - Since API version 12, you can use the  
-> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
+> [getRouter](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in  
 > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated  
 > with the current UI context.
 
@@ -66,7 +68,7 @@ Returns to the specified page, which deletes all pages between the current page 
 
 **Deprecated since:** 18
 
-**Substitutes:** back(index:
+**Substitutes:** [back(index:](arkts-arkui-arkui-uicontext-router-c.md#back-1)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -81,7 +83,7 @@ Returns to the specified page, which deletes all pages between the current page 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the target page to navigate to. The index starts from 1 from the bottom to the top of the stack. |
-| params | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Parameters carried when returning to the page. |
+| params | Object | No | Parameters carried when returning to the page. |
 
 **Example**
 

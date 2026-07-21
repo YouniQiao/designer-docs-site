@@ -16,6 +16,7 @@ Provides APIs for message digest operations. Before using any API of the **Md** 
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="digest"></a>
 ## digest
 
 ```TypeScript
@@ -42,7 +43,7 @@ Generates a message digest. This API uses an asynchronous callback to return the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DataBlob> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the message digest obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DataBlob&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the message digest obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ function mdByCallback() {
 
 ```
 
+<a id="digest-1"></a>
 ## digest
 
 ```TypeScript
@@ -93,7 +95,7 @@ Generates a message digest. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DataBlob> | Promise used to return the message digest generated. |
+| Promise&lt;DataBlob&gt; | Promise used to return the message digest generated. |
 
 **Error codes:**
 
@@ -207,6 +209,7 @@ export default {
 
 ```
 
+<a id="digestsync"></a>
 ## digestSync
 
 ```TypeScript
@@ -332,6 +335,7 @@ export default {
 
 ```
 
+<a id="getmdlength"></a>
 ## getMdLength
 
 ```TypeScript
@@ -378,6 +382,7 @@ function getLength() {
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -389,7 +394,7 @@ Updates the message digest status. This API uses an asynchronous callback to ret
 > **NOTE**  
 >  
 > For details about the code for calling **update** multiple times in a message digest operation, see  
-> [Generating an MD by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
+> [Generating an MD by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
 > .
 
 **Since:** 9
@@ -411,7 +416,7 @@ Updates the message digest status. This API uses an asynchronous callback to ret
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | input | [DataBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-cert-datablob-i.md) | Yes | Data to pass in. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -421,6 +426,7 @@ Updates the message digest status. This API uses an asynchronous callback to ret
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -432,7 +438,7 @@ Updates the message digest status. This API uses a promise to return the result.
 > **NOTE**  
 >  
 > For details about the code for calling **update** multiple times in a message digest operation, see  
-> [Generating an MD by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
+> [Generating an MD by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
 > .
 
 **Since:** 9
@@ -457,7 +463,7 @@ Updates the message digest status. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -467,6 +473,7 @@ Updates the message digest status. This API uses a promise to return the result.
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
@@ -478,7 +485,7 @@ Updates the message digest status. This API returns the result synchronously. **
 > **NOTE**  
 >  
 > For details about the code for calling **updateSync** multiple times in a message digest operation, see  
-> [Generating an MD by Passing In Data by Segment](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
+> [Generating an MD by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
 > .
 
 <br><br>**NOTE**<br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.

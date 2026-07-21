@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="setcbconfig"></a>
 ## setCBConfig
 
 ```TypeScript
@@ -29,7 +30,7 @@ Turn on or off Cell BroadCast.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [CBConfigOptions](arkts-telephony-sms-cbconfigoptions-i-sys.md) | Yes | Indicates cell broadcast configuration options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setCBConfig. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setCBConfig. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ sms.setCBConfig(cbConfigOptions, (err: BusinessError) => {
 ```
 
 
+<a id="setcbconfig-1"></a>
 ## setCBConfig
 
 ```TypeScript
@@ -91,7 +93,7 @@ Turn on or off Cell BroadCast.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setCBConfig. |
+| Promise&lt;void&gt; | The promise returned by the setCBConfig. |
 
 **Error codes:**
 

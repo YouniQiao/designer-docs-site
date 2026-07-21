@@ -6,6 +6,7 @@
 import { formProvider } from '@kit.FormKit';
 ```
 
+<a id="getpublishedforminfobyid"></a>
 ## getPublishedFormInfoById
 
 ```TypeScript
@@ -41,7 +42,7 @@ Obtains the information of the widget that has been added to the home screen on 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<formInfo.FormInfo> | Promise used to return the information obtained. |
+| Promise&lt;formInfo.FormInfo&gt; | Promise used to return the information obtained. |
 
 **Error codes:**
 

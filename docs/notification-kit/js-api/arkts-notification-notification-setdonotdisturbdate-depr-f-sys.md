@@ -1,5 +1,6 @@
 # setDoNotDisturbDate (System API)
 
+<a id="setdonotdisturbdate"></a>
 ## setDoNotDisturbDate
 
 ```TypeScript
@@ -27,9 +28,10 @@ Sets the DND time. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | date | [DoNotDisturbDate](arkts-notification-notificationmanager-donotdisturbdate-i-sys.md) | Yes | DND time to set. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 
+<a id="setdonotdisturbdate-1"></a>
 ## setDoNotDisturbDate
 
 ```TypeScript
@@ -62,9 +64,10 @@ Sets the DND time. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 
+<a id="setdonotdisturbdate-2"></a>
 ## setDoNotDisturbDate
 
 ```TypeScript
@@ -93,9 +96,10 @@ Sets the DND time for a specified user. This API uses an asynchronous callback t
 | --- | --- | --- | --- |
 | date | [DoNotDisturbDate](arkts-notification-notificationmanager-donotdisturbdate-i-sys.md) | Yes | DND time to set. |
 | userId | number | Yes | ID of the user for whom you want to set the DND time. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 
+<a id="setdonotdisturbdate-3"></a>
 ## setDoNotDisturbDate
 
 ```TypeScript
@@ -129,5 +133,5 @@ Sets the DND time for a specified user. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 

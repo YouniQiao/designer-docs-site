@@ -14,6 +14,7 @@ Before calling any of the following APIs to manage the calendar, you must use [g
 import { calendarManager } from '@kit.CalendarKit';
 ```
 
+<a id="createcalendar"></a>
 ## createCalendar
 
 ```TypeScript
@@ -40,7 +41,7 @@ Creates a Calendar object based on the calendar account information.This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Calendar> | Promise used to return the created Calendar object. |
+| Promise&lt;Calendar&gt; | Promise used to return the created Calendar object. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ calendarMgr?.createCalendar(calendarAccount).then((data: calendarManager.Calenda
 
 ```
 
+<a id="createcalendar-1"></a>
 ## createCalendar
 
 ```TypeScript
@@ -94,7 +96,7 @@ Creates a Calendar object based on the calendar account information.This API use
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | calendarAccount | [CalendarAccount](arkts-calendar-calendarmanager-calendaraccount-i.md) | Yes | Calendar account information. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Calendar> | Yes | Callback used to return the created Calendar object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Calendar&gt; | Yes | Callback used to return the created Calendar object. |
 
 **Error codes:**
 
@@ -132,6 +134,7 @@ try {
 
 ```
 
+<a id="deletecalendar"></a>
 ## deleteCalendar
 
 ```TypeScript
@@ -158,7 +161,7 @@ Deletes a specified Calendar object. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -202,6 +205,7 @@ calendarMgr?.createCalendar(calendarAccount).then((data: calendarManager.Calenda
 
 ```
 
+<a id="deletecalendar-1"></a>
 ## deleteCalendar
 
 ```TypeScript
@@ -223,7 +227,7 @@ Deletes a specified Calendar object. This API uses an asynchronous callback to r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | calendar | [Calendar](../../apis-localization-kit/arkts-apis/arkts-localization-i18n-calendar-c.md) | Yes | Calendar object to delete. The default account cannot be deleted. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Asynchronous callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Asynchronous callback that returns no value. |
 
 **Error codes:**
 
@@ -270,6 +274,7 @@ calendarMgr?.createCalendar(calendarAccount).then((data: calendarManager.Calenda
 
 ```
 
+<a id="editevent"></a>
 ## editEvent
 
 ```TypeScript
@@ -298,7 +303,7 @@ Events created using this API can be obtained and modified by the system calenda
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the event ID. The event ID is the unique identifier of an event and is the auto-increment primary key of the database. If the event creation fails, no value is returned; if the value is less than **0**, the event creation is canceled; if the value is greater than **0**, the event creation is successful. The return value cannot be **0** |
+| Promise&lt;number&gt; | Promise used to return the event ID. The event ID is the unique identifier of an event and is the auto-increment primary key of the database. If the event creation fails, no value is returned; if the value is less than **0**, the event creation is canceled; if the value is greater than **0**, the event creation is successful. The return value cannot be **0** |
 
 **Example**
 
@@ -320,6 +325,7 @@ calendarMgr?.editEvent(event).then((eventId: number): void => {
 
 ```
 
+<a id="getallcalendars"></a>
 ## getAllCalendars
 
 ```TypeScript
@@ -340,7 +346,7 @@ Obtains the created and default Calendar objects of the current application.This
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Calendar[]> | Promise used to return an array of obtained Calendar objects. |
+| Promise&lt;Calendar[]&gt; | Promise used to return an array of obtained Calendar objects. |
 
 **Error codes:**
 
@@ -373,6 +379,7 @@ calendarMgr?.getAllCalendars().then((data: calendarManager.Calendar[]) => {
 
 ```
 
+<a id="getallcalendars-1"></a>
 ## getAllCalendars
 
 ```TypeScript
@@ -393,7 +400,7 @@ Obtains the created and default Calendar objects of the current application.This
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Calendar[]> | Yes | Callback used to return an array of the obtained Calendar objects. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Calendar[]&gt; | Yes | Callback used to return an array of the obtained Calendar objects. |
 
 **Error codes:**
 
@@ -426,6 +433,7 @@ calendarMgr?.getAllCalendars((err: BusinessError, data: calendarManager.Calendar
 
 ```
 
+<a id="getcalendar"></a>
 ## getCalendar
 
 ```TypeScript
@@ -454,7 +462,7 @@ Obtains the default or specified Calendar object. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Calendar> | the promise returned by the function. |
+| Promise&lt;Calendar&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -483,6 +491,7 @@ calendarMgr?.getCalendar().then((data: calendarManager.Calendar) => {
 
 ```
 
+<a id="getcalendar-1"></a>
 ## getCalendar
 
 ```TypeScript
@@ -506,7 +515,7 @@ Obtains a specified Calendar object. This API uses an asynchronous callback to r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | calendarAccount | [CalendarAccount](arkts-calendar-calendarmanager-calendaraccount-i.md) | Yes | Calendar account information. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Calendar> | Yes | Callback used to return the obtained Calendar object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Calendar&gt; | Yes | Callback used to return the obtained Calendar object. |
 
 **Error codes:**
 
@@ -547,6 +556,7 @@ calendarMgr?.createCalendar(calendarAccount).then((data: calendarManager.Calenda
 
 ```
 
+<a id="getcalendar-2"></a>
 ## getCalendar
 
 ```TypeScript
@@ -569,7 +579,7 @@ Obtains the default Calendar object, which is created when the data storage runs
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Calendar> | Yes | Callback used to return the obtained Calendar object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Calendar&gt; | Yes | Callback used to return the obtained Calendar object. |
 
 **Error codes:**
 

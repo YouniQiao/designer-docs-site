@@ -6,6 +6,7 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="download"></a>
 ## download
 
 ```TypeScript
@@ -18,7 +19,7 @@ Downloads a file. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** downloadFile(context:
+**Substitutes:** [downloadFile(context:](arkts-basicservices-request-downloadfile-f.md#downloadfile-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -33,7 +34,7 @@ Downloads a file. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [DownloadConfig](arkts-basicservices-request-downloadconfig-i.md) | Yes | Download configuration. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<DownloadTask> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DownloadTask** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;DownloadTask&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the **DownloadTask** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ filePath: 'xxx/xxxxx.hap'}, (err: BusinessError, data: request.DownloadTask) => 
 ```
 
 
+<a id="download-1"></a>
 ## download
 
 ```TypeScript
@@ -70,7 +72,7 @@ Downloads a file. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** downloadFile(context:
+**Substitutes:** [downloadFile(context:](arkts-basicservices-request-downloadfile-f.md#downloadfile-1)
 
 **Required permissions:** ohos.permission.INTERNET
 
@@ -90,7 +92,7 @@ Downloads a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DownloadTask> | Promise used to return the **DownloadTask** object. |
+| Promise&lt;DownloadTask&gt; | Promise used to return the **DownloadTask** object. |
 
 **Error codes:**
 

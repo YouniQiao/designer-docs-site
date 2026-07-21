@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface ArrayConstructor--><!--Device-unnamed-interface ArrayConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -22,6 +23,7 @@ new(arrayLength?: number): any[]
 | --- | --- |
 | any[] |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -42,6 +44,7 @@ new <T>(arrayLength: number): T[]
 | --- | --- |
 | T[] |  |
 
+<a id="constructor-2"></a>
 ## constructor
 
 ```TypeScript
@@ -62,6 +65,7 @@ new <T>(...items: T[]): T[]
 | --- | --- |
 | T[] |  |
 
+<a id="constructor-3"></a>
 ## constructor
 
 ```TypeScript
@@ -82,6 +86,7 @@ new <T>(...items: T[]): T[]
 | --- | --- |
 | any[] |  |
 
+<a id="constructor-4"></a>
 ## constructor
 
 ```TypeScript
@@ -102,6 +107,7 @@ new <T>(...items: T[]): T[]
 | --- | --- |
 | T[] |  |
 
+<a id="constructor-5"></a>
 ## constructor
 
 ```TypeScript
@@ -122,6 +128,7 @@ new <T>(...items: T[]): T[]
 | --- | --- |
 | T[] |  |
 
+<a id="isarray"></a>
 ## isArray
 
 ```TypeScript

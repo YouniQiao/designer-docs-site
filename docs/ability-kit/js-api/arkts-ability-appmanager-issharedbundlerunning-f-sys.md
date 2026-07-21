@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="issharedbundlerunning"></a>
 ## isSharedBundleRunning
 
 ```TypeScript
@@ -35,7 +36,7 @@ Checks whether the shared library is in use. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if the shared library is in use, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if the shared library is in use, **false** otherwise. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ appManager.isSharedBundleRunning(bundleName, versionCode).then((data) => {
 ```
 
 
+<a id="issharedbundlerunning-1"></a>
 ## isSharedBundleRunning
 
 ```TypeScript
@@ -88,7 +90,7 @@ Checks whether the shared library is in use. This API uses an asynchronous callb
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name of the shared library. |
 | versionCode | number | Yes | Version number of the shared library. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. **true** if the shared library is in use, **false** otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. **true** if the shared library is in use, **false** otherwise. |
 
 **Error codes:**
 

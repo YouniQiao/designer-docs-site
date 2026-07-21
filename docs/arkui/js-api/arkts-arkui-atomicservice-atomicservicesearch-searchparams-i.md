@@ -274,7 +274,7 @@ letterSpacing?: number | string | Resource
 
 Called when the distance between text fonts is set.
 
-**Type:** number | string | Resource
+**Type:** number \| string \| Resource
 
 **Since:** 18
 
@@ -292,7 +292,7 @@ maxFontSize?: number | string | Resource
 
 Called when the maximum font size of the font is set.
 
-**Type:** number | string | Resource
+**Type:** number \| string \| Resource
 
 **Since:** 18
 
@@ -328,7 +328,7 @@ minFontSize?: number | string | Resource
 
 Called when the minimum font size of the font is set.
 
-**Type:** number | string | Resource
+**Type:** number \| string \| Resource
 
 **Since:** 18
 
@@ -382,7 +382,7 @@ onCopy?: Callback<string>
 
 Called when using the Clipboard menu.
 
-**Type:** Callback<string>
+**Type:** Callback&lt;string&gt;
 
 **Since:** 18
 
@@ -400,7 +400,7 @@ onCut?: Callback<string>
 
 Called when using the Clipboard menu.
 
-**Type:** Callback<string>
+**Type:** Callback&lt;string&gt;
 
 **Since:** 18
 
@@ -418,7 +418,7 @@ onDidDelete?: Callback<DeleteValue>
 
 Get text value information when the deletion has been completed.
 
-**Type:** Callback<DeleteValue>
+**Type:** Callback&lt;DeleteValue&gt;
 
 **Since:** 18
 
@@ -436,7 +436,7 @@ onDidInsert?: Callback<InsertValue>
 
 Get text value information when completed input.
 
-**Type:** Callback<InsertValue>
+**Type:** Callback&lt;InsertValue&gt;
 
 **Since:** 18
 
@@ -454,7 +454,7 @@ onEditChange?: Callback<boolean>
 
 Called when judging whether the text editing change finished.
 
-**Type:** Callback<boolean>
+**Type:** Callback&lt;boolean&gt;
 
 **Since:** 18
 
@@ -490,7 +490,7 @@ onSubmit?: Callback<string> | SearchSubmitCallback
 
 Call the function when clicked the search button.
 
-**Type:** Callback<string> | SearchSubmitCallback
+**Type:** Callback&lt;string&gt; \| SearchSubmitCallback
 
 **Since:** 18
 
@@ -526,7 +526,7 @@ onWillDelete?: Callback<DeleteValue, boolean>
 
 Get text value information when about to delete.
 
-**Type:** Callback<DeleteValue, boolean>
+**Type:** Callback&lt;DeleteValue, boolean&gt;
 
 **Since:** 18
 
@@ -544,7 +544,7 @@ onWillInsert?: Callback<InsertValue, boolean>
 
 Get text value information when about to input.
 
-**Type:** Callback<InsertValue, boolean>
+**Type:** Callback&lt;InsertValue, boolean&gt;
 
 **Since:** 18
 
@@ -634,7 +634,7 @@ searchIcon?: IconOptions | SymbolGlyphModifier
 
 Set the search icon style.
 
-**Type:** IconOptions | SymbolGlyphModifier
+**Type:** IconOptions \| SymbolGlyphModifier
 
 **Since:** 18
 

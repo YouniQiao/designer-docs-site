@@ -27,7 +27,7 @@ Authentication trust level. The authentication trust level determines the securi
 - **ATL3**: Applies to high-security scenarios such as device unlocking.  
 - **ATL4**: Applies to high-security scenarios such as small-amount payment.
 
-For details, see [Principles for Classifying Biometric Authentication Trust Levels](../../../../security/UserAuthenticationKit/user-authentication-overview.md#principles-for-classifying-biometric-authentication-trust-levels).
+For details, see [Principles for Classifying Biometric Authentication Trust Levels](docroot://security/UserAuthenticationKit/user-authentication-overview.md#principles-for-classifying-biometric-authentication-trust-levels).
 
 **Type:** AuthTrustLevel
 
@@ -101,7 +101,7 @@ skipLockedBiometricAuth?: boolean
 
 Whether to skip the authentication mode that has been locked and automatically switch to another authentication mode. If no authentication mode can be switched to, the component is disabled and an authentication freezing error code is returned.
 
-- **true**: When biometric authentication is locked, the system skips the countdown screen and directly switches to another authentication type (for example, from the locked fingerprint to the face or PIN). This is applicable to scenarios where quick authentication is required.  
+- **true**: When biometric authentication is locked, the system skips the countdown screen and directly switches to another authentication type (for example, from the locked fingerprint to the PIN). This is applicable to scenarios where quick authentication is required.  
 - **false** (default): The system does not skip the countdown screen. The user needs to wait until the countdown ends before attempting the authentication method again or manually switching to another method.
 
 **Type:** boolean

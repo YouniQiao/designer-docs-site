@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createavplayer"></a>
 ## createAVPlayer
 
 ```TypeScript
@@ -39,7 +40,7 @@ Creates an AVPlayer instance. This API uses an asynchronous callback to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVPlayer> | Yes | Callback used to return the result. If the operation is successful,an AVPlayer instance is returned; otherwise, **null** is returned. The instance can be used to play audio and video. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVPlayer&gt; | Yes | Callback used to return the result. If the operation is successful,an AVPlayer instance is returned; otherwise, **null** is returned. The instance can be used to play audio and video. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ media.createAVPlayer((error: BusinessError, video: media.AVPlayer) => {
 ```
 
 
+<a id="createavplayer-1"></a>
 ## createAVPlayer
 
 ```TypeScript
@@ -98,7 +100,7 @@ Creates an AVPlayer instance. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVPlayer> | Promise used to return the result. If the operation is successful, an AVPlayer instance is returned for audio and video playback. Otherwise, **null** is returned. |
+| Promise&lt;AVPlayer&gt; | Promise used to return the result. If the operation is successful, an AVPlayer instance is returned for audio and video playback. Otherwise, **null** is returned. |
 
 **Error codes:**
 

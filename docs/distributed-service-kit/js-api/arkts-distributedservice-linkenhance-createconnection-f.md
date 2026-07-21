@@ -6,6 +6,7 @@
 import { linkEnhance } from '@kit.DistributedServiceKit';
 ```
 
+<a id="createconnection"></a>
 ## createConnection
 
 ```TypeScript
@@ -28,7 +29,7 @@ Creates a **Connection** object on the device that functions as the client. The 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| deviceId | string | Yes | Device ID of the peer device, that is, the BLE MAC address of the peer device. For details about how to obtain the BLE MAC address, see [BLE Advertising and Scanning](../../../../connectivity/bluetooth/ble-development-guide.md). |
+| deviceId | string | Yes | Device ID of the peer device, that is, the BLE MAC address of the peer device. For details about how to obtain the BLE MAC address, see [BLE Advertising and Scanning](docroot://connectivity/bluetooth/ble-development-guide.md). |
 | name | string | Yes | Server name of the device to be connected. The value is a string of up to 255 bytes. It cannot be empty. |
 
 **Return value:**

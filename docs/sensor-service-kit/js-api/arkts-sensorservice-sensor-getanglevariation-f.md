@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getanglevariation"></a>
 ## getAngleVariation
 
 ```TypeScript
@@ -27,9 +28,9 @@ Obtains the angle change between two rotation matrices. This API uses an asynchr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| currentRotationMatrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Current rotation matrix. |
-| preRotationMatrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | The other rotation matrix. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the angle change around the z, x, and y axes, in degrees. |
+| currentRotationMatrix | Array&lt;number&gt; | Yes | Current rotation matrix. |
+| preRotationMatrix | Array&lt;number&gt; | Yes | The other rotation matrix. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the angle change around the z, x, and y axes, in degrees. |
 
 **Error codes:**
 
@@ -78,6 +79,7 @@ try {
 ```
 
 
+<a id="getanglevariation-1"></a>
 ## getAngleVariation
 
 ```TypeScript
@@ -96,14 +98,14 @@ Obtains the angle change between two rotation matrices. This API uses a promise 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| currentRotationMatrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | Current rotation matrix. |
-| preRotationMatrix | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | The other rotation matrix. |
+| currentRotationMatrix | Array&lt;number&gt; | Yes | Current rotation matrix. |
+| preRotationMatrix | Array&lt;number&gt; | Yes | The other rotation matrix. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the angle change around the z, x, and y axes, in degrees. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the angle change around the z, x, and y axes, in degrees. |
 
 **Error codes:**
 

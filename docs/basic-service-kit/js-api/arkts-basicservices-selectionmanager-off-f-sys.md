@@ -6,6 +6,7 @@
 import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="off"></a>
 ## off('selectionCompleted')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Unregisters the callback used to listen for the word selection completion event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selectionCompleted' | Yes | Event type, which is **'selectionCompleted'**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SelectionInfo> | No | Callback used to return SelectionInfo. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SelectionInfo&gt; | No | Callback used to return SelectionInfo. If this parameter is not specified, this API unregisters all callbacks for the specified type. |
 
 **Example**
 

@@ -8,7 +8,7 @@ A non-linear data structure.
 > This section uses the following to identify the use of generics:
 
 - K: key.  
-- V: value.The K and V types must be any of the [sendable data types](../../../../arkts-utils/arkts-sendable.md#sendable-data-types).**Decorator**: \@Sendable
+- V: value.The K and V types must be any of the [sendable data types](docroot://arkts-utils/arkts-sendable.md#sendable-data-types).**Decorator**: \@Sendable
 
 **Since:** 12
 
@@ -24,6 +24,7 @@ A non-linear data structure.
 import { collections } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -44,7 +45,7 @@ Returns an iterator, each item of which is a JavaScript object.NOTE:This API can
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | Iterator object that yields key-value pairs. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | Iterator object that yields key-value pairs. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ Returns an iterator, each item of which is a JavaScript object.NOTE:This API can
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The Symbol.iterator method cannot be bound. |
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -75,6 +77,7 @@ Removes all elements from this ArkTS map.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The clear method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -103,6 +106,7 @@ A constructor used to create an ArkTS map.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The ArkTS Map's constructor cannot be directly invoked. |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -123,7 +127,7 @@ A constructor used to create an ArkTS map.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| iterable | [Iterable](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterable-i.md)<readonly [K, V]> | Yes | Object used to construct the ArkTS map. |
+| iterable | Iterable&lt;readonly [K, V]&gt; | Yes | Object used to construct the ArkTS map. |
 
 **Error codes:**
 
@@ -131,6 +135,7 @@ A constructor used to create an ArkTS map.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The ArkTS Map's constructor cannot be directly invoked. |
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -166,6 +171,7 @@ Deletes a specified key from this ArkTS map.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The delete method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -186,7 +192,7 @@ Returns a map iterator object that contains the key-value pair of each element i
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[K, V]> | Map iterator object. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[K, V]&gt; | Map iterator object. |
 
 **Error codes:**
 
@@ -195,6 +201,7 @@ Returns a map iterator object that contains the key-value pair of each element i
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The entries method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -215,7 +222,7 @@ Calls a callback function for each key-value pair in this ArkTS map.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: V, key: K, map: Map<K, V>) => void | Yes | Callback function to run for each key-value pair. |
+| callbackFn | (value: V, key: K, map: Map&lt;K, V&gt;) =&gt; void | Yes | Callback function to run for each key-value pair. |
 
 **Error codes:**
 
@@ -224,6 +231,7 @@ Calls a callback function for each key-value pair in this ArkTS map.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The forEach method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -259,6 +267,7 @@ Obtains the value of the specified key in this ArkTS map.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The get method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -294,6 +303,7 @@ Checks whether a key exists in this ArkTS map.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The has method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -314,7 +324,7 @@ Returns a map iterator object that contains the key of each element in this ArkT
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<K> | Map iterator object. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;K&gt; | Map iterator object. |
 
 **Error codes:**
 
@@ -323,6 +333,7 @@ Returns a map iterator object that contains the key of each element in this ArkT
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The keys method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -350,7 +361,7 @@ Adds or updates a key-value pair to this ArkTS map.
 
 | Type | Description |
 | --- | --- |
-| [Map](../../apis-na/arkts-apis/arkts-na-lib-es2015-collection-map-i.md)<K, V> | New map obtained. |
+| Map&lt;K, V&gt; | New map obtained. |
 
 **Error codes:**
 
@@ -359,6 +370,7 @@ Adds or updates a key-value pair to this ArkTS map.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The set method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -379,7 +391,7 @@ Returns a map iterator object that contains the value of each element in this Ar
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<V> | Map iterator object. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;V&gt; | Map iterator object. |
 
 **Error codes:**
 

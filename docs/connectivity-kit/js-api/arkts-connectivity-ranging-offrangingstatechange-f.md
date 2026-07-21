@@ -6,6 +6,7 @@
 import { ranging } from '@kit.ConnectivityKit';
 ```
 
+<a id="offrangingstatechange"></a>
 ## offRangingStateChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe from ranging state change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RangingStateChangeInfo> | No | Callback used to listen to the ranging state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RangingStateChangeInfo&gt; | No | Callback used to listen to the ranging state. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Helper functions to access photos and albums.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="applychanges"></a>
 ## applyChanges
 
 ```TypeScript
@@ -42,7 +43,7 @@ Applies media changes. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ Applies media changes. This API uses a promise to return the result.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
+<a id="checkphotourisreadpermission"></a>
 ## checkPhotoUrisReadPermission
 
 ```TypeScript
@@ -78,7 +80,7 @@ Query whether the assets exist and whether the invoker has read permission on th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Map<string, MediaAssetPermissionState>> | - Returns whether the assets exist and whether the invoker has read permission on the assets without permission. |
+| Promise&lt;Map&lt;string, MediaAssetPermissionState&gt;&gt; | - Returns whether the assets exist and whether the invoker has read permission on the assets without permission. |
 
 **Error codes:**
 
@@ -87,6 +89,7 @@ Query whether the assets exist and whether the invoker has read permission on th
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario-specific parameters are incorrect. Possible causes are as follows:<br>1. The length of the input parameter queue is greater than 500.<br>2. The input parameter is null or undefined. |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="createasset"></a>
 ## createAsset
 
 ```TypeScript
@@ -95,7 +98,7 @@ createAsset(photoType: PhotoType, extension: string, options: CreateOptions, cal
 
 Creates an image or video asset with the specified file type, file name extension, and options. This API uses an asynchronous callback to return the result.
 
-If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component or an authorization pop-up. For details, see [Saving Media Assets](../../../../media/medialibrary/photoAccessHelper-savebutton.md).
+If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component or an authorization pop-up. For details, see [Saving Media Assets](docroot://media/medialibrary/photoAccessHelper-savebutton.md).
 
 **Since:** 10
 
@@ -113,8 +116,8 @@ If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can 
 | --- | --- | --- | --- |
 | photoType | [PhotoType](arkts-medialibrary-sendablephotoaccesshelper-phototype-e.md) | Yes | Type of the file to create, which can be **IMAGE** or **VIDEO**. |
 | extension | string | Yes | File name extension, for example, **'jpg'**. |
-| options | [CreateOptions](arkts-medialibrary-photoaccesshelper-createoptions-i.md) | Yes | Options used for creation. Currently, only **title** is supported, for example, **{title: 'testPhoto'}**.<br>**NOTE**<br>If a **subtype** option is passed, the configuration does not take effect. Only DEFAULT images can be saved.<br>The file name must not contain any invalid characters, which are:.. \ / : * ? " ' ` &lt; &gt; \| { } [ ] |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the URI of the created image or video asset. |
+| options | [CreateOptions](arkts-medialibrary-photoaccesshelper-createoptions-i.md) | Yes | Options used for creation. Currently, only **title** is supported, for example, **{title: 'testPhoto'}**.<br>**NOTE**<br>If a **subtype** option is passed, the configuration does not take effect. Only DEFAULT images can be saved.<br>The file name must not contain any invalid characters, which are:.. \ / : * ? " ' ` < > \| { } [ ] |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the URI of the created image or video asset. |
 
 **Error codes:**
 
@@ -126,6 +129,7 @@ If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can 
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="createasset-1"></a>
 ## createAsset
 
 ```TypeScript
@@ -134,7 +138,7 @@ createAsset(photoType: PhotoType, extension: string, callback: AsyncCallback<str
 
 Creates an image or video asset with the specified file type and file name extension. This API uses an asynchronous callback to return the result.
 
-If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component or an authorization pop-up. For details, see [Saving Media Assets](../../../../media/medialibrary/photoAccessHelper-savebutton.md).
+If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component or an authorization pop-up. For details, see [Saving Media Assets](docroot://media/medialibrary/photoAccessHelper-savebutton.md).
 
 **Since:** 10
 
@@ -152,7 +156,7 @@ If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can 
 | --- | --- | --- | --- |
 | photoType | [PhotoType](arkts-medialibrary-sendablephotoaccesshelper-phototype-e.md) | Yes | Type of the file to create, which can be **IMAGE** or **VIDEO**. |
 | extension | string | Yes | File name extension, for example, **'jpg'**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the URI of the created image or video asset. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the URI of the created image or video asset. |
 
 **Error codes:**
 
@@ -164,6 +168,7 @@ If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can 
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="createasset-2"></a>
 ## createAsset
 
 ```TypeScript
@@ -172,7 +177,7 @@ createAsset(photoType: PhotoType, extension: string, options?: CreateOptions): P
 
 Creates an image or video asset with the specified file type, file name extension, and options. This API uses a promise to return the result.
 
-If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component or an authorization pop-up. For details, see [Saving Media Assets](../../../../media/medialibrary/photoAccessHelper-savebutton.md).
+If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component or an authorization pop-up. For details, see [Saving Media Assets](docroot://media/medialibrary/photoAccessHelper-savebutton.md).
 
 **Since:** 10
 
@@ -190,13 +195,13 @@ If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can 
 | --- | --- | --- | --- |
 | photoType | [PhotoType](arkts-medialibrary-sendablephotoaccesshelper-phototype-e.md) | Yes | Type of the file to create, which can be **IMAGE** or **VIDEO**. |
 | extension | string | Yes | File name extension, for example, **'jpg'**. |
-| options | [CreateOptions](arkts-medialibrary-photoaccesshelper-createoptions-i.md) | No | Options used for creation. Currently, only **title** is supported, for example, **{title: 'testPhoto'}**.<br>**NOTE**<br>If a **subtype** option is passed, the configuration does not take effect. Only DEFAULT images can be saved.<br>The file name must not contain any invalid characters, which are:.. \ / : * ? " ' ` &lt; &gt; \| { } [ ] |
+| options | [CreateOptions](arkts-medialibrary-photoaccesshelper-createoptions-i.md) | No | Options used for creation. Currently, only **title** is supported, for example, **{title: 'testPhoto'}**.<br>**NOTE**<br>If a **subtype** option is passed, the configuration does not take effect. Only DEFAULT images can be saved.<br>The file name must not contain any invalid characters, which are:.. \ / : * ? " ' ` < > \| { } [ ] |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URI of the created image or video asset. |
+| Promise&lt;string&gt; | Promise used to return the URI of the created image or video asset. |
 
 **Error codes:**
 
@@ -208,6 +213,7 @@ If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can 
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="createassetwithshorttermpermission"></a>
 ## createAssetWithShortTermPermission
 
 ```TypeScript
@@ -236,7 +242,7 @@ Within 5 minutes after the user agrees to save the asset, if the same applicatio
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URI of the asset saved. The URIs are granted with the permission for the application to write data. If the URIs fail to be generated, a batch creation error code will be returned.<br>The error code **-3006** means that there are invalid characters; **-2004** means that the image type does not match the file name extension; **-203** means that the file operation is abnormal. |
+| Promise&lt;string&gt; | Promise used to return the URI of the asset saved. The URIs are granted with the permission for the application to write data. If the URIs fail to be generated, a batch creation error code will be returned.<br>The error code **-3006** means that there are invalid characters; **-2004** means that the image type does not match the file name extension; **-203** means that the file operation is abnormal. |
 
 **Error codes:**
 
@@ -246,6 +252,7 @@ Within 5 minutes after the user agrees to save the asset, if the same applicatio
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
+<a id="createassetwithshorttermpermissionex"></a>
 ## createAssetWithShortTermPermissionEx
 
 ```TypeScript
@@ -284,7 +291,7 @@ Displays the dialog box for the first time for the user to confirm whether to sa
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URI of the media library file to the application. The application can use the returned URI to write data. |
+| Promise&lt;string&gt; | Promise used to return the URI of the media library file to the application. The application can use the returned URI to write data. |
 
 **Error codes:**
 
@@ -293,6 +300,7 @@ Displays the dialog box for the first time for the user to confirm whether to sa
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | 14000011 | Internal system error |
 
+<a id="createdeleterequest"></a>
 ## createDeleteRequest
 
 ```TypeScript
@@ -317,8 +325,8 @@ Creates a dialog box for deleting media files. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uriList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the media files to delete. A maximum of 300 media files can be deleted. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| uriList | Array&lt;string&gt; | Yes | URIs of the media files to delete. A maximum of 300 media files can be deleted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -329,6 +337,7 @@ Creates a dialog box for deleting media files. This API uses an asynchronous cal
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="createdeleterequest-1"></a>
 ## createDeleteRequest
 
 ```TypeScript
@@ -353,13 +362,13 @@ Creates a dialog box for deleting media files. This API uses a promise to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uriList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | URIs of the media files to delete. A maximum of 300 media files can be deleted. |
+| uriList | Array&lt;string&gt; | Yes | URIs of the media files to delete. A maximum of 300 media files can be deleted. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -370,6 +379,7 @@ Creates a dialog box for deleting media files. This API uses a promise to return
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="createphotoasset"></a>
 ## createPhotoAsset
 
 ```TypeScript
@@ -378,7 +388,7 @@ createPhotoAsset(photoType: PhotoType, extension: string, title?: string): Promi
 
 Creates an image or video resource with the specified file type, extension, and title. This API uses a promise to return the result.
 
-If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component or an authorization pop-up. For details, see [Saving Media Assets](../../../../media/medialibrary/photoAccessHelper-savebutton.md).
+If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can create a media asset by using a security component or an authorization pop-up. For details, see [Saving Media Assets](docroot://media/medialibrary/photoAccessHelper-savebutton.md).
 
 **Since:** 23
 
@@ -404,16 +414,17 @@ If you do not have the **ohos.permission.WRITE_IMAGEVIDEO** permission, you can 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URL of the created image or video. |
+| Promise&lt;string&gt; | Promise used to return the URL of the created image or video. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:<br>1. The extension format is unsupported<br>2. Title contains unsupported character, such as . .. \ / : * ? " ' ` &lt; &gt; \| { } [ ]<br>3. The title is an empty string<br>4. The total length of title and extension is more than 255 |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:<br>1. The extension format is unsupported<br>2. Title contains unsupported character, such as . .. \ / : * ? " ' ` < > \| { } [ ]<br>3. The title is an empty string<br>4. The total length of title and extension is more than 255 |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="getalbumidbylpath"></a>
 ## getAlbumIdByLpath
 
 ```TypeScript
@@ -442,7 +453,7 @@ This API supports the following albums: camera application album, screenshot app
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the album ID. |
+| Promise&lt;number&gt; | Promise used to return the album ID. |
 
 **Error codes:**
 
@@ -451,6 +462,7 @@ This API supports the following albums: camera application album, screenshot app
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The lpath is invalid, such as null, undefined and empty. |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="getalbums"></a>
 ## getAlbums
 
 ```TypeScript
@@ -491,7 +503,7 @@ Before the operation, ensure that the albums to obtain exist.
 | type | [AlbumType](arkts-medialibrary-photoaccesshelper-albumtype-e.md) | Yes | Type of the album. |
 | subtype | [AlbumSubtype](arkts-medialibrary-sendablephotoaccesshelper-albumsubtype-e.md) | Yes | Subtype of the album. |
 | options | [FetchOptions](arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Retrieval options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<Album>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -503,6 +515,7 @@ Before the operation, ensure that the albums to obtain exist.
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getalbums-1"></a>
 ## getAlbums
 
 ```TypeScript
@@ -527,7 +540,7 @@ Before the operation, ensure that the albums to obtain exist.
 | --- | --- | --- | --- |
 | type | [AlbumType](arkts-medialibrary-photoaccesshelper-albumtype-e.md) | Yes | Type of the album. |
 | subtype | [AlbumSubtype](arkts-medialibrary-sendablephotoaccesshelper-albumsubtype-e.md) | Yes | Subtype of the album. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<Album>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;Album&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -539,6 +552,7 @@ Before the operation, ensure that the albums to obtain exist.
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getalbums-2"></a>
 ## getAlbums
 
 ```TypeScript
@@ -569,7 +583,7 @@ Before the operation, ensure that the albums to obtain exist.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<Album>> | Promise used to return the result. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -581,6 +595,7 @@ Before the operation, ensure that the albums to obtain exist.
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getassets"></a>
 ## getAssets
 
 ```TypeScript
@@ -602,7 +617,7 @@ Obtains image and video assets. This API uses an asynchronous callback to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [FetchOptions](arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Retrieval options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<PhotoAsset>> | Yes | Callback function. If files from the album are obtained successfully, **err** is **undefined**, and **data** is the result set of the obtained image and video data ([FetchResult](arkts-file-photoaccesshelper.md)). Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Yes | Callback function. If files from the album are obtained successfully, **err** is **undefined**, and **data** is the result set of the obtained image and video data ([FetchResult](arkts-file-photoaccesshelper.md)). Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -614,6 +629,7 @@ Obtains image and video assets. This API uses an asynchronous callback to return
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getassets-1"></a>
 ## getAssets
 
 ```TypeScript
@@ -642,7 +658,7 @@ Obtains image and video assets. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<PhotoAsset>> | Promise used to return the image and video assets obtained. |
+| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Promise used to return the image and video assets obtained. |
 
 **Error codes:**
 
@@ -653,6 +669,7 @@ Obtains image and video assets. This API uses a promise to return the result.
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getburstassets"></a>
 ## getBurstAssets
 
 ```TypeScript
@@ -682,7 +699,7 @@ Obtains burst assets. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<PhotoAsset>> | Promise used to return the result. |
+| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -691,6 +708,7 @@ Obtains burst assets. This API uses a promise to return the result.
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | 14000011 | Internal system error |
 
+<a id="getphotopickercomponentdefaultalbumname"></a>
 ## getPhotoPickerComponentDefaultAlbumName
 
 ```TypeScript
@@ -711,7 +729,7 @@ Obtains the name of the album that the **PhotoPickerComponent** shows by default
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the name of the default album. |
+| Promise&lt;string&gt; | Promise used to return the name of the default album. |
 
 **Error codes:**
 
@@ -719,6 +737,7 @@ Obtains the name of the album that the **PhotoPickerComponent** shows by default
 | --- | --- |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. The IPC request timed out.<br>2. system running error |
 
+<a id="getrecentphotoinfo"></a>
 ## getRecentPhotoInfo
 
 ```TypeScript
@@ -745,8 +764,9 @@ Obtains the information about the recent image or video when the application use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RecentPhotoInfo> | Promise used to return the information about the recent image or video. |
+| Promise&lt;RecentPhotoInfo&gt; | Promise used to return the information about the recent image or video. |
 
+<a id="getsupportedphotoformats"></a>
 ## getSupportedPhotoFormats
 
 ```TypeScript
@@ -771,7 +791,7 @@ Obtains the list of image or video file name extensions supported by the media l
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return an array of the supported image or video file name extensions. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return an array of the supported image or video file name extensions. |
 
 **Error codes:**
 
@@ -780,6 +800,7 @@ Obtains the list of image or video file name extensions supported by the media l
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error. It is recommended to retry and check the logs. |
 
+<a id="off"></a>
 ## off('photoChange')
 
 ```TypeScript
@@ -801,7 +822,7 @@ Unregisters the listener for the **'photoChange'** event to stop monitoring medi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'photoChange' | Yes | Event type. The value is fixed at **'photoChange'**. After the unregistration is complete, any change to the media assets is no longer returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | No | Exact callback you previously registered with [on('photoChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#on-1). If this parameter is left unspecified, all listeners for the **'photoChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a media asset changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | No | Exact callback you previously registered with [on('photoChange')](photoAccessHelper.PhotoAccessHelper.on(type: 'photoChange', callback: Callback<PhotoAssetChangeInfos>)). If this parameter is left unspecified, all listeners for the **'photoChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when a media asset changes. |
 
 **Error codes:**
 
@@ -811,6 +832,7 @@ Unregisters the listener for the **'photoChange'** event to stop monitoring medi
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="off-1"></a>
 ## off('photoAlbumChange')
 
 ```TypeScript
@@ -832,7 +854,7 @@ Unregisters a listener for the **'photoAlbumChange'** event to stop monitoring a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'photoAlbumChange' | Yes | Event type. The value is fixed at **'photoAlbumChange'**. After the unregistration is complete, any change to the albums is no longer returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | No | Exact callback you previously registered with [on('photoAlbumChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#on-4). If this parameter is left unspecified, all listeners for the **'photoAlbumChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when an album changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | No | Exact callback you previously registered with [on('photoAlbumChange')](photoAccessHelper.PhotoAccessHelper.on(type: 'photoAlbumChange', callback: Callback<AlbumChangeInfos>)). If this parameter is left unspecified, all listeners for the **'photoAlbumChange'** event are unregistered.<br>**NOTE**<br>Once a specific callback is unregistered, it will not be invoked when an album changes. |
 
 **Error codes:**
 
@@ -842,6 +864,7 @@ Unregisters a listener for the **'photoAlbumChange'** event to stop monitoring a
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.<br>Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="offmedialibraryavailability"></a>
 ## offMediaLibraryAvailability
 
 ```TypeScript
@@ -864,7 +887,7 @@ Unsubscribes to changes of medialibrary availability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MediaLibraryAvailability> | No | Callback used to return the MediaLibraryAvailability. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MediaLibraryAvailability&gt; | No | Callback used to return the MediaLibraryAvailability. |
 
 **Error codes:**
 
@@ -873,6 +896,7 @@ Unsubscribes to changes of medialibrary availability.
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="offsinglephotoalbumchange"></a>
 ## offSinglePhotoAlbumChange
 
 ```TypeScript
@@ -896,7 +920,7 @@ Unregisters a listener for a single album. Note the following:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | album | [Album](arkts-medialibrary-sendablephotoaccesshelper-album-i.md) | No | Album for which the listener is unregistered. After the unregistration is complete,any change to the album is no longer returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | No | Callback used for the unregistration. If this parameter is not specified, all callbacks of the **album** parameter are unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | No | Callback used for the unregistration. If this parameter is not specified, all callbacks of the **album** parameter are unregistered. |
 
 **Error codes:**
 
@@ -906,6 +930,7 @@ Unregisters a listener for a single album. Note the following:
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="offsinglephotochange"></a>
 ## offSinglePhotoChange
 
 ```TypeScript
@@ -929,7 +954,7 @@ Unregisters the listener for a single asset. Note the following:
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | asset | [PhotoAsset](arkts-medialibrary-sendablephotoaccesshelper-photoasset-i.md) | No | Asset for which the listener is canceled. After the unregistration is complete,any change to the **asset** is no longer returned through the **callback**. If this parameter is not specified, all listeners for a single asset are unregistered. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | No | Callback used for the unregistration. If this parameter is not specified, all callbacks of the **asset** parameter are unregistered. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | No | Callback used for the unregistration. If this parameter is not specified, all callbacks of the **asset** parameter are unregistered. |
 
 **Error codes:**
 
@@ -939,6 +964,7 @@ Unregisters the listener for a single asset. Note the following:
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="on"></a>
 ## on('photoChange')
 
 ```TypeScript
@@ -960,7 +986,7 @@ Registers a listener for the **'photoChange'** event to monitor media asset chan
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'photoChange' | Yes | Event type. The value is fixed at **'photoChange'**. After the registration is complete, any change to the media assets is returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | Yes | Callback used to return the media asset information after change, which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('photoChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#off-1)to unregister all listeners or a specific one. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | Yes | Callback used to return the media asset information after change, which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('photoChange')](photoAccessHelper.PhotoAccessHelper.off(type: 'photoChange', callback?: Callback<PhotoAssetChangeInfos>))to unregister all listeners or a specific one. |
 
 **Error codes:**
 
@@ -970,6 +996,7 @@ Registers a listener for the **'photoChange'** event to monitor media asset chan
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.<br>Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="on-1"></a>
 ## on('photoAlbumChange')
 
 ```TypeScript
@@ -991,7 +1018,7 @@ Registers a listener for the **'photoAlbumChange'** event to monitor album chang
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'photoAlbumChange' | Yes | Event type. The value is fixed at **'photoAlbumChange'**. After the registration is complete, any change to the albums is returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | Yes | Callback used to return the album information after change,which is [AlbumChangeInfos](arkts-medialibrary-photoaccesshelper-albumchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('photoAlbumChange')](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#off-4)to unregister all listeners or a specific one. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | Yes | Callback used to return the album information after change,which is [AlbumChangeInfos](arkts-medialibrary-photoaccesshelper-albumchangeinfos-i.md).<br>**NOTE**<br>You can register multiple listeners using this API, and you can call [off('photoAlbumChange')](photoAccessHelper.PhotoAccessHelper.off(type: 'photoAlbumChange', callback?: Callback<AlbumChangeInfos>))to unregister all listeners or a specific one. |
 
 **Error codes:**
 
@@ -1001,6 +1028,7 @@ Registers a listener for the **'photoAlbumChange'** event to monitor album chang
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="onmedialibraryavailability"></a>
 ## onMediaLibraryAvailability
 
 ```TypeScript
@@ -1023,7 +1051,7 @@ Subscribes to changes of medialibrary availability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MediaLibraryAvailability> | Yes | Callback used to return the MediaLibraryAvailability. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MediaLibraryAvailability&gt; | Yes | Callback used to return the MediaLibraryAvailability. |
 
 **Error codes:**
 
@@ -1033,6 +1061,7 @@ Subscribes to changes of medialibrary availability.
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scenario-specific parameters are incorrect. Possible causes are as follows:<br>1. The input parameter is null or undefined. |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="onsinglephotoalbumchange"></a>
 ## onSinglePhotoAlbumChange
 
 ```TypeScript
@@ -1054,7 +1083,7 @@ Registers a listener for changes of a single common asset. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | album | [Album](arkts-medialibrary-sendablephotoaccesshelper-album-i.md) | Yes | Album to be listened for. After the registration is complete, any change to the albums is returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AlbumChangeInfos> | Yes | Callback used to return the album information after change,which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>This API can be used to register multiple different callbacks. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AlbumChangeInfos&gt; | Yes | Callback used to return the album information after change,which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>This API can be used to register multiple different callbacks. |
 
 **Error codes:**
 
@@ -1064,6 +1093,7 @@ Registers a listener for changes of a single common asset. This API uses an asyn
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="onsinglephotochange"></a>
 ## onSinglePhotoChange
 
 ```TypeScript
@@ -1085,7 +1115,7 @@ Registers a listener for changes of a single common asset. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | asset | [PhotoAsset](arkts-medialibrary-sendablephotoaccesshelper-photoasset-i.md) | Yes | Asset to be listened for. After the registration is complete, any change to the media assets is returned through the callback. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PhotoAssetChangeInfos> | Yes | Callback used to return the media asset information after change, which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>This API can be used to register multiple different callbacks. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PhotoAssetChangeInfos&gt; | Yes | Callback used to return the media asset information after change, which is [PhotoAssetChangeInfos](arkts-medialibrary-photoaccesshelper-photoassetchangeinfos-i.md).<br>**NOTE**<br>This API can be used to register multiple different callbacks. |
 
 **Error codes:**
 
@@ -1095,6 +1125,7 @@ Registers a listener for changes of a single common asset. This API uses an asyn
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="registerchange"></a>
 ## registerChange
 
 ```TypeScript
@@ -1115,7 +1146,7 @@ Registers listening for the specified URI. This API uses a callback to return th
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the photo asset, URI of the album, or [DefaultChangeUri](arkts-medialibrary-photoaccesshelper-defaultchangeuri-e.md). |
 | forChildUris | boolean | Yes | Whether to perform fuzzy listening.<br> If **uri** is the URI of an album, the value **true** means to listen for the changes of the files in the album; the value **false** means to listen for the changes of the album only.<br>If **uri** is the URI of a photoAsset, there is no difference between **true** and false for **forChildUris**.<br>If **uri** is **DefaultChangeUri**, **forChildUris** must be set to **true**. If **forChildUris** is false, the URI cannot be found and no message can be received. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ChangeData> | Yes | Callback used to return [ChangeData](arkts-medialibrary-photoaccesshelper-changedata-i.md). **NOTE**: Multiple callback listeners can be registered for a URI. You can use [unRegisterChange](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#unregisterchange-1) to unregister all listeners for the URI or a specified callback listener. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ChangeData&gt; | Yes | Callback used to return [ChangeData](arkts-medialibrary-photoaccesshelper-changedata-i.md). **NOTE**: Multiple callback listeners can be registered for a URI. You can use [unRegisterChange](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#unregisterchange-1) to unregister all listeners for the URI or a specified callback listener. |
 
 **Error codes:**
 
@@ -1125,6 +1156,7 @@ Registers listening for the specified URI. This API uses a callback to return th
 | 13900012 | Permission denied |
 | 13900020 | Invalid argument |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -1145,7 +1177,7 @@ Call this API when the APIs of the PhotoAccessHelper instance are no longer used
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1155,6 +1187,7 @@ Call this API when the APIs of the PhotoAccessHelper instance are no longer used
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -1175,7 +1208,7 @@ Call this API when the APIs of the PhotoAccessHelper instance are no longer used
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1185,6 +1218,7 @@ Call this API when the APIs of the PhotoAccessHelper instance are no longer used
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="requestphotourisreadpermission"></a>
 ## requestPhotoUrisReadPermission
 
 ```TypeScript
@@ -1205,13 +1239,13 @@ requestPhotoUrisReadPermission(srcFileUris: Array<string>): Promise<Array<string
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| srcFileUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | [URIs](../../../../file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be granted with the permission.<br>**NOTE**<br>Only image and video URIs are supported, and the maximum number of URIs is 100. |
+| srcFileUris | Array&lt;string&gt; | Yes | [URIs](docroot://file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be granted with the permission.<br>**NOTE**<br>Only image and video URIs are supported, and the maximum number of URIs is 100. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the URIs granted with the permission. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the URIs granted with the permission. |
 
 **Error codes:**
 
@@ -1220,6 +1254,7 @@ requestPhotoUrisReadPermission(srcFileUris: Array<string>): Promise<Array<string
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
+<a id="requestphotourisreadpermissionex"></a>
 ## requestPhotoUrisReadPermissionEx
 
 ```TypeScript
@@ -1244,13 +1279,13 @@ It contains the list of URIs that have been created and granted the save permiss
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| srcFileUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | [URIs](../../../../file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be granted with the permission.<br>**NOTE**<br>Only image and video URIs are supported, and the maximum number of URIs is 100. |
+| srcFileUris | Array&lt;string&gt; | Yes | [URIs](docroot://file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be granted with the permission.<br>**NOTE**<br>Only image and video URIs are supported, and the maximum number of URIs is 100. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RequestReadPermissionResult> | Promise used to return the list of URIs granted with the permission and the list of invalid URIs. |
+| Promise&lt;RequestReadPermissionResult&gt; | Promise used to return the list of URIs granted with the permission and the list of invalid URIs. |
 
 **Error codes:**
 
@@ -1258,6 +1293,7 @@ It contains the list of URIs that have been created and granted the save permiss
 | --- | --- |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error.It is recommended to retry and check the logs. Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="setassetcompatiblecapability"></a>
 ## setAssetCompatibleCapability
 
 ```TypeScript
@@ -1284,7 +1320,7 @@ Sets the asset compatibility capability. The system performs compatibility proce
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1293,6 +1329,7 @@ Sets the asset compatibility capability. The system performs compatibility proce
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The capability is invalid. |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. It is recommended to retry and check the logs.Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="showassetscreationdialog"></a>
 ## showAssetsCreationDialog
 
 ```TypeScript
@@ -1301,7 +1338,7 @@ showAssetsCreationDialog(srcFileUris: Array<string>, photoCreationConfigs: Array
 
 Displays a dialog box for the user to confirm whether to save the images or videos. If the user agrees to save the images or videos, this API returns a list of URIs that have been created and granted save permissions (this list is permanent), and the application can use these URIs to write the images or videos. If the user declines to save the images or videos, this API returns an empty list.
 
-The dialog box must display the application name, but this cannot be directly obtained. Therefore, before calling this API, ensure that the **label** and **icon** items are configured in the **abilities** tag in the [module.json5 configuration file](../../../../quick-start/module-configuration-file.md). Note that the icon is not affected by the **icon** item in the **abilities** tag and cannot be modified.
+The dialog box must display the application name, but this cannot be directly obtained. Therefore, before calling this API, ensure that the **label** and **icon** items are configured in the **abilities** tag in the [module.json5 configuration file](docroot://quick-start/module-configuration-file.md). Note that the icon is not affected by the **icon** item in the **abilities** tag and cannot be modified.
 
 > **NOTE**  
 >  
@@ -1319,14 +1356,14 @@ The dialog box must display the application name, but this cannot be directly ob
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| srcFileUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | [URIs](../../../../file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be saved to the media library.<br>**NOTE**<br>- A maximum of 100 images can be saved at a time.<br>- Only image and video URIs are supported.<br>- URIs cannot be manually constructed. You must call APIs to obtain them. For details, see [Obtaining a Media File URI](../../../../file-management/user-file-uri-intro.md#obtaining-a-media-file-uri). |
-| photoCreationConfigs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoCreationConfig> | Yes | Configuration for saving the images or videos,including the file names. The value must be consistent with that of **srcFileUris**.<br>**NOTE**<br>If a **subtype** option is passed, the configuration does not take effect. Only DEFAULT images can be saved. |
+| srcFileUris | Array&lt;string&gt; | Yes | [URIs](docroot://file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be saved to the media library.<br>**NOTE**<br>- A maximum of 100 images can be saved at a time.<br>- Only image and video URIs are supported.<br>- URIs cannot be manually constructed. You must call APIs to obtain them. For details, see [Obtaining a Media File URI](docroot://file-management/user-file-uri-intro.md#obtaining-a-media-file-uri). |
+| photoCreationConfigs | Array&lt;PhotoCreationConfig&gt; | Yes | Configuration for saving the images or videos,including the file names. The value must be consistent with that of **srcFileUris**.<br>**NOTE**<br>If a **subtype** option is passed, the configuration does not take effect. Only DEFAULT images can be saved. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return a URI list. The URIs are granted with the permission for the application to write data. If the URIs fail to be generated, a batch creation error code will be returned.<br>The return values are as follows:<br>- **-3006**: Invalid characters, which are not allowed.<br>-**-2004**: The image type does not match the file name extension.<br>-**-203**: Invalid file operation. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return a URI list. The URIs are granted with the permission for the application to write data. If the URIs fail to be generated, a batch creation error code will be returned.<br>The return values are as follows:<br>- **-3006**: Invalid characters, which are not allowed.<br>-**-2004**: The image type does not match the file name extension.<br>-**-203**: Invalid file operation. |
 
 **Error codes:**
 
@@ -1335,6 +1372,7 @@ The dialog box must display the application name, but this cannot be directly ob
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
+<a id="showassetscreationdialogex"></a>
 ## showAssetsCreationDialogEx
 
 ```TypeScript
@@ -1350,7 +1388,7 @@ Displays a dialog box for the user to confirm whether to save the images or vide
 >  
 > - The application name and icon need to be displayed in the dialog box. The name and icon need to be configured  
 > in the **label** and **icon** items in the **abilities** tag of the  
-> [module.json5 configuration file](../../../../quick-start/module-configuration-file.md).  
+> [module.json5 configuration file](docroot://quick-start/module-configuration-file.md).  
 >  
 > - When the passed URI is a sandbox path, images or videos can be saved properly, but the preview is not  
 > displayed.
@@ -1369,14 +1407,14 @@ Displays a dialog box for the user to confirm whether to save the images or vide
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| srcFileUris | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | [URIs](../../../../file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be saved to the media library.<br>**NOTE**<br>- A maximum of 100 images can be saved at a time.<br>- Only image and video URIs are supported.<br>- URIs cannot be manually constructed. You must call APIs to obtain them. For details, see [Obtaining a Media File URI](../../../../file-management/user-file-uri-intro.md#obtaining-a-media-file-uri). |
-| creationSettings | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<CreationSetting> | Yes | Configuration for saving images or videos to the media library, including the file name. The URI in this parameter must correspond to that in the **srcFileUris** parameter. |
+| srcFileUris | Array&lt;string&gt; | Yes | [URIs](docroot://file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be saved to the media library.<br>**NOTE**<br>- A maximum of 100 images can be saved at a time.<br>- Only image and video URIs are supported.<br>- URIs cannot be manually constructed. You must call APIs to obtain them. For details, see [Obtaining a Media File URI](docroot://file-management/user-file-uri-intro.md#obtaining-a-media-file-uri). |
+| creationSettings | Array&lt;CreationSetting&gt; | Yes | Configuration for saving images or videos to the media library, including the file name. The URI in this parameter must correspond to that in the **srcFileUris** parameter. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return a URI list. The application can use the returned URI to write data. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return a URI list. The application can use the returned URI to write data. |
 
 **Error codes:**
 
@@ -1384,6 +1422,7 @@ Displays a dialog box for the user to confirm whether to save the images or vide
 | --- | --- |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error.It is recommended to retry and check the logs. Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="showsingleassetcreationdialogex"></a>
 ## showSingleAssetCreationDialogEx
 
 ```TypeScript
@@ -1400,7 +1439,7 @@ Displays a dialog box for the user to confirm whether to save an image or video.
 >  
 > - The dialog box must display the application name, but this cannot be directly obtained. Therefore, before  
 > calling this API, ensure that the **label** and **icon** items are configured in the **abilities** tag in the  
-> [module.json5 configuration file](../../../../quick-start/module-configuration-file.md). Note that the icon is  
+> [module.json5 configuration file](docroot://quick-start/module-configuration-file.md). Note that the icon is  
 > not affected by the **icon** item in the **abilities** tag and cannot be modified.  
 >  
 > - If the passed URI is a sandbox path, images or videos can be saved but cannot be previewed.
@@ -1419,7 +1458,7 @@ Displays a dialog box for the user to confirm whether to save an image or video.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| srcFileUri | string | Yes | [URIs](../../../../file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be saved to the media library.<br>**NOTE**<br>- Only one image can be saved at a time.<br>- Only image and video URIs are supported.<br>- URIs cannot be manually constructed. You must call APIs to obtain them. For details, see [Obtaining a Media File URI](../../../../file-management/user-file-uri-intro.md#obtaining-a-media-file-uri). |
+| srcFileUri | string | Yes | [URIs](docroot://file-management/user-file-uri-intro.md#media-file-uri) of the images or videos to be saved to the media library.<br>**NOTE**<br>- Only one image can be saved at a time.<br>- Only image and video URIs are supported.<br>- URIs cannot be manually constructed. You must call APIs to obtain them. For details, see [Obtaining a Media File URI](docroot://file-management/user-file-uri-intro.md#obtaining-a-media-file-uri). |
 | creationSetting | [CreationSetting](arkts-medialibrary-photoaccesshelper-creationsetting-i.md) | Yes | Configuration for saving the image or video, including the file name. The value must be consistent with that of **srcFileUri **. |
 | isImageFullyDisplayed | boolean | Yes | Whether the image is displayed completely. The value **true** indicates that the image is displayed completely, and **false** indicates the opposite. |
 
@@ -1427,7 +1466,7 @@ Displays a dialog box for the user to confirm whether to save an image or video.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the URI of the media library file to the application. The URIs are granted with the permission for the application to write data. If the URIs fail to be generated, a batch creation error code will be returned.<br>The return values are as follows:<br>- **-3006**: Invalid characters, which are not allowed.<br>-**-2004**: The image type does not match the file name extension.<br>-**-203**: Invalid file operation. |
+| Promise&lt;string&gt; | Promise used to return the URI of the media library file to the application. The URIs are granted with the permission for the application to write data. If the URIs fail to be generated, a batch creation error code will be returned.<br>The return values are as follows:<br>- **-3006**: Invalid characters, which are not allowed.<br>-**-2004**: The image type does not match the file name extension.<br>-**-203**: Invalid file operation. |
 
 **Error codes:**
 
@@ -1435,6 +1474,7 @@ Displays a dialog box for the user to confirm whether to save an image or video.
 | --- | --- |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error.It is recommended to retry and check the logs. Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
+<a id="unregisterchange"></a>
 ## unRegisterChange
 
 ```TypeScript
@@ -1454,7 +1494,7 @@ Unregisters listening for the specified URI. Multiple callbacks can be registere
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the photo asset, URI of the album, or [DefaultChangeUri](arkts-medialibrary-photoaccesshelper-defaultchangeuri-e.md). |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ChangeData> | No | Callback to unregister. If this parameter is not specified, all the callbacks for listening for the URI will be canceled. **NOTE**: The specified callback unregistered will not be invoked when the data changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ChangeData&gt; | No | Callback to unregister. If this parameter is not specified, all the callbacks for listening for the URI will be canceled. **NOTE**: The specified callback unregistered will not be invoked when the data changes. |
 
 **Error codes:**
 

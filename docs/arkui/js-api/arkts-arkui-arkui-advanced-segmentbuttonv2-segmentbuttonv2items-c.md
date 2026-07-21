@@ -8,6 +8,8 @@ This parameter is inherited from Array\<[SegmentButtonV2Item](arkts-arkui-arkui-
 
 **Since:** 18
 
+**Decorator:** @ObservedV2
+
 <!--Device-unnamed-export declare class SegmentButtonV2Items extends Array<SegmentButtonV2Item>--><!--Device-unnamed-export declare class SegmentButtonV2Items extends Array<SegmentButtonV2Item>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -18,6 +20,7 @@ This parameter is inherited from Array\<[SegmentButtonV2Item](arkts-arkui-arkui-
 import { OnSelectedIndexesChange, TabSegmentButtonV2, SegmentButtonV2Items, MultiCapsuleSegmentButtonV2, OnSelectedIndexChange, SegmentButtonV2ItemOptions, SegmentButtonV2Item, CapsuleSegmentButtonV2 } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

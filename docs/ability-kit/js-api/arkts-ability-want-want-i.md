@@ -100,7 +100,7 @@ entities?: Array<string>
 
 The description of a entities in a Want.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 6
 

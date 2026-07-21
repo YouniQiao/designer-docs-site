@@ -6,6 +6,7 @@
 import { floatingBall } from '@kit.ArkUI';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -30,7 +31,7 @@ Creates a floating ball controller. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FloatingBallController> | Promise used to return the floating ball controller. |
+| Promise&lt;FloatingBallController&gt; | Promise used to return the floating ball controller. |
 
 **Error codes:**
 

@@ -1,6 +1,6 @@
 # ContinueMissionInfo (System API)
 
-The module defines the parameters required for initiating mission continuation with the bundle name specified. For details about mission continuation, see [continueMission](arkts-ability-distributedmissionmanager-continuemission-f-sys.md#continuemission-3)
+The module defines the parameters required for initiating mission continuation with the bundle name specified. For details about mission continuation, see [continueMission](arkts-ability-distributedmissionmanager-continuemission-f-sys.md#continuemission-1)
 
 **Since:** 10
 
@@ -118,7 +118,7 @@ wantParam: Record<string, Object>
 
 Extended parameters.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 11
 

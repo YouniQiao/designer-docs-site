@@ -6,6 +6,7 @@
 import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="openinstallcertificatedialog"></a>
 ## openInstallCertificateDialog
 
 ```TypeScript
@@ -31,13 +32,13 @@ Opens the Certificate Management Install Certificate dialog box. After the certi
 | context | common.Context | Yes | Context of the application. |
 | certType | [CertificateType](arkts-devicecertificate-certificatemanagerdialog-certificatetype-e.md) | Yes | Type of the certificate to install. **CA_CERT**, **CREDENTIAL_USER**, and **CREDENTIAL_SYSTEM** are currently supported. |
 | certScope | [CertificateScope](arkts-devicecertificate-certificatemanagerdialog-certificatescope-e.md) | Yes | Usage scope of the certificate to install. **CURRENT_USER** and **NOT_SPECIFIED** are currently supported. |
-| cert | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | The certificate data. The size cannot exceed 8 KB. <br>When certType is set to CA_CERT, the certificate data must be in PEM or DER format. <br>When certType is set to CREDENTIAL_USER or CREDENTIAL_SYSTEM, the value must be in the P12 encoding format. |
+| cert | Uint8Array | Yes | The certificate data. The size cannot exceed 8 KB. <br>When certType is set to CA_CERT, the certificate data must be in PEM or DER format. <br>When certType is set to CREDENTIAL_USER or CREDENTIAL_SYSTEM, the value must be in the P12 encoding format. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the certificate URI. The value contains up to 256 bytes. |
+| Promise&lt;string&gt; | Promise used to return the certificate URI. The value contains up to 256 bytes. |
 
 **Error codes:**
 

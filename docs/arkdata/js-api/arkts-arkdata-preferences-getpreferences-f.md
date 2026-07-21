@@ -6,6 +6,7 @@
 import { preferences } from '@kit.ArkData';
 ```
 
+<a id="getpreferences"></a>
 ## getPreferences
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains a **Preferences** instance. This API uses an asynchronous callback to re
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context.<br>For details about the application context of the FA model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-context-depr-i.md).<br>For details about the application context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md). |
 | name | string | Yes | Name of the **Preferences** instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Preferences> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and the **Preferences** instance obtained is returned. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Preferences&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and the **Preferences** instance obtained is returned. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -84,6 +85,7 @@ class EntryAbility extends UIAbility {
 ```
 
 
+<a id="getpreferences-1"></a>
 ## getPreferences
 
 ```TypeScript
@@ -106,7 +108,7 @@ Obtains a **Preferences** instance. This API uses an asynchronous callback to re
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Application context.<br>For details about the application context of the FA model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-context-depr-i.md).<br>For details about the application context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md). |
 | options | [Options](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-zlib-options-i.md) | Yes | Configuration options of the **Preferences** instance. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Preferences> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and the **Preferences** instance obtained is returned. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Preferences&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and the **Preferences** instance obtained is returned. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -168,6 +170,7 @@ class EntryAbility extends UIAbility {
 ```
 
 
+<a id="getpreferences-2"></a>
 ## getPreferences
 
 ```TypeScript
@@ -195,7 +198,7 @@ Obtains a **Preferences** instance. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Preferences> | Promise used to return the **Preferences** instance obtained. |
+| Promise&lt;Preferences&gt; | Promise used to return the **Preferences** instance obtained. |
 
 **Error codes:**
 
@@ -250,6 +253,7 @@ class EntryAbility extends UIAbility {
 ```
 
 
+<a id="getpreferences-3"></a>
 ## getPreferences
 
 ```TypeScript
@@ -277,7 +281,7 @@ Obtains a **Preferences** instance. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Preferences> | Promise used to return the **Preferences** instance obtained. |
+| Promise&lt;Preferences&gt; | Promise used to return the **Preferences** instance obtained. |
 
 **Error codes:**
 

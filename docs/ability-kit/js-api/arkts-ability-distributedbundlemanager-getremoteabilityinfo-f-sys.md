@@ -6,6 +6,7 @@
 import { distributedBundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getremoteabilityinfo"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains information about the remote ability that matches the given element name
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | elementName | [ElementName](arkts-ability-bundlemanager-elementname-t.md) | Yes | Target element name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RemoteAbilityInfo> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the RemoteAbilityInfo object obtained. Otherwise, **err** is an error object and **data** is **undefined**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RemoteAbilityInfo&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the RemoteAbilityInfo object obtained. Otherwise, **err** is an error object and **data** is **undefined**. |
 
 **Error codes:**
 
@@ -72,6 +73,7 @@ try {
 ```
 
 
+<a id="getremoteabilityinfo-1"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -100,7 +102,7 @@ Obtains information about the remote ability that matches the given element name
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RemoteAbilityInfo> | Promise used to return the result. If the operation is successful, the RemoteAbilityInfo object is returned. Otherwise, an error object is returned. |
+| Promise&lt;RemoteAbilityInfo&gt; | Promise used to return the result. If the operation is successful, the RemoteAbilityInfo object is returned. Otherwise, an error object is returned. |
 
 **Error codes:**
 
@@ -141,6 +143,7 @@ try {
 ```
 
 
+<a id="getremoteabilityinfo-2"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -163,8 +166,8 @@ Obtains information about the remote abilities that match the given element name
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elementNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ElementName> | Yes | **ElementName** array, whose maximum length is 10. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<RemoteAbilityInfo>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the array of RemoteAbilityInfo objects obtained. Otherwise, **err** is an error object and **data** is **undefined**. |
+| elementNames | Array&lt;ElementName&gt; | Yes | **ElementName** array, whose maximum length is 10. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;RemoteAbilityInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the array of RemoteAbilityInfo objects obtained. Otherwise, **err** is an error object and **data** is **undefined**. |
 
 **Error codes:**
 
@@ -214,6 +217,7 @@ try {
 ```
 
 
+<a id="getremoteabilityinfo-3"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -236,13 +240,13 @@ Obtains information about the remote abilities that match the given element name
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elementNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ElementName> | Yes | **ElementName** array, whose maximum length is 10. |
+| elementNames | Array&lt;ElementName&gt; | Yes | **ElementName** array, whose maximum length is 10. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<RemoteAbilityInfo>> | Promise used to return the result. If the operation is successful,an array of RemoteAbilityInfo objects is returned. Otherwise, an error object is returned. |
+| Promise&lt;Array&lt;RemoteAbilityInfo&gt;&gt; | Promise used to return the result. If the operation is successful,an array of RemoteAbilityInfo objects is returned. Otherwise, an error object is returned. |
 
 **Error codes:**
 
@@ -290,6 +294,7 @@ try {
 ```
 
 
+<a id="getremoteabilityinfo-4"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -314,7 +319,7 @@ Obtains information about the remote ability that matches the given element name
 | --- | --- | --- | --- |
 | elementName | [ElementName](arkts-ability-bundlemanager-elementname-t.md) | Yes | Target element name. |
 | locale | string | Yes | Target locale. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<RemoteAbilityInfo> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the RemoteAbilityInfo object obtained. Otherwise, **err** is an error object and **data** is **undefined**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;RemoteAbilityInfo&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the RemoteAbilityInfo object obtained. Otherwise, **err** is an error object and **data** is **undefined**. |
 
 **Error codes:**
 
@@ -357,6 +362,7 @@ try {
 ```
 
 
+<a id="getremoteabilityinfo-5"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -386,7 +392,7 @@ Obtains information about the remote ability that matches the given element name
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RemoteAbilityInfo> | Promise used to return the result. If the operation is successful, the RemoteAbilityInfo object is returned. Otherwise, an error object is returned. |
+| Promise&lt;RemoteAbilityInfo&gt; | Promise used to return the result. If the operation is successful, the RemoteAbilityInfo object is returned. Otherwise, an error object is returned. |
 
 **Error codes:**
 
@@ -427,6 +433,7 @@ try {
 ```
 
 
+<a id="getremoteabilityinfo-6"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -449,9 +456,9 @@ Obtains information about the remote abilities that match the given element name
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elementNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ElementName> | Yes | **ElementName** array, whose maximum length is 10. |
+| elementNames | Array&lt;ElementName&gt; | Yes | **ElementName** array, whose maximum length is 10. |
 | locale | string | Yes | Target locale. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<RemoteAbilityInfo>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the array of RemoteAbilityInfo objects obtained. Otherwise, **err** is an error object and **data** is **undefined**. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;RemoteAbilityInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the operation is successful, **err** is **null** and **data** is the array of RemoteAbilityInfo objects obtained. Otherwise, **err** is an error object and **data** is **undefined**. |
 
 **Error codes:**
 
@@ -501,6 +508,7 @@ try {
 ```
 
 
+<a id="getremoteabilityinfo-7"></a>
 ## getRemoteAbilityInfo
 
 ```TypeScript
@@ -523,14 +531,14 @@ Obtains information about the remote abilities that match the given element name
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| elementNames | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ElementName> | Yes | **ElementName** array, whose maximum length is 10. |
+| elementNames | Array&lt;ElementName&gt; | Yes | **ElementName** array, whose maximum length is 10. |
 | locale | string | Yes | Target locale. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<RemoteAbilityInfo>> | Promise used to return the result. If the operation is successful,an array of RemoteAbilityInfo objects is returned. Otherwise, an error object is returned. |
+| Promise&lt;Array&lt;RemoteAbilityInfo&gt;&gt; | Promise used to return the result. If the operation is successful,an array of RemoteAbilityInfo objects is returned. Otherwise, an error object is returned. |
 
 **Error codes:**
 

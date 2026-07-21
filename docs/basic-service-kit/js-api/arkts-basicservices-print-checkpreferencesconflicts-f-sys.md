@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="checkpreferencesconflicts"></a>
 ## checkPreferencesConflicts
 
 ```TypeScript
@@ -38,7 +39,7 @@ Check preferences conflicts.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string[]> | Promise that resolves with the conflicting field names. |
+| Promise&lt;string[]&gt; | Promise that resolves with the conflicting field names. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
 
+<a id="loadtrainmodelfrombuffer"></a>
 ## loadTrainModelFromBuffer
 
 ```TypeScript
@@ -35,7 +36,7 @@ Load train model from buffer
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| model | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | model buffer |
+| model | ArrayBuffer | Yes | model buffer |
 | trainCfg | [TrainCfg](arkts-mindsporelite-mindsporelite-traincfg-i.md) | No | model train configuration |
 | context | [Context](arkts-mindsporelite-mindsporelite-context-i.md) | No | model build context |
 
@@ -43,15 +44,15 @@ Load train model from buffer
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Model> | the promise of the built model |
+| Promise&lt;Model&gt; | the promise of the built model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000010 | Invalid model buffer in training. Possible causes: 1. The model buffer size is incorrect; 2. The model buffer is null.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000011 | Failed to create native training model from buffer. Possible causes: 1. The model buffer is incorrect; 2. The training configuration is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The device information is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000010 | Invalid model buffer in training. Possible causes: 1. The model buffer size is incorrect; 2. The model buffer is null.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000011 | Failed to create native training model from buffer. Possible causes: 1. The model buffer is incorrect; 2. The training configuration is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

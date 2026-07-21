@@ -14,6 +14,7 @@ The class of insight intent entry executor.
 import { InsightIntentEntryExecutor } from '@kit.AbilityKit';
 ```
 
+<a id="onexecute"></a>
 ## onExecute
 
 ```TypeScript
@@ -36,7 +37,7 @@ Called when insight intent execute.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<insightIntent.IntentResult<T>> | The result of insight intent execution, support promise. |
+| Promise&lt;insightIntent.IntentResult&lt;T&gt;&gt; | The result of insight intent execution, support promise. |
 
 ## context
 

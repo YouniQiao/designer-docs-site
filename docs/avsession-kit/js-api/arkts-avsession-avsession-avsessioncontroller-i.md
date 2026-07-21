@@ -14,6 +14,7 @@ Session controller,used to control media playback and get media information
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -32,7 +33,7 @@ Destroy the server controller
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
@@ -41,6 +42,7 @@ Destroy the server controller
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="destroy-1"></a>
 ## destroy
 
 ```TypeScript
@@ -61,7 +63,7 @@ Destroy the server controller
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -70,6 +72,7 @@ Destroy the server controller
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavcallstate"></a>
 ## getAVCallState
 
 ```TypeScript
@@ -88,7 +91,7 @@ Get the call status of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVCallState> | Yes | The triggered asyncCallback when (getAVCallState). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVCallState&gt; | Yes | The triggered asyncCallback when (getAVCallState). |
 
 **Error codes:**
 
@@ -98,6 +101,7 @@ Get the call status of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavcallstate-1"></a>
 ## getAVCallState
 
 ```TypeScript
@@ -116,7 +120,7 @@ Get the call status of the current session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVCallState> | (AVCallState) returned through promise |
+| Promise&lt;AVCallState&gt; | (AVCallState) returned through promise |
 
 **Error codes:**
 
@@ -126,6 +130,7 @@ Get the call status of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavmetadata"></a>
 ## getAVMetadata
 
 ```TypeScript
@@ -144,7 +149,7 @@ Get the metadata of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVMetadata> | Yes | The triggered asyncCallback when (getAVMetadata). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVMetadata&gt; | Yes | The triggered asyncCallback when (getAVMetadata). |
 
 **Error codes:**
 
@@ -154,6 +159,7 @@ Get the metadata of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavmetadata-1"></a>
 ## getAVMetadata
 
 ```TypeScript
@@ -174,7 +180,7 @@ Get the metadata of the current session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVMetadata> | (AVMetadata) returned through promise |
+| Promise&lt;AVMetadata&gt; | (AVMetadata) returned through promise |
 
 **Error codes:**
 
@@ -184,6 +190,7 @@ Get the metadata of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavmetadatasync"></a>
 ## getAVMetadataSync
 
 ```TypeScript
@@ -214,6 +221,7 @@ Get the metadata of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavplaybackstate"></a>
 ## getAVPlaybackState
 
 ```TypeScript
@@ -232,7 +240,7 @@ Get the playback status of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVPlaybackState> | Yes | The triggered asyncCallback when (getAVPlaybackState). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVPlaybackState&gt; | Yes | The triggered asyncCallback when (getAVPlaybackState). |
 
 **Error codes:**
 
@@ -242,6 +250,7 @@ Get the playback status of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavplaybackstate-1"></a>
 ## getAVPlaybackState
 
 ```TypeScript
@@ -262,7 +271,7 @@ Get the playback status of the current session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVPlaybackState> | (AVPlaybackState) returned through promise |
+| Promise&lt;AVPlaybackState&gt; | (AVPlaybackState) returned through promise |
 
 **Error codes:**
 
@@ -272,6 +281,7 @@ Get the playback status of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavplaybackstatesync"></a>
 ## getAVPlaybackStateSync
 
 ```TypeScript
@@ -302,6 +312,7 @@ Get the playback status of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavqueueitems"></a>
 ## getAVQueueItems
 
 ```TypeScript
@@ -320,7 +331,7 @@ Get the playlist of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AVQueueItem>> | Yes | The triggered asyncCallback when (getAVQueueItems). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AVQueueItem&gt;&gt; | Yes | The triggered asyncCallback when (getAVQueueItems). |
 
 **Error codes:**
 
@@ -330,6 +341,7 @@ Get the playlist of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavqueueitems-1"></a>
 ## getAVQueueItems
 
 ```TypeScript
@@ -350,7 +362,7 @@ Get the playlist of the current session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AVQueueItem>> | (Array&lt;AVQueueItem&gt;) returned through promise |
+| Promise&lt;Array&lt;AVQueueItem&gt;&gt; | (Array<AVQueueItem>) returned through promise |
 
 **Error codes:**
 
@@ -360,6 +372,7 @@ Get the playlist of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavqueueitemssync"></a>
 ## getAVQueueItemsSync
 
 ```TypeScript
@@ -380,7 +393,7 @@ Get the playlist of the current session
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AVQueueItem> | (Array&lt;AVQueueItem&gt;) returned |
+| Array&lt;AVQueueItem&gt; | (Array<AVQueueItem>) returned |
 
 **Error codes:**
 
@@ -390,6 +403,7 @@ Get the playlist of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavqueuetitle"></a>
 ## getAVQueueTitle
 
 ```TypeScript
@@ -408,7 +422,7 @@ Get the name of the playlist of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | The triggered asyncCallback when (getAVQueueTitle). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | The triggered asyncCallback when (getAVQueueTitle). |
 
 **Error codes:**
 
@@ -418,6 +432,7 @@ Get the name of the playlist of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavqueuetitle-1"></a>
 ## getAVQueueTitle
 
 ```TypeScript
@@ -438,7 +453,7 @@ Get the name of the playlist of the current session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | (string) returned through promise |
+| Promise&lt;string&gt; | (string) returned through promise |
 
 **Error codes:**
 
@@ -448,6 +463,7 @@ Get the name of the playlist of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getavqueuetitlesync"></a>
 ## getAVQueueTitleSync
 
 ```TypeScript
@@ -478,6 +494,7 @@ Get the name of the playlist of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getcallmetadata"></a>
 ## getCallMetadata
 
 ```TypeScript
@@ -496,7 +513,7 @@ Get the call metadata of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CallMetadata> | Yes | The triggered asyncCallback when (getCallMetadata). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CallMetadata&gt; | Yes | The triggered asyncCallback when (getCallMetadata). |
 
 **Error codes:**
 
@@ -506,6 +523,7 @@ Get the call metadata of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getcallmetadata-1"></a>
 ## getCallMetadata
 
 ```TypeScript
@@ -524,7 +542,7 @@ Get the call metadata of the current session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CallMetadata> | (CallMetadata) returned through promise |
+| Promise&lt;CallMetadata&gt; | (CallMetadata) returned through promise |
 
 **Error codes:**
 
@@ -534,6 +552,7 @@ Get the call metadata of the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getdesktoplyricstate"></a>
 ## getDesktopLyricState
 
 ```TypeScript
@@ -554,7 +573,7 @@ Get desktop lyric state such as lock state for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DesktopLyricState> | void promise when executed successfully |
+| Promise&lt;DesktopLyricState&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -566,6 +585,7 @@ Get desktop lyric state such as lock state for this session.
 | [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="getextras"></a>
 ## getExtras
 
 ```TypeScript
@@ -584,7 +604,7 @@ Get custom media packets provided by the corresponding session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<{[key: string]: Object}> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;{[key: string]: Object}&gt; | Yes |  |
 
 **Error codes:**
 
@@ -597,6 +617,7 @@ Get custom media packets provided by the corresponding session
 | [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
 | [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
 
+<a id="getextras-1"></a>
 ## getExtras
 
 ```TypeScript
@@ -617,7 +638,7 @@ Get custom media packets provided by the corresponding session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<{[key: string]: Object}> |  |
+| Promise&lt;{[key: string]: Object}&gt; |  |
 
 **Error codes:**
 
@@ -630,6 +651,7 @@ Get custom media packets provided by the corresponding session
 | [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
 | [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
 
+<a id="getextraswithevent"></a>
 ## getExtrasWithEvent
 
 ```TypeScript
@@ -654,7 +676,7 @@ Get extra information for remote device, such as volume level, connected devices
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ExtraInfo> | the value returned for such event |
+| Promise&lt;ExtraInfo&gt; | the value returned for such event |
 
 **Error codes:**
 
@@ -665,6 +687,7 @@ Get extra information for remote device, such as volume level, connected devices
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 | [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
 
+<a id="getlaunchability"></a>
 ## getLaunchAbility
 
 ```TypeScript
@@ -683,7 +706,7 @@ Get the {@link WantAgent} of this session that can launch the session ability
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WantAgent> | Yes | The asyncCallback triggered when getting the WantAgent. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WantAgent&gt; | Yes | The asyncCallback triggered when getting the WantAgent. |
 
 **Error codes:**
 
@@ -693,6 +716,7 @@ Get the {@link WantAgent} of this session that can launch the session ability
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getlaunchability-1"></a>
 ## getLaunchAbility
 
 ```TypeScript
@@ -713,7 +737,7 @@ Get the {@link WantAgent} of this session that can launch the session ability
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WantAgent> | WantAgent promise |
+| Promise&lt;WantAgent&gt; | WantAgent promise |
 
 **Error codes:**
 
@@ -723,6 +747,7 @@ Get the {@link WantAgent} of this session that can launch the session ability
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getmediacentercontroltype"></a>
 ## getMediaCenterControlType
 
 ```TypeScript
@@ -743,7 +768,7 @@ Get media control type that the can be displayed on the media center.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AVMediaCenterControlType>> | The control types that the app sets to be displayed on the media center. The default value is empty, indicating that the types of the customized display control is not set. |
+| Promise&lt;Array&lt;AVMediaCenterControlType&gt;&gt; | The control types that the app sets to be displayed on the media center. The default value is empty, indicating that the types of the customized display control is not set. |
 
 **Error codes:**
 
@@ -752,6 +777,7 @@ Get media control type that the can be displayed on the media center.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getoutputdevice"></a>
 ## getOutputDevice
 
 ```TypeScript
@@ -770,7 +796,7 @@ Get output device information
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<OutputDeviceInfo> | Yes | The triggered asyncCallback when (getOutputDevice). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;OutputDeviceInfo&gt; | Yes | The triggered asyncCallback when (getOutputDevice). |
 
 **Error codes:**
 
@@ -779,6 +805,7 @@ Get output device information
 | 600101 | Session service exception. |
 | 600103 | The session controller does not exist. |
 
+<a id="getoutputdevice-1"></a>
 ## getOutputDevice
 
 ```TypeScript
@@ -799,7 +826,7 @@ Get output device information
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OutputDeviceInfo> | (OutputDeviceInfo) returned through promise |
+| Promise&lt;OutputDeviceInfo&gt; | (OutputDeviceInfo) returned through promise |
 
 **Error codes:**
 
@@ -808,6 +835,7 @@ Get output device information
 | 600101 | Session service exception. |
 | 600103 | The session controller does not exist. |
 
+<a id="getoutputdevicesync"></a>
 ## getOutputDeviceSync
 
 ```TypeScript
@@ -837,6 +865,7 @@ Get output device information
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getrealplaybackpositionsync"></a>
 ## getRealPlaybackPositionSync
 
 ```TypeScript
@@ -866,6 +895,7 @@ Get the adjusted playback position. The time automatically calculated by the sys
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getsupportedloopmodes"></a>
 ## getSupportedLoopModes
 
 ```TypeScript
@@ -888,7 +918,7 @@ Get supported loop modes supplied by application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<LoopMode>> | supported loop modes returned through promise |
+| Promise&lt;Array&lt;LoopMode&gt;&gt; | supported loop modes returned through promise |
 
 **Error codes:**
 
@@ -897,6 +927,7 @@ Get supported loop modes supplied by application.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getsupportedplayspeeds"></a>
 ## getSupportedPlaySpeeds
 
 ```TypeScript
@@ -919,7 +950,7 @@ Get supported speeds supplied by application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise that returns no value. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -928,6 +959,7 @@ Get supported speeds supplied by application.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getvalidcommands"></a>
 ## getValidCommands
 
 ```TypeScript
@@ -946,7 +978,7 @@ Get commands supported by the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AVControlCommandType>> | Yes | The triggered asyncCallback when (getValidCommands). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AVControlCommandType&gt;&gt; | Yes | The triggered asyncCallback when (getValidCommands). |
 
 **Error codes:**
 
@@ -956,6 +988,7 @@ Get commands supported by the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getvalidcommands-1"></a>
 ## getValidCommands
 
 ```TypeScript
@@ -976,7 +1009,7 @@ Get commands supported by the current session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AVControlCommandType>> | array of AVControlCommandType promise |
+| Promise&lt;Array&lt;AVControlCommandType&gt;&gt; | array of AVControlCommandType promise |
 
 **Error codes:**
 
@@ -986,6 +1019,7 @@ Get commands supported by the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="getvalidcommandssync"></a>
 ## getValidCommandsSync
 
 ```TypeScript
@@ -1006,7 +1040,7 @@ Get commands supported by the current session
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AVControlCommandType> | array of AVControlCommandType |
+| Array&lt;AVControlCommandType&gt; | array of AVControlCommandType |
 
 **Error codes:**
 
@@ -1016,6 +1050,7 @@ Get commands supported by the current session
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="isactive"></a>
 ## isActive
 
 ```TypeScript
@@ -1034,7 +1069,7 @@ Check if the current session is active
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | The triggered asyncCallback when (isActive). |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | The triggered asyncCallback when (isActive). |
 
 **Error codes:**
 
@@ -1044,6 +1079,7 @@ Check if the current session is active
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="isactive-1"></a>
 ## isActive
 
 ```TypeScript
@@ -1064,7 +1100,7 @@ Check if the current session is active
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | boolean promise |
+| Promise&lt;boolean&gt; | boolean promise |
 
 **Error codes:**
 
@@ -1074,6 +1110,7 @@ Check if the current session is active
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="isactivesync"></a>
 ## isActiveSync
 
 ```TypeScript
@@ -1104,6 +1141,7 @@ Check if the current session is active
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="isdesktoplyricenabled"></a>
 ## isDesktopLyricEnabled
 
 ```TypeScript
@@ -1124,7 +1162,7 @@ Query desktop lyric enabled state for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | return the enabled status |
+| Promise&lt;boolean&gt; | return the enabled status |
 
 **Error codes:**
 
@@ -1135,6 +1173,7 @@ Query desktop lyric enabled state for this session.
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="isdesktoplyricvisible"></a>
 ## isDesktopLyricVisible
 
 ```TypeScript
@@ -1155,7 +1194,7 @@ Query desktop lyric visible state for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | return desktop lyric visible state |
+| Promise&lt;boolean&gt; | return desktop lyric visible state |
 
 **Error codes:**
 
@@ -1167,6 +1206,7 @@ Query desktop lyric visible state for this session.
 | [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="off"></a>
 ## off('metadataChange')
 
 ```TypeScript
@@ -1188,7 +1228,7 @@ Unregister metadata changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'metadataChange' | Yes |  |
-| callback | (data: AVMetadata) => void | No | The callback used to handle metadata changed event.The callback function provides the {@link AVMetadata} parameter.It only contains the properties set in the filter. |
+| callback | (data: AVMetadata) =&gt; void | No | The callback used to handle metadata changed event.The callback function provides the {@link AVMetadata} parameter.It only contains the properties set in the filter. |
 
 **Error codes:**
 
@@ -1198,6 +1238,7 @@ Unregister metadata changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-1"></a>
 ## off('playbackStateChange')
 
 ```TypeScript
@@ -1219,7 +1260,7 @@ Unregister playback state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playbackStateChange' | Yes |  |
-| callback | (state: AVPlaybackState) => void | No | The callback used to handle playback state changed event.The callback function provides the {@link AVPlaybackState} parameter. |
+| callback | (state: AVPlaybackState) =&gt; void | No | The callback used to handle playback state changed event.The callback function provides the {@link AVPlaybackState} parameter. |
 
 **Error codes:**
 
@@ -1229,6 +1270,7 @@ Unregister playback state changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-2"></a>
 ## off('callMetadataChange')
 
 ```TypeScript
@@ -1250,7 +1292,7 @@ Unregister call metadata changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callMetadataChange' | Yes | 'callMetadataChange' |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallMetadata> | No | The callback used to handle call metadata changed event.The callback function provides the {@link CallMetadata} parameter.It only contains the properties set in the filter. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallMetadata&gt; | No | The callback used to handle call metadata changed event.The callback function provides the {@link CallMetadata} parameter.It only contains the properties set in the filter. |
 
 **Error codes:**
 
@@ -1260,6 +1302,7 @@ Unregister call metadata changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-3"></a>
 ## off('callStateChange')
 
 ```TypeScript
@@ -1281,7 +1324,7 @@ Unregister playback state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callStateChange' | Yes | 'callStateChange' |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVCallState> | No | The callback used to handle call state changed event.The callback function provides the {@link AVCallState} parameter. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVCallState&gt; | No | The callback used to handle call state changed event.The callback function provides the {@link AVCallState} parameter. |
 
 **Error codes:**
 
@@ -1291,6 +1334,7 @@ Unregister playback state changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-4"></a>
 ## off('sessionDestroy')
 
 ```TypeScript
@@ -1312,7 +1356,7 @@ Unregister current session destroyed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionDestroy' | Yes | 'sessionDestroy' |
-| callback | () => void | No | The callback used to handle current session destroyed event. |
+| callback | () =&gt; void | No | The callback used to handle current session destroyed event. |
 
 **Error codes:**
 
@@ -1322,6 +1366,7 @@ Unregister current session destroyed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-5"></a>
 ## off('activeStateChange')
 
 ```TypeScript
@@ -1343,7 +1388,7 @@ Unregister the active state of this session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'activeStateChange' | Yes | 'activeStateChange' |
-| callback | (isActive: boolean) => void | No | The callback used to handle the active state of this session changed event.The callback function provides the changed session state. |
+| callback | (isActive: boolean) =&gt; void | No | The callback used to handle the active state of this session changed event.The callback function provides the changed session state. |
 
 **Error codes:**
 
@@ -1353,6 +1398,7 @@ Unregister the active state of this session changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-6"></a>
 ## off('validCommandChange')
 
 ```TypeScript
@@ -1374,7 +1420,7 @@ Unregister the valid commands of the session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'validCommandChange' | Yes | 'validCommandChange' |
-| callback | (commands: Array<AVControlCommandType>) => void | No | The callback used to handle the changes.The callback function provides an array of AVControlCommandType. |
+| callback | (commands: Array&lt;AVControlCommandType&gt;) =&gt; void | No | The callback used to handle the changes.The callback function provides an array of AVControlCommandType. |
 
 **Error codes:**
 
@@ -1384,6 +1430,7 @@ Unregister the valid commands of the session changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-7"></a>
 ## off('outputDeviceChange')
 
 ```TypeScript
@@ -1405,7 +1452,7 @@ Unregister session output device change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'outputDeviceChange' | Yes | Registration Type 'outputDeviceChange' |
-| callback | (state: ConnectionState, device: OutputDeviceInfo) => void | No | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link ConnectionState}. |
+| callback | (state: ConnectionState, device: OutputDeviceInfo) =&gt; void | No | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link ConnectionState}. |
 
 **Error codes:**
 
@@ -1415,6 +1462,7 @@ Unregister session output device change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist |
 
+<a id="off-8"></a>
 ## off('sessionEvent')
 
 ```TypeScript
@@ -1436,7 +1484,7 @@ Unregister session event callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionEvent' | Yes | 'sessionEvent' |
-| callback | (sessionEvent: string, args: {[key: string]: Object}) => void | No | Used to cancel a specific listener The callback function provides the event string and key-value pair parameters. |
+| callback | (sessionEvent: string, args: {[key: string]: Object}) =&gt; void | No | Used to cancel a specific listener The callback function provides the event string and key-value pair parameters. |
 
 **Error codes:**
 
@@ -1446,6 +1494,7 @@ Unregister session event callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-9"></a>
 ## off('queueItemsChange')
 
 ```TypeScript
@@ -1467,7 +1516,7 @@ Unregister session playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'queueItemsChange' | Yes | Registration Type 'queueItemsChange' |
-| callback | (items: Array<AVQueueItem>) => void | No | Used to handle playlist changed.The callback provides the new array of AVQueueItem {@link AVQueueItem} |
+| callback | (items: Array&lt;AVQueueItem&gt;) =&gt; void | No | Used to handle playlist changed.The callback provides the new array of AVQueueItem {@link AVQueueItem} |
 
 **Error codes:**
 
@@ -1477,6 +1526,7 @@ Unregister session playlist change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-10"></a>
 ## off('queueTitleChange')
 
 ```TypeScript
@@ -1498,7 +1548,7 @@ Unregister the name of session playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'queueTitleChange' | Yes | Registration Type 'queueTitleChange' |
-| callback | (title: string) => void | No | Used to handle name of playlist changed.The callback provides the new name. |
+| callback | (title: string) =&gt; void | No | Used to handle name of playlist changed.The callback provides the new name. |
 
 **Error codes:**
 
@@ -1508,6 +1558,7 @@ Unregister the name of session playlist change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-11"></a>
 ## off('extrasChange')
 
 ```TypeScript
@@ -1529,7 +1580,7 @@ Unregister the custom media packets change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'extrasChange' | Yes | Registration Type 'extrasChange' |
-| callback | (extras: {[key: string]: Object}) => void | No | Used to handle custom media packets changed.The callback provides the new media packets. |
+| callback | (extras: {[key: string]: Object}) =&gt; void | No | Used to handle custom media packets changed.The callback provides the new media packets. |
 
 **Error codes:**
 
@@ -1539,6 +1590,7 @@ Unregister the custom media packets change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="off-12"></a>
 ## off('customDataChange')
 
 ```TypeScript
@@ -1560,7 +1612,7 @@ Unregister listener for custom data.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'customDataChange' | Yes | Type of the 'customDataChange' to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Record<string, Object>> | No | Callback used to retrieve custom data. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Record&lt;string, Object&gt;&gt; | No | Callback used to retrieve custom data. |
 
 **Error codes:**
 
@@ -1569,6 +1621,7 @@ Unregister listener for custom data.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="offdesktoplyricenabled"></a>
 ## offDesktopLyricEnabled
 
 ```TypeScript
@@ -1589,7 +1642,7 @@ Unregister desktop lyric enable state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | a callback to receive desktop lyric enable state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | a callback to receive desktop lyric enable state. |
 
 **Error codes:**
 
@@ -1598,6 +1651,7 @@ Unregister desktop lyric enable state change callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="offdesktoplyricstatechanged"></a>
 ## offDesktopLyricStateChanged
 
 ```TypeScript
@@ -1618,7 +1672,7 @@ Unregister desktop lyric state changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DesktopLyricState> | No | a callback to receive desktop lyric state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DesktopLyricState&gt; | No | a callback to receive desktop lyric state. |
 
 **Error codes:**
 
@@ -1627,6 +1681,7 @@ Unregister desktop lyric state changed callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="offdesktoplyricvisibilitychanged"></a>
 ## offDesktopLyricVisibilityChanged
 
 ```TypeScript
@@ -1647,7 +1702,7 @@ Unregister desktop lyric visible state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | a callback to receive desktop lyric window visible state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | a callback to receive desktop lyric window visible state. |
 
 **Error codes:**
 
@@ -1656,6 +1711,7 @@ Unregister desktop lyric visible state change callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="offmediacentercontroltypechanged"></a>
 ## offMediaCenterControlTypeChanged
 
 ```TypeScript
@@ -1676,7 +1732,7 @@ Unregister media center control type changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<AVMediaCenterControlType>> | No | Callback to receive the changed control types. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;AVMediaCenterControlType&gt;&gt; | No | Callback to receive the changed control types. |
 
 **Error codes:**
 
@@ -1685,6 +1741,7 @@ Unregister media center control type changed callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="offsupportedloopmodeschange"></a>
 ## offSupportedLoopModesChange
 
 ```TypeScript
@@ -1707,7 +1764,7 @@ Unregister listener for supported loop modes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<LoopMode>> | No | Callback used to retrieve supported loop modes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;LoopMode&gt;&gt; | No | Callback used to retrieve supported loop modes. |
 
 **Error codes:**
 
@@ -1716,6 +1773,7 @@ Unregister listener for supported loop modes.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="offsupportedplayspeedschange"></a>
 ## offSupportedPlaySpeedsChange
 
 ```TypeScript
@@ -1738,7 +1796,7 @@ Unregister listener for supported play speeds.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<number>> | No | Callback used to retrieve supported play speeds. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;number&gt;&gt; | No | Callback used to retrieve supported play speeds. |
 
 **Error codes:**
 
@@ -1747,6 +1805,7 @@ Unregister listener for supported play speeds.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on"></a>
 ## on('metadataChange')
 
 ```TypeScript
@@ -1768,8 +1827,8 @@ Register metadata changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'metadataChange' | Yes |  |
-| filter | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<keyof AVMetadata> \| 'all' | Yes | The properties of {@link AVMetadata} that you cared about |
-| callback | (data: AVMetadata) => void | Yes | The callback used to handle metadata changed event.The callback function provides the {@link AVMetadata} parameter.It only contains the properties set in the filter. |
+| filter | Array&lt;keyof AVMetadata&gt; \| 'all' | Yes | The properties of {@link AVMetadata} that you cared about |
+| callback | (data: AVMetadata) =&gt; void | Yes | The callback used to handle metadata changed event.The callback function provides the {@link AVMetadata} parameter.It only contains the properties set in the filter. |
 
 **Error codes:**
 
@@ -1779,6 +1838,7 @@ Register metadata changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-1"></a>
 ## on('playbackStateChange')
 
 ```TypeScript
@@ -1800,8 +1860,8 @@ Register playback state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playbackStateChange' | Yes |  |
-| filter | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<keyof AVPlaybackState> \| 'all' | Yes | The properties of {@link AVPlaybackState}that you cared about |
-| callback | (state: AVPlaybackState) => void | Yes | The callback used to handle playback state changed event.The callback function provides the {@link AVPlaybackState} parameter. |
+| filter | Array&lt;keyof AVPlaybackState&gt; \| 'all' | Yes | The properties of {@link AVPlaybackState}that you cared about |
+| callback | (state: AVPlaybackState) =&gt; void | Yes | The callback used to handle playback state changed event.The callback function provides the {@link AVPlaybackState} parameter. |
 
 **Error codes:**
 
@@ -1811,6 +1871,7 @@ Register playback state changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-2"></a>
 ## on('callMetadataChange')
 
 ```TypeScript
@@ -1832,8 +1893,8 @@ Register call metadata changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callMetadataChange' | Yes | 'callMetadataChange' |
-| filter | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<keyof CallMetadata> \| 'all' | Yes | The properties of {@link CallMetadata} that you cared about |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CallMetadata> | Yes | The callback used to handle call metadata changed event.The callback function provides the {@link CallMetadata} parameter.It only contains the properties set in the filter. |
+| filter | Array&lt;keyof CallMetadata&gt; \| 'all' | Yes | The properties of {@link CallMetadata} that you cared about |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CallMetadata&gt; | Yes | The callback used to handle call metadata changed event.The callback function provides the {@link CallMetadata} parameter.It only contains the properties set in the filter. |
 
 **Error codes:**
 
@@ -1843,6 +1904,7 @@ Register call metadata changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-3"></a>
 ## on('callStateChange')
 
 ```TypeScript
@@ -1864,8 +1926,8 @@ Register call state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callStateChange' | Yes | 'callStateChange' |
-| filter | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<keyof AVCallState> \| 'all' | Yes | The properties of {@link AVCallState} that you cared about |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVCallState> | Yes | The callback used to handle call state changed event.The callback function provides the {@link AVCallState} parameter. |
+| filter | Array&lt;keyof AVCallState&gt; \| 'all' | Yes | The properties of {@link AVCallState} that you cared about |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVCallState&gt; | Yes | The callback used to handle call state changed event.The callback function provides the {@link AVCallState} parameter. |
 
 **Error codes:**
 
@@ -1875,6 +1937,7 @@ Register call state changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-4"></a>
 ## on('sessionDestroy')
 
 ```TypeScript
@@ -1896,7 +1959,7 @@ Register current session destroyed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionDestroy' | Yes |  |
-| callback | () => void | Yes | The callback used to handle current session destroyed event. |
+| callback | () =&gt; void | Yes | The callback used to handle current session destroyed event. |
 
 **Error codes:**
 
@@ -1906,6 +1969,7 @@ Register current session destroyed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-5"></a>
 ## on('activeStateChange')
 
 ```TypeScript
@@ -1927,7 +1991,7 @@ Register the active state of this session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'activeStateChange' | Yes | 'activeStateChange' |
-| callback | (isActive: boolean) => void | Yes | The callback used to handle the active state of this session changed event.The callback function provides the changed session state. |
+| callback | (isActive: boolean) =&gt; void | Yes | The callback used to handle the active state of this session changed event.The callback function provides the changed session state. |
 
 **Error codes:**
 
@@ -1937,6 +2001,7 @@ Register the active state of this session changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-6"></a>
 ## on('validCommandChange')
 
 ```TypeScript
@@ -1958,7 +2023,7 @@ Register the valid commands of the session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'validCommandChange' | Yes | 'validCommandChange' |
-| callback | (commands: Array<AVControlCommandType>) => void | Yes | The callback used to handle the changes.The callback function provides an array of AVControlCommandType. |
+| callback | (commands: Array&lt;AVControlCommandType&gt;) =&gt; void | Yes | The callback used to handle the changes.The callback function provides an array of AVControlCommandType. |
 
 **Error codes:**
 
@@ -1968,6 +2033,7 @@ Register the valid commands of the session changed callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-7"></a>
 ## on('outputDeviceChange')
 
 ```TypeScript
@@ -1989,7 +2055,7 @@ Register session output device change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'outputDeviceChange' | Yes | Registration Type 'outputDeviceChange' |
-| callback | (state: ConnectionState, device: OutputDeviceInfo) => void | Yes | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link ConnectionState}. |
+| callback | (state: ConnectionState, device: OutputDeviceInfo) =&gt; void | Yes | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link ConnectionState}. |
 
 **Error codes:**
 
@@ -1999,6 +2065,7 @@ Register session output device change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist |
 
+<a id="on-8"></a>
 ## on('sessionEvent')
 
 ```TypeScript
@@ -2020,7 +2087,7 @@ Register session event callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionEvent' | Yes | 'sessionEvent' |
-| callback | (sessionEvent: string, args: {[key: string]: Object}) => void | Yes | The callback used to handle session event changed event.The callback function provides the event string and key-value pair parameters. |
+| callback | (sessionEvent: string, args: {[key: string]: Object}) =&gt; void | Yes | The callback used to handle session event changed event.The callback function provides the event string and key-value pair parameters. |
 
 **Error codes:**
 
@@ -2030,6 +2097,7 @@ Register session event callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-9"></a>
 ## on('queueItemsChange')
 
 ```TypeScript
@@ -2051,7 +2119,7 @@ Register session playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'queueItemsChange' | Yes | Registration Type 'queueItemsChange' |
-| callback | (items: Array<AVQueueItem>) => void | Yes | Used to handle playlist changed.The callback provides the new array of AVQueueItem {@link AVQueueItem} |
+| callback | (items: Array&lt;AVQueueItem&gt;) =&gt; void | Yes | Used to handle playlist changed.The callback provides the new array of AVQueueItem {@link AVQueueItem} |
 
 **Error codes:**
 
@@ -2061,6 +2129,7 @@ Register session playlist change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-10"></a>
 ## on('queueTitleChange')
 
 ```TypeScript
@@ -2082,7 +2151,7 @@ Register the name of session playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'queueTitleChange' | Yes | Registration Type 'queueTitleChange' |
-| callback | (title: string) => void | Yes | Used to handle name of playlist changed.The callback provides the new name. |
+| callback | (title: string) =&gt; void | Yes | Used to handle name of playlist changed.The callback provides the new name. |
 
 **Error codes:**
 
@@ -2092,6 +2161,7 @@ Register the name of session playlist change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-11"></a>
 ## on('extrasChange')
 
 ```TypeScript
@@ -2113,7 +2183,7 @@ Register the custom media packets change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'extrasChange' | Yes | Registration Type 'extrasChange' |
-| callback | (extras: {[key: string]: Object}) => void | Yes | Used to handle custom media packets changed.The callback provides the new media packets. |
+| callback | (extras: {[key: string]: Object}) =&gt; void | Yes | Used to handle custom media packets changed.The callback provides the new media packets. |
 
 **Error codes:**
 
@@ -2123,6 +2193,7 @@ Register the custom media packets change callback
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="on-12"></a>
 ## on('customDataChange')
 
 ```TypeScript
@@ -2144,7 +2215,7 @@ Register listener for custom data.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'customDataChange' | Yes | Type of the 'customDataChange' to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Record<string, Object>> | Yes | Callback used to retrieve custom data. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Record&lt;string, Object&gt;&gt; | Yes | Callback used to retrieve custom data. |
 
 **Error codes:**
 
@@ -2153,6 +2224,7 @@ Register listener for custom data.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="ondesktoplyricenabled"></a>
 ## onDesktopLyricEnabled
 
 ```TypeScript
@@ -2173,7 +2245,7 @@ Register desktop lyric enable state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | a callback to receive desktop lyric enable state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | a callback to receive desktop lyric enable state. |
 
 **Error codes:**
 
@@ -2182,6 +2254,7 @@ Register desktop lyric enable state change callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="ondesktoplyricstatechanged"></a>
 ## onDesktopLyricStateChanged
 
 ```TypeScript
@@ -2202,7 +2275,7 @@ Register desktop lyric state changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DesktopLyricState> | Yes | a callback to receive desktop lyric state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DesktopLyricState&gt; | Yes | a callback to receive desktop lyric state. |
 
 **Error codes:**
 
@@ -2211,6 +2284,7 @@ Register desktop lyric state changed callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="ondesktoplyricvisibilitychanged"></a>
 ## onDesktopLyricVisibilityChanged
 
 ```TypeScript
@@ -2231,7 +2305,7 @@ Register desktop lyric visible state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | a callback to receive desktop lyric window visible state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | a callback to receive desktop lyric window visible state. |
 
 **Error codes:**
 
@@ -2240,6 +2314,7 @@ Register desktop lyric visible state change callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="onmediacentercontroltypechanged"></a>
 ## onMediaCenterControlTypeChanged
 
 ```TypeScript
@@ -2260,7 +2335,7 @@ Register media center control type changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<AVMediaCenterControlType>> | Yes | Callback to receive the changed control types. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;AVMediaCenterControlType&gt;&gt; | Yes | Callback to receive the changed control types. |
 
 **Error codes:**
 
@@ -2269,6 +2344,7 @@ Register media center control type changed callback.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="onsupportedloopmodeschange"></a>
 ## onSupportedLoopModesChange
 
 ```TypeScript
@@ -2291,7 +2367,7 @@ Register listener for supported loop modes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<LoopMode>> | Yes | Callback used to retrieve supported loop modes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;LoopMode&gt;&gt; | Yes | Callback used to retrieve supported loop modes. |
 
 **Error codes:**
 
@@ -2300,6 +2376,7 @@ Register listener for supported loop modes.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="onsupportedplayspeedschange"></a>
 ## onSupportedPlaySpeedsChange
 
 ```TypeScript
@@ -2322,7 +2399,7 @@ Register listener for supported play speeds.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<number>> | Yes | Callback used to retrieve supported play speeds. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to retrieve supported play speeds. |
 
 **Error codes:**
 
@@ -2331,6 +2408,7 @@ Register listener for supported play speeds.
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="sendavkeyevent"></a>
 ## sendAVKeyEvent
 
 ```TypeScript
@@ -2349,8 +2427,8 @@ Send media key event to this session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-common-keyevent-i.md) | Yes | The KeyEvent |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully. |
+| event | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-keyevent-i.md) | Yes | The KeyEvent |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
@@ -2363,6 +2441,7 @@ Send media key event to this session
 | 600105 | Invalid session command. |
 | 600106 | The session is not activated. |
 
+<a id="sendavkeyevent-1"></a>
 ## sendAVKeyEvent
 
 ```TypeScript
@@ -2383,13 +2462,13 @@ Send media key event to this session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-common-keyevent-i.md) | Yes | The KeyEvent |
+| event | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-keyevent-i.md) | Yes | The KeyEvent |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2402,6 +2481,7 @@ Send media key event to this session
 | 600105 | Invalid session command. |
 | 600106 | The session is not activated. |
 
+<a id="sendcommoncommand"></a>
 ## sendCommonCommand
 
 ```TypeScript
@@ -2422,7 +2502,7 @@ Send common commands to this session
 | --- | --- | --- | --- |
 | command | string | Yes | The command name to be sent. |
 | args | {[key: string]: Object} | Yes | The parameters of session event |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
@@ -2436,6 +2516,7 @@ Send common commands to this session
 | [6600106](../errorcode-avsession.md#6600106-session-not-activated) | The session is not activated. |
 | [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
 
+<a id="sendcommoncommand-1"></a>
 ## sendCommonCommand
 
 ```TypeScript
@@ -2463,7 +2544,7 @@ Send common commands to this session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2477,6 +2558,7 @@ Send common commands to this session
 | [6600106](../errorcode-avsession.md#6600106-session-not-activated) | The session is not activated. |
 | [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
 
+<a id="sendcontrolcommand"></a>
 ## sendControlCommand
 
 ```TypeScript
@@ -2496,7 +2578,7 @@ Send control commands to this session
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | command | [AVControlCommand](arkts-avsession-avsession-avcontrolcommand-i.md) | Yes | The command to be sent. See {@link AVControlCommand} |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
@@ -2510,6 +2592,7 @@ Send control commands to this session
 | [6600106](../errorcode-avsession.md#6600106-session-not-activated) | The session is not activated. |
 | [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
 
+<a id="sendcontrolcommand-1"></a>
 ## sendControlCommand
 
 ```TypeScript
@@ -2536,7 +2619,7 @@ Send control commands to this session
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2550,6 +2633,7 @@ Send control commands to this session
 | [6600106](../errorcode-avsession.md#6600106-session-not-activated) | The session is not activated. |
 | [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
 
+<a id="sendcustomdata"></a>
 ## sendCustomData
 
 ```TypeScript
@@ -2570,13 +2654,13 @@ Send custom data to this avsession.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | The custom data populated by application. |
+| data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | The custom data populated by application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void result promise when executed successfully |
+| Promise&lt;void&gt; | void result promise when executed successfully |
 
 **Error codes:**
 
@@ -2586,6 +2670,7 @@ Send custom data to this avsession.
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="setdesktoplyricstate"></a>
 ## setDesktopLyricState
 
 ```TypeScript
@@ -2612,7 +2697,7 @@ Set desktop lyric state such as lock state for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2624,6 +2709,7 @@ Set desktop lyric state such as lock state for this session.
 | [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="setdesktoplyricvisible"></a>
 ## setDesktopLyricVisible
 
 ```TypeScript
@@ -2650,7 +2736,7 @@ Set desktop lyric visible state for this session.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
@@ -2662,6 +2748,7 @@ Set desktop lyric visible state for this session.
 | [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
 | [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
 
+<a id="skiptoqueueitem"></a>
 ## skipToQueueItem
 
 ```TypeScript
@@ -2681,7 +2768,7 @@ Set the item in the playlist to be played
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | itemId | number | Yes | The serial number of the item to be played |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -2692,6 +2779,7 @@ Set the item in the playlist to be played
 | [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
 | [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
+<a id="skiptoqueueitem-1"></a>
 ## skipToQueueItem
 
 ```TypeScript
@@ -2718,7 +2806,7 @@ Set the item in the playlist to be played
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 

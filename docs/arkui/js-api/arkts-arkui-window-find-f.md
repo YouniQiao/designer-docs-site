@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="find"></a>
 ## find
 
 ```TypeScript
@@ -29,7 +30,7 @@ Finds a window based on the ID. This API uses an asynchronous callback to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | id | string | Yes | Window name, that is, the value of name in [Configuration](arkts-arkui-window-configuration-i.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Window> | Yes | Callback used to return the window found. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Window&gt; | Yes | Callback used to return the window found. |
 
 **Example**
 
@@ -50,6 +51,7 @@ window.find('test', (err: BusinessError, data) => {
 ```
 
 
+<a id="find-1"></a>
 ## find
 
 ```TypeScript
@@ -78,7 +80,7 @@ Finds a window based on the ID. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | Promise used to return the window found. |
+| Promise&lt;Window&gt; | Promise used to return the window found. |
 
 **Example**
 

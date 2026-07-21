@@ -3,7 +3,7 @@
 > **NOTE**  
 >  
 > This API has been supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [errorcode-bundle](../../../../reference/apis-ability-kit/errorcode-bundle.md) instead.
+> [errorcode-bundle](docroot://reference/apis-ability-kit/errorcode-bundle.md) instead.
 
 **Since:** 7
 

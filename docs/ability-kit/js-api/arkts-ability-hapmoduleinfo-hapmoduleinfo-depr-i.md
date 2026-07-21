@@ -1,6 +1,6 @@
 # HapModuleInfo
 
-The HapModuleInfo module provides information about an HAP module. Unless otherwise specified, the information is obtained through [bundle.getBundleInfo](arkts-ability-bundle-getbundleinfo-f.md#getbundleinfo-3).
+The HapModuleInfo module provides information about an HAP module. Unless otherwise specified, the information is obtained through [bundle.getBundleInfo](arkts-ability-bundle-getbundleinfo-f.md#getbundleinfo-1).
 
 > **NOTE**  
 >  
@@ -25,7 +25,7 @@ readonly abilityInfo: Array<AbilityInfo>
 
 Ability information.
 
-**Type:** Array<AbilityInfo>
+**Type:** Array&lt;AbilityInfo&gt;
 
 **Default:** Obtains configuration information about ability
 
@@ -111,7 +111,7 @@ readonly deviceTypes: Array<string>
 
 Device types supported by the module.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Default:** The device types that this hapmodule can run on
 
@@ -307,7 +307,7 @@ readonly reqCapabilities: Array<string>
 
 Capabilities required for module running.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Default:** Indicates the req capabilities of this hapmodule
 

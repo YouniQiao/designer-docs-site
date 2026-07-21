@@ -92,7 +92,7 @@ Default value: **false**.
 autoSync: boolean
 ```
 
-Whether the table supports automatic device-cloud synchronization. If the value is **true**, the system can automatically trigger device-cloud sync. If the value is **false**, the system cannot automatically trigger device-cloud sync, and the [cloudSync](@ohos.data.relationalStore:relationalStore.RdbStore.cloudSync(mode: SyncMode, tables: string[]))API needs to be called to trigger device-cloud sync.
+Whether the table supports automatic device-cloud synchronization. If the value is **true**, the system can automatically trigger device-cloud sync. If the value is **false**, the system cannot automatically trigger device-cloud sync, and the [cloudSync](arkts-arkdata-relationalstore-rdbstore-i.md#cloudsync-1)API needs to be called to trigger device-cloud sync.
 
 **Type:** boolean
 

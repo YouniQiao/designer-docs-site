@@ -1,5 +1,6 @@
 # addSlot
 
+<a id="addslot"></a>
 ## addSlot
 
 ```TypeScript
@@ -23,9 +24,10 @@ Adds a notification slot of a specified type. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [SlotType](arkts-notification-notificationmanager-slottype-e.md) | Yes | Type of the notification slot to add. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 
+<a id="addslot-1"></a>
 ## addSlot
 
 ```TypeScript
@@ -54,5 +56,5 @@ Adds a notification slot of a specified type. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 

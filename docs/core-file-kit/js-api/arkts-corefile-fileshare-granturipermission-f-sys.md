@@ -6,6 +6,7 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
+<a id="granturipermission"></a>
 ## grantUriPermission
 
 ```TypeScript
@@ -46,7 +47,7 @@ Provides grant uri permission for app
 | uri | string | Yes | uri |
 | bundleName | string | Yes | bundleName |
 | flag | wantConstant.Flags | Yes | wantConstant.Flags.FLAG_AUTH_READ_URI_PERMISSION or wantConstant.Flags.FLAG_AUTH_WRITE_URI_PERMISSION |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes |  |
 
 **Error codes:**
 
@@ -83,6 +84,7 @@ try {
 ```
 
 
+<a id="granturipermission-1"></a>
 ## grantUriPermission
 
 ```TypeScript
@@ -113,7 +115,7 @@ Provides grant uri permission for app
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | no callback return Promise otherwise return void |
+| Promise&lt;void&gt; | no callback return Promise otherwise return void |
 
 **Error codes:**
 
@@ -148,6 +150,7 @@ try {
 ```
 
 
+<a id="granturipermission-2"></a>
 ## grantUriPermission
 
 ```TypeScript
@@ -170,7 +173,7 @@ Grant URI permissions for an application.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| policies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PolicyInfo> | Yes | Policy information for the user to grant permissions on URIs. |
+| policies | Array&lt;PolicyInfo&gt; | Yes | Policy information for the user to grant permissions on URIs. |
 | targetBundleName | string | Yes | Name of the target bundle to authorize. |
 | appCloneIndex | number | Yes | Clone index of the target application. |
 
@@ -178,7 +181,7 @@ Grant URI permissions for an application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns void. |
+| Promise&lt;void&gt; | Returns void. |
 
 **Error codes:**
 

@@ -28,6 +28,7 @@ Represents a custom communication object.
 import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
+<a id="onmessage"></a>
 ## onMessage
 
 ```TypeScript
@@ -55,7 +56,7 @@ Receives the custom data callback sent by the edit box application attached to t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | msgId | string | Yes | Identifier of the received custom communication data. |
-| msgParam | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | No | Message body of the received custom communication data. |
+| msgParam | ArrayBuffer | No | Message body of the received custom communication data. |
 
 **Example**
 
@@ -78,6 +79,7 @@ inputMethodEngine.getInputMethodAbility()
 
 ```
 
+<a id="onterminated"></a>
 ## onTerminated
 
 ```TypeScript

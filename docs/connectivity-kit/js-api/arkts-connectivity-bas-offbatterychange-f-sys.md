@@ -6,6 +6,7 @@
 import { bas } from '@kit.ConnectivityKit';
 ```
 
+<a id="offbatterychange"></a>
 ## offBatteryChange
 
 ```TypeScript
@@ -30,7 +31,7 @@ Unsubscribe the event of battery state changes from a remote device.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BatteryInfo> | No | Callback used to listen. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BatteryInfo&gt; | No | Callback used to listen. |
 
 **Error codes:**
 

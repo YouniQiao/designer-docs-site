@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="getdefaultdisplay"></a>
 ## getDefaultDisplay
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the default Display object. This API uses an asynchronous callback to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Display> | Yes | Callback used to return the default Display object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Display&gt; | Yes | Callback used to return the default Display object. |
 
 **Example**
 
@@ -49,6 +50,7 @@ display.getDefaultDisplay((err: BusinessError, data: display.Display) => {
 ```
 
 
+<a id="getdefaultdisplay-1"></a>
 ## getDefaultDisplay
 
 ```TypeScript
@@ -71,7 +73,7 @@ Obtains the default Display object. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Display> | Promise used to return the default Display object. |
+| Promise&lt;Display&gt; | Promise used to return the default Display object. |
 
 **Example**
 

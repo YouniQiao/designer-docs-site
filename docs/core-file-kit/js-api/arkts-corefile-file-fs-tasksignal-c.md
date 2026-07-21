@@ -14,6 +14,7 @@ Provides APIs for interrupting a copy task.
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -79,6 +80,7 @@ try {
 
 ```
 
+<a id="oncancel"></a>
 ## onCancel
 
 ```TypeScript
@@ -103,7 +105,7 @@ Subscribes to the event reported when a copy task is canceled.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the path of the last file copied. |
+| Promise&lt;string&gt; | Promise used to return the path of the last file copied. |
 
 **Error codes:**
 

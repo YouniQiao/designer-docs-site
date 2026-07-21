@@ -14,7 +14,7 @@ Describes the signature information of the app package,which can identifythe app
 readonly appId: string
 ```
 
-App ID, which uniquely identifies an app. For details, see [What Is appId?](../../../../quick-start/common-problem-of-application.md#what-is-appid).
+App ID, which uniquely identifies an app. For details, see [What Is appId?](docroot://quick-start/common-problem-of-application.md#what-is-appid).
 
 **Type:** string
 
@@ -32,7 +32,7 @@ App ID, which uniquely identifies an app. For details, see [What Is appId?](../.
 readonly appIdentifier: string
 ```
 
-Unique ID of the application. For details, see [What is appIdentifier?](../../../../quick-start/common-problem-of-application.md#what-is-appidentifier).
+Unique ID of the application. For details, see [What is appIdentifier?](docroot://quick-start/common-problem-of-application.md#what-is-appidentifier).
 
 **Type:** string
 

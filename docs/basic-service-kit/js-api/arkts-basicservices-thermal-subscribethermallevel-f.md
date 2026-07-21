@@ -6,6 +6,7 @@
 import { thermal } from '@kit.BasicServicesKit';
 ```
 
+<a id="subscribethermallevel"></a>
 ## subscribeThermalLevel
 
 ```TypeScript
@@ -28,7 +29,7 @@ Subscribes to the thermal level changes. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<ThermalLevel> | Yes | Callback used to return thermal level. This parameter is of the function type. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;ThermalLevel&gt; | Yes | Callback used to return thermal level. This parameter is of the function type. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
+<a id="enablecloud"></a>
 ## enableCloud
 
 ```TypeScript
@@ -29,13 +30,13 @@ Enables device-cloud sync. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | accountId | string | Yes | Account ID. |
-| switches | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, boolean> | Yes | Whether to enable the device-cloud sync feature. The application bundle name is a string. The switch status is a Boolean value. The value **true** means to enable this function; the value **false** means the opposite. |
+| switches | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, boolean&gt; | Yes | Whether to enable the device-cloud sync feature. The application bundle name is a string. The switch status is a Boolean value. The value **true** means to enable this function; the value **false** means the opposite. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ cloudSyncManager.enableCloud(accountId, switches).then(() => {
 ```
 
 
+<a id="enablecloud-1"></a>
 ## enableCloud
 
 ```TypeScript
@@ -99,8 +101,8 @@ Enables device-cloud sync. This API uses an asynchronous callback to return the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | accountId | string | Yes | Account ID. |
-| switches | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, boolean> | Yes | Whether to enable the device-cloud sync feature. The application bundle name is a string. The switch status is a Boolean value. The value **true** means to enable this function; the value **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result of enabling device-cloud sync. |
+| switches | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, boolean&gt; | Yes | Whether to enable the device-cloud sync feature. The application bundle name is a string. The switch status is a Boolean value. The value **true** means to enable this function; the value **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result of enabling device-cloud sync. |
 
 **Error codes:**
 

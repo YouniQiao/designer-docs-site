@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="off"></a>
 ## off('wallpaperChange')
 
 ```TypeScript
@@ -36,7 +37,7 @@ Unregisters a listener for wallpaper changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wallpaperChange' | Yes | the incoming wallpaperChange table delete receiver when the user modifies the wallpaper settings. |
-| callback | (wallpaperType: WallpaperType, resourceType: WallpaperResourceType, uri?: string) => void | No | wallpaperType indicates the wallpaper type.resourceType indicates the resource type of the wallpaper.uri indicates the wallpaper resource address. |
+| callback | (wallpaperType: WallpaperType, resourceType: WallpaperResourceType, uri?: string) =&gt; void | No | wallpaperType indicates the wallpaper type.resourceType indicates the resource type of the wallpaper.uri indicates the wallpaper resource address. |
 
 **Error codes:**
 

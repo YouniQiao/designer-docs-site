@@ -88,7 +88,7 @@ readonly hapModulesInfo: Array<HapModuleInfo>
 
 Module configuration information. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
-**Type:** Array<HapModuleInfo>
+**Type:** Array&lt;HapModuleInfo&gt;
 
 **Since:** 9
 
@@ -126,7 +126,7 @@ If the current time is not obtained when the device is powered on for the first 
 readonly minCompatibleVersionCode: number
 ```
 
-Minimum compatible version of the application package in the distributed scenario. It corresponds to the **minCompatibleVersionCode** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Minimum compatible version of the application package in the distributed scenario. It corresponds to the **minCompatibleVersionCode** field in the [app.json5](docroot://quick-start/app-configuration-file.md) file.
 
 **Type:** number
 
@@ -144,7 +144,7 @@ Minimum compatible version of the application package in the distributed scenari
 readonly name: string
 ```
 
-Name of the application package. It corresponds to the **bundleName** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Name of the application package. It corresponds to the **bundleName** field in the [app.json5](docroot://quick-start/app-configuration-file.md) file.
 
 **Type:** string
 
@@ -164,7 +164,7 @@ readonly permissionGrantStates: Array<bundleManager.PermissionGrantState>
 
 Permission grant state. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).The indices of the **reqPermissionDetails** array and the **permissionGrantStates** array are in one-to-one correspondence, meaning that the authorization status of **reqPermissionDetails[2]** is **permissionGrantStates[2]**.
 
-**Type:** Array<bundleManager.PermissionGrantState>
+**Type:** Array&lt;bundleManager.PermissionGrantState&gt;
 
 **Since:** 9
 
@@ -182,7 +182,7 @@ readonly reqPermissionDetails: Array<ReqPermissionDetail>
 
 Detailed information of the permissions to request from the system. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).The indices of the **reqPermissionDetails** array and the **permissionGrantStates** array are in one-to-one correspondence, meaning that the authorization status of **reqPermissionDetails[2]** is **permissionGrantStates[2]**.
 
-**Type:** Array<ReqPermissionDetail>
+**Type:** Array&lt;ReqPermissionDetail&gt;
 
 **Since:** 9
 
@@ -200,7 +200,7 @@ readonly routerMap: Array<RouterItem>
 
 Router table of the application. The table is obtained by deduplicating and combining the **routerMap** information under **hapModulesInfo** based on the **name** field in **RouterItem**. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_ROUTER_MAP** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
-**Type:** Array<RouterItem>
+**Type:** Array&lt;RouterItem&gt;
 
 **Since:** 12
 
@@ -234,7 +234,7 @@ Signature information of the bundle. The information can be obtained by passing 
 readonly targetVersion: number
 ```
 
-Target version of the application. It corresponds to the **targetAPIVersion** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Target version of the application. It corresponds to the **targetAPIVersion** field in the [app.json5](docroot://quick-start/app-configuration-file.md) file.
 
 **Type:** number
 
@@ -270,7 +270,7 @@ Timestamp for the last update of the application package. It measures the millis
 readonly vendor: string
 ```
 
-Vendor of the application package. It corresponds to the **vendor** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Vendor of the application package. It corresponds to the **vendor** field in the [app.json5](docroot://quick-start/app-configuration-file.md) file.
 
 **Type:** string
 
@@ -288,7 +288,7 @@ Vendor of the application package. It corresponds to the **vendor** field in the
 readonly versionCode: number
 ```
 
-Version code of the application package. It corresponds to the **versionCode** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Version code of the application package. It corresponds to the **versionCode** field in the [app.json5](docroot://quick-start/app-configuration-file.md) file.
 
 **Type:** number
 
@@ -306,7 +306,7 @@ Version code of the application package. It corresponds to the **versionCode** f
 readonly versionName: string
 ```
 
-Version description of the application package. It corresponds to the **versionName** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Version description of the application package. It corresponds to the **versionName** field in the [app.json5](docroot://quick-start/app-configuration-file.md) file.
 
 **Type:** string
 

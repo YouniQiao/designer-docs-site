@@ -14,6 +14,7 @@ Implements audio spatialization management.
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="isspatializationenabledforcurrentdevice"></a>
 ## isSpatializationEnabledForCurrentDevice
 
 ```TypeScript
@@ -34,6 +35,7 @@ Checks whether spatial audio rendering is enabled for the current device. This A
 | --- | --- |
 | boolean | Check result for whether spatial audio rendering is enabled. **true** if enabled, **false** otherwise. |
 
+<a id="off"></a>
 ## off('spatializationEnabledChangeForCurrentDevice')
 
 ```TypeScript
@@ -53,7 +55,7 @@ Unsubscribes from the spatial audio rendering status change event of the current
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'spatializationEnabledChangeForCurrentDevice' | Yes | Event type. The event **'spatializationEnabledChangeForCurrentDevice'** is triggered when the spatial audio rendering status is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Callback used to return the result, indicating whether spatial audio rendering is enabled. **true** if enabled, **false** otherwise. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Callback used to return the result, indicating whether spatial audio rendering is enabled. **true** if enabled, **false** otherwise. |
 
 **Error codes:**
 
@@ -61,6 +63,7 @@ Unsubscribes from the spatial audio rendering status change event of the current
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on"></a>
 ## on('spatializationEnabledChangeForCurrentDevice')
 
 ```TypeScript
@@ -80,7 +83,7 @@ Subscribes to the spatial audio rendering status change event of the current dev
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'spatializationEnabledChangeForCurrentDevice' | Yes | Event type. The event **'spatializationEnabledChangeForCurrentDevice'** is triggered when the spatial audio rendering status is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback used to return the result, indicating whether spatial audio rendering is enabled. **true** if enabled, **false** otherwise. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result, indicating whether spatial audio rendering is enabled. **true** if enabled, **false** otherwise. |
 
 **Error codes:**
 

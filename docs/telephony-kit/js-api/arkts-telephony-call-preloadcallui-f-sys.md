@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="preloadcallui"></a>
 ## preloadCallUI
 
 ```TypeScript
@@ -28,7 +29,7 @@ Preload callUI.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the preloadCallUI. |
+| Promise&lt;boolean&gt; | The promise returned by the preloadCallUI. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { formObserver } from '@kit.FormKit';
 ```
 
+<a id="getrunningforminfos"></a>
 ## getRunningFormInfos
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the RunningFormInfo objects provided by a specific card host application
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<formInfo.RunningFormInfo>> | Yes | The callback is used to return the RunningFormInfo. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Yes | The callback is used to return the RunningFormInfo. |
 | hostBundleName | string | No | Indicates the bundle name of the form host application. |
 
 **Error codes:**
@@ -42,6 +43,7 @@ Obtains the RunningFormInfo objects provided by a specific card host application
 | [16500060](../errorcode-form.md#16500060-service-connection-failure) | Service connection error. |
 
 
+<a id="getrunningforminfos-1"></a>
 ## getRunningFormInfos
 
 ```TypeScript
@@ -76,7 +78,7 @@ Obtains the RunningFormInfo objects provided by a specific card host application
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<formInfo.RunningFormInfo>> | Yes | The callback is used to return the RunningFormInfo. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Yes | The callback is used to return the RunningFormInfo. |
 | isUnusedIncluded | boolean | Yes | Indicates whether to include unused form. |
 | hostBundleName | string | No | Indicates the bundle name of the form host application. |
 
@@ -91,6 +93,7 @@ Obtains the RunningFormInfo objects provided by a specific card host application
 | [16500060](../errorcode-form.md#16500060-service-connection-failure) | Service connection error. |
 
 
+<a id="getrunningforminfos-2"></a>
 ## getRunningFormInfos
 
 ```TypeScript
@@ -119,7 +122,7 @@ Obtains the RunningFormInfo objects provided by a specific card host application
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<formInfo.RunningFormInfo>> | Returns the RunningFormInfo. |
+| Promise&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Returns the RunningFormInfo. |
 
 **Error codes:**
 
@@ -132,6 +135,7 @@ Obtains the RunningFormInfo objects provided by a specific card host application
 | [16500060](../errorcode-form.md#16500060-service-connection-failure) | Service connection error. |
 
 
+<a id="getrunningforminfos-3"></a>
 ## getRunningFormInfos
 
 ```TypeScript
@@ -170,7 +174,7 @@ Obtains the RunningFormInfo objects provided by a specific card host application
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<formInfo.RunningFormInfo>> | Returns the RunningFormInfo. |
+| Promise&lt;Array&lt;formInfo.RunningFormInfo&gt;&gt; | Returns the RunningFormInfo. |
 
 **Error codes:**
 

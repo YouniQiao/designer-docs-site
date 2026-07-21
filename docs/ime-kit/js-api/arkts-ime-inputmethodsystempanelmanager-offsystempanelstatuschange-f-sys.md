@@ -6,6 +6,7 @@
 import { inputMethodSystemPanelManager } from '@kit.IMEKit';
 ```
 
+<a id="offsystempanelstatuschange"></a>
 ## offSystemPanelStatusChange
 
 ```TypeScript
@@ -28,7 +29,7 @@ Unsubscribe from the system panel status change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SystemPanelStatus> | No | callback triggered when the system panel status changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SystemPanelStatus&gt; | No | callback triggered when the system panel status changes. |
 
 **Error codes:**
 

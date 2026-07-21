@@ -8,7 +8,7 @@ Use the **CommonEventData** type to transmit data related to common events. The 
 
 <!--Del-->
 
-For details about how to obtain the event configuration and configure the level-2 configuration file, see [Subscribing to Common Events in Static Mode (for System Applications Only)](../../../../basic-services/common-event/common-event-static-subscription-sys.md).<!--DelEnd-->
+For details about how to obtain the event configuration and configure the level-2 configuration file, see [Subscribing to Common Events in Static Mode (for System Applications Only)](docroot://basic-services/common-event/common-event-static-subscription-sys.md).<!--DelEnd-->
 
 **Since:** 11
 

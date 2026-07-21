@@ -6,13 +6,14 @@
 import { application } from '@kit.AbilityKit';
 ```
 
+<a id="exitmasterprocessrole"></a>
 ## exitMasterProcessRole
 
 ```TypeScript
 export function exitMasterProcessRole(): Promise<void>
 ```
 
-Relinquishes the [master-process](../../../../application-models/ability-terminology.md#master-process) role from the current process. This API uses a promise to return the result.This API can be properly called only on 2-in-1 devices and tablets. If it is called on other device types, error code 801 is returned.
+Relinquishes the [master-process](docroot://application-models/ability-terminology.md#master-process) role from the current process. This API uses a promise to return the result.This API can be properly called only on 2-in-1 devices and tablets. If it is called on other device types, error code 801 is returned.
 
 **Since:** 21
 
@@ -26,7 +27,7 @@ Relinquishes the [master-process](../../../../application-models/ability-termino
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

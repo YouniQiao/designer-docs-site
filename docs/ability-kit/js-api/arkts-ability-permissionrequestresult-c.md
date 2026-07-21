@@ -20,7 +20,7 @@ Authorization result corresponding to each requested permission.
 - 0: Authorized, the application can continue to access protected resources associated with this permission.  
 - 2: Invalid request, usually indicating that the permission is not declared, the permission name is invalid, or the special request conditions for this permission are not met. Developers should check the permission name, the permission declaration in module.json, and the request conditions for the corresponding permission.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 9
 
@@ -45,7 +45,7 @@ Indicates whether an authorization dialog was actually shown for each permission
 
 When authResults is -1, combining it with this field can further distinguish between "rejected by the user this time" and "dialog is no longer shown currently". If this field is not returned, it means this result does not include the authorization dialog display status.
 
-**Type:** Array<boolean>
+**Type:** Array&lt;boolean&gt;
 
 **Since:** 12
 
@@ -68,13 +68,13 @@ Reason code corresponding to each permission request. Mainly used to explain the
 - 0: This request is valid.  
 - 1: Invalid permission name, please check the permission name format and value.  
 - 2: Permission not declared, please declare this permission in module.json.  
-- 3: The request conditions for the corresponding permission are not met, for example, some location permissions require additional prerequisites. Currently only applies to location permissions, including [ohos.permission.LOCATION](../../../../security/AccessToken/permissions-for-all-user.md#ohospermissionlocation) and [ohos.permission.APPROXIMATELY_LOCATION](../../../../security/AccessToken/permissions-for-all-user.md#ohospermissionapproximately_location).  
+- 3: The request conditions for the corresponding permission are not met, for example, some location permissions require additional prerequisites. Currently only applies to location permissions, including [ohos.permission.LOCATION](docroot://security/AccessToken/permissions-for-all-user.md#ohospermissionlocation) and [ohos.permission.APPROXIMATELY_LOCATION](docroot://security/AccessToken/permissions-for-all-user.md#ohospermissionapproximately_location).  
 - 4: The user has not agreed to the privacy statement, please guide the user to agree to the privacy statement before requesting permissions.  
 - 5: This permission does not support requesting via permission dialog; the request method may be restricted or controlled by system policy. Please use the authorization method supported by this permission.  
-- 6: This permission is of the [manual_settings](../../../../security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type and can only be authorized through the settings page. This reason code is supported starting from API version21.  
+- 6: This permission is of the [manual_settings](docroot://security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type and can only be authorized through the settings page. This reason code is supported starting from API version21.  
 - 12: Service exception, please try again later.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 18
 
@@ -94,7 +94,7 @@ permissions: Array<string>
 
 Array of permissions to be requested this time. **Atomic service API:** Starting from API version 11, this API supports use in atomic services.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 

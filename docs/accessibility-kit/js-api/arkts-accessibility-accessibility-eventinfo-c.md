@@ -14,6 +14,7 @@ Describes a GUI change event.
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -36,7 +37,7 @@ Constructor, which is used to construct an EventInfo instance using a JSON objec
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| jsonObject | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | JSON object that contains the **type**, **bundleName**, and **triggerAction** fields. |
+| jsonObject | Object | Yes | JSON object that contains the **type**, **bundleName**, and **triggerAction** fields. |
 
 **Example**
 
@@ -51,6 +52,7 @@ let eventInfo: accessibility.EventInfo = ({
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -159,7 +161,7 @@ contents?: Array<string>
 
 Content list, which is set according to the actual scenario with no special restrictions. The default value is empty.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 7
 

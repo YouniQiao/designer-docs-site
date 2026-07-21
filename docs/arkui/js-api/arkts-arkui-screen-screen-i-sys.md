@@ -1,6 +1,6 @@
 # Screen (System API)
 
-Defines the [physical screen](../../../../displaymanager/display-terminology.md#physical-screen) instance.
+Defines the [physical screen](docroot://displaymanager/display-terminology.md#physical-screen) instance.
 
 Before calling any API in Screen, you must use [getAllScreens()](arkts-arkui-screen-getallscreens-f-sys.md#getallscreens-1) or [createVirtualScreen()](arkts-arkui-screen-createvirtualscreen-f-sys.md#createvirtualscreen-1)to obtain a Screen instance.
 
@@ -18,6 +18,7 @@ Before calling any API in Screen, you must use [getAllScreens()](arkts-arkui-scr
 import { screen } from '@kit.ArkUI';
 ```
 
+<a id="setdensitydpi"></a>
 ## setDensityDpi
 
 ```TypeScript
@@ -39,7 +40,7 @@ Sets the pixel density of the screen. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | densityDpi | number | Yes | Pixel density. The value must be an integer in the range [80, 640]. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the pixel density is successfully set, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the pixel density is successfully set, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -92,6 +93,7 @@ screen.createVirtualScreen(option).then((data: screen.Screen) => {
 
 ```
 
+<a id="setdensitydpi-1"></a>
 ## setDensityDpi
 
 ```TypeScript
@@ -118,7 +120,7 @@ Sets the pixel density of the screen. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -168,13 +170,14 @@ screen.createVirtualScreen(option).then((data: screen.Screen) => {
 
 ```
 
+<a id="setorientation"></a>
 ## setOrientation
 
 ```TypeScript
 setOrientation(orientation: Orientation, callback: AsyncCallback<void>): void
 ```
 
-Sets the screen orientation. This API uses an asynchronous callback to return the result. The screen orientation changes only when the specified orientation complies with the [application rotation policy](../../../../quick-start/module-configuration-file.md#abilities) (you can configure the application rotation policy by setting the **orientation** field in the **abilities** tag in the **module.json5** file). If the specified orientation does not comply with the application rotation policy, the screen orientation does not change and no exception is thrown.
+Sets the screen orientation. This API uses an asynchronous callback to return the result. The screen orientation changes only when the specified orientation complies with the [application rotation policy](docroot://quick-start/module-configuration-file.md#abilities) (you can configure the application rotation policy by setting the **orientation** field in the **abilities** tag in the **module.json5** file). If the specified orientation does not comply with the application rotation policy, the screen orientation does not change and no exception is thrown.
 
 **Since:** 9
 
@@ -189,7 +192,7 @@ Sets the screen orientation. This API uses an asynchronous callback to return th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | orientation | [Orientation](arkts-arkui-window-orientation-e.md) | Yes | Screen orientation. The value must be an enumerated value of **Orientation**. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the screen orientation is successfully set, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the screen orientation is successfully set, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -241,13 +244,14 @@ screen.createVirtualScreen(option).then((data: screen.Screen) => {
 
 ```
 
+<a id="setorientation-1"></a>
 ## setOrientation
 
 ```TypeScript
 setOrientation(orientation: Orientation): Promise<void>
 ```
 
-Sets the screen orientation. This API uses a promise to return the result. The screen orientation changes only when the specified orientation complies with the [application rotation policy](../../../../quick-start/module-configuration-file.md#abilities) (you can configure the application rotation policy by setting the **orientation** field in the **abilities** tag in the **module.json5** file). If the specified orientation does not comply with the application rotation policy, the screen orientation does not change and no exception is thrown.
+Sets the screen orientation. This API uses a promise to return the result. The screen orientation changes only when the specified orientation complies with the [application rotation policy](docroot://quick-start/module-configuration-file.md#abilities) (you can configure the application rotation policy by setting the **orientation** field in the **abilities** tag in the **module.json5** file). If the specified orientation does not comply with the application rotation policy, the screen orientation does not change and no exception is thrown.
 
 **Since:** 9
 
@@ -267,7 +271,7 @@ Sets the screen orientation. This API uses a promise to return the result. The s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -317,6 +321,7 @@ screen.createVirtualScreen(option).then((data: screen.Screen) => {
 
 ```
 
+<a id="setorientation-2"></a>
 ## setOrientation
 
 ```TypeScript
@@ -346,7 +351,7 @@ Set the orientation of the screen
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -386,6 +391,7 @@ screensPromise.then((data: Array<screen.Screen>) => {
 
 ```
 
+<a id="setscreenactivemode"></a>
 ## setScreenActiveMode
 
 ```TypeScript
@@ -407,7 +413,7 @@ Sets the active mode of the screen. This API uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | modeIndex | number | Yes | Index of the mode to set. The current value and value range of this parameter vary according to the screen resolution, refresh rate, and device hardware. The value must be an integer. The index is the mode ID in the [ScreenModeInfo](arkts-arkui-screen-screenmodeinfo-i-sys.md) property of the screen. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the active mode is successfully set, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the active mode is successfully set, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -460,6 +466,7 @@ screen.createVirtualScreen(option).then((data: screen.Screen) => {
 
 ```
 
+<a id="setscreenactivemode-1"></a>
 ## setScreenActiveMode
 
 ```TypeScript
@@ -486,7 +493,7 @@ Sets the active mode of the screen. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -731,7 +738,7 @@ readonly supportedModeInfo: Array<ScreenModeInfo>
 
 Mode set supported by the screen.
 
-**Type:** Array<ScreenModeInfo>
+**Type:** Array&lt;ScreenModeInfo&gt;
 
 **Since:** 9
 

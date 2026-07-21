@@ -6,6 +6,7 @@
 import { application } from '@kit.AbilityKit';
 ```
 
+<a id="createpluginmodulecontextforhostbundle"></a>
 ## createPluginModuleContextForHostBundle
 
 ```TypeScript
@@ -42,7 +43,7 @@ Creates the context for a plugin based on a given context, plugin bundle name, p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Context> | Promise used to return the context created, in which the **processName** and **config** properties are the same as those of the input context. |
+| Promise&lt;Context&gt; | Promise used to return the context created, in which the **processName** and **config** properties are the same as those of the input context. |
 
 **Error codes:**
 

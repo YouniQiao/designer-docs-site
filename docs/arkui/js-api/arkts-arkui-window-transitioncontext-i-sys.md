@@ -16,6 +16,7 @@ Provides the context for the transition animation.
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="completetransition"></a>
 ## completeTransition
 
 ```TypeScript

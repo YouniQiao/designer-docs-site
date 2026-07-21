@@ -6,6 +6,7 @@
 import { geolocation } from '@kit.LocationKit';
 ```
 
+<a id="getcurrentlocation"></a>
 ## getCurrentLocation
 
 ```TypeScript
@@ -31,7 +32,7 @@ Obtain current location
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | request | [CurrentLocationRequest](arkts-location-geolocationmanager-currentlocationrequest-i.md) | Yes | Indicates the location request parameters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Location> | Yes | Indicates the callback for reporting the location result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Location&gt; | Yes | Indicates the callback for reporting the location result. |
 
 **Example**
 
@@ -52,6 +53,7 @@ geolocation.getCurrentLocation(requestInfo, locationChange);
 ```
 
 
+<a id="getcurrentlocation-1"></a>
 ## getCurrentLocation
 
 ```TypeScript
@@ -76,7 +78,7 @@ Obtain current location
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Location> | Yes | Indicates the callback for reporting the location result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Location&gt; | Yes | Indicates the callback for reporting the location result. |
 
 **Example**
 
@@ -96,6 +98,7 @@ geolocation.getCurrentLocation(locationChange);
 ```
 
 
+<a id="getcurrentlocation-2"></a>
 ## getCurrentLocation
 
 ```TypeScript
@@ -126,7 +129,7 @@ Obtain current location
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Location> | The promise returned by the function. |
+| Promise&lt;Location&gt; | The promise returned by the function. |
 
 **Example**
 

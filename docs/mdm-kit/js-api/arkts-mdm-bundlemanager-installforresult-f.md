@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.MDMKit';
 ```
 
+<a id="installforresult"></a>
 ## installForResult
 
 ```TypeScript
@@ -29,14 +30,14 @@ Install an application.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | admin indicates the enterprise admin extension ability information.The admin must have the corresponding permission. |
-| hapFilePaths | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | indicates the path of the application to be installed. |
+| hapFilePaths | Array&lt;string&gt; | Yes | indicates the path of the application to be installed. |
 | installParam | [InstallParam](arkts-mdm-bundlemanager-installparam-i.md) | No | installParam indicates the installation parameters.It may contain two fields: userId and installFlag.The flag can only be one of correct flags. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise of installing application result. |
+| Promise&lt;void&gt; | the promise of installing application result. |
 
 **Error codes:**
 

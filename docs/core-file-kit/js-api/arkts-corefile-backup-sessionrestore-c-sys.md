@@ -16,6 +16,7 @@ Control class for restore procedure.
 import { backup } from '@kit.CoreFileKit';
 ```
 
+<a id="appendbundles"></a>
 ## appendBundles
 
 ```TypeScript
@@ -46,7 +47,7 @@ Append new bundles and restoreInfos to be restore up during the restore.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -154,6 +155,7 @@ async function appendBundles() {
 
 ```
 
+<a id="appendbundles-1"></a>
 ## appendBundles
 
 ```TypeScript
@@ -178,7 +180,7 @@ Append new bundles to be restore up during the restore.
 | --- | --- | --- | --- |
 | remoteCapabilitiesFd | number | Yes | Opened JSON file that stores remote device capabilities. |
 | bundlesToBackup | string[] | Yes | Bundles to restore. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Asynchronous callback to be called when appendBundles has finished. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Asynchronous callback to be called when appendBundles has finished. |
 
 **Error codes:**
 
@@ -266,6 +268,7 @@ async function appendBundles() {
 
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -365,6 +368,7 @@ async function cancelTest() {
 
 ```
 
+<a id="cleanbundletempdir"></a>
 ## cleanBundleTempDir
 
 ```TypeScript
@@ -393,7 +397,7 @@ Provides an interface for the tool to clear temporary directories
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Return clean result, true is success, false is fail. |
+| Promise&lt;boolean&gt; | Return clean result, true is success, false is fail. |
 
 **Error codes:**
 
@@ -469,6 +473,7 @@ let sessionRestore = new backup.SessionRestore(generalCallbacks); // Create a re
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -543,6 +548,7 @@ let sessionRestore = new backup.SessionRestore(generalCallbacks); // Create a re
 
 ```
 
+<a id="getapkfilehandle"></a>
 ## getApkFileHandle
 
 ```TypeScript
@@ -574,7 +580,7 @@ Get the file handle of an APK file.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileData> | Promise used to return A FileData holding the file descriptor. The returned file is a temporal file that will be deleted automatically when closed. |
+| Promise&lt;FileData&gt; | Promise used to return A FileData holding the file descriptor. The returned file is a temporal file that will be deleted automatically when closed. |
 
 **Error codes:**
 
@@ -586,6 +592,7 @@ Get the file handle of an APK file.
 | 13900001 | Operation not permitted |
 | 13900020 | Invalid argument |
 
+<a id="getcompatibilityinfo"></a>
 ## getCompatibilityInfo
 
 ```TypeScript
@@ -615,7 +622,7 @@ Provides an interface for the tool to get compatibility info.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Return compatibility info. |
+| Promise&lt;string&gt; | Return compatibility info. |
 
 **Error codes:**
 
@@ -690,6 +697,7 @@ async function getRestoreCompatibilityInfo() {
 
 ```
 
+<a id="getfilehandle"></a>
 ## getFileHandle
 
 ```TypeScript
@@ -718,7 +726,7 @@ Request to get a shared file from the service. This interface is part of the zer
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -792,6 +800,7 @@ async function getFileHandle() {
 
 ```
 
+<a id="getfilehandle-1"></a>
 ## getFileHandle
 
 ```TypeScript
@@ -815,7 +824,7 @@ Request to get a shared file from the service. This interface is part of the zer
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fileMeta | [FileMeta](arkts-corefile-backup-filemeta-i-sys.md) | Yes | Metadata of the file to be sent. Note that all the files should come |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Asynchronous callback to be called when getFileHandle has finished. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Asynchronous callback to be called when getFileHandle has finished. |
 
 **Error codes:**
 
@@ -886,6 +895,7 @@ sessionRestore.getFileHandle(fileMeta, (err: BusinessError) => {
 
 ```
 
+<a id="getfilehandles"></a>
 ## getFileHandles
 
 ```TypeScript
@@ -916,7 +926,7 @@ Request to get shared files from the service. This interface is part of the zero
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -928,6 +938,7 @@ Request to get shared files from the service. This interface is part of the zero
 | 13900001 | Operation not permitted |
 | 13900020 | Invalid argument |
 
+<a id="getlocalcapabilities"></a>
 ## getLocalCapabilities
 
 ```TypeScript
@@ -950,7 +961,7 @@ Obtain a Json file that describes local capabilities.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileData> | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
+| Promise&lt;FileData&gt; | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
 
 **Error codes:**
 
@@ -1092,6 +1103,7 @@ The capability file can be obtained by using [fileIo.stat](js-apis-file-fs.md#fi
 
 ```
 
+<a id="migratefile"></a>
 ## migrateFile
 
 ```TypeScript
@@ -1123,7 +1135,7 @@ Migrate file from source path to destination path.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1135,6 +1147,7 @@ Migrate file from source path to destination path.
 | 13900001 | Operation not permitted |
 | 13900020 | Invalid argument |
 
+<a id="publishfile"></a>
 ## publishFile
 
 ```TypeScript
@@ -1163,7 +1176,7 @@ Publish the file handle to the backup service to make the service aware that the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -1249,6 +1262,7 @@ g_session = createSessionRestore();
 
 ```
 
+<a id="publishfile-1"></a>
 ## publishFile
 
 ```TypeScript
@@ -1272,7 +1286,7 @@ Publish the file handle to the backup service to make the service aware that the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | fileMeta | [FileMeta](arkts-corefile-backup-filemeta-i-sys.md) | Yes | Metadata of the file to be sent. Make sure that the backup framework holds |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Asynchronous callback to be called when publishFile has finished. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Asynchronous callback to be called when publishFile has finished. |
 
 **Error codes:**
 
@@ -1360,6 +1374,7 @@ g_session = createSessionRestore();
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -1382,7 +1397,7 @@ End restore process
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

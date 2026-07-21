@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="off"></a>
 ## off('locatingRequiredDataChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Stop WiFi/BT scanning and unsubscribe from WiFi/BT scanning information changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'locatingRequiredDataChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<LocatingRequiredData>> | No | Indicates the callback for reporting WiFi/BT scan info. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;LocatingRequiredData&gt;&gt; | No | Indicates the callback for reporting WiFi/BT scan info. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ try {
 ```
 
 
+<a id="off-1"></a>
 ## off('locationIconStatusChange')
 
 ```TypeScript
@@ -80,7 +82,7 @@ Unsubscribe location icon status changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'locationIconStatusChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LocationIconStatus> | No | Indicates the callback for reporting the location icon status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LocationIconStatus&gt; | No | Indicates the callback for reporting the location icon status. |
 
 **Error codes:**
 

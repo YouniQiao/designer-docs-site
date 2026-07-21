@@ -6,6 +6,7 @@
 import { agentManager } from '@kit.AbilityKit';
 ```
 
+<a id="connectagentextensionability"></a>
 ## connectAgentExtensionAbility
 
 ```TypeScript
@@ -41,7 +42,7 @@ Connects to an AgentExtensionAbility.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AgentProxy> | The promise to get AgentProxy. |
+| Promise&lt;AgentProxy&gt; | The promise to get AgentProxy. |
 
 **Error codes:**
 

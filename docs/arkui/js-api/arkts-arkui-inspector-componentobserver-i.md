@@ -14,6 +14,7 @@ The ComponentObserver is used to listen for layout, draw and drawChildren events
 import { inspector } from '@kit.ArkUI';
 ```
 
+<a id="off"></a>
 ## off('layout')
 
 ```TypeScript
@@ -37,8 +38,9 @@ Deregisters a callback with the corresponding query condition by using the handl
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'layout' | Yes | type of the listened event.<br>**Since:** 12 |
-| callback | () => void | No | callback of the listened event.<br>**Since:** 12 |
+| callback | () =&gt; void | No | callback of the listened event.<br>**Since:** 12 |
 
+<a id="off-1"></a>
 ## off('draw')
 
 ```TypeScript
@@ -62,8 +64,9 @@ Deregisters a callback with the corresponding query condition by using the handl
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'draw' | Yes | type of the listened event.<br>**Since:** 12 |
-| callback | () => void | No | callback of the listened event.<br>**Since:** 12 |
+| callback | () =&gt; void | No | callback of the listened event.<br>**Since:** 12 |
 
+<a id="off-2"></a>
 ## off('drawChildren')
 
 ```TypeScript
@@ -87,8 +90,9 @@ Deregisters a callback with the corresponding query condition by using the handl
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'drawChildren' | Yes | type of the listened event. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | No | callback of the listened event. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | callback of the listened event. |
 
+<a id="offdrawchildren"></a>
 ## offDrawChildren
 
 ```TypeScript
@@ -111,7 +115,7 @@ Deregisters a callback with the corresponding query condition by using the handl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number[]> | No | callback of the listened event. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number[]&gt; | No | callback of the listened event. |
 
 **Example**
 
@@ -152,6 +156,7 @@ struct ImageExample {
 
 ```
 
+<a id="offlayoutchildren"></a>
 ## offLayoutChildren
 
 ```TypeScript
@@ -174,7 +179,7 @@ Deregisters a callback with the corresponding query condition by using the handl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | No | callback of the listened event. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | callback of the listened event. |
 
 **Example**
 
@@ -246,6 +251,7 @@ struct ImageExample {
 
 ```
 
+<a id="on"></a>
 ## on('layout')
 
 ```TypeScript
@@ -269,8 +275,9 @@ Registers a callback with the corresponding query condition by using the handle.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'layout' | Yes | type of the listened event.<br>**Since:** 12 |
-| callback | () => void | Yes | callback of the listened event.<br>**Since:** 12 |
+| callback | () =&gt; void | Yes | callback of the listened event.<br>**Since:** 12 |
 
+<a id="on-1"></a>
 ## on('draw')
 
 ```TypeScript
@@ -294,8 +301,9 @@ Registers a callback with the corresponding query condition by using the handle.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'draw' | Yes | type of the listened event.<br>**Since:** 12 |
-| callback | () => void | Yes | callback of the listened event.<br>**Since:** 12 |
+| callback | () =&gt; void | Yes | callback of the listened event.<br>**Since:** 12 |
 
+<a id="on-2"></a>
 ## on('drawChildren')
 
 ```TypeScript
@@ -319,8 +327,9 @@ Registers a callback with the corresponding query condition by using the handle.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'drawChildren' | Yes | type of the listened event. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | callback of the listened event. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | callback of the listened event. |
 
+<a id="ondrawchildren"></a>
 ## onDrawChildren
 
 ```TypeScript
@@ -343,7 +352,7 @@ Registers a callback with the corresponding query condition by using the handle.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<number[]> | Yes | callback of the listened event. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;number[]&gt; | Yes | callback of the listened event. |
 
 **Example**
 
@@ -384,6 +393,7 @@ struct ImageExample {
 
 ```
 
+<a id="onlayoutchildren"></a>
 ## onLayoutChildren
 
 ```TypeScript
@@ -406,5 +416,5 @@ Registers a callback with the corresponding query condition by using the handle.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | callback of the listened event. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | callback of the listened event. |
 

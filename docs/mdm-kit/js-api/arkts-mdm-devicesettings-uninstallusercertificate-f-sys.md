@@ -6,6 +6,7 @@
 import { deviceSettings } from '@kit.MDMKit';
 ```
 
+<a id="uninstallusercertificate"></a>
 ## uninstallUserCertificate
 
 ```TypeScript
@@ -36,7 +37,7 @@ Uninstalls a user certificate. This API uses a callback to return the result.
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | certUri | string | Yes | Certificate URI, which is set and returned by the [installUserCertificate](arkts-mdm-devicesettings-installusercertificate-f-sys.md#installusercertificate-1)API for installing a user certificate. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ deviceSettings.uninstallUserCertificate(wantTemp, aliasStr, (err) => {
 ```
 
 
+<a id="uninstallusercertificate-1"></a>
 ## uninstallUserCertificate
 
 ```TypeScript
@@ -102,13 +104,13 @@ Uninstalls a user certificate. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| certUri | string | Yes | Certificate URI, which is set and returned by the [installUserCertificate](arkts-mdm-devicesettings-installusercertificate-f-sys.md#installusercertificate-2) API for installing a user certificate. |
+| certUri | string | Yes | Certificate URI, which is set and returned by the [installUserCertificate](arkts-mdm-devicesettings-installusercertificate-f-sys.md#installusercertificate-1) API for installing a user certificate. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. An error object is thrown when a user certificate fails to be uninstalled. |
+| Promise&lt;void&gt; | Promise that returns no value. An error object is thrown when a user certificate fails to be uninstalled. |
 
 **Error codes:**
 

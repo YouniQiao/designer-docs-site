@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="setdelegatedpolicies"></a>
 ## setDelegatedPolicies
 
 ```TypeScript
@@ -32,7 +33,7 @@ Delegates other applications to set device management policies. The applications
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name of the app to be delegated. The distribution type of the delegated app must be **enterprise_normal** or **enterprise_mdm**. You can call the [bundleManager.getBundleInfoForSelf](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1)API to query the app **BundleInfo**. **BundleInfo.appInfo.appDistributionType** indicates the app distribution type. |
 | accountId | number | Yes | User ID, which must be greater than or equal to 0. You can use [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)to obtain the user ID. |
-| policies | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | [Delegation policy list](../../../../reference/apis-mdm-kit/js-apis-enterprise-adminManager.md#delegation-policy-list). |
+| policies | Array&lt;string&gt; | Yes | [Delegation policy list](docroot://reference/apis-mdm-kit/js-apis-enterprise-adminManager.md#delegation-policy-list). |
 
 **Error codes:**
 

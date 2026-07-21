@@ -1,5 +1,6 @@
 # getWant (System API)
 
+<a id="getwant"></a>
 ## getWant
 
 ```TypeScript
@@ -25,9 +26,10 @@ Obtains the {@link Want} of an {@link WantAgent}.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | Indicates the {@link WantAgent} whose UID is to be obtained. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Want> | Yes | Obtain the callback method for Want in WantAgent. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Want&gt; | Yes | Obtain the callback method for Want in WantAgent. |
 
 
+<a id="getwant-1"></a>
 ## getWant
 
 ```TypeScript
@@ -58,5 +60,5 @@ Obtains the {@link Want} of an {@link WantAgent}.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Want> | Returns the {@link Want} of the {@link WantAgent}. |
+| Promise&lt;Want&gt; | Returns the {@link Want} of the {@link WantAgent}. |
 

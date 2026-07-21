@@ -1,5 +1,6 @@
 # getStorage
 
+<a id="getstorage"></a>
 ## getStorage
 
 ```TypeScript
@@ -21,9 +22,10 @@ Reads the specified file and loads its data to the **Storage** instance for data
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the target file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Storage> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Storage&gt; | Yes | Callback used to return the result. |
 
 
+<a id="getstorage-1"></a>
 ## getStorage
 
 ```TypeScript
@@ -50,5 +52,5 @@ Reads the specified file and loads its data to the **Storage** instance for data
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Storage> | Promise used to return the result. |
+| Promise&lt;Storage&gt; | Promise used to return the result. |
 

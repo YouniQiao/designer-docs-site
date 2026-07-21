@@ -6,6 +6,7 @@
 import { restrictions } from '@kit.MDMKit';
 ```
 
+<a id="setuserrestrictionforaccount"></a>
 ## setUserRestrictionForAccount
 
 ```TypeScript
@@ -18,7 +19,7 @@ Sets restrictions on specified user behaviors.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setUserRestrictionForAccount(admin:
+**Substitutes:** [setUserRestrictionForAccount(admin:](arkts-mdm-restrictions-setuserrestrictionforaccount-f.md#setuserrestrictionforaccount-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_SET_USER_RESTRICTION
 
@@ -34,7 +35,7 @@ Sets restrictions on specified user behaviors.
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-want-want-c.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | settingsItem | string | Yes | User behavior.<br>- **modifyWallpaper**: Modify the wallpaper, including the lock screen wallpaper and home screen wallpaper. |
-| accountId | number | Yes | Account ID.<br>The value must be an integer greater than or equal to 0.<br>You can call [getOsAccountLocalId](v @ohos.account.osAccount:osAccount.AccountManager.getOsAccountLocalId(callback: AsyncCallback&lt;int&gt;))to obtain the user ID. |
+| accountId | number | Yes | Account ID.<br>The value must be an integer greater than or equal to 0.<br>You can call [getOsAccountLocalId](v @ohos.account.osAccount:osAccount.AccountManager.getOsAccountLocalId(callback: AsyncCallback<int>))to obtain the user ID. |
 | restricted | boolean | Yes | Whether to disable the action. The value **true** means to disable the action, and **false** means the opposite. |
 
 **Error codes:**
@@ -70,6 +71,7 @@ try {
 ```
 
 
+<a id="setuserrestrictionforaccount-1"></a>
 ## setUserRestrictionForAccount
 
 ```TypeScript

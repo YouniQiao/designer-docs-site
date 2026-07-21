@@ -4,6 +4,8 @@ Provides methods for controlling the AtomicServiceWeb controller.
 
 **Since:** 12
 
+**Decorator:** @Observed
+
 <!--Device-unnamed-export declare class AtomicServiceWebController--><!--Device-unnamed-export declare class AtomicServiceWebController-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -14,6 +16,7 @@ Provides methods for controlling the AtomicServiceWeb controller.
 import { AtomicServiceWeb, OnMessageEvent, OnPageEndEvent, OnHttpErrorReceiveEvent, OnLoadInterceptEvent, WebHeader, OnProgressChangeEvent, OnErrorReceiveEvent, OnPageBeginEvent, OnLoadInterceptCallback, AtomicServiceWebController } from '@kit.ArkUI';
 ```
 
+<a id="accessbackward"></a>
 ## accessBackward
 
 ```TypeScript
@@ -42,6 +45,7 @@ Checks whether the web page can go back.
 | --- | --- |
 | [17100001](../../apis-arkweb/errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The AtomicServiceWebController must be associated with a AtomicServiceWeb component. |
 
+<a id="accessforward"></a>
 ## accessForward
 
 ```TypeScript
@@ -70,6 +74,7 @@ Checks whether the web page can go forward.
 | --- | --- |
 | [17100001](../../apis-arkweb/errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The AtomicServiceWebController must be associated with a AtomicServiceWeb component. |
 
+<a id="accessstep"></a>
 ## accessStep
 
 ```TypeScript
@@ -105,6 +110,7 @@ Checks whether the web page can go back or forward the given number of steps.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100001](../../apis-arkweb/errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The AtomicServiceWebController must be associated with a AtomicServiceWeb component. |
 
+<a id="backward"></a>
 ## backward
 
 ```TypeScript
@@ -127,6 +133,7 @@ Goes back in the history of the web page.
 | --- | --- |
 | [17100001](../../apis-arkweb/errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The AtomicServiceWebController must be associated with a AtomicServiceWeb component. |
 
+<a id="forward"></a>
 ## forward
 
 ```TypeScript
@@ -149,6 +156,7 @@ Goes forward in the history of the web page.
 | --- | --- |
 | [17100001](../../apis-arkweb/errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The AtomicServiceWebController must be associated with a AtomicServiceWeb component. |
 
+<a id="getcustomuseragent"></a>
 ## getCustomUserAgent
 
 ```TypeScript
@@ -177,6 +185,7 @@ Get custom user agent.
 | --- | --- |
 | [17100001](../../apis-arkweb/errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The AtomicServiceWebController must be associated with a AtomicServiceWeb component. |
 
+<a id="getuseragent"></a>
 ## getUserAgent
 
 ```TypeScript
@@ -205,6 +214,7 @@ Gets the default user agent.
 | --- | --- |
 | [17100001](../../apis-arkweb/errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The AtomicServiceWebController must be associated with a AtomicServiceWeb component. |
 
+<a id="loadurl"></a>
 ## loadUrl
 
 ```TypeScript
@@ -226,7 +236,7 @@ Loads the URL.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string \| Resource | Yes | The URL to load. |
-| headers | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WebHeader> | No | Additional HTTP request header for URL. |
+| headers | Array&lt;WebHeader&gt; | No | Additional HTTP request header for URL. |
 
 **Error codes:**
 
@@ -237,6 +247,7 @@ Loads the URL.
 | [17100002](../../apis-arkweb/errorcode-webview.md#17100002-incorrect-url-format) | Invalid url. |
 | [17100003](../../apis-arkweb/errorcode-webview.md#17100003-incorrect-resource-path) | Invalid resource path or file type. |
 
+<a id="refresh"></a>
 ## refresh
 
 ```TypeScript
@@ -259,6 +270,7 @@ Refreshes the current URL.
 | --- | --- |
 | [17100001](../../apis-arkweb/errorcode-webview.md#17100001-webviewcontroller-not-associated-with-a-web-component) | Init error. The AtomicServiceWebController must be associated with a AtomicServiceWeb component. |
 
+<a id="setcustomuseragent"></a>
 ## setCustomUserAgent
 
 ```TypeScript

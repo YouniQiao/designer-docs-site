@@ -1,5 +1,6 @@
 # createKVManager
 
+<a id="createkvmanager"></a>
 ## createKVManager
 
 ```TypeScript
@@ -23,7 +24,7 @@ Creates a **KVManager** instance to manage KV stores. This API uses an asynchron
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [KVManagerConfig](arkts-arkdata-distributedkvstore-kvmanagerconfig-i.md) | Yes | Configuration of the **KVManager** instance, including the bundle name and user information of the caller. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KVManager> | Yes | Callback used to return the **KVManager** instance created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KVManager&gt; | Yes | Callback used to return the **KVManager** instance created. |
 
 **Example**
 
@@ -53,6 +54,7 @@ try {
 ```
 
 
+<a id="createkvmanager-1"></a>
 ## createKVManager
 
 ```TypeScript
@@ -81,7 +83,7 @@ Creates a **KVManager** instance to manage KV stores. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KVManager> | Promise used to return the **KVManager** instance created. |
+| Promise&lt;KVManager&gt; | Promise used to return the **KVManager** instance created. |
 
 **Example**
 

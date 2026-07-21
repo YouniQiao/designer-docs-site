@@ -8,6 +8,7 @@ The render resource factory. RenderResourceFactory is used to create resources t
 
 **System capability:** SystemCapability.ArkUi.Graphics3D
 
+<a id="createscene"></a>
 ## createScene
 
 ```TypeScript
@@ -37,5 +38,5 @@ Create a new scene from a SceneLoadParams.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Scene> | Promise used to return a scene |
+| Promise&lt;Scene&gt; | Promise used to return a scene |
 

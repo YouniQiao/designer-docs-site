@@ -14,6 +14,7 @@ Provides the ImageProcessor type, including the processing function.
 import { videoProcessingEngine } from '@kit.ImageKit';
 ```
 
+<a id="enhancedetail"></a>
 ## enhanceDetail
 
 ```TypeScript
@@ -43,7 +44,7 @@ The function generate the destinationImage from sourceImage with necessary scali
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | A Promise instance used to return the PixelMap object. |
+| Promise&lt;image.PixelMap&gt; | A Promise instance used to return the PixelMap object. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ async function enhanceDetail(sourceImage: image.PixelMap, width: number, height:
 
 ```
 
+<a id="enhancedetail-1"></a>
 ## enhanceDetail
 
 ```TypeScript
@@ -96,7 +98,7 @@ The function generate the destinationImage from sourceImage with necessary scali
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | A Promise instance used to return the PixelMap object. |
+| Promise&lt;image.PixelMap&gt; | A Promise instance used to return the PixelMap object. |
 
 **Error codes:**
 
@@ -121,6 +123,7 @@ async function enhanceDetail(sourceImage: image.PixelMap, scale: number) {
 
 ```
 
+<a id="enhancedetailsync"></a>
 ## enhanceDetailSync
 
 ```TypeScript
@@ -176,6 +179,7 @@ async function enhanceDetailSync(sourceImage: image.PixelMap, width: number, hei
 
 ```
 
+<a id="enhancedetailsync-1"></a>
 ## enhanceDetailSync
 
 ```TypeScript

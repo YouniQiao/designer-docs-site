@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getallnotificationenabledbundles"></a>
 ## getAllNotificationEnabledBundles
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains a list of applications that allow notifications. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleOption>> | Returns a list of applications that allow notifications. |
+| Promise&lt;Array&lt;BundleOption&gt;&gt; | Returns a list of applications that allow notifications. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ notificationManager.getAllNotificationEnabledBundles().then((data: Array<notific
 ```
 
 
+<a id="getallnotificationenabledbundles-1"></a>
 ## getAllNotificationEnabledBundles
 
 ```TypeScript
@@ -86,7 +88,7 @@ Obtains the list of applications that are allowed to publish notifications by a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleOption>> | Returns a list of applications that allow notifications. |
+| Promise&lt;Array&lt;BundleOption&gt;&gt; | Returns a list of applications that allow notifications. |
 
 **Error codes:**
 

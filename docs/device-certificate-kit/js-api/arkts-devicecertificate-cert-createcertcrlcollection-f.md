@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="createcertcrlcollection"></a>
 ## createCertCRLCollection
 
 ```TypeScript
@@ -26,8 +27,8 @@ Creates an object for a collection of X.509 certificates and CRLs.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| certs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<X509Cert> | Yes | X.509 certificates. |
-| crls | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<X509CRL> | No | Array of X509CRL. |
+| certs | Array&lt;X509Cert&gt; | Yes | X.509 certificates. |
+| crls | Array&lt;X509CRL&gt; | No | Array of X509CRL. |
 
 **Return value:**
 

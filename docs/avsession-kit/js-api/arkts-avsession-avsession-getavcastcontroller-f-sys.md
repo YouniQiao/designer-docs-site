@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="getavcastcontroller"></a>
 ## getAVCastController
 
 ```TypeScript
@@ -29,7 +30,7 @@ Register a callback to retrieve an avsession cast controller.This function can b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sessionId | string | Yes | Specifies the sessionId to get controller. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVCastController> | Yes | async callback for the AVCastController. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVCastController&gt; | Yes | async callback for the AVCastController. |
 
 **Error codes:**
 
@@ -75,6 +76,7 @@ struct Index {
 ```
 
 
+<a id="getavcastcontroller-1"></a>
 ## getAVCastController
 
 ```TypeScript
@@ -103,7 +105,7 @@ Get the current session's remote controller client.If the avsession is not under
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVCastController> | Promise for the AVCastController |
+| Promise&lt;AVCastController&gt; | Promise for the AVCastController |
 
 **Error codes:**
 

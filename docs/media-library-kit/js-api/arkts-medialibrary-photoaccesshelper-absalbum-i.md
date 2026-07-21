@@ -14,6 +14,7 @@ Defines the abstract interface of albums.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="getassets"></a>
 ## getAssets
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains image and video assets. This API uses an asynchronous callback to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [FetchOptions](arkts-medialibrary-photoaccesshelper-fetchoptions-i.md) | Yes | Retrieval options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FetchResult<PhotoAsset>> | Yes | Callback function. If files from the album are obtained successfully, **err** is **undefined**, and **data** is the result set of the obtained image and video data ([FetchResult](arkts-file-photoaccesshelper.md)). Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Yes | Callback function. If files from the album are obtained successfully, **err** is **undefined**, and **data** is the result set of the obtained image and video data ([FetchResult](arkts-file-photoaccesshelper.md)). Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -47,6 +48,7 @@ Obtains image and video assets. This API uses an asynchronous callback to return
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
+<a id="getassets-1"></a>
 ## getAssets
 
 ```TypeScript
@@ -75,7 +77,7 @@ Obtains image and video assets. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<PhotoAsset>> | Promise used to return the image and video assets obtained. |
+| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Promise used to return the image and video assets obtained. |
 
 **Error codes:**
 

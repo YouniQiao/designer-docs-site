@@ -14,6 +14,7 @@ Provide a simple date time formatting interface.
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -34,7 +35,7 @@ Formats the date and time.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | Date and time. Note: The month starts from **0**. For example, **0** indicates January. |
+| date | Date | Yes | Date and time. Note: The month starts from **0**. For example, **0** indicates January. |
 
 **Return value:**
 

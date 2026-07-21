@@ -6,13 +6,14 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getprofilebyability"></a>
 ## getProfileByAbility
 
 ```TypeScript
 function getProfileByAbility(moduleName: string, abilityName: string, metadataName: string, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains the JSON string array of the current application's configuration file based on the given module name,ability name, and metadata name (name configured under **metadata** in [abilities](../../../../quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This API uses an asynchronous callback to return the result.
+Obtains the JSON string array of the current application's configuration file based on the given module name,ability name, and metadata name (name configured under **metadata** in [abilities](docroot://quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This API uses an asynchronous callback to return the result.
 
 > NOTE  
 >  
@@ -34,8 +35,8 @@ Obtains the JSON string array of the current application's configuration file ba
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name. |
 | abilityName | string | Yes | Name of the UIAbility component. |
-| metadataName | string | Yes | [Metadata name](../../../../quick-start/module-configuration-file.md#metadata) of the UIAbility component, that is, **name** of the **metadata** tag under [abilities](../../../../quick-start/module-configuration-file.md#abilities) in the **module.json5** file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the information is successfully obtained, **err** is **null** and **data** is **Array&lt;string&gt;**.Otherwise, **err** is an error object. |
+| metadataName | string | Yes | [Metadata name](docroot://quick-start/module-configuration-file.md#metadata) of the UIAbility component, that is, **name** of the **metadata** tag under [abilities](docroot://quick-start/module-configuration-file.md#abilities) in the **module.json5** file. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md) used to return the result. If the information is successfully obtained, **err** is **null** and **data** is **Array<string>**.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -74,13 +75,14 @@ try {
 ```
 
 
+<a id="getprofilebyability-1"></a>
 ## getProfileByAbility
 
 ```TypeScript
 function getProfileByAbility(moduleName: string, abilityName: string, metadataName?: string): Promise<Array<string>>
 ```
 
-Obtains the JSON string array of the current application's configuration file based on the given module name,ability name, and metadata name (name configured under **metadata** in [abilities](../../../../quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This API uses a promise to return the result.
+Obtains the JSON string array of the current application's configuration file based on the given module name,ability name, and metadata name (name configured under **metadata** in [abilities](docroot://quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This API uses a promise to return the result.
 
 > NOTE  
 >  
@@ -102,13 +104,13 @@ Obtains the JSON string array of the current application's configuration file ba
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name. |
 | abilityName | string | Yes | Name of the UIAbility component. |
-| metadataName | string | No | Metadata name of the UIAbility component, that is, **name** of the **metadata** tag under [abilities](../../../../quick-start/module-configuration-file.md#abilities) in the **module.json5** file. The default value is null. |
+| metadataName | string | No | Metadata name of the UIAbility component, that is, **name** of the **metadata** tag under [abilities](docroot://quick-start/module-configuration-file.md#abilities) in the **module.json5** file. The default value is null. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the array of JSON strings obtained. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the array of JSON strings obtained. |
 
 **Error codes:**
 

@@ -102,7 +102,7 @@ Screen ID of the window corresponding to the edit box. If window ID is not set, 
 readonly enterKeyType: number
 ```
 
-Function attributes of the edit box. For details, see [function key definitions in constants](../../../../reference/apis-ime-kit/js-apis-inputmethodengine.md#Constants).
+Function attributes of the edit box. For details, see [function key definitions in constants](docroot://reference/apis-ime-kit/js-apis-inputmethodengine.md#Constants).
 
 **Type:** number
 
@@ -166,7 +166,7 @@ Immersive mode of the input method.
 readonly inputPattern: number
 ```
 
-Text attribute of the edit box. For details, see [edit box definitions in constants](../../../../reference/apis-ime-kit/js-apis-inputmethodengine.md#Constants).
+Text attribute of the edit box. For details, see [edit box definitions in constants](docroot://reference/apis-ime-kit/js-apis-inputmethodengine.md#Constants).
 
 **Type:** number
 

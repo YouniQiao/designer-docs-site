@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="getscreencapturemonitor"></a>
 ## getScreenCaptureMonitor
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains a **ScreenCaptureMonitor** instance. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ScreenCaptureMonitor> | Promise used to return the result. The instance can be used to query and monitor the status of the system screen recorder.<br>If the operation is successful,a **ScreenCaptureMonitor** instance is returned; otherwise, **null** is returned. |
+| Promise&lt;ScreenCaptureMonitor&gt; | Promise used to return the result. The instance can be used to query and monitor the status of the system screen recorder.<br>If the operation is successful,a **ScreenCaptureMonitor** instance is returned; otherwise, **null** is returned. |
 
 **Error codes:**
 

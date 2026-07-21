@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="on"></a>
 ## on('privateModeChange')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Subscribes to privacy mode changes of this display. When there is a privacy wind
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'privateModeChange' | Yes | Event type. The value is fixed at **'privateModeChange'**, indicating that the privacy mode of the display is changed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback used to return whether the privacy mode of the display is changed.**true** if changed, **false** otherwise. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return whether the privacy mode of the display is changed.**true** if changed, **false** otherwise. |
 
 **Error codes:**
 

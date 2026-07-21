@@ -14,6 +14,7 @@ Provides holiday data parsing capabilities, such as determining holidays and obt
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -34,7 +35,7 @@ Creates a **HolidayManager** object for parsing holiday data.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| icsPath | [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | Yes | Path of the **.ics** file with the read permission granted for applications.iCalendar is a standard Internet calendar format for storing calendar data. |
+| icsPath | String | Yes | Path of the **.ics** file with the read permission granted for applications.iCalendar is a standard Internet calendar format for storing calendar data. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ try {
 
 ```
 
+<a id="getholidayinfoitemarray"></a>
 ## getHolidayInfoItemArray
 
 ```TypeScript
@@ -85,7 +87,7 @@ Obtains the holiday information list of the specified year.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<HolidayInfoItem> | Holiday information list. |
+| Array&lt;HolidayInfoItem&gt; | Holiday information list. |
 
 **Error codes:**
 
@@ -94,6 +96,7 @@ Obtains the holiday information list of the specified year.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [890001](../errorcode-i18n.md#890001-parameter-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
+<a id="isholiday"></a>
 ## isHoliday
 
 ```TypeScript
@@ -114,7 +117,7 @@ Determines whether the specified date is a holiday.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | No | Date and time. Note: The month starts from **0**. For example, **0** indicates January.The default value is the current date. |
+| date | Date | No | Date and time. Note: The month starts from **0**. For example, **0** indicates January.The default value is the current date. |
 
 **Return value:**
 

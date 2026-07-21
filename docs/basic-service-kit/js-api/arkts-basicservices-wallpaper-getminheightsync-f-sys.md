@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="getminheightsync"></a>
 ## getMinHeightSync
 
 ```TypeScript

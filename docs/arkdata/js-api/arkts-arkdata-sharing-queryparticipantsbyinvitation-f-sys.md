@@ -6,6 +6,7 @@
 import { cloudData } from '@kit.ArkData';
 ```
 
+<a id="queryparticipantsbyinvitation"></a>
 ## queryParticipantsByInvitation
 
 ```TypeScript
@@ -36,7 +37,7 @@ Queries the participants based on the sharing invitation code.This API uses an a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | invitationCode | string | Yes | Invitation code of the share. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Result<Array<Participant>>> | Yes | Callback used to return the participants obtained. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Result&lt;Array&lt;Participant&gt;&gt;&gt; | Yes | Callback used to return the participants obtained. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ cloudData.sharing.queryParticipantsByInvitation('sharing_invitation_code_test', 
 ```
 
 
+<a id="queryparticipantsbyinvitation-1"></a>
 ## queryParticipantsByInvitation
 
 ```TypeScript
@@ -88,7 +90,7 @@ Queries the participants based on the sharing invitation code.This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<Array<Participant>>> | Promise used to return the participants obtained. |
+| Promise&lt;Result&lt;Array&lt;Participant&gt;&gt;&gt; | Promise used to return the participants obtained. |
 
 **Error codes:**
 

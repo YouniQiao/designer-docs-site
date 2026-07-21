@@ -16,6 +16,7 @@ Provides APIs to manage albums.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="deleteassets"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -47,8 +48,8 @@ Deletes image or video assets from the trash. Before the operation, ensure that 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of the image or video assets to delete. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of the image or video assets to delete. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -93,6 +94,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="deleteassets-1"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -124,13 +126,13 @@ Deletes image or video assets from the trash. Before the operation, ensure that 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of the image or video assets to delete. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of the image or video assets to delete. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -174,6 +176,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getattribute"></a>
 ## getAttribute
 
 ```TypeScript
@@ -204,7 +207,7 @@ Gets album attribute info.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<AlbumAttribute, AlbumAttributeInfo>> | Returns a record of attributes and their values. |
+| Promise&lt;Record&lt;AlbumAttribute, AlbumAttributeInfo&gt;&gt; | Returns a record of attributes and their values. |
 
 **Error codes:**
 
@@ -256,6 +259,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getfaceid"></a>
 ## getFaceId
 
 ```TypeScript
@@ -278,7 +282,7 @@ Obtains the face identifier on the cover of a portrait album or group photo albu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return **tag_id** of the portrait album, **group_tag** of the group photo album, or an empty string if no face identifier is found. |
+| Promise&lt;string&gt; | Promise used to return **tag_id** of the portrait album, **group_tag** of the group photo album, or an empty string if no face identifier is found. |
 
 **Error codes:**
 
@@ -330,6 +334,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="getfusionassetsinfo"></a>
 ## getFusionAssetsInfo
 
 ```TypeScript
@@ -352,7 +357,7 @@ Obtains fusion assets information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FusionAssetsInfo[]> | Returns fusion assets information. |
+| Promise&lt;FusionAssetsInfo[]&gt; | Returns fusion assets information. |
 
 **Error codes:**
 
@@ -362,6 +367,7 @@ Obtains fusion assets information.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.<br>Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
+<a id="getselectedassets"></a>
 ## getSelectedAssets
 
 ```TypeScript
@@ -391,7 +397,7 @@ Obtains portrait album assets that meet filter criteria.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<PhotoAsset>> | Promise used to return the image information. |
+| Promise&lt;FetchResult&lt;PhotoAsset&gt;&gt; | Promise used to return the image information. |
 
 **Error codes:**
 
@@ -461,6 +467,7 @@ async function example1(phAccessHelper: photoAccessHelper.PhotoAccessHelper) : P
 
 ```
 
+<a id="recoverassets"></a>
 ## recoverAssets
 
 ```TypeScript
@@ -487,8 +494,8 @@ Recovers image or video assets from the trash. Before the operation, ensure that
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of the image or video assets to recover. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of the image or video assets to recover. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -533,6 +540,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="recoverassets-1"></a>
 ## recoverAssets
 
 ```TypeScript
@@ -559,13 +567,13 @@ Recovers image or video assets from the trash. Before the operation, ensure that
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| assets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PhotoAsset> | Yes | Array of the image or video assets to recover. |
+| assets | Array&lt;PhotoAsset&gt; | Yes | Array of the image or video assets to recover. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -609,6 +617,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setcoveruri"></a>
 ## setCoverUri
 
 ```TypeScript
@@ -636,7 +645,7 @@ Sets the cover of the user album. This API uses an asynchronous callback to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file to be set as the album cover. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -681,6 +690,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
+<a id="setcoveruri-1"></a>
 ## setCoverUri
 
 ```TypeScript
@@ -713,7 +723,7 @@ Sets the cover of the user album. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

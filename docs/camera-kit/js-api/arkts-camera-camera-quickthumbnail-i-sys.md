@@ -16,6 +16,7 @@ Quick thumbnail object
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -36,7 +37,7 @@ Release quick thumbnail object.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

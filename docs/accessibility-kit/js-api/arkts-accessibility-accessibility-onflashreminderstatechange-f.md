@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="onflashreminderstatechange"></a>
 ## onFlashReminderStateChange
 
 ```TypeScript
@@ -20,7 +21,7 @@ Subscribes to the state changes in flash alerts mode. This API uses an asynchron
 > Otherwise, a new underlying object is created each time the function is called, causing memory leakage.  
 >  
 > - After calling this method, you must use  
-> [accessibility.offFlashReminderStateChange](arkts-accessibility-accessibility-offflashreminderstatechange-f.md#offflashreminderstatechange-1)  
+> [accessibility.offFlashReminderStateChange](accessibility.offFlashReminderStateChange(callback?: Callback<boolean>))  
 > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 23
@@ -35,7 +36,7 @@ Subscribes to the state changes in flash alerts mode. This API uses an asynchron
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback function. Returns **true** if flash alerts mode is enabled;returns **false** otherwise. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback function. Returns **true** if flash alerts mode is enabled;returns **false** otherwise. |
 
 **Example**
 

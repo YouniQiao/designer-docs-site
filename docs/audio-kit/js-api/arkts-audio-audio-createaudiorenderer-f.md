@@ -6,6 +6,7 @@
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="createaudiorenderer"></a>
 ## createAudioRenderer
 
 ```TypeScript
@@ -31,7 +32,7 @@ If you want to use AudioRenderer api to implement a music playback application, 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [AudioRendererOptions](arkts-audio-audio-audiorendereroptions-i.md) | Yes | Renderer configurations. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AudioRenderer> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the AudioRenderer instance obtained; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AudioRenderer&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the AudioRenderer instance obtained; otherwise, **err** is an error object. |
 
 **Example**
 
@@ -69,6 +70,7 @@ audio.createAudioRenderer(audioRendererOptions,(err, data) => {
 ```
 
 
+<a id="createaudiorenderer-1"></a>
 ## createAudioRenderer
 
 ```TypeScript
@@ -99,7 +101,7 @@ If you want to use AudioRenderer api to implement a music playback application, 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioRenderer> | Promise used to return the AudioRenderer instance. |
+| Promise&lt;AudioRenderer&gt; | Promise used to return the AudioRenderer instance. |
 
 **Example**
 

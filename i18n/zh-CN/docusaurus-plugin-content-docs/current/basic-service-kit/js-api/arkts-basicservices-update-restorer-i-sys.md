@@ -28,6 +28,7 @@
 import { update } from '@kit.BasicServicesKit';
 ```
 
+<a id="deepfactoryreset"></a>
 ## deepFactoryReset
 
 ```TypeScript
@@ -76,7 +77,7 @@ deepFactoryReset(factoryResetStrategy: FactoryResetStrategy): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -111,6 +112,7 @@ try {
 
 ```
 
+<a id="factoryreset"></a>
 ## factoryReset
 
 ```TypeScript
@@ -146,7 +148,7 @@ factoryReset(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收恢复出厂结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收恢复出厂结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
 
 **错误码：**
 
@@ -180,6 +182,7 @@ try {
 
 ```
 
+<a id="factoryreset-1"></a>
 ## factoryReset
 
 ```TypeScript
@@ -215,7 +218,7 @@ factoryReset(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -246,6 +249,7 @@ try {
 
 ```
 
+<a id="forcefactoryreset"></a>
 ## forceFactoryReset
 
 ```TypeScript
@@ -283,7 +287,7 @@ forceFactoryReset(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -313,6 +317,7 @@ try {
 
 ```
 
+<a id="getdeepfactoryresetinfo"></a>
 ## getDeepFactoryResetInfo
 
 ```TypeScript
@@ -357,7 +362,7 @@ getDeepFactoryResetInfo(factoryResetStrategy: FactoryResetStrategy): Promise<Fac
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<FactoryResetInfo> | Promise对象。成功时resolve返回深度恢复出厂设置信息对象（FactoryResetInfo），包含预计耗时等；失败时reject返回错误信息。 |
+| Promise&lt;FactoryResetInfo&gt; | Promise对象。成功时resolve返回深度恢复出厂设置信息对象（FactoryResetInfo），包含预计耗时等；失败时reject返回错误信息。 |
 
 **错误码：**
 

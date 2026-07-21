@@ -16,6 +16,7 @@ Control class for backup procedure.
 import { backup } from '@kit.CoreFileKit';
 ```
 
+<a id="appendbundles"></a>
 ## appendBundles
 
 ```TypeScript
@@ -45,7 +46,7 @@ Append new bundles and backupInfos to backup.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -165,6 +166,7 @@ async function appendBundles() {
 
 ```
 
+<a id="appendbundles-1"></a>
 ## appendBundles
 
 ```TypeScript
@@ -188,7 +190,7 @@ Append new bundles to backup.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundlesToBackup | string[] | Yes | Bundles to backup. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Asynchronous callback to be called when appendBundles has finished. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Asynchronous callback to be called when appendBundles has finished. |
 
 **Error codes:**
 
@@ -267,6 +269,7 @@ try {
 
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -360,6 +363,7 @@ sessionBackup.appendBundles(backupBundles);
 
 ```
 
+<a id="cleanbundletempdir"></a>
 ## cleanBundleTempDir
 
 ```TypeScript
@@ -388,7 +392,7 @@ Provides an interface for the tool to clear temporary directories
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Return clean result, true is success, false is fail. |
+| Promise&lt;boolean&gt; | Return clean result, true is success, false is fail. |
 
 **Error codes:**
 
@@ -464,6 +468,7 @@ let sessionBackup = new backup.SessionBackup(generalCallbacks); // Create a back
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -538,6 +543,7 @@ let sessionBackup = new backup.SessionBackup(generalCallbacks); // Create a back
 
 ```
 
+<a id="getbackupdatasize"></a>
 ## getBackupDataSize
 
 ```TypeScript
@@ -561,13 +567,13 @@ Obtain application data size to be backed up.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isPreciseScan | boolean | Yes | Indicates whether to obtain the exact data size. |
-| dataList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<IncrementalBackupTime> | Yes | Application list. |
+| dataList | Array&lt;IncrementalBackupTime&gt; | Yes | Application list. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -688,6 +694,7 @@ Example of a JSON string returned asynchronously:
 
 ```
 
+<a id="getcompatibilityinfo"></a>
 ## getCompatibilityInfo
 
 ```TypeScript
@@ -717,7 +724,7 @@ Provides an interface for the tool to get compatibility info.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Return compatibility info. |
+| Promise&lt;string&gt; | Return compatibility info. |
 
 **Error codes:**
 
@@ -792,6 +799,7 @@ async function getBackupCompatibilityInfo() {
 
 ```
 
+<a id="getlocalcapabilities"></a>
 ## getLocalCapabilities
 
 ```TypeScript
@@ -814,7 +822,7 @@ Obtain a Json file that describes local capabilities.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FileData> | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
+| Promise&lt;FileData&gt; | A FileData holding all the local capabilities. The returned file is a temporal file that will be deleted automatically when closed. |
 
 **Error codes:**
 
@@ -956,6 +964,7 @@ The capability file can be obtained by using [fileIo.stat](js-apis-file-fs.md#fi
 
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -978,7 +987,7 @@ End Backup process
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

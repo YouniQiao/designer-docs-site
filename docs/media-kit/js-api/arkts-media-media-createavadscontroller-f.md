@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createavadscontroller"></a>
 ## createAVAdsController
 
 ```TypeScript
@@ -32,7 +33,7 @@ Create an ad playback controller associated with the player instance.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVAdsController \| undefined> | If success, an Controller is returned. Otherwise returns null. |
+| Promise&lt;AVAdsController \| undefined&gt; | If success, an Controller is returned. Otherwise returns null. |
 
 **Error codes:**
 

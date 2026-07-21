@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="enabledynamicicon"></a>
 ## enableDynamicIcon
 
 ```TypeScript
@@ -35,7 +36,7 @@ Enables the dynamic icon based on the given bundle name and module name. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ try {
 ```
 
 
+<a id="enabledynamicicon-1"></a>
 ## enableDynamicIcon
 
 ```TypeScript
@@ -107,7 +109,7 @@ To enable the dynamic icon for another user, you must request the ohos.permissio
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

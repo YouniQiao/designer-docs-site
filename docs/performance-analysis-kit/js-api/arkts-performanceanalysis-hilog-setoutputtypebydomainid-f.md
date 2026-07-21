@@ -6,6 +6,7 @@
 import { hilog } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="setoutputtypebydomainid"></a>
 ## setOutputTypeByDomainID
 
 ```TypeScript
@@ -27,7 +28,7 @@ Sets the output type for hilog for the domainID list.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [OutputType](arkts-performanceanalysis-hilog-outputtype-e.md) | Yes | output type for hilog. |
-| domainIDs | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | domainID list, if isExclude is true, the output type for the domainID list is set to DEFAULT, and the output type for the remaining domainIDs is set to the currently specified output type; if isExclude is false, the output type for the domainID list is set to the currently specified output type, and the output type for the remaining domainIDs is set to DEFAULT |
+| domainIDs | Array&lt;number&gt; | Yes | domainID list, if isExclude is true, the output type for the domainID list is set to DEFAULT, and the output type for the remaining domainIDs is set to the currently specified output type; if isExclude is false, the output type for the domainID list is set to the currently specified output type, and the output type for the remaining domainIDs is set to DEFAULT |
 | isExclude | boolean | Yes | determine whether the domainIDs take effect for the currently specified output type. |
 
 **Return value:**

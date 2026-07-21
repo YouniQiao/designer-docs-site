@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getnetextattributesync"></a>
 ## getNetExtAttributeSync
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="createcertextension"></a>
 ## createCertExtension
 
 ```TypeScript
@@ -27,7 +28,7 @@ Creates a certificate extension object. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inStream | [EncodingBlob](arkts-devicecertificate-cert-encodingblob-i.md) | Yes | Serialized certificate extension data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CertExtension> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the **CertExtension** instance created. Otherwise,**err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CertExtension&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the **CertExtension** instance created. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -73,6 +74,7 @@ cert.createCertExtension(encodingBlob, (error, certExt) => {
 ```
 
 
+<a id="createcertextension-1"></a>
 ## createCertExtension
 
 ```TypeScript
@@ -99,7 +101,7 @@ Creates a certificate extension object. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CertExtension> | Promise used to return the **CertExtension** instance created. |
+| Promise&lt;CertExtension&gt; | Promise used to return the **CertExtension** instance created. |
 
 **Error codes:**
 

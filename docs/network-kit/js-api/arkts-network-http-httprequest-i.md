@@ -14,6 +14,7 @@
 import { http } from '@kit.NetworkKit';
 ```
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -48,6 +49,7 @@ httpRequest.destroy();
 
 ```
 
+<a id="enableautocookie"></a>
 ## enableAutoCookie
 
 ```TypeScript
@@ -122,6 +124,7 @@ httpRequest.request(url, {
 
 ```
 
+<a id="off"></a>
 ## off("headerReceive")
 
 ```TypeScript
@@ -145,7 +148,7 @@ Unregisters the observer for HTTP Response Header events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "headerReceive" | Yes | Indicates Event name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Object> | No | the callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Object&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -165,6 +168,7 @@ httpRequest.off("headerReceive");
 
 ```
 
+<a id="off-1"></a>
 ## off("headersReceive")
 
 ```TypeScript
@@ -186,7 +190,7 @@ Unregisters the observer for HTTP Response Header events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "headersReceive" | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Object> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Object&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -212,6 +216,7 @@ httpRequest.off("headersReceive");
 
 ```
 
+<a id="off-2"></a>
 ## off("dataReceive")
 
 ```TypeScript
@@ -233,7 +238,7 @@ Unregisters an observer for receiving HTTP Response data events continuously.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "dataReceive" | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ArrayBuffer> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ArrayBuffer&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -259,6 +264,7 @@ httpRequest.off("dataReceive");
 
 ```
 
+<a id="off-3"></a>
 ## off("dataEnd")
 
 ```TypeScript
@@ -280,7 +286,7 @@ Unregisters an observer for receiving HTTP Response data ends events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "dataEnd" | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -306,6 +312,7 @@ httpRequest.off("dataEnd");
 
 ```
 
+<a id="off-4"></a>
 ## off('dataReceiveProgress')
 
 ```TypeScript
@@ -327,7 +334,7 @@ Unregisters an observer for progress of receiving HTTP Response data events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataReceiveProgress' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataReceiveProgressInfo> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataReceiveProgressInfo&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -353,6 +360,7 @@ httpRequest.off("dataReceiveProgress");
 
 ```
 
+<a id="off-5"></a>
 ## off('dataSendProgress')
 
 ```TypeScript
@@ -374,7 +382,7 @@ Unregisters an observer for progress of sendSize HTTP Response data events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataSendProgress' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataSendProgressInfo> | No | the callback of off. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataSendProgressInfo&gt; | No | the callback of off. |
 
 **Example**
 
@@ -400,6 +408,7 @@ httpRequest.off("dataSendProgress");
 
 ```
 
+<a id="on"></a>
 ## on("headerReceive")
 
 ```TypeScript
@@ -423,7 +432,7 @@ Registers an observer for HTTP Response Header events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "headerReceive" | Yes | Indicates Event name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Object> | Yes | the callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Object&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -449,6 +458,7 @@ httpRequest.on("headerReceive", (data: BusinessError) => {
 
 ```
 
+<a id="on-1"></a>
 ## on("headersReceive")
 
 ```TypeScript
@@ -470,7 +480,7 @@ Registers an observer for HTTP Response Header events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "headersReceive" | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Object> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Object&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -496,6 +506,7 @@ httpRequest.off("headersReceive");
 
 ```
 
+<a id="on-2"></a>
 ## on("dataReceive")
 
 ```TypeScript
@@ -517,7 +528,7 @@ Registers an observer for receiving HTTP Response data events continuously.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "dataReceive" | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ArrayBuffer> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ArrayBuffer&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -543,6 +554,7 @@ httpRequest.off("dataReceive");
 
 ```
 
+<a id="on-3"></a>
 ## on("dataEnd")
 
 ```TypeScript
@@ -564,7 +576,7 @@ Registers an observer for receiving HTTP Response data ends events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "dataEnd" | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -590,6 +602,7 @@ httpRequest.off("dataEnd");
 
 ```
 
+<a id="on-4"></a>
 ## on('dataReceiveProgress')
 
 ```TypeScript
@@ -611,7 +624,7 @@ Registers an observer for progress of receiving HTTP Response data events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataReceiveProgress' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataReceiveProgressInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataReceiveProgressInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -637,6 +650,7 @@ httpRequest.off("dataReceiveProgress");
 
 ```
 
+<a id="on-5"></a>
 ## on('dataSendProgress')
 
 ```TypeScript
@@ -658,7 +672,7 @@ Registers an observer for progress of sendSize HTTP Response data events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'dataSendProgress' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DataSendProgressInfo> | Yes | the callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DataSendProgressInfo&gt; | Yes | the callback of on. |
 
 **Example**
 
@@ -684,6 +698,7 @@ httpRequest.off("dataSendProgress");
 
 ```
 
+<a id="once"></a>
 ## once("headersReceive")
 
 ```TypeScript
@@ -705,7 +720,7 @@ Registers a one-time observer for HTTP Response Header events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | "headersReceive" | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Object> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Object&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -729,6 +744,7 @@ httpRequest.once("headersReceive", (header: Object) => {
 
 ```
 
+<a id="request"></a>
 ## request
 
 ```TypeScript
@@ -766,7 +782,7 @@ Initiates an HTTP request to a given URL. This API uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HttpResponse> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HttpResponse&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -845,6 +861,7 @@ httpRequest.request("EXAMPLE_URL", (err: Error, data: http.HttpResponse) => {
 
 ```
 
+<a id="request-1"></a>
 ## request
 
 ```TypeScript
@@ -883,7 +900,7 @@ Initiates an HTTP request containing specified options to a given URL. This API 
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
 | options | [HttpRequestOptions](arkts-network-http-httprequestoptions-i.md) | Yes | Request options. For details, see [HttpRequestOptions](arkts-network-http-httprequestoptions-i.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HttpResponse> | Yes | Callback used to return the result. If the operation is successful, the callback content is an [HttpResponse](arkts-network-http-httpresponse-i.md) object; otherwise, the callback content is undefined. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HttpResponse&gt; | Yes | Callback used to return the result. If the operation is successful, the callback content is an [HttpResponse](arkts-network-http-httpresponse-i.md) object; otherwise, the callback content is undefined. |
 
 **Error codes:**
 
@@ -1012,6 +1029,7 @@ httpRequest.request("EXAMPLE_URL", options, (err: Error, data: http.HttpResponse
 
 ```
 
+<a id="request-2"></a>
 ## request
 
 ```TypeScript
@@ -1055,7 +1073,7 @@ Initiates an HTTP request containing specified options to a given URL. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HttpResponse> | Promise used to return the result. |
+| Promise&lt;HttpResponse&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1162,6 +1180,7 @@ promise.then((data:http.HttpResponse) => {
 
 ```
 
+<a id="requestinstream"></a>
 ## requestInStream
 
 ```TypeScript
@@ -1185,7 +1204,7 @@ Initiates an HTTP request containing specified options to a given URL. This API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the request is successful,**err** is **undefined**, and the HTTP result code is returned. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the request is successful,**err** is **undefined**, and the HTTP result code is returned. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1258,6 +1277,7 @@ httpRequest.requestInStream("EXAMPLE_URL", (err: BusinessError, data: number) =>
 
 ```
 
+<a id="requestinstream-1"></a>
 ## requestInStream
 
 ```TypeScript
@@ -1282,7 +1302,7 @@ Initiates an HTTP request containing specified options to a given URL. This API 
 | --- | --- | --- | --- |
 | url | string | Yes | URL for initiating an HTTP request. |
 | options | [HttpRequestOptions](arkts-network-http-httprequestoptions-i.md) | Yes | Request options. For details, see [HttpRequestOptions](arkts-network-http-httprequestoptions-i.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the request is successful,**err** is **undefined**, and the [HTTP result code](arkts-network-http-responsecode-e.md) is returned. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the request is successful,**err** is **undefined**, and the [HTTP result code](arkts-network-http-responsecode-e.md) is returned. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1399,6 +1419,7 @@ httpRequest.requestInStream("EXAMPLE_URL", options, (err: BusinessError<void> , 
 
 ```
 
+<a id="requestinstream-2"></a>
 ## requestInStream
 
 ```TypeScript
@@ -1428,7 +1449,7 @@ Initiates an HTTP request containing specified options to a given URL. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the [result](arkts-network-http-responsecode-e.md). |
+| Promise&lt;number&gt; | Promise used to return the [result](arkts-network-http-responsecode-e.md). |
 
 **Error codes:**
 
@@ -1523,6 +1544,7 @@ promise.then((data: number) => {
 
 ```
 
+<a id="requestsync"></a>
 ## requestSync
 
 ```TypeScript

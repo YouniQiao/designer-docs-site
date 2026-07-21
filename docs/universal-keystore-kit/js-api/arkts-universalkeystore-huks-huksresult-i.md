@@ -5,7 +5,7 @@ Represents the result returned.
 > **NOTE**  
 >  
 > - For details about the error codes, see  
-> [HUKS Error Codes](../../../../reference/apis-universal-keystore-kit/errorcode-huks.md).
+> [HUKS Error Codes](docroot://reference/apis-universal-keystore-kit/errorcode-huks.md).
 
 **Since:** 8
 
@@ -33,7 +33,7 @@ Reserved field.
 
 Note: This API is deprecated since API version 9. No substitute API is provided.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 8
 
@@ -93,7 +93,7 @@ Reserved field.
 
 Note: This API is deprecated since API version 9. No substitute API is provided.
 
-**Type:** Array<HuksParam>
+**Type:** Array&lt;HuksParam&gt;
 
 **Since:** 8
 

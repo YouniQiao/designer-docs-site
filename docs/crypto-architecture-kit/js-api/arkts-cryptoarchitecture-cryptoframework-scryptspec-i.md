@@ -102,7 +102,7 @@ passphrase: string | Uint8Array
 
 Original password entered by the user.
 
-**Type:** string | Uint8Array
+**Type:** string \| Uint8Array
 
 **Since:** 18
 

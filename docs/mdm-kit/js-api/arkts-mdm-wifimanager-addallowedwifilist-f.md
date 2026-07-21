@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.MDMKit';
 ```
 
+<a id="addallowedwifilist"></a>
 ## addAllowedWifiList
 
 ```TypeScript
@@ -33,7 +34,7 @@ A policy conflict is reported when this API is called in the following scenarios
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| list | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WifiAccessInfo> | Yes | Array of allowed Wi-Fi networks. The maximum length of the array is 200.For example, if there are already 100 Wi-Fi networks, a maximum of 100 more can be added. |
+| list | Array&lt;WifiAccessInfo&gt; | Yes | Array of allowed Wi-Fi networks. The maximum length of the array is 200.For example, if there are already 100 Wi-Fi networks, a maximum of 100 more can be added. |
 
 **Error codes:**
 

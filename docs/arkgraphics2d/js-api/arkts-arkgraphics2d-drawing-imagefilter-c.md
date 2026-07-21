@@ -23,6 +23,7 @@ Implements an image filter.
 import { drawing } from '@kit.ArkGraphics2D';
 ```
 
+<a id="createblendimagefilter"></a>
 ## createBlendImageFilter
 
 ```TypeScript
@@ -41,7 +42,7 @@ Creates a filter by blending two existing filters in a certain way.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [BlendMode](../../apis-arkui/arkts-components/arkts-arkui-common-blendmode-e.md) | Yes | Blend mode. |
+| mode | [BlendMode](../../apis-arkui/arkts-components/arkts-arkui-blendmode-e.md) | Yes | Blend mode. |
 | background | [ImageFilter](arkts-arkgraphics2d-drawing-imagefilter-c.md) | Yes | Filter that serves as the destination color in blend mode. |
 | foreground | [ImageFilter](arkts-arkgraphics2d-drawing-imagefilter-c.md) | Yes | Filter that serves as the source color in blend mode. |
 
@@ -57,6 +58,7 @@ Creates a filter by blending two existing filters in a certain way.
 | --- | --- |
 | [25900001](../errorcode-drawing.md#25900001-abnormal-parameter-value) | Parameter error. Possible causes: Incorrect parameter range. |
 
+<a id="createblurimagefilter"></a>
 ## createBlurImageFilter
 
 ```TypeScript
@@ -81,7 +83,7 @@ Creates an image filter with a given blur effect.
 | sigmaX | number | Yes | Standard deviation of the Gaussian blur along the X axis. The value must be a floating point number greater than 0. |
 | sigmaY | number | Yes | Standard deviation of the Gaussian blur along the Y axis. The value must be a floating point number greater than 0. |
 | tileMode | [TileMode](arkts-arkgraphics2d-effectkit-tilemode-e.md) | Yes | Tile mode to apply to the edges. |
-| imageFilter | ImageFilter \| null | No | Filter to which the image filter will be applied. The default value is null, indicating that the image filter is directly applied to the original image. |
+| imageFilter | [ImageFilter](arkts-arkgraphics2d-drawing-imagefilter-c.md) \| null | No | Filter to which the image filter will be applied. The default value is null, indicating that the image filter is directly applied to the original image. |
 
 **Return value:**
 
@@ -95,6 +97,7 @@ Creates an image filter with a given blur effect.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
+<a id="createcomposeimagefilter"></a>
 ## createComposeImageFilter
 
 ```TypeScript
@@ -122,6 +125,7 @@ Cascades two image filters to create a new image filter. The first filter's outp
 | --- | --- |
 | [ImageFilter](arkts-arkgraphics2d-drawing-imagefilter-c.md) | Image filter created. |
 
+<a id="createfromcolorfilter"></a>
 ## createFromColorFilter
 
 ```TypeScript
@@ -140,8 +144,8 @@ Creates an image filter object with a given color filter effect.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colorFilter | [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-units-colorfilter-c.md) | Yes | Color filter. |
-| imageFilter | ImageFilter \| null | No | Filter to which the image filter will be applied. The default value is null, indicating that the image filter is directly applied to the original image.<br>**Since:** 20 |
+| colorFilter | [ColorFilter](../../apis-arkui/arkts-apis/arkts-arkui-colorfilter-c.md) | Yes | Color filter. |
+| imageFilter | [ImageFilter](arkts-arkgraphics2d-drawing-imagefilter-c.md) \| null | No | Filter to which the image filter will be applied. The default value is null, indicating that the image filter is directly applied to the original image.<br>**Since:** 20 |
 
 **Return value:**
 
@@ -155,6 +159,7 @@ Creates an image filter object with a given color filter effect.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
+<a id="createfromimage"></a>
 ## createFromImage
 
 ```TypeScript
@@ -183,6 +188,7 @@ Creates an image filter from a given image. You are advised not to use the funct
 | --- | --- |
 | [ImageFilter](arkts-arkgraphics2d-drawing-imagefilter-c.md) | Image filter created. |
 
+<a id="createfromshadereffect"></a>
 ## createFromShaderEffect
 
 ```TypeScript
@@ -209,6 +215,7 @@ Creates an **ImageFilter** object based on a shader.
 | --- | --- |
 | [ImageFilter](arkts-arkgraphics2d-drawing-imagefilter-c.md) | Image filter created. |
 
+<a id="createoffsetimagefilter"></a>
 ## createOffsetImageFilter
 
 ```TypeScript
@@ -229,7 +236,7 @@ Creates an offset filter to translate the input filter based on the specified ve
 | --- | --- | --- | --- |
 | dx | number | Yes | Horizontal translation distance. The value is a floating point number. |
 | dy | number | Yes | Vertical translation distance. The value is a floating point number. |
-| input | ImageFilter \| null | No | Filter to be translated. This parameter is left empty by default, which means that the drawing result without the filtering effect is translated. |
+| input | [ImageFilter](arkts-arkgraphics2d-drawing-imagefilter-c.md) \| null | No | Filter to be translated. This parameter is left empty by default, which means that the drawing result without the filtering effect is translated. |
 
 **Return value:**
 

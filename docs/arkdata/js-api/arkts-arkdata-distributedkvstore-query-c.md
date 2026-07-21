@@ -14,6 +14,7 @@ Provides methods to create a **Query** object, which defines different data quer
 import { distributedKVStore } from '@kit.ArkData';
 ```
 
+<a id="and"></a>
 ## and
 
 ```TypeScript
@@ -57,6 +58,7 @@ try {
 
 ```
 
+<a id="begingroup"></a>
 ## beginGroup
 
 ```TypeScript
@@ -100,6 +102,7 @@ try {
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -116,6 +119,7 @@ Defines a constructor used to create a **Query** instance.
 
 **System capability:** SystemCapability.DistributedDataManager.KVStore.Core
 
+<a id="deviceid"></a>
 ## deviceId
 
 ```TypeScript
@@ -175,6 +179,7 @@ try {
 
 ```
 
+<a id="endgroup"></a>
 ## endGroup
 
 ```TypeScript
@@ -218,6 +223,7 @@ try {
 
 ```
 
+<a id="equalto"></a>
 ## equalTo
 
 ```TypeScript
@@ -232,7 +238,7 @@ Creates a **Query** object to match the specified field whose value is equal to 
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -261,6 +267,7 @@ Creates a **Query** object to match the specified field whose value is equal to 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types;<br>3.Parameter verification failed. |
 
+<a id="getsqllike"></a>
 ## getSqlLike
 
 ```TypeScript
@@ -301,6 +308,7 @@ try {
 
 ```
 
+<a id="greaterthan"></a>
 ## greaterThan
 
 ```TypeScript
@@ -315,7 +323,7 @@ Creates a **Query** object to match the specified field whose value is greater t
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -344,6 +352,7 @@ Creates a **Query** object to match the specified field whose value is greater t
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types;<br>3.Parameter verification failed. |
 
+<a id="greaterthanorequalto"></a>
 ## greaterThanOrEqualTo
 
 ```TypeScript
@@ -358,7 +367,7 @@ Creates a **Query** object to match the specified field whose value is greater t
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -387,6 +396,7 @@ Creates a **Query** object to match the specified field whose value is greater t
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types;<br>3.Parameter verification failed. |
 
+<a id="innumber"></a>
 ## inNumber
 
 ```TypeScript
@@ -401,7 +411,7 @@ Creates a **Query** object to match the specified field whose value is within th
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -430,6 +440,7 @@ Creates a **Query** object to match the specified field whose value is within th
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types;<br>3.Parameter verification failed. |
 
+<a id="instring"></a>
 ## inString
 
 ```TypeScript
@@ -444,7 +455,7 @@ Creates a **Query** object to match the specified field whose value is within th
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -492,6 +503,7 @@ try {
 
 ```
 
+<a id="isnotnull"></a>
 ## isNotNull
 
 ```TypeScript
@@ -506,7 +518,7 @@ Creates a **Query** object to match the specified field whose value is not **nul
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -553,6 +565,7 @@ try {
 
 ```
 
+<a id="isnull"></a>
 ## isNull
 
 ```TypeScript
@@ -567,7 +580,7 @@ Creates a **Query** object to match the specified field whose value is **null**.
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -614,6 +627,7 @@ try {
 
 ```
 
+<a id="lessthan"></a>
 ## lessThan
 
 ```TypeScript
@@ -628,7 +642,7 @@ Creates a **Query** object to match the specified field whose value is less than
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -657,6 +671,7 @@ Creates a **Query** object to match the specified field whose value is less than
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types;<br>3.Parameter verification failed. |
 
+<a id="lessthanorequalto"></a>
 ## lessThanOrEqualTo
 
 ```TypeScript
@@ -671,7 +686,7 @@ Creates a **Query** object to match the specified field whose value is less than
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -700,6 +715,7 @@ Creates a **Query** object to match the specified field whose value is less than
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types;<br>3.Parameter verification failed. |
 
+<a id="like"></a>
 ## like
 
 ```TypeScript
@@ -714,7 +730,7 @@ Creates a **Query** object to match the specified field whose value is similar t
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -762,6 +778,7 @@ try {
 
 ```
 
+<a id="limit"></a>
 ## limit
 
 ```TypeScript
@@ -819,6 +836,7 @@ try {
 
 ```
 
+<a id="notequalto"></a>
 ## notEqualTo
 
 ```TypeScript
@@ -833,7 +851,7 @@ Creates a **Query** object to match the specified field whose value is not equal
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -862,6 +880,7 @@ Creates a **Query** object to match the specified field whose value is not equal
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types;<br>3.Parameter verification failed. |
 
+<a id="notinnumber"></a>
 ## notInNumber
 
 ```TypeScript
@@ -876,7 +895,7 @@ Creates a **Query** object to match the specified field whose value is not withi
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -905,6 +924,7 @@ Creates a **Query** object to match the specified field whose value is not withi
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types;<br>3.Parameter verification failed. |
 
+<a id="notinstring"></a>
 ## notInString
 
 ```TypeScript
@@ -919,7 +939,7 @@ Creates a **Query** object to match the specified field whose value is not withi
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -967,6 +987,7 @@ try {
 
 ```
 
+<a id="or"></a>
 ## or
 
 ```TypeScript
@@ -1010,6 +1031,7 @@ try {
 
 ```
 
+<a id="orderbyasc"></a>
 ## orderByAsc
 
 ```TypeScript
@@ -1024,7 +1046,7 @@ Creates a **Query** object to sort the query results in ascending order.
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -1072,6 +1094,7 @@ try {
 
 ```
 
+<a id="orderbydesc"></a>
 ## orderByDesc
 
 ```TypeScript
@@ -1086,7 +1109,7 @@ Creates a **Query** object to sort the query results in descending order.
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 
@@ -1134,6 +1157,7 @@ try {
 
 ```
 
+<a id="prefixkey"></a>
 ## prefixKey
 
 ```TypeScript
@@ -1188,6 +1212,7 @@ try {
 
 ```
 
+<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -1231,6 +1256,7 @@ try {
 
 ```
 
+<a id="setsuggestindex"></a>
 ## setSuggestIndex
 
 ```TypeScript
@@ -1285,6 +1311,7 @@ try {
 
 ```
 
+<a id="unlike"></a>
 ## unlike
 
 ```TypeScript
@@ -1299,7 +1326,7 @@ Creates a **Query** object to match the specified field whose value is not simil
 >  
 > For details about how to use **Schema** to create a database, see the example of creating and obtaining a KV  
 > store using the **getKVStore()** method in  
-> [Persisting KV Store Data](../../../../database/data-persistence-by-kv-store.md#how-to-develop).
+> [Persisting KV Store Data](docroot://database/data-persistence-by-kv-store.md#how-to-develop).
 
 **Since:** 9
 

@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="requestprintpreview"></a>
 ## requestPrintPreview
 
 ```TypeScript
@@ -29,7 +30,7 @@ Requests print preview data. This API uses a callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | jobInfo | [PrintJob](arkts-basicservices-print-printjob-i-sys.md) | Yes | Information about the print job. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | Yes | Callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ print.requestPrintPreview(jobInfo, (num : number) => {
 ```
 
 
+<a id="requestprintpreview-1"></a>
 ## requestPrintPreview
 
 ```TypeScript
@@ -97,7 +99,7 @@ Requests print preview data. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the preview result. |
+| Promise&lt;number&gt; | Promise used to return the preview result. |
 
 **Error codes:**
 

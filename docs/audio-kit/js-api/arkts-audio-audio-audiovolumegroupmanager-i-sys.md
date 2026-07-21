@@ -20,6 +20,7 @@ Before calling any API in AudioVolumeGroupManager, you must use [getVolumeGroupM
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="adjustsystemvolumebystep"></a>
 ## adjustSystemVolumeByStep
 
 ```TypeScript
@@ -44,7 +45,7 @@ Adjusts system volume by step for target volume type.This method uses an asynchr
 | --- | --- | --- | --- |
 | volumeType | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e-sys.md) | Yes | Audio volume type. |
 | adjustType | [VolumeAdjustType](arkts-audio-audio-volumeadjusttype-e-sys.md) | Yes | Volume adjustment type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ audioVolumeGroupManager.adjustSystemVolumeByStep(audio.AudioVolumeType.MEDIA, au
 
 ```
 
+<a id="adjustsystemvolumebystep-1"></a>
 ## adjustSystemVolumeByStep
 
 ```TypeScript
@@ -99,7 +101,7 @@ Adjusts system volume by step for target volume type.This method uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -123,6 +125,7 @@ audioVolumeGroupManager.adjustSystemVolumeByStep(audio.AudioVolumeType.MEDIA, au
 
 ```
 
+<a id="adjustvolumebystep"></a>
 ## adjustVolumeByStep
 
 ```TypeScript
@@ -146,7 +149,7 @@ Adjusts system volume by step, volume type is decided by system.This method uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | adjustType | [VolumeAdjustType](arkts-audio-audio-volumeadjusttype-e-sys.md) | Yes | Volume adjustment type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -173,6 +176,7 @@ audioVolumeGroupManager.adjustVolumeByStep(audio.VolumeAdjustType.VOLUME_UP, (er
 
 ```
 
+<a id="adjustvolumebystep-1"></a>
 ## adjustVolumeByStep
 
 ```TypeScript
@@ -201,7 +205,7 @@ Adjusts system volume by step, volume type is decided by system.This method uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -225,6 +229,7 @@ audioVolumeGroupManager.adjustVolumeByStep(audio.VolumeAdjustType.VOLUME_UP).the
 
 ```
 
+<a id="getactivevolumetypesync"></a>
 ## getActiveVolumeTypeSync
 
 ```TypeScript
@@ -270,6 +275,7 @@ let value = audioVolumeGroupManager.getActiveVolumeTypeSync(uid);
 
 ```
 
+<a id="ispersistentmicmute"></a>
 ## isPersistentMicMute
 
 ```TypeScript
@@ -308,6 +314,7 @@ let value: boolean = audioVolumeGroupManager.isPersistentMicMute();
 
 ```
 
+<a id="mute"></a>
 ## mute
 
 ```TypeScript
@@ -332,7 +339,7 @@ Mutes a stream. This method uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | volumeType | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e-sys.md) | Yes | Audio stream type. |
 | mute | boolean | Yes | Mute status to set. The value true means to mute the stream, and false means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -349,6 +356,7 @@ audioVolumeGroupManager.mute(audio.AudioVolumeType.MEDIA, true, (err: BusinessEr
 
 ```
 
+<a id="mute-1"></a>
 ## mute
 
 ```TypeScript
@@ -378,7 +386,7 @@ Mutes a stream. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -389,6 +397,7 @@ audioVolumeGroupManager.mute(audio.AudioVolumeType.MEDIA, true).then(() => {
 
 ```
 
+<a id="setmicmute"></a>
 ## setMicMute
 
 ```TypeScript
@@ -417,7 +426,7 @@ Mutes or unmutes the microphone. This method uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -437,6 +446,7 @@ audioVolumeGroupManager.setMicMute(true).then(() => {
 
 ```
 
+<a id="setmicmutepersistent"></a>
 ## setMicMutePersistent
 
 ```TypeScript
@@ -460,13 +470,13 @@ Mutes or unmutes the microphone. This method uses a promise to return the result
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mute | boolean | Yes | Mute status to set. The value true means to mute the microphone, and false means the opposite. |
-| type | [PolicyType](../../apis-core-file-kit/arkts-apis/arkts-corefile-fileshare-policytype-e.md) | Yes | Mute status to set. This value represents the caller's type such as EDM or privacy. |
+| type | [PolicyType](../../apis-mdm-kit/arkts-apis/arkts-mdm-systemmanager-policytype-e.md) | Yes | Mute status to set. This value represents the caller's type such as EDM or privacy. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -486,6 +496,7 @@ audioVolumeGroupManager.setMicMutePersistent(true, audio.PolicyType.PRIVACY).the
 
 ```
 
+<a id="setringermode"></a>
 ## setRingerMode
 
 ```TypeScript
@@ -509,7 +520,7 @@ Sets the ringer mode. This method uses an asynchronous callback to return the re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | [AudioRingMode](arkts-audio-audio-audioringmode-e.md) | Yes | Ringer mode. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -526,6 +537,7 @@ audioVolumeGroupManager.setRingerMode(audio.AudioRingMode.RINGER_MODE_NORMAL, (e
 
 ```
 
+<a id="setringermode-1"></a>
 ## setRingerMode
 
 ```TypeScript
@@ -554,7 +566,7 @@ Sets the ringer mode. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -565,6 +577,7 @@ audioVolumeGroupManager.setRingerMode(audio.AudioRingMode.RINGER_MODE_NORMAL).th
 
 ```
 
+<a id="setvolume"></a>
 ## setVolume
 
 ```TypeScript
@@ -589,7 +602,7 @@ Sets the volume for a stream. This method uses an asynchronous callback to retur
 | --- | --- | --- | --- |
 | volumeType | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e-sys.md) | Yes | Audio stream type. |
 | volume | number | Yes | Volume to set. The value range can be obtained by calling getMinVolume and getMaxVolume. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -606,6 +619,7 @@ audioVolumeGroupManager.setVolume(audio.AudioVolumeType.MEDIA, 10, (err: Busines
 
 ```
 
+<a id="setvolume-1"></a>
 ## setVolume
 
 ```TypeScript
@@ -635,7 +649,7 @@ Sets the volume for a stream. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Example**
 
@@ -646,6 +660,7 @@ audioVolumeGroupManager.setVolume(audio.AudioVolumeType.MEDIA, 10).then(() => {
 
 ```
 
+<a id="setvolumewithflag"></a>
 ## setVolumeWithFlag
 
 ```TypeScript
@@ -676,7 +691,7 @@ Sets the volume for a stream. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

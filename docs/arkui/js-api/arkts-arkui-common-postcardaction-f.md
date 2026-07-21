@@ -1,5 +1,6 @@
 # postCardAction
 
+<a id="postcardaction"></a>
 ## postCardAction
 
 ```TypeScript
@@ -24,6 +25,6 @@ Post Card Action.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| component | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | indicate the card entry component. |
-| action | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | indicate the router, message or call event. |
+| component | Object | Yes | indicate the card entry component. |
+| action | Object | Yes | indicate the router, message or call event. |
 

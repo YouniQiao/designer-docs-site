@@ -6,6 +6,7 @@
 import { configPolicy } from '@kit.BasicServicesKit';
 ```
 
+<a id="getcfgdirlistsync"></a>
 ## getCfgDirListSync
 
 ```TypeScript
@@ -26,5 +27,5 @@ Obtains a list of configuration level directories, in ascending order of priorit
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Obtains the list of configuration level directories. This API returns the result synchronously. |
+| Array&lt;string&gt; | Obtains the list of configuration level directories. This API returns the result synchronously. |
 

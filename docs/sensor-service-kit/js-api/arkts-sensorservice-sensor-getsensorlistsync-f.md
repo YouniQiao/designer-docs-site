@@ -6,6 +6,7 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
+<a id="getsensorlistsync"></a>
 ## getSensorListSync
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains information about all sensors on the device. This API returns the result
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Sensor> | List of sensor attributes. |
+| Array&lt;Sensor&gt; | List of sensor attributes. |
 
 **Error codes:**
 

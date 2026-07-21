@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createavrecorder"></a>
 ## createAVRecorder
 
 ```TypeScript
@@ -30,7 +31,7 @@ Creates an AVRecorder instance. This API uses an asynchronous callback to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVRecorder> | Yes | Callback function, which returns an **AVRecorder** instance for recording audio and video. Otherwise, **null** is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVRecorder&gt; | Yes | Callback function, which returns an **AVRecorder** instance for recording audio and video. Otherwise, **null** is returned. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ media.createAVRecorder((error: BusinessError, recorder: media.AVRecorder) => {
 ```
 
 
+<a id="createavrecorder-1"></a>
 ## createAVRecorder
 
 ```TypeScript
@@ -82,7 +84,7 @@ Creates an AVRecorder instance. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVRecorder> | Promise used to return an **AVRecorder** instance, which can be used to record audio and video. Otherwise, **null** is returned. |
+| Promise&lt;AVRecorder&gt; | Promise used to return an **AVRecorder** instance, which can be used to record audio and video. Otherwise, **null** is returned. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { statistics } from '@kit.NetworkKit';
 ```
 
+<a id="gettrafficstatsbyuid"></a>
 ## getTrafficStatsByUid
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the traffic usage details of the specified time period of the application.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uidInfo | [UidInfo](arkts-network-statistics-uidinfo-i-sys.md) | Yes | Detailed query content. See {@link UidInfo}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetStatsInfo> | Yes | Returns the {@link NetStatsInfo} object; |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetStatsInfo&gt; | Yes | Returns the {@link NetStatsInfo} object; |
 
 **Error codes:**
 
@@ -84,6 +85,7 @@ statistics.getTrafficStatsByUid(
 ```
 
 
+<a id="gettrafficstatsbyuid-1"></a>
 ## getTrafficStatsByUid
 
 ```TypeScript
@@ -112,7 +114,7 @@ Get the traffic usage details of the specified time period of the application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetStatsInfo> | The promise returned by the function. |
+| Promise&lt;NetStatsInfo&gt; | The promise returned by the function. |
 
 **Error codes:**
 

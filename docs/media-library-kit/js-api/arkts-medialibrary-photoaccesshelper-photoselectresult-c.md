@@ -60,7 +60,7 @@ Array of moving photo badge states for the media files selected from Gallery.
 
 If **isMovingPhotoBadgeShown** is set to **true**, this array contains the moving photo badge states. Otherwise,it is empty.
 
-**Type:** Array<MovingPhotoBadgeStateType>
+**Type:** Array&lt;MovingPhotoBadgeStateType&gt;
 
 **Since:** 22
 
@@ -78,9 +78,9 @@ photoUris: Array<string>
 
 URIs of the media files selected.
 
-This URI array can be used only by calling the [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets-1)API through temporary authorization. For details, see [Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
+This URI array can be used only by calling the [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets-1)API through temporary authorization. For details, see [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri).
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 10
 

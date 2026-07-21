@@ -10,6 +10,7 @@ UIExtensionContext provides the context environment for [UIExtensionAbility](ark
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="connectserviceextensionabilitywithroothosttoken"></a>
 ## connectServiceExtensionAbilityWithRootHostToken
 
 ```TypeScript
@@ -59,6 +60,7 @@ Connects the current UI extension to an service extension ability with a root ho
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000070](../errorcode-ability.md#16000070-extensionability-fails-to-start-a-serviceextensionability-in-strict-mode) | The extension cannot start the service. |
 
+<a id="sethostpageoverlayforbidden"></a>
 ## setHostPageOverlayForbidden
 
 ```TypeScript
@@ -70,7 +72,7 @@ Sets whether the page started by the [UIExtensionAbility](arkts-ability-app-abil
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
 >  
 > This API must be called before a window is created. You are advised to call it within the  
 > [onCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#oncreate-1) lifecycle of the  
@@ -99,6 +101,7 @@ Sets whether the page started by the [UIExtensionAbility](arkts-ability-app-abil
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The application is not system-app, can not use system-api. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
+<a id="startabilityforresultascaller"></a>
 ## startAbilityForResultAsCaller
 
 ```TypeScript
@@ -114,7 +117,7 @@ Starts an ability with the caller information specified. The caller information 
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 12
 
@@ -137,7 +140,7 @@ Starts an ability with the caller information specified. The caller information 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AbilityResult> | Promise used to return the result. |
+| Promise&lt;AbilityResult&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -160,6 +163,7 @@ Starts an ability with the caller information specified. The caller information 
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
+<a id="startserviceextensionability"></a>
 ## startServiceExtensionAbility
 
 ```TypeScript
@@ -188,7 +192,7 @@ Starts a ServiceExtensionAbility. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -210,6 +214,7 @@ Starts a ServiceExtensionAbility. This API uses a promise to return the result.
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 
+<a id="startserviceextensionabilitywithaccount"></a>
 ## startServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -221,7 +226,7 @@ Starts a ServiceExtensionAbility under a specified system account. This API uses
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
 >  
 > Permission verification is not required when **accountId** specifies the current user.
 
@@ -248,7 +253,7 @@ Starts a ServiceExtensionAbility under a specified system account. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -270,6 +275,7 @@ Starts a ServiceExtensionAbility under a specified system account. This API uses
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 
+<a id="startuiabilities"></a>
 ## startUIAbilities
 
 ```TypeScript
@@ -281,7 +287,7 @@ Starts multiple UIAbility components simultaneously. This API uses a promise to 
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 20
 
@@ -297,13 +303,13 @@ Starts multiple UIAbility components simultaneously. This API uses a promise to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wantList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Want> | Yes | List of launch parameters for multiple UIAbility components to be started simultaneously. A maximum of four Want objects can be passed. The **Want** parameter does not support implicit launch, cross-user launch, distributed launch, instant installation, or on-demand loading. By default, the main application is launched unless specified otherwise. |
+| wantList | Array&lt;Want&gt; | Yes | List of launch parameters for multiple UIAbility components to be started simultaneously. A maximum of four Want objects can be passed. The **Want** parameter does not support implicit launch, cross-user launch, distributed launch, instant installation, or on-demand loading. By default, the main application is launched unless specified otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -332,6 +338,7 @@ Starts multiple UIAbility components simultaneously. This API uses a promise to 
 | [16000125](../errorcode-ability.md#16000125-starting-a-plugin-is-not-supported) | Starting a plugin UIAbility is not supported. |
 | [16000126](../errorcode-ability.md#16000126-dlp-files-cannot-be-started) | Starting DLP files is not supported. |
 
+<a id="startuiabilitiesinsplitwindowmode"></a>
 ## startUIAbilitiesInSplitWindowMode
 
 ```TypeScript
@@ -345,14 +352,14 @@ Starts a second UIAbility after the first UIAbility instance is created, and dis
 > If the first UIAbility instance is destroyed, the second UIAbility is started in full-screen mode.  
 >  
 > The second UIAbility supports only  
-> [explicit startup](../../../../application-models/explicit-implicit-want-mappings.md#matching-rules-of-explicit-want)  
+> [explicit startup](docroot://application-models/explicit-implicit-want-mappings.md#matching-rules-of-explicit-want)  
 > .  
 >  
 > If the caller is running in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is  
 > required (available only for system applications).  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
 
 **Since:** 21
 
@@ -370,14 +377,14 @@ Starts a second UIAbility after the first UIAbility instance is created, and dis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| primaryWindowId | number | Yes | ID of the main window of the first UIAbility. The window ID is a property defined in [WindowProperties](../../../../reference/apis-arkui/arkts-apis-window-i.md#windowproperties), which can be obtained by calling [getWindowProperties()](../../../../reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
+| primaryWindowId | number | Yes | ID of the main window of the first UIAbility. The window ID is a property defined in [WindowProperties](docroot://reference/apis-arkui/arkts-apis-window-i.md#windowproperties), which can be obtained by calling [getWindowProperties()](docroot://reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
 | secondaryWant | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information required for starting the second UIAbility. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

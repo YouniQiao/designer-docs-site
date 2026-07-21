@@ -6,6 +6,7 @@
 import { geolocation } from '@kit.LocationKit';
 ```
 
+<a id="isgeoserviceavailable"></a>
 ## isGeoServiceAvailable
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtain geocode service status
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for reporting the geocode service status. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for reporting the geocode service status. |
 
 **Example**
 
@@ -48,6 +49,7 @@ geolocation.isGeoServiceAvailable((err, data) => {
 ```
 
 
+<a id="isgeoserviceavailable-1"></a>
 ## isGeoServiceAvailable
 
 ```TypeScript
@@ -72,7 +74,7 @@ Obtain geocode service status
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | The promise returned by the function. |
+| Promise&lt;boolean&gt; | The promise returned by the function. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getappclonepreference"></a>
 ## getAppClonePreference
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the application clone preference configuration based on the given bundle
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AppClonePreference> | Promise used to return the application clone preference configuration. |
+| Promise&lt;AppClonePreference&gt; | Promise used to return the application clone preference configuration. |
 
 **Error codes:**
 

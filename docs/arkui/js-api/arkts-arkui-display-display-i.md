@@ -16,6 +16,7 @@ Before calling any API in Display, you must use [getAllDisplays()](arkts-arkui-d
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="getavailablearea"></a>
 ## getAvailableArea
 
 ```TypeScript
@@ -40,7 +41,7 @@ This API can be properly called on devices running OpenHarmony 7.0.0 or later.Fo
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Rect> | Promise used to return the available area, which is a rectangle. |
+| Promise&lt;Rect&gt; | Promise used to return the available area, which is a rectangle. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ try {
 
 ```
 
+<a id="getcutoutinfo"></a>
 ## getCutoutInfo
 
 ```TypeScript
@@ -89,7 +91,7 @@ Obtains the cutout information of the display. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CutoutInfo> | Yes | Callback used to return the **CutoutInfo** object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CutoutInfo&gt; | Yes | Callback used to return the **CutoutInfo** object. |
 
 **Error codes:**
 
@@ -116,6 +118,7 @@ displayClass.getCutoutInfo((err: BusinessError, data: display.CutoutInfo) => {
 
 ```
 
+<a id="getcutoutinfo-1"></a>
 ## getCutoutInfo
 
 ```TypeScript
@@ -136,7 +139,7 @@ Obtains the cutout information of the display. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CutoutInfo> | Promise used to return the CutoutInfo object. |
+| Promise&lt;CutoutInfo&gt; | Promise used to return the CutoutInfo object. |
 
 **Error codes:**
 
@@ -160,6 +163,7 @@ promise.then((data: display.CutoutInfo) => {
 
 ```
 
+<a id="getdisplaycapability"></a>
 ## getDisplayCapability
 
 ```TypeScript
@@ -190,6 +194,7 @@ Get current display capability, including foldstatus, displaymode, rotation, and
 | [1400001](../errorcode-display.md#1400001-invalid-display-or-screen) | Invalid display or screen. |
 | [1400003](../errorcode-display.md#1400003-abnormal-display-manager-service) | This display manager service works abnormally. |
 
+<a id="getlivecreaseregion"></a>
 ## getLiveCreaseRegion
 
 ```TypeScript
@@ -231,6 +236,7 @@ try {
 
 ```
 
+<a id="getroundedcorner"></a>
 ## getRoundedCorner
 
 ```TypeScript
@@ -251,7 +257,7 @@ Obtains the rounded corner information of the display. The rounded corner inform
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<RoundedCorner> | Rounded corner information. |
+| Array&lt;RoundedCorner&gt; | Rounded corner information. |
 
 **Error codes:**
 
@@ -277,6 +283,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('availableAreaChange')
 
 ```TypeScript
@@ -300,7 +307,7 @@ This API can be properly called on devices running OpenHarmony 7.0.0 or later.Fo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'availableAreaChange' | Yes | Event type. The event **'availableAreaChange'** is triggered when the available area of the display changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<Rect> | No | Callback used to return the new available area. If this parameter is not specified, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;Rect&gt; | No | Callback used to return the new available area. If this parameter is not specified, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -327,6 +334,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('availableAreaChange')
 
 ```TypeScript
@@ -350,7 +358,7 @@ This API can be properly called on devices running OpenHarmony 7.0.0 or later.Fo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'availableAreaChange' | Yes | Event type. The event **'availableAreaChange'** is triggered when the available area of the display changes. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<Rect> | Yes | Callback used to return the new available area. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;Rect&gt; | Yes | Callback used to return the new available area. |
 
 **Error codes:**
 
@@ -443,7 +451,7 @@ colorSpaces: Array<colorSpaceManager.ColorSpace>
 
 All color spaces supported by the display.
 
-**Type:** Array<colorSpaceManager.ColorSpace>
+**Type:** Array&lt;colorSpaceManager.ColorSpace&gt;
 
 **Since:** 11
 
@@ -497,7 +505,7 @@ hdrFormats: Array<hdrCapability.HDRFormat>
 
 All HDR formats supported by the display.
 
-**Type:** Array<hdrCapability.HDRFormat>
+**Type:** Array&lt;hdrCapability.HDRFormat&gt;
 
 **Since:** 11
 
@@ -696,7 +704,7 @@ supportedRefreshRates?: Array<number>
 
 All refresh rates supported by the display, sorted in ascending order. The refresh rate is a positive integer,in Hz. The default value is empty.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 20
 

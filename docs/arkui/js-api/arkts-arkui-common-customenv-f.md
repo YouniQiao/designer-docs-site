@@ -1,5 +1,6 @@
 # CustomEnv
 
+<a id="customenv"></a>
 ## CustomEnv
 
 ```TypeScript
@@ -22,7 +23,7 @@ Defines the custom environment PropertyDecorator.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | [CustomEnvKey](arkts-arkui-common-customenvkey-c.md)<T> | Yes | custom environment key. |
+| key | [CustomEnvKey](arkts-arkui-customenvkey-c.md)&lt;T&gt; | Yes | custom environment key. |
 
 **Return value:**
 

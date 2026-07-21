@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getdeveloperids"></a>
 ## getDeveloperIds
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains all the developer IDs of the current user based on the given application
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | An array of strings. |
+| Array&lt;string&gt; | An array of strings. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="switchtoprofile"></a>
 ## switchToProfile
 
 ```TypeScript
@@ -40,7 +41,7 @@ Switch to (enable) the given profile on the eUICC.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultCode> | Returns the response to switch profile. |
+| Promise&lt;ResultCode&gt; | Returns the response to switch profile. |
 
 **Error codes:**
 

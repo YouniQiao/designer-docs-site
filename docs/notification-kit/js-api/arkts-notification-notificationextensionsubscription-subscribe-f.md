@@ -6,13 +6,14 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="subscribe"></a>
 ## subscribe
 
 ```TypeScript
 function subscribe(info: NotificationExtensionSubscriptionInfo[]): Promise<void>
 ```
 
-Subscribes to the notification extension. You can subscribe to the notification extension only after obtaining the unique address of the Bluetooth device by calling the APIs related to the [Bluetooth modules](../../../../connectivity/connectivity-kit-intro.md#bluetooth). This API uses a promise to return the result.
+Subscribes to the notification extension. You can subscribe to the notification extension only after obtaining the unique address of the Bluetooth device by calling the APIs related to the [Bluetooth modules](docroot://connectivity/connectivity-kit-intro.md#bluetooth). This API uses a promise to return the result.
 
 **Since:** 22
 
@@ -32,7 +33,7 @@ Subscribes to the notification extension. You can subscribe to the notification 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

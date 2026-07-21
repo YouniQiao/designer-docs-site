@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="discoverusbprinters"></a>
 ## discoverUsbPrinters
 
 ```TypeScript
@@ -28,7 +29,7 @@ Discovers USB printers. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PrinterInformation>> | Promise used to return the information about the discovered USB printers. |
+| Promise&lt;Array&lt;PrinterInformation&gt;&gt; | Promise used to return the information about the discovered USB printers. |
 
 **Error codes:**
 

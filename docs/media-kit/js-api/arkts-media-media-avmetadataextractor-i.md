@@ -1,8 +1,8 @@
 # AVMetadataExtractor
 
-AVMetadataExtractor is a class for metadata retrieval. It provides APIs to obtain metadata and thumbnails from media assets. Before calling any API of AVMetadataExtractor, you must use [media.createAVMetadataExtractor](arkts-media-media-createavmetadataextractor-f.md#createavmetadataextractor-3)to create an AVMetadataExtractor instance.
+AVMetadataExtractor is a class for metadata retrieval. It provides APIs to obtain metadata and thumbnails from media assets. Before calling any API of AVMetadataExtractor, you must use [media.createAVMetadataExtractor](arkts-media-media-createavmetadataextractor-f.md#createavmetadataextractor-1)to create an AVMetadataExtractor instance.
 
-For details about the demo of obtaining audio or video metadata and video thumbnails, see [Using AVMetadataExtractor to Extract Audio and Video Metadata (ArkTS)](../../../../media/media/avmetadataextractor.md).
+For details about the demo of obtaining audio or video metadata and video thumbnails, see [Using AVMetadataExtractor to Extract Audio and Video Metadata (ArkTS)](docroot://media/media/avmetadataextractor.md).
 
 **Since:** 11
 
@@ -16,6 +16,7 @@ For details about the demo of obtaining audio or video metadata and video thumbn
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="cancelallfetchframes"></a>
 ## cancelAllFetchFrames
 
 ```TypeScript
@@ -32,6 +33,7 @@ Cancels the ongoing task of obtaining thumbnails in batches. (The thumbnails tha
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
+<a id="fetchalbumcover"></a>
 ## fetchAlbumCover
 
 ```TypeScript
@@ -50,7 +52,7 @@ Obtains the cover of the audio album. This API uses an asynchronous callback to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<image.PixelMap> | Yes | Callback used to return the album cover. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;image.PixelMap&gt; | Yes | Callback used to return the album cover. |
 
 **Error codes:**
 
@@ -59,6 +61,7 @@ Obtains the cover of the audio album. This API uses an asynchronous callback to 
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. Returned by callback. |
 
+<a id="fetchalbumcover-1"></a>
 ## fetchAlbumCover
 
 ```TypeScript
@@ -77,7 +80,7 @@ Obtains the cover of the audio album. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the album cover. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the album cover. |
 
 **Error codes:**
 
@@ -86,6 +89,7 @@ Obtains the cover of the audio album. This API uses a promise to return the resu
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Returned by promise. |
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. Returned by promise. |
 
+<a id="fetchframebytime"></a>
 ## fetchFrameByTime
 
 ```TypeScript
@@ -112,7 +116,7 @@ Obtains a video thumbnail. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the video thumbnail. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the video thumbnail. |
 
 **Error codes:**
 
@@ -123,6 +127,7 @@ Obtains a video thumbnail. This API uses a promise to return the result.
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed. Returned by promise. |
 | [5411012](../errorcode-media.md#5411012-request-not-supported-due-to-http-plaintext-interception) | Http cleartext traffic is not permitted.<br>**Applicable version:** 23 and later |
 
+<a id="fetchframebytimewithtimeout"></a>
 ## fetchFrameByTimeWithTimeout
 
 ```TypeScript
@@ -155,7 +160,7 @@ Obtains a video thumbnail. You can set the maximum timeout interval (**timeoutMs
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap \| undefined> | Promise used to return the video thumbnail. |
+| Promise&lt;image.PixelMap \| undefined&gt; | Promise used to return the video thumbnail. |
 
 **Error codes:**
 
@@ -167,6 +172,7 @@ Obtains a video thumbnail. You can set the maximum timeout interval (**timeoutMs
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed. Returned by promise. |
 | [5411012](../errorcode-media.md#5411012-request-not-supported-due-to-http-plaintext-interception) | Http cleartext traffic is not permitted. |
 
+<a id="fetchframesbytimes"></a>
 ## fetchFramesByTimes
 
 ```TypeScript
@@ -215,6 +221,7 @@ Obtains video thumbnails in batches. This API uses an asynchronous callback to r
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed. e.g. The size of timesUs is larger than 4096. |
 | [5411012](../errorcode-media.md#5411012-request-not-supported-due-to-http-plaintext-interception) | Http cleartext not permitted. |
 
+<a id="fetchframesbytimeswithtimeout"></a>
 ## fetchFramesByTimesWithTimeout
 
 ```TypeScript
@@ -267,6 +274,7 @@ Obtains video thumbnails in batches. You can set the maximum timeout interval (*
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed. e.g. The size of timesUs is larger than 4096. |
 | [5411012](../errorcode-media.md#5411012-request-not-supported-due-to-http-plaintext-interception) | Http cleartext not permitted. |
 
+<a id="fetchmetadata"></a>
 ## fetchMetadata
 
 ```TypeScript
@@ -285,7 +293,7 @@ Obtains the media metadata. This API uses an asynchronous callback to return the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<AVMetadata> | Yes | Callback used to return the result, which is an AVMetadata instance. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AVMetadata&gt; | Yes | Callback used to return the result, which is an AVMetadata instance. |
 
 **Error codes:**
 
@@ -295,6 +303,7 @@ Obtains the media metadata. This API uses an asynchronous callback to return the
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. Returned by callback. |
 | [5411012](../errorcode-media.md#5411012-request-not-supported-due-to-http-plaintext-interception) | Http cleartext traffic is not permitted.<br>**Applicable version:** 23 and later |
 
+<a id="fetchmetadata-1"></a>
 ## fetchMetadata
 
 ```TypeScript
@@ -313,7 +322,7 @@ Obtains the media metadata. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVMetadata> | Promise used to return the result, which is an AVMetadata instance. |
+| Promise&lt;AVMetadata&gt; | Promise used to return the result, which is an AVMetadata instance. |
 
 **Error codes:**
 
@@ -323,6 +332,7 @@ Obtains the media metadata. This API uses a promise to return the result.
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. Returned by promise. |
 | [5411012](../errorcode-media.md#5411012-request-not-supported-due-to-http-plaintext-interception) | Http cleartext traffic is not permitted.<br>**Applicable version:** 23 and later |
 
+<a id="fetchmetadatawithtimeout"></a>
 ## fetchMetadataWithTimeout
 
 ```TypeScript
@@ -349,7 +359,7 @@ Obtains the media metadata. You can set the maximum timeout interval (**timeoutM
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AVMetadata \| undefined> | Promise used to return the audio and video metadata object (**AVMetadata**) asynchronously. |
+| Promise&lt;AVMetadata \| undefined&gt; | Promise used to return the audio and video metadata object (**AVMetadata**) asynchronously. |
 
 **Error codes:**
 
@@ -361,6 +371,7 @@ Obtains the media metadata. You can set the maximum timeout interval (**timeoutM
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed. Returned by promise. |
 | [5411012](../errorcode-media.md#5411012-request-not-supported-due-to-http-plaintext-interception) | Http cleartext traffic is not permitted. |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -379,7 +390,7 @@ Releases this AVMetadataExtractor instance. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -387,6 +398,7 @@ Releases this AVMetadataExtractor instance. This API uses an asynchronous callba
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Returned by callback. |
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -405,7 +417,7 @@ Releases this AVMetadataExtractor instance. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -413,6 +425,7 @@ Releases this AVMetadataExtractor instance. This API uses a promise to return th
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Returned by promise. |
 
+<a id="seturlsource"></a>
 ## setUrlSource
 
 ```TypeScript
@@ -432,7 +445,7 @@ Sets the data source for a network on-demand resource. Only network metadata ([f
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | url | string | Yes | URL of the media resource.<br>1. The video formats MP4, MPEG-TS, and MKV are supported.<br>2. The audio formats M4A, AAC, MP3, OGG, WAV, FLAC, and AMR are supported.<br>**Example of supported URLs**:<br>1. HTTP: http://xx<br>2. HTTPS: https://xx<br>Note: HLS/DASH and live streaming resources are not supported. |
-| headers | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, string> | No | Custom HTTP headers for accessing the network resource. The default value is empty. |
+| headers | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, string&gt; | No | Custom HTTP headers for accessing the network resource. The default value is empty. |
 
 ## dataSrc
 

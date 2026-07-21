@@ -14,6 +14,7 @@ MovingPhoto provides APIs for managing a moving photo instance.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="isvideoready"></a>
 ## isVideoReady
 
 ```TypeScript
@@ -36,7 +37,7 @@ Checks whether the video of the moving photo is ready. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if the video of the moving photo is ready, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if the video of the moving photo is ready, **false** otherwise. |
 
 **Error codes:**
 

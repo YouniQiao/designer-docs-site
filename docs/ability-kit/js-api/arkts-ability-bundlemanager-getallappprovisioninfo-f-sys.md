@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallappprovisioninfo"></a>
 ## getAllAppProvisionInfo
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the [provision](bundleManager/AppProvisionInfo) configuration file infor
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AppProvisionInfo>> | Promise used to return the provision profile obtained. |
+| Promise&lt;Array&lt;AppProvisionInfo&gt;&gt; | Promise used to return the provision profile obtained. |
 
 **Error codes:**
 

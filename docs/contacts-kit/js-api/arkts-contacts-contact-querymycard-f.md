@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="querymycard"></a>
 ## queryMyCard
 
 ```TypeScript
@@ -18,7 +19,7 @@ Queries my card. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 10
 
-**Substitutes:** queryMyCard(context:
+**Substitutes:** [queryMyCard(context:](arkts-contacts-contact-querymycard-f.md#querymycard-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -30,7 +31,7 @@ Queries my card. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Contact> | Yes | Indicates the callback for getting the result of the call. If the operation is successful,information about my card is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Contact&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful,information about my card is returned. If the operation fails, an error code is returned. |
 
 **Example**
 
@@ -50,6 +51,7 @@ contact.queryMyCard((err: BusinessError, data) => {
 ```
 
 
+<a id="querymycard-1"></a>
 ## queryMyCard
 
 ```TypeScript
@@ -71,7 +73,7 @@ Queries my card. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Contact> | Yes | Indicates the callback for getting the result of the call. If the operation is successful,information about my card is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Contact&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful,information about my card is returned. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -102,6 +104,7 @@ In the sample code provided in this topic, this.context is used to obtain UIAbil
 ```
 
 
+<a id="querymycard-2"></a>
 ## queryMyCard
 
 ```TypeScript
@@ -114,7 +117,7 @@ Queries my card. (The contact attribute list can be imported.) This API uses an 
 
 **Deprecated since:** 10
 
-**Substitutes:** queryMyCard(context:
+**Substitutes:** [queryMyCard(context:](arkts-contacts-contact-querymycard-f.md#querymycard-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -127,7 +130,7 @@ Queries my card. (The contact attribute list can be imported.) This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | attrs | [ContactAttributes](arkts-contacts-contact-contactattributes-c.md) | Yes | List of contact attributes. If this parameter is empty, all attribute fields (including the name, phone number, and email address) of the contact are queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Contact> | Yes | Indicates the callback for getting the result of the call. If the operation is successful,information about my card is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Contact&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful,information about my card is returned. If the operation fails, an error code is returned. |
 
 **Example**
 
@@ -149,6 +152,7 @@ contact.queryMyCard({
 ```
 
 
+<a id="querymycard-3"></a>
 ## queryMyCard
 
 ```TypeScript
@@ -171,7 +175,7 @@ Queries my card. (The contact attribute list can be imported.) This API uses an 
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | attrs | [ContactAttributes](arkts-contacts-contact-contactattributes-c.md) | Yes | List of contact attributes. If this parameter is empty, all attribute fields (including the name, phone number, and email address) of the contact are queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Contact> | Yes | Indicates the callback for getting the result of the call. If the operation is successful,information about my card is returned. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Contact&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful,information about my card is returned. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -204,6 +208,7 @@ In the sample code provided in this topic, this.context is used to obtain UIAbil
 ```
 
 
+<a id="querymycard-4"></a>
 ## queryMyCard
 
 ```TypeScript
@@ -216,7 +221,7 @@ Queries my card. (The contact attribute list can be imported.) This API uses a p
 
 **Deprecated since:** 10
 
-**Substitutes:** queryMyCard(context:
+**Substitutes:** [queryMyCard(context:](arkts-contacts-contact-querymycard-f.md#querymycard-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -234,7 +239,7 @@ Queries my card. (The contact attribute list can be imported.) This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Contact> | Promise used to return the result, which is a contact in my card. |
+| Promise&lt;Contact&gt; | Promise used to return the result, which is a contact in my card. |
 
 **Example**
 
@@ -252,6 +257,7 @@ promise.then((data) => {
 ```
 
 
+<a id="querymycard-5"></a>
 ## queryMyCard
 
 ```TypeScript
@@ -279,7 +285,7 @@ Queries my card. (The contact attribute list can be imported.) This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Contact> | Promise used to return the result, which is a contact in my card. |
+| Promise&lt;Contact&gt; | Promise used to return the result, which is a contact in my card. |
 
 **Error codes:**
 

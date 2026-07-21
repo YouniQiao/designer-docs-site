@@ -2,7 +2,7 @@
 
 Describes the area to avoid for window content.
 
-When adapting window content for an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout), you should adjust the content based on the corresponding **AvoidArea** specified by [AvoidAreaType](arkts-arkui-window-avoidareatype-e.md).
+When adapting window content for an [immersive layout](docroot://windowmanager/window-terminology.md#immersive-layout), you should adjust the content based on the corresponding **AvoidArea** specified by [AvoidAreaType](arkts-arkui-window-avoidareatype-e.md).
 
 In the avoid area, the application window content is obscured and does not respond to user click events.
 
@@ -10,7 +10,7 @@ In the avoid area, the application window content is obscured and does not respo
 >  
 > The figure below shows the meanings of **leftRect**, **topRect**, **rightRect**, and **bottomRect**.  
 >  
-> ![avoidArea](../../../../reference/apis-arkui/figures/avoidArea.png)
+> ![avoidArea](docroot://reference/apis-arkui/figures/avoidArea.png)
 
 **Since:** 7
 

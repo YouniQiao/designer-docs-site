@@ -16,6 +16,7 @@ class of static subscriber extension context.
 import { FenceExtensionContext } from '@kit.LocationKit';
 ```
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -44,7 +45,7 @@ Starts a new service extension ability.If the target service extension ability i
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

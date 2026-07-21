@@ -1,5 +1,6 @@
 # borderStyles
 
+<a id="borderstyles"></a>
 ## borderStyles
 
 ```TypeScript
@@ -22,11 +23,11 @@ Generates a border style object with the specified border style color for all bo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| all | [BorderStyle](arkts-arkui-enums-borderstyle-e.md) | Yes | Border style. |
+| all | [BorderStyle](arkts-arkui-borderstyle-e.md) | Yes | Border style. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Edges](arkts-arkui-graphics-edges-i.md)<BorderStyle> | **borderStyles** object whose borders are all in the specified style. |
+| [Edges](arkts-arkui-graphics-edges-i.md)&lt;BorderStyle&gt; | **borderStyles** object whose borders are all in the specified style. |
 

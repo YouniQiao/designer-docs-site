@@ -6,6 +6,7 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="apperceive"></a>
 ## apperceive
 
 ```TypeScript
@@ -40,7 +41,7 @@ Proactively triggers screen content awareness to obtain the screen content for s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OnscreenAwarenessInfo[]> | Promise used to return the onscreen awareness result. The returned<br> onscreen awareness information list **OnscreenAwarenessInfo[]** contains a maximum of two awareness<br> information items. |
+| Promise&lt;OnscreenAwarenessInfo[]&gt; | Promise used to return the onscreen awareness result. The returned<br> onscreen awareness information list **OnscreenAwarenessInfo[]** contains a maximum of two awareness<br> information items. |
 
 **Error codes:**
 

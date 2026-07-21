@@ -14,13 +14,14 @@ Defines the animator result.
 import { AnimatorOptions, SimpleAnimatorOptions, AnimatorResult } from '@kit.ArkUI';
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
 cancel(): void
 ```
 
-Cancels the animation, triggering the [onCancel](../../../../reference/apis-arkui/js-apis-animator.md#properties)callback. This API is functionally identical to [finish](arkts-arkui-animator-animatorresult-i.md#finish-1) except for the callback it triggers. It is recommended that you use the **finish** API to end animations.
+Cancels the animation, triggering the [onCancel](docroot://reference/apis-arkui/js-apis-animator.md#properties)callback. This API is functionally identical to [finish](arkts-arkui-animator-animatorresult-i.md#finish-1) except for the callback it triggers. It is recommended that you use the **finish** API to end animations.
 
 **Since:** 6
 
@@ -39,13 +40,14 @@ animator.cancel();
 
 ```
 
+<a id="finish"></a>
 ## finish
 
 ```TypeScript
 finish(): void
 ```
 
-Ends the animation, triggering the [onFinish](../../../../reference/apis-arkui/js-apis-animator.md#properties)callback.
+Ends the animation, triggering the [onFinish](docroot://reference/apis-arkui/js-apis-animator.md#properties)callback.
 
 **Since:** 6
 
@@ -64,6 +66,7 @@ animator.finish();
 
 ```
 
+<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -89,6 +92,7 @@ animator.pause();
 
 ```
 
+<a id="play"></a>
 ## play
 
 ```TypeScript
@@ -114,6 +118,7 @@ animator.play();
 
 ```
 
+<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -183,6 +188,7 @@ struct AnimatorTest {
 
 ```
 
+<a id="reset-1"></a>
 ## reset
 
 ```TypeScript
@@ -205,7 +211,7 @@ Resets the animation parameters of this animator. Compared with [reset](arkts-ar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | AnimatorOptions \| SimpleAnimatorOptions | Yes | Animator options. |
+| options | [AnimatorOptions](arkts-arkui-animator-animatoroptions-i.md) \| SimpleAnimatorOptions | Yes | Animator options. |
 
 **Error codes:**
 
@@ -240,6 +246,7 @@ animatorResult.reset(optionsNew);
 
 ```
 
+<a id="reverse"></a>
 ## reverse
 
 ```TypeScript
@@ -265,6 +272,7 @@ animator.reverse();
 
 ```
 
+<a id="setexpectedframeraterange"></a>
 ## setExpectedFrameRateRange
 
 ```TypeScript
@@ -287,7 +295,7 @@ Sets the expected frame rate range.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rateRange | [ExpectedFrameRateRange](../arkts-components/arkts-arkui-common-expectedframeraterange-i.md) | Yes | Expected frame rate range. |
+| rateRange | [ExpectedFrameRateRange](../arkts-components/arkts-arkui-expectedframeraterange-i.md) | Yes | Expected frame rate range. |
 
 **Example**
 
@@ -326,6 +334,7 @@ struct AnimatorTest {
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -367,7 +376,7 @@ onCancel: () => void
 
 Called when this animation is canceled.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 
@@ -387,7 +396,7 @@ onFinish: () => void
 
 Called when this animation is finished.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 
@@ -409,7 +418,7 @@ Called when a frame is received.
 
 **progress**: current value of the animation. Value range: [begin, end] defined in [AnimatorOptions](arkts-arkui-animator-animatoroptions-i.md). Default value range: [0, 1]
 
-**Type:** (progress: number) => void
+**Type:** (progress: number) =&gt; void
 
 **Since:** 12
 
@@ -429,7 +438,7 @@ onRepeat: () => void
 
 Called when this animation repeats.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 
@@ -451,7 +460,7 @@ Called when this animation is canceled.
 
 Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use **onCancel** instead.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 6
 
@@ -475,7 +484,7 @@ Called when this animation is finished.
 
 Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use **onFinish** instead.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 6
 
@@ -499,7 +508,7 @@ Called when a frame is received.
 
 Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use **onFrame** instead.
 
-**Type:** (progress: number) => void
+**Type:** (progress: number) =&gt; void
 
 **Since:** 6
 
@@ -523,7 +532,7 @@ Called when this animation repeats.
 
 Note: This API is supported since API version 6 and deprecated since API version 12. You are advised to use **onRepeat** instead.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 6
 

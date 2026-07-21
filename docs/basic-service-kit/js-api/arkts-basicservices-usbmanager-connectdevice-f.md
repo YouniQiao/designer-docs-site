@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="connectdevice"></a>
 ## connectDevice
 
 ```TypeScript
@@ -32,7 +33,7 @@ Connects to the USB device based on the device information returned by **getDevi
 
 | Type | Description |
 | --- | --- |
-| [Readonly](../../apis-na/arkts-apis/arkts-na-readonly-t.md)<USBDevicePipe> | USB device pipe for data transfer. |
+| [Readonly](../../apis-na/arkts-apis/arkts-na-readonly-t.md)&lt;USBDevicePipe&gt; | USB device pipe for data transfer. |
 
 **Error codes:**
 

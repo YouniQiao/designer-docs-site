@@ -1,5 +1,6 @@
 # createSubscriber
 
+<a id="createsubscriber"></a>
 ## createSubscriber
 
 ```TypeScript
@@ -15,7 +16,7 @@ Creates a subscriber. This API uses an asynchronous callback to return the resul
 
 **Deprecated since:** 9
 
-**Substitutes:** createSubscriber(
+**Substitutes:** [createSubscriber(](arkts-basicservices-commoneventmanager-createsubscriber-f.md#createsubscriber-1)
 
 <!--Device-commonEvent-function createSubscriber(
     subscribeInfo: CommonEventSubscribeInfo,
@@ -32,7 +33,7 @@ Creates a subscriber. This API uses an asynchronous callback to return the resul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | subscribeInfo | [CommonEventSubscribeInfo](arkts-basicservices-commoneventmanager-commoneventsubscribeinfo-t.md) | Yes | Subscriber information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<CommonEventSubscriber> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;CommonEventSubscriber&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -63,6 +64,7 @@ commonEvent.createSubscriber(subscribeInfo, createCallBack);
 ```
 
 
+<a id="createsubscriber-1"></a>
 ## createSubscriber
 
 ```TypeScript
@@ -75,7 +77,7 @@ Creates a subscriber. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** createSubscriber(subscribeInfo:
+**Substitutes:** [createSubscriber(subscribeInfo:](arkts-basicservices-commoneventmanager-createsubscriber-f.md#createsubscriber-1)
 
 <!--Device-commonEvent-function createSubscriber(subscribeInfo: CommonEventSubscribeInfo): Promise<CommonEventSubscriber>--><!--Device-commonEvent-function createSubscriber(subscribeInfo: CommonEventSubscribeInfo): Promise<CommonEventSubscriber>-End-->
 
@@ -91,7 +93,7 @@ Creates a subscriber. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CommonEventSubscriber> | Promise used to return the subscriber object. |
+| Promise&lt;CommonEventSubscriber&gt; | Promise used to return the subscriber object. |
 
 **Example**
 

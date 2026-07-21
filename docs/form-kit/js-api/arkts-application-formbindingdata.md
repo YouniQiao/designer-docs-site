@@ -18,7 +18,7 @@ The **FormBindingData** module provides APIs for widget data binding. You can us
 
 | Name | Description |
 | --- | --- |
-| [createFormBindingData](arkts-form-formbindingdata-createformbindingdata-depr-f.md#createformbindingdata-1) | Creates a **FormBindingData** object. |
+| [createFormBindingData](arkts-form-formbindingdata-createformbindingdata-depr-f.md#createformbindingdata) | Creates a **FormBindingData** object. |
 
 ### Interfaces
 

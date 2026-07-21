@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="addgnssgeofence"></a>
 ## addGnssGeofence
 
 ```TypeScript
@@ -32,7 +33,7 @@ Add a geofence.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returned by the function, for reporting the ID of geofence. |
+| Promise&lt;number&gt; | The promise returned by the function, for reporting the ID of geofence. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="combineconference"></a>
 ## combineConference
 
 ```TypeScript
@@ -27,7 +28,7 @@ Merge calls, merge two calls into conference calls.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of combineConference. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of combineConference. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ call.combineConference(1, (err: BusinessError) => {
 ```
 
 
+<a id="combineconference-1"></a>
 ## combineConference
 
 ```TypeScript
@@ -83,7 +85,7 @@ Merge calls, merge two calls into conference calls.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the combineConference. |
+| Promise&lt;void&gt; | The promise returned by the combineConference. |
 
 **Error codes:**
 

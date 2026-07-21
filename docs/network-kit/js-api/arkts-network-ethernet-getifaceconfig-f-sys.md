@@ -6,6 +6,7 @@
 import { ethernet } from '@kit.NetworkKit';
 ```
 
+<a id="getifaceconfig"></a>
 ## getIfaceConfig
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the specified network interface information.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | iface | string | Yes | Indicates the network interface name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<InterfaceConfiguration> | Yes | the callback of getIfaceConfig. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;InterfaceConfiguration&gt; | Yes | the callback of getIfaceConfig. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ ethernet.getIfaceConfig("eth0", (error: BusinessError, value: ethernet.Interface
 ```
 
 
+<a id="getifaceconfig-1"></a>
 ## getIfaceConfig
 
 ```TypeScript
@@ -93,7 +95,7 @@ Get the specified network interface information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<InterfaceConfiguration> | the promise returned by the function. |
+| Promise&lt;InterfaceConfiguration&gt; | the promise returned by the function. |
 
 **Error codes:**
 

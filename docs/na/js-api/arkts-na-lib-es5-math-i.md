@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Math--><!--Device-unnamed-interface Math-End-->
 
+<a id="abs"></a>
 ## abs
 
 ```TypeScript
@@ -24,6 +25,7 @@ Returns the absolute value of a number (the value without regard to whether it i
 | --- | --- |
 | number |  |
 
+<a id="acos"></a>
 ## acos
 
 ```TypeScript
@@ -46,6 +48,7 @@ Returns the arc cosine (or inverse cosine) of a number.
 | --- | --- |
 | number |  |
 
+<a id="asin"></a>
 ## asin
 
 ```TypeScript
@@ -68,6 +71,7 @@ Returns the arcsine of a number.
 | --- | --- |
 | number |  |
 
+<a id="atan"></a>
 ## atan
 
 ```TypeScript
@@ -90,6 +94,7 @@ Returns the arctangent of a number.
 | --- | --- |
 | number |  |
 
+<a id="atan2"></a>
 ## atan2
 
 ```TypeScript
@@ -113,6 +118,7 @@ Returns the angle (in radians) from the X axis to a point.
 | --- | --- |
 | number |  |
 
+<a id="ceil"></a>
 ## ceil
 
 ```TypeScript
@@ -135,6 +141,7 @@ Returns the smallest integer greater than or equal to its numeric argument.
 | --- | --- |
 | number |  |
 
+<a id="cos"></a>
 ## cos
 
 ```TypeScript
@@ -157,6 +164,7 @@ Returns the cosine of a number.
 | --- | --- |
 | number |  |
 
+<a id="exp"></a>
 ## exp
 
 ```TypeScript
@@ -179,6 +187,7 @@ Returns e (the base of natural logarithms) raised to a power.
 | --- | --- |
 | number |  |
 
+<a id="floor"></a>
 ## floor
 
 ```TypeScript
@@ -201,6 +210,7 @@ Returns the greatest integer less than or equal to its numeric argument.
 | --- | --- |
 | number |  |
 
+<a id="log"></a>
 ## log
 
 ```TypeScript
@@ -223,6 +233,7 @@ Returns the natural logarithm (base e) of a number.
 | --- | --- |
 | number |  |
 
+<a id="max"></a>
 ## max
 
 ```TypeScript
@@ -245,6 +256,7 @@ Returns the larger of a set of supplied numeric expressions.
 | --- | --- |
 | number |  |
 
+<a id="min"></a>
 ## min
 
 ```TypeScript
@@ -267,6 +279,7 @@ Returns the smaller of a set of supplied numeric expressions.
 | --- | --- |
 | number |  |
 
+<a id="pow"></a>
 ## pow
 
 ```TypeScript
@@ -290,6 +303,7 @@ Returns the value of a base expression taken to a specified power.
 | --- | --- |
 | number |  |
 
+<a id="random"></a>
 ## random
 
 ```TypeScript
@@ -306,6 +320,7 @@ Returns a pseudorandom number between 0 and 1.
 | --- | --- |
 | number |  |
 
+<a id="round"></a>
 ## round
 
 ```TypeScript
@@ -328,6 +343,7 @@ Returns a supplied numeric expression rounded to the nearest integer.
 | --- | --- |
 | number |  |
 
+<a id="sin"></a>
 ## sin
 
 ```TypeScript
@@ -350,6 +366,7 @@ Returns the sine of a number.
 | --- | --- |
 | number |  |
 
+<a id="sqrt"></a>
 ## sqrt
 
 ```TypeScript
@@ -372,6 +389,7 @@ Returns the square root of a number.
 | --- | --- |
 | number |  |
 
+<a id="tan"></a>
 ## tan
 
 ```TypeScript

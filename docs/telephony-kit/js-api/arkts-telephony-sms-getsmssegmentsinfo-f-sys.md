@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="getsmssegmentsinfo"></a>
 ## getSmsSegmentsInfo
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get an SMS segment encode relation information.
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
 | message | string | Yes | Indicates short message. |
 | force7bit | boolean | Yes | Indicates whether to use 7 bit encoding. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SmsSegmentsInfo> | Yes | Indicates the callback for getting a {@code SmsSegmentsInfo}object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SmsSegmentsInfo&gt; | Yes | Indicates the callback for getting a {@code SmsSegmentsInfo}object. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ sms.getSmsSegmentsInfo(slotId, "message", false, (err: BusinessError, data: sms.
 ```
 
 
+<a id="getsmssegmentsinfo-1"></a>
 ## getSmsSegmentsInfo
 
 ```TypeScript
@@ -84,7 +86,7 @@ Get an SMS segment encode relation information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SmsSegmentsInfo> | Returns a {@code SmsSegmentsInfo} object. |
+| Promise&lt;SmsSegmentsInfo&gt; | Returns a {@code SmsSegmentsInfo} object. |
 
 **Error codes:**
 

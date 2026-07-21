@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="getsimlabel"></a>
 ## getSimLabel
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtains the SIM card label.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | SIM card slot ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SimLabel> | Yes | Callback used to return the SIM card label. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SimLabel&gt; | Yes | Callback used to return the SIM card label. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ sim.getSimLabel(0, (err: BusinessError, data: sim.SimLabel) => {
 ```
 
 
+<a id="getsimlabel-1"></a>
 ## getSimLabel
 
 ```TypeScript
@@ -73,7 +75,7 @@ Obtains the SIM card label.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SimLabel> | Promise used to return the SIM card label. |
+| Promise&lt;SimLabel&gt; | Promise used to return the SIM card label. |
 
 **Error codes:**
 

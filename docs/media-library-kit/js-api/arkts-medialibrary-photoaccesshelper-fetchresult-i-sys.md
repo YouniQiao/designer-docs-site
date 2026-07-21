@@ -14,6 +14,7 @@ FetchResult provides APIs to manage the file retrieval result.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="getrangeobjects"></a>
 ## getRangeObjects
 
 ```TypeScript
@@ -41,7 +42,7 @@ Obtains the file asset array of a specified length (second parameter) from the s
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T[]> | Promise array. |
+| Promise&lt;T[]&gt; | Promise array. |
 
 **Error codes:**
 

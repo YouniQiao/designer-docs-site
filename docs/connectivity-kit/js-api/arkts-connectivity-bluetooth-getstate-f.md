@@ -6,6 +6,7 @@
 import { bluetooth } from '@kit.ConnectivityKit';
 ```
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript

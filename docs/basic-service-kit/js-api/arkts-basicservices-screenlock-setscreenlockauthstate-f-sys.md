@@ -6,6 +6,7 @@
 import { screenLock } from '@kit.BasicServicesKit';
 ```
 
+<a id="setscreenlockauthstate"></a>
 ## setScreenLockAuthState
 
 ```TypeScript
@@ -30,13 +31,13 @@ Set the screen lock authentication state for os account local userId.
 | --- | --- | --- | --- |
 | state | [AuthState](arkts-basicservices-screenlock-authstate-e-sys.md) | Yes | the screen lock authentication state. |
 | userId | number | Yes | Os account local userId. |
-| authToken | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | the authentication token for this state |
+| authToken | Uint8Array | Yes | the authentication token for this state |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 

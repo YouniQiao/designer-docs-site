@@ -14,6 +14,7 @@ In the following API examples, you must first use [getSetting](arkts-ime-inputme
 import { inputMethod } from '@kit.IMEKit';
 ```
 
+<a id="displayoptionalinputmethod"></a>
 ## displayOptionalInputMethod
 
 ```TypeScript
@@ -34,7 +35,7 @@ displayOptionalInputMethod(callback: AsyncCallback<void>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of displayOptionalInputMethod. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of displayOptionalInputMethod. |
 
 **Example**
 
@@ -51,6 +52,7 @@ inputMethod.getSetting().displayOptionalInputMethod((err: BusinessError) => {
 
 ```
 
+<a id="displayoptionalinputmethod-1"></a>
 ## displayOptionalInputMethod
 
 ```TypeScript
@@ -71,7 +73,7 @@ displayOptionalInputMethod(): Promise<void>
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Example**
 
@@ -86,6 +88,7 @@ inputMethod.getSetting().displayOptionalInputMethod().then(() => {
 
 ```
 
+<a id="getallinputmethods"></a>
 ## getAllInputMethods
 
 ```TypeScript
@@ -104,7 +107,7 @@ List all input methods
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<InputMethodProperty>> | Yes | the callback of getInputMethods. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;InputMethodProperty&gt;&gt; | Yes | the callback of getInputMethods. |
 
 **Error codes:**
 
@@ -128,6 +131,7 @@ inputMethod.getSetting().getAllInputMethods((err: BusinessError, data: Array<inp
 
 ```
 
+<a id="getallinputmethods-1"></a>
 ## getAllInputMethods
 
 ```TypeScript
@@ -146,7 +150,7 @@ List all input methods
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<InputMethodProperty>> | the promise returned by the function. |
+| Promise&lt;Array&lt;InputMethodProperty&gt;&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -168,6 +172,7 @@ inputMethod.getSetting().getAllInputMethods().then((data: Array<inputMethod.Inpu
 
 ```
 
+<a id="getallinputmethodssync"></a>
 ## getAllInputMethodsSync
 
 ```TypeScript
@@ -186,7 +191,7 @@ List all input methods sync
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<InputMethodProperty> | the list of all inputmethod. |
+| Array&lt;InputMethodProperty&gt; | the list of all inputmethod. |
 
 **Error codes:**
 
@@ -202,6 +207,7 @@ let imeProperty: Array<inputMethod.InputMethodProperty> = inputMethod.getSetting
 
 ```
 
+<a id="getinputmethodstate"></a>
 ## getInputMethodState
 
 ```TypeScript
@@ -220,7 +226,7 @@ The input method application calls this interface to obtain its own enabled stat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<EnabledState> | the promise returned by the function. |
+| Promise&lt;EnabledState&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -242,6 +248,7 @@ inputMethod.getSetting().getInputMethodState().then((status: inputMethod.Enabled
 
 ```
 
+<a id="getinputmethods"></a>
 ## getInputMethods
 
 ```TypeScript
@@ -261,7 +268,7 @@ List input methods
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | If true, collect enabled input methods.If false, collect disabled input methods. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<InputMethodProperty>> | Yes | the callback of getInputMethods. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;InputMethodProperty&gt;&gt; | Yes | the callback of getInputMethods. |
 
 **Error codes:**
 
@@ -286,6 +293,7 @@ inputMethod.getSetting().getInputMethods(true, (err: BusinessError, data: Array<
 
 ```
 
+<a id="getinputmethods-1"></a>
 ## getInputMethods
 
 ```TypeScript
@@ -310,7 +318,7 @@ List input methods
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<InputMethodProperty>> | the promise returned by the function. |
+| Promise&lt;Array&lt;InputMethodProperty&gt;&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -334,6 +342,7 @@ inputMethod.getSetting().getInputMethods(true).then((data: Array<inputMethod.Inp
 
 ```
 
+<a id="getinputmethodssync"></a>
 ## getInputMethodsSync
 
 ```TypeScript
@@ -358,7 +367,7 @@ List enabled or disabled input methods sync
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<InputMethodProperty> | the list of inputmethod. |
+| Array&lt;InputMethodProperty&gt; | the list of inputmethod. |
 
 **Error codes:**
 
@@ -375,6 +384,7 @@ let imeProperty: Array<inputMethod.InputMethodProperty> = inputMethod.getSetting
 
 ```
 
+<a id="listcurrentinputmethodsubtype"></a>
 ## listCurrentInputMethodSubtype
 
 ```TypeScript
@@ -393,7 +403,7 @@ List subtype of current input method
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<InputMethodSubtype>> | Yes | the callback of listCurrentInputMethodSubtype. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;InputMethodSubtype&gt;&gt; | Yes | the callback of listCurrentInputMethodSubtype. |
 
 **Error codes:**
 
@@ -419,6 +429,7 @@ inputMethodSetting.listCurrentInputMethodSubtype((err: BusinessError, data: Arra
 
 ```
 
+<a id="listcurrentinputmethodsubtype-1"></a>
 ## listCurrentInputMethodSubtype
 
 ```TypeScript
@@ -437,7 +448,7 @@ List subtype of current input method
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<InputMethodSubtype>> | the promise returned by the function. |
+| Promise&lt;Array&lt;InputMethodSubtype&gt;&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -463,6 +474,7 @@ inputMethodSetting.listCurrentInputMethodSubtype().then((data: Array<InputMethod
 
 ```
 
+<a id="listinputmethod"></a>
 ## listInputMethod
 
 ```TypeScript
@@ -483,7 +495,7 @@ listInputMethod(callback: AsyncCallback<Array<InputMethodProperty>>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<InputMethodProperty>> | Yes | the callback of listInputMethod. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;InputMethodProperty&gt;&gt; | Yes | the callback of listInputMethod. |
 
 **Example**
 
@@ -500,6 +512,7 @@ inputMethod.getSetting().listInputMethod((err: BusinessError, data: Array<inputM
 
 ```
 
+<a id="listinputmethod-1"></a>
 ## listInputMethod
 
 ```TypeScript
@@ -520,7 +533,7 @@ listInputMethod(): Promise<Array<InputMethodProperty>>
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<InputMethodProperty>> | the promise returned by the function. |
+| Promise&lt;Array&lt;InputMethodProperty&gt;&gt; | the promise returned by the function. |
 
 **Example**
 
@@ -535,6 +548,7 @@ inputMethod.getSetting().listInputMethod().then((data: Array<inputMethod.InputMe
 
 ```
 
+<a id="listinputmethodsubtype"></a>
 ## listInputMethodSubtype
 
 ```TypeScript
@@ -563,7 +577,7 @@ List subtype of the specified input method.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inputMethodProperty | [InputMethodProperty](arkts-ime-inputmethod-inputmethodproperty-i.md) | Yes | the property of the specified inputmethod. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<InputMethodSubtype>> | Yes | the callback of listInputMethodSubtype. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;InputMethodSubtype&gt;&gt; | Yes | the callback of listInputMethodSubtype. |
 
 **Error codes:**
 
@@ -598,6 +612,7 @@ inputMethodSetting.listInputMethodSubtype(inputMethodProperty,
 
 ```
 
+<a id="listinputmethodsubtype-1"></a>
 ## listInputMethodSubtype
 
 ```TypeScript
@@ -622,7 +637,7 @@ List subtype of the specified input method.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<InputMethodSubtype>> | the promise returned by the function. |
+| Promise&lt;Array&lt;InputMethodSubtype&gt;&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -654,6 +669,7 @@ inputMethodSetting.listInputMethodSubtype(inputMethodProperty).then((data: Array
 
 ```
 
+<a id="off"></a>
 ## off('imeChange')
 
 ```TypeScript
@@ -682,7 +698,7 @@ Unsubscribe input method or subtype change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'imeChange' | Yes | Indicates the event type. |
-| callback | (inputMethodProperty: InputMethodProperty, inputMethodSubtype: InputMethodSubtype) => void | No | the callback of 'imeChange',when subscriber unsubscribes all callback functions of event 'imeChange', this parameter can be left blank. |
+| callback | (inputMethodProperty: InputMethodProperty, inputMethodSubtype: InputMethodSubtype) =&gt; void | No | the callback of 'imeChange',when subscriber unsubscribes all callback functions of event 'imeChange', this parameter can be left blank. |
 
 **Example**
 
@@ -691,6 +707,7 @@ inputMethod.getSetting().off('imeChange');
 
 ```
 
+<a id="on"></a>
 ## on('imeChange')
 
 ```TypeScript
@@ -719,7 +736,7 @@ Subscribe input method or subtype change.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'imeChange' | Yes | Indicates the event type. |
-| callback | (inputMethodProperty: InputMethodProperty, inputMethodSubtype: InputMethodSubtype) => void | Yes | the callback of 'imeChange' |
+| callback | (inputMethodProperty: InputMethodProperty, inputMethodSubtype: InputMethodSubtype) =&gt; void | Yes | the callback of 'imeChange' |
 
 **Example**
 
@@ -734,6 +751,7 @@ inputMethod.getSetting()
 
 ```
 
+<a id="showoptionalinputmethods"></a>
 ## showOptionalInputMethods
 
 ```TypeScript
@@ -756,7 +774,7 @@ Show input method setting extension dialog
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of showOptionalInputMethods. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of showOptionalInputMethods. |
 
 **Error codes:**
 
@@ -783,6 +801,7 @@ inputMethod.getSetting().showOptionalInputMethods((err: BusinessError, result: b
 
 ```
 
+<a id="showoptionalinputmethods-1"></a>
 ## showOptionalInputMethods
 
 ```TypeScript
@@ -805,7 +824,7 @@ Show input method setting extension dialog
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="setvideo"></a>
 ## setVideo
 
 ```TypeScript
@@ -30,7 +31,7 @@ Sets live wallpaper of the specified type based on the uri path of the MP4 file.
 | --- | --- | --- | --- |
 | source | string | Yes | indicates the uri path of the MP4 file. |
 | wallpaperType | [WallpaperType](arkts-basicservices-wallpaper-wallpapertype-e.md) | Yes | indicates the wallpaper type. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setVideo. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setVideo. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ try {
 ```
 
 
+<a id="setvideo-1"></a>
 ## setVideo
 
 ```TypeScript
@@ -91,7 +93,7 @@ Sets live wallpaper of the specified type based on the uri path of the MP4 file.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { vpnExtension } from '@kit.NetworkKit';
 ```
 
+<a id="setalwaysonvpnenabled"></a>
 ## setAlwaysOnVpnEnabled
 
 ```TypeScript
@@ -37,7 +38,7 @@ Set the Enable/Disable Always on VPN mode for a device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

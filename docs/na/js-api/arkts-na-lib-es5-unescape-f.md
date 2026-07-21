@@ -1,5 +1,6 @@
 # unescape
 
+<a id="unescape"></a>
 ## unescape
 
 ```TypeScript

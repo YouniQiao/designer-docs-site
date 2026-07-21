@@ -6,6 +6,7 @@
 import { WantAgent } from '@kit.AbilityKit';
 ```
 
+<a id="getuid"></a>
 ## getUid
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the user ID of a WantAgent object.This API uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | Target WantAgent object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the user ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the user ID. |
 
 **Error codes:**
 
@@ -109,6 +110,7 @@ try {
 ```
 
 
+<a id="getuid-1"></a>
 ## getUid
 
 ```TypeScript
@@ -135,7 +137,7 @@ Obtains the user ID of a WantAgent object.This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the user ID. |
+| Promise&lt;number&gt; | Promise used to return the user ID. |
 
 **Error codes:**
 

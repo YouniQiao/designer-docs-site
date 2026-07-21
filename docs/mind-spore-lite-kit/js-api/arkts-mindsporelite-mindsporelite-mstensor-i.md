@@ -14,6 +14,7 @@ Provides MSTensor definition
 import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
 
+<a id="getdata"></a>
 ## getData
 
 ```TypeScript
@@ -34,7 +35,7 @@ Get MSTensor data
 
 | Type | Description |
 | --- | --- |
-| [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | the data of tensor |
+| ArrayBuffer | the data of tensor |
 
 **Example**
 
@@ -86,6 +87,7 @@ globalContext.getApplicationContext()
 
 ```
 
+<a id="setdata"></a>
 ## setData
 
 ```TypeScript
@@ -106,13 +108,13 @@ Set MSTensor data
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inputArray | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | indicates the buffer of tensor |
+| inputArray | ArrayBuffer | Yes | indicates the buffer of tensor |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000013 | Failed to set MSTensor data. Possible causes: 1. The input array buffer size is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000013 | Failed to set MSTensor data. Possible causes: 1. The input array buffer size is incorrect.  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

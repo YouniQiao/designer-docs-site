@@ -6,6 +6,7 @@
 import { cloudData } from '@kit.ArkData';
 ```
 
+<a id="share"></a>
 ## share
 
 ```TypeScript
@@ -39,8 +40,8 @@ Shares data based on the specified shared resource ID and participants.This API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sharingResource | string | Yes | Shared resource ID. |
-| participants | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Participant> | Yes | Participants of the share. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Result<Array<Result<Participant>>>> | Yes | Callback used to return the result. |
+| participants | Array&lt;Participant&gt; | Yes | Participants of the share. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Result&lt;Array&lt;Result&lt;Participant&gt;&gt;&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -80,6 +81,7 @@ cloudData.sharing.share('sharing_resource_test', participants, ((err: BusinessEr
 ```
 
 
+<a id="share-1"></a>
 ## share
 
 ```TypeScript
@@ -110,13 +112,13 @@ Shares data based on the specified shared resource ID and participants.This API 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sharingResource | string | Yes | Shared resource ID. |
-| participants | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Participant> | Yes | Participants of the share. |
+| participants | Array&lt;Participant&gt; | Yes | Participants of the share. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<Array<Result<Participant>>>> | Promise used to return the result. |
+| Promise&lt;Result&lt;Array&lt;Result&lt;Participant&gt;&gt;&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="onreceiverttmessage"></a>
 ## onReceiveRttMessage
 
 ```TypeScript
@@ -28,7 +29,7 @@ Subscribe to the rtt message event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RttMessageInfo> | Yes | Indicates the callback for getting the rtt message. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RttMessageInfo&gt; | Yes | Indicates the callback for getting the rtt message. |
 
 **Error codes:**
 

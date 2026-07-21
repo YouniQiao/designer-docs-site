@@ -6,6 +6,7 @@
 import { webSocket } from '@kit.NetworkKit';
 ```
 
+<a id="createwebsocket"></a>
 ## createWebSocket
 
 ```TypeScript

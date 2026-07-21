@@ -14,6 +14,7 @@
 import { inputMethod } from '@kit.IMEKit';
 ```
 
+<a id="onmessage"></a>
 ## onMessage
 
 ```TypeScript
@@ -33,7 +34,7 @@ This method is called when a custom message is received.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | msgId | string | Yes | the identifier of the message. |
-| msgParam | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | No | the parameter of the custom message. |
+| msgParam | ArrayBuffer | No | the parameter of the custom message. |
 
 **Example**
 
@@ -52,6 +53,7 @@ inputMethodController.recvMessage(messageHandler);
 
 ```
 
+<a id="onterminated"></a>
 ## onTerminated
 
 ```TypeScript

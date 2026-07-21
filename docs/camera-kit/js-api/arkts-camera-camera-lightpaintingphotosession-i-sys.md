@@ -18,6 +18,7 @@ LightPaintingPhotoSession extends Session, Flash, Focus, Zoom, ColorEffect Imple
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getlightpaintingtype"></a>
 ## getLightPaintingType
 
 ```TypeScript
@@ -57,6 +58,7 @@ function getLightPaintingType(lightPaintingPhotoSession: camera.LightPaintingPho
 
 ```
 
+<a id="getsupportedlightpaintingtypes"></a>
 ## getSupportedLightPaintingTypes
 
 ```TypeScript
@@ -77,7 +79,7 @@ Obtains the supported types of light painting shutter mode.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<LightPaintingType> | List of light painting types. |
+| Array&lt;LightPaintingType&gt; | List of light painting types. |
 
 **Error codes:**
 
@@ -96,6 +98,7 @@ function getSupportedLightPaintingTypes(lightPaintingPhotoSession: camera.LightP
 
 ```
 
+<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -134,6 +137,7 @@ function unregisterSessionError(lightPaintingPhotoSession: camera.LightPaintingP
 
 ```
 
+<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -155,7 +159,7 @@ Unsubscribes from focus state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | No | Callback used to return the result. This parameter is optional.If this parameter is specified, the subscription to the specified event **on('focusStateChange')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | No | Callback used to return the result. This parameter is optional.If this parameter is specified, the subscription to the specified event **on('focusStateChange')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
@@ -172,6 +176,7 @@ function unregisterFocusStateChange(lightPaintingPhotoSession: camera.LightPaint
 
 ```
 
+<a id="off-2"></a>
 ## off('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -193,7 +198,7 @@ Unsubscribes from smooth zoom state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SmoothZoomInfo> | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('smoothZoomInfoAvailable')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SmoothZoomInfo&gt; | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('smoothZoomInfoAvailable')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
@@ -210,6 +215,7 @@ function unregisterSmoothZoomInfo(lightPaintingPhotoSession: camera.LightPaintin
 
 ```
 
+<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -230,7 +236,7 @@ Subscribes to HighResolutionPhotoSession error events. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-2), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
@@ -254,6 +260,7 @@ function registerSessionError(lightPaintingPhotoSession: camera.LightPaintingPho
 
 ```
 
+<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -275,7 +282,7 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. This event is triggered only when the camera focus state changes in auto focus mode. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | Yes | Callback used to return the focus state change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | Yes | Callback used to return the focus state change. |
 
 **Error codes:**
 
@@ -302,6 +309,7 @@ function registerFocusStateChange(lightPaintingPhotoSession: camera.LightPaintin
 
 ```
 
+<a id="on-2"></a>
 ## on('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -323,7 +331,7 @@ Subscribes to smooth zoom state change events. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SmoothZoomInfo> | Yes | Callback used to return the smooth zoom state change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SmoothZoomInfo&gt; | Yes | Callback used to return the smooth zoom state change. |
 
 **Error codes:**
 
@@ -350,6 +358,7 @@ function registerSmoothZoomInfo(lightPaintingPhotoSession: camera.LightPaintingP
 
 ```
 
+<a id="setlightpaintingtype"></a>
 ## setLightPaintingType
 
 ```TypeScript

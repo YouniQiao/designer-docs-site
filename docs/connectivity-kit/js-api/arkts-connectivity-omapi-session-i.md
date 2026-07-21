@@ -14,6 +14,7 @@ Session represent a connection session to one of the SEs available on the device
 import { omapi } from '@kit.ConnectivityKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -53,6 +54,7 @@ try {
 
 ```
 
+<a id="closechannels"></a>
 ## closeChannels
 
 ```TypeScript
@@ -92,6 +94,7 @@ try {
 
 ```
 
+<a id="getatr"></a>
 ## getATR
 
 ```TypeScript
@@ -138,6 +141,7 @@ try {
 
 ```
 
+<a id="getreader"></a>
 ## getReader
 
 ```TypeScript
@@ -195,6 +199,7 @@ function secureElementDemo() {
 
 ```
 
+<a id="isclosed"></a>
 ## isClosed
 
 ```TypeScript
@@ -240,6 +245,7 @@ try {
 
 ```
 
+<a id="openbasicchannel"></a>
 ## openBasicChannel
 
 ```TypeScript
@@ -264,7 +270,7 @@ This method is provided to ease the development of mobile applications and for b
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Channel> | An instance of channel if available. Null if the SE is unable to provide. |
+| Promise&lt;Channel&gt; | An instance of channel if available. Null if the SE is unable to provide. |
 
 **Error codes:**
 
@@ -307,6 +313,7 @@ function secureElementDemo() {
 
 ```
 
+<a id="openbasicchannel-1"></a>
 ## openBasicChannel
 
 ```TypeScript
@@ -326,7 +333,7 @@ This method is provided to ease the development of mobile applications and for b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | aid | number[] | Yes | The AID of the applet to be selected on this channel, as a byte array,or Null if no applet is to be selected. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Channel> | Yes | The callback to return the Channel object. Null if the SE is unable to provide. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Channel&gt; | Yes | The callback to return the Channel object. Null if the SE is unable to provide. |
 
 **Error codes:**
 
@@ -371,6 +378,7 @@ function secureElementDemo() {
 
 ```
 
+<a id="openbasicchannel-2"></a>
 ## openBasicChannel
 
 ```TypeScript
@@ -396,7 +404,7 @@ Get access to the basic channel, as defined in [ISO 7816-4](the one that has num
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Channel> | An instance of channel if available. Null if the SE is unable to provide. |
+| Promise&lt;Channel&gt; | An instance of channel if available. Null if the SE is unable to provide. |
 
 **Error codes:**
 
@@ -440,6 +448,7 @@ function secureElementDemo() {
 
 ```
 
+<a id="openbasicchannel-3"></a>
 ## openBasicChannel
 
 ```TypeScript
@@ -460,7 +469,7 @@ Get access to the basic channel, as defined in [ISO 7816-4](the one that has num
 | --- | --- | --- | --- |
 | aid | number[] | Yes | The AID of the applet to be selected on this channel, as a byte array,or Null if no applet is to be selected. |
 | p2 | number | Yes | The P2 parameter of the SELECT APDU executed on this channel. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Channel> | Yes | The callback to return the Channel object. Null if the SE is unable to provide. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Channel&gt; | Yes | The callback to return the Channel object. Null if the SE is unable to provide. |
 
 **Error codes:**
 
@@ -506,6 +515,7 @@ function secureElementDemo() {
 
 ```
 
+<a id="openlogicalchannel"></a>
 ## openLogicalChannel
 
 ```TypeScript
@@ -530,7 +540,7 @@ This method is provided to ease the development of mobile applications and for b
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Channel> | An instance of channel if available. Null if the SE is unable to provide.A new logical channel or is unable to retrieve Access Control rules due to the lack of an available logical channel. |
+| Promise&lt;Channel&gt; | An instance of channel if available. Null if the SE is unable to provide.A new logical channel or is unable to retrieve Access Control rules due to the lack of an available logical channel. |
 
 **Error codes:**
 
@@ -573,6 +583,7 @@ function secureElementDemo() {
 
 ```
 
+<a id="openlogicalchannel-1"></a>
 ## openLogicalChannel
 
 ```TypeScript
@@ -592,7 +603,7 @@ This method is provided to ease the development of mobile applications and for b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | aid | number[] | Yes | The AID of the applet to be selected on this channel, as a byte array. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Channel> | Yes | The callback to return the Channel object. Null if the SE is unable to provide.A new logical channel or is unable to retrieve Access Control rules due to the lack of an available logical channel. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Channel&gt; | Yes | The callback to return the Channel object. Null if the SE is unable to provide.A new logical channel or is unable to retrieve Access Control rules due to the lack of an available logical channel. |
 
 **Error codes:**
 
@@ -637,6 +648,7 @@ function secureElementDemo() {
 
 ```
 
+<a id="openlogicalchannel-2"></a>
 ## openLogicalChannel
 
 ```TypeScript
@@ -662,7 +674,7 @@ Open a logical channel with the SE, selecting the applet represented by the give
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Channel> | An instance of channel if available. Null if the SE is unable to provide.A new logical channel or is unable to retrieve Access Control rules due to the lack of an available logical channel. |
+| Promise&lt;Channel&gt; | An instance of channel if available. Null if the SE is unable to provide.A new logical channel or is unable to retrieve Access Control rules due to the lack of an available logical channel. |
 
 **Error codes:**
 
@@ -706,6 +718,7 @@ function secureElementDemo() {
 
 ```
 
+<a id="openlogicalchannel-3"></a>
 ## openLogicalChannel
 
 ```TypeScript
@@ -726,7 +739,7 @@ Open a logical channel with the SE, selecting the applet represented by the give
 | --- | --- | --- | --- |
 | aid | number[] | Yes | The AID of the applet to be selected on this channel, as a byte array. |
 | p2 | number | Yes | The P2 parameter of the SELECT APDU executed on this channel. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Channel> | Yes | The callback to return the instance of channel. Null if the SE is unable to provide. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Channel&gt; | Yes | The callback to return the instance of channel. Null if the SE is unable to provide. |
 
 **Error codes:**
 

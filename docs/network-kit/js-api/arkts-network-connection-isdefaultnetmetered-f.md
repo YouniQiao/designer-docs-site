@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="isdefaultnetmetered"></a>
 ## isDefaultNetMetered
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether data traffic usage on the current network is metered.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Returns {@code true} if data traffic usage on the current network is metered;returns {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Returns {@code true} if data traffic usage on the current network is metered;returns {@code false} otherwise. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ connection.isDefaultNetMetered((error: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isdefaultnetmetered-1"></a>
 ## isDefaultNetMetered
 
 ```TypeScript
@@ -71,7 +73,7 @@ Checks whether data traffic usage on the current network is metered.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 

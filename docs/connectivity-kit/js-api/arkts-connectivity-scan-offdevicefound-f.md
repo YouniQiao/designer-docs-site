@@ -6,6 +6,7 @@
 import { scan } from '@kit.ConnectivityKit';
 ```
 
+<a id="offdevicefound"></a>
 ## offDeviceFound
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unsubscribes from NearLink scan results.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<ScanResults[]> | No | Callback used to listen for the scan result event. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;ScanResults[]&gt; | No | Callback used to listen for the scan result event. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Provide a DateTime formatting interface which could format date to ISO 8601 stan
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -38,6 +39,7 @@ A constructor used to create a ISO8601DateTimeFormat object.
 | --- | --- | --- | --- |
 | options | [ISO8601DateTimeFormatOptions](arkts-localization-i18n-iso8601datetimeformatoptions-i.md) | No | Options for creating a date formatting object that complies with ISO 8601. |
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -60,7 +62,7 @@ Formats a date to ISO 8601 formatted string.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | date to be formatted. Note: The month starts from 0. For example, 0 indicates January. |
+| date | Date | Yes | date to be formatted. Note: The month starts from 0. For example, 0 indicates January. |
 
 **Return value:**
 

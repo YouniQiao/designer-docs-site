@@ -6,6 +6,7 @@
 import { thermal } from '@kit.BasicServicesKit';
 ```
 
+<a id="unregisterthermallevelcallback"></a>
 ## unregisterThermalLevelCallback
 
 ```TypeScript
@@ -24,7 +25,7 @@ Unregisters from the thermal level changes. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | (Optional) Callback that returns no value. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | (Optional) Callback that returns no value. |
 
 **Error codes:**
 

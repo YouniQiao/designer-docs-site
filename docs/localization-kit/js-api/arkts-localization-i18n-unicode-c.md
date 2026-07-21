@@ -14,6 +14,7 @@ Provides character attribute management capabilities, such as checking whether a
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="detectencoding"></a>
 ## detectEncoding
 
 ```TypeScript
@@ -36,7 +37,7 @@ Detects the encoding information of the input byte stream.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bytes | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Input byte stream. To detect the encoding of a text string,convert the text to a byte stream first while preserving its original format.<br>Byte stream to be identified and encoded |
+| bytes | Uint8Array | Yes | Input byte stream. To detect the encoding of a text string,convert the text to a byte stream first while preserving its original format.<br>Byte stream to be identified and encoded |
 
 **Return value:**
 
@@ -54,6 +55,7 @@ let info = i18n.Unicode.detectEncoding(uint8Array); // info.encodingName = 'UTF-
 
 ```
 
+<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -91,6 +93,7 @@ let unicodeType: string = i18n.Unicode.getType('a'); // unicodeType = 'U_LOWERCA
 
 ```
 
+<a id="isdigit"></a>
 ## isDigit
 
 ```TypeScript
@@ -128,6 +131,7 @@ let isDigit: boolean = i18n.Unicode.isDigit('1'); // isDigit = true
 
 ```
 
+<a id="isideograph"></a>
 ## isIdeograph
 
 ```TypeScript
@@ -165,6 +169,7 @@ let isIdeograph: boolean = i18n.Unicode.isIdeograph('a'); // isIdeograph = false
 
 ```
 
+<a id="isletter"></a>
 ## isLetter
 
 ```TypeScript
@@ -202,6 +207,7 @@ let isLetter: boolean = i18n.Unicode.isLetter('a'); // isLetter = true
 
 ```
 
+<a id="islowercase"></a>
 ## isLowerCase
 
 ```TypeScript
@@ -239,6 +245,7 @@ let isLowercase: boolean = i18n.Unicode.isLowerCase('a'); // isLowercase = true
 
 ```
 
+<a id="isrtl"></a>
 ## isRTL
 
 ```TypeScript
@@ -276,6 +283,7 @@ let isRtl: boolean = i18n.Unicode.isRTL('a'); // isRtl = false
 
 ```
 
+<a id="isspacechar"></a>
 ## isSpaceChar
 
 ```TypeScript
@@ -313,6 +321,7 @@ let isSpacechar: boolean = i18n.Unicode.isSpaceChar('a'); // isSpacechar = false
 
 ```
 
+<a id="isuppercase"></a>
 ## isUpperCase
 
 ```TypeScript
@@ -350,6 +359,7 @@ let isUppercase: boolean = i18n.Unicode.isUpperCase('a'); // isUppercase = false
 
 ```
 
+<a id="iswhitespace"></a>
 ## isWhitespace
 
 ```TypeScript

@@ -4,6 +4,8 @@ The class for AlbumPickerController
 
 **Since:** 20
 
+**Decorator:** @Observed
+
 <!--Device-unnamed-export declare class AlbumPickerController--><!--Device-unnamed-export declare class AlbumPickerController-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
@@ -14,6 +16,7 @@ The class for AlbumPickerController
 import { EmptyAreaClickCallback, AlbumPickerComponent, AlbumInfo, AlbumPickerOptions, AlbumPickerController } from '@kit.MediaLibraryKit';
 ```
 
+<a id="setfontsize"></a>
 ## setFontSize
 
 ```TypeScript

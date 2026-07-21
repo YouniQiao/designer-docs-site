@@ -6,6 +6,7 @@
 import { statistics } from '@kit.NetworkKit';
 ```
 
+<a id="getcellularrxbytes"></a>
 ## getCellularRxBytes
 
 ```TypeScript
@@ -24,7 +25,7 @@ Queries the data traffic (including all TCP and UDP data packets) received throu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Returns the data traffic received through the cellular network. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Returns the data traffic received through the cellular network. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ statistics.getCellularRxBytes((error: BusinessError, stats: number) => {
 ```
 
 
+<a id="getcellularrxbytes-1"></a>
 ## getCellularRxBytes
 
 ```TypeScript
@@ -71,7 +73,7 @@ Queries the data traffic (including all TCP and UDP data packets) received throu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returned by the function. |
+| Promise&lt;number&gt; | The promise returned by the function. |
 
 **Error codes:**
 

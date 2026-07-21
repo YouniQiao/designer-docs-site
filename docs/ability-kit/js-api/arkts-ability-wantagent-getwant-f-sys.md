@@ -6,6 +6,7 @@
 import { WantAgent } from '@kit.AbilityKit';
 ```
 
+<a id="getwant"></a>
 ## getWant
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the Want in a WantAgent object.This API uses an asynchronous callback to
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | Target WantAgent object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Want> | Yes | Callback used to return the Want. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Want&gt; | Yes | Callback used to return the Want. |
 
 **Error codes:**
 
@@ -39,6 +40,7 @@ Obtains the Want in a WantAgent object.This API uses an asynchronous callback to
 | [16000151](../errorcode-ability.md#16000151-invalid-wantagent-object) | Invalid wantAgent object. |
 
 
+<a id="getwant-1"></a>
 ## getWant
 
 ```TypeScript
@@ -65,7 +67,7 @@ Obtains the Want in a WantAgent object.This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Want> | Promise used to return the Want. |
+| Promise&lt;Want&gt; | Promise used to return the Want. |
 
 **Error codes:**
 

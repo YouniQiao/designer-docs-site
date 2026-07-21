@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getdonotdisturbprofile"></a>
 ## getDoNotDisturbProfile
 
 ```TypeScript
@@ -34,7 +35,7 @@ Queries the Do Not Disturb profile. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DoNotDisturbProfile> | Promise used to return the result. |
+| Promise&lt;DoNotDisturbProfile&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ notificationManager.getDoNotDisturbProfile(1).then((data: notificationManager.Do
 ```
 
 
+<a id="getdonotdisturbprofile-1"></a>
 ## getDoNotDisturbProfile
 
 ```TypeScript
@@ -94,7 +96,7 @@ Queries the Do Not Disturb profile of a specified user. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DoNotDisturbProfile> | Promise used to return the result. |
+| Promise&lt;DoNotDisturbProfile&gt; | Promise used to return the result. |
 
 **Error codes:**
 

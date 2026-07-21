@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="getformidsbyformlocation"></a>
 ## getFormIdsByFormLocation
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the list of widget IDs at a specified location on the device. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the obtained widget ID list. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the obtained widget ID list. |
 
 **Error codes:**
 

@@ -16,6 +16,7 @@ Transition Controller
 import { uiExtensionHost } from '@kit.ArkUI';
 ```
 
+<a id="createsubwindowwithoptions"></a>
 ## createSubWindowWithOptions
 
 ```TypeScript
@@ -45,7 +46,7 @@ Creates a subwindow for this **UIExtensionHostWindowProxy** instance. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<window.Window> | Promise used to return the subwindow created. |
+| Promise&lt;window.Window&gt; | Promise used to return the subwindow created. |
 
 **Error codes:**
 
@@ -104,6 +105,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="createsubwindowwithoptions-1"></a>
 ## createSubWindowWithOptions
 
 ```TypeScript
@@ -137,7 +139,7 @@ Create subwindow.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<window.Window> | Promise used to return the subwindow. |
+| Promise&lt;window.Window&gt; | Promise used to return the subwindow. |
 
 **Error codes:**
 
@@ -195,6 +197,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="getwindowavoidarea"></a>
 ## getWindowAvoidArea
 
 ```TypeScript
@@ -250,6 +253,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="hidenonsecurewindows"></a>
 ## hideNonSecureWindows
 
 ```TypeScript
@@ -261,8 +265,8 @@ Sets whether to hide non-secure windows. This API uses a promise to return the r
 > **NOTE**  
 >  
 > - A non-secure window refers to any window that may obstruct the  
-> [EmbeddedComponent](./@internal/component/ets/embedded_component) or  
-> [UIExtensionComponent](./@internal/component/ets/ui_extension_component), such as global floating windows  
+> [EmbeddedComponent](../../apis-arkui/arkts-components/arkts-arkui-embedded_component-i) or  
+> [UIExtensionComponent](../../apis-arkui/arkts-components/arkts-arkui-ui_extension_component-i), such as global floating windows  
 > , host subwindows, and dialog box windows created by the host application (excluding windows of these types  
 > created by system applications).  
 >  
@@ -296,7 +300,7 @@ Sets whether to hide non-secure windows. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -338,6 +342,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="hideprivacycontentforhost"></a>
 ## hidePrivacyContentForHost
 
 ```TypeScript
@@ -350,7 +355,7 @@ Sets whether to enable privacy protection for the UIExtension component during n
 >  
 > When privacy protection is enabled, neither  
 > [window.snapshot](@ohos.window:window.snapshot) nor  
-> [UIContext.getComponentSnapshot](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getcomponentsnapshot12)  
+> [UIContext.getComponentSnapshot](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getcomponentsnapshot12)  
 > will capture the content of the current component (excluding subwindows created under this component).
 
 **Since:** 13
@@ -373,7 +378,7 @@ Sets whether to enable privacy protection for the UIExtension component during n
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -404,6 +409,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="off"></a>
 ## off('avoidAreaChange')
 
 ```TypeScript
@@ -427,7 +433,7 @@ Unsubscribes from events of system avoidance area changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'avoidAreaChange' | Yes | Event type. The value is fixed at **'avoidAreaChange'**, indicating the event of changes to the area where the window cannot be displayed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<{ type: window.AvoidAreaType, area: window.AvoidArea }> | No |  |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;{ type: window.AvoidAreaType, area: window.AvoidArea }&gt; | No |  |
 
 **Error codes:**
 
@@ -452,6 +458,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="off-1"></a>
 ## off('windowSizeChange')
 
 ```TypeScript
@@ -475,7 +482,7 @@ Unsubscribes from size change events of the component (**EmbeddedComponent** or 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowSizeChange' | Yes | Event type. The value is fixed at **'windowSizeChange'**, indicating the component (**EmbeddedComponent** or **UIExtensionComponent**) size change events. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<window.Size> | No | Callback used to return the size of the current component (**EmbeddedComponent** or **UIExtensionComponent**). If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;window.Size&gt; | No | Callback used to return the size of the current component (**EmbeddedComponent** or **UIExtensionComponent**). If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -500,6 +507,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="on"></a>
 ## on('avoidAreaChange')
 
 ```TypeScript
@@ -523,7 +531,7 @@ Subscribes to events of system avoidance area changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'avoidAreaChange' | Yes | Event type. The value is fixed at **'avoidAreaChange'**, indicating the event of changes to the area where the window cannot be displayed. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<{ type: window.AvoidAreaType, area: window.AvoidArea }> | Yes |  |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;{ type: window.AvoidAreaType, area: window.AvoidArea }&gt; | Yes |  |
 
 **Error codes:**
 
@@ -550,6 +558,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="on-1"></a>
 ## on('windowSizeChange')
 
 ```TypeScript
@@ -573,7 +582,7 @@ Subscribes to size change events of the component (**EmbeddedComponent** or **UI
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'windowSizeChange' | Yes | Event type. The value is fixed at **'windowSizeChange'**, indicating the component (**EmbeddedComponent** or **UIExtensionComponent**) size change events. |
-| callback | [Callback](../arkts-components/arkts-arkui-common-callback-i.md)<window.Size> | Yes | Callback function that receives the current component size as the input parameter. |
+| callback | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;window.Size&gt; | Yes | Callback function that receives the current component size as the input parameter. |
 
 **Error codes:**
 
@@ -600,6 +609,7 @@ export default class EntryAbility extends UIExtensionAbility {
 
 ```
 
+<a id="setwatermarkflag"></a>
 ## setWaterMarkFlag
 
 ```TypeScript
@@ -633,7 +643,7 @@ Adds or deletes the watermark flag for this window. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -681,7 +691,7 @@ properties: UIExtensionHostWindowProxyProperties
 
 Information about the host application window and the **UIExtensionComponent**.
 
-Note: Due to architecture restrictions, avoid obtaining the value in [onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1). Instead, when possible, obtain the value after receiving the [on('windowSizeChange')](arkts-arkui-uiextensionhost-uiextensionhostwindowproxy-i-sys.md#on-2)callback.
+Note: Due to architecture restrictions, avoid obtaining the value in [onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1). Instead, when possible, obtain the value after receiving the [on('windowSizeChange')](@ohos.uiExtensionHost:uiExtensionHost.UIExtensionHostWindowProxy.on(type: 'windowSizeChange', callback: Callback<window.Size>))callback.
 
 **Type:** UIExtensionHostWindowProxyProperties
 

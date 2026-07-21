@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface ArrayConstructor--><!--Device-unnamed-interface ArrayConstructor-End-->
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -16,7 +17,7 @@ Creates an array from an array-like object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<T> | Yes |  |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;T&gt; | Yes |  |
 
 **Return value:**
 
@@ -24,6 +25,7 @@ Creates an array from an array-like object.
 | --- | --- |
 | T[] |  |
 
+<a id="from-1"></a>
 ## from
 
 ```TypeScript
@@ -38,8 +40,8 @@ Creates an array from an iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<T> | Yes |  |
-| mapfn | (v: T, k: number) => U | Yes |  |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;T&gt; | Yes |  |
+| mapfn | (v: T, k: number) =&gt; U | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -48,6 +50,7 @@ Creates an array from an iterable object.
 | --- | --- |
 | U[] |  |
 
+<a id="of"></a>
 ## of
 
 ```TypeScript

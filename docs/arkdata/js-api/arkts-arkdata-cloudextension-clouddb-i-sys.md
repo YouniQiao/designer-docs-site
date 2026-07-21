@@ -16,6 +16,7 @@ Provides APIs for performing cloud database operations.
 import { cloudExtension } from '@kit.ArkData';
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -46,13 +47,13 @@ Deletes data from a cloud database table. This API uses a promise to return the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Table name. |
-| extensions | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Record<string, CloudType>> | Yes | Extended information about the current data. |
+| extensions | Array&lt;Record&lt;string, CloudType&gt;&gt; | Yes | Extended information about the current data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Result<Record<string, CloudType>>>> | Promise used to return the deleted data and operation result. |
+| Promise&lt;Array&lt;Result&lt;Record&lt;string, CloudType&gt;&gt;&gt;&gt; | Promise used to return the deleted data and operation result. |
 
 **Example**
 
@@ -71,6 +72,7 @@ class MyCloudDB implements cloudExtension.CloudDB {
 
 ```
 
+<a id="generateid"></a>
 ## generateId
 
 ```TypeScript
@@ -97,7 +99,7 @@ Generates IDs for the data records inserted to the cloud database.The IDs are un
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<Array<string>>> | Promise used to return the generated IDs in Result. |
+| Promise&lt;Result&lt;Array&lt;string&gt;&gt;&gt; | Promise used to return the generated IDs in Result. |
 
 **Example**
 
@@ -118,6 +120,7 @@ class MyCloudDB implements cloudExtension.CloudDB {
 
 ```
 
+<a id="heartbeat"></a>
 ## heartbeat
 
 ```TypeScript
@@ -144,7 +147,7 @@ Extends the lock period of the database. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<LockInfo>> | Promise used to return the lock ID and lock period. |
+| Promise&lt;Result&lt;LockInfo&gt;&gt; | Promise used to return the lock ID and lock period. |
 
 **Example**
 
@@ -171,6 +174,7 @@ class MyCloudDB implements cloudExtension.CloudDB {
 
 ```
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -204,14 +208,14 @@ Inserts data to a cloud database table. This API uses a promise to return the re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Table name. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Record<string, CloudType>> | Yes | Data to insert. |
-| extensions | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Record<string, CloudType>> | Yes | Extended information about the current data. |
+| values | Array&lt;Record&lt;string, CloudType&gt;&gt; | Yes | Data to insert. |
+| extensions | Array&lt;Record&lt;string, CloudType&gt;&gt; | Yes | Extended information about the current data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Result<Record<string, CloudType>>>> | Promise used to return the inserted data and operation result. |
+| Promise&lt;Array&lt;Result&lt;Record&lt;string, CloudType&gt;&gt;&gt;&gt; | Promise used to return the inserted data and operation result. |
 
 **Example**
 
@@ -230,6 +234,7 @@ class MyCloudDB implements cloudExtension.CloudDB {
 
 ```
 
+<a id="lock"></a>
 ## lock
 
 ```TypeScript
@@ -250,7 +255,7 @@ Locks this cloud database. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<LockInfo>> | Promise used to return the lock ID and lock period. |
+| Promise&lt;Result&lt;LockInfo&gt;&gt; | Promise used to return the lock ID and lock period. |
 
 **Example**
 
@@ -277,6 +282,7 @@ class MyCloudDB implements cloudExtension.CloudDB {
 
 ```
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -298,7 +304,7 @@ Queries data in a cloud database table. This API uses a promise to return the re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Table name. |
-| fields | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Name of the fields to query. |
+| fields | Array&lt;string&gt; | Yes | Name of the fields to query. |
 | queryCount | number | Yes | Number of data records to query. |
 | queryCursor | string | Yes | Cursor for the query. |
 
@@ -306,7 +312,7 @@ Queries data in a cloud database table. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<CloudData>> | Promise used to return the data and operation result. |
+| Promise&lt;Result&lt;CloudData&gt;&gt; | Promise used to return the data and operation result. |
 
 **Example**
 
@@ -332,6 +338,7 @@ class MyCloudDB implements cloudExtension.CloudDB {
 
 ```
 
+<a id="unlock"></a>
 ## unlock
 
 ```TypeScript
@@ -358,7 +365,7 @@ Unlocks a cloud database. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<boolean>> | Promise used to return the result.The value true means the operation is successful; the value false means the opposite. |
+| Promise&lt;Result&lt;boolean&gt;&gt; | Promise used to return the result.The value true means the operation is successful; the value false means the opposite. |
 
 **Example**
 
@@ -380,6 +387,7 @@ class MyCloudDB implements cloudExtension.CloudDB {
 
 ```
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -413,14 +421,14 @@ Updates data in the cloud. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | table | string | Yes | Table name. |
-| values | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Record<string, CloudType>> | Yes | Data to insert. |
-| extensions | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Record<string, CloudType>> | Yes | Extended information about the current data. |
+| values | Array&lt;Record&lt;string, CloudType&gt;&gt; | Yes | Data to insert. |
+| extensions | Array&lt;Record&lt;string, CloudType&gt;&gt; | Yes | Extended information about the current data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Result<Record<string, CloudType>>>> | Promise used to return the update result and updated data. |
+| Promise&lt;Array&lt;Result&lt;Record&lt;string, CloudType&gt;&gt;&gt;&gt; | Promise used to return the update result and updated data. |
 
 **Example**
 

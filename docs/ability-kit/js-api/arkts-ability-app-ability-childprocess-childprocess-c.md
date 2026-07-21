@@ -14,6 +14,7 @@ ChildProcess is the base class for you to customize child processes. When starti
 import { ChildProcess } from '@kit.AbilityKit';
 ```
 
+<a id="onstart"></a>
 ## onStart
 
 ```TypeScript

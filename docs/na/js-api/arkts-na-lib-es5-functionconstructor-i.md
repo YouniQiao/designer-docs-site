@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface FunctionConstructor--><!--Device-unnamed-interface FunctionConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -22,8 +23,9 @@ Creates a new function.
 
 | Type | Description |
 | --- | --- |
-| [Function](arkts-na-lib-es2015-core-function-i.md) |  |
+| Function |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -42,7 +44,7 @@ Creates a new function.
 
 | Type | Description |
 | --- | --- |
-| [Function](arkts-na-lib-es2015-core-function-i.md) |  |
+| Function |  |
 
 ## prototype
 

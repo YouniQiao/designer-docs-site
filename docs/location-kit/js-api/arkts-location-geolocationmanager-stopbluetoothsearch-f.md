@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="stopbluetoothsearch"></a>
 ## stopBluetoothSearch
 
 ```TypeScript
@@ -28,7 +29,7 @@ Stop Bluetooth scanning and searching.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BluetoothScanResult> | No | Callback used to return ${BluetoothScanResult}.It should be the same as the callback passed to ${geoLocationManager.startBluetoothSearch}. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BluetoothScanResult&gt; | No | Callback used to return ${BluetoothScanResult}.It should be the same as the callback passed to ${geoLocationManager.startBluetoothSearch}. |
 
 **Error codes:**
 

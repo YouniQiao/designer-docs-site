@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="queryextensionabilityinfosync"></a>
 ## queryExtensionAbilityInfoSync
 
 ```TypeScript
@@ -42,7 +43,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ExtensionAbilityInfo> | An array of ExtensionAbility information. |
+| Array&lt;ExtensionAbilityInfo&gt; | An array of ExtensionAbility information. |
 
 **Error codes:**
 
@@ -108,6 +109,7 @@ try {
 ```
 
 
+<a id="queryextensionabilityinfosync-1"></a>
 ## queryExtensionAbilityInfoSync
 
 ```TypeScript
@@ -144,7 +146,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ExtensionAbilityInfo> | An array of ExtensionAbility information obtained. |
+| Array&lt;ExtensionAbilityInfo&gt; | An array of ExtensionAbility information obtained. |
 
 **Error codes:**
 
@@ -210,6 +212,7 @@ try {
 ```
 
 
+<a id="queryextensionabilityinfosync-2"></a>
 ## queryExtensionAbilityInfoSync
 
 ```TypeScript
@@ -245,7 +248,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ExtensionAbilityInfo> | An array of ExtensionAbility information obtained. |
+| Array&lt;ExtensionAbilityInfo&gt; | An array of ExtensionAbility information obtained. |
 
 **Error codes:**
 

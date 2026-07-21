@@ -16,6 +16,7 @@ Zoom extend [ZoomQuery](arkts-camera-camera-zoomquery-i.md)Provides APIs to proc
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getzoomratio"></a>
 ## getZoomRatio
 
 ```TypeScript
@@ -45,6 +46,7 @@ Obtains the zoom ratio in use.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error.<br>**Applicable version:** 12 and later |
 
+<a id="setsmoothzoom"></a>
 ## setSmoothZoom
 
 ```TypeScript
@@ -74,6 +76,7 @@ Sets smooth zoom.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config.<br>**Applicable version:** 11 - 17 |
 
+<a id="setzoomratio"></a>
 ## setZoomRatio
 
 ```TypeScript

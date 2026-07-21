@@ -10,7 +10,7 @@ Implements a **WebStorage** object to manage the Web SQL database and HTML5 Web 
 >  
 > - After the ArkWeb kernel is upgraded to M132, the Web SQL database management becomes invalid because the kernel  
 > discards Web SQL. For details about the ArkWeb kernel version, see  
-> [Constraints](../../../../web/web-component-overview.md#constraints).
+> [Constraints](docroot://web/web-component-overview.md#constraints).
 
 **Since:** 9
 
@@ -24,6 +24,7 @@ Implements a **WebStorage** object to manage the Web SQL database and HTML5 Web 
 import { webview } from '@kit.ArkWeb';
 ```
 
+<a id="deletealldata"></a>
 ## deleteAllData
 
 ```TypeScript
@@ -46,6 +47,7 @@ Deletes all storage data used by JavaScript storage APIs, including the Web SQL 
 | --- | --- | --- | --- |
 | incognito | boolean | No | Whether to delete all data in the Web SQL Database in incognito mode. The value **true** means to delete all data in the Web SQL Database in incognito mode, and **false** means the opposite.<br>Default value: **false**.<br>If **undefined** or **null** is passed, the value is **false**.<br>**Since:** 11 |
 
+<a id="deleteorigin"></a>
 ## deleteOrigin
 
 ```TypeScript
@@ -66,7 +68,7 @@ Deletes all data in the specified origin.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| origin | string | Yes | Index of the origin, which is obtained through [getOrigins](arkts-arkweb-webview-webstorage-c.md#getorigins-2). |
+| origin | string | Yes | Index of the origin, which is obtained through [getOrigins](webview.WebStorage.static getOrigins(callback: AsyncCallback<Array<WebStorageOrigin>>)). |
 
 **Error codes:**
 
@@ -75,6 +77,7 @@ Deletes all data in the specified origin.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3.Parameter verification failed. |
 | [17100011](../errorcode-webview.md#17100011-invalid-origin) | Invalid origin. |
 
+<a id="getoriginquota"></a>
 ## getOriginQuota
 
 ```TypeScript
@@ -101,7 +104,7 @@ Obtains the storage quota of an origin in the Web SQL Database and HTML5-support
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the storage quota of the origin. |
+| Promise&lt;number&gt; | Promise used to return the storage quota of the origin. |
 
 **Error codes:**
 
@@ -110,6 +113,7 @@ Obtains the storage quota of an origin in the Web SQL Database and HTML5-support
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100011](../errorcode-webview.md#17100011-invalid-origin) | Invalid origin. |
 
+<a id="getoriginquota-1"></a>
 ## getOriginQuota
 
 ```TypeScript
@@ -131,7 +135,7 @@ Obtains the storage quota of an origin in Web SQL Database and HTML5-supported W
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | origin | string | Yes | Index of the origin. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Storage quota of the origin.<br>**number** is a long integer ranging from -2,147,483,648 to 2,147,483,647. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Storage quota of the origin.<br>**number** is a long integer ranging from -2,147,483,648 to 2,147,483,647. |
 
 **Error codes:**
 
@@ -140,6 +144,7 @@ Obtains the storage quota of an origin in Web SQL Database and HTML5-supported W
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100011](../errorcode-webview.md#17100011-invalid-origin) | Invalid origin. |
 
+<a id="getoriginusage"></a>
 ## getOriginUsage
 
 ```TypeScript
@@ -166,7 +171,7 @@ Obtains the storage usage of an origin in the Web SQL Database and HTML5-support
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the storage usage of the origin. |
+| Promise&lt;number&gt; | Promise used to return the storage usage of the origin. |
 
 **Error codes:**
 
@@ -175,6 +180,7 @@ Obtains the storage usage of an origin in the Web SQL Database and HTML5-support
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100011](../errorcode-webview.md#17100011-invalid-origin) | Invalid origin. |
 
+<a id="getoriginusage-1"></a>
 ## getOriginUsage
 
 ```TypeScript
@@ -196,7 +202,7 @@ Obtains the storage usage of an origin in the Web SQL Database and HTML5-support
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | origin | string | Yes | Index of the origin. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Storage usage of the origin. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Storage usage of the origin. |
 
 **Error codes:**
 
@@ -205,6 +211,7 @@ Obtains the storage usage of an origin in the Web SQL Database and HTML5-support
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100011](../errorcode-webview.md#17100011-invalid-origin) | Invalid origin. |
 
+<a id="getorigins"></a>
 ## getOrigins
 
 ```TypeScript
@@ -225,7 +232,7 @@ Obtains information about origins that are currently using the Web SQL Database 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<WebStorageOrigin>> | Promise used to return the information about the origins. |
+| Promise&lt;Array&lt;WebStorageOrigin&gt;&gt; | Promise used to return the information about the origins. |
 
 **Error codes:**
 
@@ -234,6 +241,7 @@ Obtains information about origins that are currently using the Web SQL Database 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [17100012](../errorcode-webview.md#17100012-no-web-storage-origin) | Invalid web storage origin. |
 
+<a id="getorigins-1"></a>
 ## getOrigins
 
 ```TypeScript
@@ -254,7 +262,7 @@ Obtains information about origins that are currently using the Web SQL Database 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<WebStorageOrigin>> | Yes | Callback used to return the information about the origins. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;WebStorageOrigin&gt;&gt; | Yes | Callback used to return the information about the origins. |
 
 **Error codes:**
 

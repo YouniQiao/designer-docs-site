@@ -6,6 +6,7 @@
 import { mdns } from '@kit.NetworkKit';
 ```
 
+<a id="removelocalservice"></a>
 ## removeLocalService
 
 ```TypeScript
@@ -31,7 +32,7 @@ Removes an mDNS service.
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | serviceInfo | [LocalServiceInfo](arkts-network-mdns-localserviceinfo-i.md) | Yes | Information about the mDNS service. {@link LocalServiceInfo} |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<LocalServiceInfo> | Yes | the callback of removeLocalService. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;LocalServiceInfo&gt; | Yes | the callback of removeLocalService. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ mdns.removeLocalService(context, localServiceInfo, (error: BusinessError, data: 
 ```
 
 
+<a id="removelocalservice-1"></a>
 ## removeLocalService
 
 ```TypeScript
@@ -101,7 +103,7 @@ Removes an mDNS service.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<LocalServiceInfo> | The promise returned by the function. |
+| Promise&lt;LocalServiceInfo&gt; | The promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="anonattestkeyitemofflineasuser"></a>
 ## anonAttestKeyItemOfflineAsUser
 
 ```TypeScript
@@ -47,7 +48,7 @@ function anonAttestKeyItemOfflineAsUser(userId: number, keyAlias: string,
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<HuksReturnResult> | Promise用于返回结果。如果操作成功。HuksReturnResult中的certChains包含获取到的证书链。 |
+| Promise&lt;HuksReturnResult&gt; | Promise用于返回结果。如果操作成功。HuksReturnResult中的certChains包含获取到的证书链。 |
 
 **错误码：**
 
@@ -67,7 +68,7 @@ function anonAttestKeyItemOfflineAsUser(userId: number, keyAlias: string,
 | [12000014](../errorcode-huks.md#12000014-内存不足) | The memory is insufficient. |
 | [12000018](../errorcode-huks.md#12000018-输入参数非法) | The parameter is incorrect. Possible causes:1. A mandatory parameter is left empty.2. The parameter type is incorrect.3. The parameter verification failed. |
 | [12000024](../errorcode-huks.md#12000024-设备或资源繁忙) | The operation times out. This may be caused by network jitter.You can try again later. |
-| 12000027 | The network is unavailable. Check network connections. |
+| [12000027](../errorcode-huks.md#12000027-网络不可用) | The network is unavailable. Check network connections. |
 
 **示例：**
 

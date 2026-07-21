@@ -6,6 +6,7 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="copyfile"></a>
 ## copyFile
 
 ```TypeScript
@@ -34,7 +35,7 @@ Copies a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ Copies a file. This API uses a promise to return the result.
 | 13900044 | Network is unreachable<br>**Applicable version:** 12 and later |
 
 
+<a id="copyfile-1"></a>
 ## copyFile
 
 ```TypeScript
@@ -82,7 +84,7 @@ Copies a file. This API overwrites the file with the same name in the destinatio
 | --- | --- | --- | --- |
 | src | string \| number | Yes | Path or FD of the file to copy. |
 | dest | string \| number | Yes | Destination path of the file or FD of the file created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked immediately after the file is copied. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked immediately after the file is copied. |
 
 **Error codes:**
 
@@ -107,6 +109,7 @@ Copies a file. This API overwrites the file with the same name in the destinatio
 | 13900042 | Unknown error |
 
 
+<a id="copyfile-2"></a>
 ## copyFile
 
 ```TypeScript
@@ -145,7 +148,7 @@ Copies a file with the specified mode. This API uses an asynchronous callback to
 | src | string \| number | Yes | Path or FD of the file to copy. |
 | dest | string \| number | Yes | Destination path of the file or FD of the file created. |
 | mode | number | Yes | Whether to overwrite the file with the same name in the destination directory. The default value is **0**, which is the only value supported.<br>**0**: overwrite the file with the same name and truncate the part that is not overwritten. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked immediately after the file is copied. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked immediately after the file is copied. |
 
 **Error codes:**
 

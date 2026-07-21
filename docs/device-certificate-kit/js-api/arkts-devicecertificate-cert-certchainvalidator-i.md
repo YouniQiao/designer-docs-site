@@ -14,6 +14,7 @@ Provides APIs for certificate chain validator operations.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="validate"></a>
 ## validate
 
 ```TypeScript
@@ -22,7 +23,7 @@ validate(certChain: CertChainData, callback: AsyncCallback<void>): void
 
 Validates an X.509 certificate chain. This API uses an asynchronous callback to return the result.
 
-The certificate chain validator does not verify the certificate validity period because the system time on the device is untrusted. To check the validity period of a certificate, use the [checkValidityWithDate()](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate-1) API of the **X509Cert** class. For details about certificate specifications, see [Certificate Specifications](../../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications).
+The certificate chain validator does not verify the certificate validity period because the system time on the device is untrusted. To check the validity period of a certificate, use the [checkValidityWithDate()](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate-1) API of the **X509Cert** class. For details about certificate specifications, see [Certificate Specifications](docroot://security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications).
 
 **Since:** 9
 
@@ -37,7 +38,7 @@ The certificate chain validator does not verify the certificate validity period 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | certChain | [CertChainData](arkts-devicecertificate-cert-certchaindata-i.md) | Yes | Serialized X.509 certificate chain data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -148,6 +149,7 @@ try {
 
 ```
 
+<a id="validate-1"></a>
 ## validate
 
 ```TypeScript
@@ -156,7 +158,7 @@ validate(certChain: CertChainData): Promise<void>
 
 Validates an X.509 certificate chain. This API uses a promise to return the result.
 
-The certificate chain validator does not verify the certificate validity period because the system time on the device is untrusted. To check the validity period of a certificate, use the [checkValidityWithDate()](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate-1) API of the **X509Cert** class. For details about certificate specifications, see [Certificate Specifications](../../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications).
+The certificate chain validator does not verify the certificate validity period because the system time on the device is untrusted. To check the validity period of a certificate, use the [checkValidityWithDate()](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate-1) API of the **X509Cert** class. For details about certificate specifications, see [Certificate Specifications](docroot://security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications).
 
 **Since:** 9
 
@@ -176,7 +178,7 @@ The certificate chain validator does not verify the certificate validity period 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -285,6 +287,7 @@ try {
 
 ```
 
+<a id="validatecert"></a>
 ## validateCert
 
 ```TypeScript
@@ -316,7 +319,7 @@ The certificate chain construction process complies with the following rules:1. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CertValidationResult> | Promise used to return the result of certificate validation. |
+| Promise&lt;CertValidationResult&gt; | Promise used to return the result of certificate validation. |
 
 **Error codes:**
 

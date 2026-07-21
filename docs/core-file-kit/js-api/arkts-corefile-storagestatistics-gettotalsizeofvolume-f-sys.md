@@ -6,6 +6,7 @@
 import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
+<a id="gettotalsizeofvolume"></a>
 ## getTotalSizeOfVolume
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get the total size of volume.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | volumeUuid | string | Yes | The uuid of the volume |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | callback<br>Unit: Byte. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | callback<br>Unit: Byte. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ volumeManager.getAllVolumes().then((volumes: Array<volumeManager.Volume>) => {
 ```
 
 
+<a id="gettotalsizeofvolume-1"></a>
 ## getTotalSizeOfVolume
 
 ```TypeScript
@@ -97,7 +99,7 @@ Get the total size of volume.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | return Promise (Unit: Byte) |
+| Promise&lt;number&gt; | return Promise (Unit: Byte) |
 
 **Error codes:**
 

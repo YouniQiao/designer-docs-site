@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getextresource"></a>
 ## getExtResource
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the module names corresponding to the extended resources based on the gi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the API call result and the module names corresponding to the extended resources. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the API call result and the module names corresponding to the extended resources. |
 
 **Error codes:**
 

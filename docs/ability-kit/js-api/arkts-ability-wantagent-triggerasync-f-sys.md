@@ -6,6 +6,7 @@
 import { WantAgent } from '@kit.AbilityKit';
 ```
 
+<a id="triggerasync"></a>
 ## triggerAsync
 
 ```TypeScript
@@ -36,7 +37,7 @@ Asynchronously triggers a predefined operation encration encapsulated in a Wanta
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CompleteData> | Returns the CompleteData. |
+| Promise&lt;CompleteData&gt; | Returns the CompleteData. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { volumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getdiskbyid"></a>
 ## getDiskById
 
 ```TypeScript
@@ -36,7 +37,7 @@ Querying disk information based on the disk ID.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Disk> | return Promise |
+| Promise&lt;Disk&gt; | return Promise |
 
 **Error codes:**
 

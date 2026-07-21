@@ -6,6 +6,7 @@
 import { systemTimer } from '@kit.BasicServicesKit';
 ```
 
+<a id="destroytimer"></a>
 ## destroyTimer
 
 ```TypeScript
@@ -27,7 +28,7 @@ Destroys a timer. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | timer | number | Yes | ID of the timer. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ try {
 ```
 
 
+<a id="destroytimer-1"></a>
 ## destroyTimer
 
 ```TypeScript
@@ -97,7 +99,7 @@ Destroys a timer. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

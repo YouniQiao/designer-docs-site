@@ -6,6 +6,7 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
+<a id="removeautostartapps"></a>
 ## removeAutoStartApps
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes the auto-start applications for the current user.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| autoStartApps | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Want> | Yes | Array of auto-start applications. **Want** must contain **bundleName** and **abilityName**. The ability can be UIAbility or ServiceExtensionAbility. If the value of **exported** in the [abilities](../../../../quick-start/module-configuration-file.md#abilities) tag is **false**, the ability cannot be started. |
+| autoStartApps | Array&lt;Want&gt; | Yes | Array of auto-start applications. **Want** must contain **bundleName** and **abilityName**. The ability can be UIAbility or ServiceExtensionAbility. If the value of **exported** in the [abilities](docroot://quick-start/module-configuration-file.md#abilities) tag is **false**, the ability cannot be started. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ try {
 ```
 
 
+<a id="removeautostartapps-1"></a>
 ## removeAutoStartApps
 
 ```TypeScript
@@ -92,8 +94,8 @@ Removes the specified application from the auto-start application list of a spec
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| autoStartApps | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Want> | Yes | Array of auto-start applications. **Want** must contain **bundleName** and **abilityName**. |
-| accountId | number | Yes | Account ID, which must be greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2) of @ohos.account.osAccount to obtain the ID. |
+| autoStartApps | Array&lt;Want&gt; | Yes | Array of auto-start applications. **Want** must contain **bundleName** and **abilityName**. |
+| accountId | number | Yes | Account ID, which must be greater than or equal to 0.<br> You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1) of @ohos.account.osAccount to obtain the ID. |
 
 **Error codes:**
 

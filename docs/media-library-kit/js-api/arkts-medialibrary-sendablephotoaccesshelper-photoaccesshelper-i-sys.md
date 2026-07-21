@@ -16,6 +16,7 @@ Helper functions to access photos and albums.
 import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="createasset"></a>
 ## createAsset
 
 ```TypeScript
@@ -54,7 +55,7 @@ For API versions 10 to 17, the following characters are considered invalid: . ..
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset> | Promise used to return the created asset. |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the created asset. |
 
 **Error codes:**
 
@@ -86,6 +87,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="createasset-1"></a>
 ## createAsset
 
 ```TypeScript
@@ -125,7 +127,7 @@ For API versions 10 to 17, the following characters are considered invalid: . ..
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset> | Promise used to return the created asset. |
+| Promise&lt;PhotoAsset&gt; | Promise used to return the created asset. |
 
 **Error codes:**
 
@@ -160,6 +162,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="gethiddenalbums"></a>
 ## getHiddenAlbums
 
 ```TypeScript
@@ -198,7 +201,7 @@ Obtains hidden albums based on the specified display mode and retrieval options.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<FetchResult<Album>> | Promise used to return the result. |
+| Promise&lt;FetchResult&lt;Album&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -209,6 +212,7 @@ Obtains hidden albums based on the specified display mode and retrieval options.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
+<a id="getphotoassets"></a>
 ## getPhotoAssets
 
 ```TypeScript
@@ -237,7 +241,7 @@ Converts the **ValuesBucket** record to a **PhotoAsset** object.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PhotoAsset[]> | Promise used to return the PhotoAsset object array (which may be empty). |
+| Promise&lt;PhotoAsset[]&gt; | Promise used to return the PhotoAsset object array (which may be empty). |
 
 **Error codes:**
 
@@ -275,6 +279,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getsharedphotoassets"></a>
 ## getSharedPhotoAssets
 
 ```TypeScript
@@ -303,7 +308,7 @@ Fetch shared photo assets.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<SharedPhotoAsset> | Returns the shared photo assets |
+| Array&lt;SharedPhotoAsset&gt; | Returns the shared photo assets |
 
 **Error codes:**
 

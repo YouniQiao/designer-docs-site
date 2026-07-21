@@ -14,6 +14,7 @@ This module provides the capabilities of sending and processing inter- or intra-
 import { emitter } from '@kit.BasicServicesKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -37,6 +38,7 @@ let emitter1: emitter.Emitter = new emitter.Emitter();
 
 ```
 
+<a id="emit"></a>
 ## emit
 
 ```TypeScript
@@ -45,7 +47,7 @@ emit(eventId: string, data?: EventData): void
 
 Emits a specified event to the Emitter class instance.
 
-This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently,complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and [@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported.
+This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](docroot://arkts-utils/serializable-overview.md). Currently,complex data decorated by decorators such as [@State](docroot://ui/state-management/arkts-state.md) and [@Observed](docroot://ui/state-management/arkts-observed-and-objectlink.md) is not supported.
 
 After an event is published using this API, the event may not be executed immediately. When the execution starts depends on the number of events in the event queue and the execution efficiency of each event.
 
@@ -79,6 +81,7 @@ emitter1.emit('eventId', eventData);
 
 ```
 
+<a id="emit-1"></a>
 ## emit
 
 ```TypeScript
@@ -87,7 +90,7 @@ emit<T>(eventId: string, data?: GenericEventData<T>): void
 
 Emits a specified event to the Emitter class instance.
 
-This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently,complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and [@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported.
+This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](docroot://arkts-utils/serializable-overview.md). Currently,complex data decorated by decorators such as [@State](docroot://ui/state-management/arkts-state.md) and [@Observed](docroot://ui/state-management/arkts-observed-and-objectlink.md) is not supported.
 
 After an event is published using this API, the event may not be executed immediately. When the execution starts depends on the number of events in the event queue and the execution efficiency of each event.
 
@@ -104,7 +107,7 @@ After an event is published using this API, the event may not be executed immedi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| data | [GenericEventData](arkts-basicservices-emitter-genericeventdata-i.md)<T> | No | Data carried by the event. This parameter is left empty by default. |
+| data | [GenericEventData](arkts-basicservices-emitter-genericeventdata-i.md)&lt;T&gt; | No | Data carried by the event. This parameter is left empty by default. |
 
 **Example**
 
@@ -130,6 +133,7 @@ emitter1.emit('eventId', eventData);
 
 ```
 
+<a id="emit-2"></a>
 ## emit
 
 ```TypeScript
@@ -138,7 +142,7 @@ emit(eventId: string, options: Options, data?: EventData): void
 
 Emits a specified event to the Emitter class instance.
 
-This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently,complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and [@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported.
+This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](docroot://arkts-utils/serializable-overview.md). Currently,complex data decorated by decorators such as [@State](docroot://ui/state-management/arkts-state.md) and [@Observed](docroot://ui/state-management/arkts-observed-and-objectlink.md) is not supported.
 
 After an event is published using this API, the event may not be executed immediately. When the execution starts depends on the number of events in the event queue and the execution efficiency of each event.
 
@@ -177,6 +181,7 @@ emitter1.emit('eventId', options, eventData);
 
 ```
 
+<a id="emit-3"></a>
 ## emit
 
 ```TypeScript
@@ -185,7 +190,7 @@ emit<T>(eventId: string, options: Options, data?: GenericEventData<T>): void
 
 Emits an event of a specified priority to the Emitter instance.
 
-This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](../../../../arkts-utils/serializable-overview.md). Currently,complex data decorated by decorators such as [@State](../../../../ui/state-management/arkts-state.md) and [@Observed](../../../../ui/state-management/arkts-observed-and-objectlink.md) is not supported.
+This API can be used to emit data objects across threads. The data objects must meet the specifications specified in [Overview of Inter-Thread Communication Objects](docroot://arkts-utils/serializable-overview.md). Currently,complex data decorated by decorators such as [@State](docroot://ui/state-management/arkts-state.md) and [@Observed](docroot://ui/state-management/arkts-observed-and-objectlink.md) is not supported.
 
 After an event is published using this API, the event may not be executed immediately. When the execution starts depends on the number of events in the event queue and the execution efficiency of each event.
 
@@ -203,7 +208,7 @@ After an event is published using this API, the event may not be executed immedi
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
 | options | [Options](arkts-basicservices-zlib-options-i.md) | Yes | Event emit priority. |
-| data | [GenericEventData](arkts-basicservices-emitter-genericeventdata-i.md)<T> | No | Data carried by the event. This parameter is left empty by default. |
+| data | [GenericEventData](arkts-basicservices-emitter-genericeventdata-i.md)&lt;T&gt; | No | Data carried by the event. This parameter is left empty by default. |
 
 **Example**
 
@@ -232,6 +237,7 @@ emitter1.emit('eventId', options, eventData);
 
 ```
 
+<a id="getlistenercount"></a>
 ## getListenerCount
 
 ```TypeScript
@@ -268,6 +274,7 @@ let count: number = emitter1.getListenerCount('eventId');
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -276,7 +283,7 @@ off(eventId: string): void
 
 Unsubscribes from all events with the specified event ID of the Emitter instance.
 
-After this API is used to unsubscribe from an event, the event that has been published through the [emit](arkts-basicservices-emitter-emitter-c.md#emit-1) API but has not been executed will be unsubscribed.
+After this API is used to unsubscribe from an event, the event that has been published through the [emit](emitter.Emitter#emit(eventId: string, data?: EventData)) API but has not been executed will be unsubscribed.
 
 **Since:** 22
 
@@ -301,15 +308,16 @@ emitter1.off('eventId');
 
 ```
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
 off(eventId: string, callback: Callback<EventData>): void
 ```
 
-Unsubscribes from an event of the Emitter instance. This API takes effect only when the [on](arkts-basicservices-emitter-emitter-c.md#on-1) or [once](arkts-basicservices-emitter-emitter-c.md#once-1) API is used to subscribe to the event with specified event ID and a callback is used to process the event.
+Unsubscribes from an event of the Emitter instance. This API takes effect only when the [on](emitter.Emitter#on(eventId: string, callback: Callback<EventData>)) or [once](emitter.Emitter#once(eventId: string, callback: Callback<EventData>)) API is used to subscribe to the event with specified event ID and a callback is used to process the event.
 
-After this API is used to unsubscribe from an event, the event that has been published through the [emit](arkts-basicservices-emitter-emitter-c.md#emit-1) API but has not been executed will be unsubscribed.
+After this API is used to unsubscribe from an event, the event that has been published through the [emit](emitter.Emitter#emit(eventId: string, data?: EventData)) API but has not been executed will be unsubscribed.
 
 **Since:** 22
 
@@ -324,7 +332,7 @@ After this API is used to unsubscribe from an event, the event that has been pub
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventData> | Yes | Callback to unregister. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | Yes | Callback to unregister. |
 
 **Example**
 
@@ -341,15 +349,16 @@ emitter1.off('eventId', callback);
 
 ```
 
+<a id="off-2"></a>
 ## off
 
 ```TypeScript
 off<T>(eventId: string, callback: Callback<GenericEventData<T>>): void
 ```
 
-Unsubscribes from an event of the Emitter instance. This API takes effect only when the [on](arkts-basicservices-emitter-emitter-c.md#on-2) or [once](arkts-basicservices-emitter-emitter-c.md#once-2) API is used to subscribe to the event with specified event ID and a callback is used to process the event.
+Unsubscribes from an event of the Emitter instance. This API takes effect only when the [on](emitter.Emitter#on<T>(eventId: string, callback: Callback<GenericEventData<T>>)) or [once](emitter.Emitter#once<T>(eventId: string, callback: Callback<GenericEventData<T>>)) API is used to subscribe to the event with specified event ID and a callback is used to process the event.
 
-After this API is used to unsubscribe from an event, the event that has been published through the [emit](arkts-basicservices-emitter-emitter-c.md#emit-2) API but has not been executed will be unsubscribed.
+After this API is used to unsubscribe from an event, the event that has been published through the [emit](emitter.Emitter#emit<T>(eventId: string, data?: GenericEventData<T>)) API but has not been executed will be unsubscribed.
 
 **Since:** 22
 
@@ -364,7 +373,7 @@ After this API is used to unsubscribe from an event, the event that has been pub
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<GenericEventData<T>> | Yes | Callback to unregister. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GenericEventData&lt;T&gt;&gt; | Yes | Callback to unregister. |
 
 **Example**
 
@@ -395,6 +404,7 @@ emitter1.off('eventId', callback);
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -416,7 +426,7 @@ Subscribes to an event specified by the Emitter instance in persistent manner an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventData> | Yes | Callback to be invoked when the event is received. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | Yes | Callback to be invoked when the event is received. |
 
 **Example**
 
@@ -433,6 +443,7 @@ emitter1.on('eventId', callback);
 
 ```
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -454,7 +465,7 @@ Subscribes to an event specified by the Emitter instance in persistent manner an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<GenericEventData<T>> | Yes | Callback to be invoked when the event is received. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GenericEventData&lt;T&gt;&gt; | Yes | Callback to be invoked when the event is received. |
 
 **Example**
 
@@ -485,6 +496,7 @@ emitter1.on('eventId', callback);
 
 ```
 
+<a id="once"></a>
 ## once
 
 ```TypeScript
@@ -506,7 +518,7 @@ Subscribes to an event specified by the Emitter instance in one-shot manner and 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EventData> | Yes | Callback to be invoked when the event is received. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | Yes | Callback to be invoked when the event is received. |
 
 **Example**
 
@@ -523,6 +535,7 @@ emitter1.once('eventId', callback);
 
 ```
 
+<a id="once-1"></a>
 ## once
 
 ```TypeScript
@@ -544,7 +557,7 @@ Subscribes to an event specified by the Emitter instance in one-shot manner and 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<GenericEventData<T>> | Yes | Callback to be invoked when the event is received. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GenericEventData&lt;T&gt;&gt; | Yes | Callback to be invoked when the event is received. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="gethistoricalavqueueinfos"></a>
 ## getHistoricalAVQueueInfos
 
 ```TypeScript
@@ -30,7 +31,7 @@ Get history play list information records.
 | --- | --- | --- | --- |
 | maxSize | number | Yes | Specifies the maximum size of the returned value array. |
 | maxAppSize | number | Yes | Specifies the maximum app size of the returned value array. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Readonly<AVQueueInfo>>> | Yes | async callback for an array of AVQueueInfo.If provided '0' or not provided, the maximum value is determined by the system. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Readonly&lt;AVQueueInfo&gt;&gt;&gt; | Yes | async callback for an array of AVQueueInfo.If provided '0' or not provided, the maximum value is determined by the system. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ avSession.getHistoricalAVQueueInfos(3, 5, (avQueueInfos: avSession.AVQueueInfo[]
 ```
 
 
+<a id="gethistoricalavqueueinfos-1"></a>
 ## getHistoricalAVQueueInfos
 
 ```TypeScript
@@ -80,7 +82,7 @@ Get history play list information records.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Readonly<AVQueueInfo>>> | Promise for an array of AVQueueInfo |
+| Promise&lt;Array&lt;Readonly&lt;AVQueueInfo&gt;&gt;&gt; | Promise for an array of AVQueueInfo |
 
 **Error codes:**
 

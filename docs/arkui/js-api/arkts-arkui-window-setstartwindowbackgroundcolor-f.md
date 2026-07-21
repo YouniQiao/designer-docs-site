@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="setstartwindowbackgroundcolor"></a>
 ## setStartWindowBackgroundColor
 
 ```TypeScript
@@ -28,15 +29,15 @@ This API takes effect for all processes of the same bundle name, for example, in
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| moduleName | string | Yes | Module name of the UIAbility. The value is a string of 0 to 200 bytes. Only the module names within the same application can be set. The module name is specified in the **name** field of the [module.json5 file](../../../../quick-start/module-configuration-file.md#tags-in-the-configuration-file). |
-| abilityName | string | Yes | Name of the UIAbility. The value is a string of 0 to 200 bytes. Only the ability names within the same application can be set. The UIAbility name is specified in the **name** field under [abilities in the module.json5 file](../../../../quick-start/module-configuration-file.md#abilities). |
+| moduleName | string | Yes | Module name of the UIAbility. The value is a string of 0 to 200 bytes. Only the module names within the same application can be set. The module name is specified in the **name** field of the [module.json5 file](docroot://quick-start/module-configuration-file.md#tags-in-the-configuration-file). |
+| abilityName | string | Yes | Name of the UIAbility. The value is a string of 0 to 200 bytes. Only the ability names within the same application can be set. The UIAbility name is specified in the **name** field under [abilities in the module.json5 file](docroot://quick-start/module-configuration-file.md#abilities). |
 | color | [ColorMetrics](arkts-arkui-colormetrics-t.md) | Yes | Background color of the splash screen. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

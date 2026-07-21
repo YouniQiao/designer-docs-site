@@ -6,6 +6,7 @@
 import { serialManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="requestserialright"></a>
 ## requestSerialRight
 
 ```TypeScript
@@ -30,7 +31,7 @@ Requests the permission for the application to access the serial port device. Af
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the permission is successfully requested, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the permission is successfully requested, and **false** indicates the opposite. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Defines a UDPSocket connection.
 import { socket } from '@kit.NetworkKit';
 ```
 
+<a id="bind"></a>
 ## bind
 
 ```TypeScript
@@ -35,7 +36,7 @@ Binds the IP address and port number. The port number can be specified or random
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | address | [NetAddress](arkts-network-connection-netaddress-i.md) | Yes | Destination address. {@link NetAddress} |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of bind. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of bind. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ udp.bind(bindAddr, (err: BusinessError) => {
 
 ```
 
+<a id="bind-1"></a>
 ## bind
 
 ```TypeScript
@@ -91,7 +93,7 @@ Binds the IP address and port number. The port number can be specified or random
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -119,6 +121,7 @@ udp.bind(bindAddr).then(() => {
 
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -139,7 +142,7 @@ Closes a UDPSocket connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of close. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of close. |
 
 **Error codes:**
 
@@ -164,6 +167,7 @@ udp.close((err: BusinessError) => {
 
 ```
 
+<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -184,7 +188,7 @@ Closes a UDPSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -207,6 +211,7 @@ udp.close().then(() => {
 
 ```
 
+<a id="getlocaladdress"></a>
 ## getLocalAddress
 
 ```TypeScript
@@ -225,7 +230,7 @@ Obtains the local address of a UDPSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetAddress> | The promise returned by the function. |
+| Promise&lt;NetAddress&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -260,6 +265,7 @@ udp.bind(bindAddr).then(() => {
 
 ```
 
+<a id="getsocketfd"></a>
 ## getSocketFd
 
 ```TypeScript
@@ -280,7 +286,7 @@ Obtains the file descriptor of the UDPSocket.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returns the file descriptor of the UDP socket. |
+| Promise&lt;number&gt; | The promise returns the file descriptor of the UDP socket. |
 
 **Error codes:**
 
@@ -313,6 +319,7 @@ udp.bind(bindAddr)
 
 ```
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript
@@ -333,7 +340,7 @@ Obtains the status of the UDPSocket connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SocketStateBase> | Yes | the callback of getState. {@link SocketStateBase}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SocketStateBase&gt; | Yes | the callback of getState. {@link SocketStateBase}. |
 
 **Error codes:**
 
@@ -369,6 +376,7 @@ udp.bind(bindAddr, (err: BusinessError) => {
 
 ```
 
+<a id="getstate-1"></a>
 ## getState
 
 ```TypeScript
@@ -389,7 +397,7 @@ Obtains the status of the UDPSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SocketStateBase> | The promise returned by the function. |
+| Promise&lt;SocketStateBase&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -423,6 +431,7 @@ udp.bind(bindAddr, (err: BusinessError) => {
 
 ```
 
+<a id="off"></a>
 ## off('message')
 
 ```TypeScript
@@ -442,7 +451,7 @@ Cancels listening for message receiving events of the UDPSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SocketMessageInfo> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SocketMessageInfo&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -469,6 +478,7 @@ udp.off('message');
 
 ```
 
+<a id="off-1"></a>
 ## off('listening' | 'close')
 
 ```TypeScript
@@ -488,7 +498,7 @@ Cancels listening for data packet message events or close events of the UDPSocke
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'listening' \| 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -514,6 +524,7 @@ udp.off('close');
 
 ```
 
+<a id="off-2"></a>
 ## off('listening' | 'close')
 
 ```TypeScript
@@ -533,7 +544,7 @@ Cancels listening for data packet message events or close events of the UDPSocke
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'listening' \| 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -559,6 +570,7 @@ udp.off('close');
 
 ```
 
+<a id="off-3"></a>
 ## off('error')
 
 ```TypeScript
@@ -597,6 +609,7 @@ udp.off('error');
 
 ```
 
+<a id="on"></a>
 ## on('message')
 
 ```TypeScript
@@ -616,7 +629,7 @@ Listens for message receiving events of the UDPSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'message' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SocketMessageInfo> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SocketMessageInfo&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -640,6 +653,7 @@ udp.on('message', (value: socket.SocketMessageInfo) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('listening' | 'close')
 
 ```TypeScript
@@ -659,7 +673,7 @@ Listens for data packet message events or close events of the UDPSocket connecti
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'listening' \| 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -677,6 +691,7 @@ udp.on('close', () => {
 
 ```
 
+<a id="on-2"></a>
 ## on('listening' | 'close')
 
 ```TypeScript
@@ -696,7 +711,7 @@ Listens for data packet message events or close events of the UDPSocket connecti
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'listening' \| 'close' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | the callback used to return the result. |
 
 **Example**
 
@@ -714,6 +729,7 @@ udp.on('close', () => {
 
 ```
 
+<a id="on-3"></a>
 ## on('error')
 
 ```TypeScript
@@ -748,6 +764,7 @@ udp.on('error', (err: BusinessError) => {
 
 ```
 
+<a id="send"></a>
 ## send
 
 ```TypeScript
@@ -769,7 +786,7 @@ Sends data over a UDPSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [UDPSendOptions](arkts-network-socket-udpsendoptions-i.md) | Yes | Optional parameters {@link UDPSendOptions}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of send. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of send. |
 
 **Error codes:**
 
@@ -869,6 +886,7 @@ udp.send(sendOptions, (err: BusinessError) => {
 
 ```
 
+<a id="send-1"></a>
 ## send
 
 ```TypeScript
@@ -895,7 +913,7 @@ Sends data over a UDPSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -989,6 +1007,7 @@ udp.send(sendOptions).then(() => {
 
 ```
 
+<a id="setextraoptions"></a>
 ## setExtraOptions
 
 ```TypeScript
@@ -1010,7 +1029,7 @@ Sets other attributes of the UDPSocket connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [UDPExtraOptions](arkts-network-socket-udpextraoptions-i.md) | Yes | Optional parameters {@link UDPExtraOptions}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes |  |
 
 **Error codes:**
 
@@ -1055,6 +1074,7 @@ udp.bind(bindAddr, (err: BusinessError) => {
 
 ```
 
+<a id="setextraoptions-1"></a>
 ## setExtraOptions
 
 ```TypeScript
@@ -1081,7 +1101,7 @@ Sets other attributes of the UDPSocket connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

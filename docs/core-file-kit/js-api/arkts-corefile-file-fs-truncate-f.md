@@ -6,6 +6,7 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="truncate"></a>
 ## truncate
 
 ```TypeScript
@@ -33,7 +34,7 @@ Truncates a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ Truncates a file. This API uses a promise to return the result.
 | 13900042 | Unknown error |
 
 
+<a id="truncate-1"></a>
 ## truncate
 
 ```TypeScript
@@ -78,7 +80,7 @@ Truncates a file. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | file | string \| number | Yes | Application sandbox path or FD of the file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 
@@ -102,6 +104,7 @@ Truncates a file. This API uses an asynchronous callback to return the result.
 | 13900042 | Unknown error |
 
 
+<a id="truncate-2"></a>
 ## truncate
 
 ```TypeScript
@@ -124,7 +127,7 @@ Truncates a file. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | file | string \| number | Yes | Application sandbox path or FD of the file. |
 | len | number | Yes | File length after truncation, in bytes. The default value is **0**.<br>**Since:** 11 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback that returns no value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback that returns no value. |
 
 **Error codes:**
 

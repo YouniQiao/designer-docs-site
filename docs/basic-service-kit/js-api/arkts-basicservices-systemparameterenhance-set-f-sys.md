@@ -6,6 +6,7 @@
 import { systemParameterEnhance } from '@kit.BasicServicesKit';
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -28,7 +29,7 @@ Sets a value of the specified key. This API uses an asynchronous callback to ret
 | --- | --- | --- | --- |
 | key | string | Yes | Target key. The value can contain a maximum of 128 bytes. Only letters, digits,periods (.), hyphens (-), at signs (@), colons (:), and underscores (_) are allowed. |
 | value | string | Yes | Value to set. The value can contain a maximum of 96 bytes (including the end character). |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ try {
 ```
 
 
+<a id="set-1"></a>
 ## set
 
 ```TypeScript
@@ -85,7 +87,7 @@ Sets a value of the specified key. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the execution result. |
+| Promise&lt;void&gt; | Promise used to return the execution result. |
 
 **Error codes:**
 

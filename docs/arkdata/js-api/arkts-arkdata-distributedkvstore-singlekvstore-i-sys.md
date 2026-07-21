@@ -1,6 +1,6 @@
 # SingleKVStore
 
-Provides APIs for data management in a single KV store, such as adding data, deleting data, and subscribing to data changes or across-device data sync completion events.Before calling any method in **SingleKVStore**, you must use [getKVStore](arkts-arkdata-distributedkvstore-kvmanager-i.md#getkvstore-1)to obtain a **SingleKVStore** instance.
+Provides APIs for data management in a single KV store, such as adding data, deleting data, and subscribing to data changes or across-device data sync completion events.Before calling any method in **SingleKVStore**, you must use [getKVStore](distributedKVStore.KVManager.getKVStore<T>(storeId: string, options: Options, callback: AsyncCallback<T>))to obtain a **SingleKVStore** instance.
 
 **Since:** 9
 
@@ -14,6 +14,7 @@ Provides APIs for data management in a single KV store, such as adding data, del
 import { distributedKVStore } from '@kit.ArkData';
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -37,7 +38,7 @@ Deletes the key-value pairs based on the dataSharePredicates.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Indicates the dataSharePredicates. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of delete. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of delete. |
 
 **Error codes:**
 
@@ -49,6 +50,7 @@ Deletes the key-value pairs based on the dataSharePredicates.
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit.<br>**Applicable version:** 10 and later |
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -77,7 +79,7 @@ Deletes the key-value pairs based on the dataSharePredicates.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 
@@ -89,6 +91,7 @@ Deletes the key-value pairs based on the dataSharePredicates.
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit.<br>**Applicable version:** 10 and later |
 
+<a id="getresultset"></a>
 ## getResultSet
 
 ```TypeScript
@@ -112,7 +115,7 @@ Obtains the KVStoreResultSet object matching the specified predicate object.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | predicates | dataSharePredicates.DataSharePredicates | Yes | Indicates the datasharePredicates. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<KVStoreResultSet> | Yes | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the specified {@code dataSharePredicates.DataSharePredicates} object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;KVStoreResultSet&gt; | Yes | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the specified {@code dataSharePredicates.DataSharePredicates} object. |
 
 **Error codes:**
 
@@ -124,6 +127,7 @@ Obtains the KVStoreResultSet object matching the specified predicate object.
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 | [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
+<a id="getresultset-1"></a>
 ## getResultSet
 
 ```TypeScript
@@ -152,7 +156,7 @@ Obtains the KVStoreResultSet object matching the specified predicate object.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<KVStoreResultSet> | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the specified {@code dataSharePredicates.DataSharePredicates} object. |
+| Promise&lt;KVStoreResultSet&gt; | {KVStoreResultSet}: the {@code KVStoreResultSet}object matching the specified {@code dataSharePredicates.DataSharePredicates} object. |
 
 **Error codes:**
 
@@ -164,6 +168,7 @@ Obtains the KVStoreResultSet object matching the specified predicate object.
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 | [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
+<a id="putbatch"></a>
 ## putBatch
 
 ```TypeScript
@@ -186,8 +191,8 @@ Writes values of ValuesBucket type into the {@code SingleKVStore} database.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Indicates the ValuesBucket array to be inserted. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of putBatch. |
+| value | Array&lt;ValuesBucket&gt; | Yes | Indicates the ValuesBucket array to be inserted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of putBatch. |
 
 **Error codes:**
 
@@ -199,6 +204,7 @@ Writes values of ValuesBucket type into the {@code SingleKVStore} database.
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit.<br>**Applicable version:** 10 and later |
 
+<a id="putbatch-1"></a>
 ## putBatch
 
 ```TypeScript
@@ -221,13 +227,13 @@ Writes values of ValuesBucket type into the {@code SingleKVStore} database.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ValuesBucket> | Yes | Indicates the ValuesBucket array to be inserted. |
+| value | Array&lt;ValuesBucket&gt; | Yes | Indicates the ValuesBucket array to be inserted. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise returned by the function. |
+| Promise&lt;void&gt; | the promise returned by the function. |
 
 **Error codes:**
 

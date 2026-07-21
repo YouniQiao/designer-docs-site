@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="getkeyboardrepeatdelay"></a>
 ## getKeyboardRepeatDelay
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the keyboard repeat delay. This API uses an asynchronous callback to ret
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the keyboard repeat rate. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the keyboard repeat rate. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -68,6 +69,7 @@ struct Index {
 ```
 
 
+<a id="getkeyboardrepeatdelay-1"></a>
 ## getKeyboardRepeatDelay
 
 ```TypeScript
@@ -88,7 +90,7 @@ Obtains the keyboard repeat delay. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the keyboard repeat delay. |
+| Promise&lt;number&gt; | Promise used to return the keyboard repeat delay. |
 
 **Error codes:**
 

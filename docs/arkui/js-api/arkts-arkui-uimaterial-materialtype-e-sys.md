@@ -16,7 +16,7 @@ Enumerates system material types.
 NONE = 0
 ```
 
-No system material effect. The corresponding effects are:[backgroundColor](../arkts-components/arkts-arkui-common-commonmethod-c.md#backgroundcolor-1) and [borderColor](../arkts-components/arkts-arkui-common-commonmethod-c.md#bordercolor-1) are transparent, [borderWidth](../arkts-components/arkts-arkui-common-commonmethod-c.md#borderwidth-1) is0, and there is no [shadow](../arkts-components/arkts-arkui-common-commonmethod-c.md#shadow-1).
+No system material effect. The corresponding effects are:[backgroundColor](../arkts-components/arkts-arkui-commonmethod-c.md#backgroundcolor-1) and [borderColor](../arkts-components/arkts-arkui-commonmethod-c.md#bordercolor-1) are transparent, [borderWidth](../arkts-components/arkts-arkui-commonmethod-c.md#borderwidth-1) is0, and there is no [shadow](../arkts-components/arkts-arkui-commonmethod-c.md#shadow-1).
 
 **Since:** 23
 
@@ -38,14 +38,14 @@ SEMI_TRANSPARENT = 1
 
 Semi-transparent system material effect. The corresponding effect is as follows:
 
-[backgroundColor](../arkts-components/arkts-arkui-common-commonmethod-c.md#backgroundcolor-1):  
+[backgroundColor](../arkts-components/arkts-arkui-commonmethod-c.md#backgroundcolor-1):  
 #f2f1f3f5 in light mode and #f2303131 in dark mode.
 
-[borderColor](../arkts-components/arkts-arkui-common-commonmethod-c.md#bordercolor-1):[token](../../../../ui/theme_skinning.md#system-default-token-color-values) value of **theme.colors.compForegroundPrimary** with 10% transparency.
+[borderColor](../arkts-components/arkts-arkui-commonmethod-c.md#bordercolor-1):[token](docroot://ui/theme_skinning.md#system-default-token-color-values) value of **theme.colors.compForegroundPrimary** with 10% transparency.
 
-[borderWidth](../arkts-components/arkts-arkui-common-commonmethod-c.md#borderwidth-1): 1 vp.
+[borderWidth](../arkts-components/arkts-arkui-commonmethod-c.md#borderwidth-1): 1 vp.
 
-[shadow](../arkts-components/arkts-arkui-common-commonmethod-c.md#shadow-1): ShadowStyle.OUTER_DEFAULT_SM.
+[shadow](../arkts-components/arkts-arkui-commonmethod-c.md#shadow-1): ShadowStyle.OUTER_DEFAULT_SM.
 
 **Since:** 23
 

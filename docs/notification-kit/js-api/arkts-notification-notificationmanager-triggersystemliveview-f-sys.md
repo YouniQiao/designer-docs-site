@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="triggersystemliveview"></a>
 ## triggerSystemLiveView
 
 ```TypeScript
@@ -30,13 +31,13 @@ Triggers a system live view notification. This API uses a promise to return the 
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
 | notificationId | number | Yes | Notification ID. |
-| buttonOptions | [ButtonOptions](../../apis-arkui/arkts-components/arkts-arkui-button-buttonoptions-i.md) | Yes | Button information. |
+| buttonOptions | [ButtonOptions](../../apis-arkui/arkts-components/arkts-arkui-buttonoptions-i.md) | Yes | Button information. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

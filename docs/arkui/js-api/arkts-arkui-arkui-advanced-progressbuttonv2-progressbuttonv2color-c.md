@@ -4,6 +4,8 @@ Declare ProgressButtonV2 Color.
 
 **Since:** 18
 
+**Decorator:** @ObservedV2
+
 <!--Device-unnamed-export declare class ProgressButtonV2Color--><!--Device-unnamed-export declare class ProgressButtonV2Color-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -14,6 +16,7 @@ Declare ProgressButtonV2 Color.
 import { ProgressButtonV2, ProgressButtonV2ColorOptions, ProgressButtonV2Color } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

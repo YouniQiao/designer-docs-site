@@ -14,6 +14,7 @@
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -36,7 +37,7 @@ Releases output resources. This API uses a promise to return the result.Model co
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 ## main
 

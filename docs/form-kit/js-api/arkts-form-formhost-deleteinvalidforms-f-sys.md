@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="deleteinvalidforms"></a>
 ## deleteInvalidForms
 
 ```TypeScript
@@ -28,8 +29,8 @@ Deletes invalid widgets from the list. This API uses an asynchronous callback to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of valid widget IDs. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the invalid widgets are deleted,**error** is undefined and **data** is the number of widgets deleted; otherwise, **error** is an error object. |
+| formIds | Array&lt;string&gt; | Yes | List of valid widget IDs. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the invalid widgets are deleted,**error** is undefined and **data** is the number of widgets deleted; otherwise, **error** is an error object. |
 
 **Error codes:**
 
@@ -43,6 +44,7 @@ Deletes invalid widgets from the list. This API uses an asynchronous callback to
 | [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
 
 
+<a id="deleteinvalidforms-1"></a>
 ## deleteInvalidForms
 
 ```TypeScript
@@ -65,13 +67,13 @@ Deletes invalid widgets from the list. This API uses a promise to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of valid widget IDs. |
+| formIds | Array&lt;string&gt; | Yes | List of valid widget IDs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of widgets deleted. |
+| Promise&lt;number&gt; | Promise used to return the number of widgets deleted. |
 
 **Error codes:**
 

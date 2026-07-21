@@ -6,6 +6,7 @@
 import { scan } from '@kit.BasicServicesKit';
 ```
 
+<a id="getpicturescanprogress"></a>
 ## getPictureScanProgress
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the progress of scanning a picture. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PictureScanProgress> | Promise used to return the progress. |
+| Promise&lt;PictureScanProgress&gt; | Promise used to return the progress. |
 
 **Error codes:**
 

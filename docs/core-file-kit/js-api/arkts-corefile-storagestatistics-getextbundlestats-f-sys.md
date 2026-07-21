@@ -6,6 +6,7 @@
 import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
+<a id="getextbundlestats"></a>
 ## getExtBundleStats
 
 ```TypeScript
@@ -37,7 +38,7 @@ Obtains the space usage of a specified user, system application bundle name, or 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ExtBundleStats> | Promise used to return the space usage of a specified user, system application bundle name, or system service name. |
+| Promise&lt;ExtBundleStats&gt; | Promise used to return the space usage of a specified user, system application bundle name, or system service name. |
 
 **Error codes:**
 

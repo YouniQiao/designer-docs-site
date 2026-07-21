@@ -14,6 +14,7 @@ Defines a TCPSocket server connection.
 import { socket } from '@kit.NetworkKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -34,7 +35,7 @@ Close the TCPSocketServer. Close the TCPSocketServer listening port.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ tcpServer.listen(listenAddr).then(() => {
 
 ```
 
+<a id="getlocaladdress"></a>
 ## getLocalAddress
 
 ```TypeScript
@@ -87,7 +89,7 @@ Obtains the local address of a TCPSocketServer connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetAddress> | The promise returned by the function. |
+| Promise&lt;NetAddress&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -121,6 +123,7 @@ tcpServer.listen(listenAddr).then(() => {
 
 ```
 
+<a id="getsocketfd"></a>
 ## getSocketFd
 
 ```TypeScript
@@ -141,7 +144,7 @@ Obtains the file descriptor of the TCPSocketServer.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returns the file descriptor of the TCP socket server. |
+| Promise&lt;number&gt; | The promise returns the file descriptor of the TCP socket server. |
 
 **Error codes:**
 
@@ -174,6 +177,7 @@ tcpServer.listen(listenAddr).then(() => {
 
 ```
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript
@@ -194,7 +198,7 @@ Obtains the status of the TCPSocketServer connection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SocketStateBase> | Yes | The callback of getState. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SocketStateBase&gt; | Yes | The callback of getState. |
 
 **Error codes:**
 
@@ -234,6 +238,7 @@ tcpServer.getState((err: BusinessError, data: socket.SocketStateBase) => {
 
 ```
 
+<a id="getstate-1"></a>
 ## getState
 
 ```TypeScript
@@ -254,7 +259,7 @@ Obtains the status of the TCPSocketServer connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SocketStateBase> | The promise returned by the function. |
+| Promise&lt;SocketStateBase&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -291,6 +296,7 @@ tcpServer.getState().then((data: socket.SocketStateBase) => {
 
 ```
 
+<a id="listen"></a>
 ## listen
 
 ```TypeScript
@@ -312,7 +318,7 @@ Binds the IP address and port number, the port number can be specified or random
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | address | [NetAddress](arkts-network-connection-netaddress-i.md) | Yes | Network address information {@link NetAddress}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of listen. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of listen. |
 
 **Error codes:**
 
@@ -348,6 +354,7 @@ tcpServer.listen(listenAddr, (err: BusinessError) => {
 
 ```
 
+<a id="listen-1"></a>
 ## listen
 
 ```TypeScript
@@ -374,7 +381,7 @@ Binds the IP address and port number, the port number can be specified or random
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -408,6 +415,7 @@ tcpServer.listen(listenAddr).then(() => {
 
 ```
 
+<a id="off"></a>
 ## off('connect')
 
 ```TypeScript
@@ -427,7 +435,7 @@ Cancels listening for connect events of the TCPSocketServer connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TCPSocketConnection> | No | The callback of off. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TCPSocketConnection&gt; | No | The callback of off. |
 
 **Error codes:**
 
@@ -465,6 +473,7 @@ tcpServer.listen(listenAddr, (err: BusinessError) => {
 
 ```
 
+<a id="off-1"></a>
 ## off('error')
 
 ```TypeScript
@@ -522,6 +531,7 @@ tcpServer.listen(listenAddr, (err: BusinessError) => {
 
 ```
 
+<a id="on"></a>
 ## on('connect')
 
 ```TypeScript
@@ -541,7 +551,7 @@ Listens for connect events of the TCPSocketServer connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' | Yes | Indicates Event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TCPSocketConnection> | Yes | The callback of on. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TCPSocketConnection&gt; | Yes | The callback of on. |
 
 **Error codes:**
 
@@ -575,6 +585,7 @@ tcpServer.listen(listenAddr, (err: BusinessError) => {
 
 ```
 
+<a id="on-1"></a>
 ## on('error')
 
 ```TypeScript
@@ -628,6 +639,7 @@ tcpServer.listen(listenAddr, (err: BusinessError) => {
 
 ```
 
+<a id="setextraoptions"></a>
 ## setExtraOptions
 
 ```TypeScript
@@ -649,7 +661,7 @@ Sets other attributes of the TCPSocketServer connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [TCPExtraOptions](arkts-network-socket-tcpextraoptions-i.md) | Yes | Parameters of the attributes {@link TCPExtraOptions}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setExtraOptions. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setExtraOptions. |
 
 **Error codes:**
 
@@ -705,6 +717,7 @@ tcpServer.setExtraOptions(tcpExtraOptions, (err: BusinessError) => {
 
 ```
 
+<a id="setextraoptions-1"></a>
 ## setExtraOptions
 
 ```TypeScript
@@ -731,7 +744,7 @@ Sets other attributes of the TCPSocketServer connection.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

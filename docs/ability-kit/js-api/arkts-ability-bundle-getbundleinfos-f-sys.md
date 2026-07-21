@@ -6,6 +6,7 @@
 import { bundle } from '@kit.AbilityKit';
 ```
 
+<a id="getbundleinfos"></a>
 ## getBundleInfos
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains all BundleInfo for a specified user in the system.This API uses an async
 | --- | --- | --- | --- |
 | bundleFlag | [BundleFlag](arkts-ability-bundle-bundleflag-e.md) | Yes | Flag used to specify the information contained in the returned bundle information object. Value range: see the bundle information related flags in [BundleFlag](arkts-ability-bundle-bundleflag-e.md). |
 | userId | number | Yes | User ID. Value range: greater than or equal to 0. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<BundleInfo>> | Yes | Callback used to return the result. If getBundleInfos is successful, **err** is **undefined**, and the BundleInfo of all bundles under the specified user as the input parameter at program startup.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;BundleInfo&gt;&gt; | Yes | Callback used to return the result. If getBundleInfos is successful, **err** is **undefined**, and the BundleInfo of all bundles under the specified user as the input parameter at program startup.Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -55,6 +56,7 @@ bundle.getBundleInfos(bundleFlag, userId, (err, data) => {
 ```
 
 
+<a id="getbundleinfos-1"></a>
 ## getBundleInfos
 
 ```TypeScript
@@ -82,7 +84,7 @@ Obtains all BundleInfo for the current user. This API uses an asynchronous callb
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleFlag | [BundleFlag](arkts-ability-bundle-bundleflag-e.md) | Yes | Flag used to specify the information contained in the returned bundle information object. Value range: see the bundle information related flags in [BundleFlag](arkts-ability-bundle-bundleflag-e.md). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<BundleInfo>> | Yes | Callback used to return the result. If getBundleInfos is successful, **err** is **undefined**, and all available BundleInfo as the input parameter at program startup. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;BundleInfo&gt;&gt; | Yes | Callback used to return the result. If getBundleInfos is successful, **err** is **undefined**, and all available BundleInfo as the input parameter at program startup. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -102,6 +104,7 @@ bundle.getBundleInfos(bundleFlag, (err, data) => {
 ```
 
 
+<a id="getbundleinfos-2"></a>
 ## getBundleInfos
 
 ```TypeScript
@@ -135,7 +138,7 @@ Obtains all BundleInfo for a specified user. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleInfo>> | Promise used to return all available BundleInfo. |
+| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Promise used to return all available BundleInfo. |
 
 **Example**
 

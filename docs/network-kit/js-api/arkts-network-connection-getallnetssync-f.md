@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getallnetssync"></a>
 ## getAllNetsSync
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the list of data networks that are activated.To call this method, you mu
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<NetHandle> | Returns data networks that are activated. |
+| Array&lt;NetHandle&gt; | Returns data networks that are activated. |
 
 **Error codes:**
 

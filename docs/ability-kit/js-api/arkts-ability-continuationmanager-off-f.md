@@ -6,6 +6,7 @@
 import { continuationManager } from '@kit.AbilityKit';
 ```
 
+<a id="off"></a>
 ## off('deviceSelected')
 
 ```TypeScript
@@ -62,6 +63,7 @@ try {
 ```
 
 
+<a id="off-1"></a>
 ## off('deviceUnselected')
 
 ```TypeScript
@@ -118,6 +120,7 @@ try {
 ```
 
 
+<a id="off-2"></a>
 ## off('deviceConnect')
 
 ```TypeScript
@@ -143,7 +146,7 @@ Unsubscribes from device connection events. This API uses an asynchronous callba
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceConnect' | Yes | Event type. The value is fixed at **deviceConnect**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ContinuationResult> | No | Callback invoked when a device is selected from the device list provided by the device selection module. This callback returns the device ID, type, and name. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ContinuationResult&gt; | No | Callback invoked when a device is selected from the device list provided by the device selection module. This callback returns the device ID, type, and name. |
 
 **Example**
 
@@ -159,6 +162,7 @@ continuationManager.off("deviceConnect", (data) => {
 ```
 
 
+<a id="off-3"></a>
 ## off('deviceDisconnect')
 
 ```TypeScript
@@ -184,7 +188,7 @@ Unsubscribes from device disconnection events. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceDisconnect' | Yes | Event type. The value is fixed at **deviceDisconnect**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Callback invoked when a device is unselected from the device list provided by the device selection module. This callback returns the device ID. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Callback invoked when a device is unselected from the device list provided by the device selection module. This callback returns the device ID. |
 
 **Example**
 

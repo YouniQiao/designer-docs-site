@@ -14,6 +14,7 @@ Describes the text embedding functions of the multi-modal embedding model.Chines
 import { intelligence } from '@kit.ArkData';
 ```
 
+<a id="getembedding"></a>
 ## getEmbedding
 
 ```TypeScript
@@ -38,7 +39,7 @@ Obtains the embedding vector of the given text.The model can process up to 512 c
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | The promise used to return the embedding result. |
+| Promise&lt;Array&lt;number&gt;&gt; | The promise used to return the embedding result. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ textEmbedding.getEmbedding(text)
 
 ```
 
+<a id="getembedding-1"></a>
 ## getEmbedding
 
 ```TypeScript
@@ -83,13 +85,13 @@ Obtains the embedding vector of a given batch of text.The model can process up t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| batchTexts | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | The input batch of texts of the embedding model. |
+| batchTexts | Array&lt;string&gt; | Yes | The input batch of texts of the embedding model. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Array<number>>> | The promise used to return the embedding result. |
+| Promise&lt;Array&lt;Array&lt;number&gt;&gt;&gt; | The promise used to return the embedding result. |
 
 **Error codes:**
 
@@ -116,6 +118,7 @@ textEmbedding.getEmbedding(batchTexts)
 
 ```
 
+<a id="loadmodel"></a>
 ## loadModel
 
 ```TypeScript
@@ -134,7 +137,7 @@ Loads this text embedding model. If the loading fails, an error code is returned
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -158,6 +161,7 @@ textEmbedding.loadModel()
 
 ```
 
+<a id="releasemodel"></a>
 ## releaseModel
 
 ```TypeScript
@@ -176,7 +180,7 @@ Releases this text embedding model. If the releasing fails, an error code is ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ In the following API examples, you must first use [getKeyboardDelegate](arkts-im
 import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
+<a id="exitcurrentinputtype"></a>
 ## exitCurrentInputType
 
 ```TypeScript
@@ -32,7 +33,7 @@ Exits this input type. This API can be called only by the preconfigured default 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ keyboardController.exitCurrentInputType((err: BusinessError) => {
 
 ```
 
+<a id="exitcurrentinputtype-1"></a>
 ## exitCurrentInputType
 
 ```TypeScript
@@ -74,7 +76,7 @@ Exits this input type. This API can be called only by the preconfigured default 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -96,6 +98,7 @@ keyboardController.exitCurrentInputType().then(() => {
 
 ```
 
+<a id="hide"></a>
 ## hide
 
 ```TypeScript
@@ -114,7 +117,7 @@ Hides the keyboard. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -137,6 +140,7 @@ keyboardController.hide((err: BusinessError) => {
 
 ```
 
+<a id="hide-1"></a>
 ## hide
 
 ```TypeScript
@@ -155,7 +159,7 @@ Hides the keyboard. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -176,6 +180,7 @@ keyboardController.hide().then(() => {
 
 ```
 
+<a id="hidekeyboard"></a>
 ## hideKeyboard
 
 ```TypeScript
@@ -188,7 +193,7 @@ Hides the keyboard. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** hide(callback:
+**Substitutes:** [hide(callback:](arkts-ime-inputmethodengine-keyboardcontroller-i.md#hide-1)
 
 <!--Device-KeyboardController-hideKeyboard(callback: AsyncCallback<void>): void--><!--Device-KeyboardController-hideKeyboard(callback: AsyncCallback<void>): void-End-->
 
@@ -198,7 +203,7 @@ Hides the keyboard. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -215,6 +220,7 @@ keyboardController.hideKeyboard((err: BusinessError) => {
 
 ```
 
+<a id="hidekeyboard-1"></a>
 ## hideKeyboard
 
 ```TypeScript
@@ -227,7 +233,7 @@ Hides the keyboard. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [hide()](arkts-ime-inputmethodengine-keyboardcontroller-i.md#hide-2)
+**Substitutes:** [hide()](arkts-ime-inputmethodengine-keyboardcontroller-i.md#hide-1)
 
 <!--Device-KeyboardController-hideKeyboard(): Promise<void>--><!--Device-KeyboardController-hideKeyboard(): Promise<void>-End-->
 
@@ -237,7 +243,7 @@ Hides the keyboard. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

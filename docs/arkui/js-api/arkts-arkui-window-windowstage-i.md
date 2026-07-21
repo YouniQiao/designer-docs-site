@@ -16,6 +16,7 @@ Before calling any of the following APIs, you must use [onWindowStageCreate()](.
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="createsubwindow"></a>
 ## createSubWindow
 
 ```TypeScript
@@ -44,7 +45,7 @@ Create sub window of the stage.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | Promise used to return the subwindow. |
+| Promise&lt;Window&gt; | Promise used to return the subwindow. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ Create sub window of the stage.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The subWindow has been created and can not be created again. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.<br>**Applicable version:** 9 and later |
 
+<a id="createsubwindow-1"></a>
 ## createSubWindow
 
 ```TypeScript
@@ -77,7 +79,7 @@ Create sub window of the stage.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | window name of sub window |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Window> | Yes | Callback used to return the subwindow. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Window&gt; | Yes | Callback used to return the subwindow. |
 
 **Error codes:**
 
@@ -87,6 +89,7 @@ Create sub window of the stage.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The subWindow has been created and can not be created again. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.<br>**Applicable version:** 9 and later |
 
+<a id="createsubwindowwithoptions"></a>
 ## createSubWindowWithOptions
 
 ```TypeScript
@@ -116,7 +119,7 @@ Create sub window of the stage.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | Promise used to return the subwindow. |
+| Promise&lt;Window&gt; | Promise used to return the subwindow. |
 
 **Error codes:**
 
@@ -127,6 +130,7 @@ Create sub window of the stage.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. The subWindow has been created and can not be created again. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. |
 
+<a id="getmainwindow"></a>
 ## getMainWindow
 
 ```TypeScript
@@ -149,7 +153,7 @@ Get main window of the stage.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | Callback used to return the subwindow. |
+| Promise&lt;Window&gt; | Callback used to return the subwindow. |
 
 **Error codes:**
 
@@ -158,6 +162,7 @@ Get main window of the stage.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. |
 
+<a id="getmainwindow-1"></a>
 ## getMainWindow
 
 ```TypeScript
@@ -180,7 +185,7 @@ Get main window of the stage.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Window> | Yes | Callback used to return the main window. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Window&gt; | Yes | Callback used to return the main window. |
 
 **Error codes:**
 
@@ -189,6 +194,7 @@ Get main window of the stage.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. |
 
+<a id="getmainwindowsync"></a>
 ## getMainWindowSync
 
 ```TypeScript
@@ -220,6 +226,7 @@ Get main window of the stage.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. |
 
+<a id="getsubwindow"></a>
 ## getSubWindow
 
 ```TypeScript
@@ -242,7 +249,7 @@ Get sub window of the stage.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Window>> | @throws { BusinessError } 1300002 - This window state is abnormal. |
+| Promise&lt;Array&lt;Window&gt;&gt; | @throws { BusinessError } 1300002 - This window state is abnormal. |
 
 **Error codes:**
 
@@ -251,6 +258,7 @@ Get sub window of the stage.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed.<br>**Applicable version:** 10 and later |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.<br>**Applicable version:** 9 and later |
 
+<a id="getsubwindow-1"></a>
 ## getSubWindow
 
 ```TypeScript
@@ -273,7 +281,7 @@ Get sub window of the stage.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Window>> | Yes | Callback used to return all the subwindows. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Window&gt;&gt; | Yes | Callback used to return all the subwindows. |
 
 **Error codes:**
 
@@ -282,6 +290,7 @@ Get sub window of the stage.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed.<br>**Applicable version:** 10 and later |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.<br>**Applicable version:** 9 and later |
 
+<a id="iswindowrectautosave"></a>
 ## isWindowRectAutoSave
 
 ```TypeScript
@@ -304,7 +313,7 @@ Whether the window supports the window rect auto-save.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result.The value true means that the window rect auto-save is supported, and false means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result.The value true means that the window rect auto-save is supported, and false means the opposite. |
 
 **Error codes:**
 
@@ -314,6 +323,7 @@ Whether the window supports the window rect auto-save.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.<br>**Applicable version:** 20 and later |
 
+<a id="loadcontent"></a>
 ## loadContent
 
 ```TypeScript
@@ -337,8 +347,8 @@ Loads the content of a page, with its path in the current project specified, to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the page to which the content will be loaded |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | Yes | The data object shared within the content instance loaded by the window |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | Yes | The data object shared within the content instance loaded by the window |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -348,6 +358,7 @@ Loads the content of a page, with its path in the current project specified, to 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.<br>**Applicable version:** 9 and later |
 
+<a id="loadcontent-1"></a>
 ## loadContent
 
 ```TypeScript
@@ -371,13 +382,13 @@ Loads the content of a page, with its path in the current project specified, to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | of the page to which the content will be loaded |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | No | The data object shared within the content instance loaded by the window |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | No | The data object shared within the content instance loaded by the window |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | @throws { BusinessError } 401 - Parameter error. Possible cause:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Invalid path parameter. |
+| Promise&lt;void&gt; | @throws { BusinessError } 401 - Parameter error. Possible cause:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Invalid path parameter. |
 
 **Error codes:**
 
@@ -387,6 +398,7 @@ Loads the content of a page, with its path in the current project specified, to 
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.<br>**Applicable version:** 9 and later |
 
+<a id="loadcontent-2"></a>
 ## loadContent
 
 ```TypeScript
@@ -410,7 +422,7 @@ Loads content from a page to this window stage. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | of the page to which the content will be loaded |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -420,6 +432,7 @@ Loads content from a page to this window stage. This API uses an asynchronous ca
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.<br>**Applicable version:** 9 and later |
 
+<a id="loadcontentbyname"></a>
 ## loadContentByName
 
 ```TypeScript
@@ -443,8 +456,8 @@ Loads the content of a [named route](../../ui/arkts-routing.md#named-route) page
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | name of the page to which the content will be loaded. |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | Yes | The data object shared within the content instance loaded by the window. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | Yes | The data object shared within the content instance loaded by the window. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -453,6 +466,7 @@ Loads the content of a [named route](../../ui/arkts-routing.md#named-route) page
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="loadcontentbyname-1"></a>
 ## loadContentByName
 
 ```TypeScript
@@ -476,7 +490,7 @@ Loads the content of a [named route](../../ui/arkts-routing.md#named-route) page
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | name of the page to which the content will be loaded. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -485,6 +499,7 @@ Loads the content of a [named route](../../ui/arkts-routing.md#named-route) page
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="loadcontentbyname-2"></a>
 ## loadContentByName
 
 ```TypeScript
@@ -508,13 +523,13 @@ Loads content by named router
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | name | string | Yes | name of the page to which the content will be loaded. |
-| storage | [LocalStorage](arkts-arkui-common-ts-ets-api-localstorage-c.md) | No | The data object shared within the content instance loaded by the window. |
+| storage | [LocalStorage](arkts-arkui-localstorage-c.md) | No | The data object shared within the content instance loaded by the window. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -523,6 +538,7 @@ Loads content by named router
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -546,7 +562,7 @@ Unsubscribes from the window stage lifecycle change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'windowStageEvent' | Yes | Event type. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowStageEventType> | No | Callback used to return the window stage lifecycle state. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowStageEventType&gt; | No | Callback used to return the window stage lifecycle state. |
 
 **Error codes:**
 
@@ -556,6 +572,7 @@ Unsubscribes from the window stage lifecycle change event.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. |
 
+<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -577,7 +594,7 @@ Unsubscribes from the window stage lifecycle change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'windowStageLifecycleEvent' | Yes | Event type. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowStageLifecycleEventType> | No | Callback used to |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowStageLifecycleEventType&gt; | No | Callback used to |
 
 **Error codes:**
 
@@ -587,6 +604,7 @@ Unsubscribes from the window stage lifecycle change event.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. |
 
+<a id="off-2"></a>
 ## off
 
 ```TypeScript
@@ -610,7 +628,7 @@ Window stage close callback off.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'windowStageClose' | Yes | The value is fixed at 'windowStageClose', indicating the window stage |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | No | Callback function requires a boolean return value to determine whether to |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | No | Callback function requires a boolean return value to determine whether to |
 
 **Error codes:**
 
@@ -620,6 +638,7 @@ Window stage close callback off.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -643,7 +662,7 @@ Subscribes to the window stage lifecycle change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'windowStageEvent' | Yes | Event type. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowStageEventType> | Yes | Callback used to return the window stage lifecycle state. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowStageEventType&gt; | Yes | Callback used to return the window stage lifecycle state. |
 
 **Error codes:**
 
@@ -653,6 +672,7 @@ Subscribes to the window stage lifecycle change event.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. |
 
+<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -674,7 +694,7 @@ Subscribes to the window stage lifecycle change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'windowStageLifecycleEvent' | Yes | Event type. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<WindowStageLifecycleEventType> | Yes | Callback used to |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;WindowStageLifecycleEventType&gt; | Yes | Callback used to |
 
 **Error codes:**
 
@@ -684,6 +704,7 @@ Subscribes to the window stage lifecycle change event.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. |
 
+<a id="on-2"></a>
 ## on
 
 ```TypeScript
@@ -707,7 +728,7 @@ Window stage close callback on.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventType | 'windowStageClose' | Yes | The value is fixed at 'windowStageClose', indicating the window stage |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback function requires a boolean return value to determine whether to |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback function requires a boolean return value to determine whether to |
 
 **Error codes:**
 
@@ -717,6 +738,7 @@ Window stage close callback on.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="releaseuicontent"></a>
 ## releaseUIContent
 
 ```TypeScript
@@ -737,7 +759,7 @@ Release the content of this window in the current project.This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value, indicating successful completion.Throws exception if window state is abnormal. |
+| Promise&lt;void&gt; | Promise that returns no value, indicating successful completion.Throws exception if window state is abnormal. |
 
 **Error codes:**
 
@@ -745,6 +767,7 @@ Release the content of this window in the current project.This API uses a promis
 | --- | --- |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
 
+<a id="removestartingwindow"></a>
 ## removeStartingWindow
 
 ```TypeScript
@@ -767,7 +790,7 @@ Remove the starting window, it must be used with configuration "enable.remove.st
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - The promise returned by the function. |
+| Promise&lt;void&gt; | - The promise returned by the function. |
 
 **Error codes:**
 
@@ -777,6 +800,7 @@ Remove the starting window, it must be used with configuration "enable.remove.st
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window stage is not created or destroyed;2. The main window is not created or destroyed;3. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setcustomdensity"></a>
 ## setCustomDensity
 
 ```TypeScript
@@ -814,6 +838,7 @@ If both this API and [setDefaultDensityEnabled(true)](arkts-arkui-window-windows
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. |
 
+<a id="setcustomdensity-1"></a>
 ## setCustomDensity
 
 ```TypeScript
@@ -847,6 +872,7 @@ If both this API and [setDefaultDensityEnabled(true)](arkts-arkui-window-windows
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The main window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.Possible cause: The window stage is not created or destroyed. |
 
+<a id="setdefaultdensityenabled"></a>
 ## setDefaultDensityEnabled
 
 ```TypeScript
@@ -884,6 +910,7 @@ When the default density is not used, if [setCustomDensity()](arkts-arkui-window
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The main window is not created or destroyed. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal.Possible cause: The window stage is not created or destroyed. |
 
+<a id="setsupportedwindowmodes"></a>
 ## setSupportedWindowModes
 
 ```TypeScript
@@ -906,13 +933,13 @@ Sets the supported window modes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| supportedWindowModes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<bundleManager.SupportWindowMode> | Yes | The supported modes of window. |
+| supportedWindowModes | Array&lt;bundleManager.SupportWindowMode&gt; | Yes | The supported modes of window. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value |
+| Promise&lt;void&gt; | Promise that returns no value |
 
 **Error codes:**
 
@@ -922,6 +949,7 @@ Sets the supported window modes.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. Possible cause:1. The window is not created or destroyed.2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setsupportedwindowmodes-1"></a>
 ## setSupportedWindowModes
 
 ```TypeScript
@@ -942,14 +970,14 @@ Sets the supported window modes of the main window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| supportedWindowModes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<bundleManager.SupportWindowMode> | Yes | The supported modes of window. |
+| supportedWindowModes | Array&lt;bundleManager.SupportWindowMode&gt; | Yes | The supported modes of window. |
 | grayOutMaximizeButton | boolean | Yes | Whether to gray out the window maximize button.The value true means to gray out the button, and false means the opposite. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -960,6 +988,7 @@ Sets the supported window modes of the main window.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause:1. Invalid parameter range.2. Invalid parameter length.3. Incorrect parameter format. |
 
+<a id="setwindowmodal"></a>
 ## setWindowModal
 
 ```TypeScript
@@ -988,7 +1017,7 @@ Set the application modality of the windowStage.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1000,6 +1029,7 @@ Set the application modality of the windowStage.
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300005](../errorcode-window.md#1300005-abnormal-windowstage) | This window stage is abnormal. Possible cause:The window is not created or destroyed.<br>**Applicable version:** 20 and later |
 
+<a id="setwindowrectautosave"></a>
 ## setWindowRectAutoSave
 
 ```TypeScript
@@ -1028,7 +1058,7 @@ Set to automatically save the window rect.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1039,6 +1069,7 @@ Set to automatically save the window rect.
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
+<a id="setwindowrectautosave-1"></a>
 ## setWindowRectAutoSave
 
 ```TypeScript
@@ -1068,7 +1099,7 @@ Set to automatically save the window rect and whether to enable specifiedFlag.Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

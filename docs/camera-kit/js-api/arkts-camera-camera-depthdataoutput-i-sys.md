@@ -18,6 +18,7 @@ Implements depth data output. It inherits from [CameraOutput](arkts-camera-camer
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="off"></a>
 ## off('depthDataAvailable')
 
 ```TypeScript
@@ -39,7 +40,7 @@ Unsubscribes from depth data availability events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'depthDataAvailable' | Yes | Event type. The value is fixed at **'depthDataAvailable'**. The event can be listened for when a depthDataOutput instance is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DepthData> | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DepthData&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ function unRegisterDepthDataAvailable(depthDataOutput: camera.DepthDataOutput): 
 
 ```
 
+<a id="off-1"></a>
 ## off('error')
 
 ```TypeScript
@@ -103,6 +105,7 @@ function unregisterDepthDataOutputError(depthDataOutput: camera.DepthDataOutput)
 
 ```
 
+<a id="on"></a>
 ## on('depthDataAvailable')
 
 ```TypeScript
@@ -128,7 +131,7 @@ Subscribes to depth data availability events. This API uses an asynchronous call
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'depthDataAvailable' | Yes | Event type. The value is fixed at **'depthDataAvailable'**. The event can be listened for when a depthDataOutput instance is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DepthData> | Yes | Callback used to listen for depth data. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DepthData&gt; | Yes | Callback used to listen for depth data. |
 
 **Error codes:**
 
@@ -154,6 +157,7 @@ function registerDepthDataAvailable(depthDataOutput: camera.DepthDataOutput): vo
 
 ```
 
+<a id="on-1"></a>
 ## on('error')
 
 ```TypeScript
@@ -202,6 +206,7 @@ function registerDepthDataOutputError(depthDataOutput: camera.DepthDataOutput): 
 
 ```
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -222,7 +227,7 @@ Starts depth data output. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -247,6 +252,7 @@ function startDepthDataOutput(depthDataOutput: camera.DepthDataOutput): void {
 
 ```
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -267,7 +273,7 @@ Stops depth data output. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

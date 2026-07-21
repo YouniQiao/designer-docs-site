@@ -18,6 +18,7 @@ Provides APIs for managing file or directory attribute information.
 import { fileAccess } from '@kit.CoreFileKit';
 ```
 
+<a id="listfile"></a>
 ## listFile
 
 ```TypeScript
@@ -126,6 +127,7 @@ try {
 
 ```
 
+<a id="scanfile"></a>
 ## scanFile
 
 ```TypeScript

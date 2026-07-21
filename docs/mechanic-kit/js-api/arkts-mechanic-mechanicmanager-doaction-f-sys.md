@@ -6,6 +6,7 @@
 import { mechanicManager } from '@kit.MechanicKit';
 ```
 
+<a id="doaction"></a>
 ## doAction
 
 ```TypeScript
@@ -33,7 +34,7 @@ Execute an action sequence.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result> | Promise that returns the execution result. |
+| Promise&lt;Result&gt; | Promise that returns the execution result. |
 
 **Error codes:**
 

@@ -22,7 +22,7 @@ bundleNames?: Array<string>
 
 Bundle names of the applications whose notifications to subscribe to. If this parameter is not specified, the subscription defaults to notifications from all applications.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 7
 
@@ -148,7 +148,7 @@ slotTypes?: Array<notificationManager.SlotType>
 
 Types of the notification slots. If this parameter is not specified, the subscription defaults to notifications of all slot types.
 
-**Type:** Array<notificationManager.SlotType>
+**Type:** Array&lt;notificationManager.SlotType&gt;
 
 **Since:** 18
 

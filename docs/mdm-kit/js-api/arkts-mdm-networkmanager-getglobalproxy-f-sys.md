@@ -6,6 +6,7 @@
 import { networkManager } from '@kit.MDMKit';
 ```
 
+<a id="getglobalproxy"></a>
 ## getGlobalProxy
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the global network proxy. This API uses an asynchronous callback to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<connection.HttpProxy> | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;connection.HttpProxy&gt; | Yes | Callback invoked to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ networkManager.getGlobalProxy(wantTemp, (err, result) => {
 ```
 
 
+<a id="getglobalproxy-1"></a>
 ## getGlobalProxy
 
 ```TypeScript
@@ -104,7 +106,7 @@ Obtains the global network proxy. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<connection.HttpProxy> | Promise used to return the global HTTP proxy information obtained. |
+| Promise&lt;connection.HttpProxy&gt; | Promise used to return the global HTTP proxy information obtained. |
 
 **Error codes:**
 

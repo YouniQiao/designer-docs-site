@@ -14,6 +14,7 @@ Defines the display order of a dialog box.
 import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 
+<a id="clamp"></a>
 ## clamp
 
 ```TypeScript
@@ -44,6 +45,7 @@ Creates a dialog box level with the specified order.
 | --- | --- |
 | [LevelOrder](arkts-arkui-promptaction-levelorder-c.md) | Current instance. |
 
+<a id="getorder"></a>
 ## getOrder
 
 ```TypeScript

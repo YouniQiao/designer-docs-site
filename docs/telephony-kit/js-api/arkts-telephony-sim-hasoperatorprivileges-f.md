@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="hasoperatorprivileges"></a>
 ## hasOperatorPrivileges
 
 ```TypeScript
@@ -25,7 +26,7 @@ Checks whether your application (the caller) has been granted the operator permi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from {@code 0} to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback of hasOperatorPrivileges.Returns {@code true} if your application has been granted the operator permissions; returns {@code false} otherwise.If no SIM card is inserted or the SIM card is deactivated will be return {@code false}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback of hasOperatorPrivileges.Returns {@code true} if your application has been granted the operator permissions; returns {@code false} otherwise.If no SIM card is inserted or the SIM card is deactivated will be return {@code false}. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ sim.hasOperatorPrivileges(0, (err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="hasoperatorprivileges-1"></a>
 ## hasOperatorPrivileges
 
 ```TypeScript
@@ -74,7 +76,7 @@ Checks whether your application (the caller) has been granted the operator permi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if your application has been granted the operator permissions;returns {@code false} otherwise. If no SIM card is inserted or the SIM card is deactivated will be return {@code false}. |
+| Promise&lt;boolean&gt; | Returns {@code true} if your application has been granted the operator permissions;returns {@code false} otherwise. If no SIM card is inserted or the SIM card is deactivated will be return {@code false}. |
 
 **Error codes:**
 

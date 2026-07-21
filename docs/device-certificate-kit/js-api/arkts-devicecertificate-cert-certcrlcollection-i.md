@@ -14,6 +14,7 @@ Provides APIs for locating certificates or CRLs in a **CertCRLCollection** objec
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="selectcrls"></a>
 ## selectCRLs
 
 ```TypeScript
@@ -40,7 +41,7 @@ Selects CRLs that match the specified parameters. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<X509CRL>> | Promise used to return the matched CRLs. |
+| Promise&lt;Array&lt;X509CRL&gt;&gt; | Promise used to return the matched CRLs. |
 
 **Error codes:**
 
@@ -150,6 +151,7 @@ async function selectCRLs() {
 
 ```
 
+<a id="selectcrls-1"></a>
 ## selectCRLs
 
 ```TypeScript
@@ -171,7 +173,7 @@ Selects CRLs that match the specified parameters. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | param | [X509CRLMatchParameters](arkts-devicecertificate-cert-x509crlmatchparameters-i.md) | Yes | Parameters used to match the CRLs. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<X509CRL>> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the matched CRLs obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;X509CRL&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the matched CRLs obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -281,6 +283,7 @@ async function selectCRLs() {
 
 ```
 
+<a id="selectcerts"></a>
 ## selectCerts
 
 ```TypeScript
@@ -307,7 +310,7 @@ Selects certificates that match the specified parameters. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<X509Cert>> | Promise used to return the matched certificates. |
+| Promise&lt;Array&lt;X509Cert&gt;&gt; | Promise used to return the matched certificates. |
 
 **Error codes:**
 
@@ -381,6 +384,7 @@ async function selectCerts() {
 
 ```
 
+<a id="selectcerts-1"></a>
 ## selectCerts
 
 ```TypeScript
@@ -402,7 +406,7 @@ Selects certificates that match the specified parameters. This API uses an async
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | param | [X509CertMatchParameters](arkts-devicecertificate-cert-x509certmatchparameters-i.md) | Yes | Parameters used to match the certificates. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<X509Cert>> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the matched certificates obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;X509Cert&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**, and **data** is the matched certificates obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

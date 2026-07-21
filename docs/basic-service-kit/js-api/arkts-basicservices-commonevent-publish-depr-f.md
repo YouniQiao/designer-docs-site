@@ -1,5 +1,6 @@
 # publish
 
+<a id="publish"></a>
 ## publish
 
 ```TypeScript
@@ -12,7 +13,7 @@ Publishes a common event. This API uses an asynchronous callback to return the r
 
 **Deprecated since:** 9
 
-**Substitutes:** publish(event:
+**Substitutes:** [publish(event:](arkts-basicservices-commoneventmanager-publish-f.md#publish-1)
 
 <!--Device-commonEvent-function publish(event: string, callback: AsyncCallback<void>): void--><!--Device-commonEvent-function publish(event: string, callback: AsyncCallback<void>): void-End-->
 
@@ -23,7 +24,7 @@ Publishes a common event. This API uses an asynchronous callback to return the r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | string | Yes | Name of the common event to publish. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -45,6 +46,7 @@ commonEvent.publish("event", publishCallBack);
 ```
 
 
+<a id="publish-1"></a>
 ## publish
 
 ```TypeScript
@@ -57,7 +59,7 @@ Publishes a common event with given properties. This API uses an asynchronous ca
 
 **Deprecated since:** 9
 
-**Substitutes:** publish(event:
+**Substitutes:** [publish(event:](arkts-basicservices-commoneventmanager-publish-f.md#publish-1)
 
 <!--Device-commonEvent-function publish(event: string, options: CommonEventPublishData, callback: AsyncCallback<void>): void--><!--Device-commonEvent-function publish(event: string, options: CommonEventPublishData, callback: AsyncCallback<void>): void-End-->
 
@@ -69,7 +71,7 @@ Publishes a common event with given properties. This API uses an asynchronous ca
 | --- | --- | --- | --- |
 | event | string | Yes | Name of the common event to publish. |
 | options | [CommonEventPublishData](arkts-basicservices-commoneventpublishdata-commoneventpublishdata-i.md) | Yes | Properties of the common event to publish. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 

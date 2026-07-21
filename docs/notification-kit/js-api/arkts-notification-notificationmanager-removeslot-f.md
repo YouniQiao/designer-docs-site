@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="removeslot"></a>
 ## removeSlot
 
 ```TypeScript
@@ -27,7 +28,7 @@ After deletion, the corresponding type of notification slot and its configuratio
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotType | [SlotType](arkts-notification-notificationmanager-slottype-e.md) | Yes | Notification slot type, such as social communication, service reminder,and content consultation. The created slot type must be passed in; otherwise, the deletion operation is invalid. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ notificationManager.removeSlot(slotType, removeSlotCallback);
 ```
 
 
+<a id="removeslot-1"></a>
 ## removeSlot
 
 ```TypeScript
@@ -83,7 +85,7 @@ After deletion, the corresponding notification slot and its configuration will b
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

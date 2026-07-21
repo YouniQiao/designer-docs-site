@@ -1,6 +1,6 @@
 # Stream
 
-Provides API for stream operations. Before calling any API of **Stream**, you need to create a **Stream** instance by using [fileIo.createStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatestream) or [fileIo.fdopenStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiofdopenstream).
+Provides API for stream operations. Before calling any API of **Stream**, you need to create a **Stream** instance by using [fileIo.createStream](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatestream) or [fileIo.fdopenStream](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileiofdopenstream).
 
 **Since:** 9
 
@@ -14,6 +14,7 @@ Provides API for stream operations. Before calling any API of **Stream**, you ne
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -34,7 +35,7 @@ Closes the file stream. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ stream.close().then(() => {
 
 ```
 
+<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -82,7 +84,7 @@ Closes the file stream. This API uses an asynchronous callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked immediately after the stream is closed. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked immediately after the stream is closed. |
 
 **Error codes:**
 
@@ -112,6 +114,7 @@ stream.close((err: BusinessError) => {
 
 ```
 
+<a id="closesync"></a>
 ## closeSync
 
 ```TypeScript
@@ -148,6 +151,7 @@ stream.closeSync();
 
 ```
 
+<a id="flush"></a>
 ## flush
 
 ```TypeScript
@@ -168,7 +172,7 @@ Flushes the file stream. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -203,6 +207,7 @@ stream.flush().then(() => {
 
 ```
 
+<a id="flush-1"></a>
 ## flush
 
 ```TypeScript
@@ -223,7 +228,7 @@ Flushes the file stream. This API uses an asynchronous callback to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -260,6 +265,7 @@ stream.flush((err: BusinessError) => {
 
 ```
 
+<a id="flushsync"></a>
 ## flushSync
 
 ```TypeScript
@@ -303,6 +309,7 @@ stream.close();
 
 ```
 
+<a id="read"></a>
 ## read
 
 ```TypeScript
@@ -332,14 +339,14 @@ Reads data from a stream file. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
 | options | [ReadOptions](arkts-corefile-file-fs-readoptions-i.md) | No | The options are as follows:<br>- **length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length.<br>- **offset** (number):position of the data to read in the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>**Since:** 11 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the data read, in bytes. |
+| Promise&lt;number&gt; | Promise used to return the data read, in bytes. |
 
 **Error codes:**
 
@@ -380,6 +387,7 @@ stream.read(arrayBuffer, readOption).then((readLen: number) => {
 
 ```
 
+<a id="read-1"></a>
 ## read
 
 ```TypeScript
@@ -400,8 +408,8 @@ Reads data from a stream file. This API uses an asynchronous callback to return 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. The callback returns the data read,in bytes. |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. The callback returns the data read,in bytes. |
 
 **Error codes:**
 
@@ -438,6 +446,7 @@ stream.read(arrayBuffer, (err: BusinessError, readLen: number) => {
 
 ```
 
+<a id="read-2"></a>
 ## read
 
 ```TypeScript
@@ -470,9 +479,9 @@ Reads data from a stream file. This API uses an asynchronous callback to return 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
 | options | [ReadOptions](arkts-corefile-file-fs-readoptions-i.md) | Yes | The options are as follows:<br>- **length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length.<br>- **offset** (number):position of the data to read in the file, in bytes. This parameter is optional. By default, data is read from the current position.<br>**Since:** 11 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. The callback returns the data read,in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. The callback returns the data read,in bytes. |
 
 **Error codes:**
 
@@ -514,6 +523,7 @@ stream.read(arrayBuffer, readOption, (err: BusinessError, readLen: number) => {
 
 ```
 
+<a id="readsync"></a>
 ## readSync
 
 ```TypeScript
@@ -543,7 +553,7 @@ Reads data from a stream file. This API returns the result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer used to store the file read. |
+| buffer | ArrayBuffer | Yes | Buffer used to store the file read. |
 | options | [ReadOptions](arkts-corefile-file-fs-readoptions-i.md) | No | The options are as follows:<br>- **length** (number): length of the data to read, in bytes. This parameter is optional. The default value is the buffer length.<br>- **offset** (number):position of the data to read in the file, in bytes. This parameter is optional. By default, data is read from the current position.<br><br>**Since:** 11 |
 
 **Return value:**
@@ -584,6 +594,7 @@ stream.close();
 
 ```
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -620,7 +631,7 @@ Writes data to a stream file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the length of the data written, in bytes. |
+| Promise&lt;number&gt; | Promise used to return the length of the data written, in bytes. |
 
 **Error codes:**
 
@@ -661,6 +672,7 @@ stream.write("hello, world", writeOption).then((number: number) => {
 
 ```
 
+<a id="write-1"></a>
 ## write
 
 ```TypeScript
@@ -682,7 +694,7 @@ Writes data to a stream file. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. The callback returns the length of the data written, in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. The callback returns the length of the data written, in bytes. |
 
 **Error codes:**
 
@@ -721,6 +733,7 @@ stream.write("hello, world", (err: BusinessError, bytesWritten: number) => {
 
 ```
 
+<a id="write-2"></a>
 ## write
 
 ```TypeScript
@@ -755,7 +768,7 @@ Writes data to a stream file. This API uses an asynchronous callback to return t
 | --- | --- | --- | --- |
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
 | options | [WriteOptions](arkts-corefile-file-fs-writeoptions-i.md) | Yes | The options are as follows:<br>- **length** (number): length of the data to write, in bytes. This parameter is optional. The default value is the buffer length.<br>- **offset** (number):start position to write the data in the file, in bytes. This parameter is optional. By default, data is written from the current position.<br>- **encoding** (string): format of the data to be encoded when the data is a string. The default value is **'utf-8'**, which is the only value supported.<br>**Since:** 11 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. The callback returns the length of the data written, in bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. The callback returns the length of the data written, in bytes. |
 
 **Error codes:**
 
@@ -800,6 +813,7 @@ stream.write("hello, world", writeOption, (err: BusinessError, bytesWritten: num
 
 ```
 
+<a id="writesync"></a>
 ## writeSync
 
 ```TypeScript

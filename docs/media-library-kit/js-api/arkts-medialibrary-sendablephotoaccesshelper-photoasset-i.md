@@ -16,6 +16,7 @@ Provides APIs for encapsulating file asset attributes.
 import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="commitmodify"></a>
 ## commitModify
 
 ```TypeScript
@@ -38,7 +39,7 @@ Commits the modification on the file metadata to the database. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -80,6 +81,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="converttophotoasset"></a>
 ## convertToPhotoAsset
 
 ```TypeScript
@@ -134,6 +136,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -198,6 +201,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="getthumbnail"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -224,7 +228,7 @@ Obtains the file thumbnail of the given size. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise used to return the PixelMap of the thumbnail. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the PixelMap of the thumbnail. |
 
 **Error codes:**
 
@@ -268,6 +272,7 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -287,7 +292,7 @@ Sets a **PhotoAsset** member parameter.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | member | string | Yes | Name of the parameter to set, for example,[PhotoKeys](arkts-medialibrary-photoaccesshelper-photokeys-e.md).TITLE. The string length ranges from 1 to 255. |
-| value | string | Yes | Value to set. Only the value of [PhotoKeys](arkts-medialibrary-photoaccesshelper-photokeys-e.md).TITLE can be changed. The title must meet the following requirements:<br>- It must not contain a file name extension.<br>- The string length ranges from 1 to 255. (The asset file name is in the format of title + file name extension.)<br>- It must not contain any invalid characters, which are:\ / : * ? " ' ` &lt; &gt; \| { } [ ] |
+| value | string | Yes | Value to set. Only the value of [PhotoKeys](arkts-medialibrary-photoaccesshelper-photokeys-e.md).TITLE can be changed. The title must meet the following requirements:<br>- It must not contain a file name extension.<br>- The string length ranges from 1 to 255. (The asset file name is in the format of title + file name extension.)<br>- It must not contain any invalid characters, which are:\ / : * ? " ' ` < > \| { } [ ] |
 
 **Error codes:**
 

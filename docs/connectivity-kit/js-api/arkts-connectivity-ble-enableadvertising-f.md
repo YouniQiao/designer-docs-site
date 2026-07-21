@@ -6,6 +6,7 @@
 import { ble } from '@kit.ConnectivityKit';
 ```
 
+<a id="enableadvertising"></a>
 ## enableAdvertising
 
 ```TypeScript
@@ -29,7 +30,7 @@ Enable the advertising with a specific ID temporarily.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | advertisingEnableParams | [AdvertisingEnableParams](arkts-connectivity-ble-advertisingenableparams-i.md) | Yes | Indicates the params for enable advertising. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback result. |
 
 **Error codes:**
 
@@ -117,6 +118,7 @@ try {
 ```
 
 
+<a id="enableadvertising-1"></a>
 ## enableAdvertising
 
 ```TypeScript
@@ -145,7 +147,7 @@ Enable the advertising with a specific ID temporarily.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

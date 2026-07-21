@@ -1,6 +1,6 @@
 # LoopObserver
 
-The module defines an observer to listen for event processing timeout. It can be used as an input parameter in [ErrorManager.on](arkts-ability-errormanager-on-f.md#on-2)to listen for the event processing timeout of the current application's main thread.
+The module defines an observer to listen for event processing timeout. It can be used as an input parameter in [ErrorManager.on](./../@ohos.app.ability.errorManager:errorManager.on(type: 'loopObserver', timeout: number, observer: LoopObserver))to listen for the event processing timeout of the current application's main thread.
 
 **Since:** 12
 
@@ -8,6 +8,7 @@ The module defines an observer to listen for event processing timeout. It can be
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="onlooptimeout"></a>
 ## onLoopTimeOut
 
 ```TypeScript

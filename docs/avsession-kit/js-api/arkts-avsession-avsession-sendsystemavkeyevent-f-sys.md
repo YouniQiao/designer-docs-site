@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="sendsystemavkeyevent"></a>
 ## sendSystemAVKeyEvent
 
 ```TypeScript
@@ -28,8 +29,8 @@ Send system media key event.The system automatically selects the recipient.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-common-keyevent-i.md) | Yes | The key event to be sent |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| event | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-keyevent-i.md) | Yes | The key event to be sent |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ avSession.sendSystemAVKeyEvent(event, () => {
 ```
 
 
+<a id="sendsystemavkeyevent-1"></a>
 ## sendSystemAVKeyEvent
 
 ```TypeScript
@@ -78,13 +80,13 @@ Send system media key event.The system automatically selects the recipient.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-common-keyevent-i.md) | Yes | The key event to be sent |
+| event | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-keyevent-i.md) | Yes | The key event to be sent |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 

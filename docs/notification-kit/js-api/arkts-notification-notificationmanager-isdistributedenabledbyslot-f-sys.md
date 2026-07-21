@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="isdistributedenabledbyslot"></a>
 ## isDistributedEnabledBySlot
 
 ```TypeScript
@@ -35,7 +36,7 @@ Queries whether notifications of a specified slot can be sent to devices of a sp
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that cross-device collaboration is supported, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that cross-device collaboration is supported, and **false** means the opposite. |
 
 **Error codes:**
 

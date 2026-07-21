@@ -6,6 +6,7 @@
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="createaudioloopback"></a>
 ## createAudioLoopback
 
 ```TypeScript
@@ -30,7 +31,7 @@ Creates an <b>AudioLoopback</b> instance, which provides low-latency in-ear moni
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioLoopback> | Promise used to return the <b>AudioLoopback</b> instance. |
+| Promise&lt;AudioLoopback&gt; | Promise used to return the <b>AudioLoopback</b> instance. |
 
 **Error codes:**
 

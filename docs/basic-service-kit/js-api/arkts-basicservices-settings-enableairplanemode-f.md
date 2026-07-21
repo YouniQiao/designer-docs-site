@@ -6,6 +6,7 @@
 import { settings } from '@kit.BasicServicesKit';
 ```
 
+<a id="enableairplanemode"></a>
 ## enableAirplaneMode
 
 ```TypeScript
@@ -27,7 +28,7 @@ Enables or disables airplane mode.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Specifies whether to enable airplane mode. The value {@code true} means to enable airplane mode, and {@code false} means to disable airplane mode. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of enableAirplaneMode result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of enableAirplaneMode result. |
 
 **Example**
 
@@ -44,6 +45,7 @@ settings.enableAirplaneMode(isEnabled, (err:Error) => {
 ```
 
 
+<a id="enableairplanemode-1"></a>
 ## enableAirplaneMode
 
 ```TypeScript
@@ -70,7 +72,7 @@ Enables or disables airplane mode.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Return Promise. |
+| Promise&lt;void&gt; | - Return Promise. |
 
 **Example**
 

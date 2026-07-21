@@ -16,6 +16,7 @@ ControlCenter inherits from [ControlCenterQuery](arkts-camera-camera-controlcent
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="enablecontrolcenter"></a>
 ## enableControlCenter
 
 ```TypeScript

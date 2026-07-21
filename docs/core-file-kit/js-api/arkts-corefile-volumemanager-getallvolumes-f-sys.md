@@ -6,6 +6,7 @@
 import { volumeManager } from '@kit.CoreFileKit';
 ```
 
+<a id="getallvolumes"></a>
 ## getAllVolumes
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains information about all volumes of this external storage device. This API 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Volume>> | Yes | Callback used to return information about all available volumes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Volume&gt;&gt; | Yes | Callback used to return information about all available volumes. |
 
 **Error codes:**
 
@@ -41,6 +42,7 @@ Obtains information about all volumes of this external storage device. This API 
 | 13900042 | Unknown error. |
 
 
+<a id="getallvolumes-1"></a>
 ## getAllVolumes
 
 ```TypeScript
@@ -63,7 +65,7 @@ Obtains information about all volumes of this external storage device. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Volume>> | Promise used to return the information about all available volume devices. |
+| Promise&lt;Array&lt;Volume&gt;&gt; | Promise used to return the information about all available volume devices. |
 
 **Error codes:**
 

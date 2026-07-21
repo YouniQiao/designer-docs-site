@@ -14,6 +14,7 @@ Provides APIs for managing OS accounts.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="checkmultiosaccountenabled"></a>
 ## checkMultiOsAccountEnabled
 
 ```TypeScript
@@ -32,7 +33,7 @@ Checks whether multiple OS accounts are supported. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means multiple OS accounts are supported;the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means multiple OS accounts are supported;the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ try {
 
 ```
 
+<a id="checkmultiosaccountenabled-1"></a>
 ## checkMultiOsAccountEnabled
 
 ```TypeScript
@@ -80,7 +82,7 @@ Checks whether multiple OS accounts are supported. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means multiple OS accounts are supported;the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means multiple OS accounts are supported;the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -107,6 +109,7 @@ try {
 
 ```
 
+<a id="checkosaccountactivated"></a>
 ## checkOsAccountActivated
 
 ```TypeScript
@@ -135,7 +138,7 @@ Checks whether an OS account is activated. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -172,6 +175,7 @@ try {
 
 ```
 
+<a id="checkosaccountactivated-1"></a>
 ## checkOsAccountActivated
 
 ```TypeScript
@@ -205,7 +209,7 @@ Checks whether an OS account is activated. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -240,6 +244,7 @@ try {
 
 ```
 
+<a id="checkosaccountconstraintenabled"></a>
 ## checkOsAccountConstraintEnabled
 
 ```TypeScript
@@ -268,8 +273,8 @@ Checks whether the specified constraint is enabled for an OS account. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
+| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -307,6 +312,7 @@ try {
 
 ```
 
+<a id="checkosaccountconstraintenabled-1"></a>
 ## checkOsAccountConstraintEnabled
 
 ```TypeScript
@@ -335,13 +341,13 @@ Checks whether the specified constraint is enabled for an OS account. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
+| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -377,6 +383,7 @@ try {
 
 ```
 
+<a id="checkosaccounttestable"></a>
 ## checkOsAccountTestable
 
 ```TypeScript
@@ -395,7 +402,7 @@ Checks whether this OS account is a test account. This API uses an asynchronous 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the account is a test account; the value **false** means the opposite;the default value is **false**. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the account is a test account; the value **false** means the opposite;the default value is **false**. |
 
 **Error codes:**
 
@@ -425,6 +432,7 @@ try {
 
 ```
 
+<a id="checkosaccounttestable-1"></a>
 ## checkOsAccountTestable
 
 ```TypeScript
@@ -443,7 +451,7 @@ Checks whether this OS account is a test account. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the account is a test account; the value **false** means the opposite;the default value is **false**. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the account is a test account; the value **false** means the opposite;the default value is **false**. |
 
 **Error codes:**
 
@@ -470,6 +478,7 @@ try {
 
 ```
 
+<a id="checkosaccountverified"></a>
 ## checkOsAccountVerified
 
 ```TypeScript
@@ -497,7 +506,7 @@ Checks whether this OS account is unlocked. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -526,6 +535,7 @@ try {
 
 ```
 
+<a id="checkosaccountverified-1"></a>
 ## checkOsAccountVerified
 
 ```TypeScript
@@ -553,7 +563,7 @@ Checks whether this OS account has been verified. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -580,6 +590,7 @@ try {
 
 ```
 
+<a id="checkosaccountverified-2"></a>
 ## checkOsAccountVerified
 
 ```TypeScript
@@ -608,7 +619,7 @@ Checks whether an OS account has been verified. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -643,6 +654,7 @@ try {
 
 ```
 
+<a id="checkosaccountverified-3"></a>
 ## checkOsAccountVerified
 
 ```TypeScript
@@ -676,7 +688,7 @@ Checks whether an OS account has been verified. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -709,6 +721,7 @@ try {
 
 ```
 
+<a id="getactivatedosaccountlocalids"></a>
 ## getActivatedOsAccountLocalIds
 
 ```TypeScript
@@ -727,7 +740,7 @@ Obtains information about all activated OS accounts. This API uses an asynchrono
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is a list of activated OS accounts.Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is a list of activated OS accounts.Otherwise, **data** is an error object. |
 
 **Error codes:**
 
@@ -760,6 +773,7 @@ try {
 
 ```
 
+<a id="getactivatedosaccountlocalids-1"></a>
 ## getActivatedOsAccountLocalIds
 
 ```TypeScript
@@ -778,7 +792,7 @@ Obtains information about all activated OS accounts. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the information about all activated OS accounts. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the information about all activated OS accounts. |
 
 **Error codes:**
 
@@ -805,6 +819,7 @@ try {
 
 ```
 
+<a id="getcreatedosaccountscount"></a>
 ## getCreatedOsAccountsCount
 
 ```TypeScript
@@ -822,7 +837,7 @@ Obtains the number of OS accounts created. This API uses an asynchronous callbac
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountCount(callback:
+**Substitutes:** [getOsAccountCount(callback:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -834,7 +849,7 @@ Obtains the number of OS accounts created. This API uses an asynchronous callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the number of created OS accounts.If the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the number of created OS accounts.If the operation fails, **err** is an error object. |
 
 **Example**
 
@@ -852,6 +867,7 @@ accountManager.getCreatedOsAccountsCount((err: BusinessError, count: number)=>{
 
 ```
 
+<a id="getcreatedosaccountscount-1"></a>
 ## getCreatedOsAccountsCount
 
 ```TypeScript
@@ -863,13 +879,13 @@ Obtains the number of OS accounts created. This API uses a promise to return the
 > **NOTE**  
 >  
 > This API is supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [getOsAccountCount](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-2) instead.
+> [getOsAccountCount](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [getOsAccountCount()](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-2)
+**Substitutes:** [getOsAccountCount()](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -881,7 +897,7 @@ Obtains the number of OS accounts created. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of created OS accounts. |
+| Promise&lt;number&gt; | Promise used to return the number of created OS accounts. |
 
 **Example**
 
@@ -897,6 +913,7 @@ accountManager.getCreatedOsAccountsCount().then((count: number) => {
 
 ```
 
+<a id="getcurrentosaccount"></a>
 ## getCurrentOsAccount
 
 ```TypeScript
@@ -926,7 +943,7 @@ Obtains information about the OS account to which the current process belongs. T
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<OsAccountInfo> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account information obtained.Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;OsAccountInfo&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account information obtained.Otherwise, **data** is an error object. |
 
 **Error codes:**
 
@@ -956,6 +973,7 @@ try {
 
 ```
 
+<a id="getcurrentosaccount-1"></a>
 ## getCurrentOsAccount
 
 ```TypeScript
@@ -985,7 +1003,7 @@ Obtains information about the OS account to which the current process belongs. T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountInfo> | Promise used to return the OS account information obtained. |
+| Promise&lt;OsAccountInfo&gt; | Promise used to return the OS account information obtained. |
 
 **Error codes:**
 
@@ -1013,6 +1031,7 @@ try {
 
 ```
 
+<a id="getdistributedvirtualdeviceid"></a>
 ## getDistributedVirtualDeviceId
 
 ```TypeScript
@@ -1031,7 +1050,7 @@ Obtains the ID of a distributed virtual device. This API uses an asynchronous ca
 
 **Deprecated since:** 9
 
-**Substitutes:** queryDistributedVirtualDeviceId(callback:
+**Substitutes:** [queryDistributedVirtualDeviceId(callback:](arkts-basicservices-osaccount-accountmanager-i.md#querydistributedvirtualdeviceid-1)
 
 **Required permissions:** ohos.permission.DISTRIBUTED_DATASYNC or ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -1043,7 +1062,7 @@ Obtains the ID of a distributed virtual device. This API uses an asynchronous ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the distributed virtual device ID obtained. Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the distributed virtual device ID obtained. Otherwise, **data** is an error object. |
 
 **Example**
 
@@ -1061,6 +1080,7 @@ accountManager.getDistributedVirtualDeviceId((err: BusinessError, virtualID: str
 
 ```
 
+<a id="getdistributedvirtualdeviceid-1"></a>
 ## getDistributedVirtualDeviceId
 
 ```TypeScript
@@ -1072,13 +1092,13 @@ Obtains the ID of this distributed virtual device. This API uses a promise to re
 > **NOTE**  
 >  
 > This API is supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [queryDistributedVirtualDeviceId](arkts-basicservices-osaccount-accountmanager-i.md#querydistributedvirtualdeviceid-2) instead.
+> [queryDistributedVirtualDeviceId](arkts-basicservices-osaccount-accountmanager-i.md#querydistributedvirtualdeviceid-1) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [queryDistributedVirtualDeviceId()](arkts-basicservices-osaccount-accountmanager-i.md#querydistributedvirtualdeviceid-2)
+**Substitutes:** [queryDistributedVirtualDeviceId()](arkts-basicservices-osaccount-accountmanager-i.md#querydistributedvirtualdeviceid-1)
 
 **Required permissions:** ohos.permission.DISTRIBUTED_DATASYNC or ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -1090,7 +1110,7 @@ Obtains the ID of this distributed virtual device. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the distributed virtual device ID obtained. |
+| Promise&lt;string&gt; | Promise used to return the distributed virtual device ID obtained. |
 
 **Example**
 
@@ -1106,6 +1126,7 @@ accountManager.getDistributedVirtualDeviceId().then((virtualID: string) => {
 
 ```
 
+<a id="getforegroundosaccountlocalid"></a>
 ## getForegroundOsAccountLocalId
 
 ```TypeScript
@@ -1124,7 +1145,7 @@ Obtains the ID of the foreground OS account. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the ID of the foreground OS account. |
+| Promise&lt;number&gt; | Promise used to return the ID of the foreground OS account. |
 
 **Error codes:**
 
@@ -1151,6 +1172,7 @@ try {
 
 ```
 
+<a id="getosaccountallconstraints"></a>
 ## getOsAccountAllConstraints
 
 ```TypeScript
@@ -1168,7 +1190,7 @@ Obtains all constraints enabled for an OS account. This API uses an asynchronous
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountConstraints(localId:
+**Substitutes:** [getOsAccountConstraints(localId:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountconstraints-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -1181,7 +1203,7 @@ Obtains all constraints enabled for an OS account. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is a list of all [constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) enabled for the OS account. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is a list of all [constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) enabled for the OS account. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -1203,6 +1225,7 @@ accountManager.getOsAccountAllConstraints(localId, (err: BusinessError, constrai
 
 ```
 
+<a id="getosaccountallconstraints-1"></a>
 ## getOsAccountAllConstraints
 
 ```TypeScript
@@ -1220,7 +1243,7 @@ Obtains all constraints enabled for an OS account. This API uses a promise to re
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountConstraints(localId:
+**Substitutes:** [getOsAccountConstraints(localId:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountconstraints-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -1238,7 +1261,7 @@ Obtains all constraints enabled for an OS account. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return all the [constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) enabled for the OS account. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return all the [constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) enabled for the OS account. |
 
 **Example**
 
@@ -1258,6 +1281,7 @@ accountManager.getOsAccountAllConstraints(localId).then((constraints: string[]) 
 
 ```
 
+<a id="getosaccountconstraints"></a>
 ## getOsAccountConstraints
 
 ```TypeScript
@@ -1286,7 +1310,7 @@ Obtains all constraints enabled for an OS account. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is all [constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is all [constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1323,6 +1347,7 @@ try {
 
 ```
 
+<a id="getosaccountconstraints-1"></a>
 ## getOsAccountConstraints
 
 ```TypeScript
@@ -1356,7 +1381,7 @@ Obtains all constraints enabled for an OS account. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return all the [constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) enabled for the OS account. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return all the [constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) enabled for the OS account. |
 
 **Error codes:**
 
@@ -1391,6 +1416,7 @@ try {
 
 ```
 
+<a id="getosaccountcount"></a>
 ## getOsAccountCount
 
 ```TypeScript
@@ -1411,7 +1437,7 @@ Obtains the number of OS accounts created. This API uses an asynchronous callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the number of created OS accounts.If the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the number of created OS accounts.If the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -1442,6 +1468,7 @@ try {
 
 ```
 
+<a id="getosaccountcount-1"></a>
 ## getOsAccountCount
 
 ```TypeScript
@@ -1462,7 +1489,7 @@ Obtains the number of OS accounts created. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of created OS accounts. |
+| Promise&lt;number&gt; | Promise used to return the number of created OS accounts. |
 
 **Error codes:**
 
@@ -1490,6 +1517,7 @@ try {
 
 ```
 
+<a id="getosaccountdomaininfo"></a>
 ## getOsAccountDomainInfo
 
 ```TypeScript
@@ -1516,7 +1544,7 @@ Obtains the domain account information associated with a specified OS account. T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DomainAccountInfo> | Promise used to return the domain account information obtained. |
+| Promise&lt;DomainAccountInfo&gt; | Promise used to return the domain account information obtained. |
 
 **Error codes:**
 
@@ -1548,6 +1576,7 @@ accountManager.getOsAccountDomainInfo(localId).then((domainAccountInfo: osAccoun
 
 ```
 
+<a id="getosaccountlocalid"></a>
 ## getOsAccountLocalId
 
 ```TypeScript
@@ -1566,7 +1595,7 @@ Obtains the ID of the OS account to which the current process belongs. This API 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1596,6 +1625,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalid-1"></a>
 ## getOsAccountLocalId
 
 ```TypeScript
@@ -1614,7 +1644,7 @@ Obtains the ID of the OS account to which the current process belongs. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the OS account ID obtained. |
+| Promise&lt;number&gt; | Promise used to return the OS account ID obtained. |
 
 **Error codes:**
 
@@ -1641,6 +1671,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalidbyserialnumber"></a>
 ## getOsAccountLocalIdBySerialNumber
 
 ```TypeScript
@@ -1659,7 +1690,7 @@ Obtains the OS account ID based on the SN. This API uses an asynchronous callbac
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountLocalIdForSerialNumber(serialNumber:
+**Substitutes:** [getOsAccountLocalIdForSerialNumber(serialNumber:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidforserialnumber-1)
 
 <!--Device-AccountManager-getOsAccountLocalIdBySerialNumber(serialNumber: number, callback: AsyncCallback<number>): void--><!--Device-AccountManager-getOsAccountLocalIdBySerialNumber(serialNumber: number, callback: AsyncCallback<number>): void-End-->
 
@@ -1670,7 +1701,7 @@ Obtains the OS account ID based on the SN. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | serialNumber | number | Yes | Account SN. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -1691,6 +1722,7 @@ accountManager.getOsAccountLocalIdBySerialNumber(serialNumber, (err: BusinessErr
 
 ```
 
+<a id="getosaccountlocalidbyserialnumber-1"></a>
 ## getOsAccountLocalIdBySerialNumber
 
 ```TypeScript
@@ -1702,14 +1734,14 @@ Obtains the OS account ID based on the SN. This API uses a promise to return the
 > **NOTE**  
 >  
 > This API is supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [getOsAccountLocalIdForSerialNumber](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidforserialnumber-2)  
+> [getOsAccountLocalIdForSerialNumber](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidforserialnumber-1)  
 > instead.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountLocalIdForSerialNumber(serialNumber:
+**Substitutes:** [getOsAccountLocalIdForSerialNumber(serialNumber:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidforserialnumber-1)
 
 <!--Device-AccountManager-getOsAccountLocalIdBySerialNumber(serialNumber: number): Promise<number>--><!--Device-AccountManager-getOsAccountLocalIdBySerialNumber(serialNumber: number): Promise<number>-End-->
 
@@ -1725,7 +1757,7 @@ Obtains the OS account ID based on the SN. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the OS account ID obtained. |
+| Promise&lt;number&gt; | Promise used to return the OS account ID obtained. |
 
 **Example**
 
@@ -1744,6 +1776,7 @@ accountManager.getOsAccountLocalIdBySerialNumber(serialNumber).then((localId: nu
 
 ```
 
+<a id="getosaccountlocalidfordomain"></a>
 ## getOsAccountLocalIdForDomain
 
 ```TypeScript
@@ -1765,7 +1798,7 @@ Obtains the OS account ID based on the domain account information. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i.md) | Yes | Domain account information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the ID of the OS account associated with the domain account. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the ID of the OS account associated with the domain account. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1799,6 +1832,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalidfordomain-1"></a>
 ## getOsAccountLocalIdForDomain
 
 ```TypeScript
@@ -1825,7 +1859,7 @@ Obtains the OS account ID based on the domain account information. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the ID of the OS account associated with the domain account. |
+| Promise&lt;number&gt; | Promise used to return the ID of the OS account associated with the domain account. |
 
 **Error codes:**
 
@@ -1857,6 +1891,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalidforserialnumber"></a>
 ## getOsAccountLocalIdForSerialNumber
 
 ```TypeScript
@@ -1876,7 +1911,7 @@ Obtains the OS account ID based on the SN. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | serialNumber | number | Yes | Account SN. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1912,6 +1947,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalidforserialnumber-1"></a>
 ## getOsAccountLocalIdForSerialNumber
 
 ```TypeScript
@@ -1936,7 +1972,7 @@ Obtains the OS account ID based on the SN. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the OS account ID obtained. |
+| Promise&lt;number&gt; | Promise used to return the OS account ID obtained. |
 
 **Error codes:**
 
@@ -1970,6 +2006,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalidforuid"></a>
 ## getOsAccountLocalIdForUid
 
 ```TypeScript
@@ -1989,7 +2026,7 @@ Obtains the OS account ID based on the process UID. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uid | number | Yes | Process UID. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **data** is an error object. |
 
 **Error codes:**
 
@@ -2024,6 +2061,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalidforuid-1"></a>
 ## getOsAccountLocalIdForUid
 
 ```TypeScript
@@ -2048,7 +2086,7 @@ Obtains the OS account ID based on the process UID. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the OS account ID obtained. |
+| Promise&lt;number&gt; | Promise used to return the OS account ID obtained. |
 
 **Error codes:**
 
@@ -2081,6 +2119,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalidforuidsync"></a>
 ## getOsAccountLocalIdForUidSync
 
 ```TypeScript
@@ -2134,6 +2173,7 @@ try {
 
 ```
 
+<a id="getosaccountlocalidfromdomain"></a>
 ## getOsAccountLocalIdFromDomain
 
 ```TypeScript
@@ -2152,7 +2192,7 @@ Obtains the OS account ID based on the domain account information. This API uses
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountLocalIdForDomain(domainInfo:
+**Substitutes:** [getOsAccountLocalIdForDomain(domainInfo:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidfordomain-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -2165,7 +2205,7 @@ Obtains the OS account ID based on the domain account information. This API uses
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | domainInfo | [DomainAccountInfo](arkts-basicservices-osaccount-domainaccountinfo-i.md) | Yes | Domain account information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -2184,6 +2224,7 @@ accountManager.getOsAccountLocalIdFromDomain(domainInfo, (err: BusinessError, lo
 
 ```
 
+<a id="getosaccountlocalidfromdomain-1"></a>
 ## getOsAccountLocalIdFromDomain
 
 ```TypeScript
@@ -2195,14 +2236,14 @@ Obtains the OS account ID based on the domain account information. This API uses
 > **NOTE**  
 >  
 > This API is supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [getOsAccountLocalIdForDomain](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidfordomain-2)  
+> [getOsAccountLocalIdForDomain](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidfordomain-1)  
 > instead.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountLocalIdForDomain(domainInfo:
+**Substitutes:** [getOsAccountLocalIdForDomain(domainInfo:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidfordomain-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -2220,7 +2261,7 @@ Obtains the OS account ID based on the domain account information. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the ID of the OS account associated with the domain account. |
+| Promise&lt;number&gt; | Promise used to return the ID of the OS account associated with the domain account. |
 
 **Example**
 
@@ -2237,6 +2278,7 @@ accountManager.getOsAccountLocalIdFromDomain(domainInfo).then((localId: number) 
 
 ```
 
+<a id="getosaccountlocalidfromprocess"></a>
 ## getOsAccountLocalIdFromProcess
 
 ```TypeScript
@@ -2255,7 +2297,7 @@ Obtains the ID of the OS account to which the current process belongs. This API 
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountLocalId(callback:
+**Substitutes:** [getOsAccountLocalId(callback:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)
 
 <!--Device-AccountManager-getOsAccountLocalIdFromProcess(callback: AsyncCallback<number>): void--><!--Device-AccountManager-getOsAccountLocalIdFromProcess(callback: AsyncCallback<number>): void-End-->
 
@@ -2265,7 +2307,7 @@ Obtains the ID of the OS account to which the current process belongs. This API 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -2283,6 +2325,7 @@ accountManager.getOsAccountLocalIdFromProcess((err: BusinessError, localId: numb
 
 ```
 
+<a id="getosaccountlocalidfromprocess-1"></a>
 ## getOsAccountLocalIdFromProcess
 
 ```TypeScript
@@ -2294,13 +2337,13 @@ Obtains the ID of the OS account to which the current process belongs. This API 
 > **NOTE**  
 >  
 > This API is supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [getOsAccountLocalId](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2) instead.
+> [getOsAccountLocalId](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [getOsAccountLocalId()](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2)
+**Substitutes:** [getOsAccountLocalId()](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)
 
 <!--Device-AccountManager-getOsAccountLocalIdFromProcess(): Promise<number>--><!--Device-AccountManager-getOsAccountLocalIdFromProcess(): Promise<number>-End-->
 
@@ -2310,7 +2353,7 @@ Obtains the ID of the OS account to which the current process belongs. This API 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the OS account ID obtained. |
+| Promise&lt;number&gt; | Promise used to return the OS account ID obtained. |
 
 **Example**
 
@@ -2326,6 +2369,7 @@ accountManager.getOsAccountLocalIdFromProcess().then((localId: number) => {
 
 ```
 
+<a id="getosaccountlocalidfromuid"></a>
 ## getOsAccountLocalIdFromUid
 
 ```TypeScript
@@ -2344,7 +2388,7 @@ Obtains the OS account ID based on the process UID. This API uses an asynchronou
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountLocalIdForUid(uid:
+**Substitutes:** [getOsAccountLocalIdForUid(uid:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidforuid-1)
 
 <!--Device-AccountManager-getOsAccountLocalIdFromUid(uid: number, callback: AsyncCallback<number>): void--><!--Device-AccountManager-getOsAccountLocalIdFromUid(uid: number, callback: AsyncCallback<number>): void-End-->
 
@@ -2355,7 +2399,7 @@ Obtains the OS account ID based on the process UID. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uid | number | Yes | Process UID. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the OS account ID obtained.Otherwise, **data** is an error object. |
 
 **Example**
 
@@ -2376,6 +2420,7 @@ accountManager.getOsAccountLocalIdFromUid(uid, (err: BusinessError, localId: num
 
 ```
 
+<a id="getosaccountlocalidfromuid-1"></a>
 ## getOsAccountLocalIdFromUid
 
 ```TypeScript
@@ -2387,13 +2432,13 @@ Obtains the OS account ID based on the process UID. This API uses a promise to r
 > **NOTE**  
 >  
 > This API is supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [getOsAccountLocalIdForUid](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidforuid-2) instead.
+> [getOsAccountLocalIdForUid](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidforuid-1) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountLocalIdForUid(uid:
+**Substitutes:** [getOsAccountLocalIdForUid(uid:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalidforuid-1)
 
 <!--Device-AccountManager-getOsAccountLocalIdFromUid(uid: number): Promise<number>--><!--Device-AccountManager-getOsAccountLocalIdFromUid(uid: number): Promise<number>-End-->
 
@@ -2409,7 +2454,7 @@ Obtains the OS account ID based on the process UID. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the OS account ID obtained. |
+| Promise&lt;number&gt; | Promise used to return the OS account ID obtained. |
 
 **Example**
 
@@ -2428,6 +2473,7 @@ accountManager.getOsAccountLocalIdFromUid(uid).then((localId: number) => {
 
 ```
 
+<a id="getosaccountlocalids"></a>
 ## getOsAccountLocalIds
 
 ```TypeScript
@@ -2450,7 +2496,7 @@ Obtains the local IDs of all non-system-level OS accounts. Non-system-level OS a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number[]> | Promise used to return the local IDs of all non-system-level OS accounts. |
+| Promise&lt;number[]&gt; | Promise used to return the local IDs of all non-system-level OS accounts. |
 
 **Error codes:**
 
@@ -2478,6 +2524,7 @@ try {
 
 ```
 
+<a id="getosaccountname"></a>
 ## getOsAccountName
 
 ```TypeScript
@@ -2496,7 +2543,7 @@ Obtains the name of the OS account of the caller. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the OS account name obtained. |
+| Promise&lt;string&gt; | Promise used to return the OS account name obtained. |
 
 **Error codes:**
 
@@ -2523,6 +2570,7 @@ try {
 
 ```
 
+<a id="getosaccountnamebylocalid"></a>
 ## getOsAccountNameByLocalId
 
 ```TypeScript
@@ -2551,7 +2599,7 @@ Obtains the name of an OS account based on its local ID. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the name of the target OS account. |
+| Promise&lt;string&gt; | Promise used to return the name of the target OS account. |
 
 **Error codes:**
 
@@ -2581,6 +2629,7 @@ try {
 
 ```
 
+<a id="getosaccounttype"></a>
 ## getOsAccountType
 
 ```TypeScript
@@ -2599,7 +2648,7 @@ Obtains the type of the account to which the current process belongs. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<OsAccountType> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account type obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;OsAccountType&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account type obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -2629,6 +2678,7 @@ try {
 
 ```
 
+<a id="getosaccounttype-1"></a>
 ## getOsAccountType
 
 ```TypeScript
@@ -2647,7 +2697,7 @@ Obtains the type of the account to which the current process belongs. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountType> | Promise used to return the OS account type obtained. |
+| Promise&lt;OsAccountType&gt; | Promise used to return the OS account type obtained. |
 
 **Error codes:**
 
@@ -2674,6 +2724,7 @@ try {
 
 ```
 
+<a id="getosaccounttypefromprocess"></a>
 ## getOsAccountTypeFromProcess
 
 ```TypeScript
@@ -2692,7 +2743,7 @@ Obtains the type of the account to which the current process belongs. This API u
 
 **Deprecated since:** 9
 
-**Substitutes:** getOsAccountType(callback:
+**Substitutes:** [getOsAccountType(callback:](arkts-basicservices-osaccount-accountmanager-i.md#getosaccounttype-1)
 
 <!--Device-AccountManager-getOsAccountTypeFromProcess(callback: AsyncCallback<OsAccountType>): void--><!--Device-AccountManager-getOsAccountTypeFromProcess(callback: AsyncCallback<OsAccountType>): void-End-->
 
@@ -2702,7 +2753,7 @@ Obtains the type of the account to which the current process belongs. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<OsAccountType> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account type obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;OsAccountType&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account type obtained.Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -2720,6 +2771,7 @@ accountManager.getOsAccountTypeFromProcess((err: BusinessError, accountType: osA
 
 ```
 
+<a id="getosaccounttypefromprocess-1"></a>
 ## getOsAccountTypeFromProcess
 
 ```TypeScript
@@ -2731,13 +2783,13 @@ Obtains the type of the account to which the current process belongs. This API u
 > **NOTE**  
 >  
 > This API is supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [getOsAccountType](arkts-basicservices-osaccount-accountmanager-i.md#getosaccounttype-2) instead.
+> [getOsAccountType](arkts-basicservices-osaccount-accountmanager-i.md#getosaccounttype-1) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [getOsAccountType()](arkts-basicservices-osaccount-accountmanager-i.md#getosaccounttype-2)
+**Substitutes:** [getOsAccountType()](arkts-basicservices-osaccount-accountmanager-i.md#getosaccounttype-1)
 
 <!--Device-AccountManager-getOsAccountTypeFromProcess(): Promise<OsAccountType>--><!--Device-AccountManager-getOsAccountTypeFromProcess(): Promise<OsAccountType>-End-->
 
@@ -2747,7 +2799,7 @@ Obtains the type of the account to which the current process belongs. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountType> | Promise used to return the OS account type obtained. |
+| Promise&lt;OsAccountType&gt; | Promise used to return the OS account type obtained. |
 
 **Example**
 
@@ -2763,6 +2815,7 @@ accountManager.getOsAccountTypeFromProcess().then((accountType: osAccount.OsAcco
 
 ```
 
+<a id="getserialnumberbyosaccountlocalid"></a>
 ## getSerialNumberByOsAccountLocalId
 
 ```TypeScript
@@ -2781,7 +2834,7 @@ Obtains the SN of an OS account based on the account ID. This API uses an asynch
 
 **Deprecated since:** 9
 
-**Substitutes:** getSerialNumberForOsAccountLocalId(localId:
+**Substitutes:** [getSerialNumberForOsAccountLocalId(localId:](arkts-basicservices-osaccount-accountmanager-i.md#getserialnumberforosaccountlocalid-1)
 
 <!--Device-AccountManager-getSerialNumberByOsAccountLocalId(localId: number, callback: AsyncCallback<number>): void--><!--Device-AccountManager-getSerialNumberByOsAccountLocalId(localId: number, callback: AsyncCallback<number>): void-End-->
 
@@ -2792,7 +2845,7 @@ Obtains the SN of an OS account based on the account ID. This API uses an asynch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the SN obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the SN obtained.Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -2814,6 +2867,7 @@ accountManager.getSerialNumberByOsAccountLocalId(localId, (err: BusinessError, s
 
 ```
 
+<a id="getserialnumberbyosaccountlocalid-1"></a>
 ## getSerialNumberByOsAccountLocalId
 
 ```TypeScript
@@ -2825,14 +2879,14 @@ Obtains the SN of an OS account based on the account ID. This API uses a promise
 > **NOTE**  
 >  
 > This API is supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [getSerialNumberForOsAccountLocalId](arkts-basicservices-osaccount-accountmanager-i.md#getserialnumberforosaccountlocalid-2)  
+> [getSerialNumberForOsAccountLocalId](arkts-basicservices-osaccount-accountmanager-i.md#getserialnumberforosaccountlocalid-1)  
 > instead.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** getSerialNumberForOsAccountLocalId(localId:
+**Substitutes:** [getSerialNumberForOsAccountLocalId(localId:](arkts-basicservices-osaccount-accountmanager-i.md#getserialnumberforosaccountlocalid-1)
 
 <!--Device-AccountManager-getSerialNumberByOsAccountLocalId(localId: number): Promise<number>--><!--Device-AccountManager-getSerialNumberByOsAccountLocalId(localId: number): Promise<number>-End-->
 
@@ -2848,7 +2902,7 @@ Obtains the SN of an OS account based on the account ID. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the SN obtained. |
+| Promise&lt;number&gt; | Promise used to return the SN obtained. |
 
 **Example**
 
@@ -2868,6 +2922,7 @@ accountManager.getSerialNumberByOsAccountLocalId(localId).then((serialNumber: nu
 
 ```
 
+<a id="getserialnumberforosaccountlocalid"></a>
 ## getSerialNumberForOsAccountLocalId
 
 ```TypeScript
@@ -2887,7 +2942,7 @@ Obtains the SN of an OS account based on the account ID. This API uses an asynch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the SN obtained.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the SN obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -2923,6 +2978,7 @@ try {
 
 ```
 
+<a id="getserialnumberforosaccountlocalid-1"></a>
 ## getSerialNumberForOsAccountLocalId
 
 ```TypeScript
@@ -2947,7 +3003,7 @@ Obtains the SN of an OS account based on the account ID. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the SN obtained. |
+| Promise&lt;number&gt; | Promise used to return the SN obtained. |
 
 **Error codes:**
 
@@ -2981,6 +3037,7 @@ try {
 
 ```
 
+<a id="ismultiosaccountenable"></a>
 ## isMultiOsAccountEnable
 
 ```TypeScript
@@ -2999,7 +3056,7 @@ Checks whether multiple OS accounts are supported. This API uses an asynchronous
 
 **Deprecated since:** 9
 
-**Substitutes:** checkMultiOsAccountEnabled(callback:
+**Substitutes:** [checkMultiOsAccountEnabled(callback:](arkts-basicservices-osaccount-accountmanager-i.md#checkmultiosaccountenabled-1)
 
 <!--Device-AccountManager-isMultiOsAccountEnable(callback: AsyncCallback<boolean>): void--><!--Device-AccountManager-isMultiOsAccountEnable(callback: AsyncCallback<boolean>): void-End-->
 
@@ -3009,7 +3066,7 @@ Checks whether multiple OS accounts are supported. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result.The value **true** means multiple OS accounts are supported;the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result.The value **true** means multiple OS accounts are supported;the value **false** means the opposite. |
 
 **Example**
 
@@ -3027,6 +3084,7 @@ accountManager.isMultiOsAccountEnable((err: BusinessError, isEnabled: boolean) =
 
 ```
 
+<a id="ismultiosaccountenable-1"></a>
 ## isMultiOsAccountEnable
 
 ```TypeScript
@@ -3038,13 +3096,13 @@ Checks whether multiple OS accounts are supported. This API uses a promise to re
 > **NOTE**  
 >  
 > This API is supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [checkMultiOsAccountEnabled](arkts-basicservices-osaccount-accountmanager-i.md#checkmultiosaccountenabled-2) instead.
+> [checkMultiOsAccountEnabled](arkts-basicservices-osaccount-accountmanager-i.md#checkmultiosaccountenabled-1) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [checkMultiOsAccountEnabled()](arkts-basicservices-osaccount-accountmanager-i.md#checkmultiosaccountenabled-2)
+**Substitutes:** [checkMultiOsAccountEnabled()](arkts-basicservices-osaccount-accountmanager-i.md#checkmultiosaccountenabled-1)
 
 <!--Device-AccountManager-isMultiOsAccountEnable(): Promise<boolean>--><!--Device-AccountManager-isMultiOsAccountEnable(): Promise<boolean>-End-->
 
@@ -3054,7 +3112,7 @@ Checks whether multiple OS accounts are supported. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means multiple OS accounts are supported; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means multiple OS accounts are supported; the value **false** means the opposite. |
 
 **Example**
 
@@ -3070,6 +3128,7 @@ accountManager.isMultiOsAccountEnable().then((isEnabled: boolean) => {
 
 ```
 
+<a id="isosaccountactived"></a>
 ## isOsAccountActived
 
 ```TypeScript
@@ -3087,7 +3146,7 @@ Checks whether an OS account is activated. This API uses an asynchronous callbac
 
 **Deprecated since:** 9
 
-**Substitutes:** checkOsAccountActivated(localId:
+**Substitutes:** [checkOsAccountActivated(localId:](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccountactivated-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
@@ -3100,7 +3159,7 @@ Checks whether an OS account is activated. This API uses an asynchronous callbac
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
 
 **Example**
 
@@ -3122,6 +3181,7 @@ accountManager.isOsAccountActived(localId, (err: BusinessError, isActived: boole
 
 ```
 
+<a id="isosaccountactived-1"></a>
 ## isOsAccountActived
 
 ```TypeScript
@@ -3139,7 +3199,7 @@ Checks whether an OS account is activated. This API uses a promise to return the
 
 **Deprecated since:** 9
 
-**Substitutes:** checkOsAccountActivated(localId:
+**Substitutes:** [checkOsAccountActivated(localId:](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccountactivated-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
@@ -3157,7 +3217,7 @@ Checks whether an OS account is activated. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the account is activated; the value **false** means the opposite. |
 
 **Example**
 
@@ -3177,6 +3237,7 @@ accountManager.isOsAccountActived(localId).then((isActived: boolean) => {
 
 ```
 
+<a id="isosaccountconstraintenable"></a>
 ## isOsAccountConstraintEnable
 
 ```TypeScript
@@ -3194,7 +3255,7 @@ Checks whether the specified constraint is enabled for an OS account. This API u
 
 **Deprecated since:** 9
 
-**Substitutes:** checkOsAccountConstraintEnabled(localId:
+**Substitutes:** [checkOsAccountConstraintEnabled(localId:](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccountconstraintenabled-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -3207,8 +3268,8 @@ Checks whether the specified constraint is enabled for an OS account. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
+| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
 
 **Example**
 
@@ -3231,6 +3292,7 @@ accountManager.isOsAccountConstraintEnable(localId, constraint, (err: BusinessEr
 
 ```
 
+<a id="isosaccountconstraintenable-1"></a>
 ## isOsAccountConstraintEnable
 
 ```TypeScript
@@ -3248,7 +3310,7 @@ Checks whether the specified constraint is enabled for an OS account. This API u
 
 **Deprecated since:** 9
 
-**Substitutes:** checkOsAccountConstraintEnabled(localId:
+**Substitutes:** [checkOsAccountConstraintEnabled(localId:](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccountconstraintenabled-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -3261,13 +3323,13 @@ Checks whether the specified constraint is enabled for an OS account. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
+| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
 
 **Example**
 
@@ -3288,6 +3350,7 @@ accountManager.isOsAccountConstraintEnable(localId, constraint).then((isEnabled:
 
 ```
 
+<a id="isosaccountconstraintenabled"></a>
 ## isOsAccountConstraintEnabled
 
 ```TypeScript
@@ -3306,13 +3369,13 @@ Checks whether a constraint is enabled for this OS account. This API uses a prom
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| constraint | string | Yes | [Constraint](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
+| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the specified constraint is enabled; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -3343,6 +3406,7 @@ try {
 
 ```
 
+<a id="isosaccountunlocked"></a>
 ## isOsAccountUnlocked
 
 ```TypeScript
@@ -3361,7 +3425,7 @@ Checks whether this OS account is unlocked. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -3388,6 +3452,7 @@ try {
 
 ```
 
+<a id="isosaccountverified"></a>
 ## isOsAccountVerified
 
 ```TypeScript
@@ -3406,7 +3471,7 @@ Checks whether an OS account has been verified. This API uses an asynchronous ca
 
 **Deprecated since:** 9
 
-**Substitutes:** checkOsAccountVerified(callback:
+**Substitutes:** [checkOsAccountVerified(callback:](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccountverified-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
@@ -3418,7 +3483,7 @@ Checks whether an OS account has been verified. This API uses an asynchronous ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
 
 **Example**
 
@@ -3436,6 +3501,7 @@ accountManager.isOsAccountVerified((err: BusinessError, isVerified: boolean) => 
 
 ```
 
+<a id="isosaccountverified-1"></a>
 ## isOsAccountVerified
 
 ```TypeScript
@@ -3453,7 +3519,7 @@ Checks whether an OS account has been verified. This API uses an asynchronous ca
 
 **Deprecated since:** 9
 
-**Substitutes:** checkOsAccountVerified(localId:
+**Substitutes:** [checkOsAccountVerified(localId:](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccountverified-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
@@ -3466,7 +3532,7 @@ Checks whether an OS account has been verified. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
 
 **Example**
 
@@ -3486,6 +3552,7 @@ accountManager.isOsAccountVerified(localId, (err: BusinessError, isVerified: boo
 
 ```
 
+<a id="isosaccountverified-2"></a>
 ## isOsAccountVerified
 
 ```TypeScript
@@ -3503,7 +3570,7 @@ Checks whether an OS account has been verified. This API uses a promise to retur
 
 **Deprecated since:** 9
 
-**Substitutes:** checkOsAccountVerified(localId:
+**Substitutes:** [checkOsAccountVerified(localId:](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccountverified-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
@@ -3521,7 +3588,7 @@ Checks whether an OS account has been verified. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the OS account has been verified; the value **false** means the opposite. |
 
 **Example**
 
@@ -3537,6 +3604,7 @@ accountManager.isOsAccountVerified().then((isVerified: boolean) => {
 
 ```
 
+<a id="istestosaccount"></a>
 ## isTestOsAccount
 
 ```TypeScript
@@ -3555,7 +3623,7 @@ Checks whether this OS account is a test account. This API uses an asynchronous 
 
 **Deprecated since:** 9
 
-**Substitutes:** checkOsAccountTestable(callback:
+**Substitutes:** [checkOsAccountTestable(callback:](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccounttestable-1)
 
 <!--Device-AccountManager-isTestOsAccount(callback: AsyncCallback<boolean>): void--><!--Device-AccountManager-isTestOsAccount(callback: AsyncCallback<boolean>): void-End-->
 
@@ -3565,7 +3633,7 @@ Checks whether this OS account is a test account. This API uses an asynchronous 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means the account is a test account; the value **false** means the opposite. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means the account is a test account; the value **false** means the opposite. |
 
 **Example**
 
@@ -3583,6 +3651,7 @@ accountManager.isTestOsAccount((err: BusinessError, isTestable: boolean) => {
 
 ```
 
+<a id="istestosaccount-1"></a>
 ## isTestOsAccount
 
 ```TypeScript
@@ -3594,13 +3663,13 @@ Checks whether this OS account is a test account. This API uses a promise to ret
 > **NOTE**  
 >  
 > This API is supported since API version 7 and deprecated since API version 9. You are advised to use  
-> [checkOsAccountTestable](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccounttestable-2) instead.
+> [checkOsAccountTestable](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccounttestable-1) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [checkOsAccountTestable()](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccounttestable-2)
+**Substitutes:** [checkOsAccountTestable()](arkts-basicservices-osaccount-accountmanager-i.md#checkosaccounttestable-1)
 
 <!--Device-AccountManager-isTestOsAccount(): Promise<boolean>--><!--Device-AccountManager-isTestOsAccount(): Promise<boolean>-End-->
 
@@ -3610,7 +3679,7 @@ Checks whether this OS account is a test account. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the account is a test account; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the account is a test account; the value **false** means the opposite. |
 
 **Example**
 
@@ -3626,6 +3695,7 @@ let accountManager: osAccount.AccountManager = osAccount.getAccountManager();
 
 ```
 
+<a id="queryactivatedosaccountids"></a>
 ## queryActivatedOsAccountIds
 
 ```TypeScript
@@ -3644,7 +3714,7 @@ Obtains information about all activated OS accounts. This API uses an asynchrono
 
 **Deprecated since:** 9
 
-**Substitutes:** getActivatedOsAccountLocalIds(callback:
+**Substitutes:** [getActivatedOsAccountLocalIds(callback:](arkts-basicservices-osaccount-accountmanager-i.md#getactivatedosaccountlocalids-1)
 
 <!--Device-AccountManager-queryActivatedOsAccountIds(callback: AsyncCallback<Array<number>>): void--><!--Device-AccountManager-queryActivatedOsAccountIds(callback: AsyncCallback<Array<number>>): void-End-->
 
@@ -3654,7 +3724,7 @@ Obtains information about all activated OS accounts. This API uses an asynchrono
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is a list of activated OS accounts.Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is a list of activated OS accounts.Otherwise, **data** is an error object. |
 
 **Example**
 
@@ -3675,6 +3745,7 @@ accountManager.queryActivatedOsAccountIds((err: BusinessError, idArray: number[]
 
 ```
 
+<a id="queryactivatedosaccountids-1"></a>
 ## queryActivatedOsAccountIds
 
 ```TypeScript
@@ -3686,13 +3757,13 @@ Obtains information about all activated OS accounts. This API uses a promise to 
 > **NOTE**  
 >  
 > This API is supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [getActivatedOsAccountLocalIds](arkts-basicservices-osaccount-accountmanager-i.md#getactivatedosaccountlocalids-2) instead.
+> [getActivatedOsAccountLocalIds](arkts-basicservices-osaccount-accountmanager-i.md#getactivatedosaccountlocalids-1) instead.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** [getActivatedOsAccountLocalIds()](arkts-basicservices-osaccount-accountmanager-i.md#getactivatedosaccountlocalids-2)
+**Substitutes:** [getActivatedOsAccountLocalIds()](arkts-basicservices-osaccount-accountmanager-i.md#getactivatedosaccountlocalids-1)
 
 <!--Device-AccountManager-queryActivatedOsAccountIds(): Promise<Array<number>>--><!--Device-AccountManager-queryActivatedOsAccountIds(): Promise<Array<number>>-End-->
 
@@ -3702,7 +3773,7 @@ Obtains information about all activated OS accounts. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the information about all activated OS accounts. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the information about all activated OS accounts. |
 
 **Example**
 
@@ -3718,6 +3789,7 @@ accountManager.queryActivatedOsAccountIds().then((idArray: number[]) => {
 
 ```
 
+<a id="querycurrentosaccount"></a>
 ## queryCurrentOsAccount
 
 ```TypeScript
@@ -3735,7 +3807,7 @@ Obtains information about the OS account to which the current process belongs. T
 
 **Deprecated since:** 9
 
-**Substitutes:** getCurrentOsAccount(callback:
+**Substitutes:** [getCurrentOsAccount(callback:](arkts-basicservices-osaccount-accountmanager-i.md#getcurrentosaccount-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -3747,7 +3819,7 @@ Obtains information about the OS account to which the current process belongs. T
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<OsAccountInfo> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account information obtained.Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;OsAccountInfo&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the OS account information obtained.Otherwise, **data** is an error object. |
 
 **Example**
 
@@ -3765,6 +3837,7 @@ accountManager.queryCurrentOsAccount((err: BusinessError, curAccountInfo: osAcco
 
 ```
 
+<a id="querycurrentosaccount-1"></a>
 ## queryCurrentOsAccount
 
 ```TypeScript
@@ -3782,7 +3855,7 @@ Obtains information about the OS account to which the current process belongs. T
 
 **Deprecated since:** 9
 
-**Substitutes:** [getCurrentOsAccount()](arkts-basicservices-osaccount-accountmanager-i.md#getcurrentosaccount-2)
+**Substitutes:** [getCurrentOsAccount()](arkts-basicservices-osaccount-accountmanager-i.md#getcurrentosaccount-1)
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
@@ -3794,7 +3867,7 @@ Obtains information about the OS account to which the current process belongs. T
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<OsAccountInfo> | Promise used to return the OS account information obtained. |
+| Promise&lt;OsAccountInfo&gt; | Promise used to return the OS account information obtained. |
 
 **Example**
 
@@ -3810,6 +3883,7 @@ accountManager.queryCurrentOsAccount().then((accountInfo: osAccount.OsAccountInf
 
 ```
 
+<a id="querydistributedvirtualdeviceid"></a>
 ## queryDistributedVirtualDeviceId
 
 ```TypeScript
@@ -3830,7 +3904,7 @@ Queries the ID of a distributed virtual device. This API uses an asynchronous ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the distributed virtual device ID obtained. Otherwise, **data** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the result.If the operation is successful, **err** is **null** and **data** is the distributed virtual device ID obtained. Otherwise, **data** is an error object. |
 
 **Error codes:**
 
@@ -3861,6 +3935,7 @@ try {
 
 ```
 
+<a id="querydistributedvirtualdeviceid-1"></a>
 ## queryDistributedVirtualDeviceId
 
 ```TypeScript
@@ -3881,7 +3956,7 @@ Queries the ID of this distributed virtual device. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the distributed virtual device ID obtained. |
+| Promise&lt;string&gt; | Promise used to return the distributed virtual device ID obtained. |
 
 **Error codes:**
 

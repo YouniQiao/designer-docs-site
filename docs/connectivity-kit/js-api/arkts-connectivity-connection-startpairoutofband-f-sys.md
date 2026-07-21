@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="startpairoutofband"></a>
 ## startPairOutOfBand
 
 ```TypeScript
@@ -42,7 +43,7 @@ Starts pairing with the specific remote Bluetooth device using the Out Of Band m
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="exportkey"></a>
 ## exportKey
 
 ```TypeScript
@@ -18,7 +19,7 @@ Exports a key. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** exportKeyItem(keyAlias:
+**Substitutes:** [exportKeyItem(keyAlias:](arkts-universalkeystore-huks-exportkeyitem-f.md#exportkeyitem-1)
 
 <!--Device-huks-function exportKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void--><!--Device-huks-function exportKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void-End-->
 
@@ -30,7 +31,7 @@ Exports a key. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Key alias, which must be the same as the alias used when the key was generated. |
 | options | [HuksOptions](arkts-universalkeystore-huks-huksoptions-i.md) | Yes | Empty object (leave this parameter empty). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HuksResult> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the obtained **HuksResult**. Otherwise, **err** is an error object.**outData** of **HuksResult** returns the public key exported. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HuksResult&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**, and **data** is the obtained **HuksResult**. Otherwise, **err** is an error object.**outData** of **HuksResult** returns the public key exported. |
 
 **Example**
 
@@ -48,6 +49,7 @@ huks.exportKey(keyAlias, emptyOptions, (err, data) => {
 ```
 
 
+<a id="exportkey-1"></a>
 ## exportKey
 
 ```TypeScript
@@ -60,7 +62,7 @@ Exports a key. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** exportKeyItem(keyAlias:
+**Substitutes:** [exportKeyItem(keyAlias:](arkts-universalkeystore-huks-exportkeyitem-f.md#exportkeyitem-1)
 
 <!--Device-huks-function exportKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>--><!--Device-huks-function exportKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>-End-->
 
@@ -77,7 +79,7 @@ Exports a key. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksResult> | Promise that returns **HuksResult**. **outData** of **HuksResult** returns the public key exported from HUKS. |
+| Promise&lt;HuksResult&gt; | Promise that returns **HuksResult**. **outData** of **HuksResult** returns the public key exported from HUKS. |
 
 **Example**
 

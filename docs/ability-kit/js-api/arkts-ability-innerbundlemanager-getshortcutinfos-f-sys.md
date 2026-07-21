@@ -6,6 +6,7 @@
 import { BundleStatusCallback } from '@kit.AbilityKit';
 ```
 
+<a id="getshortcutinfos"></a>
 ## getShortcutInfos
 
 ```TypeScript
@@ -24,7 +25,7 @@ Obtains an array of the shortcut information based on a given bundle name. This 
 
 **Deprecated since:** 9
 
-**Substitutes:** getShortcutInfo(bundleName
+**Substitutes:** [getShortcutInfo(bundleName](arkts-ability-launcherbundlemanager-getshortcutinfo-f-sys.md#getshortcutinfo-1)
 
 **Required permissions:** ohos.permission.GET_BUNDLE_INFO_PRIVILEGED
 
@@ -39,9 +40,10 @@ Obtains an array of the shortcut information based on a given bundle name. This 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<ShortcutInfo>> | Yes | Callback used to return an array of the shortcut information. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ShortcutInfo&gt;&gt; | Yes | Callback used to return an array of the shortcut information. |
 
 
+<a id="getshortcutinfos-1"></a>
 ## getShortcutInfos
 
 ```TypeScript
@@ -60,7 +62,7 @@ Obtains an array of the shortcut information based on a given bundle name. This 
 
 **Deprecated since:** 9
 
-**Substitutes:** getShortcutInfo(bundleName
+**Substitutes:** [getShortcutInfo(bundleName](arkts-ability-launcherbundlemanager-getshortcutinfo-f-sys.md#getshortcutinfo-1)
 
 **Required permissions:** ohos.permission.GET_BUNDLE_INFO_PRIVILEGED
 
@@ -80,5 +82,5 @@ Obtains an array of the shortcut information based on a given bundle name. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ShortcutInfo>> | Promise used to return an array of the shortcut information. |
+| Promise&lt;Array&lt;ShortcutInfo&gt;&gt; | Promise used to return an array of the shortcut information. |
 

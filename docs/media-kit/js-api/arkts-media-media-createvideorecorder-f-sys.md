@@ -6,6 +6,7 @@
 import { media } from '@kit.MediaKit';
 ```
 
+<a id="createvideorecorder"></a>
 ## createVideoRecorder
 
 ```TypeScript
@@ -26,7 +27,7 @@ The maintenance of this interface has been stopped since version api 9. Please u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<VideoRecorder> | Yes | used to return AudioPlayer instance if the operation is successful; returns null otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;VideoRecorder&gt; | Yes | used to return AudioPlayer instance if the operation is successful; returns null otherwise. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ media.createVideoRecorder((error: BusinessError, video: media.VideoRecorder) => 
 ```
 
 
+<a id="createvideorecorder-1"></a>
 ## createVideoRecorder
 
 ```TypeScript
@@ -73,7 +75,7 @@ The maintenance of this interface has been stopped since version api 9. Please u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<VideoRecorder> | A Promise instance used to return VideoRecorder instance if the operation is successful; returns null otherwise. |
+| Promise&lt;VideoRecorder&gt; | A Promise instance used to return VideoRecorder instance if the operation is successful; returns null otherwise. |
 
 **Error codes:**
 

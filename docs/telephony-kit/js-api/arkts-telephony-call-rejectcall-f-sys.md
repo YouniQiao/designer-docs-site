@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="rejectcall"></a>
 ## rejectCall
 
 ```TypeScript
@@ -30,7 +31,7 @@ Reject the incoming call.
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call to reject. |
 | options | [RejectMessageOptions](arkts-telephony-call-rejectmessageoptions-i-sys.md) | Yes | Indicates the text message to reject. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of rejectCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of rejectCall. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ call.rejectCall(1, rejectMessageOptions, (err: BusinessError) => {
 ```
 
 
+<a id="rejectcall-1"></a>
 ## rejectCall
 
 ```TypeScript
@@ -92,7 +94,7 @@ Reject the incoming call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the rejectCall. |
+| Promise&lt;void&gt; | The promise returned by the rejectCall. |
 
 **Error codes:**
 
@@ -123,6 +125,7 @@ call.rejectCall(1, rejectMessageOptions).then(() => {
 ```
 
 
+<a id="rejectcall-2"></a>
 ## rejectCall
 
 ```TypeScript
@@ -146,7 +149,7 @@ Reject the incoming call.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callId | number | Yes | Indicates the identifier of the call to reject. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of rejectCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of rejectCall. |
 
 **Error codes:**
 
@@ -176,6 +179,7 @@ call.rejectCall(1, (err: BusinessError) => {
 ```
 
 
+<a id="rejectcall-3"></a>
 ## rejectCall
 
 ```TypeScript
@@ -198,7 +202,7 @@ Reject the incoming call without callId.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of rejectCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of rejectCall. |
 
 **Error codes:**
 
@@ -228,6 +232,7 @@ call.rejectCall((err: BusinessError) => {
 ```
 
 
+<a id="rejectcall-4"></a>
 ## rejectCall
 
 ```TypeScript
@@ -251,7 +256,7 @@ Reject the incoming call without callId.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [RejectMessageOptions](arkts-telephony-call-rejectmessageoptions-i-sys.md) | Yes | Indicates the text message to reject. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of rejectCall. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of rejectCall. |
 
 **Error codes:**
 

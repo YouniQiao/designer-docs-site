@@ -14,6 +14,7 @@ Stream from which data can be read. A readable stream is used to read data from 
 import { stream } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -37,6 +38,7 @@ let readableStream = new stream.Readable();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -69,13 +71,14 @@ let readableStream = new stream.Readable(option);
 
 ```
 
+<a id="doinitialize"></a>
 ## doInitialize
 
 ```TypeScript
 doInitialize(callback: Function): void
 ```
 
-You need to implement this API. It is called when the readable stream calls [on](arkts-arkts-stream-writable-c.md#on-1) for the first time. This API uses an asynchronous callback to return the result.
+You need to implement this API. It is called when the readable stream calls [on](stream.Writable#on(event: string, callback: Callback<emitter.EventData>)) for the first time. This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -89,7 +92,7 @@ You need to implement this API. It is called when the readable stream calls [on]
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Callback function. |
+| callback | Function | Yes | Callback function. |
 
 **Example**
 
@@ -110,6 +113,7 @@ myReadable.on('data', () => {
 
 ```
 
+<a id="doread"></a>
 ## doRead
 
 ```TypeScript
@@ -130,7 +134,7 @@ A data read API that needs to be implemented in child classes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| size | number | Yes | Number of bytes to read. Value range: 0 &lt;= size &lt;= Number.MAX_VALUE |
+| size | number | Yes | Number of bytes to read. Value range: 0 <= size <= Number.MAX_VALUE |
 
 **Example**
 
@@ -151,6 +155,7 @@ readable.on('data', () => {
 
 ```
 
+<a id="ispaused"></a>
 ## isPaused
 
 ```TypeScript
@@ -192,6 +197,7 @@ console.info("Readable isPaused", readableStream.isPaused()); // Readable isPaus
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -213,7 +219,7 @@ Unregisters an event processing callback used to listen for different events on 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | string | Yes | Type of the event. The following events are supported: |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<emitter.EventData> | No | Callback function. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;emitter.EventData&gt; | No | Callback function. |
 
 **Example**
 
@@ -241,6 +247,7 @@ readable.push('test');
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -262,7 +269,7 @@ Registers an event processing callback to listen for different events on the rea
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | string | Yes | Type of the event. The following events are supported: |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<emitter.EventData> | Yes | Callback function used to return the event data. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;emitter.EventData&gt; | Yes | Callback function used to return the event data. |
 
 **Example**
 
@@ -285,6 +292,7 @@ readable.on('error', () => {
 
 ```
 
+<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -325,6 +333,7 @@ console.info("Readable test pause", readableStream.isPaused()); // Readable test
 
 ```
 
+<a id="pipe"></a>
 ## pipe
 
 ```TypeScript
@@ -346,7 +355,7 @@ Attaches a writable stream to the readable stream to implement automatic data tr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | destination | [Writable](arkts-arkts-stream-writable-c.md) | Yes | Writable stream that receives data. |
-| options | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Reserved. |
+| options | Object | No | Reserved. |
 
 **Return value:**
 
@@ -385,6 +394,7 @@ readable.pipe(writable);
 
 ```
 
+<a id="push"></a>
 ## push
 
 ```TypeScript
@@ -433,6 +443,7 @@ console.info("Readable push test", readable.readableLength); // Readable push te
 
 ```
 
+<a id="read"></a>
 ## read
 
 ```TypeScript
@@ -487,6 +498,7 @@ console.info('Readable data is', dataChunk); // Readable data is test
 
 ```
 
+<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -527,6 +539,7 @@ console.info("Readable test resume", !readableStream.isPaused()); // After a suc
 
 ```
 
+<a id="setencoding"></a>
 ## setEncoding
 
 ```TypeScript
@@ -573,6 +586,7 @@ console.info("Readable result", result); // Readable result true
 
 ```
 
+<a id="unpipe"></a>
 ## unpipe
 
 ```TypeScript

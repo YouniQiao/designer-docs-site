@@ -1,6 +1,6 @@
 # GetInputDataOptions (System API)
 
-Represents a set of optional parameters for [onGetData](../../../../reference/apis-basic-services-kit/js-apis-osAccount-sys.md#ongetdata8).
+Represents a set of optional parameters for [onGetData](docroot://reference/apis-basic-services-kit/js-apis-osAccount-sys.md#ongetdata8).
 
 **Since:** 12
 

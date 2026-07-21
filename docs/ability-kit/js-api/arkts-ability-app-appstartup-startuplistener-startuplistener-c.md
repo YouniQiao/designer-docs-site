@@ -1,6 +1,6 @@
 # StartupListener
 
-The module defines the task listener used in [App Startup](../../../../application-models/app-startup.md).
+The module defines the task listener used in [App Startup](docroot://application-models/app-startup.md).
 
 **Since:** 12
 
@@ -14,6 +14,7 @@ The module defines the task listener used in [App Startup](../../../../applicati
 import { StartupListener } from '@kit.AbilityKit';
 ```
 
+<a id="oncompleted"></a>
 ## onCompleted
 
 ```TypeScript
@@ -34,7 +35,7 @@ Called when all startup tasks complete.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| error | [BusinessError](../../apis-arkui/arkts-components/arkts-arkui-businesserror-t.md)<void> | Yes | Indicates the error during execution. |
+| error | [BusinessError](../../apis-arkui/arkts-components/arkts-arkui-businesserror-t.md)&lt;void&gt; | Yes | Indicates the error during execution. |
 
 **Example**
 

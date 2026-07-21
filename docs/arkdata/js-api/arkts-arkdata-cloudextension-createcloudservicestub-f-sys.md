@@ -6,6 +6,7 @@
 import { cloudExtension } from '@kit.ArkData';
 ```
 
+<a id="createcloudservicestub"></a>
 ## createCloudServiceStub
 
 ```TypeScript
@@ -32,7 +33,7 @@ Creates a RemoteObject instance based on a CloudService instance.The system uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<rpc.RemoteObject> | Promise used to return the RemoteObject instance of CloudService. |
+| Promise&lt;rpc.RemoteObject&gt; | Promise used to return the RemoteObject instance of CloudService. |
 
 **Example**
 

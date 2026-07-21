@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="off"></a>
 ## off('wifiStateChange')
 
 ```TypeScript
@@ -31,7 +32,7 @@ All callback functions will be deregistered If there is no specific callback par
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wifiStateChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ All callback functions will be deregistered If there is no specific callback par
 ```
 
 
+<a id="off-1"></a>
 ## off('wifiConnectionChange')
 
 ```TypeScript
@@ -83,7 +85,7 @@ Unsubscribe Wi-Fi connection change events.All callback functions will be deregi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wifiConnectionChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -112,6 +114,7 @@ Unsubscribe Wi-Fi connection change events.All callback functions will be deregi
 ```
 
 
+<a id="off-2"></a>
 ## off('wifiScanStateChange')
 
 ```TypeScript
@@ -135,7 +138,7 @@ Unsubscribe Wi-Fi scan status change events.All callback functions will be dereg
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wifiScanStateChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -164,6 +167,7 @@ Unsubscribe Wi-Fi scan status change events.All callback functions will be dereg
 ```
 
 
+<a id="off-3"></a>
 ## off('wifiRssiChange')
 
 ```TypeScript
@@ -185,7 +189,7 @@ Unsubscribe Wi-Fi rssi change events.All callback functions will be deregistered
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'wifiRssiChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -214,6 +218,7 @@ Unsubscribe Wi-Fi rssi change events.All callback functions will be deregistered
 ```
 
 
+<a id="off-4"></a>
 ## off('hotspotStateChange')
 
 ```TypeScript
@@ -235,7 +240,7 @@ Unsubscribe Wi-Fi hotspot state change events.All callback functions will be der
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'hotspotStateChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -264,6 +269,7 @@ Unsubscribe Wi-Fi hotspot state change events.All callback functions will be der
 ```
 
 
+<a id="off-5"></a>
 ## off('p2pStateChange')
 
 ```TypeScript
@@ -285,7 +291,7 @@ Unsubscribe P2P status change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pStateChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -314,6 +320,7 @@ Unsubscribe P2P status change events.
 ```
 
 
+<a id="off-6"></a>
 ## off('p2pConnectionChange')
 
 ```TypeScript
@@ -335,7 +342,7 @@ Unsubscribe P2P connection change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pConnectionChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WifiP2pLinkedInfo> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WifiP2pLinkedInfo&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -364,6 +371,7 @@ Unsubscribe P2P connection change events.
 ```
 
 
+<a id="off-7"></a>
 ## off('p2pDeviceChange')
 
 ```TypeScript
@@ -383,7 +391,7 @@ Unsubscribe P2P local device change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pDeviceChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WifiP2pDevice> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WifiP2pDevice&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -412,6 +420,7 @@ Unsubscribe P2P local device change events.
 ```
 
 
+<a id="off-8"></a>
 ## off('p2pPeerDeviceChange')
 
 ```TypeScript
@@ -431,7 +440,7 @@ Unsubscribe P2P peer device change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pPeerDeviceChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<WifiP2pDevice[]> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;WifiP2pDevice[]&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -460,6 +469,7 @@ Unsubscribe P2P peer device change events.
 ```
 
 
+<a id="off-9"></a>
 ## off('p2pPersistentGroupChange')
 
 ```TypeScript
@@ -481,7 +491,7 @@ Unsubscribe P2P persistent group change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pPersistentGroupChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<void> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | the callback of off |
 
 **Error codes:**
 
@@ -510,6 +520,7 @@ Unsubscribe P2P persistent group change events.
 ```
 
 
+<a id="off-10"></a>
 ## off('p2pDiscoveryChange')
 
 ```TypeScript
@@ -531,7 +542,7 @@ Unsubscribe P2P discovery events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'p2pDiscoveryChange' | Yes | event name. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<number> | No | the callback of off |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | the callback of off |
 
 **Error codes:**
 

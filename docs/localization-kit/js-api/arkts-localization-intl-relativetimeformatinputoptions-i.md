@@ -52,7 +52,7 @@ Format of the output result. It determines whether numeric values are used to re
 
 The default value is **always**.
 
-For details about their display effects, see [Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 23](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 

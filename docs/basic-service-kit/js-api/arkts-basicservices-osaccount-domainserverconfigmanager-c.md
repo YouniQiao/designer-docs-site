@@ -14,6 +14,7 @@ Provides APIs for domain server configuration and management.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="addserverconfig"></a>
 ## addServerConfig
 
 ```TypeScript
@@ -34,13 +35,13 @@ Adds domain server configuration. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| parameters | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Configuration parameters of the domain server. |
+| parameters | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Configuration parameters of the domain server. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DomainServerConfig> | Promise used to return the configuration of the newly added domain server. |
+| Promise&lt;DomainServerConfig&gt; | Promise used to return the configuration of the newly added domain server. |
 
 **Error codes:**
 
@@ -72,6 +73,7 @@ osAccount.DomainServerConfigManager.addServerConfig(configParams).then((
 
 ```
 
+<a id="getaccountserverconfig"></a>
 ## getAccountServerConfig
 
 ```TypeScript
@@ -98,7 +100,7 @@ Obtains the server configuration of a domain account. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DomainServerConfig> | Promise used to return the domain server configuration of the account. |
+| Promise&lt;DomainServerConfig&gt; | Promise used to return the domain server configuration of the account. |
 
 **Error codes:**
 
@@ -127,6 +129,7 @@ osAccount.DomainServerConfigManager.getAccountServerConfig(accountInfo).then((
 
 ```
 
+<a id="getallserverconfigs"></a>
 ## getAllServerConfigs
 
 ```TypeScript
@@ -147,7 +150,7 @@ Obtains the configurations of all domain servers. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<DomainServerConfig>> | Promise used to return the domain server configuration obtained. |
+| Promise&lt;Array&lt;DomainServerConfig&gt;&gt; | Promise used to return the domain server configuration obtained. |
 
 **Error codes:**
 
@@ -180,6 +183,7 @@ osAccount.DomainServerConfigManager.addServerConfig(configParams).then((
 
 ```
 
+<a id="getserverconfig"></a>
 ## getServerConfig
 
 ```TypeScript
@@ -206,7 +210,7 @@ Obtains the domain server configuration. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DomainServerConfig> | Promise used to return the domain server configuration obtained. |
+| Promise&lt;DomainServerConfig&gt; | Promise used to return the domain server configuration obtained. |
 
 **Error codes:**
 
@@ -240,6 +244,7 @@ osAccount.DomainServerConfigManager.addServerConfig(configParams).then((
 
 ```
 
+<a id="removeserverconfig"></a>
 ## removeServerConfig
 
 ```TypeScript
@@ -266,7 +271,7 @@ Removes domain server configuration. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -298,6 +303,7 @@ osAccount.DomainServerConfigManager.addServerConfig(configParams).then((
 
 ```
 
+<a id="updateserverconfig"></a>
 ## updateServerConfig
 
 ```TypeScript
@@ -319,13 +325,13 @@ Updates the domain server configuration. This API uses a promise to return the r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | configId | string | Yes | Server configuration ID. |
-| parameters | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | Yes | Configuration parameters of the domain server. |
+| parameters | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Configuration parameters of the domain server. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DomainServerConfig> | Promise used to return the updated domain server configuration. |
+| Promise&lt;DomainServerConfig&gt; | Promise used to return the updated domain server configuration. |
 
 **Error codes:**
 

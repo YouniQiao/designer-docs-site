@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="abort"></a>
 ## abort
 
 ```TypeScript
@@ -26,8 +27,8 @@ Aborts the signing or signature verification operation. This method is mutually 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handle | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Handle of initialization. The value contains up to 8 bytes. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| handle | Uint8Array | Yes | Handle of initialization. The value contains up to 8 bytes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ try {
 ```
 
 
+<a id="abort-1"></a>
 ## abort
 
 ```TypeScript
@@ -81,13 +83,13 @@ Aborts the signing or signature verification operation. This method is mutually 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handle | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Handle of initialization. The value contains up to 8 bytes. |
+| handle | Uint8Array | Yes | Handle of initialization. The value contains up to 8 bytes. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

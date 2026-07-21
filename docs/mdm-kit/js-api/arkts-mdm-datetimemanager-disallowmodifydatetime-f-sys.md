@@ -6,6 +6,7 @@
 import { dateTimeManager } from '@kit.MDMKit';
 ```
 
+<a id="disallowmodifydatetime"></a>
 ## disallowModifyDateTime
 
 ```TypeScript
@@ -18,7 +19,7 @@ Disallows the device to modify the system time. This API uses an asynchronous ca
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setDisallowedPolicy(admin:
+**Substitutes:** [setDisallowedPolicy(admin:](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_SET_DATETIME
 
@@ -36,7 +37,7 @@ Disallows the device to modify the system time. This API uses an asynchronous ca
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | disallow | boolean | Yes | Whether to disallow modification of the system time. The value **true** means to disallow modification of the system time, and **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ dateTimeManager.disallowModifyDateTime(wantTemp, true, (err) => {
 ```
 
 
+<a id="disallowmodifydatetime-1"></a>
 ## disallowModifyDateTime
 
 ```TypeScript
@@ -83,7 +85,7 @@ Disallows the device to modify the system time. This API uses a promise to retur
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** setDisallowedPolicy(admin:
+**Substitutes:** [setDisallowedPolicy(admin:](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_SET_DATETIME
 
@@ -106,7 +108,7 @@ Disallows the device to modify the system time. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. An error object is thrown when the device fails to modify the system time. |
+| Promise&lt;void&gt; | Promise that returns no value. An error object is thrown when the device fails to modify the system time. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { wearDetection } from '@kit.ConnectivityKit';
 ```
 
+<a id="disableweardetection"></a>
 ## disableWearDetection
 
 ```TypeScript
@@ -29,7 +30,7 @@ Turn off the wearing detection switch.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | Indicates device ID.For example, "11:22:33:AA:BB:FF", |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the Callback result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the Callback result. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ try {
 ```
 
 
+<a id="disableweardetection-1"></a>
 ## disableWearDetection
 
 ```TypeScript
@@ -87,7 +89,7 @@ Turn off the wearing detection switch.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

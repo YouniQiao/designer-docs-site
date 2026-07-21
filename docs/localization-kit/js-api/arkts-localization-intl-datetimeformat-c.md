@@ -18,6 +18,7 @@ Performs date and time formatting.
 import { intl } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -50,6 +51,7 @@ let formatter: intl.DateTimeFormat = new intl.DateTimeFormat();
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -76,7 +78,7 @@ Creates a **DateTimeOptions** object for the specified locale.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | string \| Array<string> | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
+| locale | string \| Array&lt;string&gt; | Yes | Locale ID or locale ID array. If the input is a locale ID array, the first valid locale ID is used. |
 | options | [DateTimeOptions](arkts-localization-intl-datetimeoptions-i.md) | No | Options for creating the **DateTimeOptions** object.If no options are set, the default values of **year**, **month**, and **day** are **numeric**. |
 
 **Example**
@@ -92,6 +94,7 @@ formatter = new intl.DateTimeFormat(['ban', 'zh'], { dateStyle: 'full', timeStyl
 
 ```
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -118,7 +121,7 @@ Formats the date and time.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | Date and time. Note: The month starts from **0**. For example, **0** indicates January. |
+| date | Date | Yes | Date and time. Note: The month starts from **0**. For example, **0** indicates January. |
 
 **Return value:**
 
@@ -142,6 +145,7 @@ formattedDate = formatter.format(date); // formattedDate "Friday, 17 December 20
 
 ```
 
+<a id="formatrange"></a>
 ## formatRange
 
 ```TypeScript
@@ -168,8 +172,8 @@ Formats date and time ranges.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| startDate | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | Start date and time. Note: The month starts from **0**. For example, **0** indicates January. |
-| endDate | [Date](../../apis-na/arkts-apis/arkts-na-lib-es5-date-i.md) | Yes | End date and time. Note: The month starts from **0**. For example, **0** indicates January. |
+| startDate | Date | Yes | Start date and time. Note: The month starts from **0**. For example, **0** indicates January. |
+| endDate | Date | Yes | End date and time. Note: The month starts from **0**. For example, **0** indicates January. |
 
 **Return value:**
 
@@ -190,6 +194,7 @@ let formattedDateRange: string = formatter.formatRange(startDate, endDate); // f
 
 ```
 
+<a id="resolvedoptions"></a>
 ## resolvedOptions
 
 ```TypeScript

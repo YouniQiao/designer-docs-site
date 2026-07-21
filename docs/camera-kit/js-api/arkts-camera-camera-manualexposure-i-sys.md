@@ -18,6 +18,7 @@ ManualExposure extends [ManualExposureQuery](arkts-camera-camera-manualexposureq
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getexposure"></a>
 ## getExposure
 
 ```TypeScript
@@ -62,6 +63,7 @@ function getExposure(nightPhotoSession: camera.NightPhotoSession): number | unde
 
 ```
 
+<a id="setexposure"></a>
 ## setExposure
 
 ```TypeScript

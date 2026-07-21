@@ -6,6 +6,7 @@
 import { wifi } from '@kit.ConnectivityKit';
 ```
 
+<a id="adddeviceconfig"></a>
 ## addDeviceConfig
 
 ```TypeScript
@@ -40,7 +41,7 @@ Adds Wi-Fi connection configuration to the device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns {@code networkId} if the configuration is added; returns {@code -1} otherwise. |
+| Promise&lt;number&gt; | Returns {@code networkId} if the configuration is added; returns {@code -1} otherwise. |
 
 **Example**
 
@@ -77,6 +78,7 @@ try {
 ```
 
 
+<a id="adddeviceconfig-1"></a>
 ## addDeviceConfig
 
 ```TypeScript
@@ -106,7 +108,7 @@ Adds Wi-Fi connection configuration to the device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [WifiDeviceConfig](arkts-connectivity-wifi-wifideviceconfig-i-sys.md) | Yes | Indicates the device configuration for connection to the Wi-Fi network. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes |  |
 
 **Example**
 

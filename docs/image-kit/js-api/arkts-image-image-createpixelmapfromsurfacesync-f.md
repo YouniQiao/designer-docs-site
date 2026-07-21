@@ -6,6 +6,7 @@
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="createpixelmapfromsurfacesync"></a>
 ## createPixelMapFromSurfaceSync
 
 ```TypeScript
@@ -53,6 +54,7 @@ async function Demo(surfaceId: string) {
 ```
 
 
+<a id="createpixelmapfromsurfacesync-1"></a>
 ## createPixelMapFromSurfaceSync
 
 ```TypeScript

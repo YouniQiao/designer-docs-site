@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="getprivatecertificates"></a>
 ## getPrivateCertificates
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the credentials for installing the application. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMResult> | Promise used to return credentials obtained, which is **credentialList** in [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md). |
+| Promise&lt;CMResult&gt; | Promise used to return credentials obtained, which is **credentialList** in [CMResult](arkts-devicecertificate-certificatemanager-cmresult-i.md). |
 
 **Error codes:**
 

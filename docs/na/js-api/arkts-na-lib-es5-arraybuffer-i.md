@@ -4,6 +4,7 @@ Represents a raw buffer of binary data, which is used to store data for the diff
 
 <!--Device-unnamed-interface ArrayBuffer--><!--Device-unnamed-interface ArrayBuffer-End-->
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript
@@ -25,7 +26,7 @@ Returns a section of an ArrayBuffer.
 
 | Type | Description |
 | --- | --- |
-| [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) |  |
+| ArrayBuffer |  |
 
 ## byteLength
 

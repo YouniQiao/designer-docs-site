@@ -1,5 +1,6 @@
 # copyFile
 
+<a id="copyfile"></a>
 ## copyFile
 
 ```TypeScript
@@ -30,9 +31,10 @@ Copies a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 
+<a id="copyfile-1"></a>
 ## copyFile
 
 ```TypeScript
@@ -57,9 +59,10 @@ Copies a file. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | src | string \| number | Yes | Path or file descriptor of the source file to copy. |
 | dest | string \| number | Yes | Path or file descriptor of the destination file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file is copied asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when the file is copied asynchronously. |
 
 
+<a id="copyfile-2"></a>
 ## copyFile
 
 ```TypeScript
@@ -100,5 +103,5 @@ Copies a file. This API uses an asynchronous callback to return the result.
 | src | string \| number | Yes | Path or file descriptor of the source file to copy. |
 | dest | string \| number | Yes | Path or file descriptor of the destination file. |
 | mode | number | Yes | Option for overwriting the destination file. The default value is **0**, which is the only value supported.<br>**0**: Overwrite the file with the same name completely and truncate the part that is not overwritten. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback invoked when the file is copied asynchronously. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback invoked when the file is copied asynchronously. |
 

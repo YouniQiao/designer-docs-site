@@ -1,6 +1,6 @@
 # StartupConfig
 
-The module defines the configuration of [AppStartup](../../../../application-models/app-startup.md).
+The module defines the configuration of [AppStartup](docroot://application-models/app-startup.md).
 
 **Since:** 12
 

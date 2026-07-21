@@ -4,7 +4,7 @@ The **AbilityDelegatorArgs** module provides APIs to obtain an **AbilityDelegato
 
 > **NOTE**  
 >  
-> The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md).
+> The APIs of this module can be used only in [JsUnit](docroot://application-test/unittest-guidelines.md).
 
 **Since:** 8
 
@@ -38,7 +38,7 @@ parameters: Record<string, string>
 
 Parameters of the unit test that is started currently.
 
-**Type:** Record<string, string>
+**Type:** Record&lt;string, string&gt;
 
 **Since:** 8
 

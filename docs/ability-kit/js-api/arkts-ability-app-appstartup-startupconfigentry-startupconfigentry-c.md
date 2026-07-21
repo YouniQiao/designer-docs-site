@@ -1,6 +1,6 @@
 # StartupConfigEntry
 
-The module provides the capability to configure [AppStartup](../../../../application-models/app-startup.md).
+The module provides the capability to configure [AppStartup](docroot://application-models/app-startup.md).
 
 **Since:** 12
 
@@ -14,15 +14,16 @@ The module provides the capability to configure [AppStartup](../../../../applica
 import { StartupConfigEntry } from '@kit.AbilityKit';
 ```
 
+<a id="onconfig"></a>
 ## onConfig
 
 ```TypeScript
 onConfig?(): StartupConfig
 ```
 
-Called if the HAP of the AbilityStage has [defined the AppStartup configuration file](../../../../application-models/app-startup.md#defining-startup-parameter-configuration). This callback is triggered before [AbilityStage.onCreate](arkts-ability-app-ability-abilitystage-abilitystage-c.md#oncreate-1).
+Called if the HAP of the AbilityStage has [defined the AppStartup configuration file](docroot://application-models/app-startup.md#defining-startup-parameter-configuration). This callback is triggered before [AbilityStage.onCreate](arkts-ability-app-ability-abilitystage-abilitystage-c.md#oncreate-1).
 
-You can set the AppStartup configuration within this callback. For details, see [Setting Startup Parameters](../../../../application-models/app-startup.md#setting-startup-parameters).
+You can set the AppStartup configuration within this callback. For details, see [Setting Startup Parameters](docroot://application-models/app-startup.md#setting-startup-parameters).
 
 **Since:** 12
 
@@ -70,15 +71,16 @@ export default class MyStartupConfigEntry extends StartupConfigEntry {
 
 ```
 
+<a id="onrequestcustommatchrule"></a>
 ## onRequestCustomMatchRule
 
 ```TypeScript
 onRequestCustomMatchRule(want: Want): string
 ```
 
-Called if the HAP of the AbilityStage has [defined the AppStartup configuration file](../../../../application-models/app-startup.md#defining-startup-parameter-configuration). This callback is triggered after [StartupConfigEntry.onConfig](arkts-ability-app-appstartup-startupconfigentry-startupconfigentry-c.md#onconfig-1) but before [AbilityStage.onCreate](arkts-ability-app-ability-abilitystage-abilitystage-c.md#oncreate-1).
+Called if the HAP of the AbilityStage has [defined the AppStartup configuration file](docroot://application-models/app-startup.md#defining-startup-parameter-configuration). This callback is triggered after [StartupConfigEntry.onConfig](arkts-ability-app-appstartup-startupconfigentry-startupconfigentry-c.md#onconfig-1) but before [AbilityStage.onCreate](arkts-ability-app-ability-abilitystage-abilitystage-c.md#oncreate-1).
 
-You can use this callback to return different custom matching rules based on parameters in the Want object passed by the caller to start the UIAbility. . AppStartup matches these rules with the **customization** field in **matchRules** of the startup task configuration. If a match is successful, the task is executed automatically. For details about the matching rules, see [Adding Task Matching Rules](../../../../application-models/app-startup.md#adding-task-matching-rules).
+You can use this callback to return different custom matching rules based on parameters in the Want object passed by the caller to start the UIAbility. . AppStartup matches these rules with the **customization** field in **matchRules** of the startup task configuration. If a match is successful, the task is executed automatically. For details about the matching rules, see [Adding Task Matching Rules](docroot://application-models/app-startup.md#adding-task-matching-rules).
 
 This API is typically used in scenarios where tasks cannot be matched directly using URI, action, or intent name rules. It allows for further refinement of matching rules.
 

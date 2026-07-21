@@ -69,8 +69,8 @@ Creates a **Grid** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scroller | Scroller | No | Controller, which can be bound to scrollable components.<br>**NOTE**<br>It cannot bebound to the same scrolling control object as other scrollable components, such as[ArcList]{@link @ohos.arkui.ArcList}, [List]{@link list}, [Grid]{@link grid}, [Scroll]{@link scroll}, and[WaterFlow]{@link water_flow}. |
-| layoutOptions | GridLayoutOptions | No | Grid layout options. |
+| scroller | [Scroller](arkts-arkui-scroller-c.md) | No | Controller, which can be bound to scrollable components.<br>**NOTE**<br>It cannot be bound to the same scrolling control object as other scrollable components, such as [ArcList]{@link @ohos.arkui.ArcList}, [List]{@link list}, [Grid]{@link grid}, [Scroll]{@link scroll}, and [WaterFlow]{@link water_flow}.  |
+| layoutOptions | [GridLayoutOptions](arkts-arkui-gridlayoutoptions-i.md) | No | Grid layout options. |
 
 ## Summary
 

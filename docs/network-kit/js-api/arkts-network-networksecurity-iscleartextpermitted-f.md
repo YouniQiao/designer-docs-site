@@ -6,6 +6,7 @@
 import { networkSecurity } from '@kit.NetworkKit';
 ```
 
+<a id="iscleartextpermitted"></a>
 ## isCleartextPermitted
 
 ```TypeScript

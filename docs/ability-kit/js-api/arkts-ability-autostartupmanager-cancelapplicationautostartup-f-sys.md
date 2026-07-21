@@ -6,6 +6,7 @@
 import { autoStartupManager } from '@kit.AbilityKit';
 ```
 
+<a id="cancelapplicationautostartup"></a>
 ## cancelApplicationAutoStartup
 
 ```TypeScript
@@ -31,7 +32,7 @@ Cancels the auto-startup setting for an application component. This API uses an 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | [AutoStartupInfo](arkts-ability-common-autostartupinfo-t-sys.md) | Yes | Information about the target application component. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the cancellation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the cancellation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -45,6 +46,7 @@ Cancels the auto-startup setting for an application component. This API uses an 
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Failed to connect to the system service. |
 
 
+<a id="cancelapplicationautostartup-1"></a>
 ## cancelApplicationAutoStartup
 
 ```TypeScript
@@ -75,7 +77,7 @@ Cancels the auto-startup setting for an application component. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

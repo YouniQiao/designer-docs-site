@@ -6,6 +6,7 @@
 import { fileAccess } from '@kit.CoreFileKit';
 ```
 
+<a id="getfileaccessabilityinfo"></a>
 ## getFileAccessAbilityInfo
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains information about all Wants with **extension** set to **fileAccess** in 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Want>> | Yes | The callback is used to return a Array&lt;Want&gt; object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Want&gt;&gt; | Yes | The callback is used to return a Array<Want> object. |
 
 **Error codes:**
 
@@ -92,6 +93,7 @@ async function getFileAccessAbilityInfo() {
 ```
 
 
+<a id="getfileaccessabilityinfo-1"></a>
 ## getFileAccessAbilityInfo
 
 ```TypeScript
@@ -118,7 +120,7 @@ Obtains information about all Wants with **extension** set to **fileAccess** in 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Want>> | Returns the wants. |
+| Promise&lt;Array&lt;Want&gt;&gt; | Returns the wants. |
 
 **Error codes:**
 

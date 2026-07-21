@@ -6,6 +6,7 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -17,7 +18,7 @@ Creates an upload or download task and adds it to the queue. This API uses an as
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -36,7 +37,7 @@ Creates an upload or download task and adds it to the queue. This API uses an as
 | --- | --- | --- | --- |
 | context | [BaseContext](../../apis-ability-kit/arkts-apis/arkts-ability-common-basecontext-t.md) | Yes | Application-based context. |
 | config | [Config](arkts-basicservices-agent-config-i.md) | Yes | Task configuration. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Task> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the **Task** object obtained. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Task&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the **Task** object obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ Creates an upload or download task and adds it to the queue. This API uses an as
 | [21900005](../../apis-basic-services-kit/errorcode-request.md#21900005-task-mode-error) | Operation with wrong task mode. |
 
 
+<a id="create-1"></a>
 ## create
 
 ```TypeScript
@@ -61,7 +63,7 @@ Creates an upload or download task and adds it to the queue. This API uses a pro
 > **NOTE**  
 >  
 > For details about how to obtain the context in the example, see  
-> [Obtaining the Context of UIAbility](../../../../application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
+> [Obtaining the Context of UIAbility](docroot://application-models/uiability-usage.md#obtaining-the-context-of-uiability)  
 > .
 
 **Since:** 10
@@ -85,7 +87,7 @@ Creates an upload or download task and adds it to the queue. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Task> | Promise used to return the created task. |
+| Promise&lt;Task&gt; | Promise used to return the created task. |
 
 **Error codes:**
 

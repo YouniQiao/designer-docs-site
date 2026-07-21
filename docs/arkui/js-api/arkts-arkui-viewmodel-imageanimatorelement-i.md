@@ -8,6 +8,7 @@ Image animator element
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
+<a id="getstate"></a>
 ## getState
 
 ```TypeScript
@@ -30,6 +31,7 @@ Obtains the playback state. Available values are as follows:Playing Paused Stopp
 | --- | --- |
 | "Playing" | @syscap SystemCapability.ArkUI.ArkUI.Lite@famodelonly |
 
+<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -46,6 +48,7 @@ Pauses the frame animation playback of an image.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
+<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -62,6 +65,7 @@ Resumes the frame animation playback of an image.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
+<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -78,6 +82,7 @@ Starts to play the frame animation of an image. If this method is called again, 
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Lite
 
+<a id="stop"></a>
 ## stop
 
 ```TypeScript

@@ -14,6 +14,7 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="mode"></a>
 ## mode
 
 ```TypeScript
@@ -42,8 +43,9 @@ Sets the route mode used for redirecting the user from the **NavRouter** compone
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | [NavRouteMode](arkts-arkui-nav-router-navroutemode-e.md) | Yes | Route mode used for redirection.<br>Default value:**NavRouteMode.PUSH_WITH_RECREATE** |
+| mode | [NavRouteMode](arkts-arkui-navroutemode-e.md) | Yes | Route mode used for redirection.<br>Default value:**NavRouteMode.PUSH_WITH_RECREATE** |
 
+<a id="onstatechange"></a>
 ## onStateChange
 
 ```TypeScript
@@ -70,5 +72,5 @@ Called when the component activation status changes. **onStateChange(true)** is 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (isActivated: boolean) => void | Yes | Component activation status. The value **true** means that component is activated,and **false** means the opposite. |
+| callback | (isActivated: boolean) =&gt; void | Yes | Component activation status. The value **true** means that component is activated,and **false** means the opposite. |
 

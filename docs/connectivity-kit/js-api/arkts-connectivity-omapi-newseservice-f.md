@@ -6,6 +6,7 @@
 import { omapi } from '@kit.ConnectivityKit';
 ```
 
+<a id="newseservice"></a>
 ## newSEService
 
 ```TypeScript
@@ -29,7 +30,7 @@ Establish a new connection that can be used to connect to all the SEs available 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'serviceState' | Yes | nfc serviceState |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ServiceState> | Yes | The callback to return the service. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ServiceState&gt; | Yes | The callback to return the service. |
 
 **Return value:**
 

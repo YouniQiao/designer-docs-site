@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="acquireformdata"></a>
 ## acquireFormData
 
 ```TypeScript
@@ -31,7 +32,7 @@ Requests data from the widget provider. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | formId | string | Yes | Widget ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Record<string, Object>> | Yes | Callback used to return the API call result and the shared data.<br>**Since:** 11 |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Record&lt;string, Object&gt;&gt; | Yes | Callback used to return the API call result and the shared data.<br>**Since:** 11 |
 
 **Error codes:**
 
@@ -46,6 +47,7 @@ Requests data from the widget provider. This API uses an asynchronous callback t
 | [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred.invalid input parameter during form operation |
 
 
+<a id="acquireformdata-1"></a>
 ## acquireFormData
 
 ```TypeScript
@@ -76,7 +78,7 @@ Requests data from the widget provider. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, Object>> | Promise used to return the API call result and the shared data. |
+| Promise&lt;Record&lt;string, Object&gt;&gt; | Promise used to return the API call result and the shared data. |
 
 **Error codes:**
 

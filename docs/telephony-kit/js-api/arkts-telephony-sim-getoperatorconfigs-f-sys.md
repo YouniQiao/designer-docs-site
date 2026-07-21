@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="getoperatorconfigs"></a>
 ## getOperatorConfigs
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the operatorconfigs of the SIM card in a specified slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<OperatorConfig>> | Yes | Indicates the callback for getting the operatorconfigs in a specified slot;returns empty OperatorConfig if no SIM card is inserted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;OperatorConfig&gt;&gt; | Yes | Indicates the callback for getting the operatorconfigs in a specified slot;returns empty OperatorConfig if no SIM card is inserted. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ sim.getOperatorConfigs(0, (err: BusinessError, data: Array<sim.OperatorConfig>) 
 ```
 
 
+<a id="getoperatorconfigs-1"></a>
 ## getOperatorConfigs
 
 ```TypeScript
@@ -84,7 +86,7 @@ Obtains the operatorconfigs of the SIM card in a specified slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<OperatorConfig>> | Returns the operatorconfigs in a specified slot;returns empty OperatorConfig if no SIM card is inserted. |
+| Promise&lt;Array&lt;OperatorConfig&gt;&gt; | Returns the operatorconfigs in a specified slot;returns empty OperatorConfig if no SIM card is inserted. |
 
 **Error codes:**
 

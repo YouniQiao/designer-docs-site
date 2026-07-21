@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="cancelmuted"></a>
 ## cancelMuted
 
 ```TypeScript
@@ -26,7 +27,7 @@ Unmute during a call.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of cancelMuted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of cancelMuted. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ call.cancelMuted((err: BusinessError) => {
 ```
 
 
+<a id="cancelmuted-1"></a>
 ## cancelMuted
 
 ```TypeScript
@@ -75,7 +77,7 @@ Unmute during a call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the cancelMuted. |
+| Promise&lt;void&gt; | The promise returned by the cancelMuted. |
 
 **Error codes:**
 

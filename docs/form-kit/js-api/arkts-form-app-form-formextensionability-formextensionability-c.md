@@ -14,6 +14,7 @@ Widget extension class. It provides APIs to notify the widget provider that a wi
 import { FormExtensionAbility } from '@kit.FormKit';
 ```
 
+<a id="onacquireformstate"></a>
 ## onAcquireFormState
 
 ```TypeScript
@@ -59,6 +60,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 ```
 
+<a id="onaddform"></a>
 ## onAddForm
 
 ```TypeScript
@@ -110,6 +112,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 ```
 
+<a id="oncasttonormalform"></a>
 ## onCastToNormalForm
 
 ```TypeScript
@@ -148,6 +151,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 ```
 
+<a id="onchangeformvisibility"></a>
 ## onChangeFormVisibility
 
 ```TypeScript
@@ -168,7 +172,7 @@ Called to notify the widget provider that the widget visibility status is being 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| newStatus | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, number> | Yes | ID and visibility status of the widget to be changed.<br>**Since:** 11 |
+| newStatus | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, number&gt; | Yes | ID and visibility status of the widget to be changed.<br>**Since:** 11 |
 
 **Example**
 
@@ -207,6 +211,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 ```
 
+<a id="onconfigurationupdate"></a>
 ## onConfigurationUpdate
 
 ```TypeScript
@@ -229,7 +234,7 @@ Called when system configuration items change. The **onConfigurationUpdate** cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| newConfig | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-common-configuration-i.md) | Yes | New configuration. |
+| newConfig | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-configuration-i.md) | Yes | New configuration. |
 
 **Example**
 
@@ -247,6 +252,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 ```
 
+<a id="onformevent"></a>
 ## onFormEvent
 
 ```TypeScript
@@ -285,6 +291,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 ```
 
+<a id="onformlocationchanged"></a>
 ## onFormLocationChanged
 
 ```TypeScript
@@ -330,6 +337,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
 
 ```
 
+<a id="onremoveform"></a>
 ## onRemoveForm
 
 ```TypeScript
@@ -367,6 +375,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 ```
 
+<a id="onsizechanged"></a>
 ## onSizeChanged
 
 ```TypeScript
@@ -406,6 +415,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 ```
 
+<a id="onstop"></a>
 ## onStop
 
 ```TypeScript
@@ -437,6 +447,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 ```
 
+<a id="onupdateform"></a>
 ## onUpdateForm
 
 ```TypeScript
@@ -460,7 +471,7 @@ Called to notify the widget provider that a widget is being updated, with update
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | formId | string | Yes | ID of the widget that requests to be updated. |
-| wantParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Object> | No | Parameters used for the update. |
+| wantParams | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | No | Parameters used for the update. |
 
 **Example**
 

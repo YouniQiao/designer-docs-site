@@ -6,6 +6,7 @@
 import { motion } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="on"></a>
 ## on('operatingHandChanged')
 
 ```TypeScript
@@ -31,7 +32,7 @@ If the device does not support this function, error code 801 is returned.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'operatingHandChanged' | Yes | Event type. This parameter has a fixed value of **operatingHandChanged**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OperatingHandStatus> | Yes | Callback used to return the result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OperatingHandStatus&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ try {
 ```
 
 
+<a id="on-1"></a>
 ## on('holdingHandChanged')
 
 ```TypeScript
@@ -84,7 +86,7 @@ Enables listening for holding hand status changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'holdingHandChanged' | Yes | Event type. The value **holdingHandChanged** indicates the holding hand status change event. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<HoldingHandStatus> | Yes | Callback used to return the holding hand status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;HoldingHandStatus&gt; | Yes | Callback used to return the holding hand status. |
 
 **Error codes:**
 

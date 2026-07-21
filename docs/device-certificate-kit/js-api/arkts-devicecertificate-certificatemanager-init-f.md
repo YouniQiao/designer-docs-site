@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -28,7 +29,7 @@ Indicates the initialization of signature and signature verification using crede
 | --- | --- | --- | --- |
 | authUri | string | Yes | Unique identifier of the credential to be used. The value contains up to 256 bytes. |
 | spec | [CMSignatureSpec](arkts-devicecertificate-certificatemanager-cmsignaturespec-i.md) | Yes | Parameters for the signing or signature verification operation. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<CMHandle> | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is the obtained **CMHandle**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CMHandle&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is the obtained **CMHandle**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ try {
 ```
 
 
+<a id="init-1"></a>
 ## init
 
 ```TypeScript
@@ -93,7 +95,7 @@ Initializes the signing or signature verification operation using the specified 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<CMHandle> | Promise used to return the operation result, that is, the **CMHandle** object. |
+| Promise&lt;CMHandle&gt; | Promise used to return the operation result, that is, the **CMHandle** object. |
 
 **Error codes:**
 

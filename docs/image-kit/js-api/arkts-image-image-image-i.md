@@ -18,6 +18,7 @@ Image properties are initialized only during image creation and cannot be change
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="getbufferdata"></a>
 ## getBufferData
 
 ```TypeScript
@@ -45,6 +46,7 @@ Obtains ImageBufferData from an image.
 | --- | --- |
 | [ImageBufferData](arkts-image-image-imagebufferdata-i.md) | Struct that encapsulates the image data buffer. If no struct is obtained,**null** is returned. |
 
+<a id="getcomponent"></a>
 ## getComponent
 
 ```TypeScript
@@ -64,8 +66,9 @@ Obtains the component buffer from the Image instance based on the color componen
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | componentType | [ComponentType](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-update-componenttype-e-sys.md) | Yes | Component type. (Currently, only **ComponentType:JPEG** is supported.The actual format is determined by the producer, for example, camera.) |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Component> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the component buffer obtained; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Component&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the component buffer obtained; otherwise, **err** is an error object. |
 
+<a id="getcomponent-1"></a>
 ## getComponent
 
 ```TypeScript
@@ -90,8 +93,9 @@ Obtains the component buffer from the Image instance based on the color componen
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Component> | Promise used to return the component buffer. |
+| Promise&lt;Component&gt; | Promise used to return the component buffer. |
 
+<a id="getmetadata"></a>
 ## getMetadata
 
 ```TypeScript
@@ -127,6 +131,7 @@ Obtains the HDR metadata from an image based on the HDR metadata type.
 | [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid parameter. |
 | [7600302](../errorcode-image.md#7600302-memory-copy-failure) | Memory copy failed. |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -151,8 +156,9 @@ Before releasing the instance, ensure that all asynchronous operations associate
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
+<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -177,7 +183,7 @@ Before releasing the instance, ensure that all asynchronous operations associate
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 ## clipRect
 
@@ -219,7 +225,7 @@ Color space of the image.
 readonly format: number
 ```
 
-Image format. For details, see [OH_NativeBuffer_Format](../../../../reference/apis-arkgraphics2d/c-apis/capi-buffer-common-h.md#oh_nativebuffer_format).
+Image format. For details, see [OH_NativeBuffer_Format](docroot://reference/apis-arkgraphics2d/c-apis/capi-buffer-common-h.md#oh_nativebuffer_format).
 
 **Type:** number
 
@@ -243,7 +249,7 @@ If the Image object stores camera capture stream data (JPEG image data), given t
 
 The type of data stored in the Image object depends on whether the application passes the surface ID in the receiver to a previewOutput or captureOutput object of the camera.
 
-For details about the best practices of camera preview and photo capture, see [Dual-Channel Preview (ArkTS)](../../../../media/camera/camera-dual-channel-preview.md) and [Photo Capture Sample (ArkTS)](../../../../media/camera/camera-shooting-case.md).
+For details about the best practices of camera preview and photo capture, see [Dual-Channel Preview (ArkTS)](docroot://media/camera/camera-dual-channel-preview.md) and [Photo Capture Sample (ArkTS)](docroot://media/camera/camera-shooting-case.md).
 
 **Type:** Size
 

@@ -22,7 +22,7 @@ import { common } from '@kit.MDMKit';
 accountId: number
 ```
 
-Account ID. The value is an integer greater than or equal to 0.You can obtain the account ID by calling the [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-2) API.The value must be an integer greater than or equal to 0.
+Account ID. The value is an integer greater than or equal to 0.You can obtain the account ID by calling the [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1) API.The value must be an integer greater than or equal to 0.
 
 **Type:** number
 
@@ -40,7 +40,7 @@ Account ID. The value is an integer greater than or equal to 0.You can obtain th
 appIdentifier: string
 ```
 
-[Unique identifier](../../apis-ability-kit/arkts-apis/arkts-ability-bundleinfo-signatureinfo-i.md) of an application. You can call the [bundleManager.getBundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-3)API to obtain **bundleInfo.signatureInfo.appIdentifier**.
+[Unique identifier](../../apis-ability-kit/arkts-apis/arkts-ability-bundleinfo-signatureinfo-i.md) of an application. You can call the [bundleManager.getBundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-getbundleinfo-f.md#getbundleinfo-1)API to obtain **bundleInfo.signatureInfo.appIdentifier**.
 
 **Type:** string
 

@@ -21,6 +21,7 @@ Provides API for obtaining the coordinates and size of the drawing area of a com
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
+<a id="getrectanglebyid"></a>
 ## getRectangleById
 
 ```TypeScript
@@ -32,7 +33,7 @@ Obtains the size, position, translation, scaling, rotation, and affine matrix in
 > **NOTE**  
 >  
 > This API should be called after the target component's layout is complete to obtain its size information. It is  
-> recommended that you use this API within [onAppear](../arkts-components/arkts-arkui-common-commonmethod-c.md#onappear-1).
+> recommended that you use this API within [onAppear](../arkts-components/arkts-arkui-commonmethod-c.md#onappear-1).
 
 **Since:** 10
 

@@ -16,6 +16,7 @@ Implements configuration, acquisition, and listening for properties.
 import { config } from '@kit.AccessibilityKit';
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the value of a property. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<T> | Promise used to return the value obtained. |
+| Promise&lt;T&gt; | Promise used to return the value obtained. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ config.highContrastText.get().then((data: boolean) => {
 
 ```
 
+<a id="get-1"></a>
 ## get
 
 ```TypeScript
@@ -79,7 +81,7 @@ Obtains the property value. This API uses an asynchronous callback to return the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<T> | Yes | Callback used to return the property value. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;T&gt; | Yes | Callback used to return the property value. |
 
 **Error codes:**
 
@@ -103,6 +105,7 @@ config.highContrastText.get((err: BusinessError, data: boolean) => {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -125,7 +128,7 @@ Cancels the listener for property changes. This API uses an asynchronous callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<T> | No | Callback used to unregister. The value must be the same as the value of **callback** in **on()**. If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;T&gt; | No | Callback used to unregister. The value must be the same as the value of **callback** in **on()**. If this parameter is not specified, listening will be disabled for all callbacks corresponding to the specified type. |
 
 **Error codes:**
 
@@ -145,6 +148,7 @@ config.highContrastText.off((data: boolean) => {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -167,7 +171,7 @@ Adds a listener for property changes. This API uses an asynchronous callback to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<T> | Yes | Callback invoked when the property changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;T&gt; | Yes | Callback invoked when the property changes. |
 
 **Error codes:**
 
@@ -188,6 +192,7 @@ config.highContrastText.on((data: boolean) => {
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -216,7 +221,7 @@ Sets the value of a property. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -242,6 +247,7 @@ config.highContrastText.set(value).then(() => {
 
 ```
 
+<a id="set-1"></a>
 ## set
 
 ```TypeScript
@@ -265,7 +271,7 @@ Sets the property value. This API uses an asynchronous callback to return the re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | value | T | Yes | Property value to set. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 

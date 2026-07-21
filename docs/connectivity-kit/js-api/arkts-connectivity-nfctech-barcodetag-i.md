@@ -10,6 +10,7 @@ Provides methods for accessing Barcode tag.
 
 **System capability:** SystemCapability.Communication.NFC.Tag
 
+<a id="getbarcode"></a>
 ## getBarcode
 
 ```TypeScript
@@ -32,7 +33,7 @@ Returns the barcode of a Barcode tag.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | The barcode of tag. |
+| Promise&lt;ArrayBuffer&gt; | The barcode of tag. |
 
 **Error codes:**
 

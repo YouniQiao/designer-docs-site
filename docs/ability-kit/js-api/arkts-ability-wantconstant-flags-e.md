@@ -95,7 +95,7 @@ FLAG_START_WITHOUT_TIPS = 0x40000000
 
 Disables the "No available applications" prompt during implicit application launches.
 
-When [launching an application implicitly](../../../../application-models/app-startup-overview.md), a prompt saying "No available applications" will appear if no matching application is found. You can use this flag to prevent this prompt from appearing.
+When [launching an application implicitly](docroot://application-models/app-startup-overview.md), a prompt saying "No available applications" will appear if no matching application is found. You can use this flag to prevent this prompt from appearing.
 
 **Since:** 11
 

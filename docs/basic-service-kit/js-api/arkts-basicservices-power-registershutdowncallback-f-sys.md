@@ -6,6 +6,7 @@
 import { power } from '@kit.BasicServicesKit';
 ```
 
+<a id="registershutdowncallback"></a>
 ## registerShutdownCallback
 
 ```TypeScript
@@ -28,7 +29,7 @@ Registers a callback to be invoked when the device is shut down or rebooted. Thi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** indicates that the device is rebooted, and **false** indicates that the device is shut down. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** indicates that the device is rebooted, and **false** indicates that the device is shut down. |
 
 **Error codes:**
 

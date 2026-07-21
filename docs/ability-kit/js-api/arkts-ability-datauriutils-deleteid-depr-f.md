@@ -1,5 +1,6 @@
 # deleteId
 
+<a id="deleteid"></a>
 ## deleteId
 
 ```TypeScript

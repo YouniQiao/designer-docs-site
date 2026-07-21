@@ -6,6 +6,7 @@
 import { screenLock } from '@kit.BasicServicesKit';
 ```
 
+<a id="onsystemevent"></a>
 ## onSystemEvent
 
 ```TypeScript
@@ -28,7 +29,7 @@ Register system event related to screen lock service.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SystemEvent> | Yes | the callback of onSystemEvent. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SystemEvent&gt; | Yes | the callback of onSystemEvent. |
 
 **Return value:**
 

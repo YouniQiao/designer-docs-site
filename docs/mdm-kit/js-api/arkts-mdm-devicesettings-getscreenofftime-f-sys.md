@@ -6,6 +6,7 @@
 import { deviceSettings } from '@kit.MDMKit';
 ```
 
+<a id="getscreenofftime"></a>
 ## getScreenOffTime
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains the device screen-off time. This API uses an asynchronous callback to re
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is the screen-off time in ms. If the operation fails, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is the screen-off time in ms. If the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ deviceSettings.getScreenOffTime(wantTemp, (err, result) => {
 ```
 
 
+<a id="getscreenofftime-1"></a>
 ## getScreenOffTime
 
 ```TypeScript
@@ -104,7 +106,7 @@ Obtains the device screen-off time. This API uses an asynchronous promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the screen-off time, in ms. |
+| Promise&lt;number&gt; | Promise used to return the screen-off time, in ms. |
 
 **Error codes:**
 

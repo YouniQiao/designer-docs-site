@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="on"></a>
 ## on('printerStateChange')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Registers a listener for printer state change events. This API uses a callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'printerStateChange' | Yes | Listening type. The value is fixed at **'printerStateChange'**. |
-| callback | (state: PrinterState, info: PrinterInfo) => void | Yes | Callback used to return the result. |
+| callback | (state: PrinterState, info: PrinterInfo) =&gt; void | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ print.on('printerStateChange', (state: print.PrinterState, info: print.PrinterIn
 ```
 
 
+<a id="on-1"></a>
 ## on('jobStateChange')
 
 ```TypeScript
@@ -80,7 +82,7 @@ Registers a listener for print job state change events. This API uses a callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'jobStateChange' | Yes | Listening type. The value is fixed at **'jobStateChange'**. |
-| callback | (state: PrintJobState, job: PrintJob) => void | Yes | Callback used to return the result. |
+| callback | (state: PrintJobState, job: PrintJob) =&gt; void | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -102,6 +104,7 @@ print.on('jobStateChange', (state: print.PrintJobState, job: print.PrintJob) => 
 ```
 
 
+<a id="on-2"></a>
 ## on('extInfoChange')
 
 ```TypeScript
@@ -125,7 +128,7 @@ Registers a listener for printer extension information change events. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'extInfoChange' | Yes | Listening type. The value is fixed at **'extInfoChange'**. |
-| callback | (extensionId: string, info: string) => void | Yes | Callback used to return the result. |
+| callback | (extensionId: string, info: string) =&gt; void | Yes | Callback used to return the result. |
 
 **Error codes:**
 

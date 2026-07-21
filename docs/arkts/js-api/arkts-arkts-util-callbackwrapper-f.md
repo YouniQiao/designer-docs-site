@@ -6,6 +6,7 @@
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="callbackwrapper"></a>
 ## callbackWrapper
 
 ```TypeScript
@@ -39,13 +40,13 @@ Calls back an asynchronous function. In the callback, the first parameter indica
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| original | [Function](../../apis-na/arkts-apis/arkts-na-lib-es2015-core-function-i.md) | Yes | Asynchronous function. |
+| original | Function | Yes | Asynchronous function. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| (err: Object, value: Object) => void | Callback function, in which the first parameter **err** indicates the cause of the rejection(the value is **null** if the promise has been resolved) and the second parameter **value** indicates the resolved value. |
+| (err: Object, value: Object) =&gt; void | Callback function, in which the first parameter **err** indicates the cause of the rejection(the value is **null** if the promise has been resolved) and the second parameter **value** indicates the resolved value. |
 
 **Example**
 

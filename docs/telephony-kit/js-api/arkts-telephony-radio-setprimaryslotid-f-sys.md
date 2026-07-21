@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="setprimaryslotid"></a>
 ## setPrimarySlotId
 
 ```TypeScript
@@ -29,7 +30,7 @@ Set the index number of the main SIM card slot.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setPrimarySlotId. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setPrimarySlotId. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ radio.setPrimarySlotId(slotId, (err: BusinessError) => {
 ```
 
 
+<a id="setprimaryslotid-1"></a>
 ## setPrimarySlotId
 
 ```TypeScript
@@ -89,7 +91,7 @@ Set the index number of the main SIM card slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setPrimarySlotId. |
+| Promise&lt;void&gt; | The promise returned by the setPrimarySlotId. |
 
 **Error codes:**
 

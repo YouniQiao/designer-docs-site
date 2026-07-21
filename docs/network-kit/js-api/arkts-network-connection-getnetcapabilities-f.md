@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getnetcapabilities"></a>
 ## getNetCapabilities
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains {@link NetCapabilities} of a {@link NetHandle} object.To invoke this met
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | netHandle | [NetHandle](arkts-network-connection-nethandle-i.md) | Yes | Indicates the handle. See {@link NetHandle}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetCapabilities> | Yes | the callback of getNetCapabilities.{@link NetCapabilities}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetCapabilities&gt; | Yes | the callback of getNetCapabilities.{@link NetCapabilities}. |
 
 **Error codes:**
 
@@ -66,6 +67,7 @@ connection.getDefaultNet().then((netHandle: connection.NetHandle) => {
 ```
 
 
+<a id="getnetcapabilities-1"></a>
 ## getNetCapabilities
 
 ```TypeScript
@@ -94,7 +96,7 @@ Obtains {@link NetCapabilities} of a {@link NetHandle} object.To invoke this met
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetCapabilities> | The promise returned by the function. |
+| Promise&lt;NetCapabilities&gt; | The promise returned by the function. |
 
 **Error codes:**
 

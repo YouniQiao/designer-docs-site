@@ -14,6 +14,7 @@ In the following API examples, you must first use [createPanel](arkts-ime-inputm
 import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
+<a id="off"></a>
 ## off('sizeUpdate')
 
 ```TypeScript
@@ -26,7 +27,7 @@ Disables listening for the panel size change. This API uses an asynchronous call
 >  
 > This API applies only to the panels of the **SOFT_KEYBOARD** type in the **FLG_FIXED** or **FLG_FLOATING**  
 > state. When you call  
-> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-2)  
+> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1)  
 > to adjust the panel size, the system calculates the final value based on certain rules (for example, whether  
 > the panel size exceeds the screen). This callback can be used to obtain the actual panel size to refresh the  
 > panel layout.
@@ -57,6 +58,7 @@ panel.off('sizeUpdate', (windowSize: window.Size, keyboardArea: inputMethodEngin
 
 ```
 
+<a id="on"></a>
 ## on('sizeUpdate')
 
 ```TypeScript
@@ -69,7 +71,7 @@ Listens for the panel size change. This API uses an asynchronous callback to ret
 >  
 > This API applies only to the panels of the **SOFT_KEYBOARD** type in the **FLG_FIXED** or **FLG_FLOATING**  
 > state. When you call  
-> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-2)  
+> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1)  
 > to adjust the panel size, the system calculates the final value based on certain rules (for example, whether  
 > the panel size exceeds the screen). This callback can be used to obtain the actual panel size to refresh the  
 > panel layout.
@@ -101,6 +103,7 @@ panel.on('sizeUpdate', (windowSize: window.Size, keyboardArea: inputMethodEngine
 
 ```
 
+<a id="setshadow"></a>
 ## setShadow
 
 ```TypeScript

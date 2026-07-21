@@ -12,7 +12,7 @@ import { WorkSchedulerExtensionContext } from '@kit.BackgroundTasksKit';
 
 | Name | Description |
 | --- | --- |
-| [WorkSchedulerExtensionAbility](arkts-backgroundtasks-workschedulerextensionability-c.md) | Provides callbacks to be invoked when the scheduling conditions are met or the scheduling ends, for example, [onWorkStart()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstart-1) or [onWorkStop()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstop-1) in WorkSchedulerExtensionAbility. |
+| [WorkSchedulerExtensionAbility](arkts-backgroundtasks-workschedulerextensionability-c.md) | Provides callbacks to be invoked when the scheduling conditions are met or the scheduling ends, for example,[onWorkStart()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstart-1) or [onWorkStop()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstop-1) in WorkSchedulerExtensionAbility. |
 
 ### Types
 

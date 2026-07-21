@@ -6,6 +6,7 @@
 import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getshortcutinfosync"></a>
 ## getShortcutInfoSync
 
 ```TypeScript
@@ -36,7 +37,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ShortcutInfo> | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) objects obtained. |
+| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) objects obtained. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ try {
 ```
 
 
+<a id="getshortcutinfosync-1"></a>
 ## getShortcutInfoSync
 
 ```TypeScript
@@ -98,7 +100,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ShortcutInfo> | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) objects obtained. |
+| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) objects obtained. |
 
 **Error codes:**
 

@@ -1,6 +1,6 @@
 # ErrorObserver
 
-The ErrorObserver module defines an observer to listen for application errors. It can be used as an input parameter in [ErrorManager.on](arkts-ability-errormanager-on-f.md#on-1)to listen for errors that occur in the current application.
+The ErrorObserver module defines an observer to listen for application errors. It can be used as an input parameter in [ErrorManager.on](./../@ohos.app.ability.errorManager:errorManager.on(type: 'error', observer: ErrorObserver))to listen for errors that occur in the current application.
 
 **Since:** 9
 
@@ -8,6 +8,7 @@ The ErrorObserver module defines an observer to listen for application errors. I
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
+<a id="onexception"></a>
 ## onException
 
 ```TypeScript
@@ -28,8 +29,9 @@ Called when the application encounters an exception and reports it to the JavaSc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| errObject | [Error](../../apis-na/arkts-apis/arkts-na-lib-es5-error-i.md) | Yes | Event name, message, and error stack of the exception. |
+| errObject | Error | Yes | Event name, message, and error stack of the exception. |
 
+<a id="onunhandledexception"></a>
 ## onUnhandledException
 
 ```TypeScript

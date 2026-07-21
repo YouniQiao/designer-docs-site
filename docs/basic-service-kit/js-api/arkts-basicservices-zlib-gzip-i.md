@@ -14,6 +14,7 @@ Describes gzip-related APIs.
 import { zlib } from '@kit.BasicServicesKit';
 ```
 
+<a id="gzbuffer"></a>
 ## gzbuffer
 
 ```TypeScript
@@ -40,7 +41,7 @@ Sets the internal buffer size for the current library function. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the operation is successful, **0** is returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the operation is successful, **0** is returned. |
 
 **Error codes:**
 
@@ -91,6 +92,7 @@ struct Index {
 
 ```
 
+<a id="gzclearerr"></a>
 ## gzclearerr
 
 ```TypeScript
@@ -111,7 +113,7 @@ Clears the errors and end-of-file flags of a file. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -165,6 +167,7 @@ struct Index {
 
 ```
 
+<a id="gzclose"></a>
 ## gzclose
 
 ```TypeScript
@@ -185,7 +188,7 @@ Clears all pending output of the file. Closes the file and releases the decompre
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -233,6 +236,7 @@ struct Index {
 
 ```
 
+<a id="gzcloser"></a>
 ## gzcloser
 
 ```TypeScript
@@ -253,7 +257,7 @@ Implements the same functions as that of **gzclose()** for reading only. This AP
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -302,6 +306,7 @@ struct Index {
 
 ```
 
+<a id="gzclosew"></a>
 ## gzclosew
 
 ```TypeScript
@@ -322,7 +327,7 @@ Implements the same functions as that of **gzclose()** for writing or appending.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -370,6 +375,7 @@ struct Index {
 
 ```
 
+<a id="gzdirect"></a>
 ## gzdirect
 
 ```TypeScript
@@ -390,7 +396,7 @@ Checks whether the specified gzip file handle directly accesses the original unc
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the original uncompressed data is directly accessed, **1** is returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the original uncompressed data is directly accessed, **1** is returned. |
 
 **Example**
 
@@ -432,6 +438,7 @@ struct Index {
 
 ```
 
+<a id="gzdopen"></a>
 ## gzdopen
 
 ```TypeScript
@@ -459,7 +466,7 @@ Associates gzip file with the file descriptor (fd) and opens the file for readin
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -508,6 +515,7 @@ struct Index {
 
 ```
 
+<a id="gzeof"></a>
 ## gzeof
 
 ```TypeScript
@@ -528,7 +536,7 @@ Checks whether the position from which data is read has reached the end of the g
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. If the end-of-file indicator is set while reading,**1** is returned. |
+| Promise&lt;number&gt; | Promise used to return the result. If the end-of-file indicator is set while reading,**1** is returned. |
 
 **Example**
 
@@ -580,6 +588,7 @@ struct Index {
 
 ```
 
+<a id="gzerror"></a>
 ## gzerror
 
 ```TypeScript
@@ -600,7 +609,7 @@ Describes the last error message that reported for the file. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GzErrorOutputInfo> | Promise used to return the result. |
+| Promise&lt;GzErrorOutputInfo&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -660,6 +669,7 @@ struct Index {
 
 ```
 
+<a id="gzflush"></a>
 ## gzflush
 
 ```TypeScript
@@ -686,7 +696,7 @@ Flushes all pending output into a compressed file. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -735,6 +745,7 @@ struct Index {
 
 ```
 
+<a id="gzfread"></a>
 ## gzfread
 
 ```TypeScript
@@ -755,7 +766,7 @@ Decompresses and reads data from a gzip file. This API uses a promise to return 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Destination buffer for storing read results. |
+| buf | ArrayBuffer | Yes | Destination buffer for storing read results. |
 | size | number | Yes | Number of bytes in a single data block. |
 | nitems | number | Yes | Number of data blocks to be written. |
 
@@ -763,7 +774,7 @@ Decompresses and reads data from a gzip file. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -821,6 +832,7 @@ struct Index {
 
 ```
 
+<a id="gzfwrite"></a>
 ## gzfwrite
 
 ```TypeScript
@@ -841,7 +853,7 @@ Compresses data blocks that are declared with size and nitems from the buffer an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer to which data is to be written. |
+| buf | ArrayBuffer | Yes | Buffer to which data is to be written. |
 | size | number | Yes | Number of bytes in a single data block. |
 | nitems | number | Yes | Number of data blocks to be written. |
 
@@ -849,7 +861,7 @@ Compresses data blocks that are declared with size and nitems from the buffer an
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -903,6 +915,7 @@ struct Index {
 
 ```
 
+<a id="gzgetc"></a>
 ## gzgetc
 
 ```TypeScript
@@ -923,7 +936,7 @@ Reads and decompresses a byte from a file. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -974,6 +987,7 @@ struct Index {
 
 ```
 
+<a id="gzgets"></a>
 ## gzgets
 
 ```TypeScript
@@ -994,13 +1008,13 @@ Reads bytes from a compressed file until len-1 characters are read, a newline ch
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Stores the read row data. |
+| buf | ArrayBuffer | Yes | Stores the read row data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return a string ended with **null**. |
+| Promise&lt;string&gt; | Promise used to return a string ended with **null**. |
 
 **Error codes:**
 
@@ -1053,6 +1067,7 @@ struct Index {
 
 ```
 
+<a id="gzoffset"></a>
 ## gzoffset
 
 ```TypeScript
@@ -1073,7 +1088,7 @@ Returns the current compressed read or write offset of the file. This API uses a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1121,6 +1136,7 @@ struct Index {
 
 ```
 
+<a id="gzopen"></a>
 ## gzopen
 
 ```TypeScript
@@ -1148,7 +1164,7 @@ Opens the .gz file in the specified path for reading and decompressing, or compr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1196,6 +1212,7 @@ struct Index {
 
 ```
 
+<a id="gzprintf"></a>
 ## gzprintf
 
 ```TypeScript
@@ -1217,13 +1234,13 @@ Converts and formats the parameters under the control of the string format and t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | format | string | Yes | Format descriptors and plain text. |
-| args | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string \| number> | Yes | List of variable parameters. If variable parameters are passed, for example, **gzprintf("name is %s, age is %d", "Tom", 23)**, the content **"name is Tom, age is 23"** is written. If no variable parameter is passed, for example, **gzprintf("name is %s, age is %d")**, the content **"name is %s, age is %d"** is written. |
+| args | Array&lt;string \| number&gt; | Yes | List of variable parameters. If variable parameters are passed, for example, **gzprintf("name is %s, age is %d", "Tom", 23)**, the content **"name is Tom, age is 23"** is written. If no variable parameter is passed, for example, **gzprintf("name is %s, age is %d")**, the content **"name is %s, age is %d"** is written. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Return the number of uncompressed bytes actually written. |
+| Promise&lt;number&gt; | Return the number of uncompressed bytes actually written. |
 
 **Error codes:**
 
@@ -1273,6 +1290,7 @@ struct Index {
 
 ```
 
+<a id="gzputc"></a>
 ## gzputc
 
 ```TypeScript
@@ -1299,7 +1317,7 @@ Compresses **char** converted to an unsigned character and writes it to a file. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1348,6 +1366,7 @@ struct Index {
 
 ```
 
+<a id="gzputs"></a>
 ## gzputs
 
 ```TypeScript
@@ -1374,7 +1393,7 @@ Compresses the given null-terminated strings and writes them to the file, exclud
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1423,6 +1442,7 @@ struct Index {
 
 ```
 
+<a id="gzread"></a>
 ## gzread
 
 ```TypeScript
@@ -1443,13 +1463,13 @@ Reads a maximum of **len** uncompressed bytes from a file and decompresses them 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Target offset position. |
+| buf | ArrayBuffer | Yes | Target offset position. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1507,6 +1527,7 @@ struct Index {
 
 ```
 
+<a id="gzrewind"></a>
 ## gzrewind
 
 ```TypeScript
@@ -1527,7 +1548,7 @@ Repositions the file pointer to the beginning of the file. This feature is appli
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1577,6 +1598,7 @@ struct Index {
 
 ```
 
+<a id="gzseek"></a>
 ## gzseek
 
 ```TypeScript
@@ -1604,7 +1626,7 @@ Sets the start position to the offset position relative to the next **gzread** o
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1653,6 +1675,7 @@ struct Index {
 
 ```
 
+<a id="gzsetparams"></a>
 ## gzsetparams
 
 ```TypeScript
@@ -1680,7 +1703,7 @@ Dynamically updates the compression level and compression strategy of a file. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ReturnStatus> | Promise used to return the result. |
+| Promise&lt;ReturnStatus&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1730,6 +1753,7 @@ struct Index {
 
 ```
 
+<a id="gztell"></a>
 ## gztell
 
 ```TypeScript
@@ -1750,7 +1774,7 @@ Returns the start position of the next **gzread** or **gzwrite** in the file. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1798,6 +1822,7 @@ struct Index {
 
 ```
 
+<a id="gzungetc"></a>
 ## gzungetc
 
 ```TypeScript
@@ -1824,7 +1849,7 @@ Pushes **c** back into the input stream so that it will be read as the first cha
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 
@@ -1876,6 +1901,7 @@ struct Index {
 
 ```
 
+<a id="gzwrite"></a>
 ## gzwrite
 
 ```TypeScript
@@ -1896,14 +1922,14 @@ Compresses the uncompressed bytes of the declared length in the buffer and write
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Data buffer pointed by an object to be written. |
+| buf | ArrayBuffer | Yes | Data buffer pointed by an object to be written. |
 | len | number | Yes | Length of uncompressed bytes. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Error codes:**
 

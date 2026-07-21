@@ -1,6 +1,6 @@
 # TriggerInfo
 
-The module defines the information required for triggering the WantAgent. The information is used as an input parameter of [trigger](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagenttrigger).
+The module defines the information required for triggering the WantAgent. The information is used as an input parameter of [trigger](docroot://reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagenttrigger).
 
 **Since:** 7
 
@@ -14,7 +14,7 @@ The module defines the information required for triggering the WantAgent. The in
 code: number
 ```
 
-Common event code. This field is valid only when [OperationType](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#operationtype) of the WantAgent instance is **'SEND_COMMON_EVENT'**. The meaning of this field is the same as that of the **code** field set in [CommonEventPublishData](../../../../reference/apis-basic-services-kit/js-apis-inner-commonEvent-commonEventPublishData.md#properties)when the publisher uses [commonEventManager.publish](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-commoneventmanager-publish-f.md#publish-2)to publish common events.
+Common event code. This field is valid only when [OperationType](docroot://reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#operationtype) of the WantAgent instance is **'SEND_COMMON_EVENT'**. The meaning of this field is the same as that of the **code** field set in [CommonEventPublishData](docroot://reference/apis-basic-services-kit/js-apis-inner-commonEvent-commonEventPublishData.md#properties)when the publisher uses [commonEventManager.publish](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-commoneventmanager-publish-f.md#publish-1)to publish common events.
 
 **Type:** number
 
@@ -52,7 +52,7 @@ extraInfos?: Record<string, Object>
 
 Extra information. You are advised to use this property to replace **extraInfo**. When this property is set,**extraInfo** does not take effect.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 11
 
@@ -68,7 +68,7 @@ Extra information. You are advised to use this property to replace **extraInfo**
 permission?: string
 ```
 
-Permission required for a subscriber to receive the common event. This field is valid only when [OperationType](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#operationtype) of the WantAgent instance is **'SEND_COMMON_EVENT'**.
+Permission required for a subscriber to receive the common event. This field is valid only when [OperationType](docroot://reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#operationtype) of the WantAgent instance is **'SEND_COMMON_EVENT'**.
 
 **Type:** string
 

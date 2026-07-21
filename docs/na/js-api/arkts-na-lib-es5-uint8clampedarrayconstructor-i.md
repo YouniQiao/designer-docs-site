@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface Uint8ClampedArrayConstructor--><!--Device-unnamed-interface Uint8ClampedArrayConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -22,6 +23,7 @@ new(length: number): Uint8ClampedArray
 | --- | --- |
 | [Uint8ClampedArray](arkts-na-lib-es2015-iterable-uint8clampedarray-i.md) |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -34,7 +36,7 @@ new(array: ArrayLike<number> | ArrayBufferLike): Uint8ClampedArray
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| array | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<number> \| ArrayBufferLike | Yes |  |
+| array | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; \| ArrayBufferLike | Yes |  |
 
 **Return value:**
 
@@ -42,6 +44,7 @@ new(array: ArrayLike<number> | ArrayBufferLike): Uint8ClampedArray
 | --- | --- |
 | [Uint8ClampedArray](arkts-na-lib-es2015-iterable-uint8clampedarray-i.md) |  |
 
+<a id="constructor-2"></a>
 ## constructor
 
 ```TypeScript
@@ -64,6 +67,7 @@ new(buffer: ArrayBufferLike, byteOffset?: number, length?: number): Uint8Clamped
 | --- | --- |
 | [Uint8ClampedArray](arkts-na-lib-es2015-iterable-uint8clampedarray-i.md) |  |
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -78,7 +82,7 @@ Creates an array from an array-like or iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<number> | Yes |  |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;number&gt; | Yes |  |
 
 **Return value:**
 
@@ -86,6 +90,7 @@ Creates an array from an array-like or iterable object.
 | --- | --- |
 | [Uint8ClampedArray](arkts-na-lib-es2015-iterable-uint8clampedarray-i.md) |  |
 
+<a id="from-1"></a>
 ## from
 
 ```TypeScript
@@ -100,8 +105,8 @@ Creates an array from an array-like or iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)<T> | Yes |  |
-| mapfn | (v: T, k: number) => number | Yes |  |
+| arrayLike | [ArrayLike](arkts-na-lib-es5-arraylike-i.md)&lt;T&gt; | Yes |  |
+| mapfn | (v: T, k: number) =&gt; number | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**
@@ -110,6 +115,7 @@ Creates an array from an array-like or iterable object.
 | --- | --- |
 | [Uint8ClampedArray](arkts-na-lib-es2015-iterable-uint8clampedarray-i.md) |  |
 
+<a id="of"></a>
 ## of
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="createcipher"></a>
 ## createCipher
 
 ```TypeScript
@@ -42,7 +43,7 @@ Creates a [Cipher](arkts-cryptoarchitecture-cryptoframework-cipher-i.md) instanc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| transformation | string | Yes | Combination of the algorithm name (including the key length), encryption mode,and padding algorithm of the **Cipher** instance to create.<br>For details about the supported specifications,see [Symmetric Key Encryption and Decryption Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md)and [Asymmetric Key Encryption and Decryption Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-asym-encrypt-decrypt-spec.md). |
+| transformation | string | Yes | Combination of the algorithm name (including the key length), encryption mode,and padding algorithm of the **Cipher** instance to create.<br>For details about the supported specifications,see [Symmetric Key Encryption and Decryption Algorithm Specifications](docroot://security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md)and [Asymmetric Key Encryption and Decryption Algorithm Specifications](docroot://security/CryptoArchitectureKit/crypto-asym-encrypt-decrypt-spec.md). |
 
 **Return value:**
 

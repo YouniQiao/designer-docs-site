@@ -1,8 +1,8 @@
 # AeadParamsSpec
 
-Describes parameters in [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-4) for symmetric encryption and decryption using authenticated encryption with associated data (AEAD). It inherits from [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md).
+Describes parameters in [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-1) for symmetric encryption and decryption using authenticated encryption with associated data (AEAD). It inherits from [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md).
 
-It is applicable to the CCM and GCM modes of [AES](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#aes).It is applicable to the GCM mode of [SM4](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#sm4).It is applicable to [ChaCha20-Poly1305](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#chacha20).
+It is applicable to the CCM and GCM modes of [AES](docroot://security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#aes).It is applicable to the GCM mode of [SM4](docroot://security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#sm4).It is applicable to [ChaCha20-Poly1305](docroot://security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#chacha20).
 
 > **NOTE**  
 >  

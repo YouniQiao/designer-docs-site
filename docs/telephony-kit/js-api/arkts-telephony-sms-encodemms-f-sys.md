@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="encodemms"></a>
 ## encodeMms
 
 ```TypeScript
@@ -27,7 +28,7 @@ Encode the message content.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mms | [MmsInformation](arkts-telephony-sms-mmsinformation-i-sys.md) | Yes | Indicates MMS messages. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<number>> | Yes | Indicates the callback for getting the result of MMS encoding. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Indicates the callback for getting the result of MMS encoding. |
 
 **Error codes:**
 
@@ -62,6 +63,7 @@ sms.encodeMms(mmsInformation, (err: BusinessError, data: number[]) => {
 ```
 
 
+<a id="encodemms-1"></a>
 ## encodeMms
 
 ```TypeScript
@@ -88,7 +90,7 @@ Encode the message content.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Returns the result of MMS encoding. |
+| Promise&lt;Array&lt;number&gt;&gt; | Returns the result of MMS encoding. |
 
 **Error codes:**
 

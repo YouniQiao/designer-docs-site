@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="on"></a>
 ## on('change')
 
 ```TypeScript
@@ -25,7 +26,7 @@ Enables listening for device hot swap events. When performing this operation, yo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'change' | Yes | Event type. This field has a fixed value of **change**. |
-| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<DeviceListener> | Yes | Callback used to return the input device hot swap events. |
+| listener | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;DeviceListener&gt; | Yes | Callback used to return the input device hot swap events. |
 
 **Error codes:**
 

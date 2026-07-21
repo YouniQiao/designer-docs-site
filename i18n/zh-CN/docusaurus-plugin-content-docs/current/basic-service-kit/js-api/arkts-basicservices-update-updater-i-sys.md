@@ -29,6 +29,7 @@
 import { update } from '@kit.BasicServicesKit';
 ```
 
+<a id="checknewversion"></a>
 ## checkNewVersion
 
 ```TypeScript
@@ -73,7 +74,7 @@ checkNewVersion(callback: AsyncCallback<CheckResult>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<CheckResult> | 是 | 回调函数，用于接收版本检查结果。回调参数包括err（错误对象，成功时为null）和checkResult（版本检查结果对象）。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;CheckResult&gt; | 是 | 回调函数，用于接收版本检查结果。回调参数包括err（错误对象，成功时为null）和checkResult（版本检查结果对象）。 |
 
 **错误码：**
 
@@ -115,6 +116,7 @@ try {
 
 ```
 
+<a id="checknewversion-1"></a>
 ## checkNewVersion
 
 ```TypeScript
@@ -159,7 +161,7 @@ checkNewVersion(): Promise<CheckResult>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<CheckResult> | Promise对象。成功时resolve返回版本检查结果对象，失败时reject返回错误信息。 |
+| Promise&lt;CheckResult&gt; | Promise对象。成功时resolve返回版本检查结果对象，失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -200,6 +202,7 @@ try {
 
 ```
 
+<a id="clearerror"></a>
 ## clearError
 
 ```TypeScript
@@ -241,7 +244,7 @@ clearError(versionDigestInfo: VersionDigestInfo, clearOptions: ClearOptions, cal
 | --- | --- | --- | --- |
 | versionDigestInfo | [VersionDigestInfo](arkts-basicservices-update-versiondigestinfo-i-sys.md) | 是 | 版本摘要信息（VersionDigestInfo），必须先调用checkNewVersion检查新版本并确认isExistNewVersion为true后才能使用此参数。参数从checkNewVersion返回结果的newVersionInfo字段中获取，用于标识具体版本。仅当isExistNewVersion为true时该参数有效。 |
 | clearOptions | [ClearOptions](arkts-basicservices-update-clearoptions-i-sys.md) | 是 | 清除选项（ClearOptions），用于指定要清除的异常状态类型。status字段仅支持UPGRADE_FAIL状态，当upgrade方法执行失败(状态为UPGRADE_FAIL)后，系统会保留异常状态阻止重新升级，此时需要传入UPGRADE_FAIL清除异常状态，使系统恢复到初始状态以便重新开始升级流程。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收清除异常状态结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收清除异常状态结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
 
 **错误码：**
 
@@ -294,6 +297,7 @@ try {
 
 ```
 
+<a id="clearerror-1"></a>
 ## clearError
 
 ```TypeScript
@@ -340,7 +344,7 @@ clearError(versionDigestInfo: VersionDigestInfo, clearOptions: ClearOptions): Pr
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -389,6 +393,7 @@ try {
 
 ```
 
+<a id="download"></a>
 ## download
 
 ```TypeScript
@@ -446,7 +451,7 @@ download(
 | --- | --- | --- | --- |
 | versionDigestInfo | [VersionDigestInfo](arkts-basicservices-update-versiondigestinfo-i-sys.md) | 是 | 版本摘要信息（VersionDigestInfo），必须先调用checkNewVersion检查新版本并确认isExistNewVersion为true后才能使用此参数。参数从checkNewVersion返回结果的newVersionInfo字段中获取，用于标识具体版本。仅当isExistNewVersion为true时该参数有效。 |
 | downloadOptions | [DownloadOptions](arkts-basicservices-update-downloadoptions-i-sys.md) | 是 | 下载选项（DownloadOptions），用于控制下载行为。allowNetwork字段设置允许下载的网络类型，建议根据升级包大小和网络环境选择：升级包大小超过100MB建议使用WIFI避免流量消耗和提升下载速度；移动场景或无WIFI环境可使用CELLULAR；不确定网络环境建议使用CELLULAR_AND_WIFI。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收下载结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收下载结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
 
 **错误码：**
 
@@ -500,6 +505,7 @@ try {
 
 ```
 
+<a id="download-1"></a>
 ## download
 
 ```TypeScript
@@ -552,7 +558,7 @@ download(versionDigestInfo: VersionDigestInfo, downloadOptions: DownloadOptions)
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，表示下载任务启动成功；失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，表示下载任务启动成功；失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -602,6 +608,7 @@ try {
 
 ```
 
+<a id="getcurrentversiondescription"></a>
 ## getCurrentVersionDescription
 
 ```TypeScript
@@ -648,7 +655,7 @@ getCurrentVersionDescription(
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | descriptionOptions | [DescriptionOptions](arkts-basicservices-update-descriptionoptions-i-sys.md) | 是 | 描述文件选项（DescriptionOptions），用于指定描述文件的格式和语言。format字段设置描述格式(STANDARD标准格式或SIMPLIFIED简易格式)。language字段设置语言类型，格式如'zh-cn'(中文)、'en-us'(英文)、'ja-jp'(日文)等，长度范围[2，10]，单位：字符。有效字符包括字母（区分大小写）和连字符（-），建议使用小写格式。超出范围或包含无效字符时抛出异常。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<ComponentDescription>> | 是 | 回调函数，用于接收当前版本描述信息。回调参数包括： err(错误对象，成功时为null)和info(当前版本描述信息数组，包含版本说明内容)。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ComponentDescription&gt;&gt; | 是 | 回调函数，用于接收当前版本描述信息。回调参数包括： err(错误对象，成功时为null)和info(当前版本描述信息数组，包含版本说明内容)。 |
 
 **错误码：**
 
@@ -694,6 +701,7 @@ try {
 
 ```
 
+<a id="getcurrentversiondescription-1"></a>
 ## getCurrentVersionDescription
 
 ```TypeScript
@@ -734,7 +742,7 @@ getCurrentVersionDescription(descriptionOptions: DescriptionOptions): Promise<Ar
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<Array<ComponentDescription>> | Promise对象。成功时resolve返回当前版本描述信息数组，用于展示当前版本详情和版本对比；失败时reject返回错误信息。 |
+| Promise&lt;Array&lt;ComponentDescription&gt;&gt; | Promise对象。成功时resolve返回当前版本描述信息数组，用于展示当前版本详情和版本对比；失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -778,6 +786,7 @@ try {
 
 ```
 
+<a id="getcurrentversioninfo"></a>
 ## getCurrentVersionInfo
 
 ```TypeScript
@@ -806,7 +815,7 @@ getCurrentVersionInfo(callback: AsyncCallback<CurrentVersionInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<CurrentVersionInfo> | 是 | 回调函数，用于接收当前版本信息（CurrentVersionInfo）。回调参数包括： err（错误对象，成功时为null）和currentInfo（当前版本信息对象，包含osVersion、deviceName和versionComponents字段）。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;CurrentVersionInfo&gt; | 是 | 回调函数，用于接收当前版本信息（CurrentVersionInfo）。回调参数包括： err（错误对象，成功时为null）和currentInfo（当前版本信息对象，包含osVersion、deviceName和versionComponents字段）。 |
 
 **错误码：**
 
@@ -850,6 +859,7 @@ try {
 
 ```
 
+<a id="getcurrentversioninfo-1"></a>
 ## getCurrentVersionInfo
 
 ```TypeScript
@@ -878,7 +888,7 @@ getCurrentVersionInfo(): Promise<CurrentVersionInfo>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<CurrentVersionInfo> | Promise对象。成功时resolve返回当前版本信息对象，用于展示系统版本和版本对比；失败时reject返回错误信息。 |
+| Promise&lt;CurrentVersionInfo&gt; | Promise对象。成功时resolve返回当前版本信息对象，用于展示系统版本和版本对比；失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -917,6 +927,7 @@ try {
 
 ```
 
+<a id="getnewversiondescription"></a>
 ## getNewVersionDescription
 
 ```TypeScript
@@ -964,7 +975,7 @@ getNewVersionDescription(
 | --- | --- | --- | --- |
 | versionDigestInfo | [VersionDigestInfo](arkts-basicservices-update-versiondigestinfo-i-sys.md) | 是 | 版本摘要信息对象，包含版本标识（versionDigest字段）。必须先调用checkNewVersion检查新版本并确认isExistNewVersion为true后才能使用此参数。参数从checkNewVersion返回结果的newVersionInfo字段中获取。版本摘要作为服务器生成的版本唯一标识，用于后续的版本查询、下载和升级操作。仅当isExistNewVersion为true时该参数有效。 |
 | descriptionOptions | [DescriptionOptions](arkts-basicservices-update-descriptionoptions-i-sys.md) | 是 | 描述文件选项（DescriptionOptions），用于指定描述文件的格式和语言。format字段设置描述格式(STANDARD标准格式或SIMPLIFIED简易格式)。language字段设置语言类型，格式如'zh-cn'(中文)、'en-us'(英文)、'ja-jp'(日文)等，长度范围[2，10]，单位：字符。有效字符包括字母（区分大小写）和连字符（-），建议使用小写格式。超出范围或包含无效字符时抛出异常。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<ComponentDescription>> | 是 | 回调函数，用于接收新版本描述信息。回调参数包括： err（错误对象，成功时为null）和descriptionInfo（新版本描述信息数组，包含各组件的版本说明内容）。调用前须先调用checkNewVersion检查新版本，且仅当isExistNewVersion为true时descriptionInfo有效；若为false，则descriptionInfo为null。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ComponentDescription&gt;&gt; | 是 | 回调函数，用于接收新版本描述信息。回调参数包括： err（错误对象，成功时为null）和descriptionInfo（新版本描述信息数组，包含各组件的版本说明内容）。调用前须先调用checkNewVersion检查新版本，且仅当isExistNewVersion为true时descriptionInfo有效；若为false，则descriptionInfo为null。 |
 
 **错误码：**
 
@@ -1016,6 +1027,7 @@ try {
 
 ```
 
+<a id="getnewversiondescription-1"></a>
 ## getNewVersionDescription
 
 ```TypeScript
@@ -1065,7 +1077,7 @@ getNewVersionDescription(
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<Array<ComponentDescription>> | Promise对象。成功时resolve返回新版本描述信息数组，用于向用户展示版本更新内容和确认升级；失败时reject返回错误信息。 |
+| Promise&lt;Array&lt;ComponentDescription&gt;&gt; | Promise对象。成功时resolve返回新版本描述信息数组，用于向用户展示版本更新内容和确认升级；失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -1118,6 +1130,7 @@ try {
 
 ```
 
+<a id="getnewversioninfo"></a>
 ## getNewVersionInfo
 
 ```TypeScript
@@ -1165,7 +1178,7 @@ getNewVersionInfo(callback: AsyncCallback<NewVersionInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<NewVersionInfo> | 是 | 回调函数，用于接收新版本信息（NewVersionInfo）。回调参数包括：err（错误对象，成功时为null）和newInfo（新版本信息对象）。调用前须先调用checkNewVersion检查新版本，且仅当isExistNewVersion为true时newInfo有效；若为false，则newInfo为null。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;NewVersionInfo&gt; | 是 | 回调函数，用于接收新版本信息（NewVersionInfo）。回调参数包括：err（错误对象，成功时为null）和newInfo（新版本信息对象）。调用前须先调用checkNewVersion检查新版本，且仅当isExistNewVersion为true时newInfo有效；若为false，则newInfo为null。 |
 
 **错误码：**
 
@@ -1205,6 +1218,7 @@ try {
 
 ```
 
+<a id="getnewversioninfo-1"></a>
 ## getNewVersionInfo
 
 ```TypeScript
@@ -1252,7 +1266,7 @@ getNewVersionInfo(): Promise<NewVersionInfo>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<NewVersionInfo> | Promise对象。成功时resolve返回新版本详细信息对象，用于向用户展示完整版本信息；失败时reject返回错误信息。 |
+| Promise&lt;NewVersionInfo&gt; | Promise对象。成功时resolve返回新版本详细信息对象，用于向用户展示完整版本信息；失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -1290,6 +1304,7 @@ try {
 
 ```
 
+<a id="gettaskinfo"></a>
 ## getTaskInfo
 
 ```TypeScript
@@ -1331,7 +1346,7 @@ getTaskInfo(callback: AsyncCallback<TaskInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<TaskInfo> | 是 | 回调函数，用于接收升级任务信息（TaskInfo）。回调参数包括： err（错误对象，成功时为null）和taskInfo（升级任务信息对象，包含existTask和taskBody字段）。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;TaskInfo&gt; | 是 | 回调函数，用于接收升级任务信息（TaskInfo）。回调参数包括： err（错误对象，成功时为null）和taskInfo（升级任务信息对象，包含existTask和taskBody字段）。 |
 
 **错误码：**
 
@@ -1372,6 +1387,7 @@ try {
 
 ```
 
+<a id="gettaskinfo-1"></a>
 ## getTaskInfo
 
 ```TypeScript
@@ -1413,7 +1429,7 @@ getTaskInfo(): Promise<TaskInfo>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<TaskInfo> | Promise对象。成功时resolve返回升级任务信息对象，用于查询和监控升级任务状态；失败时reject返回错误信息。 |
+| Promise&lt;TaskInfo&gt; | Promise对象。成功时resolve返回升级任务信息对象，用于查询和监控升级任务状态；失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -1452,6 +1468,7 @@ try {
 
 ```
 
+<a id="getupgradepolicy"></a>
 ## getUpgradePolicy
 
 ```TypeScript
@@ -1480,7 +1497,7 @@ getUpgradePolicy(callback: AsyncCallback<UpgradePolicy>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<UpgradePolicy> | 是 | 回调函数，用于接收升级策略信息（UpgradePolicy）。回调参数包括： err（错误对象，成功时为null）和policy（升级策略信息对象，包含downloadStrategy、autoUpgradeStrategy和autoUpgradePeriods字段）。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;UpgradePolicy&gt; | 是 | 回调函数，用于接收升级策略信息（UpgradePolicy）。回调参数包括： err（错误对象，成功时为null）和policy（升级策略信息对象，包含downloadStrategy、autoUpgradeStrategy和autoUpgradePeriods字段）。 |
 
 **错误码：**
 
@@ -1520,6 +1537,7 @@ try {
 
 ```
 
+<a id="getupgradepolicy-1"></a>
 ## getUpgradePolicy
 
 ```TypeScript
@@ -1548,7 +1566,7 @@ getUpgradePolicy(): Promise<UpgradePolicy>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<UpgradePolicy> | Promise对象。成功时resolve返回升级策略信息对象，用于查询自动下载、自动升级、升级时间段等策略配置；失败时reject返回错误信息。 |
+| Promise&lt;UpgradePolicy&gt; | Promise对象。成功时resolve返回升级策略信息对象，用于查询自动下载、自动升级、升级时间段等策略配置；失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -1586,6 +1604,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -1619,7 +1638,7 @@ off(eventClassifyInfo: EventClassifyInfo, taskCallback?: UpgradeTaskCallback): v
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | eventClassifyInfo | [EventClassifyInfo](arkts-basicservices-update-eventclassifyinfo-i-sys.md) | 是 | 事件信息对象(EventClassifyInfo)，用于指定要取消监听的升级事件类型。前置条件:必须先通过on方法注册监听，注册后系统维护事件监听列表并持续接收对应类型的本地升级事件通知。使用此参数取消监听后，系统从事件监听列表中移除对应监听记录，释放监听占用的内存和IPC通道资源，应用不再接收该类型的事件通知。 |
-| taskCallback | [UpgradeTaskCallback](arkts-basicservices-update-upgradetaskcallback-t-sys.md) | 否 | 事件回调。用于处理升级任务事件。回调签名：(eventInfo: EventInfo) =&gt; void，其中eventInfo为事件信息对象，包含eventId（事件ID）和taskBody（任务数据）字段。当需要取消特定回调监听时传入此参数，不传入时取消该事件类型的所有监听。 |
+| taskCallback | [UpgradeTaskCallback](arkts-basicservices-update-upgradetaskcallback-t-sys.md) | 否 | 事件回调。用于处理升级任务事件。回调签名：(eventInfo: EventInfo) => void，其中eventInfo为事件信息对象，包含eventId（事件ID）和taskBody（任务数据）字段。当需要取消特定回调监听时传入此参数，不传入时取消该事件类型的所有监听。 |
 
 **错误码：**
 
@@ -1655,6 +1674,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -1697,7 +1717,7 @@ on(eventClassifyInfo: EventClassifyInfo, taskCallback: UpgradeTaskCallback): voi
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | eventClassifyInfo | [EventClassifyInfo](arkts-basicservices-update-eventclassifyinfo-i-sys.md) | 是 | 事件信息对象(EventClassifyInfo)，用于指定要注册监听的升级事件类型。系统根据eventClassifyInfo参数注册对应类型的升级事件监听，事件发生时通过taskCallback回调函数传递事件信息。 |
-| taskCallback | [UpgradeTaskCallback](arkts-basicservices-update-upgradetaskcallback-t-sys.md) | 是 | 事件回调（UpgradeTaskCallback），用于处理升级任务事件。回调签名：(eventInfo: EventInfo) =&gt;void，其中eventInfo为事件信息对象，包含eventId（事件ID）和taskBody（任务数据）字段。 |
+| taskCallback | [UpgradeTaskCallback](arkts-basicservices-update-upgradetaskcallback-t-sys.md) | 是 | 事件回调（UpgradeTaskCallback），用于处理升级任务事件。回调签名：(eventInfo: EventInfo) =>void，其中eventInfo为事件信息对象，包含eventId（事件ID）和taskBody（任务数据）字段。 |
 
 **错误码：**
 
@@ -1733,6 +1753,7 @@ try {
 
 ```
 
+<a id="pausedownload"></a>
 ## pauseDownload
 
 ```TypeScript
@@ -1785,7 +1806,7 @@ pauseDownload(
 | --- | --- | --- | --- |
 | versionDigestInfo | [VersionDigestInfo](arkts-basicservices-update-versiondigestinfo-i-sys.md) | 是 | 版本摘要信息（VersionDigestInfo），必须先调用checkNewVersion检查新版本并确认isExistNewVersion为true后才能使用此参数。参数从checkNewVersion返回结果的newVersionInfo字段中获取，用于标识具体版本。仅当isExistNewVersion为true时该参数有效。 |
 | pauseDownloadOptions | [PauseDownloadOptions](arkts-basicservices-update-pausedownloadoptions-i-sys.md) | 是 | 暂停下载选项（PauseDownloadOptions），用于控制暂停行为。如果没有正在进行的下载任务，使用此参数将导致暂停操作失败或参数无效。isAllowAutoResume字段设置是否允许自动恢复，建议：网络不稳定场景建议设置true启用自动恢复，提升下载成功率；需要精确控制下载时机或避免在特定网络环境下恢复的场景建议设置false，通过手动调用resumeDownload控制恢复时机。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收暂停下载结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收暂停下载结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
 
 **错误码：**
 
@@ -1837,6 +1858,7 @@ try {
 
 ```
 
+<a id="pausedownload-1"></a>
 ## pauseDownload
 
 ```TypeScript
@@ -1882,7 +1904,7 @@ pauseDownload(versionDigestInfo: VersionDigestInfo, pauseDownloadOptions: PauseD
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -1932,6 +1954,7 @@ try {
 
 ```
 
+<a id="resumedownload"></a>
 ## resumeDownload
 
 ```TypeScript
@@ -1979,7 +2002,7 @@ resumeDownload(
 | --- | --- | --- | --- |
 | versionDigestInfo | [VersionDigestInfo](arkts-basicservices-update-versiondigestinfo-i-sys.md) | 是 | 版本摘要信息（VersionDigestInfo），必须先调用checkNewVersion检查新版本并确认isExistNewVersion为true后才能使用此参数。参数从checkNewVersion返回结果的newVersionInfo字段中获取，用于标识具体版本。仅当isExistNewVersion为true时该参数有效。 |
 | resumeDownloadOptions | [ResumeDownloadOptions](arkts-basicservices-update-resumedownloadoptions-i-sys.md) | 是 | 恢复下载选项（ResumeDownloadOptions），用于指定恢复下载的网络类型。仅当已调用pauseDownload暂停下载后才生效。如果未调用pauseDownload暂停下载，使用此参数将导致恢复下载失败或参数无效。allowNetwork字段设置允许恢复下载的网络类型，建议根据升级包大小和网络环境选择：升级包大小超过100MB建议使用WIFI避免流量消耗和提升下载速度；移动场景或无WIFI环境可使用CELLULAR；不确定网络环境建议使用CELLULAR_AND_WIFI。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收恢复下载结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收恢复下载结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
 
 **错误码：**
 
@@ -2031,6 +2054,7 @@ try {
 
 ```
 
+<a id="resumedownload-1"></a>
 ## resumeDownload
 
 ```TypeScript
@@ -2071,7 +2095,7 @@ resumeDownload(versionDigestInfo: VersionDigestInfo, resumeDownloadOptions: Resu
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -2120,6 +2144,7 @@ try {
 
 ```
 
+<a id="setupgradepolicy"></a>
 ## setUpgradePolicy
 
 ```TypeScript
@@ -2151,7 +2176,7 @@ setUpgradePolicy(policy: UpgradePolicy, callback: AsyncCallback<void>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | policy | [UpgradePolicy](arkts-basicservices-update-upgradepolicy-i-sys.md) | 是 | 升级策略对象（UpgradePolicy），用于控制升级行为。包含downloadStrategy(自动下载策略)、autoUpgradeStrategy(自动升级策略)和autoUpgradePeriods(自动升级时间段)三个字段。downloadStrategy字段设置是否允许自动下载，true表示可自动下载(适用于希望系统自动检测并下载新版本的场景)，false表示不可自动下载(适用于需要用户手动确认下载的场景)。autoUpgradeStrategy字段设置是否允许自动升级，true表示可自动升级(适用于希望系统自动完成升级流程的场景)，false表示不可自动升级(适用于需要用户手动确认升级的场景)。autoUpgradePeriods字段设置自动升级时间段(可选)，当需要在特定时间段内自动升级时传入此参数，如夜间时段；不传入时默认为空数组[]，表示不限制自动升级时间段。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收设置升级策略结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收设置升级策略结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
 
 **错误码：**
 
@@ -2196,6 +2221,7 @@ try {
 
 ```
 
+<a id="setupgradepolicy-1"></a>
 ## setUpgradePolicy
 
 ```TypeScript
@@ -2232,7 +2258,7 @@ setUpgradePolicy(policy: UpgradePolicy): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，表示升级策略设置成功；失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，表示升级策略设置成功；失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -2275,6 +2301,7 @@ try {
 
 ```
 
+<a id="terminateupgrade"></a>
 ## terminateUpgrade
 
 ```TypeScript
@@ -2316,7 +2343,7 @@ terminateUpgrade(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收终止升级结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收终止升级结果。回调参数包括： err(错误对象，成功时为null，失败时为错误对象)。 |
 
 **错误码：**
 
@@ -2355,6 +2382,7 @@ try {
 
 ```
 
+<a id="terminateupgrade-1"></a>
 ## terminateUpgrade
 
 ```TypeScript
@@ -2396,7 +2424,7 @@ terminateUpgrade(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 
@@ -2433,6 +2461,7 @@ try {
 
 ```
 
+<a id="upgrade"></a>
 ## upgrade
 
 ```TypeScript
@@ -2481,7 +2510,7 @@ upgrade(versionDigestInfo: VersionDigestInfo, upgradeOptions: UpgradeOptions, ca
 | --- | --- | --- | --- |
 | versionDigestInfo | [VersionDigestInfo](arkts-basicservices-update-versiondigestinfo-i-sys.md) | 是 | 版本摘要信息（VersionDigestInfo），必须先调用checkNewVersion检查新版本并确认isExistNewVersion为true后才能使用此参数。参数从checkNewVersion返回结果的newVersionInfo字段中获取，用于标识具体版本。仅当isExistNewVersion为true时该参数有效。 |
 | upgradeOptions | [UpgradeOptions](arkts-basicservices-update-upgradeoptions-i-sys.md) | 是 | 升级选项（UpgradeOptions），用于指定升级操作类型。order字段设置升级指令，应根据当前升级状态和业务需求选择：DOWNLOAD仅下载升级包，适用于需要先下载后手动安装的场景；INSTALL仅安装已下载的升级包，适用于已下载完成需直接安装的场景；DOWNLOAD_AND_INSTALL下载并安装，适用于完整升级流程；APPLY仅生效，适用于已安装需重启生效的场景；INSTALL_AND_APPLY安装并生效，适用于安装后立即重启生效的场景。 |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | 是 | 回调函数，用于接收升级安装结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | 是 | 回调函数，用于接收升级安装结果。回调参数包括err（错误对象，成功时为null，失败时为错误对象）。 |
 
 **错误码：**
 
@@ -2532,6 +2561,7 @@ try {
 
 ```
 
+<a id="upgrade-1"></a>
 ## upgrade
 
 ```TypeScript
@@ -2585,7 +2615,7 @@ upgrade(versionDigestInfo: VersionDigestInfo, upgradeOptions: UpgradeOptions): P
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
+| Promise&lt;void&gt; | Promise对象。成功时resolve无返回结果，失败时reject返回错误信息。 |
 
 **错误码：**
 

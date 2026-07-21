@@ -1,6 +1,6 @@
 # GetAuthInfoOptions (System API)
 
-Represents a set of optional parameters for [GetAuthInfo](arkts-basicservices-osaccount-useridentitymanager-c-sys.md#getauthinfo-4).
+Represents a set of optional parameters for [GetAuthInfo](arkts-basicservices-osaccount-useridentitymanager-c-sys.md#getauthinfo-1).
 
 **Since:** 12
 

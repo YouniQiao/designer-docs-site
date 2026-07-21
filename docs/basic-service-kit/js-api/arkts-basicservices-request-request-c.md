@@ -16,6 +16,7 @@
 import { UploadResponse, RequestData, DownloadRequestOptions, DownloadResponse, RequestFile, OnDownloadCompleteOptions, OnDownloadCompleteResponse, UploadRequestOptions } from '@kit.BasicServicesKit';
 ```
 
+<a id="download"></a>
 ## download
 
 ```TypeScript
@@ -28,7 +29,7 @@ Downloads a file. This API returns no value.
 
 **Deprecated since:** 9
 
-**Substitutes:** downloadFile(context:
+**Substitutes:** [downloadFile(context:](arkts-basicservices-request-downloadfile-f.md#downloadfile-1)
 
 <!--Device-Request-static download(options: DownloadRequestOptions): void--><!--Device-Request-static download(options: DownloadRequestOptions): void-End-->
 
@@ -40,6 +41,7 @@ Downloads a file. This API returns no value.
 | --- | --- | --- | --- |
 | options | [DownloadRequestOptions](arkts-basicservices-request-downloadrequestoptions-i.md) | Yes | Download configurations. |
 
+<a id="ondownloadcomplete"></a>
 ## onDownloadComplete
 
 ```TypeScript
@@ -64,6 +66,7 @@ Listens for download task status. This API returns no value.
 | --- | --- | --- | --- |
 | options | [OnDownloadCompleteOptions](arkts-basicservices-request-ondownloadcompleteoptions-i.md) | Yes | Configurations of the download task. |
 
+<a id="upload"></a>
 ## upload
 
 ```TypeScript
@@ -76,7 +79,7 @@ Uploads a file. This API returns no value.
 
 **Deprecated since:** 9
 
-**Substitutes:** uploadFile(context:
+**Substitutes:** [uploadFile(context:](arkts-basicservices-request-uploadfile-f.md#uploadfile-1)
 
 <!--Device-Request-static upload(options: UploadRequestOptions): void--><!--Device-Request-static upload(options: UploadRequestOptions): void-End-->
 

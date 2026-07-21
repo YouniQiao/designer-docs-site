@@ -14,6 +14,7 @@ The **AccessibilityExtensionAbility** module provides accessibility extension ca
 import { Rect, TouchPosition, AccessibilityVirtualNode, ElementAttributeKeys, FocusCondition, AccessibilityExtensionContext, ElementAttributeValues, AccessibilityEventInfo, AccessibilityEvent, AccessibilityElement, FocusRule, FocusMoveResult, FocusType, Parameter, FocusDirection, WindowType } from '@kit.AccessibilityKit';
 ```
 
+<a id="onaccessibilityconnect"></a>
 ## onAccessibilityConnect
 
 ```TypeScript
@@ -52,6 +53,7 @@ class MyAccessibilityExtensionAbility extends AccessibilityExtensionAbility {
 
 ```
 
+<a id="onaccessibilitydisconnect"></a>
 ## onAccessibilityDisconnect
 
 ```TypeScript
@@ -90,6 +92,7 @@ class MyAccessibilityExtensionAbility extends AccessibilityExtensionAbility {
 
 ```
 
+<a id="onaccessibilityeventinfo"></a>
 ## onAccessibilityEventInfo
 
 ```TypeScript
@@ -137,6 +140,7 @@ class MyAccessibilityExtensionAbility extends AccessibilityExtensionAbility {
 
 ```
 
+<a id="onaccessibilitykeyevent"></a>
 ## onAccessibilityKeyEvent
 
 ```TypeScript
@@ -159,7 +163,7 @@ Called when a physical key is pressed. In this API, you can determine whether to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| keyEvent | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-common-keyevent-i.md) | Yes | Key event. |
+| keyEvent | [KeyEvent](../../apis-arkui/arkts-components/arkts-arkui-keyevent-i.md) | Yes | Key event. |
 
 **Return value:**
 

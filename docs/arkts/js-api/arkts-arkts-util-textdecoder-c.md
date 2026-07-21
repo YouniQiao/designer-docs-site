@@ -14,6 +14,7 @@ Provides APIs to decode byte arrays into strings. It supports multiple formats, 
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -40,6 +41,7 @@ console.info('retStr = ' + retStr);
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -72,6 +74,7 @@ let textDecoder = new util.TextDecoder("utf-8",{ignoreBOM: true});
 
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -115,6 +118,7 @@ console.info('retStr = ' + retStr);
 
 ```
 
+<a id="decode"></a>
 ## decode
 
 ```TypeScript
@@ -137,7 +141,7 @@ Decodes the input content into a string.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| input | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Uint8Array object to decode. |
+| input | Uint8Array | Yes | Uint8Array object to decode. |
 | options | { stream?: false } | No | Decoding-related options. |
 
 **Return value:**
@@ -164,6 +168,7 @@ console.info("retStr = " + retStr);
 
 ```
 
+<a id="decodetostring"></a>
 ## decodeToString
 
 ```TypeScript
@@ -184,7 +189,7 @@ Decodes the input content into a string.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| input | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Uint8Array object to decode. |
+| input | Uint8Array | Yes | Uint8Array object to decode. |
 | options | [DecodeToStringOptions](arkts-arkts-util-decodetostringoptions-i.md) | No | Decoding-related options. The default value is **undefined**. |
 
 **Return value:**
@@ -211,6 +216,7 @@ console.info("retStr = " + retStr);
 
 ```
 
+<a id="decodewithstream"></a>
 ## decodeWithStream
 
 ```TypeScript
@@ -235,7 +241,7 @@ Decodes the input content into a string. If **input** is an empty array, **undef
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| input | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Uint8Array object to decode. |
+| input | Uint8Array | Yes | Uint8Array object to decode. |
 | options | [DecodeWithStreamOptions](arkts-arkts-util-decodewithstreamoptions-i.md) | No | Decoding-related options.<br>**Since:** 11 |
 
 **Return value:**

@@ -58,7 +58,7 @@ Live view notification.
 SUBMODE_AUDIO_PLAYBACK_NORMAL_NOTIFICATION = 4
 ```
 
-Audio and video playback. It is of the normal text notification type.You can access [AVSession](../../../../media/avsession/avsession-overview.md) as needed.
+Audio and video playback. It is of the normal text notification type.You can access [AVSession](docroot://media/avsession/avsession-overview.md) as needed.
 
 **Since:** 22
 
@@ -74,7 +74,7 @@ Audio and video playback. It is of the normal text notification type.You can acc
 SUBMODE_AVSESSION_AUDIO_PLAYBACK = 5
 ```
 
-Audio and video playback scenario where [AVSession](../../../../media/avsession/avsession-overview.md) is accessed.It is of the normal text notification type.
+Audio and video playback scenario where [AVSession](docroot://media/avsession/avsession-overview.md) is accessed.It is of the normal text notification type.
 
 **Since:** 22
 

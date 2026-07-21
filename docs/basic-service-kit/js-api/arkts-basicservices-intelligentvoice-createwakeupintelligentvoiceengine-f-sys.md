@@ -6,6 +6,7 @@
 import { intelligentVoice } from '@kit.BasicServicesKit';
 ```
 
+<a id="createwakeupintelligentvoiceengine"></a>
 ## createWakeupIntelligentVoiceEngine
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains an {@link WakeupIntelligentVoiceEngine} instance. This method uses an as
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | descriptor | [WakeupIntelligentVoiceEngineDescriptor](arkts-basicservices-intelligentvoice-wakeupintelligentvoiceenginedescriptor-i-sys.md) | Yes | descriptor indicates wakeup intelligent voice engine descriptor. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<WakeupIntelligentVoiceEngine> | Yes | the callback used to return the WakeupIntelligentVoiceEngine instance. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;WakeupIntelligentVoiceEngine&gt; | Yes | the callback used to return the WakeupIntelligentVoiceEngine instance. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ intelligentVoice.createWakeupIntelligentVoiceEngine(wakeupEngineDescriptor, (err
 ```
 
 
+<a id="createwakeupintelligentvoiceengine-1"></a>
 ## createWakeupIntelligentVoiceEngine
 
 ```TypeScript
@@ -91,7 +93,7 @@ Obtains an {@link WakeupIntelligentVoiceEngine} instance. This method uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WakeupIntelligentVoiceEngine> | the promise used to return the WakeupIntelligentVoiceEngine instance. |
+| Promise&lt;WakeupIntelligentVoiceEngine&gt; | the promise used to return the WakeupIntelligentVoiceEngine instance. |
 
 **Error codes:**
 

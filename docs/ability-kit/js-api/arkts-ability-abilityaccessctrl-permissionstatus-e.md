@@ -62,7 +62,7 @@ Indicates not operated. The app declares a [user authorization permission](arkts
 INVALID = 2
 ```
 
-The permission is invalid. The application does not [declare permissions](../../../../security/AccessToken/declare-permissions.md) or cannot process the request. For example, if the status of the approximate location permission is **NOT_DETERMINED**, this value will be returned when the status of the precise location permission is queried.
+The permission is invalid. The application does not [declare permissions](docroot://security/AccessToken/declare-permissions.md) or cannot process the request. For example, if the status of the approximate location permission is **NOT_DETERMINED**, this value will be returned when the status of the precise location permission is queried.
 
 **Since:** 20
 

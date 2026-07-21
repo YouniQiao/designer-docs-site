@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="setvoicemailinfo"></a>
 ## setVoiceMailInfo
 
 ```TypeScript
@@ -31,7 +32,7 @@ Sets the voice mail information.
 | slotId | number | Yes | Indicates the card slot index number,ranging from {@code 0} to the maximum card slot index number supported by the device. |
 | mailName | string | Yes | Indicates the name of voice mail. |
 | mailNumber | string | Yes | Indicates the number of voice mail. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setVoiceMailInfo. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setVoiceMailInfo. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ sim.setVoiceMailInfo(0, "mail", "xxx@xxx.com", (err: BusinessError) => {
 ```
 
 
+<a id="setvoicemailinfo-1"></a>
 ## setVoiceMailInfo
 
 ```TypeScript
@@ -90,7 +92,7 @@ Sets the voice mail information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setVoiceMailInfo. |
+| Promise&lt;void&gt; | The promise returned by the setVoiceMailInfo. |
 
 **Error codes:**
 

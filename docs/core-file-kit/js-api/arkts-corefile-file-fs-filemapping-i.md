@@ -14,6 +14,7 @@ File mapping object. Before invoking the FileMapping method, you need to use the
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="capacity"></a>
 ## capacity
 
 ```TypeScript
@@ -57,6 +58,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="flip"></a>
 ## flip
 
 ```TypeScript
@@ -101,6 +103,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="getlimit"></a>
 ## getLimit
 
 ```TypeScript
@@ -144,6 +147,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="getposition"></a>
 ## getPosition
 
 ```TypeScript
@@ -187,6 +191,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="msync"></a>
 ## msync
 
 ```TypeScript
@@ -207,7 +212,7 @@ Synchronizes the dirty page data in the entire file mapping area to the disk fil
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise object. No return value. |
+| Promise&lt;void&gt; | - Promise object. No return value. |
 
 **Error codes:**
 
@@ -243,6 +248,7 @@ mapping.msync().then(() => {
 
 ```
 
+<a id="msync-1"></a>
 ## msync
 
 ```TypeScript
@@ -270,7 +276,7 @@ Synchronizes the dirty page data in the specified range of the file mapping area
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise object. No return value. |
+| Promise&lt;void&gt; | - Promise object. No return value. |
 
 **Error codes:**
 
@@ -306,6 +312,7 @@ mapping.msync(50, buffer.byteLength).then(() => {
 
 ```
 
+<a id="msyncsync"></a>
 ## msyncSync
 
 ```TypeScript
@@ -353,6 +360,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="msyncsync-1"></a>
 ## msyncSync
 
 ```TypeScript
@@ -407,6 +415,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="read"></a>
 ## read
 
 ```TypeScript
@@ -427,7 +436,7 @@ Reads data from the current position and moves the position backward by the numb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer for storing the read file data. |
+| buffer | ArrayBuffer | Yes | Buffer for storing the read file data. |
 | length | number | No | Length of the data to be read, in bytes. This parameter is optional.The default value is the buffer length. |
 
 **Return value:**
@@ -462,6 +471,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="read-1"></a>
 ## read
 
 ```TypeScript
@@ -483,7 +493,7 @@ Reads data from the specified location without affecting the current location.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | position | number | Yes | Start position to read from. |
-| buffer | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer for storing the read file data. |
+| buffer | ArrayBuffer | Yes | Buffer for storing the read file data. |
 | length | number | No | Length of the data to be read, in bytes. This parameter is optional.The default value is the buffer length. |
 
 **Return value:**
@@ -518,6 +528,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="remaining"></a>
 ## remaining
 
 ```TypeScript
@@ -564,6 +575,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="setlimit"></a>
 ## setLimit
 
 ```TypeScript
@@ -607,6 +619,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="setposition"></a>
 ## setPosition
 
 ```TypeScript
@@ -650,6 +663,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="unmap"></a>
 ## unmap
 
 ```TypeScript
@@ -670,7 +684,7 @@ Releases the file mapping area and use the promise asynchronous callback functio
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise object. No return value. |
+| Promise&lt;void&gt; | - Promise object. No return value. |
 
 **Error codes:**
 
@@ -700,6 +714,7 @@ mapping.unmap().then(() => {
 
 ```
 
+<a id="unmapsync"></a>
 ## unmapSync
 
 ```TypeScript
@@ -738,6 +753,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -758,7 +774,7 @@ Writes data from the current location and moves the location backward by the num
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer data to be written to the file. |
+| data | ArrayBuffer | Yes | Buffer data to be written to the file. |
 | length | number | No | Length of the data to be written, in bytes. This parameter is optional.The default value is the buffer length. |
 
 **Return value:**
@@ -795,6 +811,7 @@ fileIo.closeSync(file);
 
 ```
 
+<a id="write-1"></a>
 ## write
 
 ```TypeScript
@@ -816,7 +833,7 @@ Writes data from the specified location without affecting the current location.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | position | number | Yes | Start position of the expected write. |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Buffer data to be written to the file. |
+| data | ArrayBuffer | Yes | Buffer data to be written to the file. |
 | length | number | No | Length of the data to be written, in bytes. This parameter is optional.The default value is the buffer length. |
 
 **Return value:**

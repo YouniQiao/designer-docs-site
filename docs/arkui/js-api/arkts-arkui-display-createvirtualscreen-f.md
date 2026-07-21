@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="createvirtualscreen"></a>
 ## createVirtualScreen
 
 ```TypeScript
@@ -32,7 +33,7 @@ Creates a virtual screen. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the screen ID of the created virtual screen. |
+| Promise&lt;number&gt; | Promise used to return the screen ID of the created virtual screen. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
+<a id="getupdateauthdata"></a>
 ## getUpdateAuthData
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the authentication data for system update verification. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the authentication data. |
+| Promise&lt;string&gt; | Promise used to return the authentication data. |
 
 **Error codes:**
 

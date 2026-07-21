@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="getaddressesfromlocationname"></a>
 ## getAddressesFromLocationName
 
 ```TypeScript
@@ -25,7 +26,7 @@ Obtain latitude and longitude info from location address.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | request | [GeoCodeRequest](arkts-location-geolocationmanager-geocoderequest-i.md) | Yes | Indicates the geocode query parameters. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<GeoAddress>> | Yes | Indicates the callback for reporting the latitude and longitude result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;GeoAddress&gt;&gt; | Yes | Indicates the callback for reporting the latitude and longitude result. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ try {
 ```
 
 
+<a id="getaddressesfromlocationname-1"></a>
 ## getAddressesFromLocationName
 
 ```TypeScript
@@ -82,7 +84,7 @@ Obtain latitude and longitude info from location address.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<GeoAddress>> | The promise returned by the function. |
+| Promise&lt;Array&lt;GeoAddress&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

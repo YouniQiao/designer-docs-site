@@ -6,6 +6,7 @@
 import { bas } from '@kit.ConnectivityKit';
 ```
 
+<a id="getremotedevicebatteryinfo"></a>
 ## getRemoteDeviceBatteryInfo
 
 ```TypeScript
@@ -36,7 +37,7 @@ Get remote device battery information.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<BatteryInfo> | Returns the battery info. |
+| Promise&lt;BatteryInfo&gt; | Returns the battery info. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="issuperadmin"></a>
 ## isSuperAdmin
 
 ```TypeScript
@@ -28,8 +29,8 @@ Checks whether a super device administrator application is enabled based on **bu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | Yes | Super device administrator application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is a Boolean value (**true** means that the device administrator application is enabled; and **false** means the opposite). If the operation fails, **err** is an error object. |
+| bundleName | String | Yes | Super device administrator application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null** and **data** is a Boolean value (**true** means that the device administrator application is enabled; and **false** means the opposite). If the operation fails, **err** is an error object. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ adminManager.isSuperAdmin(bundleName, (err, result) => {
 ```
 
 
+<a id="issuperadmin-1"></a>
 ## isSuperAdmin
 
 ```TypeScript
@@ -80,13 +82,13 @@ Checks whether a super device administrator application is enabled based on **bu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | Yes | Super device administrator application. |
+| bundleName | String | Yes | Super device administrator application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means the super device administrator application is enabled; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means the super device administrator application is enabled; the value **false** means the opposite. |
 
 **Error codes:**
 

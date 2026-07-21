@@ -1,6 +1,6 @@
 # @ohos.app.ability.insightIntent
 
-This module provides basic definitions of the [InsightIntent framework](../../../../application-models/insight-intent-overview.md).
+This module provides basic definitions of the [InsightIntent framework](docroot://application-models/insight-intent-overview.md).
 
 **Since:** 11
 
@@ -27,8 +27,8 @@ import { insightIntent } from '@kit.AbilityKit';
 | Name | Description |
 | --- | --- |
 | [ExecuteResult](arkts-ability-insightintent-executeresult-i.md) | Enumerates the return results of intent execution. |
-| [IntentEntity](arkts-ability-insightintent-intententity-i.md) | Defines the struct of an intent entity. It represents key information objects involved during intent execution,including intent parameters and execution results.You can define intent entities by inheriting this class. The child class must be decorated with [@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity). |
-| [IntentResult](arkts-ability-insightintent-intentresult-i.md) | Defines the return result of intent execution. The [generic type](../../../../quick-start/introduction-to-arkts.md#generic-class-and-interface) is supported. |
+| [IntentEntity](arkts-ability-insightintent-intententity-i.md) | Defines the struct of an intent entity. It represents key information objects involved during intent execution,including intent parameters and execution results.  You can define intent entities by inheriting this class. The child class must be decorated with [@InsightIntentEntity](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity). |
+| [IntentResult](arkts-ability-insightintent-intentresult-i.md) | Defines the return result of intent execution. The [generic type](docroot://quick-start/introduction-to-arkts.md#generic-class-and-interface) is supported. |
 | [QueryEntityParam](arkts-ability-insightintent-queryentityparam-i.md) | Parameter for query entity. |
 
 ### Enums

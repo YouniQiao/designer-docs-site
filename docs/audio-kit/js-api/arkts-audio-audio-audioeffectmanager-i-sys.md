@@ -16,6 +16,7 @@ Implements audio effect management.
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="getaudioeffectproperty"></a>
 ## getAudioEffectProperty
 
 ```TypeScript
@@ -38,7 +39,7 @@ Gets current audio effect properties.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AudioEffectProperty> | Array of current audio effect properties. |
+| Array&lt;AudioEffectProperty&gt; | Array of current audio effect properties. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ try {
 
 ```
 
+<a id="getsupportedaudioeffectproperty"></a>
 ## getSupportedAudioEffectProperty
 
 ```TypeScript
@@ -85,7 +87,7 @@ Gets supported audio effect properties based on current devices.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AudioEffectProperty> | Array of supported audio effect properties. |
+| Array&lt;AudioEffectProperty&gt; | Array of supported audio effect properties. |
 
 **Error codes:**
 
@@ -110,6 +112,7 @@ try {
 
 ```
 
+<a id="isaudioseparationeffectsupported"></a>
 ## isAudioSeparationEffectSupported
 
 ```TypeScript
@@ -140,6 +143,7 @@ Checks whether the current device supports audio separation effect in system.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 
+<a id="offaudioseparationeffectenabledchange"></a>
 ## offAudioSeparationEffectEnabledChange
 
 ```TypeScript
@@ -162,7 +166,7 @@ Unsubscribes from the system audio separation effect enabled state change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | The callback used in subscription function for unsubscribing.If not using this parameter, all callbacks subscribed in current process before will be unsubscribed. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | The callback used in subscription function for unsubscribing.If not using this parameter, all callbacks subscribed in current process before will be unsubscribed. |
 
 **Error codes:**
 
@@ -171,6 +175,7 @@ Unsubscribes from the system audio separation effect enabled state change event.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="onaudioseparationeffectenabledchange"></a>
 ## onAudioSeparationEffectEnabledChange
 
 ```TypeScript
@@ -193,7 +198,7 @@ Subscribes to system audio separation effect enabled state change event.The audi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback used to listen the system audio separation effect enabled state change event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback used to listen the system audio separation effect enabled state change event. |
 
 **Error codes:**
 
@@ -201,6 +206,7 @@ Subscribes to system audio separation effect enabled state change event.The audi
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
 
+<a id="setaudioeffectproperty"></a>
 ## setAudioEffectProperty
 
 ```TypeScript
@@ -223,7 +229,7 @@ Sets current audio effect properties.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| propertyArray | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AudioEffectProperty> | Yes | array of audio effect property to be set.Notice that only one effect property name in each effect property category should be set. |
+| propertyArray | Array&lt;AudioEffectProperty&gt; | Yes | array of audio effect property to be set.Notice that only one effect property name in each effect property category should be set. |
 
 **Error codes:**
 
@@ -250,6 +256,7 @@ try {
 
 ```
 
+<a id="setaudioseparationeffectenabled"></a>
 ## setAudioSeparationEffectEnabled
 
 ```TypeScript
@@ -282,7 +289,7 @@ Sets audio separation effect enable or disable for specific application process,
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -294,6 +301,7 @@ Sets audio separation effect enable or disable for specific application process,
 | [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Effect is not supported in this device. |
 | [6800301](../errorcode-audio.md#6800301-system-error) | Audio service error occurs like service died. |
 
+<a id="setaudioseparationeffectvolume"></a>
 ## setAudioSeparationEffectVolume
 
 ```TypeScript
@@ -325,7 +333,7 @@ Sets audio separation effect volume for specific volume type.This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

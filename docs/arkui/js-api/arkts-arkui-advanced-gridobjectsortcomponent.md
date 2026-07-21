@@ -12,7 +12,7 @@ import { GridObjectSortComponentType, GridObjectSortComponentOptions, GridObject
 
 | Name | Description |
 | --- | --- |
-| [GridObjectSortComponent](arkts-arkui-arkui-advanced-gridobjectsortcomponent-gridobjectsortcomponent-s.md) | **GridObjectSortComponent** is a grid object organizer that you can use to edit, drag to sort, add, and delete grid objects.@internal/component/ets/common} &gt; and [universal events](./@internal/component/ets/common) configured, the compiler toolchain automatically &gt; generates an additional **__Common__** node and mounts the universal attributes and universal events on this node &gt; rather than the **GridObjectSortComponent** component itself. As a result, the configured universal attributes and &gt; universal events may fail to take effect or behave as intended. For this reason, avoid using universal attributes &gt; and events with the **GridObjectSortComponent** component. |
+| [GridObjectSortComponent](arkts-arkui-arkui-advanced-gridobjectsortcomponent-gridobjectsortcomponent-s.md) | **GridObjectSortComponent** is a grid object organizer that you can use to edit, drag to sort, add, and delete grid objects.  @internal/component/ets/common}  > and [universal events](../../apis-arkui/arkts-components/arkts-arkui-common-attribute.md) configured, the compiler toolchain automatically  > generates an additional **__Common__** node and mounts the universal attributes and universal events on this node  > rather than the **GridObjectSortComponent** component itself. As a result, the configured universal attributes and  > universal events may fail to take effect or behave as intended. For this reason, avoid using universal attributes  > and events with the **GridObjectSortComponent** component. |
 
 ### Interfaces
 

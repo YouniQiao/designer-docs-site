@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="addprofile"></a>
 ## addProfile
 
 ```TypeScript
@@ -32,7 +33,7 @@ Starts a page through an ability, on which users can touch the button to downloa
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if the profile is added successfully;returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if the profile is added successfully;returns {@code false} otherwise. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { privacyManager } from '@kit.AbilityKit';
 ```
 
+<a id="on"></a>
 ## on('activeStateChange')
 
 ```TypeScript
@@ -43,8 +44,8 @@ Multiple callback functions are allowed to be subscribed for the same permission
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'activeStateChange' | Yes | Event type. The value is **'activeStateChange'**, which indicates the permission usage change. |
-| permissionList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Permissions> | Yes | List of subscribed permission names. An empty value indicates subscription to the usage status changes of all permissions.Passing an invalid value returns error code 12100001.<br>Value constraint: The array length cannot exceed 1024. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ActiveChangeResponse> | Yes | Callback used to return the object of subscribing to state changes of the specified permission. |
+| permissionList | Array&lt;Permissions&gt; | Yes | List of subscribed permission names. An empty value indicates subscription to the usage status changes of all permissions.Passing an invalid value returns error code 12100001.<br>Value constraint: The array length cannot exceed 1024. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ActiveChangeResponse&gt; | Yes | Callback used to return the object of subscribing to state changes of the specified permission. |
 
 **Error codes:**
 

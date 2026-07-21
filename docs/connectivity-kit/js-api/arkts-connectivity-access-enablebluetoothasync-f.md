@@ -6,6 +6,7 @@
 import { access } from '@kit.ConnectivityKit';
 ```
 
+<a id="enablebluetoothasync"></a>
 ## enableBluetoothAsync
 
 ```TypeScript
@@ -28,7 +29,7 @@ Asynchronous interface for enables Bluetooth on a device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns the promise object. |
+| Promise&lt;void&gt; | Returns the promise object. |
 
 **Error codes:**
 

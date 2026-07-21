@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface DataViewConstructor--><!--Device-unnamed-interface DataViewConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -22,7 +23,7 @@ new(buffer: ArrayBufferLike, byteOffset?: number, byteLength?: number): DataView
 
 | Type | Description |
 | --- | --- |
-| [DataView](arkts-na-lib-es5-dataview-i.md) |  |
+| DataView |  |
 
 ## prototype
 

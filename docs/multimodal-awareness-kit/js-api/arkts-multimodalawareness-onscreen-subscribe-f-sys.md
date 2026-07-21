@@ -6,6 +6,7 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="subscribe"></a>
 ## subscribe
 
 ```TypeScript
@@ -37,7 +38,7 @@ Enables proactive awareness on screen content and subscribes to a screen awarene
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | capability | [OnscreenAwarenessCap](arkts-multimodalawareness-onscreen-onscreenawarenesscap-i-sys.md) | Yes | Onscreen awareness capability list. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<OnscreenAwarenessInfo[]> | Yes | Callback function, which returns the onscreen<br> awareness result. The returned onscreen awareness information list **OnscreenAwarenessInfo[]**<br> contains a maximum of two awareness information items. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;OnscreenAwarenessInfo[]&gt; | Yes | Callback function, which returns the onscreen<br> awareness result. The returned onscreen awareness information list **OnscreenAwarenessInfo[]**<br> contains a maximum of two awareness information items. |
 | options | [OnscreenAwarenessOptions](arkts-multimodalawareness-onscreen-onscreenawarenessoptions-i-sys.md) | No | Onscreen awareness parameter list. |
 
 **Error codes:**

@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getdefaultnet"></a>
 ## getDefaultNet
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the data network that is activated by default.To call this method, you m
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<NetHandle> | Yes | the callback of getDefaultNet. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;NetHandle&gt; | Yes | the callback of getDefaultNet. |
 
 **Error codes:**
 
@@ -56,6 +57,7 @@ connection.getDefaultNet((error: BusinessError, data: connection.NetHandle) => {
 ```
 
 
+<a id="getdefaultnet-1"></a>
 ## getDefaultNet
 
 ```TypeScript
@@ -78,7 +80,7 @@ Obtains the data network that is activated by default.To call this method, you m
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetHandle> | The promise returned by the function. |
+| Promise&lt;NetHandle&gt; | The promise returned by the function. |
 
 **Error codes:**
 

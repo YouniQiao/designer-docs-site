@@ -14,6 +14,7 @@ Program access control management class, providing capabilities such as permissi
 import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 ```
 
+<a id="checkaccesstoken"></a>
 ## checkAccessToken
 
 ```TypeScript
@@ -43,7 +44,7 @@ Applicable to scenarios where a pre-permission check is performed before an app 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GrantStatus> | Promise used to return the authorization status result. |
+| Promise&lt;GrantStatus&gt; | Promise used to return the authorization status result. |
 
 **Error codes:**
 
@@ -75,6 +76,7 @@ atManager.checkAccessToken(tokenID, permissionName).then((data: abilityAccessCtr
 
 ```
 
+<a id="checkaccesstokensync"></a>
 ## checkAccessTokenSync
 
 ```TypeScript
@@ -134,6 +136,7 @@ console.info(`Result: ${data}`);
 
 ```
 
+<a id="getselfpermissionstatus"></a>
 ## getSelfPermissionStatus
 
 ```TypeScript
@@ -190,6 +193,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('selfPermissionStateChange')
 
 ```TypeScript
@@ -229,8 +233,8 @@ This API is usually used in conjunction with [on](abilityAccessCtrl.AtManager.on
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selfPermissionStateChange' | Yes | Type of the unsubscription event, which is fixed as'selfPermissionStateChange', indicating a permission status change event. |
-| permissionList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Permissions> | Yes | List of permission names to unsubscribe from. If empty, it indicates unsubscribing from all permission status changes, and must match the permission list used during [on](abilityAccessCtrl.AtManager.on) subscription (order insensitive).<br>The maximum length is 1024. Value constraint: Each permission name in the list must be a valid permission name, and its length cannot exceed 256 characters. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PermissionStateChangeInfo> | No | Callback function. Callback for unsubscribing from the status change event of the specified permission names. If this parameter is not passed, all callback functions associated with permissionList will be deleted in batch. |
+| permissionList | Array&lt;Permissions&gt; | Yes | List of permission names to unsubscribe from. If empty, it indicates unsubscribing from all permission status changes, and must match the permission list used during [on](abilityAccessCtrl.AtManager.on) subscription (order insensitive).<br>The maximum length is 1024. Value constraint: Each permission name in the list must be a valid permission name, and its length cannot exceed 256 characters. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PermissionStateChangeInfo&gt; | No | Callback function. Callback for unsubscribing from the status change event of the specified permission names. If this parameter is not passed, all callback functions associated with permissionList will be deleted in batch. |
 
 **Error codes:**
 
@@ -260,6 +264,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('selfPermissionStateChange')
 
 ```TypeScript
@@ -303,8 +308,8 @@ This API is usually used in conjunction with [off](abilityAccessCtrl.AtManager.o
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'selfPermissionStateChange' | Yes | Event type. The value is **'selfPermissionStateChange'**, which indicates the changes in the permission states specific to this application alone. |
-| permissionList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Permissions> | Yes | List of permission names to subscribe to. Passing an invalid value returns error code 12100001.<br>The maximum length is 1024. Value constraint: Each permission name in the list must be a valid permission name, and its length cannot exceed 256 characters. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PermissionStateChangeInfo> | Yes | Callback used to return the result. Callback for subscribing to status change events of the specified permission name. |
+| permissionList | Array&lt;Permissions&gt; | Yes | List of permission names to subscribe to. Passing an invalid value returns error code 12100001.<br>The maximum length is 1024. Value constraint: Each permission name in the list must be a valid permission name, and its length cannot exceed 256 characters. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PermissionStateChangeInfo&gt; | Yes | Callback used to return the result. Callback for subscribing to status change events of the specified permission name. |
 
 **Error codes:**
 
@@ -339,6 +344,7 @@ try {
 
 ```
 
+<a id="openpermissiononsetting"></a>
 ## openPermissionOnSetting
 
 ```TypeScript
@@ -347,7 +353,7 @@ openPermissionOnSetting(context: Context, permission: Permissions): Promise<Sele
 
 Used by [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)/[UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md) to bring up the permission settings page. After the call is successful, the permission settings page will be opened. After the user operates on the page, the user's selection result on the settings page will be returned. This API uses a promise to return the result.
 
-Applicable to scenarios where [manual_settings](../../../../security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type permissions cannot be applied for through the normal authorization dialog box and the user must be guided to enter system settings to complete authorization. manual_settings type permissions are permissions that can only be manually enabled by the user in system settings and cannot be directly applied for through the normal authorization dialog box.
+Applicable to scenarios where [manual_settings](docroot://security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type permissions cannot be applied for through the normal authorization dialog box and the user must be guided to enter system settings to complete authorization. manual_settings type permissions are permissions that can only be manually enabled by the user in system settings and cannot be directly applied for through the normal authorization dialog box.
 
 **Since:** 22
 
@@ -362,13 +368,13 @@ Applicable to scenarios where [manual_settings](../../../../security/AccessToken
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Yes | Context of the UIAbility or UIExtensionAbility requesting the permission. If the context of another app, an invalid page, or a non-stage model is passed in, the API may report an error or fail to open the settings page. |
-| permission | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission for which the settings page needs to be opened. If an invalid permission or a permission not declared in module.json is passed in, error code 12100001 is returned.Only permissions of the [manual_settings](../../../../security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type are supported. If a permission of another type is passed in, error code 12100014 is returned.<br>Value constraint: The permission name cannot exceed 256 characters. |
+| permission | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission for which the settings page needs to be opened. If an invalid permission or a permission not declared in module.json is passed in, error code 12100001 is returned.Only permissions of the [manual_settings](docroot://security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type are supported. If a permission of another type is passed in, error code 12100014 is returned.<br>Value constraint: The permission name cannot exceed 256 characters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<SelectedResult> | Promise used to return the user's selection result on the settings page. |
+| Promise&lt;SelectedResult&gt; | Promise used to return the user's selection result on the settings page. |
 
 **Error codes:**
 
@@ -399,6 +405,7 @@ atManager.openPermissionOnSetting(context, 'ohos.permission.HOOK_KEY_EVENT').the
 
 ```
 
+<a id="requestglobalswitch"></a>
 ## requestGlobalSwitch
 
 ```TypeScript
@@ -413,7 +420,7 @@ When an app needs to use functions such as the camera, microphone, or location t
 
 <!--RP5-->
 
-![requestGlobalSwitch](../../../../reference/apis-ability-kit/figures/requestGlobalSwitch.png)
+![requestGlobalSwitch](docroot://reference/apis-ability-kit/figures/requestGlobalSwitch.png)
 
 <!--RP5End-->
 
@@ -438,7 +445,7 @@ When an app needs to use functions such as the camera, microphone, or location t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates the current global switch is enabled, and **false** indicates the current global switch is still disabled. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates the current global switch is enabled, and **false** indicates the current global switch is still disabled. |
 
 **Error codes:**
 
@@ -449,6 +456,7 @@ When an app needs to use functions such as the camera, microphone, or location t
 | [12100009](../errorcode-access-token.md#12100009-internal-service-error) | Common inner error. An error occurs when creating the pop-up window or obtaining user operation result. |
 | [12100013](../errorcode-access-token.md#12100013-global-switch-enabled) | The specific global switch is already open. |
 
+<a id="requestpermissiononsetting"></a>
 ## requestPermissionOnSetting
 
 ```TypeScript
@@ -463,7 +471,7 @@ Before calling this API, the app needs to call [requestPermissionsFromUser](arkt
 
 <!--RP4-->
 
-![requestPermissionOnSetting](../../../../reference/apis-ability-kit/figures/requestPermissionOnSetting.png)
+![requestPermissionOnSetting](docroot://reference/apis-ability-kit/figures/requestPermissionOnSetting.png)
 
 <!--RP4End-->
 
@@ -482,13 +490,13 @@ Before calling this API, the app needs to call [requestPermissionsFromUser](arkt
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Yes | Context of the UIAbility or UIExtensionAbility requesting the permission. If the context of another app, an invalid page, or a non-stage model is passed in, the API may report an error or fail to display the pop-up window. |
-| permissionList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Permissions> | Yes | List of permission names. This array cannot be empty. Only user_grant permissions that have been declared and for which the user has revoked authorization can be passed in, and the permissions passed in must belong to the same [permission group](../../../../security/AccessToken/app-permission-group-list.md).<br>Value constraint: The permission name length cannot exceed 256 characters. |
+| permissionList | Array&lt;Permissions&gt; | Yes | List of permission names. This array cannot be empty. Only user_grant permissions that have been declared and for which the user has revoked authorization can be passed in, and the permissions passed in must belong to the same [permission group](docroot://security/AccessToken/app-permission-group-list.md).<br>Value constraint: The permission name length cannot exceed 256 characters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<GrantStatus>> | Promise used to return an array of authorization statuses. Each element in the array corresponds to the authorization result of the respective permission in permissionList. |
+| Promise&lt;Array&lt;GrantStatus&gt;&gt; | Promise used to return an array of authorization statuses. Each element in the array corresponds to the authorization result of the respective permission in permissionList. |
 
 **Error codes:**
 
@@ -501,21 +509,22 @@ Before calling this API, the app needs to call [requestPermissionsFromUser](arkt
 | [12100012](../errorcode-access-token.md#12100012-not-all-permissions-are-rejected-by-the-user) | The permission list contains the permission that has not been revoked by the user. |
 | [12100014](../errorcode-access-token.md#12100014-unexpected-permission) | Unexpected permission. You cannot request this type of permission from users via a pop-up window.<br>**Applicable version:** 21 and later |
 
+<a id="requestpermissionsfromuser"></a>
 ## requestPermissionsFromUser
 
 ```TypeScript
 requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>, requestCallback: AsyncCallback<PermissionRequestResult>) : void
 ```
 
-Used by <!--RP1-->[UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](../../../../security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses an asynchronous callback to return the result.
+Used by <!--RP1-->[UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](docroot://security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses an asynchronous callback to return the result.
 
-Applicable to scenarios where an app proactively applies for [user_grant](../../../../security/AccessToken/app-permission-mgmt-overview.md#user_grant-user-authorization)permissions from the user before accessing protected resources for the first time.
+Applicable to scenarios where an app proactively applies for [user_grant](docroot://security/AccessToken/app-permission-mgmt-overview.md#user_grant-user-authorization)permissions from the user before accessing protected resources for the first time.
 
 If the user denies authorization, the authorization dialog box cannot be brought up again through this API.The developer can guide the user to go to the system settings interface for manual authorization, or call [requestPermissionOnSetting](arkts-ability-abilityaccessctrl-atmanager-i.md#requestpermissiononsetting-1) to bring up the permission settings dialog box to guide the user to complete authorization.
 
 <!--RP3-->
 
-![requestPermissionsFromUser](../../../../reference/apis-ability-kit/figures/requestPermissionsFromUser.png)
+![requestPermissionsFromUser](docroot://reference/apis-ability-kit/figures/requestPermissionsFromUser.png)
 
 <!--RP3End-->
 
@@ -533,9 +542,9 @@ If the user denies authorization, the authorization dialog box cannot be brought
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Yes | Context of the &lt;!--RP1--&gt;UIAbility&lt;!--RP1End--&gt; requesting the permission.<br>If the context of another app, an invalid page, or a non-stage model is passed in, the API may report an error or fail to display the dialog box. |
-| permissionList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Permissions> | Yes | List of permission names. It is recommended to pass in only the sensitive permissions necessary for the current business scenario, avoiding requesting too many permissions at once.<br>The minimum length is 1. Value constraint: The permission name can contain a maximum of 256 characters. |
-| requestCallback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PermissionRequestResult> | Yes | Callback function. After the call is complete, error information is returned through **err**, and the permission request result object is returned through **data**. The developer can determine whether the user has authorized, whether a dialog box has been displayed, and the reason for failure based on the permission request result. |
+| context | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Yes | Context of the <!--RP1-->UIAbility<!--RP1End--> requesting the permission.<br>If the context of another app, an invalid page, or a non-stage model is passed in, the API may report an error or fail to display the dialog box. |
+| permissionList | Array&lt;Permissions&gt; | Yes | List of permission names. It is recommended to pass in only the sensitive permissions necessary for the current business scenario, avoiding requesting too many permissions at once.<br>The minimum length is 1. Value constraint: The permission name can contain a maximum of 256 characters. |
+| requestCallback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PermissionRequestResult&gt; | Yes | Callback function. After the call is complete, error information is returned through **err**, and the permission request result object is returned through **data**. The developer can determine whether the user has authorized, whether a dialog box has been displayed, and the reason for failure based on the permission request result. |
 
 **Error codes:**
 
@@ -572,13 +581,14 @@ atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA'], (err: 
 
 ```
 
+<a id="requestpermissionsfromuser-1"></a>
 ## requestPermissionsFromUser
 
 ```TypeScript
 requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>) : Promise<PermissionRequestResult>
 ```
 
-Used by <!--RP1-->[UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](../../../../security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses a promise to return the result.
+Used by <!--RP1-->[UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](docroot://security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses a promise to return the result.
 
 Applicable to scenarios where an app proactively applies for user_grant permissions from the user before accessing protected resources for the first time.
 
@@ -598,14 +608,14 @@ If the user denies authorization, the authorization dialog box cannot be brought
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Yes | Context of the &lt;!--RP1--&gt;UIAbility&lt;!--RP1End--&gt; requesting the permission. If the context of another app, an invalid page, or a non-stage model is passed in, the API may report an error or fail to display the dialog box. |
-| permissionList | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Permissions> | Yes | List of permission names. This array cannot be empty. It is recommended to pass in only the sensitive permissions necessary for the current business scenario and avoid requesting too many permissions at once.<br>The minimum length is 1. Value constraint: The length of a permission name cannot exceed 256 characters. |
+| context | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Yes | Context of the <!--RP1-->UIAbility<!--RP1End--> requesting the permission. If the context of another app, an invalid page, or a non-stage model is passed in, the API may report an error or fail to display the dialog box. |
+| permissionList | Array&lt;Permissions&gt; | Yes | List of permission names. This array cannot be empty. It is recommended to pass in only the sensitive permissions necessary for the current business scenario and avoid requesting too many permissions at once.<br>The minimum length is 1. Value constraint: The length of a permission name cannot exceed 256 characters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PermissionRequestResult> | Promise used to return the permission request result object, which contains information such as the permission array, the authorization result of each permission, whether to show a dialog box, and the failure reason. |
+| Promise&lt;PermissionRequestResult&gt; | Promise used to return the permission request result object, which contains information such as the permission array, the authorization result of each permission, whether to show a dialog box, and the failure reason. |
 
 **Error codes:**
 
@@ -640,6 +650,7 @@ atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA']).then((
 
 ```
 
+<a id="verifyaccesstoken"></a>
 ## verifyAccessToken
 
 ```TypeScript
@@ -670,7 +681,7 @@ Applicable to scenarios where a pre-permission check is performed before an app 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GrantStatus> | Promise used to return the authorization status result. |
+| Promise&lt;GrantStatus&gt; | Promise used to return the authorization status result. |
 
 **Example**
 
@@ -695,6 +706,7 @@ atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCt
 
 ```
 
+<a id="verifyaccesstoken-1"></a>
 ## verifyAccessToken
 
 ```TypeScript
@@ -728,7 +740,7 @@ Verifies whether an app has been granted the specified permission. After the cal
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GrantStatus> | Promise used to return the authorization status result. |
+| Promise&lt;GrantStatus&gt; | Promise used to return the authorization status result. |
 
 **Example**
 
@@ -753,6 +765,7 @@ atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCt
 
 ```
 
+<a id="verifyaccesstokensync"></a>
 ## verifyAccessTokenSync
 
 ```TypeScript

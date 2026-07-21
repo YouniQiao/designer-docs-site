@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface String--><!--Device-unnamed-interface String-End-->
 
+<a id="charat"></a>
 ## charAt
 
 ```TypeScript
@@ -24,6 +25,7 @@ Returns the character at the specified index.
 | --- | --- |
 | string |  |
 
+<a id="charcodeat"></a>
 ## charCodeAt
 
 ```TypeScript
@@ -46,6 +48,7 @@ Returns the Unicode value of the character at the specified location.
 | --- | --- |
 | number |  |
 
+<a id="concat"></a>
 ## concat
 
 ```TypeScript
@@ -68,6 +71,7 @@ Returns a string that contains the concatenation of two or more strings.
 | --- | --- |
 | string |  |
 
+<a id="indexof"></a>
 ## indexOf
 
 ```TypeScript
@@ -91,6 +95,7 @@ Returns the position of the first occurrence of a substring.
 | --- | --- |
 | number |  |
 
+<a id="lastindexof"></a>
 ## lastIndexOf
 
 ```TypeScript
@@ -114,6 +119,7 @@ Returns the last occurrence of a substring in the string.
 | --- | --- |
 | number |  |
 
+<a id="localecompare"></a>
 ## localeCompare
 
 ```TypeScript
@@ -138,6 +144,7 @@ Determines whether two strings are equivalent in the current or specified locale
 | --- | --- |
 | number |  |
 
+<a id="match"></a>
 ## match
 
 ```TypeScript
@@ -160,6 +167,7 @@ Matches a string with a regular expression, and returns an array containing the 
 | --- | --- |
 | [RegExpMatchArray](arkts-na-lib-es5-regexpmatcharray-i.md) |  |
 
+<a id="replace"></a>
 ## replace
 
 ```TypeScript
@@ -183,6 +191,7 @@ Replaces text in a string, using a regular expression or search string.
 | --- | --- |
 | string |  |
 
+<a id="replace-1"></a>
 ## replace
 
 ```TypeScript
@@ -198,7 +207,7 @@ Replaces text in a string, using a regular expression or search string.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | searchValue | string \| RegExp | Yes |  |
-| replacer | (substring: string, ...args: any[]) => string | Yes |  |
+| replacer | (substring: string, ...args: any[]) =&gt; string | Yes |  |
 
 **Return value:**
 
@@ -206,6 +215,7 @@ Replaces text in a string, using a regular expression or search string.
 | --- | --- |
 | string |  |
 
+<a id="search"></a>
 ## search
 
 ```TypeScript
@@ -228,6 +238,7 @@ Finds the first substring match in a regular expression search.
 | --- | --- |
 | number |  |
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript
@@ -251,6 +262,7 @@ Returns a section of a string.
 | --- | --- |
 | string |  |
 
+<a id="split"></a>
 ## split
 
 ```TypeScript
@@ -274,6 +286,7 @@ Split a string into substrings using the specified separator and return them as 
 | --- | --- |
 | string[] |  |
 
+<a id="substr"></a>
 ## substr
 
 ```TypeScript
@@ -299,6 +312,7 @@ Gets a substring beginning at the specified location and having the specified le
 | --- | --- |
 | string |  |
 
+<a id="substring"></a>
 ## substring
 
 ```TypeScript
@@ -322,6 +336,7 @@ Returns the substring at the specified location within a String object.
 | --- | --- |
 | string |  |
 
+<a id="tolocalelowercase"></a>
 ## toLocaleLowerCase
 
 ```TypeScript
@@ -344,6 +359,7 @@ Converts all alphabetic characters to lowercase, taking into account the host en
 | --- | --- |
 | string |  |
 
+<a id="tolocaleuppercase"></a>
 ## toLocaleUpperCase
 
 ```TypeScript
@@ -366,6 +382,7 @@ Returns a string where all alphabetic characters have been converted to uppercas
 | --- | --- |
 | string |  |
 
+<a id="tolowercase"></a>
 ## toLowerCase
 
 ```TypeScript
@@ -382,6 +399,7 @@ Converts all the alphabetic characters in a string to lowercase.
 | --- | --- |
 | string |  |
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -398,6 +416,7 @@ Returns a string representation of a string.
 | --- | --- |
 | string |  |
 
+<a id="touppercase"></a>
 ## toUpperCase
 
 ```TypeScript
@@ -414,6 +433,7 @@ Converts all the alphabetic characters in a string to uppercase.
 | --- | --- |
 | string |  |
 
+<a id="trim"></a>
 ## trim
 
 ```TypeScript
@@ -430,6 +450,7 @@ Removes the leading and trailing white space and line terminator characters from
 | --- | --- |
 | string |  |
 
+<a id="valueof"></a>
 ## valueOf
 
 ```TypeScript

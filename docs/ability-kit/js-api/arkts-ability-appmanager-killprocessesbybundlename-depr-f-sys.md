@@ -1,5 +1,6 @@
 # killProcessesByBundleName (System API)
 
+<a id="killprocessesbybundlename"></a>
 ## killProcessesByBundleName
 
 ```TypeScript
@@ -32,7 +33,7 @@ Kill processes by bundle name
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Example**
 
@@ -52,6 +53,7 @@ appManager.killProcessesByBundleName(bundleName)
 ```
 
 
+<a id="killprocessesbybundlename-1"></a>
 ## killProcessesByBundleName
 
 ```TypeScript
@@ -79,7 +81,7 @@ Kill processes by bundle name
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | cut off the callback function of the account process. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | cut off the callback function of the account process. |
 
 **Example**
 

@@ -1,5 +1,6 @@
 # set
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -41,6 +42,7 @@ Sets the property of target, equivalent to `target[propertyKey] = value` when `r
 | boolean |  |
 
 
+<a id="set-1"></a>
 ## set
 
 ```TypeScript

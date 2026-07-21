@@ -6,6 +6,7 @@
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
+<a id="createhtmldata"></a>
 ## createHtmlData
 
 ```TypeScript
@@ -18,7 +19,7 @@ Creates a **PasteData** object of the HTML type.
 
 **Deprecated since:** 9
 
-**Substitutes:** createData(mimeType:
+**Substitutes:** [createData(mimeType:](arkts-basicservices-pasteboard-createdata-f.md#createdata-1)
 
 <!--Device-pasteboard-function createHtmlData(htmlText: string): PasteData--><!--Device-pasteboard-function createHtmlData(htmlText: string): PasteData-End-->
 

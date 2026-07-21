@@ -18,6 +18,7 @@ Provides APIs for managing the **UserAuth** object.
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="auth"></a>
 ## auth
 
 ```TypeScript
@@ -57,7 +58,7 @@ Starts user authentication. This API uses a callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| challenge | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Challenge value, which can be passed in Uint8Array([]) format. |
+| challenge | Uint8Array | Yes | Challenge value, which can be passed in Uint8Array([]) format. |
 | authType | [UserAuthType](arkts-userauthentication-userauth-userauthtype-e.md) | Yes | Authentication type. Currently, **FACE** and **FINGERPRINT** are supported. |
 | authTrustLevel | [AuthTrustLevel](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-authtrustlevel-e-sys.md) | Yes | Authentication trust level. |
 | callback | [IUserAuthCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-iuserauthcallback-i-sys.md) | Yes | Callback used to return the result. |
@@ -66,7 +67,7 @@ Starts user authentication. This API uses a callback to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Context ID, which is used as the input parameter of [cancelAuth](arkts-userauthentication-userauth-userauth-c.md#cancelauth-1). |
+| Uint8Array | Context ID, which is used as the input parameter of [cancelAuth](arkts-userauthentication-userauth-userauth-c.md#cancelauth-1). |
 
 **Example**
 
@@ -92,6 +93,7 @@ auth.auth(challenge, userAuth.UserAuthType.FACE, userAuth.AuthTrustLevel.ATL1, {
 
 ```
 
+<a id="cancelauth"></a>
 ## cancelAuth
 
 ```TypeScript
@@ -116,7 +118,7 @@ Cancels the authentication based on the context ID.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| contextID | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Context ID, which is obtained by [auth](arkts-userauthentication-userauth-userauth-c.md#auth-1). |
+| contextID | Uint8Array | Yes | Context ID, which is obtained by [auth](arkts-userauthentication-userauth-userauth-c.md#auth-1). |
 
 **Return value:**
 
@@ -141,6 +143,7 @@ if (cancelCode == userAuth.ResultCode.SUCCESS) {
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -168,6 +171,7 @@ let auth = new userAuth.UserAuth();
 
 ```
 
+<a id="getavailablestatus"></a>
 ## getAvailableStatus
 
 ```TypeScript
@@ -216,6 +220,7 @@ if (checkCode == userAuth.ResultCode.SUCCESS) {
 
 ```
 
+<a id="getversion"></a>
 ## getVersion
 
 ```TypeScript

@@ -14,6 +14,7 @@ LinkedList is implemented based on the doubly linked list. Each node of the doub
 import { LinkedList } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ while(!temp.done) {
 
 ```
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -127,6 +129,7 @@ console.info("result = ", result4) // result =  true
 
 ```
 
+<a id="addfirst"></a>
 ## addFirst
 
 ```TypeScript
@@ -175,6 +178,7 @@ console.info("result:", result);  // result: 1,2,3
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -211,6 +215,7 @@ console.info("result:", result);  // result: false
 
 ```
 
+<a id="clone"></a>
 ## clone
 
 ```TypeScript
@@ -231,7 +236,7 @@ Clones an instance identical to this **LinkedList** and returns it. The modifica
 
 | Type | Description |
 | --- | --- |
-| [LinkedList](arkts-arkts-util-linkedlist-linkedlist-c.md)<T> | New **LinkedList** instance obtained. |
+| [LinkedList](arkts-arkts-util-linkedlist-linkedlist-c.md)&lt;T&gt; | New **LinkedList** instance obtained. |
 
 **Error codes:**
 
@@ -252,6 +257,7 @@ console.info("result:", result.has(4));  // result: true
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -281,6 +287,7 @@ let linkedList = new LinkedList<string | number | boolean | object>();
 
 ```
 
+<a id="converttoarray"></a>
 ## convertToArray
 
 ```TypeScript
@@ -301,7 +308,7 @@ Converts this LinkedList into an array and returns the array.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Array obtained. |
+| Array&lt;T&gt; | Array obtained. |
 
 **Error codes:**
 
@@ -322,6 +329,7 @@ console.info("result:", result);  // result: 2,4,5,4
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -342,8 +350,8 @@ Uses a callback to traverse the elements in this LinkedList and obtain their ind
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index?: number, LinkedList?: LinkedList<T>) => void | Yes | Callback invoked to traverse the elements in the LinkedList. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value: T, index?: number, LinkedList?: LinkedList&lt;T&gt;) =&gt; void | Yes | Callback invoked to traverse the elements in the LinkedList. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -369,6 +377,7 @@ linkedList.forEach((value: number, index: number) => {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -402,7 +411,7 @@ Obtains an element at the specified position in this LinkedList.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The get method cannot be bound. |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of index is out of range.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of index is out of range.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -420,6 +429,7 @@ console.info("result:", result);  // result: 5
 
 ```
 
+<a id="getfirst"></a>
 ## getFirst
 
 ```TypeScript
@@ -447,7 +457,7 @@ Obtains the first element in this LinkedList.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getFirst method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -462,6 +472,7 @@ console.info("result:", result);  // result: 2
 
 ```
 
+<a id="getindexof"></a>
 ## getIndexOf
 
 ```TypeScript
@@ -512,6 +523,7 @@ console.info("result:", result);  // result: 0
 
 ```
 
+<a id="getlast"></a>
 ## getLast
 
 ```TypeScript
@@ -539,7 +551,7 @@ Obtains the last element in this LinkedList.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getLast method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -554,6 +566,7 @@ console.info("result:", result);  // result: 4
 
 ```
 
+<a id="getlastindexof"></a>
 ## getLastIndexOf
 
 ```TypeScript
@@ -604,6 +617,7 @@ console.info("result:", result);  // result: 5
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -648,6 +662,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -690,6 +705,7 @@ console.info("result:", result);  // result: 0
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -737,6 +753,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="removebyindex"></a>
 ## removeByIndex
 
 ```TypeScript
@@ -786,6 +803,7 @@ console.info("result:", result);  // result: 5
 
 ```
 
+<a id="removefirst"></a>
 ## removeFirst
 
 ```TypeScript
@@ -829,6 +847,7 @@ console.info("result:", result);  // result: 2
 
 ```
 
+<a id="removefirstfound"></a>
 ## removeFirstFound
 
 ```TypeScript
@@ -878,6 +897,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="removelast"></a>
 ## removeLast
 
 ```TypeScript
@@ -921,6 +941,7 @@ console.info("result:", result);  // result: 4
 
 ```
 
+<a id="removelastfound"></a>
 ## removeLastFound
 
 ```TypeScript
@@ -970,6 +991,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -1005,7 +1027,7 @@ Replaces an element at the specified position in this LinkedList with a given el
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The set method cannot be bound. |
 | [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of index is out of range. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later  **ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

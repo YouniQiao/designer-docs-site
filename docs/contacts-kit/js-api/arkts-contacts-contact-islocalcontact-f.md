@@ -6,6 +6,7 @@
 import { contact } from '@kit.ContactsKit';
 ```
 
+<a id="islocalcontact"></a>
 ## isLocalContact
 
 ```TypeScript
@@ -18,7 +19,7 @@ Checks whether the ID of this contact is in the local address book. This API use
 
 **Deprecated since:** 10
 
-**Substitutes:** isLocalContact(context:
+**Substitutes:** [isLocalContact(context:](arkts-contacts-contact-islocalcontact-f.md#islocalcontact-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -31,7 +32,7 @@ Checks whether the ID of this contact is in the local address book. This API use
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | id | number | Yes | Contact ID. Each contact corresponds to one ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, a Boolean value is returned. The value **true** indicates that the contact ID is in the local phonebook, and the value **false** indicates the opposite. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, a Boolean value is returned. The value **true** indicates that the contact ID is in the local phonebook, and the value **false** indicates the opposite. If the operation fails, an error code is returned. |
 
 **Example**
 
@@ -51,6 +52,7 @@ contact.isLocalContact(1, (err: BusinessError, data) => {
 ```
 
 
+<a id="islocalcontact-1"></a>
 ## isLocalContact
 
 ```TypeScript
@@ -73,7 +75,7 @@ Checks whether the ID of this contact is in the local address book. This API use
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the context of application or capability. |
 | id | number | Yes | Contact ID. Each contact corresponds to one ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback for getting the result of the call. If the operation is successful, a Boolean value is returned. The value **true** indicates that the contact ID is in the local phonebook, and the value **false** indicates the opposite. If the operation fails, an error code is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback for getting the result of the call. If the operation is successful, a Boolean value is returned. The value **true** indicates that the contact ID is in the local phonebook, and the value **false** indicates the opposite. If the operation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -104,6 +106,7 @@ contact.isLocalContact(context, 1, (err: BusinessError, data) => {
 ```
 
 
+<a id="islocalcontact-2"></a>
 ## isLocalContact
 
 ```TypeScript
@@ -116,7 +119,7 @@ Checks whether the ID of this contact is in the local address book. This API use
 
 **Deprecated since:** 10
 
-**Substitutes:** isLocalContact(context:
+**Substitutes:** [isLocalContact(context:](arkts-contacts-contact-islocalcontact-f.md#islocalcontact-1)
 
 **Required permissions:** ohos.permission.READ_CONTACTS
 
@@ -134,7 +137,7 @@ Checks whether the ID of this contact is in the local address book. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the contact ID is in the local phonebook, and the value **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the contact ID is in the local phonebook, and the value **false** indicates the opposite. |
 
 **Example**
 
@@ -150,6 +153,7 @@ promise.then((data) => {
 ```
 
 
+<a id="islocalcontact-3"></a>
 ## isLocalContact
 
 ```TypeScript
@@ -177,7 +181,7 @@ Checks whether the ID of this contact is in the local address book. This API use
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the contact ID is in the local phonebook, and the value **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the contact ID is in the local phonebook, and the value **false** indicates the opposite. |
 
 **Error codes:**
 

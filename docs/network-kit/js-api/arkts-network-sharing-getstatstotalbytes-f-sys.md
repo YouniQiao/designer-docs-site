@@ -6,6 +6,7 @@
 import { sharing } from '@kit.NetworkKit';
 ```
 
+<a id="getstatstotalbytes"></a>
 ## getStatsTotalBytes
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the number of total data bytes of the sharing network interfaces.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Returns the number of total data bytes of the sharing network interfaces. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Returns the number of total data bytes of the sharing network interfaces. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ sharing.getStatsTotalBytes((error: BusinessError, data: number) => {
 ```
 
 
+<a id="getstatstotalbytes-1"></a>
 ## getStatsTotalBytes
 
 ```TypeScript
@@ -76,7 +78,7 @@ Obtains the number of total data bytes of the sharing network interfaces.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returned by the function. |
+| Promise&lt;number&gt; | The promise returned by the function. |
 
 **Error codes:**
 

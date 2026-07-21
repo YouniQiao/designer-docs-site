@@ -6,6 +6,7 @@
 import { shortKey } from '@kit.InputKit';
 ```
 
+<a id="setkeydownduration"></a>
 ## setKeyDownDuration
 
 ```TypeScript
@@ -28,7 +29,7 @@ Sets the delay for starting an ability using shortcut keys. This API uses an asy
 | --- | --- | --- | --- |
 | businessKey | string | Yes | Unique service ID registered on the multimodal side. It corresponds to **businessId** in the **ability_launch_config.json** file. You need to query this parameter on your own before calling the API. |
 | delay | number | Yes | Delay for starting an ability using shortcut keys, in milliseconds. This field is valid only when shortcut keys are pressed. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ struct Index {
 ```
 
 
+<a id="setkeydownduration-1"></a>
 ## setKeyDownDuration
 
 ```TypeScript
@@ -97,7 +99,7 @@ Sets the delay for starting an ability using shortcut keys. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

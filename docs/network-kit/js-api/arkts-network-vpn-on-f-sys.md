@@ -6,6 +6,7 @@
 import { vpn } from '@kit.NetworkKit';
 ```
 
+<a id="on"></a>
 ## on('connect')
 
 ```TypeScript
@@ -29,7 +30,7 @@ Subscribes to vpn connect state changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connect' | Yes | Indicates vpn connect state changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<VpnConnectState> | Yes | The callback of the vpn connect state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;VpnConnectState&gt; | Yes | The callback of the vpn connect state. |
 
 **Error codes:**
 
@@ -43,6 +44,7 @@ Subscribes to vpn connect state changes.
 | [2200003](../errorcode-net-sharing.md#2200003-system-internal-error) | System internal error. |
 
 
+<a id="on-1"></a>
 ## on('connectMulti')
 
 ```TypeScript
@@ -66,7 +68,7 @@ Subscribes to vpn connect state changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectMulti' | Yes | Indicates multi vpn connect state changes. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<MultiVpnConnectState> | Yes | The callback of the multi vpn connect state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;MultiVpnConnectState&gt; | Yes | The callback of the multi vpn connect state. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
+<a id="onseniormodestatechange"></a>
 ## onSeniorModeStateChange
 
 ```TypeScript
@@ -20,7 +21,7 @@ Listens for enabling status changes of the senior mode. This API uses an asynchr
 > Otherwise, a new underlying object is created each time the function is called, causing memory leakage.  
 >  
 > - After calling this method, you must use  
-> [accessibility.offSeniorModeStateChange](arkts-accessibility-accessibility-offseniormodestatechange-f.md#offseniormodestatechange-1)  
+> [accessibility.offSeniorModeStateChange](accessibility.offSeniorModeStateChange(callback?: Callback<boolean>))  
 > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
 
 **Since:** 26.0.0
@@ -35,7 +36,7 @@ Listens for enabling status changes of the senior mode. This API uses an asynchr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | Yes | Callback function. The value **true** indicates that the senior mode is enabled, and the value **false** indicates that the senior mode is disabled. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | Yes | Callback function. The value **true** indicates that the senior mode is enabled, and the value **false** indicates that the senior mode is disabled. |
 
 **Example**
 

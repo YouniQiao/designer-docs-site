@@ -14,6 +14,7 @@ LightWeightSet stores a set of values, each of which must be unique.
 import { LightWeightSet } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ returns an ES6 iterator.Each item of the iterator is a Javascript Object
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | @throws { BusinessError } 10200011 - The Symbol.iterator method cannot be bound. |
 
 **Error codes:**
 
@@ -80,6 +81,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -123,6 +125,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="addall"></a>
 ## addAll
 
 ```TypeScript
@@ -143,7 +146,7 @@ Adds all elements in a LightWeightSet to this LightWeightSet.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| set | [LightWeightSet](arkts-arkts-util-lightweightset-lightweightset-c.md)<T> | Yes | LightWeightSet whose elements are to be added to the current LightWeightSet. |
+| set | [LightWeightSet](arkts-arkts-util-lightweightset-lightweightset-c.md)&lt;T&gt; | Yes | LightWeightSet whose elements are to be added to the current LightWeightSet. |
 
 **Return value:**
 
@@ -171,6 +174,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -205,6 +209,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -234,6 +239,7 @@ let lightWeightSet = new LightWeightSet<number | string>();
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -254,7 +260,7 @@ Returns an iterator that contains all the elements in this LightWeightSet.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[T, T]> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[T, T]&gt; | Iterator obtained. |
 
 **Error codes:**
 
@@ -289,6 +295,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="equal"></a>
 ## equal
 
 ```TypeScript
@@ -313,7 +320,7 @@ Checks whether the elements of this LightWeightSet are the same as those of **ob
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| obj | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | **LightWeightSet** instance to be used for comparison. |
+| obj | Object | Yes | **LightWeightSet** instance to be used for comparison. |
 
 **Return value:**
 
@@ -339,6 +346,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -359,8 +367,8 @@ Uses a callback to traverse the elements in this LightWeightSet and obtain their
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value?: T, key?: T, set?: LightWeightSet<T>) => void | Yes | Callback invoked to traverse the elements in the LightWeightSet. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
+| callbackFn | (value?: T, key?: T, set?: LightWeightSet&lt;T&gt;) =&gt; void | Yes | Callback invoked to traverse the elements in the LightWeightSet. |
+| thisArg | Object | No | Value of **this** to use when **callbackFn** is invoked. The default value is this instance. |
 
 **Error codes:**
 
@@ -394,6 +402,7 @@ for(let i = 0; i < 10; i++) {
 
 ```
 
+<a id="getindexof"></a>
 ## getIndexOf
 
 ```TypeScript
@@ -439,6 +448,7 @@ console.info("result:", result);  // result: 0
 
 ```
 
+<a id="getvalueat"></a>
 ## getValueAt
 
 ```TypeScript
@@ -473,6 +483,7 @@ Obtains the value of the element at the specified position in this LightWeightSe
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getValueAt method cannot be bound. |
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -517,6 +528,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="hasall"></a>
 ## hasAll
 
 ```TypeScript
@@ -537,7 +549,7 @@ Checks whether this LightWeightSet contains all elements of the specified LightW
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| set | [LightWeightSet](arkts-arkts-util-lightweightset-lightweightset-c.md)<T> | Yes | **LightWeightSet** instance to be used for comparison. |
+| set | [LightWeightSet](arkts-arkts-util-lightweightset-lightweightset-c.md)&lt;T&gt; | Yes | **LightWeightSet** instance to be used for comparison. |
 
 **Return value:**
 
@@ -564,6 +576,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="increasecapacityto"></a>
 ## increaseCapacityTo
 
 ```TypeScript
@@ -601,6 +614,7 @@ lightWeightSet.increaseCapacityTo(10);
 
 ```
 
+<a id="isempty"></a>
 ## isEmpty
 
 ```TypeScript
@@ -638,6 +652,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -683,6 +698,7 @@ console.info("result:", result);  // result: sparrow
 
 ```
 
+<a id="removeat"></a>
 ## removeAt
 
 ```TypeScript
@@ -728,6 +744,7 @@ console.info("result:", result);  // result: true
 
 ```
 
+<a id="toarray"></a>
 ## toArray
 
 ```TypeScript
@@ -748,7 +765,7 @@ Obtains an array that contains all objects in this LightWeightSet.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Array obtained. |
+| Array&lt;T&gt; | Array obtained. |
 
 **Error codes:**
 
@@ -766,6 +783,7 @@ let result = lightWeightSet.toArray();
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -786,7 +804,7 @@ Obtains a string that contains all elements in this LightWeightSet.
 
 | Type | Description |
 | --- | --- |
-| [String](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-string-i.md) | String obtained. |
+| String | String obtained. |
 
 **Example**
 
@@ -799,6 +817,7 @@ console.info("result:", result);  // result: sparrow,squirrel
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -819,7 +838,7 @@ Returns an iterator that contains all the values in this LightWeightSet.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | Iterator obtained. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | Iterator obtained. |
 
 **Error codes:**
 

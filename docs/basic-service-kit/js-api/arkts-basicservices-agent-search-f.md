@@ -6,6 +6,7 @@
 import { request } from '@kit.BasicServicesKit';
 ```
 
+<a id="search"></a>
 ## search
 
 ```TypeScript
@@ -24,7 +25,7 @@ Searches for task IDs based on [Filter](arkts-basicservices-agent-filter-i.md). 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the task ID. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the task ID. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -34,6 +35,7 @@ Searches for task IDs based on [Filter](arkts-basicservices-agent-filter-i.md). 
 | [13400003](../../apis-basic-services-kit/errorcode-request.md#13400003-service-error) | Task service ability error. |
 
 
+<a id="search-1"></a>
 ## search
 
 ```TypeScript
@@ -53,7 +55,7 @@ Searches for task IDs based on [Filter](arkts-basicservices-agent-filter-i.md). 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | filter | [Filter](arkts-basicservices-agent-filter-i.md) | Yes | Filter criteria. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the task ID. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the task ID. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -63,6 +65,7 @@ Searches for task IDs based on [Filter](arkts-basicservices-agent-filter-i.md). 
 | [13400003](../../apis-basic-services-kit/errorcode-request.md#13400003-service-error) | Task service ability error. |
 
 
+<a id="search-2"></a>
 ## search
 
 ```TypeScript
@@ -87,7 +90,7 @@ Searches for task IDs based on [Filter](arkts-basicservices-agent-filter-i.md). 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the task IDs that meet the filter criteria. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the task IDs that meet the filter criteria. |
 
 **Error codes:**
 

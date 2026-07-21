@@ -6,6 +6,7 @@
 import { deviceStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="off"></a>
 ## off('steadyStandingDetect')
 
 ```TypeScript
@@ -25,7 +26,7 @@ Unsubscribes from steady standing state events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'steadyStandingDetect' | Yes | Event type. This field has a fixed value of **steadyStandingDetect**. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SteadyStandingStatus> | No | Callback used to return the steady standing state of the device. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SteadyStandingStatus&gt; | No | Callback used to return the steady standing state of the device. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="queryallapns"></a>
 ## queryAllApns
 
 ```TypeScript
@@ -26,7 +27,7 @@ Query all APN info.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<ApnInfo>> | Returns all APN info of default cellular data card. |
+| Promise&lt;Array&lt;ApnInfo&gt;&gt; | Returns all APN info of default cellular data card. |
 
 **Error codes:**
 

@@ -32,13 +32,13 @@ FULL_SCREEN = 1
 
 The application is displayed in full screen.
 
-In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state, the window occupies the entire screen with no dock, title bar, or status bar displayed by default.
+In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state, the window occupies the entire screen with no dock, title bar, or status bar displayed by default.
 
 You can use [maximize()](arkts-arkui-window-window-i.md#maximize-1) and [setTitleAndDockHoverShown()](arkts-arkui-window-window-i.md#settitleanddockhovershown-1) to configure whether to display the title bar and dock upon hovering over the hot zone.
 
 The last call takes precedence when both the **maximize()** and **setTitleAndDockHoverShown()** APIs are called.
 
-In non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state, the window occupies the entire screen with no title bar or dock displayed. You can use [setSpecificSystemBarEnabled()](arkts-arkui-window-window-i.md#setspecificsystembarenabled-1) to configure whether to display the status bar.
+In non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state, the window occupies the entire screen with no title bar or dock displayed. You can use [setSpecificSystemBarEnabled()](arkts-arkui-window-window-i.md#setspecificsystembarenabled-1) to configure whether to display the status bar.
 
 **Since:** 11
 
@@ -54,7 +54,7 @@ In non-[freeform window](../../../../windowmanager/window-terminology.md#freefor
 MAXIMIZE = 2
 ```
 
-The application window is maximized. In [freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state, the window occupies the entire screen, and the dock, status bar, and title bar are displayed without requiring a hover. This state is unavailable in non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) state.
+The application window is maximized. In [freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state, the window occupies the entire screen, and the dock, status bar, and title bar are displayed without requiring a hover. This state is unavailable in non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) state.
 
 **Since:** 11
 

@@ -6,6 +6,7 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
+<a id="enablehotspot"></a>
 ## enableHotspot
 
 ```TypeScript

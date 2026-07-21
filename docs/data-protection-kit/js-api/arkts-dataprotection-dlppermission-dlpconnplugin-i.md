@@ -20,6 +20,7 @@ Registers the callback capability with the system ability (SA). This API is used
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="connectserver"></a>
 ## connectServer
 
 ```TypeScript
@@ -50,7 +51,7 @@ This API can be used in enterprise account authentication and cloud permission v
 | --- | --- | --- | --- |
 | requestId | string | Yes | ID of the request transferred by the SA. No value range restriction is specified. |
 | requestData | string | Yes | Data transferred by the SA. No value range restriction is specified. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | Yes | API transferred by the SA, which is used for callback. No value range restriction is specified. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | API transferred by the SA, which is used for callback. No value range restriction is specified. |
 
 **Error codes:**
 

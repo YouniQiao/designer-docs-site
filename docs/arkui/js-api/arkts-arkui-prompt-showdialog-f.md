@@ -6,6 +6,7 @@
 import { prompt } from '@kit.ArkUI';
 ```
 
+<a id="showdialog"></a>
 ## showDialog
 
 ```TypeScript
@@ -29,7 +30,7 @@ Displays the dialog box.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [ShowDialogOptions](arkts-arkui-promptaction-showdialogoptions-i.md) | Yes | Options. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ShowDialogSuccessResponse> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ShowDialogSuccessResponse&gt; | Yes |  |
 
 **Example**
 
@@ -59,6 +60,7 @@ prompt.showDialog({
 ```
 
 
+<a id="showdialog-1"></a>
 ## showDialog
 
 ```TypeScript
@@ -87,7 +89,7 @@ Displays the dialog box.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ShowDialogSuccessResponse> | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel |
+| Promise&lt;ShowDialogSuccessResponse&gt; | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel |
 
 **Example**
 

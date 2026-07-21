@@ -6,13 +6,14 @@
 import { formProvider } from '@kit.FormKit';
 ```
 
+<a id="activatesceneanimation"></a>
 ## activateSceneAnimation
 
 ```TypeScript
 function activateSceneAnimation(formId: string): Promise<void>
 ```
 
-Requests to activate a widget. This API takes effect only for [scene-based widgets](../../../../form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a promise to return the result. An interactive widget can be in the active or inactive state. In the inactive state,the widget is the same as a common widget. In the active state, the widget can start the **LiveFormExtensionAbility** process developed by the widget host to implement animations.
+Requests to activate a widget. This API takes effect only for [scene-based widgets](docroot://form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a promise to return the result. An interactive widget can be in the active or inactive state. In the inactive state,the widget is the same as a common widget. In the active state, the widget can start the **LiveFormExtensionAbility** process developed by the widget host to implement animations.
 
 **Since:** 20
 
@@ -32,7 +33,7 @@ Requests to activate a widget. This API takes effect only for [scene-based widge
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

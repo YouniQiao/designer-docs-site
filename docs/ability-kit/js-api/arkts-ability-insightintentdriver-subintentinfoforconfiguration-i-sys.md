@@ -1,6 +1,6 @@
 # SubIntentInfoForConfiguration (System API)
 
-Describes the unique information of the [intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).
+Describes the unique information of the [intent developed using a configuration file](docroot://application-models/insight-intent-config-development.md).
 
 **Since:** 23
 
@@ -24,7 +24,7 @@ readonly entities?: Record<string, Object>
 
 Entity information contained in the intent.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 23
 
@@ -64,7 +64,7 @@ readonly inputParams?: Array<Record<string, Object>>
 
 Data format of intent parameters, which is used to define the input data format during intent calls.
 
-**Type:** Array<Record<string, Object>>
+**Type:** Array&lt;Record&lt;string, Object&gt;&gt;
 
 **Since:** 23
 
@@ -84,7 +84,7 @@ readonly outputParams?: Array<Record<string, Object>>
 
 Data format for the results returned by intent calls. It defines how the data should be structured.
 
-**Type:** Array<Record<string, Object>>
+**Type:** Array&lt;Record&lt;string, Object&gt;&gt;
 
 **Since:** 23
 

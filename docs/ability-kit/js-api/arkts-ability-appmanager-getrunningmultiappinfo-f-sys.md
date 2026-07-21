@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="getrunningmultiappinfo"></a>
 ## getRunningMultiAppInfo
 
 ```TypeScript
@@ -36,7 +37,7 @@ Obtains the information about running applications in multi-app mode. The multi-
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<RunningMultiAppInfo> | Promise used to return the information about running applications with multi-app mode. |
+| Promise&lt;RunningMultiAppInfo&gt; | Promise used to return the information about running applications with multi-app mode. |
 
 **Error codes:**
 

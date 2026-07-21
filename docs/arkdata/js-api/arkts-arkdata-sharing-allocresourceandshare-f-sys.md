@@ -6,6 +6,7 @@
 import { cloudData } from '@kit.ArkData';
 ```
 
+<a id="allocresourceandshare"></a>
 ## allocResourceAndShare
 
 ```TypeScript
@@ -43,14 +44,14 @@ Allocates a shared resource ID based on the data that matches the specified pred
 | --- | --- | --- | --- |
 | storeId | string | Yes | Name of the RDB store. |
 | predicates | relationalStore.RdbPredicates | Yes | Predicates for matching the data to share. |
-| participants | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Participant> | Yes | Participants of the share. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Columns in which the data is located.The default value is undefined, which means column names are not returned. |
+| participants | Array&lt;Participant&gt; | Yes | Participants of the share. |
+| columns | Array&lt;string&gt; | No | Columns in which the data is located.The default value is undefined, which means column names are not returned. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<relationalStore.ResultSet> | Promise used to return the result set of the data to share. |
+| Promise&lt;relationalStore.ResultSet&gt; | Promise used to return the result set of the data to share. |
 
 **Error codes:**
 
@@ -98,6 +99,7 @@ cloudData.sharing.allocResourceAndShare('storeName', predicates, participants, [
 ```
 
 
+<a id="allocresourceandshare-1"></a>
 ## allocResourceAndShare
 
 ```TypeScript
@@ -135,8 +137,8 @@ Allocates a shared resource ID based on the data that matches the specified pred
 | --- | --- | --- | --- |
 | storeId | string | Yes | Name of the RDB store. |
 | predicates | relationalStore.RdbPredicates | Yes | Predicates for matching the data to share. |
-| participants | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Participant> | Yes | Participants of the share. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<relationalStore.ResultSet> | Yes | Callback used to return the result. |
+| participants | Array&lt;Participant&gt; | Yes | Participants of the share. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;relationalStore.ResultSet&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -186,6 +188,7 @@ cloudData.sharing.allocResourceAndShare('storeName', predicates, participants, (
 ```
 
 
+<a id="allocresourceandshare-2"></a>
 ## allocResourceAndShare
 
 ```TypeScript
@@ -226,9 +229,9 @@ Allocates a shared resource ID based on the data that matches the specified pred
 | --- | --- | --- | --- |
 | storeId | string | Yes | Name of the RDB store. |
 | predicates | relationalStore.RdbPredicates | Yes | Predicates for matching the data to share. |
-| participants | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Participant> | Yes | Participants of the share. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Columns in which the data is located. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<relationalStore.ResultSet> | Yes | Callback used to return the result set of the data to share. |
+| participants | Array&lt;Participant&gt; | Yes | Participants of the share. |
+| columns | Array&lt;string&gt; | Yes | Columns in which the data is located. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;relationalStore.ResultSet&gt; | Yes | Callback used to return the result set of the data to share. |
 
 **Error codes:**
 

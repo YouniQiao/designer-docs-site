@@ -4,6 +4,8 @@ The AutoAdComponent module provides the capability of displaying carousel ads.
 
 **Since:** 11
 
+**Decorator:** @Component
+
 <!--Device-unnamed-declare struct AutoAdComponent--><!--Device-unnamed-declare struct AutoAdComponent-End-->
 
 **System capability:** SystemCapability.Advertising.Ads
@@ -14,6 +16,7 @@ The AutoAdComponent module provides the capability of displaying carousel ads.
 import { AutoAdComponent } from '@kit.AdsKit';
 ```
 
+<a id="build"></a>
 ## build
 
 ```TypeScript

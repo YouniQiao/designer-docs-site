@@ -6,6 +6,7 @@
 import { conversation } from '@kit.DistributedServiceKit';
 ```
 
+<a id="postconversationdata"></a>
 ## postConversationData
 
 ```TypeScript
@@ -48,13 +49,13 @@ Posts conversation data to a specified device. This API sends a message to the t
 | deviceId | string | Yes | This parameter accepts networkId or udid of the target device. This ID can be obtained by calling [getTrustedDevices()](arkts-distributedservice-conversation-gettrusteddevices-f-sys.md#gettrusteddevices-1). |
 | bundleName | string | Yes | Name of the bundle to which the message will be delivered. This must match the bundle name of an application installed on the target device that has registered a conversation listener. |
 | abilityName | string | Yes | Name of the ability within the bundle that will receive the message. This must match an ability that has registered a conversation listener with the corresponding bundle name. |
-| msg | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Message content to be sent. |
+| msg | ArrayBuffer | Yes | Message content to be sent. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

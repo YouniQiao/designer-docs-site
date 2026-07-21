@@ -68,7 +68,7 @@ domain: domain name.
 
 appEventGroups: event group.
 
-**Type:** (domain: string, appEventGroups: Array<AppEventGroup>) => void
+**Type:** (domain: string, appEventGroups: Array&lt;AppEventGroup&gt;) =&gt; void
 
 **Since:** 11
 
@@ -92,7 +92,7 @@ Subscription callback. This parameter takes effect only when it is passed togeth
 
 **holder**: subscription data holder, which can be used to process subscribed events.
 
-**Type:** (curRow: number, curSize: number, holder: AppEventPackageHolder) => void
+**Type:** (curRow: number, curSize: number, holder: AppEventPackageHolder) =&gt; void
 
 **Since:** 9
 

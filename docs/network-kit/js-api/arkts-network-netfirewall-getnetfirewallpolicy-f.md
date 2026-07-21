@@ -6,6 +6,7 @@
 import { netFirewall } from '@kit.NetworkKit';
 ```
 
+<a id="getnetfirewallpolicy"></a>
 ## getNetFirewallPolicy
 
 ```TypeScript
@@ -32,7 +33,7 @@ Get firewall policy by userId.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<NetFirewallPolicy> | Current user firewall policy. |
+| Promise&lt;NetFirewallPolicy&gt; | Current user firewall policy. |
 
 **Error codes:**
 

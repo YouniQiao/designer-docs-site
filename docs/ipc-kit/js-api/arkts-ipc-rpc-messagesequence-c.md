@@ -14,6 +14,7 @@ Provides APIs for reading and writing data in specific format. During RPC or IPC
 import { rpc } from '@kit.IPCKit';
 ```
 
+<a id="closefiledescriptor"></a>
 ## closeFileDescriptor
 
 ```TypeScript
@@ -60,6 +61,7 @@ try {
 
 ```
 
+<a id="containfiledescriptors"></a>
 ## containFileDescriptors
 
 ```TypeScript
@@ -102,6 +104,7 @@ try {
 
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -143,6 +146,7 @@ try {
 
 ```
 
+<a id="dupfiledescriptor"></a>
 ## dupFileDescriptor
 
 ```TypeScript
@@ -196,6 +200,7 @@ try {
 
 ```
 
+<a id="getcapacity"></a>
 ## getCapacity
 
 ```TypeScript
@@ -235,6 +240,7 @@ try {
 
 ```
 
+<a id="getrawdatacapacity"></a>
 ## getRawDataCapacity
 
 ```TypeScript
@@ -274,6 +280,7 @@ try {
 
 ```
 
+<a id="getreadposition"></a>
 ## getReadPosition
 
 ```TypeScript
@@ -314,6 +321,7 @@ try {
 
 ```
 
+<a id="getreadablebytes"></a>
 ## getReadableBytes
 
 ```TypeScript
@@ -354,6 +362,7 @@ try {
 
 ```
 
+<a id="getsize"></a>
 ## getSize
 
 ```TypeScript
@@ -393,6 +402,7 @@ try {
 
 ```
 
+<a id="getwritablebytes"></a>
 ## getWritableBytes
 
 ```TypeScript
@@ -433,6 +443,7 @@ try {
 
 ```
 
+<a id="getwriteposition"></a>
 ## getWritePosition
 
 ```TypeScript
@@ -473,6 +484,7 @@ try {
 
 ```
 
+<a id="readarraybuffer"></a>
 ## readArrayBuffer
 
 ```TypeScript
@@ -497,7 +509,7 @@ Reads data of the ArrayBuffer type from this **MessageSequence**.
 
 | Type | Description |
 | --- | --- |
-| [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Data of the ArrayBuffer type read, in bytes. |
+| ArrayBuffer | Data of the ArrayBuffer type read, in bytes. |
 
 **Error codes:**
 
@@ -533,6 +545,7 @@ try {
 
 ```
 
+<a id="readashmem"></a>
 ## readAshmem
 
 ```TypeScript
@@ -600,6 +613,7 @@ try {
 
 ```
 
+<a id="readboolean"></a>
 ## readBoolean
 
 ```TypeScript
@@ -646,6 +660,7 @@ try {
 
 ```
 
+<a id="readbooleanarray"></a>
 ## readBooleanArray
 
 ```TypeScript
@@ -694,6 +709,7 @@ try {
 
 ```
 
+<a id="readbooleanarray-1"></a>
 ## readBooleanArray
 
 ```TypeScript
@@ -740,6 +756,7 @@ try {
 
 ```
 
+<a id="readbyte"></a>
 ## readByte
 
 ```TypeScript
@@ -786,6 +803,7 @@ try {
 
 ```
 
+<a id="readbytearray"></a>
 ## readByteArray
 
 ```TypeScript
@@ -835,6 +853,7 @@ try {
 
 ```
 
+<a id="readbytearray-1"></a>
 ## readByteArray
 
 ```TypeScript
@@ -882,6 +901,7 @@ try {
 
 ```
 
+<a id="readchar"></a>
 ## readChar
 
 ```TypeScript
@@ -928,6 +948,7 @@ try {
 
 ```
 
+<a id="readchararray"></a>
 ## readCharArray
 
 ```TypeScript
@@ -976,6 +997,7 @@ try {
 
 ```
 
+<a id="readchararray-1"></a>
 ## readCharArray
 
 ```TypeScript
@@ -1022,6 +1044,7 @@ try {
 
 ```
 
+<a id="readdouble"></a>
 ## readDouble
 
 ```TypeScript
@@ -1068,6 +1091,7 @@ try {
 
 ```
 
+<a id="readdoublearray"></a>
 ## readDoubleArray
 
 ```TypeScript
@@ -1116,6 +1140,7 @@ try {
 
 ```
 
+<a id="readdoublearray-1"></a>
 ## readDoubleArray
 
 ```TypeScript
@@ -1162,6 +1187,7 @@ try {
 
 ```
 
+<a id="readexception"></a>
 ## readException
 
 ```TypeScript
@@ -1262,6 +1288,7 @@ try {
 
 ```
 
+<a id="readfiledescriptor"></a>
 ## readFileDescriptor
 
 ```TypeScript
@@ -1311,6 +1338,7 @@ try {
 
 ```
 
+<a id="readfloat"></a>
 ## readFloat
 
 ```TypeScript
@@ -1357,6 +1385,7 @@ try {
 
 ```
 
+<a id="readfloatarray"></a>
 ## readFloatArray
 
 ```TypeScript
@@ -1405,6 +1434,7 @@ try {
 
 ```
 
+<a id="readfloatarray-1"></a>
 ## readFloatArray
 
 ```TypeScript
@@ -1451,6 +1481,7 @@ try {
 
 ```
 
+<a id="readint"></a>
 ## readInt
 
 ```TypeScript
@@ -1499,6 +1530,7 @@ try {
 
 ```
 
+<a id="readintarray"></a>
 ## readIntArray
 
 ```TypeScript
@@ -1547,6 +1579,7 @@ try {
 
 ```
 
+<a id="readintarray-1"></a>
 ## readIntArray
 
 ```TypeScript
@@ -1593,6 +1626,7 @@ try {
 
 ```
 
+<a id="readinterfacetoken"></a>
 ## readInterfaceToken
 
 ```TypeScript
@@ -1639,6 +1673,7 @@ try {
 
 ```
 
+<a id="readlong"></a>
 ## readLong
 
 ```TypeScript
@@ -1685,6 +1720,7 @@ try {
 
 ```
 
+<a id="readlongarray"></a>
 ## readLongArray
 
 ```TypeScript
@@ -1733,6 +1769,7 @@ try {
 
 ```
 
+<a id="readlongarray-1"></a>
 ## readLongArray
 
 ```TypeScript
@@ -1779,6 +1816,7 @@ try {
 
 ```
 
+<a id="readparcelable"></a>
 ## readParcelable
 
 ```TypeScript
@@ -1847,6 +1885,7 @@ try {
 
 ```
 
+<a id="readparcelablearray"></a>
 ## readParcelableArray
 
 ```TypeScript
@@ -1918,6 +1957,7 @@ try {
 
 ```
 
+<a id="readrawdata"></a>
 ## readRawData
 
 ```TypeScript
@@ -1930,7 +1970,7 @@ Reads raw data from this **MessageSequence** object.
 
 **Deprecated since:** 11
 
-**Substitutes:** readRawDataBuffer(size:
+**Substitutes:** [readRawDataBuffer(size:](arkts-ipc-rpc-messagesequence-c.md#readrawdatabuffer-1)
 
 <!--Device-MessageSequence-readRawData(size: number): number[]--><!--Device-MessageSequence-readRawData(size: number): number[]-End-->
 
@@ -1977,6 +2017,7 @@ try {
 
 ```
 
+<a id="readrawdatabuffer"></a>
 ## readRawDataBuffer
 
 ```TypeScript
@@ -2001,7 +2042,7 @@ Reads raw data from this **MessageSequence** object.
 
 | Type | Description |
 | --- | --- |
-| [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Raw data obtained, in bytes. |
+| ArrayBuffer | Raw data obtained, in bytes. |
 
 **Error codes:**
 
@@ -2037,6 +2078,7 @@ try {
 
 ```
 
+<a id="readremoteobject"></a>
 ## readRemoteObject
 
 ```TypeScript
@@ -2096,6 +2138,7 @@ try {
 
 ```
 
+<a id="readremoteobjectarray"></a>
 ## readRemoteObjectArray
 
 ```TypeScript
@@ -2156,6 +2199,7 @@ try {
 
 ```
 
+<a id="readremoteobjectarray-1"></a>
 ## readRemoteObjectArray
 
 ```TypeScript
@@ -2213,6 +2257,7 @@ try {
 
 ```
 
+<a id="readshort"></a>
 ## readShort
 
 ```TypeScript
@@ -2259,6 +2304,7 @@ try {
 
 ```
 
+<a id="readshortarray"></a>
 ## readShortArray
 
 ```TypeScript
@@ -2307,6 +2353,7 @@ try {
 
 ```
 
+<a id="readshortarray-1"></a>
 ## readShortArray
 
 ```TypeScript
@@ -2353,6 +2400,7 @@ try {
 
 ```
 
+<a id="readstring"></a>
 ## readString
 
 ```TypeScript
@@ -2401,6 +2449,7 @@ try {
 
 ```
 
+<a id="readstringarray"></a>
 ## readStringArray
 
 ```TypeScript
@@ -2449,6 +2498,7 @@ try {
 
 ```
 
+<a id="readstringarray-1"></a>
 ## readStringArray
 
 ```TypeScript
@@ -2495,6 +2545,7 @@ try {
 
 ```
 
+<a id="reclaim"></a>
 ## reclaim
 
 ```TypeScript
@@ -2527,6 +2578,7 @@ try {
 
 ```
 
+<a id="rewindread"></a>
 ## rewindRead
 
 ```TypeScript
@@ -2578,6 +2630,7 @@ try {
 
 ```
 
+<a id="rewindwrite"></a>
 ## rewindWrite
 
 ```TypeScript
@@ -2627,6 +2680,7 @@ try {
 
 ```
 
+<a id="setcapacity"></a>
 ## setCapacity
 
 ```TypeScript
@@ -2673,6 +2727,7 @@ try {
 
 ```
 
+<a id="setsize"></a>
 ## setSize
 
 ```TypeScript
@@ -2719,6 +2774,7 @@ try {
 
 ```
 
+<a id="writearraybuffer"></a>
 ## writeArrayBuffer
 
 ```TypeScript
@@ -2737,7 +2793,7 @@ Writes data of the ArrayBuffer type to this **MessageSequence** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Data to write. |
+| buf | ArrayBuffer | Yes | Data to write. |
 | typeCode | [TypeCode](arkts-ipc-rpc-typecode-e.md) | Yes | TypedArray type of the ArrayBuffer data.<br>The underlying write mode is determined based on the enum value of **TypeCode** passed by the service. |
 
 **Error codes:**
@@ -2771,6 +2827,7 @@ try {
 
 ```
 
+<a id="writeashmem"></a>
 ## writeAshmem
 
 ```TypeScript
@@ -2829,6 +2886,7 @@ try {
 
 ```
 
+<a id="writeboolean"></a>
 ## writeBoolean
 
 ```TypeScript
@@ -2874,6 +2932,7 @@ try {
 
 ```
 
+<a id="writebooleanarray"></a>
 ## writeBooleanArray
 
 ```TypeScript
@@ -2919,6 +2978,7 @@ try {
 
 ```
 
+<a id="writebyte"></a>
 ## writeByte
 
 ```TypeScript
@@ -2964,6 +3024,7 @@ try {
 
 ```
 
+<a id="writebytearray"></a>
 ## writeByteArray
 
 ```TypeScript
@@ -3010,6 +3071,7 @@ try {
 
 ```
 
+<a id="writechar"></a>
 ## writeChar
 
 ```TypeScript
@@ -3055,6 +3117,7 @@ try {
 
 ```
 
+<a id="writechararray"></a>
 ## writeCharArray
 
 ```TypeScript
@@ -3100,6 +3163,7 @@ try {
 
 ```
 
+<a id="writedouble"></a>
 ## writeDouble
 
 ```TypeScript
@@ -3145,6 +3209,7 @@ try {
 
 ```
 
+<a id="writedoublearray"></a>
 ## writeDoubleArray
 
 ```TypeScript
@@ -3190,6 +3255,7 @@ try {
 
 ```
 
+<a id="writefiledescriptor"></a>
 ## writeFileDescriptor
 
 ```TypeScript
@@ -3238,6 +3304,7 @@ try {
 
 ```
 
+<a id="writefloat"></a>
 ## writeFloat
 
 ```TypeScript
@@ -3283,6 +3350,7 @@ try {
 
 ```
 
+<a id="writefloatarray"></a>
 ## writeFloatArray
 
 ```TypeScript
@@ -3328,6 +3396,7 @@ try {
 
 ```
 
+<a id="writeint"></a>
 ## writeInt
 
 ```TypeScript
@@ -3375,6 +3444,7 @@ try {
 
 ```
 
+<a id="writeintarray"></a>
 ## writeIntArray
 
 ```TypeScript
@@ -3420,6 +3490,7 @@ try {
 
 ```
 
+<a id="writeinterfacetoken"></a>
 ## writeInterfaceToken
 
 ```TypeScript
@@ -3465,6 +3536,7 @@ try {
 
 ```
 
+<a id="writelong"></a>
 ## writeLong
 
 ```TypeScript
@@ -3510,6 +3582,7 @@ try {
 
 ```
 
+<a id="writelongarray"></a>
 ## writeLongArray
 
 ```TypeScript
@@ -3555,6 +3628,7 @@ try {
 
 ```
 
+<a id="writenoexception"></a>
 ## writeNoException
 
 ```TypeScript
@@ -3607,6 +3681,7 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 ```
 
+<a id="writeparcelable"></a>
 ## writeParcelable
 
 ```TypeScript
@@ -3672,6 +3747,7 @@ try {
 
 ```
 
+<a id="writeparcelablearray"></a>
 ## writeParcelableArray
 
 ```TypeScript
@@ -3740,6 +3816,7 @@ try {
 
 ```
 
+<a id="writerawdata"></a>
 ## writeRawData
 
 ```TypeScript
@@ -3759,7 +3836,7 @@ Writes raw data to this **MessageSequence** object.
 
 **Deprecated since:** 11
 
-**Substitutes:** writeRawDataBuffer(rawData:
+**Substitutes:** [writeRawDataBuffer(rawData:](arkts-ipc-rpc-messagesequence-c.md#writerawdatabuffer-1)
 
 <!--Device-MessageSequence-writeRawData(rawData: number[], size: number): void--><!--Device-MessageSequence-writeRawData(rawData: number[], size: number): void-End-->
 
@@ -3798,6 +3875,7 @@ try {
 
 ```
 
+<a id="writerawdatabuffer"></a>
 ## writeRawDataBuffer
 
 ```TypeScript
@@ -3823,7 +3901,7 @@ Writes raw data to this **MessageSequence** object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rawData | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Raw data to write. The size cannot exceed 128 MB. |
+| rawData | ArrayBuffer | Yes | Raw data to write. The size cannot exceed 128 MB. |
 | size | number | Yes | Size of the raw data, in bytes. |
 
 **Error codes:**
@@ -3857,6 +3935,7 @@ try {
 
 ```
 
+<a id="writeremoteobject"></a>
 ## writeRemoteObject
 
 ```TypeScript
@@ -3915,6 +3994,7 @@ try {
 
 ```
 
+<a id="writeremoteobjectarray"></a>
 ## writeRemoteObjectArray
 
 ```TypeScript
@@ -3972,6 +4052,7 @@ try {
 
 ```
 
+<a id="writeshort"></a>
 ## writeShort
 
 ```TypeScript
@@ -4017,6 +4098,7 @@ try {
 
 ```
 
+<a id="writeshortarray"></a>
 ## writeShortArray
 
 ```TypeScript
@@ -4062,6 +4144,7 @@ try {
 
 ```
 
+<a id="writestring"></a>
 ## writeString
 
 ```TypeScript
@@ -4109,6 +4192,7 @@ try {
 
 ```
 
+<a id="writestringarray"></a>
 ## writeStringArray
 
 ```TypeScript

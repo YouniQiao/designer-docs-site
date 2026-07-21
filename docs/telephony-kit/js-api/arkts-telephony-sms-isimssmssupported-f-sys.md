@@ -6,6 +6,7 @@
 import { sms } from '@kit.TelephonyKit';
 ```
 
+<a id="isimssmssupported"></a>
 ## isImsSmsSupported
 
 ```TypeScript
@@ -27,7 +28,7 @@ SMS over IMS is supported if IMS is registered and SMS is supported on IMS.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the default SIM card for Ims Sms. The value {@code 0} indicates card slot 1,and the value {@code 1} indicates card slot 2. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Indicates the callback of isImsSmsSupported.Returns {@code true} if SMS over IMS is supported, {@code false} otherwise. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Indicates the callback of isImsSmsSupported.Returns {@code true} if SMS over IMS is supported, {@code false} otherwise. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ sms.isImsSmsSupported(slotId, (err: BusinessError, data: boolean) => {
 ```
 
 
+<a id="isimssmssupported-1"></a>
 ## isImsSmsSupported
 
 ```TypeScript
@@ -80,7 +82,7 @@ SMS over IMS is supported if IMS is registered and SMS is supported on IMS.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Returns {@code true} if SMS over IMS is supported, {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Returns {@code true} if SMS over IMS is supported, {@code false} otherwise. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Checksum object.
 import { zlib } from '@kit.BasicServicesKit';
 ```
 
+<a id="adler32"></a>
 ## adler32
 
 ```TypeScript
@@ -35,13 +36,13 @@ Calculates the Adler-32 checksum. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | adler | number | Yes | Initial value of the Adler-32 checksum. |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Data buffer for calculating the checksum. |
+| buf | ArrayBuffer | Yes | Data buffer for calculating the checksum. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the calculated Adler-32 checksum. |
+| Promise&lt;number&gt; | Promise used to return the calculated Adler-32 checksum. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ checksum.adler32(0, arrayBufferIn).then(data => {
 
 ```
 
+<a id="adler32combine"></a>
 ## adler32Combine
 
 ```TypeScript
@@ -98,7 +100,7 @@ Combines two Adler-32 checksums. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the combined Adler-32 checksum. |
+| Promise&lt;number&gt; | Promise used to return the combined Adler-32 checksum. |
 
 **Error codes:**
 
@@ -138,6 +140,7 @@ async function demo() {
 
 ```
 
+<a id="crc32"></a>
 ## crc32
 
 ```TypeScript
@@ -159,13 +162,13 @@ Updates a CRC-32 checksum. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | crc | number | Yes | Initial value of the CRC-32 checksum. |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Data buffer for calculating the checksum. |
+| buf | ArrayBuffer | Yes | Data buffer for calculating the checksum. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the updated CRC-32 checksum. |
+| Promise&lt;number&gt; | Promise used to return the updated CRC-32 checksum. |
 
 **Error codes:**
 
@@ -196,6 +199,7 @@ checksum.crc32(0, arrayBufferIn).then((data) => {
 
 ```
 
+<a id="crc32combine"></a>
 ## crc32Combine
 
 ```TypeScript
@@ -224,7 +228,7 @@ Combines two CRC-32 checksums. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the combined CRC-32 checksum. |
+| Promise&lt;number&gt; | Promise used to return the combined CRC-32 checksum. |
 
 **Error codes:**
 
@@ -264,6 +268,7 @@ async function demo() {
 
 ```
 
+<a id="crc64"></a>
 ## crc64
 
 ```TypeScript
@@ -285,13 +290,13 @@ Updates a CRC-64 checksum. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | crc | number | Yes | Initial value of the CRC-64 checksum. |
-| buf | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Data buffer for calculating the checksum. |
+| buf | ArrayBuffer | Yes | Data buffer for calculating the checksum. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the updated CRC-64 checksum. |
+| Promise&lt;number&gt; | Promise used to return the updated CRC-64 checksum. |
 
 **Error codes:**
 
@@ -322,6 +327,7 @@ checksum.crc64(0, arrayBufferIn).then((data) => {
 
 ```
 
+<a id="getcrc64table"></a>
 ## getCrc64Table
 
 ```TypeScript
@@ -342,7 +348,7 @@ Obtains this CRC-64 checksum table. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the CRC-64 checksum table. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the CRC-64 checksum table. |
 
 **Example**
 
@@ -359,6 +365,7 @@ checksum.getCrc64Table().then((data) => {
 
 ```
 
+<a id="getcrctable"></a>
 ## getCrcTable
 
 ```TypeScript
@@ -379,7 +386,7 @@ Obtains this CRC-32 checksum table. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return the CRC-32 checksum table. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return the CRC-32 checksum table. |
 
 **Example**
 

@@ -18,6 +18,7 @@ Base interface of profile.
 import { bluetooth } from '@kit.ConnectivityKit';
 ```
 
+<a id="getconnectiondevices"></a>
 ## getConnectionDevices
 
 ```TypeScript
@@ -42,7 +43,7 @@ Obtains the connected devices list of profile.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Returns the address of connected devices list. |
+| Array&lt;string&gt; | Returns the address of connected devices list. |
 
 **Example**
 
@@ -52,6 +53,7 @@ let retArray : Array<string> = a2dpSrc.getConnectionDevices();
 
 ```
 
+<a id="getdevicestate"></a>
 ## getDeviceState
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getreminderinfobybundles"></a>
 ## getReminderInfoByBundles
 
 ```TypeScript
@@ -28,13 +29,13 @@ Batch obtains reminders of specified applications. This API uses a promise to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundles | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<BundleOption> | Yes | Bundles whose reminders are to be obtained. |
+| bundles | Array&lt;BundleOption&gt; | Yes | Bundles whose reminders are to be obtained. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<NotificationReminderInfo>> | Promise used to return the application reminders obtained. |
+| Promise&lt;Array&lt;NotificationReminderInfo&gt;&gt; | Promise used to return the application reminders obtained. |
 
 **Error codes:**
 

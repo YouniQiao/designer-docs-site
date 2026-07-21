@@ -6,6 +6,7 @@
 import { mechanicManager } from '@kit.MechanicKit';
 ```
 
+<a id="on"></a>
 ## on('attachStateChange')
 
 ```TypeScript
@@ -25,7 +26,7 @@ Subscribes to device attachment state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'attachStateChange' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AttachStateChangeInfo> | Yes | Callback used to return the state change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AttachStateChangeInfo&gt; | Yes | Callback used to return the state change. |
 
 **Error codes:**
 
@@ -47,6 +48,7 @@ console.info('Succeeded in registering callback.');
 ```
 
 
+<a id="on-1"></a>
 ## on('trackingStateChange')
 
 ```TypeScript
@@ -66,7 +68,7 @@ Subscribes to tracking events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'trackingStateChange' | Yes | Event type. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<TrackingEventInfo> | Yes | Callback used to return the tracking event information. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;TrackingEventInfo&gt; | Yes | Callback used to return the tracking event information. |
 
 **Error codes:**
 

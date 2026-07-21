@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="clearrouterproxy"></a>
 ## clearRouterProxy
 
 ```TypeScript
@@ -28,8 +29,8 @@ Clears the router proxy set for widgets. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of widget IDs. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the router proxy is cleared,**error** is **undefined**; otherwise, an exception is thrown. |
+| formIds | Array&lt;string&gt; | Yes | Array of widget IDs. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the router proxy is cleared,**error** is **undefined**; otherwise, an exception is thrown. |
 
 **Error codes:**
 
@@ -44,6 +45,7 @@ Clears the router proxy set for widgets. This API uses an asynchronous callback 
 | [16501003](../errorcode-form.md#16501003-widget-not-operatable) | The form cannot be operated by the current application. |
 
 
+<a id="clearrouterproxy-1"></a>
 ## clearRouterProxy
 
 ```TypeScript
@@ -66,13 +68,13 @@ Clears the router proxy set for widgets. This API uses a promise to return the r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Array of widget IDs. |
+| formIds | Array&lt;string&gt; | Yes | Array of widget IDs. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

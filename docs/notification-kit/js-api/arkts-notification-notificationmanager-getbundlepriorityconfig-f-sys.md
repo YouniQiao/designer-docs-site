@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="getbundlepriorityconfig"></a>
 ## getBundlePriorityConfig
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the priority configuration of an application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the result. |
+| Promise&lt;string&gt; | Promise used to return the result. |
 
 **Error codes:**
 

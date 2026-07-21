@@ -6,6 +6,7 @@
 import { eap } from '@kit.NetworkKit';
 ```
 
+<a id="unregcustomeaphandler"></a>
 ## unregCustomEapHandler
 
 ```TypeScript
@@ -29,7 +30,7 @@ unreg the callback of eap packet customization.
 | netType | number | Yes | Indicates net type need to customize. |
 | eapCode | number | Yes | Indicates eap code need to customize. |
 | eapType | number | Yes | Indicates eap type need to customize. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<EapData> | Yes | the callback of eap packet customization. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EapData&gt; | Yes | the callback of eap packet customization. |
 
 **Error codes:**
 

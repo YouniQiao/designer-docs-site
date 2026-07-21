@@ -6,6 +6,7 @@
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="getsimplenumberformatbyskeleton"></a>
 ## getSimpleNumberFormatBySkeleton
 
 ```TypeScript
@@ -42,6 +43,7 @@ Obtains a **SimpleNumberFormat** object based on the specified skeleton.
 | [8900001](../errorcode-i18n.md#8900001-parameter-verification-error) | Invalid parameter. Possible causes: Parameter verification failed. |
 
 
+<a id="getsimplenumberformatbyskeleton-1"></a>
 ## getSimpleNumberFormatBySkeleton
 
 ```TypeScript
@@ -54,7 +56,7 @@ Obtains a **SimpleNumberFormat** object based on the specified skeleton.
 
 **Deprecated since:** 20
 
-**Substitutes:** getSimpleNumberFormatBySkeleton(skeleton:
+**Substitutes:** [getSimpleNumberFormatBySkeleton(skeleton:](arkts-localization-i18n-getsimplenumberformatbyskeleton-f.md#getsimplenumberformatbyskeleton-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 

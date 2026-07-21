@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="getlocatingrequireddata"></a>
 ## getLocatingRequiredData
 
 ```TypeScript
@@ -34,7 +35,7 @@ Get WiFi/BT scanning information, and use the WiFi/BT scanning information for l
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<LocatingRequiredData>> | The promise returned by the function,for reporting WiFi/BT scan info. |
+| Promise&lt;Array&lt;LocatingRequiredData&gt;&gt; | The promise returned by the function,for reporting WiFi/BT scan info. |
 
 **Error codes:**
 

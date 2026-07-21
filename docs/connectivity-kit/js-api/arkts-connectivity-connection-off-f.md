@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="off"></a>
 ## off('bluetoothDeviceFind')
 
 ```TypeScript
@@ -31,7 +32,7 @@ Unsubscribe the event reported when a remote Bluetooth device is discovered.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'bluetoothDeviceFind' | Yes | Type of the discovering event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<string>> | No | Callback used to listen for the discovering event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;string&gt;&gt; | No | Callback used to listen for the discovering event. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ try {
 ```
 
 
+<a id="off-1"></a>
 ## off('bondStateChange')
 
 ```TypeScript
@@ -81,7 +83,7 @@ Unsubscribe the event reported when a remote Bluetooth device is bonded.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'bondStateChange' | Yes | Type of the bond state event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BondStateParam> | No | Callback used to listen for the bond state event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BondStateParam&gt; | No | Callback used to listen for the bond state event. |
 
 **Error codes:**
 
@@ -109,6 +111,7 @@ try {
 ```
 
 
+<a id="off-2"></a>
 ## off('pinRequired')
 
 ```TypeScript
@@ -132,7 +135,7 @@ Unsubscribe the event of a pairing request from a remote Bluetooth device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'pinRequired' | Yes | Type of the pairing request event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<PinRequiredParam> | No | Callback used to listen for the pairing request event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;PinRequiredParam&gt; | No | Callback used to listen for the pairing request event. |
 
 **Error codes:**
 
@@ -160,6 +163,7 @@ try {
 ```
 
 
+<a id="off-3"></a>
 ## off('batteryChange')
 
 ```TypeScript
@@ -183,7 +187,7 @@ Unsubscribe the event of battery state changed from a remote device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'batteryChange' | Yes | Type of the battery event to listen for. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BatteryInfo> | No | Callback used to listen. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BatteryInfo&gt; | No | Callback used to listen. |
 
 **Error codes:**
 

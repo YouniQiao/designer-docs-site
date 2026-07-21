@@ -18,6 +18,7 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 import { ArcAlphabetIndexerAttribute, ArcAlphabetIndexer } from '@kit.ArkUI';
 ```
 
+<a id="autocollapse"></a>
 ## autoCollapse
 
 ```TypeScript
@@ -38,7 +39,7 @@ Sets whether to enable the adaptive collapse behavior for the indexer.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | Whether to enable the adaptive collapse behavior for the indexer.<br>Default value: **true**.<br>**true**: Enable the adaptive collapse behavior.<br>**false**: Disable the adaptive collapse behavior. |
+| enable | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable the adaptive collapse behavior for the indexer.<br>Default value: **true**.<br>**true**: Enable the adaptive collapse behavior.<br>**false**: Disable the adaptive collapse behavior. |
 
 **Return value:**
 
@@ -46,6 +47,7 @@ Sets whether to enable the adaptive collapse behavior for the indexer.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="color"></a>
 ## color
 
 ```TypeScript
@@ -66,7 +68,7 @@ Sets the text color of the index items in the normal state.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ColorMetrics> | Yes | Text color.<br>Default value: **0xFFFFFF**, displayed as white |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ColorMetrics&gt; | Yes | Text color.<br>Default value: **0xFFFFFF**, displayed as white |
 
 **Return value:**
 
@@ -74,6 +76,7 @@ Sets the text color of the index items in the normal state.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="font"></a>
 ## font
 
 ```TypeScript
@@ -94,7 +97,7 @@ Sets the default font style of the index items.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| font | [Optional](../arkts-components/arkts-arkui-optional-t.md)<Font> | Yes | Default font style of the index items.<br>Default value:<br>{<br>size:'13.0fp',<br  > style:FontStyle.Normal,<br> weight:500,<br> family:'HarmonyOS Sans'<br>} |
+| font | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;Font&gt; | Yes | Default font style of the index items.<br>Default value:<br>{<br>size:'13.0fp',<br   > style:FontStyle.Normal,<br> weight:500,<br> family:'HarmonyOS Sans'<br>} |
 
 **Return value:**
 
@@ -102,6 +105,7 @@ Sets the default font style of the index items.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="itemsize"></a>
 ## itemSize
 
 ```TypeScript
@@ -122,7 +126,7 @@ Sets the size of the index item area.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| size | [Optional](../arkts-components/arkts-arkui-optional-t.md)<LengthMetrics> | Yes | Size of the index item area. For the circular item area, this represents the diameter of the circle. Percentage values are not supported.<br>Default value: **24.0**<br>Unit: vp |
+| size | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;LengthMetrics&gt; | Yes | Size of the index item area. For the circular item area, this represents the diameter of the circle. Percentage values are not supported.<br>Default value: **24.0**<br>Unit: vp |
 
 **Return value:**
 
@@ -130,6 +134,7 @@ Sets the size of the index item area.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="onselect"></a>
 ## onSelect
 
 ```TypeScript
@@ -150,7 +155,7 @@ Triggered when an index item is selected. The return value is the index of the s
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)<OnSelectCallback> | Yes | Callback used to return the result. |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;OnSelectCallback&gt; | Yes | Callback used to return the result. |
 
 **Return value:**
 
@@ -158,6 +163,7 @@ Triggered when an index item is selected. The return value is the index of the s
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="popupbackground"></a>
 ## popupBackground
 
 ```TypeScript
@@ -178,7 +184,7 @@ Sets the background color of the pop-up window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ColorMetrics> | Yes | Background color of the pop-up window.<br>Default value: **0xD8404040**,displayed as dark gray with slight transparency |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ColorMetrics&gt; | Yes | Background color of the pop-up window.<br>Default value: **0xD8404040**,displayed as dark gray with slight transparency |
 
 **Return value:**
 
@@ -186,6 +192,7 @@ Sets the background color of the pop-up window.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="popupbackgroundblurstyle"></a>
 ## popupBackgroundBlurStyle
 
 ```TypeScript
@@ -211,7 +218,7 @@ Sets the background blur style of the pop-up window. If this API is not used, th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| style | [Optional](../arkts-components/arkts-arkui-optional-t.md)<BlurStyle> | Yes | Background blur style of the pop-up window. |
+| style | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;BlurStyle&gt; | Yes | Background blur style of the pop-up window. |
 
 **Return value:**
 
@@ -219,6 +226,7 @@ Sets the background blur style of the pop-up window. If this API is not used, th
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="popupcolor"></a>
 ## popupColor
 
 ```TypeScript
@@ -239,7 +247,7 @@ Sets the text color for the pop-up window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ColorMetrics> | Yes | Text color of the pop-up window.<br>Default value: **0xFFFFFF**,displayed as white |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ColorMetrics&gt; | Yes | Text color of the pop-up window.<br>Default value: **0xFFFFFF**,displayed as white |
 
 **Return value:**
 
@@ -247,6 +255,7 @@ Sets the text color for the pop-up window.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="popupfont"></a>
 ## popupFont
 
 ```TypeScript
@@ -267,7 +276,7 @@ Sets the font style of the pop-up window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| font | [Optional](../arkts-components/arkts-arkui-optional-t.md)<Font> | Yes | Font style of the pop-up window.<br>Default value:<br>{<br>size:'19.0fp',<br>style:FontStyle.Normal,<br> weight:500,<br> family:'HarmonyOS Sans'<br>} |
+| font | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;Font&gt; | Yes | Font style of the pop-up window.<br>Default value:<br>{<br>size:'19.0fp',<br>style:FontStyle.Normal,<br> weight:500,<br> family:'HarmonyOS Sans'<br>} |
 
 **Return value:**
 
@@ -275,6 +284,7 @@ Sets the font style of the pop-up window.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="selected"></a>
 ## selected
 
 ```TypeScript
@@ -295,7 +305,7 @@ Sets the index of the selected item.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | [Optional](../arkts-components/arkts-arkui-optional-t.md)<number> | Yes | Index of the selected item.<br>Default value: **0**<br>This parameter supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md). |
+| index | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Index of the selected item.<br>Default value: **0**<br>This parameter supports two-way binding through [!!](docroot://ui/state-management/arkts-new-binding.md). |
 
 **Return value:**
 
@@ -303,6 +313,7 @@ Sets the index of the selected item.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="selectedbackgroundcolor"></a>
 ## selectedBackgroundColor
 
 ```TypeScript
@@ -323,7 +334,7 @@ Sets the background color of the selected item.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ColorMetrics> | Yes | Background color of the selected item.<br>Default value: **0x1F71FF**,displayed as dark blue |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ColorMetrics&gt; | Yes | Background color of the selected item.<br>Default value: **0x1F71FF**,displayed as dark blue |
 
 **Return value:**
 
@@ -331,6 +342,7 @@ Sets the background color of the selected item.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="selectedcolor"></a>
 ## selectedColor
 
 ```TypeScript
@@ -351,7 +363,7 @@ Sets the text color of the selected item.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ColorMetrics> | Yes | Text color of the selected item.<br>Default value: **0xFFFFFF**,displayed as white |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ColorMetrics&gt; | Yes | Text color of the selected item.<br>Default value: **0xFFFFFF**,displayed as white |
 
 **Return value:**
 
@@ -359,6 +371,7 @@ Sets the text color of the selected item.
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="selectedfont"></a>
 ## selectedFont
 
 ```TypeScript
@@ -379,7 +392,7 @@ Sets the font style of the selected item, including size, weight, style, and fon
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| font | [Optional](../arkts-components/arkts-arkui-optional-t.md)<Font> | Yes | Font style of the selected item.<br>Default value: {<br>size:'13.0fp',<br> style:FontStyle.Normal,<br> weight:500,<br> family:'HarmonyOS Sans'<br>} |
+| font | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;Font&gt; | Yes | Font style of the selected item.<br>Default value: {<br>size:'13.0fp',<br> style:FontStyle.Normal,<br> weight:500,<br> family:'HarmonyOS Sans'<br>} |
 
 **Return value:**
 
@@ -387,6 +400,7 @@ Sets the font style of the selected item, including size, weight, style, and fon
 | --- | --- |
 | [ArcAlphabetIndexerAttribute](arkts-arkui-arkui-arcalphabetindexer-arcalphabetindexerattribute-c.md) | @syscap SystemCapability.ArkUI.ArkUI.Circle@crossplatform@atomicservice |
 
+<a id="usepopup"></a>
 ## usePopup
 
 ```TypeScript
@@ -407,7 +421,7 @@ Sets whether to display the pop-up window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)<boolean> | Yes | Whether to display the pop-up window.<br>**true**: yes; **false**: no<br>Default value: **false** |
+| enabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to display the pop-up window.<br>**true**: yes; **false**: no<br>Default value: **false** |
 
 **Return value:**
 

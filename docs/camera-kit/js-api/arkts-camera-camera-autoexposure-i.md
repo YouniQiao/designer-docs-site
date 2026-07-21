@@ -16,6 +16,7 @@ AutoExposure inherits from [AutoExposureQuery](arkts-camera-camera-autoexposureq
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getexposuremode"></a>
 ## getExposureMode
 
 ```TypeScript
@@ -49,6 +50,7 @@ Obtains the exposure mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getexposurevalue"></a>
 ## getExposureValue
 
 ```TypeScript
@@ -77,6 +79,7 @@ Obtains the exposure value in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="getmeteringpoint"></a>
 ## getMeteringPoint
 
 ```TypeScript
@@ -105,6 +108,7 @@ Obtains the metering point of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
+<a id="offexposurestatechange"></a>
 ## offExposureStateChange
 
 ```TypeScript
@@ -127,8 +131,9 @@ Unregisters the callback used to listen for exposure state changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ExposureState> | No | Callback used to get the exposure state change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ExposureState&gt; | No | Callback used to get the exposure state change. |
 
+<a id="onexposurestatechange"></a>
 ## onExposureStateChange
 
 ```TypeScript
@@ -151,8 +156,9 @@ Registers a callback to listen for exposure state changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<ExposureState> | Yes | Callback used to get the exposure state change. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ExposureState&gt; | Yes | Callback used to get the exposure state change. |
 
+<a id="setexposurebias"></a>
 ## setExposureBias
 
 ```TypeScript
@@ -182,6 +188,7 @@ Sets an exposure compensation value (EV).Before the setting, you are advised to 
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed.<br>**Applicable version:** 12 and later |
 
+<a id="setexposuremode"></a>
 ## setExposureMode
 
 ```TypeScript
@@ -211,6 +218,7 @@ Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed.<br>**Applicable version:** 19 and later |
 
+<a id="setmeteringpoint"></a>
 ## setMeteringPoint
 
 ```TypeScript

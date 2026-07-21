@@ -7,7 +7,7 @@ A linear data structure that is implemented on arrays and can be passed between 
 > - This module can be imported only to ArkTS files (with the file name extension .ets).  
 > This section uses the following to identify the use of generics:
 
-- T: type, which can be any of the [sendable data types](../../../../arkts-utils/arkts-sendable.md#sendable-data-types).**Decorator**: \@Sendable
+- T: type, which can be any of the [sendable data types](docroot://arkts-utils/arkts-sendable.md#sendable-data-types).**Decorator**: \@Sendable
 
 **Inheritance/Implementation:** Array implements [ConcatArray<T>](ConcatArray<T>)
 
@@ -25,6 +25,7 @@ A linear data structure that is implemented on arrays and can be passed between 
 import { collections } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -45,7 +46,7 @@ Obtains an iterator, each item of which is a JavaScript object.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | Iterator object. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | Iterator object. |
 
 **Error codes:**
 
@@ -53,6 +54,7 @@ Obtains an iterator, each item of which is a JavaScript object.
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The Symbol.iterator method cannot be bound. |
 
+<a id="at"></a>
 ## at
 
 ```TypeScript
@@ -88,6 +90,7 @@ Returns the element at a given index in this ArkTS array.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The at method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="concat"></a>
 ## concat
 
 ```TypeScript
@@ -108,13 +111,13 @@ Concatenates this ArkTS array with one or more arrays.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| items | [ConcatArray](../../apis-na/arkts-apis/arkts-na-lib-es5-concatarray-i.md)<T>[] | Yes | Concatenates this ArkTS array with one or more arrays. |
+| items | [ConcatArray](../../apis-na/arkts-apis/arkts-na-lib-es5-concatarray-i.md)&lt;T&gt;[] | Yes | Concatenates this ArkTS array with one or more arrays. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | New array generated. Not a valid array. |
+| Array&lt;T&gt; | New array generated. Not a valid array. |
 
 **Error codes:**
 
@@ -123,6 +126,7 @@ Concatenates this ArkTS array with one or more arrays.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The concat method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -145,6 +149,7 @@ A constructor used to create an empty ArkTS array.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Array's constructor cannot be directly invoked. |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -174,6 +179,7 @@ A constructor used to create an ArkTS array with the given elements.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Array's constructor cannot be directly invoked. |
 
+<a id="constructor-2"></a>
 ## constructor
 
 ```TypeScript
@@ -202,6 +208,7 @@ A constructor used to create an ArkTS array with the given elements.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The Array's constructor cannot be directly invoked. |
 
+<a id="copywithin"></a>
 ## copyWithin
 
 ```TypeScript
@@ -230,7 +237,7 @@ Copies elements within a given range from this ArkTS array to another position i
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | ArkTS array after being modified. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
+| Array&lt;T&gt; | ArkTS array after being modified. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 
 **Error codes:**
 
@@ -239,6 +246,7 @@ Copies elements within a given range from this ArkTS array to another position i
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The copyWithin method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -266,7 +274,7 @@ Creates an ArkTS array of a fixed length, with each element set to a given initi
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Newly created ArkTS array. |
+| Array&lt;T&gt; | Newly created ArkTS array. |
 
 **Error codes:**
 
@@ -274,6 +282,7 @@ Creates an ArkTS array of a fixed length, with each element set to a given initi
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The create method cannot be bound.<br>**Applicable version:** 12 - 17 |
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -294,7 +303,7 @@ Returns an iterator object that contains the key-value pair of each element in t
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[number, T]> | Iterator object that contains the key-value pair of each element in the array. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[number, T]&gt; | Iterator object that contains the key-value pair of each element in the array. |
 
 **Error codes:**
 
@@ -303,6 +312,7 @@ Returns an iterator object that contains the key-value pair of each element in t
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The entries method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="every"></a>
 ## every
 
 ```TypeScript
@@ -323,7 +333,7 @@ Checks whether all elements in this ArkTS array meet a given condition.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | [ArrayPredicateFn](arkts-arkts-collections-arraypredicatefn-t.md)<T, Array<T>> | Yes | Assertion function used for the test. |
+| predicate | [ArrayPredicateFn](arkts-arkts-collections-arraypredicatefn-t.md)&lt;T, Array&lt;T&gt;&gt; | Yes | Assertion function used for the test. |
 
 **Return value:**
 
@@ -338,6 +348,7 @@ Checks whether all elements in this ArkTS array meet a given condition.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The every method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="extendto"></a>
 ## extendTo
 
 ```TypeScript
@@ -368,6 +379,7 @@ Extends this array to a given length by adding elements with the specified initi
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The extendTo method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="fill"></a>
 ## fill
 
 ```TypeScript
@@ -396,7 +408,7 @@ Fills elements in the specified range of this ArkTS array with a given value.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Filled array. |
+| Array&lt;T&gt; | Filled array. |
 
 **Error codes:**
 
@@ -405,6 +417,7 @@ Fills elements in the specified range of this ArkTS array with a given value.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The fill method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="filter"></a>
 ## filter
 
 ```TypeScript
@@ -425,13 +438,13 @@ Returns a new array containing all elements that pass a test provided by a callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, array: Array<T>) => boolean | Yes | Function that takes three arguments. It is used to filter elements. The value **true** means that the current element passes the test and should be retained in the new array. The value **false** means that the current element fails the test and should be excluded from the new array. |
+| predicate | (value: T, index: number, array: Array&lt;T&gt;) =&gt; boolean | Yes | Function that takes three arguments. It is used to filter elements. The value **true** means that the current element passes the test and should be retained in the new array. The value **false** means that the current element fails the test and should be excluded from the new array. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | New array containing elements that pass the test. |
+| Array&lt;T&gt; | New array containing elements that pass the test. |
 
 **Error codes:**
 
@@ -440,6 +453,7 @@ Returns a new array containing all elements that pass a test provided by a callb
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The filter method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="find"></a>
 ## find
 
 ```TypeScript
@@ -460,7 +474,7 @@ Returns the value of the first element that passes a test provided by a callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, obj: Array<T>) => boolean | Yes | Function that takes three arguments. It is used to filter elements. The value **true** means that the current element meets the conditions, the traversal stops, and that element is returned. The value **false** means that the current element does not meet the condition, and the traversal continues until the element that meets the condition is found or the entire array is traversed. |
+| predicate | (value: T, index: number, obj: Array&lt;T&gt;) =&gt; boolean | Yes | Function that takes three arguments. It is used to filter elements. The value **true** means that the current element meets the conditions, the traversal stops, and that element is returned. The value **false** means that the current element does not meet the condition, and the traversal continues until the element that meets the condition is found or the entire array is traversed. |
 
 **Return value:**
 
@@ -475,6 +489,7 @@ Returns the value of the first element that passes a test provided by a callback
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The find method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="findindex"></a>
 ## findIndex
 
 ```TypeScript
@@ -495,7 +510,7 @@ Returns the index of the first element that passes a test provided by a callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | (value: T, index: number, obj: Array<T>) => boolean | Yes | Function that takes three arguments. It is used to filter elements. The value **true** means that the current element meets the conditions, the traversal stops, and the index of that element is returned. The value **false** means that the current element does not meet the condition, and the traversal continues until the element that meets the condition is found or the entire array is traversed. |
+| predicate | (value: T, index: number, obj: Array&lt;T&gt;) =&gt; boolean | Yes | Function that takes three arguments. It is used to filter elements. The value **true** means that the current element meets the conditions, the traversal stops, and the index of that element is returned. The value **false** means that the current element does not meet the condition, and the traversal continues until the element that meets the condition is found or the entire array is traversed. |
 
 **Return value:**
 
@@ -510,6 +525,7 @@ Returns the index of the first element that passes a test provided by a callback
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The findIndex method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -530,7 +546,7 @@ Calls a callback function for each element in this ArkTS Array.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index: number, array: Array<T>) => void | Yes | Callback function to run for each element. |
+| callbackFn | (value: T, index: number, array: Array&lt;T&gt;) =&gt; void | Yes | Callback function to run for each element. |
 
 **Error codes:**
 
@@ -539,6 +555,7 @@ Calls a callback function for each element in this ArkTS Array.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The forEach method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -559,13 +576,13 @@ Creates an ArkTS array from an array-like object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<T> | Yes | Array-like object. |
+| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)&lt;T&gt; | Yes | Array-like object. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Newly created ArkTS array. |
+| Array&lt;T&gt; | Newly created ArkTS array. |
 
 **Error codes:**
 
@@ -573,6 +590,7 @@ Creates an ArkTS array from an array-like object.
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The from method cannot be bound.<br>**Applicable version:** 12 - 17 |
 
+<a id="from-1"></a>
 ## from
 
 ```TypeScript
@@ -593,13 +611,13 @@ Creates an ArkTS array from an iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| iterable | [Iterable](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterable-i.md)<T> | Yes | Array-like object. |
+| iterable | Iterable&lt;T&gt; | Yes | Array-like object. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Newly created ArkTS array. |
+| Array&lt;T&gt; | Newly created ArkTS array. |
 
 **Error codes:**
 
@@ -607,6 +625,7 @@ Creates an ArkTS array from an iterable object.
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The from method cannot be bound.<br>**Applicable version:** 12 - 17 |
 
+<a id="from-2"></a>
 ## from
 
 ```TypeScript
@@ -627,15 +646,16 @@ Creates an ArkTS array from an array-like object, and uses a custom function to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<T> \| Iterable<T> | Yes | Array-like object. |
-| mapFn | [ArrayFromMapFn](arkts-arkts-collections-arrayfrommapfn-t.md)<T, T> | Yes | Functions used to process the array elements. |
+| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)&lt;T&gt; \| Iterable&lt;T&gt; | Yes | Array-like object. |
+| mapFn | [ArrayFromMapFn](arkts-arkts-collections-arrayfrommapfn-t.md)&lt;T, T&gt; | Yes | Functions used to process the array elements. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Newly created ArkTS array. |
+| Array&lt;T&gt; | Newly created ArkTS array. |
 
+<a id="from-3"></a>
 ## from
 
 ```TypeScript
@@ -656,15 +676,16 @@ Creates an ArkTS array from an array-like object, and uses a custom function to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)<U> \| Iterable<U> | Yes | Array-like object. |
-| mapFn | [ArrayFromMapFn](arkts-arkts-collections-arrayfrommapfn-t.md)<U, T> | Yes | Functions used to process the array elements. |
+| arrayLike | [ArrayLike](../../apis-na/arkts-apis/arkts-na-lib-es5-arraylike-i.md)&lt;U&gt; \| Iterable&lt;U&gt; | Yes | Array-like object. |
+| mapFn | [ArrayFromMapFn](arkts-arkts-collections-arrayfrommapfn-t.md)&lt;U, T&gt; | Yes | Functions used to process the array elements. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Newly created ArkTS array. |
+| Array&lt;T&gt; | Newly created ArkTS array. |
 
+<a id="includes"></a>
 ## includes
 
 ```TypeScript
@@ -701,6 +722,7 @@ Checks whether this ArkTS array contains an element and returns a Boolean value.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The includes method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="indexof"></a>
 ## indexOf
 
 ```TypeScript
@@ -737,6 +759,7 @@ Returns the index of the first occurrence of a value in this ArkTS Array. If the
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The indexOf method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="isarray"></a>
 ## isArray
 
 ```TypeScript
@@ -765,6 +788,7 @@ Check whether the input parameter is an ArkTS array.
 | --- | --- |
 | boolean | Check result. The value **true** is returned if the input parameter is an ArkTS array;otherwise, **false** is returned. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 
+<a id="join"></a>
 ## join
 
 ```TypeScript
@@ -800,6 +824,7 @@ Concatenates all elements in this ArkTS array into a string, with a given separa
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The join method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -820,7 +845,7 @@ Returns an iterator object that contains the index of each element in this ArkTS
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<number> | Iterator object that contains the index of each element in the array. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;number&gt; | Iterator object that contains the index of each element in the array. |
 
 **Error codes:**
 
@@ -829,6 +854,7 @@ Returns an iterator object that contains the index of each element in this ArkTS
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The keys method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="lastindexof"></a>
 ## lastIndexOf
 
 ```TypeScript
@@ -865,6 +891,7 @@ Obtains the index of the last occurrence of the specified value in this ArkTS ar
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The lastIndexOf method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="map"></a>
 ## map
 
 ```TypeScript
@@ -885,13 +912,13 @@ Calls a callback function for each element in this ArkTS Array and returns a new
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: T, index: number, array: Array<T>) => U | Yes | Callback function to run for each element. |
+| callbackFn | (value: T, index: number, array: Array&lt;T&gt;) =&gt; U | Yes | Callback function to run for each element. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<U> | New array containing the result of the callback function. |
+| Array&lt;U&gt; | New array containing the result of the callback function. |
 
 **Error codes:**
 
@@ -900,6 +927,7 @@ Calls a callback function for each element in this ArkTS Array and returns a new
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The map method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="of"></a>
 ## of
 
 ```TypeScript
@@ -926,8 +954,9 @@ Creates an ArkTS array with a variable number of parameters.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Newly created ArkTS array. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
+| Array&lt;T&gt; | Newly created ArkTS array. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 
+<a id="pop"></a>
 ## pop
 
 ```TypeScript
@@ -957,6 +986,7 @@ Removes the last element from this ArkTS array and returns that element. If the 
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The pop method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="push"></a>
 ## push
 
 ```TypeScript
@@ -992,6 +1022,7 @@ Adds elements to the end of this ArkTS array and returns the new length of the a
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The push method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reduce"></a>
 ## reduce
 
 ```TypeScript
@@ -1012,7 +1043,7 @@ Calls a callback function for each element in this ArkTS array, uses the previou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (previousValue: T, currentValue: T, currentIndex: number, array: Array<T>) => T | Yes | Function that takes four arguments. It performs an operation on each element and passes the result as an accumulated value to the next element. |
+| callbackFn | (previousValue: T, currentValue: T, currentIndex: number, array: Array&lt;T&gt;) =&gt; T | Yes | Function that takes four arguments. It performs an operation on each element and passes the result as an accumulated value to the next element. |
 
 **Return value:**
 
@@ -1027,6 +1058,7 @@ Calls a callback function for each element in this ArkTS array, uses the previou
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduce method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reduce-1"></a>
 ## reduce
 
 ```TypeScript
@@ -1056,7 +1088,7 @@ Similar to the previous API, this API takes an initial value as the second param
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (previousValue: U, currentValue: T, currentIndex: number, array: Array<T>) => U | Yes | Function that takes four arguments. It performs an operation on each element and passes the result as an accumulated value to the next element. |
+| callbackFn | (previousValue: U, currentValue: T, currentIndex: number, array: Array&lt;T&gt;) =&gt; U | Yes | Function that takes four arguments. It performs an operation on each element and passes the result as an accumulated value to the next element. |
 | initialValue | U | Yes | Initial value of the accumulator. |
 
 **Return value:**
@@ -1072,13 +1104,14 @@ Similar to the previous API, this API takes an initial value as the second param
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduce method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reduceright"></a>
 ## reduceRight
 
 ```TypeScript
 reduceRight<U = T>(callbackFn: ArrayReduceCallback<U, T, Array<T>>, initialValue: U): U
 ```
 
-This API is similar to the [reduceRight](arkts-arkts-collections-array-c.md#reduceright-2) API, but it takes an initial value as the second parameter to initialize the accumulator before the array traversal starts from right to left.
+This API is similar to the [reduceRight](arkts-arkts-collections-array-c.md#reduceright-1) API, but it takes an initial value as the second parameter to initialize the accumulator before the array traversal starts from right to left.
 
 **Since:** 18
 
@@ -1092,7 +1125,7 @@ This API is similar to the [reduceRight](arkts-arkts-collections-array-c.md#redu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | [ArrayReduceCallback](arkts-arkts-collections-arrayreducecallback-t.md)<U, T, Array<T>> | Yes | Function that takes four arguments. It performs an operation on each element and passes the result as an accumulated value to the next element. |
+| callbackFn | [ArrayReduceCallback](arkts-arkts-collections-arrayreducecallback-t.md)&lt;U, T, Array&lt;T&gt;&gt; | Yes | Function that takes four arguments. It performs an operation on each element and passes the result as an accumulated value to the next element. |
 | initialValue | U | Yes | Initial value of the accumulator. |
 
 **Return value:**
@@ -1108,6 +1141,7 @@ This API is similar to the [reduceRight](arkts-arkts-collections-array-c.md#redu
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduceRight method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reduceright-1"></a>
 ## reduceRight
 
 ```TypeScript
@@ -1128,7 +1162,7 @@ Goes through each element in this ArkTS array from right to left, uses a callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | [ArrayReduceCallback](arkts-arkts-collections-arrayreducecallback-t.md)<T, T, Array<T>> | Yes | Function that takes four arguments. It performs an operation on each element and passes the result as an accumulated value to the next element. |
+| callbackFn | [ArrayReduceCallback](arkts-arkts-collections-arrayreducecallback-t.md)&lt;T, T, Array&lt;T&gt;&gt; | Yes | Function that takes four arguments. It performs an operation on each element and passes the result as an accumulated value to the next element. |
 
 **Return value:**
 
@@ -1143,6 +1177,7 @@ Goes through each element in this ArkTS array from right to left, uses a callbac
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reduceRight method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="reverse"></a>
 ## reverse
 
 ```TypeScript
@@ -1163,7 +1198,7 @@ Reverses elements in this ArkTS array and returns a reference to the same array.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Reversed ArkTS array. |
+| Array&lt;T&gt; | Reversed ArkTS array. |
 
 **Error codes:**
 
@@ -1172,6 +1207,7 @@ Reverses elements in this ArkTS array and returns a reference to the same array.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The reverse method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="shift"></a>
 ## shift
 
 ```TypeScript
@@ -1201,6 +1237,7 @@ Removes the first element from this ArkTS array and returns that element. If the
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The shift method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="shrinkto"></a>
 ## shrinkTo
 
 ```TypeScript
@@ -1230,6 +1267,7 @@ Shrinks this ArkTS array to a given length.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The shrinkTo method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="slice"></a>
 ## slice
 
 ```TypeScript
@@ -1257,7 +1295,7 @@ Selects a range of elements in this ArkTS array to create an array.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | New array containing the selected elements. |
+| Array&lt;T&gt; | New array containing the selected elements. |
 
 **Error codes:**
 
@@ -1266,6 +1304,7 @@ Selects a range of elements in this ArkTS array to create an array.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The slice method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="some"></a>
 ## some
 
 ```TypeScript
@@ -1286,7 +1325,7 @@ Checks whether this ArkTS array contains an element that meets certain condition
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| predicate | [ArrayPredicateFn](arkts-arkts-collections-arraypredicatefn-t.md)<T, Array<T>> | Yes | Assertion function used for the test. |
+| predicate | [ArrayPredicateFn](arkts-arkts-collections-arraypredicatefn-t.md)&lt;T, Array&lt;T&gt;&gt; | Yes | Assertion function used for the test. |
 
 **Return value:**
 
@@ -1301,6 +1340,7 @@ Checks whether this ArkTS array contains an element that meets certain condition
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The some method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -1321,13 +1361,13 @@ Sorts elements in this ArkTS array and returns a new array.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| compareFn | (a: T, b: T) => number | No | Function that determines the sort order. By default, elements are sorted in ascending order. |
+| compareFn | (a: T, b: T) =&gt; number | No | Function that determines the sort order. By default, elements are sorted in ascending order. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | Array with the sorted elements. |
+| Array&lt;T&gt; | Array with the sorted elements. |
 
 **Error codes:**
 
@@ -1336,6 +1376,7 @@ Sorts elements in this ArkTS array and returns a new array.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The sort method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="splice"></a>
 ## splice
 
 ```TypeScript
@@ -1356,13 +1397,13 @@ Removes elements from a specified position (start) and all elements after the sp
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| start | number | Yes | Index from which the removal starts. If -array.length =&lt; start &lt; 0,the removal starts from start + array.length. If start &lt; -array.length, the removal starts from 0. |
+| start | number | Yes | Index from which the removal starts. If -array.length =< start < 0,the removal starts from start + array.length. If start < -array.length, the removal starts from 0. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | **Array** object that contains the removed elements. If no element is removed, an empty **Array** object is returned.Possible causes:1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| Array&lt;T&gt; | **Array** object that contains the removed elements. If no element is removed, an empty **Array** object is returned.Possible causes:1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
 **Error codes:**
 
@@ -1371,6 +1412,7 @@ Removes elements from a specified position (start) and all elements after the sp
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The splice method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="splice-1"></a>
 ## splice
 
 ```TypeScript
@@ -1391,7 +1433,7 @@ Removes elements from a specified position in an array, and inserts new elements
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| start | number | Yes | Index from which the removal starts. If -array.length =&lt; start &lt; 0,the removal starts from start + array.length. If start &lt; -array.length, the removal starts from 0. |
+| start | number | Yes | Index from which the removal starts. If -array.length =< start < 0,the removal starts from start + array.length. If start < -array.length, the removal starts from 0. |
 | deleteCount | number | Yes | Number of elements to remove. |
 | items | T[] | Yes | New elements to insert from the start position.If no value is passed in, only the elements in the array are removed. |
 
@@ -1399,7 +1441,7 @@ Removes elements from a specified position in an array, and inserts new elements
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<T> | **Array** object that contains the removed elements. If no element is removed, an empty **Array** object is returned. Possible causes:1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| Array&lt;T&gt; | **Array** object that contains the removed elements. If no element is removed, an empty **Array** object is returned. Possible causes:1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
 **Error codes:**
 
@@ -1408,6 +1450,7 @@ Removes elements from a specified position in an array, and inserts new elements
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The splice method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="tolocalestring"></a>
 ## toLocaleString
 
 ```TypeScript
@@ -1437,6 +1480,7 @@ Generates a string that matches the cultural conversions of the current system l
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The toLocaleString method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -1466,6 +1510,7 @@ Converts an ArkTS array into a string.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The toString method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="unshift"></a>
 ## unshift
 
 ```TypeScript
@@ -1501,6 +1546,7 @@ Adds elements to the beginning of this ArkTS array and returns the new length of
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The unshift method cannot be bound. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -1521,7 +1567,7 @@ Returns an iterator object that contains the value of each element in this ArkTS
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<T> | Iterator object that contains the value of each element in the array. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;T&gt; | Iterator object that contains the value of each element in the array. |
 
 **Error codes:**
 

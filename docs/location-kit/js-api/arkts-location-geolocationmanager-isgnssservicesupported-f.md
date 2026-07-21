@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="isgnssservicesupported"></a>
 ## isGnssServiceSupported
 
 ```TypeScript

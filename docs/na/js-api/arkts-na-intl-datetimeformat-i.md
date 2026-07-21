@@ -2,6 +2,7 @@
 
 <!--Device-Intl-interface DateTimeFormat--><!--Device-Intl-interface DateTimeFormat-End-->
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -22,6 +23,7 @@ format(date?: Date | number): string
 | --- | --- |
 | string |  |
 
+<a id="resolvedoptions"></a>
 ## resolvedOptions
 
 ```TypeScript

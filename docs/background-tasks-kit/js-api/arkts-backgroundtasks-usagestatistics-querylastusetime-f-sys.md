@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="querylastusetime"></a>
 ## queryLastUseTime
 
 ```TypeScript
@@ -28,13 +29,13 @@ Queries the last usage timestamp by bundleName and app index.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| appInfo | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Array<number>> | Yes | bundle name and app index info for each application. |
+| appInfo | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Array&lt;number&gt;&gt; | Yes | bundle name and app index info for each application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AppStatsMap> | the promise returned by queryLastUseTime.the {@link AppStatsMap} objects containing the usage information about each application. |
+| Promise&lt;AppStatsMap&gt; | the promise returned by queryLastUseTime.the {@link AppStatsMap} objects containing the usage information about each application. |
 
 **Error codes:**
 

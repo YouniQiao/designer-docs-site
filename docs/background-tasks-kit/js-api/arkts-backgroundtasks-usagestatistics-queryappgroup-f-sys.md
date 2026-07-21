@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="queryappgroup"></a>
 ## queryAppGroup
 
 ```TypeScript
@@ -30,7 +31,7 @@ The priority defined in a priority group restricts the resource usage of an appl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the app group of the calling application.Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the app group of the calling application.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ usageStatistics.queryAppGroup((err: BusinessError, res: number) => {
 ```
 
 
+<a id="queryappgroup-1"></a>
 ## queryAppGroup
 
 ```TypeScript
@@ -89,7 +91,7 @@ The priority defined in a priority group restricts the resource usage of an appl
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | the promise returned by queryAppGroup.Returns the app group of the calling application. |
+| Promise&lt;number&gt; | the promise returned by queryAppGroup.Returns the app group of the calling application. |
 
 **Error codes:**
 
@@ -121,6 +123,7 @@ usageStatistics.queryAppGroup().then((res: number) => {
 ```
 
 
+<a id="queryappgroup-2"></a>
 ## queryAppGroup
 
 ```TypeScript
@@ -146,7 +149,7 @@ The priority defined in a priority group restricts the resource usage of an appl
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | name of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the usage priority group of the calling application. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the usage priority group of the calling application. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -182,6 +185,7 @@ usageStatistics.queryAppGroup(bundleName, (err: BusinessError, res: number) => {
 ```
 
 
+<a id="queryappgroup-3"></a>
 ## queryAppGroup
 
 ```TypeScript
@@ -212,7 +216,7 @@ The priority defined in a priority group restricts the resource usage of an appl
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the calling application. |
+| Promise&lt;number&gt; | Promise used to return the calling application. |
 
 **Error codes:**
 

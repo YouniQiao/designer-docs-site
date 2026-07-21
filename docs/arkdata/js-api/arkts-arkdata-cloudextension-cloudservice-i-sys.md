@@ -16,6 +16,7 @@ Provides APIs for interacting with the cloud sync service.You need to inherit th
 import { cloudExtension } from '@kit.ArkData';
 ```
 
+<a id="connectassetloader"></a>
 ## connectAssetLoader
 
 ```TypeScript
@@ -43,7 +44,7 @@ Connects to an asset loader by obtaining a RemoteObject instance of AssetLoader,
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<rpc.RemoteObject> | Promise used to return the RemoteObject instance of AssetLoader. |
+| Promise&lt;rpc.RemoteObject&gt; | Promise used to return the RemoteObject instance of AssetLoader. |
 
 **Example**
 
@@ -65,6 +66,7 @@ class MyCloudService implements cloudExtension.CloudService {
 
 ```
 
+<a id="connectdb"></a>
 ## connectDB
 
 ```TypeScript
@@ -92,7 +94,7 @@ Connects to a cloud database by obtaining a RemoteObject instance of CloudDB,whi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<rpc.RemoteObject> | Promise used to return the RemoteObject instance of CloudDB. |
+| Promise&lt;rpc.RemoteObject&gt; | Promise used to return the RemoteObject instance of CloudDB. |
 
 **Example**
 
@@ -114,6 +116,7 @@ class MyCloudService implements cloudExtension.CloudService {
 
 ```
 
+<a id="connectsharecenter"></a>
 ## connectShareCenter
 
 ```TypeScript
@@ -141,7 +144,7 @@ Connects to ShareCenter by obtaining a RemoteObject instance of ShareCenter,whic
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<rpc.RemoteObject> | Promise used to return the RemoteObject instance of ShareCenter. |
+| Promise&lt;rpc.RemoteObject&gt; | Promise used to return the RemoteObject instance of ShareCenter. |
 
 **Example**
 
@@ -163,6 +166,7 @@ class MyCloudService implements cloudExtension.CloudService {
 
 ```
 
+<a id="getappbriefinfo"></a>
 ## getAppBriefInfo
 
 ```TypeScript
@@ -183,7 +187,7 @@ Obtains brief application information. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Record<string, AppBriefInfo>> | Promise used to return bundleName and AppBriefInfo,in KV pairs. |
+| Promise&lt;Record&lt;string, AppBriefInfo&gt;&gt; | Promise used to return bundleName and AppBriefInfo,in KV pairs. |
 
 **Example**
 
@@ -208,6 +212,7 @@ class MyCloudService implements cloudExtension.CloudService {
 
 ```
 
+<a id="getappschema"></a>
 ## getAppSchema
 
 ```TypeScript
@@ -234,7 +239,7 @@ Obtains the application database schema information. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<AppSchema>> | Promise used to return the schema information obtained. |
+| Promise&lt;Result&lt;AppSchema&gt;&gt; | Promise used to return the schema information obtained. |
 
 **Example**
 
@@ -260,6 +265,7 @@ class MyCloudService implements cloudExtension.CloudService {
 
 ```
 
+<a id="getserviceinfo"></a>
 ## getServiceInfo
 
 ```TypeScript
@@ -280,7 +286,7 @@ Obtains the server information. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ServiceInfo> | Promise used to return the server information obtained. |
+| Promise&lt;ServiceInfo&gt; | Promise used to return the server information obtained. |
 
 **Example**
 
@@ -308,6 +314,7 @@ class MyCloudService implements cloudExtension.CloudService {
 
 ```
 
+<a id="subscribe"></a>
 ## subscribe
 
 ```TypeScript
@@ -337,14 +344,14 @@ Subscribes to data. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| subInfo | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Array<Database>> | Yes | Data to be subscribed to,in KV pairs of the application bundle name and database information. |
+| subInfo | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Array&lt;Database&gt;&gt; | Yes | Data to be subscribed to,in KV pairs of the application bundle name and database information. |
 | expirationTime | number | Yes | Subscription expiration time, in ms. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<SubscribeInfo>> | Promise used to return the result,including the subscription expiration time and subscription information. |
+| Promise&lt;Result&lt;SubscribeInfo&gt;&gt; | Promise used to return the result,including the subscription expiration time and subscription information. |
 
 **Example**
 
@@ -370,6 +377,7 @@ class MyCloudService implements cloudExtension.CloudService {
 
 ```
 
+<a id="unsubscribe"></a>
 ## unsubscribe
 
 ```TypeScript
@@ -390,13 +398,13 @@ Unsubscribes from data changes in the cloud. This API uses a promise to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| unsubscribeInfo | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, Array<string>> | Yes | Data to be unsubscribed from,in an array of KV pairs consisting of the application bundle name and database information. |
+| unsubscribeInfo | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Array&lt;string&gt;&gt; | Yes | Data to be unsubscribed from,in an array of KV pairs consisting of the application bundle name and database information. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the result. |
+| Promise&lt;number&gt; | Promise used to return the result. |
 
 **Example**
 

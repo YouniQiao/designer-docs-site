@@ -16,6 +16,7 @@ Implements communication between the Worker thread and the host thread. The post
 import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
+<a id="callglobalcallobjectmethod"></a>
 ## callGlobalCallObjectMethod
 
 ```TypeScript
@@ -39,13 +40,13 @@ Calls a method of an object registered with the host thread. This API is called 
 | instanceName | string | Yes | Key used for registration. It is used to search for the object in the host thread. |
 | methodName | string | Yes | Name of the method to call. Note that the method cannot be modified by async or generator,or return results asynchronously by using the asynchronous mechanism at the bottom layer. Otherwise, an exception is thrown. |
 | timeout | number | Yes | Maximum duration that the current synchronous invoking waits, in ms.The value is an integer ranging from 1 to 5000. The value 0 means that the 5000 ms duration is used.The value should be an integer.<br>Unit:ms. |
-| args | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md)[] | Yes | the method argument called on registered globalCallObject. |
+| args | Object[] | Yes | the method argument called on registered globalCallObject. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Return the result of method if it has a return value, otherwise return void. |
+| Object | Return the result of method if it has a return value, otherwise return void. |
 
 **Error codes:**
 
@@ -108,6 +109,7 @@ workerPort.onmessage = (e: MessageEvents): void => {
 
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -152,6 +154,7 @@ workerPort.onmessage = (e: MessageEvents): void => {
 
 ```
 
+<a id="postmessage"></a>
 ## postMessage
 
 ```TypeScript
@@ -172,8 +175,8 @@ Sends a message from the Worker thread to the host thread by transferring object
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| messageObject | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Data to be sent to the host thread. The data object must be sequenceable.For details about the supported parameter types, see Sequenceable Data Types. |
-| transfer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md)[] | Yes | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the host thread. After the transfer, the objects are available only in the host thread. The array cannot be null. |
+| messageObject | Object | Yes | Data to be sent to the host thread. The data object must be sequenceable.For details about the supported parameter types, see Sequenceable Data Types. |
+| transfer | ArrayBuffer[] | Yes | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the host thread. After the transfer, the objects are available only in the host thread. The array cannot be null. |
 
 **Error codes:**
 
@@ -208,6 +211,7 @@ workerPort.onmessage = (e: MessageEvents): void => {
 
 ```
 
+<a id="postmessage-1"></a>
 ## postMessage
 
 ```TypeScript
@@ -228,7 +232,7 @@ Sends a message from the Worker thread to the host thread by transferring object
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| messageObject | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Data to be sent to the host thread. The data object must be sequenceable.For details about the supported parameter types, see Sequenceable Data Types. |
+| messageObject | Object | Yes | Data to be sent to the host thread. The data object must be sequenceable.For details about the supported parameter types, see Sequenceable Data Types. |
 | options | [PostMessageOptions](arkts-arkts-worker-postmessageoptions-i.md) | No | If this parameter is specified, it functions the same as ArrayBuffer[].Specifically, the ownership of the objects in the array is transferred to the host thread and becomes unavailable in the Worker thread.The objects are available only in the host thread. If this parameter is not specified, the default value undefined is used,and information is transferred to the host thread by copying data. |
 
 **Error codes:**
@@ -263,6 +267,7 @@ workerPort.onmessage = (e: MessageEvents): void => {
 
 ```
 
+<a id="postmessageatfront"></a>
 ## postMessageAtFront
 
 ```TypeScript
@@ -285,9 +290,9 @@ Sends a message from the Worker thread to the main thread by transferring object
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| message | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Data to be sent to the main thread. The data object must be sequenceable or sendable.For details about the supported sequenceable types, see Sequenceable Data Types.For details about the supported sendable types, see Sendable Data Types. |
+| message | Object | Yes | Data to be sent to the main thread. The data object must be sequenceable or sendable.For details about the supported sequenceable types, see Sequenceable Data Types.For details about the supported sendable types, see Sendable Data Types. |
 | priority | [Priority](arkts-arkts-taskpool-priority-e.md) | Yes | Priority of the Worker EventHandler. |
-| transfer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md)[] | No | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the main thread. After the transfer, the objects are available only in the main thread.The array cannot be null. |
+| transfer | ArrayBuffer[] | No | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the main thread. After the transfer, the objects are available only in the main thread.The array cannot be null. |
 
 **Error codes:**
 
@@ -296,6 +301,7 @@ Sends a message from the Worker thread to the main thread by transferring object
 | [10200004](../errorcode-utils.md#10200004-worker-instance-is-not-running) | The Worker instance is not running. |
 | [10200006](../errorcode-utils.md#10200006-worker-data-serialization-exception) | An exception occurred during serialization. |
 
+<a id="postmessagewithsharedsendable"></a>
 ## postMessageWithSharedSendable
 
 ```TypeScript
@@ -316,8 +322,8 @@ Sends a message from the Worker thread to the host thread. In the message, a sen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| message | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | Yes | Data to be sent to the host thread. The data object must be sequenceable or sendable.For details about the supported sequenceable types, see Sequenceable Data Types.For details about the supported sendable types, see Sendable Data Types. |
-| transfer | [ArrayBuffer](arkts-arkts-collections-arraybuffer-c.md)[] | No | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the host thread. After the transfer, the objects are available only in the host thread.The array cannot be null. The default value is an empty array. |
+| message | Object | Yes | Data to be sent to the host thread. The data object must be sequenceable or sendable.For details about the supported sequenceable types, see Sequenceable Data Types.For details about the supported sendable types, see Sendable Data Types. |
+| transfer | ArrayBuffer[] | No | ArrayBuffer instance holding an array of objects for which the ownership is transferred to the host thread. After the transfer, the objects are available only in the host thread.The array cannot be null. The default value is an empty array. |
 
 **Error codes:**
 
@@ -379,7 +385,7 @@ onmessage?: (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 
 Called when the Worker thread receives a message sent by the host thread through postMessage.The event handler is executed in the Worker thread. In the callback function, this indicates the caller's ThreadWorkerGlobalScope, and the ev type is MessageEvents, indicating the received message data.
 
-**Type:** (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
+**Type:** (this: ThreadWorkerGlobalScope, ev: MessageEvents) =&gt; void
 
 **Since:** 9
 
@@ -397,7 +403,7 @@ onmessageerror?: (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 
 Called when the Worker thread receives a message that cannot be deserialized. The event handler is executed in the Worker thread. In the callback function, this indicates the caller's ThreadWorkerGlobalScope,and the ev type is MessageEvents, indicating the received message data.
 
-**Type:** (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
+**Type:** (this: ThreadWorkerGlobalScope, ev: MessageEvents) =&gt; void
 
 **Since:** 9
 

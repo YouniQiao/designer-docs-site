@@ -10,6 +10,8 @@ Represents an array for storing button information.
 
 **Since:** 11
 
+**Decorator:** @Observed
+
 <!--Device-unnamed-declare class SegmentButtonItemOptionsArray extends Array<SegmentButtonItemOptions>--><!--Device-unnamed-declare class SegmentButtonItemOptionsArray extends Array<SegmentButtonItemOptions>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -20,6 +22,7 @@ Represents an array for storing button information.
 import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions, SegmentButtonIconTextItem, SegmentButtonItemOptions, SegmentButtonTextItem, CapsuleSegmentButtonOptions, SegmentButtonOptions, CapsuleSegmentButtonConstructionOptions, SegmentButtonItemTuple, SegmentButton, SegmentButtonItemArray, SegmentButtonItemOptionsArray, SegmentButtonIconItem, BorderRadiusMode, TabSegmentButtonConstructionOptions, TabSegmentButtonOptions, ItemRestriction, DimensionNoPercentage } from '@kit.ArkUI';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -44,6 +47,7 @@ Constructor.
 | --- | --- | --- | --- |
 | elements | [SegmentButtonItemTuple](arkts-arkui-segmentbuttonitemtuple-t.md) | Yes | Button information. |
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -74,6 +78,7 @@ Creates a **SegmentButtonItemOptionsArray** object.
 | --- | --- |
 | [SegmentButtonItemOptionsArray](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonitemoptionsarray-c.md) | Created SegmentButtonItemOptionsArray object. |
 
+<a id="pop"></a>
 ## pop
 
 ```TypeScript
@@ -98,6 +103,7 @@ Removes the last element from this array and returns that element.
 | --- | --- |
 | [SegmentButtonItemOptions](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonitemoptions-c.md) | Element removed from the array. |
 
+<a id="push"></a>
 ## push
 
 ```TypeScript
@@ -128,6 +134,7 @@ Adds the specified elements to the end of this array and returns the new length 
 | --- | --- |
 | number | Length of the array after the elements are added. |
 
+<a id="shift"></a>
 ## shift
 
 ```TypeScript
@@ -152,6 +159,7 @@ Removes the first element from this array and returns that element.
 | --- | --- |
 | [SegmentButtonItemOptions](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonitemoptions-c.md) | Element removed from the array. |
 
+<a id="splice"></a>
 ## splice
 
 ```TypeScript
@@ -184,6 +192,7 @@ Changes the contents of this array by removing the specified number of elements 
 | --- | --- |
 | [SegmentButtonItemOptions](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonitemoptions-c.md)[] | An array containing the removed elements. |
 
+<a id="unshift"></a>
 ## unshift
 
 ```TypeScript

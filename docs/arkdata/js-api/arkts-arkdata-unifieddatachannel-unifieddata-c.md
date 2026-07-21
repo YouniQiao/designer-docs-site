@@ -14,6 +14,7 @@ Provides APIs for encapsulating a set of data records.
 import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
+<a id="addrecord"></a>
 ## addRecord
 
 ```TypeScript
@@ -67,6 +68,7 @@ unifiedData.addRecord(link);
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -111,6 +113,7 @@ let unifiedData = new unifiedDataChannel.UnifiedData(text);
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -136,6 +139,7 @@ let unifiedData = new unifiedDataChannel.UnifiedData();
 
 ```
 
+<a id="getrecords"></a>
 ## getRecords
 
 ```TypeScript
@@ -158,7 +162,7 @@ Obtains all data records from this **UnifiedData** object. The data obtained is 
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<UnifiedRecord> | Records in the **UnifiedData** object obtained. |
+| Array&lt;UnifiedRecord&gt; | Records in the **UnifiedData** object obtained. |
 
 **Example**
 
@@ -196,6 +200,7 @@ for (let i = 0; i < records.length; i++) {
 
 ```
 
+<a id="gettypes"></a>
 ## getTypes
 
 ```TypeScript
@@ -218,7 +223,7 @@ Obtains the types of all data records in this **UnifiedData** object.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Array of the [UniformDataType](arkts-arkdata-uniformtypedescriptor-uniformdatatype-e.md) types obtained. |
+| Array&lt;string&gt; | Array of the [UniformDataType](arkts-arkdata-uniformtypedescriptor-uniformdatatype-e.md) types obtained. |
 
 **Example**
 
@@ -245,6 +250,7 @@ let types = unifiedData.getTypes();
 
 ```
 
+<a id="hastype"></a>
 ## hasType
 
 ```TypeScript

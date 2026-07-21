@@ -35,15 +35,15 @@ import { BundleStatusCallback } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [getLauncherAbilityInfos](arkts-ability-innerbundlemanager-getlauncherabilityinfos-f-sys.md#getlauncherabilityinfos-1) | Obtains an array of the launcher ability information based on a given bundle name. This API uses an asynchronous callback to return the result. |
-| [getLauncherAbilityInfos](arkts-ability-innerbundlemanager-getlauncherabilityinfos-f-sys.md#getlauncherabilityinfos-2) | Obtains an array of the launcher ability information based on a given bundle name. This API uses a promise to return the result. |
+| [getLauncherAbilityInfos](arkts-ability-innerbundlemanager-getlauncherabilityinfos-f-sys.md#getlauncherabilityinfos) | Obtains an array of the launcher ability information based on a given bundle name. This API uses an asynchronous callback to return the result. |
+| [getLauncherAbilityInfos](arkts-ability-innerbundlemanager-getlauncherabilityinfos-f-sys.md#getlauncherabilityinfos-1) | Obtains an array of the launcher ability information based on a given bundle name. This API uses a promise to return the result. |
+| [on](arkts-ability-innerbundlemanager-on-f-sys.md#on) | Registers a callback to receive bundle status changes. This API uses an asynchronous callback to return the result. |
 | [on](arkts-ability-innerbundlemanager-on-f-sys.md#on-1) | Registers a callback to receive bundle status changes. This API uses an asynchronous callback to return the result. |
-| [on](arkts-ability-innerbundlemanager-on-f-sys.md#on-2) | Registers a callback to receive bundle status changes. This API uses an asynchronous callback to return the result. |
+| [off](arkts-ability-innerbundlemanager-off-f-sys.md#off) | Unregisters the callback that receives bundle status changes. This API uses an asynchronous callback to return the result. |
 | [off](arkts-ability-innerbundlemanager-off-f-sys.md#off-1) | Unregisters the callback that receives bundle status changes. This API uses an asynchronous callback to return the result. |
-| [off](arkts-ability-innerbundlemanager-off-f-sys.md#off-2) | Unregisters the callback that receives bundle status changes. This API uses an asynchronous callback to return the result. |
-| [getAllLauncherAbilityInfos](arkts-ability-innerbundlemanager-getalllauncherabilityinfos-f-sys.md#getalllauncherabilityinfos-1) | Obtains the information about all launcher abilities. This API uses an asynchronous callback to return the result. |
-| [getAllLauncherAbilityInfos](arkts-ability-innerbundlemanager-getalllauncherabilityinfos-f-sys.md#getalllauncherabilityinfos-2) | Obtains the information about all launcher abilities. This API uses a promise to return the result. |
-| [getShortcutInfos](arkts-ability-innerbundlemanager-getshortcutinfos-f-sys.md#getshortcutinfos-1) | Obtains an array of the shortcut information based on a given bundle name. This API uses an asynchronous callback to return the result. |
-| [getShortcutInfos](arkts-ability-innerbundlemanager-getshortcutinfos-f-sys.md#getshortcutinfos-2) | Obtains an array of the shortcut information based on a given bundle name. This API uses a promise to return the result. |
+| [getAllLauncherAbilityInfos](arkts-ability-innerbundlemanager-getalllauncherabilityinfos-f-sys.md#getalllauncherabilityinfos) | Obtains the information about all launcher abilities. This API uses an asynchronous callback to return the result. |
+| [getAllLauncherAbilityInfos](arkts-ability-innerbundlemanager-getalllauncherabilityinfos-f-sys.md#getalllauncherabilityinfos-1) | Obtains the information about all launcher abilities. This API uses a promise to return the result. |
+| [getShortcutInfos](arkts-ability-innerbundlemanager-getshortcutinfos-f-sys.md#getshortcutinfos) | Obtains an array of the shortcut information based on a given bundle name. This API uses an asynchronous callback to return the result. |
+| [getShortcutInfos](arkts-ability-innerbundlemanager-getshortcutinfos-f-sys.md#getshortcutinfos-1) | Obtains an array of the shortcut information based on a given bundle name. This API uses a promise to return the result. |
 <!--DelEnd-->
 

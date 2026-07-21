@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="getdlppermissioninfo"></a>
 ## getDLPPermissionInfo
 
 ```TypeScript
@@ -26,7 +27,7 @@ When processing files in the DLP sandbox, the system determines the operations t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<DLPPermissionInfo> | Promise used to return the permission information about the DLP file. The operation is successful if no error is reported. |
+| Promise&lt;DLPPermissionInfo&gt; | Promise used to return the permission information about the DLP file. The operation is successful if no error is reported. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ dlpPermission.isInSandbox().then(async (inSandbox) => { // Check whether the app
 ```
 
 
+<a id="getdlppermissioninfo-1"></a>
 ## getDLPPermissionInfo
 
 ```TypeScript
@@ -74,7 +76,7 @@ When processing files in the DLP sandbox, the system determines the operations t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<DLPPermissionInfo> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;DLPPermissionInfo&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

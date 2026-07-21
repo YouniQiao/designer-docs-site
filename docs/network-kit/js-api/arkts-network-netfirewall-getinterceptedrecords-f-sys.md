@@ -6,6 +6,7 @@
 import { netFirewall } from '@kit.NetworkKit';
 ```
 
+<a id="getinterceptedrecords"></a>
 ## getInterceptedRecords
 
 ```TypeScript
@@ -35,7 +36,7 @@ Get intercepted records by userId, and it is necessary to specify the pagination
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<InterceptedRecordPage> | Block Record List. |
+| Promise&lt;InterceptedRecordPage&gt; | Block Record List. |
 
 **Error codes:**
 

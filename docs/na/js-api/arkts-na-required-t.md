@@ -8,6 +8,12 @@ type Required<T> = {
 
 Make all properties in T required
 
+<!--Device-unnamed-type Required<T> = {
+    [P in keyof T]-?: T[P];
+}--><!--Device-unnamed-type Required<T> = {
+    [P in keyof T]-?: T[P];
+}-End-->
+
 **Property type:** {
     [P in keyof T]-?: T[P];
 }

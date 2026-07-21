@@ -14,6 +14,7 @@ Describes the properties and behavior of the arc dot navigation indicator.
 import { ArcSwiperAttribute, ArcSwiper, ArcDirection, ArcSwiperController, ArcDotIndicator } from '@kit.ArkUI';
 ```
 
+<a id="arcdirection"></a>
 ## arcDirection
 
 ```TypeScript
@@ -34,7 +35,7 @@ Sets the direction of the arc navigation indicator.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| direction | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ArcDirection> | Yes | Direction of the arc navigation indicator.<br>Default value:**ArcDirection.SIX_CLOCK_DIRECTION** (6 o'clock direction) |
+| direction | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ArcDirection&gt; | Yes | Direction of the arc navigation indicator.<br>Default value:**ArcDirection.SIX_CLOCK_DIRECTION** (6 o'clock direction) |
 
 **Return value:**
 
@@ -42,6 +43,7 @@ Sets the direction of the arc navigation indicator.
 | --- | --- |
 | [ArcDotIndicator](arkts-arkui-arkui-arcswiper-arcdotindicator-c.md) | Properties and functionality of the arc navigation indicator. |
 
+<a id="backgroundcolor"></a>
 ## backgroundColor
 
 ```TypeScript
@@ -62,7 +64,7 @@ Sets the color of the arc navigation indicator when it is long-pressed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ResourceColor> | Yes | Color of the arc navigation indicator when it is long-pressed.<br>Default value: **'#FF404040'** |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Color of the arc navigation indicator when it is long-pressed.<br>Default value: **'#FF404040'** |
 
 **Return value:**
 
@@ -70,6 +72,7 @@ Sets the color of the arc navigation indicator when it is long-pressed.
 | --- | --- |
 | [ArcDotIndicator](arkts-arkui-arkui-arcswiper-arcdotindicator-c.md) | Properties and functionality of the arc navigation indicator. |
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -86,6 +89,7 @@ A constructor used to create an **ArcDotIndicator** instance.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Circle
 
+<a id="itemcolor"></a>
 ## itemColor
 
 ```TypeScript
@@ -106,7 +110,7 @@ Sets the color of the unselected navigation points in the arc navigation indicat
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ResourceColor> | Yes | Color of the unselected navigation points in the arc navigation indicator.<br>Default value: **'#A9FFFFFF'** |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Color of the unselected navigation points in the arc navigation indicator.<br>Default value: **'#A9FFFFFF'** |
 
 **Return value:**
 
@@ -114,6 +118,7 @@ Sets the color of the unselected navigation points in the arc navigation indicat
 | --- | --- |
 | [ArcDotIndicator](arkts-arkui-arkui-arcswiper-arcdotindicator-c.md) | Properties and functionality of the arc navigation indicator. |
 
+<a id="maskcolor"></a>
 ## maskColor
 
 ```TypeScript
@@ -134,7 +139,7 @@ Sets the mask gradient color of the arc navigation indicator.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<LinearGradient> | Yes | Mask gradient color of the arc navigation indicator.<br>Default start color: **'#00000000'**<br>Default end color: **'#FF000000'** |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;LinearGradient&gt; | Yes | Mask gradient color of the arc navigation indicator.<br>Default start color: **'#00000000'**<br>Default end color: **'#FF000000'** |
 
 **Return value:**
 
@@ -142,6 +147,7 @@ Sets the mask gradient color of the arc navigation indicator.
 | --- | --- |
 | [ArcDotIndicator](arkts-arkui-arkui-arcswiper-arcdotindicator-c.md) | Properties and functionality of the arc navigation indicator. |
 
+<a id="selecteditemcolor"></a>
 ## selectedItemColor
 
 ```TypeScript
@@ -162,7 +168,7 @@ Sets the color of the selected navigation point in the arc navigation indicator.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)<ResourceColor> | Yes | Color of the selected navigation point in the arc navigation indicator.<br>Default value: **#FF5EA1FF** |
+| color | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;ResourceColor&gt; | Yes | Color of the selected navigation point in the arc navigation indicator.<br>Default value: **#FF5EA1FF** |
 
 **Return value:**
 

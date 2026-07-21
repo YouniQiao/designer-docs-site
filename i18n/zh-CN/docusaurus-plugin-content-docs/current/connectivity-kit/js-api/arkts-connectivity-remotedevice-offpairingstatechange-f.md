@@ -6,6 +6,7 @@
 import { remoteDevice } from '@kit.ConnectivityKit';
 ```
 
+<a id="offpairingstatechange"></a>
 ## offPairingStateChange
 
 ```TypeScript
@@ -26,7 +27,7 @@ function offPairingStateChange(callback?: Callback<PairingStateParam>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<PairingStateParam> | 否 | 用于监听配对状态事件的回调函数。 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;PairingStateParam&gt; | 否 | 用于监听配对状态事件的回调函数。 |
 
 **错误码：**
 

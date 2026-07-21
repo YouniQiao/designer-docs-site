@@ -1,5 +1,6 @@
 # createNode
 
+<a id="createnode"></a>
 ## createNode
 
 ```TypeScript
@@ -32,6 +33,7 @@ Creates a FrameNode of the **Text** type.
 | [Text](../../apis-arkdata/arkts-apis/arkts-arkdata-unifieddatachannel-text-c.md) | FrameNode of the **Text** type. |
 
 
+<a id="createnode-1"></a>
 ## createNode
 
 ```TypeScript
@@ -64,6 +66,7 @@ Creates a FrameNode of the **Column** type.
 | [Column](arkts-arkui-typenode-column-t.md) | FrameNode of the **Column** type. |
 
 
+<a id="createnode-2"></a>
 ## createNode
 
 ```TypeScript
@@ -96,6 +99,7 @@ Creates a FrameNode of the Row type.
 | [Row](arkts-arkui-typenode-row-t.md) | FrameNode of the **Row** type. |
 
 
+<a id="createnode-3"></a>
 ## createNode
 
 ```TypeScript
@@ -128,6 +132,7 @@ Creates a FrameNode of the **Stack** type.
 | [Stack](../../apis-arkts/arkts-apis/arkts-arkts-util-stack-stack-c.md) | FrameNode of the **Stack** type. |
 
 
+<a id="createnode-4"></a>
 ## createNode
 
 ```TypeScript
@@ -160,6 +165,7 @@ Creates a FrameNode of the **GridRow** type.
 | [GridRow](arkts-arkui-typenode-gridrow-t.md) | FrameNode of the **GridRow** type. |
 
 
+<a id="createnode-5"></a>
 ## createNode
 
 ```TypeScript
@@ -192,6 +198,7 @@ Creates a FrameNode of the **GridCol** type.
 | [GridCol](arkts-arkui-typenode-gridcol-t.md) | FrameNode of the **GridCol** type. |
 
 
+<a id="createnode-6"></a>
 ## createNode
 
 ```TypeScript
@@ -224,6 +231,7 @@ Creates a FrameNode of the Flex type.
 | [Flex](arkts-arkui-typenode-flex-t.md) | FrameNode of the **Flex** type. |
 
 
+<a id="createnode-7"></a>
 ## createNode
 
 ```TypeScript
@@ -256,6 +264,7 @@ Creates a FrameNode of the **Swiper** type.
 | [Swiper](arkts-arkui-typenode-swiper-t.md) | FrameNode of the **Swiper** type. |
 
 
+<a id="createnode-8"></a>
 ## createNode
 
 ```TypeScript
@@ -288,6 +297,7 @@ Creates a FrameNode of the **Progress** type.
 | [Progress](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-agent-progress-i.md) | FrameNode of the **Progress** type. |
 
 
+<a id="createnode-9"></a>
 ## createNode
 
 ```TypeScript
@@ -320,6 +330,7 @@ Creates a FrameNode of the **Scroll** type.
 | [Scroll](arkts-arkui-typenode-scroll-t.md) | FrameNode of the **Scroll** type. |
 
 
+<a id="createnode-10"></a>
 ## createNode
 
 ```TypeScript
@@ -352,6 +363,7 @@ Creates a FrameNode of the **RelativeContainer** type.
 | [RelativeContainer](arkts-arkui-typenode-relativecontainer-t.md) | FrameNode of the **RelativeContainer** type. |
 
 
+<a id="createnode-11"></a>
 ## createNode
 
 ```TypeScript
@@ -384,6 +396,7 @@ Creates a FrameNode of the **Divider** type.
 | [Divider](arkts-arkui-typenode-divider-t.md) | FrameNode of the **Divider** type. |
 
 
+<a id="createnode-12"></a>
 ## createNode
 
 ```TypeScript
@@ -416,6 +429,7 @@ Creates a FrameNode of the **LoadingProgress** type.
 | [LoadingProgress](arkts-arkui-typenode-loadingprogress-t.md) | FrameNode of the **LoadingProgress** type. |
 
 
+<a id="createnode-13"></a>
 ## createNode
 
 ```TypeScript
@@ -448,6 +462,7 @@ Creates a FrameNode of the **Search** type.
 | [Search](arkts-arkui-typenode-search-t.md) | FrameNode of the **Search** type. |
 
 
+<a id="createnode-14"></a>
 ## createNode
 
 ```TypeScript
@@ -480,6 +495,7 @@ Creates a FrameNode of the **Blank** type.
 | [Blank](arkts-arkui-typenode-blank-t.md) | FrameNode of the **Blank** type. |
 
 
+<a id="createnode-15"></a>
 ## createNode
 
 ```TypeScript
@@ -512,6 +528,7 @@ Creates a FrameNode of the **Image** type.
 | [Image](../../apis-arkgraphics3d/arkts-apis/arkts-arkgraphics3d-sceneresources-image-i.md) | FrameNode of the **Image** type. |
 
 
+<a id="createnode-16"></a>
 ## createNode
 
 ```TypeScript
@@ -544,6 +561,7 @@ Creates a FrameNode of the **List** type.
 | [List](../../apis-arkts/arkts-apis/arkts-arkts-util-list-list-c.md) | FrameNode of the **List** type. |
 
 
+<a id="createnode-17"></a>
 ## createNode
 
 ```TypeScript
@@ -576,6 +594,7 @@ Creates a FrameNode of the **ListItem** type.
 | [ListItem](arkts-arkui-typenode-listitem-t.md) | FrameNode of the **ListItem** type. |
 
 
+<a id="createnode-18"></a>
 ## createNode
 
 ```TypeScript
@@ -608,6 +627,7 @@ Creates a FrameNode of the **TextInput** type.
 | [TextInput](arkts-arkui-typenode-textinput-t.md) | FrameNode of the **TextInput** type. |
 
 
+<a id="createnode-19"></a>
 ## createNode
 
 ```TypeScript
@@ -640,6 +660,7 @@ Creates a FrameNode of the **Button** type.
 | [Button](arkts-arkui-prompt-button-i.md) | FrameNode of the **Button** type. |
 
 
+<a id="createnode-20"></a>
 ## createNode
 
 ```TypeScript
@@ -672,6 +693,7 @@ Creates a FrameNode of the **ListItemGroup** type.
 | [ListItemGroup](arkts-arkui-typenode-listitemgroup-t.md) | FrameNode of the **ListItemGroup** type. |
 
 
+<a id="createnode-21"></a>
 ## createNode
 
 ```TypeScript
@@ -704,6 +726,7 @@ Creates a FrameNode of the **WaterFlow** type.
 | [WaterFlow](arkts-arkui-typenode-waterflow-t.md) | FrameNode of the **WaterFlow** type. |
 
 
+<a id="createnode-22"></a>
 ## createNode
 
 ```TypeScript
@@ -736,6 +759,7 @@ Creates a FrameNode of the **FlowItem** type.
 | [FlowItem](arkts-arkui-typenode-flowitem-t.md) | FrameNode of the **FlowItem** type. |
 
 
+<a id="createnode-23"></a>
 ## createNode
 
 ```TypeScript
@@ -768,6 +792,7 @@ Creates a FrameNode of the **XComponent** type.
 | [XComponent](arkts-arkui-typenode-xcomponent-t.md) | FrameNode of the **XComponent** type. |
 
 
+<a id="createnode-24"></a>
 ## createNode
 
 ```TypeScript
@@ -792,7 +817,7 @@ Creates a FrameNode of the **XComponent** type based on the settings specified i
 | --- | --- | --- | --- |
 | context | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UI context for node creation. |
 | nodeType | 'XComponent' | Yes | Node type. Set to **'XComponent'**. |
-| options | [XComponentOptions](../arkts-components/arkts-arkui-xcomponent-xcomponentoptions-i.md) | Yes | Options of the **XComponent**. |
+| options | [XComponentOptions](../arkts-components/arkts-arkui-xcomponentoptions-i.md) | Yes | Options of the **XComponent**. |
 
 **Return value:**
 
@@ -801,6 +826,7 @@ Creates a FrameNode of the **XComponent** type based on the settings specified i
 | [XComponent](arkts-arkui-typenode-xcomponent-t.md) | FrameNode of the **XComponent** type. |
 
 
+<a id="createnode-25"></a>
 ## createNode
 
 ```TypeScript
@@ -825,7 +851,7 @@ Creates a FrameNode of the **XComponent** type based on the settings specified i
 | --- | --- | --- | --- |
 | context | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UI context for node creation. |
 | nodeType | 'XComponent' | Yes | Node type. Set to **'XComponent'**. |
-| parameters | [NativeXComponentParameters](../arkts-components/arkts-arkui-xcomponent-nativexcomponentparameters-i.md) | Yes | Options of the **XComponent**. |
+| parameters | [NativeXComponentParameters](../arkts-components/arkts-arkui-nativexcomponentparameters-i.md) | Yes | Options of the **XComponent**. |
 
 **Return value:**
 
@@ -834,6 +860,7 @@ Creates a FrameNode of the **XComponent** type based on the settings specified i
 | [XComponent](arkts-arkui-typenode-xcomponent-t.md) | FrameNode of the **XComponent** type. |
 
 
+<a id="createnode-26"></a>
 ## createNode
 
 ```TypeScript
@@ -866,6 +893,7 @@ Creates a FrameNode of the **Checkbox** type.
 | [Checkbox](arkts-arkui-typenode-checkbox-t.md) | FrameNode of the **Checkbox** type. |
 
 
+<a id="createnode-27"></a>
 ## createNode
 
 ```TypeScript
@@ -898,6 +926,7 @@ Creates a FrameNode of the **CheckboxGroup** type.
 | [CheckboxGroup](arkts-arkui-typenode-checkboxgroup-t.md) | FrameNode of the **CheckboxGroup** type. |
 
 
+<a id="createnode-28"></a>
 ## createNode
 
 ```TypeScript
@@ -930,6 +959,7 @@ Creates a FrameNode of the **Radio** type.
 | [Radio](arkts-arkui-typenode-radio-t.md) | FrameNode of the **Radio** type. |
 
 
+<a id="createnode-29"></a>
 ## createNode
 
 ```TypeScript
@@ -962,6 +992,7 @@ Creates a FrameNode of the **Rating** type.
 | [Rating](arkts-arkui-typenode-rating-t.md) | FrameNode of the **Rating** type. |
 
 
+<a id="createnode-30"></a>
 ## createNode
 
 ```TypeScript
@@ -994,6 +1025,7 @@ Creates a FrameNode of the **Select** type.
 | [Select](arkts-arkui-typenode-select-t.md) | FrameNode of the **Select** type. |
 
 
+<a id="createnode-31"></a>
 ## createNode
 
 ```TypeScript
@@ -1026,6 +1058,7 @@ Creates a FrameNode of the **Slider** type.
 | [Slider](arkts-arkui-typenode-slider-t.md) | FrameNode of the **Slider** type. |
 
 
+<a id="createnode-32"></a>
 ## createNode
 
 ```TypeScript
@@ -1050,7 +1083,7 @@ Creates a FrameNode of the **Toggle** type.
 | --- | --- | --- | --- |
 | context | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UI context for node creation. |
 | nodeType | 'Toggle' | Yes | Node type. Set to **'Toggle'**. |
-| options | [ToggleOptions](../arkts-components/arkts-arkui-toggle-toggleoptions-i.md) | No | Options for configuring the node of the Toggle type, including setting the style through the **type** property. |
+| options | [ToggleOptions](../arkts-components/arkts-arkui-toggleoptions-i.md) | No | Options for configuring the node of the Toggle type, including setting the style through the **type** property. |
 
 **Return value:**
 
@@ -1059,6 +1092,7 @@ Creates a FrameNode of the **Toggle** type.
 | [Toggle](arkts-arkui-typenode-toggle-t.md) | FrameNode of the **Toggle** type. |
 
 
+<a id="createnode-33"></a>
 ## createNode
 
 ```TypeScript
@@ -1091,6 +1125,7 @@ Creates a FrameNode of the **Marquee** type.
 | [Marquee](arkts-arkui-typenode-marquee-t.md) | FrameNode of the **Marquee** type. |
 
 
+<a id="createnode-34"></a>
 ## createNode
 
 ```TypeScript
@@ -1123,6 +1158,7 @@ Creates a FrameNode of the **TextArea** type.
 | [TextArea](arkts-arkui-typenode-textarea-t.md) | FrameNode of the **TextArea** type. |
 
 
+<a id="createnode-35"></a>
 ## createNode
 
 ```TypeScript
@@ -1155,6 +1191,7 @@ Creates a FrameNode of the **SymbolGlyph** type.
 | [SymbolGlyph](arkts-arkui-typenode-symbolglyph-t.md) | FrameNode of the **SymbolGlyph** type. |
 
 
+<a id="createnode-36"></a>
 ## createNode
 
 ```TypeScript
@@ -1187,6 +1224,7 @@ Creates a FrameNode of the **QRCode** type.
 | [QRCode](arkts-arkui-typenode-qrcode-t.md) | FrameNode of the **QRCode** type. |
 
 
+<a id="createnode-37"></a>
 ## createNode
 
 ```TypeScript
@@ -1219,6 +1257,7 @@ Creates a FrameNode of the **Badge** type.
 | [Badge](arkts-arkui-typenode-badge-t.md) | FrameNode of the **Badge** type. |
 
 
+<a id="createnode-38"></a>
 ## createNode
 
 ```TypeScript
@@ -1251,6 +1290,7 @@ Creates a FrameNode of the **TextClock** type.
 | [TextClock](arkts-arkui-typenode-textclock-t.md) | FrameNode of the **TextClock** type. |
 
 
+<a id="createnode-39"></a>
 ## createNode
 
 ```TypeScript
@@ -1283,6 +1323,7 @@ Creates a FrameNode of the **TextTimer** type.
 | [TextTimer](arkts-arkui-typenode-texttimer-t.md) | FrameNode of the **TextTimer** type. |
 
 
+<a id="createnode-40"></a>
 ## createNode
 
 ```TypeScript
@@ -1315,6 +1356,7 @@ Creates a FrameNode of the **Grid** type.
 | [Grid](arkts-arkui-typenode-grid-t.md) | FrameNode of the **Grid** type. |
 
 
+<a id="createnode-41"></a>
 ## createNode
 
 ```TypeScript

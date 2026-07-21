@@ -6,6 +6,7 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
+<a id="isembeddedopenallowed"></a>
 ## isEmbeddedOpenAllowed
 
 ```TypeScript
@@ -35,7 +36,7 @@ Checks whether the [EmbeddableUIAbility](arkts-ability-app-ability-embeddableuia
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. **true** if embedded startup is allowed, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. **true** if embedded startup is allowed, **false** otherwise. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { sharing } from '@kit.NetworkKit';
 ```
 
+<a id="getsharableregexes"></a>
 ## getSharableRegexes
 
 ```TypeScript
@@ -29,7 +30,7 @@ Get a list regular expression that defines any interface that can support networ
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [SharingIfaceType](arkts-network-sharing-sharingifacetype-e-sys.md) | Yes | Is the enumeration of shareable interface types. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | the callback of getSharableRegexes. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | the callback of getSharableRegexes. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ sharing.getSharableRegexes(SHARING_WIFI, (error: BusinessError, data: string[]) 
 ```
 
 
+<a id="getsharableregexes-1"></a>
 ## getSharableRegexes
 
 ```TypeScript
@@ -85,7 +87,7 @@ Get a list regular expression that defines any interface that can support networ
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | The promise returned by the function. |
+| Promise&lt;Array&lt;string&gt;&gt; | The promise returned by the function. |
 
 **Error codes:**
 

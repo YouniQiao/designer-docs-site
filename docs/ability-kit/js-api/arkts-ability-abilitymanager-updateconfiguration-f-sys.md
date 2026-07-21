@@ -6,6 +6,7 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
+<a id="updateconfiguration"></a>
 ## updateConfiguration
 
 ```TypeScript
@@ -28,8 +29,8 @@ Updates the configuration. This API uses an asynchronous callback to return the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| config | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-common-configuration-i.md) | Yes | New configuration. You only need to configure the items to be updated. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the API call is successful, **err** is **undefined**. Otherwise, **err** is an error object. You can perform error handling or other custom processing. |
+| config | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-configuration-i.md) | Yes | New configuration. You only need to configure the items to be updated. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the API call is successful, **err** is **undefined**. Otherwise, **err** is an error object. You can perform error handling or other custom processing. |
 
 **Error codes:**
 
@@ -41,6 +42,7 @@ Updates the configuration. This API uses an asynchronous callback to return the 
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
 
+<a id="updateconfiguration-1"></a>
 ## updateConfiguration
 
 ```TypeScript
@@ -63,13 +65,13 @@ Updates the configuration. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| config | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-common-configuration-i.md) | Yes | New configuration. You only need to configure the items to be updated. |
+| config | [Configuration](../../apis-arkui/arkts-components/arkts-arkui-configuration-i.md) | Yes | New configuration. You only need to configure the items to be updated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. You can perform error handling or other custom processing. |
+| Promise&lt;void&gt; | Promise that returns no value. You can perform error handling or other custom processing. |
 
 **Error codes:**
 

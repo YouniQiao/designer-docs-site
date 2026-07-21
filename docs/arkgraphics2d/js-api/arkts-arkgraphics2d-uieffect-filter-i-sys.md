@@ -14,6 +14,7 @@ The Filter for Component.
 import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
+<a id="bezierwarp"></a>
 ## bezierWarp
 
 ```TypeScript
@@ -34,7 +35,7 @@ Sets the deformation effect controlled by bezier curves of the component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| controlPoints | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common2D.Point> | Yes | The bezier control points, 12 points needed. |
+| controlPoints | Array&lt;common2D.Point&gt; | Yes | The bezier control points, 12 points needed. |
 
 **Return value:**
 
@@ -72,6 +73,7 @@ struct BezierWarpExample {
 
 ```
 
+<a id="blurbubblesrise"></a>
 ## blurBubblesRise
 
 ```TypeScript
@@ -102,6 +104,7 @@ Applies blur bubbles rise effect to simulate rising bubbles with blur.This effec
 | --- | --- |
 | [Filter](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-agent-filter-i-sys.md) | - Returns the blur bubbles rise Filter. |
 
+<a id="colorgradient"></a>
 ## colorGradient
 
 ```TypeScript
@@ -125,9 +128,9 @@ Sets the color gradient filter, may blend with alpha mask.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colors | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Color> | Yes |  |
-| positions | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<common2D.Point> | Yes |  |
-| strengths | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes |  |
+| colors | Array&lt;Color&gt; | Yes |  |
+| positions | Array&lt;common2D.Point&gt; | Yes |  |
+| strengths | Array&lt;number&gt; | Yes |  |
 | alphaMask | [Mask](arkts-arkgraphics2d-uieffect-mask-c-sys.md) | No |  |
 
 **Return value:**
@@ -173,6 +176,7 @@ struct ColorGradientExample {
 
 ```
 
+<a id="contentlight"></a>
 ## contentLight
 
 ```TypeScript
@@ -253,6 +257,7 @@ struct Index {
 
 ```
 
+<a id="directionlight"></a>
 ## directionLight
 
 ```TypeScript
@@ -329,6 +334,7 @@ struct Index {
 
 ```
 
+<a id="displacementdistort"></a>
 ## displacementDistort
 
 ```TypeScript
@@ -387,6 +393,7 @@ struct DisplacementDistortExample {
 
 ```
 
+<a id="distort"></a>
 ## distort
 
 ```TypeScript
@@ -428,6 +435,7 @@ filter.distort(-0.5)
 
 ```
 
+<a id="edgelight"></a>
 ## edgeLight
 
 ```TypeScript
@@ -490,6 +498,7 @@ struct EdgeLightExample {
 
 ```
 
+<a id="flyinflyouteffect"></a>
 ## flyInFlyOutEffect
 
 ```TypeScript
@@ -532,6 +541,7 @@ filter.flyInFlyOutEffect(0.5, uiEffect.FlyMode.TOP)
 
 ```
 
+<a id="hdrbrightnessratio"></a>
 ## hdrBrightnessRatio
 
 ```TypeScript
@@ -555,7 +565,7 @@ Applies a high dynamic range (HDR) brightness enhancement filter to the componen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ratio | number | Yes | The brightness multiplier ratio (1.0 = original, &gt;1.0 = brighter). |
+| ratio | number | Yes | The brightness multiplier ratio (1.0 = original, >1.0 = brighter). |
 
 **Return value:**
 
@@ -585,6 +595,7 @@ filter.hdrBrightnessRatio(2.0);
 
 ```
 
+<a id="heatdistortion"></a>
 ## heatDistortion
 
 ```TypeScript
@@ -615,6 +626,7 @@ Applies heat distortion effect to simulate hot air distortion.This effect create
 | --- | --- |
 | [Filter](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-agent-filter-i-sys.md) | - Returns the heat distortion Filter. |
 
+<a id="maskdispersion"></a>
 ## maskDispersion
 
 ```TypeScript
@@ -656,6 +668,7 @@ Sets dispersion effect with mask map.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="masktransition"></a>
 ## maskTransition
 
 ```TypeScript
@@ -738,6 +751,7 @@ struct Index {
 
 ```
 
+<a id="pixelstretch"></a>
 ## pixelStretch
 
 ```TypeScript
@@ -758,7 +772,7 @@ Set the edge pixel stretch effect of the Component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| stretchSizes | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes |  |
+| stretchSizes | Array&lt;number&gt; | Yes |  |
 | tileMode | [TileMode](arkts-arkgraphics2d-effectkit-tilemode-e.md) | Yes |  |
 
 **Return value:**
@@ -774,6 +788,7 @@ filter.pixelStretch([0.2, 0.2, 0.2, 0.2], uiEffect.TileMode.CLAMP)
 
 ```
 
+<a id="radiusgradientblur"></a>
 ## radiusGradientBlur
 
 ```TypeScript
@@ -795,7 +810,7 @@ Adds the content radius gradient blurring effect for the current component.The i
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | radius | number | Yes | the blurring radius.The larger the blurring radius, the more blurring the content, and if the value is 0,the content blurring effect is not blurring. |
-| gradientParam | [LinearGradientBlurOptions](../../apis-arkui/arkts-components/arkts-arkui-common-lineargradientbluroptions-i.md) | Yes | the radius gradient blur options. |
+| gradientParam | [LinearGradientBlurOptions](../../apis-arkui/arkts-components/arkts-arkui-lineargradientbluroptions-i.md) | Yes | the radius gradient blur options. |
 
 **Return value:**
 
@@ -809,6 +824,7 @@ Adds the content radius gradient blurring effect for the current component.The i
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
+<a id="variableradiusblur"></a>
 ## variableRadiusBlur
 
 ```TypeScript
@@ -867,6 +883,7 @@ struct VariableRadiusBlurExample {
 
 ```
 
+<a id="waterripple"></a>
 ## waterRipple
 
 ```TypeScript

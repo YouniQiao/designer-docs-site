@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="opensubscriptionsettingswithresult"></a>
 ## openSubscriptionSettingsWithResult
 
 ```TypeScript
@@ -34,7 +35,7 @@ Opens the settings screen of notification extension subscription in a semi-modal
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UserGrantSetting> | Promise used to return the result of the authorization set by the user. |
+| Promise&lt;UserGrantSetting&gt; | Promise used to return the result of the authorization set by the user. |
 
 **Error codes:**
 

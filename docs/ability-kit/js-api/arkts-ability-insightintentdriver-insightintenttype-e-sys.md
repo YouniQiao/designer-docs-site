@@ -16,7 +16,7 @@ Enumerates the intent types defined by the intent decorator. You can obtain the 
 LINK = '@InsightIntentLink'
 ```
 
-A decorator of the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)type.
+A decorator of the [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)type.
 
 **Since:** 20
 
@@ -34,7 +34,7 @@ A decorator of the [@InsightIntentLink](../../../../reference/apis-ability-kit/j
 PAGE = '@InsightIntentPage'
 ```
 
-A decorator of the [@InsightIntentPage](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage)type.
+A decorator of the [@InsightIntentPage](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage)type.
 
 **Since:** 20
 
@@ -52,7 +52,7 @@ A decorator of the [@InsightIntentPage](../../../../reference/apis-ability-kit/j
 ENTRY = '@InsightIntentEntry'
 ```
 
-A decorator of the [@InsightIntentEntry](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententry)type.
+A decorator of the [@InsightIntentEntry](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententry)type.
 
 **Since:** 20
 
@@ -70,7 +70,7 @@ A decorator of the [@InsightIntentEntry](../../../../reference/apis-ability-kit/
 FUNCTION = '@InsightIntentFunctionMethod'
 ```
 
-A decorator of the [@InsightIntentFunctionMethod](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod)type.
+A decorator of the [@InsightIntentFunctionMethod](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod)type.
 
 **Since:** 20
 
@@ -88,7 +88,7 @@ A decorator of the [@InsightIntentFunctionMethod](../../../../reference/apis-abi
 FORM = '@InsightIntentForm'
 ```
 
-A decorator of the [@InsightIntentForm](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform)type.
+A decorator of the [@InsightIntentForm](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform)type.
 
 **Since:** 20
 

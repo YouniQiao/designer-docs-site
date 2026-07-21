@@ -16,6 +16,7 @@ Before calling any of the following APIs, you must use [getTextLines()](arkts-ar
 import { text } from '@kit.ArkGraphics2D';
 ```
 
+<a id="createtruncatedline"></a>
 ## createTruncatedLine
 
 ```TypeScript
@@ -80,6 +81,7 @@ struct Index {
 
 ```
 
+<a id="enumeratecaretoffsets"></a>
 ## enumerateCaretOffsets
 
 ```TypeScript
@@ -113,6 +115,7 @@ lines[0].enumerateCaretOffsets(callback);
 
 ```
 
+<a id="getalignmentoffset"></a>
 ## getAlignmentOffset
 
 ```TypeScript
@@ -149,6 +152,7 @@ let alignmentOffset = lines[0].getAlignmentOffset(0.5, 500);
 
 ```
 
+<a id="getglyphcount"></a>
 ## getGlyphCount
 
 ```TypeScript
@@ -178,6 +182,7 @@ let glyphCount = lines[0].getGlyphCount();
 
 ```
 
+<a id="getglyphruns"></a>
 ## getGlyphRuns
 
 ```TypeScript
@@ -198,7 +203,7 @@ Obtains the array of glyph runs in the text line.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Run> | Array of the runs obtained. |
+| Array&lt;Run&gt; | Array of the runs obtained. |
 
 **Example**
 
@@ -207,6 +212,7 @@ let runs = lines[0].getGlyphRuns();
 
 ```
 
+<a id="getimagebounds"></a>
 ## getImageBounds
 
 ```TypeScript
@@ -219,12 +225,12 @@ Obtains the image boundaries of this text line. The image boundaries, equivalent
 >  
 > The following figure shows the image boundaries of the string " a b ".  
 >  
-> ![image_ImageBounds.png](../../../../reference/apis-arkgraphics2d/figures/image_ImageBounds.png)  
+> ![image_ImageBounds.png](docroot://reference/apis-arkgraphics2d/figures/image_ImageBounds.png)  
 >  
 > The following figure shows the image boundaries of the strings "j" and "E".  
 >  
 > !  
-> [image_ImageBounds_Character.png](../../../../reference/apis-arkgraphics2d/figures/image_ImageBounds_Character.png)
+> [image_ImageBounds_Character.png](docroot://reference/apis-arkgraphics2d/figures/image_ImageBounds_Character.png)
 
 **Since:** 18
 
@@ -247,6 +253,7 @@ let imageBounds = lines[0].getImageBounds();
 
 ```
 
+<a id="getoffsetforstringindex"></a>
 ## getOffsetForStringIndex
 
 ```TypeScript
@@ -282,6 +289,7 @@ let offset = lines[0].getOffsetForStringIndex(3);
 
 ```
 
+<a id="getstringindexforposition"></a>
 ## getStringIndexForPosition
 
 ```TypeScript
@@ -318,6 +326,7 @@ let index = lines[0].getStringIndexForPosition(point);
 
 ```
 
+<a id="gettextrange"></a>
 ## getTextRange
 
 ```TypeScript
@@ -347,6 +356,7 @@ let textRange = lines[0].getTextRange();
 
 ```
 
+<a id="gettrailingspacewidth"></a>
 ## getTrailingSpaceWidth
 
 ```TypeScript
@@ -376,6 +386,7 @@ let trailingSpaceWidth = lines[0].getTrailingSpaceWidth();
 
 ```
 
+<a id="gettypographicbounds"></a>
 ## getTypographicBounds
 
 ```TypeScript
@@ -388,12 +399,12 @@ Obtains the typographic boundaries of the text line. These boundaries depend on 
 >  
 > The following figure shows the typographic boundaries of the string " a b ".  
 >  
-> ![image_TypographicBounds.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds.png)  
+> ![image_TypographicBounds.png](docroot://reference/apis-arkgraphics2d/figures/image_TypographicBounds.png)  
 >  
 > The following figure shows the typographic boundaries of the strings "j" and "E".  
 >  
 > !  
-> [image_TypographicBounds_Character.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
+> [image_TypographicBounds_Character.png](docroot://reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
 
 **Since:** 18
 
@@ -417,6 +428,7 @@ console.info('textLine ascent:' + bounds.ascent + ', descent:' + bounds.descent 
 
 ```
 
+<a id="paint"></a>
 ## paint
 
 ```TypeScript

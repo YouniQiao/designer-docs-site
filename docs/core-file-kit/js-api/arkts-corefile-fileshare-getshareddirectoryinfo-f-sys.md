@@ -6,6 +6,7 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
+<a id="getshareddirectoryinfo"></a>
 ## getSharedDirectoryInfo
 
 ```TypeScript
@@ -30,7 +31,7 @@ Gets the shared sandbox directories of applications
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<SharedDirectoryInfo>> | Returns the shared sandbox directories on paths. |
+| Promise&lt;Array&lt;SharedDirectoryInfo&gt;&gt; | Returns the shared sandbox directories on paths. |
 
 **Error codes:**
 

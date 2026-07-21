@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="getcolorssync"></a>
 ## getColorsSync
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains the wallpaper colors for the wallpaper of the specified type. Returns rg
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<RgbaColor> | the Array&lt;RgbaColor&gt; returned by the function. |
+| Array&lt;RgbaColor&gt; | the Array<RgbaColor> returned by the function. |
 
 **Error codes:**
 

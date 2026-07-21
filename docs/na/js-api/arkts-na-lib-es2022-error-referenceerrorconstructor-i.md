@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface ReferenceErrorConstructor--><!--Device-unnamed-interface ReferenceErrorConstructor-End-->
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -23,6 +24,7 @@ new (message?: string, options?: ErrorOptions): ReferenceError
 | --- | --- |
 | [ReferenceError](arkts-na-lib-es5-referenceerror-i.md) |  |
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript

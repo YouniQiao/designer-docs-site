@@ -14,6 +14,7 @@ Defines a VPN observer.
 import { vpnExtension } from '@kit.NetworkKit';
 ```
 
+<a id="offauthorizationresult"></a>
 ## offAuthorizationResult
 
 ```TypeScript
@@ -34,7 +35,7 @@ Unregisters the listener for user authorization results.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | No | the callback used to return the result. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | No | the callback used to return the result. |
 
 **Example**
 
@@ -57,6 +58,7 @@ vpnObserver.offAuthorizationResult();
 
 ```
 
+<a id="onauthorizationresult"></a>
 ## onAuthorizationResult
 
 ```TypeScript
@@ -77,7 +79,7 @@ Registers a listener for user authorization results.The authorization results ar
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | the callback used to return the result. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | the callback used to return the result. |
 
 **Example**
 

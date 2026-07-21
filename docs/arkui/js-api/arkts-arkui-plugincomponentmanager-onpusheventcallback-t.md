@@ -21,8 +21,8 @@ Plugin component push event callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | Want | Yes |  |
-| template | PluginComponentTemplate | Yes |  |
-| data | KVObject | Yes |  |
-| extraData | KVObject | Yes |  |
+| source | [Want](arkts-arkui-want-t-sys.md) | Yes |  |
+| template | [PluginComponentTemplate](arkts-arkui-plugincomponent-plugincomponenttemplate-i.md) | Yes |  |
+| data | [KVObject](arkts-arkui-plugincomponentmanager-kvobject-t.md) | Yes |  |
+| extraData | [KVObject](arkts-arkui-plugincomponentmanager-kvobject-t.md) | Yes |  |
 

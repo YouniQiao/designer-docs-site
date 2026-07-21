@@ -14,6 +14,7 @@ Provide a number formatting interface which could format number to StyleString.
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -74,6 +75,7 @@ try {
 
 ```
 
+<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -86,7 +88,7 @@ Creates a **NumberFormat** object for rich text display.
 
 **Deprecated since:** 20
 
-**Substitutes:** constructor(numberFormat:
+**Substitutes:** [constructor(numberFormat:](arkts-localization-i18n-stylednumberformat-c.md#constructor-1)
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
@@ -138,6 +140,7 @@ try {
 
 ```
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -164,7 +167,7 @@ Formats a number as a rich text object.
 
 | Type | Description |
 | --- | --- |
-| [StyledString](../../apis-arkui/arkts-apis/arkts-arkui-styled-string-styledstring-c.md) | Rich text object after formatting. |
+| [StyledString](../../apis-arkui/arkts-apis/arkts-arkui-styledstring-c.md) | Rich text object after formatting. |
 
 **Example**
 

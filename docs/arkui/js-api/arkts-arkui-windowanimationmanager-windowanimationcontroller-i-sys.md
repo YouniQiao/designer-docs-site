@@ -16,6 +16,7 @@ Window animation controller.
 import { windowAnimationManager } from '@kit.ArkUI';
 ```
 
+<a id="onapptransition"></a>
 ## onAppTransition
 
 ```TypeScript
@@ -41,14 +42,15 @@ Called on application transition.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fromWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-remote-window-windowanimationtarget-i-sys.md) | Yes | Window target of the source application. |
-| toWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-remote-window-windowanimationtarget-i-sys.md) | Yes | Window target of the destination application. |
+| fromWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-windowanimationtarget-i-sys.md) | Yes | Window target of the source application. |
+| toWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-windowanimationtarget-i-sys.md) | Yes | Window target of the destination application. |
 | finishCallback | [WindowAnimationFinishedCallback](arkts-arkui-windowanimationmanager-windowanimationfinishedcallback-i-sys.md) | Yes | Animation finished callback. |
 
 **Example**
 
 For details, see the sample code under [windowAnimationManager.setController](#windowanimationmanagersetcontroller).
 
+<a id="onclosewindow"></a>
 ## onCloseWindow
 
 ```TypeScript
@@ -71,13 +73,14 @@ Called on closing a window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| closingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-remote-window-windowanimationtarget-i-sys.md) | Yes |  |
+| closingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-windowanimationtarget-i-sys.md) | Yes |  |
 | finishCallback | [WindowAnimationFinishedCallback](arkts-arkui-windowanimationmanager-windowanimationfinishedcallback-i-sys.md) | Yes | Animation finished callback. |
 
 **Example**
 
 For details, see the sample code under [windowAnimationManager.setController](#windowanimationmanagersetcontroller).
 
+<a id="onminimizewindow"></a>
 ## onMinimizeWindow
 
 ```TypeScript
@@ -103,13 +106,14 @@ Called on minimizing a window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| minimizingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-remote-window-windowanimationtarget-i-sys.md) | Yes | Window target of the minimizing window. |
+| minimizingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-windowanimationtarget-i-sys.md) | Yes | Window target of the minimizing window. |
 | finishCallback | [WindowAnimationFinishedCallback](arkts-arkui-windowanimationmanager-windowanimationfinishedcallback-i-sys.md) | Yes | Animation finished callback. |
 
 **Example**
 
 For details, see the sample code under [windowAnimationManager.setController](#windowanimationmanagersetcontroller).
 
+<a id="onscreenunlock"></a>
 ## onScreenUnlock
 
 ```TypeScript
@@ -134,6 +138,7 @@ Called on unlocking the screen.
 | --- | --- | --- | --- |
 | finishCallback | [WindowAnimationFinishedCallback](arkts-arkui-windowanimationmanager-windowanimationfinishedcallback-i-sys.md) | Yes | Animation finished callback. |
 
+<a id="onstartappfromlauncher"></a>
 ## onStartAppFromLauncher
 
 ```TypeScript
@@ -159,13 +164,14 @@ Called on starting an application form launcher.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| startingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-remote-window-windowanimationtarget-i-sys.md) | Yes | indicates Window target of the starting application. |
+| startingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-windowanimationtarget-i-sys.md) | Yes | indicates Window target of the starting application. |
 | finishCallback | [WindowAnimationFinishedCallback](arkts-arkui-windowanimationmanager-windowanimationfinishedcallback-i-sys.md) | Yes | Animation finished callback. |
 
 **Example**
 
 For details, see the sample code under [windowAnimationManager.setController](#windowanimationmanagersetcontroller).
 
+<a id="onstartappfromother"></a>
 ## onStartAppFromOther
 
 ```TypeScript
@@ -191,13 +197,14 @@ Called on starting an application form other.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| startingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-remote-window-windowanimationtarget-i-sys.md) | Yes | Window target of the starting application. |
+| startingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-windowanimationtarget-i-sys.md) | Yes | Window target of the starting application. |
 | finishCallback | [WindowAnimationFinishedCallback](arkts-arkui-windowanimationmanager-windowanimationfinishedcallback-i-sys.md) | Yes | Animation finished callback. |
 
 **Example**
 
 For details, see the sample code under [windowAnimationManager.setController](#windowanimationmanagersetcontroller).
 
+<a id="onstartappfromrecent"></a>
 ## onStartAppFromRecent
 
 ```TypeScript
@@ -223,13 +230,14 @@ Called on starting an application form recent.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| startingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-remote-window-windowanimationtarget-i-sys.md) | Yes | Window target of the starting application. |
+| startingWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-windowanimationtarget-i-sys.md) | Yes | Window target of the starting application. |
 | finishCallback | [WindowAnimationFinishedCallback](arkts-arkui-windowanimationmanager-windowanimationfinishedcallback-i-sys.md) | Yes | Animation finished callback. |
 
 **Example**
 
 For details, see the sample code under [windowAnimationManager.setController](#windowanimationmanagersetcontroller).
 
+<a id="onwindowanimationtargetsupdate"></a>
 ## onWindowAnimationTargetsUpdate
 
 ```TypeScript
@@ -255,8 +263,8 @@ Called on window animation targets update.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fullScreenWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-remote-window-windowanimationtarget-i-sys.md) | Yes | The fullscreen window target. |
-| floatingWindowTargets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WindowAnimationTarget> | Yes | All the floating window targets. |
+| fullScreenWindowTarget | [WindowAnimationTarget](../arkts-components/arkts-arkui-windowanimationtarget-i-sys.md) | Yes | The fullscreen window target. |
+| floatingWindowTargets | Array&lt;WindowAnimationTarget&gt; | Yes | All the floating window targets. |
 
 **Example**
 

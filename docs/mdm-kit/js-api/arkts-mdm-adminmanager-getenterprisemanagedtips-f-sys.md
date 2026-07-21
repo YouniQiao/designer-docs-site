@@ -6,6 +6,7 @@
 import { adminManager } from '@kit.MDMKit';
 ```
 
+<a id="getenterprisemanagedtips"></a>
 ## getEnterpriseManagedTips
 
 ```TypeScript
@@ -28,7 +29,7 @@ Gets enterprise message tips.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | returns the enterprise message tips. |
+| Promise&lt;string&gt; | returns the enterprise message tips. |
 
 **Error codes:**
 

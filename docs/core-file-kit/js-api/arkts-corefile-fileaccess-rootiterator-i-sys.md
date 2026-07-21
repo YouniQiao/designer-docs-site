@@ -18,6 +18,7 @@ Provides an iterator object of the device root directory.
 import { fileAccess } from '@kit.CoreFileKit';
 ```
 
+<a id="next"></a>
 ## next
 
 ```TypeScript

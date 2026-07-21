@@ -1,6 +1,6 @@
 # Circle properties/events
 
-In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
 **Inheritance/Implementation:** CircleAttribute extends [CommonShapeMethod<CircleAttribute>](CommonShapeMethod<CircleAttribute>)
 
@@ -10,6 +10,7 @@ In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md),
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="fill"></a>
 ## fill
 
 ```TypeScript
@@ -32,8 +33,9 @@ Sets the color of the fill area.An invalid value is handled as the default value
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor \| ColorMetrics | Yes | Color of the fill area<br>Default value : Color.Black. |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) \| ColorMetrics | Yes | Color of the fill area<br>Default value : Color.Black. |
 
+<a id="stroke"></a>
 ## stroke
 
 ```TypeScript
@@ -56,5 +58,5 @@ Sets the stroke color. This attribute can be dynamically set using attributeModi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor \| ColorMetrics | Yes | Stroke color.<br>Default value: Color.Transparent.<br>Invalid values **undefined** and **null** values are treated as the default value, and invalid values **NaN** and **Infinity** are treated as Color.Black. |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) \| ColorMetrics | Yes | Stroke color.<br>Default value: Color.Transparent.<br>Invalid values **undefined** and **null** values are treated as the default value, and invalid values **NaN** and **Infinity** are treated as Color.Black. |
 

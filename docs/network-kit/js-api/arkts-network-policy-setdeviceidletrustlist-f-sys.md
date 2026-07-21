@@ -6,6 +6,7 @@
 import { policy } from '@kit.NetworkKit';
 ```
 
+<a id="setdeviceidletrustlist"></a>
 ## setDeviceIdleTrustlist
 
 ```TypeScript
@@ -28,9 +29,9 @@ Set the list of uids that are allowed to access the Internet in hibernation mode
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uids | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | The specified uids of application. |
+| uids | Array&lt;number&gt; | Yes | The specified uids of application. |
 | isAllowed | boolean | Yes | Whether to allow Uids in the list to access the Internet. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | the callback of setDeviceIdleTrustlist. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | the callback of setDeviceIdleTrustlist. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ policy.setDeviceIdleTrustlist([11111, 22222], true, (error: BusinessError) => {
 ```
 
 
+<a id="setdeviceidletrustlist-1"></a>
 ## setDeviceIdleTrustlist
 
 ```TypeScript
@@ -77,14 +79,14 @@ Set the list of uids that are allowed to access the Internet in hibernation mode
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uids | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Yes | The specified uids of application. |
+| uids | Array&lt;number&gt; | Yes | The specified uids of application. |
 | isAllowed | boolean | Yes | Whether to allow Uids in the list to access the Internet. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

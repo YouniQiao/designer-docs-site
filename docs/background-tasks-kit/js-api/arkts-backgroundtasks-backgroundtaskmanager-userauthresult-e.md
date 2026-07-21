@@ -78,7 +78,7 @@ The authorization is granted always.
 
 When the following common events are received, the related authorization records will be cleared:
 
-[COMMON_EVENT_PACKAGE_ADDED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_package_added),[COMMON_EVENT_PACKAGE_REMOVED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_package_removed),[COMMON_EVENT_BUNDLE_REMOVED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_bundle_removed),[COMMON_EVENT_PACKAGE_FULLY_REMOVED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_package_fully_removed),[COMMON_EVENT_PACKAGE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_package_changed).
+[COMMON_EVENT_PACKAGE_ADDED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_package_added),[COMMON_EVENT_PACKAGE_REMOVED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_package_removed),[COMMON_EVENT_BUNDLE_REMOVED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_bundle_removed),[COMMON_EVENT_PACKAGE_FULLY_REMOVED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_package_fully_removed),[COMMON_EVENT_PACKAGE_CHANGED](docroot://reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_package_changed).
 
 **Since:** 22
 

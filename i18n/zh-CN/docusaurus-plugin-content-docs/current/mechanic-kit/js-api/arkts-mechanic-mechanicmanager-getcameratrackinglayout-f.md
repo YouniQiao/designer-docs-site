@@ -6,13 +6,14 @@
 import { mechanicManager } from '@kit.MechanicKit';
 ```
 
+<a id="getcameratrackinglayout"></a>
 ## getCameraTrackingLayout
 
 ```TypeScript
 function getCameraTrackingLayout(): CameraTrackingLayout
 ```
 
-Obtains the camera tracking layout of this mechanical device.
+获取当前摄像头跟踪布局
 
 **起始版本：** 20
 
@@ -24,7 +25,7 @@ Obtains the camera tracking layout of this mechanical device.
 
 | 类型 | 说明 |
 | --- | --- |
-| [CameraTrackingLayout](arkts-mechanic-mechanicmanager-cameratrackinglayout-e.md) | Camera tracking layout obtained. |
+| [CameraTrackingLayout](arkts-mechanic-mechanicmanager-cameratrackinglayout-e.md) | 返回当前布局 |
 
 **错误码：**
 

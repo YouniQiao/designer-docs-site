@@ -24,9 +24,9 @@ Decorator name.
 
 For a V1 object, the value is the name of the decorator associated with the object.
 
-If the V1 object uses [@Track](../../../../ui/state-management/arkts-track.md), the value is **'@Track'**.
+If the V1 object uses [@Track](docroot://ui/state-management/arkts-track.md), the value is **'@Track'**.
 
-If the V2 object uses [@Trace](../../../../ui/state-management/arkts-new-observedV2-and-trace.md), the value is **'@Trace'**.
+If the V2 object uses [@Trace](docroot://ui/state-management/arkts-new-observedV2-and-trace.md), the value is **'@Trace'**.
 
 If the V2 object uses [makeObserved](arkts-arkui-arkui-statemanagement-uiutils-c.md#makeobserved-1), the value is **'MakeObserved'**.
 
@@ -54,7 +54,7 @@ dependentInfo: Array<ElementInfo>
 
 Information about the component that uses the observable object. If the object is not used in any UI, an empty array is returned.
 
-**Type:** Array<ElementInfo>
+**Type:** Array&lt;ElementInfo&gt;
 
 **Since:** 23
 
@@ -76,7 +76,7 @@ Component ID.
 
 For a V1 object, the component ID is returned.
 
-For the V1 object whose properties are decorated by the [@Track](../../../../ui/state-management/arkts-track.md)decorator or for the V2 object, **-1** is returned instead of the component ID.
+For the V1 object whose properties are decorated by the [@Track](docroot://ui/state-management/arkts-track.md)decorator or for the V2 object, **-1** is returned instead of the component ID.
 
 **Type:** number
 
@@ -100,7 +100,7 @@ Component or object name.
 
 For a V1 object, the component name is returned.
 
-For a V1 object whose properties are decorated by the [@Track](../../../../ui/state-management/arkts-track.md)decorator, the object name is returned.
+For a V1 object whose properties are decorated by the [@Track](docroot://ui/state-management/arkts-track.md)decorator, the object name is returned.
 
 For a V2 object, the object name is returned.
 

@@ -6,6 +6,7 @@
 import { i18n } from '@kit.LocalizationKit';
 ```
 
+<a id="getpreferredlanguagelist"></a>
 ## getPreferredLanguageList
 
 ```TypeScript
@@ -28,5 +29,5 @@ Obtains the list of preferred languages.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | List of preferred languages. |
+| Array&lt;string&gt; | List of preferred languages. |
 

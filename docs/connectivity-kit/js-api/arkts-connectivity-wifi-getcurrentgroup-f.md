@@ -6,6 +6,7 @@
 import { wifi } from '@kit.ConnectivityKit';
 ```
 
+<a id="getcurrentgroup"></a>
 ## getCurrentGroup
 
 ```TypeScript
@@ -30,9 +31,10 @@ Obtains information about the current group.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WifiP2pGroupInfo> | Returns the current group information. |
+| Promise&lt;WifiP2pGroupInfo&gt; | Returns the current group information. |
 
 
+<a id="getcurrentgroup-1"></a>
 ## getCurrentGroup
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtains information about the current group.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<WifiP2pGroupInfo> | Yes |  |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;WifiP2pGroupInfo&gt; | Yes |  |
 
 **Example**
 

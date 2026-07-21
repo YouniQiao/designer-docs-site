@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="querymoduleusagerecords"></a>
 ## queryModuleUsageRecords
 
 ```TypeScript
@@ -29,7 +30,7 @@ Queries recently module usage records with maxNum.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | maxNum | number | Yes | Indicates max record number in result, max value is 1000, default value is 1000. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<HapModuleInfo>> | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the {@link HapModuleInfo} object Array containing the usage data of the modules. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;HapModuleInfo&gt;&gt; | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the {@link HapModuleInfo} object Array containing the usage data of the modules. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ usageStatistics.queryModuleUsageRecords(1000, (err: BusinessError, res: Array<us
 ```
 
 
+<a id="querymoduleusagerecords-1"></a>
 ## queryModuleUsageRecords
 
 ```TypeScript
@@ -95,7 +97,7 @@ Queries recently module usage records with maxNum.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<HapModuleInfo>> | the promise returned by queryModuleUsageRecords.the {@link HapModuleInfo} object Array containing the usage data of the modules. |
+| Promise&lt;Array&lt;HapModuleInfo&gt;&gt; | the promise returned by queryModuleUsageRecords.the {@link HapModuleInfo} object Array containing the usage data of the modules. |
 
 **Error codes:**
 
@@ -131,6 +133,7 @@ usageStatistics.queryModuleUsageRecords(1000).then((res: Array<usageStatistics.H
 ```
 
 
+<a id="querymoduleusagerecords-2"></a>
 ## queryModuleUsageRecords
 
 ```TypeScript
@@ -153,7 +156,7 @@ Queries recently module usage records.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<HapModuleInfo>> | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the {@link HapModuleInfo} object Array containing the usage data of the modules. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;HapModuleInfo&gt;&gt; | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the {@link HapModuleInfo} object Array containing the usage data of the modules. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -191,6 +194,7 @@ usageStatistics.queryModuleUsageRecords((err: BusinessError, res: Array<usageSta
 ```
 
 
+<a id="querymoduleusagerecords-3"></a>
 ## queryModuleUsageRecords
 
 ```TypeScript
@@ -213,7 +217,7 @@ Queries recently module usage records.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<HapModuleInfo>> | the promise returned by queryModuleUsageRecords.the {@link HapModuleInfo} object Array containing the usage data of the modules. |
+| Promise&lt;Array&lt;HapModuleInfo&gt;&gt; | the promise returned by queryModuleUsageRecords.the {@link HapModuleInfo} object Array containing the usage data of the modules. |
 
 **Error codes:**
 

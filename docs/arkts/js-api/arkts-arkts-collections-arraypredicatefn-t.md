@@ -21,13 +21,13 @@ Defines the ArkTS Array reduction function, which is used by the 'some' and 'eve
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ElementType | Yes | Element that is being processed. |
-| index | number | Yes | Index of the element in the ArkTS array. |
-| array | ArrayType | Yes | ArkTS array that is being traversed. |
+| value | ElementType | Yes | Element that is being processed.  |
+| index | number | Yes | Index of the element in the ArkTS array.  |
+| array | ArrayType | Yes | ArkTS array that is being traversed.  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | True if the value meets the predicate, otherwise false. |
+| boolean | True if the value meets the predicate, otherwise false.  |
 

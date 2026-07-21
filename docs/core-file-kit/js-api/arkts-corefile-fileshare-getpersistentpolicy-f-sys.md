@@ -6,6 +6,7 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
+<a id="getpersistentpolicy"></a>
 ## getPersistentPolicy
 
 ```TypeScript
@@ -36,7 +37,7 @@ Get all persistence permissions for the application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PolicyInfo>> | Returns all persistence policy information. |
+| Promise&lt;Array&lt;PolicyInfo&gt;&gt; | Returns all persistence policy information. |
 
 **Error codes:**
 

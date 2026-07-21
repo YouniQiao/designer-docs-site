@@ -1,5 +1,6 @@
 # removeStorageFromCache
 
+<a id="removestoragefromcache"></a>
 ## removeStorageFromCache
 
 ```TypeScript
@@ -21,9 +22,10 @@ Removes the singleton **Storage** instance of a file from the cache. The removed
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | path | string | Yes | Path of the target file. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 
+<a id="removestoragefromcache-1"></a>
 ## removeStorageFromCache
 
 ```TypeScript
@@ -50,5 +52,5 @@ Removes the singleton **Storage** instance of a file from the cache. The removed
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 

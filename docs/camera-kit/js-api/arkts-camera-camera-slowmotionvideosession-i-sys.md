@@ -21,6 +21,7 @@ SlowMotionVideoSession extends Session, Flash, AutoExposure, Focus, Zoom, ColorE
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="isslowmotiondetectionsupported"></a>
 ## isSlowMotionDetectionSupported
 
 ```TypeScript
@@ -30,7 +31,7 @@ isSlowMotionDetectionSupported(): boolean
 Checks whether the device supports slow-motion detection.
 
 > **NOTE**  
-> > This API must be called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig-2) is  
+> > This API must be called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1) is  
 > called.
 
 **Since:** 12
@@ -73,6 +74,7 @@ function isSlowMotionDetectionSupported(slowMotionVideoSession: camera.SlowMotio
 
 ```
 
+<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -111,6 +113,7 @@ function unregisterSessionError(slowMotionVideoSession: camera.SlowMotionVideoSe
 
 ```
 
+<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -132,7 +135,7 @@ Unsubscribes from focus state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | No | Callback used to return the result. This parameter is optional.If this parameter is specified, the subscription to the specified event **on('focusStateChange')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | No | Callback used to return the result. This parameter is optional.If this parameter is specified, the subscription to the specified event **on('focusStateChange')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
@@ -149,6 +152,7 @@ function unregisterFocusStateChange(slowMotionVideoSession: camera.SlowMotionVid
 
 ```
 
+<a id="off-2"></a>
 ## off('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -170,7 +174,7 @@ Unsubscribes from smooth zoom state change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SmoothZoomInfo> | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('smoothZoomInfoAvailable')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SmoothZoomInfo&gt; | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('smoothZoomInfoAvailable')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
@@ -187,6 +191,7 @@ function unregisterSmoothZoomInfo(slowMotionVideoSession: camera.SlowMotionVideo
 
 ```
 
+<a id="off-3"></a>
 ## off('slowMotionStatus')
 
 ```TypeScript
@@ -208,7 +213,7 @@ Unsubscribes from slow-motion status change events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'slowMotionStatus' | Yes | Event type. The value is fixed at **'slowMotionStatus'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SlowMotionStatus> | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('slowMotionStatus')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SlowMotionStatus&gt; | No | Callback used to return the result. This parameter is optional. If this parameter is specified, the subscription to the specified event **on('slowMotionStatus')** with the specified callback is canceled. (The callback object cannot be an anonymous function.) If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
@@ -225,6 +230,7 @@ function unregisterSlowMotionStatus(slowMotionVideoSession: camera.SlowMotionVid
 
 ```
 
+<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -245,7 +251,7 @@ Subscribes to HighResolutionPhotoSession error events. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-2), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
@@ -269,6 +275,7 @@ function registerSessionError(slowMotionVideoSession: camera.SlowMotionVideoSess
 
 ```
 
+<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -290,7 +297,7 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. This event is triggered only when the camera focus state changes in auto focus mode. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | Yes | Callback used to return the focus state change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | Yes | Callback used to return the focus state change. |
 
 **Error codes:**
 
@@ -317,6 +324,7 @@ function registerFocusStateChange(slowMotionVideoSession: camera.SlowMotionVideo
 
 ```
 
+<a id="on-2"></a>
 ## on('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -338,7 +346,7 @@ Subscribes to smooth zoom state change events. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SmoothZoomInfo> | Yes | Callback used to return the smooth zoom state change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SmoothZoomInfo&gt; | Yes | Callback used to return the smooth zoom state change. |
 
 **Error codes:**
 
@@ -365,6 +373,7 @@ function registerSmoothZoomInfo(slowMotionVideoSession: camera.SlowMotionVideoSe
 
 ```
 
+<a id="on-3"></a>
 ## on('slowMotionStatus')
 
 ```TypeScript
@@ -386,7 +395,7 @@ Subscribes to slow-motion status change events. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'slowMotionStatus' | Yes | Event type. The value is fixed at **'slowMotionStatus'**. The event can be listened for when a session is created. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<SlowMotionStatus> | Yes | Callback used to return the slow-motion status change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SlowMotionStatus&gt; | Yes | Callback used to return the slow-motion status change. |
 
 **Error codes:**
 
@@ -413,6 +422,7 @@ function registerSlowMotionStatus(slowMotionVideoSession: camera.SlowMotionVideo
 
 ```
 
+<a id="setslowmotiondetectionarea"></a>
 ## setSlowMotionDetectionArea
 
 ```TypeScript
@@ -425,7 +435,7 @@ Sets an area for slow-motion detection.
 > > Before the setting, call  
 > [isSlowMotionDetectionSupported](arkts-camera-camera-slowmotionvideosession-i-sys.md#isslowmotiondetectionsupported-1) to check  
 > whether the device supports slow-motion detection.  
-> This API must be called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig-2) is  
+> This API must be called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1) is  
 > called.
 
 **Since:** 12

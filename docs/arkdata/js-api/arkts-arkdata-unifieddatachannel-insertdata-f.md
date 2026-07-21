@@ -6,6 +6,7 @@
 import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
+<a id="insertdata"></a>
 ## insertData
 
 ```TypeScript
@@ -30,7 +31,7 @@ Inserts data to the UDMF public data channel. This API uses an asynchronous call
 | --- | --- | --- | --- |
 | options | [Options](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-zlib-options-i.md) | Yes | Configuration for the data insertion operation. The **intention** field is mandatory (the DRAG channel is not supported). If it is not specified, error code 401 will be returned. The settings of other parameters do not affect the use of this API. |
 | data | [UnifiedData](../../apis-arkui/arkts-components/arkts-arkui-unifieddata-t.md) | Yes | Data to insert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the key (unique identifier) of the data inserted. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the key (unique identifier) of the data inserted. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ try {
 ```
 
 
+<a id="insertdata-1"></a>
 ## insertData
 
 ```TypeScript
@@ -100,7 +102,7 @@ Inserts data to the UDMF public data channel. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the key of the data inserted. |
+| Promise&lt;string&gt; | Promise used to return the key of the data inserted. |
 
 **Error codes:**
 

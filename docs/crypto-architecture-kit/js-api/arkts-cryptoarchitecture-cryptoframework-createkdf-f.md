@@ -6,6 +6,7 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="createkdf"></a>
 ## createKdf
 
 ```TypeScript
@@ -28,7 +29,7 @@ Creates a key derivation function instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| algName | string | Yes | Key derivation algorithm (including the hash function for the HMAC). Currently, PBKDF2,HKDF, SCRYPT, and X963KDF are supported. For example, **PBKDF2\|SHA256**, **HKDF\|SHA256**,**SCRYPT**, or **X963KDF\|SHA256**.<br>For details about the supported specifications, see [Key Derivation Function Specifications](../../../../security/CryptoArchitectureKit/crypto-key-derivation-overview.md). |
+| algName | string | Yes | Key derivation algorithm (including the hash function for the HMAC). Currently, PBKDF2,HKDF, SCRYPT, and X963KDF are supported. For example, **PBKDF2\|SHA256**, **HKDF\|SHA256**,**SCRYPT**, or **X963KDF\|SHA256**.<br>For details about the supported specifications, see [Key Derivation Function Specifications](docroot://security/CryptoArchitectureKit/crypto-key-derivation-overview.md). |
 
 **Return value:**
 

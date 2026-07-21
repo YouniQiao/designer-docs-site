@@ -6,6 +6,7 @@
 import { radio } from '@kit.TelephonyKit';
 ```
 
+<a id="setnetworkselectionmode"></a>
 ## setNetworkSelectionMode
 
 ```TypeScript
@@ -29,7 +30,7 @@ Set the current network selection mode.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | [NetworkSelectionModeOptions](arkts-telephony-radio-networkselectionmodeoptions-i-sys.md) | Yes | Indicates the network selection mode option. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of setNetworkSelectionMode. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of setNetworkSelectionMode. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ radio.setNetworkSelectionMode(networkSelectionModeOptions, (err: BusinessError) 
 ```
 
 
+<a id="setnetworkselectionmode-1"></a>
 ## setNetworkSelectionMode
 
 ```TypeScript
@@ -99,7 +101,7 @@ Set the current network selection mode.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the setNetworkSelectionMode. |
+| Promise&lt;void&gt; | The promise returned by the setNetworkSelectionMode. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Provides **SystemPasteboard** APIs.Before calling any **SystemPasteboard** API, 
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
+<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -26,7 +27,7 @@ Clears the system pasteboard. This API uses an asynchronous callback to return t
 
 **Deprecated since:** 9
 
-**Substitutes:** clearData(callback:
+**Substitutes:** [clearData(callback:](arkts-basicservices-pasteboard-systempasteboard-i.md#cleardata-1)
 
 <!--Device-SystemPasteboard-clear(callback: AsyncCallback<void>): void--><!--Device-SystemPasteboard-clear(callback: AsyncCallback<void>): void-End-->
 
@@ -36,7 +37,7 @@ Clears the system pasteboard. This API uses an asynchronous callback to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ systemPasteboard.clear((err, data) => {
 
 ```
 
+<a id="clear-1"></a>
 ## clear
 
 ```TypeScript
@@ -70,7 +72,7 @@ Clears the system pasteboard. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [clearData()](arkts-basicservices-pasteboard-systempasteboard-i.md#cleardata-2)
+**Substitutes:** [clearData()](arkts-basicservices-pasteboard-systempasteboard-i.md#cleardata-1)
 
 <!--Device-SystemPasteboard-clear(): Promise<void>--><!--Device-SystemPasteboard-clear(): Promise<void>-End-->
 
@@ -80,7 +82,7 @@ Clears the system pasteboard. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -96,6 +98,7 @@ systemPasteboard.clear().then((data) => {
 
 ```
 
+<a id="cleardata"></a>
 ## clearData
 
 ```TypeScript
@@ -116,7 +119,7 @@ Clears the system pasteboard. This API uses an asynchronous callback to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -140,6 +143,7 @@ systemPasteboard.clearData((err, data) => {
 
 ```
 
+<a id="cleardata-1"></a>
 ## clearData
 
 ```TypeScript
@@ -160,7 +164,7 @@ Clears the system pasteboard. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -176,6 +180,7 @@ systemPasteboard.clearData().then((data: void) => {
 
 ```
 
+<a id="cleardatasync"></a>
 ## clearDataSync
 
 ```TypeScript
@@ -211,6 +216,7 @@ try {
 
 ```
 
+<a id="detectpatterns"></a>
 ## detectPatterns
 
 ```TypeScript
@@ -229,13 +235,13 @@ Detects [patterns](arkts-basicservices-pasteboard-pattern-e.md) in the system pa
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| patterns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Pattern> | Yes | Pattern to be detected in the system pasteboard. |
+| patterns | Array&lt;Pattern&gt; | Yes | Pattern to be detected in the system pasteboard. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Pattern>> | Promise used to return the detected patterns. |
+| Promise&lt;Array&lt;Pattern&gt;&gt; | Promise used to return the detected patterns. |
 
 **Error codes:**
 
@@ -267,6 +273,7 @@ systemPasteboard.detectPatterns(patterns).then((data: Array<pasteboard.Pattern>)
 
 ```
 
+<a id="getchangecount"></a>
 ## getChangeCount
 
 ```TypeScript
@@ -304,6 +311,7 @@ try {
 
 ```
 
+<a id="getdata"></a>
 ## getData
 
 ```TypeScript
@@ -327,7 +335,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<PasteData> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;PasteData&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -356,6 +364,7 @@ systemPasteboard.getData((err: BusinessError, pasteData: pasteboard.PasteData) =
 
 ```
 
+<a id="getdata-1"></a>
 ## getData
 
 ```TypeScript
@@ -379,7 +388,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PasteData> | Promise used to return the system PasteData. |
+| Promise&lt;PasteData&gt; | Promise used to return the system PasteData. |
 
 **Error codes:**
 
@@ -405,6 +414,7 @@ systemPasteboard.getData().then((pasteData: pasteboard.PasteData) => {
 
 ```
 
+<a id="getdatasource"></a>
 ## getDataSource
 
 ```TypeScript
@@ -446,6 +456,7 @@ try {
 
 ```
 
+<a id="getdatasync"></a>
 ## getDataSync
 
 ```TypeScript
@@ -491,6 +502,7 @@ try {
 
 ```
 
+<a id="getdatawithprogress"></a>
 ## getDataWithProgress
 
 ```TypeScript
@@ -519,7 +531,7 @@ Obtains the PasteData from the system pasteboard with system progress.This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PasteData> | Promise used to return the system PasteData. |
+| Promise&lt;PasteData&gt; | Promise used to return the system PasteData. |
 
 **Error codes:**
 
@@ -576,6 +588,7 @@ struct PasteboardTest {
 
 ```
 
+<a id="getmimetypes"></a>
 ## getMimeTypes
 
 ```TypeScript
@@ -596,7 +609,7 @@ Obtains the types of PasteData in the system pasteboard. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return the types. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return the types. |
 
 **Example**
 
@@ -612,6 +625,7 @@ systemPasteboard.getMimeTypes().then((data: Array<string>) => {
 
 ```
 
+<a id="getpastedata"></a>
 ## getPasteData
 
 ```TypeScript
@@ -624,7 +638,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses an asynchronou
 
 **Deprecated since:** 9
 
-**Substitutes:** getData(callback:
+**Substitutes:** [getData(callback:](arkts-basicservices-pasteboard-systempasteboard-i.md#getdata-1)
 
 <!--Device-SystemPasteboard-getPasteData(callback: AsyncCallback<PasteData>): void--><!--Device-SystemPasteboard-getPasteData(callback: AsyncCallback<PasteData>): void-End-->
 
@@ -634,7 +648,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<PasteData> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;PasteData&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -661,6 +675,7 @@ systemPasteboard.getPasteData((err: BusinessError, pasteData: pasteboard.PasteDa
 
 ```
 
+<a id="getpastedata-1"></a>
 ## getPasteData
 
 ```TypeScript
@@ -673,7 +688,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses a promise to r
 
 **Deprecated since:** 9
 
-**Substitutes:** [getData()](arkts-basicservices-pasteboard-systempasteboard-i.md#getdata-2)
+**Substitutes:** [getData()](arkts-basicservices-pasteboard-systempasteboard-i.md#getdata-1)
 
 <!--Device-SystemPasteboard-getPasteData(): Promise<PasteData>--><!--Device-SystemPasteboard-getPasteData(): Promise<PasteData>-End-->
 
@@ -683,7 +698,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PasteData> | Promise used to return the system PasteData. |
+| Promise&lt;PasteData&gt; | Promise used to return the system PasteData. |
 
 **Example**
 
@@ -702,6 +717,7 @@ systemPasteboard.getPasteData().then((pasteData: pasteboard.PasteData) => {
 
 ```
 
+<a id="getunifieddata"></a>
 ## getUnifiedData
 
 ```TypeScript
@@ -724,7 +740,7 @@ Obtains a **PasteData** object from the system pasteboard. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<unifiedDataChannel.UnifiedData> | Promise used to return the system PasteData. |
+| Promise&lt;unifiedDataChannel.UnifiedData&gt; | Promise used to return the system PasteData. |
 
 **Error codes:**
 
@@ -754,6 +770,7 @@ systemPasteboard.getUnifiedData().then((data) => {
 
 ```
 
+<a id="getunifieddatasync"></a>
 ## getUnifiedDataSync
 
 ```TypeScript
@@ -800,6 +817,7 @@ try {
 
 ```
 
+<a id="hasdata"></a>
 ## hasData
 
 ```TypeScript
@@ -820,7 +838,7 @@ Checks whether the system pasteboard contains data. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. Returns **true** if the system pasteboard contains data; returns **false** otherwise. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. Returns **true** if the system pasteboard contains data; returns **false** otherwise. |
 
 **Error codes:**
 
@@ -844,6 +862,7 @@ systemPasteboard.hasData((err: BusinessError, data: boolean) => {
 
 ```
 
+<a id="hasdata-1"></a>
 ## hasData
 
 ```TypeScript
@@ -864,7 +883,7 @@ Checks whether the system pasteboard contains data. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Callback used to return the result.Returns **true** if the system pasteboard contains data; returns **false** otherwise. |
+| Promise&lt;boolean&gt; | Callback used to return the result.Returns **true** if the system pasteboard contains data; returns **false** otherwise. |
 
 **Example**
 
@@ -880,6 +899,7 @@ systemPasteboard.hasData().then((data: boolean) => {
 
 ```
 
+<a id="hasdatasync"></a>
 ## hasDataSync
 
 ```TypeScript
@@ -921,6 +941,7 @@ try {
 
 ```
 
+<a id="hasdatatype"></a>
 ## hasDataType
 
 ```TypeScript
@@ -969,6 +990,7 @@ try {
 
 ```
 
+<a id="haspastedata"></a>
 ## hasPasteData
 
 ```TypeScript
@@ -981,7 +1003,7 @@ Checks whether the system pasteboard contains data. This API uses an asynchronou
 
 **Deprecated since:** 9
 
-**Substitutes:** hasData(callback:
+**Substitutes:** [hasData(callback:](arkts-basicservices-pasteboard-systempasteboard-i.md#hasdata-1)
 
 <!--Device-SystemPasteboard-hasPasteData(callback: AsyncCallback<boolean>): void--><!--Device-SystemPasteboard-hasPasteData(callback: AsyncCallback<boolean>): void-End-->
 
@@ -991,7 +1013,7 @@ Checks whether the system pasteboard contains data. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. Returns **true** if the system pasteboard contains data; returns **false** otherwise. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. Returns **true** if the system pasteboard contains data; returns **false** otherwise. |
 
 **Error codes:**
 
@@ -1015,6 +1037,7 @@ systemPasteboard.hasPasteData((err: BusinessError, data: boolean) => {
 
 ```
 
+<a id="haspastedata-1"></a>
 ## hasPasteData
 
 ```TypeScript
@@ -1027,7 +1050,7 @@ Checks whether the system pasteboard contains data. This API uses a promise to r
 
 **Deprecated since:** 9
 
-**Substitutes:** [hasData()](arkts-basicservices-pasteboard-systempasteboard-i.md#hasdata-2)
+**Substitutes:** [hasData()](arkts-basicservices-pasteboard-systempasteboard-i.md#hasdata-1)
 
 <!--Device-SystemPasteboard-hasPasteData(): Promise<boolean>--><!--Device-SystemPasteboard-hasPasteData(): Promise<boolean>-End-->
 
@@ -1037,7 +1060,7 @@ Checks whether the system pasteboard contains data. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Callback used to return the result.Returns **true** if the system pasteboard contains data; returns **false** otherwise. |
+| Promise&lt;boolean&gt; | Callback used to return the result.Returns **true** if the system pasteboard contains data; returns **false** otherwise. |
 
 **Example**
 
@@ -1053,6 +1076,7 @@ systemPasteboard.hasPasteData().then((data: boolean) => {
 
 ```
 
+<a id="hasremotedata"></a>
 ## hasRemoteData
 
 ```TypeScript
@@ -1086,6 +1110,7 @@ console.info(`Succeeded in checking the remote data. Result: ${result}`);
 
 ```
 
+<a id="isremotedata"></a>
 ## isRemoteData
 
 ```TypeScript
@@ -1127,6 +1152,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('update')
 
 ```TypeScript
@@ -1146,7 +1172,7 @@ Unsubscribes the content change event of the system pasteboard.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'update' | Yes | Event type. The value **'update'** indicates changes in the pasteboard content. |
-| callback | () => void | No | the callback to remove.If this parameter is not filled in, it indicates that all callbacks for this application will be cleared.Otherwise, it indicates that the specified callback will be cleared. |
+| callback | () =&gt; void | No | the callback to remove.If this parameter is not filled in, it indicates that all callbacks for this application will be cleared.Otherwise, it indicates that the specified callback will be cleared. |
 
 **Error codes:**
 
@@ -1168,6 +1194,7 @@ systemPasteboard.off('update', listener);
 
 ```
 
+<a id="offremoteupdate"></a>
 ## offRemoteUpdate
 
 ```TypeScript
@@ -1199,6 +1226,7 @@ systemPasteboard.offRemoteUpdate(listener);
 
 ```
 
+<a id="on"></a>
 ## on('update')
 
 ```TypeScript
@@ -1218,7 +1246,7 @@ Subscribes the content change event of the system pasteboard.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'update' | Yes | Event type. The value **'update'** indicates changes in the pasteboard content. |
-| callback | () => void | Yes | Callback invoked when the pasteboard content changes. |
+| callback | () =&gt; void | Yes | Callback invoked when the pasteboard content changes. |
 
 **Error codes:**
 
@@ -1240,6 +1268,7 @@ systemPasteboard.on('update', listener);
 
 ```
 
+<a id="onremoteupdate"></a>
 ## onRemoteUpdate
 
 ```TypeScript
@@ -1271,6 +1300,7 @@ systemPasteboard.onRemoteUpdate(listener);
 
 ```
 
+<a id="setdata"></a>
 ## setData
 
 ```TypeScript
@@ -1292,7 +1322,7 @@ Writes a **PasteData** object to the pasteboard. This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | [PasteData](arkts-basicservices-pasteboard-pastedata-i.md) | Yes | **PasteData** object. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1320,6 +1350,7 @@ systemPasteboard.setData(pasteData, (err, data) => {
 
 ```
 
+<a id="setdata-1"></a>
 ## setData
 
 ```TypeScript
@@ -1346,7 +1377,7 @@ Writes a **PasteData** object to the system pasteboard. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1374,6 +1405,7 @@ systemPasteboard.setData(pasteData).then((data: void) => {
 
 ```
 
+<a id="setdatasync"></a>
 ## setDataSync
 
 ```TypeScript
@@ -1417,6 +1449,7 @@ try {
 
 ```
 
+<a id="setpastedata"></a>
 ## setPasteData
 
 ```TypeScript
@@ -1429,7 +1462,7 @@ Writes a **PasteData** object to the system pasteboard. This API uses an asynchr
 
 **Deprecated since:** 9
 
-**Substitutes:** setData(data:
+**Substitutes:** [setData(data:](arkts-basicservices-pasteboard-systempasteboard-i.md#setdata-1)
 
 <!--Device-SystemPasteboard-setPasteData(data: PasteData, callback: AsyncCallback<void>): void--><!--Device-SystemPasteboard-setPasteData(data: PasteData, callback: AsyncCallback<void>): void-End-->
 
@@ -1440,7 +1473,7 @@ Writes a **PasteData** object to the system pasteboard. This API uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | data | [PasteData](arkts-basicservices-pasteboard-pastedata-i.md) | Yes | **PasteData** object. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1463,6 +1496,7 @@ systemPasteboard.setPasteData(pasteData, (err, data) => {
 
 ```
 
+<a id="setpastedata-1"></a>
 ## setPasteData
 
 ```TypeScript
@@ -1475,7 +1509,7 @@ Writes a **PasteData** object to the system pasteboard. This API uses a promise 
 
 **Deprecated since:** 9
 
-**Substitutes:** setData(data:
+**Substitutes:** [setData(data:](arkts-basicservices-pasteboard-systempasteboard-i.md#setdata-1)
 
 <!--Device-SystemPasteboard-setPasteData(data: PasteData): Promise<void>--><!--Device-SystemPasteboard-setPasteData(data: PasteData): Promise<void>-End-->
 
@@ -1491,7 +1525,7 @@ Writes a **PasteData** object to the system pasteboard. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -1508,6 +1542,7 @@ systemPasteboard.setPasteData(pasteData).then((data: void) => {
 
 ```
 
+<a id="setunifieddata"></a>
 ## setUnifiedData
 
 ```TypeScript
@@ -1534,7 +1569,7 @@ Writes a **PasteData** object to the system pasteboard. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1572,6 +1607,7 @@ systemPasteboard.setUnifiedData(data).then((data: void) => {
 
 ```
 
+<a id="setunifieddatasync"></a>
 ## setUnifiedDataSync
 
 ```TypeScript

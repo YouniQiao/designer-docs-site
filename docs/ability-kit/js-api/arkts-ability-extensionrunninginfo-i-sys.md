@@ -1,6 +1,6 @@
 # ExtensionRunningInfo (System API)
 
-The ExtensionRunningInfo module encapsulates ExtensionAbility running information, which can be obtained through [getExtensionRunningInfos](arkts-ability-abilitymanager-getextensionrunninginfos-f-sys.md#getextensionrunninginfos-2).
+The ExtensionRunningInfo module encapsulates ExtensionAbility running information, which can be obtained through [getExtensionRunningInfos](arkts-ability-abilitymanager-getextensionrunninginfos-f-sys.md#getextensionrunninginfos-1).
 
 **Since:** 9
 
@@ -18,7 +18,7 @@ clientPackage: Array<String>
 
 Names of all packages in the process.
 
-**Type:** Array<String>
+**Type:** Array&lt;String&gt;
 
 **Default:** All package names under the current process
 

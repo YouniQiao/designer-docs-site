@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="queryallprinterextensioninfos"></a>
 ## queryAllPrinterExtensionInfos
 
 ```TypeScript
@@ -28,7 +29,7 @@ Obtains the information of all installed printer extensions. This API uses an as
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<Array<PrinterExtensionInfo>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;PrinterExtensionInfo&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ print.queryAllPrinterExtensionInfos((err: BusinessError, extensionInfos: print.P
 ```
 
 
+<a id="queryallprinterextensioninfos-1"></a>
 ## queryAllPrinterExtensionInfos
 
 ```TypeScript
@@ -76,7 +78,7 @@ Obtains the information of all installed printer extensions. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PrinterExtensionInfo>> | Promise used to return the information of all installed printer extensions. |
+| Promise&lt;Array&lt;PrinterExtensionInfo&gt;&gt; | Promise used to return the information of all installed printer extensions. |
 
 **Error codes:**
 

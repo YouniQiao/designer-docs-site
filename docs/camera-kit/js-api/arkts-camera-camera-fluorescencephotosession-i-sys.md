@@ -18,6 +18,7 @@ Fluorescence photo session object.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -47,6 +48,7 @@ Unsubscribes from error events.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -68,7 +70,7 @@ Unsubscribes from focus state change event callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | No | Callback used to get the focus state change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | No | Callback used to get the focus state change. |
 
 **Error codes:**
 
@@ -76,6 +78,7 @@ Unsubscribes from focus state change event callback.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -105,6 +108,7 @@ Subscribes to error events.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
+<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -126,7 +130,7 @@ Subscribes focus state change event callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'focusStateChange' | Yes | Event type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<FocusState> | Yes | Callback used to get the focus state change. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | Yes | Callback used to get the focus state change. |
 
 **Error codes:**
 

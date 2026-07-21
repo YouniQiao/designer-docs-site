@@ -6,6 +6,7 @@
 import { formHost } from '@kit.FormKit';
 ```
 
+<a id="notifyformsenableupdate"></a>
 ## notifyFormsEnableUpdate
 
 ```TypeScript
@@ -40,9 +41,9 @@ Instructs the widgets to enable or disable updates. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of widget IDs. |
+| formIds | Array&lt;string&gt; | Yes | List of widget IDs. |
 | isEnableUpdate | boolean | Yes | Whether the widget can be updated.<br>**true**: The widget can be updated.<br>**false**: The widget cannot be updated. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the notification is sent,**error** is undefined; otherwise, **error** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the notification is sent,**error** is undefined; otherwise, **error** is an error object. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ Instructs the widgets to enable or disable updates. This API uses an asynchronou
 | [16501003](../errorcode-form.md#16501003-widget-not-operatable) | The form cannot be operated by the current application. |
 
 
+<a id="notifyformsenableupdate-1"></a>
 ## notifyFormsEnableUpdate
 
 ```TypeScript
@@ -79,14 +81,14 @@ Instructs the widgets to enable or disable updates. This API uses a promise to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| formIds | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of widget IDs. |
+| formIds | Array&lt;string&gt; | Yes | List of widget IDs. |
 | isEnableUpdate | boolean | Yes | Whether the widget can be updated.<br>**true**: The widget can be updated.<br>**false**: The widget cannot be updated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

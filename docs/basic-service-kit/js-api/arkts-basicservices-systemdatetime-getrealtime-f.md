@@ -6,6 +6,7 @@
 import { systemDateTime } from '@kit.BasicServicesKit';
 ```
 
+<a id="getrealtime"></a>
 ## getRealTime
 
 ```TypeScript
@@ -29,7 +30,7 @@ Obtains the time elapsed since system startup, including the deep sleep time. Th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isNano | boolean | Yes | Whether the time to return is in nanoseconds.<br>- **true**: The result is in nanoseconds.<br>- **false**: The result is in milliseconds. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the time. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the time. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ try {
 ```
 
 
+<a id="getrealtime-1"></a>
 ## getRealTime
 
 ```TypeScript
@@ -80,7 +82,7 @@ Obtains the time elapsed since system startup, including the deep sleep time. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -109,6 +111,7 @@ try {
 ```
 
 
+<a id="getrealtime-2"></a>
 ## getRealTime
 
 ```TypeScript
@@ -137,7 +140,7 @@ Obtains the time elapsed since system startup, including the deep sleep time. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the time elapsed since system startup, including the deep sleep time. |
+| Promise&lt;number&gt; | Promise used to return the time elapsed since system startup, including the deep sleep time. |
 
 **Error codes:**
 

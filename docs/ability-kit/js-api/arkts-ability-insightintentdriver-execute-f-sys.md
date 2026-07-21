@@ -6,6 +6,7 @@
 import { insightIntentDriver } from '@kit.AbilityKit';
 ```
 
+<a id="execute"></a>
 ## execute
 
 ```TypeScript
@@ -31,7 +32,7 @@ Executes a call to an intent. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | param | [ExecuteParam](arkts-ability-insightintentdriver-executeparam-i-sys.md) | Yes | Parameter used to execute the intent call. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<insightIntent.ExecuteResult> | Yes | Callback used to return the intent call execution result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;insightIntent.ExecuteResult&gt; | Yes | Callback used to return the intent call execution result. |
 
 **Error codes:**
 
@@ -93,6 +94,7 @@ Executes a call to an intent. This API uses an asynchronous callback to return t
 ```
 
 
+<a id="execute-1"></a>
 ## execute
 
 ```TypeScript
@@ -123,7 +125,7 @@ Executes a call to an intent. This API uses a promise to return the result.When 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<insightIntent.ExecuteResult> | Promise used to return the intent call execution result. |
+| Promise&lt;insightIntent.ExecuteResult&gt; | Promise used to return the intent call execution result. |
 
 **Error codes:**
 

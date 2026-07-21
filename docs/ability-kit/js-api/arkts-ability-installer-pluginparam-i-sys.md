@@ -24,7 +24,7 @@ parameters?: Array<Parameters>
 
 Extension parameters for installing or uninstalling the plugin. The default value is empty.
 
-**Type:** Array<Parameters>
+**Type:** Array&lt;Parameters&gt;
 
 **Since:** 19
 

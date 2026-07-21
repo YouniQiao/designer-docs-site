@@ -6,6 +6,7 @@
 import { netFirewall } from '@kit.NetworkKit';
 ```
 
+<a id="removenetfirewallrule"></a>
 ## removeNetFirewallRule
 
 ```TypeScript
@@ -33,7 +34,7 @@ Delete a firewall rule by userId and ruleId.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Returns void. |
+| Promise&lt;void&gt; | Returns void. |
 
 **Error codes:**
 

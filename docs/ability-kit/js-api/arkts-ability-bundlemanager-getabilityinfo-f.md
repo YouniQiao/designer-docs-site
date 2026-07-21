@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getabilityinfo"></a>
 ## getAbilityInfo
 
 ```TypeScript
@@ -28,14 +29,14 @@ Obtains the ability information based on the given resource identifier and abili
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | URI of the resource. The value is the same as that of the [uris field under skills in the module.json5 file](../../../../quick-start/module-configuration-file.md#skills). |
+| uri | string | Yes | URI of the resource. The value is the same as that of the [uris field under skills in the module.json5 file](docroot://quick-start/module-configuration-file.md#skills). |
 | abilityFlags | number | Yes | [Ability flag](arkts-ability-bundlemanager-abilityflag-e-sys.md),indicating the ability information to be obtained. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AbilityInfo>> | Promise used to return an array of ability information. |
+| Promise&lt;Array&lt;AbilityInfo&gt;&gt; | Promise used to return an array of ability information. |
 
 **Error codes:**
 

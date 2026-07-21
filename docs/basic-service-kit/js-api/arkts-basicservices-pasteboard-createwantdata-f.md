@@ -6,6 +6,7 @@
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
+<a id="createwantdata"></a>
 ## createWantData
 
 ```TypeScript
@@ -18,7 +19,7 @@ Creates a **PasteData** object of the Want type.
 
 **Deprecated since:** 9
 
-**Substitutes:** createData(mimeType:
+**Substitutes:** [createData(mimeType:](arkts-basicservices-pasteboard-createdata-f.md#createdata-1)
 
 <!--Device-pasteboard-function createWantData(want: Want): PasteData--><!--Device-pasteboard-function createWantData(want: Want): PasteData-End-->
 

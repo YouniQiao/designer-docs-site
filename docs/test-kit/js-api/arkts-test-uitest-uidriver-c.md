@@ -18,6 +18,7 @@ The **UiDriver** class is the main entry to the UiTest framework. It provides AP
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
+<a id="assertcomponentexist"></a>
 ## assertComponentExist
 
 ```TypeScript
@@ -46,7 +47,7 @@ Asserts that a component that matches the given attributes exists on the current
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ async function demo() {
 
 ```
 
+<a id="click"></a>
 ## click
 
 ```TypeScript
@@ -98,7 +100,7 @@ Clicks a specific point of this **UiDriver** object based on the given coordinat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Example**
 
@@ -113,6 +115,7 @@ async function demo() {
 
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -154,6 +157,7 @@ async function demo() {
 
 ```
 
+<a id="delayms"></a>
 ## delayMs
 
 ```TypeScript
@@ -182,7 +186,7 @@ Delays this **UiDriver** object within the specified duration. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Example**
 
@@ -197,6 +201,7 @@ async function demo() {
 
 ```
 
+<a id="doubleclick"></a>
 ## doubleClick
 
 ```TypeScript
@@ -226,7 +231,7 @@ Double-clicks a specific point of this **UiDriver** object based on the given co
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Example**
 
@@ -241,6 +246,7 @@ async function demo() {
 
 ```
 
+<a id="findcomponent"></a>
 ## findComponent
 
 ```TypeScript
@@ -253,7 +259,7 @@ Searches this **UiDriver** object for the target component that matches the give
 
 **Deprecated since:** 9
 
-**Substitutes:** findComponent(on:
+**Substitutes:** [findComponent(on:](arkts-test-uitest-driver-c.md#findcomponent-1)
 
 <!--Device-UiDriver-findComponent(by: By): Promise<UiComponent>--><!--Device-UiDriver-findComponent(by: By): Promise<UiComponent>-End-->
 
@@ -269,7 +275,7 @@ Searches this **UiDriver** object for the target component that matches the give
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<UiComponent> | - Promise used to return the component. |
+| Promise&lt;UiComponent&gt; | - Promise used to return the component. |
 
 **Example**
 
@@ -284,6 +290,7 @@ async function demo() {
 
 ```
 
+<a id="findcomponents"></a>
 ## findComponents
 
 ```TypeScript
@@ -296,7 +303,7 @@ Searches this **UiDriver** object for all components that match the given attrib
 
 **Deprecated since:** 9
 
-**Substitutes:** findComponents(on:
+**Substitutes:** [findComponents(on:](arkts-test-uitest-driver-c.md#findcomponents-1)
 
 <!--Device-UiDriver-findComponents(by: By): Promise<Array<UiComponent>>--><!--Device-UiDriver-findComponents(by: By): Promise<Array<UiComponent>>-End-->
 
@@ -312,7 +319,7 @@ Searches this **UiDriver** object for all components that match the given attrib
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<UiComponent>> | - Promise used to return the list of components. |
+| Promise&lt;Array&lt;UiComponent&gt;&gt; | - Promise used to return the list of components. |
 
 **Example**
 
@@ -327,6 +334,7 @@ async function demo() {
 
 ```
 
+<a id="longclick"></a>
 ## longClick
 
 ```TypeScript
@@ -356,7 +364,7 @@ Long-clicks a specific point of this **UiDriver** object based on the given coor
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Example**
 
@@ -371,6 +379,7 @@ async function demo() {
 
 ```
 
+<a id="pressback"></a>
 ## pressBack
 
 ```TypeScript
@@ -393,7 +402,7 @@ Presses the Back button on this **UiDriver** object. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Example**
 
@@ -408,6 +417,7 @@ async function demo() {
 
 ```
 
+<a id="screencap"></a>
 ## screenCap
 
 ```TypeScript
@@ -420,7 +430,7 @@ Captures the current screen of this **UiDriver** object and saves it as a PNG im
 
 **Deprecated since:** 9
 
-**Substitutes:** screenCap(savePath:
+**Substitutes:** [screenCap(savePath:](arkts-test-uitest-driver-c.md#screencap-1)
 
 <!--Device-UiDriver-screenCap(savePath: string): Promise<boolean>--><!--Device-UiDriver-screenCap(savePath: string): Promise<boolean>-End-->
 
@@ -436,7 +446,7 @@ Captures the current screen of this **UiDriver** object and saves it as a PNG im
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the screenshot operation is successful. The value **true* The value **true** indicates the screenshot operation is successful, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the screenshot operation is successful. The value **true* The value **true** indicates the screenshot operation is successful, and **false** indicates the opposite. |
 
 **Example**
 
@@ -451,6 +461,7 @@ async function demo() {
 
 ```
 
+<a id="swipe"></a>
 ## swipe
 
 ```TypeScript
@@ -482,7 +493,7 @@ Swipes on this **UiDriver** object from the start point to the end point based o
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Example**
 
@@ -497,6 +508,7 @@ async function demo() {
 
 ```
 
+<a id="triggerkey"></a>
 ## triggerKey
 
 ```TypeScript
@@ -509,7 +521,7 @@ Triggers the key of this **UiDriver** object that matches the given key code. Th
 
 **Deprecated since:** 9
 
-**Substitutes:** triggerKey(keyCode:
+**Substitutes:** [triggerKey(keyCode:](arkts-test-uitest-driver-c.md#triggerkey-1)
 
 <!--Device-UiDriver-triggerKey(keyCode: number): Promise<void>--><!--Device-UiDriver-triggerKey(keyCode: number): Promise<void>-End-->
 
@@ -525,7 +537,7 @@ Triggers the key of this **UiDriver** object that matches the given key code. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Example**
 

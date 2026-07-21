@@ -6,6 +6,7 @@
 import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
+<a id="setusergrantedbundlestate"></a>
 ## setUserGrantedBundleState
 
 ```TypeScript
@@ -39,7 +40,7 @@ Sets the enabling state of device notification access for the specified applicat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

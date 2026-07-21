@@ -6,6 +6,7 @@
 import { appDomainVerify } from '@kit.AbilityKit';
 ```
 
+<a id="queryassociatedbundlenames"></a>
 ## queryAssociatedBundleNames
 
 ```TypeScript

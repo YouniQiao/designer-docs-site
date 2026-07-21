@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="getdlpfileaccessrecords"></a>
 ## getDLPFileAccessRecords
 
 ```TypeScript
@@ -26,7 +27,7 @@ This API is used to obtain the list of DLP files that are accessed recently, whi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AccessedDLPFileInfo>> | Promise used to return the list of recently accessed DLP files obtained. |
+| Promise&lt;Array&lt;AccessedDLPFileInfo&gt;&gt; | Promise used to return the list of recently accessed DLP files obtained. |
 
 **Error codes:**
 
@@ -50,6 +51,7 @@ dlpPermission.getDLPFileAccessRecords().then((accessRecords) => { // Obtain the 
 ```
 
 
+<a id="getdlpfileaccessrecords-1"></a>
 ## getDLPFileAccessRecords
 
 ```TypeScript
@@ -70,7 +72,7 @@ This API is used to obtain the list of DLP files that are accessed recently, whi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AccessedDLPFileInfo>> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AccessedDLPFileInfo&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

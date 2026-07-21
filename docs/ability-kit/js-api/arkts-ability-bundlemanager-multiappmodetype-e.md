@@ -14,7 +14,7 @@ Enumerates the types of the multi-app mode.
 UNSPECIFIED = 0
 ```
 
-Unspecified. It is the default value of [multiAppMode](../../../../quick-start/app-configuration-file.md#multiappmode).
+Unspecified. It is the default value of [multiAppMode](docroot://quick-start/app-configuration-file.md#multiappmode).
 
 **Since:** 12
 
@@ -28,7 +28,7 @@ Unspecified. It is the default value of [multiAppMode](../../../../quick-start/a
 MULTI_INSTANCE = 1
 ```
 
-[Multi-instance mode](../../../../quick-start/multiInstance.md). A resident process does not support this value.
+[Multi-instance mode](docroot://quick-start/multiInstance.md). A resident process does not support this value.
 
 **Since:** 12
 
@@ -42,7 +42,7 @@ MULTI_INSTANCE = 1
 APP_CLONE = 2
 ```
 
-[App clone mode](../../../../quick-start/app-clone.md)
+[App clone mode](docroot://quick-start/app-clone.md)
 
 **Since:** 12
 

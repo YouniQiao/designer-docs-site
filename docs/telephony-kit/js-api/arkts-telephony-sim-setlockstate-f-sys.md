@@ -6,6 +6,7 @@
 import { sim } from '@kit.TelephonyKit';
 ```
 
+<a id="setlockstate"></a>
 ## setLockState
 
 ```TypeScript
@@ -30,7 +31,7 @@ Set the lock status of the SIM card in the specified slot.
 | --- | --- | --- | --- |
 | slotId | number | Yes | Indicates the card slot index number,ranging from 0 to the maximum card slot index number supported by the device. |
 | options | [LockInfo](../../apis-arkdata/arkts-apis/arkts-arkdata-cloudextension-lockinfo-i-sys.md) | Yes | Indicates lock information. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<LockStatusResponse> | Yes | Indicates the callback for getting the response to obtain the SIM card lock status of the specified card slot. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;LockStatusResponse&gt; | Yes | Indicates the callback for getting the response to obtain the SIM card lock status of the specified card slot. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ sim.setLockState(0, lockInfo, (err: BusinessError, data: sim.LockStatusResponse)
 ```
 
 
+<a id="setlockstate-1"></a>
 ## setLockState
 
 ```TypeScript
@@ -93,7 +95,7 @@ Set the lock status of the SIM card in the specified slot.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<LockStatusResponse> | Returns the response to obtain the SIM card lock status of the specified card slot. |
+| Promise&lt;LockStatusResponse&gt; | Returns the response to obtain the SIM card lock status of the specified card slot. |
 
 **Error codes:**
 

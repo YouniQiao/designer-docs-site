@@ -6,6 +6,7 @@
 import { inputDevice } from '@kit.InputKit';
 ```
 
+<a id="supportkeys"></a>
 ## supportKeys
 
 ```TypeScript
@@ -25,8 +26,8 @@ Queries whether a specified input device supports specified keys. This API uses 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | number | Yes | Unique ID of the input device. If a physical device is repeatedly reinstalled or restarted, its ID may change. |
-| keys | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<KeyCode> | Yes | Keys to be queried. A maximum of five keys can be specified. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<boolean>> | Yes | Callback function. If the query is successful, **err** is **undefined**, and **data** is the key support query result (elements in the array correspond one-to-one to those in **keys**; **true** indicates supported, and **false** indicates not supported). Otherwise, **err** is an error object. |
+| keys | Array&lt;KeyCode&gt; | Yes | Keys to be queried. A maximum of five keys can be specified. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;boolean&gt;&gt; | Yes | Callback function. If the query is successful, **err** is **undefined**, and **data** is the key support query result (elements in the array correspond one-to-one to those in **keys**; **true** indicates supported, and **false** indicates not supported). Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ struct Index {
 ```
 
 
+<a id="supportkeys-1"></a>
 ## supportKeys
 
 ```TypeScript
@@ -83,13 +85,13 @@ Checks whether the input device supports the specified keys. This API uses a pro
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | number | Yes | Unique ID of the input device. If a physical device is repeatedly reinstalled or restarted, its ID may change. |
-| keys | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<KeyCode> | Yes | Keys to be queried. A maximum of five keys can be specified. |
+| keys | Array&lt;KeyCode&gt; | Yes | Keys to be queried. A maximum of five keys can be specified. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<boolean>> | Promise object, returning the query result. true indicates supported, false indicates not supported. |
+| Promise&lt;Array&lt;boolean&gt;&gt; | Promise object, returning the query result. true indicates supported, false indicates not supported. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Represents the general entry of the white-box performance test framework.It prov
 import { PerfTestStrategy, PerfMetric, PerfTest, PerfMeasureResult } from '@kit.TestKit';
 ```
 
+<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -81,6 +82,7 @@ async function demo() {
 
 ```
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -129,6 +131,7 @@ async function demo() {
 
 ```
 
+<a id="getmeasureresult"></a>
 ## getMeasureResult
 
 ```TypeScript
@@ -191,6 +194,7 @@ async function demo() {
 
 ```
 
+<a id="run"></a>
 ## run
 
 ```TypeScript
@@ -211,7 +215,7 @@ Runs a performance test, iteratively executes test code segments, and collects p
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | @throws { BusinessError } 32400002 - Internal error. Possible causes: 1. IPC connection failed. 2. The object does not exist. |
+| Promise&lt;void&gt; | @throws { BusinessError } 32400002 - Internal error. Possible causes: 1. IPC connection failed. 2. The object does not exist. |
 
 **Error codes:**
 

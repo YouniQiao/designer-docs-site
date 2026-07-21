@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="off"></a>
 ## off('systemBarTintChange')
 
 ```TypeScript
@@ -27,7 +28,7 @@ Unsubscribes from the property change event of the status bar and navigation bar
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'systemBarTintChange' | Yes | Event type. The value is fixed at **'systemBarTintChange'**, indicating the property change event of the status bar and navigation bar. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<SystemBarTintState> | No | Callback used to return the properties of the status bar and navigation bar. If a value is passed in, the corresponding subscription is canceled. If no value is passed in,all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;SystemBarTintState&gt; | No | Callback used to return the properties of the status bar and navigation bar. If a value is passed in, the corresponding subscription is canceled. If no value is passed in,all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ try {
 ```
 
 
+<a id="off-1"></a>
 ## off('gestureNavigationEnabledChange')
 
 ```TypeScript
@@ -76,7 +78,7 @@ Unsubscribes from the gesture navigation status change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'gestureNavigationEnabledChange' | Yes | the event of gesture navigation enabled changes. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | No | Callback function that has been used for the subscription. If a value is |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | No | Callback function that has been used for the subscription. If a value is |
 
 **Error codes:**
 
@@ -105,6 +107,7 @@ try {
 ```
 
 
+<a id="off-2"></a>
 ## off('waterMarkFlagChange')
 
 ```TypeScript
@@ -126,7 +129,7 @@ Unsubscribes from the watermark status change event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'waterMarkFlagChange' | Yes | the event of watermark flag change. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | No | Callback function that has been used for the subscription. If a value is |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | No | Callback function that has been used for the subscription. If a value is |
 
 **Error codes:**
 

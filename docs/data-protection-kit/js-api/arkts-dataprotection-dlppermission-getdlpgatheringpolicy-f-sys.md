@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="getdlpgatheringpolicy"></a>
 ## getDLPGatheringPolicy
 
 ```TypeScript
@@ -30,7 +31,7 @@ This API is used to obtain the DLP sandbox gathering policy of the current syste
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<GatheringPolicyType> | Promise used to return the DLP sandbox gathering policy obtained. |
+| Promise&lt;GatheringPolicyType&gt; | Promise used to return the DLP sandbox gathering policy obtained. |
 
 **Error codes:**
 
@@ -55,6 +56,7 @@ dlpPermission.getDLPGatheringPolicy().then((gatheringPolicy: dlpPermission.Gathe
 ```
 
 
+<a id="getdlpgatheringpolicy-1"></a>
 ## getDLPGatheringPolicy
 
 ```TypeScript
@@ -79,7 +81,7 @@ This API is used to obtain the DLP sandbox gathering policy of the current syste
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<GatheringPolicyType> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;GatheringPolicyType&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

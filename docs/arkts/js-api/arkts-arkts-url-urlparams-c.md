@@ -14,6 +14,7 @@ The URLParams interface defines some practical methods to process URL query stri
 import { url } from '@kit.ArkTS';
 ```
 
+<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -34,7 +35,7 @@ Obtains an ES6 iterator. Each item of the iterator is a JavaScript array, and th
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[string, string]> | Returns an ES6 iterator. Each item of the iterator is a JavaScript Array.The first item of Array is name, and the second item of Array is value. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[string, string]&gt; | Returns an ES6 iterator. Each item of the iterator is a JavaScript Array.The first item of Array is name, and the second item of Array is value. |
 
 **Example**
 
@@ -49,6 +50,7 @@ for (let pair of iter) {
 
 ```
 
+<a id="append"></a>
 ## append
 
 ```TypeScript
@@ -81,6 +83,7 @@ paramsObject.append('fod', '3');
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -101,7 +104,7 @@ A constructor used to create a URLParams instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| init | string[][] \| Record<string, string> \| string \| URLParams | No | Input parameter objects, which include the following:  - string[][]: two-dimensional string array.  - Record&lt;string, string&gt;: list of objects.  - string: string.  - URLParams: object.The default value is null. |
+| init | string[][] \| Record&lt;string, string&gt; \| string \| URLParams | No | Input parameter objects, which include the following:   - string[][]: two-dimensional string array.   - Record<string, string>: list of objects.   - string: string.   - URLParams: object.The default value is null. |
 
 **Example**
 
@@ -121,6 +124,7 @@ let objectParams4 = urlObject1.params;
 
 ```
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -152,6 +156,7 @@ paramsObject.delete('fod');
 
 ```
 
+<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -172,7 +177,7 @@ Obtains an ES6 iterator. Each item of the iterator is a JavaScript array, and th
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<[string, string]> | Returns an iterator for ES6. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;[string, string]&gt; | Returns an iterator for ES6. |
 
 **Example**
 
@@ -187,6 +192,7 @@ for (let item of pair) {
 
 ```
 
+<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -207,8 +213,8 @@ Callback functions are used to traverse key-value pairs on the URLParams instanc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackFn | (value: string, key: string, searchParams: URLParams) => void | Yes | callbackFn value Current traversal key value,key Indicates the name of the key that is traversed. |
-| thisArg | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md) | No | thisArg to be used as this value for when callbackFn is called |
+| callbackFn | (value: string, key: string, searchParams: URLParams) =&gt; void | Yes | callbackFn value Current traversal key value,key Indicates the name of the key that is traversed. |
+| thisArg | Object | No | thisArg to be used as this value for when callbackFn is called |
 
 **Example**
 
@@ -220,6 +226,7 @@ myURLObject.params.forEach((value, name, searchParams) => {
 
 ```
 
+<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -258,6 +265,7 @@ let getObj = paramsObject.get("abc"); // undefined
 
 ```
 
+<a id="getall"></a>
 ## getAll
 
 ```TypeScript
@@ -296,6 +304,7 @@ console.info(params.getAll('fod').toString()) // Output ["1","3"].
 
 ```
 
+<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -333,6 +342,7 @@ let result = paramsObject.has('bard');
 
 ```
 
+<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -353,7 +363,7 @@ Obtains an ES6 iterator that contains the keys of all the key-value pairs.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<string> | Returns an ES6 Iterator over the names of each name-value pair. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;string&gt; | Returns an ES6 Iterator over the names of each name-value pair. |
 
 **Example**
 
@@ -368,6 +378,7 @@ for (let key of keys) {
 
 ```
 
+<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -400,6 +411,7 @@ paramsObject.set('baz', '3'); // Add a third parameter.
 
 ```
 
+<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -425,6 +437,7 @@ console.info(paramsObject.toString()); // Display the sorted query string // Out
 
 ```
 
+<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -457,6 +470,7 @@ console.info(params.toString()); // Output 'fod=1&bard=2&fod=3'
 
 ```
 
+<a id="values"></a>
 ## values
 
 ```TypeScript
@@ -477,7 +491,7 @@ Obtains an ES6 iterator that contains the values of all the key-value pairs.
 
 | Type | Description |
 | --- | --- |
-| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)<string> | Returns an ES6 Iterator over the values of each name-value pair. |
+| [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;string&gt; | Returns an ES6 Iterator over the values of each name-value pair. |
 
 **Example**
 

@@ -6,6 +6,7 @@
 import { usbManager } from '@kit.BasicServicesKit';
 ```
 
+<a id="getrawdescriptor"></a>
 ## getRawDescriptor
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains a raw USB descriptor. If the USB service is abnormal, **undefined** may 
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Returns a raw USB descriptor if the operation is successful; returns **undefined** otherwise. |
+| Uint8Array | Returns a raw USB descriptor if the operation is successful; returns **undefined** otherwise. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { imageGeneration } from '@kit.ArkUI';
 ```
 
+<a id="showgeneratordialog"></a>
 ## showGeneratorDialog
 
 ```TypeScript
@@ -35,5 +36,5 @@ Open the AI image generation task popup and perform AI image generation operatio
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<GeneratorResult>> | - Returns the result of generated image. |
+| Promise&lt;Array&lt;GeneratorResult&gt;&gt; | - Returns the result of generated image. |
 

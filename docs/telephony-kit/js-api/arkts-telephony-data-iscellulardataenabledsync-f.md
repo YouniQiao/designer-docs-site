@@ -6,6 +6,7 @@
 import { data } from '@kit.TelephonyKit';
 ```
 
+<a id="iscellulardataenabledsync"></a>
 ## isCellularDataEnabledSync
 
 ```TypeScript

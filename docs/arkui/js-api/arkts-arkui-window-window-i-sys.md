@@ -16,6 +16,7 @@ In the following API examples, you must use [getLastWindow()](arkts-arkui-window
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="attachlayouttoparentwindow"></a>
 ## attachLayoutToParentWindow
 
 ```TypeScript
@@ -35,7 +36,7 @@ Attaches a first-level child window to the main window to maintain a fixed relat
 > [detachLayoutToParentWindow()](#detachlayouttoparentwindow24) API is called for detaching.  
 >  
 > -After the child window calls this API, calling APIs such as  
-> [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-2),  
+> [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-1),  
 > [maximize()](arkts-arkui-window-window-i.md#maximize-1), and  
 > [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-window-i.md#setfollowparentwindowlayoutenabled-1)  
 > to change the window position, or dragging and moving or dragging and resizing the child window through mouse  
@@ -62,7 +63,7 @@ Attaches a first-level child window to the main window to maintain a fixed relat
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -124,6 +125,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="binddialogtarget"></a>
 ## bindDialogTarget
 
 ```TypeScript
@@ -145,13 +147,13 @@ Binds the modal window to the target window. After the binding is successful, th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | token | rpc.RemoteObject | Yes | Token of the target window. |
-| deathCallback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback used to listen for modal window destruction events. |
+| deathCallback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback used to listen for modal window destruction events. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -215,6 +217,7 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 
 ```
 
+<a id="binddialogtarget-1"></a>
 ## bindDialogTarget
 
 ```TypeScript
@@ -236,8 +239,8 @@ Binds the modal window to the target window. After the binding is successful, th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | token | rpc.RemoteObject | Yes | Token of the target window. |
-| deathCallback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback used to listen for modal window destruction events. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| deathCallback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback used to listen for modal window destruction events. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -303,6 +306,7 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 
 ```
 
+<a id="binddialogtarget-2"></a>
 ## bindDialogTarget
 
 ```TypeScript
@@ -324,13 +328,13 @@ Binds the modal window to the target window. After the binding is successful, th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | requestInfo | dialogRequest.RequestInfo | Yes | **RequestInfo** of the target window. |
-| deathCallback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback used to listen for modal window destruction events. |
+| deathCallback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback used to listen for modal window destruction events. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -382,6 +386,7 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 
 ```
 
+<a id="binddialogtarget-3"></a>
 ## bindDialogTarget
 
 ```TypeScript
@@ -403,8 +408,8 @@ Binds the modal window to the target window. After the binding is successful, th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | requestInfo | dialogRequest.RequestInfo | Yes | **RequestInfo** of the target window. |
-| deathCallback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<void> | Yes | Callback used to listen for modal window destruction events. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| deathCallback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Callback used to listen for modal window destruction events. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -458,6 +463,7 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 
 ```
 
+<a id="detachlayouttoparentwindow"></a>
 ## detachLayoutToParentWindow
 
 ```TypeScript
@@ -474,7 +480,7 @@ Detach a first-level child window from the main window to cancel a fixed relativ
 > You can drag the child window to change its size and position.  
 >  
 > - After the detaching, calling APIs such as  
-> [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-2) or  
+> [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-1) or  
 > [maximize()](arkts-arkui-window-window-i.md#maximize-1), and  
 > [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-window-i.md#setfollowparentwindowlayoutenabled-1)  
 > to change the window position, or dragging and moving or dragging and resizing the child window through mouse  
@@ -494,7 +500,7 @@ Detach a first-level child window from the main window to cancel a fixed relativ
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -541,6 +547,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="enabledrag"></a>
 ## enableDrag
 
 ```TypeScript
@@ -569,7 +576,7 @@ After window dragging is enabled, the window can be resized using the mouse or t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -581,13 +588,14 @@ After window dragging is enabled, the window can be resized using the mouse or t
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="getrotationlocked"></a>
 ## getRotationLocked
 
 ```TypeScript
 getRotationLocked(): boolean
 ```
 
-Checks whether the [system window](../../../../windowmanager/window-terminology.md#system-window) has its screen rotation locked. If this API is called by a non-system window, error code 1300029 is thrown.
+Checks whether the [system window](docroot://windowmanager/window-terminology.md#system-window) has its screen rotation locked. If this API is called by a non-system window, error code 1300029 is thrown.
 
 **Since:** 22
 
@@ -625,6 +633,7 @@ try {
 
 ```
 
+<a id="gettransitioncontroller"></a>
 ## getTransitionController
 
 ```TypeScript
@@ -662,6 +671,7 @@ let controller = windowClass.getTransitionController(); // Obtain the transition
 
 ```
 
+<a id="hide"></a>
 ## hide
 
 ```TypeScript
@@ -682,7 +692,7 @@ Hides this window. This API uses an asynchronous callback to return the result. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -707,6 +717,7 @@ windowClass.hide((err: BusinessError) => {
 
 ```
 
+<a id="hide-1"></a>
 ## hide
 
 ```TypeScript
@@ -727,7 +738,7 @@ Hides this window. This API uses a promise to return the result. This API takes 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -750,6 +761,7 @@ promise.then(() => {
 
 ```
 
+<a id="hidenonsystemfloatingwindows"></a>
 ## hideNonSystemFloatingWindows
 
 ```TypeScript
@@ -773,7 +785,7 @@ A non-system floating window is a floating window created by a non-system applic
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | shouldHide | boolean | Yes | Whether to hide non-system floating windows. **true** to hide, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -832,6 +844,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="hidenonsystemfloatingwindows-1"></a>
 ## hideNonSystemFloatingWindows
 
 ```TypeScript
@@ -860,7 +873,7 @@ A non-system floating window is a floating window created by a non-system applic
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -919,6 +932,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="hidewithanimation"></a>
 ## hideWithAnimation
 
 ```TypeScript
@@ -939,7 +953,7 @@ Hides this window and plays an animation during the process. This API uses an as
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -966,6 +980,7 @@ windowClass.hideWithAnimation((err: BusinessError) => {
 
 ```
 
+<a id="hidewithanimation-1"></a>
 ## hideWithAnimation
 
 ```TypeScript
@@ -986,7 +1001,7 @@ Hides this window and plays an animation during the process. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1011,6 +1026,7 @@ promise.then(() => {
 
 ```
 
+<a id="ismainwindowfullscreenacrossdisplays"></a>
 ## isMainWindowFullScreenAcrossDisplays
 
 ```TypeScript
@@ -1031,7 +1047,7 @@ Checks whether the main window is in full-screen mode across multiple displays. 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result indicating whether the main window is in full-screen mode across multiple displays. **true** if yes, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result indicating whether the main window is in full-screen mode across multiple displays. **true** if yes, **false** otherwise. |
 
 **Error codes:**
 
@@ -1061,6 +1077,7 @@ try {
 
 ```
 
+<a id="off"></a>
 ## off('mainWindowFullScreenAcrossDisplaysChanged')
 
 ```TypeScript
@@ -1082,7 +1099,7 @@ Unsubscribes from events indicating whether the main window is in full-screen mo
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'mainWindowFullScreenAcrossDisplaysChanged' | Yes | Event type. The value is fixed at **'mainWindowFullScreenAcrossDisplaysChanged'**, indicating changes in whether the main window is in full-screen mode across multiple displays. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | No | Callback used to return the result indicating whether the main window is in full-screen mode across multiple displays. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | No | Callback used to return the result indicating whether the main window is in full-screen mode across multiple displays. If a value is passed in, the corresponding subscription is canceled. If no value is passed in, all subscriptions to the specified event are canceled. |
 
 **Error codes:**
 
@@ -1113,6 +1130,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('mainWindowFullScreenAcrossDisplaysChanged')
 
 ```TypeScript
@@ -1134,7 +1152,7 @@ Subscribes to events indicating whether the main window is in full-screen mode a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'mainWindowFullScreenAcrossDisplaysChanged' | Yes | Event type. The value is fixed at **'mainWindowFullScreenAcrossDisplaysChanged'**, indicating changes in whether the main window is in full-screen mode across multiple displays. |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<boolean> | Yes | Callback used to return the result indicating whether the main window is in full-screen mode across multiple displays. **true** if yes, **false** otherwise. |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result indicating whether the main window is in full-screen mode across multiple displays. **true** if yes, **false** otherwise. |
 
 **Error codes:**
 
@@ -1160,13 +1178,14 @@ try {
 
 ```
 
+<a id="opacity"></a>
 ## opacity
 
 ```TypeScript
 opacity(opacity: number): void
 ```
 
-Sets the opacity for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
+Sets the opacity for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](docroot://windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
 
 **Since:** 9
 
@@ -1202,6 +1221,7 @@ try {
 
 ```
 
+<a id="raiseabovetarget"></a>
 ## raiseAboveTarget
 
 ```TypeScript
@@ -1225,7 +1245,7 @@ Before calling this API, ensure that the child window to raise and the target ch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | windowId | number | Yes | ID of the target child window, which is the value of **properties.id** in [properties](arkts-arkui-window-windowproperties-i.md) obtained through [getWindowProperties](arkts-arkui-window-window-i.md#getwindowproperties-1). |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1282,6 +1302,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="raiseabovetarget-1"></a>
 ## raiseAboveTarget
 
 ```TypeScript
@@ -1310,7 +1331,7 @@ Before calling this API, ensure that the child window to raise and the target ch
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1365,6 +1386,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="raisemainwindowabovetarget"></a>
 ## raiseMainWindowAboveTarget
 
 ```TypeScript
@@ -1398,7 +1420,7 @@ You need to pass the ID of the target main window. Both the calling window and t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1536,6 +1558,7 @@ export default class RaiseMainWindowAbility extends UIAbility {
 
 ```
 
+<a id="raisetoapptop"></a>
 ## raiseToAppTop
 
 ```TypeScript
@@ -1558,7 +1581,7 @@ Before calling this API, ensure that the child window has been created and [show
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -1604,13 +1627,14 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="requestfocus"></a>
 ## requestFocus
 
 ```TypeScript
 requestFocus(isFocused: boolean): Promise<void>
 ```
 
-Allows this window to proactively request to gain or lose focus. This API uses a promise to return the result. A value is returned as long as the API is successfully called. The return value does not indicate that the window has gained or lost focus. You can use [on('windowEvent')](arkts-arkui-window-window-i.md#on-22)to listen for the focus status of the window.
+Allows this window to proactively request to gain or lose focus. This API uses a promise to return the result. A value is returned as long as the API is successfully called. The return value does not indicate that the window has gained or lost focus. You can use [on('windowEvent')](@ohos.window:window.Window.on(type: 'windowEvent', callback: Callback<WindowEventType>))to listen for the focus status of the window.
 
 When a focus request is sent, whether the window can successfully gain focus depends on its capability of being focused and its current visibility. To gain focus, the window must be capable of receiving focus and in a visible state (actively displayed and not hidden or destroyed).
 
@@ -1634,7 +1658,7 @@ Conversely, once a blur request is sent, the window will lose focus without any 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -1661,13 +1685,14 @@ promise.then(() => {
 
 ```
 
+<a id="rotate"></a>
 ## rotate
 
 ```TypeScript
 rotate(rotateOptions: RotateOptions): void
 ```
 
-Sets the rotation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
+Sets the rotation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](docroot://windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
 
 **Since:** 9
 
@@ -1681,7 +1706,7 @@ Sets the rotation parameters for this window. This API can be used only when you
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rotateOptions | [RotateOptions](../arkts-components/arkts-arkui-common-rotateoptions-i.md) | Yes | Rotation parameters to set. |
+| rotateOptions | [RotateOptions](../arkts-components/arkts-arkui-rotateoptions-i.md) | Yes | Rotation parameters to set. |
 
 **Error codes:**
 
@@ -1710,13 +1735,14 @@ try {
 
 ```
 
+<a id="scale"></a>
 ## scale
 
 ```TypeScript
 scale(scaleOptions: ScaleOptions): void
 ```
 
-Sets the scale parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
+Sets the scale parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](docroot://windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
 
 **Since:** 9
 
@@ -1730,7 +1756,7 @@ Sets the scale parameters for this window. This API can be used only when you [c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scaleOptions | [ScaleOptions](../arkts-components/arkts-arkui-common-scaleoptions-i.md) | Yes | Scale parameters to set. |
+| scaleOptions | [ScaleOptions](../arkts-components/arkts-arkui-scaleoptions-i.md) | Yes | Scale parameters to set. |
 
 **Error codes:**
 
@@ -1758,6 +1784,7 @@ try {
 
 ```
 
+<a id="setbackdropblur"></a>
 ## setBackdropBlur
 
 ```TypeScript
@@ -1805,6 +1832,7 @@ try {
 
 ```
 
+<a id="setbackdropblurstyle"></a>
 ## setBackdropBlurStyle
 
 ```TypeScript
@@ -1825,7 +1853,7 @@ Sets the blur style for the background of this window.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| blurStyle | [BlurStyle](../arkts-components/arkts-arkui-common-blurstyle-e.md) | Yes | Blur style to set for the background of the window. |
+| blurStyle | [BlurStyle](../arkts-components/arkts-arkui-blurstyle-e.md) | Yes | Blur style to set for the background of the window. |
 
 **Error codes:**
 
@@ -1847,6 +1875,7 @@ try {
 
 ```
 
+<a id="setblur"></a>
 ## setBlur
 
 ```TypeScript
@@ -1889,6 +1918,7 @@ try {
 
 ```
 
+<a id="setcornerradius"></a>
 ## setCornerRadius
 
 ```TypeScript
@@ -1931,6 +1961,7 @@ try {
 
 ```
 
+<a id="setdefaultdensityenabled"></a>
 ## setDefaultDensityEnabled
 
 ```TypeScript
@@ -1977,6 +2008,7 @@ try {
 
 ```
 
+<a id="setforbidsplitmove"></a>
 ## setForbidSplitMove
 
 ```TypeScript
@@ -2000,7 +2032,7 @@ Sets whether the main window is forbidden to move in split-screen mode. This API
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | isForbidSplitMove | boolean | Yes | Whether the window is forbidden to move in split-screen mode. **true** if forbidden, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -2049,6 +2081,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="setforbidsplitmove-1"></a>
 ## setForbidSplitMove
 
 ```TypeScript
@@ -2077,7 +2110,7 @@ Sets whether the main window is forbidden to move in split-screen mode. This API
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2124,6 +2157,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="sethandwritingflag"></a>
 ## setHandwritingFlag
 
 ```TypeScript
@@ -2150,7 +2184,7 @@ Adds or deletes the handwriting flag for this window. After this flag is added, 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2181,6 +2215,7 @@ try {
 
 ```
 
+<a id="setmainwindowraisebyclickenabled"></a>
 ## setMainWindowRaiseByClickEnabled
 
 ```TypeScript
@@ -2209,7 +2244,7 @@ By default, clicking the main window raises both the main window and its associa
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2255,6 +2290,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="setraisebyclickenabled"></a>
 ## setRaiseByClickEnabled
 
 ```TypeScript
@@ -2280,7 +2316,7 @@ Before calling this API, ensure that the child window has been created and [show
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to enable a child window to raise itself by click. **true** to enable,**false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -2332,27 +2368,28 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="setrotationlocked"></a>
 ## setRotationLocked
 
 ```TypeScript
 setRotationLocked(locked: boolean): Promise<void>
 ```
 
-Allows a [system window](../../../../windowmanager/window-terminology.md#system-window) to lock or unlock its own screen-rotation behavior. When locked, the window's orientation remains unchanged. When unlocked, the window's orientation follows the main window's orientation, the system rotation-lock button, and the device's physical rotation sensor. If this API is called by a non-system window, error code 1300029 is thrown. This API uses a promise to return the result.
+Allows a [system window](docroot://windowmanager/window-terminology.md#system-window) to lock or unlock its own screen-rotation behavior. When locked, the window's orientation remains unchanged. When unlocked, the window's orientation follows the main window's orientation, the system rotation-lock button, and the device's physical rotation sensor. If this API is called by a non-system window, error code 1300029 is thrown. This API uses a promise to return the result.
 
 > **NOTE**  
 >  
 > - If the main window sets the display orientation via  
-> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-2)  
+> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-1)  
 > while rotation is locked, the window restores the last orientation request when brought to the foreground after  
 > unlocking.  
 >  
 > - If the system window sets the display orientation via  
-> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-2)  
+> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-1)  
 > while rotation is locked, the window restores the last orientation request when brought to the foreground with  
 > the highest level after unlocking. The rotation lock set by a lower-level window using **setRotationLocked**  
 > does not hinder the system window at a higher level to set the display orientation by calling  
-> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-2)  
+> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-1)  
 > .  
 >  
 > - If the sensor orientation changes while rotation is locked, the last sensor orientation is restored after  
@@ -2364,12 +2401,12 @@ Allows a [system window](../../../../windowmanager/window-terminology.md#system-
 >  
 > - When rotation is unlocked, the application's display orientation is determined based on the main window's  
 > display orientation set via  
-> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-2)  
+> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-1)  
 > , the sensor orientation, and more. For details, see  
-> [Window Rotation Overview](../../../../windowmanager/window-rotation.md#overview).  
+> [Window Rotation Overview](docroot://windowmanager/window-rotation.md#overview).  
 >  
 > - The API does not affect the launch orientation set by the **orientation** under  
-> [**abilities** in the module.json5 file](../../../../quick-start/module-configuration-file.md#abilities) of the  
+> [**abilities** in the module.json5 file](docroot://quick-start/module-configuration-file.md#abilities) of the  
 > application.
 
 **Since:** 22
@@ -2390,7 +2427,7 @@ Allows a [system window](../../../../windowmanager/window-terminology.md#system-
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2417,6 +2454,7 @@ promise.then(() => {
 
 ```
 
+<a id="setshadow"></a>
 ## setShadow
 
 ```TypeScript
@@ -2462,6 +2500,7 @@ try {
 
 ```
 
+<a id="setsingleframecomposerenabled"></a>
 ## setSingleFrameComposerEnabled
 
 ```TypeScript
@@ -2490,7 +2529,7 @@ The single-frame composer is mainly used in scenarios that require extremely low
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2520,6 +2559,7 @@ try {
 
 ```
 
+<a id="setsnapshotskip"></a>
 ## setSnapshotSkip
 
 ```TypeScript
@@ -2528,7 +2568,7 @@ setSnapshotSkip(isSkip: boolean): void
 
 Sets whether to ignore this window during screen capture, recording, or casting. This API is typically used in situations where you want to prevent screen capture, recording, or casting.
 
-If you want the window to always be ignored during screen capture, recording, or casting while it is in the foreground, listen for window lifecycle changes using [on('windowEvent')](arkts-arkui-window-window-i.md#on-22). Set **isSkip** to **false** when the window is in the background and **true** when it is in the foreground.
+If you want the window to always be ignored during screen capture, recording, or casting while it is in the foreground, listen for window lifecycle changes using [on('windowEvent')](@ohos.window:window.Window.on(type: 'windowEvent', callback: Callback<WindowEventType>)). Set **isSkip** to **false** when the window is in the background and **true** when it is in the foreground.
 
 **Since:** 9
 
@@ -2564,6 +2604,7 @@ try {
 
 ```
 
+<a id="settitlebuttonvisible"></a>
 ## setTitleButtonVisible
 
 ```TypeScript
@@ -2639,6 +2680,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="settopmost"></a>
 ## setTopmost
 
 ```TypeScript
@@ -2665,7 +2707,7 @@ Called by the main window to place the window above all the other windows. This 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2702,6 +2744,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="settouchableareas"></a>
 ## setTouchableAreas
 
 ```TypeScript
@@ -2727,13 +2770,13 @@ Sets the touchable areas for this window. By default, the entire window is touch
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rects | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Rect> | Yes | Touchable areas. The maximum number of touchable areas cannot exceed 10, and each touchable area cannot exceed the window area. |
+| rects | Array&lt;Rect&gt; | Yes | Touchable areas. The maximum number of touchable areas cannot exceed 10, and each touchable area cannot exceed the window area. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2745,6 +2788,7 @@ Sets the touchable areas for this window. By default, the entire window is touch
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: Invalid parameter range. |
 
+<a id="setwakeupscreen"></a>
 ## setWakeUpScreen
 
 ```TypeScript
@@ -2788,6 +2832,7 @@ try {
 
 ```
 
+<a id="setwatermarkflag"></a>
 ## setWaterMarkFlag
 
 ```TypeScript
@@ -2809,7 +2854,7 @@ Adds or deletes the watermark flag for this window. This API uses an asynchronou
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to add or delete the flag. **true** to add, **false** otherwise. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -2842,6 +2887,7 @@ try {
 
 ```
 
+<a id="setwatermarkflag-1"></a>
 ## setWaterMarkFlag
 
 ```TypeScript
@@ -2868,7 +2914,7 @@ Adds or deletes the watermark flag for this window. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -2899,6 +2945,7 @@ try {
 
 ```
 
+<a id="setwindowcontainermodalcolor"></a>
 ## setWindowContainerModalColor
 
 ```TypeScript
@@ -2937,6 +2984,7 @@ The background color you set here covers the entire window, including both the t
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
+<a id="setwindowmode"></a>
 ## setWindowMode
 
 ```TypeScript
@@ -2963,7 +3011,7 @@ Sets the mode of the main window. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -3010,6 +3058,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="setwindowmode-1"></a>
 ## setWindowMode
 
 ```TypeScript
@@ -3031,7 +3080,7 @@ Sets the mode of the main window. This API uses an asynchronous callback to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | mode | [WindowMode](../../apis-test-kit/arkts-apis/arkts-test-uitest-windowmode-e.md) | Yes | Indicate the mode of a window. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -3080,6 +3129,7 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
+<a id="setwindowtype"></a>
 ## setWindowType
 
 ```TypeScript
@@ -3108,7 +3158,7 @@ Sets the type of this window. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 
@@ -3125,6 +3175,7 @@ promise.then(() => {
 
 ```
 
+<a id="setwindowtype-1"></a>
 ## setWindowType
 
 ```TypeScript
@@ -3148,7 +3199,7 @@ Sets the type of this window. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [WindowType](../../apis-accessibility-kit/arkts-apis/arkts-accessibility-windowtype-t.md) | Yes | Window type. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -3167,6 +3218,7 @@ windowClass.setWindowType(type, (err: BusinessError) => {
 
 ```
 
+<a id="showwithanimation"></a>
 ## showWithAnimation
 
 ```TypeScript
@@ -3187,7 +3239,7 @@ Shows this window and plays an animation during the process. This API uses an as
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -3214,6 +3266,7 @@ windowClass.showWithAnimation((err: BusinessError) => {
 
 ```
 
+<a id="showwithanimation-1"></a>
 ## showWithAnimation
 
 ```TypeScript
@@ -3234,7 +3287,7 @@ Shows this window and plays an animation during the process. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -3259,6 +3312,7 @@ promise.then(() => {
 
 ```
 
+<a id="startmovingwithoptions"></a>
 ## startMovingWithOptions
 
 ```TypeScript
@@ -3287,7 +3341,7 @@ Starts moving this window.The window moves along with the cursor only when this 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -3350,13 +3404,14 @@ struct Index {
 
 ```
 
+<a id="translate"></a>
 ## translate
 
 ```TypeScript
 translate(translateOptions: TranslateOptions): void
 ```
 
-Sets the translation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
+Sets the translation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](docroot://windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
 
 **Since:** 9
 
@@ -3370,7 +3425,7 @@ Sets the translation parameters for this window. This API can be used only when 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| translateOptions | [TranslateOptions](../arkts-components/arkts-arkui-common-translateoptions-i.md) | Yes | Translation parameters. The unit is px. |
+| translateOptions | [TranslateOptions](../arkts-components/arkts-arkui-translateoptions-i.md) | Yes | Translation parameters. The unit is px. |
 
 **Error codes:**
 

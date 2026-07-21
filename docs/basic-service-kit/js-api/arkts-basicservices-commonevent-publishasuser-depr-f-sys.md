@@ -1,5 +1,6 @@
 # publishAsUser (System API)
 
+<a id="publishasuser"></a>
 ## publishAsUser
 
 ```TypeScript
@@ -12,7 +13,7 @@ Publishes a common event to a specific user. This API uses an asynchronous callb
 
 **Deprecated since:** 9
 
-**Substitutes:** publishAsUser(event:
+**Substitutes:** [publishAsUser(event:](arkts-basicservices-commoneventmanager-publishasuser-f-sys.md#publishasuser-1)
 
 <!--Device-commonEvent-function publishAsUser(event: string, userId: number, callback: AsyncCallback<void>): void--><!--Device-commonEvent-function publishAsUser(event: string, userId: number, callback: AsyncCallback<void>): void-End-->
 
@@ -26,7 +27,7 @@ Publishes a common event to a specific user. This API uses an asynchronous callb
 | --- | --- | --- | --- |
 | event | string | Yes | Name of the common event to publish. |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -51,6 +52,7 @@ commonEvent.publishAsUser('event', userId, publishCallBack);
 ```
 
 
+<a id="publishasuser-1"></a>
 ## publishAsUser
 
 ```TypeScript
@@ -68,7 +70,7 @@ Publishes a common event with given properties to a specific user. This API uses
 
 **Deprecated since:** 9
 
-**Substitutes:** publishAsUser(
+**Substitutes:** [publishAsUser(](arkts-basicservices-commoneventmanager-publishasuser-f-sys.md#publishasuser-1)
 
 <!--Device-commonEvent-function publishAsUser(
     event: string,
@@ -93,7 +95,7 @@ Publishes a common event with given properties to a specific user. This API uses
 | event | string | Yes | Name of the common event to publish. |
 | userId | number | Yes | User ID. |
 | options | [CommonEventPublishData](arkts-basicservices-commoneventpublishdata-commoneventpublishdata-i.md) | Yes | Properties of the common event to publish. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Example**
 

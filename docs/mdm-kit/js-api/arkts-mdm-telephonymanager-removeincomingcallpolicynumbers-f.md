@@ -6,6 +6,7 @@
 import { telephonyManager } from '@kit.MDMKit';
 ```
 
+<a id="removeincomingcallpolicynumbers"></a>
 ## removeIncomingCallPolicyNumbers
 
 ```TypeScript
@@ -34,7 +35,7 @@ A policy conflict is reported when this API is called in the following scenario:
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | policy | adminManager.Policy | Yes | Policy for trustlist or blocklist. **BLOCK_LIST** indicates a blocklist,and **TRUST_LIST** indicates a trustlist. |
-| numbers | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | List of call numbers to remove. The total length of the array must not exceed 1,000. |
+| numbers | Array&lt;string&gt; | Yes | List of call numbers to remove. The total length of the array must not exceed 1,000. |
 
 **Error codes:**
 

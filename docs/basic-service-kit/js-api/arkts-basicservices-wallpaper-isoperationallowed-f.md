@@ -6,6 +6,7 @@
 import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
+<a id="isoperationallowed"></a>
 ## isOperationAllowed
 
 ```TypeScript
@@ -26,7 +27,7 @@ Checks whether a user is allowed to set wallpapers.Returns true if a user is all
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | the callback of isOperationAllowed. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | the callback of isOperationAllowed. |
 
 **Example**
 
@@ -44,6 +45,7 @@ wallpaper.isOperationAllowed((error: BusinessError, data: Boolean) => {
 ```
 
 
+<a id="isoperationallowed-1"></a>
 ## isOperationAllowed
 
 ```TypeScript
@@ -64,7 +66,7 @@ Checks whether a user is allowed to set wallpapers.Returns true if a user is all
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Example**
 

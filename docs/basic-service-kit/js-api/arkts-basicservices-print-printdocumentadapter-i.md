@@ -14,6 +14,7 @@ Provides information about the document to print. This API must be implemented b
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="onjobstatechanged"></a>
 ## onJobStateChanged
 
 ```TypeScript
@@ -72,6 +73,7 @@ class MyPrintDocumentAdapter implements print.PrintDocumentAdapter {
 
 ```
 
+<a id="onstartlayoutwrite"></a>
 ## onStartLayoutWrite
 
 ```TypeScript
@@ -99,7 +101,7 @@ Sends an empty PDF file descriptor to a third-party application. The third-party
 | oldAttrs | [PrintAttributes](arkts-basicservices-print-printattributes-i.md) | Yes | Old print attributes. |
 | newAttrs | [PrintAttributes](arkts-basicservices-print-printattributes-i.md) | Yes | New print attributes. |
 | fd | number | Yes | PDF file descriptor sent to the API caller. |
-| writeResultCallback | (jobId: string, writeResult: PrintFileCreationState) => void | Yes | Callback used to print the updated file. |
+| writeResultCallback | (jobId: string, writeResult: PrintFileCreationState) =&gt; void | Yes | Callback used to print the updated file. |
 
 **Error codes:**
 

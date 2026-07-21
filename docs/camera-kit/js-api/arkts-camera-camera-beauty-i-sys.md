@@ -18,6 +18,7 @@ Beauty extends [BeautyQuery](arkts-camera-camera-beautyquery-i-sys.md)Provides A
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getbeauty"></a>
 ## getBeauty
 
 ```TypeScript
@@ -73,6 +74,7 @@ function getBeauty(portraitPhotoSession: camera.PortraitPhotoSession): number {
 
 ```
 
+<a id="setbeauty"></a>
 ## setBeauty
 
 ```TypeScript
@@ -120,6 +122,7 @@ function setBeauty(portraitPhotoSession: camera.PortraitPhotoSession): void {
 
 ```
 
+<a id="setportraitthemetype"></a>
 ## setPortraitThemeType
 
 ```TypeScript

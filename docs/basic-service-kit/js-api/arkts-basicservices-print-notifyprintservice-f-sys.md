@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="notifyprintservice"></a>
 ## notifyPrintService
 
 ```TypeScript
@@ -33,7 +34,7 @@ Notifies the print service of the spooler shutdown information. This API uses an
 | --- | --- | --- | --- |
 | jobId | string | Yes | ID of the print job. |
 | type | 'spooler_closed_for_cancelled' \| 'spooler_closed_for_started' | Yes | Spooler shutdown information. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -61,6 +62,7 @@ print.notifyPrintService(jobId, 'spooler_closed_for_started', (err: BusinessErro
 ```
 
 
+<a id="notifyprintservice-1"></a>
 ## notifyPrintService
 
 ```TypeScript
@@ -93,7 +95,7 @@ Notifies the print service of the spooler shutdown information. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

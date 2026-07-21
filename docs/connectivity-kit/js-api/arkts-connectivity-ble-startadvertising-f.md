@@ -6,6 +6,7 @@
 import { ble } from '@kit.ConnectivityKit';
 ```
 
+<a id="startadvertising"></a>
 ## startAdvertising
 
 ```TypeScript
@@ -104,6 +105,7 @@ try {
 ```
 
 
+<a id="startadvertising-1"></a>
 ## startAdvertising
 
 ```TypeScript
@@ -134,7 +136,7 @@ Starts BLE advertising.The API returns a advertising ID. The ID can be used to t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | advertisingParams | [AdvertisingParams](arkts-connectivity-advertising-advertisingparams-i.md) | Yes | Indicates the params for BLE advertising. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | the callback of advertise ID. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | the callback of advertise ID. |
 
 **Error codes:**
 
@@ -213,6 +215,7 @@ try {
 ```
 
 
+<a id="startadvertising-2"></a>
 ## startAdvertising
 
 ```TypeScript
@@ -248,7 +251,7 @@ Starts BLE advertising.The API returns a advertising ID. The ID can be used to t
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the promise object. |
+| Promise&lt;number&gt; | Returns the promise object. |
 
 **Error codes:**
 

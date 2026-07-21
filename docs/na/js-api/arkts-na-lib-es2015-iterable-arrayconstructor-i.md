@@ -2,6 +2,7 @@
 
 <!--Device-unnamed-interface ArrayConstructor--><!--Device-unnamed-interface ArrayConstructor-End-->
 
+<a id="from"></a>
 ## from
 
 ```TypeScript
@@ -16,7 +17,7 @@ Creates an array from an iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| iterable | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<T> \| ArrayLike<T> | Yes |  |
+| iterable | Iterable&lt;T&gt; \| ArrayLike&lt;T&gt; | Yes |  |
 
 **Return value:**
 
@@ -24,6 +25,7 @@ Creates an array from an iterable object.
 | --- | --- |
 | T[] |  |
 
+<a id="from-1"></a>
 ## from
 
 ```TypeScript
@@ -38,8 +40,8 @@ Creates an array from an iterable object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| iterable | [Iterable](arkts-na-lib-es2015-iterable-iterable-i.md)<T> \| ArrayLike<T> | Yes |  |
-| mapfn | (v: T, k: number) => U | Yes |  |
+| iterable | Iterable&lt;T&gt; \| ArrayLike&lt;T&gt; | Yes |  |
+| mapfn | (v: T, k: number) =&gt; U | Yes |  |
 | thisArg | any | No |  |
 
 **Return value:**

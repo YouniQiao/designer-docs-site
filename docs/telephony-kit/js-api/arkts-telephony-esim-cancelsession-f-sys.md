@@ -6,6 +6,7 @@
 import { eSIM } from '@kit.TelephonyKit';
 ```
 
+<a id="cancelsession"></a>
 ## cancelSession
 
 ```TypeScript
@@ -36,7 +37,7 @@ Cancel session can be used in the1.after the response to "ES9+.AuthenticateClien
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultCode> | Returns the result code. |
+| Promise&lt;ResultCode&gt; | Returns the result code. |
 
 **Error codes:**
 

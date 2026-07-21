@@ -6,6 +6,7 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
+<a id="getretentionsandboxlist"></a>
 ## getRetentionSandboxList
 
 ```TypeScript
@@ -32,7 +33,7 @@ This API is used to query the sandbox retention information of a specified appli
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<RetentionSandboxInfo>> | Promise used to return the sandbox retention information obtained. |
+| Promise&lt;Array&lt;RetentionSandboxInfo&gt;&gt; | Promise used to return the sandbox retention information obtained. |
 
 **Error codes:**
 
@@ -57,6 +58,7 @@ dlpPermission.getRetentionSandboxList().then((sandboxList) => { // Obtain the sa
 ```
 
 
+<a id="getretentionsandboxlist-1"></a>
 ## getRetentionSandboxList
 
 ```TypeScript
@@ -78,7 +80,7 @@ This API is used to query the sandbox retention information of a specified appli
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name of the application, which is used to query the sandbox retention information of the application. This parameter is required when you need to query the sandbox retention information of another application. It is optional when you need to query the sandbox retention information of the current application. The value contains 7 to 128 bytes. If the value is out of range, error code401 is thrown. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<RetentionSandboxInfo>> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;RetentionSandboxInfo&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -105,6 +107,7 @@ dlpPermission.getRetentionSandboxList("bundleName", (err, sandboxList) => {
 ```
 
 
+<a id="getretentionsandboxlist-2"></a>
 ## getRetentionSandboxList
 
 ```TypeScript
@@ -125,7 +128,7 @@ This API is used to query the sandbox retention information of a specified appli
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<RetentionSandboxInfo>> | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;RetentionSandboxInfo&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

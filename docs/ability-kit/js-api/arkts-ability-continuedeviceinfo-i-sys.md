@@ -78,7 +78,7 @@ wantParam: Record<string, Object>
 
 Indicates the extended param.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 9
 

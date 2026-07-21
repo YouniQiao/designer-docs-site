@@ -6,6 +6,7 @@
 import { systemTimer } from '@kit.BasicServicesKit';
 ```
 
+<a id="starttimer"></a>
 ## startTimer
 
 ```TypeScript
@@ -28,7 +29,7 @@ Starts a timer. This API uses an asynchronous callback to return the result.
 | --- | --- | --- | --- |
 | timer | number | Yes | ID of the timer. |
 | triggerTime | number | Yes | Time when the timer is triggered, in milliseconds.<br>If **TIMER_TYPE_REALTIME** is set as the timer type, the value of **triggerTime** is the system startup time, which can be obtained by calling [systemDateTime.getUptime(STARTUP)](arkts-basicservices-systemdatetime-getuptime-f.md#getuptime-1).<br>If **TIMER_TYPE_REALTIME** is not set, the value of **triggerTime** is the wall time, which can be obtained by calling [systemDateTime.getTime()](arkts-basicservices-systemdatetime-gettime-f.md#gettime-1). |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ try {
 ```
 
 
+<a id="starttimer-1"></a>
 ## startTimer
 
 ```TypeScript
@@ -97,7 +99,7 @@ Starts a timer. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

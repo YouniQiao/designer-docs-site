@@ -6,6 +6,7 @@
 import { sendablePreferences } from '@kit.ArkData';
 ```
 
+<a id="removepreferencesfromcache"></a>
 ## removePreferencesFromCache
 
 ```TypeScript
@@ -33,7 +34,7 @@ Removes a **Preferences** instance from the cache. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

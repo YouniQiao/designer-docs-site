@@ -6,6 +6,7 @@
 import { screen } from '@kit.ArkUI';
 ```
 
+<a id="makeexpand"></a>
 ## makeExpand
 
 ```TypeScript
@@ -28,8 +29,8 @@ Sets the screen to extended mode. This API uses an asynchronous callback to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ExpandOption> | Yes | Parameters for expanding the screen. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the group ID of the extended screens, where the ID is an integer. |
+| options | Array&lt;ExpandOption&gt; | Yes | Parameters for expanding the screen. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the group ID of the extended screens, where the ID is an integer. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ screen.makeExpand(expandOptionArray, (err: BusinessError, data: number) => {
 ```
 
 
+<a id="makeexpand-1"></a>
 ## makeExpand
 
 ```TypeScript
@@ -89,13 +91,13 @@ Sets the screen to extended mode. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<ExpandOption> | Yes | Parameters for expanding the screen. |
+| options | Array&lt;ExpandOption&gt; | Yes | Parameters for expanding the screen. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the group ID of the extended screens, where the ID is an integer. |
+| Promise&lt;number&gt; | Promise used to return the group ID of the extended screens, where the ID is an integer. |
 
 **Error codes:**
 

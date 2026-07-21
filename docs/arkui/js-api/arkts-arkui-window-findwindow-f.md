@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="findwindow"></a>
 ## findWindow
 
 ```TypeScript
@@ -26,7 +27,7 @@ Finds a window based on the name.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| name | string | Yes | Window name. When searching for a child window or system window, use the window name in [Configuration](arkts-arkui-window-configuration-i.md). When searching for the main window, use [getWindowName](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getwindowname12) to obtain the window name of the current instance. |
+| name | string | Yes | Window name. When searching for a child window or system window, use the window name in [Configuration](arkts-arkui-window-configuration-i.md). When searching for the main window, use [getWindowName](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getwindowname12) to obtain the window name of the current instance. |
 
 **Return value:**
 

@@ -6,13 +6,14 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getprofilebyabilitysync"></a>
 ## getProfileByAbilitySync
 
 ```TypeScript
 function getProfileByAbilitySync(moduleName: string, abilityName: string, metadataName?: string): Array<string>
 ```
 
-Obtains the JSON string array of the current application's configuration file based on the given module name,ability name, and metadata name (name configured in [metadata](../../../../quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This API returns the result synchronously. The result value is a string array.
+Obtains the JSON string array of the current application's configuration file based on the given module name,ability name, and metadata name (name configured in [metadata](docroot://quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This API returns the result synchronously. The result value is a string array.
 
 **Since:** 10
 
@@ -28,13 +29,13 @@ Obtains the JSON string array of the current application's configuration file ba
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Module name. |
 | abilityName | string | Yes | Name of the UIAbility component. |
-| metadataName | string | No | Metadata name of the UIAbility component, that is, **name** of the **metadata** tag under [abilities](../../../../quick-start/module-configuration-file.md#abilities) in the **module.json5** file. The default value is null. |
+| metadataName | string | No | Metadata name of the UIAbility component, that is, **name** of the **metadata** tag under [abilities](docroot://quick-start/module-configuration-file.md#abilities) in the **module.json5** file. The default value is null. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | An array of JSON strings. |
+| Array&lt;string&gt; | An array of JSON strings. |
 
 **Error codes:**
 

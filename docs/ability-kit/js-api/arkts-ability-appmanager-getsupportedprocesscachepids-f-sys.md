@@ -6,6 +6,7 @@
 import { appManager } from '@kit.AbilityKit';
 ```
 
+<a id="getsupportedprocesscachepids"></a>
 ## getSupportedProcessCachePids
 
 ```TypeScript
@@ -40,7 +41,7 @@ Obtains the PIDs of processes that support quick startup after caching in a spec
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<number>> | Promise used to return an array containing the PIDs. |
+| Promise&lt;Array&lt;number&gt;&gt; | Promise used to return an array containing the PIDs. |
 
 **Error codes:**
 

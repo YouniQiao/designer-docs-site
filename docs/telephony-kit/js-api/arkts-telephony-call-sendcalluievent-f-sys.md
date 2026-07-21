@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="sendcalluievent"></a>
 ## sendCallUiEvent
 
 ```TypeScript
@@ -35,7 +36,7 @@ Send call ui event.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the sendCallUiEvent. |
+| Promise&lt;void&gt; | The promise returned by the sendCallUiEvent. |
 
 **Error codes:**
 

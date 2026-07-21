@@ -16,7 +16,7 @@ readonly abilitiesInfo: Array<AbilityInfo>
 
 Information about all ability components of the current module. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_ABILITY** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
-**Type:** Array<AbilityInfo>
+**Type:** Array&lt;AbilityInfo&gt;
 
 **Since:** 9
 
@@ -52,7 +52,7 @@ readonly dependencies: Array<Dependency>
 
 Dynamic shared libraries on which the module depends.
 
-**Type:** Array<Dependency>
+**Type:** Array&lt;Dependency&gt;
 
 **Since:** 9
 
@@ -104,9 +104,9 @@ ID of the module description.
 readonly deviceTypes: Array<string>
 ```
 
-Array of [device types](../../../../quick-start/module-configuration-file.md#devicetypes) that the module supports for installation and running.
+Array of [device types](docroot://quick-start/module-configuration-file.md#devicetypes) that the module supports for installation and running.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 
@@ -124,7 +124,7 @@ readonly extensionAbilitiesInfo: Array<ExtensionAbilityInfo>
 
 Information about all ExtensionAbility components of the current module. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
-**Type:** Array<ExtensionAbilityInfo>
+**Type:** Array&lt;ExtensionAbilityInfo&gt;
 
 **Since:** 9
 
@@ -176,7 +176,7 @@ Hash value of the module.
 readonly icon: string
 ```
 
-[Icon](../../../../quick-start/layered-image.md) for the entry ability of the current module. It is the index of the icon resource file and should match the value of **icon** in the [abilities](../../../../quick-start/module-configuration-file.md#abilities) or [extensionAbilities](../../../../quick-start/module-configuration-file.md#extensionabilities) field in the module configuration file. If no entry ability is configured, this parameter is left empty.
+[Icon](docroot://quick-start/layered-image.md) for the entry ability of the current module. It is the index of the icon resource file and should match the value of **icon** in the [abilities](docroot://quick-start/module-configuration-file.md#abilities) or [extensionAbilities](docroot://quick-start/module-configuration-file.md#extensionabilities) field in the module configuration file. If no entry ability is configured, this parameter is left empty.
 
 **Type:** string
 
@@ -194,7 +194,7 @@ readonly icon: string
 readonly iconId: number
 ```
 
-[Resource ID](../../../../quick-start/resource-categories-and-access.md#resource-directories) of the icon for the entry ability of the current module. If no entry ability is configured, this parameter is left empty.
+[Resource ID](docroot://quick-start/resource-categories-and-access.md#resource-directories) of the icon for the entry ability of the current module. If no entry ability is configured, this parameter is left empty.
 
 **Type:** number
 
@@ -230,7 +230,7 @@ Whether the module supports the installation-free feature. Installation-free mea
 readonly label: string
 ```
 
-Label of the entry ability of the current module. It is the index of a string resource and should match the value of **label** in the [abilities](../../../../quick-start/module-configuration-file.md#abilities) or [extensionAbilities](../../../../quick-start/module-configuration-file.md#extensionabilities) field in the module configuration file. If no entry ability is configured, this parameter is left empty.
+Label of the entry ability of the current module. It is the index of a string resource and should match the value of **label** in the [abilities](docroot://quick-start/module-configuration-file.md#abilities) or [extensionAbilities](docroot://quick-start/module-configuration-file.md#extensionabilities) field in the module configuration file. If no entry ability is configured, this parameter is left empty.
 
 **Type:** string
 
@@ -248,7 +248,7 @@ Label of the entry ability of the current module. It is the index of a string re
 readonly labelId: number
 ```
 
-[Resource ID](../../../../quick-start/resource-categories-and-access.md#resource-directories) of the label for the entry ability of the current module. If no entry ability is configured, this parameter is left empty.
+[Resource ID](docroot://quick-start/resource-categories-and-access.md#resource-directories) of the label for the entry ability of the current module. If no entry ability is configured, this parameter is left empty.
 
 **Type:** number
 
@@ -286,7 +286,7 @@ readonly metadata: Array<Metadata>
 
 Metadata of the current module. The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_METADATA** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
-**Type:** Array<Metadata>
+**Type:** Array&lt;Metadata&gt;
 
 **Since:** 9
 
@@ -338,7 +338,7 @@ readonly preloads: Array<PreloadItem>
 
 Preloaded modules in the atomic service.
 
-**Type:** Array<PreloadItem>
+**Type:** Array&lt;PreloadItem&gt;
 
 **Since:** 9
 
@@ -354,9 +354,9 @@ Preloaded modules in the atomic service.
 readonly routerMap: Array<RouterItem>
 ```
 
-[Router table configuration of the module](../../../../quick-start/module-configuration-file.md#routermap). The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_ROUTER_MAP** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).
+[Router table configuration of the module](docroot://quick-start/module-configuration-file.md#routermap). The information can be obtained by passing in **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_ROUTER_MAP** to the **bundleFlags** parameter of [getBundleInfoForSelf](arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1).
 
-**Type:** Array<RouterItem>
+**Type:** Array&lt;RouterItem&gt;
 
 **Since:** 12
 

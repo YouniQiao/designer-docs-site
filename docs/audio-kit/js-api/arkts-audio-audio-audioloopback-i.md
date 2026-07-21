@@ -24,6 +24,7 @@ The system automatically chooses the input and output devices. If these devices 
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="enable"></a>
 ## enable
 
 ```TypeScript
@@ -50,7 +51,7 @@ Enable or disable audio loopback.When audio loopback is enabled, the system auto
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result, indicating whether the API call is successful.**true** is successful, **false** otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result, indicating whether the API call is successful.**true** is successful, **false** otherwise. |
 
 **Error codes:**
 
@@ -59,6 +60,7 @@ Enable or disable audio loopback.When audio loopback is enabled, the system auto
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="getequalizerpreset"></a>
 ## getEqualizerPreset
 
 ```TypeScript
@@ -79,6 +81,7 @@ Gets the current equalizer preset.The default equalizer preset of audio loopback
 | --- | --- |
 | [AudioLoopbackEqualizerPreset](arkts-audio-audio-audioloopbackequalizerpreset-e.md) | Equalizer type.<br>If no equalizer type has been set, the default equalizer type is **FULL**. |
 
+<a id="getpreferreddevicepair"></a>
 ## getPreferredDevicePair
 
 ```TypeScript
@@ -101,6 +104,7 @@ Gets the preferred audio device pair in current device connection situation.
 | --- | --- |
 | [AudioDevicePair](arkts-audio-audio-audiodevicepair-i.md) | The preferred audio device pair in audio system,or null if there is no supported device pair. |
 
+<a id="getreverbpreset"></a>
 ## getReverbPreset
 
 ```TypeScript
@@ -121,6 +125,7 @@ Get the current reverberation.The default reverberation preset of audio loopback
 | --- | --- |
 | [AudioLoopbackReverbPreset](arkts-audio-audio-audioloopbackreverbpreset-e.md) | Reverb mode.<br>If no reverb mode has been set, the default reverb mode is **THEATER**. |
 
+<a id="getstatus"></a>
 ## getStatus
 
 ```TypeScript
@@ -139,8 +144,9 @@ Obtains the audio loopback status. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AudioLoopbackStatus> | Promise used to return the audio loopback status. |
+| Promise&lt;AudioLoopbackStatus&gt; | Promise used to return the audio loopback status. |
 
+<a id="getsupporteddevicepairs"></a>
 ## getSupportedDevicePairs
 
 ```TypeScript
@@ -161,8 +167,9 @@ Gets supported audio device pairs in current device connection situation.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<AudioDevicePair> | Audio device pairs that support loopback,if there is no supported device pair, empty array will be returned. |
+| Array&lt;AudioDevicePair&gt; | Audio device pairs that support loopback,if there is no supported device pair, empty array will be returned. |
 
+<a id="getvolume"></a>
 ## getVolume
 
 ```TypeScript
@@ -185,6 +192,7 @@ Gets the output volume for audio loopback.
 | --- | --- |
 | number | Current audio loopback output volume value. |
 
+<a id="off"></a>
 ## off('statusChange')
 
 ```TypeScript
@@ -204,7 +212,7 @@ Unsubscribes from the audio loopback status event. This API uses an asynchronous
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'statusChange' | Yes | Event type. The event **'statusChange'** is triggered when the status of the audio loopback is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioLoopbackStatus> | No | Callback used to return the audio loopback status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioLoopbackStatus&gt; | No | Callback used to return the audio loopback status. |
 
 **Error codes:**
 
@@ -212,6 +220,7 @@ Unsubscribes from the audio loopback status event. This API uses an asynchronous
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="on"></a>
 ## on('statusChange')
 
 ```TypeScript
@@ -231,7 +240,7 @@ Subscribes to the audio loopback status change event, which is triggered when th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'statusChange' | Yes | Event type. The event **'statusChange'** is triggered when the status of the audio loopback is changed. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AudioLoopbackStatus> | Yes | Callback used to return the audio loopback status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AudioLoopbackStatus&gt; | Yes | Callback used to return the audio loopback status. |
 
 **Error codes:**
 
@@ -239,6 +248,7 @@ Subscribes to the audio loopback status change event, which is triggered when th
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="setequalizerpreset"></a>
 ## setEqualizerPreset
 
 ```TypeScript
@@ -271,6 +281,7 @@ Sets the equalizer preset of the audio loopback.
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="setreverbpreset"></a>
 ## setReverbPreset
 
 ```TypeScript
@@ -303,6 +314,7 @@ Sets the reverberation of the audio loopback.
 | --- | --- |
 | [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
+<a id="setvolume"></a>
 ## setVolume
 
 ```TypeScript
@@ -327,7 +339,7 @@ Sets the volume for audio loopback. This volume does not affect other audio stre
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

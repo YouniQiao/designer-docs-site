@@ -1,5 +1,6 @@
 # clearUpApplicationData (System API)
 
+<a id="clearupapplicationdata"></a>
 ## clearUpApplicationData
 
 ```TypeScript
@@ -32,7 +33,7 @@ Clear up application data by bundle name
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Example**
 
@@ -52,6 +53,7 @@ appManager.clearUpApplicationData(bundleName)
 ```
 
 
+<a id="clearupapplicationdata-1"></a>
 ## clearUpApplicationData
 
 ```TypeScript
@@ -79,7 +81,7 @@ Clear up application data by bundle name
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | bundle name. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Represents the specified callback method. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Represents the specified callback method. |
 
 **Example**
 

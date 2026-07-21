@@ -6,6 +6,7 @@
 import { vpn } from '@kit.NetworkKit';
 ```
 
+<a id="deletesysvpnconfig"></a>
 ## deleteSysVpnConfig
 
 ```TypeScript
@@ -34,7 +35,7 @@ Delete the configuration of system VPN network by the specified vpnId.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

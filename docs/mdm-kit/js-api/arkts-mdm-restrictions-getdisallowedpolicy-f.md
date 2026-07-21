@@ -6,6 +6,7 @@
 import { restrictions } from '@kit.MDMKit';
 ```
 
+<a id="getdisallowedpolicy"></a>
 ## getDisallowedPolicy
 
 ```TypeScript
@@ -18,7 +19,7 @@ Queries whether a feature is disabled.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** getDisallowedPolicy(admin:
+**Substitutes:** [getDisallowedPolicy(admin:](arkts-mdm-restrictions-getdisallowedpolicy-f.md#getdisallowedpolicy-1)
 
 **Required permissions:** 
 - API version 20+: ohos.permission.ENTERPRISE_MANAGE_RESTRICTIONS or ohos.permission.PERSONAL_MANAGE_RESTRICTIONS or ohos.permission.ENTERPRISE_MANAGE_NETWORK
@@ -35,8 +36,8 @@ Queries whether a feature is disabled.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application.<br>**Since:** 20 |
-| feature | string | Yes | For features that can be queried, see Table 2.<br> **Note**: Since API version 15,applications granted with the ohos.permission.PERSONAL_MANAGE_RESTRICTIONS permission and [activated as device administrator applications](arkts-mdm-adminmanager-startadminprovision-f.md#startadminprovision-1)can use this API to obtain the status of following features: **bluetooth**, **hdc**, **microphone**, **usb**,**wifi**, **tethering**, and **camera**&lt;!--RP4--&gt;&lt;!--RP4End--&gt;. Since API version 26.0.0, this API can be used to obtain the status of the **mtpServer** feature. |
+| admin | [Want](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-want-want-c.md) \| null | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application.<br>**Since:** 20 |
+| feature | string | Yes | For features that can be queried, see Table 2.<br> **Note**: Since API version 15,applications granted with the ohos.permission.PERSONAL_MANAGE_RESTRICTIONS permission and [activated as device administrator applications](arkts-mdm-adminmanager-startadminprovision-f.md#startadminprovision-1)can use this API to obtain the status of following features: **bluetooth**, **hdc**, **microphone**, **usb**,**wifi**, **tethering**, and **camera**<!--RP4--><!--RP4End-->. Since API version 26.0.0, this API can be used to obtain the status of the **mtpServer** feature. |
 
 **Return value:**
 
@@ -75,6 +76,7 @@ try {
 ```
 
 
+<a id="getdisallowedpolicy-1"></a>
 ## getDisallowedPolicy
 
 ```TypeScript
@@ -97,7 +99,7 @@ Queries whether a specified device feature is disabled.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
+| admin | [Want](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-want-want-c.md) \| null | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | feature | [FeatureForDevice](arkts-mdm-restrictions-featurefordevice-e.md) | Yes | Device feature to be queried. |
 
 **Return value:**

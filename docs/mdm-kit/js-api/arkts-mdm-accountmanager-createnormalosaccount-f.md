@@ -6,6 +6,7 @@
 import { accountManager } from '@kit.MDMKit';
 ```
 
+<a id="createnormalosaccount"></a>
 ## createNormalOsAccount
 
 ```TypeScript
@@ -35,7 +36,7 @@ Adds a normal OS account using the name.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<osAccount.OsAccountInfo> | Returns the information about the added OS account. |
+| Promise&lt;osAccount.OsAccountInfo&gt; | Returns the information about the added OS account. |
 
 **Error codes:**
 

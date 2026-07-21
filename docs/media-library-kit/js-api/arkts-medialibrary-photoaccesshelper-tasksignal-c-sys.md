@@ -16,6 +16,7 @@ for interrupting batch operations.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
+<a id="cancel"></a>
 ## cancel
 
 ```TypeScript

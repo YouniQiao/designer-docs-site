@@ -6,6 +6,7 @@
 import { hid } from '@kit.ConnectivityKit';
 ```
 
+<a id="createhiddeviceprofile"></a>
 ## createHidDeviceProfile
 
 ```TypeScript

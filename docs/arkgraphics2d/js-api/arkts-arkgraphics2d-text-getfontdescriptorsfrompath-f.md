@@ -6,6 +6,7 @@
 import { text } from '@kit.ArkGraphics2D';
 ```
 
+<a id="getfontdescriptorsfrompath"></a>
 ## getFontDescriptorsFromPath
 
 ```TypeScript
@@ -42,7 +43,7 @@ Obtains an array of font descriptors by font file path. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<FontDescriptor>> | Promise used to return all font descriptors. If the font file cannot be found, the path is invalid, the font file does not have the required permission, or the file is not a font file, an empty array is returned. |
+| Promise&lt;Array&lt;FontDescriptor&gt;&gt; | Promise used to return all font descriptors. If the font file cannot be found, the path is invalid, the font file does not have the required permission, or the file is not a font file, an empty array is returned. |
 
 **Example**
 

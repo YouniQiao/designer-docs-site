@@ -6,6 +6,7 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
+<a id="accesssync"></a>
 ## accessSync
 
 ```TypeScript
@@ -55,6 +56,7 @@ If the read, write, or read and write permission verification fails, the error c
 | 13900042 | Unknown error |
 
 
+<a id="accesssync-1"></a>
 ## accessSync
 
 ```TypeScript

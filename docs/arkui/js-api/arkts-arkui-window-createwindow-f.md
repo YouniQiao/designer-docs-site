@@ -6,6 +6,7 @@
 import { window } from '@kit.ArkUI';
 ```
 
+<a id="createwindow"></a>
 ## createWindow
 
 ```TypeScript
@@ -14,7 +15,7 @@ function createWindow(config: Configuration, callback: AsyncCallback<Window>): v
 
 Creates a child window or system window. This API uses an asynchronous callback to return the result.
 
-In non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode, the child window created uses an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) by default.
+In non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode, the child window created uses an [immersive layout](docroot://windowmanager/window-terminology.md#immersive-layout) by default.
 
 In freeform window mode, the child window created uses an immersive layout when [decorEnabled](arkts-arkui-window-configuration-i.md) is set to **false**, and it uses a non-immersive layout when this parameter is set to **true**.
 
@@ -34,7 +35,7 @@ In freeform window mode, the child window created uses an immersive layout when 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [Configuration](arkts-arkui-window-configuration-i.md) | Yes | Parameters for window creation. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Window> | Yes | Callback used to return the window created. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Window&gt; | Yes | Callback used to return the window created. |
 
 **Error codes:**
 
@@ -85,6 +86,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
+<a id="createwindow-1"></a>
 ## createWindow
 
 ```TypeScript
@@ -93,7 +95,7 @@ function createWindow(config: Configuration): Promise<Window>
 
 Creates a child window or system window. This API uses a promise to return the result.
 
-In non-[freeform window](../../../../windowmanager/window-terminology.md#freeform-window) mode, the child window created uses an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) by default.
+In non-[freeform window](docroot://windowmanager/window-terminology.md#freeform-window) mode, the child window created uses an [immersive layout](docroot://windowmanager/window-terminology.md#immersive-layout) by default.
 
 In freeform window mode, the child window created uses an immersive layout when [decorEnabled](arkts-arkui-window-configuration-i.md) is set to **false**, and it uses a non-immersive layout when this parameter is set to **true**.
 
@@ -118,7 +120,7 @@ In freeform window mode, the child window created uses an immersive layout when 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Window> | Promise used to return the window created. |
+| Promise&lt;Window&gt; | Promise used to return the window created. |
 
 **Error codes:**
 

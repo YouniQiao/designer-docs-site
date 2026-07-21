@@ -14,6 +14,7 @@
 import { ssap } from '@kit.ConnectivityKit';
 ```
 
+<a id="callmethod"></a>
 ## callMethod
 
 ```TypeScript
@@ -44,7 +45,7 @@ callMethod(method: Method): Promise<Method>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<Method> | Promise用于返回方法结果。 |
+| Promise&lt;Method&gt; | Promise用于返回方法结果。 |
 
 **错误码：**
 
@@ -57,6 +58,7 @@ callMethod(method: Method): Promise<Method>
 | [36100044](../errorcode-nearlink.md#36100044-禁止使用星闪标准服务uuid) | NearLink standard UUID not allowed. |
 | [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
+<a id="offeventnotify"></a>
 ## offEventNotify
 
 ```TypeScript
@@ -79,8 +81,9 @@ offEventNotify(callback?: Callback<Event>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<Event> | 否 | 用于监听事件通知事件的回调。 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;Event&gt; | 否 | 用于监听事件通知事件的回调。 |
 
+<a id="oneventnotify"></a>
 ## onEventNotify
 
 ```TypeScript
@@ -105,8 +108,9 @@ onEventNotify(callback: Callback<Event>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)<Event> | 是 | 用于监听事件通知事件的回调。 |
+| callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;Event&gt; | 是 | 用于监听事件通知事件的回调。 |
 
+<a id="readdescriptor"></a>
 ## readDescriptor
 
 ```TypeScript
@@ -137,7 +141,7 @@ readDescriptor(descriptor: PropertyDescriptor): Promise<PropertyDescriptor>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<PropertyDescriptor> | Promise用于返回描述符值。 |
+| Promise&lt;PropertyDescriptor&gt; | Promise用于返回描述符值。 |
 
 **错误码：**
 
@@ -150,6 +154,7 @@ readDescriptor(descriptor: PropertyDescriptor): Promise<PropertyDescriptor>
 | [36100044](../errorcode-nearlink.md#36100044-禁止使用星闪标准服务uuid) | NearLink standard UUID not allowed. |
 | [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
+<a id="setpropertyindication"></a>
 ## setPropertyIndication
 
 ```TypeScript
@@ -181,7 +186,7 @@ setPropertyIndication(property: Property, enable: boolean): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | 返回promise对象。 |
+| Promise&lt;void&gt; | 返回promise对象。 |
 
 **错误码：**
 
@@ -195,6 +200,7 @@ setPropertyIndication(property: Property, enable: boolean): Promise<void>
 | [36100044](../errorcode-nearlink.md#36100044-禁止使用星闪标准服务uuid) | NearLink standard UUID not allowed. |
 | [36100099](../errorcode-nearlink.md#36100099-操作失败) | Operation failed. |
 
+<a id="writedescriptor"></a>
 ## writeDescriptor
 
 ```TypeScript
@@ -227,7 +233,7 @@ writeDescriptor(descriptor: PropertyDescriptor): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise<void> | Promise用于返回结果。 |
+| Promise&lt;void&gt; | Promise用于返回结果。 |
 
 **错误码：**
 

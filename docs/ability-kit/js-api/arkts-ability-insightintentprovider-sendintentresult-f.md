@@ -6,6 +6,7 @@
 import { insightIntentProvider } from '@kit.AbilityKit';
 ```
 
+<a id="sendintentresult"></a>
 ## sendIntentResult
 
 ```TypeScript
@@ -29,13 +30,13 @@ Send intent result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | instanceId | number | Yes | The insight intent instance ID.It is from InsightIntentEntryExecutor.context.instanceId. |
-| result | insightIntent.IntentResult<T> | Yes | The result of insight intent execution. |
+| result | insightIntent.IntentResult&lt;T&gt; | Yes | The result of insight intent execution. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - The promise returned by the function. |
+| Promise&lt;void&gt; | - The promise returned by the function. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getallplugininfo"></a>
 ## getAllPluginInfo
 
 ```TypeScript
@@ -35,7 +36,7 @@ Obtains all the plugin information in the system based on the given host bundle 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PluginBundleInfo>> | Promise used to return the array of plugin information obtained. |
+| Promise&lt;Array&lt;PluginBundleInfo&gt;&gt; | Promise used to return the array of plugin information obtained. |
 
 **Error codes:**
 

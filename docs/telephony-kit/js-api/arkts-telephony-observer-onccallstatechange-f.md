@@ -6,6 +6,7 @@
 import { observer } from '@kit.TelephonyKit';
 ```
 
+<a id="onccallstatechange"></a>
 ## onCCallStateChange
 
 ```TypeScript
@@ -26,7 +27,7 @@ Called when the carrier call state changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CCallStateInfo> | Yes | Indicates the callback for getting the carrier call state. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CCallStateInfo&gt; | Yes | Indicates the callback for getting the carrier call state. |
 | options | [ObserverOptions](arkts-telephony-observer-observeroptions-i.md) | No | Indicates the options for observer. |
 
 **Error codes:**

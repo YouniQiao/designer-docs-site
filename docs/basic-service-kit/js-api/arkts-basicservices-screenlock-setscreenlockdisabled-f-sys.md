@@ -6,6 +6,7 @@
 import { screenLock } from '@kit.BasicServicesKit';
 ```
 
+<a id="setscreenlockdisabled"></a>
 ## setScreenLockDisabled
 
 ```TypeScript
@@ -35,7 +36,7 @@ Disable screen lock showing for os account local userId. This only becomes effec
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | the promise returned by the function. |
+| Promise&lt;boolean&gt; | the promise returned by the function. |
 
 **Error codes:**
 

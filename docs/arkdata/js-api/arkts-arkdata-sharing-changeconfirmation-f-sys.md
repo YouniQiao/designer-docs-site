@@ -6,6 +6,7 @@
 import { cloudData } from '@kit.ArkData';
 ```
 
+<a id="changeconfirmation"></a>
 ## changeConfirmation
 
 ```TypeScript
@@ -28,7 +29,7 @@ Changes the invitation confirmation state based on the shared resource ID.This A
 | --- | --- | --- | --- |
 | sharingResource | string | Yes | Shared resource ID. |
 | state | [State](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-agent-state-e.md) | Yes | New confirmation state of the invitation. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Result<void>> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Result&lt;void&gt;&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -54,6 +55,7 @@ cloudData.sharing.changeConfirmation('sharing_resource_test', cloudData.sharing.
 ```
 
 
+<a id="changeconfirmation-1"></a>
 ## changeConfirmation
 
 ```TypeScript
@@ -81,7 +83,7 @@ Changes the invitation confirmation state based on the shared resource ID.This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result<void>> | Promise used to return the result. |
+| Promise&lt;Result&lt;void&gt;&gt; | Promise used to return the result. |
 
 **Error codes:**
 

@@ -4,6 +4,8 @@ Defines AtomicServiceNavigation.
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct AtomicServiceNavigation--><!--Device-unnamed-export declare struct AtomicServiceNavigation-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -62,7 +64,7 @@ menus?: CustomBuilder | Array<NavigationMenuItem>
 
 The layout style users defined and inserted.
 
-**Type:** CustomBuilder | Array<NavigationMenuItem>
+**Type:** CustomBuilder \| Array&lt;NavigationMenuItem&gt;
 
 **Since:** 18
 
@@ -122,7 +124,7 @@ modeChangeCallback?: Callback<NavigationMode>
 
 Trigger callback when navigation mode changes.
 
-**Type:** Callback<NavigationMode>
+**Type:** Callback&lt;NavigationMode&gt;
 
 **Since:** 12
 
@@ -163,10 +165,7 @@ navBarWidthRange?: [
 
 Sets the minimum width and the maximum width of navigation bar.
 
-**Type:** [
-    Dimension,
-    Dimension
-  ]
+**Type:** [     Dimension,     Dimension   ]
 
 **Since:** 12
 
@@ -232,7 +231,7 @@ navigationContent?: Callback<void>
 
 the content of Navigation.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 
@@ -252,7 +251,7 @@ sideBarContent?: Callback<void>
 
 Set side bar content.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 18
 
@@ -292,7 +291,7 @@ stateChangeCallback?: Callback<boolean>
 
 Trigger callback when the visibility of navigation bar change.
 
-**Type:** Callback<boolean>
+**Type:** Callback&lt;boolean&gt;
 
 **Since:** 12
 

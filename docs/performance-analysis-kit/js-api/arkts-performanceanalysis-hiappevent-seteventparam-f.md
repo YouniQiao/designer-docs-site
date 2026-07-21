@@ -6,6 +6,7 @@
 import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
+<a id="seteventparam"></a>
 ## setEventParam
 
 ```TypeScript
@@ -26,15 +27,15 @@ Sets custom event parameters. This API uses a promise to return the result. Duri
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| params | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)<string, ParamType> | Yes | Custom parameter object. The parameter name and value are defined as follows:<br>- A parameter name is a string that contains a maximum of 32 characters, including digits (0 to 9),letters (a to z)(A to Z), underscore (_), and dollar sign ($). It must start with a letter or dollar sign ($) and end with a digit or letter. <br>- The parameter value is of the [ParamType](arkts-performanceanalysis-hiappevent-paramtype-t.md) and contains a maximum of 1024 characters.<br>- The number of parameters must be less than 64. |
+| params | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, ParamType&gt; | Yes | Custom parameter object. The parameter name and value are defined as follows:<br>- A parameter name is a string that contains a maximum of 32 characters, including digits (0 to 9),letters (a to z)(A to Z), underscore (_), and dollar sign ($). It must start with a letter or dollar sign ($) and end with a digit or letter. <br>- The parameter value is of the [ParamType](arkts-performanceanalysis-hiappevent-paramtype-t.md) and contains a maximum of 1024 characters.<br>- The number of parameters must be less than 64. |
 | domain | string | Yes | Event domain. The event domain can be associated with application events and system events (hiAppEvent.domain.OS). |
-| name | string | No | Event name. The default value is an empty string, which indicates all event names in the associated event domain. Event names can be used to associate application events and system events. System events can only be associated with the following events:<br>-[Crash event](../../../../dfx/hiappevent-watcher-crash-events.md) (**hiAppEvent.event.APP_CRASH**)<br>-[Application freeze event](../../../../dfx/hiappevent-watcher-freeze-events.md) (**hiAppEvent.event.APP_FREEZE**)<br>- [Resource leak event](../../../../dfx/hiappevent-watcher-resourceleak-events.md) (**hiAppEvent.event.RESOURCE_OVERLIMIT**).<br>**Note**: Since API version 20, the [resource leak event](../../../../dfx/hiappevent-watcher-resourceleak-events.md) is supported. |
+| name | string | No | Event name. The default value is an empty string, which indicates all event names in the associated event domain. Event names can be used to associate application events and system events. System events can only be associated with the following events:<br>-[Crash event](docroot://dfx/hiappevent-watcher-crash-events.md) (**hiAppEvent.event.APP_CRASH**)<br>-[Application freeze event](docroot://dfx/hiappevent-watcher-freeze-events.md) (**hiAppEvent.event.APP_FREEZE**)<br>- [Resource leak event](docroot://dfx/hiappevent-watcher-resourceleak-events.md) (**hiAppEvent.event.RESOURCE_OVERLIMIT**).<br>**Note**: Since API version 20, the [resource leak event](docroot://dfx/hiappevent-watcher-resourceleak-events.md) is supported. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

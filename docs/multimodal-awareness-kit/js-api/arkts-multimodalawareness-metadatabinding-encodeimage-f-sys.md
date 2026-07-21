@@ -6,6 +6,7 @@
 import { metadataBinding } from '@kit.MultimodalAwarenessKit';
 ```
 
+<a id="encodeimage"></a>
 ## encodeImage
 
 ```TypeScript
@@ -33,7 +34,7 @@ Encodes metadata into an image. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<image.PixelMap> | Promise object, which is used to return the image with encoded metadata. |
+| Promise&lt;image.PixelMap&gt; | Promise object, which is used to return the image with encoded metadata. |
 
 **Error codes:**
 

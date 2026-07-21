@@ -6,7 +6,7 @@ The hint is obtained when an [InterruptEvent](arkts-audio-audio-interruptevent-i
 
 The hint specifies the operation (such as audio pause or volume adjustment) to be performed on audio streams based on the focus strategy.
 
-You can determine whether the operation is forcibly performed by the system based on [InterruptForceType](arkts-audio-audio-interruptforcetype-e.md) in **InterruptEvent**. For details, see [Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).
+You can determine whether the operation is forcibly performed by the system based on [InterruptForceType](arkts-audio-audio-interruptforcetype-e.md) in **InterruptEvent**. For details, see [Introduction to Audio Focus](docroot://media/audio/audio-playback-concurrency.md).
 
 **Since:** 7
 

@@ -14,6 +14,7 @@ Base class for the test framework.If you want to implement your own unit test fr
 import { TestRunner } from '@kit.TestKit';
 ```
 
+<a id="onprepare"></a>
 ## onPrepare
 
 ```TypeScript
@@ -46,6 +47,7 @@ export default class UserTestRunner implements TestRunner {
 
 ```
 
+<a id="onrun"></a>
 ## onRun
 
 ```TypeScript

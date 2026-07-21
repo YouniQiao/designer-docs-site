@@ -32,7 +32,7 @@ Regular OTA. In this mode, download the complete upgrade package to the local de
 STREAM_OTA = 1
 ```
 
-Streaming OTA. In this mode, the upgrade is performed while the package is being downloaded. This mode applies to scenarios where the storage space is limited or a quick upgrade is required. For details, see [Upgrading Service Terms](../../../../basic-services/update/update-kit-term.md)
+Streaming OTA. In this mode, the upgrade is performed while the package is being downloaded. This mode applies to scenarios where the storage space is limited or a quick upgrade is required. For details, see [Upgrading Service Terms](docroot://basic-services/update/update-kit-term.md)
 
 **Since:** 20
 
@@ -48,7 +48,7 @@ Streaming OTA. In this mode, the upgrade is performed while the package is being
 AB_REGULAR_OTA = 2
 ```
 
-Regular A/B OTA. This mode applies to devices with A/B partitions. For details, see [Upgrading Service Terms](../../../../basic-services/update/update-kit-term.md)
+Regular A/B OTA. This mode applies to devices with A/B partitions. For details, see [Upgrading Service Terms](docroot://basic-services/update/update-kit-term.md)
 
 **Since:** 20
 
@@ -64,7 +64,7 @@ Regular A/B OTA. This mode applies to devices with A/B partitions. For details, 
 AB_STREAM_OTA = 3
 ```
 
-Streaming A/B OTA. This mode applies to devices with A/B partitions. For details, see [Upgrading Service Terms](../../../../basic-services/update/update-kit-term.md)
+Streaming A/B OTA. This mode applies to devices with A/B partitions. For details, see [Upgrading Service Terms](docroot://basic-services/update/update-kit-term.md)
 
 **Since:** 20
 

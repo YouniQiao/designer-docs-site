@@ -16,6 +16,7 @@ Implements wakeup management.
 import { intelligentVoice } from '@kit.BasicServicesKit';
 ```
 
+<a id="clearuserdata"></a>
 ## clearUserData
 
 ```TypeScript
@@ -38,7 +39,7 @@ Clears user data.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise used to return the result. |
+| Promise&lt;void&gt; | the promise used to return the result. |
 
 **Error codes:**
 
@@ -63,6 +64,7 @@ if (wakeupManager != null) {
 
 ```
 
+<a id="enrollwithwakeupfilesforresult"></a>
 ## enrollWithWakeupFilesForResult
 
 ```TypeScript
@@ -85,14 +87,14 @@ Enrolls with wakeup files for result. This method uses a promise to return the e
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| wakeupFiles | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<WakeupSourceFile> | Yes | the wakeup source files needed. |
+| wakeupFiles | Array&lt;WakeupSourceFile&gt; | Yes | the wakeup source files needed. |
 | wakeupInfo | string | Yes | wakeup information. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<EnrollResult> | the promise used to return the enroll result. |
+| Promise&lt;EnrollResult&gt; | the promise used to return the enroll result. |
 
 **Error codes:**
 
@@ -127,6 +129,7 @@ if (wakeupManager != null) {
 
 ```
 
+<a id="getparameter"></a>
 ## getParameter
 
 ```TypeScript
@@ -155,7 +158,7 @@ Obtains the value of an intelligent voice parameter. This method uses a promise 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | the promise used to return the value of the intelligent voice parameter. |
+| Promise&lt;string&gt; | the promise used to return the value of the intelligent voice parameter. |
 
 **Error codes:**
 
@@ -183,6 +186,7 @@ if (wakeupManager != null) {
 
 ```
 
+<a id="getuploadfiles"></a>
 ## getUploadFiles
 
 ```TypeScript
@@ -211,7 +215,7 @@ Obtains files needed to upload. This method uses a promise to return the files n
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<UploadFile>> | the promise used to return the upload files. |
+| Promise&lt;Array&lt;UploadFile&gt;&gt; | the promise used to return the upload files. |
 
 **Error codes:**
 
@@ -240,6 +244,7 @@ if (wakeupManager != null) {
 
 ```
 
+<a id="getwakeupsourcefiles"></a>
 ## getWakeupSourceFiles
 
 ```TypeScript
@@ -262,7 +267,7 @@ Obtains wakeup source files. This method uses a promise to return the wakeup sou
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<WakeupSourceFile>> | the promise used to return the wakeup source files. |
+| Promise&lt;Array&lt;WakeupSourceFile&gt;&gt; | the promise used to return the wakeup source files. |
 
 **Error codes:**
 
@@ -290,6 +295,7 @@ if (wakeupManager != null) {
 
 ```
 
+<a id="setparameter"></a>
 ## setParameter
 
 ```TypeScript
@@ -319,7 +325,7 @@ Sets an intelligent voice parameter. This method uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | the promise used to return the result. |
+| Promise&lt;void&gt; | the promise used to return the result. |
 
 **Error codes:**
 

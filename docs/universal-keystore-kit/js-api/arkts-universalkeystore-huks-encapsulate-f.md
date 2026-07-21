@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="encapsulate"></a>
 ## encapsulate
 
 ```TypeScript
@@ -38,7 +39,7 @@ Post-Quantum Cryptography key encapsulation operation, supporting key management
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | The promise returned by the function. |
+| Promise&lt;HuksReturnResult&gt; | The promise returned by the function. |
 
 **Error codes:**
 

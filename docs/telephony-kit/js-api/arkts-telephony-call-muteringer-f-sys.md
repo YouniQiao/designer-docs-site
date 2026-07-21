@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="muteringer"></a>
 ## muteRinger
 
 ```TypeScript
@@ -30,7 +31,7 @@ If an incoming call is ringing, the phone stops ringing. Otherwise, this method 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of muteRinger. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of muteRinger. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ call.muteRinger((err: BusinessError) => {
 ```
 
 
+<a id="muteringer-1"></a>
 ## muteRinger
 
 ```TypeScript
@@ -84,7 +86,7 @@ If an incoming call is ringing, the phone stops ringing. Otherwise, this method 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the muteRinger. |
+| Promise&lt;void&gt; | The promise returned by the muteRinger. |
 
 **Error codes:**
 

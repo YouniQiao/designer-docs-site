@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getglobalhttpproxy"></a>
 ## getGlobalHttpProxy
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the network independent global {@link HttpProxy} proxy settings.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HttpProxy> | Yes | Returns the proxy settings. For details, see {@link HttpProxy}. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HttpProxy&gt; | Yes | Returns the proxy settings. For details, see {@link HttpProxy}. |
 
 **Error codes:**
 
@@ -51,6 +52,7 @@ connection.getGlobalHttpProxy((error: BusinessError, data: connection.HttpProxy)
 ```
 
 
+<a id="getglobalhttpproxy-1"></a>
 ## getGlobalHttpProxy
 
 ```TypeScript
@@ -71,7 +73,7 @@ Obtains the network independent global {@link HttpProxy} proxy settings.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HttpProxy> | the promise returned by the function. |
+| Promise&lt;HttpProxy&gt; | the promise returned by the function. |
 
 **Error codes:**
 

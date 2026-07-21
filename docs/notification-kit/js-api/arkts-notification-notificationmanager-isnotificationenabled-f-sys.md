@@ -6,6 +6,7 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
+<a id="isnotificationenabled"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -29,7 +30,7 @@ Checks whether notification is enabled for the specified application. This API u
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundle | [BundleOption](arkts-notification-notificationcommondef-bundleoption-i.md) | Yes | Bundle information of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ notificationManager.isNotificationEnabled(bundle, isNotificationEnabledCallback)
 ```
 
 
+<a id="isnotificationenabled-1"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -93,7 +95,7 @@ Checks whether notification is enabled for the specified application. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -124,6 +126,7 @@ notificationManager.isNotificationEnabled(bundle).then((data: boolean) => {
 ```
 
 
+<a id="isnotificationenabled-2"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -149,7 +152,7 @@ This API is used to check whether the current application is allowed to send not
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that the notification can be published; **false** means the opposite. If this API call fails, an error object is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that the notification can be published; **false** means the opposite. If this API call fails, an error object is returned. |
 
 **Error codes:**
 
@@ -182,6 +185,7 @@ notificationManager.isNotificationEnabled(isNotificationEnabledCallback);
 ```
 
 
+<a id="isnotificationenabled-3"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -207,7 +211,7 @@ This API is used to check whether the current application is allowed to send not
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -235,6 +239,7 @@ notificationManager.isNotificationEnabled().then((data: boolean) => {
 ```
 
 
+<a id="isnotificationenabled-4"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -258,7 +263,7 @@ Checks whether notification is enabled for a specified user. This API uses an as
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | userId | number | Yes | User ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
 
 **Error codes:**
 
@@ -293,6 +298,7 @@ notificationManager.isNotificationEnabled(userId, isNotificationEnabledCallback)
 ```
 
 
+<a id="isnotificationenabled-5"></a>
 ## isNotificationEnabled
 
 ```TypeScript
@@ -321,7 +327,7 @@ Checks whether notification is enabled for a specified user. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means that the notification is enabled, and **false** means the opposite. |
 
 **Error codes:**
 

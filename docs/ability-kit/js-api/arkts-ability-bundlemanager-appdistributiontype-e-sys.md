@@ -1,6 +1,6 @@
 # AppDistributionType (System API)
 
-Enumerates the application [distribution types](../../../../security/app-provision-structure.md).
+Enumerates the application [distribution types](docroot://security/app-provision-structure.md).
 
 **Since:** 12
 

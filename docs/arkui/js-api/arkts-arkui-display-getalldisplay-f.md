@@ -6,6 +6,7 @@
 import { display } from '@kit.ArkUI';
 ```
 
+<a id="getalldisplay"></a>
 ## getAllDisplay
 
 ```TypeScript
@@ -18,7 +19,7 @@ Obtains all Display objects. This API uses an asynchronous callback to return th
 
 **Deprecated since:** 9
 
-**Substitutes:** getAllDisplays(callback:
+**Substitutes:** [getAllDisplays(callback:](arkts-arkui-display-getalldisplays-f.md#getalldisplays-1)
 
 <!--Device-display-function getAllDisplay(callback: AsyncCallback<Array<Display>>): void--><!--Device-display-function getAllDisplay(callback: AsyncCallback<Array<Display>>): void-End-->
 
@@ -28,7 +29,7 @@ Obtains all Display objects. This API uses an asynchronous callback to return th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<Display>> | Yes | Callback used to return all the Display objects. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;Display&gt;&gt; | Yes | Callback used to return all the Display objects. |
 
 **Example**
 
@@ -47,6 +48,7 @@ display.getAllDisplay((err: BusinessError, data: Array<display.Display>) => {
 ```
 
 
+<a id="getalldisplay-1"></a>
 ## getAllDisplay
 
 ```TypeScript
@@ -59,7 +61,7 @@ Obtains all Display objects. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getAllDisplays()](arkts-arkui-display-getalldisplays-f.md#getalldisplays-2)
+**Substitutes:** [getAllDisplays()](arkts-arkui-display-getalldisplays-f.md#getalldisplays-1)
 
 <!--Device-display-function getAllDisplay(): Promise<Array<Display>>--><!--Device-display-function getAllDisplay(): Promise<Array<Display>>-End-->
 
@@ -69,7 +71,7 @@ Obtains all Display objects. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<Display>> | Promise used to return all the Display objects. |
+| Promise&lt;Array&lt;Display&gt;&gt; | Promise used to return all the Display objects. |
 
 **Example**
 

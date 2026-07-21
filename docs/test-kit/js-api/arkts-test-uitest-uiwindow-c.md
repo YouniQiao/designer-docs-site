@@ -14,6 +14,7 @@ The **UiWindow** class represents a window on the UI and provides APIs for obtai
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
+<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -34,7 +35,7 @@ Closes a window. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -58,6 +59,7 @@ async function demo() {
 
 ```
 
+<a id="focus"></a>
 ## focus
 
 ```TypeScript
@@ -78,7 +80,7 @@ Focuses a window. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -101,6 +103,7 @@ async function demo() {
 
 ```
 
+<a id="getbounds"></a>
 ## getBounds
 
 ```TypeScript
@@ -121,7 +124,7 @@ Obtains the bounds information of a window. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Rect> | - Promise used to return the window border information. |
+| Promise&lt;Rect&gt; | - Promise used to return the window border information. |
 
 **Error codes:**
 
@@ -144,6 +147,7 @@ async function demo() {
 
 ```
 
+<a id="getbundlename"></a>
 ## getBundleName
 
 ```TypeScript
@@ -164,7 +168,7 @@ Obtains the bundle name of the application to which a window belongs. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - Promise used to return the bundle name of the application to which the window belongs. |
+| Promise&lt;string&gt; | - Promise used to return the bundle name of the application to which the window belongs. |
 
 **Error codes:**
 
@@ -187,6 +191,7 @@ async function demo() {
 
 ```
 
+<a id="getdisplayid"></a>
 ## getDisplayId
 
 ```TypeScript
@@ -207,7 +212,7 @@ Obtains the ID of the display to which a window belongs. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | - Promise used to return the ID of the display to which the window belongs. |
+| Promise&lt;number&gt; | - Promise used to return the ID of the display to which the window belongs. |
 
 **Error codes:**
 
@@ -230,6 +235,7 @@ async function demo() {
 
 ```
 
+<a id="gettitle"></a>
 ## getTitle
 
 ```TypeScript
@@ -250,7 +256,7 @@ Obtains the window title. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | - Promise used to return the window title. |
+| Promise&lt;string&gt; | - Promise used to return the window title. |
 
 **Error codes:**
 
@@ -273,6 +279,7 @@ async function demo() {
 
 ```
 
+<a id="getwindowmode"></a>
 ## getWindowMode
 
 ```TypeScript
@@ -293,7 +300,7 @@ Obtains the window mode. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<WindowMode> | - Promise used to return the window mode information. |
+| Promise&lt;WindowMode&gt; | - Promise used to return the window mode information. |
 
 **Error codes:**
 
@@ -316,6 +323,7 @@ async function demo() {
 
 ```
 
+<a id="isactive"></a>
 ## isActive
 
 ```TypeScript
@@ -336,7 +344,7 @@ Checks whether a window is active. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the window is active. The value **true** indicates that the window is active, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the window is active. The value **true** indicates that the window is active, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -359,6 +367,7 @@ async function demo() {
 
 ```
 
+<a id="isactived"></a>
 ## isActived
 
 ```TypeScript
@@ -381,7 +390,7 @@ Checks whether a window is active. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the window is active. The value **true** indicates that the window is active, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the window is active. The value **true** indicates that the window is active, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -404,6 +413,7 @@ async function demo() {
 
 ```
 
+<a id="isfocused"></a>
 ## isFocused
 
 ```TypeScript
@@ -424,7 +434,7 @@ Checks whether a window is focused. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | - Promise used to return whether the window is focused. The value **true** indicates that the component is focused, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | - Promise used to return whether the window is focused. The value **true** indicates that the component is focused, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -447,6 +457,7 @@ async function demo() {
 
 ```
 
+<a id="maximize"></a>
 ## maximize
 
 ```TypeScript
@@ -467,7 +478,7 @@ Maximizes a window. This API uses a promise to return the result. This API is ap
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -491,6 +502,7 @@ async function demo() {
 
 ```
 
+<a id="minimize"></a>
 ## minimize
 
 ```TypeScript
@@ -511,7 +523,7 @@ Minimizes a window. This API uses a promise to return the result. This API is ap
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -535,6 +547,7 @@ async function demo() {
 
 ```
 
+<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -562,7 +575,7 @@ Moves a window to the target point. This API uses a promise to return the result
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -587,6 +600,7 @@ async function demo() {
 
 ```
 
+<a id="resize"></a>
 ## resize
 
 ```TypeScript
@@ -615,7 +629,7 @@ Resizes a window based on the specified width, height, and direction. This API u
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -626,6 +640,7 @@ Resizes a window based on the specified width, height, and direction. This API u
 | [17000004](../errorcode-uitest.md#17000004-target-componentwindow-lost) | The window or component is invisible or destroyed. |
 | [17000005](../errorcode-uitest.md#17000005-operation-not-supported) | This operation is not supported. |
 
+<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -646,7 +661,7 @@ Resumes a window to its previous mode. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 
@@ -670,6 +685,7 @@ async function demo() {
 
 ```
 
+<a id="split"></a>
 ## split
 
 ```TypeScript
@@ -690,7 +706,7 @@ Switches to the split-screen mode. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | - Promise that returns no value. |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **Error codes:**
 

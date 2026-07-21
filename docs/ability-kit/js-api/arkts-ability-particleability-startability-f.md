@@ -6,6 +6,7 @@
 import { particleAbility } from '@kit.AbilityKit';
 ```
 
+<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -17,7 +18,7 @@ Starts a ParticleAbility. This API uses an asynchronous callback to return the r
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the FA model, see  
-> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
+> [Component Startup Rules (FA Model)](docroot://application-models/component-startup-rules-fa.md).
 
 **Since:** 7
 
@@ -32,7 +33,7 @@ Starts a ParticleAbility. This API uses an asynchronous callback to return the r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | parameter | [StartAbilityParameter](arkts-ability-ability-startabilityparameter-t.md) | Yes | Ability to start. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the ParticleAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the ParticleAbility is started, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Example**
 
@@ -65,6 +66,7 @@ particleAbility.startAbility(
 ```
 
 
+<a id="startability-1"></a>
 ## startAbility
 
 ```TypeScript
@@ -76,7 +78,7 @@ Starts a ParticleAbility. This API uses a promise to return the result.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the FA model, see  
-> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
+> [Component Startup Rules (FA Model)](docroot://application-models/component-startup-rules-fa.md).
 
 **Since:** 7
 
@@ -96,7 +98,7 @@ Starts a ParticleAbility. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. Promise that returns no value. |
+| Promise&lt;void&gt; | Promise used to return the result. Promise that returns no value. |
 
 **Example**
 

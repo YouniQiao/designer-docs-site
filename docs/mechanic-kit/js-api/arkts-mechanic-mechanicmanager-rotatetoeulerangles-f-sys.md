@@ -6,6 +6,7 @@
 import { mechanicManager } from '@kit.MechanicKit';
 ```
 
+<a id="rotatetoeulerangles"></a>
 ## rotateToEulerAngles
 
 ```TypeScript
@@ -34,7 +35,7 @@ Rotates a mechanical device to the absolute angles.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Result> | Promise that return the execution result. |
+| Promise&lt;Result&gt; | Promise that return the execution result. |
 
 **Error codes:**
 

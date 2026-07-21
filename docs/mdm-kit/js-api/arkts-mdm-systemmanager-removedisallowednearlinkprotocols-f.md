@@ -6,6 +6,7 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
+<a id="removedisallowednearlinkprotocols"></a>
 ## removeDisallowedNearLinkProtocols
 
 ```TypeScript
@@ -29,7 +30,7 @@ Removes the list of disallowed NearLink protocols for a specified user.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| protocols | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<NearLinkProtocol> | Yes | NearLink protocol list. |
+| protocols | Array&lt;NearLinkProtocol&gt; | Yes | NearLink protocol list. |
 | accountId | number | Yes | User ID, which must be greater than or equal to 0.<br>You can call APIs such as [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)to obtain the user ID. |
 
 **Error codes:**

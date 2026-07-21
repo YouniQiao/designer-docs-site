@@ -6,6 +6,7 @@
 import { autoStartupManager } from '@kit.AbilityKit';
 ```
 
+<a id="queryallautostartupapplications"></a>
 ## queryAllAutoStartupApplications
 
 ```TypeScript
@@ -30,7 +31,7 @@ Obtains information about all auto-startup application components. This API uses
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AutoStartupInfo>> | Yes | Callback used to return the result. If the information is obtained, **err** is **undefined** and **data** is **Array&lt;[AutoStartupInfo](arkts-ability-autostartupinfo-i-sys.md)&gt;**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AutoStartupInfo&gt;&gt; | Yes | Callback used to return the result. If the information is obtained, **err** is **undefined** and **data** is **Array<[AutoStartupInfo](arkts-ability-autostartupinfo-i-sys.md)>**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -42,6 +43,7 @@ Obtains information about all auto-startup application components. This API uses
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Failed to connect to the system service. |
 
 
+<a id="queryallautostartupapplications-1"></a>
 ## queryAllAutoStartupApplications
 
 ```TypeScript
@@ -66,7 +68,7 @@ Obtains information about all auto-startup application components. This API uses
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AutoStartupInfo>> | Promise used to return the information obtained. |
+| Promise&lt;Array&lt;AutoStartupInfo&gt;&gt; | Promise used to return the information obtained. |
 
 **Error codes:**
 

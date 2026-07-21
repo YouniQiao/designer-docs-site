@@ -6,6 +6,7 @@
 import { connection } from '@kit.NetworkKit';
 ```
 
+<a id="getdefaulthttpproxy"></a>
 ## getDefaultHttpProxy
 
 ```TypeScript
@@ -26,7 +27,7 @@ If an application level proxy is set, the application level proxy parameters are
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<HttpProxy> | Yes | Returns the default {@link HttpProxy} settings. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;HttpProxy&gt; | Yes | Returns the default {@link HttpProxy} settings. |
 
 **Error codes:**
 
@@ -52,6 +53,7 @@ connection.getDefaultHttpProxy((error: BusinessError, data: connection.HttpProxy
 ```
 
 
+<a id="getdefaulthttpproxy-1"></a>
 ## getDefaultHttpProxy
 
 ```TypeScript
@@ -72,7 +74,7 @@ If an application level proxy is set, the application level proxy parameters are
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HttpProxy> | the promise returned by the function. |
+| Promise&lt;HttpProxy&gt; | the promise returned by the function. |
 
 **Error codes:**
 

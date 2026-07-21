@@ -1,5 +1,6 @@
 # lockMission (System API)
 
+<a id="lockmission"></a>
 ## lockMission
 
 ```TypeScript
@@ -27,7 +28,7 @@ Locks a given mission. This API uses an asynchronous callback to return the resu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | missionId | number | Yes | Mission ID. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the mission is locked, **err** is **undefined**. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the mission is locked, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -50,6 +51,7 @@ try {
 ```
 
 
+<a id="lockmission-1"></a>
 ## lockMission
 
 ```TypeScript
@@ -82,7 +84,7 @@ Locks a given mission. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

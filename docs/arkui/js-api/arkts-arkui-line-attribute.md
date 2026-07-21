@@ -1,6 +1,6 @@
 # Line properties/events
 
-In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
 **Inheritance/Implementation:** LineAttribute extends [CommonShapeMethod<LineAttribute>](CommonShapeMethod<LineAttribute>)
 
@@ -10,13 +10,14 @@ In addition to the [universal attributes](arkts-arkui-common-commonmethod-c.md),
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
+<a id="endpoint"></a>
 ## endPoint
 
 ```TypeScript
 endPoint(value: Array<any>)
 ```
 
-Sets the coordinates (relative coordinates) of the end point of the line. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
+Sets the coordinates (relative coordinates) of the end point of the line. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
 
 **Since:** 7
 
@@ -32,15 +33,16 @@ Sets the coordinates (relative coordinates) of the end point of the line. This a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<any> | Yes | Coordinates (relative coordinates) of the end point of the line, in vp.<br>Default value: **[0, 0]**<br>The **undefined** and **null** values are treated as the default value. |
+| value | Array&lt;any&gt; | Yes | Coordinates (relative coordinates) of the end point of the line, in vp.<br>Default value: **[0, 0]**<br>The **undefined** and **null** values are treated as the default value. |
 
+<a id="startpoint"></a>
 ## startPoint
 
 ```TypeScript
 startPoint(value: Array<any>)
 ```
 
-Sets the coordinates (relative coordinates) of the start point of the line. This attribute can be dynamically set using [attributeModifier](arkts-arkui-common-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
+Sets the coordinates (relative coordinates) of the start point of the line. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). Invalid values are treated as the default value.
 
 **Since:** 7
 
@@ -56,5 +58,5 @@ Sets the coordinates (relative coordinates) of the start point of the line. This
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<any> | Yes | Coordinates (relative coordinates) of the start point of the line, in vp.<br>Default value: **[0, 0]**<br>The **undefined** and **null** values are treated as the default value. |
+| value | Array&lt;any&gt; | Yes | Coordinates (relative coordinates) of the start point of the line, in vp.<br>Default value: **[0, 0]**<br>The **undefined** and **null** values are treated as the default value. |
 

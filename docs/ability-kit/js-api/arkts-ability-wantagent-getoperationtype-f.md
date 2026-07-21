@@ -6,6 +6,7 @@
 import { WantAgent } from '@kit.AbilityKit';
 ```
 
+<a id="getoperationtype"></a>
 ## getOperationType
 
 ```TypeScript
@@ -27,7 +28,7 @@ Obtains the operation type of a WantAgent object.This API uses an asynchronous c
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | agent | [WantAgent](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-reminderagent-wantagent-i.md) | Yes | Target WantAgent object. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the operation type. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the operation type. |
 
 **Error codes:**
 
@@ -106,6 +107,7 @@ try {
 ```
 
 
+<a id="getoperationtype-1"></a>
 ## getOperationType
 
 ```TypeScript
@@ -132,7 +134,7 @@ Obtains the operation type of a WantAgent object.This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the OperationType of the WantAgent. |
+| Promise&lt;number&gt; | Returns the OperationType of the WantAgent. |
 
 **Error codes:**
 

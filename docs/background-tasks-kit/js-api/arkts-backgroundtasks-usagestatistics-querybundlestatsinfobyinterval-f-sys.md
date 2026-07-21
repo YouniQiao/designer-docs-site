@@ -6,6 +6,7 @@
 import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
+<a id="querybundlestatsinfobyinterval"></a>
 ## queryBundleStatsInfoByInterval
 
 ```TypeScript
@@ -46,7 +47,7 @@ Queries usage information about each bundle within a specified period at a speci
 | byInterval | [IntervalType](arkts-backgroundtasks-bundlestate-intervaltype-e.md) | Yes | Indicates the interval at which the usage statistics are queried.The value can be {@link #BY_OPTIMIZED}, {@link #BY_DAILY},{@link #BY_WEEKLY}, {@link #BY_MONTHLY}, or {@link #BY_ANNUALLY}. |
 | begin | number | Yes | Indicates the start time of the query period, in milliseconds.<br> Unit:ms |
 | end | number | Yes | Indicates the end time of the query period, in milliseconds.<br> Unit:ms |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<BundleStatsInfo>> | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the list of {@link BundleStatsInfo} objects containing the usage information about each bundle. Otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;BundleStatsInfo&gt;&gt; | Yes | Callback used to return the result.If the query is successful, **err** is **undefined**, and data is the list of {@link BundleStatsInfo} objects containing the usage information about each bundle. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -84,6 +85,7 @@ usageStatistics.queryBundleStatsInfoByInterval(0, 0, 20000000000000, (err: Busin
 ```
 
 
+<a id="querybundlestatsinfobyinterval-1"></a>
 ## queryBundleStatsInfoByInterval
 
 ```TypeScript
@@ -126,7 +128,7 @@ Queries usage information about each bundle within a specified period at a speci
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<BundleStatsInfo>> | Promise used to return the usage information about each bundle. |
+| Promise&lt;Array&lt;BundleStatsInfo&gt;&gt; | Promise used to return the usage information about each bundle. |
 
 **Error codes:**
 

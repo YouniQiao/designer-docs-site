@@ -6,6 +6,7 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
+<a id="getlastconnectiontime"></a>
 ## getLastConnectionTime
 
 ```TypeScript
@@ -32,7 +33,7 @@ Get latest connection time of device.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns latest connection time. |
+| Promise&lt;number&gt; | Returns latest connection time. |
 
 **Error codes:**
 

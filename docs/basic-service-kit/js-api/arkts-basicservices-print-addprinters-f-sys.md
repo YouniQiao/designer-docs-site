@@ -6,6 +6,7 @@
 import { print } from '@kit.BasicServicesKit';
 ```
 
+<a id="addprinters"></a>
 ## addPrinters
 
 ```TypeScript
@@ -28,8 +29,8 @@ Adds printers. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| printers | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PrinterInfo> | Yes | List of printers to add. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| printers | Array&lt;PrinterInfo&gt; | Yes | List of printers to add. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -65,6 +66,7 @@ print.addPrinters([printerInfo], (err: BusinessError) => {
 ```
 
 
+<a id="addprinters-1"></a>
 ## addPrinters
 
 ```TypeScript
@@ -87,13 +89,13 @@ Adds printers. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| printers | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PrinterInfo> | Yes | List of printers to add. |
+| printers | Array&lt;PrinterInfo&gt; | Yes | List of printers to add. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -14,6 +14,7 @@ Represents a **Schema** instance, which provides the methods for defining the va
 import { distributedKVStore } from '@kit.ArkData';
 ```
 
+<a id="appendchild"></a>
 ## appendChild
 
 ```TypeScript
@@ -72,6 +73,7 @@ try {
 
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

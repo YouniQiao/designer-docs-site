@@ -8,6 +8,7 @@ A DataAbilityHelper object is obtained through [acquireDataAbilityHelper](arkts-
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
+<a id="batchinsert"></a>
 ## batchInsert
 
 ```TypeScript
@@ -29,9 +30,10 @@ Inserts multiple data records into the database.This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to insert. |
-| valuesBuckets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<rdb.ValuesBucket> | Yes | Data records to insert. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of inserted data records. |
+| valuesBuckets | Array&lt;rdb.ValuesBucket&gt; | Yes | Data records to insert. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of inserted data records. |
 
+<a id="batchinsert-1"></a>
 ## batchInsert
 
 ```TypeScript
@@ -53,14 +55,15 @@ Inserts multiple data records into the database. This API uses a promise to retu
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to insert. |
-| valuesBuckets | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<rdb.ValuesBucket> | Yes | Data records to insert. |
+| valuesBuckets | Array&lt;rdb.ValuesBucket&gt; | Yes | Data records to insert. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of inserted data records. |
+| Promise&lt;number&gt; | Promise used to return the number of inserted data records. |
 
+<a id="call"></a>
 ## call
 
 ```TypeScript
@@ -85,8 +88,9 @@ Calls an extended method defined by the DataAbility. This API uses an asynchrono
 | method | string | Yes | Name of the API to call. |
 | arg | string | Yes | Parameter to pass in. |
 | extras | [PacMap](arkts-ability-dataabilityhelper-pacmap-i.md) | Yes | Key-value pair parameter. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<PacMap> | Yes | Callback used to return the extended parameters in the format of key-value pairs. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;PacMap&gt; | Yes | Callback used to return the extended parameters in the format of key-value pairs. |
 
+<a id="call-1"></a>
 ## call
 
 ```TypeScript
@@ -116,8 +120,9 @@ Calls an extended method defined by the DataAbility. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<PacMap> | Promise used to return the extended parameters in the format of key-value pairs. |
+| Promise&lt;PacMap&gt; | Promise used to return the extended parameters in the format of key-value pairs. |
 
+<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -140,8 +145,9 @@ Deletes one or more data records from the database. This API uses an asynchronou
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to delete. |
 | predicates | dataAbility.DataAbilityPredicates | Yes | Filter criteria. You should define the processing logic when this parameter is null. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of deleted data records. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of deleted data records. |
 
+<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -169,8 +175,9 @@ Deletes one or more data records from the database. This API uses a promise to r
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Returns the number of data records deleted. |
+| Promise&lt;number&gt; | Returns the number of data records deleted. |
 
+<a id="delete-2"></a>
 ## delete
 
 ```TypeScript
@@ -192,8 +199,9 @@ Uses a custom processing logic to delete data records from the database.This API
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to delete. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of deleted data records. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of deleted data records. |
 
+<a id="denormalizeuri"></a>
 ## denormalizeUri
 
 ```TypeScript
@@ -215,8 +223,9 @@ Converts a normalized URI generated by normalizeUri to a denormalized one.This A
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI object to denormalize. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the denormalized URI object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the denormalized URI object. |
 
+<a id="denormalizeuri-1"></a>
 ## denormalizeUri
 
 ```TypeScript
@@ -243,8 +252,9 @@ Converts a normalized URI generated by normalizeUri to a denormalized one.This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the denormalized URI object |
+| Promise&lt;string&gt; | Promise used to return the denormalized URI object |
 
+<a id="executebatch"></a>
 ## executeBatch
 
 ```TypeScript
@@ -278,9 +288,10 @@ Operates data in the database in batches. This API uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the DataAbility. Example: 'dataability:///com.example.xxx.xxxx'. |
-| operations | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DataAbilityOperation> | Yes | An array holding the data operations on the database. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<DataAbilityResult>> | Yes | Callback used to return the result of each operation in the DataAbilityResult array. |
+| operations | Array&lt;DataAbilityOperation&gt; | Yes | An array holding the data operations on the database. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;DataAbilityResult&gt;&gt; | Yes | Callback used to return the result of each operation in the DataAbilityResult array. |
 
+<a id="executebatch-1"></a>
 ## executeBatch
 
 ```TypeScript
@@ -302,14 +313,15 @@ Operates data in the database in batches. This API uses a promise to return the 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the DataAbility. Example: 'dataability:///com.example.xxx.xxxx'. |
-| operations | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<DataAbilityOperation> | Yes | An array holding the data operations on the database. |
+| operations | Array&lt;DataAbilityOperation&gt; | Yes | An array holding the data operations on the database. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<DataAbilityResult>> | Promise used to return the result of each operation in the DataAbilityResult array. |
+| Promise&lt;Array&lt;DataAbilityResult&gt;&gt; | Promise used to return the result of each operation in the DataAbilityResult array. |
 
+<a id="getfiletypes"></a>
 ## getFileTypes
 
 ```TypeScript
@@ -332,8 +344,9 @@ Obtains the supported media resource types of a specified file.This API uses an 
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file. |
 | mimeTypeFilter | string | Yes | Media resource type of the file to obtain. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<string>> | Yes | Callback used to return an array holding the media resource types. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;string&gt;&gt; | Yes | Callback used to return an array holding the media resource types. |
 
+<a id="getfiletypes-1"></a>
 ## getFileTypes
 
 ```TypeScript
@@ -361,8 +374,9 @@ Obtains the supported media resource types of a specified file. This API uses a 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<string>> | Promise used to return an array holding the media resource types. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return an array holding the media resource types. |
 
+<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -384,8 +398,9 @@ Obtains the media resource type of the data specified by a given URI.This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the media resource type. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the media resource type. |
 
+<a id="gettype-1"></a>
 ## getType
 
 ```TypeScript
@@ -412,8 +427,9 @@ Obtains the media resource type of the data specified by a given URI.This API us
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the media resource type. |
+| Promise&lt;string&gt; | Promise used to return the media resource type. |
 
+<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -436,8 +452,9 @@ Inserts a single data record into the database. This API uses an asynchronous ca
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to insert. |
 | valuesBucket | rdb.ValuesBucket | Yes | Data record to insert. If this parameter is null, a blank row will be inserted. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the index of the inserted data record. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the index of the inserted data record. |
 
+<a id="insert-1"></a>
 ## insert
 
 ```TypeScript
@@ -465,8 +482,9 @@ Inserts a single data record into the database. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the index of the inserted data record. |
+| Promise&lt;number&gt; | Promise used to return the index of the inserted data record. |
 
+<a id="normalizeuri"></a>
 ## normalizeUri
 
 ```TypeScript
@@ -488,8 +506,9 @@ Converts the URI that refers to a DataAbility into a normalized URI.This API use
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI object to normalize. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<string> | Yes | Callback used to return the normalized URI object if the DataAbility supports URI normalization. If the DataAbility does not support URI normalization, null is returned. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback used to return the normalized URI object if the DataAbility supports URI normalization. If the DataAbility does not support URI normalization, null is returned. |
 
+<a id="normalizeuri-1"></a>
 ## normalizeUri
 
 ```TypeScript
@@ -516,8 +535,9 @@ Converts a normalized URI generated by normalizeUri to a denormalized one.This A
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<string> | Promise used to return the normalized URI object if the DataAbility supports URI normalization. If the DataAbility does not support URI normalization, null is returned. |
+| Promise&lt;string&gt; | Promise used to return the normalized URI object if the DataAbility supports URI normalization. If the DataAbility does not support URI normalization, null is returned. |
 
+<a id="notifychange"></a>
 ## notifyChange
 
 ```TypeScript
@@ -539,8 +559,9 @@ Notifies the registered observer of a change to the data specified by the URI.Th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data that changes. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the observer is registered, err is undefined. Otherwise, err is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the observer is registered, err is undefined. Otherwise, err is an error object. |
 
+<a id="notifychange-1"></a>
 ## notifyChange
 
 ```TypeScript
@@ -567,8 +588,9 @@ Notifies the registered observer of a change to the data specified by the URI.Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
+<a id="off"></a>
 ## off('dataChange')
 
 ```TypeScript
@@ -591,8 +613,9 @@ Deregisters the observer that listens for changes in the data specified by a giv
 | --- | --- | --- | --- |
 | type | 'dataChange' | Yes | The value 'dataChange' means data changes. |
 | uri | string | Yes | URI of the data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | No | Callback used to return the result. If the observer is deregistered,err is undefined. Otherwise, err is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback used to return the result. If the observer is deregistered,err is undefined. Otherwise, err is an error object. |
 
+<a id="on"></a>
 ## on('dataChange')
 
 ```TypeScript
@@ -615,8 +638,9 @@ Registers an observer to listen for changes in the data specified by a given URI
 | --- | --- | --- | --- |
 | type | 'dataChange' | Yes | The value 'dataChange' means data changes. |
 | uri | string | Yes | URI of the data. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. If the observer is registered, err is undefined. Otherwise, err is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the observer is registered, err is undefined. Otherwise, err is an error object. |
 
+<a id="openfile"></a>
 ## openFile
 
 ```TypeScript
@@ -639,8 +663,9 @@ Opens a file with a specified URI. This API uses an asynchronous callback to ret
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the file to open. |
 | mode | string | Yes | Mode for opening the file. The value r indicates read-only access, w indicates write-only access, and rw indicates read-write access. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the file descriptor. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the file descriptor. |
 
+<a id="openfile-1"></a>
 ## openFile
 
 ```TypeScript
@@ -668,8 +693,9 @@ Opens a file with a specified URI. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the file descriptor. |
+| Promise&lt;number&gt; | Promise used to return the file descriptor. |
 
+<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -706,10 +732,11 @@ Queries data in the database. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to query. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Columns to query. If this parameter is null, all columns will be queried. |
+| columns | Array&lt;string&gt; | Yes | Columns to query. If this parameter is null, all columns will be queried. |
 | predicates | dataAbility.DataAbilityPredicates | Yes | Filter criteria. When null is passed in, you need to customize the logic for querying data in the database. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | Callback used to return the result. |
 
+<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -731,8 +758,9 @@ Queries data in the database. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to query. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | Callback used to return the result. |
 
+<a id="query-2"></a>
 ## query
 
 ```TypeScript
@@ -754,9 +782,10 @@ Queries data in the database. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to query. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | Yes | Columns to query. If this parameter is null, all columns will be queried. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | Callback used to return the result. |
+| columns | Array&lt;string&gt; | Yes | Columns to query. If this parameter is null, all columns will be queried. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | Callback used to return the result. |
 
+<a id="query-3"></a>
 ## query
 
 ```TypeScript
@@ -779,8 +808,9 @@ Queries data in the database. This API uses an asynchronous callback to return t
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to query. |
 | predicates | dataAbility.DataAbilityPredicates | Yes | Filter criteria. When null is passed in, you need to customize the logic for querying data in the database. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<ResultSet> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ResultSet&gt; | Yes | Callback used to return the result. |
 
+<a id="query-4"></a>
 ## query
 
 ```TypeScript
@@ -802,15 +832,16 @@ Queries data in the database. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to query. |
-| columns | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | No | Columns to query. If this parameter is null, all columns will be queried. |
+| columns | Array&lt;string&gt; | No | Columns to query. If this parameter is null, all columns will be queried. |
 | predicates | dataAbility.DataAbilityPredicates | No | Filter criteria. When null is passed in, you need to customize the logic for querying data in the database. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ResultSet> | Returns the query result {@link ResultSet}. |
+| Promise&lt;ResultSet&gt; | Returns the query result {@link ResultSet}. |
 
+<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -849,8 +880,9 @@ Updates data in the database.This API uses an asynchronous callback to return th
 | uri | string | Yes | URI of the data to update. |
 | valuesBucket | rdb.ValuesBucket | Yes | New values. |
 | predicates | dataAbility.DataAbilityPredicates | Yes | Filter criteria. You should define the processing logic when this parameter is null. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of updated data records. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of updated data records. |
 
+<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -879,8 +911,9 @@ Updates data in the database. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | Promise used to return the number of updated data records. |
+| Promise&lt;number&gt; | Promise used to return the number of updated data records. |
 
+<a id="update-2"></a>
 ## update
 
 ```TypeScript
@@ -903,5 +936,5 @@ Uses a custom processing logic to update data records in the database.This API u
 | --- | --- | --- | --- |
 | uri | string | Yes | URI of the data to update. |
 | valuesBucket | rdb.ValuesBucket | Yes | New values. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | Callback used to return the number of updated data records. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the number of updated data records. |
 

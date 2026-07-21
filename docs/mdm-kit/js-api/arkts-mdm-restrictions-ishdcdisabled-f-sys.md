@@ -6,6 +6,7 @@
 import { restrictions } from '@kit.MDMKit';
 ```
 
+<a id="ishdcdisabled"></a>
 ## isHdcDisabled
 
 ```TypeScript
@@ -18,7 +19,7 @@ Queries whether HDC is disabled. This API uses an asynchronous callback to retur
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** getDisallowedPolicy(admin:
+**Substitutes:** [getDisallowedPolicy(admin:](arkts-mdm-restrictions-getdisallowedpolicy-f.md#getdisallowedpolicy-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_RESTRICT_POLICY
 
@@ -35,7 +36,7 @@ Queries whether HDC is disabled. This API uses an asynchronous callback to retur
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-want-want-c.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<boolean> | Yes | Callback invoked to return the result. The value **true** means HDC is disabled; the value **false** means the opposite. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;boolean&gt; | Yes | Callback invoked to return the result. The value **true** means HDC is disabled; the value **false** means the opposite. |
 
 **Error codes:**
 
@@ -70,6 +71,7 @@ restrictions.isHdcDisabled(wantTemp, (err, result) => {
 ```
 
 
+<a id="ishdcdisabled-1"></a>
 ## isHdcDisabled
 
 ```TypeScript
@@ -82,7 +84,7 @@ Queries whether HDC is disabled. This API uses a promise to return the result.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** getDisallowedPolicy(admin:
+**Substitutes:** [getDisallowedPolicy(admin:](arkts-mdm-restrictions-getdisallowedpolicy-f.md#getdisallowedpolicy-1)
 
 **Required permissions:** ohos.permission.ENTERPRISE_RESTRICT_POLICY
 
@@ -104,7 +106,7 @@ Queries whether HDC is disabled. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** means HDC is disabled; the value **false** means the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** means HDC is disabled; the value **false** means the opposite. |
 
 **Error codes:**
 

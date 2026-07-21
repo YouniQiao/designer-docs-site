@@ -6,6 +6,7 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
+<a id="getkeyitempropertiesasuser"></a>
 ## getKeyItemPropertiesAsUser
 
 ```TypeScript
@@ -48,7 +49,7 @@ Obtains key properties for the specified user. This API uses a promise to return
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<HuksReturnResult> | Promise used to return the result. If the operation is successful,**properties** in **HuksReturnResult** holds the parameters required for generating the key. |
+| Promise&lt;HuksReturnResult&gt; | Promise used to return the result. If the operation is successful,**properties** in **HuksReturnResult** holds the parameters required for generating the key. |
 
 **Error codes:**
 

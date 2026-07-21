@@ -16,6 +16,7 @@ Defines a VPN connection.
 import { vpn } from '@kit.NetworkKit';
 ```
 
+<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -38,7 +39,7 @@ Destroy the VPN network.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of destroy. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of destroy. |
 
 **Error codes:**
 
@@ -74,6 +75,7 @@ struct Index {
 
 ```
 
+<a id="destroy-1"></a>
 ## destroy
 
 ```TypeScript
@@ -96,7 +98,7 @@ Destroy the VPN network.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -134,6 +136,7 @@ struct Index {
 
 ```
 
+<a id="protect"></a>
 ## protect
 
 ```TypeScript
@@ -157,7 +160,7 @@ Protect a socket from VPN connections. After protecting, data sent through this 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | socketFd | number | Yes | File descriptor of socket, this socket from @ohos.net.socket. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | The callback of protect. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | The callback of protect. |
 
 **Error codes:**
 
@@ -213,6 +216,7 @@ struct Index {
 
 ```
 
+<a id="protect-1"></a>
 ## protect
 
 ```TypeScript
@@ -241,7 +245,7 @@ Protect a socket from VPN connections. After protecting, data sent through this 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 
@@ -299,6 +303,7 @@ struct Index {
 
 ```
 
+<a id="setup"></a>
 ## setUp
 
 ```TypeScript
@@ -322,7 +327,7 @@ Create a VPN network using the VpnConfig.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | [VpnConfig](arkts-network-vpnextension-vpnconfig-i.md) | Yes | Indicates the {@link VpnConfig} configuration of the VPN network. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<number> | Yes | The callback is used to return file descriptor of VPN interface. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | The callback is used to return file descriptor of VPN interface. |
 
 **Error codes:**
 
@@ -373,6 +378,7 @@ struct Index {
 
 ```
 
+<a id="setup-1"></a>
 ## setUp
 
 ```TypeScript
@@ -401,7 +407,7 @@ Create a VPN network using the VpnConfig.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<number> | The promise returns file descriptor of VPN interface. |
+| Promise&lt;number&gt; | The promise returns file descriptor of VPN interface. |
 
 **Error codes:**
 

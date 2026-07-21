@@ -18,6 +18,7 @@ Images occupy a large amount of memory. When you finish using an AuxiliaryPictur
 import { image } from '@kit.ImageKit';
 ```
 
+<a id="getauxiliarypictureinfo"></a>
 ## getAuxiliaryPictureInfo
 
 ```TypeScript
@@ -38,6 +39,7 @@ Obtains the auxiliary picture information.
 | --- | --- |
 | [AuxiliaryPictureInfo](arkts-image-image-auxiliarypictureinfo-i.md) | Auxiliary picture information. |
 
+<a id="getmetadata"></a>
 ## getMetadata
 
 ```TypeScript
@@ -62,7 +64,7 @@ Obtains the metadata of this auxiliary picture. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Metadata> | Promise that returns the metadata. |
+| Promise&lt;Metadata&gt; | Promise that returns the metadata. |
 
 **Error codes:**
 
@@ -71,6 +73,7 @@ Obtains the metadata of this auxiliary picture. This API uses a promise to retur
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 | [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. The metadata type does not match the auxiliary picture type. |
 
+<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -91,6 +94,7 @@ Obtains the type of this auxiliary picture.
 | --- | --- |
 | [AuxiliaryPictureType](arkts-image-image-auxiliarypicturetype-e.md) | Type of the auxiliary picture. |
 
+<a id="readpixelstobuffer"></a>
 ## readPixelsToBuffer
 
 ```TypeScript
@@ -109,8 +113,9 @@ Reads pixels of this auxiliary picture and writes the data to an ArrayBuffer. Th
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<ArrayBuffer> | Promise used to return the pixels of the auxiliary picture. |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the pixels of the auxiliary picture. |
 
+<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -129,6 +134,7 @@ Before releasing the instance, ensure that all asynchronous operations associate
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
+<a id="setauxiliarypictureinfo"></a>
 ## setAuxiliaryPictureInfo
 
 ```TypeScript
@@ -155,6 +161,7 @@ Sets the auxiliary picture information.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 
+<a id="setmetadata"></a>
 ## setMetadata
 
 ```TypeScript
@@ -180,7 +187,7 @@ Sets the metadata for this auxiliary picture. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -189,6 +196,7 @@ Sets the metadata for this auxiliary picture. This API uses a promise to return 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 | [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. The metadata type does not match the auxiliary picture type. |
 
+<a id="writepixelsfrombuffer"></a>
 ## writePixelsFromBuffer
 
 ```TypeScript
@@ -207,13 +215,13 @@ Reads pixels from an ArrayBuffer and writes the data to this AuxiliaryPicture ob
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [ArrayBuffer](../../apis-arkts/arkts-apis/arkts-arkts-collections-arraybuffer-c.md) | Yes | Pixels of the auxiliary picture. |
+| data | ArrayBuffer | Yes | Pixels of the auxiliary picture. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

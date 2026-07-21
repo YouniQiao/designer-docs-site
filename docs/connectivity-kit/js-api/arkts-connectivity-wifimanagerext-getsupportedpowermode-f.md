@@ -6,6 +6,7 @@
 import { wifiManagerExt } from '@kit.ConnectivityKit';
 ```
 
+<a id="getsupportedpowermode"></a>
 ## getSupportedPowerMode
 
 ```TypeScript
@@ -26,7 +27,7 @@ Obtains the supported power Mode.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<PowerMode>> | Returns a list of application PowerMode. |
+| Promise&lt;Array&lt;PowerMode&gt;&gt; | Returns a list of application PowerMode. |
 
 **Error codes:**
 
@@ -37,6 +38,7 @@ Obtains the supported power Mode.
 | [2701000](../errorcode-wifi.md#2701000-ap-extension-module-error) | Operation failed. |
 
 
+<a id="getsupportedpowermode-1"></a>
 ## getSupportedPowerMode
 
 ```TypeScript
@@ -57,7 +59,7 @@ Obtains the supported power Mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<PowerMode>> | Yes | the callback of model. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;PowerMode&gt;&gt; | Yes | the callback of model. |
 
 **Error codes:**
 

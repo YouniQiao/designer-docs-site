@@ -14,6 +14,7 @@ A helper to enable a picker to select output devices
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -43,6 +44,7 @@ The constructor used to create a AVCastPickerHelper object.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 
+<a id="off"></a>
 ## off('pickerStateChange')
 
 ```TypeScript
@@ -64,7 +66,7 @@ Unregister picker state change callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'pickerStateChange' | Yes | 'pickerStateChange' |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVCastPickerState> | No | The callback used to handle picker state changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVCastPickerState&gt; | No | The callback used to handle picker state changed event. |
 
 **Error codes:**
 
@@ -73,6 +75,7 @@ Unregister picker state change callback.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 
+<a id="on"></a>
 ## on('pickerStateChange')
 
 ```TypeScript
@@ -94,7 +97,7 @@ Register picker state change callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'pickerStateChange' | Yes | 'pickerStateChange' |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<AVCastPickerState> | Yes | The callback used to handle picker state changed event. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVCastPickerState&gt; | Yes | The callback used to handle picker state changed event. |
 
 **Error codes:**
 
@@ -103,6 +106,7 @@ Register picker state change callback.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 
+<a id="resetcommunicationdevice"></a>
 ## resetCommunicationDevice
 
 ```TypeScript
@@ -123,8 +127,9 @@ Reset audio device to be default set by the platform which is used for communica
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
+<a id="select"></a>
 ## select
 
 ```TypeScript
@@ -151,7 +156,7 @@ Pull up the avcastpicker based on the options.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 

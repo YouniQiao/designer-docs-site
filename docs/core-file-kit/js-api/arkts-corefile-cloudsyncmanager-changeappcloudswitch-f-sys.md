@@ -6,6 +6,7 @@
 import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
+<a id="changeappcloudswitch"></a>
 ## changeAppCloudSwitch
 
 ```TypeScript
@@ -34,7 +35,7 @@ Changes the device-cloud file sync switch for an application. This API uses a pr
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -60,6 +61,7 @@ cloudSyncManager.changeAppCloudSwitch(accountId, bundleName, true).then(() => {
 ```
 
 
+<a id="changeappcloudswitch-1"></a>
 ## changeAppCloudSwitch
 
 ```TypeScript
@@ -83,7 +85,7 @@ Changes the device-cloud file sync switch for an application. This API uses an a
 | accountId | string | Yes | Account ID. |
 | bundleName | string | Yes | Bundle name of the application. |
 | status | boolean | Yes | State of the cloud-device file sync switch to set. The value **true** means to enable this function; the value **false** means the opposite. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result of changing the device-cloud file sync switch for an application. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result of changing the device-cloud file sync switch for an application. |
 
 **Error codes:**
 

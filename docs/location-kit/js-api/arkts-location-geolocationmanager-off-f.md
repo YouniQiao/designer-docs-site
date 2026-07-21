@@ -6,6 +6,7 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
+<a id="off"></a>
 ## off('locationChange')
 
 ```TypeScript
@@ -30,7 +31,7 @@ Unsubscribe location changed.You are advised to use the {@link offLocationChange
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'locationChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Location> | No | Indicates the callback for reporting the location result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Location&gt; | No | Indicates the callback for reporting the location result. |
 
 **Error codes:**
 
@@ -67,6 +68,7 @@ try {
 ```
 
 
+<a id="off-1"></a>
 ## off('locationError')
 
 ```TypeScript
@@ -90,7 +92,7 @@ Unsubscribe continuous location error changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'locationError' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<LocationError> | No | Indicates the callback for reporting the continuous location error. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;LocationError&gt; | No | Indicates the callback for reporting the continuous location error. |
 
 **Error codes:**
 
@@ -119,6 +121,7 @@ try {
 ```
 
 
+<a id="off-2"></a>
 ## off('locationEnabledChange')
 
 ```TypeScript
@@ -138,7 +141,7 @@ Unsubscribe location switch changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'locationEnabledChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<boolean> | No | Indicates the callback for reporting the location switch status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;boolean&gt; | No | Indicates the callback for reporting the location switch status. |
 
 **Error codes:**
 
@@ -166,6 +169,7 @@ try {
 ```
 
 
+<a id="off-3"></a>
 ## off('cachedGnssLocationsChange')
 
 ```TypeScript
@@ -187,7 +191,7 @@ Unsubscribe to cache GNSS locations update messages.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'cachedGnssLocationsChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<Array<Location>> | No | Indicates the callback for reporting the cached gnss locations. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;Location&gt;&gt; | No | Indicates the callback for reporting the cached gnss locations. |
 
 **Error codes:**
 
@@ -222,6 +226,7 @@ try {
 ```
 
 
+<a id="off-4"></a>
 ## off('satelliteStatusChange')
 
 ```TypeScript
@@ -243,7 +248,7 @@ Unsubscribe satellite status changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'satelliteStatusChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<SatelliteStatusInfo> | No | Indicates the callback for reporting the satellite status. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SatelliteStatusInfo&gt; | No | Indicates the callback for reporting the satellite status. |
 
 **Error codes:**
 
@@ -273,6 +278,7 @@ try {
 ```
 
 
+<a id="off-5"></a>
 ## off('nmeaMessage')
 
 ```TypeScript
@@ -294,7 +300,7 @@ Unsubscribe nmea message changed.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'nmeaMessage' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<string> | No | Indicates the callback for reporting the nmea message. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Indicates the callback for reporting the nmea message. |
 
 **Error codes:**
 
@@ -325,6 +331,7 @@ try {
 ```
 
 
+<a id="off-6"></a>
 ## off('gnssFenceStatusChange')
 
 ```TypeScript
@@ -397,6 +404,7 @@ wantAgent.getWantAgent(wantAgentInfo).then((wantAgentObj) => {
 ```
 
 
+<a id="off-7"></a>
 ## off('countryCodeChange')
 
 ```TypeScript
@@ -416,7 +424,7 @@ Unregistering the callback function for listening to country code changes.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'countryCodeChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<CountryCode> | No | Indicates the callback for reporting country code changes. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CountryCode&gt; | No | Indicates the callback for reporting country code changes. |
 
 **Error codes:**
 
@@ -446,6 +454,7 @@ try {
 ```
 
 
+<a id="off-8"></a>
 ## off('bluetoothScanResultChange')
 
 ```TypeScript
@@ -467,7 +476,7 @@ Stop bluetooth scanning and unregister to listen to bluetooth scanning result ch
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'bluetoothScanResultChange' | Yes | Indicates the location service event to be subscribed to. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<BluetoothScanResult> | No | Indicates the callback for reporting Bluetooth scan info. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;BluetoothScanResult&gt; | No | Indicates the callback for reporting Bluetooth scan info. |
 
 **Error codes:**
 

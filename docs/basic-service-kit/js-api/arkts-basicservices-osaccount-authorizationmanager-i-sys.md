@@ -16,6 +16,7 @@ Defines the OS account authorization manager class.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
+<a id="acquireauthorization"></a>
 ## acquireAuthorization
 
 ```TypeScript
@@ -47,7 +48,7 @@ Acquires an authorization for a process.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<AcquireAuthorizationResult> | Promise used to return the authorization result. |
+| Promise&lt;AcquireAuthorizationResult&gt; | Promise used to return the authorization result. |
 
 **Error codes:**
 
@@ -83,6 +84,7 @@ try {
 
 ```
 
+<a id="hasauthorization"></a>
 ## hasAuthorization
 
 ```TypeScript
@@ -111,7 +113,7 @@ Checks whether the current process has specified authorization.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<boolean> | Promise used to return the result. The value **true** indicates that the current process has specified authorization, and **false** indicates the opposite. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the current process has specified authorization, and **false** indicates the opposite. |
 
 **Error codes:**
 
@@ -143,6 +145,7 @@ try {
 
 ```
 
+<a id="releaseauthorization"></a>
 ## releaseAuthorization
 
 ```TypeScript
@@ -171,7 +174,7 @@ Releases the specified authorization for the current process.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -6,6 +6,7 @@
 import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
+<a id="importukeycertificate"></a>
 ## importUkeyCertificate
 
 ```TypeScript
@@ -29,14 +30,14 @@ Import the certificate to the USB Key.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keyUri | string | Yes | Indicates the USB Key credentials URI.<br>The maximum length is 256 and cannot be empty.<br>The keyUri parameter identifies a certificate entity, which can be obtained<br>by calling the [getUkeyCertificateList](arkts-devicecertificate-certificatemanager-getukeycertificatelist-f.md#getukeycertificatelist-1) interface. |
-| cert | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Indicates the certificate data to be imported.<br>The maximum length is 10240 and cannot be empty.<br>The certificate data format complies with the Smart Key Framework (SKF) specifications. |
+| cert | Uint8Array | Yes | Indicates the certificate data to be imported.<br>The maximum length is 10240 and cannot be empty.<br>The certificate data format complies with the Smart Key Framework (SKF) specifications. |
 | ukeyInfo | [UkeyInfo](arkts-devicecertificate-certificatemanager-ukeyinfo-i.md) | Yes | Indicates USB Key certificate attribute information.<br>UkeyInfo.CertificatePurpose can only be set to PURPOSE_SIGN, PURPOSE_ENCRYPT or PURPOSE_DEFAULT. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

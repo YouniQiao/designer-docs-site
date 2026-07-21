@@ -6,6 +6,7 @@
 import { ranging } from '@kit.ConnectivityKit';
 ```
 
+<a id="stopranging"></a>
 ## stopRanging
 
 ```TypeScript
@@ -28,7 +29,7 @@ Stops ongoing ranging operations.If no target device is specified, stops ranging
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-common-callback-i.md)<RangingResult> | Yes | Callback used to return the ranging result. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;RangingResult&gt; | Yes | Callback used to return the ranging result. |
 | params | [RangingParams](arkts-connectivity-ranging-rangingparams-i.md) | No | Parameters for ranging include deviceId and ranging types. |
 
 **Error codes:**

@@ -4,7 +4,7 @@
 export type PermissionDef = _PermissionDef
 ```
 
-Defines the detailed information about the permissions defined in the [module.json5](../../../../quick-start/module-configuration-file.md) file.
+Defines the detailed information about the permissions defined in the [module.json5](docroot://quick-start/module-configuration-file.md) file.
 
 **Since:** 9
 

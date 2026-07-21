@@ -6,6 +6,7 @@
 import { errorManager } from '@kit.AbilityKit';
 ```
 
+<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -30,7 +31,7 @@ This API can only be used in the main thread. If a thread error occurs, an error
 | --- | --- | --- | --- |
 | type | 'error' | Yes | Event type. It is fixed at **'error'**. |
 | observerId | number | Yes | Index of the observer returned by **on()**.There is no specific unit. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | Callback used to return the result. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
 
@@ -64,6 +65,7 @@ try {
 ```
 
 
+<a id="off-1"></a>
 ## off('error')
 
 ```TypeScript
@@ -93,7 +95,7 @@ This API can only be used in the main thread. If a thread error occurs, an error
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -127,6 +129,7 @@ try {
 ```
 
 
+<a id="off-2"></a>
 ## off('loopObserver')
 
 ```TypeScript
@@ -168,6 +171,7 @@ errorManager.off("loopObserver");
 ```
 
 
+<a id="off-3"></a>
 ## off('unhandledRejection')
 
 ```TypeScript
@@ -254,6 +258,7 @@ errorManager.off("unhandledRejection", observer);
 ```
 
 
+<a id="off-4"></a>
 ## off('globalUnhandledRejectionDetected')
 
 ```TypeScript
@@ -315,6 +320,7 @@ errorManager.off("globalUnhandledRejectionDetected", promiseFunc);
 ```
 
 
+<a id="off-5"></a>
 ## off('freeze')
 
 ```TypeScript
@@ -363,6 +369,7 @@ errorManager.off("freeze", freezeCallback);
 ```
 
 
+<a id="off-6"></a>
 ## off('globalErrorOccurred')
 
 ```TypeScript

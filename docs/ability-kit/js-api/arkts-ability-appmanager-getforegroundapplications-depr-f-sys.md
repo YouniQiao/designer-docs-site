@@ -1,5 +1,6 @@
 # getForegroundApplications (System API)
 
+<a id="getforegroundapplications"></a>
 ## getForegroundApplications
 
 ```TypeScript
@@ -26,7 +27,7 @@ getForegroundApplications.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<Array<AppStateData>> | Yes | Return all application information currently in the foreground in the form of callback. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;AppStateData&gt;&gt; | Yes | Return all application information currently in the foreground in the form of callback. |
 
 **Example**
 
@@ -44,6 +45,7 @@ appManager.getForegroundApplications((err, data) => {
 ```
 
 
+<a id="getforegroundapplications-1"></a>
 ## getForegroundApplications
 
 ```TypeScript
@@ -70,7 +72,7 @@ getForegroundApplications.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AppStateData>> | Returns the list of AppStateData. |
+| Promise&lt;Array&lt;AppStateData&gt;&gt; | Returns the list of AppStateData. |
 
 **Example**
 

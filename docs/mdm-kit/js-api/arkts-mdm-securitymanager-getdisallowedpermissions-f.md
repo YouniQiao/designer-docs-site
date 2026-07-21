@@ -6,6 +6,7 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
+<a id="getdisallowedpermissions"></a>
 ## getDisallowedPermissions
 
 ```TypeScript
@@ -28,14 +29,14 @@ Gets the permissions that are disallowed to be granted for an account.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| admin | Want \| null | Yes | admin indicates the administrator ability information. |
+| admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) \| null | Yes | admin indicates the administrator ability information. |
 | accountId | number | Yes | accountId indicates the ID of OS account<br>The value must be an integer greater than or equal to 0. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<string> | the list of permissions that are disallowed to be granted for the account. |
+| Array&lt;string&gt; | the list of permissions that are disallowed to be granted for the account. |
 
 **Error codes:**
 

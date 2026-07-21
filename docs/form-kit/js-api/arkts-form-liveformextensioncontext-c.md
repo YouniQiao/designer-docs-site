@@ -10,6 +10,7 @@
 
 **System capability:** SystemCapability.Ability.Form
 
+<a id="startabilitybyliveform"></a>
 ## startAbilityByLiveForm
 
 ```TypeScript
@@ -32,13 +33,13 @@ Starts the widget provider (application) page. This API uses a promise to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information about the application page to be started.[Only explicit Want is supported](../../../../application-models/ability-startup-with-explicit-want.md). |
+| want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information about the application page to be started.[Only explicit Want is supported](docroot://application-models/ability-startup-with-explicit-want.md). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the function. |
+| Promise&lt;void&gt; | The promise returned by the function. |
 
 **Error codes:**
 

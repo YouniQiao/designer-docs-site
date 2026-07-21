@@ -6,6 +6,7 @@
 import { util } from '@kit.ArkTS';
 ```
 
+<a id="format"></a>
 ## format
 
 ```TypeScript
@@ -27,7 +28,7 @@ Formats a string by replacing the placeholders in it.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | format | string | Yes | Format string. This string contains zero or more placeholders, which specify the position and format of the arguments to be inserted. |
-| args | [Object](../../apis-na/arkts-apis/arkts-na-lib-es5-object-i.md)[] | Yes | Data used to replace the placeholders in **format**. If **null** is passed in, the first argument is returned by default. |
+| args | Object[] | Yes | Data used to replace the placeholders in **format**. If **null** is passed in, the first argument is returned by default. |
 
 **Return value:**
 

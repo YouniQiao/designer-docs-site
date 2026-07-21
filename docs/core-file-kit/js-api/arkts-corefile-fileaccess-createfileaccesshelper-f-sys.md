@@ -6,6 +6,7 @@
 import { fileAccess } from '@kit.CoreFileKit';
 ```
 
+<a id="createfileaccesshelper"></a>
 ## createFileAccessHelper
 
 ```TypeScript
@@ -100,6 +101,7 @@ function createFileAccessHelper02(context: common.UIAbilityContext) {
 ```
 
 
+<a id="createfileaccesshelper-1"></a>
 ## createFileAccessHelper
 
 ```TypeScript
@@ -127,7 +129,7 @@ Creates a **Helper** object to bind with the specified Wants. This API returns t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Indicates the application context. |
-| wants | [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<Want> | Yes | Represents the connected data provider. |
+| wants | Array&lt;Want&gt; | Yes | Represents the connected data provider. |
 
 **Return value:**
 

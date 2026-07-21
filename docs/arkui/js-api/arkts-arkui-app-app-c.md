@@ -14,6 +14,7 @@ Defines static functions of App class
 import { AppResponse, ScreenOnVisibleOptions, RequestFullWindowOptions } from '@kit.ArkUI';
 ```
 
+<a id="getinfo"></a>
 ## getInfo
 
 ```TypeScript
@@ -157,6 +158,7 @@ export default {
 
 ```
 
+<a id="requestfullwindow"></a>
 ## requestFullWindow
 
 ```TypeScript
@@ -195,6 +197,7 @@ export default class Req {
 
 ```
 
+<a id="screenonvisible"></a>
 ## screenOnVisible
 
 ```TypeScript
@@ -219,6 +222,7 @@ This API is deprecated since API version 8.
 | --- | --- | --- | --- |
 | options | [ScreenOnVisibleOptions](arkts-arkui-app-screenonvisibleoptions-i.md) | No | With keep-alive, the system is prevented from returning to the home screen when the screen is locked, so that the application is visible when the screen is woken up. |
 
+<a id="setimagecachecount"></a>
 ## setImageCacheCount
 
 ```TypeScript
@@ -271,6 +275,7 @@ struct Index {
 
 ```
 
+<a id="setimagefilecachesize"></a>
 ## setImageFileCacheSize
 
 ```TypeScript
@@ -312,6 +317,7 @@ export default class OnC {
 
 ```
 
+<a id="setimagerawdatacachesize"></a>
 ## setImageRawDataCacheSize
 
 ```TypeScript
@@ -364,6 +370,7 @@ struct Index {
 
 ```
 
+<a id="terminate"></a>
 ## terminate
 
 ```TypeScript

@@ -6,6 +6,7 @@
 import { pluginBundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="uninstalllocalplugin"></a>
 ## uninstallLocalPlugin
 
 ```TypeScript
@@ -34,7 +35,7 @@ Uninstall the plugin for self application.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise returned by the function. |
+| Promise&lt;void&gt; | Promise returned by the function. |
 
 **Error codes:**
 

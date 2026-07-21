@@ -6,6 +6,7 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
+<a id="controlcamera"></a>
 ## controlCamera
 
 ```TypeScript
@@ -35,7 +36,7 @@ Control camera to open/close/switch camera by cameraId when video call.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | The promise returned by the controlCamera. |
+| Promise&lt;void&gt; | The promise returned by the controlCamera. |
 
 **Error codes:**
 

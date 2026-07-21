@@ -6,6 +6,7 @@
 import { vibrator } from '@kit.SensorServiceKit';
 ```
 
+<a id="vibrate"></a>
 ## vibrate
 
 ```TypeScript
@@ -18,7 +19,7 @@ Triggers vibration based on a specified duration. This API uses an asynchronous 
 
 **Deprecated since:** 9
 
-**Substitutes:** startVibration(effect:
+**Substitutes:** [startVibration(effect:](arkts-sensorservice-vibrator-startvibration-f.md#startvibration-1)
 
 **Required permissions:** ohos.permission.VIBRATE
 
@@ -31,7 +32,7 @@ Triggers vibration based on a specified duration. This API uses an asynchronous 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | duration | number | Yes | Vibration duration, in ms. The value range is (0,1800000]. The maximum vibration duration varies with devices due to different component protection design specifications of drivers provided by different vendors. It is recommended that a single vibration duration be less than or equal to 10s to maximize user experience. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | No | Callback used to return the result. If the vibration starts, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback used to return the result. If the vibration starts, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Example**
 
@@ -50,6 +51,7 @@ vibrator.vibrate(1000, (error: BusinessError) => {
 ```
 
 
+<a id="vibrate-1"></a>
 ## vibrate
 
 ```TypeScript
@@ -62,7 +64,7 @@ Triggers vibration based on a specified duration. This API uses a promise to ret
 
 **Deprecated since:** 9
 
-**Substitutes:** startVibration(effect:
+**Substitutes:** [startVibration(effect:](arkts-sensorservice-vibrator-startvibration-f.md#startvibration-1)
 
 **Required permissions:** ohos.permission.VIBRATE
 
@@ -80,7 +82,7 @@ Triggers vibration based on a specified duration. This API uses a promise to ret
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns the result. |
+| Promise&lt;void&gt; | Promise that returns the result. |
 
 **Example**
 
@@ -97,6 +99,7 @@ vibrator.vibrate(1000).then(() => {
 ```
 
 
+<a id="vibrate-2"></a>
 ## vibrate
 
 ```TypeScript
@@ -109,7 +112,7 @@ Triggers vibration based on a specified effect. This API uses a promise to retur
 
 **Deprecated since:** 9
 
-**Substitutes:** startVibration(effect:
+**Substitutes:** [startVibration(effect:](arkts-sensorservice-vibrator-startvibration-f.md#startvibration-1)
 
 **Required permissions:** ohos.permission.VIBRATE
 
@@ -127,7 +130,7 @@ Triggers vibration based on a specified effect. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns the result. |
+| Promise&lt;void&gt; | Promise that returns the result. |
 
 **Example**
 
@@ -144,6 +147,7 @@ vibrator.vibrate(vibrator.EffectId.EFFECT_CLOCK_TIMER).then(() => {
 ```
 
 
+<a id="vibrate-3"></a>
 ## vibrate
 
 ```TypeScript
@@ -156,7 +160,7 @@ Triggers vibration based on a specified effect. This API uses an asynchronous ca
 
 **Deprecated since:** 9
 
-**Substitutes:** startVibration(effect:
+**Substitutes:** [startVibration(effect:](arkts-sensorservice-vibrator-startvibration-f.md#startvibration-1)
 
 **Required permissions:** ohos.permission.VIBRATE
 
@@ -169,7 +173,7 @@ Triggers vibration based on a specified effect. This API uses an asynchronous ca
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | effectId | [EffectId](arkts-sensorservice-vibrator-effectid-e.md) | Yes | Effect ID. The value is a string of a maximum of 64 characters. If the length exceeds 64 characters, the first 64 characters are used. You are advised to check whether the effect ID is supported. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | No | Callback used to return the result. If the vibration starts, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback used to return the result. If the vibration starts, **err** is **undefined**; otherwise, **err** is an error object. |
 
 **Example**
 

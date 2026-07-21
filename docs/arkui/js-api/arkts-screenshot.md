@@ -20,18 +20,18 @@ import { screenshot } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [capture](arkts-arkui-screenshot-capture-f.md#capture-1) | Takes a screenshot of the entire screen. This API uses a promise to return the result.This API allows you to take screenshots of different screens by setting various **displayId** values, but only full -screen captures are supported. The [pick](arkts-arkui-screenshot-pick-f.md#pick-1) API allows you to take screenshots of a specified region. |
-| [pick](arkts-arkui-screenshot-pick-f.md#pick-1) | Obtains this screenshot. Currently, only the screenshot of the display whose ID is **0** can be obtained. (If a screenshot of the extended screen is needed, you can use the [capture](arkts-arkui-screenshot-capture-f.md#capture-1) API.) This API uses a promise to return the result. |
+| [capture](arkts-arkui-screenshot-capture-f.md#capture) | Takes a screenshot of the entire screen. This API uses a promise to return the result.  This API allows you to take screenshots of different screens by setting various **displayId** values, but only full  -screen captures are supported. The [pick](arkts-arkui-screenshot-pick-f.md#pick-1) API allows you to take screenshots of a specified region. |
+| [pick](arkts-arkui-screenshot-pick-f.md#pick) | Obtains this screenshot. Currently, only the screenshot of the display whose ID is **0** can be obtained. (If a screenshot of the extended screen is needed, you can use the [capture](arkts-arkui-screenshot-capture-f.md#capture-1) API.) This API uses a promise to return the result. |
 
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
+| [save](arkts-arkui-screenshot-save-f-sys.md#save) | Obtains a screenshot. This API uses an asynchronous callback to return the result. |
 | [save](arkts-arkui-screenshot-save-f-sys.md#save-1) | Obtains a screenshot. This API uses an asynchronous callback to return the result. |
-| [save](arkts-arkui-screenshot-save-f-sys.md#save-2) | Obtains a screenshot. This API uses an asynchronous callback to return the result. |
-| [save](arkts-arkui-screenshot-save-f-sys.md#save-3) | Obtains a screenshot. This API uses a promise to return the result. |
-| [saveHdrPicture](arkts-arkui-screenshot-savehdrpicture-f-sys.md#savehdrpicture-1) | Obtains a screenshot. This API uses a promise to return the result. SDR stands for Standard Dynamic Range, and HDR stands for High Dynamic Range.- If the screen contains HDR resources (even if they are partially obscured), this API returns an array with both SDR and HDR PixelMaps, regardless of whether HDR is enabled. - If there are no HDR resources, it returns an array with a single SDR PixelMap. Unlike the [save](arkts-arkui-screenshot-save-f-sys.md#save-1) API, which returns a single SDR PixelMap, this API always returns an array. Additionally, this API does not support cropping,stretching, or rotating features available in the [save](arkts-arkui-screenshot-save-f-sys.md#save-1) API. |
+| [save](arkts-arkui-screenshot-save-f-sys.md#save-2) | Obtains a screenshot. This API uses a promise to return the result. |
+| [saveHdrPicture](arkts-arkui-screenshot-savehdrpicture-f-sys.md#savehdrpicture) | Obtains a screenshot. This API uses a promise to return the result. SDR stands for Standard Dynamic Range, and HDR stands for High Dynamic Range.  - If the screen contains HDR resources (even if they are partially obscured), this API returns an array with both SDR and HDR PixelMaps, regardless of whether HDR is enabled.  - If there are no HDR resources, it returns an array with a single SDR PixelMap. Unlike the [save](arkts-arkui-screenshot-save-f-sys.md#save-1) API, which returns a single SDR PixelMap, this API always returns an array. Additionally, this API does not support cropping,stretching, or rotating features available in the [save](arkts-arkui-screenshot-save-f-sys.md#save-1) API. |
 <!--DelEnd-->
 
 ### Interfaces

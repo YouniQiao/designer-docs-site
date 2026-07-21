@@ -14,6 +14,7 @@ Provides utilities for converting ECC/SM2 signature data.
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
+<a id="geneccsignature"></a>
 ## genEccSignature
 
 ```TypeScript
@@ -40,7 +41,7 @@ Converts an ECC/SM2 signature (r, s) to the ASN1 DER format.
 
 | Type | Description |
 | --- | --- |
-| [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Signature data in ASN1 DER format. |
+| Uint8Array | Signature data in ASN1 DER format. |
 
 **Error codes:**
 
@@ -75,6 +76,7 @@ function testGenEccSignature() {
 
 ```
 
+<a id="geneccsignaturespec"></a>
 ## genEccSignatureSpec
 
 ```TypeScript
@@ -95,7 +97,7 @@ Generates r and s from the ECC/SM2 signature data in ASN1 DER format.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | [Uint8Array](../../apis-na/arkts-apis/arkts-na-lib-es5-uint8array-i.md) | Yes | Signature data in ASN1 DER format. |
+| data | Uint8Array | Yes | Signature data in ASN1 DER format. |
 
 **Return value:**
 

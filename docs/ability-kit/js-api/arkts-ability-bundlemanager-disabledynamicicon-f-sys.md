@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="disabledynamicicon"></a>
 ## disableDynamicIcon
 
 ```TypeScript
@@ -34,7 +35,7 @@ Disables the dynamic icon based on the given bundle name. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
@@ -69,6 +70,7 @@ try {
 ```
 
 
+<a id="disabledynamicicon-1"></a>
 ## disableDynamicIcon
 
 ```TypeScript
@@ -102,7 +104,7 @@ To disable the dynamic icon for another user, you must request the ohos.permissi
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

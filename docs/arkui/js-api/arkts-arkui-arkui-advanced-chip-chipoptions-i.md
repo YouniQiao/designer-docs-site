@@ -419,7 +419,7 @@ maxFontScale?: number | Resource
 
 Maximum font scale factor for the text and icon of the chip.Value range: [1, +∞).
 
-**Type:** number | Resource
+**Type:** number \| Resource
 
 **Since:** 23
 
@@ -439,7 +439,7 @@ minFontScale?: number | Resource
 
 Minimum font scale factor for the text and icon of the chip.Value range: [0, 1].
 
-**Type:** number | Resource
+**Type:** number \| Resource
 
 **Since:** 23
 
@@ -461,7 +461,7 @@ Chip click event.
 
 If the value is **undefined**, the chip cannot be clicked.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 
@@ -483,7 +483,7 @@ Event triggered when the close icon is clicked.
 
 If the value is **undefined**, clicking the close icon will not trigger any event.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 11
 
@@ -588,9 +588,9 @@ Default value: **ChipSize.NORMAL**
 
 The SizeOptions type parameter does not support percentage values. If an invalid value is provided, the system will use the default value instead.
 
-Note: [Aging-friendly design implementation](../../../../ui/arkui-support-for-aging-adaptation.md) does not take effect when size specifies specific width and height, except when size is set to { height: 0, width: 0 }.
+Note: [Aging-friendly design implementation](docroot://ui/arkui-support-for-aging-adaptation.md) does not take effect when size specifies specific width and height, except when size is set to { height: 0, width: 0 }.
 
-**Type:** ChipSize | SizeOptions
+**Type:** ChipSize \| SizeOptions
 
 **Since:** 11
 

@@ -16,6 +16,7 @@ Provides APIs to obtain and set the beauty effect.
 import { camera } from '@kit.CameraKit';
 ```
 
+<a id="getsupportedbeautyrange"></a>
 ## getSupportedBeautyRange
 
 ```TypeScript
@@ -48,7 +49,7 @@ Obtains the levels that can be set a beauty type. The beauty levels vary accordi
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<number> | Array of levels supported. |
+| Array&lt;number&gt; | Array of levels supported. |
 
 **Error codes:**
 
@@ -71,6 +72,7 @@ function getSupportedBeautyRange(portraitPhotoSession: camera.PortraitPhotoSessi
 
 ```
 
+<a id="getsupportedbeautytypes"></a>
 ## getSupportedBeautyTypes
 
 ```TypeScript
@@ -91,7 +93,7 @@ Obtains the supported beauty types.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<BeautyType> | Array of beauty types supported. |
+| Array&lt;BeautyType&gt; | Array of beauty types supported. |
 
 **Error codes:**
 
@@ -110,6 +112,7 @@ function getSupportedBeautyTypes(portraitPhotoSession: camera.PortraitPhotoSessi
 
 ```
 
+<a id="getsupportedportraitthemetypes"></a>
 ## getSupportedPortraitThemeTypes
 
 ```TypeScript
@@ -130,7 +133,7 @@ Gets supported portrait theme type.
 
 | Type | Description |
 | --- | --- |
-| [Array](../../apis-na/arkts-apis/arkts-na-lib-es5-array-i.md)<PortraitThemeType> | Lists of portrait theme types |
+| Array&lt;PortraitThemeType&gt; | Lists of portrait theme types |
 
 **Error codes:**
 
@@ -139,6 +142,7 @@ Gets supported portrait theme type.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 
+<a id="isportraitthemesupported"></a>
 ## isPortraitThemeSupported
 
 ```TypeScript

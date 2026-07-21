@@ -6,6 +6,7 @@
 import { bundleManager } from '@kit.AbilityKit';
 ```
 
+<a id="getalternateicons"></a>
 ## getAlternateIcons
 
 ```TypeScript
@@ -26,7 +27,7 @@ Queries the alternate icon information configured in the alternateIcons in the a
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<Array<AlternateIconInfo>> | Promise used to return the list of alternate icons of the current application. |
+| Promise&lt;Array&lt;AlternateIconInfo&gt;&gt; | Promise used to return the list of alternate icons of the current application. |
 
 **Error codes:**
 

@@ -26,7 +26,7 @@ defaultCreator?: StorageDefaultCreator<T>
 
 Persists container data. **defaultSubCreator** should be provided together with **defaultCreator**; otherwise, the container data cannot be persisted. The collection item type **S** must be the same as the return type of **defaultSubCreator**. If **defaultSubCreator** is provided but **defaultCreator** is not, the persistence fails.
 
-**Type:** StorageDefaultCreator<T>
+**Type:** StorageDefaultCreator&lt;T&gt;
 
 **Since:** 23
 
@@ -46,7 +46,7 @@ defaultSubCreator?: StorageDefaultCreator<S>
 
 Persists container data. If the return value of **defaultSubCreator** is **undefined** or **null**, the persistence fails. When a user-defined class collection (such as **Array<ClassA>**) is persisted, the generic type **T** in **defaultCreator** is **Array<ClassA>**, and **S** in **defaultSubCreator** is **ClassA**.
 
-**Type:** StorageDefaultCreator<S>
+**Type:** StorageDefaultCreator&lt;S&gt;
 
 **Since:** 23
 

@@ -20,6 +20,7 @@ Before calling any API in AudioRenderer, you must use [createAudioRenderer](arkt
 import { audio } from '@kit.AudioKit';
 ```
 
+<a id="gettarget"></a>
 ## getTarget
 
 ```TypeScript
@@ -63,6 +64,7 @@ async function getTarget(){
 
 ```
 
+<a id="settarget"></a>
 ## setTarget
 
 ```TypeScript
@@ -93,7 +95,7 @@ Sets the render target of this audio renderer.This function can only be called w
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 

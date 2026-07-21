@@ -6,6 +6,7 @@
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+<a id="stopcastdevicediscovery"></a>
 ## stopCastDeviceDiscovery
 
 ```TypeScript
@@ -26,7 +27,7 @@ Stop device discovery.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)<void> | Yes | a callback function |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | a callback function |
 
 **Error codes:**
 
@@ -45,6 +46,7 @@ avSession.stopCastDeviceDiscovery(() => {
 ```
 
 
+<a id="stopcastdevicediscovery-1"></a>
 ## stopCastDeviceDiscovery
 
 ```TypeScript
@@ -65,7 +67,7 @@ Stop device discovery.
 
 | Type | Description |
 | --- | --- |
-| [Promise](../../apis-na/arkts-apis/arkts-na-lib-es5-promise-i.md)<void> | Promise for the result |
+| Promise&lt;void&gt; | Promise for the result |
 
 **Error codes:**
 

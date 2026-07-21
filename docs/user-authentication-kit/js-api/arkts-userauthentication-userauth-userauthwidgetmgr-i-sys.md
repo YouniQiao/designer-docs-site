@@ -16,6 +16,7 @@ Defines the authentication widget manager. It is used to register the custom aut
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
+<a id="off"></a>
 ## off('command')
 
 ```TypeScript
@@ -69,6 +70,7 @@ try {
 
 ```
 
+<a id="on"></a>
 ## on('command')
 
 ```TypeScript
