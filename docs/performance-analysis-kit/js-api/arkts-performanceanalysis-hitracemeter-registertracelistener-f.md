@@ -6,7 +6,6 @@
 import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 ```
 
-<a id="registertracelistener"></a>
 ## registerTraceListener
 
 ```TypeScript
@@ -16,7 +15,6 @@ function registerTraceListener(callback: TraceEventListener): number
 Registers a callback to notify whether the application trace capture is enabled. This API uses a synchronous callback to return the result.
 
 After the registration is successful, the callback is executed immediately. Subsequent callbacks are executed when the application trace capture status changes.
-
 > **NOTE**  
 >  
 > If the callback contains time-consuming operations, the registration or deregistration will be blocked (waiting  

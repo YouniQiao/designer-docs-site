@@ -18,5 +18,5 @@ Defines a callback to listen for whether the trace capture is enabled.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| traceStatus | boolean | Yes | Whether the trace capture is enabled for the current application.<br>The value**true** indicates that the trace capture is enabled, and **false** indicates the opposite. |
+| traceStatus | boolean | Yes | Whether the trace capture is enabled for the current application.<br>The value **true** indicates that the trace capture is enabled, and **false** indicates the opposite.  |
 

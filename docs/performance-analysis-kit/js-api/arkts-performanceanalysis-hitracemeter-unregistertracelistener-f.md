@@ -6,7 +6,6 @@
 import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 ```
 
-<a id="unregistertracelistener"></a>
 ## unregisterTraceListener
 
 ```TypeScript
@@ -27,7 +26,7 @@ Unregisters the callback function used to notify whether the trace capture is en
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | number | Yes | Index of the registered callback function, that is, the return value when [registerTraceListener()](arkts-performanceanalysis-hitracemeter-registertracelistener-f.md#registertracelistener-1) is successfully called<br>The value range is all integers. |
+| index | number | Yes | Index of the registered callback function, that is, the return value when [registerTraceListener()](arkts-performanceanalysis-hitracemeter-registertracelistener-f.md#registertracelistener) is successfully called<br>The value range is all integers. |
 
 **Return value:**
 

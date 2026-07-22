@@ -1,6 +1,5 @@
 # startTrace
 
-<a id="starttrace"></a>
 ## startTrace
 
 ```TypeScript

@@ -6,7 +6,6 @@
 import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 ```
 
-<a id="tracebyvalue"></a>
 ## traceByValue
 
 ```TypeScript
@@ -15,7 +14,7 @@ function traceByValue(name: string, count: number): void
 
 Traces the value changes of an integer variable.
 
-Since API version 19, you are advised to use the [traceByValue<sup>19+</sup>()](arkts-performanceanalysis-hitracemeter-tracebyvalue-f.md#tracebyvalue-1)API to specify the trace output level
+Since API version 19, you are advised to use the [traceByValue<sup>19+</sup>()](arkts-performanceanalysis-hitracemeter-tracebyvalue-f.md#tracebyvalue)API to specify the trace output level
 
 **Since:** 8
 
@@ -44,7 +43,6 @@ hiTraceMeter.traceByValue("myTestCount", traceCount);  // When myTestCount chang
 ```
 
 
-<a id="tracebyvalue-1"></a>
 ## traceByValue
 
 ```TypeScript

@@ -6,7 +6,6 @@
 import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 ```
 
-<a id="startasynctrace"></a>
 ## startAsyncTrace
 
 ```TypeScript
@@ -18,15 +17,13 @@ Starts an asynchronous trace with the trace output level specified.
 
 If multiple trace tasks with the same name need to be performed at the same time or a trace needs to be performed multiple times concurrently, different task IDs must be specified in **startAsyncTrace**.
 
-If the trace tasks with the same name are not performed at the same time, the same taskId can be used. For details,see [finishAsyncTrace()](arkts-performanceanalysis-hitracemeter-finishasynctrace-f.md#finishasynctrace-1).
+If the trace tasks with the same name are not performed at the same time, the same taskId can be used. For details,see [finishAsyncTrace()](arkts-performanceanalysis-hitracemeter-finishasynctrace-f.md#finishasynctrace).
 
 **Since:** 19
 
 **Atomic service API:** This API can be used in atomic services since API version 19.
 
-<!--Device-hiTraceMeter-function startAsyncTrace(level: HiTraceOutputLevel, name: string, taskId: int, customCategory: string,
-      customArgs?: string): void--><!--Device-hiTraceMeter-function startAsyncTrace(level: HiTraceOutputLevel, name: string, taskId: int, customCategory: string,
-      customArgs?: string): void-End-->
+<!--Device-hiTraceMeter-function startAsyncTrace(level: HiTraceOutputLevel, name: string, taskId: int, customCategory: string,      customArgs?: string): void--><!--Device-hiTraceMeter-function startAsyncTrace(level: HiTraceOutputLevel, name: string, taskId: int, customCategory: string,      customArgs?: string): void-End-->
 
 **System capability:** SystemCapability.HiviewDFX.HiTrace
 

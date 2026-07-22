@@ -6,7 +6,6 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
-<a id="publishasbundle"></a>
 ## publishAsBundle
 
 ```TypeScript
@@ -24,17 +23,7 @@ Publishes a notification through the reminder agent. This API uses an asynchrono
 
 **Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER and ohos.permission.NOTIFICATION_AGENT_CONTROLLER
 
-<!--Device-notificationManager-function publishAsBundle(
-    request: NotificationRequest,
-    representativeBundle: string,
-    userId: int,
-    callback: AsyncCallback<void>
-  ): void--><!--Device-notificationManager-function publishAsBundle(
-    request: NotificationRequest,
-    representativeBundle: string,
-    userId: int,
-    callback: AsyncCallback<void>
-  ): void-End-->
+<!--Device-notificationManager-function publishAsBundle(    request: NotificationRequest,    representativeBundle: string,    userId: int,    callback: AsyncCallback<void>  ): void--><!--Device-notificationManager-function publishAsBundle(    request: NotificationRequest,    representativeBundle: string,    userId: int,    callback: AsyncCallback<void>  ): void-End-->
 
 **System capability:** SystemCapability.Notification.Notification
 
@@ -110,7 +99,6 @@ notificationManager.publishAsBundle(request, representativeBundle, userId, callb
 ```
 
 
-<a id="publishasbundle-1"></a>
 ## publishAsBundle
 
 ```TypeScript
@@ -200,7 +188,6 @@ notificationManager.publishAsBundle(request, representativeBundle, userId).then(
 ```
 
 
-<a id="publishasbundle-2"></a>
 ## publishAsBundle
 
 ```TypeScript

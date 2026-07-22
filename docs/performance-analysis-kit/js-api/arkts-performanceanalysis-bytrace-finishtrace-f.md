@@ -1,6 +1,5 @@
 # finishTrace
 
-<a id="finishtrace"></a>
 ## finishTrace
 
 ```TypeScript
