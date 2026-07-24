@@ -1,7 +1,6 @@
 # DataChangeListener
 
 Listener for data changes.
-
 > **NOTE**  
 >  
 > In APIs of **DataChangeListener** other than **onDatasetChange**, if the value of **index** is negative, the value  
@@ -15,7 +14,6 @@ Listener for data changes.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="ondataadd"></a>
 ## onDataAdd
 
 ```TypeScript
@@ -38,7 +36,6 @@ Invoked when data is added to the position indicated by the specified index.
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the position where data is added. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 
-<a id="ondataadded"></a>
 ## onDataAdded
 
 ```TypeScript
@@ -46,15 +43,14 @@ onDataAdded(index: number): void
 ```
 
 Invoked when data is added to the position indicated by the specified index.
-
 > This API is deprecated since API version 8. You are advised to use  
-> [onDataAdd](arkts-arkui-datachangelistener-i.md#ondataadd-1) instead.
+> [onDataAdd](arkts-arkui-datachangelistener-i.md#ondataadd) instead.
 
 **Since:** 7
 
 **Deprecated since:** 8
 
-**Substitutes:** [onDataAdd](arkts-arkui-datachangelistener-i.md#ondataadd-1)
+**Substitutes:** [onDataAdd](arkts-arkui-datachangelistener-i.md#ondataadd)
 
 <!--Device-DataChangeListener-onDataAdded(index: number): void--><!--Device-DataChangeListener-onDataAdded(index: number): void-End-->
 
@@ -66,7 +62,6 @@ Invoked when data is added to the position indicated by the specified index.
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the position where data is added. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 
-<a id="ondatachange"></a>
 ## onDataChange
 
 ```TypeScript
@@ -89,7 +84,6 @@ Invoked when data in the position indicated by the specified index is changed.
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the position where data is changed. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 
-<a id="ondatachanged"></a>
 ## onDataChanged
 
 ```TypeScript
@@ -97,15 +91,14 @@ onDataChanged(index: number): void
 ```
 
 Invoked when data in the position indicated by the specified index is changed.
-
 > This API is deprecated since API version 8. You are advised to use  
-> [onDataChange](arkts-arkui-datachangelistener-i.md#ondatachange-1) instead.
+> [onDataChange](arkts-arkui-datachangelistener-i.md#ondatachange) instead.
 
 **Since:** 7
 
 **Deprecated since:** 8
 
-**Substitutes:** [onDataChange](arkts-arkui-datachangelistener-i.md#ondatachange-1)
+**Substitutes:** [onDataChange](arkts-arkui-datachangelistener-i.md#ondatachange)
 
 <!--Device-DataChangeListener-onDataChanged(index: number): void--><!--Device-DataChangeListener-onDataChanged(index: number): void-End-->
 
@@ -117,7 +110,6 @@ Invoked when data in the position indicated by the specified index is changed.
 | --- | --- | --- | --- |
 | index | number | Yes | Listener for data changes. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 
-<a id="ondatadelete"></a>
 ## onDataDelete
 
 ```TypeScript
@@ -125,7 +117,6 @@ onDataDelete(index: number): void
 ```
 
 Invoked when data is deleted from the position indicated by the specified index. LazyForEach will update the displayed content accordingly.
-
 > **NOTE**  
 >  
 > Before **onDataDelete** is called, ensure that the corresponding data in **dataSource** has been deleted.  
@@ -145,7 +136,6 @@ Invoked when data is deleted from the position indicated by the specified index.
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the position where data is deleted. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 
-<a id="ondatadeleted"></a>
 ## onDataDeleted
 
 ```TypeScript
@@ -153,15 +143,14 @@ onDataDeleted(index: number): void
 ```
 
 Invoked when data is deleted from the position indicated by the specified index. LazyForEach will update the displayed content accordingly.
-
 > This API is deprecated since API version 8. You are advised to use  
-> [onDataDelete](arkts-arkui-datachangelistener-i.md#ondatadelete-1) instead.
+> [onDataDelete](arkts-arkui-datachangelistener-i.md#ondatadelete) instead.
 
 **Since:** 7
 
 **Deprecated since:** 8
 
-**Substitutes:** [onDataDelete](arkts-arkui-datachangelistener-i.md#ondatadelete-1)
+**Substitutes:** [onDataDelete](arkts-arkui-datachangelistener-i.md#ondatadelete)
 
 <!--Device-DataChangeListener-onDataDeleted(index: number): void--><!--Device-DataChangeListener-onDataDeleted(index: number): void-End-->
 
@@ -173,7 +162,6 @@ Invoked when data is deleted from the position indicated by the specified index.
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the position where data is deleted. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 
-<a id="ondatamove"></a>
 ## onDataMove
 
 ```TypeScript
@@ -181,7 +169,6 @@ onDataMove(from: number, to: number): void
 ```
 
 Invoked when data is moved, that is, when data is swapped between the **from** and **to** positions.
-
 > **NOTE**  
 >  
 > The ID must remain unchanged before and after data movement. If the ID changes, APIs for deleting and adding data  
@@ -202,7 +189,6 @@ Invoked when data is moved, that is, when data is swapped between the **from** a
 | from | number | Yes | Original position of data. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 | to | number | Yes | Target position of data. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 
-<a id="ondatamoved"></a>
 ## onDataMoved
 
 ```TypeScript
@@ -210,10 +196,8 @@ onDataMoved(from: number, to: number): void
 ```
 
 Invoked when data is moved, that is, when data is swapped between the **from** and **to** positions.
-
 > This API is deprecated since API version 8. You are advised to use  
-> [onDataMove](arkts-arkui-datachangelistener-i.md#ondatamove-1) instead.
-
+> [onDataMove](arkts-arkui-datachangelistener-i.md#ondatamove) instead.
 > **NOTE**  
 >  
 > The ID must remain unchanged before and after data movement. If the ID changes, APIs for deleting and adding data  
@@ -223,7 +207,7 @@ Invoked when data is moved, that is, when data is swapped between the **from** a
 
 **Deprecated since:** 8
 
-**Substitutes:** [onDataMove](arkts-arkui-datachangelistener-i.md#ondatamove-1)
+**Substitutes:** [onDataMove](arkts-arkui-datachangelistener-i.md#ondatamove)
 
 <!--Device-DataChangeListener-onDataMoved(from: number, to: number): void--><!--Device-DataChangeListener-onDataMoved(from: number, to: number): void-End-->
 
@@ -236,7 +220,6 @@ Invoked when data is moved, that is, when data is swapped between the **from** a
 | from | number | Yes | Original position of data. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 | to | number | Yes | Target position of data. The value range is [0, data source length - 1].<br>If the value is less than 0, it is treated as **0**. If the value is greater than the data source length minus 1, it is treated as the data source length minus 1. |
 
-<a id="ondatareloaded"></a>
 ## onDataReloaded
 
 ```TypeScript
@@ -253,7 +236,6 @@ Invoked when all data is reloaded. For data items whose key remains unchanged, t
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="ondatareloaded-1"></a>
 ## onDataReloaded
 
 ```TypeScript
@@ -278,7 +260,6 @@ Invoked when all data is reloaded. When \@Reuseable or \@ReuseableV2 is used and
 | --- | --- | --- | --- |
 | reuseImmediately | boolean | Yes | Whether to enable the feature that reuse old child components when\@Reuseable or \@ReuseableV2 is used and recycle pool is empty.<br>**true**: Enable the feature.<br>**false**: Disable the feature. |
 
-<a id="ondatasetchange"></a>
 ## onDatasetChange
 
 ```TypeScript
@@ -286,7 +267,6 @@ onDatasetChange(dataOperations: DataOperation[]): void
 ```
 
 Invoked when data is processed in batches to notify the component of refreshing.
-
 > **NOTE**  
 >  
 > This API cannot be used together with other data operation APIs of **DataChangeListener**. For example, in the  

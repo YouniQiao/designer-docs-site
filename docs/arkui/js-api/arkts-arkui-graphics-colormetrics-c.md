@@ -8,7 +8,6 @@ Used to mix colors.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="autorefresh"></a>
 ## autoRefresh
 
 ```TypeScript
@@ -39,7 +38,6 @@ Sets automatic refresh for the ColorMetrics object.When enabled, the color value
 | --- | --- |
 | [ColorMetrics](arkts-arkui-graphics-colormetrics-c.md) | Returns the ColorMetrics object for chaining. |
 
-<a id="blendcolor"></a>
 ## blendColor
 
 ```TypeScript
@@ -76,7 +74,6 @@ Blends a specified color (**overlayColor**) with the current color and returns t
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. The type of the input parameter is not ColorMetrics. |
 
-<a id="colorwithspace"></a>
 ## colorWithSpace
 
 ```TypeScript
@@ -99,7 +96,7 @@ Creates a **ColorMetrics** instance using specified [ColorSpace](arkts-arkui-col
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colorSpace | [ColorSpace](arkts-arkui-window-colorspace-e.md) | Yes | Color space used to specify the color. If ColorSpace.DISPLAY_P3 is used, the [setWindowColorSpace](docroot://reference/apis-arkui/arkts-apis-window-Window.md#setwindowcolorspace9-1) API must be called to set the current window to the wide color gamut mode. |
+| colorSpace | [ColorSpace](arkts-arkui-window-colorspace-e.md) | Yes | Color space used to specify the color. If ColorSpace.DISPLAY_P3 is used, the [setWindowColorSpace](../../../reference/apis-arkui/arkts-apis-window-Window.md#setwindowcolorspace9-1) API must be called to set the current window to the wide color gamut mode. |
 | red | number | Yes | Red component of the color. The value is a floating point number ranging from 0 to 1. |
 | green | number | Yes | Green component of the color. The value is a floating point number ranging from 0 to 1. |
 | blue | number | Yes | Blue component of the color. The value is a floating point number ranging from 0 to 1. |
@@ -111,7 +108,6 @@ Creates a **ColorMetrics** instance using specified [ColorSpace](arkts-arkui-col
 | --- | --- |
 | [ColorMetrics](arkts-arkui-graphics-colormetrics-c.md) | Instance of the **ColorMetrics** class. |
 
-<a id="numeric"></a>
 ## numeric
 
 ```TypeScript
@@ -142,7 +138,6 @@ Instantiates the **ColorMetrics** class using a color in HEX format.
 | --- | --- |
 | [ColorMetrics](arkts-arkui-graphics-colormetrics-c.md) | Instance of the **ColorMetrics** class. |
 
-<a id="resourcecolor"></a>
 ## resourceColor
 
 ```TypeScript
@@ -180,7 +175,6 @@ Instantiates the **ColorMetrics** class using a color in resource reference form
 | [180003](../errorcode-event.md#180003-input-event-is-not-a-cloned-event) | Failed to obtain the color resource. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause:1. The type of the input color parameter is not ResourceColor.2. The format of the input color string is not RGB or RGBA. |
 
-<a id="rgba"></a>
 ## rgba
 
 ```TypeScript

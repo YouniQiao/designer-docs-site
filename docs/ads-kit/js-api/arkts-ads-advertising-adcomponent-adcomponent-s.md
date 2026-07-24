@@ -16,7 +16,6 @@ This module provides the capability of displaying ads, covering native, roll, sp
 import { AdComponent } from '@kit.AdsKit';
 ```
 
-<a id="build"></a>
 ## build
 
 ```TypeScript

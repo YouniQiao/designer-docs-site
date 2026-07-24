@@ -43,7 +43,7 @@ Creates a **NodeContainer** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| controller | import('../api/@ohos.arkui.node').NodeController | Yes | **NodeController** instance used tocontrol the upper and lower tree nodes in the **NodeContainer**.It represents the lifecycle of the **NodeContainer**. |
+| controller | import('../api/@ohos.arkui.node').NodeController | Yes | **NodeController** instance used to control the upper and lower tree nodes in the **NodeContainer**. It represents the lifecycle of the **NodeContainer**.  |
 
 ## Summary
 

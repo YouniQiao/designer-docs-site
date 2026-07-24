@@ -6,10 +6,10 @@
 
 | Name | Description |
 | --- | --- |
-| [borderRadiuses](arkts-arkui-graphics-borderradiuses-f.md#borderradiuses-1) | Generates a **borderRadiuses** object with the specified radius for all border corners. |
-| [borderStyles](arkts-arkui-graphics-borderstyles-f.md#borderstyles-1) | Generates a border style object with the specified border style color for all borders. |
-| [edgeColors](arkts-arkui-graphics-edgecolors-f.md#edgecolors-1) | Generates an **edgeColors** object with the specified edge color for all edges. |
-| [edgeWidths](arkts-arkui-graphics-edgewidths-f.md#edgewidths-1) | Generates an **edgeWidths** object with the specified edge width for all edges. |
+| [borderRadiuses](arkts-arkui-graphics-borderradiuses-f.md#borderradiuses) | Generates a **borderRadiuses** object with the specified radius for all border corners. |
+| [borderStyles](arkts-arkui-graphics-borderstyles-f.md#borderstyles) | Generates a border style object with the specified border style color for all borders. |
+| [edgeColors](arkts-arkui-graphics-edgecolors-f.md#edgecolors) | Generates an **edgeColors** object with the specified edge color for all edges. |
+| [edgeWidths](arkts-arkui-graphics-edgewidths-f.md#edgewidths) | Generates an **edgeWidths** object with the specified edge width for all edges. |
 
 ### Classes
 
@@ -62,7 +62,7 @@
 | --- | --- |
 | [BorderRadiuses](arkts-arkui-borderradiuses-t.md) | Sets the uniform radius of the four corners. |
 | [CornerRadius](arkts-arkui-cornerradius-t.md) | Sets the semi-axis lengths for the x-axis and y-axis of the rounded corners. |
-| [Matrix4](arkts-arkui-matrix4-t.md) | Sets a 4x4 matrix.The **Matrix4** type is used to set transformation information for components.Value range of each number: (-∞, +∞).The following is an example:```const transform: Matrix4 = [1, 0, 45, 0,0, 1, 0, 0,0, 0, 1, 0,0, 0, 0, 1]```. |
+| [Matrix4](arkts-arkui-matrix4-t.md) | Sets a 4x4 matrix.The **Matrix4** type is used to set transformation information for components.Value range of each number: (-∞, +∞).The following is an example:``` const transform: Matrix4 = [ 1, 0, 45, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ] ```. |
 | [Offset](arkts-arkui-offset-t.md) | Sets the offset of the component or effect. |
 | [Pivot](arkts-arkui-pivot-t.md) | Sets the pivot of the component. As the rotation or scaling center of the component, the pivot affects the rotation and scaling effects. X and Y coordinates of the pivot is a floating point number in the range [0.0, 1.0], and the default value is **0.5**. |
 | [Position](arkts-arkui-position-t.md) | Sets or returns the position of the component. |

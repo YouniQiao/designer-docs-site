@@ -7,7 +7,7 @@
 
 | Name | Description |
 | --- | --- |
-| [IsolatedComponentAttribute](arkts-arkui-isolated-component-isolatedcomponentattribute-c-sys.md) | Define the attribute functions of IsolatedComponent. |
+| [IsolatedComponentAttribute](arkts-arkui-isolatedcomponentattribute-c-sys.md) | Define the attribute functions of IsolatedComponent. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -15,7 +15,7 @@
 
 | Name | Description |
 | --- | --- |
-| [IsolatedOptions](arkts-arkui-isolated-component-isolatedoptions-i-sys.md) | This interface is used to set the options for IsolatedComponentAttribute during construction |
+| [IsolatedOptions](arkts-arkui-isolatedoptions-i-sys.md) | This interface is used to set the options for IsolatedComponentAttribute during construction |
 <!--DelEnd-->
 
 <!--Del-->

@@ -1,6 +1,5 @@
 # bindController
 
-<a id="bindcontroller"></a>
 ## bindController
 
 ```TypeScript
@@ -35,7 +34,6 @@ Binds a [TextController](../arkts-components/arkts-arkui-textcontroller-c.md) in
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 
 
-<a id="bindcontroller-1"></a>
 ## bindController
 
 ```TypeScript
@@ -70,7 +68,6 @@ Binds a [SwiperController](../arkts-components/arkts-arkui-swipercontroller-c.md
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 
 
-<a id="bindcontroller-2"></a>
 ## bindController
 
 ```TypeScript
@@ -105,7 +102,6 @@ Binds the [Scroller](../arkts-components/arkts-arkui-scroller-c.md) to the [Scro
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. Introduced in API version 15 and will not be threw above API version 24.<br>**Applicable version:** 15 - 24 |
 
 
-<a id="bindcontroller-3"></a>
 ## bindController
 
 ```TypeScript
@@ -140,7 +136,6 @@ Binds a [Scroller](../arkts-components/arkts-arkui-scroller-c.md) instance to th
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. Introduced in API version 20 and will not be threw above API version 24.<br>**Applicable version:** 20 - 24 |
 
 
-<a id="bindcontroller-4"></a>
 ## bindController
 
 ```TypeScript
@@ -176,7 +171,6 @@ Binds the [TextInputController](../arkts-components/arkts-arkui-textinputcontrol
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 
 
-<a id="bindcontroller-5"></a>
 ## bindController
 
 ```TypeScript
@@ -211,7 +205,6 @@ Binds a [Scroller](../arkts-components/arkts-arkui-scroller-c.md) instance to th
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. Introduced in API version 20 and will not be threw above API version 24.<br>**Applicable version:** 20 - 24 |
 
 
-<a id="bindcontroller-6"></a>
 ## bindController
 
 ```TypeScript
@@ -246,7 +239,6 @@ Binds a [TextAreaController](../arkts-components/arkts-arkui-textareacontroller-
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 
 
-<a id="bindcontroller-7"></a>
 ## bindController
 
 ```TypeScript

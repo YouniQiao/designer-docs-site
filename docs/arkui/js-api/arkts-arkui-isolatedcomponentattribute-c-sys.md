@@ -12,7 +12,6 @@ Define the attribute functions of IsolatedComponent.
 
 **System API:** This is a system API.
 
-<a id="onerror"></a>
 ## onError
 
 ```TypeScript
@@ -25,11 +24,7 @@ onError(
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-IsolatedComponentAttribute-onError(
-    callback: ErrorCallback
-  ): IsolatedComponentAttribute--><!--Device-IsolatedComponentAttribute-onError(
-    callback: ErrorCallback
-  ): IsolatedComponentAttribute-End-->
+<!--Device-IsolatedComponentAttribute-onError(    callback: ErrorCallback  ): IsolatedComponentAttribute--><!--Device-IsolatedComponentAttribute-onError(    callback: ErrorCallback  ): IsolatedComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

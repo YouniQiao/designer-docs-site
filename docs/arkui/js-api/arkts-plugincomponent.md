@@ -20,5 +20,5 @@ import { PluginComponentTemplate } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [PluginComponentTemplate](arkts-arkui-plugincomponenttemplate-i.md) | Plugin component template property. |
+| [PluginComponentTemplate](arkts-arkui-plugincomponent-plugincomponenttemplate-i.md) | Plugin component template property. |
 

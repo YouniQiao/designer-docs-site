@@ -16,7 +16,6 @@ Extends the [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md) API 
 import { IDataSourcePrefetching, BasicPrefetcher, IPrefetcher } from '@kit.ArkUI';
 ```
 
-<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -47,7 +46,6 @@ Cancels the prefetching of a specified data item from the dataset. This API can 
 | --- | --- |
 | Promise&lt;void&gt; | Promise when this API is executed asynchronously; no return value when this API is executed synchronously. The promise only indicates that the operation is completed and contains no actual return content. |
 
-<a id="prefetch"></a>
 ## prefetch
 
 ```TypeScript

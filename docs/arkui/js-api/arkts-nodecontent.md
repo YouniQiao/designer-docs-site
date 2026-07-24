@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [NodeContent](arkts-nodecontent-c.md) | NodeContent是节点内容的实体封装。 |
+| [NodeContent](arkts-arkui-nodecontent-c.md) | NodeContent is the entity encapsulation of the node content. |
 

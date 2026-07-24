@@ -1,7 +1,6 @@
 # NodeAdapter
 
 Provides lazy loading capabilities for FrameNode data, implementing [LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md) API functionality.
-
 > **NOTE**  
 >  
 > Negative input parameters are ignored and trigger no processing.
@@ -12,7 +11,6 @@ Provides lazy loading capabilities for FrameNode data, implementing [LazyForEach
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="attachnodeadapter"></a>
 ## attachNodeAdapter
 
 ```TypeScript
@@ -20,7 +18,6 @@ static attachNodeAdapter(adapter: NodeAdapter, node: FrameNode): boolean
 ```
 
 Attaches a FrameNode to a NodeAdapter. Each node can be bound to only one NodeAdapter. Attempts to re-attach to a NodeAdapter that has already been attached to will fail and return **false**.
-
 > **NOTE**  
 >  
 > The following components can be bound: **Column**, **Row**, **Stack**, **GridRow**, **Flex**, **Swiper**,  
@@ -49,7 +46,6 @@ Attaches a FrameNode to a NodeAdapter. Each node can be bound to only one NodeAd
 | --- | --- |
 | boolean | Attachment result. Returns **true** if the attachment is successful; returns **false** otherwise. |
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -68,7 +64,6 @@ A constructor used to create a **NodeAdapter** object.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="detachnodeadapter"></a>
 ## detachNodeAdapter
 
 ```TypeScript
@@ -93,7 +88,6 @@ Detaches a FrameNode from its NodeAdapter.
 | --- | --- | --- | --- |
 | node | [FrameNode](arkts-arkui-framenode-c.md) | Yes | FrameNode to detach. |
 
-<a id="dispose"></a>
 ## dispose
 
 ```TypeScript
@@ -112,14 +106,13 @@ Disposes of this **NodeAdapter** object. Bindings, if any, of the object will be
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="getallavailableitems"></a>
 ## getAllAvailableItems
 
 ```TypeScript
 getAllAvailableItems(): Array<FrameNode>
 ```
 
-Obtains all available items. Available nodes include both currently displayed and preloaded nodes. The number of preloaded nodes can be configured by adjusting the **cachedCount** property of the parent container, following the [usage constraints](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md#constraints) of **LazyForEach**.
+Obtains all available items. Available nodes include both currently displayed and preloaded nodes. The number of preloaded nodes can be configured by adjusting the **cachedCount** property of the parent container, following the [usage constraints](../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md#constraints) of **LazyForEach**.
 
 **Since:** 12
 
@@ -137,7 +130,6 @@ Obtains all available items. Available nodes include both currently displayed an
 | --- | --- |
 | Array&lt;FrameNode&gt; | Array of items in the FrameNode. |
 
-<a id="insertitem"></a>
 ## insertItem
 
 ```TypeScript
@@ -163,7 +155,6 @@ Inserts a specified number of items starting from a specific index.
 | start | number | Yes | Starting index of the items to insert.<br>Value range: [0, +∞). |
 | count | number | Yes | Number of the items to insert.<br>Value range: [0, +∞). |
 
-<a id="isdisposed"></a>
 ## isDisposed
 
 ```TypeScript
@@ -188,7 +179,6 @@ Checks whether this FrameNode object has released its reference to its backend e
 | --- | --- |
 | boolean | Whether the reference to the backend node is released. The value **true** means that the reference to backend node is released, and **false** means the opposite. |
 
-<a id="moveitem"></a>
 ## moveItem
 
 ```TypeScript
@@ -214,7 +204,6 @@ Moves items from the starting index to the ending index.
 | from | number | Yes | Original index from which the data will be moved.<br>Value range: [0, +∞). |
 | to | number | Yes | Target index to which the data will be moved.<br>Value range: [0, +∞). |
 
-<a id="onattachtonode"></a>
 ## onAttachToNode
 
 ```TypeScript
@@ -239,7 +228,6 @@ Called when a FrameNode is attached to the NodeAdapter.
 | --- | --- | --- | --- |
 | target | [FrameNode](arkts-arkui-framenode-c.md) | Yes | FrameNode attached to the NodeAdapter. |
 
-<a id="oncreatechild"></a>
 ## onCreateChild
 
 ```TypeScript
@@ -270,7 +258,6 @@ Called during node initialization or when new child nodes are detected. When add
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md) | FrameNode created by you. |
 
-<a id="ondetachfromnode"></a>
 ## onDetachFromNode
 
 ```TypeScript
@@ -289,7 +276,6 @@ Called when detachment occurs.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="ondisposechild"></a>
 ## onDisposeChild
 
 ```TypeScript
@@ -315,7 +301,6 @@ Called when a child node is about to be disposed. Nodes that are neither display
 | id | number | Yes | ID of the child node to be disposed of. |
 | node | [FrameNode](arkts-arkui-framenode-c.md) | Yes | FrameNode to be disposed of. |
 
-<a id="ongetchildid"></a>
 ## onGetChildId
 
 ```TypeScript
@@ -346,7 +331,6 @@ Called during node initialization or when new child nodes are detected. The **in
 | --- | --- |
 | number | Custom ID. Make sure the ID is unique. |
 
-<a id="onupdatechild"></a>
 ## onUpdateChild
 
 ```TypeScript
@@ -372,14 +356,13 @@ Called when a loaded node is reused. Node reuse occurs when the key value of a c
 | id | number | Yes | ID of the node to be reused. |
 | node | [FrameNode](arkts-arkui-framenode-c.md) | Yes | FrameNode that is reused. |
 
-<a id="reloadallitems"></a>
 ## reloadAllItems
 
 ```TypeScript
 reloadAllItems(): void
 ```
 
-Reloads all items in this node. This API calls the [OnDataReloaded](../arkts-components/arkts-arkui-datachangelistener-i.md#ondatareloaded-1) API in **LazyForEach** to trigger component data refresh.
+Reloads all items in this node. This API calls the [OnDataReloaded](../arkts-components/arkts-arkui-datachangelistener-i.md#ondatareloaded) API in **LazyForEach** to trigger component data refresh.
 
 **Since:** 12
 
@@ -391,7 +374,6 @@ Reloads all items in this node. This API calls the [OnDataReloaded](../arkts-com
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="reloaditem"></a>
 ## reloadItem
 
 ```TypeScript
@@ -417,7 +399,6 @@ Reloads a specified number of items starting from a specific index.
 | start | number | Yes | Starting index of the items to reload.<br>Value range: [0, +∞). |
 | count | number | Yes | Number of the items to reload.<br>Value range: [0, +∞). |
 
-<a id="removeitem"></a>
 ## removeItem
 
 ```TypeScript

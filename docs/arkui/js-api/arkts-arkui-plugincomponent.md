@@ -23,7 +23,7 @@ Called when setting the plugin.AnonyMous Object Rectification
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | PluginComponentOptions | Yes | Plugin component options |
+| options | [PluginComponentOptions](arkts-arkui-plugincomponentoptions-i-sys.md) | Yes | Plugin component options  |
 
 ## Summary
 

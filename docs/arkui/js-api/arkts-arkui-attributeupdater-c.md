@@ -10,7 +10,6 @@ Represents the implementation class of AttributeModifier. You need to customize 
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="applynormalattribute"></a>
 ## applyNormalAttribute
 
 ```TypeScript
@@ -35,7 +34,6 @@ Defines the function for updating attributes in normal state.
 | --- | --- | --- | --- |
 | instance | T | Yes | Component attribute class, which identifies the type of component to which attributes will be applied, for example, ButtonAttribute for the Button component and TextAttribute for the Text component. |
 
-<a id="initializemodifier"></a>
 ## initializeModifier
 
 ```TypeScript
@@ -60,7 +58,6 @@ Initializes the component's attributes to the default values defined in this Att
 | --- | --- | --- | --- |
 | instance | T | Yes | Component attribute class, which identifies the type of component to which attributes will be applied, for example, ButtonAttribute for the Button component and TextAttribute for the Text component. |
 
-<a id="oncomponentchanged"></a>
 ## onComponentChanged
 
 ```TypeScript

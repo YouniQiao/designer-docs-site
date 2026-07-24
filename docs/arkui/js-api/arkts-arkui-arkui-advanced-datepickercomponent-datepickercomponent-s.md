@@ -4,6 +4,8 @@ DatePickerComponent component is used to select date (year, month, day) and time
 
 **Since:** 26.0.0
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct DatePickerComponent--><!--Device-unnamed-export declare struct DatePickerComponent-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full

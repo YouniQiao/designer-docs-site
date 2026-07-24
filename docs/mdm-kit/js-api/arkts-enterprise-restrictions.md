@@ -1,13 +1,12 @@
 # @ohos.enterprise.restrictions
 
 This **restrictions** module provides APIs for disallowing general features of devices. You can globally disable or enable the features such as Bluetooth, HDC, USB, and Wi-Fi.
-
 > **NOTE**  
 >  
 > The APIs of this module can be used only in the stage model.  
 >  
 > The APIs of this module can be called only by a device administrator application that is enabled. For details, see  
-> [MDM Kit Development](docroot://mdm/mdm-kit-guide.md).
+> [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
 **Since:** 10
 
@@ -60,7 +59,7 @@ import { restrictions } from '@kit.MDMKit';
 | [isPrinterDisabled](arkts-mdm-restrictions-isprinterdisabled-f-sys.md#isprinterdisabled) | Queries whether the printing capability of a device is disabled. This API uses an asynchronous callback to return the result. |
 | [isPrinterDisabled](arkts-mdm-restrictions-isprinterdisabled-f-sys.md#isprinterdisabled-1) | Queries whether the printing capability of a device is disabled. This API uses a promise to return the result. |
 | [setFingerprintAuthDisabled](arkts-mdm-restrictions-setfingerprintauthdisabled-f-sys.md#setfingerprintauthdisabled) | Enables or disables fingerprint authentication. |
-| [setHdcDisabled](arkts-mdm-restrictions-sethdcdisabled-f-sys.md#sethdcdisabled) | Enables or disables [HDC](docroot://../device-dev/subsystems/subsys-toolchain-hdc-guide.md). This API uses an asynchronous callback to return the result. |
+| [setHdcDisabled](arkts-mdm-restrictions-sethdcdisabled-f-sys.md#sethdcdisabled) | Enables or disables [HDC](../../../../device-dev/subsystems/subsys-toolchain-hdc-guide.md). This API uses an asynchronous callback to return the result. |
 | [setHdcDisabled](arkts-mdm-restrictions-sethdcdisabled-f-sys.md#sethdcdisabled-1) | Enables or disables HDC on a device. This API uses a promise to return the result. |
 | [setPrinterDisabled](arkts-mdm-restrictions-setprinterdisabled-f-sys.md#setprinterdisabled) | Enables or disables the printing capability of the device. This API uses an asynchronous callback to return the result. |
 | [setPrinterDisabled](arkts-mdm-restrictions-setprinterdisabled-f-sys.md#setprinterdisabled-1) | Enables or disables the printing capability of the device. This API uses a promise to return the result. |

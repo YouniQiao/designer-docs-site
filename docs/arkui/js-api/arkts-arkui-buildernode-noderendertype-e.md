@@ -33,7 +33,6 @@ RENDER_TYPE_TEXTURE = 1
 ```
 
 The node is exported as a texture.
-
 > **NOTE**  
 >  
 > - Currently, the **RENDER_TYPE_TEXTURE** type takes effect only for the  
@@ -59,13 +58,13 @@ The node is exported as a texture.
 >  
 > - Since API version 12, the following components also support texture export: [DatePicker](../arkts-components/arkts-arkui-datepicker.md),  
 > [ForEach](../arkts-components/arkts-arkui-foreach.md), [Grid](../arkts-components/arkts-arkui-grid.md),  
-> [if/else](docroot://ui/rendering-control/arkts-rendering-control-ifelse.md), [LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md),  
+> [if/else](../../../ui/rendering-control/arkts-rendering-control-ifelse.md), [LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md),  
 > [List](../../apis-arkts/arkts-apis/arkts-arkts-util-list-list-c.md), [Scroll](../arkts-components/arkts-arkui-scroll.md), [Swiper](../arkts-components/arkts-arkui-swiper.md), [TimePicker](../arkts-components/arkts-arkui-timepicker.md), custom  
-> components decorated with [@Component](docroot://ui/state-management/arkts-create-custom-components.md#component),  
+> components decorated with [@Component](../../../ui/state-management/arkts-create-custom-components.md#component),  
 > [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md), and [FrameNode](arkts-arkui-framenode-c.md) and  
 > [RenderNode](arkts-arkui-rendernode-c.md) mounted to [NodeContainer](../arkts-components/arkts-arkui-nodecontainer.md).  
 >  
-> - For details, see [Rendering and Drawing Video and Button Components at the Same Layer](docroot://web/web-same-layer.md).
+> - For details, see [Rendering and Drawing Video and Button Components at the Same Layer](../../../web/web-same-layer.md).
 
 **Since:** 11
 

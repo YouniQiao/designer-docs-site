@@ -8,14 +8,13 @@ Defines FrameNode.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="addcomponentcontent"></a>
 ## addComponentContent
 
 ```TypeScript
 addComponentContent<T>(content: ComponentContent<T> | ReactiveComponentContent<T>): void
 ```
 
-Adds component content. The current node must be modifiable, which means the return value of [isModifiable](arkts-arkui-framenode-c.md#ismodifiable-1) must be **true**. If the node is not modifiable, an exception is thrown.
+Adds component content. The current node must be modifiable, which means the return value of [isModifiable](arkts-arkui-framenode-c.md#ismodifiable) must be **true**. If the node is not modifiable, an exception is thrown.
 
 **Since:** 12
 
@@ -39,7 +38,6 @@ Adds component content. The current node must be modifiable, which means the ret
 | --- | --- |
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 
-<a id="addsupporteduistates"></a>
 ## addSupportedUIStates
 
 ```TypeScript
@@ -66,7 +64,6 @@ Adds the polymorphic style states supported by the component.
 | statesChangeHandler | [UIStatesChangeHandler](arkts-arkui-uistateschangehandler-t.md) | Yes | Callback invoked when the state changes. |
 | excludeInner | boolean | No | Whether to disable the default state style processing. Default value:**false**.<br> **true**: Disable default state style processing. **false**: Enable default state style processing. |
 
-<a id="adoptchild"></a>
 ## adoptChild
 
 ```TypeScript
@@ -97,7 +94,6 @@ Adopts the target node as an affiliated node. The adopted node must not have an 
 | [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reason are included in the error message. For example: "The parameter 'child' is invalid: it cannot be disposed." |
 | [100026](../errorcode-node.md#100026-the-instance-object-used-to-call-the-api-has-been-unbound-from-the-backend-entity-node) | The current FrameNode has been disposed. |
 
-<a id="appendchild"></a>
 ## appendChild
 
 ```TypeScript
@@ -129,7 +125,6 @@ Appends a child node to the end of this FrameNode. If this FrameNode is not modi
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 | [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reason are included in the error message. For example: "The parameter 'node' is invalid: it cannot be adopted."<br>**Applicable version:** 22 and later |
 
-<a id="cancelanimations"></a>
 ## cancelAnimations
 
 ```TypeScript
@@ -158,9 +153,8 @@ Cancels all animations for specified properties on the FrameNode. This API execu
 
 | Type | Description |
 | --- | --- |
-| boolean | Animation cancellation status.<br>**true**: successful.<br>**false**: failed.<br>The possible causes are as follows:<br>Additional notes:<br> 1. The node has been released (the [dispose](arkts-arkui-framenode-c.md#dispose-1) API has been called).<br> 2. The node is a built-in component proxy (where [isModifiable](arkts-arkui-framenode-c.md#ismodifiable-1) returns **false**).<br> 3. The property array contains invalid enumerated values.<br> 4. System error. Example: system IPC communication error.<br>Additional notes:<br> 1. This API returns **true** for properties without active animations, if there are no system errors.<br> 2. Valid parameters with normal node returning **false** indicate a system exception. In this case, you can retry cancellation later or use [createAnimation](arkts-arkui-framenode-c.md#createanimation-1) with a zero duration as an alternative. |
+| boolean | Animation cancellation status.<br>**true**: successful.<br>**false**: failed.<br>The possible causes are as follows:<br>Additional notes:<br> 1. The node has been released (the [dispose](arkts-arkui-framenode-c.md#dispose) API has been called).<br> 2. The node is a built-in component proxy (where [isModifiable](arkts-arkui-framenode-c.md#ismodifiable) returns **false**).<br> 3. The property array contains invalid enumerated values.<br> 4. System error. Example: system IPC communication error.<br>Additional notes:<br> 1. This API returns **true** for properties without active animations, if there are no system errors.<br> 2. Valid parameters with normal node returning **false** indicate a system exception. In this case, you can retry cancellation later or use [createAnimation](arkts-arkui-framenode-c.md#createanimation) with a zero duration as an alternative. |
 
-<a id="clearchildren"></a>
 ## clearChildren
 
 ```TypeScript
@@ -185,7 +179,6 @@ Clears all child nodes of this FrameNode. If this FrameNode is not modifiable, a
 | --- | --- |
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -210,7 +203,6 @@ A constructor used to create a FrameNode.
 | --- | --- | --- | --- |
 | uiContext | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | Yes | UI context for node creation. |
 
-<a id="convertposition"></a>
 ## convertPosition
 
 ```TypeScript
@@ -249,7 +241,6 @@ Converts a coordinate point from this node's coordinate system to the target nod
 | [100024](../errorcode-node.md#100024-no-common-ancestor-node-between-nodes) | The current FrameNode and the target FrameNode do not have a common ancestor node. |
 | [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reason are included in the error message. For example: "The parameter 'targetNode' is invalid: it cannot be disposed." |
 
-<a id="convertpositionfromwindow"></a>
 ## convertPositionFromWindow
 
 ```TypeScript
@@ -287,7 +278,6 @@ Converts the coordinates of a point from the coordinate system of the window whe
 | [100026](../errorcode-node.md#100026-the-instance-object-used-to-call-the-api-has-been-unbound-from-the-backend-entity-node) | The current FrameNode has been disposed. |
 | [100028](../errorcode-node.md#100028-current-node-is-not-on-the-main-node-tree) | The current FrameNode is not on the main tree. |
 
-<a id="convertpositiontowindow"></a>
 ## convertPositionToWindow
 
 ```TypeScript
@@ -325,7 +315,6 @@ Converts the coordinates of a point from the coordinate system of the current no
 | [100026](../errorcode-node.md#100026-the-instance-object-used-to-call-the-api-has-been-unbound-from-the-backend-entity-node) | The current FrameNode has been disposed. |
 | [100028](../errorcode-node.md#100028-current-node-is-not-on-the-main-node-tree) | The current FrameNode is not on the main tree. |
 
-<a id="createanimation"></a>
 ## createAnimation
 
 ```TypeScript
@@ -357,9 +346,8 @@ Creates a property animation for the FrameNode.
 
 | Type | Description |
 | --- | --- |
-| boolean | Whether the animation is created successfully.<br>Returns **true** if the animation is created successfully. If an end callback is specified in the animation parameters, it will be invoked upon animation completion.<br>Returns **false** if the animation creation fails. The end callback will not be invoked even if specified.<br>Possible failure reasons:<br>Additional notes:<br> 1. The node has been released (the [dispose](arkts-arkui-framenode-c.md#dispose-1) API has been called).<br> 2. The node is a built-in component proxy (where [isModifiable](arkts-arkui-framenode-c.md#ismodifiable-1) returns **false**).<br> 3. There is an invalid property enumeration or length mismatch between the property type and **startValue** or **endValue** arrays.<br> 4. No start value is available (**startValue** is **undefined** for the first animation of a property) or the start and end values are identical. |
+| boolean | Whether the animation is created successfully.<br>Returns **true** if the animation is created successfully. If an end callback is specified in the animation parameters, it will be invoked upon animation completion.<br>Returns **false** if the animation creation fails. The end callback will not be invoked even if specified.<br>Possible failure reasons:<br>Additional notes:<br> 1. The node has been released (the [dispose](arkts-arkui-framenode-c.md#dispose) API has been called).<br> 2. The node is a built-in component proxy (where [isModifiable](arkts-arkui-framenode-c.md#ismodifiable) returns **false**).<br> 3. There is an invalid property enumeration or length mismatch between the property type and **startValue** or **endValue** arrays.<br> 4. No start value is available (**startValue** is **undefined** for the first animation of a property) or the start and end values are identical. |
 
-<a id="createframenodes"></a>
 ## createFrameNodes
 
 ```TypeScript
@@ -391,7 +379,6 @@ Creates a specified number of FrameNodes in batches and returns a FrameNode arra
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md)[] | Array of created FrameNodes. |
 
-<a id="dispose"></a>
 ## dispose
 
 ```TypeScript
@@ -399,15 +386,14 @@ dispose(): void
 ```
 
 Immediately releases the reference to the underlying FrameNode entity.
-
 > **NOTE**  
 >  
 > - After the **dispose** API is called, the FrameNode object no longer corresponds to any entity FrameNode. In  
-> this case, attempts to call certain query APIs, such as [getMeasuredSize](arkts-arkui-framenode-c.md#getmeasuredsize-1) and  
-> [getLayoutPosition](arkts-arkui-framenode-c.md#getlayoutposition-1), will result in a JS crash in the application.  
+> this case, attempts to call certain query APIs, such as [getMeasuredSize](arkts-arkui-framenode-c.md#getmeasuredsize) and  
+> [getLayoutPosition](arkts-arkui-framenode-c.md#getlayoutposition), will result in a JS crash in the application.  
 >  
 > - To check whether the current FrameNode object corresponds to an entity FrameNode, you can use  
-> [getUniqueId](arkts-arkui-framenode-c.md#getuniqueid-1) API. A **UniqueId** value greater than 0 indicates that the object is  
+> [getUniqueId](arkts-arkui-framenode-c.md#getuniqueid) API. A **UniqueId** value greater than 0 indicates that the object is  
 > associated with an entity FrameNode.
 
 **Since:** 12
@@ -420,7 +406,6 @@ Immediately releases the reference to the underlying FrameNode entity.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="disposetree"></a>
 ## disposeTree
 
 ```TypeScript
@@ -439,7 +424,6 @@ Traverses down the tree and recursively releases the subtree with this node as t
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="getchild"></a>
 ## getChild
 
 ```TypeScript
@@ -470,7 +454,6 @@ Obtains the child node in the specified position of this node.
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md) | Child node obtained. If the FrameNode does not contain the specified child node, null is returned. |
 
-<a id="getchild-1"></a>
 ## getChild
 
 ```TypeScript
@@ -502,7 +485,6 @@ Obtains a child node at a specified index from this FrameNode, with optional sup
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md) | Child node obtained. If the FrameNode does not contain the specified child node, null is returned. |
 
-<a id="getchildrencount"></a>
 ## getChildrenCount
 
 ```TypeScript
@@ -527,7 +509,6 @@ Obtains the number of child nodes of this FrameNode.
 | --- | --- |
 | number | Number of child nodes of the current FrameNode. |
 
-<a id="getchildrencount-1"></a>
 ## getChildrenCount
 
 ```TypeScript
@@ -558,7 +539,6 @@ Get the children count of the current FrameNode with specified count mode.
 | --- | --- |
 | number | - Returns the number of children of the current FrameNode based on the count mode. |
 
-<a id="getcrosslanguageoptions"></a>
 ## getCrossLanguageOptions
 
 ```TypeScript
@@ -583,7 +563,6 @@ Obtains the cross-language access options for this FrameNode. For example, for n
 | --- | --- |
 | [CrossLanguageOptions](arkts-arkui-framenode-crosslanguageoptions-i.md) | Cross-ArkTS language access options. |
 
-<a id="getcustomproperty"></a>
 ## getCustomProperty
 
 ```TypeScript
@@ -614,7 +593,6 @@ Obtains the component's custom property by its name.
 | --- | --- |
 | Object | Value of the custom property. |
 
-<a id="getfirstchild"></a>
 ## getFirstChild
 
 ```TypeScript
@@ -639,7 +617,6 @@ Obtains the first child node of this FrameNode.
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md) | First child node. If the FrameNode does not contain any child node, null is returned. |
 
-<a id="getfirstchildindexwithoutexpand"></a>
 ## getFirstChildIndexWithoutExpand
 
 ```TypeScript
@@ -664,7 +641,6 @@ Obtains the sequence number of the first child node of this node that is in the 
 | --- | --- |
 | number | Sequence number of the first child node of this node that is in the main node tree. |
 
-<a id="getframenodebyid"></a>
 ## getFrameNodeById
 
 ```TypeScript
@@ -695,14 +671,13 @@ Searches for all child nodes layer by layer from the current node (which is used
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md) | First node that matches the specified ID, which is returned by searching for all child nodes layer by layer from the current node (which is used as the root node). If no child node of the current node matches the specified ID, a null is returned. |
 
-<a id="getframenodebyuniqueid"></a>
 ## getFrameNodeByUniqueId
 
 ```TypeScript
 getFrameNodeByUniqueId(id: number): FrameNode | null
 ```
 
-Searches for and returns the child node with the specified unique ID (which can be obtained using the [getUniqueId](arkts-arkui-framenode-c.md#getuniqueid-1) API) under the current node (which is used as the root node).
+Searches for and returns the child node with the specified unique ID (which can be obtained using the [getUniqueId](arkts-arkui-framenode-c.md#getuniqueid) API) under the current node (which is used as the root node).
 
 **Since:** 26.0.0
 
@@ -726,7 +701,6 @@ Searches for and returns the child node with the specified unique ID (which can 
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md) | Child node with the unique ID, which is found from the current node (which is used as the root node). If the child node with the unique ID cannot be found under the current node, a null is returned. |
 
-<a id="getglobalpositionondisplay"></a>
 ## getGlobalPositionOnDisplay
 
 ```TypeScript
@@ -751,7 +725,6 @@ Obtains the position offset of this FrameNode relative to the global display, in
 | --- | --- |
 | [Position](arkts-arkui-position-i.md) | Position offset of the node relative to the global display, in vp. |
 
-<a id="getid"></a>
 ## getId
 
 ```TypeScript
@@ -776,7 +749,6 @@ Obtains the node ID set by the user, which is the same as the value of the [comp
 | --- | --- |
 | string | Node ID set by the user, which is the same as the value of the [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). |
 
-<a id="getinspectorinfo"></a>
 ## getInspectorInfo
 
 ```TypeScript
@@ -784,7 +756,6 @@ getInspectorInfo(): Object
 ```
 
 Obtains the structure information of the node, which is consistent with what is found in DevEco Studio's built-in <!--RP1-->ArkUI Inspector <!--RP1End-->tool.
-
 > **NOTE**  
 >  
 > The **getInspectorInfo** API is designed for debugging purposes to obtain information about all nodes. Frequent  
@@ -806,7 +777,6 @@ Obtains the structure information of the node, which is consistent with what is 
 | --- | --- |
 | Object | Structure information of the node. |
 
-<a id="getinteractioneventbindinginfo"></a>
 ## getInteractionEventBindingInfo
 
 ```TypeScript
@@ -837,7 +807,6 @@ Obtains the event binding information for the target node. Returns **undefined**
 | --- | --- |
 | [InteractionEventBindingInfo](arkts-arkui-framenode-interactioneventbindinginfo-i.md) | Returns an **InteractionEventBindingInfo** object containing event binding details if the interaction event is bound to the current node; returns **undefined** otherwise. |
 
-<a id="getlastchildindexwithoutexpand"></a>
 ## getLastChildIndexWithoutExpand
 
 ```TypeScript
@@ -862,7 +831,6 @@ Obtains the sequence number of the last child node of this node that is in the m
 | --- | --- |
 | number | Sequence number of the last child node of this node that is in the main node tree. |
 
-<a id="getlayoutposition"></a>
 ## getLayoutPosition
 
 ```TypeScript
@@ -887,7 +855,6 @@ Obtains the position offset of this FrameNode relative to the parent component a
 | --- | --- |
 | [Position](arkts-arkui-position-i.md) | Position offset of the current FrameNode relative to the parent component after layout, in px. |
 
-<a id="getmeasuredsize"></a>
 ## getMeasuredSize
 
 ```TypeScript
@@ -912,7 +879,6 @@ Obtains the measured size of this FrameNode, in px.
 | --- | --- |
 | [Size](../arkts-components/arkts-arkui-size-i.md) | Measured size of the node, in px. |
 
-<a id="getnextsibling"></a>
 ## getNextSibling
 
 ```TypeScript
@@ -937,7 +903,6 @@ Obtains the next sibling node of this FrameNode.
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md) | Next sibling node of the current FrameNode. If the FrameNode does not have the next sibling node, null is returned. |
 
-<a id="getnodepropertyvalue"></a>
 ## getNodePropertyValue
 
 ```TypeScript
@@ -966,9 +931,8 @@ Obtains the property value of the FrameNode.
 
 | Type | Description |
 | --- | --- |
-| number[] | Current property value from the render node. The array length corresponds to the property type.<br>The return value format varies by property:<br>- An empty array (length 0) is returned if the node has been disposed, the [dispose](arkts-arkui-framenode-c.md#dispose-1)API has been called, or the property enumeration is invalid.<br>- **AnimationPropertyType.ROTATION**: [rotationX, rotationY, rotationZ] in degrees (°).<br>- **AnimationPropertyType.TRANSLATION**: [translateX, translateY] in px.<br>- **AnimationPropertyType.SCALE**: [scaleX, scaleY](scale factors).<br>- **AnimationPropertyType.OPACITY**: [opacity].<br>1. After animation cancellation, the node's property value is restored to the display value at the time of cancellation, which can be obtained using this API.<br>2. During animation playback, this API returns the final target value rather than real-time interpolated values.<br> |
+| number[] | Current property value from the render node. The array length corresponds to the property type.<br>The return value format varies by property:<br>- An empty array (length 0) is returned if the node has been disposed, the [dispose](arkts-arkui-framenode-c.md#dispose)API has been called, or the property enumeration is invalid.<br>- **AnimationPropertyType.ROTATION**: [rotationX, rotationY, rotationZ] in degrees (°).<br>- **AnimationPropertyType.TRANSLATION**: [translateX, translateY] in px.<br>- **AnimationPropertyType.SCALE**: [scaleX, scaleY](scale factors).<br>- **AnimationPropertyType.OPACITY**: [opacity].<br>1. After animation cancellation, the node's property value is restored to the display value at the time of cancellation, which can be obtained using this API.<br>2. During animation playback, this API returns the final target value rather than real-time interpolated values.<br> |
 
-<a id="getnodetype"></a>
 ## getNodeType
 
 ```TypeScript
@@ -993,7 +957,6 @@ Obtains the type of the node. For built-in components, the node type corresponds
 | --- | --- |
 | string | Type of the node. |
 
-<a id="getopacity"></a>
 ## getOpacity
 
 ```TypeScript
@@ -1018,7 +981,6 @@ Obtains the opacity of the node. The minimum value is 0, and the maximum value i
 | --- | --- |
 | number | Opacity of the node. Value range: [0, 1]. A larger value indicates lower opacity. |
 
-<a id="getparent"></a>
 ## getParent
 
 ```TypeScript
@@ -1043,7 +1005,6 @@ Obtains the parent node of this FrameNode.
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md) | Parent node of the current FrameNode. If the FrameNode does not contain a parent node, null is returned. |
 
-<a id="getpositiontoparent"></a>
 ## getPositionToParent
 
 ```TypeScript
@@ -1068,14 +1029,13 @@ Obtains the position offset of this FrameNode relative to the parent component, 
 | --- | --- |
 | [Position](arkts-arkui-position-i.md) | Position offset of the node relative to the parent component, in vp. |
 
-<a id="getpositiontoparentwithtransform"></a>
 ## getPositionToParentWithTransform
 
 ```TypeScript
 getPositionToParentWithTransform(): Position
 ```
 
-Obtains the position offset of a FrameNode relative to its drawing-enabled parent component, in vp. Drawing attributes include [transform](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#transform) and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate-1). This API returns the upper left corner coordinates after component layout.
+Obtains the position offset of a FrameNode relative to its drawing-enabled parent component, in vp. Drawing attributes include [transform](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#transform) and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate). This API returns the upper left corner coordinates after component layout.
 
 **Since:** 12
 
@@ -1093,7 +1053,6 @@ Obtains the position offset of a FrameNode relative to its drawing-enabled paren
 | --- | --- |
 | [Position](arkts-arkui-position-i.md) | Position offset of the node relative to the parent component, in vp. If other drawing attributes (such as **transform** and **translate**) are set, the return value may slightly deviate due to the precision of floating point numbers. |
 
-<a id="getpositiontoscreen"></a>
 ## getPositionToScreen
 
 ```TypeScript
@@ -1118,14 +1077,13 @@ Obtains the position offset of this FrameNode relative to the screen, in vp.
 | --- | --- |
 | [Position](arkts-arkui-position-i.md) | Position offset of the node relative to the screen, in vp. |
 
-<a id="getpositiontoscreenwithtransform"></a>
 ## getPositionToScreenWithTransform
 
 ```TypeScript
 getPositionToScreenWithTransform(): Position
 ```
 
-Obtains the position offset of a FrameNode relative to the drawing-enabled screen, in vp. Drawing attributes include [transform](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#transform)and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate-1). This API returns the upper left corner coordinates after component layout.
+Obtains the position offset of a FrameNode relative to the drawing-enabled screen, in vp. Drawing attributes include [transform](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#transform)and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate). This API returns the upper left corner coordinates after component layout.
 
 **Since:** 12
 
@@ -1143,7 +1101,6 @@ Obtains the position offset of a FrameNode relative to the drawing-enabled scree
 | --- | --- |
 | [Position](arkts-arkui-position-i.md) | Position offset of the node relative to the screen, in vp. If other drawing attributes (such as **transform** and **translate**) are set, the return value may slightly deviate due to the precision of floating point numbers. |
 
-<a id="getpositiontowindow"></a>
 ## getPositionToWindow
 
 ```TypeScript
@@ -1168,14 +1125,13 @@ Obtains the position offset of this FrameNode relative to the window, in vp.
 | --- | --- |
 | [Position](arkts-arkui-position-i.md) | Position offset of the node relative to the window, in vp. |
 
-<a id="getpositiontowindowwithtransform"></a>
 ## getPositionToWindowWithTransform
 
 ```TypeScript
 getPositionToWindowWithTransform(): Position
 ```
 
-Obtains the position offset of a FrameNode relative to the drawing-enabled window, in vp. Drawing attributes include [transform](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#transform)and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate-1). This API returns the upper left corner coordinates after component layout.
+Obtains the position offset of a FrameNode relative to the drawing-enabled window, in vp. Drawing attributes include [transform](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#transform)and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate). This API returns the upper left corner coordinates after component layout.
 
 **Since:** 12
 
@@ -1193,7 +1149,6 @@ Obtains the position offset of a FrameNode relative to the drawing-enabled windo
 | --- | --- |
 | [Position](arkts-arkui-position-i.md) | Position offset of the node relative to the window, in vp. If other drawing attributes (such as **transform** and **translate**) are set, the return value may slightly deviate due to the precision of floating point numbers. |
 
-<a id="getprevioussibling"></a>
 ## getPreviousSibling
 
 ```TypeScript
@@ -1218,7 +1173,6 @@ Obtains the previous sibling node of this FrameNode.
 | --- | --- |
 | [FrameNode](arkts-arkui-framenode-c.md) | Previous sibling node of the current FrameNode. If the FrameNode does not have the previous sibling node, null is returned. |
 
-<a id="getrendernode"></a>
 ## getRenderNode
 
 ```TypeScript
@@ -1243,7 +1197,6 @@ Obtains the [RenderNode](arkts-arkui-rendernode-c.md) held by the FrameNode.
 | --- | --- |
 | [RenderNode](arkts-arkui-rendernode-c.md) | **RenderNode** instance. If the current FrameNode does not hold any RenderNode,**null** is returned. If the current FrameNode is a node created by a declarative component, **null** is returned. |
 
-<a id="getuniqueid"></a>
 ## getUniqueId
 
 ```TypeScript
@@ -1268,7 +1221,6 @@ Obtains the system-assigned unique ID of the node.
 | --- | --- |
 | number | System-assigned unique ID of the node. |
 
-<a id="getuserconfigborderwidth"></a>
 ## getUserConfigBorderWidth
 
 ```TypeScript
@@ -1293,7 +1245,6 @@ Obtains the border width set by the user.
 | --- | --- |
 | [Edges](arkts-arkui-edges-i.md)&lt;LengthMetrics&gt; | Border width set by the user. |
 
-<a id="getuserconfigmargin"></a>
 ## getUserConfigMargin
 
 ```TypeScript
@@ -1318,7 +1269,6 @@ Obtains the margin set by the user.
 | --- | --- |
 | [Edges](arkts-arkui-edges-i.md)&lt;LengthMetrics&gt; | Margin set by the user. |
 
-<a id="getuserconfigpadding"></a>
 ## getUserConfigPadding
 
 ```TypeScript
@@ -1343,7 +1293,6 @@ Obtains the padding set by the user.
 | --- | --- |
 | [Edges](arkts-arkui-edges-i.md)&lt;LengthMetrics&gt; | Padding set by the user. |
 
-<a id="getuserconfigsize"></a>
 ## getUserConfigSize
 
 ```TypeScript
@@ -1368,7 +1317,6 @@ Obtains the width and height set by the user.
 | --- | --- |
 | [SizeT](../arkts-components/arkts-arkui-sizet-t.md)&lt;LengthMetrics&gt; | Width and height set by the user. |
 
-<a id="insertchildafter"></a>
 ## insertChildAfter
 
 ```TypeScript
@@ -1401,7 +1349,6 @@ Inserts a child node after the specified child node of this FrameNode. If this F
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 | [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reason are included in the error message. For example: "The parameter 'child' is invalid: it cannot be adopted."<br>**Applicable version:** 22 and later |
 
-<a id="invalidate"></a>
 ## invalidate
 
 ```TypeScript
@@ -1420,7 +1367,6 @@ Invalidates this FrameNode to trigger a re-rendering of the self-drawing content
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="invalidateattributes"></a>
 ## invalidateAttributes
 
 ```TypeScript
@@ -1443,7 +1389,6 @@ This API ensures rendering synchronization by triggering immediate property upda
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="isattached"></a>
 ## isAttached
 
 ```TypeScript
@@ -1468,14 +1413,13 @@ Obtains whether the node is mounted to the main node tree.
 | --- | --- |
 | boolean | Whether the node is mounted to the main node tree.<br>The value **true** means that the node is mounted to the main node tree, and **false** means the opposite. |
 
-<a id="iscliptoframe"></a>
 ## isClipToFrame
 
 ```TypeScript
 isClipToFrame(): boolean
 ```
 
-Checks whether the node is clipped to the component area. This API returns **true** after the [dispose](arkts-arkui-framenode-c.md#dispose-1) API is called to release the reference to the FrameNode.
+Checks whether the node is clipped to the component area. This API returns **true** after the [dispose](arkts-arkui-framenode-c.md#dispose) API is called to release the reference to the FrameNode.
 
 **Since:** 12
 
@@ -1493,7 +1437,6 @@ Checks whether the node is clipped to the component area. This API returns **tru
 | --- | --- |
 | boolean | Whether the node is clipped to the component area.<br>The value **true** means that the node is clipped to the component area, and **false** means the opposite. |
 
-<a id="isdisposed"></a>
 ## isDisposed
 
 ```TypeScript
@@ -1518,7 +1461,6 @@ Checks whether this FrameNode object has released its reference to its backend e
 | --- | --- |
 | boolean | Whether the reference to the backend node is released. The value **true** means that the reference to backend node is released, and **false** means the opposite. |
 
-<a id="isinrenderstate"></a>
 ## isInRenderState
 
 ```TypeScript
@@ -1543,7 +1485,6 @@ Checks whether this node is in render state. A node is considered to be in rende
 | --- | --- |
 | boolean | Whether the node is in render state.<br>**true**: The node is in render state. **false**: The node is not in render state. |
 
-<a id="ismodifiable"></a>
 ## isModifiable
 
 ```TypeScript
@@ -1566,9 +1507,8 @@ Checks whether this FrameNode is modifiable.
 
 | Type | Description |
 | --- | --- |
-| boolean | Whether this FrameNode is modifiable.<br>The value **true** means that the FrameNode is modifiable, and **false** means the opposite.<br>Returns **false** if the node is a system component proxy node in a [custom component node](docroot://ui/arkts-user-defined-node.md#custom-component-node-framenode) or the node has been [disposed](arkts-arkui-framenode-c.md#dispose-1).<br>When **false** is returned, the current FrameNode does not support operations such as [appendChild](arkts-arkui-framenode-c.md#appendchild-1), [insertChildAfter](arkts-arkui-framenode-c.md#insertchildafter-1),[removeChild](arkts-arkui-framenode-c.md#removechild-1), [clearChildren](arkts-arkui-framenode-c.md#clearchildren-1),[createAnimation](arkts-arkui-framenode-c.md#createanimation-1), and [cancelAnimations](arkts-arkui-framenode-c.md#cancelanimations-1). |
+| boolean | Whether this FrameNode is modifiable.<br>The value **true** means that the FrameNode is modifiable, and **false** means the opposite.<br>Returns **false** if the node is a system component proxy node in a [custom component node](../../../ui/arkts-user-defined-node.md#custom-component-node-framenode) or the node has been [disposed](arkts-arkui-framenode-c.md#dispose).<br>When **false** is returned, the current FrameNode does not support operations such as [appendChild](arkts-arkui-framenode-c.md#appendchild), [insertChildAfter](arkts-arkui-framenode-c.md#insertchildafter),[removeChild](arkts-arkui-framenode-c.md#removechild), [clearChildren](arkts-arkui-framenode-c.md#clearchildren),[createAnimation](arkts-arkui-framenode-c.md#createanimation), and [cancelAnimations](arkts-arkui-framenode-c.md#cancelanimations). |
 
-<a id="isonmaintree"></a>
 ## isOnMainTree
 
 ```TypeScript
@@ -1599,7 +1539,6 @@ Queries whether a node is mounted to the main node tree.
 | --- | --- |
 | [100026](../errorcode-node.md#100026-the-instance-object-used-to-call-the-api-has-been-unbound-from-the-backend-entity-node) | The current FrameNode has been disposed. |
 
-<a id="istransferred"></a>
 ## isTransferred
 
 ```TypeScript
@@ -1624,7 +1563,6 @@ Returns a flag indicating whether the current FrameNode was obtained through dyn
 | --- | --- |
 | boolean | - Returns true if the FrameNode was converted between dynamic and static states,otherwise, returns false. |
 
-<a id="isvisible"></a>
 ## isVisible
 
 ```TypeScript
@@ -1632,7 +1570,6 @@ isVisible(): boolean
 ```
 
 Obtains whether the node is visible.
-
 > **NOTE**  
 >  
 > The visibility of a node is determined by the **visibility** attribute of the component.
@@ -1653,14 +1590,13 @@ Obtains whether the node is visible.
 | --- | --- |
 | boolean | Whether the node is visible.<br>The value **true** means that the node is visible, and **false** means the opposite. |
 
-<a id="layout"></a>
 ## layout
 
 ```TypeScript
 layout(position: Position): void
 ```
 
-Lays out this FrameNode, specifying the layout positions for the FrameNode and its child nodes. If the layout method is overridden, the overridden method is called. It is recommended that this API be called in [onLayout](arkts-arkui-framenode-c.md#onlayout-1).
+Lays out this FrameNode, specifying the layout positions for the FrameNode and its child nodes. If the layout method is overridden, the overridden method is called. It is recommended that this API be called in [onLayout](arkts-arkui-framenode-c.md#onlayout).
 
 **Since:** 12
 
@@ -1678,14 +1614,13 @@ Lays out this FrameNode, specifying the layout positions for the FrameNode and i
 | --- | --- | --- | --- |
 | position | [Position](arkts-arkui-position-i.md) | Yes | Position information used in layout. |
 
-<a id="measure"></a>
 ## measure
 
 ```TypeScript
 measure(constraint: LayoutConstraint): void
 ```
 
-Measures this FrameNode and calculates its size based on the layout constraints of the parent container. If the measurement method is overridden, the overridden method is called. It is recommended that this API be called in [onMeasure](arkts-arkui-framenode-c.md#onmeasure-1).
+Measures this FrameNode and calculates its size based on the layout constraints of the parent container. If the measurement method is overridden, the overridden method is called. It is recommended that this API be called in [onMeasure](arkts-arkui-framenode-c.md#onmeasure).
 
 **Since:** 12
 
@@ -1703,7 +1638,6 @@ Measures this FrameNode and calculates its size based on the layout constraints 
 | --- | --- | --- | --- |
 | constraint | [LayoutConstraint](arkts-arkui-framenode-layoutconstraint-i.md) | Yes | Parent container layout constraints used for measurement. |
 
-<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -1711,7 +1645,6 @@ moveTo(targetParent: FrameNode, index?: number): void
 ```
 
 Moves this FrameNode to a specified position within the target FrameNode. If this FrameNode is not modifiable, an exception is thrown. When **targetParent** is a [typeNode](arkts-arkui-typenode-n.md), the API validates the type or number of child nodes. If the validation fails, an exception is thrown. For specific limitations, see [typeNode](arkts-arkui-typenode-n.md).
-
 > **NOTE**  
 >  
 > Currently, only the following types of [TypedFrameNode](arkts-arkui-framenode-typedframenode-i.md) are supported for the movement  
@@ -1746,7 +1679,6 @@ Moves this FrameNode to a specified position within the target FrameNode. If thi
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 | [100027](../errorcode-node.md#100027-the-current-node-has-been-adopted-as-a-child-node) | The current node has been adopted.<br>**Applicable version:** 22 and later |
 
-<a id="ondraw"></a>
 ## onDraw
 
 ```TypeScript
@@ -1755,7 +1687,7 @@ onDraw?(context: DrawContext): void
 
 Implements custom drawing for the FrameNode. This API overrides the default drawing behavior and is invoked during FrameNode content rendering.
 
-Note: The Canvas provided in the [DrawContext](arkts-arkui-graphics-drawcontext-c.md) parameter is a temporary command-recording canvas, not the actual rendering canvas of the node. For usage instructions, see [Adjusting the Transformation Matrix of the Custom Drawing Canvas](docroot://ui/arkts-user-defined-arktsNode-frameNode.md#adjusting-the-transformation-matrix-of-the-custom-drawing-canvas).
+Note: The Canvas provided in the [DrawContext](arkts-arkui-graphics-drawcontext-c.md) parameter is a temporary command-recording canvas, not the actual rendering canvas of the node. For usage instructions, see [Adjusting the Transformation Matrix of the Custom Drawing Canvas](../../../ui/arkts-user-defined-arktsNode-frameNode.md#adjusting-the-transformation-matrix-of-the-custom-drawing-canvas).
 
 **Since:** 12
 
@@ -1773,7 +1705,6 @@ Note: The Canvas provided in the [DrawContext](arkts-arkui-graphics-drawcontext-
 | --- | --- | --- | --- |
 | context | [DrawContext](../arkts-components/arkts-arkui-drawcontext-t.md) | Yes | Graphics drawing context. The self-drawing area cannot exceed the component's own size. |
 
-<a id="onlayout"></a>
 ## onLayout
 
 ```TypeScript
@@ -1798,7 +1729,6 @@ Called when this FrameNode needs to determine its layout. This API provides cust
 | --- | --- | --- | --- |
 | position | [Position](arkts-arkui-position-i.md) | Yes | Position information used in layout. |
 
-<a id="onmeasure"></a>
 ## onMeasure
 
 ```TypeScript
@@ -1823,7 +1753,6 @@ Called when this FrameNode needs to determine its size. This API provides custom
 | --- | --- | --- | --- |
 | constraint | [LayoutConstraint](arkts-arkui-framenode-layoutconstraint-i.md) | Yes | Layout constraints used by the component for measurement. |
 
-<a id="recycle"></a>
 ## recycle
 
 ```TypeScript
@@ -1842,7 +1771,6 @@ Triggers child component recycling in global reuse scenarios and fully releases 
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="removeadoptedchild"></a>
 ## removeAdoptedChild
 
 ```TypeScript
@@ -1873,7 +1801,6 @@ Removes a previously-adopted affiliated node.
 | [100025](../errorcode-node.md#100025-invalid-parameter-value) | The parameter is invalid. Details about the invalid parameter and the reason are included in the error message. For example: "The parameter 'child' is invalid: it cannot be null." |
 | [100026](../errorcode-node.md#100026-the-instance-object-used-to-call-the-api-has-been-unbound-from-the-backend-entity-node) | The current FrameNode has been disposed. |
 
-<a id="removechild"></a>
 ## removeChild
 
 ```TypeScript
@@ -1904,7 +1831,6 @@ Deletes the specified child node from this FrameNode. If this FrameNode is not m
 | --- | --- |
 | [100021](../errorcode-node.md#100021-framenode-not-modifiable) | The FrameNode is not modifiable. |
 
-<a id="removesupporteduistates"></a>
 ## removeSupportedUIStates
 
 ```TypeScript
@@ -1929,7 +1855,6 @@ Removes the state processing registration from the component.
 | --- | --- | --- | --- |
 | uiStates | number | Yes | UI states to be removed.<br>Multiple states can be specified simultaneously using bitwise OR operations, for example, **targetUIStates = UIState.PRESSED  \|  UIState.FOCUSED**. |
 
-<a id="reuse"></a>
 ## reuse
 
 ```TypeScript
@@ -1948,7 +1873,6 @@ Triggers child component reuse in global reuse scenarios to recycle FrameNode ba
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="setcrosslanguageoptions"></a>
 ## setCrossLanguageOptions
 
 ```TypeScript
@@ -1956,7 +1880,6 @@ setCrossLanguageOptions(options: CrossLanguageOptions): void
 ```
 
 Sets the cross-language access options for this FrameNode. For example, for nodes created using ArkTS, this API can set whether non-ArkTS languages are allowed to set the attributes of these nodes. Since API version 26.0.0, this API can set whether non-ArkTS languages are allowed to perform operations on the component tree. If the current FrameNode is not modifiable or does not support setting cross-language access options, an exception will be thrown.
-
 > **NOTE**  
 >  
 > Currently, the cross-ArkTS language access option can only be configured for the following components:  
@@ -1993,7 +1916,6 @@ Sets the cross-language access options for this FrameNode. For example, for node
 | --- | --- |
 | [100022](../errorcode-node.md#100022-crosslanguage-common-attribute-configuration-not-supported) | The FrameNode cannot be set whether to support cross-language common attribute setting. |
 
-<a id="setlayoutposition"></a>
 ## setLayoutPosition
 
 ```TypeScript
@@ -2018,7 +1940,6 @@ Sets the position of this FrameNode after layout. The default unit is PX.
 | --- | --- | --- | --- |
 | position | [Position](arkts-arkui-position-i.md) | Yes | Position of the FrameNode after layout. |
 
-<a id="setmeasuredsize"></a>
 ## setMeasuredSize
 
 ```TypeScript
@@ -2043,7 +1964,6 @@ Sets the measured size of this FrameNode. The default unit is PX. If the configu
 | --- | --- | --- | --- |
 | size | [Size](../arkts-components/arkts-arkui-size-i.md) | Yes | Measured size of the FrameNode. |
 
-<a id="setneedslayout"></a>
 ## setNeedsLayout
 
 ```TypeScript
@@ -2071,14 +1991,13 @@ get commonAttribute(): CommonAttribute
 Obtains the **CommonAttribute** API associated with the FrameNode, which is used to configure [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) and [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
 
 Note that only the attributes of a custom node can be modified.
-
 > **NOTE**  
 >  
 > The visual representation of the FrameNode is similar to that of a [Stack](../../apis-arkts/arkts-apis/arkts-arkts-util-stack-stack-c.md) container that is aligned  
 > to the top start edge.  
 >  
 > For details about the supported attributes, see  
-> [attributeModifier Support for Attributes and Events](docroot://ui/arkts-user-defined-extension-attributeModifier.md#attributemodifier-support-for-attributes-and-events).
+> [attributeModifier Support for Attributes and Events](../../../ui/arkts-user-defined-extension-attributeModifier.md#attributemodifier-support-for-attributes-and-events).
 
 **Type:** CommonAttribute
 

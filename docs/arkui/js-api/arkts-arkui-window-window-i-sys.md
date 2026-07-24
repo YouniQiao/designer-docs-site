@@ -2,7 +2,7 @@
 
 Represents a window instance, which is the basic unit managed by the window manager.
 
-In the following API examples, you must use [getLastWindow()](arkts-arkui-window-getlastwindow-f.md#getlastwindow-1),[createWindow()](arkts-arkui-window-createwindow-f.md#createwindow-1),or [findWindow()](arkts-arkui-window-findwindow-f.md#findwindow-1) to obtain a Window instance (named windowClass in this example) and then call a method in this instance.
+In the following API examples, you must use [getLastWindow()](arkts-arkui-window-getlastwindow-f.md#getlastwindow),[createWindow()](arkts-arkui-window-createwindow-f.md#createwindow),or [findWindow()](arkts-arkui-window-findwindow-f.md#findwindow) to obtain a Window instance (named windowClass in this example) and then call a method in this instance.
 
 **Since:** 6
 
@@ -16,7 +16,6 @@ In the following API examples, you must use [getLastWindow()](arkts-arkui-window
 import { window } from '@kit.ArkUI';
 ```
 
-<a id="attachlayouttoparentwindow"></a>
 ## attachLayoutToParentWindow
 
 ```TypeScript
@@ -24,7 +23,6 @@ attachLayoutToParentWindow(anchorInfo?: WindowAnchorInfo, attachOptions?: SubWin
 ```
 
 Attaches a first-level child window to the main window to maintain a fixed relative position.This API uses a promise to return the result. The relative position is represented by the anchor point offset between the child window and the parent window.The child window and the parent window use the same window anchor point.
-
 > **NOTE**  
 >  
 > - Only first-level child windows can call this API. The child window must be in floating window mode  
@@ -36,9 +34,9 @@ Attaches a first-level child window to the main window to maintain a fixed relat
 > [detachLayoutToParentWindow()](#detachlayouttoparentwindow24) API is called for detaching.  
 >  
 > -After the child window calls this API, calling APIs such as  
-> [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-1),  
-> [maximize()](arkts-arkui-window-window-i.md#maximize-1), and  
-> [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-window-i.md#setfollowparentwindowlayoutenabled-1)  
+> [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto),  
+> [maximize()](arkts-arkui-window-window-i.md#maximize), and  
+> [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-window-i.md#setfollowparentwindowlayoutenabled)  
 > to change the window position, or dragging and moving or dragging and resizing the child window through mouse  
 > or touch operations will not take effect.
 
@@ -57,7 +55,7 @@ Attaches a first-level child window to the main window to maintain a fixed relat
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | anchorInfo | [WindowAnchorInfo](arkts-arkui-window-windowanchorinfo-i-sys.md) | No | Anchor point information used to attach the first-level child window to the main window to maintain the fixed relative position. If this parameter is not passed,the default logic is the same as that of [WindowAnchorInfo](arkts-arkui-window-windowanchorinfo-i-sys.md). |
-| attachOptions | [SubWindowAttachOptions](arkts-arkui-window-subwindowattachoptions-i-sys.md) | No | Additional parameters for setting the child window layout.If this parameter is not passed, the default logic is the same as that of [SubWindowAttachOptions](@ohos.window:window.SubWindoWattachOptions). |
+| attachOptions | [SubWindowAttachOptions](arkts-arkui-window-subwindowattachoptions-i-sys.md) | No | Additional parameters for setting the child window layout.If this parameter is not passed, the default logic is the same as that of [SubWindowAttachOptions](arkts-arkui-window-subwindowattachoptions-i-sys.md). |
 
 **Return value:**
 
@@ -125,7 +123,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="binddialogtarget"></a>
 ## bindDialogTarget
 
 ```TypeScript
@@ -217,7 +214,6 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 
 ```
 
-<a id="binddialogtarget-1"></a>
 ## bindDialogTarget
 
 ```TypeScript
@@ -306,7 +302,6 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 
 ```
 
-<a id="binddialogtarget-2"></a>
 ## bindDialogTarget
 
 ```TypeScript
@@ -386,7 +381,6 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 
 ```
 
-<a id="binddialogtarget-3"></a>
 ## bindDialogTarget
 
 ```TypeScript
@@ -463,7 +457,6 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 
 ```
 
-<a id="detachlayouttoparentwindow"></a>
 ## detachLayoutToParentWindow
 
 ```TypeScript
@@ -471,7 +464,6 @@ detachLayoutToParentWindow(): Promise<void>
 ```
 
 Detach a first-level child window from the main window to cancel a fixed relative position.This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - When the child window calls this API, the child window must be in the attached state.  
@@ -480,9 +472,9 @@ Detach a first-level child window from the main window to cancel a fixed relativ
 > You can drag the child window to change its size and position.  
 >  
 > - After the detaching, calling APIs such as  
-> [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto-1) or  
-> [maximize()](arkts-arkui-window-window-i.md#maximize-1), and  
-> [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-window-i.md#setfollowparentwindowlayoutenabled-1)  
+> [moveWindowTo()](arkts-arkui-window-window-i.md#movewindowto) or  
+> [maximize()](arkts-arkui-window-window-i.md#maximize), and  
+> [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-window-i.md#setfollowparentwindowlayoutenabled)  
 > to change the window position, or dragging and moving or dragging and resizing the child window through mouse  
 > or touch operations will take effect.
 
@@ -547,7 +539,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="enabledrag"></a>
 ## enableDrag
 
 ```TypeScript
@@ -588,14 +579,13 @@ After window dragging is enabled, the window can be resized using the mouse or t
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
-<a id="getrotationlocked"></a>
 ## getRotationLocked
 
 ```TypeScript
 getRotationLocked(): boolean
 ```
 
-Checks whether the [system window](docroot://windowmanager/window-terminology.md#system-window) has its screen rotation locked. If this API is called by a non-system window, error code 1300029 is thrown.
+Checks whether the [system window](../../../windowmanager/window-terminology.md#system-window) has its screen rotation locked. If this API is called by a non-system window, error code 1300029 is thrown.
 
 **Since:** 22
 
@@ -633,7 +623,6 @@ try {
 
 ```
 
-<a id="gettransitioncontroller"></a>
 ## getTransitionController
 
 ```TypeScript
@@ -671,7 +660,6 @@ let controller = windowClass.getTransitionController(); // Obtain the transition
 
 ```
 
-<a id="hide"></a>
 ## hide
 
 ```TypeScript
@@ -717,7 +705,6 @@ windowClass.hide((err: BusinessError) => {
 
 ```
 
-<a id="hide-1"></a>
 ## hide
 
 ```TypeScript
@@ -761,7 +748,6 @@ promise.then(() => {
 
 ```
 
-<a id="hidenonsystemfloatingwindows"></a>
 ## hideNonSystemFloatingWindows
 
 ```TypeScript
@@ -844,7 +830,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="hidenonsystemfloatingwindows-1"></a>
 ## hideNonSystemFloatingWindows
 
 ```TypeScript
@@ -932,7 +917,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="hidewithanimation"></a>
 ## hideWithAnimation
 
 ```TypeScript
@@ -980,7 +964,6 @@ windowClass.hideWithAnimation((err: BusinessError) => {
 
 ```
 
-<a id="hidewithanimation-1"></a>
 ## hideWithAnimation
 
 ```TypeScript
@@ -1026,7 +1009,6 @@ promise.then(() => {
 
 ```
 
-<a id="ismainwindowfullscreenacrossdisplays"></a>
 ## isMainWindowFullScreenAcrossDisplays
 
 ```TypeScript
@@ -1077,7 +1059,6 @@ try {
 
 ```
 
-<a id="off"></a>
 ## off('mainWindowFullScreenAcrossDisplaysChanged')
 
 ```TypeScript
@@ -1130,7 +1111,6 @@ try {
 
 ```
 
-<a id="on"></a>
 ## on('mainWindowFullScreenAcrossDisplaysChanged')
 
 ```TypeScript
@@ -1178,14 +1158,13 @@ try {
 
 ```
 
-<a id="opacity"></a>
 ## opacity
 
 ```TypeScript
 opacity(opacity: number): void
 ```
 
-Sets the opacity for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](docroot://windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
+Sets the opacity for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
 
 **Since:** 9
 
@@ -1221,7 +1200,6 @@ try {
 
 ```
 
-<a id="raiseabovetarget"></a>
 ## raiseAboveTarget
 
 ```TypeScript
@@ -1230,7 +1208,7 @@ raiseAboveTarget(windowId: number, callback: AsyncCallback<void>): void
 
 Raises a child window above a target child window. This API uses an asynchronous callback to return the result.
 
-Before calling this API, ensure that the child window to raise and the target child window have been created and [showWindow()](arkts-arkui-window-window-i.md#showwindow-1) has been successfully executed for each.
+Before calling this API, ensure that the child window to raise and the target child window have been created and [showWindow()](arkts-arkui-window-window-i.md#showwindow) has been successfully executed for each.
 
 **Since:** 10
 
@@ -1244,7 +1222,7 @@ Before calling this API, ensure that the child window to raise and the target ch
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowId | number | Yes | ID of the target child window, which is the value of **properties.id** in [properties](arkts-arkui-window-windowproperties-i.md) obtained through [getWindowProperties](arkts-arkui-window-window-i.md#getwindowproperties-1). |
+| windowId | number | Yes | ID of the target child window, which is the value of **properties.id** in [properties](arkts-arkui-window-windowproperties-i.md) obtained through [getWindowProperties](arkts-arkui-window-window-i.md#getwindowproperties). |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
@@ -1302,7 +1280,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="raiseabovetarget-1"></a>
 ## raiseAboveTarget
 
 ```TypeScript
@@ -1311,7 +1288,7 @@ raiseAboveTarget(windowId: number): Promise<void>
 
 Raises a child window above a target child window. This API uses a promise to return the result.
 
-Before calling this API, ensure that the child window to raise and the target child window have been created and [showWindow()](arkts-arkui-window-window-i.md#showwindow-1) has been successfully executed for each.
+Before calling this API, ensure that the child window to raise and the target child window have been created and [showWindow()](arkts-arkui-window-window-i.md#showwindow) has been successfully executed for each.
 
 **Since:** 10
 
@@ -1325,7 +1302,7 @@ Before calling this API, ensure that the child window to raise and the target ch
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowId | number | Yes | ID of the target child window, which is the value of **properties.id** in [properties](arkts-arkui-window-windowproperties-i.md) obtained through [getWindowProperties](arkts-arkui-window-window-i.md#getwindowproperties-1). |
+| windowId | number | Yes | ID of the target child window, which is the value of **properties.id** in [properties](arkts-arkui-window-windowproperties-i.md) obtained through [getWindowProperties](arkts-arkui-window-window-i.md#getwindowproperties). |
 
 **Return value:**
 
@@ -1386,7 +1363,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="raisemainwindowabovetarget"></a>
 ## raiseMainWindowAboveTarget
 
 ```TypeScript
@@ -1414,7 +1390,7 @@ You need to pass the ID of the target main window. Both the calling window and t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowId | number | Yes | ID of the target main window. The value is an integer. It is the value of **properties.id** in [properties](arkts-arkui-window-windowproperties-i.md) obtained through [getWindowProperties](arkts-arkui-window-window-i.md#getwindowproperties-1). |
+| windowId | number | Yes | ID of the target main window. The value is an integer. It is the value of **properties.id** in [properties](arkts-arkui-window-windowproperties-i.md) obtained through [getWindowProperties](arkts-arkui-window-window-i.md#getwindowproperties). |
 
 **Return value:**
 
@@ -1558,7 +1534,6 @@ export default class RaiseMainWindowAbility extends UIAbility {
 
 ```
 
-<a id="raisetoapptop"></a>
 ## raiseToAppTop
 
 ```TypeScript
@@ -1567,7 +1542,7 @@ raiseToAppTop(callback: AsyncCallback<void>): void
 
 Raises the application child window to the top layer of the application. This API uses an asynchronous callback to return the result.
 
-Before calling this API, ensure that the child window has been created and [showWindow()](arkts-arkui-window-window-i.md#showwindow-1) has been successfully executed.
+Before calling this API, ensure that the child window has been created and [showWindow()](arkts-arkui-window-window-i.md#showwindow) has been successfully executed.
 
 **Since:** 10
 
@@ -1627,7 +1602,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="requestfocus"></a>
 ## requestFocus
 
 ```TypeScript
@@ -1685,14 +1659,13 @@ promise.then(() => {
 
 ```
 
-<a id="rotate"></a>
 ## rotate
 
 ```TypeScript
 rotate(rotateOptions: RotateOptions): void
 ```
 
-Sets the rotation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](docroot://windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
+Sets the rotation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
 
 **Since:** 9
 
@@ -1735,14 +1708,13 @@ try {
 
 ```
 
-<a id="scale"></a>
 ## scale
 
 ```TypeScript
 scale(scaleOptions: ScaleOptions): void
 ```
 
-Sets the scale parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](docroot://windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
+Sets the scale parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
 
 **Since:** 9
 
@@ -1784,7 +1756,6 @@ try {
 
 ```
 
-<a id="setbackdropblur"></a>
 ## setBackdropBlur
 
 ```TypeScript
@@ -1795,7 +1766,7 @@ Blurs the background of this window.
 
 The window background refers to the lower-layer area covered by the window, which is the same as the window size.
 
-To make the blur effect visible, you must set the window background transparent by calling [setWindowBackgroundColor](arkts-arkui-window-window-i.md#setwindowbackgroundcolor-1).
+To make the blur effect visible, you must set the window background transparent by calling [setWindowBackgroundColor](arkts-arkui-window-window-i.md#setwindowbackgroundcolor).
 
 **Since:** 9
 
@@ -1832,7 +1803,6 @@ try {
 
 ```
 
-<a id="setbackdropblurstyle"></a>
 ## setBackdropBlurStyle
 
 ```TypeScript
@@ -1875,7 +1845,6 @@ try {
 
 ```
 
-<a id="setblur"></a>
 ## setBlur
 
 ```TypeScript
@@ -1918,7 +1887,6 @@ try {
 
 ```
 
-<a id="setcornerradius"></a>
 ## setCornerRadius
 
 ```TypeScript
@@ -1961,18 +1929,17 @@ try {
 
 ```
 
-<a id="setdefaultdensityenabled"></a>
 ## setDefaultDensityEnabled
 
 ```TypeScript
 setDefaultDensityEnabled(enabled: boolean): void
 ```
 
-Sets whether the window uses the default density of the current screen. In the stage model, you need to call this API after [loadContent()](arkts-arkui-window-window-i.md#loadcontent-1)or [setUIContent()](arkts-arkui-window-window-i.md#setuicontent-1).
+Sets whether the window uses the default density of the current screen. In the stage model, you need to call this API after [loadContent()](arkts-arkui-window-window-i.md#loadcontent)or [setUIContent()](arkts-arkui-window-window-i.md#setuicontent).
 
 If this API is not called, the default density is not used.
 
-If this API,[setDefaultDensityEnabled(true)](arkts-arkui-window-windowstage-i.md#setdefaultdensityenabled-1), and [setCustomDensity](arkts-arkui-window-windowstage-i.md#setcustomdensity-1) are all called, the setting from the last called API will be applied.
+If this API,[setDefaultDensityEnabled(true)](arkts-arkui-window-windowstage-i.md#setdefaultdensityenabled), and [setCustomDensity](arkts-arkui-window-windowstage-i.md#setcustomdensity) are all called, the setting from the last called API will be applied.
 
 **Since:** 20
 
@@ -2008,7 +1975,6 @@ try {
 
 ```
 
-<a id="setforbidsplitmove"></a>
 ## setForbidSplitMove
 
 ```TypeScript
@@ -2081,7 +2047,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="setforbidsplitmove-1"></a>
 ## setForbidSplitMove
 
 ```TypeScript
@@ -2157,7 +2122,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="sethandwritingflag"></a>
 ## setHandwritingFlag
 
 ```TypeScript
@@ -2215,7 +2179,6 @@ try {
 
 ```
 
-<a id="setmainwindowraisebyclickenabled"></a>
 ## setMainWindowRaiseByClickEnabled
 
 ```TypeScript
@@ -2290,7 +2253,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="setraisebyclickenabled"></a>
 ## setRaiseByClickEnabled
 
 ```TypeScript
@@ -2301,7 +2263,7 @@ Sets whether to enable a child window to raise itself by click. This API uses an
 
 Generally, when a user clicks a child window, the child window is displayed on the top. If the **enable** parameter is set to **false**, the child window is not displayed on the top when being clicked.
 
-Before calling this API, ensure that the child window has been created and [showWindow()](arkts-arkui-window-window-i.md#showwindow-1) has been successfully executed.
+Before calling this API, ensure that the child window has been created and [showWindow()](arkts-arkui-window-window-i.md#showwindow) has been successfully executed.
 
 **Since:** 10
 
@@ -2368,45 +2330,43 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="setrotationlocked"></a>
 ## setRotationLocked
 
 ```TypeScript
 setRotationLocked(locked: boolean): Promise<void>
 ```
 
-Allows a [system window](docroot://windowmanager/window-terminology.md#system-window) to lock or unlock its own screen-rotation behavior. When locked, the window's orientation remains unchanged. When unlocked, the window's orientation follows the main window's orientation, the system rotation-lock button, and the device's physical rotation sensor. If this API is called by a non-system window, error code 1300029 is thrown. This API uses a promise to return the result.
-
+Allows a [system window](../../../windowmanager/window-terminology.md#system-window) to lock or unlock its own screen-rotation behavior. When locked, the window's orientation remains unchanged. When unlocked, the window's orientation follows the main window's orientation, the system rotation-lock button, and the device's physical rotation sensor. If this API is called by a non-system window, error code 1300029 is thrown. This API uses a promise to return the result.
 > **NOTE**  
 >  
 > - If the main window sets the display orientation via  
-> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-1)  
+> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation)  
 > while rotation is locked, the window restores the last orientation request when brought to the foreground after  
 > unlocking.  
 >  
 > - If the system window sets the display orientation via  
-> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-1)  
+> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation)  
 > while rotation is locked, the window restores the last orientation request when brought to the foreground with  
 > the highest level after unlocking. The rotation lock set by a lower-level window using **setRotationLocked**  
 > does not hinder the system window at a higher level to set the display orientation by calling  
-> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-1)  
+> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation)  
 > .  
 >  
 > - If the sensor orientation changes while rotation is locked, the last sensor orientation is restored after  
 > unlocking.  
 >  
 > - If the application calls  
-> [setOrientation()](arkts-arkui-screen-screen-i-sys.md#setorientation-1)  
+> [setOrientation()](arkts-arkui-screen-screen-i-sys.md#setorientation)  
 > to set the screen orientation while rotation is locked, that screen?orientation setting is ignored.  
 >  
 > - When rotation is unlocked, the application's display orientation is determined based on the main window's  
 > display orientation set via  
-> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation-1)  
+> [setPreferredOrientation()](arkts-arkui-window-window-i.md#setpreferredorientation)  
 > , the sensor orientation, and more. For details, see  
-> [Window Rotation Overview](docroot://windowmanager/window-rotation.md#overview).  
+> [Window Rotation Overview](../../../windowmanager/window-rotation.md#overview).  
 >  
 > - The API does not affect the launch orientation set by the **orientation** under  
-> [**abilities** in the module.json5 file](docroot://quick-start/module-configuration-file.md#abilities) of the  
+> [**abilities** in the module.json5 file](../../../quick-start/module-configuration-file.md#abilities) of the  
 > application.
 
 **Since:** 22
@@ -2454,7 +2414,6 @@ promise.then(() => {
 
 ```
 
-<a id="setshadow"></a>
 ## setShadow
 
 ```TypeScript
@@ -2500,7 +2459,6 @@ try {
 
 ```
 
-<a id="setsingleframecomposerenabled"></a>
 ## setSingleFrameComposerEnabled
 
 ```TypeScript
@@ -2559,7 +2517,6 @@ try {
 
 ```
 
-<a id="setsnapshotskip"></a>
 ## setSnapshotSkip
 
 ```TypeScript
@@ -2604,7 +2561,6 @@ try {
 
 ```
 
-<a id="settitlebuttonvisible"></a>
 ## setTitleButtonVisible
 
 ```TypeScript
@@ -2680,7 +2636,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="settopmost"></a>
 ## setTopmost
 
 ```TypeScript
@@ -2744,7 +2699,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="settouchableareas"></a>
 ## setTouchableAreas
 
 ```TypeScript
@@ -2788,7 +2742,6 @@ Sets the touchable areas for this window. By default, the entire window is touch
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause: Invalid parameter range. |
 
-<a id="setwakeupscreen"></a>
 ## setWakeUpScreen
 
 ```TypeScript
@@ -2832,7 +2785,6 @@ try {
 
 ```
 
-<a id="setwatermarkflag"></a>
 ## setWaterMarkFlag
 
 ```TypeScript
@@ -2887,7 +2839,6 @@ try {
 
 ```
 
-<a id="setwatermarkflag-1"></a>
 ## setWaterMarkFlag
 
 ```TypeScript
@@ -2945,16 +2896,15 @@ try {
 
 ```
 
-<a id="setwindowcontainermodalcolor"></a>
 ## setWindowContainerModalColor
 
 ```TypeScript
 setWindowContainerModalColor(activeColor: string, inactiveColor: string): void
 ```
 
-Sets the background color of the main window container for both when it has focus and when it does not. In the stage model, you need to call this API after [loadContent()](arkts-arkui-window-window-i.md#loadcontent-1)or [setUIContent()](arkts-arkui-window-window-i.md#setuicontent-1).
+Sets the background color of the main window container for both when it has focus and when it does not. In the stage model, you need to call this API after [loadContent()](arkts-arkui-window-window-i.md#loadcontent)or [setUIContent()](arkts-arkui-window-window-i.md#setuicontent).
 
-The background color you set here covers the entire window, including both the title bar and the content area. If you also use [setWindowBackgroundColor()](arkts-arkui-window-window-i.md#setwindowbackgroundcolor-1), the content area shows the window background color, whereas the title bar shows the container background color.
+The background color you set here covers the entire window, including both the title bar and the content area. If you also use [setWindowBackgroundColor()](arkts-arkui-window-window-i.md#setwindowbackgroundcolor), the content area shows the window background color, whereas the title bar shows the container background color.
 
 **Since:** 26.0.0
 
@@ -2984,7 +2934,6 @@ The background color you set here covers the entire window, including both the t
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
-<a id="setwindowmode"></a>
 ## setWindowMode
 
 ```TypeScript
@@ -3058,7 +3007,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="setwindowmode-1"></a>
 ## setWindowMode
 
 ```TypeScript
@@ -3129,7 +3077,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="setwindowtype"></a>
 ## setWindowType
 
 ```TypeScript
@@ -3175,7 +3122,6 @@ promise.then(() => {
 
 ```
 
-<a id="setwindowtype-1"></a>
 ## setWindowType
 
 ```TypeScript
@@ -3218,7 +3164,6 @@ windowClass.setWindowType(type, (err: BusinessError) => {
 
 ```
 
-<a id="showwithanimation"></a>
 ## showWithAnimation
 
 ```TypeScript
@@ -3266,7 +3211,6 @@ windowClass.showWithAnimation((err: BusinessError) => {
 
 ```
 
-<a id="showwithanimation-1"></a>
 ## showWithAnimation
 
 ```TypeScript
@@ -3312,7 +3256,6 @@ promise.then(() => {
 
 ```
 
-<a id="startmovingwithoptions"></a>
 ## startMovingWithOptions
 
 ```TypeScript
@@ -3404,14 +3347,13 @@ struct Index {
 
 ```
 
-<a id="translate"></a>
 ## translate
 
 ```TypeScript
 translate(translateOptions: TranslateOptions): void
 ```
 
-Sets the translation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](docroot://windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
+Sets the translation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window).
 
 **Since:** 9
 

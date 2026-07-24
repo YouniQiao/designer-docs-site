@@ -1,13 +1,12 @@
 # @ohos.enterprise.networkManager
 
 The **networkManager** module provides APIs for network management of enterprise devices, including obtaining the device IP address and MAC address.
-
 > **NOTE**  
 >  
 > The APIs of this module can be used only in the stage model.  
 >  
 > The APIs of this module can be called only by a device administrator application that is enabled. For details, see  
-> [MDM Kit Development](docroot://mdm/mdm-kit-guide.md).
+> [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
 **Since:** 10
 
@@ -41,8 +40,8 @@ import { networkManager } from '@kit.MDMKit';
 | [isNetworkInterfaceDisabledSync](arkts-mdm-networkmanager-isnetworkinterfacedisabledsync-f.md#isnetworkinterfacedisabledsync) | Queries whether a specified network interface is disabled. |
 | [queryApn](arkts-mdm-networkmanager-queryapn-f.md#queryapn) | Queries the APN ID. |
 | [queryApn](arkts-mdm-networkmanager-queryapn-f.md#queryapn-1) | Queries the APN parameter information. |
-| [removeDomainFilterRule](arkts-mdm-networkmanager-removedomainfilterrule-f.md#removedomainfilterrule) | Removes the domain name filtering rules.  In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.  [LogType](arkts-mdm-networkmanager-logtype-e.md) is supported since API version 23.  If there is no rule with [Action](arkts-mdm-networkmanager-action-e.md) being **ALLOW** after the rule is removed, the **DENY** rules that are added by default with [addDomainFilterRule](arkts-mdm-networkmanager-adddomainfilterrule-f.md#adddomainfilterrule-1) will be removed. |
-| [removeFirewallRule](arkts-mdm-networkmanager-removefirewallrule-f.md#removefirewallrule) | Removes a firewall rule.  In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.  [LogType](arkts-mdm-networkmanager-logtype-e.md) is supported since API version 23.  If there is no rule with [Action](arkts-mdm-networkmanager-action-e.md) being **ALLOW** after the rule is removed, the **DENY** rules that are added by default with [addFirewallRule](arkts-mdm-networkmanager-addfirewallrule-f.md#addfirewallrule-1) will be removed. |
+| [removeDomainFilterRule](arkts-mdm-networkmanager-removedomainfilterrule-f.md#removedomainfilterrule) | Removes the domain name filtering rules.  In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.  [LogType](arkts-mdm-networkmanager-logtype-e.md) is supported since API version 23.  If there is no rule with [Action](arkts-mdm-networkmanager-action-e.md) being **ALLOW** after the rule is removed, the **DENY** rules that are added by default with [addDomainFilterRule](arkts-mdm-networkmanager-adddomainfilterrule-f.md#adddomainfilterrule) will be removed. |
+| [removeFirewallRule](arkts-mdm-networkmanager-removefirewallrule-f.md#removefirewallrule) | Removes a firewall rule.  In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.  [LogType](arkts-mdm-networkmanager-logtype-e.md) is supported since API version 23.  If there is no rule with [Action](arkts-mdm-networkmanager-action-e.md) being **ALLOW** after the rule is removed, the **DENY** rules that are added by default with [addFirewallRule](arkts-mdm-networkmanager-addfirewallrule-f.md#addfirewallrule) will be removed. |
 | [setEthernetConfig](arkts-mdm-networkmanager-setethernetconfig-f.md#setethernetconfig) | Sets the IP address of a specific Ethernet interface. |
 | [setGlobalProxyForAccount](arkts-mdm-networkmanager-setglobalproxyforaccount-f.md#setglobalproxyforaccount) | Sets the network proxy for a specified user. |
 | [setGlobalProxySync](arkts-mdm-networkmanager-setglobalproxysync-f.md#setglobalproxysync) | Sets the global network proxy. |

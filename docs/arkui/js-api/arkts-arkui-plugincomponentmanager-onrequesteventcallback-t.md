@@ -18,13 +18,13 @@ Plugin component request event callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | Want | Yes |  |
+| source | [Want](arkts-arkui-want-t-sys.md) | Yes |  |
 | name | string | Yes |  |
-| data | KVObject | Yes |  |
+| data | [KVObject](arkts-arkui-plugincomponentmanager-kvobject-t.md) | Yes |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| RequestEventResult | Returns the request event result. |
+| [RequestEventResult](arkts-arkui-plugincomponentmanager-requesteventresult-i.md) | Returns the request event result.  |
 

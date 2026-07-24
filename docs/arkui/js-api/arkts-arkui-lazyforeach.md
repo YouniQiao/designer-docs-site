@@ -27,15 +27,7 @@ LazyForEach(
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-LazyForEachInterface-(
-    dataSource: IDataSource,
-    itemGenerator: (item: any, index: number) => void,
-    keyGenerator?: (item: any, index: number) => string
-  ): LazyForEachAttribute--><!--Device-LazyForEachInterface-(
-    dataSource: IDataSource,
-    itemGenerator: (item: any, index: number) => void,
-    keyGenerator?: (item: any, index: number) => string
-  ): LazyForEachAttribute-End-->
+<!--Device-LazyForEachInterface-(    dataSource: IDataSource,    itemGenerator: (item: any, index: number) => void,    keyGenerator?: (item: any, index: number) => string  ): LazyForEachAttribute--><!--Device-LazyForEachInterface-(    dataSource: IDataSource,    itemGenerator: (item: any, index: number) => void,    keyGenerator?: (item: any, index: number) => string  ): LazyForEachAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -66,17 +58,7 @@ Enter the value to obtain the LazyForEach.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
-<!--Device-LazyForEachInterface-(
-    dataSource: IDataSource,
-    itemGenerator: (item: any, index: number) => void,
-    keyGenerator?: (item: any, index: number) => string,
-    options?: LazyForEachOptions
-  ): LazyForEachAttribute--><!--Device-LazyForEachInterface-(
-    dataSource: IDataSource,
-    itemGenerator: (item: any, index: number) => void,
-    keyGenerator?: (item: any, index: number) => string,
-    options?: LazyForEachOptions
-  ): LazyForEachAttribute-End-->
+<!--Device-LazyForEachInterface-(    dataSource: IDataSource,    itemGenerator: (item: any, index: number) => void,    keyGenerator?: (item: any, index: number) => string,    options?: LazyForEachOptions  ): LazyForEachAttribute--><!--Device-LazyForEachInterface-(    dataSource: IDataSource,    itemGenerator: (item: any, index: number) => void,    keyGenerator?: (item: any, index: number) => string,    options?: LazyForEachOptions  ): LazyForEachAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

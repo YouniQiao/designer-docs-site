@@ -1,6 +1,6 @@
 # DeviceNodeInfo (System API)
 
-Represents the device node information, including the networkId, device name, device type, nearby status and udid.
+Defines the device node information, including the network ID, device name, device type ID, near-field status, and UDID.
 
 **Since:** 26.1.0
 
@@ -22,7 +22,7 @@ import { conversation } from '@kit.DistributedServiceKit';
 deviceName: string
 ```
 
-Name of the device.
+Device name.
 
 **Type:** string
 
@@ -42,7 +42,7 @@ Name of the device.
 deviceTypeId: number
 ```
 
-Device type identifier. This numeric value represents the category of the device (e.g., phone, tablet, TV,wearable, etc.).
+Device type ID, which indicates the device type. The value is an integer, for example, **0x0E** is the mobile phone ID, **0x11** is the tablet ID, **0x9C** is the TV ID, and **0x0C** is the PC ID. The specific value is subject to the system definition.The value should be an integer.
 
 **Type:** number
 
@@ -62,7 +62,7 @@ Device type identifier. This numeric value represents the category of the device
 nearby: boolean
 ```
 
-Indicates whether the device is nearby.
+Whether the device is in the near field. The value **true** indicates that the device is in the near field, and the value **false** indicates that the device is not in the near field.
 
 **Type:** boolean
 
@@ -82,7 +82,7 @@ Indicates whether the device is nearby.
 networkId: string
 ```
 
-NetworkId of the device. This ID uniquely identifies a device within the distributed network and is used for device addressing when sending messages.
+Network ID of the device, which uniquely identifies a device on a distributed network and is used for device addressing during data sending. It is an alternative to UDID. Either of them can be used for data sending.
 
 **Type:** string
 
@@ -102,7 +102,7 @@ NetworkId of the device. This ID uniquely identifies a device within the distrib
 udid: string
 ```
 
-UDID of the device. This ID uniquely identifies a device and is used for device addressing when sending messages.
+UDID of the device, which uniquely identifies a device and is used for device addressing during data sending.Different from the network ID, the UDID is a permanent and unique ID of a device and does not change with the network topology. They are alternative to each other and either of them can be used for data sending.
 
 **Type:** string
 

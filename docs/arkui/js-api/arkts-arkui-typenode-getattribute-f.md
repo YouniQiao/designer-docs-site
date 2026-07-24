@@ -1,6 +1,5 @@
 # getAttribute
 
-<a id="getattribute"></a>
 ## getAttribute
 
 ```TypeScript
@@ -33,7 +32,6 @@ Obtains the attributes of a **Text** node. If the node is not created using ArkT
 | [TextAttribute](../arkts-components/arkts-arkui-text-attribute.md) | Attributes of the **Text** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-1"></a>
 ## getAttribute
 
 ```TypeScript
@@ -66,7 +64,6 @@ Obtains the attributes of a **Column** node. If the node is not created using Ar
 | [ColumnAttribute](../arkts-components/arkts-arkui-column-attribute.md) | Attributes of the **Column** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-2"></a>
 ## getAttribute
 
 ```TypeScript
@@ -99,7 +96,6 @@ Obtains the attributes of a **Row** node. If the node is not created using ArkTS
 | [RowAttribute](../arkts-components/arkts-arkui-row-attribute.md) | Attributes of the **Row** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-3"></a>
 ## getAttribute
 
 ```TypeScript
@@ -132,7 +128,6 @@ Obtains the attributes of a **Stack** node. If the node is not created using Ark
 | [StackAttribute](../arkts-components/arkts-arkui-stack-attribute.md) | Attributes of the **Stack** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-4"></a>
 ## getAttribute
 
 ```TypeScript
@@ -165,7 +160,6 @@ Obtains the Flex node attributes. If the node is not created using ArkTS, cross-
 | [FlexAttribute](../arkts-components/arkts-arkui-flex-attribute.md) | Flex node type. If the operation fails, undefined is returned. |
 
 
-<a id="getattribute-5"></a>
 ## getAttribute
 
 ```TypeScript
@@ -198,7 +192,6 @@ Obtains the attributes of a **Swiper** node. If the node is not created using Ar
 | [SwiperAttribute](../arkts-components/arkts-arkui-swiper-attribute.md) | Properties of the **Swiper** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-6"></a>
 ## getAttribute
 
 ```TypeScript
@@ -231,7 +224,6 @@ Obtains the attributes of a **Progress** node. If the node is not created using 
 | [ProgressAttribute](../arkts-components/arkts-arkui-progress-attribute.md) | Properties of the **Progress** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-7"></a>
 ## getAttribute
 
 ```TypeScript
@@ -264,7 +256,6 @@ Obtains the attributes of a **Scroll** node. If the node is not created using Ar
 | [ScrollAttribute](../arkts-components/arkts-arkui-scroll-attribute.md) | Attributes of the **Scroll** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-8"></a>
 ## getAttribute
 
 ```TypeScript
@@ -297,7 +288,6 @@ Obtains the attributes of a **RelativeContainer** node. If the node is not creat
 | [RelativeContainerAttribute](../arkts-components/arkts-arkui-relativecontainer-attribute.md) | Attributes of the **RelativeContainer** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-9"></a>
 ## getAttribute
 
 ```TypeScript
@@ -330,7 +320,6 @@ Obtains the attributes of a [LoadingProgress](../arkts-components/arkts-arkui-lo
 | [LoadingProgressAttribute](../arkts-components/arkts-arkui-loadingprogress-attribute.md) | Properties of the **LoadingProgress** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-10"></a>
 ## getAttribute
 
 ```TypeScript
@@ -363,7 +352,6 @@ Obtains the attributes of an **Image** node. If the node is not created using Ar
 | [ImageAttribute](../arkts-components/arkts-arkui-image-attribute.md) | Properties of the **Image** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-11"></a>
 ## getAttribute
 
 ```TypeScript
@@ -396,7 +384,6 @@ Obtains the attributes of a **List** node. If the node is not created using ArkT
 | [ListAttribute](../arkts-components/arkts-arkui-list-attribute.md) | Attributes of the **List** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-12"></a>
 ## getAttribute
 
 ```TypeScript
@@ -429,7 +416,6 @@ Obtains the attributes of a **ListItem** node. If the node is not created using 
 | [ListItemAttribute](../arkts-components/arkts-arkui-listitem-attribute.md) | Attributes of the **ListItem** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-13"></a>
 ## getAttribute
 
 ```TypeScript
@@ -462,7 +448,6 @@ Obtains the attributes of a **TextInput** node. If the node is not created using
 | [TextInputAttribute](../arkts-components/arkts-arkui-textinput-attribute.md) | Properties of the **TextInput** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-14"></a>
 ## getAttribute
 
 ```TypeScript
@@ -495,7 +480,6 @@ Obtains the attributes of a **Button** node. If the node is not created using Ar
 | [ButtonAttribute](../arkts-components/arkts-arkui-button-attribute.md) | Attributes of the **Button** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-15"></a>
 ## getAttribute
 
 ```TypeScript
@@ -528,7 +512,6 @@ Obtains the attributes of a **ListItemGroup** node. If the node is not created u
 | [ListItemGroupAttribute](../arkts-components/arkts-arkui-listitemgroup-attribute.md) | Attributes of the **ListItemGroup** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-16"></a>
 ## getAttribute
 
 ```TypeScript
@@ -561,7 +544,6 @@ Obtains the attributes of a **WaterFlow** node. If the node is not created using
 | [WaterFlowAttribute](../arkts-components/arkts-arkui-waterflow-attribute.md) | Properties of the **WaterFlow** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-17"></a>
 ## getAttribute
 
 ```TypeScript
@@ -594,7 +576,6 @@ Obtains the attributes of a **FlowItem** node. If the node is not created using 
 | [FlowItemAttribute](../arkts-components/arkts-arkui-flowitem-attribute.md) | Properties of the **FlowItem** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-18"></a>
 ## getAttribute
 
 ```TypeScript
@@ -627,7 +608,6 @@ Obtain the attributes of an **XComponent** node. If the node is not created usin
 | [XComponentAttribute](../arkts-components/arkts-arkui-xcomponent-attribute.md) | Properties of the **XComponent** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-19"></a>
 ## getAttribute
 
 ```TypeScript
@@ -660,7 +640,6 @@ Obtains the attributes of a **Checkbox** node. If the node is not created using 
 | [CheckboxAttribute](../arkts-components/arkts-arkui-checkbox-attribute.md) | Attributes of the **Checkbox** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-20"></a>
 ## getAttribute
 
 ```TypeScript
@@ -693,7 +672,6 @@ Obtains the attributes of a **Radio** node. If the node is not created using Ark
 | [RadioAttribute](../arkts-components/arkts-arkui-radio-attribute.md) | Properties of the **Radio** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-21"></a>
 ## getAttribute
 
 ```TypeScript
@@ -726,7 +704,6 @@ Obtains the attributes of a **Slider** node. If the node is not created using Ar
 | [SliderAttribute](../arkts-components/arkts-arkui-slider-attribute.md) | Properties of the **Slider** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-22"></a>
 ## getAttribute
 
 ```TypeScript
@@ -759,7 +736,6 @@ Obtains the attributes of a **Toggle** node. If the node is not created using Ar
 | [ToggleAttribute](../arkts-components/arkts-arkui-toggle-attribute.md) | Properties of the **Toggle** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-23"></a>
 ## getAttribute
 
 ```TypeScript
@@ -792,7 +768,6 @@ Obtains the attributes of a **TextArea** node. If the node is not created using 
 | [TextAreaAttribute](../arkts-components/arkts-arkui-textarea-attribute.md) | Properties of the **TextArea** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-24"></a>
 ## getAttribute
 
 ```TypeScript
@@ -825,7 +800,6 @@ Obtains the attributes of a **Grid** node. If the node is not created using ArkT
 | [GridAttribute](../arkts-components/arkts-arkui-grid-attribute.md) | Properties of the **Grid** node, or **undefined** if they fail to be obtained. |
 
 
-<a id="getattribute-25"></a>
 ## getAttribute
 
 ```TypeScript

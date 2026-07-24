@@ -1,13 +1,12 @@
 # @ohos.enterprise.bundleManager
 
 The **bundleManager** module provides APIs for bundle management, including adding, obtaining, and removing a list of bundles that are allowed to install.
-
 > **NOTE**  
 >  
 > The APIs of this module can be used only in the stage model.  
 >  
 > The APIs of this module can be called only by a device administrator application that is enabled. For details, see  
-> [MDM Kit Development](docroot://mdm/mdm-kit-guide.md).
+> [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
 **Since:** 10
 
@@ -38,7 +37,7 @@ import { bundleManager } from '@kit.MDMKit';
 | [getInstalledBundleList](arkts-mdm-bundlemanager-getinstalledbundlelist-f.md#getinstalledbundlelist) | Obtains the applications installed by a specified user on a device. This API uses a promise to return the result. |
 | [getInstalledBundleList](arkts-mdm-bundlemanager-getinstalledbundlelist-f.md#getinstalledbundlelist-1) | Obtains the list of applications installed by a specified user based on the specified **bundleInfoGetFlag**. This API uses a promise to return the result. |
 | [getInstalledBundleStorageStats](arkts-mdm-bundlemanager-getinstalledbundlestoragestats-f.md#getinstalledbundlestoragestats) | Get the storage statistics of installed bundles on the device. |
-| [install](arkts-mdm-bundlemanager-install-f.md#install-2) | Installs specified applications. This API uses a promise to return the result.  This API can be used to install only applications of the **enterprise_mdm** (MDM application) or **enterprise_normal** (common enterprise application) distribution type. You can call the [getBundleInfoForSelf](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself-1) API to query the [BundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundleinfo-i.md) of an application, where **BundleInfo.appInfo.appDistributionType** indicates the distribution type. |
+| [install](arkts-mdm-bundlemanager-install-f.md#install-2) | Installs specified applications. This API uses a promise to return the result.  This API can be used to install only applications of the **enterprise_mdm** (MDM application) or **enterprise_normal** (common enterprise application) distribution type. You can call the [getBundleInfoForSelf](../../apis-ability-kit/arkts-apis/arkts-ability-bundlemanager-getbundleinfoforself-f.md#getbundleinfoforself) API to query the [BundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundleinfo-i.md) of an application, where **BundleInfo.appInfo.appDistributionType** indicates the distribution type. |
 | [installForResult](arkts-mdm-bundlemanager-installforresult-f.md#installforresult) | Install an application. |
 | [installMarketApps](arkts-mdm-bundlemanager-installmarketapps-f.md#installmarketapps) | Downloads and installs an application from AppGallery. |
 | [removeAllowedInstallBundlesSync](arkts-mdm-bundlemanager-removeallowedinstallbundlessync-f.md#removeallowedinstallbundlessync) | Removes the applications that can be installed by the current or specified user. |

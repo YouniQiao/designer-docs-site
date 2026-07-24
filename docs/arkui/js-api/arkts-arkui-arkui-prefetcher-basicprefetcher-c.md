@@ -18,7 +18,6 @@
 import { IDataSourcePrefetching, BasicPrefetcher, IPrefetcher } from '@kit.ArkUI';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -43,7 +42,6 @@ A constructor used to create a prefetching-capable data source to bind to the **
 | --- | --- | --- | --- |
 | dataSource | [IDataSourcePrefetching](arkts-arkui-arkui-prefetcher-idatasourceprefetching-i.md) | No | Prefetching-capable data source. |
 
-<a id="setdatasource"></a>
 ## setDataSource
 
 ```TypeScript
@@ -68,7 +66,6 @@ Sets the prefetching-capable data source to bind to the **Prefetcher**.
 | --- | --- | --- | --- |
 | dataSource | [IDataSourcePrefetching](arkts-arkui-arkui-prefetcher-idatasourceprefetching-i.md) | Yes | Prefetching-capable data source. |
 
-<a id="visibleareachanged"></a>
 ## visibleAreaChanged
 
 ```TypeScript

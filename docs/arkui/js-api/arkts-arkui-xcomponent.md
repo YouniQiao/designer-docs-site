@@ -25,7 +25,7 @@ Constructor parameters
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | { id: string; type: string; libraryname?: string; controller?: XComponentController } | Yes | Indicates the options of the xcomponent. |
+| value | { id: string; type: string; libraryname?: string; controller?: XComponentController } | Yes | Indicates the options of the xcomponent.  |
 
 ## XComponent
 
@@ -49,7 +49,7 @@ Constructor parameters
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | { id: string; type: XComponentType; libraryname?: string; controller?: XComponentController } | Yes | Indicates the options of the xcomponent. |
+| value | { id: string; type: XComponentType; libraryname?: string; controller?: XComponentController } | Yes | Indicates the options of the xcomponent.  |
 
 ## XComponent
 
@@ -73,7 +73,7 @@ Constructor parameters
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | XComponentOptions | Yes | Indicates the options of the xcomponent. |
+| options | [XComponentOptions](arkts-arkui-xcomponentoptions-i.md) | Yes | Indicates the options of the xcomponent.  |
 
 ## XComponent
 
@@ -97,7 +97,7 @@ Constructor parameters
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| params | NativeXComponentParameters | Yes | Indicates the constructor parameters of the xcomponent for native developing. |
+| params | [NativeXComponentParameters](arkts-arkui-nativexcomponentparameters-i.md) | Yes | Indicates the constructor parameters of the xcomponent for native developing.  |
 
 ## Summary
 

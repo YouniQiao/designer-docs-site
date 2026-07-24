@@ -23,7 +23,7 @@ Set the options.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | ToolBarItemOptions | No | column options |
+| options | [ToolBarItemOptions](arkts-arkui-toolbaritemoptions-i.md) | No | column options  |
 
 ## Summary
 

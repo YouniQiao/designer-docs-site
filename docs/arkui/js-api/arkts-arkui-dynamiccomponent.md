@@ -24,7 +24,7 @@ Construct the DynamicComponentInterface.<br/>Called when the DynamicComponentInt
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | DynamicOptions | Yes | Construction configuration of DynamicComponentAttribute |
+| options | [DynamicOptions](arkts-arkui-dynamicoptions-i-sys.md) | Yes | Construction configuration of DynamicComponentAttribute  |
 
 ## Summary
 

@@ -1,11 +1,10 @@
 # @ohos.enterprise.adminManager
 
 The **adminManager** module provides administrator permission management capabilities for enterprise MDM applications, including enabling or disabling administrator permissions, subscribing to events, delegating applications, and granting permissions.
-
 > **NOTE**  
 >  
 > The APIs of this module can be called only by a device administrator application. For details, see  
-> [MDM Kit Development](docroot://mdm/mdm-kit-guide.md).
+> [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
 **Since:** 9
 
@@ -26,8 +25,8 @@ import { adminManager } from '@kit.MDMKit';
 | Name | Description |
 | --- | --- |
 | [disableAdmin](arkts-mdm-adminmanager-disableadmin-f.md#disableadmin-2) | Disables a device administrator application for the specified user. This API uses a promise to return the result. |
-| [disableDeviceAdmin](arkts-mdm-adminmanager-disabledeviceadmin-f.md#disabledeviceadmin) | Allows a [super device administrator application](docroot://mdm/mdm-kit-term.md#sda) to disable other [device administrator applications](docroot://mdm/mdm-kit-term.md#da). This API uses a promise to return the result. This API can be called only by super device administrator applications. |
-| [enableDeviceAdmin](arkts-mdm-adminmanager-enabledeviceadmin-f.md#enabledeviceadmin) | Allows a [super device administrator application](docroot://mdm/mdm-kit-term.md#sda) to enable other [device administrator applications](docroot://mdm/mdm-kit-term.md#da). This API uses a promise to return the result. This API can be called only by super device administrator applications. |
+| [disableDeviceAdmin](arkts-mdm-adminmanager-disabledeviceadmin-f.md#disabledeviceadmin) | Allows a [super device administrator application](../../../mdm/mdm-kit-term.md#sda) to disable other [device administrator applications](../../../mdm/mdm-kit-term.md#da). This API uses a promise to return the result. This API can be called only by super device administrator applications. |
+| [enableDeviceAdmin](arkts-mdm-adminmanager-enabledeviceadmin-f.md#enabledeviceadmin) | Allows a [super device administrator application](../../../mdm/mdm-kit-term.md#sda) to enable other [device administrator applications](../../../mdm/mdm-kit-term.md#da). This API uses a promise to return the result. This API can be called only by super device administrator applications. |
 | [enableSelfDeviceAdmin](arkts-mdm-adminmanager-enableselfdeviceadmin-f.md#enableselfdeviceadmin) | Enables self as a device administrator. |
 | [getDelegatedBundleNames](arkts-mdm-adminmanager-getdelegatedbundlenames-f.md#getdelegatedbundlenames) | Queries the delegated applications that can access a delegation policy and output the list of delegated applications. |
 | [getDelegatedPolicies](arkts-mdm-adminmanager-getdelegatedpolicies-f.md#getdelegatedpolicies) | Queries the list of policies that can be accessed by the delegated application. |
@@ -48,7 +47,7 @@ import { adminManager } from '@kit.MDMKit';
 | [disableAdmin](arkts-mdm-adminmanager-disableadmin-f-sys.md#disableadmin-1) | Disables a common device administrator application for the user specified by **userId**. This API uses an asynchronous callback to return the result. |
 | [disableSuperAdmin](arkts-mdm-adminmanager-disablesuperadmin-f-sys.md#disablesuperadmin) | Disables a super device administrator application based on **bundleName**. This API uses an asynchronous callback to return the result. |
 | [disableSuperAdmin](arkts-mdm-adminmanager-disablesuperadmin-f-sys.md#disablesuperadmin-1) | Disables a super device administrator application based on **bundleName**. This API uses a promise to return the result. |
-| [enableAdmin](arkts-mdm-adminmanager-enableadmin-f-sys.md#enableadmin) | Enables a device administrator application. The super device administrator application can be activated only by the administrator. After the application is enabled, it cannot be uninstalled. The [EnterpriseAdminExtensionAbility](docroot://mdm/mdm-kit-term.md#enterpriseadminextensionability) component of the application will automatically start upon device startup and user switching. This API uses an asynchronous callback to return the result. |
+| [enableAdmin](arkts-mdm-adminmanager-enableadmin-f-sys.md#enableadmin) | Enables a device administrator application. The super device administrator application can be activated only by the administrator. After the application is enabled, it cannot be uninstalled. The [EnterpriseAdminExtensionAbility](../../../mdm/mdm-kit-term.md#enterpriseadminextensionability) component of the application will automatically start upon device startup and user switching. This API uses an asynchronous callback to return the result. |
 | [enableAdmin](arkts-mdm-adminmanager-enableadmin-f-sys.md#enableadmin-1) | Enables a device administrator application for the specified user. The super device administrator application can be activated only by the administrator. This API uses an asynchronous callback to return the result. |
 | [enableAdmin](arkts-mdm-adminmanager-enableadmin-f-sys.md#enableadmin-2) | Enables a device administrator application for the current or specified user. The super device administrator application can be activated only by the administrator. This API uses a promise to return the result. |
 | [getAdmins](arkts-mdm-adminmanager-getadmins-f-sys.md#getadmins) | Queries all device administrator applications of the current user. This API uses a promise to return the result. |

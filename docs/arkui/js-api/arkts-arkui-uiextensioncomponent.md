@@ -17,11 +17,7 @@ Construct the UIExtensionComponent.<br/>Called when the UIExtensionComponent is 
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-UIExtensionComponentInterface-(
-    want: import('../api/options?: UIExtensionOptions
-  ): UIExtensionComponentAttribute--><!--Device-UIExtensionComponentInterface-(
-    want: import('../api/options?: UIExtensionOptions
-  ): UIExtensionComponentAttribute-End-->
+<!--Device-UIExtensionComponentInterface-(    want: import('../api/options?: UIExtensionOptions  ): UIExtensionComponentAttribute--><!--Device-UIExtensionComponentInterface-(    want: import('../api/options?: UIExtensionOptions  ): UIExtensionComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

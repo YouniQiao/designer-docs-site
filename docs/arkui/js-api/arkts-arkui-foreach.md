@@ -26,15 +26,7 @@ ForEach(
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
-<!--Device-ForEachInterface-(
-    arr: Array<any>,
-    itemGenerator: (item: any, index: number) => void,
-    keyGenerator?: (item: any, index: number) => string,
-  ): ForEachAttribute--><!--Device-ForEachInterface-(
-    arr: Array<any>,
-    itemGenerator: (item: any, index: number) => void,
-    keyGenerator?: (item: any, index: number) => string,
-  ): ForEachAttribute-End-->
+<!--Device-ForEachInterface-(    arr: Array<any>,    itemGenerator: (item: any, index: number) => void,    keyGenerator?: (item: any, index: number) => string,  ): ForEachAttribute--><!--Device-ForEachInterface-(    arr: Array<any>,    itemGenerator: (item: any, index: number) => void,    keyGenerator?: (item: any, index: number) => string,  ): ForEachAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

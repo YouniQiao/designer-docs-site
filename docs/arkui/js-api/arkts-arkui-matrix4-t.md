@@ -36,41 +36,7 @@ const transform: Matrix4 = [
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
-<!--Device-unnamed-export type Matrix4 = [
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number
-]--><!--Device-unnamed-export type Matrix4 = [
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number
-]-End-->
+<!--Device-unnamed-export type Matrix4 = [  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number]--><!--Device-unnamed-export type Matrix4 = [  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number,  number]-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

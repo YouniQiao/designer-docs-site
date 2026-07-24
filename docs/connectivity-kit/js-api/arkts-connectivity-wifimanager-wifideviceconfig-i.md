@@ -1,0 +1,170 @@
+# WifiDeviceConfig
+
+Wi-Fi device configuration information.
+
+**Since:** 12
+
+<!--Device-wifiManager-interface WifiDeviceConfig--><!--Device-wifiManager-interface WifiDeviceConfig-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+## Modules to Import
+
+```TypeScript
+import { wifiManager } from '@kit.ConnectivityKit';
+```
+
+## bssid
+
+```TypeScript
+bssid?: string
+```
+
+Wi-Fi bssid(MAC): the length is 6.
+
+**Type:** string
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-WifiDeviceConfig-bssid?: string--><!--Device-WifiDeviceConfig-bssid?: string-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+## bssidType
+
+```TypeScript
+bssidType?: DeviceAddressType
+```
+
+Wi-Fi bssid type.
+
+**Type:** DeviceAddressType
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-WifiDeviceConfig-bssidType?: DeviceAddressType--><!--Device-WifiDeviceConfig-bssidType?: DeviceAddressType-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+## eapConfig
+
+```TypeScript
+eapConfig?: WifiEapConfig
+```
+
+EAP config info.
+
+**Type:** WifiEapConfig
+
+**Since:** 10
+
+<!--Device-WifiDeviceConfig-eapConfig?: WifiEapConfig--><!--Device-WifiDeviceConfig-eapConfig?: WifiEapConfig-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+## isHiddenSsid
+
+```TypeScript
+isHiddenSsid?: boolean
+```
+
+Hide SSID or not, false(default): not hide
+
+**Type:** boolean
+
+**Since:** 9
+
+<!--Device-WifiDeviceConfig-isHiddenSsid?: boolean--><!--Device-WifiDeviceConfig-isHiddenSsid?: boolean-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+## netId
+
+```TypeScript
+netId?: number
+```
+
+Allocated networkId
+
+**Type:** number
+
+**Since:** 22
+
+<!--Device-WifiDeviceConfig-netId?: int--><!--Device-WifiDeviceConfig-netId?: int-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+## preSharedKey
+
+```TypeScript
+preSharedKey: string
+```
+
+Wi-Fi key: maximum length is 64.
+
+**Type:** string
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-WifiDeviceConfig-preSharedKey: string--><!--Device-WifiDeviceConfig-preSharedKey: string-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+## securityType
+
+```TypeScript
+securityType: WifiSecurityType
+```
+
+Security type: reference definition of WifiSecurityType
+
+**Type:** WifiSecurityType
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-WifiDeviceConfig-securityType: WifiSecurityType--><!--Device-WifiDeviceConfig-securityType: WifiSecurityType-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+## ssid
+
+```TypeScript
+ssid: string
+```
+
+Wi-Fi SSID: the maximum length is 32.
+
+**Type:** string
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+<!--Device-WifiDeviceConfig-ssid: string--><!--Device-WifiDeviceConfig-ssid: string-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+## wapiConfig
+
+```TypeScript
+wapiConfig?: WifiWapiConfig
+```
+
+WAPI config info.
+
+**Type:** WifiWapiConfig
+
+**Since:** 12
+
+<!--Device-WifiDeviceConfig-wapiConfig?: WifiWapiConfig--><!--Device-WifiDeviceConfig-wapiConfig?: WifiWapiConfig-End-->
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+

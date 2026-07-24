@@ -20,17 +20,17 @@ import { PluginComponentTemplate } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [push](arkts-arkui-plugincomponentmanager-push-f.md#push-1) | Plugin component push method. |
-| [request](arkts-arkui-plugincomponentmanager-request-f.md#request-1) | Plugin component request method. |
-| [on](arkts-arkui-plugincomponentmanager-on-f.md#on-1) | Plugin component event listener. |
+| [push](arkts-arkui-plugincomponentmanager-push-f.md#push) | Plugin component push method. |
+| [request](arkts-arkui-plugincomponentmanager-request-f.md#request) | Plugin component request method. |
+| [on](arkts-arkui-plugincomponentmanager-on-f.md#on) | Plugin component event listener. |
 
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [push](arkts-arkui-plugincomponentmanager-push-f-sys.md#push-2) | Plugin component push method used to send the information of the template it provides. |
-| [request](arkts-arkui-plugincomponentmanager-request-f-sys.md#request-2) | Plugin component request method used to send a request for the information of the template it wants. |
+| [push](arkts-arkui-plugincomponentmanager-push-f-sys.md#push-1) | Plugin component push method used to send the information of the template it provides. |
+| [request](arkts-arkui-plugincomponentmanager-request-f-sys.md#request-1) | Plugin component request method used to send a request for the information of the template it wants. |
 <!--DelEnd-->
 
 ### Interfaces

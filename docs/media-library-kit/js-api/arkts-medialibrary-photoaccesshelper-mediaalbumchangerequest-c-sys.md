@@ -16,7 +16,6 @@ Provides APIs for managing the media album change request.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
-<a id="createalbumrequest"></a>
 ## createAlbumRequest
 
 ```TypeScript
@@ -30,7 +29,7 @@ The album name must meet the following requirements:
 - The total length of the album name must be between 1 and 255 characters.  
 - It must not contain any invalid characters, which are:
 
-. .. \ / : * ? " ' ` < > | { } [ ]
+. .. \ / : * ? " ' ` &lt; &gt; | { } [ ]
 
 - The characters are case insensitive.  
 - Duplicate album names are not allowed.
@@ -83,7 +82,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="deletealbums"></a>
 ## deleteAlbums
 
 ```TypeScript
@@ -150,7 +148,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="deletealbumswithuri"></a>
 ## deleteAlbumsWithUri
 
 ```TypeScript
@@ -206,7 +203,6 @@ async function example(context: Context, albumUri: string) {
 
 ```
 
-<a id="deleteassets"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -214,7 +210,6 @@ deleteAssets(assets: Array<PhotoAsset>): void
 ```
 
 Permanently deletes assets from the trash.
-
 > **NOTE**  
 >  
 > This operation is irreversible. The assets deleted cannot be restored. Exercise caution when performing this  
@@ -282,7 +277,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="deleteassetswithuri"></a>
 ## deleteAssetsWithUri
 
 ```TypeScript
@@ -290,7 +284,6 @@ deleteAssetsWithUri(assetUris: Array<string>): void
 ```
 
 Permanently deletes assets from the trash.
-
 > **NOTE**  
 >  
 > This operation is irreversible. The assets deleted cannot be restored. Exercise caution when performing this  
@@ -319,7 +312,6 @@ Permanently deletes assets from the trash.
 | 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
-<a id="dismiss"></a>
 ## dismiss
 
 ```TypeScript
@@ -368,7 +360,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="dismissassets"></a>
 ## dismissAssets
 
 ```TypeScript
@@ -437,7 +428,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="mergealbum"></a>
 ## mergeAlbum
 
 ```TypeScript
@@ -504,7 +494,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="moveassets"></a>
 ## moveAssets
 
 ```TypeScript
@@ -573,7 +562,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="moveassetswithuri"></a>
 ## moveAssetsWithUri
 
 ```TypeScript
@@ -606,7 +594,6 @@ Moves assets in an album to another album.
 | 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
-<a id="operateattribute"></a>
 ## operateAttribute
 
 ```TypeScript
@@ -684,7 +671,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="placebefore"></a>
 ## placeBefore
 
 ```TypeScript
@@ -741,7 +727,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="recoverassets"></a>
 ## recoverAssets
 
 ```TypeScript
@@ -804,7 +789,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="recoverassetswithuri"></a>
 ## recoverAssetsWithUri
 
 ```TypeScript
@@ -836,7 +820,6 @@ Restores the assets corresponding to the specified URI string array from the tra
 | 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
-<a id="resetcoveruri"></a>
 ## resetCoverUri
 
 ```TypeScript
@@ -889,7 +872,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setalbumnamebyfile"></a>
 ## setAlbumNameByFile
 
 ```TypeScript
@@ -912,7 +894,7 @@ set album name by filemanger.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| name | string | Yes | Album name to set.<br>Value range:1-255<br>Album name parameter specifications:The album name contains 1 to 255 characters.Invalid English characters, including:\ /: *? "'`< > \| {} []It is not allowed to name only. or..English characters are case insensitive.The album name must be unique. |
+| name | string | Yes | Album name to set.<br>Value range:1-255<br>Album name parameter specifications:The album name contains 1 to 255 characters.Invalid English characters, including:\ /: *? "'`&lt; &gt; \| {} []It is not allowed to name only. or..English characters are case insensitive.The album name must be unique. |
 
 **Error codes:**
 
@@ -949,7 +931,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setcoveruri"></a>
 ## setCoverUri
 
 ```TypeScript
@@ -1018,7 +999,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setdisplaylevel"></a>
 ## setDisplayLevel
 
 ```TypeScript
@@ -1077,7 +1057,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="sethiddenattribute"></a>
 ## setHiddenAttribute
 
 ```TypeScript
@@ -1139,7 +1118,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setisme"></a>
 ## setIsMe
 
 ```TypeScript
@@ -1192,7 +1170,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setuploadstatus"></a>
 ## setUploadStatus
 
 ```TypeScript

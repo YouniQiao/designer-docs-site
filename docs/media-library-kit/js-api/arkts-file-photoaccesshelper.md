@@ -74,7 +74,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 | [PhotoAssetCustomRecordManager](arkts-medialibrary-photoaccesshelper-photoassetcustomrecordmanager-c-sys.md) | Provides APIs for custom user behavior recording for Gallery. |
 | [PhotoSelectOptions](arkts-medialibrary-photoaccesshelper-photoselectoptions-c-sys.md) | Defines additional options for selecting media assets from Gallery. It inherits from **BaseSelectOptions**. It is used to start the picker of the corresponding user ID space. |
 | [RecommendationOptions](arkts-medialibrary-photoaccesshelper-recommendationoptions-c-sys.md) | Defines the image recommendation options. The image recommendation feature depends on the image data analysis capability, which varies with devices. |
-| [ResultSet](arkts-medialibrary-photoaccesshelper-resultset-c-sys.md) | Defines APIs to access the result set obtained by querying the RDB store.  Before calling any of the following APIs, you must use [query](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#query-1) to obtain a ResultSet instance. |
+| [ResultSet](arkts-medialibrary-photoaccesshelper-resultset-c-sys.md) | Defines APIs to access the result set obtained by querying the RDB store.  Before calling any of the following APIs, you must use [query](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i-sys.md#query) to obtain a ResultSet instance. |
 | [TaskSignal](arkts-medialibrary-photoaccesshelper-tasksignal-c-sys.md) | for interrupting batch operations. |
 <!--DelEnd-->
 
@@ -165,7 +165,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 | [CompatibleMode](arkts-medialibrary-photoaccesshelper-compatiblemode-e.md) | Enumerates the compatible modes. |
 | [CompleteButtonText](arkts-medialibrary-photoaccesshelper-completebuttontext-e.md) | Enumerates the text displayed on the complete button. |
 | [DefaultChangeUri](arkts-medialibrary-photoaccesshelper-defaultchangeuri-e.md) | Enumerates the **DefaultChangeUri** subtypes. |
-| [DeliveryMode](arkts-medialibrary-photoaccesshelper-deliverymode-e.md) | Enumerates the asset delivery modes.  These modes are used for segmented photo or video delivery. If the device does not support segmentation, the three delivery modes below work the same way and just return the requested image or video directly. The request result is returned through the [onDataPrepared](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md#ondataprepared-1)callback. |
+| [DeliveryMode](arkts-medialibrary-photoaccesshelper-deliverymode-e.md) | Enumerates the asset delivery modes.  These modes are used for segmented photo or video delivery. If the device does not support segmentation, the three delivery modes below work the same way and just return the requested image or video directly. The request result is returned through the [onDataPrepared](arkts-medialibrary-photoaccesshelper-mediaassetdatahandler-i.md#ondataprepared)callback. |
 | [DynamicRangeType](arkts-medialibrary-photoaccesshelper-dynamicrangetype-e.md) | Enumerates the dynamic range types of media assets. |
 | [FilterOperator](arkts-medialibrary-photoaccesshelper-filteroperator-e.md) | Enumeration type of filter operator. |
 | [GridLevel](arkts-medialibrary-photoaccesshelper-gridlevel-e.md) | Enumeration type of grid level. |

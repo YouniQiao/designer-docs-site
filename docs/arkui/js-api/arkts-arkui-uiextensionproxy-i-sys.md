@@ -10,7 +10,6 @@ This interface is used for send data to the UIExtensionAbility.<br/>It is return
 
 **System API:** This is a system API.
 
-<a id="off"></a>
 ## off('asyncReceiverRegister')
 
 ```TypeScript
@@ -36,7 +35,6 @@ Deregisters the listener that watches for async data receiver callback being reg
 | type | 'asyncReceiverRegister' | Yes | Type of the listened event. |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;UIExtensionProxy&gt; | No | Callback of the listened event. |
 
-<a id="off-1"></a>
 ## off('syncReceiverRegister')
 
 ```TypeScript
@@ -62,7 +60,6 @@ Deregisters the listener that watches for sync data receiver callback being regi
 | type | 'syncReceiverRegister' | Yes | Type of the listened event. |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;UIExtensionProxy&gt; | No | Callback of the listened event. |
 
-<a id="on"></a>
 ## on('asyncReceiverRegister')
 
 ```TypeScript
@@ -88,7 +85,6 @@ Register the listener that watches for async data receiver callback being regist
 | type | 'asyncReceiverRegister' | Yes | Indicates the type of event. |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;UIExtensionProxy&gt; | Yes | Callback of the listened event. |
 
-<a id="on-1"></a>
 ## on('syncReceiverRegister')
 
 ```TypeScript
@@ -114,7 +110,6 @@ Register the listener that watches for sync data receiver callback being registe
 | type | 'syncReceiverRegister' | Yes | Indicates the type of event. |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;UIExtensionProxy&gt; | Yes | Callback of the listened event. |
 
-<a id="send"></a>
 ## send
 
 ```TypeScript
@@ -139,7 +134,6 @@ This function is for sending data to the UIExtensionAbility.AnonyMous Object Rec
 | --- | --- | --- | --- |
 | data | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes |  |
 
-<a id="sendsync"></a>
 ## sendSync
 
 ```TypeScript

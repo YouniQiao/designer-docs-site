@@ -20,5 +20,5 @@ Callback invoked when an error occurs.AnonyMous Object Rectification
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| info | PluginErrorData | Yes | Plugin error data |
+| info | [PluginErrorData](arkts-arkui-pluginerrordata-i-sys.md) | Yes | Plugin error data  |
 

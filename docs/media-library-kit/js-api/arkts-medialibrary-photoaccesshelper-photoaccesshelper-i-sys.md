@@ -14,7 +14,6 @@ Helper functions to access photos and albums.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
-<a id="acquiredebugdatabase"></a>
 ## acquireDebugDatabase
 
 ```TypeScript
@@ -53,7 +52,6 @@ Start medialibrary database backup and wait for returning with backup informatio
 | [23800201](../errorcode-medialibrary.md#23800201-unsupported-operation-type) | Unsupported operation type, this api only works on beta device. |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
-<a id="batchgetphotoassetparams"></a>
 ## batchGetPhotoAssetParams
 
 ```TypeScript
@@ -150,7 +148,6 @@ async function example(context: Context) {
 
 ```
 
-<a id="canperformdeepoptimizespace"></a>
 ## canPerformDeepOptimizeSpace
 
 ```TypeScript
@@ -201,7 +198,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="cancelphotouripermission"></a>
 ## cancelPhotoUriPermission
 
 ```TypeScript
@@ -265,7 +261,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="cloneassetsbypath"></a>
 ## cloneAssetsByPath
 
 ```TypeScript
@@ -328,7 +323,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="clonetoalbum"></a>
 ## cloneToAlbum
 
 ```TypeScript
@@ -402,7 +396,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="clonetodir"></a>
 ## cloneToDir
 
 ```TypeScript
@@ -473,7 +466,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="convertassettocompatibleasset"></a>
 ## convertAssetToCompatibleAsset
 
 ```TypeScript
@@ -511,7 +503,6 @@ Convert Asset Attributes to Compatibility Attributes
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | The scenario parameter verification fails. Possible causes:<br>1. Invalid Array<PhotoAsset>. |
 
-<a id="converttoasset"></a>
 ## convertToAsset
 
 ```TypeScript
@@ -570,7 +561,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createalbum"></a>
 ## createAlbum
 
 ```TypeScript
@@ -584,7 +574,7 @@ The album name must meet the following requirements:
 - The total length of the album name must be between 1 and 255 characters.  
 - It must not contain any invalid characters, which are:
 
-. .. \ / : * ? " ' ` < > | { } [ ]
+. .. \ / : * ? " ' ` &lt; &gt; | { } [ ]
 
 - Duplicate album names are not allowed.
 
@@ -592,7 +582,7 @@ The album name must meet the following requirements:
 
 **Deprecated since:** 11
 
-**Substitutes:** [createAlbumRequest](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c-sys.md#createalbumrequest-1)
+**Substitutes:** [createAlbumRequest](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c-sys.md#createalbumrequest)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -639,7 +629,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createalbum-1"></a>
 ## createAlbum
 
 ```TypeScript
@@ -653,7 +642,7 @@ The album name must meet the following requirements:
 - The total length of the album name must be between 1 and 255 characters.  
 - It must not contain any invalid characters, which are:
 
-. .. \ / : * ? " ' ` < > | { } [ ]
+. .. \ / : * ? " ' ` &lt; &gt; | { } [ ]
 
 - Duplicate album names are not allowed.
 
@@ -661,7 +650,7 @@ The album name must meet the following requirements:
 
 **Deprecated since:** 11
 
-**Substitutes:** [createAlbumRequest](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c-sys.md#createalbumrequest-1)
+**Substitutes:** [createAlbumRequest](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c-sys.md#createalbumrequest)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -713,7 +702,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createasset"></a>
 ## createAsset
 
 ```TypeScript
@@ -728,9 +716,9 @@ The file name must meet the following requirements:
 - The total length of the file name must be between 1 and 255 characters.  
 - The base name must not contain any invalid characters.
 
-Starting from API version 18, the following characters are considered invalid: \ / : * ? " < > |
+Starting from API version 18, the following characters are considered invalid: \ / : * ? " &lt; &gt; |
 
-For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` < > | { } [ ]
+For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` &lt; &gt; | { } [ ]
 
 **Since:** 10
 
@@ -780,7 +768,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createasset-1"></a>
 ## createAsset
 
 ```TypeScript
@@ -795,9 +782,9 @@ The file name must meet the following requirements:
 - The total length of the file name must be between 1 and 255 characters.  
 - The base name must not contain any invalid characters.
 
-Starting from API version 18, the following characters are considered invalid: \ / : * ? " < > |
+Starting from API version 18, the following characters are considered invalid: \ / : * ? " &lt; &gt; |
 
-For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` < > | { } [ ]
+For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` &lt; &gt; | { } [ ]
 
 **Since:** 10
 
@@ -851,7 +838,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createasset-2"></a>
 ## createAsset
 
 ```TypeScript
@@ -866,9 +852,9 @@ The file name must meet the following requirements:
 - The total length of the file name must be between 1 and 255 characters.  
 - The base name must not contain any invalid characters.
 
-Starting from API version 18, the following characters are considered invalid: \ / : * ? " < > |
+Starting from API version 18, the following characters are considered invalid: \ / : * ? " &lt; &gt; |
 
-For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` < > | { } [ ]
+For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` &lt; &gt; | { } [ ]
 
 **Since:** 10
 
@@ -926,7 +912,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createasset-3"></a>
 ## createAsset
 
 ```TypeScript
@@ -941,9 +926,9 @@ The file name must meet the following requirements:
 - The total length of the file name must be between 1 and 255 characters.  
 - The base name must not contain any invalid characters.
 
-Starting from API version 18, the following characters are considered invalid: \ / : * ? " < > |
+Starting from API version 18, the following characters are considered invalid: \ / : * ? " &lt; &gt; |
 
-For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` < > | { } [ ]
+For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` &lt; &gt; | { } [ ]
 
 **Since:** 10
 
@@ -997,7 +982,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createassetsforapp"></a>
 ## createAssetsForApp
 
 ```TypeScript
@@ -1069,7 +1053,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createassetsforappwithalbum"></a>
 ## createAssetsForAppWithAlbum
 
 ```TypeScript
@@ -1083,9 +1066,7 @@ Creates assets for the current application or other applications in the specifie
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
-<!--Device-PhotoAccessHelper-createAssetsForAppWithAlbum(source: PhotoCreationSource, albumUri: string, isAuthorized: boolean,
-      photoCreationConfigs: Array<PhotoCreationConfig>): Promise<Array<string>>--><!--Device-PhotoAccessHelper-createAssetsForAppWithAlbum(source: PhotoCreationSource, albumUri: string, isAuthorized: boolean,
-      photoCreationConfigs: Array<PhotoCreationConfig>): Promise<Array<string>>-End-->
+<!--Device-PhotoAccessHelper-createAssetsForAppWithAlbum(source: PhotoCreationSource, albumUri: string, isAuthorized: boolean,      photoCreationConfigs: Array<PhotoCreationConfig>): Promise<Array<string>>--><!--Device-PhotoAccessHelper-createAssetsForAppWithAlbum(source: PhotoCreationSource, albumUri: string, isAuthorized: boolean,      photoCreationConfigs: Array<PhotoCreationConfig>): Promise<Array<string>>-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -1149,7 +1130,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createassetsforappwithmode"></a>
 ## createAssetsForAppWithMode
 
 ```TypeScript
@@ -1169,21 +1149,7 @@ Creates assets with a temporary permission. This API uses a promise to return th
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
-<!--Device-PhotoAccessHelper-createAssetsForAppWithMode(
-      bundleName: string,
-      appName: string,
-      appId: string,
-      tokenId: long,
-      authorizationMode: AuthorizationMode,
-      photoCreationConfigs: Array<PhotoCreationConfig>
-    ): Promise<Array<string>>--><!--Device-PhotoAccessHelper-createAssetsForAppWithMode(
-      bundleName: string,
-      appName: string,
-      appId: string,
-      tokenId: long,
-      authorizationMode: AuthorizationMode,
-      photoCreationConfigs: Array<PhotoCreationConfig>
-    ): Promise<Array<string>>-End-->
+<!--Device-PhotoAccessHelper-createAssetsForAppWithMode(      bundleName: string,      appName: string,      appId: string,      tokenId: long,      authorizationMode: AuthorizationMode,      photoCreationConfigs: Array<PhotoCreationConfig>    ): Promise<Array<string>>--><!--Device-PhotoAccessHelper-createAssetsForAppWithMode(      bundleName: string,      appName: string,      appId: string,      tokenId: long,      authorizationMode: AuthorizationMode,      photoCreationConfigs: Array<PhotoCreationConfig>    ): Promise<Array<string>>-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -1247,7 +1213,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createassetswithalbum"></a>
 ## createAssetsWithAlbum
 
 ```TypeScript
@@ -1265,13 +1230,7 @@ Batch create assets,which also support to choose whether specifying an album and
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-PhotoAccessHelper-createAssetsWithAlbum(
-      creationSettings: CreationSetting[],
-      isRealTimeThumb: boolean,
-      albumUri?: string): Promise<string[]>--><!--Device-PhotoAccessHelper-createAssetsWithAlbum(
-      creationSettings: CreationSetting[],
-      isRealTimeThumb: boolean,
-      albumUri?: string): Promise<string[]>-End-->
+<!--Device-PhotoAccessHelper-createAssetsWithAlbum(      creationSettings: CreationSetting[],      isRealTimeThumb: boolean,      albumUri?: string): Promise<string[]>--><!--Device-PhotoAccessHelper-createAssetsWithAlbum(      creationSettings: CreationSetting[],      isRealTimeThumb: boolean,      albumUri?: string): Promise<string[]>-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -1333,7 +1292,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="deletealbums"></a>
 ## deleteAlbums
 
 ```TypeScript
@@ -1346,7 +1304,7 @@ Deletes user albums. This API uses an asynchronous callback to return the result
 
 **Deprecated since:** 11
 
-**Substitutes:** [deleteAlbums](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c-sys.md#deletealbums-1)
+**Substitutes:** [deleteAlbums](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c-sys.md#deletealbums)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1403,7 +1361,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="deletealbums-1"></a>
 ## deleteAlbums
 
 ```TypeScript
@@ -1416,7 +1373,7 @@ Deletes user albums. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [deleteAlbums](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c-sys.md#deletealbums-1)
+**Substitutes:** [deleteAlbums](arkts-medialibrary-photoaccesshelper-mediaalbumchangerequest-c-sys.md#deletealbums)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1477,7 +1434,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="deleteassets"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -1490,7 +1446,7 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 
 **Deprecated since:** 11
 
-**Substitutes:** [deleteAssets](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c.md#deleteassets-1)
+**Substitutes:** [deleteAssets](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c.md#deleteassets)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1553,7 +1509,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="deleteassets-1"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -1566,7 +1521,7 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 
 **Deprecated since:** 11
 
-**Substitutes:** [deleteAssets](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c.md#deleteassets-1)
+**Substitutes:** [deleteAssets](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c.md#deleteassets)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1629,7 +1584,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getalbumidbybundlename"></a>
 ## getAlbumIdByBundleName
 
 ```TypeScript
@@ -1692,7 +1646,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getalbumsbyids"></a>
 ## getAlbumsByIds
 
 ```TypeScript
@@ -1754,7 +1707,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getassetcompatiblecapability"></a>
 ## getAssetCompatibleCapability
 
 ```TypeScript
@@ -1809,7 +1761,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getassetcompatibleuris"></a>
 ## getAssetCompatibleUris
 
 ```TypeScript
@@ -1878,7 +1829,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getclonedalbumuris"></a>
 ## getClonedAlbumUris
 
 ```TypeScript
@@ -1943,7 +1893,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getclonedasseturis"></a>
 ## getClonedAssetUris
 
 ```TypeScript
@@ -2008,7 +1957,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getdataanalysisprogress"></a>
 ## getDataAnalysisProgress
 
 ```TypeScript
@@ -2067,7 +2015,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getdeepoptimizespace"></a>
 ## getDeepOptimizeSpace
 
 ```TypeScript
@@ -2123,7 +2070,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="gethiddenalbums"></a>
 ## getHiddenAlbums
 
 ```TypeScript
@@ -2198,7 +2144,6 @@ async function getHiddenAlbumsView(phAccessHelper: photoAccessHelper.PhotoAccess
 
 ```
 
-<a id="gethiddenalbums-1"></a>
 ## getHiddenAlbums
 
 ```TypeScript
@@ -2296,7 +2241,6 @@ async function getHiddenAlbumsView(phAccessHelper: photoAccessHelper.PhotoAccess
 
 ```
 
-<a id="gethiddenalbums-2"></a>
 ## getHiddenAlbums
 
 ```TypeScript
@@ -2394,7 +2338,6 @@ async function getHiddenAlbumsView(phAccessHelper: photoAccessHelper.PhotoAccess
 
 ```
 
-<a id="getindexconstructprogress"></a>
 ## getIndexConstructProgress
 
 ```TypeScript
@@ -2455,7 +2398,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getphotoalbumorder"></a>
 ## getPhotoAlbumOrder
 
 ```TypeScript
@@ -2527,7 +2469,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getphotoalbums"></a>
 ## getPhotoAlbums
 
 ```TypeScript
@@ -2598,7 +2539,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getphotoassets"></a>
 ## getPhotoAssets
 
 ```TypeScript
@@ -2665,7 +2605,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getphotoindex"></a>
 ## getPhotoIndex
 
 ```TypeScript
@@ -2746,7 +2685,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getphotoindex-1"></a>
 ## getPhotoIndex
 
 ```TypeScript
@@ -2830,7 +2768,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getpreferredcompatiblemode"></a>
 ## getPreferredCompatibleMode
 
 ```TypeScript
@@ -2895,7 +2832,6 @@ async function getPreferredCompatibleMode(
 
 ```
 
-<a id="getsharedphotoassets"></a>
 ## getSharedPhotoAssets
 
 ```TypeScript
@@ -2960,7 +2896,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="grantphotouripermission"></a>
 ## grantPhotoUriPermission
 
 ```TypeScript
@@ -2978,17 +2913,7 @@ Grants an application the permission to access a URI. This API uses a promise to
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO
 
-<!--Device-PhotoAccessHelper-grantPhotoUriPermission(
-      tokenId: long,
-      uri: string,
-      photoPermissionType: PhotoPermissionType,
-      hideSensitiveType: HideSensitiveType
-    ): Promise<int>--><!--Device-PhotoAccessHelper-grantPhotoUriPermission(
-      tokenId: long,
-      uri: string,
-      photoPermissionType: PhotoPermissionType,
-      hideSensitiveType: HideSensitiveType
-    ): Promise<int>-End-->
+<!--Device-PhotoAccessHelper-grantPhotoUriPermission(      tokenId: long,      uri: string,      photoPermissionType: PhotoPermissionType,      hideSensitiveType: HideSensitiveType    ): Promise<int>--><!--Device-PhotoAccessHelper-grantPhotoUriPermission(      tokenId: long,      uri: string,      photoPermissionType: PhotoPermissionType,      hideSensitiveType: HideSensitiveType    ): Promise<int>-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -3041,7 +2966,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="grantphotourispermission"></a>
 ## grantPhotoUrisPermission
 
 ```TypeScript
@@ -3059,17 +2983,7 @@ Grants an application the permission to access multiple URIs. This API uses a pr
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO
 
-<!--Device-PhotoAccessHelper-grantPhotoUrisPermission(
-      tokenId: long,
-      uriList: Array<string>,
-      photoPermissionType: PhotoPermissionType,
-      hideSensitiveType: HideSensitiveType
-    ): Promise<int>--><!--Device-PhotoAccessHelper-grantPhotoUrisPermission(
-      tokenId: long,
-      uriList: Array<string>,
-      photoPermissionType: PhotoPermissionType,
-      hideSensitiveType: HideSensitiveType
-    ): Promise<int>-End-->
+<!--Device-PhotoAccessHelper-grantPhotoUrisPermission(      tokenId: long,      uriList: Array<string>,      photoPermissionType: PhotoPermissionType,      hideSensitiveType: HideSensitiveType    ): Promise<int>--><!--Device-PhotoAccessHelper-grantPhotoUrisPermission(      tokenId: long,      uriList: Array<string>,      photoPermissionType: PhotoPermissionType,      hideSensitiveType: HideSensitiveType    ): Promise<int>-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -3125,7 +3039,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="iscompatibleduplicatesupported"></a>
 ## isCompatibleDuplicateSupported
 
 ```TypeScript
@@ -3181,7 +3094,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="ismediadataready"></a>
 ## isMediaDataReady
 
 ```TypeScript
@@ -3245,7 +3157,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="modifyalbumdefaultcoverorder"></a>
 ## modifyAlbumDefaultCoverOrder
 
 ```TypeScript
@@ -3262,11 +3173,7 @@ modify the default cover order of album.
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-PhotoAccessHelper-modifyAlbumDefaultCoverOrder(coverOrderInfos: DefaultCoverOrderInfo[],
-      disableModification: boolean,
-      isAsyncRefreshAlbum: boolean): Promise<void>--><!--Device-PhotoAccessHelper-modifyAlbumDefaultCoverOrder(coverOrderInfos: DefaultCoverOrderInfo[],
-      disableModification: boolean,
-      isAsyncRefreshAlbum: boolean): Promise<void>-End-->
+<!--Device-PhotoAccessHelper-modifyAlbumDefaultCoverOrder(coverOrderInfos: DefaultCoverOrderInfo[],      disableModification: boolean,      isAsyncRefreshAlbum: boolean): Promise<void>--><!--Device-PhotoAccessHelper-modifyAlbumDefaultCoverOrder(coverOrderInfos: DefaultCoverOrderInfo[],      disableModification: boolean,      isAsyncRefreshAlbum: boolean): Promise<void>-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -3323,7 +3230,6 @@ async function modifyAlbumDefaultCoverOrder(phAccessHelper: photoAccessHelper.Ph
 
 ```
 
-<a id="modifyhiddenalbumdefaultcoverorder"></a>
 ## modifyHiddenAlbumDefaultCoverOrder
 
 ```TypeScript
@@ -3340,11 +3246,7 @@ modify the default cover order of hidden album.
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-PhotoAccessHelper-modifyHiddenAlbumDefaultCoverOrder(coverOrderInfos: DefaultCoverOrderInfo[],
-      disableModification: boolean,
-      isAsyncRefreshAlbum: boolean): Promise<void>--><!--Device-PhotoAccessHelper-modifyHiddenAlbumDefaultCoverOrder(coverOrderInfos: DefaultCoverOrderInfo[],
-      disableModification: boolean,
-      isAsyncRefreshAlbum: boolean): Promise<void>-End-->
+<!--Device-PhotoAccessHelper-modifyHiddenAlbumDefaultCoverOrder(coverOrderInfos: DefaultCoverOrderInfo[],      disableModification: boolean,      isAsyncRefreshAlbum: boolean): Promise<void>--><!--Device-PhotoAccessHelper-modifyHiddenAlbumDefaultCoverOrder(coverOrderInfos: DefaultCoverOrderInfo[],      disableModification: boolean,      isAsyncRefreshAlbum: boolean): Promise<void>-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -3400,7 +3302,6 @@ async function modifyHiddenAlbumDefaultCoverOrder(phAccessHelper: photoAccessHel
 
 ```
 
-<a id="moveassetsbypath"></a>
 ## moveAssetsByPath
 
 ```TypeScript
@@ -3463,7 +3364,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="moveassetstodir"></a>
 ## moveAssetsToDir
 
 ```TypeScript
@@ -3534,7 +3434,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="off"></a>
 ## off('hiddenPhotoChange')
 
 ```TypeScript
@@ -3603,7 +3502,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
-<a id="off-1"></a>
 ## off('trashedPhotoChange')
 
 ```TypeScript
@@ -3672,7 +3570,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="off-2"></a>
 ## off('hiddenAlbumChange')
 
 ```TypeScript
@@ -3741,7 +3638,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
-<a id="off-3"></a>
 ## off('trashedAlbumChange')
 
 ```TypeScript
@@ -3810,7 +3706,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="offanalysisalbumchange"></a>
 ## offAnalysisAlbumChange
 
 ```TypeScript
@@ -3880,7 +3775,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
-<a id="offanalysisphotochange"></a>
 ## offAnalysisPhotoChange
 
 ```TypeScript
@@ -3950,7 +3844,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="on"></a>
 ## on('hiddenPhotoChange')
 
 ```TypeScript
@@ -4016,7 +3909,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
-<a id="on-1"></a>
 ## on('trashedPhotoChange')
 
 ```TypeScript
@@ -4082,7 +3974,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="on-2"></a>
 ## on('hiddenAlbumChange')
 
 ```TypeScript
@@ -4148,7 +4039,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
-<a id="on-3"></a>
 ## on('trashedAlbumChange')
 
 ```TypeScript
@@ -4214,7 +4104,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="onanalysisalbumchange"></a>
 ## onAnalysisAlbumChange
 
 ```TypeScript
@@ -4281,7 +4170,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper){
 
 ```
 
-<a id="onanalysisphotochange"></a>
 ## onAnalysisPhotoChange
 
 ```TypeScript
@@ -4348,7 +4236,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -4412,7 +4299,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="releasedebugdatabase"></a>
 ## releaseDebugDatabase
 
 ```TypeScript
@@ -4451,7 +4337,6 @@ Release medialibrary database backup resources incluses closing backup database 
 | [23800201](../errorcode-medialibrary.md#23800201-unsupported-operation-type) | Unsupported operation type, this api only works on beta device. |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
-<a id="removeforminfo"></a>
 ## removeFormInfo
 
 ```TypeScript
@@ -4512,7 +4397,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="removeforminfo-1"></a>
 ## removeFormInfo
 
 ```TypeScript
@@ -4576,7 +4460,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="removegalleryforminfo"></a>
 ## removeGalleryFormInfo
 
 ```TypeScript
@@ -4637,7 +4520,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="saveforminfo"></a>
 ## saveFormInfo
 
 ```TypeScript
@@ -4707,7 +4589,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="saveforminfo-1"></a>
 ## saveFormInfo
 
 ```TypeScript
@@ -4780,7 +4661,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="savegalleryforminfo"></a>
 ## saveGalleryFormInfo
 
 ```TypeScript
@@ -4861,7 +4741,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setassetcompatiblecapability"></a>
 ## setAssetCompatibleCapability
 
 ```TypeScript
@@ -4920,7 +4799,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setphotoalbumorder"></a>
 ## setPhotoAlbumOrder
 
 ```TypeScript
@@ -4997,7 +4875,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setpreferredcompatiblemode"></a>
 ## setPreferredCompatibleMode
 
 ```TypeScript
@@ -5061,7 +4938,6 @@ async function setPreferredCompatibleMode(
 
 ```
 
-<a id="startassetanalysis"></a>
 ## startAssetAnalysis
 
 ```TypeScript
@@ -5122,7 +4998,6 @@ async function example(context: Context) {
 
 ```
 
-<a id="startassetanalysisasync"></a>
 ## startAssetAnalysisAsync
 
 ```TypeScript
@@ -5192,7 +5067,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="startdeepoptimizespace"></a>
 ## startDeepOptimizeSpace
 
 ```TypeScript
@@ -5254,7 +5128,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="startthumbnailcreationtask"></a>
 ## startThumbnailCreationTask
 
 ```TypeScript
@@ -5319,7 +5192,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="startthumbnailcreationtask-1"></a>
 ## startThumbnailCreationTask
 
 ```TypeScript
@@ -5394,7 +5266,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="stopassetanalysis"></a>
 ## stopAssetAnalysis
 
 ```TypeScript
@@ -5452,7 +5323,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="stopdeepoptimizespace"></a>
 ## stopDeepOptimizeSpace
 
 ```TypeScript
@@ -5503,7 +5373,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="stopthumbnailcreationtask"></a>
 ## stopThumbnailCreationTask
 
 ```TypeScript
@@ -5554,7 +5423,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="updategalleryforminfo"></a>
 ## updateGalleryFormInfo
 
 ```TypeScript

@@ -1,6 +1,6 @@
 # Common
 
-CommonInterface for ide.
+Common for ide.
 
 
 ## Common
@@ -16,6 +16,8 @@ Constructor
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 11.
+
+<!--Device-CommonInterface-(): CommonAttribute--><!--Device-CommonInterface-(): CommonAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

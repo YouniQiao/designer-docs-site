@@ -8,7 +8,6 @@ Defines the controller of the XComponent.You can bind the controller to the XCom
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -25,7 +24,6 @@ A constructor used to create a XComponentController instance.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="getxcomponentcontext"></a>
 ## getXComponentContext
 
 ```TypeScript
@@ -48,7 +46,6 @@ Obtains the context of an XComponent object.This API works only when type of the
 | --- | --- |
 | Object | Context of the XComponent object.The APIs contained in the context are defined by developers.The context is passed in as the first parameter of the onLoad callback. |
 
-<a id="getxcomponentsurfaceid"></a>
 ## getXComponentSurfaceId
 
 ```TypeScript
@@ -71,7 +68,6 @@ Obtains the ID of the surface held by the XComponent, which can then be used for
 | --- | --- |
 | string | ID of the surface held by the XComponent. |
 
-<a id="getxcomponentsurfacerect"></a>
 ## getXComponentSurfaceRect
 
 ```TypeScript
@@ -96,7 +92,6 @@ Get the rectangle information of surface created by XComponent.
 | --- | --- |
 | [SurfaceRect](arkts-arkui-surfacerect-i.md) | The surface rectangle information. |
 
-<a id="getxcomponentsurfacerotation"></a>
 ## getXComponentSurfaceRotation
 
 ```TypeScript
@@ -121,7 +116,6 @@ Get the rotation options result of the Surface created by XComponent.
 | --- | --- |
 | [Required](../../apis-na/arkts-apis/arkts-na-required-t.md)&lt;SurfaceRotationOptions&gt; | The surface rotation options result. |
 
-<a id="lockcanvas"></a>
 ## lockCanvas
 
 ```TypeScript
@@ -146,7 +140,6 @@ Get a Canvas for drawing into the surface created by XComponent.
 | --- | --- |
 | [DrawingCanvas](arkts-arkui-drawingcanvas-t.md) | Returns a Canvas for drawing into the surface created by XComponent.Returns null if the surface is not available. |
 
-<a id="onsurfacechanged"></a>
 ## onSurfaceChanged
 
 ```TypeScript
@@ -172,7 +165,6 @@ Called after the surface rectangle information is changed.
 | surfaceId | string | Yes | The id of the surface created by XComponent. |
 | rect | [SurfaceRect](arkts-arkui-surfacerect-i.md) | Yes | The rectangle information of the surface created by XComponent. |
 
-<a id="onsurfacecreated"></a>
 ## onSurfaceCreated
 
 ```TypeScript
@@ -197,7 +189,6 @@ Called after the surface is first created.
 | --- | --- | --- | --- |
 | surfaceId | string | Yes | The id of the surface created by XComponent. |
 
-<a id="onsurfacedestroyed"></a>
 ## onSurfaceDestroyed
 
 ```TypeScript
@@ -222,7 +213,6 @@ Called when the surface is about to be destroyed.
 | --- | --- | --- | --- |
 | surfaceId | string | Yes | The id of the surface created by XComponent. |
 
-<a id="setxcomponentsurfaceconfig"></a>
 ## setXComponentSurfaceConfig
 
 ```TypeScript
@@ -247,7 +237,6 @@ Set the config of the surface created by the XComponent.
 | --- | --- | --- | --- |
 | config | [SurfaceConfig](arkts-arkui-surfaceconfig-i.md) | Yes | surface config |
 
-<a id="setxcomponentsurfacerect"></a>
 ## setXComponentSurfaceRect
 
 ```TypeScript
@@ -272,7 +261,6 @@ Set the rectangle information of surface created by XComponent.
 | --- | --- | --- | --- |
 | rect | [SurfaceRect](arkts-arkui-surfacerect-i.md) | Yes | The surface rectangle information. |
 
-<a id="setxcomponentsurfacerotation"></a>
 ## setXComponentSurfaceRotation
 
 ```TypeScript
@@ -297,7 +285,6 @@ Set the rotation options of the Surface created by XComponent.
 | --- | --- | --- | --- |
 | rotationOptions | [SurfaceRotationOptions](arkts-arkui-surfacerotationoptions-i.md) | Yes | The surface rotation options. |
 
-<a id="setxcomponentsurfacesize"></a>
 ## setXComponentSurfaceSize
 
 ```TypeScript
@@ -313,15 +300,9 @@ Sets the width and height of the surface held by the XComponent.This API works o
 
 **Deprecated since:** 12
 
-**Substitutes:** [setXComponentSurfaceRect](arkts-arkui-xcomponentcontroller-c.md#setxcomponentsurfacerect-1)
+**Substitutes:** [setXComponentSurfaceRect](arkts-arkui-xcomponentcontroller-c.md#setxcomponentsurfacerect)
 
-<!--Device-XComponentController-setXComponentSurfaceSize(value: {
-    surfaceWidth: number;
-    surfaceHeight: number;
-  }): void--><!--Device-XComponentController-setXComponentSurfaceSize(value: {
-    surfaceWidth: number;
-    surfaceHeight: number;
-  }): void-End-->
+<!--Device-XComponentController-setXComponentSurfaceSize(value: {    surfaceWidth: number;    surfaceHeight: number;  }): void--><!--Device-XComponentController-setXComponentSurfaceSize(value: {    surfaceWidth: number;    surfaceHeight: number;  }): void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -331,7 +312,6 @@ Sets the width and height of the surface held by the XComponent.This API works o
 | --- | --- | --- | --- |
 | value | {     surfaceWidth: number;     surfaceHeight: number;   } | Yes | Width and Height of the surface held by the XComponent. |
 
-<a id="startimageanalyzer"></a>
 ## startImageAnalyzer
 
 ```TypeScript
@@ -370,7 +350,6 @@ Starts AI image analysis in the given settings.Before calling this API, make sur
 | [110002](../arkui-ts/errorcode-image-analyzer.md#110002-ai-image-analysis-already-in-progress) | Image analysis is currently being executed. |
 | [110003](../arkui-ts/errorcode-image-analyzer.md#110003-ai-image-analysis-terminated) | Image analysis is stopped. |
 
-<a id="stopimageanalyzer"></a>
 ## stopImageAnalyzer
 
 ```TypeScript
@@ -389,7 +368,6 @@ Stops AI image analysis.The content displayed by the AI image analyzer will be d
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="unlockcanvasandpost"></a>
 ## unlockCanvasAndPost
 
 ```TypeScript

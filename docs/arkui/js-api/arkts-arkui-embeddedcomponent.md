@@ -19,11 +19,7 @@ Construct the EmbeddedComponent.<br/>Called when the EmbeddedComponent is used.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
-<!--Device-EmbeddedComponentInterface-(
-    loader: import('../api/type: EmbeddedType
-  ): EmbeddedComponentAttribute--><!--Device-EmbeddedComponentInterface-(
-    loader: import('../api/type: EmbeddedType
-  ): EmbeddedComponentAttribute-End-->
+<!--Device-EmbeddedComponentInterface-(    loader: import('../api/type: EmbeddedType  ): EmbeddedComponentAttribute--><!--Device-EmbeddedComponentInterface-(    loader: import('../api/type: EmbeddedType  ): EmbeddedComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -51,13 +47,7 @@ Construct the EmbeddedComponent.<br/>Called when the EmbeddedComponent is used.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
-<!--Device-EmbeddedComponentInterface-(
-    loader: import('../api/type: EmbeddedType,
-    options?: EmbeddedOptions
-  ): EmbeddedComponentAttribute--><!--Device-EmbeddedComponentInterface-(
-    loader: import('../api/type: EmbeddedType,
-    options?: EmbeddedOptions
-  ): EmbeddedComponentAttribute-End-->
+<!--Device-EmbeddedComponentInterface-(    loader: import('../api/type: EmbeddedType,    options?: EmbeddedOptions  ): EmbeddedComponentAttribute--><!--Device-EmbeddedComponentInterface-(    loader: import('../api/type: EmbeddedType,    options?: EmbeddedOptions  ): EmbeddedComponentAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

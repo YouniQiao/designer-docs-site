@@ -4,7 +4,7 @@
 type DataCallback = (networkId: string, msg: ArrayBuffer) => void
 ```
 
-Callback function invoked when a message is received.
+Defines a callback for receiving data.
 
 **Since:** 26.1.0
 
@@ -20,6 +20,6 @@ Callback function invoked when a message is received.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| networkId | string | Yes | NetworkId of the source device that sent the message.  |
-| msg | ArrayBuffer | Yes | Message content received as a string.  |
+| networkId | string | Yes | Network ID of the source device that sends data.  |
+| msg | ArrayBuffer | Yes | Message received, which is binary data in **ArrayBuffer** format. The data format is the same as that of the data sent and is defined by the application layer protocol.  |
 

@@ -10,7 +10,6 @@ Define the attribute functions of EmbeddedComponent.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="ondrawready"></a>
 ## onDrawReady
 
 ```TypeScript
@@ -35,7 +34,6 @@ Callback called when the EmbeddedUIExtensionAbility draw the first frame.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes |  |
 
-<a id="onerror"></a>
 ## onError
 
 ```TypeScript
@@ -60,7 +58,6 @@ Called when some error occurred.
 | --- | --- | --- | --- |
 | callback | import('../api/@ohos.base').ErrorCallback | Yes |  |
 
-<a id="onterminated"></a>
 ## onTerminated
 
 ```TypeScript

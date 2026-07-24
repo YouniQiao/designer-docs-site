@@ -1,13 +1,12 @@
 # @ohos.enterprise.deviceSettings
 
 The **deviceSettings** module provides APIs for setting enterprise devices, including setting and obtaining the screen-off time of a device.
-
 > **NOTE**  
 >  
 > The APIs of this module can be used only in the stage model.  
 >  
 > The APIs of this module can be called only by a device administrator application that is enabled. For details, see  
-> [MDM Kit Development](docroot://mdm/mdm-kit-guide.md).
+> [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
 **Since:** 10
 
@@ -33,7 +32,7 @@ import { deviceSettings } from '@kit.MDMKit';
 | [getValueForAccount](arkts-mdm-devicesettings-getvalueforaccount-f.md#getvalueforaccount) | Obtains the device policy of a specified user. This API allows you to obtain a specific parameter of a given user,such as obtaining the device name of user 100. |
 | [removeHiddenSettingsMenu](arkts-mdm-devicesettings-removehiddensettingsmenu-f.md#removehiddensettingsmenu) | Removes a setting item from the hidden setting item list of the current user. Setting items in the hidden setting item list are hidden in the current user's settings menu and cannot be found in settings search. Even if a setting item is located through some means, it cannot be opened when tapped. If the remaining hidden setting item list is empty after the removal, all setting items are displayed. The settings take effect immediately after the API is called. The Settings application does not need to be restarted. |
 | [setHomeWallpaper](arkts-mdm-devicesettings-sethomewallpaper-f.md#sethomewallpaper) | Sets the home screen wallpaper. This API uses a promise to return the result. |
-| [setSwitchStatus](arkts-mdm-devicesettings-setswitchstatus-f.md#setswitchstatus) | Sets the state of a switch. This API can enable or disable NearLink, Bluetooth, and Wi-Fi. After the setting is applied, users can manually enable or disable them. If a switch has been disabled through the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1)API, error code 203 will be thrown when you attempt to set the state of the switch through this API. In this case,you need to use the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1)API to enable the switch. |
+| [setSwitchStatus](arkts-mdm-devicesettings-setswitchstatus-f.md#setswitchstatus) | Sets the state of a switch. This API can enable or disable NearLink, Bluetooth, and Wi-Fi. After the setting is applied, users can manually enable or disable them. If a switch has been disabled through the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy)API, error code 203 will be thrown when you attempt to set the state of the switch through this API. In this case,you need to use the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy)API to enable the switch. |
 | [setUnlockWallpaper](arkts-mdm-devicesettings-setunlockwallpaper-f.md#setunlockwallpaper) | Sets the lock screen wallpaper. This API uses a promise to return the result. |
 | [setValue](arkts-mdm-devicesettings-setvalue-f.md#setvalue) | Sets the device policy. |
 | [setValueForAccount](arkts-mdm-devicesettings-setvalueforaccount-f.md#setvalueforaccount) | Sets the device policy for a specified user. This API allows you to set a specific parameter for a given user, such as setting the device name for user 100. |

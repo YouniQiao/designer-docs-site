@@ -20,5 +20,5 @@ Triggered when a time is selected.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| result | TimePickerResult | Yes |  |
+| result | [TimePickerResult](arkts-arkui-timepickerresult-i.md) | Yes |  |
 
