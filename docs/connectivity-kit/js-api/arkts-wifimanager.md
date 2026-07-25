@@ -188,6 +188,7 @@ import { wifiManager } from '@kit.ConnectivityKit';
 | [DeviceAddressType](arkts-connectivity-wifimanager-deviceaddresstype-e.md) | Wi-Fi device address( mac / bssid ) type. |
 | [EapMethod](arkts-connectivity-wifimanager-eapmethod-e.md) | Wi-Fi EAP method. |
 | [GroupOwnerBand](arkts-connectivity-wifimanager-groupownerband-e.md) | P2P group owner band. |
+| [NetworkType](arkts-connectivity-wifimanager-networktype-e.md) | Network type |
 | [P2pConnectState](arkts-connectivity-wifimanager-p2pconnectstate-e.md) | P2P connection status. |
 | [P2pDeviceStatus](arkts-connectivity-wifimanager-p2pdevicestatus-e.md) | P2P device status. |
 | [Phase2Method](arkts-connectivity-wifimanager-phase2method-e.md) | Wi-Fi phase 2 method. |
