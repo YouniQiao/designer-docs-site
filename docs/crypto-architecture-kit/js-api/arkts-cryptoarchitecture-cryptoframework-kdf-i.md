@@ -16,7 +16,6 @@ Defines the key derivation function class. Before using APIs of this class, you 
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="generatesecret"></a>
 ## generateSecret
 
 ```TypeScript
@@ -99,7 +98,6 @@ kdf.generateSecret(spec, (err, secret) => {
 
 ```
 
-<a id="generatesecret-1"></a>
 ## generateSecret
 
 ```TypeScript
@@ -187,7 +185,6 @@ kdfPromise.then(secret => {
 
 ```
 
-<a id="generatesecretsync"></a>
 ## generateSecretSync
 
 ```TypeScript

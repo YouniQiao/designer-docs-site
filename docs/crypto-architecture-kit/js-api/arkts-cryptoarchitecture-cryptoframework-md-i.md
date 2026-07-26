@@ -1,6 +1,6 @@
 # Md
 
-Provides APIs for message digest operations. Before using any API of the **Md** class, you must create an **Md** instance by using [createMd](arkts-cryptoarchitecture-cryptoframework-createmd-f.md#createmd-1).
+Provides APIs for message digest operations. Before using any API of the **Md** class, you must create an **Md** instance by using [createMd](arkts-cryptoarchitecture-cryptoframework-createmd-f.md#createmd).
 
 **Since:** 9
 
@@ -16,7 +16,6 @@ Provides APIs for message digest operations. Before using any API of the **Md** 
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="digest"></a>
 ## digest
 
 ```TypeScript
@@ -70,7 +69,6 @@ function mdByCallback() {
 
 ```
 
-<a id="digest-1"></a>
 ## digest
 
 ```TypeScript
@@ -209,7 +207,6 @@ export default {
 
 ```
 
-<a id="digestsync"></a>
 ## digestSync
 
 ```TypeScript
@@ -335,7 +332,6 @@ export default {
 
 ```
 
-<a id="getmdlength"></a>
 ## getMdLength
 
 ```TypeScript
@@ -382,7 +378,6 @@ function getLength() {
 
 ```
 
-<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -390,11 +385,10 @@ update(input: DataBlob, callback: AsyncCallback<void>): void
 ```
 
 Updates the message digest status. This API uses an asynchronous callback to return the result. **update** must be used with **digest** together. **digest** is mandatory, and **update** is optional.
-
 > **NOTE**  
 >  
 > For details about the code for calling **update** multiple times in a message digest operation, see  
-> [Generating an MD by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
+> [Generating an MD by Passing In Data by Segment](../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
 > .
 
 **Since:** 9
@@ -426,7 +420,6 @@ Updates the message digest status. This API uses an asynchronous callback to ret
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -434,11 +427,10 @@ update(input: DataBlob): Promise<void>
 ```
 
 Updates the message digest status. This API uses a promise to return the result. **update** must be used with **digest** together. **digest** is mandatory, and **update** is optional.
-
 > **NOTE**  
 >  
 > For details about the code for calling **update** multiple times in a message digest operation, see  
-> [Generating an MD by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
+> [Generating an MD by Passing In Data by Segment](../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
 > .
 
 **Since:** 9
@@ -473,7 +465,6 @@ Updates the message digest status. This API uses a promise to return the result.
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
@@ -481,11 +472,10 @@ updateSync(input: DataBlob): void
 ```
 
 Updates the message digest status. This API returns the result synchronously. **updateSync** must be used with **digestSync** together. **digestSync** is mandatory, and **updateSync** is optional.
-
 > **NOTE**  
 >  
 > For details about the code for calling **updateSync** multiple times in a message digest operation, see  
-> [Generating an MD by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
+> [Generating an MD by Passing In Data by Segment](../../../security/CryptoArchitectureKit/crypto-generate-message-digest.md#generating-an-md-by-passing-in-data-by-segment)  
 > .
 
 <br><br>**NOTE**<br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.

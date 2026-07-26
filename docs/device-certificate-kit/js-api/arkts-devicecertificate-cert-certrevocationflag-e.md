@@ -57,7 +57,6 @@ CERT_REVOCATION_OCSP_CHECK = 2
 Enables OCSP check. Checks the certificate status using the Online Certificate Status Protocol.
 
 If no matching OCSP response is found in [X509CertRevokedParams](arkts-devicecertificate-cert-x509certrevokedparams-i.md) and allowOcspCheckOnline of [X509CertRevokedParams](arkts-devicecertificate-cert-x509certrevokedparams-i.md) is set to true, the system attempts to obtain the OCSP URL from the certificate AIA extension and sends a request to obtain the response.
-
 > **NOTE**  
 >  
 > - Always verify the validity period of the OCSP response against the current system time, and allow a time  

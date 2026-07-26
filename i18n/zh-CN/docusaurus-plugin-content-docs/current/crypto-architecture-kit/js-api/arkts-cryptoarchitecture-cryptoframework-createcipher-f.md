@@ -6,7 +6,6 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="createcipher"></a>
 ## createCipher
 
 ```TypeScript
@@ -14,7 +13,6 @@ function createCipher(transformation: string): Cipher
 ```
 
 通过指定算法名称，获取相应的[Cipher](arkts-cryptoarchitecture-cryptoframework-cipher-i.md)实例。
-
 > **说明：**  
 >  
 > 1. 在对称加解密中，PKCS #5和PKCS #7的实现方式相同，即补位长度和块大小保持一致。3DES补位为8字节，AES补位为16字节。**NoPadding**  
@@ -38,7 +36,7 @@ function createCipher(transformation: string): Cipher
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| transformation | string | 是 | 待生成Cipher的算法名称（含密钥长度）、加密模式以及填充方法的组合。<br>支持的规格详见[对称密钥加解密算法规格](docroot://security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md)和[非对称密钥加解密算法规格](docroot://security/CryptoArchitectureKit/crypto-asym-encrypt-decrypt-spec.md)。 |
+| transformation | string | 是 | 待生成Cipher的算法名称（含密钥长度）、加密模式以及填充方法的组合。<br>支持的规格详见[对称密钥加解密算法规格](../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md)和[非对称密钥加解密算法规格](../../../security/CryptoArchitectureKit/crypto-asym-encrypt-decrypt-spec.md)。 |
 
 **返回值：**
 

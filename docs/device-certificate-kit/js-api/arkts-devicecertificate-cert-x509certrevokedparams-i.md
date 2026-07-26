@@ -21,7 +21,6 @@ allowDownloadCrl?: boolean
 ```
 
 Indicates whether to allow CRL download. The default value is false. true: The CDP extension of the certificate is used to download the CRL. false: Do not attempt to download the CRL.
-
 > **NOTE**  
 >  
 > Skip download if matching CRL exists in crls.
@@ -47,7 +46,6 @@ allowOcspCheckOnline?: boolean
 ```
 
 Indicates whether to allow online OCSP check. The default value is false. true: Perform online OCSP check, that is, attempt to obtain the OCSP URL from the certificate AIA extension and send a request to obtain the response.false: Do not perform online OCSP check.
-
 > **NOTE**  
 >  
 > Skip online OCSP check if a matching OCSP response is found in ocspResponses.

@@ -6,7 +6,6 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="createcertcrlcollection"></a>
 ## createCertCRLCollection
 
 ```TypeScript

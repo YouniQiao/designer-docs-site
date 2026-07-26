@@ -1,7 +1,6 @@
 # CommonEventPublishData
 
 The **CommonEventPublishData** module provides APIs for defining common event content and attributes.
-
 > **NOTE**  
 >  
 > If there is no restriction, any application can subscribe to common events and read related information. In this  
@@ -104,7 +103,7 @@ Whether the common event is a sticky one. The default value is **false**.
 
 Only system applications and system services are allowed to send sticky events.
 
-**Required Permissions**:[ohos.permission.COMMONEVENT_STICKY](docroot://security/AccessToken/permissions-for-all.md#ohospermissioncommonevent_sticky)
+**Required Permissions**:[ohos.permission.COMMONEVENT_STICKY](../../../security/AccessToken/permissions-for-all.md#ohospermissioncommonevent_sticky)
 
 **Type:** boolean
 

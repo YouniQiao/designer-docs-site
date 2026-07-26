@@ -14,7 +14,6 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="checkca"></a>
 ## checkCA
 
 ```TypeScript
@@ -85,7 +84,6 @@ cert.createCertExtension(encodingBlob, (error, certExt) => {
 
 ```
 
-<a id="getencoded"></a>
 ## getEncoded
 
 ```TypeScript
@@ -157,7 +155,6 @@ cert.createCertExtension(encodingBlob, (error, certExt) => {
 
 ```
 
-<a id="getentry"></a>
 ## getEntry
 
 ```TypeScript
@@ -241,7 +238,6 @@ cert.createCertExtension(encodingBlob, (error, certExt) => {
 
 ```
 
-<a id="getoidlist"></a>
 ## getOidList
 
 ```TypeScript
@@ -320,7 +316,6 @@ cert.createCertExtension(encodingBlob, (error, certExt) => {
 
 ```
 
-<a id="hasunsupportedcriticalextension"></a>
 ## hasUnsupportedCriticalExtension
 
 ```TypeScript

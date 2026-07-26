@@ -64,7 +64,7 @@ emailAddresses?: Array<string>
 
 Email address list. Verify that the certificate contains the specified email address. The maximum number is 1.The maximum length of the email address is 128.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 26.0.0
 
@@ -84,7 +84,7 @@ hostnames?: Array<string>
 
 List of hostnames. Verify that the certificate's subject alternative name (SAN) or common name (CN) contains the specified hostname. Maximum number: 100; maximum length of each host name: 128.If one of the host names is matched, the verification is successful.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 26.0.0
 
@@ -104,7 +104,7 @@ ignoreErrs?: Array<CertResult>
 
 Allows specific validation errors to be ignored. Maximum count: 8.Errors that can be ignored include: ERR_CERT_NOT_YET_VALID, ERR_CERT_HAS_EXPIRED, ERR_UNKNOWN_CRITICAL_EXTENSION,ERR_CRL_NOT_FOUND, ERR_CRL_NOT_YET_VALID, ERR_CRL_HAS_EXPIRED, ERR_OCSP_RESPONSE_NOT_FOUND, ERR_NETWORK_TIMEOUT.
 
-**Type:** Array<CertResult>
+**Type:** Array&lt;CertResult&gt;
 
 **Since:** 26.0.0
 
@@ -124,7 +124,7 @@ keyUsage?: Array<KeyUsageType>
 
 Key usage list. Verify that the certificate's key usage extension includes the specified usage.Maximum count: 9.The certificate must contain all specified key usages.
 
-**Type:** Array<KeyUsageType>
+**Type:** Array&lt;KeyUsageType&gt;
 
 **Since:** 26.0.0
 
@@ -208,7 +208,7 @@ trustedCerts?: Array<X509Cert>
 
 Trust certificate list. Specifies the trusted root certificate or intermediate CA certificate as the trust anchor for validation. Maximum count: 100.During verification, the certificate chain must be traced back to the trust certificate. You must set this parameter or set trustSystemCa to true.
 
-**Type:** Array<X509Cert>
+**Type:** Array&lt;X509Cert&gt;
 
 **Since:** 26.0.0
 
@@ -228,7 +228,7 @@ untrustedCerts?: Array<X509Cert>
 
 Indicates the list of untrusted certificates. An intermediate certificate is used only to construct a certificate chain and is not used as a trust anchor. Maximum count: 100.
 
-**Type:** Array<X509Cert>
+**Type:** Array&lt;X509Cert&gt;
 
 **Since:** 26.0.0
 

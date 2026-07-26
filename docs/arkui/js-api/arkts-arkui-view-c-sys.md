@@ -10,7 +10,6 @@ View
 
 **System API:** This is a system API.
 
-<a id="create"></a>
 ## create
 
 ```TypeScript

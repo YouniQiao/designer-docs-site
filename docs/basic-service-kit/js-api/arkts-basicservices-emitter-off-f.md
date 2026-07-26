@@ -6,7 +6,6 @@
 import { emitter } from '@kit.BasicServicesKit';
 ```
 
-<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -40,7 +39,6 @@ emitter.off(1);
 ```
 
 
-<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -74,7 +72,6 @@ emitter.off("eventId1");
 ```
 
 
-<a id="off-2"></a>
 ## off
 
 ```TypeScript
@@ -115,7 +112,6 @@ emitter.off(1, callback);
 ```
 
 
-<a id="off-3"></a>
 ## off
 
 ```TypeScript
@@ -156,14 +152,13 @@ emitter.off("eventId1", callback);
 ```
 
 
-<a id="off-4"></a>
 ## off
 
 ```TypeScript
 function off<T>(eventId: string, callback: Callback<GenericEventData<T>>): void
 ```
 
-Unsubscribes from an event with the specified event ID and processed by the specified callback. This API takes effect only when **Callback\<EventData>** has been registered through the [on](emitter.on<T>(eventId: string, callback: Callback<GenericEventData<T>>)) or [once](emitter.once<T>(eventId: string, callback: Callback<GenericEventData<T>>)) API. Otherwise, no processing is performed.
+Unsubscribes from an event with the specified event ID and processed by the specified callback. This API takes effect only when **Callback\<EventData>** has been registered through the [on](emitter.on<T>(eventId: string, callback: Callback&lt;GenericEventData<T>&gt;)) or [once](emitter.once<T>(eventId: string, callback: Callback&lt;GenericEventData<T>&gt;)) API. Otherwise, no processing is performed.
 
 After this API is used to unsubscribe from an event, the event that has been published through the [emit](emitter.emit(eventId: string)) API but has not been executed will be unsubscribed.
 

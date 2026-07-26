@@ -6,7 +6,6 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="buildx509certchain"></a>
 ## buildX509CertChain
 
 ```TypeScript

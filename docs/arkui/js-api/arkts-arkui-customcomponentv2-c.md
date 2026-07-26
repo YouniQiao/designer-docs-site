@@ -10,7 +10,6 @@ Custom ComponentV2
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="abouttoreuse"></a>
 ## aboutToReuse
 
 ```TypeScript

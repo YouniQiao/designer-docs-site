@@ -16,7 +16,6 @@ Represents a media asset change request.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
-<a id="addresource"></a>
 ## addResource
 
 ```TypeScript
@@ -24,7 +23,6 @@ addResource(type: ResourceType, proxy: PhotoProxy): void
 ```
 
 Adds resources using **PhotoProxy** data.
-
 > **NOTE**  
 >  
 > For the same asset change request, this API cannot be repeatedly called after resources are successfully added.
@@ -79,7 +77,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, asse
 
 ```
 
-<a id="addresourceforpicker"></a>
 ## addResourceForPicker
 
 ```TypeScript
@@ -114,7 +111,6 @@ Adds a resource using fileUri from file management directory
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) |  |
 | [23800301](../errorcode-medialibrary.md#23800301-system-internal-error) | Internal system error. You are advised to retry and check the logs.Possible causes:<br>1. The database is corrupted.<br>2. The file system is abnormal.<br>3. The IPC request timed out. |
 
-<a id="createassetrequest"></a>
 ## createAssetRequest
 
 ```TypeScript
@@ -129,9 +125,9 @@ The file name must meet the following requirements:
 - The total length of the file name must be between 1 and 255 characters.  
 - The base name must not contain any invalid characters.
 
-Starting from API version 18, the following characters are considered invalid: \ / : * ? " < > |
+Starting from API version 18, the following characters are considered invalid: \ / : * ? " &lt; &gt; |
 
-For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` < > | { } [ ]
+For API versions 10 to 17, the following characters are considered invalid: . .. \ / : * ? " ' ` &lt; &gt; | { } [ ]
 
 **Since:** 11
 
@@ -186,7 +182,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="deleteassetspermanentlywithuri"></a>
 ## deleteAssetsPermanentlyWithUri
 
 ```TypeScript
@@ -194,7 +189,6 @@ static deleteAssetsPermanentlyWithUri(context: Context, assetUris: string[]): Pr
 ```
 
 Permanently deletes images or videos in batches by URI. The deleted images or videos are not stored in the recycle bin. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - Assets that exist only on the local device, on the cloud, or on both the local device and the cloud can be  
@@ -252,7 +246,6 @@ async function example(context: Context, assetUri: string) {
 
 ```
 
-<a id="deletecloudassetswithuri"></a>
 ## deleteCloudAssetsWithUri
 
 ```TypeScript
@@ -260,7 +253,6 @@ static deleteCloudAssetsWithUri(context: Context, assetUris: string[]): Promise<
 ```
 
 Deletes cloud media assets to the trash in batches. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - If the assets are only on the local device, no changes are made.  
@@ -316,7 +308,6 @@ async function example(context: Context, assetUri: string) {
 
 ```
 
-<a id="deletelocalassetspermanently"></a>
 ## deleteLocalAssetsPermanently
 
 ```TypeScript
@@ -324,7 +315,6 @@ static deleteLocalAssetsPermanently(context: Context, assets: Array<PhotoAsset>)
 ```
 
 Permanently deletes images or videos in batches. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > This operation is irreversible. The assets deleted cannot be restored. Exercise caution when performing this  
@@ -386,7 +376,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 
 ```
 
-<a id="deletelocalassetspermanentlywithuri"></a>
 ## deleteLocalAssetsPermanentlyWithUri
 
 ```TypeScript
@@ -394,7 +383,6 @@ static deleteLocalAssetsPermanentlyWithUri(context: Context, assetUris: Array<st
 ```
 
 Permanently deletes images or video assets in batches by URI. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > This operation is irreversible. The assets deleted cannot be restored. Exercise caution when performing this  
@@ -432,7 +420,6 @@ Permanently deletes images or video assets in batches by URI. This API uses a pr
 | 13900020 | Invalid argument |
 | 14000011 | Internal system error. It is recommended to retry and check the logs.<br>Possible causes:<br>1. Database corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
-<a id="deletelocalassetswithuri"></a>
 ## deleteLocalAssetsWithUri
 
 ```TypeScript
@@ -440,7 +427,6 @@ static deleteLocalAssetsWithUri(context: Context, assetUris: string[]): Promise<
 ```
 
 Deletes local media assets to the trash in batches. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - If the assets are only on the local device, they are moved directly to the trash.  
@@ -496,7 +482,6 @@ async function example(context: Context, assetUri: string) {
 
 ```
 
-<a id="setapplinkinfo"></a>
 ## setAppLinkInfo
 
 ```TypeScript
@@ -549,7 +534,6 @@ async function example(asset: photoAccessHelper.PhotoAsset, appLinkInfo: string,
 
 ```
 
-<a id="setapplinkstate"></a>
 ## setAppLinkState
 
 ```TypeScript
@@ -603,7 +587,6 @@ async function example(asset: photoAccessHelper.PhotoAsset, context: Context) {
 
 ```
 
-<a id="setcamerashotkey"></a>
 ## setCameraShotKey
 
 ```TypeScript
@@ -654,7 +637,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, asse
 
 ```
 
-<a id="setcompositedisplaymode"></a>
 ## setCompositeDisplayMode
 
 ```TypeScript
@@ -717,7 +699,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="seteditdata"></a>
 ## setEditData
 
 ```TypeScript
@@ -781,7 +762,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="seteffectmode"></a>
 ## setEffectMode
 
 ```TypeScript
@@ -837,7 +817,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, asse
 
 ```
 
-<a id="setfavorite"></a>
 ## setFavorite
 
 ```TypeScript
@@ -894,7 +873,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="sethasapplink"></a>
 ## setHasAppLink
 
 ```TypeScript
@@ -952,7 +930,6 @@ async function example(asset: photoAccessHelper.PhotoAsset, hasAppLink: linkType
 
 ```
 
-<a id="sethidden"></a>
 ## setHidden
 
 ```TypeScript
@@ -1011,7 +988,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="sethiddenattribute"></a>
 ## setHiddenAttribute
 
 ```TypeScript
@@ -1072,7 +1048,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setlocation"></a>
 ## setLocation
 
 ```TypeScript
@@ -1132,7 +1107,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setmovingphotoversion"></a>
 ## setMovingPhotoVersion
 
 ```TypeScript
@@ -1191,7 +1165,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setsupportedwatermarktype"></a>
 ## setSupportedWatermarkType
 
 ```TypeScript
@@ -1248,7 +1221,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="settitlebyfile"></a>
 ## setTitleByFile
 
 ```TypeScript
@@ -1271,7 +1243,7 @@ Set title by filemanger.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| name | string | Yes | asset name to set.<br> Should not contain extensions.The file name contains 1 to 255 characters.Invalid English characters, including:. \ /: *? "'`< > \| {} []Name-only is not allowed. Or.. |
+| name | string | Yes | asset name to set.<br> Should not contain extensions.The file name contains 1 to 255 characters.Invalid English characters, including:. \ /: *? "'`&lt; &gt; \| {} []Name-only is not allowed. Or.. |
 
 **Error codes:**
 
@@ -1308,7 +1280,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setusercomment"></a>
 ## setUserComment
 
 ```TypeScript
@@ -1368,7 +1339,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setvideoenhancementattr"></a>
 ## setVideoEnhancementAttr
 
 ```TypeScript

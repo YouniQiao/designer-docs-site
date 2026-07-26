@@ -6,7 +6,6 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="createx500distinguishedname"></a>
 ## createX500DistinguishedName
 
 ```TypeScript
@@ -84,7 +83,6 @@ async function createX500DistinguishedName() {
 ```
 
 
-<a id="createx500distinguishedname-1"></a>
 ## createX500DistinguishedName
 
 ```TypeScript

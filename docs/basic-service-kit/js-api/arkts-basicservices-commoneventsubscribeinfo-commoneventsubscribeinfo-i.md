@@ -1,7 +1,6 @@
 # CommonEventSubscribeInfo
 
 The **CommonEventSubscribeInfo** module provides APIs for providing subscriber information.
-
 > **NOTE**  
 >  
 > After users subscribing to custom common events, any application can send potential malicious common events to  
@@ -110,7 +109,7 @@ Permission of the publisher. The subscriber can receive only the events from the
 userId?: number
 ```
 
-User ID. If this parameter is not specified, the default value, which is the ID of the current user, will be used.The value must be an existing user ID in the system. Use [getOsAccountLocalId](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)to obtain the system account ID and use it as the user ID of the subscriber.
+User ID. If this parameter is not specified, the default value, which is the ID of the current user, will be used.The value must be an existing user ID in the system. Use [getOsAccountLocalId](arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid)to obtain the system account ID and use it as the user ID of the subscriber.
 
 **Type:** number
 

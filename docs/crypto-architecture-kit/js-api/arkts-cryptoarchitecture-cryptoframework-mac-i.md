@@ -1,6 +1,6 @@
 # Mac
 
-Provides APIs for message authentication code (MAC) operations. Before using any API of the **Mac** class, you must create a **Mac** instance by using [createMac](arkts-cryptoarchitecture-cryptoframework-createmac-f.md#createmac-1).
+Provides APIs for message authentication code (MAC) operations. Before using any API of the **Mac** class, you must create a **Mac** instance by using [createMac](arkts-cryptoarchitecture-cryptoframework-createmac-f.md#createmac).
 
 **Since:** 9
 
@@ -16,7 +16,6 @@ Provides APIs for message authentication code (MAC) operations. Before using any
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="dofinal"></a>
 ## doFinal
 
 ```TypeScript
@@ -74,7 +73,6 @@ function hmacByCallback() {
 
 ```
 
-<a id="dofinal-1"></a>
 ## doFinal
 
 ```TypeScript
@@ -128,7 +126,6 @@ async function hmacByPromise() {
 
 ```
 
-<a id="dofinalsync"></a>
 ## doFinalSync
 
 ```TypeScript
@@ -184,7 +181,6 @@ function hmacBySync() {
 
 ```
 
-<a id="getmaclength"></a>
 ## getMacLength
 
 ```TypeScript
@@ -253,7 +249,6 @@ function testGetMacLength() {
 
 ```
 
-<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -287,7 +282,6 @@ Initializes the MAC computation using a symmetric key. This API uses an asynchro
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="init-1"></a>
 ## init
 
 ```TypeScript
@@ -326,7 +320,6 @@ Initializes the MAC computation using a symmetric key. This API uses a promise t
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="initsync"></a>
 ## initSync
 
 ```TypeScript
@@ -359,7 +352,6 @@ Initializes the MAC computation using a symmetric key. This API returns the resu
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -367,11 +359,10 @@ update(input: DataBlob, callback: AsyncCallback<void>): void
 ```
 
 Updates the MAC status. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > For details about the sample code for calling **update** multiple times in an HMAC operation, see  
-> [Generating an HMAC by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
+> [Generating an HMAC by Passing In Data by Segment](../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
 > .
 
 **Since:** 9
@@ -399,7 +390,6 @@ Updates the MAC status. This API uses an asynchronous callback to return the res
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -407,11 +397,10 @@ update(input: DataBlob): Promise<void>
 ```
 
 Updates the MAC status. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > For details about the sample code for calling **update** multiple times in an HMAC operation, see  
-> [Generating an HMAC by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
+> [Generating an HMAC by Passing In Data by Segment](../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
 > .
 
 **Since:** 9
@@ -444,7 +433,6 @@ Updates the MAC status. This API uses a promise to return the result.
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
@@ -452,11 +440,10 @@ updateSync(input: DataBlob): void
 ```
 
 Updates the MAC status. This API returns the result synchronously.
-
 > **NOTE**  
 >  
 > For details about the sample code for calling **updateSync** multiple times in an HMAC operation, see  
-> [Generating an HMAC by Passing In Data by Segment](docroot://security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
+> [Generating an HMAC by Passing In Data by Segment](../../../security/CryptoArchitectureKit/crypto-compute-hmac.md#generating-an-hmac-by-passing-in-data-by-segment)  
 > .
 
 <br><br>**NOTE**<br>It is recommended to prioritize the use of asynchronous API, {@link update}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.

@@ -6,7 +6,6 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="createmac"></a>
 ## createMac
 
 ```TypeScript
@@ -15,7 +14,7 @@ function createMac(algName: string): Mac
 
 Creates a **Mac** instance for MAC operations.
 
-For details about the supported specifications, see [MAC Overview and Algorithm Specifications](docroot://security/CryptoArchitectureKit/crypto-compute-mac-overview.md).
+For details about the supported specifications, see [MAC Overview and Algorithm Specifications](../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md).
 
 **Since:** 9
 
@@ -31,7 +30,7 @@ For details about the supported specifications, see [MAC Overview and Algorithm 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| algName | string | Yes | Specifies the digest algorithm. For details about the supported algorithms, see [MAC Overview and Algorithm Specifications](docroot://security/CryptoArchitectureKit/crypto-compute-mac-overview.md). |
+| algName | string | Yes | Specifies the digest algorithm. For details about the supported algorithms, see [MAC Overview and Algorithm Specifications](../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md). |
 
 **Return value:**
 
@@ -63,7 +62,6 @@ try {
 ```
 
 
-<a id="createmac-1"></a>
 ## createMac
 
 ```TypeScript
@@ -72,7 +70,7 @@ function createMac(macSpec: MacSpec): Mac
 
 Creates a **Mac** instance for message authentication code (MAC) operations.
 
-For details about the supported specifications, see [MAC Overview and Algorithm Specifications](docroot://security/CryptoArchitectureKit/crypto-compute-mac-overview.md).
+For details about the supported specifications, see [MAC Overview and Algorithm Specifications](../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md).
 
 **Since:** 18
 
@@ -86,7 +84,7 @@ For details about the supported specifications, see [MAC Overview and Algorithm 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| macSpec | [MacSpec](arkts-cryptoarchitecture-cryptoframework-macspec-i.md) | Yes | Specifies the input parameter struct based on the MAC algorithm. For details about the supported algorithms, see [MAC Overview and Algorithm Specifications](docroot://security/CryptoArchitectureKit/crypto-compute-mac-overview.md). |
+| macSpec | [MacSpec](arkts-cryptoarchitecture-cryptoframework-macspec-i.md) | Yes | Specifies the input parameter struct based on the MAC algorithm. For details about the supported algorithms, see [MAC Overview and Algorithm Specifications](../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md). |
 
 **Return value:**
 

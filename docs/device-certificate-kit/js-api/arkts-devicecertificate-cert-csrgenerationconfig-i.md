@@ -1,7 +1,6 @@
 # CsrGenerationConfig
 
 Configuration parameters for generating a CSR, including the subject name, digest algorithm, attribute,and output format.
-
 > **NOTE**  
 >  
 > - subject is an object of the Name type defined by X509.  

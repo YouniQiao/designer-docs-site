@@ -6,7 +6,6 @@
 import { commonEventManager } from '@kit.BasicServicesKit';
 ```
 
-<a id="createsubscriber"></a>
 ## createSubscriber
 
 ```TypeScript
@@ -22,13 +21,7 @@ Creates a subscriber. This API uses an asynchronous callback to return the resul
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-commonEventManager-function createSubscriber(
-    subscribeInfo: CommonEventSubscribeInfo,
-    callback: AsyncCallback<CommonEventSubscriber>
-  ): void--><!--Device-commonEventManager-function createSubscriber(
-    subscribeInfo: CommonEventSubscribeInfo,
-    callback: AsyncCallback<CommonEventSubscriber>
-  ): void-End-->
+<!--Device-commonEventManager-function createSubscriber(    subscribeInfo: CommonEventSubscribeInfo,    callback: AsyncCallback<CommonEventSubscriber>  ): void--><!--Device-commonEventManager-function createSubscriber(    subscribeInfo: CommonEventSubscribeInfo,    callback: AsyncCallback<CommonEventSubscriber>  ): void-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -76,7 +69,6 @@ try {
 ```
 
 
-<a id="createsubscriber-1"></a>
 ## createSubscriber
 
 ```TypeScript

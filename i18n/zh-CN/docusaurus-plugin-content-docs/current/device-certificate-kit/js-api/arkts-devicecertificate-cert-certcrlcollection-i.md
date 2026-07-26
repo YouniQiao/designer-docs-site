@@ -14,7 +14,6 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="selectcrls"></a>
 ## selectCRLs
 
 ```TypeScript
@@ -151,7 +150,6 @@ async function selectCRLs() {
 
 ```
 
-<a id="selectcrls-1"></a>
 ## selectCRLs
 
 ```TypeScript
@@ -283,7 +281,6 @@ async function selectCRLs() {
 
 ```
 
-<a id="selectcerts"></a>
 ## selectCerts
 
 ```TypeScript
@@ -384,7 +381,6 @@ async function selectCerts() {
 
 ```
 
-<a id="selectcerts-1"></a>
 ## selectCerts
 
 ```TypeScript

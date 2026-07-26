@@ -14,7 +14,6 @@ X.509 CRL操作。
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="getencoded"></a>
 ## getEncoded
 
 ```TypeScript
@@ -46,7 +45,6 @@ getEncoded(callback: AsyncCallback<EncodingBlob>): void
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getencoded-1"></a>
 ## getEncoded
 
 ```TypeScript
@@ -78,7 +76,6 @@ getEncoded(): Promise<EncodingBlob>
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getextensions"></a>
 ## getExtensions
 
 ```TypeScript
@@ -109,7 +106,6 @@ getExtensions(): DataBlob
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getextensionsobject"></a>
 ## getExtensionsObject
 
 ```TypeScript
@@ -140,7 +136,6 @@ getExtensionsObject(): CertExtension
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getissuername"></a>
 ## getIssuerName
 
 ```TypeScript
@@ -148,7 +143,6 @@ getIssuerName(): DataBlob
 ```
 
 表示获取X509证书吊销列表颁发者名称。
-
 > **说明：**  
 >  
 > 获取到的X509证书吊销列表颁发者名称数据带字符串结束符。
@@ -175,7 +169,6 @@ getIssuerName(): DataBlob
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getissuername-1"></a>
 ## getIssuerName
 
 ```TypeScript
@@ -213,7 +206,6 @@ getIssuerName(encodingType: EncodingType): string
 | [19020003](../errorcode-cert.md#19020003-参数检查失败) | 参数检查失败。可能的原因：<br>1. encodingType的值不在EncodingType枚举范围内。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getissuerx500distinguishedname"></a>
 ## getIssuerX500DistinguishedName
 
 ```TypeScript
@@ -244,7 +236,6 @@ getIssuerX500DistinguishedName(): X500DistinguishedName
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getlastupdate"></a>
 ## getLastUpdate
 
 ```TypeScript
@@ -275,7 +266,6 @@ getLastUpdate(): string
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getnextupdate"></a>
 ## getNextUpdate
 
 ```TypeScript
@@ -306,7 +296,6 @@ getNextUpdate(): string
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getrevokedcert"></a>
 ## getRevokedCert
 
 ```TypeScript
@@ -343,7 +332,6 @@ getRevokedCert(serialNumber: bigint): X509CRLEntry
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getrevokedcertwithcert"></a>
 ## getRevokedCertWithCert
 
 ```TypeScript
@@ -380,7 +368,6 @@ getRevokedCertWithCert(cert: X509Cert): X509CRLEntry
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getrevokedcerts"></a>
 ## getRevokedCerts
 
 ```TypeScript
@@ -411,7 +398,6 @@ getRevokedCerts(callback: AsyncCallback<Array<X509CRLEntry>>): void
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getrevokedcerts-1"></a>
 ## getRevokedCerts
 
 ```TypeScript
@@ -442,7 +428,6 @@ getRevokedCerts(): Promise<Array<X509CRLEntry>>
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getsignature"></a>
 ## getSignature
 
 ```TypeScript
@@ -473,7 +458,6 @@ getSignature(): DataBlob
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getsignaturealgname"></a>
 ## getSignatureAlgName
 
 ```TypeScript
@@ -504,7 +488,6 @@ getSignatureAlgName(): string
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getsignaturealgoid"></a>
 ## getSignatureAlgOid
 
 ```TypeScript
@@ -535,7 +518,6 @@ getSignatureAlgOid(): string
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="getsignaturealgparams"></a>
 ## getSignatureAlgParams
 
 ```TypeScript
@@ -567,7 +549,6 @@ getSignatureAlgParams(): DataBlob
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="gettbsinfo"></a>
 ## getTBSInfo
 
 ```TypeScript
@@ -598,7 +579,6 @@ getTBSInfo(): DataBlob
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -621,7 +601,6 @@ getType(): string
 | --- | --- |
 | string | 表示证书吊销列表类型。 |
 
-<a id="getversion"></a>
 ## getVersion
 
 ```TypeScript
@@ -644,7 +623,6 @@ getVersion(): number
 | --- | --- |
 | number | 表示获取X509证书吊销列表的版本号。 |
 
-<a id="hashcode"></a>
 ## hashCode
 
 ```TypeScript
@@ -675,7 +653,6 @@ hashCode(): Uint8Array
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="isrevoked"></a>
 ## isRevoked
 
 ```TypeScript
@@ -710,7 +687,6 @@ isRevoked(cert: X509Cert): boolean
 | --- | --- |
 | [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 
-<a id="match"></a>
 ## match
 
 ```TypeScript
@@ -747,7 +723,6 @@ match(param: X509CRLMatchParameters): boolean
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -778,7 +753,6 @@ toString(): string
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="tostring-1"></a>
 ## toString
 
 ```TypeScript
@@ -816,7 +790,6 @@ toString(encodingType: EncodingType): string
 | [19020003](../errorcode-cert.md#19020003-参数检查失败) | 参数检查失败。可能的原因：<br>1. encodingType的值不在EncodingType枚举范围内。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="verify"></a>
 ## verify
 
 ```TypeScript
@@ -847,7 +820,6 @@ verify(key: cryptoFramework.PubKey, callback: AsyncCallback<void>): void
 | [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
-<a id="verify-1"></a>
 ## verify
 
 ```TypeScript

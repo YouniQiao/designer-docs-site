@@ -14,7 +14,6 @@ Provides APIs for managing the **X500DistinguishedName** instance.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="getencoded"></a>
 ## getEncoded
 
 ```TypeScript
@@ -45,7 +44,6 @@ Obtains the DER-encoded data of the X.500 Distinguished Name.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getname"></a>
 ## getName
 
 ```TypeScript
@@ -76,7 +74,6 @@ Obtains the DN in the form of a string.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getname-1"></a>
 ## getName
 
 ```TypeScript
@@ -114,7 +111,6 @@ Obtains RDN strings based on the specified encoding format.
 | [19020003](../errorcode-cert.md#19020003-parameter-check-failure) | parameter check failed. Possible causes:<br>1. The value of encodingType is not in the EncodingType enumeration range. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getname-2"></a>
 ## getName
 
 ```TypeScript
@@ -152,7 +148,6 @@ Obtains relative distinguished name (RDN) strings of the specified type.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getname-3"></a>
 ## getName
 
 ```TypeScript

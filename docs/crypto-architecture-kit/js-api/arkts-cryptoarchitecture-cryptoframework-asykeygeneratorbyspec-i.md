@@ -1,6 +1,6 @@
 # AsyKeyGeneratorBySpec
 
-Provides APIs for using the **AsyKeyGeneratorBySpec**. Before using the APIs of this class, you need to use [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-cryptoframework-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create an **AsyKeyGeneratorBySpec** instance.
+Provides APIs for using the **AsyKeyGeneratorBySpec**. Before using the APIs of this class, you need to use [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-cryptoframework-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec) to create an **AsyKeyGeneratorBySpec** instance.
 
 **Since:** 10
 
@@ -16,7 +16,6 @@ Provides APIs for using the **AsyKeyGeneratorBySpec**. Before using the APIs of 
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="generatekeypair"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -95,7 +94,6 @@ function testGenerateKeyPair() {
 
 ```
 
-<a id="generatekeypair-1"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -174,7 +172,6 @@ function testGenerateKeyPair() {
 
 ```
 
-<a id="generatekeypairsync"></a>
 ## generateKeyPairSync
 
 ```TypeScript
@@ -258,7 +255,6 @@ function testGenerateKeyPairSync() {
 
 ```
 
-<a id="generateprikey"></a>
 ## generatePriKey
 
 ```TypeScript
@@ -337,7 +333,6 @@ function testGeneratePriKey() {
 
 ```
 
-<a id="generateprikey-1"></a>
 ## generatePriKey
 
 ```TypeScript
@@ -416,7 +411,6 @@ function testGeneratePriKey() {
 
 ```
 
-<a id="generateprikeysync"></a>
 ## generatePriKeySync
 
 ```TypeScript
@@ -498,7 +492,6 @@ function testGeneratePriKeySync() {
 
 ```
 
-<a id="generatepubkey"></a>
 ## generatePubKey
 
 ```TypeScript
@@ -577,7 +570,6 @@ function testGeneratePubKey() {
 
 ```
 
-<a id="generatepubkey-1"></a>
 ## generatePubKey
 
 ```TypeScript
@@ -656,7 +648,6 @@ function testGeneratePubKey() {
 
 ```
 
-<a id="generatepubkeysync"></a>
 ## generatePubKeySync
 
 ```TypeScript

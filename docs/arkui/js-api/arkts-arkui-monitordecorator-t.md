@@ -22,12 +22,12 @@ Defines Monitor Decorator type
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | string \| MonitorDecoratorOptions | Yes | Monitored path input by the user or config options. |
-| args | string[] | Yes | Monitored path(s) input by the user |
+| value | string \| MonitorDecoratorOptions | Yes | Monitored path input by the user or config options.  |
+| args | string[] | Yes | Monitored path(s) input by the user  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| MethodDecorator | Monitor decorator |
+| [MethodDecorator](../../apis-na/arkts-apis/arkts-na-methoddecorator-t.md) | Monitor decorator  |
 

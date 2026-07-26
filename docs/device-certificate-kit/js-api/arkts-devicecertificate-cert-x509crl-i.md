@@ -14,7 +14,6 @@ Provides APIs for managing a CRL object.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="getencoded"></a>
 ## getEncoded
 
 ```TypeScript
@@ -46,7 +45,6 @@ Obtains the serialized X.509 CRL data. This API uses an asynchronous callback to
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getencoded-1"></a>
 ## getEncoded
 
 ```TypeScript
@@ -78,7 +76,6 @@ Obtains the serialized X.509 CRL data. This API uses a promise to return the res
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getextensions"></a>
 ## getExtensions
 
 ```TypeScript
@@ -109,7 +106,6 @@ Obtains the CRL extensions data in DER format.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getextensionsobject"></a>
 ## getExtensionsObject
 
 ```TypeScript
@@ -140,7 +136,6 @@ Obtains the CRL extensions in DER format.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getissuername"></a>
 ## getIssuerName
 
 ```TypeScript
@@ -148,7 +143,6 @@ getIssuerName(): DataBlob
 ```
 
 Obtains the issuer of the X.509 CRL.
-
 > **NOTE**  
 >  
 > The obtained X.509 CRL issuer name contains a string terminator.
@@ -175,7 +169,6 @@ Obtains the issuer of the X.509 CRL.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getissuername-1"></a>
 ## getIssuerName
 
 ```TypeScript
@@ -213,7 +206,6 @@ Obtains the issuer name of an X.509 CRL based on the encoding type.
 | [19020003](../errorcode-cert.md#19020003-parameter-check-failure) | parameter check failed. Possible causes:<br>1. The value of encodingType is not in the EncodingType enumeration range. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getissuerx500distinguishedname"></a>
 ## getIssuerX500DistinguishedName
 
 ```TypeScript
@@ -244,7 +236,6 @@ Obtains the distinguished name (DN) of the X.509 CRL issuer.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getlastupdate"></a>
 ## getLastUpdate
 
 ```TypeScript
@@ -275,7 +266,6 @@ Obtains the last update date of this X.509 CRL.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getnextupdate"></a>
 ## getNextUpdate
 
 ```TypeScript
@@ -306,7 +296,6 @@ Obtains the next update date of this CRL.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getrevokedcert"></a>
 ## getRevokedCert
 
 ```TypeScript
@@ -343,7 +332,6 @@ Obtains the revoked certificate entry from the X.509 CRL based on the specified 
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getrevokedcertwithcert"></a>
 ## getRevokedCertWithCert
 
 ```TypeScript
@@ -380,7 +368,6 @@ Obtains the revoked certificate entry from the X.509 CRL based on the specified 
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getrevokedcerts"></a>
 ## getRevokedCerts
 
 ```TypeScript
@@ -411,7 +398,6 @@ Obtains all the revoked certificate entries from the X.509 CRL. This API uses an
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getrevokedcerts-1"></a>
 ## getRevokedCerts
 
 ```TypeScript
@@ -442,7 +428,6 @@ Obtains all the revoked certificate entries from the X.509 CRL. This API uses a 
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getsignature"></a>
 ## getSignature
 
 ```TypeScript
@@ -473,7 +458,6 @@ Obtains the signature data of the X.509 CRL.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getsignaturealgname"></a>
 ## getSignatureAlgName
 
 ```TypeScript
@@ -504,7 +488,6 @@ Obtains the signing algorithm of the X.509 CRL.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getsignaturealgoid"></a>
 ## getSignatureAlgOid
 
 ```TypeScript
@@ -535,7 +518,6 @@ Obtains the OID of the X.509 CRL signing algorithm. OIDs are allocated by the In
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getsignaturealgparams"></a>
 ## getSignatureAlgParams
 
 ```TypeScript
@@ -567,7 +549,6 @@ Obtains the parameters of the X.509 CRL signing algorithm.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="gettbsinfo"></a>
 ## getTBSInfo
 
 ```TypeScript
@@ -598,7 +579,6 @@ Obtains the DER-encoded CRL information, that is, **tbsCertList** from this CRL.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -621,7 +601,6 @@ Obtains the CRL type.
 | --- | --- |
 | string | CRL type obtained. |
 
-<a id="getversion"></a>
 ## getVersion
 
 ```TypeScript
@@ -644,7 +623,6 @@ Obtains the version of the X.509 CRL.
 | --- | --- |
 | number | Version of the X.509 CRL obtained. |
 
-<a id="hashcode"></a>
 ## hashCode
 
 ```TypeScript
@@ -675,7 +653,6 @@ Obtains the hash value of the data in DER format.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="isrevoked"></a>
 ## isRevoked
 
 ```TypeScript
@@ -710,7 +687,6 @@ Checks whether an X.509 certificate is revoked.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | invalid parameters. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 
-<a id="match"></a>
 ## match
 
 ```TypeScript
@@ -747,7 +723,6 @@ Checks whether this CRL matches the specified parameters.
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -778,7 +753,6 @@ Converts the object data into a string.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="tostring-1"></a>
 ## toString
 
 ```TypeScript
@@ -816,7 +790,6 @@ Converts this object into a string in the specified encoding format.
 | [19020003](../errorcode-cert.md#19020003-parameter-check-failure) | parameter check failed. Possible causes:<br>1. The value of encodingType is not in the EncodingType enumeration range. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="verify"></a>
 ## verify
 
 ```TypeScript
@@ -847,7 +820,6 @@ Verifies the signature of the X.509 CRL. The RSA algorithm is supported. This AP
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | invalid parameters. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="verify-1"></a>
 ## verify
 
 ```TypeScript

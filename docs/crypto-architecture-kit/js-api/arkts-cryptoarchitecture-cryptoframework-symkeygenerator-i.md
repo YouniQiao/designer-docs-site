@@ -2,7 +2,7 @@
 
 Provides APIs for using the **SymKeyGenerator**.
 
-Before using the APIs of this class, use [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator-1) to create a **SymKeyGenerator** instance.
+Before using the APIs of this class, use [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator) to create a **SymKeyGenerator** instance.
 
 **Since:** 9
 
@@ -18,7 +18,6 @@ Before using the APIs of this class, use [createSymKeyGenerator](arkts-cryptoarc
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="convertkey"></a>
 ## convertKey
 
 ```TypeScript
@@ -27,8 +26,7 @@ convertKey(key: DataBlob, callback: AsyncCallback<SymKey>): void
 
 Converts specified data into a symmetric key. This API uses an asynchronous callback to return the result.
 
-This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator-1).
-
+This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator).
 > **NOTE**  
 >  
 > For symmetric keys used in the HMAC algorithm, if a hash algorithm (for example, **HMAC|SHA256**) is specified  
@@ -86,7 +84,6 @@ function testConvertKey() {
 
 ```
 
-<a id="convertkey-1"></a>
 ## convertKey
 
 ```TypeScript
@@ -95,7 +92,7 @@ convertKey(key: DataBlob): Promise<SymKey>
 
 Converts specified data into a symmetric key. This API uses a promise to return the result.
 
-Before using this API, create a symmetric key generator by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator-1).
+Before using this API, create a symmetric key generator by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator).
 
 **Since:** 9
 
@@ -155,7 +152,6 @@ function testConvertKey() {
 
 ```
 
-<a id="convertkeysync"></a>
 ## convertKeySync
 
 ```TypeScript
@@ -164,8 +160,7 @@ convertKeySync(key: DataBlob): SymKey
 
 Converts specified data into a symmetric key.
 
-This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator-1).
-
+This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator).
 > **NOTE**  
 >  
 > For symmetric keys used in the HMAC algorithm, if a hash algorithm (for example, **HMAC|SHA256**) is specified  
@@ -224,7 +219,6 @@ function testConvertKeySync() {
 
 ```
 
-<a id="generatesymkey"></a>
 ## generateSymKey
 
 ```TypeScript
@@ -233,17 +227,16 @@ generateSymKey(callback: AsyncCallback<SymKey>): void
 
 Generates a random key using this symmetric key generator. This API uses an asynchronous callback to return the result.
 
-This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator-1).
+This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator).
 
 RAND_priv_bytes() of OpenSSL can be used to generate random keys.
-
 > **NOTE**  
 >  
 > For symmetric keys used in the HMAC algorithm, if a hash algorithm (for example, **HMAC|SHA256**) is specified  
 > when the symmetric key generator is created, a binary key matching the hash length (for example, a 256-bit key)  
 > will be randomly generated. If no hash algorithm is specified, for example, only **HMAC** is specified, random  
 > symmetric key generation is not supported. You can generate symmetric key data using  
-> [convertKey](arkts-cryptoarchitecture-cryptoframework-symkeygenerator-i.md#convertkey-1).
+> [convertKey](arkts-cryptoarchitecture-cryptoframework-symkeygenerator-i.md#convertkey).
 
 **Since:** 9
 
@@ -280,7 +273,6 @@ let symKeyGenerator = cryptoFramework.createSymKeyGenerator('3DES192');
 
 ```
 
-<a id="generatesymkey-1"></a>
 ## generateSymKey
 
 ```TypeScript
@@ -289,7 +281,7 @@ generateSymKey(): Promise<SymKey>
 
 Generates a random key using this symmetric key generator. This API uses a promise to return the result.
 
-This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator-1).
+This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator).
 
 RAND_priv_bytes() of OpenSSL can be used to generate random keys.
 
@@ -332,7 +324,6 @@ let symKeyGenerator = cryptoFramework.createSymKeyGenerator('AES128');
 
 ```
 
-<a id="generatesymkeysync"></a>
 ## generateSymKeySync
 
 ```TypeScript
@@ -341,17 +332,16 @@ generateSymKeySync(): SymKey
 
 Generates a random key using this symmetric key generator. This API returns the result synchronously.
 
-This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator-1).
+This API can be used only after a **symKeyGenerator** instance is created by using [createSymKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createsymkeygenerator-f.md#createsymkeygenerator).
 
 RAND_priv_bytes() of OpenSSL can be used to generate random keys.
-
 > **NOTE**  
 >  
 > For symmetric keys used in the HMAC algorithm, if a hash algorithm (for example, **HMAC|SHA256**) is specified  
 > when the symmetric key generator is created, a binary key matching the hash length (for example, a 256-bit key)  
 > will be randomly generated.
 
-If no hash algorithm is specified, for example, only **HMAC** is specified, random symmetric key generation is not supported. You can generate symmetric key data using [convertKeySync](arkts-cryptoarchitecture-cryptoframework-symkeygenerator-i.md#convertkeysync-1).
+If no hash algorithm is specified, for example, only **HMAC** is specified, random symmetric key generation is not supported. You can generate symmetric key data using [convertKeySync](arkts-cryptoarchitecture-cryptoframework-symkeygenerator-i.md#convertkeysync).
 
 <br><br>**NOTE**<br>It is recommended to prioritize the use of asynchronous API, {@link generateSymKey}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 

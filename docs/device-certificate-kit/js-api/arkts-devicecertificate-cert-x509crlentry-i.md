@@ -14,7 +14,6 @@ Provides APIs for operating on a revoked certificate entry in a CRL.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="getcertissuer"></a>
 ## getCertIssuer
 
 ```TypeScript
@@ -22,7 +21,6 @@ getCertIssuer(): DataBlob
 ```
 
 Obtains the issuer name of the revoked certificate.
-
 > **NOTE**  
 >  
 > The obtained issuer name of this revoked certificate contains a string terminator.
@@ -50,7 +48,6 @@ Obtains the issuer name of the revoked certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getcertissuer-1"></a>
 ## getCertIssuer
 
 ```TypeScript
@@ -89,7 +86,6 @@ Obtains the issuer name of the revoked certificate based on the encoding type.
 | [19020003](../errorcode-cert.md#19020003-parameter-check-failure) | parameter check failed. Possible causes:<br>1. The value of encodingType is not in the EncodingType enumeration range. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getcertissuerx500distinguishedname"></a>
 ## getCertIssuerX500DistinguishedName
 
 ```TypeScript
@@ -120,7 +116,6 @@ Obtains the distinguished name (DN) of the issuer of the revoked certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getencoded"></a>
 ## getEncoded
 
 ```TypeScript
@@ -152,7 +147,6 @@ Obtains the serialized data of this revoked certificate entry. This API uses an 
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getencoded-1"></a>
 ## getEncoded
 
 ```TypeScript
@@ -184,7 +178,6 @@ Obtains the serialized data of this revoked certificate entry. This API uses a p
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getextensions"></a>
 ## getExtensions
 
 ```TypeScript
@@ -215,7 +208,6 @@ Obtains the CRL entry extensions in DER format.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getextensionsobject"></a>
 ## getExtensionsObject
 
 ```TypeScript
@@ -246,7 +238,6 @@ Obtains the CRL entry extensions.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getrevocationdate"></a>
 ## getRevocationDate
 
 ```TypeScript
@@ -277,7 +268,6 @@ Obtains the certificate's revocation date.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getserialnumber"></a>
 ## getSerialNumber
 
 ```TypeScript
@@ -308,7 +298,6 @@ Obtains the serial number of this revoked certificate.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="hasextensions"></a>
 ## hasExtensions
 
 ```TypeScript
@@ -339,7 +328,6 @@ Checks whether this CRL entry has extensions.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="hashcode"></a>
 ## hashCode
 
 ```TypeScript
@@ -370,7 +358,6 @@ Obtains the hash value of the data in DER format.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="tostring"></a>
 ## toString
 
 ```TypeScript

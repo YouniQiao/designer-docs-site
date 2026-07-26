@@ -99,7 +99,6 @@ rsaSignaturePadding?: CmsRsaSignaturePadding
 ```
 
 Padding mode for an RSA signature. The default value is **PKCS1_PADDING**.When this parameter is set to **PKCS1_PSS_PADDING**, **mdName** must be set to **SHA256**, **SHA384**, or **SHA512**.
-
 > **NOTE**  
 >  
 > This parameter is valid only when the private key type of the signature is RSA.

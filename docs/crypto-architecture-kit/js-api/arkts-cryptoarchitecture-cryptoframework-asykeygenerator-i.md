@@ -1,6 +1,6 @@
 # AsyKeyGenerator
 
-Provides APIs for using the **AsyKeyGenerator**. Before using any API of the **AsyKeyGenerator** class, you must create an **AsyKeyGenerator** instance by using [createAsyKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createasykeygenerator-f.md#createasykeygenerator-1).
+Provides APIs for using the **AsyKeyGenerator**. Before using any API of the **AsyKeyGenerator** class, you must create an **AsyKeyGenerator** instance by using [createAsyKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createasykeygenerator-f.md#createasykeygenerator).
 
 **Since:** 9
 
@@ -16,7 +16,6 @@ Provides APIs for using the **AsyKeyGenerator**. Before using any API of the **A
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="convertkey"></a>
 ## convertKey
 
 ```TypeScript
@@ -52,7 +51,6 @@ Converts asymmetric key data to a key pair object. This API uses an asynchronous
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="convertkey-1"></a>
 ## convertKey
 
 ```TypeScript
@@ -114,7 +112,6 @@ asyKeyGenerator.convertKey(pubKeyBlob, priKeyBlob, (err, keyPair) => {
 
 ```
 
-<a id="convertkey-2"></a>
 ## convertKey
 
 ```TypeScript
@@ -155,7 +152,6 @@ Converts asymmetric key data to a key pair object. This API uses a promise to re
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="convertkey-3"></a>
 ## convertKey
 
 ```TypeScript
@@ -222,7 +218,6 @@ keyGenPromise.then(keyPair => {
 
 ```
 
-<a id="convertkeysync"></a>
 ## convertKeySync
 
 ```TypeScript
@@ -292,7 +287,6 @@ try {
 
 ```
 
-<a id="convertpemkey"></a>
 ## convertPemKey
 
 ```TypeScript
@@ -300,7 +294,6 @@ convertPemKey(pubKey: string | null, priKey: string | null): Promise<KeyPair>
 ```
 
 Converts data into an asymmetric key pair. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > 1. When **convertPemKey()** is used to convert an external string into an asymmetric key object defined by  
@@ -384,7 +377,6 @@ async function TestConvertPemKeyByPromise() {
 
 ```
 
-<a id="convertpemkey-1"></a>
 ## convertPemKey
 
 ```TypeScript
@@ -392,7 +384,6 @@ convertPemKey(pubKey: string | null, priKey: string | null, password: string): P
 ```
 
 Converts data into an asymmetric key pair. Encrypted private keys are supported. The private key password is synchronously passed to decrypt the private key. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > 1. When **convertPemKey()** is used to convert an external string into an asymmetric key object defined by  
@@ -473,7 +464,6 @@ async function TestConvertPemKeyByPromise() {
 
 ```
 
-<a id="convertpemkeysync"></a>
 ## convertPemKeySync
 
 ```TypeScript
@@ -481,11 +471,10 @@ convertPemKeySync(pubKey: string | null, priKey: string | null): KeyPair
 ```
 
 Converts data into an asymmetric key pair. This API returns the result synchronously.
-
 > **NOTE**  
 > The precautions for using **convertPemKeySync** are the same as those for **convertPemKey**. For details, see  
 > the description of  
-> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey-1)  
+> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey)  
 > .
 
 <br><br>**NOTE**<br>It is recommended to prioritize the use of asynchronous API, {@link convertPemKey}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
@@ -564,7 +553,6 @@ function TestConvertPemKeyBySync() {
 
 ```
 
-<a id="convertpemkeysync-1"></a>
 ## convertPemKeySync
 
 ```TypeScript
@@ -572,10 +560,9 @@ convertPemKeySync(pubKey: string | null, priKey: string | null, password: string
 ```
 
 Converts data into an asymmetric key pair. Encrypted private keys are supported. The private key password is synchronously passed to decrypt the private key. This API is synchronous.
-
 > **NOTE**  
 > The precautions for using **convertPemKeySync** are the same as those for  
-> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey-1)  
+> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey)  
 > .
 
 <br><br>**NOTE**<br>It is recommended to prioritize the use of asynchronous API, {@link convertPemKey}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
@@ -650,7 +637,6 @@ function TestConvertPemKeyBySync() {
 
 ```
 
-<a id="generatekeypair"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -699,7 +685,6 @@ asyKeyGenerator.generateKeyPair((err, keyPair) => {
 
 ```
 
-<a id="generatekeypair-1"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -748,7 +733,6 @@ keyGenPromise.then(keyPair => {
 
 ```
 
-<a id="generatekeypairsync"></a>
 ## generateKeyPairSync
 
 ```TypeScript

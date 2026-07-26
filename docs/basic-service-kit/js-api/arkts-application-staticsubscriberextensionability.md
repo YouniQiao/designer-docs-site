@@ -13,6 +13,6 @@ import { StaticSubscriberExtensionAbility } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [StaticSubscriberExtensionAbility](arkts-basicservices-staticsubscriberextensionability-c-sys.md) | The **StaticSubscriberExtensionAbility** module provides Extension abilities for static subscribers. |
+| [StaticSubscriberExtensionAbility](arkts-basicservices-application-staticsubscriberextensionability-staticsubscriberextensionability-c-sys.md) | The **StaticSubscriberExtensionAbility** module provides Extension abilities for static subscribers. |
 <!--DelEnd-->
 

@@ -14,7 +14,6 @@ Provides APIs for certificate chain validator operations.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="validate"></a>
 ## validate
 
 ```TypeScript
@@ -23,7 +22,7 @@ validate(certChain: CertChainData, callback: AsyncCallback<void>): void
 
 Validates an X.509 certificate chain. This API uses an asynchronous callback to return the result.
 
-The certificate chain validator does not verify the certificate validity period because the system time on the device is untrusted. To check the validity period of a certificate, use the [checkValidityWithDate()](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate-1) API of the **X509Cert** class. For details about certificate specifications, see [Certificate Specifications](docroot://security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications).
+The certificate chain validator does not verify the certificate validity period because the system time on the device is untrusted. To check the validity period of a certificate, use the [checkValidityWithDate()](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate) API of the **X509Cert** class. For details about certificate specifications, see [Certificate Specifications](../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications).
 
 **Since:** 9
 
@@ -149,7 +148,6 @@ try {
 
 ```
 
-<a id="validate-1"></a>
 ## validate
 
 ```TypeScript
@@ -158,7 +156,7 @@ validate(certChain: CertChainData): Promise<void>
 
 Validates an X.509 certificate chain. This API uses a promise to return the result.
 
-The certificate chain validator does not verify the certificate validity period because the system time on the device is untrusted. To check the validity period of a certificate, use the [checkValidityWithDate()](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate-1) API of the **X509Cert** class. For details about certificate specifications, see [Certificate Specifications](docroot://security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications).
+The certificate chain validator does not verify the certificate validity period because the system time on the device is untrusted. To check the validity period of a certificate, use the [checkValidityWithDate()](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate) API of the **X509Cert** class. For details about certificate specifications, see [Certificate Specifications](../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications).
 
 **Since:** 9
 
@@ -287,7 +285,6 @@ try {
 
 ```
 
-<a id="validatecert"></a>
 ## validateCert
 
 ```TypeScript

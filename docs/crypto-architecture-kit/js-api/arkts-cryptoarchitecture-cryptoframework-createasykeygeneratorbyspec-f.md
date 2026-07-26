@@ -6,7 +6,6 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="createasykeygeneratorbyspec"></a>
 ## createAsyKeyGeneratorBySpec
 
 ```TypeScript
@@ -29,7 +28,7 @@ Obtains an asymmetric key generator instance with the specified key parameters.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| asyKeySpec | [AsyKeySpec](arkts-cryptoarchitecture-cryptoframework-asykeyspec-i.md) | Yes | Key parameters. The **AsyKeyGeneratorBySpec** generates the public/private key based on the specified parameters.<br>For details about the supported specifications, see [Asymmetric Key Generation and Conversion Specifications](docroot://security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md). |
+| asyKeySpec | [AsyKeySpec](arkts-cryptoarchitecture-cryptoframework-asykeyspec-i.md) | Yes | Key parameters. The **AsyKeyGeneratorBySpec** generates the public/private key based on the specified parameters.<br>For details about the supported specifications, see [Asymmetric Key Generation and Conversion Specifications](../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md). |
 
 **Return value:**
 

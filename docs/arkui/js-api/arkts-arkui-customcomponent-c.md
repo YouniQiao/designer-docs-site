@@ -10,7 +10,6 @@ Custom Component
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="abouttoreuse"></a>
 ## aboutToReuse
 
 ```TypeScript
@@ -35,7 +34,6 @@ Invoked when a reusable custom component is re-added to the node tree from the r
 | --- | --- | --- | --- |
 | params | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object \| undefined \| null&gt; | Yes | Custom component init params. |
 
-<a id="onlayout"></a>
 ## onLayout
 
 ```TypeScript
@@ -63,7 +61,6 @@ Invoked when the custom component lays out its child components. Through this ca
 | children | Array&lt;LayoutChild&gt; | Yes | Child component layout information. |
 | constraint | [ConstraintSizeOptions](../arkts-apis/arkts-arkui-constraintsizeoptions-i.md) | Yes | Size constraint of the parent component. |
 
-<a id="onmeasure"></a>
 ## onMeasure
 
 ```TypeScript

@@ -20,7 +20,6 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="getasykeyspec"></a>
 ## getAsyKeySpec
 
 ```TypeScript
@@ -100,7 +99,6 @@ async function testgetAsyKeySpec() {
 
 ```
 
-<a id="getencodedder"></a>
 ## getEncodedDer
 
 ```TypeScript
@@ -108,12 +106,11 @@ getEncodedDer(format: string): DataBlob
 ```
 
 支持根据指定的密钥格式（如规范、压缩状态等），获取符合ASN.1语法和DER编码的公钥数据。
-
 > **说明：**  
 >  
-> 本接口和[Key.getEncoded()](arkts-cryptoarchitecture-cryptoframework-key-i.md#getencoded-1)的区别是：  
+> 本接口和[Key.getEncoded()](arkts-cryptoarchitecture-cryptoframework-key-i.md#getencoded)的区别是：  
 > 1. 本接口可以指定获取密钥数据的格式。  
-> 2. [Key.getEncoded()](arkts-cryptoarchitecture-cryptoframework-key-i.md#getencoded-1)不支持指定获取密钥数据的格式。
+> 2. [Key.getEncoded()](arkts-cryptoarchitecture-cryptoframework-key-i.md#getencoded)不支持指定获取密钥数据的格式。
 
 **起始版本：** 12
 
@@ -161,7 +158,6 @@ async function testGetEncodedDer() {
 
 ```
 
-<a id="getencodedpem"></a>
 ## getEncodedPem
 
 ```TypeScript
@@ -221,7 +217,6 @@ function TestPubKeyPkcs1ToX509BySync1024() {
 
 ```
 
-<a id="getkeydata"></a>
 ## getKeyData
 
 ```TypeScript
@@ -275,7 +270,6 @@ async function eccGetKeyDataTest() {
 
 ```
 
-<a id="getkeydatasync"></a>
 ## getKeyDataSync
 
 ```TypeScript

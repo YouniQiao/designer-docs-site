@@ -6,7 +6,6 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="createasykeygenerator"></a>
 ## createAsyKeyGenerator
 
 ```TypeScript
@@ -15,7 +14,7 @@ function createAsyKeyGenerator(algName: string): AsyKeyGenerator
 
 Creates an **AsyKeyGenerator** instance based on the specified algorithm.
 
-For details about the supported specifications, see [Asymmetric Key Generation and Conversion Specifications](docroot://security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md).
+For details about the supported specifications, see [Asymmetric Key Generation and Conversion Specifications](../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md).
 
 **Since:** 9
 
@@ -31,7 +30,7 @@ For details about the supported specifications, see [Asymmetric Key Generation a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| algName | string | Yes | Algorithm used by the asymmetric keys. For details, see the string parameters in [Asymmetric Key Generation and Conversion Specifications](docroot://security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md). |
+| algName | string | Yes | Algorithm used by the asymmetric keys. For details, see the string parameters in [Asymmetric Key Generation and Conversion Specifications](../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md). |
 
 **Return value:**
 

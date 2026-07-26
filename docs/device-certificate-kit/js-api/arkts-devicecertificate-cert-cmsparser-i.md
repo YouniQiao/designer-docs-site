@@ -1,7 +1,6 @@
 # CmsParser
 
 Verifies or decrypts a CMS message.
-
 > **NOTE**  
 >  
 > PKCS #7 is a standard syntax for storing signed or encrypted data. CMS is an extension of PKCS #7. PKCS #7  
@@ -20,7 +19,6 @@ Verifies or decrypts a CMS message.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="decryptenvelopeddata"></a>
 ## decryptEnvelopedData
 
 ```TypeScript
@@ -143,7 +141,6 @@ async function testCmsDecryptTest() {
 
 ```
 
-<a id="getcerts"></a>
 ## getCerts
 
 ```TypeScript
@@ -181,7 +178,6 @@ Obtains the certificate from CMS message of the **SIGNED_DATA** type by passing 
 | [19020003](../errorcode-cert.md#19020003-parameter-check-failure) | parameter check failed. Possible causes:<br>1. The value of type is invalid or not supported. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="getcontentdata"></a>
 ## getContentData
 
 ```TypeScript
@@ -328,7 +324,6 @@ async function testCmsVerifyTest() {
 
 ```
 
-<a id="getcontenttype"></a>
 ## getContentType
 
 ```TypeScript
@@ -476,7 +471,6 @@ async function testCmsVerifyTest() {
 
 ```
 
-<a id="setrawdata"></a>
 ## setRawData
 
 ```TypeScript
@@ -484,7 +478,6 @@ setRawData(data: Uint8Array | string, cmsFormat: CmsFormat): Promise<void>
 ```
 
 Converts data in CMS format into CMS objects. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > CMS message in PEM and DER formats is supported. **string** corresponds to the PEM format, and **Uint8Array**  
@@ -635,7 +628,6 @@ async function testCmsVerifyTest() {
 
 ```
 
-<a id="verifysigneddata"></a>
 ## verifySignedData
 
 ```TypeScript

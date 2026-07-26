@@ -14,7 +14,6 @@ Provides APIs for managing the X.509 certificate chain.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="getcertlist"></a>
 ## getCertList
 
 ```TypeScript
@@ -45,7 +44,6 @@ Obtains the X.509 certificate list.
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="hashcode"></a>
 ## hashCode
 
 ```TypeScript
@@ -76,7 +74,6 @@ Obtains the hash value of the data in DER format.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -107,7 +104,6 @@ Converts the object data into a string.
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
 
-<a id="validate"></a>
 ## validate
 
 ```TypeScript
@@ -151,7 +147,6 @@ Validates a certificate chain. This API uses a promise to return the result.
 | [19030006](../errorcode-cert.md#19030006-key-cannot-be-used-for-signing-a-certificate) | the key cannot be used for signing a certificate. |
 | [19030007](../errorcode-cert.md#19030007-key-cannot-be-used-for-digital-signature) | the key cannot be used for a digital signature. |
 
-<a id="validate-1"></a>
 ## validate
 
 ```TypeScript

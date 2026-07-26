@@ -6,7 +6,6 @@
 import { commonEventManager } from '@kit.BasicServicesKit';
 ```
 
-<a id="publishasuser"></a>
 ## publishAsUser
 
 ```TypeScript
@@ -67,7 +66,6 @@ try {
 ```
 
 
-<a id="publishasuser-1"></a>
 ## publishAsUser
 
 ```TypeScript
@@ -83,17 +81,7 @@ Publishes a common event to a specified user and specifies the information to be
 
 **Since:** 9
 
-<!--Device-commonEventManager-function publishAsUser(
-    event: string,
-    userId: int,
-    options: CommonEventPublishData,
-    callback: AsyncCallback<void>
-  ): void--><!--Device-commonEventManager-function publishAsUser(
-    event: string,
-    userId: int,
-    options: CommonEventPublishData,
-    callback: AsyncCallback<void>
-  ): void-End-->
+<!--Device-commonEventManager-function publishAsUser(    event: string,    userId: int,    options: CommonEventPublishData,    callback: AsyncCallback<void>  ): void--><!--Device-commonEventManager-function publishAsUser(    event: string,    userId: int,    options: CommonEventPublishData,    callback: AsyncCallback<void>  ): void-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 

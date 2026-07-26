@@ -10,7 +10,6 @@ Custom Component base class and it is migrated from class CustomComponent.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="abouttoappear"></a>
 ## aboutToAppear
 
 ```TypeScript
@@ -29,7 +28,6 @@ Invoked after a new instance of the custom component is created and before its b
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="abouttodisappear"></a>
 ## aboutToDisappear
 
 ```TypeScript
@@ -48,7 +46,6 @@ Invoked when this component is about to disappear.Do not change state variables 
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="abouttorecycle"></a>
 ## aboutToRecycle
 
 ```TypeScript
@@ -67,7 +64,6 @@ aboutToRecycle Method and it is migrated from class CustomComponent.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="build"></a>
 ## build
 
 ```TypeScript
@@ -86,7 +82,6 @@ Customize the pop-up content constructor and it is migrated from class CustomCom
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="getdialogcontroller"></a>
 ## getDialogController
 
 ```TypeScript
@@ -111,7 +106,6 @@ The dialog controller of the custom component.
 | --- | --- |
 | [PromptActionDialogController](arkts-arkui-promptactiondialogcontroller-t.md) | The controller of dialog, or undefined if it is not available |
 
-<a id="getuicontext"></a>
 ## getUIContext
 
 ```TypeScript
@@ -136,7 +130,6 @@ Get current UIContext and it is migrated from class CustomComponent.
 | --- | --- |
 | [UIContext](arkts-arkui-uicontext-t.md) | The UIContext that the custom component belongs to. |
 
-<a id="getuniqueid"></a>
 ## getUniqueId
 
 ```TypeScript
@@ -161,14 +154,13 @@ Get uniqueId of the custom component and it is migrated from class CustomCompone
 | --- | --- |
 | number | - The uniqueId of the custom component. |
 
-<a id="onbackpress"></a>
 ## onBackPress
 
 ```TypeScript
 onBackPress?(): void | boolean
 ```
 
-Invoked when a user clicks the back button on a router-managed page (a custom component decorated with [\@Entry](docroot://ui/state-management/arkts-create-custom-components.md#entry)). The value **true** means that the page executes its own return logic, and **false** (default) means that the default return logic is used.
+Invoked when a user clicks the back button on a router-managed page (a custom component decorated with [\@Entry](../../../ui/state-management/arkts-create-custom-components.md#entry)). The value **true** means that the page executes its own return logic, and **false** (default) means that the default return logic is used.
 
 **Since:** 7
 
@@ -178,7 +170,6 @@ Invoked when a user clicks the back button on a router-managed page (a custom co
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="ondidbuild"></a>
 ## onDidBuild
 
 ```TypeScript
@@ -199,7 +190,6 @@ Triggered when the custom component has been built.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="onformrecover"></a>
 ## onFormRecover
 
 ```TypeScript
@@ -226,7 +216,6 @@ onFormRecover Method, this is only for ArkTS form, it is migrated from class Cus
 | --- | --- | --- | --- |
 | statusData | string | Yes | indicate status data of ArkTS form UI, which is acquired by calling onFormRecycle, it is used to recover form |
 
-<a id="onformrecycle"></a>
 ## onFormRecycle
 
 ```TypeScript
@@ -253,7 +242,6 @@ onFormRecycle Method, this is only for ArkTS form, if form was marked recyclable
 | --- | --- |
 | string | status data of ArkTS form UI, this data will be passed in when recover form later |
 
-<a id="onmeasuresize"></a>
 ## onMeasureSize
 
 ```TypeScript
@@ -286,7 +274,6 @@ Invoked when the custom component needs to determine its size. Through this call
 | --- | --- |
 | [SizeResult](arkts-arkui-sizeresult-i.md) | Component size information. |
 
-<a id="onnewparam"></a>
 ## onNewParam
 
 ```TypeScript
@@ -311,17 +298,14 @@ Triggered when the Entry custom component has been pushed with singleton mode.
 | --- | --- | --- | --- |
 | param | [ESObject](../../apis-na/arkts-apis/arkts-na-esobject-t.md) | Yes | New parameters pushed with singleton mode. |
 
-<a id="onpagehide"></a>
 ## onPageHide
 
 ```TypeScript
 onPageHide?(): void
 ```
 
-Invoked each time a router-managed page (a custom component decorated with [\@Entry](docroot://ui/state-management/arkts-create-custom-components.md#entry)) is hidden, including scenarios such as route navigation and the application moving to the background.
-
+Invoked each time a router-managed page (a custom component decorated with [\@Entry](../../../ui/state-management/arkts-create-custom-components.md#entry)) is hidden, including scenarios such as route navigation and the application moving to the background.
 > **NOTE**
-
 > To ensure smooth UI responsiveness, avoid executing time-consuming operations within the callback function that  
 > may block the main thread. For resource-intensive tasks such as camera resource deallocation, consider  
 > implementing asynchronous solutions. For best practices, see  
@@ -335,14 +319,13 @@ Invoked each time a router-managed page (a custom component decorated with [\@En
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="onpageshow"></a>
 ## onPageShow
 
 ```TypeScript
 onPageShow?(): void
 ```
 
-Invoked each time a router-managed page (a custom component decorated with [\@Entry](docroot://ui/state-management/arkts-create-custom-components.md#entry)) is displayed, including scenarios such as route navigation and the application returning to the foreground.
+Invoked each time a router-managed page (a custom component decorated with [\@Entry](../../../ui/state-management/arkts-create-custom-components.md#entry)) is displayed, including scenarios such as route navigation and the application returning to the foreground.
 
 **Since:** 7
 
@@ -352,7 +335,6 @@ Invoked each time a router-managed page (a custom component decorated with [\@En
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="onplacechildren"></a>
 ## onPlaceChildren
 
 ```TypeScript
@@ -379,7 +361,6 @@ Invoked when the custom component needs to determine the positions of its child 
 | children | Array&lt;Layoutable&gt; | Yes | Array containing layout information for all child components after measurement. |
 | constraint | [ConstraintSizeOptions](../arkts-apis/arkts-arkui-constraintsizeoptions-i.md) | Yes | Layout constraints applied to the component. |
 
-<a id="onwillapplytheme"></a>
 ## onWillApplyTheme
 
 ```TypeScript
@@ -387,12 +368,9 @@ onWillApplyTheme?(theme: Theme): void
 ```
 
 Invoked before the **build()** function of a new instance of the custom component is executed, to obtain the **Theme** object of the component context. You can change state variables in **onWillApplyTheme**. The change will take effect when you execute the **build()** function next time.
-
 > * * Note: * *  
 > Since API version 18, this API can be used in the status management V2 component.
-
 > **NOTE**
-
 > Since API version 18, this API is supported in the components of V2.
 
 **Since:** 12
@@ -411,7 +389,6 @@ Invoked before the **build()** function of a new instance of the custom componen
 | --- | --- | --- | --- |
 | theme | [Theme](arkts-arkui-theme-t.md) | Yes | Current theme object of the custom component. |
 
-<a id="pagetransition"></a>
 ## pageTransition
 
 ```TypeScript
@@ -428,7 +405,6 @@ PageTransition Method and it is migrated from class CustomComponent.Implement An
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="querynavdestinationinfo"></a>
 ## queryNavDestinationInfo
 
 ```TypeScript
@@ -453,7 +429,6 @@ Queries the **NavDestination** information of this custom component. This API ha
 | --- | --- |
 | [NavDestinationInfo](../arkts-apis/arkts-arkui-uiobserver-navdestinationinfo-i.md) | **NavDestinationInfo** instance obtained. |
 
-<a id="querynavdestinationinfo-1"></a>
 ## queryNavDestinationInfo
 
 ```TypeScript
@@ -484,7 +459,6 @@ Queries the information of the nearest **NavDestination** component (a navigatio
 | --- | --- |
 | [NavDestinationInfo](../arkts-apis/arkts-arkui-uiobserver-navdestinationinfo-i.md) | **NavDestinationInfo** instance obtained. |
 
-<a id="querynavigationinfo"></a>
 ## queryNavigationInfo
 
 ```TypeScript
@@ -509,7 +483,6 @@ Queries the **Navigation** information of this custom component.
 | --- | --- |
 | [NavigationInfo](arkts-arkui-navigationinfo-t.md) | **NavigationInfo** instance obtained. |
 
-<a id="queryrouterpageinfo"></a>
 ## queryRouterPageInfo
 
 ```TypeScript

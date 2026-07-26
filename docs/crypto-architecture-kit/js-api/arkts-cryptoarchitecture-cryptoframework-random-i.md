@@ -1,6 +1,6 @@
 # Random
 
-Provides APIs for random number operations. Before using any API of the **Random** class, you must create a **Random** instance by using [createRandom](arkts-cryptoarchitecture-cryptoframework-createrandom-f.md#createrandom-1).
+Provides APIs for random number operations. Before using any API of the **Random** class, you must create a **Random** instance by using [createRandom](arkts-cryptoarchitecture-cryptoframework-createrandom-f.md#createrandom).
 
 **Since:** 9
 
@@ -16,7 +16,6 @@ Provides APIs for random number operations. Before using any API of the **Random
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="enablehardwareentropy"></a>
 ## enableHardwareEntropy
 
 ```TypeScript
@@ -68,7 +67,6 @@ rand.generateRandom(12, (err, randData) => {
 
 ```
 
-<a id="generaterandom"></a>
 ## generateRandom
 
 ```TypeScript
@@ -122,7 +120,6 @@ rand.generateRandom(12, (err, randData) => {
 
 ```
 
-<a id="generaterandom-1"></a>
 ## generateRandom
 
 ```TypeScript
@@ -250,7 +247,6 @@ export default {
 
 ```
 
-<a id="generaterandomsync"></a>
 ## generateRandomSync
 
 ```TypeScript
@@ -388,7 +384,6 @@ export default {
 
 ```
 
-<a id="setseed"></a>
 ## setSeed
 
 ```TypeScript

@@ -1,6 +1,6 @@
 # Random
 
-Random类，调用Random方法生成随机数。调用前，需要通过[createRandom](arkts-cryptoarchitecture-cryptoframework-createrandom-f.md#createrandom-1)构造Random实例。
+Random类，调用Random方法生成随机数。调用前，需要通过[createRandom](arkts-cryptoarchitecture-cryptoframework-createrandom-f.md#createrandom)构造Random实例。
 
 **起始版本：** 9
 
@@ -16,7 +16,6 @@ Random类，调用Random方法生成随机数。调用前，需要通过[createR
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="enablehardwareentropy"></a>
 ## enableHardwareEntropy
 
 ```TypeScript
@@ -68,7 +67,6 @@ rand.generateRandom(12, (err, randData) => {
 
 ```
 
-<a id="generaterandom"></a>
 ## generateRandom
 
 ```TypeScript
@@ -122,7 +120,6 @@ rand.generateRandom(12, (err, randData) => {
 
 ```
 
-<a id="generaterandom-1"></a>
 ## generateRandom
 
 ```TypeScript
@@ -250,7 +247,6 @@ export default {
 
 ```
 
-<a id="generaterandomsync"></a>
 ## generateRandomSync
 
 ```TypeScript
@@ -388,7 +384,6 @@ export default {
 
 ```
 
-<a id="setseed"></a>
 ## setSeed
 
 ```TypeScript

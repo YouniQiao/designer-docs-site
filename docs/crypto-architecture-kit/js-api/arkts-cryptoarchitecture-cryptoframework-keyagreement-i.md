@@ -1,6 +1,6 @@
 # KeyAgreement
 
-Provides APIs for key agreement operations. Before using any API of the **KeyAgreement** class, you must create a **KeyAgreement** instance by using [createKeyAgreement(algName: string): KeyAgreement](arkts-cryptoarchitecture-cryptoframework-createkeyagreement-f.md#createkeyagreement-1).
+Provides APIs for key agreement operations. Before using any API of the **KeyAgreement** class, you must create a **KeyAgreement** instance by using [createKeyAgreement(algName: string): KeyAgreement](arkts-cryptoarchitecture-cryptoframework-createkeyagreement-f.md#createkeyagreement).
 
 **Since:** 9
 
@@ -16,7 +16,6 @@ Provides APIs for key agreement operations. Before using any API of the **KeyAgr
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="generatesecret"></a>
 ## generateSecret
 
 ```TypeScript
@@ -52,7 +51,6 @@ Generates a shared secret based on the given private key and public key. This AP
 | [17620002](../errorcode-crypto-framework.md#17620002-parameter-conversion-between-arkts-and-c-failed) | Failed to obtain the native object or convert parameters. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="generatesecret-1"></a>
 ## generateSecret
 
 ```TypeScript
@@ -93,7 +91,6 @@ Generates a shared secret based on the given private key and public key. This AP
 | [17620002](../errorcode-crypto-framework.md#17620002-parameter-conversion-between-arkts-and-c-failed) | Failed to obtain the native object or convert parameters. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="generatesecretsync"></a>
 ## generateSecretSync
 
 ```TypeScript

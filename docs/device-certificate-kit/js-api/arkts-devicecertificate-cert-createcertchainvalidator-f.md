@@ -6,7 +6,6 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="createcertchainvalidator"></a>
 ## createCertChainValidator
 
 ```TypeScript

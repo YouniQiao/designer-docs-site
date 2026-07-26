@@ -1,7 +1,6 @@
 # CmsGenerator
 
 Provides APIs for generating the messages in CMS format.
-
 > **NOTE**  
 >  
 > PKCS #7 is a standard syntax for storing signed or encrypted data. CMS is an extension of PKCS #7. PKCS #7  
@@ -20,7 +19,6 @@ Provides APIs for generating the messages in CMS format.
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="addcert"></a>
 ## addCert
 
 ```TypeScript
@@ -112,7 +110,6 @@ function testAddCert() {
 
 ```
 
-<a id="addrecipientinfo"></a>
 ## addRecipientInfo
 
 ```TypeScript
@@ -236,7 +233,6 @@ async function testAddRecipientInfo() {
 
 ```
 
-<a id="addsigner"></a>
 ## addSigner
 
 ```TypeScript
@@ -358,7 +354,6 @@ function testAddSigner() {
 
 ```
 
-<a id="dofinal"></a>
 ## doFinal
 
 ```TypeScript
@@ -497,7 +492,6 @@ async function testDoFinalByPromise() {
 
 ```
 
-<a id="dofinalsync"></a>
 ## doFinalSync
 
 ```TypeScript
@@ -633,7 +627,6 @@ function testDoFinalSync() {
 
 ```
 
-<a id="getencryptedcontentdata"></a>
 ## getEncryptedContentData
 
 ```TypeScript
@@ -764,7 +757,6 @@ async function testGetEncryptedContentData() {
 
 ```
 
-<a id="setrecipientencryptionalgorithm"></a>
 ## setRecipientEncryptionAlgorithm
 
 ```TypeScript

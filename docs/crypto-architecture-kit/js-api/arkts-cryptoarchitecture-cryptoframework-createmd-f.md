@@ -6,7 +6,6 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="createmd"></a>
 ## createMd
 
 ```TypeScript
@@ -15,7 +14,7 @@ function createMd(algName: string): Md
 
 Creates an **Md** instance for message digest operations.
 
-For details about the supported specifications, see [Supported Algorithms and Specifications](docroot://security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#supported-algorithms-and-specifications).
+For details about the supported specifications, see [Supported Algorithms and Specifications](../../../security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#supported-algorithms-and-specifications).
 
 **Since:** 9
 
@@ -35,7 +34,7 @@ For details about the supported specifications, see [Supported Algorithms and Sp
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| algName | string | Yes | Message digest algorithm to use. For details about the supported algorithms, see [Supported Algorithms and Specifications](docroot://security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#supported-algorithms-and-specifications). |
+| algName | string | Yes | Message digest algorithm to use. For details about the supported algorithms, see [Supported Algorithms and Specifications](../../../security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#supported-algorithms-and-specifications). |
 
 **Return value:**
 

@@ -351,7 +351,6 @@ COMMON_EVENT_PACKAGE_ADDED = 'usual.event.PACKAGE_ADDED'
 Indicates that a new application package has been installed on the device.
 
 When a new application is installed by a specified user on the device, the event notification service is triggered to publish this event.
-
 > **NOTE**  
 >  
 > Third-party applications can only listen for the installation event of themselves.
@@ -441,7 +440,6 @@ COMMON_EVENT_PACKAGE_CHANGED = 'usual.event.PACKAGE_CHANGED'
 Indicates that an application package has been changed (for example, an ability in the package has been enabled or disabled).
 
 When an application package installed on the device is updated or an ability in the package is enabled or disabled, the event notification service is triggered to publish this event.
-
 > **NOTE**  
 >  
 > Third-party applications can only listen for the change event of themselves.
@@ -461,7 +459,6 @@ COMMON_EVENT_PACKAGE_RESTARTED = 'usual.event.PACKAGE_RESTARTED'
 Indicates that the user has restarted the application package and killed all its processes.
 
 When the specified user restarts the application and kills all its processes, the event notification service is triggered to publish this event.
-
 > **NOTE**  
 >  
 > Third-party applications can only listen for the restart event of themselves.
@@ -481,7 +478,6 @@ COMMON_EVENT_PACKAGE_DATA_CLEARED = 'usual.event.PACKAGE_DATA_CLEARED'
 Indicates that the user has cleared the application package data.
 
 When the specified user clears the application package data on the device, the event notification service is triggered to publish this event.
-
 > **NOTE**  
 >  
 > Third-party applications can only listen for the data clearance event of themselves.
@@ -501,7 +497,6 @@ COMMON_EVENT_PACKAGE_CACHE_CLEARED = 'usual.event.PACKAGE_CACHE_CLEARED'
 Indicates that the user cleared the application package cache.
 
 When the cache of an application package installed on the device is cleared, the event notification service is triggered to publish this event.
-
 > **NOTE**  
 >  
 > Third-party applications can only listen for the cache clearance event of themselves.
@@ -790,7 +785,7 @@ Indicates that a user switchover is complete.
 
 When a system account is switched, the common event service is triggered to publish this event carrying the system account ID.
 
-The system API related to this common event is **activateOsAccount**. For details, see [@ohos.account.osAccount (System Account Management)](docroot://reference/js-apis-osAccount.md).
+The system API related to this common event is **activateOsAccount**. For details, see [@ohos.account.osAccount (System Account Management)](../../../reference/js-apis-osAccount.md).
 
 To subscribe to this common event, your application must have the ohos.permission.MANAGE_LOCAL_ACCOUNTS permission (before API version 21); ohos.permission.MANAGE_LOCAL_ACCOUNTS or ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission (since API version 21).
 
@@ -872,7 +867,7 @@ Indicates a successful login from a distributed account.
 
 When a distributed account is successfully logged in, the event notification service is triggered to publish this event carrying the OS account ID and the sub-profile ID.
 
-APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](../../../reference/js-apis-distributed-account.md).
 
 **Since:** 9
 
@@ -892,7 +887,7 @@ Indicates a successful logout from a distributed account.
 
 When a distributed account is successfully logged out, the event notification service is triggered to publish this event carrying the OS account ID and the sub-profile ID.
 
-APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](../../../reference/js-apis-distributed-account.md).
 
 **Since:** 9
 
@@ -912,7 +907,7 @@ Indicates that the token of a distributed account is invalid.
 
 When the token of a distributed account is invalid, the event notification service is triggered to publish this event carrying the OS account ID and the sub-profile ID.
 
-APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](../../../reference/js-apis-distributed-account.md).
 
 **Since:** 9
 
@@ -932,7 +927,7 @@ Indicates that a distributed account is deregistered.
 
 When a distributed account is deregistered, the event notification service is triggered to publish this event carrying the OS account ID and the sub-profile ID.
 
-APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountDistributedInfo** and **updateOsAccountDistributedInfo** (discarded),and **setOsAccountDistributedInfoByLocalId**. The first two are public APIs, and the last one is a system API.For details, see [@ohos.account.distributedAccount (Distributed Account Management)](../../../reference/js-apis-distributed-account.md).
 
 **Since:** 9
 
@@ -1209,9 +1204,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Substitutes:** [COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_CHANGE](arkts-basicservices-commoneventmanager-support-e.md#common_event_bluetooth_handsfree_ag_connect_state_change)
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1230,9 +1223,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CURRENT_DEVICE_UPDATE =
-        'usual.event.bluetooth.handsfree.ag.CURRENT_DEVICE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CURRENT_DEVICE_UPDATE =
-        'usual.event.bluetooth.handsfree.ag.CURRENT_DEVICE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CURRENT_DEVICE_UPDATE =        'usual.event.bluetooth.handsfree.ag.CURRENT_DEVICE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CURRENT_DEVICE_UPDATE =        'usual.event.bluetooth.handsfree.ag.CURRENT_DEVICE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1251,9 +1242,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_AUDIO_STATE_UPDATE =
-        'usual.event.bluetooth.handsfree.ag.AUDIO_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_AUDIO_STATE_UPDATE =
-        'usual.event.bluetooth.handsfree.ag.AUDIO_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_AUDIO_STATE_UPDATE =        'usual.event.bluetooth.handsfree.ag.AUDIO_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_AUDIO_STATE_UPDATE =        'usual.event.bluetooth.handsfree.ag.AUDIO_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1274,9 +1263,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Substitutes:** [COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_CHANGE](arkts-basicservices-commoneventmanager-support-e.md#common_event_bluetooth_a2dpsource_connect_state_change)
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.CONNECT_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.a2dpsource.CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.a2dpsource.CONNECT_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1295,9 +1282,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CURRENT_DEVICE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.CURRENT_DEVICE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CURRENT_DEVICE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.CURRENT_DEVICE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CURRENT_DEVICE_UPDATE =        'usual.event.bluetooth.a2dpsource.CURRENT_DEVICE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CURRENT_DEVICE_UPDATE =        'usual.event.bluetooth.a2dpsource.CURRENT_DEVICE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1316,9 +1301,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAYING_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.PLAYING_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAYING_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.PLAYING_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAYING_STATE_UPDATE =        'usual.event.bluetooth.a2dpsource.PLAYING_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAYING_STATE_UPDATE =        'usual.event.bluetooth.a2dpsource.PLAYING_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1339,9 +1322,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Substitutes:** [COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_CHANGE](arkts-basicservices-commoneventmanager-support-e.md#common_event_bluetooth_a2dpsource_avrcp_connect_state_change)
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1362,9 +1343,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Substitutes:** [COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_CHANGE](arkts-basicservices-commoneventmanager-support-e.md#common_event_bluetooth_a2dpsource_codec_value_change)
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.CODEC_VALUE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_UPDATE =
-        'usual.event.bluetooth.a2dpsource.CODEC_VALUE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_UPDATE =        'usual.event.bluetooth.a2dpsource.CODEC_VALUE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_UPDATE =        'usual.event.bluetooth.a2dpsource.CODEC_VALUE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1383,9 +1362,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_DISCOVERED =
-        'usual.event.bluetooth.remotedevice.DISCOVERED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_DISCOVERED =
-        'usual.event.bluetooth.remotedevice.DISCOVERED'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_DISCOVERED =        'usual.event.bluetooth.remotedevice.DISCOVERED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_DISCOVERED =        'usual.event.bluetooth.remotedevice.DISCOVERED'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1404,9 +1381,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CLASS_VALUE_UPDATE =
-        'usual.event.bluetooth.remotedevice.CLASS_VALUE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CLASS_VALUE_UPDATE =
-        'usual.event.bluetooth.remotedevice.CLASS_VALUE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CLASS_VALUE_UPDATE =        'usual.event.bluetooth.remotedevice.CLASS_VALUE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CLASS_VALUE_UPDATE =        'usual.event.bluetooth.remotedevice.CLASS_VALUE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1425,9 +1400,7 @@ COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_CONNECTED =
 
 **Substitutes:** [COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_STATE_CHANGE](arkts-basicservices-commoneventmanager-support-e.md#common_event_bluetooth_remotedevice_acl_state_change)
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_CONNECTED =
-        'usual.event.bluetooth.remotedevice.ACL_CONNECTED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_CONNECTED =
-        'usual.event.bluetooth.remotedevice.ACL_CONNECTED'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_CONNECTED =        'usual.event.bluetooth.remotedevice.ACL_CONNECTED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_CONNECTED =        'usual.event.bluetooth.remotedevice.ACL_CONNECTED'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1448,9 +1421,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Substitutes:** [COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_STATE_CHANGE](arkts-basicservices-commoneventmanager-support-e.md#common_event_bluetooth_remotedevice_acl_state_change)
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_DISCONNECTED =
-        'usual.event.bluetooth.remotedevice.ACL_DISCONNECTED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_DISCONNECTED =
-        'usual.event.bluetooth.remotedevice.ACL_DISCONNECTED'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_DISCONNECTED =        'usual.event.bluetooth.remotedevice.ACL_DISCONNECTED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_DISCONNECTED =        'usual.event.bluetooth.remotedevice.ACL_DISCONNECTED'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1469,9 +1440,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_NAME_UPDATE =
-        'usual.event.bluetooth.remotedevice.NAME_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_NAME_UPDATE =
-        'usual.event.bluetooth.remotedevice.NAME_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_NAME_UPDATE =        'usual.event.bluetooth.remotedevice.NAME_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_NAME_UPDATE =        'usual.event.bluetooth.remotedevice.NAME_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1492,9 +1461,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Substitutes:** [COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE_CHANGE](arkts-basicservices-commoneventmanager-support-e.md#common_event_bluetooth_remotedevice_pair_state_change)
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE =
-        'usual.event.bluetooth.remotedevice.PAIR_STATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE =
-        'usual.event.bluetooth.remotedevice.PAIR_STATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE =        'usual.event.bluetooth.remotedevice.PAIR_STATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE =        'usual.event.bluetooth.remotedevice.PAIR_STATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1513,9 +1480,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_BATTERY_VALUE_UPDATE =
-        'usual.event.bluetooth.remotedevice.BATTERY_VALUE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_BATTERY_VALUE_UPDATE =
-        'usual.event.bluetooth.remotedevice.BATTERY_VALUE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_BATTERY_VALUE_UPDATE =        'usual.event.bluetooth.remotedevice.BATTERY_VALUE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_BATTERY_VALUE_UPDATE =        'usual.event.bluetooth.remotedevice.BATTERY_VALUE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1532,9 +1497,7 @@ COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_SDP_RESULT =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_SDP_RESULT =
-        'usual.event.bluetooth.remotedevice.SDP_RESULT'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_SDP_RESULT =
-        'usual.event.bluetooth.remotedevice.SDP_RESULT'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_SDP_RESULT =        'usual.event.bluetooth.remotedevice.SDP_RESULT'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_SDP_RESULT =        'usual.event.bluetooth.remotedevice.SDP_RESULT'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1553,9 +1516,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_UUID_VALUE =
-        'usual.event.bluetooth.remotedevice.UUID_VALUE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_UUID_VALUE =
-        'usual.event.bluetooth.remotedevice.UUID_VALUE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_UUID_VALUE =        'usual.event.bluetooth.remotedevice.UUID_VALUE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_UUID_VALUE =        'usual.event.bluetooth.remotedevice.UUID_VALUE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1574,9 +1535,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_REQ =
-        'usual.event.bluetooth.remotedevice.PAIRING_REQ'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_REQ =
-        'usual.event.bluetooth.remotedevice.PAIRING_REQ'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_REQ =        'usual.event.bluetooth.remotedevice.PAIRING_REQ'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_REQ =        'usual.event.bluetooth.remotedevice.PAIRING_REQ'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1593,9 +1552,7 @@ COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_CANCEL =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_CANCEL =
-        'usual.event.bluetooth.remotedevice.PAIRING_CANCEL'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_CANCEL =
-        'usual.event.bluetooth.remotedevice.PAIRING_CANCEL'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_CANCEL =        'usual.event.bluetooth.remotedevice.PAIRING_CANCEL'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIRING_CANCEL =        'usual.event.bluetooth.remotedevice.PAIRING_CANCEL'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1612,9 +1569,7 @@ COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REQ =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REQ =
-        'usual.event.bluetooth.remotedevice.CONNECT_REQ'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REQ =
-        'usual.event.bluetooth.remotedevice.CONNECT_REQ'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REQ =        'usual.event.bluetooth.remotedevice.CONNECT_REQ'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REQ =        'usual.event.bluetooth.remotedevice.CONNECT_REQ'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1631,9 +1586,7 @@ COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REPLY =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REPLY =
-        'usual.event.bluetooth.remotedevice.CONNECT_REPLY'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REPLY =
-        'usual.event.bluetooth.remotedevice.CONNECT_REPLY'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REPLY =        'usual.event.bluetooth.remotedevice.CONNECT_REPLY'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_REPLY =        'usual.event.bluetooth.remotedevice.CONNECT_REPLY'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1650,9 +1603,7 @@ COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_CANCEL =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_CANCEL =
-        'usual.event.bluetooth.remotedevice.CONNECT_CANCEL'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_CANCEL =
-        'usual.event.bluetooth.remotedevice.CONNECT_CANCEL'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_CANCEL =        'usual.event.bluetooth.remotedevice.CONNECT_CANCEL'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_CONNECT_CANCEL =        'usual.event.bluetooth.remotedevice.CONNECT_CANCEL'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1669,9 +1620,7 @@ COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_CONNECT_STATE_UPDATE =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.handsfreeunit.CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.handsfreeunit.CONNECT_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.handsfreeunit.CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.handsfreeunit.CONNECT_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1688,9 +1637,7 @@ COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AUDIO_STATE_UPDATE =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AUDIO_STATE_UPDATE =
-        'usual.event.bluetooth.handsfreeunit.AUDIO_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AUDIO_STATE_UPDATE =
-        'usual.event.bluetooth.handsfreeunit.AUDIO_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AUDIO_STATE_UPDATE =        'usual.event.bluetooth.handsfreeunit.AUDIO_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AUDIO_STATE_UPDATE =        'usual.event.bluetooth.handsfreeunit.AUDIO_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1707,9 +1654,7 @@ COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_COMMON_EVENT =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_COMMON_EVENT =
-        'usual.event.bluetooth.handsfreeunit.AG_COMMON_EVENT'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_COMMON_EVENT =
-        'usual.event.bluetooth.handsfreeunit.AG_COMMON_EVENT'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_COMMON_EVENT =        'usual.event.bluetooth.handsfreeunit.AG_COMMON_EVENT'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_COMMON_EVENT =        'usual.event.bluetooth.handsfreeunit.AG_COMMON_EVENT'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1726,9 +1671,7 @@ COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_CALL_STATE_UPDATE =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_CALL_STATE_UPDATE =
-        'usual.event.bluetooth.handsfreeunit.AG_CALL_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_CALL_STATE_UPDATE =
-        'usual.event.bluetooth.handsfreeunit.AG_CALL_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_CALL_STATE_UPDATE =        'usual.event.bluetooth.handsfreeunit.AG_CALL_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREEUNIT_AG_CALL_STATE_UPDATE =        'usual.event.bluetooth.handsfreeunit.AG_CALL_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1745,9 +1688,7 @@ Indicates that the state of a Bluetooth adapter has been changed, for example, B
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_STATE_UPDATE =
-        'usual.event.bluetooth.host.STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_STATE_UPDATE =
-        'usual.event.bluetooth.host.STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_STATE_UPDATE =        'usual.event.bluetooth.host.STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_STATE_UPDATE =        'usual.event.bluetooth.host.STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1764,9 +1705,7 @@ COMMON_EVENT_BLUETOOTH_HOST_REQ_DISCOVERABLE =
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_REQ_DISCOVERABLE =
-        'usual.event.bluetooth.host.REQ_DISCOVERABLE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_REQ_DISCOVERABLE =
-        'usual.event.bluetooth.host.REQ_DISCOVERABLE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_REQ_DISCOVERABLE =        'usual.event.bluetooth.host.REQ_DISCOVERABLE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_REQ_DISCOVERABLE =        'usual.event.bluetooth.host.REQ_DISCOVERABLE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1803,9 +1742,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_REQ_DISABLE =
-        'usual.event.bluetooth.host.REQ_DISABLE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_REQ_DISABLE =
-        'usual.event.bluetooth.host.REQ_DISABLE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_REQ_DISABLE =        'usual.event.bluetooth.host.REQ_DISABLE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_REQ_DISABLE =        'usual.event.bluetooth.host.REQ_DISABLE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1824,9 +1761,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_UPDATE =
-        'usual.event.bluetooth.host.SCAN_MODE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_UPDATE =
-        'usual.event.bluetooth.host.SCAN_MODE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_UPDATE =        'usual.event.bluetooth.host.SCAN_MODE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_UPDATE =        'usual.event.bluetooth.host.SCAN_MODE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1845,9 +1780,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Since:** 23
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_CHANGE =
-        'usual.event.bluetooth.host.SCAN_MODE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_CHANGE =
-        'usual.event.bluetooth.host.SCAN_MODE_CHANGE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_CHANGE =        'usual.event.bluetooth.host.SCAN_MODE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_SCAN_MODE_CHANGE =        'usual.event.bluetooth.host.SCAN_MODE_CHANGE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1866,9 +1799,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_STARTED =
-        'usual.event.bluetooth.host.DISCOVERY_STARTED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_STARTED =
-        'usual.event.bluetooth.host.DISCOVERY_STARTED'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_STARTED =        'usual.event.bluetooth.host.DISCOVERY_STARTED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_STARTED =        'usual.event.bluetooth.host.DISCOVERY_STARTED'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1887,9 +1818,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_FINISHED =
-        'usual.event.bluetooth.host.DISCOVERY_FINISHED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_FINISHED =
-        'usual.event.bluetooth.host.DISCOVERY_FINISHED'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_FINISHED =        'usual.event.bluetooth.host.DISCOVERY_FINISHED'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_DISCOVERY_FINISHED =        'usual.event.bluetooth.host.DISCOVERY_FINISHED'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1908,9 +1837,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_NAME_UPDATE =
-        'usual.event.bluetooth.host.NAME_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_NAME_UPDATE =
-        'usual.event.bluetooth.host.NAME_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_NAME_UPDATE =        'usual.event.bluetooth.host.NAME_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HOST_NAME_UPDATE =        'usual.event.bluetooth.host.NAME_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1929,9 +1856,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsink.CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_CONNECT_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsink.CONNECT_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.a2dpsink.CONNECT_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_CONNECT_STATE_UPDATE =        'usual.event.bluetooth.a2dpsink.CONNECT_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1950,9 +1875,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_PLAYING_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsink.PLAYING_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_PLAYING_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsink.PLAYING_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_PLAYING_STATE_UPDATE =        'usual.event.bluetooth.a2dpsink.PLAYING_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_PLAYING_STATE_UPDATE =        'usual.event.bluetooth.a2dpsink.PLAYING_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -1971,9 +1894,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Deprecated since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_AUDIO_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsink.AUDIO_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_AUDIO_STATE_UPDATE =
-        'usual.event.bluetooth.a2dpsink.AUDIO_STATE_UPDATE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_AUDIO_STATE_UPDATE =        'usual.event.bluetooth.a2dpsink.AUDIO_STATE_UPDATE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSINK_AUDIO_STATE_UPDATE =        'usual.event.bluetooth.a2dpsink.AUDIO_STATE_UPDATE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -2115,7 +2036,7 @@ Indicates that a user has been added to the system.
 
 When a system account is created, the common event service is triggered to publish this event carrying the system account ID.
 
-The system APIs related to this common event are **createOsAccount** and **createOsAccountForDomain**. For details, see [@ohos.account.osAccount (System Account Management)](docroot://reference/js-apis-osAccount.md).
+The system APIs related to this common event are **createOsAccount** and **createOsAccountForDomain**. For details, see [@ohos.account.osAccount (System Account Management)](../../../reference/js-apis-osAccount.md).
 
 To subscribe to this common event, your application must have the ohos.permission.MANAGE_LOCAL_ACCOUNTS permission.(This permission is available only for system applications.)
 
@@ -2135,7 +2056,7 @@ Indicates that a user has been removed from the system.
 
 When a system account is removed, the common event service is triggered to publish this event carrying the system account ID.
 
-The system API related to this common event is **removeOsAccount**. For details, see [@ohos.account.osAccount (System Account Management)](docroot://reference/js-apis-osAccount.md).
+The system API related to this common event is **removeOsAccount**. For details, see [@ohos.account.osAccount (System Account Management)](../../../reference/js-apis-osAccount.md).
 
 To subscribe to this common event, your application must have the ohos.permission.MANAGE_LOCAL_ACCOUNTS permission.(This permission is available only for system applications.)
 
@@ -2762,7 +2683,6 @@ COMMON_EVENT_QUICK_FIX_APPLY_RESULT = 'usual.event.QUICK_FIX_APPLY_RESULT'
 Indicates the result of applying a quick fix to the application.
 
 When the specified user applies a quick fix to the application on the device, the event notification service is triggered to publish this event.
-
 > **NOTE**  
 >  
 > Third-party applications can only listen for the quick fix event of themselves.
@@ -2799,7 +2719,7 @@ Indicates that the user information has been updated.
 
 When the distributed account information, system account profile picture, or system account name is changed, the event notification service is triggered to publish this event carrying the system account ID.
 
-APIs related to this event: **setOsAccountName**, **setOsAccountProfilePhoto**, and **setOsAccountDistributedInfo**. The first two are system APIs, and the last is a public API. For details, see [@ohos.account.osAccount (System Account Management)](docroot://reference/js-apis-osAccount.md) and [@ohos.account.distributedAccount (Distributed Account Management)](docroot://reference/js-apis-distributed-account.md).
+APIs related to this event: **setOsAccountName**, **setOsAccountProfilePhoto**, and **setOsAccountDistributedInfo**. The first two are system APIs, and the last is a public API. For details, see [@ohos.account.osAccount (System Account Management)](../../../reference/js-apis-osAccount.md) and [@ohos.account.distributedAccount (Distributed Account Management)](../../../reference/js-apis-distributed-account.md).
 
 **Since:** 9
 
@@ -2936,7 +2856,6 @@ Indicates that the network connection state has changed.
 When the (Ethernet, Wi-Fi, or cellular) network connection state changes (disconnected, connecting, or connected), the event notification service is triggered to publish this event.
 
 The following table lists the enum values and their corresponding connection status.
-
 > **NOTE**  
 > The following table lists the enum values and their corresponding connection status  
 >  
@@ -2970,9 +2889,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_CHANGE =
-        'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_CHANGE =
-        'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_CHANGE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_CHANGE =        'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_HANDSFREE_AG_CONNECT_STATE_CHANGE =        'usual.event.bluetooth.handsfree.ag.CONNECT_STATE_CHANGE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -3045,9 +2962,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_CHANGE =
-        'usual.event.bluetooth.a2dpsource.CONNECT_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_CHANGE =
-        'usual.event.bluetooth.a2dpsource.CONNECT_STATE_CHANGE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_CHANGE =        'usual.event.bluetooth.a2dpsource.CONNECT_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CONNECT_STATE_CHANGE =        'usual.event.bluetooth.a2dpsource.CONNECT_STATE_CHANGE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -3066,9 +2981,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_CHANGE =
-        'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_CHANGE =
-        'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_CHANGE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_CHANGE =        'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_AVRCP_CONNECT_STATE_CHANGE =        'usual.event.bluetooth.a2dpsource.AVRCP_CONNECT_STATE_CHANGE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -3087,9 +3000,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_CHANGE =
-        'usual.event.bluetooth.a2dpsource.CODEC_VALUE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_CHANGE =
-        'usual.event.bluetooth.a2dpsource.CODEC_VALUE_CHANGE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_CHANGE =        'usual.event.bluetooth.a2dpsource.CODEC_VALUE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_CODEC_VALUE_CHANGE =        'usual.event.bluetooth.a2dpsource.CODEC_VALUE_CHANGE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -3110,9 +3021,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAY_STATE_CHANGE =
-        'usual.event.bluetooth.a2dpsource.PLAY_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAY_STATE_CHANGE =
-        'usual.event.bluetooth.a2dpsource.PLAY_STATE_CHANGE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAY_STATE_CHANGE =        'usual.event.bluetooth.a2dpsource.PLAY_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_A2DPSOURCE_PLAY_STATE_CHANGE =        'usual.event.bluetooth.a2dpsource.PLAY_STATE_CHANGE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -3133,9 +3042,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_SCO_CONNECT_STATE_CHANGE = 
-        'usual.event.bluetooth.SCO_CONNECT_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_SCO_CONNECT_STATE_CHANGE = 
-        'usual.event.bluetooth.SCO_CONNECT_STATE_CHANGE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_SCO_CONNECT_STATE_CHANGE =         'usual.event.bluetooth.SCO_CONNECT_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_SCO_CONNECT_STATE_CHANGE =         'usual.event.bluetooth.SCO_CONNECT_STATE_CHANGE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -3154,9 +3061,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_STATE_CHANGE = 
-        'usual.event.bluetooth.remotedevice.ACL_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_STATE_CHANGE = 
-        'usual.event.bluetooth.remotedevice.ACL_STATE_CHANGE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_STATE_CHANGE =         'usual.event.bluetooth.remotedevice.ACL_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_ACL_STATE_CHANGE =         'usual.event.bluetooth.remotedevice.ACL_STATE_CHANGE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 
@@ -3175,9 +3080,7 @@ To subscribe to this common event, your application must have the **ohos.permiss
 
 **Since:** 20
 
-<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE_CHANGE =
-        'usual.event.bluetooth.remotedevice.PAIR_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE_CHANGE =
-        'usual.event.bluetooth.remotedevice.PAIR_STATE_CHANGE'-End-->
+<!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE_CHANGE =        'usual.event.bluetooth.remotedevice.PAIR_STATE_CHANGE'--><!--Device-Support-COMMON_EVENT_BLUETOOTH_REMOTEDEVICE_PAIR_STATE_CHANGE =        'usual.event.bluetooth.remotedevice.PAIR_STATE_CHANGE'-End-->
 
 **System capability:** SystemCapability.Notification.CommonEvent
 

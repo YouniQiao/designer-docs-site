@@ -8,7 +8,6 @@ The WrappedBuilder object is also a template class.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

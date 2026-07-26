@@ -8,7 +8,6 @@ Define IMonitor interface
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="value"></a>
 ## value
 
 ```TypeScript

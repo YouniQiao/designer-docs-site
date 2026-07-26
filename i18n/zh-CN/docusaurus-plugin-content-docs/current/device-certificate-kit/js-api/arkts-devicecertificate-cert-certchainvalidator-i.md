@@ -14,7 +14,6 @@
 import { cert } from '@kit.DeviceCertificateKit';
 ```
 
-<a id="validate"></a>
 ## validate
 
 ```TypeScript
@@ -23,7 +22,7 @@ validate(certChain: CertChainData, callback: AsyncCallback<void>): void
 
 表示校验X509证书链。使用Callback异步回调。
 
-由于端侧系统时间不可信，证书链校验不包含对证书有效时间的校验。如果需要检查证书的时间有效性，可使用X509证书的[checkValidityWithDate](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate-1)方法进行检查。详见[证书规格](docroot://security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications)。
+由于端侧系统时间不可信，证书链校验不包含对证书有效时间的校验。如果需要检查证书的时间有效性，可使用X509证书的[checkValidityWithDate](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate)方法进行检查。详见[证书规格](../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications)。
 
 **起始版本：** 9
 
@@ -149,7 +148,6 @@ try {
 
 ```
 
-<a id="validate-1"></a>
 ## validate
 
 ```TypeScript
@@ -158,7 +156,7 @@ validate(certChain: CertChainData): Promise<void>
 
 表示校验X509证书链。使用Promise方式返回结果。
 
-由于端侧系统时间不可信，证书链校验不包含对证书有效时间的校验。如果需要检查证书的时间有效性，可使用X509证书的[checkValidityWithDate](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate-1)方法进行检查。详见[证书规格](docroot://security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications)。
+由于端侧系统时间不可信，证书链校验不包含对证书有效时间的校验。如果需要检查证书的时间有效性，可使用X509证书的[checkValidityWithDate](arkts-devicecertificate-cert-x509cert-i.md#checkvaliditywithdate)方法进行检查。详见[证书规格](../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications)。
 
 **起始版本：** 9
 
@@ -287,7 +285,6 @@ try {
 
 ```
 
-<a id="validatecert"></a>
 ## validateCert
 
 ```TypeScript

@@ -1,13 +1,12 @@
 # GcmParamsSpec
 
-Encapsulates the parameters for encryption or decryption using the GCM AEAD mode, which requires an IV, AAD, and an authentication tag. It is a child class of [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md) and used as a parameter in [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-1) for symmetric encryption or decryption.
+Encapsulates the parameters for encryption or decryption using the GCM AEAD mode, which requires an IV, AAD, and an authentication tag. It is a child class of [ParamsSpec](arkts-cryptoarchitecture-cryptoframework-paramsspec-i.md) and used as a parameter in [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init) for symmetric encryption or decryption.
 
 Applies to the GCM mode.
-
 > **NOTE**  
 >  
 > 1. Before passing a value to  
-> [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-1), specify  
+> [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init), specify  
 > **algName** for its parent class [ParamsSpec](#paramsspec).  
 > 2. If **aad** is not required or the **aad** length is 0, you can set its **data** attribute to an empty  
 > Uint8Array in the **aad: { data: new Uint8Array() }** format when constructing **GcmParamsSpec**.
@@ -56,7 +55,7 @@ authTag: DataBlob
 
 Authentication tag, which is of 16 bytes.
 
-When GCM mode is used for encryption, you need to extract the last 16 bytes from the [DataBlob](arkts-cryptoarchitecture-cryptoframework-datablob-i.md) returned by [doFinal()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#dofinal-1) or [doFinalSync()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#dofinalsync-1) and use them as **authTag** in **GcmParamsSpec** for [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init-1) or [initSync()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#initsync-1).
+When GCM mode is used for encryption, you need to extract the last 16 bytes from the [DataBlob](arkts-cryptoarchitecture-cryptoframework-datablob-i.md) returned by [doFinal()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#dofinal) or [doFinalSync()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#dofinalsync) and use them as **authTag** in **GcmParamsSpec** for [init()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#init) or [initSync()](arkts-cryptoarchitecture-cryptoframework-cipher-i.md#initsync).
 
 **Type:** DataBlob
 

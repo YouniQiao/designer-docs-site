@@ -1412,7 +1412,7 @@ Get object text menu controller.
 getUIInspector(): UIInspector
 ```
 
-get object UIInspector.
+获取UIInspector对象。
 
 **起始版本：** 10
 
@@ -1428,7 +1428,7 @@ get object UIInspector.
 
 | 类型 | 说明 |
 | --- | --- |
-| [UIInspector](arkts-arkui-arkui-uicontext-uiinspector-c.md) | **UIInspector** object. |
+| [UIInspector](arkts-arkui-arkui-uicontext-uiinspector-c.md) | 返回UIInspector实例对象。 |
 
 ## getUIObserver
 

@@ -6,7 +6,6 @@
 import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
-<a id="addprocessor"></a>
 ## addProcessor
 
 ```TypeScript
@@ -15,7 +14,7 @@ function addProcessor(processor: Processor): number
 
 Adds the configuration information of the data processor, such as name of the data processor.
 
-This is a synchronous API and involves time-consuming operations. To ensure performance, you are advised to use the asynchronous API [addProcessorFromConfig](arkts-performanceanalysis-hiappevent-addprocessorfromconfig-f.md#addprocessorfromconfig-1) or use a child thread.
+This is a synchronous API and involves time-consuming operations. To ensure performance, you are advised to use the asynchronous API [addProcessorFromConfig](arkts-performanceanalysis-hiappevent-addprocessorfromconfig-f.md#addprocessorfromconfig) or use a child thread.
 
 **Since:** 11
 

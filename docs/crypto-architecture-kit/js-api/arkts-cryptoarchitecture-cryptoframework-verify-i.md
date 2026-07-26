@@ -1,6 +1,6 @@
 # Verify
 
-Provides APIs for signature verification. Before using any API of the **Verify** class, you must create a **Verify** instance by using [createVerify(algName: string): Verify](arkts-cryptoarchitecture-cryptoframework-createverify-f.md#createverify-1). Invoke **init()**, **update()**, and **verify()** in this class in sequence to complete the signature verification. For details about the sample code, see [Signing and Signature Verification with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md).
+Provides APIs for signature verification. Before using any API of the **Verify** class, you must create a **Verify** instance by using [createVerify(algName: string): Verify](arkts-cryptoarchitecture-cryptoframework-createverify-f.md#createverify). Invoke **init()**, **update()**, and **verify()** in this class in sequence to complete the signature verification. For details about the sample code, see [Signing and Signature Verification with an RSA Key Pair (PKCS1 Mode)](../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md).
 
 The **Verify** class does not support repeated initialization. When a new key is used for signature verification,you must create a new **Verify** instance and call **init()** for initialization.
 
@@ -26,7 +26,6 @@ If the DSA algorithm is used for signature verification and the digest algorithm
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="getverifyspec"></a>
 ## getVerifySpec
 
 ```TypeScript
@@ -81,7 +80,6 @@ function testGetVerifySpec() {
 
 ```
 
-<a id="init"></a>
 ## init
 
 ```TypeScript
@@ -117,7 +115,6 @@ Initializes the **Verify** object using a public key. This API uses an asynchron
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Incorrect key type.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="init-1"></a>
 ## init
 
 ```TypeScript
@@ -158,7 +155,6 @@ Initializes the **Verify** object using a public key. This API uses a promise to
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Incorrect key type.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="initsync"></a>
 ## initSync
 
 ```TypeScript
@@ -193,7 +189,6 @@ Initializes the **Verify** instance with a public key. This API returns the resu
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Incorrect key type.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="recover"></a>
 ## recover
 
 ```TypeScript
@@ -201,7 +196,6 @@ recover(signatureData: DataBlob): Promise<DataBlob | null>
 ```
 
 Recovers the original data from a signature. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - Currently, only RSA is supported.
@@ -315,7 +309,6 @@ async function recoverByPromise() {
 
 ```
 
-<a id="recoversync"></a>
 ## recoverSync
 
 ```TypeScript
@@ -323,7 +316,6 @@ recoverSync(signatureData: DataBlob): DataBlob | null
 ```
 
 Recovers the original data from a signature. This API returns the result synchronously.
-
 > **NOTE**  
 >  
 > - Currently, only RSA is supported.
@@ -360,14 +352,13 @@ Recovers the original data from a signature. This API returns the result synchro
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="setverifyspec"></a>
 ## setVerifySpec
 
 ```TypeScript
 setVerifySpec(itemType: SignSpecItem, itemValue: number): void
 ```
 
-Sets signature verification specifications. You can use this API to set signature verification parameters that cannot be set by [createVerify](arkts-cryptoarchitecture-cryptoframework-createverify-f.md#createverify-1).
+Sets signature verification specifications. You can use this API to set signature verification parameters that cannot be set by [createVerify](arkts-cryptoarchitecture-cryptoframework-createverify-f.md#createverify).
 
 Currently, only RSA and SM2 are supported. Since API version 11, SM2 signature verification parameters can be set.
 
@@ -413,7 +404,6 @@ function testSetVerifySpec() {
 
 ```
 
-<a id="setverifyspec-1"></a>
 ## setVerifySpec
 
 ```TypeScript
@@ -455,7 +445,6 @@ The parameters for signature verification must be the same as those for signing.
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
-<a id="setverifyspec-2"></a>
 ## setVerifySpec
 
 ```TypeScript
@@ -508,7 +497,6 @@ function testSetVerifySpec() {
 
 ```
 
-<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -517,13 +505,12 @@ update(data: DataBlob, callback: AsyncCallback<void>): void
 
 Updates the data for signature verification. This API uses an asynchronous callback to return the result.
 
-This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md) instance is initialized using [init](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init-1) or [initSync](arkts-cryptoarchitecture-cryptoframework-verify-i.md#initsync-1).
-
+This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md) instance is initialized using [init](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init) or [initSync](arkts-cryptoarchitecture-cryptoframework-verify-i.md#initsync).
 > **NOTE**  
 >  
 > You can call **update** multiple times or do not use **update** (call  
-> [verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verify-1)  
-> after [init](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init-1)), depending on  
+> [verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verify)  
+> after [init](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init)), depending on  
 > the data volume.  
 >  
 > The amount of the data to be passed in by **update()** (one-time or accumulative) is not limited. If there is a  
@@ -531,7 +518,7 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 > prevents too much memory from being requested at a time.  
 >  
 > For details about the sample code for calling **update()** multiple times in signature verification, see  
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
+> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
 > . The operations of other algorithms are similar.  
 >  
 > **OnlyVerify** cannot be used with **update()**. If **OnlyVerify** is specified, use **verify()** to pass in  
@@ -567,7 +554,6 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -576,25 +562,20 @@ update(data: DataBlob): Promise<void>
 
 Updates the data for signature verification. This API uses a promise to return the result.
 
-This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md) instance is initialized using [init()](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init-1).
-
+This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md) instance is initialized using [init()](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init).
 > **NOTE**  
 >  
 > You can call **update** multiple times or do not use **update** (call  
-> [verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verify-1) after  
-> [init](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init-1)), depending on the data volume.
-
+> [verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verify) after  
+> [init](arkts-cryptoarchitecture-cryptoframework-verify-i.md#init)), depending on the data volume.
 > The amount of the data to be passed in by **update()** (one-time or accumulative) is not limited. If there is a  
 > large amount of data, you are advised to call **update()** multiple times to pass in the data by segment. This  
 > prevents too much memory from being requested at a time.
-
 > For details about the sample code for calling **update()** multiple times in signature verification, see  
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
+> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
 > . The operations of other algorithms are similar.
-
 > **OnlyVerify** cannot be used with **update()**. If **OnlyVerify** is specified, use **verify()** to pass in  
 > data.
-
 > If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **update()** is  
 > not supported. If **update()** is called in this case, **ERR_CRYPTO_OPERATION** will be returned.
 
@@ -630,7 +611,6 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
@@ -639,25 +619,20 @@ updateSync(data: DataBlob): void
 
 Updates the data for signature verification. This API returns the result synchronously.
 
-This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md) instance is initialized by using [initSync()](arkts-cryptoarchitecture-cryptoframework-verify-i.md#initsync-1).
-
+This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptoframework-verify-i.md) instance is initialized by using [initSync()](arkts-cryptoarchitecture-cryptoframework-verify-i.md#initsync).
 > **NOTE**  
 >  
 > You can call **updateSync** multiple times or do not use **updateSync** (call  
-> [verifySync](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verifysync-1) after [initSync](arkts-cryptoarchitecture-cryptoframework-verify-i.md#initsync-1)),  
+> [verifySync](arkts-cryptoarchitecture-cryptoframework-verify-i.md#verifysync) after [initSync](arkts-cryptoarchitecture-cryptoframework-verify-i.md#initsync)),  
 > depending on the data volume.
-
 > The amount of the data to be passed in by **updateSync** (one-time or accumulative) is not limited. If there is  
 > a large amount of data, you are advised to call **updateSync** multiple times to pass in the data by segment.  
 > This prevents too much memory from being requested at a time.
-
 > For details about the sample code for calling **updateSync** multiple times in signature verification, see  
-> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](docroot://security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
+> [Signing and Signature Verification by Segment with an RSA Key Pair (PKCS1 Mode)](../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1-by-segment.md)  
 > . The operations of other algorithms are similar.
-
 > **OnlyVerify** cannot be used with **updateSync()**. If **OnlyVerify** is specified, use **verifySync()** to pass  
 > in data.
-
 > If the DSA algorithm is used for signature verification and the digest algorithm is **NoHash**, **updateSync**  
 > is not supported. If **updateSync** is called in this case, **ERR_CRYPTO_OPERATION** will be returned.
 
@@ -687,7 +662,6 @@ This API can be called only after the [Verify](arkts-cryptoarchitecture-cryptofr
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620004](../errorcode-crypto-framework.md#17620004-invalid-function-call) | Invalid function call.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="verify"></a>
 ## verify
 
 ```TypeScript
@@ -724,7 +698,6 @@ Verifies the message, including the update data. This API uses an asynchronous c
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="verify-1"></a>
 ## verify
 
 ```TypeScript
@@ -761,7 +734,6 @@ Verifies the signature of the data. This API uses an asynchronous callback to re
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="verify-2"></a>
 ## verify
 
 ```TypeScript
@@ -803,7 +775,6 @@ Verifies the message, including the update data. This API uses a promise to retu
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="verify-3"></a>
 ## verify
 
 ```TypeScript
@@ -845,7 +816,6 @@ Verifies the signature of the data. This API uses a promise to return the result
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="verifysync"></a>
 ## verifySync
 
 ```TypeScript

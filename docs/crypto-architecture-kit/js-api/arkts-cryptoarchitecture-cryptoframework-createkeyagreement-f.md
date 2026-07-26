@@ -6,7 +6,6 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="createkeyagreement"></a>
 ## createKeyAgreement
 
 ```TypeScript
@@ -29,7 +28,7 @@ Creates a **KeyAgreement** instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| algName | string | Yes | Key agreement algorithm to use. In addition to ECDH, X25519 and DH are supported since API version 11.<br>For details about the supported specifications, see [Key Agreement Overview and Algorithm Specifications](docroot://security/CryptoArchitectureKit/crypto-key-agreement-overview.md). |
+| algName | string | Yes | Key agreement algorithm to use. In addition to ECDH, X25519 and DH are supported since API version 11.<br>For details about the supported specifications, see [Key Agreement Overview and Algorithm Specifications](../../../security/CryptoArchitectureKit/crypto-key-agreement-overview.md). |
 
 **Return value:**
 

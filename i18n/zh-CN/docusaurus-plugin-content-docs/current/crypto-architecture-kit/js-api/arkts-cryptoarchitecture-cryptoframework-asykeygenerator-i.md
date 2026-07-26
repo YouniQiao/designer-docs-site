@@ -1,6 +1,6 @@
 # AsyKeyGenerator
 
-非对称密钥生成器。在使用该类的方法前，需要先使用[createAsyKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createasykeygenerator-f.md#createasykeygenerator-1)方法构建一个AsyKeyGenerator实例。
+非对称密钥生成器。在使用该类的方法前，需要先使用[createAsyKeyGenerator](arkts-cryptoarchitecture-cryptoframework-createasykeygenerator-f.md#createasykeygenerator)方法构建一个AsyKeyGenerator实例。
 
 **起始版本：** 9
 
@@ -16,7 +16,6 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="convertkey"></a>
 ## convertKey
 
 ```TypeScript
@@ -52,7 +51,6 @@ convertKey(pubKey: DataBlob, priKey: DataBlob, callback: AsyncCallback<KeyPair>)
 | [17630001](../errorcode-crypto-framework.md#17630001-密码操作错误) | 密码操作错误。 |
 | [17620003](../errorcode-crypto-framework.md#17620003-参数检查失败) | 参数检查失败。<br>**适用版本：** 26.0.0+ |
 
-<a id="convertkey-1"></a>
 ## convertKey
 
 ```TypeScript
@@ -114,7 +112,6 @@ asyKeyGenerator.convertKey(pubKeyBlob, priKeyBlob, (err, keyPair) => {
 
 ```
 
-<a id="convertkey-2"></a>
 ## convertKey
 
 ```TypeScript
@@ -155,7 +152,6 @@ convertKey(pubKey: DataBlob, priKey: DataBlob): Promise<KeyPair>
 | [17630001](../errorcode-crypto-framework.md#17630001-密码操作错误) | 密码操作错误。 |
 | [17620003](../errorcode-crypto-framework.md#17620003-参数检查失败) | 参数检查失败。<br>**适用版本：** 26.0.0+ |
 
-<a id="convertkey-3"></a>
 ## convertKey
 
 ```TypeScript
@@ -222,7 +218,6 @@ keyGenPromise.then(keyPair => {
 
 ```
 
-<a id="convertkeysync"></a>
 ## convertKeySync
 
 ```TypeScript
@@ -292,7 +287,6 @@ try {
 
 ```
 
-<a id="convertpemkey"></a>
 ## convertPemKey
 
 ```TypeScript
@@ -300,7 +294,6 @@ convertPemKey(pubKey: string | null, priKey: string | null): Promise<KeyPair>
 ```
 
 获取指定数据生成非对称密钥。使用Promise异步回调。
-
 > **说明：**  
 >  
 > 1. 使用convertPemKey()将外部字符串转换为Crypto框架定义的非对称密钥对象时，公钥需满足ASN.1语法、X.509规范和PEM编码格式，私钥需  
@@ -381,7 +374,6 @@ async function TestConvertPemKeyByPromise() {
 
 ```
 
-<a id="convertpemkey-1"></a>
 ## convertPemKey
 
 ```TypeScript
@@ -389,7 +381,6 @@ convertPemKey(pubKey: string | null, priKey: string | null, password: string): P
 ```
 
 获取指定数据生成非对称密钥。支持加密的私钥，同步传入私钥口令解密私钥。使用Promise异步回调。
-
 > **说明：**  
 >  
 > 1. 使用convertPemKey()将外部字符串转换为Crypto框架定义的非对称密钥对象时，公钥需满足ASN.1语法、X.509规范和PEM编码格式，私钥需  
@@ -467,7 +458,6 @@ async function TestConvertPemKeyByPromise() {
 
 ```
 
-<a id="convertpemkeysync"></a>
 ## convertPemKeySync
 
 ```TypeScript
@@ -475,10 +465,9 @@ convertPemKeySync(pubKey: string | null, priKey: string | null): KeyPair
 ```
 
 同步获取指定数据，生成非对称密钥。
-
 > **说明：**  
 > convertPemKeySync接口与convertPemKey接口注意事项相同，见  
-> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey-1)  
+> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey)  
 > 接口说明。
 
 <br><br>**说明：**<br>建议优先使用异步API{@link convertPemKey}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。因此建议在子线程中调用同步API，以避免阻塞主线程。
@@ -557,7 +546,6 @@ function TestConvertPemKeyBySync() {
 
 ```
 
-<a id="convertpemkeysync-1"></a>
 ## convertPemKeySync
 
 ```TypeScript
@@ -565,10 +553,9 @@ convertPemKeySync(pubKey: string | null, priKey: string | null, password: string
 ```
 
 获取指定数据生成非对称密钥。支持加密的私钥，同步传入私钥口令解密私钥。使用同步方法。
-
 > **说明：**  
 > convertPemKeySync接口与convertPemKey接口注意事项相同，见  
-> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey-1)  
+> [convertPemKey](arkts-cryptoarchitecture-cryptoframework-asykeygenerator-i.md#convertpemkey)  
 > 接口说明。
 
 <br><br>**说明：**<br>建议优先使用异步API{@link convertPemKey}。同步API可能因系统繁忙、高负载等原因耗时较长而阻塞主线程。因此建议在子线程中调用同步API，以避免阻塞主线程。
@@ -643,7 +630,6 @@ function TestConvertPemKeyBySync() {
 
 ```
 
-<a id="generatekeypair"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -692,7 +678,6 @@ asyKeyGenerator.generateKeyPair((err, keyPair) => {
 
 ```
 
-<a id="generatekeypair-1"></a>
 ## generateKeyPair
 
 ```TypeScript
@@ -741,7 +726,6 @@ keyGenPromise.then(keyPair => {
 
 ```
 
-<a id="generatekeypairsync"></a>
 ## generateKeyPairSync
 
 ```TypeScript
