@@ -6,7 +6,6 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="generatedlpfile"></a>
 ## generateDLPFile
 
 ```TypeScript
@@ -96,7 +95,6 @@ ExampleFunction();
 ```
 
 
-<a id="generatedlpfile-1"></a>
 ## generateDLPFile
 
 ```TypeScript

@@ -6,7 +6,6 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
-<a id="revokepermission"></a>
 ## revokePermission
 
 ```TypeScript
@@ -50,7 +49,6 @@ Revoke all persistence permissions for the application.
 | 13900020 | Invalid tokenID |
 
 
-<a id="revokepermission-1"></a>
 ## revokePermission
 
 ```TypeScript

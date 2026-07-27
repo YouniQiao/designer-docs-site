@@ -16,7 +16,6 @@
 import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
-<a id="convertpoint"></a>
 ## convertPoint
 
 ```TypeScript
@@ -24,7 +23,6 @@ static convertPoint(curveName: string, encodedPoint: Uint8Array): Point
 ```
 
 根据椭圆曲线的曲线名，即相应的NID（Name Identifier），将指定的点数据转换为Point对象。当前支持压缩/非压缩格式的点数据。
-
 > **说明：**  
 >  
 > 根据RFC5480规范中第2.2节的描述：  
@@ -75,14 +73,13 @@ console.info('returnPoint: ' + returnPoint.x.toString(16));
 
 ```
 
-<a id="genecccommonparamsspec"></a>
 ## genECCCommonParamsSpec
 
 ```TypeScript
 static genECCCommonParamsSpec(curveName: string): ECCCommonParamsSpec
 ```
 
-根据椭圆曲线相应的NID（Name Identifier）字符串名称生成相应的非对称公共密钥参数。详见[ECC密钥生成规格](docroot://security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#ecc)和[SM2密钥生成规格](docroot://security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#sm2)。
+根据椭圆曲线相应的NID（Name Identifier）字符串名称生成相应的非对称公共密钥参数。详见[ECC密钥生成规格](../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#ecc)和[SM2密钥生成规格](../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#sm2)。
 
 **起始版本：** 11
 
@@ -129,7 +126,6 @@ try {
 
 ```
 
-<a id="getencodedpoint"></a>
 ## getEncodedPoint
 
 ```TypeScript

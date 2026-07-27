@@ -199,7 +199,7 @@ startAbility(want: Want, callback: AsyncCallback<void>): void
 | [16000012](../errorcode-ability.md#16000012-应用被管控) | The application is controlled. |
 | [16000013](../errorcode-ability.md#16000013-应用被edm管控) | The application is controlled by EDM. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
-| [16000053](../errorcode-ability.md#16000053-非顶层应用) | The ability is not on the top of the UI. |
+| [16000053](../errorcode-ability.md#16000053-非顶层ability) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-免安装超时) | Installation-free timed out. |
 | [16000061](../errorcode-ability.md#16000061-不支持的操作) | Operation not supported. |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | The caller has been released. |
@@ -291,7 +291,7 @@ startAbility(want: Want): Promise<void>
 | [16000012](../errorcode-ability.md#16000012-应用被管控) | The application is controlled. |
 | [16000013](../errorcode-ability.md#16000013-应用被edm管控) | The application is controlled by EDM. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
-| [16000053](../errorcode-ability.md#16000053-非顶层应用) | The ability is not on the top of the UI. |
+| [16000053](../errorcode-ability.md#16000053-非顶层ability) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-免安装超时) | Installation-free timed out. |
 | [16000061](../errorcode-ability.md#16000061-不支持的操作) | Operation not supported. |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | The caller has been released. |

@@ -4,6 +4,8 @@ AutoFillType enumerates the types of elements to be automatically filled in.
 
 **Since:** 26.0.0
 
+<!--Device-unnamed-export enum AutoFillType--><!--Device-unnamed-export enum AutoFillType-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -21,6 +23,8 @@ Undefined type.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-AutoFillType-UNSPECIFIED = 0--><!--Device-AutoFillType-UNSPECIFIED = 0-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -40,6 +44,8 @@ Password.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-AutoFillType-PASSWORD = 1--><!--Device-AutoFillType-PASSWORD = 1-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -57,6 +63,8 @@ Username.
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+<!--Device-AutoFillType-USER_NAME = 2--><!--Device-AutoFillType-USER_NAME = 2-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -76,6 +84,8 @@ New password.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
+<!--Device-AutoFillType-NEW_PASSWORD = 3--><!--Device-AutoFillType-NEW_PASSWORD = 3-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -91,6 +101,8 @@ Detailed address with street information.
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-FULL_STREET_ADDRESS = 4--><!--Device-AutoFillType-FULL_STREET_ADDRESS = 4-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -108,6 +120,8 @@ House number.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-HOUSE_NUMBER = 5--><!--Device-AutoFillType-HOUSE_NUMBER = 5-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -123,6 +137,8 @@ District.
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-DISTRICT_ADDRESS = 6--><!--Device-AutoFillType-DISTRICT_ADDRESS = 6-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -140,6 +156,8 @@ City.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-CITY_ADDRESS = 7--><!--Device-AutoFillType-CITY_ADDRESS = 7-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -155,6 +173,8 @@ Province.
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-PROVINCE_ADDRESS = 8--><!--Device-AutoFillType-PROVINCE_ADDRESS = 8-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -172,6 +192,8 @@ Country/Region.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-COUNTRY_ADDRESS = 9--><!--Device-AutoFillType-COUNTRY_ADDRESS = 9-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -187,6 +209,8 @@ Full name.
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-PERSON_FULL_NAME = 10--><!--Device-AutoFillType-PERSON_FULL_NAME = 10-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -204,6 +228,8 @@ Last name.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-PERSON_LAST_NAME = 11--><!--Device-AutoFillType-PERSON_LAST_NAME = 11-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -219,6 +245,8 @@ First name.
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-PERSON_FIRST_NAME = 12--><!--Device-AutoFillType-PERSON_FIRST_NAME = 12-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -236,6 +264,8 @@ Mobile number.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-PHONE_NUMBER = 13--><!--Device-AutoFillType-PHONE_NUMBER = 13-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -251,6 +281,8 @@ Country/Region code.
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-PHONE_COUNTRY_CODE = 14--><!--Device-AutoFillType-PHONE_COUNTRY_CODE = 14-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -268,6 +300,8 @@ Mobile number with the country/region code.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-FULL_PHONE_NUMBER = 15--><!--Device-AutoFillType-FULL_PHONE_NUMBER = 15-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -283,6 +317,8 @@ Email address.
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-EMAIL_ADDRESS = 16--><!--Device-AutoFillType-EMAIL_ADDRESS = 16-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -300,6 +336,8 @@ Bank card number.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-BANK_CARD_NUMBER = 17--><!--Device-AutoFillType-BANK_CARD_NUMBER = 17-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -315,6 +353,8 @@ ID card number.
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-ID_CARD_NUMBER = 18--><!--Device-AutoFillType-ID_CARD_NUMBER = 18-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -332,6 +372,8 @@ Nickname.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-NICKNAME = 24--><!--Device-AutoFillType-NICKNAME = 24-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -347,6 +389,8 @@ Detailed address without street information.
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-DETAIL_INFO_WITHOUT_STREET = 25--><!--Device-AutoFillType-DETAIL_INFO_WITHOUT_STREET = 25-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -364,6 +408,8 @@ Standard address.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-FORMAT_ADDRESS = 26--><!--Device-AutoFillType-FORMAT_ADDRESS = 26-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -379,6 +425,8 @@ Passport number.
 **Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-PASSPORT_NUMBER = 27--><!--Device-AutoFillType-PASSPORT_NUMBER = 27-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -396,6 +444,8 @@ Validity period of the passport.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-VALIDITY = 28--><!--Device-AutoFillType-VALIDITY = 28-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -411,6 +461,8 @@ Location where the passport was issued.
 **Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-ISSUE_AT = 29--><!--Device-AutoFillType-ISSUE_AT = 29-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -428,6 +480,8 @@ Invoice title.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-ORGANIZATION = 30--><!--Device-AutoFillType-ORGANIZATION = 30-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -443,6 +497,8 @@ Tax ID.
 **Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-TAX_ID = 31--><!--Device-AutoFillType-TAX_ID = 31-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -460,6 +516,8 @@ Location (city and state).
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-ADDRESS_CITY_AND_STATE = 32--><!--Device-AutoFillType-ADDRESS_CITY_AND_STATE = 32-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -475,6 +533,8 @@ Flight number.
 **Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-FLIGHT_NUMBER = 33--><!--Device-AutoFillType-FLIGHT_NUMBER = 33-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -492,6 +552,8 @@ Driver's license number.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-LICENSE_NUMBER = 34--><!--Device-AutoFillType-LICENSE_NUMBER = 34-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -507,6 +569,8 @@ Driver's license file number.
 **Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-LICENSE_FILE_NUMBER = 35--><!--Device-AutoFillType-LICENSE_FILE_NUMBER = 35-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -524,6 +588,8 @@ License plate.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-LICENSE_PLATE = 36--><!--Device-AutoFillType-LICENSE_PLATE = 36-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -540,6 +606,8 @@ Vehicle engine number.
 
 **Model restriction:** This API can be used only in the stage model.
 
+<!--Device-AutoFillType-ENGINE_NUMBER = 37--><!--Device-AutoFillType-ENGINE_NUMBER = 37-End-->
+
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 **System API:** This is a system API.
@@ -555,6 +623,8 @@ Chassis number (VIN) of a vehicle.
 **Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AutoFillType-LICENSE_CHASSIS_NUMBER = 38--><!--Device-AutoFillType-LICENSE_CHASSIS_NUMBER = 38-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 

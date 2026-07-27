@@ -40,7 +40,7 @@ divider?: Optional<DividerOptions> | null
 
 Sets the divider of select.
 
-**Type:** Optional<DividerOptions> | null
+**Type:** Optional&lt;DividerOptions&gt; \| null
 
 **Since:** 18
 
@@ -148,7 +148,7 @@ menuItemContentModifier?: ContentModifier<MenuItemConfiguration>
 
 Register a ContentModifier for each menu item.
 
-**Type:** ContentModifier<MenuItemConfiguration>
+**Type:** ContentModifier&lt;MenuItemConfiguration&gt;
 
 **Since:** 18
 
@@ -256,7 +256,7 @@ optionWidth?: Dimension | OptionWidthMode
 
 Set the width of each option and set whether the option width fit the trigger.
 
-**Type:** Dimension | OptionWidthMode
+**Type:** Dimension \| OptionWidthMode
 
 **Since:** 18
 
@@ -274,7 +274,7 @@ options?: Array<SelectOption>
 
 SubOption array of the select.
 
-**Type:** Array<SelectOption>
+**Type:** Array&lt;SelectOption&gt;
 
 **Since:** 18
 

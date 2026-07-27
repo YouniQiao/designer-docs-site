@@ -36,7 +36,7 @@ function showDialog(options: ShowDialogOptions, callback: AsyncCallback<ShowDial
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | options | [ShowDialogOptions](arkts-arkui-promptaction-showdialogoptions-i.md) | 是 | 页面显示对话框信息描述。 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ShowDialogSuccessResponse&gt; | 是 | 回调函数。弹出对话框成功，err为undefined，data为获取到的对话框响应结果，否则为错误对象。 |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ShowDialogSuccessResponse&gt; | 是 | 回调函数。弹出对话框成功时，err为undefined，data为获取到的对话框响应结果；失败时，err为错误对象。 |
 
 **错误码：**
 

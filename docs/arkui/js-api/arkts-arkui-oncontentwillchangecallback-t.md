@@ -18,12 +18,12 @@ Callback for OnContentWillChange
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| currentIndex | number | Yes | the index value of the current tab. |
-| comingIndex | number | Yes | the index value of the tab that will change. |
+| currentIndex | number | Yes | the index value of the current tab.  |
+| comingIndex | number | Yes | the index value of the tab that will change.  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | @syscap SystemCapability.ArkUI.ArkUI.Full@atomicservice |
+| boolean | @syscap SystemCapability.ArkUI.ArkUI.Full @atomicservice  |
 

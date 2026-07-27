@@ -6,7 +6,6 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="setretentionstate"></a>
 ## setRetentionState
 
 ```TypeScript
@@ -59,7 +58,6 @@ dlpPermission.isInSandbox().then(async (inSandbox) => {
 ```
 
 
-<a id="setretentionstate-1"></a>
 ## setRetentionState
 
 ```TypeScript

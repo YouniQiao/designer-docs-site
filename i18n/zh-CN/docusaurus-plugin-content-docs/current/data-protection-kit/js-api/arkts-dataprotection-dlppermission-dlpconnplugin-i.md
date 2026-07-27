@@ -1,11 +1,10 @@
 # DlpConnPlugin
 
 被用于registerPlugin接口中，将回调能力注册到SA（System Ability）中。
-
 > **说明：**  
 >  
-> [registerPlugin](arkts-dataprotection-dlppermission-dlpconnmanager-c.md#registerplugin-1)接口的参数需要继承该接口，  
-> [connectServer](arkts-dataprotection-dlppermission-dlpconnplugin-i.md#connectserver-1)由SA（System Ability）侧调用，通过callback进行回传参数。
+> [registerPlugin](arkts-dataprotection-dlppermission-dlpconnmanager-c.md#registerplugin)接口的参数需要继承该接口，  
+> [connectServer](arkts-dataprotection-dlppermission-dlpconnplugin-i.md#connectserver)由SA（System Ability）侧调用，通过callback进行回传参数。
 
 **起始版本：** 21
 
@@ -19,7 +18,6 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="connectserver"></a>
 ## connectServer
 
 ```TypeScript
@@ -29,7 +27,6 @@ connectServer(requestId: string, requestData: string, callback: Callback<string>
 该函数提供给SA（System Ability）侧调用，处理完连接云端服务的请求后，通过callback将结果返回给SA（System Ability）。
 
 该接口可用于企业账号认证、云端权限验证等场景，实现SA与云服务器的通信能力，完成权限校验或账号验证流程。
-
 > **说明：**  
 >  
 > connectServer接口代表系统能力侧向前端通信的一次调用。

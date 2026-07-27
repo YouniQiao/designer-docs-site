@@ -1,6 +1,6 @@
 # DLPFile（系统接口）
 
-管理DLPFile的实例，表示一个DLP文件对象，需要通过[generateDLPFile](arkts-dataprotection-dlppermission-generatedlpfile-f-sys.md#generatedlpfile-1)/[openDLPFile](arkts-dataprotection-dlppermission-opendlpfile-f-sys.md#opendlpfile-1)获取DLPFile的实例。DLPFile对象代表一个已打开的DLP文件句柄，封装了对DLP文件的所有操作接口。对象在使用完毕后必须调用[closeDLPFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#closedlpfile-1)方法释放资源，避免文件句柄泄漏。DLPFile对象在跨进程传递时，需要进行授权。
+管理DLPFile的实例，表示一个DLP文件对象，需要通过[generateDLPFile](arkts-dataprotection-dlppermission-generatedlpfile-f-sys.md#generatedlpfile)/[openDLPFile](arkts-dataprotection-dlppermission-opendlpfile-f-sys.md#opendlpfile)获取DLPFile的实例。DLPFile对象代表一个已打开的DLP文件句柄，封装了对DLP文件的所有操作接口。对象在使用完毕后必须调用[closeDLPFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#closedlpfile)方法释放资源，避免文件句柄泄漏。DLPFile对象在跨进程传递时，需要进行授权。
 
 **起始版本：** 10
 
@@ -16,7 +16,6 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="adddlplinkfile"></a>
 ## addDLPLinkFile
 
 ```TypeScript
@@ -25,7 +24,7 @@ addDLPLinkFile(linkFileName: string): Promise<void>
 
 在FUSE文件系统(Filesystem in Userspace)添加link文件。FUSE是一种用户空间文件系统框架，允许在用户空间实现自定义文件系统逻辑。link文件是FUSE中映射到DLP密文的虚拟文件，对该文件的读写操作会同步到实际DLP文件。使用Promise异步回调。
 
-在调用addDLPLinkFile后需要调用[deleteDLPLinkFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#deletedlplinkfile-1)移除DLP link文件。
+在调用addDLPLinkFile后需要调用[deleteDLPLinkFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#deletedlplinkfile)移除DLP link文件。
 
 DLP应用需要通过标准文件接口访问加密文件内容时，先添加link文件将DLP文件映射为虚拟明文文件，应用可像操作普通文件一样读写该link文件。
 
@@ -95,7 +94,6 @@ ExampleFunction();
 
 ```
 
-<a id="adddlplinkfile-1"></a>
 ## addDLPLinkFile
 
 ```TypeScript
@@ -104,7 +102,7 @@ addDLPLinkFile(linkFileName: string, callback: AsyncCallback<void>): void
 
 在FUSE文件系统添加link文件。使用callback异步回调。调用成功后，在FUSE文件系统中创建一个映射到DLP文件密文的虚拟文件。
 
-在调用addDLPLinkFile后需要调用[deleteDLPLinkFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#deletedlplinkfile-1)移除DLP link文件。
+在调用addDLPLinkFile后需要调用[deleteDLPLinkFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#deletedlplinkfile)移除DLP link文件。
 
 DLP应用需要通过标准文件接口访问加密文件内容时使用此接口。
 
@@ -172,7 +170,6 @@ ExampleFunction();
 
 ```
 
-<a id="closedlpfile"></a>
 ## closeDLPFile
 
 ```TypeScript
@@ -181,10 +178,9 @@ closeDLPFile(): Promise<void>
 
 关闭DLPFile，释放对象。使用Promise异步回调。
 
-调用[openDLPFile](arkts-dataprotection-dlppermission-opendlpfile-f-sys.md#opendlpfile-1)成功后返回DLPFile对象，必须在使用完毕后调用closeDLPFile()释放资源。
+调用[openDLPFile](arkts-dataprotection-dlppermission-opendlpfile-f-sys.md#opendlpfile)成功后返回DLPFile对象，必须在使用完毕后调用closeDLPFile()释放资源。
 
 文件所有者决定关闭DLP文件时使用此接口。
-
 > **说明：**  
 >  
 > dlpFile不再使用，应该关闭释放内存，且对象不应继续使用。
@@ -247,7 +243,6 @@ ExampleFunction();
 
 ```
 
-<a id="closedlpfile-1"></a>
 ## closeDLPFile
 
 ```TypeScript
@@ -259,7 +254,6 @@ closeDLPFile(callback: AsyncCallback<void>): void
 调用openDLPFile()成功后返回DLPFile对象，必须在使用完毕后调用closeDLPFile()释放资源。
 
 文件所有者决定关闭DLP文件时使用此接口。
-
 > **说明：**  
 >  
 > dlpFile不再使用，应该关闭释放内存，且对象不应继续使用。
@@ -326,7 +320,6 @@ ExampleFunction();
 
 ```
 
-<a id="deletedlplinkfile"></a>
 ## deleteDLPLinkFile
 
 ```TypeScript
@@ -335,7 +328,7 @@ deleteDLPLinkFile(linkFileName: string): Promise<void>
 
 删除FUSE文件系统中创建的link文件。使用Promise异步回调。调用成功后，从FUSE文件系统中移除指定的link文件。
 
-在调用deleteDLPLinkFile前需要调用[addDLPLinkFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#adddlplinkfile-1)添加DLP link文件。
+在调用deleteDLPLinkFile前需要调用[addDLPLinkFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#adddlplinkfile)添加DLP link文件。
 
 DLP文件访问结束后清理link文件映射时使用此接口。
 
@@ -406,7 +399,6 @@ ExampleFunction();
 
 ```
 
-<a id="deletedlplinkfile-1"></a>
 ## deleteDLPLinkFile
 
 ```TypeScript
@@ -415,7 +407,7 @@ deleteDLPLinkFile(linkFileName: string, callback: AsyncCallback<void>): void
 
 删除FUSE文件系统中创建的link文件，使用callback异步回调。调用成功后，从FUSE文件系统中移除指定的link文件。
 
-在调用deleteDLPLinkFile前需要调用[addDLPLinkFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#adddlplinkfile-1)添加DLP link文件。
+在调用deleteDLPLinkFile前需要调用[addDLPLinkFile](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#adddlplinkfile)添加DLP link文件。
 
 DLP文件访问结束后清理link文件映射时使用此接口。
 
@@ -484,7 +476,6 @@ ExampleFunction();
 
 ```
 
-<a id="recoverdlpfile"></a>
 ## recoverDLPFile
 
 ```TypeScript
@@ -571,7 +562,6 @@ ExampleFunction();
 
 ```
 
-<a id="recoverdlpfile-1"></a>
 ## recoverDLPFile
 
 ```TypeScript
@@ -655,7 +645,6 @@ ExampleFunction();
 
 ```
 
-<a id="replacedlplinkfile"></a>
 ## replaceDLPLinkFile
 
 ```TypeScript
@@ -735,7 +724,6 @@ ExampleFunction();
 
 ```
 
-<a id="replacedlplinkfile-1"></a>
 ## replaceDLPLinkFile
 
 ```TypeScript
@@ -813,7 +801,6 @@ ExampleFunction();
 
 ```
 
-<a id="resumefuselink"></a>
 ## resumeFuseLink
 
 ```TypeScript
@@ -822,7 +809,7 @@ resumeFuseLink(): Promise<void>
 
 恢复FUSE关联读写。使用Promise异步回调。调用成功后，恢复对link文件的读写操作。
 
-必须在调用[stopFuseLink](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#stopfuselink-1)暂停读写后才能调用此方法恢复读写功能。
+必须在调用[stopFuseLink](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#stopfuselink)暂停读写后才能调用此方法恢复读写功能。
 
 link文件替换完成后，需要恢复读写关联以继续正常的文件访问。
 
@@ -887,7 +874,6 @@ ExampleFunction();
 
 ```
 
-<a id="resumefuselink-1"></a>
 ## resumeFuseLink
 
 ```TypeScript
@@ -896,7 +882,7 @@ resumeFuseLink(callback: AsyncCallback<void>): void
 
 恢复FUSE关联读写，使用callback异步回调。调用成功后，恢复对link文件的读写操作。
 
-必须在调用[stopFuseLink](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#stopfuselink-1)暂停读写后才能调用此方法恢复读写功能。
+必须在调用[stopFuseLink](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#stopfuselink)暂停读写后才能调用此方法恢复读写功能。
 
 link文件替换完成后需要恢复读写关联。
 
@@ -965,7 +951,6 @@ ExampleFunction();
 
 ```
 
-<a id="stopfuselink"></a>
 ## stopFuseLink
 
 ```TypeScript
@@ -974,7 +959,7 @@ stopFuseLink(): Promise<void>
 
 停止FUSE关联读写。使用Promise异步回调。调用成功后，暂停对link文件的读写操作。
 
-调用stopFuseLink暂停FUSE关联读写后，必须调用[resumeFuseLink](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#resumefuselink-1)恢复读写功能。
+调用stopFuseLink暂停FUSE关联读写后，必须调用[resumeFuseLink](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#resumefuselink)恢复读写功能。
 
 在删除link文件前，需要先停止关联读写以确保文件操作安全。
 
@@ -1037,7 +1022,6 @@ ExampleFunction();
 
 ```
 
-<a id="stopfuselink-1"></a>
 ## stopFuseLink
 
 ```TypeScript
@@ -1046,7 +1030,7 @@ stopFuseLink(callback: AsyncCallback<void>): void
 
 停止FUSE关联读写。使用callback异步回调。调用成功后，暂停对link文件的读写操作。
 
-调用stopFuseLink暂停FUSE关联读写后，必须调用[resumeFuseLink](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#resumefuselink-1)恢复读写功能。
+调用stopFuseLink暂停FUSE关联读写后，必须调用[resumeFuseLink](arkts-dataprotection-dlppermission-dlpfile-i-sys.md#resumefuselink)恢复读写功能。
 
 删除link文件前需要暂停读写关联。
 

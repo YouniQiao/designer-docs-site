@@ -14,7 +14,6 @@ A class used to add a specified effect to an image. Before calling any method of
 import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
-<a id="blur"></a>
 ## blur
 
 ```TypeScript
@@ -109,7 +108,6 @@ struct Index {
 
 ```
 
-<a id="blur-1"></a>
 ## blur
 
 ```TypeScript
@@ -201,7 +199,6 @@ struct Index {
 
 ```
 
-<a id="brightness"></a>
 ## brightness
 
 ```TypeScript
@@ -296,7 +293,6 @@ struct Index {
 
 ```
 
-<a id="geteffectpixelmap"></a>
 ## getEffectPixelMap
 
 ```TypeScript
@@ -344,7 +340,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="geteffectpixelmap-1"></a>
 ## getEffectPixelMap
 
 ```TypeScript
@@ -398,7 +393,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getpixelmap"></a>
 ## getPixelMap
 
 ```TypeScript
@@ -411,7 +405,7 @@ Obtains image.PixelMap of the source image to which the filter linked list is ad
 
 **Deprecated since:** 11
 
-**Substitutes:** [getEffectPixelMap](arkts-arkgraphics2d-effectkit-filter-i.md#geteffectpixelmap-1)
+**Substitutes:** [getEffectPixelMap](arkts-arkgraphics2d-effectkit-filter-i.md#geteffectpixelmap)
 
 <!--Device-Filter-getPixelMap(): image.PixelMap--><!--Device-Filter-getPixelMap(): image.PixelMap-End-->
 
@@ -445,7 +439,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="grayscale"></a>
 ## grayscale
 
 ```TypeScript
@@ -533,7 +526,6 @@ struct Index {
 
 ```
 
-<a id="invert"></a>
 ## invert
 
 ```TypeScript
@@ -617,7 +609,6 @@ struct Index {
 
 ```
 
-<a id="setcolormatrix"></a>
 ## setColorMatrix
 
 ```TypeScript

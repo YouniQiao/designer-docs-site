@@ -18,11 +18,11 @@ Callback for OnLoadIntercept
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | OnLoadInterceptEvent | Yes | the load intercept event when the resources loading is intercepted. |
+| event | [OnLoadInterceptEvent](arkts-arkui-atomicservice-atomicserviceweb-onloadinterceptevent-i.md) | Yes | the load intercept event when the resources loading is intercepted.  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | True if the load is intercepted else false. |
+| boolean | True if the load is intercepted else false.  |
 

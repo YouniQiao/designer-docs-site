@@ -173,13 +173,7 @@ Sets the minimum width and the maximum width of navigation bar.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
-<!--Device-AtomicServiceNavigation-navBarWidthRange?: [
-    Dimension,
-    Dimension
-  ]--><!--Device-AtomicServiceNavigation-navBarWidthRange?: [
-    Dimension,
-    Dimension
-  ]-End-->
+<!--Device-AtomicServiceNavigation-navBarWidthRange?: [    Dimension,    Dimension  ]--><!--Device-AtomicServiceNavigation-navBarWidthRange?: [    Dimension,    Dimension  ]-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

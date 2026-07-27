@@ -61,7 +61,7 @@ After this API is used to unsubscribe from an event, the event that has been pub
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
+| eventId | string | Yes | Event ID, which cannot be empty or exceed 10,240 bytes. Excess content will be truncated. |
 
 **Example**
 
@@ -95,7 +95,7 @@ After this API is used to unsubscribe from an event, the event that has been pub
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | eventId | number | Yes | Event ID. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | Yes | Callback to unregister. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | Yes | Callback to unregister, which must be the same as the callback used during registration. |
 
 **Example**
 
@@ -134,8 +134,8 @@ After this API is used to unsubscribe from an event, the event that has been pub
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | Yes | Callback to unregister. |
+| eventId | string | Yes | Event ID, which cannot be empty or exceed 10,240 bytes. Excess content will be truncated. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | Yes | Callback to unregister, which must be the same as the callback used during registration. |
 
 **Example**
 
@@ -174,8 +174,8 @@ After this API is used to unsubscribe from an event, the event that has been pub
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| eventId | string | Yes | Event ID, which is a custom string with a maximum of 10240 bytes. The value cannot be empty. |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GenericEventData&lt;T&gt;&gt; | Yes | Callback to unregister. |
+| eventId | string | Yes | Event ID, which cannot be empty or exceed 10,240 bytes. Excess content will be truncated. |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GenericEventData&lt;T&gt;&gt; | Yes | Callback to unregister, which must be the same as the callback used during registration. |
 
 **Example**
 

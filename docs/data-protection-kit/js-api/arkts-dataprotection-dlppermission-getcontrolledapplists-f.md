@@ -6,7 +6,6 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="getcontrolledapplists"></a>
 ## getControlledAppLists
 
 ```TypeScript

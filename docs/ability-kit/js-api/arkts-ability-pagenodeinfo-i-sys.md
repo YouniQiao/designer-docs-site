@@ -100,7 +100,7 @@ The id of page node.The value should be an integer
 isFocus: boolean
 ```
 
-Is the page node in the focus.
+Is the page node in the focus.The value **true** means the current node is focused;The value **false** means the current node is not focused.
 
 **Type:** boolean
 

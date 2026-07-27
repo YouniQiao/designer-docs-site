@@ -22,7 +22,7 @@ onChange?: Callback<boolean>
 
 Side bar status change callback.
 
-**Type:** Callback<boolean>
+**Type:** Callback&lt;boolean&gt;
 
 **Since:** 18
 
@@ -58,7 +58,7 @@ sideBarIcon?: Resource | SymbolGlyphModifier
 
 Side bar icon.
 
-**Type:** Resource | SymbolGlyphModifier
+**Type:** Resource \| SymbolGlyphModifier
 
 **Default:** $r('sys.symbol.open_sidebar')
 

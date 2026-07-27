@@ -13,6 +13,6 @@ import { AtomicServiceMenuBar } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [AtomicServiceMenuBar](arkts-arkui-atomicservicemenubar-c-sys.md) | Provide configuration capabilities for the menuBar of atomicservice |
+| [AtomicServiceMenuBar](arkts-arkui-atomicservice-atomicservicemenubar-atomicservicemenubar-c-sys.md) | Provide configuration capabilities for the menuBar of atomicservice |
 <!--DelEnd-->
 

@@ -6,7 +6,6 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
-<a id="setwatermarkimage"></a>
 ## setWatermarkImage
 
 ```TypeScript
@@ -14,7 +13,6 @@ function setWatermarkImage(admin: Want, bundleName: string, source: string | ima
 ```
 
 Sets a watermark policy for a specified application of a specified user. Currently, a maximum of 100 policies can be saved.
-
 > **NOTE**  
 >  
 > This API is applicable to setting watermarks for third-party applications in enterprise scenarios to reduce the  
@@ -37,8 +35,8 @@ Sets a watermark policy for a specified application of a specified user. Current
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | bundleName | string | Yes | Bundle name of the application for which the watermark is set. |
-| source | string \| image.PixelMap | Yes | **string** indicates the image path, which is the path that the app has the permission to access, such as the app sandbox path. For details about the mapping between the app sandbox path and the actual physical path, see [Mappings Between App Sandbox Paths and Physical Paths](docroot://file-management/app-sandbox-directory.md#mappings-between-application-sandbox-paths-and-physical-paths).<br>**image.PixelMap** indicates an image object. The size of an image pixel cannot exceed 500 KB.<br>The size of an image pixel is calculated as follows: Image width (pixels) �� Image height (pixels) �� Number of bytes per pixel (typically 4). For example, the size of a 100 �� 100 image is 100 �� 100 �� 4 = 40,000 bytes. |
-| accountId | number | Yes | Account ID. You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1) of **@ohos.account.osAccount** to obtain the account ID. |
+| source | string \| image.PixelMap | Yes | **string** indicates the image path, which is the path that the app has the permission to access, such as the app sandbox path. For details about the mapping between the app sandbox path and the actual physical path, see [Mappings Between App Sandbox Paths and Physical Paths](../../../file-management/app-sandbox-directory.md#mappings-between-application-sandbox-paths-and-physical-paths).<br>**image.PixelMap** indicates an image object. The size of an image pixel cannot exceed 500 KB.<br>The size of an image pixel is calculated as follows: Image width (pixels) �� Image height (pixels) �� Number of bytes per pixel (typically 4). For example, the size of a 100 �� 100 image is 100 �� 100 �� 4 = 40,000 bytes. |
+| accountId | number | Yes | Account ID. You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid) of **@ohos.account.osAccount** to obtain the account ID. |
 
 **Error codes:**
 
@@ -74,7 +72,6 @@ try {
 ```
 
 
-<a id="setwatermarkimage-1"></a>
 ## setWatermarkImage
 
 ```TypeScript

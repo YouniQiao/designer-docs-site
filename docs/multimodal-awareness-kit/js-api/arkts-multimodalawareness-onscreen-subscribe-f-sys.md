@@ -6,7 +6,6 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
-<a id="subscribe"></a>
 ## subscribe
 
 ```TypeScript
@@ -23,11 +22,7 @@ Enables proactive awareness on screen content and subscribes to a screen awarene
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-onScreen-function subscribe(capability: OnscreenAwarenessCap,
-                     callback: Callback<OnscreenAwarenessInfo[]>, 
-                     options?: OnscreenAwarenessOptions): void--><!--Device-onScreen-function subscribe(capability: OnscreenAwarenessCap,
-                     callback: Callback<OnscreenAwarenessInfo[]>, 
-                     options?: OnscreenAwarenessOptions): void-End-->
+<!--Device-onScreen-function subscribe(capability: OnscreenAwarenessCap,                     callback: Callback<OnscreenAwarenessInfo[]>,                      options?: OnscreenAwarenessOptions): void--><!--Device-onScreen-function subscribe(capability: OnscreenAwarenessCap,                     callback: Callback<OnscreenAwarenessInfo[]>,                      options?: OnscreenAwarenessOptions): void-End-->
 
 **System capability:** SystemCapability.MultimodalAwareness.OnScreenAwareness
 

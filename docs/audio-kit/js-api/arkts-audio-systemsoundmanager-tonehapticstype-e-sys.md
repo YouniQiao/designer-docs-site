@@ -42,6 +42,42 @@ Haptics in incoming call scenario for sim card 1.
 
 **System API:** This is a system API.
 
+## CALL_ESIM_CARD_0
+
+```TypeScript
+CALL_ESIM_CARD_0 = 2
+```
+
+Haptics in incoming call scenario for esim card 0.
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ToneHapticsType-CALL_ESIM_CARD_0 = 2--><!--Device-ToneHapticsType-CALL_ESIM_CARD_0 = 2-End-->
+
+**System capability:** SystemCapability.Multimedia.SystemSound.Core
+
+**System API:** This is a system API.
+
+## CALL_ESIM_CARD_1
+
+```TypeScript
+CALL_ESIM_CARD_1 = 3
+```
+
+Haptics in incoming call scenario for esim card 1.
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ToneHapticsType-CALL_ESIM_CARD_1 = 3--><!--Device-ToneHapticsType-CALL_ESIM_CARD_1 = 3-End-->
+
+**System capability:** SystemCapability.Multimedia.SystemSound.Core
+
+**System API:** This is a system API.
+
 ## TEXT_MESSAGE_SIM_CARD_0
 
 ```TypeScript
@@ -69,6 +105,42 @@ Haptics in text message scenario for sim card 1.
 **Since:** 14
 
 <!--Device-ToneHapticsType-TEXT_MESSAGE_SIM_CARD_1 = 21--><!--Device-ToneHapticsType-TEXT_MESSAGE_SIM_CARD_1 = 21-End-->
+
+**System capability:** SystemCapability.Multimedia.SystemSound.Core
+
+**System API:** This is a system API.
+
+## TEXT_MESSAGE_ESIM_CARD_0
+
+```TypeScript
+TEXT_MESSAGE_ESIM_CARD_0 = 22
+```
+
+Haptics in text message scenario for esim card 0.
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ToneHapticsType-TEXT_MESSAGE_ESIM_CARD_0 = 22--><!--Device-ToneHapticsType-TEXT_MESSAGE_ESIM_CARD_0 = 22-End-->
+
+**System capability:** SystemCapability.Multimedia.SystemSound.Core
+
+**System API:** This is a system API.
+
+## TEXT_MESSAGE_ESIM_CARD_1
+
+```TypeScript
+TEXT_MESSAGE_ESIM_CARD_1 = 23
+```
+
+Haptics in text message scenario for esim card 1.
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-ToneHapticsType-TEXT_MESSAGE_ESIM_CARD_1 = 23--><!--Device-ToneHapticsType-TEXT_MESSAGE_ESIM_CARD_1 = 23-End-->
 
 **System capability:** SystemCapability.Multimedia.SystemSound.Core
 

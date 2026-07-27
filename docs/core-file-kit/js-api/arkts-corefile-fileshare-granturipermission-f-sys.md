@@ -6,7 +6,6 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
-<a id="granturipermission"></a>
 ## grantUriPermission
 
 ```TypeScript
@@ -24,17 +23,7 @@ Provides grant uri permission for app
 
 **Required permissions:** ohos.permission.WRITE_MEDIA
 
-<!--Device-fileShare-function grantUriPermission(
-    uri: string,
-    bundleName: string,
-    flag: wantConstant.Flags,
-    callback: AsyncCallback<void>
-  ): void--><!--Device-fileShare-function grantUriPermission(
-    uri: string,
-    bundleName: string,
-    flag: wantConstant.Flags,
-    callback: AsyncCallback<void>
-  ): void-End-->
+<!--Device-fileShare-function grantUriPermission(    uri: string,    bundleName: string,    flag: wantConstant.Flags,    callback: AsyncCallback<void>  ): void--><!--Device-fileShare-function grantUriPermission(    uri: string,    bundleName: string,    flag: wantConstant.Flags,    callback: AsyncCallback<void>  ): void-End-->
 
 **System capability:** SystemCapability.FileManagement.AppFileService
 
@@ -84,7 +73,6 @@ try {
 ```
 
 
-<a id="granturipermission-1"></a>
 ## grantUriPermission
 
 ```TypeScript
@@ -150,7 +138,6 @@ try {
 ```
 
 
-<a id="granturipermission-2"></a>
 ## grantUriPermission
 
 ```TypeScript

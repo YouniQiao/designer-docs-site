@@ -16,7 +16,7 @@ This module specifies how the autofill service is triggered, based on different 
 AUTO_REQUEST = 0
 ```
 
-Automatically triggers the autofill service when a [TextInput](@internal/component/ets/text_input)component gains focus.
+Automatically triggers the autofill service when a [TextInput](../../apis-arkui/arkts-components/arkts-arkui-text_input-i)component gains focus.
 
 **Since:** 26.0.0
 

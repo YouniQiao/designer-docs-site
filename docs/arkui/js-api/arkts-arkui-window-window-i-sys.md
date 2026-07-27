@@ -2931,8 +2931,8 @@ The background color you set here covers the entire window, including both the t
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have the permission required or a non-system application calls the API.<br>**Applicable version:** 26.0.0 and later |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API.<br>**Applicable version:** 20 - 24 |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
-| [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
-| [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
+| [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: The window is not created or destroyed. |
+| [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only main windows are supported. |
 
 ## setWindowMode
 

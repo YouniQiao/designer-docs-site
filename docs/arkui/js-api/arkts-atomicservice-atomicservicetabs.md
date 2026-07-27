@@ -12,19 +12,19 @@ import { TabBarPosition, TabBarOptions, AtomicServiceTabs, TabContentBuilder, On
 
 | Name | Description |
 | --- | --- |
-| [TabBarOptions](arkts-arkui-tabbaroptions-c.md) | the class for TabBarOption |
+| [TabBarOptions](arkts-arkui-atomicservice-atomicservicetabs-tabbaroptions-c.md) | the class for TabBarOption |
 
 ### Structs
 
 | Name | Description |
 | --- | --- |
-| [AtomicServiceTabs](arkts-arkui-atomicservicetabs-s.md) | Defines AtomicServiceTabs. |
+| [AtomicServiceTabs](arkts-arkui-atomicservice-atomicservicetabs-atomicservicetabs-s.md) | Defines AtomicServiceTabs. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [TabBarPosition](arkts-arkui-tabbarposition-e.md) | the enum for TabBarOption. |
+| [TabBarPosition](arkts-arkui-atomicservice-atomicservicetabs-tabbarposition-e.md) | the enum for TabBarOption. |
 
 ### Types
 

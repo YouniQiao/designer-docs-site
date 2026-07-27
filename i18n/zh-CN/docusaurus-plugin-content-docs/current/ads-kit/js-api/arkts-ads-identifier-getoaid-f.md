@@ -13,6 +13,9 @@ function getOAID(callback: AsyncCallback<string>): void
 ```
 
 获取开放匿名设备标识符（OAID）。使用callback异步回调。
+> **说明：**  
+>  
+> 设置项“跨应用关联访问权限”在HarmonyOS NEXT Developer Beta5及更早版本名称为“应用跟踪访问权限”。
 
 **起始版本：** 10
 
@@ -57,6 +60,9 @@ function getOAID(): Promise<string>
 ```
 
 获取开放匿名设备标识符（OAID）。使用Promise异步回调。
+> **说明：**  
+>  
+> 设置项“跨应用关联访问权限”在HarmonyOS NEXT Developer Beta5及更早版本名称为“应用跟踪访问权限”。
 
 **起始版本：** 10
 

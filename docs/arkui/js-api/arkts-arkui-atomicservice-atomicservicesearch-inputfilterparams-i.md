@@ -22,7 +22,7 @@ error?: Callback<string>
 
 If the regular expression matching fails, the filtered content is returned.
 
-**Type:** Callback<string>
+**Type:** Callback&lt;string&gt;
 
 **Since:** 18
 

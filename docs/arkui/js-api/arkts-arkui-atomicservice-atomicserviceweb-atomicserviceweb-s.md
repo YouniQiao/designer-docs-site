@@ -4,6 +4,8 @@ Declare Component AtomicServiceWeb.
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct AtomicServiceWeb--><!--Device-unnamed-export declare struct AtomicServiceWeb-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -120,7 +122,7 @@ nestedScroll?: NestedScrollOptions | NestedScrollOptionsExt
 
 Sets the nested scroll options.
 
-**Type:** NestedScrollOptions | NestedScrollOptionsExt
+**Type:** NestedScrollOptions \| NestedScrollOptionsExt
 
 **Since:** 15
 
@@ -140,7 +142,7 @@ onControllerAttached?: Callback<void>
 
 Triggered when The controller is bound to the web component, this controller must be a WebviewController.This callback can not use the interface about manipulating web pages.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 
@@ -158,7 +160,7 @@ onErrorReceive?: Callback<OnErrorReceiveEvent>
 
 Triggered when the web page receives a web resource loading error.
 
-**Type:** Callback<OnErrorReceiveEvent>
+**Type:** Callback&lt;OnErrorReceiveEvent&gt;
 
 **Since:** 12
 
@@ -176,7 +178,7 @@ onHttpErrorReceive?: Callback<OnHttpErrorReceiveEvent>
 
 Triggered when the web page receives a web resource loading HTTP error.
 
-**Type:** Callback<OnHttpErrorReceiveEvent>
+**Type:** Callback&lt;OnHttpErrorReceiveEvent&gt;
 
 **Since:** 12
 
@@ -212,7 +214,7 @@ onMessage?: Callback<OnMessageEvent>
 
 The callback method to invoke after page is back or destroyed if postMessage() is called in H5 page.
 
-**Type:** Callback<OnMessageEvent>
+**Type:** Callback&lt;OnMessageEvent&gt;
 
 **Since:** 12
 
@@ -230,7 +232,7 @@ onPageBegin?: Callback<OnPageBeginEvent>
 
 Triggered at the begin of web page loading.
 
-**Type:** Callback<OnPageBeginEvent>
+**Type:** Callback&lt;OnPageBeginEvent&gt;
 
 **Since:** 12
 
@@ -248,7 +250,7 @@ onPageEnd?: Callback<OnPageEndEvent>
 
 Triggered at the end of web page loading.
 
-**Type:** Callback<OnPageEndEvent>
+**Type:** Callback&lt;OnPageEndEvent&gt;
 
 **Since:** 12
 
@@ -266,7 +268,7 @@ onProgressChange?: Callback<OnProgressChangeEvent>
 
 Triggered when the page loading progress changes.
 
-**Type:** Callback<OnProgressChangeEvent>
+**Type:** Callback&lt;OnProgressChangeEvent&gt;
 
 **Since:** 12
 

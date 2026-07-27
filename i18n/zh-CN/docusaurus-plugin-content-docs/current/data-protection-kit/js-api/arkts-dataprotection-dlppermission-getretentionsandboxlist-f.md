@@ -6,7 +6,6 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="getretentionsandboxlist"></a>
 ## getRetentionSandboxList
 
 ```TypeScript
@@ -58,7 +57,6 @@ dlpPermission.getRetentionSandboxList().then((sandboxList) => { // 获取沙箱�
 ```
 
 
-<a id="getretentionsandboxlist-1"></a>
 ## getRetentionSandboxList
 
 ```TypeScript
@@ -107,7 +105,6 @@ dlpPermission.getRetentionSandboxList("bundleName", (err, sandboxList) => {
 ```
 
 
-<a id="getretentionsandboxlist-2"></a>
 ## getRetentionSandboxList
 
 ```TypeScript

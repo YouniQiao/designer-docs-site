@@ -12,18 +12,18 @@ import { SearchParams, AtomicServiceSearch, SearchButtonParams, OperationParams,
 
 | Name | Description |
 | --- | --- |
-| [AtomicServiceSearch](arkts-arkui-atomicservicesearch-s.md) | Defines AtomicServiceSearch. |
+| [AtomicServiceSearch](arkts-arkui-atomicservice-atomicservicesearch-atomicservicesearch-s.md) | Defines AtomicServiceSearch. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [InputFilterParams](arkts-arkui-inputfilterparams-i.md) | Defines the InputFilter parameters. |
-| [MenuAlignParams](arkts-arkui-menualignparams-i.md) | Defines the MenuAlign parameters. |
-| [OperationParams](arkts-arkui-operationparams-i.md) | Function settings in the selection area (right). |
-| [SearchButtonParams](arkts-arkui-searchbuttonparams-i.md) | Defines the SearchButton parameters. |
-| [SearchParams](arkts-arkui-searchparams-i.md) | Events and styles supported by the search area. |
-| [SelectParams](arkts-arkui-selectparams-i.md) | Contents, events, and styles of the select area. |
+| [InputFilterParams](arkts-arkui-atomicservice-atomicservicesearch-inputfilterparams-i.md) | Defines the InputFilter parameters. |
+| [MenuAlignParams](arkts-arkui-atomicservice-atomicservicesearch-menualignparams-i.md) | Defines the MenuAlign parameters. |
+| [OperationParams](arkts-arkui-atomicservice-atomicservicesearch-operationparams-i.md) | Function settings in the selection area (right). |
+| [SearchButtonParams](arkts-arkui-atomicservice-atomicservicesearch-searchbuttonparams-i.md) | Defines the SearchButton parameters. |
+| [SearchParams](arkts-arkui-atomicservice-atomicservicesearch-searchparams-i.md) | Events and styles supported by the search area. |
+| [SelectParams](arkts-arkui-atomicservice-atomicservicesearch-selectparams-i.md) | Contents, events, and styles of the select area. |
 
 ### Types
 

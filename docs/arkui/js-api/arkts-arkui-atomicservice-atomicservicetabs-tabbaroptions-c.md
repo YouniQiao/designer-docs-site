@@ -14,7 +14,6 @@ the class for TabBarOption
 import { TabBarPosition, TabBarOptions, AtomicServiceTabs, TabContentBuilder, OnContentWillChangeCallback } from '@kit.ArkUI';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -28,9 +27,7 @@ constructor to init the tabbar including icon, text, unselectedColor and selecte
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
-<!--Device-TabBarOptions-constructor(icon: ResourceStr | TabBarSymbol, text: ResourceStr,
-    unselectedColor?: ResourceColor, selectedColor?: ResourceColor)--><!--Device-TabBarOptions-constructor(icon: ResourceStr | TabBarSymbol, text: ResourceStr,
-    unselectedColor?: ResourceColor, selectedColor?: ResourceColor)-End-->
+<!--Device-TabBarOptions-constructor(icon: ResourceStr | TabBarSymbol, text: ResourceStr,    unselectedColor?: ResourceColor, selectedColor?: ResourceColor)--><!--Device-TabBarOptions-constructor(icon: ResourceStr | TabBarSymbol, text: ResourceStr,    unselectedColor?: ResourceColor, selectedColor?: ResourceColor)-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

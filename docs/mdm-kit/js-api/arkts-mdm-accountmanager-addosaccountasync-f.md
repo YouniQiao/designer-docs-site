@@ -6,7 +6,6 @@
 import { accountManager } from '@kit.MDMKit';
 ```
 
-<a id="addosaccountasync"></a>
 ## addOsAccountAsync
 
 ```TypeScript
@@ -14,7 +13,6 @@ function addOsAccountAsync(admin: Want, name: string, type: osAccount.OsAccountT
 ```
 
 Adds an account in the background. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > This API is time-consuming. Subsequent calls to other synchronous APIs in the application main thread must wait  

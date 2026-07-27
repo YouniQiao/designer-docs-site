@@ -14,7 +14,6 @@ The Filter for Component.
 import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
-<a id="bezierwarp"></a>
 ## bezierWarp
 
 ```TypeScript
@@ -73,7 +72,6 @@ struct BezierWarpExample {
 
 ```
 
-<a id="blurbubblesrise"></a>
 ## blurBubblesRise
 
 ```TypeScript
@@ -104,7 +102,6 @@ Applies blur bubbles rise effect to simulate rising bubbles with blur.This effec
 | --- | --- |
 | [Filter](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-agent-filter-i-sys.md) | - Returns the blur bubbles rise Filter. |
 
-<a id="colorgradient"></a>
 ## colorGradient
 
 ```TypeScript
@@ -116,9 +113,7 @@ Sets the color gradient filter, may blend with alpha mask.
 
 **Since:** 20
 
-<!--Device-Filter-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,
-        alphaMask?: Mask): Filter--><!--Device-Filter-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,
-        alphaMask?: Mask): Filter-End-->
+<!--Device-Filter-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,        alphaMask?: Mask): Filter--><!--Device-Filter-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,        alphaMask?: Mask): Filter-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 
@@ -176,7 +171,6 @@ struct ColorGradientExample {
 
 ```
 
-<a id="contentlight"></a>
 ## contentLight
 
 ```TypeScript
@@ -188,9 +182,7 @@ Sets the content light filter.
 
 **Since:** 20
 
-<!--Device-Filter-contentLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,
-      displacementMap?: Mask): Filter--><!--Device-Filter-contentLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,
-      displacementMap?: Mask): Filter-End-->
+<!--Device-Filter-contentLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,      displacementMap?: Mask): Filter--><!--Device-Filter-contentLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,      displacementMap?: Mask): Filter-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 
@@ -257,7 +249,6 @@ struct Index {
 
 ```
 
-<a id="directionlight"></a>
 ## directionLight
 
 ```TypeScript
@@ -334,7 +325,6 @@ struct Index {
 
 ```
 
-<a id="displacementdistort"></a>
 ## displacementDistort
 
 ```TypeScript
@@ -393,7 +383,6 @@ struct DisplacementDistortExample {
 
 ```
 
-<a id="distort"></a>
 ## distort
 
 ```TypeScript
@@ -435,7 +424,6 @@ filter.distort(-0.5)
 
 ```
 
-<a id="edgelight"></a>
 ## edgeLight
 
 ```TypeScript
@@ -498,7 +486,6 @@ struct EdgeLightExample {
 
 ```
 
-<a id="flyinflyouteffect"></a>
 ## flyInFlyOutEffect
 
 ```TypeScript
@@ -541,7 +528,6 @@ filter.flyInFlyOutEffect(0.5, uiEffect.FlyMode.TOP)
 
 ```
 
-<a id="hdrbrightnessratio"></a>
 ## hdrBrightnessRatio
 
 ```TypeScript
@@ -595,7 +581,6 @@ filter.hdrBrightnessRatio(2.0);
 
 ```
 
-<a id="heatdistortion"></a>
 ## heatDistortion
 
 ```TypeScript
@@ -626,7 +611,6 @@ Applies heat distortion effect to simulate hot air distortion.This effect create
 | --- | --- |
 | [Filter](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-agent-filter-i-sys.md) | - Returns the heat distortion Filter. |
 
-<a id="maskdispersion"></a>
 ## maskDispersion
 
 ```TypeScript
@@ -638,9 +622,7 @@ Sets dispersion effect with mask map.
 
 **Since:** 20
 
-<!--Device-Filter-maskDispersion(dispersionMap: Mask, alpha: double, rFactor?: [double, double], gFactor?: [double, double],
-      bFactor?: [double, double]): Filter--><!--Device-Filter-maskDispersion(dispersionMap: Mask, alpha: double, rFactor?: [double, double], gFactor?: [double, double],
-      bFactor?: [double, double]): Filter-End-->
+<!--Device-Filter-maskDispersion(dispersionMap: Mask, alpha: double, rFactor?: [double, double], gFactor?: [double, double],      bFactor?: [double, double]): Filter--><!--Device-Filter-maskDispersion(dispersionMap: Mask, alpha: double, rFactor?: [double, double], gFactor?: [double, double],      bFactor?: [double, double]): Filter-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 
@@ -668,7 +650,6 @@ Sets dispersion effect with mask map.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
-<a id="masktransition"></a>
 ## maskTransition
 
 ```TypeScript
@@ -751,7 +732,6 @@ struct Index {
 
 ```
 
-<a id="pixelstretch"></a>
 ## pixelStretch
 
 ```TypeScript
@@ -788,7 +768,6 @@ filter.pixelStretch([0.2, 0.2, 0.2, 0.2], uiEffect.TileMode.CLAMP)
 
 ```
 
-<a id="radiusgradientblur"></a>
 ## radiusGradientBlur
 
 ```TypeScript
@@ -824,7 +803,6 @@ Adds the content radius gradient blurring effect for the current component.The i
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
-<a id="variableradiusblur"></a>
 ## variableRadiusBlur
 
 ```TypeScript
@@ -883,7 +861,6 @@ struct VariableRadiusBlurExample {
 
 ```
 
-<a id="waterripple"></a>
 ## waterRipple
 
 ```TypeScript

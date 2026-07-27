@@ -94,7 +94,7 @@ onDialogClick?: Callback<void>
 
 The action after clicking dialog.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 
@@ -112,7 +112,7 @@ onDialogClose?: Callback<void>
 
 The action after clicking close button.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 
@@ -148,7 +148,7 @@ subtitleColor?: ResourceStr | Color
 
 The color of the subtitle.
 
-**Type:** ResourceStr | Color
+**Type:** ResourceStr \| Color
 
 **Since:** 12
 
@@ -184,7 +184,7 @@ titleColor?: ResourceStr | Color
 
 The color of the title.
 
-**Type:** ResourceStr | Color
+**Type:** ResourceStr \| Color
 
 **Since:** 12
 

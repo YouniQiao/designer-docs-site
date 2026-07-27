@@ -6,7 +6,6 @@
 import { userAccessCtrl } from '@kit.UserAuthenticationKit';
 ```
 
-<a id="verifyauthtoken"></a>
 ## verifyAuthToken
 
 ```TypeScript

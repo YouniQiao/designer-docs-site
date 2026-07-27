@@ -18,6 +18,6 @@ The builder function of NavDestination component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| name | string | Yes | The name of route page. |
+| name | string | Yes | The name of route page.  |
 | param | Object | No |  |
 

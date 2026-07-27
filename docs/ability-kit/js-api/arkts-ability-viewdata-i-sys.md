@@ -36,7 +36,7 @@ Ability name.
 bundleName: string
 ```
 
-Bundle name.
+Bundle name.The value cannot exceed 512 characters.
 
 **Type:** string
 
@@ -120,7 +120,7 @@ pageNodeInfos: Array<PageNodeInfo>
 
 Page node information.
 
-**Type:** Array<PageNodeInfo>
+**Type:** Array&lt;PageNodeInfo&gt;
 
 **Since:** 26.0.0
 

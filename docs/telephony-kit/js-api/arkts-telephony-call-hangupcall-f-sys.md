@@ -6,7 +6,6 @@
 import { call } from '@kit.TelephonyKit';
 ```
 
-<a id="hangupcall"></a>
 ## hangUpCall
 
 ```TypeScript
@@ -60,7 +59,6 @@ call.hangUpCall(1, (err: BusinessError) => {
 ```
 
 
-<a id="hangupcall-1"></a>
 ## hangUpCall
 
 ```TypeScript
@@ -117,7 +115,6 @@ call.hangUpCall(1).then(() => {
 ```
 
 
-<a id="hangupcall-2"></a>
 ## hangUpCall
 
 ```TypeScript

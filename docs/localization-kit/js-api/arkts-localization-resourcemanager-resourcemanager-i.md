@@ -1,7 +1,6 @@
 # ResourceManager
 
 Provides APIs for accessing application resources and system resources.
-
 > **NOTE**  
 >  
 > - The methods involved in **ResourceManager** are applicable only to the TypeScript-based declarative development  
@@ -15,18 +14,18 @@ Provides APIs for accessing application resources and system resources.
 > - No matter whether resources are in the same HAP or different HAPs or HSPs, you are advised to use the API with  
 > **resName** or **resId** specified. Using the **Resource** object will take a longer time. If the resources are  
 > in different HAPs or HSPs, you first need to use  
-> [createModuleContext](../../apis-ability-kit/arkts-apis/arkts-ability-application-createmodulecontext-f.md#createmodulecontext-1)  
+> [createModuleContext](../../apis-ability-kit/arkts-apis/arkts-ability-application-createmodulecontext-f.md#createmodulecontext)  
 > to create the context of the corresponding module and then call the API with **resName** or **resId** specified.  
 > For details, see  
-> [Accessing Resources](docroot://quick-start/resource-categories-and-access.md#accessing-resources).  
+> [Accessing Resources](../../../quick-start/resource-categories-and-access.md#accessing-resources).  
 >  
 > - In API version 22 and earlier versions, an exception is thrown due to an invalid ID when the intermediate-code  
 > HAR or bytecode HAR accesses resources through resource ID-related APIs. From API version 23, the  
 > intermediate-code HAR or bytecode HAR can properly access resources through resource ID-related APIs.  
-> For details, see [Accessing Resources](docroot://quick-start/resource-categories-and-access.md#accessing-resources).  
+> For details, see [Accessing Resources](../../../quick-start/resource-categories-and-access.md#accessing-resources).  
 >  
 > - For details about the content of the test files used in the sample code, see  
-> [Appendix](docroot://reference/apis-localization-kit/js-apis-resource-manager.md#appendix).
+> [Appendix](../../../reference/apis-localization-kit/js-apis-resource-manager.md#appendix).
 
 **Since:** 6
 
@@ -40,7 +39,6 @@ Provides APIs for accessing application resources and system resources.
 import { resourceManager } from '@kit.LocalizationKit';
 ```
 
-<a id="addresource"></a>
 ## addResource
 
 ```TypeScript
@@ -48,7 +46,6 @@ addResource(path: string) : void
 ```
 
 Loads resources from the specified path.
-
 > **NOTE**  
 >  
 > Resource overwriting is not supported for the **rawfile** and **resfile** directories.
@@ -96,7 +93,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="closerawfd"></a>
 ## closeRawFd
 
 ```TypeScript
@@ -156,7 +152,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="closerawfd-1"></a>
 ## closeRawFd
 
 ```TypeScript
@@ -216,7 +211,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="closerawfdsync"></a>
 ## closeRawFdSync
 
 ```TypeScript
@@ -271,7 +265,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="closerawfiledescriptor"></a>
 ## closeRawFileDescriptor
 
 ```TypeScript
@@ -284,7 +277,7 @@ Closes the fd of the rawfile in the **resources/rawfile** directory. This API us
 
 **Deprecated since:** 9
 
-**Substitutes:** [closeRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd-1)
+**Substitutes:** [closeRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd)
 
 <!--Device-ResourceManager-closeRawFileDescriptor(path: string, callback: AsyncCallback<void>): void--><!--Device-ResourceManager-closeRawFileDescriptor(path: string, callback: AsyncCallback<void>): void-End-->
 
@@ -312,7 +305,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="closerawfiledescriptor-1"></a>
 ## closeRawFileDescriptor
 
 ```TypeScript
@@ -325,7 +317,7 @@ Closes the fd of the rawfile in the **resources/rawfile** directory. This API us
 
 **Deprecated since:** 9
 
-**Substitutes:** [closeRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd-1)
+**Substitutes:** [closeRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd)
 
 <!--Device-ResourceManager-closeRawFileDescriptor(path: string): Promise<void>--><!--Device-ResourceManager-closeRawFileDescriptor(path: string): Promise<void>-End-->
 
@@ -354,7 +346,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getboolean"></a>
 ## getBoolean
 
 ```TypeScript
@@ -428,7 +419,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getboolean-1"></a>
 ## getBoolean
 
 ```TypeScript
@@ -441,7 +431,7 @@ Obtains a Boolean value based on the specified resource object. This API returns
 
 **Deprecated since:** 20
 
-**Substitutes:** [getBoolean(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getboolean-1)
+**Substitutes:** [getBoolean(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getboolean)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -508,7 +498,6 @@ try {
 
 ```
 
-<a id="getbooleanbyname"></a>
 ## getBooleanByName
 
 ```TypeScript
@@ -582,7 +571,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getcolor"></a>
 ## getColor
 
 ```TypeScript
@@ -615,7 +603,6 @@ Obtains a color value based on the specified resource ID. This API uses an async
 | [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 | [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
-<a id="getcolor-1"></a>
 ## getColor
 
 ```TypeScript
@@ -688,7 +675,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getcolor-2"></a>
 ## getColor
 
 ```TypeScript
@@ -701,7 +687,7 @@ Obtains a color value based on the specified resource object. This API uses an a
 
 **Deprecated since:** 20
 
-**Substitutes:** [getColor(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getcolor-1)
+**Substitutes:** [getColor(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getcolor)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -762,7 +748,6 @@ this.context.resourceManager.getColor(resource, (error: BusinessError, value: nu
 
 ```
 
-<a id="getcolor-3"></a>
 ## getColor
 
 ```TypeScript
@@ -775,7 +760,7 @@ Obtains a color value based on the specified resource object. This API uses a pr
 
 **Deprecated since:** 20
 
-**Substitutes:** [getColor(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getcolor-1)
+**Substitutes:** [getColor(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getcolor)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -841,7 +826,6 @@ this.context.resourceManager.getColor(resource)
 
 ```
 
-<a id="getcolorbyname"></a>
 ## getColorByName
 
 ```TypeScript
@@ -909,7 +893,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getcolorbyname-1"></a>
 ## getColorByName
 
 ```TypeScript
@@ -982,7 +965,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getcolorbynamesync"></a>
 ## getColorByNameSync
 
 ```TypeScript
@@ -1056,7 +1038,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getcolorsync"></a>
 ## getColorSync
 
 ```TypeScript
@@ -1130,7 +1111,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getcolorsync-1"></a>
 ## getColorSync
 
 ```TypeScript
@@ -1143,7 +1123,7 @@ Obtains a color value based on the specified resource object. This API returns t
 
 **Deprecated since:** 20
 
-**Substitutes:** [getColorSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getcolorsync-1)
+**Substitutes:** [getColorSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getcolorsync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -1210,7 +1190,6 @@ try {
 
 ```
 
-<a id="getconfiguration"></a>
 ## getConfiguration
 
 ```TypeScript
@@ -1259,7 +1238,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getconfiguration-1"></a>
 ## getConfiguration
 
 ```TypeScript
@@ -1306,7 +1284,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getconfigurationsync"></a>
 ## getConfigurationSync
 
 ```TypeScript
@@ -1348,7 +1325,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getdevicecapability"></a>
 ## getDeviceCapability
 
 ```TypeScript
@@ -1397,7 +1373,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getdevicecapability-1"></a>
 ## getDeviceCapability
 
 ```TypeScript
@@ -1444,7 +1419,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getdevicecapabilitysync"></a>
 ## getDeviceCapabilitySync
 
 ```TypeScript
@@ -1486,15 +1460,13 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getdoublepluralstringbynamesync"></a>
 ## getDoublePluralStringByNameSync
 
 ```TypeScript
 getDoublePluralStringByNameSync(resName: string, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
-
+Obtains a [singular/plural](../../../internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
 > **NOTE**  
 >  
 > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -1581,15 +1553,13 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getdoublepluralstringvaluesync"></a>
 ## getDoublePluralStringValueSync
 
 ```TypeScript
 getDoublePluralStringValueSync(resId: number, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
-
+Obtains a [singular/plural](../../../internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
 > **NOTE**  
 >  
 > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -1676,15 +1646,13 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getdoublepluralstringvaluesync-1"></a>
 ## getDoublePluralStringValueSync
 
 ```TypeScript
 getDoublePluralStringValueSync(resource: Resource, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously.
-
+Obtains a [singular/plural](../../../internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously.
 > **NOTE**  
 >  
 > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -1694,7 +1662,7 @@ Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.
 
 **Deprecated since:** 20
 
-**Substitutes:** [getDoublePluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getdoublepluralstringvaluesync-1)
+**Substitutes:** [getDoublePluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getdoublepluralstringvaluesync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -1775,7 +1743,6 @@ try {
 
 ```
 
-<a id="getdrawabledescriptor"></a>
 ## getDrawableDescriptor
 
 ```TypeScript
@@ -1852,7 +1819,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getdrawabledescriptor-1"></a>
 ## getDrawableDescriptor
 
 ```TypeScript
@@ -1865,7 +1831,7 @@ Obtains a **DrawableDescriptor** object for icon display based on the specified 
 
 **Deprecated since:** 20
 
-**Substitutes:** [getDrawableDescriptor(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getdrawabledescriptor-1)
+**Substitutes:** [getDrawableDescriptor(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getdrawabledescriptor)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -1933,7 +1899,6 @@ try {
 
 ```
 
-<a id="getdrawabledescriptorbyname"></a>
 ## getDrawableDescriptorByName
 
 ```TypeScript
@@ -2010,15 +1975,13 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getintpluralstringbynamesync"></a>
 ## getIntPluralStringByNameSync
 
 ```TypeScript
 getIntPluralStringByNameSync(resName: string, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
-
+Obtains a [singular/plural](../../../internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
 > **NOTE**  
 >  
 > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -2105,15 +2068,13 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getintpluralstringvaluesync"></a>
 ## getIntPluralStringValueSync
 
 ```TypeScript
 getIntPluralStringValueSync(resId: number, num: number,...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
-
+Obtains a [singular/plural](../../../internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
 > **NOTE**  
 >  
 > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -2200,15 +2161,13 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getintpluralstringvaluesync-1"></a>
 ## getIntPluralStringValueSync
 
 ```TypeScript
 getIntPluralStringValueSync(resource: Resource, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously.
-
+Obtains a [singular/plural](../../../internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously.
 > **NOTE**  
 >  
 > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -2218,7 +2177,7 @@ Obtains a [singular/plural](docroot://internationalization/l10n-singular-plural.
 
 **Deprecated since:** 20
 
-**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -2299,7 +2258,6 @@ try {
 
 ```
 
-<a id="getlocales"></a>
 ## getLocales
 
 ```TypeScript
@@ -2371,7 +2329,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmedia"></a>
 ## getMedia
 
 ```TypeScript
@@ -2384,7 +2341,7 @@ Obtains media file content based on the specified resource ID. This API uses an 
 
 **Deprecated since:** 9
 
-**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent)
 
 <!--Device-ResourceManager-getMedia(resId: number, callback: AsyncCallback<Uint8Array>): void--><!--Device-ResourceManager-getMedia(resId: number, callback: AsyncCallback<Uint8Array>): void-End-->
 
@@ -2412,7 +2369,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getmedia-1"></a>
 ## getMedia
 
 ```TypeScript
@@ -2425,7 +2381,7 @@ Obtains media file content based on the specified resource ID. This API uses a p
 
 **Deprecated since:** 9
 
-**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent)
 
 <!--Device-ResourceManager-getMedia(resId: number): Promise<Uint8Array>--><!--Device-ResourceManager-getMedia(resId: number): Promise<Uint8Array>-End-->
 
@@ -2458,7 +2414,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getmediabase64"></a>
 ## getMediaBase64
 
 ```TypeScript
@@ -2471,7 +2426,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 
 **Deprecated since:** 9
 
-**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64)
 
 <!--Device-ResourceManager-getMediaBase64(resId: number, callback: AsyncCallback<string>): void--><!--Device-ResourceManager-getMediaBase64(resId: number, callback: AsyncCallback<string>): void-End-->
 
@@ -2499,7 +2454,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getmediabase64-1"></a>
 ## getMediaBase64
 
 ```TypeScript
@@ -2512,7 +2466,7 @@ Obtains an image's Base64 code based on the specified resource ID. This API uses
 
 **Deprecated since:** 9
 
-**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64)
 
 <!--Device-ResourceManager-getMediaBase64(resId: number): Promise<string>--><!--Device-ResourceManager-getMediaBase64(resId: number): Promise<string>-End-->
 
@@ -2545,7 +2499,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getmediabase64byname"></a>
 ## getMediaBase64ByName
 
 ```TypeScript
@@ -2604,7 +2557,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediabase64byname-1"></a>
 ## getMediaBase64ByName
 
 ```TypeScript
@@ -2664,7 +2616,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediabase64byname-2"></a>
 ## getMediaBase64ByName
 
 ```TypeScript
@@ -2726,7 +2677,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediabase64byname-3"></a>
 ## getMediaBase64ByName
 
 ```TypeScript
@@ -2789,7 +2739,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediabase64bynamesync"></a>
 ## getMediaBase64ByNameSync
 
 ```TypeScript
@@ -2857,7 +2806,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediabyname"></a>
 ## getMediaByName
 
 ```TypeScript
@@ -2916,7 +2864,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediabyname-1"></a>
 ## getMediaByName
 
 ```TypeScript
@@ -2976,7 +2923,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediabyname-2"></a>
 ## getMediaByName
 
 ```TypeScript
@@ -3038,7 +2984,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediabyname-3"></a>
 ## getMediaByName
 
 ```TypeScript
@@ -3101,7 +3046,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediabynamesync"></a>
 ## getMediaByNameSync
 
 ```TypeScript
@@ -3169,7 +3113,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontent"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3182,7 +3125,7 @@ Obtains media file content based on the specified resource object. This API uses
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3234,7 +3177,6 @@ try {
 
 ```
 
-<a id="getmediacontent-1"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3247,7 +3189,7 @@ Obtains media file content for the specified screen density based on the specifi
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3300,7 +3242,6 @@ try {
 
 ```
 
-<a id="getmediacontent-2"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3313,7 +3254,7 @@ Obtains media file content based on the specified resource object. This API uses
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3368,7 +3309,6 @@ try {
 
 ```
 
-<a id="getmediacontent-3"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3381,7 +3321,7 @@ Obtains media file content for the specified screen density based on the specifi
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent-1)
+**Substitutes:** [getMediaContent(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontent)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3437,7 +3377,6 @@ try {
 
 ```
 
-<a id="getmediacontent-4"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3497,7 +3436,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontent-5"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3557,7 +3495,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontent-6"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3619,7 +3556,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontent-7"></a>
 ## getMediaContent
 
 ```TypeScript
@@ -3682,7 +3618,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontentbase64"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3695,7 +3630,7 @@ Obtains an image's Base64 code based on the specified resource object. This API 
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3747,7 +3682,6 @@ try {
 
 ```
 
-<a id="getmediacontentbase64-1"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3760,7 +3694,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3813,7 +3747,6 @@ try {
 
 ```
 
-<a id="getmediacontentbase64-2"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3826,7 +3759,7 @@ Obtains an image's Base64 code based on the specified resource object. This API 
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3881,7 +3814,6 @@ try {
 
 ```
 
-<a id="getmediacontentbase64-3"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -3894,7 +3826,7 @@ Obtains an image's Base64 code for the specified screen density based on the spe
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64-1)
+**Substitutes:** [getMediaContentBase64(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -3950,7 +3882,6 @@ try {
 
 ```
 
-<a id="getmediacontentbase64-4"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -4009,7 +3940,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontentbase64-5"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -4069,7 +3999,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontentbase64-6"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -4131,7 +4060,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontentbase64-7"></a>
 ## getMediaContentBase64
 
 ```TypeScript
@@ -4194,7 +4122,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontentbase64sync"></a>
 ## getMediaContentBase64Sync
 
 ```TypeScript
@@ -4262,7 +4189,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontentbase64sync-1"></a>
 ## getMediaContentBase64Sync
 
 ```TypeScript
@@ -4275,7 +4201,7 @@ Obtains an image's Base64 code for the default or specified screen density based
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContentBase64Sync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64sync-1)
+**Substitutes:** [getMediaContentBase64Sync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentbase64sync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -4335,7 +4261,6 @@ try {
 
 ```
 
-<a id="getmediacontentsync"></a>
 ## getMediaContentSync
 
 ```TypeScript
@@ -4403,7 +4328,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getmediacontentsync-1"></a>
 ## getMediaContentSync
 
 ```TypeScript
@@ -4416,7 +4340,7 @@ Obtains the media file content for the default or specified screen density based
 
 **Deprecated since:** 20
 
-**Substitutes:** [getMediaContentSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentsync-1)
+**Substitutes:** [getMediaContentSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getmediacontentsync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -4476,7 +4400,6 @@ try {
 
 ```
 
-<a id="getnumber"></a>
 ## getNumber
 
 ```TypeScript
@@ -4577,7 +4500,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getnumber-1"></a>
 ## getNumber
 
 ```TypeScript
@@ -4590,7 +4512,7 @@ Obtains an integer or float number based on the specified resource object. This 
 
 **Deprecated since:** 20
 
-**Substitutes:** [getNumber(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getnumber-1)
+**Substitutes:** [getNumber(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getnumber)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -4658,7 +4580,6 @@ try {
 
 ```
 
-<a id="getnumberbyname"></a>
 ## getNumberByName
 
 ```TypeScript
@@ -4759,14 +4680,13 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getoverrideconfiguration"></a>
 ## getOverrideConfiguration
 
 ```TypeScript
 getOverrideConfiguration(): Configuration
 ```
 
-Obtains the configuration of differentiated resources. This API returns the result synchronously. This API allows a common **ResourceManager** object and a **ResourceManager** object obtained through [getOverrideResourceManager](arkts-localization-resourcemanager-resourcemanager-i.md#getoverrideresourcemanager-1) to obtain the configuration of differentiated resources.
+Obtains the configuration of differentiated resources. This API returns the result synchronously. This API allows a common **ResourceManager** object and a **ResourceManager** object obtained through [getOverrideResourceManager](arkts-localization-resourcemanager-resourcemanager-i.md#getoverrideresourcemanager) to obtain the configuration of differentiated resources.
 
 **Since:** 12
 
@@ -4806,7 +4726,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getoverrideresourcemanager"></a>
 ## getOverrideResourceManager
 
 ```TypeScript
@@ -4827,7 +4746,7 @@ Obtains a **ResourceManager** object for loading differentiated resources. This 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| configuration | [Configuration](../../apis-arkui/arkts-apis/arkts-arkui-window-configuration-i.md) | No | Resource configuration.<br>After obtaining the configuration of differentiated resources through [getOverrideConfiguration](arkts-localization-resourcemanager-resourcemanager-i.md#getoverrideconfiguration-1), modify the configuration items as required, and then pass these items as input parameters to the API.<br>If no configuration is specified, the current system configuration is used. |
+| configuration | [Configuration](../../apis-arkui/arkts-apis/arkts-arkui-window-configuration-i.md) | No | Resource configuration.<br>After obtaining the configuration of differentiated resources through [getOverrideConfiguration](arkts-localization-resourcemanager-resourcemanager-i.md#getoverrideconfiguration), modify the configuration items as required, and then pass these items as input parameters to the API.<br>If no configuration is specified, the current system configuration is used. |
 
 **Return value:**
 
@@ -4865,7 +4784,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getpluralstring"></a>
 ## getPluralString
 
 ```TypeScript
@@ -4873,7 +4791,6 @@ getPluralString(resId: number, num: number, callback: AsyncCallback<string>): vo
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource ID. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -4883,7 +4800,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getPluralStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getpluralstringvalue-1)
+**Substitutes:** [getPluralStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getpluralstringvalue)
 
 <!--Device-ResourceManager-getPluralString(resId: number, num: number, callback: AsyncCallback<string>): void--><!--Device-ResourceManager-getPluralString(resId: number, num: number, callback: AsyncCallback<string>): void-End-->
 
@@ -4914,7 +4831,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getpluralstring-1"></a>
 ## getPluralString
 
 ```TypeScript
@@ -4922,7 +4838,6 @@ getPluralString(resId: number, num: number): Promise<string>
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource ID. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -4932,7 +4847,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getPluralStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getpluralstringvalue-1)
+**Substitutes:** [getPluralStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getpluralstringvalue)
 
 <!--Device-ResourceManager-getPluralString(resId: number, num: number): Promise<string>--><!--Device-ResourceManager-getPluralString(resId: number, num: number): Promise<string>-End-->
 
@@ -4966,7 +4881,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getpluralstringbyname"></a>
 ## getPluralStringByName
 
 ```TypeScript
@@ -4974,7 +4888,6 @@ getPluralStringByName(resName: string, num: number, callback: _AsyncCallback<str
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource name. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -4984,7 +4897,7 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 
 **Deprecated since:** 18
 
-**Substitutes:** [getIntPluralStringByNameSync(resName:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringbynamesync-1)
+**Substitutes:** [getIntPluralStringByNameSync(resName:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringbynamesync)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5049,7 +4962,6 @@ this.context.resourceManager.getPluralStringByName("test", 1, (error: BusinessEr
 
 ```
 
-<a id="getpluralstringbyname-1"></a>
 ## getPluralStringByName
 
 ```TypeScript
@@ -5057,7 +4969,6 @@ getPluralStringByName(resName: string, num: number): Promise<string>
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource name. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -5067,7 +4978,7 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 
 **Deprecated since:** 18
 
-**Substitutes:** [getIntPluralStringByNameSync(resName:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringbynamesync-1)
+**Substitutes:** [getIntPluralStringByNameSync(resName:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringbynamesync)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5137,7 +5048,6 @@ this.context.resourceManager.getPluralStringByName("test", 1)
 
 ```
 
-<a id="getpluralstringbynamesync"></a>
 ## getPluralStringByNameSync
 
 ```TypeScript
@@ -5145,7 +5055,6 @@ getPluralStringByNameSync(resName: string, num: number): string
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource name. This API returns the result synchronously.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -5155,7 +5064,7 @@ Obtains singular/plural strings based on the specified quantity and resource nam
 
 **Deprecated since:** 18
 
-**Substitutes:** [getIntPluralStringByNameSync(resName:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringbynamesync-1)
+**Substitutes:** [getIntPluralStringByNameSync(resName:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringbynamesync)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5226,7 +5135,6 @@ try {
 
 ```
 
-<a id="getpluralstringvalue"></a>
 ## getPluralStringValue
 
 ```TypeScript
@@ -5234,7 +5142,6 @@ getPluralStringValue(resource: Resource, num: number, callback: _AsyncCallback<s
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource object. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -5244,7 +5151,7 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 
 **Deprecated since:** 18
 
-**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -5318,7 +5225,6 @@ this.context.resourceManager.getPluralStringValue(resource, 1,
 
 ```
 
-<a id="getpluralstringvalue-1"></a>
 ## getPluralStringValue
 
 ```TypeScript
@@ -5326,7 +5232,6 @@ getPluralStringValue(resource: Resource, num: number): Promise<string>
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource object. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -5336,7 +5241,7 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 
 **Deprecated since:** 18
 
-**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -5414,7 +5319,6 @@ this.context.resourceManager.getPluralStringValue(resource, 1)
 
 ```
 
-<a id="getpluralstringvalue-2"></a>
 ## getPluralStringValue
 
 ```TypeScript
@@ -5422,7 +5326,6 @@ getPluralStringValue(resId: number, num: number, callback: _AsyncCallback<string
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource ID. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -5432,7 +5335,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 **Deprecated since:** 18
 
-**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5498,7 +5401,6 @@ this.context.resourceManager.getPluralStringValue($r("app.plural.test").id, 1,
 
 ```
 
-<a id="getpluralstringvalue-3"></a>
 ## getPluralStringValue
 
 ```TypeScript
@@ -5506,7 +5408,6 @@ getPluralStringValue(resId: number, num: number): Promise<string>
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource ID. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -5516,7 +5417,7 @@ Obtains singular/plural strings based on the specified quantity and resource ID.
 
 **Deprecated since:** 18
 
-**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5586,7 +5487,6 @@ this.context.resourceManager.getPluralStringValue($r("app.plural.test").id, 1)
 
 ```
 
-<a id="getpluralstringvaluesync"></a>
 ## getPluralStringValueSync
 
 ```TypeScript
@@ -5594,7 +5494,6 @@ getPluralStringValueSync(resId: number, num: number): string
 ```
 
 Obtains singular/plural strings based on the specified resource ID and quantity. This API returns the result synchronously.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -5604,7 +5503,7 @@ Obtains singular/plural strings based on the specified resource ID and quantity.
 
 **Deprecated since:** 18
 
-**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -5675,7 +5574,6 @@ try {
 
 ```
 
-<a id="getpluralstringvaluesync-1"></a>
 ## getPluralStringValueSync
 
 ```TypeScript
@@ -5683,7 +5581,6 @@ getPluralStringValueSync(resource: Resource, num: number): string
 ```
 
 Obtains singular/plural strings based on the specified quantity and resource object. This API returns the result synchronously.
-
 > **NOTE**  
 >  
 > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see  
@@ -5693,7 +5590,7 @@ Obtains singular/plural strings based on the specified quantity and resource obj
 
 **Deprecated since:** 18
 
-**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync-1)
+**Substitutes:** [getIntPluralStringValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getintpluralstringvaluesync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -5772,7 +5669,6 @@ try {
 
 ```
 
-<a id="getrawfd"></a>
 ## getRawFd
 
 ```TypeScript
@@ -5780,11 +5676,10 @@ getRawFd(path: string, callback: _AsyncCallback<RawFileDescriptor>): void
 ```
 
 Obtains the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
-> To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfdsync-1) or  
-> [closeRawFd](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd-1) to  
+> To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfdsync) or  
+> [closeRawFd](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd) to  
 > close the fd after use.
 
 **Since:** 9
@@ -5839,7 +5734,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getrawfd-1"></a>
 ## getRawFd
 
 ```TypeScript
@@ -5847,11 +5741,10 @@ getRawFd(path: string): Promise<RawFileDescriptor>
 ```
 
 Obtains the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
-> To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfdsync-1) or  
-> [closeRawFd](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd-1) to  
+> To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfdsync) or  
+> [closeRawFd](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd) to  
 > close the fd after use.
 
 **Since:** 9
@@ -5909,7 +5802,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getrawfdsync"></a>
 ## getRawFdSync
 
 ```TypeScript
@@ -5917,11 +5809,10 @@ getRawFdSync(path: string): RawFileDescriptor
 ```
 
 Obtains the file descriptor (fd) of the HAP where the rawfile file in the resources/rawfile directory is located.This API is called in synchronous mode.
-
 > **NOTE**  
 >  
-> To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfdsync-1) or  
-> [closeRawFd](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd-1) to  
+> To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfdsync) or  
+> [closeRawFd](arkts-localization-resourcemanager-resourcemanager-i.md#closerawfd) to  
 > close the fd after use.
 
 **Since:** 10
@@ -5972,7 +5863,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getrawfile"></a>
 ## getRawFile
 
 ```TypeScript
@@ -5985,7 +5875,7 @@ Obtains the content of a rawfile in the **resources/rawfile** directory. This AP
 
 **Deprecated since:** 9
 
-**Substitutes:** [getRawFileContent(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfilecontent-1)
+**Substitutes:** [getRawFileContent(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfilecontent)
 
 <!--Device-ResourceManager-getRawFile(path: string, callback: AsyncCallback<Uint8Array>): void--><!--Device-ResourceManager-getRawFile(path: string, callback: AsyncCallback<Uint8Array>): void-End-->
 
@@ -6015,7 +5905,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getrawfile-1"></a>
 ## getRawFile
 
 ```TypeScript
@@ -6028,7 +5917,7 @@ Obtains the content of a rawfile in the **resources/rawfile** directory. This AP
 
 **Deprecated since:** 9
 
-**Substitutes:** [getRawFileContent(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfilecontent-1)
+**Substitutes:** [getRawFileContent(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfilecontent)
 
 <!--Device-ResourceManager-getRawFile(path: string): Promise<Uint8Array>--><!--Device-ResourceManager-getRawFile(path: string): Promise<Uint8Array>-End-->
 
@@ -6061,7 +5950,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getrawfilecontent"></a>
 ## getRawFileContent
 
 ```TypeScript
@@ -6119,7 +6007,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getrawfilecontent-1"></a>
 ## getRawFileContent
 
 ```TypeScript
@@ -6180,7 +6067,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getrawfilecontentsync"></a>
 ## getRawFileContentSync
 
 ```TypeScript
@@ -6237,7 +6123,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getrawfiledescriptor"></a>
 ## getRawFileDescriptor
 
 ```TypeScript
@@ -6250,7 +6135,7 @@ Obtains the fd of the rawfile in the **resources/rawfile** directory. This API u
 
 **Deprecated since:** 9
 
-**Substitutes:** [getRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfd-1)
+**Substitutes:** [getRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfd)
 
 <!--Device-ResourceManager-getRawFileDescriptor(path: string, callback: AsyncCallback<RawFileDescriptor>): void--><!--Device-ResourceManager-getRawFileDescriptor(path: string, callback: AsyncCallback<RawFileDescriptor>): void-End-->
 
@@ -6282,7 +6167,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getrawfiledescriptor-1"></a>
 ## getRawFileDescriptor
 
 ```TypeScript
@@ -6295,7 +6179,7 @@ Obtains the fd of the rawfile in the **resources/rawfile** directory. This API u
 
 **Deprecated since:** 9
 
-**Substitutes:** [getRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfd-1)
+**Substitutes:** [getRawFd(path:](arkts-localization-resourcemanager-resourcemanager-i.md#getrawfd)
 
 <!--Device-ResourceManager-getRawFileDescriptor(path: string): Promise<RawFileDescriptor>--><!--Device-ResourceManager-getRawFileDescriptor(path: string): Promise<RawFileDescriptor>-End-->
 
@@ -6330,7 +6214,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getrawfilelist"></a>
 ## getRawFileList
 
 ```TypeScript
@@ -6338,7 +6221,6 @@ getRawFileList(path: string, callback: _AsyncCallback<Array<string>>): void
 ```
 
 Obtains the list of folders and files in the **resources/rawfile** directory. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > If there is no folder or file in the directory, an exception is thrown. If there are folders and files in the  
@@ -6389,7 +6271,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getrawfilelist-1"></a>
 ## getRawFileList
 
 ```TypeScript
@@ -6397,7 +6278,6 @@ getRawFileList(path: string): Promise<Array<string>>
 ```
 
 Obtains the list of folders and files in the **resources/rawfile** directory. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > If there is no folder or file in the directory, an exception is thrown. If there are folders and files in the  
@@ -6453,7 +6333,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getrawfilelistsync"></a>
 ## getRawFileListSync
 
 ```TypeScript
@@ -6461,7 +6340,6 @@ getRawFileListSync(path: string): Array<string>
 ```
 
 Obtains the list of folders and files in the **resources/rawfile** directory. This API returns the result synchronously.
-
 > **NOTE**  
 >  
 > If there is no folder or file in the directory, an exception is thrown. If there are folders and files in the  
@@ -6518,7 +6396,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getresourcename"></a>
 ## getResourceName
 
 ```TypeScript
@@ -6591,7 +6468,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstring"></a>
 ## getString
 
 ```TypeScript
@@ -6604,7 +6480,7 @@ Obtains a string based on the specified resource ID. This API uses an asynchrono
 
 **Deprecated since:** 9
 
-**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue-1)
+**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue)
 
 <!--Device-ResourceManager-getString(resId: number, callback: AsyncCallback<string>): void--><!--Device-ResourceManager-getString(resId: number, callback: AsyncCallback<string>): void-End-->
 
@@ -6632,7 +6508,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getstring-1"></a>
 ## getString
 
 ```TypeScript
@@ -6645,7 +6520,7 @@ Obtains a string based on the specified resource ID. This API uses a promise to 
 
 **Deprecated since:** 9
 
-**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue-1)
+**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue)
 
 <!--Device-ResourceManager-getString(resId: number): Promise<string>--><!--Device-ResourceManager-getString(resId: number): Promise<string>-End-->
 
@@ -6678,7 +6553,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getstringarray"></a>
 ## getStringArray
 
 ```TypeScript
@@ -6691,7 +6565,7 @@ Obtains a string array based on the specified resource ID. This API uses an asyn
 
 **Deprecated since:** 9
 
-**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue-1)
+**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue)
 
 <!--Device-ResourceManager-getStringArray(resId: number, callback: AsyncCallback<Array<string>>): void--><!--Device-ResourceManager-getStringArray(resId: number, callback: AsyncCallback<Array<string>>): void-End-->
 
@@ -6719,7 +6593,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getstringarray-1"></a>
 ## getStringArray
 
 ```TypeScript
@@ -6732,7 +6605,7 @@ Obtains a string array based on the specified resource ID. This API uses a promi
 
 **Deprecated since:** 9
 
-**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue-1)
+**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue)
 
 <!--Device-ResourceManager-getStringArray(resId: number): Promise<Array<string>>--><!--Device-ResourceManager-getStringArray(resId: number): Promise<Array<string>>-End-->
 
@@ -6765,7 +6638,6 @@ resourceManager.getResourceManager((error, mgr) => {
 
 ```
 
-<a id="getstringarraybyname"></a>
 ## getStringArrayByName
 
 ```TypeScript
@@ -6838,7 +6710,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringarraybyname-1"></a>
 ## getStringArrayByName
 
 ```TypeScript
@@ -6915,7 +6786,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringarraybynamesync"></a>
 ## getStringArrayByNameSync
 
 ```TypeScript
@@ -6993,7 +6863,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringarrayvalue"></a>
 ## getStringArrayValue
 
 ```TypeScript
@@ -7006,7 +6875,7 @@ Obtains a string array based on the specified resource object. This API uses an 
 
 **Deprecated since:** 20
 
-**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue-1)
+**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -7071,7 +6940,6 @@ this.context.resourceManager.getStringArrayValue(resource, (error: BusinessError
 
 ```
 
-<a id="getstringarrayvalue-1"></a>
 ## getStringArrayValue
 
 ```TypeScript
@@ -7084,7 +6952,7 @@ Obtains a string array based on the specified resource object. This API uses a p
 
 **Deprecated since:** 20
 
-**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue-1)
+**Substitutes:** [getStringArrayValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvalue)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -7154,7 +7022,6 @@ this.context.resourceManager.getStringArrayValue(resource)
 
 ```
 
-<a id="getstringarrayvalue-2"></a>
 ## getStringArrayValue
 
 ```TypeScript
@@ -7227,7 +7094,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringarrayvalue-3"></a>
 ## getStringArrayValue
 
 ```TypeScript
@@ -7304,7 +7170,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringarrayvaluesync"></a>
 ## getStringArrayValueSync
 
 ```TypeScript
@@ -7382,7 +7247,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringarrayvaluesync-1"></a>
 ## getStringArrayValueSync
 
 ```TypeScript
@@ -7395,7 +7259,7 @@ Obtains a string array based on the specified resource object. This API returns 
 
 **Deprecated since:** 20
 
-**Substitutes:** [getStringArrayValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvaluesync-1)
+**Substitutes:** [getStringArrayValueSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringarrayvaluesync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -7466,7 +7330,6 @@ try {
 
 ```
 
-<a id="getstringbyname"></a>
 ## getStringByName
 
 ```TypeScript
@@ -7534,7 +7397,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringbyname-1"></a>
 ## getStringByName
 
 ```TypeScript
@@ -7605,7 +7467,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringbynamesync"></a>
 ## getStringByNameSync
 
 ```TypeScript
@@ -7679,7 +7540,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringbynamesync-1"></a>
 ## getStringByNameSync
 
 ```TypeScript
@@ -7755,7 +7615,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringsync"></a>
 ## getStringSync
 
 ```TypeScript
@@ -7829,7 +7688,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringsync-1"></a>
 ## getStringSync
 
 ```TypeScript
@@ -7905,7 +7763,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getstringsync-2"></a>
 ## getStringSync
 
 ```TypeScript
@@ -7918,7 +7775,7 @@ Obtains a string based on the specified resource object. This API returns the re
 
 **Deprecated since:** 20
 
-**Substitutes:** [getStringSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringsync-1)
+**Substitutes:** [getStringSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringsync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -7985,7 +7842,6 @@ try {
 
 ```
 
-<a id="getstringsync-3"></a>
 ## getStringSync
 
 ```TypeScript
@@ -7998,7 +7854,7 @@ Obtains a string based on the specified resource object and formats the string b
 
 **Deprecated since:** 20
 
-**Substitutes:** [getStringSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringsync-1)
+**Substitutes:** [getStringSync(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringsync)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -8067,7 +7923,6 @@ try {
 
 ```
 
-<a id="getstringvalue"></a>
 ## getStringValue
 
 ```TypeScript
@@ -8080,7 +7935,7 @@ Obtains a string based on the specified resource object. This API uses an asynch
 
 **Deprecated since:** 20
 
-**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue-1)
+**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -8141,7 +7996,6 @@ this.context.resourceManager.getStringValue(resource, (error: BusinessError, val
 
 ```
 
-<a id="getstringvalue-1"></a>
 ## getStringValue
 
 ```TypeScript
@@ -8154,7 +8008,7 @@ Obtains a string based on the specified resource object. This API uses a promise
 
 **Deprecated since:** 20
 
-**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue-1)
+**Substitutes:** [getStringValue(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getstringvalue)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -8207,7 +8061,6 @@ this.context.resourceManager.getStringValue(resource, (error: BusinessError, val
 
 ```
 
-<a id="getstringvalue-2"></a>
 ## getStringValue
 
 ```TypeScript
@@ -8240,7 +8093,6 @@ Obtains a string based on the specified resource ID. This API uses an asynchrono
 | [9001002](../errorcode-resource-manager.md#9001002-matching-resource-not-found-based-on-the-current-resource-id) | No matching resource is found based on the resource ID. |
 | [9001006](../errorcode-resource-manager.md#9001006-circular-reference-in-resources) | The resource is referenced cyclically. |
 
-<a id="getstringvalue-3"></a>
 ## getStringValue
 
 ```TypeScript
@@ -8311,7 +8163,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getsymbol"></a>
 ## getSymbol
 
 ```TypeScript
@@ -8372,7 +8223,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="getsymbol-1"></a>
 ## getSymbol
 
 ```TypeScript
@@ -8385,7 +8235,7 @@ Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/desig
 
 **Deprecated since:** 20
 
-**Substitutes:** [getSymbol(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getsymbol-1)
+**Substitutes:** [getSymbol(resId:](arkts-localization-resourcemanager-resourcemanager-i.md#getsymbol)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -8439,7 +8289,6 @@ try {
 
 ```
 
-<a id="getsymbolbyname"></a>
 ## getSymbolByName
 
 ```TypeScript
@@ -8500,7 +8349,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="israwdir"></a>
 ## isRawDir
 
 ```TypeScript
@@ -8566,7 +8414,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -8596,7 +8443,6 @@ try {
 
 ```
 
-<a id="removeresource"></a>
 ## removeResource
 
 ```TypeScript
@@ -8604,7 +8450,6 @@ removeResource(path: string) : void
 ```
 
 Removes the resources loaded from the specified path to restore the original resources.
-
 > **NOTE**  
 >  
 > Resource overwriting is not supported for the **rawfile** and **resfile** directories.
@@ -8652,14 +8497,13 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="updateoverrideconfiguration"></a>
 ## updateOverrideConfiguration
 
 ```TypeScript
 updateOverrideConfiguration(configuration: Configuration): void
 ```
 
-Updated configuration of differentiated resources. This API allows a common **ResourceManager** object and a **ResourceManager** object obtained through [getOverrideResourceManager](arkts-localization-resourcemanager-resourcemanager-i.md#getoverrideresourcemanager-1) to update the configuration of differentiated resources.
+Updated configuration of differentiated resources. This API allows a common **ResourceManager** object and a **ResourceManager** object obtained through [getOverrideResourceManager](arkts-localization-resourcemanager-resourcemanager-i.md#getoverrideresourcemanager) to update the configuration of differentiated resources.
 
 **Since:** 12
 
@@ -8673,7 +8517,7 @@ Updated configuration of differentiated resources. This API allows a common **Re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| configuration | [Configuration](../../apis-arkui/arkts-apis/arkts-arkui-window-configuration-i.md) | Yes | Configuration of differentiated resources. After obtaining the configuration of differentiated resources through [getOverrideConfiguration](arkts-localization-resourcemanager-resourcemanager-i.md#getoverrideconfiguration-1), modify the configuration items as required, and then pass these items as input parameters to the API. |
+| configuration | [Configuration](../../apis-arkui/arkts-apis/arkts-arkui-window-configuration-i.md) | Yes | Configuration of differentiated resources. After obtaining the configuration of differentiated resources through [getOverrideConfiguration](arkts-localization-resourcemanager-resourcemanager-i.md#getoverrideconfiguration), modify the configuration items as required, and then pass these items as input parameters to the API. |
 
 **Error codes:**
 

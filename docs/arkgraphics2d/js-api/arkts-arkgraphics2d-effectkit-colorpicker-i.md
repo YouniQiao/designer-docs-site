@@ -14,7 +14,6 @@ A class used to obtain the color from an image. Before calling any method of Col
 import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
-<a id="getaveragecolor"></a>
 ## getAverageColor
 
 ```TypeScript
@@ -68,7 +67,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="gethighestsaturationcolor"></a>
 ## getHighestSaturationColor
 
 ```TypeScript
@@ -122,7 +120,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getlargestproportioncolor"></a>
 ## getLargestProportionColor
 
 ```TypeScript
@@ -176,7 +173,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getmaincolor"></a>
 ## getMainColor
 
 ```TypeScript
@@ -232,7 +228,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getmaincolorsync"></a>
 ## getMainColorSync
 
 ```TypeScript
@@ -286,7 +281,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="gettopproportioncolors"></a>
 ## getTopProportionColors
 
 ```TypeScript
@@ -350,7 +344,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="isblackorwhiteorgraycolor"></a>
 ## isBlackOrWhiteOrGrayColor
 
 ```TypeScript

@@ -14,7 +14,6 @@ AVMusicTemplate interface
 import { avMusicTemplate } from '@kit.AVSessionKit';
 ```
 
-<a id="destroy"></a>
 ## destroy
 
 ```TypeScript
@@ -43,7 +42,6 @@ Destroy the AVMusicTemplate instance.
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function destroy can not work correctly due to limited device capabilities. |
 
-<a id="offclearsearchhistory"></a>
 ## offClearSearchHistory
 
 ```TypeScript
@@ -74,7 +72,6 @@ Unregister clear search history callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offdownloadmediaentity"></a>
 ## offDownloadMediaEntity
 
 ```TypeScript
@@ -105,7 +102,6 @@ Unregister download media entity callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offexecuteaction"></a>
 ## offExecuteAction
 
 ```TypeScript
@@ -136,7 +132,6 @@ Unregister execute action callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offfavoritemediaentity"></a>
 ## offFavoriteMediaEntity
 
 ```TypeScript
@@ -167,7 +162,6 @@ Unregister favorite media entity callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offhandlememberpurchase"></a>
 ## offHandleMemberPurchase
 
 ```TypeScript
@@ -198,7 +192,6 @@ Unregister handle member purchase callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offlogin"></a>
 ## offLogin
 
 ```TypeScript
@@ -229,7 +222,6 @@ Unregister login callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offplayforsearch"></a>
 ## offPlayForSearch
 
 ```TypeScript
@@ -260,7 +252,6 @@ Unregister play for search callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offplaymediaentity"></a>
 ## offPlayMediaEntity
 
 ```TypeScript
@@ -291,7 +282,6 @@ Unregister play media entity callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offproblemandadvice"></a>
 ## offProblemAndAdvice
 
 ```TypeScript
@@ -322,7 +312,6 @@ Unregister problem and advice callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerycompilation"></a>
 ## offQueryCompilation
 
 ```TypeScript
@@ -353,7 +342,6 @@ Unregister query compilation callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerycompilationbykeyword"></a>
 ## offQueryCompilationByKeyword
 
 ```TypeScript
@@ -384,7 +372,6 @@ Unregister query compilation by keyword callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerycurrentsingle"></a>
 ## offQueryCurrentSingle
 
 ```TypeScript
@@ -415,7 +402,6 @@ Unregister query current single callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerycustomcontent"></a>
 ## offQueryCustomContent
 
 ```TypeScript
@@ -446,7 +432,6 @@ Unregister query custom content callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offqueryhotwords"></a>
 ## offQueryHotWords
 
 ```TypeScript
@@ -477,7 +462,6 @@ Unregister query hot words callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerymaintabs"></a>
 ## offQueryMainTabs
 
 ```TypeScript
@@ -508,7 +492,6 @@ Unregister query main tabs callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerymediaentity"></a>
 ## offQueryMediaEntity
 
 ```TypeScript
@@ -539,7 +522,6 @@ Unregister query media entity callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerymediaentitybykeyword"></a>
 ## offQueryMediaEntityByKeyword
 
 ```TypeScript
@@ -570,7 +552,6 @@ Unregister query media entity by keyword callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerymediatabcontent"></a>
 ## offQueryMediaTabContent
 
 ```TypeScript
@@ -601,7 +582,6 @@ Unregister query media tab content callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerymemberpurchase"></a>
 ## offQueryMemberPurchase
 
 ```TypeScript
@@ -632,7 +612,6 @@ Unregister query member purchase callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offqueryplaylist"></a>
 ## offQueryPlaylist
 
 ```TypeScript
@@ -663,7 +642,6 @@ Unregister query playlist callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offqueryrecommendmediaentitylist"></a>
 ## offQueryRecommendMediaEntityList
 
 ```TypeScript
@@ -694,7 +672,6 @@ Unregister query recommend media entity list callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offquerysearchhistory"></a>
 ## offQuerySearchHistory
 
 ```TypeScript
@@ -725,7 +702,6 @@ Unregister query search history callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offrequestdialoginfo"></a>
 ## offRequestDialogInfo
 
 ```TypeScript
@@ -756,7 +732,6 @@ Unregister request dialog info callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="offsettingschange"></a>
 ## offSettingsChange
 
 ```TypeScript
@@ -787,7 +762,6 @@ Unregister settings change callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onclearsearchhistory"></a>
 ## onClearSearchHistory
 
 ```TypeScript
@@ -818,7 +792,6 @@ Register clear search history callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="ondownloadmediaentity"></a>
 ## onDownloadMediaEntity
 
 ```TypeScript
@@ -849,7 +822,6 @@ Register download media entity callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onexecuteaction"></a>
 ## onExecuteAction
 
 ```TypeScript
@@ -880,7 +852,6 @@ Register execute action callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onfavoritemediaentity"></a>
 ## onFavoriteMediaEntity
 
 ```TypeScript
@@ -911,7 +882,6 @@ Register favorite media entity callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onhandlememberpurchase"></a>
 ## onHandleMemberPurchase
 
 ```TypeScript
@@ -942,7 +912,6 @@ Register handle member purchase callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onlogin"></a>
 ## onLogin
 
 ```TypeScript
@@ -973,7 +942,6 @@ Register login callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onplayforsearch"></a>
 ## onPlayForSearch
 
 ```TypeScript
@@ -1004,7 +972,6 @@ Register play for search callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onplaymediaentity"></a>
 ## onPlayMediaEntity
 
 ```TypeScript
@@ -1035,7 +1002,6 @@ Register play media entity callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onproblemandadvice"></a>
 ## onProblemAndAdvice
 
 ```TypeScript
@@ -1066,7 +1032,6 @@ Register problem and advice callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerycompilation"></a>
 ## onQueryCompilation
 
 ```TypeScript
@@ -1097,7 +1062,6 @@ Register query compilation callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerycompilationbykeyword"></a>
 ## onQueryCompilationByKeyword
 
 ```TypeScript
@@ -1128,7 +1092,6 @@ Register query compilation by keyword callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerycurrentsingle"></a>
 ## onQueryCurrentSingle
 
 ```TypeScript
@@ -1159,7 +1122,6 @@ Register query current single callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerycustomcontent"></a>
 ## onQueryCustomContent
 
 ```TypeScript
@@ -1190,7 +1152,6 @@ Register query custom content callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onqueryhotwords"></a>
 ## onQueryHotWords
 
 ```TypeScript
@@ -1221,7 +1182,6 @@ Register query hot words callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerymaintabs"></a>
 ## onQueryMainTabs
 
 ```TypeScript
@@ -1252,7 +1212,6 @@ Register query main tabs callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerymediaentity"></a>
 ## onQueryMediaEntity
 
 ```TypeScript
@@ -1283,7 +1242,6 @@ Register query media entity callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerymediaentitybykeyword"></a>
 ## onQueryMediaEntityByKeyword
 
 ```TypeScript
@@ -1314,7 +1272,6 @@ Register query media entity by keyword callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerymediatabcontent"></a>
 ## onQueryMediaTabContent
 
 ```TypeScript
@@ -1345,7 +1302,6 @@ Register query media tab content callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerymemberpurchase"></a>
 ## onQueryMemberPurchase
 
 ```TypeScript
@@ -1376,7 +1332,6 @@ Register query member purchase callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onqueryplaylist"></a>
 ## onQueryPlaylist
 
 ```TypeScript
@@ -1407,7 +1362,6 @@ Register query playlist callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onqueryrecommendmediaentitylist"></a>
 ## onQueryRecommendMediaEntityList
 
 ```TypeScript
@@ -1438,7 +1392,6 @@ Register query recommend media entity list callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onquerysearchhistory"></a>
 ## onQuerySearchHistory
 
 ```TypeScript
@@ -1469,7 +1422,6 @@ Register query search history callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onrequestdialoginfo"></a>
 ## onRequestDialogInfo
 
 ```TypeScript
@@ -1500,7 +1452,6 @@ Register request dialog info callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="onsettingschange"></a>
 ## onSettingsChange
 
 ```TypeScript
@@ -1531,7 +1482,6 @@ Register settings change callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
-<a id="reportexecuteaction"></a>
 ## reportExecuteAction
 
 ```TypeScript
@@ -1569,7 +1519,6 @@ Report execute action information to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="setcurrentsingle"></a>
 ## setCurrentSingle
 
 ```TypeScript
@@ -1606,7 +1555,6 @@ Report current single song to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="setcustomelements"></a>
 ## setCustomElements
 
 ```TypeScript
@@ -1620,9 +1568,7 @@ Report custom elements change information to MediaUI.
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-AVMusicTemplate-setCustomElements(actionType: ActionType, customType: CustomType,
-      customElement: CustomElement): Promise<void>--><!--Device-AVMusicTemplate-setCustomElements(actionType: ActionType, customType: CustomType,
-      customElement: CustomElement): Promise<void>-End-->
+<!--Device-AVMusicTemplate-setCustomElements(actionType: ActionType, customType: CustomType,      customElement: CustomElement): Promise<void>--><!--Device-AVMusicTemplate-setCustomElements(actionType: ActionType, customType: CustomType,      customElement: CustomElement): Promise<void>-End-->
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
 
@@ -1648,7 +1594,6 @@ Report custom elements change information to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="setdialogcommand"></a>
 ## setDialogCommand
 
 ```TypeScript
@@ -1686,7 +1631,6 @@ Report dialog command to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="setdownloadmediaentitystatus"></a>
 ## setDownloadMediaEntityStatus
 
 ```TypeScript
@@ -1723,7 +1667,6 @@ Report single download status information to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="setextensionability"></a>
 ## setExtensionAbility
 
 ```TypeScript
@@ -1760,7 +1703,6 @@ Report execute extension ability to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="setmediaentities"></a>
 ## setMediaEntities
 
 ```TypeScript
@@ -1797,7 +1739,6 @@ Report media resource change information to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="setplaylist"></a>
 ## setPlaylist
 
 ```TypeScript
@@ -1834,7 +1775,6 @@ Report play list information to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="setsettings"></a>
 ## setSettings
 
 ```TypeScript
@@ -1871,7 +1811,6 @@ Report settings information to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="settabcontent"></a>
 ## setTabContent
 
 ```TypeScript
@@ -1909,7 +1848,6 @@ Report tab page content information to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="setuserinfo"></a>
 ## setUserInfo
 
 ```TypeScript
@@ -1946,7 +1884,6 @@ Report user infomation to MediaUI.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000011 | The data write error, data is invalid. |
 
-<a id="starttemplate"></a>
 ## startTemplate
 
 ```TypeScript

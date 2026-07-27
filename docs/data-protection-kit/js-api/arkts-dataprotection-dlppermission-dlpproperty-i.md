@@ -58,7 +58,7 @@ extensionFields?: Record<string, Object>
 
 Extended attribute of a DLP file. This parameter is left empty by default.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 24
 

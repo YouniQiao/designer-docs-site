@@ -14,7 +14,6 @@ provides a push method for the target page in the routing table.
 import { NavPushPathHelper } from '@kit.ArkUI';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -37,7 +36,6 @@ The constructor used to create a NavPushPathHelper object.
 | --- | --- | --- | --- |
 | navPathStack | [NavPathStack](../arkts-components/arkts-arkui-navpathstack-c.md) | Yes | The stack of the route table. |
 
-<a id="pushdestination"></a>
 ## pushDestination
 
 ```TypeScript
@@ -78,7 +76,6 @@ Pushes the route page into the stack.
 | [100006](../errorcode-router.md#100006-navdestination-not-found) | NavDestination not found. |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="pushdestination-1"></a>
 ## pushDestination
 
 ```TypeScript
@@ -119,7 +116,6 @@ Pushes the NavDestination into the stack.
 | [100006](../errorcode-router.md#100006-navdestination-not-found) | NavDestination not found. |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="pushdestinationbyname"></a>
 ## pushDestinationByName
 
 ```TypeScript
@@ -161,7 +157,6 @@ Pushes the specified route page into the stack.
 | [100006](../errorcode-router.md#100006-navdestination-not-found) | NavDestination not found. |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="pushdestinationbyname-1"></a>
 ## pushDestinationByName
 
 ```TypeScript
@@ -175,9 +170,7 @@ Pushes the specified route page into the stack.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
-<!--Device-NavPushPathHelper-pushDestinationByName(moduleName: string, name: string, param: Object,
-    onPop: Callback<PopInfo>, animated?: boolean): Promise<void>--><!--Device-NavPushPathHelper-pushDestinationByName(moduleName: string, name: string, param: Object,
-    onPop: Callback<PopInfo>, animated?: boolean): Promise<void>-End-->
+<!--Device-NavPushPathHelper-pushDestinationByName(moduleName: string, name: string, param: Object,    onPop: Callback<PopInfo>, animated?: boolean): Promise<void>--><!--Device-NavPushPathHelper-pushDestinationByName(moduleName: string, name: string, param: Object,    onPop: Callback<PopInfo>, animated?: boolean): Promise<void>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -207,7 +200,6 @@ Pushes the specified route page into the stack.
 | [100006](../errorcode-router.md#100006-navdestination-not-found) | NavDestination not found. |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="pushpath"></a>
 ## pushPath
 
 ```TypeScript
@@ -244,7 +236,6 @@ Pushes the route page into the stack.
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="pushpath-1"></a>
 ## pushPath
 
 ```TypeScript
@@ -281,7 +272,6 @@ Pushes the NavDestination into the stack.
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="pushpathbyname"></a>
 ## pushPathByName
 
 ```TypeScript
@@ -319,7 +309,6 @@ Pushes the specified route page into the stack.
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="pushpathbyname-1"></a>
 ## pushPathByName
 
 ```TypeScript
@@ -333,9 +322,7 @@ Pushes the specified route page into the stack.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
-<!--Device-NavPushPathHelper-pushPathByName(moduleName: string, name: string, param: Object,
-    onPop: Callback<PopInfo>, animated?: boolean): Promise<void>--><!--Device-NavPushPathHelper-pushPathByName(moduleName: string, name: string, param: Object,
-    onPop: Callback<PopInfo>, animated?: boolean): Promise<void>-End-->
+<!--Device-NavPushPathHelper-pushPathByName(moduleName: string, name: string, param: Object,    onPop: Callback<PopInfo>, animated?: boolean): Promise<void>--><!--Device-NavPushPathHelper-pushPathByName(moduleName: string, name: string, param: Object,    onPop: Callback<PopInfo>, animated?: boolean): Promise<void>-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -361,7 +348,6 @@ Pushes the specified route page into the stack.
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="replacepath"></a>
 ## replacePath
 
 ```TypeScript
@@ -398,7 +384,6 @@ replace the current page with the specific one.The current page will be destroye
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="replacepath-1"></a>
 ## replacePath
 
 ```TypeScript
@@ -435,7 +420,6 @@ Replace the current NavDestination with the specific one.The current NavDestinat
 | --- | --- |
 | [300001](../errorcode-router.md#300001-hsp-download-failure-before-redirection) | hsp silent install fail. |
 
-<a id="replacepathbyname"></a>
 ## replacePathByName
 
 ```TypeScript

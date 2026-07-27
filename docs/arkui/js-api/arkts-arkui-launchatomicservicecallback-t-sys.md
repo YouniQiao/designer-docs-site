@@ -18,6 +18,6 @@ Callback for launch atomicservice.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| appId | string | Yes | appId of atomicservice. |
-| options | AtomicServiceOptions | No | options that could be empty. |
+| appId | string | Yes | appId of atomicservice.  |
+| options | [AtomicServiceOptions](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-atomicserviceoptions-atomicserviceoptions-c.md) | No | options that could be empty.  |
 

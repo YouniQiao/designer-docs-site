@@ -1,18 +1,16 @@
 # OnPasteCallback
 
 ```TypeScript
-declare type OnPasteCallback = (content: string, event: PasteEvent) => void
+declare type OnPasteCallback = (pasteValue: string, event: PasteEvent) => void
 ```
 
-Defines the callback used to return the pasted text content.
+Callback when text is pasted into the search box.
 
 **Since:** 18
 
-**Model restriction:** This API can be used only in the stage model.
-
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
-<!--Device-unnamed-declare type OnPasteCallback = (content: string, event: PasteEvent) => void--><!--Device-unnamed-declare type OnPasteCallback = (content: string, event: PasteEvent) => void-End-->
+<!--Device-unnamed-declare type OnPasteCallback = (pasteValue: string, event: PasteEvent) => void--><!--Device-unnamed-declare type OnPasteCallback = (pasteValue: string, event: PasteEvent) => void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -20,6 +18,6 @@ Defines the callback used to return the pasted text content.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| content | string | Yes | Text to be pasted. |
-| event | PasteEvent | Yes | Custom paste event. |
+| pasteValue | string | Yes | Indicates the text content to be pasted.  |
+| event | [PasteEvent](../arkts-components/arkts-arkui-pasteevent-i.md) | Yes | Indicates a user-defined paste event.  |
 

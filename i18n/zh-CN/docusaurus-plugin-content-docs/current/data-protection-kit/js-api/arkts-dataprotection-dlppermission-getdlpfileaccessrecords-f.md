@@ -6,7 +6,6 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="getdlpfileaccessrecords"></a>
 ## getDLPFileAccessRecords
 
 ```TypeScript
@@ -51,7 +50,6 @@ dlpPermission.getDLPFileAccessRecords().then((accessRecords) => { // 获取DLP�
 ```
 
 
-<a id="getdlpfileaccessrecords-1"></a>
 ## getDLPFileAccessRecords
 
 ```TypeScript

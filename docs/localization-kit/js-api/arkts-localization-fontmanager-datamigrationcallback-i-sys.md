@@ -16,7 +16,6 @@ Callback type used during data migration.
 import { fontManager } from '@kit.LocalizationKit';
 ```
 
-<a id="onheartbeat"></a>
 ## onHeartBeat
 
 ```TypeScript
@@ -61,7 +60,6 @@ dataMigration() {
 
 ```
 
-<a id="onprogress"></a>
 ## onProgress
 
 ```TypeScript
@@ -112,7 +110,6 @@ dataMigration() {
 
 ```
 
-<a id="onresult"></a>
 ## onResult
 
 ```TypeScript

@@ -16,7 +16,6 @@ Defines the mask for Filter or VisualEffect.
 import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
-<a id="createpixelmapmask"></a>
 ## createPixelMapMask
 
 ```TypeScript
@@ -28,9 +27,7 @@ Create a Mask of pixelmap.
 
 **Since:** 20
 
-<!--Device-Mask-static createPixelMapMask(pixelMap: image.PixelMap, srcRect: common2D.Rect, dstRect: common2D.Rect,
-      fillColor?: Color): Mask--><!--Device-Mask-static createPixelMapMask(pixelMap: image.PixelMap, srcRect: common2D.Rect, dstRect: common2D.Rect,
-      fillColor?: Color): Mask-End-->
+<!--Device-Mask-static createPixelMapMask(pixelMap: image.PixelMap, srcRect: common2D.Rect, dstRect: common2D.Rect,      fillColor?: Color): Mask--><!--Device-Mask-static createPixelMapMask(pixelMap: image.PixelMap, srcRect: common2D.Rect, dstRect: common2D.Rect,      fillColor?: Color): Mask-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 
@@ -99,7 +96,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="createpixelmapmask-1"></a>
 ## createPixelMapMask
 
 ```TypeScript
@@ -214,7 +210,6 @@ struct Index {
 
 ```
 
-<a id="createradialgradientmask"></a>
 ## createRadialGradientMask
 
 ```TypeScript
@@ -226,9 +221,7 @@ Create a Mask of radial gradient.
 
 **Since:** 20
 
-<!--Device-Mask-static createRadialGradientMask(center: common2D.Point, radiusX: double, radiusY: double,
-      gradients: Array<[double, double]>): Mask--><!--Device-Mask-static createRadialGradientMask(center: common2D.Point, radiusX: double, radiusY: double,
-      gradients: Array<[double, double]>): Mask-End-->
+<!--Device-Mask-static createRadialGradientMask(center: common2D.Point, radiusX: double, radiusY: double,      gradients: Array<[double, double]>): Mask--><!--Device-Mask-static createRadialGradientMask(center: common2D.Point, radiusX: double, radiusY: double,      gradients: Array<[double, double]>): Mask-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 
@@ -255,7 +248,6 @@ Create a Mask of radial gradient.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
-<a id="createripplemask"></a>
 ## createRippleMask
 
 ```TypeScript
@@ -300,7 +292,6 @@ Create a Mask of ripple.
 
 ```
 
-<a id="createuseeffectmask"></a>
 ## createUseEffectMask
 
 ```TypeScript
@@ -394,7 +385,6 @@ struct Index {
 
 ```
 
-<a id="createwavegradientmask"></a>
 ## createWaveGradientMask
 
 ```TypeScript
@@ -406,9 +396,7 @@ Create a Mask of single wave gradient.
 
 **Since:** 20
 
-<!--Device-Mask-static createWaveGradientMask(center: common2D.Point, width: double, propagationRadius: double,
-      blurRadius: double, turbulenceStrength?: double): Mask--><!--Device-Mask-static createWaveGradientMask(center: common2D.Point, width: double, propagationRadius: double,
-      blurRadius: double, turbulenceStrength?: double): Mask-End-->
+<!--Device-Mask-static createWaveGradientMask(center: common2D.Point, width: double, propagationRadius: double,      blurRadius: double, turbulenceStrength?: double): Mask--><!--Device-Mask-static createWaveGradientMask(center: common2D.Point, width: double, propagationRadius: double,      blurRadius: double, turbulenceStrength?: double): Mask-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 

@@ -12,19 +12,19 @@ import { IconStyle, TitlePosition, BottomOffset, InterstitialDialogAction } from
 
 | Name | Description |
 | --- | --- |
-| [InterstitialDialogAction](arkts-arkui-interstitialdialogaction-c.md) | Declare dialog action. |
+| [InterstitialDialogAction](arkts-arkui-atomicservice-interstitialdialogaction-interstitialdialogaction-c.md) | Declare dialog action. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DialogOptions](arkts-arkui-dialogoptions-i.md) | Defines the properties required by the dialog. |
+| [DialogOptions](arkts-arkui-atomicservice-interstitialdialogaction-dialogoptions-i.md) | Defines the properties required by the dialog. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [BottomOffset](arkts-arkui-bottomoffset-e.md) | dialog relative to bottom distance if tabs are present. |
-| [IconStyle](arkts-arkui-iconstyle-e.md) | IconStyle enumeration description. |
-| [TitlePosition](arkts-arkui-titleposition-e.md) | TitlePosition enumeration description. |
+| [BottomOffset](arkts-arkui-atomicservice-interstitialdialogaction-bottomoffset-e.md) | dialog relative to bottom distance if tabs are present. |
+| [IconStyle](arkts-arkui-atomicservice-interstitialdialogaction-iconstyle-e.md) | IconStyle enumeration description. |
+| [TitlePosition](arkts-arkui-atomicservice-interstitialdialogaction-titleposition-e.md) | TitlePosition enumeration description. |
 

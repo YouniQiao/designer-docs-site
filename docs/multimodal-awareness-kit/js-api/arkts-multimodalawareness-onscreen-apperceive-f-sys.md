@@ -6,7 +6,6 @@
 import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
-<a id="apperceive"></a>
 ## apperceive
 
 ```TypeScript
@@ -22,9 +21,7 @@ Proactively triggers screen content awareness to obtain the screen content for s
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-onScreen-function apperceive(capability: OnscreenAwarenessCap, 
-                   options?: OnscreenAwarenessOptions): Promise<OnscreenAwarenessInfo[]>--><!--Device-onScreen-function apperceive(capability: OnscreenAwarenessCap, 
-                   options?: OnscreenAwarenessOptions): Promise<OnscreenAwarenessInfo[]>-End-->
+<!--Device-onScreen-function apperceive(capability: OnscreenAwarenessCap,                    options?: OnscreenAwarenessOptions): Promise<OnscreenAwarenessInfo[]>--><!--Device-onScreen-function apperceive(capability: OnscreenAwarenessCap,                    options?: OnscreenAwarenessOptions): Promise<OnscreenAwarenessInfo[]>-End-->
 
 **System capability:** SystemCapability.MultimodalAwareness.OnScreenAwareness
 

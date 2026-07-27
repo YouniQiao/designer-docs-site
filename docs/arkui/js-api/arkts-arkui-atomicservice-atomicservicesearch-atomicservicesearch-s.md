@@ -4,6 +4,8 @@ Defines AtomicServiceSearch.
 
 **Since:** 18
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct AtomicServiceSearch--><!--Device-unnamed-export declare struct AtomicServiceSearch-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full

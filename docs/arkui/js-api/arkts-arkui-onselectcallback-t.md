@@ -1,18 +1,16 @@
 # OnSelectCallback
 
 ```TypeScript
-declare type OnSelectCallback = (index: number, selectStr: string) => void
+declare type OnSelectCallback = (index: number, selectValue: string) => void
 ```
 
-Defines the callback invoked when a drop-down menu option is selected.
+Callback when the Select option is clicked.
 
 **Since:** 18
 
-**Model restriction:** This API can be used only in the stage model.
-
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
-<!--Device-unnamed-declare type OnSelectCallback = (index: number, selectStr: string) => void--><!--Device-unnamed-declare type OnSelectCallback = (index: number, selectStr: string) => void-End-->
+<!--Device-unnamed-declare type OnSelectCallback = (index: number, selectValue: string) => void--><!--Device-unnamed-declare type OnSelectCallback = (index: number, selectValue: string) => void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -20,6 +18,6 @@ Defines the callback invoked when a drop-down menu option is selected.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | number | Yes | Index of the selected option. The index is zero-based. |
-| selectStr | string | Yes | Value of the selected option. |
+| index | number | Yes | Indicates the index of the selected item.  |
+| selectValue | string | Yes | Indicates the value of the selected item.  |
 

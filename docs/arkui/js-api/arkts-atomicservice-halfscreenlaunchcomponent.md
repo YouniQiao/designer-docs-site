@@ -12,5 +12,5 @@ import { HalfScreenLaunchComponent } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [HalfScreenLaunchComponent](arkts-arkui-halfscreenlaunchcomponent-s.md) | Declare component HalfScreenLaunchComponent |
+| [HalfScreenLaunchComponent](arkts-arkui-atomicservice-halfscreenlaunchcomponent-halfscreenlaunchcomponent-s.md) | Declare component HalfScreenLaunchComponent |
 

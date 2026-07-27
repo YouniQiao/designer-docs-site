@@ -190,19 +190,7 @@ The tabBar array of tabs.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
-<!--Device-AtomicServiceTabs-tabBarOptionsArray: [
-    TabBarOptions,
-    TabBarOptions,
-    TabBarOptions?,
-    TabBarOptions?,
-    TabBarOptions?
-  ]--><!--Device-AtomicServiceTabs-tabBarOptionsArray: [
-    TabBarOptions,
-    TabBarOptions,
-    TabBarOptions?,
-    TabBarOptions?,
-    TabBarOptions?
-  ]-End-->
+<!--Device-AtomicServiceTabs-tabBarOptionsArray: [    TabBarOptions,    TabBarOptions,    TabBarOptions?,    TabBarOptions?,    TabBarOptions?  ]--><!--Device-AtomicServiceTabs-tabBarOptionsArray: [    TabBarOptions,    TabBarOptions,    TabBarOptions?,    TabBarOptions?,    TabBarOptions?  ]-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -248,19 +236,7 @@ The TabContent array of tabs.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
-<!--Device-AtomicServiceTabs-tabContents?: [ 
-    TabContentBuilder?,
-    TabContentBuilder?,
-    TabContentBuilder?,
-    TabContentBuilder?,
-    TabContentBuilder?
-  ]--><!--Device-AtomicServiceTabs-tabContents?: [ 
-    TabContentBuilder?,
-    TabContentBuilder?,
-    TabContentBuilder?,
-    TabContentBuilder?,
-    TabContentBuilder?
-  ]-End-->
+<!--Device-AtomicServiceTabs-tabContents?: [     TabContentBuilder?,    TabContentBuilder?,    TabContentBuilder?,    TabContentBuilder?,    TabContentBuilder?  ]--><!--Device-AtomicServiceTabs-tabContents?: [     TabContentBuilder?,    TabContentBuilder?,    TabContentBuilder?,    TabContentBuilder?,    TabContentBuilder?  ]-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

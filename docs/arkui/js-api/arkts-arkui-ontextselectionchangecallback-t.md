@@ -4,11 +4,9 @@
 declare type OnTextSelectionChangeCallback = (selectionStart: number, selectionEnd: number) => void
 ```
 
-Defines the callback for text selection changes or caret position changes.
+Callback when the position of the cursor entered in the search box changes.
 
 **Since:** 18
-
-**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
@@ -20,6 +18,6 @@ Defines the callback for text selection changes or caret position changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| selectionStart | number | Yes | Start position of the selected text. The start position of text is 0. |
-| selectionEnd | number | Yes | End position of the selected text. |
+| selectionStart | number | Yes | Indicates the start position of the text selection area.  |
+| selectionEnd | number | Yes | Indicates end position of the text selection area.  |
 

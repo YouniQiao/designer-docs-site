@@ -12,7 +12,7 @@ import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 function createCipher(transformation: string): Cipher
 ```
 
-通过指定算法名称，获取相应的[Cipher](arkts-cryptoarchitecture-cryptoframework-cipher-i.md)实例。
+创建加解密实例。
 > **说明：**  
 >  
 > 1. 在对称加解密中，PKCS #5和PKCS #7的实现方式相同，即补位长度和块大小保持一致。3DES补位为8字节，AES补位为16字节。**NoPadding**  
@@ -42,7 +42,7 @@ function createCipher(transformation: string): Cipher
 
 | 类型 | 说明 |
 | --- | --- |
-| [Cipher](arkts-cryptoarchitecture-cryptoframework-cipher-i.md) | 返回加解密生成器的对象。 |
+| [Cipher](arkts-cryptoarchitecture-cryptoframework-cipher-i.md) | 返回对应算法的Cipher实例。 |
 
 **错误码：**
 

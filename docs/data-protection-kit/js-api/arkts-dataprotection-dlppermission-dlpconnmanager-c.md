@@ -1,7 +1,6 @@
 # DlpConnManager
 
 Calls **registerPlugin** and **unregisterPlugin** to register or unregister callback capabilities in the SA.
-
 > **NOTE**  
 >  
 > **registerPlugin** registers callback capabilities in the SA, and **unregisterPlugin** unregisters callback  
@@ -19,7 +18,6 @@ Calls **registerPlugin** and **unregisterPlugin** to register or unregister call
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -53,7 +51,6 @@ let dlpConnManager: dlpPermission.DlpConnManager = new dlpPermission.DlpConnMana
 
 ```
 
-<a id="registerplugin"></a>
 ## registerPlugin
 
 ```TypeScript
@@ -61,7 +58,6 @@ static registerPlugin(plugin: DlpConnPlugin): number
 ```
 
 Registers a callback with the SA.
-
 > **NOTE**  
 >  
 > **registerPlugin** registers the callback with the SA.
@@ -124,7 +120,6 @@ let pluginId: number = dlpPermission.DlpConnManager.registerPlugin(new DataCapsu
 
 ```
 
-<a id="unregisterplugin"></a>
 ## unregisterPlugin
 
 ```TypeScript
@@ -134,7 +129,6 @@ static unregisterPlugin(): void
 Unregisters a callback from the SA.
 
 This API unregisters a callback and releases resources when an application exits, ensuring that the callback capability is correctly released.
-
 > **NOTE**  
 >  
 > **unregisterPlugin** unregisters a plug-in from the SA.

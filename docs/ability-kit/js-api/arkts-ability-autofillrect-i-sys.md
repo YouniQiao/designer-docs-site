@@ -16,7 +16,7 @@ AutoFillRect describes the rectangle used for auto-fill.
 height: number
 ```
 
-Height of the AutoFill form or page node.
+Height of the AutoFill form or page node. The unit is px.
 
 **Type:** number
 
@@ -38,7 +38,7 @@ Height of the AutoFill form or page node.
 left: number
 ```
 
-Distance between the AutoFill form or page node and the left boundary of the page.
+Distance between the AutoFill form or page node and the left boundary of the page. The unit is px.
 
 **Type:** number
 
@@ -60,7 +60,7 @@ Distance between the AutoFill form or page node and the left boundary of the pag
 top: number
 ```
 
-Distance between the AutoFill form or page node and the upper boundary of the page.
+Distance between the AutoFill form or page node and the upper boundary of the page. The unit is px.
 
 **Type:** number
 
@@ -82,7 +82,7 @@ Distance between the AutoFill form or page node and the upper boundary of the pa
 width: number
 ```
 
-Width of the AutoFill form or page node.
+Width of the AutoFill form or page node. The unit is px.
 
 **Type:** number
 

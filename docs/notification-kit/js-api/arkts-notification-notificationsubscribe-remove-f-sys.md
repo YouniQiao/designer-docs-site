@@ -6,7 +6,6 @@
 import { notificationSubscribe } from '@kit.NotificationKit';
 ```
 
-<a id="remove"></a>
 ## remove
 
 ```TypeScript
@@ -24,17 +23,7 @@ Removes a notification based on the bundle information and notification key. Thi
 
 **Required permissions:** ohos.permission.NOTIFICATION_CONTROLLER
 
-<!--Device-notificationSubscribe-function remove(
-    bundle: BundleOption,
-    notificationKey: NotificationKey,
-    reason: RemoveReason,
-    callback: AsyncCallback<void>
-  ): void--><!--Device-notificationSubscribe-function remove(
-    bundle: BundleOption,
-    notificationKey: NotificationKey,
-    reason: RemoveReason,
-    callback: AsyncCallback<void>
-  ): void-End-->
+<!--Device-notificationSubscribe-function remove(    bundle: BundleOption,    notificationKey: NotificationKey,    reason: RemoveReason,    callback: AsyncCallback<void>  ): void--><!--Device-notificationSubscribe-function remove(    bundle: BundleOption,    notificationKey: NotificationKey,    reason: RemoveReason,    callback: AsyncCallback<void>  ): void-End-->
 
 **System capability:** SystemCapability.Notification.Notification
 
@@ -88,7 +77,6 @@ notificationSubscribe.remove(bundle, notificationKey, reason, removeCallback);
 ```
 
 
-<a id="remove-1"></a>
 ## remove
 
 ```TypeScript
@@ -157,7 +145,6 @@ notificationSubscribe.remove(bundle, notificationKey, reason).then(() => {
 ```
 
 
-<a id="remove-2"></a>
 ## remove
 
 ```TypeScript
@@ -180,7 +167,7 @@ Removes a notification based on the specified unique notification ID. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hashCode | string | Yes | Unique notification ID. It is the value of **hashCode** in the [NotificationRequest](arkts-notification-notificationrequest-notificationrequest-i.md) object of [SubscribeCallbackData](arkts-notification-notificationsubscriber-subscribecallbackdata-i-sys.md) used in the [onConsume](arkts-notification-notificationsubscriber-notificationsubscriber-i-sys.md#onconsume) callback. |
+| hashCode | string | Yes | Unique notification ID. It is the value of **hashCode** in the [NotificationRequest](arkts-notification-notificationrequest-notificationrequest-i.md) object of [SubscribeCallbackData](arkts-notification-notificationsubscribe-subscribecallbackdata-t-sys.md) used in the [onConsume](arkts-notification-notificationsubscriber-notificationsubscriber-i-sys.md#onconsume) callback. |
 | reason | [RemoveReason](arkts-notification-notificationsubscribe-removereason-e-sys.md) | Yes | Reason for removing the notification. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
@@ -215,7 +202,6 @@ notificationSubscribe.remove(hashCode, reason, removeCallback);
 ```
 
 
-<a id="remove-3"></a>
 ## remove
 
 ```TypeScript
@@ -238,7 +224,7 @@ Removes specified notifications. This API uses an asynchronous callback to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hashCodes | Array&lt;String&gt; | Yes | Array of unique notification IDs. It is the value of **hashCode** in the [NotificationRequest](arkts-notification-notificationrequest-notificationrequest-i.md) object of [SubscribeCallbackData](arkts-notification-notificationsubscriber-subscribecallbackdata-i-sys.md) used in the [onConsume](arkts-notification-notificationsubscriber-notificationsubscriber-i-sys.md#onconsume) callback. |
+| hashCodes | Array&lt;String&gt; | Yes | Array of unique notification IDs. It is the value of **hashCode** in the [NotificationRequest](arkts-notification-notificationrequest-notificationrequest-i.md) object of [SubscribeCallbackData](arkts-notification-notificationsubscribe-subscribecallbackdata-t-sys.md) used in the [onConsume](arkts-notification-notificationsubscriber-notificationsubscriber-i-sys.md#onconsume) callback. |
 | reason | [RemoveReason](arkts-notification-notificationsubscribe-removereason-e-sys.md) | Yes | Reason for removing the notification. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
@@ -272,7 +258,6 @@ notificationSubscribe.remove(hashCodes, reason, removeCallback);
 ```
 
 
-<a id="remove-4"></a>
 ## remove
 
 ```TypeScript
@@ -295,7 +280,7 @@ Removes a notification based on the specified unique notification ID. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hashCode | string | Yes | Unique notification ID. It is the value of **hashCode** in the [NotificationRequest](arkts-notification-notificationrequest-notificationrequest-i.md) object of [SubscribeCallbackData](arkts-notification-notificationsubscriber-subscribecallbackdata-i-sys.md) used in the [onConsume](arkts-notification-notificationsubscriber-notificationsubscriber-i-sys.md#onconsume) callback. |
+| hashCode | string | Yes | Unique notification ID. It is the value of **hashCode** in the [NotificationRequest](arkts-notification-notificationrequest-notificationrequest-i.md) object of [SubscribeCallbackData](arkts-notification-notificationsubscribe-subscribecallbackdata-t-sys.md) used in the [onConsume](arkts-notification-notificationsubscriber-notificationsubscriber-i-sys.md#onconsume) callback. |
 | reason | [RemoveReason](arkts-notification-notificationsubscribe-removereason-e-sys.md) | Yes | Reason for removing the notification. |
 
 **Return value:**
@@ -332,7 +317,6 @@ notificationSubscribe.remove(hashCode, reason).then(() => {
 ```
 
 
-<a id="remove-5"></a>
 ## remove
 
 ```TypeScript

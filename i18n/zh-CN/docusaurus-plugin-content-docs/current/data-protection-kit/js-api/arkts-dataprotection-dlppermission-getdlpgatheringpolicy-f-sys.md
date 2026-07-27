@@ -6,7 +6,6 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="getdlpgatheringpolicy"></a>
 ## getDLPGatheringPolicy
 
 ```TypeScript
@@ -56,7 +55,6 @@ dlpPermission.getDLPGatheringPolicy().then((gatheringPolicy: dlpPermission.Gathe
 ```
 
 
-<a id="getdlpgatheringpolicy-1"></a>
 ## getDLPGatheringPolicy
 
 ```TypeScript

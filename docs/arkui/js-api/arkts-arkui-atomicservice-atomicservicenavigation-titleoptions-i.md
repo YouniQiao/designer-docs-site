@@ -100,7 +100,7 @@ titleIcon?: Resource | SymbolGlyphModifier
 
 Set title bar icon.
 
-**Type:** Resource | SymbolGlyphModifier
+**Type:** Resource \| SymbolGlyphModifier
 
 **Default:** atomicservice icon
 

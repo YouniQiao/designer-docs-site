@@ -4,6 +4,8 @@ Declare component HalfScreenLaunchComponent
 
 **Since:** 18
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct HalfScreenLaunchComponent--><!--Device-unnamed-export declare struct HalfScreenLaunchComponent-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -40,7 +42,7 @@ Indicates atomic service appId.
 
 Sets the component content.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 18
 
@@ -78,7 +80,7 @@ onReceive?: Callback<Record<string, Object>>
 
 Indicates the callback of onReceive.
 
-**Type:** Callback<Record<string, Object>>
+**Type:** Callback&lt;Record&lt;string, Object&gt;&gt;
 
 **Since:** 20
 
@@ -96,7 +98,7 @@ onTerminated?: Callback<TerminationInfo>
 
 Indicates the callback of onTerminated.
 
-**Type:** Callback<TerminationInfo>
+**Type:** Callback&lt;TerminationInfo&gt;
 
 **Since:** 18
 

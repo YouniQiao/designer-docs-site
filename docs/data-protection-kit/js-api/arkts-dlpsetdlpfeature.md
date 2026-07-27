@@ -6,7 +6,6 @@ This module controls the Data Loss Prevention (DLP) feature, including enabling 
 
 - Data security compliance requirements must be met.  
 - Access control and encryption protection are provided for confidential files.
-
 > **NOTE**  
 > - The initial APIs of this module are supported since API version 26.0.0. Newly added APIs will be marked with a  
 > - superscript to indicate their earliest API version.  

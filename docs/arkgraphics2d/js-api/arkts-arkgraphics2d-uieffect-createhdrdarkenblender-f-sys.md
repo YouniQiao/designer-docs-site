@@ -6,7 +6,6 @@
 import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
-<a id="createhdrdarkenblender"></a>
 ## createHdrDarkenBlender
 
 ```TypeScript
@@ -20,9 +19,7 @@ Create an HdrDarkenBlender, which is used to apply HDR-adaptive darken blender o
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-uiEffect-function createHdrDarkenBlender(hdrBrightnessRatio: double,
-    grayscaleFactor?: [double, double, double]): HdrDarkenBlender--><!--Device-uiEffect-function createHdrDarkenBlender(hdrBrightnessRatio: double,
-    grayscaleFactor?: [double, double, double]): HdrDarkenBlender-End-->
+<!--Device-uiEffect-function createHdrDarkenBlender(hdrBrightnessRatio: double,    grayscaleFactor?: [double, double, double]): HdrDarkenBlender--><!--Device-uiEffect-function createHdrDarkenBlender(hdrBrightnessRatio: double,    grayscaleFactor?: [double, double, double]): HdrDarkenBlender-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 

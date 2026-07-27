@@ -13,7 +13,7 @@ import { InnerFullScreenLaunchComponent, LaunchController } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [LaunchController](arkts-arkui-launchcontroller-c-sys.md) | Declare type LaunchController |
+| [LaunchController](arkts-arkui-arkui-advanced-innerfullscreenlaunchcomponent-launchcontroller-c-sys.md) | Declare type LaunchController |
 <!--DelEnd-->
 
 <!--Del-->
@@ -21,7 +21,7 @@ import { InnerFullScreenLaunchComponent, LaunchController } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [InnerFullScreenLaunchComponent](arkts-arkui-innerfullscreenlaunchcomponent-s-sys.md) | Declare component InnerFullScreenLaunchComponent |
+| [InnerFullScreenLaunchComponent](arkts-arkui-arkui-advanced-innerfullscreenlaunchcomponent-innerfullscreenlaunchcomponent-s-sys.md) | Declare component InnerFullScreenLaunchComponent |
 <!--DelEnd-->
 
 <!--Del-->

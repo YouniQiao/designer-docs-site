@@ -28,7 +28,7 @@ function off(eventId: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| eventId | number | 是 | 事件ID。 |
+| eventId | number | 是 | 事件ID，由开发者定义，用于辨别事件。 |
 
 **示例：**
 
@@ -61,7 +61,7 @@ function off(eventId: string): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| eventId | string | 是 | 事件ID。取值为长度不超过10240字节的自定义字符串，且不可为空字符。 |
+| eventId | string | 是 | 事件ID。不可为空字符串，大小不超过10240字节，超出部分会被截断。 |
 
 **示例：**
 
@@ -94,8 +94,8 @@ function off(eventId: number, callback: Callback<EventData>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| eventId | number | 是 | 事件ID。 |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | 是 | 事件的回调处理函数。 |
+| eventId | number | 是 | 事件ID，由开发者定义，用于辨别事件。 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | 是 | 回调函数，指定要取消订阅的事件处理函数，需与订阅时使用的callback一致。 |
 
 **示例：**
 
@@ -134,8 +134,8 @@ function off(eventId: string, callback: Callback<EventData>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| eventId | string | 是 | 事件ID。取值为长度不超过10240字节的自定义字符串，且不可为空字符。 |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | 是 | 事件的回调处理函数。 |
+| eventId | string | 是 | 事件ID。不可为空字符串，大小不超过10240字节，超出部分会被截断。 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;EventData&gt; | 是 | 回调函数，指定要取消订阅的事件处理函数，需与订阅时使用的callback一致。 |
 
 **示例：**
 
@@ -174,8 +174,8 @@ function off<T>(eventId: string, callback: Callback<GenericEventData<T>>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| eventId | string | 是 | 事件ID。取值为长度不超过10240字节的自定义字符串，且不可为空字符。 |
-| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GenericEventData&lt;T&gt;&gt; | 是 | 事件的回调处理函数。 |
+| eventId | string | 是 | 事件ID。不可为空字符串，大小不超过10240字节，超出部分会被截断。 |
+| callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;GenericEventData&lt;T&gt;&gt; | 是 | 回调函数，指定要取消订阅的事件处理函数，需与订阅时使用的callback一致。 |
 
 **示例：**
 

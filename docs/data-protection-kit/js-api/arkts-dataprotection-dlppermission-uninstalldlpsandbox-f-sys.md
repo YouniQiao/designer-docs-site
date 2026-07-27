@@ -6,7 +6,6 @@
 import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
-<a id="uninstalldlpsandbox"></a>
 ## uninstallDLPSandbox
 
 ```TypeScript
@@ -17,7 +16,7 @@ Uninstalls a DLP sandbox application for an application. This API uses a promise
 
 Use this API to clear the corresponding sandbox environment.
 
-This API can be called only after a DLP sandbox is installed by calling [installDLPSandbox](arkts-dataprotection-dlppermission-installdlpsandbox-f-sys.md#installdlpsandbox-1).
+This API can be called only after a DLP sandbox is installed by calling [installDLPSandbox](arkts-dataprotection-dlppermission-installdlpsandbox-f-sys.md#installdlpsandbox).
 
 **Since:** 10
 
@@ -70,7 +69,6 @@ dlpPermission.installDLPSandbox('com.ohos.note', dlpPermission.DLPFileAccess.REA
 ```
 
 
-<a id="uninstalldlpsandbox-1"></a>
 ## uninstallDLPSandbox
 
 ```TypeScript
@@ -81,7 +79,7 @@ Uninstalls a DLP sandbox application for an application. This API uses an asynch
 
 Use this API to clear the sandbox environment.
 
-This API can be called only after a DLP sandbox is installed by calling [installDLPSandbox](arkts-dataprotection-dlppermission-installdlpsandbox-f-sys.md#installdlpsandbox-1).
+This API can be called only after a DLP sandbox is installed by calling [installDLPSandbox](arkts-dataprotection-dlppermission-installdlpsandbox-f-sys.md#installdlpsandbox).
 
 **Since:** 10
 

@@ -4,6 +4,8 @@ Declares the FullScreenLaunchComponent, a component provided by ArkUI that allow
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct FullScreenLaunchComponent--><!--Device-unnamed-export declare struct FullScreenLaunchComponent-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
@@ -40,7 +42,7 @@ Indicates atomic service appId.
 
 Sets the component content.
 
-**Type:** Callback<void>
+**Type:** Callback&lt;void&gt;
 
 **Since:** 12
 
@@ -78,7 +80,7 @@ onReceive?: Callback<Record<string, Object>>
 
 Indicates the callback of onReceive.
 
-**Type:** Callback<Record<string, Object>>
+**Type:** Callback&lt;Record&lt;string, Object&gt;&gt;
 
 **Since:** 20
 
@@ -96,7 +98,7 @@ onTerminated?: Callback<TerminationInfo>
 
 Callback triggered when the EmbeddableUIAbility is terminated to receive the information about the termination. It is supported only when the atomic service runs in embedded mode,with the parameter being of type TerminationInfo.
 
-**Type:** Callback<TerminationInfo>
+**Type:** Callback&lt;TerminationInfo&gt;
 
 **Since:** 18
 

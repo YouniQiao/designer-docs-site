@@ -6,7 +6,6 @@
 import { fileShare } from '@kit.CoreFileKit';
 ```
 
-<a id="checkpathpermission"></a>
 ## checkPathPermission
 
 ```TypeScript

@@ -14,7 +14,6 @@ The VisualEffect of Component.
 import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
-<a id="backgroundcolorblender"></a>
 ## backgroundColorBlender
 
 ```TypeScript
@@ -55,7 +54,6 @@ visualEffect.backgroundColorBlender(blender)
 
 ```
 
-<a id="borderlight"></a>
 ## borderLight
 
 ```TypeScript
@@ -67,9 +65,7 @@ Sets the border light effect.
 
 **Since:** 20
 
-<!--Device-VisualEffect-borderLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,
-      borderWidth: double): VisualEffect--><!--Device-VisualEffect-borderLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,
-      borderWidth: double): VisualEffect-End-->
+<!--Device-VisualEffect-borderLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,      borderWidth: double): VisualEffect--><!--Device-VisualEffect-borderLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,      borderWidth: double): VisualEffect-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 
@@ -139,7 +135,6 @@ struct Index {
 
 ```
 
-<a id="colorgradient"></a>
 ## colorGradient
 
 ```TypeScript
@@ -151,9 +146,7 @@ Sets the color gradient effect, may blend with alpha mask.
 
 **Since:** 20
 
-<!--Device-VisualEffect-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,
-      alphaMask?: Mask): VisualEffect--><!--Device-VisualEffect-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,
-      alphaMask?: Mask): VisualEffect-End-->
+<!--Device-VisualEffect-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,      alphaMask?: Mask): VisualEffect--><!--Device-VisualEffect-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,      alphaMask?: Mask): VisualEffect-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 
@@ -219,7 +212,6 @@ struct ColorGradientExample {
 
 ```
 
-<a id="distortioncollapse"></a>
 ## distortionCollapse
 
 ```TypeScript
@@ -252,7 +244,6 @@ NOTE1. This visual effect supports drawing outside the bounds of the control,but
 | --- | --- |
 | [VisualEffect](../../apis-arkui/arkts-components/arkts-arkui-visualeffect-t.md) | - Returns the VisualEffect that the current effect have been added. |
 
-<a id="liquidmaterial"></a>
 ## liquidMaterial
 
 ```TypeScript
@@ -264,9 +255,7 @@ Sets the liquid material effect.
 
 **Since:** 22
 
-<!--Device-VisualEffect-liquidMaterial(param : LiquidMaterialEffectParam, useEffectMask: Mask, distortMask?: Mask,
-      brightnessParam?: BrightnessParam): VisualEffect--><!--Device-VisualEffect-liquidMaterial(param : LiquidMaterialEffectParam, useEffectMask: Mask, distortMask?: Mask,
-      brightnessParam?: BrightnessParam): VisualEffect-End-->
+<!--Device-VisualEffect-liquidMaterial(param : LiquidMaterialEffectParam, useEffectMask: Mask, distortMask?: Mask,      brightnessParam?: BrightnessParam): VisualEffect--><!--Device-VisualEffect-liquidMaterial(param : LiquidMaterialEffectParam, useEffectMask: Mask, distortMask?: Mask,      brightnessParam?: BrightnessParam): VisualEffect-End-->
 
 **System capability:** SystemCapability.Graphics.Drawing
 
