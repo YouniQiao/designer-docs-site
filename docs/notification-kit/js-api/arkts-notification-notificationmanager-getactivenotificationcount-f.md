@@ -6,7 +6,6 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
-<a id="getactivenotificationcount"></a>
 ## getActiveNotificationCount
 
 ```TypeScript
@@ -56,7 +55,6 @@ notificationManager.getActiveNotificationCount(getActiveNotificationCountCallbac
 ```
 
 
-<a id="getactivenotificationcount-1"></a>
 ## getActiveNotificationCount
 
 ```TypeScript

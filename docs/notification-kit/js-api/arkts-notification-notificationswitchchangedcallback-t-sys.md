@@ -4,7 +4,7 @@
 export type NotificationSwitchChangedCallback = (callbackData: NotificationSwitchChangedCallbackData) => void
 ```
 
-Register the callback function type for notification switch state changes set by the interface of [notificationManager.setNotificationSwitch](arkts-notification-notificationmanager-setnotificationswitch-f-sys.md#setnotificationswitch-1).
+Register the callback function type for notification switch state changes set by the interface of [notificationManager.setNotificationSwitch](arkts-notification-notificationmanager-setnotificationswitch-f-sys.md#setnotificationswitch).
 
 **Since:** 26.0.0
 
@@ -20,5 +20,5 @@ Register the callback function type for notification switch state changes set by
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callbackData | [NotificationSwitchChangedCallbackData](arkts-notification-notificationsubscriber-notificationswitchchangedcallbackdata-i-sys.md) | Yes | The callback returns information about the status change of the notification switch set by the interface of [notificationManager.setNotificationSwitch](arkts-notification-notificationmanager-setnotificationswitch-f-sys.md#setnotificationswitch-1).  |
+| callbackData | [NotificationSwitchChangedCallbackData](arkts-notification-notificationsubscriber-notificationswitchchangedcallbackdata-i-sys.md) | Yes | The callback returns information about the status change of the notification switch set by the interface of [notificationManager.setNotificationSwitch](arkts-notification-notificationmanager-setnotificationswitch-f-sys.md#setnotificationswitch).  |
 

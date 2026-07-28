@@ -1,7 +1,6 @@
 # @ohos.notificationSubscribe
 
 The **notificationSubscribe** module provides APIs for notification subscription, notification unsubscription,subscription removal, and more. In general cases, only system applications can call these APIs.
-
 > **NOTE**  
 >  
 > The APIs provided by this module are system APIs.
@@ -81,7 +80,7 @@ import { notificationSubscribe } from '@kit.NotificationKit';
 | [NotificationClassification](arkts-notification-notificationsubscribe-notificationclassification-t-sys.md) | Describes the notification classification information. |
 | [NotificationSubscribeInfo](arkts-notification-notificationsubscribe-notificationsubscribeinfo-t-sys.md) | The **NotificationSubscribeInfo** module provides APIs for defining the information about the publisher for notification subscription. |
 | [NotificationSubscriber](arkts-notification-notificationsubscribe-notificationsubscriber-t-sys.md) | Provides callback methods for subscribers to receive and cancel notifications. |
-| [NotificationSwitchChangedCallback](arkts-notification-notificationsubscribe-notificationswitchchangedcallback-t-sys.md) | Register the callback function type for notification switch state changes set by the interface of [notificationManager.setNotificationSwitch](arkts-notification-notificationmanager-setnotificationswitch-f-sys.md#setnotificationswitch-1). |
+| [NotificationSwitchChangedCallback](arkts-notification-notificationsubscribe-notificationswitchchangedcallback-t-sys.md) | Register the callback function type for notification switch state changes set by the interface of [notificationManager.setNotificationSwitch](arkts-notification-notificationmanager-setnotificationswitch-f-sys.md#setnotificationswitch). |
 | [NotificationSwitchChangedCallbackData](arkts-notification-notificationsubscribe-notificationswitchchangedcallbackdata-t-sys.md) | Describes the notification switch state changes callback data. |
 | [SubscribeCallbackData](arkts-notification-notificationsubscribe-subscribecallbackdata-t-sys.md) | Provides methods that will be called back when the subscriber receives a new notification or a notification is canceled. |
 | [VoiceContent](arkts-notification-notificationsubscribe-voicecontent-t-sys.md) | Describes the properties of the voice content of the received notification. |

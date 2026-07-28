@@ -6,7 +6,6 @@
 import { deviceControl } from '@kit.MDMKit';
 ```
 
-<a id="operatedevice"></a>
 ## operateDevice
 
 ```TypeScript
@@ -30,7 +29,7 @@ Allows the specified device administrator application to operate devices.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| operate | string | Yes | Operation to be performed, which can be any of the following:<br>- **resetFactory**:restore device factory settings. After this API is called, the device will be restored to factory settings immediately. Once the restoration is complete, all device data will be erased and cannot be restored. To protect against data loss caused by potential application attacks, enterprises should implement robust security measures for their applications.<br>- **reboot**: restart devices.<br>- **shutDown**: shut down devices.<br>-**lockScreen**: lock device screens. Once this capability is used, the device screen will become inaccessible.It only supports lock screen text customization but does not allow for interactive function customization on the lock screen. To implement custom behaviors on the lock screen, you are advised to use the [setAllowedKioskApps](arkts-mdm-applicationmanager-setallowedkioskapps-f.md#setallowedkioskapps-1) API to configure apps that support the [Kiosk mode](../../apis-ability-kit/arkts-apis/arkts-ability-kioskmanager-enterkioskmode-f.md#enterkioskmode-1).<!--RP1--><!--RP1End--> |
+| operate | string | Yes | Operation to be performed, which can be any of the following:<br>- **resetFactory**:restore device factory settings. After this API is called, the device will be restored to factory settings immediately. Once the restoration is complete, all device data will be erased and cannot be restored. To protect against data loss caused by potential application attacks, enterprises should implement robust security measures for their applications.<br>- **reboot**: restart devices.<br>- **shutDown**: shut down devices.<br>-**lockScreen**: lock device screens. Once this capability is used, the device screen will become inaccessible.It only supports lock screen text customization but does not allow for interactive function customization on the lock screen. To implement custom behaviors on the lock screen, you are advised to use the [setAllowedKioskApps](arkts-mdm-applicationmanager-setallowedkioskapps-f.md#setallowedkioskapps) API to configure apps that support the [Kiosk mode](../../apis-ability-kit/arkts-apis/arkts-ability-kioskmanager-enterkioskmode-f.md#enterkioskmode).<!--RP1--><!--RP1End--> |
 | addition | string | No | <!--RP2-->Additional parameter for the operation. Currently, this parameter does not need to be passed in.<!--RP2End--> |
 
 **Error codes:**
@@ -64,7 +63,6 @@ try {
 ```
 
 
-<a id="operatedevice-1"></a>
 ## operateDevice
 
 ```TypeScript

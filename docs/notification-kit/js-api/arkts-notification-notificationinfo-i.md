@@ -1,9 +1,10 @@
 # NotificationInfo
 
-The **NotificationInfo** module describes the notification information delivered to the onReceiveMessage callback
-of ExtensionAbility for notification subscriptions.
+The **NotificationInfo** module describes the notification information delivered to the onReceiveMessage callback of ExtensionAbility for notification subscriptions.
 
 **Since:** 22
+
+<!--Device-unnamed-export interface NotificationInfo--><!--Device-unnamed-export interface NotificationInfo-End-->
 
 **System capability:** SystemCapability.Notification.Notification
 
@@ -19,6 +20,8 @@ Index of the application clone that creates the notification. It takes effect on
 
 **Since:** 22
 
+<!--Device-NotificationInfo-readonly appIndex: int--><!--Device-NotificationInfo-readonly appIndex: int-End-->
+
 **System capability:** SystemCapability.Notification.Notification
 
 ## appName
@@ -32,6 +35,8 @@ Name of the application that creates the notification.
 **Type:** string
 
 **Since:** 22
+
+<!--Device-NotificationInfo-readonly appName?: string--><!--Device-NotificationInfo-readonly appName?: string-End-->
 
 **System capability:** SystemCapability.Notification.Notification
 
@@ -47,6 +52,8 @@ Name of the bundle that creates the notification.
 
 **Since:** 22
 
+<!--Device-NotificationInfo-readonly bundleName: string--><!--Device-NotificationInfo-readonly bundleName: string-End-->
+
 **System capability:** SystemCapability.Notification.Notification
 
 ## content
@@ -60,6 +67,8 @@ Notification content, which includes the title and body of the notification.
 **Type:** NotificationExtensionContent
 
 **Since:** 22
+
+<!--Device-NotificationInfo-readonly content: NotificationExtensionContent--><!--Device-NotificationInfo-readonly content: NotificationExtensionContent-End-->
 
 **System capability:** SystemCapability.Notification.Notification
 
@@ -75,6 +84,8 @@ Timestamp when the notification is published. Data format: timestamp. Unit: mill
 
 **Since:** 22
 
+<!--Device-NotificationInfo-readonly deliveryTime?: long--><!--Device-NotificationInfo-readonly deliveryTime?: long-End-->
+
 **System capability:** SystemCapability.Notification.Notification
 
 ## groupName
@@ -88,6 +99,8 @@ Name of the notification group.
 **Type:** string
 
 **Since:** 22
+
+<!--Device-NotificationInfo-readonly groupName?: string--><!--Device-NotificationInfo-readonly groupName?: string-End-->
 
 **System capability:** SystemCapability.Notification.Notification
 
@@ -103,6 +116,8 @@ Unique identifier of the notification.
 
 **Since:** 22
 
+<!--Device-NotificationInfo-readonly hashCode: string--><!--Device-NotificationInfo-readonly hashCode: string-End-->
+
 **System capability:** SystemCapability.Notification.Notification
 
 ## notificationSlotType
@@ -111,12 +126,13 @@ Unique identifier of the notification.
 readonly notificationSlotType: notificationManager.SlotType
 ```
 
-Notification slot type, which identifies the channel category to which the notification belongs (such as social
-communication, service reminder, etc.). Different slot types correspond to different reminder methods.
+Notification slot type, which identifies the channel category to which the notification belongs (such as social communication, service reminder, etc.). Different slot types correspond to different reminder methods.
 
 **Type:** notificationManager.SlotType
 
 **Since:** 22
+
+<!--Device-NotificationInfo-readonly notificationSlotType: notificationManager.SlotType--><!--Device-NotificationInfo-readonly notificationSlotType: notificationManager.SlotType-End-->
 
 **System capability:** SystemCapability.Notification.Notification
 

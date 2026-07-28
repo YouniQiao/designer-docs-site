@@ -20,5 +20,5 @@ Defines the SystemUpdateCallback callback.type SystemUpdateCallback = (data: Sub
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | SubscribeCallbackData | Yes | -Notification information that carries the system property value. |
+| data | [SubscribeCallbackData](arkts-notification-notificationsubscribe-subscribecallbackdata-t-sys.md) | Yes | -Notification information that carries the system property value. |
 

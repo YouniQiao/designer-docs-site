@@ -6,7 +6,6 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
-<a id="notifysaveasresult"></a>
 ## notifySaveAsResult
 
 ```TypeScript
@@ -45,7 +44,6 @@ Used by the [Data Loss Prevention (DLP)](../../apis-data-protection-kit/arkts-ap
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
 
-<a id="notifysaveasresult-1"></a>
 ## notifySaveAsResult
 
 ```TypeScript

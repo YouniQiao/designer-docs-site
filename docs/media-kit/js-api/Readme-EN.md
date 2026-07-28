@@ -15,13 +15,18 @@
   - [createMediaSourceWithDirectory](arkts-media-media-createmediasourcewithdirectory-f.md)
   - [createMediaSourceWithFd](arkts-media-media-createmediasourcewithfd-f.md)
   - [createMediaSourceWithStreamData](arkts-media-media-createmediasourcewithstreamdata-f.md)
-  - [createMediaSourceWithUrl](arkts-media-media-createmediasourcewithurl-f.md)<!--Del-->
+  - [createMediaSourceWithUrl](arkts-media-media-createmediasourcewithurl-f.md)
+  <!--Del-->
   - [createParallelSoundPool(system api)](arkts-media-media-createparallelsoundpool-f-sys.md)<!--DelEnd-->
   - [createSoundPool](arkts-media-media-createsoundpool-f.md)
-  - [createVideoPlayer](arkts-media-media-createvideoplayer-f.md)<!--Del-->
-  - [createVideoRecorder(system api)](arkts-media-media-createvideorecorder-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAVScreenCaptureConfigurableParameters(system api)](arkts-media-media-getavscreencaptureconfigurableparameters-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getScreenCaptureMonitor(system api)](arkts-media-media-getscreencapturemonitor-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createVideoPlayer](arkts-media-media-createvideoplayer-f.md)
+  <!--Del-->
+  - [createVideoRecorder(system api)](arkts-media-media-createvideorecorder-f-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [getAVScreenCaptureConfigurableParameters(system api)](arkts-media-media-getavscreencaptureconfigurableparameters-f-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [getScreenCaptureMonitor(system api)](arkts-media-media-getscreencapturemonitor-f-sys.md)<!--DelEnd-->
+  <!--Del-->
   - [reportAVScreenCaptureUserChoice(system api)](arkts-media-media-reportavscreencaptureuserchoice-f-sys.md)<!--DelEnd-->
   - [AudioPlayer](arkts-media-media-audioplayer-i.md)
   - [AudioRecorder](arkts-media-media-audiorecorder-i.md)
@@ -31,22 +36,29 @@
   - [AVDownloaderManager](arkts-media-media-avdownloadermanager-i.md)
   - [AVFileDescriptor](arkts-media-media-avfiledescriptor-i.md)
   - [AVImageGenerator](arkts-media-media-avimagegenerator-i.md)
-  - [AVMetadata](arkts-media-media-avmetadata-i.md)<!--Del-->
+  - [AVMetadata](arkts-media-media-avmetadata-i.md)
+  <!--Del-->
   - [AVMetadata(system api)](arkts-media-media-avmetadata-i-sys.md)<!--DelEnd-->
-  - [AVMetadataExtractor](arkts-media-media-avmetadataextractor-i.md)<!--Del-->
+  - [AVMetadataExtractor](arkts-media-media-avmetadataextractor-i.md)
+  <!--Del-->
   - [AVMetadataExtractor(system api)](arkts-media-media-avmetadataextractor-i-sys.md)<!--DelEnd-->
   - [AVMetricsEvent](arkts-media-media-avmetricsevent-i.md)
-  - [AVPlayer](arkts-media-media-avplayer-i.md)<!--Del-->
+  - [AVPlayer](arkts-media-media-avplayer-i.md)
+  <!--Del-->
   - [AVPlayer(system api)](arkts-media-media-avplayer-i-sys.md)<!--DelEnd-->
-  - [AVRecorder](arkts-media-media-avrecorder-i.md)<!--Del-->
+  - [AVRecorder](arkts-media-media-avrecorder-i.md)
+  <!--Del-->
   - [AVRecorder(system api)](arkts-media-media-avrecorder-i-sys.md)<!--DelEnd-->
-  - [AVRecorderConfig](arkts-media-media-avrecorderconfig-i.md)<!--Del-->
+  - [AVRecorderConfig](arkts-media-media-avrecorderconfig-i.md)
+  <!--Del-->
   - [AVRecorderConfig(system api)](arkts-media-media-avrecorderconfig-i-sys.md)<!--DelEnd-->
-  - [AVRecorderProfile](arkts-media-media-avrecorderprofile-i.md)<!--Del-->
+  - [AVRecorderProfile](arkts-media-media-avrecorderprofile-i.md)
+  <!--Del-->
   - [AVRecorderProfile(system api)](arkts-media-media-avrecorderprofile-i-sys.md)<!--DelEnd-->
   - [AVScreenCaptureRecordConfig](arkts-media-media-avscreencapturerecordconfig-i.md)
   - [AVScreenCaptureRecorder](arkts-media-media-avscreencapturerecorder-i.md)
-  - [AVScreenCaptureStrategy](arkts-media-media-avscreencapturestrategy-i.md)<!--Del-->
+  - [AVScreenCaptureStrategy](arkts-media-media-avscreencapturestrategy-i.md)
+  <!--Del-->
   - [AVScreenCaptureStrategy(system api)](arkts-media-media-avscreencapturestrategy-i-sys.md)<!--DelEnd-->
   - [AVTimedMetaData](arkts-media-media-avtimedmetadata-i.md)
   - [AVTranscoder](arkts-media-media-avtranscoder-i.md)
@@ -60,21 +72,28 @@
   - [MediaSourceLoadingRequest](arkts-media-media-mediasourceloadingrequest-i.md)
   - [MediaStream](arkts-media-media-mediastream-i.md)
   - [OutputSize](arkts-media-media-outputsize-i.md)
-  - [PixelMapParams](arkts-media-media-pixelmapparams-i.md)<!--Del-->
+  - [PixelMapParams](arkts-media-media-pixelmapparams-i.md)
+  <!--Del-->
   - [PixelMapParams(system api)](arkts-media-media-pixelmapparams-i-sys.md)<!--DelEnd-->
   - [PlaybackInfo](arkts-media-media-playbackinfo-i.md)
-  - [PlaybackStrategy](arkts-media-media-playbackstrategy-i.md)<!--Del-->
+  - [PlaybackStrategy](arkts-media-media-playbackstrategy-i.md)
+  <!--Del-->
   - [PlaybackStrategy(system api)](arkts-media-media-playbackstrategy-i-sys.md)<!--DelEnd-->
-  - [Range](arkts-media-media-range-i.md)<!--Del-->
+  - [Range](arkts-media-media-range-i.md)
+  <!--Del-->
   - [ScreenCaptureMonitor(system api)](arkts-media-media-screencapturemonitor-i-sys.md)<!--DelEnd-->
   - [SeiMessage](arkts-media-media-seimessage-i.md)
   - [SubtitleInfo](arkts-media-media-subtitleinfo-i.md)
   - [TrackSelectionFilter](arkts-media-media-trackselectionfilter-i.md)
-  - [VideoPlayer](arkts-media-media-videoplayer-i.md)<!--Del-->
-  - [VideoRecorder(system api)](arkts-media-media-videorecorder-i-sys.md)<!--DelEnd--><!--Del-->
-  - [VideoRecorderConfig(system api)](arkts-media-media-videorecorderconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [VideoPlayer](arkts-media-media-videoplayer-i.md)
+  <!--Del-->
+  - [VideoRecorder(system api)](arkts-media-media-videorecorder-i-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [VideoRecorderConfig(system api)](arkts-media-media-videorecorderconfig-i-sys.md)<!--DelEnd-->
+  <!--Del-->
   - [VideoRecorderProfile(system api)](arkts-media-media-videorecorderprofile-i-sys.md)<!--DelEnd-->
-  - [VideoSize](arkts-media-media-videosize-i.md)<!--Del-->
+  - [VideoSize](arkts-media-media-videosize-i.md)
+  <!--Del-->
   - [WatermarkConfig(system api)](arkts-media-media-watermarkconfig-i-sys.md)<!--DelEnd-->
   - [WatermarkConfiguration](arkts-media-media-watermarkconfiguration-i.md)
   - [AudioState](arkts-media-media-audiostate-t.md)
@@ -100,13 +119,15 @@
   - [SourceCloseCallback](arkts-media-media-sourceclosecallback-t.md)
   - [SourceOpenCallback](arkts-media-media-sourceopencallback-t.md)
   - [SourceReadCallback](arkts-media-media-sourcereadcallback-t.md)
-  - [VideoPlayState](arkts-media-media-videoplaystate-t.md)<!--Del-->
+  - [VideoPlayState](arkts-media-media-videoplaystate-t.md)
+  <!--Del-->
   - [VideoRecordState(system api)](arkts-media-media-videorecordstate-t-sys.md)<!--DelEnd-->
   - [AacProfile](arkts-media-media-aacprofile-e.md)
   - [AudioEncoder](arkts-media-media-audioencoder-e.md)
   - [AudioOutputFormat](arkts-media-media-audiooutputformat-e.md)
   - [AudioSourceType](arkts-media-media-audiosourcetype-e.md)
-  - [AVErrorCode](arkts-media-media-averrorcode-e.md)<!--Del-->
+  - [AVErrorCode](arkts-media-media-averrorcode-e.md)
+  <!--Del-->
   - [AVErrorCode(system api)](arkts-media-media-averrorcode-e-sys.md)<!--DelEnd-->
   - [AVImageQueryOptions](arkts-media-media-avimagequeryoptions-e.md)
   - [AVMetricsEventType](arkts-media-media-avmetricseventtype-e.md)
@@ -123,14 +144,17 @@
   - [LoadingRequestError](arkts-media-media-loadingrequesterror-e.md)
   - [MediaDescriptionKey](arkts-media-media-mediadescriptionkey-e.md)
   - [MediaErrorCode](arkts-media-media-mediaerrorcode-e.md)
-  - [MediaType](arkts-media-media-mediatype-e.md)<!--Del-->
+  - [MediaType](arkts-media-media-mediatype-e.md)
+  <!--Del-->
   - [MetaSourceType(system api)](arkts-media-media-metasourcetype-e-sys.md)<!--DelEnd-->
-  - [PickerMode](arkts-media-media-pickermode-e.md)<!--Del-->
+  - [PickerMode](arkts-media-media-pickermode-e.md)
+  <!--Del-->
   - [PixelFormat(system api)](arkts-media-media-pixelformat-e-sys.md)<!--DelEnd-->
   - [PlaybackInfoKey](arkts-media-media-playbackinfokey-e.md)
   - [PlaybackMetricsKey](arkts-media-media-playbackmetricskey-e.md)
   - [PlaybackSpeed](arkts-media-media-playbackspeed-e.md)
-  - [PlaylistLoopMode](arkts-media-media-playlistloopmode-e.md)<!--Del-->
+  - [PlaylistLoopMode](arkts-media-media-playlistloopmode-e.md)
+  <!--Del-->
   - [ScreenCaptureEvent(system api)](arkts-media-media-screencaptureevent-e-sys.md)<!--DelEnd-->
   - [SeekMode](arkts-media-media-seekmode-e.md)
   - [SoundInterruptMode](arkts-media-media-soundinterruptmode-e.md)
@@ -141,7 +165,8 @@
 - multimedia<!--arkts-mediakit-multimedia-->
   - [soundPool](arkts-soundpool.md)
     - [ErrorInfo](arkts-media-soundpool-errorinfo-i.md)
-    - [PlayParameters](arkts-media-soundpool-playparameters-i.md)<!--Del-->
+    - [PlayParameters](arkts-media-soundpool-playparameters-i.md)
+    <!--Del-->
     - [PlayParameters(system api)](arkts-media-soundpool-playparameters-i-sys.md)<!--DelEnd-->
     - [SoundPool](arkts-media-soundpool-soundpool-i.md)
     - [ErrorType](arkts-media-soundpool-errortype-e.md)

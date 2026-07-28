@@ -16,13 +16,15 @@ Custom Component base class and it is migrated from class CustomComponent.
 aboutToAppear?(): void
 ```
 
-Invoked after a new instance of the custom component is created and before its build() function is executed. You can change state variables in aboutToAppear.The change will take effect when you execute the build() function next time.The aboutToAppear lifecycle callback of a custom component with a custom layout is invoked during the layout process.
+aboutToAppear Method and it is migrated from class CustomComponent.
 
-**Since:** 18
+The aboutToAppear function is executed after a new instance of the custom component is created, before its build()function is executed.
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Since:** 7
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
 <!--Device-BaseCustomComponent-aboutToAppear?(): void--><!--Device-BaseCustomComponent-aboutToAppear?(): void-End-->
 
@@ -34,13 +36,15 @@ Invoked after a new instance of the custom component is created and before its b
 aboutToDisappear?(): void
 ```
 
-Invoked when this component is about to disappear.Do not change state variables in the aboutToDisappear function as doing this can cause unexpected errors.For example, the modification of the @Link decorated variable may cause unstable application running.
+aboutToDisappear Method and it is migrated from class CustomComponent.
 
-**Since:** 18
+The aboutToDisappear function executes before a custom component is destroyed.
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Since:** 7
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
 <!--Device-BaseCustomComponent-aboutToDisappear?(): void--><!--Device-BaseCustomComponent-aboutToDisappear?(): void-End-->
 
@@ -54,11 +58,11 @@ aboutToRecycle?(): void
 
 aboutToRecycle Method and it is migrated from class CustomComponent.
 
-**Since:** 18
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 <!--Device-BaseCustomComponent-aboutToRecycle?(): void--><!--Device-BaseCustomComponent-aboutToRecycle?(): void-End-->
 
@@ -72,11 +76,11 @@ build(): void
 
 Customize the pop-up content constructor and it is migrated from class CustomComponent.
 
-**Since:** 18
+**Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 18.
+**Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
 <!--Device-BaseCustomComponent-build(): void--><!--Device-BaseCustomComponent-build(): void-End-->
 
@@ -114,11 +118,11 @@ getUIContext(): UIContext
 
 Get current UIContext and it is migrated from class CustomComponent.
 
-**Since:** 18
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 <!--Device-BaseCustomComponent-getUIContext(): UIContext--><!--Device-BaseCustomComponent-getUIContext(): UIContext-End-->
 
@@ -136,13 +140,13 @@ Get current UIContext and it is migrated from class CustomComponent.
 getUniqueId(): number
 ```
 
-Get uniqueId of the custom component and it is migrated from class CustomComponent.This unique ID is assigned by the system to each component.If this API is called before the component's corresponding node is created or after it has been destroyed, an invalid unique ID, which is -1, will be returned.
+Get uniqueId of the custom component and it is migrated from class CustomComponent.
 
-**Since:** 18
+**Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 <!--Device-BaseCustomComponent-getUniqueId(): number--><!--Device-BaseCustomComponent-getUniqueId(): number-End-->
 
@@ -180,11 +184,11 @@ The callback method after the custom component is built and it is migrated from 
 
 Triggered when the custom component has been built.
 
-**Since:** 18
+**Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 <!--Device-BaseCustomComponent-onDidBuild?(): void--><!--Device-BaseCustomComponent-onDidBuild?(): void-End-->
 
@@ -198,13 +202,13 @@ onFormRecover?(statusData: string): void
 
 onFormRecover Method, this is only for ArkTS form, it is migrated from class CustomComponent.
 
-**Since:** 18
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 18.
+**Widget capability:** This API can be used in ArkTS widgets since API version 11.
 
 <!--Device-BaseCustomComponent-onFormRecover?(statusData: string): void--><!--Device-BaseCustomComponent-onFormRecover?(statusData: string): void-End-->
 
@@ -214,7 +218,7 @@ onFormRecover Method, this is only for ArkTS form, it is migrated from class Cus
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| statusData | string | Yes | indicate status data of ArkTS form UI, which is acquired by calling onFormRecycle, it is used to recover form |
+| statusData | string | Yes | indicate status data of ArkTS form UI, which is acquired by calling onFormRecycle,it is used to recover form |
 
 ## onFormRecycle
 
@@ -224,13 +228,13 @@ onFormRecycle?(): string
 
 onFormRecycle Method, this is only for ArkTS form, if form was marked recyclable by form user, when system memory is low,it will be recycled after calling this method, you should return a string of params that you wish to be saved, it will be passed back as params in onFormRecover, in which you can recover the form, it is migrated from class CustomComponent.
 
-**Since:** 18
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 18.
+**Widget capability:** This API can be used in ArkTS widgets since API version 11.
 
 <!--Device-BaseCustomComponent-onFormRecycle?(): string--><!--Device-BaseCustomComponent-onFormRecycle?(): string-End-->
 

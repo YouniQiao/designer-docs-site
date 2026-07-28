@@ -1,7 +1,6 @@
 # NotificationSubscriberExtensionAbility
 
 NotificationSubscriberExtensionAbility is the base class for notification subscription extensions, providing the core functionality for subscribing to notifications.
-
 > **NOTE**  
 >  
 > The APIs of this module can be used only in the stage model.
@@ -18,7 +17,6 @@ NotificationSubscriberExtensionAbility is the base class for notification subscr
 import { NotificationSubscriberExtensionAbility } from '@kit.NotificationKit';
 ```
 
-<a id="oncancelmessages"></a>
 ## onCancelMessages
 
 ```TypeScript
@@ -54,7 +52,6 @@ export default class NotificationSubscriberExtAbility extends NotificationSubscr
 
 ```
 
-<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -84,7 +81,6 @@ export default class NotificationSubscriberExtAbility extends NotificationSubscr
 
 ```
 
-<a id="onreceivemessage"></a>
 ## onReceiveMessage
 
 ```TypeScript
@@ -105,7 +101,7 @@ Called when a notification is received.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| notificationInfo | [NotificationInfo](arkts-notification-notificationinfo-i.md) | Yes | Notification information delivered to the [onReceiveMessage](arkts-notification-application-notificationsubscriberextensionability-notificationsubscriberextensionability-c.md#onreceivemessage-1)callback of ExtensionAbility for notification subscriptions. |
+| notificationInfo | [NotificationInfo](arkts-notification-notificationinfo-i.md) | Yes | Notification information delivered to the [onReceiveMessage](arkts-notification-application-notificationsubscriberextensionability-notificationsubscriberextensionability-c.md#onreceivemessage)callback of ExtensionAbility for notification subscriptions. |
 
 **Example**
 

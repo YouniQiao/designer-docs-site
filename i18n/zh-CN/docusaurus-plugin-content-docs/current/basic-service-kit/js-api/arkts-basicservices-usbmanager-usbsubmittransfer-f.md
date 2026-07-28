@@ -74,7 +74,12 @@ async function usbSubmitTransfer() {
     return value.direction === 0 && value.type === 2
   })
   // 获取设备的第一个id。
-  usbManager.claimInterface(devicepipe, device.configs?.[0]?.interfaces?.[0], true);
+  let ret: number = usbManager.claimInterface(devicepipe, device.configs?.[0]?.interfaces?.[0], true);
+  if (ret !== 0) {
+    console.error(`claim interface failed`);
+    usbManager.closePipe(devicepipe);
+    return;
+  }
 
   let transferParams: usbManager.UsbDataTransferParams = {
     devPipe: devicepipe,

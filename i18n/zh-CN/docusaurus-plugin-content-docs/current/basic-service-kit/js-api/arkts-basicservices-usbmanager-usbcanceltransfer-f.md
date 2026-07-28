@@ -76,7 +76,12 @@ async function usbCancelTransfer() {
     return;
   }
   // 获取设备的第一个id。
-  usbManager.claimInterface(devicepipe, device.configs?.[0]?.interfaces?.[0], true);
+  let ret: number = usbManager.claimInterface(devicepipe, device.configs?.[0]?.interfaces?.[0], true);
+  if (ret !== 0) {
+    console.error(`claim interface failed`);
+    usbManager.closePipe(devicepipe);
+    return;
+  }
   let transferParams: usbManager.UsbDataTransferParams = {
     devPipe: devicepipe,
     flags: usbManager.UsbTransferFlags.USB_TRANSFER_SHORT_NOT_OK,

@@ -251,7 +251,7 @@ vibrationValues?: Array<number>
 
 Vibration mode of the notification. This is a reserved capability and is not supported currently.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 7
 

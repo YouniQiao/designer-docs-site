@@ -1,7 +1,6 @@
 # NotificationSubscriberExtensionContext
 
 The **NotificationSubscriberExtensionContext** module provides the context for the **NotificationSubscriberExtensionAbility**.
-
 > **NOTE**  
 >  
 > The APIs of this module can be used only in the stage model.

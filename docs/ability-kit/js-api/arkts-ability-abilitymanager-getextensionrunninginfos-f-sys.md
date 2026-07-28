@@ -6,7 +6,6 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
-<a id="getextensionrunninginfos"></a>
 ## getExtensionRunningInfos
 
 ```TypeScript
@@ -46,7 +45,6 @@ Obtains the ExtensionAbility running information. This API uses a promise to ret
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
 
-<a id="getextensionrunninginfos-1"></a>
 ## getExtensionRunningInfos
 
 ```TypeScript

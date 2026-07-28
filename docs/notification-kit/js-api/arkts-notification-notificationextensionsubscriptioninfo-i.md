@@ -1,9 +1,10 @@
 # NotificationExtensionSubscriptionInfo
 
-The **NotificationExtensionSubscriptionInfo** module describes the information about notification extension
-subscription.
+The **NotificationExtensionSubscriptionInfo** module describes the information about notification extension subscription.
 
 **Since:** 22
+
+<!--Device-unnamed-export interface NotificationExtensionSubscriptionInfo--><!--Device-unnamed-export interface NotificationExtensionSubscriptionInfo-End-->
 
 **System capability:** SystemCapability.Notification.Notification
 
@@ -19,6 +20,8 @@ MAC address, which is a unique identifier of the device. Example: 11:22:33:AA:BB
 
 **Since:** 22
 
+<!--Device-NotificationExtensionSubscriptionInfo-addr: string--><!--Device-NotificationExtensionSubscriptionInfo-addr: string-End-->
+
 **System capability:** SystemCapability.Notification.Notification
 
 ## type
@@ -27,12 +30,13 @@ MAC address, which is a unique identifier of the device. Example: 11:22:33:AA:BB
 type: notificationExtensionSubscription.SubscribeType
 ```
 
-Subscription type, specifying the subscription method for notification extension. Currently, only
-**SubscribeType.BLUETOOTH** is supported, indicating subscription to notifications via Bluetooth.
+Subscription type, specifying the subscription method for notification extension. Currently, only **SubscribeType.BLUETOOTH** is supported, indicating subscription to notifications via Bluetooth.
 
 **Type:** notificationExtensionSubscription.SubscribeType
 
 **Since:** 22
+
+<!--Device-NotificationExtensionSubscriptionInfo-type: notificationExtensionSubscription.SubscribeType--><!--Device-NotificationExtensionSubscriptionInfo-type: notificationExtensionSubscription.SubscribeType-End-->
 
 **System capability:** SystemCapability.Notification.Notification
 

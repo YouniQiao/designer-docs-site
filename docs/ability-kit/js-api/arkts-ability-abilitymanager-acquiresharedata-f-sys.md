@@ -6,14 +6,13 @@
 import { abilityManager } from '@kit.AbilityKit';
 ```
 
-<a id="acquiresharedata"></a>
 ## acquireShareData
 
 ```TypeScript
 function acquireShareData(missionId: number, callback: AsyncCallback<Record<string, Object>>): void
 ```
 
-Called by a system dialog box to obtain shared data, which is set by the target UIAbility through [onShare](arkts-ability-app-ability-uiability-uiability-c.md#onshare-1). This API uses an asynchronous callback to return the result.
+Called by a system dialog box to obtain shared data, which is set by the target UIAbility through [onShare](arkts-ability-app-ability-uiability-uiability-c.md#onshare). This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -39,14 +38,13 @@ Called by a system dialog box to obtain shared data, which is set by the target 
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
 
-<a id="acquiresharedata-1"></a>
 ## acquireShareData
 
 ```TypeScript
 function acquireShareData(missionId: number): Promise<Record<string, Object>>
 ```
 
-Called by a system dialog box to obtain shared data, which is set by the target UIAbility through [onShare](arkts-ability-app-ability-uiability-uiability-c.md#onshare-1). This API uses a promise to return the result.
+Called by a system dialog box to obtain shared data, which is set by the target UIAbility through [onShare](arkts-ability-app-ability-uiability-uiability-c.md#onshare). This API uses a promise to return the result.
 
 **Since:** 10
 

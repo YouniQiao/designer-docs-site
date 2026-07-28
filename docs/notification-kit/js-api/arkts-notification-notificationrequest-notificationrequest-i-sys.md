@@ -234,7 +234,7 @@ Notification mode control. The default value is **0**. This API can be used to r
 overlayIcon?: image.PixelMap
 ```
 
-Notification overlay icon. This parameter is left empty by default. The total number of the icon pixel bytes cannot exceed 192 KB (which is obtained through [getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber-1)).
+Notification overlay icon. This parameter is left empty by default. The total number of the icon pixel bytes cannot exceed 192 KB (which is obtained through [getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)).
 
 This API takes effect only when [notificationSlotType](arkts-notification-notificationrequest-notificationrequest-i.md) is set to **SOCIAL_COMMUNICATION**. The recommended icon size is 128 × 128 pixels. The display effect depends on the device capability and notification center UI style.
 

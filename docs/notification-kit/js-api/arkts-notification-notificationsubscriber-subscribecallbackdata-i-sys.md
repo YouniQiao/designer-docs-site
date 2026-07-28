@@ -113,7 +113,7 @@ readonly vibrationValues?: Array<number>
 
 Notification vibration.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 7
 

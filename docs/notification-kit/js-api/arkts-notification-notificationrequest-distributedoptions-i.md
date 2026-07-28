@@ -37,7 +37,7 @@ supportDisplayDevices?: Array<string>
 
 List of the devices to which the notification can be synchronized.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 8
 
@@ -53,7 +53,7 @@ supportOperateDevices?: Array<string>
 
 List of the devices on which the notification can be opened.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 8
 

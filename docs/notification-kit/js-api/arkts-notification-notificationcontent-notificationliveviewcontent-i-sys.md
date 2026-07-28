@@ -38,7 +38,7 @@ extraInfo?: Record<string, Object>
 
 Extra information of the live view. This parameter is left empty by default.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Since:** 11
 
@@ -77,7 +77,7 @@ pictureInfo?: Record<string, Array<image.PixelMap>>
 
 Extra image information of the live view. This parameter is left empty by default.
 
-**Type:** Record<string, Array<image.PixelMap>>
+**Type:** Record&lt;string, Array&lt;image.PixelMap&gt;&gt;
 
 **Since:** 11
 

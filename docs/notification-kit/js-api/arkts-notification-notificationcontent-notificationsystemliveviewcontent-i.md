@@ -1,7 +1,6 @@
 # NotificationSystemLiveViewContent
 
 Describes the system live view notification content, which is used to display real-time status information in the live view. Third-party applications are not supported to directly create this notification type. After the system proxy creates a system live view notification, a third-party application can publish a notification with the same ID to update the specified content. This API is inherited from NotificationBasicContent.
-
 > **NOTE**  
 >  
 > The actual display effect depends on the device capabilities and the notification center UI style.

@@ -1,7 +1,6 @@
 # OnFoldStatusChangeInfo
 
 Called when the folding state changes. This API takes effect only in landscape mode.
-
 > **NOTE**  
 >  
 > To standardize anonymous object definitions, the element definitions here have been revised in API version 18.  

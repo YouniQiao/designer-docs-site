@@ -2,8 +2,8 @@
 
 > **NOTE**  
 > This API is supported since API version 7 and deprecated since API version 9. <!--Del-->You are advised to use  
-> [notificationManager.NotificationKey](arkts-notification-notificationsubscribe-notificationkey-i-sys.md).<!  
-> --DelEnd-->
+> [notificationManager.NotificationKey](arkts-notification-notificationsubscribe-notificationkey-i-sys.md).&lt;!  
+> --DelEnd--&gt;
 
 **Since:** 7
 

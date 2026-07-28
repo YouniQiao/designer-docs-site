@@ -1,8 +1,8 @@
 # Picture
 
-An image that contains special information can be decoded into a picture object, which generally contains the main picture, auxiliary picture, and metadata. The main picture contains most information about the image and is mainly used to render the image. The auxiliary picture is used to store data related to but different from the main picture, revealing more comprehensive details. The metadata is generally used to store information about the image file. The picture object class is used to read or write picture objects. Before calling any API in Picture, you must use [image.createPicture](arkts-image-image-createpicture-f.md#createpicture-1) to create a Picture object.
+An image that contains special information can be decoded into a picture object, which generally contains the main picture, auxiliary picture, and metadata. The main picture contains most information about the image and is mainly used to render the image. The auxiliary picture is used to store data related to but different from the main picture, revealing more comprehensive details. The metadata is generally used to store information about the image file. The picture object class is used to read or write picture objects. Before calling any API in Picture, you must use [image.createPicture](arkts-image-image-createpicture-f.md#createpicture) to create a Picture object.
 
-Images occupy a large amount of memory. When you finish using a Picture instance, call [release](arkts-image-image-picture-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Images occupy a large amount of memory. When you finish using a Picture instance, call [release](arkts-image-image-picture-i.md#release) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 13
 
@@ -16,7 +16,6 @@ Images occupy a large amount of memory. When you finish using a Picture instance
 import { image } from '@kit.ImageKit';
 ```
 
-<a id="getauxiliarypicture"></a>
 ## getAuxiliaryPicture
 
 ```TypeScript
@@ -49,7 +48,6 @@ Obtains an auxiliary picture by type.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 
-<a id="getgainmappixelmap"></a>
 ## getGainmapPixelmap
 
 ```TypeScript
@@ -70,7 +68,6 @@ Obtains the PixelMap object of the gain map.
 | --- | --- |
 | [PixelMap](arkts-image-image-pixelmap-i.md) | PixelMap object obtained. If there is no PixelMap object, null is returned. |
 
-<a id="gethdrcomposedpixelmap"></a>
 ## getHdrComposedPixelmap
 
 ```TypeScript
@@ -98,7 +95,6 @@ Generates a High Dynamic Range (HDR) image and obtains its PixelMap object. This
 | [7600901](../errorcode-image.md#7600901-unknown-error) | Inner unknown error. Please check the logs for detailed information. |
 | [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. e.g.,1. The picture does not has a gainmap.2. MainPixelMap's allocator type is not DMA. |
 
-<a id="gethdrcomposedpixelmapwithoptions"></a>
 ## getHdrComposedPixelmapWithOptions
 
 ```TypeScript
@@ -135,7 +131,6 @@ The Picture object that calls this API must contain the main picture, gain map, 
 | --- | --- |
 | [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. |
 
-<a id="getmainpixelmap"></a>
 ## getMainPixelmap
 
 ```TypeScript
@@ -156,7 +151,6 @@ Obtains the PixelMap object of the main picture. This API returns the result syn
 | --- | --- |
 | [PixelMap](arkts-image-image-pixelmap-i.md) | PixelMap object. |
 
-<a id="getmetadata"></a>
 ## getMetadata
 
 ```TypeScript
@@ -190,7 +184,6 @@ Obtains the metadata of this Picture object. This API uses a promise to return t
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 | [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. The metadata type does not match the auxiliary picture type. |
 
-<a id="hdrcomposetomainpixelmap"></a>
 ## hdrComposeToMainPixelmap
 
 ```TypeScript
@@ -221,7 +214,6 @@ The Picture object that calls this API must contain the main pixelmap, gain map.
 | --- | --- |
 | [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. e.g.,1. The picture does not have a gainmap.2. pixelMap's allocator type is not DMA. |
 
-<a id="marshalling"></a>
 ## marshalling
 
 ```TypeScript
@@ -249,7 +241,6 @@ Marshals this Picture object and writes it to a MessageSequence object.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types; 3.Parameter verification failed. |
 | [62980097](../errorcode-image.md#62980097-pixelmap-serialization-failed) | IPC error. Possible cause: 1.IPC communication failed. 2. Image upload exception.3. Decode process exception. 4. Insufficient memory. |
 
-<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -268,7 +259,6 @@ Before releasing the instance, ensure that all asynchronous operations associate
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-<a id="setauxiliarypicture"></a>
 ## setAuxiliaryPicture
 
 ```TypeScript
@@ -296,7 +286,6 @@ Sets an auxiliary picture.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 
-<a id="setmetadata"></a>
 ## setMetadata
 
 ```TypeScript

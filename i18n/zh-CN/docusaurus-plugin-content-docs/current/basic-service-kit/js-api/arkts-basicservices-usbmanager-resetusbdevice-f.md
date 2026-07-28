@@ -49,6 +49,7 @@ function resetUsbDevice(pipe: USBDevicePipe): boolean
 **示例：**
 
 ```TypeScript
+import {BusinessError} from '@kit.BasicServicesKit';
 async function resetUsbDevice() {
   let devicesList: Array<usbManager.USBDevice> = usbManager.getDevices();
   if (!devicesList || devicesList.length == 0) {
