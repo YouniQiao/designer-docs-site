@@ -10,6 +10,8 @@ This module applies to the following scenarios:
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export default struct UserAuthIcon--><!--Device-unnamed-export default struct UserAuthIcon-End-->
 
 **System capability:** SystemCapability.UserIAM.UserAuth.Core
@@ -88,7 +90,7 @@ Result callback. This callback is triggered after a user completes authenticatio
 
 Note:The application must request the **ohos.permission.ACCESS_BIOMETRIC** permission. Otherwise, it will only display the icon and cannot start the authentication component.
 
-**Type:** (result: userAuth.UserAuthResult) => void
+**Type:** (result: userAuth.UserAuthResult) =&gt; void
 
 **Since:** 12
 
@@ -106,7 +108,7 @@ onIconClick?: () => void
 
 Icon click callback. This callback is triggered when a user taps the authentication icon. You can use this callback to prepare for the tap or record user behavior logs. If this callback is not set, the authentication process is directly triggered after the icon is tapped.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 

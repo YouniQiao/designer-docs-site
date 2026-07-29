@@ -20,5 +20,5 @@ Defines the callback type used in mutableBuilder.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| args | Args | Yes | The parameter of MutableBuilder. |
+| args | Args | Yes | The parameter of MutableBuilder.  |
 

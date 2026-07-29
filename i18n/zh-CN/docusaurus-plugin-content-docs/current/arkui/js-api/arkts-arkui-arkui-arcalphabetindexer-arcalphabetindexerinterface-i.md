@@ -1,6 +1,6 @@
 # ArcAlphabetIndexerInterface
 
-弧形索引条是一种弧形的、可按字母顺序排序进行快速定位的组件，可以与容器组件联动，按逻辑结构快速定位至容器显示区域。
+弧形索引条是一种弧形排列、可按字母顺序快速定位的组件，可与容器组件联动，按逻辑结构快速定位至容器显示区域，适用于手表等圆形屏幕设备。
 > **说明：**
 > - 该组件支持在Phone、PC/2in1、Tablet、TV、Wearable设备上使用。API version 22及以前版本，在Phone、PC/2in1、Tablet、TV上使用会编译告警，但可以正常运行。
 
@@ -22,7 +22,7 @@ import { ArcAlphabetIndexerAttribute, ArcAlphabetIndexer } from '@kit.ArkUI';
 (info: ArcAlphabetIndexerInitInfo): ArcAlphabetIndexerAttribute
 ```
 
-创建弧形索引条实例，传入弧形索引条配置项参数。
+创建并初始化弧形索引条组件。
 
 **起始版本：** 18
 

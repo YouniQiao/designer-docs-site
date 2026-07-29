@@ -71,7 +71,7 @@ try {
   statusMonitor.offContinuousAuthChange(handler);
 } catch (error) {
   const message = (error as BusinessError).message;
-  console.error(`error has been captured: message:${message}`);
+  console.error(`error has been captured. Code: ${(error as BusinessError).code}, message: ${message}`);
 }
 
 ```

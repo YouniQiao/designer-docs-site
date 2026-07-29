@@ -6,7 +6,6 @@
 import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
-<a id="getstatusmonitor"></a>
 ## getStatusMonitor
 
 ```TypeScript
@@ -37,7 +36,7 @@ Obtains the status monitor. This API is used to obtain the status monitor object
 
 | Type | Description |
 | --- | --- |
-| [StatusMonitor](arkts-userauthentication-companiondeviceauth-statusmonitor-i-sys.md) | Status monitor object. It can be used to query the template status ([getTemplateStatus](arkts-userauthentication-companiondeviceauth-statusmonitor-i-sys.md#gettemplatestatus-1)), subscribe to template changes ([onTemplateChange](companionDeviceAuth.StatusMonitor.onTemplateChange(callback: TemplateStatusCallback))), subscribe to available device status changes ([onAvailableDeviceChange](companionDeviceAuth.StatusMonitor.onAvailableDeviceChange(callback: AvailableDeviceStatusCallback))), and subscribe to continuous authentication status changes ([onContinuousAuthChange](companionDeviceAuth.StatusMonitor.onContinuousAuthChange(param: ContinuousAuthParam, callback: ContinuousAuthStatusCallback))). |
+| [StatusMonitor](arkts-userauthentication-companiondeviceauth-statusmonitor-i-sys.md) | Status monitor object. It can be used to query the template status ([getTemplateStatus](arkts-userauthentication-companiondeviceauth-statusmonitor-i-sys.md#gettemplatestatus)), subscribe to template changes ([onTemplateChange](companionDeviceAuth.StatusMonitor.onTemplateChange(callback: TemplateStatusCallback))), subscribe to available device status changes ([onAvailableDeviceChange](companionDeviceAuth.StatusMonitor.onAvailableDeviceChange(callback: AvailableDeviceStatusCallback))), and subscribe to continuous authentication status changes ([onContinuousAuthChange](companionDeviceAuth.StatusMonitor.onContinuousAuthChange(param: ContinuousAuthParam, callback: ContinuousAuthStatusCallback))). |
 
 **Error codes:**
 

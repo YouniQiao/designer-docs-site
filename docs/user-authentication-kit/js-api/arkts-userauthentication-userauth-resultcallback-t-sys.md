@@ -20,6 +20,6 @@ Called to return the authentication result. If the authentication is successful,
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| challenge | Uint8Array | Yes | Challenge value, which can be passed in Uint8Array([]) format. |
-| result | UserAuthResult | Yes | Authentication result. |
+| challenge | Uint8Array | Yes | Challenge value, which can be passed in Uint8Array([]) format.  |
+| result | [UserAuthResult](../../apis-background-tasks-kit/arkts-apis/arkts-backgroundtasks-backgroundtaskmanager-userauthresult-e.md) | Yes | Authentication result.  |
 

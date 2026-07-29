@@ -22,7 +22,7 @@ autoPlay(value: boolean)
 
 设置子组件是否自动播放。轮播方向为索引从小到大。
 
-[loop](SwiperAttribute#loop)为false时，自动轮播到最后一页时停止轮播。手势切换后不是最后一页时继续播放。当Swiper不可见时会停止轮播。
+[loop](SwiperAttribute#loop)为false时，自动轮播到最后一页时停止轮播。手势切换完成后，如果当前页面不是最后一页，自动轮播将继续播放。当Swiper不可见时会停止轮播。
 
 **起始版本：** 7
 
@@ -46,7 +46,7 @@ autoPlay(value: boolean)
 autoPlay(autoPlay: boolean, options: AutoPlayOptions)
 ```
 
-设置子组件是否自动播放。options入参控制手指或者鼠标等按下屏幕时子组件是否停止自动播放。
+设置子组件是否自动播放。options入参控制手指或鼠标按下屏幕时子组件是否停止自动播放。
 
 当[loop](SwiperAttribute#loop)设置为false时，自动轮播将在到达最后一页时停止。在通过手势切换且未处于最后一页的情况下，轮播将继续进行。Swiper在不可见时，轮播也将停止。
 
@@ -67,7 +67,7 @@ autoPlay(autoPlay: boolean, options: AutoPlayOptions)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | autoPlay | boolean | 是 | 子组件是否自动播放。<br/>true：自动播放；false：不自动播放。<br/>传入非法值时，按false处理。 |
-| options | [AutoPlayOptions](arkts-arkui-autoplayoptions-i.md) | 是 | 配置手指或者鼠标等按下屏幕时子组件是否停止自动播放。当stopWhenTouched设置为true时，多指按下场景中任意一个手指抬起后，将自动继续播放。<br/>默认值：{ stopWhenTouched: true }，停止自动播放。 |
+| options | [AutoPlayOptions](arkts-arkui-autoplayoptions-i.md) | 是 | 配置手指或鼠标按下屏幕时子组件是否停止自动播放。当stopWhenTouched设置为true时，多指按下场景中任意一个手指抬起后，将自动继续播放。<br/>默认值：{ stopWhenTouched: true }，停止自动播放。 |
 
 ## cachedCount
 
@@ -75,7 +75,7 @@ autoPlay(autoPlay: boolean, options: AutoPlayOptions)
 cachedCount(value: number)
 ```
 
-设置预加载子组件个数，以当前页面为基准，加载当前显示页面的前后个数。前面item删除，后面会向前补位。例如cachedCount=1时，会将当前显示的页面的前面一页和后面一页的子组件都预加载。如果设置为按组翻页，即displayCount的swipeByGroup参数设为true，预加载时会以组为基本单位。例如cachedCount=1，swipeByGroup=true时，会将当前组的前面一组和后面一组的子组件都预加载。
+设置预加载子组件个数，以当前页面为基准，加载当前显示页面的前后个数。前面item删除，后面会向前补位。例如cachedCount=1时，会将当前显示页面在索引序号上相邻的前一页和后一页的子组件都预加载。如果设置为按组翻页，即displayCount的swipeByGroup参数设为true，预加载时会以组为基本单位。例如cachedCount=1，swipeByGroup=true时，会将当前组的前面一组和后面一组的子组件都预加载。
 > **说明：**
 > - 在连续滑动场景中，一屏显示一个Swiper子组件时，通常将cachedCount值设置为1或2即可。最佳实践请参考  
 > [优化Swiper组件加载慢丢帧问题-缓存数据项](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-swiper_high_performance_development_guide#section143504547145)。  
@@ -233,7 +233,7 @@ customContentTransition(transition: SwiperContentAnimatedTransition)
 disableSwipe(value: boolean)
 ```
 
-设置禁用组件滑动切换功能。
+设置禁用组件滑动切换功能。适用于仅通过按钮或导航点控制翻页的场景，或需要限制用户滑动操作的场景。
 
 **起始版本：** 8
 
@@ -476,7 +476,7 @@ index(value: number)
 indicator(value: DotIndicator | DigitIndicator | boolean)
 ```
 
-设置可选导航点指示器样式。
+设置导航点指示器样式。
 
 **起始版本：** 7
 
@@ -492,7 +492,7 @@ indicator(value: DotIndicator | DigitIndicator | boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [DotIndicator](arkts-arkui-dotindicator-c.md) \| DigitIndicator \| boolean | 是 | 可选导航点指示器样式。<br/> - DotIndicator：圆点指示器样式。<br/> - DigitIndicator：数字指示器样式。<br/> - boolean：是否启用导航点指示器。设置为true启用，false不启用。<br/>默认值：true<br/>默认类型：DotIndicator<br>**起始版本：** 7 - 9 |
+| value | [DotIndicator](arkts-arkui-dotindicator-c.md) \| DigitIndicator \| boolean | 是 | 导航点指示器样式。<br/> - DotIndicator：圆点指示器样式，适用于展示简洁的位置提示。<br/> - DigitIndicator：数字指示器样式，适用于需要明确显示当前位置的场景。<br/> - boolean：是否启用导航点指示器。设置为true启用，false不启用。<br/>默认值：true<br/>默认类型：DotIndicator<br>**起始版本：** 7 - 9 |
 
 ## indicator
 
@@ -528,7 +528,7 @@ indicator(indicator: IndicatorComponentController | DotIndicator | DigitIndicato
 indicatorInteractive(value: boolean)
 ```
 
-设置禁用组件导航点交互功能。
+设置导航点是否可交互。适用于需要通过其他方式（如按钮）控制翻页，或需要禁止用户通过导航点点击翻页的场景。
 
 **起始版本：** 12
 
@@ -629,7 +629,7 @@ itemSpace(value: number | string)
 loop(value: boolean)
 ```
 
-设置是否开启循环。在LazyForEach懒循环加载模式下，加载的组件数量建议大于5个。
+设置导航点是否开启循环。在LazyForEach懒循环加载模式下，加载的组件数量建议大于5个。预加载的组件数量不足时，可能会导致快速切换时出现空白或卡顿。
 
 **起始版本：** 7
 
@@ -681,7 +681,7 @@ maintainVisibleContentPosition(enabled: boolean)
 nestedScroll(value: SwiperNestedScrollMode)
 ```
 
-设置Swiper组件和父组件的嵌套滚动模式。[loop](SwiperAttribute#loop)为true时Swiper组件没有边缘，不会触发父组件嵌套滚动。
+设置Swiper组件和父组件的嵌套滚动模式。当Swiper嵌套在滚动容器（如List、Scroll）中时，需要根据业务需求选择合适的嵌套滚动模式。[loop](SwiperAttribute#loop)为true时Swiper组件没有边缘，不会触发父组件嵌套滚动。
 > **说明：**
 > 由于Swiper的抛滑动画逻辑和其它滚动类组件不同（Swiper一次只能滑动一页，抛滑时做翻页动画），当Swiper内嵌套其它滚动组件时，如果Swiper的翻页动画已经启动，将无法接受子节点上传的滚动偏移量。这时Swiper的  
 > 翻页动画和子节点的边缘效果动画会同时执行。
@@ -1050,7 +1050,7 @@ prevMargin(value: Length, ignoreBlank?: boolean)
 vertical(value: boolean)
 ```
 
-设置是否为纵向滑动。
+设置导航点是否为纵向排列。
 
 **起始版本：** 7
 

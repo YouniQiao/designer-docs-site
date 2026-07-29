@@ -18,8 +18,8 @@ Enumerates the authentication security levels.
 
 | Type | Description |
 | --- | --- |
-| 'S1' | authentication trust level 1. The authentication of this level can identify individual usersand provides limited liveness detection capabilities. It is usually used in service risk control and query ofgeneral personal data. |
-| 'S2' | authentication trust level 2. The authentication of this level can accurately identifyindividual users and provides regular liveness detection capabilities. It is usually used in scenarios such asapplication logins and keeping the unlocking state of a device. |
-| 'S3' | authentication trust level 3. The authentication of this level can accurately identifyindividual users and provides strong liveness detection capabilities. It is usually used in scenarios such asunlocking a device. |
-| 'S4' | authentication trust level 4. The authentication of this level can accurately identifyindividual users and provides powerful liveness detection capabilities. It is usually used in scenarios such assmall-amount payment. |
+| 'S1' | authentication trust level 1. The authentication of this level can identify individual users and provides limited liveness detection capabilities. It is usually used in service risk control and query of general personal data. |
+| 'S2' | authentication trust level 2. The authentication of this level can accurately identify individual users and provides regular liveness detection capabilities. It is usually used in scenarios such as application logins and keeping the unlocking state of a device. |
+| 'S3' | authentication trust level 3. The authentication of this level can accurately identify individual users and provides strong liveness detection capabilities. It is usually used in scenarios such as unlocking a device. |
+| 'S4' | authentication trust level 4. The authentication of this level can accurately identify individual users and provides powerful liveness detection capabilities. It is usually used in scenarios such as small-amount payment. |
 

@@ -69,7 +69,7 @@ Swiper组件数字导航点的字体样式。
 
 | 类型 | 说明 |
 | --- | --- |
-| [DigitIndicator](arkts-arkui-digitindicator-c.md) | 返回当前数字指示器。 |
+| [DigitIndicator](arkts-arkui-digitindicator-c.md) | 返回当前数字指示器，用于支持链式调用配置其他导航点属性。 |
 
 ## fontColor
 
@@ -101,7 +101,7 @@ Swiper组件数字导航点的字体颜色。
 
 | 类型 | 说明 |
 | --- | --- |
-| [DigitIndicator](arkts-arkui-digitindicator-c.md) | 返回当前数字指示器。 |
+| [DigitIndicator](arkts-arkui-digitindicator-c.md) | 返回当前数字指示器，用于支持链式调用配置其他导航点属性。 |
 
 ## selectedDigitFont
 
@@ -133,7 +133,7 @@ selectedDigitFont(value: Font): DigitIndicator
 
 | 类型 | 说明 |
 | --- | --- |
-| [DigitIndicator](arkts-arkui-digitindicator-c.md) | 返回当前数字指示器。 |
+| [DigitIndicator](arkts-arkui-digitindicator-c.md) | 返回当前数字指示器，用于支持链式调用配置其他导航点属性。 |
 
 ## selectedFontColor
 
@@ -165,5 +165,5 @@ selectedFontColor(value: ResourceColor): DigitIndicator
 
 | 类型 | 说明 |
 | --- | --- |
-| [DigitIndicator](arkts-arkui-digitindicator-c.md) | 返回当前数字指示器。 |
+| [DigitIndicator](arkts-arkui-digitindicator-c.md) | 返回当前数字指示器，用于支持链式调用配置其他导航点属性。 |
 

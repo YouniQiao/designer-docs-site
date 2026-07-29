@@ -158,7 +158,7 @@ Parameter verification failed. It indicates that the input parameter does not me
 LOCKED = 12500009
 ```
 
-The authentication executor is locked. It indicates that the authenticator is locked due to consecutive authentication failures. The user can continue the authentication only after waiting for unlocking or using the PIN. You can call [getAuthLockState](arkts-userauthentication-userauth-getauthlockstate-f.md#getauthlockstate-1) to query the lock status.
+The authentication executor is locked. It indicates that the authenticator is locked due to consecutive authentication failures. The user can continue the authentication only after waiting for unlocking or using the PIN. You can call [getAuthLockState](arkts-userauthentication-userauth-getauthlockstate-f.md#getauthlockstate) to query the lock status.
 
 **Since:** 9
 

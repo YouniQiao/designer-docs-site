@@ -20,11 +20,11 @@ Called to get the information presented on the user authentication page for remo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| challenge | Uint8Array | Yes | Challenge value, which can be passed in Uint8Array([]) format. |
+| challenge | Uint8Array | Yes | Challenge value, which can be passed in Uint8Array([]) format.  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| WidgetParam | widgetParam - Parameters on the user authentication page. |
+| [WidgetParam](arkts-userauthentication-userauth-widgetparam-i-sys.md) | widgetParam - Parameters on the user authentication page.  |
 

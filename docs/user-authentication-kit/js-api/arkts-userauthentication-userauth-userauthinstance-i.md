@@ -2,10 +2,8 @@
 
 Provides APIs for user authentication. The user authentication widget is supported. This API provides complete user authentication capabilities, including subscribing to authentication results and intermediate states, and starting and canceling authentication. The unified authentication widget provides users with a standardized authentication UI and consistent authentication experience.
 
-Before using the APIs of **UserAuthInstance**, you must obtain a **UserAuthInstance** instance by using [getUserAuthInstance](arkts-userauthentication-userauth-getuserauthinstance-f.md#getuserauthinstance-1).
-
+Before using the APIs of **UserAuthInstance**, you must obtain a **UserAuthInstance** instance by using [getUserAuthInstance](arkts-userauthentication-userauth-getuserauthinstance-f.md#getuserauthinstance).
 > **NOTE**
-
 > Each **UserAuthInstance** can be used for only one authentication process. To perform authentication again, you  
 > must obtain a new **UserAuthInstance** instance.
 
@@ -21,7 +19,6 @@ Before using the APIs of **UserAuthInstance**, you must obtain a **UserAuthInsta
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
-<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -29,9 +26,7 @@ cancel(): void
 ```
 
 Cancels this authentication.
-
 > **NOTE**
-
 > **UserAuthInstance** must be the instance being authenticated.
 
 **Since:** 10
@@ -96,7 +91,6 @@ try {
 
 ```
 
-<a id="off"></a>
 ## off('result')
 
 ```TypeScript
@@ -104,9 +98,7 @@ off(type: 'result', callback?: IAuthCallback): void
 ```
 
 Unsubscribes from the user authentication result.
-
 > **NOTE**
-
 > The [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) instance used to invoke this API must be the one used  
 > to subscribe to the event.
 
@@ -177,7 +169,6 @@ try {
 
 ```
 
-<a id="off-1"></a>
 ## off('authTip')
 
 ```TypeScript
@@ -185,9 +176,7 @@ off(type: 'authTip', callback?: AuthTipCallback): void
 ```
 
 Unsubscribes from the event for intermediate authentication status.
-
 > **NOTE**
-
 > The [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) instance used to invoke this API must be the one used  
 > to subscribe to the event.
 
@@ -203,8 +192,8 @@ Unsubscribes from the event for intermediate authentication status.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'authTip' | Yes | Event type. The supported event is **'authTip'**. This API unsubscribes from the event triggered by [on('authtip')](arkts-userauthentication-userauth-userauthinstance-i.md#on-2) after the [start()](arkts-userauthentication-userauth-userauthinstance-i.md#start-1) call and the initiation of authentication. |
-| callback | [AuthTipCallback](arkts-userauthentication-userauth-authtipcallback-t.md) | No | Callback used to return the intermediate authentication status. If this parameter is not passed, the value passed when the [on('authtip')](arkts-userauthentication-userauth-userauthinstance-i.md#on-2) API is called is used by default. |
+| type | 'authTip' | Yes | Event type. The supported event is **'authTip'**. This API unsubscribes from the event triggered by [on('authtip')](arkts-userauthentication-userauth-userauthinstance-i.md#on) after the [start()](arkts-userauthentication-userauth-userauthinstance-i.md#start) call and the initiation of authentication. |
+| callback | [AuthTipCallback](arkts-userauthentication-userauth-authtipcallback-t.md) | No | Callback used to return the intermediate authentication status. If this parameter is not passed, the value passed when the [on('authtip')](arkts-userauthentication-userauth-userauthinstance-i.md#on) API is called is used by default. |
 
 **Error codes:**
 
@@ -255,7 +244,6 @@ try {
 
 ```
 
-<a id="on"></a>
 ## on('result')
 
 ```TypeScript
@@ -263,9 +251,7 @@ on(type: 'result', callback: IAuthCallback): void
 ```
 
 Subscribes to the user authentication result. This API is used to obtain the final identity authentication result after the user completes identity authentication interaction with the authentication component. Before the authentication widget disappears, the intermediate authentication failures will not be returned through this API.Only the final authentication result (success or failure) is returned through this API. To perceive each authentication failure and intermediate status during the entire authentication process, use the [on('authTip')](userAuth.UserAuthInstance.on(type: 'authTip', callback: AuthTipCallback)) API for subscription.
-
 > **NOTE**
-
 > On PCs/2-in-1 devices, if an application initiates authentication in an application modal dialog (that is, a  
 > valid **uiContext** is passed when the user API parameter [widgetParam](arkts-userauthentication-userauth-widgetparam-i.md) is  
 > configured) and receives the authentication result, and if other windows need to be displayed, the application  
@@ -295,7 +281,6 @@ Subscribes to the user authentication result. This API is used to obtain the fin
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
 | [12500002](../errorcode-useriam.md#12500002-common-error-code-of-the-identity-authentication-system) | General operation error. |
 
-<a id="on-1"></a>
 ## on('authTip')
 
 ```TypeScript
@@ -303,9 +288,7 @@ on(type: 'authTip', callback: AuthTipCallback): void
 ```
 
 Subscribes to authentication tip information. This API is used to obtain the widget startup and exit messages and each authentication failure. This API uses an asynchronous callback to return the result.
-
 > **NOTE**
-
 > On PCs/2-in-1 devices, if an application initiates authentication in an application modal dialog (that is, a  
 > valid **uiContext** is passed when the user API parameter [widgetParam](arkts-userauthentication-userauth-widgetparam-i.md) is  
 > configured) and receives the authentication result, and if other windows need to be displayed, the application  
@@ -325,7 +308,7 @@ Subscribes to authentication tip information. This API is used to obtain the wid
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'authTip' | Yes | Event type. The supported event is **'authTip'**. This event is triggered when [start()](arkts-userauthentication-userauth-userauthinstance-i.md#start-1) is called and authentication is initiated. |
+| type | 'authTip' | Yes | Event type. The supported event is **'authTip'**. This event is triggered when [start()](arkts-userauthentication-userauth-userauthinstance-i.md#start) is called and authentication is initiated. |
 | callback | [AuthTipCallback](arkts-userauthentication-userauth-authtipcallback-t.md) | Yes | Callback used to return the intermediate authentication status. |
 
 **Error codes:**
@@ -380,7 +363,6 @@ try {
 
 ```
 
-<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -388,9 +370,7 @@ start(): void
 ```
 
 Starts authentication.
-
 > **NOTE**
-
 > Each **UserAuthInstance** can be used for authentication only once.
 
 **Since:** 10

@@ -6,7 +6,6 @@
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
-<a id="getuserauthinstance"></a>
 ## getUserAuthInstance
 
 ```TypeScript
@@ -14,9 +13,7 @@ function getUserAuthInstance(authParam: AuthParam, widgetParam: WidgetParam): Us
 ```
 
 Obtains a [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) instance for user authentication. The user authentication widget is also supported. This API is used to create a user authentication instance. After authentication parameters and UI parameters are configured, you can use the returned instance object to start authentication and subscribe to the authentication result.
-
 > **NOTE**
-
 > Each **UserAuthInstance** can be used for authentication only once. After the authentication is complete (  
 > regardless of whether it is successful or fails), the instance cannot be used again.
 
@@ -39,7 +36,7 @@ Obtains a [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-
 
 | Type | Description |
 | --- | --- |
-| [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) | **UserAuthInstance** instance that supports UI. After obtaining the instance, call [on('result')](userAuth.UserAuthInstance.on(type: 'result', callback: IAuthCallback)) to subscribe to the authentication result, and then call [start](arkts-userauthentication-userauth-userauthinstance-i.md#start-1) to start authentication.After the authentication is complete, you can obtain the authentication result through a callback. |
+| [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) | **UserAuthInstance** instance that supports UI. After obtaining the instance, call [on('result')](userAuth.UserAuthInstance.on(type: 'result', callback: IAuthCallback)) to subscribe to the authentication result, and then call [start](arkts-userauthentication-userauth-userauthinstance-i.md#start) to start authentication.After the authentication is complete, you can obtain the authentication result through a callback. |
 
 **Error codes:**
 

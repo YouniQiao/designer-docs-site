@@ -50,9 +50,9 @@ interface  EventData {
   widgetContextId: number;
   event: string;
   version: string;
-  payload: PayLoad;
+  payload: Payload;
 }
-interface PayLoad {
+interface Payload {
   type: string[];
 }
 try {
@@ -62,7 +62,7 @@ try {
     version: '1',
     payload: {
       type: ['pin']
-    } as PayLoad,
+    } as Payload,
   };
   const jsonEventData = JSON.stringify(eventData);
   let noticeType = userAuth.NoticeType.WIDGET_NOTICE;

@@ -27,7 +27,7 @@ Authentication trust level. The authentication trust level determines the securi
 - **ATL3**: Applies to high-security scenarios such as device unlocking.  
 - **ATL4**: Applies to high-security scenarios such as small-amount payment.
 
-For details, see [Principles for Classifying Biometric Authentication Trust Levels](docroot://security/UserAuthenticationKit/user-authentication-overview.md#principles-for-classifying-biometric-authentication-trust-levels).
+For details, see [Principles for Classifying Biometric Authentication Trust Levels](../../../security/UserAuthenticationKit/user-authentication-overview.md#principles-for-classifying-biometric-authentication-trust-levels).
 
 **Type:** AuthTrustLevel
 

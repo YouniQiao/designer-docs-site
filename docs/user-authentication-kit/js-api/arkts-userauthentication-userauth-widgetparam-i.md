@@ -56,7 +56,7 @@ Title of the user authentication page, which cannot be empty or exceed 500 chara
 uiContext?: Context
 ```
 
-Used to display an application modal dialog for authentication. This parameter can be used only on 2-in-1devices. After a valid uiContext is passed, the authentication dialog box is displayed as an application modal dialog. After the authentication result is returned, the application needs to obtain the widget release message (subscribe to [on('authTip')](arkts-userauthentication-userauth-userauthinstance-i.md#on-2) and wait for the **WIDGET_RELEASED** state) before displaying other windows. If this parameter is not specified or the device is of another type, the authentication dialog box is displayed as a system modal dialog. In this case,the application can directly perform the follow-up procedure after the widget is released.
+Used to display an application modal dialog for authentication. This parameter can be used only on 2-in-1devices. After a valid uiContext is passed, the authentication dialog box is displayed as an application modal dialog. After the authentication result is returned, the application needs to obtain the widget release message (subscribe to [on('authTip')](userAuth.UserAuthInstance.on(type: 'authTip', callback: AuthTipCallback)) and wait for the **WIDGET_RELEASED** state) before displaying other windows. If this parameter is not specified or the device is of another type, the authentication dialog box is displayed as a system modal dialog. In this case,the application can directly perform the follow-up procedure after the widget is released.
 
 **Default value**: The authentication dialog box is displayed as a system modal dialog.
 

@@ -6,7 +6,6 @@
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
-<a id="getauthinstance"></a>
 ## getAuthInstance
 
 ```TypeScript
@@ -14,16 +13,14 @@ function getAuthInstance(challenge: Uint8Array, authType: UserAuthType, authTrus
 ```
 
 Obtains an **AuthInstance** instance for user authentication.
-
 > **NOTE**
-
 > An **AuthInstance** instance can be used for authentication only once.
 
 **Since:** 9
 
 **Deprecated since:** 10
 
-**Substitutes:** [getUserAuthInstance](arkts-userauthentication-userauth-getuserauthinstance-f.md#getuserauthinstance-1)
+**Substitutes:** [getUserAuthInstance](arkts-userauthentication-userauth-getuserauthinstance-f.md#getuserauthinstance)
 
 <!--Device-userAuth-function getAuthInstance(challenge: Uint8Array, authType: UserAuthType, authTrustLevel: AuthTrustLevel): AuthInstance--><!--Device-userAuth-function getAuthInstance(challenge: Uint8Array, authType: UserAuthType, authTrustLevel: AuthTrustLevel): AuthInstance-End-->
 

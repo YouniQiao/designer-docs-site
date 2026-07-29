@@ -6,7 +6,6 @@
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
-<a id="getuserauthinstance"></a>
 ## getUserAuthInstance
 
 ```TypeScript
@@ -14,7 +13,6 @@ function getUserAuthInstance(authParam: AuthParam, widgetParam: WidgetParam): Us
 ```
 
 获取[UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md)对象，执行用户身份认证，并支持使用统一用户身份认证控件。该接口用于创建一个用户认证实例，配置认证参数和界面参数后，可通过返回的实例对象启动认证、订阅认证结果等。
-
 > **说明：**  
 >  
 > 每个UserAuthInstance只能进行一次认证，需要再次认证时，必须重新获取UserAuthInstance。认证完成后（无论成功或失败），该实例将无法再次使用。
@@ -38,7 +36,7 @@ function getUserAuthInstance(authParam: AuthParam, widgetParam: WidgetParam): Us
 
 | 类型 | 说明 |
 | --- | --- |
-| [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) | 支持用户界面的认证器对象。获取实例后，需调用[on('result')](userAuth.UserAuthInstance.on(type: 'result', callback: IAuthCallback))订阅认证结果，再调用[start](arkts-userauthentication-userauth-userauthinstance-i.md#start-1)启动认证。认证完成后，可通过回调获取认证结果。 |
+| [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) | 支持用户界面的认证器对象。获取实例后，需调用[on('result')](userAuth.UserAuthInstance.on(type: 'result', callback: IAuthCallback))订阅认证结果，再调用[start](arkts-userauthentication-userauth-userauthinstance-i.md#start)启动认证。认证完成后，可通过回调获取认证结果。 |
 
 **错误码：**
 

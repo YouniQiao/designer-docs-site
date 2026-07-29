@@ -94,7 +94,7 @@ animationMode(mode: Optional<AnimationMode>)
 barBackgroundBlurStyle(value: BlurStyle)
 ```
 
-设置TabBar的背景模糊材质。
+设置TabBar的背景模糊材质。适用于需要为TabBar添加模糊背景效果的场景。
 > **说明：**
 > 从API version 12开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier)中调用。
 
@@ -120,7 +120,7 @@ barBackgroundBlurStyle(value: BlurStyle)
 barBackgroundBlurStyle(style: BlurStyle, options: BackgroundBlurStyleOptions)
 ```
 
-为TabBar提供一种在背景和内容之间的模糊能力，通过枚举值的方式封装了不同的模糊半径、蒙版颜色、蒙版透明度、饱和度、亮度。
+设置TabBar背景模糊能力，通过枚举值封装不同的模糊半径、蒙版颜色、蒙版透明度、饱和度、亮度。
 
 **起始版本：** 18
 
@@ -137,7 +137,7 @@ barBackgroundBlurStyle(style: BlurStyle, options: BackgroundBlurStyleOptions)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | style | [BlurStyle](arkts-arkui-blurstyle-e.md) | 是 | 背景模糊样式。模糊样式中封装了模糊半径、蒙版颜色、蒙版透明度、饱和度、亮度五个参数。 |
-| options | [BackgroundBlurStyleOptions](arkts-arkui-backgroundblurstyleoptions-i.md) | 是 | 背景模糊选项。 |
+| options | [BackgroundBlurStyleOptions](arkts-arkui-backgroundblurstyleoptions-i.md) | 是 | 背景模糊选项，用于自定义模糊效果。 |
 
 ## barBackgroundColor
 
@@ -161,7 +161,7 @@ barBackgroundColor(value: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | 是 | TabBar的背景颜色。<br />默认值：Color.Transparent，透明 |
+| value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | 是 | TabBar的背景颜色。<br />**说明：**<br/>建议配合[fadingEdge](#fadingedge10)属性一起使用，以避免页签末端显示白色渐隐效果。<br/>默认值：Color.Transparent，透明 |
 
 ## barBackgroundEffect
 
@@ -169,7 +169,7 @@ barBackgroundColor(value: ResourceColor)
 barBackgroundEffect(options: BackgroundEffectOptions)
 ```
 
-设置TabBar背景属性，包含背景模糊半径，亮度，饱和度，颜色等参数。
+设置TabBar背景属性，包含背景模糊半径，亮度，饱和度，颜色等参数。适用于需要精细化控制TabBar背景视觉效果的场景。
 
 **起始版本：** 18
 
@@ -241,7 +241,7 @@ barGridAlign(value: BarGridColumnOptions)
 barHeight(value: Length)
 ```
 
-设置TabBar的高度值。横向Tabs可以设置height为'auto'，让TabBar自适应子组件高度。height设置为小于0或大于Tabs高度值时，按默认值显示。
+设置TabBar的高度值。横向Tabs可以设置height为'auto'，让TabBar自适应子组件高度。height设置为小于0或大于Tabs高度值时，按默认值显示。设置为负值或undefined时按默认值处理。
 
 API version 14之前的版本，若设置barHeight为固定值后，TabBar无法扩展底部安全区。从API version 14开始支持配合[safeAreaPadding](arkts-arkui-commonmethod-c.md#safeareapadding)属性，当safeAreaPadding不设置bottom或者bottom设置为0时，可以实现扩展安全区。
 
@@ -339,7 +339,7 @@ barMode(value: BarMode.Scrollable, options: ScrollableBarModeOptions)
 barMode(value: BarMode, options?: ScrollableBarModeOptions)
 ```
 
-设置TabBar布局模式。
+设置TabBar布局模式。Fixed模式适用于页签数量固定且较少的场景；Scrollable模式适用于页签数量较多或文本长度不固定的场景。
 
 **起始版本：** 7
 
@@ -362,7 +362,7 @@ barMode(value: BarMode, options?: ScrollableBarModeOptions)
 barOverlap(value: boolean)
 ```
 
-设置TabBar是否背后变模糊并叠加在TabContent之上。
+设置TabBar是否背后变模糊并叠加在TabContent之上。适用于需要沉浸式UI效果的场景。
 
 **起始版本：** 10
 
@@ -400,7 +400,7 @@ barPosition(value: BarPosition)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [BarPosition](arkts-arkui-barposition-e.md) | 是 | 设置Tabs的页签位置。<br/>默认值：BarPosition.Start |
+| value | [BarPosition](arkts-arkui-barposition-e.md) | 是 | 设置Tabs的页签位置。页签的具体位置受vertical属性影响：vertical为true时Start位于左侧、End位于右侧；vertical为false时Start位于顶部、End位于底部。默认值：垂直Tabs为BarPosition.End，非垂直Tabs为BarPosition.Start |
 
 ## barWidth
 
@@ -408,7 +408,7 @@ barPosition(value: BarPosition)
 barWidth(value: Length)
 ```
 
-设置TabBar的宽度值。设置为小于0或大于Tabs宽度值时，按默认值显示。
+设置TabBar的宽度值。设置为小于0或大于Tabs宽度值时，按默认值显示。设置为负值或undefined时按默认值处理。
 
 **起始版本：** 7
 
@@ -430,7 +430,7 @@ barWidth(value: Length)
 cachedMaxCount(count: number, mode: TabsCacheMode)
 ```
 
-设置子组件的最大缓存个数及缓存模式。未设置该属性时默认缓存所有子组件且缓存后不会释放。
+设置子组件的最大缓存个数及缓存模式。未设置该属性时默认缓存所有子组件且缓存后不会释放。建议根据页签数量和子组件内容复杂度设置count值。
 
 **起始版本：** 19
 
@@ -446,7 +446,7 @@ cachedMaxCount(count: number, mode: TabsCacheMode)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| count | number | 是 | 子组件的最大缓存个数。超出范围时自动释放不再需要的子组件。<br/>取值范围：[0, +∞)。 |
+| count | number | 是 | 子组件的最大缓存个数。<br/>取值范围：[0, +∞)。设置为小于0的值时，子组件不受缓存管理。超出缓存个数时自动释放不再需要的子组件。 |
 | mode | [TabsCacheMode](arkts-arkui-tabscachemode-e.md) | 是 | 子组件的缓存模式。<br/>默认值：TabsCacheMode.CACHE_BOTH_SIDE |
 
 ## customContentTransition
@@ -455,7 +455,7 @@ cachedMaxCount(count: number, mode: TabsCacheMode)
 customContentTransition(delegate: TabsCustomContentTransitionCallback)
 ```
 
-自定义Tabs页面切换动画。
+自定义Tabs页面切换动画。适用场景：需要个性化页签切换动效时使用，如翻转、淡入淡出、缩放等。
 
 使用说明：
 
@@ -485,7 +485,7 @@ customContentTransition(delegate: TabsCustomContentTransitionCallback)
 divider(value: DividerStyle | null)
 ```
 
-设置区分TabBar和TabContent的分割线样式。
+设置区分TabBar和TabContent的分割线样式。如TabBar与TabContent之间需要视觉分隔，可通过divider添加分割线。
 
 **起始版本：** 10
 
@@ -535,7 +535,7 @@ edgeEffect(edgeEffect: Optional<EdgeEffect>)
 fadingEdge(value: boolean)
 ```
 
-设置页签超过容器宽度时是否渐隐消失。建议配合[barBackgroundColor](TabsAttribute#barBackgroundColor)属性一起使用，如果barBackgroundColor属性没有定义，会默认显示页签末端为白色的渐隐效果。
+设置页签超过容器宽度时是否渐隐消失。建议配合[barBackgroundColor](#barbackgroundcolor10)属性一起使用，未定义barBackgroundColor属性时，默认显示页签末端为白色的渐隐效果。
 
 **起始版本：** 10
 
@@ -559,7 +559,7 @@ fadingEdge(value: boolean)
 nestedScroll(value: TabsNestedScrollMode | undefined)
 ```
 
-设置Tabs组件与其父组件的嵌套滚动模式。未通过该接口设置时，默认嵌套滚动模式为[SELF_ONLY](arkts-arkui-tabsnestedscrollmode-e.md)。
+设置Tabs组件与其父组件的嵌套滚动模式。未设置时默认嵌套滚动模式为[SELF_ONLY](arkts-arkui-tabsnestedscrollmode-e.md)。
 
 **起始版本：** 24
 
@@ -583,7 +583,7 @@ nestedScroll(value: TabsNestedScrollMode | undefined)
 onAnimationEnd(handler: OnTabsAnimationEndCallback)
 ```
 
-切换动画结束时触发该回调，包括动画过程中手势中断。当animationDuration为0时动画关闭，不触发该回调。
+切换动画结束时触发该回调，包括动画过程中手势中断。当animationDuration为0（关闭动画）时，不触发该回调。
 
 **起始版本：** 11
 
@@ -645,7 +645,9 @@ Tab页签切换后触发的事件。
 > **说明：**
 > 使用自定义页签时，在onChange事件中联动可能会导致滑动页面切换后才执行页签联动，引起自定义页签切换效果延迟。建议在  
 > [onAnimationStart](TabsAttribute#onAnimationStart)中监听并刷新当前索引，以确保动效能够及时触发。具体实现可参考  
-> [示例3](../../../reference/apis-arkui/arkui-ts/ts-container-tabs.md#示例3自定义页签切换联动)。
+> [示例3](../../../reference/apis-arkui/arkui-ts/ts-container-tabs.md#示例3自定义页签切换联动)。  
+>  
+> 如果在动画过程中index参数发生变化，将使用最新值触发回调。
 
 **起始版本：** 7
 
@@ -731,7 +733,7 @@ onContentWillChange(handler: OnTabsContentWillChangeCallback)
 onGestureSwipe(handler: OnTabsGestureSwipeCallback)
 ```
 
-在页面跟手滑动过程中，逐帧触发该回调。
+在页面跟手滑动过程中，逐帧触发该回调，用于监听当前显示页面的实时滑动状态。
 
 **起始版本：** 11
 
@@ -875,7 +877,7 @@ pageFlipMode(mode: Optional<PageFlipMode>)
 scrollable(value: boolean)
 ```
 
-设置是否可以通过滑动页面进行页面切换。
+设置是否可以通过滑动页面进行页面切换。配合自定义导航按钮或TabBar页签控制切换时，建议设置为false，避免手势滑动与自定义导航逻辑冲突。
 
 **起始版本：** 7
 
@@ -897,7 +899,7 @@ scrollable(value: boolean)
 vertical(value: boolean)
 ```
 
-设置是否为纵向Tabs。
+设置是否为纵向Tabs。横向Tabs（默认）适用于底部导航栏、顶部页签切换等场景；纵向Tabs适用于侧边栏导航、设置页面分类等场景。
 
 **起始版本：** 7
 
@@ -911,5 +913,5 @@ vertical(value: boolean)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | 是 | 是否为纵向Tabs。<br/>默认值：false，横向Tabs，为true时纵向Tabs。<br/>当横向Tabs设置height为auto时，Tabs组件高度自适应子组件高度，即为[tabBar](TabContentAttribute#tabBar(options: string \| Resource \| CustomBuilder \| TabBarOptions))高度+divider线宽+TabContent高度+上下padding值+上下border宽度。<br/>当纵向Tabs设置width为auto时，Tabs组件宽度自适应子组件宽度，即为tabBar宽度+divider线宽+TabContent宽度+左右padding值+左右border宽度。<br/>尽量保持每一个页面中的子组件尺寸大小一致，避免滑动页面时出现页面切换动画跳动现象。 |
+| value | boolean | 是 | 是否为纵向Tabs。<br/>默认值：false，横向Tabs，为true时纵向Tabs。<br/>当横向Tabs设置height为auto时，Tabs组件高度自适应子组件高度，即为[tabBar](TabContentAttribute#tabBar(options: string \| Resource \| CustomBuilder \| TabBarOptions))高度+divider线宽+TabContent高度+Tabs组件的上下padding值+Tabs组件的上下border宽度。<br/>当纵向Tabs设置width为auto时，Tabs组件宽度自适应子组件宽度，即为tabBar宽度+divider线宽+TabContent宽度+左右padding值+左右border宽度。<br/>尽量保持每一个页面中的子组件尺寸大小一致，避免滑动页面时出现页面切换动画跳动现象。 |
 

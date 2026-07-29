@@ -37,13 +37,15 @@ function unregisterRemoteAuthCallback(): void
 **示例：**
 
 ```TypeScript
-import userAuth from '@ohos.userIAM.userAuth';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { userAuth } from '@kit.UserAuthenticationKit';
 
 try {
   userAuth.unregisterRemoteAuthCallback();
   console.info('Remote auth callback unregistered successfully');
 } catch (error) {
-  console.error('Failed to unregister remote auth callback: ' + error.code + ', ' + error.message);
+  const err: BusinessError = error as BusinessError;
+  console.error(`failed to unregister remote auth callback. Code is ${err?.code}, message is ${err?.message}`);
 }
 
 ```

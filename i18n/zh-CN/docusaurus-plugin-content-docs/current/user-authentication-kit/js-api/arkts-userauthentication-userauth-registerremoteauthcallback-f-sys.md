@@ -43,7 +43,8 @@ function registerRemoteAuthCallback(callback: IRemoteAuthCallback): void
 **示例：**
 
 ```TypeScript
-import userAuth from '@ohos.userIAM.userAuth';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { userAuth } from '@kit.UserAuthenticationKit';
 
 let remoteAuthCallback: userAuth.IRemoteAuthCallback = {
   onGetRemoteAuthWidgetParam(challenge: Uint8Array): userAuth.WidgetParam {
@@ -54,15 +55,17 @@ let remoteAuthCallback: userAuth.IRemoteAuthCallback = {
     } as userAuth.WidgetParam;
   },
   onRemoteAuthResult(challenge: Uint8Array, result: userAuth.UserAuthResult): void {
-    console.info('Remote auth result, result: ' + result.result + ', authType: ' + result.authType);
+    console.info('remote auth result, result: ' + result.result + ', authType: ' + result.authType);
   }
 };
 
 try {
+  userAuth.unregisterRemoteAuthCallback();
   userAuth.registerRemoteAuthCallback(remoteAuthCallback);
   console.info('Remote auth callback registered successfully');
 } catch (error) {
-  console.error('Failed to register remote auth callback: ' + error.code + ', ' + error.message);
+  const err: BusinessError = error as BusinessError;
+  console.error(`failed to register remote auth callback. Code is ${err?.code}, message is ${err?.message}`);
 }
 
 ```

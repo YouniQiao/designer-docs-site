@@ -6,7 +6,6 @@
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
-<a id="getuserauthwidgetmgr"></a>
 ## getUserAuthWidgetMgr
 
 ```TypeScript
@@ -14,9 +13,7 @@ function getUserAuthWidgetMgr(version: number): UserAuthWidgetMgr
 ```
 
 Obtains the authentication widget manager object. It is used to obtain the **UserAuthWidgetMgr** instance, which can be used to register custom authentication widgets with the system for unified management.
-
 > **NOTE**
-
 > Each **UserAuthWidgetMgr** instance can manage one authentication widget. To manage multiple widgets, you need to  
 > obtain multiple instances.
 

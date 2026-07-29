@@ -60,7 +60,7 @@ companionDeviceAuth.updateEnabledBusinessIds(templateId, [companionDeviceAuth.Bu
     console.info('business scope updated');
   })
   .catch((err: BusinessError) => {
-    console.error(`error has been captured: code: ${err.code}, message: ${err.message}`);
+    console.error(`error has been captured. Code: ${err.code}, message: ${err.message}`);
   })
 
 ```

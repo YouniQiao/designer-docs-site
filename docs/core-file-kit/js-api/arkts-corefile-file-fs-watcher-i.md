@@ -14,7 +14,6 @@ Provides APIs for observing the changes of files or directories. Before using th
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
-<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -57,7 +56,6 @@ watcher.stop();
 
 ```
 
-<a id="stop"></a>
 ## stop
 
 ```TypeScript

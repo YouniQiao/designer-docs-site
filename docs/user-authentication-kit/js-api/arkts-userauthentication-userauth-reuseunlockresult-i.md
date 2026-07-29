@@ -1,9 +1,7 @@
 # ReuseUnlockResult
 
 Represents information about the authentication result reuse. This API is used to configure parameters related to authentication result reuse, including the reuse mode and validity period. By properly configuring authentication result reuse, you can ensure security while avoid repeated authentication, improving user experience.
-
 > **NOTE**
-
 > If the credential changes within the reuse duration after a successful identity authentication (including device  
 > unlock authentication), the authentication result can still be reused and the actual **EnrolledState** is  
 > returned in the authentication result. When the authentication credential used in the previous authentication has  

@@ -12,7 +12,7 @@ import { router } from '@kit.ArkUI';
 function disableAlertBeforeBackPage(): void
 ```
 
-禁用页面返回询问对话框。
+禁用页面返回询问对话框。调用此方法后，将关闭由[showAlertBeforeBackPage](#routershowalertbeforebackpagedeprecated)开启的返回询问对话框，[back](#routerbackdeprecated)操作将不再弹出确认对话框，直接执行页面返回。
 > **说明：**  
 >  
 > 从API version 8开始支持，从API version 9开始废弃，建议使用  

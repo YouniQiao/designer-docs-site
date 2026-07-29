@@ -12,7 +12,7 @@
 
 | 名称 | 说明 |
 | --- | --- |
-| [WithThemeOptions](arkts-arkui-withthemeoptions-i.md) | 设置WithTheme作用域内组件缺省样式及深浅色模式。 |
+| [WithThemeOptions](arkts-arkui-withthemeoptions-i.md) | 设置WithTheme作用域内组件默认配色及深浅色模式。 |
 
 ### 类型
 

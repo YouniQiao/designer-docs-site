@@ -24,7 +24,7 @@ import { ArcAlphabetIndexerAttribute, ArcAlphabetIndexer } from '@kit.ArkUI';
 autoCollapse(enable: Optional<boolean>): ArcAlphabetIndexerAttribute
 ```
 
-设置是否使用自适应折叠模式。
+设置是否使用自适应折叠模式。当索引项过多时，组件会根据可用显示空间自动调整索引项的显示布局。
 
 **起始版本：** 18
 
@@ -80,7 +80,7 @@ color(color: Optional<ColorMetrics>): ArcAlphabetIndexerAttribute
 font(font: Optional<Font>): ArcAlphabetIndexerAttribute
 ```
 
-设置字母索引条默认字体样式。
+设置弧形字母索引条默认字体样式。
 
 **起始版本：** 18
 
@@ -108,7 +108,7 @@ font(font: Optional<Font>): ArcAlphabetIndexerAttribute
 itemSize(size: Optional<LengthMetrics>): ArcAlphabetIndexerAttribute
 ```
 
-设置字母索引条字母区域大小。
+设置弧形索引条索引项区域大小。
 
 **起始版本：** 18
 
@@ -122,7 +122,7 @@ itemSize(size: Optional<LengthMetrics>): ArcAlphabetIndexerAttribute
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| size | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;LengthMetrics&gt; | 是 | 字母索引条字母区域大小，字母区域为圆形，即圆形直径。不支持设置为百分比。<br/>默认值：24.0 <br/>单位：vp |
+| size | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;LengthMetrics&gt; | 是 | 弧形索引条索引项区域大小，索引项区域为圆形，即圆形直径。不支持设置为百分比。<br/>默认值：24.0 <br/>单位：vp |
 
 **返回值：**
 
@@ -150,7 +150,7 @@ onSelect(handler: Optional<OnSelectCallback>): ArcAlphabetIndexerAttribute
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;OnSelectCallback&gt; | 是 | 回调函数类型。 |
+| handler | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;OnSelectCallback&gt; | 是 | 回调函数，用于处理索引条选中事件。 |
 
 **返回值：**
 
@@ -209,7 +209,7 @@ popupBackgroundBlurStyle(style: Optional<BlurStyle>): ArcAlphabetIndexerAttribut
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| style | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;BlurStyle&gt; | 是 | 设置提示弹窗的背景模糊材质。 |
+| style | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;BlurStyle&gt; | 是 | 设置提示弹窗的背景模糊材质。<br/>默认值：BlurStyle.NONE。<br/>设置此属性后不建议再设置[popupBackground](#popupbackground)属性。 |
 
 **返回值：**
 
@@ -293,7 +293,7 @@ selected(index: Optional<number>): ArcAlphabetIndexerAttribute
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number&gt; | 是 | 选中项索引值。 <br/>默认值：0 <br/>该参数支持[!!](../../../ui/state-management/arkts-new-binding.md)双向绑定变量。 |
+| index | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number&gt; | 是 | 选中项索引值。若超出有效索引范围，则取默认值0。<br/>默认值：0 <br/>该参数支持[!!](../../../ui/state-management/arkts-new-binding.md)双向绑定变量。 |
 
 **返回值：**
 

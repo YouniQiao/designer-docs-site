@@ -47,11 +47,13 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 try {
   companionDeviceAuth.registerDeviceSelectCallback((purpose) => {
-    const addDeviceId = 'addDeviceId';
-    const otherDeviceId = 'otherDeviceId';
-    const addDeviceUserId = 100;
-    const otherDeviceUserId = 100;
+    const addDeviceId = 'addDeviceId'; // 用于添加模板的设备ID
+    const otherDeviceId = 'otherDeviceId'; // 用于认证的设备ID
+    const addDeviceUserId = 100; // 添加模板设备的用户ID
+    const otherDeviceUserId = 100; // 认证设备的用户ID
+    // 根据选择目的返回对应的设备信息
     if (purpose === companionDeviceAuth.SelectPurpose.SELECT_ADD_DEVICE) {
+      // 选择添加模板时，返回添加模板的设备信息
       return {
         deviceKeys: [{
           deviceIdType: companionDeviceAuth.DeviceIdType.UNIFIED_DEVICE_ID,
@@ -70,7 +72,7 @@ try {
   })
 } catch (error) {
   const err = error as BusinessError;
-  console.error(`error has been captured: ${err.code} ${err.message}`);
+  console.error(`error has been captured. Code: ${err.code}, message: ${err.message}`);
 }
 
 ```

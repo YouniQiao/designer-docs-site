@@ -60,7 +60,7 @@ statusMonitor.getTemplateStatus()
     console.info(`templateStatus: ${JSON.stringify(templateStatus)}`);
   })
   .catch((error: BusinessError) => {
-    console.error(`error has been captured: message:${error?.message}`);
+    console.error(`error has been captured. Code: ${error.code}, message: ${error.message}`);
   })
 
 ```
@@ -112,7 +112,7 @@ try {
   statusMonitor.offAvailableDeviceChange(handler);
 } catch (error) {
   const message = (error as BusinessError).message;
-  console.error(`error has been captured: message:${message}`);
+  console.error(`error has been captured. Code: ${(error as BusinessError).code}, message: ${message}`);
 }
 
 ```
@@ -173,7 +173,7 @@ try {
   statusMonitor.offContinuousAuthChange(handler);
 } catch (error) {
   const message = (error as BusinessError).message;
-  console.error(`error has been captured: message:${message}`);
+  console.error(`error has been captured. Code: ${(error as BusinessError).code}, message: ${message}`);
 }
 
 ```
@@ -225,7 +225,7 @@ try {
   statusMonitor.offTemplateChange(handler);
 } catch (error) {
   const message = (error as BusinessError).message;
-  console.error(`error has been captured: message:${message}`);
+  console.error(`error has been captured. Code: ${(error as BusinessError).code}, message: ${message}`);
 }
 
 ```
@@ -276,7 +276,7 @@ try {
   statusMonitor.onAvailableDeviceChange(handler);
 } catch (error) {
   const message = (error as BusinessError).message;
-  console.error(`error has been captured: message:${message}`);
+  console.error(`error has been captured. Code: ${(error as BusinessError).code}, message: ${message}`);
 }
 
 ```
@@ -338,7 +338,7 @@ try {
   statusMonitor.onContinuousAuthChange(continuousAuthParam, handler);
 } catch (error) {
   const message = (error as BusinessError).message;
-  console.error(`error has been captured: message:${message}`);
+  console.error(`error has been captured. Code: ${(error as BusinessError).code}, message: ${message}`);
 }
 
 ```
@@ -389,7 +389,7 @@ try {
   statusMonitor.onTemplateChange(handler);
 } catch (error) {
   const message = (error as BusinessError).message;
-  console.error(`error has been captured: message:${message}`);
+  console.error(`error has been captured. Code: ${(error as BusinessError).code}, message: ${message}`);
 }
 
 ```

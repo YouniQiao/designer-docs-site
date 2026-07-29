@@ -1,6 +1,6 @@
 # StatusMonitor (System API)
 
-Status monitor object. It is used to listen for or obtain information such as the template status, continuous authentication status, and available device status. This object can be obtained by calling [getStatusMonitor](arkts-userauthentication-companiondeviceauth-getstatusmonitor-f-sys.md#getstatusmonitor-1).
+Status monitor object. It is used to listen for or obtain information such as the template status, continuous authentication status, and available device status. This object can be obtained by calling [getStatusMonitor](arkts-userauthentication-companiondeviceauth-getstatusmonitor-f-sys.md#getstatusmonitor).
 
 **Since:** 23
 
@@ -16,7 +16,6 @@ Status monitor object. It is used to listen for or obtain information such as th
 import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
-<a id="gettemplatestatus"></a>
 ## getTemplateStatus
 
 ```TypeScript
@@ -66,7 +65,6 @@ statusMonitor.getTemplateStatus()
 
 ```
 
-<a id="offavailabledevicechange"></a>
 ## offAvailableDeviceChange
 
 ```TypeScript
@@ -119,7 +117,6 @@ try {
 
 ```
 
-<a id="offcontinuousauthchange"></a>
 ## offContinuousAuthChange
 
 ```TypeScript
@@ -181,7 +178,6 @@ try {
 
 ```
 
-<a id="offtemplatechange"></a>
 ## offTemplateChange
 
 ```TypeScript
@@ -234,7 +230,6 @@ try {
 
 ```
 
-<a id="onavailabledevicechange"></a>
 ## onAvailableDeviceChange
 
 ```TypeScript
@@ -286,7 +281,6 @@ try {
 
 ```
 
-<a id="oncontinuousauthchange"></a>
 ## onContinuousAuthChange
 
 ```TypeScript
@@ -349,7 +343,6 @@ try {
 
 ```
 
-<a id="ontemplatechange"></a>
 ## onTemplateChange
 
 ```TypeScript

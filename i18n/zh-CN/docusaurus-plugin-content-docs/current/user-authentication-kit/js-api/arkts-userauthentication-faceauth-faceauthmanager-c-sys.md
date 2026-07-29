@@ -79,7 +79,7 @@ setSurfaceId(surfaceId: string): void
 import { faceAuth } from '@kit.UserAuthenticationKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-// 该surfaceId应该从XComponent控件获取，此处仅用作示例。
+// 该surfaceId应通过XComponentController.getXComponentSurfaceId()方法从XComponent控件获取，此处仅用作示例。
 let surfaceId = '123456';
 let manager = new faceAuth.FaceAuthManager();
 try {

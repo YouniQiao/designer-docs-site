@@ -22,7 +22,7 @@ import { ArcSwiperAttribute, ArcSwiper, ArcDirection, ArcSwiperController, ArcDo
 customContentTransition(transition: Optional<SwiperContentAnimatedTransition>): ArcSwiperAttribute
 ```
 
-自定义ArcSwiper页面切换动画。在页面跟手滑动和离手后执行切换动画的过程中，会对视窗内所有页面逐帧触发回调。开发者可以在回调中设置透明度、缩放比例、位移等属性来自定义切换动画。
+自定义ArcSwiper页面切换动画。在页面跟手滑动和离手后执行切换动画的过程中，会对视窗内所有页面逐帧触发回调，开发者可在回调中设置透明度、缩放比例、位移等属性。
 
 在页面跟手滑动和离手后执行切换动画的过程中，会对视窗内所有页面逐帧触发[SwiperContentTransitionProxy](arkts-arkui-arkui-arcswiper-swipercontenttransitionproxy-i.md)回调。例如，当视窗内有下标为0、1的两个页面时，会每帧触发两次index值分别为0和1的回调。
 
@@ -66,7 +66,7 @@ digitalCrownSensitivity(sensitivity: Optional<CrownSensitivity>): ArcSwiperAttri
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sensitivity | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;CrownSensitivity&gt; | 是 | 旋转表冠的灵敏度。<br/>默认值：CrownSensitivity.MEDIUM |
+| sensitivity | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;CrownSensitivity&gt; | 是 | 旋转表冠的灵敏度。设置不同灵敏度级别可调整表冠滚动的响应速度。<br/>默认值：CrownSensitivity.MEDIUM |
 
 **返回值：**
 
@@ -80,7 +80,7 @@ digitalCrownSensitivity(sensitivity: Optional<CrownSensitivity>): ArcSwiperAttri
 disableSwipe(disabled: Optional<boolean>): ArcSwiperAttribute
 ```
 
-是否禁用组件滑动切换功能。
+设置是否禁用组件滑动切换功能。
 
 **起始版本：** 18
 
@@ -94,7 +94,7 @@ disableSwipe(disabled: Optional<boolean>): ArcSwiperAttribute
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| disabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | 是 | 是否禁用组件滑动切换功能。设置为true禁用，false不禁用。<br/>默认值：false |
+| disabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | 是 | 设置是否禁用组件滑动切换功能。设置为true禁用，false不禁用。<br/>默认值：false |
 
 **返回值：**
 
@@ -122,7 +122,7 @@ disableTransitionAnimation(disabled: Optional<boolean>): ArcSwiperAttribute
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| disabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | 是 | 是否关闭特殊动效效果。<br>true：关闭特殊动效效果；false：不关闭特殊动效效果。<br>传入参数非法时，按false处理。 |
+| disabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | 是 | 是否关闭特殊动效效果。<br/>true：关闭特殊动效效果；false：不关闭特殊动效效果。<br/>传入参数非法时，按false处理。 |
 
 **返回值：**
 
@@ -164,7 +164,7 @@ duration(duration: Optional<number>): ArcSwiperAttribute
 effectMode(edgeEffect: Optional<EdgeEffect>): ArcSwiperAttribute
 ```
 
-设置边缘滑动效果。 目前支持的滑动效果参见[EdgeEffect](arkts-arkui-edgeeffect-e.md)的。调用控制器接口时回弹不生效。
+设置边缘滑动效果。目前支持的滑动效果参见[EdgeEffect](arkts-arkui-edgeeffect-e.md)的枚举说明。通过[ArcSwiperController](arkts-arkui-arkui-arcswiper-arcswipercontroller-c.md)的showNext、showPrevious、finishAnimation接口控制翻页时，回弹效果不生效。
 
 **起始版本：** 18
 
@@ -178,7 +178,7 @@ effectMode(edgeEffect: Optional<EdgeEffect>): ArcSwiperAttribute
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| edgeEffect | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;EdgeEffect&gt; | 是 | 边缘滑动效果。<br/>默认值：EdgeEffect.Spring |
+| edgeEffect | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;EdgeEffect&gt; | 是 | 边缘滑动效果。通过ArcSwiperController接口控制翻页时，回弹效果不生效。<br/>默认值：EdgeEffect.Spring |
 
 **返回值：**
 
